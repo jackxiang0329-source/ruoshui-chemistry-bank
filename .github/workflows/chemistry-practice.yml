@@ -1,0 +1,29 @@
+name: Chemistry practice adapter tests
+on:
+  push:
+    paths:
+      - 'src/chemistry/**'
+      - 'config/chemistry-practice-holds.json'
+      - 'scripts/build-practice-preview.mjs'
+      - 'tests/**'
+      - 'package.json'
+      - '.github/workflows/chemistry-practice.yml'
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exercise-adapter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm run audit:vendor
+      - run: npm test
+      - name: Preview both chemistry catalogs with distinct answer keys
+        run: |
+          npm run practice:preview -- --discipline=organic --count=10 --options=4 --seed=42
+          npm run practice:preview -- --discipline=inorganic --count=10 --options=4 --seed=43
