@@ -92,6 +92,18 @@
       "repo": "idavidrein/gpqa",
       "status": "pinned GPQA source benchmark; held out and not used for exam generation",
       "questions": "448 in mixed chemistry, physics and biology, not 448 chemistry-only"
+    },
+    {
+      "group": "benchmark_gitlink_PR8",
+      "repo": "idrori/stemQ",
+      "status": "pinned Git submodule reference only; scientific, quality and original-source rights review required",
+      "questions": "667 reported across STEM, 50 course JSON files in 5.111 and 3.091; not verified 50 correct chemistry questions"
+    },
+    {
+      "group": "benchmark_gitlink_PR8",
+      "repo": "nakulrampal/RetChemQA",
+      "status": "pinned Git submodule reference only; scientific, quality and original-source rights review required",
+      "questions": "7452 upstream tracked files, not 7452 independent questions"
     }
   ],
   "not_bulk_imported": [
@@ -137,9 +149,9 @@
   "totals": {
     "preexisting_external_unique_within_source": 1169,
     "chemtrain_eight_source_gitlinks": 8,
-    "additional_source_gitlinks": 2,
+    "additional_source_gitlinks": 4,
     "benchmark_gitlinks": 1,
-    "new_gitlinks_total": 11,
+    "new_gitlinks_total": 13,
     "formal_published_questions": 0,
     "chemtrain_count_estimate_not_added": true,
     "chemlit_train_test_not_added_twice": true

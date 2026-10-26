@@ -52,3 +52,13 @@
 	path = third_party/benchmarks/GPQA
 	url = https://github.com/idavidrein/gpqa.git
 	branch = main
+
+[submodule "third_party/benchmarks/stemQ"]
+	path = third_party/benchmarks/stemQ
+	url = https://github.com/idrori/stemQ.git
+	branch = main
+
+[submodule "third_party/benchmarks/RetChemQA"]
+	path = third_party/benchmarks/RetChemQA
+	url = https://github.com/nakulrampal/RetChemQA.git
+	branch = main
