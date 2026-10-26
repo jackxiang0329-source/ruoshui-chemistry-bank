@@ -27,8 +27,8 @@ export function validateSource(s) {
   if (!['inorganic','organic','analytical','physical','general'].includes(s.subject)) throw Error('Unsupported subject');
   if (!Array.isArray(s.files)||s.files.length===0||s.files.length>20) throw Error('Invalid source files');
   for(const f of s.files) {
-    if (!safePath(f.path)||!['json','jsonl'].includes(f.format)) throw Error('Invalid source path or format');
-    if (typeof f.question_field!=='string'||typeof f.answer_field!=='string') throw Error('Missing field mapping');
+    if (!safePath(f.path)||!['json','jsonl','organic-reaction-quiz'].includes(f.format)) throw Error('Invalid source path or format');
+    if (f.format!=='organic-reaction-quiz' && (typeof f.question_field!=='string'||typeof f.answer_field!=='string')) throw Error('Missing field mapping');
   }
 }
 function records(file,format) {
@@ -39,6 +39,26 @@ function records(file,format) {
   if (!Array.isArray(items)) throw Error('Expected JSON array or object.questions');
   return items;
 }
+
+export function mapRecord(row,f) {
+  if (f.format==='organic-reaction-quiz') {
+    if (!row.product || !Array.isArray(row.reagents) || !Array.isArray(row.correctReagents)) return null;
+    const reagents=new Map(row.reagents.map(r=>[r.id,r]));
+    const choices=row.reagents.map(r=>String(r.name||r.id)+(r.formula?' ('+r.formula+')':''));
+    const answers=row.correctReagents.map(id=>reagents.get(id)?.name);
+    if (!answers.length||answers.some(x=>typeof x!=='string'||!x)) return null;
+    const question=[
+      String(row.questionText||'').trim(),
+      'Target: '+String(row.product.name||'')+(row.product.formula?' ('+row.product.formula+')':''),
+      'Available reagents: '+choices.join('; ')
+    ].join('\n');
+    return {question,answer:answers.join('; '),original_id:row.id||null};
+  }
+  const question=String(row[f.question_field]||'').trim();
+  const answer=String(row[f.answer_field]||'').trim();
+  return {question,answer,original_id:row.id||null};
+}
+
 function git(args) {
   execFileSync('git',args,{stdio:'pipe',timeout:120000,env:{...process.env,GIT_TERMINAL_PROMPT:'0'}});
 }
@@ -67,15 +87,16 @@ export function run() {
           if (perSource>=250) break;
           const row=items[i];
           if (!row||typeof row!=='object') continue;
-          const question=String(row[f.question_field]||'').trim();
-          const answer=String(row[f.answer_field]||'').trim();
+          const mapped=mapRecord(row,f);
+          if (!mapped) continue;
+          const {question,answer}=mapped;
           if (!question||!answer||question.length>15000||answer.length>30000) continue;
           const id=questionId(question), output=join(destination,id+'.json');
           if (existsSync(output)) {duplicates++;continue;}
           mkdirSync(dirname(output),{recursive:true});
           writeFileSync(output,JSON.stringify({
             schema_version:1,id,subject:s.subject,question,answer,quality_status:'awaiting_expert_review',
-            source:{repository:s.repository,commit:s.commit,file:f.path,record_index:i,
+            source:{repository:s.repository,commit:s.commit,file:f.path,record_index:i,original_id:mapped.original_id,
               license:s.license,attribution:s.attribution,content_rights_verified:true,
               url:'https://github.com/'+s.repository+'/blob/'+s.commit+'/'+f.path}
           },null,2)+'\n');

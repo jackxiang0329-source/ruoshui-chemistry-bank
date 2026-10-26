@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {subjects,canonicalRepo} from '../scripts/harvest-chemistry-sources.mjs';
-import {safePath,questionId,normalizeQuestion,validateSource} from '../scripts/import-approved-chemistry.mjs';
+import {safePath,questionId,normalizeQuestion,validateSource,mapRecord} from '../scripts/import-approved-chemistry.mjs';
 test('classifies chemistry subject',()=>{
   assert.deepEqual(subjects('organic chemistry study'),['organic']);
   assert.deepEqual(subjects('inorganic chemistry problems'),['inorganic']);
@@ -23,4 +23,16 @@ test('deduplication normalizes whitespace and case',()=>{
 });
 test('refuses sources without approval and pinned revision',()=>{
   assert.throws(()=>validateSource({id:'demo',repository:'owner/repo',commit:'bad',files:[]}));
+});
+
+test('maps reaction-quiz questions to self-contained text and reagent answers',()=>{
+  const row={
+    id:'q1',questionText:'Choose reactants',product:{name:'Methyl ethyl ether',formula:'C3H8O'},
+    reagents:[{id:'a',name:'Sodium methoxide',formula:'CH3ONa'},{id:'b',name:'Bromoethane',formula:'C2H5Br'}],
+    correctReagents:['a','b']
+  };
+  const mapped=mapRecord(row,{format:'organic-reaction-quiz'});
+  assert.match(mapped.question,/Methyl ethyl ether/);
+  assert.match(mapped.question,/Bromoethane/);
+  assert.equal(mapped.answer,'Sodium methoxide; Bromoethane');
 });
