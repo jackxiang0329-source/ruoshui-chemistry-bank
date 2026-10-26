@@ -25,14 +25,14 @@ export function validateSource(s) {
   if (!/^[a-f0-9]{40}$/.test(s.commit||'')) throw Error('Full pinned Git SHA required');
   if (s.content_rights_verified!==true || !s.license || !s.attribution) throw Error('License review required');
   if (!['inorganic','organic','analytical','physical','general'].includes(s.subject)) throw Error('Unsupported subject');
-  if (!Array.isArray(s.files)||s.files.length===0||s.files.length>20) throw Error('Invalid source files');
+  if (!Array.isArray(s.files)||s.files.length===0||s.files.length>100) throw Error('Invalid source files');
   for(const f of s.files) {
     if (!safePath(f.path)||!['json','jsonl','organic-reaction-quiz'].includes(f.format)) throw Error('Invalid source path or format');
     if (f.format!=='organic-reaction-quiz' && (typeof f.question_field!=='string'||typeof f.answer_field!=='string')) throw Error('Missing field mapping');
   }
 }
 function records(file,format) {
-  if (statSync(file).size>2_000_000) throw Error('Source file over 2 MB: '+file);
+  if (statSync(file).size>20_000_000) throw Error('Source file over 20 MB: '+file);
   const raw=readFileSync(file,'utf8');
   if (format==='jsonl') return raw.split(/\r?\n/).filter(Boolean).map(s=>JSON.parse(s));
   const parsed=JSON.parse(raw), items=Array.isArray(parsed)?parsed:parsed.questions;
@@ -84,7 +84,7 @@ export function run() {
         if (!existsSync(file)) throw Error('Whitelisted data file missing: '+f.path);
         const items=records(file,f.format);
         for(let i=0;i<items.length;i++) {
-          if (perSource>=250) break;
+          if (perSource>=5000) break;
           const row=items[i];
           if (!row||typeof row!=='object') continue;
           const mapped=mapRecord(row,f);
