@@ -56,7 +56,8 @@ function edta(rng) {
   };
 }
 function precip(rng) {
-  const C=pick(rng,[0.005,0.010,0.015,0.020,0.025,0.040,0.050,0.080]);
+  // 151 concentrations from 0.0050 to 0.0800 mol/L; Ksp remains a 25°C constant.
+  const C=(5+Math.floor(rng()*151)*0.5)/1000;
   const Ksp=5.6e-12; // Mg(OH)2 25°C, exercise-defined value
   const hydroxide=Math.sqrt(Ksp/C);
   const expected=14+Math.log10(hydroxide);
@@ -73,7 +74,7 @@ function precip(rng) {
   };
 }
 function gasEquilibrium(rng) {
-  const T=pick(rng,[285,298,305,315,325,335,345,350]);
+  const T=280+Math.floor(rng()*101); // 280..380 K, adequate parameter diversity
   const H=-57200,S=-175.8;
   const lnK=S/R-H/(R*T);
   const expected=Math.exp(lnK);
