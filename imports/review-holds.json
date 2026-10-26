@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Prevent mistaken consolidation/promotion until molecular-structure identity is manually verified",
+  "entries": [
+    {
+      "external_id": "CQ-INORGANIC-0069",
+      "reason": "Graphite is an extended crystalline allotrope; SMILES C encodes methane.",
+      "severity": "high"
+    },
+    {
+      "external_id": "CQ-INORGANIC-0070",
+      "reason": "Diamond is an extended crystalline allotrope; SMILES C encodes methane.",
+      "severity": "high"
+    },
+    {
+      "external_id": "CQ-ORGANIC-0049",
+      "reason": "Methane shares the SMILES C with two carbon allotrope entries: do not cross-merge.",
+      "severity": "cross_record_conflict"
+    },
+    {
+      "external_id": "CQ-ORGANIC-0107",
+      "reason": "Disaccharide structure identical to two differently named disaccharides in source data.",
+      "severity": "high"
+    },
+    {
+      "external_id": "CQ-ORGANIC-0108",
+      "reason": "Disaccharide structure identical to two differently named disaccharides in source data.",
+      "severity": "high"
+    },
+    {
+      "external_id": "CQ-ORGANIC-0109",
+      "reason": "Disaccharide structure identical to two differently named disaccharides in source data.",
+      "severity": "high"
+    }
+  ],
+  "aliases_under_review": [
+    {
+      "external_ids": [
+        "CQ-INORGANIC-0015",
+        "CQ-INORGANIC-0098"
+      ],
+      "canonical_smiles": "N",
+      "note": "ammonia vs azane nomenclature; keep both prompts pending curricula decision"
+    },
+    {
+      "external_ids": [
+        "CQ-INORGANIC-0057",
+        "CQ-INORGANIC-0125"
+      ],
+      "canonical_smiles": "[Ag+].[Cl-]",
+      "note": "silver(I) chloride vs silver chloride common names; consider alias indexing"
+    }
+  ]
+}
