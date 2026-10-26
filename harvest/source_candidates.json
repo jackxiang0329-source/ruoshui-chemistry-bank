@@ -1,4 +1,39 @@
 {
   "schema_version": 1,
-  "sources": []
+  "sources": [
+    {
+      "repository": "ahmedhdhili832-dotcom/LearnChimie",
+      "url": "https://github.com/ahmedhdhili832-dotcom/LearnChimie",
+      "description": "LearnChimie is a modern educational web platform for learning organic chemistry through structured courses, interactive quizzes, corrected exercises, and student progress tracking.",
+      "subjects": [
+        "organic"
+      ],
+      "topics": [],
+      "default_branch": "main",
+      "repository_license_spdx": "UNKNOWN",
+      "license_scope": "repository_metadata_only_not_question_rights",
+      "archived": false,
+      "fork": false,
+      "last_upstream_push": "2026-07-18T13:25:06Z",
+      "first_discovered": "2026-10-26",
+      "status": "unreviewed_not_importable"
+    },
+    {
+      "repository": "yossefAlatter/physical-chemistry--post-graduated",
+      "url": "https://github.com/yossefAlatter/physical-chemistry--post-graduated",
+      "description": "Electrochemistry lecture notes and MCQ quizzes. Next.js, mobile-first, hard-coded content.",
+      "subjects": [
+        "physical"
+      ],
+      "topics": [],
+      "default_branch": "main",
+      "repository_license_spdx": "UNKNOWN",
+      "license_scope": "repository_metadata_only_not_question_rights",
+      "archived": false,
+      "fork": false,
+      "last_upstream_push": "2026-10-13T06:24:30Z",
+      "first_discovered": "2026-10-26",
+      "status": "unreviewed_not_importable"
+    }
+  ]
 }
