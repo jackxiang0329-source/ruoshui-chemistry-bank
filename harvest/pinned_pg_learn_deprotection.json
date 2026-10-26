@@ -1,0 +1,898 @@
+{
+  "schema_version": 1,
+  "repository": "ChemTrain/pg-learn",
+  "commit": "b232355d130198e4f6519388201c65e7359238e0",
+  "source_file": "pg_learn.html",
+  "source_git_blob_sha": "7763f186d6453ec9b65b5f9e7aefb06a100a5279",
+  "source_license_file": "LICENSE-CONTENT.md",
+  "source_license_git_blob_sha": "12cc62b715826eec57a9830d8a5bfaaf952218f4",
+  "code_license_file": "LICENSE",
+  "code_license_git_blob_sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+  "content_license": "CC BY 4.0",
+  "code_license": "MIT",
+  "attribution": "PG Learn by Quentin Bindschaedler (ChemTrain), https://github.com/ChemTrain/pg-learn, licensed under CC BY 4.0.",
+  "source_groups_total": 44,
+  "source_conditions_total": 22,
+  "selection_policy": "One MCQ per protecting group: source-recommended CORE condition with chart cell X, three CORE distractors with chart cell '.', no chart note on any selected cell; omit ~, s, x, x|s and groups without unambiguous 1+3 options.",
+  "eligible_groups": 22,
+  "cards": [
+    {
+      "group_id": "tbs",
+      "group_name": "TBS ether",
+      "group_what": "alcohol",
+      "standard_condition_ids": [
+        "tbaf",
+        "hfpy",
+        "hcl",
+        "csa"
+      ],
+      "correct_condition_id": "tbaf",
+      "options": [
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "h2",
+          "label": "H₂, Pd/C",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "pip",
+          "label": "Piperidine, DMF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "k2co3",
+          "label": "K₂CO₃, MeOH",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "tbdps",
+      "group_name": "TBDPS ether",
+      "group_what": "alcohol",
+      "standard_condition_ids": [
+        "tbaf"
+      ],
+      "correct_condition_id": "tbaf",
+      "options": [
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "h2",
+          "label": "H₂, Pd/C",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "pip",
+          "label": "Piperidine, DMF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "bn",
+      "group_name": "Benzyl ether",
+      "group_what": "alcohol",
+      "standard_condition_ids": [
+        "h2",
+        "birch"
+      ],
+      "correct_condition_id": "h2",
+      "options": [
+        {
+          "id": "h2",
+          "label": "H₂, Pd/C",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tfa",
+          "label": "TFA, CH₂Cl₂",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "pmb",
+      "group_name": "PMB ether",
+      "group_what": "alcohol",
+      "standard_condition_ids": [
+        "ddq",
+        "h2"
+      ],
+      "correct_condition_id": "h2",
+      "options": [
+        {
+          "id": "h2",
+          "label": "H₂, Pd/C",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "mom",
+      "group_name": "MOM ether",
+      "group_what": "alcohol",
+      "standard_condition_ids": [
+        "bbr3"
+      ],
+      "correct_condition_id": "bbr3",
+      "options": [
+        {
+          "id": "bbr3",
+          "label": "BBr₃, CH₂Cl₂",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "h2",
+          "label": "H₂, Pd/C",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "thp",
+      "group_name": "THP ether",
+      "group_what": "alcohol",
+      "standard_condition_ids": [
+        "ppts",
+        "acoh",
+        "hcl"
+      ],
+      "correct_condition_id": "hcl",
+      "options": [
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "h2",
+          "label": "H₂, Pd/C",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "pip",
+          "label": "Piperidine, DMF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "ac",
+      "group_name": "Acetate",
+      "group_what": "alcohol",
+      "standard_condition_ids": [
+        "k2co3",
+        "lioh",
+        "naome"
+      ],
+      "correct_condition_id": "k2co3",
+      "options": [
+        {
+          "id": "k2co3",
+          "label": "K₂CO₃, MeOH",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tfa",
+          "label": "TFA, CH₂Cl₂",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "bz",
+      "group_name": "Benzoate",
+      "group_what": "alcohol",
+      "standard_condition_ids": [
+        "naome",
+        "lioh"
+      ],
+      "correct_condition_id": "lioh",
+      "options": [
+        {
+          "id": "lioh",
+          "label": "LiOH, THF/H₂O",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tfa",
+          "label": "TFA, CH₂Cl₂",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "cbz",
+      "group_name": "Cbz",
+      "group_what": "amine",
+      "standard_condition_ids": [
+        "h2",
+        "birch"
+      ],
+      "correct_condition_id": "h2",
+      "options": [
+        {
+          "id": "h2",
+          "label": "H₂, Pd/C",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "me_ester",
+      "group_name": "Methyl ester",
+      "group_what": "carboxylic acid",
+      "standard_condition_ids": [
+        "lioh"
+      ],
+      "correct_condition_id": "lioh",
+      "options": [
+        {
+          "id": "lioh",
+          "label": "LiOH, THF/H₂O",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tfa",
+          "label": "TFA, CH₂Cl₂",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "bn_ester",
+      "group_name": "Benzyl ester",
+      "group_what": "carboxylic acid",
+      "standard_condition_ids": [
+        "h2",
+        "lioh"
+      ],
+      "correct_condition_id": "h2",
+      "options": [
+        {
+          "id": "h2",
+          "label": "H₂, Pd/C",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "tips",
+      "group_name": "TIPS ether",
+      "group_what": "alcohol",
+      "standard_condition_ids": [
+        "tbaf"
+      ],
+      "correct_condition_id": "tbaf",
+      "options": [
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "h2",
+          "label": "H₂, Pd/C",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "pip",
+          "label": "Piperidine, DMF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "mem",
+      "group_name": "MEM ether",
+      "group_what": "alcohol",
+      "standard_condition_ids": [
+        "bbr3"
+      ],
+      "correct_condition_id": "bbr3",
+      "options": [
+        {
+          "id": "bbr3",
+          "label": "BBr₃, CH₂Cl₂",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "nap",
+      "group_name": "Nap ether",
+      "group_what": "alcohol",
+      "standard_condition_ids": [
+        "ddq",
+        "h2"
+      ],
+      "correct_condition_id": "h2",
+      "options": [
+        {
+          "id": "h2",
+          "label": "H₂, Pd/C",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tfa",
+          "label": "TFA, CH₂Cl₂",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "trityl",
+      "group_name": "Trityl ether",
+      "group_what": "alcohol",
+      "standard_condition_ids": [
+        "acoh",
+        "tfa",
+        "hcl"
+      ],
+      "correct_condition_id": "tfa",
+      "options": [
+        {
+          "id": "tfa",
+          "label": "TFA, CH₂Cl₂",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "pip",
+          "label": "Piperidine, DMF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "k2co3",
+          "label": "K₂CO₃, MeOH",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "benzylidene",
+      "group_name": "Benzylidene acetal",
+      "group_what": "1,2- or 1,3-diol",
+      "standard_condition_ids": [
+        "h2",
+        "hcl"
+      ],
+      "correct_condition_id": "hcl",
+      "options": [
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "pip",
+          "label": "Piperidine, DMF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "k2co3",
+          "label": "K₂CO₃, MeOH",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "tipds",
+      "group_name": "TIPDS",
+      "group_what": "1,3-diol",
+      "standard_condition_ids": [
+        "tbaf",
+        "hfpy"
+      ],
+      "correct_condition_id": "tbaf",
+      "options": [
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "h2",
+          "label": "H₂, Pd/C",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "pip",
+          "label": "Piperidine, DMF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "dimethyl_acetal",
+      "group_name": "Dimethyl acetal",
+      "group_what": "aldehyde",
+      "standard_condition_ids": [
+        "hcl"
+      ],
+      "correct_condition_id": "hcl",
+      "options": [
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "h2",
+          "label": "H₂, Pd/C",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "pip",
+          "label": "Piperidine, DMF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "tfac",
+      "group_name": "Trifluoroacetamide",
+      "group_what": "amine",
+      "standard_condition_ids": [
+        "k2co3",
+        "lioh"
+      ],
+      "correct_condition_id": "lioh",
+      "options": [
+        {
+          "id": "lioh",
+          "label": "LiOH, THF/H₂O",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tfa",
+          "label": "TFA, CH₂Cl₂",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "tms_alkyne",
+      "group_name": "TMS alkyne",
+      "group_what": "terminal alkyne",
+      "standard_condition_ids": [
+        "k2co3",
+        "tbaf"
+      ],
+      "correct_condition_id": "tbaf",
+      "options": [
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tfa",
+          "label": "TFA, CH₂Cl₂",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "tips_alkyne",
+      "group_name": "TIPS alkyne",
+      "group_what": "terminal alkyne",
+      "standard_condition_ids": [
+        "tbaf"
+      ],
+      "correct_condition_id": "tbaf",
+      "options": [
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tfa",
+          "label": "TFA, CH₂Cl₂",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    },
+    {
+      "group_id": "aryl_bn",
+      "group_name": "Aryl benzyl ether",
+      "group_what": "phenol",
+      "standard_condition_ids": [
+        "h2",
+        "bbr3"
+      ],
+      "correct_condition_id": "h2",
+      "options": [
+        {
+          "id": "h2",
+          "label": "H₂, Pd/C",
+          "chart_cell": "X",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "hcl",
+          "label": "HCl, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "acoh",
+          "label": "AcOH, THF/H₂O",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        },
+        {
+          "id": "tbaf",
+          "label": "TBAF, THF",
+          "chart_cell": ".",
+          "source_note_present": false,
+          "core": true
+        }
+      ]
+    }
+  ]
+}

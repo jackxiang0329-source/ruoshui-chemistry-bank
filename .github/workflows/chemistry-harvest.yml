@@ -22,6 +22,9 @@ on:
       - "tests/chemtrain-photoredox.test.mjs"
       - "scripts/import-original-physical.mjs"
       - "tests/original-physical.test.mjs"
+      - "scripts/import-chemtrain-pg-learn.mjs"
+      - "tests/chemtrain-pg-learn.test.mjs"
+      - "harvest/pinned_pg_learn_deprotection.json"
       - "LICENSE-ORIGINAL-QUESTIONS.md"
       - "harvest/pinned_photoredox_quenching.json"
       - "third_party/ChemTrain_radical_learn/**"
@@ -65,6 +68,8 @@ jobs:
         run: node --test tests/chemtrain-photoredox.test.mjs
       - name: Verify original physical chemistry calculations
         run: node --test tests/original-physical.test.mjs
+      - name: Verify pinned CC BY 4.0 PG Learn importer
+        run: node --test tests/chemtrain-pg-learn.test.mjs
       - name: Search GitHub chemistry repositories
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -83,6 +88,8 @@ jobs:
         run: node scripts/import-chemtrain-photoredox.mjs
       - name: Generate original CC0 physical chemistry exercises
         run: node scripts/import-original-physical.mjs
+      - name: Import pinned CC BY 4.0 PG Learn protecting-group MCQs
+        run: node scripts/import-chemtrain-pg-learn.mjs
       - name: Commit only real additions or changes
         run: |
           git add -- harvest/source_candidates.json
