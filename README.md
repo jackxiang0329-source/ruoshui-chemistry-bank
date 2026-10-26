@@ -26,3 +26,28 @@
 - [源码逐文件 SHA 核验脚本](scripts/audit-upstream-vendor.mjs)
 
 这些源码与待审外部题目数据不同，尚未作为本项目生产 API 的可运行模块。完整去重数据与题库质检工作保留在 Draft PR #1。
+
+## 可运行的开源题库练习适配器（待审预览）
+
+已基于原版 chemquiz 化合物目录建立独立 JavaScript 出题/判分模块（不修改原版 Rust 源码）。原始 301 个顶层条目去重 28、隔离 6 条结构风险后，余 **267 条待审核练习候选**。目前只支持无机/有机英文名称与化学式识别；分析和物理化学待原创计算题模块，不能伪称已经完成。
+
+```bash
+npm run audit:vendor
+npm test
+npm run practice:preview -- --discipline=organic --count=10 --seed=20261026
+```
+
+运行结果生成在被 Git 忽略的 `.tmp/chemistry-practice/`，学生卷与教师答案卷分别保存。**未通过专业化学审核，不得自动发布至网站或作为正式考试。**
+
+详见 [练习适配器与三千弱水接口说明](docs/CHEMISTRY_PRACTICE_INTEGRATION.md)。
+
+## 四大学科统一组卷（V0.3 未审预览）
+
+目前无机/有机可生成化学名称与分子式选择题，分析/物理化学新增三类原创参数化计算题，共六类。全科统一使用 `buildUnifiedPaper` 接口，学生题干与私有教师答案分别生成；尚未接入生产网站和正式已审题库。
+
+```bash
+npm run paper:unified -- --track=analytical --count=12 --seed=20261026
+npm run paper:unified -- --track=physical --count=12 --seed=20261026
+```
+
+详细公式、假设、判分与四科统一接口见 [FOUR_TRACKS.md](docs/FOUR_TRACKS.md)。待专家审核与完整 CI 验收后才能进入正式组卷。

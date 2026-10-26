@@ -7,3 +7,7 @@ node_modules/
 *.fls
 *.synctex.gz
 .DS_Store
+
+# Offline chemistry practice and private teacher answer keys
+.tmp/
+dist/

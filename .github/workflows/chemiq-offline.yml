@@ -1,0 +1,17 @@
+name: Offline ChemIQ answer verifier test
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install rdkit==2025.9.4 requests pytest
+      - run: pytest -q tests/test_chemiq_offline.py
