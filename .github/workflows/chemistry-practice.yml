@@ -6,6 +6,7 @@ on:
       - 'config/chemistry-practice-holds.json'
       - 'scripts/build-practice-preview.mjs'
       - 'scripts/build-unified-chemistry.mjs'
+      - 'scripts/verify-calculation-matrix.mjs'
       - 'schemas/chemistry-student-paper.schema.json'
       - 'tests/**'
       - 'package.json'
@@ -25,6 +26,7 @@ jobs:
           node-version: '22'
       - run: npm run audit:vendor
       - run: npm test
+      - run: npm run qa:numerical
       - name: Preview both chemistry catalogs with distinct answer keys
         run: |
           npm run practice:preview -- --discipline=organic --count=10 --options=4 --seed=42

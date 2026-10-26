@@ -8,6 +8,7 @@
     "practice:preview": "node scripts/build-practice-preview.mjs",
     "test": "node --test tests/*.test.mjs",
     "audit:vendor": "node scripts/audit-upstream-vendor.mjs",
-    "paper:unified": "node scripts/build-unified-chemistry.mjs"
+    "paper:unified": "node scripts/build-unified-chemistry.mjs",
+    "qa:numerical": "node scripts/verify-calculation-matrix.mjs"
   }
 }
