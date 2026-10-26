@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "repository": "ChemTrain/photoredox-learn",
+  "commit": "260cf0553b42fc510de655d68bad902af7f94e38",
+  "source_file": "photoredox_learn.html",
+  "source_git_blob_sha": "5351d56c165fd581edbc66e71f80c3a42bcdb738",
+  "source_deck": "quench",
+  "source_correct_option_index": 0,
+  "source_questions": 18,
+  "content_license": "CC BY 4.0",
+  "content_license_file": "LICENSE-CONTENT.md",
+  "content_license_git_blob_sha": "03a3851d5f826d709b5e31f0718e102363fa6860",
+  "code_license": "MIT",
+  "code_license_git_blob_sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+  "attribution": "Photoredox Learn by Quentin Bindschaedler (ChemTrain), https://github.com/ChemTrain/photoredox-learn, licensed under CC BY 4.0.",
+  "extraction": "Only quenching-cycle question title, reagents, first correct option and bibliographic citation. Excludes experimental redox potentials, notes, figures, original literature passages and other decks.",
+  "cards": [
+    {
+      "source_question_number": 1,
+      "original_name": "Trifluoromethylation of arenes",
+      "conditions": "Ru(phen)₃Cl₂, CF₃SO₂Cl, K₂HPO₄, MeCN, light",
+      "correct_label": "Oxidative quenching",
+      "literature_reference": "Nagib & MacMillan, Nature 2011",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3310175/"
+    },
+    {
+      "source_question_number": 2,
+      "original_name": "α-Amino C–H arylation",
+      "conditions": "Ir(ppy)₃, 1,4-dicyanobenzene, NaOAc, DMA, light",
+      "correct_label": "Oxidative quenching",
+      "literature_reference": "McNally, Prier & MacMillan, Science 2011",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3266580/"
+    },
+    {
+      "source_question_number": 3,
+      "original_name": "Decarboxylative arylation (photoredox and nickel)",
+      "conditions": "Ir[dF(CF₃)ppy]₂(dtbbpy)PF₆, NiCl₂·glyme, dtbbpy, Cs₂CO₃, aryl iodide, light",
+      "correct_label": "Reductive quenching",
+      "literature_reference": "Zuo et al., Science 2014 (decarboxylative arylation)",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4296524/"
+    },
+    {
+      "source_question_number": 4,
+      "original_name": "Benzylic trifluoroborate cross-coupling (photoredox and nickel)",
+      "conditions": "Ir[dF(CF₃)ppy]₂(bpy)PF₆, Ni(COD)₂, dtbbpy, 2,6-lutidine, aryl bromide, light",
+      "correct_label": "Reductive quenching",
+      "literature_reference": "Tellis, Primer & Molander, Science 2014",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4406487/"
+    },
+    {
+      "source_question_number": 5,
+      "original_name": "Anti-Markovnikov hydroetherification of alkenols",
+      "conditions": "Mes-Acr-Me⁺ ClO₄⁻, 2-phenylmalononitrile, DCE, 450 nm",
+      "correct_label": "Reductive quenching",
+      "literature_reference": "Hamilton & Nicewicz, J. Am. Chem. Soc. 2012",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3513336/"
+    },
+    {
+      "source_question_number": 6,
+      "original_name": "Radical cation Diels–Alder",
+      "conditions": "Ru(bpz)₃(BArF)₂, isoprene, CH₂Cl₂, light",
+      "correct_label": "Reductive quenching",
+      "literature_reference": "Lin, Ischay, Fry & Yoon, J. Am. Chem. Soc. 2011",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3227774/"
+    },
+    {
+      "source_question_number": 7,
+      "original_name": "[2+2] cycloaddition of bis(styrenes)",
+      "conditions": "Ru(bpy)₃Cl₂, methyl viologen (MV²⁺), light",
+      "correct_label": "Oxidative quenching",
+      "literature_reference": "Prier, Rankic & MacMillan, Chem. Rev. 2013",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4028850/"
+    },
+    {
+      "source_question_number": 8,
+      "original_name": "[2+2] cycloaddition of bis(enones)",
+      "conditions": "Ru(bpy)₃Cl₂, iPr₂NEt, LiBF₄, light",
+      "correct_label": "Reductive quenching",
+      "literature_reference": "Prier, Rankic & MacMillan, Chem. Rev. 2013",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4028850/"
+    },
+    {
+      "source_question_number": 9,
+      "original_name": "Reductive radical cyclisation",
+      "conditions": "Ru(bpy)₃Cl₂, a tertiary amine, light",
+      "correct_label": "Reductive quenching",
+      "literature_reference": "Prier, Rankic & MacMillan, Chem. Rev. 2013",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4028850/"
+    },
+    {
+      "source_question_number": 10,
+      "original_name": "Enantioselective α-benzylation of aldehydes",
+      "conditions": "Ir(ppy)₃, imidazolidinone catalyst, electron-poor benzyl bromide, light",
+      "correct_label": "Oxidative quenching",
+      "literature_reference": "Prier, Rankic & MacMillan, Chem. Rev. 2013",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4028850/"
+    },
+    {
+      "source_question_number": 11,
+      "original_name": "Enantioselective α-trifluoromethylation of aldehydes",
+      "conditions": "Ir(ppy)₂(dtbbpy)PF₆, imidazolidinone catalyst, CF₃I, light",
+      "correct_label": "Reductive quenching",
+      "literature_reference": "Prier, Rankic & MacMillan, Chem. Rev. 2013",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4028850/"
+    },
+    {
+      "source_question_number": 12,
+      "original_name": "α-Acylation of amines (NHC and photoredox)",
+      "conditions": "Ru(bpy)₃Cl₂, m-dinitrobenzene, NHC catalyst, aldehyde, light",
+      "correct_label": "Oxidative quenching",
+      "literature_reference": "Prier, Rankic & MacMillan, Chem. Rev. 2013",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4028850/"
+    },
+    {
+      "source_question_number": 13,
+      "original_name": "α-Alkylation of aldehydes with eosin Y",
+      "conditions": "Eosin Y, imidazolidinone catalyst, diethyl bromomalonate, light",
+      "correct_label": "Reductive quenching",
+      "literature_reference": "Prier, Rankic & MacMillan, Chem. Rev. 2013",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4028850/"
+    },
+    {
+      "source_question_number": 14,
+      "original_name": "Amide α-functionalisation with persulfate",
+      "conditions": "Ru(bpy)₃Cl₂, K₂S₂O₈, DMF, light",
+      "correct_label": "Oxidative quenching",
+      "literature_reference": "Prier, Rankic & MacMillan, Chem. Rev. 2013",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4028850/"
+    },
+    {
+      "source_question_number": 15,
+      "original_name": "Reduction of electron-poor alkenes by BNAH",
+      "conditions": "Ru(bpy)₃Cl₂, BNAH, light",
+      "correct_label": "Reductive quenching",
+      "literature_reference": "Prier, Rankic & MacMillan, Chem. Rev. 2013",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4028850/"
+    },
+    {
+      "source_question_number": 16,
+      "original_name": "Malonyl radical alkylation of heteroarenes",
+      "conditions": "Ru(bpy)₃Cl₂, 4-MeO-C₆H₄NPh₂, diethyl bromomalonate, light",
+      "correct_label": "Reductive quenching",
+      "literature_reference": "Prier, Rankic & MacMillan, Chem. Rev. 2013",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4028850/"
+    },
+    {
+      "source_question_number": 17,
+      "original_name": "A norbornadiene to quadricyclane",
+      "conditions": "Ru(bpy)₃²⁺, light",
+      "correct_label": "Energy transfer",
+      "literature_reference": "Prier, Rankic & MacMillan, Chem. Rev. 2013",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4028850/"
+    },
+    {
+      "source_question_number": 18,
+      "original_name": "[2+2] cycloaddition of styrenes by energy transfer",
+      "conditions": "Ir[dF(CF₃)ppy]₂(dtbbpy)PF₆, light",
+      "correct_label": "Energy transfer",
+      "literature_reference": "Prier, Rankic & MacMillan, Chem. Rev. 2013",
+      "literature_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4028850/"
+    }
+  ]
+}

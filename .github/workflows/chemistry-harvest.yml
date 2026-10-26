@@ -16,6 +16,9 @@ on:
       - "tests/chemquiz-reference.test.mjs"
       - "scripts/import-chemtrain-radical.mjs"
       - "tests/chemtrain-radical.test.mjs"
+      - "scripts/import-chemtrain-photoredox.mjs"
+      - "tests/chemtrain-photoredox.test.mjs"
+      - "harvest/pinned_photoredox_quenching.json"
       - "third_party/ChemTrain_radical_learn/**"
   schedule:
     - cron: "17,47 * * * *"
@@ -51,6 +54,8 @@ jobs:
         run: node --test tests/chemquiz-reference.test.mjs
       - name: Verify pinned Radical Learn source and importer
         run: node --test tests/chemtrain-radical.test.mjs
+      - name: Verify pinned Photoredox Learn importer
+        run: node --test tests/chemtrain-photoredox.test.mjs
       - name: Search GitHub chemistry repositories
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -63,6 +68,8 @@ jobs:
         run: node scripts/import-chemquiz-reference.mjs
       - name: Import CC BY 4.0 Radical Learn text-only organic classification cards
         run: node scripts/import-chemtrain-radical.mjs
+      - name: Import pinned CC BY 4.0 Photoredox Learn cycles
+        run: node scripts/import-chemtrain-photoredox.mjs
       - name: Commit only real additions or changes
         run: |
           git add -- harvest/source_candidates.json
