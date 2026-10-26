@@ -1,6 +1,7 @@
 // Reconstruct ChemTrain source question objects from checked-out, pinned Git submodules.
 // This reads SOURCE HTML and writes JSONL to stdout; no production database operations.
-import {readFileSync} from 'node:fs';
+import {readFileSync,existsSync} from 'node:fs';
+import {createHash} from 'node:crypto';
 import {join,dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
@@ -32,9 +33,13 @@ function pack(question,repo){
 export function extractQuestions() {
  const rows=[], seen=new Set();
  for(const [repo,file,key,groups,commit,sha] of DEFINITIONS) {
-   const full=join(ROOT,'third_party','ChemTrain',repo,file);
-   const source=readFileSync(full,'utf8');
-   const d=embedData(source,key);
+   const mirror=join(ROOT,'third_party','ChemTrain_mirrors',repo,file);
+   const submodule=join(ROOT,'third_party','ChemTrain',repo,file);
+   const full=existsSync(mirror)?mirror:submodule;
+   const bytes=readFileSync(full);
+   const actual=createHash('sha1').update('blob '+bytes.length+'\0').update(bytes).digest('hex');
+   if(actual!==sha)throw Error('Pinned HTML source mismatch for '+repo+': '+actual);
+   const d=embedData(bytes.toString('utf8'),key);
    let count=0;
    for(const group of groups)for(const deck of d[group]||[])for(const [i,q] of (deck.questions||[]).entries()){
      const signature=[q.type||'site_comparison',q.name||'',q.partner||'',q.ask||''].map(norm).join('|');
