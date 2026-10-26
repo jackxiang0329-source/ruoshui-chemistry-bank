@@ -1,17 +1,29 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "per_page": 100,
+  "max_pages_per_query": 10,
+  "max_requests_per_run": 200,
+  "min_request_interval_ms": 2550,
+  "max_runtime_minutes": 18,
+  "max_catalog_entries": 50000,
   "queries": [
     "inorganic chemistry problems in:name,description",
     "organic chemistry quiz in:name,description",
     "analytical chemistry exercises in:name,description",
     "physical chemistry questions in:name,description",
-    "chemistry quiz questions in:name,description",
     "chemistry question bank in:name,description",
-    "chemistry exam practice in:name,description",
+    "chemistry practice questions in:name,description",
+    "chemistry exams in:name,description",
+    "chemistry multiple choice in:name,description",
+    "chemistry exercises in:name,description",
+    "electrochemistry problems in:name,description",
+    "organic chemistry reactions quiz in:name,description",
+    "university chemistry questions in:name,description",
     "化学 题库 in:name,description",
     "化学 习题 in:name,description",
-    "大学化学 in:name,description"
-  ],
-  "per_query": 30,
-  "max_catalog_entries": 2000
+    "无机化学 习题 in:name,description",
+    "有机化学 习题 in:name,description",
+    "分析化学 习题 in:name,description",
+    "物理化学 习题 in:name,description"
+  ]
 }

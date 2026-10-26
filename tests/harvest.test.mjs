@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {subjects,canonicalRepo} from '../scripts/harvest-chemistry-sources.mjs';
+import {subjects,canonicalRepo,bucketKey,requestedPages} from '../scripts/harvest-chemistry-sources.mjs';
 import {safePath,questionId,normalizeQuestion,validateSource,mapRecord} from '../scripts/import-approved-chemistry.mjs';
 test('classifies chemistry subject',()=>{
   assert.deepEqual(subjects('organic chemistry study'),['organic']);
@@ -35,4 +35,20 @@ test('maps reaction-quiz questions to self-contained text and reagent answers',(
   assert.match(mapped.question,/Methyl ethyl ether/);
   assert.match(mapped.question,/Bromoethane/);
   assert.equal(mapped.answer,'Sodium methoxide; Bromoethane');
+});
+
+test('requests all 10 GitHub pages of 100 results where available',()=>{
+  assert.equal(requestedPages(1000,100,10),10);
+  assert.equal(requestedPages(10000,100,10),10);
+  assert.equal(requestedPages(101,100,10),2);
+  assert.equal(requestedPages(0,100,10),0);
+});
+test('stable case insensitive shard assignment',()=>{
+  assert.equal(bucketKey('Example/Chemistry'),bucketKey('example/chemistry'));
+  assert.match(bucketKey('Example/Chemistry'),/^[0-3][0-9a-f]$/);
+});
+test('filter unrelated search matches and forks',()=>{
+  assert.equal(canonicalRepo({full_name:'a/math-machine-learning',description:'machine learning exercises'},'2026-10-26'),null);
+  assert.equal(canonicalRepo({full_name:'a/chemistry-quiz',description:'chemistry quiz',fork:true},'2026-10-26'),null);
+  assert.equal(canonicalRepo({full_name:'a/chemistry-quiz',description:'chemistry quiz'},'2026-10-26').status,'unreviewed_not_importable');
 });

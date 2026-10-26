@@ -46,6 +46,9 @@ jobs:
       - name: Commit only real additions or changes
         run: |
           git add -- harvest/source_candidates.json
+          if [ -d harvest/sources ]; then
+            git add -- harvest/sources
+          fi
           if [ -d data/candidates ]; then
             git add -- data/candidates
           fi
