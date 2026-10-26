@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "id": "CHEM-ANAL-0001",
+  "discipline": "analytical",
+  "knowledge_code": "ANAL.COMPLEX",
+  "type": "calculation",
+  "difficulty": 4,
+  "points": 12,
+  "status": "draft",
+  "rights": "original",
+  "source": {
+    "kind": "original",
+    "reference": "Ruoshui chemistry educational sample; newly drafted",
+    "license": "original",
+    "upstream_commit": null,
+    "permission_evidence": null
+  },
+  "quality": {
+    "chemistry": "pending",
+    "calculation": "pending",
+    "structure": "not_applicable",
+    "rights": "pending",
+    "latex": "pending"
+  }
+}
