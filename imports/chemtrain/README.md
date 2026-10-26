@@ -14,3 +14,15 @@
 去重签名为文本键而非分子图或语义等价；与 Daily 聚合后的 2,900 道内容可能大量重叠，暂不相加。其他四个 ChemTrain 应用（Daily、Reaction、PG、TMC）目前源码已通过固定 GitLink 引入但其 HTML 题干**尚未抽取**。
 
 离线重复提取：`node scripts/export-chemtrain-questions.mjs`（要求初始化子模块，写到标准输出；不覆盖该隔离文件）；报告可通过 `node scripts/check-chemtrain-staging.mjs` 对现有文件重新核验。
+
+## 原版源码本地镜像（无需重新下载子模块即可提取）
+
+除固定 SHA 的 8 套 ChemTrain Git 子模块外，pka-learn、radical-learn、reactivity-learn、photoredox-learn 四个直接抽题的完整原始 HTML 也已以普通文件保存于 `third_party/ChemTrain_mirrors/`。每项还附原始 README、MIT `LICENSE` 与 CC BY 4.0 `LICENSE-CONTENT.md`。这 **16 个源文件**已按 Git Blob SHA 核验；抽取脚本优先使用本地镜像并在读取时重新计算源 Blob SHA，不必联网或初始化子模块。
+
+```bash
+node scripts/export-chemtrain-questions.mjs > /tmp/chemtrain-rebuilt.jsonl
+cmp /tmp/chemtrain-rebuilt.jsonl imports/chemtrain/question_objects_4apps.jsonl
+node scripts/check-chemtrain-staging.mjs
+```
+
+其余四个子项目（Daily、Reaction、PG、TMC）仍以完整上游 Git 子模块引用保存，尚未把大型 HTML 作为普通文件再次复制到 `ChemTrain_mirrors/`，也未完成各自的题目数据抽取。

@@ -18,4 +18,8 @@ jobs:
         with:
           node-version: '22'
       - run: node scripts/check-chemtrain-staging.mjs
+      - name: Recreate staged ChemTrain source questions from local verified HTML
+        run: |
+          node scripts/export-chemtrain-questions.mjs > /tmp/chemtrain-rebuilt.jsonl
+          cmp /tmp/chemtrain-rebuilt.jsonl imports/chemtrain/question_objects_4apps.jsonl
       - run: node --test tests/chemtrain-staging.test.mjs
