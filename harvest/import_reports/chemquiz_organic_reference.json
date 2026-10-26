@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "generator": "chemquiz-organic-reference-introductory",
+  "source_repository": "bem130/chemquiz",
+  "source_commit": "10b81d4c1b02847e3d9b64e8d44a960d10559ea3",
+  "source_license": "MIT",
+  "source_license_url": "https://github.com/bem130/chemquiz/blob/10b81d4c1b02847e3d9b64e8d44a960d10559ea3/LICENSE",
+  "source_blob_sha": {
+    "functional_groups": "472a029b37ff7a61b559a42bf93872d41b8f5ac3",
+    "homologous_series": "be553206c8b47c11f63ab12750c97388a0d47149"
+  },
+  "upstream_functional_group_reference_rows": 17,
+  "upstream_homologous_series_reference_rows": 14,
+  "whitelisted_group_variants": 15,
+  "whitelisted_series_variants": 10,
+  "generated_unique_question_variants": 25,
+  "by_subject": {
+    "organic": 25
+  },
+  "review_status": "awaiting_expert_review",
+  "publishable": false,
+  "note": "25 newly generated variants from 2 existing MIT reference tables; not 25 independent original exam questions. Semantic cross-repository dedup and expert review remain pending."
+}
