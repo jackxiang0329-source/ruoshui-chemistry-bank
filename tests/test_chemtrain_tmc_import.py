@@ -11,7 +11,8 @@ FIXTURE = '''
 def C(*args, **kwargs): pass
 CORE = [C("Ferrocene", "Cp₂Fe", "Fe", 0, "Cp*2", 18, 2, "sand"),
         C("Linear nitrosyl", "Fe(NO)(CO)₃", "Fe", 0, "NO CO*3", 18, 0, "tet4", no_os=True)]
-CARBONYLS = [C("Nickel tetracarbonyl", "Ni(CO)₄", "Ni", 0, "CO*4", 18, 0, "tet4")]
+NO_NOTE = "A fixed source note."
+CARBONYLS = [C("Nickel tetracarbonyl", "Ni(CO)₄", "Ni", 0, "CO*4", 18, 0, "tet4", NO_NOTE + " Second sentence.")]
 PI = []
 SQUARE = []
 HYDRIDES = []
@@ -26,6 +27,9 @@ class ImportTests(unittest.TestCase):
         self.assertEqual(cards[2]['d_count'], 10)
         self.assertEqual(len(list(mod.questions_from_card(cards[0]))), 3)
         self.assertEqual(len(list(mod.questions_from_card(cards[1]))), 1)
+
+    def test_safe_named_note_and_concatenation(self):
+        self.assertEqual(mod.cards_from_source(FIXTURE)[2]['note'], 'A fixed source note. Second sentence.')
 
     def test_reject_executable_expression(self):
         malicious = FIXTURE.replace('"Cp₂Fe"', '__import__("os").system("touch /tmp/never")')
