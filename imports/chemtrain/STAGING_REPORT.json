@@ -1,0 +1,38 @@
+{
+  "snapshot_date": "2026-10-26",
+  "raw_question_objects": 232,
+  "normalized_unique_question_stems": 232,
+  "duplicate_stems_removed": 0,
+  "app_count": 4,
+  "counts": [
+    {
+      "repo": "ChemTrain/pka-learn",
+      "source_html": "pka_learn.html",
+      "git_blob_sha": "de1e8441908198301a7e82da76fd5febd9de8900",
+      "extracted_question_objects": 29
+    },
+    {
+      "repo": "ChemTrain/radical-learn",
+      "source_html": "radical_learn.html",
+      "git_blob_sha": "7a81ac8756d00a0bd2f759f08b5c217e136e7937",
+      "extracted_question_objects": 50
+    },
+    {
+      "repo": "ChemTrain/reactivity-learn",
+      "source_html": "reactivity_learn.html",
+      "git_blob_sha": "9779b9167ff4af2445a1efe845db3119928f6d12",
+      "extracted_question_objects": 99
+    },
+    {
+      "repo": "ChemTrain/photoredox-learn",
+      "source_html": "photoredox_learn.html",
+      "git_blob_sha": "5351d56c165fd581edbc66e71f80c3a42bcdb738",
+      "extracted_question_objects": 54
+    }
+  ],
+  "materialized_bytes": 256197,
+  "authorization": "CC BY 4.0 as stated in each app's LICENSE-CONTENT.md; original experimental numeric measurements separately licensed",
+  "exclusion": "not yet parsed: chemtrain-daily, reaction-learn, pg-learn, tmc-learn; card records are not automatically exam questions",
+  "publication_count": 0,
+  "explanation": "Mol SVG payload excluded to keep staging lightweight; pKa third-party measured values omitted; metadata points to full fixed submodule source"
+}
