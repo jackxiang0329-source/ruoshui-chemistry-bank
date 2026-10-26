@@ -1,0 +1,21 @@
+name: Check ChemTrain extracted staging data
+on:
+  pull_request:
+    paths:
+      - 'imports/chemtrain/**'
+      - 'scripts/check-chemtrain-staging.mjs'
+      - 'tests/chemtrain-staging.test.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/check-chemtrain-staging.mjs
+      - run: node --test tests/chemtrain-staging.test.mjs
