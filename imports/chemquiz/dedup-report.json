@@ -1,0 +1,150 @@
+{
+  "source": "bem130/chemquiz",
+  "commit": "10b81d4c1b02847e3d9b64e8d44a960d10559ea3",
+  "method": "NFKC lower trim whitespace on IUPAC name + molecular formula (first wins)",
+  "raw": 301,
+  "unique": 273,
+  "removed": 28,
+  "duplicates": [
+    {
+      "name": "sodium hydroxide",
+      "kept": "catalog/Inorganic/compounds.json:10",
+      "skipped": "catalog/Inorganic/compounds.json:23"
+    },
+    {
+      "name": "potassium hydroxide",
+      "kept": "catalog/Inorganic/compounds.json:11",
+      "skipped": "catalog/Inorganic/compounds.json:24"
+    },
+    {
+      "name": "magnesium hydroxide",
+      "kept": "catalog/Inorganic/compounds.json:14",
+      "skipped": "catalog/Inorganic/compounds.json:32"
+    },
+    {
+      "name": "calcium hydroxide",
+      "kept": "catalog/Inorganic/compounds.json:12",
+      "skipped": "catalog/Inorganic/compounds.json:33"
+    },
+    {
+      "name": "aluminium hydroxide",
+      "kept": "catalog/Inorganic/compounds.json:16",
+      "skipped": "catalog/Inorganic/compounds.json:37"
+    },
+    {
+      "name": "zinc hydroxide",
+      "kept": "catalog/Inorganic/compounds.json:17",
+      "skipped": "catalog/Inorganic/compounds.json:39"
+    },
+    {
+      "name": "copper(II) hydroxide",
+      "kept": "catalog/Inorganic/compounds.json:18",
+      "skipped": "catalog/Inorganic/compounds.json:53"
+    },
+    {
+      "name": "carbonic acid",
+      "kept": "catalog/Inorganic/compounds.json:7",
+      "skipped": "catalog/Inorganic/compounds.json:73"
+    },
+    {
+      "name": "calcium carbonate",
+      "kept": "catalog/Inorganic/compounds.json:34",
+      "skipped": "catalog/Inorganic/compounds.json:74"
+    },
+    {
+      "name": "hydrogen fluoride",
+      "kept": "catalog/Inorganic/compounds.json:9",
+      "skipped": "catalog/Inorganic/compounds.json:82"
+    },
+    {
+      "name": "hydrogen chloride",
+      "kept": "catalog/Inorganic/compounds.json:1",
+      "skipped": "catalog/Inorganic/compounds.json:83"
+    },
+    {
+      "name": "hydrogen bromide",
+      "kept": "catalog/Inorganic/compounds.json:2",
+      "skipped": "catalog/Inorganic/compounds.json:84"
+    },
+    {
+      "name": "hydrogen iodide",
+      "kept": "catalog/Inorganic/compounds.json:3",
+      "skipped": "catalog/Inorganic/compounds.json:85"
+    },
+    {
+      "name": "nitric acid",
+      "kept": "catalog/Inorganic/compounds.json:4",
+      "skipped": "catalog/Inorganic/compounds.json:102"
+    },
+    {
+      "name": "phosphoric acid",
+      "kept": "catalog/Inorganic/compounds.json:8",
+      "skipped": "catalog/Inorganic/compounds.json:104"
+    },
+    {
+      "name": "dihydrogen dioxide",
+      "kept": "catalog/Inorganic/compounds.json:90",
+      "skipped": "catalog/Inorganic/compounds.json:108"
+    },
+    {
+      "name": "sulfuric acid",
+      "kept": "catalog/Inorganic/compounds.json:5",
+      "skipped": "catalog/Inorganic/compounds.json:113"
+    },
+    {
+      "name": "sodium carbonate",
+      "kept": "catalog/Inorganic/compounds.json:25",
+      "skipped": "catalog/Inorganic/compounds.json:114"
+    },
+    {
+      "name": "sodium hydrogencarbonate",
+      "kept": "catalog/Inorganic/compounds.json:26",
+      "skipped": "catalog/Inorganic/compounds.json:115"
+    },
+    {
+      "name": "calcium carbonate",
+      "kept": "catalog/Inorganic/compounds.json:34",
+      "skipped": "catalog/Inorganic/compounds.json:117"
+    },
+    {
+      "name": "sodium chloride",
+      "kept": "catalog/Inorganic/compounds.json:22",
+      "skipped": "catalog/Inorganic/compounds.json:120"
+    },
+    {
+      "name": "iron(III) chloride",
+      "kept": "catalog/Inorganic/compounds.json:66",
+      "skipped": "catalog/Inorganic/compounds.json:124"
+    },
+    {
+      "name": "potassium nitrate",
+      "kept": "catalog/Inorganic/compounds.json:27",
+      "skipped": "catalog/Inorganic/compounds.json:128"
+    },
+    {
+      "name": "sodium hypochlorite",
+      "kept": "catalog/Inorganic/compounds.json:87",
+      "skipped": "catalog/Inorganic/compounds.json:133"
+    },
+    {
+      "name": "copper(II) sulfate pentahydrate",
+      "kept": "catalog/Inorganic/compounds.json:54",
+      "skipped": "catalog/Inorganic/compounds.json:147"
+    },
+    {
+      "name": "starch (amylose and amylopectin)",
+      "kept": "catalog/Organic/compounds.json:115",
+      "skipped": "catalog/Organic/compounds.json:130"
+    },
+    {
+      "name": "cellulose",
+      "kept": "catalog/Organic/compounds.json:118",
+      "skipped": "catalog/Organic/compounds.json:131"
+    },
+    {
+      "name": "glycogen",
+      "kept": "catalog/Organic/compounds.json:119",
+      "skipped": "catalog/Organic/compounds.json:132"
+    }
+  ]
+}
