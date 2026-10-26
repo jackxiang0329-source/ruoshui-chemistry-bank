@@ -1,0 +1,10 @@
+{
+  "name": "ruoshui-chemistry-bank",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/validate.mjs",
+    "test": "node --test tests/*.test.mjs"
+  }
+}
