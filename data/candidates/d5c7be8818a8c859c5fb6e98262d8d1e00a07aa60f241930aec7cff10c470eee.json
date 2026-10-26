@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "d5c7be8818a8c859c5fb6e98262d8d1e00a07aa60f241930aec7cff10c470eee",
+  "subject": "organic",
+  "topic": "radical_polarity",
+  "level": "upper_undergraduate",
+  "question_type": "radical_nucleophilic_electrophilic_classification",
+  "question": "有机化学·自由基极性：根据 Radical Learn 所采用的常见反应性分类，tert-Butyl radical 通常主要表现为亲核型还是亲电型自由基？（回答该教材中的主要倾向，具体反应条件可能影响表现。）",
+  "answer": "亲核型",
+  "explanation_en": "Three alkyl groups donate into the singly occupied orbital (SOMO) by hyperconjugation and raise it: tertiary alkyl radicals are strongly nucleophilic and add fast to acrylates (Giese reaction). The bulk does not slow them as it would an anion, because the transition state is early, with a long forming bond (2.55 Å for t-Bu• adding to methyl vinyl ketone).",
+  "reference_urls": [
+    "https://doi.org/10.1038/s41570-021-00284-3"
+  ],
+  "hard": false,
+  "source": {
+    "repository": "ChemTrain/radical-learn",
+    "commit": "a1c6d4cb567db370fec10a2f258048f7e89f466c",
+    "file": "radical_learn.html",
+    "git_blob_sha": "7a81ac8756d00a0bd2f759f08b5c217e136e7937",
+    "deck_id": "carbon",
+    "deck_question_number": 1,
+    "original_id": "carbon-1",
+    "original_name": "tert-Butyl radical",
+    "license": "CC BY 4.0",
+    "code_license": "MIT",
+    "attribution": "Radical Learn by Quentin Bindschaedler (ChemTrain), https://github.com/ChemTrain/radical-learn, licensed under CC BY 4.0.",
+    "license_evidence": "https://github.com/ChemTrain/radical-learn/blob/a1c6d4cb567db370fec10a2f258048f7e89f466c/LICENSE-CONTENT.md",
+    "url": "https://github.com/ChemTrain/radical-learn/blob/a1c6d4cb567db370fec10a2f258048f7e89f466c/radical_learn.html",
+    "content_rights_verified": true,
+    "changes": "Chinese self-contained classification question and translated answer label; original author explanation retained; no structure drawings or third-party article text copied."
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false
+}

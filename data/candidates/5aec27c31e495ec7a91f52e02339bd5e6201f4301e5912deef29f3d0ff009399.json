@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "5aec27c31e495ec7a91f52e02339bd5e6201f4301e5912deef29f3d0ff009399",
+  "subject": "organic",
+  "topic": "radical_polarity",
+  "level": "upper_undergraduate",
+  "question_type": "radical_nucleophilic_electrophilic_classification",
+  "question": "有机化学·自由基极性：根据 Radical Learn 所采用的常见反应性分类，Cyanomethyl radical 通常主要表现为亲核型还是亲电型自由基？（回答该教材中的主要倾向，具体反应条件可能影响表现。）",
+  "answer": "亲电型",
+  "explanation_en": "One electron-withdrawing group is enough to make a primary radical electrophilic: the nitrile's π* accepts density from the SOMO and lowers it. Cyanoalkyl radicals add to electron-rich enamines.",
+  "reference_urls": [
+    "https://doi.org/10.1038/s41570-021-00284-3"
+  ],
+  "hard": false,
+  "source": {
+    "repository": "ChemTrain/radical-learn",
+    "commit": "a1c6d4cb567db370fec10a2f258048f7e89f466c",
+    "file": "radical_learn.html",
+    "git_blob_sha": "7a81ac8756d00a0bd2f759f08b5c217e136e7937",
+    "deck_id": "carbon",
+    "deck_question_number": 4,
+    "original_id": "carbon-4",
+    "original_name": "Cyanomethyl radical",
+    "license": "CC BY 4.0",
+    "code_license": "MIT",
+    "attribution": "Radical Learn by Quentin Bindschaedler (ChemTrain), https://github.com/ChemTrain/radical-learn, licensed under CC BY 4.0.",
+    "license_evidence": "https://github.com/ChemTrain/radical-learn/blob/a1c6d4cb567db370fec10a2f258048f7e89f466c/LICENSE-CONTENT.md",
+    "url": "https://github.com/ChemTrain/radical-learn/blob/a1c6d4cb567db370fec10a2f258048f7e89f466c/radical_learn.html",
+    "content_rights_verified": true,
+    "changes": "Chinese self-contained classification question and translated answer label; original author explanation retained; no structure drawings or third-party article text copied."
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false
+}
