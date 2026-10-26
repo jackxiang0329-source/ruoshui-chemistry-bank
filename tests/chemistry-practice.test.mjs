@@ -27,6 +27,10 @@ test('deterministic exam generation creates unique questions and unique options'
       assert.deepEqual(a, b);
       assert.equal(a.student.questions.length, 12);
       assert.equal(new Set(a.student.questions.map(q => q.id)).size, 12);
+      const conceptSignatures = mode === 'name_to_formula'
+        ? a.teacher.answers.map(k => k.correct_answer)
+        : a.student.questions.map(q => q.prompt);
+      assert.equal(new Set(conceptSignatures).size, 12, 'No duplicate formula concepts in one paper');
       assert.equal(a.student.status, 'UNREVIEWED_DO_NOT_PUBLISH');
       assert.ok(!JSON.stringify(a.student).includes('correct_index'));
       assert.ok(!JSON.stringify(a.student).includes('correct_answer'));
