@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use Reactivity Learn in teaching or research, please cite it as below."
+title: "Reactivity Learn"
+type: software
+authors:
+  - family-names: Bindschaedler
+    given-names: Quentin
+    affiliation: ChemTrain
+abstract: "A Quizlet-style trainer for nucleophilicity, electrophilicity and regioselectivity in organic chemistry, built on Mayr's reactivity scales, in one HTML file."
+url: "https://chemtrain.github.io/reactivity-learn/reactivity_learn.html"
+repository-code: "https://github.com/ChemTrain/reactivity-learn"
+license:
+  - MIT
+  - CC-BY-4.0
+date-released: 2026-10-21
+keywords:
+  - nucleophilicity
+  - electrophilicity
+  - Mayr scales
+  - regioselectivity
+  - chemistry education

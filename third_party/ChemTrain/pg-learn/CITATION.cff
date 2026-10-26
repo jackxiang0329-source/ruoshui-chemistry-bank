@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use PG Learn in teaching or research, please cite it as below."
+title: "PG Learn"
+type: software
+authors:
+  - family-names: Bindschaedler
+    given-names: Quentin
+    affiliation: ChemTrain
+abstract: "A Quizlet-style trainer for protecting groups and their deprotection conditions in organic synthesis, in one HTML file."
+url: "https://chemtrain.github.io/pg-learn/pg_learn.html"
+repository-code: "https://github.com/ChemTrain/pg-learn"
+license:
+  - MIT
+  - CC-BY-4.0
+date-released: 2026-10-20
+keywords:
+  - protecting groups
+  - deprotection
+  - organic synthesis
+  - chemistry education

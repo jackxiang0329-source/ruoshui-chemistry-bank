@@ -7,3 +7,6 @@ node_modules/
 *.fls
 *.synctex.gz
 .DS_Store
+
+# Locally reconstructed chemistry pages and temporary files
+.tmp/
