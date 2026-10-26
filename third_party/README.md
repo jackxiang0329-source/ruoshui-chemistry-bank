@@ -34,3 +34,10 @@ powershell -ExecutionPolicy Bypass -File scripts/fetch-upstream-sources.ps1
 ```
 
 锁文件：`UPSTREAM_LOCK.json`，包括每个原始源文件的 Git Blob SHA，可复现比对。
+
+## Parametric Question Engine — MIT 参数化化学源码（2026-10-27）
+
+- 上游：https://github.com/arya51-ai/parametric-question-engine；固定提交 `cbe7d952443ff88ef89b514dd4fb1641a69c2950`。
+- MIT，Copyright (c) 2026 Arya Mehta；保留原版 [LICENSE](parametric-question-engine/LICENSE)、README、package.json、`core/rng.js`、`core/options.js`、`chem/data.js`、`chem/archetypes.js`，共 **7 个文件**，导入前逐文件 Git Blob SHA 校验。
+- 本仓库仅选择 5 个可独立复算的基础化学题型生成练习，其他难度与题型暂不启用；见 [导入脚本](../scripts/import-parametric-mit-chemistry.mjs) 和 [来源核验日志](../harvest/run_logs/2026-10-27-parametric-mit-chemistry.md)。
+- 已生成 30 道新候选练习（不是第三方独立考试原题），仍全部待专家审核。

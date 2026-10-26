@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-27",
+  "repo": "jackxiang0329-source/ruoshui-chemistry-bank",
+  "main_before": "7aed6da9bc751912ebc0d1925f91e7a53848b812",
+  "generator_commit": "b0d4b7d3de2e63af3d5f23e5a262cbe577105d70",
+  "import_commit": "0d81597202b186e1c25c114d0097e4a6b5329b9e",
+  "actions_run": 40417752308,
+  "source": {
+    "repository": "arya51-ai/parametric-question-engine",
+    "commit": "cbe7d952443ff88ef89b514dd4fb1641a69c2950",
+    "license": "MIT",
+    "author": "Arya Mehta",
+    "rights_scope": "MIT-licensed original source code and deterministic generated variants, not unrelated third-party exam material",
+    "vendored_files": 7
+  },
+  "new_question_files": 30,
+  "previous_question_files": 755,
+  "current_question_files": 785,
+  "by_subject": {
+    "inorganic": 6,
+    "organic": 0,
+    "analytical": 6,
+    "physical": 18
+  },
+  "new_independent_exam_questions": 0,
+  "source_catalog_before": 568,
+  "source_catalog_after": 568,
+  "search_requests": 21,
+  "raw_hits_including_duplicates": 626,
+  "expert_approved": 0,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "errors": [],
+  "nonblocking_warnings": [
+    "Node punycode deprecation",
+    "checkout@v4/setup-node@v4 Node 20 compatibility"
+  ],
+  "excluded": [
+    {
+      "repository": "angiorda/Physical_chemistry_oral_exam_questions",
+      "reason": "No explicit redistribution license; adapted from POGIL-PCL"
+    },
+    {
+      "repository": "amir-prod/chem-mcq",
+      "reason": "Third-party exam/literature material scope unverified"
+    },
+    {
+      "repository": "nwabuezeeminence-cell/chemistry-102-CBT-exam-simulator",
+      "reason": "Question text provenance not established"
+    }
+  ],
+  "pending": [
+    "Expert chemistry review",
+    "Cross-source semantic deduplication",
+    "Harder electrochemistry n-electron validation",
+    "Organic/analytical/physical open exam question rights review"
+  ]
+}
