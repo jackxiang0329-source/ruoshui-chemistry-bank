@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "f2d7e3d9c233de4237cf65085aa9f0619e7f46164b92061574302530469b022c",
+  "subject": "physical",
+  "topic": "chemical_kinetics",
+  "level": "introductory_undergraduate",
+  "question_type": "arrhenius_activation_energy",
+  "question": "物理化学（阿伦尼乌斯方程）：某反应在 300 K 与 320 K 的速率常数之比 k(320 K)/k(300 K) = 2。假设此温度范围内活化能恒定，求 Ea（kJ·mol⁻¹），保留三位小数。",
+  "answer": "27.663 kJ/mol",
+  "explanation": "ln(k₂/k₁) = (Ea/R)(1/T₁ - 1/T₂)；代入温度（K）与速率常数之比求 Ea。",
+  "parameters": {
+    "T1_K": 300,
+    "T2_K": 320,
+    "rate_constant_ratio": 2
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-physical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "third_party_question_text_copied": false,
+    "original_exam_question": false,
+    "changes": "New numerical exercises derived solely from standard thermodynamic/kinetic equations."
+  }
+}

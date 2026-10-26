@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "d3193dbe0aee5594fca0ab53bb412e31e7b5996de17dbc0c221f660243edccbe",
+  "subject": "physical",
+  "topic": "chemical_thermodynamics",
+  "level": "introductory_undergraduate",
+  "question_type": "reversible_isothermal_expansion_work",
+  "question": "物理化学（理想气体可逆等温膨胀）：1.000 mol 理想气体在 300 K 下可逆等温膨胀，末态与初态体积之比 V₂/V₁ = 1.5。采用化学热力学约定（体系对外做功时 w < 0），求体系所受功 w（kJ），保留三位小数。",
+  "answer": "-1.011 kJ",
+  "explanation": "可逆等温理想气体体积功 w = -nRT ln(V₂/V₁)，负号表示体系对外做功。",
+  "parameters": {
+    "n_mol": 1,
+    "T_K": 300,
+    "volume_ratio": 1.5
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-physical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "third_party_question_text_copied": false,
+    "original_exam_question": false,
+    "changes": "New numerical exercises derived solely from standard thermodynamic/kinetic equations."
+  }
+}

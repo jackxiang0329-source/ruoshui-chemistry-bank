@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "b99b9d0dab49a613e6fc060c4ea8f0915ae8b9a8f74047d9af9157eb6f1f1dde",
+  "subject": "physical",
+  "topic": "chemical_kinetics",
+  "level": "introductory_undergraduate",
+  "question_type": "first_order_half_life",
+  "question": "物理化学（一级反应）：某一级反应的速率常数 k = 0.05 min⁻¹。求其半衰期 t₁/₂（min），保留三位小数。",
+  "answer": "13.863 min",
+  "explanation": "一级反应的积分速率方程给出 t₁/₂ = ln 2 / k。",
+  "parameters": {
+    "k_per_min": 0.05
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-physical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "third_party_question_text_copied": false,
+    "original_exam_question": false,
+    "changes": "New numerical exercises derived solely from standard thermodynamic/kinetic equations."
+  }
+}
