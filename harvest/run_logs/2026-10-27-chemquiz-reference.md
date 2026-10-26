@@ -8,3 +8,15 @@
 - 原许可证 MIT；固定 SHA、原作者、文件来源、中文改写说明及许可核对见 docs/SOURCE_CHEMQUIZ_REFERENCE_LICENSE_REVIEW.md。
 - 已设置白名单、离子电荷校验、反应产物校验、去重、分类及禁止发布标记。测试覆盖篡改、重复与电荷错误。
 - 未完成：专家审核沉淀条件与答案；审查 ChemTrain PR #7–#9 的交互式题及第三方测量数据；复核 CI 导入结果。
+
+## GitHub Actions 实际执行结果（已验证）
+
+- 代码及质量门禁提交：263c06e7f9e5af742143c34ae40462d35abe9ae5。
+- 题目增量提交：2ff7bb969da7e64862bd30f8a09e517f2e0958c9。
+- 成功运行：GitHub Actions #40365940607，状态 completed/success；Node 导入测试、采集测试、TMC 测试、搜索、三种导入及 Git 推送全部成功。
+- 本轮新增 42 道待审派生练习（分析化学 19、无机化学 23）；重复跳过 0；原有 598 道，总计 640 道候选。不是 42 道上游独立原题，也没有专家终审通过。
+- TMC Learn 本轮新增 0、重复跳过 593；Muza 本轮新增 0、重复跳过 5；没有重复导入。
+- 来源搜索实际执行 21 次 GitHub API 请求，626 条原始重复命中，独立新增来源 0；来源目录保持 568。
+- 运行日志未见导入错误；此前 TMC AST 解析故障已经在先前运行修复，不计为本轮新故障。
+- 另外检索了物理化学、分析化学、有机化学、无机化学的公开仓库；如 CheersWorld/AnalyticalChemistryQuestionGenerator、csvoss/carbonate-plus、gds001/Computational-Physical-Chemistry、ShardOL002/jee-chemistry-database 等尚未核实题目内容可再分发的许可证与原始权利链，**本轮不复制题目**。
+- 尚待：人工复核 42 道基础题的反应条件与教学适用性；进一步寻找有机化学和物理化学明确授权、含完整答案的大学层次习题；逐条审查 PR #7–#9 中的互动题、测量数据与原图。
