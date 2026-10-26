@@ -18,7 +18,7 @@ export function subjects(value) {
   const t = String(value || '').toLowerCase();
   const rules = [
     ['inorganic', /inorganic|无机化学|无机/],
-    ['organic', /organic|有机化学|有机/],
+    ['organic', /\borganic\b|有机化学|有机/],
     ['analytical', /analytical|分析化学|色谱|滴定|titration|chromatograph/],
     ['physical', /physical chemistry|物理化学|热力学|动力学|thermodynamic|kinetic/]
   ];
