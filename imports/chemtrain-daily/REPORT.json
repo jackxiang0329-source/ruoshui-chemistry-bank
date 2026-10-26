@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "source": "ChemTrain/chemtrain-daily",
+  "source_commit": "79ed76e119ce379744654fbf9517cad4fd0a6c67",
+  "source_blob_sha": "33cf8fae4b050c21c0e9cbd8af7725a681391b83",
+  "license_code": "MIT",
+  "license_content": "CC BY 4.0; experimentally measured source values excluded by upstream project terms",
+  "total_record_count": 2892,
+  "exact_dedup_removed": 0,
+  "exact_unique": 2892,
+  "near_signature_repeat_count": 144,
+  "near_signature_explanation": "Same s/k/a/t/f/fig but different options/explanations; do not automatically remove",
+  "drawings_in_reassembled_html": 2971,
+  "by_source": {
+    "pka": 342,
+    "rxn": 561,
+    "pg": 227,
+    "tmc": 820,
+    "rl": 563,
+    "pr": 329,
+    "rad": 50
+  },
+  "status": "quarantine_only; derived multiple-choice variants overlap subject matter with 801 base records",
+  "published_count": 0,
+  "parts": {
+    "directory": "third_party/ChemTrain/chemtrain-daily/chemtrain_daily.html.parts",
+    "count": 11,
+    "required_assembly": "python3 scripts/assemble-chemtrain-daily.py"
+  }
+}
