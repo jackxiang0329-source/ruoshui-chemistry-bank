@@ -1,0 +1,189 @@
+{
+  "repo": "MuzaPro/Organic-Chemistry-Quiz-JS",
+  "revision": "71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc",
+  "raw": 50,
+  "unique": 22,
+  "duplicates_removed": 28,
+  "answer_conflict_groups": 4,
+  "source_blobs": {
+    "data/questions.json": "e4fde59d9f5faa1ff0ed82fa57ae7b05f276292a",
+    "data/More questions/first-5-questions.json": "e4fde59d9f5faa1ff0ed82fa57ae7b05f276292a",
+    "data/More questions/beginner-questions.json": "95a8622587bf11f33de7ce1035eb90fd94a84f23",
+    "data/10_advanced_questions_need-work.json": "f7e39e5f420831de98abefb1f15cd534a2f853bb",
+    "data/More questions/Hard-and-incorrect-questions.json": "fb8820d0381efeef95887a0f7238f205a4eda3e6",
+    "data/easy_questions_need_work.json": "26dbdd76f453696b480288bb962547d9287b3854",
+    "data/Old-versions/image-based/questions.json": "9ce3e5266d234e19edd6d1e4d1a3533bc5ddc675",
+    "data/Old-versions/text-based/questions.json": "7e1a8576beff475176fb0a0be70bf81bd3e9e3be"
+  },
+  "duplicate_cases": [
+    {
+      "duplicate_file": "data/More questions/first-5-questions.json",
+      "duplicate_id": "q1",
+      "kept_id": "MUZA-ORG-0001",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/More questions/first-5-questions.json",
+      "duplicate_id": "q2",
+      "kept_id": "MUZA-ORG-0002",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/More questions/first-5-questions.json",
+      "duplicate_id": "q3",
+      "kept_id": "MUZA-ORG-0003",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/More questions/first-5-questions.json",
+      "duplicate_id": "q4",
+      "kept_id": "MUZA-ORG-0004",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/More questions/first-5-questions.json",
+      "duplicate_id": "q5",
+      "kept_id": "MUZA-ORG-0005",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/More questions/Hard-and-incorrect-questions.json",
+      "duplicate_id": "q6",
+      "kept_id": "MUZA-ORG-0011",
+      "conflict": true
+    },
+    {
+      "duplicate_file": "data/More questions/Hard-and-incorrect-questions.json",
+      "duplicate_id": "q7",
+      "kept_id": "MUZA-ORG-0012",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/More questions/Hard-and-incorrect-questions.json",
+      "duplicate_id": "q8",
+      "kept_id": "MUZA-ORG-0013",
+      "conflict": true
+    },
+    {
+      "duplicate_file": "data/More questions/Hard-and-incorrect-questions.json",
+      "duplicate_id": "q9",
+      "kept_id": "MUZA-ORG-0014",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/More questions/Hard-and-incorrect-questions.json",
+      "duplicate_id": "q10",
+      "kept_id": "MUZA-ORG-0015",
+      "conflict": true
+    },
+    {
+      "duplicate_file": "data/More questions/Hard-and-incorrect-questions.json",
+      "duplicate_id": "q11",
+      "kept_id": "MUZA-ORG-0016",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/More questions/Hard-and-incorrect-questions.json",
+      "duplicate_id": "q12",
+      "kept_id": "MUZA-ORG-0017",
+      "conflict": true
+    },
+    {
+      "duplicate_file": "data/More questions/Hard-and-incorrect-questions.json",
+      "duplicate_id": "q13",
+      "kept_id": "MUZA-ORG-0018",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/More questions/Hard-and-incorrect-questions.json",
+      "duplicate_id": "q14",
+      "kept_id": "MUZA-ORG-0019",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/More questions/Hard-and-incorrect-questions.json",
+      "duplicate_id": "q15",
+      "kept_id": "MUZA-ORG-0020",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/easy_questions_need_work.json",
+      "duplicate_id": "q16",
+      "kept_id": "MUZA-ORG-0006",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/easy_questions_need_work.json",
+      "duplicate_id": "q17",
+      "kept_id": "MUZA-ORG-0007",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/easy_questions_need_work.json",
+      "duplicate_id": "q18",
+      "kept_id": "MUZA-ORG-0008",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/easy_questions_need_work.json",
+      "duplicate_id": "q19",
+      "kept_id": "MUZA-ORG-0009",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/easy_questions_need_work.json",
+      "duplicate_id": "q20",
+      "kept_id": "MUZA-ORG-0010",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/Old-versions/image-based/questions.json",
+      "duplicate_id": "q1",
+      "kept_id": "MUZA-ORG-0001",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/Old-versions/image-based/questions.json",
+      "duplicate_id": "q3",
+      "kept_id": "MUZA-ORG-0003",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/Old-versions/image-based/questions.json",
+      "duplicate_id": "q5",
+      "kept_id": "MUZA-ORG-0005",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/Old-versions/text-based/questions.json",
+      "duplicate_id": "q1",
+      "kept_id": "MUZA-ORG-0001",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/Old-versions/text-based/questions.json",
+      "duplicate_id": "q2",
+      "kept_id": "MUZA-ORG-0021",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/Old-versions/text-based/questions.json",
+      "duplicate_id": "q3",
+      "kept_id": "MUZA-ORG-0003",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/Old-versions/text-based/questions.json",
+      "duplicate_id": "q4",
+      "kept_id": "MUZA-ORG-0022",
+      "conflict": false
+    },
+    {
+      "duplicate_file": "data/Old-versions/text-based/questions.json",
+      "duplicate_id": "q5",
+      "kept_id": "MUZA-ORG-0005",
+      "conflict": false
+    }
+  ],
+  "publication_allowed": false
+}

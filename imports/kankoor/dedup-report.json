@@ -1,0 +1,16 @@
+{
+  "repo": "Taikutsu-Lyrz/Afghanistan-kankoor-exam-dataset",
+  "revision": "43175a18f16ef6edf008a8cd79fcf4c5c4f831a0",
+  "source_file": "Afghanistan-kankoor-questions-dataset/dataset/data/chemistry/general_chemistry.json",
+  "source_blob_sha": "cd86e8a8645e9103569efd3fea37073901c9cc00",
+  "raw": 915,
+  "unique": 60,
+  "duplicates_removed": 855,
+  "answer_conflicts": 0,
+  "index_mismatch": 0,
+  "duplicate_groups": 60,
+  "max_repeat": 21,
+  "language": "Dari",
+  "level": "Afghanistan entrance",
+  "not_approved_for_publication": true
+}

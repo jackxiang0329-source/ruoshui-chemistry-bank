@@ -1,0 +1,102 @@
+[
+  {
+    "id": "MUZA-ORG-0011",
+    "kept_source": {
+      "repo": "MuzaPro/Organic-Chemistry-Quiz-JS",
+      "commit": "71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc",
+      "file": "data/10_advanced_questions_need-work.json",
+      "row": 1,
+      "upstream_id": "q6",
+      "license": "MIT"
+    },
+    "kept_answer": [
+      "benzaldehyde",
+      "acetone"
+    ],
+    "other": {
+      "file": "data/More questions/Hard-and-incorrect-questions.json",
+      "row": 1,
+      "id": "q6",
+      "correctReagents": [
+        "benzaldehyde",
+        "sodium-hydroxide"
+      ],
+      "answer_conflict": true
+    }
+  },
+  {
+    "id": "MUZA-ORG-0013",
+    "kept_source": {
+      "repo": "MuzaPro/Organic-Chemistry-Quiz-JS",
+      "commit": "71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc",
+      "file": "data/10_advanced_questions_need-work.json",
+      "row": 3,
+      "upstream_id": "q8",
+      "license": "MIT"
+    },
+    "kept_answer": [
+      "benzene",
+      "chloroethane"
+    ],
+    "other": {
+      "file": "data/More questions/Hard-and-incorrect-questions.json",
+      "row": 3,
+      "id": "q8",
+      "correctReagents": [
+        "benzene",
+        "aluminum-chloride"
+      ],
+      "answer_conflict": true
+    }
+  },
+  {
+    "id": "MUZA-ORG-0015",
+    "kept_source": {
+      "repo": "MuzaPro/Organic-Chemistry-Quiz-JS",
+      "commit": "71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc",
+      "file": "data/10_advanced_questions_need-work.json",
+      "row": 5,
+      "upstream_id": "q10",
+      "license": "MIT"
+    },
+    "kept_answer": [
+      "borane-thf",
+      "1-butene"
+    ],
+    "other": {
+      "file": "data/More questions/Hard-and-incorrect-questions.json",
+      "row": 5,
+      "id": "q10",
+      "correctReagents": [
+        "borane-thf",
+        "hydrogen-peroxide"
+      ],
+      "answer_conflict": true
+    }
+  },
+  {
+    "id": "MUZA-ORG-0017",
+    "kept_source": {
+      "repo": "MuzaPro/Organic-Chemistry-Quiz-JS",
+      "commit": "71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc",
+      "file": "data/10_advanced_questions_need-work.json",
+      "row": 7,
+      "upstream_id": "q12",
+      "license": "MIT"
+    },
+    "kept_answer": [
+      "styrene",
+      "iodobenzene"
+    ],
+    "other": {
+      "file": "data/More questions/Hard-and-incorrect-questions.json",
+      "row": 7,
+      "id": "q12",
+      "correctReagents": [
+        "palladium-acetate",
+        "triethylamine"
+      ],
+      "answer_conflict": true
+    }
+  }
+]
