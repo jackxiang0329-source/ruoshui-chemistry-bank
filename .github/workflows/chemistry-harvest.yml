@@ -14,6 +14,8 @@ on:
       - "tests/test_chemtrain_tmc_import.py"
       - "scripts/import-chemquiz-reference.mjs"
       - "tests/chemquiz-reference.test.mjs"
+      - "scripts/import-chemquiz-organic.mjs"
+      - "tests/chemquiz-organic.test.mjs"
       - "scripts/import-chemtrain-radical.mjs"
       - "tests/chemtrain-radical.test.mjs"
       - "scripts/import-chemtrain-photoredox.mjs"
@@ -52,6 +54,8 @@ jobs:
         run: python3 -m unittest discover -s tests -p "test_chemtrain_tmc_import.py" -v
       - name: Verify MIT chemquiz reference importer
         run: node --test tests/chemquiz-reference.test.mjs
+      - name: Verify pinned MIT chemquiz organic practice importer
+        run: node --test tests/chemquiz-organic.test.mjs
       - name: Verify pinned Radical Learn source and importer
         run: node --test tests/chemtrain-radical.test.mjs
       - name: Verify pinned Photoredox Learn importer
@@ -66,6 +70,8 @@ jobs:
         run: python3 scripts/import-chemtrain-tmc.py
       - name: Import pinned MIT chemquiz reference exercises
         run: node scripts/import-chemquiz-reference.mjs
+      - name: Import pinned MIT chemquiz organic reference practice
+        run: node scripts/import-chemquiz-organic.mjs
       - name: Import CC BY 4.0 Radical Learn text-only organic classification cards
         run: node scripts/import-chemtrain-radical.mjs
       - name: Import pinned CC BY 4.0 Photoredox Learn cycles
