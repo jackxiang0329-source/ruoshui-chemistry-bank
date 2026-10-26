@@ -90,7 +90,19 @@ export function generatePractice(compounds, config = {}) {
   const rng = prng(seed);
   // Every question gets one unique source item; options must be mutually
   // distinguishable, including when different names share a molecular formula.
-  const selected = shuffle(pool, rng).slice(0, count);
+  const selected = [];
+  const usedQuestionFormulas = new Set();
+  for (const item of shuffle(pool, rng)) {
+    // Avoid near-duplicate question concepts (synonyms or isomeric entries)
+    // whose prompts would have the same formula answer in a single paper.
+    const key = normalizeFormula(item.formula);
+    if (usedQuestionFormulas.has(key)) continue;
+    usedQuestionFormulas.add(key);
+    selected.push(item);
+    if (selected.length === count) break;
+  }
+  if (selected.length !== count)
+    fail('INSUFFICIENT_DISTINCT_QUESTIONS', 'Not enough distinct formulas for this paper');
   const questions = [];
   const answers = [];
   for (const item of selected) {
