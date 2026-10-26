@@ -20,3 +20,4 @@ jobs:
         with:
           node-version: '22'
       - run: node scripts/audit-chemtrain-submodules.mjs
+      - run: node scripts/audit-chemtrain-content.mjs

@@ -64,3 +64,8 @@ node scripts/audit-chemtrain-submodules.mjs
 ## 其他新增独立源码
 
 同时另行锁定 ChemLit-QA（1025 条文献 QA 的原项目，论文原文内容需要核权）和 chemie-eroberung（55 道德语/俄语八年级练习，非本科题库）。详见 [其他源码许可说明](../ADDITIONAL_SOURCES.md)，均不计入本仓库正式发布题库。
+
+
+### 四个子项目的原始 HTML 数据结构核验
+
+通过 GitHub 固定版原文解析内嵌 JSON：pKa Learn 207 条 `mols` / 7 组卡片；Radical Learn 49 条 `mols` / 3 组自由基；Reactivity Learn 337 条 `mols` / 11 组；Photoredox Learn 145 条 `mols` / 6 组。合计 738 个**基础分子/结构记录数**，不等于 738 道唯一试题；重复分子和动态生成题还需进一步检查。保留源码 Git blob SHA 在 `EMBEDDED_CATALOG_AUDIT.json`，可以执行 `node scripts/audit-chemtrain-content.mjs` 对本地已拉取的子模块做实际结构复核。其他 HTML 文件由于较大尚未抽取结构，不造题目数量。
