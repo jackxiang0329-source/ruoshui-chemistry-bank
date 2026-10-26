@@ -17,3 +17,12 @@
 第一期先建立可验证的四科样例、章节分类、题目 Schema、CI 和 TeX 构建规范。每科样例不等于正式题库；版本发布时另行声明审核与许可状态。
 
 来源审查、样例及工具链将在开发分支提交并通过 PR 审核后进入 `main`。
+
+## 开源题库程序源码（已迁入 main）
+
+- [chemquiz 完整 Rust 组卷和 WASM 项目源码](third_party/chemquiz/)（99 个原始文件，MIT）
+- [ChemIQ Python 核心校验、解析源码与 Notebook](third_party/ChemIQ/)（9 个原始文件，BSD-3-Clause）
+- [上游版本、版权和复验说明](third_party/README.md)
+- [源码逐文件 SHA 核验脚本](scripts/audit-upstream-vendor.mjs)
+
+这些源码与待审外部题目数据不同，尚未作为本项目生产 API 的可运行模块。完整去重数据与题库质检工作保留在 Draft PR #1。
