@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "date": "2026-10-26",
+  "method": "git_submodules_pinned_gitlinks",
+  "source_count": 8,
+  "content_license": "CC BY 4.0 subject to upstream qualifications and third-party measured values",
+  "code_license": "MIT",
+  "note": "Some measured pKa, Mayr parameters and photoredox potentials belong to original researchers and are not granted by the ChemTrain content licenses. Submodules source must be fetched by git submodule update --init --recursive.",
+  "sources": [
+    {
+      "repository": "ChemTrain/chemtrain-daily",
+      "url": "https://github.com/ChemTrain/chemtrain-daily",
+      "submodule_path": "third_party/ChemTrain/chemtrain-daily",
+      "commit": "79ed76e119ce379744654fbf9517cad4fd0a6c67",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "content_status": "source_snapshot_only_not_imported_to_formal_questions",
+      "license_files": [
+        "LICENSE",
+        "LICENSE-CONTENT.md"
+      ],
+      "question_estimate": "README says about 2900 across all apps, not independently verified; overlaps with other seven apps"
+    },
+    {
+      "repository": "ChemTrain/pka-learn",
+      "url": "https://github.com/ChemTrain/pka-learn",
+      "submodule_path": "third_party/ChemTrain/pka-learn",
+      "commit": "5250dce7a367be0e767b2e3e7a26aa50c27b12a0",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "content_status": "source_snapshot_only_not_imported_to_formal_questions",
+      "license_files": [
+        "LICENSE",
+        "LICENSE-CONTENT.md"
+      ],
+      "question_estimate": null
+    },
+    {
+      "repository": "ChemTrain/reaction-learn",
+      "url": "https://github.com/ChemTrain/reaction-learn",
+      "submodule_path": "third_party/ChemTrain/reaction-learn",
+      "commit": "da38861f5bb35d4fef1d2871eafad027e41b43f4",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "content_status": "source_snapshot_only_not_imported_to_formal_questions",
+      "license_files": [
+        "LICENSE",
+        "LICENSE-CONTENT.md"
+      ],
+      "question_estimate": null
+    },
+    {
+      "repository": "ChemTrain/pg-learn",
+      "url": "https://github.com/ChemTrain/pg-learn",
+      "submodule_path": "third_party/ChemTrain/pg-learn",
+      "commit": "b232355d130198e4f6519388201c65e7359238e0",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "content_status": "source_snapshot_only_not_imported_to_formal_questions",
+      "license_files": [
+        "LICENSE",
+        "LICENSE-CONTENT.md"
+      ],
+      "question_estimate": null
+    },
+    {
+      "repository": "ChemTrain/tmc-learn",
+      "url": "https://github.com/ChemTrain/tmc-learn",
+      "submodule_path": "third_party/ChemTrain/tmc-learn",
+      "commit": "3ccdefe51d6754cb59cc19c847d76b7044da1414",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "content_status": "source_snapshot_only_not_imported_to_formal_questions",
+      "license_files": [
+        "LICENSE",
+        "LICENSE-CONTENT.md"
+      ],
+      "question_estimate": null
+    },
+    {
+      "repository": "ChemTrain/reactivity-learn",
+      "url": "https://github.com/ChemTrain/reactivity-learn",
+      "submodule_path": "third_party/ChemTrain/reactivity-learn",
+      "commit": "be6505465d92fc983aabc40bd9863de791b0d2cf",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "content_status": "source_snapshot_only_not_imported_to_formal_questions",
+      "license_files": [
+        "LICENSE",
+        "LICENSE-CONTENT.md"
+      ],
+      "question_estimate": null
+    },
+    {
+      "repository": "ChemTrain/photoredox-learn",
+      "url": "https://github.com/ChemTrain/photoredox-learn",
+      "submodule_path": "third_party/ChemTrain/photoredox-learn",
+      "commit": "260cf0553b42fc510de655d68bad902af7f94e38",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "content_status": "source_snapshot_only_not_imported_to_formal_questions",
+      "license_files": [
+        "LICENSE",
+        "LICENSE-CONTENT.md"
+      ],
+      "question_estimate": null
+    },
+    {
+      "repository": "ChemTrain/radical-learn",
+      "url": "https://github.com/ChemTrain/radical-learn",
+      "submodule_path": "third_party/ChemTrain/radical-learn",
+      "commit": "a1c6d4cb567db370fec10a2f258048f7e89f466c",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "content_status": "source_snapshot_only_not_imported_to_formal_questions",
+      "license_files": [
+        "LICENSE",
+        "LICENSE-CONTENT.md"
+      ],
+      "question_estimate": null
+    }
+  ]
+}
