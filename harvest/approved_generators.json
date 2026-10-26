@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "approved_generators": [
+    {
+      "id": "chemtrain-tmc-electron-counts",
+      "repository": "ChemTrain/tmc-learn",
+      "commit": "3ccdefe51d6754cb59cc19c847d76b7044da1414",
+      "path": "src/tmc_sets.py",
+      "blob_sha": "a97ab868052f6f5ca568c132a3df3851d8cb89b2",
+      "expected_unique_complexes": 199,
+      "content_rights_verified": true,
+      "license": "CC-BY-4.0",
+      "code_license": "MIT",
+      "attribution": "TMC Learn by Francesco Sala (ChemTrain), https://github.com/ChemTrain/tmc-learn, licensed under CC BY 4.0; derived Chinese practice prompts, source card data modified.",
+      "license_evidence": {
+        "content_license": "https://github.com/ChemTrain/tmc-learn/blob/3ccdefe51d6754cb59cc19c847d76b7044da1414/LICENSE-CONTENT.md",
+        "code_license": "https://github.com/ChemTrain/tmc-learn/blob/3ccdefe51d6754cb59cc19c847d76b7044da1414/LICENSE",
+        "readme": "https://github.com/ChemTrain/tmc-learn/blob/3ccdefe51d6754cb59cc19c847d76b7044da1414/README.md",
+        "scope_note": "LICENSE-CONTENT explicitly licenses selection and grouping of card sets and ligand content as CC BY 4.0. We generate questions only from the complex card name/formula and electron count/oxidation state, not drawings, third-party text, or logo."
+      }
+    }
+  ]
+}

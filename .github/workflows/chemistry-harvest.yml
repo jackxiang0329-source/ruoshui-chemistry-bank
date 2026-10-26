@@ -9,6 +9,9 @@ on:
       - "tests/harvest.test.mjs"
       - "harvest/search_queries.json"
       - "harvest/approved_imports.json"
+      - "harvest/approved_generators.json"
+      - "scripts/import-chemtrain-tmc.py"
+      - "tests/test_chemtrain_tmc_import.py"
   schedule:
     - cron: "17,47 * * * *"
   workflow_dispatch:
@@ -37,15 +40,22 @@ jobs:
           node-version: "22"
       - name: Verify collector
         run: node --test tests/harvest.test.mjs
+      - name: Verify TMC importer without executing upstream code
+        run: python3 -m unittest discover -s tests -p "test_chemtrain_tmc_import.py" -v
       - name: Search GitHub chemistry repositories
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/harvest-chemistry-sources.mjs
       - name: Import license-approved question records
         run: node scripts/import-approved-chemistry.mjs
+      - name: Import pinned CC BY 4.0 TMC Learn complex exercises
+        run: python3 scripts/import-chemtrain-tmc.py
       - name: Commit only real additions or changes
         run: |
           git add -- harvest/source_candidates.json
+          if [ -d harvest/import_reports ]; then
+            git add -- harvest/import_reports
+          fi
           if [ -d harvest/sources ]; then
             git add -- harvest/sources
           fi
