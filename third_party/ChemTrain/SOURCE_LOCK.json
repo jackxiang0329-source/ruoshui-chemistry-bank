@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-10-26",
-  "is_complete_mirror": false,
-  "reason": "The connector cannot return single-file HTML above ~1 MB; the pinned clone script can fetch all missing files.",
+  "is_complete_mirror": true,
+  "reason": "All 55 upstream Git blobs are preserved: 54 original files as-is, plus the 9.7MB daily HTML stored byte-for-byte in eleven UTF-8 chunk blobs; assemble locally to recover its exact original Git hash.",
   "sources": [
     {
       "repository": "ChemTrain/chemtrain-daily",
@@ -29,23 +29,17 @@
           "size": 1523
         },
         {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
           "path": "README.md",
           "sha": "065607ab7660c200627d421da2bb08543a026d17",
           "size": 4241
         }
       ],
-      "not_mirrored": [
-        {
-          "path": "chemtrain_daily.html",
-          "sha": "33cf8fae4b050c21c0e9cbd8af7725a681391b83",
-          "size": 9693481
-        },
-        {
-          "path": "logo.svg",
-          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
-          "size": 18840
-        }
-      ],
+      "not_mirrored": [],
       "all_upstream_files": [
         {
           "path": "chemtrain_daily.html",
@@ -77,6 +71,59 @@
           "sha": "065607ab7660c200627d421da2bb08543a026d17",
           "size": 4241
         }
+      ],
+      "reconstructed_files": [
+        {
+          "path": "chemtrain_daily.html",
+          "sha": "33cf8fae4b050c21c0e9cbd8af7725a681391b83",
+          "size": 9693481,
+          "parts": [
+            {
+              "path": "chemtrain_daily.html.parts/000.part",
+              "sha": "1bd0ee82257e05e7f391a6b6caf18c7ff08ab984"
+            },
+            {
+              "path": "chemtrain_daily.html.parts/001.part",
+              "sha": "04f40b222e09f5e91270761bed86aaf9eafd843e"
+            },
+            {
+              "path": "chemtrain_daily.html.parts/002.part",
+              "sha": "5a465fae8669a64f760242cbf6fbc403cc67a5e9"
+            },
+            {
+              "path": "chemtrain_daily.html.parts/003.part",
+              "sha": "38c9b60b5e733ecb49a1addb1ce02ed07ce59f77"
+            },
+            {
+              "path": "chemtrain_daily.html.parts/004.part",
+              "sha": "2f2ee16bfbb1da33de4574aaa1fe0f224315bb8e"
+            },
+            {
+              "path": "chemtrain_daily.html.parts/005.part",
+              "sha": "58dd93a3468ae02e9d3c25977fcac7d4f1f2c0f0"
+            },
+            {
+              "path": "chemtrain_daily.html.parts/006.part",
+              "sha": "97be273469f49a4c0e62b2ee1622163e44d1d5dd"
+            },
+            {
+              "path": "chemtrain_daily.html.parts/007.part",
+              "sha": "6d9c98132f36ece1cafdade08c3336f5db7b7fa9"
+            },
+            {
+              "path": "chemtrain_daily.html.parts/008.part",
+              "sha": "0d646b725c29fc9c03ab068099e6ba516f53a212"
+            },
+            {
+              "path": "chemtrain_daily.html.parts/009.part",
+              "sha": "ded8e9a5d387e588311d742ae18b0aec6633e71f"
+            },
+            {
+              "path": "chemtrain_daily.html.parts/010.part",
+              "sha": "4148596ff2735d936a510edefdbf0a9fa0f9dc45"
+            }
+          ]
+        }
       ]
     },
     {
@@ -104,6 +151,11 @@
           "size": 1416
         },
         {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
           "path": "pka_learn.html",
           "sha": "de1e8441908198301a7e82da76fd5febd9de8900",
           "size": 675676
@@ -114,13 +166,7 @@
           "size": 2675
         }
       ],
-      "not_mirrored": [
-        {
-          "path": "logo.svg",
-          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
-          "size": 18840
-        }
-      ],
+      "not_mirrored": [],
       "all_upstream_files": [
         {
           "path": "CITATION.cff",
@@ -179,13 +225,6 @@
           "size": 1269
         },
         {
-          "path": "README.md",
-          "sha": "2d0aa0f0dd053f8f23301fe1dd0ab71378ed9078",
-          "size": 2790
-        }
-      ],
-      "not_mirrored": [
-        {
           "path": "logo.svg",
           "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
           "size": 18840
@@ -194,8 +233,14 @@
           "path": "reaction_learn.html",
           "sha": "942b48bf45ff4fe156a622b1e454acd296d224d0",
           "size": 3528610
+        },
+        {
+          "path": "README.md",
+          "sha": "2d0aa0f0dd053f8f23301fe1dd0ab71378ed9078",
+          "size": 2790
         }
       ],
+      "not_mirrored": [],
       "all_upstream_files": [
         {
           "path": "CITATION.cff",
@@ -254,13 +299,6 @@
           "size": 1191
         },
         {
-          "path": "README.md",
-          "sha": "fab8958dc60d4133a1e552902389dd70cc85e8be",
-          "size": 2236
-        }
-      ],
-      "not_mirrored": [
-        {
           "path": "logo.svg",
           "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
           "size": 18840
@@ -269,8 +307,14 @@
           "path": "pg_learn.html",
           "sha": "7763f186d6453ec9b65b5f9e7aefb06a100a5279",
           "size": 3478086
+        },
+        {
+          "path": "README.md",
+          "sha": "fab8958dc60d4133a1e552902389dd70cc85e8be",
+          "size": 2236
         }
       ],
+      "not_mirrored": [],
       "all_upstream_files": [
         {
           "path": "CITATION.cff",
@@ -319,6 +363,11 @@
           "size": 27
         },
         {
+          "path": ".nojekyll",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "size": 0
+        },
+        {
           "path": "CITATION.cff",
           "sha": "db1a1bc9a4b94e0bea0e1070e655def58f564cc8",
           "size": 641
@@ -332,6 +381,11 @@
           "path": "LICENSE-CONTENT.md",
           "sha": "d6778c02825b4bd2ba2159a15bb546902ca93923",
           "size": 1341
+        },
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
         },
         {
           "path": "README.md",
@@ -362,18 +416,6 @@
           "path": "src/tmc_sets.py",
           "sha": "a97ab868052f6f5ca568c132a3df3851d8cb89b2",
           "size": 30812
-        }
-      ],
-      "not_mirrored": [
-        {
-          "path": ".nojekyll",
-          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-          "size": 0
-        },
-        {
-          "path": "logo.svg",
-          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
-          "size": 18840
         },
         {
           "path": "tmc_learn.html",
@@ -381,6 +423,7 @@
           "size": 1244193
         }
       ],
+      "not_mirrored": [],
       "all_upstream_files": [
         {
           "path": ".gitignore",
@@ -474,6 +517,11 @@
           "size": 1483
         },
         {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
           "path": "reactivity_learn.html",
           "sha": "9779b9167ff4af2445a1efe845db3119928f6d12",
           "size": 940936
@@ -484,13 +532,7 @@
           "size": 4094
         }
       ],
-      "not_mirrored": [
-        {
-          "path": "logo.svg",
-          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
-          "size": 18840
-        }
-      ],
+      "not_mirrored": [],
       "all_upstream_files": [
         {
           "path": "CITATION.cff",
@@ -549,6 +591,11 @@
           "size": 1382
         },
         {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
           "path": "photoredox_learn.html",
           "sha": "5351d56c165fd581edbc66e71f80c3a42bcdb738",
           "size": 715396
@@ -559,13 +606,7 @@
           "size": 3921
         }
       ],
-      "not_mirrored": [
-        {
-          "path": "logo.svg",
-          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
-          "size": 18840
-        }
-      ],
+      "not_mirrored": [],
       "all_upstream_files": [
         {
           "path": "CITATION.cff",
@@ -624,6 +665,11 @@
           "size": 1108
         },
         {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
           "path": "radical_learn.html",
           "sha": "7a81ac8756d00a0bd2f759f08b5c217e136e7937",
           "size": 266770
@@ -634,13 +680,7 @@
           "size": 2749
         }
       ],
-      "not_mirrored": [
-        {
-          "path": "logo.svg",
-          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
-          "size": 18840
-        }
-      ],
+      "not_mirrored": [],
       "all_upstream_files": [
         {
           "path": "CITATION.cff",
@@ -674,5 +714,8 @@
         }
       ]
     }
-  ]
+  ],
+  "reconstruction_required": true,
+  "imported_child_records": 801,
+  "imported_daily_derived_mcq": 2892
 }
