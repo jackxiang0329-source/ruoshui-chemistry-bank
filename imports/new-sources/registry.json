@@ -1,0 +1,33 @@
+{
+  "updated": "2026-10-26",
+  "batch": "chemistry-new-sources-2",
+  "raw": 965,
+  "within_source_unique": 82,
+  "duplicate_rows_removed": 883,
+  "conflicting_answer_groups": 4,
+  "status": "quarantine_only",
+  "repositories": [
+    {
+      "repo": "Taikutsu-Lyrz/Afghanistan-kankoor-exam-dataset",
+      "sha": "43175a18f16ef6edf008a8cd79fcf4c5c4f831a0",
+      "license": "ODC-By-1.0",
+      "language": "fa-AF",
+      "raw": 915,
+      "unique": 60
+    },
+    {
+      "repo": "MuzaPro/Organic-Chemistry-Quiz-JS",
+      "sha": "71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc",
+      "license": "MIT",
+      "language": "en",
+      "raw": 50,
+      "unique": 22
+    }
+  ],
+  "excluded": [
+    {
+      "repo": "dhrubo326/synapse-questions",
+      "reason": "All content is proprietary. Do not redistribute without permission."
+    }
+  ]
+}
