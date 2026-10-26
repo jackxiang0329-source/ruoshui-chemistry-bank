@@ -4,6 +4,7 @@ import {subjects,canonicalRepo} from '../scripts/harvest-chemistry-sources.mjs';
 import {safePath,questionId,normalizeQuestion,validateSource} from '../scripts/import-approved-chemistry.mjs';
 test('classifies chemistry subject',()=>{
   assert.deepEqual(subjects('organic chemistry study'),['organic']);
+  assert.deepEqual(subjects('inorganic chemistry problems'),['inorganic']);
   assert.deepEqual(subjects('物理化学 thermodynamics'),['physical']);
 });
 test('license field never means content-rights approval',()=>{
