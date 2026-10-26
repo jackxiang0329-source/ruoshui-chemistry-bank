@@ -19,6 +19,189 @@
       "status": "unreviewed_not_importable"
     },
     {
+      "repository": "chemoelectric/the-iris-number-system",
+      "url": "https://github.com/chemoelectric/the-iris-number-system",
+      "description": "The Counting-Iris Number System: a mechanical, countable definition of numbers, giving a uniquely reliable deduction framework for number theory, analysis, and more",
+      "subjects": [
+        "general"
+      ],
+      "topics": [
+        "analysis",
+        "axiomatic-systems",
+        "calculus",
+        "conjectures",
+        "constructive-mathematics",
+        "engineering",
+        "nonstandard-analysis",
+        "number-theory",
+        "numbers",
+        "postulates",
+        "proofs",
+        "reliability",
+        "science",
+        "unified-field-theory"
+      ],
+      "default_branch": "main",
+      "repository_license_spdx": "UNKNOWN",
+      "license_scope": "repository_metadata_only_not_question_rights",
+      "archived": false,
+      "fork": false,
+      "last_upstream_push": "2026-10-26T15:46:23Z",
+      "first_discovered": "2026-10-26",
+      "status": "unreviewed_not_importable"
+    },
+    {
+      "repository": "ed61609742025-code/virtulabkenya",
+      "url": "https://github.com/ed61609742025-code/virtulabkenya",
+      "description": "A web-based virtual chemistry laboratory for KCSE learners in Kenya",
+      "subjects": [
+        "general"
+      ],
+      "topics": [],
+      "default_branch": "main",
+      "repository_license_spdx": "UNKNOWN",
+      "license_scope": "repository_metadata_only_not_question_rights",
+      "archived": false,
+      "fork": false,
+      "last_upstream_push": "2026-10-26T15:10:13Z",
+      "first_discovered": "2026-10-26",
+      "status": "unreviewed_not_importable"
+    },
+    {
+      "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "url": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank",
+      "description": "",
+      "subjects": [
+        "general"
+      ],
+      "topics": [],
+      "default_branch": "main",
+      "repository_license_spdx": "UNKNOWN",
+      "license_scope": "repository_metadata_only_not_question_rights",
+      "archived": false,
+      "fork": false,
+      "last_upstream_push": "2026-10-26T15:48:25Z",
+      "first_discovered": "2026-10-26",
+      "status": "unreviewed_not_importable"
+    },
+    {
+      "repository": "Scilence2022/how-things-work",
+      "url": "https://github.com/Scilence2022/how-things-work",
+      "description": "Principle Demonstration Animation Collection — Visual Demonstrations of Mechanical Mechanisms / Chemical Reactions / Biological Processes                原理展示动画合集 — 机械机构 / 化学反应 / 生物学过程的可视化演示",
+      "subjects": [
+        "general"
+      ],
+      "topics": [],
+      "default_branch": "main",
+      "repository_license_spdx": "MIT",
+      "license_scope": "repository_metadata_only_not_question_rights",
+      "archived": false,
+      "fork": false,
+      "last_upstream_push": "2026-10-26T15:41:18Z",
+      "first_discovered": "2026-10-26",
+      "status": "unreviewed_not_importable"
+    },
+    {
+      "repository": "SMHaider-Zaidi/ChemCurious",
+      "url": "https://github.com/SMHaider-Zaidi/ChemCurious",
+      "description": "A comprehensive visualization suite for interactive molecular exploration, reaction modeling, and elemental analysis. Enables users to orbit and inspect spatial ball-and-stick 3D atomic structures, trace reactant-to-product transformations, and access deep elemental properties through an intuitive, interactive periodic table.",
+      "subjects": [
+        "general"
+      ],
+      "topics": [],
+      "default_branch": "main",
+      "repository_license_spdx": "UNKNOWN",
+      "license_scope": "repository_metadata_only_not_question_rights",
+      "archived": false,
+      "fork": false,
+      "last_upstream_push": "2026-10-26T15:25:25Z",
+      "first_discovered": "2026-10-26",
+      "status": "unreviewed_not_importable"
+    },
+    {
+      "repository": "suchitalla/jai-chemistry-review",
+      "url": "https://github.com/suchitalla/jai-chemistry-review",
+      "description": "",
+      "subjects": [
+        "general"
+      ],
+      "topics": [],
+      "default_branch": "main",
+      "repository_license_spdx": "UNKNOWN",
+      "license_scope": "repository_metadata_only_not_question_rights",
+      "archived": false,
+      "fork": false,
+      "last_upstream_push": "2026-10-26T15:44:22Z",
+      "first_discovered": "2026-10-26",
+      "status": "unreviewed_not_importable"
+    },
+    {
+      "repository": "tatuyaochi-blip/chem-quiz",
+      "url": "https://github.com/tatuyaochi-blip/chem-quiz",
+      "description": "",
+      "subjects": [
+        "general"
+      ],
+      "topics": [],
+      "default_branch": "main",
+      "repository_license_spdx": "UNKNOWN",
+      "license_scope": "repository_metadata_only_not_question_rights",
+      "archived": false,
+      "fork": false,
+      "last_upstream_push": "2026-10-26T15:42:50Z",
+      "first_discovered": "2026-10-26",
+      "status": "unreviewed_not_importable"
+    },
+    {
+      "repository": "WeThinkIn/AIGC-Interview-Book",
+      "url": "https://github.com/WeThinkIn/AIGC-Interview-Book",
+      "description": "【三年面试五年模拟】AIGC/LLM/AI Agent算法工程师面试资源平台。涵盖AIGC、LLM大模型、AI Agent、具身智能、传统深度学习、计算机视觉、自然语言处理、自动驾驶、机器学习、强化学习、大数据挖掘、世界模型、元宇宙、AGI等AI行业面试笔试干货经验与核心跨周期知识。",
+      "subjects": [
+        "general"
+      ],
+      "topics": [
+        "ai-agent",
+        "aigc",
+        "computer-vision",
+        "deep-learning",
+        "interview",
+        "interview-preparation",
+        "interview-questions",
+        "interviews-solutions",
+        "large-language-models",
+        "machine-learning",
+        "natural-language-processing",
+        "openclaw",
+        "stable-diffusion",
+        "transformer"
+      ],
+      "default_branch": "main",
+      "repository_license_spdx": "GPL-3.0",
+      "license_scope": "repository_metadata_only_not_question_rights",
+      "archived": false,
+      "fork": false,
+      "last_upstream_push": "2026-10-26T15:22:39Z",
+      "first_discovered": "2026-10-26",
+      "status": "unreviewed_not_importable"
+    },
+    {
+      "repository": "wilsonmerissa26-ops/Starr-Chem-test",
+      "url": "https://github.com/wilsonmerissa26-ops/Starr-Chem-test",
+      "description": "Chemistry test app",
+      "subjects": [
+        "general"
+      ],
+      "topics": [],
+      "default_branch": "main",
+      "repository_license_spdx": "UNKNOWN",
+      "license_scope": "repository_metadata_only_not_question_rights",
+      "archived": false,
+      "fork": false,
+      "last_upstream_push": "2026-10-26T15:39:41Z",
+      "first_discovered": "2026-10-26",
+      "status": "unreviewed_not_importable"
+    },
+    {
       "repository": "yossefAlatter/physical-chemistry--post-graduated",
       "url": "https://github.com/yossefAlatter/physical-chemistry--post-graduated",
       "description": "Electrochemistry lecture notes and MCQ quizzes. Next.js, mobile-first, hard-coded content.",
@@ -32,6 +215,65 @@
       "archived": false,
       "fork": false,
       "last_upstream_push": "2026-10-13T06:24:30Z",
+      "first_discovered": "2026-10-26",
+      "status": "unreviewed_not_importable"
+    },
+    {
+      "repository": "YuzeHao2023/daily-arxiv-ai4chem",
+      "url": "https://github.com/YuzeHao2023/daily-arxiv-ai4chem",
+      "description": "🎓Automatically Update AI4Chem Papers Daily using Github Actions",
+      "subjects": [
+        "general"
+      ],
+      "topics": [
+        "ai4chemistry",
+        "ai4science",
+        "arxiv-papers",
+        "papers"
+      ],
+      "default_branch": "main",
+      "repository_license_spdx": "UNKNOWN",
+      "license_scope": "repository_metadata_only_not_question_rights",
+      "archived": false,
+      "fork": false,
+      "last_upstream_push": "2026-10-26T14:52:34Z",
+      "first_discovered": "2026-10-26",
+      "status": "unreviewed_not_importable"
+    },
+    {
+      "repository": "YuzeHao2023/daily-arxiv-ai4cheme",
+      "url": "https://github.com/YuzeHao2023/daily-arxiv-ai4cheme",
+      "description": "🎓Automatically Update AI4Chemical-Engineering Papers Daily using Github Actions",
+      "subjects": [
+        "general"
+      ],
+      "topics": [
+        "ai4science",
+        "chemical-engineering"
+      ],
+      "default_branch": "main",
+      "repository_license_spdx": "UNKNOWN",
+      "license_scope": "repository_metadata_only_not_question_rights",
+      "archived": false,
+      "fork": false,
+      "last_upstream_push": "2026-10-26T15:00:32Z",
+      "first_discovered": "2026-10-26",
+      "status": "unreviewed_not_importable"
+    },
+    {
+      "repository": "ZiniaM/CEST-MRI-Tools",
+      "url": "https://github.com/ZiniaM/CEST-MRI-Tools",
+      "description": "Browser-based tools for Chemical Exchange Saturation Transfer (CEST) MRI analysis, including Bruker data import, WASSR-based B0 correction, Z-spectrum visualization, ROI analysis, and dynamic CEST imaging. Developed to enable rapid, accessible, and user-friendly MRI data processing directly on scanner computers.",
+      "subjects": [
+        "general"
+      ],
+      "topics": [],
+      "default_branch": "main",
+      "repository_license_spdx": "UNKNOWN",
+      "license_scope": "repository_metadata_only_not_question_rights",
+      "archived": false,
+      "fork": false,
+      "last_upstream_push": "2026-10-26T15:48:12Z",
       "first_discovered": "2026-10-26",
       "status": "unreviewed_not_importable"
     }
