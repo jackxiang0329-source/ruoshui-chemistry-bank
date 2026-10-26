@@ -1,0 +1,79 @@
+name: Deploy to GitHub Pages
+
+on:
+    push:
+        branches:
+            - main
+    workflow_dispatch:
+
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+concurrency:
+    group: "pages"
+    cancel-in-progress: true
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        env:
+            TRUNK_VERSION: "0.20.3"
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Set up Rust
+              uses: dtolnay/rust-toolchain@stable
+
+            - name: Install wasm target
+              run: rustup target add wasm32-unknown-unknown
+
+            - name: Cache trunk installation
+              id: cache-trunk
+              uses: actions/cache@v4
+              with:
+                  path: |
+                      ~/.cargo/bin/trunk
+                  key: trunk-${{ runner.os }}-${{ env.TRUNK_VERSION }}
+
+            - name: Install trunk
+              if: steps.cache-trunk.outputs.cache-hit != 'true'
+              run: cargo install trunk --locked --version ${TRUNK_VERSION}
+
+            - name: Cache cargo build artifacts
+              uses: actions/cache@v4
+              with:
+                  path: |
+                      ~/.cargo/registry/index
+                      ~/.cargo/registry/cache
+                      ~/.cargo/git/db
+                      target
+                  key: cargo-${{ runner.os }}-${{ hashFiles('Cargo.lock') }}
+                  restore-keys: |
+                      cargo-${{ runner.os }}-
+
+            - name: Build static site
+              run: |
+                  set -e
+                  trunk build --release --public-url ./
+                  touch dist/.nojekyll
+
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v3
+              with:
+                  path: dist
+
+    deploy:
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        needs: build
+        # build が成功したときだけデプロイする
+        if: ${{ needs.build.result == 'success' }}
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy
+              id: deployment
+              uses: actions/deploy-pages@v4
