@@ -1,0 +1,22 @@
+name: Verify ChemTrain source pins
+on:
+  pull_request:
+    paths:
+      - '.gitmodules'
+      - 'third_party/ChemTrain/**'
+      - 'scripts/audit-chemtrain-submodules.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/audit-chemtrain-submodules.mjs
