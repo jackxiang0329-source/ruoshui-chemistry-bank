@@ -19,6 +19,15 @@
       "declared_count": 55,
       "license": "MIT code; question text redistributability separately review",
       "status": "source_snapshot_not_undergraduate_question_bank"
+    },
+    {
+      "repo": "idavidrein/gpqa",
+      "commit": "56686c06f5e19865c153de0fdb11be3890014df7",
+      "path": "third_party/benchmarks/GPQA",
+      "title": "Expert-written graduate-level GPQA chemistry/biology/physics benchmark",
+      "declared_count": 448,
+      "license": "GitHub code MIT, Hugging Face GPQA content CC BY 4.0; separate use and benchmark-leakage restrictions",
+      "status": "benchmark_holdout_only_do_not_expose_questions"
     }
   ],
   "safeguards": {

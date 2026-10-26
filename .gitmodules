@@ -47,3 +47,8 @@
 	path = third_party/chemie-eroberung
 	url = https://github.com/gluonMaster/chemie-eroberung.git
 	branch = main
+
+[submodule "third_party/benchmarks/GPQA"]
+	path = third_party/benchmarks/GPQA
+	url = https://github.com/idavidrein/gpqa.git
+	branch = main
