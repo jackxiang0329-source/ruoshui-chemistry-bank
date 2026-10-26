@@ -8,7 +8,7 @@ let refsVerified = 0, checkedOut = 0;
 for (const source of lock.sources) {
   if (!gitmodules.includes('path = ' + source.path)) { errors.push(source.repo + ': .gitmodules missing'); continue; }
   const ls = execFileSync('git', ['ls-tree', 'HEAD', source.path], { cwd: root, encoding: 'utf8' }).trim();
-  if (!ls.startsWith('160000 commit ' + source.commit + '\\t')) { errors.push(source.repo + ': HEAD gitlink hash mismatch: ' + ls); continue; }
+  if (!(ls.split(/\s+/)[0] === '160000' && ls.split(/\s+/)[1] === 'commit' && ls.split(/\s+/)[2] === source.commit)) { errors.push(source.repo + ': HEAD gitlink hash mismatch: ' + ls); continue; }
   refsVerified++;
   const path = new URL(source.path + '/', root);
   if (!existsSync(new URL('.git', path))) continue;
