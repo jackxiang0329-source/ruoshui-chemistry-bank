@@ -1,0 +1,9 @@
+.third_party_checkouts/
+node_modules/
+*.aux
+*.log
+*.xdv
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+.DS_Store
