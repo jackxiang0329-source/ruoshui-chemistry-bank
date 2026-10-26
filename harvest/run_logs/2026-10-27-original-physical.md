@@ -26,3 +26,14 @@
 2. 物理化学题的有效数字、符号约定和教学表述仍需专家复核；跨来源语义重复检测仍需完善。
 3. 对 ChemTrain Daily 的非第三方数据建立逐题内容权利白名单、版本固定和去重策略，再考虑增量导入。
 4. PR #1、#5–#9 的数据、图片和第三方测量值仍需单独版权审查，不能整批合并。
+
+## 已验证的实际 GitHub Actions 执行结果（2026-10-27 北京时间）
+
+- 脚本、测试、许可范围说明与 CI 配置提交：`50dc3eab2f672f6508fb7df1d8959840b932afb0`，https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/commit/50dc3eab2f672f6508fb7df1d8959840b932afb0
+- 题目实际新增提交：`3ea179a7bba5be04a89a54eb686551f2df521177`，https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/commit/3ea179a7bba5be04a89a54eb686551f2df521177
+- 成功的 GitHub Actions：https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/actions/runs/40402282930
+- Actions 数值测试通过；脚本实测 `generated=24; added=24; already_present=0`。提交差异核对：**24 个新候选题 JSON + 1 个导入报告**；Git 树 `data/candidates/*.json` 从 **709 -> 733**。
+- GitHub 发现脚本成功请求 **21 次**，新增来源候选 **0**，来源目录 **568 -> 568**，非致命搜索中断 **0**。
+- 既有导入器复跑均未新增：chemquiz 无机/分析 42、有机 25、Radical 26、Photoredox 18；其他已核权来源亦由 CI 成功执行。未发现本轮新增题的 ID 重复。
+- **专家审核通过仍为 0；新增 24 道仅为原创数值候选练习，新增第三方合法原题仍为 0。** 跨来源语义重复及正式发布资格尚未确认。
+- 错误：本轮 CI 无失败步骤；没有对未核权外部题文执行导入。
