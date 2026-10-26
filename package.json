@@ -9,6 +9,7 @@
     "manifest": "node scripts/export-manifest.mjs",
     "preview": "node scripts/render-preview.mjs",
     "audit:imports": "node scripts/audit-imports.mjs",
-    "audit:structure": "node scripts/chemistry-structure-audit.mjs"
+    "audit:structure": "node scripts/chemistry-structure-audit.mjs",
+    "review:queue": "node scripts/build-review-queue.mjs"
   }
 }

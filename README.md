@@ -64,3 +64,12 @@ npm run manifest
 新增 `npm run audit:structure` 检查上游相同 SMILES 的同义名与不同化学实体风险。已为石墨/金刚石/甲烷、三种二糖错误共用的 SMILES 建立六条阻断记录，详见 [结构质检](imports/STRUCTURAL-QA.md) 与 [人工复核清单](imports/review-holds.json)。它们仍保留于隔离数据而非直接删除。
 
 `ChemIQ` 的 200 道 `smiles_to_iupac` 题，`answer` 是供 OPSIN 评分的 SMILES，不是可直接展示的 IUPAC 化学名称。
+
+## 第三轮：RDKit 深度审计与中文化审核队列
+
+- `python scripts/rdkit_audit.py`：使用 RDKit 输出候选化学式不符、SMILES 规范化后的结构冲突报告；它不会直接删题。
+- `npm run review:queue -- --source=chemquiz --discipline=inorganic --limit=25`：生成含来源、风险标签与待翻译字段的中文化审核队列。
+- `npm run review:queue -- --source=chemquiz --discipline=organic --limit=25`：有机化学审核队列。
+- `npm run review:queue -- --source=chemiq --limit=25`：ChemIQ 基准评测题的隔离审阅视图。
+
+详情：[审题规范](docs/CHEMISTRY_REVIEW.md)。导入数据保持隔离、未经人工审题不得生成公开题库或正式试卷。
