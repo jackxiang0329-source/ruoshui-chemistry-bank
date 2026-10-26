@@ -35,13 +35,31 @@ def question_id(text: str) -> str:
     normalized = ' '.join(unicodedata.normalize('NFKC', text).split()).strip().lower()
     return hashlib.sha256(normalized.encode('utf-8')).hexdigest()
 
+def safe_literal(node: ast.AST, constants: dict):
+    """Resolve only AST literals, one allowlisted named string, and string concatenation."""
+    if isinstance(node, ast.Name):
+        if node.id not in constants:
+            raise ValueError('Unapproved upstream name: ' + node.id)
+        return constants[node.id]
+    if isinstance(node, ast.BinOp) and isinstance(node.op, ast.Add):
+        left, right = safe_literal(node.left, constants), safe_literal(node.right, constants)
+        if not isinstance(left, str) or not isinstance(right, str) or len(left) + len(right) > 2000:
+            raise ValueError('Only short literal string concatenation allowed')
+        return left + right
+    return ast.literal_eval(node)
+
 def cards_from_source(source: str) -> list[dict]:
     """Accept literal C(...) records in six static sets; never eval or import."""
     module = ast.parse(source)
     assignments = {}
+    constants = {}
     for node in module.body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1:
             target = node.targets[0]
+            if isinstance(target, ast.Name) and target.id == 'NO_NOTE':
+                constants['NO_NOTE'] = ast.literal_eval(node.value)
+                if not isinstance(constants['NO_NOTE'], str) or len(constants['NO_NOTE']) > 2000:
+                    raise ValueError('Unexpected NO_NOTE constant')
             if isinstance(target, ast.Name) and target.id in SET_NAMES:
                 if not isinstance(node.value, ast.List):
                     raise ValueError('Expected static list: ' + target.id)
@@ -57,11 +75,11 @@ def cards_from_source(source: str) -> list[dict]:
                 raise ValueError('Too many C args')
             card = dict(DEFAULTS)
             for key, value in zip(PARAMS, node.args):
-                card[key] = ast.literal_eval(value)
+                card[key] = safe_literal(value, constants)
             for kw in node.keywords:
                 if kw.arg not in PARAMS or kw.arg in PARAMS[:len(node.args)]:
                     raise ValueError('Duplicate/unknown C keyword')
-                card[kw.arg] = ast.literal_eval(kw.value)
+                card[kw.arg] = safe_literal(kw.value, constants)
             if any(x not in card for x in PARAMS[:8]):
                 raise ValueError('Missing C field')
             if not isinstance(card['formula'], str) or not 2 <= len(card['formula']) <= 180:
