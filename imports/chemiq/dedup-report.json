@@ -1,0 +1,39 @@
+{
+  "repo": "oxpig/ChemIQ",
+  "source_commit": "63826f64990802e87f1b11b9192606a20838d522",
+  "source_blob_sha": "d76aed68bea83d69dae86f98f5251e2cbd220023",
+  "source_file": "questions/chemiq.jsonl",
+  "raw_questions": 816,
+  "deduped": 814,
+  "duplicates_removed": 2,
+  "method": "normalize category and prompt using NFKC, lowercase and whitespace; keep first, require matching answer",
+  "counts": {
+    "nmr_elucidation": 96,
+    "counting_carbon": 50,
+    "counting_ring": 48,
+    "shortest_path": 108,
+    "atom_mapping": 184,
+    "smiles_to_iupac": 200,
+    "sar": 40,
+    "reaction": 88
+  },
+  "duplicates": [
+    {
+      "dropped_uuid": "63cad441-442e-4d3f-92dc-852c71f7753d",
+      "dropped_row": 757,
+      "kept_uuid": "9f3dc111-9989-4536-8d8d-282bf3d3b95e",
+      "kept_row": 712,
+      "category": "reaction",
+      "answer_equal": true
+    },
+    {
+      "dropped_uuid": "9f57e701-d698-4949-8819-bfe1f8a4be96",
+      "dropped_row": 760,
+      "kept_uuid": "bb3eadc9-dadc-4b47-8742-ba671c2369a4",
+      "kept_row": 715,
+      "category": "reaction",
+      "answer_equal": true
+    }
+  ],
+  "held_out": "benchmark_only; not published to question API, not used for model training or QA approval"
+}

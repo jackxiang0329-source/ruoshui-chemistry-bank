@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "id": "CHEM-ORG-0001",
+  "discipline": "organic",
+  "knowledge_code": "ORG.SUBSTITUTION",
+  "type": "mechanism",
+  "difficulty": 3,
+  "points": 10,
+  "status": "draft",
+  "rights": "original",
+  "source": {
+    "kind": "original",
+    "reference": "Ruoshui chemistry educational sample; newly drafted",
+    "license": "original",
+    "upstream_commit": null,
+    "permission_evidence": null
+  },
+  "quality": {
+    "chemistry": "pending",
+    "calculation": "not_applicable",
+    "structure": "pending",
+    "rights": "pending",
+    "latex": "pending"
+  },
+  "structures": {
+    "reactant_smiles": "C[C@@H](Br)CC",
+    "product_smiles": "C[C@H](I)CC",
+    "stereochemical_note": "RDKit CIP check required before review: R to S under assumed SN2 inversion.",
+    "expected_reactant_cip": "R",
+    "expected_product_cip": "S"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "id": "CHEM-INORG-0001",
+  "discipline": "inorganic",
+  "knowledge_code": "INORG.COORDINATION",
+  "type": "calculation",
+  "difficulty": 3,
+  "points": 10,
+  "status": "draft",
+  "rights": "original",
+  "source": {
+    "kind": "original",
+    "reference": "Ruoshui chemistry educational sample; newly drafted",
+    "license": "original",
+    "upstream_commit": null,
+    "permission_evidence": null
+  },
+  "quality": {
+    "chemistry": "pending",
+    "calculation": "pending",
+    "structure": "not_applicable",
+    "rights": "pending",
+    "latex": "pending"
+  }
+}

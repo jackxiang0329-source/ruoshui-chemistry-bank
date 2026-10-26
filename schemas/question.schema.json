@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ruoshui Chemistry Question Metadata V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "discipline",
+    "knowledge_code",
+    "type",
+    "difficulty",
+    "points",
+    "status",
+    "rights",
+    "source",
+    "quality"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^CHEM-(INORG|ANAL|PHYS|ORG)-[0-9]{4}$"
+    },
+    "discipline": {
+      "enum": [
+        "inorganic",
+        "analytical",
+        "physical",
+        "organic"
+      ]
+    },
+    "knowledge_code": {
+      "type": "string",
+      "pattern": "^(INORG|ANAL|PHYS|ORG)\\.[A-Z0-9_]+$"
+    },
+    "type": {
+      "enum": [
+        "calculation",
+        "explanation",
+        "structure",
+        "mechanism"
+      ]
+    },
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "points": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 40
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "review",
+        "published",
+        "archived"
+      ]
+    },
+    "rights": {
+      "enum": [
+        "original",
+        "licensed",
+        "metadata_only"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "reference",
+        "license"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "original",
+            "external"
+          ]
+        },
+        "reference": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        },
+        "upstream_commit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "permission_evidence": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "chemistry",
+        "calculation",
+        "structure",
+        "rights",
+        "latex"
+      ],
+      "properties": {
+        "chemistry": {
+          "enum": [
+            "pending",
+            "passed",
+            "failed"
+          ]
+        },
+        "calculation": {
+          "enum": [
+            "pending",
+            "passed",
+            "failed",
+            "not_applicable"
+          ]
+        },
+        "structure": {
+          "enum": [
+            "pending",
+            "passed",
+            "failed",
+            "not_applicable"
+          ]
+        },
+        "rights": {
+          "enum": [
+            "pending",
+            "passed",
+            "failed"
+          ]
+        },
+        "latex": {
+          "enum": [
+            "pending",
+            "passed",
+            "failed"
+          ]
+        }
+      }
+    },
+    "structures": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reactant_smiles": {
+          "type": "string"
+        },
+        "product_smiles": {
+          "type": "string"
+        },
+        "stereochemical_note": {
+          "type": "string"
+        },
+        "expected_reactant_cip": {
+          "type": "string",
+          "enum": [
+            "R",
+            "S"
+          ]
+        },
+        "expected_product_cip": {
+          "type": "string",
+          "enum": [
+            "R",
+            "S"
+          ]
+        }
+      }
+    }
+  }
+}

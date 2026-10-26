@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Chem Quiz – compounds.json + Kekule.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Katex.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" crossorigin="anonymous" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/mhchem.min.js" crossorigin="anonymous"></script>
+
+    <!-- Kekule.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/kekule/dist/themes/default/kekule.css" />
+    <script src="https://cdn.jsdelivr.net/npm/kekule/dist/kekule.min.js"></script>
+
+    <!-- RDKit.js (MinimalLib) -->
+    <script src="https://unpkg.com/@rdkit/rdkit/dist/RDKit_minimal.js"></script>
+
+    <style>
+        :root {
+            --bg-dark: #020617;
+            --bg-panel: #020617;
+            --border-panel: rgba(55, 65, 81, 0.9);
+            --text-primary: #e5e7eb;
+            --text-muted: #9ca3af;
+            --accent: #10b981;
+            --accent-soft: rgba(16, 185, 129, 0.18);
+            --danger-soft: rgba(248, 113, 113, 0.18);
+            --danger: #fb7185;
+            --surface-soft: rgba(15, 23, 42, 0.8);
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top, #0f172a 0, #020617 55%, #020617 100%);
+            color: var(--text-primary);
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            padding: 16px;
+        }
+
+        .app {
+            width: 100%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .app-header {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .app-title {
+            font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 4px;
+        }
+
+        .app-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .panel {
+            border-radius: 20px;
+            padding: 14px 16px 16px;
+            background: var(--bg-panel);
+            border: 1px solid var(--border-panel);
+            box-shadow: 0 18px 45px rgba(15, 23, 42, 0.85);
+        }
+
+        .panel + .panel {
+            margin-top: 16px;
+        }
+
+        .panel-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .top-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .mode-switch {
+            display: inline-flex;
+            border-radius: 999px;
+            border: 1px solid rgba(55, 65, 81, 0.9);
+            overflow: hidden;
+            background: rgba(15, 23, 42, 0.95);
+        }
+
+        .mode-btn {
+            border: none;
+            padding: 6px 10px;
+            font-size: 0.78rem;
+            cursor: pointer;
+            background: transparent;
+            color: var(--text-muted);
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .mode-btn + .mode-btn {
+            border-left: 1px solid rgba(55, 65, 81, 0.9);
+        }
+
+        .mode-btn.active {
+            background: var(--accent);
+            color: #0b1120;
+        }
+
+        .score-badge {
+            font-size: 0.8rem;
+            padding: 2px 10px;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid rgba(55, 65, 81, 0.9);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .score-badge strong {
+            color: var(--accent);
+        }
+
+        .progress-wrap {
+            margin-top: 6px;
+        }
+
+        .progress-bar {
+            height: 6px;
+            border-radius: 999px;
+            background: #1f2937;
+            overflow: hidden;
+        }
+
+        .progress-bar-inner {
+            height: 100%;
+            width: 0;
+            background: var(--accent);
+            transition: width 0.3s ease-out;
+        }
+
+        .progress-meta {
+            margin-top: 4px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .grid-main {
+            display: grid;
+            grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.7fr);
+            gap: 14px;
+            margin-top: 6px;
+        }
+
+        @media (max-width: 900px) {
+            .grid-main {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+
+        .prompt-card,
+        .options-card {
+            border-radius: 16px;
+            padding: 12px;
+            background: rgba(15, 23, 42, 0.92);
+            border: 1px solid rgba(55, 65, 81, 0.9);
+        }
+
+        .prompt-card-header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        .prompt-heading {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--text-muted);
+        }
+
+        .prompt-body {
+            margin-top: 10px;
+        }
+
+        .prompt-structure-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            gap: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .prompt-structure-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+
+        .viewer-card {
+            border-radius: 12px;
+            padding: 8px;
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid rgba(55, 65, 81, 0.9);
+        }
+
+        .viewer-title-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 4px;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .viewer-label { font-weight: 600; }
+
+        .viewer-badge {
+            padding: 1px 6px;
+            border-radius: 999px;
+            border: 1px solid rgba(148, 163, 184, 0.6);
+            font-size: 0.68rem;
+        }
+
+        .viewer-inner {
+            width: 100%;
+            height: 220px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: radial-gradient(circle at top, #020617 0, #020617 60%, #020617 100%);
+            position: relative;
+        }
+
+        .kekule-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .prompt-name-main {
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .prompt-name-ja {
+            margin-top: 4px;
+            font-size: 0.75rem;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        .prompt-formula-text {
+            margin-top: 10px;
+            font-size: 0.85rem;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            gap: 8px;
+        }
+
+        @media (max-width: 800px) {
+            .options-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+
+        .option-btn {
+            border-radius: 14px;
+            padding: 8px 10px;
+            border: 1px solid rgba(55, 65, 81, 0.9);
+            background: rgba(15, 23, 42, 0.95);
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 0.9rem;
+            transition: background 0.18s ease-out, border-color 0.18s ease-out, transform 0.08s ease-out;
+        }
+
+        .option-btn:hover:not(.option-disabled) {
+            background: rgba(30, 64, 175, 0.25);
+            transform: translateY(-1px);
+        }
+
+        .option-btn.option-disabled {
+            cursor: default;
+            opacity: 0.85;
+        }
+
+        .option-btn.option-correct {
+            border-color: var(--accent);
+            background: var(--accent-soft);
+        }
+
+        .option-btn.option-wrong {
+            border-color: var(--danger);
+            background: var(--danger-soft);
+        }
+
+        .option-row-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 6px;
+        }
+
+        .option-tag {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .option-structure-box {
+            margin-top: 4px;
+            border-radius: 10px;
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px dashed rgba(55, 65, 81, 0.9);
+            padding: 4px;
+        }
+
+        .option-structure-inner {
+            width: 100%;
+            /* RDKit のデフォルト 260x220 と同じ比率 (13:11) を固定 */
+            aspect-ratio: 13 / 11;
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .option-name-inner {
+            height: 160px;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            gap: 4px;
+        }
+
+        .option-name-main { font-size: 0.95rem; }
+
+        .option-name-ja {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+        }
+
+        .molformula-badge {
+            position: absolute;
+            right: 8px;
+            bottom: 8px;
+            background: rgba(2,6,23,0.75);
+            color: #e5e7eb;
+            font-size: 0.72rem;
+            padding: 4px 6px;
+            border-radius: 6px;
+            border: 1px solid rgba(255,255,255,0.06);
+            backdrop-filter: blur(4px);
+        }
+
+        .controls-row {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 8px;
+            margin-top: 8px;
+            flex-wrap: nowrap;
+        }
+
+        .feedback-text {
+            font-size: 0.85rem;
+            min-height: 1.2em;
+            flex: 1 1 auto;
+        }
+
+        .controls-buttons {
+            display: flex;
+            gap: 6px;
+            flex-shrink: 0;
+        }
+
+        /* スマホなど狭い画面では上下に並べる */
+        @media (max-width: 640px) {
+            .controls-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .controls-buttons {
+                justify-content: flex-end;
+            }
+        }
+
+        .feedback-neutral { color: var(--text-muted); }
+        .feedback-correct { color: #6ee7b7; }
+        .feedback-wrong { color: #fecaca; }
+
+        .btn {
+            border-radius: 999px;
+            border: 1px solid rgba(55, 65, 81, 0.9);
+            padding: 6px 12px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            background: rgba(15, 23, 42, 0.95);
+            color: var(--text-primary);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-primary {
+            border-color: var(--accent);
+            background: var(--accent);
+            color: #0b1120;
+            font-weight: 600;
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.45;
+            cursor: default;
+        }
+
+        .btn:hover:not(:disabled) {
+            filter: brightness(1.05);
+        }
+
+        .hint-box {
+            margin-top: 8px;
+            padding: 6px 8px;
+            border-radius: 12px;
+            border: 1px dashed rgba(55, 65, 81, 0.9);
+            background: rgba(15, 23, 42, 0.9);
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .footer-note {
+            margin-top: 12px;
+            font-size: 0.72rem;
+            text-align: center;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+<div class="app">
+    <header class="app-header">
+        <div class="app-title">Molecular Structure Quiz (compounds.json)</div>
+        <div class="app-subtitle">
+            Structure → Name / Name → Structure, using Kekule.js where SMILES are available.
+        </div>
+    </header>
+
+    <section class="panel">
+        <div class="panel-title">Quiz settings &amp; progress</div>
+        <div class="top-row">
+            <div>
+                <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:3px;">
+                    Quiz mode
+                </div>
+                <div class="mode-switch">
+                    <button id="modeStructureToName" class="mode-btn active" type="button" data-mode="structure-to-name">
+                        Structure → Name
+                    </button>
+                    <button id="modeNameToStructure" class="mode-btn" type="button" data-mode="name-to-structure">
+                        Name → Structure
+                    </button>
+                </div>
+                    <div style="display:inline-block;margin-left:10px;vertical-align:middle;">
+                        <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:3px;">Structure view</div>
+                        <div class="mode-switch" id="viewModeSwitch" style="--gap:6px;">
+                            <button id="viewSkeletalBtn" class="mode-btn active" type="button" data-view="skeletal">Skeletal</button>
+                            <button id="viewFullBtn" class="mode-btn" type="button" data-view="full">Full</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="score-badge">
+                <span>Score:</span>
+                <strong><span id="scoreValue">0</span></strong>
+                <span>/ <span id="totalQuestions">0</span></span>
+            </div>
+        </div>
+
+        <div class="progress-wrap">
+            <div class="progress-bar">
+                <div id="progressBarInner" class="progress-bar-inner"></div>
+            </div>
+            <div class="progress-meta">
+                <span>Question <span id="questionIndexLabel">0</span>/<span id="questionTotalLabel">0</span></span>
+                <span id="modeLabel" style="font-size:0.72rem;color:var(--text-muted);">
+                    Structure → Name
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-title">Current question</div>
+
+        <div class="grid-main">
+            <!-- Prompt area -->
+            <div class="prompt-card">
+                <div class="prompt-card-header">
+                    <div class="prompt-heading">Prompt</div>
+                </div>
+                <div class="prompt-body">
+                    <!-- Mode: Structure → Name -->
+                    <div id="promptStructureBlock" style="display:none;">
+                        <div id="promptStructureContainer" class="structure-container">
+                            <div class="viewer-card">
+                                <div class="viewer-title-row">
+                                    <div class="viewer-label">Skeletal / full structure</div>
+                                    <div class="viewer-badge">Prompt</div>
+                                </div>
+                                <div class="viewer-inner" style="height: 320px; position: relative;">
+                                    <!-- Main drawing area: we reuse this for BOTH skeletal and full -->
+                                    <div id="promptSkeletalContainer" class="kekule-container"></div>
+
+                                    <!-- optional text fallback, overlaid near the bottom -->
+                                    <div id="promptSkeletalTextFallback"
+                                        style="
+                                            position: absolute;
+                                            left: 50%;
+                                            bottom: 0.6rem;
+                                            transform: translateX(-50%);
+                                            font-size: 0.75rem;
+                                            color: #9ca3af;
+                                            text-align: center;
+                                            white-space: nowrap;
+                                            pointer-events: none;
+                                        ">
+                                        (skeletal formula)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mode: Name → Structure -->
+                    <div id="promptNameBlock" style="display:none;">
+                        <div class="prompt-name-main" id="promptNameMain">–</div>
+                        <div class="prompt-name-ja" id="promptNameJa">–</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Options area -->
+            <div class="options-card">
+                <div class="prompt-card-header" style="margin-bottom:6px;">
+                    <div class="prompt-heading" id="optionsHeadingLabel">
+                        Choose the correct name
+                    </div>
+                </div>
+                <div id="optionsContainer" class="options-grid">
+                    <!-- options injected by JS -->
+                </div>
+
+                <div class="controls-row">
+                    <div id="feedbackText" class="feedback-text feedback-neutral">
+                        Loading compounds.json…
+                    </div>
+                    <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                        <button id="hintToggleBtn" class="btn" type="button" disabled>Show hint</button>
+                        <button id="nextBtn" class="btn btn-primary" type="button" disabled>Next</button>
+                    </div>
+                </div>
+
+                <div id="hintBox" class="hint-box" style="display:none;">
+                    Hint: <span id="hintContent">–</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-note">
+            Names are IUPAC + common (English) with smaller Japanese annotation. Structures use Kekule.js when
+            <code>smiles</code> data is available; otherwise skeletal formula text is shown.
+        </div>
+    </section>
+</div>
+
+<script>
+    const QUIZ_MODES = {
+        STRUCTURE_TO_NAME: "structure-to-name",
+        NAME_TO_STRUCTURE: "name-to-structure"
+    };
+
+    // Loaded from compounds.json
+    let COMPOUNDS = [];
+
+    // RDKit instance
+    let RDKitModuleInstance = null;
+
+    // Quiz state
+    let currentMode = QUIZ_MODES.STRUCTURE_TO_NAME;
+    let questions = [];
+    let currentIndex = 0;
+    let score = 0;
+    let selectedOptionId = null;
+    let finished = false;
+    let showHint = false;
+
+    // DOM elements
+    const modeStructureBtn = document.getElementById("modeStructureToName");
+    const modeNameBtn = document.getElementById("modeNameToStructure");
+    const scoreValueEl = document.getElementById("scoreValue");
+    const totalQuestionsEl = document.getElementById("totalQuestions");
+    const progressBarInnerEl = document.getElementById("progressBarInner");
+    const questionIndexLabelEl = document.getElementById("questionIndexLabel");
+    const questionTotalLabelEl = document.getElementById("questionTotalLabel");
+    const modeLabelEl = document.getElementById("modeLabel");
+
+    const promptStructureBlock = document.getElementById("promptStructureBlock");
+    const promptNameBlock = document.getElementById("promptNameBlock");
+    const promptNameMainEl = document.getElementById("promptNameMain");
+    const promptNameJaEl = document.getElementById("promptNameJa");
+    const promptSkeletalTextFallbackEl = document.getElementById("promptSkeletalTextFallback");
+
+    const optionsHeadingLabelEl = document.getElementById("optionsHeadingLabel");
+    const optionsContainerEl = document.getElementById("optionsContainer");
+
+    const feedbackTextEl = document.getElementById("feedbackText");
+    const hintToggleBtn = document.getElementById("hintToggleBtn");
+    const hintBoxEl = document.getElementById("hintBox");
+    const hintContentEl = document.getElementById("hintContent");
+    const nextBtn = document.getElementById("nextBtn");
+
+    // Utility
+    function shuffleArray(array) {
+        const copy = array.slice();
+        for (let i = copy.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [copy[i], copy[j]] = [copy[j], copy[i]];
+        }
+        return copy;
+    }
+
+    function getEnglishName(c) {
+        if (!c) return "";
+        const iupac = c.iupacName || "";
+        const common = c.commonName || "";
+        if (!common || common === iupac) return iupac;
+        return iupac + " (" + common + ")";
+    }
+
+    function getJapaneseName(c) {
+        return c && c.localName ? c.localName : "";
+    }
+
+    function createOptionsForCompound(target, pool, optionCount) {
+        const others = pool.filter(x => x.id !== target.id);
+        const distractors = shuffleArray(others).slice(0, Math.max(0, optionCount - 1));
+        return shuffleArray([target].concat(distractors));
+    }
+
+    function generateQuestions() {
+        const order = shuffleArray(COMPOUNDS);
+        return order.map((c) => ({
+            id: c.id,
+            compound: c,
+            options: createOptionsForCompound(c, COMPOUNDS, 4)
+        }));
+    }
+
+    // Rendering helpers
+    function smilesToMolblock(smiles) {
+        if (!RDKitModuleInstance || !smiles) return null;
+        try {
+            const mol = RDKitModuleInstance.get_mol(smiles);
+            if (!mol) return null;
+            const molblock = mol.get_molblock();
+            mol.delete();
+            return molblock;
+        } catch (e) {
+            console.error("[smilesToMolblock] error:", e);
+            return null;
+        }
+    }
+
+    function drawSkeletalWithRDKit(canvasId, smiles) {
+        if (!RDKitModuleInstance || !smiles) {
+            const canvas = document.getElementById(canvasId);
+            if (canvas) {
+                const ctx = canvas.getContext("2d");
+                ctx.fillStyle = "rgba(15, 23, 42, 0.85)";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = "#9ca3af";
+                ctx.font = "12px sans-serif";
+                ctx.textAlign = "center";
+                ctx.fillText("Cannot render structure", canvas.width / 2, canvas.height / 2);
+            }
+            return;
+        }
+
+        const canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+
+        // ---------- hi-res & aspect-ratio-safe size ----------
+        const rect = canvas.getBoundingClientRect();
+        let cssWidth  = rect.width  || canvas.clientWidth  || 260;
+        let cssHeight = rect.height || canvas.clientHeight || 220;
+
+        // 万一高さが 0 の場合は、元の 260x220 の比率を仮定
+        if (!cssHeight) {
+            cssHeight = cssWidth * (220 / 260);
+        }
+
+        const dpr   = window.devicePixelRatio || 1;
+        const scale = Math.max(2, dpr);  // 2x 以上で描画
+
+        const w = Math.round(cssWidth  * scale);
+        const h = Math.round(cssHeight * scale);
+
+        canvas.width  = w;
+        canvas.height = h;
+
+        const canvasRaw = document.createElement("canvas");
+        canvasRaw.width  = w;
+        canvasRaw.height = h;
+
+        // ---------- RDKit で骨格構造を高解像度描画 ----------
+        let mol = null;
+        try {
+            mol = RDKitModuleInstance.get_mol(smiles);
+            if (!mol) {
+                const ctx = canvas.getContext("2d");
+                ctx.fillStyle = "rgba(15, 23, 42, 0.85)";
+                ctx.fillRect(0, 0, w, h);
+                ctx.fillStyle = "#9ca3af";
+                ctx.font = "12px sans-serif";
+                ctx.textAlign = "center";
+                ctx.fillText("Invalid SMILES", w / 2, h / 2);
+                return;
+            }
+
+            // 標準の描画（背景は白）
+            mol.draw_to_canvas(canvasRaw, -1, -1);
+        } catch (e) {
+            console.error("[drawSkeletalWithRDKit] error:", e);
+            return;
+        }
+
+        const rctx = canvasRaw.getContext("2d");
+        const img = rctx.getImageData(0, 0, w, h);
+        const data = img.data;
+        const vctx = canvas.getContext("2d");
+
+        // ---------- Dark mode 用ポストプロセス ----------
+        // * 純白だけを透明化（アンチエイリアスを温存）
+        // * 暗いグレーの線は完全な白線にする
+        for (let i = 0; i < data.length; i += 4) {
+            const r = data[i];
+            const g = data[i + 1];
+            const b = data[i + 2];
+
+            // only pure white background -> transparent
+            if (r === 255 && g === 255 && b === 255) {
+                data[i + 3] = 0;
+                continue;
+            }
+
+            const maxRGB = Math.max(r, g, b);
+            const minRGB = Math.min(r, g, b);
+            const isNearGray = (maxRGB - minRGB) < 10;
+
+            // fairly dark gray → stroke
+            if (maxRGB < 80 && isNearGray) {
+                data[i]     = 255;
+                data[i + 1] = 255;
+                data[i + 2] = 255;
+                data[i + 3] = 255;
+            }
+        }
+
+        vctx.clearRect(0, 0, w, h);
+        vctx.putImageData(img, 0, 0);
+
+        if (mol) {
+            mol.delete();
+        }
+    }
+
+
+    function loadFullStructureIntoKekule(containerId, molblock) {
+        if (!molblock) {
+            const container = document.getElementById(containerId);
+            if (container) {
+                container.innerHTML =
+                    '<div style="font-size:11px;color:#9ca3af;text-align:center;">Cannot render structure</div>';
+            }
+            return;
+        }
+
+        if (typeof Kekule === "undefined") {
+            const container = document.getElementById(containerId);
+            if (container) {
+                container.innerHTML = "Kekule.js not loaded";
+            }
+            return;
+        }
+
+        const container = document.getElementById(containerId);
+        if (!container) {
+            console.warn("[loadFullStructureIntoKekule] container not found:", containerId);
+            return;
+        }
+
+        try {
+            const mol = Kekule.IO.loadFormatData(molblock, "mol");
+            if (!mol) {
+                console.error("[loadFullStructureIntoKekule] Kekule.IO.loadFormatData returned null");
+                container.textContent = "Cannot parse Molblock";
+                return;
+            }
+
+            // ensure the container itself has explicit CSS size
+            container.innerHTML = "";
+            container.style.position = container.style.position || "relative";
+            container.style.width = container.style.width || "100%";
+            container.style.height = container.style.height || "100%";
+            container.style.overflow = container.style.overflow || "hidden";
+
+            // === measure BOTH width and height of the box ===
+            const rect = container.getBoundingClientRect();
+            let width = rect.width || container.clientWidth || 260;
+            let height = rect.height || container.clientHeight || 220;
+
+            // if height is zero (very early layout), approximate from width
+            if (!height) {
+                height = width * (11 / 13); // same 13:11 aspect ratio you use for options
+            }
+
+            const V = Kekule.ChemWidget;
+            const R = Kekule.Render;
+
+            const viewer = new V.Viewer(container);
+            console.log("[loadFullStructureIntoKekule] created Viewer for", containerId);
+
+            viewer.setRenderType(R.RendererType.R2D);
+            viewer.setMoleculeDisplayType(R.Molecule2DDisplayType.CONDENSED);
+            viewer.setEnableToolbar(false);
+            viewer.setEnableDirectInteraction(false);
+            viewer.setEnableEdit(false);
+
+            // ★ important: use explicit width + height, not AutoSize
+            viewer.setAutoSize(false);
+            viewer.setDimension(width, height);   // now Kekule knows both dimensions
+            viewer.setAutofit(true);
+            viewer.setPadding(12);
+            viewer.setBackgroundColor("transparent");
+
+            const HDL = R.HydrogenDisplayLevel;
+            const NDM = R.NodeLabelDisplayMode;
+            const cfg = viewer.getRenderConfigs().getMoleculeDisplayConfigs();
+            cfg.setDefHydrogenDisplayLevel(HDL.ALL);
+            cfg.setDefNodeDisplayMode(NDM.SHOWN);
+
+            const colorCfg = viewer.getRenderConfigs().getColorConfigs();
+            colorCfg.setAtomColor("#ffffff");
+            colorCfg.setBondColor("#ffffff");
+            colorCfg.setLabelColor("#ffffff");
+
+            viewer.setChemObj(mol);
+
+            if (typeof viewer.zoomToFit === "function") {
+                viewer.zoomToFit();
+            }
+        } catch (e) {
+            console.error("[loadFullStructureIntoKekule] error:", e);
+            container.textContent = "Render error: " + e.message;
+        }
+    }
+
+
+let structureViewMode = 'skeletal';
+
+function setStructureViewMode(mode) {
+    structureViewMode = mode;
+    // re-render current question to apply mode change
+    renderQuestion();
+}
+
+function renderSmilesInPrompt(smiles, skeletalFormula, molFormula, katexSkeletalFormula, katexMolFormula) {
+    const skeletalTextEl = document.getElementById("promptSkeletalTextFallback");
+    const container = document.getElementById("promptSkeletalContainer");
+    const wrapper = document.getElementById("promptStructureContainer");
+
+    if (!container || !wrapper) {
+        console.warn("[renderSmilesInPrompt] container or wrapper not found");
+        return;
+    }
+
+    // clear drawing area and fallback text
+    container.innerHTML = "";
+    if (skeletalTextEl) {
+        skeletalTextEl.innerHTML = "";
+    }
+
+    // no SMILES → show simple text only
+    if (!smiles) {
+        container.innerHTML =
+            '<div style="font-size:11px;color:#9ca3af;text-align:center;">SMILES not provided</div>';
+
+        if (skeletalTextEl) {
+            if (katexSkeletalFormula && window.katex && window.katex.render) {
+                try {
+                    window.katex.render(katexSkeletalFormula, skeletalTextEl, { throwOnError: false });
+                } catch (e) {
+                    skeletalTextEl.textContent = skeletalFormula || "(no skeletal formula)";
+                }
+            } else {
+                skeletalTextEl.textContent = skeletalFormula || "(no skeletal formula)";
+            }
+        }
+        return;
+    }
+
+    // ----- draw structure in a single big frame -----
+    if (structureViewMode === "skeletal") {
+        // RDKit skeletal drawing
+        const canvas = document.createElement("canvas");
+        canvas.id = "promptSkeletalCanvas";
+        canvas.style.width = "100%";
+        canvas.style.height = "auto";
+        canvas.style.display = "block";
+        container.appendChild(canvas);
+
+        drawSkeletalWithRDKit("promptSkeletalCanvas", smiles);
+    } else if (structureViewMode === "full") {
+        // Kekule full structure in the same container
+        const molblock = smilesToMolblock(smiles);
+        loadFullStructureIntoKekule("promptSkeletalContainer", molblock);
+    }
+
+    // skeletal formula text (small overlay)
+    if (skeletalTextEl) {
+        if (katexSkeletalFormula && window.katex && window.katex.render) {
+            try {
+                window.katex.render(katexSkeletalFormula, skeletalTextEl, { throwOnError: false });
+            } catch (e) {
+                skeletalTextEl.textContent = skeletalFormula || "(no skeletal formula text)";
+            }
+        } else {
+            skeletalTextEl.textContent = skeletalFormula || "(no skeletal formula text)";
+        }
+    }
+
+    // ----- molecular formula badge in bottom-right -----
+    // remove previous badges in this prompt container
+    wrapper.querySelectorAll(".molformula-badge").forEach((b) => b.remove());
+
+    if (molFormula || katexMolFormula) {
+        const badge = document.createElement("div");
+        badge.className = "molformula-badge";
+        const target = document.createElement("span");
+        badge.appendChild(target);
+
+        const raw = katexMolFormula || molFormula || "";
+
+        try {
+            if (window.katex && window.katex.render && raw) {
+                const trimmed = raw.trim();
+                const expr = trimmed.startsWith("\\") ? trimmed : `\\ce{${trimmed}}`;
+                window.katex.render(expr, target, { throwOnError: false });
+            } else if (raw) {
+                target.textContent = raw;
+            }
+        } catch (e) {
+            target.textContent = raw;
+        }
+
+        // attach badge inside the same big frame
+        container.appendChild(badge);
+    }
+}
+
+
+    function renderFormulaBadge(wrapper, formulaOrKatex) {
+        const prevBadge = wrapper.querySelector('.molformula-badge');
+        if (prevBadge) prevBadge.remove();
+        if (!formulaOrKatex) return;
+
+        const badge = document.createElement('div');
+        badge.className = 'molformula-badge';
+        const target = document.createElement('span');
+        badge.appendChild(target);
+
+        const raw = String(formulaOrKatex);
+
+        try {
+            if (window.katex && window.katex.render) {
+                // If the string already looks like a KaTeX command (e.g. "\\ce{...}"), use it as-is.
+                // Otherwise, wrap it with \\ce{...} for chemical formulas.
+                const trimmed = raw.trim();
+                const expr = trimmed.startsWith("\\") ? trimmed : `\\ce{${trimmed}}`;
+                window.katex.render(expr, target, { throwOnError: false });
+            } else {
+                target.textContent = raw;
+            }
+        } catch (e) {
+            target.textContent = raw;
+        }
+
+        wrapper.appendChild(badge);
+    }
+
+
+    function renderOptionStructure(containerId, smiles, skeletalFormula, molFormula, katexMolFormula) {
+        const container = document.getElementById(containerId);
+        if (!container) {
+            console.warn("[renderOptionStructure] container not found:", containerId);
+            return;
+        }
+
+        container.innerHTML = "";
+        container.style.position = "relative";
+        container.style.display = "flex";
+        container.style.alignItems = "center";
+        container.style.justifyContent = "center";
+        container.style.overflow = "hidden";
+
+        if (!smiles) {
+            container.innerHTML =
+                '<div style="font-size:0.78rem;color:#9ca3af;text-align:center;">' +
+                (skeletalFormula || "No structure data") +
+                "</div>";
+            renderFormulaBadge(container, katexMolFormula || molFormula);
+            return;
+        }
+
+        // 骨格表示用と完全構造表示用の 2 つの div を同じ位置に重ねる
+        const skeletalDiv = document.createElement("div");
+        skeletalDiv.id = containerId + "_skeletal";
+        skeletalDiv.style.width = "100%";
+        skeletalDiv.style.height = "100%";
+
+        const fullDiv = document.createElement("div");
+        fullDiv.id = containerId + "_full";
+        fullDiv.style.width = "100%";
+        fullDiv.style.height = "100%";
+
+        container.appendChild(skeletalDiv);
+        container.appendChild(fullDiv);
+
+        // RDKit で骨格式
+        try {
+            const canvas = document.createElement("canvas");
+            const skeletalCanvasId = containerId + "_skeletal_canvas";
+            canvas.id = skeletalCanvasId;
+            canvas.style.width = "100%";
+            canvas.style.height = "auto";   // ← preserve aspect ratio
+            canvas.style.display = "block";
+            skeletalDiv.appendChild(canvas);
+            drawSkeletalWithRDKit(skeletalCanvasId, smiles);
+        } catch (e) {
+            skeletalDiv.innerHTML =
+                '<div style="font-size:0.78rem;color:#9ca3af;text-align:center;">' +
+                (skeletalFormula || "Cannot render skeletal") +
+                "</div>";
+        }
+
+        // Kekule で完全構造
+        const molblock = smilesToMolblock(smiles);
+        if (!molblock) {
+            fullDiv.innerHTML =
+                '<div style="font-size:0.78rem;color:#9ca3af;text-align:center;">Cannot render structure</div>';
+        } else {
+            try {
+                loadFullStructureIntoKekule(fullDiv.id, molblock);
+            } catch (e) {
+                fullDiv.innerHTML =
+                    '<div style="font-size:0.78rem;color:#9ca3af;text-align:center;">Render error</div>';
+            }
+        }
+
+        // グローバルの structureViewMode でどちらを表示するか切り替える
+        if (structureViewMode === "skeletal") {
+            fullDiv.style.display = "none";
+            skeletalDiv.style.display = "block";
+        } else {
+            skeletalDiv.style.display = "none";
+            fullDiv.style.display = "block";
+        }
+
+        // 分子式のバッジを右下に重ねる
+        renderFormulaBadge(container, katexMolFormula || molFormula);
+    }
+
+
+    // Render the option buttons for a question
+    function renderOptions(question) {
+        optionsContainerEl.innerHTML = '';
+        if (!question || !Array.isArray(question.options)) return;
+
+        const isStructureToName = currentMode === QUIZ_MODES.STRUCTURE_TO_NAME;
+
+        question.options.forEach((opt, index) => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'option-btn';
+
+            const isRight = opt.id === question.compound.id;
+            const isChosen = selectedOptionId === opt.id;
+
+            if (selectedOptionId !== null) {
+                btn.classList.add('option-disabled');
+                if (isRight) btn.classList.add('option-correct');
+                if (isChosen && !isRight) btn.classList.add('option-wrong');
+            }
+
+            const topRow = document.createElement('div');
+            topRow.className = 'option-row-top';
+
+            const mainLabel = document.createElement('div');
+            mainLabel.className = 'option-name-main';
+            mainLabel.textContent = `Option ${index + 1}`;
+
+            const tagEl = document.createElement('div');
+            tagEl.className = 'option-tag';
+            if (selectedOptionId !== null) {
+                if (isRight) tagEl.textContent = 'Correct';
+                else if (isChosen && !isRight) tagEl.textContent = 'Your choice';
+                else tagEl.textContent = '';
+            } else {
+                tagEl.textContent = isStructureToName ? 'Tap to answer' : 'Click to view structure';
+            }
+
+            topRow.appendChild(mainLabel);
+            topRow.appendChild(tagEl);
+            btn.appendChild(topRow);
+
+            const contentBox = document.createElement('div');
+            contentBox.className = 'option-structure-box';
+
+            if (isStructureToName) {
+                const nameInner = document.createElement('div');
+                nameInner.className = 'option-name-inner';
+
+                const en = document.createElement('div');
+                en.className = 'option-name-main';
+                en.textContent = getEnglishName(opt);
+                nameInner.appendChild(en);
+
+                const ja = getJapaneseName(opt);
+                if (ja) {
+                    const jaEl = document.createElement('div');
+                    jaEl.className = 'option-name-ja';
+                    jaEl.textContent = ja;
+                    nameInner.appendChild(jaEl);
+                }
+
+                contentBox.appendChild(nameInner);
+                renderFormulaBadge(contentBox, opt.katexMolecularFormula || opt.molecularFormula || null);
+            } else {
+                const structInner = document.createElement('div');
+                structInner.className = 'option-structure-inner';
+                structInner.id = 'optionStruct_' + opt.id;
+                contentBox.appendChild(structInner);
+            }
+
+            btn.appendChild(contentBox);
+
+            if (selectedOptionId === null) {
+                btn.addEventListener('click', () => onOptionClick(opt.id));
+            }
+
+            optionsContainerEl.appendChild(btn);
+        });
+
+        if (!isStructureToName) {
+            question.options.forEach((opt) => {
+                renderOptionStructure(
+                    'optionStruct_' + opt.id,
+                    opt.smiles || null,
+                    opt.skeletalFormula,
+                    opt.molecularFormula || null,
+                    opt.katexMolecularFormula || null
+                );
+            });
+        }
+    }
+
+    function updateFeedback(question) {
+        if (!question) {
+            feedbackTextEl.className = "feedback-text feedback-neutral";
+            feedbackTextEl.textContent = "No question.";
+            return;
+        }
+        if (selectedOptionId === null) {
+            feedbackTextEl.className = "feedback-text feedback-neutral";
+            feedbackTextEl.textContent = "Select one option to check your answer.";
+            return;
+        }
+        const isCorrect = selectedOptionId === question.compound.id;
+        if (isCorrect) {
+            feedbackTextEl.className = "feedback-text feedback-correct";
+            feedbackTextEl.textContent = "✓ Correct! Well done.";
+        } else {
+            feedbackTextEl.className = "feedback-text feedback-wrong";
+            const enName = getEnglishName(question.compound);
+            const jaName = getJapaneseName(question.compound);
+            feedbackTextEl.textContent =
+                "✗ Not correct. The answer is " +
+                enName +
+                (jaName ? ` (${jaName})` : "") +
+                ".";
+        }
+    }
+
+    function updateHint(question) {
+        if (!question) {
+            hintBoxEl.style.display = "none";
+            return;
+        }
+        if (showHint) {
+            hintBoxEl.style.display = "";
+            hintContentEl.textContent = question.compound.notes || "No hint.";
+            hintToggleBtn.textContent = "Hide hint";
+        } else {
+            hintBoxEl.style.display = "none";
+            hintToggleBtn.textContent = "Show hint";
+        }
+    }
+
+    // Update header UI: score, progress bar, question indices, and mode label
+    function updateHeaderUI() {
+        const total = questions.length;
+        totalQuestionsEl.textContent = total;
+        questionTotalLabelEl.textContent = total;
+
+        const displayedIndex = finished ? total : (questions.length === 0 ? 0 : currentIndex + 1);
+        questionIndexLabelEl.textContent = displayedIndex;
+        scoreValueEl.textContent = score;
+
+        const progress = total === 0 ? 0 : (currentIndex / total) * 100;
+        progressBarInnerEl.style.width = finished ? "100%" : (progress + "%");
+
+        modeLabelEl.textContent = currentMode === QUIZ_MODES.STRUCTURE_TO_NAME ? "Structure → Name" : "Name → Structure";
+    }
+
+    // Render the prompt area for the current question depending on mode
+    function renderPrompt(question) {
+        if (!question) return;
+        const compound = question.compound;
+
+        if (currentMode === QUIZ_MODES.STRUCTURE_TO_NAME) {
+            // Show the large structure viewer and hide the name prompt
+            promptStructureBlock.style.display = "";
+            promptNameBlock.style.display = "none";
+
+            // Render skeletal/full in the prompt area and attach molecular formula badge
+            renderSmilesInPrompt(
+                compound.smiles || null,
+                compound.skeletalFormula || "",
+                compound.molecularFormula || "",
+                compound.katexSkeletalFormula || null,
+                compound.katexMolecularFormula || null
+            );
+
+            // Clear name fields
+            promptNameMainEl.textContent = "";
+            promptNameJaEl.textContent = "";
+        } else {
+            // Name -> Structure: hide structure viewers and show the name prompt
+            promptStructureBlock.style.display = "none";
+            promptNameBlock.style.display = "";
+
+            promptNameMainEl.textContent = getEnglishName(compound) || "–";
+            promptNameJaEl.textContent = getJapaneseName(compound) || "";
+
+            // Clear any previous structural viewers to avoid stale content
+            const skeletalContainer = document.getElementById("promptSkeletalContainer");
+            const fullContainer = document.getElementById("promptFullContainer");
+            const skeletalText = document.getElementById("promptSkeletalTextFallback");
+            if (skeletalContainer) skeletalContainer.innerHTML = "";
+            if (fullContainer) fullContainer.innerHTML = "";
+            if (skeletalText) skeletalText.textContent = compound.skeletalFormula || "(no skeletal formula)";
+        }
+
+        // Update options heading depending on mode
+        optionsHeadingLabelEl.textContent = currentMode === QUIZ_MODES.STRUCTURE_TO_NAME ? "Choose the correct name" : "Choose the correct structure";
+    }
+
+    function renderQuestion() {
+        const question = questions[currentIndex];
+        if (!question) {
+            feedbackTextEl.className = "feedback-text feedback-neutral";
+            feedbackTextEl.textContent = "No questions available (check compounds.json).";
+            nextBtn.disabled = true;
+            hintToggleBtn.disabled = true;
+            return;
+        }
+
+        if (finished) {
+            updateHeaderUI();
+            feedbackTextEl.className = "feedback-text feedback-neutral";
+            feedbackTextEl.textContent = "Quiz finished. Click Next to restart.";
+            nextBtn.textContent = "Restart";
+            nextBtn.disabled = false;
+            hintToggleBtn.disabled = true;
+            return;
+        }
+
+        updateHeaderUI();
+        renderPrompt(question);
+        renderOptions(question);
+        updateFeedback(question);
+        updateHint(question);
+
+        nextBtn.textContent = currentIndex === questions.length - 1 ? "Finish" : "Next";
+        nextBtn.disabled = selectedOptionId === null;
+        hintToggleBtn.disabled = false;
+    }
+
+    // Event handlers
+    function resetQuizForMode(newMode) {
+        currentMode = newMode;
+        questions = generateQuestions();
+        currentIndex = 0;
+        score = 0;
+        selectedOptionId = null;
+        finished = false;
+        showHint = false;
+        renderQuestion();
+    }
+
+    function onOptionClick(optionId) {
+        if (finished) return;
+        if (selectedOptionId !== null) return;
+
+        selectedOptionId = optionId;
+        const question = questions[currentIndex];
+        const isCorrect = optionId === question.compound.id;
+        if (isCorrect) score++;
+
+        renderQuestion();
+    }
+
+    function onNextClick() {
+        if (finished) {
+            resetQuizForMode(currentMode);
+            return;
+        }
+        if (selectedOptionId === null) return;
+
+        const nextIndex = currentIndex + 1;
+        if (nextIndex >= questions.length) {
+            finished = true;
+            renderQuestion();
+        } else {
+            currentIndex = nextIndex;
+            selectedOptionId = null;
+            showHint = false;
+            renderQuestion();
+        }
+    }
+
+    function onHintToggle() {
+        showHint = !showHint;
+        updateHint(questions[currentIndex]);
+    }
+
+    // Load compounds.json and init quiz
+    async function loadCompoundsJson() {
+        try {
+            const res = await fetch("catalog/Organic/Aliphatic_compounds/Alcohols_and_ethers/Primary_alcohols/compounds.json");
+            const data = await res.json();
+            const arr = Array.isArray(data.compounds) ? data.compounds : [];
+
+            COMPOUNDS = arr.map((c, idx) => ({
+                id: "cmp_" + idx,
+                iupacName: c.iupac_name || "",
+                commonName: c.common_name || "",
+                localName: c.local_name || "",
+                skeletalFormula: c.skeletal_formula || "",
+                molecularFormula: c.molecular_formula || "",
+                katexSkeletalFormula: c.katex_skeletal_formula || null,
+                katexMolecularFormula: c.katex_molecular_formula || null,
+                notes: c.notes || "",
+                smiles: c.smiles || null
+            }));
+
+            if (COMPOUNDS.length === 0) {
+                feedbackTextEl.textContent = "No compounds found in compounds.json.";
+                return;
+            }
+
+            questions = generateQuestions();
+            currentIndex = 0;
+            score = 0;
+            selectedOptionId = null;
+            finished = false;
+            showHint = false;
+            renderQuestion();
+        } catch (e) {
+            console.error("Failed to load compounds.json:", e);
+            feedbackTextEl.textContent = "Error loading compounds.json.";
+        }
+    }
+
+    window.addEventListener("load", function () {
+        modeStructureBtn.addEventListener("click", () => {
+            modeStructureBtn.classList.add("active");
+            modeNameBtn.classList.remove("active");
+            resetQuizForMode(QUIZ_MODES.STRUCTURE_TO_NAME);
+        });
+
+        modeNameBtn.addEventListener("click", () => {
+            modeNameBtn.classList.add("active");
+            modeStructureBtn.classList.remove("active");
+            resetQuizForMode(QUIZ_MODES.NAME_TO_STRUCTURE);
+        });
+
+        // view mode buttons
+        const viewSkeletalBtn = document.getElementById('viewSkeletalBtn');
+        const viewFullBtn = document.getElementById('viewFullBtn');
+
+        function clearViewActive() {
+            viewSkeletalBtn.classList.remove('active');
+            viewFullBtn.classList.remove('active');
+        }
+
+        viewSkeletalBtn.addEventListener('click', () => { clearViewActive(); viewSkeletalBtn.classList.add('active'); setStructureViewMode('skeletal'); });
+        viewFullBtn.addEventListener('click', () => { clearViewActive(); viewFullBtn.classList.add('active'); setStructureViewMode('full'); });
+
+        hintToggleBtn.addEventListener("click", onHintToggle);
+        nextBtn.addEventListener("click", onNextClick);
+
+        // Initialize RDKit
+        if (typeof initRDKitModule !== "function") {
+            console.error("initRDKitModule not found. RDKit_minimal.js failed to load?");
+            feedbackTextEl.textContent = "Error: RDKit.js not loaded.";
+            return;
+        }
+
+        initRDKitModule().then((rdkit) => {
+            RDKitModuleInstance = rdkit;
+            console.log("RDKit.js initialized, version:", RDKitModuleInstance.version());
+            // Initial load
+            loadCompoundsJson();
+        }).catch((e) => {
+            console.error("Failed to initialize RDKit:", e);
+            feedbackTextEl.textContent = "Error initializing RDKit.";
+        });
+    });
+</script>
+</body>
+</html>

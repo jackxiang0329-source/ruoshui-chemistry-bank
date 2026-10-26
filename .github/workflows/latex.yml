@@ -1,0 +1,34 @@
+name: Manual XeLaTeX preview
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install XeLaTeX and chemistry packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-xetex texlive-lang-chinese texlive-science poppler-utils
+      - name: Compile chemistry samples
+        run: |
+          mkdir -p .tmp
+          for topic in INORG ANAL PHYS ORG; do
+            qid=CHEM-${topic}-0001
+            node scripts/render-preview.mjs "$qid" both > "$qid.tex"
+            xelatex -no-shell-escape -halt-on-error -interaction=nonstopmode -output-directory=.tmp "$qid.tex"
+            xelatex -no-shell-escape -halt-on-error -interaction=nonstopmode -output-directory=.tmp "$qid.tex"
+            pdfinfo ".tmp/$qid.pdf" | grep -q "Pages:"
+            pdftotext ".tmp/$qid.pdf" - | grep -q "三千弱水"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: unreviewed-chemistry-previews
+          path: .tmp/*.pdf
+          retention-days: 7
