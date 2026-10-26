@@ -1,0 +1,25 @@
+name: Chemistry structure collision audit
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  rdkit-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install rdkit==2025.9.4 pytest
+      - name: RDKit test fixtures
+        run: pytest -q tests/test_rdkit_audit.py
+      - name: Generate non-destructive collision audit
+        run: python scripts/rdkit_audit.py > rdkit-audit-report.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chemistry-structure-audit
+          path: rdkit-audit-report.json
+          retention-days: 7
