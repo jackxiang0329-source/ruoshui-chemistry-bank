@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ruoshui chemistry four-track paper v1 (student side)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "kind",
+    "track",
+    "seed",
+    "status",
+    "question_count",
+    "questions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "kind": {
+      "enum": [
+        "ruoshui-chemistry-quantitative-preview",
+        "ruoshui-chemistry-practice-preview"
+      ]
+    },
+    "track": {
+      "enum": [
+        "inorganic",
+        "analytical",
+        "physical",
+        "organic"
+      ]
+    },
+    "mode": {
+      "enum": [
+        "name_to_formula",
+        "formula_to_name"
+      ]
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "status": {
+      "const": "UNREVIEWED_DO_NOT_PUBLISH"
+    },
+    "question_count": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 60
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "track",
+          "type",
+          "prompt",
+          "review_status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "track": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "numerical",
+              "single_choice"
+            ]
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "review_status": {
+            "type": "string"
+          },
+          "expected_unit": {
+            "type": "string"
+          },
+          "template": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "correct_index"
+              ]
+            },
+            {
+              "required": [
+                "correct_answer"
+              ]
+            },
+            {
+              "required": [
+                "expected"
+              ]
+            },
+            {
+              "required": [
+                "derivation"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
