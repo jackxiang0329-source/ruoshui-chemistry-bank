@@ -1,19 +1,34 @@
 # 三千弱水 · 大学四大化学题库
 
-独立构建面向本科化学专业的**无机化学、分析化学、物理化学、有机化学**题库、严格解答与 LaTeX 出版资源，并向三千弱水统一组卷平台提供版本化题目清单。
+无机化学 · 分析化学 · 物理化学 · 有机化学
 
-**当前状态：仓库初始化中；尚无已通过化学专家审核并发布的正式题库。**
+**工程状态：V0.1 原型。四科各一道原创教学示例，全部保留 draft，不代表正式审核通过。**
 
-## 原则
+## 结构
 
-- **独立题目文件**：每道题保留 `problem.tex`、`solution.tex` 和机器可读 `metadata.json`；以后可以增加 `rubric.tex`、化学结构、绘图和实验数据。
-- **原创优先，许可先行**：外部仓库与教材仅作为参考索引，禁止直接大批量转存未经逐题核验的题干、图片或解答。
-- **双轨质检**：程序验证格式、数值计算、化学计量/电荷和部分有机结构；化学事实、推理与出版质量必须人工复核。
-- **LaTeX 排版**：`ctex` + `mhchem` + `amsmath`，正式考试模板以后采用 Elegant 风格；不将高成本 XeLaTeX 编译放到免费 Cloudflare Workers。
-- **多仓库接口**：本仓库保存可溯源原始素材，统一平台只读取经过审批、带版本与哈希的发布索引。
+- questions/CHEM-INORG-0001、CHEM-ANAL-0001、CHEM-PHYS-0001、CHEM-ORG-0001：每题独立 metadata.json、problem.tex、solution.tex
+- schemas/question.schema.json：统一题目标准
+- taxonomy/taxonomy.json：四学科知识点分层
+- docs/SOURCES.md：上游开源资源及版权初审
+- scripts/validate.mjs：格式与发布基本检查
+- scripts/export-manifest.mjs：只导出已发布试题，草稿排除
+- scripts/render-preview.mjs：从独立题目生成 ctex + mhchem + amsmath 可编译 TeX
+- .github/workflows/ci.yml：Node 自动测试
+- .github/workflows/latex.yml：手动 XeLaTeX 样卷编译
 
-## 计划
+## 运行
 
-第一期先建立可验证的四科样例、章节分类、题目 Schema、CI 和 TeX 构建规范。每科样例不等于正式题库；版本发布时另行声明审核与许可状态。
+需要 Node.js 20+，无外部 npm 依赖。
 
-来源审查、样例及工具链将在开发分支提交并通过 PR 审核后进入 `main`。
+    npm run check
+    npm test
+    npm run manifest
+    node scripts/render-preview.mjs CHEM-INORG-0001 both > CHEM-INORG-0001.tex
+
+首次运行发布清单预期 published_count 为 0，以防止未审题目进入正式题库。编译 XeLaTeX 需要装好 ctex、mhchem、amsmath 和中文字体。
+
+## 授权与质量
+
+外部开源仓库、教材及练习集不能仅凭公开 GitHub 链接就自动转载。每条题目和图片必须核验独立授权。化学内容必须人工专业审核，自动检查只能辅助验证。
+
+与现有三千弱水数学平台保持独立；后续通过经认证、含 SHA-256 的题目版本清单接入，不直接动数学仓库生产数据库。详见 docs/ARCHITECTURE.md。
