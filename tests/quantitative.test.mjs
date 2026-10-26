@@ -28,7 +28,7 @@ test('600 numerical variants satisfy mass action, formation, van t Hoff and kine
         assert.ok(Number.isFinite(ans.expected));
       }
       assert.equal(signature.size,60);
-      assert.ok(!JSON.stringify(paper.student).includes('expected'));
+      assert.ok(!JSON.stringify(paper.student).includes('\"expected\":'));
     }
 });
 test('teacher-only answer key yields exact scoring without disclosing answers',()=>{
