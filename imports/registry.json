@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-26",
+  "mode": "external_review_quarantine",
+  "imports": [
+    {
+      "repo": "oxpig/ChemIQ",
+      "ref": "63826f64990802e87f1b11b9192606a20838d522",
+      "license": "BSD-3-Clause",
+      "source": "questions/chemiq.jsonl",
+      "raw_count": 816,
+      "unique_count": 814,
+      "duplicates": 2,
+      "type": "benchmark",
+      "publication_allowed": false,
+      "note": "Retain as benchmark quarantine; beware NMR third-party source and benchmark contamination"
+    },
+    {
+      "repo": "bem130/chemquiz",
+      "ref": "10b81d4c1b02847e3d9b64e8d44a960d10559ea3",
+      "license": "MIT",
+      "source": "catalog/Inorganic/compounds.json and catalog/Organic/compounds.json",
+      "raw_count": 301,
+      "unique_count": 273,
+      "duplicates": 28,
+      "type": "compound_reference_practice",
+      "publication_allowed": false,
+      "note": "Name-to-formula practice items derived from upstream; awaiting quality and license inspection"
+    }
+  ],
+  "excluded": [
+    {
+      "repo": "openstax/osbooks-chemistry-bundle",
+      "license": "CC BY-NC-SA 4.0",
+      "reason": "Noncommercial/ShareAlike and separate AI use terms; not indiscriminately imported"
+    },
+    {
+      "repo": "microsoft/chemistry-qa",
+      "license": "Computational Use of Data Agreement",
+      "reason": "Original Socratic content and computational-only terms not clear for reprinting"
+    },
+    {
+      "repo": "openwebwork/webwork-open-problem-library",
+      "license": "Default CC BY-NC-SA 3.0, exceptions per contributor",
+      "reason": "License varies by file and NC-SA terms; not bulk ingested"
+    },
+    {
+      "repo": "EnvCommons/SuperCHEM",
+      "license": "MIT environment; benchmark question rights not independently settled",
+      "reason": "Questions sourced from non-public examinations, not bulk ingested"
+    },
+    {
+      "repo": "lamalab-org/chembench",
+      "license": "MIT code; benchmark data on separate hosting",
+      "reason": "Reserve as independent benchmark and review dataset permissions"
+    },
+    {
+      "repo": "openstax/exercises",
+      "license": "AGPL software with content-specific rights",
+      "reason": "Software licence does not authorize wholesale question reuse"
+    },
+    {
+      "repo": "erik-menke/AnalyticalProjects",
+      "license": "No unified repository licence confirmed",
+      "reason": "No rights-complete corpus available for import"
+    }
+  ]
+}
