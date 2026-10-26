@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "disclaimer": "Review holds copied from manual review discoveries; no automatic chemistry correction. Source original indices are 1-based.",
+  "entries": [
+    {
+      "external_id": "CQ-INORGANIC-0069",
+      "reason": "graphite cannot be represented by methane SMILES C"
+    },
+    {
+      "external_id": "CQ-INORGANIC-0070",
+      "reason": "diamond cannot be represented by methane SMILES C"
+    },
+    {
+      "external_id": "CQ-ORGANIC-0049",
+      "reason": "shared raw SMILES C with nonmolecular carbon allotropes; review before approval"
+    },
+    {
+      "external_id": "CQ-ORGANIC-0107",
+      "reason": "disaccharide molecular graph collides with other named disaccharides"
+    },
+    {
+      "external_id": "CQ-ORGANIC-0108",
+      "reason": "disaccharide molecular graph collides with other named disaccharides"
+    },
+    {
+      "external_id": "CQ-ORGANIC-0109",
+      "reason": "disaccharide molecular graph collides with other named disaccharides"
+    }
+  ]
+}
