@@ -25,6 +25,8 @@
   "structures": {
     "reactant_smiles": "C[C@@H](Br)CC",
     "product_smiles": "C[C@H](I)CC",
-    "stereochemical_note": "RDKit CIP check required before review: R to S under assumed SN2 inversion."
+    "stereochemical_note": "RDKit CIP check required before review: R to S under assumed SN2 inversion.",
+    "expected_reactant_cip": "R",
+    "expected_product_cip": "S"
   }
 }

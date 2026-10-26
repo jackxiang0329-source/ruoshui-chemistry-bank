@@ -166,6 +166,20 @@
         },
         "stereochemical_note": {
           "type": "string"
+        },
+        "expected_reactant_cip": {
+          "type": "string",
+          "enum": [
+            "R",
+            "S"
+          ]
+        },
+        "expected_product_cip": {
+          "type": "string",
+          "enum": [
+            "R",
+            "S"
+          ]
         }
       }
     }
