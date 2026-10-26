@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "a346d6112511090f5ef3644d0c0c4533e0dc478a38f75a17782dc5af67409b42",
+  "subject": "inorganic",
+  "topic": "transition_metal_electron_counting",
+  "question_type": "d_electrons",
+  "question": "按照 ChemTrain TMC Learn 的电子计数约定，配合物 [Mn(CN)₆]³⁻ 中金属的 d 电子数是多少？",
+  "answer": "d^4",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "ChemTrain/tmc-learn",
+    "commit": "3ccdefe51d6754cb59cc19c847d76b7044da1414",
+    "file": "src/tmc_sets.py",
+    "git_blob_sha": "a97ab868052f6f5ca568c132a3df3851d8cb89b2",
+    "original_id": "Hexacyanomanganate(III)",
+    "original_set": "WERNER",
+    "formula": "[Mn(CN)₆]³⁻",
+    "license": "CC-BY-4.0",
+    "attribution": "TMC Learn by Francesco Sala (ChemTrain), https://github.com/ChemTrain/tmc-learn, licensed under CC BY 4.0; derived Chinese practice prompts, source card data modified.",
+    "content_rights_verified": true,
+    "license_evidence": {
+      "content_license": "https://github.com/ChemTrain/tmc-learn/blob/3ccdefe51d6754cb59cc19c847d76b7044da1414/LICENSE-CONTENT.md",
+      "code_license": "https://github.com/ChemTrain/tmc-learn/blob/3ccdefe51d6754cb59cc19c847d76b7044da1414/LICENSE",
+      "readme": "https://github.com/ChemTrain/tmc-learn/blob/3ccdefe51d6754cb59cc19c847d76b7044da1414/README.md",
+      "scope_note": "LICENSE-CONTENT explicitly licenses selection and grouping of card sets and ligand content as CC BY 4.0. We generate questions only from the complex card name/formula and electron count/oxidation state, not drawings, third-party text, or logo."
+    },
+    "url": "https://github.com/ChemTrain/tmc-learn/blob/3ccdefe51d6754cb59cc19c847d76b7044da1414/src/tmc_sets.py",
+    "changes": "Generated Chinese question prompts from licensed source card fields; no structure drawings or textbook passages copied."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "generator": "chemtrain-tmc-electron-counts",
+  "source_repository": "ChemTrain/tmc-learn",
+  "source_commit": "3ccdefe51d6754cb59cc19c847d76b7044da1414",
+  "source_git_blob_sha": "a97ab868052f6f5ca568c132a3df3851d8cb89b2",
+  "content_license": "CC-BY-4.0",
+  "attribution": "TMC Learn by Francesco Sala (ChemTrain), https://github.com/ChemTrain/tmc-learn, licensed under CC BY 4.0; derived Chinese practice prompts, source card data modified.",
+  "unique_source_complexes": 199,
+  "generated_unique_question_variants": 593,
+  "by_question_type": {
+    "valence_electrons": 199,
+    "oxidation_state": 197,
+    "d_electrons": 197
+  },
+  "subject": "inorganic",
+  "review_status": "awaiting_expert_review",
+  "publishable": false,
+  "note": "Generated variants are not independent source cards; chemical expert review still required."
+}
