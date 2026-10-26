@@ -14,6 +14,9 @@ on:
       - "tests/test_chemtrain_tmc_import.py"
       - "scripts/import-chemquiz-reference.mjs"
       - "tests/chemquiz-reference.test.mjs"
+      - "scripts/import-chemtrain-radical.mjs"
+      - "tests/chemtrain-radical.test.mjs"
+      - "third_party/ChemTrain_radical_learn/**"
   schedule:
     - cron: "17,47 * * * *"
   workflow_dispatch:
@@ -46,6 +49,8 @@ jobs:
         run: python3 -m unittest discover -s tests -p "test_chemtrain_tmc_import.py" -v
       - name: Verify MIT chemquiz reference importer
         run: node --test tests/chemquiz-reference.test.mjs
+      - name: Verify pinned Radical Learn source and importer
+        run: node --test tests/chemtrain-radical.test.mjs
       - name: Search GitHub chemistry repositories
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -56,6 +61,8 @@ jobs:
         run: python3 scripts/import-chemtrain-tmc.py
       - name: Import pinned MIT chemquiz reference exercises
         run: node scripts/import-chemquiz-reference.mjs
+      - name: Import CC BY 4.0 Radical Learn text-only organic classification cards
+        run: node scripts/import-chemtrain-radical.mjs
       - name: Commit only real additions or changes
         run: |
           git add -- harvest/source_candidates.json
