@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source_repository": "ChemTrain/pg-learn",
+  "source_commit": "b232355d130198e4f6519388201c65e7359238e0",
+  "source_html_git_blob_sha": "7763f186d6453ec9b65b5f9e7aefb06a100a5279",
+  "source_content_license_git_blob_sha": "12cc62b715826eec57a9830d8a5bfaaf952218f4",
+  "content_license": "CC BY 4.0",
+  "code_license": "MIT",
+  "source_groups_total": 44,
+  "source_conditions_total": 22,
+  "eligible_unambiguous_groups": 22,
+  "generated_candidate_questions": 22,
+  "by_subject": {
+    "organic": 22
+  },
+  "question_type": "single_choice_chart_compatibility",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "excluded_source_groups": 22,
+  "third_party_measurements_imported": 0,
+  "note": "22 adapted educational questions from 22 original protecting-group chart rows; only explicit X vs . cells without notes; excludes ambiguous/conditional cells. Not expert validated, not laboratory guidance."
+}

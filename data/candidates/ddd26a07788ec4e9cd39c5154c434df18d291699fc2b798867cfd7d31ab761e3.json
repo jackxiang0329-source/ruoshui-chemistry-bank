@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "ddd26a07788ec4e9cd39c5154c434df18d291699fc2b798867cfd7d31ab761e3",
+  "subject": "organic",
+  "topic": "protecting_group_deprotection",
+  "level": "upper_undergraduate",
+  "question_type": "single_choice_chart_compatibility",
+  "question": "有机化学·保护基脱除（PG Learn 教学兼容性表）：对“Aryl benzyl ether”保护基，在以下四组给定条件中，哪一组被原表明确标为可脱除（X），而其他三组均标为保留（.）？（仅按该来源的标准条件与表格判定；实际实验结果依底物和条件而变。）\nA. TBAF, THF\nB. H₂, Pd/C\nC. HCl, THF/H₂O\nD. AcOH, THF/H₂O",
+  "answer": "B. H₂, Pd/C",
+  "correct_option": "B",
+  "correct_condition_id": "h2",
+  "explanation": "PG Learn 的兼容性表中，Aryl benzyl ether 与 H₂, Pd/C 对应 X（脱除）；其他三个备选条件对应 .（保留）。表格用于教学，不能替代具体底物的文献验证。",
+  "options": [
+    {
+      "key": "A",
+      "text": "TBAF, THF",
+      "source_chart_cell": "."
+    },
+    {
+      "key": "B",
+      "text": "H₂, Pd/C",
+      "source_chart_cell": "X"
+    },
+    {
+      "key": "C",
+      "text": "HCl, THF/H₂O",
+      "source_chart_cell": "."
+    },
+    {
+      "key": "D",
+      "text": "AcOH, THF/H₂O",
+      "source_chart_cell": "."
+    }
+  ],
+  "source": {
+    "repository": "ChemTrain/pg-learn",
+    "commit": "b232355d130198e4f6519388201c65e7359238e0",
+    "file": "pg_learn.html",
+    "git_blob_sha": "7763f186d6453ec9b65b5f9e7aefb06a100a5279",
+    "original_group_id": "aryl_bn",
+    "original_group_name": "Aryl benzyl ether",
+    "original_group_deprotects_to": "phenol",
+    "source_standard_condition_id": "h2",
+    "source_chart_cells": {
+      "h2": "X",
+      "hcl": ".",
+      "acoh": ".",
+      "tbaf": "."
+    },
+    "license": "CC BY 4.0",
+    "code_license": "MIT",
+    "attribution": "PG Learn by Quentin Bindschaedler (ChemTrain), https://github.com/ChemTrain/pg-learn, licensed under CC BY 4.0.",
+    "license_evidence": "https://github.com/ChemTrain/pg-learn/blob/b232355d130198e4f6519388201c65e7359238e0/LICENSE-CONTENT.md",
+    "license_git_blob_sha": "12cc62b715826eec57a9830d8a5bfaaf952218f4",
+    "url": "https://github.com/ChemTrain/pg-learn/blob/b232355d130198e4f6519388201c65e7359238e0/pg_learn.html",
+    "content_rights_verified": true,
+    "changes": "One Chinese multiple-choice question adapted from the CC BY 4.0 protecting-group compatibility chart; options limited to one explicitly X standard CORE condition and three explicitly stable CORE conditions; no molecular drawings, external papers, logo, or measured data copied."
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false
+}
