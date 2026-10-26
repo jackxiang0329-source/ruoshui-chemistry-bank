@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "428637fc953ac4b588a810c520e1925f9616fb52d8efbfd02d88bce51f989815",
+  "subject": "organic",
+  "question": "Select the reagents needed for this SN1 reaction to form tert-butyl ethyl ether under acidic conditions:\nTarget: tert-Butyl Ethyl Ether (C6H14O)\nAvailable reagents: Ethanol (C2H5OH); tert-Butyl Chloride (C4H9Cl); Sodium Ethoxide (C2H5ONa); Sulfuric Acid (H2SO4); Sodium Hydroxide (NaOH); tert-Butanol (C4H10O)",
+  "answer": "Ethanol; tert-Butyl Chloride",
+  "quality_status": "awaiting_expert_review",
+  "source": {
+    "repository": "MuzaPro/Organic-Chemistry-Quiz-JS",
+    "commit": "71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc",
+    "file": "data/questions.json",
+    "record_index": 1,
+    "original_id": "q2",
+    "license": "MIT",
+    "attribution": "Copyright (c) 2025 Muza Studio; https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS",
+    "content_rights_verified": true,
+    "url": "https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS/blob/71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc/data/questions.json"
+  }
+}

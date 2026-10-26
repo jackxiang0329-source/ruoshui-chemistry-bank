@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "5aac29b6f67f409b2304a984381ba1a7a0d081d3d4dc8e27cfc6270ca49df3bb",
+  "subject": "organic",
+  "question": "Select reagents for this Grignard reaction to form 2-phenylethanol:\nTarget: 2-Phenylethanol (C8H10O)\nAvailable reagents: Phenylmagnesium Bromide (C6H5MgBr); Ethylene Oxide (C2H4O); Benzaldehyde (C7H6O); Ethanol (C2H5OH); Sodium Borohydride (NaBH4); Hydrochloric Acid (HCl)",
+  "answer": "Phenylmagnesium Bromide; Ethylene Oxide",
+  "quality_status": "awaiting_expert_review",
+  "source": {
+    "repository": "MuzaPro/Organic-Chemistry-Quiz-JS",
+    "commit": "71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc",
+    "file": "data/questions.json",
+    "record_index": 4,
+    "original_id": "q5",
+    "license": "MIT",
+    "attribution": "Copyright (c) 2025 Muza Studio; https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS",
+    "content_rights_verified": true,
+    "url": "https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS/blob/71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc/data/questions.json"
+  }
+}
