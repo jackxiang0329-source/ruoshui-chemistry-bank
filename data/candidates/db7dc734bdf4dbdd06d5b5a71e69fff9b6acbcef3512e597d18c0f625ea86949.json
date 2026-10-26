@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "db7dc734bdf4dbdd06d5b5a71e69fff9b6acbcef3512e597d18c0f625ea86949",
+  "subject": "analytical",
+  "topic": "qualitative_cation_analysis",
+  "level": "introductory_undergraduate",
+  "question_type": "precipitate_formula",
+  "question": "定性分析：向含有 Co2+ 的稀水溶液中加入少量氢氧化钠水溶液（NaOH），初始形成的难溶沉淀化学式是什么？（忽略过量试剂引起的络合或溶解及空气氧化等后续过程。）",
+  "answer": "Co(OH)2",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "bem130/chemquiz",
+    "commit": "10b81d4c1b02847e3d9b64e8d44a960d10559ea3",
+    "file": "dataset/metal_ions_and_colors.json",
+    "git_blob_sha": "51116f705badf81a99c4e08acd184cc5731c538e",
+    "original_id": "Co2+|NaOH",
+    "license": "MIT",
+    "attribution": "Copyright (c) 2025 べむ; chemquiz (bem130/chemquiz), MIT License",
+    "content_rights_verified": true,
+    "license_evidence": "https://github.com/bem130/chemquiz/blob/10b81d4c1b02847e3d9b64e8d44a960d10559ea3/LICENSE",
+    "url": "https://github.com/bem130/chemquiz/blob/10b81d4c1b02847e3d9b64e8d44a960d10559ea3/dataset/metal_ions_and_colors.json",
+    "changes": "Chinese teaching prompt generated from MIT-licensed chemistry reference fields; no upstream notes or images copied."
+  }
+}
