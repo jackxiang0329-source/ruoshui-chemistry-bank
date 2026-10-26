@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "989f649e93f324eddf6dfcca562585016b2a9aadedda7fb8977d7104cd356ad4",
+  "subject": "physical",
+  "topic": "calorimetry",
+  "question_type": "thermochem",
+  "level": "introductory_undergraduate",
+  "difficulty": "easy",
+  "question": "How much heat is required to raise 200 g of silver (c = 0.24 J/g·°C) by 40°C?",
+  "answer": "1920 J",
+  "options": [
+    "A. 1920 J",
+    "B. 9.6 J",
+    "C. 960 J",
+    "D. 8000 J",
+    "E. 33333.3 J"
+  ],
+  "correct_option": "A",
+  "explanation": "q = mcΔT = 200 × 0.24 × 40 = 1920 J. Forgetting the specific heat (just m·ΔT) gives 8000.",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "arya51-ai/parametric-question-engine",
+    "commit": "cbe7d952443ff88ef89b514dd4fb1641a69c2950",
+    "file": "chem/archetypes.js",
+    "git_blob_sha": "a8dc7e5ae1b1965cb26c32f385314b9f9f45f5a6",
+    "license": "MIT",
+    "content_rights_verified": true,
+    "attribution": "Copyright (c) 2026 Arya Mehta; parametric-question-engine (MIT)",
+    "license_evidence": "https://github.com/arya51-ai/parametric-question-engine/blob/cbe7d952443ff88ef89b514dd4fb1641a69c2950/LICENSE",
+    "url": "https://github.com/arya51-ai/parametric-question-engine/blob/cbe7d952443ff88ef89b514dd4fb1641a69c2950/chem/archetypes.js",
+    "origin": "deterministic_generation_from_pinned_mit_code",
+    "original_exam_question": false,
+    "changes": "Generated from the upstream solver; limited to five independently checked easy-level archetypes. No third-party exam questions, images or proprietary datasets copied."
+  }
+}

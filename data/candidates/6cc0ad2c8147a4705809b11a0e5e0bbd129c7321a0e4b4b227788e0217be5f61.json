@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "6cc0ad2c8147a4705809b11a0e5e0bbd129c7321a0e4b4b227788e0217be5f61",
+  "subject": "physical",
+  "topic": "equilibrium_constant",
+  "question_type": "keq_ice",
+  "level": "introductory_undergraduate",
+  "difficulty": "easy",
+  "question": "For A + B ⇌ C at equilibrium [A]=0.5 M, [B]=1 M, [C]=1 M. What is Kc?",
+  "answer": "2",
+  "options": [
+    "A. 0.67",
+    "B. 4",
+    "C. 1",
+    "D. 2",
+    "E. 0.5"
+  ],
+  "correct_option": "D",
+  "explanation": "Kc = [C] / ([A][B]) = 1 / (0.5 × 1) = 2. Inverting (reactants over products) gives 0.5.",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "arya51-ai/parametric-question-engine",
+    "commit": "cbe7d952443ff88ef89b514dd4fb1641a69c2950",
+    "file": "chem/archetypes.js",
+    "git_blob_sha": "a8dc7e5ae1b1965cb26c32f385314b9f9f45f5a6",
+    "license": "MIT",
+    "content_rights_verified": true,
+    "attribution": "Copyright (c) 2026 Arya Mehta; parametric-question-engine (MIT)",
+    "license_evidence": "https://github.com/arya51-ai/parametric-question-engine/blob/cbe7d952443ff88ef89b514dd4fb1641a69c2950/LICENSE",
+    "url": "https://github.com/arya51-ai/parametric-question-engine/blob/cbe7d952443ff88ef89b514dd4fb1641a69c2950/chem/archetypes.js",
+    "origin": "deterministic_generation_from_pinned_mit_code",
+    "original_exam_question": false,
+    "changes": "Generated from the upstream solver; limited to five independently checked easy-level archetypes. No third-party exam questions, images or proprietary datasets copied."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "856850e99fa2594b3820d9e45329905ffd1a6a55e0bc9777136a6a1169b2f95b",
+  "subject": "physical",
+  "topic": "standard_cell_potential",
+  "question_type": "electrochem",
+  "level": "introductory_undergraduate",
+  "difficulty": "easy",
+  "question": "What is the standard cell potential for a cell made from Ag⁺/Ag (E° = 0.8 V) and Al³⁺/Al (E° = -1.66 V)?",
+  "answer": "2.46 V",
+  "options": [
+    "A. 2.46 V",
+    "B. -0.86 V",
+    "C. 4.92 V",
+    "D. -2.46 V",
+    "E. 1.23 V"
+  ],
+  "correct_option": "A",
+  "explanation": "E°cell = E°cathode − E°anode = 0.8 − (-1.66) = 2.46 V. The cathode is the more positive (Ag⁺/Ag). Adding the two potentials (-0.86 V) is the classic error.",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "arya51-ai/parametric-question-engine",
+    "commit": "cbe7d952443ff88ef89b514dd4fb1641a69c2950",
+    "file": "chem/archetypes.js",
+    "git_blob_sha": "a8dc7e5ae1b1965cb26c32f385314b9f9f45f5a6",
+    "license": "MIT",
+    "content_rights_verified": true,
+    "attribution": "Copyright (c) 2026 Arya Mehta; parametric-question-engine (MIT)",
+    "license_evidence": "https://github.com/arya51-ai/parametric-question-engine/blob/cbe7d952443ff88ef89b514dd4fb1641a69c2950/LICENSE",
+    "url": "https://github.com/arya51-ai/parametric-question-engine/blob/cbe7d952443ff88ef89b514dd4fb1641a69c2950/chem/archetypes.js",
+    "origin": "deterministic_generation_from_pinned_mit_code",
+    "original_exam_question": false,
+    "changes": "Generated from the upstream solver; limited to five independently checked easy-level archetypes. No third-party exam questions, images or proprietary datasets copied."
+  }
+}

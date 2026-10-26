@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "b736742084d1fccb466f5b5d2b4e605ee3b01cb644d9ba7411296584017064ba",
+  "subject": "analytical",
+  "topic": "solution_concentration",
+  "question_type": "molarity_dilution",
+  "level": "introductory_undergraduate",
+  "difficulty": "easy",
+  "question": "What is the molarity of a solution containing 0.25 mol of solute in 2 L of solution?",
+  "answer": "0.13 M",
+  "options": [
+    "A. 0.5 M",
+    "B. 0 M",
+    "C. 0.26 M",
+    "D. 8 M",
+    "E. 0.13 M"
+  ],
+  "correct_option": "E",
+  "explanation": "M = moles ÷ liters = 0.25 ÷ 2 = 0.13 M.",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "arya51-ai/parametric-question-engine",
+    "commit": "cbe7d952443ff88ef89b514dd4fb1641a69c2950",
+    "file": "chem/archetypes.js",
+    "git_blob_sha": "a8dc7e5ae1b1965cb26c32f385314b9f9f45f5a6",
+    "license": "MIT",
+    "content_rights_verified": true,
+    "attribution": "Copyright (c) 2026 Arya Mehta; parametric-question-engine (MIT)",
+    "license_evidence": "https://github.com/arya51-ai/parametric-question-engine/blob/cbe7d952443ff88ef89b514dd4fb1641a69c2950/LICENSE",
+    "url": "https://github.com/arya51-ai/parametric-question-engine/blob/cbe7d952443ff88ef89b514dd4fb1641a69c2950/chem/archetypes.js",
+    "origin": "deterministic_generation_from_pinned_mit_code",
+    "original_exam_question": false,
+    "changes": "Generated from the upstream solver; limited to five independently checked easy-level archetypes. No third-party exam questions, images or proprietary datasets copied."
+  }
+}

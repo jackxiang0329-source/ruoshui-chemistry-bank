@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "d0721db2c599aac3b0b7e96bfe4d17796b23e647f0efa7c4a0c365027c08bdf0",
+  "subject": "inorganic",
+  "topic": "chemical_formula_molar_mass",
+  "question_type": "molar_mass",
+  "level": "introductory_undergraduate",
+  "difficulty": "easy",
+  "question": "What is the molar mass of HCl?",
+  "answer": "36.46 g/mol",
+  "options": [
+    "A. 36.46 g/mol",
+    "B. 52.46 g/mol",
+    "C. 18 g/mol",
+    "D. 18.23 g/mol",
+    "E. 35.45 g/mol"
+  ],
+  "correct_option": "A",
+  "explanation": "Sum (atomic mass × subscript): H=1.01 + Cl=35.45 = 36.46 g/mol.",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "arya51-ai/parametric-question-engine",
+    "commit": "cbe7d952443ff88ef89b514dd4fb1641a69c2950",
+    "file": "chem/archetypes.js",
+    "git_blob_sha": "a8dc7e5ae1b1965cb26c32f385314b9f9f45f5a6",
+    "license": "MIT",
+    "content_rights_verified": true,
+    "attribution": "Copyright (c) 2026 Arya Mehta; parametric-question-engine (MIT)",
+    "license_evidence": "https://github.com/arya51-ai/parametric-question-engine/blob/cbe7d952443ff88ef89b514dd4fb1641a69c2950/LICENSE",
+    "url": "https://github.com/arya51-ai/parametric-question-engine/blob/cbe7d952443ff88ef89b514dd4fb1641a69c2950/chem/archetypes.js",
+    "origin": "deterministic_generation_from_pinned_mit_code",
+    "original_exam_question": false,
+    "changes": "Generated from the upstream solver; limited to five independently checked easy-level archetypes. No third-party exam questions, images or proprietary datasets copied."
+  }
+}

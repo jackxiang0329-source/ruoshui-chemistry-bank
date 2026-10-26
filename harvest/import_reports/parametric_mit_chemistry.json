@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "source_repository": "arya51-ai/parametric-question-engine",
+  "source_commit": "cbe7d952443ff88ef89b514dd4fb1641a69c2950",
+  "source_license": "MIT",
+  "license_evidence": "https://github.com/arya51-ai/parametric-question-engine/blob/cbe7d952443ff88ef89b514dd4fb1641a69c2950/LICENSE",
+  "upstream_author": "Arya Mehta",
+  "source_file_blobs": {
+    "LICENSE": "104ef3b11cabe4c274a6a709e0fc9143ce6ce2be",
+    "README.md": "085a9976d11306e123dabd10231ad5b2c412cc88",
+    "package.json": "bded2606df35f6504e8601b457a2736129ddb1cb",
+    "core/rng.js": "f96ed2d9add468c29c6abe06570eb4652993a7a3",
+    "core/options.js": "0fb6d1807586a537c4e1ed830d9a9c154acb72b8",
+    "chem/data.js": "86084d93b97407e831be275f369dcb7acd15adcb",
+    "chem/archetypes.js": "a8dc7e5ae1b1965cb26c32f385314b9f9f45f5a6"
+  },
+  "source_question_type": "programmatically_generated_not_independent_exam_questions",
+  "generated_variants": 30,
+  "by_subject": {
+    "inorganic": 6,
+    "organic": 0,
+    "analytical": 6,
+    "physical": 18
+  },
+  "exact_deduplication": "NFKC normalized question SHA-256",
+  "independent_numeric_validation": true,
+  "review_status": "awaiting_expert_review",
+  "publishable": false,
+  "note": "The upstream engine has 15 archetypes; only five elementary ones are used. No hard electrochemistry archetype is imported because its electron-count handling needs review. Cross-source semantic duplicates and expert review remain pending."
+}
