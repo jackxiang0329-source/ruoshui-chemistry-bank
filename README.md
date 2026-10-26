@@ -40,3 +40,14 @@ npm run practice:preview -- --discipline=organic --count=10 --seed=20261026
 运行结果生成在被 Git 忽略的 `.tmp/chemistry-practice/`，学生卷与教师答案卷分别保存。**未通过专业化学审核，不得自动发布至网站或作为正式考试。**
 
 详见 [练习适配器与三千弱水接口说明](docs/CHEMISTRY_PRACTICE_INTEGRATION.md)。
+
+## 四大学科统一组卷（V0.3 未审预览）
+
+目前无机/有机可生成化学名称与分子式选择题，分析/物理化学新增三类原创参数化计算题，共六类。全科统一使用 `buildUnifiedPaper` 接口，学生题干与私有教师答案分别生成；尚未接入生产网站和正式已审题库。
+
+```bash
+npm run paper:unified -- --track=analytical --count=12 --seed=20261026
+npm run paper:unified -- --track=physical --count=12 --seed=20261026
+```
+
+详细公式、假设、判分与四科统一接口见 [FOUR_TRACKS.md](docs/FOUR_TRACKS.md)。待专家审核与完整 CI 验收后才能进入正式组卷。

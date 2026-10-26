@@ -5,6 +5,8 @@ on:
       - 'src/chemistry/**'
       - 'config/chemistry-practice-holds.json'
       - 'scripts/build-practice-preview.mjs'
+      - 'scripts/build-unified-chemistry.mjs'
+      - 'schemas/chemistry-student-paper.schema.json'
       - 'tests/**'
       - 'package.json'
       - '.github/workflows/chemistry-practice.yml'
@@ -27,3 +29,11 @@ jobs:
         run: |
           npm run practice:preview -- --discipline=organic --count=10 --options=4 --seed=42
           npm run practice:preview -- --discipline=inorganic --count=10 --options=4 --seed=43
+      - name: Build four disciplinary previews without publishing private keys
+        run: |
+          for track in inorganic organic analytical physical; do
+            npm run paper:unified -- --track=$track --count=9 --seed=20261026
+            test -f ".tmp/chemistry-unified/$track/student.json"
+            test -f ".tmp/chemistry-unified/$track/teacher-private.json"
+          done
+          node -e 'for (const t of ["inorganic","organic","analytical","physical"]) {let q=require("./.tmp/chemistry-unified/"+t+"/student.json");if (JSON.stringify(q).includes("\"correct_index\"")||JSON.stringify(q).includes("\"expected\""))throw Error("Answer leakage for "+t)}'
