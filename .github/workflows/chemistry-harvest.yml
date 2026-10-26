@@ -20,6 +20,9 @@ on:
       - "tests/chemtrain-radical.test.mjs"
       - "scripts/import-chemtrain-photoredox.mjs"
       - "tests/chemtrain-photoredox.test.mjs"
+      - "scripts/import-original-physical.mjs"
+      - "tests/original-physical.test.mjs"
+      - "LICENSE-ORIGINAL-QUESTIONS.md"
       - "harvest/pinned_photoredox_quenching.json"
       - "third_party/ChemTrain_radical_learn/**"
   schedule:
@@ -60,6 +63,8 @@ jobs:
         run: node --test tests/chemtrain-radical.test.mjs
       - name: Verify pinned Photoredox Learn importer
         run: node --test tests/chemtrain-photoredox.test.mjs
+      - name: Verify original physical chemistry calculations
+        run: node --test tests/original-physical.test.mjs
       - name: Search GitHub chemistry repositories
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -76,6 +81,8 @@ jobs:
         run: node scripts/import-chemtrain-radical.mjs
       - name: Import pinned CC BY 4.0 Photoredox Learn cycles
         run: node scripts/import-chemtrain-photoredox.mjs
+      - name: Generate original CC0 physical chemistry exercises
+        run: node scripts/import-original-physical.mjs
       - name: Commit only real additions or changes
         run: |
           git add -- harvest/source_candidates.json
