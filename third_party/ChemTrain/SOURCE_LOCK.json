@@ -1,0 +1,678 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-26",
+  "is_complete_mirror": false,
+  "reason": "The connector cannot return single-file HTML above ~1 MB; the pinned clone script can fetch all missing files.",
+  "sources": [
+    {
+      "repository": "ChemTrain/chemtrain-daily",
+      "revision": "79ed76e119ce379744654fbf9517cad4fd0a6c67",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "notes": "Experimental values may require original source references. Read LICENSE-CONTENT.md.",
+      "source_file_count": 6,
+      "source_bytes": 9719883,
+      "mirrored_files": [
+        {
+          "path": "CITATION.cff",
+          "sha": "7d6fbb94032493473b67c2b8105bc53d8a932d5c",
+          "size": 708
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+          "size": 1090
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "c1459875927c2a1bbbff1b6bf103efd0b0da44e8",
+          "size": 1523
+        },
+        {
+          "path": "README.md",
+          "sha": "065607ab7660c200627d421da2bb08543a026d17",
+          "size": 4241
+        }
+      ],
+      "not_mirrored": [
+        {
+          "path": "chemtrain_daily.html",
+          "sha": "33cf8fae4b050c21c0e9cbd8af7725a681391b83",
+          "size": 9693481
+        },
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        }
+      ],
+      "all_upstream_files": [
+        {
+          "path": "chemtrain_daily.html",
+          "sha": "33cf8fae4b050c21c0e9cbd8af7725a681391b83",
+          "size": 9693481
+        },
+        {
+          "path": "CITATION.cff",
+          "sha": "7d6fbb94032493473b67c2b8105bc53d8a932d5c",
+          "size": 708
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+          "size": 1090
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "c1459875927c2a1bbbff1b6bf103efd0b0da44e8",
+          "size": 1523
+        },
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
+          "path": "README.md",
+          "sha": "065607ab7660c200627d421da2bb08543a026d17",
+          "size": 4241
+        }
+      ]
+    },
+    {
+      "repository": "ChemTrain/pka-learn",
+      "revision": "5250dce7a367be0e767b2e3e7a26aa50c27b12a0",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "notes": "Experimental values may require original source references. Read LICENSE-CONTENT.md.",
+      "source_file_count": 6,
+      "source_bytes": 700285,
+      "mirrored_files": [
+        {
+          "path": "CITATION.cff",
+          "sha": "670cc1b6c6c1e44d7f14d387a45c96f2df01380d",
+          "size": 588
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+          "size": 1090
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "bd1d90f0a381f9d0b0a903bf203828c1e2a05f91",
+          "size": 1416
+        },
+        {
+          "path": "pka_learn.html",
+          "sha": "de1e8441908198301a7e82da76fd5febd9de8900",
+          "size": 675676
+        },
+        {
+          "path": "README.md",
+          "sha": "ef98c981d4741944967fe19f94661e57199ad6af",
+          "size": 2675
+        }
+      ],
+      "not_mirrored": [
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        }
+      ],
+      "all_upstream_files": [
+        {
+          "path": "CITATION.cff",
+          "sha": "670cc1b6c6c1e44d7f14d387a45c96f2df01380d",
+          "size": 588
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+          "size": 1090
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "bd1d90f0a381f9d0b0a903bf203828c1e2a05f91",
+          "size": 1416
+        },
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
+          "path": "pka_learn.html",
+          "sha": "de1e8441908198301a7e82da76fd5febd9de8900",
+          "size": 675676
+        },
+        {
+          "path": "README.md",
+          "sha": "ef98c981d4741944967fe19f94661e57199ad6af",
+          "size": 2675
+        }
+      ]
+    },
+    {
+      "repository": "ChemTrain/reaction-learn",
+      "revision": "da38861f5bb35d4fef1d2871eafad027e41b43f4",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "notes": "Experimental values may require original source references. Read LICENSE-CONTENT.md.",
+      "source_file_count": 6,
+      "source_bytes": 3553225,
+      "mirrored_files": [
+        {
+          "path": "CITATION.cff",
+          "sha": "84d5ad81c04e307d505da23640c3815b24c8d9a9",
+          "size": 626
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+          "size": 1090
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "ab6bfb5c75085c6e2b05b5c2c9d2b936f611ba6a",
+          "size": 1269
+        },
+        {
+          "path": "README.md",
+          "sha": "2d0aa0f0dd053f8f23301fe1dd0ab71378ed9078",
+          "size": 2790
+        }
+      ],
+      "not_mirrored": [
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
+          "path": "reaction_learn.html",
+          "sha": "942b48bf45ff4fe156a622b1e454acd296d224d0",
+          "size": 3528610
+        }
+      ],
+      "all_upstream_files": [
+        {
+          "path": "CITATION.cff",
+          "sha": "84d5ad81c04e307d505da23640c3815b24c8d9a9",
+          "size": 626
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+          "size": 1090
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "ab6bfb5c75085c6e2b05b5c2c9d2b936f611ba6a",
+          "size": 1269
+        },
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
+          "path": "reaction_learn.html",
+          "sha": "942b48bf45ff4fe156a622b1e454acd296d224d0",
+          "size": 3528610
+        },
+        {
+          "path": "README.md",
+          "sha": "2d0aa0f0dd053f8f23301fe1dd0ab71378ed9078",
+          "size": 2790
+        }
+      ]
+    },
+    {
+      "repository": "ChemTrain/pg-learn",
+      "revision": "b232355d130198e4f6519388201c65e7359238e0",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "notes": "Experimental values may require original source references. Read LICENSE-CONTENT.md.",
+      "source_file_count": 6,
+      "source_bytes": 3502068,
+      "mirrored_files": [
+        {
+          "path": "CITATION.cff",
+          "sha": "902317ab02853d18602f9311524082b9d8945e6e",
+          "size": 625
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+          "size": 1090
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "12cc62b715826eec57a9830d8a5bfaaf952218f4",
+          "size": 1191
+        },
+        {
+          "path": "README.md",
+          "sha": "fab8958dc60d4133a1e552902389dd70cc85e8be",
+          "size": 2236
+        }
+      ],
+      "not_mirrored": [
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
+          "path": "pg_learn.html",
+          "sha": "7763f186d6453ec9b65b5f9e7aefb06a100a5279",
+          "size": 3478086
+        }
+      ],
+      "all_upstream_files": [
+        {
+          "path": "CITATION.cff",
+          "sha": "902317ab02853d18602f9311524082b9d8945e6e",
+          "size": 625
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+          "size": 1090
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "12cc62b715826eec57a9830d8a5bfaaf952218f4",
+          "size": 1191
+        },
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
+          "path": "pg_learn.html",
+          "sha": "7763f186d6453ec9b65b5f9e7aefb06a100a5279",
+          "size": 3478086
+        },
+        {
+          "path": "README.md",
+          "sha": "fab8958dc60d4133a1e552902389dd70cc85e8be",
+          "size": 2236
+        }
+      ]
+    },
+    {
+      "repository": "ChemTrain/tmc-learn",
+      "revision": "3ccdefe51d6754cb59cc19c847d76b7044da1414",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "notes": "Experimental values may require original source references. Read LICENSE-CONTENT.md.",
+      "source_file_count": 13,
+      "source_bytes": 1476084,
+      "mirrored_files": [
+        {
+          "path": ".gitignore",
+          "sha": "c901c60ad36de95c9ac7f06b7ed31d0eedb8a6d2",
+          "size": 27
+        },
+        {
+          "path": "CITATION.cff",
+          "sha": "db1a1bc9a4b94e0bea0e1070e655def58f564cc8",
+          "size": 641
+        },
+        {
+          "path": "LICENSE",
+          "sha": "21692fd88d3b28414d5999d9f024e9dfb567965a",
+          "size": 1083
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "d6778c02825b4bd2ba2159a15bb546902ca93923",
+          "size": 1341
+        },
+        {
+          "path": "README.md",
+          "sha": "ebbee7f27a4675ee4108c1687be15202dad21ea6",
+          "size": 5033
+        },
+        {
+          "path": "src/build.py",
+          "sha": "33b28e6ecb96c1cbeeeb58b8196647badd63b29c",
+          "size": 33769
+        },
+        {
+          "path": "src/template.html",
+          "sha": "7a117047ae2001fa211a126cf9d8224879dbb498",
+          "size": 120687
+        },
+        {
+          "path": "src/tmc_count.py",
+          "sha": "e1a4ae9a27c4b878f00ae9963ec4124b5a8bcdd6",
+          "size": 2977
+        },
+        {
+          "path": "src/tmc_ligands.py",
+          "sha": "981448dc84e9a4d3109f717261529cac799ce4c6",
+          "size": 16681
+        },
+        {
+          "path": "src/tmc_sets.py",
+          "sha": "a97ab868052f6f5ca568c132a3df3851d8cb89b2",
+          "size": 30812
+        }
+      ],
+      "not_mirrored": [
+        {
+          "path": ".nojekyll",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "size": 0
+        },
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
+          "path": "tmc_learn.html",
+          "sha": "19afea255c7b539abf366bac6a0c1f5db9b67510",
+          "size": 1244193
+        }
+      ],
+      "all_upstream_files": [
+        {
+          "path": ".gitignore",
+          "sha": "c901c60ad36de95c9ac7f06b7ed31d0eedb8a6d2",
+          "size": 27
+        },
+        {
+          "path": ".nojekyll",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "size": 0
+        },
+        {
+          "path": "CITATION.cff",
+          "sha": "db1a1bc9a4b94e0bea0e1070e655def58f564cc8",
+          "size": 641
+        },
+        {
+          "path": "LICENSE",
+          "sha": "21692fd88d3b28414d5999d9f024e9dfb567965a",
+          "size": 1083
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "d6778c02825b4bd2ba2159a15bb546902ca93923",
+          "size": 1341
+        },
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
+          "path": "README.md",
+          "sha": "ebbee7f27a4675ee4108c1687be15202dad21ea6",
+          "size": 5033
+        },
+        {
+          "path": "src/build.py",
+          "sha": "33b28e6ecb96c1cbeeeb58b8196647badd63b29c",
+          "size": 33769
+        },
+        {
+          "path": "src/template.html",
+          "sha": "7a117047ae2001fa211a126cf9d8224879dbb498",
+          "size": 120687
+        },
+        {
+          "path": "src/tmc_count.py",
+          "sha": "e1a4ae9a27c4b878f00ae9963ec4124b5a8bcdd6",
+          "size": 2977
+        },
+        {
+          "path": "src/tmc_ligands.py",
+          "sha": "981448dc84e9a4d3109f717261529cac799ce4c6",
+          "size": 16681
+        },
+        {
+          "path": "src/tmc_sets.py",
+          "sha": "a97ab868052f6f5ca568c132a3df3851d8cb89b2",
+          "size": 30812
+        },
+        {
+          "path": "tmc_learn.html",
+          "sha": "19afea255c7b539abf366bac6a0c1f5db9b67510",
+          "size": 1244193
+        }
+      ]
+    },
+    {
+      "repository": "ChemTrain/reactivity-learn",
+      "revision": "be6505465d92fc983aabc40bd9863de791b0d2cf",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "notes": "Experimental values may require original source references. Read LICENSE-CONTENT.md.",
+      "source_file_count": 6,
+      "source_bytes": 967163,
+      "mirrored_files": [
+        {
+          "path": "CITATION.cff",
+          "sha": "23c6ae3e281092dd3cfb582a6a9fb0bd44925b4d",
+          "size": 720
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+          "size": 1090
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "b1392cba296c88644742175533500dcd2ffd106a",
+          "size": 1483
+        },
+        {
+          "path": "reactivity_learn.html",
+          "sha": "9779b9167ff4af2445a1efe845db3119928f6d12",
+          "size": 940936
+        },
+        {
+          "path": "README.md",
+          "sha": "7374f9f1b8bba7fc4b4dedfe8c815d22f7129577",
+          "size": 4094
+        }
+      ],
+      "not_mirrored": [
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        }
+      ],
+      "all_upstream_files": [
+        {
+          "path": "CITATION.cff",
+          "sha": "23c6ae3e281092dd3cfb582a6a9fb0bd44925b4d",
+          "size": 720
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+          "size": 1090
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "b1392cba296c88644742175533500dcd2ffd106a",
+          "size": 1483
+        },
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
+          "path": "reactivity_learn.html",
+          "sha": "9779b9167ff4af2445a1efe845db3119928f6d12",
+          "size": 940936
+        },
+        {
+          "path": "README.md",
+          "sha": "7374f9f1b8bba7fc4b4dedfe8c815d22f7129577",
+          "size": 4094
+        }
+      ]
+    },
+    {
+      "repository": "ChemTrain/photoredox-learn",
+      "revision": "260cf0553b42fc510de655d68bad902af7f94e38",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "notes": "Experimental values may require original source references. Read LICENSE-CONTENT.md.",
+      "source_file_count": 6,
+      "source_bytes": 741305,
+      "mirrored_files": [
+        {
+          "path": "CITATION.cff",
+          "sha": "b70a5394b33e04fb78b31ae90de5531503af6470",
+          "size": 676
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+          "size": 1090
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "03a3851d5f826d709b5e31f0718e102363fa6860",
+          "size": 1382
+        },
+        {
+          "path": "photoredox_learn.html",
+          "sha": "5351d56c165fd581edbc66e71f80c3a42bcdb738",
+          "size": 715396
+        },
+        {
+          "path": "README.md",
+          "sha": "77af6819b7b9e4ae840d72bd16436edbf2dce466",
+          "size": 3921
+        }
+      ],
+      "not_mirrored": [
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        }
+      ],
+      "all_upstream_files": [
+        {
+          "path": "CITATION.cff",
+          "sha": "b70a5394b33e04fb78b31ae90de5531503af6470",
+          "size": 676
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+          "size": 1090
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "03a3851d5f826d709b5e31f0718e102363fa6860",
+          "size": 1382
+        },
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
+          "path": "photoredox_learn.html",
+          "sha": "5351d56c165fd581edbc66e71f80c3a42bcdb738",
+          "size": 715396
+        },
+        {
+          "path": "README.md",
+          "sha": "77af6819b7b9e4ae840d72bd16436edbf2dce466",
+          "size": 3921
+        }
+      ]
+    },
+    {
+      "repository": "ChemTrain/radical-learn",
+      "revision": "a1c6d4cb567db370fec10a2f258048f7e89f466c",
+      "code_license": "MIT",
+      "content_license": "CC BY 4.0",
+      "notes": "Experimental values may require original source references. Read LICENSE-CONTENT.md.",
+      "source_file_count": 6,
+      "source_bytes": 291243,
+      "mirrored_files": [
+        {
+          "path": "CITATION.cff",
+          "sha": "96782a5c2106165b7782a51f9475fb8adce0f24a",
+          "size": 686
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+          "size": 1090
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "dcc63233d386b460db6aefe60c1086fc15c865e9",
+          "size": 1108
+        },
+        {
+          "path": "radical_learn.html",
+          "sha": "7a81ac8756d00a0bd2f759f08b5c217e136e7937",
+          "size": 266770
+        },
+        {
+          "path": "README.md",
+          "sha": "ce9fe18bd67a77cf776d0913d4ceb5a93be84a33",
+          "size": 2749
+        }
+      ],
+      "not_mirrored": [
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        }
+      ],
+      "all_upstream_files": [
+        {
+          "path": "CITATION.cff",
+          "sha": "96782a5c2106165b7782a51f9475fb8adce0f24a",
+          "size": 686
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f12f837df6513709d7d6e8234f9d9427d81d1627",
+          "size": 1090
+        },
+        {
+          "path": "LICENSE-CONTENT.md",
+          "sha": "dcc63233d386b460db6aefe60c1086fc15c865e9",
+          "size": 1108
+        },
+        {
+          "path": "logo.svg",
+          "sha": "dbc861b49ac02cc1d05905862c9bf89f07ad48d7",
+          "size": 18840
+        },
+        {
+          "path": "radical_learn.html",
+          "sha": "7a81ac8756d00a0bd2f759f08b5c217e136e7937",
+          "size": 266770
+        },
+        {
+          "path": "README.md",
+          "sha": "ce9fe18bd67a77cf776d0913d4ceb5a93be84a33",
+          "size": 2749
+        }
+      ]
+    }
+  ]
+}
