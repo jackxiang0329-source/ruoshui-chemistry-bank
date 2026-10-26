@@ -16,3 +16,6 @@ jobs:
           node-version: '22'
       - run: npm run check
       - run: npm test
+      - run: npm run audit:imports
+      - run: npm run audit:structure
+      - run: npm run manifest

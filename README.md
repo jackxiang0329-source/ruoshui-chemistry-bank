@@ -58,3 +58,9 @@ npm run manifest
 ```
 
 自动去重按题干/化合物键消除精确重复，不宣称检测了不同语言的语义同题、结构异构体与同一化学知识点的多种表达。
+
+## 第二轮结构质检
+
+新增 `npm run audit:structure` 检查上游相同 SMILES 的同义名与不同化学实体风险。已为石墨/金刚石/甲烷、三种二糖错误共用的 SMILES 建立六条阻断记录，详见 [结构质检](imports/STRUCTURAL-QA.md) 与 [人工复核清单](imports/review-holds.json)。它们仍保留于隔离数据而非直接删除。
+
+`ChemIQ` 的 200 道 `smiles_to_iupac` 题，`answer` 是供 OPSIN 评分的 SMILES，不是可直接展示的 IUPAC 化学名称。
