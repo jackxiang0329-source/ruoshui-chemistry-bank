@@ -1,0 +1,22 @@
+{
+  "name": "parametric-question-engine",
+  "version": "1.0.0",
+  "description": "Parametric, solver-verified generator for DAT-style Quantitative Reasoning and General Chemistry questions.",
+  "type": "module",
+  "scripts": {
+    "test": "node chem/selftest.mjs",
+    "build:quant": "node quant/build.js",
+    "build:chem": "node chem/build.js",
+    "build": "node quant/build.js && node chem/build.js"
+  },
+  "keywords": [
+    "question-generation",
+    "test-prep",
+    "dat",
+    "quantitative-reasoning",
+    "chemistry",
+    "procedural-generation"
+  ],
+  "author": "Arya Mehta",
+  "license": "MIT"
+}
