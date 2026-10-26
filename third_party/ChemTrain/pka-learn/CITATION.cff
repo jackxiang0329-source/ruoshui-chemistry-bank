@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use pKa Learn in teaching or research, please cite it as below."
+title: "pKa Learn"
+type: software
+authors:
+  - family-names: Bindschaedler
+    given-names: Quentin
+    affiliation: ChemTrain
+abstract: "A Quizlet-style trainer for the pKa values of organic acids and bases, in one HTML file."
+url: "https://chemtrain.github.io/pka-learn/pka_learn.html"
+repository-code: "https://github.com/ChemTrain/pka-learn"
+license:
+  - MIT
+  - CC-BY-4.0
+date-released: 2026-10-20
+keywords:
+  - pKa
+  - acids and bases
+  - organic chemistry
+  - chemistry education

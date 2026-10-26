@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use ChemTrain Daily in teaching or research, please cite it as below, together with the apps its questions come from."
+title: "ChemTrain Daily"
+type: software
+authors:
+  - family-names: Bindschaedler
+    given-names: Quentin
+    affiliation: ChemTrain
+abstract: "A daily chemistry quiz and an endless beast mode built from the questions of the ChemTrain apps, in one HTML file."
+url: "https://chemtrain.github.io/chemtrain-daily/chemtrain_daily.html"
+repository-code: "https://github.com/ChemTrain/chemtrain-daily"
+license:
+  - MIT
+  - CC-BY-4.0
+date-released: 2026-10-21
+keywords:
+  - chemistry education
+  - daily quiz
+  - organic chemistry
+  - organometallic chemistry
