@@ -1,0 +1,42 @@
+name: Chemistry source harvest (30 min)
+on:
+  schedule:
+    - cron: "17,47 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: chemistry-harvest-main
+  cancel-in-progress: false
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Check out default branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verify collector
+        run: node --test tests/harvest.test.mjs
+      - name: Search GitHub chemistry repositories
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/harvest-chemistry-sources.mjs
+      - name: Import license-approved question records
+        run: node scripts/import-approved-chemistry.mjs
+      - name: Commit only real additions or changes
+        run: |
+          git add harvest/source_candidates.json data/candidates
+          if git diff --cached --quiet; then
+            echo "No new candidates or approved questions."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(chemistry): update harvested sources and vetted candidates [skip ci]"
+          git push origin HEAD:main

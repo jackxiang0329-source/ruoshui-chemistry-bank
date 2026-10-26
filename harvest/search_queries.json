@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "queries": [
+    "inorganic chemistry problems in:name,description,readme",
+    "organic chemistry question bank in:name,description,readme",
+    "analytical chemistry exercises in:name,description,readme",
+    "physical chemistry problems in:name,description,readme",
+    "chemistry quiz questions in:name,description,readme",
+    "chemistry educational dataset in:name,description,readme",
+    "化学 题库 in:name,description,readme",
+    "化学 习题 in:name,description,readme"
+  ],
+  "per_query": 10,
+  "max_catalog_entries": 2000
+}
