@@ -26,3 +26,17 @@
 - [源码逐文件 SHA 核验脚本](scripts/audit-upstream-vendor.mjs)
 
 这些源码与待审外部题目数据不同，尚未作为本项目生产 API 的可运行模块。完整去重数据与题库质检工作保留在 Draft PR #1。
+
+## 可运行的开源题库练习适配器（待审预览）
+
+已基于原版 chemquiz 化合物目录建立独立 JavaScript 出题/判分模块（不修改原版 Rust 源码）。原始 301 个顶层条目去重 28、隔离 6 条结构风险后，余 **267 条待审核练习候选**。目前只支持无机/有机英文名称与化学式识别；分析和物理化学待原创计算题模块，不能伪称已经完成。
+
+```bash
+npm run audit:vendor
+npm test
+npm run practice:preview -- --discipline=organic --count=10 --seed=20261026
+```
+
+运行结果生成在被 Git 忽略的 `.tmp/chemistry-practice/`，学生卷与教师答案卷分别保存。**未通过专业化学审核，不得自动发布至网站或作为正式考试。**
+
+详见 [练习适配器与三千弱水接口说明](docs/CHEMISTRY_PRACTICE_INTEGRATION.md)。
