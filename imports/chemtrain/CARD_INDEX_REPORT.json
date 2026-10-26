@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-26",
+  "raw_card_records": 636,
+  "unique_metadata_cards": 587,
+  "duplicate_metadata_cards": 49,
+  "by_source": {
+    "pka-learn": 253,
+    "reactivity-learn": 240,
+    "photoredox-learn": 143
+  },
+  "excluded_fields": [
+    "value",
+    "sN",
+    "potential",
+    "numeric_measured_properties",
+    "molecule_structure_svg"
+  ],
+  "note": "Cards are reference-data metadata, not new quiz questions. Mayr/pKa/redox measured values are excluded because original literature rights are separate.",
+  "publication_count": 0
+}
