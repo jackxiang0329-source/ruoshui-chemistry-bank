@@ -66,3 +66,25 @@ test('numerical answer verification honors tolerances and units rather than gues
   assert.throws(() => gradeNumerical({expected:1,submitted:NaN}), /finite/);
   assert.throws(() => gradeNumerical({expected:1,submitted:1,absTolerance:-1}), /Tolerances/);
 });
+
+test('regression: 16 deterministic cases × 40 questions × 6 options', () => {
+  for (const track of ['inorganic', 'organic']) {
+    for (const mode of ['name_to_formula', 'formula_to_name']) {
+      for (const seed of [1, 42, 20261026, 4294967295]) {
+        const cfg = { track, mode, count: 40, optionCount: 6, seed };
+        const a = previewFromVendor(cfg);
+        const b = previewFromVendor(cfg);
+        assert.deepEqual(a, b);
+        const signatures = mode === 'name_to_formula'
+          ? a.teacher.answers.map(x => x.correct_answer)
+          : a.student.questions.map(x => x.prompt);
+        assert.equal(new Set(signatures).size, 40);
+        assert.equal(new Set(a.student.questions.map(x => x.id)).size, 40);
+        assert.ok(a.student.questions.every(x => x.options.length === 6 && new Set(x.options).size === 6));
+        assert.ok(!JSON.stringify(a.student).includes('correct_index'));
+        const submissions = Object.fromEntries(a.teacher.answers.map(x => [x.id,x.correct_index]));
+        assert.equal(gradeChoices(a.student, a.teacher, submissions).score_percent, 100);
+      }
+    }
+  }
+});
