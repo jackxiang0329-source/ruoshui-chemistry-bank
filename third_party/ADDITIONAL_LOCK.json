@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "created": "2026-10-26",
+  "sources": [
+    {
+      "repo": "geemi725/ChemLit-QA",
+      "commit": "c50a9330c67e9cf8579edf55f0f1ecdb60e6f7d6",
+      "path": "third_party/ChemLit-QA",
+      "title": "Expert-reviewed chemical literature Q&A",
+      "declared_count": 1025,
+      "license": "MIT repository, underlying journal excerpts subject to original article terms",
+      "status": "source_snapshot_benchmark_quarantine"
+    },
+    {
+      "repo": "gluonMaster/chemie-eroberung",
+      "commit": "93149a58f9e73d059f087eff0b15a053ec1743b1",
+      "path": "third_party/chemie-eroberung",
+      "title": "Grade 8 German-Russian chemistry exercise engine",
+      "declared_count": 55,
+      "license": "MIT code; question text redistributability separately review",
+      "status": "source_snapshot_not_undergraduate_question_bank"
+    }
+  ],
+  "safeguards": {
+    "data_not_counted_as_published": true,
+    "chemLit_split_counts": "1025 full entries = 814 train + 211 test; do not triple count",
+    "chemLit_paper_copyright": "original passages and contexts must be individually cleared; MIT repository license not enough",
+    "chemie_level": "German grade 8 school; not undergraduate four chemistry",
+    "run": "git submodule update --init --recursive"
+  }
+}

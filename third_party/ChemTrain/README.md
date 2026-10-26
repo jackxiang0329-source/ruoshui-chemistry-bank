@@ -59,3 +59,8 @@ node scripts/audit-chemtrain-submodules.mjs
 ```
 
 若 Git 子模块尚未初始化，脚本明确失败并提醒运行 `git submodule update --init --recursive`。禁止凭空声明验证通过。
+
+
+## 其他新增独立源码
+
+同时另行锁定 ChemLit-QA（1025 条文献 QA 的原项目，论文原文内容需要核权）和 chemie-eroberung（55 道德语/俄语八年级练习，非本科题库）。详见 [其他源码许可说明](../ADDITIONAL_SOURCES.md)，均不计入本仓库正式发布题库。
