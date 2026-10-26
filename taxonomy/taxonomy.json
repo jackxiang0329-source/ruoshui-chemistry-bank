@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "tracks": [
+    {
+      "id": "inorganic",
+      "label": "无机化学",
+      "chapters": [
+        {
+          "code": "INORG.ATOMIC",
+          "label": "原子结构与周期律"
+        },
+        {
+          "code": "INORG.BONDING",
+          "label": "化学键与分子结构"
+        },
+        {
+          "code": "INORG.EQUILIBRIUM",
+          "label": "无机反应与溶液平衡"
+        },
+        {
+          "code": "INORG.COORDINATION",
+          "label": "配位化学与晶体场"
+        },
+        {
+          "code": "INORG.ELEMENTS",
+          "label": "元素化学与固体结构"
+        }
+      ]
+    },
+    {
+      "id": "analytical",
+      "label": "分析化学",
+      "chapters": [
+        {
+          "code": "ANAL.STATS",
+          "label": "误差、统计与数据处理"
+        },
+        {
+          "code": "ANAL.ACIDBASE",
+          "label": "酸碱滴定与缓冲"
+        },
+        {
+          "code": "ANAL.COMPLEX",
+          "label": "配位滴定"
+        },
+        {
+          "code": "ANAL.REDOX",
+          "label": "氧化还原分析"
+        },
+        {
+          "code": "ANAL.PRECIP",
+          "label": "沉淀与重量分析"
+        },
+        {
+          "code": "ANAL.INSTRUMENT",
+          "label": "光谱、色谱与电分析"
+        }
+      ]
+    },
+    {
+      "id": "physical",
+      "label": "物理化学",
+      "chapters": [
+        {
+          "code": "PHYS.THERMO",
+          "label": "热力学基本定律"
+        },
+        {
+          "code": "PHYS.PHASE",
+          "label": "相平衡与多组分体系"
+        },
+        {
+          "code": "PHYS.CHEMEQ",
+          "label": "化学平衡"
+        },
+        {
+          "code": "PHYS.ELECTRO",
+          "label": "电化学"
+        },
+        {
+          "code": "PHYS.KINETICS",
+          "label": "化学动力学"
+        },
+        {
+          "code": "PHYS.STAT",
+          "label": "统计热力学与表面化学"
+        }
+      ]
+    },
+    {
+      "id": "organic",
+      "label": "有机化学",
+      "chapters": [
+        {
+          "code": "ORG.STEREO",
+          "label": "构象与立体化学"
+        },
+        {
+          "code": "ORG.SUBSTITUTION",
+          "label": "亲核取代与消除"
+        },
+        {
+          "code": "ORG.ADDITION",
+          "label": "烯炔加成与氧化还原"
+        },
+        {
+          "code": "ORG.CARBONYL",
+          "label": "羰基化学"
+        },
+        {
+          "code": "ORG.AROMATIC",
+          "label": "芳香性与取代"
+        },
+        {
+          "code": "ORG.PERICYCLIC",
+          "label": "周环反应"
+        },
+        {
+          "code": "ORG.SPECTROSCOPY",
+          "label": "波谱分析"
+        },
+        {
+          "code": "ORG.SYNTHESIS",
+          "label": "多步有机合成"
+        }
+      ]
+    }
+  ]
+}
