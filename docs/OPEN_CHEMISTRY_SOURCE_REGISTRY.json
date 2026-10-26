@@ -1,0 +1,147 @@
+{
+  "updated": "2026-10-26",
+  "repo": "jackxiang0329-source/ruoshui-chemistry-bank",
+  "policy": "public provenance-only registry; original review quarantines remain on separate draft PRs",
+  "sources": [
+    {
+      "group": "main_source_mirror",
+      "repo": "bem130/chemquiz",
+      "status": "99 source files mirrored into main",
+      "questions": "301 raw, 273 internal dedup candidates on PR #1"
+    },
+    {
+      "group": "main_source_mirror",
+      "repo": "oxpig/ChemIQ",
+      "status": "9 selected source notebooks/Python mirrored into main",
+      "questions": "816 raw, 814 internal dedup on PR #1"
+    },
+    {
+      "group": "source_and_dedup_PR6",
+      "repo": "Taikutsu-Lyrz/Afghanistan-kankoor-exam-dataset",
+      "status": "raw 915 rows and 60 unique on Draft PR #6",
+      "questions": "60 unique (855 duplicates)"
+    },
+    {
+      "group": "source_and_dedup_PR6",
+      "repo": "MuzaPro/Organic-Chemistry-Quiz-JS",
+      "status": "partial JS source and 8 JSON datasets on Draft PR #6",
+      "questions": "22 unique / 50 raw; four answer conflict groups"
+    },
+    {
+      "group": "source_gitlink_PR8",
+      "repo": "ChemTrain/chemtrain-daily",
+      "status": "pinned source gitlink; not fully checked out here",
+      "questions": "README estimates ~2900 question instances; overlaps all seven child projects"
+    },
+    {
+      "group": "source_gitlink_PR8",
+      "repo": "ChemTrain/pka-learn",
+      "status": "pinned submodule; title/source rights checked, question extraction pending",
+      "questions": "not independently counted; overlaps daily"
+    },
+    {
+      "group": "source_gitlink_PR8",
+      "repo": "ChemTrain/reaction-learn",
+      "status": "pinned submodule; title/source rights checked, question extraction pending",
+      "questions": "not independently counted; overlaps daily"
+    },
+    {
+      "group": "source_gitlink_PR8",
+      "repo": "ChemTrain/pg-learn",
+      "status": "pinned submodule; title/source rights checked, question extraction pending",
+      "questions": "not independently counted; overlaps daily"
+    },
+    {
+      "group": "source_gitlink_PR8",
+      "repo": "ChemTrain/tmc-learn",
+      "status": "pinned submodule; title/source rights checked, question extraction pending",
+      "questions": "not independently counted; overlaps daily"
+    },
+    {
+      "group": "source_gitlink_PR8",
+      "repo": "ChemTrain/reactivity-learn",
+      "status": "pinned submodule; title/source rights checked, question extraction pending",
+      "questions": "not independently counted; overlaps daily"
+    },
+    {
+      "group": "source_gitlink_PR8",
+      "repo": "ChemTrain/photoredox-learn",
+      "status": "pinned submodule; title/source rights checked, question extraction pending",
+      "questions": "not independently counted; overlaps daily"
+    },
+    {
+      "group": "source_gitlink_PR8",
+      "repo": "ChemTrain/radical-learn",
+      "status": "pinned submodule; title/source rights checked, question extraction pending",
+      "questions": "not independently counted; overlaps daily"
+    },
+    {
+      "group": "source_gitlink_PR8",
+      "repo": "geemi725/ChemLit-QA",
+      "status": "full source gitlink; article-excerpt rights require source-article verification",
+      "questions": "1025 main, consisting of 814 train + 211 test; do not add splits"
+    },
+    {
+      "group": "source_gitlink_PR8",
+      "repo": "gluonMaster/chemie-eroberung",
+      "status": "full source gitlink; content rights still review",
+      "questions": "55 German grade-8 questions; not university-level"
+    },
+    {
+      "group": "benchmark_gitlink_PR8",
+      "repo": "idavidrein/gpqa",
+      "status": "pinned GPQA source benchmark; held out and not used for exam generation",
+      "questions": "448 in mixed chemistry, physics and biology, not 448 chemistry-only"
+    }
+  ],
+  "not_bulk_imported": [
+    {
+      "source": "Bocklitz-Lab/ChemQuests",
+      "state": "Hugging Face gated, explicit terms and login needed",
+      "reported_count": 952,
+      "claimed_license": "CC BY 4.0",
+      "action": "no unauthorized download; wait for authenticated user acceptance"
+    },
+    {
+      "source": "nvidia/Nemotron-Science-v1",
+      "state": "open CC BY 4.0 but ~2.5 GB HF dataset not downloaded",
+      "reported_count": 52179,
+      "action": "use separately staged object storage / selective RQA once download and review are supported"
+    },
+    {
+      "source": "lamalab-org/chembench",
+      "state": "~590 MB Git repository; code MIT, full benchmark-content rights distinct",
+      "action": "benchmark holdout; do not bulk ingest without dataset license and contamination plan"
+    },
+    {
+      "source": "openwebwork/webwork-open-problem-library",
+      "state": "~1.1 GB Git repository; code/data licenses vary, default CC BY-NC-SA",
+      "action": "per-exercise license audit before redistribution; no bulk mirrored copy"
+    },
+    {
+      "source": "microsoft/chemistry-qa",
+      "state": "ChemistryQA ~4500 Socratic-origin questions with restrictive computational-only agreement",
+      "action": "link/reference only, not verbatim repost"
+    },
+    {
+      "source": "ChemTrain third-party measurements",
+      "state": "pKa/Mayr/redox measurements not part of CC BY 4.0 data grant",
+      "action": "exclude raw data from extracted public exam releases; cite source papers"
+    },
+    {
+      "source": "dhrubo326/synapse-questions",
+      "state": "explicit proprietary question content despite repo availability",
+      "action": "do not copy questions"
+    }
+  ],
+  "totals": {
+    "preexisting_external_unique_within_source": 1169,
+    "chemtrain_eight_source_gitlinks": 8,
+    "additional_source_gitlinks": 2,
+    "benchmark_gitlinks": 1,
+    "new_gitlinks_total": 11,
+    "formal_published_questions": 0,
+    "chemtrain_count_estimate_not_added": true,
+    "chemlit_train_test_not_added_twice": true
+  }
+}
