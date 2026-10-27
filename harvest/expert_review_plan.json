@@ -17,10 +17,13 @@
   "multi_variant_clusters": 56,
   "multi_variant_candidates": 356,
   "flag_counts": {
+    "conceptual_answer_requires_expert_validation": 14,
+    "item_level_rights_human_confirmation_pending": 21,
     "numerical_answer_requires_scientific_review": 315,
     "semantic_duplicate_review_pending": 887,
     "source_question_rights_not_explicitly_verified": 21,
-    "study_card_not_exam_question": 278
+    "study_card_not_exam_question": 278,
+    "upstream_answer_key_requires_reconciliation": 13
   },
   "requested_representatives_per_subject": 32,
   "max_representatives_per_topic": 6,
@@ -564,22 +567,6 @@
     },
     {
       "subject": "physical",
-      "topic": "baseball_debroglie_wavelength",
-      "source": "PaulWAyers/IntroQChemProblems",
-      "representative_id": "b11d673f02d4192acce162afcd79a8af808be969b00af39d02e12ff00213e178",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
-      ],
-      "review_priority_score": 45,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
       "topic": "complex_conjugate_tdse",
       "source": "PaulWAyers/IntroQChemProblems",
       "representative_id": "d96cfd62e66676b18cb95ac3c104e33a1ea584e6107534229fc197deda67ab65",
@@ -587,10 +574,13 @@
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
       "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
         "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
+        "source_question_rights_not_explicitly_verified",
+        "upstream_answer_key_requires_reconciliation"
       ],
-      "review_priority_score": 45,
+      "review_priority_score": 97,
       "approved_for_publication": false
     },
     {
@@ -602,10 +592,13 @@
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
       "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
         "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
+        "source_question_rights_not_explicitly_verified",
+        "upstream_answer_key_requires_reconciliation"
       ],
-      "review_priority_score": 45,
+      "review_priority_score": 97,
       "approved_for_publication": false
     },
     {
@@ -617,40 +610,13 @@
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
       "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
         "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
+        "source_question_rights_not_explicitly_verified",
+        "upstream_answer_key_requires_reconciliation"
       ],
-      "review_priority_score": 45,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "davisson_germer_electron_waves",
-      "source": "PaulWAyers/IntroQChemProblems",
-      "representative_id": "e1bb0885352fcd15e0c5ddf89a9c4dba7907a650f0c9b6bae7ac1c12f2d36289",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
-      ],
-      "review_priority_score": 45,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "electron_diffraction_bragg_scattering",
-      "source": "PaulWAyers/IntroQChemProblems",
-      "representative_id": "8164126f3aba3ba661701515c173715bfefd0853aed3d9148ec721605171804b",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
-      ],
-      "review_priority_score": 45,
+      "review_priority_score": 97,
       "approved_for_publication": false
     },
     {
@@ -662,73 +628,13 @@
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
       "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
         "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
+        "source_question_rights_not_explicitly_verified",
+        "upstream_answer_key_requires_reconciliation"
       ],
-      "review_priority_score": 45,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "gamma_radiation_molar_energy",
-      "source": "PaulWAyers/IntroQChemProblems",
-      "representative_id": "de83f56dca4823f0bd602523b583a05c0fe5a3d3b38ea7db644befe0b245bd6c",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
-      ],
-      "review_priority_score": 45,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "hamiltonian_total_energy",
-      "source": "PaulWAyers/IntroQChemProblems",
-      "representative_id": "8d2a050ecc9e6a1d528a97e7cddac4d4ec7bad153d4433a2e5a0ea315145b8de",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
-      ],
-      "review_priority_score": 45,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "hene_single_photon_energy",
-      "source": "PaulWAyers/IntroQChemProblems",
-      "representative_id": "ad2354eb1c4d14068958af1d9c913b9ec43256af16c3209ac83da79ed73b5a78",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
-      ],
-      "review_priority_score": 45,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "hydrogen_ground_state_first_absorption",
-      "source": "PaulWAyers/IntroQChemProblems",
-      "representative_id": "c42186399c09bacb27661d048bc63188ffa5c34c03db5700b9fc5de294be80da",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
-      ],
-      "review_priority_score": 45,
+      "review_priority_score": 97,
       "approved_for_publication": false
     },
     {
@@ -740,26 +646,13 @@
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
       "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
         "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
+        "source_question_rights_not_explicitly_verified",
+        "upstream_answer_key_requires_reconciliation"
       ],
-      "review_priority_score": 45,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "photon_angular_wavenumber",
-      "source": "PaulWAyers/IntroQChemProblems",
-      "representative_id": "fb1333cad667c2a972e4c6a21bc172bf5bf06a56457bad380cb8d09e766a8fdf",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
-      ],
-      "review_priority_score": 45,
+      "review_priority_score": 97,
       "approved_for_publication": false
     },
     {
@@ -771,26 +664,13 @@
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
       "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
         "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
+        "source_question_rights_not_explicitly_verified",
+        "upstream_answer_key_requires_reconciliation"
       ],
-      "review_priority_score": 45,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "photon_frequency_500nm",
-      "source": "PaulWAyers/IntroQChemProblems",
-      "representative_id": "668a04afe6a32bcf53171d3f8b08cbb421b06841cb49fc9ad62705a476503734",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
-      ],
-      "review_priority_score": 45,
+      "review_priority_score": 97,
       "approved_for_publication": false
     },
     {
@@ -802,10 +682,13 @@
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
       "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
         "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
+        "source_question_rights_not_explicitly_verified",
+        "upstream_answer_key_requires_reconciliation"
       ],
-      "review_priority_score": 45,
+      "review_priority_score": 97,
       "approved_for_publication": false
     },
     {
@@ -817,41 +700,13 @@
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
       "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
         "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
+        "source_question_rights_not_explicitly_verified",
+        "upstream_answer_key_requires_reconciliation"
       ],
-      "review_priority_score": 45,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "photon_radiation_pressure_force",
-      "source": "PaulWAyers/IntroQChemProblems",
-      "representative_id": "4f119aa48851bf6449f9278833c914846e9f89da7941e6e5009520ffc3ccdeef",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
-      ],
-      "review_priority_score": 45,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "photon_wavelength_frequency_scaling",
-      "source": "PaulWAyers/IntroQChemProblems",
-      "representative_id": "6c3ce0d45c6c4e1bc3a4c42e14bdb4220fd69bc649a5e43bfe75ba3ff4d9eeb8",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
-      ],
-      "review_priority_score": 45,
+      "review_priority_score": 97,
       "approved_for_publication": false
     },
     {
@@ -863,10 +718,13 @@
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
       "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
         "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified"
+        "source_question_rights_not_explicitly_verified",
+        "upstream_answer_key_requires_reconciliation"
       ],
-      "review_priority_score": 45,
+      "review_priority_score": 97,
       "approved_for_publication": false
     },
     {
@@ -878,10 +736,203 @@
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
       "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified",
+        "upstream_answer_key_requires_reconciliation"
+      ],
+      "review_priority_score": 97,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "gamma_radiation_molar_energy",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "de83f56dca4823f0bd602523b583a05c0fe5a3d3b38ea7db644befe0b245bd6c",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "item_level_rights_human_confirmation_pending",
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified",
+        "upstream_answer_key_requires_reconciliation"
+      ],
+      "review_priority_score": 85,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "hydrogen_ground_state_first_absorption",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "c42186399c09bacb27661d048bc63188ffa5c34c03db5700b9fc5de294be80da",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "item_level_rights_human_confirmation_pending",
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified",
+        "upstream_answer_key_requires_reconciliation"
+      ],
+      "review_priority_score": 85,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "photon_radiation_pressure_force",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "4f119aa48851bf6449f9278833c914846e9f89da7941e6e5009520ffc3ccdeef",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "item_level_rights_human_confirmation_pending",
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified",
+        "upstream_answer_key_requires_reconciliation"
+      ],
+      "review_priority_score": 85,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "davisson_germer_electron_waves",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "e1bb0885352fcd15e0c5ddf89a9c4dba7907a650f0c9b6bae7ac1c12f2d36289",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
         "semantic_duplicate_review_pending",
         "source_question_rights_not_explicitly_verified"
       ],
-      "review_priority_score": 45,
+      "review_priority_score": 72,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "electron_diffraction_bragg_scattering",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "8164126f3aba3ba661701515c173715bfefd0853aed3d9148ec721605171804b",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 72,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "hamiltonian_total_energy",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "8d2a050ecc9e6a1d528a97e7cddac4d4ec7bad153d4433a2e5a0ea315145b8de",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 72,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "photon_wavelength_frequency_scaling",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "6c3ce0d45c6c4e1bc3a4c42e14bdb4220fd69bc649a5e43bfe75ba3ff4d9eeb8",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 72,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "baseball_debroglie_wavelength",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "b11d673f02d4192acce162afcd79a8af808be969b00af39d02e12ff00213e178",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "item_level_rights_human_confirmation_pending",
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 60,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "hene_single_photon_energy",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "ad2354eb1c4d14068958af1d9c913b9ec43256af16c3209ac83da79ed73b5a78",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "item_level_rights_human_confirmation_pending",
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 60,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "photon_angular_wavenumber",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "fb1333cad667c2a972e4c6a21bc172bf5bf06a56457bad380cb8d09e766a8fdf",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "item_level_rights_human_confirmation_pending",
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 60,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "photon_frequency_500nm",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "668a04afe6a32bcf53171d3f8b08cbb421b06841cb49fc9ad62705a476503734",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "item_level_rights_human_confirmation_pending",
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 60,
       "approved_for_publication": false
     },
     {
