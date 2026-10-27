@@ -1,46 +1,46 @@
 {
   "schema_version": 1,
-  "total_candidates": 1723,
-  "corpus_id_hash_sha256": "e892130388aaf0ef8ebf08b62fa188638a1e90fdc317399ec96646ec884e9795",
+  "total_candidates": 1715,
+  "corpus_id_hash_sha256": "6e5cdd681c70ce3550cd26c38d8179deb40026b03e0ae1c29f722a9e5730aa29",
   "by_subject": {
-    "analytical": 197,
-    "inorganic": 851,
+    "analytical": 193,
+    "inorganic": 849,
     "organic": 467,
-    "physical": 208
+    "physical": 206
   },
   "by_content_kind": {
-    "exercise_candidate": 1445,
+    "exercise_candidate": 1437,
     "study_card": 278
   },
-  "topics_total": 107,
-  "template_source_clusters": 1423,
+  "topics_total": 99,
+  "template_source_clusters": 1415,
   "multi_variant_clusters": 56,
   "multi_variant_candidates": 356,
   "flag_counts": {
     "conceptual_answer_requires_expert_validation": 14,
-    "item_level_rights_human_confirmation_pending": 29,
-    "numerical_answer_requires_scientific_review": 323,
-    "semantic_duplicate_review_pending": 895,
-    "source_question_rights_not_explicitly_verified": 29,
+    "item_level_rights_human_confirmation_pending": 21,
+    "numerical_answer_requires_scientific_review": 315,
+    "semantic_duplicate_review_pending": 887,
+    "source_question_rights_not_explicitly_verified": 21,
     "study_card_not_exam_question": 278,
-    "upstream_answer_key_requires_reconciliation": 21
+    "upstream_answer_key_requires_reconciliation": 13
   },
   "requested_representatives_per_subject": 32,
   "max_representatives_per_topic": 6,
-  "selected_representatives": 128,
+  "selected_representatives": 127,
   "selected_by_subject": {
-    "analytical": 32,
+    "analytical": 31,
     "physical": 32,
     "organic": 32,
     "inorganic": 32
   },
   "selected_topics_by_subject": {
-    "analytical": 30,
+    "analytical": 26,
     "physical": 32,
     "organic": 14,
-    "inorganic": 8
+    "inorganic": 6
   },
-  "unselected_candidate_count": 1595,
+  "unselected_candidate_count": 1588,
   "expert_approved_count": 0,
   "publishable_count": 0,
   "source_rights_approved_by_this_process": 0,
@@ -53,78 +53,6 @@
   ],
   "note": "Representative sampling is not exhaustive. Never automatically mark sibling variants as reviewed, publishable, licensed, or chemically verified. All counts and flags are preliminary review priorities.",
   "queue": [
-    {
-      "subject": "analytical",
-      "topic": "concentration_to_solute_mass",
-      "source": "philschatz/chemistry-book",
-      "representative_id": "cdc3d9b20385050f70ce14c1cb970b4f008e1982e09e8e8bfe91069a8b075143",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "item_level_rights_human_confirmation_pending",
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified",
-        "upstream_answer_key_requires_reconciliation"
-      ],
-      "review_priority_score": 85,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "analytical",
-      "topic": "molarity_from_mass_moles_and_hydrates",
-      "source": "philschatz/chemistry-book",
-      "representative_id": "0e4d6a81008b288f9c65b8ee8f58cbb35320db5f8b5050928108f7c0799330fc",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "item_level_rights_human_confirmation_pending",
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified",
-        "upstream_answer_key_requires_reconciliation"
-      ],
-      "review_priority_score": 85,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "analytical",
-      "topic": "pure_water_ph_at_nonstandard_temperature",
-      "source": "philschatz/chemistry-book",
-      "representative_id": "fb6ff3831ba49807ffac632786f83ecd5af0a3e8000f97e715ed8b70bd567ed0",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "item_level_rights_human_confirmation_pending",
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified",
-        "upstream_answer_key_requires_reconciliation"
-      ],
-      "review_priority_score": 85,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "analytical",
-      "topic": "strong_acid_base_ph_poh_with_key_errata",
-      "source": "philschatz/chemistry-book",
-      "representative_id": "d2b529ad378675ed964550367324e2784adc7c7fe4f60b34d6da4284f355aea7",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "item_level_rights_human_confirmation_pending",
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified",
-        "upstream_answer_key_requires_reconciliation"
-      ],
-      "review_priority_score": 85,
-      "approved_for_publication": false
-    },
     {
       "subject": "analytical",
       "topic": "calcium_oxalate_indirect_assay",
@@ -558,6 +486,42 @@
     },
     {
       "subject": "analytical",
+      "topic": "qualitative_cation_analysis",
+      "source": "bem130/chemquiz",
+      "representative_id": "4ce6e6ba5e7b5157408fd6b83d47b2bfe5d50d251ec095cbcac3facabe8e33f3",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [],
+      "review_priority_score": 0,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "analytical",
+      "topic": "qualitative_cation_analysis",
+      "source": "bem130/chemquiz",
+      "representative_id": "63039f088d5521c2592cf1e12d83f87eb6d35fa6932eaf6fa71350184b584dce",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [],
+      "review_priority_score": 0,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "analytical",
+      "topic": "qualitative_cation_analysis",
+      "source": "bem130/chemquiz",
+      "representative_id": "70cc74b50cce06c1ea84a3c262fe97950fccc8bb061c87a886a06fc7095e0899",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [],
+      "review_priority_score": 0,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "analytical",
       "topic": "redox_standardization",
       "source": "PWO-CHINA/Chemistry-Calculator-Toolkit",
       "representative_id": "f5af825eb86fd4e139ae6de8733bfac91f566d75fcede1524845ff47022b1199",
@@ -783,45 +747,9 @@
     },
     {
       "subject": "physical",
-      "topic": "coffee_metal_equilibrium_calorimetry",
-      "source": "philschatz/chemistry-book",
-      "representative_id": "a269f0820696e54de6179fc442df676bf645b39d412730027eab3f67d10e2c94",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "item_level_rights_human_confirmation_pending",
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified",
-        "upstream_answer_key_requires_reconciliation"
-      ],
-      "review_priority_score": 85,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
       "topic": "gamma_radiation_molar_energy",
       "source": "PaulWAyers/IntroQChemProblems",
       "representative_id": "de83f56dca4823f0bd602523b583a05c0fe5a3d3b38ea7db644befe0b245bd6c",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "item_level_rights_human_confirmation_pending",
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified",
-        "upstream_answer_key_requires_reconciliation"
-      ],
-      "review_priority_score": 85,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "hot_cold_water_mixing_calorimetry",
-      "source": "philschatz/chemistry-book",
-      "representative_id": "93748aa78622aa469a7ddf2e38688f1d0a434cc99c46c6433e5eaa36d4b6cdcb",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
@@ -1158,6 +1086,44 @@
       ],
       "resource_type": "exercise_candidate",
       "flags": [],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "eyring_activation_free_energy",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "2dbaa026d2aa37cc61ed9e1c3264bbb6571d95b15ed1f01c79181c94db8cffcb",
+      "candidate_count": 6,
+      "sample_other_ids": [
+        "3ff03fff4089bbb65d0ba68fa9abb3e060092ef540a0d6c4a61235663cd1391b",
+        "98587bb4d39e9bd40b471a5f7ef2ff42df8f048cb8f6c5d990ef41b0a052d084",
+        "b8858b0fdbd278a2047e0d5abdff87976f6bd744fda30422546556d11196d27d"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "harmonic_oscillator_vibrational_spacing",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "2e0b3f51ba18671415e2e411f7877584d2bc4316aa632508ccea8c7d5df14cd4",
+      "candidate_count": 6,
+      "sample_other_ids": [
+        "50a68e25877594a250f1ac77205d57da49adf8fdf359aa66a8a1a2bbe20ccf73",
+        "8e28f80d7f493e8748c3d3b690ce57233c1440e2ca8c9e9646de31d848e6bbdf",
+        "8ed2302988f1a4b5403356f4e7f4d59904b1b30bcc61ce2be969d4414d00cf76"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
       "review_priority_score": 16,
       "approved_for_publication": false
     },
@@ -1569,42 +1535,6 @@
     },
     {
       "subject": "inorganic",
-      "topic": "atomic_mass_counting_from_molecular_formula",
-      "source": "philschatz/chemistry-book",
-      "representative_id": "05b529f2cceebf088a25cbc9a9194768c9332a229bf582311728e9ea4391092e",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "item_level_rights_human_confirmation_pending",
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified",
-        "upstream_answer_key_requires_reconciliation"
-      ],
-      "review_priority_score": 85,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "inorganic",
-      "topic": "molecular_formula_mass_calculation",
-      "source": "philschatz/chemistry-book",
-      "representative_id": "d28df0dc7de735ac48bdbe2e842c1345cdb3919b89f444a4d8174f1b727d3fdb",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "item_level_rights_human_confirmation_pending",
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified",
-        "upstream_answer_key_requires_reconciliation"
-      ],
-      "review_priority_score": 85,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "inorganic",
       "topic": "transition_metal_electron_counting",
       "source": "ChemTrain/tmc-learn",
       "representative_id": "004a2e70d0ca9094ab56559ce1f1053a49838589e93dd9263cb9a1dc086b01ca",
@@ -1667,6 +1597,20 @@
       "candidate_count": 2,
       "sample_other_ids": [
         "d09edd6acd081e7406bf590b68d1ca70de4e7b9936d0b1f3f1fc3b708bb6207f"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "inorganic",
+      "topic": "transition_metal_electron_counting",
+      "source": "ChemTrain/tmc-learn",
+      "representative_id": "20d0b027dbe892f33b92604cfc93c53be574a45b92102971165a076d6f765f98",
+      "candidate_count": 2,
+      "sample_other_ids": [
+        "ac5a51e93608b93888064dfde5d04df03e085ca958d74932358b4637d3cb74f4"
       ],
       "resource_type": "exercise_candidate",
       "flags": [],
@@ -1794,6 +1738,20 @@
       "topic": "coordination_geometry",
       "source": "ChemTrain/chemtrain-daily",
       "representative_id": "0821f29fa9616f34771fb2dbe000c786176300115d01a09bd243cb1da0f47f66",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 0,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "inorganic",
+      "topic": "coordination_geometry",
+      "source": "ChemTrain/chemtrain-daily",
+      "representative_id": "083aa72a4a9736e64fee2f342786f99c8d7f581652371531a2155839c3f8eeec",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",

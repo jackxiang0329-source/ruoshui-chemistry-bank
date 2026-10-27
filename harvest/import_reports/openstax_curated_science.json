@@ -1,14 +1,15 @@
 {
   "schema_version": 1,
-  "source": "OpenStax Chemistry pinned CC BY 3.0 work",
+  "source": "OpenStax Chemistry historical edition",
   "distinct_curated_real_exercises": 8,
-  "newly_added": 0,
-  "previously_present": 8,
+  "chinese_drafts_quarantined": 8,
+  "main_candidates_added": 0,
   "source_answer_errata": 1,
   "original_questions_with_missing_source_answer_solved_independently": 1,
   "computational_checks_passed": 8,
   "expert_approved": 0,
   "item_rights_approved": 0,
   "publishable": 0,
-  "note": "No external archive item auto promoted to exam release. Eight hand-selected fixed English course exercises were independently recomputed and restated in Chinese for further expert and copyright review."
+  "rights_status": "blocked_pending_canonical_edition_specific_reuse_confirmation",
+  "note": "Historical original Chemistry and current Chemistry 2e license terms must not be conflated. All eight corrected Chinese source-derived drafts remain EXTERNAL QUARANTINE ONLY, never automatically written to main candidate data."
 }
