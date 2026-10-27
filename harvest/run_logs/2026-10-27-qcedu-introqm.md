@@ -19,3 +19,10 @@
 - No new third-party exam questions claimed; 3 adapted university course exercises. No expert-approved questions.
 - Remaining: professional chemistry review; cross-source semantic dedup; rights review of existing PR #1 and #5-#9; additional analytical/inorganic/organic sources. Do not import OpenStax Chemistry 2e without resolving contradictory current licensing statements; avoid USNCO/ACS copyrighted problem scans.
 - Errors: upstream notebook output-label typo and one other notebook calculation typo documented above; no source fetch or GitHub write error at time of preparation. CI execution to be verified separately after commit.
+
+## Verified GitHub submission and CI (2026-10-27 10:16 Asia/Shanghai)
+- [Main-branch commit](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/commit/2414e24dc2d12005ee403c997b0e8edb0547670c): GitHub Commit API shows 9 changed paths, including exactly **3 added candidate JSON files**, 1 importer, 1 fixture, 1 test, 1 report, this audit, and the workflow update.
+- After commit, GitHub recursive tree returned **828 candidate JSON files** (previous 825); verified net delta **+3**, all physical chemistry. No existing candidate overwritten.
+- [GitHub Actions run #40437377464](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/actions/runs/40437377464): status **completed / success**, all steps succeeded, including the new QC-Edu test and importer. Importer log: `QC-Edu IntroQM: curated=3; added=0; already_present=3; excluded=2; expert_approved=0`. The zero runtime additions are correct because the three candidates were already committed directly; do not count them again.
+- Automated GitHub discovery: **21 successful requests**, **626 raw hits**, **0 newly discovered unique sources**, **568 → 568** in the catalog; no incomplete search responses. All previously approved importers reported zero new candidates and skipped existing records.
+- Errors in the successful run: **no failing step**. Upstream source notebook inconsistencies remain documented; cross-source semantic dedup and expert approval are still pending.
