@@ -32,6 +32,9 @@ on:
       - "tests/original-physical.test.mjs"
       - "scripts/import-original-physical-variants.mjs"
       - "tests/original-physical-variants.test.mjs"
+      - "scripts/import-dft-course-ez.mjs"
+      - "tests/dft-course-ez.test.mjs"
+      - "harvest/pinned_dft_course_isomers.json"
       - "scripts/import-chemtrain-pg-learn.mjs"
       - "scripts/import-parametric-mit-chemistry.mjs"
       - "tests/parametric-mit-chemistry.test.mjs"
@@ -116,6 +119,8 @@ jobs:
         run: node --test tests/original-physical.test.mjs
       - name: Verify 72 extended original physical chemistry examples
         run: node --test tests/original-physical-variants.test.mjs
+      - name: Test CC BY DFT Course author-table computational chemistry questions
+        run: node --test tests/dft-course-ez.test.mjs
       - name: Verify pinned CC BY 4.0 PG Learn importer
         run: node --test tests/chemtrain-pg-learn.test.mjs
       - name: Verify pinned CC BY 4.0 pKa qualitative practice
@@ -162,6 +167,8 @@ jobs:
         run: node scripts/import-original-physical.mjs
       - name: Generate 72 CC0 physical chemistry calculation variants
         run: node scripts/import-original-physical-variants.mjs
+      - name: Import 12 CC BY original DFT basis set numerical teaching activities
+        run: node scripts/import-dft-course-ez.mjs
       - name: Import pinned CC BY 4.0 PG Learn protecting-group MCQs
         run: node scripts/import-chemtrain-pg-learn.mjs
       - name: Import pinned CC BY 4.0 pKa qualitative comparisons
