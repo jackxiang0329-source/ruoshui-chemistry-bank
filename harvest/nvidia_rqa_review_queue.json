@@ -4,16 +4,16 @@
   "staging_only": true,
   "automatic_approved_questions": 0,
   "all_qa_are_unverified": true,
-  "evaluated_count": 8056,
+  "evaluated_count": 11120,
   "review_queue_size": 125,
   "stats": {
-    "total": 8056,
+    "total": 11120,
     "by_subject": {
-      "analytical": 435,
-      "physical": 1263,
-      "inorganic": 125,
-      "organic": 180,
-      "needs_manual_classification": 6053
+      "analytical": 608,
+      "physical": 1758,
+      "inorganic": 186,
+      "organic": 272,
+      "needs_manual_classification": 8296
     },
     "exact_prompt_collisions_with_formal": 0,
     "invalid_quarantine_records": 0,
