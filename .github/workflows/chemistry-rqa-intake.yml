@@ -6,6 +6,8 @@ on:
       - ".github/workflows/chemistry-rqa-intake.yml"
       - "scripts/stage-nvidia-rqa.mjs"
       - "tests/stage-nvidia-rqa.test.mjs"
+      - "scripts/triage-nvidia-rqa.mjs"
+      - "tests/triage-nvidia-rqa.test.mjs"
       - "harvest/pinned_nvidia_science_rqa.json"
   schedule:
     - cron: "*/5 * * * *"
@@ -33,11 +35,16 @@ jobs:
           node-version: "22"
       - name: Verify license-guarded quarantine transformations
         run: node --test tests/stage-nvidia-rqa.test.mjs
+      - name: Validate reviewer prioritization
+        run: node --test tests/triage-nvidia-rqa.test.mjs
       - name: Pull up to 1600 pinned CC BY chemistry RQA rows into gzip research quarantine
         run: node scripts/stage-nvidia-rqa.mjs
+      - name: Rebuild human QA scientific review shortlist
+        run: node scripts/triage-nvidia-rqa.mjs
       - name: Commit only genuine newly staged research records
         run: |
           if [ -f harvest/nvidia_rqa_state.json ]; then git add -- harvest/nvidia_rqa_state.json; fi
+          if [ -f harvest/nvidia_rqa_review_queue.json ]; then git add -- harvest/nvidia_rqa_review_queue.json; fi
           if [ -d data/research_quarantine/nvidia-rqa ]; then
             git add -- data/research_quarantine/nvidia-rqa
           fi
