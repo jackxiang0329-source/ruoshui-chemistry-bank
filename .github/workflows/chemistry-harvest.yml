@@ -124,23 +124,6 @@ jobs:
         run: node --test tests/original-eis-pyeis.test.mjs
       - name: Validate public dataset metadata intake safety
         run: node --test tests/harvest-public-chemistry.test.mjs
-      - name: Discover sources concurrently on GitHub Hugging Face and Zenodo
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        run: |
-          # Search requests are paced independently; no auth bypass or rate-limit evasion.
-          node scripts/harvest-chemistry-sources.mjs &
-          GITHUB_PID=$!
-          node scripts/harvest-public-chemistry.mjs &
-          EXTERNAL_PID=$!
-          GITHUB_RESULT=0
-          EXTERNAL_RESULT=0
-          wait "$GITHUB_PID" || GITHUB_RESULT=$?
-          wait "$EXTERNAL_PID" || EXTERNAL_RESULT=$?
-          if [ "$GITHUB_RESULT" -ne 0 ]; then exit "$GITHUB_RESULT"; fi
-          if [ "$EXTERNAL_RESULT" -ne 0 ]; then exit "$EXTERNAL_RESULT"; fi
-      - name: Build fast human license review queue from new discoveries
-        run: node scripts/prioritize-chemistry-sources.mjs
       - name: Import license-approved question records
         run: node scripts/import-approved-chemistry.mjs
       - name: Import pinned CC BY 4.0 TMC Learn complex exercises

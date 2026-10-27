@@ -1,0 +1,77 @@
+name: Fast chemistry source discovery (10 min)
+on:
+  schedule:
+    - cron: "4,14,24,34,44,54 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: chemistry-harvest-main
+  cancel-in-progress: false
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check out default branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Synchronize latest default branch
+        run: |
+          git fetch --no-tags origin main
+          git checkout main
+          git reset --hard origin/main
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate source collection and review rules
+        run: |
+          node --test tests/harvest.test.mjs
+          node --test tests/harvest-public-chemistry.test.mjs
+          node --test tests/prioritize-chemistry-sources.test.mjs
+      - name: Run two metadata discovery streams concurrently
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          CHEMISTRY_QUERY_SHARD: auto
+          CHEMISTRY_EXTERNAL_SHARD: auto
+        run: |
+          node scripts/harvest-chemistry-sources.mjs &
+          GH_PID=$!
+          node scripts/harvest-public-chemistry.mjs &
+          EXTERNAL_PID=$!
+          GH_RC=0
+          EXTERNAL_RC=0
+          wait "$GH_PID" || GH_RC=$?
+          wait "$EXTERNAL_PID" || EXTERNAL_RC=$?
+          if [ "$GH_RC" -ne 0 ]; then
+            echo "::error::GitHub discovery failed (exit $GH_RC)"
+            exit "$GH_RC"
+          fi
+          if [ "$EXTERNAL_RC" -ne 0 ]; then
+            echo "::error::External discovery failed (exit $EXTERNAL_RC)"
+            exit "$EXTERNAL_RC"
+          fi
+      - name: Regenerate rights-review priorities (no unapproved question import)
+        run: node scripts/prioritize-chemistry-sources.mjs
+      - name: Commit only changed source metadata and review queue
+        run: |
+          git add -- harvest/source_candidates.json harvest/source_review_queue.json
+          if [ -d harvest/sources ]; then git add -- harvest/sources; fi
+          if [ -f harvest/external_source_catalog.json ]; then
+            git add -- harvest/external_source_catalog.json
+          fi
+          if [ -d harvest/external_sources ]; then
+            git add -- harvest/external_sources
+          fi
+          if git diff --cached --quiet; then
+            echo "No new unique source records; no changes committed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(chemistry): fast discovery metadata [skip ci]"
+          git fetch --no-tags origin main
+          git rebase origin/main
+          git push origin HEAD:main
