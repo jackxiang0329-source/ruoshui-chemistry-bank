@@ -55,8 +55,9 @@
 
 - [Nemotron-Science-v1](https://huggingface.co/datasets/nvidia/Nemotron-Science-v1) 的化学 RQA 分区共有 **52,179** 条模型生成问答，NVIDIA 原始内容声明 CC BY 4.0。
 - [固定数据来源、许可证和容量限制](harvest/pinned_nvidia_science_rqa.json)；[可重复运行的采集器](scripts/stage-nvidia-rqa.mjs)。
-- 每 **5 分钟** 的独立自动流程按页最多读取 **1,600 条**，只储存在 `data/research_quarantine/nvidia-rqa/` 的 JSONL（新批次为 `.jsonl.gz` 压缩）文件内，**最高 12,000 条后停止进一步暂存**。运行可能受 GitHub 排队、网络、API 服务影响而延迟。
+- 每 **5 分钟** 的独立自动流程按页最多读取 **3,200 条**，只储存在 `data/research_quarantine/nvidia-rqa/` 的 JSONL（新批次为 `.jsonl.gz` 压缩）文件内，**最高 20,000 条后停止进一步暂存**。运行可能受 GitHub 排队、网络、API 服务影响而延迟。
 - 这些是 **AI 生成、尚未独立验证答案的研究问答**，不能与 `data/candidates/` 的本科题库候选混为一谈。所有记录具有 `publishable=false`、`exclude_from_official_bank=true` 标记。
+- 当前审计：2026-10-27 已核对 **8,056** 条未验证研究问答，按模型答案和学科启发式形成 [125 条专家优先复核队列](harvest/nvidia_rqa_review_queue.json)，但均不可自动发表；实际最新总量以 [游标状态](harvest/nvidia_rqa_state.json) 为准。
 - [来源、抽取质量与错误记录](harvest/run_logs/2026-10-27-nvidia-research-rqa-intake.md)。
 - [六项 GALILEO 官方 CC BY 4.0 化学 OER 作品级许可预审（本轮题目新增 0）](harvest/run_logs/2026-10-27-uga-oer-rights-review.md)。实际最新数量以 `harvest/nvidia_rqa_state.json` 为准；任何核准进入本科题库的转移都必须另外验算、分类、去重并记录专家审核。
 

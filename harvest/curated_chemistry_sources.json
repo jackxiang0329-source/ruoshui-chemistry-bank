@@ -269,11 +269,11 @@
       "license_owner": "NVIDIA Corporation",
       "rights_status": "Dataset card and each staged row confirm CC BY 4.0; text-only research archive, no AI answer treated as scientifically verified",
       "import_questions": false,
-      "staged_unverified_research_qa_count": 1922,
+      "staged_unverified_research_qa_count": 8056,
       "imported_candidate_count": 0,
       "audit": "harvest/run_logs/2026-10-27-nvidia-research-rqa-intake.md",
-      "quality_note": "Research QA only; machine-generated answer risk, per-question scientific correctness and semantic uniqueness not established; publishable=false and exclude_from_official_bank=true.",
-      "next_action": "Expert-review pending synthetic QAs before moving any scientifically verified entries into the four chemistry subject candidate bank; stop at 5,000 archive cap."
+      "quality_note": "Research-only LLM-generated chemistry QA. 8056 rows staged and 125 prioritized for independent expert review (as of 2026-10-27); no answer is scientifically verified; publishable=false and exclude_from_official_bank=true. See state file for current counts.",
+      "next_action": "Review staged numerical/chemical correctness, rights for referenced third-party text and figures, four-subject fit and cross-source semantic duplicates. Compressed staging is capped at 20k research questions; do not count as formal question bank."
     },
     {
       "source": "Bocklitz-Lab/ChemQuests",
