@@ -61,5 +61,10 @@
     "chemical spectroscopy tutorial in:name,description",
     "open chemistry question dataset in:name,description",
     "lab chemistry training questions in:name,description"
+  ],
+  "ranking_modes": [
+    "updated",
+    "stars",
+    "best_match"
   ]
 }

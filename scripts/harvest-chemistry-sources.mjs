@@ -99,15 +99,22 @@ function writeCatalog(map,stats){
 }
 class BudgetDone extends Error{}
 class QueryError extends Error{}
+export function rankingMode(cfg,atMs=Date.now()){
+  const modes=cfg.ranking_modes||['updated'];
+  if(!Array.isArray(modes)||!modes.length||
+     modes.some(m=>!['updated','stars','best_match'].includes(m)))throw Error('Invalid ranking mode');
+  return modes[Math.floor(atMs/(30*60*1000))%modes.length];
+}
 let lastCall=0,requestCount=0;
-async function api(q,page,cfg,deadline){
+async function api(q,page,cfg,deadline,ranking){
   for(let attempt=0;attempt<4;attempt++){
     if(requestCount>=cfg.max_requests_per_run||Date.now()>deadline-30000)throw new BudgetDone('Request/time budget reached');
     const wait=Math.max(0,cfg.min_request_interval_ms-(Date.now()-lastCall));
     if(wait)await sleep(wait);
     lastCall=Date.now();requestCount++;
+    const sortPart=ranking==='best_match'?'':'&sort='+ranking+'&order=desc';
     const endpoint='https://api.github.com/search/repositories?q='+encodeURIComponent(q)
-      +'&sort=updated&order=desc&per_page='+cfg.per_page+'&page='+page;
+      +sortPart+'&per_page='+cfg.per_page+'&page='+page;
     let response;
     try{response=await fetch(endpoint,{headers,signal:AbortSignal.timeout(45000)});}
     catch(e){
@@ -148,6 +155,7 @@ export async function run(){
   if(cfg.per_page!==100||cfg.max_pages_per_query!==10||
     !Number.isInteger(cfg.max_requests_per_run)||!Number.isInteger(cfg.max_catalog_entries))throw Error('Invalid search bounds');
   const map=loadCatalog(),previous=map.size,day=stamp().slice(0,10);
+  const ranking=rankingMode(cfg);
   const deadline=Date.now()+cfg.max_runtime_minutes*60000;
   let searches=0,matched=0,added=0,updated=0,filtered=0,capped=0,incomplete=0;
   const errors=[],queryCaps=[];
@@ -155,7 +163,7 @@ export async function run(){
     let maxPages=cfg.max_pages_per_query;
     for(let page=1;page<=maxPages;page++){
       let data;
-      try{data=await api(query,page,cfg,deadline);}
+      try{data=await api(query,page,cfg,deadline,ranking);}
       catch(e){
         if(e instanceof BudgetDone){errors.push(e.message);break searchLoop;}
         errors.push('Query '+query+' page '+page+': '+e.message);break;
@@ -183,6 +191,7 @@ export async function run(){
   if(searches===0)throw Error('No successful GitHub Search request; '+errors.join('; '));
   writeCatalog(map);
   summary(['### University chemistry source harvest',
+    '- Search ranking this run: '+ranking+' (30-minute rotation)',
     '- GitHub Search API requests: '+requestCount+' (successful: '+searches+')',
     '- Raw result hits (may repeat): '+matched,'- Filtered out as irrelevant/forks/archived: '+filtered,
     '- New unique source candidates: '+added,'- Refreshed metadata: '+updated,

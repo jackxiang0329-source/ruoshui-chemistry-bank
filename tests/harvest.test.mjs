@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {subjects,canonicalRepo,bucketKey,requestedPages} from '../scripts/harvest-chemistry-sources.mjs';
+import {subjects,canonicalRepo,bucketKey,requestedPages,rankingMode} from '../scripts/harvest-chemistry-sources.mjs';
 import {safePath,questionId,normalizeQuestion,validateSource,mapRecord} from '../scripts/import-approved-chemistry.mjs';
 test('classifies chemistry subject',()=>{
   assert.deepEqual(subjects('organic chemistry study'),['organic']);
@@ -58,4 +58,13 @@ test('discover educational chemistry calculators and spectroscopy tutorials with
   assert.equal(x.repository,'lab/voltammetry-tutorial');
   assert.equal(x.status,'unreviewed_not_importable');
   assert.ok(x.subjects.includes('analytical'));
+});
+
+test('discovery ranking rotates updated, stars and best_match at half-hour slots',()=>{
+  const opts={ranking_modes:['updated','stars','best_match']};
+  assert.equal(rankingMode(opts,0),'updated');
+  assert.equal(rankingMode(opts,30*60*1000),'stars');
+  assert.equal(rankingMode(opts,60*60*1000),'best_match');
+  assert.equal(rankingMode(opts,90*60*1000),'updated');
+  assert.throws(()=>rankingMode({ranking_modes:['foo&unsafe=true']},0));
 });
