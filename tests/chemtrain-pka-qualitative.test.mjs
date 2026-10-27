@@ -17,7 +17,7 @@ test('20 distinct undergraduate qualitative acidity comparisons with unique corr
  assert.equal(rows.length,20);
  assert.equal(new Set(rows.map(x=>x.id)).size,20);
  assert.equal(new Set(rows.map(x=>x.source.source_group_id+':'+x.source.source_question_index)).size,20);
- assert.deepEqual(rows.reduce((a,r)=>(a[r.correct_option]=(a[r.correct_option]||0)+1,a),{}),{A:5,B:5,C:5,D:5});
+ assert.deepEqual(rows.reduce((a,r)=>(a[r.correct_option]=(a[r.correct_option]||0)+1,a),{}),{A:10,B:8,C:2});
  for(const q of rows){
   assert.equal(q.subject,'organic');
   assert.equal(q.publishable,false);

@@ -52,8 +52,9 @@ export function validateFixture(d){
 export function makeQuestions(d){
  validateFixture(d);
  const result=d.cards.map((c,i)=>{
-  const shift=i%4,ordered=c.options.map((label,j)=>({label,original_index:j}))
-   .slice(shift).concat(c.options.map((label,j)=>({label,original_index:j})).slice(0,shift));
+  const shift=i%c.options.length;
+  const initial=c.options.map((label,j)=>({label,original_index:j}));
+  const ordered=initial.slice(shift).concat(initial.slice(0,shift));
   const correct=ordered.findIndex(x=>x.original_index===c.winner_index);
   if(correct<0)throw Error('Missing answer');
   const context=c.source_solvent==='d'?'DMSO 中':c.source_solvent==='w'?'水溶液中':'来源采用的教材近似条件下';
