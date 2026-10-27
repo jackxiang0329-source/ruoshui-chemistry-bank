@@ -33,3 +33,12 @@
 3. 36 组相同数值模板和跨语言语义近重复需人工复核；来源元数据中的 MIT/GPL/CC0 不能自动认定为本科题库。
 4. GitHub Actions 调度可能延迟；提交成功与工作流成功必须分开报告。新预审测试不依赖网络，避免每次运行触发对 GALILEO 的高频请求。
 5. 研究暂存区 NVIDIA 数据为 LLM 生成、未核验答案，绝不与本轮正式候选增量混淆。
+
+## 可核对的本轮提交与工作流状态
+
+- [授权导入器安全修复及测试](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/commit/7c42c0721590ec30f632b3b2c00c45d0fb304692)。
+- [六项机构 OER 许可证台账、验证器、回归测试与 README 修订](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/commit/0ad02b88f5eca58bdd950a59e9a7b8afe17c3e67)。
+- 修复提交触发的 [30 分钟采集工作流 #40465639978](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/actions/runs/40465639978) 已完成 **success**；共 49 个步骤，无失败步骤，说明现有 Muza 5 题重复检测及全部导入器未因新安全门槛受阻。
+- OER 台账测试触发的 [工作流 #40465737562](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/actions/runs/40465737562) 在本条记录撰写时仍为 **pending**；不能称该测试已经通过。
+- 最新实读来源元数据：GitHub 来源目录 **757** 条、HF/Zenodo 外部目录 **233** 条；许可证文件预筛选 **124** 个仓库、自动确认题文授权 **0**。此三项均为元数据与许可预筛，不是新增习题。
+- 外部附件读取尝试：Manifold “Survey of Chemistry I Solved Problems Set” 的原始 zip 下载返回 HTTP 404；Organic Chemistry I 的附件由网页工具返回不支持的 DOCX Content-Type。**这两个失败均未导致题目误导入**，需通过可重复下载并核验文件哈希的方式继续处理。
