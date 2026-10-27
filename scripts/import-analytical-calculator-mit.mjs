@@ -66,7 +66,7 @@ export function makeQuestions(data){
     data.source_original_question_count_imported!==0||
     data.approved_examples!==8||JSON.stringify(data.files)!==JSON.stringify(BLOBS)||
     !data.attribution?.includes('Copyright (c) 2026 PWO-CHINA')||
-    !data.rights_scope?.includes('NOT questions')||!Array.isArray(data.items)||data.items.length!==8)
+    !data.rights_scope?.includes('not questions imported from upstream')||!Array.isArray(data.items)||data.items.length!==8)
    throw Error('MIT calculator source lock / attribution / rights scope mismatch');
  const out=[],names=new Set(),ids=new Set();
  for(let i=0;i<data.items.length;i++){
