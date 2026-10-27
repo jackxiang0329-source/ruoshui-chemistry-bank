@@ -44,3 +44,13 @@ for(const q of bank){
 console.log('DATA '+JSON.stringify({keys:Object.keys(data),apps:Object.keys(data.apps||{}),
  bankCount:bank.length,mols:data.mols?.length,firstBankKeys:Object.keys(bank[0]||{}),
  groups:stats}).slice(0,42000));
+
+for(const [key,n] of Object.entries(stats)){
+ if(!/^(?:rad\/|tmc\/|pg\/Removed by)/.test(key))continue;
+ const filtered=bank.filter(q=>q.s+'/'+q.k===key);
+ const shape={count:n.count,keyFields:Object.keys(filtered[0]||{}),first:filtered[0]};
+ console.log('FOCUS '+key+' '+JSON.stringify(shape).slice(0,1350));
+}
+console.log('CHOICES '+JSON.stringify({explicit_index_distribution:
+ bank.reduce((a,q)=>{const k=String(q.y===undefined?'implicit_zero':q.y);a[k]=(a[k]||0)+1;return a},{}),
+text_option_groups:Object.fromEntries(Object.entries(stats).filter(([k])=>/^(?:tmc\/|rad\/|pg\/)/.test(k)).map(([k,v])=>[k,v.count]))}));
