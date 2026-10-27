@@ -39,3 +39,20 @@ test('no license and explicit quiz metadata still require per-question review',(
  assert.equal(quiz.question_content_rights,'not_verified_for_question_or_answer_redistribution');
  assert.equal(quiz.state,'needs_per_question_provenance_and_answer_quality_review');
 });
+
+test('source discovery queue advances beyond exhausted top 160 and never repeats checked repos',()=>{
+ const rows=Array.from({length:300},(_,i)=>({
+  repository:'lab/analytical-chemistry-exercises-'+i,
+  description:'University analytical chemistry exercises with answers',
+  subjects:['analytical'],repository_license_spdx:'MIT'
+ }));
+ const ranked=choose(rows,160);
+ assert.equal(ranked.length,160);
+ const checked=Object.fromEntries(ranked.map(x=>[x.repository.toLowerCase(),{license_file_git_blob_sha:'a'.repeat(40)}]));
+ const newBatch=choose(rows,160,checked);
+ assert.equal(newBatch.length,140);
+ assert.equal(newBatch.some(x=>Object.hasOwn(checked,x.repository.toLowerCase())),false);
+ assert.equal(new Set([...ranked,...newBatch].map(x=>x.repository)).size,300);
+ assert.deepEqual(choose(rows,160,Object.fromEntries(rows.map(x=>[x.repository.toLowerCase(),{}]))),[]);
+ assert.throws(()=>choose(rows,160,[]));
+});

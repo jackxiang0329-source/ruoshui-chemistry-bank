@@ -41,14 +41,16 @@ export function rankSource(x){
    'Repository license unknown; request permissions before any reuse.',
   original_source_record:'harvest/sources/'};
 }
-export function choose(rows,max=160){
+// Advance beyond already-preflighted repos instead of stalling at the first 160.
+export function choose(rows,max=160,reviewed={}){
+ if(!reviewed||typeof reviewed!=='object'||Array.isArray(reviewed))throw Error('Invalid checked-source ledger');
  const seen=new Set();
  const ranked=[];
  for(const row of rows){
   const item=rankSource(row);
   if(!item)continue;
   const key=item.repository.toLowerCase();
-  if(seen.has(key))continue;seen.add(key);
+  if(seen.has(key)||Object.hasOwn(reviewed,key))continue;seen.add(key);
   ranked.push(item);
  }
  ranked.sort((a,b)=>b.score-a.score||a.repository.localeCompare(b.repository));
@@ -63,14 +65,19 @@ export function run(){
     if(line.trim())rows.push(JSON.parse(line));
   }
  }
- const queue=choose(rows),report={schema_version:1,source_records_considered:rows.length,
+ const ledgerPath=new URL('harvest/license_preflight.json',root);
+ const ledger=existsSync(ledgerPath)?JSON.parse(readFileSync(ledgerPath,'utf8')):{checked:{}};
+ if(!ledger.checked||typeof ledger.checked!=='object'||Array.isArray(ledger.checked))throw Error('Bad LICENSE preflight ledger');
+ const queue=choose(rows,160,ledger.checked),report={schema_version:1,source_records_considered:rows.length,
+  already_preflighted_sources:Object.keys(ledger.checked).length,
+  unreviewed_queued_for_metadata_rights_check:queue.length,
   prioritized_for_manual_rights_check:queue.length,
   question_text_or_answers_downloaded:0,question_license_approvals_added:0,
   note:'Priorities are based ONLY on repository metadata. They do not authorize copying questions, data or images.',
   queue};
  const str=JSON.stringify(report,null,2)+'\n';
  if(!existsSync(output)||readFileSync(output,'utf8')!==str)writeFileSync(output,str);
- console.log('Chemistry license review queue: scanned='+rows.length+', shortlisted='+queue.length+', approved=0');
+ console.log('Chemistry license review queue: scanned='+rows.length+', preflighted='+Object.keys(ledger.checked).length+', new_queue='+queue.length+', approved=0');
  return report;
 }
 if(process.argv[1]===fileURLToPath(import.meta.url))run();
