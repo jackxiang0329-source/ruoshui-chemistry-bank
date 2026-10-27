@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "997279a5516fba0a68e1bafac4c8550f465a56f2cf7fd90927bb2c24b465eec1",
+  "subject": "physical",
+  "topic": "relative_ez_free_energy",
+  "level": "upper_undergraduate",
+  "question_type": "adapted_cc_by_computational_chemistry_exercise",
+  "resource_type": "new_calculation_using_attributed_cc_by_teaching_table",
+  "question": "物理化学·计算化学：数据取自 Nathan Lui《The DFT Course》的 E/Z 异构体基组比较；def2-TZVP（S/N/O/F），def2-SVP（C/H）。在相同基组下 E 构型校正能量为 -974540.402 kcal/mol，Z 构型为 -974539.491 kcal/mol。计算 ΔG(Z−E)，并指出能量较低的构型。",
+  "answer": "ΔG(Z−E) = G(Z)−G(E) = -974539.491−(-974540.402) = 0.911 kcal/mol；E 构型能量较低。",
+  "explanation": "两种异构体的绝对能量只能在相同计算模型下相减；ΔG(Z−E)>0，按该计算模型 E 更稳定。",
+  "numeric_answers": [
+    0.9109999999636784
+  ],
+  "unit": "kcal/mol",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "repository": "thisisntnathan/dftCourse",
+    "commit": "94e9a45154fe6e8b014fd18f09b87993c599f7de",
+    "file": "_pages/Problems/2_EZ-isomers.md",
+    "git_blob_sha": "7f46142948141cbbe18914c50cced8a45db35193",
+    "license": "CC BY 4.0",
+    "license_evidence": "https://github.com/thisisntnathan/dftCourse/blob/94e9a45154fe6e8b014fd18f09b87993c599f7de/README.md",
+    "license_readme_blob_sha": "552dccdf024ef9f7de6c571b55d59554bb2cde80",
+    "author": "Nathan Lui",
+    "attribution": "The DFT Course by Nathan Lui, CC BY 4.0 (2026). Source: https://thisisntnathan.github.io/dftCourse/",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "changes": "New Chinese calculation stem and independently checked numeric answer using tabulated E/Z energies and computation times. No figures, paper text or external computational log copied."
+  },
+  "review_notes": "These corrected electronic/free energies are used for educational numerical comparisons. Predicted populations require the explicitly stated illustrative thermodynamic assumptions; they are not measured product ratios."
+}
