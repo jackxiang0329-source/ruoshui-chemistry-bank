@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source": "OpenStax Chemistry (historical 2014 mirror)",
+  "source_repository": "philschatz/chemistry-book",
+  "source_commit": "a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2",
+  "work_license": "CC-BY-3.0",
+  "discovered_source_chapters": 149,
+  "chapters_inspected": 40,
+  "chapters_remaining": 109,
+  "raw_staged_candidates": 549,
+  "last_batch_new": 549,
+  "last_batch_source_exercise_blocks": 550,
+  "last_batch_chapters": 40,
+  "last_batch_failures": [],
+  "with_source_solution": 277,
+  "requiring_media": 16,
+  "requiring_mathml": 128,
+  "item_rights_approved": 0,
+  "expert_approved": 0,
+  "exam_ready": 0,
+  "note": "Separate archived OpenStax CC BY 3.0 work-level OER. Extracted exercise blocks are UNVERIFIED English raw candidate content, not independent validated questions or approved exam bank. Figures, MathML, source accuracy, any third-party content and item reuse rights require review."
+}
