@@ -6,7 +6,7 @@
   "config": "default",
   "split": "RQA",
   "total_rows": 52179,
-  "batch_pages": 4,
+  "batch_pages": 8,
   "page_size": 100,
   "max_staged": 5000,
   "max_question_chars": 12000,

@@ -12,9 +12,6 @@ on:
       - "tests/prioritize-chemistry-sources.test.mjs"
       - "scripts/preflight-chemistry-sources.mjs"
       - "tests/preflight-chemistry-sources.test.mjs"
-      - "scripts/stage-nvidia-rqa.mjs"
-      - "tests/stage-nvidia-rqa.test.mjs"
-      - "harvest/pinned_nvidia_science_rqa.json"
       - "harvest/search_queries.json"
       - "harvest/public_dataset_queries.json"
   schedule:
@@ -50,7 +47,6 @@ jobs:
           node --test tests/harvest-public-chemistry.test.mjs
           node --test tests/prioritize-chemistry-sources.test.mjs
           node --test tests/preflight-chemistry-sources.test.mjs
-          node --test tests/stage-nvidia-rqa.test.mjs
       - name: Run two metadata discovery streams concurrently
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -75,8 +71,6 @@ jobs:
           fi
       - name: Regenerate rights-review priorities (no unapproved question import)
         run: node scripts/prioritize-chemistry-sources.mjs
-      - name: Quarantine pinned NVIDIA CC BY chemistry RQA (model answers unverified)
-        run: node scripts/stage-nvidia-rqa.mjs
       - name: Preflight repository LICENSE and README for next 20 sources
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -85,8 +79,6 @@ jobs:
         run: |
           git add -- harvest/source_candidates.json harvest/source_review_queue.json
           if [ -f harvest/license_preflight.json ]; then git add -- harvest/license_preflight.json; fi
-          if [ -f harvest/nvidia_rqa_state.json ]; then git add -- harvest/nvidia_rqa_state.json; fi
-          if [ -d data/research_quarantine/nvidia-rqa ]; then git add -- data/research_quarantine/nvidia-rqa; fi
           if [ -d harvest/sources ]; then git add -- harvest/sources; fi
           if [ -f harvest/external_source_catalog.json ]; then
             git add -- harvest/external_source_catalog.json
