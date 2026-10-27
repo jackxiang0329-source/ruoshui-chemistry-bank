@@ -33,7 +33,7 @@ jobs:
           node-version: "22"
       - name: Verify license-guarded quarantine transformations
         run: node --test tests/stage-nvidia-rqa.test.mjs
-      - name: Pull 800 pinned CC BY chemistry RQA rows into capped unpublished quarantine
+      - name: Pull up to 1600 pinned CC BY chemistry RQA rows into gzip research quarantine
         run: node scripts/stage-nvidia-rqa.mjs
       - name: Commit only genuine newly staged research records
         run: |

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {curatePage,inferSubject,questionHash} from '../scripts/stage-nvidia-rqa.mjs';
+import {curatePage,inferSubject,questionHash,encodeArchiveRows,decodeArchiveRows} from '../scripts/stage-nvidia-rqa.mjs';
 const cfg={dataset:'nvidia/Nemotron-Science-v1',revision:'82e1af468197076b4f0f392c239274eac032adc7',max_question_chars:12000,max_answer_chars:12000};
 const q='Under standard thermodynamic laboratory conditions, calculate the equilibrium constant for a gas-phase chemistry reaction using the specified standard Gibbs free energy and temperature, and show all computations.';
 const make=(i)=>({row_idx:i,row:{license:'cc-by-4.0',uuid:'a8c31e23-49d7-453c-8a42-'+String(i).padStart(12,'0'),messages:[
@@ -27,4 +27,15 @@ test('hash and subject heuristics are stable without interpreting science correc
  assert.equal(inferSubject('coordination complex ligand field'),'inorganic');
  assert.equal(inferSubject('stereochemistry of aromatic substitution'),'organic');
  assert.equal(inferSubject('chemical compound'),'needs_manual_classification');
+});
+
+test('compressed archival format round-trips and keeps hard publication embargo',()=>{
+ const batch=curatePage([make(5),make(6)],cfg,new Set()).rows;
+ const compressed=encodeArchiveRows(batch);
+ const recovered=decodeArchiveRows('000000-000001.jsonl.gz',compressed);
+ assert.equal(recovered.length,2);
+ assert.ok(recovered.every(x=>x.publishable===false&&x.exclude_from_official_bank===true));
+ assert.deepEqual(recovered.map(x=>x.question_sha256),batch.map(x=>x.question_sha256));
+ assert.ok(compressed.byteLength<Buffer.byteLength(batch.map(JSON.stringify).join('\n')+'\n'));
+ assert.throws(()=>encodeArchiveRows([{publishable:true,exclude_from_official_bank:false}]));
 });

@@ -6,10 +6,10 @@
   "config": "default",
   "split": "RQA",
   "total_rows": 52179,
-  "batch_pages": 8,
+  "batch_pages": 16,
   "page_size": 100,
-  "max_staged": 5000,
+  "max_staged": 12000,
   "max_question_chars": 12000,
   "max_answer_chars": 12000,
-  "note": "Quarantined model-generated research questions only; no independent answer validation and not countable official candidates. Cap prevents unbounded Git growth."
+  "note": "Research-only LLM-generated chemistry QA; strict SHA, row license, ID, quality and duplicate gate. Up to 1600 raw rows every five minutes, 12k staged cap; compressed JSONL shards reduce Git storage; nothing automatically enters formal data/candidates."
 }

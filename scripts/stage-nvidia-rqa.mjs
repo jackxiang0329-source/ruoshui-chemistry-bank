@@ -5,6 +5,7 @@ import {readFileSync,writeFileSync,existsSync,readdirSync,mkdirSync,appendFileSy
 import {dirname,join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
+import {gzipSync,gunzipSync} from 'node:zlib';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
 const CFG=join(ROOT,'harvest','pinned_nvidia_science_rqa.json');
 const STATE=join(ROOT,'harvest','nvidia_rqa_state.json');
@@ -46,13 +47,21 @@ export function curatePage(page,config,seen){
  }
  return {rows,excluded};
 }
+export function encodeArchiveRows(rows){
+ if(!Array.isArray(rows)||rows.some(x=>x.publishable!==false||x.exclude_from_official_bank!==true))
+  throw Error('Cannot compress unreviewed data without publication block');
+ return gzipSync(Buffer.from(rows.map(x=>JSON.stringify(x)).join('\n')+'\n'),{level:6});
+}
+export function decodeArchiveRows(filename,buf){
+ if(!/\.jsonl(?:\.gz)?$/.test(filename))throw Error('Unexpected research archive suffix');
+ const content=filename.endsWith('.gz')?gunzipSync(buf).toString('utf8'):buf.toString('utf8');
+ return content.split('\n').filter(Boolean).map(line=>JSON.parse(line));
+}
 export function readArchive(){
  const seen=new Set(),ids=new Set();let total=0;
  if(existsSync(DIR))for(const file of readdirSync(DIR)){
-  if(!/^\d{6}-\d{6}\.jsonl$/.test(file))continue;
-  for(const line of readFileSync(join(DIR,file),'utf8').split('\n')){
-   if(!line.trim())continue;
-   const v=JSON.parse(line);
+  if(!/^\d{6}-\d{6}\.jsonl(?:\.gz)?$/.test(file))continue;
+  for(const v of decodeArchiveRows(file,readFileSync(join(DIR,file)))){
    if(v.publishable!==false||v.exclude_from_official_bank!==true||!v.question_sha256)throw Error('Unsafe earlier staged row');
    seen.add(v.question_sha256);ids.add(v.uuid);total++;
   }
@@ -70,8 +79,8 @@ export async function run(fetchJSON=request){
  if(cfg.schema_version!==1||cfg.dataset!=='nvidia/Nemotron-Science-v1'||
   cfg.revision!=='82e1af468197076b4f0f392c239274eac032adc7'||
   cfg.license!=='cc-by-4.0'||cfg.config!=='default'||cfg.split!=='RQA'||cfg.total_rows!==52179||
-  !Number.isInteger(cfg.batch_pages)||cfg.batch_pages<1||cfg.batch_pages>10||
-  cfg.page_size<1||cfg.page_size>100||cfg.max_staged<100||cfg.max_staged>10000||
+  !Number.isInteger(cfg.batch_pages)||cfg.batch_pages<1||cfg.batch_pages>24||
+  cfg.page_size<1||cfg.page_size>100||cfg.max_staged<100||cfg.max_staged>16000||
   !Number.isInteger(cfg.max_question_chars)||cfg.max_question_chars<100||cfg.max_question_chars>20000||
   !Number.isInteger(cfg.max_answer_chars)||cfg.max_answer_chars<100||cfg.max_answer_chars>20000)
   throw Error('Unapproved source pin, split or size limit');
@@ -104,9 +113,9 @@ export async function run(fetchJSON=request){
  }
  mkdirSync(DIR,{recursive:true});
  if(accepted.length){
-  const file=join(DIR,String(start).padStart(6,'0')+'-'+String(offset-1).padStart(6,'0')+'.jsonl');
+  const file=join(DIR,String(start).padStart(6,'0')+'-'+String(offset-1).padStart(6,'0')+'.jsonl.gz');
   if(existsSync(file))throw Error('Quarantine shard already exists; abort');
-  writeFileSync(file,accepted.map(x=>JSON.stringify(x)).join('\n')+'\n');
+  writeFileSync(file,encodeArchiveRows(accepted));
  }
  Object.assign(state,{next_offset:offset,examined:(state.examined||0)+(offset-start),
   staged_total:total+accepted.length,last_add:accepted.length,last_examined:offset-start,last_pages:pageCount,
