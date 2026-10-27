@@ -16,8 +16,8 @@ test('metadata-only triage penalizes school tests, publications, synthetic model
  const high=rankExternal(row('Example/high-school-chemistry-questions'));
  const synth=rankExternal(row('Example/chemistry-alpaca-questions'));
  const noncom=rankExternal(row('Example/analytical-chemistry-questions','cc-by-nc-4.0'));
- assert.ok(good.metadata_score>high.metadata_score);
- assert.ok(good.metadata_score>synth.metadata_score);
+ assert.equal(high,null);
+ assert.equal(synth,null);
  assert.ok(good.metadata_score>noncom.metadata_score);
  assert.equal(rankExternal(row('Example/physics-math-questions')),null);
 });
