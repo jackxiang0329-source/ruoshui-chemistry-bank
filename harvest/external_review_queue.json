@@ -1,219 +1,26 @@
 {
   "schema_version": 1,
-  "metadata_records_examined": 233,
-  "human_review_queue_size": 80,
+  "metadata_records_examined": 234,
+  "human_review_queue_size": 22,
   "auto_approved_question_sets": 0,
   "auto_downloaded_question_texts": 0,
   "note": "Ranked from publicly claimed metadata only, NOT a license audit or a verified question inventory. Explicit per-item author provenance, data rights, answer validation, and undergraduate level must be reviewed before any copy.",
   "queue": [
     {
-      "platform": "zenodo",
-      "id": "11179882",
-      "url": "https://zenodo.org/records/11179882",
-      "title": "Electrochemistry Boot Camp CV Data",
+      "platform": "huggingface",
+      "id": "arjanvaneersel/chemistry-questions",
+      "url": "https://huggingface.co/datasets/arjanvaneersel/chemistry-questions",
+      "title": "arjanvaneersel/chemistry-questions",
       "subjects": [
-        "physical"
+        "general"
       ],
-      "metadata_score": 56,
+      "metadata_score": 54,
       "signals": [
-        "question_or_answer_terms",
-        "physical",
+        "explicit_question_or_answer_title",
         "claimed_open_license"
       ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "15065356",
-      "url": "https://zenodo.org/records/15065356",
-      "title": "Electrochemical data shown in Malagnini et al, \"Initial quality assessment and qualitative interpretation of protein film electrochemistry catalytic data\"",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 56,
-      "signals": [
-        "question_or_answer_terms",
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "18781113",
-      "url": "https://zenodo.org/records/18781113",
-      "title": "Misconceptions in Electrochemistry among 11th- and 12th-Grade Students in Dire Dawa and Harari, Ethiopia: Causes, Effects, and Strategies",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 56,
-      "signals": [
-        "question_or_answer_terms",
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "18897023",
-      "url": "https://zenodo.org/records/18897023",
-      "title": "Data for \"An Automated Electrochemistry Platform for Accelerating the Characterization of Enzymatic Electrochemistry\"",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 56,
-      "signals": [
-        "question_or_answer_terms",
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "7158094",
-      "url": "https://zenodo.org/records/7158094",
-      "title": "Electrochemical biosensors for rapid pathogen detection",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 56,
-      "signals": [
-        "question_or_answer_terms",
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "14576010",
-      "url": "https://zenodo.org/records/14576010",
-      "title": "A SHORT REVIEW ON VIBRATIONAL SPECTROSCOPY",
-      "subjects": [
-        "analytical",
-        "physical"
-      ],
-      "metadata_score": 49,
-      "signals": [
-        "analytical",
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "7864263",
-      "url": "https://zenodo.org/records/7864263",
-      "title": "RECENT ADVANCEMENT IN PHARMACEUTICAL SOPHISTICATED INSTRUMENTS AND ITS APPLICATION",
-      "subjects": [
-        "analytical",
-        "physical"
-      ],
-      "metadata_score": 49,
-      "signals": [
-        "analytical",
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "13141764",
-      "url": "https://zenodo.org/records/13141764",
-      "title": "Principle and Role of Green Chemistry in Various Organic Synthesis",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 46,
-      "signals": [
-        "question_or_answer_terms",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "15484156",
-      "url": "https://zenodo.org/records/15484156",
-      "title": "NEW PEDAGOGICAL TECHNOLOGIES IN TEACHING ORGANIC CHEMISTRY",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 46,
-      "signals": [
-        "question_or_answer_terms",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
+      "claimed_license": "mit",
+      "upstream_sha": "82efd2e5aecfe6c4927acc6698a386ebff51246d",
       "source_rights": "UNVERIFIED_ITEM_LEVEL",
       "answer_quality": "UNVERIFIED",
       "item_license_verified": false,
@@ -224,19 +31,19 @@
     },
     {
       "platform": "huggingface",
-      "id": "arjanvaneersel/chemistry-questions",
-      "url": "https://huggingface.co/datasets/arjanvaneersel/chemistry-questions",
-      "title": "arjanvaneersel/chemistry-questions",
+      "id": "Ualajac/chemistry-qa-bot",
+      "url": "https://huggingface.co/datasets/Ualajac/chemistry-qa-bot",
+      "title": "Ualajac/chemistry-qa-bot",
       "subjects": [
         "general"
       ],
-      "metadata_score": 44,
+      "metadata_score": 54,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "claimed_open_license"
       ],
-      "claimed_license": "mit",
-      "upstream_sha": "82efd2e5aecfe6c4927acc6698a386ebff51246d",
+      "claimed_license": "cc-by-4.0",
+      "upstream_sha": "afb91b2a2182692153c4a0e42bba36551dc6074b",
       "source_rights": "UNVERIFIED_ITEM_LEVEL",
       "answer_quality": "UNVERIFIED",
       "item_license_verified": false,
@@ -253,9 +60,9 @@
       "subjects": [
         "physical"
       ],
-      "metadata_score": 42,
+      "metadata_score": 52,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "physical"
       ],
       "claimed_license": "cc-zero",
@@ -276,9 +83,9 @@
       "subjects": [
         "physical"
       ],
-      "metadata_score": 42,
+      "metadata_score": 52,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "physical"
       ],
       "claimed_license": "cc-zero",
@@ -299,9 +106,9 @@
       "subjects": [
         "physical"
       ],
-      "metadata_score": 42,
+      "metadata_score": 52,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "physical"
       ],
       "claimed_license": "cc-zero",
@@ -322,9 +129,9 @@
       "subjects": [
         "physical"
       ],
-      "metadata_score": 42,
+      "metadata_score": 52,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "physical"
       ],
       "claimed_license": "cc-zero",
@@ -345,9 +152,9 @@
       "subjects": [
         "physical"
       ],
-      "metadata_score": 42,
+      "metadata_score": 52,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "physical"
       ],
       "claimed_license": "cc-zero",
@@ -368,9 +175,9 @@
       "subjects": [
         "physical"
       ],
-      "metadata_score": 42,
+      "metadata_score": 52,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "physical"
       ],
       "claimed_license": "cc-zero",
@@ -391,9 +198,9 @@
       "subjects": [
         "physical"
       ],
-      "metadata_score": 42,
+      "metadata_score": 52,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "physical"
       ],
       "claimed_license": "cc-zero",
@@ -414,37 +221,12 @@
       "subjects": [
         "physical"
       ],
-      "metadata_score": 42,
+      "metadata_score": 52,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "physical"
       ],
       "claimed_license": "cc-zero",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "19080756",
-      "url": "https://zenodo.org/records/19080756",
-      "title": "METHODOLOGY OF SOLVING EXERCISES AND PROBLEMS THAT ENCOURAGE STUDENTS' LOGICAL THINKING IN CHEMISTRY",
-      "subjects": [
-        "analytical"
-      ],
-      "metadata_score": 40,
-      "signals": [
-        "question_or_answer_terms",
-        "analytical",
-        "claimed_open_license",
-        "synthetic_or_model_derived"
-      ],
-      "claimed_license": "cc-by-4.0",
       "upstream_sha": null,
       "source_rights": "UNVERIFIED_ITEM_LEVEL",
       "answer_quality": "UNVERIFIED",
@@ -462,9 +244,9 @@
       "subjects": [
         "general"
       ],
-      "metadata_score": 39,
+      "metadata_score": 49,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "claimed_open_license"
       ],
       "claimed_license": "cc-by-4.0",
@@ -479,548 +261,20 @@
     },
     {
       "platform": "zenodo",
-      "id": "14652609",
-      "url": "https://zenodo.org/records/14652609",
-      "title": "Dataset of the research article \"Guanidium Unmasked: Repurposing Common Amide Coupling Reagents for the Synthesis of Pentasubstituted Guanidine Bases\"",
-      "subjects": [
-        "physical",
-        "organic"
-      ],
-      "metadata_score": 38,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "14584615",
-      "url": "https://zenodo.org/records/14584615",
-      "title": "A REVIEW ON UV-VIS SPECTROSCOPY – THEORY & APPLICATIONS",
-      "subjects": [
-        "analytical"
-      ],
-      "metadata_score": 32,
-      "signals": [
-        "analytical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "18433065",
-      "url": "https://zenodo.org/records/18433065",
-      "title": "Analysis results of wastewater samples of MITERA Hospital",
-      "subjects": [
-        "analytical"
-      ],
-      "metadata_score": 32,
-      "signals": [
-        "analytical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "5792611",
-      "url": "https://zenodo.org/records/5792611",
-      "title": "Recovery of platinum using chlorination of DOER residue",
-      "subjects": [
-        "analytical"
-      ],
-      "metadata_score": 32,
-      "signals": [
-        "analytical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "14713087",
-      "url": "https://zenodo.org/records/14713087",
-      "title": "DataSet for the article: Modeling the Reactivity of Diffusion-Limited Enzyme in Single-Entity Electrochemistry",
+      "id": "7158094",
+      "url": "https://zenodo.org/records/7158094",
+      "title": "Electrochemical biosensors for rapid pathogen detection",
       "subjects": [
         "physical"
       ],
-      "metadata_score": 31,
+      "metadata_score": 41,
       "signals": [
+        "question_terms_only_in_description",
         "physical",
         "claimed_open_license"
       ],
       "claimed_license": "cc-by-4.0",
       "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "15481679",
-      "url": "https://zenodo.org/records/15481679",
-      "title": "Multielectron Redox Chemistry of Ytterbium Complexes Reaching the +1 and Zero Formal Oxidation States",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "15857407",
-      "url": "https://zenodo.org/records/15857407",
-      "title": "tgpaiva/Electropy_TP: ElectroPyTP - a python package for electrochemistry",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "16816463",
-      "url": "https://zenodo.org/records/16816463",
-      "title": "Surface‐functionalization of V2O5 cathodes with azobenzene derivatives: a combined experimental and theoretical study",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "17590555",
-      "url": "https://zenodo.org/records/17590555",
-      "title": "Physical chemistry",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "18699508",
-      "url": "https://zenodo.org/records/18699508",
-      "title": "Data archive for \"Toward Understanding Li-Ion Intercalation in LiMn2O4 Electrodes for Direct Lithium Extraction\"",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "19328407",
-      "url": "https://zenodo.org/records/19328407",
-      "title": "Electrochemical Impedance for Electrochemists, A Practical Introduction",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "21412548",
-      "url": "https://zenodo.org/records/21412548",
-      "title": "echemdb electrochemistry data",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "22275504",
-      "url": "https://zenodo.org/records/22275504",
-      "title": "Supramolecular Polymers of Chiral and Achiral Rhodium and Iridium Complexes of N-confused Porphyrin",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "3938933",
-      "url": "https://zenodo.org/records/3938933",
-      "title": "Surface Sensitivity of Hydrogen Evolution and Formaldehyde Reduction on Differently Oriented TiO2 Anatase Nanocrystals",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "4753723",
-      "url": "https://zenodo.org/records/4753723",
-      "title": "Enrichment effects of ionic liquid mixtures at polarized electrode interfaces monitored by potential screening",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "5654495",
-      "url": "https://zenodo.org/records/5654495",
-      "title": "Original Data for: Attoampere Electrochemistry",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "5774171",
-      "url": "https://zenodo.org/records/5774171",
-      "title": "OpenTCC, RedStat and Rscripts for analyses",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "6416097",
-      "url": "https://zenodo.org/records/6416097",
-      "title": "Dataset for the publication: First-principles studies on the atomistic properties of metallic magnesium as anode material in magnesium-ion batteries",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "6424245",
-      "url": "https://zenodo.org/records/6424245",
-      "title": "DATASET: Using auxiliary electrochemical working electrodes as probe during contact glow discharge electrolysis: A proof of concept study",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "6973687",
-      "url": "https://zenodo.org/records/6973687",
-      "title": "DATASET: Nanoporous Au Formation on Au Substrates via High Voltage Electrolysis",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "7074790",
-      "url": "https://zenodo.org/records/7074790",
-      "title": "Dataset for the publication: Development of a Mg/O ReaxFF Potential to describe the Passivation Processes in Magnesium-Ion Batteries",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "7534249",
-      "url": "https://zenodo.org/records/7534249",
-      "title": "DATASET: Electric Potential Distribution Inside the Electrolyte During High Voltage Electrolysis",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "7820779",
-      "url": "https://zenodo.org/records/7820779",
-      "title": "DATASET: Facet-Dependent Formation and Adhesion of Au Oxide and Nanoporous Au on Poly-Oriented Au Single Crystals",
-      "subjects": [
-        "physical"
-      ],
-      "metadata_score": 31,
-      "signals": [
-        "physical",
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "huggingface",
-      "id": "avaliev/ChemistryQA",
-      "url": "https://huggingface.co/datasets/avaliev/ChemistryQA",
-      "title": "avaliev/ChemistryQA",
-      "subjects": [
-        "general"
-      ],
-      "metadata_score": 30,
-      "signals": [
-        "question_or_answer_terms"
-      ],
-      "claimed_license": "ms-pl",
-      "upstream_sha": "7cf81c148019fadb9c2fe894ec6377a48a09a9d3",
       "source_rights": "UNVERIFIED_ITEM_LEVEL",
       "answer_quality": "UNVERIFIED",
       "item_license_verified": false,
@@ -1037,9 +291,9 @@
       "subjects": [
         "organic"
       ],
-      "metadata_score": 30,
+      "metadata_score": 40,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "rights_uncertain_or_restricted"
       ],
       "claimed_license": "UNVERIFIED",
@@ -1060,9 +314,9 @@
       "subjects": [
         "general"
       ],
-      "metadata_score": 30,
+      "metadata_score": 40,
       "signals": [
-        "question_or_answer_terms"
+        "explicit_question_or_answer_title"
       ],
       "claimed_license": "gpl-2.0",
       "upstream_sha": "184e22672a0f166e66c279922c415aeb0905bee9",
@@ -1076,155 +330,20 @@
     },
     {
       "platform": "huggingface",
-      "id": "prathmeshadsod/bondshift-organic-chemistry",
-      "url": "https://huggingface.co/datasets/prathmeshadsod/bondshift-organic-chemistry",
-      "title": "prathmeshadsod/bondshift-organic-chemistry",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 30,
-      "signals": [
-        "question_or_answer_terms",
-        "rights_uncertain_or_restricted"
-      ],
-      "claimed_license": "UNVERIFIED",
-      "upstream_sha": "ef864d547deea6b3ec1b6782668381f1bb5aae7f",
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "13973879",
-      "url": "https://zenodo.org/records/13973879",
-      "title": "PHAMACEUTICAL INORGANIC CHEMISTRY",
-      "subjects": [
-        "organic",
-        "inorganic"
-      ],
-      "metadata_score": 28,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "5607198",
-      "url": "https://zenodo.org/records/5607198",
-      "title": "Coumarinyl-azo-imidazolium protected and concentration dependent size control of gold nanoparticles (GNPs)",
-      "subjects": [
-        "organic",
-        "inorganic"
-      ],
-      "metadata_score": 28,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "huggingface",
-      "id": "Lots-of-LoRAs/task687_mmmlu_answer_generation_college_chemistry",
-      "url": "https://huggingface.co/datasets/Lots-of-LoRAs/task687_mmmlu_answer_generation_college_chemistry",
-      "title": "Lots-of-LoRAs/task687_mmmlu_answer_generation_college_chemistry",
+      "id": "Jesusrodriguezf90/chemistry-organometallic-qa",
+      "url": "https://huggingface.co/datasets/Jesusrodriguezf90/chemistry-organometallic-qa",
+      "title": "Jesusrodriguezf90/chemistry-organometallic-qa",
       "subjects": [
         "general"
       ],
-      "metadata_score": 27,
+      "metadata_score": 37,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "claimed_open_license",
         "synthetic_or_model_derived"
       ],
-      "claimed_license": "apache-2.0",
-      "upstream_sha": "424f356d2b8e05b2aef6553de1fc4f643ffd81a8",
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "huggingface",
-      "id": "Jace11122222/organic-chemistry-reasoning-demo",
-      "url": "https://huggingface.co/datasets/Jace11122222/organic-chemistry-reasoning-demo",
-      "title": "Jace11122222/organic-chemistry-reasoning-demo",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 26,
-      "signals": [
-        "claimed_open_license"
-      ],
       "claimed_license": "mit",
-      "upstream_sha": "c6e0837c4f9910116226044cb9c0e8ea3296ac3d",
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "huggingface",
-      "id": "PauloNeves-HF/Chemical_Reactions_BH_HTE",
-      "url": "https://huggingface.co/datasets/PauloNeves-HF/Chemical_Reactions_BH_HTE",
-      "title": "PauloNeves-HF/Chemical_Reactions_BH_HTE",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 26,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "apache-2.0",
-      "upstream_sha": "61feaaa878c11691102e49d7bb530c66af892a11",
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "huggingface",
-      "id": "TejasviTyagi/OrganicChemistryReactions",
-      "url": "https://huggingface.co/datasets/TejasviTyagi/OrganicChemistryReactions",
-      "title": "TejasviTyagi/OrganicChemistryReactions",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 26,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "mit",
-      "upstream_sha": "7f55add1ef3205431bf0bde827cd460aaef3f09e",
+      "upstream_sha": "348ba4c35b51de478b5be465d9129fee0edf6b05",
       "source_rights": "UNVERIFIED_ITEM_LEVEL",
       "answer_quality": "UNVERIFIED",
       "item_license_verified": false,
@@ -1241,36 +360,13 @@
       "subjects": [
         "general"
       ],
-      "metadata_score": 23,
+      "metadata_score": 33,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "rights_uncertain_or_restricted"
       ],
       "claimed_license": "UNVERIFIED",
       "upstream_sha": "0e092b0919e5a473c48e14eae5edb88ebaeec8a7",
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "huggingface",
-      "id": "Mendeln-J/microstructures-crystallization-chemical-reactions-sample",
-      "url": "https://huggingface.co/datasets/Mendeln-J/microstructures-crystallization-chemical-reactions-sample",
-      "title": "Mendeln-J/microstructures-crystallization-chemical-reactions-sample",
-      "subjects": [
-        "general"
-      ],
-      "metadata_score": 23,
-      "signals": [
-        "question_or_answer_terms",
-        "rights_uncertain_or_restricted"
-      ],
-      "claimed_license": "other",
-      "upstream_sha": "86e617c1c9a4bcbfcba9bf571c757bde5d1f519c",
       "source_rights": "UNVERIFIED_ITEM_LEVEL",
       "answer_quality": "UNVERIFIED",
       "item_license_verified": false,
@@ -1287,9 +383,9 @@
       "subjects": [
         "general"
       ],
-      "metadata_score": 23,
+      "metadata_score": 33,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "rights_uncertain_or_restricted"
       ],
       "claimed_license": "UNVERIFIED",
@@ -1310,9 +406,9 @@
       "subjects": [
         "general"
       ],
-      "metadata_score": 23,
+      "metadata_score": 33,
       "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
         "rights_uncertain_or_restricted"
       ],
       "claimed_license": "UNVERIFIED",
@@ -1327,14 +423,15 @@
     },
     {
       "platform": "zenodo",
-      "id": "14964217",
-      "url": "https://zenodo.org/records/14964217",
-      "title": "EXCELLING IN ORGANIC CHEMISTRY WITH CLASS MAP 2.0: TRANSITIONING FROM PAPER TO WHITEBOARD",
+      "id": "13141764",
+      "url": "https://zenodo.org/records/13141764",
+      "title": "Principle and Role of Green Chemistry in Various Organic Synthesis",
       "subjects": [
         "organic"
       ],
-      "metadata_score": 21,
+      "metadata_score": 31,
       "signals": [
+        "question_terms_only_in_description",
         "claimed_open_license"
       ],
       "claimed_license": "cc-by-4.0",
@@ -1349,415 +446,20 @@
     },
     {
       "platform": "zenodo",
-      "id": "15285696",
-      "url": "https://zenodo.org/records/15285696",
-      "title": "Organic Chemistry",
+      "id": "15065356",
+      "url": "https://zenodo.org/records/15065356",
+      "title": "Electrochemical data shown in Malagnini et al, \"Initial quality assessment and qualitative interpretation of protein film electrochemistry catalytic data\"",
       "subjects": [
-        "organic"
+        "physical"
       ],
-      "metadata_score": 21,
+      "metadata_score": 31,
       "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "15285712",
-      "url": "https://zenodo.org/records/15285712",
-      "title": "Organic Chemistry",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 21,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "18415677",
-      "url": "https://zenodo.org/records/18415677",
-      "title": "Evolving Dimensions in Organic Chemistry: Concepts, Technologies, and Future Directions",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 21,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "19200351",
-      "url": "https://zenodo.org/records/19200351",
-      "title": "ORGANIC CHEMISTRY",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 21,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "20742867",
-      "url": "https://zenodo.org/records/20742867",
-      "title": "ORGANIC CHEMISTRY",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 21,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "21169456",
-      "url": "https://zenodo.org/records/21169456",
-      "title": "Source data for \"Seasonal dynamics of aquatic organic carbon driven by floating-mat formation in a terrestrializing lake\"",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 21,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "3717770",
-      "url": "https://zenodo.org/records/3717770",
-      "title": "Organic Chemistry to Treat Diseases",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 21,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "5356500",
-      "url": "https://zenodo.org/records/5356500",
-      "title": "Molecule OCR Real images Dataset",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 21,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "7714661",
-      "url": "https://zenodo.org/records/7714661",
-      "title": "\"SYNTHESIS AND MOLECULAR DOCKING STUDIES OF NOVEL PYRROLYL BENZAIMIDAZOLE DERIVATIVES AS ANTICONVULSANT AGENTS",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 21,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "7726885",
-      "url": "https://zenodo.org/records/7726885",
-      "title": "\"SYNTHESIS AND MOLECULAR DOCKING STUDIES OF NOVEL PYRROLYL BENZAIMIDAZOLE DERIVATIVES AS ANTICONVULSANT AGENTS",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 21,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "8188436",
-      "url": "https://zenodo.org/records/8188436",
-      "title": "\"SYNTHESIS, MOLECULAR DOCKING STUDIES AND SCREENING OF ANTICONVULSANT ACTIVITY OF NOVEL PYRROLYL PYRIMIDINE DERIVATIVES\"",
-      "subjects": [
-        "organic"
-      ],
-      "metadata_score": 21,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "huggingface",
-      "id": "LucasEllenberger/ChemistryImages",
-      "url": "https://huggingface.co/datasets/LucasEllenberger/ChemistryImages",
-      "title": "LucasEllenberger/ChemistryImages",
-      "subjects": [
-        "general"
-      ],
-      "metadata_score": 19,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "mit",
-      "upstream_sha": "b21de8fee759dee4d137606b3ded97ba316b757f",
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "huggingface",
-      "id": "mrachilles/ChemistryForwardReaction",
-      "url": "https://huggingface.co/datasets/mrachilles/ChemistryForwardReaction",
-      "title": "mrachilles/ChemistryForwardReaction",
-      "subjects": [
-        "general"
-      ],
-      "metadata_score": 19,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "mit",
-      "upstream_sha": "771c1aca46f6f68ae7e9f0dfcf8a88de537b4e77",
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "huggingface",
-      "id": "nxhxl/CV_Chemical_reactions",
-      "url": "https://huggingface.co/datasets/nxhxl/CV_Chemical_reactions",
-      "title": "nxhxl/CV_Chemical_reactions",
-      "subjects": [
-        "general"
-      ],
-      "metadata_score": 19,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "mit",
-      "upstream_sha": "7cb7266f84b82dd9094032c833838f8beb7ebbcf",
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "huggingface",
-      "id": "Spectroscopy/Curious",
-      "url": "https://huggingface.co/datasets/Spectroscopy/Curious",
-      "title": "Spectroscopy/Curious",
-      "subjects": [
-        "general"
-      ],
-      "metadata_score": 19,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "apache-2.0",
-      "upstream_sha": "fb8e910a9cad7491f7ddee78a44e4d9854ad4ca1",
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "huggingface",
-      "id": "Tony-Yuan/chemistry-assistant",
-      "url": "https://huggingface.co/datasets/Tony-Yuan/chemistry-assistant",
-      "title": "Tony-Yuan/chemistry-assistant",
-      "subjects": [
-        "general"
-      ],
-      "metadata_score": 19,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "apache-2.0",
-      "upstream_sha": "1c7101380c5f2c9697b1c166e18e0b64f303e7ea",
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "huggingface",
-      "id": "Ualajac/chemistry-qa-bot",
-      "url": "https://huggingface.co/datasets/Ualajac/chemistry-qa-bot",
-      "title": "Ualajac/chemistry-qa-bot",
-      "subjects": [
-        "general"
-      ],
-      "metadata_score": 19,
-      "signals": [
-        "claimed_open_license"
-      ],
-      "claimed_license": "cc-by-4.0",
-      "upstream_sha": "afb91b2a2182692153c4a0e42bba36551dc6074b",
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "huggingface",
-      "id": "AI4Chem/C-MHChem-Benchmark-Chinese-Middle-high-school-Chemistry-Test",
-      "url": "https://huggingface.co/datasets/AI4Chem/C-MHChem-Benchmark-Chinese-Middle-high-school-Chemistry-Test",
-      "title": "AI4Chem/C-MHChem-Benchmark-Chinese-Middle-high-school-Chemistry-Test",
-      "subjects": [
-        "general"
-      ],
-      "metadata_score": 18,
-      "signals": [
-        "question_or_answer_terms",
+        "explicit_question_or_answer_title",
+        "physical",
         "claimed_open_license",
-        "likely_not_undergraduate"
+        "possible_article_not_question_bank"
       ],
-      "claimed_license": "mit",
-      "upstream_sha": "7c72db9ce7604a04e7574d6019df6b8c7469a584",
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "1544236",
-      "url": "https://zenodo.org/records/1544236",
-      "title": "Analytical chemistry",
-      "subjects": [
-        "analytical"
-      ],
-      "metadata_score": 18,
-      "signals": [
-        "analytical"
-      ],
-      "claimed_license": "cc-zero",
+      "claimed_license": "cc-by-4.0",
       "upstream_sha": null,
       "source_rights": "UNVERIFIED_ITEM_LEVEL",
       "answer_quality": "UNVERIFIED",
@@ -1769,17 +471,18 @@
     },
     {
       "platform": "zenodo",
-      "id": "1546640",
-      "url": "https://zenodo.org/records/1546640",
-      "title": "Analytical chemistry",
+      "id": "15484156",
+      "url": "https://zenodo.org/records/15484156",
+      "title": "NEW PEDAGOGICAL TECHNOLOGIES IN TEACHING ORGANIC CHEMISTRY",
       "subjects": [
-        "analytical"
+        "organic"
       ],
-      "metadata_score": 18,
+      "metadata_score": 31,
       "signals": [
-        "analytical"
+        "question_terms_only_in_description",
+        "claimed_open_license"
       ],
-      "claimed_license": "cc-zero",
+      "claimed_license": "cc-by-4.0",
       "upstream_sha": null,
       "source_rights": "UNVERIFIED_ITEM_LEVEL",
       "answer_quality": "UNVERIFIED",
@@ -1790,41 +493,20 @@
       "source_metadata_only": true
     },
     {
-      "platform": "zenodo",
-      "id": "1671355",
-      "url": "https://zenodo.org/records/1671355",
-      "title": "Analytical Chemistry.",
+      "platform": "huggingface",
+      "id": "amitjf111/first-finetuning-validate-chemistry-questions",
+      "url": "https://huggingface.co/datasets/amitjf111/first-finetuning-validate-chemistry-questions",
+      "title": "amitjf111/first-finetuning-validate-chemistry-questions",
       "subjects": [
-        "analytical"
+        "general"
       ],
-      "metadata_score": 18,
+      "metadata_score": 23,
       "signals": [
-        "analytical"
+        "explicit_question_or_answer_title",
+        "synthetic_or_model_derived"
       ],
-      "claimed_license": "cc-zero",
-      "upstream_sha": null,
-      "source_rights": "UNVERIFIED_ITEM_LEVEL",
-      "answer_quality": "UNVERIFIED",
-      "item_license_verified": false,
-      "question_and_answer_presence_verified": false,
-      "import_eligible": false,
-      "requires_human_rights_review": true,
-      "source_metadata_only": true
-    },
-    {
-      "platform": "zenodo",
-      "id": "1893221",
-      "url": "https://zenodo.org/records/1893221",
-      "title": "Analytical Chemistry.",
-      "subjects": [
-        "analytical"
-      ],
-      "metadata_score": 18,
-      "signals": [
-        "analytical"
-      ],
-      "claimed_license": "cc-zero",
-      "upstream_sha": null,
+      "claimed_license": "gpl-3.0",
+      "upstream_sha": "f74d9d5ab933e09b13c6d296245f29534095fe92",
       "source_rights": "UNVERIFIED_ITEM_LEVEL",
       "answer_quality": "UNVERIFIED",
       "item_license_verified": false,
