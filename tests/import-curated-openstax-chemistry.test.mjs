@@ -1,4 +1,5 @@
 import test from 'node:test';
+import {readFileSync} from 'node:fs';
 import assert from 'node:assert/strict';
 import {CASES,independentlyCalculate} from '../scripts/review-openstax-chemistry-numerics.mjs';
 import {candidateId,makeCandidates} from '../scripts/import-curated-openstax-chemistry.mjs';
@@ -44,4 +45,11 @@ test('no publication or quiet numerical changes after scientific staging',()=>{
  assert.throws(()=>makeCandidates({...r,items:items.map((q,i)=>i===0?{...q,release_eligible:true}:q)}),/Missing verified/);
  assert.throws(()=>makeCandidates({...r,items:items.map((q,i)=>i===0?{...q,
   independently_calculated_results:[999,999,999,999]}:q)}),/Scientific source numbers/);
+});
+
+test('quarantined Chinese reviews must not be written into main candidates by the importer',()=>{
+ const source=readFileSync(new URL('../scripts/import-curated-openstax-chemistry.mjs',import.meta.url),'utf8');
+ assert.match(source,/const dir=join\(ROOT,'external_sources\/openstax_chemistry'\)/);
+ assert.match(source,/imported_into_main_candidate_bank:0/);
+ assert.doesNotMatch(source,/join\(ROOT,'data\/candidates'\)/);
 });

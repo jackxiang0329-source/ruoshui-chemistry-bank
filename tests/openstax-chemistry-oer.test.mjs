@@ -10,6 +10,8 @@ test('pinned OpenStax CC BY 3.0 work with no invented exercise reuse approval',(
  assert.equal(validateManifest(pin),true);
  assert.throws(()=>validateManifest({...pin,items_rights_auto_approved:true}),/Unsafe/);
  assert.throws(()=>validateManifest({...pin,license_blob_sha:'0'.repeat(40)}),/Unsafe/);
+ assert.throws(()=>validateManifest({...pin,edition_rights_conflict_pending:false}),/Unsafe/);
+ assert.throws(()=>validateManifest({...pin,import_source_derived_exercises_into_main_prohibited:false}),/Unsafe/);
 });
 test('nested divs, multiline chemistry question and source solution are preserved',()=>{
  const raw='---\ntitle: "Atoms and Ions"\n---\n'+

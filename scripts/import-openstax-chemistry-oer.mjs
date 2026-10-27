@@ -68,6 +68,8 @@ export function validateManifest(m){
    m.commit!=='a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2'||
    m.tree_sha!==m.commit||m.license_blob_sha!=='83863a52718b273acbf27c1a0dc91a28f9c94ea5'||
    m.work_license!=='CC-BY-3.0'||m.items_rights_auto_approved!==false||
+   m.edition_rights_conflict_pending!==true||
+   m.import_source_derived_exercises_into_main_prohibited!==true||
    !Array.isArray(m.files)||m.files.length<140)throw Error('Unsafe OpenStax work license or pin');
  const seen=new Set();
  for(const x of m.files){

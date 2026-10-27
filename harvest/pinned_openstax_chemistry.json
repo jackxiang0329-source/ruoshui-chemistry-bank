@@ -756,5 +756,10 @@
       "sha": "fcf690b3adfd3cdb71e56c5ff1914bffeafb3763",
       "size": 21345
     }
-  ]
+  ],
+  "edition_rights_conflict_pending": true,
+  "import_source_derived_exercises_into_main_prohibited": true,
+  "canonical_original_version_notice": "https://openstax.org/books/chemistry/pages/preface",
+  "canonical_2e_version_notice": "https://openstax.org/books/chemistry-2e/pages/preface",
+  "license_discrepancy_reason": "Source historical 2014 mirror LICENSE lists CC BY 3.0; first-party original Chemistry and newer Chemistry 2e licenses/usage statements differ. No per-question re-use permission or edition concordance has been verified; source data and independent solutions must remain a quarantined research archive."
 }
