@@ -35,9 +35,6 @@ on:
       - "scripts/normalize-unpublished-candidates.mjs"
       - "tests/normalize-unpublished-candidates.test.mjs"
       - "tests/candidate-quality-audit.test.mjs"
-      - "scripts/import-muzapro-organic-mit.mjs"
-      - "tests/muzapro-organic-mit.test.mjs"
-      - "harvest/pinned_muzapro_organic_quiz.json"
       - "scripts/import-original-eis-pyeis.mjs"
       - "tests/original-eis-pyeis.test.mjs"
       - "harvest/pinned_pyeis_original_eis.json"
@@ -115,8 +112,6 @@ jobs:
         run: node --test tests/analytical-calculator-mit.test.mjs
       - name: Verify independently authored EIS physical chemistry exercises
         run: node --test tests/original-eis-pyeis.test.mjs
-      - name: Verify pinned MIT organic reaction quiz adaptations
-        run: node --test tests/muzapro-organic-mit.test.mjs
       - name: Search GitHub chemistry repositories
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -151,8 +146,6 @@ jobs:
         run: node scripts/import-analytical-calculator-mit.mjs
       - name: Import pinned Apache-2.0 reference based EIS physics practice
         run: node scripts/import-original-eis-pyeis.mjs
-      - name: Import text-only MIT organic reaction quiz adaptations
-        run: node scripts/import-muzapro-organic-mit.mjs
       - name: Normalize missing unreviewed publication flags to false
         run: node scripts/normalize-unpublished-candidates.mjs
       - name: Audit candidate review buckets and potential duplicates
