@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "b06003478d9b54b0cf2934c6b6fe2f889421204a1d7f48500d0dfe0bb546255a",
+  "subject": "analytical",
+  "topic": "permanganate_oxalate_standardization",
+  "level": "undergraduate",
+  "difficulty": "introductory_to_intermediate",
+  "question_type": "original_parametric_analytical_calculation",
+  "resource_type": "original_problem_variant_not_upstream_question",
+  "question": "分析化学·氧化还原标定：用 Na₂C₂O₄ 基准物 0.1210 g（M = 134.00 g/mol）在足量酸性条件下与 KMnO₄ 反应，消耗 17.85 mL。已知 MnO₄⁻:C₂O₄²⁻ = 2:5，求 KMnO₄ 浓度。",
+  "answer": "c(KMnO₄) = (2/5)×(0.1210/134.00)/(17.85/1000) = 0.02023 mol/L。",
+  "explanation": "先把基准物质量换算为草酸根的量，再乘 2/5 得 MnO₄⁻ 的量，除以滴定体积（L）。",
+  "numeric_answers": [
+    0.02023495965550399
+  ],
+  "parameters": {
+    "sodium_oxalate_mass_g": 0.12100000000000001,
+    "sodium_oxalate_molar_mass": 134,
+    "permanganate_volume_ml": 17.85
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-analytical-variants.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "origin": "original_deterministic_generation",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "method_reference": {
+      "repository": "PWO-CHINA/Chemistry-Calculator-Toolkit",
+      "commit": "879205657e777c00621a461e975218b395ee32ea",
+      "license": "MIT",
+      "file": "src/calculations.js",
+      "blob_sha": "20378fe9af77e64932b9f412a6c51be9b0c433b5",
+      "license_blob_sha": "49c2c01eba000fe4138e79b45083eee284f9f3bb",
+      "attribution": "Copyright (c) 2026 PWO-CHINA. Source: https://github.com/PWO-CHINA/Chemistry-Calculator-Toolkit (MIT). This repository independently authored its own Chinese exercise statements and calculations using the documented analytical chemistry methods."
+    },
+    "changes": "Independently written Chinese numerical practice variants, no questions, solutions, graphics or datasets copied from toolkit."
+  }
+}

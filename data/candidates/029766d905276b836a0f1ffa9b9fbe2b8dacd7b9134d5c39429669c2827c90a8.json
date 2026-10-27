@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "029766d905276b836a0f1ffa9b9fbe2b8dacd7b9134d5c39429669c2827c90a8",
+  "subject": "analytical",
+  "topic": "primary_standard_acid_standardization",
+  "level": "undergraduate",
+  "difficulty": "introductory_to_intermediate",
+  "question_type": "original_parametric_analytical_calculation",
+  "resource_type": "original_problem_variant_not_upstream_question",
+  "question": "分析化学·盐酸标定：以无水碳酸钠为基准物，称取 0.1700 g（M = 105.99 g/mol），滴定完全消耗 HCl 29.80 mL。反应 Na₂CO₃ + 2H⁺ → 2Na⁺ + H₂O + CO₂。求 HCl 的物质的量浓度（mol/L）。",
+  "answer": "c(HCl) = 2×(0.1700/105.99)/(29.80/1000) = 0.10765 mol/L。",
+  "explanation": "先求 n(Na₂CO₃)=m/M，再按 1:2 换算 n(HCl)，最后除以滴定剂体积（L）。",
+  "numeric_answers": [
+    0.10764596634733807
+  ],
+  "parameters": {
+    "mass_g": 0.16999999999999998,
+    "molar_mass": 105.99,
+    "hcl_volume_ml": 29.8
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-analytical-variants.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "origin": "original_deterministic_generation",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "method_reference": {
+      "repository": "PWO-CHINA/Chemistry-Calculator-Toolkit",
+      "commit": "879205657e777c00621a461e975218b395ee32ea",
+      "license": "MIT",
+      "file": "src/calculations.js",
+      "blob_sha": "20378fe9af77e64932b9f412a6c51be9b0c433b5",
+      "license_blob_sha": "49c2c01eba000fe4138e79b45083eee284f9f3bb",
+      "attribution": "Copyright (c) 2026 PWO-CHINA. Source: https://github.com/PWO-CHINA/Chemistry-Calculator-Toolkit (MIT). This repository independently authored its own Chinese exercise statements and calculations using the documented analytical chemistry methods."
+    },
+    "changes": "Independently written Chinese numerical practice variants, no questions, solutions, graphics or datasets copied from toolkit."
+  }
+}

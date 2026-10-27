@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "eff92c22b4ddcd668bc8bbfb5ce26ab5e72b93e4dae1e4efcf0702d743301ffb",
+  "subject": "analytical",
+  "topic": "stepwise_pb_bi_complexometry",
+  "level": "undergraduate",
+  "difficulty": "introductory_to_intermediate",
+  "question_type": "original_parametric_analytical_calculation",
+  "resource_type": "original_problem_variant_not_upstream_question",
+  "question": "分析化学·分步 EDTA 配位滴定：取 20.00 mL 同时含 Bi³⁺、Pb²⁺ 的试液。用 0.02170 mol/L EDTA 在经过验证的选择性条件下先测 Bi³⁺，消耗 9.85 mL；再测 Pb²⁺，**追加**消耗 16.05 mL。均为 1:1 配位，求原试液中两离子浓度。",
+  "answer": "c(Bi³⁺) = 0.01069 mol/L；c(Pb²⁺) = 0.01741 mol/L。",
+  "explanation": "Bi³⁺、Pb²⁺ 分别用两个阶段单独耗液量求得；第二阶段不是累计体积。",
+  "numeric_answers": [
+    0.010687249999999999,
+    0.01741425
+  ],
+  "parameters": {
+    "edta_molarity": 0.0217,
+    "aliquot_ml": 20,
+    "bi_edta_ml": 9.85,
+    "pb_additional_ml": 16.05
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-analytical-variants.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "origin": "original_deterministic_generation",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "method_reference": {
+      "repository": "PWO-CHINA/Chemistry-Calculator-Toolkit",
+      "commit": "879205657e777c00621a461e975218b395ee32ea",
+      "license": "MIT",
+      "file": "src/calculations.js",
+      "blob_sha": "20378fe9af77e64932b9f412a6c51be9b0c433b5",
+      "license_blob_sha": "49c2c01eba000fe4138e79b45083eee284f9f3bb",
+      "attribution": "Copyright (c) 2026 PWO-CHINA. Source: https://github.com/PWO-CHINA/Chemistry-Calculator-Toolkit (MIT). This repository independently authored its own Chinese exercise statements and calculations using the documented analytical chemistry methods."
+    },
+    "changes": "Independently written Chinese numerical practice variants, no questions, solutions, graphics or datasets copied from toolkit."
+  }
+}

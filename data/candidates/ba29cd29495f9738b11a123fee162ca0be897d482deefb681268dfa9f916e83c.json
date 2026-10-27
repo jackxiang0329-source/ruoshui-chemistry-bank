@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "ba29cd29495f9738b11a123fee162ca0be897d482deefb681268dfa9f916e83c",
+  "subject": "analytical",
+  "topic": "calcium_oxalate_indirect_assay",
+  "level": "undergraduate",
+  "difficulty": "introductory_to_intermediate",
+  "question_type": "original_parametric_analytical_calculation",
+  "resource_type": "original_problem_variant_not_upstream_question",
+  "question": "分析化学·钙的间接滴定：样品 0.8700 g 处理为草酸盐后定容至 250.0 mL，取 25.00 mL 用 0.01700 mol/L KMnO₄ 滴定，样品耗 9.20 mL，空白耗 0.14 mL。按 n(Ca)=2.5 n(MnO₄⁻)，M(Ca)=40.078 g/mol，求样品中钙的质量分数。",
+  "answer": "w(Ca) = [(5/2)×0.01700×(9.20−0.14)/1000×(250.0/25.00)×40.078/0.8700]×100% = 17.74%。",
+  "explanation": "扣除空白后以 5/2 换算草酸钙的量，再考虑 250/25 的分取倍数，用元素 Ca 的摩尔质量计算质量百分数。",
+  "numeric_answers": [
+    17.73797
+  ],
+  "parameters": {
+    "permanganate_molarity": 0.017,
+    "sample_titrant_ml": 9.2,
+    "blank_titrant_ml": 0.14,
+    "total_ml": 250,
+    "aliquot_ml": 25,
+    "sample_mass_g": 0.87,
+    "calcium_molar_mass": 40.078
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-analytical-variants.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "origin": "original_deterministic_generation",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "method_reference": {
+      "repository": "PWO-CHINA/Chemistry-Calculator-Toolkit",
+      "commit": "879205657e777c00621a461e975218b395ee32ea",
+      "license": "MIT",
+      "file": "src/calculations.js",
+      "blob_sha": "20378fe9af77e64932b9f412a6c51be9b0c433b5",
+      "license_blob_sha": "49c2c01eba000fe4138e79b45083eee284f9f3bb",
+      "attribution": "Copyright (c) 2026 PWO-CHINA. Source: https://github.com/PWO-CHINA/Chemistry-Calculator-Toolkit (MIT). This repository independently authored its own Chinese exercise statements and calculations using the documented analytical chemistry methods."
+    },
+    "changes": "Independently written Chinese numerical practice variants, no questions, solutions, graphics or datasets copied from toolkit."
+  }
+}

@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "total_candidates": 1390,
-  "corpus_hash_sha256": "ba920d5ce7223d5212f1f3473ab2b395983c758e386dbbbcad4dda9da74eb50f",
+  "total_candidates": 1486,
+  "corpus_hash_sha256": "2bcc0956fdac59d75e8a56bf5ad68a412c3f6e32bfdaac1dbbaf5a1927315a8d",
   "by_subject": {
-    "analytical": 33,
+    "analytical": 129,
     "inorganic": 849,
     "organic": 455,
     "physical": 53
   },
   "by_content_kind": {
-    "exercise_candidate": 1112,
+    "exercise_candidate": 1208,
     "study_card": 278
   },
   "by_quality_status": {
-    "awaiting_expert_review": 1390
+    "awaiting_expert_review": 1486
   },
   "by_publishable": {
-    "false": 1390
+    "false": 1486
   },
   "source_counts": {
     "ChemTrain/chemtrain-daily": 268,
@@ -32,20 +32,28 @@
     "QC-Edu/IntroQM": 3,
     "arya51-ai/parametric-question-engine": 30,
     "bem130/chemquiz": 67,
-    "jackxiang0329-source/ruoshui-chemistry-bank": 24,
+    "jackxiang0329-source/ruoshui-chemistry-bank": 120,
     "kbknudsen/PyEIS": 8
   },
   "topic_counts": {
+    "analytical:calcium_oxalate_indirect_assay": 12,
     "analytical:complexometric_titration": 1,
+    "analytical:copper_iodometric_mass_fraction": 12,
     "analytical:double_indicator_alkalinity": 1,
+    "analytical:double_indicator_carbonate_bicarbonate": 12,
+    "analytical:edta_zinc_complexometric_standardization": 12,
     "analytical:gravimetric_redox_assay": 1,
     "analytical:iodometric_assay": 1,
+    "analytical:iodometric_kio3_standardization": 12,
     "analytical:iodometric_standardization": 1,
+    "analytical:permanganate_oxalate_standardization": 12,
+    "analytical:primary_standard_acid_standardization": 12,
     "analytical:qualitative_cation_analysis": 19,
     "analytical:redox_standardization": 1,
     "analytical:sequential_complexometric_titration": 1,
     "analytical:solution_concentration": 6,
     "analytical:standard_solution_standardization": 1,
+    "analytical:stepwise_pb_bi_complexometry": 12,
     "inorganic:chemical_formula_molar_mass": 6,
     "inorganic:coordination_geometry": 133,
     "inorganic:ligand_electron_donation": 47,
@@ -90,8 +98,80 @@
     "samples": []
   },
   "same_template_families": {
-    "count": 36,
+    "count": 44,
     "samples": [
+      {
+        "count": 12,
+        "ids": [
+          "013e1206c4a72f90e7f1f72fea9509d7a8ba99c8bbfa5bf4c6c0b6397233cd9c",
+          "20b7bd0ba0be9e09a8e9f485eabe13b5292de7e9209760d960b50fccd333073e",
+          "64790cc5e9307699699a890e0ec7758d6fa34cae9e9828d24781a60ef62fdbf0",
+          "6685d1cd5d5919119df81e6d44fc928ee82ecc263350b2b724d99288dacfd083"
+        ]
+      },
+      {
+        "count": 12,
+        "ids": [
+          "029766d905276b836a0f1ffa9b9fbe2b8dacd7b9134d5c39429669c2827c90a8",
+          "040d5007ba979de9039c3be7d4b1a5c73a67da477a5d225480a8cb1bf86bad93",
+          "1a6d2728292b5e293239ecd3008813db42b372a61b2c081812f099feb5b8fc7a",
+          "250518947697b36cc21f85ff84edf61773d4b04f4878dea50ee158e22c92e09b"
+        ]
+      },
+      {
+        "count": 12,
+        "ids": [
+          "07d6798fbc515e7f400abc849ddc2698ad35fe3bf5a2fa00075bc693c17d60de",
+          "08c130b63247c893bfb74951d88cfa25e72b157dffcf7fa2663133a23b48e5f4",
+          "0e7825bda8bdbd1320dc15b56b606c7db225b20312d46e98215186764e6abb8f",
+          "19595ee8726770788338d8c3cdd71c29379cc5c08053916ee23cc9c8418830f0"
+        ]
+      },
+      {
+        "count": 12,
+        "ids": [
+          "1b51c4fc0e5d82a9796730898aefebed408acd8fcb45666da3de8670dcec903b",
+          "4b8c6ecedcd79c965f39ef35699b9700404f5059bb2d62731076b843e1893515",
+          "6214f263d6ada3c9648b709ac628dd90ec2b07c4a02497f1311f7ed7c6101a3c",
+          "71dc30c33d25c7f9e0543252ce60ac4923aa14b669ab569f03e902a8865e867e"
+        ]
+      },
+      {
+        "count": 12,
+        "ids": [
+          "1b706d8b38d800e0ea687bb6d44c91a9f45e21bb151be43cd8039fe9ff49d484",
+          "265f3fc9ad5450ae7303a4e88cf8ad286e8ffdb07bae2f3d3fe5d9a4633a38aa",
+          "53ca86c3888a822d93d07f9ffc6084e32a1bcc9eb96c01c87c268b91666afa46",
+          "5a85764a78b2ea039f0589afb564b1b7c70efd9298b61e9c1828ee16f627be90"
+        ]
+      },
+      {
+        "count": 12,
+        "ids": [
+          "273a4612b21565ffc8631f3465b6ac948268db8392907d316d7f77b8bc5e559c",
+          "28a098fcd1bb1d9a9578ef8d3a4af6396c3e57e89cd4cf142b6a7528b7b4f73f",
+          "45305dda3079843fb39e70a12612e698a6c7f2d56c7f5f7c93bdcb6a82b76121",
+          "4deb3287d604bb00c72ff27cfcd5d5884fd096e832ee6e032f86a2499123ea08"
+        ]
+      },
+      {
+        "count": 12,
+        "ids": [
+          "2841a3af95bd64b5892916a0df03c9cfe46d1ddb769ceb211484acb655a9c97b",
+          "4c73dd96702ac96e1d7464e8474c6fbd87a1042873cb0756e457066cb8f2861f",
+          "50581d637979a3be05a594d63fe4cb007a42a2b45414352d2b1b4112c7857260",
+          "6eda21a45b0eedc1f42c0b48d7d674d97984f6bac987395a34b0a9e5d92c8d1e"
+        ]
+      },
+      {
+        "count": 12,
+        "ids": [
+          "42e41b061790a4f136956d85bb75c364b93c6cb44344158a105e4b8931f59c87",
+          "44fe33e0c8b2b7ec28e66c893f03c3d21928bf37a2e9f677478ff2f1b4878cdf",
+          "525b754fccc80ba3721f5e7ca524032472d2de0a479b045413f6a4d5ae5be164",
+          "579e5d967de87df9cc43b5603712d7d8a50910c099fc3aaf3cefec9446a6a8be"
+        ]
+      },
       {
         "count": 6,
         "ids": [
@@ -256,62 +336,6 @@
         "ids": [
           "445ff7a6280eb15857af7d4d314f90b69994df2c3015b292481cd6f8dc1ab357",
           "b511174144cc687db32a8f004a7c282f1ccba53fb28ea390c7a12026196c06ff"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "530431d147abd76534b82535fbc66c415ca5301670e6218301da7b281b8efcb7",
-          "bd9aeaa583ecd69399d78b718ba8b36066636aa4195967ba31449fe492a783e8"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "652812744afe3c7530bb87d3cb5b229383b3a1ede61cfb5f33e2ead8fd59ec4f",
-          "a2f5bdb4c3b2d5b303b4989993ec4507a4edc42efccdb72421d8564c3965c00d"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "692cf5b76214b010b8a0c7105b32eefe5694f01c3895af845d7a6635c255e433",
-          "7a3bca388ce7739cb14b821ce1e37d5d8e8e068d30d9c6547c8466f8b45b1558"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "6ae9e80634fba0366527204c7cfdb8278309667f38ba042129ac3bdb20fc1d03",
-          "8fff4b7f32381d69e22d43cc758dd57fecea4a7d11baa09bfe982c9410a6905a"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "7951f97e69be66881840362c735b3cbf40620e14acadefa558d3c3f7e4c380c4",
-          "9e40f76dfbf7f076d264036093623a237821659fd2595c0a14062a963d60268a"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "7bbf664c6a74a60c3206734d0cab5e3e88d68b2701c30300ec1b2243e69854f3",
-          "826f531fd4536e8e129d23516a14f83270a899945a78917ef9c2991f0765c6db"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "8f491ad2486e28fab1c9d0b2f863454b6dbbf465d79cee545db29faf9cbe1220",
-          "af132669821a2cc56e38a59e394d0cb23394655307c97630ea99a5739563d236"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "90ff447455bbd107b40ce8508d86f0248db83901155c1662eababe4fc26d19bb",
-          "a1f322d5377cd6b5fca6f72b8762ef80f2903f18346641f2372fd1238d696ad4"
         ]
       }
     ]

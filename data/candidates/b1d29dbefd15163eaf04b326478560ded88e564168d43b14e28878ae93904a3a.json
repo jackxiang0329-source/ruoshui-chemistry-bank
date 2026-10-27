@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "b1d29dbefd15163eaf04b326478560ded88e564168d43b14e28878ae93904a3a",
+  "subject": "analytical",
+  "topic": "double_indicator_carbonate_bicarbonate",
+  "level": "undergraduate",
+  "difficulty": "introductory_to_intermediate",
+  "question_type": "original_parametric_analytical_calculation",
+  "resource_type": "original_problem_variant_not_upstream_question",
+  "question": "分析化学·双指示剂法：取 25.00 mL 仅含 Na₂CO₃、NaHCO₃ 的溶液，用 0.08600 mol/L HCl 滴定。到酚酞终点耗 8.00 mL，此后到甲基橙终点**追加** 11.70 mL。按理想计量反应计算两种盐的浓度。",
+  "answer": "c(Na₂CO₃) = 0.02752 mol/L；c(NaHCO₃) = 0.01273 mol/L。",
+  "explanation": "第一终点耗酸为 n(CO₃²⁻)，甲基橙阶段的追加耗酸为 n(CO₃²⁻)+n(原有 HCO₃⁻)，故后者由追加耗酸量减去第一阶段耗酸量求得。",
+  "numeric_answers": [
+    0.027520000000000003,
+    0.012728
+  ],
+  "parameters": {
+    "hcl_molarity": 0.08600000000000001,
+    "sample_ml": 25,
+    "phenolphthalein_ml": 8,
+    "additional_methyl_orange_ml": 11.7
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-analytical-variants.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "origin": "original_deterministic_generation",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "method_reference": {
+      "repository": "PWO-CHINA/Chemistry-Calculator-Toolkit",
+      "commit": "879205657e777c00621a461e975218b395ee32ea",
+      "license": "MIT",
+      "file": "src/calculations.js",
+      "blob_sha": "20378fe9af77e64932b9f412a6c51be9b0c433b5",
+      "license_blob_sha": "49c2c01eba000fe4138e79b45083eee284f9f3bb",
+      "attribution": "Copyright (c) 2026 PWO-CHINA. Source: https://github.com/PWO-CHINA/Chemistry-Calculator-Toolkit (MIT). This repository independently authored its own Chinese exercise statements and calculations using the documented analytical chemistry methods."
+    },
+    "changes": "Independently written Chinese numerical practice variants, no questions, solutions, graphics or datasets copied from toolkit."
+  }
+}
