@@ -27,6 +27,9 @@ on:
       - "tests/parametric-mit-chemistry.test.mjs"
       - "third_party/parametric-question-engine/**"
       - "tests/chemtrain-pg-learn.test.mjs"
+      - "scripts/import-chemtrain-pka-qualitative.mjs"
+      - "tests/chemtrain-pka-qualitative.test.mjs"
+      - "harvest/pinned_pka_qualitative_sites.json"
       - "harvest/pinned_pg_learn_deprotection.json"
       - "LICENSE-ORIGINAL-QUESTIONS.md"
       - "harvest/pinned_photoredox_quenching.json"
@@ -73,6 +76,8 @@ jobs:
         run: node --test tests/original-physical.test.mjs
       - name: Verify pinned CC BY 4.0 PG Learn importer
         run: node --test tests/chemtrain-pg-learn.test.mjs
+      - name: Verify pinned CC BY 4.0 pKa qualitative practice
+        run: node --test tests/chemtrain-pka-qualitative.test.mjs
       - name: Verify pinned MIT parametric general chemistry generator
         run: node --test tests/parametric-mit-chemistry.test.mjs
       - name: Search GitHub chemistry repositories
@@ -95,6 +100,8 @@ jobs:
         run: node scripts/import-original-physical.mjs
       - name: Import pinned CC BY 4.0 PG Learn protecting-group MCQs
         run: node scripts/import-chemtrain-pg-learn.mjs
+      - name: Import pinned CC BY 4.0 pKa qualitative comparisons
+        run: node scripts/import-chemtrain-pka-qualitative.mjs
       - name: Generate vetted introductory chemistry variants from pinned MIT code
         run: node scripts/import-parametric-mit-chemistry.mjs
       - name: Commit only real additions or changes
