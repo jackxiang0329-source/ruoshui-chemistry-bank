@@ -14,6 +14,9 @@ export function rankSource(x){
  const licensed=x.repository_license_spdx&&!['UNKNOWN','NOASSERTION','NONE'].includes(x.repository_license_spdx);
  const topical=/(chemistry|chemical|analytical|electrochem|spectroscop|titration|stoichiomet|inorganic|organic|chemtrain|chemquiz|physical.chemistry|化学)/i.test(text);
  const education=/(quiz|exam|questions?|problem|exercise|worksheet|practice|course|lesson|tutorial|notebook|dataset|calculator|simulation|educat|lab|chemtrain|试题|练习|习题|题库)/i.test(text);
+ // Topic + MIT metadata does not establish that a repository contains reusable questions.
+ const directExercise=/(quiz|exams?|questions?|exercises?|worksheets?|problem.?sets?|practice.?problems?|assessments?|题库|试题|练习|习题)/i.test(text);
+ const toolOnly=!directExercise&&/(calculator|simulat|analy[sz]|visualiz|toolkit|software|data.?processing|web.?app)/i.test(text);
  if(!topical||!education)return null;
  let score=0;
  if(subjects.includes('analytical'))score+=18;
@@ -21,6 +24,8 @@ export function rankSource(x){
  if(subjects.includes('organic'))score+=9;
  if(subjects.includes('inorganic'))score+=8;
  if(licensed)score+=12;
+ if(directExercise)score+=14;
+ if(toolOnly)score-=24;
  if(/(question.?bank|quiz|exercises?|problem.?set|assessment|题库|试题)/i.test(text))score+=8;
  if(/(calculator|simulation|notebook|tutorial|course)/i.test(text))score+=4;
  if(/(class 10|class 12|jee |neet|ap chemistry|high.school|school olympiad|gcse)/i.test(text))score-=15;
@@ -29,6 +34,7 @@ export function rankSource(x){
  return {repository:x.repository,url:x.url,subjects,score,
   repository_license_spdx:x.repository_license_spdx||'UNKNOWN',
   source_license_metadata_only:true,
+  question_presence_signal:directExercise?'explicit_question_or_exercise_claim':toolOnly?'software_or_tool_only_claim':'education_material_claim_only',
   question_content_rights:rights,
   state:'needs_per_question_provenance_and_answer_quality_review',
   rationale:licensed?'Repository license metadata exists, but individual question rights require separate verification.':
