@@ -1,5 +1,17 @@
 name: Fast chemistry source discovery (10 min)
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/chemistry-discovery-fast.yml"
+      - "scripts/harvest-chemistry-sources.mjs"
+      - "tests/harvest.test.mjs"
+      - "scripts/harvest-public-chemistry.mjs"
+      - "tests/harvest-public-chemistry.test.mjs"
+      - "scripts/prioritize-chemistry-sources.mjs"
+      - "tests/prioritize-chemistry-sources.test.mjs"
+      - "harvest/search_queries.json"
+      - "harvest/public_dataset_queries.json"
   schedule:
     - cron: "4,14,24,34,44,54 * * * *"
   workflow_dispatch:
