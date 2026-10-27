@@ -7,6 +7,7 @@ const [meta,splits]=await Promise.all([
  json(base+'/splits?dataset='+encodeURIComponent(ds))]);
 const entries=(splits.splits||[]).map(x=>({config:x.config,split:x.split,num_rows:x.num_rows}));
 console.log('DATASET '+JSON.stringify({sha:meta.sha,license:meta.cardData?.license,tags:(meta.tags||[]).filter(t=>t.includes('license')),splits:entries}));
+console.log('SPLIT_DETAILS '+JSON.stringify((splits.splits||[]).map(x=>({config:x.config,split:x.split,all:x}))));
 const rq=entries.find(x=>/RQA/i.test(x.split))||entries.find(x=>/RQA/i.test(x.config));
 if(!rq)throw Error('RQA specific chemistry split missing');
 const u=new URL(base+'/rows');for(const [k,v] of Object.entries({dataset:ds,config:rq.config,split:rq.split,offset:0,length:4}))u.searchParams.set(k,String(v));
