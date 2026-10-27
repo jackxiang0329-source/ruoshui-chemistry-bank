@@ -67,7 +67,7 @@ export const CASES=[
  {topic:'momentum_vs_kinetic_operator_eigenstates',question_cell:71,key_cell:78,
   issue:'student_problem_is_biconditional_but_key_one_way',
   question:'量子化学·算符本征态：判断“动量算符的每个本征函数必是动能算符的本征函数，反之也成立”是否正确。以一维自由粒子 p̂=−iℏ∂/∂x、T̂=p̂²/(2m) 给出证明或反例。',
-  explanation:'双向结论为假：p̂φ=pφ 蕴含 T̂φ=p²φ/(2m)，但 cos(kx) 是 T̂ 的本征函数却不是 p̂ 的本征函数。原题保留双向说法，答案键只回答单向命题，必须标注版本差异。',
+  explanation:'双向结论为假，反之不成立：p̂φ=pφ 蕴含 T̂φ=p²φ/(2m)，但 cos(kx) 是 T̂ 的本征函数却不是 p̂ 的本征函数。原题保留双向说法，答案键只回答单向命题，必须标注版本差异。',
   values:[]}
 ];
 export function verifyPhysics(item,vals){
@@ -102,7 +102,7 @@ export function generate(){
    source_key_issue:item.issue,source_question_cell_index:item.question_cell,
    source_key_cell_index:item.key_cell,
    quality_status:'awaiting_expert_review',publishable:false,semantic_duplicate_review_pending:true,
-   scientifically_machine_checked:true,source:{
+   scientifically_machine_checked:vals.length>0,conceptual_answer_requires_expert_review:vals.length===0,source:{
     repository:OWN,commit:COMMIT,file:'ipynb/IntroQM2021.ipynb',
     key_notebook:'ipynb/IntroQMkey.ipynb',
     license:'CC0-1.0',content_rights_verified:false,item_level_rights_review_pending:true,
