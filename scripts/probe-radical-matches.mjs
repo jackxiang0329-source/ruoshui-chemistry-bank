@@ -11,3 +11,5 @@ for(const deck of data.radicals)for(let i=0;i<(deck.questions||[]).length;i++){
  type:q.type,name:q.name,answer:q.answer,partner:q.partner,options:q.options,labels:q.labels,
  note:q.note?.slice(0,360),hard:q.hard,src:q.src?.slice(0,2)}).slice(0,1800));
 }
+
+console.log('PARTNER_MOLECULES '+JSON.stringify(data.mols.slice(29,38).map((x,i)=>({index:i+29,keys:Object.keys(x),name:x.name,title:x.title,label:x.label,formula:x.formula}))).slice(0,3600));
