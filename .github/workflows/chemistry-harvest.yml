@@ -26,6 +26,8 @@ on:
       - "tests/chemquiz-organic.test.mjs"
       - "scripts/import-chemtrain-radical.mjs"
       - "tests/chemtrain-radical.test.mjs"
+      - "scripts/import-chemtrain-radical-matching.mjs"
+      - "tests/chemtrain-radical-matching.test.mjs"
       - "scripts/import-chemtrain-photoredox.mjs"
       - "tests/chemtrain-photoredox.test.mjs"
       - "scripts/import-original-physical.mjs"
@@ -113,6 +115,8 @@ jobs:
         run: node --test tests/chemquiz-organic.test.mjs
       - name: Verify pinned Radical Learn source and importer
         run: node --test tests/chemtrain-radical.test.mjs
+      - name: Verify original-author licensed 12 radical polarity-matching exercises
+        run: node --test tests/chemtrain-radical-matching.test.mjs
       - name: Verify pinned Photoredox Learn importer
         run: node --test tests/chemtrain-photoredox.test.mjs
       - name: Verify original physical chemistry calculations
@@ -161,6 +165,8 @@ jobs:
         run: node scripts/import-chemquiz-organic.mjs
       - name: Import CC BY 4.0 Radical Learn text-only organic classification cards
         run: node scripts/import-chemtrain-radical.mjs
+      - name: Import pinned CC BY text-only organic radical matching exercises
+        run: node scripts/import-chemtrain-radical-matching.mjs
       - name: Import pinned CC BY 4.0 Photoredox Learn cycles
         run: node scripts/import-chemtrain-photoredox.mjs
       - name: Generate original CC0 physical chemistry exercises
