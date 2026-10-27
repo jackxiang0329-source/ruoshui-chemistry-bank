@@ -82,8 +82,7 @@ export async function run(fetchJSON=request){
  const metadata=await fetchJSON('https://huggingface.co/api/datasets/'+cfg.dataset);
  if(metadata.sha!==cfg.revision||metadata.cardData?.license!=='cc-by-4.0')throw Error('Dataset SHA or content license drift');
  const splits=await fetchJSON('https://datasets-server.huggingface.co/splits?dataset='+encodeURIComponent(cfg.dataset));
- if(!splits.splits?.some(x=>x.config==='default'&&x.split==='RQA'&&
-   (x.num_examples===cfg.total_rows||x.num_rows===cfg.total_rows)))
+ if(!splits.splits?.some(x=>x.config==='default'&&x.split==='RQA'))
   throw Error('RQA source split rows changed; fail closed');
  let offset=state.next_offset,accepted=[],reject={},pageCount=0;
  const start=offset;
@@ -94,6 +93,7 @@ export async function run(fetchJSON=request){
    length:Math.min(cfg.page_size,cfg.total_rows-offset)}))url.searchParams.set(k,String(v));
   const page=await fetchJSON(String(url));
   if(page.partial||!Array.isArray(page.rows)||page.rows.length===0)throw Error('Empty or truncated source page');
+  if(page.num_rows_total!==cfg.total_rows)throw Error('RQA rows total changed or missing; abort without writing');
   if(page.rows.some((x,j)=>x.row_idx!==offset+j))throw Error('Dataset offset shifted unexpectedly');
   const processed=curatePage(page.rows,cfg,seen);
   for(const [k,v] of Object.entries(processed.excluded))reject[k]=(reject[k]||0)+v;
