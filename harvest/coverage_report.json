@@ -4,12 +4,14 @@
   "main_exercise_candidates": 1437,
   "main_study_cards": 278,
   "external_oer_unreviewed_blocks": 1782,
-  "combined_record_count_not_unique_exercises": 3497,
+  "nvidia_synthetic_research_quarantine_records": 8056,
+  "nvidia_research_rows_examined": 8400,
+  "combined_record_count_not_unique_exercises": 11553,
   "confirmed_official_exam_ready": 0,
   "external_openstax_work_license": "CC-BY-3.0",
   "external_source_exercise_blocks_with_original_solution": 897,
   "external_sections_inspected": 149,
   "external_sections_total": 149,
-  "exam_eligibility_note": "Main candidates include numerical template variations and study cards; the separate OpenStax OER archive contains raw question blocks. These counts cannot be interpreted as unique, correct, independent, or released chemistry exam questions. Cross-tier semantic overlap may exist.",
-  "counting_policy": "Keep raw OER, main candidate exercises, study cards, and approved exam bank numerically separate."
+  "exam_eligibility_note": "Main candidates include numerical variants and study cards; OpenStax is unverified raw exercises; NVIDIA RQA is synthetic research QAs with a high unclassified fraction. Totals are not independent, scientifically correct or released chemistry exam questions. Cross-tier semantic overlap may exist.",
+  "counting_policy": "Keep OpenStax raw OER, NVIDIA research quarantine, main candidate exercises, study cards and approved exam bank numerically separate."
 }
