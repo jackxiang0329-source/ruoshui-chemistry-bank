@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "3ff03fff4089bbb65d0ba68fa9abb3e060092ef540a0d6c4a61235663cd1391b",
+  "subject": "physical",
+  "topic": "eyring_activation_free_energy",
+  "question_type": "original_advanced_physical_calculation",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "物理化学·过渡态理论：某一级反应在 311.15 K 时的速率常数为 0.24000 s⁻¹。假设传输系数 κ=1，采用 Eyring 关系 k=(kBT/h)exp(−ΔG‡/RT)，求该温度的标准活化吉布斯自由能 ΔG‡（kJ/mol）。取 kB=1.380649×10⁻²³ J/K、h=6.62607015×10⁻³⁴ J·s、R=8.314462618 J/(mol·K)。",
+  "answer": "ΔG‡=RT ln[(kBT/h)/k]=80.01050 kJ/mol。",
+  "explanation": "标准态及传输系数按题设处理，kBT/h 和 k 单位均为 s⁻¹，比值无量纲；最后将 J/mol 化为 kJ/mol。",
+  "numeric_answers": [
+    80.01049740124964
+  ],
+  "parameters": {
+    "T_K": 311.15,
+    "k_s_1": 0.24
+  },
+  "units": "kJ/mol",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-advanced-physical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical numerical practice; no third-party question wording, measurements or media copied."
+  }
+}

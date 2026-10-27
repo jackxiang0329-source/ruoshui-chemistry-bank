@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "4646becac6bc686d5b014806bdbcdfabb7db540efbff8c6e36de7be9b80b3260",
+  "subject": "physical",
+  "topic": "isothermal_ideal_gas_entropy",
+  "question_type": "original_advanced_physical_calculation",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "物理化学·理想气体等温熵变：0.90 mol 理想气体在恒温下由 7.000 L 可逆等温膨胀至 18.200 L。求系统熵变 ΔS（J/K）。",
+  "answer": "ΔS=nR ln(V₂/V₁)=7.15011 J/K。",
+  "explanation": "熵是状态函数，理想气体等温时内能只与温度有关；沿可逆等温路径积分 δqrev/T=nR dV/V。",
+  "numeric_answers": [
+    7.1501077718083845
+  ],
+  "parameters": {
+    "n_mol": 0.9,
+    "V1_L": 7,
+    "V2_L": 18.2
+  },
+  "units": "J/K",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-advanced-physical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical numerical practice; no third-party question wording, measurements or media copied."
+  }
+}

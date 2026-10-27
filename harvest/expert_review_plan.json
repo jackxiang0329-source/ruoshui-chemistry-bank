@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
-  "total_candidates": 1646,
-  "corpus_id_hash_sha256": "d4d59f8f28b1aff607747e9352ef3210a62033456f1fb0e59eaced43d161b73f",
+  "total_candidates": 1694,
+  "corpus_id_hash_sha256": "a613101d3011d570fbc2efffa613b080d8d118679c5bfffcbf1b0bee0703f206",
   "by_subject": {
     "analytical": 193,
     "inorganic": 849,
     "organic": 467,
-    "physical": 137
+    "physical": 185
   },
   "by_content_kind": {
-    "exercise_candidate": 1368,
+    "exercise_candidate": 1416,
     "study_card": 278
   },
-  "topics_total": 70,
-  "template_source_clusters": 1386,
-  "multi_variant_clusters": 48,
-  "multi_variant_candidates": 308,
+  "topics_total": 78,
+  "template_source_clusters": 1394,
+  "multi_variant_clusters": 56,
+  "multi_variant_candidates": 356,
   "flag_counts": {
     "item_or_source_license_evidence_not_attached": 5,
-    "numerical_answer_requires_scientific_review": 260,
-    "semantic_duplicate_review_pending": 818,
+    "numerical_answer_requires_scientific_review": 308,
+    "semantic_duplicate_review_pending": 866,
     "study_card_not_exam_question": 278
   },
   "requested_representatives_per_subject": 32,
@@ -33,11 +33,11 @@
   },
   "selected_topics_by_subject": {
     "analytical": 26,
-    "physical": 24,
+    "physical": 32,
     "organic": 14,
     "inorganic": 6
   },
-  "unselected_candidate_count": 1519,
+  "unselected_candidate_count": 1567,
   "expert_approved_count": 0,
   "publishable_count": 0,
   "source_rights_approved_by_this_process": 0,
@@ -564,15 +564,20 @@
     },
     {
       "subject": "physical",
-      "topic": "calorimetry",
-      "source": "arya51-ai/parametric-question-engine",
-      "representative_id": "924e7a2e858a3bec0549fe1a2f6dd33b574c88b36b76c3a5a74858ff92c2736c",
-      "candidate_count": 2,
+      "topic": "arrhenius_activation_energy_two_temperatures",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "0e93861c12480263bfc5820fe98348c171c55c14046c9ac4642882a13c0b7657",
+      "candidate_count": 6,
       "sample_other_ids": [
-        "9727eb00513b6df706da831b3434e08d75b5e4af81c811264c305edb57c02bc5"
+        "102da320cfdde9f9e1cf9f384d8a2f266088a2fbde4e5009656ebd7172f2ae1b",
+        "17efe8ea15fe214b575b8ace2413e9e6cbdc95b2fd8171c0f7fb46878a5d39f6",
+        "848faa20eb9069ece6d867fd1f9b07302da75ecea5f863a9e4ce812fb105aaad"
       ],
       "resource_type": "exercise_candidate",
-      "flags": [],
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
       "review_priority_score": 16,
       "approved_for_publication": false
     },
@@ -580,10 +585,10 @@
       "subject": "physical",
       "topic": "calorimetry",
       "source": "arya51-ai/parametric-question-engine",
-      "representative_id": "a1613a1253539afa4b09f466a337803def6e4ff8c5f7b071d560a494298615ac",
+      "representative_id": "924e7a2e858a3bec0549fe1a2f6dd33b574c88b36b76c3a5a74858ff92c2736c",
       "candidate_count": 2,
       "sample_other_ids": [
-        "cc3d74a4043e1c463d57bad611b24214f956455098b5930072c963da0616f14c"
+        "9727eb00513b6df706da831b3434e08d75b5e4af81c811264c305edb57c02bc5"
       ],
       "resource_type": "exercise_candidate",
       "flags": [],
@@ -624,22 +629,6 @@
     },
     {
       "subject": "physical",
-      "topic": "chemical_kinetics",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "2ad2297b6bc9e17fa43761e9678a02929f7667cd31018746dee1be2b0d5aabf5",
-      "candidate_count": 6,
-      "sample_other_ids": [
-        "2bad72df84db3ac4a597676826eee096751617a8e05efec831e781dc274ecbca",
-        "2c340ac7892b72975cc20bb4cd22b2527602f352fac850f5c24c81454cf9af14",
-        "323e2df5c6ba27c894a6c37d12609ac931adf2c4b0a1464086880647a166e99c"
-      ],
-      "resource_type": "exercise_candidate",
-      "flags": [],
-      "review_priority_score": 16,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
       "topic": "chemical_thermodynamics",
       "source": "jackxiang0329-source/ruoshui-chemistry-bank",
       "representative_id": "2d17629d3d952da5fdb43a00b4ae292deb5ab29f3b70daaf1045a080222235ba",
@@ -651,6 +640,25 @@
       ],
       "resource_type": "exercise_candidate",
       "flags": [],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "debye_huckel_mean_activity_coefficient",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "0cac17b0c3d5f8e77ae97c402c4fe5505e6d0de2d201930d715f86214f1212dd",
+      "candidate_count": 6,
+      "sample_other_ids": [
+        "449eb019f93f84b9046dd2d3a6696aa6ff69e7a3eebfcb2fbc245e9d6d22f11d",
+        "79ee32db3dfad638ed325e97d3b8465d5cb371a7ad2d2b772d482099b4327809",
+        "b8e219008215181ba688001484ac302eb6f0dd62f817a78688b9addb15b09182"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
       "review_priority_score": 16,
       "approved_for_publication": false
     },
@@ -705,6 +713,120 @@
       ],
       "resource_type": "exercise_candidate",
       "flags": [],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "eyring_activation_free_energy",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "2dbaa026d2aa37cc61ed9e1c3264bbb6571d95b15ed1f01c79181c94db8cffcb",
+      "candidate_count": 6,
+      "sample_other_ids": [
+        "3ff03fff4089bbb65d0ba68fa9abb3e060092ef540a0d6c4a61235663cd1391b",
+        "98587bb4d39e9bd40b471a5f7ef2ff42df8f048cb8f6c5d990ef41b0a052d084",
+        "b8858b0fdbd278a2047e0d5abdff87976f6bd744fda30422546556d11196d27d"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "harmonic_oscillator_vibrational_spacing",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "2e0b3f51ba18671415e2e411f7877584d2bc4316aa632508ccea8c7d5df14cd4",
+      "candidate_count": 6,
+      "sample_other_ids": [
+        "50a68e25877594a250f1ac77205d57da49adf8fdf359aa66a8a1a2bbe20ccf73",
+        "8e28f80d7f493e8748c3d3b690ce57233c1440e2ca8c9e9646de31d848e6bbdf",
+        "8ed2302988f1a4b5403356f4e7f4d59904b1b30bcc61ce2be969d4414d00cf76"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "ideal_binary_vle_raoult",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "044f6fc9d40a536e241ff0b5dd92f99aef634572ffa5794b1fc086750153fb26",
+      "candidate_count": 6,
+      "sample_other_ids": [
+        "4c3e5651a0d5e0e34b8de4408cb128d6888d61af58d2bce69ad65871de15d3fa",
+        "92d48c1f34f12070e4e2a2c6971c15a18ea33d7de60bc9bbc0602db1bd31e31c",
+        "b34e51852fbbb6e924d4c617148f9d00595a9eb9e361a0b07bb832387dc4c1ab"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "isothermal_ideal_gas_entropy",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "1a67c7e743dba5a46cebedc0b8b9273f31bdd4111bd79ffc02e6dff004f3c765",
+      "candidate_count": 6,
+      "sample_other_ids": [
+        "20775b5b4d6962cc49d43f1629169e89f14055b060a54932831ea97cdf64789b",
+        "4646becac6bc686d5b014806bdbcdfabb7db540efbff8c6e36de7be9b80b3260",
+        "481506e1c06ff591689f62e1afe301ec3dbde24fd120fadc382b58f6e14ed652"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "langmuir_surface_coverage",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "2619c0b8db5a0bc5c4863faa68eb9cd6b1f954d9de5bbb646dc71b105885ae2a",
+      "candidate_count": 6,
+      "sample_other_ids": [
+        "293d6cf795daf6a3f163c410f828e95a4214f6790834030cbba93d9357fd1b11",
+        "2d711c090af86cff6a6809fbc390f0efccc202a88536b26295780af3c1eee323",
+        "469d8daf74853841a28c5f22bb21283169dd347dcca59e0ac35442e25ddf35e5"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "molecular_electronic_transition_photon",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "27f4fd4f2379f68fca6cb3331535121d94ead82d8614a3de04e3ea9c5c02fa8d",
+      "candidate_count": 6,
+      "sample_other_ids": [
+        "4c323bef53ffccc8b5e2f605c2c87cdc4db854aea630ae842757da07e9ede6c2",
+        "6f33debeb0135ff4186ded6618d6d07867c0ca93f50ed698a19a32a9b428b816",
+        "7d4af19e47d9f60824cf1c611da38826784757cd850ee4c4d2d5fe5a4600b3b7"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
       "review_priority_score": 16,
       "approved_for_publication": false
     },
@@ -782,18 +904,6 @@
         "semantic_duplicate_review_pending"
       ],
       "review_priority_score": 16,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "calorimetry",
-      "source": "arya51-ai/parametric-question-engine",
-      "representative_id": "989f649e93f324eddf6dfcca562585016b2a9aadedda7fb8977d7104cd356ad4",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [],
-      "review_priority_score": 0,
       "approved_for_publication": false
     },
     {
@@ -933,39 +1043,9 @@
     },
     {
       "subject": "physical",
-      "topic": "hypothetical_isomer_equilibrium_fraction",
-      "source": "thisisntnathan/dftCourse",
-      "representative_id": "4be71412328bc1e09c1fa091a9ba4ae02cea9a5ad6dba0c13731ae61bb8d8206",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
       "topic": "isomer_computation_time_overhead",
       "source": "thisisntnathan/dftCourse",
       "representative_id": "1042af6ded2cfda198e8b0def7b2bcbc19d359bf8a5ef8ef8ee82e2ee6c3bf75",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "isomer_computation_time_overhead",
-      "source": "thisisntnathan/dftCourse",
-      "representative_id": "1c94a8449bf26d593e06a1c9b18822b154eaa3f9553d0a49f8781777d0ecb746",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
@@ -990,18 +1070,6 @@
     },
     {
       "subject": "physical",
-      "topic": "quantum_chemistry",
-      "source": "QC-Edu/IntroQM",
-      "representative_id": "70c557ec228d751abd25aed0975635d1055919000099e2f139625690c65a28de",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
       "topic": "relative_ez_free_energy",
       "source": "thisisntnathan/dftCourse",
       "representative_id": "48b6bb84c5b1f6787677c4d12a155780cfcfb05f3502998c462c51aa3e3c6238",
@@ -1017,36 +1085,9 @@
     },
     {
       "subject": "physical",
-      "topic": "relative_ez_free_energy",
-      "source": "thisisntnathan/dftCourse",
-      "representative_id": "64ecebd6d3eecdadfbf8ad62cbea6b03aa5b70c972568dd5ce1ef60dcb17a99d",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
       "topic": "standard_cell_potential",
       "source": "arya51-ai/parametric-question-engine",
       "representative_id": "118624081dc58812fbf9ce54d10e1d63c77370c77d63df181d53a0dad068c36f",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "standard_cell_potential",
-      "source": "arya51-ai/parametric-question-engine",
-      "representative_id": "1c87e090a0dd73c55dd8ea5ddfae102374ff0f06fa61de486316ad5d492581b3",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",

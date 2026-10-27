@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "4c3e5651a0d5e0e34b8de4408cb128d6888d61af58d2bce69ad65871de15d3fa",
+  "subject": "physical",
+  "topic": "ideal_binary_vle_raoult",
+  "question_type": "original_advanced_physical_calculation",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "物理化学·理想二元气液平衡：温度固定时，理想溶液中液相 A 的摩尔分数 xA=0.605，纯 A、B 饱和蒸气压分别为 100.00 kPa、52.00 kPa。假设理想气相且服从拉乌尔定律，求总压 P（kPa）及气相摩尔分数 yA。",
+  "answer": "P=xA·PA*+(1−xA)·PB*=81.0400 kPa；yA=xA·PA*/P=0.746545。",
+  "explanation": "各组分分压由拉乌尔定律给出，相加为总压；气相摩尔分数由道尔顿分压关系求得。",
+  "numeric_answers": [
+    81.03999999999999,
+    0.7465449160908194
+  ],
+  "parameters": {
+    "xA": 0.605,
+    "pA_kPa": 100,
+    "pB_kPa": 52
+  },
+  "units": "kPa;dimensionless",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-advanced-physical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical numerical practice; no third-party question wording, measurements or media copied."
+  }
+}
