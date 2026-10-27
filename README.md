@@ -144,5 +144,13 @@
 ## 2026-10-27：OpenStax 历史教材许可复核与重新隔离
 
 - 核查先前 [OpenStax 版权冲突撤回记录](harvest/run_logs/2026-10-27-openstax-quality-audit.md) 后，停止把 OpenStax 材料自动导入 data/candidates。旧版 Chemistry 历史 GitHub 镜像标注 CC BY 3.0，[原版 Chemistry 官方前言](https://openstax.org/books/chemistry/pages/preface)含旧版 CC BY 4.0 声明，而 [Chemistry 2e 官方前言](https://openstax.org/books/chemistry-2e/pages/preface)与现行通用使用指南写有 NC-SA、商业及 AI 用途限制；版本、来源与题目版权链必须逐项厘清，不能跨版本套用。
-- 本轮的 8 道独立数值复算及纠错仍保留在 [外部独立数值审查](external_sources/openstax_chemistry/independent_numeric_review.json) 和 [中文复核草稿隔离区](external_sources/openstax_chemistry/chinese_science_review.json)；**主库净增 0、版权确认 0、专家批准 0**。正式批准后才可按原始题 ID、内容 SHA、精确作品版本决定是否导入。
+- 已将独立数值复核扩展到 **20 道**（原有 8 道，本轮再增加 12 道），计算和反向公式校验结果见 [OpenStax 数值复核](external_sources/openstax_chemistry/independent_numeric_review.json)；原有 **8 道中文完整推导草稿**继续保存在 [中文复核草稿隔离区](external_sources/openstax_chemistry/chinese_science_review.json)。其余 12 道目前只有固定来源和独立数值验算，不能冒充已完成逐题中文专家解答。**主库净增 0、版权确认 0、专家批准 0**。
 - [OpenStax 全库依赖与查重优先级审计](external_sources/openstax_chemistry/review_priority.json)额外区分题面引用上一题/旧版链接、参考答案依赖公式或媒体、同数字模板的疑似重复；机器结果均不是语义去重或版权批准。
+
+## 2026-10-27：20 道来源固定的独立数值验算与人工复核
+
+- 已成功运行 [独立数值交叉核对与科学答案勘误](scripts/review-openstax-chemistry-numerics.mjs) 和 [自动回归测试](tests/review-openstax-chemistry-numerics.test.mjs)：溶液浓度、配液稀释、摩尔质量、理想气体、量热、酸碱平衡等共 **20 道教材原题**逐项保存题目位置、数值计算及逆向校验。该工作不构成整题全面科学专家审定。
+- 识别 [两个教材答案标签错误](external_sources/openstax_chemistry/review_priority.json)：(1) m51117.md 第 5 道，NaOH 与 KOH 小题 pH/pOH 对调；(2) 同文件第 11 道，题目求 H₃O⁺，参考答案却将约 3.1×10⁻¹² mol/L 标为 OH⁻。这两题已被提至独立纠错复核队列，不更改上游资料。
+- 1782 个 OpenStax 原题段落的机器筛查结果含 **391 项题干和原答案初步自洽、无需图片/MathML/外部上下文的优先人工审核候选**，并标记 107 项题面引用依赖、340 项参考答案公式/媒体依赖、14 组 28 个疑似数字模板。各类信号可能重叠，不可直接加总。
+- 所有 OpenStax 衍生材料继续保留版本权利冲突阻断：即使数据由机器验算、编号映射通过，也不能自动转入 data/candidates 或正式出卷发布清单。
+- [跨层级统计](harvest/coverage_report.json)由 CI 自动更新，保留 NVIDIA 合成化学问答、OpenStax 历史教材原始题、主候选练习、学习卡和正式批准题五种口径，不能将累计原始记录数量描述为可组卷真题数。
