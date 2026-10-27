@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "a269f0820696e54de6179fc442df676bf645b39d412730027eab3f67d10e2c94",
+  "subject": "physical",
+  "topic": "coffee_metal_equilibrium_calorimetry",
+  "question_type": "openstax_real_course_source_exercise_independent_science_review",
+  "resource_type": "fixed_source_chinese_curated_quantitative_exercise",
+  "level": "undergraduate_general_chemistry",
+  "question": "物理化学·量热平衡：180 g、95 ℃ 的咖啡放入 45 g、25 ℃ 的银勺。已知咖啡比热近似水 4.184 J/(g·K)，银比热 0.24 J/(g·K)，忽略杯体及环境热交换。求咖啡最终降温多少开尔文。",
+  "answer": "设咖啡降温 ΔT，则平衡温度为 95−ΔT。热量守恒：180×4.184×ΔT=45×0.24×[(95−ΔT)−25]。解得 ΔT=(45×0.24×70)/(180×4.184+45×0.24)，约 0.990 K，约降 1 ℃。\n数值答案：咖啡温降: 0.98963 K。",
+  "explanation": "设咖啡降温 ΔT，则平衡温度为 95−ΔT。热量守恒：180×4.184×ΔT=45×0.24×[(95−ΔT)−25]。解得 ΔT=(45×0.24×70)/(180×4.184+45×0.24)，约 0.990 K，约降 1 ℃。",
+  "numeric_answers": [
+    0.9896324222431667
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "scientifically_machine_checked": true,
+  "scientifically_expert_approved": false,
+  "semantic_duplicate_review_pending": true,
+  "source_key_issue": "source_numeric_key_awaits_independent_human_confirmation",
+  "original_english_question_in_external_staging": true,
+  "source": {
+    "repository": "philschatz/chemistry-book",
+    "commit": "a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2",
+    "file": "contents/m51034.md",
+    "source_exercise_ordinal": 6,
+    "original_id": "OSCHEM-0e809cbd3169cbd6ba3864a6",
+    "original_question_sha256": "0e809cbd3169cbd6ba3864a66aeddbbc9241d5ad326592d054d8d95eee986555",
+    "license": "CC-BY-3.0",
+    "license_evidence": {
+      "source_license": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/LICENSE.txt",
+      "scope_note": "The 2014 work has a CC BY 3.0 license notice; diagrams, third-party material and the item author chain have not been separately verified."
+    },
+    "url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51034.md",
+    "content_rights_verified": false,
+    "item_level_rights_review_pending": true,
+    "attribution": "OpenStax College, Chemistry (2014), CC BY 3.0; Chinese adapted question and independently calculated solution. Human source attribution, rights and chemistry verification still required.",
+    "original_exam_question": false,
+    "source_exercise": true,
+    "changes": "Source-linked Chinese reformulation and independently recomputed numbers; original textbook answer discrepancies flagged. Not approved for publication."
+  }
+}

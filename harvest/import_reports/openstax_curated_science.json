@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "source": "OpenStax Chemistry pinned CC BY 3.0 work",
+  "distinct_curated_real_exercises": 8,
+  "newly_added": 8,
+  "previously_present": 0,
+  "source_answer_errata": 1,
+  "original_questions_with_missing_source_answer_solved_independently": 1,
+  "computational_checks_passed": 8,
+  "expert_approved": 0,
+  "item_rights_approved": 0,
+  "publishable": 0,
+  "note": "No external archive item auto promoted to exam release. Eight hand-selected fixed English course exercises were independently recomputed and restated in Chinese for further expert and copyright review."
+}

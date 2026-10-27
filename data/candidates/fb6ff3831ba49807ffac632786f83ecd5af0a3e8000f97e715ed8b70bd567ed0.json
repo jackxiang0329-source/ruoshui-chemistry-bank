@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "fb6ff3831ba49807ffac632786f83ecd5af0a3e8000f97e715ed8b70bd567ed0",
+  "subject": "analytical",
+  "topic": "pure_water_ph_at_nonstandard_temperature",
+  "question_type": "openstax_real_course_source_exercise_independent_science_review",
+  "resource_type": "fixed_source_chinese_curated_quantitative_exercise",
+  "level": "undergraduate_general_chemistry",
+  "question": "分析化学·温度变化下的纯水 pH：在 60 ℃ 时水的离子积 K_w=9.311×10⁻¹⁴（按浓度近似）。求纯水的 [H₃O⁺]、pH 和 pOH，并解释为何此时中性溶液 pH 并非 7。",
+  "answer": "纯水电中性要求 [H₃O⁺]=[OH⁻]=√K_w=3.0514×10⁻⁷ mol/L。故 pH=−log₁₀(3.0514×10⁻⁷)=6.5155，pOH 同为 6.5155。中性意味着两种离子浓度相等，而非任何温度下 pH 均为 7。\n数值答案：[H₃O⁺]: 3.0514e-7 mol/L；pH: 6.5155；pOH: 6.5155。",
+  "explanation": "纯水电中性要求 [H₃O⁺]=[OH⁻]=√K_w=3.0514×10⁻⁷ mol/L。故 pH=−log₁₀(3.0514×10⁻⁷)=6.5155，pOH 同为 6.5155。中性意味着两种离子浓度相等，而非任何温度下 pH 均为 7。",
+  "numeric_answers": [
+    3.0513931244597114e-7,
+    6.515501836675844,
+    6.515501836675844
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "scientifically_machine_checked": true,
+  "scientifically_expert_approved": false,
+  "semantic_duplicate_review_pending": true,
+  "source_key_issue": "source_numeric_key_awaits_independent_human_confirmation",
+  "original_english_question_in_external_staging": true,
+  "source": {
+    "repository": "philschatz/chemistry-book",
+    "commit": "a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2",
+    "file": "contents/m51117.md",
+    "source_exercise_ordinal": 3,
+    "original_id": "OSCHEM-8b257cdd67b8a3aeb88bb6e3",
+    "original_question_sha256": "8b257cdd67b8a3aeb88bb6e332ba0de8949fb597b63775f5830db598da581fad",
+    "license": "CC-BY-3.0",
+    "license_evidence": {
+      "source_license": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/LICENSE.txt",
+      "scope_note": "The 2014 work has a CC BY 3.0 license notice; diagrams, third-party material and the item author chain have not been separately verified."
+    },
+    "url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51117.md",
+    "content_rights_verified": false,
+    "item_level_rights_review_pending": true,
+    "attribution": "OpenStax College, Chemistry (2014), CC BY 3.0; Chinese adapted question and independently calculated solution. Human source attribution, rights and chemistry verification still required.",
+    "original_exam_question": false,
+    "source_exercise": true,
+    "changes": "Source-linked Chinese reformulation and independently recomputed numbers; original textbook answer discrepancies flagged. Not approved for publication."
+  }
+}

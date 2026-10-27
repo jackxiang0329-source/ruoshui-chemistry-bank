@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "total_candidates": 1715,
-  "corpus_hash_sha256": "6e5cdd681c70ce3550cd26c38d8179deb40026b03e0ae1c29f722a9e5730aa29",
+  "total_candidates": 1723,
+  "corpus_hash_sha256": "e892130388aaf0ef8ebf08b62fa188638a1e90fdc317399ec96646ec884e9795",
   "by_subject": {
-    "analytical": 193,
-    "inorganic": 849,
+    "analytical": 197,
+    "inorganic": 851,
     "organic": 467,
-    "physical": 206
+    "physical": 208
   },
   "by_content_kind": {
-    "exercise_candidate": 1437,
+    "exercise_candidate": 1445,
     "study_card": 278
   },
   "by_quality_status": {
-    "awaiting_expert_review": 1715
+    "awaiting_expert_review": 1723
   },
   "by_publishable": {
-    "false": 1715
+    "false": 1723
   },
   "source_counts": {
     "ChemTrain/chemtrain-daily": 268,
@@ -35,6 +35,7 @@
     "bem130/chemquiz": 67,
     "jackxiang0329-source/ruoshui-chemistry-bank": 304,
     "kbknudsen/PyEIS": 8,
+    "philschatz/chemistry-book": 8,
     "thisisntnathan/dftCourse": 12
   },
   "topic_counts": {
@@ -42,6 +43,7 @@
     "analytical:chromatographic_baseline_resolution": 8,
     "analytical:chromatographic_theoretical_plates": 8,
     "analytical:complexometric_titration": 1,
+    "analytical:concentration_to_solute_mass": 1,
     "analytical:conductivity_cell_calibration": 8,
     "analytical:copper_iodometric_mass_fraction": 12,
     "analytical:coulometric_copper_deposition": 8,
@@ -54,8 +56,10 @@
     "analytical:iodometric_assay": 1,
     "analytical:iodometric_kio3_standardization": 12,
     "analytical:iodometric_standardization": 1,
+    "analytical:molarity_from_mass_moles_and_hydrates": 1,
     "analytical:permanganate_oxalate_standardization": 12,
     "analytical:primary_standard_acid_standardization": 12,
+    "analytical:pure_water_ph_at_nonstandard_temperature": 1,
     "analytical:qualitative_cation_analysis": 19,
     "analytical:redox_standardization": 1,
     "analytical:sequential_complexometric_titration": 1,
@@ -63,11 +67,14 @@
     "analytical:solution_concentration": 6,
     "analytical:standard_solution_standardization": 1,
     "analytical:stepwise_pb_bi_complexometry": 12,
+    "analytical:strong_acid_base_ph_poh_with_key_errata": 1,
     "analytical:uv_vis_beer_lambert": 8,
+    "inorganic:atomic_mass_counting_from_molecular_formula": 1,
     "inorganic:chemical_formula_molar_mass": 6,
     "inorganic:coordination_geometry": 133,
     "inorganic:ligand_electron_donation": 47,
     "inorganic:ligand_lx_classification": 47,
+    "inorganic:molecular_formula_mass_calculation": 1,
     "inorganic:polyatomic_ion_nomenclature": 23,
     "inorganic:transition_metal_electron_counting": 593,
     "organic:alcohol_chemoselectivity": 1,
@@ -90,6 +97,7 @@
     "physical:chemical_equilibrium": 6,
     "physical:chemical_kinetics": 12,
     "physical:chemical_thermodynamics": 6,
+    "physical:coffee_metal_equilibrium_calorimetry": 1,
     "physical:complex_conjugate_tdse": 1,
     "physical:complex_conjugation_nonnegative_norm": 1,
     "physical:complex_exponential_wavefunction": 1,
@@ -113,6 +121,7 @@
     "physical:hamiltonian_total_energy": 1,
     "physical:harmonic_oscillator_vibrational_spacing": 6,
     "physical:hene_single_photon_energy": 1,
+    "physical:hot_cold_water_mixing_calorimetry": 1,
     "physical:hydrogen_ground_state_first_absorption": 1,
     "physical:hypothetical_isomer_equilibrium_fraction": 4,
     "physical:ideal_binary_vle_raoult": 6,
@@ -144,12 +153,24 @@
   },
   "source_content_rights_audit": {
     "explicitly_verified": 1694,
-    "explicitly_pending": 21,
+    "explicitly_pending": 29,
     "not_recorded": 0,
     "pending_samples": [
       {
+        "id": "05b529f2cceebf088a25cbc9a9194768c9332a229bf582311728e9ea4391092e",
+        "source": "philschatz/chemistry-book",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
         "id": "08399477a3acbb478168f5730191b6bf953c868804b169cfa4352be77299243b",
         "source": "PaulWAyers/IntroQChemProblems",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "0e4d6a81008b288f9c65b8ee8f58cbb35320db5f8b5050928108f7c0799330fc",
+        "source": "philschatz/chemistry-book",
         "right_status": "EXPLICITLY_UNVERIFIED",
         "note": "item_level_rights_pending"
       },
@@ -214,6 +235,18 @@
         "note": "item_level_rights_pending"
       },
       {
+        "id": "93748aa78622aa469a7ddf2e38688f1d0a434cc99c46c6433e5eaa36d4b6cdcb",
+        "source": "philschatz/chemistry-book",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "a269f0820696e54de6179fc442df676bf645b39d412730027eab3f67d10e2c94",
+        "source": "philschatz/chemistry-book",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
         "id": "ad2354eb1c4d14068958af1d9c913b9ec43256af16c3209ac83da79ed73b5a78",
         "source": "PaulWAyers/IntroQChemProblems",
         "right_status": "EXPLICITLY_UNVERIFIED",
@@ -250,6 +283,24 @@
         "note": "item_level_rights_pending"
       },
       {
+        "id": "cdc3d9b20385050f70ce14c1cb970b4f008e1982e09e8e8bfe91069a8b075143",
+        "source": "philschatz/chemistry-book",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "d28df0dc7de735ac48bdbe2e842c1345cdb3919b89f444a4d8174f1b727d3fdb",
+        "source": "philschatz/chemistry-book",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "d2b529ad378675ed964550367324e2784adc7c7fe4f60b34d6da4284f355aea7",
+        "source": "philschatz/chemistry-book",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
         "id": "d96cfd62e66676b18cb95ac3c104e33a1ea584e6107534229fc197deda67ab65",
         "source": "PaulWAyers/IntroQChemProblems",
         "right_status": "EXPLICITLY_UNVERIFIED",
@@ -270,6 +321,12 @@
       {
         "id": "fb1333cad667c2a972e4c6a21bc172bf5bf06a56457bad380cb8d09e766a8fdf",
         "source": "PaulWAyers/IntroQChemProblems",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "fb6ff3831ba49807ffac632786f83ecd5af0a3e8000f97e715ed8b70bd567ed0",
+        "source": "philschatz/chemistry-book",
         "right_status": "EXPLICITLY_UNVERIFIED",
         "note": "item_level_rights_pending"
       }

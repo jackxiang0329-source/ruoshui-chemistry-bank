@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "d28df0dc7de735ac48bdbe2e842c1345cdb3919b89f444a4d8174f1b727d3fdb",
+  "subject": "inorganic",
+  "topic": "molecular_formula_mass_calculation",
+  "question_type": "openstax_real_course_source_exercise_independent_science_review",
+  "resource_type": "fixed_source_chinese_curated_quantitative_exercise",
+  "level": "undergraduate_general_chemistry",
+  "question": "无机化学·摩尔质量基础：计算 P₄、H₂O、Ca(NO₃)₂、乙酸 CH₃CO₂H 和蔗糖 C₁₂H₂₂O₁₁ 的相对式量（u）。可用 P=30.974、H=1.008、O=15.999、Ca=40.078、N=14.007、C=12.011。",
+  "answer": "利用组成原子的相对原子质量求和。P₄：4×30.974；H₂O：2×1.008+15.999；Ca(NO₃)₂：40.078+2(14.007+3×15.999)；CH₃CO₂H：2×12.011+4×1.008+2×15.999；蔗糖：12×12.011+22×1.008+11×15.999。\n数值答案：P₄: 123.90 u；H₂O: 18.015 u；Ca(NO₃)₂: 164.09 u；乙酸: 60.052 u；蔗糖: 342.30 u。",
+  "explanation": "利用组成原子的相对原子质量求和。P₄：4×30.974；H₂O：2×1.008+15.999；Ca(NO₃)₂：40.078+2(14.007+3×15.999)；CH₃CO₂H：2×12.011+4×1.008+2×15.999；蔗糖：12×12.011+22×1.008+11×15.999。",
+  "numeric_answers": [
+    123.896,
+    18.015,
+    164.086,
+    60.052,
+    342.297
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "scientifically_machine_checked": true,
+  "scientifically_expert_approved": false,
+  "semantic_duplicate_review_pending": true,
+  "source_key_issue": "source_numeric_key_awaits_independent_human_confirmation",
+  "original_english_question_in_external_staging": true,
+  "source": {
+    "repository": "philschatz/chemistry-book",
+    "commit": "a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2",
+    "file": "contents/m51011.md",
+    "source_exercise_ordinal": 3,
+    "original_id": "OSCHEM-2ff4a6140f201ba1ac612626",
+    "original_question_sha256": "2ff4a6140f201ba1ac612626b576d3e2ad68130f6ae3a75bf68432871ffd37d1",
+    "license": "CC-BY-3.0",
+    "license_evidence": {
+      "source_license": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/LICENSE.txt",
+      "scope_note": "The 2014 work has a CC BY 3.0 license notice; diagrams, third-party material and the item author chain have not been separately verified."
+    },
+    "url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51011.md",
+    "content_rights_verified": false,
+    "item_level_rights_review_pending": true,
+    "attribution": "OpenStax College, Chemistry (2014), CC BY 3.0; Chinese adapted question and independently calculated solution. Human source attribution, rights and chemistry verification still required.",
+    "original_exam_question": false,
+    "source_exercise": true,
+    "changes": "Source-linked Chinese reformulation and independently recomputed numbers; original textbook answer discrepancies flagged. Not approved for publication."
+  }
+}
