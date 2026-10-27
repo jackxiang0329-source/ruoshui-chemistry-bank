@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "77951b010694b92784d67bb7ba0acab580e4b587f4cae59d5d21799a8652772c",
+  "subject": "physical",
+  "topic": "electrochemical_impedance_capacitor",
+  "level": "undergraduate",
+  "question_type": "original_electrochemical_impedance_exercise",
+  "resource_type": "new_exercise_based_on_Apache_2_0_reference_code",
+  "question": "物理化学·电化学双电层：将电极界面近似为理想电容 C=50.0 μF，扰动频率 f=100 Hz。用 Z_C=1/(jωC)、ω=2πf 计算阻抗的虚部 Im(Z_C)，单位 Ω。",
+  "answer": "Im(Z_C)=−1/(2πfC)=−31.83 Ω；理想电容的阻抗实部为 0。",
+  "explanation": "j 是虚数单位且 j²=−1，因此 1/j=−j；负虚部反映理想电容型响应。",
+  "numeric_answers": [
+    -31.830988618379067
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "repository": "kbknudsen/PyEIS",
+    "commit": "14724e978a089d9184285cec1b72cb57941d58a1",
+    "file": "PyEIS/PyEIS.py",
+    "git_blob_sha": "78b4832687a56ff1c47ead7befb301d89f8c478f",
+    "original_author": "Kristian B. Knudsen",
+    "reference_method": "ideal_capacitor",
+    "license": "Apache-2.0",
+    "license_git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+    "license_evidence": "https://github.com/kbknudsen/PyEIS/blob/14724e978a089d9184285cec1b72cb57941d58a1/LICENSE",
+    "url": "https://github.com/kbknudsen/PyEIS/blob/14724e978a089d9184285cec1b72cb57941d58a1/PyEIS/PyEIS.py",
+    "attribution": "Kristian B. Knudsen, PyEIS, Apache-2.0. New exercise independently authored by Ruoshui.",
+    "original_upstream_question": false,
+    "original_exam_question": false,
+    "content_rights_verified": true,
+    "changes": "New parameterized Chinese numerical exercise and independent solution based on generic circuit equations, without copying third-party papers, images, code or experiments."
+  }
+}

@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "total_candidates": 1114,
-  "corpus_hash_sha256": "cea882eccc9f960532bf667b24796a6aedd012eadaeff1902ea7903ae0bd621e",
+  "total_candidates": 1122,
+  "corpus_hash_sha256": "6e21b2e72914f3e8518b09ebccf0bd3bd80a0591faab731926dd05168a08945b",
   "by_subject": {
     "analytical": 33,
     "inorganic": 622,
     "organic": 414,
-    "physical": 45
+    "physical": 53
   },
   "by_content_kind": {
-    "exercise_candidate": 836,
+    "exercise_candidate": 844,
     "study_card": 278
   },
   "by_quality_status": {
-    "awaiting_expert_review": 1114
+    "awaiting_expert_review": 1122
   },
   "by_publishable": {
-    "false": 1114
+    "false": 1122
   },
   "source_counts": {
     "ChemTrain/pg-learn": 22,
@@ -31,7 +31,8 @@
     "QC-Edu/IntroQM": 3,
     "arya51-ai/parametric-question-engine": 30,
     "bem130/chemquiz": 67,
-    "jackxiang0329-source/ruoshui-chemistry-bank": 24
+    "jackxiang0329-source/ruoshui-chemistry-bank": 24,
+    "kbknudsen/PyEIS": 8
   },
   "topic_counts": {
     "analytical:complexometric_titration": 1,
@@ -64,6 +65,14 @@
     "physical:chemical_equilibrium": 6,
     "physical:chemical_kinetics": 12,
     "physical:chemical_thermodynamics": 6,
+    "physical:electrochemical_impedance_angular_frequency": 1,
+    "physical:electrochemical_impedance_capacitor": 1,
+    "physical:electrochemical_impedance_constant_phase_element": 1,
+    "physical:electrochemical_impedance_diffusion_warburg": 1,
+    "physical:electrochemical_impedance_nyquist_peak": 1,
+    "physical:electrochemical_impedance_parallel_rc": 1,
+    "physical:electrochemical_impedance_randles_circuit": 1,
+    "physical:electrochemical_impedance_series_rc": 1,
     "physical:equilibrium_constant": 6,
     "physical:quantum_chemistry": 3,
     "physical:standard_cell_potential": 6

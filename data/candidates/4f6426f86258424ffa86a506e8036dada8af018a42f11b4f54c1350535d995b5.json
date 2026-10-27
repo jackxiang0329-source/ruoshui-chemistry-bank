@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "4f6426f86258424ffa86a506e8036dada8af018a42f11b4f54c1350535d995b5",
+  "subject": "physical",
+  "topic": "electrochemical_impedance_randles_circuit",
+  "level": "undergraduate",
+  "question_type": "original_electrochemical_impedance_exercise",
+  "resource_type": "new_exercise_based_on_Apache_2_0_reference_code",
+  "question": "物理化学·简化 Randles 电路：溶液电阻 Rₛ=5.0 Ω，与并联支路（Rct=100 Ω，Cdl=50.0 μF）串联。忽略扩散阻抗，频率为 100 Hz。求复阻抗 Z=Rₛ+Rct/(1+jωRctCdl) 的实部和虚部。",
+  "answer": "Z≈(14.200−28.903j) Ω。",
+  "explanation": "先计算并联 Rct∥Cdl 的频率响应，再叠加溶液电阻；加 Rₛ 只影响实部，不会直接改变虚部。",
+  "numeric_answers": [
+    14.199966835037522,
+    -28.902548222223626
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "repository": "kbknudsen/PyEIS",
+    "commit": "14724e978a089d9184285cec1b72cb57941d58a1",
+    "file": "PyEIS/PyEIS.py",
+    "git_blob_sha": "78b4832687a56ff1c47ead7befb301d89f8c478f",
+    "original_author": "Kristian B. Knudsen",
+    "reference_method": "randles_simple",
+    "license": "Apache-2.0",
+    "license_git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+    "license_evidence": "https://github.com/kbknudsen/PyEIS/blob/14724e978a089d9184285cec1b72cb57941d58a1/LICENSE",
+    "url": "https://github.com/kbknudsen/PyEIS/blob/14724e978a089d9184285cec1b72cb57941d58a1/PyEIS/PyEIS.py",
+    "attribution": "Kristian B. Knudsen, PyEIS, Apache-2.0. New exercise independently authored by Ruoshui.",
+    "original_upstream_question": false,
+    "original_exam_question": false,
+    "content_rights_verified": true,
+    "changes": "New parameterized Chinese numerical exercise and independent solution based on generic circuit equations, without copying third-party papers, images, code or experiments."
+  }
+}

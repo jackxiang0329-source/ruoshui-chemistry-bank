@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "1f37e690b218751700d65fcafa45f40d2dd87e18516db57efad2c61f781db24f",
+  "subject": "physical",
+  "topic": "electrochemical_impedance_series_rc",
+  "level": "undergraduate",
+  "question_type": "original_electrochemical_impedance_exercise",
+  "resource_type": "new_exercise_based_on_Apache_2_0_reference_code",
+  "question": "物理化学·串联 RC 等效电路：溶液电阻 Rₛ=15.0 Ω 与理想电容 C=20.0 μF 串联，频率 1000 Hz。求总复阻抗 Z 的实部、虚部以及模 |Z|。",
+  "answer": "Z=Rₛ−j/(2πfC)=(15.00−7.958j) Ω；|Z|≈16.98 Ω。",
+  "explanation": "串联元件的复阻抗直接相加；|Z|=√[(Re Z)²+(Im Z)²]，不能把阻抗实部和虚部代数相加。",
+  "numeric_answers": [
+    15,
+    -7.957747154594767,
+    16.980157236505825
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "repository": "kbknudsen/PyEIS",
+    "commit": "14724e978a089d9184285cec1b72cb57941d58a1",
+    "file": "PyEIS/PyEIS.py",
+    "git_blob_sha": "78b4832687a56ff1c47ead7befb301d89f8c478f",
+    "original_author": "Kristian B. Knudsen",
+    "reference_method": "series_rc",
+    "license": "Apache-2.0",
+    "license_git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+    "license_evidence": "https://github.com/kbknudsen/PyEIS/blob/14724e978a089d9184285cec1b72cb57941d58a1/LICENSE",
+    "url": "https://github.com/kbknudsen/PyEIS/blob/14724e978a089d9184285cec1b72cb57941d58a1/PyEIS/PyEIS.py",
+    "attribution": "Kristian B. Knudsen, PyEIS, Apache-2.0. New exercise independently authored by Ruoshui.",
+    "original_upstream_question": false,
+    "original_exam_question": false,
+    "content_rights_verified": true,
+    "changes": "New parameterized Chinese numerical exercise and independent solution based on generic circuit equations, without copying third-party papers, images, code or experiments."
+  }
+}

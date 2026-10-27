@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "source": "kbknudsen/PyEIS",
+  "source_commit": "14724e978a089d9184285cec1b72cb57941d58a1",
+  "license": "Apache-2.0",
+  "license_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+  "source_code_blob": "78b4832687a56ff1c47ead7befb301d89f8c478f",
+  "original_upstream_questions_imported": 0,
+  "new_original_practice": 8,
+  "initial_import_added": 8,
+  "initial_import_already_present": 0,
+  "distinct_topics": 8,
+  "subject": "physical",
+  "independent_numeric_validation": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "expert_approved": 0,
+  "note": "These 8 new numerical EIS teaching exercises are not copied from upstream or expert approved."
+}

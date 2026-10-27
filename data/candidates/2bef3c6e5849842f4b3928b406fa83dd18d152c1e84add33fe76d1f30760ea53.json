@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "2bef3c6e5849842f4b3928b406fa83dd18d152c1e84add33fe76d1f30760ea53",
+  "subject": "physical",
+  "topic": "electrochemical_impedance_parallel_rc",
+  "level": "undergraduate",
+  "question_type": "original_electrochemical_impedance_exercise",
+  "resource_type": "new_exercise_based_on_Apache_2_0_reference_code",
+  "question": "物理化学·并联 RC 等效电路：电荷转移电阻 R=100 Ω 与双电层电容 C=100 μF 并联，施加 50.0 Hz 正弦扰动。由 Z=R/(1+jωRC) 计算总阻抗的实部和虚部。",
+  "answer": "Z≈(9.200−28.903j) Ω，其中 ω=2π×50.0 rad/s。",
+  "explanation": "用共轭复数有理化：Z=R(1−jωRC)/[1+(ωRC)²]。",
+  "numeric_answers": [
+    9.199966835037522,
+    -28.902548222223626
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "repository": "kbknudsen/PyEIS",
+    "commit": "14724e978a089d9184285cec1b72cb57941d58a1",
+    "file": "PyEIS/PyEIS.py",
+    "git_blob_sha": "78b4832687a56ff1c47ead7befb301d89f8c478f",
+    "original_author": "Kristian B. Knudsen",
+    "reference_method": "parallel_rc",
+    "license": "Apache-2.0",
+    "license_git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+    "license_evidence": "https://github.com/kbknudsen/PyEIS/blob/14724e978a089d9184285cec1b72cb57941d58a1/LICENSE",
+    "url": "https://github.com/kbknudsen/PyEIS/blob/14724e978a089d9184285cec1b72cb57941d58a1/PyEIS/PyEIS.py",
+    "attribution": "Kristian B. Knudsen, PyEIS, Apache-2.0. New exercise independently authored by Ruoshui.",
+    "original_upstream_question": false,
+    "original_exam_question": false,
+    "content_rights_verified": true,
+    "changes": "New parameterized Chinese numerical exercise and independent solution based on generic circuit equations, without copying third-party papers, images, code or experiments."
+  }
+}

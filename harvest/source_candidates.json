@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "total_sources": 568,
+  "total_sources": 569,
   "shards": [
     {
       "path": "harvest/sources/00.jsonl",
@@ -92,7 +92,7 @@
     },
     {
       "path": "harvest/sources/16.jsonl",
-      "count": 3
+      "count": 4
     },
     {
       "path": "harvest/sources/17.jsonl",
@@ -264,7 +264,7 @@
     "organic": 61,
     "analytical": 16,
     "physical": 19,
-    "general": 473
+    "general": 474
   },
   "note": "All listed sources are discovery candidates, NOT rights-approved questions. Details live in the linked JSONL shards."
 }

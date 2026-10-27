@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "3532f9364d9665f71675fd3ccf22d8237170b6a2086009c180f62d6d57cf8d92",
+  "subject": "physical",
+  "topic": "electrochemical_impedance_nyquist_peak",
+  "level": "undergraduate",
+  "question_type": "original_electrochemical_impedance_exercise",
+  "resource_type": "new_exercise_based_on_Apache_2_0_reference_code",
+  "question": "物理化学·Nyquist 半圆：理想并联 RC 电路的 R=100 Ω、C=100 μF。不计其他串联电阻和扩散影响时，求 Nyquist 图半圆顶点对应的频率 fₘₐₓ（Hz）以及该点的 −Im(Z)（Ω）。",
+  "answer": "fₘₐₓ=1/(2πRC)≈15.92 Hz；−Im(Z)ₘₐₓ=R/2=50.0 Ω。",
+  "explanation": "并联 RC 的半圆顶点对应 ωRC=1，最大负虚部为 R/2；若图存在额外过程，此简化式可能不适用。",
+  "numeric_answers": [
+    15.915494309189533,
+    50
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "repository": "kbknudsen/PyEIS",
+    "commit": "14724e978a089d9184285cec1b72cb57941d58a1",
+    "file": "PyEIS/PyEIS.py",
+    "git_blob_sha": "78b4832687a56ff1c47ead7befb301d89f8c478f",
+    "original_author": "Kristian B. Knudsen",
+    "reference_method": "parallel_rc_peak",
+    "license": "Apache-2.0",
+    "license_git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+    "license_evidence": "https://github.com/kbknudsen/PyEIS/blob/14724e978a089d9184285cec1b72cb57941d58a1/LICENSE",
+    "url": "https://github.com/kbknudsen/PyEIS/blob/14724e978a089d9184285cec1b72cb57941d58a1/PyEIS/PyEIS.py",
+    "attribution": "Kristian B. Knudsen, PyEIS, Apache-2.0. New exercise independently authored by Ruoshui.",
+    "original_upstream_question": false,
+    "original_exam_question": false,
+    "content_rights_verified": true,
+    "changes": "New parameterized Chinese numerical exercise and independent solution based on generic circuit equations, without copying third-party papers, images, code or experiments."
+  }
+}

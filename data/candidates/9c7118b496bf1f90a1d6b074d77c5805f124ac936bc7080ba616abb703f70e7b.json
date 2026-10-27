@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "9c7118b496bf1f90a1d6b074d77c5805f124ac936bc7080ba616abb703f70e7b",
+  "subject": "physical",
+  "topic": "electrochemical_impedance_constant_phase_element",
+  "level": "undergraduate",
+  "question_type": "original_electrochemical_impedance_exercise",
+  "resource_type": "new_exercise_based_on_Apache_2_0_reference_code",
+  "question": "物理化学·恒相位元件（CPE）：给定 Z_Q=1/[Q(jω)ⁿ]，Q=0.00200 sⁿ/Ω，n=0.800，频率 f=100 Hz。求阻抗的模 |Z_Q|（Ω）和相角（°），取交流相量惯例 j²=−1。",
+  "answer": "|Z_Q|=1/(Qωⁿ)≈2.887 Ω；相角 φ=−n×90°=−72.0°。",
+  "explanation": "(jω)ⁿ=ωⁿexp(jnπ/2)，故阻抗相位为 −nπ/2，模为 [Qωⁿ]⁻¹；n=1 时退化为理想电容。",
+  "numeric_answers": [
+    2.886862570013429,
+    -72
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "repository": "kbknudsen/PyEIS",
+    "commit": "14724e978a089d9184285cec1b72cb57941d58a1",
+    "file": "PyEIS/PyEIS.py",
+    "git_blob_sha": "78b4832687a56ff1c47ead7befb301d89f8c478f",
+    "original_author": "Kristian B. Knudsen",
+    "reference_method": "cpe_phase",
+    "license": "Apache-2.0",
+    "license_git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+    "license_evidence": "https://github.com/kbknudsen/PyEIS/blob/14724e978a089d9184285cec1b72cb57941d58a1/LICENSE",
+    "url": "https://github.com/kbknudsen/PyEIS/blob/14724e978a089d9184285cec1b72cb57941d58a1/PyEIS/PyEIS.py",
+    "attribution": "Kristian B. Knudsen, PyEIS, Apache-2.0. New exercise independently authored by Ruoshui.",
+    "original_upstream_question": false,
+    "original_exam_question": false,
+    "content_rights_verified": true,
+    "changes": "New parameterized Chinese numerical exercise and independent solution based on generic circuit equations, without copying third-party papers, images, code or experiments."
+  }
+}
