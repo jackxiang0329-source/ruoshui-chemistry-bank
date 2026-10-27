@@ -77,7 +77,7 @@ export function makeQuestions(data){
    !x.topic||!Array.isArray(x.expect)||!x.expect.length||x.expect.length>2)
    throw Error('Invalid curated analytical experiment '+i);
   names.add(key);
-  for(const anchor of ANCHORS[key])if(!x.answer.includes(anchor))throw Error('Answer units or significant figures absent for '+key);
+  for(const anchor of ANCHORS[key])if(!(x.question+'\n'+x.answer).includes(anchor))throw Error('Required chemistry symbol or significant figures absent for '+key);
   const expected=calculateIndependent(key,x.param);
   if(expected.length!==x.expect.length)throw Error('Unexpected number of expected answers '+key);
   for(let j=0;j<expected.length;j++){
