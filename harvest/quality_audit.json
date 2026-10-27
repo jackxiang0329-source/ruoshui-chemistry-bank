@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "total_candidates": 1106,
-  "corpus_hash_sha256": "7b0d017810ec9303e7c407f93810c45f6611f272c1aad30dc6d5273b84f28708",
+  "total_candidates": 1114,
+  "corpus_hash_sha256": "cea882eccc9f960532bf667b24796a6aedd012eadaeff1902ea7903ae0bd621e",
   "by_subject": {
-    "analytical": 25,
+    "analytical": 33,
     "inorganic": 622,
     "organic": 414,
     "physical": 45
   },
   "by_content_kind": {
-    "exercise_candidate": 828,
+    "exercise_candidate": 836,
     "study_card": 278
   },
   "by_quality_status": {
-    "awaiting_expert_review": 1106
+    "awaiting_expert_review": 1114
   },
   "by_publishable": {
-    "false": 1106
+    "false": 1114
   },
   "source_counts": {
     "ChemTrain/pg-learn": 22,
@@ -27,14 +27,23 @@
     "ChemTrain/reactivity-learn": 20,
     "ChemTrain/tmc-learn": 593,
     "MuzaPro/Organic-Chemistry-Quiz-JS": 5,
+    "PWO-CHINA/Chemistry-Calculator-Toolkit": 8,
     "QC-Edu/IntroQM": 3,
     "arya51-ai/parametric-question-engine": 30,
     "bem130/chemquiz": 67,
     "jackxiang0329-source/ruoshui-chemistry-bank": 24
   },
   "topic_counts": {
+    "analytical:complexometric_titration": 1,
+    "analytical:double_indicator_alkalinity": 1,
+    "analytical:gravimetric_redox_assay": 1,
+    "analytical:iodometric_assay": 1,
+    "analytical:iodometric_standardization": 1,
     "analytical:qualitative_cation_analysis": 19,
+    "analytical:redox_standardization": 1,
+    "analytical:sequential_complexometric_titration": 1,
     "analytical:solution_concentration": 6,
+    "analytical:standard_solution_standardization": 1,
     "inorganic:chemical_formula_molar_mass": 6,
     "inorganic:polyatomic_ion_nomenclature": 23,
     "inorganic:transition_metal_electron_counting": 593,

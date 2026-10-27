@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "2c6ebe39abffbaa049294d601cf010770878eea9eb16d73c22d66c878b0dbc34",
+  "subject": "analytical",
+  "topic": "gravimetric_redox_assay",
+  "level": "undergraduate",
+  "question_type": "original_calculation_exercise",
+  "resource_type": "new_exercise_based_on_MIT_reference_code",
+  "question": "分析化学·钙的草酸盐间接滴定：固体试样 0.6000 g，处理后定容至 250.0 mL，取 25.00 mL 测定；草酸盐经处理后用 0.0200 mol/L KMnO₄ 滴定，样品耗液 10.10 mL，空白耗液 0.10 mL。已知 n(Ca²⁺)=2.5n(MnO₄⁻)，M(Ca)=40.078 g/mol。求试样中元素钙的质量分数。",
+  "answer": "w(Ca)=2.5×0.0200×[(10.10−0.10)/1000]×(250.0/25.00)×40.078/0.6000×100%≈33.40%。",
+  "explanation": "先扣除空白，按 MnO₄⁻ : Ca²⁺=2:5 换算，再乘定容倍数，使用元素 Ca 原子量。",
+  "numeric_answers": [
+    33.39833333333333
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "repository": "PWO-CHINA/Chemistry-Calculator-Toolkit",
+    "commit": "879205657e777c00621a461e975218b395ee32ea",
+    "file": "src/calculations.js",
+    "git_blob_sha": "20378fe9af77e64932b9f412a6c51be9b0c433b5",
+    "reference_docs_git_blob_sha": "0edb01aea5409a631536282ac179db5e28e9b772",
+    "original_calculator_method": "calcium_oxalate",
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 PWO-CHINA. Source: https://github.com/PWO-CHINA/Chemistry-Calculator-Toolkit (MIT). This repository independently authored its own Chinese exercise statements and calculations using the documented analytical chemistry methods.",
+    "license_evidence": "https://github.com/PWO-CHINA/Chemistry-Calculator-Toolkit/blob/879205657e777c00621a461e975218b395ee32ea/LICENSE",
+    "license_git_blob_sha": "49c2c01eba000fe4138e79b45083eee284f9f3bb",
+    "url": "https://github.com/PWO-CHINA/Chemistry-Calculator-Toolkit/blob/879205657e777c00621a461e975218b395ee32ea/src/calculations.js",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "original_upstream_question": false,
+    "changes": "New Chinese numerical exercise written for this bank from a public MIT-licensed calculator formula. No upstream questions, figures, or experimental measurements imported."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "128fdaab2197769d0f50ebcbbfe4cada3ee4f7c2d7c6cec7a37a029ec66c8089",
+  "subject": "analytical",
+  "topic": "iodometric_assay",
+  "level": "undergraduate",
+  "question_type": "original_calculation_exercise",
+  "resource_type": "new_exercise_based_on_MIT_reference_code",
+  "question": "分析化学·间接碘量法：测定含铜固体试样的元素 Cu 质量分数，试样质量 0.5000 g，按 Cu²⁺/I⁻ 放碘后消耗 0.1000 mol/L Na₂S₂O₃ 10.00 mL。已知 n(Cu²⁺)=n(S₂O₃²⁻)，M(Cu)=63.546 g/mol。计算元素 Cu 质量分数（%）。",
+  "answer": "w(Cu)=[0.1000×0.01000×63.546/0.5000]×100%=12.71%。",
+  "explanation": "氧化还原两步总体等量：1 mol Cu²⁺ 对应 1 mol S₂O₃²⁻；要使用 Cu 原子量而非 CuSO₄·5H₂O 的摩尔质量。",
+  "numeric_answers": [
+    12.709200000000001
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "repository": "PWO-CHINA/Chemistry-Calculator-Toolkit",
+    "commit": "879205657e777c00621a461e975218b395ee32ea",
+    "file": "src/calculations.js",
+    "git_blob_sha": "20378fe9af77e64932b9f412a6c51be9b0c433b5",
+    "reference_docs_git_blob_sha": "0edb01aea5409a631536282ac179db5e28e9b772",
+    "original_calculator_method": "copper_iodometry",
+    "license": "MIT",
+    "attribution": "Copyright (c) 2026 PWO-CHINA. Source: https://github.com/PWO-CHINA/Chemistry-Calculator-Toolkit (MIT). This repository independently authored its own Chinese exercise statements and calculations using the documented analytical chemistry methods.",
+    "license_evidence": "https://github.com/PWO-CHINA/Chemistry-Calculator-Toolkit/blob/879205657e777c00621a461e975218b395ee32ea/LICENSE",
+    "license_git_blob_sha": "49c2c01eba000fe4138e79b45083eee284f9f3bb",
+    "url": "https://github.com/PWO-CHINA/Chemistry-Calculator-Toolkit/blob/879205657e777c00621a461e975218b395ee32ea/src/calculations.js",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "original_upstream_question": false,
+    "changes": "New Chinese numerical exercise written for this bank from a public MIT-licensed calculator formula. No upstream questions, figures, or experimental measurements imported."
+  }
+}
