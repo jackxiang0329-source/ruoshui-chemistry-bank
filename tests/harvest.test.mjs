@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {subjects,canonicalRepo,bucketKey,requestedPages,rankingMode,selectQueryShard} from '../scripts/harvest-chemistry-sources.mjs';
-import {safePath,questionId,normalizeQuestion,validateSource,mapRecord,buildCandidate,assertCompatibleExisting} from '../scripts/import-approved-chemistry.mjs';
+import {safePath,questionId,normalizeQuestion,validateSource,mapRecord,buildCandidate,assertCompatibleExisting,backfillLegacyLicenseEvidence} from '../scripts/import-approved-chemistry.mjs';
 test('classifies chemistry subject',()=>{
   assert.deepEqual(subjects('organic chemistry study'),['organic']);
   assert.deepEqual(subjects('inorganic chemistry problems'),['inorganic']);
@@ -102,4 +102,26 @@ test('approved importer always embargoes candidate publication and checks collis
  assert.throws(()=>assertCompatibleExisting({...row,answer:'wrong'},row),/collision/);
  assert.throws(()=>assertCompatibleExisting({...row,publishable:true},row),/publication-state/);
  assert.throws(()=>assertCompatibleExisting({...row,source:{...row.source,commit:'b'.repeat(40)}},row),/rights mismatch/);
+});
+
+test('repair pinned license evidence only for exact upstream legacy candidate records',()=>{
+ const src={repository:'author/chemistry-quiz',commit:'a'.repeat(40),
+  subject:'organic',license:'MIT',attribution:'Author and MIT notice',
+  license_evidence:{project_license:'https://github.com/author/chemistry-quiz/blob/a/LICENSE',
+    project_readme:'https://github.com/author/chemistry-quiz/blob/a/README.md',
+    scope_note:'README says the bundled question database belongs to the original project.'}};
+ const next=buildCandidate({question:'Name the product of this licensed reaction',
+  answer:'Primary ether',original_id:'q1'},src,{path:'data/questions.json'},0);
+ const legacy=structuredClone(next);delete legacy.source.license_evidence;
+ const repaired=backfillLegacyLicenseEvidence(legacy,next);
+ assert.deepEqual(repaired.source.license_evidence,src.license_evidence);
+ assert.equal(repaired.publishable,false);
+ assert.equal(repaired.quality_status,'awaiting_expert_review');
+ assert.equal(backfillLegacyLicenseEvidence(repaired,next),null);
+ assert.throws(()=>backfillLegacyLicenseEvidence(
+  {...legacy,source:{...legacy.source,record_index:7}},next),/mismatched source/);
+ assert.throws(()=>backfillLegacyLicenseEvidence(
+  {...legacy,source:{...legacy.source,content_rights_verified:false}},next),/unverified/);
+ assert.throws(()=>backfillLegacyLicenseEvidence(
+  {...legacy,source:{...legacy.source,license_evidence:'some other license'}},next),/Conflicting/);
 });

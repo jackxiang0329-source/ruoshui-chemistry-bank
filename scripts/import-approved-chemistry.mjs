@@ -84,6 +84,29 @@ export function assertCompatibleExisting(old,next) {
     throw Error('Candidate collision, rights mismatch or publication-state drift: '+next.id);
   return true;
 }
+// Only correct legacy metadata if every pinned identity field still matches the already
+// accepted source. This is not a new license review or approval for publication.
+export function backfillLegacyLicenseEvidence(old,next) {
+  assertCompatibleExisting(old,next);
+  if(old?.source?.content_rights_verified!==true ||
+     old.source.license!==next.source.license ||
+     old.source.attribution!==next.source.attribution ||
+     old.source.original_id!==next.source.original_id ||
+     old.source.record_index!==next.source.record_index)
+    throw Error('Refuse evidence repair on unverified or mismatched source record: '+next.id);
+  const previous=old.source.license_evidence;
+  if(previous!==undefined && previous!==null){
+    if(JSON.stringify(previous)!==JSON.stringify(next.source.license_evidence))
+      throw Error('Conflicting prior rights evidence requires human investigation: '+next.id);
+    return null;
+  }
+  if(!next.source.license_evidence ||
+    !/^https:\/\/github\.com\//.test(next.source.license_evidence.project_license||'') ||
+    !/^https:\/\/github\.com\//.test(next.source.license_evidence.project_readme||''))
+    throw Error('Pinned README or LICENSE evidence absent: '+next.id);
+  return {...old,source:{...old.source,license_evidence:next.source.license_evidence}};
+}
+
 function git(args) {
   execFileSync('git',args,{stdio:'pipe',timeout:120000,env:{...process.env,GIT_TERMINAL_PROMPT:'0'}});
 }
@@ -99,7 +122,7 @@ export function run() {
   cfg.approved_sources.forEach(validateSource);
   const temp=mkdtempSync(join(tmpdir(),'ruoshui-chem-'));
   let duplicates=0;
-  const planned=new Map();
+  const planned=new Map(),legacyEvidenceRepairs=new Map();
   try {
     for(const s of cfg.approved_sources) {
       const checkout=join(temp,s.id);
@@ -126,7 +149,9 @@ export function run() {
             duplicates++;continue;
           }
           if(existsSync(output)) {
-            assertCompatibleExisting(JSON.parse(readFileSync(output,'utf8')),candidate);
+            const legacy=JSON.parse(readFileSync(output,'utf8'));
+            const repaired=backfillLegacyLicenseEvidence(legacy,candidate);
+            if(repaired)legacyEvidenceRepairs.set(candidate.id,repaired);
             duplicates++;continue;
           }
           planned.set(candidate.id,candidate);
@@ -139,10 +164,15 @@ export function run() {
       const output=join(destination,candidate.id+'.json');
       writeFileSync(output,JSON.stringify(candidate,null,2)+'\n',{flag:'wx'});
     }
+    for(const [id,repaired] of legacyEvidenceRepairs){
+      const path=join(destination,id+'.json');
+      writeFileSync(path,JSON.stringify(repaired,null,2)+'\n');
+    }
     const msg='Rights-approved candidates added='+planned.size+
+      '; legacy pinned-evidence records repaired='+legacyEvidenceRepairs.size+
       '; verified existing/within-batch duplicates='+duplicates+'; expert approved=0';
     console.log(msg);
-    return {added:planned.size,duplicates};
+    return {added:planned.size,duplicates,legacy_evidence_repairs:legacyEvidenceRepairs.size};
   } finally {rmSync(temp,{recursive:true,force:true});}
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
