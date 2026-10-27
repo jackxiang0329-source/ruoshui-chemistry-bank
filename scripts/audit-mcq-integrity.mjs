@@ -8,7 +8,8 @@ import {fileURLToPath} from 'node:url';
 const root=dirname(dirname(fileURLToPath(import.meta.url)));
 const normalize=s=>String(s||'').normalize('NFKC').trim().replace(/\s+/g,' ').toLowerCase();
 const validSha=s=>typeof s==='string'&&/^[a-f0-9]{40}$/.test(s);
-const isMcq=q=>q.question_type==='licensed_text_only_multiple_choice';
+// Only approved structural schemas are covered; new MCQ types require explicit tests.
+const isMcq=q=>['licensed_text_only_multiple_choice','licensed_radical_matching_mcq'].includes(q.question_type);
 
 export function auditMcqs(rows){
  const issues=[],sourceIndices=new Map(),bySubject={};

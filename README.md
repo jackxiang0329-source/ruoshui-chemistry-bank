@@ -6,8 +6,8 @@
 
 ## 当前候选内容快照（2026-10-27）
 
-- 已验证 GitHub `main` 上共有 **1558** 份候选内容：无机 849、分析 129、物理 125、有机 455。
-- 其中 **1280** 份练习候选、**278** 份学习卡；不是 1558 道独立可出卷考试真题。
+- 已验证 GitHub `main` 上共有 **1582** 份候选内容：无机 849、分析 129、物理 137、有机 467。
+- 其中 **1304** 份练习候选、**278** 份学习卡；不是 1582 道独立可出卷考试真题。
 - 全部 `awaiting_expert_review`、`publishable=false`；专家正式批准 **0** 道。
 - 机器审计发现完全同题干 0 组、相同题型模板 50 组；并不表示跨语言或语义重复已解决。
 - [本轮新增 EIS 原创习题和 Apache-2.0 来源审计](harvest/run_logs/2026-10-27-pyeis-original-eis.md)。
@@ -75,3 +75,11 @@
 - [物理化学原创题生成器](scripts/import-original-physical-variants.mjs)及[72 题逆向公式校验](tests/original-physical-variants.test.mjs)：共 **6 种方法×12 个变式=72 道**。
 - 只为原创题文声明 [CC0](LICENSE-ORIGINAL-QUESTIONS.md)，不将第三方软件/原题擅自重新授权。**全部 `publishable=false` 并待化学专家审核**。数字变式不是不同来源的考试原题。
 - [本轮真实增量、成功 CI 与版权来源审计](harvest/run_logs/2026-10-27-new-solved-analytical-physical-variants.md)。
+
+## 新增来源：Radical Learn 原作者授权题卡（2026-10-27）
+
+- [ChemTrain/radical-learn](https://github.com/ChemTrain/radical-learn)：固定上游 Git SHA、源 HTML 和内容许可证 Blob，新增 **12 道文字自由基极性匹配 MCQ**；原仓库的 26 道自由基极性分类候选已存在，本次**没有重复导入**。
+- [新导入器](scripts/import-chemtrain-radical-matching.mjs) 和 [原作者许可及答案键测试](tests/chemtrain-radical-matching.test.mjs)；[MCQ 选项与上游记录重复审计](harvest/mcq_integrity_audit.json) 已同时覆盖新题型。没有复制分子结构、论文全文或外部实测数据。
+- 同期另有**独立任务**新增 12 道 [DFT Course 计算练习](harvest/import_reports/dft_course_isomers.json)；其数字不可算作 Radical Learn 导入器产量。
+- [本轮完整授权、质量与增量审计](harvest/run_logs/2026-10-27-radical-matching-import.md)。所有候选仍 `publishable=false`、待专家审核；来源选择题作者给出的正确项不等于额外完成了独立化学专业审定。
+

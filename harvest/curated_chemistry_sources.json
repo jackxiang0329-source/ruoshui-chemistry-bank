@@ -320,6 +320,40 @@
       "import_questions": false,
       "imported_candidate_count": 0,
       "next_action": "Review licenses of individual public sets; never copy restricted answer keys or invent unverified solutions."
+    },
+    {
+      "source": "ChemTrain/radical-learn",
+      "url": "https://github.com/ChemTrain/radical-learn",
+      "pin": "a1c6d4cb567db370fec10a2f258048f7e89f466c",
+      "category": "organic",
+      "format": "29 original radical philicity classification cards and 12 original polarity matching partner cards",
+      "repository_license": "MIT code, CC BY 4.0 original question content",
+      "license_evidence": "https://github.com/ChemTrain/radical-learn/blob/a1c6d4cb567db370fec10a2f258048f7e89f466c/LICENSE-CONTENT.md",
+      "content_license_git_blob_sha": "dcc63233d386b460db6aefe60c1086fc15c865e9",
+      "source_html_git_blob_sha": "7a81ac8756d00a0bd2f759f08b5c217e136e7937",
+      "license_owner": "Quentin Bindschaedler (ChemTrain); conceptual reference Parsaee et al., Nat. Rev. Chem. 2021",
+      "rights_status": "CC BY 4.0 explicitly covers author-created radical question and explanation texts. No diagrams, third-party paper text or raw measured datasets copied.",
+      "import_questions": true,
+      "imported_candidate_count": 38,
+      "new_candidate_count_this_run": 12,
+      "prior_classification_candidate_count": 26,
+      "quality_note": "12 new text-only radical matching exercises use author's favorable first answer. No independent professional correctness review. All publishable=false.",
+      "next_action": "Chemistry expert review of free radical substrate polarity context, reagent identity and potential semantic overlap with 26 prior classification cards."
+    },
+    {
+      "source": "thisisntnathan/dftCourse",
+      "url": "https://github.com/thisisntnathan/dftCourse",
+      "pin": "94e9a45154fe6e8b014fd18f09b87993c599f7de",
+      "category": "physical",
+      "format": "Four source basis-set table rows used for 12 independently worded Chinese numerical exercises",
+      "repository_license": "CC BY 4.0 computational course source material",
+      "rights_status": "Independently run source rights and answer tests by parallel task; 12 candidate questions added by independent importer; source original exercises not copied.",
+      "import_questions": true,
+      "imported_candidate_count": 12,
+      "new_candidate_count_this_run": 0,
+      "quality_note": "Four source numerical rows, three teaching tasks per row; computed equilibrium fraction is illustrative, not measured yields. Awaiting expert review.",
+      "next_action": "Verify chemical assumptions, table reproducibility and source attribution before publishing.",
+      "audit": "harvest/import_reports/dft_course_isomers.json"
     }
   ]
 }

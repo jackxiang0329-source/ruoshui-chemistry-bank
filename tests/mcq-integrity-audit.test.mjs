@@ -41,3 +41,28 @@ test('missing provenance and publication safeguards remain review flags',()=>{
  assert.ok(report.issues.some(y=>y.reason==='publication_or_review_status_not_protected'));
  assert.equal(report.expert_approved,0);
 });
+
+test('author-licensed radical partner cards enter the same MCQ integrity checks',()=>{
+ const r=mcq('r',2);
+ r.subject='organic';r.question_type='licensed_radical_matching_mcq';
+ r.answer='ethyl vinyl ether';r.options=['ethyl vinyl ether','methyl acrylate'];r.answer_option='A';
+ r.source.repository='ChemTrain/radical-learn';
+ r.source.file='radical_learn.html';
+ r.source.commit='a1c6d4cb567db370fec10a2f258048f7e89f466c';
+ const result=auditMcqs([r]);
+ assert.equal(result.checked_mcq_candidates,1);
+ assert.equal(result.issue_count,0);
+ r.answer='methyl acrylate';
+ const bad=auditMcqs([r]);
+ assert.ok(bad.issues.some(x=>x.reason==='answer_option_mismatch'));
+});
+test('radical source index collisions trigger review even when stems differ',()=>{
+ const a=mcq('r1',4),b=mcq('r2',4);
+ for(const x of [a,b]){
+  x.question_type='licensed_radical_matching_mcq';
+  x.source.repository='ChemTrain/radical-learn';
+  x.source.commit='a1c6d4cb567db370fec10a2f258048f7e89f466c';
+  x.source.file='radical_learn.html';
+ }
+ assert.equal(auditMcqs([a,b]).repeated_upstream_record_count,1);
+});
