@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "d4673ff6486eea3bc5c2c0fdd794fbd81dd494a24bf1f84c51c810b6fe5d3f10",
+  "subject": "physical",
+  "topic": "vant_hoff_equilibrium_temperature",
+  "question_type": "original_parametric_physical_calculation",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "question": "物理化学·范特霍夫方程：某反应在 298.15 K 时无量纲平衡常数 K₁=4.4000，假设标准反应焓 ΔrH°=16.100 kJ/mol 在温区内不变。求 316.35 K 时的 K₂（无量纲）。",
+  "answer": "K₂ = 4.4000×exp[(16100.0/R)(1/298.15−1/316.35)] = 6.39330（无量纲）。",
+  "explanation": "积分范特霍夫方程 ln(K₂/K₁)=(ΔrH°/R)(1/T₁−1/T₂)，焓须从 kJ/mol 化为 J/mol，K 为无量纲热力学常数。",
+  "numeric_answers": [
+    6.393300323439365
+  ],
+  "parameters": {
+    "K1": 4.4,
+    "T1_kelvin": 298.15,
+    "T2_kelvin": 316.34999999999997,
+    "delta_h_j_per_mol": 16100
+  },
+  "units": "dimensionless",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-physical-variants.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "origin": "original_deterministic_generation",
+    "changes": "Independent Chinese numerical questions based on standard physical chemistry equations; no upstream questions, charts or data copied."
+  }
+}

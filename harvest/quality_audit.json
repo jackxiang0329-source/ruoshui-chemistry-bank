@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "total_candidates": 1486,
-  "corpus_hash_sha256": "2bcc0956fdac59d75e8a56bf5ad68a412c3f6e32bfdaac1dbbaf5a1927315a8d",
+  "total_candidates": 1558,
+  "corpus_hash_sha256": "76749d52cb20ea1748d7538cf0ac922889b9fd11900df92a5c4ce1dbdeaac614",
   "by_subject": {
     "analytical": 129,
     "inorganic": 849,
     "organic": 455,
-    "physical": 53
+    "physical": 125
   },
   "by_content_kind": {
-    "exercise_candidate": 1208,
+    "exercise_candidate": 1280,
     "study_card": 278
   },
   "by_quality_status": {
-    "awaiting_expert_review": 1486
+    "awaiting_expert_review": 1558
   },
   "by_publishable": {
-    "false": 1486
+    "false": 1558
   },
   "source_counts": {
     "ChemTrain/chemtrain-daily": 268,
@@ -32,7 +32,7 @@
     "QC-Edu/IntroQM": 3,
     "arya51-ai/parametric-question-engine": 30,
     "bem130/chemquiz": 67,
-    "jackxiang0329-source/ruoshui-chemistry-bank": 120,
+    "jackxiang0329-source/ruoshui-chemistry-bank": 192,
     "kbknudsen/PyEIS": 8
   },
   "topic_counts": {
@@ -77,6 +77,8 @@
     "physical:chemical_equilibrium": 6,
     "physical:chemical_kinetics": 12,
     "physical:chemical_thermodynamics": 6,
+    "physical:dilute_solution_freezing_point": 12,
+    "physical:dilute_solution_osmotic_pressure": 12,
     "physical:electrochemical_impedance_angular_frequency": 1,
     "physical:electrochemical_impedance_capacitor": 1,
     "physical:electrochemical_impedance_constant_phase_element": 1,
@@ -86,8 +88,12 @@
     "physical:electrochemical_impedance_randles_circuit": 1,
     "physical:electrochemical_impedance_series_rc": 1,
     "physical:equilibrium_constant": 6,
+    "physical:nernst_equation": 12,
     "physical:quantum_chemistry": 3,
-    "physical:standard_cell_potential": 6
+    "physical:quantum_particle_in_box": 12,
+    "physical:standard_cell_potential": 6,
+    "physical:vant_hoff_equilibrium_temperature": 12,
+    "physical:vapor_pressure_temperature": 12
   },
   "source_license_or_record_issues": {
     "count": 0,
@@ -98,8 +104,17 @@
     "samples": []
   },
   "same_template_families": {
-    "count": 44,
+    "count": 50,
     "samples": [
+      {
+        "count": 12,
+        "ids": [
+          "002abdfbf6624b29d6c6e57ef6c87579f695c05765e54e1dd185732262220051",
+          "189a2ba03922f202aeb95439ee98b321010ce3d656e0317256ce18e02784f318",
+          "27609d81a2df785097b832a5ece5acc22e9b30e16f59439896bee567698a55de",
+          "355dcb6a941034980da58f8e982f433b377e17e1bedc9b29608e393d2fd9549d"
+        ]
+      },
       {
         "count": 12,
         "ids": [
@@ -107,6 +122,15 @@
           "20b7bd0ba0be9e09a8e9f485eabe13b5292de7e9209760d960b50fccd333073e",
           "64790cc5e9307699699a890e0ec7758d6fa34cae9e9828d24781a60ef62fdbf0",
           "6685d1cd5d5919119df81e6d44fc928ee82ecc263350b2b724d99288dacfd083"
+        ]
+      },
+      {
+        "count": 12,
+        "ids": [
+          "0170f1f0f7948040acfbfdbf9d3b3f8e347b43db26c0d1dde146fd6f64b5c5fb",
+          "0c456ddf9efe8c618e29dfb9fd559b84817ca57b8154a0950371091113695991",
+          "12cff9099a7b2c9bbe1e15e6b9638bd5dcaa7dc15d10699241638e18c8d99721",
+          "3f52aaa6bf4bb619295d2bdd463defc591a5e5b9d72eb93976d5816fa0c14fb1"
         ]
       },
       {
@@ -121,10 +145,37 @@
       {
         "count": 12,
         "ids": [
+          "06f17e5c8c87fa635463cd218c56ee7b966b4084f3ce4d7101a616afb7ce2031",
+          "19b4a247baa67ba77a52f812e3855d6a71b35b5caef338452b6abb7e17c7f37f",
+          "31d89f50108d849588f0ade76919882301c1f49aa370311e440ebb90e093f67e",
+          "43b631c65647b5922358494f365a7f7b078038e97c930b76c20365f285bc94fe"
+        ]
+      },
+      {
+        "count": 12,
+        "ids": [
           "07d6798fbc515e7f400abc849ddc2698ad35fe3bf5a2fa00075bc693c17d60de",
           "08c130b63247c893bfb74951d88cfa25e72b157dffcf7fa2663133a23b48e5f4",
           "0e7825bda8bdbd1320dc15b56b606c7db225b20312d46e98215186764e6abb8f",
           "19595ee8726770788338d8c3cdd71c29379cc5c08053916ee23cc9c8418830f0"
+        ]
+      },
+      {
+        "count": 12,
+        "ids": [
+          "10189931e50aff0afbd2ea3b2141939262ddc4c9833945cd5c1c5af82ae72c45",
+          "2501d273f6bcabeb1dc8ce174b403f46d901452f28a8ca04f79b84f97d1346eb",
+          "41a154d9529665a159093092b7fe75a15bca667d221d8212ee95d8593ea0f2f0",
+          "42fa5d7c20b25631118cb0bdc5488adf48115f3989a37a36e60e480b394e6e2e"
+        ]
+      },
+      {
+        "count": 12,
+        "ids": [
+          "16817ee81189293a4fdd1389b1cb921a4ff8d741d773482d4700dca6d5643afa",
+          "2f614b6aedcfee1c86dbb786361877c1bb0ea083a54a5f59ed509c7f7fdddc37",
+          "3dd67d98ceb73e969f42a614002ef38336ca484bdd32698e0659815d77c10cd2",
+          "8126fac789d78029002d6c9f63b342fb84cd300b3fe289d5ad2eceadc540c6ed"
         ]
       },
       {
@@ -161,6 +212,15 @@
           "4c73dd96702ac96e1d7464e8474c6fbd87a1042873cb0756e457066cb8f2861f",
           "50581d637979a3be05a594d63fe4cb007a42a2b45414352d2b1b4112c7857260",
           "6eda21a45b0eedc1f42c0b48d7d674d97984f6bac987395a34b0a9e5d92c8d1e"
+        ]
+      },
+      {
+        "count": 12,
+        "ids": [
+          "2a8ebdb8b50a572e75fc5fffc43bc3f99558d87228c56be7a9eb5e4e7a140cb5",
+          "372b8ef22f6403e5866df25b1280d491e23f8ab83b0d94fcf9e79520fca4a131",
+          "49b49dca1ddc13f40b4c08fe62877d63d398b34abeff726aa0abf3cb56aca3b3",
+          "536edae405ab537528eeacd88544c3adc7e15fc6199ee86682b1bbd6c22d6d59"
         ]
       },
       {
@@ -294,48 +354,6 @@
         "ids": [
           "20d0b027dbe892f33b92604cfc93c53be574a45b92102971165a076d6f765f98",
           "ac5a51e93608b93888064dfde5d04df03e085ca958d74932358b4637d3cb74f4"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "21d6ebd77348ccc095e25da6c6f4175bba92311f2ad0c5af737221aa46549adf",
-          "a1088a26acd42e8949c04bb49d3ff950262720f538fd5caa1c0e111ff68c7901"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "2e07834c8e9d5bcb495f5559131ee42cbe4af51b460b734788af71beb351fdca",
-          "e293ff9a1e27689b1084005604749e76862f01fbf0049fbed8141e353275c94c"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "2ee33e106f49d2f8170c3e6218c011f7014a2161cb1cfb1aceea414d9aab4462",
-          "56e9e643c3ba4118a01c72678f65551622bfd4c9a65d36df8369d12a59b1a21f"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "3453566372d74dfc1d2f3bd782b50f14b072663484fa80896487808fb4b195df",
-          "a8f99aef96ce726abf8f934dbadb2c81867215b6dc683d87fa7707e9db3124e9"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "37e8967daf86fcb307cd6ee5104a0f7eb1469fc58eb8fc352e0a87170e959256",
-          "5cbc496908bb0f10ed1e8c3026bc2fbf401b05a7d1175ffba1a16da2ebb3a662"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "445ff7a6280eb15857af7d4d314f90b69994df2c3015b292481cd6f8dc1ab357",
-          "b511174144cc687db32a8f004a7c282f1ccba53fb28ea390c7a12026196c06ff"
         ]
       }
     ]

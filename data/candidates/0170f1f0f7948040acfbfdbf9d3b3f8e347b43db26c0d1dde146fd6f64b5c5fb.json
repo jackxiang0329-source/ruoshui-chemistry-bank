@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "0170f1f0f7948040acfbfdbf9d3b3f8e347b43db26c0d1dde146fd6f64b5c5fb",
+  "subject": "physical",
+  "topic": "quantum_particle_in_box",
+  "question_type": "original_parametric_physical_calculation",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "question": "物理化学·一维无限深势阱：设自由电子质量 mₑ=9.1093837139×10⁻³¹ kg，处于长度 L=1.335 nm 的一维无限深势阱。电子从量子数 n=1 跃迁到 n=2，求吸收能量 ΔE（eV）。取 h=6.62607015×10⁻³⁴ J·s，1 eV=1.602176634×10⁻¹⁹ J。",
+  "answer": "ΔE = 3h²/[8mₑ(1.335×10⁻⁹)²] ÷ (1.602176634×10⁻¹⁹) = 0.63297 eV。",
+  "explanation": "能级 E_n=n²h²/(8mₑL²)，故 ΔE=(4−1)h²/(8mₑL²)，L 先由 nm 换为 m，再由 J 换算 eV。",
+  "numeric_answers": [
+    0.632967490813235
+  ],
+  "parameters": {
+    "box_length_nm": 1.335,
+    "n_initial": 1,
+    "n_final": 2
+  },
+  "units": "eV",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-physical-variants.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "origin": "original_deterministic_generation",
+    "changes": "Independent Chinese numerical questions based on standard physical chemistry equations; no upstream questions, charts or data copied."
+  }
+}

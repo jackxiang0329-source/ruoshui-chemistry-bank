@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "generator": "original-physical-chemistry-extended-v2",
+  "originally_authored": 72,
+  "upstream_exam_problems_copied": 0,
+  "methods": 6,
+  "variants_per_method": 12,
+  "source_license": "CC0-1.0",
+  "first_run_added": 72,
+  "already_present": 0,
+  "science_validation": "independent inverse-identity checks for all 72 numerical solutions",
+  "expert_approved": 0,
+  "publishable": false,
+  "quality_status": "awaiting_expert_review",
+  "note": "New original undergraduate practice variants, not imported third-party problems. Requires expert chemistry review and template-level duplicate review."
+}
