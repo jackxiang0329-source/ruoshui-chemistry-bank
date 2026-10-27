@@ -6,31 +6,38 @@ import {fileURLToPath} from 'node:url';
 const root=new URL('../',import.meta.url);
 const shards=new URL('harvest/external_sources/',root);
 const output=new URL('harvest/external_review_queue.json',root);
-const educational=/(questions?|quiz|mcq|exam|problem(?:s|.?set)?|exercis|assessment|answer|solutions?|homework|practice|题库|试题|习题|练习)/i;
-const research=/(metacognitive|students.? opinions|attitudes|educational engagement|journal article|dissertation|systematic review|survey of students|research paper|interviews|laboratory dataset)/i;
-const school=/(high.school|middle.school|secondary.school|gaokao|jee|neet|gcse|k.12|junior high|pupils|高中|初中|高考)/i;
+const educational=/(questions?|quiz|mcq|exam|problem(?:s|.?set)?|exercis|assessment|answer|solutions?|homework|practice|\bqa\b|题库|试题|习题|练习)/i;
+const research=/(metacognitive|students.? opinions|attitudes|educational engagement|journal article|dissertation|systematic review|survey of students|research paper|interviews|laboratory dataset|\bdata(?:set)?\s+(?:for|shown|from|of)\b|\bdata(?:set)?$|misconceptions|methodology of)/i;
+const school=/(high.school|middle.school|secondary.school|gaokao|jee|neet|gcse|k.12|junior high|pupils|\b(?:9th|10th|11th|12th)[ -]?grade|高中|初中|高考)/i;
 const synthetic=/(lora|embedding|model.card|synthetic|instruct|chatbot|alpaca|dpo|rag|fine.tun)/i;
 const rights=/(?:^|[- ])(?:cc0|cc.by(?:-[0-9.]+)?|mit|apache-2[.]0|bsd)/i;
 export function rankExternal(row){
  if(!['huggingface','zenodo'].includes(row?.platform)||typeof row.id!=='string'||
   typeof row.title!=='string'||typeof row.url!=='string')return null;
  const sub=Array.isArray(row.subjects)?row.subjects:[],
-  searchable=[row.id,row.title,row.description||''].join(' '),
+  headline=[row.id,row.title].join(' '),description=String(row.description||''),
+  searchable=[headline,description].join(' '),
   lic=String(row.claimed_license||'UNVERIFIED').toLowerCase();
  if(!/chem|molecul|titration|electrochem|spectroscop|inorganic|organic|化学/i.test(searchable))return null;
+ // Do not let a research abstract with generic 'questions' outweigh its article title.
+ const direct=educational.test(headline),bodyOnly=educational.test(description);
+ if(!direct&&!bodyOnly)return null;
+ if(!direct&&research.test(headline))return null;
+ if(school.test(headline)||synthetic.test(headline))return null;
  let score=0,signals=[];
- if(educational.test(searchable)){score+=25;signals.push('question_or_answer_terms');}
+ if(direct){score+=35;signals.push('explicit_question_or_answer_title');}
+ else {score+=10;signals.push('question_terms_only_in_description');}
  if(sub.includes('analytical')){score+=18;signals.push('analytical');}
  if(sub.includes('physical')){score+=17;signals.push('physical');}
  if(sub.includes('organic'))score+=7;
  if(sub.includes('inorganic'))score+=7;
  if(row.platform==='huggingface')score+=5;
  if(rights.test(lic)&&!lic.includes('-nc-')){score+=14;signals.push('claimed_open_license');}
- if(research.test(searchable)){score-=25;signals.push('possible_article_not_question_bank');}
+ if(research.test(headline)){score-=35;signals.push('possible_article_not_question_bank');}
  if(school.test(searchable)){score-=26;signals.push('likely_not_undergraduate');}
  if(synthetic.test(searchable)){score-=17;signals.push('synthetic_or_model_derived');}
  if(/non.?commercial|cc-by-nc|noassertion|unknown|unverified|other/.test(lic)){score-=7;signals.push('rights_uncertain_or_restricted');}
- if(score<8)return null;
+ if(score<20)return null;
  return {platform:row.platform,id:row.id,url:row.url,title:row.title,
   subjects:sub,metadata_score:score,signals,claimed_license:row.claimed_license||'UNVERIFIED',
   upstream_sha:row.upstream_sha||null,

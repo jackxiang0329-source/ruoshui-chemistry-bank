@@ -31,3 +31,12 @@ test('selection removes duplicate source IDs and deterministically sorts scores'
  assert.deepEqual(q,choose([c,b,a]));
  assert.throws(()=>choose([a],1000),/Unsafe/);
 });
+
+test('research datasets with incidental question wording do not displace true question sets',()=>{
+ const paper={platform:'zenodo',id:'123456',title:'Data for electrochemistry research',
+   url:'https://zenodo.org/records/123456',description:'Research questions about electrochemistry methods',
+   subjects:['physical'],claimed_license:'cc-by-4.0'};
+ assert.equal(rankExternal(paper),null);
+ const eligible=rankExternal(row('Example/chemistry-question-bank'));
+ assert.ok(eligible&&eligible.metadata_score>=30);
+});
