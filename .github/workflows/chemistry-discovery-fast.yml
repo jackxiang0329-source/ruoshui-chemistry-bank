@@ -71,7 +71,7 @@ jobs:
           fi
       - name: Regenerate rights-review priorities (no unapproved question import)
         run: node scripts/prioritize-chemistry-sources.mjs
-      - name: Preflight repository LICENSE and README for next 20 sources
+      - name: Preflight repository LICENSE and README for next 40 sources
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/preflight-chemistry-sources.mjs

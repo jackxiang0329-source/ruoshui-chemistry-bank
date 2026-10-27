@@ -7,8 +7,8 @@ const ROOT=new URL('../',import.meta.url),QUEUE=new URL('harvest/source_review_q
 const OUT=new URL('harvest/license_preflight.json',ROOT);
 const TOKEN=process.env.GITHUB_TOKEN;
 export const sortKeys=r=>Object.fromEntries(Object.entries(r).sort(([a],[b])=>a.localeCompare(b)));
-export function selectedForReview(queue,reviewed,limit=20){
- if(!Array.isArray(queue)||!Number.isInteger(limit)||limit<1||limit>24)throw Error('Invalid preflight query');
+export function selectedForReview(queue,reviewed,limit=40){
+ if(!Array.isArray(queue)||!Number.isInteger(limit)||limit<1||limit>48)throw Error('Invalid preflight query');
  const seen=new Set();
  return queue.filter(x=>{
   const name=String(x.repository||'');
@@ -74,7 +74,7 @@ export async function run(){
    }catch(e){errors.push(row.repository+': '+String(e.message||e).slice(0,150));}
   }
  };
- await Promise.all(Array.from({length:2},()=>worker()));
+ await Promise.all(Array.from({length:4},()=>worker()));
  report.checked=sortKeys(report.checked);
  report.total_checked=Object.keys(report.checked).length;
  report.candidates_with_repository_license_evidence=Object.values(report.checked).filter(x=>x.repository_license_file_present).length;
