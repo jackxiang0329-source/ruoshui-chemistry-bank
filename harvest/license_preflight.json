@@ -989,6 +989,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "cosmiccrusader23/ib-question-bank": {
+      "repository": "CosmicCrusader23/ib-question-bank",
+      "url": "https://github.com/CosmicCrusader23/ib-question-bank",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "0c19d172dc65cf566c8f09c0ed8129c117b692ad",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "crestydy/ochem-for-fun": {
       "repository": "CrestyDY/Ochem-For-Fun",
       "url": "https://github.com/CrestyDY/Ochem-For-Fun",
@@ -1023,6 +1040,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "danielsank/vankampen-stochastic": {
+      "repository": "DanielSank/vankampen-stochastic",
+      "url": "https://github.com/DanielSank/vankampen-stochastic",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "f64ea354f1bcabc534aa6de384e4db159ff20417",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "dannyvanpoucke/pythontutorials": {
       "repository": "DannyVanpoucke/PythonTutorials",
       "url": "https://github.com/DannyVanpoucke/PythonTutorials",
@@ -1036,6 +1070,23 @@
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "dashon1/k-8-multi-level-science-adventure-game-design": {
+      "repository": "dashon1/K-8-Multi-Level-Science-Adventure-Game-Design",
+      "url": "https://github.com/dashon1/K-8-Multi-Level-Science-Adventure-Game-Design",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "a5df1bf082bcc01f9d99c148f54f9e9ecfa219ad",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
       "question_content_rights": "NOT_VERIFIED",
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
@@ -1057,6 +1108,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "davidnwokediri-wq/python": {
+      "repository": "davidnwokediri-wq/Python",
+      "url": "https://github.com/davidnwokediri-wq/Python",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "2f8e7693a3650fc7515fedea5e16b75af84ec70e",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "delasiftech/iupac-nomenclature-masterclass": {
       "repository": "delasiftech/IUPAC-nomenclature-masterclass",
       "url": "https://github.com/delasiftech/IUPAC-nomenclature-masterclass",
@@ -1067,6 +1135,23 @@
       "repository_license_file_present": false,
       "license_file_git_blob_sha": null,
       "readme_file_git_blob_sha": "0fef2f9e43908dee15d31f5ac8b1ae0cd0603527",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "dembeleejike/ec-chemistry-question-bank": {
+      "repository": "dembeleejike/ec-chemistry-question-bank",
+      "url": "https://github.com/dembeleejike/ec-chemistry-question-bank",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "e86a1f86e4e607a37828d25754ac641b2f453947",
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": false,
@@ -1119,6 +1204,23 @@
       "license_file_git_blob_sha": "3d99be61455593cbdb87df466231d8efa58f9f94",
       "readme_file_git_blob_sha": "7b0e8f743142902d996045d1c5695a8545d00fca",
       "third_party_content_risk": true,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "divyayelumula/quiz-project": {
+      "repository": "Divyayelumula/Quiz-Project",
+      "url": "https://github.com/Divyayelumula/Quiz-Project",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "63f62f11974e440c320525d4373a2e1a4059296b",
+      "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": false,
       "question_content_rights": "NOT_VERIFIED",
@@ -1329,6 +1431,57 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "fuadseideshetu/quiz": {
+      "repository": "fuadseideshetu/Quiz",
+      "url": "https://github.com/fuadseideshetu/Quiz",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "6dcfce423be771b68d641e917f6fa79fbb7424ff",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "future-doctor1/exam-prep-point": {
+      "repository": "Future-Doctor1/Exam-Prep-Point",
+      "url": "https://github.com/Future-Doctor1/Exam-Prep-Point",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "fc2f9cfdff9e28599babf12f2769a22c3fc97e1c",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "gds001/computational-physical-chemistry": {
+      "repository": "gds001/Computational-Physical-Chemistry",
+      "url": "https://github.com/gds001/Computational-Physical-Chemistry",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "81c11c1ac4fcc72e41f59aee927b61f264b2500f",
+      "third_party_content_risk": true,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "gitrodj/hydrocarbons-quiz": {
       "repository": "GitRodj/hydrocarbons-quiz",
       "url": "https://github.com/GitRodj/hydrocarbons-quiz",
@@ -1465,6 +1618,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "hamzahmad6/python-chemistry-quiz": {
+      "repository": "Hamzahmad6/Python-Chemistry-Quiz",
+      "url": "https://github.com/Hamzahmad6/Python-Chemistry-Quiz",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "ebfa77c706c41d49cdf19c601bd7b7e755276262",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "happynetizens/chemistry": {
       "repository": "Happynetizens/chemistry",
       "url": "https://github.com/Happynetizens/chemistry",
@@ -1495,6 +1665,23 @@
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "heesak/student-quiz": {
+      "repository": "heesak/student-quiz",
+      "url": "https://github.com/heesak/student-quiz",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "65fa40d5aa081dc3190ecf42f89db89a04a2b538",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
       "question_content_rights": "NOT_VERIFIED",
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
@@ -1533,6 +1720,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "hrimanr0hatgi/quiz-game": {
+      "repository": "HrimanR0hatgi/Quiz-Game",
+      "url": "https://github.com/HrimanR0hatgi/Quiz-Game",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": null,
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "huanyu-hibiki/xirang": {
       "repository": "Huanyu-Hibiki/Xirang",
       "url": "https://github.com/Huanyu-Hibiki/Xirang",
@@ -1546,6 +1750,74 @@
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "imercfy-labs/12th-chemistry": {
+      "repository": "Imercfy-Labs/12th-Chemistry",
+      "url": "https://github.com/Imercfy-Labs/12th-Chemistry",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": null,
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "ingelbrecht-hannes/marxes": {
+      "repository": "ingelbrecht-hannes/marxes",
+      "url": "https://github.com/ingelbrecht-hannes/marxes",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "e3f358ed308ed943be35df9dbf4c02f59b9106fe",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "ishan4511/quizehub": {
+      "repository": "Ishan4511/QuizeHub",
+      "url": "https://github.com/Ishan4511/QuizeHub",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": null,
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "jamshidi-lab/wscc-2025": {
+      "repository": "Jamshidi-Lab/WSCC-2025",
+      "url": "https://github.com/Jamshidi-Lab/WSCC-2025",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "fe9fc44e62ede903b579c6d0b093c2d0de930135",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
       "question_content_rights": "NOT_VERIFIED",
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
@@ -1611,6 +1883,57 @@
       "repository_license_file_present": false,
       "license_file_git_blob_sha": null,
       "readme_file_git_blob_sha": "d9c8d27f46482c689542b54a1e2c0fc87d01514f",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "jinhui743/chemistry-mole-question-bank": {
+      "repository": "jinhui743/Chemistry-Mole-Question-Bank",
+      "url": "https://github.com/jinhui743/Chemistry-Mole-Question-Bank",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "2030f0d36a4f3c52dd1e0a661e7a0e58a9eb07ef",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "jkielty/ai-for-chemistry": {
+      "repository": "JKielty/AI-for-Chemistry",
+      "url": "https://github.com/JKielty/AI-for-Chemistry",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": null,
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "jlaaser/quantum-exercises": {
+      "repository": "jlaaser/quantum-exercises",
+      "url": "https://github.com/jlaaser/quantum-exercises",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "f5e53cb6b8fc6165dce7b35bfc08638feb1bfae6",
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": false,
@@ -1721,6 +2044,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "jqchen1566/inorganic-chemistry-ii": {
+      "repository": "jqChen1566/inorganic-chemistry-II",
+      "url": "https://github.com/jqChen1566/inorganic-chemistry-II",
+      "subjects": [
+        "inorganic"
+      ],
+      "discovery_license_spdx": "NOASSERTION",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "adef7ba63fb7eed9712582b17d98317d2df3b726",
+      "readme_file_git_blob_sha": "eacce506902ea548a602a2e6b0ccdc6fb4c25b02",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "jreel/essentoo": {
       "repository": "jreel/EssenToo",
       "url": "https://github.com/jreel/EssenToo",
@@ -1824,6 +2164,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "kaden7925hkcb-commits/xinxin-study-quiz": {
+      "repository": "kaden7925hkcb-commits/xinxin-study-quiz",
+      "url": "https://github.com/kaden7925hkcb-commits/xinxin-study-quiz",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "aec607a337bf82d12e1f7bce0e790b90a07433c2",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "kamanzilorenzo/scientia": {
       "repository": "kamanzilorenzo/scientia",
       "url": "https://github.com/kamanzilorenzo/scientia",
@@ -1837,6 +2194,23 @@
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "karagiannis/chem_exercises": {
+      "repository": "karagiannis/chem_exercises",
+      "url": "https://github.com/karagiannis/chem_exercises",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "05c097ec7ce077776be0249a663e72affb1a66eb",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
       "question_content_rights": "NOT_VERIFIED",
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
@@ -1943,6 +2317,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "kktsangag-cyber/ch40208-exercise": {
+      "repository": "kktsangag-cyber/CH40208-Exercise",
+      "url": "https://github.com/kktsangag-cyber/CH40208-Exercise",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "2791da18a1422e8d72712a75324a3bf2e43474bf",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "kuchynska/digital_chemistry": {
       "repository": "kuchynska/Digital_Chemistry",
       "url": "https://github.com/kuchynska/Digital_Chemistry",
@@ -1956,6 +2347,57 @@
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "kunmishra2599/cm4044-exercises": {
+      "repository": "kunmishra2599/CM4044-Exercises",
+      "url": "https://github.com/kunmishra2599/CM4044-Exercises",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "10a1ad744f282604f93279863737d90ee3fbc779",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "laylaelizabeth/biohelix": {
+      "repository": "laylaelizabeth/BioHelix",
+      "url": "https://github.com/laylaelizabeth/BioHelix",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "82252bc51b8de5cc7f6ede582403c97dda7e0529",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "lcyting/helloagents-exercise-code": {
+      "repository": "lcyting/HelloAgents-exercise-code",
+      "url": "https://github.com/lcyting/HelloAgents-exercise-code",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "NOASSERTION",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "cbe5ad1670406e4402217edfb82d2c56af7e8631",
+      "readme_file_git_blob_sha": "b26c148c799029b382ac7b12b044a7f3e20875a8",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": true,
       "question_content_rights": "NOT_VERIFIED",
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
@@ -1994,6 +2436,40 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "lihan1206/brix_examination-system": {
+      "repository": "lihan1206/Brix_examination-system",
+      "url": "https://github.com/lihan1206/Brix_examination-system",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "acd311f4ae4377acae6489e8871653cfbdee79c6",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "lisk809/chem-api": {
+      "repository": "Lisk809/chem-api",
+      "url": "https://github.com/Lisk809/chem-api",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "436b67b0c69b07c10bf409012a1a67aed2c484de",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "llxl0/quiz-platform": {
       "repository": "llxl0/quiz-platform",
       "url": "https://github.com/llxl0/quiz-platform",
@@ -2007,6 +2483,23 @@
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "lmm-175/zhixue-linghang": {
+      "repository": "lmm-175/zhixue-linghang",
+      "url": "https://github.com/lmm-175/zhixue-linghang",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "33bf319211d03b05d6c61f56ea24067de1030494",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
       "question_content_rights": "NOT_VERIFIED",
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
@@ -2045,6 +2538,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "lucie-physique/olympiade": {
+      "repository": "lucie-physique/olympiade",
+      "url": "https://github.com/lucie-physique/olympiade",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "69957d3006b5aec73844e15880c995c6502ddf43",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "luddevergard3n/lavoisier": {
       "repository": "LuddEvergard3n/lavoisier",
       "url": "https://github.com/LuddEvergard3n/lavoisier",
@@ -2075,6 +2585,23 @@
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "madjonas/studyapp": {
+      "repository": "madjonas/studyapp",
+      "url": "https://github.com/madjonas/studyapp",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": null,
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
       "question_content_rights": "NOT_VERIFIED",
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
@@ -2113,6 +2640,91 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "manishabairi6396/chemarena-": {
+      "repository": "manishabairi6396/ChemArena-",
+      "url": "https://github.com/manishabairi6396/ChemArena-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "c80f031b202acd6b47a903f13a01086bf87b88b8",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "mating1/-": {
+      "repository": "mating1/-",
+      "url": "https://github.com/mating1/-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "2c03c2e1a6119b2bfb1df7433faf58c184a99508",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "mating1/wenxuemao": {
+      "repository": "mating1/wenxuemao",
+      "url": "https://github.com/mating1/wenxuemao",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": null,
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "mating1/wenxuemao1": {
+      "repository": "mating1/wenxuemao1",
+      "url": "https://github.com/mating1/wenxuemao1",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "0f40650ad2bbdeb568f3d9d4dd0591bab296326f",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "matthewhuyijun/hsc-question-bank-quartz": {
+      "repository": "matthewhuyijun/HSC-Question-Bank-Quartz",
+      "url": "https://github.com/matthewhuyijun/HSC-Question-Bank-Quartz",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": null,
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "mauricepasternak/chemsolver": {
       "repository": "MauricePasternak/Chemsolver",
       "url": "https://github.com/MauricePasternak/Chemsolver",
@@ -2123,6 +2735,23 @@
       "repository_license_file_present": false,
       "license_file_git_blob_sha": null,
       "readme_file_git_blob_sha": "95f78373b6d54c2199dbd27207702ec0b17c5d38",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "medhatchemistry-dev/exams-project": {
+      "repository": "medhatchemistry-dev/Exams-Project",
+      "url": "https://github.com/medhatchemistry-dev/Exams-Project",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "a5e6bc71ebc6b78432c19b891ea31f05a961c751",
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": false,
@@ -2177,6 +2806,23 @@
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "mirzamudassir1/assingment-application": {
+      "repository": "mirzamudassir1/assingment-application",
+      "url": "https://github.com/mirzamudassir1/assingment-application",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": null,
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
       "question_content_rights": "NOT_VERIFIED",
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
@@ -2295,6 +2941,23 @@
       "repository_license_file_present": false,
       "license_file_git_blob_sha": null,
       "readme_file_git_blob_sha": null,
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "namit05/python-quiz-generator": {
+      "repository": "Namit05/Python-Quiz-Generator",
+      "url": "https://github.com/Namit05/Python-Quiz-Generator",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "cdf4003d2f43fd295d80999939eb759116f7f84f",
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": false,
@@ -2937,6 +3600,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "sodelab/quantumchemistryeducation": {
+      "repository": "sodelab/QuantumChemistryEducation",
+      "url": "https://github.com/sodelab/QuantumChemistryEducation",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "GPL-3.0",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "readme_file_git_blob_sha": "1687c99d86fb6e51782dc25afea9eaaf6146a6be",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "sophie-turner/titration-marks": {
       "repository": "Sophie-Turner/Titration-marks",
       "url": "https://github.com/Sophie-Turner/Titration-marks",
@@ -3418,7 +4098,7 @@
     }
   },
   "note": "License preflight does not approve, copy or release any question data.",
-  "total_checked": 200,
-  "candidates_with_repository_license_evidence": 111,
+  "total_checked": 240,
+  "candidates_with_repository_license_evidence": 114,
   "affirmatively_licensed_question_sets": 0
 }

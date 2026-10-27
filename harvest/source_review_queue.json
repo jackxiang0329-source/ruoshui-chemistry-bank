@@ -1,359 +1,13 @@
 {
   "schema_version": 1,
   "source_records_considered": 757,
-  "already_preflighted_sources": 160,
+  "already_preflighted_sources": 200,
   "unreviewed_queued_for_metadata_rights_check": 160,
   "prioritized_for_manual_rights_check": 160,
   "question_text_or_answers_downloaded": 0,
   "question_license_approvals_added": 0,
   "note": "Priorities are based ONLY on repository metadata. They do not authorize copying questions, data or images.",
   "queue": [
-    {
-      "repository": "kazueuglena/yuki-drill",
-      "url": "https://github.com/kazueuglena/yuki-drill",
-      "subjects": [
-        "organic"
-      ],
-      "score": 23,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "notesmedicose/organic_chemistry",
-      "url": "https://github.com/notesmedicose/organic_chemistry",
-      "subjects": [
-        "organic"
-      ],
-      "score": 23,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "pawelkwaczynski/electrolab-cv",
-      "url": "https://github.com/pawelkwaczynski/electrolab-cv",
-      "subjects": [
-        "analytical",
-        "physical"
-      ],
-      "score": 23,
-      "repository_license_spdx": "MIT",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "software_or_tool_only_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "sadguruinnerengineering7-collab/Gali-Soumya-",
-      "url": "https://github.com/sadguruinnerengineering7-collab/Gali-Soumya-",
-      "subjects": [
-        "organic"
-      ],
-      "score": 23,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "SatyaHMehta/OchemPath",
-      "url": "https://github.com/SatyaHMehta/OchemPath",
-      "subjects": [
-        "organic"
-      ],
-      "score": 23,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "staci/alkenes",
-      "url": "https://github.com/staci/alkenes",
-      "subjects": [
-        "organic"
-      ],
-      "score": 23,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "the-Burg3r/QCE-Chemistry-U4",
-      "url": "https://github.com/the-Burg3r/QCE-Chemistry-U4",
-      "subjects": [
-        "organic"
-      ],
-      "score": 23,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "wenckerwan/OrganicChemHub",
-      "url": "https://github.com/wenckerwan/OrganicChemHub",
-      "subjects": [
-        "organic"
-      ],
-      "score": 23,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "1205103295/Solutions-to-Exercises-on-Machine-Learning-Methods-Reinforcement-Learning",
-      "url": "https://github.com/1205103295/Solutions-to-Exercises-on-Machine-Learning-Methods-Reinforcement-Learning",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "2209038636aa/lwy",
-      "url": "https://github.com/2209038636aa/lwy",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "2625658441-star/chem-diagnosis",
-      "url": "https://github.com/2625658441-star/chem-diagnosis",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "NOASSERTION",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "3iM0ViY/Chemistry_names",
-      "url": "https://github.com/3iM0ViY/Chemistry_names",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "Adarshsingh2872003/Rv_questionBank_chemistry",
-      "url": "https://github.com/Adarshsingh2872003/Rv_questionBank_chemistry",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "adiosingh/McQuizZ",
-      "url": "https://github.com/adiosingh/McQuizZ",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "ahmmedzakii/organic_Chemistry_Quiz",
-      "url": "https://github.com/ahmmedzakii/organic_Chemistry_Quiz",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "alexkourtis98/chemistry-practice",
-      "url": "https://github.com/alexkourtis98/chemistry-practice",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "alymartinelli/ppc-exercises",
-      "url": "https://github.com/alymartinelli/ppc-exercises",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "anttikarttunen/sscc2026-qc-pes",
-      "url": "https://github.com/anttikarttunen/sscc2026-qc-pes",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "bab74748-king/StudyMate-",
-      "url": "https://github.com/bab74748-king/StudyMate-",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "bekam4730-art/student-challenge-quize",
-      "url": "https://github.com/bekam4730-art/student-challenge-quize",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "c-vandenberg/machine-learning-in-drug-discovery",
-      "url": "https://github.com/c-vandenberg/machine-learning-in-drug-discovery",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "cfmarcos64/Create-pattern-match-with-molecular-editor-questions-for-Moodle",
-      "url": "https://github.com/cfmarcos64/Create-pattern-match-with-molecular-editor-questions-for-Moodle",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "NOASSERTION",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "chinaghy/CETPathAgent",
-      "url": "https://github.com/chinaghy/CETPathAgent",
-      "subjects": [
-        "general"
-      ],
-      "score": 22,
-      "repository_license_spdx": "UNKNOWN",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
     {
       "repository": "CosmicCrusader23/ib-question-bank",
       "url": "https://github.com/CosmicCrusader23/ib-question-bank",
@@ -1675,21 +1329,6 @@
       "original_source_record": "harvest/sources/"
     },
     {
-      "repository": "erni-tf/buscador-de-formulas",
-      "url": "https://github.com/erni-tf/buscador-de-formulas",
-      "subjects": [
-        "organic"
-      ],
-      "score": 21,
-      "repository_license_spdx": "MIT",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "education_material_claim_only",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
       "repository": "gagebayliss/pchem-II-lab",
       "url": "https://github.com/gagebayliss/pchem-II-lab",
       "subjects": [
@@ -1702,21 +1341,6 @@
       "question_content_rights": "not_verified_for_question_or_answer_redistribution",
       "state": "needs_per_question_provenance_and_answer_quality_review",
       "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "HiroYokoyama/python_molecular_editor",
-      "url": "https://github.com/HiroYokoyama/python_molecular_editor",
-      "subjects": [
-        "organic"
-      ],
-      "score": 21,
-      "repository_license_spdx": "LGPL-3.0",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "education_material_claim_only",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
       "original_source_record": "harvest/sources/"
     },
     {
@@ -1780,36 +1404,6 @@
       "original_source_record": "harvest/sources/"
     },
     {
-      "repository": "LongLong10203/IUPAC-master",
-      "url": "https://github.com/LongLong10203/IUPAC-master",
-      "subjects": [
-        "organic"
-      ],
-      "score": 21,
-      "repository_license_spdx": "MIT",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "education_material_claim_only",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "mihirduvedi/mechanism-canvas",
-      "url": "https://github.com/mihirduvedi/mechanism-canvas",
-      "subjects": [
-        "organic"
-      ],
-      "score": 21,
-      "repository_license_spdx": "MIT",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "education_material_claim_only",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
       "repository": "Rundong-Li/Physical_chemistry_experiment_19-fall",
       "url": "https://github.com/Rundong-Li/Physical_chemistry_experiment_19-fall",
       "subjects": [
@@ -1822,97 +1416,6 @@
       "question_content_rights": "not_verified_for_question_or_answer_redistribution",
       "state": "needs_per_question_provenance_and_answer_quality_review",
       "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "julianescord/cheminator",
-      "url": "https://github.com/julianescord/cheminator",
-      "subjects": [
-        "inorganic"
-      ],
-      "score": 20,
-      "repository_license_spdx": "MIT",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "education_material_claim_only",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "lenguyenhieustd/ChO-Inorganic-Chemistry",
-      "url": "https://github.com/lenguyenhieustd/ChO-Inorganic-Chemistry",
-      "subjects": [
-        "inorganic"
-      ],
-      "score": 20,
-      "repository_license_spdx": "AGPL-3.0",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "education_material_claim_only",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "goshaadams-lgtm/shiny-winner",
-      "url": "https://github.com/goshaadams-lgtm/shiny-winner",
-      "subjects": [
-        "general"
-      ],
-      "score": 19,
-      "repository_license_spdx": "MIT",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "JuaoSea/Chemistry",
-      "url": "https://github.com/JuaoSea/Chemistry",
-      "subjects": [
-        "organic",
-        "analytical"
-      ],
-      "score": 19,
-      "repository_license_spdx": "GPL-3.0",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "software_or_tool_only_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "Pratyushsharma28/Board-Ace-AI-2",
-      "url": "https://github.com/Pratyushsharma28/Board-Ace-AI-2",
-      "subjects": [
-        "general"
-      ],
-      "score": 19,
-      "repository_license_spdx": "MIT",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "xmmmymm/chemistry-equation-printer",
-      "url": "https://github.com/xmmmymm/chemistry-equation-printer",
-      "subjects": [
-        "general"
-      ],
-      "score": 19,
-      "repository_license_spdx": "MIT",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "explicit_question_or_exercise_claim",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
       "original_source_record": "harvest/sources/"
     },
     {
@@ -2156,22 +1659,6 @@
       "original_source_record": "harvest/sources/"
     },
     {
-      "repository": "JonasRackl/labmate-mcp",
-      "url": "https://github.com/JonasRackl/labmate-mcp",
-      "subjects": [
-        "organic",
-        "analytical"
-      ],
-      "score": 17,
-      "repository_license_spdx": "MIT",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "education_material_claim_only",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
       "repository": "liuyinan19922/ProcessingHMMTIMG",
       "url": "https://github.com/liuyinan19922/ProcessingHMMTIMG",
       "subjects": [
@@ -2247,21 +1734,6 @@
       "original_source_record": "harvest/sources/"
     },
     {
-      "repository": "ajschoef/SympyForChemists",
-      "url": "https://github.com/ajschoef/SympyForChemists",
-      "subjects": [
-        "general"
-      ],
-      "score": 16,
-      "repository_license_spdx": "MIT",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "education_material_claim_only",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
       "repository": "akarshroot/Chemistry-Quiz-App",
       "url": "https://github.com/akarshroot/Chemistry-Quiz-App",
       "subjects": [
@@ -2277,51 +1749,6 @@
       "original_source_record": "harvest/sources/"
     },
     {
-      "repository": "angzeli/ase_learning",
-      "url": "https://github.com/angzeli/ase_learning",
-      "subjects": [
-        "general"
-      ],
-      "score": 16,
-      "repository_license_spdx": "MIT",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "education_material_claim_only",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "BDFD-Tutorial-Ground/OSSD-TDSB_Secondary_School_Science_Formula_Collection",
-      "url": "https://github.com/BDFD-Tutorial-Ground/OSSD-TDSB_Secondary_School_Science_Formula_Collection",
-      "subjects": [
-        "general"
-      ],
-      "score": 16,
-      "repository_license_spdx": "MIT",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "education_material_claim_only",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "csc-training/gromacs-demo",
-      "url": "https://github.com/csc-training/gromacs-demo",
-      "subjects": [
-        "general"
-      ],
-      "score": 16,
-      "repository_license_spdx": "CC-BY-4.0",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "education_material_claim_only",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
       "repository": "delasiftech/Organic-Chemistry-App",
       "url": "https://github.com/delasiftech/Organic-Chemistry-App",
       "subjects": [
@@ -2334,36 +1761,6 @@
       "question_content_rights": "not_verified_for_question_or_answer_redistribution",
       "state": "needs_per_question_provenance_and_answer_quality_review",
       "rationale": "Repository license unknown; request permissions before any reuse.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "luchem/notebooks",
-      "url": "https://github.com/luchem/notebooks",
-      "subjects": [
-        "general"
-      ],
-      "score": 16,
-      "repository_license_spdx": "CC-BY-SA-4.0",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "education_material_claim_only",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
-      "original_source_record": "harvest/sources/"
-    },
-    {
-      "repository": "raghurama123/Comp_PhysChem_Basic",
-      "url": "https://github.com/raghurama123/Comp_PhysChem_Basic",
-      "subjects": [
-        "general"
-      ],
-      "score": 16,
-      "repository_license_spdx": "MIT",
-      "source_license_metadata_only": true,
-      "question_presence_signal": "education_material_claim_only",
-      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
-      "state": "needs_per_question_provenance_and_answer_quality_review",
-      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
       "original_source_record": "harvest/sources/"
     },
     {
@@ -2404,6 +1801,606 @@
         "physical"
       ],
       "score": 16,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "socialtoapall/NEET-Chemistry-Chemical-Kinetics-MCQs-Medium-Level-Practice-Concept-Clarity.",
+      "url": "https://github.com/socialtoapall/NEET-Chemistry-Chemical-Kinetics-MCQs-Medium-Level-Practice-Concept-Clarity.",
+      "subjects": [
+        "physical"
+      ],
+      "score": 16,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "socialtoapall/NEET-Chemistry-States-of-Matter-MCQs-All-Levels-Complete-Practice-Set",
+      "url": "https://github.com/socialtoapall/NEET-Chemistry-States-of-Matter-MCQs-All-Levels-Complete-Practice-Set",
+      "subjects": [
+        "physical"
+      ],
+      "score": 16,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "socialtoapall/NEET-Chemistry-Thermodynamics-MCQs-All-Levels-Complete-Practice-Set",
+      "url": "https://github.com/socialtoapall/NEET-Chemistry-Thermodynamics-MCQs-All-Levels-Complete-Practice-Set",
+      "subjects": [
+        "physical"
+      ],
+      "score": 16,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "socialtoapall/NEET-Chemistry-Thermodynamics-MCQs-Hard-Level-Advanced-Numerical-Practice",
+      "url": "https://github.com/socialtoapall/NEET-Chemistry-Thermodynamics-MCQs-Hard-Level-Advanced-Numerical-Practice",
+      "subjects": [
+        "physical"
+      ],
+      "score": 16,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "socialtoapall/NEET-Chemistry-Thermodynamics-MCQs-Medium-Level-Concept-Numerical-Practice",
+      "url": "https://github.com/socialtoapall/NEET-Chemistry-Thermodynamics-MCQs-Medium-Level-Concept-Numerical-Practice",
+      "subjects": [
+        "physical"
+      ],
+      "score": 16,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "sodelab/QuantumChemistryEducation",
+      "url": "https://github.com/sodelab/QuantumChemistryEducation",
+      "subjects": [
+        "general"
+      ],
+      "score": 16,
+      "repository_license_spdx": "GPL-3.0",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "education_material_claim_only",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "160624735112-cell/Sam",
+      "url": "https://github.com/160624735112-cell/Sam",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "a1n2a3s6/Chemistry",
+      "url": "https://github.com/a1n2a3s6/Chemistry",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Abdelrhman1Ragab2/ChemEquationSolver",
+      "url": "https://github.com/Abdelrhman1Ragab2/ChemEquationSolver",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "ahmad-eid97/Exam",
+      "url": "https://github.com/ahmad-eid97/Exam",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "AIML09/PCBM",
+      "url": "https://github.com/AIML09/PCBM",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "ajaykapase/kitcet",
+      "url": "https://github.com/ajaykapase/kitcet",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "ajibolamachado2003-boop/EduChem-Lessons",
+      "url": "https://github.com/ajibolamachado2003-boop/EduChem-Lessons",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Alexvtv/exam",
+      "url": "https://github.com/Alexvtv/exam",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "aliuoluyemi7-prog/ExamWiseNG",
+      "url": "https://github.com/aliuoluyemi7-prog/ExamWiseNG",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Anna-Plachova/uhlovodiky",
+      "url": "https://github.com/Anna-Plachova/uhlovodiky",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Annnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnna/NAMMA-RASAYANA-GURU-",
+      "url": "https://github.com/Annnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnna/NAMMA-RASAYANA-GURU-",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "anshuS1310/GPQA-Diamond",
+      "url": "https://github.com/anshuS1310/GPQA-Diamond",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Aqu-210L/chemistry-teaching",
+      "url": "https://github.com/Aqu-210L/chemistry-teaching",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Arunmohankml/Chemistry-lab-1.0",
+      "url": "https://github.com/Arunmohankml/Chemistry-lab-1.0",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Awallace3/ChemistryScavengerHunt",
+      "url": "https://github.com/Awallace3/ChemistryScavengerHunt",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "ayo1814/Jamb-cbt-simulator",
+      "url": "https://github.com/ayo1814/Jamb-cbt-simulator",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Bboyjie/AIreader",
+      "url": "https://github.com/Bboyjie/AIreader",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "NOASSERTION",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "beyondtopper/bt",
+      "url": "https://github.com/beyondtopper/bt",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Bit-cipher/stem-cbt",
+      "url": "https://github.com/Bit-cipher/stem-cbt",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "BRYTE29/Jamb-chemistry",
+      "url": "https://github.com/BRYTE29/Jamb-chemistry",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "BRYTE29/Jamb-chemistry-26",
+      "url": "https://github.com/BRYTE29/Jamb-chemistry-26",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "CG-LSH/Chemistry-Lab",
+      "url": "https://github.com/CG-LSH/Chemistry-Lab",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "cy21c049/ChemRapid",
+      "url": "https://github.com/cy21c049/ChemRapid",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "davidmcelisg/PISA-study",
+      "url": "https://github.com/davidmcelisg/PISA-study",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "dejesusj790/Entropy-Practice",
+      "url": "https://github.com/dejesusj790/Entropy-Practice",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "destadasho470-del/chemistry-entrance-exam",
+      "url": "https://github.com/destadasho470-del/chemistry-entrance-exam",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "dhanyasriroboai/IIT-Foundation-Learning---Chrome-Extension",
+      "url": "https://github.com/dhanyasriroboai/IIT-Foundation-Learning---Chrome-Extension",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "NOASSERTION",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "DinLei/ReinforcementLearningOnTheWay",
+      "url": "https://github.com/DinLei/ReinforcementLearningOnTheWay",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "domcheemmanuelle-sudo/ladquest",
+      "url": "https://github.com/domcheemmanuelle-sudo/ladquest",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "DongYaoZe/chemical-principles-solutions",
+      "url": "https://github.com/DongYaoZe/chemical-principles-solutions",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Dr4cule/UnderTheTable",
+      "url": "https://github.com/Dr4cule/UnderTheTable",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Ehhs-the-name/chemQuestionRandomizer",
+      "url": "https://github.com/Ehhs-the-name/chemQuestionRandomizer",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "EmmaDevv/JAMB",
+      "url": "https://github.com/EmmaDevv/JAMB",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_presence_signal": "explicit_question_or_exercise_claim",
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "emmanueldavidusman-crypto/Clinical-chemistry-past-questions-and-answers-",
+      "url": "https://github.com/emmanueldavidusman-crypto/Clinical-chemistry-past-questions-and-answers-",
+      "subjects": [
+        "general"
+      ],
+      "score": 14,
       "repository_license_spdx": "UNKNOWN",
       "source_license_metadata_only": true,
       "question_presence_signal": "explicit_question_or_exercise_claim",
