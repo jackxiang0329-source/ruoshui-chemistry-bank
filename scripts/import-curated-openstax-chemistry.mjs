@@ -54,7 +54,7 @@ const TEMPLATES={
  labels:['(a) pH','(a) pOH','(b) pH','(b) pOH','(c) pH','(c) pOH','(d) pH','(d) pOH'],unit:'无量纲'}
 };
 export function makeCandidates(reviews){
- if(!reviews||!Array.isArray(reviews.items)||reviews.reviewed_source_cases!==8||
+ if(!reviews||!Array.isArray(reviews.items)||reviews.reviewed_source_cases!==20||
   reviews.publishable!==0||reviews.scholarly_human_confirmations!==0||
   reviews.rights_confirmations!==0)throw Error('Unsafe curated source review');
  const byTag=new Map(CASES.map(x=>[x.path+':'+x.ordinal,x]));
@@ -62,7 +62,8 @@ export function makeCandidates(reviews){
  for(const item of reviews.items){
   const c=byTag.get(item.source_path+':'+item.source_exercise_ordinal),
    template=c&&TEMPLATES[c.tag];
-  if(!template||item.release_eligible!==false||
+  if(!template)continue;
+  if(item.release_eligible!==false||
      item.source_item_rights_verified!==false||
      item.independent_human_chemist_review_completed!==false||
      item.machine_computation_checked!==true||
@@ -141,7 +142,10 @@ export function run(){
   chinese_drafts_quarantined:rows.length,main_candidates_added:0,
   source_answer_errata:rows.filter(q=>q.source_key_issue==='textbook_swaps_pH_and_pOH_for_b_and_d').length,
   original_questions_with_missing_source_answer_solved_independently:1,
-  computational_checks_passed:rows.length,expert_approved:0,
+  computational_checks_passed:rows.length,
+  source_cases_independently_checked:JSON.parse(readFileSync(path,'utf8')).reviewed_source_cases,
+  source_key_discrepancies_total:JSON.parse(readFileSync(path,'utf8')).source_answer_discrepancies,
+  expert_approved:0,
   item_rights_approved:0,publishable:0,
   rights_status:'blocked_pending_canonical_edition_specific_reuse_confirmation',
   note:'Historical original Chemistry and current Chemistry 2e license terms must not be conflated. All eight corrected Chinese source-derived drafts remain EXTERNAL QUARANTINE ONLY, never automatically written to main candidate data.'};

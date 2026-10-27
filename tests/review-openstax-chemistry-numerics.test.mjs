@@ -15,14 +15,16 @@ const rows=CASES.map((c,i)=>{
   question,question_sha256:sha(question),
   source_url:'https://example.org/source/'+i,
   has_source_solution:c.answerExpected,
-  answer:c.keyDiscrepancy?'(b) pH = 0.68; pOH = 13.32; (d) pH = −0.40; pOH = 14.4':
+  answer:c.keyDiscrepancy?(
+   c.tag==='ammonia_hydronium_mislabeled_in_key'?'[OH<sup>−</sup>] = 3.1 × 10<sup>−12</sup> M':
+   '(b) pH = 0.68; pOH = 13.32; (d) pH = −0.40; pOH = 14.4'):
   (c.answerExpected?'Test source numeric result':null),
   requires_media:false,requires_mathml:false,
   exam_ready:false,publishable:false,content_rights_verified:false,
   item_level_rights_review_pending:true};
 });
-test('all eight source-based thermochemistry, mole and acid-base computations cross-check',()=>{
- assert.equal(CASES.length,8);
+test('twenty pinned source based chemistry calculations pass independent inverse crosschecks',()=>{
+ assert.equal(CASES.length,20);
  for(const c of CASES){
   const calc=independentlyCalculate(c.tag);
   assert.equal(verifyScientificCase(c,calc),true);
@@ -31,8 +33,8 @@ test('all eight source-based thermochemistry, mole and acid-base computations cr
 });
 test('curated source reviews cannot become exam-ready or rights-approved',()=>{
  const x=curateScientificReviews(rows,manifest);
- assert.equal(x.reviewed_source_cases,8);
- assert.equal(x.source_answer_discrepancies,1);
+ assert.equal(x.reviewed_source_cases,20);
+ assert.equal(x.source_answer_discrepancies,2);
  assert.equal(x.original_questions_without_answer_independently_solved,1);
  assert.equal(x.publishable,0);
  assert.ok(x.items.every(q=>q.machine_computation_checked&&q.release_eligible===false&&
@@ -48,4 +50,18 @@ test('original-key pH/pOH label swap must be preserved as a review blocker',()=>
 test('abort on altered source chemistry instead of silently using outdated calculations',()=>{
  const changed=rows.map((r,i)=>i===0?{...r,source_blob_sha:'0'.repeat(40)}:r);
  assert.throws(()=>curateScientificReviews(changed,manifest),/Pinned raw/);
+});
+
+test('second independent source-key error: dilute ammonia hydronium value mislabeled as hydroxide',()=>{
+ const item=CASES.find(x=>x.tag==='ammonia_hydronium_mislabeled_in_key');
+ assert.equal(item.keyDiscrepancy,'textbook_labels_hydronium_numeric_result_as_hydroxide');
+ const r=curateScientificReviews(rows,manifest);
+ assert.equal(r.items.filter(x=>x.issue).length,2);
+ assert.throws(()=>curateScientificReviews(rows.map(x=>
+  x.source_path==='contents/m51117.md'&&x.source_exercise_ordinal===11?
+  {...x,answer:'[H3O+] = 3.1 × 10−12 M'}:x),manifest),/wrongly labeled/);
+});
+test('tiny scientific ion concentrations cannot pass loose absolute tolerance',()=>{
+ const c=CASES.find(x=>x.tag==='ammonia_hydronium_mislabeled_in_key');
+ assert.throws(()=>verifyScientificCase(c,[3.1e-11]),/mismatch/);
 });
