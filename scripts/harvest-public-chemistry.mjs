@@ -85,6 +85,13 @@ async function getJSON(url,timeout){
  return res.json();
 }
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+export function selectExternalShard(tasks,shard='all',atMs=Date.now()){
+ if(!Array.isArray(tasks))throw Error('Invalid external tasks');
+ if(shard==='all')return tasks;
+ const index=shard==='auto'?Math.floor(atMs/(10*60*1000))%3:Number(shard);
+ if(!Number.isInteger(index)||index<0||index>2)throw Error('Unsafe external task shard');
+ return tasks.filter((_,i)=>i%3===index);
+}
 export async function run(fetchJSON=getJSON){
  const config=JSON.parse(readFileSync(CONFIG,'utf8'));
  if(config.schema_version!==1||!Array.isArray(config.hf_terms)||!Array.isArray(config.zenodo_terms)||
@@ -92,8 +99,9 @@ export async function run(fetchJSON=getJSON){
   config.request_timeout_ms<3000||config.request_timeout_ms>60000||
   config.zenodo_limit>25||config.zenodo_limit<1)throw Error('Unsafe external discovery config');
  const catalog=loadCatalog(),prior=catalog.size;
- const queue=[...config.hf_terms.map(term=>({platform:'huggingface',term})),
+ const allTasks=[...config.hf_terms.map(term=>({platform:'huggingface',term})),
  ...config.zenodo_terms.map(term=>({platform:'zenodo',term}))];
+ const queue=selectExternalShard(allTasks,process.env.CHEMISTRY_EXTERNAL_SHARD||'all');
  let next=0,successful=0,added=0,repeats=0,raw=0,filtered=0;
  const errors=[],stamp=TODAY();
  const worker=async()=>{
@@ -123,6 +131,7 @@ export async function run(fetchJSON=getJSON){
  await Promise.all(Array.from({length:config.max_parallel},()=>worker()));
  const idx=saveCatalog(catalog);
  const lines=['### Chemistry cross-platform metadata discovery',
+ '- Search task shard: '+String(process.env.CHEMISTRY_EXTERNAL_SHARD||'all')+', tasks='+queue.length+'/'+allTasks.length,
  '- Queries: '+queue.length+'; successful: '+successful+'; failed: '+errors.length,
  '- Raw matches: '+raw+'; filtered: '+filtered+'; repeated: '+repeats,
  '- New unique external source records: '+added+'; catalog: '+prior+' -> '+idx.total_candidates,

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {fromHf,fromZenodo,bucket,subjects} from '../scripts/harvest-public-chemistry.mjs';
+import {fromHf,fromZenodo,bucket,subjects,selectExternalShard} from '../scripts/harvest-public-chemistry.mjs';
 test('records Hugging Face metadata without conflating MIT with question ownership',()=>{
  const a=fromHf({id:'lab/analytical-chemistry-questions',tags:['license:mit','chemistry'],
   sha:'a'.repeat(40),private:false},'chemistry');
@@ -21,4 +21,13 @@ test('stable catalog shard and subject classifier',()=>{
  assert.match(bucket(a),/^[0-9a-f]$/);
  assert.equal(bucket(a),bucket({...a,id:'School/CHEMISTRY-QA'}));
  assert.deepEqual(subjects('electrochemistry'),['physical']);
+});
+
+test('fast external shards cover all 22 tasks exactly once over 30 minutes',()=>{
+ const tasks=Array.from({length:22},(_,i)=>({term:'q'+i}));
+ const parts=[0,1,2].map(i=>selectExternalShard(tasks,'auto',i*600000));
+ assert.equal(parts.flat().length,22);
+ assert.equal(new Set(parts.flat().map(x=>x.term)).size,22);
+ assert.deepEqual(selectExternalShard(tasks),tasks);
+ assert.throws(()=>selectExternalShard(tasks,'5'));
 });
