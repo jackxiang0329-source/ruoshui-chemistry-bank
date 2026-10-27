@@ -117,31 +117,38 @@ export function makeCandidates(reviews){
 export function run(){
  const path=join(ROOT,'external_sources/openstax_chemistry/independent_numeric_review.json');
  const rows=makeCandidates(JSON.parse(readFileSync(path,'utf8')));
- const dir=join(ROOT,'data/candidates');
- for(const q of rows){
-  const loc=join(dir,q.id+'.json');if(!existsSync(loc))continue;
-  const old=JSON.parse(readFileSync(loc,'utf8'));
-  if(old.question!==q.question||old.answer!==q.answer||
-     old.source?.commit!==q.source.commit||
-     old.quality_status!==q.quality_status||old.publishable!==false)
-   throw Error('Collision or changed source-derived chemistry answer: '+q.id);
- }
- mkdirSync(dir,{recursive:true});let added=0;
- for(const q of rows){
-  const loc=join(dir,q.id+'.json');
-  if(!existsSync(loc)){writeFileSync(loc,JSON.stringify(q,null,2)+'\n');added++;}
- }
- const report={schema_version:1,source:'OpenStax Chemistry pinned CC BY 3.0 work',
-  distinct_curated_real_exercises:rows.length,newly_added:added,previously_present:rows.length-added,
+ // An earlier OpenStax Chemistry 2e reuse-license conflict caused a real retraction.
+ // Do NOT reinstall source-derived materials into data/candidates pending explicit
+ // edition-level, item-level and usage-scope rights confirmation.
+ const dir=join(ROOT,'external_sources/openstax_chemistry');
+ const reviewed={schema_version:1,source_work:'OpenStax Chemistry historical mirror',
+  edition_and_item_rights_status:'blocked_pending_canonical_license_review',
+  source_license_claim:'CC-BY-3.0 (historical GitHub mirror)',
+  first_party_current_reuse_guidance:'https://openstax.org/books/chemistry-2e/pages/preface',
+  2015_original_chemistry_claim:'https://openstax.org/books/chemistry/pages/preface',
+  previous_retraction:'harvest/run_logs/2026-10-27-openstax-quality-audit.md',
+  chinese_independently_recomputed_review_items:rows.length,
+  imported_into_main_candidate_bank:0,publishable:0,expert_approved:0,
+  item_rights_approved:0,
+  note:'The historical source mirror and current first-party reuse guidance describe different editions and license scopes. Independent calculations and Chinese drafts remain quarantine-only until a human verifies rights and the licensing for the actual 2014 text and question content.',
+  items:rows};
+ const quarantinedPath=join(dir,'chinese_science_review.json');
+ const body=JSON.stringify(reviewed,null,2)+'\n';
+ if(!existsSync(quarantinedPath)||readFileSync(quarantinedPath,'utf8')!==body)
+  writeFileSync(quarantinedPath,body);
+ const report={schema_version:1,source:'OpenStax Chemistry historical edition',
+  distinct_curated_real_exercises:rows.length,
+  chinese_drafts_quarantined:rows.length,main_candidates_added:0,
   source_answer_errata:rows.filter(q=>q.source_key_issue==='textbook_swaps_pH_and_pOH_for_b_and_d').length,
   original_questions_with_missing_source_answer_solved_independently:1,
   computational_checks_passed:rows.length,expert_approved:0,
   item_rights_approved:0,publishable:0,
-  note:'No external archive item auto promoted to exam release. Eight hand-selected fixed English course exercises were independently recomputed and restated in Chinese for further expert and copyright review.'};
+  rights_status:'blocked_pending_canonical_edition_specific_reuse_confirmation',
+  note:'Historical original Chemistry and current Chemistry 2e license terms must not be conflated. All eight corrected Chinese source-derived drafts remain EXTERNAL QUARANTINE ONLY, never automatically written to main candidate data.'};
  const loc=join(ROOT,'harvest/import_reports/openstax_curated_science.json'),data=JSON.stringify(report,null,2)+'\n';
  if(!existsSync(loc)||readFileSync(loc,'utf8')!==data)writeFileSync(loc,data);
- console.log('OpenStax curated main review candidate exercises: new='+added+
-  ' total='+rows.length+' key_errata='+report.source_answer_errata+' published=0');
+ console.log('OpenStax Chinese scientific reviews: quarantined='+rows.length+
+  ' main_import=0 license_pending=true approved=0');
  return report;
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){

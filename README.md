@@ -140,3 +140,9 @@
 - 大学化学的首页 1,715 是主候选记录，其中练习候选 1,437、学习卡 278，未计入科研隔离区与外部开源原文档案。
 - [统一覆盖报表](harvest/coverage_report.json)现在把主候选、[NVIDIA 化学合成问答隔离区](harvest/nvidia_rqa_review_queue.json)、[OpenStax 化学原题档案](external_sources/openstax_chemistry/coverage.json)分别计数，显示跨层级总记录，但不能视为已经去重或能组卷的独立题数。
 - NVIDIA 化学 RQA 8,056 条研究问答处于单独的 data/research_quarantine/nvidia-rqa/ 中，全部需确认科学正确性、课程相关性及版权；已归档不等于可发布。
+
+## 2026-10-27：OpenStax 历史教材许可复核与重新隔离
+
+- 核查先前 [OpenStax 版权冲突撤回记录](harvest/run_logs/2026-10-27-openstax-quality-audit.md) 后，停止把 OpenStax 材料自动导入 data/candidates。旧版 Chemistry 历史 GitHub 镜像标注 CC BY 3.0，[原版 Chemistry 官方前言](https://openstax.org/books/chemistry/pages/preface)含旧版 CC BY 4.0 声明，而 [Chemistry 2e 官方前言](https://openstax.org/books/chemistry-2e/pages/preface)与现行通用使用指南写有 NC-SA、商业及 AI 用途限制；版本、来源与题目版权链必须逐项厘清，不能跨版本套用。
+- 本轮的 8 道独立数值复算及纠错仍保留在 [外部独立数值审查](external_sources/openstax_chemistry/independent_numeric_review.json) 和 [中文复核草稿隔离区](external_sources/openstax_chemistry/chinese_science_review.json)；**主库净增 0、版权确认 0、专家批准 0**。正式批准后才可按原始题 ID、内容 SHA、精确作品版本决定是否导入。
+- [OpenStax 全库依赖与查重优先级审计](external_sources/openstax_chemistry/review_priority.json)额外区分题面引用上一题/旧版链接、参考答案依赖公式或媒体、同数字模板的疑似重复；机器结果均不是语义去重或版权批准。

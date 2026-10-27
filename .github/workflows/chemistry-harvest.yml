@@ -246,8 +246,6 @@ jobs:
         run: node scripts/import-original-instrumental-analytical.mjs
       - name: Import pinned Apache-2.0 reference based EIS physics practice
         run: node scripts/import-original-eis-pyeis.mjs
-      - name: Stage eight independently solved OpenStax source questions in Chinese for expert review
-        run: node scripts/import-curated-openstax-chemistry.mjs
       - name: Normalize missing unreviewed publication flags to false
         run: node scripts/normalize-unpublished-candidates.mjs
       - name: Audit candidate review buckets and potential duplicates
@@ -260,6 +258,8 @@ jobs:
         run: node scripts/build-publication-index.mjs
       - name: Independently recompute curated real OpenStax mole, molarity, acid-base and calorimetry questions
         run: node scripts/review-openstax-chemistry-numerics.mjs
+      - name: Quarantine eight Chinese solved OpenStax source exercises until edition rights are resolved
+        run: node scripts/import-curated-openstax-chemistry.mjs
       - name: Rank external OpenStax source exercise blocks for manual science and rights review
         run: node scripts/audit-openstax-chemistry-oer.mjs
       - name: Report separate raw OER and main candidate totals without double counting
