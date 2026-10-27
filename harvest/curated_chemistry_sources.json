@@ -287,6 +287,39 @@
       "imported_candidate_count": 0,
       "quality_note": "This is a scientific literature QA research resource, not a vetted undergraduate problem bank; publisher dataset license alone does not resolve underlying source-text or full-paper rights.",
       "next_action": "Do not bypass gated conditions. If future explicitly authorized access is available, verify correction revision, per-paper reuse rights, original source citation and evidence mapping before any content import."
+    },
+    {
+      "source": "A.J. Medford / Data Analytics for Chemical Engineers",
+      "url": "https://www.medford.chbe.gatech.edu/DA4CHE/problem_sets/intro.html",
+      "category": "physical,analytical,chemical_engineering",
+      "repository_license": "Site CC BY 4.0; source-level data licensing must still be checked",
+      "format": "Open Jupyter chemical engineering problem sets, no public instructor answers",
+      "rights_status": "CC BY 4.0 website notice verified; solutions explicitly not published. Linked data rights and work-specific licenses remain unreviewed.",
+      "import_questions": false,
+      "imported_candidate_count": 0,
+      "next_action": "Inspect individual notebook authorship, data rights and derive independently validated solutions before any use."
+    },
+    {
+      "source": "ASCCC OERI / MyOpenMath Chemistry directory",
+      "url": "https://asccc-oeri.org/open-educational-resources-and-chemistry/",
+      "category": "general,inorganic,organic,analytical,physical",
+      "repository_license": "Curator labels platform GPL plus CC BY; per-question content rights unverified",
+      "format": "ASCCC describes 5389 listed chemistry homework problems in MyOpenMath",
+      "rights_status": "Discovery only; no per-question licensing, author, correct option, explanation or undergraduate relevance verified",
+      "import_questions": false,
+      "imported_candidate_count": 0,
+      "next_action": "Check public MyOpenMath item-level license, export terms, question generator and answer accuracy before importing."
+    },
+    {
+      "source": "Lumen Learning / Chemistry for Majors Problem Sets",
+      "url": "https://courses.lumenlearning.com/chemistryformajors/chapter/problem-sets/",
+      "category": "general,inorganic,physical",
+      "repository_license": "Public page says openly licensed problem sets; exact per-work scope unverified",
+      "format": "Public problem sets with separately restricted teacher answer keys",
+      "rights_status": "Provider restricts answer keys to authorized supported faculty; no answer keys obtained or imported.",
+      "import_questions": false,
+      "imported_candidate_count": 0,
+      "next_action": "Review licenses of individual public sets; never copy restricted answer keys or invent unverified solutions."
     }
   ]
 }

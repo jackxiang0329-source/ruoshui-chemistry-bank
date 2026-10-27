@@ -6,10 +6,10 @@
 
 ## 当前候选内容快照（2026-10-27）
 
-- 已验证 GitHub `main` 上共有 **1390** 份候选内容：无机 849、分析 33、物理 53、有机 455。
-- 其中 **1112** 份练习候选、**278** 份学习卡；不是 1390 道独立可出卷考试真题。
+- 已验证 GitHub `main` 上共有 **1558** 份候选内容：无机 849、分析 129、物理 125、有机 455。
+- 其中 **1280** 份练习候选、**278** 份学习卡；不是 1558 道独立可出卷考试真题。
 - 全部 `awaiting_expert_review`、`publishable=false`；专家正式批准 **0** 道。
-- 机器审计发现完全同题干 0 组、相同题型模板 36 组；并不表示跨语言或语义重复已解决。
+- 机器审计发现完全同题干 0 组、相同题型模板 50 组；并不表示跨语言或语义重复已解决。
 - [本轮新增 EIS 原创习题和 Apache-2.0 来源审计](harvest/run_logs/2026-10-27-pyeis-original-eis.md)。
 - [当前自动生成的实时审计数据](harvest/quality_audit.json)优先于本段日期快照；来源发现每 10 分钟采用 `4,14,24,34,44,54 * * * *`，严格入库每 30 分钟采用 `17,47 * * * *`，可能受 GitHub 调度延迟影响。
 
@@ -68,3 +68,10 @@
 - [来源、抽取质量与错误记录](harvest/run_logs/2026-10-27-nvidia-research-rqa-intake.md)。
 - [六项 GALILEO 官方 CC BY 4.0 化学 OER 作品级许可预审（本轮题目新增 0）](harvest/run_logs/2026-10-27-uga-oer-rights-review.md)。实际最新数量以 `harvest/nvidia_rqa_state.json` 为准；任何核准进入本科题库的转移都必须另外验算、分类、去重并记录专家审核。
 
+
+## 原创参数化大学化学计算练习（2026-10-27）
+
+- [分析化学原创题生成器](scripts/import-original-analytical-variants.mjs)及[96 题交叉复算测试](tests/original-analytical-variants.test.mjs)：在固定版本 MIT 许可计算方法基础上独立编写，共 **8 种方法×12 个变式=96 道**。
+- [物理化学原创题生成器](scripts/import-original-physical-variants.mjs)及[72 题逆向公式校验](tests/original-physical-variants.test.mjs)：共 **6 种方法×12 个变式=72 道**。
+- 只为原创题文声明 [CC0](LICENSE-ORIGINAL-QUESTIONS.md)，不将第三方软件/原题擅自重新授权。**全部 `publishable=false` 并待化学专家审核**。数字变式不是不同来源的考试原题。
+- [本轮真实增量、成功 CI 与版权来源审计](harvest/run_logs/2026-10-27-new-solved-analytical-physical-variants.md)。
