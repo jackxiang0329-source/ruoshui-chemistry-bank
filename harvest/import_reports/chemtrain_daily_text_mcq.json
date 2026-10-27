@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "source": "ChemTrain/chemtrain-daily",
+  "pin": "327eb915764dbcdf7bce4974a0542f3b3d626554",
+  "source_blob_sha": "d0b152ff845f18a5ff5743c1e44a43b81f87584e",
+  "source_license": "CC BY 4.0",
+  "license_blob_sha": "c1459875927c2a1bbbff1b6bf103efd0b0da44e8",
+  "source_bank_entries": 2892,
+  "eligible": 268,
+  "byKind": {
+    "pg/Removed by": {
+      "seen": 41,
+      "accepted": 41
+    },
+    "tmc/Geometry": {
+      "seen": 133,
+      "accepted": 133
+    },
+    "tmc/Ligand electrons": {
+      "seen": 47,
+      "accepted": 47
+    },
+    "tmc/Ligand class": {
+      "seen": 47,
+      "accepted": 47
+    }
+  },
+  "excluded": {},
+  "initial_import_new": 268,
+  "initial_import_already_present": 0,
+  "copied_molecule_drawings": 0,
+  "copied_third_party_measurement_qa": 0,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "expert_approved": 0,
+  "note": "Text-only CC BY 4.0 author-created MCQs (coordination geometry and ligand classification, PG deprotection). Existing concepts may overlap other sources; require expert semantic review."
+}

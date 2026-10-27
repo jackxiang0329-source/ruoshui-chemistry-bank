@@ -1,24 +1,25 @@
 {
   "schema_version": 1,
-  "total_candidates": 1122,
-  "corpus_hash_sha256": "6e21b2e72914f3e8518b09ebccf0bd3bd80a0591faab731926dd05168a08945b",
+  "total_candidates": 1390,
+  "corpus_hash_sha256": "ba920d5ce7223d5212f1f3473ab2b395983c758e386dbbbcad4dda9da74eb50f",
   "by_subject": {
     "analytical": 33,
-    "inorganic": 622,
-    "organic": 414,
+    "inorganic": 849,
+    "organic": 455,
     "physical": 53
   },
   "by_content_kind": {
-    "exercise_candidate": 844,
+    "exercise_candidate": 1112,
     "study_card": 278
   },
   "by_quality_status": {
-    "awaiting_expert_review": 1122
+    "awaiting_expert_review": 1390
   },
   "by_publishable": {
-    "false": 1122
+    "false": 1390
   },
   "source_counts": {
+    "ChemTrain/chemtrain-daily": 268,
     "ChemTrain/pg-learn": 22,
     "ChemTrain/photoredox-learn": 18,
     "ChemTrain/pka-learn": 20,
@@ -46,6 +47,9 @@
     "analytical:solution_concentration": 6,
     "analytical:standard_solution_standardization": 1,
     "inorganic:chemical_formula_molar_mass": 6,
+    "inorganic:coordination_geometry": 133,
+    "inorganic:ligand_electron_donation": 47,
+    "inorganic:ligand_lx_classification": 47,
     "inorganic:polyatomic_ion_nomenclature": 23,
     "inorganic:transition_metal_electron_counting": 593,
     "organic:alcohol_chemoselectivity": 1,
@@ -56,7 +60,7 @@
     "organic:homologous_series_molecular_formula": 10,
     "organic:named_reactions": 231,
     "organic:photoredox_catalytic_cycle": 18,
-    "organic:protecting_group_deprotection": 22,
+    "organic:protecting_group_deprotection": 63,
     "organic:qualitative_acidic_site": 20,
     "organic:radical_polarity": 26,
     "organic:reagent_functions": 47,

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "e773149323bc6df7609d33246317b270eb3ab15f759fb85f80f929bdcb224f2a",
+  "subject": "inorganic",
+  "topic": "ligand_electron_donation",
+  "level": "undergraduate",
+  "question_type": "licensed_text_only_multiple_choice",
+  "resource_type": "CC_BY_4_0_study_problem_not_exam_question",
+  "question": "无机化学·配体电子计数：中性共价计数法中，下列配体贡献多少电子：cyclopentadienyl (η⁵)（Cp）？\nA. 5 e\nB. 4 e\nC. 6 e\nD. 3 e",
+  "answer": "5 e",
+  "answer_option": "A",
+  "explanation": "Cp is an L₂X ligand: 5 electrons in the covalent count, 6 in the ionic count.",
+  "options": [
+    "5 e",
+    "4 e",
+    "6 e",
+    "3 e"
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "structure_geometry_review_pending": false,
+  "source": {
+    "repository": "ChemTrain/chemtrain-daily",
+    "commit": "327eb915764dbcdf7bce4974a0542f3b3d626554",
+    "file": "chemtrain_daily.html",
+    "git_blob_sha": "d0b152ff845f18a5ff5743c1e44a43b81f87584e",
+    "original_app": "ChemTrain/tmc-learn",
+    "source_question_index": 1325,
+    "source_card_kind": "tmc/Ligand electrons",
+    "source_card_name": "cyclopentadienyl (η⁵)",
+    "source_formula": "Cp",
+    "license": "CC BY 4.0",
+    "license_git_blob_sha": "c1459875927c2a1bbbff1b6bf103efd0b0da44e8",
+    "license_evidence": "https://github.com/ChemTrain/chemtrain-daily/blob/327eb915764dbcdf7bce4974a0542f3b3d626554/LICENSE-CONTENT.md",
+    "url": "https://github.com/ChemTrain/chemtrain-daily/blob/327eb915764dbcdf7bce4974a0542f3b3d626554/chemtrain_daily.html",
+    "attribution": "ChemTrain Daily by Quentin Bindschaedler (2026), adapted from TMC Learn by Francesco Sala (ChemTrain), CC BY 4.0. https://github.com/ChemTrain/chemtrain-daily",
+    "original_exam_question": false,
+    "content_rights_verified": true,
+    "changes": "Original CC BY 4.0 question and alternatives rephrased into Chinese without molecular SVGs or logos; explanation retained, full author attribution; never copies third-party measured values."
+  }
+}

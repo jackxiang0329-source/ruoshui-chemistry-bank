@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "fb4607e646262db3bbec602662b0defeae5ba5caaa836c03eca5640c87cc2cd3",
+  "subject": "inorganic",
+  "topic": "coordination_geometry",
+  "level": "undergraduate",
+  "question_type": "licensed_text_only_multiple_choice",
+  "resource_type": "CC_BY_4_0_study_problem_not_exam_question",
+  "question": "无机化学·配位化学：请判断下列配合物的几何构型：Ethylenebis(triphenylphosphine)platinum（Pt(PPh₃)₂(η²-C₂H₄)）？\nA. Trigonal planar\nB. Linear\nC. Square pyramidal\nD. Trigonal prismatic",
+  "answer": "Trigonal planar",
+  "answer_option": "A",
+  "explanation": "Trigonal planar. Covalent count: Pt (group 10) 10 e; 1 × η²-C₂H₄ (L) 2 e; 2 × PPh₃ (L) 4 e: 16 e. Ionic count: the ligands carry no charge and the complex is neutral, so the metal is Pt(0), d¹⁰; d¹⁰ + 6 e from the ligands = 16 e.",
+  "options": [
+    "Trigonal planar",
+    "Linear",
+    "Square pyramidal",
+    "Trigonal prismatic"
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "structure_geometry_review_pending": true,
+  "source": {
+    "repository": "ChemTrain/chemtrain-daily",
+    "commit": "327eb915764dbcdf7bce4974a0542f3b3d626554",
+    "file": "chemtrain_daily.html",
+    "git_blob_sha": "d0b152ff845f18a5ff5743c1e44a43b81f87584e",
+    "original_app": "ChemTrain/tmc-learn",
+    "source_question_index": 1600,
+    "source_card_kind": "tmc/Geometry",
+    "source_card_name": "Ethylenebis(triphenylphosphine)platinum",
+    "source_formula": "Pt(PPh₃)₂(η²-C₂H₄)",
+    "license": "CC BY 4.0",
+    "license_git_blob_sha": "c1459875927c2a1bbbff1b6bf103efd0b0da44e8",
+    "license_evidence": "https://github.com/ChemTrain/chemtrain-daily/blob/327eb915764dbcdf7bce4974a0542f3b3d626554/LICENSE-CONTENT.md",
+    "url": "https://github.com/ChemTrain/chemtrain-daily/blob/327eb915764dbcdf7bce4974a0542f3b3d626554/chemtrain_daily.html",
+    "attribution": "ChemTrain Daily by Quentin Bindschaedler (2026), adapted from TMC Learn by Francesco Sala (ChemTrain), CC BY 4.0. https://github.com/ChemTrain/chemtrain-daily",
+    "original_exam_question": false,
+    "content_rights_verified": true,
+    "changes": "Original CC BY 4.0 question and alternatives rephrased into Chinese without molecular SVGs or logos; explanation retained, full author attribution; never copies third-party measured values."
+  }
+}

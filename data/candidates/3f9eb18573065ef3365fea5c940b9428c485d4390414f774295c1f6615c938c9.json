@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "3f9eb18573065ef3365fea5c940b9428c485d4390414f774295c1f6615c938c9",
+  "subject": "organic",
+  "topic": "protecting_group_deprotection",
+  "level": "undergraduate",
+  "question_type": "licensed_text_only_multiple_choice",
+  "resource_type": "CC_BY_4_0_study_problem_not_exam_question",
+  "question": "有机化学·保护基化学：下列哪组反应条件能够脱除所示保护基：TIPS ether（triisopropylsilyl ether）？\nA. TBAF, THF\nB. NaOMe, MeOH\nC. H₂, Pd/C\nD. Pd(PPh₃)₄, PhSiH₃",
+  "answer": "TBAF, THF",
+  "answer_option": "A",
+  "explanation": "A very hindered silyl ether: more stable than TBS to acid and much more stable to base; fluoride removes it.",
+  "options": [
+    "TBAF, THF",
+    "NaOMe, MeOH",
+    "H₂, Pd/C",
+    "Pd(PPh₃)₄, PhSiH₃"
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "structure_geometry_review_pending": false,
+  "source": {
+    "repository": "ChemTrain/chemtrain-daily",
+    "commit": "327eb915764dbcdf7bce4974a0542f3b3d626554",
+    "file": "chemtrain_daily.html",
+    "git_blob_sha": "d0b152ff845f18a5ff5743c1e44a43b81f87584e",
+    "original_app": "ChemTrain/pg-learn",
+    "source_question_index": 1107,
+    "source_card_kind": "pg/Removed by",
+    "source_card_name": "TIPS ether",
+    "source_formula": "triisopropylsilyl ether",
+    "license": "CC BY 4.0",
+    "license_git_blob_sha": "c1459875927c2a1bbbff1b6bf103efd0b0da44e8",
+    "license_evidence": "https://github.com/ChemTrain/chemtrain-daily/blob/327eb915764dbcdf7bce4974a0542f3b3d626554/LICENSE-CONTENT.md",
+    "url": "https://github.com/ChemTrain/chemtrain-daily/blob/327eb915764dbcdf7bce4974a0542f3b3d626554/chemtrain_daily.html",
+    "attribution": "ChemTrain Daily by Quentin Bindschaedler (2026), adapted from PG Learn by Quentin Bindschaedler (ChemTrain), CC BY 4.0. https://github.com/ChemTrain/chemtrain-daily",
+    "original_exam_question": false,
+    "content_rights_verified": true,
+    "changes": "Original CC BY 4.0 question and alternatives rephrased into Chinese without molecular SVGs or logos; explanation retained, full author attribution; never copies third-party measured values."
+  }
+}
