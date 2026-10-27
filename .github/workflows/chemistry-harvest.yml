@@ -66,6 +66,9 @@ on:
       - "scripts/import-original-analytical-variants.mjs"
       - "scripts/import-original-instrumental-analytical.mjs"
       - "scripts/import-original-advanced-physical.mjs"
+      - "scripts/import-introqchem-2021.mjs"
+      - "tests/introqchem-2021.test.mjs"
+      - "harvest/pinned_introqchem_2021.json"
       - "tests/original-advanced-physical.test.mjs"
       - "tests/original-instrumental-analytical.test.mjs"
       - "tests/original-analytical-variants.test.mjs"
@@ -166,6 +169,8 @@ jobs:
         run: node --test tests/original-analytical-variants.test.mjs
       - name: Verify 64 original instrumental analytical exercises
         run: node --test tests/original-instrumental-analytical.test.mjs
+      - name: Verify fixed CC0 course exercise provenance and solution corrections
+        run: node --test tests/introqchem-2021.test.mjs
       - name: Verify 48 original advanced physical chemistry calculations
         run: node --test tests/original-advanced-physical.test.mjs
       - name: Verify independently authored EIS physical chemistry exercises
@@ -210,6 +215,8 @@ jobs:
         run: node scripts/import-analytical-calculator-mit.mjs
       - name: Add 96 independently validated original analytical exercise variants
         run: node scripts/import-original-analytical-variants.mjs
+      - name: Stage nine source-linked quantum chemistry course exercises for human review
+        run: node scripts/import-introqchem-2021.mjs
       - name: Generate 48 CC0 original advanced physical chemistry exercises
         run: node scripts/import-original-advanced-physical.mjs
       - name: Generate 64 CC0 original instrumental analytical exercises

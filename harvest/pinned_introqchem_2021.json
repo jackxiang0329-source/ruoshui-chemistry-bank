@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "repository": "PaulWAyers/IntroQChemProblems",
+  "commit": "0491272e0b8e71059e601537b196181ab6b367cd",
+  "license": "CC0-1.0",
+  "license_blob_sha": "657f1ed2aefefde5d2aa65b66bc3a85f46ceeb3b",
+  "readme_blob_sha": "e3b12b3b510392bf42ddd3c6dec476fc483e8a45",
+  "question_notebook": "ipynb/IntroQM2021.ipynb",
+  "question_notebook_blob_sha": "1f21cc7c7850e29d265e8e6c619e52c397fbad8b",
+  "key_notebook": "ipynb/IntroQMkey.ipynb",
+  "key_notebook_blob_sha": "8dd5ad17f6ee0659c599e17826d776c8aeb47d79",
+  "course": "CHEM 3PA3 at McMaster University",
+  "third_party_exceptions_explicit": true,
+  "item_level_rights_cleared": false,
+  "note": "CC0 for original authored course materials, third-party rights retained. These nine fixed source-linked items have no human item-level rights confirmation."
+}
