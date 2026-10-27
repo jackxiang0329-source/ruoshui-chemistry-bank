@@ -122,6 +122,71 @@
       "pins": null,
       "quality_note": "8 previously imported candidate adaptations (2 inorganic, 3 analytical, 3 physical) were removed from main; never approved for release.",
       "next_action": "Only consider future import after obtaining authoritative version-specific redistribution rights and meeting all NC-SA attribution/compatibility conditions; do not use this as an automatic source."
+    },
+    {
+      "source": "PWO-CHINA/Chemistry-Calculator-Toolkit",
+      "url": "https://github.com/PWO-CHINA/Chemistry-Calculator-Toolkit",
+      "pin": "879205657e777c00621a461e975218b395ee32ea",
+      "category": "analytical",
+      "format": "eight pure JavaScript numerical-analytical calculation methods",
+      "repository_license": "MIT",
+      "license_evidence": "https://github.com/PWO-CHINA/Chemistry-Calculator-Toolkit/blob/879205657e777c00621a461e975218b395ee32ea/LICENSE",
+      "license_owner": "Copyright (c) 2026 PWO-CHINA",
+      "rights_status": "Confirmed project MIT code; 8 originally written exercise prompts generated independently from reference methods; no upstream exam question copied.",
+      "import_questions": true,
+      "imported_candidate_count": 8,
+      "original_upstream_question_count_imported": 0,
+      "license_blob": "49c2c01eba000fe4138e79b45083eee284f9f3bb",
+      "calculation_blob": "20378fe9af77e64932b9f412a6c51be9b0c433b5",
+      "next_action": "Chemical expert review of stoichiometric conditions; source-level semantic overlap screening, dimensional checks and systematic answer formatting."
+    },
+    {
+      "source": "kbknudsen/PyEIS",
+      "url": "https://github.com/kbknudsen/PyEIS",
+      "pin": "14724e978a089d9184285cec1b72cb57941d58a1",
+      "category": "physical",
+      "format": "equivalent-circuit electrochemical impedance simulator and notebooks",
+      "repository_license": "Apache-2.0",
+      "license_evidence": "https://github.com/kbknudsen/PyEIS/blob/14724e978a089d9184285cec1b72cb57941d58a1/LICENSE",
+      "license_owner": "Kristian B. Knudsen",
+      "rights_status": "Apache-2.0 license verified for repository files; no independent structured question+answer dataset found",
+      "import_questions": false,
+      "quality_note": "26 circuit models, electrochemical impedance simulations and tutorials; exercise conversion would require original problem creation and independent numerical validation",
+      "next_action": "Draft original electrochemical impedance problems based on validated circuits; exclude journal-paper excerpts and experimental datasets unless separately licensed"
+    },
+    {
+      "source": "ginnyxu01-spec/analytical-chemistry-quiz",
+      "url": "https://github.com/ginnyxu01-spec/analytical-chemistry-quiz",
+      "category": "analytical",
+      "format": "large single-page quiz HTML",
+      "repository_license": "NOT_FOUND",
+      "rights_status": "Only root index.html observed; no explicit root LICENSE or content reuse permission in reviewed listing",
+      "import_questions": false,
+      "quality_note": "Possible Chinese analytical quiz pool, but cannot redistribute unlicensed question text",
+      "next_action": "Obtain explicit author content license and third-party provenance before extracting any questions"
+    },
+    {
+      "source": "MolChem/chemistry-quiz-1",
+      "url": "https://github.com/MolChem/chemistry-quiz-1",
+      "category": "organic,analytical,physical",
+      "format": "HTML quiz and many reaction image assets",
+      "repository_license": "NOT_FOUND",
+      "rights_status": "README, HTML and PNG images observed; no root license; image/question provenance uncertain",
+      "import_questions": false,
+      "quality_note": "Do not copy images or problem statements without item rights and answer review",
+      "next_action": "Find explicit license or ask maintainer for reusable question dataset rights"
+    },
+    {
+      "source": "dmccreary/chemistry",
+      "url": "https://github.com/dmccreary/chemistry",
+      "category": "general",
+      "format": "AP chemistry textbook, quizzes and microsimulations",
+      "repository_license": "CC BY-NC-SA 4.0",
+      "license_evidence": "https://github.com/dmccreary/chemistry/blob/main/README.md",
+      "rights_status": "non-commercial/share-alike obligations; AP/high school focus, not automatically suitable for college question bank",
+      "import_questions": false,
+      "quality_note": "180 quiz questions reported by project; pedagogical-level mismatch and license conditions warrant exclusion",
+      "next_action": "Do not import unless purpose and NC-SA compliance are separately reviewed"
     }
   ]
 }

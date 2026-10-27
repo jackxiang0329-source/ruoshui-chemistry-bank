@@ -24,6 +24,12 @@
     "无机化学 习题 in:name,description",
     "有机化学 习题 in:name,description",
     "分析化学 习题 in:name,description",
-    "物理化学 习题 in:name,description"
+    "物理化学 习题 in:name,description",
+    "quantitative analytical chemistry exercises in:name,description",
+    "complexometric titration problems in:name,description",
+    "chemical kinetics exercises in:name,description",
+    "physical chemistry thermodynamics quiz in:name,description",
+    "electrochemistry impedance tutorial exercises in:name,description",
+    "spectrophotometry chemistry questions in:name,description"
   ]
 }
