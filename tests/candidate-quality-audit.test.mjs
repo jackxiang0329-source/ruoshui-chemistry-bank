@@ -28,3 +28,21 @@ test('stabilized Unicode and whitespace and deterministic hash',()=>{
  assert.equal(buildAudit(r).corpus_hash_sha256,buildAudit(r.reverse()).corpus_hash_sha256);
  assert.equal(normalize('  A\u3000B  '),'a b');
 });
+
+test('source CC0 label does not conceal item-level rights still pending',()=>{
+ const a={...q('review','Photon force homework','McMaster'),
+  source:{repository:'PaulWAyers/IntroQChemProblems',license:'CC0-1.0',
+   url:'https://github.com/PaulWAyers/IntroQChemProblems',
+   content_rights_verified:false,item_level_rights_review_pending:true}};
+ const b={...q('covered','Licensed original practice','author'),source:{
+  repository:'author/bank',license:'CC0-1.0',content_rights_verified:true}};
+ const c=q('unknown','No explicit item rights metadata','third-party');
+ const r=buildAudit([a,b,c]);
+ assert.equal(r.source_license_or_record_issues.count,0);
+ assert.deepEqual([r.source_content_rights_audit.explicitly_verified,
+  r.source_content_rights_audit.explicitly_pending,
+  r.source_content_rights_audit.not_recorded],[1,1,1]);
+ assert.equal(r.source_content_rights_audit.pending_samples[0].id,'review');
+ assert.equal(r.source_content_rights_audit.verified_is_not_expert_approval,true);
+ assert.equal(r.expert_approved_publishable_count,0);
+});

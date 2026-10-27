@@ -29,6 +29,8 @@ export function buildAudit(rows){
  const bySubject={},byType={},bySource={},byQuality={},byPublication={},byTopic={};
  const byText=new Map(),byTemplate=new Map(),byBucket=new Map(),problems=[],studycards=[];
  const seenIds=new Set(),allIds=[];
+ const rightsState={explicitly_verified:0,explicitly_pending:0,not_recorded:0};
+ const rightsPendingSamples=[];
  const entries=[];
  for(const q of rows){
   const id=String(q.id||'');
@@ -44,6 +46,16 @@ export function buildAudit(rows){
   if(q.publishable===true&&q.quality_status!=='expert_approved')
     throw Error('Unapproved candidate mistakenly marked publishable '+id);
   if(kind==='study_card')studycards.push(id);
+  const rights=q.source?.content_rights_verified;
+  if(rights===true)rightsState.explicitly_verified++;
+  else if(rights===false){
+   rightsState.explicitly_pending++;
+   if(rightsPendingSamples.length<40)rightsPendingSamples.push({
+    id,source,right_status:'EXPLICITLY_UNVERIFIED',
+    note:q.source?.item_level_rights_review_pending===true?'item_level_rights_pending':
+     'source_content_rights_not_verified'});
+  }else rightsState.not_recorded++;
+
   if(kind==='incomplete_unpublishable')problems.push({id,issue:'question or answer missing'});
   if(!q.source?.license&&!q.source?.content_license&&!q.source?.source_license)
     problems.push({id,issue:'source license not explicit in candidate'});
@@ -79,6 +91,9 @@ export function buildAudit(rows){
   source_counts:Object.fromEntries(Object.entries(bySource).sort()),
   topic_counts:Object.fromEntries(Object.entries(byTopic).sort()),
   source_license_or_record_issues:{count:problems.length,samples:problems.slice(0,35)},
+  source_content_rights_audit:{...rightsState,
+    pending_samples:rightsPendingSamples,verified_is_not_expert_approval:true,
+    note:'Source license is not item-level authorship or publication approval. Pending rights require human review; missing status is never assumed cleared.'},
   exact_duplicate_question_groups:{count:exact.length,samples:exact.slice(0,30)},
   same_template_families:{count:families.length,samples:families.slice(0,30)},
   cross_source_possible_semantic_duplicates:{count:suspiciousTotal,samples:suspicious},
@@ -98,6 +113,8 @@ export function run(){
   ', exercise_candidates='+report.by_content_kind.exercise_candidate+
   ', exact_groups='+report.exact_duplicate_question_groups.count+
   ', cross_source_review_pairs='+report.cross_source_possible_semantic_duplicates.count+
+  ', rights_explicitly_pending='+report.source_content_rights_audit.explicitly_pending+
+  ', rights_unstated='+report.source_content_rights_audit.not_recorded+
   ', verified_publishable='+report.expert_approved_publishable_count);
  return report;
 }
