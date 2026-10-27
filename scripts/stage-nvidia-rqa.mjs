@@ -71,7 +71,9 @@ export async function run(fetchJSON=request){
   cfg.revision!=='82e1af468197076b4f0f392c239274eac032adc7'||
   cfg.license!=='cc-by-4.0'||cfg.config!=='default'||cfg.split!=='RQA'||cfg.total_rows!==52179||
   !Number.isInteger(cfg.batch_pages)||cfg.batch_pages<1||cfg.batch_pages>10||
-  cfg.page_size<1||cfg.page_size>100||cfg.max_staged<100||cfg.max_staged>10000)
+  cfg.page_size<1||cfg.page_size>100||cfg.max_staged<100||cfg.max_staged>10000||
+  !Number.isInteger(cfg.max_question_chars)||cfg.max_question_chars<100||cfg.max_question_chars>20000||
+  !Number.isInteger(cfg.max_answer_chars)||cfg.max_answer_chars<100||cfg.max_answer_chars>20000)
   throw Error('Unapproved source pin, split or size limit');
  const state=existsSync(STATE)?JSON.parse(readFileSync(STATE,'utf8')):
   {schema_version:1,revision:cfg.revision,next_offset:0,examined:0};
@@ -87,10 +89,10 @@ export async function run(fetchJSON=request){
  let offset=state.next_offset,accepted=[],reject={},pageCount=0;
  const start=offset;
  const pages=Math.min(cfg.batch_pages,Math.ceil((cfg.max_staged-total)/cfg.page_size));
- for(let i=0;i<pages&&offset<cfg.total_rows;i++){
+ for(let i=0;i<pages&&offset<cfg.total_rows&&total+accepted.length<cfg.max_staged;i++){
   const url=new URL('https://datasets-server.huggingface.co/rows');
   for(const [k,v] of Object.entries({dataset:cfg.dataset,config:'default',split:'RQA',offset,
-   length:Math.min(cfg.page_size,cfg.total_rows-offset)}))url.searchParams.set(k,String(v));
+   length:Math.min(cfg.page_size,cfg.total_rows-offset,cfg.max_staged-total-accepted.length)}))url.searchParams.set(k,String(v));
   const page=await fetchJSON(String(url));
   if(page.partial||!Array.isArray(page.rows)||page.rows.length===0)throw Error('Empty or truncated source page');
   if(page.num_rows_total!==cfg.total_rows)throw Error('RQA rows total changed or missing; abort without writing');

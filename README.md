@@ -50,3 +50,12 @@
 - 原始 2892 道不直接照单全收；排除第三方 pKa/Mayr 测量值、结构 SVG、所有依赖图示的题目。
 - [可重复执行导入器](scripts/import-chemtrain-daily-text.mjs)、[回归测试](tests/chemtrain-daily-text.test.mjs)、[审计日志](harvest/run_logs/2026-10-27-chemtrain-daily-import.md)。
 - `awaiting_expert_review` + `publishable=false`；结构构型题特别标记复审，不等于 268 道官方独立考试原题。
+
+## NVIDIA 开放化学问答研究待审区（2026-10-27）
+
+- [Nemotron-Science-v1](https://huggingface.co/datasets/nvidia/Nemotron-Science-v1) 的化学 RQA 分区共有 **52,179** 条模型生成问答，NVIDIA 原始内容声明 CC BY 4.0。
+- [固定数据来源、许可证和容量限制](harvest/pinned_nvidia_science_rqa.json)；[可重复运行的采集器](scripts/stage-nvidia-rqa.mjs)。
+- 每 **5 分钟** 的独立自动流程按页最多读取 **800 条**，只储存在 `data/research_quarantine/nvidia-rqa/` 的紧凑 JSONL 文件内，**最高 5,000 条后停止进一步暂存**。运行可能受 GitHub 排队、网络、API 服务影响而延迟。
+- 这些是 **AI 生成、尚未独立验证答案的研究问答**，不能与 `data/candidates/` 的本科题库候选混为一谈。所有记录具有 `publishable=false`、`exclude_from_official_bank=true` 标记。
+- [来源、抽取质量与错误记录](harvest/run_logs/2026-10-27-nvidia-research-rqa-intake.md)。实际最新数量以 `harvest/nvidia_rqa_state.json` 为准；任何核准进入本科题库的转移都必须另外验算、分类、去重并记录专家审核。
+
