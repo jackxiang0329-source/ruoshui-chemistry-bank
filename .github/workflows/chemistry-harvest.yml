@@ -12,6 +12,8 @@ on:
       - "tests/prioritize-chemistry-sources.test.mjs"
       - "scripts/import-approved-chemistry.mjs"
       - "scripts/import-openstax-chemistry-oer.mjs"
+      - "scripts/report-chemistry-coverage.mjs"
+      - "tests/report-chemistry-coverage.test.mjs"
       - "tests/openstax-chemistry-oer.test.mjs"
       - "harvest/pinned_openstax_chemistry.json"
       - "scripts/validate-oer-work-license.mjs"
@@ -180,6 +182,8 @@ jobs:
         run: node --test tests/original-eis-pyeis.test.mjs
       - name: Validate public dataset metadata intake safety
         run: node --test tests/harvest-public-chemistry.test.mjs
+      - name: Verify tier-aware chemistry candidate coverage counting
+        run: node --test tests/report-chemistry-coverage.test.mjs
       - name: Verify pinned OpenStax chemistry staging, nested exercise parsing and nonpublication
         run: node --test tests/openstax-chemistry-oer.test.mjs
       - name: Stage original OpenStax chemistry chapter exercises for rights and science review
@@ -240,9 +244,11 @@ jobs:
         run: node scripts/build-expert-review-plan.mjs
       - name: Export exclusively manually attested and hash-pinned approved questions
         run: node scripts/build-publication-index.mjs
+      - name: Report separate raw OER and main candidate totals without double counting
+        run: node scripts/report-chemistry-coverage.mjs
       - name: Commit only real additions or changes
         run: |
-          git add -- harvest/source_candidates.json harvest/quality_audit.json harvest/mcq_integrity_audit.json harvest/source_review_queue.json harvest/expert_review_plan.json release/chemistry-approved-manifest.json
+          git add -- harvest/source_candidates.json harvest/quality_audit.json harvest/mcq_integrity_audit.json harvest/source_review_queue.json harvest/expert_review_plan.json harvest/coverage_report.json release/chemistry-approved-manifest.json
           if [ -f harvest/external_source_catalog.json ]; then
             git add -- harvest/external_source_catalog.json
           fi

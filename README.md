@@ -124,3 +124,10 @@
 - [正式发布检查](scripts/build-publication-index.mjs)要求原参考答案存在争议时由审稿人员显式确认 source_discrepancy_acknowledged；概念题还必须确认 conceptual_answer_checked。只要 item_level_rights_review_pending 仍为 true，题目一律不能进入正式发布清单。
 - [旧导入器证据修复](scripts/import-approved-chemistry.mjs)给早期 5 道 MuzaPro 有机化学题补齐来源 LICENSE、README 以及固定提交版本证据。题干、答案、原记录编号或版权字段不符时拒绝覆盖，不新增专家审批。
 - 完整候选内容共 1715 份，其中练习 1437 份、学习卡 278 份；经专家批准可正式出卷的题仍为 0。
+
+## 化学题库扩大采集规模（外部开放题源档案）
+
+- 已启用 [OpenStax Chemistry CC BY 3.0 公开教材习题采集器](scripts/import-openstax-chemistry-oer.mjs)，锁定 2014 版开放教材历史镜像的 Git commit、许可证和全部 149 个章节文件的源 SHA。每轮增量取最多 70 个章节，并对正文 Git blob 进行逐文件核验。
+- 原英文练习段落与教材答案独立保存于 external_sources/openstax_chemistry/questions.jsonl；每条记录标注图片/MathML 依赖、章节位置、题干摘要、是否带教师答案，全部不可直接用于正式组卷。
+- [外部开源题源当前覆盖](external_sources/openstax_chemistry/coverage.json)、[跨层级题量报告](harvest/coverage_report.json)：明确区分主候选、学习卡、外部待审原始题源与可正式组卷试题。总记录数不是已质检的独立试题数。
+- 历史仓库声明 CC BY 3.0，并不自动解决每道题的第三方例外、图片版权、答案正确性或图像丢失问题。外部题源始终不自动升级为 main 题库或专家批准。

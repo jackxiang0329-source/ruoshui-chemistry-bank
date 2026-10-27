@@ -130,6 +130,7 @@ export async function run({maxFiles=40,maxExercises=1000,fetchText=async url=>{
  };
  await Promise.all(Array.from({length:6},()=>worker()));
  if(todo.length&&completed.length===0)throw Error('Every OER fetch failed; preserve previous state');
+ if(additions.length>maxExercises)throw Error('Exercise extraction exceeded bounded per-run budget; preserve previous state');
  const merged=mergeStaging(existing,additions);
  const added=merged.length-existing.length;
  const processed=[...done,...completed].sort();
@@ -160,5 +161,5 @@ export async function run({maxFiles=40,maxExercises=1000,fetchText=async url=>{
  return stats;
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
- run({maxFiles:40,maxExercises:1000}).catch(e=>{console.error(e.stack);process.exitCode=1;});
+ run({maxFiles:70,maxExercises:2500}).catch(e=>{console.error(e.stack);process.exitCode=1;});
 }
