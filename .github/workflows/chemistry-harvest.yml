@@ -15,6 +15,8 @@ on:
       - "scripts/report-chemistry-coverage.mjs"
       - "scripts/audit-openstax-chemistry-oer.mjs"
       - "scripts/review-openstax-chemistry-numerics.mjs"
+      - "scripts/import-curated-openstax-chemistry.mjs"
+      - "tests/import-curated-openstax-chemistry.test.mjs"
       - "tests/review-openstax-chemistry-numerics.test.mjs"
       - "tests/audit-openstax-chemistry-oer.test.mjs"
       - "tests/report-chemistry-coverage.test.mjs"
@@ -186,6 +188,8 @@ jobs:
         run: node --test tests/original-eis-pyeis.test.mjs
       - name: Validate public dataset metadata intake safety
         run: node --test tests/harvest-public-chemistry.test.mjs
+      - name: Verify eight Chinese source-curated chemistry questions remain strictly unpublished
+        run: node --test tests/import-curated-openstax-chemistry.test.mjs
       - name: Verify independent pinned OpenStax chemistry numerical solutions and answer-key discrepancies
         run: node --test tests/review-openstax-chemistry-numerics.test.mjs
       - name: Verify human-review priority of external OER blocks without publication
@@ -242,6 +246,8 @@ jobs:
         run: node scripts/import-original-instrumental-analytical.mjs
       - name: Import pinned Apache-2.0 reference based EIS physics practice
         run: node scripts/import-original-eis-pyeis.mjs
+      - name: Stage eight independently solved OpenStax source questions in Chinese for expert review
+        run: node scripts/import-curated-openstax-chemistry.mjs
       - name: Normalize missing unreviewed publication flags to false
         run: node scripts/normalize-unpublished-candidates.mjs
       - name: Audit candidate review buckets and potential duplicates
