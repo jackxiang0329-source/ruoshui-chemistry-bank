@@ -22,7 +22,7 @@ export const CASES=[
   expected:[123.896,18.015,164.086,60.052,342.297]},
  {tag:'solution_molarity_six_parts',path:'contents/m51014.md',ordinal:4,
   marker:'Determine the molarity for each of the following solutions',kind:'molarity',
-  answerExpected:true,note:'质量先除摩尔质量，毫升换算为升，水合物按完整式量。',
+  answerExpected:true,allowMathML:true,note:'质量先除摩尔质量，毫升换算为升，水合物按完整式量；原题含 MathML，正式渲染仍待审核。',
   expected:[0.444/0.654,98/97.994,0.2074/74.092/0.04,
    10500/322.195/18.6,0.007/0.1,18/36.46/0.075]},
  {tag:'glucose_solution_mass',path:'contents/m51014.md',ordinal:6,
@@ -38,12 +38,12 @@ export const CASES=[
   answerExpected:false,note:'在同密度和同热容、无热损假设下，以 m_hot(95−60)=m_cold(60−23) 求冷水体积。',
   expected:[180*(95-60)/(60-23)]},
  {tag:'pure_water_kw_60c',path:'contents/m51117.md',ordinal:3,
-  marker:'9.311',kind:'acid_base_equilibrium',answerExpected:true,
+  marker:'9.311',kind:'acid_base_equilibrium',answerExpected:true,allowMathML:true,
   note:'纯水中 [H3O+]=[OH−]=sqrt(Kw)，pH=pOH=−log10(sqrt(Kw))。',
   expected:[Math.sqrt(9.311e-14),-Math.log10(Math.sqrt(9.311e-14)),
    -Math.log10(Math.sqrt(9.311e-14))]},
  {tag:'strong_electrolyte_ph_poh_answer_swap',path:'contents/m51117.md',ordinal:5,
-  marker:'0.000259',kind:'acid_base_equilibrium',answerExpected:true,
+  marker:'0.000259',kind:'acid_base_equilibrium',answerExpected:true,allowMathML:true,
   note:'按题目完全电离及理想浓度近似，pH+pOH=14。教材答案将 (b) NaOH 与 (d) KOH 的 pH、pOH 名称互换，必须指出，浓溶液还需考虑活度。',
   keyDiscrepancy:'textbook_swaps_pH_and_pOH_for_b_and_d',
   expected:[-Math.log10(0.000259),14+Math.log10(0.000259),
@@ -127,7 +127,7 @@ export function curateScientificReviews(rows,manifest){
    throw Error('Pinned raw source missing, altered or wrong edition: '+c.tag);
   if(!item.question?.includes(c.marker)||item.question_sha256!==digest(item.question)||
     item.has_source_solution!==c.answerExpected||
-    item.requires_media||item.requires_mathml||
+    item.requires_media||(item.requires_mathml&&c.allowMathML!==true)||
     item.exam_ready!==false||item.publishable!==false||
     item.content_rights_verified!==false||item.item_level_rights_review_pending!==true)
    throw Error('Unsafe text source, missing solution or altered exercise: '+c.tag);
@@ -142,7 +142,9 @@ export function curateScientificReviews(rows,manifest){
    question_sha256:item.question_sha256,source_url:item.source_url,
    source_answer_present:item.has_source_solution,source_answer_independently_agreed:
     c.keyDiscrepancy?false:null,
-   issue:c.keyDiscrepancy||null,independent_method:c.note,
+   issue:c.keyDiscrepancy||null,mathml_rendering_requires_review:item.requires_mathml,
+   issue_remains_unresolved_pending_human:c.keyDiscrepancy!==undefined,
+   independent_method:c.note,
    independently_calculated_results:values,
    machine_computation_checked:true,
    independent_human_chemist_review_completed:false,
