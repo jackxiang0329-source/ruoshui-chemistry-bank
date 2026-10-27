@@ -102,12 +102,12 @@ function author(kind,p,val){
   topic='copper_iodometric_mass_fraction';
   question='分析化学·间接碘量测铜：铜试样质量 '+p4(p.sample_mass_g)+' g，酸性条件将全部铜转为 Cu²⁺ 后与足量 I⁻ 放碘，以 '+c(p.thiosulfate_molarity)+' mol/L Na₂S₂O₃ 滴定耗 '+fmt(p.thiosulfate_volume_ml,2)+' mL。已知 n(Cu)=n(S₂O₃²⁻)，M(Cu)=63.546 g/mol，求 Cu 的质量分数（%）。';
   explanation='Na₂S₂O₃ 的物质的量等于试样中 Cu 的物质的量；用 63.546 g/mol 求 Cu 元素质量，除以试样总质量×100%。';
-  answer='w(Cu) = '+pct(val[0])+'。';break;
+  answer='w(Cu) = ['+c(p.thiosulfate_molarity)+'×'+fmt(p.thiosulfate_volume_ml,2)+'/1000×63.546/'+p4(p.sample_mass_g)+']×100% = '+pct(val[0])+'。';break;
  case 'calcium_oxalate':
   topic='calcium_oxalate_indirect_assay';
   question='分析化学·钙的间接滴定：样品 '+p4(p.sample_mass_g)+' g 处理为草酸盐后定容至 250.0 mL，取 25.00 mL 用 '+c(p.permanganate_molarity)+' mol/L KMnO₄ 滴定，样品耗 '+fmt(p.sample_titrant_ml,2)+' mL，空白耗 '+fmt(p.blank_titrant_ml,2)+' mL。按 n(Ca)=2.5 n(MnO₄⁻)，M(Ca)=40.078 g/mol，求样品中钙的质量分数。';
   explanation='扣除空白后以 5/2 换算草酸钙的量，再考虑 250/25 的分取倍数，用元素 Ca 的摩尔质量计算质量百分数。';
-  answer='w(Ca) = '+pct(val[0])+'。';break;
+  answer='w(Ca) = [(5/2)×'+c(p.permanganate_molarity)+'×('+fmt(p.sample_titrant_ml,2)+'−'+fmt(p.blank_titrant_ml,2)+')/1000×(250.0/25.00)×40.078/'+p4(p.sample_mass_g)+']×100% = '+pct(val[0])+'。';break;
  case 'pb_bi_edta':
   topic='stepwise_pb_bi_complexometry';
   question='分析化学·分步 EDTA 配位滴定：取 20.00 mL 同时含 Bi³⁺、Pb²⁺ 的试液。用 '+c(p.edta_molarity)+' mol/L EDTA 在经过验证的选择性条件下先测 Bi³⁺，消耗 '+fmt(p.bi_edta_ml,2)+' mL；再测 Pb²⁺，**追加**消耗 '+fmt(p.pb_additional_ml,2)+' mL。均为 1:1 配位，求原试液中两离子浓度。';
