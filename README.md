@@ -6,10 +6,10 @@
 
 ## 当前候选内容快照（2026-10-27）
 
-- 已验证 GitHub `main` 上共有 **1582** 份候选内容：无机 849、分析 129、物理 137、有机 467。
-- 其中 **1304** 份练习候选、**278** 份学习卡；不是 1582 道独立可出卷考试真题。
+- 已验证 GitHub `main` 上共有 **1646** 份候选内容：无机 849、分析 193、物理 137、有机 467。
+- 其中 **1368** 份练习候选、**278** 份学习卡；不是 1646 道独立可出卷考试真题。
 - 全部 `awaiting_expert_review`、`publishable=false`；专家正式批准 **0** 道。
-- 机器审计发现完全同题干 0 组、相同题型模板 50 组；并不表示跨语言或语义重复已解决。
+- 机器审计发现完全同题干 0 组、相同题型模板 58 组；并不表示跨语言或语义重复已解决。
 - [本轮新增 EIS 原创习题和 Apache-2.0 来源审计](harvest/run_logs/2026-10-27-pyeis-original-eis.md)。
 - [当前自动生成的实时审计数据](harvest/quality_audit.json)优先于本段日期快照；来源发现每 10 分钟采用 `4,14,24,34,44,54 * * * *`，严格入库每 30 分钟采用 `17,47 * * * *`，可能受 GitHub 调度延迟影响。
 
@@ -83,3 +83,9 @@
 - 同期另有**独立任务**新增 12 道 [DFT Course 计算练习](harvest/import_reports/dft_course_isomers.json)；其数字不可算作 Radical Learn 导入器产量。
 - [本轮完整授权、质量与增量审计](harvest/run_logs/2026-10-27-radical-matching-import.md)。所有候选仍 `publishable=false`、待专家审核；来源选择题作者给出的正确项不等于额外完成了独立化学专业审定。
 
+
+## 本轮新增：仪器分析原创题与外部数据源筛选
+
+- 新增 `scripts/import-original-instrumental-analytical.mjs`：**8 个独立方法 × 8 组参数 = 64** 道仪器分析原创计算练习，已由 CI 导入。覆盖吸收分光、标准加入、色谱分离度与塔板数、库仑分析、电导、AgCl 重量分析及 Stern–Volmer 荧光猝灭；每题数值结果做观测量反算。
+- [科学与版权测试](tests/original-instrumental-analytical.test.mjs)；全部仍是专家待审的原创参数变式，并非转载真题或已批准出版内容。
+- [Hugging Face / Zenodo 人工核权优先队列](harvest/external_review_queue.json)自动根据题目线索、大学学科、许可声明、研究论文/高中/模型生成风险排序；**元数据从不等于逐题复制授权**。

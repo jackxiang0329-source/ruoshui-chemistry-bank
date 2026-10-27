@@ -7,6 +7,8 @@ on:
       - "scripts/harvest-chemistry-sources.mjs"
       - "tests/harvest.test.mjs"
       - "scripts/harvest-public-chemistry.mjs"
+      - "scripts/prioritize-external-chemistry-sources.mjs"
+      - "tests/prioritize-external-chemistry-sources.test.mjs"
       - "tests/harvest-public-chemistry.test.mjs"
       - "scripts/prioritize-chemistry-sources.mjs"
       - "tests/prioritize-chemistry-sources.test.mjs"
@@ -47,6 +49,7 @@ jobs:
         run: |
           node --test tests/harvest.test.mjs
           node --test tests/harvest-public-chemistry.test.mjs
+          node --test tests/prioritize-external-chemistry-sources.test.mjs
           node --test tests/prioritize-chemistry-sources.test.mjs
           node --test tests/preflight-chemistry-sources.test.mjs
           node --test tests/inventory-chemistry-question-files.test.mjs
@@ -72,6 +75,8 @@ jobs:
             echo "::error::External discovery failed (exit $EXTERNAL_RC)"
             exit "$EXTERNAL_RC"
           fi
+      - name: Rank Hugging Face and Zenodo question-like sources for manual rights review
+        run: node scripts/prioritize-external-chemistry-sources.mjs
       - name: Regenerate rights-review priorities (no unapproved question import)
         run: node scripts/prioritize-chemistry-sources.mjs
       - name: Preflight repository LICENSE and README for next 40 sources
@@ -84,7 +89,7 @@ jobs:
         run: node scripts/inventory-chemistry-question-files.mjs
       - name: Commit only changed source metadata and review queue
         run: |
-          git add -- harvest/source_candidates.json harvest/source_review_queue.json
+          git add -- harvest/source_candidates.json harvest/source_review_queue.json harvest/external_review_queue.json
           if [ -f harvest/license_preflight.json ]; then git add -- harvest/license_preflight.json; fi
           if [ -f harvest/content_inventory.json ]; then git add -- harvest/content_inventory.json; fi
           if [ -d harvest/sources ]; then git add -- harvest/sources; fi
