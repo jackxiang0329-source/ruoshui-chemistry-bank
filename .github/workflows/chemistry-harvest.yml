@@ -49,6 +49,8 @@ on:
       - "harvest/pinned_analytical_calculator_mit.json"
       - "scripts/import-chemtrain-reaction-learn.mjs"
       - "tests/chemtrain-reaction-learn.test.mjs"
+      - "scripts/import-chemtrain-daily-text.mjs"
+      - "tests/chemtrain-daily-text.test.mjs"
       - "tests/qcedu-introqm.test.mjs"
       - "harvest/pinned_qcedu_introqm.json"
       - "harvest/pinned_reactivity_regioselectivity.json"
@@ -113,6 +115,8 @@ jobs:
         run: node --test tests/qcedu-introqm.test.mjs
       - name: Verify pinned Reaction Learn licensed-card importer
         run: node --test tests/chemtrain-reaction-learn.test.mjs
+      - name: Verify ChemTrain Daily text-only licensed MCQ source
+        run: node --test tests/chemtrain-daily-text.test.mjs
       - name: Verify existing MIT Muza quiz coverage and prevent duplicate imports
         run: node --test tests/muzapro-existing-coverage.test.mjs
       - name: Verify candidate review buckets and semantic overlap audit
@@ -151,6 +155,8 @@ jobs:
         run: node scripts/import-qcedu-introqm.mjs
       - name: Import pinned CC BY 4.0 Reaction Learn text study cards
         run: node scripts/import-chemtrain-reaction-learn.mjs
+      - name: Import pinned ChemTrain Daily MCQs without structure images or measured datasets
+        run: node scripts/import-chemtrain-daily-text.mjs
       - name: Import independently validated original analytical chemistry exercises
         run: node scripts/import-analytical-calculator-mit.mjs
       - name: Import pinned Apache-2.0 reference based EIS physics practice
