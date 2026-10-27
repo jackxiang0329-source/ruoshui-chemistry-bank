@@ -15,5 +15,6 @@
     "attribution": "Copyright (c) 2025 Muza Studio; https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS",
     "content_rights_verified": true,
     "url": "https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS/blob/71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc/data/questions.json"
-  }
+  },
+  "publishable": false
 }
