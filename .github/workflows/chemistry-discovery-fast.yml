@@ -12,6 +12,8 @@ on:
       - "tests/prioritize-chemistry-sources.test.mjs"
       - "scripts/preflight-chemistry-sources.mjs"
       - "tests/preflight-chemistry-sources.test.mjs"
+      - "scripts/inventory-chemistry-question-files.mjs"
+      - "tests/inventory-chemistry-question-files.test.mjs"
       - "harvest/search_queries.json"
       - "harvest/public_dataset_queries.json"
   schedule:
@@ -47,6 +49,7 @@ jobs:
           node --test tests/harvest-public-chemistry.test.mjs
           node --test tests/prioritize-chemistry-sources.test.mjs
           node --test tests/preflight-chemistry-sources.test.mjs
+          node --test tests/inventory-chemistry-question-files.test.mjs
       - name: Run two metadata discovery streams concurrently
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -75,10 +78,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/preflight-chemistry-sources.mjs
+      - name: Identify new licensed-looking repositories that actually contain question and answer files
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/inventory-chemistry-question-files.mjs
       - name: Commit only changed source metadata and review queue
         run: |
           git add -- harvest/source_candidates.json harvest/source_review_queue.json
           if [ -f harvest/license_preflight.json ]; then git add -- harvest/license_preflight.json; fi
+          if [ -f harvest/content_inventory.json ]; then git add -- harvest/content_inventory.json; fi
           if [ -d harvest/sources ]; then git add -- harvest/sources; fi
           if [ -f harvest/external_source_catalog.json ]; then
             git add -- harvest/external_source_catalog.json
