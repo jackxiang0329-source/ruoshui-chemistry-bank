@@ -11,6 +11,9 @@ on:
       - "scripts/prioritize-chemistry-sources.mjs"
       - "tests/prioritize-chemistry-sources.test.mjs"
       - "scripts/import-approved-chemistry.mjs"
+      - "scripts/import-openstax-chemistry-oer.mjs"
+      - "tests/openstax-chemistry-oer.test.mjs"
+      - "harvest/pinned_openstax_chemistry.json"
       - "scripts/validate-oer-work-license.mjs"
       - "tests/oer-work-license.test.mjs"
       - "harvest/oer_work_license_review.json"
@@ -177,6 +180,10 @@ jobs:
         run: node --test tests/original-eis-pyeis.test.mjs
       - name: Validate public dataset metadata intake safety
         run: node --test tests/harvest-public-chemistry.test.mjs
+      - name: Verify pinned OpenStax chemistry staging, nested exercise parsing and nonpublication
+        run: node --test tests/openstax-chemistry-oer.test.mjs
+      - name: Stage original OpenStax chemistry chapter exercises for rights and science review
+        run: node scripts/import-openstax-chemistry-oer.mjs
       - name: Import license-approved question records
         run: node scripts/import-approved-chemistry.mjs
       - name: Import pinned CC BY 4.0 TMC Learn complex exercises
@@ -241,6 +248,9 @@ jobs:
           fi
           if [ -d harvest/external_sources ]; then
             git add -- harvest/external_sources
+          fi
+          if [ -d external_sources/openstax_chemistry ]; then
+            git add -- external_sources/openstax_chemistry
           fi
           if [ -d harvest/import_reports ]; then
             git add -- harvest/import_reports
