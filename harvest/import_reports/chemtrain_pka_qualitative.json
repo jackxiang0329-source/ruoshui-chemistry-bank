@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source_repository": "ChemTrain/pka-learn",
+  "source_commit": "5250dce7a367be0e767b2e3e7a26aa50c27b12a0",
+  "source_html_git_blob_sha": "de1e8441908198301a7e82da76fd5febd9de8900",
+  "source_content_license_git_blob_sha": "bd1d90f0a381f9d0b0a903bf203828c1e2a05f91",
+  "content_license": "CC BY 4.0",
+  "code_license": "MIT",
+  "source_site_questions": 29,
+  "curated_source_questions": 20,
+  "excluded_source_questions": 9,
+  "generated_candidate_questions": 20,
+  "by_subject": {
+    "organic": 20
+  },
+  "third_party_numeric_values_imported": 0,
+  "structure_images_imported": 0,
+  "review_status": "awaiting_expert_review",
+  "publishable": false,
+  "note": "20 text-only qualitative adaptations from 29 source multi-site questions; no third-party measured or estimated pKa values redistributed. Other source cards excluded. Expert chemistry review and semantic deduplication pending."
+}

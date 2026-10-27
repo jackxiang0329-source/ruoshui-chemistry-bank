@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "e4e2f59524a00004f83bfb7dfafc6f4748e1bb0fc3972e5b45af6fe7714d9671",
+  "subject": "organic",
+  "topic": "qualitative_acidic_site",
+  "level": "undergraduate",
+  "question_type": "single_choice_acidic_proton",
+  "question": "有机化学·分子内酸性位点比较（pKa Learn 改编）：在DMSO 中，4-Aminophenol（H₂NC₆H₄OH） 的下列质子中，通常哪一类最容易发生酸解离？（只比较给定位置，不要求写出 pKa 数值。）\nA. aniline N–H, as in aniline\nB. phenol O–H, as in phenol",
+  "answer": "B. phenol O–H, as in phenol",
+  "correct_option": "B",
+  "options": [
+    {
+      "key": "A",
+      "text": "aniline N–H, as in aniline"
+    },
+    {
+      "key": "B",
+      "text": "phenol O–H, as in phenol"
+    }
+  ],
+  "explanation": "在所示比较条件下，酚羟基去质子化形成的酚氧负离子较苯胺 N–H 去质子化产物更稳定。",
+  "source": {
+    "repository": "ChemTrain/pka-learn",
+    "commit": "5250dce7a367be0e767b2e3e7a26aa50c27b12a0",
+    "file": "pka_learn.html",
+    "git_blob_sha": "de1e8441908198301a7e82da76fd5febd9de8900",
+    "source_group_id": "fg",
+    "source_question_index": 10,
+    "source_name": "4-Aminophenol",
+    "license": "CC BY 4.0",
+    "code_license": "MIT",
+    "attribution": "pKa Learn by Quentin Bindschaedler (ChemTrain), https://github.com/ChemTrain/pka-learn, licensed under CC BY 4.0.",
+    "license_evidence": "https://github.com/ChemTrain/pka-learn/blob/5250dce7a367be0e767b2e3e7a26aa50c27b12a0/LICENSE-CONTENT.md",
+    "license_git_blob_sha": "bd1d90f0a381f9d0b0a903bf203828c1e2a05f91",
+    "url": "https://github.com/ChemTrain/pka-learn/blob/5250dce7a367be0e767b2e3e7a26aa50c27b12a0/pka_learn.html",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "changes": "Chinese text-only qualitative comparison adapted from the author-licensed site question and explanation. No numeric pKa measurements, estimates, structures, logo or third-party text imported."
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false
+}

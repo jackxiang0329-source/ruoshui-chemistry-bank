@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "9e304707efc1a47c79ae8ebb1bcbafb89c4b4f96fa187e5480ef3603ce05f8c8",
+  "subject": "organic",
+  "topic": "qualitative_acidic_site",
+  "level": "undergraduate",
+  "question_type": "single_choice_acidic_proton",
+  "question": "有机化学·分子内酸性位点比较（pKa Learn 改编）：在来源采用的教材近似条件下，Methyl levulinate（CH₃COCH₂CH₂CO₂CH₃） 的下列质子中，通常哪一类最容易发生酸解离？（只比较给定位置，不要求写出 pKa 数值。）\nA. C–H next to the ester, as in ethyl acetate\nB. O–CH₃ C–H, no stabilising group\nC. C–H next to the ketone, as in acetone",
+  "answer": "C. C–H next to the ketone, as in acetone",
+  "correct_option": "C",
+  "options": [
+    {
+      "key": "A",
+      "text": "C–H next to the ester, as in ethyl acetate"
+    },
+    {
+      "key": "B",
+      "text": "O–CH₃ C–H, no stabilising group"
+    },
+    {
+      "key": "C",
+      "text": "C–H next to the ketone, as in acetone"
+    }
+  ],
+  "explanation": "酮羰基的 α-C–H 通常比酯羰基的 α-C–H 更酸，因为酯的烷氧基已向羰基供电子。",
+  "source": {
+    "repository": "ChemTrain/pka-learn",
+    "commit": "5250dce7a367be0e767b2e3e7a26aa50c27b12a0",
+    "file": "pka_learn.html",
+    "git_blob_sha": "de1e8441908198301a7e82da76fd5febd9de8900",
+    "source_group_id": "ch",
+    "source_question_index": 4,
+    "source_name": "Methyl levulinate",
+    "license": "CC BY 4.0",
+    "code_license": "MIT",
+    "attribution": "pKa Learn by Quentin Bindschaedler (ChemTrain), https://github.com/ChemTrain/pka-learn, licensed under CC BY 4.0.",
+    "license_evidence": "https://github.com/ChemTrain/pka-learn/blob/5250dce7a367be0e767b2e3e7a26aa50c27b12a0/LICENSE-CONTENT.md",
+    "license_git_blob_sha": "bd1d90f0a381f9d0b0a903bf203828c1e2a05f91",
+    "url": "https://github.com/ChemTrain/pka-learn/blob/5250dce7a367be0e767b2e3e7a26aa50c27b12a0/pka_learn.html",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "changes": "Chinese text-only qualitative comparison adapted from the author-licensed site question and explanation. No numeric pKa measurements, estimates, structures, logo or third-party text imported."
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false
+}
