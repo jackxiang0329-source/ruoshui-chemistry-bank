@@ -149,10 +149,15 @@
       "repository_license": "Apache-2.0",
       "license_evidence": "https://github.com/kbknudsen/PyEIS/blob/14724e978a089d9184285cec1b72cb57941d58a1/LICENSE",
       "license_owner": "Kristian B. Knudsen",
-      "rights_status": "Apache-2.0 license verified for repository files; no independent structured question+answer dataset found",
+      "rights_status": "Apache-2.0 source code and documentation verified; no upstream question/answer dataset imported. Eight newly authored Chinese physical chemistry numerical exercises reference its basic circuit methods.",
       "import_questions": false,
-      "quality_note": "26 circuit models, electrochemical impedance simulations and tutorials; exercise conversion would require original problem creation and independent numerical validation",
-      "next_action": "Draft original electrochemical impedance problems based on validated circuits; exclude journal-paper excerpts and experimental datasets unless separately licensed"
+      "quality_note": "8 novel EIS undergraduate numeric exercises, 8 distinct topics (angular frequency, capacitor, series/parallel RC, Nyquist peak, Randles, CPE and Warburg); independently recomputed. Awaiting expert review, publishable=false.",
+      "next_action": "Independent expert review of electrochemistry assumptions, complex-number sign conventions and educational level; semantic comparison with any other physical chemistry EIS questions.",
+      "generate_original_practice": true,
+      "original_practice_imported": 8,
+      "original_upstream_questions_imported": 0,
+      "reference_code_blob": "78b4832687a56ff1c47ead7befb301d89f8c478f",
+      "license_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
     },
     {
       "source": "ginnyxu01-spec/analytical-chemistry-quiz",
@@ -187,6 +192,35 @@
       "import_questions": false,
       "quality_note": "180 quiz questions reported by project; pedagogical-level mismatch and license conditions warrant exclusion",
       "next_action": "Do not import unless purpose and NC-SA compliance are separately reviewed"
+    },
+    {
+      "source": "MatSciEd/Thermodynamics",
+      "url": "https://github.com/MatSciEd/Thermodynamics",
+      "pin": "ba24e9163a0a23c4f395756be92d3889be23175b",
+      "category": "physical",
+      "format": "materials and chemical-reaction thermodynamics educational Jupyter notebooks",
+      "repository_license": "MIT",
+      "license_evidence": "https://github.com/MatSciEd/Thermodynamics/blob/ba24e9163a0a23c4f395756be92d3889be23175b/LICENSE",
+      "license_owner": "Copyright (c) 2022 MatSciEd",
+      "license_blob_sha": "24ae6f0447a6ee5bbd20f877a55585c9ce7f0f37",
+      "rights_status": "repository MIT license confirmed; the chemical reaction notebook cites DeHoff Thermodynamics in Materials Science, and ownership of any embedded third-party textbook example content not independently cleared",
+      "import_questions": false,
+      "original_practice_imported": 0,
+      "quality_note": "70-cell reaction thermodynamics notebook includes thermodynamic relations, uses some textbook-based treatment; neither complete independent exercise+answer records nor independent rights chain verified",
+      "next_action": "Derive fresh original thermodynamics problems from general equations, only after detailed independent numerical and provenance review; do not reproduce cited textbook wording or illustrations"
+    },
+    {
+      "source": "jcumby/interactive_impedance",
+      "url": "https://github.com/jcumby/interactive_impedance",
+      "pin": "74500c688074ae96b09b4ea54d840280ac4d15c8",
+      "category": "physical",
+      "format": "interactive chemistry EIS teaching visualization",
+      "repository_license": "CC BY notice on project teaching website (exact code licensing not verified)",
+      "license_evidence": "https://jcumby.github.io/interactive_impedance/",
+      "rights_status": "site CC BY wording observed, but repository has no root LICENSE in listing; verify source-specific terms before reusing code or media",
+      "import_questions": false,
+      "quality_note": "interactive water-pipe analogy for EIS; no independent structured question/answer source validated",
+      "next_action": "Ask for exact content and code license/version; do not automatically mirror assets or question text"
     }
   ]
 }
