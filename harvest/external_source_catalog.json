@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "total_candidates": 126,
+  "platform_counts": {
+    "huggingface": 126,
+    "zenodo": 0
+  },
+  "shards": [
+    {
+      "path": "harvest/external_sources/0.jsonl",
+      "count": 8
+    },
+    {
+      "path": "harvest/external_sources/1.jsonl",
+      "count": 9
+    },
+    {
+      "path": "harvest/external_sources/2.jsonl",
+      "count": 6
+    },
+    {
+      "path": "harvest/external_sources/3.jsonl",
+      "count": 14
+    },
+    {
+      "path": "harvest/external_sources/4.jsonl",
+      "count": 10
+    },
+    {
+      "path": "harvest/external_sources/5.jsonl",
+      "count": 7
+    },
+    {
+      "path": "harvest/external_sources/6.jsonl",
+      "count": 11
+    },
+    {
+      "path": "harvest/external_sources/7.jsonl",
+      "count": 6
+    },
+    {
+      "path": "harvest/external_sources/8.jsonl",
+      "count": 8
+    },
+    {
+      "path": "harvest/external_sources/9.jsonl",
+      "count": 3
+    },
+    {
+      "path": "harvest/external_sources/a.jsonl",
+      "count": 13
+    },
+    {
+      "path": "harvest/external_sources/b.jsonl",
+      "count": 9
+    },
+    {
+      "path": "harvest/external_sources/c.jsonl",
+      "count": 7
+    },
+    {
+      "path": "harvest/external_sources/d.jsonl",
+      "count": 3
+    },
+    {
+      "path": "harvest/external_sources/e.jsonl",
+      "count": 7
+    },
+    {
+      "path": "harvest/external_sources/f.jsonl",
+      "count": 5
+    }
+  ],
+  "note": "Source metadata only. A claimed license is NOT question-text rights approval. All records are unreviewed and never imported as questions."
+}
