@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "fbcba39a776ca97fc8761e2fc89eaad9b4ddde1f5ae702639f48c4932877a51a",
+  "subject": "physical",
+  "topic": "chemical_kinetics_rate_law",
+  "level": "undergraduate",
+  "question_type": "independently_recomputed_exercise",
+  "resource_type": "licensed_textbook_exercise_adaptation",
+  "question": "物理化学·初速法：乙醛分解反应在某温度下符合二级速率定律 v=k[CH₃CHO]²。实验测得 [CH₃CHO]=1.75×10⁻³ mol/L 时，速率为 2.06×10⁻¹¹ mol/(L·s)。求速率常数 k 及单位。",
+  "answer": "k≈6.73×10⁻⁶ L/(mol·s)。",
+  "explanation": "k=v/[CH₃CHO]²；二级反应速率常数的量纲是 L·mol⁻¹·s⁻¹。",
+  "numeric_answer": 0.000006726530612244897,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "publisher": "OpenStax",
+    "textbook": "Chemistry 2e",
+    "edition": "2e (2019)",
+    "source_item_id": "os2e-p-acetaldehyde",
+    "original_section": "Check Your Learning: acetaldehyde initial rates",
+    "url": "https://openstax.org/books/chemistry-2e/pages/12-3-rate-laws",
+    "license": "CC BY 4.0",
+    "license_evidence": "https://creativecommons.org/licenses/by/4.0/",
+    "license_exception_note": "OpenStax content is CC BY 4.0 except where otherwise noted. Exclude third-party exam items, media and appendices.",
+    "attribution": "OpenStax, Chemistry 2e (2019), Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson et al., CC BY 4.0; Chinese questions adapted, answers independently recomputed.",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "changes": "Chinese adaptation of OpenStax authored learning check; solution independently recomputed; excludes images, third-party exam questions, and appendices."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "260ba1bf84bd9e0abcfce7ba9907770cbfdc6921759137781bf4994edda5befd",
+  "subject": "analytical",
+  "topic": "acid_base_titration",
+  "level": "undergraduate",
+  "question_type": "independently_recomputed_exercise",
+  "resource_type": "licensed_textbook_exercise_adaptation",
+  "question": "分析化学·酸碱滴定：取 50.0 mL 0.100 M HNO₃，用 0.200 M NaOH 滴定，加入 15.0 mL NaOH 后，在 25 ℃ 下（忽略活度修正）求溶液 pH。",
+  "answer": "pH≈1.512。原有 H⁺ 为 5.00 mmol，中和 3.00 mmol，余 2.00 mmol；总体积 65.0 mL，[H⁺]=0.03077 M。",
+  "explanation": "过量强酸浓度等于剩余酸的物质的量除以混合总体积，pH=−lg[H⁺]。",
+  "numeric_answer": 1.5118833609788744,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "publisher": "OpenStax",
+    "textbook": "Chemistry 2e",
+    "edition": "2e (2019)",
+    "source_item_id": "os2e-a-titration",
+    "original_section": "Check Your Learning: nitric acid/sodium hydroxide titration at 15 mL",
+    "url": "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations",
+    "license": "CC BY 4.0",
+    "license_evidence": "https://creativecommons.org/licenses/by/4.0/",
+    "license_exception_note": "OpenStax content is CC BY 4.0 except where otherwise noted. Exclude third-party exam items, media and appendices.",
+    "attribution": "OpenStax, Chemistry 2e (2019), Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson et al., CC BY 4.0; Chinese questions adapted, answers independently recomputed.",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "changes": "Chinese adaptation of OpenStax authored learning check; solution independently recomputed; excludes images, third-party exam questions, and appendices."
+  }
+}

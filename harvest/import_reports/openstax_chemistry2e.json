@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "source": "OpenStax Chemistry 2e (2019)",
+  "source_license": "CC BY 4.0 except where otherwise noted",
+  "selected_items": 8,
+  "by_subject": {
+    "inorganic": 2,
+    "organic": 0,
+    "analytical": 3,
+    "physical": 3
+  },
+  "initial_import_new_candidates": 8,
+  "initial_import_already_present": 0,
+  "independent_numeric_recomputation": true,
+  "third_party_items_copied": 0,
+  "image_copies": 0,
+  "publishable": false,
+  "quality_status": "awaiting_expert_review",
+  "note": "8 curated, Chinese-adapted exercises; no expert approval or cross-source semantic merge."
+}

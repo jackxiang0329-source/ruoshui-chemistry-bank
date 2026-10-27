@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "35d57d39313a7217e2121bf401b7089d5fdf0a6cbab997bbb4338feaa9236061",
+  "subject": "inorganic",
+  "topic": "lewis_acid_base",
+  "level": "undergraduate",
+  "question_type": "independently_recomputed_exercise",
+  "resource_type": "licensed_textbook_exercise_adaptation",
+  "question": "无机化学·路易斯酸碱：BF₃ 与 F⁻ 结合时，哪一种粒子是路易斯酸、哪一种是路易斯碱？写出所形成配离子的化学式。",
+  "answer": "BF₃ 为电子对受体（路易斯酸），F⁻ 为电子对给体（路易斯碱），生成 [BF₄]⁻。",
+  "explanation": "BF₃ 中的 B 缺电子，接受 F⁻ 提供的一对孤对电子，形成配位键。",
+  "numeric_answer": 1,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "publisher": "OpenStax",
+    "textbook": "Chemistry 2e",
+    "edition": "2e (2019)",
+    "source_item_id": "os2e-i-lewis",
+    "original_section": "BF3/F− Lewis acid-base coordination example",
+    "url": "https://openstax.org/books/chemistry-2e/pages/15-2-lewis-acids-and-bases",
+    "license": "CC BY 4.0",
+    "license_evidence": "https://creativecommons.org/licenses/by/4.0/",
+    "license_exception_note": "OpenStax content is CC BY 4.0 except where otherwise noted. Exclude third-party exam items, media and appendices.",
+    "attribution": "OpenStax, Chemistry 2e (2019), Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson et al., CC BY 4.0; Chinese questions adapted, answers independently recomputed.",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "changes": "Chinese adaptation of OpenStax authored learning check; solution independently recomputed; excludes images, third-party exam questions, and appendices."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "8a35a5aeb7138b7982d37d92c9f55c416db69921699822b780ba40ea6ffe1e2c",
+  "subject": "physical",
+  "topic": "electrochemistry",
+  "level": "undergraduate",
+  "question_type": "independently_recomputed_exercise",
+  "resource_type": "licensed_textbook_exercise_adaptation",
+  "question": "物理化学·电化学：25 ℃ 标准状态下 Cu(s)+2Ag⁺(aq)→Cu²⁺(aq)+2Ag(s)。给定 E°(Ag⁺/Ag)=+0.7996 V、E°(Cu²⁺/Cu)=+0.3400 V。计算该电池 E°cell，并判断正向反应的自发性。",
+  "answer": "E°cell=+0.4596 V，故标准状态下正向反应自发。",
+  "explanation": "阴极为 Ag⁺ 还原，阳极为 Cu 氧化；E°cell=E°cathode−E°anode。",
+  "numeric_answer": 0.45959999999999995,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "source": {
+    "publisher": "OpenStax",
+    "textbook": "Chemistry 2e",
+    "edition": "2e (2019)",
+    "source_item_id": "os2e-p-galvanic",
+    "original_section": "Example 17.4: standard copper/silver cell potential",
+    "url": "https://openstax.org/books/chemistry-2e/pages/17-3-electrode-and-cell-potentials",
+    "license": "CC BY 4.0",
+    "license_evidence": "https://creativecommons.org/licenses/by/4.0/",
+    "license_exception_note": "OpenStax content is CC BY 4.0 except where otherwise noted. Exclude third-party exam items, media and appendices.",
+    "attribution": "OpenStax, Chemistry 2e (2019), Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson et al., CC BY 4.0; Chinese questions adapted, answers independently recomputed.",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "changes": "Chinese adaptation of OpenStax authored learning check; solution independently recomputed; excludes images, third-party exam questions, and appendices."
+  }
+}
