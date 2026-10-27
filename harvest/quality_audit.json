@@ -1,29 +1,29 @@
 {
   "schema_version": 1,
-  "total_candidates": 1570,
-  "corpus_hash_sha256": "d82f0d097f1615e4a1a89e5dfb161ab63670d65a1308f07a48618e41e9fd7510",
+  "total_candidates": 1582,
+  "corpus_hash_sha256": "5badebb04636c5129685744b5f85d7de788d3e658f22dfa58814db1573591b1c",
   "by_subject": {
     "analytical": 129,
     "inorganic": 849,
-    "organic": 455,
+    "organic": 467,
     "physical": 137
   },
   "by_content_kind": {
-    "exercise_candidate": 1292,
+    "exercise_candidate": 1304,
     "study_card": 278
   },
   "by_quality_status": {
-    "awaiting_expert_review": 1570
+    "awaiting_expert_review": 1582
   },
   "by_publishable": {
-    "false": 1570
+    "false": 1582
   },
   "source_counts": {
     "ChemTrain/chemtrain-daily": 268,
     "ChemTrain/pg-learn": 22,
     "ChemTrain/photoredox-learn": 18,
     "ChemTrain/pka-learn": 20,
-    "ChemTrain/radical-learn": 26,
+    "ChemTrain/radical-learn": 38,
     "ChemTrain/reaction-learn": 278,
     "ChemTrain/reactivity-learn": 20,
     "ChemTrain/tmc-learn": 593,
@@ -71,6 +71,7 @@
     "organic:photoredox_catalytic_cycle": 18,
     "organic:protecting_group_deprotection": 63,
     "organic:qualitative_acidic_site": 20,
+    "organic:radical_partner_polarity_matching": 12,
     "organic:radical_polarity": 26,
     "organic:reagent_functions": 47,
     "organic:unspecified": 5,
