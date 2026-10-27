@@ -12,13 +12,13 @@
   "extracted_study_cards": 278,
   "excluded_text_or_duplicate_cards": 0,
   "excluded_reasons": [],
-  "current_run_new_candidates": 278,
-  "current_run_already_present": 0,
   "source_content_license": "CC BY 4.0",
   "code_license": "MIT",
   "image_svg_and_external_wikipedia_copies": 0,
   "candidate_quality_status": "awaiting_expert_review",
   "publishable": false,
   "semantic_duplicate_review_pending": true,
-  "note": "Study flashcards are not independent original exam problems and may be unsuitable for formal assessment; expert and semantic-duplicate reviews remain outstanding."
+  "note": "Study flashcards are not independent original exam problems and may be unsuitable for formal assessment; expert and semantic-duplicate reviews remain outstanding.",
+  "initial_import_new_candidates": 278,
+  "initial_import_already_present": 0
 }

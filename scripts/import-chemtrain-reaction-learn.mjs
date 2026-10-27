@@ -134,7 +134,7 @@ export async function run(){
   source_card_total:278,source_reactions:231,source_reagents:47,
   extracted_study_cards:rows.length,excluded_text_or_duplicate_cards:skipped.length,
   excluded_reasons:skipped,
-  current_run_new_candidates:added,current_run_already_present:present,
+  initial_import_new_candidates:added,initial_import_already_present:present,
   source_content_license:'CC BY 4.0',code_license:'MIT',
   image_svg_and_external_wikipedia_copies:0,
   candidate_quality_status:'awaiting_expert_review',publishable:false,

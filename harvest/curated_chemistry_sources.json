@@ -71,6 +71,42 @@
       "import_questions": false,
       "quality_note": "large size and answer ambiguity; inspect representative records before use",
       "next_action": "review dataset provenance, generative origin, quality and license chain"
+    },
+    {
+      "source": "ChemTrain/reaction-learn",
+      "url": "https://github.com/ChemTrain/reaction-learn",
+      "pin": "7563032ec79ed429336966fb42136d2815cd7e42",
+      "category": "organic",
+      "format": "embedded JSON study cards in a pinned HTML source",
+      "repository_license": "MIT code; CC BY 4.0 original authored card content",
+      "license_evidence": "https://github.com/ChemTrain/reaction-learn/blob/7563032ec79ed429336966fb42136d2815cd7e42/LICENSE-CONTENT.md",
+      "license_owner": "Quentin Bindschaedler (ChemTrain), 2026",
+      "rights_status": "source content explicitly licensed, excludes linked Wikipedia and logo",
+      "import_questions": true,
+      "quality_note": "278 text-only organic chemistry study flashcards (231 reactions +47 reagents). Not 278 independent exam problems; images omitted; semantic-duplicate and expert review pending.",
+      "next_action": "review and merge semantically overlapping concepts, translate answers and test chemical applicability before allowing exam publication"
+    },
+    {
+      "source": "jablonkagroup/ChemBench",
+      "url": "https://huggingface.co/datasets/jablonkagroup/ChemBench",
+      "category": "analytical organic physical inorganic",
+      "format": "chemistry benchmark questions",
+      "repository_license": "MIT dataset-card claim",
+      "rights_status": "includes questions attributed to external chemistry textbook question banks; per-item redistribution rights not verified",
+      "import_questions": false,
+      "quality_note": "dataset mixes authored and textbook-derived problems; automatically copying all entries risks third-party rights and contamination of evaluation set",
+      "next_action": "segregate author-original items with affirmative content-level reuse evidence; keep benchmark test sets excluded"
+    },
+    {
+      "source": "redugo/Chem-RLVR",
+      "url": "https://huggingface.co/datasets/redugo/Chem-RLVR",
+      "category": "organic",
+      "format": "12,000 reaction yield prediction/counterfactual QA records",
+      "repository_license": "CC BY-SA 4.0 dataset-card declaration",
+      "rights_status": "source states derivation from Open Reaction Database; license inheritance, provenance and SA obligations require item-level review",
+      "import_questions": false,
+      "quality_note": "research reaction-yield benchmark may not fit standard undergraduate question quality without unit checks, data splits and scientific verification",
+      "next_action": "review metadata/SOURCES.md and isolate demonstrably licensed independent exercise records"
     }
   ]
 }

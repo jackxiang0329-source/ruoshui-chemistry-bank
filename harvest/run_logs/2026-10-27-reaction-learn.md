@@ -20,3 +20,11 @@
 - 仓库流水线生成 `harvest/import_reports/chemtrain_reaction_learn.json`，记录实际采用、跳过、已存在及本轮新增数。
 - 题目文件位于 `data/candidates/`；仓库既有原题不覆盖。
 - 待完成：反应机理和试剂用法化学核对、中文翻译与 LaTeX 化、跨来源语义去重以及正式组卷分级。
+
+## 本轮实际 GitHub 验证结果
+- GitHub Actions 成功运行：https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/actions/runs/40439181157
+- 自动导入提交：https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/commit/373ef87e489c28ff91283ee89a1ea159e7f9ac70
+- 该提交的 GitHub changed-files 列表核验：**278 个新增** `data/candidates/*.json` + **1 个**新增的 `harvest/import_reports/chemtrain_reaction_learn.json`。
+- 本轮导入前候选文件 828 个；本轮后 1106 个；新增均为 **organic／open_ended_study_flashcard**。不是 278 道独立上游试卷原题；完成专家终审 0 道。
+- 结果报告记录的是**首次导入增量**；后续半小时任务的本次新增数以各自 Actions 日志为准（无增量时不再计入）。
+- 本轮来源目录（`harvest/source_candidates.json`）仍有 568 条元数据候选，不能等同于题目授权已通过的资源。
