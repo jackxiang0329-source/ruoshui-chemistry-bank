@@ -1,0 +1,20 @@
+name: Inspect licensed ChemTrain Daily embedded data
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/inspect-chemtrain-daily.yml"
+      - "scripts/inspect-chemtrain-daily.mjs"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node scripts/inspect-chemtrain-daily.mjs
