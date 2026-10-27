@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Nine fixed CHEM 3PA3 quantum-chemistry exercises linked to the CC0 (+ third-party exception)
+// Twenty-one fixed CHEM 3PA3 quantum-chemistry exercises linked to the CC0 (+ third-party exception)
 // author source. All remain unpublished pending item-rights and expert review.
 import {readFileSync,writeFileSync,existsSync,mkdirSync,appendFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -68,6 +68,64 @@ export const CASES=[
   issue:'student_problem_is_biconditional_but_key_one_way',
   question:'量子化学·算符本征态：判断“动量算符的每个本征函数必是动能算符的本征函数，反之也成立”是否正确。以一维自由粒子 p̂=−iℏ∂/∂x、T̂=p̂²/(2m) 给出证明或反例。',
   explanation:'双向结论为假，反之不成立：p̂φ=pφ 蕴含 T̂φ=p²φ/(2m)，但 cos(kx) 是 T̂ 的本征函数却不是 p̂ 的本征函数。原题保留双向说法，答案键只回答单向命题，必须标注版本差异。',
+  values:[]},
+ {topic:'photon_particle_evidence',question_cell:5,key_cell:5,
+  issue:'blackbody_quantization_is_not_direct_photon_detection',
+  question:'量子化学·光的粒子性：从光电效应、康普顿散射、电子晶体衍射和 Stern–Gerlach 实验中，选出直接体现光子粒子性的现象并说明为什么。',
+  explanation:'光电效应表明光子与电子有离散能量交换；康普顿散射揭示光子与电子发生能量及动量交换。电子衍射和 Stern–Gerlach 实验检验物质波与原子束量子化，不是直接光子证据。原参考答案包括黑体辐射，它主要是能量量子化的历史证据。',
+  values:[]},
+ {topic:'photon_frequency_500nm',question_cell:9,key_cell:9,issue:'source_answer_confirmed',
+  question:'量子化学·光的频率：真空中波长为 500 nm 的单色光，其频率 ν（Hz）是多少？取 c=299792458 m/s，注意纳米与米的换算。',
+  explanation:'频率 ν=c/λ；波长应写成 500×10⁻⁹ m，再代入真空光速计算，不能把 500 直接作为米。',
+  values:[C/(500e-9)]},
+ {topic:'photon_wavelength_frequency_scaling',question_cell:13,key_cell:13,
+  issue:'source_answer_confirmed',
+  question:'量子化学·光波长变化：在真空中若单色光波长增加为原来的两倍，其频率将增倍、保持不变还是减半？请证明。',
+  explanation:'因为 ν=c/λ，光速 c 在真空中保持不变，故波长变为两倍时频率变为原来的 1/2。',
+  values:[]},
+ {topic:'vacuum_light_speed_dispersion',question_cell:16,key_cell:16,
+  issue:'vacuum_assumption_added_to_remove_medium_ambiguity',
+  question:'量子化学·真空光速：在同一真空中传播的 400 nm 光与 800 nm 光，哪个传播得更快？理由是什么？',
+  explanation:'在真空中电磁波传播速度均为 c，与波长无关；频率则按 ν=c/λ 改变。不能无条件推广到存在色散的介质。',
+  values:[]},
+ {topic:'hene_single_photon_energy',question_cell:19,key_cell:19,issue:'source_answer_confirmed',
+  question:'量子化学·氦氖激光：已知真空中激光波长 632.8 nm，取 h=6.62607015×10⁻³⁴ J·s、c=299792458 m/s。求一个光子的能量（J）。',
+  explanation:'单光子能量 E=hc/λ；将 λ=632.8×10⁻⁹ m 代入，得到的是单个光子而不是一摩尔光子的能量。',
+  values:[H*C/(632.8e-9)]},
+ {topic:'photon_energy_doubling_relations',question_cell:22,key_cell:22,
+  issue:'relativistic_mass_terminology_requires_modern_clarification',
+  question:'量子化学·光子能量比例：对于真空光子 E=hν=pc=hc/λ，分别说明频率翻倍、动量翻倍和波长翻倍会怎样改变能量。',
+  explanation:'频率翻倍或动量翻倍使能量翻倍；波长翻倍使能量减半。光速 c 是真空常数，不可独立通过“将 c 翻倍”调整。原题采用“相对论质量”说法，重新表述时优先使用能量动量关系。',
+  values:[]},
+ {topic:'davisson_germer_electron_waves',question_cell:31,key_cell:31,
+  issue:'source_answer_confirmed',
+  question:'量子化学·戴维孙—革末实验：该实验是否为电子波动性的直接证据？解释电子束遇到晶体后出现衍射峰的原因。',
+  explanation:'是。电子具有德布罗意波长 λ=h/p，晶体周期排列使电子波发生相干散射，在特定方向出现衍射增强；现象不能仅靠经典粒子轨道描述。',
+  values:[]},
+ {topic:'electron_diffraction_bragg_scattering',question_cell:35,key_cell:35,
+  issue:'source_answer_confirmed',
+  question:'量子化学·电子衍射：电子束照射金属晶体时，发现散射强度随角度出现峰值。是晶格衍射还是单纯原子光谱吸收？解释理论依据。',
+  explanation:'主要是电子物质波被周期性晶格衍射，可采用布拉格型条件与德布罗意波长说明其散射峰；并非电子完全被吸收而产生类似光谱的离散能级跃迁。',
+  values:[]},
+ {topic:'electron_waves_vs_atomic_lines',question_cell:42,key_cell:46,
+  issue:'key_accepts_atomic_lines_as_indirect_evidence',
+  question:'量子化学·物质波证据：电子束被晶体衍射和氢原子的离散光谱中，哪一现象更直接证明电子具有德布罗意波长？说明区别。',
+  explanation:'电子晶体衍射直接显示电子的波动干涉；原子离散谱线主要证明束缚态能级量子化。原答案对后者也保留宽泛解释，应区分直接和间接证据。',
+  values:[]},
+ {topic:'photon_particles_vs_matter_waves',question_cell:45,key_cell:49,
+  issue:'blackbody_quantization_evidence_requires_qualification',
+  question:'量子化学·波粒二象性：比较光电效应、康普顿散射和电子晶体衍射，它们分别揭示的是光还是电子的哪种性质？',
+  explanation:'光电效应和康普顿散射说明光子能量与动量的离散交换；电子晶体衍射显示电子的波动性。原选择题还包含黑体辐射，它是能量量子化的历史证据，不能不加限定地当作单光子检测。',
+  values:[]},
+ {topic:'baseball_debroglie_wavelength',question_cell:53,key_cell:60,
+  issue:'source_answer_confirmed',
+  question:'量子化学·宏观德布罗意波：质量 145 g 的棒球以 45 m/s 运动。取 h=6.62607015×10⁻³⁴ J·s，求球的德布罗意波长（m），解释量级。',
+  explanation:'λ=h/(mv)，先换算 m=0.145 kg，因此 λ=h/(0.145×45)≈10⁻³⁴ m，远小于通常晶格或实验障碍物尺度。',
+  values:[H/(0.145*45)]},
+ {topic:'wavefunction_probability_density_nonnegative',question_cell:63,key_cell:70,
+  issue:'student_and_answer_notebook_questions_are_opposite_wording',
+  question:'量子化学·玻恩规则：任意复值波函数 Ψ(x,t) 的位置概率密度 |Ψ|² 可以为负吗？写出数学证明并指出何时为零。',
+  explanation:'不能。令 Ψ=a+bi，有 Ψ*Ψ=a²+b²≥0，且可在 a=b=0 时为零。学生版问“绝不会为负”应回答真；答案键反问“能否为负”应回答假，二者结论一致但题目措辞反向。',
   values:[]}
 ];
 export function verifyPhysics(item,vals){
@@ -81,6 +139,12 @@ export function verifyPhysics(item,vals){
    if(!close(NA*H*C/vals[0],1.29e11))throw Error('Gamma wavelength inverse mismatch');break;
   case 'hydrogen_ground_state_first_absorption':
    if(!close(vals[0]/(C*1.0974e7),0.75))throw Error('Hydrogen Rydberg inverse mismatch');break;
+  case 'photon_frequency_500nm':
+   if(!close(vals[0]*500e-9,C))throw Error('Frequency wavelength mismatch');break;
+  case 'hene_single_photon_energy':
+   if(!close(vals[0]*632.8e-9/H,C))throw Error('HeNe single photon energy mismatch');break;
+  case 'baseball_debroglie_wavelength':
+   if(!close(vals[0]*.145*45,H))throw Error('Ball De Broglie wavelength mismatch');break;
   case 'photon_angular_wavenumber':
    if(!close(vals[0]/HBAR,1e7)||!close(vals[1]/vals[0],C))
     throw Error('Angular wavenumber inverse mismatch');break;
@@ -115,7 +179,7 @@ export function generate(){
     source_fixed_2021_exercise:true,question_rights_await_human_confirmation:true,
     changes:'Source-linked Chinese adaptation. Distinct original fixed exercise, not numeric variant. Errors and mismatches disclosed.'}});
  }
- if(out.length!==9)throw Error('Expected exactly nine source-linked exercises');
+ if(out.length!==21)throw Error('Expected exactly 21 fixed source-linked exercises');
  return out;
 }
 export function run(){
@@ -133,15 +197,15 @@ export function run(){
  }
  const reportFile=join(ROOT,'harvest/import_reports/introqchem_2021_source_exercises.json');
  const report={schema_version:1,repository:OWN,commit:COMMIT,
-  fixed_course_exercises:9,newly_added:added,already_present:9-added,
+  fixed_course_exercises:rows.length,newly_added:added,already_present:rows.length-added,
   source_key_issue_counts:Object.fromEntries(CASES.map(x=>[x.topic,x.issue])),
   source_license:'CC0-1.0',third_party_exception_retained:true,
   item_rights_confirmed:0,science_expert_approved:0,publication_approved:0,
-  note:'Nine fixed course exercise adaptations with pinned question and answer notebooks, source corrections and independent numeric crosschecks. Item rights and expert approval remain pending.'};
+  note:'21 fixed source-linked university exercises; student and teacher keys pinned. Ambiguous and inconsistent original answers are flagged. Item-level rights and human expert approval remain pending.'};
  mkdirSync(dirname(reportFile),{recursive:true});
  const serialized=JSON.stringify(report,null,2)+'\n';
  if(!existsSync(reportFile)||readFileSync(reportFile,'utf8')!==serialized)writeFileSync(reportFile,serialized);
- const msg='CHEM 3PA3 quantum exercise adaptations: new='+added+' existing='+(9-added)+' approved=0';
+ const msg='CHEM 3PA3 fixed exercises: new='+added+' existing='+(rows.length-added)+' total='+rows.length+' approved=0';
  console.log(msg);
  if(process.env.GITHUB_STEP_SUMMARY)appendFileSync(process.env.GITHUB_STEP_SUMMARY,msg+'\n');
  return {added};

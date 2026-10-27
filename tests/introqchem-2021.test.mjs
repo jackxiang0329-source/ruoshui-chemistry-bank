@@ -8,10 +8,10 @@ test('CC0 parent source with explicit third-party caveat and immutable exact blo
  assert.throws(()=>validateSource({...pinned,item_level_rights_cleared:true}),/changed/);
  assert.throws(()=>validateSource({...pinned,key_notebook_blob_sha:'0'.repeat(40)}),/changed/);
 });
-test('nine fixed exercises: no parameter variants, no rights or publication approval',()=>{
- const qs=generate();assert.equal(qs.length,9);
- assert.equal(new Set(qs.map(q=>q.topic)).size,9);
- assert.equal(new Set(qs.map(q=>q.id)).size,9);
+test('21 fixed real course exercises, zero item rights or publication approval',()=>{
+ const qs=generate();assert.equal(qs.length,21);
+ assert.equal(new Set(qs.map(q=>q.topic)).size,21);
+ assert.equal(new Set(qs.map(q=>q.id)).size,21);
  for(const q of qs){
   assert.equal(q.id,questionId(q.question));
   assert.equal(q.quality_status,'awaiting_expert_review');
@@ -34,4 +34,24 @@ test('upstream errors remain clearly flagged rather than copied into answer key'
  assert.ok(byTopic('momentum_vs_kinetic_operator_eigenstates').answer.includes('反之'));
  assert.ok(byTopic('photon_radiation_pressure_force').answer.includes('单位 N'));
  assert.equal(byTopic('hamiltonian_total_energy').source_key_issue,'source_answer_confirmed');
+});
+
+test('each fixed exercise maps to unique exact cell indices in student and answer notebooks',()=>{
+ const rows=generate();
+ assert.equal(new Set(rows.map(x=>x.source_question_cell_index)).size,21);
+ assert.equal(new Set(rows.map(x=>x.source_key_cell_index)).size,21);
+ const p=rows.find(x=>x.topic==='wavefunction_probability_density_nonnegative');
+ assert.equal(p.source_question_cell_index,63);
+ assert.equal(p.source_key_cell_index,70);
+ assert.equal(p.scientifically_machine_checked,false);
+ assert.equal(p.conceptual_answer_requires_expert_review,true);
+});
+test('additional authored numerical source cases pass inverse physical checks',()=>{
+ const q=generate();
+ for(const topic of ['photon_frequency_500nm','hene_single_photon_energy','baseball_debroglie_wavelength']){
+  const x=q.find(r=>r.topic===topic),item=CASES.find(r=>r.topic===topic);
+  assert.ok(x&&x.numeric_answers.length===1&&x.scientifically_machine_checked);
+  assert.equal(verifyPhysics(item,x.numeric_answers),true);
+  assert.throws(()=>verifyPhysics(item,x.numeric_answers.map(v=>v*1.1)),/mismatch/);
+ }
 });
