@@ -42,3 +42,7 @@
 - OER 台账测试触发的 [工作流 #40465737562](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/actions/runs/40465737562) 在本条记录撰写时仍为 **pending**；不能称该测试已经通过。
 - 最新实读来源元数据：GitHub 来源目录 **757** 条、HF/Zenodo 外部目录 **233** 条；许可证文件预筛选 **124** 个仓库、自动确认题文授权 **0**。此三项均为元数据与许可预筛，不是新增习题。
 - 外部附件读取尝试：Manifold “Survey of Chemistry I Solved Problems Set” 的原始 zip 下载返回 HTTP 404；Organic Chemistry I 的附件由网页工具返回不支持的 DOCX Content-Type。**这两个失败均未导致题目误导入**，需通过可重复下载并核验文件哈希的方式继续处理。
+
+### 完整工作流复验补记
+- 2026-10-27：上述 OER 台账工作流 [#40465737562](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/actions/runs/40465737562) 最终 **completed / success**；“Verify official OER work-level rights registry (no question approval)”、通用授权导入、质量审计步骤均通过。先前 pending 仅是当时的状态，现已更新。
+- 该运行并未批准六项 OER 的任何单题复制，新增正式候选依旧 **0**。
