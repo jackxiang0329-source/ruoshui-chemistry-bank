@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-27",
+  "purpose": "Human-readable source rights and undergraduate relevance preflight; NOT an import whitelist",
+  "baseline": {
+    "candidate_count": 1558,
+    "by_subject": {
+      "inorganic": 849,
+      "organic": 455,
+      "analytical": 129,
+      "physical": 125
+    },
+    "exact_duplicate_question_groups": 0,
+    "same_template_families": 50,
+    "publishable_candidates": 0,
+    "baseline_file": "harvest/quality_audit.json"
+  },
+  "sources": [
+    {
+      "repository": "kelleyblackmore/quizport-library",
+      "commit": "7f0d0738310d50a9b8eb22bde5482007b60aaa52",
+      "subject_screen": [
+        "inorganic",
+        "general_chemistry"
+      ],
+      "license": "MIT",
+      "license_scope": "README explicitly says MIT license applies to quizzes; license file covers repository software and associated documentation",
+      "license_evidence": "https://github.com/kelleyblackmore/quizport-library/blob/7f0d0738310d50a9b8eb22bde5482007b60aaa52/README.md",
+      "license_blob_sha": "c2e04004fa2373f77d3c8933b490e16850b09907",
+      "question_path": "quizzes/categories/science/chemistry-basics.json",
+      "question_blob_sha": "13fc0df476013de6c010c3434f58030cd5cdceaf",
+      "observed_question_count": 10,
+      "has_answer_and_explanation": true,
+      "level": "easy elementary chemistry, not suitable for a university-level four-subject problem bank",
+      "decision": "reject_for_level",
+      "import_eligible": false,
+      "approved_question_count": 0,
+      "imported_question_count": 0,
+      "quality_note": "Atomic symbols, basic atomic numbers and water formula; at least one pH explanation is overly simplified. Do not confuse MIT rights with undergraduate relevance."
+    },
+    {
+      "repository": "IUPAC/Dissociation-Constants",
+      "commit": "a1e958d264edf35ddf548ed594684d60a73b8f08",
+      "subject_screen": [
+        "analytical",
+        "physical"
+      ],
+      "license": "CC-BY-NC-4.0",
+      "license_scope": "Dataset README explicitly restricts reuse to non-commercial terms with IUPAC attribution",
+      "license_evidence": "https://github.com/IUPAC/Dissociation-Constants/blob/a1e958d264edf35ddf548ed594684d60a73b8f08/README.md",
+      "readme_blob_sha": "ebb63663b172c192945c01f637f004e45781af86",
+      "content_kind": "digitized pKa reference data, not solved undergraduate exercises",
+      "decision": "reject_for_question_import_noncommercial_data_not_exercises",
+      "import_eligible": false,
+      "approved_question_count": 0,
+      "imported_question_count": 0,
+      "quality_note": "Potential reference for independently authored conceptual questions only after evaluating license compatibility; no data or source text copied."
+    },
+    {
+      "repository": "xavierprat/Physical-Chemistry-with-Python-Book",
+      "commit": "1b48c2dc0f2ed9deb090f50b4f9355f9e6de8048",
+      "subject_screen": [
+        "physical"
+      ],
+      "license": "UNVERIFIED",
+      "license_scope": "No repository-root LICENSE found in inspected recursive Git tree; vendor JavaScript license files do not license educational content",
+      "source_evidence": "https://github.com/xavierprat/Physical-Chemistry-with-Python-Book/tree/1b48c2dc0f2ed9deb090f50b4f9355f9e6de8048",
+      "content_kind": "Sphinx-built physical chemistry teaching website; exercise/answer provenance not reviewed",
+      "decision": "hold_rights_and_answer_review",
+      "import_eligible": false,
+      "approved_question_count": 0,
+      "imported_question_count": 0,
+      "quality_note": "Do not infer an open educational content license from a public GitHub repository or bundled third-party asset licenses."
+    },
+    {
+      "repository": "pranav11722/ChemQuiz-Pro-",
+      "commit": "50172e85bd95c1d33db0a2ed699429028a2977dd",
+      "subject_screen": [
+        "physical",
+        "chemical_engineering"
+      ],
+      "license": "MIT",
+      "license_scope": "README explicitly grants code reuse, not clearly independent question-text reuse",
+      "license_evidence": "https://github.com/pranav11722/ChemQuiz-Pro-/blob/50172e85bd95c1d33db0a2ed699429028a2977dd/README.md",
+      "question_blob_sha": "48399bed7b8123fecbfdd05109506a808a6728ee",
+      "content_kind": "Three demo quiz items; mostly chemical engineering",
+      "decision": "already_reviewed_no_import",
+      "import_eligible": false,
+      "approved_question_count": 0,
+      "imported_question_count": 0,
+      "quality_note": "Previously screened in 2026-10-27-source-rights-triage-followup.md; no re-import."
+    }
+  ],
+  "totals": {
+    "reviewed_source_records": 4,
+    "source_records_previously_reviewed": 1,
+    "licensed_eligible_undergraduate_question_sets": 0,
+    "imported_questions": 0,
+    "source_approval_changes": 0,
+    "duplicate_imports": 0
+  },
+  "safeguards": {
+    "all_candidate_publishable_false": true,
+    "content_license_not_equivalent_to_code_license": true,
+    "source_metadata_not_equivalent_to_licensed_questions": true
+  },
+  "unresolved": [
+    "Find author-origin and solutions for higher-level CC BY/CC0 analytical/physical exercises.",
+    "Review 50 same-template families and cross-language semantic duplicates.",
+    "Verify licenses and original rights at individual-file/individual-question granularity before import."
+  ]
+}
