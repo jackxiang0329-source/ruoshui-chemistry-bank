@@ -257,6 +257,36 @@
       "imported_candidate_count": 268,
       "quality_note": "133 coordination geometry + 47 ligand electrons + 47 L/X ligand class + 41 protecting group deprotection text MCQs; all unpublished and awaiting expert review.",
       "next_action": "Expert review geometry and deprotection selectivity, semantic cross-source dedup, copyright attribution and correct options."
+    },
+    {
+      "source": "nvidia/Nemotron-Science-v1",
+      "url": "https://huggingface.co/datasets/nvidia/Nemotron-Science-v1",
+      "pin": "82e1af468197076b4f0f392c239274eac032adc7",
+      "category": "synthetic chemistry RQA requiring individual classification",
+      "format": "52,179 LLM-generated chemistry question-answer pairs; staged in compact unpublished JSONL after schema/duplicate/license screening",
+      "repository_license": "CC BY 4.0",
+      "license_evidence": "https://huggingface.co/datasets/nvidia/Nemotron-Science-v1",
+      "license_owner": "NVIDIA Corporation",
+      "rights_status": "Dataset card and each staged row confirm CC BY 4.0; text-only research archive, no AI answer treated as scientifically verified",
+      "import_questions": false,
+      "staged_unverified_research_qa_count": 1922,
+      "imported_candidate_count": 0,
+      "audit": "harvest/run_logs/2026-10-27-nvidia-research-rqa-intake.md",
+      "quality_note": "Research QA only; machine-generated answer risk, per-question scientific correctness and semantic uniqueness not established; publishable=false and exclude_from_official_bank=true.",
+      "next_action": "Expert-review pending synthetic QAs before moving any scientifically verified entries into the four chemistry subject candidate bank; stop at 5,000 archive cap."
+    },
+    {
+      "source": "Bocklitz-Lab/ChemQuests",
+      "url": "https://huggingface.co/datasets/Bocklitz-Lab/ChemQuests",
+      "category": "chemistry literature QA; 17 subfields",
+      "format": "952 question-answer pairs derived from 151 ChemRxiv papers, with document-specific evidence spans",
+      "repository_license": "Dataset card claims CC BY 4.0",
+      "license_evidence": "https://huggingface.co/datasets/Bocklitz-Lab/ChemQuests",
+      "rights_status": "BLOCKED: gated dataset requires login and terms acceptance; individual ChemRxiv source-paper licenses unverified; a September 2026 correction fixed prior evidence-snippet misalignment",
+      "import_questions": false,
+      "imported_candidate_count": 0,
+      "quality_note": "This is a scientific literature QA research resource, not a vetted undergraduate problem bank; publisher dataset license alone does not resolve underlying source-text or full-paper rights.",
+      "next_action": "Do not bypass gated conditions. If future explicitly authorized access is available, verify correction revision, per-paper reuse rights, original source citation and evidence mapping before any content import."
     }
   ]
 }
