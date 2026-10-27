@@ -31,6 +31,11 @@ on:
       - "scripts/import-chemtrain-reactivity.mjs"
       - "tests/chemtrain-reactivity.test.mjs"
       - "scripts/import-qcedu-introqm.mjs"
+      - "scripts/import-openstax-chemistry2e.mjs"
+      - "harvest/pinned_openstax_chemistry2e.json"
+      - "tests/openstax-chemistry2e.test.mjs"
+      - "scripts/audit-candidate-quality.mjs"
+      - "tests/candidate-quality-audit.test.mjs"
       - "scripts/import-chemtrain-reaction-learn.mjs"
       - "tests/chemtrain-reaction-learn.test.mjs"
       - "tests/qcedu-introqm.test.mjs"
@@ -94,6 +99,10 @@ jobs:
         run: node --test tests/qcedu-introqm.test.mjs
       - name: Verify pinned Reaction Learn licensed-card importer
         run: node --test tests/chemtrain-reaction-learn.test.mjs
+      - name: Verify CC BY 4.0 OpenStax exercise importer
+        run: node --test tests/openstax-chemistry2e.test.mjs
+      - name: Verify candidate review buckets and semantic overlap audit
+        run: node --test tests/candidate-quality-audit.test.mjs
       - name: Search GitHub chemistry repositories
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -124,9 +133,13 @@ jobs:
         run: node scripts/import-qcedu-introqm.mjs
       - name: Import pinned CC BY 4.0 Reaction Learn text study cards
         run: node scripts/import-chemtrain-reaction-learn.mjs
+      - name: Import eight pinned OpenStax exercise adaptations
+        run: node scripts/import-openstax-chemistry2e.mjs
+      - name: Audit candidate review buckets and potential duplicates
+        run: node scripts/audit-candidate-quality.mjs
       - name: Commit only real additions or changes
         run: |
-          git add -- harvest/source_candidates.json
+          git add -- harvest/source_candidates.json harvest/quality_audit.json
           if [ -d harvest/import_reports ]; then
             git add -- harvest/import_reports
           fi
