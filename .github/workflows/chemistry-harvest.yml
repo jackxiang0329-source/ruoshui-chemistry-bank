@@ -37,6 +37,8 @@ on:
       - "tests/chemtrain-reactivity.test.mjs"
       - "scripts/import-qcedu-introqm.mjs"
       - "scripts/audit-candidate-quality.mjs"
+      - "scripts/audit-mcq-integrity.mjs"
+      - "tests/mcq-integrity-audit.test.mjs"
       - "scripts/normalize-unpublished-candidates.mjs"
       - "tests/normalize-unpublished-candidates.test.mjs"
       - "tests/muzapro-existing-coverage.test.mjs"
@@ -121,6 +123,8 @@ jobs:
         run: node --test tests/muzapro-existing-coverage.test.mjs
       - name: Verify candidate review buckets and semantic overlap audit
         run: node --test tests/candidate-quality-audit.test.mjs
+      - name: Verify MCQ answer key, provenance and publication safeguards
+        run: node --test tests/mcq-integrity-audit.test.mjs
       - name: Verify fail-closed publication flag migration
         run: node --test tests/normalize-unpublished-candidates.test.mjs
       - name: Verify pinned MIT analytical chemistry exercise specifications
@@ -165,9 +169,11 @@ jobs:
         run: node scripts/normalize-unpublished-candidates.mjs
       - name: Audit candidate review buckets and potential duplicates
         run: node scripts/audit-candidate-quality.mjs
+      - name: Audit MCQ answer key and duplicate upstream source indices
+        run: node scripts/audit-mcq-integrity.mjs
       - name: Commit only real additions or changes
         run: |
-          git add -- harvest/source_candidates.json harvest/quality_audit.json harvest/source_review_queue.json
+          git add -- harvest/source_candidates.json harvest/quality_audit.json harvest/mcq_integrity_audit.json harvest/source_review_queue.json
           if [ -f harvest/external_source_catalog.json ]; then
             git add -- harvest/external_source_catalog.json
           fi
