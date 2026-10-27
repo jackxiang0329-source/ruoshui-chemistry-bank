@@ -16,4 +16,19 @@ const output={sha,bytes:Buffer.byteLength(html),lines:html.split('\n').length,
   while((m=re.exec(html))&&out.length<32)out.push({at:m.index,context:html.slice(Math.max(0,m.index-100),m.index+190).replace(/\s+/g,' ').slice(0,275)});
   return {pattern:i,hits:out};
  })};
-console.log(JSON.stringify(output,null,2));
+
+const match=html.match(/<script>window\.RXN_DATA\s*=\s*(\{[\s\S]*?\});<\/script>/);
+if(!match)throw Error('Pinned JSON data structure not found');
+const data=JSON.parse(match[1]);
+const sets=data.sets.map(s=>({id:s.id,name:s.name,count:s.cards.length,card_keys:Object.keys(s.cards[0]||{})}));
+const examples=data.sets.flatMap(s=>s.cards.slice(0,2).map(c=>{
+ const x={set:s.id};
+ for(const [key,value] of Object.entries(c)){
+  if(Array.isArray(value)) x[key]={type:'array',length:value.length,preview:value.slice(0,2).map(v=>typeof v==='object'?Object.fromEntries(Object.entries(v).map(([k,z])=>[k,String(z).slice(0,120)])):String(v).slice(0,120))};
+  else if(typeof value==='object'&&value!==null)x[key]={type:'object',keys:Object.keys(value),preview:JSON.stringify(value).slice(0,220)};
+  else x[key]=String(value).slice(0,220);
+ }
+ return x;
+}));
+console.log(JSON.stringify({data:{set_count:sets.length,total_cards:data.sets.reduce((n,s)=>n+s.cards.length,0),mols:data.mols?.length,sets,examples:examples.slice(0,10)}},null,2));
+
