@@ -27,7 +27,7 @@
     "spectroscopy chemistry problem sets"
   ],
   "hf_limit": 100,
-  "zenodo_limit": 30,
+  "zenodo_limit": 25,
   "max_parallel": 3,
   "request_timeout_ms": 12000,
   "sleep_ms": 450,

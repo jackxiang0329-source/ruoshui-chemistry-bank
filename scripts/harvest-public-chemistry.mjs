@@ -89,7 +89,8 @@ export async function run(fetchJSON=getJSON){
  const config=JSON.parse(readFileSync(CONFIG,'utf8'));
  if(config.schema_version!==1||!Array.isArray(config.hf_terms)||!Array.isArray(config.zenodo_terms)||
   config.max_parallel<1||config.max_parallel>4||config.max_records<500||
-  config.request_timeout_ms<3000||config.request_timeout_ms>60000)throw Error('Unsafe external discovery config');
+  config.request_timeout_ms<3000||config.request_timeout_ms>60000||
+  config.zenodo_limit>25||config.zenodo_limit<1)throw Error('Unsafe external discovery config');
  const catalog=loadCatalog(),prior=catalog.size;
  const queue=[...config.hf_terms.map(term=>({platform:'huggingface',term})),
  ...config.zenodo_terms.map(term=>({platform:'zenodo',term}))];
