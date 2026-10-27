@@ -26,3 +26,21 @@ for(let k=0;k<regexes.length;k++){
 }
 const tags=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/gi)];
 console.log('SUMMARY '+JSON.stringify({sha,bytes:bytes.length,script_tags:tags.length,script_lengths:tags.map(x=>x[1].length).slice(0,20),prefix:html.slice(0,450).replace(/\s+/g,' ')}));
+
+
+const m=html.match(/<script>window\.CTD_DATA\s*=\s*(\{[\s\S]*?\});<\/script>/);
+if(!m)throw Error('Pinned structured CTD_DATA JSON not found');
+const data=JSON.parse(m[1]);
+const bank=data.bank;
+if(!Array.isArray(bank))throw Error('Missing data.bank');
+const stats={};
+for(const q of bank){
+ const key=String(q.s)+'/'+String(q.k);
+ const entry=stats[key]||(stats[key]={count:0,with_svg_or_mol:0,examples:[]});
+ entry.count++;
+ if(Object.keys(q).some(z=>z==='m'||z==='mol'||z==='svg'||z==='structure'))entry.with_svg_or_mol++;
+ if(entry.examples.length<2)entry.examples.push(JSON.stringify(q).slice(0,800));
+}
+console.log('DATA '+JSON.stringify({keys:Object.keys(data),apps:Object.keys(data.apps||{}),
+ bankCount:bank.length,mols:data.mols?.length,firstBankKeys:Object.keys(bank[0]||{}),
+ groups:stats}).slice(0,42000));
