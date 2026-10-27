@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "release_state": "no_approved_items",
-  "total_candidates": 1694,
+  "total_candidates": 1703,
   "approved_count": 0,
-  "excluded_candidate_count": 1694,
+  "excluded_candidate_count": 1703,
   "policy": "Only explicit expert-approved, hash-pinned, source-rights-verified exercises may appear here. No candidate or study card is released merely because it exists or passes automated tests.",
   "approval_identity_warning": "Attestations are manual registry fields, not cryptographic identity verification. Repository permissions and a separate human approval process remain essential.",
   "items": []

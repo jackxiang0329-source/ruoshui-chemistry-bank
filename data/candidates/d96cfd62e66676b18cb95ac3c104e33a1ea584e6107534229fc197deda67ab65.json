@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "d96cfd62e66676b18cb95ac3c104e33a1ea584e6107534229fc197deda67ab65",
+  "subject": "physical",
+  "topic": "complex_conjugate_tdse",
+  "level": "undergraduate",
+  "difficulty": "introductory_to_intermediate",
+  "question_type": "source_linked_quantum_course_exercise",
+  "resource_type": "translated_fixed_course_exercise_not_parametric",
+  "question": "量子化学·波函数共轭方程：实数势 V(x,t) 下，已知 iℏ∂Ψ/∂t=−(ℏ²/2m)∂²Ψ/∂x²+VΨ。写出 Ψ* 满足的时间依赖方程。",
+  "answer": "对方程逐项取复共轭，利用 i*=−i、V*=V，得 −iℏ∂Ψ*/∂t=−(ℏ²/2m)∂²Ψ*/∂x²+VΨ*。原答案键动能算符系数缺少 ℏ 的平方。",
+  "explanation": "对方程逐项取复共轭，利用 i*=−i、V*=V，得 −iℏ∂Ψ*/∂t=−(ℏ²/2m)∂²Ψ*/∂x²+VΨ*。原答案键动能算符系数缺少 ℏ 的平方。",
+  "numeric_answers": [],
+  "source_key_issue": "reference_answer_missing_hbar_squared",
+  "source_question_cell_index": 57,
+  "source_key_cell_index": 64,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "scientifically_machine_checked": false,
+  "conceptual_answer_requires_expert_review": true,
+  "source": {
+    "repository": "PaulWAyers/IntroQChemProblems",
+    "commit": "0491272e0b8e71059e601537b196181ab6b367cd",
+    "file": "ipynb/IntroQM2021.ipynb",
+    "key_notebook": "ipynb/IntroQMkey.ipynb",
+    "license": "CC0-1.0",
+    "content_rights_verified": false,
+    "item_level_rights_review_pending": true,
+    "license_evidence": {
+      "license": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/LICENSE",
+      "readme": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/README.md",
+      "exception": "Third-party content retains third-party rights; no human item-level determination yet."
+    },
+    "source_git_blobs": {
+      "notebook": "1f21cc7c7850e29d265e8e6c619e52c397fbad8b",
+      "key": "8dd5ad17f6ee0659c599e17826d776c8aeb47d79",
+      "license": "657f1ed2aefefde5d2aa65b66bc3a85f46ceeb3b",
+      "readme": "e3b12b3b510392bf42ddd3c6dec476fc483e8a45"
+    },
+    "url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+    "attribution": "CHEM 3PA3 course by Paul Ayers, McMaster University; adapted and corrected Chinese explanations.",
+    "source_fixed_2021_exercise": true,
+    "question_rights_await_human_confirmation": true,
+    "changes": "Source-linked Chinese adaptation. Distinct original fixed exercise, not numeric variant. Errors and mismatches disclosed."
+  }
+}

@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "total_candidates": 1694,
-  "corpus_hash_sha256": "a613101d3011d570fbc2efffa613b080d8d118679c5bfffcbf1b0bee0703f206",
+  "total_candidates": 1703,
+  "corpus_hash_sha256": "e0e3a4ac78c4dfd06852a5018cf8a1338ed7f28971a127a9757443c979bc0940",
   "by_subject": {
     "analytical": 193,
     "inorganic": 849,
     "organic": 467,
-    "physical": 185
+    "physical": 194
   },
   "by_content_kind": {
-    "exercise_candidate": 1416,
+    "exercise_candidate": 1425,
     "study_card": 278
   },
   "by_quality_status": {
-    "awaiting_expert_review": 1694
+    "awaiting_expert_review": 1703
   },
   "by_publishable": {
-    "false": 1694
+    "false": 1703
   },
   "source_counts": {
     "ChemTrain/chemtrain-daily": 268,
@@ -29,6 +29,7 @@
     "ChemTrain/tmc-learn": 593,
     "MuzaPro/Organic-Chemistry-Quiz-JS": 5,
     "PWO-CHINA/Chemistry-Calculator-Toolkit": 8,
+    "PaulWAyers/IntroQChemProblems": 9,
     "QC-Edu/IntroQM": 3,
     "arya51-ai/parametric-question-engine": 30,
     "bem130/chemquiz": 67,
@@ -88,6 +89,9 @@
     "physical:chemical_equilibrium": 6,
     "physical:chemical_kinetics": 12,
     "physical:chemical_thermodynamics": 6,
+    "physical:complex_conjugate_tdse": 1,
+    "physical:complex_conjugation_nonnegative_norm": 1,
+    "physical:complex_exponential_wavefunction": 1,
     "physical:debye_huckel_mean_activity_coefficient": 6,
     "physical:dilute_solution_freezing_point": 12,
     "physical:dilute_solution_osmotic_pressure": 12,
@@ -101,14 +105,20 @@
     "physical:electrochemical_impedance_series_rc": 1,
     "physical:equilibrium_constant": 6,
     "physical:eyring_activation_free_energy": 6,
+    "physical:gamma_radiation_molar_energy": 1,
+    "physical:hamiltonian_total_energy": 1,
     "physical:harmonic_oscillator_vibrational_spacing": 6,
+    "physical:hydrogen_ground_state_first_absorption": 1,
     "physical:hypothetical_isomer_equilibrium_fraction": 4,
     "physical:ideal_binary_vle_raoult": 6,
     "physical:isomer_computation_time_overhead": 4,
     "physical:isothermal_ideal_gas_entropy": 6,
     "physical:langmuir_surface_coverage": 6,
     "physical:molecular_electronic_transition_photon": 6,
+    "physical:momentum_vs_kinetic_operator_eigenstates": 1,
     "physical:nernst_equation": 12,
+    "physical:photon_angular_wavenumber": 1,
+    "physical:photon_radiation_pressure_force": 1,
     "physical:quantum_chemistry": 3,
     "physical:quantum_particle_in_box": 12,
     "physical:relative_ez_free_energy": 4,

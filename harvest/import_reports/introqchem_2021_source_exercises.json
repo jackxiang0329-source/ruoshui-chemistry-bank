@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "repository": "PaulWAyers/IntroQChemProblems",
+  "commit": "0491272e0b8e71059e601537b196181ab6b367cd",
+  "fixed_course_exercises": 9,
+  "newly_added": 9,
+  "already_present": 0,
+  "source_key_issue_counts": {
+    "photon_radiation_pressure_force": "key_confuses_force_unit_with_momentum_unit",
+    "gamma_radiation_molar_energy": "key_has_inconsistent_python_variable",
+    "hydrogen_ground_state_first_absorption": "source_n1_inequality_typo",
+    "photon_angular_wavenumber": "source_answer_confirmed",
+    "complex_conjugate_tdse": "reference_answer_missing_hbar_squared",
+    "hamiltonian_total_energy": "source_answer_confirmed",
+    "complex_conjugation_nonnegative_norm": "source_option_set_interpretation_caveat",
+    "complex_exponential_wavefunction": "key_assumes_real_parameters",
+    "momentum_vs_kinetic_operator_eigenstates": "student_problem_is_biconditional_but_key_one_way"
+  },
+  "source_license": "CC0-1.0",
+  "third_party_exception_retained": true,
+  "item_rights_confirmed": 0,
+  "science_expert_approved": 0,
+  "publication_approved": 0,
+  "note": "Nine fixed course exercise adaptations with pinned question and answer notebooks, source corrections and independent numeric crosschecks. Item rights and expert approval remain pending."
+}
