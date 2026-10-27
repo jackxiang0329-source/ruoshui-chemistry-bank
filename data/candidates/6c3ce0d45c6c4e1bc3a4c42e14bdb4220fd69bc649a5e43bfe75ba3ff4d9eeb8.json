@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "6c3ce0d45c6c4e1bc3a4c42e14bdb4220fd69bc649a5e43bfe75ba3ff4d9eeb8",
+  "subject": "physical",
+  "topic": "photon_wavelength_frequency_scaling",
+  "level": "undergraduate",
+  "difficulty": "introductory_to_intermediate",
+  "question_type": "source_linked_quantum_course_exercise",
+  "resource_type": "translated_fixed_course_exercise_not_parametric",
+  "question": "量子化学·光波长变化：在真空中若单色光波长增加为原来的两倍，其频率将增倍、保持不变还是减半？请证明。",
+  "answer": "因为 ν=c/λ，光速 c 在真空中保持不变，故波长变为两倍时频率变为原来的 1/2。",
+  "explanation": "因为 ν=c/λ，光速 c 在真空中保持不变，故波长变为两倍时频率变为原来的 1/2。",
+  "numeric_answers": [],
+  "source_key_issue": "source_answer_confirmed",
+  "source_question_cell_index": 13,
+  "source_key_cell_index": 13,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "scientifically_machine_checked": false,
+  "conceptual_answer_requires_expert_review": true,
+  "source": {
+    "repository": "PaulWAyers/IntroQChemProblems",
+    "commit": "0491272e0b8e71059e601537b196181ab6b367cd",
+    "file": "ipynb/IntroQM2021.ipynb",
+    "key_notebook": "ipynb/IntroQMkey.ipynb",
+    "license": "CC0-1.0",
+    "content_rights_verified": false,
+    "item_level_rights_review_pending": true,
+    "license_evidence": {
+      "license": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/LICENSE",
+      "readme": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/README.md",
+      "exception": "Third-party content retains third-party rights; no human item-level determination yet."
+    },
+    "source_git_blobs": {
+      "notebook": "1f21cc7c7850e29d265e8e6c619e52c397fbad8b",
+      "key": "8dd5ad17f6ee0659c599e17826d776c8aeb47d79",
+      "license": "657f1ed2aefefde5d2aa65b66bc3a85f46ceeb3b",
+      "readme": "e3b12b3b510392bf42ddd3c6dec476fc483e8a45"
+    },
+    "url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+    "attribution": "CHEM 3PA3 course by Paul Ayers, McMaster University; adapted and corrected Chinese explanations.",
+    "source_fixed_2021_exercise": true,
+    "question_rights_await_human_confirmation": true,
+    "changes": "Source-linked Chinese adaptation. Distinct original fixed exercise, not numeric variant. Errors and mismatches disclosed."
+  }
+}

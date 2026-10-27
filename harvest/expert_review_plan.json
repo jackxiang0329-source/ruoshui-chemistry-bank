@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "total_candidates": 1703,
-  "corpus_id_hash_sha256": "e0e3a4ac78c4dfd06852a5018cf8a1338ed7f28971a127a9757443c979bc0940",
+  "total_candidates": 1715,
+  "corpus_id_hash_sha256": "6e5cdd681c70ce3550cd26c38d8179deb40026b03e0ae1c29f722a9e5730aa29",
   "by_subject": {
     "analytical": 193,
     "inorganic": 849,
     "organic": 467,
-    "physical": 194
+    "physical": 206
   },
   "by_content_kind": {
-    "exercise_candidate": 1425,
+    "exercise_candidate": 1437,
     "study_card": 278
   },
-  "topics_total": 87,
-  "template_source_clusters": 1403,
+  "topics_total": 99,
+  "template_source_clusters": 1415,
   "multi_variant_clusters": 56,
   "multi_variant_candidates": 356,
   "flag_counts": {
     "item_or_source_license_evidence_not_attached": 5,
-    "numerical_answer_requires_scientific_review": 312,
-    "semantic_duplicate_review_pending": 875,
-    "source_question_rights_not_explicitly_verified": 9,
+    "numerical_answer_requires_scientific_review": 315,
+    "semantic_duplicate_review_pending": 887,
+    "source_question_rights_not_explicitly_verified": 21,
     "study_card_not_exam_question": 278
   },
   "requested_representatives_per_subject": 32,
@@ -38,7 +38,7 @@
     "organic": 14,
     "inorganic": 6
   },
-  "unselected_candidate_count": 1576,
+  "unselected_candidate_count": 1588,
   "expert_approved_count": 0,
   "publishable_count": 0,
   "source_rights_approved_by_this_process": 0,
@@ -565,6 +565,22 @@
     },
     {
       "subject": "physical",
+      "topic": "baseball_debroglie_wavelength",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "b11d673f02d4192acce162afcd79a8af808be969b00af39d02e12ff00213e178",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 45,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
       "topic": "complex_conjugate_tdse",
       "source": "PaulWAyers/IntroQChemProblems",
       "representative_id": "d96cfd62e66676b18cb95ac3c104e33a1ea584e6107534229fc197deda67ab65",
@@ -610,6 +626,51 @@
     },
     {
       "subject": "physical",
+      "topic": "davisson_germer_electron_waves",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "e1bb0885352fcd15e0c5ddf89a9c4dba7907a650f0c9b6bae7ac1c12f2d36289",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 45,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "electron_diffraction_bragg_scattering",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "8164126f3aba3ba661701515c173715bfefd0853aed3d9148ec721605171804b",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 45,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "electron_waves_vs_atomic_lines",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "cb09bdcf21c23a9b4c0b9e45fb0d9f5cae234c5ef213efe8a3846a7840b63070",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 45,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
       "topic": "gamma_radiation_molar_energy",
       "source": "PaulWAyers/IntroQChemProblems",
       "representative_id": "de83f56dca4823f0bd602523b583a05c0fe5a3d3b38ea7db644befe0b245bd6c",
@@ -633,6 +694,22 @@
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
       "flags": [
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 45,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "hene_single_photon_energy",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "ad2354eb1c4d14068958af1d9c913b9ec43256af16c3209ac83da79ed73b5a78",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
         "semantic_duplicate_review_pending",
         "source_question_rights_not_explicitly_verified"
       ],
@@ -688,6 +765,67 @@
     },
     {
       "subject": "physical",
+      "topic": "photon_energy_doubling_relations",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "c3ac91f39a9d15f0915b3e8315a15c5d4bab488cf882496d2804a79f50e6c1cc",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 45,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "photon_frequency_500nm",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "668a04afe6a32bcf53171d3f8b08cbb421b06841cb49fc9ad62705a476503734",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 45,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "photon_particle_evidence",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "b013de4d9b3678264f70f4744480dbf27f9a9285c553a9c32284f6ec4f0226cd",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 45,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "photon_particles_vs_matter_waves",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "4310e4b0f135f812e05a64b925d8907aeaae495af10df972465700b84033347d",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 45,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
       "topic": "photon_radiation_pressure_force",
       "source": "PaulWAyers/IntroQChemProblems",
       "representative_id": "4f119aa48851bf6449f9278833c914846e9f89da7941e6e5009520ffc3ccdeef",
@@ -696,6 +834,51 @@
       "resource_type": "exercise_candidate",
       "flags": [
         "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 45,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "photon_wavelength_frequency_scaling",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "6c3ce0d45c6c4e1bc3a4c42e14bdb4220fd69bc649a5e43bfe75ba3ff4d9eeb8",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 45,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "vacuum_light_speed_dispersion",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "8caea42b66a3263c3fc7b48d029e48ee4894e9cab257f8179139f8c10f1bcfe1",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 45,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "wavefunction_probability_density_nonnegative",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "3ae747718eb07d384149e5d3a3968ece6b7715452b74e55a00f1dbb17e4dedcc",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
         "semantic_duplicate_review_pending",
         "source_question_rights_not_explicitly_verified"
       ],
@@ -892,215 +1075,6 @@
         "semantic_duplicate_review_pending"
       ],
       "review_priority_score": 16,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "ideal_binary_vle_raoult",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "044f6fc9d40a536e241ff0b5dd92f99aef634572ffa5794b1fc086750153fb26",
-      "candidate_count": 6,
-      "sample_other_ids": [
-        "4c3e5651a0d5e0e34b8de4408cb128d6888d61af58d2bce69ad65871de15d3fa",
-        "92d48c1f34f12070e4e2a2c6971c15a18ea33d7de60bc9bbc0602db1bd31e31c",
-        "b34e51852fbbb6e924d4c617148f9d00595a9eb9e361a0b07bb832387dc4c1ab"
-      ],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 16,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "isothermal_ideal_gas_entropy",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "1a67c7e743dba5a46cebedc0b8b9273f31bdd4111bd79ffc02e6dff004f3c765",
-      "candidate_count": 6,
-      "sample_other_ids": [
-        "20775b5b4d6962cc49d43f1629169e89f14055b060a54932831ea97cdf64789b",
-        "4646becac6bc686d5b014806bdbcdfabb7db540efbff8c6e36de7be9b80b3260",
-        "481506e1c06ff591689f62e1afe301ec3dbde24fd120fadc382b58f6e14ed652"
-      ],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 16,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "langmuir_surface_coverage",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "2619c0b8db5a0bc5c4863faa68eb9cd6b1f954d9de5bbb646dc71b105885ae2a",
-      "candidate_count": 6,
-      "sample_other_ids": [
-        "293d6cf795daf6a3f163c410f828e95a4214f6790834030cbba93d9357fd1b11",
-        "2d711c090af86cff6a6809fbc390f0efccc202a88536b26295780af3c1eee323",
-        "469d8daf74853841a28c5f22bb21283169dd347dcca59e0ac35442e25ddf35e5"
-      ],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 16,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "molecular_electronic_transition_photon",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "27f4fd4f2379f68fca6cb3331535121d94ead82d8614a3de04e3ea9c5c02fa8d",
-      "candidate_count": 6,
-      "sample_other_ids": [
-        "4c323bef53ffccc8b5e2f605c2c87cdc4db854aea630ae842757da07e9ede6c2",
-        "6f33debeb0135ff4186ded6618d6d07867c0ca93f50ed698a19a32a9b428b816",
-        "7d4af19e47d9f60824cf1c611da38826784757cd850ee4c4d2d5fe5a4600b3b7"
-      ],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 16,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "nernst_equation",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "10189931e50aff0afbd2ea3b2141939262ddc4c9833945cd5c1c5af82ae72c45",
-      "candidate_count": 12,
-      "sample_other_ids": [
-        "2501d273f6bcabeb1dc8ce174b403f46d901452f28a8ca04f79b84f97d1346eb",
-        "41a154d9529665a159093092b7fe75a15bca667d221d8212ee95d8593ea0f2f0",
-        "42fa5d7c20b25631118cb0bdc5488adf48115f3989a37a36e60e480b394e6e2e"
-      ],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 16,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "quantum_particle_in_box",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "0170f1f0f7948040acfbfdbf9d3b3f8e347b43db26c0d1dde146fd6f64b5c5fb",
-      "candidate_count": 12,
-      "sample_other_ids": [
-        "0c456ddf9efe8c618e29dfb9fd559b84817ca57b8154a0950371091113695991",
-        "12cff9099a7b2c9bbe1e15e6b9638bd5dcaa7dc15d10699241638e18c8d99721",
-        "3f52aaa6bf4bb619295d2bdd463defc591a5e5b9d72eb93976d5816fa0c14fb1"
-      ],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 16,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "vant_hoff_equilibrium_temperature",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "002abdfbf6624b29d6c6e57ef6c87579f695c05765e54e1dd185732262220051",
-      "candidate_count": 12,
-      "sample_other_ids": [
-        "189a2ba03922f202aeb95439ee98b321010ce3d656e0317256ce18e02784f318",
-        "27609d81a2df785097b832a5ece5acc22e9b30e16f59439896bee567698a55de",
-        "355dcb6a941034980da58f8e982f433b377e17e1bedc9b29608e393d2fd9549d"
-      ],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 16,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "vapor_pressure_temperature",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "2a8ebdb8b50a572e75fc5fffc43bc3f99558d87228c56be7a9eb5e4e7a140cb5",
-      "candidate_count": 12,
-      "sample_other_ids": [
-        "372b8ef22f6403e5866df25b1280d491e23f8ab83b0d94fcf9e79520fca4a131",
-        "49b49dca1ddc13f40b4c08fe62877d63d398b34abeff726aa0abf3cb56aca3b3",
-        "536edae405ab537528eeacd88544c3adc7e15fc6199ee86682b1bbd6c22d6d59"
-      ],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 16,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "hypothetical_isomer_equilibrium_fraction",
-      "source": "thisisntnathan/dftCourse",
-      "representative_id": "3f8fedb83e6cfd58cba005a82d09c3b29007c1618c4eda1a59b00815106b1066",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "isomer_computation_time_overhead",
-      "source": "thisisntnathan/dftCourse",
-      "representative_id": "1042af6ded2cfda198e8b0def7b2bcbc19d359bf8a5ef8ef8ee82e2ee6c3bf75",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "relative_ez_free_energy",
-      "source": "thisisntnathan/dftCourse",
-      "representative_id": "48b6bb84c5b1f6787677c4d12a155780cfcfb05f3502998c462c51aa3e3c6238",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "standard_cell_potential",
-      "source": "arya51-ai/parametric-question-engine",
-      "representative_id": "118624081dc58812fbf9ce54d10e1d63c77370c77d63df181d53a0dad068c36f",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [],
-      "review_priority_score": 0,
       "approved_for_publication": false
     },
     {

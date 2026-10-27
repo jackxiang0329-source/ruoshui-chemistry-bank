@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "total_candidates": 1703,
-  "corpus_hash_sha256": "e0e3a4ac78c4dfd06852a5018cf8a1338ed7f28971a127a9757443c979bc0940",
+  "total_candidates": 1715,
+  "corpus_hash_sha256": "6e5cdd681c70ce3550cd26c38d8179deb40026b03e0ae1c29f722a9e5730aa29",
   "by_subject": {
     "analytical": 193,
     "inorganic": 849,
     "organic": 467,
-    "physical": 194
+    "physical": 206
   },
   "by_content_kind": {
-    "exercise_candidate": 1425,
+    "exercise_candidate": 1437,
     "study_card": 278
   },
   "by_quality_status": {
-    "awaiting_expert_review": 1703
+    "awaiting_expert_review": 1715
   },
   "by_publishable": {
-    "false": 1703
+    "false": 1715
   },
   "source_counts": {
     "ChemTrain/chemtrain-daily": 268,
@@ -29,7 +29,7 @@
     "ChemTrain/tmc-learn": 593,
     "MuzaPro/Organic-Chemistry-Quiz-JS": 5,
     "PWO-CHINA/Chemistry-Calculator-Toolkit": 8,
-    "PaulWAyers/IntroQChemProblems": 9,
+    "PaulWAyers/IntroQChemProblems": 21,
     "QC-Edu/IntroQM": 3,
     "arya51-ai/parametric-question-engine": 30,
     "bem130/chemquiz": 67,
@@ -85,6 +85,7 @@
     "organic:reagent_functions": 47,
     "organic:unspecified": 5,
     "physical:arrhenius_activation_energy_two_temperatures": 6,
+    "physical:baseball_debroglie_wavelength": 1,
     "physical:calorimetry": 6,
     "physical:chemical_equilibrium": 6,
     "physical:chemical_kinetics": 12,
@@ -92,6 +93,7 @@
     "physical:complex_conjugate_tdse": 1,
     "physical:complex_conjugation_nonnegative_norm": 1,
     "physical:complex_exponential_wavefunction": 1,
+    "physical:davisson_germer_electron_waves": 1,
     "physical:debye_huckel_mean_activity_coefficient": 6,
     "physical:dilute_solution_freezing_point": 12,
     "physical:dilute_solution_osmotic_pressure": 12,
@@ -103,11 +105,14 @@
     "physical:electrochemical_impedance_parallel_rc": 1,
     "physical:electrochemical_impedance_randles_circuit": 1,
     "physical:electrochemical_impedance_series_rc": 1,
+    "physical:electron_diffraction_bragg_scattering": 1,
+    "physical:electron_waves_vs_atomic_lines": 1,
     "physical:equilibrium_constant": 6,
     "physical:eyring_activation_free_energy": 6,
     "physical:gamma_radiation_molar_energy": 1,
     "physical:hamiltonian_total_energy": 1,
     "physical:harmonic_oscillator_vibrational_spacing": 6,
+    "physical:hene_single_photon_energy": 1,
     "physical:hydrogen_ground_state_first_absorption": 1,
     "physical:hypothetical_isomer_equilibrium_fraction": 4,
     "physical:ideal_binary_vle_raoult": 6,
@@ -118,13 +123,20 @@
     "physical:momentum_vs_kinetic_operator_eigenstates": 1,
     "physical:nernst_equation": 12,
     "physical:photon_angular_wavenumber": 1,
+    "physical:photon_energy_doubling_relations": 1,
+    "physical:photon_frequency_500nm": 1,
+    "physical:photon_particle_evidence": 1,
+    "physical:photon_particles_vs_matter_waves": 1,
     "physical:photon_radiation_pressure_force": 1,
+    "physical:photon_wavelength_frequency_scaling": 1,
     "physical:quantum_chemistry": 3,
     "physical:quantum_particle_in_box": 12,
     "physical:relative_ez_free_energy": 4,
     "physical:standard_cell_potential": 6,
+    "physical:vacuum_light_speed_dispersion": 1,
     "physical:vant_hoff_equilibrium_temperature": 12,
-    "physical:vapor_pressure_temperature": 12
+    "physical:vapor_pressure_temperature": 12,
+    "physical:wavefunction_probability_density_nonnegative": 1
   },
   "source_license_or_record_issues": {
     "count": 0,
@@ -132,11 +144,23 @@
   },
   "source_content_rights_audit": {
     "explicitly_verified": 1694,
-    "explicitly_pending": 9,
+    "explicitly_pending": 21,
     "not_recorded": 0,
     "pending_samples": [
       {
         "id": "08399477a3acbb478168f5730191b6bf953c868804b169cfa4352be77299243b",
+        "source": "PaulWAyers/IntroQChemProblems",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "3ae747718eb07d384149e5d3a3968ece6b7715452b74e55a00f1dbb17e4dedcc",
+        "source": "PaulWAyers/IntroQChemProblems",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "4310e4b0f135f812e05a64b925d8907aeaae495af10df972465700b84033347d",
         "source": "PaulWAyers/IntroQChemProblems",
         "right_status": "EXPLICITLY_UNVERIFIED",
         "note": "item_level_rights_pending"
@@ -160,13 +184,67 @@
         "note": "item_level_rights_pending"
       },
       {
+        "id": "668a04afe6a32bcf53171d3f8b08cbb421b06841cb49fc9ad62705a476503734",
+        "source": "PaulWAyers/IntroQChemProblems",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "6c3ce0d45c6c4e1bc3a4c42e14bdb4220fd69bc649a5e43bfe75ba3ff4d9eeb8",
+        "source": "PaulWAyers/IntroQChemProblems",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "8164126f3aba3ba661701515c173715bfefd0853aed3d9148ec721605171804b",
+        "source": "PaulWAyers/IntroQChemProblems",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "8caea42b66a3263c3fc7b48d029e48ee4894e9cab257f8179139f8c10f1bcfe1",
+        "source": "PaulWAyers/IntroQChemProblems",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
         "id": "8d2a050ecc9e6a1d528a97e7cddac4d4ec7bad153d4433a2e5a0ea315145b8de",
         "source": "PaulWAyers/IntroQChemProblems",
         "right_status": "EXPLICITLY_UNVERIFIED",
         "note": "item_level_rights_pending"
       },
       {
+        "id": "ad2354eb1c4d14068958af1d9c913b9ec43256af16c3209ac83da79ed73b5a78",
+        "source": "PaulWAyers/IntroQChemProblems",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "b013de4d9b3678264f70f4744480dbf27f9a9285c553a9c32284f6ec4f0226cd",
+        "source": "PaulWAyers/IntroQChemProblems",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "b11d673f02d4192acce162afcd79a8af808be969b00af39d02e12ff00213e178",
+        "source": "PaulWAyers/IntroQChemProblems",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "c3ac91f39a9d15f0915b3e8315a15c5d4bab488cf882496d2804a79f50e6c1cc",
+        "source": "PaulWAyers/IntroQChemProblems",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
         "id": "c42186399c09bacb27661d048bc63188ffa5c34c03db5700b9fc5de294be80da",
+        "source": "PaulWAyers/IntroQChemProblems",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "cb09bdcf21c23a9b4c0b9e45fb0d9f5cae234c5ef213efe8a3846a7840b63070",
         "source": "PaulWAyers/IntroQChemProblems",
         "right_status": "EXPLICITLY_UNVERIFIED",
         "note": "item_level_rights_pending"
@@ -179,6 +257,12 @@
       },
       {
         "id": "de83f56dca4823f0bd602523b583a05c0fe5a3d3b38ea7db644befe0b245bd6c",
+        "source": "PaulWAyers/IntroQChemProblems",
+        "right_status": "EXPLICITLY_UNVERIFIED",
+        "note": "item_level_rights_pending"
+      },
+      {
+        "id": "e1bb0885352fcd15e0c5ddf89a9c4dba7907a650f0c9b6bae7ac1c12f2d36289",
         "source": "PaulWAyers/IntroQChemProblems",
         "right_status": "EXPLICITLY_UNVERIFIED",
         "note": "item_level_rights_pending"

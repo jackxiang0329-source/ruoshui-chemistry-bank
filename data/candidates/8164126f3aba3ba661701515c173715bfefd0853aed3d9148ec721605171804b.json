@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "8164126f3aba3ba661701515c173715bfefd0853aed3d9148ec721605171804b",
+  "subject": "physical",
+  "topic": "electron_diffraction_bragg_scattering",
+  "level": "undergraduate",
+  "difficulty": "introductory_to_intermediate",
+  "question_type": "source_linked_quantum_course_exercise",
+  "resource_type": "translated_fixed_course_exercise_not_parametric",
+  "question": "量子化学·电子衍射：电子束照射金属晶体时，发现散射强度随角度出现峰值。是晶格衍射还是单纯原子光谱吸收？解释理论依据。",
+  "answer": "主要是电子物质波被周期性晶格衍射，可采用布拉格型条件与德布罗意波长说明其散射峰；并非电子完全被吸收而产生类似光谱的离散能级跃迁。",
+  "explanation": "主要是电子物质波被周期性晶格衍射，可采用布拉格型条件与德布罗意波长说明其散射峰；并非电子完全被吸收而产生类似光谱的离散能级跃迁。",
+  "numeric_answers": [],
+  "source_key_issue": "source_answer_confirmed",
+  "source_question_cell_index": 35,
+  "source_key_cell_index": 35,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "scientifically_machine_checked": false,
+  "conceptual_answer_requires_expert_review": true,
+  "source": {
+    "repository": "PaulWAyers/IntroQChemProblems",
+    "commit": "0491272e0b8e71059e601537b196181ab6b367cd",
+    "file": "ipynb/IntroQM2021.ipynb",
+    "key_notebook": "ipynb/IntroQMkey.ipynb",
+    "license": "CC0-1.0",
+    "content_rights_verified": false,
+    "item_level_rights_review_pending": true,
+    "license_evidence": {
+      "license": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/LICENSE",
+      "readme": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/README.md",
+      "exception": "Third-party content retains third-party rights; no human item-level determination yet."
+    },
+    "source_git_blobs": {
+      "notebook": "1f21cc7c7850e29d265e8e6c619e52c397fbad8b",
+      "key": "8dd5ad17f6ee0659c599e17826d776c8aeb47d79",
+      "license": "657f1ed2aefefde5d2aa65b66bc3a85f46ceeb3b",
+      "readme": "e3b12b3b510392bf42ddd3c6dec476fc483e8a45"
+    },
+    "url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+    "attribution": "CHEM 3PA3 course by Paul Ayers, McMaster University; adapted and corrected Chinese explanations.",
+    "source_fixed_2021_exercise": true,
+    "question_rights_await_human_confirmation": true,
+    "changes": "Source-linked Chinese adaptation. Distinct original fixed exercise, not numeric variant. Errors and mismatches disclosed."
+  }
+}

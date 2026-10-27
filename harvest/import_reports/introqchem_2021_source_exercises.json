@@ -2,8 +2,8 @@
   "schema_version": 1,
   "repository": "PaulWAyers/IntroQChemProblems",
   "commit": "0491272e0b8e71059e601537b196181ab6b367cd",
-  "fixed_course_exercises": 9,
-  "newly_added": 0,
+  "fixed_course_exercises": 21,
+  "newly_added": 12,
   "already_present": 9,
   "source_key_issue_counts": {
     "photon_radiation_pressure_force": "key_confuses_force_unit_with_momentum_unit",
@@ -14,12 +14,24 @@
     "hamiltonian_total_energy": "source_answer_confirmed",
     "complex_conjugation_nonnegative_norm": "source_option_set_interpretation_caveat",
     "complex_exponential_wavefunction": "key_assumes_real_parameters",
-    "momentum_vs_kinetic_operator_eigenstates": "student_problem_is_biconditional_but_key_one_way"
+    "momentum_vs_kinetic_operator_eigenstates": "student_problem_is_biconditional_but_key_one_way",
+    "photon_particle_evidence": "blackbody_quantization_is_not_direct_photon_detection",
+    "photon_frequency_500nm": "source_answer_confirmed",
+    "photon_wavelength_frequency_scaling": "source_answer_confirmed",
+    "vacuum_light_speed_dispersion": "vacuum_assumption_added_to_remove_medium_ambiguity",
+    "hene_single_photon_energy": "source_answer_confirmed",
+    "photon_energy_doubling_relations": "relativistic_mass_terminology_requires_modern_clarification",
+    "davisson_germer_electron_waves": "source_answer_confirmed",
+    "electron_diffraction_bragg_scattering": "source_answer_confirmed",
+    "electron_waves_vs_atomic_lines": "key_accepts_atomic_lines_as_indirect_evidence",
+    "photon_particles_vs_matter_waves": "blackbody_quantization_evidence_requires_qualification",
+    "baseball_debroglie_wavelength": "source_answer_confirmed",
+    "wavefunction_probability_density_nonnegative": "student_and_answer_notebook_questions_are_opposite_wording"
   },
   "source_license": "CC0-1.0",
   "third_party_exception_retained": true,
   "item_rights_confirmed": 0,
   "science_expert_approved": 0,
   "publication_approved": 0,
-  "note": "Nine fixed course exercise adaptations with pinned question and answer notebooks, source corrections and independent numeric crosschecks. Item rights and expert approval remain pending."
+  "note": "21 fixed source-linked university exercises; student and teacher keys pinned. Ambiguous and inconsistent original answers are flagged. Item-level rights and human expert approval remain pending."
 }

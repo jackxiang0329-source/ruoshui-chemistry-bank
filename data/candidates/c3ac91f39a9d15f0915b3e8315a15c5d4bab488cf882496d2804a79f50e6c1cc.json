@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "c3ac91f39a9d15f0915b3e8315a15c5d4bab488cf882496d2804a79f50e6c1cc",
+  "subject": "physical",
+  "topic": "photon_energy_doubling_relations",
+  "level": "undergraduate",
+  "difficulty": "introductory_to_intermediate",
+  "question_type": "source_linked_quantum_course_exercise",
+  "resource_type": "translated_fixed_course_exercise_not_parametric",
+  "question": "量子化学·光子能量比例：对于真空光子 E=hν=pc=hc/λ，分别说明频率翻倍、动量翻倍和波长翻倍会怎样改变能量。",
+  "answer": "频率翻倍或动量翻倍使能量翻倍；波长翻倍使能量减半。光速 c 是真空常数，不可独立通过“将 c 翻倍”调整。原题采用“相对论质量”说法，重新表述时优先使用能量动量关系。",
+  "explanation": "频率翻倍或动量翻倍使能量翻倍；波长翻倍使能量减半。光速 c 是真空常数，不可独立通过“将 c 翻倍”调整。原题采用“相对论质量”说法，重新表述时优先使用能量动量关系。",
+  "numeric_answers": [],
+  "source_key_issue": "relativistic_mass_terminology_requires_modern_clarification",
+  "source_question_cell_index": 22,
+  "source_key_cell_index": 22,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "scientifically_machine_checked": false,
+  "conceptual_answer_requires_expert_review": true,
+  "source": {
+    "repository": "PaulWAyers/IntroQChemProblems",
+    "commit": "0491272e0b8e71059e601537b196181ab6b367cd",
+    "file": "ipynb/IntroQM2021.ipynb",
+    "key_notebook": "ipynb/IntroQMkey.ipynb",
+    "license": "CC0-1.0",
+    "content_rights_verified": false,
+    "item_level_rights_review_pending": true,
+    "license_evidence": {
+      "license": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/LICENSE",
+      "readme": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/README.md",
+      "exception": "Third-party content retains third-party rights; no human item-level determination yet."
+    },
+    "source_git_blobs": {
+      "notebook": "1f21cc7c7850e29d265e8e6c619e52c397fbad8b",
+      "key": "8dd5ad17f6ee0659c599e17826d776c8aeb47d79",
+      "license": "657f1ed2aefefde5d2aa65b66bc3a85f46ceeb3b",
+      "readme": "e3b12b3b510392bf42ddd3c6dec476fc483e8a45"
+    },
+    "url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+    "attribution": "CHEM 3PA3 course by Paul Ayers, McMaster University; adapted and corrected Chinese explanations.",
+    "source_fixed_2021_exercise": true,
+    "question_rights_await_human_confirmation": true,
+    "changes": "Source-linked Chinese adaptation. Distinct original fixed exercise, not numeric variant. Errors and mismatches disclosed."
+  }
+}
