@@ -11,6 +11,9 @@ on:
       - "scripts/prioritize-chemistry-sources.mjs"
       - "tests/prioritize-chemistry-sources.test.mjs"
       - "scripts/import-approved-chemistry.mjs"
+      - "scripts/validate-oer-work-license.mjs"
+      - "tests/oer-work-license.test.mjs"
+      - "harvest/oer_work_license_review.json"
       - "tests/harvest.test.mjs"
       - "harvest/search_queries.json"
       - "harvest/approved_imports.json"
@@ -91,6 +94,8 @@ jobs:
           node-version: "22"
       - name: Verify source metadata review prioritization
         run: node --test tests/prioritize-chemistry-sources.test.mjs
+      - name: Verify official OER work-level rights registry (no question approval)
+        run: node --test tests/oer-work-license.test.mjs
       - name: Verify collector
         run: node --test tests/harvest.test.mjs
       - name: Verify TMC importer without executing upstream code
