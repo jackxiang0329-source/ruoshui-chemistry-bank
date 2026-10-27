@@ -16,16 +16,16 @@ const headers={Accept:'application/vnd.github+json','User-Agent':'ruoshui-chemis
 if(token) headers.Authorization='Bearer '+token;
 const sleep=ms=>new Promise(ok=>setTimeout(ok,ms));
 const stamp=()=>new Date().toISOString();
-const chemistry=/(?:\bchemistry\b|\bchemical\b|\bchemie\b|\bchemia\b|chemtrain|chemquiz|chem[-_ ]|化学|化工|molecul|electrochem|physchem|inorganic|organic|titration|stoichiometr|spectroscop|chromatograph)/i;
-const educational=/(?:quest|quiz|exam|probl|exercis|practic|test|learn|study|educat|benchmar|assess|dataset|question.bank|mcq|trainer|题|练习|习题|课程|测验|试题|题库|chemtrain)/i;
+const chemistry=/(?:\bchemistry\b|\bchemical\b|\bchemie\b|\bchemia\b|chemtrain|chemquiz|chem[-_ ]|化学|化工|molecul|electrochem|physchem|inorganic|organic|titration|stoichiometr|spectroscop|chromatograph|electroanalys|potentiometr|voltammetr|calorimetr|spectrometr|gravimetr|chemkin|solvation|chemical[-_ ]?reaction|coordination[-_ ]chemistry)/i;
+const educational=/(?:quest|quiz|exam|probl|exercis|practic|test|learn|study|educat|benchmar|assess|dataset|question.bank|mcq|trainer|题|练习|习题|课程|测验|试题|题库|chemtrain|tutorial|workbook|worksheet|notebook|\blab\b|lesson|assignment|course|calculator|simulation|simulator|experiment|interactive)/i;
 const hex64=Array.from({length:64},(_,i)=>i.toString(16).padStart(2,'0'));
 
 export function subjects(value){
   const t=String(value||'').toLowerCase();
   const rules=[['inorganic',/\binorganic\b|无机化学|无机/],
     ['organic',/\borganic\b|有机化学|有机/],
-    ['analytical',/\banalytical\b|分析化学|色谱|滴定|titration|chromatograph/],
-    ['physical',/physical chemistry|物理化学|热力学|动力学|thermodynamic|kinetic|electrochem/]];
+    ['analytical',/\banalytical\b|分析化学|色谱|滴定|titration|chromatograph|electroanalys|potentiometr|voltammetr|spectrometr|gravimetr/],
+    ['physical',/physical chemistry|物理化学|热力学|动力学|thermodynamic|kinetic|electrochem|calorimetr|chemkin|solvation/]];
   const found=rules.filter(([,re])=>re.test(t)).map(([name])=>name);
   return found.length?found:['general'];
 }

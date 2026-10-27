@@ -52,3 +52,10 @@ test('filter unrelated search matches and forks',()=>{
   assert.equal(canonicalRepo({full_name:'a/chemistry-quiz',description:'chemistry quiz',fork:true},'2026-10-26'),null);
   assert.equal(canonicalRepo({full_name:'a/chemistry-quiz',description:'chemistry quiz'},'2026-10-26').status,'unreviewed_not_importable');
 });
+
+test('discover educational chemistry calculators and spectroscopy tutorials without automatic rights approval',()=>{
+  const x=canonicalRepo({full_name:'lab/voltammetry-tutorial',description:'Electroanalytical chemistry tutorial and voltammetry simulator',license:{spdx_id:'Apache-2.0'}},'2026-10-27');
+  assert.equal(x.repository,'lab/voltammetry-tutorial');
+  assert.equal(x.status,'unreviewed_not_importable');
+  assert.ok(x.subjects.includes('analytical'));
+});
