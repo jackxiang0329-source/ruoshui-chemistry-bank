@@ -11,8 +11,7 @@ const normalizeQuestion=s=>String(s||'').normalize('NFKC').toLowerCase()
  .replace(/<[^>]*>/g,' ')
  .replace(/[*_]/g,'')
  .replace(/\s+/g,' ').trim();
-const needsPriorContext=s=>/\[\[link\]\]|\]\(#|(?:previous|preceding|above|below)\s+(?:item|problem|question|exercise|figure|table)|
-\b(?:figure|diagram|graph|table)\s+(?:shown|above|below)/i.test(String(s||''));
+const needsPriorContext=s=>/\[\[link\]\]|\]\(#|(?:previous|preceding|above|below)\s+(?:item|problem|question|exercise|figure|table)|\b(?:figure|diagram|graph|table)\s+(?:shown|above|below)/i.test(String(s||''));
 const templateQuestion=s=>normalizeQuestion(s).replace(/\d+(?:[.,]\d+)?(?:\s*[×x]\s*10\s*[\^−-]?\d+)?/g,'#');
 export function buildReview(rows,limit=180,mainQuestions=[]){
  if(!Array.isArray(rows)||!Number.isInteger(limit)||limit<1||limit>1000)
