@@ -239,6 +239,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "abstractsan/boardquiz": {
+      "repository": "AbstractSan/BoardQuiz",
+      "url": "https://github.com/AbstractSan/BoardQuiz",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "ddad35d053822aaca3723ea20957165ec782a1ef",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "abyzanna/chem-lab-interactive": {
       "repository": "AbyzAnna/chem-lab-interactive",
       "url": "https://github.com/AbyzAnna/chem-lab-interactive",
@@ -557,6 +574,23 @@
       "readme_file_git_blob_sha": "4b2ba9a839d44a9d656498811ab52a9dc72d70eb",
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "akash-mehra/opneet": {
+      "repository": "akash-mehra/opneet",
+      "url": "https://github.com/akash-mehra/opneet",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "5bb29c8eea41241d45dd4a066f4c7992119de37b",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": true,
       "candidate_for_content_rights_review": false,
       "question_content_rights": "NOT_VERIFIED",
       "automatic_question_import_allowed": false,
@@ -2332,6 +2366,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "er-ads/inorgchem": {
+      "repository": "er-ads/InorgChem",
+      "url": "https://github.com/er-ads/InorgChem",
+      "subjects": [
+        "inorganic"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": null,
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "erni-tf/buscador-de-formulas": {
       "repository": "erni-tf/buscador-de-formulas",
       "url": "https://github.com/erni-tf/buscador-de-formulas",
@@ -2393,6 +2444,23 @@
       "repository_license_file_present": true,
       "license_file_git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
       "readme_file_git_blob_sha": "6d70c3d2ea11be9cf9fec07c744e67c67d5c7cdc",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "fiesty-abyss/rike-tiku": {
+      "repository": "Fiesty-Abyss/rike-tiku",
+      "url": "https://github.com/Fiesty-Abyss/rike-tiku",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "NOASSERTION",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "8ca92f7c0f4be4abf91d26612340af6d70bc62ac",
+      "readme_file_git_blob_sha": "7ef6cd855dd3c38c362d1034253be5191d7e99d9",
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": true,
@@ -3012,6 +3080,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "icse-cbse-10-12/icse-class-10-materials": {
+      "repository": "icse-cbse-10-12/icse-class-10-materials",
+      "url": "https://github.com/icse-cbse-10-12/icse-class-10-materials",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "NOASSERTION",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "860b439f6f2dc913f63b16bcfdc00a9af2ef75c6",
+      "readme_file_git_blob_sha": "6f00bacf7ff88deba6972635bedabaf290c932c2",
+      "third_party_content_risk": true,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "icsolution/university-admission": {
       "repository": "icsolution/University-Admission",
       "url": "https://github.com/icsolution/University-Admission",
@@ -3083,6 +3168,23 @@
     "imtihart/practical_4_1.c": {
       "repository": "ImtiHart/Practical_4_1.c",
       "url": "https://github.com/ImtiHart/Practical_4_1.c",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": null,
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "indiagkmaster-pro/physics--chemistry--quiz": {
+      "repository": "indiagkmaster-pro/Physics--Chemistry--Quiz",
+      "url": "https://github.com/indiagkmaster-pro/Physics--Chemistry--Quiz",
       "subjects": [
         "general"
       ],
@@ -3314,6 +3416,23 @@
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "jeffbaumes/open-chemistry-graph": {
+      "repository": "jeffbaumes/open-chemistry-graph",
+      "url": "https://github.com/jeffbaumes/open-chemistry-graph",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "c6e1c07d646ed9181baed89fafbdccbe40a23f3a",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
       "question_content_rights": "NOT_VERIFIED",
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
@@ -3660,6 +3779,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "justlaughing/high-school-chemistry": {
+      "repository": "justlaughing/high-school-chemistry",
+      "url": "https://github.com/justlaughing/high-school-chemistry",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "7030bc45ad452676362cc870f1a088db3aa96f85",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "k3no26/interactive-periodic-table-": {
       "repository": "K3no26/Interactive-Periodic-Table-",
       "url": "https://github.com/K3no26/Interactive-Periodic-Table-",
@@ -3976,6 +4112,23 @@
       "repository_license_file_present": false,
       "license_file_git_blob_sha": null,
       "readme_file_git_blob_sha": null,
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "kunalgupta016/neet": {
+      "repository": "kunalgupta016/Neet",
+      "url": "https://github.com/kunalgupta016/Neet",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "fd3b758d9c5bdd978006b8429e0caaa761644749",
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": false,
@@ -5074,6 +5227,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "nehacoder-14/quizify": {
+      "repository": "Nehacoder-14/Quizify",
+      "url": "https://github.com/Nehacoder-14/Quizify",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "eaef47d9ee665fbf1fae35b63eaee50f7c3af4b2",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "netcan/hfut_chemlab": {
       "repository": "netcan/HFUT_ChemLab",
       "url": "https://github.com/netcan/HFUT_ChemLab",
@@ -5154,6 +5324,23 @@
       "readme_file_git_blob_sha": null,
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "njabuloshong1/chemlab": {
+      "repository": "njabuloshong1/chemlab",
+      "url": "https://github.com/njabuloshong1/chemlab",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "b1530cc59649e2b6d717f2e1e0f335aa1052076b",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": true,
       "candidate_for_content_rights_review": false,
       "question_content_rights": "NOT_VERIFIED",
       "automatic_question_import_allowed": false,
@@ -5373,6 +5560,23 @@
       "repository_license_file_present": false,
       "license_file_git_blob_sha": null,
       "readme_file_git_blob_sha": "fd68a9855f76e3a408b2a92054f553b03d90abbe",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "parin-create/chem-quiz": {
+      "repository": "Parin-create/chem-quiz",
+      "url": "https://github.com/Parin-create/chem-quiz",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "a36934d874c7fbc51aecd1c66dffc106f60693a9",
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": false,
@@ -6251,6 +6455,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "science-6-marker-hub-a11y/science-6-marker-hub": {
+      "repository": "Science-6-marker-Hub-a11y/science-6-marker-hub",
+      "url": "https://github.com/Science-6-marker-Hub-a11y/science-6-marker-hub",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": null,
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "sebcodestheweb/biochem-blog": {
       "repository": "SebCodesTheWeb/biochem-blog",
       "url": "https://github.com/SebCodesTheWeb/biochem-blog",
@@ -6312,6 +6533,23 @@
       "repository_license_file_present": false,
       "license_file_git_blob_sha": null,
       "readme_file_git_blob_sha": "6116fac051a33a437598241e7a6c31409bdf23ea",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "sheetalchauhan-ai/neetvora": {
+      "repository": "sheetalchauhan-ai/NeetVora",
+      "url": "https://github.com/sheetalchauhan-ai/NeetVora",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "1e238cec75376550510cd69088c2bf5e6d47066a",
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": false,
@@ -6506,6 +6744,193 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "socialtoapall/biomolecules-is-a-high-yield-neet-chemistry-": {
+      "repository": "socialtoapall/Biomolecules-is-a-high-yield-NEET-Chemistry-",
+      "url": "https://github.com/socialtoapall/Biomolecules-is-a-high-yield-NEET-Chemistry-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "0284344967bcd775caa6178cfcb2a7ca17d88f93",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/chemistry-in-everyday-life-is-a-core-neet-": {
+      "repository": "socialtoapall/Chemistry-in-Everyday-Life-is-a-core-NEET-",
+      "url": "https://github.com/socialtoapall/Chemistry-in-Everyday-Life-is-a-core-NEET-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "7614a0a5073814a52577e6cc5656b5e916486e85",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/chemistry-in-everyday-life-is-a-key-neet-": {
+      "repository": "socialtoapall/Chemistry-in-Everyday-Life-is-a-key-NEET-",
+      "url": "https://github.com/socialtoapall/Chemistry-in-Everyday-Life-is-a-key-NEET-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "f471f594280fe8ef36ec1a30a5604dc61408278a",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/chemistry-in-everyday-life-is-a-key-neet-chemistry-": {
+      "repository": "socialtoapall/Chemistry-in-Everyday-Life-is-a-key-NEET-Chemistry-",
+      "url": "https://github.com/socialtoapall/Chemistry-in-Everyday-Life-is-a-key-NEET-Chemistry-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "b9d13fed07739791cf8dc6107993b73c44e3b68d",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/chemistry-in-everyday-life-is-an-important-neet-": {
+      "repository": "socialtoapall/Chemistry-in-Everyday-Life-is-an-important-NEET-",
+      "url": "https://github.com/socialtoapall/Chemistry-in-Everyday-Life-is-an-important-NEET-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "93d3d2318cc6540065feaf911922d2d1af2d43f5",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/d--f-block-elements-is-an-important-neet-chemistry-": {
+      "repository": "socialtoapall/d--f-Block-Elements-is-an-important-NEET-Chemistry-",
+      "url": "https://github.com/socialtoapall/d--f-Block-Elements-is-an-important-NEET-Chemistry-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "aa3570be4218e0ec4905a615e6f0f32865903035",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/haloalkanes-haloarenes-is-a-core-neet-chemistry-": {
+      "repository": "socialtoapall/Haloalkanes-Haloarenes-is-a-core-NEET-Chemistry-",
+      "url": "https://github.com/socialtoapall/Haloalkanes-Haloarenes-is-a-core-NEET-Chemistry-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "61fda27b33d9a65825f0884dff38693b66a32959",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/haloalkanes-haloarenes-is-a-high-yield-neet-chemistry-": {
+      "repository": "socialtoapall/Haloalkanes-Haloarenes-is-a-high-yield-NEET-Chemistry-",
+      "url": "https://github.com/socialtoapall/Haloalkanes-Haloarenes-is-a-high-yield-NEET-Chemistry-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "1d26f0916a39be665456301663c0c251dedbfa5f",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/haloalkanes-haloarenes-is-a-key-neet-chemistry-": {
+      "repository": "socialtoapall/Haloalkanes-Haloarenes-is-a-key-NEET-Chemistry-",
+      "url": "https://github.com/socialtoapall/Haloalkanes-Haloarenes-is-a-key-NEET-Chemistry-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "482d2bc89e43e1658daab1be62647b02b133d2c5",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/haloalkanes-haloarenes-is-an-important-neet-chemistry-": {
+      "repository": "socialtoapall/Haloalkanes-Haloarenes-is-an-important-NEET-Chemistry-",
+      "url": "https://github.com/socialtoapall/Haloalkanes-Haloarenes-is-an-important-NEET-Chemistry-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "d487b91e2b46f086fc769cd1ecd4f04c80b3984a",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/india-s-largest-mcq-question-bank-": {
+      "repository": "socialtoapall/India-s-largest-MCQ-question-bank-",
+      "url": "https://github.com/socialtoapall/India-s-largest-MCQ-question-bank-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "23270257246c1363ffd19152ab0e5bd94f2d7a76",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "socialtoapall/neet-chemistry-alcohols-phenols-ethers-mcqs-complete-practice-concept-mastery.": {
       "repository": "socialtoapall/NEET-Chemistry-Alcohols-Phenols-Ethers-MCQs-Complete-Practice-Concept-Mastery.",
       "url": "https://github.com/socialtoapall/NEET-Chemistry-Alcohols-Phenols-Ethers-MCQs-Complete-Practice-Concept-Mastery.",
@@ -6516,6 +6941,23 @@
       "repository_license_file_present": false,
       "license_file_git_blob_sha": null,
       "readme_file_git_blob_sha": "76817a6cdc7ca679d31d87958f98239e17e02db5",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/neet-chemistry-aldehydes-ketones-carboxylic-acids-mcqs-concept-building-exam-practice.": {
+      "repository": "socialtoapall/NEET-Chemistry-Aldehydes-Ketones-Carboxylic-Acids-MCQs-Concept-Building-Exam-Practice.",
+      "url": "https://github.com/socialtoapall/NEET-Chemistry-Aldehydes-Ketones-Carboxylic-Acids-MCQs-Concept-Building-Exam-Practice.",
+      "subjects": [
+        "organic"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "50528f2c6afeaf4a48383fb1668ba4a95c466634",
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": false,
@@ -6574,6 +7016,57 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "socialtoapall/neet-chemistry-d--and-f-block-elements-mcqs-hard-level-practice-for-high-score-prep.": {
+      "repository": "socialtoapall/NEET-Chemistry-d--and-f-Block-Elements-MCQs-Hard-Level-Practice-for-High-Score-Prep.",
+      "url": "https://github.com/socialtoapall/NEET-Chemistry-d--and-f-Block-Elements-MCQs-Hard-Level-Practice-for-High-Score-Prep.",
+      "subjects": [
+        "inorganic"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "d6a6ba4cce647221e42a6ca9716b3b2e6a823815",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/neet-chemistry-group-14-p-block-elements-mcqs-hard-level-practice-for-ncert-trap-mastery.": {
+      "repository": "socialtoapall/NEET-Chemistry-Group-14-p-Block-Elements-MCQs-Hard-Level-Practice-for-NCERT-Trap-Mastery.",
+      "url": "https://github.com/socialtoapall/NEET-Chemistry-Group-14-p-Block-Elements-MCQs-Hard-Level-Practice-for-NCERT-Trap-Mastery.",
+      "subjects": [
+        "inorganic"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "1a204893028422c79a6b37c85279105818c40ead",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/neet-chemistry-hard-alcohols-phenols-ethers-mcqs-conceptmastery-advanced-practice.": {
+      "repository": "socialtoapall/NEET-Chemistry-Hard-Alcohols-Phenols-Ethers-MCQs-ConceptMastery-Advanced-Practice.",
+      "url": "https://github.com/socialtoapall/NEET-Chemistry-Hard-Alcohols-Phenols-Ethers-MCQs-ConceptMastery-Advanced-Practice.",
+      "subjects": [
+        "organic"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "67686ed6a4647bfa799e23027cb76192c0faaece",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "socialtoapall/neet-chemistry-hard-amines-mcqs-master-advanced-concepts.": {
       "repository": "socialtoapall/NEET-Chemistry-Hard-Amines-MCQs-Master-Advanced-Concepts.",
       "url": "https://github.com/socialtoapall/NEET-Chemistry-Hard-Amines-MCQs-Master-Advanced-Concepts.",
@@ -6591,6 +7084,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "socialtoapall/neet-chemistry-hydrocarbons-mcqs-hard-level-practice-for-organic-mastery-tough-neet-patterns.": {
+      "repository": "socialtoapall/NEET-Chemistry-Hydrocarbons-MCQs-Hard-Level-Practice-for-Organic-Mastery-Tough-NEET-Patterns.",
+      "url": "https://github.com/socialtoapall/NEET-Chemistry-Hydrocarbons-MCQs-Hard-Level-Practice-for-Organic-Mastery-Tough-NEET-Patterns.",
+      "subjects": [
+        "organic"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "db483be1eed6aefb3aa74920cd0493175b93a90b",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "socialtoapall/neet-chemistry-medium-level-mcqs-strengthen-concepts-accuracy.": {
       "repository": "socialtoapall/NEET-Chemistry-Medium-Level-MCQs-Strengthen-Concepts-Accuracy.",
       "url": "https://github.com/socialtoapall/NEET-Chemistry-Medium-Level-MCQs-Strengthen-Concepts-Accuracy.",
@@ -6601,6 +7111,40 @@
       "repository_license_file_present": false,
       "license_file_git_blob_sha": null,
       "readme_file_git_blob_sha": "d46fe389b90b4a7185402778450ea0e7dd67738f",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/neet-chemistry-organic-chemistry-basic-principles-techniques-mcqs-all-levels-complete-practice-set.": {
+      "repository": "socialtoapall/NEET-Chemistry-Organic-Chemistry-Basic-Principles-Techniques-MCQs-All-Levels-Complete-Practice-Set.",
+      "url": "https://github.com/socialtoapall/NEET-Chemistry-Organic-Chemistry-Basic-Principles-Techniques-MCQs-All-Levels-Complete-Practice-Set.",
+      "subjects": [
+        "organic"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "aa23d42064ac53a21b694f042eb2f72543f844db",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/neet-chemistry-p-block-elements-hard-mcqs-test-your-inorganic-chemistry-mastery-": {
+      "repository": "socialtoapall/NEET-Chemistry-P-Block-Elements-Hard-MCQs-Test-Your-Inorganic-Chemistry-Mastery-",
+      "url": "https://github.com/socialtoapall/NEET-Chemistry-P-Block-Elements-Hard-MCQs-Test-Your-Inorganic-Chemistry-Mastery-",
+      "subjects": [
+        "inorganic"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "be4a480f93f148eb9cf0f86719246df69b6fec3c",
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": false,
@@ -6757,6 +7301,108 @@
       "repository_license_file_present": false,
       "license_file_git_blob_sha": null,
       "readme_file_git_blob_sha": "a4bc15b0f3a9f60ddab06e91bae4f03de7c2dcd6",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/p-block-elements-is-a-crucial-neet-chemistry-": {
+      "repository": "socialtoapall/P-Block-Elements-is-a-crucial-NEET-Chemistry-",
+      "url": "https://github.com/socialtoapall/P-Block-Elements-is-a-crucial-NEET-Chemistry-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "bd0705a284ca6a3a419a7ce1d09275834b98a2b5",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/p-block-elements-is-a-crucial-neet-chemistry-chapter-": {
+      "repository": "socialtoapall/P-Block-Elements-is-a-crucial-NEET-Chemistry-Chapter-",
+      "url": "https://github.com/socialtoapall/P-Block-Elements-is-a-crucial-NEET-Chemistry-Chapter-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "7249c48dd01fe0174e5355ec0f74c926fb796c0f",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/polymers-is-a-core-neet-chemistry-topic-": {
+      "repository": "socialtoapall/Polymers-is-a-core-NEET-Chemistry-topic-",
+      "url": "https://github.com/socialtoapall/Polymers-is-a-core-NEET-Chemistry-topic-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "65da7013ca8c93a69d00e147f90828311ce38d4e",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/polymers-is-a-high-yield-neet-chemistry-": {
+      "repository": "socialtoapall/Polymers-is-a-high-yield-NEET-Chemistry-",
+      "url": "https://github.com/socialtoapall/Polymers-is-a-high-yield-NEET-Chemistry-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "c7101bdb5fef3d1784ec028efb49ab711258c918",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/polymers-is-an-important-neet-chemistry-": {
+      "repository": "socialtoapall/Polymers-is-an-important-NEET-Chemistry-",
+      "url": "https://github.com/socialtoapall/Polymers-is-an-important-NEET-Chemistry-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "f388f48c87a38c5ca109d5f01d22ee19c7d2778d",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "socialtoapall/polymers-is-an-important-topic-neet-chemistry-": {
+      "repository": "socialtoapall/Polymers-is-an-important-topic-NEET-Chemistry-",
+      "url": "https://github.com/socialtoapall/Polymers-is-an-important-topic-NEET-Chemistry-",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "496196f6da86c0875bd2a4b8a7ce3a75d4d94e74",
       "third_party_content_risk": false,
       "claimed_original_exercise_rights_in_readme": false,
       "candidate_for_content_rights_review": false,
@@ -8180,7 +8826,7 @@
     }
   },
   "note": "License preflight does not approve, copy or release any question data.",
-  "total_checked": 480,
-  "candidates_with_repository_license_evidence": 143,
+  "total_checked": 518,
+  "candidates_with_repository_license_evidence": 145,
   "affirmatively_licensed_question_sets": 0
 }
