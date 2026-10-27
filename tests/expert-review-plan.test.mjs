@@ -26,7 +26,7 @@ test('deterministic irrespective of input order and capped per subject/topic',()
  const rows=[];
  for(const subject of ['analytical','physical','inorganic','organic'])
   for(let k=0;k<9;k++)rows.push({...q(subject+k,subject,'topic',k+1),
-   question:'Independent family '+k+' chemistry exercise'});
+   question:'Independent '+String.fromCharCode(65+k)+' chemistry exercise'});
  const a=buildPlan(rows,{perSubject:5,maxPerTopic:3});
  const b=buildPlan([...rows].reverse(),{perSubject:5,maxPerTopic:3});
  assert.deepEqual(a,b);
