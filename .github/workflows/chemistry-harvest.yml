@@ -49,6 +49,9 @@ on:
       - "scripts/audit-candidate-quality.mjs"
       - "scripts/audit-mcq-integrity.mjs"
       - "scripts/build-expert-review-plan.mjs"
+      - "scripts/build-publication-index.mjs"
+      - "tests/publication-index.test.mjs"
+      - "harvest/publication_approvals.json"
       - "tests/expert-review-plan.test.mjs"
       - "tests/mcq-integrity-audit.test.mjs"
       - "scripts/normalize-unpublished-candidates.mjs"
@@ -151,6 +154,8 @@ jobs:
         run: node --test tests/candidate-quality-audit.test.mjs
       - name: Verify deterministic chemistry expert review sampler
         run: node --test tests/expert-review-plan.test.mjs
+      - name: Verify explicit scientific, copyright and LaTeX release gate
+        run: node --test tests/publication-index.test.mjs
       - name: Verify MCQ answer key, provenance and publication safeguards
         run: node --test tests/mcq-integrity-audit.test.mjs
       - name: Verify fail-closed publication flag migration
@@ -219,9 +224,11 @@ jobs:
         run: node scripts/audit-mcq-integrity.mjs
       - name: Build fail-closed expert review plan grouped by source and numerical templates
         run: node scripts/build-expert-review-plan.mjs
+      - name: Export exclusively manually attested and hash-pinned approved questions
+        run: node scripts/build-publication-index.mjs
       - name: Commit only real additions or changes
         run: |
-          git add -- harvest/source_candidates.json harvest/quality_audit.json harvest/mcq_integrity_audit.json harvest/source_review_queue.json harvest/expert_review_plan.json
+          git add -- harvest/source_candidates.json harvest/quality_audit.json harvest/mcq_integrity_audit.json harvest/source_review_queue.json harvest/expert_review_plan.json release/chemistry-approved-manifest.json
           if [ -f harvest/external_source_catalog.json ]; then
             git add -- harvest/external_source_catalog.json
           fi
