@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "checked_mcq_candidates": 268,
+  "by_subject": {
+    "inorganic": 227,
+    "organic": 41
+  },
+  "issue_count": 0,
+  "issues": [],
+  "repeated_upstream_record_count": 0,
+  "repeated_upstream_records": [],
+  "expert_approved": 0,
+  "note": "Automated MCQ consistency and upstream-record reuse flags only; not a chemical correctness or third-party copyright determination. No publication rights are granted."
+}
