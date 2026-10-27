@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {subjects,canonicalRepo,bucketKey,requestedPages,rankingMode} from '../scripts/harvest-chemistry-sources.mjs';
+import {subjects,canonicalRepo,bucketKey,requestedPages,rankingMode,selectQueryShard} from '../scripts/harvest-chemistry-sources.mjs';
 import {safePath,questionId,normalizeQuestion,validateSource,mapRecord} from '../scripts/import-approved-chemistry.mjs';
 test('classifies chemistry subject',()=>{
   assert.deepEqual(subjects('organic chemistry study'),['organic']);
@@ -67,4 +67,14 @@ test('discovery ranking rotates updated, stars and best_match at half-hour slots
   assert.equal(rankingMode(opts,60*60*1000),'best_match');
   assert.equal(rankingMode(opts,90*60*1000),'updated');
   assert.throws(()=>rankingMode({ranking_modes:['foo&unsafe=true']},0));
+});
+
+test('fast 10-minute shards cover each query once per three runs without gaps',()=>{
+  const qs=Array.from({length:54},(_,i)=>'chemistry-'+i);
+  const shards=[0,1,2].map(i=>selectQueryShard(qs,'auto',i*10*60*1000));
+  assert.ok(shards.every(x=>x.length===18));
+  assert.equal(new Set(shards.flat()).size,54);
+  assert.deepEqual(selectQueryShard(qs,'all'),qs);
+  assert.throws(()=>selectQueryShard(qs,'bad'));
+  assert.throws(()=>selectQueryShard([],0));
 });

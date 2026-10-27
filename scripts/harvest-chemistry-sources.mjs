@@ -99,6 +99,14 @@ function writeCatalog(map,stats){
 }
 class BudgetDone extends Error{}
 class QueryError extends Error{}
+// In fast scheduled discovery, split queries into three stable 10-minute shards.
+export function selectQueryShard(queries,shard='all',atMs=Date.now()){
+  if(!Array.isArray(queries)||!queries.length)throw Error('No queries');
+  if(shard==='all')return queries;
+  const n=shard==='auto'?Math.floor(atMs/(10*60*1000))%3:Number(shard);
+  if(!Number.isInteger(n)||n<0||n>2)throw Error('Invalid fast discovery shard');
+  return queries.filter((_,i)=>i%3===n);
+}
 export function rankingMode(cfg,atMs=Date.now()){
   const modes=cfg.ranking_modes||['updated'];
   if(!Array.isArray(modes)||!modes.length||
@@ -156,10 +164,11 @@ export async function run(){
     !Number.isInteger(cfg.max_requests_per_run)||!Number.isInteger(cfg.max_catalog_entries))throw Error('Invalid search bounds');
   const map=loadCatalog(),previous=map.size,day=stamp().slice(0,10);
   const ranking=rankingMode(cfg);
+  const querySubset=selectQueryShard(cfg.queries,process.env.CHEMISTRY_QUERY_SHARD||'all');
   const deadline=Date.now()+cfg.max_runtime_minutes*60000;
   let searches=0,matched=0,added=0,updated=0,filtered=0,capped=0,incomplete=0;
   const errors=[],queryCaps=[];
-  searchLoop: for(const query of cfg.queries){
+  searchLoop: for(const query of querySubset){
     let maxPages=cfg.max_pages_per_query;
     for(let page=1;page<=maxPages;page++){
       let data;
@@ -192,6 +201,8 @@ export async function run(){
   writeCatalog(map);
   summary(['### University chemistry source harvest',
     '- Search ranking this run: '+ranking+' (30-minute rotation)',
+    '- Queries scheduled this run: '+querySubset.length+'/'+cfg.queries.length+
+     ' (shard='+String(process.env.CHEMISTRY_QUERY_SHARD||'all')+')',
     '- GitHub Search API requests: '+requestCount+' (successful: '+searches+')',
     '- Raw result hits (may repeat): '+matched,'- Filtered out as irrelevant/forks/archived: '+filtered,
     '- New unique source candidates: '+added,'- Refreshed metadata: '+updated,
