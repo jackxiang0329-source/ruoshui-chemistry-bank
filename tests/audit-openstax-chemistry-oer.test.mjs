@@ -56,3 +56,38 @@ test('source questions differing only numerically remain de-dup review flags, ne
  assert.equal(p.total_by_flag.clean_self_contained_with_source_solution,2);
  assert.equal(p.publication_eligible,0);
 });
+
+test('independent source-key errors appear in explicit reviewer list but cannot be published',()=>{
+ const x=candidate('a','51011',1);
+ const other=candidate('b','51034',6);
+ const scientific={schema_version:1,reviewed_source_cases:2,
+  scholarly_human_confirmations:0,rights_confirmations:0,publishable:0,
+  items:[{source_id:x.id,source_path:x.source_path,
+    source_exercise_ordinal:x.source_exercise_ordinal,source_url:x.source_url,
+    question_sha256:'a'.repeat(64),machine_computation_checked:true,
+    source_item_rights_verified:false,release_eligible:false,
+    independent_human_chemist_review_completed:false,
+    issue:'source_key_chemistry_error'},
+   {source_id:other.id,source_path:other.source_path,
+    source_exercise_ordinal:other.source_exercise_ordinal,source_url:other.source_url,
+    question_sha256:'b'.repeat(64),machine_computation_checked:true,
+    source_item_rights_verified:false,release_eligible:false,
+    independent_human_chemist_review_completed:false,
+    issue:null}]};
+ const rows=[{...x,question:'A long test question with independent numeric results',
+  question_sha256:'a'.repeat(64)},{
+  ...other,question:'Another long test chemistry exercise with numeric answer',
+  question_sha256:'b'.repeat(64)}];
+ const p=buildReview(rows,10,[],scientific);
+ assert.equal(p.independent_numeric_source_reviews,2);
+ assert.equal(p.detected_source_key_errors,1);
+ assert.equal(p.source_key_errata_priority[0].error_code,'source_key_chemistry_error');
+ assert.equal(p.source_key_errata_priority[0].approved,false);
+ assert.ok(p.review_queue.every(q=>q.approved===false));
+ assert.throws(()=>buildReview(rows,10,[],{...scientific,rights_confirmations:1}),/unapproved/);
+ assert.throws(()=>buildReview(rows,10,[],{...scientific,
+   items:scientific.items.map((z,i)=>i===0?{...z,source_item_rights_verified:true}:z)}),/Cannot use/);
+ assert.throws(()=>buildReview(rows,10,[],{...scientific,
+   items:scientific.items.map((z,i)=>i===0?{...z,question_sha256:'c'.repeat(64)}:z)}),/stale/);
+ assert.throws(()=>buildReview(rows.slice(0,1),10,[],scientific),/Orphan/);
+});
