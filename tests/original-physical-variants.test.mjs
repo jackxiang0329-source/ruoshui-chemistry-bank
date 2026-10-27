@@ -27,7 +27,7 @@ test('all numerical solutions pass independently inverted chemical equations',()
   assert.equal(checkInverse(type,q.parameters,expected),true);
   assert.equal(questionId(q.question),q.id);
   assert.ok(q.question.length>65&&q.answer.length>20&&q.explanation.length>20);
-  assert.ok(/\\d/.test(q.question));
+  assert.ok(/[0-9]/.test(q.question));
  }
 });
 test('correct sign, finite positive observables and explicit energy units',()=>{
