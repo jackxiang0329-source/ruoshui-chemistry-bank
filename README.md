@@ -6,8 +6,8 @@
 
 ## 当前候选内容快照（2026-10-27）
 
-- 已验证 GitHub `main` 上共有 **1703** 份候选内容：无机 849、分析 193、物理 194、有机 467。
-- 其中 **1425** 份练习候选、**278** 份学习卡；不是 1703 道独立可出卷考试真题。
+- 已验证 GitHub `main` 上共有 **1715** 份候选内容：无机 849、分析 193、物理 206、有机 467。
+- 其中 **1437** 份练习候选、**278** 份学习卡；不是 1715 道独立可出卷考试真题。
 - 全部 `awaiting_expert_review`、`publishable=false`；专家正式批准 **0** 道。
 - 机器审计发现完全同题干 0 组、相同题型模板 66 组；并不表示跨语言或语义重复已解决。
 - [本轮新增 EIS 原创习题和 Apache-2.0 来源审计](harvest/run_logs/2026-10-27-pyeis-original-eis.md)。
@@ -111,9 +111,16 @@
 
 ## McMaster 大学量子化学真实课程练习（2026-10-27）
 
-- 从 [CHEM 3PA3 来源仓库](https://github.com/PaulWAyers/IntroQChemProblems) 两份公开 Jupyter Notebook（题目与教师参考键）按固定版本整理了 **9 道不同课程练习题**，提供中文重新表述、解析和逐题原文件 cell 索引；不同于批量生成的数字变式。
+- 从 [CHEM 3PA3 来源仓库](https://github.com/PaulWAyers/IntroQChemProblems) 两份公开 Jupyter Notebook（题目与教师参考键）按固定版本整理了 **21 道不同课程练习题（前一轮 9 道、本轮再加 12 道）**，提供中文重新表述、解析和逐题原文件 cell 索引；不同于批量生成的数字变式。
 - [固定来源与许可证据](harvest/pinned_introqchem_2021.json)、[固定题导入器](scripts/import-introqchem-2021.mjs)、[回归测试](tests/introqchem-2021.test.mjs)、[原参考键问题明细](harvest/import_reports/introqchem_2021_source_exercises.json)。
 - 纠正了激光作用力单位（N）、复共轭薛定谔方程的 ℏ² 系数、以及原学生版双向本征函数命题与教师答案键只给单向命题的不一致。
-- 课程主资料宣称 CC0，但原作者明确保留第三方材料版权。**新增九题全部 source.content_rights_verified=false 且 item_level_rights_review_pending=true**：逐题授权或作者身份确认未完成，不允许被正式组卷系统调用。
-- [机器审计](harvest/quality_audit.json)现区分明确声明“内容权利已核验”与“明确待核权”。最新为前者 **1694**、后者 **9**、未标注 **0**；此为候选元数据状态，不代表化学专家对科学性、教学难度、版权链或出版许可的最终批准。
-- 最新 **1703** 份候选中包括练习候选 **1425** 与学习卡 **278**，正式专家审核通过并可发布的仍为 **0**。
+- 课程主资料宣称 CC0，但原作者明确保留第三方材料版权。**新增 21 题全部 source.content_rights_verified=false 且 item_level_rights_review_pending=true**：逐题授权或作者身份确认未完成，不允许被正式组卷系统调用。
+- [机器审计](harvest/quality_audit.json)现区分明确声明“内容权利已核验”与“明确待核权”。最新为前者 **1694**、后者 **21**、未标注 **0**；此为候选元数据状态，不代表化学专家对科学性、教学难度、版权链或出版许可的最终批准。
+- 最新 **1715** 份候选中包括练习候选 **1437** 与学习卡 **278**，正式专家审核通过并可发布的仍为 **0**。
+
+## 2026-10-27：大学课程答案差异发布闸门与历史版权证据修复
+
+- [逐题专家复核计划](harvest/expert_review_plan.json)现标记 21 份来源权利待核实题目、13 份存在上游答案疑点的候选、14 份需要人工复核的概念题。三类可能重叠，不应合并为独立题数。
+- [正式发布检查](scripts/build-publication-index.mjs)要求原参考答案存在争议时由审稿人员显式确认 source_discrepancy_acknowledged；概念题还必须确认 conceptual_answer_checked。只要 item_level_rights_review_pending 仍为 true，题目一律不能进入正式发布清单。
+- [旧导入器证据修复](scripts/import-approved-chemistry.mjs)给早期 5 道 MuzaPro 有机化学题补齐来源 LICENSE、README 以及固定提交版本证据。题干、答案、原记录编号或版权字段不符时拒绝覆盖，不新增专家审批。
+- 完整候选内容共 1715 份，其中练习 1437 份、学习卡 278 份；经专家批准可正式出卷的题仍为 0。
