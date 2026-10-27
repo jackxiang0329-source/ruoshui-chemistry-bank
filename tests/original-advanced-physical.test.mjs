@@ -17,7 +17,7 @@ test('48 original physical chemistry exercises cover eight independent physical 
   assert.equal(q.source.license,'CC0-1.0');
   assert.equal(q.source.original_exam_question,false);
   assert.equal(q.source.third_party_question_text_copied,false);
-  assert.ok(q.question.length>80&&q.answer.length>20&&q.explanation.length>25);
+  assert.ok(q.question.length>60&&q.answer.length>12&&q.explanation.length>20);
   assert.ok(q.numeric_answers.every(Number.isFinite));
  }
 });

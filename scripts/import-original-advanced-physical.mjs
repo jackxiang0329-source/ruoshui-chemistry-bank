@@ -28,7 +28,7 @@ export function parameters(method,index){
  case 'binary_raoult_vle':return {xA:f(0.28+0.065*i,3)*1,pA_kPa:80+4*i,pB_kPa:42+2*i};
  case 'arrhenius_two_temperature':{
   const T1=295+2*i,T2=325+3*i,k1=0.025+0.008*i,Ea_J_mol=35000+1200*i;
-  const k2=k1*Math.exp((Ea_J_mol/R)*(1/T1-1/T2));
+  const k2=Number(f(k1*Math.exp((Ea_J_mol/R)*(1/T1-1/T2)),7));
   return {T1_K:T1,T2_K:T2,k1_s_1:k1,k2_s_1:k2};
  }
  case 'ideal_gas_isothermal_entropy':{
@@ -113,7 +113,7 @@ function textFor(method,p,v){
   explanation='各组分分压由拉乌尔定律给出，相加为总压；气相摩尔分数由道尔顿分压关系求得。';break;
  case 'arrhenius_two_temperature':
   topic='arrhenius_activation_energy_two_temperatures';units='kJ/mol';
-  question='物理化学·阿伦尼乌斯活化能：在 '+f(p.T1_K,2)+' K 和 '+f(p.T2_K,2)+' K 测得同一基元反应的速率常数 k₁='+f(p.k1_s_1,5)+' s⁻¹、k₂='+f(p.k2_s_1,7)+' s⁻¹。假设前因子 A 与活化能在温区近似不变，求活化能 Ea（kJ/mol）；计算按给定未舍入速率常数。';
+  question='物理化学·阿伦尼乌斯活化能：在 '+f(p.T1_K,2)+' K 和 '+f(p.T2_K,2)+' K 测得同一基元反应的速率常数 k₁='+f(p.k1_s_1,5)+' s⁻¹、k₂='+f(p.k2_s_1,7)+' s⁻¹。假设前因子 A 与活化能在温区近似不变，求活化能 Ea（kJ/mol）；请使用题目给定的数值计算。';
   answer='Ea=R ln(k₂/k₁)/(1/T₁−1/T₂)='+f(v[0],4)+' kJ/mol。';
   explanation='两温度阿伦尼乌斯方程相减消去前因子；分母单位为 K⁻¹，气体常数取 J/(mol·K)，最终除以 1000。';break;
  case 'ideal_gas_isothermal_entropy':
@@ -129,7 +129,7 @@ function textFor(method,p,v){
  case 'langmuir_adsorption':
   topic='langmuir_surface_coverage';units='dimensionless';
   question='物理化学·朗缪尔单层吸附：假定表面均匀、无相互作用、单层平衡吸附，平衡常数 K='+f(p.K_per_bar,4)+' bar⁻¹，气相压力 p='+f(p.pressure_bar,3)+' bar。求表面覆盖度 θ。';
-  answer='θ=Kp/(1+Kp)='+f(v[0],6)+'。';
+  answer='θ=('+f(p.K_per_bar,4)+'×'+f(p.pressure_bar,3)+')/[1+'+f(p.K_per_bar,4)+'×'+f(p.pressure_bar,3)+']='+f(v[0],6)+'。';
   explanation='吸附占据率等于吸附项 Kp 与总配分项 1+Kp 之比，结果应满足 0<θ<1。';break;
  case 'harmonic_vibration_energy':
   topic='harmonic_oscillator_vibrational_spacing';units='kJ/mol';
@@ -139,7 +139,7 @@ function textFor(method,p,v){
  case 'photon_energy_wavelength':
   topic='molecular_electronic_transition_photon';units='nm';
   question='物理化学·分子电子跃迁：某分子允许跃迁所吸收的单光子能量为 '+f(p.photon_energy_eV,3)+' eV。假定真空传播，按 E=hc/λ 求光子波长 λ（nm）；取 h=6.62607015×10⁻³⁴ J·s、c=299792458 m/s、1 eV=1.602176634×10⁻¹⁹ J。';
-  answer='λ=hc/E='+f(v[0],5)+' nm。';
+  answer='λ=(6.62607015×10⁻³⁴×299792458)/('+f(p.photon_energy_eV,3)+'×1.602176634×10⁻¹⁹)×10⁹='+f(v[0],5)+' nm。';
   explanation='将 eV 转换为 J，计算得到波长 m 后乘 10⁹ 转 nm；忽略介质折射率。';break;
  case 'eyring_transition_state':
   topic='eyring_activation_free_energy';units='kJ/mol';
