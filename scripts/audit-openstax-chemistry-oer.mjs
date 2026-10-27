@@ -53,7 +53,8 @@ export function buildReview(rows,limit=180,mainQuestions=[]){
   const chapter=q.source_path,plain=q.has_source_solution&&!q.requires_media&&!q.requires_mathml,
    score=(ready?100:0)+(plain?20:0)+(q.has_source_solution?15:0)+
     (reference?-85:0)+(answerDepend?-60:0)+(strictOverlap?-95:0)+
-    (q.requires_media?-50:0)+(q.requires_mathml?-20:0);
+    (q.requires_media?-50:0)+(q.requires_mathml?-20:0)+
+    (!q.has_source_solution?-30:0);
   const item={id:q.id,source_path:chapter,source_url:q.source_url,
    source_exercise_ordinal:q.source_exercise_ordinal,source_sha:q.source_blob_sha,
    original_solution_attached:q.has_source_solution,
