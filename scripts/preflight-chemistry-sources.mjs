@@ -7,7 +7,7 @@ const ROOT=new URL('../',import.meta.url),QUEUE=new URL('harvest/source_review_q
 const OUT=new URL('harvest/license_preflight.json',ROOT);
 const TOKEN=process.env.GITHUB_TOKEN;
 export const sortKeys=r=>Object.fromEntries(Object.entries(r).sort(([a],[b])=>a.localeCompare(b)));
-export function selectedForReview(queue,reviewed,limit=12){
+export function selectedForReview(queue,reviewed,limit=20){
  if(!Array.isArray(queue)||!Number.isInteger(limit)||limit<1||limit>24)throw Error('Invalid preflight query');
  const seen=new Set();
  return queue.filter(x=>{
