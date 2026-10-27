@@ -89,3 +89,9 @@
 - 新增 `scripts/import-original-instrumental-analytical.mjs`：**8 个独立方法 × 8 组参数 = 64** 道仪器分析原创计算练习，已由 CI 导入。覆盖吸收分光、标准加入、色谱分离度与塔板数、库仑分析、电导、AgCl 重量分析及 Stern–Volmer 荧光猝灭；每题数值结果做观测量反算。
 - [科学与版权测试](tests/original-instrumental-analytical.test.mjs)；全部仍是专家待审的原创参数变式，并非转载真题或已批准出版内容。
 - [Hugging Face / Zenodo 人工核权优先队列](harvest/external_review_queue.json)自动根据题目线索、大学学科、许可声明、研究论文/高中/模型生成风险排序；**元数据从不等于逐题复制授权**。
+
+## 自动专家复核分层抽样（机器预审，并非专家批准）
+
+- [专家复核代表题清单](harvest/expert_review_plan.json)：按四科、知识点、来源及数值模板进行代表题抽样，优先列出缺失答案、来源许可或待语义去重的内容，减少 12 道参数变式占据 12 个复核名额。
+- [生成器](scripts/build-expert-review-plan.mjs)与[回归测试](tests/expert-review-plan.test.mjs)由每 30 分钟自动流程运行。**只推荐复核顺序**，不修改任何题目，不自动批准整组题目，更不会写入可发表题库。
+- 每份候选仍需独立核验科学正确性、来源、解答、年级与排版。集群中代表题合格，不代表其余参数题自动合格。
