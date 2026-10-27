@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-27",
+  "purpose": "Additional source provenance and per-content rights review; source registration does not mean question import.",
+  "sources": [
+    {
+      "source": "michaelmarty/AnalChem",
+      "url": "https://github.com/michaelmarty/AnalChem",
+      "pin": "d0d0b71a82c8bd4ed19ebc33d5d37f02975bd06c",
+      "category": "analytical",
+      "format": "Jupyter notebooks and lab materials",
+      "repository_license": "BSD-2-Clause",
+      "license_evidence": "https://github.com/michaelmarty/AnalChem/blob/d0d0b71a82c8bd4ed19ebc33d5d37f02975bd06c/LICENSE",
+      "license_owner": "Copyright (c) 2020, michaelmarty",
+      "rights_status": "source_code_license_confirmed; individual exercises and datasets not separately audited",
+      "import_questions": false,
+      "quality_note": "CHEM 325 and CHEM 326 class materials; some content accompanies an external textbook; do not automatically mirror notebook questions or student data",
+      "next_action": "inspect each notebook's original exercise prompts and embedded resources; secure content-level rights before import"
+    },
+    {
+      "source": "erik-menke/AnalyticalProjects",
+      "url": "https://github.com/erik-menke/AnalyticalProjects",
+      "category": "analytical",
+      "format": "Jupyter lab exercises",
+      "repository_license": "NOT_VERIFIED",
+      "rights_status": "no explicit root LICENSE in directory listing",
+      "import_questions": false,
+      "quality_note": "Some course data absent; instructor answer keys not public",
+      "next_action": "ask maintainer for question reproduction permission or locate explicit content license"
+    },
+    {
+      "source": "microsoft/chemistry-qa",
+      "url": "https://github.com/microsoft/chemistry-qa",
+      "category": "general",
+      "format": "TSV QA dataset",
+      "repository_license": "NOT_VERIFIED",
+      "rights_status": "questions sourced from Socratic; third-party redistribution rights unverified",
+      "import_questions": false,
+      "quality_note": "~4,500 attributed items according to README; no rights confirmation",
+      "next_action": "require item/content provenance and redistribution authorization"
+    },
+    {
+      "source": "LibreTexts Chemistry Worksheets",
+      "url": "https://chem.libretexts.org/Ancillary_Materials/Worksheets",
+      "category": "inorganic organic analytical physical",
+      "format": "educational worksheets",
+      "repository_license": "CC BY-NC-SA 4.0 page-level notice",
+      "rights_status": "non-commercial share-alike and third-party exception review required for public mirror",
+      "import_questions": false,
+      "quality_note": "Site aggregates remixed content; page-by-page rights audit needed",
+      "next_action": "record item-specific attribution and CC BY-NC-SA compliance before any copying"
+    },
+    {
+      "source": "ASDL Active Learning Materials",
+      "url": "https://asdlib.org/activelearningmaterials/active-learning-in-class-activities/",
+      "category": "analytical",
+      "format": "editable activities",
+      "repository_license": "CC BY-NC-SA 4.0",
+      "rights_status": "explicit NC and SA conditions; per-file authorship and attribution remain to check",
+      "import_questions": false,
+      "quality_note": "equilibria, spectroscopy, separations and mass spectrometry",
+      "next_action": "copyright and NC/SA review then per-document extraction"
+    },
+    {
+      "source": "XythicK/Chemistry",
+      "url": "https://huggingface.co/datasets/XythicK/Chemistry",
+      "category": "organic inorganic physical",
+      "format": "dataset; about 62.9M rows claimed by card",
+      "repository_license": "MIT (dataset card claim)",
+      "rights_status": "provenance of individual generated questions and rights unverified",
+      "import_questions": false,
+      "quality_note": "large size and answer ambiguity; inspect representative records before use",
+      "next_action": "review dataset provenance, generative origin, quality and license chain"
+    }
+  ]
+}
