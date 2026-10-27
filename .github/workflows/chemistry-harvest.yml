@@ -34,6 +34,7 @@ on:
       - "scripts/audit-candidate-quality.mjs"
       - "scripts/normalize-unpublished-candidates.mjs"
       - "tests/normalize-unpublished-candidates.test.mjs"
+      - "tests/muzapro-existing-coverage.test.mjs"
       - "tests/candidate-quality-audit.test.mjs"
       - "scripts/import-original-eis-pyeis.mjs"
       - "tests/original-eis-pyeis.test.mjs"
@@ -104,6 +105,8 @@ jobs:
         run: node --test tests/qcedu-introqm.test.mjs
       - name: Verify pinned Reaction Learn licensed-card importer
         run: node --test tests/chemtrain-reaction-learn.test.mjs
+      - name: Verify existing MIT Muza quiz coverage and prevent duplicate imports
+        run: node --test tests/muzapro-existing-coverage.test.mjs
       - name: Verify candidate review buckets and semantic overlap audit
         run: node --test tests/candidate-quality-audit.test.mjs
       - name: Verify fail-closed publication flag migration

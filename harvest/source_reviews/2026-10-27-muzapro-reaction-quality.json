@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-27",
+  "repository": "MuzaPro/Organic-Chemistry-Quiz-JS",
+  "upstream_commit": "71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc",
+  "upstream_data_path": "data/questions.json",
+  "upstream_data_git_blob_sha": "e4fde59d9f5faa1ff0ed82fa57ae7b05f276292a",
+  "license": "MIT",
+  "license_git_blob_sha": "4ef30f44a9a6ade70614188412f98c76aaa3b14e",
+  "license_notice_in_repo": "third_party/licenses/MUZA_ORGANIC_MIT_LICENSE.txt",
+  "source_license_review_in_repo": "docs/SOURCE_MUZA_ORGANIC_LICENSE_REVIEW.md",
+  "existing_source_records": 5,
+  "new_source_records_this_run": 0,
+  "duplicate_records_added": 0,
+  "source_ids": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+  ],
+  "per_item_review": [
+    {
+      "source_id": "q1",
+      "topic": "Williamson ether SN2",
+      "status": "candidate_only",
+      "issue": "Question is a simple reagent-selection task; solvents and SN2 selectivity still need expert review."
+    },
+    {
+      "source_id": "q2",
+      "topic": "tert-butyl chloride SN1 solvolysis",
+      "status": "requires_conditions_review",
+      "issue": "Original prompt says under acidic conditions, but the selected reagent pair is ethanol and tert-butyl chloride. Conditions, competitive elimination, and acid role require clarification before publication."
+    },
+    {
+      "source_id": "q3",
+      "topic": "E2 elimination of tert-butyl bromide",
+      "status": "candidate_only",
+      "issue": "Base/substrate pair is plausible; temperature and solvent affect outcome and should be clarified in a published problem."
+    },
+    {
+      "source_id": "q4",
+      "topic": "Fischer esterification",
+      "status": "requires_catalyst_review",
+      "issue": "Prompt explicitly describes acid-catalyzed esterification, but selected reagent pair lists only acetic acid and ethanol. Explicit catalyst and equilibrium assumptions are missing."
+    },
+    {
+      "source_id": "q5",
+      "topic": "Grignard addition to ethylene oxide",
+      "status": "requires_workup_review",
+      "issue": "Acidic aqueous workup is needed for 2-phenylethanol, but the selected reagent pair lists only phenylmagnesium bromide and ethylene oxide. Require explicit anhydrous conditions and separate workup."
+    }
+  ],
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "expert_approved": 0,
+  "duplicate_prevention": "New proposed importer detected an already-imported source question ID q5, failed closed, and was reverted without adding candidate records.",
+  "failed_workflow_run": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/actions/runs/40447995423",
+  "failed_step": "Import text-only MIT organic reaction quiz adaptations",
+  "revert_commit": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/commit/29a9b1f9880f6421ee1cdd56a7d4efd08fa3d7e4",
+  "other_sources_screened": [
+    {
+      "repository": "pranav11722/ChemQuiz-Pro-",
+      "license": "MIT",
+      "scope": "index.html embeds 3 multiple-choice items; one Raoult-law introductory concept, other two heat/mass transfer engineering; not a suitable new university four-chemistry dataset",
+      "imported": 0
+    },
+    {
+      "repository": "jayemscript/chemverse",
+      "license": "MIT",
+      "scope": "data/quiz.json contains 12 elementary/general chemistry quiz groups, README explicitly kid-friendly; not undergraduate-level new candidate set",
+      "imported": 0
+    },
+    {
+      "repository": "prefabsprout/anchem_quiz",
+      "license": "no repository LICENSE detected",
+      "scope": "analytical chemistry desktop quiz, source rights not verified",
+      "imported": 0
+    },
+    {
+      "repository": "dipamsen/chemguessr",
+      "license": "no repository LICENSE detected",
+      "scope": "inorganic quiz web application, content rights unverified",
+      "imported": 0
+    },
+    {
+      "repository": "Kasa-SENSEI/InorganicChemistryQuiz",
+      "license": "no repository LICENSE detected",
+      "scope": "inorganic quiz HTML app, content rights unverified",
+      "imported": 0
+    },
+    {
+      "repository": "sergeqzin/pcivmr",
+      "license": "CC0-1.0",
+      "scope": "LaTeX package for physical chemistry IV problem-set typesetting, but root only contains LICENSE and README, no source problems",
+      "imported": 0
+    },
+    {
+      "repository": "xavierprat/Physical-Chemistry-with-Jupyter",
+      "license": "unverified",
+      "scope": "linked from an educational resource page but GitHub repository lookup returned 404 in this run; no contents or license could be verified",
+      "imported": 0
+    }
+  ],
+  "baseline_candidates": 1122,
+  "baseline_subject_counts": {
+    "inorganic": 622,
+    "organic": 414,
+    "analytical": 33,
+    "physical": 53
+  },
+  "baseline_exact_duplicate_groups": 0,
+  "baseline_same_template_families": 36,
+  "pending": "Expert chemical review of the five Muza questions; cross-source semantic dedup beyond exact hashes; verify source authorship of any embedded third-party text; seek new properly licensed undergraduate-level datasets rather than importing already-covered sources.",
+  "notes": "No new compliant candidate records imported in this run. Existing source license was already recorded before this run. Source discovery does not imply content redistribution rights."
+}
