@@ -8,6 +8,8 @@ on:
       - "scripts/harvest-public-chemistry.mjs"
       - "tests/harvest-public-chemistry.test.mjs"
       - "harvest/public_dataset_queries.json"
+      - "scripts/prioritize-chemistry-sources.mjs"
+      - "tests/prioritize-chemistry-sources.test.mjs"
       - "scripts/import-approved-chemistry.mjs"
       - "tests/harvest.test.mjs"
       - "harvest/search_queries.json"
@@ -82,6 +84,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - name: Verify source metadata review prioritization
+        run: node --test tests/prioritize-chemistry-sources.test.mjs
       - name: Verify collector
         run: node --test tests/harvest.test.mjs
       - name: Verify TMC importer without executing upstream code
@@ -135,6 +139,8 @@ jobs:
           wait "$EXTERNAL_PID" || EXTERNAL_RESULT=$?
           if [ "$GITHUB_RESULT" -ne 0 ]; then exit "$GITHUB_RESULT"; fi
           if [ "$EXTERNAL_RESULT" -ne 0 ]; then exit "$EXTERNAL_RESULT"; fi
+      - name: Build fast human license review queue from new discoveries
+        run: node scripts/prioritize-chemistry-sources.mjs
       - name: Import license-approved question records
         run: node scripts/import-approved-chemistry.mjs
       - name: Import pinned CC BY 4.0 TMC Learn complex exercises
@@ -171,7 +177,7 @@ jobs:
         run: node scripts/audit-candidate-quality.mjs
       - name: Commit only real additions or changes
         run: |
-          git add -- harvest/source_candidates.json harvest/quality_audit.json
+          git add -- harvest/source_candidates.json harvest/quality_audit.json harvest/source_review_queue.json
           if [ -f harvest/external_source_catalog.json ]; then
             git add -- harvest/external_source_catalog.json
           fi
