@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "4b23d96285f0397906e8251e84e521ec26bd2c33ee245abcf975683b4e8316ef",
+  "subject": "organic",
+  "topic": "aromatic_regioselectivity",
+  "level": "undergraduate",
+  "question_type": "single_choice_regioselectivity",
+  "question": "有机化学·区域选择性（Reactivity Learn 改编）：底物 Indole，试剂及条件 POCl₃, DMF (Vilsmeier)。该反应主要发生在芳香环的哪个位置？（请选择通常的主要反应位点。）\nA. N1\nB. C2\nC. C3",
+  "answer": "C. C3",
+  "correct_option": "C",
+  "options": [
+    {
+      "key": "A",
+      "text": "N1"
+    },
+    {
+      "key": "B",
+      "text": "C2"
+    },
+    {
+      "key": "C",
+      "text": "C3"
+    }
+  ],
+  "explanation": "来源英文解析（待专业审校）：At C3 the nitrogen stabilises the cation without disrupting the benzene ring.",
+  "source": {
+    "repository": "ChemTrain/reactivity-learn",
+    "commit": "be6505465d92fc983aabc40bd9863de791b0d2cf",
+    "file": "reactivity_learn.html",
+    "git_blob_sha": "9779b9167ff4af2445a1efe845db3119928f6d12",
+    "source_group_id": "arom",
+    "source_question_index": 10,
+    "source_name": "Indole",
+    "license": "CC BY 4.0",
+    "code_license": "MIT",
+    "attribution": "Reactivity Learn by Quentin Bindschaedler (ChemTrain), https://github.com/ChemTrain/reactivity-learn, licensed under CC BY 4.0.",
+    "license_evidence": "https://github.com/ChemTrain/reactivity-learn/blob/be6505465d92fc983aabc40bd9863de791b0d2cf/LICENSE-CONTENT.md",
+    "license_git_blob_sha": "b1392cba296c88644742175533500dcd2ffd106a",
+    "url": "https://github.com/ChemTrain/reactivity-learn/blob/be6505465d92fc983aabc40bd9863de791b0d2cf/reactivity_learn.html",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "changes": "Chinese text-only site-selectivity MCQ adapted from author-licensed card; options rotated; no molecular images, Mayr experimental N/sN/E values or outside articles redistributed."
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "b194fe6650d73a40709ff2394514cc694db1396bebcf6aabb45093764f8f2780",
+  "subject": "organic",
+  "topic": "aromatic_regioselectivity",
+  "level": "undergraduate",
+  "question_type": "single_choice_regioselectivity",
+  "question": "有机化学·区域选择性（Reactivity Learn 改编）：底物 Furan，试剂及条件 Ac₂O, BF₃·OEt₂。该反应主要发生在芳香环的哪个位置？（请选择通常的主要反应位点。）\nA. C2\nB. C3",
+  "answer": "A. C2",
+  "correct_option": "A",
+  "options": [
+    {
+      "key": "A",
+      "text": "C2"
+    },
+    {
+      "key": "B",
+      "text": "C3"
+    }
+  ],
+  "explanation": "来源英文解析（待专业审校）：As with pyrrole: the cation from C2 attack is shared over three atoms.",
+  "source": {
+    "repository": "ChemTrain/reactivity-learn",
+    "commit": "be6505465d92fc983aabc40bd9863de791b0d2cf",
+    "file": "reactivity_learn.html",
+    "git_blob_sha": "9779b9167ff4af2445a1efe845db3119928f6d12",
+    "source_group_id": "arom",
+    "source_question_index": 11,
+    "source_name": "Furan",
+    "license": "CC BY 4.0",
+    "code_license": "MIT",
+    "attribution": "Reactivity Learn by Quentin Bindschaedler (ChemTrain), https://github.com/ChemTrain/reactivity-learn, licensed under CC BY 4.0.",
+    "license_evidence": "https://github.com/ChemTrain/reactivity-learn/blob/be6505465d92fc983aabc40bd9863de791b0d2cf/LICENSE-CONTENT.md",
+    "license_git_blob_sha": "b1392cba296c88644742175533500dcd2ffd106a",
+    "url": "https://github.com/ChemTrain/reactivity-learn/blob/be6505465d92fc983aabc40bd9863de791b0d2cf/reactivity_learn.html",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "changes": "Chinese text-only site-selectivity MCQ adapted from author-licensed card; options rotated; no molecular images, Mayr experimental N/sN/E values or outside articles redistributed."
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false
+}

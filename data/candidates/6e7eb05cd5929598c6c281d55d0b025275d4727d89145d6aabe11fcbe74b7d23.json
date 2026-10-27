@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "6e7eb05cd5929598c6c281d55d0b025275d4727d89145d6aabe11fcbe74b7d23",
+  "subject": "organic",
+  "topic": "aromatic_regioselectivity",
+  "level": "undergraduate",
+  "question_type": "single_choice_regioselectivity",
+  "question": "有机化学·区域选择性（Reactivity Learn 改编）：底物 Thiophene，试剂及条件 CH₃COCl, SnCl₄。该反应主要发生在芳香环的哪个位置？（请选择通常的主要反应位点。）\nA. C3\nB. C2",
+  "answer": "B. C2",
+  "correct_option": "B",
+  "options": [
+    {
+      "key": "A",
+      "text": "C3"
+    },
+    {
+      "key": "B",
+      "text": "C2"
+    }
+  ],
+  "explanation": "来源英文解析（待专业审校）：As with furan and pyrrole, attack at C2 gives a cation shared over three atoms, one of them sulfur.",
+  "source": {
+    "repository": "ChemTrain/reactivity-learn",
+    "commit": "be6505465d92fc983aabc40bd9863de791b0d2cf",
+    "file": "reactivity_learn.html",
+    "git_blob_sha": "9779b9167ff4af2445a1efe845db3119928f6d12",
+    "source_group_id": "arom",
+    "source_question_index": 12,
+    "source_name": "Thiophene",
+    "license": "CC BY 4.0",
+    "code_license": "MIT",
+    "attribution": "Reactivity Learn by Quentin Bindschaedler (ChemTrain), https://github.com/ChemTrain/reactivity-learn, licensed under CC BY 4.0.",
+    "license_evidence": "https://github.com/ChemTrain/reactivity-learn/blob/be6505465d92fc983aabc40bd9863de791b0d2cf/LICENSE-CONTENT.md",
+    "license_git_blob_sha": "b1392cba296c88644742175533500dcd2ffd106a",
+    "url": "https://github.com/ChemTrain/reactivity-learn/blob/be6505465d92fc983aabc40bd9863de791b0d2cf/reactivity_learn.html",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "changes": "Chinese text-only site-selectivity MCQ adapted from author-licensed card; options rotated; no molecular images, Mayr experimental N/sN/E values or outside articles redistributed."
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false
+}
