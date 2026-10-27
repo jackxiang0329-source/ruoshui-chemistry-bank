@@ -131,3 +131,5 @@
 - 原英文练习段落与教材答案独立保存于 external_sources/openstax_chemistry/questions.jsonl；每条记录标注图片/MathML 依赖、章节位置、题干摘要、是否带教师答案，全部不可直接用于正式组卷。
 - [外部开源题源当前覆盖](external_sources/openstax_chemistry/coverage.json)、[跨层级题量报告](harvest/coverage_report.json)：明确区分主候选、学习卡、外部待审原始题源与可正式组卷试题。总记录数不是已质检的独立试题数。
 - 历史仓库声明 CC BY 3.0，并不自动解决每道题的第三方例外、图片版权、答案正确性或图像丢失问题。外部题源始终不自动升级为 main 题库或专家批准。
+
+- 新增 [开放教材来源题审核优先级](external_sources/openstax_chemistry/review_priority.json)：按章节平衡排序，优先给出有原答案、无缺图、无 MathML 的题供人工复核；只是减少人工工作量，不视为通过审核。

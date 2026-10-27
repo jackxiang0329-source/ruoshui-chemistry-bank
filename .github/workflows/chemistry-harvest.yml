@@ -13,6 +13,8 @@ on:
       - "scripts/import-approved-chemistry.mjs"
       - "scripts/import-openstax-chemistry-oer.mjs"
       - "scripts/report-chemistry-coverage.mjs"
+      - "scripts/audit-openstax-chemistry-oer.mjs"
+      - "tests/audit-openstax-chemistry-oer.test.mjs"
       - "tests/report-chemistry-coverage.test.mjs"
       - "tests/openstax-chemistry-oer.test.mjs"
       - "harvest/pinned_openstax_chemistry.json"
@@ -182,6 +184,8 @@ jobs:
         run: node --test tests/original-eis-pyeis.test.mjs
       - name: Validate public dataset metadata intake safety
         run: node --test tests/harvest-public-chemistry.test.mjs
+      - name: Verify human-review priority of external OER blocks without publication
+        run: node --test tests/audit-openstax-chemistry-oer.test.mjs
       - name: Verify tier-aware chemistry candidate coverage counting
         run: node --test tests/report-chemistry-coverage.test.mjs
       - name: Verify pinned OpenStax chemistry staging, nested exercise parsing and nonpublication
@@ -244,6 +248,8 @@ jobs:
         run: node scripts/build-expert-review-plan.mjs
       - name: Export exclusively manually attested and hash-pinned approved questions
         run: node scripts/build-publication-index.mjs
+      - name: Rank external OpenStax source exercise blocks for manual science and rights review
+        run: node scripts/audit-openstax-chemistry-oer.mjs
       - name: Report separate raw OER and main candidate totals without double counting
         run: node scripts/report-chemistry-coverage.mjs
       - name: Commit only real additions or changes
