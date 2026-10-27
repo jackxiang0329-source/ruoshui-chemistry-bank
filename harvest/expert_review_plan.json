@@ -17,7 +17,6 @@
   "multi_variant_clusters": 56,
   "multi_variant_candidates": 356,
   "flag_counts": {
-    "item_or_source_license_evidence_not_attached": 5,
     "numerical_answer_requires_scientific_review": 315,
     "semantic_duplicate_review_pending": 887,
     "source_question_rights_not_explicitly_verified": 21,
@@ -1079,48 +1078,6 @@
     },
     {
       "subject": "organic",
-      "topic": "unspecified",
-      "source": "MuzaPro/Organic-Chemistry-Quiz-JS",
-      "representative_id": "428637fc953ac4b588a810c520e1925f9616fb52d8efbfd02d88bce51f989815",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "item_or_source_license_evidence_not_attached"
-      ],
-      "review_priority_score": 20,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "organic",
-      "topic": "unspecified",
-      "source": "MuzaPro/Organic-Chemistry-Quiz-JS",
-      "representative_id": "5aac29b6f67f409b2304a984381ba1a7a0d081d3d4dc8e27cfc6270ca49df3bb",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "item_or_source_license_evidence_not_attached"
-      ],
-      "review_priority_score": 20,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "organic",
-      "topic": "unspecified",
-      "source": "MuzaPro/Organic-Chemistry-Quiz-JS",
-      "representative_id": "7d299414e8b48ebbe8242d02493ee1571d184f0b5afe27066dbe3fa50814fbf4",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "item_or_source_license_evidence_not_attached"
-      ],
-      "review_priority_score": 20,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "organic",
       "topic": "alcohol_chemoselectivity",
       "source": "ChemTrain/reactivity-learn",
       "representative_id": "f960b13275f6d1f8921c427a0a4c018e82b0f262ec2f94a46471ae43813f5d8c",
@@ -1220,6 +1177,18 @@
       "topic": "functional_group_identification",
       "source": "bem130/chemquiz",
       "representative_id": "2d486c531607d02f57652e60e7f96278cdcebdfe5a62d558aeebe88f9da69565",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [],
+      "review_priority_score": 0,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "organic",
+      "topic": "functional_group_identification",
+      "source": "bem130/chemquiz",
+      "representative_id": "5072212f63e3ba633823644919e75711e8c69f74a49ac198564d2ee1d612b1fb",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
@@ -1422,6 +1391,30 @@
       "topic": "radical_polarity",
       "source": "ChemTrain/radical-learn",
       "representative_id": "1bf284a4756c57f4bda8aba695b09d6b2448a83df5286e92aaca87c03a851bde",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [],
+      "review_priority_score": 0,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "organic",
+      "topic": "unspecified",
+      "source": "MuzaPro/Organic-Chemistry-Quiz-JS",
+      "representative_id": "428637fc953ac4b588a810c520e1925f9616fb52d8efbfd02d88bce51f989815",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [],
+      "review_priority_score": 0,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "organic",
+      "topic": "unspecified",
+      "source": "MuzaPro/Organic-Chemistry-Quiz-JS",
+      "representative_id": "5aac29b6f67f409b2304a984381ba1a7a0d081d3d4dc8e27cfc6270ca49df3bb",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",

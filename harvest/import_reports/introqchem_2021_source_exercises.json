@@ -3,8 +3,8 @@
   "repository": "PaulWAyers/IntroQChemProblems",
   "commit": "0491272e0b8e71059e601537b196181ab6b367cd",
   "fixed_course_exercises": 21,
-  "newly_added": 12,
-  "already_present": 9,
+  "newly_added": 0,
+  "already_present": 21,
   "source_key_issue_counts": {
     "photon_radiation_pressure_force": "key_confuses_force_unit_with_momentum_unit",
     "gamma_radiation_molar_energy": "key_has_inconsistent_python_variable",

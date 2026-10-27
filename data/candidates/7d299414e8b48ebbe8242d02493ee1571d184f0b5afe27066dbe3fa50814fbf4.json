@@ -14,7 +14,12 @@
     "license": "MIT",
     "attribution": "Copyright (c) 2025 Muza Studio; https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS",
     "content_rights_verified": true,
-    "url": "https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS/blob/71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc/data/questions.json"
+    "url": "https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS/blob/71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc/data/questions.json",
+    "license_evidence": {
+      "project_readme": "https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS/blob/71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc/README.md",
+      "project_license": "https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS/blob/71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc/LICENSE",
+      "scope_note": "README explicitly identifies data/questions.json as the project's question database and declares the project MIT licensed. Source-specific third-party content claims have not been independently proven; no images are copied."
+    }
   },
   "publishable": false
 }
