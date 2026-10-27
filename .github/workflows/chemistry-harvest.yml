@@ -35,6 +35,9 @@ on:
       - "scripts/normalize-unpublished-candidates.mjs"
       - "tests/normalize-unpublished-candidates.test.mjs"
       - "tests/candidate-quality-audit.test.mjs"
+      - "scripts/import-original-eis-pyeis.mjs"
+      - "tests/original-eis-pyeis.test.mjs"
+      - "harvest/pinned_pyeis_original_eis.json"
       - "scripts/import-analytical-calculator-mit.mjs"
       - "tests/analytical-calculator-mit.test.mjs"
       - "harvest/pinned_analytical_calculator_mit.json"
@@ -107,6 +110,8 @@ jobs:
         run: node --test tests/normalize-unpublished-candidates.test.mjs
       - name: Verify pinned MIT analytical chemistry exercise specifications
         run: node --test tests/analytical-calculator-mit.test.mjs
+      - name: Verify independently authored EIS physical chemistry exercises
+        run: node --test tests/original-eis-pyeis.test.mjs
       - name: Search GitHub chemistry repositories
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -139,6 +144,8 @@ jobs:
         run: node scripts/import-chemtrain-reaction-learn.mjs
       - name: Import independently validated original analytical chemistry exercises
         run: node scripts/import-analytical-calculator-mit.mjs
+      - name: Import pinned Apache-2.0 reference based EIS physics practice
+        run: node scripts/import-original-eis-pyeis.mjs
       - name: Normalize missing unreviewed publication flags to false
         run: node scripts/normalize-unpublished-candidates.mjs
       - name: Audit candidate review buckets and potential duplicates
