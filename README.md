@@ -133,3 +133,10 @@
 - 历史仓库声明 CC BY 3.0，并不自动解决每道题的第三方例外、图片版权、答案正确性或图像丢失问题。外部题源始终不自动升级为 main 题库或专家批准。
 
 - 新增 [开放教材来源题审核优先级](external_sources/openstax_chemistry/review_priority.json)：按章节平衡排序，优先给出有原答案、无缺图、无 MathML 的题供人工复核；只是减少人工工作量，不视为通过审核。
+
+## 与大学物理 10,325 外部候选的同口径比较
+
+- 物理的 10,325 是外部未审核候选记录，内含 7,400 条 Hugging Face 合成问答与 2,526 条 OpenStax 教材材料；其单独的 100 道原创题待复核，外部可正式组卷为 0。
+- 大学化学的首页 1,715 是主候选记录，其中练习候选 1,437、学习卡 278，未计入科研隔离区与外部开源原文档案。
+- [统一覆盖报表](harvest/coverage_report.json)现在把主候选、[NVIDIA 化学合成问答隔离区](harvest/nvidia_rqa_review_queue.json)、[OpenStax 化学原题档案](external_sources/openstax_chemistry/coverage.json)分别计数，显示跨层级总记录，但不能视为已经去重或能组卷的独立题数。
+- NVIDIA 化学 RQA 8,056 条研究问答处于单独的 data/research_quarantine/nvidia-rqa/ 中，全部需确认科学正确性、课程相关性及版权；已归档不等于可发布。
