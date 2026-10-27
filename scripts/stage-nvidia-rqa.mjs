@@ -82,7 +82,8 @@ export async function run(fetchJSON=request){
  const metadata=await fetchJSON('https://huggingface.co/api/datasets/'+cfg.dataset);
  if(metadata.sha!==cfg.revision||metadata.cardData?.license!=='cc-by-4.0')throw Error('Dataset SHA or content license drift');
  const splits=await fetchJSON('https://datasets-server.huggingface.co/splits?dataset='+encodeURIComponent(cfg.dataset));
- if(!splits.splits?.some(x=>x.config==='default'&&x.split==='RQA'&&x.num_rows===cfg.total_rows))
+ if(!splits.splits?.some(x=>x.config==='default'&&x.split==='RQA'&&
+   (x.num_examples===cfg.total_rows||x.num_rows===cfg.total_rows)))
   throw Error('RQA source split rows changed; fail closed');
  let offset=state.next_offset,accepted=[],reject={},pageCount=0;
  const start=offset;
