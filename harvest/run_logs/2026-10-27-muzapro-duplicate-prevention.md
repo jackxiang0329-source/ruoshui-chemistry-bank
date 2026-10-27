@@ -46,3 +46,15 @@
 4. 继续保持现有 30 分钟 GitHub Actions 发现流程；新来源须先核许可证与内容来源，再逐题筛选。
 
 **净增：0；重复导入：0；新正式发布：0。**
+
+## 最终复核（Actions 成功后补记）
+
+- [新增防重复测试和质量筛查提交 79f0f20](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/commit/79f0f20502bac23373becb60a80fad8a3bf4a9af)。
+- [已存在来源的登记提交 73cd714](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/commit/73cd71489898e5a17edae9e05b62d6981842c2be)；登记不是新增题目。
+- [完整 GitHub Actions 成功运行 40448242698](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/actions/runs/40448242698)：44 个成功步骤，含 Muza 五道原题的 ID、哈希、MIT 许可、出版保护测试。
+- 搜索 API 请求 27 次，成功 27 次；本轮**新增唯一来源 0**，来源目录 **569 → 569**，无搜索中断。
+- 已批准固定来源导入器日志：**新增 0，跳过已存在 5**；仓库 `main` 总候选 **1122 → 1122**，无机 622、有机 414、分析 33、物理 53。
+- 机器审计完全同题干重复组 0、同模板组 36、版权来源记录缺陷 0；人工化学审核通过 0。
+- [最后一次采集元数据提交 334f783](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/commit/334f78384bd14acb1c227ae0996ba2fabc15c6f7) 仅修改已有来源目录分片元数据，不是新题目导入。
+
+**最终核定：新增题目 0，新增来源目录条目 0，重复入库 0，修复重复导入风险 1 项。**

@@ -112,5 +112,15 @@
   "baseline_exact_duplicate_groups": 0,
   "baseline_same_template_families": 36,
   "pending": "Expert chemical review of the five Muza questions; cross-source semantic dedup beyond exact hashes; verify source authorship of any embedded third-party text; seek new properly licensed undergraduate-level datasets rather than importing already-covered sources.",
-  "notes": "No new compliant candidate records imported in this run. Existing source license was already recorded before this run. Source discovery does not imply content redistribution rights."
+  "notes": "No new compliant candidate records imported in this run. Existing source license was already recorded before this run. Source discovery does not imply content redistribution rights.",
+  "verified_successful_workflow_run": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/actions/runs/40448242698",
+  "successful_workflow_result": "success, 44 successful steps; existing Muza five records verified; approved import added 0, duplicate skips 5",
+  "github_search_requests": 27,
+  "new_unique_source_candidates": 0,
+  "source_catalog_before": 569,
+  "source_catalog_after": 569,
+  "final_candidate_total": 1122,
+  "final_new_questions": 0,
+  "final_expert_approved": 0,
+  "final_harvest_commit": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/commit/334f78384bd14acb1c227ae0996ba2fabc15c6f7"
 }
