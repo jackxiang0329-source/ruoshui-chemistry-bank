@@ -1,0 +1,2264 @@
+{
+  "schema_version": 1,
+  "source_records_considered": 756,
+  "prioritized_for_manual_rights_check": 160,
+  "question_text_or_answers_downloaded": 0,
+  "question_license_approvals_added": 0,
+  "note": "Priorities are based ONLY on repository metadata. They do not authorize copying questions, data or images.",
+  "queue": [
+    {
+      "repository": "MolChem/chemistry-quiz-1",
+      "url": "https://github.com/MolChem/chemistry-quiz-1",
+      "subjects": [
+        "organic",
+        "analytical",
+        "physical"
+      ],
+      "score": 52,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "pawelkwaczynski/electrolab-cv",
+      "url": "https://github.com/pawelkwaczynski/electrolab-cv",
+      "subjects": [
+        "analytical",
+        "physical"
+      ],
+      "score": 47,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "JuaoSea/Chemistry",
+      "url": "https://github.com/JuaoSea/Chemistry",
+      "subjects": [
+        "organic",
+        "analytical"
+      ],
+      "score": 43,
+      "repository_license_spdx": "GPL-3.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "BDFD-Tutorial-Ground/UWO_CHEM1302B_Discovering-Chemical-Energetics",
+      "url": "https://github.com/BDFD-Tutorial-Ground/UWO_CHEM1302B_Discovering-Chemical-Energetics",
+      "subjects": [
+        "physical"
+      ],
+      "score": 41,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "The-Studio-of-Sadiq/Advanced-Chemistry",
+      "url": "https://github.com/The-Studio-of-Sadiq/Advanced-Chemistry",
+      "subjects": [
+        "organic",
+        "physical"
+      ],
+      "score": 38,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "brandonhimpfen/awesome-chemistry",
+      "url": "https://github.com/brandonhimpfen/awesome-chemistry",
+      "subjects": [
+        "inorganic",
+        "organic",
+        "analytical"
+      ],
+      "score": 35,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "zafrul-hub/zafrul--hub.github.io",
+      "url": "https://github.com/zafrul-hub/zafrul--hub.github.io",
+      "subjects": [
+        "inorganic",
+        "organic",
+        "analytical"
+      ],
+      "score": 35,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "jmwoll/isotscope",
+      "url": "https://github.com/jmwoll/isotscope",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 34,
+      "repository_license_spdx": "EPL-2.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "mbel-tech/no-stress-MA-concentration-calculator",
+      "url": "https://github.com/mbel-tech/no-stress-MA-concentration-calculator",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 34,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "parkerryvictoria-code/chemistrynoteshub.com",
+      "url": "https://github.com/parkerryvictoria-code/chemistrynoteshub.com",
+      "subjects": [
+        "inorganic",
+        "organic",
+        "physical"
+      ],
+      "score": 34,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "BDFD-Tutorial-Ground/OP-Queens_CHEM112A-B_General-Chemistry-I",
+      "url": "https://github.com/BDFD-Tutorial-Ground/OP-Queens_CHEM112A-B_General-Chemistry-I",
+      "subjects": [
+        "organic"
+      ],
+      "score": 33,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "chemdrv/python-for-pchem",
+      "url": "https://github.com/chemdrv/python-for-pchem",
+      "subjects": [
+        "physical"
+      ],
+      "score": 33,
+      "repository_license_spdx": "GPL-3.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "daferro/Notebooks_Chemical_Equilibrium",
+      "url": "https://github.com/daferro/Notebooks_Chemical_Equilibrium",
+      "subjects": [
+        "physical"
+      ],
+      "score": 33,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "daferro/Notebooks-Chemical_Equilibrium",
+      "url": "https://github.com/daferro/Notebooks-Chemical_Equilibrium",
+      "subjects": [
+        "physical"
+      ],
+      "score": 33,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "FridrichMethod/UncertaintyCalculator",
+      "url": "https://github.com/FridrichMethod/UncertaintyCalculator",
+      "subjects": [
+        "physical"
+      ],
+      "score": 33,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "gutow/DeltaSymbol",
+      "url": "https://github.com/gutow/DeltaSymbol",
+      "subjects": [
+        "physical"
+      ],
+      "score": 33,
+      "repository_license_spdx": "GPL-3.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "hjelmj/nbmatphyschem",
+      "url": "https://github.com/hjelmj/nbmatphyschem",
+      "subjects": [
+        "physical"
+      ],
+      "score": 33,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "jcerezochem/CompChemLab_Jupyter",
+      "url": "https://github.com/jcerezochem/CompChemLab_Jupyter",
+      "subjects": [
+        "physical"
+      ],
+      "score": 33,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "lab-macedonia/simulaciones-quimica",
+      "url": "https://github.com/lab-macedonia/simulaciones-quimica",
+      "subjects": [
+        "inorganic",
+        "organic"
+      ],
+      "score": 33,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "locuoco/stochastic-chemical-kinetics",
+      "url": "https://github.com/locuoco/stochastic-chemical-kinetics",
+      "subjects": [
+        "physical"
+      ],
+      "score": 33,
+      "repository_license_spdx": "GPL-3.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Sumner-Group/Python_for_Physical_Chemistry",
+      "url": "https://github.com/Sumner-Group/Python_for_Physical_Chemistry",
+      "subjects": [
+        "physical"
+      ],
+      "score": 33,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "hdkim99/ordifile",
+      "url": "https://github.com/hdkim99/ordifile",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 30,
+      "repository_license_spdx": "Apache-2.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "jartdarnold-a11y/histalab-fluorometric-dashboard",
+      "url": "https://github.com/jartdarnold-a11y/histalab-fluorometric-dashboard",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 30,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "JnliaH/ChromaQuant",
+      "url": "https://github.com/JnliaH/ChromaQuant",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 30,
+      "repository_license_spdx": "BSD-3-Clause",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "jqChen1566/analytical-chemistry-review-notes",
+      "url": "https://github.com/jqChen1566/analytical-chemistry-review-notes",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 30,
+      "repository_license_spdx": "CC-BY-SA-4.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "m-amanda/Analytical-Methods-Validation-with-R",
+      "url": "https://github.com/m-amanda/Analytical-Methods-Validation-with-R",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 30,
+      "repository_license_spdx": "GPL-3.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "MatheusBarreto31/ChemometricStudio",
+      "url": "https://github.com/MatheusBarreto31/ChemometricStudio",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 30,
+      "repository_license_spdx": "Apache-2.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "siliconworkshop/VS3L",
+      "url": "https://github.com/siliconworkshop/VS3L",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 30,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "TitrateLab/peptide-coa-analysis",
+      "url": "https://github.com/TitrateLab/peptide-coa-analysis",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 30,
+      "repository_license_spdx": "CC-BY-4.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "virtual-labs/exp-concentration-of-vitamin-c-amrt",
+      "url": "https://github.com/virtual-labs/exp-concentration-of-vitamin-c-amrt",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 30,
+      "repository_license_spdx": "AGPL-3.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "virtual-labs/exp-estimation-of-phosphate-content-amrt",
+      "url": "https://github.com/virtual-labs/exp-estimation-of-phosphate-content-amrt",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 30,
+      "repository_license_spdx": "AGPL-3.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "andrewgajetzki/orgo-quiz",
+      "url": "https://github.com/andrewgajetzki/orgo-quiz",
+      "subjects": [
+        "organic"
+      ],
+      "score": 29,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "cpoli/chemistrykit",
+      "url": "https://github.com/cpoli/chemistrykit",
+      "subjects": [
+        "physical"
+      ],
+      "score": 29,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "demianriccardi/HackaMol-IPerl-Notebooks",
+      "url": "https://github.com/demianriccardi/HackaMol-IPerl-Notebooks",
+      "subjects": [
+        "physical"
+      ],
+      "score": 29,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "jreel/EssenToo",
+      "url": "https://github.com/jreel/EssenToo",
+      "subjects": [
+        "organic"
+      ],
+      "score": 29,
+      "repository_license_spdx": "GPL-3.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "magnusgp/nernyx",
+      "url": "https://github.com/magnusgp/nernyx",
+      "subjects": [
+        "physical"
+      ],
+      "score": 29,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "MuzaPro/organic-chem-quiz",
+      "url": "https://github.com/MuzaPro/organic-chem-quiz",
+      "subjects": [
+        "organic"
+      ],
+      "score": 29,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "MuzaPro/Organic-Chemistry-Quiz-JS",
+      "url": "https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS",
+      "subjects": [
+        "organic"
+      ],
+      "score": 29,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "rafeequemv1/moldraw-chemistry",
+      "url": "https://github.com/rafeequemv1/moldraw-chemistry",
+      "subjects": [
+        "organic",
+        "analytical"
+      ],
+      "score": 27,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "negaineko/fenxi-practice",
+      "url": "https://github.com/negaineko/fenxi-practice",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 26,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "njzjz/analytical-chemistry-bank",
+      "url": "https://github.com/njzjz/analytical-chemistry-bank",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 26,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "chensi223/reagent-calculator",
+      "url": "https://github.com/chensi223/reagent-calculator",
+      "subjects": [
+        "organic"
+      ],
+      "score": 25,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "jfdev001/pchem-with-mathematica",
+      "url": "https://github.com/jfdev001/pchem-with-mathematica",
+      "subjects": [
+        "physical"
+      ],
+      "score": 25,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "modobsh/modo",
+      "url": "https://github.com/modobsh/modo",
+      "subjects": [
+        "physical"
+      ],
+      "score": 25,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "trondhauklien/NTNU-TKJ4215",
+      "url": "https://github.com/trondhauklien/NTNU-TKJ4215",
+      "subjects": [
+        "physical"
+      ],
+      "score": 25,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "yossefAlatter/physical-chemistry--post-graduated",
+      "url": "https://github.com/yossefAlatter/physical-chemistry--post-graduated",
+      "subjects": [
+        "physical"
+      ],
+      "score": 25,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "ajschoef/PythonForChemistsIntro",
+      "url": "https://github.com/ajschoef/PythonForChemistsIntro",
+      "subjects": [
+        "general"
+      ],
+      "score": 24,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "ajz34/PyCrawfordProgProj",
+      "url": "https://github.com/ajz34/PyCrawfordProgProj",
+      "subjects": [
+        "general"
+      ],
+      "score": 24,
+      "repository_license_spdx": "Apache-2.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "aswalker-lab/AIChemBiochem",
+      "url": "https://github.com/aswalker-lab/AIChemBiochem",
+      "subjects": [
+        "general"
+      ],
+      "score": 24,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "DannyVanpoucke/PythonTutorials",
+      "url": "https://github.com/DannyVanpoucke/PythonTutorials",
+      "subjects": [
+        "general"
+      ],
+      "score": 24,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Dongye-Yuan/CourseMind",
+      "url": "https://github.com/Dongye-Yuan/CourseMind",
+      "subjects": [
+        "general"
+      ],
+      "score": 24,
+      "repository_license_spdx": "Apache-2.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "LuddEvergard3n/lavoisier",
+      "url": "https://github.com/LuddEvergard3n/lavoisier",
+      "subjects": [
+        "general"
+      ],
+      "score": 24,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "OctaDist/tutorials",
+      "url": "https://github.com/OctaDist/tutorials",
+      "subjects": [
+        "inorganic"
+      ],
+      "score": 24,
+      "repository_license_spdx": "GPL-3.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "ThreeCircles666/CourseMind",
+      "url": "https://github.com/ThreeCircles666/CourseMind",
+      "subjects": [
+        "general"
+      ],
+      "score": 24,
+      "repository_license_spdx": "Apache-2.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "andreabz/calibration_design",
+      "url": "https://github.com/andreabz/calibration_design",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 22,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "JonCasC/LC_column_calculator",
+      "url": "https://github.com/JonCasC/LC_column_calculator",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 22,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "paololiveri/polibrush",
+      "url": "https://github.com/paololiveri/polibrush",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 22,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Starfie1d1272/planetary-geochemistry-coursework",
+      "url": "https://github.com/Starfie1d1272/planetary-geochemistry-coursework",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 22,
+      "repository_license_spdx": "NOASSERTION",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "sulaimansani868/lablearn",
+      "url": "https://github.com/sulaimansani868/lablearn",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 22,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "sulaimansani868/lablearn-project",
+      "url": "https://github.com/sulaimansani868/lablearn-project",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 22,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "ahmedhdhili832-dotcom/LearnChimie",
+      "url": "https://github.com/ahmedhdhili832-dotcom/LearnChimie",
+      "subjects": [
+        "organic"
+      ],
+      "score": 21,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "angiorda/Physical_chemistry_oral_exam_questions",
+      "url": "https://github.com/angiorda/Physical_chemistry_oral_exam_questions",
+      "subjects": [
+        "physical"
+      ],
+      "score": 21,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "CCcolab/AI4OrgChem",
+      "url": "https://github.com/CCcolab/AI4OrgChem",
+      "subjects": [
+        "organic"
+      ],
+      "score": 21,
+      "repository_license_spdx": "Apache-2.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "curseyoudinkleberg/PChemFall2017",
+      "url": "https://github.com/curseyoudinkleberg/PChemFall2017",
+      "subjects": [
+        "physical"
+      ],
+      "score": 21,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "davidebtt/chemical_pycode",
+      "url": "https://github.com/davidebtt/chemical_pycode",
+      "subjects": [
+        "organic"
+      ],
+      "score": 21,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "davis689/binder",
+      "url": "https://github.com/davis689/binder",
+      "subjects": [
+        "physical"
+      ],
+      "score": 21,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "erni-tf/buscador-de-formulas",
+      "url": "https://github.com/erni-tf/buscador-de-formulas",
+      "subjects": [
+        "organic"
+      ],
+      "score": 21,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "firat-sivrikaya/Slots-Quiz",
+      "url": "https://github.com/firat-sivrikaya/Slots-Quiz",
+      "subjects": [
+        "organic"
+      ],
+      "score": 21,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "gagebayliss/pchem-II-lab",
+      "url": "https://github.com/gagebayliss/pchem-II-lab",
+      "subjects": [
+        "physical"
+      ],
+      "score": 21,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "HiroYokoyama/python_molecular_editor",
+      "url": "https://github.com/HiroYokoyama/python_molecular_editor",
+      "subjects": [
+        "organic"
+      ],
+      "score": 21,
+      "repository_license_spdx": "LGPL-3.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "iurisegtovich/PyTherm-applied-thermodynamics",
+      "url": "https://github.com/iurisegtovich/PyTherm-applied-thermodynamics",
+      "subjects": [
+        "physical"
+      ],
+      "score": 21,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "jayaramking141501-sys/recpro",
+      "url": "https://github.com/jayaramking141501-sys/recpro",
+      "subjects": [
+        "organic"
+      ],
+      "score": 21,
+      "repository_license_spdx": "Apache-2.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "ka1oww/kekule",
+      "url": "https://github.com/ka1oww/kekule",
+      "subjects": [
+        "organic"
+      ],
+      "score": 21,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "keiran-rowell/Jupyter-Notebooks",
+      "url": "https://github.com/keiran-rowell/Jupyter-Notebooks",
+      "subjects": [
+        "physical"
+      ],
+      "score": 21,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "kimariyb/organic-chemistry",
+      "url": "https://github.com/kimariyb/organic-chemistry",
+      "subjects": [
+        "organic"
+      ],
+      "score": 21,
+      "repository_license_spdx": "Apache-2.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "KrsMt-0113/Physical-Chemistry-Notebooks",
+      "url": "https://github.com/KrsMt-0113/Physical-Chemistry-Notebooks",
+      "subjects": [
+        "physical"
+      ],
+      "score": 21,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "leethomo86/Jupyter",
+      "url": "https://github.com/leethomo86/Jupyter",
+      "subjects": [
+        "physical"
+      ],
+      "score": 21,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "LongLong10203/IUPAC-master",
+      "url": "https://github.com/LongLong10203/IUPAC-master",
+      "subjects": [
+        "organic"
+      ],
+      "score": 21,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "mihirduvedi/mechanism-canvas",
+      "url": "https://github.com/mihirduvedi/mechanism-canvas",
+      "subjects": [
+        "organic"
+      ],
+      "score": 21,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "radostmilena/simbo",
+      "url": "https://github.com/radostmilena/simbo",
+      "subjects": [
+        "physical"
+      ],
+      "score": 21,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "rinikerlab/Physical_Chemistry_Practicum-Molecular_Dynamics_Simulations",
+      "url": "https://github.com/rinikerlab/Physical_Chemistry_Practicum-Molecular_Dynamics_Simulations",
+      "subjects": [
+        "physical"
+      ],
+      "score": 21,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Rundong-Li/Physical_chemistry_experiment_19-fall",
+      "url": "https://github.com/Rundong-Li/Physical_chemistry_experiment_19-fall",
+      "subjects": [
+        "physical"
+      ],
+      "score": 21,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "XY-QINGYI/MPOC_SSM",
+      "url": "https://github.com/XY-QINGYI/MPOC_SSM",
+      "subjects": [
+        "organic"
+      ],
+      "score": 21,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "abmarkguo/pharmaceutical-chemistry-lab-simulator",
+      "url": "https://github.com/abmarkguo/pharmaceutical-chemistry-lab-simulator",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "AK-Hanf/Lecture-unit-4f-for-future-",
+      "url": "https://github.com/AK-Hanf/Lecture-unit-4f-for-future-",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "alvarovm/datascience-for-chem-materials",
+      "url": "https://github.com/alvarovm/datascience-for-chem-materials",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "LGPL-3.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "ChemTrain/chemtrain-daily",
+      "url": "https://github.com/ChemTrain/chemtrain-daily",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "gluonMaster/chemie-eroberung",
+      "url": "https://github.com/gluonMaster/chemie-eroberung",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "HarshithaBhimavarapu/Intelligent-Quiz-Management-System-with-Auto--Generated-Questions",
+      "url": "https://github.com/HarshithaBhimavarapu/Intelligent-Quiz-Management-System-with-Auto--Generated-Questions",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Huanyu-Hibiki/Xirang",
+      "url": "https://github.com/Huanyu-Hibiki/Xirang",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "AGPL-3.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "johongirqodirov719-pixel/practical-programming-in-chemistry-exercises-main",
+      "url": "https://github.com/johongirqodirov719-pixel/practical-programming-in-chemistry-exercises-main",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "julianescord/cheminator",
+      "url": "https://github.com/julianescord/cheminator",
+      "subjects": [
+        "inorganic"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "kamanzilorenzo/scientia",
+      "url": "https://github.com/kamanzilorenzo/scientia",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Keepgoing-30/7-5-Universal-Study-Quiz-An-Active-Learning-Tool",
+      "url": "https://github.com/Keepgoing-30/7-5-Universal-Study-Quiz-An-Active-Learning-Tool",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "lenguyenhieustd/ChO-Inorganic-Chemistry",
+      "url": "https://github.com/lenguyenhieustd/ChO-Inorganic-Chemistry",
+      "subjects": [
+        "inorganic"
+      ],
+      "score": 20,
+      "repository_license_spdx": "AGPL-3.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "llxl0/quiz-platform",
+      "url": "https://github.com/llxl0/quiz-platform",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "rubenandrebarreiro/summer-school-on-quantum-computing-software-for-near-term-quantum-devices-2020",
+      "url": "https://github.com/rubenandrebarreiro/summer-school-on-quantum-computing-software-for-near-term-quantum-devices-2020",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "schwallergroup/2024-practical-programming-in-chemistry-exercises",
+      "url": "https://github.com/schwallergroup/2024-practical-programming-in-chemistry-exercises",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "schwallergroup/2025-practical-programming-in-chemistry-exercises",
+      "url": "https://github.com/schwallergroup/2025-practical-programming-in-chemistry-exercises",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "schwallergroup/practical-programming-in-chemistry-exercises",
+      "url": "https://github.com/schwallergroup/practical-programming-in-chemistry-exercises",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "sieule/chemistry-8-first-half-semester-1",
+      "url": "https://github.com/sieule/chemistry-8-first-half-semester-1",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "tail258/BMB-QuestionWarehouse",
+      "url": "https://github.com/tail258/BMB-QuestionWarehouse",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "theRealNexa/JAMB-Science_Prep",
+      "url": "https://github.com/theRealNexa/JAMB-Science_Prep",
+      "subjects": [
+        "general"
+      ],
+      "score": 20,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "andreabz/analytical-anova",
+      "url": "https://github.com/andreabz/analytical-anova",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "api-evangelist/analytichem",
+      "url": "https://github.com/api-evangelist/analytichem",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "api-evangelist/expert-intelligence",
+      "url": "https://github.com/api-evangelist/expert-intelligence",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "CoreSci/lab-informatics",
+      "url": "https://github.com/CoreSci/lab-informatics",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "CrissFerrada/Poly-X-Microplastics",
+      "url": "https://github.com/CrissFerrada/Poly-X-Microplastics",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "DChristensen12/isotope-relativistic-effects",
+      "url": "https://github.com/DChristensen12/isotope-relativistic-effects",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Dimon821/Data-Science-Project-Cyclotron-Mass-Spec",
+      "url": "https://github.com/Dimon821/Data-Science-Project-Cyclotron-Mass-Spec",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "IngallsLabUW/Targeted_Pipeline",
+      "url": "https://github.com/IngallsLabUW/Targeted_Pipeline",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Nazarkovsky/Domestic-Wells-Water-Quality-in-Alberta-2013-2015",
+      "url": "https://github.com/Nazarkovsky/Domestic-Wells-Water-Quality-in-Alberta-2013-2015",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "NotAMadTheorist/FTIR-and-1H-NMR-Analysis-of-Cooking-Oils",
+      "url": "https://github.com/NotAMadTheorist/FTIR-and-1H-NMR-Analysis-of-Cooking-Oils",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "NotAMadTheorist/GC-MS-of-Ginger-Oil-via-PDF-Scraping",
+      "url": "https://github.com/NotAMadTheorist/GC-MS-of-Ginger-Oil-via-PDF-Scraping",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "NotAMadTheorist/Quantitative-Analyses-in-Molecular-Spectroscopy",
+      "url": "https://github.com/NotAMadTheorist/Quantitative-Analyses-in-Molecular-Spectroscopy",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "numpde/chemrxiv-data",
+      "url": "https://github.com/numpde/chemrxiv-data",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "shsvirtualadmin-wq/IDK-THIS-WORLD",
+      "url": "https://github.com/shsvirtualadmin-wq/IDK-THIS-WORLD",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "shsvirtualadmin-wq/mcqs-ig",
+      "url": "https://github.com/shsvirtualadmin-wq/mcqs-ig",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Sophie-Turner/Titration-marks",
+      "url": "https://github.com/Sophie-Turner/Titration-marks",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "tntnt00/chemistry-assistant",
+      "url": "https://github.com/tntnt00/chemistry-assistant",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "unno1024/KeponBiotech",
+      "url": "https://github.com/unno1024/KeponBiotech",
+      "subjects": [
+        "analytical"
+      ],
+      "score": 18,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "22ssison/OOP_GUI_internal_91906",
+      "url": "https://github.com/22ssison/OOP_GUI_internal_91906",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "AbhinavMachavolu/QuizDatabank-",
+      "url": "https://github.com/AbhinavMachavolu/QuizDatabank-",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "arun3556raj-svg/poc3-quiz",
+      "url": "https://github.com/arun3556raj-svg/poc3-quiz",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "beatrisebertule/eduSpec-platform",
+      "url": "https://github.com/beatrisebertule/eduSpec-platform",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Candidate1008097/CCD_Code",
+      "url": "https://github.com/Candidate1008097/CCD_Code",
+      "subjects": [
+        "physical"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "CrestyDY/Ochem-For-Fun",
+      "url": "https://github.com/CrestyDY/Ochem-For-Fun",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "delasiftech/IUPAC-nomenclature-masterclass",
+      "url": "https://github.com/delasiftech/IUPAC-nomenclature-masterclass",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "diwaranupornhinoon-commits/Organic-Chemistry-Quiz-Game",
+      "url": "https://github.com/diwaranupornhinoon-commits/Organic-Chemistry-Quiz-Game",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "dtztrio/CHM-102-E-TEST-QUIZ",
+      "url": "https://github.com/dtztrio/CHM-102-E-TEST-QUIZ",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "eck18005-blip/organic-chemistry-quiz",
+      "url": "https://github.com/eck18005-blip/organic-chemistry-quiz",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "GitRodj/hydrocarbons-quiz",
+      "url": "https://github.com/GitRodj/hydrocarbons-quiz",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "gouthamreddykotapalle/organic-chemistry-quiz",
+      "url": "https://github.com/gouthamreddykotapalle/organic-chemistry-quiz",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "hakuyo6909-create/organic-chemistry-quiz",
+      "url": "https://github.com/hakuyo6909-create/organic-chemistry-quiz",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "joaovitor73/organic-chemistry-quiz",
+      "url": "https://github.com/joaovitor73/organic-chemistry-quiz",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "jonasgi-droid/organic-chemistry-quiz",
+      "url": "https://github.com/jonasgi-droid/organic-chemistry-quiz",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "JonasRackl/labmate-mcp",
+      "url": "https://github.com/JonasRackl/labmate-mcp",
+      "subjects": [
+        "organic",
+        "analytical"
+      ],
+      "score": 17,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "jreel/ochemgame",
+      "url": "https://github.com/jreel/ochemgame",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "kdon5chima/quiz",
+      "url": "https://github.com/kdon5chima/quiz",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "kkaakkeehh-beep/CarbonRPG",
+      "url": "https://github.com/kkaakkeehh-beep/CarbonRPG",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "liuyinan19922/ProcessingHMMTIMG",
+      "url": "https://github.com/liuyinan19922/ProcessingHMMTIMG",
+      "subjects": [
+        "physical"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "MauricePasternak/Chemsolver",
+      "url": "https://github.com/MauricePasternak/Chemsolver",
+      "subjects": [
+        "physical"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "MSergey95/SwiftUIOrganicChem",
+      "url": "https://github.com/MSergey95/SwiftUIOrganicChem",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "namedummy568-stack/Organic-Chem-Interactive-Practice",
+      "url": "https://github.com/namedummy568-stack/Organic-Chem-Interactive-Practice",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "NotAMadTheorist/Ternary-Phase-Diagram-Visualization-Water-Acetone-1-Butanol-",
+      "url": "https://github.com/NotAMadTheorist/Ternary-Phase-Diagram-Visualization-Water-Acetone-1-Butanol-",
+      "subjects": [
+        "physical"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "rpoteau/pyPhysChem",
+      "url": "https://github.com/rpoteau/pyPhysChem",
+      "subjects": [
+        "physical"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Sarish002/OrganicNomenclature",
+      "url": "https://github.com/Sarish002/OrganicNomenclature",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "skatzeducation/organic-chemistry-quiz",
+      "url": "https://github.com/skatzeducation/organic-chemistry-quiz",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "socialtoapall/-Amines-and-sharpen-your-organic-chemistry-skills.",
+      "url": "https://github.com/socialtoapall/-Amines-and-sharpen-your-organic-chemistry-skills.",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "socialtoapall/Organic-Chemistry-doesn-t-have-to-be-confusing-Start-strong-with-Some-Basic-Principles-Techniques",
+      "url": "https://github.com/socialtoapall/Organic-Chemistry-doesn-t-have-to-be-confusing-Start-strong-with-Some-Basic-Principles-Techniques",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "successeverydayww-cpu/organic-chem-quiz",
+      "url": "https://github.com/successeverydayww-cpu/organic-chem-quiz",
+      "subjects": [
+        "organic"
+      ],
+      "score": 17,
+      "repository_license_spdx": "UNKNOWN",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license unknown; request permissions before any reuse.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "ajschoef/SympyForChemists",
+      "url": "https://github.com/ajschoef/SympyForChemists",
+      "subjects": [
+        "general"
+      ],
+      "score": 16,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "angzeli/ase_learning",
+      "url": "https://github.com/angzeli/ase_learning",
+      "subjects": [
+        "general"
+      ],
+      "score": 16,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "angzeli/Reaction-Energy-Profiles-Python",
+      "url": "https://github.com/angzeli/Reaction-Energy-Profiles-Python",
+      "subjects": [
+        "general"
+      ],
+      "score": 16,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "AnurupaK/Remote_Exam_Simulator",
+      "url": "https://github.com/AnurupaK/Remote_Exam_Simulator",
+      "subjects": [
+        "general"
+      ],
+      "score": 16,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "BDFD-Tutorial-Ground/OSSD-TDSB_Secondary_School_Science_Formula_Collection",
+      "url": "https://github.com/BDFD-Tutorial-Ground/OSSD-TDSB_Secondary_School_Science_Formula_Collection",
+      "subjects": [
+        "general"
+      ],
+      "score": 16,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Cavenfish/YetAnotherSimulationSuite.jl",
+      "url": "https://github.com/Cavenfish/YetAnotherSimulationSuite.jl",
+      "subjects": [
+        "general"
+      ],
+      "score": 16,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "Chenghao-Wu/RobertoMD.jl",
+      "url": "https://github.com/Chenghao-Wu/RobertoMD.jl",
+      "subjects": [
+        "general"
+      ],
+      "score": 16,
+      "repository_license_spdx": "MIT",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "csc-training/gromacs-demo",
+      "url": "https://github.com/csc-training/gromacs-demo",
+      "subjects": [
+        "general"
+      ],
+      "score": 16,
+      "repository_license_spdx": "CC-BY-4.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    },
+    {
+      "repository": "dorox/react-tutorials",
+      "url": "https://github.com/dorox/react-tutorials",
+      "subjects": [
+        "general"
+      ],
+      "score": 16,
+      "repository_license_spdx": "GPL-3.0",
+      "source_license_metadata_only": true,
+      "question_content_rights": "not_verified_for_question_or_answer_redistribution",
+      "state": "needs_per_question_provenance_and_answer_quality_review",
+      "rationale": "Repository license metadata exists, but individual question rights require separate verification.",
+      "original_source_record": "harvest/sources/"
+    }
+  ]
+}
