@@ -62,6 +62,8 @@ on:
       - "tests/analytical-calculator-mit.test.mjs"
       - "scripts/import-original-analytical-variants.mjs"
       - "scripts/import-original-instrumental-analytical.mjs"
+      - "scripts/import-original-advanced-physical.mjs"
+      - "tests/original-advanced-physical.test.mjs"
       - "tests/original-instrumental-analytical.test.mjs"
       - "tests/original-analytical-variants.test.mjs"
       - "harvest/pinned_analytical_calculator_mit.json"
@@ -159,6 +161,8 @@ jobs:
         run: node --test tests/original-analytical-variants.test.mjs
       - name: Verify 64 original instrumental analytical exercises
         run: node --test tests/original-instrumental-analytical.test.mjs
+      - name: Verify 48 original advanced physical chemistry calculations
+        run: node --test tests/original-advanced-physical.test.mjs
       - name: Verify independently authored EIS physical chemistry exercises
         run: node --test tests/original-eis-pyeis.test.mjs
       - name: Validate public dataset metadata intake safety
@@ -201,6 +205,8 @@ jobs:
         run: node scripts/import-analytical-calculator-mit.mjs
       - name: Add 96 independently validated original analytical exercise variants
         run: node scripts/import-original-analytical-variants.mjs
+      - name: Generate 48 CC0 original advanced physical chemistry exercises
+        run: node scripts/import-original-advanced-physical.mjs
       - name: Generate 64 CC0 original instrumental analytical exercises
         run: node scripts/import-original-instrumental-analytical.mjs
       - name: Import pinned Apache-2.0 reference based EIS physics practice
