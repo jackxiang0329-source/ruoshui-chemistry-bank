@@ -39,6 +39,11 @@ export function publicationIndex(rows,approvals={schema_version:1,approved:[]}){
    a.chemistry_reviewer===a.rights_reviewer||
    card(q)||!q.question||!q.answer||
    s.content_rights_verified!==true||!s.license||!s.license_evidence||
+   s.item_level_rights_review_pending===true||
+   (q.source_key_issue && q.source_key_issue!=='source_answer_confirmed' &&
+     a.source_discrepancy_acknowledged!==true)||
+   (q.conceptual_answer_requires_expert_review===true &&
+     a.conceptual_answer_checked!==true)||
    (!s.repository&&!s.url&&!s.publisher))
    throw Error('Missing signed-off scientific, rights, answer or layout review: '+q.id);
   approved.push({id:q.id,subject:q.subject,topic:q.topic||'unspecified',
@@ -49,7 +54,7 @@ export function publicationIndex(rows,approvals={schema_version:1,approved:[]}){
  return {schema_version:1,release_state:approved.length?'manual_attestations_present':'no_approved_items',
   total_candidates:rows.length,approved_count:approved.length,
   excluded_candidate_count:rows.length-approved.length,
-  policy:'Only explicit expert-approved, hash-pinned, source-rights-verified exercises may appear here. No candidate or study card is released merely because it exists or passes automated tests.',
+  policy:'Only expert-approved, hash-pinned, source-rights-verified exercises with resolved item-rights, reconciled upstream answer-key discrepancies and acknowledged conceptual review may appear here. No automated checks alone grant publication.',
   approval_identity_warning:'Attestations are manual registry fields, not cryptographic identity verification. Repository permissions and a separate human approval process remain essential.',
   items:approved};
 }

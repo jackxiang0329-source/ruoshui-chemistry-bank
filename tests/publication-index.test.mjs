@@ -40,3 +40,29 @@ test('reject stale or orphaned publication registry entries',()=>{
  assert.throws(()=>publicationIndex([q()],{schema_version:1,approved:[approval]}),/missing candidate/);
  assert.throws(()=>publicationIndex([q()],{schema_version:1,approved:[approval,approval]}),/missing candidate|Duplicate/);
 });
+
+test('source rights pending cannot be bypassed by toggling content_rights_verified',()=>{
+ const item={...q(),quality_status:'expert_approved',publishable:true,
+  source:{...q().source,content_rights_verified:true,item_level_rights_review_pending:true}};
+ const approval={id:item.id,decision:'approve',reviewed_at:'2026-10-27',
+  candidate_sha256:digest(item),chemistry_reviewer:'chemistry reviewer',
+  rights_reviewer:'copyright reviewer',solution_reviewer:'solution reviewer',
+  latex_reviewer:'layout reviewer',source_discrepancy_acknowledged:true,
+  conceptual_answer_checked:true};
+ assert.throws(()=>publicationIndex([item],{schema_version:1,approved:[approval]}),/Missing signed-off/);
+});
+test('source teacher-key conflicts and conceptual questions need explicit expert acknowledgement',()=>{
+ const base={...q(),quality_status:'expert_approved',publishable:true,
+  source_key_issue:'source_question_opposite_to_answer_key',
+  conceptual_answer_requires_expert_review:true};
+ const approval={id:base.id,decision:'approve',reviewed_at:'2026-10-27',
+  candidate_sha256:digest(base),chemistry_reviewer:'chemistry reviewer',
+  rights_reviewer:'copyright reviewer',solution_reviewer:'solution reviewer',
+  latex_reviewer:'layout reviewer'};
+ const run=a=>publicationIndex([base],{schema_version:1,approved:[a]});
+ assert.throws(()=>run(approval),/Missing signed-off/);
+ assert.throws(()=>run({...approval,source_discrepancy_acknowledged:true}),/Missing signed-off/);
+ assert.throws(()=>run({...approval,conceptual_answer_checked:true}),/Missing signed-off/);
+ assert.equal(run({...approval,source_discrepancy_acknowledged:true,
+  conceptual_answer_checked:true}).approved_count,1);
+});

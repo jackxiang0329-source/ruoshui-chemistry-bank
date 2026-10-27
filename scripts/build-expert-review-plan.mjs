@@ -22,6 +22,9 @@ export function reviewFlags(q){
  if(!s.repository&&!s.url&&!s.publisher)flags.push('missing_source_locator');
  if(!s.license&&!s.content_license&&!s.source_license)flags.push('missing_source_license');
  if(s.content_rights_verified!==true)flags.push('source_question_rights_not_explicitly_verified');
+ if(s.item_level_rights_review_pending===true)flags.push('item_level_rights_human_confirmation_pending');
+ if(q.source_key_issue&&q.source_key_issue!=='source_answer_confirmed')flags.push('upstream_answer_key_requires_reconciliation');
+ if(q.conceptual_answer_requires_expert_review===true)flags.push('conceptual_answer_requires_expert_validation');
  if(!s.license_evidence)flags.push('item_or_source_license_evidence_not_attached');
  if(q.semantic_duplicate_review_pending===true)flags.push('semantic_duplicate_review_pending');
  if(Array.isArray(q.numeric_answers)&&q.numeric_answers.length)
@@ -62,7 +65,11 @@ export function buildPlan(rows,{perSubject=32,maxPerTopic=6}={}){
   const priority=(cflags.includes('missing_question_or_answer')?100:0)+
     (cflags.includes('source_question_rights_not_explicitly_verified')?45:0)+
     (cflags.includes('item_or_source_license_evidence_not_attached')?20:0)+
-    (count>1?16:0)+(c.items[0].kind==='study_card'?-10:0);
+    (count>1?16:0)+
+    (cflags.includes('upstream_answer_key_requires_reconciliation')?25:0)+
+    (cflags.includes('item_level_rights_human_confirmation_pending')?15:0)+
+    (cflags.includes('conceptual_answer_requires_expert_validation')?12:0)+
+    (c.items[0].kind==='study_card'?-10:0);
   const item={subject:c.subject,topic:c.topic,source:c.source,
    representative_id:c.items[0].id,candidate_count:count,
    sample_other_ids:c.items.slice(1,4).map(x=>x.id),

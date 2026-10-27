@@ -46,3 +46,17 @@ test('any publication state change is fail closed',()=>{
  assert.throws(()=>buildPlan([q('dup'),q('dup')]),/Duplicate/);
  assert.notEqual(templateKey('体积 1.05 ml'),templateKey('体积 10.05 mol'));
 });
+
+test('explicit source answer-key disputes and conceptual uncertainty raise review priority',()=>{
+ const disputed={...q('course','physical','quantum'),numeric_answers:[],
+  source_key_issue:'student_key_conflict',conceptual_answer_requires_expert_review:true,
+  source:{...q('course').source,repository:'PaulWAyers/IntroQChemProblems',
+   content_rights_verified:false,item_level_rights_review_pending:true}};
+ const flags=reviewFlags(disputed);
+ assert.ok(flags.includes('upstream_answer_key_requires_reconciliation'));
+ assert.ok(flags.includes('conceptual_answer_requires_expert_validation'));
+ assert.ok(flags.includes('item_level_rights_human_confirmation_pending'));
+ const plan=buildPlan([q('control','physical','quantum'),disputed],{perSubject:2});
+ assert.equal(plan.queue[0].representative_id,'course');
+ assert.equal(plan.expert_approved_count,0);
+});
