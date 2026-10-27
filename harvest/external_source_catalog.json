@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "total_candidates": 232,
+  "total_candidates": 233,
   "platform_counts": {
     "huggingface": 126,
-    "zenodo": 106
+    "zenodo": 107
   },
   "shards": [
     {
@@ -20,7 +20,7 @@
     },
     {
       "path": "harvest/external_sources/3.jsonl",
-      "count": 17
+      "count": 18
     },
     {
       "path": "harvest/external_sources/4.jsonl",
