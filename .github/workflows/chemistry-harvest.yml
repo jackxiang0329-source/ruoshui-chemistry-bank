@@ -51,6 +51,8 @@ on:
       - "harvest/pinned_pyeis_original_eis.json"
       - "scripts/import-analytical-calculator-mit.mjs"
       - "tests/analytical-calculator-mit.test.mjs"
+      - "scripts/import-original-analytical-variants.mjs"
+      - "tests/original-analytical-variants.test.mjs"
       - "harvest/pinned_analytical_calculator_mit.json"
       - "scripts/import-chemtrain-reaction-learn.mjs"
       - "tests/chemtrain-reaction-learn.test.mjs"
@@ -134,6 +136,8 @@ jobs:
         run: node --test tests/normalize-unpublished-candidates.test.mjs
       - name: Verify pinned MIT analytical chemistry exercise specifications
         run: node --test tests/analytical-calculator-mit.test.mjs
+      - name: Verify 96 original analytical parametric exercises
+        run: node --test tests/original-analytical-variants.test.mjs
       - name: Verify independently authored EIS physical chemistry exercises
         run: node --test tests/original-eis-pyeis.test.mjs
       - name: Validate public dataset metadata intake safety
@@ -168,6 +172,8 @@ jobs:
         run: node scripts/import-chemtrain-daily-text.mjs
       - name: Import independently validated original analytical chemistry exercises
         run: node scripts/import-analytical-calculator-mit.mjs
+      - name: Add 96 independently validated original analytical exercise variants
+        run: node scripts/import-original-analytical-variants.mjs
       - name: Import pinned Apache-2.0 reference based EIS physics practice
         run: node scripts/import-original-eis-pyeis.mjs
       - name: Normalize missing unreviewed publication flags to false
