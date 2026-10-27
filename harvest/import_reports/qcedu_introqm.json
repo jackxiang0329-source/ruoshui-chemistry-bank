@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source_repository": "QC-Edu/IntroQM",
+  "source_commit": "6709e555b10953d0938b7e3636559a95183de0bd",
+  "content_license": "CC0-1.0",
+  "source_exercises_examined": 5,
+  "curated_exercises": 3,
+  "excluded_exercises": 2,
+  "generated_candidate_questions": 3,
+  "by_subject": {
+    "physical": 3,
+    "inorganic": 0,
+    "organic": 0,
+    "analytical": 0
+  },
+  "third_party_pdfs_imported": 0,
+  "images_imported": 0,
+  "review_status": "awaiting_expert_review",
+  "publishable": false,
+  "note": "Three CC0 undergraduate quantum-chemistry course exercises adapted from pinned source files; 2 source exercises excluded due to answer/assumption concerns. Source-file Git Blob SHAs manually checked against GitHub; importer uses a pinned metadata fixture, not a full upstream mirror. Expert review and semantic dedup remain pending."
+}

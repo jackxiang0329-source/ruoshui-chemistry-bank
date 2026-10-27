@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "repository": "QC-Edu/IntroQM",
+  "commit": "6709e555b10953d0938b7e3636559a95183de0bd",
+  "content_license": "CC0-1.0",
+  "license_file": "LICENSE",
+  "license_git_blob_sha": "d6f0c9a0ae3f8013d6e1e6953983c811d705e867",
+  "license_notice_file": "license.md",
+  "license_notice_git_blob_sha": "5e5067b414c3021b23dd2155dc4054f321dcb37b",
+  "attribution": "Introduction to Quantum Mechanics for Chemists (QC-Edu), course authors Paul Ayers, Valerii Chuiko and Farnaz Heidar-Zadeh; original selected course exercises licensed CC0 1.0, subject to third-party exceptions.",
+  "source_exercises_examined": 5,
+  "curated_exercises": 3,
+  "excluded_exercises": 2,
+  "exclusion_notes": [
+    "book/SchrodingerExercise1.ipynb: source solution uses wavelength_cm=485.1e-7 despite prompt 486.1 nm; source answer inconsistent, not imported.",
+    "book/SchrodingerExercise2.ipynb: symbolic assumptions about real-valued parameters not explicit in question; defer to expert review."
+  ],
+  "third_party_pdfs_imported": 0,
+  "images_imported": 0,
+  "cards": [
+    {
+      "id": "70c557ec228d751abd25aed0975635d1055919000099e2f139625690c65a28de",
+      "source_file": "book/IntroExercise1.ipynb",
+      "git_blob_sha": "05452012f4be8990ce7e3501bd72745d24348221",
+      "kind": "photon_energy",
+      "question": "物理化学·量子化学（QC-Edu IntroQM 改编）：一个光子的能量为 2.000 eV。求其频率 ν（Hz）和动量大小 p（kg·m·s⁻¹），均保留四位有效数字。取 1 eV = 1.602176634×10⁻¹⁹ J、h = 6.62607015×10⁻³⁴ J·s、c = 299792458 m·s⁻¹。",
+      "answer": "ν = 4.836e+14 Hz; p = 1.069e-27 kg m/s",
+      "numeric_answer": {
+        "frequency_hz": 483600000000000,
+        "momentum_kg_m_s": 1.069e-27
+      },
+      "parameters": {
+        "energy_eV": 2
+      },
+      "explanation": "E=2eV×(1.602176634×10⁻¹⁹ J/eV)；ν=E/h，p=E/c。分别得到 4.835978484×10¹⁴ Hz 和 1.068857199×10⁻²⁷ kg·m·s⁻¹，按四位有效数字取值。"
+    },
+    {
+      "id": "919ff5d54bca287aefc738b61176869ddab6565919b074258f17c3e3653b6804",
+      "source_file": "book/IntroExercise2.ipynb",
+      "git_blob_sha": "b2762830e5d023e31921549c1f6ac184b2c5e7cd",
+      "kind": "photon_angular_wavenumber",
+      "question": "物理化学·量子化学（QC-Edu IntroQM 改编）：一个光子的角波数 k = 1.000×10⁸ m⁻¹（k = 2π/λ）。求动量大小 p（kg·m·s⁻¹）和能量 E（J），均保留四位有效数字。取 h = 6.62607015×10⁻³⁴ J·s、c = 299792458 m·s⁻¹。",
+      "answer": "p = 1.055e-26 kg m/s; E = 3.162e-18 J",
+      "numeric_answer": {
+        "momentum_kg_m_s": 1.055e-26,
+        "energy_j": 3.162e-18
+      },
+      "parameters": {
+        "angular_wavenumber_m_inverse": 100000000
+      },
+      "explanation": "p=ℏk=(h/2π)k，E=pc。独立计算得到 p=1.054571818×10⁻²⁶ kg·m·s⁻¹，E=3.161526773×10⁻¹⁸ J；原 Notebook 的打印标签把 1e8 错写为 1e7，不能复制该标签。"
+    },
+    {
+      "id": "65482688e0cce95f207584e916e273a9e43dcac6ff8cfe1a20045bf2f4803a67",
+      "source_file": "book/SchrodingerExercise3.md",
+      "git_blob_sha": "a2fa47e963ba30218e53f20bfcf339001be69cf1",
+      "kind": "morse_ground_state",
+      "question": "物理化学·量子化学（QC-Edu IntroQM 改编）：在 ℏ²/(2m)=1 的无量纲单位中，一维 Morse 势 V(x)=λ²(e⁻²ˣ−2e⁻ˣ)，已知基态波函数 ψ₀(x)=exp[−(λ−1/2)x−λe⁻ˣ]（λ>1/2）。由薛定谔方程 [−d²/dx²+V(x)]ψ₀=E₀ψ₀ 求基态能量 E₀（无量纲）。",
+      "answer": "E0 = -(lambda - 1/2)^2 (dimensionless)",
+      "parameters": {
+        "lambda_domain": "lambda > 1/2"
+      },
+      "explanation": "设 a=λ−1/2，则 ψ₀''/ψ₀=(−a+λe⁻ˣ)²−λe⁻ˣ。代入 −ψ₀''/ψ₀+V(x)，e⁻ˣ 和 e⁻²ˣ 项抵消，得到 E₀=−a²=−(λ−1/2)²。"
+    }
+  ]
+}

@@ -30,6 +30,9 @@ on:
       - "scripts/import-chemtrain-pka-qualitative.mjs"
       - "scripts/import-chemtrain-reactivity.mjs"
       - "tests/chemtrain-reactivity.test.mjs"
+      - "scripts/import-qcedu-introqm.mjs"
+      - "tests/qcedu-introqm.test.mjs"
+      - "harvest/pinned_qcedu_introqm.json"
       - "harvest/pinned_reactivity_regioselectivity.json"
       - "tests/chemtrain-pka-qualitative.test.mjs"
       - "harvest/pinned_pka_qualitative_sites.json"
@@ -85,6 +88,8 @@ jobs:
         run: node --test tests/chemtrain-reactivity.test.mjs
       - name: Verify pinned MIT parametric general chemistry generator
         run: node --test tests/parametric-mit-chemistry.test.mjs
+      - name: Verify pinned CC0 QC-Edu quantum chemistry importer
+        run: node --test tests/qcedu-introqm.test.mjs
       - name: Search GitHub chemistry repositories
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -111,6 +116,8 @@ jobs:
         run: node scripts/import-parametric-mit-chemistry.mjs
       - name: Import pinned CC BY 4.0 Reactivity Learn text-only regioselectivity
         run: node scripts/import-chemtrain-reactivity.mjs
+      - name: Import pinned CC0 QC-Edu quantum chemistry exercises
+        run: node scripts/import-qcedu-introqm.mjs
       - name: Commit only real additions or changes
         run: |
           git add -- harvest/source_candidates.json

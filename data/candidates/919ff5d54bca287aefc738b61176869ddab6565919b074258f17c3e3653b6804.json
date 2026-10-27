@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "919ff5d54bca287aefc738b61176869ddab6565919b074258f17c3e3653b6804",
+  "subject": "physical",
+  "topic": "quantum_chemistry",
+  "level": "undergraduate",
+  "question_type": "photon_angular_wavenumber",
+  "question": "物理化学·量子化学（QC-Edu IntroQM 改编）：一个光子的角波数 k = 1.000×10⁸ m⁻¹（k = 2π/λ）。求动量大小 p（kg·m·s⁻¹）和能量 E（J），均保留四位有效数字。取 h = 6.62607015×10⁻³⁴ J·s、c = 299792458 m·s⁻¹。",
+  "answer": "p = 1.055e-26 kg m/s; E = 3.162e-18 J",
+  "numeric_answer": {
+    "momentum_kg_m_s": 1.055e-26,
+    "energy_j": 3.162e-18
+  },
+  "explanation": "p=ℏk=(h/2π)k，E=pc。独立计算得到 p=1.054571818×10⁻²⁶ kg·m·s⁻¹，E=3.161526773×10⁻¹⁸ J；原 Notebook 的打印标签把 1e8 错写为 1e7，不能复制该标签。",
+  "parameters": {
+    "angular_wavenumber_m_inverse": 100000000
+  },
+  "source": {
+    "repository": "QC-Edu/IntroQM",
+    "commit": "6709e555b10953d0938b7e3636559a95183de0bd",
+    "file": "book/IntroExercise2.ipynb",
+    "git_blob_sha": "b2762830e5d023e31921549c1f6ac184b2c5e7cd",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/QC-Edu/IntroQM/blob/6709e555b10953d0938b7e3636559a95183de0bd/license.md",
+    "license_git_blob_sha": "5e5067b414c3021b23dd2155dc4054f321dcb37b",
+    "url": "https://github.com/QC-Edu/IntroQM/blob/6709e555b10953d0938b7e3636559a95183de0bd/book/IntroExercise2.ipynb",
+    "attribution": "Introduction to Quantum Mechanics for Chemists (QC-Edu), course authors Paul Ayers, Valerii Chuiko and Farnaz Heidar-Zadeh; original selected course exercises licensed CC0 1.0, subject to third-party exceptions.",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "changes": "Chinese adaptation of an explicitly selected CC0 course exercise; independently recomputed result, excluded third-party PDFs and notebook output-label errors; no third-party artwork copied."
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false
+}
