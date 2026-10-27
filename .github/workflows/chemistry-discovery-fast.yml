@@ -22,6 +22,7 @@ permissions:
 concurrency:
   group: chemistry-harvest-main
   cancel-in-progress: false
+  queue: max
 jobs:
   discover:
     runs-on: ubuntu-latest
