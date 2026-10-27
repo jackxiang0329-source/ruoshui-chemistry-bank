@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "revision": "82e1af468197076b4f0f392c239274eac032adc7",
-  "next_offset": 2000,
-  "examined": 2000,
-  "staged_total": 1922,
-  "last_add": 762,
-  "last_examined": 800,
-  "last_pages": 8,
+  "next_offset": 3600,
+  "examined": 3600,
+  "staged_total": 3458,
+  "last_add": 1536,
+  "last_examined": 1600,
+  "last_pages": 16,
   "last_rejected": {
-    "answer_or_question_length": 38
+    "answer_or_question_length": 64
   }
 }
