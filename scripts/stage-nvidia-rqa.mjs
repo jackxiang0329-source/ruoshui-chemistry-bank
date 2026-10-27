@@ -68,11 +68,35 @@ export function readArchive(){
  }
  return {seen,ids,total};
 }
+export const retryableHttpStatus=status=>[408,429,500,502,503,504].includes(status);
+export function retryDelay(attempt,retryAfterSeconds=null){
+ const seconds=Number(retryAfterSeconds);
+ if(retryAfterSeconds!==null&&Number.isFinite(seconds)&&seconds>=0)
+  return Math.min(15000,seconds*1000);
+ return Math.min(12000,1500*(2**attempt));
+}
+const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 async function request(url){
- const r=await fetch(url,{signal:AbortSignal.timeout(30000),
-  headers:{Accept:'application/json','User-Agent':'ruoshui-chemistry-scientific-qa-audit'}});
- if(!r.ok)throw Error('Source API HTTP '+r.status+' on '+new URL(url).pathname);
- return r.json();
+ for(let attempt=0;attempt<4;attempt++){
+  let r;
+  try{
+   r=await fetch(url,{signal:AbortSignal.timeout(30000),
+    headers:{Accept:'application/json','User-Agent':'ruoshui-chemistry-scientific-qa-audit'}});
+  }catch(e){
+   if(attempt>=3)throw e;
+   const wait=retryDelay(attempt);
+   console.warn('Transient source network failure; retry '+(attempt+1)+'/3 in '+wait+'ms: '+String(e.message||e).slice(0,130));
+   await sleep(wait);
+   continue;
+  }
+  if(r.ok)return r.json();
+  if(!retryableHttpStatus(r.status)||attempt>=3)
+   throw Error('Source API HTTP '+r.status+' on '+new URL(url).pathname+' (attempt '+(attempt+1)+')');
+  const delay=retryDelay(attempt,r.headers.get('retry-after'));
+  console.warn('Transient source HTTP '+r.status+'; retry '+(attempt+1)+'/3 in '+delay+'ms');
+  await sleep(delay);
+ }
+ throw Error('Unexpected source fetch retry exhaustion');
 }
 export async function run(fetchJSON=request){
  const cfg=JSON.parse(readFileSync(CFG,'utf8'));

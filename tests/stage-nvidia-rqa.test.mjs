@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {curatePage,inferSubject,questionHash,encodeArchiveRows,decodeArchiveRows} from '../scripts/stage-nvidia-rqa.mjs';
+import {curatePage,inferSubject,questionHash,encodeArchiveRows,decodeArchiveRows,retryableHttpStatus,retryDelay} from '../scripts/stage-nvidia-rqa.mjs';
 const cfg={dataset:'nvidia/Nemotron-Science-v1',revision:'82e1af468197076b4f0f392c239274eac032adc7',max_question_chars:12000,max_answer_chars:12000};
 const q='Under standard thermodynamic laboratory conditions, calculate the equilibrium constant for a gas-phase chemistry reaction using the specified standard Gibbs free energy and temperature, and show all computations.';
 const make=(i)=>({row_idx:i,row:{license:'cc-by-4.0',uuid:'a8c31e23-49d7-453c-8a42-'+String(i).padStart(12,'0'),messages:[
@@ -38,4 +38,16 @@ test('compressed archival format round-trips and keeps hard publication embargo'
  assert.deepEqual(recovered.map(x=>x.question_sha256),batch.map(x=>x.question_sha256));
  assert.ok(compressed.byteLength<Buffer.byteLength(batch.map(JSON.stringify).join('\n')+'\n'));
  assert.throws(()=>encodeArchiveRows([{publishable:true,exclude_from_official_bank:false}]));
+});
+
+test('HTTP rate limits and temporary 5xx are retried with bounded backoff, while license failures are not',()=>{
+ assert.equal(retryableHttpStatus(502),true);
+ assert.equal(retryableHttpStatus(503),true);
+ assert.equal(retryableHttpStatus(429),true);
+ assert.equal(retryableHttpStatus(403),false);
+ assert.equal(retryableHttpStatus(404),false);
+ assert.equal(retryDelay(0),1500);
+ assert.equal(retryDelay(3),12000);
+ assert.equal(retryDelay(2,'9'),9000);
+ assert.equal(retryDelay(2,'3600'),15000);
 });
