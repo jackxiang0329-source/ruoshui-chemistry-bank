@@ -107,6 +107,21 @@
       "import_questions": false,
       "quality_note": "research reaction-yield benchmark may not fit standard undergraduate question quality without unit checks, data splits and scientific verification",
       "next_action": "review metadata/SOURCES.md and isolate demonstrably licensed independent exercise records"
+    },
+    {
+      "source": "OpenStax Chemistry 2e",
+      "url": "https://openstax.org/details/books/chemistry-2e",
+      "category": "inorganic,analytical,physical",
+      "format": "curated author-licensed textbook learning checks and chapter exercises; adapted Chinese text, no media",
+      "repository_license": "CC BY 4.0 except where otherwise noted",
+      "license_evidence": "https://collection.bccampus.ca/textbook/UbciECy3/",
+      "license_owner": "OpenStax (2019), Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson et al.",
+      "rights_status": "eight author-licensed adapted questions only; third-party licensed figures and examination questions excluded",
+      "import_questions": true,
+      "imported_candidate_count": 8,
+      "pins": "harvest/pinned_openstax_chemistry2e.json",
+      "quality_note": "3 analytical, 3 physical, 2 inorganic. All numeric outcomes independently recomputed and all candidates remain unpublished awaiting expert review.",
+      "next_action": "verify chemistry explanations with reviewers, compare across-source semantic ideas, and add more vetted questions with complete provenance"
     }
   ]
 }
