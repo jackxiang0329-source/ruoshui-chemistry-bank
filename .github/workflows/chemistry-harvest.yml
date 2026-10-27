@@ -31,9 +31,6 @@ on:
       - "scripts/import-chemtrain-reactivity.mjs"
       - "tests/chemtrain-reactivity.test.mjs"
       - "scripts/import-qcedu-introqm.mjs"
-      - "scripts/import-openstax-chemistry2e.mjs"
-      - "harvest/pinned_openstax_chemistry2e.json"
-      - "tests/openstax-chemistry2e.test.mjs"
       - "scripts/audit-candidate-quality.mjs"
       - "scripts/normalize-unpublished-candidates.mjs"
       - "tests/normalize-unpublished-candidates.test.mjs"
@@ -101,8 +98,6 @@ jobs:
         run: node --test tests/qcedu-introqm.test.mjs
       - name: Verify pinned Reaction Learn licensed-card importer
         run: node --test tests/chemtrain-reaction-learn.test.mjs
-      - name: Verify CC BY 4.0 OpenStax exercise importer
-        run: node --test tests/openstax-chemistry2e.test.mjs
       - name: Verify candidate review buckets and semantic overlap audit
         run: node --test tests/candidate-quality-audit.test.mjs
       - name: Verify fail-closed publication flag migration
@@ -137,8 +132,6 @@ jobs:
         run: node scripts/import-qcedu-introqm.mjs
       - name: Import pinned CC BY 4.0 Reaction Learn text study cards
         run: node scripts/import-chemtrain-reaction-learn.mjs
-      - name: Import eight pinned OpenStax exercise adaptations
-        run: node scripts/import-openstax-chemistry2e.mjs
       - name: Normalize missing unreviewed publication flags to false
         run: node scripts/normalize-unpublished-candidates.mjs
       - name: Audit candidate review buckets and potential duplicates

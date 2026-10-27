@@ -31,7 +31,6 @@
 ## 机器可读候选题与安全隔离
 
 - [机器可读质量审计](harvest/quality_audit.json)：自动统计四科题量、复习卡与习题数量、许可证来源检查、完全同文题组、数字模板相似题和跨来源疑似重复对。此报告**只给人工复审提供线索，不进行自动语义合并**。
-- [开放教材许可审查与导入结果](harvest/run_logs/2026-10-27-openstax-quality-audit.md)：记录八道 OpenStax 题目的各章来源、版权及独立复算。
-- [OpenStax 固定题源清单](harvest/pinned_openstax_chemistry2e.json) 与 [生成器](scripts/import-openstax-chemistry2e.mjs)。
+- [OpenStax 授权冲突与撤回记录](harvest/run_logs/2026-10-27-openstax-quality-audit.md)：官方当前标注 CC BY-NC-SA，原先 8 道改编题已从 main 撤回，未经额外核权禁止重新导入。
 - 题库包含两种**不同资源类型**：命名反应/试剂「学习卡」和需要独立推理/计算的「习题候选」。两者均不能简单等同于考试真题。
 - **强制出版保护**：尚未完成专家审核者必须明确标记 \`publishable=false\`；不允许仅凭许可证或自动计算结果自动发布。

@@ -112,16 +112,16 @@
       "source": "OpenStax Chemistry 2e",
       "url": "https://openstax.org/details/books/chemistry-2e",
       "category": "inorganic,analytical,physical",
-      "format": "curated author-licensed textbook learning checks and chapter exercises; adapted Chinese text, no media",
-      "repository_license": "CC BY 4.0 except where otherwise noted",
-      "license_evidence": "https://collection.bccampus.ca/textbook/UbciECy3/",
+      "format": "public web textbook and exercises, NOT approved for bulk mirror or reuse in this repository",
+      "repository_license": "CURRENT PRIMARY SITE: CC BY-NC-SA 4.0 (with extra reuse restrictions); legacy external catalog claimed CC BY 4.0; version-specific rights unresolved",
+      "license_evidence": "https://openstax.org/books/chemistry-2e/pages/1-introduction",
       "license_owner": "OpenStax (2019), Paul Flowers, Klaus Theopold, Richard Langley, William R. Robinson et al.",
-      "rights_status": "eight author-licensed adapted questions only; third-party licensed figures and examination questions excluded",
-      "import_questions": true,
-      "imported_candidate_count": 8,
-      "pins": "harvest/pinned_openstax_chemistry2e.json",
-      "quality_note": "3 analytical, 3 physical, 2 inorganic. All numeric outcomes independently recomputed and all candidates remain unpublished awaiting expert review.",
-      "next_action": "verify chemistry explanations with reviewers, compare across-source semantic ideas, and add more vetted questions with complete provenance"
+      "rights_status": "BLOCKED: source licensing conflict between current first-party notice and historical third-party listing, especially NC/SA and AI-use restrictions. Eight adapted candidate files were removed from main.",
+      "import_questions": false,
+      "imported_candidate_count": 0,
+      "pins": null,
+      "quality_note": "8 previously imported candidate adaptations (2 inorganic, 3 analytical, 3 physical) were removed from main; never approved for release.",
+      "next_action": "Only consider future import after obtaining authoritative version-specific redistribution rights and meeting all NC-SA attribution/compatibility conditions; do not use this as an automatic source."
     }
   ]
 }
