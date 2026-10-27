@@ -125,7 +125,7 @@ export function run(){
   edition_and_item_rights_status:'blocked_pending_canonical_license_review',
   source_license_claim:'CC-BY-3.0 (historical GitHub mirror)',
   first_party_current_reuse_guidance:'https://openstax.org/books/chemistry-2e/pages/preface',
-  2015_original_chemistry_claim:'https://openstax.org/books/chemistry/pages/preface',
+  original_2015_chemistry_claim:'https://openstax.org/books/chemistry/pages/preface',
   previous_retraction:'harvest/run_logs/2026-10-27-openstax-quality-audit.md',
   chinese_independently_recomputed_review_items:rows.length,
   imported_into_main_candidate_bank:0,publishable:0,expert_approved:0,
