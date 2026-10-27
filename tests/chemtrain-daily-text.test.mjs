@@ -24,10 +24,10 @@ test('source correct answer index is respected, not assumed always A',()=>{
  assert.equal(rows[0].answer_option,'C');
 });
 test('reject duplicate named targets and invalid options or missing structural names',()=>{
- const one=base('tmc','Geometry','Ni','Ni(CO)₄');
+ const one=base('tmc','Geometry','Nickel','Ni(CO)₄');
  const dupe=structuredClone(one);
- const wrong=base('tmc','Geometry','Fe','Fe(CO)₅');wrong.o[1].x='Correct answer';
- const missing=base('tmc','Geometry','Co','Co(OH)₂');missing.f='';
+ const wrong=base('tmc','Geometry','Iron','Fe(CO)₅');wrong.o[1].x='Correct answer';
+ const missing=base('tmc','Geometry','Cobalt','Co(OH)₂');missing.f='';
  const x=buildQuestions([one,dupe,wrong,missing]);
  assert.equal(x.records.length,1);
  assert.equal(x.excluded.duplicate_card_target,1);
