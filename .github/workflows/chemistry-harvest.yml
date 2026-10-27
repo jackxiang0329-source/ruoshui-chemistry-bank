@@ -35,6 +35,8 @@ on:
       - "harvest/pinned_openstax_chemistry2e.json"
       - "tests/openstax-chemistry2e.test.mjs"
       - "scripts/audit-candidate-quality.mjs"
+      - "scripts/normalize-unpublished-candidates.mjs"
+      - "tests/normalize-unpublished-candidates.test.mjs"
       - "tests/candidate-quality-audit.test.mjs"
       - "scripts/import-chemtrain-reaction-learn.mjs"
       - "tests/chemtrain-reaction-learn.test.mjs"
@@ -103,6 +105,8 @@ jobs:
         run: node --test tests/openstax-chemistry2e.test.mjs
       - name: Verify candidate review buckets and semantic overlap audit
         run: node --test tests/candidate-quality-audit.test.mjs
+      - name: Verify fail-closed publication flag migration
+        run: node --test tests/normalize-unpublished-candidates.test.mjs
       - name: Search GitHub chemistry repositories
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -135,6 +139,8 @@ jobs:
         run: node scripts/import-chemtrain-reaction-learn.mjs
       - name: Import eight pinned OpenStax exercise adaptations
         run: node scripts/import-openstax-chemistry2e.mjs
+      - name: Normalize missing unreviewed publication flags to false
+        run: node scripts/normalize-unpublished-candidates.mjs
       - name: Audit candidate review buckets and potential duplicates
         run: node scripts/audit-candidate-quality.mjs
       - name: Commit only real additions or changes
