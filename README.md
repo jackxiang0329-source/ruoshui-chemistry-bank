@@ -6,12 +6,12 @@
 
 ## 当前候选内容快照（2026-10-27）
 
-- 已验证 GitHub `main` 上共有 **1122** 份候选内容：无机 622、分析 33、物理 53、有机 414。
-- 其中 **844** 份练习候选、**278** 份学习卡；不是 1122 道独立可出卷考试真题。
+- 已验证 GitHub `main` 上共有 **1390** 份候选内容：无机 849、分析 33、物理 53、有机 455。
+- 其中 **1112** 份练习候选、**278** 份学习卡；不是 1390 道独立可出卷考试真题。
 - 全部 `awaiting_expert_review`、`publishable=false`；专家正式批准 **0** 道。
 - 机器审计发现完全同题干 0 组、相同题型模板 36 组；并不表示跨语言或语义重复已解决。
 - [本轮新增 EIS 原创习题和 Apache-2.0 来源审计](harvest/run_logs/2026-10-27-pyeis-original-eis.md)。
-- [当前自动生成的实时审计数据](harvest/quality_audit.json)优先于本段日期快照；每 30 分钟来源发现与入库任务采用 `17,47 * * * *`，可能受 GitHub 调度延迟影响。
+- [当前自动生成的实时审计数据](harvest/quality_audit.json)优先于本段日期快照；来源发现每 10 分钟采用 `4,14,24,34,44,54 * * * *`，严格入库每 30 分钟采用 `17,47 * * * *`，可能受 GitHub 调度延迟影响。
 
 ## 原则
 
@@ -43,3 +43,10 @@
 - [OpenStax 授权冲突与撤回记录](harvest/run_logs/2026-10-27-openstax-quality-audit.md)：官方当前标注 CC BY-NC-SA，原先 8 道改编题已从 main 撤回，未经额外核权禁止重新导入。
 - 题库包含两种**不同资源类型**：命名反应/试剂「学习卡」和需要独立推理/计算的「习题候选」。两者均不能简单等同于考试真题。
 - **强制出版保护**：尚未完成专家审核者必须明确标记 \`publishable=false\`；不允许仅凭许可证或自动计算结果自动发布。
+
+## ChemTrain Daily 批量合规导入（2026-10-27）
+
+- 固定 CC BY 4.0 原作者内容许可证与源 HTML Git Blob，仅转换无需分子结构图的文字 MCQ：**无机 227、有机 41，共 268**。
+- 原始 2892 道不直接照单全收；排除第三方 pKa/Mayr 测量值、结构 SVG、所有依赖图示的题目。
+- [可重复执行导入器](scripts/import-chemtrain-daily-text.mjs)、[回归测试](tests/chemtrain-daily-text.test.mjs)、[审计日志](harvest/run_logs/2026-10-27-chemtrain-daily-import.md)。
+- `awaiting_expert_review` + `publishable=false`；结构构型题特别标记复审，不等于 268 道官方独立考试原题。

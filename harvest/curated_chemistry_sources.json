@@ -240,6 +240,23 @@
       "quality_note": "All five source q1-q5 already in data/candidates; unapproved, publishable=false. q2 acid conditions, q4 missing acid catalyst, q5 missing explicit acidic workup need expert review.",
       "quality_review": "harvest/source_reviews/2026-10-27-muzapro-reaction-quality.json",
       "next_action": "Do not re-import source q1-q5; preserve local MIT notice and review reaction conditions; source IDs checked by tests/muzapro-existing-coverage.test.mjs"
+    },
+    {
+      "source": "ChemTrain/chemtrain-daily",
+      "url": "https://github.com/ChemTrain/chemtrain-daily",
+      "pin": "327eb915764dbcdf7bce4974a0542f3b3d626554",
+      "category": "inorganic,organic",
+      "format": "text-only CC BY 4.0 study MCQs adapted into Chinese",
+      "repository_license": "CC BY 4.0 authored content, MIT code",
+      "license_evidence": "https://github.com/ChemTrain/chemtrain-daily/blob/327eb915764dbcdf7bce4974a0542f3b3d626554/LICENSE-CONTENT.md",
+      "license_owner": "ChemTrain Daily (Quentin Bindschaedler); TMC Learn (Francesco Sala), PG Learn (Quentin Bindschaedler)",
+      "content_license_git_blob_sha": "c1459875927c2a1bbbff1b6bf103efd0b0da44e8",
+      "source_html_git_blob_sha": "d0b152ff845f18a5ff5743c1e44a43b81f87584e",
+      "rights_status": "Verified pinned authored content CC BY 4.0; excluded all structure SVGs and third-party measured values",
+      "import_questions": true,
+      "imported_candidate_count": 268,
+      "quality_note": "133 coordination geometry + 47 ligand electrons + 47 L/X ligand class + 41 protecting group deprotection text MCQs; all unpublished and awaiting expert review.",
+      "next_action": "Expert review geometry and deprotection selectivity, semantic cross-source dedup, copyright attribution and correct options."
     }
   ]
 }
