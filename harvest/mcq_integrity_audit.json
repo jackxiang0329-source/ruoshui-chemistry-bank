@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked_mcq_candidates": 268,
+  "checked_mcq_candidates": 280,
   "by_subject": {
     "inorganic": 227,
-    "organic": 41
+    "organic": 53
   },
   "issue_count": 0,
   "issues": [],
