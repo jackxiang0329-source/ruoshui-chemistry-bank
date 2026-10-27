@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "checked": {
+    "ajschoef/pythonforchemistsintro": {
+      "repository": "ajschoef/PythonForChemistsIntro",
+      "url": "https://github.com/ajschoef/PythonForChemistsIntro",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "MIT",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "596c1fb9ce397eef1e14d765d175658fc80404db",
+      "readme_file_git_blob_sha": "5db0b9798e7003a7d3a21e8c23307fa1f624fcf5",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "ajz34/pycrawfordprogproj": {
+      "repository": "ajz34/PyCrawfordProgProj",
+      "url": "https://github.com/ajz34/PyCrawfordProgProj",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "Apache-2.0",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "bc2e978c3b3922065425ad8d8661445be0e1c528",
+      "readme_file_git_blob_sha": "816e488c942c52740318f3baf6b592421683d556",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "andrewgajetzki/orgo-quiz": {
+      "repository": "andrewgajetzki/orgo-quiz",
+      "url": "https://github.com/andrewgajetzki/orgo-quiz",
+      "subjects": [
+        "organic"
+      ],
+      "discovery_license_spdx": "MIT",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "018195f3c5277dd9b6fb7521935f86b06bc91798",
+      "readme_file_git_blob_sha": "4d67aec2af22c45d4b7d972dedf5b33ce6ec9e85",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "aswalker-lab/aichembiochem": {
+      "repository": "aswalker-lab/AIChemBiochem",
+      "url": "https://github.com/aswalker-lab/AIChemBiochem",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "MIT",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "f6f913a06194c5d4d0473fd739d430816d8b9afd",
+      "readme_file_git_blob_sha": "5d30b1c788e37da92b2b5fcfb169e5492a841ed2",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "bdfd-tutorial-ground/op-queens_chem112a-b_general-chemistry-i": {
+      "repository": "BDFD-Tutorial-Ground/OP-Queens_CHEM112A-B_General-Chemistry-I",
+      "url": "https://github.com/BDFD-Tutorial-Ground/OP-Queens_CHEM112A-B_General-Chemistry-I",
+      "subjects": [
+        "organic"
+      ],
+      "discovery_license_spdx": "MIT",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "caf65fc1b04c19d152d23e1023bff1fb363625fd",
+      "readme_file_git_blob_sha": "5a7e97bcd15ab049f4349562ea0fd553f5d3af27",
+      "third_party_content_risk": true,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "bdfd-tutorial-ground/uwo_chem1302b_discovering-chemical-energetics": {
+      "repository": "BDFD-Tutorial-Ground/UWO_CHEM1302B_Discovering-Chemical-Energetics",
+      "url": "https://github.com/BDFD-Tutorial-Ground/UWO_CHEM1302B_Discovering-Chemical-Energetics",
+      "subjects": [
+        "physical"
+      ],
+      "discovery_license_spdx": "MIT",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "caf65fc1b04c19d152d23e1023bff1fb363625fd",
+      "readme_file_git_blob_sha": "f7596716b9079bc71dabf494485c7c06df3309bd",
+      "third_party_content_risk": true,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "dannyvanpoucke/pythontutorials": {
+      "repository": "DannyVanpoucke/PythonTutorials",
+      "url": "https://github.com/DannyVanpoucke/PythonTutorials",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "MIT",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "9c2b8d65ecccedc4a5a1e2867bb5d3df1e98fda8",
+      "readme_file_git_blob_sha": "e74ff1c70dba42781bfd9421ed15f217f98b6b3f",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "jqchen1566/analytical-chemistry-review-notes": {
+      "repository": "jqChen1566/analytical-chemistry-review-notes",
+      "url": "https://github.com/jqChen1566/analytical-chemistry-review-notes",
+      "subjects": [
+        "analytical"
+      ],
+      "discovery_license_spdx": "CC-BY-SA-4.0",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "171aa089c921765e36199ecb995329bdbcce584e",
+      "readme_file_git_blob_sha": "44596ba1b3a2e70fbf33624ce46862ab96d266c1",
+      "third_party_content_risk": true,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "jreel/essentoo": {
+      "repository": "jreel/EssenToo",
+      "url": "https://github.com/jreel/EssenToo",
+      "subjects": [
+        "organic"
+      ],
+      "discovery_license_spdx": "GPL-3.0",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "readme_file_git_blob_sha": "d0698bddc6d6503780bff524743c830f17437cfd",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "molchem/chemistry-quiz-1": {
+      "repository": "MolChem/chemistry-quiz-1",
+      "url": "https://github.com/MolChem/chemistry-quiz-1",
+      "subjects": [
+        "organic",
+        "analytical",
+        "physical"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "38cae670710f4c1d75072bc643b00fef1cfb73ac",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "muzapro/organic-chem-quiz": {
+      "repository": "MuzaPro/organic-chem-quiz",
+      "url": "https://github.com/MuzaPro/organic-chem-quiz",
+      "subjects": [
+        "organic"
+      ],
+      "discovery_license_spdx": "MIT",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "4ef30f44a9a6ade70614188412f98c76aaa3b14e",
+      "readme_file_git_blob_sha": "9ef0ab2cb5422b3f4465db04cc1bd8a76dfb9659",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
+    "muzapro/organic-chemistry-quiz-js": {
+      "repository": "MuzaPro/Organic-Chemistry-Quiz-JS",
+      "url": "https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS",
+      "subjects": [
+        "organic"
+      ],
+      "discovery_license_spdx": "MIT",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "4ef30f44a9a6ade70614188412f98c76aaa3b14e",
+      "readme_file_git_blob_sha": "b231e039fcacc2145a5275f197e55a645c22f99b",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    }
+  },
+  "note": "License preflight does not approve, copy or release any question data.",
+  "total_checked": 12,
+  "candidates_with_repository_license_evidence": 11,
+  "affirmatively_licensed_question_sets": 0
+}
