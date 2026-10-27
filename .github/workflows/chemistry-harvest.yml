@@ -31,6 +31,8 @@ on:
       - "scripts/import-chemtrain-reactivity.mjs"
       - "tests/chemtrain-reactivity.test.mjs"
       - "scripts/import-qcedu-introqm.mjs"
+      - "scripts/import-chemtrain-reaction-learn.mjs"
+      - "tests/chemtrain-reaction-learn.test.mjs"
       - "tests/qcedu-introqm.test.mjs"
       - "harvest/pinned_qcedu_introqm.json"
       - "harvest/pinned_reactivity_regioselectivity.json"
@@ -90,6 +92,8 @@ jobs:
         run: node --test tests/parametric-mit-chemistry.test.mjs
       - name: Verify pinned CC0 QC-Edu quantum chemistry importer
         run: node --test tests/qcedu-introqm.test.mjs
+      - name: Verify pinned Reaction Learn licensed-card importer
+        run: node --test tests/chemtrain-reaction-learn.test.mjs
       - name: Search GitHub chemistry repositories
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -118,6 +122,8 @@ jobs:
         run: node scripts/import-chemtrain-reactivity.mjs
       - name: Import pinned CC0 QC-Edu quantum chemistry exercises
         run: node scripts/import-qcedu-introqm.mjs
+      - name: Import pinned CC BY 4.0 Reaction Learn text study cards
+        run: node scripts/import-chemtrain-reaction-learn.mjs
       - name: Commit only real additions or changes
         run: |
           git add -- harvest/source_candidates.json
