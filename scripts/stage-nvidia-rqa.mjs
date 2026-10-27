@@ -79,8 +79,8 @@ export async function run(fetchJSON=request){
  if(cfg.schema_version!==1||cfg.dataset!=='nvidia/Nemotron-Science-v1'||
   cfg.revision!=='82e1af468197076b4f0f392c239274eac032adc7'||
   cfg.license!=='cc-by-4.0'||cfg.config!=='default'||cfg.split!=='RQA'||cfg.total_rows!==52179||
-  !Number.isInteger(cfg.batch_pages)||cfg.batch_pages<1||cfg.batch_pages>24||
-  cfg.page_size<1||cfg.page_size>100||cfg.max_staged<100||cfg.max_staged>16000||
+  !Number.isInteger(cfg.batch_pages)||cfg.batch_pages<1||cfg.batch_pages>40||
+  cfg.page_size<1||cfg.page_size>100||cfg.max_staged<100||cfg.max_staged>25000||
   !Number.isInteger(cfg.max_question_chars)||cfg.max_question_chars<100||cfg.max_question_chars>20000||
   !Number.isInteger(cfg.max_answer_chars)||cfg.max_answer_chars<100||cfg.max_answer_chars>20000)
   throw Error('Unapproved source pin, split or size limit');

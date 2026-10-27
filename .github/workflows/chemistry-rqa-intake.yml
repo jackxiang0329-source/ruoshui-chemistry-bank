@@ -37,7 +37,7 @@ jobs:
         run: node --test tests/stage-nvidia-rqa.test.mjs
       - name: Validate reviewer prioritization
         run: node --test tests/triage-nvidia-rqa.test.mjs
-      - name: Pull up to 1600 pinned CC BY chemistry RQA rows into gzip research quarantine
+      - name: Pull up to 3200 pinned CC BY chemistry RQA rows into gzip research quarantine
         run: node scripts/stage-nvidia-rqa.mjs
       - name: Rebuild human QA scientific review shortlist
         run: node scripts/triage-nvidia-rqa.mjs
