@@ -12,7 +12,7 @@ test('license-gated eight textbook adaptations across underrepresented fields',(
 test('independent numerical chemistry solution regression',()=>{
  const values=Object.fromEntries(d.items.map(x=>[x.id,independentlyRecompute(x)]));
  assert.ok(Math.abs(values['os2e-a-mgf2']-0.001169607095)<1e-8);
- assert.equal(values['os2e-a-kclo4'],0.004000000000000001);
+ assert.ok(Math.abs(values['os2e-a-kclo4']-0.004)<1e-14);
  assert.ok(Math.abs(values['os2e-a-titration']-1.5118833609788744)<1e-9);
  assert.equal(values['os2e-p-rate-order'],3);
  assert.ok(Math.abs(values['os2e-p-acetaldehyde']-6.726530612e-6)<1e-10);
