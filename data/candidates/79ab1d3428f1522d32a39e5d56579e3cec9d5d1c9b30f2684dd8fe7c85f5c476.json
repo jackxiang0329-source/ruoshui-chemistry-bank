@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "79ab1d3428f1522d32a39e5d56579e3cec9d5d1c9b30f2684dd8fe7c85f5c476",
+  "subject": "analytical",
+  "topic": "coulometric_copper_deposition",
+  "level": "undergraduate",
+  "difficulty": "introductory_to_intermediate",
+  "question_type": "original_instrumental_analytical_calculation",
+  "resource_type": "original_problem_variant_not_upstream_question",
+  "question": "分析化学·恒电流库仑分析：Cu²⁺ + 2e⁻ → Cu，电解电流 0.670 A，通电 700 s，假设电流效率 100%、无副反应。取 F=96485.33212 C/mol、M(Cu)=63.546 g/mol。求沉积铜的质量（mg）。",
+  "answer": "m(Cu) = 1000×ItM/(2F) = 154.4435 mg。",
+  "explanation": "电量 Q=It，电子物质的量 Q/F；每摩尔 Cu²⁺ 消耗两摩尔电子，再换算为 mg。",
+  "numeric_answers": [
+    154.4435477660664
+  ],
+  "units": "mg",
+  "parameters": {
+    "I_amp": 0.67,
+    "t_s": 700,
+    "electrons": 2,
+    "Cu_molar_mass": 63.546,
+    "faraday": 96485.33212
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-instrumental-analytical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "origin": "original_deterministic_generation",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical instrument calculations; no external question, dataset or experimental measurement reproduced."
+  }
+}

@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "total_candidates": 1582,
-  "corpus_hash_sha256": "5badebb04636c5129685744b5f85d7de788d3e658f22dfa58814db1573591b1c",
+  "total_candidates": 1646,
+  "corpus_hash_sha256": "d4d59f8f28b1aff607747e9352ef3210a62033456f1fb0e59eaced43d161b73f",
   "by_subject": {
-    "analytical": 129,
+    "analytical": 193,
     "inorganic": 849,
     "organic": 467,
     "physical": 137
   },
   "by_content_kind": {
-    "exercise_candidate": 1304,
+    "exercise_candidate": 1368,
     "study_card": 278
   },
   "by_quality_status": {
-    "awaiting_expert_review": 1582
+    "awaiting_expert_review": 1646
   },
   "by_publishable": {
-    "false": 1582
+    "false": 1646
   },
   "source_counts": {
     "ChemTrain/chemtrain-daily": 268,
@@ -32,17 +32,23 @@
     "QC-Edu/IntroQM": 3,
     "arya51-ai/parametric-question-engine": 30,
     "bem130/chemquiz": 67,
-    "jackxiang0329-source/ruoshui-chemistry-bank": 192,
+    "jackxiang0329-source/ruoshui-chemistry-bank": 256,
     "kbknudsen/PyEIS": 8,
     "thisisntnathan/dftCourse": 12
   },
   "topic_counts": {
     "analytical:calcium_oxalate_indirect_assay": 12,
+    "analytical:chromatographic_baseline_resolution": 8,
+    "analytical:chromatographic_theoretical_plates": 8,
     "analytical:complexometric_titration": 1,
+    "analytical:conductivity_cell_calibration": 8,
     "analytical:copper_iodometric_mass_fraction": 12,
+    "analytical:coulometric_copper_deposition": 8,
     "analytical:double_indicator_alkalinity": 1,
     "analytical:double_indicator_carbonate_bicarbonate": 12,
     "analytical:edta_zinc_complexometric_standardization": 12,
+    "analytical:fluorescence_stern_volmer": 8,
+    "analytical:gravimetric_chloride_silver": 8,
     "analytical:gravimetric_redox_assay": 1,
     "analytical:iodometric_assay": 1,
     "analytical:iodometric_kio3_standardization": 12,
@@ -52,9 +58,11 @@
     "analytical:qualitative_cation_analysis": 19,
     "analytical:redox_standardization": 1,
     "analytical:sequential_complexometric_titration": 1,
+    "analytical:single_point_standard_addition": 8,
     "analytical:solution_concentration": 6,
     "analytical:standard_solution_standardization": 1,
     "analytical:stepwise_pb_bi_complexometry": 12,
+    "analytical:uv_vis_beer_lambert": 8,
     "inorganic:chemical_formula_molar_mass": 6,
     "inorganic:coordination_geometry": 133,
     "inorganic:ligand_electron_donation": 47,
@@ -109,7 +117,7 @@
     "samples": []
   },
   "same_template_families": {
-    "count": 50,
+    "count": 58,
     "samples": [
       {
         "count": 12,
@@ -238,6 +246,78 @@
         ]
       },
       {
+        "count": 8,
+        "ids": [
+          "047d1f3e5f7b4c97687c23bf6bf2d1f4d60039ae69fc7c38f4bd47ebedc47d51",
+          "0d48949a0b6e0218d5d4dcb523bf689da1c3f536bc868b7737dd72e34352b333",
+          "4ddf836472c88e12f27f09877bfef3cf6b35cfa7b38cccd6a55a20fa5bf6546d",
+          "588a39af51fbac46dc065a290ac33d12c0ec765e4fbf34c118d4b644e0717dcd"
+        ]
+      },
+      {
+        "count": 8,
+        "ids": [
+          "09bb8fe11cdd7008a062797071829c54d61ac341dea8045b95ea6a2cb2453906",
+          "0f0f6462a05f8e264aadc489d77792d12dced504124dd512ae72d2a35d8917ab",
+          "1d21aafe56c832710e14b3c73e06317bc8834d141f3e1e0dde0e4d13528924f8",
+          "5a34137684caa0c98ca9e94fdef3f7cb7ee9156275869dd15994db4bcdd07fb7"
+        ]
+      },
+      {
+        "count": 8,
+        "ids": [
+          "12bcdfa5d6dfa8e458bbc6d765ab3b07307af794a77a48dd5c9aa0c79b391bec",
+          "278470436e295e5b8fcb4b1e131cd32a0dc5b3bdc93617b53f5d04d0b926f175",
+          "6a3c11e8ca7b64532ae95d9027bf6832887058398f7b9a9e920015498b5d7141",
+          "7a31132aee264c9b38031fd04ef816d9b3a4e417af3bfce7ef181a2254a88431"
+        ]
+      },
+      {
+        "count": 8,
+        "ids": [
+          "15120a6bdd9f82b3a4aa02538821b50d6bd524d0a38a10c55621abf1f433fb98",
+          "1c90a8e6153bfe1f9e07af464e9b197b28f1456ac9883b758c4d2c08848b7f81",
+          "48282aa6512d7049f23b92ffe5423299b529d8b8349900eb4539c892f7613f02",
+          "593a10ed94c11c00ea0661605e6b26c0e5cafe2fa11c2266ff49dd4cc064bae2"
+        ]
+      },
+      {
+        "count": 8,
+        "ids": [
+          "16173c329268b4649881d9fdf89ca3d1778e9a8716f2a555676cd7d7f3dacbca",
+          "19f9b7a9ba16ab21a363c418ef7372d6f6d7ea472ca83f4a5097bbb57698acac",
+          "2944ab6d0ffdb02c24f604a00e59e40e1517c6cd16dbdd08f0354a65d2c696ea",
+          "2d7ad3da13aae95d1fcb0d85bcce9d6b49f0cb44996f464bb9a1017e3ce8a1cc"
+        ]
+      },
+      {
+        "count": 8,
+        "ids": [
+          "1d7ab583195d6458b803f47359353113aa1cc0cc3972382f89a3a5053813c179",
+          "236bcb7a415796f8de1ddeb78bd4e772e903f665bd625f655c5e79ae3e3b9e96",
+          "5cb5c71d0f91168306a0074e63f920c251ff2d55c915954feffe8859362422f4",
+          "75135b0d8c63dca9f8e2dd71f170ad918c4325eb5a6a94914c6933c350055416"
+        ]
+      },
+      {
+        "count": 8,
+        "ids": [
+          "1fd3c96db2a8676fb691f7e35c1bd7699db69951b877a80ae3e91eab83775ed4",
+          "3a7a1e8cf3d90db6716c2dac8202d29426460155848dd310e38e7f69fef09ebf",
+          "4af668a614173fd6eda5c666797882c2971c9268b484ec468edcb2b5a21dbbc1",
+          "a7d8721a69f94b681d64bcc3dfa930c8fe72b062fbe5b3f0949700d71f18f280"
+        ]
+      },
+      {
+        "count": 8,
+        "ids": [
+          "58b9a26c7eebce0eb80fdef2645148bc4a537787ffa481f89a24fe70c4035c8b",
+          "6d870ab5270c681430efb1669498c9a5b572bbd4f382348ee0b8934d988d0aed",
+          "6e029a4772bcf534e41efa291a78888f327dcb4b7dd11b5c254d3b4ffeab8f77",
+          "977154dead3de66ad22731edbea90e956983a518bb6178211d700fbcea81d7fe"
+        ]
+      },
+      {
         "count": 6,
         "ids": [
           "02a154a03d45ac2ead3f98b024077628e74150de779eaf4a110fbebea5eeef96",
@@ -303,62 +383,6 @@
         "ids": [
           "017b6b151b55a58a51c50c9f8724453417f4ef8fbfd99d235df0c1b87cb714fa",
           "fb4a276f6119cb288884adf0ce3b86b1bab53f197e0e27d92da67aace75eb994"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "0470be8af761135d3780f6392dc37fdfb2dbccf1b32b55541b295246221b50ff",
-          "37c6130e275520a2ebaad6227d5a55f92c2e48d060972d982c5fd9a12c110303"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "083ff934fe55ecedcdf9f1fac49fef3cd8ab3dc215df7f87b53edb3d40842a38",
-          "6c43d19aa15b59c8e373aa38c56e6eb2af4750837df816f1de22b95a3bb271ff"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "09bf8bbc470fd170f180892fe38aa4dc458b44a94d06aa05f0199e3b950dbae5",
-          "9da4297e5008c16669740249d18f4883de1da51f5826e9df5ec39633f1a5910e"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "0d8048bc7862adccb2ad50d4b407fd23094b9ab694055f18a6eea82414dd4c8a",
-          "559839a30c809bdc57498aec4450f37fc0cb2eff370c462a8b1da640662a9aae"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "0f696255584b1cc9e50a362b5d20b1935ef9998f3ad5f79541892610194e4410",
-          "1b0f6c5e7c2f0f395f7bad74b56f40a23e4092ebe6ff2ec7e0cfdca48bac1c87"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "171d331eafd7467d47566d59701bd3fabf4b3672874bcd62a046cb26ec30e1d5",
-          "d09edd6acd081e7406bf590b68d1ca70de4e7b9936d0b1f3f1fc3b708bb6207f"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "200c292ac4b22bb1c4723837265195bbb74910bf8dce81e843df1945ee070a02",
-          "fbc55b72fd3c5612456ac7b4c797a1428dcc0fde0a967806e2ea9cbc9d9b9c94"
-        ]
-      },
-      {
-        "count": 2,
-        "ids": [
-          "20d0b027dbe892f33b92604cfc93c53be574a45b92102971165a076d6f765f98",
-          "ac5a51e93608b93888064dfde5d04df03e085ca958d74932358b4637d3cb74f4"
         ]
       }
     ]

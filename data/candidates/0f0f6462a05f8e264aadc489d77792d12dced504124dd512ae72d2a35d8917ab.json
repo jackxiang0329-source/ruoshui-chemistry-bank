@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "0f0f6462a05f8e264aadc489d77792d12dced504124dd512ae72d2a35d8917ab",
+  "subject": "analytical",
+  "topic": "conductivity_cell_calibration",
+  "level": "undergraduate",
+  "difficulty": "introductory_to_intermediate",
+  "question_type": "original_instrumental_analytical_calculation",
+  "resource_type": "original_problem_variant_not_upstream_question",
+  "question": "分析化学·电导池常数：某溶液测得电阻 R=694 Ω，已标定电导池常数 Kcell=0.895 cm⁻¹，忽略电极极化和温度漂移。求电导率 κ（mS/cm）。",
+  "answer": "κ = 1000×Kcell/R = 1.28963 mS/cm。",
+  "explanation": "电导 G=1/R，电导率 κ=Kcell·G（S/cm）；乘 1000 转成 mS/cm。",
+  "numeric_answers": [
+    1.2896253602305476
+  ],
+  "units": "mS/cm",
+  "parameters": {
+    "Kcell_per_cm": 0.895,
+    "resistance_ohm": 694
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-instrumental-analytical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "origin": "original_deterministic_generation",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical instrument calculations; no external question, dataset or experimental measurement reproduced."
+  }
+}

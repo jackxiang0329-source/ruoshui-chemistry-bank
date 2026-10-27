@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "a0c43efe1c054039c563eb07959ee6f169321b78bb079f36cbb0c5864001362b",
+  "subject": "analytical",
+  "topic": "fluorescence_stern_volmer",
+  "level": "undergraduate",
+  "difficulty": "introductory_to_intermediate",
+  "question_type": "original_instrumental_analytical_calculation",
+  "resource_type": "original_problem_variant_not_upstream_question",
+  "question": "分析化学·荧光猝灭：某体系满足理想 Stern–Volmer 关系 I₀/I = 1 + KSV[Q]，测得荧光强度比 I₀/I=1.245，KSV=87 L/mol。忽略内滤效应与静态偏离，计算猝灭剂浓度 [Q]（mmol/L）。",
+  "answer": "[Q] = 1000×(I₀/I−1)/KSV = 2.81609 mmol/L。",
+  "explanation": "先由强度比减去 1 求 KSV[Q]，再除以常数求 mol/L，乘 1000 换算 mmol/L。",
+  "numeric_answers": [
+    2.8160919540229896
+  ],
+  "units": "mmol/L",
+  "parameters": {
+    "I0_over_I": 1.245,
+    "Ksv_L_per_mol": 87
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-instrumental-analytical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "origin": "original_deterministic_generation",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical instrument calculations; no external question, dataset or experimental measurement reproduced."
+  }
+}

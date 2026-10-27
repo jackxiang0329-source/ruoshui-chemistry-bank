@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "977154dead3de66ad22731edbea90e956983a518bb6178211d700fbcea81d7fe",
+  "subject": "analytical",
+  "topic": "uv_vis_beer_lambert",
+  "level": "undergraduate",
+  "difficulty": "introductory_to_intermediate",
+  "question_type": "original_instrumental_analytical_calculation",
+  "resource_type": "original_problem_variant_not_upstream_question",
+  "question": "分析化学·紫外可见吸收测定：单组分标准样品在波长固定、无散射的线性范围内，摩尔吸光系数 ε = 10350 L/(mol·cm)，光程 1.00 cm，实测吸光度 A = 0.507150。按 A=εlc 求样品浓度，单位 μmol/L。",
+  "answer": "c = 10⁶×A/(εl) = 49.0000 μmol/L。",
+  "explanation": "Beer–Lambert 定律中浓度先以 mol/L 求出，再乘 10⁶ 转为 μmol/L；假定空白已扣除。",
+  "numeric_answers": [
+    49
+  ],
+  "units": "μmol/L",
+  "parameters": {
+    "epsilon": 10350,
+    "path_cm": 1,
+    "absorbance": 0.50715
+  },
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-instrumental-analytical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "origin": "original_deterministic_generation",
+    "content_rights_verified": true,
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical instrument calculations; no external question, dataset or experimental measurement reproduced."
+  }
+}
