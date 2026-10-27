@@ -221,6 +221,25 @@
       "import_questions": false,
       "quality_note": "interactive water-pipe analogy for EIS; no independent structured question/answer source validated",
       "next_action": "Ask for exact content and code license/version; do not automatically mirror assets or question text"
+    },
+    {
+      "source": "MuzaPro/Organic-Chemistry-Quiz-JS",
+      "url": "https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS",
+      "pin": "71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc",
+      "category": "organic",
+      "format": "data/questions.json, five interactive organic reagent-selection questions",
+      "repository_license": "MIT",
+      "license_evidence": "https://github.com/MuzaPro/Organic-Chemistry-Quiz-JS/blob/71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc/LICENSE",
+      "license_owner": "Copyright (c) 2025 Muza Studio",
+      "license_blob_sha": "4ef30f44a9a6ade70614188412f98c76aaa3b14e",
+      "source_data_blob_sha": "e4fde59d9f5faa1ff0ed82fa57ae7b05f276292a",
+      "rights_status": "Repository-level MIT confirmed; question database named in README; separate third-party authorship not independently proven; text-only source records already imported before this run.",
+      "import_questions": true,
+      "imported_source_records_existing": 5,
+      "new_source_records_this_run": 0,
+      "quality_note": "All five source q1-q5 already in data/candidates; unapproved, publishable=false. q2 acid conditions, q4 missing acid catalyst, q5 missing explicit acidic workup need expert review.",
+      "quality_review": "harvest/source_reviews/2026-10-27-muzapro-reaction-quality.json",
+      "next_action": "Do not re-import source q1-q5; preserve local MIT notice and review reaction conditions; source IDs checked by tests/muzapro-existing-coverage.test.mjs"
     }
   ]
 }
