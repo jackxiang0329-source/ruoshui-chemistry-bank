@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "resource_type": "independently_authored_education_practice_not_upstream_question_copy",
+  "source_repository": "kbknudsen/PyEIS",
+  "source_commit": "14724e978a089d9184285cec1b72cb57941d58a1",
+  "source_license": "Apache-2.0",
+  "source_license_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+  "source_code_file": "PyEIS/PyEIS.py",
+  "source_code_blob_sha": "78b4832687a56ff1c47ead7befb301d89f8c478f",
+  "original_author": "Kristian B. Knudsen",
+  "original_question_count_imported": 0,
+  "license_scope_note": "Reference code and its equations are Apache-2.0; 8 Chinese EIS numerical exercises below are independently written; no authors' quiz questions, experiments, journals, or diagrams copied.",
+  "items": [
+    {
+      "key": "angular_frequency",
+      "topic": "electrochemical_impedance_angular_frequency",
+      "params": {
+        "frequency_hz": 50
+      },
+      "expected": [
+        314.1592653589793
+      ],
+      "question": "物理化学·电化学阻抗基础：进行电化学阻抗谱（EIS）测量时，外加正弦扰动频率为 50.0 Hz。计算相应的角频率 ω（rad/s）。",
+      "answer": "ω=2πf=2π×50.0≈314.16 rad/s。",
+      "explanation": "角频率与普通频率的关系为 ω=2πf，单位 rad·s⁻¹；本题不涉及反应速率常数。"
+    },
+    {
+      "key": "ideal_capacitor",
+      "topic": "electrochemical_impedance_capacitor",
+      "params": {
+        "frequency_hz": 100,
+        "capacitance_f": 0.00005
+      },
+      "expected": [
+        -31.830988618379067
+      ],
+      "question": "物理化学·电化学双电层：将电极界面近似为理想电容 C=50.0 μF，扰动频率 f=100 Hz。用 Z_C=1/(jωC)、ω=2πf 计算阻抗的虚部 Im(Z_C)，单位 Ω。",
+      "answer": "Im(Z_C)=−1/(2πfC)=−31.83 Ω；理想电容的阻抗实部为 0。",
+      "explanation": "j 是虚数单位且 j²=−1，因此 1/j=−j；负虚部反映理想电容型响应。"
+    },
+    {
+      "key": "series_rc",
+      "topic": "electrochemical_impedance_series_rc",
+      "params": {
+        "frequency_hz": 1000,
+        "series_resistance_ohm": 15,
+        "capacitance_f": 0.00002
+      },
+      "expected": [
+        15,
+        -7.957747154594767,
+        16.980157236505825
+      ],
+      "question": "物理化学·串联 RC 等效电路：溶液电阻 Rₛ=15.0 Ω 与理想电容 C=20.0 μF 串联，频率 1000 Hz。求总复阻抗 Z 的实部、虚部以及模 |Z|。",
+      "answer": "Z=Rₛ−j/(2πfC)=(15.00−7.958j) Ω；|Z|≈16.98 Ω。",
+      "explanation": "串联元件的复阻抗直接相加；|Z|=√[(Re Z)²+(Im Z)²]，不能把阻抗实部和虚部代数相加。"
+    },
+    {
+      "key": "parallel_rc",
+      "topic": "electrochemical_impedance_parallel_rc",
+      "params": {
+        "frequency_hz": 50,
+        "resistance_ohm": 100,
+        "capacitance_f": 0.0001
+      },
+      "expected": [
+        9.199966835037522,
+        -28.902548222223622
+      ],
+      "question": "物理化学·并联 RC 等效电路：电荷转移电阻 R=100 Ω 与双电层电容 C=100 μF 并联，施加 50.0 Hz 正弦扰动。由 Z=R/(1+jωRC) 计算总阻抗的实部和虚部。",
+      "answer": "Z≈(9.200−28.903j) Ω，其中 ω=2π×50.0 rad/s。",
+      "explanation": "用共轭复数有理化：Z=R(1−jωRC)/[1+(ωRC)²]。"
+    },
+    {
+      "key": "parallel_rc_peak",
+      "topic": "electrochemical_impedance_nyquist_peak",
+      "params": {
+        "resistance_ohm": 100,
+        "capacitance_f": 0.0001
+      },
+      "expected": [
+        15.915494309189533,
+        50
+      ],
+      "question": "物理化学·Nyquist 半圆：理想并联 RC 电路的 R=100 Ω、C=100 μF。不计其他串联电阻和扩散影响时，求 Nyquist 图半圆顶点对应的频率 fₘₐₓ（Hz）以及该点的 −Im(Z)（Ω）。",
+      "answer": "fₘₐₓ=1/(2πRC)≈15.92 Hz；−Im(Z)ₘₐₓ=R/2=50.0 Ω。",
+      "explanation": "并联 RC 的半圆顶点对应 ωRC=1，最大负虚部为 R/2；若图存在额外过程，此简化式可能不适用。"
+    },
+    {
+      "key": "randles_simple",
+      "topic": "electrochemical_impedance_randles_circuit",
+      "params": {
+        "frequency_hz": 100,
+        "series_resistance_ohm": 5,
+        "charge_transfer_resistance_ohm": 100,
+        "double_layer_capacitance_f": 0.00005
+      },
+      "expected": [
+        14.199966835037522,
+        -28.902548222223622
+      ],
+      "question": "物理化学·简化 Randles 电路：溶液电阻 Rₛ=5.0 Ω，与并联支路（Rct=100 Ω，Cdl=50.0 μF）串联。忽略扩散阻抗，频率为 100 Hz。求复阻抗 Z=Rₛ+Rct/(1+jωRctCdl) 的实部和虚部。",
+      "answer": "Z≈(14.200−28.903j) Ω。",
+      "explanation": "先计算并联 Rct∥Cdl 的频率响应，再叠加溶液电阻；加 Rₛ 只影响实部，不会直接改变虚部。"
+    },
+    {
+      "key": "cpe_phase",
+      "topic": "electrochemical_impedance_constant_phase_element",
+      "params": {
+        "frequency_hz": 100,
+        "q_units_s_n_per_ohm": 0.002,
+        "exponent_n": 0.8
+      },
+      "expected": [
+        2.886862570013429,
+        -72
+      ],
+      "question": "物理化学·恒相位元件（CPE）：给定 Z_Q=1/[Q(jω)ⁿ]，Q=0.00200 sⁿ/Ω，n=0.800，频率 f=100 Hz。求阻抗的模 |Z_Q|（Ω）和相角（°），取交流相量惯例 j²=−1。",
+      "answer": "|Z_Q|=1/(Qωⁿ)≈2.887 Ω；相角 φ=−n×90°=−72.0°。",
+      "explanation": "(jω)ⁿ=ωⁿexp(jnπ/2)，故阻抗相位为 −nπ/2，模为 [Qωⁿ]⁻¹；n=1 时退化为理想电容。"
+    },
+    {
+      "key": "semi_infinite_warburg",
+      "topic": "electrochemical_impedance_diffusion_warburg",
+      "params": {
+        "frequency_hz": 10,
+        "warburg_sigma_ohm_sqrt_rad_per_s": 40
+      },
+      "expected": [
+        5.04626504404032,
+        -5.04626504404032
+      ],
+      "question": "物理化学·半无限扩散阻抗：在理想半无限线性扩散模型下，采用定义 Z_W=σ(1−j)/√ω，其中 ω=2πf，σ=40.0 Ω·s⁻¹ᐟ²，频率 f=10.0 Hz。求 Z_W 的实部和虚部，单位 Ω。",
+      "answer": "Z_W≈(5.046−5.046j) Ω，满足 Re(Z_W)=−Im(Z_W)。",
+      "explanation": "按题目给出的 σ 定义代入 ω=2πf；半无限扩散的 Nyquist 线段通常呈约 45°，这里没有引入有限扩散边界或浓差动力学。"
+    }
+  ]
+}
