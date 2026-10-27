@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {subjects,canonicalRepo,bucketKey,requestedPages,rankingMode,selectQueryShard} from '../scripts/harvest-chemistry-sources.mjs';
-import {safePath,questionId,normalizeQuestion,validateSource,mapRecord} from '../scripts/import-approved-chemistry.mjs';
+import {safePath,questionId,normalizeQuestion,validateSource,mapRecord,buildCandidate,assertCompatibleExisting} from '../scripts/import-approved-chemistry.mjs';
 test('classifies chemistry subject',()=>{
   assert.deepEqual(subjects('organic chemistry study'),['organic']);
   assert.deepEqual(subjects('inorganic chemistry problems'),['inorganic']);
@@ -77,4 +77,29 @@ test('fast 10-minute shards cover each query once per three runs without gaps',(
   assert.deepEqual(selectQueryShard(qs,'all'),qs);
   assert.throws(()=>selectQueryShard(qs,'bad'));
   assert.throws(()=>selectQueryShard([],0));
+});
+
+test('rights-approved importer still requires pinned license and README evidence',()=>{
+ const s={id:'licensed',repository:'author/chemistry-quiz',commit:'a'.repeat(40),
+  license:'MIT',attribution:'Original author',content_rights_verified:true,subject:'organic',
+  files:[{path:'data/questions.json',format:'organic-reaction-quiz'}]};
+ assert.throws(()=>validateSource(s),/rights evidence/);
+ s.license_evidence={project_license:'https://github.com/author/chemistry-quiz/blob/aaa/LICENSE',
+  project_readme:'https://github.com/author/chemistry-quiz/blob/aaa/README.md',
+  scope_note:'Original author confirms that the bundled question data are covered by MIT.'};
+ assert.doesNotThrow(()=>validateSource(s));
+});
+test('approved importer always embargoes candidate publication and checks collisions',()=>{
+ const s={repository:'author/chemistry-quiz',commit:'a'.repeat(40),subject:'organic',license:'MIT',
+  attribution:'Original author',license_evidence:{project_license:'https://github.com/a/b/LICENSE'}};
+ const f={path:'data/questions.json'};
+ const mapped={question:'Which reagent converts a primary alcohol to an aldehyde?',answer:'PCC',original_id:'p1'};
+ const row=buildCandidate(mapped,s,f,3);
+ assert.equal(row.publishable,false);
+ assert.equal(row.quality_status,'awaiting_expert_review');
+ assert.equal(row.source.record_index,3);
+ assert.ok(assertCompatibleExisting(structuredClone(row),row));
+ assert.throws(()=>assertCompatibleExisting({...row,answer:'wrong'},row),/collision/);
+ assert.throws(()=>assertCompatibleExisting({...row,publishable:true},row),/publication-state/);
+ assert.throws(()=>assertCompatibleExisting({...row,source:{...row.source,commit:'b'.repeat(40)}},row),/rights mismatch/);
 });

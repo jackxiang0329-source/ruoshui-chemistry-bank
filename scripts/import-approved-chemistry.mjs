@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // Only pinned, manually license-approved structured data is eligible for copying.
-import {readFileSync,writeFileSync,mkdirSync,existsSync,mkdtempSync,rmSync,statSync} from 'node:fs';
+import {readFileSync,writeFileSync,mkdirSync,existsSync,mkdtempSync,rmSync,statSync,realpathSync} from 'node:fs';
 import {tmpdir} from 'node:os';
-import {join,dirname,isAbsolute,resolve} from 'node:path';
+import {join,dirname,isAbsolute,resolve,relative} from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
@@ -24,6 +24,11 @@ export function validateSource(s) {
   if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(s.repository||'')) throw Error('Unsafe repository');
   if (!/^[a-f0-9]{40}$/.test(s.commit||'')) throw Error('Full pinned Git SHA required');
   if (s.content_rights_verified!==true || !s.license || !s.attribution) throw Error('License review required');
+  if (!s.license_evidence || typeof s.license_evidence!=='object' ||
+      !/^https:\/\/github\.com\//.test(s.license_evidence.project_license||'') ||
+      !/^https:\/\/github\.com\//.test(s.license_evidence.project_readme||'') ||
+      typeof s.license_evidence.scope_note!=='string' || s.license_evidence.scope_note.length<30)
+    throw Error('Explicit source-level question rights evidence required');
   if (!['inorganic','organic','analytical','physical','general'].includes(s.subject)) throw Error('Unsupported subject');
   if (!Array.isArray(s.files)||s.files.length===0||s.files.length>100) throw Error('Invalid source files');
   for(const f of s.files) {
@@ -59,54 +64,87 @@ export function mapRecord(row,f) {
   return {question,answer,original_id:row.id||null};
 }
 
+export function buildCandidate(mapped,s,f,index) {
+  if(!mapped||typeof mapped.question!=='string'||typeof mapped.answer!=='string'||
+     mapped.question.trim().length<12||mapped.answer.trim().length<1||
+     mapped.question.length>15000||mapped.answer.length>30000) return null;
+  const id=questionId(mapped.question);
+  return {schema_version:1,id,subject:s.subject,question:mapped.question,answer:mapped.answer,
+    quality_status:'awaiting_expert_review',publishable:false,
+    source:{repository:s.repository,commit:s.commit,file:f.path,record_index:index,
+      original_id:mapped.original_id,license:s.license,attribution:s.attribution,
+      license_evidence:s.license_evidence,content_rights_verified:true,
+      url:'https://github.com/'+s.repository+'/blob/'+s.commit+'/'+f.path}};
+}
+export function assertCompatibleExisting(old,next) {
+  if(old?.id!==next.id||old?.question!==next.question||old?.answer!==next.answer||
+     old?.subject!==next.subject||old?.source?.repository!==next.source.repository||
+     old?.source?.commit!==next.source.commit||old?.source?.file!==next.source.file||
+     old?.quality_status!=='awaiting_expert_review'||old?.publishable!==false)
+    throw Error('Candidate collision, rights mismatch or publication-state drift: '+next.id);
+  return true;
+}
 function git(args) {
   execFileSync('git',args,{stdio:'pipe',timeout:120000,env:{...process.env,GIT_TERMINAL_PROMPT:'0'}});
 }
 export function run() {
   const cfg=JSON.parse(readFileSync(manifest,'utf8'));
-  if (cfg.schema_version!==1||!Array.isArray(cfg.approved_sources)) throw Error('Invalid approved source manifest');
-  if (cfg.approved_sources.length===0) {
-    console.log('No rights-approved imports configured; question import skipped (discovery still runs).');
-    return;
+  if(cfg.schema_version!==1||!Array.isArray(cfg.approved_sources))
+    throw Error('Invalid approved source manifest');
+  if(cfg.approved_sources.length===0) {
+    console.log('No rights-approved imports configured; question import skipped.');
+    return {added:0,duplicates:0};
   }
+  // Preflight the full manifest before cloning or writing any candidate.
+  cfg.approved_sources.forEach(validateSource);
   const temp=mkdtempSync(join(tmpdir(),'ruoshui-chem-'));
-  let added=0, duplicates=0;
+  let duplicates=0;
+  const planned=new Map();
   try {
     for(const s of cfg.approved_sources) {
-      validateSource(s);
       const checkout=join(temp,s.id);
       git(['clone','--quiet','--filter=blob:none','--no-checkout','https://github.com/'+s.repository+'.git',checkout]);
       git(['-C',checkout,'fetch','--quiet','--depth=1','origin',s.commit]);
       git(['-C',checkout,'checkout','--quiet','--detach',s.commit]);
-      let perSource=0;
+      let processed=0;
       for(const f of s.files) {
         const file=join(checkout,f.path);
-        if (!existsSync(file)) throw Error('Whitelisted data file missing: '+f.path);
-        const items=records(file,f.format);
-        for(let i=0;i<items.length;i++) {
-          if (perSource>=5000) break;
+        if(!existsSync(file))throw Error('Whitelisted data file missing: '+f.path);
+        const real=realpathSync(file),base=realpathSync(checkout),rel=relative(base,real);
+        if(rel.startsWith('..')||isAbsolute(rel)||!statSync(real).isFile())
+          throw Error('Whitelisted file resolves outside pinned checkout: '+f.path);
+        const items=records(real,f.format);
+        for(let i=0;i<items.length&&processed<5000;i++) {
           const row=items[i];
-          if (!row||typeof row!=='object') continue;
-          const mapped=mapRecord(row,f);
-          if (!mapped) continue;
-          const {question,answer}=mapped;
-          if (!question||!answer||question.length>15000||answer.length>30000) continue;
-          const id=questionId(question), output=join(destination,id+'.json');
-          if (existsSync(output)) {duplicates++;continue;}
-          mkdirSync(dirname(output),{recursive:true});
-          writeFileSync(output,JSON.stringify({
-            schema_version:1,id,subject:s.subject,question,answer,quality_status:'awaiting_expert_review',
-            source:{repository:s.repository,commit:s.commit,file:f.path,record_index:i,original_id:mapped.original_id,
-              license:s.license,attribution:s.attribution,content_rights_verified:true,
-              url:'https://github.com/'+s.repository+'/blob/'+s.commit+'/'+f.path}
-          },null,2)+'\n');
-          added++;perSource++;
+          if(!row||typeof row!=='object')continue;
+          const candidate=buildCandidate(mapRecord(row,f),s,f,i);
+          if(!candidate)continue;
+          processed++;
+          const output=join(destination,candidate.id+'.json');
+          if(planned.has(candidate.id)) {
+            assertCompatibleExisting(planned.get(candidate.id),candidate);
+            duplicates++;continue;
+          }
+          if(existsSync(output)) {
+            assertCompatibleExisting(JSON.parse(readFileSync(output,'utf8')),candidate);
+            duplicates++;continue;
+          }
+          planned.set(candidate.id,candidate);
         }
       }
     }
-    console.log('Approved candidates added: '+added+'; duplicates skipped: '+duplicates+'. None marked expert-reviewed.');
+    // No writes before every upstream source, license record and collision passes.
+    mkdirSync(destination,{recursive:true});
+    for(const candidate of planned.values()) {
+      const output=join(destination,candidate.id+'.json');
+      writeFileSync(output,JSON.stringify(candidate,null,2)+'\n',{flag:'wx'});
+    }
+    const msg='Rights-approved candidates added='+planned.size+
+      '; verified existing/within-batch duplicates='+duplicates+'; expert approved=0';
+    console.log(msg);
+    return {added:planned.size,duplicates};
   } finally {rmSync(temp,{recursive:true,force:true});}
 }
-if (process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
+if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
   try {run();}catch(e) {console.error(e.message);process.exitCode=1;}
 }
