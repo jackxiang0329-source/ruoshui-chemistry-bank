@@ -28,6 +28,9 @@ on:
       - "third_party/parametric-question-engine/**"
       - "tests/chemtrain-pg-learn.test.mjs"
       - "scripts/import-chemtrain-pka-qualitative.mjs"
+      - "scripts/import-chemtrain-reactivity.mjs"
+      - "tests/chemtrain-reactivity.test.mjs"
+      - "harvest/pinned_reactivity_regioselectivity.json"
       - "tests/chemtrain-pka-qualitative.test.mjs"
       - "harvest/pinned_pka_qualitative_sites.json"
       - "harvest/pinned_pg_learn_deprotection.json"
@@ -78,6 +81,8 @@ jobs:
         run: node --test tests/chemtrain-pg-learn.test.mjs
       - name: Verify pinned CC BY 4.0 pKa qualitative practice
         run: node --test tests/chemtrain-pka-qualitative.test.mjs
+      - name: Verify pinned CC BY 4.0 Reactivity Learn regioselectivity
+        run: node --test tests/chemtrain-reactivity.test.mjs
       - name: Verify pinned MIT parametric general chemistry generator
         run: node --test tests/parametric-mit-chemistry.test.mjs
       - name: Search GitHub chemistry repositories
@@ -104,6 +109,8 @@ jobs:
         run: node scripts/import-chemtrain-pka-qualitative.mjs
       - name: Generate vetted introductory chemistry variants from pinned MIT code
         run: node scripts/import-parametric-mit-chemistry.mjs
+      - name: Import pinned CC BY 4.0 Reactivity Learn text-only regioselectivity
+        run: node scripts/import-chemtrain-reactivity.mjs
       - name: Commit only real additions or changes
         run: |
           git add -- harvest/source_candidates.json
