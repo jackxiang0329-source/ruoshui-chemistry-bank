@@ -2,8 +2,10 @@
   "schema_version": 2,
   "release_state": "no_approved_items",
   "retained_candidate_json": 12,
-  "advanced_editorial_items": 136,
+  "advanced_editorial_items": 186,
   "approved_count": 0,
   "policy": "Human science, solution, copyright, and item-level review required; machine calculations do not approve publication.",
-  "items": []
+  "items": [],
+  "sixth_series_pending_cross_series_novelty_review": 50,
+  "expert_approved": 0
 }
