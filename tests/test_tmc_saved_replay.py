@@ -35,16 +35,15 @@ class SavedReplayTests(unittest.TestCase):
         self.assertEqual(len(self.partial), 6)
         # Synthetic 593-card equivalent with unique IDs, preserving exact metadata.
         self.expected = {}
-        for n in range(100):
-            for item in self.partial.values():
-                if len(self.expected) == 593:
-                    break
-                row = dict(item)
-                row["id"] = (str(n) + item["id"])[:64].ljust(64, "0")
-                row["question"] = str(n) + item["question"]
+        by_type = {row["question_type"]: row for row in self.partial.values()}
+        # The real corpus has 199 valence, 197 oxidation and 197 d-count entries.
+        for kind, count in [("valence_electrons",199),
+                            ("oxidation_state",197),("d_electrons",197)]:
+            for n in range(count):
+                row = dict(by_type[kind])
+                row["id"] = (kind + str(n)).encode("utf-8").hex()[:64].ljust(64, "0")
+                row["question"] = str(n) + row["question"]
                 self.expected[row["id"]] = row
-            if len(self.expected) == 593:
-                break
         self.assertEqual(len(self.expected),593)
         self.rows = dict(self.expected)
     def test_replays_all_persisted_source_records(self):
