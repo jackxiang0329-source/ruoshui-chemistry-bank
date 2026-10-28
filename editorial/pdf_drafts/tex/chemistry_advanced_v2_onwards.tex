@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至9辑 (394题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至10辑 (398题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -7918,6 +7918,101 @@ ATR红外测量用晶体折射率n1=2.400、样品n2=1.400，真空波长λ=6.00
 答案1 = -212.267731；答案2 = -57.8911993；答案3 = -229.527992；答案4 = -17.2602611\par
 \noindent\textbf{模型前提：}
 采用题定理想、低阶近似与恒定参数；尚未得到专家科学、版权与模型原创性审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\clearpage
+\section*{第10辑 · 题目及解答}
+\addcontentsline{toc}{section}{第10辑}
+\subsection*{无机化学}
+\addcontentsline{toc}{subsection}{第10辑 / 无机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I101 · 反铁磁二核交换耦合的自旋统计与磁响应}
+\noindent\textbf{题目}\par
+假想二核过渡金属配合物中各中心自旋S1=S2=1/2，采用各向同性Heisenberg交换H=J S1·S2，J>0代表反铁磁。低能单态S=0简并度1，高能三重态S=1简并度3，能隙J=2.400kJ/mol。温度280.0K且达到热平衡，忽略激发轨道和强场自旋混合。求三重态和单态布居、磁化率相对两个不耦合S=1/2中心Curie磁化率的比值、平均激发能与摩尔热容，并验证高温磁化率的正确极限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 取单态能量为0，三重态能量为J；配分函数Z=1+3exp(−J/RT)。
+\item 设q=exp(−J/RT)=0.3566836943，Z=2.070051083。
+\item 三重态pT=3q/Z=0.5169201339，单态pS=1/Z=0.4830798661。
+\item 小场磁化率按照S(S+1)加权，与两个自由S=1/2自旋比较得χ/χfree=4q/(1+3q)=0.6892268451。
+\item 单态为参考零能时U=JpT=1240.608321J/mol。
+\item 通过对U求T导数得到C=(J²/(RT²))pT(1−pT)=2.206554309J/(mol K)。
+\item 高温q→1给χ/χfree→1，低温q→0给单态占据趋1；热容在低高温均趋零。
+\item 数值回代核验残差：0.00e+0、0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.516920134 fraction；答案2 = 0.483079866 fraction；答案3 = 0.689226845 relative；答案4 = 1240.60832 J/mol；答案5 = 2.20655431 J/(mol K)\par
+\noindent\textbf{模型前提：}
+仅按题设理想化模型处理；实际化学性、跨辑核心模型独立性、版权和专家审校仍待核准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{分析化学}
+\addcontentsline{toc}{subsection}{第10辑 / 分析化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A101 · DOSY脉冲梯度NMR的Stejskal–Tanner衰减与自扩散反演}
+\noindent\textbf{题目}\par
+一份假想溶液经脉冲梯度NMR的DOSY法分析，质子旋磁比γ=2.67522×10\textasciicircum{}8rad/(s T)，梯度幅度g=0.2500T/m，脉冲宽度δ=2.500ms，扩散等待时间Δ=45.00ms，样品自扩散系数D=6.000×10\textasciicircum{}-10m²/s。给定Stejskal–Tanner式I/I0=exp(−bD)，b=γ²g²δ²(Δ−δ/3)。求梯度系数b、回波归一化强度、从强度逆推的D，以及将梯度g加倍后的回波强度，指出为何指数不能只加倍。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将脉冲时间统一为秒，δ=0.002500s、Δ=0.04500s。
+\item 梯度因子b=γ²g²δ²(Δ−δ/3)=1234734728s/m²。
+\item 衰减指数bD=0.740840837，故归一化强度s=exp(−bD)=0.4767129091。
+\item 由观测强度反演D=−ln(s)/b=6e-10m²/s。
+\item 若梯度幅度加倍，b变为4b，而不是2b；对应s2=exp(−4bD)=0.05164492488。
+\item b乘D无量纲；γ应使用弧度/s/T，否则需正确处理2π因子。
+\item 该模型仅适用于自由扩散，无明显对流、受限空间与非理想梯度波形。
+\item 数值回代核验残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1.23473473e+09 s/m²；答案2 = 0.476712909 signal fraction；答案3 = 6e-10 m²/s；答案4 = 0.0516449249 signal fraction\par
+\noindent\textbf{模型前提：}
+仅按题设理想化模型处理；实际化学性、跨辑核心模型独立性、版权和专家审校仍待核准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{有机化学}
+\addcontentsline{toc}{subsection}{第10辑 / 有机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O98 · 碳同位素交叉实验逆推分子间随机重组途径比例}
+\noindent\textbf{题目}\par
+为区分某假想有机重排中的分子内路径与分子间路径，将等摩尔的两类双片段底物混合：一类两个片段均带13C标记(L/L)，另一类两个片段均不标记(U/U)。分子内过程保留原配对，因此L/L和U/U各占1/2；分子间过程随机重组并假设无同位素效应，L/L、混合L/U、U/U的理论比例为1/4、1/2、1/4。实验生成总产物0.01000mol，测得L/U混合标记产物占30.00\%。求分子间途径比例、三类产物比例、混合标记产物mol和分子内途径贡献的产物mol；解释随机配对假设的限制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设α为分子间随机重组贡献的总产物比例，其余1−α来自分子内途径。
+\item 只有分子间途径形成混合L/U，故P(L/U)=α·2p(1−p)=α/2=0.3000，解α=0.6。
+\item L/L概率=(1−α)/2+αp²=0.35，U/U同理=0.35。
+\item 混合L/U比例=0.3，三项之和=1。
+\item 混合产物摩尔数=0.01000·0.3000=0.003mol。
+\item 分子内途径生成产物=(1−α)·0.01000=0.004mol。
+\item 仅当分子间片段随机重组、产物检测灵敏度已校正且无笼内相关重组时，交叉比例才能反推宏观途径贡献。
+\item 数值回代核验残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.6 fraction；答案2 = 0.35 fraction；答案3 = 0.3 fraction；答案4 = 0.35 fraction；答案5 = 0.003 mol；答案6 = 0.004 mol\par
+\noindent\textbf{模型前提：}
+仅按题设理想化模型处理；实际化学性、跨辑核心模型独立性、版权和专家审校仍待核准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{物理化学}
+\addcontentsline{toc}{subsection}{第10辑 / 物理化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P98 · Bosanquet分子扩散与Knudsen孔壁阻力耦合的膜通量}
+\noindent\textbf{题目}\par
+一层假想多孔氮气扩散膜在320.0K工作，孔半径r=100.0nm，氮气摩尔质量M=0.02800kg/mol、自由气体扩散系数Dm=1.800×10\textasciicircum{}-5m²/s。孔壁碰撞的Knudsen扩散系数DK=(2r/3)√(8RT/(πM))，孔内总扩散遵循Bosanquet阻力式1/Dp=1/Dm+1/DK。膜孔隙率ε=0.3500、曲折度τ=2.500、厚度L=0.8000mm，膜两面浓度分别c1=3.000mol/m³、c2=0.5000mol/m³。求DK、Dp、膜有效Deff=εDp/τ、稳态通量及忽略Knudsen阻力时通量高估倍数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 半径和厚度转为SI：r=1×10\textasciicircum{}-7m，L=8×10\textasciicircum{}-4m。
+\item Knudsen系数DK=(2r/3)√(8RT/(πM))=0.00003279380909m²/s。
+\item 分子与孔壁散射阻力串联，Dp=[1/Dm+1/DK]\textasciicircum{}(-1)=0.00001162126988m²/s。
+\item 实际多孔膜Deff=εDp/τ=0.000001626977783m²/s。
+\item Fick稳态通量J=Deff(c1−c2)/L=0.005084305572mol/(m²s)。
+\item 遗漏孔壁阻力会错误获得Jwrong=0.007875mol/(m²s)，高估倍率=1.548884088。
+\item r→∞时DK→∞，Dp→Dm；r→0时孔壁Knudsen过程控制，且该模型没有计入表面吸附扩散。
+\item 数值回代核验残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 3.27938091e-05 m²/s；答案2 = 1.16212699e-05 m²/s；答案3 = 1.62697778e-06 m²/s；答案4 = 0.00508430557 mol/(m²s)；答案5 = 1.54888409 ratio\par
+\noindent\textbf{模型前提：}
+仅按题设理想化模型处理；实际化学性、跨辑核心模型独立性、版权和专家审校仍待核准。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
