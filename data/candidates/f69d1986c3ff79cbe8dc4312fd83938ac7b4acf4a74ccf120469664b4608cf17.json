@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "f69d1986c3ff79cbe8dc4312fd83938ac7b4acf4a74ccf120469664b4608cf17",
+  "subject": "inorganic",
+  "topic": "fcc_ideal_metal_density_1",
+  "topic_family": "fcc_ideal_metal_density",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_quantitative_with_assumptions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某单质金属为面心立方晶体，每晶胞含 4 个原子，摩尔质量 M=55.8 g/mol，边长 350 pm。取 NA=6.02214076×10²³ mol⁻¹，求理想密度，忽略晶格缺陷。",
+  "answer": "计算结果 = 8.644486 g/cm³。",
+  "explanation": "ρ=(4M/NA)/a_cell³；注意将 1 pm=10⁻¹⁰ cm，体积转换必须立方。 代入本题数值求得 8.644486 g/cm³；须同时满足题设的模型及单位假定。",
+  "numeric_answers": [
+    8.644485592844372
+  ],
+  "units": "g/cm³",
+  "computation_method": "explicit_formula_and_inverse_conservation",
+  "parameter_case": 1,
+  "model_inverse_crosschecked": true,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-rapid-240.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_parametric_family",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Authored original theoretical teaching example; not an outside course exam or textbook reproduction."
+  }
+}

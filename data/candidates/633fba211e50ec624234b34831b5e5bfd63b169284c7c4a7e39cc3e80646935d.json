@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "633fba211e50ec624234b34831b5e5bfd63b169284c7c4a7e39cc3e80646935d",
+  "subject": "analytical",
+  "topic": "differential_two_channel_calibration_4",
+  "topic_family": "differential_two_channel_calibration",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_quantitative_with_assumptions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "双组分的线性响应为 A₁=0.080cX+0.020cY=0.51，A₂=0.010cX+0.060cY=0.4，浓度用 mg/L。假设两组分信号可加且无基线偏差，求 cX，先判断系数矩阵是否可逆。",
+  "answer": "计算结果 = 4.913043 mg/L。",
+  "explanation": "双通道方程消元，cX=(0.060A1−0.020A2)/(0.080×0.060−0.020×0.010)，行列式不为 0。 代入本题数值求得 4.913043 mg/L；须同时满足题设的模型及单位假定。",
+  "numeric_answers": [
+    4.913043478260869
+  ],
+  "units": "mg/L",
+  "computation_method": "explicit_formula_and_inverse_conservation",
+  "parameter_case": 4,
+  "model_inverse_crosschecked": true,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-rapid-240.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_parametric_family",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Authored original theoretical teaching example; not an outside course exam or textbook reproduction."
+  }
+}

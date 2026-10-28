@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "3762ac41d3ce589430663ca20369c1e927e2d21ad2ceb0eb8b192c87a820107d",
+  "subject": "physical",
+  "topic": "arrhenius_ea_from_two_rates_1",
+  "topic_family": "arrhenius_ea_from_two_rates",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_quantitative_with_assumptions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某反应在 T1=300.0 K 的速率常数 k1=0.1 s⁻¹，在 T2=320.0 K 为 k2=0.3 s⁻¹。假设同一 Arrhenius 参数可用于两温度，R=8.314462618 J/(mol·K)，求活化能 Ea（kJ/mol）。",
+  "answer": "计算结果 = 43.84498 kJ/mol。",
+  "explanation": "两点 Arrhenius 关系 ln(k2/k1)=Ea/R(1/T1−1/T2)，将计算的 Ea 从 J/mol 换为 kJ/mol。 代入本题数值求得 43.84498 kJ/mol；须同时满足题设的模型及单位假定。",
+  "numeric_answers": [
+    43.844979867870826
+  ],
+  "units": "kJ/mol",
+  "computation_method": "explicit_formula_and_inverse_conservation",
+  "parameter_case": 1,
+  "model_inverse_crosschecked": true,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-rapid-240.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_parametric_family",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Authored original theoretical teaching example; not an outside course exam or textbook reproduction."
+  }
+}

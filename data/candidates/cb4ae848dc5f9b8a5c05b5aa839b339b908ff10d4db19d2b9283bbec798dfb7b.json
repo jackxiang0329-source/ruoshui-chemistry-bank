@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "cb4ae848dc5f9b8a5c05b5aa839b339b908ff10d4db19d2b9283bbec798dfb7b",
+  "subject": "organic",
+  "topic": "atom_economy_two_products_1",
+  "topic_family": "atom_economy_two_products",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_quantitative_with_assumptions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某理想配平有机反应仅形成目标产物及不可利用小分子副产物；单反应式单位的两者理论质量分别为 88 g 和 18 g。求目标产物的原子经济性百分数，不等同于实验分离收率。",
+  "answer": "计算结果 = 83.01887 %。",
+  "explanation": "原子经济性按配平化学计量质量，目标产物质量/(目标产物质量+副产物质量)×100%。 代入本题数值求得 83.01887 %；须同时满足题设的模型及单位假定。",
+  "numeric_answers": [
+    83.01886792452831
+  ],
+  "units": "%",
+  "computation_method": "explicit_formula_and_inverse_conservation",
+  "parameter_case": 1,
+  "model_inverse_crosschecked": true,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-rapid-240.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_parametric_family",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Authored original theoretical teaching example; not an outside course exam or textbook reproduction."
+  }
+}

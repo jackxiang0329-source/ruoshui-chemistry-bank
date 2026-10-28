@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "dc6c73f637b0d859f4d4cca870056f58e164f71447cda37d3c8cf61cda4a93f0",
+  "subject": "organic",
+  "topic": "grignard_total_product_carbon_count_4",
+  "topic_family": "grignard_total_product_carbon_count",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_quantitative_with_assumptions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某无环酮底物含 6 个碳原子，亲核试剂 R–MgBr 的烷基 R 含 5 个碳原子。经无水加成及酸性后处理，不断碳链也不重排，求生成醇的碳原子数。",
+  "answer": "计算结果 = 11.00000 碳原子。",
+  "explanation": "格氏试剂的 R 基与原羰基碳成键，不丢失酮原来的碳骨架，产物总碳数是两者之和。 代入本题数值求得 11.00000 碳原子；须同时满足题设的模型及单位假定。",
+  "numeric_answers": [
+    11
+  ],
+  "units": "碳原子",
+  "computation_method": "explicit_formula_and_inverse_conservation",
+  "parameter_case": 4,
+  "model_inverse_crosschecked": true,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-rapid-240.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_parametric_family",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Authored original theoretical teaching example; not an outside course exam or textbook reproduction."
+  }
+}

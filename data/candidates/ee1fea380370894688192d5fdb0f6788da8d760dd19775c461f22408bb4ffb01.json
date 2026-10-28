@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "ee1fea380370894688192d5fdb0f6788da8d760dd19775c461f22408bb4ffb01",
+  "subject": "analytical",
+  "topic": "weak_acid_neutral_species_pct_5",
+  "topic_family": "weak_acid_neutral_species_pct",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_quantitative_with_assumptions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "只考虑 HA/A⁻ 两种形态的一元弱酸，溶液 pH=5.8，pKa=4.9，忽略活度修正和其它复杂酸碱副平衡。求未电离 HA 在两形态总浓度中的百分数，并指出适用近似。",
+  "answer": "计算结果 = 11.18158 %。",
+  "explanation": "Henderson–Hasselbalch 给出 [A⁻]/[HA]=10^(pH−pKa)，故 HA 占比=100/(1+10^(pH−pKa))。 代入本题数值求得 11.18158 %；须同时满足题设的模型及单位假定。",
+  "numeric_answers": [
+    11.181576977811707
+  ],
+  "units": "%",
+  "computation_method": "explicit_formula_and_inverse_conservation",
+  "parameter_case": 5,
+  "model_inverse_crosschecked": true,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-rapid-240.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_parametric_family",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Authored original theoretical teaching example; not an outside course exam or textbook reproduction."
+  }
+}

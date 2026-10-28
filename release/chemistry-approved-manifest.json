@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "release_state": "no_approved_items",
-  "total_candidates": 1920,
+  "total_candidates": 2160,
   "approved_count": 0,
-  "excluded_candidate_count": 1920,
+  "excluded_candidate_count": 2160,
   "policy": "Only expert-approved, hash-pinned, source-rights-verified exercises with resolved item-rights, reconciled upstream answer-key discrepancies and acknowledged conceptual review may appear here. No automated checks alone grant publication.",
   "approval_identity_warning": "Attestations are manual registry fields, not cryptographic identity verification. Repository permissions and a separate human approval process remain essential.",
   "items": []

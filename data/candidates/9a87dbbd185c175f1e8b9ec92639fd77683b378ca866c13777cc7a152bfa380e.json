@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "9a87dbbd185c175f1e8b9ec92639fd77683b378ca866c13777cc7a152bfa380e",
+  "subject": "physical",
+  "topic": "van_der_waals_molar_gas_pressure_2",
+  "topic_family": "van_der_waals_molar_gas_pressure",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_quantitative_with_assumptions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某假想气体在摩尔体积 Vm=0.28 L/mol、温度 T=310 K 下，满足 (P+A/Vm²)(Vm−B)=RT，常数 A=1.36 L²·atm/mol²、B=0.03183 L/mol，R=0.082057 L·atm/(mol·K)。求模型压力 atm。",
+  "answer": "计算结果 = 85.15405 atm。",
+  "explanation": "范德华气压 P=RT/(Vm−B)−A/Vm²，务必将题中的摩尔体积参数与常数 A/B 区分开。 代入本题数值求得 85.15405 atm；须同时满足题设的模型及单位假定。",
+  "numeric_answers": [
+    85.15404845098774
+  ],
+  "units": "atm",
+  "computation_method": "explicit_formula_and_inverse_conservation",
+  "parameter_case": 2,
+  "model_inverse_crosschecked": true,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-rapid-240.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_parametric_family",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Authored original theoretical teaching example; not an outside course exam or textbook reproduction."
+  }
+}

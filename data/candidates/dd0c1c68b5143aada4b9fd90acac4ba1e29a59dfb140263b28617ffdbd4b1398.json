@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "dd0c1c68b5143aada4b9fd90acac4ba1e29a59dfb140263b28617ffdbd4b1398",
+  "subject": "physical",
+  "topic": "equilibrium_k_standard_gibbs_4",
+  "topic_family": "equilibrium_k_standard_gibbs",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_quantitative_with_assumptions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "反应在温度 330 K 的无量纲活度平衡常数为 K=5，各标准态定义一致。取 R=8.314462618 J/(mol·K)，求标准反应 Gibbs 能 ΔrG°（kJ/mol）。",
+  "answer": "计算结果 = -4.415932 kJ/mol。",
+  "explanation": "热力学关系 ΔrG°=−RTlnK，K 必须是无量纲常数，且最终结果将 J/mol 换成 kJ/mol。 代入本题数值求得 -4.415932 kJ/mol；须同时满足题设的模型及单位假定。",
+  "numeric_answers": [
+    -4.415931748445344
+  ],
+  "units": "kJ/mol",
+  "computation_method": "explicit_formula_and_inverse_conservation",
+  "parameter_case": 4,
+  "model_inverse_crosschecked": true,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-rapid-240.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_parametric_family",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Authored original theoretical teaching example; not an outside course exam or textbook reproduction."
+  }
+}

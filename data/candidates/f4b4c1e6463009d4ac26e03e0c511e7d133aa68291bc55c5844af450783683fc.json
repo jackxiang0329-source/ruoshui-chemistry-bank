@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "f4b4c1e6463009d4ac26e03e0c511e7d133aa68291bc55c5844af450783683fc",
+  "subject": "inorganic",
+  "topic": "oxoanion_formal_oxidation_number_2",
+  "topic_family": "oxoanion_formal_oxidation_number",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_quantitative_with_assumptions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某假想含氧阴离子 XO_m 中含 4 个 O，各 O 的形式氧化数取 −2，离子总电荷数为 -2（带符号）；求中心元素 X 的形式氧化数。请勿将形式价态等同实际局部电子电荷。",
+  "answer": "计算结果 = 6.000000 价态。",
+  "explanation": "按氧化数总和等于离子总电荷，z−2a=b，故 z=b+2a；题设不保证所有假想组成都稳定。 代入本题数值求得 6.000000 价态；须同时满足题设的模型及单位假定。",
+  "numeric_answers": [
+    6
+  ],
+  "units": "价态",
+  "computation_method": "explicit_formula_and_inverse_conservation",
+  "parameter_case": 2,
+  "model_inverse_crosschecked": true,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-rapid-240.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_parametric_family",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Authored original theoretical teaching example; not an outside course exam or textbook reproduction."
+  }
+}

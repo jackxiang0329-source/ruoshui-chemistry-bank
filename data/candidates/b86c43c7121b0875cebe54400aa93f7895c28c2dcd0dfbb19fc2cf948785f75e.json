@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "b86c43c7121b0875cebe54400aa93f7895c28c2dcd0dfbb19fc2cf948785f75e",
+  "subject": "analytical",
+  "topic": "glass_electrode_calibrated_ph_4",
+  "topic_family": "glass_electrode_calibrated_ph",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_quantitative_with_assumptions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "25°C 某玻璃电极在适用范围内服从 E=E₀−59.16 mV×pH，校准截距 E₀=400 mV，样品读数 E=145 mV；忽略液接电位变化。求样品 pH。",
+  "answer": "计算结果 = 4.310345 pH。",
+  "explanation": "代数移项得 pH=(E₀−E)/59.16 mV；需在相同的电位单位下相减。 代入本题数值求得 4.310345 pH；须同时满足题设的模型及单位假定。",
+  "numeric_answers": [
+    4.310344827586207
+  ],
+  "units": "pH",
+  "computation_method": "explicit_formula_and_inverse_conservation",
+  "parameter_case": 4,
+  "model_inverse_crosschecked": true,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-rapid-240.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_parametric_family",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Authored original theoretical teaching example; not an outside course exam or textbook reproduction."
+  }
+}

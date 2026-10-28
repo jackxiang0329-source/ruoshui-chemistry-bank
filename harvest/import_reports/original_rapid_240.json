@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "generated": 240,
+  "distinct_topic_families": 48,
+  "independently_checked_numerical_cases": 240,
+  "cases_per_family": 5,
+  "by_subject": {
+    "inorganic": 60,
+    "analytical": 60,
+    "organic": 60,
+    "physical": 60
+  },
+  "source_license": "CC0-1.0",
+  "copied_exam_questions": 0,
+  "full_stored_record_replay": 240,
+  "expert_approved": 0,
+  "publishable": false,
+  "caveat": "Inverse equations are mechanical consistency checks, not expert chemistry validation. 48 families, 5 variants each, NOT 240 unique topics."
+}
