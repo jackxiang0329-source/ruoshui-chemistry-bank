@@ -3,7 +3,7 @@
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
   "current_draft_count": 52,
-  "preliminary_flags": 25,
+  "preliminary_flags": 29,
   "pairs": [
     {
       "new_id": "UC-ADV10-I102",
@@ -154,9 +154,33 @@
       "prior_id": "UC-ADV10-P104",
       "reason": "均含扩散传质；旧题是多组分Maxwell–Stefan代数通量，新题为球形多孔颗粒一阶反应扩散边值问题及Thiele有效因子，待专家比较。",
       "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-I113",
+      "prior_id": "UC-ADV9-I77",
+      "reason": "v9 I77使用Latimer电势判别歧化/归中热力学方向，v10 I113同属相邻价态电势与归中平衡，虽增加三物种初始混合、守恒、Nernst及光谱，核心反应自由能关系高度重叠，须高优先级人工核对。",
+      "judgement": "high_priority_pending_human_core_model_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-A113",
+      "prior_id": "UC-ADV9-A78",
+      "reason": "v9 A78讨论色谱分离度和峰宽，v10 A113采用指数修饰高斯的卷积累积量与矩分离指标；需核查是否与此前峰宽/分离度模型实质重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-O110",
+      "prior_id": "UC-ADV9-O76",
+      "reason": "v9 O76分子内内酯化有效摩尔浓度与分子间竞争，v10 O110同属分子内/分子间竞争，虽加入外部亲核剂指数衰减与非自治积分危险率，核心分支模型可能重叠，须高优先级人工审核。",
+      "judgement": "high_priority_pending_human_core_model_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-P110",
+      "prior_id": "UC-ADV9-P84",
+      "reason": "v9 P84为旋转圆盘对流扩散极限电流，v10 P110为球形多孔催化剂反应扩散边值问题；虽都涉及传质通量，边界条件及反应项不同，仍需人工方程级比对。",
+      "judgement": "pending_human_comparison"
     }
   ],
-  "notes": "All 52 draft records await human chemistry, copyright and cross-series governing-equation review; 25 preliminary model-overlap flags; 0 expert approvals.",
+  "notes": "All 52 draft records await human chemistry, copyright and cross-series governing-equation review; 29 preliminary flags (including high-priority I113/I77 and O110/O76); 0 expert approvals.",
   "expert_approved": 0,
   "new_items_requiring_cross_series_comparison": [
     {
