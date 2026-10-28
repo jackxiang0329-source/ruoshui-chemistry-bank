@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "total_candidates": 1908,
-  "corpus_hash_sha256": "05701cfcb3f3503fb7d9537f2d777ab45d783463eb1ae3979d22f16169aa1397",
+  "total_candidates": 1920,
+  "corpus_hash_sha256": "9c87d6fc5ade9474dd3544e3f1c58de0c42f98d2b111aa2eeaeaceae05c5e825",
   "by_subject": {
-    "analytical": 216,
+    "analytical": 222,
     "inorganic": 934,
     "organic": 528,
-    "physical": 230
+    "physical": 236
   },
   "by_content_kind": {
-    "exercise_candidate": 1630,
+    "exercise_candidate": 1642,
     "study_card": 278
   },
   "by_quality_status": {
-    "awaiting_expert_review": 1908
+    "awaiting_expert_review": 1920
   },
   "by_publishable": {
-    "false": 1908
+    "false": 1920
   },
   "source_counts": {
     "ChemTrain/chemtrain-daily": 268,
@@ -33,23 +33,27 @@
     "QC-Edu/IntroQM": 3,
     "arya51-ai/parametric-question-engine": 30,
     "bem130/chemquiz": 67,
-    "jackxiang0329-source/ruoshui-chemistry-bank": 497,
+    "jackxiang0329-source/ruoshui-chemistry-bank": 509,
     "kbknudsen/PyEIS": 8,
     "thisisntnathan/dftCourse": 12
   },
   "topic_counts": {
     "analytical:acetate_buffer_after_strong_acid": 1,
+    "analytical:acidic_permanganate_iron_mass_and_molarity": 1,
     "analytical:analytical_detection_quantitation_limits": 1,
     "analytical:analytical_spike_recovery": 1,
     "analytical:buret_reading_uncertainty": 1,
+    "analytical:calcium_magnesium_differential_edta": 1,
     "analytical:calcium_oxalate_indirect_assay": 12,
     "analytical:carbonate_back_titration_purity": 1,
     "analytical:carbonate_bicarbonate_distribution_pH": 1,
+    "analytical:carbonate_bicarbonate_dual_endpoint": 1,
     "analytical:chromatographic_baseline_resolution": 8,
     "analytical:chromatographic_retention_and_selectivity": 1,
     "analytical:chromatographic_theoretical_plates": 8,
     "analytical:chromatography_baseline_resolution": 1,
     "analytical:complexometric_titration": 1,
+    "analytical:concentration_uncertainty_propagation": 1,
     "analytical:conductivity_cell_calibration": 8,
     "analytical:copper_iodometric_mass_fraction": 12,
     "analytical:coulometric_copper_deposition": 8,
@@ -57,6 +61,7 @@
     "analytical:divalent_ion_selective_nernst_slope": 1,
     "analytical:double_indicator_alkalinity": 1,
     "analytical:double_indicator_carbonate_bicarbonate": 12,
+    "analytical:dual_wavelength_spectrophotometric_inversion": 1,
     "analytical:edta_conditional_complex_fraction": 1,
     "analytical:edta_one_to_one_metal_stoichiometry": 1,
     "analytical:edta_zinc_complexometric_standardization": 12,
@@ -87,6 +92,7 @@
     "analytical:two_step_partition_extraction_efficiency": 1,
     "analytical:uv_vis_beer_lambert": 8,
     "analytical:uv_vis_blank_correction": 1,
+    "analytical:weak_acid_titration_half_and_equivalence_ph": 1,
     "inorganic:agcl_common_ion_molar_solubility": 1,
     "inorganic:born_haber_lattice_energy": 12,
     "inorganic:chemical_formula_molar_mass": 6,
@@ -144,10 +150,13 @@
     "organic:specific_rotation_enantiomeric_excess": 12,
     "organic:unspecified": 5,
     "physical:A_to_2B_equilibrium_extent": 1,
+    "physical:adiabatic_neutralization_calorimetry": 1,
     "physical:arrhenius_activation_energy_two_temperatures": 6,
     "physical:arrhenius_plot_activation_energy": 1,
     "physical:baseball_debroglie_wavelength": 1,
+    "physical:binary_phase_diagram_lever_rule": 1,
     "physical:calorimetry": 6,
+    "physical:carnot_engine_work_and_entropy_balance": 1,
     "physical:cell_gibbs_from_standard_emf": 1,
     "physical:chemical_equilibrium": 6,
     "physical:chemical_kinetics": 12,
@@ -157,6 +166,7 @@
     "physical:complex_conjugation_nonnegative_norm": 1,
     "physical:complex_exponential_wavefunction": 1,
     "physical:consecutive_first_order_intermediate": 1,
+    "physical:coupled_equilibria_free_energy": 1,
     "physical:cu2_concentration_cell": 1,
     "physical:davisson_germer_electron_waves": 1,
     "physical:debye_huckel_limit_divalent_activity": 1,
@@ -183,6 +193,7 @@
     "physical:harmonic_oscillator_vibrational_spacing": 6,
     "physical:hene_single_photon_energy": 1,
     "physical:hydrogen_ground_state_first_absorption": 1,
+    "physical:hydrogen_oxygen_fuel_cell_work_and_efficiency": 1,
     "physical:hypothetical_isomer_equilibrium_fraction": 4,
     "physical:ideal_binary_vle_raoult": 6,
     "physical:ideal_gas_isothermal_expansion_entropy": 1,
@@ -193,6 +204,7 @@
     "physical:isothermal_ideal_gas_entropy": 6,
     "physical:kirchhoff_reaction_enthalpy": 1,
     "physical:langmuir_surface_coverage": 6,
+    "physical:magnesium_chloride_mean_activity_coefficient": 1,
     "physical:maxwell_entropy_volume_ideal_gas": 1,
     "physical:molecular_electronic_transition_photon": 6,
     "physical:momentum_vs_kinetic_operator_eigenstates": 1,
@@ -226,7 +238,7 @@
     "samples": []
   },
   "source_content_rights_audit": {
-    "explicitly_verified": 1887,
+    "explicitly_verified": 1899,
     "explicitly_pending": 21,
     "not_recorded": 0,
     "pending_samples": [

@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "main_total": 1908,
+  "main_total": 1920,
   "previously_replayed": 1525,
   "additional_source_replayed": 185,
   "main_coverage_after_addition": 1710,
-  "remaining_unreplayed": 198,
+  "remaining_unreplayed": 210,
   "chemquiz_mit_reference": 67,
   "chemtrain_CC_BY4_source_exercises": 118,
   "sources": [

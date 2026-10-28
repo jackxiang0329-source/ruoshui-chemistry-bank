@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "154eddbcf6e4f19f71732746f23b9ad0c21c46bfd5c0af863e85dd5c13877139",
+  "subject": "analytical",
+  "topic": "calcium_magnesium_differential_edta",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_multistep_stoichiometry_and_thermodynamics",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "两份各 25.00 mL 的同一试液分别用 0.01000 mol/L EDTA 滴定。测总 Ca²⁺+Mg²⁺ 时耗 EDTA 20.00 mL；选取使 Mg²⁺ 不参与滴定的条件测 Ca²⁺ 时耗 12.00 mL。假定无其他金属、EDTA 与金属配位 1:1 且终点准确。求两种离子的浓度。",
+  "answer": "c(Ca²⁺) = 0.00480000 mol/L；c(Mg²⁺) = 0.00320000 mol/L。",
+  "explanation": "1．总金属物质的量为 0.01000×0.02000=0.0002000 mol；钙为 0.01000×0.01200=0.0001200 mol。\n2．镁的物质的量是两次滴定消耗量之差 0.0000800 mol；该差值表示相同体积两份试液中镁离子的物质的量。\n3．两份试液均为 0.02500 L，因此分别除以 0.02500 L；要避免将两个滴定体积误认为同一份样品上连续相加。",
+  "solution_steps": [
+    "总金属物质的量为 0.01000×0.02000=0.0002000 mol；钙为 0.01000×0.01200=0.0001200 mol。",
+    "镁的物质的量是两次滴定消耗量之差 0.0000800 mol；该差值表示相同体积两份试液中镁离子的物质的量。",
+    "两份试液均为 0.02500 L，因此分别除以 0.02500 L；要避免将两个滴定体积误认为同一份样品上连续相加。"
+  ],
+  "numeric_answers": [
+    0.0048,
+    0.0032
+  ],
+  "numeric_answer_units": [
+    "mol/L",
+    "mol/L"
+  ],
+  "constraint_equations_independently_checked": true,
+  "mathematical_balance_checks_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multistep-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_independently_authored_multistep_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese undergraduate multistep exercises and worked derivations; no third-party assessment text copied."
+  }
+}

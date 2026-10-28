@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "18d846cd7d9e2c04cdbb708d9822555beb0c00378e13d55765ca1f765bdb08d8",
+  "subject": "physical",
+  "topic": "carnot_engine_work_and_entropy_balance",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_multistep_stoichiometry_and_thermodynamics",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "一个在热源 Th=500.0 K 和冷源 Tc=300.0 K 间运行的理想可逆 Carnot 热机，单循环从热源吸收 Qh=1500 J。求热效率 η 与输出净功 W（J）。再给出向冷源排热量及冷热源总熵变，并解释此模型不能代表真实发动机摩擦和不可逆损失。",
+  "answer": "Carnot 热效率 = 0.400000；净输出功 W = 600.000 J。",
+  "explanation": "1．可逆热机的 Carnot 热效率 η=1−Tc/Th=1−300/500=0.400。\n2．净输出功 W=ηQh=0.400×1500=600 J；向冷源排出的热量 Qc=Qh−W=900 J。\n3．热源熵变 ΔSh=−Qh/Th=−3 J/K、冷源熵变 ΔSc=Qc/Tc=+3 J/K，两热源净熵变为 0；此为可逆热机上限。",
+  "solution_steps": [
+    "可逆热机的 Carnot 热效率 η=1−Tc/Th=1−300/500=0.400。",
+    "净输出功 W=ηQh=0.400×1500=600 J；向冷源排出的热量 Qc=Qh−W=900 J。",
+    "热源熵变 ΔSh=−Qh/Th=−3 J/K、冷源熵变 ΔSc=Qc/Tc=+3 J/K，两热源净熵变为 0；此为可逆热机上限。"
+  ],
+  "numeric_answers": [
+    0.4,
+    600
+  ],
+  "numeric_answer_units": [
+    "",
+    "J"
+  ],
+  "constraint_equations_independently_checked": true,
+  "mathematical_balance_checks_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multistep-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_independently_authored_multistep_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese undergraduate multistep exercises and worked derivations; no third-party assessment text copied."
+  }
+}
