@@ -10,7 +10,8 @@
 - **第四辑 50 道**：[50 道完整中文题目与分步解答](editorial/advanced_integrated_v4/50_advanced_chemistry_solutions.md)，[四科集中存储及审核说明](editorial/advanced_integrated_v4/README.md)，无机13、分析13、有机12、物化12。
 - **第五辑 50 道**：[50道完整中文题目与解答](editorial/advanced_integrated_v5/50_advanced_chemistry_solutions.md) · [按学科组织的JSONL和审校说明](editorial/advanced_integrated_v5/README.md)，四科为13/13/12/12。
 - **第六辑新增 50 条待审稿**：[完整中文题目及解答](editorial/advanced_integrated_v6/50_advanced_chemistry_solutions.md) · [结构化题目与审核说明](editorial/advanced_integrated_v6/README.md)。四科13/13/12/12；[35组潜在跨辑模型重叠待审](editorial/advanced_integrated_v6/overlap_review_queue.json)，**不能宣称50种新模型已完成去重**。
-- **累计 186 条题目与解答记录**（此前136+本次50），其中本次50条仍待跨辑去重与科学专家审校；化学专家审核通过 **0**，正式可出卷 **0**。
+- **第七辑新增 60 条高阶综合待审稿，四科各15道**：[60道完整题目与分步解答](editorial/advanced_integrated_v7/60_advanced_chemistry_solutions.md)、[分科JSONL目录](editorial/advanced_integrated_v7/README.md)、[跨辑相近模型人工复核队列](editorial/advanced_integrated_v7/overlap_review_queue.json)。全部经过机器计算复核，但新模型独立性仍待逐题审定。
+- **当前共246条题目与解答编辑记录**（此前186+第七辑60），其中第六、七辑合计110条仍待跨辑核心模型去重及专家审核；专家正式批准 **0**，正式可出卷 **0**。
 
 ## 清理政策
 
@@ -31,6 +32,7 @@ node scripts/check-advanced-authored-v3.mjs
 node scripts/check-advanced-authored-v4.mjs
 node scripts/check-advanced-authored-v5.mjs
 node scripts/check-advanced-authored-v6.mjs
+node scripts/check-advanced-authored-v7.mjs
 node scripts/audit-advanced-only.mjs
 ```
 
