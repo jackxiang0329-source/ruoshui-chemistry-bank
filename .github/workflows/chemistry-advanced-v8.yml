@@ -1,0 +1,26 @@
+name: Advanced chemistry eighth sixty-model QA
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'editorial/advanced_integrated_v8/**'
+      - 'scripts/check-advanced-authored-v8.mjs'
+      - '.github/workflows/chemistry-advanced-v8.yml'
+  pull_request:
+    paths:
+      - 'editorial/advanced_integrated_v8/**'
+      - 'scripts/check-advanced-authored-v8.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify all sixty eighth-series worked chemistry models
+        run: node scripts/check-advanced-authored-v8.mjs
