@@ -96,6 +96,8 @@ on:
       - "tests/analytical-calculator-mit.test.mjs"
       - "scripts/import-original-analytical-variants.mjs"
       - "scripts/import-original-instrumental-analytical.mjs"
+      - "scripts/audit-original-40-science.mjs"
+      - "tests/audit-original-40-science.test.mjs"
       - "scripts/audit-original-multistep-science.mjs"
       - "tests/audit-original-multistep-science.test.mjs"
       - "scripts/update-chemistry-readme-snapshot.mjs"
@@ -242,6 +244,8 @@ jobs:
         run: node --test tests/original-instrumental-analytical.test.mjs
       - name: Verify fixed CC0 course exercise provenance and solution corrections
         run: node --test tests/introqchem-2021.test.mjs
+      - name: Independently verify 40 original chemistry models and 34 numerical results
+        run: node --test tests/audit-original-40-science.test.mjs
       - name: Verify independent multistep scientific assumptions and 24 separately computed values
         run: node --test tests/audit-original-multistep-science.test.mjs
       - name: Verify fail-closed audit-synchronized README snapshot
@@ -332,6 +336,8 @@ jobs:
         run: node scripts/import-original-analytical-physical-topics.mjs
       - name: Persist 20 original integrated chemistry topics across four disciplines
         run: node scripts/import-original-integrated-chemistry.mjs
+      - name: Cross-check 40 stored CC0 analytical, physical and four-subject models for scientific conditions
+        run: node scripts/audit-original-40-science.mjs
       - name: Persist 33 separately authored CC0 inorganic, analytical, organic and physical reasoning exercises
         run: node scripts/import-original-reasoning-chemistry.mjs
       - name: Generate 120 CC0 original inorganic and organic quantitative exercises
