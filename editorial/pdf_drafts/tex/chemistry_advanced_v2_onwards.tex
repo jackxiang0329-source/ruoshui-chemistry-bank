@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至7辑 (204题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至7辑 (224题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -4062,6 +4062,430 @@ extent = 0.41392077；T\_final = 382.784154；K\_final = 0.706253947；isotherma
 答案1 = 0.00206442781；答案2 = 0.000838930475；答案3 = 0.419465238；答案4 = 0.000232268663；答案5 = 0.000247731337\par
 \noindent\textbf{模型前提：}
 无渗透压造成体积改变、蛋白只在第一腔、理想自由分析物活动度及单一1:1结合位点。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{有机化学}
+\addcontentsline{toc}{subsection}{第7辑 / 有机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O43 · 可逆异构化后不可逆捕获的三物种耦合矩阵动力学}
+\noindent\textbf{题目}\par
+假想有机反应A⇌B（正向k1=0.200h\textasciicircum{}-1、逆向k\_−1=0.0600h\textasciicircum{}-1），B→C不可逆捕获k2=0.0400h\textasciicircum{}-1，初态纯A=1.000mol。体系恒温恒体积，三种反应全为一级。求5.000h后A、B、C、A⇌B的瞬时净通量和捕获C的瞬时速率；必须使用二维矩阵本征值解而不能将A→B近似为单向反应。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设u=(A,B)\textasciicircum{}T，动力学矩阵M=[[-kf,kr],[kf,−kr−kc]]，而C′=kc B。
+\item 特征多项式λ²+(kf+kr+kc)λ+kf kc=0；两负本征值λ±=-0.0295840542、-0.270415946h\textasciicircum{}-1。
+\item 初态A0=1、B0=0，B(t)=kf(e\textasciicircum{}\{λ+t\}−e\textasciicircum{}\{λ−t\})/(λ+−λ−)。
+\item A(t)=[(λ++kr+kc)e\textasciicircum{}\{λ+t\}−(λ−+kr+kc)e\textasciicircum{}\{λ−t\}]/(λ+−λ−)。
+\item 代入t=5h，A=0.435243995mol，B=0.501427118mol，C=1−A−B=0.0633288863mol。
+\item 异构化净流量kfA−krB=0.056963172mol/h，捕获流量kcB=0.0200570847mol/h。
+\item 反向B→A会减慢净生成B，而C不可逆累积；逐物种微分方程相加给A+B+C=1。
+\item 数值逆核验（物料、速率与平衡约束）：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.435243995；答案2 = 0.501427118；答案3 = 0.0633288863；答案4 = 0.056963172；答案5 = 0.0200570847\par
+\noindent\textbf{模型前提：}
+只含A↔B及B→C，所有一级常数固定，C不反馈。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O44 · 光诱导E/Z互变叠加暗反应的开灯与关灯解析}
+\noindent\textbf{题目}\par
+假想烯烃光致Z→E一级常数0.120min\textasciicircum{}-1、光致E→Z一级常数0.0300min\textasciicircum{}-1；同时E→Z热反应常数0.0200min\textasciicircum{}-1，Z→E暗反应忽略。初态全为Z，开灯10.00min。求开灯终态E/Z比例、光照稳态比例和关灯后再经过15.00min的E分数；解释为什么关灯后光致逆反应也必须同时停止。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设E分数e，Z=1−e。光照期满足de/dt=kf(1−e)−(kback+ktherm)e。
+\item 总衰减常数λ=kf+kback+ktherm=0.17min\textasciicircum{}-1。
+\item 光照稳态e∞=kf/λ=0.705882353。
+\item 开灯t=10、e(0)=0，得E10=e∞(1−e\textasciicircum{}−λt)=0.576929277。
+\item 对应Z10=1−E10=0.423070723，E/Z比例=1.363671。
+\item 关灯后两种光致速率均为0，只保留热E→Z，所以E25=E10e\textasciicircum{}(−ktherm×15)=0.427399721。
+\item 实际光谱读出需额外标定两个异构体吸收系数；本模型只给化学种群，不直接给实验吸光度。
+\item 数值逆核验（物料、速率与平衡约束）：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.576929277；答案2 = 0.423070723；答案3 = 0.705882353；答案4 = 0.427399721；答案5 = 1.363671\par
+\noindent\textbf{模型前提：}
+光源恒定、暗反应只E→Z、量子效率和光通量吸收到一级常数。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O45 · 竞争环加成过渡态的焓熵补偿与温度反转选择性}
+\noindent\textbf{题目}\par
+两条并行Diels–Alder通道从同一底物生成endo与exo产物，假定速率常数为共同指前因子乘exp(ΔS‡/R−ΔH‡/RT)，endo：ΔH‡=65.0kJ/mol、ΔS‡=−35.0J/(mol K)；exo：ΔH‡=70.0kJ/mol、ΔS‡=−25.0J/(mol K)。求298.15与350.0K的初速endo/exo比、298.15K初始endo产物分数、选择性相等时的温度以及为何不能只看活化焓。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两通道速率比kendo/kexo=exp[(ΔSendo−ΔSexo)/R−(ΔHendo−ΔHexo)/(RT)]。
+\item 焓差endo−exo=−5000J/mol，熵差=−10J/(mol K)。
+\item 298.15K比例r1=2.25749034，350K比例r2=1.67439675。
+\item 初速产物分数endo=r1/(1+r1)=0.693015206。
+\item 当速率相等时lnr=0，温度T*=ΔΔH/ΔΔS=−5000/(−10)=500K。
+\item 低温时endo具有较低焓垒而占优，高温则熵惩罚的相对重要性降低；此处比值随温度升高而下降。
+\item 若产物可逆互相转化，最终热力学比例未必等于初速比例，题目只讨论动力学控制的初始选择性。
+\item 数值逆核验（物料、速率与平衡约束）：0.000e+0、0.000e+0、2.220e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 2.25749034；答案2 = 1.67439675；答案3 = 0.693015206；答案4 = 500\par
+\noindent\textbf{模型前提：}
+共同前因子约定与过渡态焓熵常数，忽略产物可逆及溶剂微观效应。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O46 · Mayo链转移与自由基聚合的数均链长联合修正}
+\noindent\textbf{题目}\par
+假想链式有机聚合的无链转移数均聚合度DPn0=100.0，单体浓度[M]=1.000M，溶剂链转移剂浓度[S]=0.01500M，Mayo链转移常数C\_S=k\_tr,S/k\_p=0.04000。另加入转移剂T，浓度[T]=0.01000M、转移常数CT=0.1200，且两个链转移事件互相独立。求新的数均聚合度、平均每条链的转移贡献、按理想Flory最概然近似的重均聚合度与分散度，并说明Mayo式为何不能无条件推出真实完整分子质量分布。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Mayo方程1/DPn=1/DPn0+C\_S[S]/[M]+C\_T[T]/[M]。
+\item 无转移链长为100，因此基础倒数贡献为0.01000。
+\item 溶剂转移贡献0.04000×0.01500=0.0006000。
+\item T转移贡献0.1200×0.01000=0.001200。
+\item 总1/DPn=0.011800，对应DPn=84.7457627。
+\item 若额外假设链长服从最概然几何分布，则由DPw≈2DPn−1得到DPw=168.491525、Đ=1.9882。
+\item Mayo等式本身只给数均链长，无法单独推出真实重均分布；若转移导致新链引发效率变化则需更完整动力学。
+\item 数值逆核验（物料、速率与平衡约束）：-1.735e-18、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 84.7457627；答案2 = 0.0006；答案3 = 0.0012；答案4 = 168.491525\par
+\noindent\textbf{模型前提：}
+仅Mayo数均公式为基本题设；重均计算额外假设几何最概然分布，不声称真实自由基聚合分布。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O47 · 有限初始水与不等量底物下的可逆缩合定量}
+\noindent\textbf{题目}\par
+假想有机缩合反应醛A+胺B⇌亚胺I+水W，理想封闭恒容溶液中初始[A]=0.02000M、[B]=0.04000M、[I]=0、水=0.01000M；条件形成常数K=[I][W]/([A][B])=12.00，所有物种不发生其它反应。求平衡进度、残余A和B、亚胺浓度、终态水和A转化率，证明水不是固定背景常量并给出严格单调唯一根。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设亚胺生成进度x，则A=A0−x、B=B0−x、I=x、W=W0+x。
+\item 物理区间0<x<min(A0,B0)=0.02000。
+\item 平衡关系x(W0+x)/[(A0−x)(B0−x)]=K。
+\item 该函数在物理区间严格递增由0趋无穷，故唯一正根。
+\item 求得x=0.0180720271M，剩余醛=0.00192797285M、胺=0.0219279729M。
+\item 水终浓度W0+x=0.0280720271M，亚胺浓度x，A转化率x/A0=0.903601357。
+\item 将水错误地设为0.01000M常数会打破水物料守恒，并使反应进度被高估。
+\item 数值逆核验（物料、速率与平衡约束）：-1.480e-15、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0180720271；答案2 = 0.00192797285；答案3 = 0.0219279729；答案4 = 0.0280720271；答案5 = 0.903601357\par
+\noindent\textbf{模型前提：}
+理想一比一缩合，没有副反应与溶剂水活度特别修正；浓度型平衡常数按题设采用。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O48 · 亲核取代底物质子化与微观双通道速率常数耦合}
+\noindent\textbf{题目}\par
+假想有机亲核取代底物在酸性形态SH+和中性S之间快速平衡，SH+的Ka=1.00×10\textasciicircum{}-7，pH=7.500由强缓冲维持。中性S与质子化SH+分别以一级常数0.0600和0.005000min\textasciicircum{}-1生成同一种产物，反应消耗不会改变pH。起始总底物0.02000M，求有效观测速率常数、12min剩余底物、转化率及分别经过两微观通道的产物份额，解释为何不能仅按pH套一个通道的一级速率。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设游离中性比例α=Ka/(Ka+[H+])，质子化比例1−α。
+\item pH7.5时α=0.759746927；由于酸碱交换快，两个反应通道始终按α与1−α分配底物。
+\item 总消耗一级常数kobs=α kN+(1−α)kH=0.046786081min\textasciicircum{}-1。
+\item 初始总底物C0按dC/dt=−kobs C衰减，12min后C=0.0114078225M。
+\item 总转化率1−exp(−kobs T)=0.429608876。
+\item 所有生成产物中由中性通道贡献的份额αkN/kobs=0.9743243，质子化通道份额(1−α)kH/kobs。
+\item 若酸碱交换不够快、产物影响缓冲或反应改变微观物种，则加权常数不再恒定，需写完整耦合动力学。
+\item 按题设反应速率与分布约束逆核验：3.708e-17、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.046786081；答案2 = 0.0114078225；答案3 = 0.429608876；答案4 = 0.9743243；答案5 = 0.0256756997\par
+\noindent\textbf{模型前提：}
+强缓冲、酸碱平衡远快于不可逆反应、微观反应同一产物且常数独立。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O49 · 氧抑制自由基链聚合的诱导期与后期转化估算}
+\noindent\textbf{题目}\par
+某假想自由基聚合体系，氧浓度初始0.004000M、引发有效自由基产生速率Ri=2.000×10\textasciicircum{}-4 M/min。假设每个引发自由基在有氧时定量消耗一个氧分子且完全不增长单体链；氧耗尽后单体按有效一级kobs=0.0300min\textasciicircum{}-1消耗，初始单体0.04000M。求氧耗尽的诱导时间、20min时剩余氧与单体、单体转化率以及氧是否真正已耗尽；若无氧从t=0直接反应会造成什么系统误判？\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 有氧期按d[O2]/dt=−Ri，因此氧诱导时间tind=O0/Ri。
+\item 由给定数值tind=0.004000/0.0002000=20min。
+\item 总反应20.00min正好等于诱导期，故在t=20min末氧耗尽而单体尚未按后期一级律反应。
+\item 因此剩余氧0，剩余单体仍为0.04000M，转化率X=0。
+\item 若再延长Δt时间，单体才按M=M0 exp(−kobs Δt)衰减。
+\item 错误地从t=0按无氧聚合计算20min，将得到Xwrong=1−exp(−0.03×20)=0.451188364。
+\item 这一两阶段近似不能模拟残余氧与链传播并存的过渡段；需要氧与自由基的微观反应耦合。
+\item 按题设反应速率与分布约束逆核验：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 20；答案2 = 0；答案3 = 0.04；答案4 = 0；答案5 = 0.451188364\par
+\noindent\textbf{模型前提：}
+氧与引发自由基一对一捕获，氧存在时零链增长；该题是理想诱导期模型，不是普遍真实动力学。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O50 · A3/B2不等当量缩聚的Flory–Stockmayer凝胶阈值}
+\noindent\textbf{题目}\par
+假想三官能A3单体与二官能B2单体的分支缩聚，A、B官能团初始摩尔数比r=NAfunc/NBfunc=1.0500，转化率pA=0.8000，化学计量强制pB=r pA（必须检验其不超过1）。在无环化、等官能团反应性假设下，分支因子α=(fA−1)(fB−1)pA pB。求pB、凝胶临界pA、当前α、是否已经超过临界及若继续反应的物理意义；解释不能套线性Carothers。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 每形成一个A−B键同时消耗一个A官能团和一个B官能团，所以NA pA=NB pB。
+\item 令r=NA/NB=1.0500，得pB=r pA=0.84，必须≤1。
+\item 分支因子α=(3−1)(2−1)pA pB=2r pA²。
+\item 临界凝胶条件α=1，解pA,crit=1/√(2r)=0.690065559。
+\item 当前α=2r(0.8000)²=1.344，大于1，按树状分支近似已越过凝胶点。
+\item 临界时pB,crit=r pA,crit=0.724568837，小于1，故此点在化学计量上可达。
+\item Carothers线性公式只计算平均链长、忽略三官能支化与无限簇形成，不能预测本模型凝胶阈值。
+\item 按题设反应速率与分布约束逆核验：0.000e+0、-1.110e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.84；答案2 = 0.690065559；答案3 = 1.344；答案4 = 0.724568837\par
+\noindent\textbf{模型前提：}
+等官能团随机反应、无环化/分子内反应，凝胶判据只适用于理想树状统计网络。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O51 · 竞争性酶抑制与有限底物供应下的速率及占位核验}
+\noindent\textbf{题目}\par
+假想有机酶催化转化S→P遵循准稳态Michaelis–Menten，已知Vmax=0.01000M/s、Km=0.02000M，底物自由浓度0.03000M。加入可逆竞争抑制剂I=0.01000M，其Ki=0.04000M。假设初始速率测量时S、I浓度尚未显著变化，求有效Km、抑制前后初速及保留率；在底物浓度翻倍时求新的保留率并说明不能把抑制看作Vmax不可逆减少。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 竞争抑制使有效Km′=Km(1+[I]/Ki)，但不改变Vmax。
+\item 因[I]/Ki=0.25，Km′=0.025M。
+\item 无抑制时v0=Vmax S/(Km+S)=0.006M/s。
+\item 加I后v=Vmax S/(Kmα+S)=0.00545454545M/s。
+\item 速率保留比v/v0=(Km+S)/(Kmα+S)=0.909090909。
+\item 当底物翻倍至0.06000M，保留比变为0.941176471，趋向1。
+\item 竞争抑制会被高底物浓度部分克服，与真正降低Vmax的不可逆失活不同，所给稳态公式只适用于初速测量。
+\item 按题设反应速率与分布约束逆核验：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.025；答案2 = 0.006；答案3 = 0.00545454545；答案4 = 0.909090909；答案5 = 0.941176471\par
+\noindent\textbf{模型前提：}
+单底物竞争抑制、无产物反馈，稳态初速区有效。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O52 · 构象预平衡与不同立体选择性通道的Curtin–Hammett加权}
+\noindent\textbf{题目}\par
+某假想有机底物有两组可快速互变构象A、B，相对能量EA−EB=+0.0300eV/分子，构象A简并度为B的4倍。温度300K下两构象分别经不可逆环加成生成endo产物，内禀endo选择性A为10.00\%、B为85.00\%，且两构象总反应速率常数相同。求A/B平衡分数、总初始endo产物分数、exo分数及若错误忽略简并度导致的选择性偏差；解释若两构象速率常数不同应如何加权。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 配分函数Z=1+4exp(−ΔE/kBT)，相对B的A权重为4exp(−ΔE/kBT)。
+\item 因此A分数pA=0.556221874、B分数1−pA=0.443778126。
+\item 因两个构象总反应速率常数按题设相同，产物总endo分数为pA×0.10+(1−pA)×0.85。
+\item 代入得到endo总比例=0.432833594。
+\item exo分数为1−endo=0.567166406，两产物比例相加为1。
+\item 若忽略A简并度，则错误A分数为exp(−Δ/kBT)/[1+exp(−Δ/kBT)]，影响最后加权比例。
+\item 若两构象总消耗速率不同，应改用kA pA与kB pB作为产物源通量权重，而非单纯按构象种群概率。
+\item 按题设反应速率与分布约束逆核验：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.556221874；答案2 = 0.443778126；答案3 = 0.432833594；答案4 = 0.567166406\par
+\noindent\textbf{模型前提：}
+构象快速平衡、总体消耗速率相同，内禀立体比例按两构象分别固定，不宣称真实Diels–Alder转态性质。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O53 · 产物催化自身生成的自催化logistic反应与拐点}
+\noindent\textbf{题目}\par
+假想有机反应A+P→2P属于产物P的自催化生成，恒容封闭体系总浓度A+P=1.000M，初始A=0.9800M、P=0.02000M，反应速率dP/dt=k A P，k=0.1500 L/(mol min)。求20min时A、P、转化的A量、最大瞬时生成速率及对应的唯一拐点时间，并严格推导为什么在无初始种子P0=0时该模型不会自发起始。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 利用A=1−P，动力学为dP/dt=kP(1−P)。
+\item 分离变量∫dP/[P(1−P)]=kt+常数，得到ln[P/(1−P)]=kt+ln[P0/A0]。
+\item 因此P(t)=1/[1+(A0/P0)e\textasciicircum{}(−kt)]，A(t)=1−P(t)。
+\item 20min时P=0.290734325M，A=0.709265675M。
+\item A被消耗的量为A0−A=0.270734325M，恰等于新生成P−P0。
+\item 速率dP/dt=kP(1−P)在P=1/2处达到最大k/4=0.0375M/min，对应t*=(1/k)ln(A0/P0)=25.9454687min。
+\item 若初态P0严格为0，该方程右侧恒为0，唯一解P(t)=0；真实成核/引发必须由题设外机制提供。
+\item 模型内物料、稳态或速率逆校核残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.290734325；答案2 = 0.709265675；答案3 = 0.270734325；答案4 = 0.0375；答案5 = 25.9454687\par
+\noindent\textbf{模型前提：}
+纯自催化单一路径且总浓度1M，严格不允许无催化基底反应。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O54 · 共聚物Mayo–Lewis瞬时组成与共聚进料不漂移点}
+\noindent\textbf{题目}\par
+假想自由基二元共聚单体A/B的反应活性比分别rA=0.6000、rB=0.4000，在低转化近似下自由进料摩尔分数fA=0.7000、fB=0.3000。末端模型给瞬时共聚物A组成F\_A=(rA fA²+fA fB)/(rA fA²+2fA fB+rB fB²)。求F\_A、B组成、F\_A−fA以及在0<fA<1的非平凡共聚组成不漂移点（azeotropic feed），并用链端A继续加A的概率核查序列效应。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由末端模型A链端下一次加入A的概率PAA=rA fA/(rA fA+fB)。
+\item 代入rA=.6、fA=.7得到PAA=0.583333333。
+\item 应用Mayo–Lewis瞬时组成方程，求F\_A=0.672，F\_B=1−F\_A=0.328。
+\item 当前组成偏离量F\_A−fA=-0.028，非零意味着反应进行后残余进料比例会漂移。
+\item 设置F\_A=f\_A并排除fA=0或1，得到非平凡条件fA*=(1−rB)/(2−rA−rB)。
+\item 参数下fA*=0.6，且F(fA*)=0.6与fA*相等。
+\item 链端序列PAA并不等于总体共聚物组成F\_A，除非特殊极限；必须同时区别末端条件概率与总体统计比例。
+\item 模型内物料、稳态或速率逆校核残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.672；答案2 = 0.328；答案3 = -0.028；答案4 = 0.6；答案5 = 0.583333333\par
+\noindent\textbf{模型前提：}
+恒定低转化进料、末端模型和固定活性比，不含第二邻位效应、链转移及单体扩散限制。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O55 · 动态NMR双位点交换的Eyring活化焓与并峰温度求根}
+\noindent\textbf{题目}\par
+有机分子两个等占据构象交换的动力学常数在300.0K测为k300=130.0s\textasciicircum{}-1，且交换的活化焓ΔH‡=50.00kJ/mol、活化熵近似不随温度变化。给定Eyring温度关系k(T)=k300(T/300)exp[−ΔH‡/R(1/T−1/300)]，两构象静态NMR化学位移频差Δν=120.0Hz，并约定等占位双态交换并峰判据kcoal=πΔν/√2。求并峰速率、并峰温度、340K交换速率及为何不能仅从等占位比例推出交换速度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 双态NMR并峰的题定动力学判据为kcoal=πΔν/√2。
+\item 由Δν=120Hz，得到kcoal=266.572976s\textasciicircum{}-1。
+\item Eyring温度关系有显式T/300前因子，不能简单用纯Arrhenius常前因子代替。
+\item 将k(T)−kcoal=0，在300至450K间寻找正根；正ΔH‡使k(T)严格随T增。
+\item 数值并峰温度Tc=310.589187K。
+\item 在340K时预测k340=1557.72089s\textasciicircum{}-1，并峰附近的谱线形状仍需完整Bloch–McConnell方程。
+\item 即使两构象总概率恰好各半，速率可以有完全不同的活化势垒；平衡常数并不固定交换时间尺度。
+\item 模型内物料、稳态或速率逆校核残差：-5.544e-15、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 266.572976；答案2 = 310.589187；答案3 = 1557.72089；答案4 = 300\par
+\noindent\textbf{模型前提：}
+等占位双态，给定快慢交换并峰经验判据和EyringΔH‡常数；忽略线宽其它贡献。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O56 · 光化学中间体继续光漂白的串联双指数最优收集}
+\noindent\textbf{题目}\par
+假想有机染料前体A在恒光照下转化为目标光活性P，一级常数k1=0.0900min\textasciicircum{}-1；P继续被光漂白为无色D，一级常数k2=0.0300min\textasciicircum{}-1。初始纯A=1.000mol，无逆反应、光通量和吸光变化已被并入有效速率常数。求12min后三物种mol、P收率、使P达到最大时的唯一收集时间以及对应理论最大P产量，并证明初始转化率最大不等于P最优收率。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 前体A(t)=e\textasciicircum{}−k1 t。
+\item P满足P′=k1 A−k2 P，解为P=k1(e\textasciicircum{}−k2t−e\textasciicircum{}−k1t)/(k1−k2)。
+\item 光漂白产物D=1−A−P。
+\item t=12min时A=0.339595526、P=0.537121201、D=0.123283274mol。
+\item P收率以原始A为基准即P=0.537121201，而总转化率1−A=0.660404474。
+\item 最大P满足P′=0，即k1 A=k2 P，化简最优t*=ln(k1/k2)/(k1−k2)=18.3102048min。
+\item 对应峰值P*=0.577350269mol；长期光照导致P→0，不能以A最终完全转化为最佳收集准则。
+\item 模型内物料、稳态或速率逆校核残差：0.000e+0、0.000e+0、-3.469e-18。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.339595526；答案2 = 0.537121201；答案3 = 0.123283274；答案4 = 18.3102048；答案5 = 0.577350269\par
+\noindent\textbf{模型前提：}
+光致与漂白两个不可逆一级通道，强度恒定，所有产物一比一。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-O57 · 两种亲核试剂竞争消耗芳基卤代物的伪一级选择性}
+\noindent\textbf{题目}\par
+假想有机芳卤化物A分别与亲核试剂B、C反应生成P、Q，二级常数分别kB=60.0 L mol\textasciicircum{}-1min\textasciicircum{}-1、kC=20.0 L mol\textasciicircum{}-1min\textasciicircum{}-1。B、C被巨大外部储液池固定为[B]=0.01000M、[C]=0.03000M，初始[A]=0.08000M。求15min剩余A、P/Q浓度、转化率及产物P的选择性，并说明两个亲核剂浓度如果随反应耗尽，伪一级公式为什么失效。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 因为B和C浓度被外部库钳定，两个伪一级速率分别λB=kB[B]与λC=kC[C]。
+\item 总A损失率λ=λB+λC=1.2min\textasciicircum{}-1。
+\item A(t)=A0 e\textasciicircum{}−λt，15min后A=1.21839838e-9M。
+\item 累计产物P=A0(1−e\textasciicircum{}−λt) λB/λ=0.0399999994M。
+\item 累计Q=A0(1−e\textasciicircum{}−λt) λC/λ=0.0399999994M。
+\item P选择性P/(P+Q)=λB/λ=0.5，两亲核剂浓度不同会改变选择性。
+\item 由A+P+Q=A0核对物料；若B/C不是外部固定则须加入B与C消耗微分方程，速率不再为常数λ。
+\item 模型内物料、稳态或速率逆校核残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1.21839838e-09；答案2 = 0.0399999994；答案3 = 0.0399999994；答案4 = 0.5；答案5 = 0.999999985\par
+\noindent\textbf{模型前提：}
+双不可逆亲核取代且底物B、C由大库保持浓度，产物不反应。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{物理化学}
+\addcontentsline{toc}{subsection}{第7辑 / 物理化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P43 · 三组分非理想挥发度闪蒸的Rachford–Rice唯一根}
+\noindent\textbf{题目}\par
+一股恒温恒压三组分理想化平衡闪蒸进料总量1.000mol，组分摩尔分数z=(0.5000,0.3000,0.2000)，在给定操作点测得气液平衡比K\_i=y\_i/x\_i分别为(2.500,1.100,0.2500)。求气相分率β、液相和气相三组分组成、汽液各摩尔数，并证明本给定K的闪蒸方程在0<β<1存在唯一根；解释为什么既不能直接把z当作液相，也不能让两相组成和不归一。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 总体组分守恒z\_i=(1−β)x\_i+βy\_i，平衡关系y\_i=K\_i x\_i。
+\item 消元得到x\_i=z\_i/[1+β(K\_i−1)]，y\_i=K\_i x\_i。
+\item 归一化带来Rachford–Rice函数g(β)=Σz\_i(K\_i−1)/[1+β(K\_i−1)]=0。
+\item 在可行物理区间g′(β)=−Σz\_i(K\_i−1)²/[1+β(K\_i−1)]²<0。
+\item 本参数g(0)>0且g(1)<0，故β∈(0,1)唯一；解β=0.793214486。
+\item 液相组成x=0.228329089、0.277952412、0.493718499；气相组成y=0.570822722、0.305747653、0.123429625。
+\item 汽相mol=β=0.793214486、液相mol=1−β=0.206785514，分别核对Σx=Σy=1及所有z\_i的守恒。
+\item 独立重算的相平衡/能量/速率约束残差为：-5.551e-17、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.793214486；答案2 = 0.228329089；答案3 = 0.277952412；答案4 = 0.493718499；答案5 = 0.570822722；答案6 = 0.305747653；答案7 = 0.123429625\par
+\noindent\textbf{模型前提：}
+题给相平衡系数在操作温压点固定；不需要求能量方程、汽化潜热或活度修正。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P44 · 双类型吸附位点的非均匀覆盖、微分吸附焓及容量}
+\noindent\textbf{题目}\par
+某多孔催化剂有两类独立Langmuir位点，饱和吸附量分别qmax,1=2.500mmol/g、qmax,2=1.200mmol/g；同一单位标准气压下的吸附平衡常数K1=8.000bar\textasciicircum{}-1、K2=0.5000bar\textasciicircum{}-1，实验气体分压p=0.2000bar。两位点的恒定摩尔吸附焓分别−42.00和−22.00kJ/mol。求两类覆盖率、吸附量、总吸附量、按吸附mol加权的平均放热焓和每克材料的总吸热/放热量，说明不能只按位点最大容量加权求真实吸附焓。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两位点独立Langmuir覆盖率θi=Ki p/(1+Ki p)。
+\item 代入p=.2bar，θ1=0.615384615，θ2=0.0909090909。
+\item 实际单类吸附量qi=qmax,i θi。
+\item 所以q1=1.53846154mmol/g，q2=0.109090909mmol/g，qtotal=1.64755245mmol/g。
+\item 混合占据量按真实吸附mol加权，平均摩尔焓hbar=(q1h1+q2h2)/(q1+q2)=-40675.7216J/mol。
+\item 每克吸附放热量Q=(q1h1+q2h2)×10\textasciicircum{}-3=-67.0153846J/g，负号表示热量从吸附体系释放。
+\item 若仅以qmax,i为权重将错误高估弱结合位点的贡献，尤其当两类Ki相差很大时。
+\item 独立重算的相平衡/能量/速率约束残差为：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.615384615；答案2 = 0.0909090909；答案3 = 1.53846154；答案4 = 0.109090909；答案5 = -40675.7216；答案6 = -67.0153846\par
+\noindent\textbf{模型前提：}
+题定独立双位点Langmuir，吸附焓按各位点常数近似，不预测温度改变时的覆盖分布。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P45 · Margules二元非理想液体的泡点压力和气相富集反演}
+\noindent\textbf{题目}\par
+假想二元液体在固定温度下服从一参数Margules活度模型lnγ1=A x2²、lnγ2=A x1²，A=0.8000。两组分纯液饱和蒸汽压分别P1sat=120.0kPa、P2sat=40.00kPa，液相组分1摩尔分数x1=0.4000，气相视为理想。求两液相活度系数、泡点总压、气相组成y1及相对挥发富集倍数y1/x1；检查两组分分压求和与Raoult活度修正的物料平衡。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 液相x1=.4、x2=.6，lnγ1=A x2²、lnγ2=A x1²。
+\item 因此γ1=1.3337573、γ2=1.136553。
+\item 非理想改良Raoult给气相分压p1=x1γ1P1sat、p2=x2γ2P2sat。
+\item 泡点总压力P=p1+p2=91.2976227kPa。
+\item 理想气相y1=p1/P=0.701226918，y2=1−y1=0.298773082。
+\item 组分1富集倍数y1/x1=1.7530673，且y1+y2严格等于1。
+\item 若把γ1=γ2=1当作理想液体，将错误预测泡点压力与气相组成；当前温度已给定，无需解温度非线性方程。
+\item 独立重算的相平衡/能量/速率约束残差为：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1.3337573；答案2 = 1.136553；答案3 = 91.2976227；答案4 = 0.701226918；答案5 = 1.7530673\par
+\noindent\textbf{模型前提：}
+单参数对称Margules液相、理想气体、无共沸相分离之外复杂现象。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P46 · 热容随反应组成改变的绝热可逆异构化完整能量耦合}
+\noindent\textbf{题目}\par
+1.000mol理想异构化A⇌B的初态300K纯A，300K标准反应焓ΔH°=−25.00kJ/mol，平衡常数K300=1.500；A、B的恒压摩尔热容分别Cp,A=100.0、Cp,B=140.0J/(mol K)，均视为常数。封闭恒压绝热且物种一比一，忽略混合焓。求反应进度ξ、终温、温度修正K(T)、剩余A/B mol；需要先由K300反算标准熵再把变热容能量守恒与平衡同时求解，不能简单采用固定有效热容。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由ΔG300=−RT0lnK300，推得ΔS300=(ΔH300+RT0lnK300)/T0=-79.9621088J/(mol K)。
+\item 热容差ΔCp=CpB−CpA=40J/(mol K)。
+\item 标准反应焓温度修正ΔH(T)=ΔH300+ΔCp(T−T0)，熵修正ΔS(T)=ΔS300+ΔCp ln(T/T0)。
+\item 绝热恒压总焓守恒：(1−ξ)CpA(T−T0)+ξ[ΔH300+CpB(T−T0)]=0。
+\item 整理得T(ξ)=T0−ΔH300 ξ/[CpA+ΔCp ξ]，注意分母随反应进度改变。
+\item 质量作用Q=ξ/(1−ξ)=K[T(ξ)]，其中K(T)=exp\{−[ΔH(T)−TΔS(T)]/(RT)\}。
+\item 联立求解得到ξ=0.24759765、Tfinal=356.321395K、Kfinal=0.329076126，剩余A=1−ξ，生成B=ξ；热平衡与平衡常数均成立。
+\item 独立重算的相平衡/能量/速率约束残差为：-3.374e-16、-7.276e-17、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.24759765；答案2 = 356.321395；答案3 = 0.329076126；答案4 = 0.75240235\par
+\noindent\textbf{模型前提：}
+题给理想异构化、标准态与反应物热容常数，绝热恒压、混合焓可忽略；没有压力变化。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P47 · 混合电位腐蚀中Tafel阳极和受传质限制阴极的非线性根}
+\noindent\textbf{题目}\par
+某假想金属电极的阳极溶解电流密度ia=ia0 exp(η/ba)，ia0=0.001000 A/cm²，ba=0.05000V；阴极还原分支具有Tafel电流ic,kin=ic0 exp(−η/bc)，ic0=0.005000A/cm²、bc=0.06000V，同时受扩散极限ilim=0.003000A/cm²限制，实际阴极电流模值ic=ic,kin/[1+ic,kin/ilim]。开路混合电位由ia=ic给出。求唯一混合过电位、腐蚀电流密度、阴极动学电流和传质限制比例，并证明为什么不能令阴极永远服从不受限Tafel。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 在任意过电位η，阳极电流ia(η)=ia0 e\textasciicircum{}(η/ba)单调上升。
+\item 阴极动力学模值ic,kin=ic0 e\textasciicircum{}(−η/bc)单调下降。
+\item 质量传递与动力学串联等效给ic=ic,kin/[1+ic,kin/ilim]。
+\item 开路净电流零要求ia(η)=ic(η)，两个函数一增一减，在允许区间唯一交点。
+\item 数值混合过电位ηmix=0.0232581944V。
+\item 腐蚀电流icorr=ia(ηmix)=0.00159227512A/cm²，阴极未受限动学电流=0.0033932947A/cm²。
+\item 传质限制系数icorr/ic,kin=0.469241626；实际阴极电流始终小于ilim，必须满足两分支及扩散条件。
+\item 独立重算的相平衡/能量/速率约束残差为：-1.362e-16、0.000e+0、-1.362e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0232581944；答案2 = 0.00159227512；答案3 = 0.0033932947；答案4 = 0.469241626\par
+\noindent\textbf{模型前提：}
+题设局部Tafel指数与串联传质经验公式，电流为同面积基准，忽略真实钝化和电解液局部pH变化。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
