@@ -32,7 +32,7 @@ function chemquizRecord(x,organic){
  'Derived Chinese introductory question with independently whitelisted answer; excludes source images, notes and third-party measurements.':
  'Chinese teaching prompt generated from MIT-licensed chemistry reference fields; no upstream notes or images copied.'};
  if(organic)source.original_exam_question=false;
- return {schema_version:1,id:x.id,subject:x.subject,topic:x.topic,
+ return {schema_version:1,id:x.id,subject:organic?'organic':x.subject,topic:x.topic,
  level:'introductory_undergraduate',question_type:x.question_type,
  question:x.question,answer:x.answer,quality_status:'awaiting_expert_review',
  publishable:false,source};
