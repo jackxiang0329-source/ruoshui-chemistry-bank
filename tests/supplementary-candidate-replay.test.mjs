@@ -38,9 +38,9 @@ test('answer, option, source pin and blocked McMaster item rights may never drif
 test('reject concealed saved IDs, duplicate IDs and false main library totals',()=>{
  assert.throws(()=>replaySecondary([...rows,rows[0]],{
   ...quality,total_candidates:rows.length+1,by_publishable:{false:rows.length+1},
-  by_content_kind:{study_card:278,exercise_candidate:1438}}),/Duplicate persisted/);
+  by_content_kind:{study_card:278,exercise_candidate:rows.length+1-278}}),/Duplicate persisted/);
  const family=SECONDARY[0],missing=family.generate()[0].id;
  assert.throws(()=>replaySecondary(rows.filter(x=>x.id!==missing),{
   ...quality,total_candidates:rows.length-1,by_publishable:{false:rows.length-1},
-  by_content_kind:{study_card:278,exercise_candidate:1436}}),/missing/);
+  by_content_kind:{study_card:278,exercise_candidate:rows.length-1-278}}),/missing/);
 });
