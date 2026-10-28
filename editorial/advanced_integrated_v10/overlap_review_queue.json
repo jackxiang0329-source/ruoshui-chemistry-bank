@@ -2,8 +2,8 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 52,
-  "preliminary_flags": 29,
+  "current_draft_count": 56,
+  "preliminary_flags": 33,
   "pairs": [
     {
       "new_id": "UC-ADV10-I102",
@@ -177,6 +177,30 @@
       "new_id": "UC-ADV10-P110",
       "prior_id": "UC-ADV9-P84",
       "reason": "v9 P84为旋转圆盘对流扩散极限电流，v10 P110为球形多孔催化剂反应扩散边值问题；虽都涉及传质通量，边界条件及反应项不同，仍需人工方程级比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-I114",
+      "prior_id": "UC-ADV9-I79",
+      "reason": "旧题为晶胞密度空位反演；新题为电中性与氧分压质量作用耦合，仍需比较缺陷模型。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-A114",
+      "prior_id": "UC-ADV9-A82",
+      "reason": "旧题FRET寿命-距离关系；新题静态络合与动态猝灭联合辨识，仍需比较荧光寿命模型。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-O111",
+      "prior_id": "UC-ADV9-O96",
+      "reason": "旧题双峰分子量矩；新题凝胶树枝分支固定点，需比较聚合统计模型。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-P111",
+      "prior_id": "UC-ADV10-P105",
+      "reason": "正规溶液非理想混合与Margules活度热力学结构可能重叠，需重点人工复核。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -422,6 +446,30 @@
       "model_family": "spherical-pellet-first-order-reaction-diffusion-Thiele-effectiveness-radial-BVP",
       "judgement": "pending_human_comparison",
       "screening": "Numerical witness provided; full cross-series model and expert chemistry review not completed."
+    },
+    {
+      "new_id": "UC-ADV10-I114",
+      "model_family": "acceptor-doped-oxide-vacancy-electron-equilibrium-Brouwer-derivative",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numeric witness added; full cross-series core-equation and expert chemistry review pending."
+    },
+    {
+      "new_id": "UC-ADV10-A114",
+      "model_family": "static-binding-dynamic-Stern-Volmer-intensity-lifetime-identifiability",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numeric witness added; full cross-series core-equation and expert chemistry review pending."
+    },
+    {
+      "new_id": "UC-ADV10-O111",
+      "model_family": "Flory-Stockmayer-A2-B3-step-growth-gel-branching-fixed-point",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numeric witness added; full cross-series core-equation and expert chemistry review pending."
+    },
+    {
+      "new_id": "UC-ADV10-P111",
+      "model_family": "Margules-two-suffix-VLE-bubble-pressure-azeotrope-extremum",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numeric witness added; full cross-series core-equation and expert chemistry review pending."
     }
   ]
 }

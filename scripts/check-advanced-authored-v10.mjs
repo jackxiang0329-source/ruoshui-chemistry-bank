@@ -10,6 +10,41 @@ const F=96485.33212;
 const T=280,J=2400,q=Math.exp(-J/(R*T)),Z=1+3*q,p=3*q/Z;
 const w={
 
+"UC-ADV10-I114":()=>{
+ const a=.04,K=1e-4,solve=p=>{let lo=a/2,hi=1;for(let j=0;j<110;j++){let v=(lo+hi)/2;if(v*(2*v-a)**2*Math.sqrt(p)/(1-v)>K)hi=v;else lo=v;}return (lo+hi)/2;};
+ const v1=solve(1),v2=solve(.01),n1=2*v1-a,n2=2*v2-a;
+ for(const [v,n,p] of [[v1,n1,1],[v2,n2,.01]]){assert.ok(v>a/2&&v<1&&n>0);assert.ok(Math.abs(2*v-n-a)<1e-12);assert.ok(Math.abs(v*n*n*Math.sqrt(p)/(1-v)-K)<1e-12);}
+ const slope=p=>{const h=1e-4;return (Math.log(solve(p*Math.exp(h)))-Math.log(solve(p*Math.exp(-h))))/(2*h);};
+ return [v1,n1,v2,n2,n2/n1,v2-v1,slope(1),slope(.01)];
+},
+"UC-ADV10-A114":()=>{
+ const q1=.1,q2=.2,t0=4,t1=10/3,t2=20/7,R1=1.8,R2=2.8;
+ const kd1=(t0/t1-1)/q1,kd2=(t0/t2-1)/q2;assert.ok(Math.abs(kd1-kd2)<1e-12);
+ const ks1=(R1/(t0/t1)-1)/q1,ks2=(R2/(t0/t2)-1)/q2;assert.ok(Math.abs(ks1-ks2)<1e-12&&ks1>0&&kd1>0);
+ const tau=q=>t0/(1+kd1*q),ratio=q=>(1+ks1*q)*(1+kd1*q);
+ return [kd1,ks1,kd1/(t0*1e-9),tau(q1),tau(q2),ratio(q1),ratio(q2),1/(1+ks1*q2),tau(q2)/t0,1/ratio(q2)];
+},
+"UC-ADV10-O111":()=>{
+ const p=.8,pc=1/Math.sqrt(2);let ua=0,ub=0;
+ for(let j=0;j<1500;j++){const nextA=1-p+p*ub*ub,nextB=1-p+p*ua;ua=nextA;ub=nextB;}
+ assert.ok(p>pc&&ua>0&&ua<1&&ub>0&&ub<1);
+ assert.ok(Math.abs(ua-(1-p+p*ub*ub))<1e-12&&Math.abs(ub-(1-p+p*ua))<1e-12);
+ const sa=ua*ua,sb=ub**3,ga=1-sa,gb=1-sb,gm=(300*ga+300*gb)/600;
+ assert.ok(Math.abs(600*(1-gm)-300*sa-300*sb)<1e-10);
+ return [pc,ua,ub,sa,sb,ga,gb,gm];
+},
+"UC-ADV10-P111":()=>{
+ const A=1.2,s1=60,s2=40;
+ const calc=x=>{const g1=Math.exp(A*(1-x)**2),g2=Math.exp(A*x*x),p1=x*g1*s1,p2=(1-x)*g2*s2,P=p1+p2,y=p1/P;assert.ok(P>0&&y>0&&y<1);return [g1,g2,P,y,(y/(1-y))*((1-x)/x)];};
+ const first=calc(.35),second=calc(.8);let lo=.01,hi=.99;
+ for(let j=0;j<110;j++){const m=(lo+hi)/2;if(calc(m)[3]-m>0)lo=m;else hi=m;}
+ const x=(lo+hi)/2,az=calc(x),h=1e-4;
+ assert.ok(Math.abs(az[3]-x)<1e-12&&az[2]>calc(x-h)[2]&&az[2]>calc(x+h)[2]);
+ assert.ok(Math.abs(x*(-2*A*(1-x))+(1-x)*2*A*x)<1e-12);
+ return [first[0],first[1],first[2],first[3],first[4],x,az[2],second[2],second[3],second[4]];
+},
+
+
 "UC-ADV10-I113":()=>{
  const R=8.314462618,F=96485.33212,T=298.15,K=Math.exp(F*(.47-.43)/(R*T));
  const eq=x=>(.002+2*x)**2-K*(.012-x)*(.008-x);
