@@ -28,15 +28,18 @@ const COVERED={
 const TODO={};
 const sha256=s=>createHash('sha256').update(s).digest('hex');
 export function buildPending(rows,quality,coverage){
+ const added=coverage?.main_new_original_general_chemistry_inverse_replayed||0;
+ if(!Number.isInteger(added)||added<0||added>120)throw Error('Unsafe chemistry replay extension');
  if(!Array.isArray(rows)||rows.length!==quality?.total_candidates||
   coverage?.main_candidate_records!==rows.length||
-  coverage?.main_unique_candidate_records_machine_replayed!==1715||
-  coverage?.main_exercise_candidates!==1437||
+  coverage?.main_unique_candidate_records_machine_replayed!==1715+added||
+  coverage?.main_exercise_candidates!==1437+added||
   coverage?.main_study_cards!==278||
   coverage?.main_candidate_records_not_yet_machine_replayed!==0||
   coverage?.confirmed_official_exam_ready!==0)
   throw Error('Remaining source audit queue based on stale or unapproved corpus');
- const expected={...COVERED,...TODO};
+ const expected={...COVERED,...TODO,
+  'jackxiang0329-source/ruoshui-chemistry-bank':304+added};
  if(Object.keys(quality.source_counts||{}).length!==Object.keys(expected).length||
    Object.entries(expected).some(([name,n])=>quality.source_counts[name]!==n))
   throw Error('New or changed chemistry source needs explicit audit family classification');
@@ -70,7 +73,7 @@ export function buildPending(rows,quality,coverage){
    candidate_json:'data/candidates/'+q.id+'.json'
   });
  }
- if(covered.size!==1715||items.length!==0||seen.size!==1715||
+ if(covered.size!==rows.length||items.length!==0||seen.size!==rows.length||
   Object.entries(TODO).some(([name,count])=>counts[name]!==count))
   throw Error('Expected 1715 covered and 5 uncovered with exact source taxonomy');
  items.sort((a,b)=>(TODO[b.source_repository]-TODO[a.source_repository])||
@@ -85,11 +88,12 @@ export function buildPending(rows,quality,coverage){
   pending_candidate_ids_sha256:sha256(items.map(x=>x.candidate_id).sort().join('\n')),
   external_scientific_human_approvals:0,newly_approved_for_exam:0,
   review_queue:items,
-  note:'Editorial checklist only. It does NOT count these 5 source records as verified or ready; each still needs actual source regeneration, chemistry expert assessment, semantic/template deduplication and item rights where relevant.'};
+  note:'Zero pending source-replay candidates. 1715 historic records plus added original candidates have matched stored source; mathematical agreement is not expert chemistry correctness, individual rights approval or publication permission.'};
 }
 export function markdown(report){
- const lines=['# 大学化学题库：尚未覆盖的 0 份主库候选题','','- 来源落盘复核已覆盖 1715/1715；此处列出剩余 0 份练习候选，**没有一份因为在本清单中就获得科学专家批准**。','',
- '主库文件复核覆盖率已到 1715/1715；但专家科学审定与逐题权利确认仍未完成。','',
+ const count=report.already_source_replayed_candidate_records,total=report.main_candidates;
+ const lines=['# 大学化学题库：尚未覆盖的 '+report.pending_source_replay_candidate_records+' 份主库候选题','','- 来源落盘复核已覆盖 '+count+'/'+total+'；此处列出剩余 '+report.pending_source_replay_candidate_records+' 份练习候选，**没有一份因此获得专家批准**。','',
+ '主库文件来源复核覆盖率 '+count+'/'+total+'；科学审定和逐题权利确认仍未完成。','',
  'Muza 原始五题已核对来源，q2、q4、q5 的科学条件仍需人工审核，见 [Muza 五题审核报告](main_muza_pinned_source_replay.json)。','',
  '| 来源 | 未核验记录数 |','|---|---:|'];
  for(const x of report.pending_source_groups)lines.push('| '+x.source+' | '+x.count+' |');
