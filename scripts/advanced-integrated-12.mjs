@@ -124,6 +124,10 @@ const preamble=String.raw`\documentclass[UTF8,openany,11pt,a4paper]{ctexbook}
 守恒检验、近似适用范围以及易错点。个别题目使用明确标记的理想化模型或假想体系；
 这不是现实实验结果。机器脚本可以重算表内结果，仍需人工科学审阅。
 `;
+// Typeset mhchem arrows with required lexical spaces without altering canonical stored question IDs.
+const latexize=s=>s.replaceAll('M(s)+N^{2+}(aq)<=>M^{2+}(aq)+N(s)','M(s) + N^{2+}(aq) <=> M^{2+}(aq) + N(s)')
+ .replaceAll('CO3^{2-}->HCO3-','CO3^{2-} -> HCO3-')
+ .replaceAll('A->B->C','A -> B -> C');
 export function buildTex(){
  let t=preamble;
  t+=String.raw`\part{题目册}`+'\n';
@@ -131,7 +135,7 @@ export function buildTex(){
   t+=String.raw`\chapter{`+name+'}\n';
   for(const p of CASES.filter(q=>q.subject===subject)){
    t+=String.raw`\section{`+p.id+' \\quad '+p.title+'}\n';
-   t+=p.question_tex+'\n'+String.raw`\sciencewarn{`+esc(p.assumptions)+'}\n';
+   t+=latexize(p.question_tex)+'\n'+String.raw`\sciencewarn{`+esc(p.assumptions)+'}\n';
   }
  }
  t+=String.raw`\cleardoublepage\part{严格解答与计算验证}`+'\n';
@@ -139,7 +143,7 @@ export function buildTex(){
   t+=String.raw`\chapter{`+name+'：解答}\n';
   for(const p of CASES.filter(q=>q.subject===subject)){
    const {numbers,witnesses}=verifyCase(p);
-   t+=String.raw`\section{`+p.id+' \\quad '+p.title+'}\n'+p.solution_tex+'\n';
+   t+=String.raw`\section{`+p.id+' \\quad '+p.title+'}\n'+latexize(p.solution_tex)+'\n';
    t+=String.raw`\begin{reviewnote}`+'\n';
    t+='本题计算机独立数值见证：'+numbers.map((v,i)=>String(i+1)+'：'+Number(v).toPrecision(8)).join('；')+'。\n';
    t+='逆向方程最大相对残差：'+Math.max(...witnesses).toExponential(3)+'。\n';
