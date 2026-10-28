@@ -4,7 +4,7 @@ import {readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {join,dirname,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
-export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction,extra){
+export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction,extra,muza){
  const whole=main?.total_candidates,exercise=main?.by_content_kind?.exercise_candidate,
   card=main?.by_content_kind?.study_card,raw=external?.raw_staged_candidates;
  if(!Number.isInteger(whole)||!Number.isInteger(exercise)||!Number.isInteger(card)||
@@ -94,7 +94,14 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   main?.source_counts?.['ChemTrain/pka-learn']!==20||
   main?.source_counts?.['ChemTrain/reactivity-learn']!==20||
   main?.source_counts?.['ChemTrain/photoredox-learn']!==18||
-  whole<1710||exercise<1432||card!==278)
+  muza?.source_repository!=='MuzaPro/Organic-Chemistry-Quiz-JS'||
+  muza?.matched_persisted_source_exercises!==5||
+  muza?.unresolved_science_condition_concerns!==3||
+  muza?.scientifically_qualified_for_exam!==0||
+  muza?.source_only_licensing_evidence_not_third_party_item_proof!==true||
+  muza?.human_expert_approved!==0||muza?.exam_ready!==0||
+  main?.source_counts?.['MuzaPro/Organic-Chemistry-Quiz-JS']!==5||
+  whole<1715||exercise<1437||card!==278)
   throw Error('Unsafe or inconsistent chemistry coverage sources: '+
    JSON.stringify({
     main_total:whole,main_exercises:exercise,main_cards:card,
@@ -129,12 +136,14 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   main_previous_stored_replay_records:386,
   main_reaction_study_cards_replayed:reaction.matched_stored_study_cards,
   main_additional_source_exercises_replayed:extra.additional_source_replayed,
-  main_exercise_candidates_replayed:1432,
-  main_exercise_candidates_not_replayed:exercise-1432,
+  main_muza_persisted_source_replayed:muza.matched_persisted_source_exercises,
+  main_muza_science_condition_concerns:muza.unresolved_science_condition_concerns,
+  main_exercise_candidates_replayed:1437,
+  main_exercise_candidates_not_replayed:exercise-1437,
   main_study_cards_not_replayed:card-278,
-  main_unique_candidate_records_machine_replayed:1710,
-  main_candidate_records_not_yet_machine_replayed:whole-1710,
-  main_stored_replay_coverage_fraction:Number((1710/whole).toFixed(6)),
+  main_unique_candidate_records_machine_replayed:1715,
+  main_candidate_records_not_yet_machine_replayed:whole-1715,
+  main_stored_replay_coverage_fraction:Number((1715/whole).toFixed(6)),
   main_replay_cannot_establish_chemistry_truth:true,
   main_replay_requires_expert_science_and_item_rights_review:true,
   main_original_numeric_stored_coverage_fraction:Number((304/whole).toFixed(6)),
@@ -176,7 +185,8 @@ export function run(){
  const daily=JSON.parse(readFileSync(join(ROOT,'harvest/main_daily_mcq_stored_replay.json'),'utf8'));
  const reaction=JSON.parse(readFileSync(join(ROOT,'harvest/main_reaction_card_stored_replay.json'),'utf8'));
  const extra=JSON.parse(readFileSync(join(ROOT,'harvest/main_additional_185_source_replay.json'),'utf8'));
- const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily,reaction,extra),
+ const muza=JSON.parse(readFileSync(join(ROOT,'harvest/main_muza_pinned_source_replay.json'),'utf8'));
+ const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily,reaction,extra,muza),
   path=join(ROOT,'harvest/coverage_report.json');
  const body=JSON.stringify(summary,null,2)+'\n';
  if(!existsSync(path)||readFileSync(path,'utf8')!==body)writeFileSync(path,body);

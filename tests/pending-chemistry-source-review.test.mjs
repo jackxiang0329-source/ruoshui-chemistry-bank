@@ -8,18 +8,18 @@ const rows=readdirSync(dir).filter(x=>x.endsWith('.json')).sort()
 const read=x=>JSON.parse(readFileSync(new URL('../harvest/'+x,import.meta.url),'utf8'));
 const quality=read('quality_audit.json'),
 coverage={...read('coverage_report.json'),
- main_unique_candidate_records_machine_replayed:1710,
- main_candidate_records_not_yet_machine_replayed:5};
-test('5 unreviewed exercises are explicitly separated from 1710 source replays',()=>{
+ main_unique_candidate_records_machine_replayed:1715,
+ main_candidate_records_not_yet_machine_replayed:0};
+test('5 unreviewed exercises are explicitly separated from 1715 source replays',()=>{
  const q=buildPending(rows,quality,coverage);
- assert.equal(q.pending_source_replay_candidate_records,5);
- assert.equal(q.pending_is_exercise_candidates,5);
+ assert.equal(q.pending_source_replay_candidate_records,0);
+ assert.equal(q.pending_is_exercise_candidates,0);
  assert.equal(q.pending_is_study_cards,0);
- assert.equal(q.already_source_replayed_candidate_records,1710);
- assert.equal(q.pending_source_groups.reduce((n,x)=>n+x.count,0),5);
- assert.equal(new Set(q.review_queue.map(x=>x.candidate_id)).size,5);
+ assert.equal(q.already_source_replayed_candidate_records,1715);
+ assert.equal(q.pending_source_groups.reduce((n,x)=>n+x.count,0),0);
+ assert.equal(new Set(q.review_queue.map(x=>x.candidate_id)).size,0);
  assert.ok(q.review_queue.every(x=>x.approved_for_publication===false));
- assert.ok(markdown(q).includes('MuzaPro/Organic-Chemistry-Quiz-JS'));
+ assert.ok(markdown(q).includes('main_muza_pinned_source_replay.json'));
  assert.ok(markdown(q).includes('](../data/candidates/'));
  assert.ok(!markdown(q).includes('](../../data/candidates/'));
 });
@@ -30,5 +30,5 @@ test('changed source count, publication flag and missing source records block re
  const wrong=rows.map((x,i)=>i===0?{...x,publishable:true}:x);
  assert.throws(()=>buildPending(wrong,quality,coverage),/already published/);
  assert.throws(()=>buildPending(rows,quality,{...coverage,
-  main_unique_candidate_records_machine_replayed:1715}),/stale/);
+  main_unique_candidate_records_machine_replayed:1700}),/stale/);
 });

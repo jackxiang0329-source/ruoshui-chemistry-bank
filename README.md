@@ -214,3 +214,8 @@
 
 - [六组固定来源的 185 道练习重生成与逐字段审核](harvest/main_additional_185_source_replay.json)：MIT chemquiz 67；CC BY 4.0 ChemTrain Radical 38、PG Learn 22、pKa Learn 20、Reactivity Learn 20、Photoredox Learn 18。所有复核均未自动批准科学准确性、第三方逐题许可或正式出卷。
 - [统一覆盖统计](harvest/coverage_report.json)更新为 **1710/1715 已保存候选记录通过来源/生成器一致性比对**，包含 **1432 份练习候选**及 **278 份学习卡**，尚有 **5 份 MuzaPro 有机问题**在[单独待审队列](harvest/main_pending_source_replay_queue.md)。正式批准组卷数量为 **0**。
+
+## 2026-10-28：1715/1715 份主库记录完成来源一致性核验
+
+- [Muza 五道题来源与答案核验](harvest/main_muza_pinned_source_replay.json)核对 Git blob SHA、源题答映射和 MIT 许可说明。q2、q4、q5 分别保留 SN1 反应条件、酯化催化剂、格氏反应后处理的科学疑点。
+- [统一覆盖统计](harvest/coverage_report.json)为 **1437 份练习候选 + 278 份学习卡 = 1715 份主库记录，落盘来源一致性检查 1715/1715**。来源未复核项已清零，但这不是独立的科学专家审定、逐题版权核权或语义重复审定；正式组卷批准依然 **0**。

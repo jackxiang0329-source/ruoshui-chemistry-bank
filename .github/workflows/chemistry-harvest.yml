@@ -334,12 +334,12 @@ jobs:
         run: node scripts/audit-introqchem-key-reconciliation.mjs
       - name: Generate quantum source reconciliation Chinese TeX in research quarantine
         run: node scripts/build-quantum-source-review-tex.mjs
+      - name: Reconcile five Muza source-locked original problems with prior chemistry caveats
+        run: node scripts/audit-muza-pinned-source.mjs
       - name: Report separate raw OER and main candidate totals without double counting
         run: node scripts/report-chemistry-coverage.mjs
       - name: Recheck 185 previously uncovered chemistry candidate files
         run: node scripts/audit-additional-chemistry-sources.mjs
-      - name: Reconcile five Muza source-locked original problems with prior chemistry caveats
-        run: node scripts/audit-muza-pinned-source.mjs
       - name: Create editorial review queue of remaining 190 source-unreplayed exercises
         run: node scripts/build-pending-chemistry-source-review.mjs
       - name: Commit only real additions or changes
