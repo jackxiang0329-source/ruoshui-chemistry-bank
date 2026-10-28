@@ -34,3 +34,5 @@ jobs:
         run: node scripts/check-advanced-authored-v8.mjs
       - name: Verify ninth-series one hundred worked problems and numerical witness checks
         run: node scripts/check-advanced-authored-v9.mjs
+      - name: Verify ongoing tenth-series complete answer vectors
+        run: node scripts/check-advanced-authored-v10.mjs
