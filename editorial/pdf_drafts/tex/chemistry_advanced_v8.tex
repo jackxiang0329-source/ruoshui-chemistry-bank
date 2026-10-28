@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第8辑 (40题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第8辑 (60题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -838,6 +838,408 @@ HOx仅假想氧化态质子物种，Red不质子化，忽略活度效应。\par
 答案1 = 1；答案2 = 0.5；答案3 = 0.9；答案4 = 320\par
 \noindent\textbf{模型前提：}
 理想定温均相有机体系，所有反应机理仅限题列模式。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-O68 · 不等官能团缩聚Carothers平均链长与极限}
+\noindent\textbf{题目}\par
+假想理想双官能A-A与B-B缩聚体系，两类反应官能团初始数比r=N\_B/N\_A=0.9000，少数B官能团转化率p=0.9200，只形成A−B键、无环化。求数均聚合度、剩余未反应官能团数相对N\_A、如果p→1的最大数均聚合度并分析等当量近似为什么在这里失效。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 初始A官能团归一为1，B为r，形成键的当量为rp。
+\item 剩余总官能团相对初始A为1+r−2rp=0.244。
+\item 不等当量Carothers公式DPn=(1+r)/(1+r−2rp)=7.78688525。
+\item p→1时DPn,max=(1+r)/(1−r)=19。
+\item 若误用等当量DPn=1/(1−p)，将忽略未反应过量A端基，预测链长过高。
+\item 检查反应进度、官能团或产物的物料守恒，以及给定动力学方程的可逆性和边界。
+\item 数值重算残差：0.00e+0、0.00e+0、-1.11e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 7.78688525；答案2 = 19；答案3 = 0.244；答案4 = 0.172\par
+\noindent\textbf{模型前提：}
+仅题设理想有机网络，仍需实际机理和人工专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-O69 · 双向有机异构化的有限时间成分与平衡上限}
+\noindent\textbf{题目}\par
+理想A⇌B双向一级异构化，正向kf=0.08000min\textasciicircum{}-1、逆向kr=0.03000min\textasciicircum{}-1，初始纯A=1.000mol，无其它反应。求8.000min后A/B分数、长期平衡B比例及达到其平衡B含量95\%所需时间，证明初始转化比热力学平衡值低的原因。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由A+B=1，db/dt=kf(1−b)−krb。
+\item 总体速率λ=kf+kr=0.11min\textasciicircum{}-1，平衡B分数b∞=kf/λ=0.727272727。
+\item 初始b=0的积分解b(t)=b∞(1−e\textasciicircum{}−λt)。
+\item 8min时B=0.425612428mol，A=0.574387572mol。
+\item 达到95\%平衡B的时间t95=ln20/λ=27.2339298min，与平衡分数本身不同。
+\item 检查反应进度、官能团或产物的物料守恒，以及给定动力学方程的可逆性和边界。
+\item 数值重算残差：0.00e+0、0.00e+0、6.94e-18。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.425612428；答案2 = 0.574387572；答案3 = 0.727272727；答案4 = 27.2339298\par
+\noindent\textbf{模型前提：}
+仅题设理想有机网络，仍需实际机理和人工专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-O70 · 有机均相催化剂与抑制剂竞争络合的活性态守恒}
+\noindent\textbf{题目}\par
+催化剂Cat总浓度0.004000M、自由底物[S]=0.02000M、Ks=120L/mol、自由抑制剂[I]=0.01000M、Ki=60L/mol，三种催化剂态Cat/CatS/CatI互斥，只有CatS以kcat=0.500s\textasciicircum{}-1产生P。求三态浓度、产物初速和无抑制剂基准初速、两者比值；不能把两个配位结合率分别按总Cat计算。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 金属中心总量Cat\_tot=Cat(1+KsS+KiI)。
+\item 自由Cat=0.001M，活性CatS=0.0024M。
+\item 抑制态CatI=0.0006M，三态和Cat\_tot。
+\item 产物初速v=kcatCatS=0.0012M/s。
+\item 无I时v0=kcatCat\_totKsS/(1+KsS)=0.00141176471，保留比=0.85。
+\item 检查反应进度、官能团或产物的物料守恒，以及给定动力学方程的可逆性和边界。
+\item 数值重算残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.001；答案2 = 0.0024；答案3 = 0.0006；答案4 = 0.0012；答案5 = 0.85\par
+\noindent\textbf{模型前提：}
+仅题设理想有机网络，仍需实际机理和人工专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-O71 · 两段恒温热解的Arrhenius积分与产物增量}
+\noindent\textbf{题目}\par
+假想一级有机热解A→P，指前因子1.00×10\textasciicircum{}9s\textasciicircum{}-1、Ea=65.00kJ/mol，初态A=1.000mol。先在300.0K保持30.00s，然后瞬时升到330.0K保持10.00s，阶段内温度恒定。求两个速率常数、终态底物/产物mol、第二段生成的产物占总生成量比例，并解释为什么平均温度下使用一条等效速率通常错误。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两个阶段k1=0.0048163234s\textasciicircum{}-1、k2=0.0514706524s\textasciicircum{}-1。
+\item 累积反应量指数H=k1t1+k2t2。
+\item 总剩余A=e\textasciicircum{}−H=0.517266933mol，产物P=1−n=0.482733067mol。
+\item 第一段剩余A1=e\textasciicircum{}−k1t1=0.865463825mol。
+\item 第二段产物量A1−n，占总生成比例=0.721303171，不可用算术平均温度代替指数速率积分。
+\item 检查反应进度、官能团或产物的物料守恒，以及给定动力学方程的可逆性和边界。
+\item 数值重算残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0048163234；答案2 = 0.0514706524；答案3 = 0.517266933；答案4 = 0.482733067；答案5 = 0.721303171\par
+\noindent\textbf{模型前提：}
+仅题设理想有机网络，仍需实际机理和人工专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-O72 · 单步有机分解中产物更强吸收造成的动态信号反向}
+\noindent\textbf{题目}\par
+有机底物S按一级k=0.04000min\textasciicircum{}-1转化成P，初始[S]=0.002000M、[P]=0。监测波长下底物和产物的消光系数分别600与1400 L/(mol cm)，光程1cm。求10.00min后S/P浓度、总吸光度、相对初始吸光度倍数与瞬时吸光度变化率，并说明为什么光谱信号增加不代表底物浓度增加。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由S(t)=C0e\textasciicircum{}−kt得剩余S=0.00134064009M。
+\item P=C0−S=0.000659359908M。
+\item 吸光A=εS S+εP P=1.72748793。
+\item 初始吸光A0=εS C0=1.2，比值=1.43957327。
+\item 信号变化率A′=(εP−εS)kS=0.0429004829每min，虽S下降但P吸收更强。
+\item 检查反应进度、官能团或产物的物料守恒，以及给定动力学方程的可逆性和边界。
+\item 数值重算残差：0.00e+0、0.00e+0、-1.11e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00134064009；答案2 = 0.000659359908；答案3 = 1.72748793；答案4 = 1.43957327；答案5 = 0.0429004829\par
+\noindent\textbf{模型前提：}
+仅题设理想有机网络，仍需实际机理和人工专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{物理化学}
+\addcontentsline{toc}{subsection}{第8辑 / 物理化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P58 · 第二维里系数非理想气体的逸度与化学势联立修正}
+\noindent\textbf{题目}\par
+一种假想气体在320.0K、120.0kPa下的第二维里体积系数B=−2.000×10\textasciicircum{}-4m³/mol，采用压力截断的低密度模型Z≈1+BP/(RT)、lnφ≈BP/(RT)，R=8.314462618J/(mol K)。求压缩因子、逸度系数、逸度与相对理想气体的摩尔化学势偏差，并检查|BP/(RT)|足够小这一近似必要条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 无量纲偏差ε=BP/(RT)=-0.00902042663。
+\item 压缩因子Z=1+ε=0.990979573。
+\item 逸度系数φ=exp(ε)=0.991020135。
+\item 逸度f=φP=118922.416Pa。
+\item 化学势偏差Δμ=RT lnφ=BP=-24J/mol，低密度截断需要|ε|≪1。
+\item 核对热力学状态函数、能量物料与边界约束，避免混淆标准态和体积/压力单位。
+\item 由给定模型独立回算数值残差：4.510e-17、2.082e-17、-5.329e-14。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.990979573；答案2 = 0.991020135；答案3 = 118922.416；答案4 = -24\par
+\noindent\textbf{模型前提：}
+只采用题定理想或截断近似物理模型，未接受专家真实化学适用性审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P59 · 正则液体非理想混合的自由能曲率与失稳区间}
+\noindent\textbf{题目}\par
+二元液体正则溶液模型g=RT[xlnx+(1−x)ln(1−x)]+Ωx(1−x)，Ω=7000J/mol，T=320K。求自旋线两个组成端点、临界共溶温度、x=0.5000时g''曲率及物理稳定性；说明自旋线反映局部失稳而相共存需要另外求公切线。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 自由能二阶导g''=RT/[x(1−x)]−2Ω。
+\item 自旋线方程x(1−x)=RT/(2Ω)。
+\item 物理两个根xlow=0.255142613与xhigh=0.744857387。
+\item 临界温度Tc=Ω/(2R)=420.953243K。
+\item x=.5时g''=-3357.48785J/mol，小于0意味着在均匀状态下局部自发失稳。
+\item 核对热力学状态函数、能量物料与边界约束，避免混淆标准态和体积/压力单位。
+\item 由给定模型独立回算数值残差：2.776e-17、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.255142613；答案2 = 0.744857387；答案3 = 420.953243；答案4 = -3357.48785\par
+\noindent\textbf{模型前提：}
+只采用题定理想或截断近似物理模型，未接受专家真实化学适用性审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P60 · 反应热容差影响下的van't Hoff平衡温度修正}
+\noindent\textbf{题目}\par
+假想理想异构化A⇌B，T0=300K时标准反应焓−30.00kJ/mol、熵−90.00J/(mol K)，反应热容差ΔCp=+50.00J/(mol K)且在300至360K间恒定。求300K与360K无量纲K、360K纯A起始平衡B分数及360K的ΔH、ΔS，并解释仅把ΔCp加到ΔH而不加到熵会违反热力学一致性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 热容积分ΔH(T)=ΔH0+ΔCp(T−T0)，得ΔH360=-27000J/mol。
+\item 同理ΔS(T)=ΔS0+ΔCp ln(T/T0)，得ΔS360=-80.8839222J/(mol K)。
+\item ΔG(T)=ΔH(T)−TΔS(T)，K(T)=exp(−ΔG/(RT))。
+\item 计算K300=3.32917175，K360=0.492789499。
+\item 一对一理想转化纯A平衡B分数K/(1+K)=0.330113187，必须同时满足ΔG与平衡商。
+\item 核对热力学状态函数、能量物料与边界约束，避免混淆标准态和体积/压力单位。
+\item 由给定模型独立回算数值残差：0.000e+0、0.000e+0、2.220e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 3.32917175；答案2 = 0.492789499；答案3 = 0.330113187；答案4 = -27000；答案5 = -80.8839222\par
+\noindent\textbf{模型前提：}
+只采用题定理想或截断近似物理模型，未接受专家真实化学适用性审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P61 · 两有限储液池溶质混合的Gibbs自由能与最大可逆功}
+\noindent\textbf{题目}\par
+298.15K两份理想无反应水相储液池体积V1=1.000L、V2=2.000L，溶质浓度c1=0.08000M、c2=0.02000M。两池相连后完全均匀混合，体积可加，无溶剂混合标准项变化。求最终浓度、溶质混合Gibbs自由能差和理论最大可提取可逆非膨胀功，并从凸性判断ΔG符号，避免把初始两池的标准态项重复计入。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 元素守恒总溶质mol为c1V1+c2V2=0.12。
+\item 末态浓度cf=(c1V1+c2V2)/(V1+V2)=0.04M。
+\item 理想混合自由能G=RTΣn\_i(lnc\_i/c°−1)，前后相同总n使标准态项抵消。
+\item 因此ΔG=RT[(n1+n2)ln cf−n1lnc1−n2lnc2]=-68.731283J。
+\item 可逆最大功Wmax=−ΔG=68.731283J；均匀化降低化学势梯度，凸性保证ΔG≤0。
+\item 核对热力学状态函数、能量物料与边界约束，避免混淆标准态和体积/压力单位。
+\item 由给定模型独立回算数值残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.04；答案2 = -68.731283；答案3 = 68.731283；答案4 = 0.12\par
+\noindent\textbf{模型前提：}
+只采用题定理想或截断近似物理模型，未接受专家真实化学适用性审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P62 · 微孔平板稳态扩散与电极反应电流耦合的通量匹配}
+\noindent\textbf{题目}\par
+假想电活性物质从体相浓度0.002000mol/L通过厚度L=0.5000mm的平板微孔膜到达完全消耗的电极，扩散系数D=1.000×10\textasciicircum{}-9m²/s，面积A=1.00×10\textasciicircum{}-4m²。膜内稳态无反应、表面c=0，电极一分子转移1电子，F=96485.33212C/mol。求通量、每秒输送mol、电极极限电流及若面积增加两倍的电流，并说明必须把mol/L换算为SI mol/m³。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由于两侧浓度固定，通量J=D(cbulk−csurface)/L。
+\item 体相浓度0.002000mol/L=2.000mol/m³。
+\item 数值J=0.000004mol/(m²s)。
+\item 每秒mol通量n'=JA=4e-10mol/s。
+\item 一电子极限电流I=F n'=0.0000385941328A，面积翻倍则I变成0.0000771882657A。
+\item 核对热力学状态函数、能量物料与边界约束，避免混淆标准态和体积/压力单位。
+\item 由给定模型独立回算数值残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 4e-06；答案2 = 4e-10；答案3 = 3.85941328e-05；答案4 = 7.71882657e-05\par
+\noindent\textbf{模型前提：}
+只采用题定理想或截断近似物理模型，未接受专家真实化学适用性审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P63 · 长链高聚物溶液Flory–Huggins自旋分界非对称性}
+\noindent\textbf{题目}\par
+理想高聚物溶液Flory–Huggins混合自由能g/(RT)=φlnφ/N1+(1−φ)ln(1−φ)/N2+χφ(1−φ)，N1=1、N2=100、χ=0.8000，φ为溶剂体积分数。求两自旋边界φ、临界φ、临界χ，并在φ=.5000判断局部均相是否稳定，说明长链混合熵较低导致临界组成明显偏离对称1/2。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 自由能曲率g''/(RT)=1/(N1φ)+1/[N2(1−φ)]−2χ。
+\item 临界条件g''=g'''=0得φc=√N2/(√N1+√N2)=0.909090909。
+\item 临界χc=.5(1/√N1+1/√N2)²=0.605。
+\item χ=.8>χc，两自旋线根φlow=0.635916386、φhigh=0.982833614。
+\item 在φ=.5曲率g''/(RT)=0.42，符号负表局部不稳定；共存线需共同切线方程。
+\item 检查系统全热量、物料、化学势或压力条件，并证明所选求根分支符合物理定义域。
+\item 重新计算各项的归一化数值残差：2.220e-16、4.441e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.635916386；答案2 = 0.982833614；答案3 = 0.909090909；答案4 = 0.605；答案5 = 0.42\par
+\noindent\textbf{模型前提：}
+按题设稳态或相平衡模型计算，未经专家证明现实操作点可实现。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P64 · 有限表面结合位点的Langmuir吸附与储液耗竭}
+\noindent\textbf{题目}\par
+封闭水相分析物M总量0.003000M，溶液中固定吸附剂有效位点浓度0.006000M，与M按1:1形成SM，常数K=500L/mol。忽略膜面积、体积变化及旁路吸附。求自由M、自由吸附位点、已吸附M、占位率和自由分析物比例；必须同时满足两种物料守恒而非使用无限浓度库的经典Langmuir简单占位公式。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设游离位点s，自由M=m=Ctot/(1+Ks)。
+\item 已结合量x=Ctot−m，且位点守恒Stot=s+x。
+\item 单变量方程s+Ctot Ks/(1+Ks)=Stot，严格递增有唯一正根。
+\item 解得游离s=0.004M，m=0.001M，结合物x=0.002M。
+\item 位点占用率x/Stot=0.333333333，分析物游离率m/Ctot=0.333333333。
+\item 检查系统全热量、物料、化学势或压力条件，并证明所选求根分支符合物理定义域。
+\item 重新计算各项的归一化数值残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.004；答案2 = 0.001；答案3 = 0.002；答案4 = 0.333333333；答案5 = 0.333333333\par
+\noindent\textbf{模型前提：}
+按题设稳态或相平衡模型计算，未经专家证明现实操作点可实现。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P65 · 逆流换热器效能传热与两流体熵产生联合账本}
+\noindent\textbf{题目}\par
+理想稳态逆流换热器的热侧热容流率Ch=500W/K、入口430K，冷侧Cc=300W/K、入口300K，总UA=220W/K、无外界热损。按逆流NTU效能ε=[1−e\textasciicircum{}(−NTU(1−Cr))]/[1−Cr e\textasciicircum{}(−NTU(1−Cr))]求实际热交换功率、两侧出口温度和总熵产生率，确认两个出口温度合理及熵产生不得为负。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Cmin=300W/K、Cmax=500W/K，Cr=.6，NTU=UA/Cmin=0.733333333。
+\item 逆流效能ε=0.460108554，热功率Q=εCmin(430−300)=17944.2336W。
+\item 热侧出口Tho=430−Q/500=394.111533K。
+\item 冷侧出口Tco=300+Q/300=359.814112K。
+\item 熵产生Sgen=500ln(Tho/430)+300ln(Tco/300)=10.9658897W/K，必须非负。
+\item 检查系统全热量、物料、化学势或压力条件，并证明所选求根分支符合物理定义域。
+\item 重新计算各项的归一化数值残差：2.027e-16、2.027e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.733333333；答案2 = 0.460108554；答案3 = 17944.2336；答案4 = 394.111533；答案5 = 359.814112；答案6 = 10.9658897\par
+\noindent\textbf{模型前提：}
+按题设稳态或相平衡模型计算，未经专家证明现实操作点可实现。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P66 · 三组分等温闪蒸的Rachford–Rice非线性气液分配}
+\noindent\textbf{题目}\par
+三组分总进料1.000mol，整体组成为z=(0.5000,0.3000,0.2000)，气液平衡系数K\_i=y\_i/x\_i分别为(2.400,0.9000,0.3000)，恒温恒压且K已独立标定。求汽化分数β、液相及气相三种组分摩尔分数、总气相和液相mol，证明只有当Rachford–Rice函数在0与1间异号时才存在两相共存根。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 总体组分衡算z\_i=(1−β)x\_i+βy\_i，且y\_i=K\_i x\_i。
+\item 于是x\_i=z\_i/[1+β(K\_i−1)]、y\_i=K\_i x\_i。
+\item Rachford–Rice函数g(β)=Σz\_i(K\_i−1)/[1+β(K\_i−1)]，导数<0。
+\item 在β=0与1处g异号，故根唯一β=0.770970939。
+\item 液相x=0.240458682、0.32506128、0.434480038；气相y=0.577100837、0.292555152、0.130344011，两个向量各自归一。
+\item 检查系统全热量、物料、化学势或压力条件，并证明所选求根分支符合物理定义域。
+\item 重新计算各项的归一化数值残差：2.220e-16、-2.220e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.770970939；答案2 = 0.240458682；答案3 = 0.32506128；答案4 = 0.434480038；答案5 = 0.577100837；答案6 = 0.292555152；答案7 = 0.130344011\par
+\noindent\textbf{模型前提：}
+按题设稳态或相平衡模型计算，未经专家证明现实操作点可实现。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P67 · 有限热库驱动可逆热机的终温和最大可输出功}
+\noindent\textbf{题目}\par
+两个孤立恒热容热库分别初温360K与300K、热容60.00J/K和100.0J/K，中间运行一台完全可逆理想热机直到两库同温，外部绝热。求可逆终温、最大轴功和直接绝热接触不取功的最终温度，推导为什么可逆过程的熵守恒终温是加权几何平均而非算术平均。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 可逆且两热库外部绝热，总熵变Chln(Tf/Th)+Ccln(Tf/Tc)=0。
+\item 解得Tf=exp[(ChlnTh+CclnTc)/(Ch+Cc)]=321.228613K。
+\item 由总内能下降得热机最大功W=ChTh+CcTc−(Ch+Cc)Tf=203.421983J。
+\item 若直接接触不输出功，则能量守恒给Td=(ChTh+CcTc)/(Ch+Cc)=322.5K。
+\item 算术平均≥几何平均，所以Td≥Tf且W≥0；不能同时套用等熵和直接混合的能量条件。
+\item 检查系统全热量、物料、化学势或压力条件，并证明所选求根分支符合物理定义域。
+\item 重新计算各项的归一化数值残差：-7.194e-14、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 321.228613；答案2 = 203.421983；答案3 = 322.5\par
+\noindent\textbf{模型前提：}
+按题设稳态或相平衡模型计算，未经专家证明现实操作点可实现。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P68 · 电极双分支Butler–Volmer与面积电阻压降耦合求根}
+\noindent\textbf{题目}\par
+298.15K二电子电极M2+ + 2e− ⇌ M，假设对称电荷转移系数α=0.5000，交换电流密度j0=0.004000A/cm²，外加过电位ηapp=0.1000V，面积电阻RΩ=8.000Ωcm²。按照二电子Butler–Volmer式j=2j0 sinh[(2αFηkin)/(RT)]=2j0 sinh[Fηkin/(RT)]，其中ηkin=ηapp−jRΩ，求稳态电流密度、真实动力学过电位、600s在1cm²电极上的金属沉积mol与忽略欧姆降产生的电流偏差，并证明正根唯一。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 二电子BV模型在α=1/2时净电流密度j=2j0 sinh[Fηkin/(RT)]，不可混用一电子式Fη/(2RT)。
+\item 欧姆压降使ηkin=ηapp−jRΩ，故求f(j)=2j0 sinh[F(ηapp−jRΩ)/(RT)]−j=0。
+\item 在0≤j≤ηapp/RΩ，f(0)>0、f(ηapp/RΩ)<0；f′<0，因此物理解唯一。
+\item 二分求j=0.009311845392A/cm²、实际动力学过电位ηkin=0.02550523686V。
+\item 因每mol金属沉积需2mol电子，600s、1cm²上沉积金属mol=jAt/(2F)=0.00002895314299。
+\item 忽略欧姆降时预测jideal=2j0 sinh[Fηapp/(RT)]=0.1959878222A/cm²；与真实j相比高估倍数=21.04715166。
+\item 重新计算jRΩ=0.07449476314V并与ηkin相加恢复外加过电位0.1000V。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00931184539；答案2 = 0.0255052369；答案3 = 2.8953143e-05；答案4 = 0.195987822；答案5 = 21.0471517\par
+\noindent\textbf{模型前提：}
+按题设理想稳态/近似传输模型计算，不宣称实际电极与材料满足全范围。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P69 · 静止载气层中的Stefan扩散及Fick近似偏差}
+\noindent\textbf{题目}\par
+气相二元混合物A蒸气与静止载气B，恒温300K、总压100kPa，扩散层厚2.000mm、D\_AB=1.20×10\textasciicircum{}-5m²/s。A蒸气在膜两侧摩尔分数0.3000及0.05000，B净摩尔通量严格为0。求理想气体总摩尔浓度、Stefan通量、错误按等摩尔反向扩散直接用线性Fick差分的通量、二者的相对偏差，并推导1−yA分母。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 二元通量N\_A=−D C dyA/dz+yA(N\_A+N\_B)，且N\_B=0。
+\item 整理成(1−yA)N\_A=−D C dyA/dz，对膜厚积分。
+\item 浓度C=P/(RT)=40.090785mol/m³。
+\item Stefan通量J=(DC/L)ln[(1−y2)/(1−y1)]=0.0734579404mol/(m²s)。
+\item 错误线性Fick通量=0.0601361775，相对偏差(lin−J)/J=-0.181352251，因为存在Stefan流而非等摩尔反向扩散。
+\item 逆核各变量的物理正根、标准态与传递边界条件，核对守恒的量纲与温度方向。
+\item 数值独立残差：0.000e+0、0.000e+0、0.000e+0；尚需专业审校。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 40.090785；答案2 = 0.0734579404；答案3 = 0.0601361775；答案4 = -0.181352251\par
+\noindent\textbf{模型前提：}
+按题设理想稳态/近似传输模型计算，不宣称实际电极与材料满足全范围。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P70 · 单参数Margules非理想液相的泡点与气相富集}
+\noindent\textbf{题目}\par
+固定温度下二元液体服从Margules关系lnγ1=A(1−x1)²、lnγ2=A x1²，A=0.7000；纯液饱和蒸气压P1sat=100.0kPa、P2sat=55.00kPa，液相x1=0.4000，气相理想。求γ1、γ2、泡点压力、气相y1及组分1富集比y1/x1，并比较完全理想液相时的泡点压力。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 令x2=1−x1=.6，活度系数γ1=exp[A x2²]=1.28659604、γ2=exp[A x1²]=1.11851286。
+\item 改良Raoult分压p\_i=x\_i γ\_i P\_i\textasciicircum{}sat。
+\item 泡点总压P=p1+p2=88.3747659kPa。
+\item 气相y1=p1/P=0.582336383、y2=1−y1。
+\item 富集比y1/x1=1.45584096，理想液相泡点压力Pideal=xP1+(1−x)P2=73kPa。
+\item 逆核各变量的物理正根、标准态与传递边界条件，核对守恒的量纲与温度方向。
+\item 数值独立残差：0.000e+0、0.000e+0、0.000e+0；尚需专业审校。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1.28659604；答案2 = 1.11851286；答案3 = 88.3747659；答案4 = 0.582336383；答案5 = 1.45584096\par
+\noindent\textbf{模型前提：}
+按题设理想稳态/近似传输模型计算，不宣称实际电极与材料满足全范围。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P71 · 绝热CSTR反应放热反馈与多个稳态根的迭代判别}
+\noindent\textbf{题目}\par
+假想绝热CSTR进行不可逆一级放热A→B，进料T0=300K、停留时间τ=2.000min、k(300)=0.2500min\textasciicircum{}-1、活化能40.00kJ/mol，完全转化的绝热升温90.00K。联立X=k(T)τ/[1+k(T)τ]及T=300+90X，求300—390K间全部稳态解和各自转化率，并计算固定点迭代映射G(T)的斜率以区分数值迭代收敛与真实动态热稳定。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Arrhenius k(T)=k300exp[−Ea/R(1/T−1/300)]。
+\item 稳态物料衡算X(T)=kτ/(1+kτ)，绝热热量式T=300+90X。
+\item 用f(T)=T−300−90X(T)在物理范围扫描所有变号区间。
+\item 求得根数=1，温度=385.078084K。
+\item 对应转化率=0.945312043，固定点迭代斜率G′=0.150951558；|G′|<1只说明这个迭代局部收敛。
+\item 逆核各变量的物理正根、标准态与传递边界条件，核对守恒的量纲与温度方向。
+\item 数值独立残差：1.421e-14、1.421e-14、1.421e-14；尚需专业审校。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1；答案2 = 385.078084；答案3 = 0.945312043\par
+\noindent\textbf{模型前提：}
+按题设理想稳态/近似传输模型计算，不宣称实际电极与材料满足全范围。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-P72 · 球形催化颗粒一级反应与扩散效能因子的稳态边值模型}
+\noindent\textbf{题目}\par
+半径a=0.5000mm的球形多孔催化颗粒，颗粒内一级反应常数k=0.02000s\textasciicircum{}-1、有效扩散系数D=1.000×10\textasciicircum{}-9m²/s，表面底物浓度cs=0.01000mol/L，内部稳态球对称反应扩散。求Thiele模数φ=a√(k/D)、一阶球形效能因子η=3(φcothφ−1)/φ²，以及单颗粒总消耗mol/s；解释为何反应总消耗不能简单用表面浓度乘体积。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 稳态球坐标扩散方程为(1/r²)d/dr(r² dc/dr)−(k/D)c=0，边界c(a)=cs、r=0有限。
+\item 定义Thiele模数φ=a√(k/D)=2.23606798。
+\item 球形效能η=3[φcothφ−1]/φ²=0.772645786。
+\item 表面浓度cs=.01000mol/L=10mol/m³，颗粒体积V=4πa³/3。
+\item 总反应耗量q=Vk cs η=8.09112775e-11mol/s，低于假设整个颗粒处处为cs时的理想无扩散限制值。
+\item 逆核各变量的物理正根、标准态与传递边界条件，核对守恒的量纲与温度方向。
+\item 数值独立残差：0.000e+0、0.000e+0、1.292e-26；尚需专业审校。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 2.23606798；答案2 = 0.772645786；答案3 = 8.09112775e-11\par
+\noindent\textbf{模型前提：}
+按题设理想稳态/近似传输模型计算，不宣称实际电极与材料满足全范围。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
