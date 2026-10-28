@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "6179da78f5c555c8777e3c10cf630af784f5bc1aa94364c92961d86d2b62021c",
+  "subject": "inorganic",
+  "topic": "advanced_integrated_2026_I01",
+  "level": "undergraduate",
+  "difficulty": "advanced_integrated",
+  "question_type": "independently_authored_nonparametric_multistage_science",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "source_problem_number": "I01",
+  "question": "闭合氨配位体系中 AgCl 的非线性溶解\n在 \\(1.000\\,\\mathrm L\\) 的理想溶液中有过量固体 \\(\\ce{AgCl(s)}\\)，体系的游离氨及络合氨总分析浓度为 \\(C_{\\mathrm L}=0.1000\\,\\mathrm{mol\\,L^{-1}}\\)。仅允许 \\(\\ce{Ag+}\\)、\\(\\ce{[Ag(NH3)2]+}\\)、\\(\\ce{Cl-}\\) 及游离 \\(\\ce{NH3}\\) 存在，并假设 \\(\\ce{NH3}/\\ce{NH4+}\\) 酸碱平衡及其它配合物可忽略。给定 \\(K_{\\rm sp}=1.80\\times10^{-10}\\) 和 \\(\\beta_2=1.60\\times10^7\\,\\mathrm{L^2\\,mol^{-2}}\\)，同时求游离氨、游离银、二氨合银和总溶解银浓度；不得把游离氨浓度直接等同于 \\(C_{\\mathrm L}\\)。",
+  "answer": "1: 0.09030724634；2: 3.714086355e-8；3: 0.004846376830；4: 0.004846413971",
+  "explanation": "令 \\(L=[\\ce{NH3}],\\ p=[\\ce{Ag+}],\\ z=[\\ce{[Ag(NH3)2]+}],\\ s=p+z=[\\ce{Cl-}]\\)。电中性由此自动满足。沉淀平衡、配合平衡及氨物料守恒为\n\\[\nps=K_{\\rm sp},\\qquad z=\\beta_2pL^2,\\qquad L+2z=C_{\\mathrm L}.\n\\]\n消去 \\(p,z,s\\)，得\n\\[\np=\\sqrt{\\frac{K_{\\rm sp}}{1+\\beta_2L^2}},\\quad\nz=\\beta_2L^2\\sqrt{\\frac{K_{\\rm sp}}{1+\\beta_2L^2}},\n\\quad\nF(L)=L+2z-C_{\\mathrm L}=0.\n\\]\n由于 \\(z(L)=\\sqrt{K_{\\rm sp}}\\,\\beta_2L^2(1+\\beta_2L^2)^{-1/2}\\) 对 \\(L>0\\) 严格递增，且 \\(F(0)<0<F(C_{\\mathrm L})\\)，因此物理解唯一。用二分法求得\n\\[\n\\begin{aligned}\nL&=0.09030725\\,\\mathrm M, &\np&=3.714086\\times10^{-8}\\,\\mathrm M,\\\\\nz&=0.004846377\\,\\mathrm M, &\ns&=0.004846414\\,\\mathrm M.\n\\end{aligned}\n\\]\n将数值代回可得 \\(ps=1.80\\times10^{-10}\\)、\\(z/(pL^2)=1.60\\times10^7\\)、\\(L+2z=0.1000\\,\\mathrm M\\)。",
+  "problem_title": "闭合氨配位体系中 AgCl 的非线性溶解",
+  "scientific_assumptions": "理想活度；明确忽略 NH4+、Ag(NH3)+、其他络合及溶解产生的体积改变；过量 AgCl 固体仍存在。",
+  "numeric_answers": [
+    0.09030724634026513,
+    3.7140863551292956e-8,
+    0.00484637682986745,
+    0.004846413970731002
+  ],
+  "independent_equation_residuals": [
+    1.4360774523490063e-16,
+    0,
+    2.7755575615628914e-16,
+    0
+  ],
+  "independent_model_witness_count": 4,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "quality_status": "awaiting_expert_review",
+  "semantic_duplicate_review_pending": true,
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/advanced-integrated-12.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_12_distinct_advanced_integrated_chemical_problems",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Written independently; 12 new analytic modeling problems with explicit scientific assumptions, no adapted textbook/exam question text."
+  }
+}

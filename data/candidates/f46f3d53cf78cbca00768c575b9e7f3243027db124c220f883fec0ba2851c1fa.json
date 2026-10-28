@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "f46f3d53cf78cbca00768c575b9e7f3243027db124c220f883fec0ba2851c1fa",
+  "subject": "physical",
+  "topic": "advanced_integrated_2026_P03",
+  "level": "undergraduate",
+  "difficulty": "advanced_integrated",
+  "question_type": "independently_authored_nonparametric_multistage_science",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "source_problem_number": "P03",
+  "question": "有限溶液 Langmuir 吸附的非线性质量平衡\n把 \\(m=2.000\\,\\mathrm g\\) 的均匀吸附剂加入 \\(V=0.5000\\,\\mathrm L\\)、初浓度 \\(C_0=0.002000\\,\\mathrm{mol\\,L^{-1}}\\) 的单溶质溶液中。吸附平衡遵守 \\(q(C)=q_{\\max}KC/(1+KC)\\)，其中 \\(q_{\\max}=4.00\\times10^{-4}\\,\\mathrm{mol\\,g^{-1}}\\)、\\(K=500.0\\,\\mathrm{L\\,mol^{-1}}\\)。假设没有化学反应或容器吸附且溶液体积不变，求平衡游离浓度 \\(C\\)、表面覆盖度 \\(\\theta\\)、吸附总物质的量及去除率；必须考虑吸附导致的溶液浓度下降。",
+  "answer": "1: 0.001354065923；2: 0.4037087982；3: 0.0003229670386；4: 32.29670386",
+  "explanation": "平衡时总物料守恒为\n\\[\nVC_0=VC+mq_{\\max}\\frac{KC}{1+KC}.\n\\]\n化为二次多项式，\n\\[\nVK C^2+\\bigl[V+m q_{\\max}K-VC_0K\\bigr]C-VC_0=0.\n\\]\n因常数项为负，二次方程恰有一个正根；等价地，原始右侧对 \\(C\\ge0\\) 严格递增，故物理解唯一。数值代入并取正根，\n\\[\nC=0.001354066\\,\\mathrm{mol\\,L^{-1}}.\n\\]\n相应表面覆盖度\n\\[\n\\theta=\\frac{KC}{1+KC}=0.4037088,\n\\]\n吸附总物质的量\n\\[\nn_{\\rm ads}=m q_{\\max}\\theta\n=3.22967\\times10^{-4}\\,\\mathrm{mol},\n\\]\n去除率\n\\[\n\\eta=100\\left(1-\\frac{C}{C_0}\\right)=32.2967\\%.\n\\]\n可代回验证 \\(VC+n_{\\rm ads}=VC_0=0.001000\\,\\mathrm{mol}\\)，不允许用初始浓度直接计算最终 \\(\\theta\\)。",
+  "problem_title": "有限溶液 Langmuir 吸附的非线性质量平衡",
+  "scientific_assumptions": "单一吸附溶质；温度不变；理想单层 Langmuir、独立同质位点；没有溶液体积变化、容器损失和其它反应。",
+  "numeric_answers": [
+    0.0013540659228538018,
+    0.40370879821637407,
+    0.00032296703857309926,
+    32.29670385730991
+  ],
+  "independent_equation_residuals": [
+    2.1684043449710089e-16,
+    0,
+    0,
+    0
+  ],
+  "independent_model_witness_count": 4,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "quality_status": "awaiting_expert_review",
+  "semantic_duplicate_review_pending": true,
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/advanced-integrated-12.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_12_distinct_advanced_integrated_chemical_problems",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Written independently; 12 new analytic modeling problems with explicit scientific assumptions, no adapted textbook/exam question text."
+  }
+}

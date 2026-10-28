@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "16eed654adbcddf3bee34b4aaf075c73faf7f03fc42fb2c1e5ee2e695d9ecb8c",
+  "subject": "inorganic",
+  "topic": "advanced_integrated_2026_I02",
+  "level": "undergraduate",
+  "difficulty": "advanced_integrated",
+  "question_type": "independently_authored_nonparametric_multistage_science",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "source_problem_number": "I02",
+  "question": "有限体积原电池的 Nernst 电势与平衡转化\n假想二价金属电池反应为 \\(\\ce{M(s)+N^{2+}(aq)<=>M^{2+}(aq)+N(s)}\\)，在 \\(298.15\\,\\mathrm K\\) 时标准电动势 \\(E^\\circ=0.0450\\,\\mathrm V\\)。同一 \\(0.2500\\,\\mathrm L\\) 理想、均匀的反应体系初始 \\([\\ce{M^{2+}}]_0=0.0100\\,\\mathrm M\\)、\\([\\ce{N^{2+}}]_0=0.0200\\,\\mathrm M\\)，金属固体过量。忽略体积改变和液接电势。求初始电动势、无量纲平衡常数、平衡反应进度（以 \\(\\mathrm{mol\\,L^{-1}}\\) 表示）及从初态到平衡传递的总电量。",
+  "answer": "1: 0.05390436939；2: 33.21351942；3: 0.01912315364；4: 922.5519150",
+  "explanation": "反应商 \\(Q=[\\ce{M^{2+}}]/[\\ce{N^{2+}}]\\) 的数值采用相同标准浓度归一化。Nernst 方程为\n\\[\nE=E^\\circ-\\frac{RT}{2F}\\ln Q,\\qquad\nK=\\exp\\!\\left(\\frac{2FE^\\circ}{RT}\\right).\n\\]\n初始 \\(Q_0=0.0100/0.0200=0.5\\)，故 \\(E_0=0.0539044\\,\\mathrm V\\)。在平衡时令反应进度按单位体积记为 \\(\\xi\\)，则\n\\[\n\\frac{0.0100+\\xi}{0.0200-\\xi}=K,\\quad\n\\xi=\\frac{0.0200K-0.0100}{K+1}.\n\\]\n代入 \\(R=8.314462618\\,\\mathrm{J\\,mol^{-1}K^{-1}}\\)、\\(F=96485.33212\\,\\mathrm{C\\,mol^{-1}}\\)，得\n\\[\nK=33.2135,\\qquad \\xi=0.01912315\\,\\mathrm M.\n\\]\n因此平衡 \\([\\ce{M^{2+}}]=0.02912315\\,\\mathrm M\\)、\\([\\ce{N^{2+}}]=0.000876846\\,\\mathrm M\\)。转移电荷为\n\\[\nQ_{\\rm el}=2F\\cdot \\xi \\cdot (0.2500\\,\\mathrm L)=922.552\\,\\mathrm C.\n\\]\n注意电荷计算中 \\(\\xi\\) 是浓度形式，必须乘溶液体积。",
+  "problem_title": "有限体积原电池的 Nernst 电势与平衡转化",
+  "scientific_assumptions": "假想可逆金属体系；固体活度为 1；离子活度按理想标准化浓度；电势随反应进行变化；足量固体。",
+  "numeric_answers": [
+    0.053904369389688345,
+    33.21351942414085,
+    0.019123153639118685,
+    922.5519150260766
+  ],
+  "independent_equation_residuals": [
+    0,
+    0,
+    2.7811131506188588e-15,
+    0
+  ],
+  "independent_model_witness_count": 4,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "quality_status": "awaiting_expert_review",
+  "semantic_duplicate_review_pending": true,
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/advanced-integrated-12.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_12_distinct_advanced_integrated_chemical_problems",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Written independently; 12 new analytic modeling problems with explicit scientific assumptions, no adapted textbook/exam question text."
+  }
+}

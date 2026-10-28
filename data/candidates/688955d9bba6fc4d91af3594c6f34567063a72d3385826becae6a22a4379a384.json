@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "688955d9bba6fc4d91af3594c6f34567063a72d3385826becae6a22a4379a384",
+  "subject": "inorganic",
+  "topic": "advanced_integrated_2026_I03",
+  "level": "undergraduate",
+  "difficulty": "advanced_integrated",
+  "question_type": "independently_authored_nonparametric_multistage_science",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "source_problem_number": "I03",
+  "question": "X 射线晶胞测定、密度与空位缺陷联合反演\n某银晶体可近似为 FCC 晶格，使用波长 \\(\\lambda=0.1540\\,\\mathrm{nm}\\) 的 X 射线观察到一阶 \\((111)\\) 衍射，给定 Bragg 角 \\(\\theta=18.90^\\circ\\)（不是 \\(2\\theta\\)）。银摩尔质量 \\(M=107.8682\\,\\mathrm{g\\,mol^{-1}}\\)，实测体密度 \\(10.20\\,\\mathrm{g\\,cm^{-3}}\\)。假设晶胞边长不受缺陷影响，唯一缺陷是均匀、随机的银原子位点空位，求晶面间距、晶胞边长、满占据理想密度、空位位点分数。",
+  "answer": "1: 0.2377149103；2: 0.4117343023；3: 10.26482075；4: 0.006314844324",
+  "explanation": "由一阶 Bragg 定律和立方晶系面间距关系，\n\\[\n2d_{111}\\sin\\theta=\\lambda,\\qquad\nd_{111}=\\frac{a_{\\rm cell}}{\\sqrt3}.\n\\]\n故\n\\[\nd_{111}=0.2377149\\,\\mathrm{nm},\\qquad\na_{\\rm cell}=0.4117343\\,\\mathrm{nm}.\n\\]\nFCC 常规晶胞有 \\(4\\) 个可能原子位点，若全部被占据，其密度为\n\\[\n\\rho_0=\\frac{4M}{N_Aa_{\\rm cell}^{\\,3}}\n       =10.26482\\,\\mathrm{g\\,cm^{-3}},\n\\]\n其中 \\(a_{\\rm cell}(\\mathrm{cm})=a_{\\rm cell}(\\mathrm{nm})\\times10^{-7}\\)。若平均空位分数为 \\(v\\)，有 \\(\\rho_{\\rm obs}=(1-v)\\rho_0\\)，故\n\\[\nv=1-\\frac{10.20}{10.26482}=0.00631484\\approx0.6315\\%.\n\\]\n计算只在“体密度差异仅由空位造成、晶胞常数保持不变”的指定模型中成立，不应将此数值当作真实银晶体的实验空位浓度。",
+  "problem_title": "X 射线晶胞测定、密度与空位缺陷联合反演",
+  "scientific_assumptions": "晶体为理想 FCC；一阶 (111) 峰；角度是 θ；仅空位降低平均晶胞原子数，忽略夹杂、孔隙、仪器误差与应变。",
+  "numeric_answers": [
+    0.2377149102642481,
+    0.4117343022943541,
+    10.264820745022593,
+    0.006314844324390667
+  ],
+  "independent_equation_residuals": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "independent_model_witness_count": 4,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "quality_status": "awaiting_expert_review",
+  "semantic_duplicate_review_pending": true,
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/advanced-integrated-12.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_12_distinct_advanced_integrated_chemical_problems",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Written independently; 12 new analytic modeling problems with explicit scientific assumptions, no adapted textbook/exam question text."
+  }
+}

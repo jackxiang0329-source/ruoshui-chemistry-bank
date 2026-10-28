@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "f660990034bde5dbad4bdce0a1ac165615f522db587788eae290a070e3413147",
+  "subject": "organic",
+  "topic": "advanced_integrated_2026_O01",
+  "level": "undergraduate",
+  "difficulty": "advanced_integrated",
+  "question_type": "independently_authored_nonparametric_multistage_science",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "source_problem_number": "O01",
+  "question": "连续一级反应的中间体最佳分离时刻\n在封闭、恒温、恒容条件下，假想有机反应网络为 \\(\\ce{A->B->C}\\)，两步严格遵守一级动力学，速率常数 \\(k_1=0.1000\\,\\mathrm{h^{-1}}\\)、\\(k_2=0.0400\\,\\mathrm{h^{-1}}\\)。初始只有 \\(A\\)，总物质的量 \\(0.2500\\,\\mathrm{mol}\\)，假设 \\(1:1:1\\) 化学计量、无逆反应和其它副反应，\\(M_B=150.0\\,\\mathrm{g\\,mol^{-1}}\\)。求 \\(B\\) 的浓度（或摩尔分数）函数、使 \\(B\\) 最大的时间、该时刻三种物质的摩尔分数与 \\(B\\) 的理论质量。",
+  "answer": "1: 15.27151220；2: 0.2171534093；3: 0.5428835233；4: 0.2399630674；5: 20.35813212",
+  "explanation": "设 \\(a,b,c\\) 为对初始 \\(A\\) 物质的量归一化的分数。动力学方程\n\\[\na'=-k_1a,\\qquad b'=k_1a-k_2b,\\qquad c'=k_2b,\\qquad\n(a,b,c)(0)=(1,0,0).\n\\]\n线性微分方程给出\n\\[\na(t)=e^{-k_1t},\\qquad\nb(t)=\\frac{k_1}{k_2-k_1}\n\\left(e^{-k_1t}-e^{-k_2t}\\right),\\qquad\nc(t)=1-a(t)-b(t).\n\\]\n求导 \\(b'(t)=0\\)，等价于 \\(k_2e^{-k_2t}=k_1e^{-k_1t}\\)，故\n\\[\nt_*=\\frac{\\ln(k_2/k_1)}{k_2-k_1}\n=15.2715\\,\\mathrm h.\n\\]\n该时刻\n\\[\n(a,b,c)=(0.217153,\\ 0.542884,\\ 0.239963).\n\\]\n因此 \\(B\\) 的可分离理论质量（若瞬时完美分离）为\n\\[\nm_B=(0.2500\\,\\mathrm{mol})\\times0.542884\\times\n150.0\\,\\mathrm{g\\,mol^{-1}}=20.3581\\,\\mathrm g.\n\\]\n该极值唯一，因为 \\(b(0)=0\\)、\\(b(t)>0\\) 且 \\(b(\\infty)=0\\)。",
+  "problem_title": "连续一级反应的中间体最佳分离时刻",
+  "scientific_assumptions": "严格的一级不可逆连续反应；正确定义 k1,k2；所有物种 1:1 转化，恒温恒容，极值时瞬时完美分离。",
+  "numeric_answers": [
+    15.271512197902585,
+    0.2171534093275925,
+    0.5428835233189812,
+    0.23996306735342632,
+    20.358132124461793
+  ],
+  "independent_equation_residuals": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "independent_model_witness_count": 5,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "quality_status": "awaiting_expert_review",
+  "semantic_duplicate_review_pending": true,
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/advanced-integrated-12.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_12_distinct_advanced_integrated_chemical_problems",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Written independently; 12 new analytic modeling problems with explicit scientific assumptions, no adapted textbook/exam question text."
+  }
+}

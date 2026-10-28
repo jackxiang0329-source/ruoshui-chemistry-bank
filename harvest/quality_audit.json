@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "total_candidates": 97616,
-  "corpus_hash_sha256": "0b497e825fa46d3d4e684e10ae476b65460753fe19be22128ac2b299fab6056e",
+  "total_candidates": 97628,
+  "corpus_hash_sha256": "495485ec9a2308666e850d2a4107806c923523014e9c13b269a1942a5a38aa8a",
   "by_subject": {
-    "analytical": 24146,
-    "inorganic": 24858,
-    "organic": 24452,
-    "physical": 24160
+    "analytical": 24149,
+    "inorganic": 24861,
+    "organic": 24455,
+    "physical": 24163
   },
   "by_content_kind": {
-    "exercise_candidate": 97338,
+    "exercise_candidate": 97350,
     "study_card": 278
   },
   "by_quality_status": {
-    "awaiting_expert_review": 97616
+    "awaiting_expert_review": 97628
   },
   "by_publishable": {
-    "false": 97616
+    "false": 97628
   },
   "source_counts": {
     "ChemTrain/chemtrain-daily": 268,
@@ -33,7 +33,7 @@
     "QC-Edu/IntroQM": 3,
     "arya51-ai/parametric-question-engine": 30,
     "bem130/chemquiz": 67,
-    "jackxiang0329-source/ruoshui-chemistry-bank": 96205,
+    "jackxiang0329-source/ruoshui-chemistry-bank": 96217,
     "kbknudsen/PyEIS": 8,
     "thisisntnathan/dftCourse": 12
   },
@@ -45,6 +45,9 @@
     "analytical:acid_back_titration_analyte_4": 1,
     "analytical:acid_back_titration_analyte_5": 1,
     "analytical:acidic_permanganate_iron_mass_and_molarity": 1,
+    "analytical:advanced_integrated_2026_A01": 1,
+    "analytical:advanced_integrated_2026_A02": 1,
+    "analytical:advanced_integrated_2026_A03": 1,
     "analytical:analytical_detection_quantitation_limits": 1,
     "analytical:analytical_spike_recovery": 1,
     "analytical:back_titration_calcium_carbonate_purity_set001": 1,
@@ -24017,6 +24020,9 @@
     "analytical:weak_acid_ratio_and_both_species_set255": 1,
     "analytical:weak_acid_ratio_and_both_species_set256": 1,
     "analytical:weak_acid_titration_half_and_equivalence_ph": 1,
+    "inorganic:advanced_integrated_2026_I01": 1,
+    "inorganic:advanced_integrated_2026_I02": 1,
+    "inorganic:advanced_integrated_2026_I03": 1,
     "inorganic:agcl_ammonia_complex_total_solubility_case01": 1,
     "inorganic:agcl_ammonia_complex_total_solubility_case02": 1,
     "inorganic:agcl_ammonia_complex_total_solubility_case03": 1,
@@ -48432,6 +48438,9 @@
     "organic:acid_value_koh_consumption_v22": 1,
     "organic:acid_value_koh_consumption_v23": 1,
     "organic:acid_value_koh_consumption_v24": 1,
+    "organic:advanced_integrated_2026_O01": 1,
+    "organic:advanced_integrated_2026_O02": 1,
+    "organic:advanced_integrated_2026_O03": 1,
     "organic:alcohol_chemoselectivity": 1,
     "organic:aldol_net_dehydration_water_mass_case01": 1,
     "organic:aldol_net_dehydration_water_mass_case02": 1,
@@ -71928,6 +71937,9 @@
     "physical:adiabatic_pressure_temperature_3": 1,
     "physical:adiabatic_pressure_temperature_4": 1,
     "physical:adiabatic_pressure_temperature_5": 1,
+    "physical:advanced_integrated_2026_P01": 1,
+    "physical:advanced_integrated_2026_P02": 1,
+    "physical:advanced_integrated_2026_P03": 1,
     "physical:arrhenius_activation_energy_two_temperatures": 6,
     "physical:arrhenius_ea_from_two_rates_1": 1,
     "physical:arrhenius_ea_from_two_rates_2": 1,
@@ -95934,7 +95946,7 @@
     "samples": []
   },
   "source_content_rights_audit": {
-    "explicitly_verified": 97595,
+    "explicitly_verified": 97607,
     "explicitly_pending": 21,
     "not_recorded": 0,
     "pending_samples": [

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "3aadb4d5cfd1464595be540283108d882d2939c6ef5d14afe75c15f54320260e",
+  "subject": "organic",
+  "topic": "advanced_integrated_2026_O02",
+  "level": "undergraduate",
+  "difficulty": "advanced_integrated",
+  "question_type": "independently_authored_nonparametric_multistage_science",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "source_problem_number": "O02",
+  "question": "非等当量缩聚的 Carothers 关系、脱水守恒与数均分子量\n理想双官能 AA/BB 单体缩聚体系中，初始 A 类官能团为 \\(0.9600\\,\\mathrm{mol}\\)，B 类官能团为 \\(1.000\\,\\mathrm{mol}\\)。A 类官能团反应分数为 \\(p=0.9700\\)；每形成一条连接键均损失一分子水。假设体系初始分子全为双官能单体、无环化、无交联、无单官能杂质；全部单体按数目平均的摩尔质量为 \\(130.0\\,\\mathrm{g\\,mol^{-1}}\\)，\\(M_{\\ce{H2O}}=18.015\\,\\mathrm{g\\,mol^{-1}}\\)。求初始单体分子物质的量、缩合键物质的量、最终链物质的量、数均聚合度、产物总质量和数均摩尔质量。",
+  "answer": "1: 0.9800000000；2: 0.9312000000；3: 0.04880000000；4: 20.08196721；5: 110.6244320；6: 2266.894098",
+  "explanation": "双官能起始单体的分子 mol 数为\n\\[\nN_0=\\frac{0.9600+1.000}{2}=0.9800\\,\\mathrm{mol}.\n\\]\n每形成一条键消耗一个 A 与一个 B 官能团，故反应键数\n\\[\n\\xi=pN_{A,0}=0.9700(0.9600)=0.9312\\,\\mathrm{mol}.\n\\]\n无环化时每形成一条键，独立分子数减少一，最终链数\n\\(N_{\\rm chain}=0.9800-0.9312=0.04880\\,\\mathrm{mol}\\)。因而\n\\[\nX_n=\\frac{N_0}{N_{\\rm chain}}\n=\\frac{1+r}{1+r-2rp}\n=20.08197,\\qquad r=\\frac{N_{A,0}}{N_{B,0}}=0.9600.\n\\]\n初始总质量 \\(m_0=(0.9800)(130.0)=127.4\\,\\mathrm g\\)，水损失 \\(m_{\\rm water}=0.9312(18.015)=16.775568\\,\\mathrm g\\)，\n\\[\nm_{\\rm polymer}=110.624432\\,\\mathrm g,\\qquad\nM_n=\\frac{m_{\\rm polymer}}{N_{\\rm chain}}\n=2266.89\\,\\mathrm{g\\,mol^{-1}}.\n\\]\n不能简单写成 \\(X_n\\times130.0\\)：因为每条缩合键有实际脱水质量损失。",
+  "problem_title": "非等当量缩聚的 Carothers 关系、脱水守恒与数均分子量",
+  "scientific_assumptions": "AA/BB 双官能、无环化、无交联、每反应键脱去一分子水；p 是少量 A 官能团的转化分数；单体数均质量与起始总数相配。",
+  "numeric_answers": [
+    0.98,
+    0.9311999999999999,
+    0.048800000000000066,
+    20.081967213114726,
+    110.62443199999998,
+    2266.894098360652
+  ],
+  "independent_equation_residuals": [
+    0,
+    0,
+    0,
+    0,
+    1.1154517044899534e-16,
+    1.2846036321526157e-16
+  ],
+  "independent_model_witness_count": 6,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "quality_status": "awaiting_expert_review",
+  "semantic_duplicate_review_pending": true,
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/advanced-integrated-12.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_12_distinct_advanced_integrated_chemical_problems",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Written independently; 12 new analytic modeling problems with explicit scientific assumptions, no adapted textbook/exam question text."
+  }
+}

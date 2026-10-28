@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "38ad7507267fefa98b70dfbb0bb74d851f366c6a3fe778ae5948d66aa8f735cc",
+  "subject": "organic",
+  "topic": "advanced_integrated_2026_O03",
+  "level": "undergraduate",
+  "difficulty": "advanced_integrated",
+  "question_type": "independently_authored_nonparametric_multistage_science",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "source_problem_number": "O03",
+  "question": "双响应因子手性色谱的 ee、质量平衡与收率\n某反应仅生成互为对映体的 \\(R,S\\) 两种产物。手性色谱中，经独立质量标准校准的检测响应满足 \\(A_R=f_Rm_R\\)、\\(A_S=f_Sm_S\\)，其中 \\(A_R=1500\\)、\\(A_S=700\\)，响应因子 \\(f_R=1.20\\)、\\(f_S=0.800\\ \\mathrm{area\\,mg^{-1}}\\)。两对映体摩尔质量相同，没有其它产物或杂质。若理论完全转化可以得到产物总质量 \\(2500\\,\\mathrm{mg}\\)，求两对映体质量、主对映体质量百分数、正的 ee 和总分离收率。",
+  "answer": "1: 1250.000000；2: 875.0000000；3: 58.82352941；4: 17.64705882；5: 85.00000000",
+  "explanation": "色谱面积不能直接用于求质量比，须先除以各自的响应因子：\n\\[\nm_R=\\frac{1500}{1.20}=1250\\,\\mathrm{mg},\\qquad\nm_S=\\frac{700}{0.800}=875\\,\\mathrm{mg}.\n\\]\n由于两对映体摩尔质量相同，物质的量比例等于质量比例。总分离产物 \\(m=2125\\,\\mathrm{mg}\\)，\\(R\\) 为主对映体，其质量百分数为\n\\[\nw_R=100\\frac{1250}{2125}=58.8235\\%.\n\\]\n对映体过量和总收率分别为\n\\[\nee=100\\frac{1250-875}{1250+875}=17.6471\\%,\\qquad\nY=100\\frac{2125}{2500}=85.00\\%.\n\\]\n“ee”衡量立体选择性；“总收率”衡量实际回收量相对理论产量。二者不可混用。",
+  "problem_title": "双响应因子手性色谱的 ee、质量平衡与收率",
+  "scientific_assumptions": "独立校准响应因子按质量标定、两组分完整分离、对映体摩尔质量相同、无第三组分、理论产物量可信。",
+  "numeric_answers": [
+    1250,
+    875,
+    58.8235294117647,
+    17.647058823529413,
+    85
+  ],
+  "independent_equation_residuals": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "independent_model_witness_count": 5,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "quality_status": "awaiting_expert_review",
+  "semantic_duplicate_review_pending": true,
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/advanced-integrated-12.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_12_distinct_advanced_integrated_chemical_problems",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Written independently; 12 new analytic modeling problems with explicit scientific assumptions, no adapted textbook/exam question text."
+  }
+}

@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "total_candidates": 97616,
-  "corpus_id_hash_sha256": "0b497e825fa46d3d4e684e10ae476b65460753fe19be22128ac2b299fab6056e",
+  "total_candidates": 97628,
+  "corpus_id_hash_sha256": "495485ec9a2308666e850d2a4107806c923523014e9c13b269a1942a5a38aa8a",
   "by_subject": {
-    "analytical": 24146,
-    "inorganic": 24858,
-    "organic": 24452,
-    "physical": 24160
+    "analytical": 24149,
+    "inorganic": 24861,
+    "organic": 24455,
+    "physical": 24163
   },
   "by_content_kind": {
-    "exercise_candidate": 97338,
+    "exercise_candidate": 97350,
     "study_card": 278
   },
-  "topics_total": 95890,
-  "template_source_clusters": 97206,
+  "topics_total": 95902,
+  "template_source_clusters": 97218,
   "multi_variant_clusters": 66,
   "multi_variant_candidates": 476,
   "flag_counts": {
     "conceptual_answer_requires_expert_validation": 14,
     "item_level_rights_human_confirmation_pending": 21,
-    "numerical_answer_requires_scientific_review": 96177,
-    "semantic_duplicate_review_pending": 96788,
+    "numerical_answer_requires_scientific_review": 96189,
+    "semantic_duplicate_review_pending": 96800,
     "source_question_rights_not_explicitly_verified": 21,
     "study_card_not_exam_question": 278,
     "upstream_answer_key_requires_reconciliation": 11
@@ -40,7 +40,7 @@
     "organic": 32,
     "inorganic": 32
   },
-  "unselected_candidate_count": 97488,
+  "unselected_candidate_count": 97500,
   "expert_approved_count": 0,
   "publishable_count": 0,
   "source_rights_approved_by_this_process": 0,
@@ -480,6 +480,51 @@
     },
     {
       "subject": "analytical",
+      "topic": "advanced_integrated_2026_A01",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "873b3a30aafcf866bd9a8e7895daadf60c9fc53456ab34331589acc5527b9611",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 0,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "analytical",
+      "topic": "advanced_integrated_2026_A02",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "0f927aca99415eeb3a31aa191ef6b7d51edc80f0418329bd5e6989e90f8f20f3",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 0,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "analytical",
+      "topic": "advanced_integrated_2026_A03",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "9143348530f2c8610c5944d8d9988386cf9b96147d68222261ad8537bc790908",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 0,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "analytical",
       "topic": "analytical_detection_quantitation_limits",
       "source": "jackxiang0329-source/ruoshui-chemistry-bank",
       "representative_id": "04783bdbc41a2233995a73744eb9c1c6d8155262a45acbe4239d959eb322c45f",
@@ -527,51 +572,6 @@
       "topic": "back_titration_calcium_carbonate_purity_set002",
       "source": "jackxiang0329-source/ruoshui-chemistry-bank",
       "representative_id": "3f035575dca2a34ab893a30c3386e9c193b634922246bcbb242d15c748c5bc18",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "analytical",
-      "topic": "back_titration_calcium_carbonate_purity_set003",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "295281a6502b1c43c8731bb63c3949308169ad6e2235f7c49b52c1abb0fa545f",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "analytical",
-      "topic": "back_titration_calcium_carbonate_purity_set004",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "54f231574eb8df08d1546ec0dae54dfde6f7492e027a299c4d84762bbcca0cbb",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "analytical",
-      "topic": "back_titration_calcium_carbonate_purity_set005",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "fa51cd0164a44b8587e938fa80f76a57ff844b1376462b499bb3eebebcbb42b6",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
@@ -1754,6 +1754,51 @@
     },
     {
       "subject": "inorganic",
+      "topic": "advanced_integrated_2026_I01",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "6179da78f5c555c8777e3c10cf630af784f5bc1aa94364c92961d86d2b62021c",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 0,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "inorganic",
+      "topic": "advanced_integrated_2026_I02",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "16eed654adbcddf3bee34b4aaf075c73faf7f03fc42fb2c1e5ee2e695d9ecb8c",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 0,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "inorganic",
+      "topic": "advanced_integrated_2026_I03",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "688955d9bba6fc4d91af3594c6f34567063a72d3385826becae6a22a4379a384",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 0,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "inorganic",
       "topic": "agcl_ammonia_complex_total_solubility_case01",
       "source": "jackxiang0329-source/ruoshui-chemistry-bank",
       "representative_id": "48fe0fd23eddaee02be1aec1f79d2539854db731b0e578401db3ed7f06586bb6",
@@ -1997,51 +2042,6 @@
       "topic": "agcl_ammonia_complex_total_solubility_case17",
       "source": "jackxiang0329-source/ruoshui-chemistry-bank",
       "representative_id": "5bae181036953294cbfb7691690b3e23e7bdf1281897da15ae86e5b0b2749138",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "inorganic",
-      "topic": "agcl_ammonia_complex_total_solubility_case18",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "f3a7c5dda38c82e5dc30f922b03c8b8f16a915b26f2b1eb8f479f525b0450dc9",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "inorganic",
-      "topic": "agcl_ammonia_complex_total_solubility_case19",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "c286e03607927dc392a361914e069b31369ed0cfbd04a7033245a772fe95b968",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "numerical_answer_requires_scientific_review",
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "inorganic",
-      "topic": "agcl_ammonia_complex_total_solubility_case20",
-      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
-      "representative_id": "73c0235086c3302b2f8954ee414134c2edf91b6edce4dd9377532a86e025b4c7",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "0f927aca99415eeb3a31aa191ef6b7d51edc80f0418329bd5e6989e90f8f20f3",
+  "subject": "analytical",
+  "topic": "advanced_integrated_2026_A02",
+  "level": "undergraduate",
+  "difficulty": "advanced_integrated",
+  "question_type": "independently_authored_nonparametric_multistage_science",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "source_problem_number": "A02",
+  "question": "双指示剂滴定反演碳酸盐组成与离子强度\n从一份仅由 \\(\\ce{Na2CO3}\\) 与 \\(\\ce{NaHCO3}\\) 组成的水溶液中取 \\(25.00\\,\\mathrm{mL}\\)，用 \\(0.1000\\,\\mathrm M\\) 的 \\(\\ce{HCl}\\) 滴定。到酚酞终点累计消耗 \\(8.20\\,\\mathrm{mL}\\)，到甲基橙终点累计消耗 \\(21.60\\,\\mathrm{mL}\\)。认为两终点理想精确、无 \\(\\ce{OH-}\\) 或其它缓冲组分。求原液两种盐的形式浓度、原液 \\(250.0\\,\\mathrm{mL}\\) 中两种盐的质量，以及按完全解离形式计算的离子强度。",
+  "answer": "1: 0.03280000000；2: 0.02080000000；3: 0.8691180000；4: 0.4368343200；5: 0.1192000000",
+  "explanation": "设取样中的 \\(\\ce{CO3^{2-}}\\) 与 \\(\\ce{HCO3-}\\) 物质的量为 \\(x,y\\)。第一终点仅有\n\\(\\ce{CO3^{2-}->HCO3-}\\)，故 \\(x=0.1000(0.00820)=0.0008200\\,\\mathrm{mol}\\)。\n第二终点累计耗酸满足 \\(2x+y=0.1000(0.02160)\\)，得到\n\\(y=0.0005200\\,\\mathrm{mol}\\)。因此\n\\[\nc_{\\ce{Na2CO3}}=\\frac{x}{0.02500}=0.03280\\,\\mathrm M,\\qquad\nc_{\\ce{NaHCO3}}=\\frac{y}{0.02500}=0.02080\\,\\mathrm M.\n\\]\n以 \\(M(\\ce{Na2CO3})=105.99\\)、\\(M(\\ce{NaHCO3})=84.0066\\,\\mathrm{g\\,mol^{-1}}\\)，\n\\[\nm_1=0.03280(0.2500)(105.99)=0.86912\\,\\mathrm g,\\quad\nm_2=0.02080(0.2500)(84.0066)=0.43683\\,\\mathrm g.\n\\]\n形式电荷平衡给 \\([\\ce{Na+}]=2c_1+c_2\\)，所以完全解离模型下\n\\[\nI=\\tfrac12\\bigl([\\ce{Na+}]+4c_1+c_2\\bigr)=3c_1+c_2\n=0.11920\\,\\mathrm M.\n\\]\n该 \\(I\\) 是按给定形式浓度的估算；若考虑酸碱物种与活度，需重解平衡。",
+  "problem_title": "双指示剂滴定反演碳酸盐组成与离子强度",
+  "scientific_assumptions": "以形式组分为定义的浓度；终点不计碳酸溶解/逸散损失；电中性及完全解离，仅计算形式离子强度。",
+  "numeric_answers": [
+    0.0328,
+    0.020799999999999992,
+    0.8691180000000001,
+    0.4368343199999999,
+    0.1192
+  ],
+  "independent_equation_residuals": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "independent_model_witness_count": 5,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "quality_status": "awaiting_expert_review",
+  "semantic_duplicate_review_pending": true,
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/advanced-integrated-12.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_12_distinct_advanced_integrated_chemical_problems",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Written independently; 12 new analytic modeling problems with explicit scientific assumptions, no adapted textbook/exam question text."
+  }
+}

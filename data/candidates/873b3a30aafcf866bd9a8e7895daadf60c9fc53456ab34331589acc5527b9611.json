@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "873b3a30aafcf866bd9a8e7895daadf60c9fc53456ab34331589acc5527b9611",
+  "subject": "analytical",
+  "topic": "advanced_integrated_2026_A01",
+  "level": "undergraduate",
+  "difficulty": "advanced_integrated",
+  "question_type": "independently_authored_nonparametric_multistage_science",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "source_problem_number": "A01",
+  "question": "双波长光谱解混、稀释反算与试样质量\n两种仅含 \\(X,Y\\) 的分析物在光程 \\(1.00\\,\\mathrm{cm}\\) 下服从 Beer--Lambert 定律，校正空白后的两波长吸光度分别为 \\(A_1=0.4600\\)、\\(A_2=0.3400\\)。摩尔吸光系数矩阵为\n\\[\n\\begin{pmatrix}10000&2000\\\\3000&8000\\end{pmatrix}\n\\ \\mathrm{L\\,mol^{-1}cm^{-1}}.\n\\]\n测量液由 \\(10.00\\,\\mathrm{mL}\\) 原样定容至 \\(100.0\\,\\mathrm{mL}\\) 得到。求测量液及原样的两组分浓度；再求原样 \\(25.00\\,\\mathrm{mL}\\) 中 \\(X,Y\\) 的质量（取 \\(M_X=150.0\\)、\\(M_Y=200.0\\,\\mathrm{g\\,mol^{-1}}\\)）。",
+  "answer": "1: 0.00004054054054；2: 0.00002729729730；3: 0.0004054054054；4: 0.0002729729730；5: 0.001520270270；6: 0.001364864865",
+  "explanation": "由吸光度加和关系，\n\\[\n\\begin{bmatrix}10000&2000\\\\3000&8000\\end{bmatrix}\n\\begin{bmatrix}c_X\\\\c_Y\\end{bmatrix}\n=\\begin{bmatrix}0.4600\\\\0.3400\\end{bmatrix}.\n\\]\n行列式为 \\(D=10000\\times8000-3000\\times2000=74.0\\times10^6\\neq0\\)，故\n\\[\nc_X=\\frac{8000(0.4600)-2000(0.3400)}D\n    =4.054054\\times10^{-5}\\,\\mathrm M,\n\\]\n\\[\nc_Y=\\frac{10000(0.3400)-3000(0.4600)}D\n    =2.729730\\times10^{-5}\\,\\mathrm M.\n\\]\n定容导致 \\(10.00\\) 倍稀释，原样浓度分别为 \\(4.054054\\times10^{-4}\\) 与 \\(2.729730\\times10^{-4}\\,\\mathrm M\\)。取 \\(25.00\\,\\mathrm{mL}\\) 原样，\n\\[\nm_X=c_{X,0}(0.02500)(150.0)=1.52027\\times10^{-3}\\,\\mathrm g,\n\\quad\nm_Y=c_{Y,0}(0.02500)(200.0)=1.36486\\times10^{-3}\\,\\mathrm g.\n\\]\n代回两波长方程应分别恢复 \\(0.4600\\) 与 \\(0.3400\\)。",
+  "problem_title": "双波长光谱解混、稀释反算与试样质量",
+  "scientific_assumptions": "两种发色团彼此不反应、光程一致、吸光系数已在测量条件下标定；完全回收与线性吸收；两个测量波长可逆矩阵。",
+  "numeric_answers": [
+    0.00004054054054054054,
+    0.000027297297297297305,
+    0.0004054054054054054,
+    0.00027297297297297304,
+    0.0015202702702702701,
+    0.0013648648648648652
+  ],
+  "independent_equation_residuals": [
+    1.206764157201257e-16,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "independent_model_witness_count": 6,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "quality_status": "awaiting_expert_review",
+  "semantic_duplicate_review_pending": true,
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/advanced-integrated-12.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_12_distinct_advanced_integrated_chemical_problems",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Written independently; 12 new analytic modeling problems with explicit scientific assumptions, no adapted textbook/exam question text."
+  }
+}
