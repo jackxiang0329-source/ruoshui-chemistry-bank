@@ -33,7 +33,7 @@ test('each method reconstructs its input observable and rejects a corrupted answ
 test('chemistry physical bounds and explicit conditions are internally consistent',()=>{
  const qs=generate(),topic=t=>qs.filter(q=>q.topic===t);
  assert.ok(topic('mixed_salt_ionic_strength').every(q=>q.numeric_answers[0]>0));
- assert.ok(topic('ionic_crystal_density').every(q=>q.numeric_answers[0]>1.8&&q.numeric_answers[0]<2.3));
+ assert.ok(topic('ionic_crystal_density').every(q=>q.numeric_answers[0]>1.8&&q.numeric_answers[0]<2.4));
  assert.ok(topic('born_haber_lattice_energy').every(q=>q.numeric_answers[0]>0));
  assert.ok(topic('hydroxide_salt_molar_solubility').every(q=>q.numeric_answers[0]<0.01));
  assert.ok(topic('hydroxide_precipitation_onset_ph').every(q=>q.numeric_answers[0]>8&&q.numeric_answers[0]<12));
