@@ -23,7 +23,7 @@
     "semantic_duplicate_review_pending": 887,
     "source_question_rights_not_explicitly_verified": 21,
     "study_card_not_exam_question": 278,
-    "upstream_answer_key_requires_reconciliation": 13
+    "upstream_answer_key_requires_reconciliation": 11
   },
   "requested_representatives_per_subject": 32,
   "max_representatives_per_topic": 6,
@@ -603,42 +603,6 @@
     },
     {
       "subject": "physical",
-      "topic": "complex_exponential_wavefunction",
-      "source": "PaulWAyers/IntroQChemProblems",
-      "representative_id": "08399477a3acbb478168f5730191b6bf953c868804b169cfa4352be77299243b",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "conceptual_answer_requires_expert_validation",
-        "item_level_rights_human_confirmation_pending",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified",
-        "upstream_answer_key_requires_reconciliation"
-      ],
-      "review_priority_score": 97,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
-      "topic": "electron_waves_vs_atomic_lines",
-      "source": "PaulWAyers/IntroQChemProblems",
-      "representative_id": "cb09bdcf21c23a9b4c0b9e45fb0d9f5cae234c5ef213efe8a3846a7840b63070",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "conceptual_answer_requires_expert_validation",
-        "item_level_rights_human_confirmation_pending",
-        "semantic_duplicate_review_pending",
-        "source_question_rights_not_explicitly_verified",
-        "upstream_answer_key_requires_reconciliation"
-      ],
-      "review_priority_score": 97,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "physical",
       "topic": "momentum_vs_kinetic_operator_eigenstates",
       "source": "PaulWAyers/IntroQChemProblems",
       "representative_id": "568b42a5379995432fe0893238222d5490dd5c9fa809b1d3ad7c6b81a2bc81e4",
@@ -801,6 +765,23 @@
     },
     {
       "subject": "physical",
+      "topic": "complex_exponential_wavefunction",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "08399477a3acbb478168f5730191b6bf953c868804b169cfa4352be77299243b",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 72,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
       "topic": "davisson_germer_electron_waves",
       "source": "PaulWAyers/IntroQChemProblems",
       "representative_id": "e1bb0885352fcd15e0c5ddf89a9c4dba7907a650f0c9b6bae7ac1c12f2d36289",
@@ -821,6 +802,23 @@
       "topic": "electron_diffraction_bragg_scattering",
       "source": "PaulWAyers/IntroQChemProblems",
       "representative_id": "8164126f3aba3ba661701515c173715bfefd0853aed3d9148ec721605171804b",
+      "candidate_count": 1,
+      "sample_other_ids": [],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "conceptual_answer_requires_expert_validation",
+        "item_level_rights_human_confirmation_pending",
+        "semantic_duplicate_review_pending",
+        "source_question_rights_not_explicitly_verified"
+      ],
+      "review_priority_score": 72,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "physical",
+      "topic": "electron_waves_vs_atomic_lines",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "representative_id": "cb09bdcf21c23a9b4c0b9e45fb0d9f5cae234c5ef213efe8a3846a7840b63070",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
