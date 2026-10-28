@@ -72,7 +72,7 @@ const w={
   const DK=2*rad/3*Math.sqrt(8*R*temp/(Math.PI*M)),Dp=Dm*DK/(Dm+DK),De=eps/tort*Dp;
   const flux=De*cDiff/L,wrong=(eps/tort*Dm)*cDiff/L;
   return [DK,Dp,De,flux,wrong/flux];
- }
+ },
 
  "UC-ADV10-I104":()=>{
   const K=Math.exp(-12000/(R*1000));
