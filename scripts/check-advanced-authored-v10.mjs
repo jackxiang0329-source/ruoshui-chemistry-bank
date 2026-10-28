@@ -10,6 +10,72 @@ const F=96485.33212;
 const T=280,J=2400,q=Math.exp(-J/(R*T)),Z=1+3*q,p=3*q/Z;
 const w={
 
+"UC-ADV10-I113":()=>{
+ const R=8.314462618,F=96485.33212,T=298.15,K=Math.exp(F*(.47-.43)/(R*T));
+ const eq=x=>(.002+2*x)**2-K*(.012-x)*(.008-x);
+ let lo=0,hi=.008;
+ for(let j=0;j<100;j++){const m=(lo+hi)/2;if(eq(m)>0)hi=m;else lo=m;}
+ const x=(lo+hi)/2,a=.012-x,b=.002+2*x,c=.008-x;
+ const e32=.43+R*T/F*Math.log(b/a),e43=.47+R*T/F*Math.log(c/b);
+ assert.ok(a>0&&b>0&&c>0&&Math.abs(a+b+c-.022)<1e-14);
+ assert.ok(Math.abs(2*a+3*b+4*c-.062)<1e-13&&Math.abs(e32-e43)<1e-12);
+ const absorb=(.5/100)*(200*a+1800*b+400*c);
+ return [K,x,a,b,c,e32,absorb,-R*T*Math.log(K)/1000,b/(a+b+c),(2*a+3*b+4*c)/(a+b+c)];
+},
+"UC-ADV10-A113":()=>{
+ const v=.1525,gamma=.5247413112003934,tau=Math.cbrt(gamma*Math.pow(v,1.5)/2);
+ const sigma=Math.sqrt(v-tau*tau),mu=8.75-tau;
+ const moments=(mu,sigma,tau)=>{
+  const N=20000,max=40*tau,h=max/N;let norm=0,m2=0,m3=0;
+  for(let i=0;i<=N;i++){
+   const y=i*h,d=y-tau,weight=(i===0||i===N?1:i%2?4:2)*Math.exp(-y/tau)/tau;
+   norm+=weight;m2+=weight*(d*d+sigma*sigma);m3+=weight*(d*d*d+3*d*sigma*sigma);
+  }
+  norm*=h/3;m2*=h/3;m3*=h/3;
+  assert.ok(Math.abs(norm-1)<1e-10&&m2>0);
+  return [mu+tau,m2,m3/Math.pow(m2,1.5)];
+ };
+ const first=moments(mu,sigma,tau),second=moments(11,.4,.1);
+ const rm=(second[0]-first[0])/(2*(Math.sqrt(first[1])+Math.sqrt(second[1])));
+ return [tau,sigma,mu,...first,...second,rm];
+},
+"UC-ADV10-O110":()=>{
+ const a0=.01,kc=.012,kh=.003,k2=.035,n0=.4,kd=.01,dt=.01;
+ let v=[a0,0,0,0];
+ const f=(t,y)=>{const ext=k2*n0*Math.exp(-kd*t)*y[0];return [-(kc+kh)*y[0]-ext,kc*y[0],ext,kh*y[0]];};
+ for(let j=0;j<12000;j++){
+  const t=j*dt,add=(u,delta,h)=>u.map((z,i)=>z+h*delta[i]);
+  const k1=f(t,v),k2v=f(t+dt/2,add(v,k1,dt/2)),k3=f(t+dt/2,add(v,k2v,dt/2)),k4=f(t+dt,add(v,k3,dt));
+  v=v.map((z,i)=>z+dt*(k1[i]+2*k2v[i]+2*k3[i]+k4[i])/6);
+ }
+ const [a,c,e,h]=v,sum=c+e+h,branch=t=>k2*n0*Math.exp(-kd*t)/(kc+kh+k2*n0*Math.exp(-kd*t));
+ const exact=a0*Math.exp(-(kc+kh)*120-(k2*n0/kd)*(1-Math.exp(-kd*120)));
+ assert.ok(Math.abs(v.reduce((x,y)=>x+y,0)-a0)<1e-12&&Math.abs(a-exact)<1e-12);
+ assert.ok(v.every(x=>x>=0)&&Math.abs(c/h-kc/kh)<1e-10);
+ return [a,c,e,h,c/e,c/sum,branch(0),branch(120)];
+},
+"UC-ADV10-P110":()=>{
+ const De=2e-9,k=.025,cs=1.2;
+ const solve=radius=>{
+  const phi=radius*Math.sqrt(k/De),N=10000,h=1/N;
+  let x=h,u=1+phi*phi*x*x/6,v=phi*phi*x/3;
+  const rhs=(x,u,v)=>[v,phi*phi*u-2*v/x];
+  for(let j=1;j<N;j++){
+   const a=rhs(x,u,v),b=rhs(x+h/2,u+h*a[0]/2,v+h*a[1]/2);
+   const c=rhs(x+h/2,u+h*b[0]/2,v+h*b[1]/2),d=rhs(x+h,u+h*c[0],v+h*c[1]);
+   u+=h*(a[0]+2*b[0]+2*c[0]+d[0])/6;
+   v+=h*(a[1]+2*b[1]+2*c[1]+d[1])/6;x+=h;
+  }
+  const center=cs/u,eta=3*v/(u*phi*phi),J=De*cs*v/(u*radius);
+  assert.ok(eta>0&&eta<1&&center>0&&center<cs);
+  assert.ok(Math.abs(J-eta*k*cs*radius/3)<1e-15);
+  return [phi,eta,center,J,4*Math.PI*radius*radius*J];
+ };
+ const first=solve(.0005),second=solve(.001);
+ return [...first,second[0],second[1],second[3]];
+},
+
+
 "UC-ADV10-I112":()=>{
  const s=2.4,e0=2.1,quantum=.16;
  let prob=Math.exp(-s),sum=0,first=0,second=0,p2=0,p3=0;

@@ -2,8 +2,8 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 48,
-  "preliminary_flags": 21,
+  "current_draft_count": 52,
+  "preliminary_flags": 25,
   "pairs": [
     {
       "new_id": "UC-ADV10-I102",
@@ -130,9 +130,33 @@
       "prior_id": "UC-ADV7-O43",
       "reason": "旧题为线性三物种反应网络矩阵动力学，本题为非线性自催化Brusselator的Hopf局部稳定性；需跨学科核心模型人工核查。",
       "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-I113",
+      "prior_id": "UC-ADV10-I102",
+      "reason": "均含可逆金属氧化还原与Nernst电势；新题增加三价态归中反应、氧化数守恒及稀释光谱，仍需与v9 PCET和混合电势问题作方程级复核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-A113",
+      "prior_id": "UC-ADV10-A112",
+      "reason": "均属色谱领域；旧题求梯度迁移积分和保留时间，新题对EMG峰形作累积量反卷积及矩分离度计算，跨辑色谱矩模型仍待核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-O110",
+      "prior_id": "UC-ADV10-O101",
+      "reason": "均为多通道动力学，旧题是构型互变的动态拆分，新题为外部时变亲核剂驱动的SN2与环化竞争；须比较方程级实质差异。",
+      "judgement": "high_priority_pending_human_core_model_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-P110",
+      "prior_id": "UC-ADV10-P104",
+      "reason": "均含扩散传质；旧题是多组分Maxwell–Stefan代数通量，新题为球形多孔颗粒一阶反应扩散边值问题及Thiele有效因子，待专家比较。",
+      "judgement": "pending_human_comparison"
     }
   ],
-  "notes": "All 44 draft records await human chemistry, copyright, and all-series governing-equation review. 17 potential overlap pairs; 0 expert approvals.",
+  "notes": "All 52 draft records await human chemistry, copyright and cross-series governing-equation review; 25 preliminary model-overlap flags; 0 expert approvals.",
   "expert_approved": 0,
   "new_items_requiring_cross_series_comparison": [
     {
@@ -350,6 +374,30 @@
       "model_family": "Brusselator-chemostat-autocatalytic-Hopf-Jacobian-local-stability",
       "judgement": "pending_human_comparison",
       "screening": "Independent full-answer numeric witness prepared; equation-level cross-series novelty and expert chemistry review pending."
+    },
+    {
+      "new_id": "UC-ADV10-I113",
+      "model_family": "three-valence-comproportionation-Nernst-conservation-diluted-spectral-readout",
+      "judgement": "pending_human_comparison",
+      "screening": "Numerical witness provided; full cross-series model and expert chemistry review not completed."
+    },
+    {
+      "new_id": "UC-ADV10-A113",
+      "model_family": "exponentially-modified-Gaussian-chromatographic-cumulant-deconvolution-moment-resolution",
+      "judgement": "pending_human_comparison",
+      "screening": "Numerical witness provided; full cross-series model and expert chemistry review not completed."
+    },
+    {
+      "new_id": "UC-ADV10-O110",
+      "model_family": "time-dependent-nucleophile-competing-intramolecular-SN2-ringclosure-integrated-hazard",
+      "judgement": "pending_human_comparison",
+      "screening": "Numerical witness provided; full cross-series model and expert chemistry review not completed."
+    },
+    {
+      "new_id": "UC-ADV10-P110",
+      "model_family": "spherical-pellet-first-order-reaction-diffusion-Thiele-effectiveness-radial-BVP",
+      "judgement": "pending_human_comparison",
+      "screening": "Numerical witness provided; full cross-series model and expert chemistry review not completed."
     }
   ]
 }
