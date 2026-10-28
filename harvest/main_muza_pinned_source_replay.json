@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "source_repository": "MuzaPro/Organic-Chemistry-Quiz-JS",
+  "source_commit": "71f3262bce0eba6c7e1cb0814394f1e04b6a9dbc",
+  "source_git_blobs": {
+    "data/questions.json": "e4fde59d9f5faa1ff0ed82fa57ae7b05f276292a",
+    "LICENSE": "4ef30f44a9a6ade70614188412f98c76aaa3b14e",
+    "README.md": "b231e039fcacc2145a5275f197e55a645c22f99b"
+  },
+  "matched_persisted_source_exercises": 5,
+  "fixed_question_ids": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+  ],
+  "scientifically_qualified_for_exam": 0,
+  "source_only_licensing_evidence_not_third_party_item_proof": true,
+  "unresolved_science_condition_concerns": 3,
+  "human_expert_approved": 0,
+  "exam_ready": 0,
+  "items": [
+    {
+      "source_id": "q1",
+      "candidate_id": "7d299414e8b48ebbe8242d02493ee1571d184f0b5afe27066dbe3fa50814fbf4",
+      "source_git_blob_sha": "e4fde59d9f5faa1ff0ed82fa57ae7b05f276292a",
+      "source_and_saved_answer_match": true,
+      "existing_science_review_status": "candidate_only",
+      "existing_scientific_review_concern": "Question is a simple reagent-selection task; solvents and SN2 selectivity still need expert review.",
+      "source_rights_author_claims_human_verified": false,
+      "independent_scientific_expert_approved": false,
+      "eligible_for_exam": false
+    },
+    {
+      "source_id": "q2",
+      "candidate_id": "428637fc953ac4b588a810c520e1925f9616fb52d8efbfd02d88bce51f989815",
+      "source_git_blob_sha": "e4fde59d9f5faa1ff0ed82fa57ae7b05f276292a",
+      "source_and_saved_answer_match": true,
+      "existing_science_review_status": "requires_conditions_review",
+      "existing_scientific_review_concern": "Original prompt says under acidic conditions, but the selected reagent pair is ethanol and tert-butyl chloride. Conditions, competitive elimination, and acid role require clarification before publication.",
+      "source_rights_author_claims_human_verified": false,
+      "independent_scientific_expert_approved": false,
+      "eligible_for_exam": false
+    },
+    {
+      "source_id": "q3",
+      "candidate_id": "8ff61e3268c3b80f8796c3b5775c5a5a18be362a147024090ff238f6e32ea322",
+      "source_git_blob_sha": "e4fde59d9f5faa1ff0ed82fa57ae7b05f276292a",
+      "source_and_saved_answer_match": true,
+      "existing_science_review_status": "candidate_only",
+      "existing_scientific_review_concern": "Base/substrate pair is plausible; temperature and solvent affect outcome and should be clarified in a published problem.",
+      "source_rights_author_claims_human_verified": false,
+      "independent_scientific_expert_approved": false,
+      "eligible_for_exam": false
+    },
+    {
+      "source_id": "q4",
+      "candidate_id": "e9db8a9b15428852ac449dca74b6d49abb26f3734e33761a919c530c30330fdc",
+      "source_git_blob_sha": "e4fde59d9f5faa1ff0ed82fa57ae7b05f276292a",
+      "source_and_saved_answer_match": true,
+      "existing_science_review_status": "requires_catalyst_review",
+      "existing_scientific_review_concern": "Prompt explicitly describes acid-catalyzed esterification, but selected reagent pair lists only acetic acid and ethanol. Explicit catalyst and equilibrium assumptions are missing.",
+      "source_rights_author_claims_human_verified": false,
+      "independent_scientific_expert_approved": false,
+      "eligible_for_exam": false
+    },
+    {
+      "source_id": "q5",
+      "candidate_id": "5aac29b6f67f409b2304a984381ba1a7a0d081d3d4dc8e27cfc6270ca49df3bb",
+      "source_git_blob_sha": "e4fde59d9f5faa1ff0ed82fa57ae7b05f276292a",
+      "source_and_saved_answer_match": true,
+      "existing_science_review_status": "requires_workup_review",
+      "existing_scientific_review_concern": "Acidic aqueous workup is needed for 2-phenylethanol, but the selected reagent pair lists only phenylmagnesium bromide and ethylene oxide. Require explicit anhydrous conditions and separate workup.",
+      "source_rights_author_claims_human_verified": false,
+      "independent_scientific_expert_approved": false,
+      "eligible_for_exam": false
+    }
+  ],
+  "caveat": "Five saved candidate answers agree with one pinned MIT project question database; q2/q4/q5 require assumptions, catalyst, workup, and competing-reaction review. Not independent science verification or formal examination approval."
+}
