@@ -12,6 +12,8 @@ on:
       - "tests/prioritize-chemistry-sources.test.mjs"
       - "scripts/import-approved-chemistry.mjs"
       - "scripts/audit-muza-pinned-source.mjs"
+      - "scripts/audit-muza-independent-science.mjs"
+      - "tests/muza-independent-science.test.mjs"
       - "tests/muza-pinned-source.test.mjs"
       - "scripts/import-openstax-chemistry-oer.mjs"
       - "scripts/report-chemistry-coverage.mjs"
@@ -196,6 +198,8 @@ jobs:
         run: node --test tests/chemtrain-daily-stored.test.mjs
       - name: Verify ChemTrain Daily text-only licensed MCQ source
         run: node --test tests/chemtrain-daily-text.test.mjs
+      - name: Check independent atom balance and source reaction completeness for Muza five
+        run: node --test tests/muza-independent-science.test.mjs
       - name: Verify five Muza original-source question maps and unresolved reaction conditions
         run: node --test tests/muza-pinned-source.test.mjs
       - name: Verify existing MIT Muza quiz coverage and prevent duplicate imports
@@ -336,6 +340,8 @@ jobs:
         run: node scripts/build-quantum-source-review-tex.mjs
       - name: Reconcile five Muza source-locked original problems with prior chemistry caveats
         run: node scripts/audit-muza-pinned-source.mjs
+      - name: Independently verify Muza five net reactions and editorial condition flags
+        run: node scripts/audit-muza-independent-science.mjs
       - name: Report separate raw OER and main candidate totals without double counting
         run: node scripts/report-chemistry-coverage.mjs
       - name: Recheck 185 previously uncovered chemistry candidate files
@@ -344,7 +350,7 @@ jobs:
         run: node scripts/build-pending-chemistry-source-review.mjs
       - name: Commit only real additions or changes
         run: |
-          git add -- harvest/source_candidates.json harvest/quality_audit.json harvest/main_original_numeric_replay.json harvest/main_supplementary_answer_replay.json harvest/main_tmc_stored_replay.json harvest/main_daily_mcq_stored_replay.json harvest/main_reaction_card_stored_replay.json harvest/main_additional_185_source_replay.json harvest/main_muza_pinned_source_replay.json harvest/main_pending_source_replay_queue.json harvest/main_pending_source_replay_queue.md harvest/mcq_integrity_audit.json harvest/source_review_queue.json harvest/expert_review_plan.json harvest/coverage_report.json release/chemistry-approved-manifest.json
+          git add -- harvest/source_candidates.json harvest/quality_audit.json harvest/main_original_numeric_replay.json harvest/main_supplementary_answer_replay.json harvest/main_tmc_stored_replay.json harvest/main_daily_mcq_stored_replay.json harvest/main_reaction_card_stored_replay.json harvest/main_additional_185_source_replay.json harvest/main_muza_pinned_source_replay.json harvest/muza_independent_science_review.json harvest/muza_independent_science_review.md harvest/main_pending_source_replay_queue.json harvest/main_pending_source_replay_queue.md harvest/mcq_integrity_audit.json harvest/source_review_queue.json harvest/expert_review_plan.json harvest/coverage_report.json release/chemistry-approved-manifest.json
           if [ -f harvest/external_source_catalog.json ]; then
             git add -- harvest/external_source_catalog.json
           fi
