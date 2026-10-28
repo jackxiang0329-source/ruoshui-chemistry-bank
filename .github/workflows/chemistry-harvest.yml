@@ -84,6 +84,8 @@ on:
       - "scripts/import-original-instrumental-analytical.mjs"
       - "scripts/import-original-advanced-physical.mjs"
       - "scripts/import-introqchem-2021.mjs"
+      - "scripts/audit-introqchem-key-reconciliation.mjs"
+      - "tests/introqchem-key-reconciliation.test.mjs"
       - "tests/introqchem-2021.test.mjs"
       - "harvest/pinned_introqchem_2021.json"
       - "tests/original-advanced-physical.test.mjs"
@@ -190,6 +192,8 @@ jobs:
         run: node --test tests/introqchem-2021.test.mjs
       - name: Verify 48 original advanced physical chemistry calculations
         run: node --test tests/original-advanced-physical.test.mjs
+      - name: Verify fixed-source 2021 quantum course question/key reconciliation
+        run: node --test tests/introqchem-key-reconciliation.test.mjs
       - name: Verify independently authored EIS physical chemistry exercises
         run: node --test tests/original-eis-pyeis.test.mjs
       - name: Validate public dataset metadata intake safety
@@ -280,6 +284,8 @@ jobs:
         run: node scripts/import-curated-openstax-chemistry.mjs
       - name: Rank external OpenStax source exercise blocks for manual science and rights review
         run: node scripts/audit-openstax-chemistry-oer.mjs
+      - name: Report source-pinned CHEM 3PA3 quantum key disputes, false positives and physics witnesses
+        run: node scripts/audit-introqchem-key-reconciliation.mjs
       - name: Report separate raw OER and main candidate totals without double counting
         run: node scripts/report-chemistry-coverage.mjs
       - name: Commit only real additions or changes
