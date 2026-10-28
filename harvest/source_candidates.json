@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "total_sources": 758,
+  "total_sources": 760,
   "shards": [
     {
       "path": "harvest/sources/00.jsonl",
@@ -92,7 +92,7 @@
     },
     {
       "path": "harvest/sources/16.jsonl",
-      "count": 8
+      "count": 9
     },
     {
       "path": "harvest/sources/17.jsonl",
@@ -220,7 +220,7 @@
     },
     {
       "path": "harvest/sources/36.jsonl",
-      "count": 16
+      "count": 17
     },
     {
       "path": "harvest/sources/37.jsonl",
@@ -261,10 +261,10 @@
   ],
   "subjects": {
     "inorganic": 19,
-    "organic": 110,
+    "organic": 111,
     "analytical": 74,
     "physical": 49,
-    "general": 526
+    "general": 527
   },
   "note": "All listed sources are discovery candidates, NOT rights-approved questions. Details live in the linked JSONL shards."
 }

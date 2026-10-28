@@ -3796,6 +3796,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "juyel-dev/neet-pcb-question-bank": {
+      "repository": "juyel-dev/neet-pcb-question-bank",
+      "url": "https://github.com/juyel-dev/neet-pcb-question-bank",
+      "subjects": [
+        "general"
+      ],
+      "discovery_license_spdx": "MIT",
+      "repository_license_file_present": true,
+      "license_file_git_blob_sha": "1022d9eddf2efd555e2aa1a63f0b3c6883315778",
+      "readme_file_git_blob_sha": "6869237d05ac28df3d3d3c18a3d93deb9158aaa6",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": true,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "k3no26/interactive-periodic-table-": {
       "repository": "K3no26/Interactive-Periodic-Table-",
       "url": "https://github.com/K3no26/Interactive-Periodic-Table-",
@@ -7784,6 +7801,23 @@
       "automatic_question_import_allowed": false,
       "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
     },
+    "tejas-ml/organic-chemistry": {
+      "repository": "tejas-ml/organic-chemistry",
+      "url": "https://github.com/tejas-ml/organic-chemistry",
+      "subjects": [
+        "organic"
+      ],
+      "discovery_license_spdx": "UNKNOWN",
+      "repository_license_file_present": false,
+      "license_file_git_blob_sha": null,
+      "readme_file_git_blob_sha": "5d2860dd7816a5e706900a4af0409a26bdaf6735",
+      "third_party_content_risk": false,
+      "claimed_original_exercise_rights_in_readme": false,
+      "candidate_for_content_rights_review": false,
+      "question_content_rights": "NOT_VERIFIED",
+      "automatic_question_import_allowed": false,
+      "note": "Repository-level SPDX/license and README claims are only review evidence. Individual questions, answers, images and embedded third-party material require separate, affirmative reuse rights."
+    },
     "the-burg3r/qce-chemistry-u4": {
       "repository": "the-Burg3r/QCE-Chemistry-U4",
       "url": "https://github.com/the-Burg3r/QCE-Chemistry-U4",
@@ -8843,7 +8877,7 @@
     }
   },
   "note": "License preflight does not approve, copy or release any question data.",
-  "total_checked": 519,
-  "candidates_with_repository_license_evidence": 145,
+  "total_checked": 521,
+  "candidates_with_repository_license_evidence": 146,
   "affirmatively_licensed_question_sets": 0
 }
