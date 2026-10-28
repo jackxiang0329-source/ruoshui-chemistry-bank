@@ -76,7 +76,8 @@ export function buildPending(rows,quality,coverage){
   throw Error('Expected 1525 covered and 190 uncovered with exact source taxonomy');
  items.sort((a,b)=>(TODO[b.source_repository]-TODO[a.source_repository])||
   a.source_repository.localeCompare(b.source_repository)||
-  a.topic.localeCompare(b.topic)||a.candidate_id.localeCompare(b.candidate_id));
+  String(a.topic||'').localeCompare(String(b.topic||''))||
+  a.candidate_id.localeCompare(b.candidate_id));
  return {schema_version:1,main_candidates:rows.length,
   already_source_replayed_candidate_records:covered.size,
   pending_source_replay_candidate_records:items.length,
