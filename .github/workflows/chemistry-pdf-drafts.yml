@@ -27,7 +27,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
-            texlive-xetex texlive-lang-chinese texlive-latex-extra fonts-noto-cjk \
+            texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-fonts-recommended fonts-noto-cjk \
             fonts-dejavu-core poppler-utils
       - name: Build LaTeX source from committed structured problems
         run: python3 scripts/build-chemistry-pdf.py --series all
