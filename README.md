@@ -7,7 +7,8 @@
 - **第一辑 12 道**：四科各 3 道，完整 [TeX](editorial/advanced_integrated_v1/original_advanced_integrated_12.tex)、[PDF](editorial/advanced_integrated_v1/original_advanced_integrated_12.pdf) 与 12 条 [机器可读候选](data/candidates/)。
 - **第二辑 12 道**：四科各 3 道，完整 [中文解答](editorial/advanced_integrated_v2/advanced_authored_set01.md) 和 [JSONL](editorial/advanced_integrated_v2/advanced_authored_set01.jsonl)。
 - **第三辑 12 道**：四科各 3 道，[完整中文题目及解答](editorial/advanced_integrated_v3/advanced_authored_set02.md)，[按学科归档](editorial/advanced_integrated_v3/)。
-- **合计 36 道独立编写的高阶综合题**，化学专家审核通过 **0**，正式可出卷 **0**。
+- **第四辑 50 道**：[50 道完整中文题目与分步解答](editorial/advanced_integrated_v4/50_advanced_chemistry_solutions.md)，[四科集中存储及审核说明](editorial/advanced_integrated_v4/README.md)，无机13、分析13、有机12、物化12。
+- **合计 86 道高阶原创审校题**，化学专家审核通过 **0**，正式可出卷 **0**。
 
 ## 清理政策
 
@@ -21,6 +22,7 @@
 node --test tests/advanced-integrated-12.test.mjs
 node scripts/check-advanced-authored-chemistry.mjs
 node scripts/check-advanced-authored-v3.mjs
+node scripts/check-advanced-authored-v4.mjs
 node scripts/audit-advanced-only.mjs
 ```
 
