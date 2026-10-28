@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第7辑 (50题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第7辑 (60题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -1090,6 +1090,216 @@
 答案1 = 0.0232581944；答案2 = 0.00159227512；答案3 = 0.0033932947；答案4 = 0.469241626\par
 \noindent\textbf{模型前提：}
 题设局部Tafel指数与串联传质经验公式，电流为同面积基准，忽略真实钝化和电解液局部pH变化。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P48 · Arrhenius热反馈放热CSTR的所有稳态根与迭代稳定性}
+\noindent\textbf{题目}\par
+恒容绝热CSTR进行A→B一级放热反应，进料300.0K，停留时间τ=2.000min，在300K的k300=0.3000min\textasciicircum{}-1，Ea=40.00kJ/mol。有效绝热温升100K；稳态模型X=k(T)τ/(1+k(T)τ)，T=300+100X。要求在完整可行温度区间300–400K找出全部根、逐根转换率及固定点映射的导数，指出这种数值迭代稳定判据和物理动态热稳定并非完全等价。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 从CSTR物料守恒得到X(T)=k(T)τ/[1+k(T)τ]。
+\item Arrhenius式k(T)=k300exp[−Ea/R(1/T−1/300)]。
+\item 能量方程T=300+100X(T)，即f(T)=T−300−100X(T)=0。
+\item 在[300,400]连续扫描寻找全部变号区间，每一处采用二分求根。
+\item 本题发现的稳态根个数为1，根温度依次为396.771684K。
+\item 对应转化率为0.96771684；每根满足T=300+100X。
+\item 固定点迭代G(T)=300+100X(T)导数为G′=100τk Ea/[RT²(1+τk)²]，各根导数依次是0.0954704138；|G′|<1只证明该映射局部迭代收敛。
+\item 三个独立数值模型约束残差：-4.263e-14、-4.263e-14、-5.684e-14。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1；答案2 = 396.771684；答案3 = 0.96771684\par
+\noindent\textbf{模型前提：}
+题定理想物理化学模型，机理、数值和适用范围仍待专业人工科学审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P49 · 有限浓差电池的组成相关电势积分与可逆电功}
+\noindent\textbf{题目}\par
+假想一电子电池的还原反应以进度ξ计量，起始反应物n0=0.03000mol，产物零。题设可逆电位E(ξ)=0.4000+(RT/F)ln[(n0−ξ)/ξ]，T=298.15K。将反应推进至产物/未反应物的摩尔比Q=50.00。求终反应进度、两物种mol、终电势及从ξ=0到终态可逆理论电功，注意初态对数虽然发散却可积分，不能用一个固定电势乘总电量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 有限物料守恒n反应物=n0−ξ、n产物=ξ。
+\item 反应商Q=ξ/(n0−ξ)=50，解得ξ=Kn0/(1+K)=0.0294117647mol。
+\item 未反应量n0−ξ=0.000588235294mol，产物ξ=0.0294117647mol。
+\item 终电势Eend=E0+(RT/F)ln[(n0−ξ)/ξ]=0.299490039V。
+\item 可逆功W=F∫0\textasciicircum{}ξE(u)du，需处理∫ln[(n0−u)/u]du。
+\item 解析结果W=FE0ξ+RT[n0lnn0−(n0−ξ)ln(n0−ξ)−ξlnξ]。
+\item 代入得W=1142.2988J；比恒定E0的估计多了混合自由能可逆项，且积分在0端有限。
+\item 三个独立数值模型约束残差：1.137e-15、0.000e+0、-8.164e-17。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0294117647；答案2 = 0.000588235294；答案3 = 0.299490039；答案4 = 1142.2988\par
+\noindent\textbf{模型前提：}
+题定理想物理化学模型，机理、数值和适用范围仍待专业人工科学审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P50 · Flory–Huggins高聚物稀释熵与两自旋线的非对称组成}
+\noindent\textbf{题目}\par
+假想聚合物溶剂两相均采用Flory–Huggins平均场模型，Nsolvent=1、Npolymer=100，χ=0.8000，T=300K，溶剂体积分数φ。混合自由能g/(RT)=φlnφ+(1−φ)ln(1−φ)/100+χφ(1−φ)。求自旋边界两体积分数、临界χ和临界φ，并计算φ=0.5时自由能曲率符号，论证聚合物混合熵项与小分子溶液不同及自旋与共存线区别。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item g″/(RT)=1/φ+1/[100(1−φ)]−2χ。
+\item 由g″=0求两自旋线的物理根，χ大于χc时存在两根。
+\item 三阶导为零得临界溶剂分数φc=√Npoly/(√Nsol+√Npoly)=0.909090909。
+\item 对应χc=.5(1/√Nsol+1/√Npoly)²=0.605。
+\item 本题χ=.8>χc，两个根分别为φlow=0.635916386与φhigh=0.982833614。
+\item φ=.5时无量纲曲率为0.42，根据正负判断局部均相稳定性。
+\item 高聚物分子混合熵贡献除以N=100，因此与对称正则小分子溶液的临界组成显著不同；共存线须作公共切线。
+\item 三个独立数值模型约束残差：2.220e-16、4.441e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.635916386；答案2 = 0.982833614；答案3 = 0.605；答案4 = 0.909090909；答案5 = 0.42\par
+\noindent\textbf{模型前提：}
+题定理想物理化学模型，机理、数值和适用范围仍待专业人工科学审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P51 · 简并Schottky配位构型热容峰的数值求根与高温极限}
+\noindent\textbf{题目}\par
+某材料配位电子构型只有低态E0=0（简并度1）和高态能差ΔE=3500J/mol（简并度2），其余声子热容背景已扣除。计算300K高态比例、平均构型能与Schottky热容，并在100至1000K内数值求附加热容最大值及峰温；解释为什么高温激发态仍保留2/3概率但温度导数贡献热容趋0。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 配分函数Z=1+gexp(−ΔE/RT)，高态分数p=gexp(−ΔE/RT)/Z。
+\item 平均相对能U=ΔE p，附加热容C=dU/dT。
+\item 由分布求导得C=R(ΔE/(RT))²p(1−p)。
+\item T=300K计算p=0.329592146，U=1153.57251J/mol。
+\item 该温度热容C300=3.61722349J/(mol K)。
+\item 对C(T)取数值导数并在100至1000K区间求dC/dT=0，峰温Tpeak=158.571555K。
+\item 最大热容Cpeak=6.33397623J/(mol K)；当T→∞时p→2/3但(ΔE/RT)²趋0，故C→0。
+\item 三个独立数值模型约束残差：0.000e+0、0.000e+0、8.882e-12。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.329592146；答案2 = 1153.57251；答案3 = 3.61722349；答案4 = 158.571555；答案5 = 6.33397623\par
+\noindent\textbf{模型前提：}
+题定理想物理化学模型，机理、数值和适用范围仍待专业人工科学审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P52 · 双面完美吸收平板的Fick传质多本征模剩余分数}
+\noindent\textbf{题目}\par
+厚度L=1.000mm的理想平板内部均匀含分析物c0=0.01000M，t=0两侧接触无限大清除库，边界浓度均固定零，内部扩散系数D=1.00×10\textasciicircum{}-9m²/s。计算3600s后的无量纲扩散时间Fo、平均剩余物质分数的正弦模级数首项和前三奇次模中的前两项近似，以及已迁出物质比例；说明将这种非指数单模过程视作一级反应何时有误。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Fick方程∂c/∂t=D∂²c/∂x²，边界c(0,t)=c(L,t)=0。
+\item 初态c(x,0)=c0，平均剩余比例解为Σ\_\{m=0\}∞8/[π²(2m+1)²]exp[−(2m+1)²π²Fo]。
+\item 无量纲Fo=Dt/L²=3.6。
+\item 首模m=0项=3.00647235e-16。
+\item m=1第三谐波项=1.19660409e-140，两项近似剩余比例=3.00647235e-16。
+\item 相应迁出比例1−m=1，其余更高模项为正但在此Fo下极小。
+\item 真实扩散由多本征模叠加，而不是单一反应速率常数控制，尤其初始短时不能仅保留第一个模态。
+\item 三个独立数值模型约束残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 3.6；答案2 = 3.00647235e-16；答案3 = 3.00647235e-16；答案4 = 1\par
+\noindent\textbf{模型前提：}
+题定理想物理化学模型，机理、数值和适用范围仍待专业人工科学审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P53 · 逆流换热器温度场与孤立两流体熵产生的联合检验}
+\noindent\textbf{题目}\par
+某单相稳态逆流换热器，热流体热容流率Ch=500W/K、入口430K，冷流体Cc=300W/K、入口300K；总传热系数面积积UA=220W/K，无外界热损。使用逆流效能公式ε=[1−exp(−NTU(1−Cr))]/[1−Cr exp(−NTU(1−Cr))]。求NTU、ε、实际换热功率、两出口温度及两流体总熵产生率Sgen=Ch ln(Th,out/Th,in)+Cc ln(Tc,out/Tc,in)，检验两侧热量及Sgen正值。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 先取Cmin=min(Ch,Cc)=300W/K，Cmax=500W/K，Cr=.6。
+\item 传热单元数NTU=UA/Cmin=0.733333333。
+\item 逆流效能ε=0.460108554，最大热交换功率Qmax=Cmin(Thi−Tci)。
+\item 实际Q=εQmax=17944.2336W。
+\item 两侧能量守恒分别给Tho=Thi−Q/Ch=394.111533K，Tco=Tci+Q/Cc=359.814112K。
+\item 无外界热损的整体熵产生Sgen=Ch ln(Tho/Thi)+Cc ln(Tco/Tci)=10.9658897W/K，必须≥0。
+\item 两端温差Thi−Tco与Tho−Tci均大于0，逆流换热允许；若熵产生为负表明模型参数或热流方向错置。
+\item 对能量、相平衡及临界条件的数值逆代入残差：2.027e-16、2.027e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.733333333；答案2 = 0.460108554；答案3 = 17944.2336；答案4 = 394.111533；答案5 = 359.814112；答案6 = 10.9658897\par
+\noindent\textbf{模型前提：}
+热容流率、UA恒定，逆流稳态，无环境热泄漏或相变。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P54 · 平板传导、自然对流与非线性辐射边界的表面温度求根}
+\noindent\textbf{题目}\par
+厚壁热板内侧温度500.0K，外部空气与远处辐射环境均为300.0K。热板面积0.02000m²，穿透墙的总传导热阻Rcond=0.3000K/W，外表面对流传热乘积hA=1.500W/K，表面发射率ε=0.8000、Stefan–Boltzmann常数5.670374419×10\textasciicircum{}-8W m\textasciicircum{}-2K\textasciicircum{}-4。外表面温度T未知，稳态传导热等于对流与辐射之和。求T、总热功率、对流/辐射分担比例并证明物理唯一根，禁止把辐射T4线性化后宣称精确。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 从墙内传出热功率Qcond=(Tinside−Tsurface)/Rcond。
+\item 外表面对流功率Qconv=hA(Tsurface−Tamb)。
+\item 辐射功率Qrad=εσA(Tsurface\textasciicircum{}4−Trad\textasciicircum{}4)，这里Trad=Tamb=300K。
+\item 稳态函数f(T)=Qcond−Qconv−Qrad，在300至500K内由正变负且导数严格负，故唯一根。
+\item 求得表面温度Tsurface=432.861544K。
+\item 总传热Q=223.794853W，对流Qconv=199.292316W、辐射Qrad=24.5025368W。
+\item 辐射功率占比Qrad/Q=0.109486597，对流占比Qconv/Q=0.890513403，两者之和必须为1。
+\item 对能量、相平衡及临界条件的数值逆代入残差：-5.874e-16、-5.874e-16、6.661e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 432.861544；答案2 = 223.794853；答案3 = 199.292316；答案4 = 24.5025368；答案5 = 0.109486597\par
+\noindent\textbf{模型前提：}
+墙体内部一维稳态、给定整体导热阻与外表面积，忽略温度变化对发射率及对流系数的影响。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P55 · 非等摩尔气体Stefan扩散穿越静止载气层的对数驱动力}
+\noindent\textbf{题目}\par
+一份单组分挥发蒸气A通过理想静止载气B的气膜扩散，膜厚L=2.000mm、扩散系数D\_AB=1.20×10\textasciicircum{}-5m²/s，T=300K、总压100.0kPa沿膜恒定。气膜两侧蒸气A摩尔分数分别yA,1=0.3000与yA,2=0.05000，载气B整体净摩尔通量N\_B=0，A从左向右蒸发扩散。求气体总摩尔浓度、正确Stefan通量N\_A、把等摩尔反扩散错误套用Fick线性近似得到的通量及两者相对偏差，并由N\_B=0推导分母1−yA出现的原因。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 气体总摩尔浓度C=P/(RT)，P必须用Pa、R用J/(mol K)，得到C=40.09078501mol/m³。
+\item 对二元理想混合气体，摩尔通量形式N\_A=−D\_AB C dyA/dz+yA(N\_A+N\_B)。
+\item 题设静止载气N\_B=0，因此(1−yA)N\_A=−D\_AB C dyA/dz。
+\item 在膜厚L内积分，N\_A=(D\_AB C/L)ln[(1−yA,2)/(1−yA,1)]，对数项为正。
+\item 代入得到Stefan通量N\_A=0.07345794036mol/(m²s)。
+\item 如果错误采用等摩尔反扩散N\_A≈D\_AB C(yA,1−yA,2)/L，则结果为0.06013617752mol/(m²s)。
+\item 线性值相对真实值偏差(线性−Stefan)/Stefan=-0.181352251；静止载气被A摩尔流携带的Stefan对流不可省略。
+\item 检查总压恒定、N\_B=0且气体组分摩尔分数两端均在(0,1)，Stefan通量数学上为正。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 40.090785；答案2 = 0.0734579404；答案3 = 0.0601361775；答案4 = -0.181352251\par
+\noindent\textbf{模型前提：}
+理想二元气体，B总体净通量严格零，膜内总压和温度固定，D不随组成变化。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P56 · 总压约束下双底物Langmuir–Hinshelwood最优组分的隐式极值}
+\noindent\textbf{题目}\par
+假想表面反应A(ads)+B(ads)→P，两个气体总分压固定为pA+pB=1.000bar，竞争Langmuir常数KA=10bar\textasciicircum{}-1、KB=2bar\textasciicircum{}-1，表面反应率r=k θAθB、k=0.0100mol/(g s)，θA=KApA/(1+KApA+KBpB)，θB同理。求使表面反应率最大的pA、pB及最大速率；必须考虑两底物压力互相约束，不能照搬固定pB下的最优浓度公式。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设pA=x、pB=Ptotal−x，x∈[0,Ptotal]。
+\item 两种覆盖率为θA=KA x/D、θB=KB(Ptotal−x)/D，D=1+KAx+KB(Ptotal−x)。
+\item 反应速率r(x)=k KA KB x(Ptotal−x)/D(x)²。
+\item 对ln r求导得1/x−1/(Ptotal−x)−2(KA−KB)/D=0（内部极值）。
+\item 化简得最优pA*=(1+KB P)P/[2(1+KB P)+(KA−KB)P]，数值=0.2142857143bar。
+\item 对应pB*=P−pA*=0.7857142857bar；两端x=0或1时r=0，因此该内部驻点是全局极大值。
+\item 占位分数θA=0.4545454545、θB=0.3333333333，最大速率rmax=0.001515151515mol/(g s)；因pA+pB固定，导数须同时包含pB的变化。
+\item 对能量、相平衡及临界条件的数值逆代入残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.214285714；答案2 = 0.785714286；答案3 = 0.454545455；答案4 = 0.333333333；答案5 = 0.00151515152\par
+\noindent\textbf{模型前提：}
+总分压恒定时的竞争Langmuir模型，应使用约束极值；此题数值需以完整极值条件补齐。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-P57 · 理想气体双级绝热压缩—完全中冷最优中间压力}
+\noindent\textbf{题目}\par
+2.000mol理想气体初态P1=1.000bar、T1=300.0K，要求终压P3=16.00bar，定热容比γ=1.400。比较单级可逆绝热压缩与两级可逆绝热压缩并在两级间完全冷却至300K的总轴功。要求从两级压力比相乘约束推导最优中间压力、两级出口温度及相对单级节能率，不能把两级工作和直接写成总压比的单级公式。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 理想气体可逆绝热有T\_out/T\_in=(P\_out/P\_in)\textasciicircum{}\{(γ−1)/γ\}，取α=(γ−1)/γ。
+\item 恒热容Cp=γR/(γ−1)=29.1006192J/(mol K)。
+\item 单级压缩出口Tsingle=300×16\textasciicircum{}α=662.453708K，轴功W1=nCp(Tsingle−300)=21095.2547J。
+\item 两级压比r1=Pmid/P1、r2=P3/Pmid，乘积固定为16。
+\item 总轴功W2=nCp×300(r1\textasciicircum{}α+r2\textasciicircum{}α−2)，由对称性/凸性在r1=r2=√16=4时取最小。
+\item 故Pmid=4.000bar，每级绝热出口温度=445.798287K，完全中冷后第二级再次从300K起压缩。
+\item 最小两级轴功W2=16971.2817J，相对节能率1−W2/W1=0.195492923；忽略中冷热量的代价只意味着比较轴功，并非完整设备能耗。
+\item 对能量、相平衡及临界条件的数值逆代入残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 4；答案2 = 662.453708；答案3 = 21095.2547；答案4 = 16971.2817；答案5 = 0.195492923\par
+\noindent\textbf{模型前提：}
+气体Cp与γ常数，每段可逆绝热且中冷恢复300K，比较仅指压缩轴功，不计冷却系统功。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
