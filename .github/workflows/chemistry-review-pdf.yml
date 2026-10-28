@@ -4,6 +4,9 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/chemistry-review-pdf.yml"
+      - "scripts/audit-introqchem-key-reconciliation.mjs"
+      - "scripts/build-quantum-source-review-tex.mjs"
+      - "tests/quantum-source-review-tex.test.mjs"
       - "scripts/build-chemistry-source-tex.mjs"
       - "tests/chemistry-source-tex.test.mjs"
   workflow_dispatch:
@@ -25,8 +28,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - name: Verify quantum reconciliation math, source indices, and license gates
+        run: node --test tests/introqchem-key-reconciliation.test.mjs tests/quantum-source-review-tex.test.mjs
       - name: Verify no unlicensed source content can be promoted
         run: node --test tests/chemistry-source-tex.test.mjs
+      - name: Generate quantum source reconciliation Chinese TeX
+        run: |
+          node scripts/audit-introqchem-key-reconciliation.mjs
+          node scripts/build-quantum-source-review-tex.mjs
       - name: Generate provenance-locked Chinese TeX source
         run: node scripts/build-chemistry-source-tex.mjs
       - name: Install XeLaTeX and Chinese fonts
@@ -46,6 +55,16 @@ jobs:
           pdfinfo chemistry_source_science_audit.pdf | grep -E "^(Pages|Page size):"
           pdftotext chemistry_source_science_audit.pdf /tmp/chemistry-source-science-audit.txt
           grep -q "大学化学" /tmp/chemistry-source-science-audit.txt
+      - name: Compile source-reconciled quantum mathematics appendix
+        run: |
+          set -euo pipefail
+          cd harvest/import_reports/quantum_source_reconciliation_zh
+          xelatex -interaction=nonstopmode -file-line-error -halt-on-error quantum_source_key_reconciliation.tex
+          xelatex -interaction=nonstopmode -file-line-error -halt-on-error quantum_source_key_reconciliation.tex
+          test "$(stat -c%s quantum_source_key_reconciliation.pdf)" -gt 22000
+          pdftotext quantum_source_key_reconciliation.pdf /tmp/quantum-review.txt
+          grep -q "量子化学" /tmp/quantum-review.txt
+          pdfinfo quantum_source_key_reconciliation.pdf | grep -E "^(Pages|Page size):"
       - name: Upload Chinese TeX and PDF as reviewer-only artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -53,12 +72,16 @@ jobs:
           path: |
             external_sources/openstax_chemistry/reports/chemistry_source_science_audit.tex
             external_sources/openstax_chemistry/reports/chemistry_source_science_audit.pdf
+            harvest/import_reports/quantum_source_reconciliation_zh/quantum_source_key_reconciliation.tex
+            harvest/import_reports/quantum_source_reconciliation_zh/quantum_source_key_reconciliation.pdf
           if-no-files-found: error
       - name: Commit versioned printable source and PDF to quarantine archive
         run: |
           set -euo pipefail
           git add -f -- external_sources/openstax_chemistry/reports/chemistry_source_science_audit.tex \
-            external_sources/openstax_chemistry/reports/chemistry_source_science_audit.pdf
+            external_sources/openstax_chemistry/reports/chemistry_source_science_audit.pdf \
+            harvest/import_reports/quantum_source_reconciliation_zh/quantum_source_key_reconciliation.tex \
+            harvest/import_reports/quantum_source_reconciliation_zh/quantum_source_key_reconciliation.pdf
           if git diff --cached --quiet; then
             echo "No changed research review output"
             exit 0

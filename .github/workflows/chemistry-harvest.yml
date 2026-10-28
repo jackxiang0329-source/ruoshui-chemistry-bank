@@ -85,6 +85,8 @@ on:
       - "scripts/import-original-advanced-physical.mjs"
       - "scripts/import-introqchem-2021.mjs"
       - "scripts/audit-introqchem-key-reconciliation.mjs"
+      - "scripts/build-quantum-source-review-tex.mjs"
+      - "tests/quantum-source-review-tex.test.mjs"
       - "tests/introqchem-key-reconciliation.test.mjs"
       - "tests/introqchem-2021.test.mjs"
       - "harvest/pinned_introqchem_2021.json"
@@ -192,6 +194,8 @@ jobs:
         run: node --test tests/introqchem-2021.test.mjs
       - name: Verify 48 original advanced physical chemistry calculations
         run: node --test tests/original-advanced-physical.test.mjs
+      - name: Verify 21-course quantum source review can be typeset without rights promotion
+        run: node --test tests/quantum-source-review-tex.test.mjs
       - name: Verify fixed-source 2021 quantum course question/key reconciliation
         run: node --test tests/introqchem-key-reconciliation.test.mjs
       - name: Verify independently authored EIS physical chemistry exercises
@@ -286,6 +290,8 @@ jobs:
         run: node scripts/audit-openstax-chemistry-oer.mjs
       - name: Report source-pinned CHEM 3PA3 quantum key disputes, false positives and physics witnesses
         run: node scripts/audit-introqchem-key-reconciliation.mjs
+      - name: Generate quantum source reconciliation Chinese TeX in research quarantine
+        run: node scripts/build-quantum-source-review-tex.mjs
       - name: Report separate raw OER and main candidate totals without double counting
         run: node scripts/report-chemistry-coverage.mjs
       - name: Commit only real additions or changes
