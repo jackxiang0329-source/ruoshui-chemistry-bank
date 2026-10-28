@@ -34,7 +34,7 @@ jobs:
           sudo apt-get update -qq
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
             texlive-xetex texlive-lang-chinese texlive-latex-recommended \
-            fonts-noto-cjk fonts-dejavu-core poppler-utils
+            texlive-fonts-recommended fonts-noto-cjk fonts-dejavu-core poppler-utils
       - name: Compile two passes for Chinese contents and source citations
         run: |
           set -euo pipefail
