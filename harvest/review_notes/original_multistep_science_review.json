@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "total": 12,
+  "independent_numeric_recomputations": 24,
+  "assumption_presence_checks": 12,
+  "full_source_replays": 12,
+  "expert_approved": 0,
+  "publishable": false,
+  "caution": "Arithmetic, chemical assumptions and units machine-checked; no chemistry expert assessment or permission to publish.",
+  "records": [
+    {
+      "id": "e7a1c8188c04d6f3a8f41b7ddfd6bf124ea17c1e9f73674f382ebf1ddf6f97fe",
+      "topic": "carbonate_bicarbonate_dual_endpoint",
+      "subject": "analytical",
+      "values": [
+        0.02,
+        0.03000000000000001
+      ],
+      "units": [
+        "mol/L",
+        "mol/L"
+      ],
+      "manual_review_prompt": "确认仅含两种碳酸盐，并核验两终点的酸量计量。",
+      "science_checked_by_human": false,
+      "publishable": false
+    },
+    {
+      "id": "154eddbcf6e4f19f71732746f23b9ad0c21c46bfd5c0af863e85dd5c13877139",
+      "topic": "calcium_magnesium_differential_edta",
+      "subject": "analytical",
+      "values": [
+        0.0048,
+        0.0032
+      ],
+      "units": [
+        "mol/L",
+        "mol/L"
+      ],
+      "manual_review_prompt": "确认测钙条件可有效排除镁及其他络合干扰。",
+      "science_checked_by_human": false,
+      "publishable": false
+    },
+    {
+      "id": "b09333853a5678f55d412df336f65018ea23bc0b17c0a597d3615f3c62cd66fb",
+      "topic": "dual_wavelength_spectrophotometric_inversion",
+      "subject": "analytical",
+      "values": [
+        0.00002857142857142857,
+        0.000042857142857142856
+      ],
+      "units": [
+        "mol/L",
+        "mol/L"
+      ],
+      "manual_review_prompt": "检查吸光度可加、基质空白和矩阵消光系数单位。",
+      "science_checked_by_human": false,
+      "publishable": false
+    },
+    {
+      "id": "36747115884c71454495282bb5ed0fe46a0698b1136f3726b15769cc232b472e",
+      "topic": "weak_acid_titration_half_and_equivalence_ph",
+      "subject": "analytical",
+      "values": [
+        4.7447274948966935,
+        8.7218258602874
+      ],
+      "units": [
+        "",
+        ""
+      ],
+      "manual_review_prompt": "半当量采用近似 pH=pKa；当量点包含弱碱水解，并忽略水自解离的微小修正。",
+      "science_checked_by_human": false,
+      "publishable": false
+    },
+    {
+      "id": "5eb9e028a6dffcf56baff25b103d4cd620bf1164b1c76f50657f0f96dc794082",
+      "topic": "concentration_uncertainty_propagation",
+      "subject": "analytical",
+      "values": [
+        0.223606797749979,
+        0.0001118033988749895
+      ],
+      "units": [
+        "%",
+        "mol/L"
+      ],
+      "manual_review_prompt": "独立标准不确定度按方差合成，注意百分数换算。",
+      "science_checked_by_human": false,
+      "publishable": false
+    },
+    {
+      "id": "58d3fefd9af398bc0b7dc454c8046319da62e4e443aa44b432eccb0530a0d9ae",
+      "topic": "acidic_permanganate_iron_mass_and_molarity",
+      "subject": "analytical",
+      "values": [
+        0.04,
+        2233.8
+      ],
+      "units": [
+        "mol/L",
+        "mg/L"
+      ],
+      "manual_review_prompt": "仅在酸性且锰终态为 Mn²⁺ 时可使用 1:5 的电子计量。",
+      "science_checked_by_human": false,
+      "publishable": false
+    },
+    {
+      "id": "7a2e8a4e0511d8466436d1c38e9d677983de7c0ed60d13b4734c04f41637eeeb",
+      "topic": "coupled_equilibria_free_energy",
+      "subject": "physical",
+      "values": [
+        12,
+        -6.159976807284153
+      ],
+      "units": [
+        "",
+        "kJ/mol"
+      ],
+      "manual_review_prompt": "净反应的无量纲平衡常数可相乘，但温度与标准态必须相同。",
+      "science_checked_by_human": false,
+      "publishable": false
+    },
+    {
+      "id": "2039a1a66c265ded79d795fe00ab91754af83aebade7c4942446dea47b61f7bf",
+      "topic": "adiabatic_neutralization_calorimetry",
+      "subject": "physical",
+      "values": [
+        6.818181818181818,
+        31.81818181818182
+      ],
+      "units": [
+        "K",
+        "°C"
+      ],
+      "manual_review_prompt": "量热杯吸热、蒸发损失和热容不均匀均被假定可忽略。",
+      "science_checked_by_human": false,
+      "publishable": false
+    },
+    {
+      "id": "7a40d5feb38676b77f19e10f77ab414de0d8c701e81ce0b5f80ad7cd677da568",
+      "topic": "hydrogen_oxygen_fuel_cell_work_and_efficiency",
+      "subject": "physical",
+      "values": [
+        1.228839631836881,
+        82.96190043032571
+      ],
+      "units": [
+        "V",
+        "%"
+      ],
+      "manual_review_prompt": "电池标准电动势应使用 Gibbs 能，不能直接以燃烧焓代入。",
+      "science_checked_by_human": false,
+      "publishable": false
+    },
+    {
+      "id": "6f6a9ffa9641619b438c422451905e5128d66cccb91012cbef36bd4617953da1",
+      "topic": "magnesium_chloride_mean_activity_coefficient",
+      "subject": "physical",
+      "values": [
+        0.003,
+        0.8795121505267485
+      ],
+      "units": [
+        "mol/L",
+        ""
+      ],
+      "manual_review_prompt": "采用 1:2 离子计量和极稀溶液的 Debye–Hückel 极限定律。",
+      "science_checked_by_human": false,
+      "publishable": false
+    },
+    {
+      "id": "a7c200cbb7509038f735e8f50d57d2be81d4200a061f05fd8889484951a08ca7",
+      "topic": "binary_phase_diagram_lever_rule",
+      "subject": "physical",
+      "values": [
+        0.3333333333333333,
+        50
+      ],
+      "units": [
+        "",
+        "mol"
+      ],
+      "manual_review_prompt": "杠杆规则求的是摩尔比例，不应误写为相体积比例。",
+      "science_checked_by_human": false,
+      "publishable": false
+    },
+    {
+      "id": "18d846cd7d9e2c04cdbb708d9822555beb0c00378e13d55765ca1f765bdb08d8",
+      "topic": "carnot_engine_work_and_entropy_balance",
+      "subject": "physical",
+      "values": [
+        0.4,
+        600
+      ],
+      "units": [
+        "",
+        "J"
+      ],
+      "manual_review_prompt": "可逆热机熵产生为零，实际不可逆热机效率低于 Carnot 上限。",
+      "science_checked_by_human": false,
+      "publishable": false
+    }
+  ]
+}
