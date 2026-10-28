@@ -35,7 +35,7 @@ const application={
   fick_diffusion(c){const J=1.4e-9*(c-.00015)*1000/.0002,n=J*.01*3600;return [J,n,n*35.45*1000];}
 };
 assert.equal(rows.length,200,'Expected exactly 200 exercises');
-const idSet=new Set(),pairSet=new Set(),methods=new Map(),models=new Map(),diff={4:0,5:0};
+const idSet=new Set(),pairSet=new Set(),methods=new Map(),models=new Map(),diff={2:0,3:0};
 rows.forEach((p,i)=>{
   const id='UC-CI-20261028-'+String(i+1).padStart(3,'0');
   assert.equal(p.id,id,'Stable ID order mismatch');
