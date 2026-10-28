@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "bae497120a7f0bc36f3ac60289699e8cbb797192ddc2e180a9f46769a314c3b4",
+  "subject": "analytical",
+  "topic": "electrogravimetric_copper_assay",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_applied_calculation_with_conditions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "将 100.0 mL 未知 Cu²⁺ 水溶液中的铜完全电沉积到已称量电极上，电极质量增加 0.1271 g。假设沉积物全为 Cu 且回收率 100%，取 M(Cu)=63.546 g/mol，求原试液的 Cu²⁺ 物质的量浓度。",
+  "answer": "铜离子浓度 = 0.020001 mol/L。",
+  "explanation": "n(Cu)=0.1271/63.546 mol，溶液体积为 0.1000 L，故 c=n/V。若有其他金属共同析出、电极干燥不足或沉积不完全，重量换算均会产生偏差。",
+  "numeric_answers": [
+    0.020001258930538505
+  ],
+  "units": "mol/L",
+  "numerical_inverse_crosschecked": true,
+  "mathematical_identity_check_only_not_science_peer_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-analytical-physical-topics.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_original_examples",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored applied quantitative chemistry case and explanation; no external exam question copied."
+  }
+}

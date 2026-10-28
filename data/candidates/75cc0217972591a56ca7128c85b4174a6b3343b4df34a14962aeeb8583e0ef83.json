@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "75cc0217972591a56ca7128c85b4174a6b3343b4df34a14962aeeb8583e0ef83",
+  "subject": "physical",
+  "topic": "integrated_second_order_consumption",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_applied_calculation_with_conditions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "一反应按已定义的速率律 −d[A]/dt=k[A]² 进行，k=0.200 L/(mol·min)，起始 [A]₀=0.500 mol/L。若 k 恒定且无逆反应，求 10.0 min 后的 [A] 并说明为何半衰期依赖初始浓度。",
+  "answer": "10 分钟后的反应物浓度 = 0.25000 mol/L。",
+  "explanation": "二级积分式 1/[A]−1/[A]₀=kt，得 [A]=1/(1/0.500+0.200×10)。二级反应 t₁/₂=1/(k[A]₀)，与一级反应半衰期不同。",
+  "numeric_answers": [
+    0.25
+  ],
+  "units": "mol/L",
+  "numerical_inverse_crosschecked": true,
+  "mathematical_identity_check_only_not_science_peer_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-analytical-physical-topics.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_original_examples",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored applied quantitative chemistry case and explanation; no external exam question copied."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "fbc9fc022971547154a5c027d6cb1a63694938f75866d43c33e95be8da85dbb9",
+  "subject": "analytical",
+  "topic": "sulfate_baso4_gravimetry",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_applied_calculation_with_conditions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "取质量为 0.2000 g 的固体试样，将其中 SO₄²⁻ 完全转化为经恒重的纯 BaSO₄ 沉淀 0.2334 g。取 M(SO₄²⁻)=96.06 g/mol、M(BaSO₄)=233.39 g/mol，假设其他离子不形成该沉淀，求试样中硫酸根的质量百分数。",
+  "answer": "硫酸根质量分数 = 48.032 %。",
+  "explanation": "每摩尔 BaSO₄ 对应一摩尔 SO₄²⁻，m(SO₄²⁻)=0.2334×96.06/233.39 g，再除以 0.2000 g 并乘 100%。共沉淀和洗涤损失均会破坏该换算前提。",
+  "numeric_answers": [
+    48.03205792878872
+  ],
+  "units": "%",
+  "numerical_inverse_crosschecked": true,
+  "mathematical_identity_check_only_not_science_peer_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-analytical-physical-topics.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_original_examples",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored applied quantitative chemistry case and explanation; no external exam question copied."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "3100bd191934024e9fe330883f93465e27a7e8b871ea8a3ce0ce3ab57ef0bc47",
+  "subject": "analytical",
+  "topic": "stern_volmer_quenching_constant",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_applied_calculation_with_conditions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "在温度固定的荧光猝灭实验中，未加猝灭剂时荧光强度 F₀=1000，加入浓度 [Q]=0.00500 mol/L 的猝灭剂后 F=800。若仅用 Stern–Volmer 形式 F₀/F=1+KSV[Q] 拟合该点，求 KSV，并说明为何单一数据点无法判别静态与动态猝灭。",
+  "answer": "Stern–Volmer 系数 KSV = 50.000 L/mol。",
+  "explanation": "F₀/F=1000/800=1.25，因此 KSV=(1.25−1)/0.00500。静态和动态猝灭均可能导致稳态强度下降，通常还需要寿命测量等证据鉴别机理。",
+  "numeric_answers": [
+    50
+  ],
+  "units": "L/mol",
+  "numerical_inverse_crosschecked": true,
+  "mathematical_identity_check_only_not_science_peer_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-analytical-physical-topics.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_original_examples",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored applied quantitative chemistry case and explanation; no external exam question copied."
+  }
+}
