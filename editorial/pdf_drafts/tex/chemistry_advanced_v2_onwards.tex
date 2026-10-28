@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至6辑 (174题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至7辑 (184题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -3425,6 +3425,221 @@ free\_concentration = 0.00960792001；uptake\_per\_g = 0.00196039996；adsorbed\
 extent = 0.41392077；T\_final = 382.784154；K\_final = 0.706253947；isothermal\_extent = 0.8\par
 \noindent\textbf{模型前提：}
 理想化的物理化学反应器与平衡模型，实际实验边界需专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\clearpage
+\section*{第7辑 · 题目及解答}
+\addcontentsline{toc}{section}{第7辑}
+\subsection*{无机化学}
+\addcontentsline{toc}{subsection}{第7辑 / 无机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-I46 · 羟基竞争与有限配体缓冲下金属沉淀的相边界}
+\noindent\textbf{题目}\par
+某假想二价金属总浓度CM=0.01000 M，单齿配体L−总浓度CL=0.01200 M，pH固定为5.000。水相仅含M2+、ML+和MOH+，条件配位常数KML=500 L/mol，水解比[MOH+]/[M2+]=Kh/[H+]且Kh=3.00×10\textasciicircum{}-6 M。固态M(OH)2的Ksp=1.00×10\textasciicircum{}-13。先按无沉淀假设求全部物种与游离L，再检验离子积，并说明若析出必须新增什么变量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设游离金属m、游离配体l、质子浓度h=10\textasciicircum{}-5 M。水解式给[MOH+]=mKh/h，配位式[ML+]=KML ml。
+\item 金属平衡CM=m(1+Kh/h+KML l)，故m=CM/(1+Kh/h+KML l)。
+\item 配体质量守恒CL=l+[ML+]=l+CM KML l/(1+Kh/h+KML l)。
+\item 该方程左端对l单调增、在0与CL之间有唯一物理根，数值l=0.00529374651 M。
+\item 由此游离M2+=0.00253365116 M、ML+=0.00670625349 M、MOH+=0.000760095348 M。
+\item 由Kw得[OH−]=10\textasciicircum{}-9 M，离子积Q=m[OH−]²=2.53365116e-21，与Ksp相比Q/Ksp=2.53365116e-8。
+\item 若Q>Ksp，初始无沉淀假设须放弃；需添加析出量ξ并以CM−ξ替代溶液金属总量重解配体/金属守恒与饱和关系。
+\item 数值逆核验：以金属、电荷、配位或相边界独立方程复算；归一化残差为0.00e+0、1.73e-16、0.00e+0，只保证题设模型内的一致性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00529374651；答案2 = 0.00253365116；答案3 = 0.00670625349；答案4 = 0.000760095348；答案5 = 2.53365116e-08\par
+\noindent\textbf{模型前提：}
+仅指定三种溶解金属物种，固定pH，Ksp使用游离离子活动度的浓度近似；此处只判定初始固相稳定性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-I47 · 双质子多酸配体与微量金属捕获耦合分布}
+\noindent\textbf{题目}\par
+假想二元酸H2L的pKa1=6.50、pKa2=10.50，水相缓冲至pH8.000，配体分析总浓度0.004000 M。假定金属M2+的自由浓度被大型储液池维持0.001000 M，只允许ML中性络合物形成，形成常数β=5000 L/mol，仅L2−参与配位。求自由酸碱形态的分布、络合物浓度、总配体结合率和每种游离物种浓度，说明为何不能把全部配体当作L2−。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对二元酸，D=h²+Ka1 h+Ka1 Ka2；游离酸碱池的三个分数分别α0=h²/D、α1=Ka1 h/D、α2=Ka1Ka2/D。
+\item 先计算pH8的游离形态分数：α0=0.0305597539、α1=0.966384271、α2=0.00305597539，相加为1。
+\item 设所有未络合配体总量U，金属自由m由外部库固定；[L2−]=α2 U。
+\item 形成平衡[ML]=βmα2 U，配体总守恒CT=U+[ML]。
+\item 因此U=CT/(1+βmα2)=0.00393980034 M，[ML]=0.0000601996643 M。
+\item 自由H2L=α0U=0.000120399329，HL−=α1U=0.00380736107，L2−=α2U=0.0000120399329 M。
+\item 络合率[ML]/CT=0.0150499161；误把α2视作1将大幅高估结合量；金属库持续维持m的限制必须写清。
+\item 数值逆核验：以金属、电荷、配位或相边界独立方程复算；归一化残差为-1.11e-16、0.00e+0、1.13e-16，只保证题设模型内的一致性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0305597539；答案2 = 0.966384271；答案3 = 0.00305597539；答案4 = 6.01996643e-05；答案5 = 0.0150499161\par
+\noindent\textbf{模型前提：}
+外部金属储液池钳定游离M2+浓度而非金属总量；H2L各游离酸形态快速平衡、没有其它络合物。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-I48 · 两个竞争配体同时争夺开放配位位点的条件选择性}
+\noindent\textbf{题目}\par
+假想二价金属M总浓度0.02000M，同时与单齿阴离子L−及中性螯合剂E竞争形成ML+、ME2+，条件形成常数分别为3000及250 L/mol。L的总浓度为0.01500M，而游离E因巨大外部缓冲源被固定为0.005000M，pH固定，无沉淀。求游离L、M、ML、ME及L在已配位金属中的占比，并证明唯一根；说明若E缓冲不能维持，哪一守恒关系必须新增。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设l=[L]、m=[M]；两配合物分别为ML=K\_L m l、ME=K\_E m e。
+\item 由金属守恒m=CM/(1+K\_Ll+K\_Ee)，e=0.005由外部保持不变。
+\item L守恒CL=l+CM K\_Ll/(1+K\_Ll+K\_Ee)，在l≥0严格递增，物理解唯一。
+\item 求根l=0.00154264926 M，游离金属m=0.00290784412 M。
+\item 两种配合物ML=0.0134573507 M、ME=0.00363480515 M，金属四项应相加为CM。
+\item L在全部络合金属中占比ML/(ML+ME)=0.787340744。
+\item 若E并非外部固定自由浓度，还必须写入E总量守恒，并与M、L守恒同时求解，不能把ME形成后E浓度仍设初值。
+\item 数值逆核验：以金属、电荷、配位或相边界独立方程复算；归一化残差为0.00e+0、0.00e+0、0.00e+0，只保证题设模型内的一致性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00154264926；答案2 = 0.00290784412；答案3 = 0.0134573507；答案4 = 0.00363480515；答案5 = 0.787340744\par
+\noindent\textbf{模型前提：}
+只有M、ML、ME，E大库自由浓度不受消耗影响，理想浓度常数。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-I49 · 二配体配位平衡的严格化学计量与配体限制边界}
+\noindent\textbf{题目}\par
+某金属M2+与单齿中性配体L发生整体反应M+2L⇌ML2，累积形成常数β2=125 L²/mol²。体积1.000L、M初始0.03000mol、L初始0.04000mol，未形成其它ML中间体（按题设禁止）。求平衡ML2、游离金属与游离配体、配体束缚率，并证明非线性质量作用在物理解区间唯一且不允许以M总量代替游离M。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 令二配体络合浓度x=[ML2]，则游离[M]=CM−x，[L]=CL−2x。
+\item 物理范围为0≤x≤min(CM,CL/2)=0.02000 M，超出则至少一物种为负。
+\item 累积平衡x=β2(CM−x)(CL−2x)²；该式不是单配体二次平衡。
+\item 函数g(x)=x/[(CM−x)(CL−2x)²]在开区间严格递增，由0趋∞，所以唯一正根。
+\item 解得x=0.00356829338 M，游离M=0.0264317066 M、L=0.0328634132 M。
+\item 配体束缚率2x/CL=0.178414669；金属结合分数x/CM=0.118943113，两比例不同。
+\item 反向核验M+x=CM、L+2x=CL、x/[(M)(L)²]=125，额外的单配体中间体不得凭空引入。
+\item 数值逆核验：以金属、电荷、配位或相边界独立方程复算；归一化残差为0.00e+0、1.73e-16、-2.22e-16，只保证题设模型内的一致性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00356829338；答案2 = 0.0264317066；答案3 = 0.0328634132；答案4 = 0.178414669\par
+\noindent\textbf{模型前提：}
+禁止ML中间体，整体二配体形成常数基于标准浓度给出；没有晶体沉淀或配体酸碱。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-I50 · 氧空位与三价离子还原比例的缺陷电中性双约束}
+\noindent\textbf{题目}\par
+假想晶体M\_1O\_(1.5−δ)，M只存在+II、+III两种价态，氧始终−II。独立价态谱给M(II)原子分数0.1200，剩余均M(III)；只有氧位空位补偿电荷。求每化学式δ、剩余氧数、平均M价、O2气体释放量（每mol晶体）与在所有磁矩同向模型下的饱和磁矩（MII=4.9μB，MIII=5.9μB）；解释不能用此预测真实零场磁化。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 以M原子总位数1为基准，平均金属价态为2p+3(1−p)=3−p。
+\item 氧负价为−2(1.5−δ)=−3+2δ，故电中性3−p−3+2δ=0。
+\item 解得δ=p/2=0.06，剩余氧数1.5−δ=1.44。
+\item 平均M价=2.88；从M2O3参照每mol化学式失去δmol氧原子，等效O2释放δ/2mol。
+\item 共线饱和假设下单位化学式磁矩=(1−p)μIII+pμII=5.78 μB。
+\item MII与MIII的磁矩不直接说明铁磁、反铁磁或超顺磁有序，真实零场值不能由电荷守恒推出。
+\item 用平均金属价3−p及氧负价−3+2δ核验总电荷零，且MII+MIII分数为1。
+\item 数值逆核验：以金属、电荷、配位或相边界独立方程复算；归一化残差为0.00e+0、0.00e+0、0.00e+0，只保证题设模型内的一致性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.06；答案2 = 1.44；答案3 = 2.88；答案4 = 0.03；答案5 = 5.78\par
+\noindent\textbf{模型前提：}
+仅指定氧空位与金属价态变化，完全共线饱和假设只用于形式磁矩。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-I51 · 有限离子交换树脂对两种一价金属的相平衡与双守恒}
+\noindent\textbf{题目}\par
+1.000 L水样含A+总0.01000mol、B+总0.02000mol，树脂拥有0.002000mol固定阴离子交换位点S−，每个位点被A或B占据，初态均为SA。平衡交换SA+B+⇌SB+A+的条件常数K=[SB][A+]/([SA][B+])=30.0（浓度与位点量采用相同参照）。求平衡两种位点占用量、水相两金属量、A释放与B吸附的共同反应进度，并证明物理解唯一。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设交换进度x mol，初始树脂全部为SA，平衡树脂SB=x，SA=NT−x，且0<x<NT。
+\item 交换SA+B+→SB+A+使自由水相A量从CA增加x、B从CB减小x，故[A]=CA+x，[B]=CB−x。
+\item 题给热力学条件常数K=[SB][A]/([SA][B])，所以K=x(CA+x)/[(NT−x)(CB−x)]。
+\item 物理区间0<x<0.002内，该商严格随x增加，并在两端由0趋无穷，因此唯一正根。
+\item 用单调求根得到交换进度x=0.001956776498mol，树脂剩余SA=0.00004322350205mol。
+\item 水相A=0.01195677650mol、B=0.01804322350mol，树脂SB=0.001956776498mol。
+\item A总量（水相A+树脂SA）=(CA+x)+(NT−x)=CA+NT；B总量（水相B+树脂SB）=(CB−x)+x=CB；交换位点总数SA+SB=NT。
+\item 树脂B占比x/NT=0.9783882490，不可把水相增出的A解释为无源金属离子。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0019567765；答案2 = 4.32235021e-05；答案3 = 0.0119567765；答案4 = 0.0180432235；答案5 = 0.978388249\par
+\noindent\textbf{模型前提：}
+交换位点总数NT=0.002 mol，水体积1L，初始SA=NT且水中两金属量CA=0.010与CB=0.020 mol；仅1:1交换且无其它物种。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-I52 · 双位点协同结合配分多项式与有限配体反演}
+\noindent\textbf{题目}\par
+一种假想金属有机框架每个金属中心具两个串联配体结合态M、ML、ML2，逐级常数K1=150 L/mol、K2=800 L/mol（明显正协同）。金属中心总浓度0.01000M，配体总浓度0.008000M，体积恒定。求自由配体、三种金属中心态比例、平均占据配体数和配体束缚比例；以结合多项式证明根唯一，而不能设每中心独立的两等价位点。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 令l为自由L浓度，配分多项式Z(l)=1+K1l+K1K2l²。
+\item 三种金属中心态概率依次p0=1/Z、p1=K1l/Z、p2=K1K2l²/Z。
+\item 平均每中心结合配体数ν=p1+2p2；配体守恒CL=l+CM ν。
+\item 对正活动度l，平均占据ν随l严格增，由此CL方程在0和CL间有唯一根。
+\item 求得自由l=0.00177647527 M；中心态分数p0=0.607838066、p1=0.161971394、p2=0.23019054。
+\item 平均占位ν=0.622352473，束缚配体比例CMν/CL=0.777940592。
+\item K2远大于K1并不意味着p2必为最大态，必须结合自由L及总量守恒判断；与独立等价位点模型的固定组合因子不同。
+\item 复核：独立重代价态、两相质量守恒及统计分配式；数值残差为0.00e+0、0.00e+0、2.22e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00177647527；答案2 = 0.607838066；答案3 = 0.161971394；答案4 = 0.23019054；答案5 = 0.622352473\par
+\noindent\textbf{模型前提：}
+只有0、1、2三种配位态，常数已按逐级微观约定包含统计因子。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-I53 · 氯离子活度稳定化配合物与金属的可见吸收转化}
+\noindent\textbf{题目}\par
+某假想四配位金属M2+在过量氯化物中发生M(H2O)4\textasciicircum{}2+ +2Cl−⇌MCl2(H2O)2(aq)+2H2O，条件形成常数β2=750 L²/mol²。游离Cl−固定为0.02000M，金属总浓度CM=0.004000M，游离氯化物库充分大。两个配位态分别具有等效吸光系数εa=150与εb=60 L/(mol cm)，光程1cm，波长处吸光按Beer定律相加。求两个配位态浓度、配位比及总吸光，解释为何此处Cl−总浓度不需要再求。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题设自由Cl−浓度l被大库钳定，水活度恒定，配位比r=β2 l²。
+\item β2=750且l=.02000，故r=0.3。
+\item 两态金属元素守恒a+b=CM，b=r a，得a=CM/(1+r)。
+\item 计算水合态a=0.00307692308M，氯络合态b=0.000923076923M。
+\item 吸光度A=εa a+εb b=0.516923077。
+\item 络合金属比例b/CM=0.230769231。
+\item 如果自由氯并非由外部缓冲，应将2b计入氯物料守恒；本题自由氯固定的假设使氯元素账本由外部大库承担。
+\item 复核：独立重代价态、两相质量守恒及统计分配式；数值残差为0.00e+0、-2.22e-16、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00307692308；答案2 = 0.000923076923；答案3 = 0.516923077\par
+\noindent\textbf{模型前提：}
+假想水合态与二氯态仅两种，Cl自由浓度外部固定，不考虑非线性浓度依赖的消光系数。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-I54 · 氧化还原两价态不同络合常数造成的条件电势偏移}
+\noindent\textbf{题目}\par
+假想一电子氧化还原对M(III)+e−⇌M(II)的标准电位E°=0.7700V。氧化态与还原态总浓度分别0.004000M和0.003000M，配体自由浓度由大库保持0.01000M；只允许一配体络合MIIIL和MIIL，形成常数分别Kox=500L/mol、Kred=20L/mol。求两价态各自游离与络合浓度、正确Nernst电势、错误使用总浓度的电势偏差并分析偏移方向。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设自由配体l=.01000M，氧化态配位分数由Kox l/(1+Kox l)给出。
+\item 两价态各自守恒：Ox\_free=Ox\_tot/(1+Kox l)，Red\_free=Red\_tot/(1+Kred l)。
+\item 所以Ox\_free=0.000666666667M，Ox\_complex=0.00333333333M。
+\item Red\_free=0.0025M，Red\_complex=0.0005M。
+\item Nernst按自由离子活动度而非总分析浓度：E=E0+(RT/F)ln(Ox\_free/Red\_free)=0.736040684V。
+\item 忽视配位会得到Ewrong=0.777391294V，差值E−Ewrong=-0.0413506109V。
+\item 因氧化态更强配位而显著减少游离氧化态，E下移；若配体有限，仍须新增配体总量守恒，不能固定l。
+\item 复核：独立重代价态、两相质量守恒及统计分配式；数值残差为0.00e+0、0.00e+0、-3.47e-17。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.000666666667；答案2 = 0.0025；答案3 = 0.736040684；答案4 = -0.0413506109\par
+\noindent\textbf{模型前提：}
+一电子理想配位氧化还原，游离配体由外部缓冲源固定，液接电位忽略。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV7-I55 · 固定负电荷膜内Donnan电位与渗透压双重反演}
+\noindent\textbf{题目}\par
+半透膜外为浓度0.02000M的一价NaCl理想溶液，膜内含均匀固定负电荷浓度X=0.01000mol/L，膜只允许Na+、Cl−自由分配，不允许固定基团透出。298.15K时膜内离子满足Donnan乘积[Na+]in[Cl−]in=c\_s²及局部电中性[Na+]in−[Cl−]in=X。求膜内两离子浓度、相对外侧的电位差、两侧自由盐离子理想渗透压差，说明固定电荷的浓度不作为可迁移小离子重复计数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设膜内Na=n、Cl=c，约束n−c=X与nc=cs²。
+\item 消去c得到n²−Xn−cs²=0，其正根n=[X+√(X²+4cs²)]/2。
+\item 计算n=0.0256155281M，c=cs²/n=0.0156155281M，均为正且差为X。
+\item Na的电化学势相等：RTln(n/cs)+F(φin−φout)=0。
+\item 故膜内外电位差Δφ=−(RT/F)ln(n/cs)=-0.00635805164V。
+\item 小离子渗透压差Δπ=RT([Na]in+[Cl]in−2cs)，将mol/L换为mol/m³后得3051.73556Pa。
+\item 固定电荷提供电中性背景但不是能够穿膜的NaCl分子，实际膜的固定基团对水的混合自由能需另列模型。
+\item 复核：独立重代价态、两相质量守恒及统计分配式；数值残差为3.47e-16、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0256155281；答案2 = 0.0156155281；答案3 = -0.00635805164；答案4 = 3051.73556\par
+\noindent\textbf{模型前提：}
+理想Donnan单价电解质、固定电荷均匀、无活度系数修正，渗透压只计可迁移盐离子。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
