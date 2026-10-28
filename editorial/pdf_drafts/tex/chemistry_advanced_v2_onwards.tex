@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至9辑 (344题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至9辑 (361题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -6914,6 +6914,348 @@ ATR红外测量用晶体折射率n1=2.400、样品n2=1.400，真空波长λ=6.00
 答案1 = 1.2；答案2 = 0.1；答案3 = 1.18823529；答案4 = 0.09701425；答案5 = 0.998087364；答案6 = 1.37838322\par
 \noindent\textbf{模型前提：}
 题设校准、统计与仪器模型按给定条件成立；不代表获得实验计量认证或专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{有机化学}
+\addcontentsline{toc}{subsection}{第9辑 / 有机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O73 · E2消除反应反式共平面构象占据与产物速率选择性}
+\noindent\textbf{题目}\par
+假想可自由互变的卤代环己烷有anti-periplanar消除可达构象A与非anti构象S，A比S的自由能高2.000kJ/mol，温度298.15K。快速构象平衡，A消除一级kA=0.8000min\textasciicircum{}-1，S的另一竞争反应一级kS=0.04000min\textasciicircum{}-1，二路径给不同产物。求A的构象分数、整体消耗kobs、anti消除产物的初速分数及不正确地以最稳定构象直接预测主要产物会产生的概念错误。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item A对S的Boltzmann比pA/pS=exp(−ΔG/RT)。
+\item 由pA+pS=1解pA=0.3085747544、pS=0.6914252456。
+\item 消耗有效一级常数kobs=pA kA+pS kS=0.2745168133min\textasciicircum{}-1。
+\item anti消除分支贡献的产物分数fA=(pAkA)/kobs=0.8992520367。
+\item 尽管A占据较少，因其内禀消除快，产物仍可由A主导，说明需按构象概率乘路径速率。
+\item 若构象互变不能快于消耗，固定Boltzmann加权不成立，必须解双态耦合动力学。
+\item 独立重算势垒、速率与成键反应守恒或对称性计数，数值残差：0.00e+0、1.39e-17、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.308574754；答案2 = 0.274516813；答案3 = 0.899252037；答案4 = 0.691425246\par
+\noindent\textbf{模型前提：}
+假想的选择性或动力学模型满足题设，真实机理与模型新颖性仍待专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O74 · SN1与SN2平行反应的反应级数和速率常数辨识}
+\noindent\textbf{题目}\par
+假想溶剂解离SN1与双分子SN2同时消耗同一底物S，分别以一级常数k1和二级常数k2作用于固定过量亲核试剂Nu，故kobs=k1+k2[Nu]。独立测得[Nu]=0.1000M时kobs=0.04000min\textasciicircum{}-1，[Nu]=0.3000M时kobs=0.08000min\textasciicircum{}-1。求k1、k2、[Nu]=0.2000M时的kobs及SN2产品份额，说明只测单个Nu浓度不能分离两个路径。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 用两条件作差kobs2−kobs1=k2(Nu2−Nu1)。
+\item 由数据得二级常数k2=0.2L mol\textasciicircum{}-1min\textasciicircum{}-1。
+\item 代入任一点得到一级常数k1=0.02min\textasciicircum{}-1。
+\item 当Nu=0.2000M时kobs=k1+k2Nu=0.06min\textasciicircum{}-1。
+\item SN2路径速率分数fSN2=k2Nu/kobs=0.6666666667。
+\item 只凭一个Nu条件测到的总一级常数对k1/k2有无限多组解，需要多个亲核试剂浓度测量。
+\item 独立重算势垒、速率与成键反应守恒或对称性计数，数值残差：0.00e+0、-1.39e-17、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.02；答案2 = 0.2；答案3 = 0.06；答案4 = 0.666666667\par
+\noindent\textbf{模型前提：}
+假想的选择性或动力学模型满足题设，真实机理与模型新颖性仍待专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O75 · Hammett取代基常数与并行反应过渡态敏感性}
+\noindent\textbf{题目}\par
+某假想芳香取代反应在298.15K满足Hammett关系log10(kX/kH)=ρσ。测得带标准Hammett常数σX=+0.3000的取代基使kX/kH=2.000；另一取代基σY=−0.2000。求反应常数ρ、Y的预测相对速率、Y相对H过渡态活化自由能差ΔΔG‡=−RTln(kY/kH)和两个取代基的速率倍率之比，解释此线性经验式只在同反应机理系列内适用。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由X基团数据ρ=log10(2)/0.3000=1.003433319。
+\item Y的Hammett预测log10(kY/kH)=ρσY。
+\item 所以kY/kH=10\textasciicircum{}(ρσY)=0.6299605249。
+\item 活化自由能差ΔΔG‡=−RTln(kY/kH)=1.145521384kJ/mol。
+\item X对Y的速率比(kX/kH)/(kY/kH)=3.174802104。
+\item Hammett斜率不证明所有取代基都同机理；若发生酸碱、共振或反应决速步变化，必须重新检验线性关系。
+\item 独立重算势垒、速率与成键反应守恒或对称性计数，数值残差：0.00e+0、2.78e-17、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1.00343332；答案2 = 0.629960525；答案3 = 1.14552138；答案4 = 3.1748021\par
+\noindent\textbf{模型前提：}
+假想的选择性或动力学模型满足题设，真实机理与模型新颖性仍待专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O76 · 分子内内酯化有效摩尔浓度与分子间竞争反应}
+\noindent\textbf{题目}\par
+一份假想羟基酸底物可通过一级分子内内酯化生成内酯P（kintra=0.04000s\textasciicircum{}-1），也可与外部亲核剂B发生二级分子间竞争反应生成Q（kinter=1.000L mol\textasciicircum{}-1s\textasciicircum{}-1）。B由大库维持自由浓度0.03000M，产物不反应。求两个有效一级常数、P产物比例、底物消耗半衰期及有效摩尔浓度EM=kintra/kinter，并解释EM是速率比较量而不是体系真实化学浓度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 分子间通道伪一级常数kinter,obs=kinter[B]=0.03s\textasciicircum{}-1。
+\item 总消耗常数ktot=kintra+kinter,obs=0.07s\textasciicircum{}-1。
+\item P累计产物分数kintra/ktot=0.5714285714。
+\item 底物半衰期t1/2=ln2/ktot=9.902102579s。
+\item 有效摩尔浓度EM=kintra/kinter=0.04M，它使两路径的速率竞争在[B]=EM时相等。
+\item 当B不由外库维持时，第二通道会消耗B，总一级近似将失效，必须额外写B物料守恒。
+\item 独立重算势垒、速率与成键反应守恒或对称性计数，数值残差：6.94e-18、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.03；答案2 = 0.07；答案3 = 0.571428571；答案4 = 9.90210258；答案5 = 0.04\par
+\noindent\textbf{模型前提：}
+假想的选择性或动力学模型满足题设，真实机理与模型新颖性仍待专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O77 · 光引发自由基链反应的量子产率与平均链增长长度}
+\noindent\textbf{题目}\par
+假想光致自由基链反应在450.0nm波长实验中有效吸收光子量为2.000×10\textasciicircum{}-5mol photons，实验产物形成1.000×10\textasciicircum{}-3mol，光化学引发效率为0.8000条新链/mol被吸收光子，所有引发链都能产生题列产品。求表观产品量子产率、每根有效引发链的平均产品数、吸收光子总能量以及如果简单认为一个光子至多形成一个产品将出现的物料矛盾。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 产品量子产率Φ=nP/nphoton=50mol/mol。
+\item 真正有效引发链条数nchain=η nphoton=0.000016mol。
+\item 每根链对应平均产品数L=nP/nchain=62.5。
+\item 光子总能量Eabs=nphoton NA hc/λ=5.316736251J。
+\item Φ≫1可以由链式增长解释，并不违背光能量守恒，因为化学反应可另释放或消耗自由能。
+\item 如果链并不都存活或每链有终止副反应，则推断的平均链长需按实际引发与终止效率再校正。
+\item 独立重算势垒、速率与成键反应守恒或对称性计数，数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 50；答案2 = 62.5；答案3 = 5.31673625；答案4 = 1.6e-05\par
+\noindent\textbf{模型前提：}
+假想的选择性或动力学模型满足题设，真实机理与模型新颖性仍待专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O78 · 单取代苯亲电芳香取代的等价位点数与区域选择性}
+\noindent\textbf{题目}\par
+某假想单取代苯亲电芳香取代中，分子有2个对称等价ortho位置、2个meta位置、1个para位置，且在相同初始反应条件下每个位置的内禀反应速率分别ko=0.8000、km=0.1000、kp=1.600（共同任意速率单位）。假设一次取代且不存在其他路径。求三类产物累计初速比例、ortho/para比、产物meta占比和忽略位点简并度的选择性预测误差，说明“每位点反应性”与“总体产物份额”不同。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 先计算各位点类别的总反应权重Wortho=2ko=1.6。
+\item Wmeta=2km=0.2，Wpara=kp=1.6。
+\item 总权重Wtot=3.4。
+\item 三类产物分数分别为0.4705882353、0.05882352941、0.4705882353。
+\item ortho/para产物比=(2ko)/kp=1，虽每个ortho位点内禀较慢，两个位置使总量与para可能相当。
+\item 若错误按ko:km:kp三数直接归一，则meta分数被错估为0.04而非0.05882352941。
+\item 独立重算势垒、速率与成键反应守恒或对称性计数，数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.470588235；答案2 = 0.0588235294；答案3 = 0.470588235；答案4 = 1；答案5 = 0.0588235294\par
+\noindent\textbf{模型前提：}
+假想的选择性或动力学模型满足题设，真实机理与模型新颖性仍待专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O79 · Hückel六元芳香环的π能量稳定化与乙烯局域参照}
+\noindent\textbf{题目}\par
+简单Hückel近似中苯六个π电子占据一条α+2β能级（2电子）和两条α+β能级（共4电子），β=−75.00kJ/mol；三分子互不共轭乙烯的六个π电子每分子只占据α+β（共6电子）。求苯与三乙烯的π电子总能表达式、苯相对局域化乙烯的额外稳定化能量和每个π电子的平均稳定化贡献，并解释Hückel稳定化只是一种比较参照，不等于真实苯的实验共振能。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 苯π能量Ebenz=2(α+2β)+4(α+β)=6α+8β。
+\item 三独立乙烯参考Eref=6(α+β)=6α+6β。
+\item 两者能量差ΔE=Ebenz−Eref=2β=-150kJ/mol。
+\item β取负值，ΔE为负，因此苯相对局域参照具有更低π能。
+\item 以绝对值表示额外稳定化为150kJ/mol苯。
+\item 平均每个π电子的额外能量差ΔE/6=-25kJ/mol π电子，真实化学反应能还依赖σ骨架、几何形变及电子相关。
+\item 独立重算势垒、速率与成键反应守恒或对称性计数，数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = -150；答案2 = 150；答案3 = -25\par
+\noindent\textbf{模型前提：}
+假想的选择性或动力学模型满足题设，真实机理与模型新颖性仍待专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O80 · Karplus vicinal氢核耦合常数的二解与NOE构象排除}
+\noindent\textbf{题目}\par
+某有机分子邻近两质子的vicinal NMR耦合常数为3J=5.000Hz，采用经验Karplus式3J=Acos²φ+Bcosφ+C，A=8.000Hz、B=−1.000Hz、C=1.000Hz，φ∈[0,180°]。求代数解cosφ、两个可能二面角，并结合独立NOE判断已知φ>90°时选哪个构象，说明单个J值不足以唯一确定三维构象。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 令x=cosφ，则8x²−x+1=5，整理8x²−x−4=0。
+\item 判别式Δ=1+128=129，两个实根x±=(1±√129)/16。
+\item 两个允许的二面角φ1=acos(x+)=39.43339001°、φ2=acos(x−)=130.343118°。
+\item 因独立NOE要求φ>90°，应选择φ2=130.343118°。
+\item 把两个角的cos分别代回Karplus式均得5.000Hz，表明单一J值有二解歧义。
+\item 实际Karplus参数随取代基与溶剂变化，NOE也需结合距离和分子动力学判断。
+\item 独立重算势垒、速率与成键反应守恒或对称性计数，数值残差：0.00e+0、0.00e+0、4.44e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.772363543；答案2 = -0.647363543；答案3 = 39.43339；答案4 = 130.343118\par
+\noindent\textbf{模型前提：}
+假想的选择性或动力学模型满足题设，真实机理与模型新颖性仍待专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O81 · 高分辨质谱式量、不饱和度与氮规则互相约束}
+\noindent\textbf{题目}\par
+一个未知有机分子的候选名义分子式为C10H11NO2，不含卤素，假定中性闭壳层。名义原子质量C=12、H=1、N=14、O=16，给定不饱和度DBE=(2C+2+N−H)/2。若13C自然丰度约1.100\%、忽略其它重同位素，求名义质量、DBE、M+1/M峰一阶近似比例及氮规则是否相容，并说明为什么同一不饱和度可能存在许多结构异构体。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 按式量得M=10×12+11+14+32=177Da。
+\item DBE=(2×10+2+1−11)/2=6。
+\item 分子有奇数氮，名义分子离子质量应为奇数；177符合氮规则。
+\item 单个13C替代一阶峰比例为10×1.1\%=11\%。
+\item DBE表示环数与π键当量之和，不能仅凭DBE确定具体骨架。
+\item 真实HRMS应使用精确原子质量、加合状态与完整同位素分布，而非名义质量。
+\item 复核：按原始守恒、电子计数及热力学关系回代，数值误差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 177；答案2 = 6；答案3 = 0.11；答案4 = 11\par
+\noindent\textbf{模型前提：}
+题设为理想化有机化学模型；模型新颖性、实际机理与专家审定尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O82 · 铁羰基光致脱配位与氢氧化加成的电子计数}
+\noindent\textbf{题目}\par
+一个假想配位循环从Fe(CO)5出发，光照脱去一个CO生成Fe(CO)4，再与H2氧化加成形成Fe(H)2(CO)4。规定Fe(0)按d8、Fe(II)按d6计，每个CO在中性计数法贡献2电子、氢化物在离子计数法各给2电子。求三阶段金属电子总数、铁形式氧化态和16电子中间体距18电子的差额；不得在加成后继续把Fe(II)误按d8计算。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Fe(CO)5的Fe(0)为d8，5个CO共给10电子，总数18。
+\item 失去一个CO仍为Fe(0)，Fe(CO)4的电子数8+8=16。
+\item 氧化加成后两个氢化物各−I，铁形式氧化态从0提高到+II。
+\item Fe(II)是d6，终态电子计数6+4×2+2×2=18。
+\item Fe(CO)4距18e规则有2e缺额；终态重新达到18e。
+\item 电子计数并不证明光解和氧化加成在真实体系中必然沿这一唯一机制进行。
+\item 复核：按原始守恒、电子计数及热力学关系回代，数值误差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 18；答案2 = 16；答案3 = 18；答案4 = 2\par
+\noindent\textbf{模型前提：}
+题设为理想化有机化学模型；模型新颖性、实际机理与专家审定尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O83 · 环状单体聚合天花板温度及跨温度平衡方向}
+\noindent\textbf{题目}\par
+假设一份有机环状单体每重复单元开环聚合的标准反应焓ΔH=−35.00kJ/mol、标准熵ΔS=−110.0J/(mol K)，在298.15至340K之间近似恒定。计算标准反应自由能变为零的天花板温度、两个温度下的ΔG与标准态平衡常数K=exp(−ΔG/RT)，判断升温后聚合与解聚的有利方向，并解释实际单体活度会如何影响可达到的平衡转化。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 用ΔG(T)=ΔH−TΔS求相平衡热力学驱动力。
+\item 令ΔG(Tc)=0，得到Tc=ΔH/ΔS=318.181818K。
+\item 298.15K时ΔG=-2203.5J/mol，K=2.43240842。
+\item 340K时ΔG=2400J/mol，K=0.427850549。
+\item 聚合熵变为负，升温使聚合自由能增大，在天花板温度以上标准态下解聚有利。
+\item 实际反应商需纳入剩余单体与链端活动度，不可将标准K直接等同最终转化率。
+\item 复核：按原始守恒、电子计数及热力学关系回代，数值误差：0.00e+0、-1.11e-16、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 318.181818；答案2 = -2203.5；答案3 = 2400；答案4 = 2.43240842；答案5 = 0.427850549\par
+\noindent\textbf{模型前提：}
+题设为理想化有机化学模型；模型新颖性、实际机理与专家审定尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O84 · 固相五步肽链偶联的累积完整率与单缺失链分布}
+\noindent\textbf{题目}\par
+假想固相肽合成从0.4000mmol树脂有效位点出发，完成目标肽需要五步独立偶联，每步成功率均为0.9700。失败链继续参加后续反应并产生缺失肽，最终裂解和分离对各链具有统一回收率0.9000。求五步全部偶联成功的链比例、恰有一次失败的链比例、实际得到完整肽mmol和误把一次偶联率当作总体偶联率所造成的过高估计倍数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 五步都成功概率Pfull=0.97\textasciicircum{}5=0.858734026。
+\item 恰一次失败可出现在五个步骤中的任意一步，概率P1=5×0.03×0.97\textasciicircum{}4=0.132793922。
+\item 裂解前完整链物质的量为树脂载量乘Pfull=0.34349361mmol。
+\item 回收后完整肽量为0.4000×Pfull×0.9000=0.309144249mmol。
+\item 若仅使用单步成功率0.97，则完整肽量被高估倍数0.97/Pfull=1.12956977。
+\item 真实序列可能影响各步反应性与裂解率，本题按独立同分布概率作为题设。
+\item 复核：按原始守恒、电子计数及热力学关系回代，数值误差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.858734026；答案2 = 0.132793922；答案3 = 0.309144249；答案4 = 1.12956977\par
+\noindent\textbf{模型前提：}
+题设为理想化有机化学模型；模型新颖性、实际机理与专家审定尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O85 · Suzuki交叉偶联与双底物副反应的限制收率审计}
+\noindent\textbf{题目}\par
+假想Suzuki交叉偶联以ArBr=0.01000mol、芳基硼酸=0.01200mol为初始原料，目标产物每mol各消耗1mol底物。另有脱卤副反应消耗0.001000mol ArBr，硼酸自偶联与氧化合计消耗0.004000mol硼酸，之后偶联只使剩余限制底物的75.00\%转为目标产物。计算剩余限制底物、产物mol、两个剩余底物mol及目标产物对初始ArBr的收率，并列出两个独立元素物料账本。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 扣除副反应后可用于偶联的ArBr为0.009000mol。
+\item 硼酸剩余可供偶联为0.008000mol，配比1:1，因此理论最多生成目标产品0.008mol。
+\item 偶联实际生成P=0.75×lim=0.006mol。
+\item 剩余ArBr=0.010−0.001−P=0.003mol。
+\item 剩余硼酸=0.012−0.004−P=0.002mol，两个元素账本分别闭合。
+\item 相对原始ArBr的产物收率P/0.010=0.6，不是75.00\%。
+\item 独立核验全部反应物账本、状态概率和动力学物理解残差：1.73e-18、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.008；答案2 = 0.006；答案3 = 0.003；答案4 = 0.002；答案5 = 0.6\par
+\noindent\textbf{模型前提：}
+仅假设题给真实物料与动力学机制；跨辑去重、实验真实性及人类专家核定尚待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O86 · 立体异构产物由初始动力学选择性趋向热平衡的量化}
+\noindent\textbf{题目}\par
+一份有机反应在停止生产后留下A/B立体异构产物初始分数0.9000/0.1000。随后恒温条件下两异构体以A→B一级kAB=0.1000h\textasciicircum{}-1、B→A一级kBA=0.2000h\textasciicircum{}-1互变，物料总量保持1mol。求10.00h后A/B、最终热力学平衡A比例、初始与10h的A/B比和相对初始高选择性的减少量，并说明最终产物比例可能与原生成过渡态的动力学选择性无关。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 定义A占比a，b=1−a，动力学da/dt=−kAB a+kBA(1−a)。
+\item 平衡A分数aeq=kBA/(kAB+kBA)=0.6666666667。
+\item 从a0=.9解a(t)=aeq+(a0−aeq)e\textasciicircum{}−(kAB+kBA)t。
+\item 10h后A分数=0.6782836493，B分数=0.3217163507。
+\item 起始A/B=9，10h比=2.108328183，因可逆互变趋于aeq/(1−aeq)。
+\item 高动力学初产比例在后续异构化中会衰减，因此须考虑取样与快速淬灭。
+\item 独立核验全部反应物账本、状态概率和动力学物理解残差：0.00e+0、1.39e-17、-3.64e-17。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.678283649；答案2 = 0.321716351；答案3 = 0.666666667；答案4 = 2.10832818；答案5 = 0.221716351\par
+\noindent\textbf{模型前提：}
+仅假设题给真实物料与动力学机制；跨辑去重、实验真实性及人类专家核定尚待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O87 · 等规与间规序列Bernoulli立构三联体概率}
+\noindent\textbf{题目}\par
+某理想有机聚合链每个相邻单体立体关系独立地以概率p=0.7000形成meso二联体m，以概率1−p形成racemo二联体r。三个连续单体包含相邻两个二联体关系。求mm、mr/rm合计、rr三联体分数，连续m关系段首次出现r之前的平均m段长度（包含起始m），以及若误用0.7作为mm概率的偏差；说明真实催化立构聚合可能有高阶记忆。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两个连续m的概率Pmm=p²=0.49。
+\item 恰一m一r共有mr与rm两条序列，合计概率2p(1−p)=0.42。
+\item 两个r关系概率Prr=(1−p)²=0.09。
+\item 三类概率和1。
+\item 连续meso段的几何分布以首次r终止，平均m个数按此长度定义为1/(1−p)=3.333333333。
+\item 错误以单二联体p当三联体Pmm会高估p−p²=0.21，高阶Markov链需独立测量。
+\item 独立核验全部反应物账本、状态概率和动力学物理解残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.49；答案2 = 0.42；答案3 = 0.09；答案4 = 3.33333333；答案5 = 0.21\par
+\noindent\textbf{模型前提：}
+仅假设题给真实物料与动力学机制；跨辑去重、实验真实性及人类专家核定尚待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O88 · 力致有机小环开环的Bell势垒降低与半衰期}
+\noindent\textbf{题目}\par
+假想单分子机械力致开环服从Bell模型k(F)=k0 exp[FΔx/(kBT)]，无力时k0=0.005000s\textasciicircum{}-1。施加单分子张力100.0pN、反应势垒位移Δx=0.2000nm，温度298.15K，Boltzmann常数1.380649×10\textasciicircum{}-23J/K。求外力降低势垒的J/分子、无量纲势垒变化、加速倍数、受力后k和半衰期，指出pN·nm与SI J的换算。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将100pN化为10\textasciicircum{}-10N，0.2nm化为2×10\textasciicircum{}-10m。
+\item 力做功FΔx=2e-20J/分子。
+\item 无量纲W/(kBT)=4.858608429。
+\item 加速倍数exp[W/(kBT)]=128.8447807。
+\item 受力后k=k0×倍数=0.6442239034s\textasciicircum{}-1。
+\item 对应半衰期t1/2=ln2/k=1.075941419s；如果Δx随力变化，这个简化指数律不再通用。
+\item 独立核验全部反应物账本、状态概率和动力学物理解残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 2e-20；答案2 = 4.85860843；答案3 = 128.844781；答案4 = 0.644223903；答案5 = 1.07594142\par
+\noindent\textbf{模型前提：}
+仅假设题给真实物料与动力学机制；跨辑去重、实验真实性及人类专家核定尚待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O89 · 酸碱双催化有机水解U形pH—速率曲线的最低点}
+\noindent\textbf{题目}\par
+有机酯恒温水解按kobs=kH[H+]+kOH[OH−]+k0进行，kH=1.000×10\textasciicircum{}4L mol\textasciicircum{}-1s\textasciicircum{}-1、kOH=1.000×10\textasciicircum{}5L mol\textasciicircum{}-1s\textasciicircum{}-1、k0=1.000×10\textasciicircum{}-5s\textasciicircum{}-1、Kw=1.000×10\textasciicircum{}-14，强缓冲固定pH且无其它催化剂。求kobs在全部正h范围最小时的h及pH、此时酸碱两条反应的各自速率贡献、最低总kobs与半衰期，证明求得的是全局极小而非极大。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 令h=[H+]，Kw/h=[OH−]，得kobs(h)=kHh+kOHKw/h+k0。
+\item 对h求导k′=kH−kOHKw/h²=0，得到h*=√(kOHKw/kH)=3.16227766e-7M。
+\item 最优pH=−log10(h*)=6.5。
+\item 此时酸与碱两项均为0.00316227766s\textasciicircum{}-1。
+\item 最低kobs=0.00633455532s\textasciicircum{}-1，半衰期=109.423179s。
+\item 因为二阶导k''=2kOHKw/h³>0，该点是唯一全局最小值。
+\item 独立核验全部反应物账本、状态概率和动力学物理解残差：-4.34e-19、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 3.16227766e-07；答案2 = 6.5；答案3 = 0.00633455532；答案4 = 109.423179\par
+\noindent\textbf{模型前提：}
+仅假设题给真实物料与动力学机制；跨辑去重、实验真实性及人类专家核定尚待完成。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
