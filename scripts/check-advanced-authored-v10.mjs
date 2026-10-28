@@ -51,8 +51,10 @@ const w={
    const zp=Z(groups[0]),zo=3*Z(groups[1]),ep=avg(groups[0]),eo=avg(groups[1]),fo=zo/(zp+zo);
    return [zp,zo,fo,R*((1-fo)*ep+fo*eo),R*(.25*ep+.75*eo)];
   }
-  const e=energies(100),h=.0001,plus=energies(100+h),minus=energies(100-h);
-  const cv=(plus[3]-minus[3])/(2*h),cvf=(plus[4]-minus[4])/(2*h);
+  const e=energies(100),h=.1,plus2=energies(100+2*h),plus=energies(100+h),minus=energies(100-h),minus2=energies(100-2*h);
+  // Fourth-order central derivative avoids subtractive cancellation at h=1e-4 K.
+  const derivative=i=>(-plus2[i]+8*plus[i]-8*minus[i]+minus2[i])/(12*h);
+  const cv=derivative(3),cvf=derivative(4);
   assert.ok(cv>0&&cvf>0&&e[2]<.75&&e[2]>0);
   return [e[0],e[1],e[2],e[3],cv,e[4],cvf,e[4]-e[3]];
  },
