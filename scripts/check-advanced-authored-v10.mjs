@@ -541,7 +541,7 @@ for(const sub of Object.keys(req)){
  const rows=readFileSync(base+sub+'.jsonl','utf8').trimEnd().split('\n').map(JSON.parse);
  for(const x of rows){
   all++;req[sub].count++;
-  assert.equal(x.subject,sub);assert.ok(x.problem_zh.length>=150&&x.solution_zh_steps.length>=7);
+  assert.equal(x.subject,sub);assert.ok(typeof x.title==='string'&&x.title.length>=8,'Missing title '+x.id);assert.ok(x.problem_zh.length>=150&&x.solution_zh_steps.length>=7);
   assert.ok(x.answer_values.length>=4&&x.answer_values.every(Number.isFinite));
   assert.ok(x.model_residuals.length>=3&&x.model_residuals.every(z=>Number.isFinite(z)&&Math.abs(z)<1e-8));
   assert.equal(x.publishable,false);assert.equal(x.exclude_from_official_bank,true);
