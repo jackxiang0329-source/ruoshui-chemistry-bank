@@ -2,7 +2,7 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 12,
+  "current_draft_count": 16,
   "preliminary_flags": 4,
   "pairs": [
     {
@@ -30,6 +30,32 @@
       "judgement": "pending_human_comparison"
     }
   ],
-  "notes": "No confirmed duplicates or confirmed fully distinct originals. Check core governing equations and substantive coupling. All 12 remain pending until item-level human chemical/scientific review.",
-  "expert_approved": 0
+  "notes": "4 prior potential overlap pairs remain unresolved. Four new records are separately queued for full cross-series governing-equation comparison. All 16 are unapproved drafts; no expert review was performed.",
+  "expert_approved": 0,
+  "new_items_requiring_cross_series_comparison": [
+    {
+      "new_id": "UC-ADV10-I104",
+      "model_family": "spinel-cation-inversion-ideal-site-configurational-entropy",
+      "judgement": "pending_human_comparison",
+      "screening": "No complete all-series mathematical-model comparison yet; no originality claim."
+    },
+    {
+      "new_id": "UC-ADV10-A104",
+      "model_family": "time-resolved-fluorescence-biexponential-frequency-phasor",
+      "judgement": "pending_human_comparison",
+      "screening": "No complete all-series mathematical-model comparison yet; no originality claim."
+    },
+    {
+      "new_id": "UC-ADV10-O101",
+      "model_family": "dynamic-kinetic-resolution-racemization-coupled-matrix-exponential",
+      "judgement": "pending_human_comparison",
+      "screening": "No complete all-series mathematical-model comparison yet; no originality claim."
+    },
+    {
+      "new_id": "UC-ADV10-P101",
+      "model_family": "charge-regulated-weak-acid-gel-Donnan-cubic-osmotic",
+      "judgement": "pending_human_comparison",
+      "screening": "No complete all-series mathematical-model comparison yet; no originality claim."
+    }
+  ]
 }

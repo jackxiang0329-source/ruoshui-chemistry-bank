@@ -73,6 +73,61 @@ const w={
   const flux=De*cDiff/L,wrong=(eps/tort*Dm)*cDiff/L;
   return [DK,Dp,De,flux,wrong/flux];
  }
+
+ "UC-ADV10-I104":()=>{
+  const K=Math.exp(-12000/(R*1000));
+  let lo=0,hi=1;
+  for(let j=0;j<90;j++){const m=(lo+hi)/2;if(m*m-K*(1-m)*(2-m)>0)hi=m;else lo=m;}
+  const x=(lo+hi)/2,terms=[1-x,x,x/2,1-x/2];
+  const entropy=-((1-x)*Math.log(1-x)+x*Math.log(x)+x*Math.log(x/2)+(2-x)*Math.log((2-x)/2));
+  assert.ok(Math.abs(x*x-K*(1-x)*(2-x))<1e-12);
+  assert.ok(Math.abs((1-x)+x-1)<1e-12&&Math.abs(terms[2]+terms[3]-1)<1e-12);
+  return [x,x/2,1-x/2,entropy,12000*x-R*1000*entropy];
+ },
+ "UC-ADV10-A104":()=>{
+  // Independent Simpson quadrature, not the closed-form Laplace integrals in the solution.
+  const a=[.65,.35],tau=[1.5,5],omega=2*Math.PI*.1;
+  const N=100000,h=250/N;let sum=[0,0,0,0,0];
+  for(let j=0;j<=N;j++){
+   const t=j*h,y1=a[0]*Math.exp(-t/tau[0]),y2=a[1]*Math.exp(-t/tau[1]),y=y1+y2;
+   const w=(j===0||j===N)?1:(j%2?4:2);
+   const v=[y,y2,t*y,y*Math.cos(omega*t),y*Math.sin(omega*t)];
+   for(let k=0;k<5;k++)sum[k]+=w*v[k];
+  }
+  sum=sum.map(v=>v*h/3);
+  const [den,part,first,cos,sin]=sum,G=cos/den,S=sin/den;
+  assert.ok(G*G+S*S<1&&part<den);
+  return [part/den,first/den,G,S,S/(omega*G)];
+ },
+ "UC-ADV10-O101":()=>{
+  // Independent RK4 propagation of four coupled material balances.
+  const kr=.04,kR=.12,kS=.02,dt=.001,N=20000;
+  const f=v=>[-(kR+kr)*v[0]+kr*v[1],kr*v[0]-(kS+kr)*v[1],kR*v[0],kS*v[1]];
+  let v=[.5,.5,0,0];
+  for(let j=0;j<N;j++){
+   const a=f(v),b=f(v.map((z,i)=>z+dt*a[i]/2)),c=f(v.map((z,i)=>z+dt*b[i]/2)),d=f(v.map((z,i)=>z+dt*c[i]));
+   v=v.map((z,i)=>z+dt*(a[i]+2*b[i]+2*c[i]+d[i])/6);
+  }
+  const [r,s,pr,ps]=v;
+  assert.ok(Math.abs(r+s+pr+ps-1)<1e-10);
+  assert.ok(v.every(z=>z>=0));
+  return [r,s,pr,ps,(pr-ps)/(pr+ps),pr+ps];
+ },
+ "UC-ADV10-P101":()=>{
+  // Solve the cubic by Newton iteration; the worked solution uses Donnan balance monotonicity.
+  const cs=.1,CT=.15,a=Math.pow(10,-.5),T=298.15;
+  let r=1.5;
+  for(let i=0;i<25;i++){
+   const f=a*cs*r**3+cs*r*r-(a*cs+CT)*r-cs;
+   const df=3*a*cs*r*r+2*cs*r-a*cs-CT;
+   const next=r-f/df;
+   if(Math.abs(next-r)<1e-15){r=next;break;}r=next;
+  }
+  const na=cs*r,cl=cs/r,alpha=1/(1+a*r);
+  assert.ok(r>1&&alpha>0&&alpha<1);
+  assert.ok(Math.abs(na-cl-CT*alpha)<1e-12&&Math.abs(na*cl-cs*cs)<1e-12);
+  return [r,na,cl,alpha,7-Math.log10(r),-R*T/F*Math.log(r),R*T*1000*(na+cl-2*cs)];
+ },
 };
 const req={inorganic:{id:"I101",count:0},analytical:{id:"A101",count:0},organic:{id:"O98",count:0},physical:{id:"P98",count:0}};
 const ids=new Set(),titles=new Set(),families=new Set();let all=0;
