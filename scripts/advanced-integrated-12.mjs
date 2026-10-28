@@ -74,7 +74,7 @@ const preamble=String.raw`\documentclass[UTF8,openany,11pt,a4paper]{ctexbook}
 \usepackage{fontspec}
 \setCJKmainfont{Noto Serif CJK SC}
 \setCJKsansfont{Noto Sans CJK SC}
-\setmainfont{TeX Gyre Pagella}
+\setmainfont{Latin Modern Roman}
 \usepackage[margin=24mm,headheight=15pt]{geometry}
 \usepackage{amsmath,amssymb,mathtools,mhchem,booktabs,longtable}
 \usepackage{microtype,xcolor,tcolorbox,fancyhdr,hyperref}
