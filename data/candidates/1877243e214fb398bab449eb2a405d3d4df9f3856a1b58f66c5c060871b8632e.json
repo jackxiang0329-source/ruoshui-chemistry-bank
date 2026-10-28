@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "1877243e214fb398bab449eb2a405d3d4df9f3856a1b58f66c5c060871b8632e",
+  "subject": "inorganic",
+  "topic": "octahedral_d9_jahn_teller",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_integrated_chemistry_exercise",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "比较理想八面体 Cu²⁺(d⁹) 与 Zn²⁺(d¹⁰) 的 Jahn–Teller 畸变驱动力；哪一个更强，常见的畸变形式是什么？",
+  "answer": "Cu²⁺ 的一阶 Jahn–Teller 驱动力更强，常见轴向拉长；Zn²⁺ 的 d¹⁰ 无同类一阶轨道简并驱动。",
+  "explanation": "八面体 Cu²⁺ 的 e_g 电子占据引起基态简并，可通过降低对称性获得稳定化；具体压缩或拉长仍取决于配体和晶体环境。",
+  "model_inverse_crosscheck": "conceptual_requires_expert",
+  "scientifically_machine_checked": false,
+  "scientific_human_approval": false,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-integrated-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical university chemistry exercise and solution, not copied from any exam or textbook."
+  }
+}

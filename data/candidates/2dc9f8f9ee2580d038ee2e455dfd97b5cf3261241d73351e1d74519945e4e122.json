@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "2dc9f8f9ee2580d038ee2e455dfd97b5cf3261241d73351e1d74519945e4e122",
+  "subject": "inorganic",
+  "topic": "fcc_packing_efficiency",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_integrated_chemistry_exercise",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "对等径硬球面心立方 FCC 晶格，求常规晶胞中的原子数、边长 a 与球半径 r 的关系，以及球的体积填充率。",
+  "answer": "4 个原子；a=2√2r；填充率 η=π/(3√2)≈0.740。",
+  "explanation": "八个角贡献 1 个、六个面心贡献 3 个，合计 4；球沿面对角线接触，4r=√2a；将四球总体积除以 a³。",
+  "numeric_answers": [
+    0.7404804896930609
+  ],
+  "model_inverse_crosscheck": "numeric_witness_checked",
+  "scientifically_machine_checked": true,
+  "scientific_human_approval": false,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-integrated-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical university chemistry exercise and solution, not copied from any exam or textbook."
+  }
+}

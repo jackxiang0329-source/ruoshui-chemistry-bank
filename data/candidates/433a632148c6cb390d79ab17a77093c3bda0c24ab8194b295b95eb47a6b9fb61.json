@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "433a632148c6cb390d79ab17a77093c3bda0c24ab8194b295b95eb47a6b9fb61",
+  "subject": "analytical",
+  "topic": "dichromate_fe2_titration_6_to_1",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_integrated_chemistry_exercise",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "用 0.01000 mol/L 重铬酸钾 12.00 mL 滴定酸性 25.00 mL Fe²⁺ 溶液，设 Cr₂O₇²⁻ 接受 6e⁻、Fe²⁺ 失去 1e⁻。求 Fe²⁺ 浓度。",
+  "answer": "n(Fe²⁺)=6×0.01000×0.01200=0.0007200 mol，浓度为 0.02880 mol/L。",
+  "explanation": "酸性介质中一个重铬酸根对应六个亚铁离子；先计算滴定剂物质的量，再按 6:1 系数换算待测液。",
+  "numeric_answers": [
+    0.0288
+  ],
+  "model_inverse_crosscheck": "numeric_witness_checked",
+  "scientifically_machine_checked": true,
+  "scientific_human_approval": false,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-integrated-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical university chemistry exercise and solution, not copied from any exam or textbook."
+  }
+}

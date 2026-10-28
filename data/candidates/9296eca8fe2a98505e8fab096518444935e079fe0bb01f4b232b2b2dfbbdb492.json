@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "9296eca8fe2a98505e8fab096518444935e079fe0bb01f4b232b2b2dfbbdb492",
+  "subject": "physical",
+  "topic": "cell_gibbs_from_standard_emf",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_integrated_chemistry_exercise",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某标准原电池反应的转移电子数 n=2，E°=1.100 V，F=96485.33212 C/mol。求 ΔrG°，单位 kJ/mol。",
+  "answer": "ΔrG°=−nFE°≈−212.268 kJ/mol。",
+  "explanation": "一个反应式单位转移两摩尔电子，1 V·C=1 J，所以 ΔrG°=−2×96485.33212×1.100/1000，负值说明标准态有正向热力学驱动力。",
+  "numeric_answers": [
+    -212.26773066400003
+  ],
+  "model_inverse_crosscheck": "numeric_witness_checked",
+  "scientifically_machine_checked": true,
+  "scientific_human_approval": false,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-integrated-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical university chemistry exercise and solution, not copied from any exam or textbook."
+  }
+}

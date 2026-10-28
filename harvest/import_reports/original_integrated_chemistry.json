@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "generated": 20,
+  "unique_concepts": 20,
+  "by_subject": {
+    "inorganic": 5,
+    "analytical": 5,
+    "organic": 5,
+    "physical": 5
+  },
+  "numeric_model_witnesses": 14,
+  "conceptual_human_review_required": 6,
+  "records_exactly_replayed": 20,
+  "source_license": "CC0-1.0",
+  "original_exam_questions": 0,
+  "third_party_question_text_copied": 0,
+  "human_expert_approved": 0,
+  "publishable": false,
+  "note": "20 distinct original topics; 14 independent numerical checks and six conceptual-only answers. No item has expert approval."
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "04783bdbc41a2233995a73744eb9c1c6d8155262a45acbe4239d959eb322c45f",
+  "subject": "analytical",
+  "topic": "analytical_detection_quantitation_limits",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_integrated_chemistry_exercise",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "校准斜率 m=0.200 A/(mmol/L)，空白响应标准差 σ=0.0060 A，题设 LOD=3σ/m，LOQ=10σ/m。分别计算两限值。",
+  "answer": "LOD=0.090 mmol/L；LOQ=0.300 mmol/L。",
+  "explanation": "检测响应噪声除以校准斜率换算为浓度，再分别乘系数 3 和 10；实际 LOD 定义及基质效应须另外确认。",
+  "numeric_answers": [
+    0.09
+  ],
+  "model_inverse_crosscheck": "numeric_witness_checked",
+  "scientifically_machine_checked": true,
+  "scientific_human_approval": false,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-integrated-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical university chemistry exercise and solution, not copied from any exam or textbook."
+  }
+}

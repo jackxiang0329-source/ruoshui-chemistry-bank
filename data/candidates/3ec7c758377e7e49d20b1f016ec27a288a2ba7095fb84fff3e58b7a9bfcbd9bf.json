@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "3ec7c758377e7e49d20b1f016ec27a288a2ba7095fb84fff3e58b7a9bfcbd9bf",
+  "subject": "inorganic",
+  "topic": "magnetite_mixed_oxidation_state",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_integrated_chemistry_exercise",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "Fe₃O₄ 中若 O 全是 −2 价，求 Fe 平均氧化态；若采用 Fe²⁺/Fe³⁺ 两种价态模型，求每化学式单位的两类 Fe 数量。",
+  "answer": "铁平均价态 +8/3；经典模型为 1 个 Fe²⁺ 与 2 个 Fe³⁺。",
+  "explanation": "由电荷守恒三铁合计 +8；方程 x+y=3、2x+3y=8 给出 x=1,y=2。平均价态本身不足以唯一证明微观电子分布。",
+  "numeric_answers": [
+    2.6666666666666665
+  ],
+  "model_inverse_crosscheck": "numeric_witness_checked",
+  "scientifically_machine_checked": true,
+  "scientific_human_approval": false,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-integrated-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical university chemistry exercise and solution, not copied from any exam or textbook."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "4c50a87182f14d77200a2d7878e47d47cf23a9f38a37c0ebb4f2582d8bb6ae5e",
+  "subject": "organic",
+  "topic": "grignard_ethylmagnesium_acetone",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_integrated_chemistry_exercise",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "乙基溴化镁 CH₃CH₂MgBr 与无水丙酮加成，后经酸性水解。假设反应完全且无副反应，给出产物结构和醇的级数。",
+  "answer": "产物 (CH₃)₂C(OH)CH₂CH₃，即 2-甲基-2-丁醇，属于三级醇。",
+  "explanation": "乙基亲核加至酮羰基碳生成三级烷氧基镁盐，水解得三级醇；若先遇水，格氏试剂会被淬灭。",
+  "model_inverse_crosscheck": "conceptual_requires_expert",
+  "scientifically_machine_checked": false,
+  "scientific_human_approval": false,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-integrated-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical university chemistry exercise and solution, not copied from any exam or textbook."
+  }
+}
