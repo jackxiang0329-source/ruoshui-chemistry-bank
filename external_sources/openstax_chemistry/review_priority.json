@@ -4,9 +4,19 @@
   "source_chapters_with_exercises": 114,
   "review_queue_size": 180,
   "likely_text_only_with_answer_in_review_queue": 160,
-  "independent_numeric_source_reviews": 20,
-  "detected_source_key_errors": 2,
+  "independent_numeric_source_reviews": 42,
+  "detected_source_key_errors": 3,
   "source_key_errata_priority": [
+    {
+      "id": "OSCHEM-bd8233f4402178ae790b95d8",
+      "source_path": "contents/m51014.md",
+      "source_exercise_ordinal": 20,
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51014.md",
+      "error_code": "answer_labels_part_d_as_part_e",
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
     {
       "id": "OSCHEM-5d36939cdd0bbd60e8e95441",
       "source_path": "contents/m51117.md",
@@ -40,6 +50,26 @@
       "approved": false
     },
     {
+      "id": "OSCHEM-4d1c0cfafbad4476744d77b0",
+      "source_path": "contents/m51034.md",
+      "source_exercise_ordinal": 14,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-6e4024a05f0ca869a990e0ba",
+      "source_path": "contents/m51034.md",
+      "source_exercise_ordinal": 18,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
       "id": "OSCHEM-02ce9d5faf259c98e2ca6374",
       "source_path": "contents/m51034.md",
       "source_exercise_ordinal": 20,
@@ -60,6 +90,26 @@
       "approved": false
     },
     {
+      "id": "OSCHEM-45bcc141496551da3493422d",
+      "source_path": "contents/m51034.md",
+      "source_exercise_ordinal": 8,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-d3a5547d367f2eb13d3e0e96",
+      "source_path": "contents/m51034.md",
+      "source_exercise_ordinal": 24,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
       "id": "OSCHEM-189c66c8ab6a1ee34fa1c983",
       "source_path": "contents/m51034.md",
       "source_exercise_ordinal": 5,
@@ -70,9 +120,29 @@
       "approved": false
     },
     {
+      "id": "OSCHEM-bd8233f4402178ae790b95d8",
+      "source_path": "contents/m51014.md",
+      "source_exercise_ordinal": 20,
+      "original_solution_attached": true,
+      "source_key_error_detected": "answer_labels_part_d_as_part_e",
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
       "id": "OSCHEM-28cc53aec9bf5a34cad7ccdc",
       "source_path": "contents/m51014.md",
       "source_exercise_ordinal": 6,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-d7533f0e2adbcdaf08005e6d",
+      "source_path": "contents/m51014.md",
+      "source_exercise_ordinal": 14,
       "original_solution_attached": true,
       "source_key_error_detected": null,
       "rights_review_required": true,
@@ -130,6 +200,36 @@
       "approved": false
     },
     {
+      "id": "OSCHEM-94a2f4f4ce444c31880fc9ac",
+      "source_path": "contents/m51014.md",
+      "source_exercise_ordinal": 10,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-b692102969d51c51ea7c870f",
+      "source_path": "contents/m51014.md",
+      "source_exercise_ordinal": 12,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-56ce2afd36d22a25143d372a",
+      "source_path": "contents/m51014.md",
+      "source_exercise_ordinal": 15,
+      "original_solution_attached": false,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
       "id": "OSCHEM-5d36939cdd0bbd60e8e95441",
       "source_path": "contents/m51117.md",
       "source_exercise_ordinal": 5,
@@ -154,6 +254,26 @@
       "source_path": "contents/m51117.md",
       "source_exercise_ordinal": 7,
       "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-39061d8176054530dd51bfdd",
+      "source_path": "contents/m51117.md",
+      "source_exercise_ordinal": 2,
+      "original_solution_attached": false,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-7538ab68d00552e9a91ef013",
+      "source_path": "contents/m51117.md",
+      "source_exercise_ordinal": 10,
+      "original_solution_attached": false,
       "source_key_error_detected": null,
       "rights_review_required": true,
       "expert_solution_check_required": true,
@@ -190,6 +310,16 @@
       "approved": false
     },
     {
+      "id": "OSCHEM-1b9e55df0faa6023385fd1f7",
+      "source_path": "contents/m51065.md",
+      "source_exercise_ordinal": 26,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
       "id": "OSCHEM-ec63c02e19921375f30b30be",
       "source_path": "contents/m51065.md",
       "source_exercise_ordinal": 10,
@@ -210,6 +340,36 @@
       "approved": false
     },
     {
+      "id": "OSCHEM-56f52c350b8d228a760140c2",
+      "source_path": "contents/m51065.md",
+      "source_exercise_ordinal": 18,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-abc4eca275a5634e93c948b3",
+      "source_path": "contents/m51065.md",
+      "source_exercise_ordinal": 17,
+      "original_solution_attached": false,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-de655ee717bf81fa0bd5a579",
+      "source_path": "contents/m51065.md",
+      "source_exercise_ordinal": 23,
+      "original_solution_attached": false,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
       "id": "OSCHEM-1957d6352e0f0f7c239a78cc",
       "source_path": "contents/m51011.md",
       "source_exercise_ordinal": 1,
@@ -224,6 +384,76 @@
       "source_path": "contents/m51011.md",
       "source_exercise_ordinal": 3,
       "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-5e552a98f4e66c44a51cebf7",
+      "source_path": "contents/m51011.md",
+      "source_exercise_ordinal": 9,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-de6b22805e6871a63f7c759e",
+      "source_path": "contents/m51011.md",
+      "source_exercise_ordinal": 13,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-7d8a3280e55269d3dd0acc3d",
+      "source_path": "contents/m51011.md",
+      "source_exercise_ordinal": 15,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-f765a89be00a4cd76cbb7263",
+      "source_path": "contents/m51011.md",
+      "source_exercise_ordinal": 21,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-c91d4c551c217cf7e5f5a7e2",
+      "source_path": "contents/m51011.md",
+      "source_exercise_ordinal": 25,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-dfc583d0b96b0b00c6c9d2ed",
+      "source_path": "contents/m51011.md",
+      "source_exercise_ordinal": 23,
+      "original_solution_attached": true,
+      "source_key_error_detected": null,
+      "rights_review_required": true,
+      "expert_solution_check_required": true,
+      "approved": false
+    },
+    {
+      "id": "OSCHEM-fb0c34b160953464c4efad67",
+      "source_path": "contents/m51011.md",
+      "source_exercise_ordinal": 26,
+      "original_solution_attached": false,
       "source_key_error_detected": null,
       "rights_review_required": true,
       "expert_solution_check_required": true,
@@ -614,10 +844,10 @@
       "approved": false
     },
     {
-      "id": "OSCHEM-28cc53aec9bf5a34cad7ccdc",
+      "id": "OSCHEM-bd8233f4402178ae790b95d8",
       "source_path": "contents/m51014.md",
       "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51014.md",
-      "source_exercise_ordinal": 6,
+      "source_exercise_ordinal": 20,
       "source_sha": "719b5b1f76a38956778088ae89cd7b82d7aa9f5a",
       "original_solution_attached": true,
       "media_required": false,
@@ -628,8 +858,8 @@
       "standalone_text_with_answer_candidate": true,
       "independently_recomputed_numerics": true,
       "verified_arithmetic_not_expert_approval": true,
-      "source_key_error_detected": null,
-      "manual_review_priority": 170,
+      "source_key_error_detected": "answer_labels_part_d_as_part_e",
+      "manual_review_priority": 230,
       "rights_review_required": true,
       "science_review_required": true,
       "approved": false
@@ -3008,10 +3238,10 @@
       "approved": false
     },
     {
-      "id": "OSCHEM-150c01a8a661e6084d0e5d12",
+      "id": "OSCHEM-28cc53aec9bf5a34cad7ccdc",
       "source_path": "contents/m51014.md",
       "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51014.md",
-      "source_exercise_ordinal": 16,
+      "source_exercise_ordinal": 6,
       "source_sha": "719b5b1f76a38956778088ae89cd7b82d7aa9f5a",
       "original_solution_attached": true,
       "media_required": false,
@@ -3176,10 +3406,10 @@
       "approved": false
     },
     {
-      "id": "OSCHEM-02ce9d5faf259c98e2ca6374",
+      "id": "OSCHEM-4d1c0cfafbad4476744d77b0",
       "source_path": "contents/m51034.md",
       "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51034.md",
-      "source_exercise_ordinal": 20,
+      "source_exercise_ordinal": 14,
       "source_sha": "6cf3f877610ad41a4162d6768626b6173b8e62a8",
       "original_solution_attached": true,
       "media_required": false,
