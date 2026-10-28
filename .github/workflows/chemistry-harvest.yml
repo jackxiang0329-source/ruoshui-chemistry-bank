@@ -96,6 +96,10 @@ on:
       - "tests/analytical-calculator-mit.test.mjs"
       - "scripts/import-original-analytical-variants.mjs"
       - "scripts/import-original-instrumental-analytical.mjs"
+      - "scripts/audit-original-multistep-science.mjs"
+      - "tests/audit-original-multistep-science.test.mjs"
+      - "scripts/update-chemistry-readme-snapshot.mjs"
+      - "tests/update-chemistry-readme-snapshot.test.mjs"
       - "scripts/import-original-multistep-chemistry.mjs"
       - "tests/original-multistep-chemistry.test.mjs"
       - "scripts/import-original-analytical-physical-topics.mjs"
@@ -238,6 +242,10 @@ jobs:
         run: node --test tests/original-instrumental-analytical.test.mjs
       - name: Verify fixed CC0 course exercise provenance and solution corrections
         run: node --test tests/introqchem-2021.test.mjs
+      - name: Verify independent multistep scientific assumptions and 24 separately computed values
+        run: node --test tests/audit-original-multistep-science.test.mjs
+      - name: Verify fail-closed audit-synchronized README snapshot
+        run: node --test tests/update-chemistry-readme-snapshot.test.mjs
       - name: Verify 12 three-stage chemical derivations and 24 independent balance checks
         run: node --test tests/original-multistep-chemistry.test.mjs
       - name: Verify twenty new analytical/physical source-bound numeric inverse solutions
@@ -318,6 +326,8 @@ jobs:
         run: node scripts/import-introqchem-2021.mjs
       - name: Persist 12 original multistep analytical and physical chemistry exercises
         run: node scripts/import-original-multistep-chemistry.mjs
+      - name: Independently audit twelve saved multistep solutions and their scientific premises
+        run: node scripts/audit-original-multistep-science.mjs
       - name: Persist 20 novel source-bound original analytical and physical chemistry topics
         run: node scripts/import-original-analytical-physical-topics.mjs
       - name: Persist 20 original integrated chemistry topics across four disciplines
@@ -378,8 +388,14 @@ jobs:
         run: node scripts/report-chemistry-coverage.mjs
       - name: Create editorial review queue of remaining 190 source-unreplayed exercises
         run: node scripts/build-pending-chemistry-source-review.mjs
+      - name: Synchronize README candidate counts from validated coverage data
+        run: node scripts/update-chemistry-readme-snapshot.mjs
       - name: Commit only real additions or changes
         run: |
+          git add -- README.md
+          if [ -d harvest/review_notes ]; then
+            git add -- harvest/review_notes
+          fi
           git add -- harvest/source_candidates.json harvest/quality_audit.json harvest/main_original_numeric_replay.json harvest/main_supplementary_answer_replay.json harvest/main_tmc_stored_replay.json harvest/main_daily_mcq_stored_replay.json harvest/main_reaction_card_stored_replay.json harvest/main_additional_185_source_replay.json harvest/main_muza_pinned_source_replay.json harvest/muza_independent_science_review.json harvest/muza_independent_science_review.md harvest/main_pending_source_replay_queue.json harvest/main_pending_source_replay_queue.md harvest/mcq_integrity_audit.json harvest/source_review_queue.json harvest/expert_review_plan.json harvest/coverage_report.json release/chemistry-approved-manifest.json
           if [ -f harvest/external_source_catalog.json ]; then
             git add -- harvest/external_source_catalog.json
