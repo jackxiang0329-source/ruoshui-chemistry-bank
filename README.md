@@ -18,6 +18,10 @@
 
 清理前完整快照保存在 [archive/pre-advanced-only-cleanup-2026-10-28](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/tree/archive/pre-advanced-only-cleanup-2026-10-28)。历史资料供必要时人工复查，不自动视为高难度合格题。
 
+## 自动更新 PDF（机器编译的待审草稿）
+
+每次新增或修改 `editorial/advanced_integrated_vN/*.jsonl`，GitHub Actions 会从结构化题目自动生成 [按辑 PDF、总集 PDF、可编辑 TeX 源文件](editorial/pdf_drafts/README.md)，也可通过 Actions 手动发起重编译。旧第一辑 PDF 作为总集开头，后续各辑按编号排列；第六辑的跨辑去重标记原样保留。**PDF 编译成功不代表专家审定或允许正式出版。**
+
 ## 校验与发布
 
 ```sh
