@@ -1,0 +1,1223 @@
+{
+  "schema_version": 1,
+  "source_revision": "a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2",
+  "numeric_review_count": 42,
+  "previous_full_chinese_drafts": 8,
+  "new_chinese_independent_derivations": 34,
+  "new_notes_missing_source_answers": 6,
+  "new_notes_answer_issues": 2,
+  "new_notes_question_typos": 1,
+  "edition_rights_unresolved": true,
+  "expert_approved": 0,
+  "reuse_rights_approved": 0,
+  "released_for_exams": 0,
+  "notice": "Original formula-based Chinese commentary only. Does not reproduce entire copyrighted problem statements. Source rights and human science review remain blocked.",
+  "items": [
+    {
+      "tag": "dilution_isopropanol_target_volume",
+      "subject": "分析化学",
+      "topic": "异丙醇稀释后的总体积",
+      "source_id": "OSCHEM-150c01a8a661e6084d0e5d12",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51014.md",
+      "chapter_file": "contents/m51014.md",
+      "source_exercise_ordinal": 16,
+      "source_question_sha256": "150c01a8a661e6084d0e5d12f6e7df0f245a7b0e09b2c039dad4217be05f58b7",
+      "independent_solution_steps_zh": [
+        "已知稀释只加溶剂，溶质的物质的量在操作前后不变；体积、浓度必须使用配套单位。",
+        "写出 c₁V₁=c₂V₂，并将 0.3556 mol/L、0.1718 L 与 0.1222 mol/L 代入反求 V₂。",
+        "V₂≈0.499935 L，有效数字约 0.5000 L；用 V₂c₂=V₁c₁ 做反向一致性检查。"
+      ],
+      "computed_answers": [
+        {
+          "label": "最终体积",
+          "value": 0.49993518821603933,
+          "unit": "L",
+          "display": "0.4999352"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "sucrose_stock_dilution_volume",
+      "subject": "分析化学",
+      "topic": "蔗糖储备液取用体积",
+      "source_id": "OSCHEM-05dc2a3a7b98e9cab288a160",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51014.md",
+      "chapter_file": "contents/m51014.md",
+      "source_exercise_ordinal": 18,
+      "source_question_sha256": "05dc2a3a7b98e9cab288a1602d2324c5b7cc7cb37b06f6f3638dca59d9b4785a",
+      "independent_solution_steps_zh": [
+        "储备液浓度 0.33 mol/L 大于最终 0.025 mol/L，原液取样体积应小于总体积 25 mL。",
+        "稀释不改变溶质物质的量，V₁=c₂V₂/c₁=(0.025×25)/0.33 mL。",
+        "结果约 1.89394 mL，按两位有效数字约 1.9 mL；以原液溶质的量反查。"
+      ],
+      "computed_answers": [
+        {
+          "label": "原液体积",
+          "value": 1.8939393939393943,
+          "unit": "mL",
+          "display": "1.893939"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "lab_hcl_stock_molarity",
+      "subject": "分析化学",
+      "topic": "HCl 储备液的摩尔浓度",
+      "source_id": "OSCHEM-21ce27f2ffa9de7f66f4308f",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51014.md",
+      "chapter_file": "contents/m51014.md",
+      "source_exercise_ordinal": 22,
+      "source_question_sha256": "21ce27f2ffa9de7f66f4308f4b5d9ec83aa5f0b90cd9b4254b15b0e56f68f1f1",
+      "independent_solution_steps_zh": [
+        "明确 868.8 g 是 HCl 溶质质量，2.00 L 是溶液定容体积，不可直接把 g/L 视为 mol/L。",
+        "计算 M(HCl)=1.008+35.45=36.458 g/mol，由 c=m/(MV) 得 868.8/(36.458×2.00)。",
+        "c≈11.9144 mol/L，按原始量精度约 11.9 mol/L；复算 cVM 应为 868.8 g。"
+      ],
+      "computed_answers": [
+        {
+          "label": "HCl 浓度",
+          "value": 11.915080366449063,
+          "unit": "mol/L",
+          "display": "11.91508"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "potassium_sulfate_solution_volume",
+      "subject": "分析化学",
+      "topic": "硫酸钾溶液的总体积",
+      "source_id": "OSCHEM-9fd08976c31cc12804d2a9b4",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51014.md",
+      "chapter_file": "contents/m51014.md",
+      "source_exercise_ordinal": 24,
+      "source_question_sha256": "9fd08976c31cc12804d2a9b4bfda26fd82942920493956ccdcab490debdc76fd",
+      "independent_solution_steps_zh": [
+        "化学式 K₂SO₄ 含两 K、一 S、四 O，先求摩尔质量，防止漏乘下标。",
+        "M=2×39.0983+32.06+4×15.999 g/mol；由 n=m/M、V=n/c 得 V=(57/M)/0.20。",
+        "求得约 1.63556 L，按给定精度约 1.6 L；由 cVM 验算溶质质量。"
+      ],
+      "computed_answers": [
+        {
+          "label": "体积",
+          "value": 1.6355566574042508,
+          "unit": "L",
+          "display": "1.635557"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "spray_can_heating_ideal_gas",
+      "subject": "物理化学",
+      "topic": "定容气体受热的理论压强",
+      "source_id": "OSCHEM-ec63c02e19921375f30b30be",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51065.md",
+      "chapter_file": "contents/m51065.md",
+      "source_exercise_ordinal": 10,
+      "source_question_sha256": "ec63c02e19921375f30b30bebb41630161009ea0327b886e53496e790c0f1d37",
+      "independent_solution_steps_zh": [
+        "只在理想气体、定容和摩尔数不变的数学模型中使用 P/T=常数；摄氏温度不能直接相除。",
+        "将 23 ℃ 与 475 ℃ 转为 296.15 K 与 748.15 K，代入 P₂=1344×748.15/296.15 torr。",
+        "约 3395.28 torr，即 3.40×10³ torr；这是理论计算，不代表实际加热压力容器安全。"
+      ],
+      "computed_answers": [
+        {
+          "label": "理论末态压强",
+          "value": 3395.284821880804,
+          "unit": "torr",
+          "display": "3395.285"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "hydrogen_gas_charles_law",
+      "subject": "物理化学",
+      "topic": "等压氢气升温时的体积",
+      "source_id": "OSCHEM-84bc4a73b1cbb198bae95007",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51065.md",
+      "chapter_file": "contents/m51065.md",
+      "source_exercise_ordinal": 12,
+      "source_question_sha256": "84bc4a73b1cbb198bae95007e12e6ab5f8b04c2ea65c129e650f4b83be624726",
+      "independent_solution_steps_zh": [
+        "假设气体的量和压强不变，运用 V/T=常数，先将 −196 ℃ 和 100 ℃ 转为绝对温度。",
+        "两端温度分别是 77.15 K、373.15 K，因此 V₂=2.50×373.15/77.15 L。",
+        "结果约 12.0917 L，按三位有效数字 12.1 L；以 V₂/T₂ 与 V₁/T₁ 的相等性反查。"
+      ],
+      "computed_answers": [
+        {
+          "label": "末态体积",
+          "value": 12.09170447180817,
+          "unit": "L",
+          "display": "12.09170"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "boron_trifluoride_ideal_gas_mass",
+      "subject": "物理化学",
+      "topic": "三氟化硼的气体摩尔数与质量",
+      "source_id": "OSCHEM-ea9385920480250198ff73fd",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51065.md",
+      "chapter_file": "contents/m51065.md",
+      "source_exercise_ordinal": 16,
+      "source_question_sha256": "ea9385920480250198ff73fdb424a0af63cd36c31174dde60416aa1bc5615ada",
+      "independent_solution_steps_zh": [
+        "采用 P=1.220 atm、V=4.3410 L、T=788.0 K 和 R=0.082057338 L·atm/(mol·K)。",
+        "先求 n=PV/(RT)，再以 M(BF₃)=10.81+3×18.998 g/mol 计算 m=nM。",
+        "得到 n≈0.0819042 mol 与 m≈5.55343 g；m/M 反推 n 应与理想气体计算一致。"
+      ],
+      "computed_answers": [
+        {
+          "label": "物质的量",
+          "value": 0.0819041627142691,
+          "unit": "mol",
+          "display": "0.08190416"
+        },
+        {
+          "label": "质量",
+          "value": 5.553429848678302,
+          "unit": "g",
+          "display": "5.553430"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "medical_oxygen_cylinder_normal_body",
+      "subject": "物理化学",
+      "topic": "高压氧气折算到人体温度与常压",
+      "source_id": "OSCHEM-08497f0802b2db9edb7127d5",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51065.md",
+      "chapter_file": "contents/m51065.md",
+      "source_exercise_ordinal": 20,
+      "source_question_sha256": "08497f0802b2db9edb7127d5b81e29e52c216a495cdf5162012f1affd65903b6",
+      "independent_solution_steps_zh": [
+        "初态为 151 atm、35.4 L、298.15 K，目标为 1 atm、310.15 K，假设理想气体和物质的量不变。",
+        "使用 P₁V₁/T₁=P₂V₂/T₂，得到 V₂=151×35.4×310.15/298.15 L。",
+        "约 5560.54 L，源答案按四位有效数字约 5561 L；实际高压气体非理想性另行复核。"
+      ],
+      "computed_answers": [
+        {
+          "label": "末态体积",
+          "value": 5560.542713399295,
+          "unit": "L",
+          "display": "5560.543"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "fat_diet_energy_fraction",
+      "subject": "物理化学",
+      "topic": "脂肪在膳食中的能量占比",
+      "source_id": "OSCHEM-02ce9d5faf259c98e2ca6374",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51034.md",
+      "chapter_file": "contents/m51034.md",
+      "source_exercise_ordinal": 20,
+      "source_question_sha256": "02ce9d5faf259c98e2ca63741f5be0820fbca2ca418366dae722ab919ed249e0",
+      "independent_solution_steps_zh": [
+        "食品 Cal 为千卡；脂肪 65 g、能量密度 9.1 Cal/g，已知每日总能量 2000 Cal。",
+        "脂肪提供 65×9.1=591.5 Cal，故占比=591.5/2000×100%。",
+        "计算为 29.575%，按题设精度取约 30%；分子分母必须使用同一能量单位。"
+      ],
+      "computed_answers": [
+        {
+          "label": "能量百分比",
+          "value": 29.575000000000003,
+          "unit": "%",
+          "display": "29.57500"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "diet_soda_max_carbohydrate",
+      "subject": "物理化学",
+      "topic": "低热量饮料中的碳水质量严格上限",
+      "source_id": "OSCHEM-5a5763b05e3aa1de5cac50cb",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51034.md",
+      "chapter_file": "contents/m51034.md",
+      "source_exercise_ordinal": 22,
+      "source_question_sha256": "5a5763b05e3aa1de5cac50cba5d4e5cd78166f4e4a686adc03828ca82d399489",
+      "independent_solution_steps_zh": [
+        "已给碳水化合物能量密度 4.1 Cal/g，若饮料热量严格小于 1 Cal，应该保留不等号。",
+        "令质量为 m，列 4.1m<1，得 m<1/4.1 g。",
+        "边界值约 0.243902 g，教材的 0.24 g 是近似说明；边界等号自身不符合严格小于条件。"
+      ],
+      "computed_answers": [
+        {
+          "label": "质量上限",
+          "value": 0.24390243902439027,
+          "unit": "g",
+          "display": "0.2439024"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "ph_to_ion_concentrations",
+      "subject": "分析化学",
+      "topic": "从 pH 独立求两种离子浓度",
+      "source_id": "OSCHEM-288afabff92ecbad81ec8e97",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51117.md",
+      "chapter_file": "contents/m51117.md",
+      "source_exercise_ordinal": 7,
+      "source_question_sha256": "288afabff92ecbad81ec8e9727f53afb29c3a29dce316ac413530145ef117eff",
+      "independent_solution_steps_zh": [
+        "稀溶液下近似以浓度代替活度，25 ℃ 时采用 K_w≈10⁻¹⁴。",
+        "由 pH=6.52 求 [H₃O⁺]≈10⁻⁶·⁵²，再以 [OH⁻]≈K_w/[H₃O⁺] 计算。",
+        "两者分别约 3.020×10⁻⁷ 和 3.311×10⁻⁸ mol/L，乘积反算约 10⁻¹⁴。"
+      ],
+      "computed_answers": [
+        {
+          "label": "水合氢离子浓度",
+          "value": 3.019951720402019e-7,
+          "unit": "mol/L",
+          "display": "3.019952e-7"
+        },
+        {
+          "label": "氢氧根离子浓度",
+          "value": 3.311311214825908e-8,
+          "unit": "mol/L",
+          "display": "3.311311e-8"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "ammonia_hydronium_mislabeled_in_key",
+      "subject": "分析化学",
+      "topic": "氨水离子积及原参考答案标签错误",
+      "source_id": "OSCHEM-aa57c9f57f03106d8295119b",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51117.md",
+      "chapter_file": "contents/m51117.md",
+      "source_exercise_ordinal": 11,
+      "source_question_sha256": "aa57c9f57f03106d8295119b85757ef35254dbf16e112415d600bd2281abbf00",
+      "independent_solution_steps_zh": [
+        "原数据给定的是 [OH⁻]=3.2×10⁻³ mol/L，但要求计算的是 [H₃O⁺]，必须辨别符号。",
+        "25 ℃ 下按 [H₃O⁺]=K_w/[OH⁻]，代入 10⁻¹⁴/(3.2×10⁻³)。",
+        "结果约 3.125×10⁻¹² mol/L；原答案将该数值误标为 OH⁻，必须作为来源疑点保留。"
+      ],
+      "computed_answers": [
+        {
+          "label": "水合氢离子浓度",
+          "value": 3.1249999999999997e-12,
+          "unit": "mol/L",
+          "display": "3.125000e-12"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": "textbook_labels_hydronium_numeric_result_as_hydroxide",
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "oxygen_mass_molecule_choice",
+      "subject": "无机化学",
+      "topic": "比较三种化合物中的氧元素质量",
+      "source_id": "OSCHEM-5e552a98f4e66c44a51cebf7",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51011.md",
+      "chapter_file": "contents/m51011.md",
+      "source_exercise_ordinal": 9,
+      "source_question_sha256": "5e552a98f4e66c44a51cebf7a411291af87450a8bf072f254fcc1cdc00d1f929",
+      "independent_solution_steps_zh": [
+        "乙醇与水每分子各含一个氧原子，甲酸含两个，因此不能只比较各化合物的摩尔数。",
+        "对三种样品用 m(O)=n(化合物)×每粒子氧原子数×15.999 g/mol，分别取 0.75、0.60、1.00 mol。",
+        "氧质量约为 12.00、19.20、16.00 g，故甲酸所含氧元素质量最多。"
+      ],
+      "computed_answers": [
+        {
+          "label": "乙醇中的氧",
+          "value": 11.99925,
+          "unit": "g",
+          "display": "11.99925"
+        },
+        {
+          "label": "甲酸中的氧",
+          "value": 19.1988,
+          "unit": "g",
+          "display": "19.19880"
+        },
+        {
+          "label": "水中的氧",
+          "value": 15.999,
+          "unit": "g",
+          "display": "15.99900"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "five_formula_molar_masses",
+      "subject": "无机化学",
+      "topic": "五种物质的摩尔质量核算",
+      "source_id": "OSCHEM-de6b22805e6871a63f7c759e",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51011.md",
+      "chapter_file": "contents/m51011.md",
+      "source_exercise_ordinal": 13,
+      "source_question_sha256": "de6b22805e6871a63f7c759e739f046a91f72494e5586316aac5d99f94fef116",
+      "independent_solution_steps_zh": [
+        "拆分分子式下标，尤其 Sc₂(SO₄)₃ 中 2 个 Sc、3 个 S、12 个 O；丙酮含三个 C。",
+        "按 M=Σ n_i A_i 求和，例如 M(Sc₂(SO₄)₃)=2A(Sc)+3A(S)+12A(O)。",
+        "所用标准原子量小数位可能与教材旧表不同，复核时先检查组成和量纲，再比较末位舍入。"
+      ],
+      "computed_answers": [
+        {
+          "label": "S₈",
+          "value": 256.528,
+          "unit": "g/mol",
+          "display": "256.5280"
+        },
+        {
+          "label": "戊烷",
+          "value": 72.151,
+          "unit": "g/mol",
+          "display": "72.15100"
+        },
+        {
+          "label": "硫酸钪",
+          "value": 378.08000000000004,
+          "unit": "g/mol",
+          "display": "378.0800"
+        },
+        {
+          "label": "丙酮",
+          "value": 58.080000000000005,
+          "unit": "g/mol",
+          "display": "58.08000"
+        },
+        {
+          "label": "葡萄糖",
+          "value": 180.156,
+          "unit": "g/mol",
+          "display": "180.1560"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "five_medicinal_formula_masses",
+      "subject": "无机化学",
+      "topic": "五种含杂原子有机物的式量",
+      "source_id": "OSCHEM-7d8a3280e55269d3dd0acc3d",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51011.md",
+      "chapter_file": "contents/m51011.md",
+      "source_exercise_ordinal": 15,
+      "source_question_sha256": "7d8a3280e55269d3dd0acc3dd0be73aace891a25137d359ef47d05cea7e6f474",
+      "independent_solution_steps_zh": [
+        "按已给物质的化学式计算而非只凭名称猜测盐型；含 Br、Cl、F 的组成尤其要逐原子计数。",
+        "将 C₂HBrClF₃、C₁₂H₁₄N₂Cl₂、C₈H₁₀N₄O₂、CO(NH₂)₂、C₁₈H₃₅O₂Na 的各元素贡献求和。",
+        "保留化学式和所用原子量表，源答案末位与现代原子量常有微差，须人工审定而非强行取齐。"
+      ],
+      "computed_answers": [
+        {
+          "label": "氟烷",
+          "value": 197.37800000000001,
+          "unit": "g/mol",
+          "display": "197.3780"
+        },
+        {
+          "label": "百草枯盐式",
+          "value": 257.158,
+          "unit": "g/mol",
+          "display": "257.1580"
+        },
+        {
+          "label": "咖啡因",
+          "value": 194.194,
+          "unit": "g/mol",
+          "display": "194.1940"
+        },
+        {
+          "label": "尿素",
+          "value": 60.056,
+          "unit": "g/mol",
+          "display": "60.05600"
+        },
+        {
+          "label": "钠皂",
+          "value": 306.466,
+          "unit": "g/mol",
+          "display": "306.4660"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "oxygen_atom_molecule_ozone_mass",
+      "subject": "无机化学",
+      "topic": "等摩尔氧原子、氧气、臭氧的质量",
+      "source_id": "OSCHEM-f765a89be00a4cd76cbb7263",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51011.md",
+      "chapter_file": "contents/m51011.md",
+      "source_exercise_ordinal": 21,
+      "source_question_sha256": "f765a89be00a4cd76cbb726396779e90693d9a2bcfc8e0c34afede7d86e7d31d",
+      "independent_solution_steps_zh": [
+        "三组都是 0.600 mol，但作为粒子的 O、O₂、O₃ 每粒子分别含 1、2、3 个氧原子。",
+        "利用 m=nM，分别求 0.600×15.999、0.600×31.998、0.600×47.997 g。",
+        "结果约 9.60、19.2、28.8 g；等摩尔粒子并不是等摩尔氧原子。"
+      ],
+      "computed_answers": [
+        {
+          "label": "氧原子",
+          "value": 9.5994,
+          "unit": "g",
+          "display": "9.599400"
+        },
+        {
+          "label": "氧气",
+          "value": 19.1988,
+          "unit": "g",
+          "display": "19.19880"
+        },
+        {
+          "label": "臭氧",
+          "value": 28.7982,
+          "unit": "g",
+          "display": "28.79820"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "zircon_element_mass_and_atom_count",
+      "subject": "无机化学",
+      "topic": "锆石的元素质量与原子数",
+      "source_id": "OSCHEM-dfc583d0b96b0b00c6c9d2ed",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51011.md",
+      "chapter_file": "contents/m51011.md",
+      "source_exercise_ordinal": 23,
+      "source_question_sha256": "dfc583d0b96b0b00c6c9d2edb158894192460f030239af1419c817f0a5b2563a",
+      "independent_solution_steps_zh": [
+        "硅酸锆化学式 ZrSiO₄，0.3384 mol 中锆、硅各有 0.3384 mol 原子，而氧原子为四倍。",
+        "原子数用 6.02214076×10²³ mol⁻¹ 求得；元素质量为各元素原子物质的量乘其摩尔质量。",
+        "氧原子数必须是锆原子数四倍，结果分别标注“个”和“克”，避免混用元素数量与质量。"
+      ],
+      "computed_answers": [
+        {
+          "label": "锆原子数",
+          "value": 2.0378924331839998e+23,
+          "unit": "个",
+          "display": "2.037892e+23"
+        },
+        {
+          "label": "锆质量",
+          "value": 30.870201599999998,
+          "unit": "g",
+          "display": "30.87020"
+        },
+        {
+          "label": "硅原子数",
+          "value": 2.0378924331839998e+23,
+          "unit": "个",
+          "display": "2.037892e+23"
+        },
+        {
+          "label": "硅质量",
+          "value": 9.503964,
+          "unit": "g",
+          "display": "9.503964"
+        },
+        {
+          "label": "氧原子数",
+          "value": 8.151569732735999e+23,
+          "unit": "个",
+          "display": "8.151570e+23"
+        },
+        {
+          "label": "氧质量",
+          "value": 21.6562464,
+          "unit": "g",
+          "display": "21.65625"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "aluminum_mass_from_three_salts",
+      "subject": "无机化学",
+      "topic": "三种铝盐中的铝质量比较",
+      "source_id": "OSCHEM-c91d4c551c217cf7e5f5a7e2",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51011.md",
+      "chapter_file": "contents/m51011.md",
+      "source_exercise_ordinal": 25,
+      "source_question_sha256": "c91d4c551c217cf7e5f5a7e2f6587ca4ca50e1ddd4a6f9bb804db3a4254b9481",
+      "independent_solution_steps_zh": [
+        "原题出现 C1 与 Cl 易混的化学式，当前只按原答案暗示的 Al₂Cl₆ 解释，保留原文疑点。",
+        "对 122 g AlPO₄、266 g Al₂Cl₆、225 g Al₂S₃ 分别计算 m(Al)=m(样品)×n_Al A(Al)/M(物质)。",
+        "三者比较以 Al₂S₃ 含铝质量最大；若原化学式解释改变必须重算，不能自动抹除错字警告。"
+      ],
+      "computed_answers": [
+        {
+          "label": "磷酸铝中的 Al",
+          "value": 26.992230517869807,
+          "unit": "g",
+          "display": "26.99223"
+        },
+        {
+          "label": "氯化铝二聚体中的 Al",
+          "value": 53.82883264644889,
+          "unit": "g",
+          "display": "53.82883"
+        },
+        {
+          "label": "硫化铝中的 Al",
+          "value": 80.86740640589305,
+          "unit": "g",
+          "display": "80.86741"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": "printed_Al2C1_6_is_Al2Cl6_not_carbon_digit_one",
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "diamond_carat_carbon_atom_count",
+      "subject": "无机化学",
+      "topic": "钻石克拉质量换算至原子数",
+      "source_id": "OSCHEM-fb0c34b160953464c4efad67",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51011.md",
+      "chapter_file": "contents/m51011.md",
+      "source_exercise_ordinal": 26,
+      "source_question_sha256": "fb0c34b160953464c4efad6775ef3cf08f1c8b2ccd0b06ab43d88b809518538e",
+      "independent_solution_steps_zh": [
+        "按题设 1 克拉等于 0.200 g，1.25 克拉钻石质量就是 0.250 g。",
+        "假设金刚石纯碳，先计算 n=0.250/12.011 mol，再乘阿伏伽德罗常数 N_A。",
+        "得到约 1.253×10²² 个原子；源教材无附答案，钻石纯度是应单独审阅的假设。"
+      ],
+      "computed_answers": [
+        {
+          "label": "碳原子数",
+          "value": 1.2534636499875117e+22,
+          "unit": "个",
+          "display": "1.253464e+22"
+        }
+      ],
+      "source_answer_present": false,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "permanganate_molarity_mass",
+      "subject": "分析化学",
+      "topic": "高锰酸钾质量配液浓度",
+      "source_id": "OSCHEM-94a2f4f4ce444c31880fc9ac",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51014.md",
+      "chapter_file": "contents/m51014.md",
+      "source_exercise_ordinal": 10,
+      "source_question_sha256": "94a2f4f4ce444c31880fc9ac3ee6422f91a9d65f0cbc3ceff1b037a978a307cf",
+      "independent_solution_steps_zh": [
+        "KMnO₄ 摩尔质量等于 A(K)+A(Mn)+4A(O)，在计算前逐一清点下标。",
+        "先用 0.0908 g 除以式量得到摩尔数，再除以 0.500 L 得浓度 c。",
+        "约 1.149×10⁻³ mol/L，有效数字约 1.15×10⁻³ mol/L；逆算 cVM 应回到称样质量。"
+      ],
+      "computed_answers": [
+        {
+          "label": "KMnO₄ 浓度",
+          "value": 0.0011491321710814814,
+          "unit": "mol/L",
+          "display": "0.001149132"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "four_solutions_molarities",
+      "subject": "分析化学",
+      "topic": "胆固醇、氨、异丙醇和碘的浓度",
+      "source_id": "OSCHEM-b692102969d51c51ea7c870f",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51014.md",
+      "chapter_file": "contents/m51014.md",
+      "source_exercise_ordinal": 12,
+      "source_question_sha256": "b692102969d51c51ea7c870fde776909ac836287b1215be879f62e48fcf92454",
+      "independent_solution_steps_zh": [
+        "四组都先检查溶质化学式和质量单位，异丙醇质量 1.49 kg 须转换为 1490 g。",
+        "分别计算 c=m/(MV)，体积依次 0.100、0.500、2.50、0.100 L；摩尔质量分别按 C₂₇H₄₆O、NH₃、C₃H₈O、I₂。",
+        "碘为双原子分子，误用单个碘原子量会造成两倍偏差；其他数据也要按各自精度舍入。"
+      ],
+      "computed_answers": [
+        {
+          "label": "胆固醇",
+          "value": 0.005043138228539507,
+          "unit": "mol/L",
+          "display": "0.005043138"
+        },
+        {
+          "label": "氨",
+          "value": 0.4990898948975398,
+          "unit": "mol/L",
+          "display": "0.4990899"
+        },
+        {
+          "label": "异丙醇",
+          "value": 9.917465388711394,
+          "unit": "mol/L",
+          "display": "9.917465"
+        },
+        {
+          "label": "碘",
+          "value": 0.0011425917463742609,
+          "unit": "mol/L",
+          "display": "0.001142592"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "milk_calcium_ion_concentration",
+      "subject": "分析化学",
+      "topic": "牛奶中钙离子的浓度",
+      "source_id": "OSCHEM-d7533f0e2adbcdaf08005e6d",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51014.md",
+      "chapter_file": "contents/m51014.md",
+      "source_exercise_ordinal": 14,
+      "source_question_sha256": "d7533f0e2adbcdaf08005e6d748f3b731fd455fd0fbc060e5c81af43a7e8ec39",
+      "independent_solution_steps_zh": [
+        "题设含 1.0 g 钙元素（作为 Ca²⁺），不是 1.0 g 的其他钙盐。",
+        "n(Ca²⁺)=1.0 g/(40.078 g/mol)，再除以 1.0 L 溶液体积。",
+        "约 0.02495 mol/L，按输入有效数字取 0.025 mol/L，需区分元素质量与化合物质量。"
+      ],
+      "computed_answers": [
+        {
+          "label": "钙离子浓度",
+          "value": 0.024951344877488894,
+          "unit": "mol/L",
+          "display": "0.02495134"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "ferric_nitrate_dilution_volume",
+      "subject": "分析化学",
+      "topic": "硝酸铁的原液取样体积",
+      "source_id": "OSCHEM-56ce2afd36d22a25143d372a",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51014.md",
+      "chapter_file": "contents/m51014.md",
+      "source_exercise_ordinal": 15,
+      "source_question_sha256": "56ce2afd36d22a25143d372af52a0030571e958a65182fa0e6968d000e422824",
+      "independent_solution_steps_zh": [
+        "原液 1.00 mol/L，目标为 1.00 L、0.250 mol/L；假设稀释前后溶质的量守恒。",
+        "依 c₁V₁=c₂V₂，V₁=(0.250×1.00)/1.00 L。",
+        "计算 0.250 L 即 250 mL；取样体积小于最终溶液体积，是合理性检查。"
+      ],
+      "computed_answers": [
+        {
+          "label": "原液体积",
+          "value": 0.25,
+          "unit": "L",
+          "display": "0.2500000"
+        }
+      ],
+      "source_answer_present": false,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "four_diluted_solution_molarities",
+      "subject": "分析化学",
+      "topic": "四组溶液稀释及原答案题号勘误",
+      "source_id": "OSCHEM-bd8233f4402178ae790b95d8",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51014.md",
+      "chapter_file": "contents/m51014.md",
+      "source_exercise_ordinal": 20,
+      "source_question_sha256": "bd8233f4402178ae790b95d81d3e755dd22158ab7867ec8c6d3f4754a5d331a9",
+      "independent_solution_steps_zh": [
+        "所有小问用 c_f=c_iV_i/V_f，确保体积单位在每个小问中前后一致。",
+        "四个浓度计算分别为 (1.00×0.250)/2.00、(0.5000×0.1222)/1.250、(2.35×0.350)/4.00、(22.50×0.025)/100.0。",
+        "第四个小问教材参考答案误写成 (e) 而非 (d)，这属于编号错位，不影响溶质守恒的公式。"
+      ],
+      "computed_answers": [
+        {
+          "label": "Fe(NO₃)₃",
+          "value": 0.125,
+          "unit": "mol/L",
+          "display": "0.1250000"
+        },
+        {
+          "label": "丙醇",
+          "value": 0.04888,
+          "unit": "mol/L",
+          "display": "0.04888000"
+        },
+        {
+          "label": "H₃PO₄",
+          "value": 0.205625,
+          "unit": "mol/L",
+          "display": "0.2056250"
+        },
+        {
+          "label": "蔗糖",
+          "value": 0.005625,
+          "unit": "mol/L",
+          "display": "0.005625000"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": "answer_labels_part_d_as_part_e",
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "engine_radiator_heat_transfer",
+      "subject": "物理化学",
+      "topic": "汽车冷却水降温传热",
+      "source_id": "OSCHEM-45bcc141496551da3493422d",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51034.md",
+      "chapter_file": "contents/m51034.md",
+      "source_exercise_ordinal": 8,
+      "source_question_sha256": "45bcc141496551da3493422d8888558b8b76f587e794d72a581775a4fb9cf65e",
+      "independent_solution_steps_zh": [
+        "按美制 1 gallon≈3.78541 L、密度约 1 g/mL 得水质量约 3785 g。",
+        "华氏温差 240−175=65 °F，相当于 65×5/9 K；因此 Q=mcΔT。",
+        "计算热量绝对值约 572 kJ，按题设精度为 5.7×10² kJ；系统取水时放热符号为负。"
+      ],
+      "computed_answers": [
+        {
+          "label": "传热量绝对值",
+          "value": 571.9336604314666,
+          "unit": "kJ",
+          "display": "571.9337"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "barium_hydroxide_endothermic_calorimetry",
+      "subject": "物理化学",
+      "topic": "吸热反应的近似量热",
+      "source_id": "OSCHEM-4d1c0cfafbad4476744d77b0",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51034.md",
+      "chapter_file": "contents/m51034.md",
+      "source_exercise_ordinal": 14,
+      "source_question_sha256": "4d1c0cfafbad4476744d77b03548a449159986e7273c6c7a470676440e400fe5",
+      "independent_solution_steps_zh": [
+        "温度下降 3.1 ℃，说明反应体系吸热；近似按溶液质量与水相近的比热处理。",
+        "m≈100+3.15+1.52 g，Q≈m×4.20×3.1 J，再除以 1000。",
+        "约 1.363 kJ（教材约 1.4 kJ）；真实值须考虑量热器热容和溶液比热偏差。"
+      ],
+      "computed_answers": [
+        {
+          "label": "吸热量",
+          "value": 1.3628034000000002,
+          "unit": "kJ",
+          "display": "1.362803"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "bomb_calorimeter_TNT_heat_release",
+      "subject": "物理化学",
+      "topic": "弹式量热热容与放热量",
+      "source_id": "OSCHEM-6e4024a05f0ca869a990e0ba",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51034.md",
+      "chapter_file": "contents/m51034.md",
+      "source_exercise_ordinal": 18,
+      "source_question_sha256": "6e4024a05f0ca869a990e0ba920b6a8340138d4e2fd14dc2cf4d0596a2210332",
+      "independent_solution_steps_zh": [
+        "量热器热容 534 J/K，675 mL 水在近似密度 1 g/mL 时热容为 675×4.184 J/K。",
+        "总热容为两项相加，温差为 26.9−23.4=3.5 K；Q=C_totalΔT。",
+        "绝对值为 11.7537 kJ，教材舍入约 11.7 kJ；燃烧反应作为系统的热量符号为负。"
+      ],
+      "computed_answers": [
+        {
+          "label": "热量绝对值",
+          "value": 11.7537,
+          "unit": "kJ",
+          "display": "11.75370"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "cereal_macronutrient_calories",
+      "subject": "物理化学",
+      "topic": "谷物食品的营养热量",
+      "source_id": "OSCHEM-d3a5547d367f2eb13d3e0e96",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51034.md",
+      "chapter_file": "contents/m51034.md",
+      "source_exercise_ordinal": 24,
+      "source_question_sha256": "d3a5547d367f2eb13d3e0e96654bf4c9ba5ca1ff91aacda78a1894f0a31ea987",
+      "independent_solution_steps_zh": [
+        "食品单位 Cal 是千卡；蛋白质 3 g、碳水 18 g、脂肪 6 g。",
+        "能量=3×4.1+18×4.1+6×9.1 Cal，以各营养素的单位质量能量分别求和。",
+        "计算为 140.7 Cal，按给定精度约 1.4×10² Cal。"
+      ],
+      "computed_answers": [
+        {
+          "label": "每份热量",
+          "value": 140.7,
+          "unit": "Cal",
+          "display": "140.7000"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "iodine_vapor_bulb_temperature",
+      "subject": "物理化学",
+      "topic": "碘蒸气的理想气体温度",
+      "source_id": "OSCHEM-abc4eca275a5634e93c948b3",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51065.md",
+      "chapter_file": "contents/m51065.md",
+      "source_exercise_ordinal": 17,
+      "source_question_sha256": "abc4eca275a5634e93c948b3808ef2babf9514428b4c188282b019b95d64da3e",
+      "independent_solution_steps_zh": [
+        "碘蒸气分子 I₂ 的摩尔质量为 2×126.90447 g/mol，不能按单个 I 原子求摩尔数。",
+        "气室 73.3 mL 转成 0.0733 L；n=0.292/M(I₂)，T=0.462×0.0733/(nR)。",
+        "约为 358.72 K（约 85.6 ℃）。原题不附答案，气体模型还需人工审查。"
+      ],
+      "computed_answers": [
+        {
+          "label": "绝对温度",
+          "value": 358.71752134623404,
+          "unit": "K",
+          "display": "358.7175"
+        }
+      ],
+      "source_answer_present": false,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "three_gas_samples_masses",
+      "subject": "物理化学",
+      "topic": "三种气体的压力体积单位换算",
+      "source_id": "OSCHEM-56f52c350b8d228a760140c2",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51065.md",
+      "chapter_file": "contents/m51065.md",
+      "source_exercise_ordinal": 18,
+      "source_question_sha256": "56f52c350b8d228a760140c25bc75dd9a668634f25ef5e285ab3bfa03a331cba",
+      "independent_solution_steps_zh": [
+        "三份数据的压力分别使用 torr、kPa、torr；计算前必须统一为 atm，221 mL 改为 0.221 L。",
+        "三组分别用 n=PV/(RT)，温度为 299.15、483、219.15 K，再乘各自气体摩尔质量。",
+        "三份质量约 7.24×10⁻⁵、23.12、1.49×10⁻⁴ g；注意第一项是 0.100 L，不能错用 100 L。"
+      ],
+      "computed_answers": [
+        {
+          "label": "CO₂",
+          "value": 0.07242022209438802,
+          "unit": "g",
+          "display": "0.07242022"
+        },
+        {
+          "label": "C₂H₄",
+          "value": 23.123736921861365,
+          "unit": "g",
+          "display": "23.12374"
+        },
+        {
+          "label": "Ar",
+          "value": 0.00014857394654703117,
+          "unit": "g",
+          "display": "0.0001485739"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "resting_oxygen_moles",
+      "subject": "物理化学",
+      "topic": "给定呼吸耗氧体积的摩尔数",
+      "source_id": "OSCHEM-de655ee717bf81fa0bd5a579",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51065.md",
+      "chapter_file": "contents/m51065.md",
+      "source_exercise_ordinal": 23,
+      "source_question_sha256": "de655ee717bf81fa0bd5a579be7ef976361b6055e2e2c63bfb14ecee159de31e",
+      "independent_solution_steps_zh": [
+        "给定 14 L、100 kPa 与 25 ℃ 的气态氧，温度必须改为 298.15 K。",
+        "使用 R=8.314462618 kPa·L/(mol·K)，代入 n=100×14/(R×298.15)。",
+        "得到约 0.56475 mol，按给定精度约 0.56 mol；只针对给定时间的实验模型。"
+      ],
+      "computed_answers": [
+        {
+          "label": "氧气物质的量",
+          "value": 0.5647536376418575,
+          "unit": "mol",
+          "display": "0.5647536"
+        }
+      ],
+      "source_answer_present": false,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "two_refrigerants_stp_molar_volumes",
+      "subject": "物理化学",
+      "topic": "不同含氟化合物的标准状况体积",
+      "source_id": "OSCHEM-1b9e55df0faa6023385fd1f7",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51065.md",
+      "chapter_file": "contents/m51065.md",
+      "source_exercise_ordinal": 26,
+      "source_question_sha256": "1b9e55df0faa6023385fd1f722404af49c44d7355981219de7641ada02c1a413",
+      "independent_solution_steps_zh": [
+        "明确使用教材 STP=273.15 K 和 1 atm；若采用 1 bar 版本 STP 会略有不同。",
+        "分别求两种气体的摩尔质量，再用 V=(10.0/M)×RT/P 计算相同质量时的体积。",
+        "约 1.85 L 和 4.66 L；分子量越大相同质量的气体物质的量越小。"
+      ],
+      "computed_answers": [
+        {
+          "label": "CCl₂F₂",
+          "value": 1.85381837897723,
+          "unit": "L",
+          "display": "1.853818"
+        },
+        {
+          "label": "C₂H₅F",
+          "value": 4.663745708426966,
+          "unit": "L",
+          "display": "4.663746"
+        }
+      ],
+      "source_answer_present": true,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "pure_water_40c_ionization_and_ph",
+      "subject": "分析化学",
+      "topic": "40 ℃ 下纯水的浓度与 pH",
+      "source_id": "OSCHEM-39061d8176054530dd51bfdd",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51117.md",
+      "chapter_file": "contents/m51117.md",
+      "source_exercise_ordinal": 2,
+      "source_question_sha256": "39061d8176054530dd51bfdd37ad3420d4e9ff94f65f875654b1a5745cf08579",
+      "independent_solution_steps_zh": [
+        "纯水中性条件是 [H₃O⁺]=[OH⁻]，而不是任何温度下 pH 均为 7。",
+        "40 ℃ 时 K_w=2.9×10⁻¹⁴，因此 [H₃O⁺]=√K_w≈1.70294×10⁻⁷ mol/L。",
+        "pH=−log₁₀([H₃O⁺]/1 mol/L)≈6.7688；教材无参考答案，活度近似应另行复核。"
+      ],
+      "computed_answers": [
+        {
+          "label": "水合氢离子浓度",
+          "value": 1.7029386365926402e-7,
+          "unit": "mol/L",
+          "display": "1.702939e-7"
+        },
+        {
+          "label": "pH",
+          "value": 6.768801001050522,
+          "unit": "无量纲",
+          "display": "6.768801"
+        }
+      ],
+      "source_answer_present": false,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    },
+    {
+      "tag": "rainwater_hydroxide_25c",
+      "subject": "分析化学",
+      "topic": "雨水中氢氧根离子浓度",
+      "source_id": "OSCHEM-7538ab68d00552e9a91ef013",
+      "source_url": "https://github.com/philschatz/chemistry-book/blob/a6ac3918e61cbedf0589c5b43e748dc8a7edf5e2/contents/m51117.md",
+      "chapter_file": "contents/m51117.md",
+      "source_exercise_ordinal": 10,
+      "source_question_sha256": "7538ab68d00552e9a91ef013d088c521aae68c1051d6659c595b65c29ed1eae7",
+      "independent_solution_steps_zh": [
+        "25 ℃ 时按稀溶液近似，取 K_w≈1.0×10⁻¹⁴。",
+        "雨水 [H₃O⁺]=1.7×10⁻⁶ mol/L，代入 [OH⁻]=K_w/[H₃O⁺]。",
+        "得到 [OH⁻]≈5.882×10⁻⁹ mol/L；两浓度相乘反验 K_w，教材原题未附答案。"
+      ],
+      "computed_answers": [
+        {
+          "label": "氢氧根浓度",
+          "value": 5.88235294117647e-9,
+          "unit": "mol/L",
+          "display": "5.882353e-9"
+        }
+      ],
+      "source_answer_present": false,
+      "source_answer_issue": null,
+      "source_question_typo": null,
+      "is_full_question_translation": false,
+      "human_science_approval": false,
+      "individual_reuse_rights_approved": false,
+      "publishable": false
+    }
+  ]
+}
