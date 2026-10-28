@@ -171,6 +171,38 @@ assert.equal(v8queue.status,'manual_cross_series_review_required');
 assert.ok(v8queue.suspected_pairs.length>0);
 assert.equal(v8queue.expert_approved_count,0);
 
+const v9Groups={
+ inorganic:['inorganic_part1','inorganic_part2','inorganic_part3a','inorganic_part3b'],
+ analytical:['analytical_part1','analytical_part2','analytical_part3'],
+ organic:['organic_part1','organic_part2a','organic_part2b','organic_part3'],
+ physical:['physical_part1','physical_part2','physical_part3']
+};
+const v9IDs=new Set(),v9Titles=new Set(),v9Families=new Set();
+for(const [subject,parts] of Object.entries(v9Groups)){
+ let count=0;
+ for(const part of parts){
+  const records=read('editorial/advanced_integrated_v9/'+part+'.jsonl').trimEnd().split('\n').map(JSON.parse);
+  for(const q of records){
+   assert.equal(q.subject,subject);
+   assert.equal(q.quality_status,'awaiting_expert_review');
+   assert.equal(q.novelty_review_status,'pending_cross_series_model_review');
+   assert.equal(q.parametric_variant,null);
+   assert.equal(q.publishable,false);assert.equal(q.exclude_from_official_bank,true);
+   assert.ok(q.problem_zh.length>=95&&q.solution_zh_steps.length>=7);
+   assert.ok(!v9IDs.has(q.id)&&!v9Titles.has(q.title)&&!v9Families.has(q.model_family));
+   v9IDs.add(q.id);v9Titles.add(q.title);v9Families.add(q.model_family);count++;
+  }
+ }
+ assert.equal(count,25,'v9 must have exactly 25 '+subject+' models');
+}
+assert.equal(v9IDs.size,100);
+const v9Queue=JSON.parse(read('editorial/advanced_integrated_v9/overlap_review_queue.json'));
+assert.equal(v9Queue.total_new_editorial_records,100);
+assert.equal(v9Queue.review_state,'manual_core_model_comparison_required');
+assert.ok(v9Queue.potential_overlaps.length>0);
+assert.equal(v9Queue.expert_approved,0);
+
+
 assert.ok(v7review.suspected_pairs.length>0);
 
 assert.ok(overlap.suspected_pairs.length>0);
@@ -182,10 +214,11 @@ for(const p of ['data/integrated_challenges','data/research_quarantine','externa
  '.github/workflows/chemistry-rqa-intake.yml','scripts/import-original-coupled-32768.mjs'])
  assert.equal(exists(p),false,'Deprecated low-difficulty resource returned: '+p);
 const release=JSON.parse(read('release/chemistry-approved-manifest.json'));
-assert.equal(release.advanced_editorial_items,306);
+assert.equal(release.advanced_editorial_items,406);
+assert.equal(release.ninth_series_pending_cross_series_novelty_review,100);
 assert.equal(release.eighth_series_pending_cross_series_novelty_review,60);
 assert.equal(release.seventh_series_pending_cross_series_novelty_review,60);
 assert.equal(release.sixth_series_pending_cross_series_novelty_review,50);
 assert.equal(release.approved_count,0);
 assert.deepEqual(release.items,[]);
-console.log('PASS: 246 previous + 60 eighth-series items = 306 editorial records, 15 per subject, 0 expert approvals, unpublished');
+console.log('PASS: 306 previous + 100 ninth-series items = 406 editorial records, 25 v9 items per subject, 0 expert approvals, unpublished');
