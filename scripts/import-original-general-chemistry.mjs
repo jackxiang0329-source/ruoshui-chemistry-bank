@@ -156,7 +156,8 @@ export function run(){
   const previous=JSON.parse(readFileSync(path,'utf8'));
   if(previous.id!==q.id||previous.question!==q.question||previous.answer!==q.answer||
      previous.publishable!==false||previous.quality_status!=='awaiting_expert_review'||
-     previous.source?.file!=='scripts/import-original-general-chemistry.mjs')
+     previous.source?.file!=='scripts/import-original-general-chemistry.mjs'||
+     JSON.stringify(previous)!==JSON.stringify(q))
    throw Error('Candidate collision or unauthorized publication change: '+q.id);
  }
  mkdirSync(directory,{recursive:true});let added=0;

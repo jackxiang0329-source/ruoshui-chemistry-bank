@@ -4,7 +4,13 @@ import {readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {join,dirname,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
-export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience){
+export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general={generated:0}){
+ const newlyReplayed=general?.generated||0;
+ if(!Number.isInteger(newlyReplayed)||newlyReplayed<0||
+  (newlyReplayed>0&&(general?.independently_inverse_checked!==newlyReplayed||
+   general?.by_subject?.inorganic!==72||general?.by_subject?.organic!==48||
+   general?.expert_approved!==0||general?.publishable!==false||
+   general?.source_license!=='CC0-1.0')))throw Error('Unsafe original general chemistry replay report');
  const whole=main?.total_candidates,exercise=main?.by_content_kind?.exercise_candidate,
   card=main?.by_content_kind?.study_card,raw=external?.raw_staged_candidates;
  if(!Number.isInteger(whole)||!Number.isInteger(exercise)||!Number.isInteger(card)||
@@ -84,7 +90,7 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   reaction?.formal_exam_ready!==0||
   extra?.additional_source_replayed!==185||
   extra?.main_total!==whole||extra?.previously_replayed!==1525||
-  extra?.main_coverage_after_addition!==1710||extra?.remaining_unreplayed!==5||
+  extra?.main_coverage_after_addition!==1710||extra?.remaining_unreplayed!==whole-1710||
   extra?.chemquiz_mit_reference!==67||extra?.chemtrain_CC_BY4_source_exercises!==118||
   extra?.sources?.length!==6||extra.sources.reduce((n,x)=>n+x.expected,0)!==185||
   extra?.expert_approved!==0||extra?.exam_ready!==0||
@@ -111,7 +117,7 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   muzaScience?.individual_rights_approvals!==0||
   muzaScience?.exam_ready!==0||
   main?.source_counts?.['MuzaPro/Organic-Chemistry-Quiz-JS']!==5||
-  whole<1715||exercise<1437||card!==278)
+  whole<1715+newlyReplayed||exercise<1437+newlyReplayed||card!==278)
   throw Error('Unsafe or inconsistent chemistry coverage sources: '+
    JSON.stringify({
     main_total:whole,main_exercises:exercise,main_cards:card,
@@ -151,12 +157,13 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   main_independent_muza_formula_checks:muzaScience.formal_element_balances_passed,
   main_independent_muza_science_condition_caveats:muzaScience.special_science_conditions_pending,
   main_total_1715_source_concordance_does_not_imply_scientific_correctness:true,
-  main_exercise_candidates_replayed:1437,
-  main_exercise_candidates_not_replayed:exercise-1437,
+  main_exercise_candidates_replayed:1437+newlyReplayed,
+  main_new_original_general_chemistry_inverse_replayed:newlyReplayed,
+  main_exercise_candidates_not_replayed:exercise-1437-newlyReplayed,
   main_study_cards_not_replayed:card-278,
-  main_unique_candidate_records_machine_replayed:1715,
-  main_candidate_records_not_yet_machine_replayed:whole-1715,
-  main_stored_replay_coverage_fraction:Number((1715/whole).toFixed(6)),
+  main_unique_candidate_records_machine_replayed:1715+newlyReplayed,
+  main_candidate_records_not_yet_machine_replayed:whole-1715-newlyReplayed,
+  main_stored_replay_coverage_fraction:Number(((1715+newlyReplayed)/whole).toFixed(6)),
   main_replay_cannot_establish_chemistry_truth:true,
   main_replay_requires_expert_science_and_item_rights_review:true,
   main_original_numeric_stored_coverage_fraction:Number((304/whole).toFixed(6)),
@@ -201,7 +208,9 @@ export function run(){
  const muza=JSON.parse(readFileSync(join(ROOT,'harvest/main_muza_pinned_source_replay.json'),'utf8'));
  const muzaScience=JSON.parse(readFileSync(join(ROOT,
   'harvest/muza_independent_science_review.json'),'utf8'));
- const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience),
+ const general=JSON.parse(readFileSync(join(ROOT,
+  'harvest/import_reports/original_general_chemistry.json'),'utf8'));
+ const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general),
   path=join(ROOT,'harvest/coverage_report.json');
  const body=JSON.stringify(summary,null,2)+'\n';
  if(!existsSync(path)||readFileSync(path,'utf8')!==body)writeFileSync(path,body);

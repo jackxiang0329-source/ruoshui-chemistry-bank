@@ -69,8 +69,8 @@ export function checkStored(ref,saved,family){
  return true;
 }
 export function audit(rows,qa){
- if(!Array.isArray(rows)||rows.length!==1715||qa?.total_candidates!==1715||
- qa?.by_publishable?.false!==1715||qa?.expert_approved_publishable_count!==0)
+ if(!Array.isArray(rows)||rows.length<1715||qa?.total_candidates!==rows.length||
+ qa?.by_publishable?.false!==rows.length||qa?.expert_approved_publishable_count!==0)
   throw Error('Main corpus or publication rights changed');
  const map=new Map();
  for(const x of rows){if(map.has(x.id))throw Error('Duplicate main candidate');map.set(x.id,x);}
@@ -94,9 +94,9 @@ export function audit(rows,qa){
    independent_chemistry_human_confirmation:false,formally_approved:0});
  }
  if(all.size!==185)throw Error('Expected exactly 185 newly replayed records');
- return {schema_version:1,main_total:1715,previously_replayed:1525,
+ return {schema_version:1,main_total:rows.length,previously_replayed:1525,
   additional_source_replayed:185,main_coverage_after_addition:1710,
-  remaining_unreplayed:5,chemquiz_mit_reference:67,
+  remaining_unreplayed:rows.length-1710,chemquiz_mit_reference:67,
   chemtrain_CC_BY4_source_exercises:118,
   sources:groups,source_locked_hash_of_ids:sha([...all].sort().join('\n')),
   expert_approved:0,exam_ready:0,
@@ -108,7 +108,7 @@ export function run(){
  const result=audit(rows,load('quality_audit.json'));
  const file=join(ROOT,'harvest/main_additional_185_source_replay.json'),body=JSON.stringify(result,null,2)+'\n';
  if(!existsSync(file)||readFileSync(file,'utf8')!==body)writeFileSync(file,body);
- console.log('185 source-matched stored chemistry exercises; total replay=1710; remaining=5; approved=0');
+ console.log('185 historic source-matched records; historic replay=1710, new records tracked separately; total='+rows.length+'; approved=0');
  return result;
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
