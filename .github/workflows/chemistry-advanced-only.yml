@@ -24,3 +24,5 @@ jobs:
         run: node scripts/check-advanced-authored-v3.mjs
       - name: Verify the full fifty-case fourth-series scientific audit
         run: node scripts/check-advanced-authored-v4.mjs
+      - name: Verify all 50 fifth-series independent chemistry models
+        run: node scripts/check-advanced-authored-v5.mjs
