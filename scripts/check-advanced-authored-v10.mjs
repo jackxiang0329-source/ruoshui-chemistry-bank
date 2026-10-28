@@ -10,6 +10,62 @@ const F=96485.33212;
 const T=280,J=2400,q=Math.exp(-J/(R*T)),Z=1+3*q,p=3*q/Z;
 const w={
 
+ "UC-ADV10-I109":()=>{
+  // Independent symmetric mass-weighted Jacobi diagonalization, not secular quadratic.
+  const u=1.66053906660e-27,k=800,c=299792458;
+  function modes(m){
+   const A=[[1/m[0],-1/Math.sqrt(m[0]*m[1]),0],[-1/Math.sqrt(m[0]*m[1]),2/m[1],-1/Math.sqrt(m[1]*m[2])],[0,-1/Math.sqrt(m[1]*m[2]),1/m[2]]];
+   for(let z=0;z<70;z++){
+    let p=0,q=1;for(let i=0;i<3;i++)for(let j=i+1;j<3;j++)if(Math.abs(A[i][j])>Math.abs(A[p][q])){p=i;q=j}
+    const v=A[p][q];if(Math.abs(v)<1e-16)break;
+    const tau=(A[q][q]-A[p][p])/(2*v),t=(tau>=0?1:-1)/(Math.abs(tau)+Math.sqrt(1+tau*tau)),cs=1/Math.sqrt(1+t*t),sn=t*cs,ap=A[p][p],aq=A[q][q];
+    A[p][p]=ap-t*v;A[q][q]=aq+t*v;A[p][q]=A[q][p]=0;
+    for(let i=0;i<3;i++){if(i===p||i===q)continue;const ip=A[i][p],iq=A[i][q];A[i][p]=A[p][i]=cs*ip-sn*iq;A[i][q]=A[q][i]=sn*ip+cs*iq}
+   }
+   const eigen=[A[0][0],A[1][1],A[2][2]].sort((a,b)=>a-b);
+   assert.ok(Math.abs(eigen[0])<1e-12&&eigen[1]>0&&eigen[2]>0);
+   return eigen.slice(1).map(x=>Math.sqrt(x*k/u)/(2*Math.PI*c*100));
+  }
+  const s16=modes([16,28,16]),s18=modes([18,28,18]),mixed=modes([16,28,18]);
+  assert.ok(s18[0]<s16[0]&&s18[1]<s16[1]);
+  return [...s16,...s18,...mixed,-32/28];
+ },
+ "UC-ADV10-A109":()=>{
+  const X100=1650-.3*100,X102=1350,g=1.04,R=X100/(g*X102);
+  // Independently solve the isotope count equation, then reconstruct both raw signals.
+  const a=.75-R*.25,b=R*.9*.5-.1*.5,n=b/a;
+  const count100=.75*n+.05,count102=.25*n+.45,C=X102/count102;
+  assert.ok(n>0&&Math.abs(g*C*count100+30-1650)<1e-9&&Math.abs(C*count102-1350)<1e-9);
+  assert.ok(Math.abs(count100+count102-(n+.5))<1e-12);
+  return [R,n,n+.5,n*101/10,.45/count102];
+ },
+ "UC-ADV10-O106":()=>{
+  // Heun predictor-corrector (30k steps) independently of solution's RK4 integrator.
+  const F=x=>(.4*x*x+x*(1-x))/(.4*x*x+2*x*(1-x)+1.8*(1-x)**2);
+  const rhs=(X,x)=>(x-F(x))/(1-X);
+  let x=.6;const n=30000,h=.4/n;
+  for(let j=0;j<n;j++){const X=j*h,k1=rhs(X,x),predict=x+h*k1;x+=h*(k1+rhs(X+h,predict))/2;}
+  const n1=.6*x,n2=.6*(1-x),average=(.6-n1)/.4;
+  assert.ok(x>0&&x<1&&Math.abs(n1+n2-.6)<1e-12);
+  assert.ok(Math.abs(n1+.4*average-.6)<1e-12&&Math.abs(n2+.4*(1-average)-.4)<1e-12);
+  return [F(.6),x,F(x),average,n1,n2];
+ },
+ "UC-ADV10-P106":()=>{
+  // Independent solve in temperature, not extent; thermodynamic Cp correction retained.
+  const R=8.314462618,H=24000,dCp=10,T0=300;
+  const extent=T=>-80*(T-T0)/(H+dCp*(T-T0));
+  const K=T=>.2*Math.exp(-H/R*(1/T-1/T0)+dCp/R*(Math.log(T/T0)+T0/T-1));
+  const f=T=>{const e=extent(T);return 4*e*e/(1-e*e)-K(T)};
+  let lo=250,hi=300;
+  assert.ok(f(lo)>0&&f(hi)<0);
+  for(let j=0;j<90;j++){const mid=(lo+hi)/2;if(f(mid)>0)lo=mid;else hi=mid;}
+  const T=(lo+hi)/2,e=extent(T),n1=1-e,n2=2*e,tot=n1+n2;
+  assert.ok(T>0&&e>0&&e<1&&Math.abs(f(T))<1e-12);
+  assert.ok(Math.abs((80+10*e)*(T-300)+24000*e)<1e-9);
+  return [e,T,K(T),n2/tot,n1/tot,H+dCp*(T-T0)];
+ },
+
+
  "UC-ADV10-I108":()=>{
   const Ksp=1.8e-10,beta=1.6e7,LT=.02,C0=.01;
   const bisect=(f,lo,hi)=>{let fl=f(lo);for(let j=0;j<90;j++){const mid=(lo+hi)/2;if(fl*f(mid)<=0)hi=mid;else {lo=mid;fl=f(mid)}}return (lo+hi)/2};
@@ -262,5 +318,10 @@ for(const sub of Object.keys(req)){
  assert.ok(req[sub].count>=1&&req[sub].count<=25,'v10 sub count outside 1..25: '+sub);
 }
 assert.equal(Object.keys(w).length,all);
+const queue=JSON.parse(readFileSync(base+'overlap_review_queue.json','utf8'));
+assert.equal(queue.current_draft_count,all);
+assert.equal(queue.preliminary_flags,queue.pairs.length);
+assert.equal(queue.expert_approved,0);
+for(const row of queue.new_items_requiring_cross_series_comparison)assert.ok(ids.has(row.new_id));
 const distribution=Object.fromEntries(Object.entries(req).map(([k,v])=>[k,v.count]));
 console.log(JSON.stringify({pass:true,series:'v10-work-in-progress',draft_count:all,distribution,independently_checked_full_answer_vectors:all,required_for_complete_volume:100,review:'pending human chemistry and cross-volume core model comparison',expert_approved:0}));

@@ -2,8 +2,8 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 32,
-  "preliminary_flags": 9,
+  "current_draft_count": 36,
+  "preliminary_flags": 12,
   "pairs": [
     {
       "new_id": "UC-ADV10-I102",
@@ -58,9 +58,27 @@
       "prior_id": "UC-ADV9-O73",
       "reason": "两题共享快速构象平衡下Boltzmann权重乘通道速率的核心数学模型；新题虽扩展为双构象×双产物四通道、Eyring势垒和有效自由能，但需人工判定是否构成足够实质创新；高优先级潜在核心模型重叠。",
       "judgement": "high_priority_pending_human_core_model_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-I109",
+      "prior_id": "UC-ADV9-I84",
+      "reason": "v9 I84 uses Jahn–Teller orthogonal distortion modes; v10 I109 solves three-mass generalized eigenproblem and heteroisotopic frequency splitting. Need human comparison of governing normal-mode mathematics.",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-A109",
+      "prior_id": "UC-ADV9-A80",
+      "reason": "Both correct ICP-MS mass discrimination. New problem additionally inverts isotope dilution and subtracts Y isobaric interference, but core model overlap must be judged by expert.",
+      "judgement": "high_priority_pending_human_core_model_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-P106",
+      "prior_id": "UC-ADV9-P96",
+      "reason": "Both use adiabatic enthalpy balances; v10 adds temperature-dependent reaction enthalpy, integrated van't Hoff and gas equilibrium, versus v9 throttling flash. Need governing-equation-level review.",
+      "judgement": "pending_human_comparison"
     }
   ],
-  "notes": "All 32 records await scientific, copyright and governing-equation-level novelty verification. Nine preliminary similarity flags including O105 versus v9 O73 are hypotheses, not resolved originality. Expert approvals: zero.",
+  "notes": "All 36 records await chemistry, copyright and full cross-volume core-equation novelty review. 12 preliminary potential overlap pairs (including high-priority A109/A80 and O105/O73) are unresolved hypotheses. Expert approvals: zero.",
   "expert_approved": 0,
   "new_items_requiring_cross_series_comparison": [
     {
@@ -182,6 +200,30 @@
       "model_family": "regular-solution-binodal-spinodal-common-tangent",
       "judgement": "pending_human_comparison",
       "screening": "Distinct model hypothesis only; independent machine numerical witness checked; no comprehensive all-series governing-equation comparison or expert review."
+    },
+    {
+      "new_id": "UC-ADV10-I109",
+      "model_family": "heteroisotopic-triatomic-mass-weighted-normal-modes",
+      "judgement": "pending_human_comparison",
+      "screening": "Machine numerical witness checked; prior v9 title/model-family screen and explicit overlap flags do not establish originality. Full cross-series equation-level human comparison pending."
+    },
+    {
+      "new_id": "UC-ADV10-A109",
+      "model_family": "isotope-dilution-mass-bias-isobar-correction-mass-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "Machine numerical witness checked; prior v9 title/model-family screen and explicit overlap flags do not establish originality. Full cross-series equation-level human comparison pending."
+    },
+    {
+      "new_id": "UC-ADV10-O106",
+      "model_family": "Mayo-Lewis-copolymer-batch-feed-drift-ODE",
+      "judgement": "pending_human_comparison",
+      "screening": "Machine numerical witness checked; prior v9 title/model-family screen and explicit overlap flags do not establish originality. Full cross-series equation-level human comparison pending."
+    },
+    {
+      "new_id": "UC-ADV10-P106",
+      "model_family": "adiabatic-chemical-equilibrium-variable-Cp-vanthoff-coupling",
+      "judgement": "pending_human_comparison",
+      "screening": "Machine numerical witness checked; prior v9 title/model-family screen and explicit overlap flags do not establish originality. Full cross-series equation-level human comparison pending."
     }
   ]
 }
