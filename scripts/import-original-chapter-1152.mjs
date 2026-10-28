@@ -56,7 +56,7 @@ export const FAMILIES=[{subject:"inorganic",family:"octa_d3_lfse",unit:"kJ/mol",
 {subject:"physical",family:"molar_photon_energy_wavelength",unit:"kJ/mol",a:350,da:4,b:0,db:0,question:"真空光波长 λ={a} nm，取 h=6.62607015×10⁻³⁴ J·s、c=299792458 m/s 和 NA=6.02214076×10²³ mol⁻¹。求每摩尔光子的能量（kJ/mol），注意不是每个光子的能量。",explanation:"E_molar=NAhc/λ，λ 由 nm 换成 m，最后 J/mol 除以 1000 成 kJ/mol。",calc:(a,b)=>6.62607015e-34*299792458*6.02214076e23/(a*1e-9)/1000,inverse:(a,b,x)=>err(x*a,6.62607015e-34*299792458*6.02214076e23/(1e-9)/1000)},
 {subject:"physical",family:"boltzmann_two_level_excited_probability",unit:"无量纲",a:300,da:2,b:4500,db:50,question:"理想二能级分子体系的基态简并度 g0=1、激发态简并度 g1=2，能隙 ΔE={b} J/mol、温度 T={a} K。假设达到热平衡，求激发态占总数的概率 p1。",explanation:"激发态统计权重 w1=2exp(−ΔE/RT)、基态 w0=1，故 p1=w1/(1+w1)，不是激发与基态的比值。",calc:(a,b)=>2*Math.exp(-b/(8.314462618*a))/(1+2*Math.exp(-b/(8.314462618*a))),inverse:(a,b,x)=>err(Math.log(2*(1-x)/x)*8.314462618*a,b)},
 {subject:"physical",family:"ideal_osmotic_pressure_kpa",unit:"kPa",a:0.05,da:0.003,b:300,db:2,question:"某非电解质的理想稀溶液浓度为 c={a} mol/L、绝对温度 T={b} K，渗透系数取 1。用 R=8.314462618 L·kPa/(mol·K) 和 van't Hoff 定律求渗透压 kPa。",explanation:"理想稀溶液满足 π=cRT，题目浓度是 mol/L 而非质量摩尔浓度，高浓度非理想项不在模型内。",calc:(a,b)=>a*8.314462618*b,inverse:(a,b,x)=>err(x/(8.314462618*b),a)}];
-export const qid=q=>createHash('sha256').update(q.normalize('NFKC').replace(/\\s+/g,' ').trim().toLowerCase()).digest('hex');
+export const qid=q=>createHash('sha256').update(q.normalize('NFKC').replace(/\s+/g,' ').trim().toLowerCase()).digest('hex');
 const format=x=>String(Number(x.toPrecision(10)));
 const subst=(t,a,b)=>t.replaceAll('{a}',format(a)).replaceAll('{b}',format(b));
 export function validate(f,a,b,x){
