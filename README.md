@@ -227,3 +227,11 @@
 - [五题独立元素守恒与反应条件核验（中文）](harvest/muza_independent_science_review.md)和[机器可读 JSON 报告](harvest/muza_independent_science_review.json)：五道题均具形式净反应的原子守恒证明；各题独立记录目标产物、来源反应物、净反应副产物及参考材料。
 - **q2** 的叔丁基氯乙醇溶剂解不能忽略 SN1/E1 竞争；**q4** 的乙酸乙醇酯化应区分催化硫酸与被选中的计量反应物、说明可逆平衡；**q5** 的苯基溴化镁必须先在无水环境中开环，酸性后处理应在反应后独立进行。
 - [统一统计](harvest/coverage_report.json)新增 `main_independent_muza_formula_checks=5`、`main_independent_muza_science_condition_caveats=3`，与 `1715/1715` 的**来源文件一致性核验**分开陈列。前者也是必要条件检查，不代表已实证产率或专家审批。所有候选仍未批准正式组卷。
+
+
+## 2026-10-28：200 道跨测量—化学模型高阶综合题（批次管理）
+
+- 新建 [高阶综合题批次库](data/integrated_challenges/README.md)，仅用 [一个 JSONL 文件](data/integrated_challenges/2026-10-28/batch-001.jsonl)归档本轮 **200 道中文综合题及逐步解答**，题号 `UC-CI-20261028-001`—`200`，不会在主目录散落 200 份文件。
+- 设计为 **20 种化学测定反演 × 10 种后续物化应用 = 200 种不重复方法配对**，并额外设置系统测量误差 +1% 时的非线性灵敏度推导。难度暂标 **4/5：51 道、5/5：149 道**；难度评级同样需要人工确认。
+- [专门机器验算脚本](scripts/check-integrated-challenges.mjs)和 [GitHub Actions 检查工作流](.github/workflows/integrated-chemistry-qa.yml)检查题号、配对唯一性、逆算、物料/电量守恒、公式结果与导数，以及审核隔离标志。
+- **口径边界**：200 是新的原创测量—应用组合题，不等于 200 个独立的基础化学原理，也不是官方考题；不将这 200 道自动累入海量 `data/candidates/` 或正式出卷清单。所有题目 `publishable=false`、**专家批准 0**。
