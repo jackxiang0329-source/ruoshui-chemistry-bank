@@ -30,7 +30,29 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   derivations.edition_rights_unresolved!==true||
   derivations.expert_approved!==0||derivations.reuse_rights_approved!==0||
   derivations.released_for_exams!==0)
-  throw Error('Unsafe or inconsistent chemistry coverage sources');
+  throw Error('Unsafe or inconsistent chemistry coverage sources: '+
+   JSON.stringify({
+    main_total:whole,main_exercises:exercise,main_cards:card,
+    raw_external:raw,publication_total:publication?.total_candidates,
+    approved:publication?.approved_count,
+    rqa_staged:rqaState?.staged_total,
+    rqa_examined:rqaState?.examined,
+    rqa_reviewed:rqaReview?.evaluated_count,
+    rqa_is_staging_only:rqaReview?.staging_only,
+    rqa_unverified:rqaReview?.all_qa_are_unverified,
+    science_count:science?.reviewed_source_cases,
+    science_items:science?.items?.length,
+    science_issues:science?.source_answer_discrepancies,
+    science_typos:science?.source_question_typographical_issues,
+    chinese_numeric_count:derivations?.numeric_review_count,
+    chinese_full:derivations?.previous_full_chinese_drafts,
+    chinese_derivations:derivations?.new_chinese_independent_derivations,
+    chinese_items:derivations?.items?.length,
+    quarantine:derivations?.edition_rights_unresolved,
+    external_rights:external?.item_rights_approved,
+    science_publish:science?.publishable,
+    chinese_release:derivations?.released_for_exams
+   }));
  return {schema_version:1,
   main_candidate_records:whole,main_exercise_candidates:exercise,main_study_cards:card,
   external_oer_unreviewed_blocks:raw,
