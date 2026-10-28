@@ -14,7 +14,7 @@ test('all 40 distinct stored models carry source-bound rights and 34 separately 
  assert.equal(Object.keys(INTEGRATED).length,20);
  assert.equal(new Set(r.records.map(x=>x.id)).size,40);
  assert.match(markdown(r),/40 道原创大学化学题/);
- assert.match(markdown(r),/气相平衡/);
+ assert.match(markdown(r),/标准压力 Kp/);
 });
 test('changed stored facts, authorship, source rights, units, and numerical answers are rejected',()=>{
  const a=ap(),b=integrated();
