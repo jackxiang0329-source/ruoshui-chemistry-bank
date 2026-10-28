@@ -23,3 +23,180 @@ export const CASES=[
 {id:"P02",subject:"physical",title:"热容差修正反应热力学与平衡常数",question_tex:"某假想标准反应在 \\(T_0=298.15\\,\\mathrm K\\) 的标准焓、标准熵分别为 \\(\\Delta_rH^\\circ(T_0)=45.000\\,\\mathrm{kJ\\,mol^{-1}}\\) 与 \\(\\Delta_rS^\\circ(T_0)=120.00\\,\\mathrm{J\\,mol^{-1}K^{-1}}\\)。在 \\(298.15\\) 到 \\(350.00\\,\\mathrm K\\) 区间，标准摩尔热容差恒为 \\(\\Delta_rC_p^\\circ=50.00\\,\\mathrm{J\\,mol^{-1}K^{-1}}\\)。求 \\(350.00\\,\\mathrm K\\) 的标准焓、熵、Gibbs 能和无量纲热力学平衡常数 \\(K\\)，并给出该温度的 van't Hoff 导数 \\(d\\ln K/dT\\)。",solution_tex:"由 Kirchhoff 定律和熵的温度积分，\n\\[\n\\Delta_rH^\\circ(T)=H_0+\\Delta C_p(T-T_0),\\qquad\n\\Delta_rS^\\circ(T)=S_0+\\Delta C_p\\ln(T/T_0).\n\\]\n取 \\(T=350.00\\,\\mathrm K\\)，得到\n\\[\n\\Delta_rH^\\circ=47.5925\\,\\mathrm{kJ\\,mol^{-1}},\n\\quad\n\\Delta_rS^\\circ=128.01682\\,\\mathrm{J\\,mol^{-1}K^{-1}}.\n\\]\n应先把焓与 \\(T\\Delta S\\) 统一成 J/mol，计算\n\\[\n\\Delta_rG^\\circ=47592.5-350(128.01682)\n=2786.61\\,\\mathrm{J\\,mol^{-1}}.\n\\]\n按标准活度定义的无量纲 \\(K\\) 满足\n\\[\nK=\\exp\\!\\left(-\\frac{\\Delta_rG^\\circ}{RT}\\right)\n=0.383821,\\qquad\n\\left.\\frac{d\\ln K}{dT}\\right|_{350}\n=\\frac{\\Delta_rH^\\circ(350)}{R(350)^2}\n=0.0467270\\,\\mathrm{K^{-1}}.\n\\]\n最后一式可由前述 \\(H(T),S(T)\\) 的显式表达求导复核。",assumptions:"ΔCp 在区间内常数；T 为绝对温度；K 由统一标准态活度定义并无量纲；近似只用于指定温度区间。",reference:[47592.5,128.016821946,2786.612318999,0.3838212380945,0.0467270372039],calc:()=>{const T=350,T0=298.15,R=8.314462618,H=45000+50*(T-T0),S=120+50*Math.log(T/T0),G=H-T*S,K=Math.exp(-G/(R*T));return[H,S,G,K,H/(R*T*T)];},verify:x=>{const [H,S,G,K,d]=x,T=350,R=8.314462618;return[E(H,45000+50*(T-298.15)),E(S,120+50*Math.log(T/298.15)),E(G,H-T*S),E(Math.log(K),-G/(R*T)),E(d*R*T*T,H)];}},
 {id:"P03",subject:"physical",title:"有限溶液 Langmuir 吸附的非线性质量平衡",question_tex:"把 \\(m=2.000\\,\\mathrm g\\) 的均匀吸附剂加入 \\(V=0.5000\\,\\mathrm L\\)、初浓度 \\(C_0=0.002000\\,\\mathrm{mol\\,L^{-1}}\\) 的单溶质溶液中。吸附平衡遵守 \\(q(C)=q_{\\max}KC/(1+KC)\\)，其中 \\(q_{\\max}=4.00\\times10^{-4}\\,\\mathrm{mol\\,g^{-1}}\\)、\\(K=500.0\\,\\mathrm{L\\,mol^{-1}}\\)。假设没有化学反应或容器吸附且溶液体积不变，求平衡游离浓度 \\(C\\)、表面覆盖度 \\(\\theta\\)、吸附总物质的量及去除率；必须考虑吸附导致的溶液浓度下降。",solution_tex:"平衡时总物料守恒为\n\\[\nVC_0=VC+mq_{\\max}\\frac{KC}{1+KC}.\n\\]\n化为二次多项式，\n\\[\nVK C^2+\\bigl[V+m q_{\\max}K-VC_0K\\bigr]C-VC_0=0.\n\\]\n因常数项为负，二次方程恰有一个正根；等价地，原始右侧对 \\(C\\ge0\\) 严格递增，故物理解唯一。数值代入并取正根，\n\\[\nC=0.001354066\\,\\mathrm{mol\\,L^{-1}}.\n\\]\n相应表面覆盖度\n\\[\n\\theta=\\frac{KC}{1+KC}=0.4037088,\n\\]\n吸附总物质的量\n\\[\nn_{\\rm ads}=m q_{\\max}\\theta\n=3.22967\\times10^{-4}\\,\\mathrm{mol},\n\\]\n去除率\n\\[\n\\eta=100\\left(1-\\frac{C}{C_0}\\right)=32.2967\\%.\n\\]\n可代回验证 \\(VC+n_{\\rm ads}=VC_0=0.001000\\,\\mathrm{mol}\\)，不允许用初始浓度直接计算最终 \\(\\theta\\)。",assumptions:"单一吸附溶质；温度不变；理想单层 Langmuir、独立同质位点；没有溶液体积变化、容器损失和其它反应。",reference:[0.0013540659229,0.403708798219,0.000322967038575,32.2967038566],calc:()=>{const C0=.002,V=.5,m=2,q=.0004,K=500;const C=bisect(t=>V*t+m*q*K*t/(1+K*t)-V*C0,0,C0),theta=K*C/(1+K*C);return[C,theta,m*q*theta,100*(1-C/C0)];},verify:x=>{const [C,t,n,eta]=x;return[E(C*.5+n,.001),E(t*(1+500*C),500*C),E(n,2*.0004*t),E(eta/100,1-C/.002)];}}
 ];
+
+export const stableId=q=>createHash('sha256').update(q.normalize('NFKC').replace(/\s+/g,' ').trim().toLowerCase()).digest('hex');
+export function verifyCase(p){
+ const numbers=p.calc();
+ if(!Array.isArray(numbers)||numbers.length!==p.reference.length||numbers.some(x=>!Number.isFinite(x)))
+  throw Error('Incomplete mathematical result for '+p.id);
+ const witnesses=p.verify(numbers);
+ if(!Array.isArray(witnesses)||witnesses.length!==numbers.length||
+    witnesses.some(x=>!Number.isFinite(x)||x>1e-7))
+  throw Error('Scientific equation witness failed for '+p.id);
+ for(let i=0;i<numbers.length;i++)if(E(numbers[i],p.reference[i])>1e-5)
+  throw Error('Independently computed reference disagreement: '+p.id+' result '+i);
+ return {numbers,witnesses};
+}
+const esc=s=>String(s).replaceAll('&','\\&').replaceAll('%','\\%')
+ .replaceAll('#','\\#').replaceAll('_','\\_').replaceAll('$','\\$');
+const SUBJECTS=[
+ ['inorganic','无机化学'],['analytical','分析化学'],
+ ['organic','有机化学'],['physical','物理化学']
+];
+export function candidateRecords(){
+ if(CASES.length!==12||new Set(CASES.map(x=>x.id)).size!==12||
+    SUBJECTS.some(([s])=>CASES.filter(p=>p.subject===s).length!==3))
+  throw Error('Expected three independent authored scientific cases per discipline');
+ return CASES.map(p=>{
+  const {numbers,witnesses}=verifyCase(p),question=p.title+'\n'+p.question_tex;
+  const id=stableId(question);
+  return {schema_version:1,id,subject:p.subject,topic:'advanced_integrated_2026_'+p.id,
+   level:'undergraduate',difficulty:'advanced_integrated',
+   question_type:'independently_authored_nonparametric_multistage_science',
+   resource_type:'original_solved_exercise_not_upstream_question',
+   source_problem_number:p.id,question,
+   answer:numbers.map((x,i)=>String(i+1)+': '+Number(x).toPrecision(10)).join('；'),
+   explanation:p.solution_tex,problem_title:p.title,
+   scientific_assumptions:p.assumptions,
+   numeric_answers:numbers,independent_equation_residuals:witnesses,
+   independent_model_witness_count:witnesses.length,
+   human_expert_reviewed:false,requires_human_chemistry_review:true,
+   quality_status:'awaiting_expert_review',
+   semantic_duplicate_review_pending:true,publishable:false,
+   source:{repository:REPO,file:'scripts/advanced-integrated-12.mjs',
+    license:'CC0-1.0',license_evidence:'https://github.com/'+REPO+'/blob/main/LICENSE-ORIGINAL-QUESTIONS.md',
+    content_rights_verified:true,origin:'original_12_distinct_advanced_integrated_chemical_problems',
+    original_exam_question:false,third_party_question_text_copied:false,
+    changes:'Written independently; 12 new analytic modeling problems with explicit scientific assumptions, no adapted textbook/exam question text.'}};
+ });
+}
+const preamble=String.raw`\documentclass[UTF8,openany,11pt,a4paper]{ctexbook}
+\usepackage{fontspec}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setmainfont{TeX Gyre Pagella}
+\usepackage[margin=24mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,mathtools,mhchem,booktabs,longtable}
+\usepackage{microtype,xcolor,tcolorbox,fancyhdr,hyperref}
+\definecolor{ink}{HTML}{193247}
+\definecolor{accent}{HTML}{087F76}
+\definecolor{soft}{HTML}{F0F7F6}
+\definecolor{warn}{HTML}{8A4513}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=accent,pdfauthor={Ruoshui Chemistry Editorial Review},pdftitle={大学四大化学·原创高阶综合题科学复核册}}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{.25em}
+\linespread{1.16}
+\setcounter{secnumdepth}{2}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 三千弱水 \quad 化学综合题科学复核}
+\fancyhead[R]{\small \textcolor{warn}{未通过专家审定}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{.35pt}
+\newtcolorbox{reviewnote}{colback=soft,colframe=accent!60!black,arc=1.3mm,boxrule=.55pt,left=2mm,right=2mm}
+\newcommand{\sciencewarn}[1]{\begin{reviewnote}\textbf{\textcolor{warn}{模型适用条件与审核重点：}}#1\end{reviewnote}}
+\begin{document}
+\begin{titlepage}
+\vspace*{22mm}
+{\color{accent}\rule{\linewidth}{2.3pt}}\\[12mm]
+{\Large 三千弱水 · 大学四大化学题库}\\[12mm]
+{\Huge\bfseries 原创高阶综合题}\\[4mm]
+{\Huge\bfseries 科学复核册}\\[12mm]
+{\large 第一辑 \quad 12 道独立专题 \quad 题目与完整推导}\\[16mm]
+\begin{reviewnote}
+本册供\textbf{科学性、题意条件、计算和排版}联合复核。
+全部题目为原创教学题，不宣称出自真实大学考试；
+无外部专家签名，不作为已审定的正式试题册发布。
+特别区分机器方程残差为零与化学模型真实可靠两种概念。
+\end{reviewnote}
+\vfill
+{\small 版本：2026-10-28 \quad 校验：数值反算、来源许可、假设清单}\\[6mm]
+{\small 许可证：独立原创题文 CC0-1.0；第三方材料不在本声明范围内}
+{\color{accent}\rule{\linewidth}{1.1pt}}
+\end{titlepage}
+\frontmatter
+\tableofcontents
+\mainmatter
+\chapter*{编者说明}
+\addcontentsline{toc}{chapter}{编者说明}
+题库现有大量用于计算训练的参数变式，本辑不继续通过数字替换扩大名义独立知识点。
+本册选入\textbf{每科三道}独立撰写的高阶综合题，强调建模、约束条件、数值求解、
+守恒检验、近似适用范围以及易错点。个别题目使用明确标记的理想化模型或假想体系；
+这不是现实实验结果。机器脚本可以重算表内结果，仍需人工科学审阅。
+`;
+export function buildTex(){
+ let t=preamble;
+ t+=String.raw`\part{题目册}`+'\n';
+ for(const [subject,name] of SUBJECTS){
+  t+=String.raw`\chapter{`+name+'}\n';
+  for(const p of CASES.filter(q=>q.subject===subject)){
+   t+=String.raw`\section{`+p.id+' \\quad '+p.title+'}\n';
+   t+=p.question_tex+'\n'+String.raw`\sciencewarn{`+esc(p.assumptions)+'}\n';
+  }
+ }
+ t+=String.raw`\cleardoublepage\part{严格解答与计算验证}`+'\n';
+ for(const [subject,name] of SUBJECTS){
+  t+=String.raw`\chapter{`+name+'：解答}\n';
+  for(const p of CASES.filter(q=>q.subject===subject)){
+   const {numbers,witnesses}=verifyCase(p);
+   t+=String.raw`\section{`+p.id+' \\quad '+p.title+'}\n'+p.solution_tex+'\n';
+   t+=String.raw`\begin{reviewnote}`+'\n';
+   t+='本题计算机独立数值见证：'+numbers.map((v,i)=>String(i+1)+'：'+Number(v).toPrecision(8)).join('；')+'。\n';
+   t+='逆向方程最大相对残差：'+Math.max(...witnesses).toExponential(3)+'。\n';
+   t+=String.raw`\end{reviewnote}`+'\n';
+  }
+ }
+ t+=String.raw`\chapter*{质量控制与发布边界}
+\addcontentsline{toc}{chapter}{质量控制与发布边界}
+\begin{enumerate}
+\item 12 道题各有独立内容，不使用批量参数变式增加“独立题型”计数。
+\item 每题列出前提、关键守恒关系和数值反算；计算过程可以由版本固定的脚本重现。
+\item 数值反算无法自动检验文献真实性、实验可行性、结构化学细节和教学适切性。
+\item 所有题目仍为 awaiting\_expert\_review、publishable=false，
+不自动进入正式组卷索引。
+\item PDF 为专家审校稿。若修改题意、反应模型或常数，必须同时重新生成 PDF、
+题目 JSON 与科学审核报告。
+\end{enumerate}
+\end{document}
+`;
+ return t;
+}
+export function build(){
+ const records=candidateRecords(),root=join(ROOT,'editorial/advanced_integrated_v1');
+ mkdirSync(root,{recursive:true});
+ const dir=join(ROOT,'data/candidates');mkdirSync(dir,{recursive:true});
+ let added=0;
+ for(const rec of records){
+  const out=join(dir,rec.id+'.json');
+  if(existsSync(out)&&JSON.stringify(JSON.parse(readFileSync(out,'utf8')))!==JSON.stringify(rec))
+   throw Error('Source drift for high-quality original '+rec.source_problem_number);
+ }
+ for(const rec of records){
+  const out=join(dir,rec.id+'.json');if(existsSync(out))continue;
+  writeFileSync(out,JSON.stringify(rec,null,2)+'\n');added++;
+ }
+ const science={schema_version:1,generated:12,distinct_original_topic_models:12,
+  discipline_counts:{inorganic:3,analytical:3,organic:3,physical:3},
+  numeric_equation_checks:records.reduce((n,r)=>n+r.independent_model_witness_count,0),
+  no_parametric_replicates:true,copied_external_question_text:0,
+  scientific_assumption_checklist:CASES.map(p=>({id:p.id,title:p.title,subject:p.subject,
+   assumptions:p.assumptions,independent_equation_residuals:p.verify(p.calc()),
+   human_scientific_approval:false,semantic_duplicate_review_pending:true})),
+  original_license:'CC0-1.0',expert_approved:0,publishable:false,
+  notice:'Machine conservation checks validate exact authored mathematical models only. Not official exam questions and not cleared for publication.'};
+ const artifacts=[
+  ['original_advanced_integrated_12.tex',buildTex()],
+  ['science_assumption_review.json',JSON.stringify(science,null,2)+'\n'],
+  ['candidate_ids.json',JSON.stringify(records.map(r=>({code:r.source_problem_number,id:r.id,subject:r.subject,title:r.problem_title})),null,2)+'\n']
+ ];
+ for(const [file,body] of artifacts){
+  const out=join(root,file);
+  if(!existsSync(out)||readFileSync(out,'utf8')!==body)writeFileSync(out,body);
+ }
+ console.log('12 genuinely distinct advanced chemistry problems: added='+added+' existing='+(12-added)+
+  ' inverse witnesses='+science.numeric_equation_checks+' expert approvals=0');
+ return {added,existing:12-added,science};
+}
+if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
+ try{build();}catch(e){console.error(e.stack);process.exitCode=1;}
+}
