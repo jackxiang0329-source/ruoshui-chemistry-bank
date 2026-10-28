@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "86e062e7595200acff0908b6b5640e544567c318cc81634b00f1eefb468c9cb1",
+  "subject": "physical",
+  "topic": "molar_photon_energy_wavelength_v23",
+  "topic_family": "molar_photon_energy_wavelength",
+  "parameter_case": 23,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "真空光波长 λ=438 nm，取 h=6.62607015×10⁻³⁴ J·s、c=299792458 m/s 和 NA=6.02214076×10²³ mol⁻¹。求每摩尔光子的能量（kJ/mol），注意不是每个光子的能量。",
+  "answer": "答案 = 273.12001 kJ/mol。",
+  "explanation": "E_molar=NAhc/λ，λ 由 nm 换成 m，最后 J/mol 除以 1000 成 kJ/mol。 本题代入 a=438、b=0，得到 273.12001 kJ/mol。模型假设已列于题干。",
+  "numeric_answers": [
+    273.12001287373744
+  ],
+  "units": "kJ/mol",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

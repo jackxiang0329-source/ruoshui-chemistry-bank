@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "d80e1b1f0b8a8c91ee5ea76c92f73ed59801fd2bd364a7f6bb6dd9945e5f3f8e",
+  "subject": "physical",
+  "topic": "first_order_90pct_conversion_time_v09",
+  "topic_family": "first_order_90pct_conversion_time",
+  "parameter_case": 9,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某单一一级反应的速率常数为 k=0.066 s⁻¹，过程无逆反应、温度恒定。计算底物达到 90.0% 转化（剩余 10.0%）所需时间（秒）。",
+  "answer": "答案 = 34.887653 s。",
+  "explanation": "按 exp(−kt)=0.10，解得 t=ln10/k；这是一级反应的固定比例时间。 本题代入 a=0.066、b=0，得到 34.887653 s。模型假设已列于题干。",
+  "numeric_answers": [
+    34.887652924152206
+  ],
+  "units": "s",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

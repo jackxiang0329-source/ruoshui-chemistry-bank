@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "217430c8b0ca157f5aac85effb4cca5cfc365a80e15ffd509818401da5038305",
+  "subject": "inorganic",
+  "topic": "solution_electroneutrality_na_v17",
+  "topic_family": "solution_electroneutrality_na",
+  "parameter_case": 17,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "稀水溶液仅含 Ca²⁺、Na⁺、Cl⁻，其中 [Ca²⁺]=0.0164 mol/L、[Cl⁻]=0.0708 mol/L，全部离子电离完全。利用电中性确定钠离子浓度。",
+  "answer": "答案 = 0.038000000 mol/L。",
+  "explanation": "根据 2[Ca²⁺]+[Na⁺]=[Cl⁻]，钠离子浓度为 b−2a；题给范围保证此值非负。 本题代入 a=0.0164、b=0.0708，得到 0.038000000 mol/L。模型假设已列于题干。",
+  "numeric_answers": [
+    0.038
+  ],
+  "units": "mol/L",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

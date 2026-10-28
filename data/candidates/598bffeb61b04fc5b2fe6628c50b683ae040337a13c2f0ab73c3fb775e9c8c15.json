@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "598bffeb61b04fc5b2fe6628c50b683ae040337a13c2f0ab73c3fb775e9c8c15",
+  "subject": "analytical",
+  "topic": "constant_volume_standard_addition_v08",
+  "topic_family": "constant_volume_standard_addition",
+  "parameter_case": 8,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某恒定最终体积标准加入分析：未加标信号 A0=0.306；增加分析物等效浓度 0.107 mg/L 后，仪器信号恰好增加 0.150，假设响应斜率不变。求未加标的测量液等效浓度。",
+  "answer": "答案 = 0.21828000 mg/L。",
+  "explanation": "由 ΔA=kΔc 得 k=.150/b，因此初始浓度 c0=A0/k；若原液另经稀释，需要单独修正。 本题代入 a=0.306、b=0.107，得到 0.21828000 mg/L。模型假设已列于题干。",
+  "numeric_answers": [
+    0.21828
+  ],
+  "units": "mg/L",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

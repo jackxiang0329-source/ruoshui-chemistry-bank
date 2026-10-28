@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "7a0d24f4f6d848384e6cdfb30c2f151d9e945d2b6fed488f840137c75e593540",
+  "subject": "inorganic",
+  "topic": "vegard_solid_solution_a_v10",
+  "topic_family": "vegard_solid_solution_a",
+  "parameter_case": 10,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某理想 A₁₋ₓBₓ 固溶体符合 Vegard 定律，端元晶格常数分别为 3.599 Å 和 4.117 Å，且 x=0.35。忽略应变及有序化，求固溶体晶格常数。",
+  "answer": "答案 = 3.7803000 Å。",
+  "explanation": "题给线性固溶模型 a=(1−x)aA+xaB=0.65aA+0.35aB；真实体系不一定严格线性。 本题代入 a=3.599、b=4.117，得到 3.7803000 Å。模型假设已列于题干。",
+  "numeric_answers": [
+    3.7803
+  ],
+  "units": "Å",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

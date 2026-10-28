@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "d8fb33c1be284f889261f225c631c08661cb7976a2589ffd4c7ece1b0ab1e092",
+  "subject": "organic",
+  "topic": "quantitative_nmr_mole_ratio_v24",
+  "topic_family": "quantitative_nmr_mole_ratio",
+  "parameter_case": 24,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "定量¹H NMR 中组分 X 的目标峰积分 4.84（每分子含 3 个对应质子），Y 峰积分 3.15（每分子含 2 个对应质子），假设积分完全定量。求 X/Y 的分子数比例。",
+  "answer": "答案 = 1.0243386 倍。",
+  "explanation": "定量核磁积分与被计数的质子个数成正比，故 NX/NY=(IX/3)/(IY/2)，不是 IX/IY。 本题代入 a=4.84、b=3.15，得到 1.0243386 倍。模型假设已列于题干。",
+  "numeric_answers": [
+    1.0243386243386243
+  ],
+  "units": "倍",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

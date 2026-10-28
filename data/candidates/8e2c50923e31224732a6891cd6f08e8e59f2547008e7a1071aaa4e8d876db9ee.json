@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "8e2c50923e31224732a6891cd6f08e8e59f2547008e7a1071aaa4e8d876db9ee",
+  "subject": "physical",
+  "topic": "boltzmann_two_level_excited_probability_v14",
+  "topic_family": "boltzmann_two_level_excited_probability",
+  "parameter_case": 14,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "理想二能级分子体系的基态简并度 g0=1、激发态简并度 g1=2，能隙 ΔE=5150 J/mol、温度 T=326 K。假设达到热平衡，求激发态占总数的概率 p1。",
+  "answer": "答案 = 0.23025695 无量纲。",
+  "explanation": "激发态统计权重 w1=2exp(−ΔE/RT)、基态 w0=1，故 p1=w1/(1+w1)，不是激发与基态的比值。 本题代入 a=326、b=5150，得到 0.23025695 无量纲。模型假设已列于题干。",
+  "numeric_answers": [
+    0.23025695289429174
+  ],
+  "units": "无量纲",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

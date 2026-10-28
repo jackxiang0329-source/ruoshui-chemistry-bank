@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "e40baaffd8e7c80d4d7850d1af5f7114a93be9547d24eb417497ecf4dc9ab60b",
+  "subject": "physical",
+  "topic": "clapeyron_phase_slope_v23",
+  "topic_family": "clapeyron_phase_slope",
+  "parameter_case": 23,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某相变的摩尔焓 ΔH=5700 J/mol，温度 T=344 K，高温相减低温相摩尔体积差 ΔV=2.00×10⁻⁶ m³/mol。根据 Clapeyron 关系求相边界斜率 dP/dT（Pa/K）。",
+  "answer": "答案 = 8284883.7 Pa/K。",
+  "explanation": "Clapeyron 式 dP/dT=ΔH/(TΔV)，给定 ΔV>0，结果正号，单位直接为 Pa/K。 本题代入 a=5700、b=344，得到 8284883.7 Pa/K。模型假设已列于题干。",
+  "numeric_answers": [
+    8284883.720930234
+  ],
+  "units": "Pa/K",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

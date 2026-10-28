@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "b5e98bc4c26209cd39c040d7b9be18aba6bacfe1befcb5351936487eb842d784",
+  "subject": "organic",
+  "topic": "monoalkene_hydrogenation_percent_v21",
+  "topic_family": "monoalkene_hydrogenation_percent",
+  "parameter_case": 21,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某单烯烃初始有 0.92 mol，氢化实验实际吸收 0.28 mol H₂，每个已反应分子只消耗一分子氢气，没有其它耗氢反应。求 C=C 氢化转化百分率。",
+  "answer": "答案 = 30.434783 %。",
+  "explanation": "反应的单烯烃 mol 数等于吸收的氢气 mol 数，转化率=100n(H₂)/n0。 本题代入 a=0.92、b=0.28，得到 30.434783 %。模型假设已列于题干。",
+  "numeric_answers": [
+    30.434782608695656
+  ],
+  "units": "%",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

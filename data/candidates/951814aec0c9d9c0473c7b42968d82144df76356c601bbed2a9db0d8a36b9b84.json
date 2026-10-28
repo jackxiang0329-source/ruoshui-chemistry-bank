@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "951814aec0c9d9c0473c7b42968d82144df76356c601bbed2a9db0d8a36b9b84",
+  "subject": "analytical",
+  "topic": "edta_metal_mmol_v23",
+  "topic_family": "edta_metal_mmol",
+  "parameter_case": 23,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "用 0.0186 mol/L 的 EDTA 在适当缓冲条件下滴定样品金属 M²⁺，耗 EDTA 16.4 mL，假设一比一配位完全、无其它金属干扰。求样品中金属物质的量 mmol。",
+  "answer": "答案 = 0.30504000 mmol。",
+  "explanation": "一摩尔 M²⁺ 与一摩尔 EDTA 配位，n(M)=cEDTA VEDTA；单位 mol/L×mL 对应 mmol。 本题代入 a=0.0186、b=16.4，得到 0.30504000 mmol。模型假设已列于题干。",
+  "numeric_answers": [
+    0.3050399999999999
+  ],
+  "units": "mmol",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

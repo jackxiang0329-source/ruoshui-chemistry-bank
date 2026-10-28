@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "48ab164ed49384540607136d8ede23c96e6a5583170998dd025caf61f4554106",
+  "subject": "analytical",
+  "topic": "lod_three_sigma_slope_v05",
+  "topic_family": "lod_three_sigma_slope",
+  "parameter_case": 5,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某线性分析的空白响应标准差 σ=0.00452 A，校准斜率 m=0.084 A/(mg/L)。若检出限定义为 LOD=3σ/m，求 LOD（mg/L），不将其当作通用法规阈值。",
+  "answer": "答案 = 0.16142857 mg/L。",
+  "explanation": "按给定方法定义 LOD=3σ/m；单位为 A/[A/(mg/L)]=mg/L。 本题代入 a=0.00452、b=0.084，得到 0.16142857 mg/L。模型假设已列于题干。",
+  "numeric_answers": [
+    0.16142857142857142
+  ],
+  "units": "mg/L",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

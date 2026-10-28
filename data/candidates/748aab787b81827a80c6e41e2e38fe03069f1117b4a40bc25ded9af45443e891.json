@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "748aab787b81827a80c6e41e2e38fe03069f1117b4a40bc25ded9af45443e891",
+  "subject": "organic",
+  "topic": "copolymer_repeat_unit_mass_percent_v22",
+  "topic_family": "copolymer_repeat_unit_mass_percent",
+  "parameter_case": 22,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "二元共聚物中 A 单元摩尔分数为 0.497，其摩尔质量 MA=96.8 g/mol，B 单元摩尔质量为 100.0 g/mol。忽略端基和组成漂移，求 A 单元的质量百分数。",
+  "answer": "答案 = 48.887100 %。",
+  "explanation": "wA=xAMA/(xAMA+(1−xA)MB)，乘 100% 即得答案。摩尔分数不是质量百分数。 本题代入 a=0.497、b=96.8，得到 48.887100 %。模型假设已列于题干。",
+  "numeric_answers": [
+    48.887100445485
+  ],
+  "units": "%",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

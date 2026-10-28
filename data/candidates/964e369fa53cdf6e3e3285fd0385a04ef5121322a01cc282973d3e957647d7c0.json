@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "964e369fa53cdf6e3e3285fd0385a04ef5121322a01cc282973d3e957647d7c0",
+  "subject": "inorganic",
+  "topic": "aliovalent_dopant_vacancy_fraction_v22",
+  "topic_family": "aliovalent_dopant_vacancy_fraction",
+  "parameter_case": 22,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某二价氧化物 MO 中三价离子 M'³⁺ 占原金属位点分数 0.0515，只通过含两个负有效电荷的金属位点空位补偿。求所需空位位点分数。",
+  "answer": "答案 = 0.025750000 位点分数。",
+  "explanation": "每个三价替位比正常二价位点多一个有效正电荷，一个金属空位抵消两个正有效电荷，所以 fvac=a/2。 本题代入 a=0.0515、b=0，得到 0.025750000 位点分数。模型假设已列于题干。",
+  "numeric_answers": [
+    0.02575
+  ],
+  "units": "位点分数",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

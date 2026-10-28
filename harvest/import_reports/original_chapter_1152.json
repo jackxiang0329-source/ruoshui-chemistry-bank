@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "generated": 1152,
+  "distinct_topic_families": 48,
+  "cases_per_family": 24,
+  "by_subject": {
+    "inorganic": 288,
+    "analytical": 288,
+    "organic": 288,
+    "physical": 288
+  },
+  "independent_numeric_inverse_checks": 1152,
+  "full_source_replays": 1152,
+  "source_license": "CC0-1.0",
+  "copied_exam_questions": 0,
+  "expert_approved": 0,
+  "publishable": false,
+  "caveat": "1152 are distinct numeric instances of 48 authored subject families, NOT 1152 distinct science topics. Source replay and inverse algebra do not establish independent chemical correctness."
+}

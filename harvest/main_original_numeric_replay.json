@@ -12,8 +12,8 @@
   "formally_exam_ready": 0,
   "coverage_vs_main_records": {
     "audited": 304,
-    "total": 2160,
-    "other_candidates_not_yet_covered": 1856
+    "total": 3312,
+    "other_candidates_not_yet_covered": 3008
   },
   "audited_candidate_id_sha256": "f70616072e319947c1b5a4b3a867901fe98fcd3c1fa68de96eab317cc7e8b091",
   "families": [

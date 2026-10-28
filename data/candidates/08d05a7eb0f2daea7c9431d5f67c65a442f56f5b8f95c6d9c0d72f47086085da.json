@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "08d05a7eb0f2daea7c9431d5f67c65a442f56f5b8f95c6d9c0d72f47086085da",
+  "subject": "inorganic",
+  "topic": "tetra_octa_field_ratio_v04",
+  "topic_family": "tetra_octa_field_ratio",
+  "parameter_case": 4,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "同一金属和近似同样配体条件下，题目假设四面体晶场分裂 Δt=(4/9)Δo。已知 Δo=82.2 kJ/mol，求 Δt 的理想近似值（kJ/mol）。",
+  "answer": "答案 = 36.533333 kJ/mol。",
+  "explanation": "四面体与八面体分裂的 4/9 比例只是题设经验近似，直接代入 Δt=(4/9)Δo；配位场能量也受键长、结构和配体强度影响。 本题代入 a=82.2、b=0，得到 36.533333 kJ/mol。模型假设已列于题干。",
+  "numeric_answers": [
+    36.53333333333333
+  ],
+  "units": "kJ/mol",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

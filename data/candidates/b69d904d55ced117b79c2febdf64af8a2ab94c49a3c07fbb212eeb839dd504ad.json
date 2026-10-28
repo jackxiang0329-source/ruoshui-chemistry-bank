@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "b69d904d55ced117b79c2febdf64af8a2ab94c49a3c07fbb212eeb839dd504ad",
+  "subject": "analytical",
+  "topic": "conductivity_molar_lambda_v17",
+  "topic_family": "conductivity_molar_lambda",
+  "parameter_case": 17,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "电解质溶液的比电导率 κ=0.00164 S/cm，浓度 c=0.0152 mol/L，已减去溶剂背景。以 Λm=1000κ/c 定义摩尔电导率，计算 Λm（S·cm²/mol）。",
+  "answer": "答案 = 107.89474 S·cm²/mol。",
+  "explanation": "mol/L 与 S/cm 组合需乘 1000，故 Λm=1000κ/c；并非无限稀释极限摩尔电导。 本题代入 a=0.00164、b=0.0152，得到 107.89474 S·cm²/mol。模型假设已列于题干。",
+  "numeric_answers": [
+    107.89473684210526
+  ],
+  "units": "S·cm²/mol",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

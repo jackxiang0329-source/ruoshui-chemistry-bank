@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "06f647b0f0aca25e5a899c492b153fd0dcfded115102de102d8e0a9eb7fdbc8d",
+  "subject": "analytical",
+  "topic": "phosphate_species_concentration_ratio_v08",
+  "topic_family": "phosphate_species_concentration_ratio",
+  "parameter_case": 8,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "在只考虑 H₂PO₄⁻ 与 HPO₄²⁻ 两态的稀磷酸缓冲液中，pH=7.084、pKa₂=7.263，忽略活度系数差异。求 [HPO₄²⁻]/[H₂PO₄⁻]。",
+  "answer": "答案 = 0.66221650 无量纲。",
+  "explanation": "Henderson–Hasselbalch 关系 pH=pKa₂+log10(碱式/酸式)，比值为 10^(pH−pKa₂)。 本题代入 a=7.084、b=7.263，得到 0.66221650 无量纲。模型假设已列于题干。",
+  "numeric_answers": [
+    0.6622165037017615
+  ],
+  "units": "无量纲",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

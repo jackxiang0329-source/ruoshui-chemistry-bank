@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "2df1e32080fd9af19ba04263a6a3b9a32fecd6c0286244f71ee7c18c61366d5a",
+  "subject": "organic",
+  "topic": "saponification_naoh_stoichiometry_v05",
+  "topic_family": "saponification_naoh_stoichiometry",
+  "parameter_case": 5,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某酯只发生定量一比一碱性皂化，酯总物质的量为 0.148 mol，每摩尔酯恰消耗一摩尔 NaOH。取 M(NaOH)=39.997 g/mol，求理论最低 NaOH 质量。",
+  "answer": "答案 = 5.9195560 g。",
+  "explanation": "1:1 反应计量 nNaOH=nester，故 mNaOH=39.997n g；实际工艺过量不在题设内。 本题代入 a=0.148、b=0，得到 5.9195560 g。模型假设已列于题干。",
+  "numeric_answers": [
+    5.919556
+  ],
+  "units": "g",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

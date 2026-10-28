@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "e49915189e7f873796f68f059f74dd9ff3a09c5ab09af82d37a03e3f863a7cb5",
+  "subject": "analytical",
+  "topic": "chromatographic_selectivity_v03",
+  "topic_family": "chromatographic_selectivity",
+  "parameter_case": 3,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "在同一色谱柱中两个峰的保留因子分别为 k1'=3.24、k2'=5.34（k2'>k1'>0）。求选择性 α=k2'/k1'；本题不提供峰宽和柱效。",
+  "answer": "答案 = 1.6481481 无量纲。",
+  "explanation": "保留因子之比 α=k2'/k1'；只有给出柱效、峰宽及保留程度信息，才能进一步分析两个色谱峰的分辨率。 本题代入 a=3.24、b=5.34，得到 1.6481481 无量纲。模型假设已列于题干。",
+  "numeric_answers": [
+    1.648148148148148
+  ],
+  "units": "无量纲",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "fae574ee34f30ac7fffe706445ef17313e9e19c2f93fdc4347f74559405cf6ef",
+  "subject": "inorganic",
+  "topic": "octa_d3_lfse_v04",
+  "topic_family": "octa_d3_lfse",
+  "parameter_case": 4,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "八面体高自旋 d³ 离子的晶场分裂 Δo=83.6 kJ/mol，电子组态 t₂g³，忽略配对能。求相对重心的晶场稳定化能 LFSE（kJ/mol）。",
+  "answer": "答案 = -100.32000 kJ/mol。",
+  "explanation": "每个 t₂g 电子贡献 −0.4Δo，三个电子共贡献 −1.2Δo；它不是实际化学键的全部能量。 本题代入 a=83.6、b=0，得到 -100.32000 kJ/mol。模型假设已列于题干。",
+  "numeric_answers": [
+    -100.32
+  ],
+  "units": "kJ/mol",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "fdedd9d7d47250b8a52a6d848382e413a1f885dbb9d37a011fc6aea59f1623c9",
+  "subject": "organic",
+  "topic": "ester_equilibrium_conversion_extent_v11",
+  "topic_family": "ester_equilibrium_conversion_extent",
+  "parameter_case": 11,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "理想恒容可逆反应 A+B⇌C+D 初始 A、B 各 1 mol、产物均为零，活度可按同标准浓度归一化。若平衡常数 K=5.5，求平衡转化分数 x。",
+  "answer": "答案 = 0.70106492 无量纲。",
+  "explanation": "平衡时 nA=nB=1−x、nC=nD=x，故 K=x²/(1−x)²，解得 x=√K/(1+√K)。 本题代入 a=5.5、b=0，得到 0.70106492 无量纲。模型假设已列于题干。",
+  "numeric_answers": [
+    0.7010649155751745
+  ],
+  "units": "无量纲",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

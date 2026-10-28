@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "323ce9af8dc224d141af8d58fcebb68d2ebc01a0a2c0d9789e20a93dee796baa",
+  "subject": "analytical",
+  "topic": "loq_ten_sigma_slope_v12",
+  "topic_family": "loq_ten_sigma_slope",
+  "parameter_case": 12,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某仪器定量方法的空白标准差 σ=0.0041 A，响应斜率 m=0.0765 A/(mg/L)。采用题设定量限 LOQ=10σ/m，计算 LOQ，区分定量限与检出限。",
+  "answer": "答案 = 0.53594771 mg/L。",
+  "explanation": "按题设系数 10 而非 3 计算 LOQ=10σ/m；需保持响应与浓度单位一致。 本题代入 a=0.0041、b=0.0765，得到 0.53594771 mg/L。模型假设已列于题干。",
+  "numeric_answers": [
+    0.5359477124183006
+  ],
+  "units": "mg/L",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

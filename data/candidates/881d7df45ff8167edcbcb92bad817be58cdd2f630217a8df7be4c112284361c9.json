@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "881d7df45ff8167edcbcb92bad817be58cdd2f630217a8df7be4c112284361c9",
+  "subject": "organic",
+  "topic": "polymer_weight_average_dp_v16",
+  "topic_family": "polymer_weight_average_dp",
+  "parameter_case": 16,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某聚合物的重均摩尔质量 Mw=23000 g/mol、重复单元摩尔质量 111.5 g/mol。忽略链端与交联，估算重均聚合度 DPw，区别于数均 DPn。",
+  "answer": "答案 = 206.27803 重复单元。",
+  "explanation": "理想链统计下 DPw=Mw/Mrepeat；若分散度大，不能将其直接等同于数均聚合度。 本题代入 a=23000、b=111.5，得到 206.27803 重复单元。模型假设已列于题干。",
+  "numeric_answers": [
+    206.2780269058296
+  ],
+  "units": "重复单元",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

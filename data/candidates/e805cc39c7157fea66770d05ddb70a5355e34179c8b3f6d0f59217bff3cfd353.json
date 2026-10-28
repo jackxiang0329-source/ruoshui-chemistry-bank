@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "e805cc39c7157fea66770d05ddb70a5355e34179c8b3f6d0f59217bff3cfd353",
+  "subject": "physical",
+  "topic": "first_order_decay_half_life_v22",
+  "topic_family": "first_order_decay_half_life",
+  "parameter_case": 22,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某一级反应严格满足 −d[A]/dt=k[A]，速率常数 k=0.0673 min⁻¹，温度不变且无逆反应。计算反应物降至初始浓度一半所需的半衰期。",
+  "answer": "答案 = 10.299364 min。",
+  "explanation": "积分式 [A]=[A]0e^(−kt)，在 [A]/[A]0=1/2 时 t1/2=ln2/k，与初浓度无关。 本题代入 a=0.0673、b=0，得到 10.299364 min。模型假设已列于题干。",
+  "numeric_answers": [
+    10.299363752748073
+  ],
+  "units": "min",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}

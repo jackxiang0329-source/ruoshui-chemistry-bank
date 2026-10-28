@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "dc3ef866c7934615ee72a6f7a04410144a67903d4147e4a5f5d8f2a5ecc927b4",
+  "subject": "organic",
+  "topic": "elemental_oxygen_difference_pct_v21",
+  "topic_family": "elemental_oxygen_difference_pct",
+  "parameter_case": 21,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "original_parametric_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某纯有机物只含 C、H、O 三元素，其中碳的质量分数 wC=0.65、氢的质量分数 wH=0.13。根据元素质量守恒求氧的质量百分数。",
+  "answer": "答案 = 22.000000 %。",
+  "explanation": "三个元素总质量分数为 1，所以 wO=1−wC−wH，再乘 100 得氧的质量百分率。 本题代入 a=0.65、b=0.13，得到 22.000000 %。模型假设已列于题干。",
+  "numeric_answers": [
+    21.999999999999996
+  ],
+  "units": "%",
+  "independent_model_inverse_checked": true,
+  "mathematical_check_only_not_chemistry_peer_review": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chapter-1152.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_48_topic_families_24_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored hypothetical chemical calculations, never copied from exams."
+  }
+}
