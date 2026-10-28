@@ -1,0 +1,26 @@
+name: Chemistry tenth-series rolling independent QA
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'editorial/advanced_integrated_v10/**'
+      - 'scripts/check-advanced-authored-v10.mjs'
+      - '.github/workflows/chemistry-advanced-v10.yml'
+  pull_request:
+    paths:
+      - 'editorial/advanced_integrated_v10/**'
+      - 'scripts/check-advanced-authored-v10.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Enforce four subjects and independent answer vectors
+        run: node scripts/check-advanced-authored-v10.mjs
