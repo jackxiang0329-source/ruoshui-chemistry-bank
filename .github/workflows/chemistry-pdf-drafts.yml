@@ -78,5 +78,7 @@ jobs:
             echo "No PDF changes to commit"
           else
             git commit -m "build(pdf): refresh chemistry draft volume PDFs [skip ci]"
+            git fetch origin main
+            git rebase origin/main
             git push origin HEAD:main || echo "::warning::PDF artifacts built, but repository push was blocked; download this run's artifacts."
           fi
