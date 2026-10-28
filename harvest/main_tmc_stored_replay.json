@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source_repository": "ChemTrain/tmc-learn",
+  "source_commit": "3ccdefe51d6754cb59cc19c847d76b7044da1414",
+  "source_git_blob_sha": "a97ab868052f6f5ca568c132a3df3851d8cb89b2",
+  "source_license": "CC-BY-4.0",
+  "unique_source_complexes": 199,
+  "persisted_question_candidates_replayed": 593,
+  "distinct_question_ids": 593,
+  "question_types": {
+    "d_electrons": 197,
+    "oxidation_state": 197,
+    "valence_electrons": 199
+  },
+  "source_id_set_sha256": "4093e4f0f60bb97ec84c3ea065f41b398cec8af353800e5f8a56616cdfb0f25f",
+  "source_formula_and_model_check": "AST-only parsed 199 author source cards; every stored valence/oxidation/d count and displayed formula/answer matched pinned source",
+  "scientific_scope": "Valence and oxidation source assertions were compared with the authored source. Computed d count was checked as periodic group minus source oxidation state. No independent electron-count expert adjudication.",
+  "subject": "inorganic",
+  "item_content_license_or_persona_newly_approved": 0,
+  "expert_chemistry_approved": 0,
+  "formally_exam_ready": 0,
+  "included_in_prior_386_replay": 0,
+  "note": "These 593 existing candidates are variants of 199 source complexes, not 593 independently collected exam questions. Includes generated variants and possible semantic overlap."
+}
