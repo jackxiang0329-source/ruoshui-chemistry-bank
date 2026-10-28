@@ -108,6 +108,8 @@ on:
       - "scripts/bulk-original-4096-analytical.mjs"
       - "scripts/bulk-original-4096-organic.mjs"
       - "scripts/bulk-original-4096-physical.mjs"
+      - "scripts/import-original-coupled-32768.mjs"
+      - "tests/original-coupled-32768.test.mjs"
       - "scripts/import-original-multitopic-33792.mjs"
       - "tests/original-multitopic-33792.test.mjs"
       - "scripts/import-original-chains-12288.mjs"
@@ -273,6 +275,8 @@ jobs:
         run: node --test tests/audit-original-multistep-science.test.mjs
       - name: Verify fail-closed audit-synchronized README snapshot
         run: node --test tests/update-chemistry-readme-snapshot.test.mjs
+      - name: Verify 32768 coupled chemical experiments and 163840 independent equation checks
+        run: node --test tests/original-coupled-32768.test.mjs
       - name: Verify 33792 mixed-topic six-result chemistry assignments and 202752 equations
         run: node --test tests/original-multitopic-33792.test.mjs
       - name: Verify 12288 original three-goal chemistry cases and 36864 residual equations
@@ -365,6 +369,8 @@ jobs:
         run: node scripts/import-original-analytical-variants.mjs
       - name: Stage nine source-linked quantum chemistry course exercises for human review
         run: node scripts/import-introqchem-2021.mjs
+      - name: Persist 32768 original dependent multistage chemistry experiments
+        run: node scripts/import-original-coupled-32768.mjs
       - name: Persist 33792 original mixed-topic chemistry assignments
         run: node scripts/import-original-multitopic-33792.mjs
       - name: Persist 12288 original three-stage chemistry problem solutions

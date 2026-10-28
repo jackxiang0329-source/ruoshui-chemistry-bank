@@ -40,6 +40,8 @@ export function buildPending(rows,quality,coverage){
  const contrast=coverage?.main_new_contrast_10080_source_replayed||0;
  const chains=coverage?.main_new_chains_12288_source_replayed||0;
  const multitopic=coverage?.main_new_multitopic_33792_source_replayed||0;
+ const coupled=coverage?.main_new_coupled_32768_source_replayed||0;
+ if(!Number.isInteger(coupled)||coupled<0||coupled>32768)throw Error('Unsafe coupled 32768 source replay count');
  if(!Number.isInteger(multitopic)||multitopic<0||multitopic>33792)
  throw Error('Unsafe new multi-topic source replay count');
  if(!Number.isInteger(chains)||chains<0||chains>12288)throw Error('Unsafe new three-goal source replay count');
@@ -55,14 +57,14 @@ export function buildPending(rows,quality,coverage){
  if(!Number.isInteger(added)||added<0||added>120)throw Error('Unsafe chemistry replay extension');
  if(!Array.isArray(rows)||rows.length!==quality?.total_candidates||
   coverage?.main_candidate_records!==rows.length||
-  coverage?.main_unique_candidate_records_machine_replayed!==1715+added+reasoning+integrated+apTopics+multistep+rapid+chapter+dual+mega+contrast+chains+multitopic||
-  coverage?.main_exercise_candidates!==1437+added+reasoning+integrated+apTopics+multistep+rapid+chapter+dual+mega+contrast+chains+multitopic||
+  coverage?.main_unique_candidate_records_machine_replayed!==1715+added+reasoning+integrated+apTopics+multistep+rapid+chapter+dual+mega+contrast+chains+multitopic+coupled||
+  coverage?.main_exercise_candidates!==1437+added+reasoning+integrated+apTopics+multistep+rapid+chapter+dual+mega+contrast+chains+multitopic+coupled||
   coverage?.main_study_cards!==278||
   coverage?.main_candidate_records_not_yet_machine_replayed!==0||
   coverage?.confirmed_official_exam_ready!==0)
   throw Error('Remaining source audit queue based on stale or unapproved corpus');
  const expected={...COVERED,...TODO,
-  'jackxiang0329-source/ruoshui-chemistry-bank':304+added+reasoning+integrated+apTopics+multistep+rapid+chapter+dual+mega+contrast+chains+multitopic};
+  'jackxiang0329-source/ruoshui-chemistry-bank':304+added+reasoning+integrated+apTopics+multistep+rapid+chapter+dual+mega+contrast+chains+multitopic+coupled};
  if(Object.keys(quality.source_counts||{}).length!==Object.keys(expected).length||
    Object.entries(expected).some(([name,n])=>quality.source_counts[name]!==n))
   throw Error('New or changed chemistry source needs explicit audit family classification');

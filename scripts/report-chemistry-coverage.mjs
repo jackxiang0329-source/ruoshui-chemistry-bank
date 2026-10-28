@@ -4,7 +4,15 @@ import {readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {join,dirname,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
-export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general={generated:0},reasoning={generated:0},integrated={generated:0},apTopics={generated:0},multistep={generated:0},rapid={generated:0},chapter={generated:0},dual={generated:0},mega={generated:0},contrast={generated:0},chains={generated:0},multitopic={generated:0}){
+export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general={generated:0},reasoning={generated:0},integrated={generated:0},apTopics={generated:0},multistep={generated:0},rapid={generated:0},chapter={generated:0},dual={generated:0},mega={generated:0},contrast={generated:0},chains={generated:0},multitopic={generated:0},coupled={generated:0}){
+ const coupledN=coupled?.generated||0;
+ if(!Number.isInteger(coupledN)||coupledN<0||coupledN>32768||
+ (coupledN>0&&(coupledN!==32768||coupled?.independent_chained_method_archetypes!==4||
+ coupled?.concrete_distinct_chemical_systems!==32||coupled?.parameter_variants_per_system!==1024||
+ coupled?.stored_replayed_count!==32768||coupled?.numerical_inverse_checks!==163840||
+ coupled?.source_rights_license!=='CC0-1.0'||coupled?.expert_approved!==0||coupled?.publishable!==false||
+ ['inorganic','analytical','organic','physical'].some(s=>coupled?.subject_counts?.[s]!==8192))))
+ throw Error('Unverified dependency-chain chemistry records, source report or rights drift');
  const multiN=multitopic?.generated||0;
  if(!Number.isInteger(multiN)||multiN<0||multiN>33792||
  (multiN>0&&(multiN!==33792||multitopic?.distinct_multi_topic_combinations!==264||
@@ -213,7 +221,7 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   muzaScience?.individual_rights_approvals!==0||
   muzaScience?.exam_ready!==0||
   main?.source_counts?.['MuzaPro/Organic-Chemistry-Quiz-JS']!==5||
-  whole<1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN+multiN||exercise<1437+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN+multiN||card!==278)
+  whole<1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN+multiN+coupledN||exercise<1437+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN+multiN+coupledN||card!==278)
   throw Error('Unsafe or inconsistent chemistry coverage sources: '+
    JSON.stringify({
     main_total:whole,main_exercises:exercise,main_cards:card,
@@ -253,7 +261,7 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   main_independent_muza_formula_checks:muzaScience.formal_element_balances_passed,
   main_independent_muza_science_condition_caveats:muzaScience.special_science_conditions_pending,
   main_total_1715_source_concordance_does_not_imply_scientific_correctness:true,
-  main_exercise_candidates_replayed:1437+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN+multiN,
+  main_exercise_candidates_replayed:1437+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN+multiN+coupledN,
   main_new_original_general_chemistry_inverse_replayed:newlyReplayed,
   main_new_original_reasoning_source_replayed:reasoningCount,
   main_new_integrated_chemistry_source_replayed:integratedN,
@@ -266,11 +274,12 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   main_new_contrast_10080_source_replayed:contrastN,
   main_new_chains_12288_source_replayed:chainsN,
   main_new_multitopic_33792_source_replayed:multiN,
-  main_exercise_candidates_not_replayed:exercise-1437-newlyReplayed-reasoningCount-integratedN-advancedN-multiCount-rapidN-chapterN-dualN-megaN-contrastN-chainsN-multiN,
+  main_new_coupled_32768_source_replayed:coupledN,
+  main_exercise_candidates_not_replayed:exercise-1437-newlyReplayed-reasoningCount-integratedN-advancedN-multiCount-rapidN-chapterN-dualN-megaN-contrastN-chainsN-multiN-coupledN,
   main_study_cards_not_replayed:card-278,
-  main_unique_candidate_records_machine_replayed:1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN+multiN,
-  main_candidate_records_not_yet_machine_replayed:whole-1715-newlyReplayed-reasoningCount-integratedN-advancedN-multiCount-rapidN-chapterN-dualN-megaN-contrastN-chainsN-multiN,
-  main_stored_replay_coverage_fraction:Number(((1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN+multiN)/whole).toFixed(6)),
+  main_unique_candidate_records_machine_replayed:1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN+multiN+coupledN,
+  main_candidate_records_not_yet_machine_replayed:whole-1715-newlyReplayed-reasoningCount-integratedN-advancedN-multiCount-rapidN-chapterN-dualN-megaN-contrastN-chainsN-multiN-coupledN,
+  main_stored_replay_coverage_fraction:Number(((1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN+multiN+coupledN)/whole).toFixed(6)),
   main_replay_cannot_establish_chemistry_truth:true,
   main_replay_requires_expert_science_and_item_rights_review:true,
   main_original_numeric_stored_coverage_fraction:Number((304/whole).toFixed(6)),
@@ -339,7 +348,9 @@ export function run(){
  const chains=existsSync(chainsPath)?JSON.parse(readFileSync(chainsPath,'utf8')):{generated:0};
  const multitopicPath=join(ROOT,'harvest/import_reports/original_multitopic_33792.json');
  const multitopic=existsSync(multitopicPath)?JSON.parse(readFileSync(multitopicPath,'utf8')):{generated:0};
- const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general,reasoning,integrated,apTopics,multistep,rapid,chapter,dual,mega,contrast,chains,multitopic),
+ const coupledPath=join(ROOT,'harvest/import_reports/original_coupled_32768.json');
+ const coupled=existsSync(coupledPath)?JSON.parse(readFileSync(coupledPath,'utf8')):{generated:0};
+ const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general,reasoning,integrated,apTopics,multistep,rapid,chapter,dual,mega,contrast,chains,multitopic,coupled),
   path=join(ROOT,'harvest/coverage_report.json');
  const body=JSON.stringify(summary,null,2)+'\n';
  if(!existsSync(path)||readFileSync(path,'utf8')!==body)writeFileSync(path,body);
