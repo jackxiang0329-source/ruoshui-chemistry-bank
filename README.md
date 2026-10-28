@@ -18,7 +18,8 @@
 - **第六辑新增 50 条待审稿**：[完整中文题目及解答](editorial/advanced_integrated_v6/50_advanced_chemistry_solutions.md) · [结构化题目与审核说明](editorial/advanced_integrated_v6/README.md)。四科13/13/12/12；[35组潜在跨辑模型重叠待审](editorial/advanced_integrated_v6/overlap_review_queue.json)，**不能宣称50种新模型已完成去重**。
 - **第七辑新增 60 条高阶综合待审稿，四科各15道**：[60道完整题目与分步解答](editorial/advanced_integrated_v7/60_advanced_chemistry_solutions.md)、[分科JSONL目录](editorial/advanced_integrated_v7/README.md)、[跨辑相近模型人工复核队列](editorial/advanced_integrated_v7/overlap_review_queue.json)。全部经过机器计算复核，但新模型独立性仍待逐题审定。
 - **第八辑新增60条审校题**：[完整中文题目及逐步解答](editorial/advanced_integrated_v8/60_advanced_chemistry_solutions.md) · [集中结构化存储](editorial/advanced_integrated_v8/README.md)。无机、分析、有机、物化各15道。第八辑[45组潜在跨辑模型重叠](editorial/advanced_integrated_v8/overlap_review_queue.json)仍待逐题复核，**不能称其60种模型已经独立去重**。
-- **当前累计306条题目与解答编辑记录**（此前246+第八辑60），其中第六、七、八辑160条仍待跨辑核心模型去重及专家审核；专家正式批准 **0**，正式可出卷 **0**。
+- **第九辑新增100条待专家审校题**：[四科各25道的完整中文题目与解答](editorial/advanced_integrated_v9/100_advanced_chemistry_solutions.md) · [集中数据及审稿说明](editorial/advanced_integrated_v9/README.md) · [核心模型待人工复核清单](editorial/advanced_integrated_v9/overlap_review_queue.json)。独立计算复核已通过，但跨辑模型独立性仍未全部确证。
+- **累计406条题目与解答编辑记录**（此前306+第九辑100）。第六至九辑260条仍待核心模型去重与专家审定；专家正式批准 **0**，正式可出卷 **0**。
 
 ## 清理政策
 
@@ -41,6 +42,7 @@ node scripts/check-advanced-authored-v5.mjs
 node scripts/check-advanced-authored-v6.mjs
 node scripts/check-advanced-authored-v7.mjs
 node scripts/check-advanced-authored-v8.mjs
+node scripts/check-advanced-authored-v9.mjs
 node scripts/audit-advanced-only.mjs
 ```
 
