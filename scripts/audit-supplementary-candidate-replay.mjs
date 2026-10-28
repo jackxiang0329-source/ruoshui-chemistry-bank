@@ -13,6 +13,7 @@ import {generate as dftQuestions} from './import-dft-course-ez.mjs';
 import {generate as qceduQuestions} from './import-qcedu-introqm.mjs';
 import {generate as mcmasterQuestions} from './import-introqchem-2021.mjs';
 import {generate as mitMcqs} from './import-parametric-mit-chemistry.mjs';
+import {FAMILIES as EXISTING_MAIN_FAMILIES} from './audit-main-candidate-numerics.mjs';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
 const load=name=>JSON.parse(readFileSync(join(ROOT,'harvest',name),'utf8'));
 export const SECONDARY=[
@@ -77,7 +78,8 @@ export function assertSecondaryStored(ref,stored,family){
     'deterministic_generation_from_pinned_mit_code'||
    stored.source?.original_exam_question!==false||
    !stored.source?.url?.includes('/blob/'+stored.source.commit+'/')||
-   !/^[a-f0-9]{40}$/.test(stored.source.commit))
+   stored.source.commit!=='cbe7d952443ff88ef89b514dd4fb1641a69c2950'||
+   stored.source.file!=='chem/archetypes.js')
    throw Error('Pinned MIT parametric source metadata is invalid');
   if(!Array.isArray(stored.options)||stored.options.length<3||
    !stored.options.some(x=>typeof x==='string'&&x.includes(stored.answer)))
@@ -103,13 +105,21 @@ export function replaySecondary(rows,quality){
   if(index.has(q.id))throw Error('Duplicate persisted candidate ID '+q.id);
   index.set(q.id,q);
  }
+ const previousIds=new Set();
+ for(const family of EXISTING_MAIN_FAMILIES){
+  const generated=family.generate();
+  if(generated.length!==family.expected)throw Error('Prior numeric replay family changed');
+  for(const q of generated)previousIds.add(q.id);
+ }
+ if(previousIds.size!==304)throw Error('Previous 304 covered IDs not unique');
  const union=new Set(),groups=[],examples=[];
  for(const group of SECONDARY){
   const originals=group.generate();
   if(originals.length!==group.expected)throw Error('Source importer count drift '+group.name);
   let withNumericArray=0,withSymbolic=0;
   for(const ref of originals){
-   if(union.has(ref.id))throw Error('Cross-source candidate overlap '+ref.id);
+   if(union.has(ref.id)||previousIds.has(ref.id))
+    throw Error('Cross-source candidate overlap '+ref.id);
    union.add(ref.id);
    const saved=index.get(ref.id);
    if(!saved)throw Error('Source-linked saved candidate is missing '+group.name+' '+ref.id);
@@ -136,7 +146,7 @@ export function replaySecondary(rows,quality){
   source_groups_verified:groups.length,
   numeric_or_symbolic_record_status:'MIXED; not every record has a numerical answer',
   already_in_304_original_numeric_replay:0,
-  combined_unique_candidate_ids_304_plus_82:386,
+  combined_unique_candidate_ids_304_plus_82:previousIds.size+union.size,
   main_library_total:rows.length,
   main_records_outside_both_replays:rows.length-386,
   source_linked_rights_pending_candidate_count:21,

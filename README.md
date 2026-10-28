@@ -189,3 +189,10 @@
 - [本轮新增的落盘数值反算清单](harvest/main_original_numeric_replay.json)与[机器校验器](scripts/audit-main-candidate-numerics.mjs)会直接检查真实的 `data/candidates/*.json`，覆盖基础物化 24、扩展物化 72、进阶物化 48、原创分析化学计量 96、原创仪器分析 64，共 304 份保存的候选练习；各题均比对来源/题干/参数/答案/单位/发布标志，并利用物理或化学公式反算。
 - 主候选库共 1715 份内容；304 份是其中的原始记录，不是追加题量，也不代表其余 1411 份全是计算题。与 `expert_review_plan.json` 中其他类型的 `numerical_answer_requires_scientific_review` 计数采用**不同筛选口径**，不可直接相减。
 - [统一覆盖统计](harvest/coverage_report.json)分别披露机器复算覆盖量与外部 OpenStax 42 道审核量；两者重叠状态不主张跨来源唯一性。**自动科学数值复算不代表人类专家审校，正式可出卷仍为 0。**
+
+## 主库增加 82 份固定来源候选题复核（累计覆盖 386）
+
+- [新增的 82 份落盘记录审核](harvest/main_supplementary_answer_replay.json)含电化学阻抗原创题 8、MIT 计算方法题 8、CC BY DFT 题 12、QC-Edu 量子题 3、McMaster 量子课程题 21、MIT 生成选择题 30；与既有[304 道原创数值题复核](harvest/main_original_numeric_replay.json)不重叠，故合计为 **386 份主候选记录**。
+- 82 份中有 **37 份显式数值答案、45 份符号/概念/选择题答案**，不同类型通过原脚本核算、逆推、符号代数残差或正确选项一致性验证，**不可称全部数值独立验算通过**。
+- [统一统计](harvest/coverage_report.json)区分主库机器复核 386（占 1715）、此前 304 原创数值复核、82 来源核验和外部 OpenStax 42 个版本锁定记录。余下 **1329 份主候选记录未纳入上述两批落盘校验**，不代表全都属于计算题。
+- **McMaster 21 道有第三方权利例外，仍未完成逐题许可**；科学专家审核 0、正式可组卷 0。自动复核既不能把这 21 道解除隔离，也不能自动把原始素材归入出版集。

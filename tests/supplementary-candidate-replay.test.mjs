@@ -15,6 +15,8 @@ test('82 persisted records replayed against six pinned sources with no publicati
  assert.equal(r.source_linked_rights_pending_candidate_count,21);
  assert.equal(r.exam_ready,0);
  assert.equal(r.combined_unique_candidate_ids_304_plus_82,386);
+ assert.equal(r.groups.reduce((n,x)=>n+x.explicitly_recorded_numeric_answers,0),37);
+ assert.equal(r.groups.reduce((n,x)=>n+x.other_solution_or_option_records,0),45);
  assert.equal(r.groups.filter(x=>x.item_rights_restriction).length,1);
  assert.equal(r.examples.length,6);
 });

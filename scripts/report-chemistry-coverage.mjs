@@ -4,7 +4,7 @@ import {readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {join,dirname,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
-export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay){
+export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary){
  const whole=main?.total_candidates,exercise=main?.by_content_kind?.exercise_candidate,
   card=main?.by_content_kind?.study_card,raw=external?.raw_staged_candidates;
  if(!Number.isInteger(whole)||!Number.isInteger(exercise)||!Number.isInteger(card)||
@@ -40,7 +40,21 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   replay?.coverage_vs_main_records?.other_candidates_not_yet_covered!==whole-304||
   replay?.expert_science_approved!==0||
   replay?.publishable_approved!==0||
-  replay?.formally_exam_ready!==0)
+  replay?.formally_exam_ready!==0||
+  supplementary?.distinct_checked_stored_candidates!==82||
+  supplementary?.source_groups_verified!==6||
+  supplementary?.already_in_304_original_numeric_replay!==0||
+  supplementary?.combined_unique_candidate_ids_304_plus_82!==386||
+  supplementary?.main_library_total!==whole||
+  supplementary?.main_records_outside_both_replays!==whole-386||
+  supplementary?.source_linked_rights_pending_candidate_count!==21||
+  supplementary?.source_linked_rights_newly_approved!==0||
+  supplementary?.scientific_human_approved!==0||
+  supplementary?.publishable_approved!==0||
+  supplementary?.exam_ready!==0||
+  supplementary?.groups?.length!==6||
+  supplementary.groups.reduce((n,x)=>n+x.stored_candidate_records_checked,0)!==82||
+  supplementary.groups.reduce((n,x)=>n+x.explicitly_recorded_numeric_answers,0)!==37)
   throw Error('Unsafe or inconsistent chemistry coverage sources: '+
    JSON.stringify({
     main_total:whole,main_exercises:exercise,main_cards:card,
@@ -67,6 +81,11 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
  return {schema_version:1,
   main_candidate_records:whole,main_exercise_candidates:exercise,main_study_cards:card,
   main_original_numeric_stored_records_verified:replay.checked_stored_candidate_records,
+  main_supplementary_source_records_replayed:supplementary.distinct_checked_stored_candidates,
+  main_supplementary_with_explicit_numeric_values:37,
+  main_unique_candidate_records_machine_replayed:386,
+  main_candidate_records_not_yet_machine_replayed:whole-386,
+  main_replay_requires_expert_science_and_item_rights_review:true,
   main_original_numeric_stored_coverage_fraction:Number((304/whole).toFixed(6)),
   main_candidates_outside_original_numeric_replay:whole-304,
   main_numeric_replay_is_human_science_approval:false,
@@ -100,7 +119,9 @@ export function run(){
   'external_sources/openstax_chemistry/chinese_independent_derivations.json'),'utf8'));
  const replay=JSON.parse(readFileSync(join(ROOT,
   'harvest/main_original_numeric_replay.json'),'utf8'));
- const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay),
+ const supplementary=JSON.parse(readFileSync(join(ROOT,
+  'harvest/main_supplementary_answer_replay.json'),'utf8'));
+ const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary),
   path=join(ROOT,'harvest/coverage_report.json');
  const body=JSON.stringify(summary,null,2)+'\n';
  if(!existsSync(path)||readFileSync(path,'utf8')!==body)writeFileSync(path,body);
@@ -108,6 +129,7 @@ export function run(){
   ' openstax_raw='+summary.external_oer_unreviewed_blocks+
   ' nvidia_rqa_quarantine='+summary.nvidia_synthetic_research_quarantine_records+
   ' combined_records='+summary.combined_record_count_not_unique_exercises+
+  ' main_source_replayed='+summary.main_unique_candidate_records_machine_replayed+
   ' stored_original_numeric_replayed='+summary.main_original_numeric_stored_records_verified+
   ' external_independent_science='+summary.external_numeric_source_reviews+
   ' Chinese_external_notes='+summary.external_chinese_independent_derivation_notes+
