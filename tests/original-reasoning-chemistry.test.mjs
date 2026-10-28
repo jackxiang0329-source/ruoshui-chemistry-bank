@@ -2,16 +2,16 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {generate,ITEMS,qid} from '../scripts/import-original-reasoning-chemistry.mjs';
 
-test('32 authored multi-step reasoning problems span 32 unique topics, 8 per discipline',()=>{
+test('33 distinct reasoning problems: eight in three disciplines and nine in physical chemistry',()=>{
  const qs=generate();
- assert.equal(qs.length,32);
- assert.equal(ITEMS.length,32);
- assert.equal(new Set(qs.map(q=>q.id)).size,32);
- assert.equal(new Set(qs.map(q=>q.topic)).size,32);
+ assert.equal(qs.length,33);
+ assert.equal(ITEMS.length,33);
+ assert.equal(new Set(qs.map(q=>q.id)).size,33);
+ assert.equal(new Set(qs.map(q=>q.topic)).size,33);
  for(const subject of ['inorganic','analytical','organic','physical'])
-  assert.equal(qs.filter(q=>q.subject===subject).length,8);
+  assert.equal(qs.filter(q=>q.subject===subject).length,subject==='physical'?9:8);
 });
-test('all 32 retain rights provenance, full worked explanation and strict publication gate',()=>{
+test('all 33 retain rights provenance, full worked explanation and strict publication gate',()=>{
  for(const q of generate()){
   assert.equal(q.id,qid(q.question));
   assert.equal(q.source.repository,'jackxiang0329-source/ruoshui-chemistry-bank');

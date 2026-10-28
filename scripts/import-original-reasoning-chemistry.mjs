@@ -166,7 +166,7 @@ export function generate(){
     original_exam_question:false,third_party_question_text_copied:false,
     changes:'Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment.'}});
  }
- if(out.length!==32||Object.values(Object.groupBy(out,q=>q.subject)).some(v=>v.length!==8))
+ if(out.length!==33||Object.entries(Object.groupBy(out,q=>q.subject)).some(([k,v])=>v.length!==(k==='physical'?9:8)))
   throw Error('Expected eight independently authored reasoning cases in each subject');
  return out;
 }
@@ -179,9 +179,9 @@ export function run(){
  mkdirSync(dir,{recursive:true});
  for(const q of out){const p=join(dir,q.id+'.json');if(existsSync(p))continue;
   writeFileSync(p,JSON.stringify(q,null,2)+'\n');added++;}
- const report={schema_version:1,generated:32,topic_families:32,
-  by_subject:{inorganic:8,analytical:8,organic:8,physical:8},
-  records_exactly_replayed:32,source_license:'CC0-1.0',
+ const report={schema_version:1,generated:33,topic_families:33,
+  by_subject:{inorganic:8,analytical:8,organic:8,physical:9},
+  records_exactly_replayed:33,source_license:'CC0-1.0',
   original_exam_questions:0,third_party_question_text_copied:0,
   expert_approved:0,publishable:false,quality_status:'awaiting_expert_review',
   caveat:'Deterministic source/answer comparison and author consistency checks only; chemistry expert fact-check, semantic deduplication and publication permission remain pending.'};
@@ -189,9 +189,9 @@ export function run(){
  mkdirSync(dirname(dest),{recursive:true});
  const body=JSON.stringify(report,null,2)+'\n';
  if(!existsSync(dest)||readFileSync(dest,'utf8')!==body)writeFileSync(dest,body);
- const msg='Original 32 distinct reasoning topics: stored_new='+added+' already_present='+(32-added)+' expert_approved=0';
+ const msg='Original 33 distinct reasoning topics: stored_new='+added+' already_present='+(33-added)+' expert_approved=0';
  console.log(msg);if(process.env.GITHUB_STEP_SUMMARY)appendFileSync(process.env.GITHUB_STEP_SUMMARY,msg+'\n');
- return {added,existing:32-added};
+ return {added,existing:33-added};
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  try{run();}catch(e){console.error(e.stack);process.exitCode=1;}

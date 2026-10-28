@@ -232,7 +232,7 @@ jobs:
         run: node --test tests/original-instrumental-analytical.test.mjs
       - name: Verify fixed CC0 course exercise provenance and solution corrections
         run: node --test tests/introqchem-2021.test.mjs
-      - name: Verify 32 distinct original four-subject chemistry reasoning cases and review flags
+      - name: Verify 33 distinct original four-subject chemistry reasoning cases and review flags
         run: node --test tests/original-reasoning-chemistry.test.mjs
       - name: Validate 120 new CC0 inorganic and organic variants and all 120 inverse chemistry checks
         run: node --test tests/original-general-chemistry.test.mjs
@@ -304,7 +304,7 @@ jobs:
         run: node scripts/import-original-analytical-variants.mjs
       - name: Stage nine source-linked quantum chemistry course exercises for human review
         run: node scripts/import-introqchem-2021.mjs
-      - name: Persist 32 separately authored CC0 inorganic, analytical, organic and physical reasoning exercises
+      - name: Persist 33 separately authored CC0 inorganic, analytical, organic and physical reasoning exercises
         run: node scripts/import-original-reasoning-chemistry.mjs
       - name: Generate 120 CC0 original inorganic and organic quantitative exercises
         run: node scripts/import-original-general-chemistry.mjs

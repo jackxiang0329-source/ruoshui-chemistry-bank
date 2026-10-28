@@ -30,7 +30,7 @@ const sha256=s=>createHash('sha256').update(s).digest('hex');
 export function buildPending(rows,quality,coverage){
  const added=coverage?.main_new_original_general_chemistry_inverse_replayed||0;
  const reasoning=coverage?.main_new_original_reasoning_source_replayed||0;
- if(!Number.isInteger(reasoning)||reasoning<0||reasoning>32)throw Error('Unsafe new reasoning replay extension');
+ if(!Number.isInteger(reasoning)||reasoning<0||reasoning>33)throw Error('Unsafe new reasoning replay extension');
  if(!Number.isInteger(added)||added<0||added>120)throw Error('Unsafe chemistry replay extension');
  if(!Array.isArray(rows)||rows.length!==quality?.total_candidates||
   coverage?.main_candidate_records!==rows.length||

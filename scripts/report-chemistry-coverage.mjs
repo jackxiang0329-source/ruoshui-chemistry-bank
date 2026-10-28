@@ -6,11 +6,11 @@ import {fileURLToPath} from 'node:url';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
 export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general={generated:0},reasoning={generated:0}){
  const reasoningCount=reasoning?.generated||0;
- if(!Number.isInteger(reasoningCount)||reasoningCount<0||reasoningCount>32||
+ if(!Number.isInteger(reasoningCount)||reasoningCount<0||reasoningCount>33||
  (reasoningCount>0&&(reasoning?.records_exactly_replayed!==reasoningCount||
  reasoning?.topic_families!==reasoningCount||reasoning?.source_license!=='CC0-1.0'||
  reasoning?.expert_approved!==0||reasoning?.publishable!==false||
- ['inorganic','analytical','organic','physical'].some(k=>reasoning?.by_subject?.[k]!==8))))
+ ['inorganic','analytical','organic','physical'].some(k=>reasoning?.by_subject?.[k]!==(k==='physical'?9:8)))))
  throw Error('Unsafe new original reasoning source ledger');
  const newlyReplayed=general?.generated||0;
  if(!Number.isInteger(newlyReplayed)||newlyReplayed<0||
