@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "c7c8ad61e9f82f4d1c122b7cd24a4b418b325065b1d12663fa4fa507279fb86a",
+  "subject": "analytical",
+  "topic": "internal_standard_factor_corrected_peak_case19",
+  "topic_family": "internal_standard_factor_corrected_peak",
+  "parameter_case": 19,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "authored_three_step_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "色谱中内标面积比 Ax/Ais=1.34，内标浓度 cis=7.16 mg/L，规定响应因子 F=(Ax/Ais)/(cx/cis)=1.25。无基质干扰时求 cx（mg/L）。",
+  "answer": "答案：7.6755200 mg/L。",
+  "explanation": "第一步（条件与单位）：本题采用 analytical 的 internal_standard_factor_corrected_peak 定量模型。题设参数 a=1.34、b=7.16，并已限定成立的化学与物理近似。需要先确定所求量的单位 mg/L，避免将模型外的真实干扰视作已被证明不存在。\n第二步（计算原理）：由响应因子定义式移项，cx=(Ax/Ais)cis/F，切勿将响应因子 F 误置于分子。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。\n第三步（数值及复核）：用 a=1.34、b=7.16 代入上述模型，得到 7.6755200 mg/L。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。",
+  "solution_steps": [
+    "第一步（条件与单位）：本题采用 analytical 的 internal_standard_factor_corrected_peak 定量模型。题设参数 a=1.34、b=7.16，并已限定成立的化学与物理近似。需要先确定所求量的单位 mg/L，避免将模型外的真实干扰视作已被证明不存在。",
+    "第二步（计算原理）：由响应因子定义式移项，cx=(Ax/Ais)cis/F，切勿将响应因子 F 误置于分子。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。",
+    "第三步（数值及复核）：用 a=1.34、b=7.16 代入上述模型，得到 7.6755200 mg/L。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。"
+  ],
+  "numeric_answers": [
+    7.675520000000001
+  ],
+  "units": "mg/L",
+  "independent_model_inverse_checked": true,
+  "machine_science_check_scope": "mathematical_formula_and_premise_consistency_not_peer_review",
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_64_models_36_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Fully authored applied university teaching problem and three-stage explanation, no third-party problem text copied."
+  }
+}

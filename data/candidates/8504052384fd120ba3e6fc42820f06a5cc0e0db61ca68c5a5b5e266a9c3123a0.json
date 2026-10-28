@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "8504052384fd120ba3e6fc42820f06a5cc0e0db61ca68c5a5b5e266a9c3123a0",
+  "subject": "physical",
+  "topic": "debroglie_nonrelativistic_electron_nm_case05",
+  "topic_family": "debroglie_nonrelativistic_electron_nm",
+  "parameter_case": 5,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "authored_three_step_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "电子非相对论动能为 62 eV，取 me=9.1093837139×10⁻³¹ kg、h=6.62607015×10⁻³⁴ J·s、1 eV=1.602176634×10⁻¹⁹ J。求 de Broglie 波长（nm）。",
+  "answer": "答案：0.15575625 nm。",
+  "explanation": "第一步（条件与单位）：本题采用 physical 的 debroglie_nonrelativistic_electron_nm 定量模型。题设参数 a=62、b=0，并已限定成立的化学与物理近似。需要先确定所求量的单位 nm，避免将模型外的真实干扰视作已被证明不存在。\n第二步（计算原理）：先把 eV 换成 J，动量 p=√(2meE)，波长 λ=h/p，最后将 m 换为 nm。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。\n第三步（数值及复核）：用 a=62、b=0 代入上述模型，得到 0.15575625 nm。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。",
+  "solution_steps": [
+    "第一步（条件与单位）：本题采用 physical 的 debroglie_nonrelativistic_electron_nm 定量模型。题设参数 a=62、b=0，并已限定成立的化学与物理近似。需要先确定所求量的单位 nm，避免将模型外的真实干扰视作已被证明不存在。",
+    "第二步（计算原理）：先把 eV 换成 J，动量 p=√(2meE)，波长 λ=h/p，最后将 m 换为 nm。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。",
+    "第三步（数值及复核）：用 a=62、b=0 代入上述模型，得到 0.15575625 nm。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。"
+  ],
+  "numeric_answers": [
+    0.15575625335240598
+  ],
+  "units": "nm",
+  "independent_model_inverse_checked": true,
+  "machine_science_check_scope": "mathematical_formula_and_premise_consistency_not_peer_review",
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_64_models_36_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Fully authored applied university teaching problem and three-stage explanation, no third-party problem text copied."
+  }
+}

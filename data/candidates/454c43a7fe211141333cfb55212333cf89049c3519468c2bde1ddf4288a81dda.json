@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "454c43a7fe211141333cfb55212333cf89049c3519468c2bde1ddf4288a81dda",
+  "subject": "organic",
+  "topic": "polymer_mw_mn_dispersity_index_case34",
+  "topic_family": "polymer_mw_mn_dispersity_index",
+  "parameter_case": 34,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "authored_three_step_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某聚合物的重均摩尔质量 Mw=32250 g/mol、数均摩尔质量 Mn=20950 g/mol，测量方法与标准一致。计算分散度 Đ=Mw/Mn，并解释它不是聚合度。",
+  "answer": "答案：1.5393795 无量纲。",
+  "explanation": "第一步（条件与单位）：本题采用 organic 的 polymer_mw_mn_dispersity_index 定量模型。题设参数 a=32250、b=20950，并已限定成立的化学与物理近似。需要先确定所求量的单位 无量纲，避免将模型外的真实干扰视作已被证明不存在。\n第二步（计算原理）：分散度是 Mw/Mn，对理想单分散聚合物 Đ=1；分子量分布较宽时比值更大。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。\n第三步（数值及复核）：用 a=32250、b=20950 代入上述模型，得到 1.5393795 无量纲。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。",
+  "solution_steps": [
+    "第一步（条件与单位）：本题采用 organic 的 polymer_mw_mn_dispersity_index 定量模型。题设参数 a=32250、b=20950，并已限定成立的化学与物理近似。需要先确定所求量的单位 无量纲，避免将模型外的真实干扰视作已被证明不存在。",
+    "第二步（计算原理）：分散度是 Mw/Mn，对理想单分散聚合物 Đ=1；分子量分布较宽时比值更大。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。",
+    "第三步（数值及复核）：用 a=32250、b=20950 代入上述模型，得到 1.5393795 无量纲。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。"
+  ],
+  "numeric_answers": [
+    1.5393794749403342
+  ],
+  "units": "无量纲",
+  "independent_model_inverse_checked": true,
+  "machine_science_check_scope": "mathematical_formula_and_premise_consistency_not_peer_review",
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_64_models_36_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Fully authored applied university teaching problem and three-stage explanation, no third-party problem text copied."
+  }
+}

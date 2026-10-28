@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "a8ab9d6168779843b1d9ceae3a62bbbfbd2da01c1330d7e4b98c0f21bb01ae5b",
+  "subject": "inorganic",
+  "topic": "redox_equilibrium_constant_e_case33",
+  "topic_family": "redox_equilibrium_constant_e",
+  "parameter_case": 33,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "authored_three_step_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某假想氧化还原反应在 298.15 K 的标准电动势 E°=0.392 V，净电子转移数 n=2。采用 log₁₀K=nE°/0.05916，求无量纲热力学平衡常数 K。",
+  "answer": "答案：1.7872999e+13 无量纲。",
+  "explanation": "第一步（条件与单位）：本题采用 inorganic 的 redox_equilibrium_constant_e 定量模型。题设参数 a=0.392、b=0，并已限定成立的化学与物理近似。需要先确定所求量的单位 无量纲，避免将模型外的真实干扰视作已被证明不存在。\n第二步（计算原理）：由 ΔG°=−nFE° 和 ΔG°=−RTlnK 合并，得 log₁₀K=nE°/0.05916，使用十进对数。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。\n第三步（数值及复核）：用 a=0.392、b=0 代入上述模型，得到 1.7872999e+13 无量纲。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。",
+  "solution_steps": [
+    "第一步（条件与单位）：本题采用 inorganic 的 redox_equilibrium_constant_e 定量模型。题设参数 a=0.392、b=0，并已限定成立的化学与物理近似。需要先确定所求量的单位 无量纲，避免将模型外的真实干扰视作已被证明不存在。",
+    "第二步（计算原理）：由 ΔG°=−nFE° 和 ΔG°=−RTlnK 合并，得 log₁₀K=nE°/0.05916，使用十进对数。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。",
+    "第三步（数值及复核）：用 a=0.392、b=0 代入上述模型，得到 1.7872999e+13 无量纲。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。"
+  ],
+  "numeric_answers": [
+    17872998984791.734
+  ],
+  "units": "无量纲",
+  "independent_model_inverse_checked": true,
+  "machine_science_check_scope": "mathematical_formula_and_premise_consistency_not_peer_review",
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_64_models_36_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Fully authored applied university teaching problem and three-stage explanation, no third-party problem text copied."
+  }
+}

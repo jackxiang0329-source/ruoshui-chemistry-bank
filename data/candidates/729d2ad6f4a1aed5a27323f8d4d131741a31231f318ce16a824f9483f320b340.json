@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "729d2ad6f4a1aed5a27323f8d4d131741a31231f318ce16a824f9483f320b340",
+  "subject": "organic",
+  "topic": "ideal_branching_gelation_critical_p_case20",
+  "topic_family": "ideal_branching_gelation_critical_p",
+  "parameter_case": 20,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "authored_three_step_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "在无环随机支化的理想聚合模型中，单体的平均官能度为 f=22，且 f>2。采用题给 Flory–Stockmayer 近似 pc=1/(f−1)，求凝胶临界转化率。",
+  "answer": "答案：0.047619048 无量纲。",
+  "explanation": "第一步（条件与单位）：本题采用 organic 的 ideal_branching_gelation_critical_p 定量模型。题设参数 a=22、b=0，并已限定成立的化学与物理近似。需要先确定所求量的单位 无量纲，避免将模型外的真实干扰视作已被证明不存在。\n第二步（计算原理）：在题设理想随机支化模型下，pc=1/(f−1)，忽略环化、官能团反应活性差异与组分不均衡。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。\n第三步（数值及复核）：用 a=22、b=0 代入上述模型，得到 0.047619048 无量纲。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。",
+  "solution_steps": [
+    "第一步（条件与单位）：本题采用 organic 的 ideal_branching_gelation_critical_p 定量模型。题设参数 a=22、b=0，并已限定成立的化学与物理近似。需要先确定所求量的单位 无量纲，避免将模型外的真实干扰视作已被证明不存在。",
+    "第二步（计算原理）：在题设理想随机支化模型下，pc=1/(f−1)，忽略环化、官能团反应活性差异与组分不均衡。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。",
+    "第三步（数值及复核）：用 a=22、b=0 代入上述模型，得到 0.047619048 无量纲。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。"
+  ],
+  "numeric_answers": [
+    0.047619047619047616
+  ],
+  "units": "无量纲",
+  "independent_model_inverse_checked": true,
+  "machine_science_check_scope": "mathematical_formula_and_premise_consistency_not_peer_review",
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_64_models_36_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Fully authored applied university teaching problem and three-stage explanation, no third-party problem text copied."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "c5ca63f300b776fbb4cea703b28854b81d3b0ed762abaf91f53fbf398e773c29",
+  "subject": "inorganic",
+  "topic": "sc_lattice_edge_from_radius_case29",
+  "topic_family": "sc_lattice_edge_from_radius",
+  "parameter_case": 29,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "authored_three_step_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "假想单原子简单立方晶格中原子沿晶胞棱相切，原子半径 r=0.148 nm。按硬球模型求晶胞边长（nm），忽略缺陷与热振动。",
+  "answer": "答案：0.29600000 nm。",
+  "explanation": "第一步（条件与单位）：本题采用 inorganic 的 sc_lattice_edge_from_radius 定量模型。题设参数 a=0.148、b=0，并已限定成立的化学与物理近似。需要先确定所求量的单位 nm，避免将模型外的真实干扰视作已被证明不存在。\n第二步（计算原理）：简单立方晶胞棱连接两个相切原子中心，棱长等于两个半径之和，即 a_cell=2r。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。\n第三步（数值及复核）：用 a=0.148、b=0 代入上述模型，得到 0.29600000 nm。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。",
+  "solution_steps": [
+    "第一步（条件与单位）：本题采用 inorganic 的 sc_lattice_edge_from_radius 定量模型。题设参数 a=0.148、b=0，并已限定成立的化学与物理近似。需要先确定所求量的单位 nm，避免将模型外的真实干扰视作已被证明不存在。",
+    "第二步（计算原理）：简单立方晶胞棱连接两个相切原子中心，棱长等于两个半径之和，即 a_cell=2r。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。",
+    "第三步（数值及复核）：用 a=0.148、b=0 代入上述模型，得到 0.29600000 nm。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。"
+  ],
+  "numeric_answers": [
+    0.296
+  ],
+  "units": "nm",
+  "independent_model_inverse_checked": true,
+  "machine_science_check_scope": "mathematical_formula_and_premise_consistency_not_peer_review",
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_64_models_36_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Fully authored applied university teaching problem and three-stage explanation, no third-party problem text copied."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "8116617abce4112d72c7d12b40ee83374e2a7b0526993c446e75d5b81bda7b7a",
+  "subject": "organic",
+  "topic": "independent_chiral_centers_max_configs_case03",
+  "topic_family": "independent_chiral_centers_max_configs",
+  "parameter_case": 3,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "authored_three_step_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "假想非环分子中有 4 个彼此独立的手性中心，每个都可指定 R/S，题设排除内消旋对称与其它几何约束。求最多可区分的立体构型组合数。",
+  "answer": "答案：16.000000 种。",
+  "explanation": "第一步（条件与单位）：本题采用 organic 的 independent_chiral_centers_max_configs 定量模型。题设参数 a=4、b=0，并已限定成立的化学与物理近似。需要先确定所求量的单位 种，避免将模型外的真实干扰视作已被证明不存在。\n第二步（计算原理）：每个独立手性中心有 R/S 两种选择，彼此独立且不归并时共有 2^n 种构型。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。\n第三步（数值及复核）：用 a=4、b=0 代入上述模型，得到 16.000000 种。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。",
+  "solution_steps": [
+    "第一步（条件与单位）：本题采用 organic 的 independent_chiral_centers_max_configs 定量模型。题设参数 a=4、b=0，并已限定成立的化学与物理近似。需要先确定所求量的单位 种，避免将模型外的真实干扰视作已被证明不存在。",
+    "第二步（计算原理）：每个独立手性中心有 R/S 两种选择，彼此独立且不归并时共有 2^n 种构型。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。",
+    "第三步（数值及复核）：用 a=4、b=0 代入上述模型，得到 16.000000 种。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。"
+  ],
+  "numeric_answers": [
+    16
+  ],
+  "units": "种",
+  "independent_model_inverse_checked": true,
+  "machine_science_check_scope": "mathematical_formula_and_premise_consistency_not_peer_review",
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_64_models_36_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Fully authored applied university teaching problem and three-stage explanation, no third-party problem text copied."
+  }
+}

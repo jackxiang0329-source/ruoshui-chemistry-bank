@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "a2e09aef483dbd0206bf71363815f57e3ef9e213bb18ffecb5dcc17810fa69ea",
+  "subject": "physical",
+  "topic": "maxwell_mean_speed_ideal_gas_case04",
+  "topic_family": "maxwell_mean_speed_ideal_gas",
+  "parameter_case": 4,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "authored_three_step_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "理想气体温度 T=315 K、摩尔质量 M=0.0286 kg/mol，R=8.314462618 J/(mol·K)。按 Maxwell 分布求平均速率 vmean=√(8RT/(πM))。",
+  "answer": "答案：482.90245 m/s。",
+  "explanation": "第一步（条件与单位）：本题采用 physical 的 maxwell_mean_speed_ideal_gas 定量模型。题设参数 a=315、b=0.0286，并已限定成立的化学与物理近似。需要先确定所求量的单位 m/s，避免将模型外的真实干扰视作已被证明不存在。\n第二步（计算原理）：平均速率为 √(8RT/(πM))，与最概然速率 √(2RT/M) 和方均根速率 √(3RT/M) 不同。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。\n第三步（数值及复核）：用 a=315、b=0.0286 代入上述模型，得到 482.90245 m/s。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。",
+  "solution_steps": [
+    "第一步（条件与单位）：本题采用 physical 的 maxwell_mean_speed_ideal_gas 定量模型。题设参数 a=315、b=0.0286，并已限定成立的化学与物理近似。需要先确定所求量的单位 m/s，避免将模型外的真实干扰视作已被证明不存在。",
+    "第二步（计算原理）：平均速率为 √(8RT/(πM))，与最概然速率 √(2RT/M) 和方均根速率 √(3RT/M) 不同。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。",
+    "第三步（数值及复核）：用 a=315、b=0.0286 代入上述模型，得到 482.90245 m/s。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。"
+  ],
+  "numeric_answers": [
+    482.9024513486354
+  ],
+  "units": "m/s",
+  "independent_model_inverse_checked": true,
+  "machine_science_check_scope": "mathematical_formula_and_premise_consistency_not_peer_review",
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_64_models_36_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Fully authored applied university teaching problem and three-stage explanation, no third-party problem text copied."
+  }
+}

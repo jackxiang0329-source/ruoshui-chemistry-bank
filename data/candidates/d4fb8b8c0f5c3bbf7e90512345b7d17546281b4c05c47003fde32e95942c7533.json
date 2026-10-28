@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "d4fb8b8c0f5c3bbf7e90512345b7d17546281b4c05c47003fde32e95942c7533",
+  "subject": "physical",
+  "topic": "steady_fick_fourier_wall_heat_power_case26",
+  "topic_family": "steady_fick_fourier_wall_heat_power",
+  "parameter_case": 26,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "authored_three_step_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "厚度为 L=0.0500 m 的平板热导率 k=0.800 W/(m·K)，传热截面积 A=0.35 m²，两侧温差 ΔT=37.5 K。若无内热源且为一维稳态导热，求热流功率（W）。",
+  "answer": "答案：210.00000 W。",
+  "explanation": "第一步（条件与单位）：本题采用 physical 的 steady_fick_fourier_wall_heat_power 定量模型。题设参数 a=0.35、b=37.5，并已限定成立的化学与物理近似。需要先确定所求量的单位 W，避免将模型外的真实干扰视作已被证明不存在。\n第二步（计算原理）：Fourier 热传导定律 P=kAΔT/L，所有长度取 m、温差取 K，结果为 W。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。\n第三步（数值及复核）：用 a=0.35、b=37.5 代入上述模型，得到 210.00000 W。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。",
+  "solution_steps": [
+    "第一步（条件与单位）：本题采用 physical 的 steady_fick_fourier_wall_heat_power 定量模型。题设参数 a=0.35、b=37.5，并已限定成立的化学与物理近似。需要先确定所求量的单位 W，避免将模型外的真实干扰视作已被证明不存在。",
+    "第二步（计算原理）：Fourier 热传导定律 P=kAΔT/L，所有长度取 m、温差取 K，结果为 W。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。",
+    "第三步（数值及复核）：用 a=0.35、b=37.5 代入上述模型，得到 210.00000 W。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。"
+  ],
+  "numeric_answers": [
+    209.99999999999994
+  ],
+  "units": "W",
+  "independent_model_inverse_checked": true,
+  "machine_science_check_scope": "mathematical_formula_and_premise_consistency_not_peer_review",
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_64_models_36_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Fully authored applied university teaching problem and three-stage explanation, no third-party problem text copied."
+  }
+}

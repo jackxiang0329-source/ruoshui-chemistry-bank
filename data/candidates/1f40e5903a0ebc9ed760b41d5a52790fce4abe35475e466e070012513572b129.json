@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "1f40e5903a0ebc9ed760b41d5a52790fce4abe35475e466e070012513572b129",
+  "subject": "inorganic",
+  "topic": "zinc_acid_hydrogen_gas_volume_case26",
+  "topic_family": "zinc_acid_hydrogen_gas_volume",
+  "parameter_case": 26,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "authored_three_step_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "金属 Zn 0.225 mol 与过量盐酸定量反应 Zn+2H⁺→Zn²⁺+H₂，产生的 H₂ 在绝对温度 348 K、压力 100.0 kPa 下视作理想气体。取 R=8.314462618 L·kPa/(mol·K)，求气体体积。",
+  "answer": "答案：6.5102242 L。",
+  "explanation": "第一步（条件与单位）：本题采用 inorganic 的 zinc_acid_hydrogen_gas_volume 定量模型。题设参数 a=0.225、b=348，并已限定成立的化学与物理近似。需要先确定所求量的单位 L，避免将模型外的真实干扰视作已被证明不存在。\n第二步（计算原理）：反应计量给出 n(H₂)=n(Zn)，然后按 PV=nRT 得 V=nRT/P；不包含非理想气体修正。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。\n第三步（数值及复核）：用 a=0.225、b=348 代入上述模型，得到 6.5102242 L。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。",
+  "solution_steps": [
+    "第一步（条件与单位）：本题采用 inorganic 的 zinc_acid_hydrogen_gas_volume 定量模型。题设参数 a=0.225、b=348，并已限定成立的化学与物理近似。需要先确定所求量的单位 L，避免将模型外的真实干扰视作已被证明不存在。",
+    "第二步（计算原理）：反应计量给出 n(H₂)=n(Zn)，然后按 PV=nRT 得 V=nRT/P；不包含非理想气体修正。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。",
+    "第三步（数值及复核）：用 a=0.225、b=348 代入上述模型，得到 6.5102242 L。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。"
+  ],
+  "numeric_answers": [
+    6.510224229894001
+  ],
+  "units": "L",
+  "independent_model_inverse_checked": true,
+  "machine_science_check_scope": "mathematical_formula_and_premise_consistency_not_peer_review",
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_64_models_36_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Fully authored applied university teaching problem and three-stage explanation, no third-party problem text copied."
+  }
+}

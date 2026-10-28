@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "5341c9f2b2682f88f0c8a2b0d3f5abcedb429c9c32d0a683341274491ffb395f",
+  "subject": "analytical",
+  "topic": "single_point_calibration_concentration_case09",
+  "topic_family": "single_point_calibration_concentration",
+  "parameter_case": 9,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "authored_three_step_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "单点标准溶液浓度为 0.061 mg/L、经空白校正吸光度为 0.33，未知样品吸光度固定为 0.300。假设响应关系 A=kc 且线性，求未知溶液浓度（mg/L）。",
+  "answer": "答案：0.055454545 mg/L。",
+  "explanation": "第一步（条件与单位）：本题采用 analytical 的 single_point_calibration_concentration 定量模型。题设参数 a=0.33、b=0.061，并已限定成立的化学与物理近似。需要先确定所求量的单位 mg/L，避免将模型外的真实干扰视作已被证明不存在。\n第二步（计算原理）：由单点标准得 k=Astd/cstd，未知浓度 cx=0.300/k=0.300cstd/Astd。不能对非零截距的响应使用此式。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。\n第三步（数值及复核）：用 a=0.33、b=0.061 代入上述模型，得到 0.055454545 mg/L。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。",
+  "solution_steps": [
+    "第一步（条件与单位）：本题采用 analytical 的 single_point_calibration_concentration 定量模型。题设参数 a=0.33、b=0.061，并已限定成立的化学与物理近似。需要先确定所求量的单位 mg/L，避免将模型外的真实干扰视作已被证明不存在。",
+    "第二步（计算原理）：由单点标准得 k=Astd/cstd，未知浓度 cx=0.300/k=0.300cstd/Astd。不能对非零截距的响应使用此式。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。",
+    "第三步（数值及复核）：用 a=0.33、b=0.061 代入上述模型，得到 0.055454545 mg/L。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。"
+  ],
+  "numeric_answers": [
+    0.05545454545454545
+  ],
+  "units": "mg/L",
+  "independent_model_inverse_checked": true,
+  "machine_science_check_scope": "mathematical_formula_and_premise_consistency_not_peer_review",
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_64_models_36_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Fully authored applied university teaching problem and three-stage explanation, no third-party problem text copied."
+  }
+}

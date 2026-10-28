@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "079ba1f8699414a6bf5d0a575fa679467631d1e60ebaa27a4b5a0b90db50ce48",
+  "subject": "inorganic",
+  "topic": "octa_hs_d4_lfse_case02",
+  "topic_family": "octa_hs_d4_lfse",
+  "parameter_case": 2,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "authored_three_step_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "弱场八面体高自旋 d⁴ 离子电子排布为 t₂g³e_g¹，晶场分裂能 Δo=71.6 kJ/mol。求仅考虑晶场分裂的 LFSE，忽略配对能与 Jahn–Teller 畸变。",
+  "answer": "答案：-42.960000 kJ/mol。",
+  "explanation": "第一步（条件与单位）：本题采用 inorganic 的 octa_hs_d4_lfse 定量模型。题设参数 a=71.6、b=0，并已限定成立的化学与物理近似。需要先确定所求量的单位 kJ/mol，避免将模型外的真实干扰视作已被证明不存在。\n第二步（计算原理）：三个 t₂g 电子各贡献 −0.4Δo，一个 e_g 电子贡献 +0.6Δo，故 LFSE=−0.6Δo。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。\n第三步（数值及复核）：用 a=71.6、b=0 代入上述模型，得到 -42.960000 kJ/mol。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。",
+  "solution_steps": [
+    "第一步（条件与单位）：本题采用 inorganic 的 octa_hs_d4_lfse 定量模型。题设参数 a=71.6、b=0，并已限定成立的化学与物理近似。需要先确定所求量的单位 kJ/mol，避免将模型外的真实干扰视作已被证明不存在。",
+    "第二步（计算原理）：三个 t₂g 电子各贡献 −0.4Δo，一个 e_g 电子贡献 +0.6Δo，故 LFSE=−0.6Δo。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。",
+    "第三步（数值及复核）：用 a=71.6、b=0 代入上述模型，得到 -42.960000 kJ/mol。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。"
+  ],
+  "numeric_answers": [
+    -42.959999999999994
+  ],
+  "units": "kJ/mol",
+  "independent_model_inverse_checked": true,
+  "machine_science_check_scope": "mathematical_formula_and_premise_consistency_not_peer_review",
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_64_models_36_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Fully authored applied university teaching problem and three-stage explanation, no third-party problem text copied."
+  }
+}

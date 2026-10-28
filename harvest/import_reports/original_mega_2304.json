@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "generated": 2304,
+  "distinct_topic_families": 64,
+  "by_subject": {
+    "inorganic": 576,
+    "analytical": 576,
+    "organic": 576,
+    "physical": 576
+  },
+  "cases_per_family": 36,
+  "three_step_solution_count": 6912,
+  "independently_checked_numeric_cases": 2304,
+  "complete_source_replays": 2304,
+  "source_license": "CC0-1.0",
+  "copied_exam_questions": 0,
+  "expert_approved": 0,
+  "publishable": false,
+  "caveat": "2304 distinct parameter records in 64 distinct authored topic families, not 2304 distinct concepts. No chemical peer review, semantic deduplication or official problem approval has been completed."
+}

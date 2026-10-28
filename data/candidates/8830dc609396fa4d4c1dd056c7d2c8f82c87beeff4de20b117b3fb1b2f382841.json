@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "8830dc609396fa4d4c1dd056c7d2c8f82c87beeff4de20b117b3fb1b2f382841",
+  "subject": "inorganic",
+  "topic": "cubic_crystal_molar_mass_from_density_case18",
+  "topic_family": "cubic_crystal_molar_mass_from_density",
+  "parameter_case": 18,
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question_type": "authored_three_step_quantitative_chemistry",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "立方晶体密度为 4.11 g/cm³，常规晶胞边长为 410.2 pm，每晶胞含 Z=4 个化学式单位，取 NA=6.02214076×10²³ mol⁻¹。求物质摩尔质量（g/mol），忽略空位。",
+  "answer": "答案：42.709029 g/mol。",
+  "explanation": "第一步（条件与单位）：本题采用 inorganic 的 cubic_crystal_molar_mass_from_density 定量模型。题设参数 a=4.11、b=410.2，并已限定成立的化学与物理近似。需要先确定所求量的单位 g/mol，避免将模型外的真实干扰视作已被证明不存在。\n第二步（计算原理）：ρ=ZM/(NAa_cell³)，移项得 M=ρNA(a_cell×10⁻¹⁰ cm/pm)³/Z；需先转换晶胞边长单位。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。\n第三步（数值及复核）：用 a=4.11、b=410.2 代入上述模型，得到 42.709029 g/mol。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。",
+  "solution_steps": [
+    "第一步（条件与单位）：本题采用 inorganic 的 cubic_crystal_molar_mass_from_density 定量模型。题设参数 a=4.11、b=410.2，并已限定成立的化学与物理近似。需要先确定所求量的单位 g/mol，避免将模型外的真实干扰视作已被证明不存在。",
+    "第二步（计算原理）：ρ=ZM/(NAa_cell³)，移项得 M=ρNA(a_cell×10⁻¹⁰ cm/pm)³/Z；需先转换晶胞边长单位。 该关系仅在所述条件及约定下计算，参数取值及计量系数不应由习惯公式自行替换。",
+    "第三步（数值及复核）：用 a=4.11、b=410.2 代入上述模型，得到 42.709029 g/mol。再把该数值代回独立反向关系核对原参数；已执行有限值、反代与来源一致性检查，尚须人工审核科学真实性。"
+  ],
+  "numeric_answers": [
+    42.70902932258153
+  ],
+  "units": "g/mol",
+  "independent_model_inverse_checked": true,
+  "machine_science_check_scope": "mathematical_formula_and_premise_consistency_not_peer_review",
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_64_models_36_parameter_cases",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Fully authored applied university teaching problem and three-stage explanation, no third-party problem text copied."
+  }
+}
