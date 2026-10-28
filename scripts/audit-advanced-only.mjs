@@ -32,12 +32,33 @@ for(const d of newset){
  newgroups[d.subject]++;
 }
 assert.deepEqual(newgroups,groups);
+const thirdGroupCodes={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
+const thirdIDs=new Set(),thirdTitles=new Set();
+for(const [subject,code] of Object.entries(thirdGroupCodes)){
+ const rows=read('editorial/advanced_integrated_v3/'+subject+'.jsonl').trimEnd().split('\n').map(JSON.parse);
+ assert.equal(rows.length,3,'Third series expected 3 per subject '+subject);
+ rows.forEach((d,i)=>{
+  assert.equal(d.id,'UC-ADV3-'+code+String(i+4).padStart(2,'0'));
+  assert.equal(d.subject,subject);
+  assert.equal(d.authorship.independent_original_model,true);
+  assert.equal(d.authorship.parameter_variant,false);
+  assert.equal(d.authorship.third_party_question_copied,false);
+  assert.equal(d.publishable,false);
+  assert.equal(d.exclude_from_official_bank,true);
+  assert.equal(d.quality_status,'awaiting_expert_review');
+  assert.equal(d.verification.human_approved,false);
+  assert.ok(d.problem_zh.length>180&&d.solution_zh_steps.length>=7);
+  assert.ok(!thirdIDs.has(d.id)&&!thirdTitles.has(d.title));
+  thirdIDs.add(d.id);thirdTitles.add(d.title);
+ });
+}
+assert.equal(thirdIDs.size,12);
 for(const p of ['data/integrated_challenges','data/research_quarantine','external_sources',
  'third_party','.github/workflows/chemistry-harvest.yml','.github/workflows/chemistry-discovery-fast.yml',
  '.github/workflows/chemistry-rqa-intake.yml','scripts/import-original-coupled-32768.mjs'])
  assert.equal(exists(p),false,'Deprecated low-difficulty resource returned: '+p);
 const release=JSON.parse(read('release/chemistry-approved-manifest.json'));
-assert.equal(release.advanced_editorial_items,24);
+assert.equal(release.advanced_editorial_items,36);
 assert.equal(release.approved_count,0);
 assert.deepEqual(release.items,[]);
-console.log('PASS: 12 original + 12 newly authored advanced problems, zero low-difficulty candidates, zero expert approvals');
+console.log('PASS: 12+12+12 = 36 independent advanced chemistry cases, zero low-difficulty candidates, zero expert approvals');
