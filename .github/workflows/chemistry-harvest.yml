@@ -102,6 +102,8 @@ on:
       - "tests/audit-original-multistep-science.test.mjs"
       - "scripts/update-chemistry-readme-snapshot.mjs"
       - "tests/update-chemistry-readme-snapshot.test.mjs"
+      - "scripts/import-original-rapid-240.mjs"
+      - "tests/original-rapid-240.test.mjs"
       - "scripts/import-original-multistep-chemistry.mjs"
       - "tests/original-multistep-chemistry.test.mjs"
       - "scripts/import-original-analytical-physical-topics.mjs"
@@ -250,6 +252,8 @@ jobs:
         run: node --test tests/audit-original-multistep-science.test.mjs
       - name: Verify fail-closed audit-synchronized README snapshot
         run: node --test tests/update-chemistry-readme-snapshot.test.mjs
+      - name: Verify 240 original chemistry exercises grouped into 48 topical families
+        run: node --test tests/original-rapid-240.test.mjs
       - name: Verify 12 three-stage chemical derivations and 24 independent balance checks
         run: node --test tests/original-multistep-chemistry.test.mjs
       - name: Verify twenty new analytical/physical source-bound numeric inverse solutions
@@ -328,6 +332,8 @@ jobs:
         run: node scripts/import-original-analytical-variants.mjs
       - name: Stage nine source-linked quantum chemistry course exercises for human review
         run: node scripts/import-introqchem-2021.mjs
+      - name: Persist 240 original four-discipline chemistry problem solutions
+        run: node scripts/import-original-rapid-240.mjs
       - name: Persist 12 original multistep analytical and physical chemistry exercises
         run: node scripts/import-original-multistep-chemistry.mjs
       - name: Independently audit twelve saved multistep solutions and their scientific premises
