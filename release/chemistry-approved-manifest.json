@@ -2,12 +2,13 @@
   "schema_version": 2,
   "release_state": "no_approved_items",
   "retained_candidate_json": 12,
-  "advanced_editorial_items": 306,
+  "advanced_editorial_items": 406,
   "approved_count": 0,
   "policy": "Human science, solution, copyright, and item-level review required; machine calculations do not approve publication.",
   "items": [],
   "sixth_series_pending_cross_series_novelty_review": 50,
   "expert_approved": 0,
   "seventh_series_pending_cross_series_novelty_review": 60,
-  "eighth_series_pending_cross_series_novelty_review": 60
+  "eighth_series_pending_cross_series_novelty_review": 60,
+  "ninth_series_pending_cross_series_novelty_review": 100
 }
