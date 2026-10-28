@@ -1,0 +1,26 @@
+name: Advanced chemistry batch 50 independent checks
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'editorial/advanced_integrated_v4/**'
+      - 'scripts/check-advanced-authored-v4.mjs'
+      - '.github/workflows/chemistry-batch50-qa.yml'
+  pull_request:
+    paths:
+      - 'editorial/advanced_integrated_v4/**'
+      - 'scripts/check-advanced-authored-v4.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-all-50:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Recompute independent physical equations for each of 50 original cases
+        run: node scripts/check-advanced-authored-v4.mjs
