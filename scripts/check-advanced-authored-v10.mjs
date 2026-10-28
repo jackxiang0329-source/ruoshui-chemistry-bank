@@ -9,6 +9,60 @@ const R=8.314462618;
 const F=96485.33212;
 const T=280,J=2400,q=Math.exp(-J/(R*T)),Z=1+3*q,p=3*q/Z;
 const w={
+
+"UC-ADV10-I112":()=>{
+ const s=2.4,e0=2.1,quantum=.16;
+ let prob=Math.exp(-s),sum=0,first=0,second=0,p2=0,p3=0;
+ for(let n=0;n<=60;n++){sum+=prob;first+=n*prob;second+=n*n*prob;if(n===2)p2=prob;if(n===3)p3=prob;prob*=s/(n+1);}
+ assert.ok(Math.abs(sum-1)<1e-12&&Math.abs(first-s)<1e-12&&Math.abs(second-first*first-s)<1e-11);
+ const lambda=s*quantum,massRatio=1.21,newQuantum=quantum/Math.sqrt(massRatio);
+ return [Math.exp(-s),p2,p3/p2,e0+quantum*first,e0-quantum*first,2*lambda,lambda,lambda/newQuantum,newQuantum];
+},
+"UC-ADV10-A112":()=>{
+ const t0=1.5,phi0=.2,k0=Math.exp(5),strength=8;
+ const integral=(t,beta)=>{
+  const N=10000,h=t/N;let sum=0;
+  for(let j=0;j<=N;j++){
+   const time=j*h,ret=Math.exp(5-strength*(phi0+beta*time));
+   sum+=(j===0||j===N?1:j%2===0?2:4)/(t0*(1+ret));
+  }
+  return h*sum/3;
+ };
+ const solve=beta=>{
+  let lo=0,hi=60;
+  for(let j=0;j<55;j++){const mid=(lo+hi)/2;if(integral(mid,beta)>1)hi=mid;else lo=mid;}
+  const t=(lo+hi)/2,phi=phi0+beta*t;
+  assert.ok(phi>0&&phi<1&&Math.abs(integral(t,beta)-1)<1e-10);
+  return [t,phi,k0*Math.exp(-strength*phi)];
+ };
+ const slow=solve(.04),fast=solve(.06),iso=t0*(1+Math.exp(5-strength*phi0));
+ return [...slow,...fast,iso,iso-slow[0]];
+},
+"UC-ADV10-O109":()=>{
+ const ligandEE=.4,hetero=3,activity=.2,ct=.001,k=.02,t=600;
+ const fractions=[(1+ligandEE)/2,(1-ligandEE)/2];
+ const w=[fractions[0]*fractions[0],fractions[1]*fractions[1],2*hetero*fractions[0]*fractions[1]];
+ const total=w.reduce((a,b)=>a+b,0),c=w.map(x=>x/total);
+ assert.ok(Math.abs(c.reduce((a,b)=>a+b,0)-1)<1e-12);
+ const r=ct*k*t*(c[0]+activity*c[2]/2),s=ct*k*t*(c[1]+activity*c[2]/2);
+ assert.ok(r+s<.1&&r>0&&s>0);
+ return [c[0],c[1],c[2],r,s,r+s,(r-s)/(r+s),(r+s)/(ct*k*t)];
+},
+"UC-ADV10-P109":()=>{
+ const a=1.5;
+ const jac=(b)=>{
+  const x=a,y=b/a,h=1e-5;
+  const f=(x,y)=>a-(b+1)*x+x*x*y,g=(x,y)=>b*x-x*x*y;
+  assert.ok(Math.abs(f(x,y))<1e-12&&Math.abs(g(x,y))<1e-12);
+  const j11=(f(x+h,y)-f(x-h,y))/(2*h),j12=(f(x,y+h)-f(x,y-h))/(2*h);
+  const j21=(g(x+h,y)-g(x-h,y))/(2*h),j22=(g(x,y+h)-g(x,y-h))/(2*h);
+  const tr=j11+j22,det=j11*j22-j12*j21;
+  return {x,y,tr,det,real:tr/2,imag:Math.sqrt(4*det-tr*tr)/2};
+ };
+ const high=jac(3.4),low=jac(2.8),bc=1+a*a;
+ assert.ok(high.tr>0&&low.tr<0&&Math.abs(high.det-a*a)<1e-9);
+ return [high.x,high.y,high.tr,high.det,high.real,high.imag,bc,2*Math.PI/Math.sqrt(a*a),low.tr,low.real];
+},
 "UC-ADV10-I111":()=>{
  const h=6.62607015e-34,mu=9.2740100783e-24,nu=9.5e9;
  const calc=theta=>{const sn=Math.sin(theta),cs=Math.cos(theta),g=Math.hypot(1.98*sn,1.94*cs),A=Math.hypot(1.98*7*sn,1.94*18*cs)/g,b=h*nu/(mu*g)*1e3;

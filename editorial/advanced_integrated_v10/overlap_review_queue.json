@@ -2,8 +2,8 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 44,
-  "preliminary_flags": 17,
+  "current_draft_count": 48,
+  "preliminary_flags": 21,
   "pairs": [
     {
       "new_id": "UC-ADV10-I102",
@@ -105,6 +105,30 @@
       "new_id": "UC-ADV10-P108",
       "prior_id": "UC-ADV10-P101",
       "reason": "Both involve electrolyte electrostatics; v10 P108 planar Poisson-Boltzmann vs P101 gel Donnan electroneutrality. Expert comparison pending.",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-I112",
+      "prior_id": "UC-ADV6-O32",
+      "reason": "Poisson分布与矩共享核心概率结构；本题另含电荷转移振动级数、Stokes位移及质量改变下重组能不变量，仍须判断是否构成实质新模型。",
+      "judgement": "high_priority_pending_human_core_model_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-A112",
+      "prior_id": "UC-ADV9-A77",
+      "reason": "同为色谱保留主题；旧题等温GC保留指数校正，本题为理想梯度迁移积分及反演，需方程级对照。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-O109",
+      "prior_id": "UC-ADV8-O67",
+      "reason": "均涉及选择性加权；本题新增双配体异手性络合统计、不同络合物催化活性及产物ee非线性，需专家审核是否实质独立。",
+      "judgement": "high_priority_pending_human_core_model_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-P109",
+      "prior_id": "UC-ADV7-O43",
+      "reason": "旧题为线性三物种反应网络矩阵动力学，本题为非线性自催化Brusselator的Hopf局部稳定性；需跨学科核心模型人工核查。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -302,6 +326,30 @@
       "model_family": "Gouy-Chapman-planar-PB-differential-capacitance-charging-work",
       "judgement": "pending_human_comparison",
       "screening": "Full independent numeric witness configured; equation-level cross-series novelty and human science review pending."
+    },
+    {
+      "new_id": "UC-ADV10-I112",
+      "model_family": "Huang-Rhys-charge-transfer-vibronic-Stokes-isotope-invariant-reorganization",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent full-answer numeric witness prepared; equation-level cross-series novelty and expert chemistry review pending."
+    },
+    {
+      "new_id": "UC-ADV10-A112",
+      "model_family": "LSS-ideal-uniform-gradient-migration-integral-analytic-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent full-answer numeric witness prepared; equation-level cross-series novelty and expert chemistry review pending."
+    },
+    {
+      "new_id": "UC-ADV10-O109",
+      "model_family": "ML2-heterochiral-ligand-statistical-catalysis-nonlinear-ee",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent full-answer numeric witness prepared; equation-level cross-series novelty and expert chemistry review pending."
+    },
+    {
+      "new_id": "UC-ADV10-P109",
+      "model_family": "Brusselator-chemostat-autocatalytic-Hopf-Jacobian-local-stability",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent full-answer numeric witness prepared; equation-level cross-series novelty and expert chemistry review pending."
     }
   ]
 }
