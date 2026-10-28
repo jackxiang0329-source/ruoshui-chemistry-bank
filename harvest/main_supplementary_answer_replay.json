@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "distinct_checked_stored_candidates": 82,
+  "source_groups_verified": 6,
+  "numeric_or_symbolic_record_status": "MIXED; not every record has a numerical answer",
+  "already_in_304_original_numeric_replay": 0,
+  "combined_unique_candidate_ids_304_plus_82": 386,
+  "main_library_total": 1715,
+  "main_records_outside_both_replays": 1329,
+  "source_linked_rights_pending_candidate_count": 21,
+  "source_linked_rights_newly_approved": 0,
+  "scientific_human_approved": 0,
+  "publishable_approved": 0,
+  "exam_ready": 0,
+  "checked_id_set_sha256": "a86478c22d62cb412296336decbaef95604b136063909294837cda0d480a3ea4",
+  "groups": [
+    {
+      "family": "new_eis_8",
+      "license": "Apache-2.0",
+      "kind": "original_numerical_practice",
+      "source": "kbknudsen/PyEIS",
+      "verification_method": "complex_circuit_equation_recalculation",
+      "stored_candidate_records_checked": 8,
+      "explicitly_recorded_numeric_answers": 8,
+      "other_solution_or_option_records": 0,
+      "expert_human_approval": 0,
+      "public_release_approved": 0,
+      "item_rights_restriction": false
+    },
+    {
+      "family": "mit_formula_analytical_8",
+      "license": "MIT",
+      "kind": "original_numerical_practice",
+      "source": "PWO-CHINA/Chemistry-Calculator-Toolkit",
+      "verification_method": "chemical_stoichiometry_recalculation",
+      "stored_candidate_records_checked": 8,
+      "explicitly_recorded_numeric_answers": 8,
+      "other_solution_or_option_records": 0,
+      "expert_human_approval": 0,
+      "public_release_approved": 0,
+      "item_rights_restriction": false
+    },
+    {
+      "family": "attributed_dft_table_12",
+      "license": "CC BY 4.0",
+      "kind": "attributed_teaching_table_calculations",
+      "source": "thisisntnathan/dftCourse",
+      "verification_method": "inverse_free_energy_population_walltime_checks",
+      "stored_candidate_records_checked": 12,
+      "explicitly_recorded_numeric_answers": 12,
+      "other_solution_or_option_records": 0,
+      "expert_human_approval": 0,
+      "public_release_approved": 0,
+      "item_rights_restriction": false
+    },
+    {
+      "family": "qcedu_quantum_3",
+      "license": "CC0-1.0",
+      "kind": "mixed_numerical_and_symbolic_course",
+      "source": "QC-Edu/IntroQM",
+      "verification_method": "quantum_constants_and_symbolic_eigenfunction_residual",
+      "stored_candidate_records_checked": 3,
+      "explicitly_recorded_numeric_answers": 2,
+      "other_solution_or_option_records": 1,
+      "expert_human_approval": 0,
+      "public_release_approved": 0,
+      "item_rights_restriction": false
+    },
+    {
+      "family": "mcmaster_course_21",
+      "license": "CC0-1.0",
+      "kind": "fixed_source_quantum_course_pending_item_rights",
+      "source": "PaulWAyers/IntroQChemProblems",
+      "verification_method": "independent_numeric_or_conceptual_author_key_reconciliation",
+      "stored_candidate_records_checked": 21,
+      "explicitly_recorded_numeric_answers": 7,
+      "other_solution_or_option_records": 14,
+      "expert_human_approval": 0,
+      "public_release_approved": 0,
+      "item_rights_restriction": true
+    },
+    {
+      "family": "mit_parametric_mcq_30",
+      "license": "MIT",
+      "kind": "deterministic_generated_multiple_choice",
+      "source": "arya51-ai/parametric-question-engine",
+      "verification_method": "generator_solution_options_and_independent_method_checks",
+      "stored_candidate_records_checked": 30,
+      "explicitly_recorded_numeric_answers": 0,
+      "other_solution_or_option_records": 30,
+      "expert_human_approval": 0,
+      "public_release_approved": 0,
+      "item_rights_restriction": false
+    }
+  ],
+  "examples": [
+    {
+      "family": "new_eis_8",
+      "saved_candidate_id": "fb4a88acb1402daf2fb23ca34ab3455d6199630e70d48df84adc55aaab5851d2",
+      "original_file": "data/candidates/fb4a88acb1402daf2fb23ca34ab3455d6199630e70d48df84adc55aaab5851d2.json",
+      "topic": "electrochemical_impedance_angular_frequency",
+      "requires_expert_review": true
+    },
+    {
+      "family": "mit_formula_analytical_8",
+      "saved_candidate_id": "c81be0a49d80a8ca05e652bdd3d5d1853cea28b010e74116f625fc80410037ea",
+      "original_file": "data/candidates/c81be0a49d80a8ca05e652bdd3d5d1853cea28b010e74116f625fc80410037ea.json",
+      "topic": "standard_solution_standardization",
+      "requires_expert_review": true
+    },
+    {
+      "family": "attributed_dft_table_12",
+      "saved_candidate_id": "7aff2f08c8ec684a8611ccb3361fcf8f2b31510d9e71f55c1ef8b7585a37bd50",
+      "original_file": "data/candidates/7aff2f08c8ec684a8611ccb3361fcf8f2b31510d9e71f55c1ef8b7585a37bd50.json",
+      "topic": "relative_ez_free_energy",
+      "requires_expert_review": true
+    },
+    {
+      "family": "qcedu_quantum_3",
+      "saved_candidate_id": "70c557ec228d751abd25aed0975635d1055919000099e2f139625690c65a28de",
+      "original_file": "data/candidates/70c557ec228d751abd25aed0975635d1055919000099e2f139625690c65a28de.json",
+      "topic": "quantum_chemistry",
+      "requires_expert_review": true
+    },
+    {
+      "family": "mcmaster_course_21",
+      "saved_candidate_id": "4f119aa48851bf6449f9278833c914846e9f89da7941e6e5009520ffc3ccdeef",
+      "original_file": "data/candidates/4f119aa48851bf6449f9278833c914846e9f89da7941e6e5009520ffc3ccdeef.json",
+      "topic": "photon_radiation_pressure_force",
+      "requires_expert_review": true
+    },
+    {
+      "family": "mit_parametric_mcq_30",
+      "saved_candidate_id": "957416c79a8ce002476b0ff9a51d07f8f680cb5e16bc2a5a50922ae73e09220c",
+      "original_file": "data/candidates/957416c79a8ce002476b0ff9a51d07f8f680cb5e16bc2a5a50922ae73e09220c.json",
+      "topic": "chemical_formula_molar_mass",
+      "requires_expert_review": true
+    }
+  ],
+  "warning": "82 additional existing records, not newly imported questions: 31 source-linked applied/symbolic cases, 21 restricted McMaster course questions, 30 solver-generated MCQs. Source-lock and mathematical program checks are NOT item-level legal or human scientific approval."
+}
