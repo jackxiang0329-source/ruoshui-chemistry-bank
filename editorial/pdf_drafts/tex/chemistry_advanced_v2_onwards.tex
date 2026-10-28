@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至10辑 (438题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至10辑 (446题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -8158,6 +8158,50 @@ AB₂O₄仅为理想化二价/三价尖晶石；反位能线性、理想子晶�
 一阶轴向g及超精细张量、51V I=7/2、无其他核；v9 I82已有轴向g场计算，新增超精细线形的实质模型差异须专家复核。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I112 · 无机电荷转移谱的Huang–Rhys振动级数、Stokes位移与同位素效应}
+\noindent\textbf{题目}\par
+某假想八面体金属配合物的金属–配体电荷转移跃迁与一个有效谐振动模耦合，基态和激发态势能曲率相同，采用零温度Franck–Condon位移谐振子模型。零声子线能量E00=2.100 eV，振动量子ħω=0.1600 eV，Huang–Rhys因子S=2.400。吸收第n振动伴线的相对强度Pn=exp(−S)S\textasciicircum{}n/n!，能量En=E00+nħω；激发后充分振动弛豫再发射，忽略非辐射损失、热激发、Duschinsky旋转和不同曲率。求零声子线与二量子线强度、三量子/二量子强度比、吸收和发射谱重心、Stokes位移及重组能。若仅将该振动的有效约化质量增大21\%，保持势能曲率、两势阱位移与E00不变，求新S与新ħω，并论证重组能与谱重心差是否改变；核验全谱概率归一与二阶矩。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两个等曲率位移谐振子在T≈0的Franck–Condon强度服从Poisson分布；其归一化由ΣS\textasciicircum{}n/n!=exp(S)保证，不能把谱线强度误当作能量。
+\item 零声子线P0=exp(−2.4)=0.0907179532894；二量子线P2=exp(−2.4)×2.4²/2!=0.261267705474。
+\item 递推Pn+1/Pn=S/(n+1)，因此P3/P2=2.4/3=0.800000；最强线位于n=2，强度与n无关的等间隔不能说明等强度。
+\item 由Poisson母函数得⟨n⟩=S=2.4、Var(n)=S；吸收重心Eabs=E00+Sħω=2.484 eV。
+\item 等曲率且激发态充分振动弛豫后，发射重心Eem=E00−Sħω=1.716 eV；这要求同一位移模且忽略热振动布居。
+\item 单侧重组能λ=Sħω=0.384 eV；Stokes位移ΔE=Eabs−Eem=2λ=0.768 eV，量纲均为能量。
+\item 质量增大至1.21倍且力常数不变，ω′=ω/√1.21=ω/1.1，故ħω′=0.145454545455 eV。
+\item 位移和力常数固定使λ=K(ΔQ)²/2保持不变；S′=λ/(ħω′)=2.6400，因此同位素替换后各线相对强度改变，但两谱重心和Stokes位移在题设近似下不变。
+\item 独立用Pn+1=Pn S/(n+1)求和至n=60，核验ΣPn=1、ΣnPn=S、Σ(n−S)²Pn=S、Stokes位移为2λ；真实配合物还可能有多模与电子–振动非谐耦合，待专家审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+零声子线概率 = 0.0907179533 fraction；二量子线概率 = 0.261267705 fraction；三量子与二量子线比 = 0.8 ratio；吸收重心 = 2.484 eV；发射重心 = 1.716 eV；Stokes位移 = 0.768 eV；单侧重组能 = 0.384 eV；同位素替换后S = 2.64 dimensionless；同位素替换后振动量子 = 0.145454545 eV\par
+\noindent\textbf{模型前提：}
+理想等曲率位移谐振子、零温Franck–Condon、单一有效振动模；与既往Poisson链长分布共享数学分布，但增加电子–振动谱矩、重组能和同位素耦合，核心模型差异仍待专家逐项比较。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I113 · 三价中间价态的歧化—归中平衡、混合电位与稀释光谱反演}
+\noindent\textbf{题目}\par
+在298.15 K理想稀溶液中，同一金属的M(II)、M(III)、M(IV)均为可溶且不存在配位、沉淀、水解和活度系数差异；M(III)/M(II)与M(IV)/M(III)均为可逆一电子对，标准还原电势分别E°32=0.4300 V、E°43=0.4700 V（相对于同一参比电极）。将三价态的初始浓度设为cII,0=0.01200 mol/L、cIII,0=0.00200 mol/L、cIV,0=0.00800 mol/L，容积恒定且无外部电子交换。唯一净反应M(II)+M(IV)⇌2M(III)。求归中平衡常数、正向反应进度浓度、平衡三价态浓度、两电极对的共同电势、混合液稀释100倍后在500 nm、光程0.500 cm下的吸光度（εII=200、εIII=1800、εIV=400 L mol⁻¹ cm⁻¹）、标准反应Gibbs能、三价态分数及平均氧化数；验证总金属与电子等价量守恒、两Nernst电势一致及物理根唯一。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将M(IV)+e⁻→M(III)的还原电势与M(III)+e⁻→M(II)相减，归中反应的E°cell=E°43−E°32=0.0400 V，反应电子数n=1；ΔrG°=−F E°cell，故lnK=F(E°43−E°32)/(RT)。
+\item 代入R=8.314462618 J mol⁻¹ K⁻¹、F=96485.33212 C mol⁻¹得K=4.74394837668；这不是二电子过程，不能把n误写为2。
+\item 令正向反应进度浓度为ξ，则cII=0.01200−ξ、cIII=0.00200+2ξ、cIV=0.00800−ξ，物理范围−0.00100<ξ<0.00800 mol/L，且初始反应商0.002²/(0.012×0.008)=0.0416667<K，故从ξ=0向正方向进行。
+\item 方程(cIII)²=K cII cIV在0≤ξ<0.008区间有唯一根：左侧严格递增，右侧严格递减。二分求得ξ=0.00453669703466 mol/L，排除区间外代数根。
+\item 平衡浓度依次为cII=0.00746330296534、cIII=0.0110733940693、cIV=0.00346330296534 mol/L，均正且三者和为0.0220000 mol/L。
+\item 分别用E32=E°32+(RT/F)ln(cIII/cII)及E43=E°43+(RT/F)ln(cIV/cIII)，得E32=E43=0.440136935857 V；若两个电势不相等，说明平衡常数方向或反应计量写错。
+\item Beer–Lambert定律对100倍稀释样品给出A500=(0.500/100)(200cII+1800cIII+400cIV)=0.114050455520；稀释只用于光谱读数，不改变原样品的电势计算。
+\item 标准反应Gibbs能ΔrG°=−RT lnK=−3.85941328480 kJ/mol；三价态中M(III)摩尔分数为cIII/0.022=0.50333609406。
+\item 价态电子等价量初始为2×0.012+3×0.002+4×0.008=0.062 mol/L，平衡亦为0.062 mol/L，平均氧化数=0.062/0.022=2.81818181818。另以数值二分、两套Nernst方程和物料守恒独立核验；真实多价金属水解和配位会改变结论，需专家复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+归中反应平衡常数 = 4.74394838 dimensionless；正向进度浓度 = 0.00453669703 mol/L；平衡M(II)浓度 = 0.00746330297 mol/L；平衡M(III)浓度 = 0.0110733941 mol/L；平衡M(IV)浓度 = 0.00346330297 mol/L；共同电势 = 0.440136936 V；百倍稀释吸光度 = 0.114050456 absorbance；标准反应Gibbs能 = -3.85941328 kJ/mol；M(III)摩尔分数 = 0.503336094 fraction；平均金属氧化数 = 2.81818182 oxidation number\par
+\noindent\textbf{模型前提：}
+三价态理想溶解、可逆一电子电对、无副反应及外界电子交换；稀释后光谱响应线性。与旧辑PCET电位和光谱混合物题有交叉，需方程级跨辑复核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第10辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -8392,6 +8436,50 @@ H2O放出量 = 4 mmol；CO2放出量 = 6 mmol；Mg(OH)2初始质量分数 = 0.23
 真实低率根 = 300000 s\textasciicircum{}-1；真实高率根 = 773702.441 s\textasciicircum{}-1；低率根衰减预测 = 111122.733 s\textasciicircum{}-1；高率根衰减预测 = 178455.226 s\textasciicircum{}-1；最大观测率 = 183939.721 s\textasciicircum{}-1；所选解观测比例 = 0.548811636 fraction；十秒真实事件数 = 3000000 events；局部斜率 = 0.219524654 dimensionless\par
 \noindent\textbf{模型前提：}
 理想可延长死时间与精确衰减因子0.5，无背景和统计误差；与放射性示踪题仅主题相近，跨辑模型级人工复核未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A112 · 线性溶剂强度梯度色谱的迁移积分、保留时间与洗脱组成}
+\noindent\textbf{题目}\par
+在一台理想化液相色谱仪中，长度L的色谱柱在恒定流速下的死时间t0=1.500 min，分析物瞬时保留因子服从线性溶剂强度模型k(φ)=k0 exp(−Sφ)，k0=exp(5.000)、S=8.000。为突出梯度迁移积分，假设柱内溶剂组成空间均匀且自进样时刻起按φ(t)=0.2000+βt变化，忽略真实梯度延迟、轴向梯度传播、弥散和溶剂混合体积；分析物迁移满足dx/dt=(L/t0)/(1+k(φ(t)))。求β=0.04000 min\textasciicircum{}−1时的保留时间tR、洗脱φR和瞬时kR；β=0.06000 min\textasciicircum{}−1时对应三量；恒定φ=0.2000时的等度保留时间及第一梯度相对等度节约时间。必须由迁移积分而非简单取洗脱时刻的k计算tR，并核验0<φR<1与积分归一。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由速度关系积分x(tR)=L，得到1=(1/t0)∫0\textasciicircum{}tR dt/[1+k0 exp(−S(φ0+βt))]；这是位置积分，不是k(tR)代入等度公式。
+\item 令u=exp[S(φ0+βt)]，则dt=du/(Sβu)，且1/(1+k0/u)=u/(u+k0)。
+\item 因此1=[ln(exp[S(φ0+βtR)]+k0)−ln(exp(Sφ0)+k0)]/(Sβt0)，指数积分是严格解析的。
+\item 反解tR=\{ln[(exp(Sφ0)+k0)exp(Sβt0)−k0]−Sφ0\}/(Sβ)，对β>0取唯一正根；积分被积函数为正，故根唯一。
+\item 当β=0.04000 min\textasciicircum{}−1时，tR=9.37354533500 min，φR=0.574941813400，kR=1.49251929295。
+\item 当β=0.06000 min\textasciicircum{}−1时，tR=7.32500091397 min，φR=0.639500054838，kR=0.890474832641；更快梯度并非简单把tR按β反比缩放。
+\item 等度φ0时k(φ0)=exp(5−8×0.2)=29.9641000474，故tR,iso=t0[1+k(φ0)]=46.4461500711 min；β=0.04000时节约37.0726047361 min。
+\item 两次梯度在洗脱时φ均处于0与1之间；β→0时对解析式取极限，恢复等度tR=t0(1+k(φ0))。
+\item 独立用Simpson求积对迁移积分作数值二分求根，再复算kR、等度极限和时间差；真实HPLC柱内梯度传播不满足空间均匀假设，实验预测需使用延迟与梯度传播模型。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+慢梯度保留时间 = 9.37354534 min；慢梯度洗脱溶剂体积分数 = 0.574941813 fraction；慢梯度瞬时保留因子 = 1.49251929 dimensionless；快梯度保留时间 = 7.32500091 min；快梯度洗脱溶剂体积分数 = 0.639500055 fraction；快梯度瞬时保留因子 = 0.890474833 dimensionless；等度保留时间 = 46.4461501 min；慢梯度节约时间 = 37.0726047 min\par
+\noindent\textbf{模型前提：}
+理想全柱同步梯度、线性溶剂强度保留、恒定流速和无弥散；与既往等度GC保留指数不同，但色谱保留主题相近，需跨辑人工核对。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A113 · 指数修饰高斯色谱峰的矩反卷积、尾峰偏度与双峰矩分离度}
+\noindent\textbf{题目}\par
+某分析物在理想线性检测器中的洗脱时间X=G+Y，G服从均值μ、标准差σ的高斯分布，Y独立服从平均停留时间τ的指数分布，构成指数修饰高斯（EMG）峰。第一峰经基线校正并归一后实测均值m1=8.7500 min、方差v1=0.152500 min²、偏度γ1=0.524741311200；第二峰已知未拖尾高斯参数μ2=11.000 min、σ2=0.4000 min、指数尾时间τ2=0.1000 min。求第一峰τ1、σ1、μ1，复核其均值、方差和偏度，求第二峰的三个矩量，并定义矩分离指标Rm=(m2−m1)/[2(√v1+√v2)]求其值。说明EMG的峰顶位置不等于均值、Rm不是以基线峰宽定义的传统Rs，且须核查τ>0与σ²>0；要求以指数停留时间的积分矩进行独立复核。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 把色谱峰视为独立随机时间G+Y的卷积；指数尾部Y的矩母函数为(1−τs)⁻¹，高斯部分为exp(μs+σ²s²/2)，相乘得到EMG的累积量母函数。
+\item 前三个累积量分别为κ1=μ+τ、κ2=σ²+τ²、κ3=2τ³，因此偏度γ=2τ³/(σ²+τ²)\textasciicircum{}(3/2)。偏度是无量纲，不是第三中心矩。
+\item 由第一峰γ1与v1反演τ1=[γ1 v1\textasciicircum{}(3/2)/2]\textasciicircum{}(1/3)=0.250000 min，取正根，因为指数平均停留时间必须正。
+\item 由σ1²=v1−τ1²=0.0900000 min²得σ1=0.300000 min；由μ1=m1−τ1=8.500000 min。σ1²>0保证反卷积具有物理意义。
+\item 回代第一峰m1=8.750000 min、v1=0.152500 min²、γ1=0.524741311200；不可用高斯公式将整个观测方差当成σ1²。
+\item 第二峰的m2=μ2+τ2=11.100000 min，v2=σ2²+τ2²=0.170000 min²，γ2=2τ2³/v2\textasciicircum{}(3/2)=0.0285336029455。
+\item 按题设的矩分离指标，Rm=(11.1−8.75)/\{2[√0.1525+√0.17]\}=1.46358528860；因为峰形不对称，不能直接把此数解释为基线分离或传统色谱Rs。
+\item 独立数值检查可对指数分布密度exp(−y/τ)/τ在y≥0作Simpson积分，利用条件高斯的中心矩计算G+Y的前3个中心矩，验证两峰偏度和方差，并检查归一概率、时间量纲和尾部正性。
+\item 该模型忽略检测器非线性、多个吸附位点、基线漂移和实际峰积分窗截断；它是卷积矩反演而非前题的梯度迁移积分，仍需与旧辑色谱题作核心模型人工比对。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+第一峰指数尾时间 = 0.25 min；第一峰高斯标准差 = 0.3 min；第一峰高斯均值 = 8.5 min；第一峰实测均值 = 8.75 min；第一峰实测方差 = 0.1525 min\textasciicircum{}2；第一峰偏度 = 0.524741311 dimensionless；第二峰均值 = 11.1 min；第二峰方差 = 0.17 min\textasciicircum{}2；第二峰偏度 = 0.0285336029 dimensionless；矩分离指标 = 1.46358529 dimensionless\par
+\noindent\textbf{模型前提：}
+独立高斯输运时间和指数滞留时间、线性检测器、归一无限时间窗；与v10 A112梯度迁移积分仅同属色谱领域，方程结构不同，跨辑仍待人工复核。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -8629,6 +8717,50 @@ C2比例 = 0.229668077 fraction；P总生成速率常数 = 1.1249884 s\textascii
 仅双自旋1/2与各向同性J；v9 O80的Karplus角度耦合关系不同，但均涉及NMR J，须专家确认核心模型差异。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O109 · 双配体手性催化剂的异手性络合与产物非线性对映选择性}
+\noindent\textbf{题目}\par
+某假想有机不对称催化反应采用ML2型双配体催化剂，配体R/S摩尔分数分别为fR=(1+eeL)/2、fS=(1−eeL)/2，eeL=0.4000。金属–配体络合迅速平衡，且配体大量过量使fR、fS恒定；RR、SS、RS配合物的统计权重为fR²、fS²、2ρfRfS，其中异手性配合物偏好系数ρ=3.000。RR和SS以相同伪零级速率常数k=0.02000 s\textasciicircum{}−1分别只产生R和S产物；RS的总催化活性为αk，α=0.2000，且产生等量R/S产物。总催化剂浓度CT=1.000 mmol/L，反应600.0 s，初始底物0.1000 mol/L且假定底物浓度足够高使各催化速率恒定。求三种催化剂分数、两种产物浓度、总产物浓度、产物ee及相对于CTkt的有效周转活性；检验配体、催化剂与产物守恒，并解释何以产物ee可不同于配体ee。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由eeL=fR−fS且fR+fS=1得fR=0.7000、fS=0.3000，注意RS有两种配体排列。
+\item 统计权重wRR=fR²=0.4900、wSS=fS²=0.0900、wRS=2ρfRfS=1.2600；配分归一因子Z=1.8400。
+\item 归一得到cRR=wRR/Z=0.266304347826、cSS=wSS/Z=0.0489130434783、cRS=wRS/Z=0.684782608696，三者和为1。
+\item RS虽占主要络合态，却仅有α=0.2的相对活性，并对R/S各贡献αk[RS]/2；因此不能把cRR−cSS直接作为产物ee。
+\item R产物生成速率vR=CTk(cRR+αcRS/2)，积分600 s得[R]=0.00401739130435 mol/L。
+\item S产物速率vS=CTk(cSS+αcRS/2)，得[S]=0.00140869565217 mol/L，总产物0.00542608695652 mol/L，低于初始0.1000 mol/L，恒速假设自洽于题设近似。
+\item 产物eeP=([R]−[S])/([R]+[S])=0.480769230769，大于配体eeL=0.4000；这种正非线性效应源于络合统计和异手性物种活性受抑，并非凭空假定放大。
+\item 归一有效活性([R]+[S])/(CTkt)=0.452173913043；若ρ=α=1，则所有络合态活性相同，eeP=eeL，给出无非线性对照极限。
+\item 独立按RR、SS、RS逐项枚举各催化剂产物速率，复核催化剂分数和、产物浓度和、ee界限及底物余额；真实配体交换、不同络合计量和动力学失活需另行实验审查。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+RR催化剂分数 = 0.266304348 fraction；SS催化剂分数 = 0.0489130435 fraction；RS催化剂分数 = 0.684782609 fraction；R产物浓度 = 0.0040173913 mol/L；S产物浓度 = 0.00140869565 mol/L；总产物浓度 = 0.00542608696 mol/L；产物对映体过量 = 0.480769231 fraction；有效相对催化活性 = 0.452173913 relative\par
+\noindent\textbf{模型前提：}
+配体大量过量、三种ML2配合物快速平衡且统计权重如题设，RS等量生成两对映体，产物速率恒定；与既往构象加权选择性在概率加权层面相似，但存在双配体异手性络合及催化活性耦合，仍需人工核心模型审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O110 · 综合题}
+\noindent\textbf{题目}\par
+某假想ω-卤代醇盐A在恒温溶液中有三个互斥、不可逆的消耗通道：分子内SN2关环A→C（kcyc=0.01200 s⁻¹），溶剂解A→H（kh=0.003000 s⁻¹），以及外部亲核试剂Nu参与的SN2取代A+Nu→E（k2=0.03500 L mol⁻¹ s⁻¹）。A初浓度A0=0.01000 mol/L；Nu处于独立缓冲储库，因预设的稀释/降解过程按[Nu](t)=0.4000 exp(−0.01000t) mol/L变化，假定A的消耗对Nu储库浓度可忽略，且各产物不再反应。求t=120.0 s时A、C、E、H的浓度，C/E、C占全部产物的分数，以及t=0和120 s瞬时外部取代通道占总消耗速率的分数；证明物料守恒并解释为何不能用常数[Nu]的简单分支比例替代时间积分。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由于分子内关环是一级而外部SN2是二级，A的瞬时损失速率为−d[A]/dt=[kcyc+kh+k2[Nu](t)][A]；Nu由外部储库规定而非反应计量闭合，故本题为时变伪一级竞争。
+\item 令kd=0.01000 s⁻¹、N0=0.4000 mol/L，积分得[A](t)=A0 exp\{−(kcyc+kh)t−(k2N0/kd)[1−exp(−kdt)]\}，指数中每一项都无量纲。
+\item 产物的微分方程为dC/dt=kcyc[A]、dE/dt=k2N0exp(−kdt)[A]、dH/dt=kh[A]，初值均为零；一般不存在把三个通道用固定分数乘以总转化率的简化。
+\item 在120 s时，由指数式得[A]=0.000621423161062 mol/L，正且小于A0；底物已转化约93.79\%。
+\item 对三个产物速率分别积分0至120 s，得到[C]=0.00444821250819、[E]=0.00381831120369、[H]=0.00111205312705 mol/L。
+\item 由此C/E=1.16496856094，C/(C+E+H)=0.474295043330；分子内关环虽非起始时最快通道，因Nu衰减仍可累计超过外部取代。
+\item 瞬时外部取代占比fE(t)=k2N0exp(−kdt)/[kcyc+kh+k2N0exp(−kdt)]，t=0时为0.482758620690，t=120 s时降为0.219429704627。
+\item 核对[A]+[C]+[E]+[H]=0.0100000000000 mol/L；各物种浓度非负，且kcyc/kh=4使C/H=4，对积分和动力学编码均构成额外独立检验。
+\item 使用四变量耦合常微分方程的四阶Runge–Kutta数值积分独立复核全部答案，并将其与解析存活率及积分结果比较；真实SN2的溶剂效应、反离子缔合与环尺寸影响未显式建模，须化学专家审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+120s未反应底物 = 0.000621423161 mol/L；120s环化产物 = 0.00444821251 mol/L；120s外部取代产物 = 0.0038183112 mol/L；120s溶剂解产物 = 0.00111205313 mol/L；环化与外部取代比 = 1.16496856 ratio；环化占总产物分数 = 0.474295043 fraction；起始外部取代瞬时分支 = 0.482758621 fraction；120s外部取代瞬时分支 = 0.219429705 fraction\par
+\noindent\textbf{模型前提：}
+指定时变外部亲核剂储库、各通道不可逆且速率常数固定、产物不再转化；与v10 O101动态拆分同为多通道ODE，但驱动为外部时变二级SN2与一级关环竞争，核心独立性待人工审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第10辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -8863,6 +8995,50 @@ C2比例 = 0.229668077 fraction；P总生成速率常数 = 1.1249884 s\textascii
 Debye长度 = 3.04205736 nm；表面电荷密度 = -0.0133141115 C/m\textasciicircum{}2；微分电容 = 0.345454456 F/m\textasciicircum{}2；表面阳离子浓度 = 70.0123964 mol/m\textasciicircum{}3；表面阴离子浓度 = 1.42831849 mol/m\textasciicircum{}3；局部渗透压差 = 127519.322 Pa；充电功面密度 = 0.0003088595 J/m\textasciicircum{}2\par
 \noindent\textbf{模型前提：}
 平板点离子理想1:1电解质、纯扩散层、无特异吸附；与Donnan电位问题仅主题相邻，方程级差异仍待人工复核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P109 · Brusselator开体系化学振荡的Hopf阈值、雅可比矩阵与稳定性}
+\noindent\textbf{题目}\par
+考虑理想化开体系自催化反应模型Brusselator，A和B由恒定化学势储库维持，浓度与时间均已无量纲化，反应网络为A→X、B+X→Y+D、2X+Y→3X、X→E，质量作用动力学为dx/dt=A−(B+1)x+x²y、dy/dt=Bx−x²y。取A=1.500，先考察B=3.400，再将B降至2.800。求两组唯一正稳态、B=3.400的雅可比迹与行列式及线性特征值实部和正虚部、Hopf临界Bc与临界小振幅周期、B=2.800的迹与特征值实部；判别两组稳态的局部稳定性，说明不能仅凭线性化宣称全局极限环或实验化学反应必然振荡，并核对正浓度与稳态物料通量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将dx/dt+dy/dt=A−x，稳态必须有x*=A；代回dy/dt=0得y*=B/A，故A、B均正时唯一正稳态。
+\item B=3.400时(x*,y*)=(1.500,2.26666666667)；各反应通量A、Bx*、x*²y*、x*满足储库与中间体净生成率均为零。
+\item 雅可比矩阵J=[[−(B+1)+2xy,x²],[B−2xy,−x²]]，在稳态简化为[[B−1,A²],[−B,−A²]]。
+\item 特征多项式λ²−tr(J)λ+det(J)=0，其中tr(J)=B−1−A²、det(J)=A²>0。
+\item B=3.400时tr(J)=0.150000、det(J)=2.250000；特征值为0.075000±1.49812382666 i，正实部表示该稳态局部线性不稳定。
+\item 迹过零的阈值Bc=1+A²=3.250；在Bc处特征值为±iA，临界线性角频率ωc=1.500、对应周期Tc=2π/A=4.18879020479个无量纲时间单位。
+\item 当B=2.800时稳态(1.500,1.86666666667)，迹−0.450000、行列式仍为2.250000，特征值实部−0.225000，虚部非零，因此局部稳定螺旋。
+\item 仅由迹符号和正行列式能判别局部稳定性；Hopf分岔是否超临界、周期轨道振幅与全局吸引域需非线性分析，不能把线性周期当作有限振幅极限环周期。
+\item 独立以中心差分计算两组雅可比矩阵，再验证迹、行列式和特征值；以正稳态代回两条微分方程检验净通量为零。该理想化模型不代表已指定某种真实化学振荡实验。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+B3.4稳态X = 1.5 dimensionless；B3.4稳态Y = 2.26666667 dimensionless；B3.4雅可比迹 = 0.15 dimensionless/time；B3.4雅可比行列式 = 2.25 1/time\textasciicircum{}2；B3.4特征值实部 = 0.075 1/time；B3.4特征值正虚部 = 1.49812383 1/time；Hopf临界B = 3.25 dimensionless；临界线性周期 = 4.1887902 scaled time；B2.8雅可比迹 = -0.45 dimensionless/time；B2.8特征值实部 = -0.225 1/time\par
+\noindent\textbf{模型前提：}
+A、B由理想储库固定、质量作用动力学且已无量纲化；仅作局部线性稳定性判断，不声称真实反应可振荡或存在经验证的全局极限环。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P110 · 球形多孔催化颗粒的Thiele模数、径向浓度场与有效因子}
+\noindent\textbf{题目}\par
+某等温球形多孔催化剂颗粒半径Rp=0.5000 mm，内部反应物A有效扩散系数De=2.000×10⁻⁹ m²/s，均匀一阶体积反应速率rA=k cA（k=0.02500 s⁻¹），外表面浓度cs=1.200 mol/m³。忽略外部膜传质、反应热、孔径变化和对流；稳态径向扩散满足De r⁻² d(r² dc/dr)/dr=k c，中心dc/dr=0，表面c(Rp)=cs。求Thiele模数φ、颗粒有效因子η、中心浓度、外表面向内扩散通量大小及单颗粒消耗速率。保持De、k、cs不变而将颗粒半径加倍，求新φ、新η与新表面通量。必须验证表面通量乘面积等于体积反应积分，并说明增大颗粒并不使η保持不变。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 球坐标稳态扩散反应方程为De r⁻²d(r²dc/dr)/dr=k c；中心的正则性排除发散的cosh(r/ℓ)/r解，其中扩散反应长度ℓ=√(De/k)。
+\item 令x=r/Rp、φ=Rp√(k/De)，解得c(r)/cs=sinh(φx)/[x sinhφ]，x→0时用极限得到c(0)/cs=φ/sinhφ。
+\item 代入Rp=5.000×10⁻⁴ m、k=0.02500 s⁻¹、De=2.000×10⁻⁹ m²/s，得φ=1.76776695297，为无量纲。
+\item 定义η=∫V k c dV/(k cs Vp)=3∫0¹[c(x)/cs]x²dx；解析积分得η=3(φ cothφ−1)/φ²=0.838940792498。
+\item 中心浓度c(0)=cs φ/sinhφ=0.746018572691 mol/m³，介于0与cs之间；径向浓度向外增加，符合颗粒内消耗物质的方向。
+\item 外表面向内通量的正大小J=De(dc/dr)|Rp=η k cs Rp/3=4.19470396249×10⁻⁶ mol m⁻² s⁻¹，符号采用向内通量的正大小，不能误写为负消耗。
+\item 单颗粒消耗速率Q=4πRp²J=η k cs(4πRp³/3)=1.31780511525×10⁻¹¹ mol/s；此式直接核验扩散通量与体积反应守恒。
+\item 半径加倍后φ′=3.53553390593、η′=0.609970716160、J′=6.09970716160×10⁻⁶ mol m⁻² s⁻¹。总面积和体积同时变化，不能仅用J增大判断效率提高。
+\item 独立以无量纲径向方程u″+2u′/x=φ²u、u(0)=1、u′(0)=0进行四阶Runge–Kutta数值积分，归一至u(1)=1并由表面导数求通量和η；检验η∈(0,1)、中心浓度正及Q=4πRp²J。真实非等温和孔内多组分扩散需专家复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+原颗粒Thiele模数 = 1.76776695 dimensionless；原颗粒有效因子 = 0.838940792 fraction；原颗粒中心浓度 = 0.746018573 mol/m\textasciicircum{}3；原颗粒表面通量 = 4.19470396e-06 mol/m\textasciicircum{}2/s；原颗粒单颗粒消耗率 = 1.31780512e-11 mol/s；半径加倍Thiele模数 = 3.53553391 dimensionless；半径加倍有效因子 = 0.609970716 fraction；半径加倍表面通量 = 6.09970716e-06 mol/m\textasciicircum{}2/s\par
+\noindent\textbf{模型前提：}
+等温均匀球体、Fick有效扩散、外部膜阻忽略、一阶体积反应；与v10 P104 Maxwell–Stefan多组分通量模型主题相邻但本题为球径向反应扩散边值问题，人工模型去重待办。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
