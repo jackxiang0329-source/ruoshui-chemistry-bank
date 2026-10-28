@@ -59,7 +59,7 @@ for(const p of all){
  case 'UC-ADV4-A14':eq(F*(2*a[0]+a[1]),F*(2*.00008+.00005),tag);eq(F*(a[0]+2*a[1]),F*(.00008+2*.00005),tag);eq(a[2],a[0]/.1,tag);break;
  case 'UC-ADV4-A15':eq(a[0]*10+a[1],1.2,tag);eq(a[0]*30+a[1],4.1,tag);eq(a[0]*a[2]+a[1],5.25,tag);eq(a[3],5*a[2],tag);break;
  case 'UC-ADV4-A16':eq(a[0],.0025,tag);eq(a[1],.75*a[0],tag);eq(a[2],.25*a[0],tag);eq(a[3],.1*a[1],tag);break;
- case 'UC-ADV4-A17':eq(a[0],1/(1+10**(-6)/1e-5),tag);eq(a[1],4*a[0],tag);eq(.1*a[2]+.05*a[3],.0002,tag);eq(a[3],a[1]*a[2],tag);break;
+ case 'UC-ADV4-A17':eq(a[0],1/(1+1e-5/10**(-6)),tag);eq(a[1],4*a[0],tag);eq(.1*a[2]+.05*a[3],.0002,tag);eq(a[3],a[1]*a[2],tag);break;
  case 'UC-ADV4-A18':eq(a[0]*.005,1e-10,tag);eq(a[1],1000*.01*a[0],tag);eq(a[2],a[0]+a[1],tag);break;
  case 'UC-ADV4-A19':eq(a[0]+a[1],.01,tag);eq(.2*a[0]+.7*a[1],.004,tag);eq(a[2],a[0]/.01,tag);break;
  case 'UC-ADV4-O07':eq(a[0]/a[1],3.5,tag);eq(a[0]+a[1],1/12,tag);eq(a[2],.2*a[0]/(a[0]+a[1]),tag);break;
