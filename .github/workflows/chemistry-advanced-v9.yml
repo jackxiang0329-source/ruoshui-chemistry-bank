@@ -1,0 +1,26 @@
+name: Chemistry ninth-series 100-item independent QA
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'editorial/advanced_integrated_v9/**'
+      - 'scripts/check-advanced-authored-v9.mjs'
+      - '.github/workflows/chemistry-advanced-v9.yml'
+  pull_request:
+    paths:
+      - 'editorial/advanced_integrated_v9/**'
+      - 'scripts/check-advanced-authored-v9.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Independently recompute 100 ninth-series chemistry answers
+        run: node scripts/check-advanced-authored-v9.mjs
