@@ -176,3 +176,10 @@
 - 单独的 [XeLaTeX 中文 PDF 工作流](.github/workflows/chemistry-review-pdf.yml)会运行两次编译、检查 PDF 有效性并将产物上传为 GitHub Actions 工件；仅当成功编译并提交后才可在 [PDF 档案路径](external_sources/openstax_chemistry/reports/chemistry_source_science_audit.pdf)直接下载。
 - **重要：不是公开发行的教材译本。**本册只含来源章节/序号、作者独立的中文计算方法、数值和错误标签，不复制教材原题全文；42 道条目中 34 道有逐步推导，8 道为计算摘要；人工专家审核、逐题版权确认、正式组卷批准均为 0。
 - 若编译失败，以 GitHub Actions 结果为准，不得因 .tex 文件存在便宣称已有可用 PDF。PDF 和 TeX 始终位于研究隔离区而非 `release/`。
+
+## 2026-10-28：McMaster 量子化学课程来源答案核验（21 道）
+
+- 对固定来源的 `PaulWAyers/IntroQChemProblems` CHEM 3PA3 学生本与答案本重新交叉核验，依据两个 Notebook 的精确 Git blob SHA 和原始单元索引，形成 [21 道题来源差异和独立物理证明 JSON](harvest/import_reports/introqchem_2021_key_reconciliation.json) 与 [中文科学审核清单](harvest/import_reports/introqchem_2021_key_reconciliation.md)。
+- 先前 **13 项**来源答案争议中，**2 项经原文确认属误报**：复指数共轭参考答案已允许复数参数；电子物质波题的原答案只选电子晶体散射，不把氢光谱选为直接证据。另将 532 nm、100 mW 激光压力题的 `kg·m/s` 单位错误准确归为**学生题本题干要求**，而不是答案键计算错误。当前剩余 **11 项**来源问题，其中并非全是科学性错误。
+- [12 页中文 XeLaTeX 量子化学源答案核验 PDF](harvest/import_reports/quantum_source_reconciliation_zh/quantum_source_key_reconciliation.pdf) 与 [对应 TeX](harvest/import_reports/quantum_source_reconciliation_zh/quantum_source_key_reconciliation.tex) 由 [版本锁定编译工作流](.github/workflows/chemistry-review-pdf.yml) 实际生成；数学附录包含辐射压力单位、复数模非负性、动能与动量本征态反例、共轭薛定谔方程与最小氢原子吸收频率。
+- 以上 **21 道均属于主候选库中已有的课程题**，不是另加 21 道；其原始仓库虽标 CC0，但含第三方权利例外，逐题许可仍待确认。当前来源版权批准、人工专家审批和正式可出卷数量继续为 **0**。
