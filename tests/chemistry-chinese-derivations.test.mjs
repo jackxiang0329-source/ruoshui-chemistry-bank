@@ -38,6 +38,9 @@ test('34 unique substantial source-linked Chinese derivations stay under quarant
  assert.match(md,/原题化学式疑点/);
  assert.match(md,/参考答案疑点/);
  assert.match(md,/原教材未附参考答案/);
+ const gas=result.items.find(x=>x.tag==='three_gas_samples_masses');
+ assert.ok(gas&&gas.computed_answers[0].value>0.07&&gas.computed_answers[0].value<0.08);
+ assert.match(gas.independent_solution_steps_zh.join(''),/7\.24×10⁻²/);
 });
 test('rights status, source url and scientific values cannot silently change',()=>{
  assert.throws(()=>buildChineseDerivations({...good,publishable:1},pin),/quarantine/);
