@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "3cfd8acfd21742de640c537866dd6e5ed3d7757d4fdad6c33b9fa4cb61f723a2",
+  "subject": "analytical",
+  "topic": "buret_reading_uncertainty",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "滴定管初读数和终读数由相互独立且标准不确定度均为 0.020 mL 的测量得到，滴定体积为 20.00 mL。忽略其他误差，求交付体积的合成标准不确定度及相对标准不确定度。",
+  "answer": "u(V)=√(0.020²+0.020²)=0.0283 mL；uᵣ(V)=0.0283/20.00=0.00141，约 0.141%。",
+  "explanation": "交付体积为两次独立读数之差，随机标准不确定度按方差之和传播，而不是直接相加；此题没有涉及系统误差。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}

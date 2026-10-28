@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "generated": 120,
-  "newly_added": 120,
-  "already_present": 0,
+  "newly_added": 0,
+  "already_present": 120,
   "method_families": 10,
   "variants_per_family": 12,
   "by_subject": {

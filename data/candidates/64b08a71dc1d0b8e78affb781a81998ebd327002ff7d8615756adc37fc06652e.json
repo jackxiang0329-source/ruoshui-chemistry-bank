@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "64b08a71dc1d0b8e78affb781a81998ebd327002ff7d8615756adc37fc06652e",
+  "subject": "analytical",
+  "topic": "spectrophotometric_path_length_conversion",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "某物质在 500 nm 的摩尔吸光系数为 5.00×10³ L/(mol·cm)，实测 A=0.250，所用微量比色皿光程只有 1.00 mm。假设线性且空白已扣除，计算浓度并指出把 1 mm 误当 1 cm 的后果。",
+  "answer": "c=0.250/(5000×0.100)=5.00×10⁻⁴ mol/L；误取 1 cm 会把浓度低估 10 倍。",
+  "explanation": "朗伯—比尔定律 A=εlc 使用 cm 表示光程；1.00 mm=0.100 cm，因此必须先做长度单位换算。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}

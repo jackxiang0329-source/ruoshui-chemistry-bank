@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "0ab7713af0c9228ca7ecbb3b011ba7b5e2b1b9f7a7e4559ef53d8acfe3b0a383",
+  "subject": "physical",
+  "topic": "parallel_first_order_branching",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "某反应物 A 同时发生两条互不干扰的平行一级反应 A→B 与 A→C，速率常数 kB=0.030 min⁻¹、kC=0.020 min⁻¹，两个产物均稳定且不再反应。完全转化时 B、C 的产物摩尔分率各为多少？",
+  "answer": "B 的分率为 kB/(kB+kC)=0.60，C 的分率为 0.40。",
+  "explanation": "任意时刻生成 B 与 C 的速率分别为 kB[A]、kC[A]，二者比恒为 3:2；积分到 A 完全消耗后总产物量也按相同比例分配。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}

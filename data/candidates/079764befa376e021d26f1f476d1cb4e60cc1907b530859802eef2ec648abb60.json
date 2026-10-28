@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "079764befa376e021d26f1f476d1cb4e60cc1907b530859802eef2ec648abb60",
+  "subject": "inorganic",
+  "topic": "square_planar_pt_geometric_isomerism",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "将 [Pt(NH₃)₂Cl₂] 视为典型平方平面 Pt(II) 配合物。忽略其他配位方式，仅问配位平面上两只 Cl 的相对位置：有几种几何异构体？逐一描述。",
+  "answer": "共有 2 种：cis-[Pt(NH₃)₂Cl₂]，两只 Cl 相邻；trans-[Pt(NH₃)₂Cl₂]，两只 Cl 相对。",
+  "explanation": "在平方平面四个配位位点上，两只相同 Cl 占据相邻位点或对位点形成两类不等价排布；通过平面内旋转不能将顺式变为反式。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}

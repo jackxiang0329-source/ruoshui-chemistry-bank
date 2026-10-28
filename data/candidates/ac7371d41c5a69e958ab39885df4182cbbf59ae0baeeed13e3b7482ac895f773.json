@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "ac7371d41c5a69e958ab39885df4182cbbf59ae0baeeed13e3b7482ac895f773",
+  "subject": "organic",
+  "topic": "pcc_primary_alcohol_partial_oxidation",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "1-丁醇在无水惰性溶剂、常规 PCC 氧化条件下，假设反应按通常选择性完成。写出主要有机产物，并解释为何不按此条件直接断言得到丁酸。",
+  "answer": "主要产物为丁醛 CH₃CH₂CH₂CHO；不能把常规无水 PCC 氧化等同于强氧化剂的深度氧化。",
+  "explanation": "伯醇氧化首先形成醛，常规无水 PCC 条件限制了经水合醛继续过氧化为羧酸的路径；实际副反应及收率仍需具体实验条件。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}

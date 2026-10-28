@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "34babb0cea0bf6e458588e0d4c5368efc0fd16c0b417bd219b7767f4c5610c4a",
+  "subject": "physical",
+  "topic": "arrhenius_plot_activation_energy",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "假设反应符合 k=A exp(−Ea/RT)，且在研究温区内 A、Ea 近似恒定。以 ln k 为纵轴、1/T 为横轴作图，斜率和截距为何？如果 Ea>0，温度升高 k 如何变化？",
+  "answer": "斜率 m=−Ea/R，截距 b=ln A；Ea>0 时随 T 增大，k 增大。",
+  "explanation": "取自然对数得 ln k=lnA−(Ea/R)(1/T)，斜率为负。反应速率常数的温度效应并不意味着温度翻倍、k 必定翻倍。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}

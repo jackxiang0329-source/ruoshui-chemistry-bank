@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "f9781bb6b474b2ef1ac2420d938f29532c3b83738901223c5cfd9bfdd258d8fa",
+  "subject": "organic",
+  "topic": "crossed_aldol_selectivity",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "在适当碱催化和控制的交叉羟醛加成中，以乙醛 CH₃CHO 为烯醇盐来源、苯甲醛 PhCHO 为受体。苯甲醛无 α-H。请写出加成后的 β-羟基醛骨架，并说明若进一步脱水会形成什么共轭骨架。",
+  "answer": "羟醛加成产物为 Ph—CH(OH)—CH₂—CHO；脱水可给 Ph—CH=CH—CHO（肉桂醛骨架）。",
+  "explanation": "乙醛去 α-H 后其 α-碳进攻苯甲醛羰基碳，质子化生成 β-羟基醛；后续消除 H₂O 后形成与醛基共轭的 C=C。控制条件旨在抑制乙醛自身缩合。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}

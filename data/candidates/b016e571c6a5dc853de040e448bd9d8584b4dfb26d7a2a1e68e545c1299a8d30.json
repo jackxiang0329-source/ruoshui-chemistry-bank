@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "b016e571c6a5dc853de040e448bd9d8584b4dfb26d7a2a1e68e545c1299a8d30",
+  "subject": "physical",
+  "topic": "reaction_quotient_vs_equilibrium",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "某反应在给定 T、P 下标准状态一致，热力学反应商 Q=0.10，平衡常数 K=10。写出 ΔrG 与 Q、K 的关系，判定按当前反应式的正向过程是否自发。",
+  "answer": "ΔrG=RT ln(Q/K)=RT ln(0.01)<0，因此按所写反应方向的微小正向推进在当前状态下有热力学驱动力。",
+  "explanation": "由 ΔrG=ΔrG°+RT lnQ 和 ΔrG°=−RT lnK 合并得到该式；它说明热力学趋向，不保证反应在有限时间内快速发生。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}

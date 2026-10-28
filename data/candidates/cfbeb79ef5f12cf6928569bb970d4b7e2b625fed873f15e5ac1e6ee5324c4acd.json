@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "cfbeb79ef5f12cf6928569bb970d4b7e2b625fed873f15e5ac1e6ee5324c4acd",
+  "subject": "physical",
+  "topic": "first_order_half_life",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "某单一反应服从一级速率律 −dc/dt=kc，k=0.0200 min⁻¹。求半衰期，并说明改变初浓度但保持同样温度与机制时，半衰期如何变化。",
+  "answer": "t₁/₂=ln2/k=34.66 min；在一级速率律和相同 k 的前提下半衰期与初浓度无关。",
+  "explanation": "积分得 c/c₀=e^(−kt)；令 c/c₀=1/2 可解出 t₁/₂。若反应实际偏离一级动力学，结论不可直接沿用。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}

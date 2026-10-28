@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "ce49758b8c6cdb7776c2841ff23feae9d8fe8c52db181a993e5977471e039eba",
+  "subject": "inorganic",
+  "topic": "octahedral_low_spin_d6",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "某八面体 Fe²⁺ 配合物具有足够强的配体场，电子优先在 t₂g 中成对。求其自旋态、未成对电子数及不计成对能的 CFSE。",
+  "answer": "低自旋 d⁶：t₂g⁶e_g⁰，未成对电子 0 个，S=0，CFSE=−2.4Δo。",
+  "explanation": "Fe²⁺ 的 d 电子数是 6；强场下六电子填满低能的三个 t₂g 轨道，各轨道成对，因而为抗磁性。计算 CFSE=6(−0.4Δo)。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "c764ded34c9933fd5e465e7ce3f265205432ed562fcbf44e8a7ac7972a4f8958",
+  "subject": "analytical",
+  "topic": "divalent_ion_selective_nernst_slope",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "25 °C 的理想二价阳离子选择电极，按 E=常数+(RT/2F)ln a_M²⁺ 工作。若离子活度提高 100 倍，电位应如何变化？取 2.303RT/F=59.16 mV。",
+  "answer": "ΔE=(59.16/2)log₁₀(100)=+59.16 mV。",
+  "explanation": "二价阳离子每十倍活度对应约 +29.58 mV；提高两个十倍即加 59.16 mV。符号依据题设电极的正号 Nernst 约定。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}

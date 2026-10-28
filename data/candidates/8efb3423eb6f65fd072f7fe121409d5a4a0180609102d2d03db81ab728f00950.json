@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "8efb3423eb6f65fd072f7fe121409d5a4a0180609102d2d03db81ab728f00950",
+  "subject": "organic",
+  "topic": "base_promoted_ester_saponification",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "乙酸甲酯 CH₃COOCH₃ 与足量 NaOH 水溶液充分反应，最后不做酸化后处理。写出主要有机产物与离子形态，并解释为何不能直接把产物写为乙酸。",
+  "answer": "主要得到 CH₃COO⁻Na⁺（乙酸钠）和 CH₃OH（甲醇）；未酸化时不能把羧酸盐写成游离乙酸。",
+  "explanation": "碱促进酯的亲核酰基取代，生成的羧酸在碱性条件下去质子化，羧酸盐不易逆向发生简单酯化，因而使该皂化过程在实际条件下趋向完成。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}

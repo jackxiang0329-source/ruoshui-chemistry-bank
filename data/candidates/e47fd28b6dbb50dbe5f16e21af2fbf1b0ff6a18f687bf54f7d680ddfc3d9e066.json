@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "e47fd28b6dbb50dbe5f16e21af2fbf1b0ff6a18f687bf54f7d680ddfc3d9e066",
+  "subject": "physical",
+  "topic": "reversible_adiabatic_relation",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "理想气体在定热容比 γ>1 的条件下作可逆绝热膨胀，体积从 V₁ 增大到 V₂。写出 T、V 的关系，并判断末温与初温的大小，解释绝热与等温的差别。",
+  "answer": "TV^(γ−1)=常数，T₂=T₁(V₁/V₂)^(γ−1)<T₁。",
+  "explanation": "可逆绝热过程 δq=0，气体对外做功导致内能降低；理想气体内能仅随温度变化。可逆绝热不等于温度保持不变。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}

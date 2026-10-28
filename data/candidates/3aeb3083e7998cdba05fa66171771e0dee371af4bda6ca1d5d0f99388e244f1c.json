@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "3aeb3083e7998cdba05fa66171771e0dee371af4bda6ca1d5d0f99388e244f1c",
+  "subject": "inorganic",
+  "topic": "tetraammine_copper_charge",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "写出四氨合铜(II)离子 [Cu(NH₃)₄] 的正确电荷，并确定 Cu 的氧化态、配位数以及 NH₃ 在该配位键形成中的电子对角色。",
+  "answer": "[Cu(NH₃)₄]²⁺，Cu 氧化态为 +2，配位数为 4；NH₃ 通过 N 的孤对电子作单齿中性配体。",
+  "explanation": "NH₃ 每个净电荷为零，四个 N 原子各提供一个配位原子与金属形成配位键；因此络离子总电荷保持 Cu²⁺ 的 +2。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}

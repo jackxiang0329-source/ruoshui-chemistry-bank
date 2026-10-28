@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "79970b16730ea1f43da3b4de05319f40289e4e3a51072f3f4fea98907fc7704e",
+  "subject": "analytical",
+  "topic": "analytical_spike_recovery",
+  "question_type": "original_multi_step_chemistry_reasoning",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "样品某分析物经相同流程测得 1.00 mg；另取等量样品加入 2.00 mg 标准物，重新完整处理后测得 2.88 mg。假设原样均匀，求加标回收率，并说明它不直接证明哪一类误差已消失。",
+  "answer": "加标回收率=(2.88−1.00)/2.00×100%=94.0%；不能据此断言全部系统误差或选择性干扰已消除。",
+  "explanation": "回收率使用加标组与未加标组结果之差，仅反映在当前基质与实验条件下新增分析物的响应；仍可能存在共存组分干扰和校准偏差。",
+  "conditions_and_limitations_in_prompt": true,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-reasoning-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently authored Chinese reasoning question and worked model explanation; not a past paper or copied university assessment."
+  }
+}
