@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "generated": 3072,
+  "distinct_topic_families": 48,
+  "numerical_variants_per_family": 64,
+  "two_answer_cases": 3072,
+  "independent_inverse_checks": 6144,
+  "stored_source_replays": 3072,
+  "by_subject": {
+    "inorganic": 768,
+    "analytical": 768,
+    "organic": 768,
+    "physical": 768
+  },
+  "source_license": "CC0-1.0",
+  "copied_external_exam_questions": 0,
+  "human_expert_approved": 0,
+  "publishable": false,
+  "limitation": "3072 parameter variants in 48 authored topics; two numerical identities per variant. Does not prove empirical chemical correctness, semantic uniqueness, teaching quality or individual expert approval."
+}

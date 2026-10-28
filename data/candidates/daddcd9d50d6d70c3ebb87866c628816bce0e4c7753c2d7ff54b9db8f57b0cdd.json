@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "daddcd9d50d6d70c3ebb87866c628816bce0e4c7753c2d7ff54b9db8f57b0cdd",
+  "subject": "inorganic",
+  "topic": "carbonate_co2_amount_and_mass_case08",
+  "topic_family": "carbonate_co2_amount_and_mass",
+  "parameter_case": 8,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_dual_result_quantitative_with_conditions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某假想 MCO₃ 碳酸盐样品质量为 21.4 g，样品中真正可与强酸定量释放 CO₂ 的 MCO₃ 物质的量为 0.0148 mol，其他成分惰性。设 n(MCO₃):n(CO₂)=1:1，M(CO₂)=44.01 g/mol。计算 CO₂ 的物质的量和理论气体质量，忽略溶解与逸散损失。",
+  "answer": "结果一 = 0.014800000 mol CO₂；结果二 = 0.65134800 g CO₂。",
+  "explanation": "题设固定化学物种、实验条件、单位及理想模型。已知参数 a=0.0148、b=21.4；使用题干给出的化学计量、热力学或动力学假设。\n已知有效碳酸盐摩尔数，直接用 1:1 化学计量得到 nCO₂，再乘 44.01 g/mol 得质量。样品总质量不能当成纯碳酸盐质量。\n分别计算第一个结果 0.014800000 mol CO₂ 和第二个结果 0.65134800 g CO₂，并独立代回两个守恒方程或逆向模型检查；不能据此声称完成专家科学性审核。",
+  "solution_steps": [
+    "题设固定化学物种、实验条件、单位及理想模型。已知参数 a=0.0148、b=21.4；使用题干给出的化学计量、热力学或动力学假设。",
+    "已知有效碳酸盐摩尔数，直接用 1:1 化学计量得到 nCO₂，再乘 44.01 g/mol 得质量。样品总质量不能当成纯碳酸盐质量。",
+    "分别计算第一个结果 0.014800000 mol CO₂ 和第二个结果 0.65134800 g CO₂，并独立代回两个守恒方程或逆向模型检查；不能据此声称完成专家科学性审核。"
+  ],
+  "numeric_answers": [
+    0.0148,
+    0.651348
+  ],
+  "numeric_answer_units": [
+    "mol CO₂",
+    "g CO₂"
+  ],
+  "units": [
+    "mol CO₂",
+    "g CO₂"
+  ],
+  "independent_equation_residuals": [
+    0,
+    1.1721104567410858e-16
+  ],
+  "independent_formula_checks": 2,
+  "original_topic_count_disclosure": "48 distinct authored topic models; each with 64 parameter variants.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-dual-3072.mjs",
+    "subject_family_file": "scripts/bulk-original-4096-inorganic.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_chinese_dual_result_models",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original undergraduate teaching exercise and independent inverse-algebra audit; no external copyrighted exam content copied."
+  }
+}

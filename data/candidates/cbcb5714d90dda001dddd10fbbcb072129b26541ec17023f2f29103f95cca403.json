@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "cbcb5714d90dda001dddd10fbbcb072129b26541ec17023f2f29103f95cca403",
+  "subject": "physical",
+  "topic": "reversible_adiabatic_diatomic_gas_case40",
+  "topic_family": "reversible_adiabatic_diatomic_gas",
+  "parameter_case": 40,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_dual_result_quantitative_with_conditions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "1.00 mol 理想双原子气体以 γ=Cp/Cv=1.40 可逆绝热膨胀，初温 T1=419.5 K、末初压比 P2/P1=0.556（小于 1）。令 R=8.314462618 J/(mol·K)，按化学约定求末温和系统所受功（kJ），忽略振动热容变化。",
+  "answer": "结果一 = 354.72859 K T₂；结果二 = -1.3463487 kJ work on system。",
+  "explanation": "题设固定化学物种、实验条件、单位及理想模型。已知参数 a=419.5、b=0.556；使用题干给出的化学计量、热力学或动力学假设。\n可逆绝热理想气体 T2=T1(P2/P1)^((γ−1)/γ)；q=0，ΔU=Cv(T2−T1)=w，其中 Cv=R/(γ−1)，膨胀功应为负。\n分别计算第一个结果 354.72859 K T₂ 和第二个结果 -1.3463487 kJ work on system，并独立代回两个守恒方程或逆向模型检查；不能据此声称完成专家科学性审核。",
+  "solution_steps": [
+    "题设固定化学物种、实验条件、单位及理想模型。已知参数 a=419.5、b=0.556；使用题干给出的化学计量、热力学或动力学假设。",
+    "可逆绝热理想气体 T2=T1(P2/P1)^((γ−1)/γ)；q=0，ΔU=Cv(T2−T1)=w，其中 Cv=R/(γ−1)，膨胀功应为负。",
+    "分别计算第一个结果 354.72859 K T₂ 和第二个结果 -1.3463487 kJ work on system，并独立代回两个守恒方程或逆向模型检查；不能据此声称完成专家科学性审核。"
+  ],
+  "numeric_answers": [
+    354.72858892979974,
+    -1.3463486901457287
+  ],
+  "numeric_answer_units": [
+    "K T₂",
+    "kJ work on system"
+  ],
+  "units": [
+    "K T₂",
+    "kJ work on system"
+  ],
+  "independent_equation_residuals": [
+    1.9968040011243822e-16,
+    0
+  ],
+  "independent_formula_checks": 2,
+  "original_topic_count_disclosure": "48 distinct authored topic models; each with 64 parameter variants.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-dual-3072.mjs",
+    "subject_family_file": "scripts/bulk-original-4096-physical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_chinese_dual_result_models",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original undergraduate teaching exercise and independent inverse-algebra audit; no external copyrighted exam content copied."
+  }
+}

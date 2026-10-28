@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "a80df256cd3997cbb0b699c904234f6aee1cdebc7d46fbd09059aa8900f5e187",
+  "subject": "physical",
+  "topic": "reversible_ideal_isothermal_work_entropy_case41",
+  "topic_family": "reversible_ideal_isothermal_work_entropy",
+  "parameter_case": 41,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_dual_result_quantitative_with_conditions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "有 1.4 mol 理想气体在绝对温度 320 K 下由初体积可逆等温膨胀至原来的 2.00 倍，取 R=8.314462618 J/(mol·K)。用化学约定计算系统受到的功（kJ）及气体的熵变（J/K），忽略其它相互作用。",
+  "answer": "结果一 = -2.5818896 kJ work on system；结果二 = 8.0684049 J/K entropy gain。",
+  "explanation": "题设固定化学物种、实验条件、单位及理想模型。已知参数 a=1.4、b=320；使用题干给出的化学计量、热力学或动力学假设。\n可逆等温过程 w=−nRTln(V2/V1)，膨胀的对系统作功为负；气体熵变 ΔS=nRln(V2/V1)，均使用 ln2，但前者含 T 并须由 J 转为 kJ。\n分别计算第一个结果 -2.5818896 kJ work on system 和第二个结果 8.0684049 J/K entropy gain，并独立代回两个守恒方程或逆向模型检查；不能据此声称完成专家科学性审核。",
+  "solution_steps": [
+    "题设固定化学物种、实验条件、单位及理想模型。已知参数 a=1.4、b=320；使用题干给出的化学计量、热力学或动力学假设。",
+    "可逆等温过程 w=−nRTln(V2/V1)，膨胀的对系统作功为负；气体熵变 ΔS=nRln(V2/V1)，均使用 ln2，但前者含 T 并须由 J 转为 kJ。",
+    "分别计算第一个结果 -2.5818896 kJ work on system 和第二个结果 8.0684049 J/K entropy gain，并独立代回两个守恒方程或逆向模型检查；不能据此声称完成专家科学性审核。"
+  ],
+  "numeric_answers": [
+    -2.581889552048917,
+    8.068404850152866
+  ],
+  "numeric_answer_units": [
+    "kJ work on system",
+    "J/K entropy gain"
+  ],
+  "units": [
+    "kJ work on system",
+    "J/K entropy gain"
+  ],
+  "independent_equation_residuals": [
+    0,
+    0
+  ],
+  "independent_formula_checks": 2,
+  "original_topic_count_disclosure": "48 distinct authored topic models; each with 64 parameter variants.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-dual-3072.mjs",
+    "subject_family_file": "scripts/bulk-original-4096-physical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_chinese_dual_result_models",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original undergraduate teaching exercise and independent inverse-algebra audit; no external copyrighted exam content copied."
+  }
+}

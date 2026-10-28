@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "c5ef435e89f9f1e4baafc34333c573b5610b986e389247bb0589cba1e547caae",
+  "subject": "inorganic",
+  "topic": "iodide_hydrogen_peroxide_iodine_case10",
+  "topic_family": "iodide_hydrogen_peroxide_iodine",
+  "parameter_case": 10,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_dual_result_quantitative_with_conditions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "酸性环境中 H₂O₂+2I⁻+2H⁺→I₂+2H₂O，初始 H₂O₂ 为 0.0145 mol、I⁻ 为 0.0388 mol，且两者全部可反应、题设保证 I⁻ 过量。M(I₂)=253.81 g/mol。求理论碘的 mol 数和质量（g），忽略反应损失。",
+  "answer": "结果一 = 0.014500000 mol I₂；结果二 = 3.6802450 g I₂。",
+  "explanation": "题设固定化学物种、实验条件、单位及理想模型。已知参数 a=0.0145、b=0.0388；使用题干给出的化学计量、热力学或动力学假设。\n对 H₂O₂ 与 I₂ 的比例为 1:1，限制试剂是 H₂O₂（需 b≥2a）；生成 I₂ 为 a mol，质量为 a×253.81 g。\n分别计算第一个结果 0.014500000 mol I₂ 和第二个结果 3.6802450 g I₂，并独立代回两个守恒方程或逆向模型检查；不能据此声称完成专家科学性审核。",
+  "solution_steps": [
+    "题设固定化学物种、实验条件、单位及理想模型。已知参数 a=0.0145、b=0.0388；使用题干给出的化学计量、热力学或动力学假设。",
+    "对 H₂O₂ 与 I₂ 的比例为 1:1，限制试剂是 H₂O₂（需 b≥2a）；生成 I₂ 为 a mol，质量为 a×253.81 g。",
+    "分别计算第一个结果 0.014500000 mol I₂ 和第二个结果 3.6802450 g I₂，并独立代回两个守恒方程或逆向模型检查；不能据此声称完成专家科学性审核。"
+  ],
+  "numeric_answers": [
+    0.0145,
+    3.680245
+  ],
+  "numeric_answer_units": [
+    "mol I₂",
+    "g I₂"
+  ],
+  "units": [
+    "mol I₂",
+    "g I₂"
+  ],
+  "independent_equation_residuals": [
+    0,
+    0
+  ],
+  "independent_formula_checks": 2,
+  "original_topic_count_disclosure": "48 distinct authored topic models; each with 64 parameter variants.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-dual-3072.mjs",
+    "subject_family_file": "scripts/bulk-original-4096-inorganic.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_chinese_dual_result_models",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original undergraduate teaching exercise and independent inverse-algebra audit; no external copyrighted exam content copied."
+  }
+}

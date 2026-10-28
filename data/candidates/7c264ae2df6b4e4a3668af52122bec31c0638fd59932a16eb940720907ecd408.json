@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "7c264ae2df6b4e4a3668af52122bec31c0638fd59932a16eb940720907ecd408",
+  "subject": "analytical",
+  "topic": "calibration_linear_slope_intercept_case04",
+  "topic_family": "calibration_linear_slope_intercept",
+  "parameter_case": 4,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_dual_result_quantitative_with_conditions",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "某校准液在浓度 2.00 mg/L、6.00 mg/L 时响应分别为 A1=0.126、A2=0.409。在这两点间假定 A=mc+b0 严格线性。求浓度响应斜率 m（A/(mg/L)）与吸光度截距 b0，并说明两点无法验证线性区间宽度。",
+  "answer": "结果一 = 0.070750000 A/(mg/L) slope；结果二 = -0.015500000 A intercept。",
+  "explanation": "题设固定化学物种、实验条件、单位及理想模型。已知参数 a=0.126、b=0.409；使用题干给出的化学计量、热力学或动力学假设。\n用 m=(A2−A1)/(6−2) 得斜率；代入 A1=m×2+b0 得截距 b0=A1−2m。两点确定直线但不能证明更广浓度范围均线性。\n分别计算第一个结果 0.070750000 A/(mg/L) slope 和第二个结果 -0.015500000 A intercept，并独立代回两个守恒方程或逆向模型检查；不能据此声称完成专家科学性审核。",
+  "solution_steps": [
+    "题设固定化学物种、实验条件、单位及理想模型。已知参数 a=0.126、b=0.409；使用题干给出的化学计量、热力学或动力学假设。",
+    "用 m=(A2−A1)/(6−2) 得斜率；代入 A1=m×2+b0 得截距 b0=A1−2m。两点确定直线但不能证明更广浓度范围均线性。",
+    "分别计算第一个结果 0.070750000 A/(mg/L) slope 和第二个结果 -0.015500000 A intercept，并独立代回两个守恒方程或逆向模型检查；不能据此声称完成专家科学性审核。"
+  ],
+  "numeric_answers": [
+    0.07075,
+    -0.015499999999999986
+  ],
+  "numeric_answer_units": [
+    "A/(mg/L) slope",
+    "A intercept"
+  ],
+  "units": [
+    "A/(mg/L) slope",
+    "A intercept"
+  ],
+  "independent_equation_residuals": [
+    0,
+    1.357240861399947e-16
+  ],
+  "independent_formula_checks": 2,
+  "original_topic_count_disclosure": "48 distinct authored topic models; each with 64 parameter variants.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-dual-3072.mjs",
+    "subject_family_file": "scripts/bulk-original-4096-analytical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_chinese_dual_result_models",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original undergraduate teaching exercise and independent inverse-algebra audit; no external copyrighted exam content copied."
+  }
+}
