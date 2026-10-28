@@ -12,7 +12,7 @@ const items=CASES.map((c,i)=>({
  independent_human_chemist_review_completed:false,machine_computation_checked:true,
  material_requires_manual_rights_check:true
 }));
-const r={reviewed_source_cases:20,publishable:0,scholarly_human_confirmations:0,
+const r={reviewed_source_cases:42,publishable:0,scholarly_human_confirmations:0,
  rights_confirmations:0,source_commit:'a'.repeat(40),items};
 test('eight distinct Chinese course exercises are explicitly reviewer-only and source-attributed',()=>{
  const qs=makeCandidates(r);
