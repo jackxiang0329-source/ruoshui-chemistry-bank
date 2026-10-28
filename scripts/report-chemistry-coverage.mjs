@@ -4,7 +4,16 @@ import {readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {join,dirname,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
-export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general={generated:0},reasoning={generated:0},integrated={generated:0},apTopics={generated:0},multistep={generated:0},rapid={generated:0},chapter={generated:0},dual={generated:0},mega={generated:0},contrast={generated:0}){
+export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general={generated:0},reasoning={generated:0},integrated={generated:0},apTopics={generated:0},multistep={generated:0},rapid={generated:0},chapter={generated:0},dual={generated:0},mega={generated:0},contrast={generated:0},chains={generated:0}){
+ const chainsN=chains?.generated||0;
+ if(!Number.isInteger(chainsN)||chainsN<0||chainsN>12288||
+ (chainsN>0&&(chainsN!==12288||chains?.authored_three_target_templates!==48||
+ chains?.parameter_cases_per_template!==256||chains?.numeric_independent_inverse_checks!==36864||
+ chains?.three_result_records!==12288||chains?.source_replay_count!==12288||
+ chains?.source_license!=='CC0-1.0'||chains?.copied_exam_questions!==0||
+ chains?.expert_approved!==0||chains?.publishable!==false||
+ ['inorganic','analytical','organic','physical'].some(s=>chains?.subject_counts?.[s]!==3072))))
+ throw Error('Unsafe new 12288 original chain source report');
  const contrastN=contrast?.generated||0;
  if(!Number.isInteger(contrastN)||contrastN<0||contrastN>10080||
  (contrastN>0&&(contrastN!==10080||contrast?.distinct_preexisting_topic_families!==112||
@@ -193,7 +202,7 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   muzaScience?.individual_rights_approvals!==0||
   muzaScience?.exam_ready!==0||
   main?.source_counts?.['MuzaPro/Organic-Chemistry-Quiz-JS']!==5||
-  whole<1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN||exercise<1437+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN||card!==278)
+  whole<1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN||exercise<1437+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN||card!==278)
   throw Error('Unsafe or inconsistent chemistry coverage sources: '+
    JSON.stringify({
     main_total:whole,main_exercises:exercise,main_cards:card,
@@ -233,7 +242,7 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   main_independent_muza_formula_checks:muzaScience.formal_element_balances_passed,
   main_independent_muza_science_condition_caveats:muzaScience.special_science_conditions_pending,
   main_total_1715_source_concordance_does_not_imply_scientific_correctness:true,
-  main_exercise_candidates_replayed:1437+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN,
+  main_exercise_candidates_replayed:1437+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN,
   main_new_original_general_chemistry_inverse_replayed:newlyReplayed,
   main_new_original_reasoning_source_replayed:reasoningCount,
   main_new_integrated_chemistry_source_replayed:integratedN,
@@ -244,11 +253,12 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   main_new_dual_3072_source_replayed:dualN,
   main_new_mega_2304_source_replayed:megaN,
   main_new_contrast_10080_source_replayed:contrastN,
-  main_exercise_candidates_not_replayed:exercise-1437-newlyReplayed-reasoningCount-integratedN-advancedN-multiCount-rapidN-chapterN-dualN-megaN-contrastN,
+  main_new_chains_12288_source_replayed:chainsN,
+  main_exercise_candidates_not_replayed:exercise-1437-newlyReplayed-reasoningCount-integratedN-advancedN-multiCount-rapidN-chapterN-dualN-megaN-contrastN-chainsN,
   main_study_cards_not_replayed:card-278,
-  main_unique_candidate_records_machine_replayed:1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN,
-  main_candidate_records_not_yet_machine_replayed:whole-1715-newlyReplayed-reasoningCount-integratedN-advancedN-multiCount-rapidN-chapterN-dualN-megaN-contrastN,
-  main_stored_replay_coverage_fraction:Number(((1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN)/whole).toFixed(6)),
+  main_unique_candidate_records_machine_replayed:1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN,
+  main_candidate_records_not_yet_machine_replayed:whole-1715-newlyReplayed-reasoningCount-integratedN-advancedN-multiCount-rapidN-chapterN-dualN-megaN-contrastN-chainsN,
+  main_stored_replay_coverage_fraction:Number(((1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount+rapidN+chapterN+dualN+megaN+contrastN+chainsN)/whole).toFixed(6)),
   main_replay_cannot_establish_chemistry_truth:true,
   main_replay_requires_expert_science_and_item_rights_review:true,
   main_original_numeric_stored_coverage_fraction:Number((304/whole).toFixed(6)),
@@ -313,7 +323,9 @@ export function run(){
  const mega=existsSync(megaPath)?JSON.parse(readFileSync(megaPath,'utf8')):{generated:0};
  const contrastPath=join(ROOT,'harvest/import_reports/original_contrast_10080.json');
  const contrast=existsSync(contrastPath)?JSON.parse(readFileSync(contrastPath,'utf8')):{generated:0};
- const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general,reasoning,integrated,apTopics,multistep,rapid,chapter,dual,mega,contrast),
+ const chainsPath=join(ROOT,'harvest/import_reports/original_chains_12288.json');
+ const chains=existsSync(chainsPath)?JSON.parse(readFileSync(chainsPath,'utf8')):{generated:0};
+ const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general,reasoning,integrated,apTopics,multistep,rapid,chapter,dual,mega,contrast,chains),
   path=join(ROOT,'harvest/coverage_report.json');
  const body=JSON.stringify(summary,null,2)+'\n';
  if(!existsSync(path)||readFileSync(path,'utf8')!==body)writeFileSync(path,body);
