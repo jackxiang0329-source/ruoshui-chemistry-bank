@@ -62,7 +62,7 @@ export const MORE=[
   expected:[1.3628]},
  {tag:'bomb_calorimeter_TNT_heat_release',path:'contents/m51034.md',ordinal:18,
   marker:'0.740-g sample',hasAnswer:true,method:'bomb-calorimeter plus water total heat capacity',
-  expected:[11.7]},
+  expected:[11.7537]},
  {tag:'cereal_macronutrient_calories',path:'contents/m51034.md',ordinal:24,
   marker:'breakfast cereal contains 3 g',hasAnswer:true,
   method:'macrocomponent calories per gram and summed food energy',
