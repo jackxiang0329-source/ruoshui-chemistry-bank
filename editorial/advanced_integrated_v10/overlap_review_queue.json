@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "series": "advanced_integrated_v10",
+  "status": "manual_cross_series_review_required",
+  "current_draft_count": 12,
+  "preliminary_flags": 4,
+  "pairs": [
+    {
+      "new_id": "UC-ADV10-I102",
+      "prior_id": "UC-ADV9-I78",
+      "reason": "均含pH与电极电势；本题为双pKa的PCET方形闭合，需核查是否具实质不同约束",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-I103",
+      "prior_id": "UC-ADV9-I85",
+      "reason": "均讨论离子晶体晶格焓；本题为Born–Landé斥力和晶胞密度联立",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-A103",
+      "prior_id": "UC-ADV9-A78",
+      "reason": "均涉及色谱柱效和分离度；本题增加柱外方差独立分解",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-O100",
+      "prior_id": "UC-ADV9-O77",
+      "reason": "均由光子吸收与量子产率推产物；本题增加空间吸收积分和位置分布",
+      "judgement": "pending_human_comparison"
+    }
+  ],
+  "notes": "No confirmed duplicates or confirmed fully distinct originals. Check core governing equations and substantive coupling. All 12 remain pending until item-level human chemical/scientific review.",
+  "expert_approved": 0
+}
