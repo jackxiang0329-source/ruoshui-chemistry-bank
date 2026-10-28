@@ -96,6 +96,8 @@ on:
       - "tests/analytical-calculator-mit.test.mjs"
       - "scripts/import-original-analytical-variants.mjs"
       - "scripts/import-original-instrumental-analytical.mjs"
+      - "scripts/import-original-general-chemistry.mjs"
+      - "tests/original-general-chemistry.test.mjs"
       - "scripts/import-original-advanced-physical.mjs"
       - "scripts/import-introqchem-2021.mjs"
       - "scripts/audit-introqchem-key-reconciliation.mjs"
@@ -228,6 +230,8 @@ jobs:
         run: node --test tests/original-instrumental-analytical.test.mjs
       - name: Verify fixed CC0 course exercise provenance and solution corrections
         run: node --test tests/introqchem-2021.test.mjs
+      - name: Validate 120 new CC0 inorganic and organic variants and all 120 inverse chemistry checks
+        run: node --test tests/original-general-chemistry.test.mjs
       - name: Verify 48 original advanced physical chemistry calculations
         run: node --test tests/original-advanced-physical.test.mjs
       - name: Verify 21-course quantum source review can be typeset without rights promotion
@@ -296,6 +300,8 @@ jobs:
         run: node scripts/import-original-analytical-variants.mjs
       - name: Stage nine source-linked quantum chemistry course exercises for human review
         run: node scripts/import-introqchem-2021.mjs
+      - name: Generate 120 CC0 original inorganic and organic quantitative exercises
+        run: node scripts/import-original-general-chemistry.mjs
       - name: Generate 48 CC0 original advanced physical chemistry exercises
         run: node scripts/import-original-advanced-physical.mjs
       - name: Generate 64 CC0 original instrumental analytical exercises
