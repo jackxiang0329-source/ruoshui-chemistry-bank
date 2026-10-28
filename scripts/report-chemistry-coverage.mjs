@@ -4,7 +4,7 @@ import {readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {join,dirname,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
-export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary){
+export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily){
  const whole=main?.total_candidates,exercise=main?.by_content_kind?.exercise_candidate,
   card=main?.by_content_kind?.study_card,raw=external?.raw_staged_candidates;
  if(!Number.isInteger(whole)||!Number.isInteger(exercise)||!Number.isInteger(card)||
@@ -54,7 +54,25 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   supplementary?.exam_ready!==0||
   supplementary?.groups?.length!==6||
   supplementary.groups.reduce((n,x)=>n+x.stored_candidate_records_checked,0)!==82||
-  supplementary.groups.reduce((n,x)=>n+x.explicitly_recorded_numeric_answers,0)!==37)
+  supplementary.groups.reduce((n,x)=>n+x.explicitly_recorded_numeric_answers,0)!==37||
+  main?.source_counts?.['ChemTrain/tmc-learn']!==593||
+  main?.source_counts?.['ChemTrain/chemtrain-daily']!==268||
+  tmc?.source_repository!=='ChemTrain/tmc-learn'||
+  tmc?.unique_source_complexes!==199||
+  tmc?.persisted_question_candidates_replayed!==593||
+  tmc?.distinct_question_ids!==593||
+  tmc?.question_types?.valence_electrons!==199||
+  tmc?.question_types?.oxidation_state!==197||
+  tmc?.question_types?.d_electrons!==197||
+  tmc?.expert_chemistry_approved!==0||
+  tmc?.formally_exam_ready!==0||
+  daily?.source_repository!=='ChemTrain/chemtrain-daily'||
+  daily?.stored_text_only_mcq_candidates_replayed!==268||
+  daily?.distinct_persisted_candidate_ids!==268||
+  daily?.distinct_source_question_indexes!==268||
+  daily?.expert_chemistry_approved!==0||
+  daily?.formally_exam_ready!==0||
+  whole<1247)
   throw Error('Unsafe or inconsistent chemistry coverage sources: '+
    JSON.stringify({
     main_total:whole,main_exercises:exercise,main_cards:card,
@@ -83,8 +101,14 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   main_original_numeric_stored_records_verified:replay.checked_stored_candidate_records,
   main_supplementary_source_records_replayed:supplementary.distinct_checked_stored_candidates,
   main_supplementary_with_explicit_numeric_values:37,
-  main_unique_candidate_records_machine_replayed:386,
-  main_candidate_records_not_yet_machine_replayed:whole-386,
+  main_tmc_persisted_source_records_replayed:tmc.persisted_question_candidates_replayed,
+  main_tmc_source_complexes:tmc.unique_source_complexes,
+  main_daily_text_mcq_source_records_replayed:daily.stored_text_only_mcq_candidates_replayed,
+  main_previous_stored_replay_records:386,
+  main_unique_candidate_records_machine_replayed:1247,
+  main_candidate_records_not_yet_machine_replayed:whole-1247,
+  main_stored_replay_coverage_fraction:Number((1247/whole).toFixed(6)),
+  main_replay_cannot_establish_chemistry_truth:true,
   main_replay_requires_expert_science_and_item_rights_review:true,
   main_original_numeric_stored_coverage_fraction:Number((304/whole).toFixed(6)),
   main_candidates_outside_original_numeric_replay:whole-304,
@@ -121,7 +145,9 @@ export function run(){
   'harvest/main_original_numeric_replay.json'),'utf8'));
  const supplementary=JSON.parse(readFileSync(join(ROOT,
   'harvest/main_supplementary_answer_replay.json'),'utf8'));
- const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary),
+ const tmc=JSON.parse(readFileSync(join(ROOT,'harvest/main_tmc_stored_replay.json'),'utf8'));
+ const daily=JSON.parse(readFileSync(join(ROOT,'harvest/main_daily_mcq_stored_replay.json'),'utf8'));
+ const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily),
   path=join(ROOT,'harvest/coverage_report.json');
  const body=JSON.stringify(summary,null,2)+'\n';
  if(!existsSync(path)||readFileSync(path,'utf8')!==body)writeFileSync(path,body);

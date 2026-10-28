@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {summarize} from '../scripts/report-chemistry-coverage.mjs';
-const main={total_candidates:1715,by_content_kind:{exercise_candidate:1437,study_card:278}};
+const main={total_candidates:1715,by_content_kind:{exercise_candidate:1437,study_card:278},
+ source_counts:{'ChemTrain/tmc-learn':593,'ChemTrain/chemtrain-daily':268}};
 const ext={raw_staged_candidates:549,with_source_solution:277,work_license:'CC-BY-3.0',
  item_rights_approved:0,expert_approved:0,exam_ready:0,chapters_inspected:40,discovered_source_chapters:149};
 const rel={total_candidates:1715,approved_count:0};
@@ -30,8 +31,15 @@ const supplementary={distinct_checked_stored_candidates:82,source_groups_verifie
  {stored_candidate_records_checked:3,explicitly_recorded_numeric_answers:2},
  {stored_candidate_records_checked:21,explicitly_recorded_numeric_answers:7},
  {stored_candidate_records_checked:30,explicitly_recorded_numeric_answers:0}]};
+const tmc={source_repository:'ChemTrain/tmc-learn',unique_source_complexes:199,
+ persisted_question_candidates_replayed:593,distinct_question_ids:593,
+ question_types:{valence_electrons:199,oxidation_state:197,d_electrons:197},
+ expert_chemistry_approved:0,formally_exam_ready:0};
+const daily={source_repository:'ChemTrain/chemtrain-daily',
+ stored_text_only_mcq_candidates_replayed:268,distinct_persisted_candidate_ids:268,
+ distinct_source_question_indexes:268,expert_chemistry_approved:0,formally_exam_ready:0};
 test('physical-style raw candidates and solved chemistry candidates are never confused',()=>{
- const r=summarize(main,ext,rel,rqa,rqareview,science,chinese,replay,supplementary);
+ const r=summarize(main,ext,rel,rqa,rqareview,science,chinese,replay,supplementary,tmc,daily);
  assert.equal(r.combined_record_count_not_unique_exercises,10320);
  assert.equal(r.main_exercise_candidates,1437);
  assert.equal(r.main_study_cards,278);
@@ -41,8 +49,12 @@ test('physical-style raw candidates and solved chemistry candidates are never co
  assert.equal(r.main_original_numeric_stored_records_verified,304);
  assert.equal(r.main_candidates_outside_original_numeric_replay,1411);
  assert.equal(r.main_supplementary_source_records_replayed,82);
- assert.equal(r.main_unique_candidate_records_machine_replayed,386);
- assert.equal(r.main_candidate_records_not_yet_machine_replayed,1329);
+ assert.equal(r.main_unique_candidate_records_machine_replayed,1247);
+ assert.equal(r.main_tmc_persisted_source_records_replayed,593);
+ assert.equal(r.main_daily_text_mcq_source_records_replayed,268);
+ assert.equal(r.main_previous_stored_replay_records,386);
+ assert.equal(r.main_stored_replay_coverage_fraction,Number((1247/1715).toFixed(6)));
+ assert.equal(r.main_candidate_records_not_yet_machine_replayed,468);
  assert.equal(r.main_supplementary_with_explicit_numeric_values,37);
  assert.equal(r.main_numeric_replay_is_human_science_approval,false);
  assert.equal(r.external_numeric_source_reviews,42);
@@ -51,46 +63,56 @@ test('physical-style raw candidates and solved chemistry candidates are never co
  assert.equal(r.external_chinese_review_rights_blocked,true);
 });
 test('refuse inaccurate provenance, totals and externally approved flags',()=>{
- assert.throws(()=>summarize({...main,total_candidates:2000},ext,rel,rqa,rqareview,science,chinese,replay,supplementary),/Unsafe/);
- assert.throws(()=>summarize(main,{...ext,exam_ready:1},rel,rqa,rqareview,science,chinese,replay,supplementary),/Unsafe/);
- assert.throws(()=>summarize(main,ext,{...rel,total_candidates:1716},rqa,rqareview,science,chinese,replay,supplementary),/Unsafe/);
+ assert.throws(()=>summarize({...main,total_candidates:2000},ext,rel,rqa,rqareview,science,chinese,replay,supplementary,tmc,daily),/Unsafe/);
+ assert.throws(()=>summarize(main,{...ext,exam_ready:1},rel,rqa,rqareview,science,chinese,replay,supplementary,tmc,daily),/Unsafe/);
+ assert.throws(()=>summarize(main,ext,{...rel,total_candidates:1716},rqa,rqareview,science,chinese,replay,supplementary,tmc,daily),/Unsafe/);
 });
 
 test('do not count unverified synthetic chemistry RQA as exam ready',()=>{
- assert.throws(()=>summarize(main,ext,rel,rqa,{...rqareview,automatic_approved_questions:1},science,chinese,replay,supplementary),/Unsafe/);
- assert.throws(()=>summarize(main,ext,rel,{...rqa,staged_total:9000},rqareview,science,chinese,replay,supplementary),/Unsafe/);
+ assert.throws(()=>summarize(main,ext,rel,rqa,{...rqareview,automatic_approved_questions:1},science,chinese,replay,supplementary,tmc,daily),/Unsafe/);
+ assert.throws(()=>summarize(main,ext,rel,{...rqa,staged_total:9000},rqareview,science,chinese,replay,supplementary,tmc,daily),/Unsafe/);
 });
 
 test('source derivations do not promote or double count raw OER research content',()=>{
- const r=summarize(main,ext,rel,rqa,rqareview,science,chinese,replay,supplementary);
+ const r=summarize(main,ext,rel,rqa,rqareview,science,chinese,replay,supplementary,tmc,daily);
  assert.equal(r.combined_record_count_not_unique_exercises,1715+549+8056);
  assert.equal(r.external_source_answer_key_issue_records,3);
  assert.equal(r.external_source_formula_typo_records,1);
  assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,
-   {...chinese,edition_rights_unresolved:false},replay,supplementary),/Unsafe/);
+   {...chinese,edition_rights_unresolved:false},replay,supplementary,tmc,daily),/Unsafe/);
  assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,
-   {...chinese,released_for_exams:34},replay,supplementary),/Unsafe/);
+   {...chinese,released_for_exams:34},replay,supplementary,tmc,daily),/Unsafe/);
  assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,
-   {...chinese,new_chinese_independent_derivations:33},replay,supplementary),/Unsafe/);
+   {...chinese,new_chinese_independent_derivations:33},replay,supplementary,tmc,daily),/Unsafe/);
  assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,
-   {...science,rights_confirmations:1},chinese,replay,supplementary),/Unsafe/);
+   {...science,rights_confirmations:1},chinese,replay,supplementary,tmc,daily),/Unsafe/);
 });
 
 test('cannot inflate audited main questions, overwrite human approval or count source data twice',()=>{
  assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,chinese,
-   {...replay,checked_stored_candidate_records:340},supplementary),/Unsafe/);
+   {...replay,checked_stored_candidate_records:340},supplementary,tmc,daily),/Unsafe/);
  assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,chinese,
-   {...replay,formally_exam_ready:1},supplementary),/Unsafe/);
+   {...replay,formally_exam_ready:1},supplementary,tmc,daily),/Unsafe/);
  assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,chinese,
-   {...replay,coverage_vs_main_records:{...replay.coverage_vs_main_records,total:1716}},supplementary),/Unsafe/);
+   {...replay,coverage_vs_main_records:{...replay.coverage_vs_main_records,total:1716}},supplementary,tmc,daily),/Unsafe/);
 });
 
 test('supplementary source rights quarantine and source replay cannot be reported as approval',()=>{
  assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,chinese,replay,
-   {...supplementary,exam_ready:1}),/Unsafe/);
+   {...supplementary,exam_ready:1},tmc,daily),/Unsafe/);
  assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,chinese,replay,
-   {...supplementary,combined_unique_candidate_ids_304_plus_82:400}),/Unsafe/);
+   {...supplementary,combined_unique_candidate_ids_304_plus_82:400},tmc,daily),/Unsafe/);
  assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,chinese,replay,
    {...supplementary,groups:supplementary.groups.map((x,i)=>i===0?
-    {...x,explicitly_recorded_numeric_answers:9}:x)}),/Unsafe/);
+    {...x,explicitly_recorded_numeric_answers:9}:x)},tmc,daily),/Unsafe/);
+});
+
+test('cannot manufacture extra TMC MCQs, skip source permission or mark published',()=>{
+ assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,chinese,replay,supplementary,
+   {...tmc,persisted_question_candidates_replayed:597},daily),/Unsafe/);
+ assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,chinese,replay,supplementary,
+   tmc,{...daily,formally_exam_ready:1}),/Unsafe/);
+ assert.throws(()=>summarize({...main,source_counts:{...main.source_counts,
+   'ChemTrain/tmc-learn':598}},ext,rel,rqa,rqareview,science,chinese,replay,supplementary,
+   tmc,daily),/Unsafe/);
 });
