@@ -21,3 +21,31 @@ jobs:
         run: node --test tests/advanced-integrated-12.test.mjs
       - name: Generate source-locked review files
         run: node scripts/advanced-integrated-12.mjs
+      - name: Install XeLaTeX and Chinese scientific math packages
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-science texlive-fonts-recommended fonts-noto-cjk poppler-utils
+      - name: Typeset and inspect PDF two passes
+        run: |
+          set -euo pipefail
+          cd editorial/advanced_integrated_v1
+          xelatex -interaction=nonstopmode -file-line-error -halt-on-error original_advanced_integrated_12.tex > /tmp/advanced-pass1.log 2>&1 || { tail -100 /tmp/advanced-pass1.log; exit 1; }
+          xelatex -interaction=nonstopmode -file-line-error -halt-on-error original_advanced_integrated_12.tex > /tmp/advanced-pass2.log 2>&1 || { tail -100 /tmp/advanced-pass2.log; exit 1; }
+          test -s original_advanced_integrated_12.pdf
+          pdfinfo original_advanced_integrated_12.pdf | grep -E '^(Pages|Page size):'
+          pdftotext original_advanced_integrated_12.pdf /tmp/advanced-chemistry-text.txt
+          grep -q '闭合氨配位体系' /tmp/advanced-chemistry-text.txt
+          grep -q 'Langmuir' /tmp/advanced-chemistry-text.txt
+          grep -q '未通过专家审定' /tmp/advanced-chemistry-text.txt
+          pdftoppm -f 1 -l 1 -r 140 -png -singlefile original_advanced_integrated_12.pdf /tmp/advanced-first-page
+          test -s /tmp/advanced-first-page.png
+      - name: Save editable TeX, audited data and reviewer PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: advanced-chemistry-12-reviewed-layout-not-expert-approved
+          path: |
+            editorial/advanced_integrated_v1/original_advanced_integrated_12.tex
+            editorial/advanced_integrated_v1/original_advanced_integrated_12.pdf
+            editorial/advanced_integrated_v1/science_assumption_review.json
+            editorial/advanced_integrated_v1/candidate_ids.json
+          if-no-files-found: error
