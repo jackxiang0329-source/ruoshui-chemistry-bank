@@ -1,0 +1,3430 @@
+
+\documentclass[UTF8,11pt,a4paper]{ctexart}
+\usepackage[a4paper,left=23mm,right=23mm,top=24mm,bottom=24mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+\setCJKmainfont{Noto Serif CJK SC}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,unicode=true]{hyperref}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{fancyhdr}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\setlist[enumerate]{leftmargin=2.6em,itemsep=0.4em,topsep=0.5em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 三千弱水 · 大学化学高阶综合题库}
+\fancyhead[R]{\small 待专家审校稿}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{15pt}
+\sloppy
+
+\begin{document}
+\begin{center}
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至6辑 (174题)}\\[0.8em]
+{\large 题目、分步解析与数值核验}\\[0.5em]
+{\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
+\end{center}
+\vspace{1em}
+\noindent 本册从仓库结构化 JSONL 自动生成。增补和修改应只编辑源题目数据，并重新执行统一编译。
+\par 机械方程残差检查只能说明指定模型的内部数值一致，不保证模型现实可行性。第六辑另须完成跨辑模型去重审查。
+\tableofcontents
+\clearpage
+\section*{第2辑 · 题目及解答}
+\addcontentsline{toc}{section}{第2辑}
+\subsection*{无机化学}
+\addcontentsline{toc}{subsection}{第2辑 / 无机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV2-I01 · 竞争配体与选择性硫化沉淀的分段平衡反演}
+\noindent\textbf{题目}\par
+假想二价金属M、N在1.000 L缓冲溶液中分析浓度分别为0.01000、0.02000 mol/L，单负配体L总浓度0.02500 mol/L。仅形成ML+、NL+，条件稳定常数βM=400、βN=120 L/mol，忽略质子化与其它络合。初态无固相。(1)求初始游离L、M2+、N2+。(2)固定游离[S2-]=1.00×10\textasciicircum{}-5 mol/L并允许仅MS(s)沉淀，Ksp(MS)=1.00×10\textasciicircum{}-8、Ksp(NS)=1.00×10\textasciicircum{}-6；重新求游离L、两金属的游离/络合浓度与沉淀M量。(3)验证NS不沉淀、元素及配体守恒，并说明沉淀后为什么不能沿用初始L。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 初态配体守恒：CL=l+CM βM l/(1+βM l)+CN βN l/(1+βN l)；二价游离浓度m0=CM/(1+βM l), n0=CN/(1+βN l)。
+\item 左侧是l的严格递增函数，在0与CL分别跨过CL，故存在唯一物理解；二分法得l0=0.0077775022 mol/L，m0=0.00243249766 mol/L，n0=0.0103450045 mol/L。
+\item 加入指定的自由S2−后，若MS(s)存在，游离m=Ksp(MS)/[S2−]=0.001 mol/L；它不能继续等于m0。
+\item 重新建立配体守恒：l+βM m l+CN βN l/(1+βN l)=CL。该函数严格递增，解得l=0.0100479839 mol/L。
+\item 于是[ML+]=βM m l=0.00401919358 mol/L，[N2+]=CN/(1+βN l)=0.00906717751 mol/L，[NL+]=CN−[N2+]=0.0109328225 mol/L。
+\item M沉淀量=CM−[M2+]−[ML+]=0.00498080642 mol/L；N的离子积=[N2+][S2−]=9.06717751e-8<0.000001，故NS不沉淀。
+\item 回代：游离L+络合所占L=0.025 mol/L；M、N各自总量均等于投料量；若沉淀量算成负值，则事先的相假设必须放弃。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0077775022 mol/L；答案2 = 0.00243249766 mol/L；答案3 = 0.0103450045 mol/L；答案4 = 0.0100479839 mol/L；答案5 = 0.001 mol/L；答案6 = 0.00401919358 mol/L；答案7 = 0.00906717751 mol/L；答案8 = 0.0109328225 mol/L；答案9 = 0.00498080642 mol/L\par
+\noindent\textbf{模型前提：}
+模型为假想离子体系；固定S2−和pH由外部缓冲储液维持，电中性由未逐项列出的支持电解质反离子满足；所有常数均以题定浓度近似。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV2-I02 · 混合价钴钙钛矿的氧空位、晶胞密度与闭孔率}
+\noindent\textbf{题目}\par
+某理想化SrCoO\_(3−δ)钙钛矿每立方晶胞含1个化学式单位，X射线测得a=0.3890 nm，独立价态谱给出Co4+摩尔分数0.700（其余Co3+），晶体宏观体密度5.180 g/cm³。假设Sr2+、O2−，唯一点缺陷是氧空位，晶胞体积不受缺陷影响；Sr、Co、O摩尔质量分别为87.62、58.933、15.999 g/mol。(1)由电中性求δ。(2)求无孔含氧空位晶体的理论密度。(3)解释理论与实测密度差，并估算闭孔体积分数。(4)说明把氧空位与孔洞混淆会引起的偏差。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设Co4+占比x=0.700，平均Co氧化态=3+x=3.7。
+\item 电荷守恒：+2+(3+x)−2(3−δ)=0，即δ=(1−x)/2=0.15，故化学式SrCoO\_2.85。
+\item 每化学式单位摩尔质量M=87.62+58.933+(3−δ)×15.999=192.15015 g/mol。
+\item 立方晶胞体积V=(0.3890×10\textasciicircum{}-7 cm)\textasciicircum{}3=5.8863869e-23 cm³；质量m=M/NA。
+\item 无孔理论密度ρ0=M/(NA a³)=5.42052088 g/cm³。
+\item 如仅有不可进入的闭孔且骨架密度ρ0，ρbulk=(1−φ)ρ0，故φ=1−5.180/5.42052088=4.43722813\%。
+\item 正向核对：含氧数×(−2)恰抵Sr与Co总正电；反向核对：(1−φ)ρ0=5.180 g/cm³。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.15 per formula unit；答案2 = 5.42052088 g/cm³；答案3 = 0.0443722813 fraction\par
+\noindent\textbf{模型前提：}
+Co仅有+3/+4价、只有氧位空位、缺陷不改晶胞常数，宏观密度下降剩余部分仅来自闭孔；不是实际样品的未经验证结论。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV2-I03 · 自旋交叉磁化率反演焓熵与半转换温度}
+\noindent\textbf{题目}\par
+理想独立Fe(II)自旋交叉中心，仅有低自旋S=0和高自旋S=2两态，忽略轨道贡献及相互作用，高自旋spin-only有效磁矩μH=√24 μB，低自旋磁矩取0。实验按Curie权重得到280.0 K的μeff=√6 μB、320.0 K的μeff=√14.4 μB。设高/低态平衡比K=x/(1−x)=exp(ΔS/R−ΔH/(RT))，ΔH、ΔS与温度无关。(1)求高自旋摩尔分数。(2)反演ΔH、ΔS。(3)求50\%转换温度及其存在条件。(4)检验升温方向是否与焓符号一致。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 磁化率线性加和的是平方磁矩：μeff²=x μH²+(1−x)μL²=24x μB²。
+\item 280 K时x1=6/24=0.25；320 K时x2=14.4/24=0.6。
+\item K1=x1/(1−x1)=0.333333333，K2=x2/(1−x2)=1.5。
+\item 两温度van't Hoff式相减：ΔH=R ln(K2/K1)/(1/T1−1/T2)=28.0125334 kJ/mol。
+\item 再由lnK1=ΔS/R−ΔH/(RT1)，得到ΔS=RlnK1+ΔH/T1=90.9103915 J/(mol K)。
+\item 半转换时K=1，0=ΔS−ΔH/T50，故T50=ΔH/ΔS=308.13346 K（要求ΔS、ΔH同号且T50>0）。
+\item 正向回代μeff1=2.44948974 μB、μeff2=3.79473319 μB，且升温高自旋分数增大，与ΔH>0的吸热高自旋态一致。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.25 fraction；答案2 = 0.6 fraction；答案3 = 28012.5334 J/mol；答案4 = 90.9103915 J/(mol K)；答案5 = 308.13346 K\par
+\noindent\textbf{模型前提：}
+有效磁矩按理想Curie权重的平方平均；不考虑零场分裂、交换耦合、磁各向异性和热容差。\par
+\medskip\hrule\medskip
+\subsection*{分析化学}
+\addcontentsline{toc}{subsection}{第2辑 / 分析化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV2-A01 · 未知基质灵敏度与标准加入的双波长联合反演}
+\noindent\textbf{题目}\par
+未知样含X、Y两种发色物，1.00 cm池，两波长吸光系数矩阵[[8000,2000],[3000,7000]] L mol\textasciicircum{}-1 cm\textasciicircum{}-1。由于基质效应，两种物的整体信号均乘未知公共抑制因子q∈(0,1)，测得原样(A1,A2)=(0.2952,0.2132)。向等终体积的平行样品标准加入ΔcX=1.000×10\textasciicircum{}-5 mol/L的X，保持基质因子不变，测得(0.3608,0.2378)。(1)同时求q、cX、cY。(2)检验加标两波长是否自洽。(3)说明单凭未加标的两个吸光度为什么无法确定三个未知量，并写出模型失效的判断方式。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 未加标向量A=q ε(cX,cY)\textasciicircum{}T，加标后A'=A+q ΔcX (8000,3000)\textasciicircum{}T。
+\item 第一波长给q=(A1'−A1)/(8000ΔcX)=0.82；第二波长独立求q=(A2'−A2)/(3000ΔcX)=0.82，两者吻合。
+\item 除去公共基质因子后b=A/q=(0.36,0.26)。
+\item 线性方程ε c=b，行列式=8000×7000−2000×3000=50000000，不为零。
+\item Cramer's rule：cX=(7000b1−2000b2)/det=0.00004 mol/L，cY=(8000b2−3000b1)/det=0.00002 mol/L。
+\item 回代预测未加标(0.2952,0.2132)及加标(0.3608,0.2378)。
+\item 只有两条未加标方程而未知量为q,cX,cY三者，系统欠定；加标增量独立识别q，若两波长增量求得q不同，公共抑制假设应被否定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.82 dimensionless；答案2 = 4e-05 mol/L；答案3 = 2e-05 mol/L\par
+\noindent\textbf{模型前提：}
+两物在两波长的基质抑制是同一个正比例常数；加标前后终体积相同、无反应、无非线性吸收。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV2-A02 · 封闭碳酸体系加酸后的精确电荷平衡与物种分布}
+\noindent\textbf{题目}\par
+一个100.0 mL封闭水样起初含NaHCO3 0.0200 mol/L和Na2CO3 0.0100 mol/L，加入0.00150 mol HCl后定容120.0 mL，封闭体系不逸散CO2。25°C时取Ka1=10\textasciicircum{}-6.35、Ka2=10\textasciicircum{}-10.33、Kw=10\textasciicircum{}-14，理想浓度活度近似。求最终无机碳总浓度、[Na+]、[Cl−]、准确的pH以及H2CO3*、HCO3−、CO3\textasciicircum{}2−各物种浓度。不得直接把Henderson–Hasselbalch近似当作精确电荷平衡。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 无机碳守恒CT=[(0.0200+0.0100)×0.1000]/0.1200=0.025 mol/L。
+\item 钠与氯分别守恒：[Na+]=(0.0200+2×0.0100)×0.1000/0.1200=0.0333333333 M，[Cl−]=0.00150/0.1200=0.0125 M。
+\item 令h=[H+]，D=h²+Ka1 h+Ka1 Ka2，则[H2CO3*]=CT h²/D，[HCO3−]=CT Ka1 h/D，[CO3²−]=CT Ka1 Ka2/D。
+\item 电荷守恒式：[Na+]+h=[Cl−]+[HCO3−]+2[CO3²−]+Kw/h；等价求根F(pH)= [HCO3−]+2[CO3²−]+Kw/h−h−([Na+]−[Cl−])=0。
+\item 在pH为4到11区间以单调物种响应数值二分，得pH=7.0473843。
+\item 代回[H2CO3*]=0.00417754503 M、[HCO3−]=0.0208115985 M、[CO3²−]=0.0000108564975 M。
+\item 检查碳守恒：三形态和=0.025 M，电荷守恒右侧净负电荷=0.0208333333 M，等于Na−Cl=0.0208333333 M。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.025 mol/L；答案2 = 0.0333333333 mol/L；答案3 = 0.0125 mol/L；答案4 = 7.0473843 pH；答案5 = 0.00417754503 mol/L；答案6 = 0.0208115985 mol/L；答案7 = 1.08564975e-05 mol/L\par
+\noindent\textbf{模型前提：}
+封闭、定容后处于平衡；H2CO3*包含水合CO2的合并定义；给定常数按浓度条件使用，忽略活度系数与空气CO2交换。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV2-A03 · 共沉积电量—质量双守恒反演金属组成}
+\noindent\textbf{题目}\par
+100.0 mL水样只含Cu2+与Ag+两种可沉积金属离子，恒电流0.1500 A电沉积2656.84248 s，电流效率92.0\%，电极净增质量0.18161356 g（无夹杂），F=96485.33212 C/mol。反应Cu2++2e→Cu、Ag++e→Ag；MCu=63.546、MAg=107.8682 g/mol。(1)联立法拉第电荷衡算与沉积质量求两金属的初始摩尔数及浓度。(2)计算理论用于沉积的电量、损失电量。(3)讨论若两种离子都错按二电子还原为何不能可靠反演。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 总通过电量Q=It=0.1500×2656.84248=398.526372 C；有效沉积电量Q沉=0.920Q=366.644262 C。
+\item 设nCu=u、nAg=v，法拉第定律(2u+v)=Q沉/F=0.0038 mol电子；称重方程63.546u+107.8682v=0.18161356 g。
+\item 消去v：u=[(Q沉/F)−m/MAg]/[2−MCu/MAg]=0.0015 mol。
+\item v=(Q沉/F)−2u=0.0008 mol。
+\item 以样品体积0.1000 L折算：[Cu2+]=0.015 mol/L，[Ag+]=0.008 mol/L。
+\item 副反应电量Q损=(1−0.920)Q=31.8821097 C，不能计入金属沉积量。
+\item 逆向验算：理论m=0.18161356 g，理论沉积电荷=366.644262 C，两者恢复观测。错误地令Ag+也消耗2e会改变电量矩阵的秩与正确组成。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0015 mol；答案2 = 0.0008 mol；答案3 = 0.015 mol/L；答案4 = 0.008 mol/L；答案5 = 366.644262 C；答案6 = 31.8821097 C\par
+\noindent\textbf{模型前提：}
+金属定量回收到同一电极且无合金化引起的重量差；电流效率已独立校准，电解时无化学溶解或其它阳离子沉积。\par
+\medskip\hrule\medskip
+\subsection*{有机化学}
+\addcontentsline{toc}{subsection}{第2辑 / 有机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV2-O01 · 平行—串联反应网络的中间产物选择性最优淬灭}
+\noindent\textbf{题目}\par
+恒容恒温下，假想有机反应网络A→B（k1=0.110 h\textasciicircum{}-1）、A→D（副反应k3=0.030 h\textasciicircum{}-1）、B→C（k2=0.045 h\textasciicircum{}-1），均为不可逆一级反应，初始仅A，A0=1.000 mol。各路径均为1:1计量，D和C稳定。(1)写四物种浓度/摩尔分数随时间的显式解。(2)求B最大分离时刻及四个物种的分数。(3)给出最优时A→B的总反应选择性上限，以及质量守恒证明。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 记K=k1+k3=0.140 h\textasciicircum{}-1，微分方程a'=−Ka，b'=k1a−k2b，d'=k3a，c'=k2b，初值(a,b,c,d)=(1,0,0,0)。
+\item a(t)=exp(−Kt)；b(t)=k1/(K−k2)[exp(−k2t)−exp(−Kt)]。
+\item d(t)=(k3/K)[1−exp(−Kt)]；c(t)=1−a−b−d（直接由总物质守恒得到）。
+\item 令b'(t)=0：k2 exp(−k2t)=K exp(−Kt)，所以t*=ln(K/k2)/(K−k2)=11.9471572 h。
+\item 该时刻(a,b,c,d)=(0.187757882,0.458963712,0.179226523,0.174051882)；因此最大可瞬时分离B为0.458963712 mol。
+\item 如果B不继续消耗，A一旦反应进入B通道的最终分支概率为k1/(k1+k3)=0.785714286，这是对B分离总收率的绝对上限；本题在t*之前存在B→C损失，所以实际b*严格小于该上限。
+\item 正向验证a+b+c+d=1；并且b'(t*)=k1a−k2b=3.46944695e-18 mol h\textasciicircum{}-1，且b(0)=b(∞)=0，故峰值唯一。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 11.9471572 h；答案2 = 0.187757882 fraction；答案3 = 0.458963712 fraction；答案4 = 0.179226523 fraction；答案5 = 0.174051882 fraction\par
+\noindent\textbf{模型前提：}
+假想单向一级动力学、均一混合，忽略可逆反应、分子量改变造成的质量不等价；分数按1:1分子摩尔计。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV2-O02 · 有限物料酯化反应中间脱水与二次平衡转化}
+\noindent\textbf{题目}\par
+理想恒温液相酯化A+B⇌E+H2O，按活度≈摩尔浓度/标准浓度处理，K=4.000，体积近似恒定。最初nA=1.000、nB=1.200、nE=0、nW=0.0500 mol。(1)求第一次平衡转化ξ1及全部组分。(2)随后仅从体系除去0.1500 mol水，反应物、酯不损失，重新封闭达到第二次平衡，求追加反应进度ξ2及总转化率。(3)两次完整物料守恒反算，解释为何必须把第一次形成的E、W带入第二次平衡。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设第一次正向反应进度ξ1，反应商Q=(nE nW)/(nA nB)（体积的同次幂消去）。
+\item 平衡方程ξ1(0.0500+ξ1)=4(1−ξ1)(1.2−ξ1)，物理根须满足0<ξ1<1；求得ξ1=0.716300455 mol。
+\item 第一次平衡组成：(nA,nB,nE,nW)=(0.283699545,0.483699545,0.716300455,0.766300455) mol。
+\item 仅移除0.1500 mol水后、二次反应前nW=0.616300455 mol，其余组成不变。
+\item 令后续追加转化ξ2，第二次平衡满足(E+ξ2)(W+ξ2)=4(A−ξ2)(B−ξ2)，并限定0≤ξ2≤min(A,B)。
+\item 二次物理根ξ2=0.0248272013 mol，最终总酯形成量ξ1+ξ2=0.741127656 mol，相对最初A的总酯化转化率=74.1127656\%。
+\item 检查初始A：nA最终+ξ1+ξ2=1 mol；最终水量nW=0.641127656 mol，与移水操作及反应生成守恒一致。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.716300455 mol；答案2 = 0.0248272013 mol；答案3 = 0.741127656 mol；答案4 = 0.258872344 mol；答案5 = 0.641127656 mol\par
+\noindent\textbf{模型前提：}
+完整计量反应，恒温、溶液理想及体积对反应商抵消，移除水时未带走其它组分；无副反应。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV2-O03 · 反应活性比控制下的瞬时共聚组成与进料漂移}
+\noindent\textbf{题目}\par
+两单体M1、M2按终端自由基共聚模型，反应活性比分别r1=0.200、r2=2.000，初始液相M1的摩尔分数f1,0=0.400；不补料，忽略体积变化和链转移对瞬时组成的影响。Mayo–Lewis瞬时共聚M1摩尔分数F1=(r1 f1²+f1(1−f1))/(r1 f1²+2f1(1−f1)+r2(1−f1)²)。(1)求初始F1。(2)推导随总单体转化率X变化的进料f1微分方程。(3)数值积分至X=0.400，求剩余进料f1、此时瞬时F1及累计聚合物平均M1组分。(4)做M1和总单体两种物料守恒核验。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由给定Mayo–Lewis式，初始f1=0.400时F1,0=0.220779221，与初始进料不相同，产生组成漂移。
+\item 初始总单体N0，转化率X时剩余单体N=N0(1−X)，其中M1数量为N0(1−X)f1。
+\item 新消耗d(N0X)个单体时M1消耗F1 d(N0X)，所以d[(1−X)f1]/dX=−F1(f1)。
+\item 展开得df1/dX=[f1−F1(f1)]/(1−X)，初值f1(0)=0.400；这是一阶非线性微分方程。
+\item 用四阶Runge–Kutta步长ΔX=0.0004积分至X=0.400，得f1末=0.500530342，此刻瞬时F1末=0.286075161。
+\item M1总守恒：初始0.4N0，末剩0.6f1末N0，因此聚合物中累计M1= [0.4−0.6f1末]N0；其累计平均摩尔分数Fbar=[0.4−0.6f1末]/0.4=0.249204487。
+\item 将积分步长减半到0.0002后f1末=0.500530342，与原解一致到数值精度；Fbar与单体总消耗0.400N0相容。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.220779221 fraction；答案2 = 0.500530342 fraction；答案3 = 0.286075161 fraction；答案4 = 0.249204487 fraction\par
+\noindent\textbf{模型前提：}
+终端共聚反应活性比定值、两种单体无其它损耗或补料；题目只描述组成漂移，不声称给出聚合物分子量分布。\par
+\medskip\hrule\medskip
+\subsection*{物理化学}
+\addcontentsline{toc}{subsection}{第2辑 / 物理化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV2-P01 · 绝热反应釜中热容差、温度与平衡转化的耦合非线性求解}
+\noindent\textbf{题目}\par
+绝热恒压反应釜中初始有1.000 mol纯A以及不参与反应的热容为100.0 J/K的惰性材料，初温298.15 K。反应A⇌B，ΔrH°298=−40.00 kJ/mol，298.15 K平衡常数K=2.400；A、B定压摩尔热容分别为100和120 J/(mol K)，常数。理想等摩尔数气相单反应（K=nB/nA），忽略流动和机械外功之外的额外热源。(1)建立绝热焓守恒得到T(ξ)。(2)用Kirchhoff与van't Hoff积分写K(T)。(3)联立求最终T、ξ并独立检查焓守恒与反应商。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 反应焓ΔH(T)=H0+ΔCp(T−T0)，ΔCp=120−100=20 J/(mol K)。
+\item 以初始A+惰性材料为参考，绝热恒压焓平衡：(200+20ξ)(T−298.15)−40000ξ=0。
+\item 于是T(ξ)=298.15+40000ξ/(200+20ξ) K。
+\item 积分dlnK/dT=ΔH(T)/(RT²)，得ln[K(T)/K0]=H0/R(1/T0−1/T)+(ΔCp/R)[ln(T/T0)+T0/T−1]。
+\item 理想气体等摩尔数体系K(T)=ξ/(1−ξ)，将T(ξ)代入，构成0<ξ<1上的单变量非线性求根问题。
+\item 经二分法得到ξ=0.229384325，T=342.998119 K，K(T)=0.297663715，并由ξ/(1−ξ)=0.297663715 验证平衡。
+\item 绝热残差(200+20ξ)(T−298.15)−40000ξ=-5.45696821e-12 J；升温降低放热反应平衡常数，负反馈使ξ显著低于恒温时K0/(1+K0)。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.229384325 mol reaction per initial mol A；答案2 = 342.998119 K；答案3 = 0.297663715 dimensionless\par
+\noindent\textbf{模型前提：}
+焓用恒压热容，容器近绝热，理想等计量系数气相使K仅为摩尔数比，ΔCp常数、无相变。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV2-P02 · 有机相二聚诱导的非线性两级液液萃取}
+\noindent\textbf{题目}\par
+1.000 L水相含单体型溶质A共0.01000 mol，依次与两份新鲜0.2000 L有机相平衡萃取。水相只含单体A，单体分配比[A]有机/[A]水=P=3.000；有机相中2A⇌A2二聚，形成常数Kdim=[A2]有机/[A]有机²=40.0 L/mol。忽略体积改变、乳化和非理想性。(1)建立含二聚体的准确物料平衡并求第一级后水相浓度。(2)第二级使用新鲜有机相，求最终浓度、总萃取率。(3)分别求两级提走的A结构单元物质的量，并检验全流程守恒；不可将有机相二聚体当作只含一个A单元。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设一次萃取后水相单体浓度c；有机相单体浓度Pc、二聚体浓度Kdim(Pc)²。
+\item 以A结构单元计，单次物料守恒为n输入=V水 c+V有[P c+2Kdim(P c)²]，即n=c+0.2000(3c+720c²)。
+\item 第一级由n0=0.01000 mol求唯一非负根c1=0.00445986465 mol/L；第一级有机相提走n有,1=0.01000−c1=0.00554013535 mol。
+\item 第二级有机相全新，初始水相只剩n输入=c1×1.000 L，因此必须重新求c2+0.2000(3c2+720c2²)=c1。
+\item 得到c2=0.00230799834 mol/L，第二级提走n有,2=c1−c2=0.00215186632 mol。
+\item 总萃取率η=(n0−1.000c2)/n0=76.9200166\%；不能用常数分配比的几何级数，因为二聚使萃取量非线性依赖浓度。
+\item 回代全流程：n有,1+n有,2+n水,末=0.01 mol，与最初0.01000 mol相同；两个二次式在c≥0区间严格递增，故各有唯一物理解。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00445986465 mol/L；答案2 = 0.00230799834 mol/L；答案3 = 0.00554013535 mol A；答案4 = 0.00215186632 mol A；答案5 = 0.769200166 fraction\par
+\noindent\textbf{模型前提：}
+只允许有机相A2二聚，水相无二聚或其他反应，P与Kdim为浓度基准常数；萃取每级达平衡。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV2-P03 · 有限NaCl储液池混合的最大可逆电功与自由能审计}
+\noindent\textbf{题目}\par
+298.15 K下，两份理想完全解离的NaCl水溶液分别为储液池1：V1=1.000 L、c1=0.02000 mol/L；储液池2：V2=2.000 L、c2=0.005000 mol/L。两池通过理想可逆盐浓差电能装置充分交换，最终均匀并保持总体积不变。两种离子遵循理想溶液活度模型、无溶剂交换功和液接损耗。(1)求最终浓度。(2)从各池初末盐离子数推导总Gibbs混合自由能差。(3)求最大理论可回收电功，并说明为何不能把初始电压当作全程定值直接乘一个固定电量。(4)核验正负号、总离子数量和零梯度极限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item NaCl分析量守恒：n总=V1c1+V2c2=0.03 mol，最终c\_f=n总/(V1+V2)=0.01 mol/L。
+\item NaCl每个化学式单位分解为两个单价离子，理想化学势μ\_i=μ\_i°+RTln(c/c°)，标准态项在守恒前后相消。
+\item 恒温下总自由能变化ΔG=2RT[V1c1 ln(cf/c1)+V2c2 ln(cf/c2)]，其中V以L、c以mol/L得到mol。
+\item 代入298.15 K，ΔG=-34.3656415 J；可逆最大输出电功Wmax=−ΔG=34.3656415 J。
+\item 浓差耗散会令ΔG<0，而纯混合不回收功；若以可逆装置回收，理论可输出正功34.3656415 J，实际更低。
+\item 离子守恒：总Na+与Cl−各0.03 mol；若c1=c2，则每个ln(cf/ci)=0，最大功为零。
+\item 浓差电池电势E随两池浓度和转运进度变化，故不能使用初态E×总转运电量代替积分−ΔG。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.01 mol/L；答案2 = -34.3656415 J；答案3 = 34.3656415 J\par
+\noindent\textbf{模型前提：}
+仅计算固定温度、溶液体积不变且无其他机械/混合溶剂功的盐离子理想自由能差；不把真实膜电位与不可逆损耗忽略的结果冒充实验值。\par
+\medskip\hrule\medskip
+\clearpage
+\section*{第3辑 · 题目及解答}
+\addcontentsline{toc}{section}{第3辑}
+\subsection*{无机化学}
+\addcontentsline{toc}{subsection}{第3辑 / 无机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV3-I04 · 二级络合与配体质子化的闭合物料平衡}
+\noindent\textbf{题目}\par
+假想二价金属M的总浓度为0.01200 mol/L，单酸配体HL的总分析浓度为0.03000 mol/L；固定pH=8.000且pKa(HL)=8.000。只允许M2+、ML+、ML2及游离HL、L−存在，逐级形成常数K1=250 L/mol、K2=80 L/mol，所有常数均采用理想浓度模型，体积恒定且缓冲液及电中性反离子由外部提供。求游离L−、HL、M2+、ML+、ML2的浓度，金属的双络合分数及被络合配体的比例。不得把配体总浓度直接当作游离L−。最后证明物理解唯一，并用配体与金属双重守恒核验。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 酸碱关系Ka=[H+][L−]/[HL]；当pH=pKa，游离HL与L−浓度相等。令l=[L−]，则[HL]=l。
+\item 令m=[M2+]。逐级络合给[ML+]=K1ml、[ML2]=K1K2ml²。
+\item 金属守恒CM=m(1+K1l+K1K2l²)，故m(l)=0.01200/(1+250l+20000l²)。
+\item 配体守恒CL=[HL]+[L−]+[ML+]+2[ML2]，即F(l)=2l+0.01200(250l+40000l²)/(1+250l+20000l²)−0.03000=0。
+\item F(l)在l≥0严格递增：每个金属平均结合配体数作为自由配体活度的函数严格递增，且2l也严格递增；F(0)<0、F(0.03000)>0，故唯一正根l=0.008438617122 mol/L。
+\item 回代[HL]=0.008438617122、[M2+]=0.002646751649、[ML+]=0.005583730946、[ML2]=0.003769517405 mol/L。
+\item 双络合金属分数=[ML2]/CM=0.3141264504；被络合配体比例=([ML+]+2[ML2])/CL=0.4374255252。
+\item 检验金属守恒m+[ML+]+[ML2]=0.012 mol/L，配体守恒2l+[ML+]+2[ML2]=0.03 mol/L；若误取l=CL，两条守恒不可能同时成立。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00843861712 mol/L；答案2 = 0.00843861712 mol/L；答案3 = 0.00264675165 mol/L；答案4 = 0.00558373095 mol/L；答案5 = 0.00376951741 mol/L；答案6 = 0.31412645 fraction；答案7 = 0.437425525 fraction\par
+\noindent\textbf{模型前提：}
+由外部缓冲体系固定pH；忽略其它络合物、活度修正和缓冲液中可能的竞争配位；不宣称给出具体真实金属的实验形成常数。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV3-I05 · 氧空位供体与受主掺杂的电子—空穴电中性反演}
+\noindent\textbf{题目}\par
+一假想n型氧化物在300 K下氧位密度为4.00×10\textasciicircum{}22 cm\textasciicircum{}-3，带+2有效电荷的氧空位浓度[V\_O\textasciicircum{}\{••\}]=1.00×10\textasciicircum{}17 cm\textasciicircum{}-3，完全电离的固定受主掺杂浓度[A′]=5.00×10\textasciicircum{}16 cm\textasciicircum{}-3。电子与空穴分别带−1和+1有效电荷，且处于非简并热平衡，np=ni²、ni=1.00×10\textasciicircum{}10 cm\textasciicircum{}-3。电子迁移率20.0 cm²/(V s)，空穴迁移率5.00 cm²/(V s)，基本电荷1.602176634×10\textasciicircum{}-19 C。求n、p、氧空位位点分数、总电子电导率与空穴贡献比例；证明所取代数根是唯一物理解，并解释为何不能仅写n=[V\_O]。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Kröger–Vink有效电荷守恒：p+2[V\_O\textasciicircum{}\{••\}]=n+[A′]，即n−p=2×10\textasciicircum{}17−5×10\textasciicircum{}16=150000000000000000 cm\textasciicircum{}-3。
+\item 与本征热平衡np=ni²联立，消去p得到n²−Δn−ni²=0，其中Δ=1.50×10\textasciicircum{}17 cm\textasciicircum{}-3。
+\item 二次方程正根n=(Δ+√(Δ²+4ni²))/2=150000000000000000 cm\textasciicircum{}-3；负根为负电子浓度，必须舍去。
+\item 为避免极小空穴浓度出现数值抵消，使用p=ni²/n=666.6666667 cm\textasciicircum{}-3，而不是两个大数直接相减。
+\item 氧空位位点分数fV=[V\_O]/N\_O=0.0000025，即2.5 ppm。
+\item 电导率σ=e(μn n+μp p)=0.4806529902 S/cm；空穴贡献比例μp p/(μn n+μp p)=1.111111111e-15。
+\item 核验n−p=150000000000000000 cm\textasciicircum{}-3，np=100000000000000000000 cm\textasciicircum{}-6；因此约两电子/空位但还需扣除受主补偿，不能机械设n=[V\_O]。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1.5e+17 cm\textasciicircum{}-3；答案2 = 666.666667 cm\textasciicircum{}-3；答案3 = 2.5e-06 fraction；答案4 = 0.48065299 S/cm；答案5 = 1.11111111e-15 fraction\par
+\noindent\textbf{模型前提：}
+所有缺陷浓度固定且完全电离，载流子非简并、迁移率给定，无缺陷关联或电极化学反应；这是缺陷化学的假想简化模型。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV3-I06 · 两性金属氢氧化物溶解度的非单调性与全局极小值}
+\noindent\textbf{题目}\par
+过量固态M(OH)2与强pH缓冲溶液平衡，假设溶解只形成M2+及[M(OH)4]2−，不允许其它溶解物种。Ksp=[M2+][OH−]\textasciicircum{}2=1.00×10\textasciicircum{}-16（浓度型），总形成常数β4=[M(OH)4]2−/([M2+][OH−]\textasciicircum{}4)=1.00×10\textasciicircum{}10 L\textasciicircum{}4 mol\textasciicircum{}-4。在25°C取pKw=14.000，理想活度近似，背景反离子电荷由缓冲体系承担。(1)建立总金属溶解度s(pH)。(2)严格求使s最小的OH−浓度及pH，证明是全局最小。(3)计算pH=11.000、12.000的溶解度并区分低pH游离离子与高pH羟基络合支配区。(4)做沉淀平衡与络合平衡的逆向核对。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 令u=[OH−]>0，沉淀平衡给[M2+]=Ksp/u²，形成常数给[M(OH)4]2−=β4 Ksp u²。
+\item 总溶解度s(u)=Ksp u\textasciicircum{}(−2)+β4 Ksp u²；前项随u增大而下降、后项上升。
+\item 一阶导数s′(u)=−2Ksp u\textasciicircum{}(−3)+2β4 Ksp u；令s′=0，得u⁴=1/β4。
+\item 正根u*=β4\textasciicircum{}(−1/4)=0.00316227766 mol/L；s″=6Ksp/u⁴+2β4Ksp>0，且u→0或∞时s→∞，故是唯一全局最小。
+\item pOH*=−log10(u*)=2.5，pH*=14−pOH*=11.5；smin=2Ksp√β4=2e-11 mol/L。
+\item pH=11时u=10\textasciicircum{}-3 M，s11=1.01e-10 mol/L；pH=12时u=10\textasciicircum{}-2 M，s12=1.01e-10 mol/L。
+\item 在最小点游离M2+与四羟基络离子浓度均为1e-11 mol/L；将两个物种代入Ksp与β4公式分别恢复1.00×10\textasciicircum{}-16和1.00×10\textasciicircum{}10。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00316227766 mol/L；答案2 = 11.5 pH；答案3 = 2e-11 mol/L；答案4 = 1.01e-10 mol/L；答案5 = 1.01e-10 mol/L\par
+\noindent\textbf{模型前提：}
+题设仅适用于具有该指定形成常数的假想两性氢氧化物；极端pH可能出现其他多核物种、活度与缓冲副反应，本模型已明确排除。\par
+\medskip\hrule\medskip
+\subsection*{分析化学}
+\addcontentsline{toc}{subsection}{第3辑 / 分析化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV3-A04 · 二次基质响应中的三点标准加入与歧义根排除}
+\noindent\textbf{题目}\par
+一份未知分析物的原液在定容后放入相同基质的三个测量池，分别加入浓度增量s=0、0.000800、0.001600 mol/L，三池终体积相同。校准空白信号b=0.015000已知；真实测量规律A(s)=b+k(c+s)+q(c+s)²，其中未知c>0、k>0、q>0（后两者分别有适用的量纲），且分析物先验浓度范围0<c<0.005 mol/L。测得信号依次A0=0.054845，A1=0.080205，A2=0.106205（按题示有效位数视为精确）。(1)由三点差分求二次响应系数、表观一阶系数及截距。(2)将原浓度c作为二次方程的根，求两代数根并依据物理约束舍去伪根。(3)复原k、q并验证三点信号，讨论为什么仅两点不足以分离三个未知量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将响应写成观测加标增量s的多项式A(s)=A0+B s+q s²，其中B=k+2qc，A0−b=kc+qc²。
+\item 等间隔二阶差分Δ²A=A2−2A1+A0=2q(Δs)²，得到q=500 L²/mol²。
+\item 第一差分(A1−A0)/Δs=B+qΔs，得B=31.3 L/mol。
+\item 记C=A0−b=0.039845，由k=B−2qc代回C=kc+qc²得到q c²−B c+C=0。
+\item 判别式D=B²−4qC=900>0，两个形式根分别c小=0.0013 mol/L与c大=0.0613 mol/L。
+\item 按先验c<0.005 mol/L且k>0，只允许c=0.0013；另一根超出适用浓度区并导致k<0。
+\item 恢复k=B−2qc=30 L/mol，q=500 L²/mol²；逐一代入测量方程得A(0)=0.054845，A(Δs)=0.080205，A(2Δs)=0.106205。
+\item 若只测两个加标水平，仅给两条独立方程而c、k、q有三个未知量，因此在缺少先验或其他信息时不可辨识。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0013 mol/L；答案2 = 30 L/mol；答案3 = 500 L²/mol²；答案4 = 0.0613 mol/L\par
+\noindent\textbf{模型前提：}
+三次测量使用相同基质、完全相同最终体积；响应在目标浓度区确实为二次多项式，所给数据视为理想精确值，不据此声称真实仪器无限精度。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV3-A05 · 同位素稀释与化学回收率的双信号联合反演}
+\noindent\textbf{题目}\par
+取100.0 mL未知氯化物水样，原有氯的37Cl同位素原子分数x天然=0.2422。向其加入总氯量ns=0.000800 mol、37Cl分数x标=0.9800的富集同位素内标，充分混合后进行化学分离。分离步骤对两种同位素具有相同且未知的回收率r。质谱已校正质量歧视，测得分离后37Cl原子分数x=0.453；总氯信号S=4760计数，独立绝对信号斜率α=2.000×10\textasciicircum{}6 计数/mol已标定。求原始样品氯分析浓度、共同回收率与测量的同位素物料守恒。最后计算在x附近样品物质的量对x的导数dn/dx（mol/单位分数），解释同位素比值为何能与总回收率解耦。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设原样氯物质的量为n，混合前样品和内标氯量分别为n、ns；回收后两者同乘r。
+\item 同位素原子分数x=[r x天然 n+r x标 ns]/[r(n+ns)]=(x天然 n+x标 ns)/(n+ns)，共同回收率r在比例中消去。
+\item 整理得n=ns(x标−x)/(x−x天然)=0.002 mol，原水样分析浓度c=n/0.1000 L=0.02 mol/L。
+\item 绝对信号S=α r(n+ns)；用已由同位素比值求出的n反算回收率r=S/[α(n+ns)]=0.85。
+\item 回收后样品氯量rn=0.0017 mol，内标氯量rns=0.00068 mol；实际总回收量=0.00238 mol。
+\item 把两种已回收物质的37Cl量相加再除以总回收量，恢复观测x=0.453，且以α乘总回收量恢复S=4760计数。
+\item 由n=ns(x标−x)/(x−x天然)求导，dn/dx=−ns(x标−x天然)/(x−x天然)²=-0.01328273245 mol/单位同位素分数。
+\item 当x接近天然丰度时，分母变小导致反演对测量误差敏感；如果两种同位素的化学回收率不同，则共同r消去的关键步骤不成立。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.002 mol；答案2 = 0.02 mol/L；答案3 = 0.85 fraction；答案4 = -0.0132827324 mol per isotope-fraction\par
+\noindent\textbf{模型前提：}
+假设无同位素交换/分馏、无其它氯来源、内标与原样完全混合；绝对响应斜率已独立标定，计数视作无随机波动的模型输入。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV3-A06 · 双弱酸物种分布与跨pH光谱的耦合解析}
+\noindent\textbf{题目}\par
+未知水样仅含单酸HA、HB两种分析物，总浓度分别记CA、CB，在两个独立的强缓冲测量池中精确控制pH为6.000和8.000；每池通过定容确保分析物总浓度均与原液相同。HA的Ka=1.00×10\textasciicircum{}-5，HB的Ka=1.00×10\textasciicircum{}-7，仅其阴离子A−、B−显色，未解离中性酸不吸光。1.00 cm池、两波长阴离子摩尔吸光系数矩阵为[[12000,2000],[3000,10000]] L mol\textasciicircum{}-1 cm\textasciicircum{}-1。已测λ1在pH6的吸光度0.3309090909和λ2在pH8的吸光度0.2717282717，另有λ2在pH6的独立检验值0.1。(1)以分布系数推导2×2联立方程并求CA、CB。(2)预报第三个吸光度并核验。(3)解释为何不能把两种弱酸都按完全解离处理，说明两个波长/两个pH提供独立信息的矩阵可逆条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对单酸HA ⇌H++A−，在固定pH下阴离子分数αA(pH)=KaA/[KaA+10\textasciicircum{}(−pH)]；HB同理。
+\item 在pH6时αA=0.9090909091、αB=0.09090909091；在pH8时αA=0.999000999、αB=0.9090909091。
+\item Beer–Lambert关系为Aλ1,pH6=(12000αA6)CA+(2000αB6)CB=0.3309090909。
+\item 另一个独立关系Aλ2,pH8=(3000αA8)CA+(10000αB8)CB=0.2717282717。
+\item 系数矩阵为[[10909.09091,181.8181818],[2997.002997,9090.909091]]，行列式D=98628644.08≠0，故两个总浓度唯一确定。
+\item 按克拉默法则CA=(m22 A1−m12 A2)/D=0.00003 mol/L，CB=(m11 A2−m21 A1)/D=0.00002 mol/L。
+\item 不参与求解的第三信号理论值Aλ2,pH6=3000αA6CA+10000αB6CB=0.1，与独立测得0.1一致。
+\item 若错误假设两酸在pH6完全解离，会高估较弱的HB离子分数并产生系统误差；可辨识性取决于D≠0而非仅有两条读数。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 3e-05 mol/L；答案2 = 2e-05 mol/L；答案3 = 0.1 absorbance；答案4 = 98628644.1 L²/mol²\par
+\noindent\textbf{模型前提：}
+酸碱平衡受外部强缓冲维持，测量时不发生化学降解或体积变化；吸光定律、两阴离子光谱系数已标定，忽略高浓度活度与交互作用。\par
+\medskip\hrule\medskip
+\subsection*{有机化学}
+\addcontentsline{toc}{subsection}{第3辑 / 有机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV3-O04 · 自催化异构化Logistic方程、最优速率与目标转化时间}
+\noindent\textbf{题目}\par
+恒容恒温假想同分异构化A+B→2B遵循速率律r=k[A][B]，k=5.000 L mol\textasciicircum{}-1 h\textasciicircum{}-1，初始[A]=0.08000、[B]=0.002000 mol/L。仅有该反应，A、B分子式及摩尔质量相同。求B(t)的解析式；B浓度升至0.06000 mol/L所需时间及A转化率；证明反应速率何时唯一达到峰值并求峰值和当时浓度；用总物料守恒与逆代入核对。题目严禁将B近似看成恒定催化剂。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 化学计量为消耗1个A净生成1个B，故C=[A]+[B]=0.082 mol/L恒定。
+\item 令b=[B]，则db/dt=k(C−b)b；由于b同时是催化剂与产物，得到非线性Logistic微分方程。
+\item 由分离变量与初始条件b(0)=0.002000，b(t)=C/[1+(0.08000/0.002000)e\textasciicircum{}(−kCt)]。
+\item 反解时间t(b)=ln\{[b/(C−b)]/[B0/A0]\}/(kC)，得到b=0.06000时t=11.44434528 h。
+\item 由b−B0为A转化量，X\_A=(0.06000−0.002000)/0.08000=0.725；此时[A]=0.022 mol/L。
+\item 将速率看成b的函数r=kb(C−b)，开口向下的二次多项式于b*=C/2=0.041 mol/L唯一达到最大。
+\item 该速率最大时刻t*=8.997266961 h，rmax=kC²/4=0.008405 mol L\textasciicircum{}-1 h\textasciicircum{}-1。
+\item 逆代入b(t目标)=0.06、b(t*)=0.041；两处均保持[A]+[B]=C，且t>0时b单调上升。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 11.4443453 h；答案2 = 0.725 fraction；答案3 = 8.99726696 h；答案4 = 0.041 mol/L；答案5 = 0.008405 mol/(L h)\par
+\noindent\textbf{模型前提：}
+理想均相不可逆自催化异构化模型，恒定k、无副反应、无体积变化及催化失活。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV3-O05 · 平行产物Eyring选择性反演与有限转化时间}
+\noindent\textbf{题目}\par
+假想有机不可逆平行一级反应A→P1、A→P2，两路共享相同的Eyring前因子kBT/h。第一路径已知活化焓95.00 kJ/mol、活化熵−30.00 J/(mol K)，300 K与340 K的产物初始速率比k1/k2依次为2.229585515和1.761186189，均视作理想精确读数。取R=8.314462618 J/(mol K)，kB=1.380649×10\textasciicircum{}-23 J/K，h=6.62607015×10\textasciicircum{}-34 J s，ki=(kBT/h)exp(ΔSi‡/R−ΔHi‡/(RT))。反演第二路径活化焓与熵；在320 K计算两速率常数、产物选择性、初始纯A总转化80\%所需时间及两产物的实际收率；检查Eyring数据与总体物料守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 定义r=k1/k2，Eyring相除得lnr=ΔΔS‡/R−ΔΔH‡/(RT)，其中差量是路径1减路径2。
+\item 由两温度比值消去熵差：ΔΔH‡=−R ln(r340/r300)/(1/340−1/300)=-5 kJ/mol。
+\item ΔΔS‡=Rlnr300+ΔΔH‡/300=-10 J/(mol K)。
+\item 据此第二路径ΔH2‡=95.00−ΔΔH‡=100 kJ/mol，ΔS2‡=−30.00−ΔΔS‡=-20 J/(mol K)。
+\item 直接代入320 K得k1=0.00005624872133 s\textasciicircum{}-1、k2=0.00002859555573 s\textasciicircum{}-1，产物分支比k1/k2=1.967044175。
+\item 两条一级路径共有初始A，A(t)/A0=exp[−(k1+k2)t]，80\%转化对应t80=ln5/(k1+k2)=18969.31612 s。
+\item 两产物相对初始A的收率分别为Y1=0.8k1/(k1+k2)=0.5303713889和Y2=0.2696286111，未反应A为0.2000。
+\item 回代温度300与340 K的Eyring速率比恢复原观测；Y1+Y2+0.2000=1，严格满足物料守恒。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 100000 J/mol；答案2 = -20 J/(mol K)；答案3 = 5.62487213e-05 s\textasciicircum{}-1；答案4 = 2.85955557e-05 s\textasciicircum{}-1；答案5 = 18969.3161 s；答案6 = 0.530371389 fraction；答案7 = 0.269628611 fraction\par
+\noindent\textbf{模型前提：}
+两路径严格一级、不可逆、常温区间内ΔH‡及ΔS‡为常量，传输系数及前因子相同，无产物副反应。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV3-O06 · 动力学拆分中剩余ee与总转化率的逆问题}
+\noindent\textbf{题目}\par
+某假想手性原料初始为严格外消旋R/S各0.5000 mol。在恒温封闭体系中，两对映体以不同的一级速率常数不可逆生成各自的PR/PS，无消旋、交叉反应或其它产物。10.000 h后测得底物总转化率X=0.4789937837，剩余底物ees=(nS−nR)/(nS+nR)=0.4218990053。反演两对映体一级速率常数、10h时产物的各自摩尔数与对映体过量eep=(nPR−nPS)/(nPR+nPS)；进一步求90\%总转化时的时间与eep。要求给出物理解唯一性说明、指数动力学回代与总物料守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 转化率定义X=1−(nR+nS)，故10h剩余底物总量为1−X=0.5210062163 mol。
+\item 从ees=(nS−nR)/(nS+nR)，解得nR=(1−X)(1−ees)/2=0.150597106 mol、nS=(1−X)(1+ees)/2=0.3704091103 mol。
+\item 独立一级模型nR=0.5exp(−kR t)、nS=0.5exp(−kS t)，得到kR=−ln(2nR)/10=0.12 h\textasciicircum{}-1、kS=0.03 h\textasciicircum{}-1。
+\item 10h产物量nPR=0.5−nR=0.349402894 mol，nPS=0.5−nS=0.1295908897 mol。
+\item 相应产物ee\_p=(nPR−nPS)/(nPR+nPS)=0.4589036682，可与剩余底物ee\_s正负方向作对照。
+\item 达到90.00\%转化时剩余总量0.1000 mol，故必须满足exp(−kR t)+exp(−kS t)=0.2000。
+\item 其左侧对t≥0严格递减，由初值2降至0，故时间根唯一；二分求得t90=53.90742857 h。
+\item 此时剩余R=0.0007754720561、S=0.09922452794 mol，产物ee\_p=0.1093878399；反代两指数函数及nR+nS=0.1 mol确认90\%转化。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.12 h\textasciicircum{}-1；答案2 = 0.03 h\textasciicircum{}-1；答案3 = 0.458903668 fraction；答案4 = 53.9074286 h；答案5 = 0.10938784 fraction\par
+\noindent\textbf{模型前提：}
+底物严格外消旋投料，反应均为不可逆一级、没有消旋或产物相互转化，分析信号对两对映体有已校准响应因子。\par
+\medskip\hrule\medskip
+\subsection*{物理化学}
+\addcontentsline{toc}{subsection}{第3辑 / 物理化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV3-P04 · 双后缀Margules液相的共沸点、汽液组成与混合稳定性}
+\noindent\textbf{题目}\par
+理想气相二元A/B在恒温下的纯组分饱和蒸气压分别PA*=80.00 kPa、PB*=40.00 kPa；液相服从二后缀Margules方程lnγA=1.500(1−xA)²，lnγB=1.500xA²。采用改进Raoult定律yiP=xiγiPi*，两组分总液相摩尔分数和为1，取正压、0<xA<1。(1)推导共沸条件，求是否存在内部共沸点及其组成、压力。(2)求xA=0.4000时泡点总压及初生蒸汽yA。(3)证明该Margules模型在全部组成范围的局部混合稳定性，并论证为何共沸点不是随意挑选的一个极值。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 采用改进Raoult定律，泡点压力P(x)=xγA PA*+(1−x)γB PB*，蒸气组成yA=xγA PA*/P。
+\item 内部共沸条件是蒸汽、液体组分相同，即yA=x；等价于γA PA*=γB PB*。
+\item 对两后缀Margules式取对数：A[(1−x)²−x²]=A(1−2x)=ln(PB*/PA*)。
+\item 因此xaz=[1+ln(PA*/PB*)/A]/2=0.7310490602，满足0<xaz<1，内部共沸存在且此式根唯一。
+\item 将xaz带回：γA=1.11460704，γB=2.229214079，泡点共沸压力Paz=89.16856318 kPa，计算yaz=0.7310490602。
+\item 在xA=0.4000时，泡点压力P=85.4221992 kPa；初生汽相yA=0.6428331289，相对于xA的富集差=0.2428331289。
+\item 理想混合熵与过剩Gibbs能给g\_mix/(RT)=xlnx+(1−x)ln(1−x)+Ax(1−x)，曲率d²g/dx²=1/x+1/(1−x)−2A。
+\item 因为1/x+1/(1−x)≥4>2A=3，故整个0<x<1范围局部稳定；共沸由汽液化学势相等与y=x决定，而非任意调参取压力极值。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.73104906 liquid mole fraction；答案2 = 89.1685632 kPa；答案3 = 85.4221992 kPa；答案4 = 0.642833129 vapor mole fraction；答案5 = 2.08604749 dimensionless curvature\par
+\noindent\textbf{模型前提：}
+气相理想、液相只使用二后缀Margules且处于单液相局部稳定区，无蒸气缔合、反应或压力导致的液相非理想压缩效应。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV3-P05 · 含惰性气体的合成氨反应平衡、总压效应与进度唯一性}
+\noindent\textbf{题目}\par
+在固定温度下，理想气相平衡N2+3H2⇌2NH3，给定标准压力p°=1.000 bar、无量纲热力学平衡常数Kp=0.5000。初始取n(N2)=1.000 mol、n(H2)=3.000 mol、n(NH3)=0、惰性气体nI=2.000 mol，在总压恒定100.0 bar下达到平衡。(1)严格由分压和标准态定义写出反应商Qp(ξ)，包括反应引起的总摩尔数变化。(2)在物理区间0<ξ<1上求唯一平衡进度、氨摩尔数和摩尔分数。(3)若温度及投料不变但总压力改为50.0 bar，重新求平衡并解释压力效应。(4)通过Qp、非负组成、总物料与方程单调性核验；不得把Kp当作未经标准化的分压乘积。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设正向反应进度ξ，平衡摩尔数分别nN2=1−ξ，nH2=3−3ξ，nNH3=2ξ，nI=2，故n总=6−2ξ。
+\item 令yi=ni/(6−2ξ)，理想气分压pi=yiP；标准化反应商Qp=(pNH3/p°)²/[(pN2/p°)(pH2/p°)³]。
+\item 代入化学计量并化简：Qp(ξ,P)=4ξ²(6−2ξ)²/[27(1−ξ)\textasciicircum{}4]×(p°/P)²；各压力统一以bar为数值单位。
+\item 固定P=100 bar，解Qp=0.5000，物理解ξ100=0.8585250533 mol，NH3=1.717050107 mol，总摩尔数=4.282949893 mol，氨摩尔分数=0.4009036177。
+\item lnQp对ξ的导数为2/ξ−4/(6−2ξ)+4/(1−ξ)，在0<ξ<1为正；Qp由0连续增至∞，故任何正K均只有一个物理根。
+\item 固定P=50 bar重解得到ξ50=0.8039372876 mol、yNH3,50=0.3660812066；可见降低压力降低平衡转化，因为反应气体总摩尔数减少2。
+\item 对100bar回代Qp=0.5，50bar回代Qp=0.5；两次剩余H2、N2均非负，nN2+nH2+nNH3+nI=6−2ξ。
+\item 不能把惰性气体排除在n总之外，它改变反应物与产物分压；也不能在两种不同压力下沿用同一个ξ。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.858525053 mol reaction extent；答案2 = 0.803937288 mol reaction extent；答案3 = 0.400903618 mole fraction；答案4 = 0.366081207 mole fraction\par
+\noindent\textbf{模型前提：}
+总压恒定但可变容的等温理想气体系，Kp不随压力变且使用p°=1bar，不考虑真实高压活度系数和反应速率限制。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV3-P06 · 非谐振动基频与热带联合反演分子振动常数及温度}
+\noindent\textbf{题目}\par
+某假想双原子分子按Morse型非谐振动模型G(v)=ωe(v+1/2)−ωexe(v+1/2)²，G和波数单位均为cm\textasciicircum{}-1。测得v=0→1基频1950.0 cm\textasciicircum{}-1、v=1→2热带1900.0 cm\textasciicircum{}-1；已将谱线波数及仪器响应归一化后的积分强度比定义为I12/I01=2 N1/N0=0.08000，其中线强度比2来自规定的振子矩阵元平方(v+1)，并假设振动态处于热平衡。取hc/kB=1.438776877 cm K。(1)反求ωe与ωexe。(2)从热带/基频强度比求振动温度T。(3)预测0→2跃迁能量对应波数与2→3热带波数，说明为何仅靠该振子近似不能预测实际0→2跃迁强度。(4)用能级差和Boltzmann关系逆向检验。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 相邻振动能级差为G(v+1)−G(v)=ωe−2ωexe(v+1)。
+\item 因此ν01=ωe−2ωexe=1950 cm\textasciicircum{}-1，ν12=ωe−4ωexe=1900 cm\textasciicircum{}-1；两式相减得ωexe=(ν01−ν12)/2=25 cm\textasciicircum{}-1。
+\item 回代得ωe=ν01+2ωexe=2000 cm\textasciicircum{}-1，属于正的非谐修正。
+\item 已按题设规范化线强度I12/I01=2(N1/N0)=0.08000，因此N1/N0=0.04。
+\item 热平衡Boltzmann分布N1/N0=exp[−(hc/kB)ν01/T]，求得T=(hc/kB)ν01/ln(2/0.08000)=871.6132783 K。
+\item 跨两级的0→2跃迁能级差ν02=G(2)−G(0)=ν01+ν12=3850 cm\textasciicircum{}-1；而2→3相邻热带ν23=ωe−6ωexe=1850 cm\textasciicircum{}-1。
+\item 将求得ωe、ωexe代回G(v)，得G1−G0=1950、G2−G1=1900 cm\textasciicircum{}-1；再代回Boltzmann式恢复0.08000强度比。
+\item 谐振子电偶极选择定则通常只允许Δv=±1；0→2是否有实际强度取决于振动波函数及偶极矩函数的非谐项，本题能算跃迁能量却不能凭已给两条谱线确定其绝对强度。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 2000 cm\textasciicircum{}-1；答案2 = 25 cm\textasciicircum{}-1；答案3 = 871.613278 K；答案4 = 3850 cm\textasciicircum{}-1；答案5 = 1850 cm\textasciicircum{}-1\par
+\noindent\textbf{模型前提：}
+Morse型振动态、处于Boltzmann热平衡，归一化强度律与矩阵元平方线性规则是题定模型，不假定光谱实验通用的所有线形因子都自动相消。\par
+\medskip\hrule\medskip
+\clearpage
+\section*{第4辑 · 题目及解答}
+\addcontentsline{toc}{section}{第4辑}
+\subsection*{无机化学}
+\addcontentsline{toc}{subsection}{第4辑 / 无机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-I07 · 磷酸盐三级质子化与沉淀临界pH}
+\noindent\textbf{题目}\par
+Ca2+总浓度0.00400 M，磷酸总浓度0.00100 M；H3PO4解离常数为10\textasciicircum{}-2、10\textasciicircum{}-7、10\textasciicircum{}-12。Ca3(PO4)2的Ksp=10\textasciicircum{}-26。缓冲pH逐渐升高，尚未出现固体时无配位和沉淀损失。求首个Ca3(PO4)2析出时的pH、游离PO4\textasciicircum{}3−、磷酸各物种分数；证明首个饱和根唯一并指出沉淀后的模型变更。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设h=[H+]，由逐级解离与磷酸总量定义D=h³+K1h²+K1K2h+K1K2K3。
+\item 游离磷酸根分数α3=K1K2K3/D，故[PO4\textasciicircum{}3−]=CP α3。
+\item 固体刚出现的边界为Ca³(CP α3)²=Ksp，导出α3=3.9528471e-7。
+\item α3随pH增大严格递增，且临界α3在(0,1)，所以唯一正根存在。
+\item 求得h=4.5544304e-7 M，pH=6.3415659，游离PO4\textasciicircum{}3−=3.9528471e-10 M。
+\item 首个饱和点固相量为0；真正沉淀后须扣除Ca/P总量，不能继续把两者当固定自由浓度。
+\item 最后将计算所得各物种、反应进度和实验响应分别代回题设守恒及质量作用式，三组归一化方程残差：4.441e-16；1.059e-22；0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 6.34156593；答案2 = 3.95284708e-10；答案3 = 3.95284708e-07\par
+\noindent\textbf{模型前提：}
+理想浓度型溶度积，外部强缓冲固定pH，忽略Ca-磷酸配合及异相成核动力学。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-I08 · Cu(I)歧化的金属析出与非线性守恒}
+\noindent\textbf{题目}\par
+1.000 L溶液初始仅有Cu+ 0.02000 M，假想歧化2Cu+⇌Cu2++Cu(s)的浓度型常数K=[Cu2+]/[Cu+]²=75 L/mol。形成固态Cu时其活度为1，不发生络合、水解和其他氧化还原。求Cu+/Cu2+平衡浓度、Cu(s)析出mol及质量，并证明物理解唯一、核验铜原子及电子转移。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设反应进度x，溶液[Cu+]=C−2x，[Cu2+]=x，固态Cu=x mol/L。
+\item 由K=x/(C−2x)²，物理约束为0<x<C/2。
+\item 左侧在该区间严格递增，且值从0到无穷，所以唯一根。
+\item 解得x=0.0056574145 M，[Cu+]=0.0086851709 M，[Cu2+]=0.0056574145 M。
+\item 铜固态生成x×1.000=0.0056574145 mol，质量x×63.546=0.35950606 g。
+\item 原子守恒(C−2x)+x+x=C；Cu+中一半被氧化、一半被还原，电子计量互相抵消。
+\item 最后将计算所得各物种、反应进度和实验响应分别代回题设守恒及质量作用式，三组归一化方程残差：-6.661e-16；0.000e+0；0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00565741454；答案2 = 0.00868517092；答案3 = 0.359506064\par
+\noindent\textbf{模型前提：}
+假想化学常数、固相已成核；支持电解质与反离子补足电中性。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-I09 · 尖晶石MgFe2O4反位分布与亚晶格磁矩}
+\noindent\textbf{题目}\par
+MgFe2O4理想共线尖晶石写为(Mg\_(1−x)Fe\_x)[Mg\_xFe\_(2−x)]O4，Mg2+为0自旋磁矩、Fe3+为5μB，A/B亚晶格反平行，低温饱和总磁矩测得3.00μB/化学式单位。求反位参数x、两类位置的占有数、子晶格磁矩、总电荷与磁矩守恒；讨论哪种磁性前提下此反演失效。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item A位总阳离子为1，B位为2；总Mg=1、Fe=2，化学式满足位点守恒。
+\item A位磁矩μA=5x，B位μB=5(2−x)，净磁矩=10−10x。
+\item 由3.00=10−10x，得x=0.7，这是单调线性方程的唯一解。
+\item A位Mg=0.3、Fe=0.7，B位Mg=0.7、Fe=1.3。
+\item 磁矩分别3.5及6.5μB，差为3.00μB。
+\item 电荷为2×1+3×2=8，与4个O2−抵消；若自旋倾斜、杂相或轨道贡献存在，反演不再唯一。
+\item 最后将计算所得各物种、反应进度和实验响应分别代回题设守恒及质量作用式，三组归一化方程残差：0.000e+0；0.000e+0；0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.7；答案2 = 0.3；答案3 = 1.3\par
+\noindent\textbf{模型前提：}
+假定Fe高自旋，亚晶格完全共线且Mg无磁性，忽略磁性细结构。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-I10 · Donnan膜平衡、固定电荷与电渗透势}
+\noindent\textbf{题目}\par
+298.15 K固定负电荷密度0.02500 M的离子交换膜与外界NaCl 0.01000 M溶液接触，Na+/Cl−可穿膜且外液浓度固定，理想电化学势平衡、膜内电中性。求膜内两离子浓度、电势差φ内−φ外、可移动离子产生的渗透压差及根的唯一性；不能简单忽略Cl−。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设c+和c−为膜内两离子浓度，固定负电荷要求c+−c−=X。
+\item Donnan电化学势相等导出c+c−=cs²。
+\item 联立得c+=[X+√(X²+4cs²)]/2=0.028507811 M，c−=0.0035078106 M，另一二次根为负。
+\item Na+电化学势给φ内−φ外=−RT/F ln(c+/cs)=-0.026915366 V。
+\item 可移动离子理想渗透压差为RT(c++c−−2cs)，乘1000把M转mol/m³，结果=29786.209 Pa。
+\item 检验电荷与Donnan乘积，c−保持正数；渗透压不包括聚合物自身贡献。
+\item 最后将计算所得各物种、反应进度和实验响应分别代回题设守恒及质量作用式，三组归一化方程残差：0.000e+0；-2.711e-16；0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0285078106；答案2 = 0.00350781059；答案3 = -0.0269153664；答案4 = 29786.2086\par
+\noindent\textbf{模型前提：}
+理想稀溶液、体积与固定电荷由题设保持不变，不考虑非理想膜吸附。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-I11 · LiCoO2限量脱锂的容量—价态—电荷联合计量}
+\noindent\textbf{题目}\par
+1.000 mol LiCoO2按照LiCoO2→Li\_(1−x)CoO2+xLi++xe−脱锂，外电路总电量23156.4797 C，法拉第效率80.0\%，F=96485.33212 C/mol，氧含量不变，不发生其他电极反应。求x、剩余Li、Co平均价态、脱锂容量mAh，以及损失电量；用电荷中性与电量守恒验证，明确总电量不等于有效电量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 真正参与Li提取的电子电量Qeff=0.8Q=18525.184 C。
+\item 1 mol材料脱去x mol Li并送出x mol电子，x=Qeff/F=0.192。
+\item 剩Li=1−x=0.808，氧仍为2个−II。
+\item 晶格电中性使(1−x)+vCo−4=0，故vCo=3+x=3.192。
+\item Qeff换算为mAh除以3.6，得5145.8844 mAh；未用于脱锂的副反应电量为4631.2959 C。
+\item 反代Co价态和Li分数使正价总数恰为4，且xF=Qeff；不能按总电量计算Co价态。
+\item 最后将计算所得各物种、反应进度和实验响应分别代回题设守恒及质量作用式，三组归一化方程残差：0.000e+0；0.000e+0；0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.192；答案2 = 0.808；答案3 = 3.192；答案4 = 5145.88438\par
+\noindent\textbf{模型前提：}
+Li层状材料中仅发生明示脱锂反应，氧不流失，法拉第效率独立给定。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-I12 · 氧空位—受主缺陷缔合与两种有限位点守恒}
+\noindent\textbf{题目}\par
+某氧化物固定受主A位点分数0.01200与氧空位V分数0.02000，形成中性1:1缺陷缔合对AV，浓度标准态下K=[AV]/([A][V])=130，位点分数按每化学式单位定义。求游离A、V、AV平衡数量及双方配对比例；要求证明物理根唯一，分析何时可以使用全部受主缔合的渐近近似。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设缔合分数x，游离受主为A−x，游离空位V−x。
+\item 平衡给x=K(A−x)(V−x)，物理区间0<x<min(A,V)。
+\item 函数x/[(A−x)(V−x)]在此区间由0单调增至无穷，故唯一。
+\item 求得x=0.0074417263，游离A=0.0045582737，游离V=0.012558274。
+\item 两种配对率分别x/A=0.62014386和x/V=0.37208632，不可混同。
+\item 当K×(V−A)远大于1且V>A时，受主接近全部结合；本题应使用严格二次式而非预先饱和假设。
+\item 最后将计算所得各物种、反应进度和实验响应分别代回题设守恒及质量作用式，三组归一化方程残差：0.000e+0；0.000e+0；0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00744172631；答案2 = 0.00455827369；答案3 = 0.0125582737；答案4 = 0.620143859；答案5 = 0.372086316\par
+\noindent\textbf{模型前提：}
+位点标准态常数按题设无量纲定义，忽略缺陷关联静电及晶格应变。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-I13 · 双金属竞争配位的非线性选择性与配体守恒}
+\noindent\textbf{题目}\par
+1 L理想溶液含Cu2+总量0.02500 M、Ni2+总量0.04000 M、单齿单负配体L总量0.01500 M。唯一络合物CuL+、NiL+，条件形成常数分别100、20 L/mol。求游离配体、两种游离金属、两络离子、Cu分得的络合配体比例以及Cu/Ni优先配位系数；证明该平衡存在唯一物理解。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设l为游离配体，每种金属的络合量为CM βl/(1+βl)。
+\item 游离浓度因此为Cu=A/(1+100l)、Ni=B/(1+20l)。
+\item 配体守恒l+A100l/(1+100l)+B20l/(1+20l)=L，左端严格递增。
+\item 在0与L两端方程异号，故存在唯一根l=0.0043051476 M。
+\item 游离Cu=0.017476226、Ni=0.036828921 M，络合Cu=0.0075237735、Ni=0.0031710789 M。
+\item Cu所占结合配体分数=0.70349485，络合/游离比之比严格为100/20=5。
+\item 最后将计算所得各物种、反应进度和实验响应分别代回题设守恒及质量作用式，三组归一化方程残差：0.000e+0；0.000e+0；-1.110e-15。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00430514763；答案2 = 0.0174762265；答案3 = 0.0368289211；答案4 = 0.00752377351；答案5 = 0.00317107885\par
+\noindent\textbf{模型前提：}
+不同金属均无水解或其他配体，缓冲与反离子维持题定条件形成常数。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-I14 · 混合电位理论反演铁的腐蚀电流与质量}
+\noindent\textbf{题目}\par
+假想铁腐蚀时阳极Fe→Fe2++2e和阴极氧还原分别满足Tafel模型ia(E)=0.000300 exp[(E−0.250)/0.080] A、ic(E)=0.002000 exp[−(E−0.450)/0.120] A，电势以V计。忽略传质限制，电化学腐蚀电位满足两电流绝对值相等。求E\_corr、腐蚀电流、恒定一小时腐蚀电量与铁损失质量，并证明唯一解和电子守恒（MFe=55.845 g/mol）。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 阴极/阳极电流流向相反，混合电位要求ia(E)=ic(E)。
+\item 取对数并移项，E(1/ba+1/bc)=ln(ic0/ia0)+Ea/ba+Ec/bc。
+\item 指数函数一增一减，因此正交点唯一，解E=0.42106176 V。
+\item 腐蚀电流i\_corr=0.002545429 A；一小时通过Q=i×3600=9.1635443 C。
+\item Fe2+需要每Fe两个电子，失铁n=Q/(2F)，质量=0.002651896 g。
+\item 将E\_corr代入两Tafel方程恢复相同电流；不能将阴极电子电量又额外加一次。
+\item 逆向核验：重代入原模型的元素/电荷与平衡方程，归一化残差依次为：0.000e+0、6.661e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.421061759；答案2 = 0.00254542896；答案3 = 9.16354426；答案4 = 0.00265189598\par
+\noindent\textbf{模型前提：}
+假想恒定电流腐蚀，不考虑溶解膜钝化、局部氧浓差、实际氧电极机理或几何面积变化。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-I15 · 氧缺陷生成的质量作用律与氧分压的六分之一次幂关系}
+\noindent\textbf{题目}\par
+假想氧化物晶格中氧空位产生遵循 O\_O\textasciicircum{}×⇌V\_O\textasciicircum{}\{••\}+2e′+1/2 O2(g)，所有浓度用同一无量纲晶格标准浓度表示、氧气逸度比pO2/p°已知。无其它电子/受主缺陷，电中性要求n\_e=2[V]，理想缺陷质量作用常数K=[V] n\_e² (pO2/p°)\textasciicircum{}(1/2)=4.00×10\textasciicircum{}-12。先令pO2/p°=1.00×10\textasciicircum{}-4，求氧空位、电子浓度及在pO2/p°增加到1.00×10\textasciicircum{}-2时两浓度的变化。推导−1/6氧分压幂律、证明正根唯一，并核验电子电荷及平衡常数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 在无其他载流子和固定受主的前提下，一个+2空位贡献两个电子，故n\_e=2v，其中v=[V\_O\textasciicircum{}\{••\}]。
+\item 由质量作用式K=v n\_e² sqrt(pO2/p°)，代入电中性得到K=4v³ sqrt(pO2/p°)。
+\item 因此v=[K/(4sqrt(pO2/p°))]\textasciicircum{}(1/3)，即v正比于(pO2/p°)\textasciicircum{}(-1/6)，物理根唯一且非负。
+\item 低氧分压p1=10\textasciicircum{}-4时v1=0.000464158883，电子浓度n1=0.000928317767。
+\item 高氧分压p2=10\textasciicircum{}-2时v2=0.000215443469，电子浓度n2=0.000430886938；提高氧分压使还原性空位和电子减少。
+\item 浓度比v2/v1=0.464158883，与(p2/p1)\textasciicircum{}(-1/6)=0.464158883吻合；两条件下n\_e−2v=0，并恢复原K。
+\item 独立复算：两种氧分压下分别检查 n\_e−2[V]=0 及 [V] n\_e² √(pO2/p°)=4.00×10\textasciicircum{}-12，计算残差依次为 1.212e-15、1.414e-15、0.000e+0；体相氧原子总量需结合真实晶格位点容量另作守恒。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.000464158883；答案2 = 0.000928317767；答案3 = 0.000215443469；答案4 = 0.000430886938；答案5 = 0.464158883\par
+\noindent\textbf{模型前提：}
+稀缺氧位空位与自由电子构成唯一缺陷补偿机制，晶格标准态为无量纲分数，氧气逸度按题定理想比值计算。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-I16 · La/Sr锰氧化物氧空位与Mn混合价联合反演}
+\noindent\textbf{题目}\par
+理想La\_(1−x)Sr\_xMnO\_(3−δ)中x=0.2500、δ=0.1200，La为+3、Sr为+2、氧为−2，Mn只含+3、+4。热重给出了氧缺失量但不改变阳离子位点。求Mn平均价态、Mn4+位点比例、每mol样品的氧质量、总摩尔质量、相对全氧状态的氧损失质量及电荷守恒，所需摩尔质量La138.905 Sr87.62 Mn54.938 O15.999 g/mol。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item A位净正价3(1−x)+2x=3−x=2.75。
+\item 电中性条件(3−x)+vMn−2(3−δ)=0，得vMn=3+x−2δ=3.01。
+\item 在+3/+4二价态假设下，Mn4+比例f=vMn−3=0.01。
+\item 氧位实占3−δ=2.88，每mol材料氧质量=46.07712 g。
+\item 总摩尔质量=227.09887 g/mol，若全氧则差额δ×15.999=1.91988 g/mol。
+\item 对La/Sr/Mn/O四种元素及价态核验：Mn平均价态为3+f，且Sr带来的Mn升价x被氧空位的2δ部分抵消。
+\item 逆向核验：重代入原模型的元素/电荷与平衡方程，归一化残差依次为：0.000e+0、-2.220e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 3.01；答案2 = 0.01；答案3 = 227.09887；答案4 = 1.91988\par
+\noindent\textbf{模型前提：}
+理想化混合价氧化物，无Mn2+或Mn5+及电子缺陷、氧以晶格O2−存在。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-I17 · 三状态铁配位谱学组分的电子与配体账本}
+\noindent\textbf{题目}\par
+假想Fe样品的物种恰好为游离Fe2+、Fe(II)L与Fe(III)L2，光谱响应因子已经独立校正，因此三态的铁原子数比例分别是0.1000、0.6000、0.3000，总铁量0.02000 mol。L为单负离子。求Fe2+与Fe3+总mol、平均铁氧化态、络合配体消耗、还原所有Fe(III)所需电子mol，以及铁对配体电荷平衡贡献，并说明光谱面积未经校正为什么不能直接当摩尔分数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Fe(II)包括游离及一配位形式，合计分数0.1+0.6=0.7。
+\item 所以Fe(II)总量=0.014 mol，Fe(III)总量=0.006 mol。
+\item 平均氧化态2×0.7+3×0.3=2.3，铁本身正电当量=0.046 mol电荷。
+\item 配体量=0.6×n+2×0.3×n=0.024 mol。
+\item 将Fe(III)一电子还原为Fe(II)需n(e−)=0.006 mol。
+\item 逐物种检查铁总数、平均价态与配体数量；电荷不足部分由反离子承担，不可把配体负电计成铁氧化数。
+\item 逆向核验：重代入原模型的元素/电荷与平衡方程，归一化残差依次为：-3.469e-18、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.014；答案2 = 0.006；答案3 = 2.3；答案4 = 0.024\par
+\noindent\textbf{模型前提：}
+题设检测响应已校正，Fe(II)L与Fe(III)L2为完全指定的单配体物种，无混合价电子离域。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-I18 · 单侧络合氧化还原对的条件电势与电子计量}
+\noindent\textbf{题目}\par
+298.15K，假想M(III)/M(II)可逆一电子氧化还原对E°=0.3200V，仅M(III)与配体L形成ML，β=0.5000 L/mol，游离L由储液恒定为0.02500M。氧化态总浓度0.002000 M、还原态0.008000 M，忽略其它络合。求自由M(III)、络合M(III)、条件形式电位E°′、实际平衡电位，以及1L样品氧化额外0.001mol还原态所需电量；检验Nernst两种写法等价。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 因氧化态总量o=[MIII](1+βL)，游离MIII=0.0019753086 M。
+\item 络合MIII浓度=o−自由=0.000024691358 M。
+\item Nernst原式E=E°+(RT/F)ln([MIII]/[MII])。
+\item 以氧化态总量替代得到条件电位E°′=E°−(RT/F)ln(1+βL)=0.31968083 V。
+\item 终态E=E°′+(RT/F)ln(o/red)=0.28406336 V。
+\item 额外氧化0.001 mol M(II)需1电子/mol，Q=0.001F=96.485332 C；电位会随反应变，不等于固定E×Q的可逆总功。
+\item 逆向核验：重代入原模型的元素/电荷与平衡方程，归一化残差依次为：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00197530864；答案2 = 2.4691358e-05；答案3 = 0.319680833；答案4 = 0.284063356；答案5 = 96.4853321\par
+\noindent\textbf{模型前提：}
+仅M(III)络合，游离L由大储液固定，热力学活度以理想浓度比近似。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-I19 · 稀释诱发单配位络合物解离的双状态求根}
+\noindent\textbf{题目}\par
+1L假想M(III)溶液含金属总量0.01800 mol、单齿配体L总量0.01000mol，只允许ML2+存在，形成常数1500 L/mol。将全部溶液以配位惰性的缓冲溶剂稀释至2.000L，温度与pH不变。求稀释前后两状态的游离配体浓度、游离金属浓度、络合量与络合分数，证明各状态根唯一，解释为什么物种浓度不能仅整体除以2。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 任一体积下[M]=CM/(1+βl)，[ML]=CMβl/(1+βl)，l=[L]游离。
+\item 配体守恒l+CMβl/(1+βl)=CL，对l严格递增；0与CL夹出唯一根。
+\item 初态CM=.018、CL=.010 M，求得l0=0.00071091532 M、络合量c0=0.0092890847 M。
+\item 初态自由金属=0.0087109153 M，络合分数=0.51606026。
+\item 稀释后CM=.009、CL=.005 M，必须重新求根l1=0.00062939814 M，络合量c1=0.0043706019 M。
+\item 新状态自由金属=0.0046293981 M，络合分数=0.48562243；两状态金属与配体均分别守恒，而络合物的分数因浓度降低发生变化。
+\item 逆向核验：重代入原模型的元素/电荷与平衡方程，归一化残差依次为：-1.735e-16、-1.735e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.000710915317；答案2 = 0.00928908468；答案3 = 0.000629398139；答案4 = 0.00437060186；答案5 = 0.51606026；答案6 = 0.485622429\par
+\noindent\textbf{模型前提：}
+仅允许1:1金属配体络合、两次平衡充分达成，稀释不改温度、条件形成常数及pH。\par
+\medskip\hrule\medskip
+\subsection*{分析化学}
+\addcontentsline{toc}{subsection}{第4辑 / 分析化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-A07 · 两点非线性Langmuir传感校准的容量与亲和常数反演}
+\noindent\textbf{题目}\par
+某分析传感器在给定温度下服从q=qmax Kc/(1+Kc)，q单位mmol/g、c单位mol/L。两份精确标准样c1=0.00200M、c2=0.00600M分别产生q1=0.0200、q2=0.0400mmol/g。传感膜无其他吸附态、浓度由大储液固定。反求qmax与K，预测c3=0.00400M的读数，证明正参数解唯一，并指出在高浓度饱和区反演灵敏度为何下降。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 逆变换得到c/q=1/(K qmax)+c/qmax。
+\item 将两标准点变为(c1,c1/q1)、(c2,c2/q2)，其直线斜率等于1/qmax。
+\item 斜率=12.5，故qmax=0.08 mmol/g。
+\item 截距=0.075，所以K=1/(截距×qmax)=166.666667 L/mol。
+\item 预测c3读数q3=qmax Kc3/(1+Kc3)=0.032 mmol/g。
+\item 斜率和截距均正，两个不同浓度对应唯一qmax,K；在Kc≫1时q≈qmax，dq/dc衰减使K难由饱和区准确估计。
+\item 反算检验：采用非拟合的守恒、标准加入或校准方程复原全部读数；三个归一化残差为0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.08；答案2 = 166.666667；答案3 = 0.032\par
+\noindent\textbf{模型前提：}
+一类可逆均匀吸附位点，忽略多层吸附、扩散极化、吸附质质量变化。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-A08 · 离子选择电极双次标准加入的电势差反演}
+\noindent\textbf{题目}\par
+298.15K单价阳离子离子选择电极E=E°+RT/F ln(c/c°)，E°未知但稳定，响应近似理想。未知水样初始浓度c，独立平行等终体积测量池中加标浓度增量s=0.000600M，观测电势变化ΔE=0.00916389922 V；第二平行池加标0.001200M。求原样c，预测第二次电势差并用两份数据检验理想Nernst响应；再指出为何未校准E°时单个电势无法定量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对加标与原样相减以消去未知E°：ΔE=(RT/F)ln[(c+s)/c]。
+\item 令g=RT/F=0.0256925791 V，整理e\textasciicircum{}(ΔE/g)=1+s/c。
+\item 因此c=s/[exp(ΔE/g)−1]=0.0014 M。
+\item 第二平行池预测ΔE2=g ln[(c+0.001200)/c]=0.0159047138 V。
+\item 两次加标的导出浓度必须一致；原样电势本身E°与lnc共线而不可辨识。
+\item 同终体积、无基质效应和一价离子活度等于浓度是该反演成立的必要条件。
+\item 反算检验：采用非拟合的守恒、标准加入或校准方程复原全部读数；三个归一化残差为-1.110e-16、0.000e+0、-1.110e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0014；答案2 = 0.0159047138；答案3 = 0.0256925791\par
+\noindent\textbf{模型前提：}
+大储液等终体积加标避免体积差；电极无漂移、无交叉响应和液接电势改变。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-A09 · 非延长型探测器死时间校正后的同位素原子分数}
+\noindent\textbf{题目}\par
+质谱探测器为非延长型死时间模型，实测两同位素峰计数率m1=5200 s\textasciicircum{}-1、m2=3400 s\textasciicircum{}-1，死时间τ=20.0 μs。真实计数率n与实测m的关系为m=n/(1+nτ)。假设两同位素传输灵敏度与自然背景相同，信号完全来自待测元素。反推两真实计数率、真实同位素比及同位素1的原子分数，并证明反演所需mτ<1的唯一性和误差方向。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 死时间正向关系m=n/(1+nτ)，整理m+n mτ=n。
+\item 因此真实速率n=m/(1−mτ)；该式只有mτ<1时为正且有限。
+\item 得n1=5803.57143 s\textasciicircum{}-1、n2=3648.06867 s\textasciicircum{}-1。
+\item 真实比值n1/n2=1.59086134，同位素1原子分数n1/(n1+n2)=0.614027975。
+\item 由于高计数率峰的死时间损失更严重，原始比值m1/m2低估真实同位素1相对丰度。
+\item 代回m=n/(1+nτ)严格复原两峰计数，且二者mτ均小于1，反演唯一。
+\item 反算检验：采用非拟合的守恒、标准加入或校准方程复原全部读数；三个归一化残差为0.000e+0、2.220e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 5803.57143；答案2 = 3648.06867；答案3 = 1.59086134；答案4 = 0.614027975\par
+\noindent\textbf{模型前提：}
+无峰间串扰、同位素分馏、计数背景及不同探测效率；计数率按理想精确输入处理。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-A10 · 三组分三波长线性光谱反演及响应矩阵可辨识性}
+\noindent\textbf{题目}\par
+三种互不反应发色物X/Y/Z的三波长摩尔吸收系数矩阵按行依次为(10000,2000,1000)、(2000,9000,3000)、(1000,3000,8000) L mol\textasciicircum{}-1 cm\textasciicircum{}-1，池长1.00cm，实测吸光度向量为(0.35,0.27,0.17)。要求通过消元求三浓度，给出矩阵行列式与惟一性判据，并预测取原样5mL定容到25mL后第二波长的响应；讨论仪器空白不为零时必须先处理什么。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 线性叠加给A=M c，待求c=(cX,cY,cZ)\textasciicircum{}T。
+\item 列出三个方程：10000x+2000y+1000z=0.35，2000x+9000y+3000z=0.27，1000x+3000y+8000z=0.17。
+\item 行列式det M=601000000000≠0，因此系统存在唯一解。
+\item 高斯消元得x=0.00003、y=0.00002、z=0.00001 mol/L，三者为正。
+\item 五倍稀释后各浓度为原值/5，第二波长吸光度=0.054。
+\item 必须先扣除波长各自的空白/基线，并核验矩阵条件数与噪声；三个吸光度不能在基线未知时同时识别三浓度及三空白。
+\item 反算检验：采用非拟合的守恒、标准加入或校准方程复原全部读数；三个归一化残差为0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 3e-05；答案2 = 2e-05；答案3 = 1e-05；答案4 = 6.01e+11；答案5 = 0.054\par
+\noindent\textbf{模型前提：}
+三组分没有相互转化、可加吸收、光程相同、无散射及自吸收。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-A11 · 双组分差异反应动力学与时间分辨吸光度解混}
+\noindent\textbf{题目}\par
+某光谱λ处两种反应物X、Y的摩尔吸光系数分别5000、2000 L mol\textasciicircum{}-1 cm\textasciicircum{}-1，光程1.00cm；两物独立不可逆一级降解，kX=0.1000 min\textasciicircum{}-1、kY=0.0400 min\textasciicircum{}-1，产物不吸光。测得初始吸光度A0=0.9及t=10.00min吸光度A10=0.452067739。反演初态两物浓度、10min残留物总浓度及对某时间T的预测吸光度函数；证明kX≠kY是可辨识的必要条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 令U=εXcX、V=εYcY，初态A0=U+V。
+\item 10min吸光A10=Ue\textasciicircum{}(−kX t)+Ve\textasciicircum{}(−kY t)。
+\item 消元得U=[A10−A0e\textasciicircum{}(−kYt)]/[e\textasciicircum{}(−kXt)−e\textasciicircum{}(−kYt)]=0.5。
+\item 因此V=A0−U=0.4，cX=U/5000=0.0001 M，cY=V/2000=0.0002 M。
+\item 10min总残留浓度=0.000170851953 M。
+\item 通式A(T)=5000cXe\textasciicircum{}(−kXT)+2000cYe\textasciicircum{}(−kYT)；若kX=kY，矩阵两行成比例，无法用两时刻区分组分。
+\item 反算检验：采用非拟合的守恒、标准加入或校准方程复原全部读数；三个归一化残差为0.000e+0、5.551e-17、-4.066e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0001；答案2 = 0.0002；答案3 = 0.000170851953\par
+\noindent\textbf{模型前提：}
+严格一级、产物无吸收、未见混合扩散与竞争反应，时间和消光系数独立标定。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-A12 · 三阶段滴定对混合两性碳酸盐与强碱的定量反演}
+\noindent\textbf{题目}\par
+25.00 mL分析样品只含Na2CO3、NaHCO3与NaOH三种形式组分，分别以nC、nB、nOH计mol，0.1000M HCl滴定。假设理想分离的三个端点可以独立定量识别：第一次专指NaOH耗酸量V1=0.005 L，第二次从原样滴定至CO3\textasciicircum{}2−→HCO3−而尚不使原生HCO3−耗酸，累计V2=0.011 L，第三次全部HCO3−转CO2累计V3=0.025 L。求三个起始mol数、浓度及每阶段电子中性的化学计量；解释实测滴定曲线未必分辨这三端点。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 分别记OH、CO3、HCO3初始物质的量x、y、z。
+\item 第一独立端点只含OH−消耗，所以x=CHCl V1=0.0005 mol。
+\item 第二端点酸耗x+y，故y=CHCl(V2−V1)=0.0006 mol。
+\item 第三完全转成CO2时酸耗x+2y+z，所以z=CHCl(V3−2V2+V1)=0.0008 mol。
+\item 除以样品体积0.02500L，分别得到cOH=0.02、cCO3=0.024、cHCO3=0.032 M。
+\item 核对总酸需量x+2y+z=0.0025 mol；现实中强碱与碳酸盐端点可能重叠，此为题定理想独立观测模型。
+\item 反算检验：采用非拟合的守恒、标准加入或校准方程复原全部读数；三个归一化残差为1.735e-18、0.000e+0、2.602e-18。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0005；答案2 = 0.0006；答案3 = 0.0008；答案4 = 0.02；答案5 = 0.024；答案6 = 0.032\par
+\noindent\textbf{模型前提：}
+三个理想端点已通过独立指示或仪器分辨，忽略CO2逸散与活度修正；不可把理想观测当作一般滴定曲线必然可得。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-A13 · 弱络合掩蔽下的络合滴定条件形成反演}
+\noindent\textbf{题目}\par
+样品中二价金属M总浓度0.01500M，有某中性掩蔽配体S的自由浓度由外部缓冲储液钳定为0.005000M。条件稳定常数β(MS)=140 L/mol，只有M2+和MS2+存在。加入另一检测络合剂D前先算可用于络合滴定的游离金属、掩蔽分数与要使总金属90.0\%转移为MD所需的自由D浓度（条件形成常数βMD=1000 L/mol，假定此时S仍被钳定、两络合物互斥）。须联立两竞争物种，并核验总金属守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 无D时M总量=C=[M](1+βS[S])，得游离M=0.00882352941 M。
+\item 初始MS浓度=0.00617647059 M，掩蔽分数=0.411764706。
+\item 加入D后总金属C=[M](1+βS[S]+βD[D])。
+\item 目标MD分数0.9=βD[D]/(1+βS[S]+βD[D])。
+\item 令y=βD[D]，则y=9(1+βS[S])，得自由D=0.0153 M。
+\item 此时游离M=C/(1+βS[S]+y)，MS和MD由各自形成常数计算；三者之和必须等于C。
+\item 反算检验：采用非拟合的守恒、标准加入或校准方程复原全部读数；三个归一化残差为0.000e+0、2.220e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00882352941；答案2 = 0.00617647059；答案3 = 0.0153\par
+\noindent\textbf{模型前提：}
+外部缓冲储液固定S，条件形成常数恒定且忽略其它络合物；D可加入到指定自由浓度。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-A14 · 双电位窗库仑信号分离二金属物质的量}
+\noindent\textbf{题目}\par
+一份100.0mL样品仅含假想金属X2+和Y+，在两个独立选择性电位窗的完全电沉积库仑测试中，第一窗读数Q1=20.2619197 C且响应为2FnX+FnY；第二窗读数Q2=17.3673598 C且响应为FnX+2FnY（由已知电极交叉效率标定），无空白或副反应。求原样两种离子mol及浓度，计算总原子量与各窗交叉响应贡献，证明响应矩阵行列式非零并复算电荷。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两窗已知响应分别为Q1/F=2nX+nY与Q2/F=nX+2nY。
+\item 系数矩阵[[2,1],[1,2]]行列式为3，故物质的量唯一可反演。
+\item 消元得nX=(2Q1−Q2)/(3F)=0.00008 mol。
+\item 同理nY=(2Q2−Q1)/(3F)=0.00005 mol。
+\item 浓度分别为nX/0.1000=0.0008、nY/0.1000=0.0005 M。
+\item 第一窗X贡献2FnX=15.4376531 C、Y贡献FnY=4.82426661 C；第二窗交叉贡献按FnX与2FnY相加；两个读数均恢复。
+\item 验证：将反演未知量回代所有独立物料、电荷或校准响应，三个残差为0.000e+0、0.000e+0、2.220e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 8e-05；答案2 = 5e-05；答案3 = 0.0008；答案4 = 0.0005\par
+\noindent\textbf{模型前提：}
+第二电位窗的交叉效率由独立标准标定，题设信号是理想线性电子当量组合，不代表任意两电极真实相同机制。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-A15 · 三点外标回归与非零截距下的逆预测}
+\noindent\textbf{题目}\par
+仪器外标校准三个样品浓度10.0、30.0、50.0 μmol/L，信号分别1.200、4.100、7.000单位，噪声可忽略，假设响应直线S=kc+b但b未知。某未知样品稀释5.00倍后测得S=5.250。求真实校准斜率、截距、稀释后浓度、原样浓度及第二标准的插值偏差；解释错误强迫零截距会造成的系统误差，并逐点验证模型。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 最小二乘线性拟合对等间隔三个精确共线标准可由首尾计算k=(S50−S10)/(50−10)=0.145。
+\item 截距b=S10−10k=-0.25，不是零。
+\item 预测中间标准S30=30k+b=4.1，与观测4.100一致。
+\item 未知稀释样c=(5.250−b)/k=37.9310345 μmol/L。
+\item 原样由于五倍稀释，c原=5c=189.655172 μmol/L。
+\item 若强行取b=0，所有标准点拟合将偏移且低浓度比例误差尤其大；严格校准需额外传播信号不确定度而不能仅由三个无噪声点推断精度。
+\item 验证：将反演未知量回代所有独立物料、电荷或校准响应，三个残差为0.000e+0、0.000e+0、-8.882e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.145；答案2 = -0.25；答案3 = 37.9310345；答案4 = 189.655172\par
+\noindent\textbf{模型前提：}
+按题设三个理想共线标准，无异方差及基体抑制；未提供实际重复测量不能推断检出限。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-A16 · 同位素内标法与化学回收率的分离}
+\noindent\textbf{题目}\par
+某色谱质谱测试中未知分析物X的原样物质的量nX未知，已知稳定同位素内标加入量0.000300mol。两个物种同量损失且最终共同回收率75.0\%，仪器响应因子为AX=0.100×回收后X mol、AIS=0.150×回收后内标mol。测得峰面积比AX/AIS=5.55555556，另有独立回收率实验75.0\%。求原始nX、回收后nX、理论峰面积和分离损失mol，说明峰比值为何自动消去共同回收率。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 定义初始分析物nX和内标nIS=0.000300mol，两个物种回收率同为r=0.7500。
+\item 峰面积比RA=.100 r nX/(.150 r nIS)=(.100/.150)(nX/nIS)，共同r完全消去。
+\item 由所给RA反算nX=RA×(.150/.100)×nIS=0.0025 mol。
+\item 回收后X物质的量r nX=0.001875 mol，损失=0.000625 mol。
+\item 回收后内标=0.000225 mol，AX=0.0001875，AIS=0.00003375。
+\item 两峰面积的绝对值取决于回收率，而比值不依赖它；若内标与目标组分分馏或不同回收率，比例定量不成立。
+\item 验证：将反演未知量回代所有独立物料、电荷或校准响应，三个残差为-8.000e-10、8.882e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0025；答案2 = 0.001875；答案3 = 0.000625；答案4 = 0.0001875；答案5 = 3.375e-05\par
+\noindent\textbf{模型前提：}
+两个物种具有相同损失/回收率，响应因子已校准，峰比值按题示有效数字处理。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-A17 · 弱酸两相萃取分配系数的pH依赖与元素守恒}
+\noindent\textbf{题目}\par
+100.0mL水样初始含单元酸HA总分析浓度0.002000 M；与50.0mL新鲜有机相充分平衡，缓冲水相pH=6.000，Ka(HA)=10\textasciicircum{}-5。有机相只溶解中性HA，分配常数P=[HA]有机/[HA]水=4.000；水相HA⇌H++A−快速达到平衡且没有其他反应。求水相中性分数、水相总酸终浓度、有机相浓度、萃取率及萃取后水相pH=6条件下的HA/A−浓度；严格写出两相酸总物料守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 水相中性HA所占总酸分数α0=h/(h+Ka)=0.0909090909。
+\item 因此分配比D=[酸]有机/[酸]水,total=Pα0=0.363636364。
+\item 酸初始mol数n0=0.1000×0.002000=0.0002。
+\item 平衡守恒n0=Vw cw+Vo Dcw，所以cw=n0/(Vw+VoD)=0.00169230769 M。
+\item 有机相浓度co=Dcw=0.000615384615 M，萃取率Vo co/n0=0.153846154。
+\item 水相HA=(1−frac)cw=0.000153846154 M、A−=frac cw=0.00153846154 M；两相加总恢复初态mol数。
+\item 验证：将反演未知量回代所有独立物料、电荷或校准响应，三个残差为0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0909090909；答案2 = 0.363636364；答案3 = 0.00169230769；答案4 = 0.000615384615；答案5 = 0.153846154\par
+\noindent\textbf{模型前提：}
+缓冲维持pH，体积固定，离子A−不进入有机相且不发生缔合。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-A18 · 络合条件下的痕量金属沉淀判断与测量盲区}
+\noindent\textbf{题目}\par
+某单价金属M+与阴离子X−形成MX(s)，Ksp=1.00×10\textasciicircum{}-10，样品中[X−]由大储液固定为0.005000M。金属可与中性L形成ML+，β=1000 L/mol，游离L由缓冲保持0.01000M。求与MX(s)平衡时游离M+、络合M+、总溶解金属浓度；若总金属为5.00×10\textasciicircum{}-7M判断是否发生沉淀，且计算对总金属误以游离M处理时的离子积误差倍数。必须明确自由X由外储液钳定与封闭样品的区别。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 饱和固相存在时[M+]free=Ksp/[X−]=2e-8 M。
+\item 络合物浓度βL[M+]=2e-7 M。
+\item 总溶解金属C*=free(1+βL)=2.2e-7 M。
+\item 给定总分析金属5×10\textasciicircum{}-7M小于C*，体系低于饱和，理论上不析出MX。
+\item 若误把总浓度直接当游离金属，离子积被高估因子1+βL=11。
+\item 通过MX的Ksp与ML形成常数分别代回得一致的浓度，注意大储液固定自由X时适用此简化。
+\item 验证：将反演未知量回代所有独立物料、电荷或校准响应，三个残差为0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 2e-08；答案2 = 2e-07；答案3 = 2.2e-07；答案4 = 11\par
+\noindent\textbf{模型前提：}
+开放的浓度钳制边界，忽略其它金属络合、酸碱与支持电解质活度效应。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-A19 · 信号和与选择性信号联合的双杂质解混与误差防放大}
+\noindent\textbf{题目}\par
+某杂质分析测得两个独立信号：S总=cX+cY=0.01000 M，S选择=0.2000 cX+0.7000 cY=0.004000 M，模型中的选择权重已由独立标准标定。要求反算两杂质浓度、相对比例；研究系数差Δλ=0.5000怎样影响逆问题对S选择的灵敏度，并给出将S选择系统偏高0.000100M时两浓度的确定性偏移，核验总量不变。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由两条信号联立S0=x+y和S1=λ1x+λ2y。
+\item 消去x得y=(S1−λ1S0)/(λ2−λ1)=0.004 M。
+\item 所以x=S0−y=0.006 M，摩尔分数x/S0=0.6。
+\item 对S1求偏导dy/dS1=1/(λ2−λ1)=2（固定S0），dx/dS1=−2。
+\item 若S1系统增加0.000100M，则Δy=+0.000200M、Δx=−0.000200M，总浓度不变。
+\item 两传感权重若相同则矩阵行列式归零，不能区分两杂质；此题由非零权重差保证唯一解。
+\item 验证：将反演未知量回代所有独立物料、电荷或校准响应，三个残差为0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.006；答案2 = 0.004；答案3 = 0.6；答案4 = 2；答案5 = 0.0002\par
+\noindent\textbf{模型前提：}
+两个信号已校准且正交背景无干扰，权重恰为题设常数；不宣称这一抽象测量由特定仪器直接产生。\par
+\medskip\hrule\medskip
+\subsection*{有机化学}
+\addcontentsline{toc}{subsection}{第4辑 / 有机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-O07 · 可逆异构化的平衡常数与松弛时间联合反演}
+\noindent\textbf{题目}\par
+封闭恒温体系中有机A⇌B，两向均为一级速率常数kf与kb，开始只有A=0.2000mol、B=0，平衡实验得[B]eq/[A]eq=3.500，独立扰动实验发现偏离平衡量以松弛时间τ=12.00min衰减。求两速率常数、平衡各物种量、10min后的组成与正反瞬时净反应速率，并从线性微分方程求一般解。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 动力学db/dt=kf(C−b)−kb b，C=0.2000 mol。
+\item 稳态时kf(C−beq)=kb beq，所以K=kf/kb=3.5。
+\item 偏离平衡的指数松弛率为kf+kb=1/τ=0.083333333 min\textasciicircum{}-1。
+\item 联立得到kf=0.064814815、kb=0.018518519 min\textasciicircum{}-1。
+\item 平衡B量C K/(1+K)=0.15555556 mol，A量=0.044444444 mol。
+\item 从b0=0出发b(t)=beq[1−exp(−t/τ)]，10min时B=0.08795139 mol，瞬时净速率=(kf+kb)(beq−b10)=0.0056336805 mol/min。
+\item 由反应网络逆算总物料与观测响应，本题三个归一化校验残差为：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0648148148；答案2 = 0.0185185185；答案3 = 0.155555556；答案4 = 0.0879513898\par
+\noindent\textbf{模型前提：}
+理想不可逆支路之外仅两态可逆异构化，无降解和浓度依赖体积效应。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-O08 · 光致E/Z异构化的光稳态和关灯恢复动力学}
+\noindent\textbf{题目}\par
+假想光化学E⇌Z在恒光照下两方向均为一级，E→Z速率0.120min\textasciicircum{}-1、Z→E速率0.0300min\textasciicircum{}-1，暗态Z→E热反应速率0.0100min\textasciicircum{}-1而暗态E→Z忽略。初始全E，照射4.00min后关闭光源，再暗置3.00min。求光稳态Z分数、关灯瞬间Z分数、暗置终态Z分数、照明期间E/Z总物料核验及达到光稳态90\%的照射时间。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 恒光照下z' =kf(1−z)−kr z，光稳态z*=kf/(kf+kr)=0.8。
+\item 照明阶段z(t)=z*[1−exp(−(kf+kr)t)]，4min时z4=0.36095069。
+\item 照明阶段E4=1−z4=0.63904931，两者和为1。
+\item 关灯后仅Z热转回E：z\_dark(u)=z4 exp(−0.0100u)，暗置3min终态=0.35028299。
+\item 达到z(t)=0.9z*需e\textasciicircum{}(−0.15t)=0.1，故t90=ln10/0.15=15.350567 min。
+\item 暗态E分数1−z\_dark，分子总量始终不变；使用光稳态组成代替4min瞬态会引起误差。
+\item 由反应网络逆算总物料与观测响应，本题三个归一化校验残差为：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.8；答案2 = 0.360950691；答案3 = 0.350282986；答案4 = 15.3505673\par
+\noindent\textbf{模型前提：}
+没有顺反异构之外的光漂白、量子产率光强漂移和温度梯度。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-O09 · A3/B2支化缩聚的凝胶点阈值、官能团守恒与簇数量}
+\noindent\textbf{题目}\par
+某理想支化缩聚由纯三官能A3与双官能B2单体组成，初始A型官能团共1.200 mol、B型官能团1.000 mol；所有连接仅消耗一个A与一个B，不发生环化或副反应，假定随机独立成键且所有官能团反应活性相同。测得A官能团转化率pA=0.5500，求B官能团转化率、连接键mol、剩余独立分子簇mol与数均初始单体聚合度。使用Flory–Stockmayer树形支化近似α=(fA−1)(fB−1)pA pB，求当前支化因子及理论凝胶点pA,crit，并讨论“分子簇数量”在超凝胶阶段为何不能再简单外推。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 初始A3单体物质的量nA3=1.200/3=0.4 mol，B2单体nB2=1.000/2=0.5 mol，初始独立分子数N0=0.9 mol。
+\item 每成一键消耗A和B各一官能团，所以键的物质的量ξ=pA×1.200=0.66 mol。
+\item B官能团的转化率pB=ξ/B0=0.66，小于1，物理合理。
+\item 无环化、未凝胶的树形近似下每成一键分子簇数减1，Ncluster=N0−ξ=0.24 mol。
+\item 数均初始单体聚合度Xn=N0/Ncluster=3.75，是数目比，而非按脱去小分子前后的质量比。
+\item Flory–Stockmayer支化参数α=(3−1)(2−1)pA pB=2pA pB=0.726，小于1，说明该近似仍在凝胶点以下。
+\item 由pB=(A0/B0)pA=1.2pA，凝胶临界条件2×1.2×pA²=1，得pA,crit=0.645497224；越过凝胶点出现无限网络，单纯树形簇数量表达不能作为真实凝胶尺寸分布。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.66；答案2 = 0.66；答案3 = 0.24；答案4 = 3.75；答案5 = 0.726；答案6 = 0.645497224\par
+\noindent\textbf{模型前提：}
+Flory–Stockmayer随机等反应活性的理想树形支化模型、无环化或交联内部缺陷、凝胶阈值按经典无限体系近似。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-O10 · 竞争性抑制的Michaelis–Menten条件动力学}
+\noindent\textbf{题目}\par
+假想有机催化酶对底物S的Michaelis–Menten参数Vmax=0.01000 mol/(L min)、KM=0.004000 M，竞争性抑制剂I浓度0.003000M，Ki=0.002000M，底物S=0.006000M且在初速测试期间由外部储液固定。求表观KM、无抑制与有抑制速率及抑制率；再求达到无抑制初速一半所需抑制剂浓度并说明速率常数和抑制剂的可辨识边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 竞争性抑制影响表观KM而不改Vmax：KM,app=KM(1+I/Ki)。
+\item 给定抑制剂下KM,app=0.01 M。
+\item 有抑制速率vI=Vmax S/(KM,app+S)=0.00375 mol/(L min)。
+\item 无抑制初速v0=Vmax S/(KM+S)=0.006。
+\item 抑制率1−vI/v0=0.375。
+\item 要达到vI=v0/2，需KM(1+I*/Ki)+S=2(KM+S)，故I*=Ki(KM+S)/KM=0.005 M。
+\item 由反应网络逆算总物料与观测响应，本题三个归一化校验残差为：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.01；答案2 = 0.00375；答案3 = 0.006；答案4 = 0.005\par
+\noindent\textbf{模型前提：}
+题设为可逆竞争性抑制、初始瞬时速率，底物未耗尽，忽略酶失活及多底物机制。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-O11 · 双路径环加成过渡态能差与温度选择性反演}
+\noindent\textbf{题目}\par
+某假想不可逆Diels–Alder加成的两条区域异构产物路径具有相同前因子，第一通道比第二通道的活化Gibbs能低5.000kJ/mol（ΔG1‡−ΔG2‡=−5000 J/mol），把这一差值视为温度无关。求298.15K两通道速率比、主要产物摩尔分数、330.0K选择性及两温度下微量异构体的百分比，检验过渡态理论关系；讨论为什么此前提不包含任何具体有机底物构型。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两个通道过渡态速率比k1/k2=exp[−(ΔG1‡−ΔG2‡)/(RT)]。
+\item 给定能差−5000 J/mol，298K速率比k1/k2=7.5155731。
+\item 仅两产物且无再反应时主产物分数f1=(k1/k2)/(1+k1/k2)=0.88256809。
+\item 次产物分数=0.11743191，合计为1。
+\item 330K主路径比为6.1861221，主要产物分数=0.86084289。
+\item 升温降低相同能差对应的速率比，因此主异构体的选择性减弱；具体化学结构及绝对立体构型需另外提供反应物与机理。
+\item 由反应网络逆算总物料与观测响应，本题三个归一化校验残差为：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 7.51557307；答案2 = 0.882568091；答案3 = 0.860842887；答案4 = 0.117431909\par
+\noindent\textbf{模型前提：}
+两路径相同反应级数和传输系数，能差按题设温度无关且不可逆，选择性不提供具体结构的区域化学判定。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-O12 · 构象双态平衡与温度依赖的谱学平均}
+\noindent\textbf{题目}\par
+某假想有机分子的两个快速互变构象trans与gauche，gauche比trans的Gibbs能高3.000kJ/mol，二者统计简并度均为1且该自由能差在300–330K不变。两构象具有已知指纹谱信号位置trans=1.000、gauche=2.700（任意线性信号单位），快速交换使观测信号为摩尔分数加权均值。求300K及330K的两态分布、平均信号、gauche升温变化率的符号及强度反算条件；解释简并度不为1时的修正。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由Boltzmann分布ng/nt=exp(−ΔG/(RT))，300K比值=0.30037501。
+\item 归一化gauche分数fg=ratio/(1+ratio)=0.23099107。
+\item 300K平均谱学响应S=(1−fg)×1+fg×2.7=1.3926848。
+\item 330K比值=0.33508031、fg=0.25098139，平均响应=1.4266684。
+\item 由于gauche能高且升温抑制Boltzmann因子衰减，fg随T增大，故平均响应增大。
+\item 由观测S反算fg=(S−1)/(2.7−1)，必要条件是1≤S≤2.7；如状态简并度不同，需把简并度比乘入分配比。
+\item 由反应网络逆算总物料与观测响应，本题三个归一化校验残差为：0.000e+0、2.220e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.230991066；答案2 = 0.250981388；答案3 = 1.39268481；答案4 = 1.42666836\par
+\noindent\textbf{模型前提：}
+两构象快速交换、理想两态、谱学响应线性混合、自由能差恒定。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-O13 · 酸碱物种耦合的有机药物一级水解速率反演}
+\noindent\textbf{题目}\par
+假想一元弱酸型药物HA⇌H++A−，pKa=4.000；中性HA和阴离子A−各自不可逆一级水解，速率常数kHA和kA未知且酸碱物种快速平衡，产物不再水解。精确初速测得pH3时总表观常数kobs=0.0745454545 min\textasciicircum{}-1，pH5时=0.0254545455 min\textasciicircum{}-1。求两个微观一级速率常数、pH4的表观常数与半衰期，并利用酸碱分数以及两个温度不变的观测独立核验。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对一元酸中性分数α\_HA=1/(1+10\textasciicircum{}(pH−pKa))。
+\item pH3的中性分数=0.909090909，pH5分数=0.0909090909，两者不同。
+\item 表观常数kobs=αkHA+(1−α)kA，两pH提供两个线性独立方程。
+\item 相减消元可得kHA=0.08、kA=0.02 min\textasciicircum{}-1。
+\item pH4中性与阴离子各一半，kobs4=0.05 min\textasciicircum{}-1。
+\item 若酸碱平衡足够快且总药物衰减一级，t1/2=ln2/kobs4=13.8629436 min；如反应消耗缓冲容量则kobs不恒定。
+\item 将求解后的组成、反应速率或谱学响应代回三条原始约束，归一化检验残差为：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.08；答案2 = 0.02；答案3 = 0.05；答案4 = 13.8629436\par
+\noindent\textbf{模型前提：}
+酸碱快速平衡、缓冲溶液无限容量、各物种稳定独立一级水解，不可将总酸分数直接代替中性物种分数。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-O14 · 自由基聚合稳态、双分子终止及链转移决定的链长}
+\noindent\textbf{题目}\par
+假想均相自由基链聚合，恒定有效自由基产生速率Ri=0.0100 mol/(L s)；终止按2kt[P•]\textasciicircum{}2消耗自由基，kt=200 L/(mol s)，传播速率Rp=kp[M][P•]，kp=30 L/(mol s)、[M]=0.500M。每一次双分子终止事件形成1条死链，其事件速率kt[P•]\textasciicircum{}2；向单体的链转移常数ktr=0.200 L/(mol s)，每次转移生成1条死链并瞬时重新引发，故不改变稳态自由基总量。求[P•]、Rp、双分子终止事件速率、链转移事件速率、数均聚合度及链转移提高时链长变化方向。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 自由基稳态由Ri=2kt[P•]²，得[P•]=√(Ri/(2kt))=0.005 M。
+\item 传播单体消耗速率Rp=kp[M][P•]=0.075 mol/(L s)。
+\item 终止是两个自由基合并为一条死链，故链终止事件速率kt[P•]²=0.005 mol/(L s)。
+\item 链转移事件速率ktr[M][P•]=0.0005 mol/(L s)，每次提供一条新死链。
+\item 因链终止产生的死链数为kt[P•]²+转移事件数，数均聚合度Xn=Rp/(kt[P•]²+ktr[M][P•])=13.6363636。
+\item 增大ktr增加死链数而不改变稳态自由基（题设及时再引发），导致数均聚合度下降；不能把消耗自由基的2kt[P•]²直接当死链生成速率。
+\item 将求解后的组成、反应速率或谱学响应代回三条原始约束，归一化检验残差为：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.005；答案2 = 0.075；答案3 = 0.005；答案4 = 0.0005；答案5 = 13.6363636\par
+\noindent\textbf{模型前提：}
+终止完全按偶合成一链而非歧化成两链、无体积效应、转移后再引发瞬时并不会改变自由基稳态。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-O15 · 光化学反应的光子收支、吸收率与量子产率联合计算}
+\noindent\textbf{题目}\par
+一份有机光敏反应的入射单色光通量为2.000×10\textasciicircum{}-6 mol photons/s，样品在照射波长初始吸光度A=0.6000，并由外部流动补料维持恒A。光化学量子产率Φ=0.350 mol消耗底物/mol吸收光子，照射300.0s，初始反应室含底物0.01200mol，不发生暗反应与光敏剂衰减。求吸收光子的物质的量、底物消耗、剩余底物及忽略吸收率直接用入射光通量计算时的系统高估比例；讨论无流动补料时需如何改为积分。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Beer–Lambert透射率T=10\textasciicircum{}(−A)，吸收率fabs=1−10\textasciicircum{}(−A)=0.748811357。
+\item 入射光子量Ninc=通量×时间=0.0006 mol photons。
+\item 吸收光子量Nabs=fabs Ninc=0.000449286814 mol photons。
+\item 底物反应量n=Φ Nabs=0.000157250385 mol，剩余底物=0.0118427496 mol。
+\item 若误设全部入射光均吸收，消耗量会计算成ΦNinc，因子为1/fabs=1.33544983，相对真实值高估0.335449831。
+\item 题设维持A恒定所以可直接相乘；若样品A随底物耗竭变化，则需要按瞬时A(t)积分吸收通量。
+\item 将求解后的组成、反应速率或谱学响应代回三条原始约束，归一化检验残差为：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.748811357；答案2 = 0.0006；答案3 = 0.000449286814；答案4 = 0.000157250385；答案5 = 0.0118427496\par
+\noindent\textbf{模型前提：}
+A由流动供料或恒定外部吸收体维持，不推断真实光化学体系恒A；单一光子吸收导致题给量子产率。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-O16 · 双同位素竞争反应的底物残留富集与KIE逆算}
+\noindent\textbf{题目}\par
+反应瓶中等物质的量的氢化底物AH与氘化底物AD各0.5000mol，两个反应独立不可逆一级消耗。温度固定，8.000h后测得AH残留占初始AH的分数为0.449328964，AD残留占初始AD的分数为0.618783392。求各速率常数、一级氢/氘动力学同位素效应KIE、残留底物的D/H物质的量比以及两类产物总生成mol；讨论单独测总体消耗为何不能反演两种速率。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由A\_H(t)=0.5exp(−kH t)，从残留分数反演kH=−ln(fH)/t=0.1 h\textasciicircum{}-1。
+\item 同理kD=−ln(fD)/t=0.06 h\textasciicircum{}-1。
+\item 一级动力学同位素效应KIE=kH/kD=1.66666667。
+\item 剩余D/H量比=[.5 fD]/[.5 fH]=1.37712776，因较慢D反应而富集。
+\item 生成氢化产物nPH=.5(1−fH)=0.275335518 mol，氘化产物nPD=.5(1−fD)=0.190608304 mol。
+\item 反代两指数函数恢复观测；仅总消耗率只能约束两指数之和，单一时刻无法唯一分离两个速率常数。
+\item 将求解后的组成、反应速率或谱学响应代回三条原始约束，归一化检验残差为：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.1；答案2 = 0.06；答案3 = 1.66666667；答案4 = 1.37712776；答案5 = 0.465943822\par
+\noindent\textbf{模型前提：}
+D/H底物无氢氘交换、无可逆反应或分馏浓缩引起速率改变，两底物初始准确等量。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-O17 · 双构象NMR峰合并的Eyring势垒反演}
+\noindent\textbf{题目}\par
+某有机两构象A⇌B在300K处于等摩尔、等线宽的快速交换临界条件，两构象的静态1H NMR化学位移差在仪器频率下对应120.0Hz，观测合并温度恰为300.0K。对等量双态一阶交换，给定合并条件kco=πΔν/√2（s\textasciicircum{}-1），且Eyring式k=(kBT/h)exp(−ΔG‡/RT)，取kB=1.380649×10\textasciicircum{}-23J/K、h=6.62607015×10\textasciicircum{}-34Js。求共振交换速率、Gibbs活化势垒、两构象平均寿命及温度300K时总交换事件流量（以1mol分子为总体）；说明若不等摩尔为何不可沿用合并近似。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 等强度双态的经验合并公式给kco=πΔν/√2=266.572976 s\textasciicircum{}-1。
+\item Eyring式取对数：ln(k h/(kB T))=−ΔG‡/(RT)。
+\item 所以ΔG‡=−RT ln(k h/(kB T))=59.5601015 kJ/mol。
+\item 假设两个方向速率常数均为kco，每一构象平均停留寿命τ=1/kco=0.00375131798 s。
+\item 在总1mol、等摩尔下，A→B事件流量为kco×0.5mol=133.286488 mol/s，反向同量，净变化为0。
+\item 合并公式只针对等强度、相同静态线宽、两方向近似对称的化学交换；不等摩尔必须解Bloch–McConnell线形而非直接沿用。
+\item 将求解后的组成、反应速率或谱学响应代回三条原始约束，归一化检验残差为：0.000e+0、-1.332e-15、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 266.572976；答案2 = 59560.1015；答案3 = 0.00375131798；答案4 = 133.286488\par
+\noindent\textbf{模型前提：}
+特设理想双态交换、量子化学势垒用Eyring形式，忽略交换动力学的谱仪温标与谱线宽度误差。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-O18 · 对映体消旋动力学下的ee衰减与纯化时限}
+\noindent\textbf{题目}\par
+一份1.000mol对映体混合物初始ee\_R=(nR−nS)/(nR+nS)=0.8000，两对映体相同地按照R⇌S（双向微观常数均为0.02500h\textasciicircum{}-1）相互转化，无其它反应，恒温恒容。求初始R/S物质的量、10.00h时的R/S量与ee，求ee降到0.2000所需时间，证明指数衰减系数应为2k而不是k，核验总分子守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 初始总分子1.000mol，R0=(1+ee0)/2=0.9 mol，S0=0.1 mol。
+\item 交换方程nR'=−k nR+k nS，nS'=k nR−k nS。
+\item 相减得(nR−nS)'=−2k(nR−nS)，总量恒为1mol。
+\item 因此ee(t)=ee0 exp(−2kt)，10h时ee=0.485224528。
+\item R10=(1+ee)/2=0.742612264 mol，S10=(1−ee)/2=0.257387736 mol。
+\item 达到ee=0.2000的时间t=ln(ee0/0.2)/(2k)=27.7258872 h；反代双向速率验证总分子守恒及2k指数系数。
+\item 将求解后的组成、反应速率或谱学响应代回三条原始约束，归一化检验残差为：0.000e+0、5.551e-17、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.742612264；答案2 = 0.257387736；答案3 = 0.485224528；答案4 = 27.7258872\par
+\noindent\textbf{模型前提：}
+消旋只发生双向一阶构型互变，无外源手性催化、反应降解或对映体差异活度。\par
+\medskip\hrule\medskip
+\subsection*{物理化学}
+\addcontentsline{toc}{subsection}{第4辑 / 物理化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-P07 · 绝热混合有限热容两组分的熵产生与可用功}
+\noindent\textbf{题目}\par
+封闭绝热容器内两个热容量不变的固体热库接触：库1质量0.400kg、比热120 J/(kg K)，初温350K；库2质量0.600kg、比热80 J/(kg K)，初温280K。混合后无外界做功，温度均匀。求最终平衡温度、两个库的熵变、总熵产生、初末内能守恒与第二定律。若与外界300K恒温环境进行可逆热交换，给出作为参考的可用功差公式并讨论环境条件为何是必需的。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两库恒定总热容分别C1=m1c1=48J/K、C2=m2c2=48J/K。
+\item 绝热无功使C1(Tf−T1)+C2(Tf−T2)=0，故Tf=315 K。
+\item 对恒热容固体，熵变为ΔS\_i=C\_i ln(Tf/T\_i)。
+\item 计算两库熵变分别=-5.05730475与5.65358571 J/K。
+\item 总熵产生ΔSgen=0.59628096 J/K，应为正，否则与孤立系统第二定律冲突。
+\item 该无功绝热混合的可用功损失以温度T0的环境定义为Wlost=T0ΔSgen；T0=300K时损失=178.884288 J，而非简单等于两库热量代数和0。
+\item 对能量、物质的量和电化学或相平衡条件作独立逆代入，归一化残差分别是：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 315；答案2 = 0.59628096；答案3 = 178.884288\par
+\noindent\textbf{模型前提：}
+恒热容且无容器热容、相变、外部热交换；可用功损失需要指定环境温度。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-P08 · 双位点Langmuir吸附的微分容量与等温响应}
+\noindent\textbf{题目}\par
+某假想异质表面存在两类彼此独立的可逆吸附位点，单位表面最大容量分别Q1=0.003000 mol/g、Q2=0.001000 mol/g，两类位点的Langmuir亲和常数为K1=40.00 L/mol、K2=200.0 L/mol。恒温大储液中自由溶质浓度c=0.01000M。求每类位点占据率、吸附量、总吸附容量及dq/dc微分响应，检查c→0和c→∞极限，并讨论为何不能直接用总容量和单一有效K代替两个位点。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 第i类位点的占据率θi=Kic/(1+Kic)。
+\item 第一位点θ1=0.285714286，吸附量q1=0.000857142857 mol/g。
+\item 第二位点θ2=0.666666667，吸附量q2=0.000666666667 mol/g。
+\item 总量q(c)=Q1K1c/(1+K1c)+Q2K2c/(1+K2c)=0.00152380952 mol/g。
+\item 对c求导dq/dc=ΣQiKi/(1+Kic)²=0.083446712 mol/g per M。
+\item c→0时q→0且斜率趋于Q1K1+Q2K2；c→∞时q→Q1+Q2=0.004000 mol/g，两个不同K意味着单一Langmuir在所有c下通常不等价。
+\item 对能量、物质的量和电化学或相平衡条件作独立逆代入，归一化残差分别是：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.000857142857；答案2 = 0.000666666667；答案3 = 0.00152380952；答案4 = 0.083446712\par
+\noindent\textbf{模型前提：}
+外部储液固定c，无有限物料耗尽，吸附位点之间无协同与空间排斥。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-P09 · 一阶反应扩散平板的解析浓度场与效能因子}
+\noindent\textbf{题目}\par
+一维多孔催化层厚度L=1.000mm，反应物在层内以扩散系数D=1.00×10\textasciicircum{}-9 m²/s传输，并按体积一级反应常数k=0.0200 s\textasciicircum{}-1消耗。外表面x=0浓度c0=0.01000 mol/L（按各项换为SI），背面x=L为无通量边界dc/dx=0；稳态满足D c''−k c=0。求Thiele模数、稳态浓度分布、背面与表面浓度比、表面进入通量及有效因子η=实际体积平均反应速率/(k c0)。证明边界条件和质量通量守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 定义λ=√(k/D)=4472.13595 m\textasciicircum{}-1，Thiele模数φ=Lλ=4.47213595。
+\item 微分方程特征根±λ，通解是双曲函数的线性组合。
+\item 结合c(0)=c0与c'(L)=0，得到c(x)=c0 cosh[λ(L−x)]/cosh(λL)。
+\item 背面浓度比c(L)/c0=sechφ=0.0228428014。
+\item 表面进入通量J=−Dc'(0)=Dc0λtanhφ，c0=10 mol/m³，得J=0.0000447096904 mol/(m² s)。
+\item 平均反应速率与无扩散限制反应速率之比η=tanhφ/φ=0.223548452；积分kc(x)从0至L给J，检查稳态物料守恒。
+\item 对能量、物质的量和电化学或相平衡条件作独立逆代入，归一化残差分别是：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 4.47213595；答案2 = 0.0228428014；答案3 = 4.47096904e-05；答案4 = 0.223548452\par
+\noindent\textbf{模型前提：}
+固定温度、均匀有效D与k，表面没有外部传质阻力，背面完全不透流。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-P10 · Butler–Volmer与欧姆降耦合的有限极化电流求根}
+\noindent\textbf{题目}\par
+298.15K可逆一电子电极的对称Butler–Volmer动力学：j=2j0 sinh[(F/(2RT))ηkin]，j0=0.01000 A/cm²，传递系数0.5；实际外加过电位ηapp=0.1100V，溶液面积比电阻RΩ=2.000 Ω cm²，因溶液压降ηkin=ηapp−jRΩ。求稳态电流密度、真正动力学过电位、欧姆电压损失和阴/阳极正向速率之比；证明在物理区间内唯一交点，并反算BV方程。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 电化学动力学驱动力不是ηapp而是ηkin=ηapp−jRΩ。
+\item 将其代入BV方程，得F(j)=2j0 sinh[(F/2RT)(ηapp−jRΩ)]−j=0。
+\item 函数F随j严格递减；j=0时F>0，j=ηapp/RΩ时F=−j<0，故唯一。
+\item 二分求得j=0.026727196 A/cm²，动力学过电位ηkin=0.0565456079 V。
+\item 欧姆压降jRΩ=0.0534543921 V，两者之和ηapp=0.1100V。
+\item 两支微观电流密度的比为exp(F ηkin/(RT))=9.03272148，反代BV双曲正弦恢复j。
+\item 对能量、物质的量和电化学或相平衡条件作独立逆代入，归一化残差分别是：1.041e-17、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.026727196；答案2 = 0.0565456079；答案3 = 0.0534543921；答案4 = 9.03272148\par
+\noindent\textbf{模型前提：}
+理想BV动力学对称一电子，仅电阻压降耦合，没有双电层瞬态、传质极化和表面粗糙度影响。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-P11 · 有限双热库的可逆热机最大功与熵不变终态}
+\noindent\textbf{题目}\par
+两有限固体热库，热容恒定分别C1=60.0J/K、C2=100.0J/K，初温T1=360.0K、T2=300.0K。二库之间可用可逆理想热机逐渐发电直至终温相等，二库与外界绝热，热机自身热容可忽略。求可逆极限终温、最大输出功、二库各自熵变及熵产生，比较直接热接触平衡温度并证明两过程能量与熵账本不同。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 可逆热机的总熵变为0：C1 ln(Tf/T1)+C2 ln(Tf/T2)=0。
+\item 解得lnTf=(C1lnT1+C2lnT2)/(C1+C2)，Tf=321.228613 K。
+\item 热机输出功等于两库的总内能下降Wmax=C1T1+C2T2−(C1+C2)Tf=203.421983 J。
+\item 库1熵变=-6.83705838 J/K，库2熵变=6.83705838 J/K，和为0。
+\item 直接绝热接触无输出功，温度Tmix=(C1T1+C2T2)/(C1+C2)=322.5 K。
+\item 由算术加权平均≥几何加权平均知Tmix≥Tf，因此可逆热机产生正的最大可用功，且不可把直接混合终温代入可逆热机功式。
+\item 对能量、物质的量和电化学或相平衡条件作独立逆代入，归一化残差分别是：-7.194e-14、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 321.228613；答案2 = 203.421983；答案3 = 322.5\par
+\noindent\textbf{模型前提：}
+固体热容不变、热机可逆并无热漏，单一末态温度，忽略热机自身蓄热。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-P12 · 三组分等温闪蒸的Rachford–Rice唯一根与两相组成}
+\noindent\textbf{题目}\par
+某三元理想化闪蒸分离的总进料摩尔分数z=(0.5000,0.3000,0.2000)，在既定温压下的汽液平衡分配常数K=(2.000,0.6000,0.1000)，并假设气相与液相均存在。定义汽相摩尔比例β∈(0,1)。求β及三组分液相xi、汽相yi，用Rachford–Rice方程与每组分物料守恒推导数值求根，并证明该解在两相物理区间唯一；若不满足两相根界条件应如何判别全汽或全液。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 每组分平衡yi=Ki xi，同时进料守恒zi=(1−β)xi+βyi。
+\item 整理得xi=zi/[1+β(Ki−1)]，yi=Ki xi。
+\item 令Σxi=Σyi=1，可写Rachford–Rice方程Σzi(Ki−1)/[1+β(Ki−1)]=0。
+\item 该函数对β的导数为−Σzi(Ki−1)²/[1+β(Ki−1)]²<0，所以根唯一。
+\item 两端函数符号一正一负，二分得到β=0.302531239，液相x=(0.383867953,0.34130178,0.274830267)，气相y=(0.767735905,0.204781068,0.0274830267)。
+\item 分别检查Σx=1、Σy=1及zi=(1−β)xi+βyi；若端点不异号，则该温压的给定K未必产生两相，不能强制求β∈(0,1)。
+\item 对能量、物质的量和电化学或相平衡条件作独立逆代入，归一化残差分别是：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.302531239；答案2 = 0.383867953；答案3 = 0.34130178；答案4 = 0.274830267；答案5 = 0.767735905；答案6 = 0.204781068；答案7 = 0.0274830267\par
+\noindent\textbf{模型前提：}
+给定的K值是有效等温闪蒸系数，理想平衡且非反应性体系，总流量标准化为1mol。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-P13 · 有限浓度原电池在指定电势时的反应进度}
+\noindent\textbf{题目}\par
+298.15K假想一电子可逆原电池总反应M+N+→M++N（两个固体活度1），电动势E=E°−(RT/F)ln(cM+/cN+)，标准电势E°=0.1000V，初始cM+=0.03000M、cN+=0.02000M，电极固体过量，溶液总体积0.2500L。求电势调整至0.09000V时的反应进度ξ（按mol/L）、两离子浓度及累计转移电荷；证明物理解是否位于区间并计算该时刻平衡电势，严禁把电势视为全程恒定。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设反应正向进度ξ，则cM+=C1+ξ、cN+=C2−ξ，必须保持ξ在允许区间。
+\item Etarget=E°−g ln[(C1+ξ)/(C2−ξ)]，g=RT/F=0.0256925791 V。
+\item 移项得浓度商K=exp[(E°−Etarget)/g]=1.47582543。
+\item 线性解ξ=(K C2−C1)/(1+K)=-0.000195284954 M，新的两离子浓度=0.029804715和0.020195285 M。
+\item 实际累计传递电子mol为ξ×0.2500，正向电量Q=F×ξ×0.2500=-4.71053342 C；如果ξ为负，电量方向为逆向。
+\item 反算E=0.09 V，两个离子始终为正且cM+与cN+浓度增减严格相抵。
+\item 独立方程及物理限制逆向核验：三个归一化数值残差为0.000e+0、0.000e+0、3.469e-18。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = -0.000195284954；答案2 = 0.029804715；答案3 = 0.020195285；答案4 = -4.71053342\par
+\noindent\textbf{模型前提：}
+理想浓度型电势，电解质体积固定、无液接电势和副反应；反应进度可带正负，固体活度1。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-P14 · 两能级统计系统的Schottky热容峰与能隙反演}
+\noindent\textbf{题目}\par
+非相互作用双能级分子，基态与激发态简并度均为1，激发态能隙Δ=5.000 kJ/mol。仅考虑该两能级对内能和定容热容的贡献，基态能量取0；分子之间不发生相互作用，R=8.314462618 J/(mol K)。求激发态概率、内能和Cv(T)的解析表达式；严格推导Cv最大时满足的无量纲超越方程，并求峰值温度及最大Cv，解释为何低温与高温两端热容均趋零。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 定义x=Δ/(RT)，配分函数Z=1+exp(−x)。
+\item 激发态概率p1=exp(−x)/(1+exp(−x))=1/(1+exp(x))。
+\item 每mol能量U=Δ p1，对温度求导得Cv=R x² exp(x)/(1+exp(x))²。
+\item 取对数对x求导，驻点满足2/x−tanh(x/2)=0，即x tanh(x/2)=2。
+\item x tanh(x/2)对x>0严格递增，存在唯一正根x*=2.39935728，得到峰值温度T*=250.634526 K。
+\item 热容峰值Cv,max=3.65195177 J/(mol K)；T→0因冻结激发态而Cv→0，T→∞因两态几乎等布居但能量变化率趋零亦Cv→0。
+\item 独立方程及物理限制逆向核验：三个归一化数值残差为4.441e-16、0.000e+0、-5.551e-17。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 2.39935728；答案2 = 250.634526；答案3 = 3.65195177；答案4 = 0.0832217202\par
+\noindent\textbf{模型前提：}
+只考虑两能级；不计平动、转动、振动其他能级和相互作用。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-P15 · 经典球形成核自由能的临界半径与势垒}
+\noindent\textbf{题目}\par
+某假想过饱和液体中的球形新相核具有表面张力γ=0.04000 J/m²、单位体积有利体积自由能密度Δg=1.000×10\textasciicircum{}8 J/m³。经典球形核模型ΔG(r)=4πr²γ−(4π/3)r³Δg，温度300.0K，kB=1.380649×10\textasciicircum{}-23J/K。求临界半径、临界核所含的表面与体积自由能、总势垒ΔG*、相对无势垒因子exp(−ΔG*/kBT)及极值曲率符号；证明临界核是能垒而非最稳定半径。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对自由能求导dΔG/dr=8πγr−4πΔg r²=4πr(2γ−Δg r)。
+\item 非零临界根r*=2γ/Δg=8e-10 m。
+\item 二阶导数在r*处d²ΔG/dr²=8πγ−8πΔg r*=−8πγ<0，故为局部能量障碍。
+\item 表面贡献4π(r*)²γ=3.21699088e-19 J，体积贡献−(4π/3)(r*)³Δg=-2.14466058e-19 J。
+\item 净势垒ΔG*=16πγ³/(3Δg²)=1.07233029e-19 J。
+\item 以kBT归一化为ΔG*/(kBT)=25.8895223，热激活抑制因子=5.70588907e-12；r大于临界点以后长大在该模型中有利。
+\item 独立方程及物理限制逆向核验：三个归一化数值残差为0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 8e-10；答案2 = 1.07233029e-19；答案3 = 25.8895223；答案4 = 5.70588907e-12\par
+\noindent\textbf{模型前提：}
+经典毛细近似、球形均匀核，忽略晶格离散、缺陷诱导成核和动力学前指数。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-P16 · Clausius–Clapeyron两温度测压反演蒸发焓与预测压}
+\noindent\textbf{题目}\par
+某纯液体在310.0K蒸气压20.00kPa、340.0K蒸气压45.00kPa，在该温度段蒸气可视为理想气体、液相体积可忽略、摩尔蒸发焓ΔHvap不随温度变化。通过Clausius–Clapeyron积分反演ΔHvap、预测325.0K蒸气压，并计算蒸发熵在325K约为ΔHvap/T（沿平衡线）。同时检查两端压力和微分式的物理符号，讨论为什么无法从两点确认蒸发焓常数假设。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 忽略液体摩尔体积时dlnp/d(1/T)=−ΔHvap/R。
+\item 积分得ln(p2/p1)=−ΔHvap/R(1/T2−1/T1)。
+\item 由两点反演ΔHvap=R ln(p2/p1)/(1/T1−1/T2)=23.6884707 kJ/mol。
+\item 预测ln(p3/p1)=−ΔHvap/R(1/T3−1/T1)，得p3=30.5666992 kPa。
+\item 平衡蒸发熵ΔSvap≈ΔHvap/T3=72.8876022 J/(mol K)。
+\item 因ΔHvap>0，dp/dT>0，蒸气压随T升高；两观测点可确定常数参数但不能验证其真实温度不变性。
+\item 独立方程及物理限制逆向核验：三个归一化数值残差为0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 23688.4707；答案2 = 30.5666992；答案3 = 72.8876022\par
+\noindent\textbf{模型前提：}
+假定相边界同一液体相、蒸气理想、无化学分解，使用有限温段恒ΔH近似。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-P17 · 有限双储液池膜扩散的指数平衡与物料守恒}
+\noindent\textbf{题目}\par
+两储液池体积V1=1.000L、V2=2.000L，初始某中性溶质浓度c1=0.01500M、c2=0.002000M，以面积A=0.1000m²的理想膜相连，膜透过率P=0.0002000L/(m² s)，两池内充分混合，恒温且体积不变。膜通量总mol/s为P A(c1−c2)。推导两池浓度差的指数衰减、共同终浓度、降低初始浓度差90\%所需时间、3600s时浓度差和完整物料守恒；不得把单侧浓度视为恒定储液。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两池物料微分方程V1 dc1/dt=−PA(c1−c2)、V2 dc2/dt=+PA(c1−c2)。
+\item 两式相加得总mol不变，因此最终c∞=(V1c10+V2c20)/(V1+V2)=0.00633333333 M。
+\item 令Δ=c1−c2，相减得dΔ/dt=−PA(1/V1+1/V2)Δ。
+\item 指数衰减常数k=PA(1/V1+1/V2)=0.00003 s\textasciicircum{}-1，Δ(t)=Δ0 exp(−kt)。
+\item Δ/Δ0=0.1的时间t90=ln10/k=76752.8364 s。
+\item 3600s差值Δ3600=0.0116691588 M；任一时刻由c1=c∞+[V2/(V1+V2)]Δ、c2=c∞−[V1/(V1+V2)]Δ重构两池浓度并验证总物料。
+\item 独立方程及物理限制逆向核验：三个归一化数值残差为0.000e+0、-2.776e-17、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00633333333；答案2 = 3e-05；答案3 = 76752.8364；答案4 = 0.0116691588\par
+\noindent\textbf{模型前提：}
+膜通量单位按题给L/(m²s)与浓度mol/L配套；两侧无化学反应与边界层传质阻力。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV4-P18 · HCl/DCl同位素取代的约化质量、振动基频与零点能差}
+\noindent\textbf{题目}\par
+假想HCl/DCl气态双原子分子按同一谐振子力常数k=3000 N/m模型，原子质量H=1.00784u、D=2.01410u、Cl=35.45u，1u=1.66053906660×10\textasciicircum{}-27kg；光速c=299792458m/s、h=6.62607015×10\textasciicircum{}-34Js、NA=6.02214076×10\textasciicircum{}23mol\textasciicircum{}-1。求两同位素分子的约化质量、振动基频（cm\textasciicircum{}-1）、频率比与每摩尔零点能差ZPE(HCl)−ZPE(DCl)，并说明频率变化不能用简单的H/D质量平方根替代完整约化质量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对双原子分子，约化质量μ=m1m2/(m1+m2)。
+\item 计算μHCl=0.979979286 u，μDCl=1.90582037 u；换kg需乘1.66053906660×10\textasciicircum{}-27。
+\item 谐振角频率ω=√(k/μkg)，波数νtilde=ω/(2πc)并除以100转换m\textasciicircum{}-1到cm\textasciicircum{}-1。
+\item 得到HCl频率=7208.20384 cm\textasciicircum{}-1、DCl频率=5168.85709 cm\textasciicircum{}-1。
+\item 频率比νH/νD=√(μD/μH)=1.39454501；只换原子氢质量而忽略Cl约化质量会造成偏差。
+\item 每摩尔谐振子零点能E0=(1/2)NAhcνtilde，故差ΔE0=12.1980024 kJ/mol，HCl更高。
+\item 独立方程及物理限制逆向核验：三个归一化数值残差为-4.441e-16、-1.110e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.979979286；答案2 = 1.90582037；答案3 = 7208.20384；答案4 = 5168.85709；答案5 = 1.39454501；答案6 = 12198.0024\par
+\noindent\textbf{模型前提：}
+谐振近似，力常数同位素不变，不计Born–Oppenheimer近似修正或非谐振动。\par
+\medskip\hrule\medskip
+\clearpage
+\section*{第5辑 · 题目及解答}
+\addcontentsline{toc}{section}{第5辑}
+\subsection*{无机化学}
+\addcontentsline{toc}{subsection}{第5辑 / 无机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-I20 · 热激发Frenkel空位—间隙对的自洽浓度与形成焓}
+\noindent\textbf{题目}\par
+在具有等数目可占据正常阳离子位和间隙位的假想AB晶体中，Frenkel缺陷对的平衡为A\_A⇌V\_A+A\_i；定义同一标准位点分数x为每种缺陷的分数，空位生成对的理想平衡常数K=x²/(1−x)。900 K时测得x=0.002000，缺陷对形成焓ΔH=+40.00 kJ/mol且视为常数。求900 K的K、1100 K的K及x、缺陷密度相对增量，并证明自洽正根唯一。不能在计算中忽略正常位占据率1−x却又声称精确。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 每个Frenkel对产生一个正常位空位与一个间隙离子，因此[V]=[A\_i]=x，正常位占据1−x。
+\item 900K的质量作用常数为K1=x1²/(1−x1)=0.000004008016032。
+\item van’t Hoff关系ln(K2/K1)=−ΔH/R(1/T2−1/T1)，代入得1100K常数K2=0.00001059300823。
+\item 由x2²=K2(1−x2)，得x²+K2 x−K2=0，唯一正根x2=[−K2+√(K2²+4K2)]/2=0.003249397995。
+\item 缺陷分数相对增长x2/x1=1.624698997；因为ΔH>0，升温使正向缺陷生成有利。
+\item 函数x²/(1−x)对0<x<1严格递增，从0增至∞，所以求得的正根唯一，而另一二次根为负。
+\item 数值逆核验：按独立化学计量、平衡和约束关系复算，三个无量纲检验残差分别为 3.198e-16、0.000e+0、0.000e+0；满足题定理想模型，但不代表专家审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+K900 = 4.00801603e-06 dimensionless；K1100 = 1.05930082e-05 dimensionless；x1100 = 0.00324939799 site fraction；relative = 1.624699 ratio\par
+\noindent\textbf{模型前提：}
+理想稀缺Frenkel位点对，缺陷无聚集且两个子晶格标准态一致，形成焓常数。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-I21 · 三价金属二聚水解的单体—二聚体分布反演}
+\noindent\textbf{题目}\par
+一份100.0mL酸性水样中假想三价金属以单核M3+及二核M2(OH)2\textasciicircum{}4+形式存在。条件二聚反应为2M3++2H2O ⇌ M2(OH)2\textasciicircum{}4++2H+，pH由强缓冲固定，已将H+效应吸收到K\_cond=[dimer]/[M3+]²=450 L/mol。金属元素总分析浓度CM=0.01200M（以单个M原子计），无沉淀和其它物种。求单体、二聚体浓度、二聚金属原子比例、单体与二聚物摩尔数及二聚程度随K增大方向。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设二聚体的分子浓度x；总金属元素浓度C=[M3+]+2[dimer]，所以[M3+]=C−2x。
+\item 质量作用关系x=K(C−2x)²，物理区间0<x<C/2。
+\item 在该区间x/(C−2x)²严格递增，所以物理解唯一，可用二分法求x=0.00443102554 M。
+\item 游离单体浓度m=0.00313794892 M，二聚体浓度d=0.00443102554 M，注意一个二聚体贡献两个M原子。
+\item 二聚金属原子分数2d/C=0.7385042567，100mL水样单体mol=0.000313794892、二聚体分子mol=0.000443102554。
+\item 增加K使方程左侧的目标值增大，由单调性可知x增大；不能把dimer浓度直接当作总金属分析浓度。
+\item 数值逆核验：按独立化学计量、平衡和约束关系复算，三个无量纲检验残差分别为 2.220e-16、0.000e+0、0.000e+0；满足题定理想模型，但不代表专家审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+monomer = 0.00313794892 mol/L；dimer = 0.00443102554 mol/L；atom\_fraction = 0.738504257 fraction；dimer\_mol = 0.000443102554 mol\par
+\noindent\textbf{模型前提：}
+条件形成常数已包含固定pH与水的活度，二核形式只作为假想二聚模型，忽略真实多核水解的竞争。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-I22 · 配体质子化与单核配位的竞争质子账本}
+\noindent\textbf{题目}\par
+在pH=9.000的外部缓冲水溶液中，一元单负配体L−的共轭酸HL满足pKa=8.000。假想三价金属M3+总浓度0.003000M，仅形成ML2+，条件形成常数对游离L−给β=10\textasciicircum{}3.2 L/mol。游离酸碱池[HL]+[L−]与络合消耗的L之和为L总=0.01200M。求自由L−、HL、游离M3+、ML2+和束缚配体占比；给出唯一根证明并核验全部配体和金属守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 固定pH−pKa=1，故游离酸碱形态的比[HL]/[L−]=10\textasciicircum{}(pKa−pH)=0.1000。设l=[L−]，则[HL]=0.1l。
+\item 配位平衡给[ML2+]=βl[M3+]；金属元素守恒CM=[M3+]+[ML2+]，由此[M3+]=CM/(1+βl)。
+\item 配体物料守恒CL=l+0.1l+[ML2+]=1.1l+CMβl/(1+βl)；酸碱池与配位池都要计入。
+\item 左侧在l≥0严格单调递增，且l=0时为0，l=CL时大于CL，故在(0,CL)有且仅有一个正根。
+\item 代入β=10\textasciicircum{}3.2求l=0.008372934728 mol/L，HL=0.0008372934728 mol/L。
+\item 平衡游离M3+=0.0002102282011 mol/L，络合ML2+=0.002789771799 mol/L；总金属浓度m+ML=0.003 mol/L。
+\item 配体束缚比例ML/CL=0.2324809832；核查l+HL+ML=0.012 mol/L等于0.01200。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+L\_free = 0.00837293473 mol/L；HL = 0.000837293473 mol/L；M\_free = 0.000210228201 mol/L；ML = 0.0027897718 mol/L；ligand\_bound\_fraction = 0.232480983 fraction\par
+\noindent\textbf{模型前提：}
+缓冲固定pH=9，只有HL、L−、M3+与一配体ML2+四种指定物种；忽略其它酸碱及配位形态。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-I23 · 金属间交换氧化还原与有限电子容量的反演}
+\noindent\textbf{题目}\par
+假想一电子金属交换反应A(s)+B+(aq)⇌A+(aq)+B(s)，固相活度均为1，298.15K的平衡常数为K=[A+]/[B+]=2.300。初始B+物质的量0.05000mol、A+为0，纯固体A和B均充分过量，溶液体积保持1.000L。求平衡反应进度、两溶解金属量、A被氧化的电子mol、外电路理论电量及以初态反应商Q→0时电势发散说明为什么不能用一恒电势计算做功。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设反应进度ξ，溶液n(A+)=ξ、n(B+)=n0−ξ，物理区间0<ξ<n0。
+\item 固态活度为1，反应商Q=ξ/(n0−ξ)，平衡要求Q=K=2.300。
+\item 直接得ξ=K n0/(1+K)=0.03484848485mol，nB=0.01515151515mol。
+\item 正向反应每前进一步发生一次一电子转移，n(e−)=ξ=0.03484848485mol。
+\item 按F=96485.33212 C/mol，理论电量Qext=ξF=3362.367634C。
+\item 初始A+为0时模型的浓度型Nernst电势因lnQ发散，真实体系需活度与成核约束；能量应积分E(ξ)dQ而不是固定EξF。
+\item 数值逆核验：按独立化学计量、平衡和约束关系复算，三个无量纲检验残差分别为 2.220e-16、0.000e+0、0.000e+0；满足题定理想模型，但不代表专家审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+xi = 0.0348484848 mol；Aplus = 0.0348484848 mol；Bplus = 0.0151515152 mol；charge = 3362.36763 C\par
+\noindent\textbf{模型前提：}
+一电子假想金属交换，无离子迁移过电位与活度修正，明确不能以Q=0推断真实无穷电势。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-I24 · 晶面弹性微应变对布拉格峰位的非线性移动}
+\noindent\textbf{题目}\par
+某立方晶体(110)面的一阶XRD反射用λ=0.1540nm X射线，初始Bragg角θ=29.30°（仪器记录2θ）。在与(110)面法向一致的弹性拉伸下，该面间距相对增加0.2000\%，其他晶面不考虑。求初始面间距、晶胞边长a、应变后峰位2θ、峰位差与线性小应变近似Δ(2θ)≈−2tanθ·ε（弧度）的相对误差。须用精确Bragg方程和线性展开独立复核。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 初始Bragg条件2d sinθ=λ，求d=0.1573411546nm。
+\item 立方晶体d110=a/√2，晶胞边长a=√2d=0.2225139948nm。
+\item 拉伸后d′=d(1+ε)，保持同一X射线波长，θ′=arcsin[λ/(2d′)]。
+\item 新2θ′=58.47168543度，峰位变化Δ2θ=-0.1283145697度，为负表示峰向低角度移动。
+\item 小应变一阶式Δ(2θ)≈−2tanθ·ε（弧度）=-0.1286115676度。
+\item 精确位移与一阶估计相比较，二者差来自arcsin的非线性及高阶应变项，不能混淆θ与2θ。
+\item 数值逆核验：按独立化学计量、平衡和约束关系复算，三个无量纲检验残差分别为 0.000e+0、0.000e+0、0.000e+0；满足题定理想模型，但不代表专家审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+d = 0.157341155 nm；a = 0.222513995 nm；2theta\_new = 58.4716854 degree；shift = -0.12831457 degree\par
+\noindent\textbf{模型前提：}
+单晶法向应变，忽略仪器宽化、泊松应变、峰重叠及各向异性弹性效应。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-I25 · 晶体场多重态的简并配分函数与磁响应反演}
+\noindent\textbf{题目}\par
+假想过渡金属配合物在300 K有两个能级：低能态E0=0、简并度g0=1，磁响应为1.5任意单位；高能态E1=0.1200 eV、简并度g1=5，磁响应为4.5同单位。分子之间独立、每种微态按Boltzmann加权，kB=1.380649×10\textasciicircum{}-23 J/K，1 eV=1.602176634×10\textasciicircum{}-19 J。求高自旋态占比、热平均磁响应、构型熵（每摩尔）与温度趋0和无限高时的极限；证明简并度不可遗漏。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 配分函数Z=g0e\textasciicircum{}(−E0/kT)+g1e\textasciicircum{}(−E1/kT)=1+5e\textasciicircum{}(−Δ/kT)。
+\item 高态占比p1=5e\textasciicircum{}(−Δ/kT)/Z=0.04598477196；低态占比为1−p1。
+\item 热平均磁响应χ=1.5(1−p1)+4.5p1=1.637954316。
+\item 按状态概率与内部简并度，摩尔构型熵S=−RΣpi ln(pi/gi)=2.166151092 J/(mol K)。
+\item 低温下p1→0，χ→1.5、S→0；高温下p1→5/6，χ→(1.5+5×4.5)/6。
+\item 若忽略g1=5，则得到错误的p1=e\textasciicircum{}(−Δ/kT)/(1+e\textasciicircum{}(−Δ/kT))，破坏高温简并度极限。
+\item 数值逆核验：按独立化学计量、平衡和约束关系复算，三个无量纲检验残差分别为 0.000e+0、5.551e-17、0.000e+0；满足题定理想模型，但不代表专家审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+high\_frac = 0.045984772 fraction；chi = 1.63795432 arb；Sm = 2.16615109 J/(mol K)\par
+\noindent\textbf{模型前提：}
+理想两态配位场配分模型，不等价于真实磁化率的全部温度依赖；需要额外考虑Curie因子与交换。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-I26 · 异价盐离子对形成与自由离子强度的闭合反演}
+\noindent\textbf{题目}\par
+在支持电解质充分屏蔽的理想水溶液里，1:1阳离子A+、阴离子B−的总浓度分别为0.004000、0.002000mol/L，其他惰性反离子用于电中性。只形成中性AB离子对，其形成常数K=[AB]/([A+][B−])=200 L/mol，体积恒定。求离子对、两种游离离子、B配对分数及这两类离子对离子强度I=1/2([A+]+[B−])的贡献，证明离子对形成导致自由载流离子总数下降。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设x=[AB]，则[A+]=0.004−x，[B−]=0.002−x，必须0<x<0.002。
+\item 质量作用x=200(0.004−x)(0.002−x)，属于二次方程而非完全配对。
+\item 将左端除以两种游离物浓度得到x/[(a−x)(b−x)]，在物理区间严格递增，故唯一根。
+\item 求得x=0.000783009434 M，自由A+=0.003216990566 M、自由B−=0.001216990566 M。
+\item B的配对比例x/0.002=0.391504717，自由两离子贡献离子强度为(0.003216990566+0.001216990566)/2=0.002216990566 M。
+\item 与未配对的(a+b)/2比较，离子对形成使两种自由带电粒子合计减少2x，配对的中性AB本身不进入离子强度公式。
+\item 数值逆核验：按独立化学计量、平衡和约束关系复算，三个无量纲检验残差分别为 0.000e+0、0.000e+0、0.000e+0；满足题定理想模型，但不代表专家审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+AB = 0.000783009434 mol/L；A\_free = 0.00321699057 mol/L；B\_free = 0.00121699057 mol/L；Ipartial = 0.00221699057 mol/L\par
+\noindent\textbf{模型前提：}
+仅对所列A、B计离子强度贡献，不把其余支持电解质忽略于总I；形成常数已是题定条件常数。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-I27 · 固态碳酸盐热分解的动力学—产气容量反演}
+\noindent\textbf{题目}\par
+某假想碳酸盐晶体在恒温固定气氛下发生MCO3(s)→MO(s)+CO2(g)，有效转化分数遵循一级固相经验律dX/dt=k(1−X)，k=1.20×10\textasciicircum{}-3 s\textasciicircum{}-1。起始纯MCO3有0.05000mol，气体及时排出且不逆反应，600.0s后CO2按298.15K、101325Pa理想气体计量。求转化分数、剩余碳酸盐、生成氧化物及CO2的mol与体积，给出若初始夹带0.010mol不可分解杂质时的总残渣mol讨论。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 微分方程dX/dt=k(1−X)分离变量并由X(0)=0得X(t)=1−e\textasciicircum{}(−kt)。
+\item 600s转化X=0.513247744，残余碳酸盐n=(1−X)n0=0.0243376128mol。
+\item 按MCO3→MO+CO2，一摩尔固体反应生成一摩尔MO与一摩尔CO2，均为0.0256623872mol。
+\item 按PV=nRT，气体体积V=0.6278406627 L（R使用SI时先算m³）。
+\item 初始0.010mol惰性杂质若不反应，最终固相物种mol总数为未反应碳酸盐+生成MO+惰性杂质=0.06mol。
+\item 逆代入动学式得1−X=e\textasciicircum{}(−kt)，碳与氧质量账本须根据M原子数而非直接把不同物相mol相加当质量。
+\item 数值逆核验：按独立化学计量、平衡和约束关系复算，三个无量纲检验残差分别为 0.000e+0、0.000e+0、0.000e+0；满足题定理想模型，但不代表专家审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+X = 0.513247744 fraction；unreacted = 0.0243376128 mol；CO2 = 0.0256623872 mol；Vgas = 0.627840663 L\par
+\noindent\textbf{模型前提：}
+经验一级固相分解、外部及时排除气体，不断面积或活化能，忽略反向碳酸化。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-I28 · 混合价铁氧化物的电荷补偿与穆斯堡尔双谱线占比}
+\noindent\textbf{题目}\par
+某假想电荷补偿型铁氧化物每一化学式单位含2个Fe与3个氧，另有可占据的Li+填隙离子δ个。化学式Li\_δFe2O3，所有O为−2，Fe只含+2/+3，两Fe平均价由电中性决定。热重—化学滴定测得δ=0.4000（每式单位）；求Fe2+个数及Fe3+个数、Fe2+占铁原子比例、Fe平均价与理论磁响应强度比（假定谱线原子响应相同）；验证总电荷。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 每化学式单位Li+填隙离子贡献δ正电，3个氧以O2−计总负电−6，因此Fe总正价必须为6−δ。
+\item 设Fe(II)个数为x，Fe(III)个数为2−x，则铁总正价2x+3(2−x)=6−x。
+\item 由电中性6−x+δ−6=0得到x=δ=0.4000个Fe(II)，Fe(III)=1.6000。
+\item Fe(II)占全部铁原子分数x/2=0.2000，Fe(III)占0.8000；响应因子相同的谱峰面积比FeII/FeIII=0.4000/1.6000=0.2500。
+\item 平均铁氧化态=(2×0.4+3×1.6)/2=2.8000；3个O2−负价总和−6，Li+与两类Fe的正价总和同为+6。
+\item 若Li替代了晶格Fe位点或出现氧缺陷，该元素及位点总数会改变，必须重新列位点电中性，不能沿用上述x=δ。
+\item 独立数值检验：(i) Fe(II)+Fe(III)=0.4+1.6=2；(ii) Li+与两种Fe正价合计0.4+2×0.4+3×1.6=6.0；(iii) 平均Fe价与谱学原子数分数给出2.8和0.2，互相吻合。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+FeII = 0.4 atoms/formula；FeIII = 1.6 atoms/formula；fractionFeII = 0.2 fraction；meanFe = 2.8 valence\par
+\noindent\textbf{模型前提：}
+题设Li填隙且Fe仅有II、III；真实LiδFe2O3的结构稳定性不予声称。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-I29 · 双金属氧化价态反演与氧化剂电子当量审计}
+\noindent\textbf{题目}\par
+独立定量分析显示1.000L溶液中含0.01000mol Fe2+及0.02000mol Cr3+，无其它可氧化金属。施加强氧化剂使全部Fe2+→Fe3+、全部Cr3+→Cr6+（题设酸性可稳定），氧化剂每mol接受5mol电子，电流收集效率80.0\%。求需要的氧化剂物质的量、金属各放出电子总mol、有效电量、实际通过电量及氧化剂/金属电子当量闭合；讨论为何不能只数被氧化的金属原子个数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Fe(II)→Fe(III)每原子失1电子，电子mol为0.01000。
+\item Cr(III)→Cr(VI)每原子失3电子，电子mol为3×0.02000=0.06000。
+\item 总放出电子ne=0.07000mol，对应氧化剂每mol接受5电子，理论氧化剂nox=0.01400mol。
+\item 有效法拉第电量Qeff=ne F=6753.973248C；80\%效率时通过电路的实际总电量Qtotal=Qeff/0.8=8442.466561C。
+\item 按每mol氧化剂接受5mol电子，5nox=0.07000mol，必须与金属失电子和相等。
+\item 氧化数变化而非被氧化的金属原子计数决定总电子转移；铬的实际含氧配体与氢离子需求不影响本题电子当量闭合。
+\item 数值逆核验：按独立化学计量、平衡和约束关系复算，三个无量纲检验残差分别为 -1.983e-16、0.000e+0、0.000e+0；满足题定理想模型，但不代表专家审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+ne = 0.07 mol；oxidizer = 0.014 mol；Qeff = 6753.97325 C；Qtotal = 8442.46656 C\par
+\noindent\textbf{模型前提：}
+假想完全选择性氧化、氧化剂参与反应未受其它副反应消耗、80\%电流效率独立给定。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-I30 · 酸碱缓冲条件下单配位金属的条件常数误用辨析}
+\noindent\textbf{题目}\par
+一假想二价金属M2+在pH5.000与单负配体L−发生唯一的1:1络合ML+；HL的pKa=4.000，游离配体酸碱平衡快速建立。金属分析浓度CM=0.02000mol/L、配体分析浓度CL=0.01000mol/L、对L−形成常数β=200 L/mol。计算自由L−与HL、自由M2+与ML+，求配体配位分数，并与错误地把CL当自由L−所得ML+对比差异及物理不可行性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由pH−pKa=1可得HL/L−=10\textasciicircum{}(pKa−pH)=0.1。
+\item 设l=[L−]，金属自由浓度m=CM/(1+βl)，络合ML=CMβl/(1+βl)。
+\item 配体守恒CL=1.1l+ML，左端单调递增，所以唯一物理解存在。
+\item 用二分求游离L−=0.00270610816 M，HL=0.000270610816 M。
+\item 金属游离[M2+]=0.01297671898 M，络合[ML+]=0.007023281024 M，配体配位率[ML]/CL=0.7023281024。
+\item 若错误令l=CL，则络合量为CMβCL/(1+βCL)=0.01333333333 M；与CL对比可见会消耗超过可用配体，因此违背配体守恒。
+\item 数值逆核验：按独立化学计量、平衡和约束关系复算，三个无量纲检验残差分别为 1.735e-16、0.000e+0、2.220e-16；满足题定理想模型，但不代表专家审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+L = 0.00270610816 mol/L；HL = 0.000270610816 mol/L；Mfree = 0.012976719 mol/L；ML = 0.00702328102 mol/L\par
+\noindent\textbf{模型前提：}
+缓冲固定pH、只允许1:1物种且忽略离子活动系数；两个pKa描述仅有一个。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-I31 · 氧缺失导致的CeO2−δ中Ce(III)比例与磁矩假设}
+\noindent\textbf{题目}\par
+某理想混合价氧化物CeO\_(2−δ)，δ=0.2000个氧原子/化学式单位。氧化铈中只允许Ce(IV)及Ce(III)，氧一律为O2−且其它缺陷不承担电荷。假定总Ce位点1个，Ce(III)的有效磁响应（不包含单位换算）为每CeIII原子2.540μB、CeIV为0。求CeIII比例、平均Ce价、每mol氧损失mol以及假设自旋完全平行时的化学式净磁矩；讨论无长程磁序时为何不能将净矩当真实测量值。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 氧负电荷为−2(2−δ)=−(4−2δ)，所以Ce平均氧化态须为4−2δ。
+\item 若CeIII分数为x，则平均价=3x+4(1−x)=4−x，因此x=2δ=0.4。
+\item CeIV分数1−x=0.6，平均Ce价=3.6。
+\item 每mol化学式相对于CeO2少δmol氧原子，等效氧气损失δ/2mol O2。
+\item 若CeIII所有磁矩完全同向，化学式净磁矩在该**额外磁性假设**下为2.540x=1.016 μB。
+\item 通常热涨落导致随机自旋时饱和磁矩、有效顺磁矩和零场净磁化必须区分，化学价态比例并不能唯一给出真实零场净磁矩。
+\item 数值逆核验：按独立化学计量、平衡和约束关系复算，三个无量纲检验残差分别为 0.000e+0、0.000e+0、0.000e+0；满足题定理想模型，但不代表专家审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+CeIII\_fraction = 0.4 fraction；CeIV\_fraction = 0.6 fraction；mean\_ce = 3.6 valence；aligned\_mu = 1.016 mu\_B\par
+\noindent\textbf{模型前提：}
+理想固定Ce位且价态仅III、IV；磁性结果为明示饱和共线假设，不声称实验零场磁化。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-I32 · 有限双齿配体逐级络合的物种分布与根唯一性}
+\noindent\textbf{题目}\par
+假想金属M2+总分析浓度0.02000M与一个单齿中性配体L总量0.01000M可形成ML2+和ML2\textasciicircum{}2+，逐级常数K1=300L/mol、K2=80L/mol，体积和pH固定，无其它物种。求自由配体、游离金属、两种络合物浓度、金属平均结合配体数、配体占用分数，证明完整配体守恒物理解唯一，讨论把二级络合物当作只消耗一个L的错误。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 逐级配合关系ML=K1 l m，ML2=K1K2 l²m，令l=[L]、m=[M2+]。
+\item 金属守恒CM=m(1+K1l+K1K2l²)，故m=CM/(1+K1l+K1K2l²)。
+\item 配体守恒CL=l+ML+2ML2，代入单变量函数f(l)=l+CM(K1l+2K1K2l²)/(1+K1l+K1K2l²)。
+\item f(l)对l≥0严格递增（配体平均占据数是正活动度的单调函数），f(0)=0且f(CL)>CL，唯一根。
+\item 二分求自由l=0.001717449017M，游离m=0.01261013493M，ML=0.006497179152M，ML2=0.0008926859157M。
+\item 平均每金属结合配体数(ML+2ML2)/CM=0.4141275492，配体占用比例(ML+2ML2)/CL=0.8282550983；两金属络合物共存。
+\item 数值逆核验：按独立化学计量、平衡和约束关系复算，三个无量纲检验残差分别为 -1.735e-16、-1.735e-16、0.000e+0；满足题定理想模型，但不代表专家审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Lfree = 0.00171744902 mol/L；Mfree = 0.0126101349 mol/L；ML = 0.00649717915 mol/L；ML2 = 0.000892685916 mol/L\par
+\noindent\textbf{模型前提：}
+假想逐级常数只允许单核ML与ML2，忽略聚合、配体酸碱及其它金属竞争。\par
+\medskip\hrule\medskip
+\subsection*{分析化学}
+\addcontentsline{toc}{subsection}{第5辑 / 分析化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-A20 · 改变终体积的标准加入与竞争络合吸光响应联合反演}
+\noindent\textbf{题目}\par
+10.00mL未知金属试液原浓度c未知。分别向三份等体积原液中加入标准金属0、2.000、5.000mL（浓度0.01000M），体积仅由加标增加。显色前添加足量络合掩蔽剂，条件下金属的自由比例固定为1/(1+βL)，β=500 L/mol、自由L=0.002000M，只有游离金属对检测波长吸光，ε=7000 L mol\textasciicircum{}-1cm\textasciicircum{}-1、光程1.000cm，读数依次为5.6、10.5、15.4。求原液c，补偿稀释后再计算两次加标的理论吸光度、确定零加标曲线截距，说明忽视体积将产生什么偏差。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设未知原液浓度c，加入标准体积v（L）后金属物料为c V0+cs v，总体积V0+v。
+\item 显色自由金属比例α=1/(1+βL)=1/2，因此A(v)=εα(cV0+csv)/(V0+v)。
+\item v=0时A0=εαc，故c=A0/(εα)=0.0016 M。
+\item 把求得c代入v=.002L，预测A2=10.5；v=.005L，预测A5=15.4。
+\item 如构造校正坐标A(v)(V0+v)对v，得到直线εα(cV0+csv)，截距=0.056 吸光度·L，斜率=35 吸光度/L。
+\item 如果直接将原始A对加标体积强迫线性拟合而不考虑最终体积改变，将引入非线性系统偏差；掩蔽剂比例也不可遗漏。
+\item 最后将识别出的未知量代回相互独立的测量方程和物料约束，归一化残差为 0.000e+0、0.000e+0、0.000e+0；不以此代替现实仪器验证。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+c = 0.0016 mol/L；A2 = 10.5 abs；A5 = 15.4 abs；slope = 35 abs/L\par
+\noindent\textbf{模型前提：}
+自由L浓度由过量缓冲固定且加标不改变，只有游离金属吸光，背景扣除，标准加入对体积影响全部计入。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-A21 · 有限蛋白结合位点荧光猝灭的二次反演}
+\noindent\textbf{题目}\par
+某荧光探针P与有限蛋白位点L发生1:1可逆结合PL，条件形成常数K=[PL]/([P][L])=240L/mol。总体积固定，探针总浓度0.002000M、蛋白可占位点总浓度0.003000M。只有自由P发光，PL在检测窗口中无发光，零蛋白条件下归一化信号为1，且探针的吸收与量子产率与浓度无关。求结合复合物、自由P/L、荧光比值、表观占据率，证明正根唯一以及为什么不能将游离蛋白浓度当作总蛋白。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设复合物浓度x，两个元素物料守恒分别给[P]=P0−x和[L]=L0−x。
+\item 结合平衡要求x=K(P0−x)(L0−x)，物理区间0<x<min(P0,L0)。
+\item 函数x/[(P0−x)(L0−x)]在物理区间单调从0至∞，所以唯一正根。
+\item 解得复合物x=0.0007094535669 M，自由P=0.001290546433 M，自由L=0.002290546433 M。
+\item 仅自由P发光，归一化相对荧光S/S0=[P]/P0=0.6452732165，位点占据率x/L0=0.2364845223。
+\item 注意探针结合比例x/P0=0.3547267835与蛋白占据率x/L0不同；二者只在两种总浓度相等时才可能相等。
+\item 最后将识别出的未知量代回相互独立的测量方程和物料约束，归一化残差为 2.220e-16、0.000e+0、0.000e+0；不以此代替现实仪器验证。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+PL = 0.000709453567 mol/L；freeP = 0.00129054643 mol/L；freeL = 0.00229054643 mol/L；fluorescence\_ratio = 0.645273217 fraction\par
+\noindent\textbf{模型前提：}
+理想单一位点、无协同、荧光仅自由探针、无内滤效应与复合物散射。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-A22 · 顶空气液分配与有限水相回收的守恒反演}
+\noindent\textbf{题目}\par
+某水样中可挥发中性分析物初始浓度0.004000M、体积100.0mL；将样品放入密闭125mL容器，顶空气相体积25.0mL。达到298.15K平衡时，题设温度下气相浓度/水相浓度的无量纲分配系数Kcg/cw=3.000，两相体积固定、理想气体、没有瓶壁吸附。求平衡顶空气与水相浓度、转入顶空气的mol和占比、气相分压（kPa）；再说明仅凭顶空气信号反演原样浓度时必须校正哪些体积和分配参数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 起始分析物总mol数n0=c0 Vw=0.0004 mol，封闭容器不允许损失。
+\item 分配平衡cg=Kcw，封闭物料守恒cwVw+cgVg=n0。
+\item 消去cg得到cw=n0/(Vw+KVg)=0.002285714286 M，cg=0.006857142857 M。
+\item 顶空气分析物mol为cgVg=0.0001714285714 mol，占总量的0.4285714286。
+\item 理想气体分压p=cgRT，cg由mol/L换算为mol/m³时乘1000，Pa换算为kPa再除1000，两因子相消，故p=16.99856249 kPa。
+\item 如仅使用顶空气响应cg，原始浓度c0=cg(Vw+KVg)/(KVw)，必须知道液相/气相体积与分配K，否则无法还原原水样。
+\item 最后将识别出的未知量代回相互独立的测量方程和物料约束，归一化残差为 -1.355e-16、0.000e+0、0.000e+0；不以此代替现实仪器验证。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+cw = 0.00228571429 mol/L；cg = 0.00685714286 mol/L；gas\_fraction = 0.428571429 fraction；partial\_pressure = 16.9985625 kPa\par
+\noindent\textbf{模型前提：}
+Kcg/cw使用两相浓度同单位，气相理想，外部温度恒定、无反应、无吸附。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-A23 · 双金属滴定终点的竞争络合选择性与残余游离金属}
+\noindent\textbf{题目}\par
+100.0mL溶液含两个不同金属M2+与N2+，分析浓度分别0.02000M、0.01500M；加入单齿络合剂L总浓度0.02500M（以最终混合体积计），只形成ML、NL，条件形成常数分别10\textasciicircum{}4与700 L/mol。求自由L、游离两金属、两络合物以及优先被络合金属的占用比例；分析当L总量小于两金属总量时为何不能认为二者均完全络合，并证明唯一物理解。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 令l为游离络合剂浓度，单金属络合平衡给mA=CA/(1+K1l)、mB=CB/(1+K2l)。
+\item 配位物种为[ML]=CA−mA，[NL]=CB−mB，各消耗1份配体。
+\item 完整配体物料方程l+CAK1l/(1+K1l)+CBK2l/(1+K2l)=CL，在l∈[0,CL]有唯一正根。
+\item 数值根l=0.0009445272208 M，游离金属M=0.001914741866 M、N=0.009029785355 M。
+\item 络合量ML=0.01808525813 M，NL=0.005970214645 M；配位剂用于M的比例ML/(ML+NL)=0.7518147034。
+\item 由于CL<CA+CB且平衡形成常数有限，完全络合二金属会违反配体守恒，同时必须保留游离金属。
+\item 最后将识别出的未知量代回相互独立的测量方程和物料约束，归一化残差为 -2.776e-16、0.000e+0、-3.331e-16；不以此代替现实仪器验证。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+L = 0.000944527221 mol/L；Mfree = 0.00191474187 mol/L；Nfree = 0.00902978535 mol/L；ML = 0.0180852581 mol/L；NL = 0.00597021465 mol/L\par
+\noindent\textbf{模型前提：}
+pH由缓冲固定，只有两种1:1配合物，忽略沉淀、配位异构和其它物种。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-A24 · 三通道ICP-OES谱线重叠的满秩矩阵消干扰}
+\noindent\textbf{题目}\par
+三种金属离子X、Y、Z在三个多元素ICP-OES波长的扣背景响应为S1=ε(cX+cY)，S2=ε(cX+0.5cY+cZ)，S3=ε(0.2cX+cY+cZ)，其中ε=15000 L mol\textasciicircum{}-1cm\textasciicircum{}-1且仪器光程等效已经标定。测得读数S1、S2、S3依次为22.5、23.25、15。求三个元素浓度和各通道的重叠贡献，计算矩阵行列式是否非零，并用一个未参与求解的线性组合S3−S2+0.8S1验证Y的响应。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将各浓度缩放为U=εcX、V=εcY、W=εcZ，三个通道方程分别为S1=U+V、S2=U+0.5V+W、S3=0.2U+V+W。
+\item 构造S3−S2+0.8S1=(0.5+0.8)V=1.3V，求得V=7.5。
+\item 再由S1=U+V得到U=15，第三未知W=S2−U−0.5V=4.5。
+\item 换回金属浓度cX=U/ε=0.001 M、cY=0.0005 M、cZ=0.0003 M。
+\item 系数矩阵经消元后给出非零比例1.3，因此3个波长线性独立；若响应矩阵行列式为0，则存在不可辨识的线性组合。
+\item 三通道中由X、Y、Z分别贡献的强度可依照响应系数矩阵计算；验证0.8S1+S3−S2=9.75=1.3V。
+\item 最后将识别出的未知量代回相互独立的测量方程和物料约束，归一化残差为 0.000e+0、0.000e+0、0.000e+0；不以此代替现实仪器验证。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+X = 0.001 mol/L；Y = 0.0005 mol/L；Z = 0.0003 mol/L\par
+\noindent\textbf{模型前提：}
+仪器响应已完成线性区校准、无基体改变和散射，三个波长的空白已扣除。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-A25 · 双指数荧光寿命曲线的积分强度与时间门控反演}
+\noindent\textbf{题目}\par
+某理想脉冲激发荧光信号可表示I(t)=2000exp(−0.001t)+50000exp(−0.030t)，t单位ns，I为每ns光子计数率，仪器响应已经去卷积。两个寿命成分分别反映长寿命及短寿命荧光，忽略背景。计算t=10、30ns时瞬时强度、0至无穷的两成分积分光子数、以光子数加权平均的荧光寿命、10ns时间门控后长寿命部分的光子占比，说明瞬时振幅和总积分贡献不能混同。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 信号是双指数叠加，给定两个寿命τ1=1/0.001=1000ns和τ2=1/0.030≈33.333ns。
+\item 在t=10ns时I10=2000e\textasciicircum{}(−0.01)+50000e\textasciicircum{}(−0.30)=39021.0107，在t=30ns时I30=22269.37405。
+\item 积分强度∫0∞Ai e\textasciicircum{}(−t/τi)dt=Ai τi，长寿命贡献2.0×10\textasciicircum{}6 photons、短寿命贡献约1.66667×10\textasciicircum{}6 photons。
+\item 总积分光子数N=2000/0.001+50000/0.030=3666666.667，与初始振幅I0=52000 不同。
+\item 以光子数加权τph=ΣAiτi²/ΣAiτi=560.6060606 ns。
+\item 10ns后门控积分长寿命部分分数为(A1 τ1 e\textasciicircum{}(−10/τ1))/ΣAiτi e\textasciicircum{}(−10/τi)=0.6159330904；门控后组分权重不等于t=0振幅比例。
+\item 最后将识别出的未知量代回相互独立的测量方程和物料约束，归一化残差为 0.000e+0、0.000e+0、0.000e+0；不以此代替现实仪器验证。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+I10 = 39021.0107 counts/ns；I30 = 22269.3741 counts/ns；total\_photons = 3666666.67 counts；mean\_tau = 560.606061 ns\par
+\noindent\textbf{模型前提：}
+探测响应去卷积且光子强度不受饱和，题给寿命为模型参数，没有统计噪声或背景。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-A26 · 库仑水分测定中漂移空白与结晶水计量联合反演}
+\noindent\textbf{题目}\par
+某无水环境下库仑卡尔费休测定一个盐的结晶水，已知干盐样品0.2000g、总一价水反应电量换算成水量系数为每mol H2O需要2mol e−。有效测量积分电量Q=32.000C，其中同一时间窗口由独立空白试验估计电量漂移Qblank=1.500C，法拉第常数F=96485.33212 C/mol。假定试样中唯一可测挥发性成分为水，求扣空白的水mol与水质量、样品中水质量分数以及若把32.000C全计为水将造成的偏差。若结晶盐的无水式量M0=160.0g/mol，反推出平均每式单位水合数并说明它可能不是整数的含义。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 有效净水电量QH2O=Q−Qblank=30.500 C，漂移不属于样品水。
+\item 题设2e−对应1分子水，nH2O=QH2O/(2F)=0.0001580551123 mol。
+\item 水质量mH2O=18.015 n=0.002847362847 g。
+\item 按原试样0.2000g计算水质量分数w=0.01423681424。
+\item 无水盐质量m0=0.2−mH2O=0.1971526372 g，盐式单位n0=m0/160；水合数n水/n盐=0.1282702495。
+\item 若误扣空白则水量被系统高估Qblank/QH2O=0.04918032787；平均水合数非整数可能表示混合水合程度或测量/题设模型不完整。
+\item 最后将识别出的未知量代回相互独立的测量方程和物料约束，归一化残差为 0.000e+0、0.000e+0、0.000e+0；不以此代替现实仪器验证。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+water\_mol = 0.000158055112 mol；water\_mass = 0.00284736285 g；water\_fraction = 0.0142368142 fraction；hydration = 0.12827025 mol/mol\par
+\noindent\textbf{模型前提：}
+理想库仑KF反应与标定每水2电子相符，背景电量已独立测定，无其它氧化还原物与挥发性干扰。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-A27 · Van Deemter柱效、最优线速度与理论塔板数}
+\noindent\textbf{题目}\par
+某HPLC色谱柱长1.200m，实验得到Van Deemter经验系数A=0.001000mm、B=0.02000mm²/s、C=0.01000s（u单位mm/s），板高H(u)=A+B/u+Cu。要求严格最小化板高，求最佳线速度、最小板高及理论塔板数；线速度若偏离最优至两倍，求塔板数损失比例与半径条件，说明A项无法通过改变u消除。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对H(u)=A+B/u+Cu求导H′(u)=−B/u²+C，正驻点u*=√(B/C)=1.414213562mm/s。
+\item 二阶导数H″(u)=2B/u³>0，所以该驻点是u>0上的唯一全局最小。
+\item 最小板高Hmin=A+2√(BC)=0.02928427125mm。
+\item 柱长1.2m=1200mm，理论塔板数N=L/Hmin=40977.62891。
+\item 两倍最优线速度时H(2u*)=0.03635533906mm，塔板数N2=33007.53152。
+\item 相对塔板损失1−N2/N*=0.1944987447；固定A反映与流速无关的多路径涡流扩散贡献。
+\item 独立复算检验：将结果带回观测方程，分别恢复三项约束；计算残差为 0.000e+0、2.220e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+u\_star = 1.41421356 mm/s；Hmin = 0.0292842712 mm；Nmax = 40977.6289 plates；N\_double = 33007.5315 plates\par
+\noindent\textbf{模型前提：}
+经验Van Deemter模式只在指定柱和流速范围有效，不承诺实际超高速不存在压力限制及非理想传质。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-A28 · 单元弱酸部分中和后的精确电荷守恒与pH}
+\noindent\textbf{题目}\par
+某恒容水溶液体积1.000L，弱酸HA的分析浓度C=0.002000M，Ka=1.000×10\textasciicircum{}-5；加入NaOH所提供的Na+分析浓度为0.001500M（不计体积变化），不含其他电解质。25°C时Kw=10\textasciicircum{}-14，假设所有酸、碱迅速平衡。要求由电荷守恒而非Henderson近似精确计算pH、HA与A−浓度和剩余自由H+/OH−浓度；证明物理解在h>0唯一并与忽略水自解离近似比较。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 令h=[H+]，弱酸物料守恒与Ka关系给[A−]=C Ka/(Ka+h)、[HA]=C h/(Ka+h)。
+\item 水自解离给[OH−]=Kw/h，电荷守恒h+[Na+]=[A−]+[OH−]。
+\item 因此单变量方程f(h)=h+0.001500−C Ka/(Ka+h)−Kw/h=0。
+\item 当h>0时f′(h)=1+C Ka/(Ka+h)²+Kw/h²>0，并且两端从负无穷到正无穷，故唯一正根。
+\item 求得h=0.000003304055288M，pH=5.480952694，[A−]=0.001503301029M，[HA]=0.0004966989713M。
+\item 水自解离提供[OH−]=3.026583737e-9M；验证电荷守恒差值为零，而直接使用pH=pKa+log10(na/nh)只在h及OH可忽略时近似成立。
+\item 独立复算检验：将结果带回观测方程，分别恢复三项约束；计算残差为 -6.873e-17、0.000e+0、2.220e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+pH = 5.48095269 pH；Aminus = 0.00150330103 mol/L；HA = 0.000496698971 mol/L；H = 3.30405529e-06 mol/L\par
+\noindent\textbf{模型前提：}
+理想浓度酸碱模型，NaOH引入钠已计入，没有CO2吸收、钠络合及活度修正。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-A29 · 光谱响应与氧化还原电子当量的联立浓度解混}
+\noindent\textbf{题目}\par
+未知溶液只含两种可被定量氧化的分析物X、Y，起始浓度cX、cY未知。显色光谱响应A=2.000cX+0.7000cY，观测值A=0.034（浓度以mol/L计）；另一独立库仑扫描每mol X、Y分别转移1及2mol电子，测得每升的电子当量Q/F=0.05mol/L。求两个分析物浓度、若取20.00mL样品的完全氧化所需电量、光谱中X贡献比例以及模型的可辨识矩阵行列式。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 未知量x,y满足光谱方程2x+0.7y=0.034。
+\item 库仑氧化对每mol X提供1mol电子、Y提供2mol电子，故x+2y=0.05。
+\item 两响应矩阵行列式D=2×2−0.7×1=3.3≠0，唯一解。
+\item 由克拉默法则x=(2A−0.7Q)/D=0.01M、y=(2Q−A)/D=0.02M。
+\item 取0.02000L样品时n\_e=(x+2y)0.02000mol，电量Qcell=F(x+2y)0.02000=96.48533212C。
+\item 光谱中X响应比例2x/A=0.5882352941，不能以电子数比例代替吸光比例。
+\item 独立复算检验：将结果带回观测方程，分别恢复三项约束；计算残差为 0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+X = 0.01 mol/L；Y = 0.02 mol/L；charge = 96.4853321 C；X\_signal\_frac = 0.588235294 fraction\par
+\noindent\textbf{模型前提：}
+两独立响应严格线性、光谱经过空白校正，两分析物不发生耦合氧化。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-A30 · 大分子有限位点捕获的双重检测信号与竞争结合量}
+\noindent\textbf{题目}\par
+目标离子M与固相功能化捕获位点S的平衡为M+S⇌MS，条件形成常数350 L/mol，取同一参考体积浓度。初始总M=0.001000M、总位点S=0.001800M；无其它结合物种。发光探测只对游离M响应S\_opt=0.2000+900[M]，而独立重量分析对MS的物质的量响应。求游离M、剩余自由位点、捕获量、光学读数、捕获效率和若把位点浓度误当常量时的偏差方向。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设MS的浓度为x，则[M]=Mtot−x，[S]=Stot−x。
+\item 质量作用x=K(Mtot−x)(Stot−x)；在物理区间0<x<min(Mtot,Stot)，函数x/[(Mtot−x)(Stot−x)]严格单调上升。
+\item 求根得捕获浓度x=0.0003384275921M，自由M=0.0006615724079M。
+\item 自由位点Stot−x=0.001461572408M，捕获效率x/Mtot=0.3384275921。
+\item 光学信号Sopt=0.2+900[M]=0.7954151671，不应把总M直接代入光学信号。
+\item 若误设自由位点[S]=Stot，等效增强结合能力，通常会高估x；严格结果必须同时满足两物料守恒。
+\item 独立复算检验：将结果带回观测方程，分别恢复三项约束；计算残差为 -3.331e-16、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+captured = 0.000338427592 mol/L；Mfree = 0.000661572408 mol/L；Sfree = 0.00146157241 mol/L；optical = 0.795415167 signal\par
+\noindent\textbf{模型前提：}
+假想单一1:1功能位点，形成常数按标准参照浓度定义，不讨论捕获颗粒的非平衡吸附阻力。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-A31 · 交叉灵敏传感器二通道消干扰与噪声条件数}
+\noindent\textbf{题目}\par
+两个电化学传感器对分析物X、Y的标定响应为S1=0.7000cX+0.2000cY与S2=0.3000cX+0.8000cY，实测S1=0.0011、S2=0.0019，浓度以mol/L计。求cX、cY、响应矩阵的行列式；若仅第二通道有+1.000×10\textasciicircum{}-4的偏移，求反演两浓度的确定性变化，并解释为什么通道响应向量越共线，噪声越容易放大。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 写成线性矩阵M c=S，其中M=[[0.7,0.2],[0.3,0.8]]。
+\item 其行列式D=0.7×0.8−0.2×0.3=0.5，不为零，故唯一反演。
+\item 克拉默法则cX=(0.8S1−0.2S2)/D=0.001M。
+\item cY=(0.7S2−0.3S1)/D=0.002M。
+\item 当只有S2出现偏移δ时，ΔcX=−0.2δ/D=-0.00004M，ΔcY=0.7δ/D=0.00014M。
+\item 逆问题的误差放大随1/|D|增大，两个通道完全共线会使D=0，根本无法从两个观测恢复两个未知量。
+\item 独立复算检验：将结果带回观测方程，分别恢复三项约束；计算残差为 3.943e-16、3.424e-16、4.337e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+X = 0.001 mol/L；Y = 0.002 mol/L；det = 0.5 dimensionless；shiftX = -4e-05 mol/L\par
+\noindent\textbf{模型前提：}
+传感器线性且背景扣除，讨论的是确定性偏移而非统计标准差估计。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-A32 · 饱和响应型电化学适配体传感器的逆标定与动态范围}
+\noindent\textbf{题目}\par
+某适配体电化学传感器的归一化信号由单站位点占据控制，S(c)=Kc/(1+Kc)，形成常数K=4.000×10\textasciicircum{}4 L/mol，测量条件保持固定。读数S=0.9523809524。求待测浓度、dS/dc局部灵敏度、采用线性低浓度近似S≈Kc反算时的高估/低估倍数，以及如果S的绝对偏移为0.0100时得到的浓度误差线性近似；证明接近饱和时反算不稳定的数学原因。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 饱和响应S=Kc/(1+Kc)单调从0上升至1，反函数为c=S/[K(1−S)]。
+\item 将观测S=0.9523809524代入，c=0.0005mol/L。
+\item 微分dS/dc=K/(1+Kc)²=90.70294785 L/mol。
+\item 如果误用低浓度线性式c\_lin=S/K，得到0.00002380952381M，与真实浓度之比为0.04761904762，严重低估。
+\item 反函数导数dc/dS=1/[K(1−S)²]=0.011025 M/信号；信号偏移0.0100时一阶浓度偏移约0.00011025M。
+\item 当S→1，dc/dS→∞；因此越接近饱和，即使相同绝对信号误差也会带来更大的反算浓度误差。
+\item 独立复算检验：将结果带回观测方程，分别恢复三项约束；计算残差为 0.000e+0、-1.084e-15、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+c = 0.0005 mol/L；sensitivity = 90.7029478 L/mol；linear\_estimate = 2.38095238e-05 mol/L；error\_delta = 0.00011025 mol/L\par
+\noindent\textbf{模型前提：}
+仅理想独立1:1单站吸附，响应无迟滞、无交叉物和仪器漂移。\par
+\medskip\hrule\medskip
+\subsection*{有机化学}
+\addcontentsline{toc}{subsection}{第5辑 / 有机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-O19 · 有限底物分子间可逆缩合的反应进度与最大转化边界}
+\noindent\textbf{题目}\par
+假想有机缩合反应A+B⇌C严格符合1:1:1计量且不生成小分子（如可逆环加成），在1.000L恒温理想溶液中初始A=0.06000mol、B=0.03000mol、C=0，反应平衡常数K=[C]/([A][B])=8.000 L/mol。求平衡反应进度、各物种浓度、限制底物B的转化率，证明物理解唯一，并判断把K当成纯摩尔比K=[C]/([A][B])但忽略体积会造成何种单位问题。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设每升反应进度x，恒定体积下[A]=0.060−x、[B]=0.030−x、[C]=x。
+\item 理想平衡给x=8(0.060−x)(0.030−x)，物理区间0<x<0.030。
+\item 函数x/[(A0−x)(B0−x)]在该区间由0严格递增至∞，故唯一正根。
+\item 求得x=0.008726268674 M，[A]=0.05127373133 M、[B]=0.02127373133 M、[C]=0.008726268674 M。
+\item 限制底物B的转化率x/0.030=0.2908756225，A转化率x/0.060=0.1454378112；二者不相等。
+\item 若改写为物质的量，平衡常数必须按浓度标准态引入体积因子，只有题设体积1L时数值恰巧相等，不能忽略K的单位规范。
+\item 核算：将物种量、相对速率或选择性反带原始独立方程，各约束归一化残差为 -5.551e-16、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+extent = 0.00872626867 mol/L；A = 0.0512737313 mol/L；B = 0.0212737313 mol/L；Bconversion = 0.290875622 fraction\par
+\noindent\textbf{模型前提：}
+只允许A+B↔C，溶液理想、无其它计量产物，K是明示浓度型平衡常数。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-O20 · 串联—并联有机反应网络的中间体浓度与瞬时选择性}
+\noindent\textbf{题目}\par
+假想有机网络A→B(k1=0.180min\textasciicircum{}-1)、B→C(k2=0.0600min\textasciicircum{}-1)、A→D(k3=0.0300min\textasciicircum{}-1)严格按不可逆一级反应进行，初始纯A=1.000mol，恒温恒容。求5.000min时A、B、C、D各自mol、B相对于已消耗A的选择性、B瞬时净生成速率；给出一般解析式并用总物料守恒验证，解释为何不能套用只有A→B→C的B最优分离时间公式。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item A的消耗方程dA/dt=−(k1+k3)A，所以A(t)=e\textasciicircum{}(−(k1+k3)t)。
+\item B的方程dB/dt=k1A−k2B，积分因子法得B(t)=k1[e\textasciicircum{}(−k2t)−e\textasciicircum{}(−(k1+k3)t)]/(k1+k3−k2)。
+\item 副产物D(t)=k3[1−e\textasciicircum{}(−(k1+k3)t)]/(k1+k3)，C=1−A−B−D。
+\item 5min时A=0.3499377491、B=0.4690565659、D=0.09286603584、C=0.08813964916 mol。
+\item 相对于已消耗A的B选择性S\_B=B/(1−A)=0.7215563821，B净生成速率dB/dt=0.03484540089 mol/min。
+\item 并联A→D改变A衰减率为k1+k3，因此若直接使用无旁路串联公式将同时破坏A、B与总物料的核验。
+\item 核算：将物种量、相对速率或选择性反带原始独立方程，各约束归一化残差为 0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+A = 0.349937749 mol；B = 0.469056566 mol；C = 0.0881396492 mol；D = 0.0928660358 mol\par
+\noindent\textbf{模型前提：}
+全网不可逆一级、恒体积，所有物种均不参与其他消耗路径；数值按1mol初始A计。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-O21 · Curtin–Hammett快速构象平衡下两产物通道选择性}
+\noindent\textbf{题目}\par
+假想底物A与B是快速互变构象，任意时刻[B]/[A]=Kconf=1.800，两构象分别不可逆生成产物P与Q，微观一级常数kA→P=0.0400min\textasciicircum{}-1、kB→Q=0.1500min\textasciicircum{}-1；构象交换远快于两反应，整个体系初始底物1.000mol。求整体底物有效衰减常数、10min时剩余量、P与Q累积产物、产物Q/P比例，并严格讨论为何产物比例不是单纯构象比例Kconf。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 快速构象平衡时A分数fA=1/(1+Kconf)=0.3571428571，B分数fB=Kconf/(1+Kconf)=0.6428571429。
+\item 总底物S=A+B，dS/dt=−(fA kA+fB kB)S，故kobs=(kA+Kconf kB)/(1+Kconf)=0.1107142857 min\textasciicircum{}-1。
+\item 剩余S(t)=exp(−kobs t)，10min时S=0.3305019045mol。
+\item 产物P的瞬时生成速率=fA kA S，积分得P=[fA kA/kobs](1−S)=0.08638685103mol。
+\item 同理Q=[fB kB/kobs](1−S)=0.5831112444mol，Q/P=Kconf kB/kA=6.75。
+\item 只有构象平衡快于不可逆反应时结果成立；Q/P由构象概率与反应势垒两者共同决定，而不等于Kconf本身。
+\item 核算：将物种量、相对速率或选择性反带原始独立方程，各约束归一化残差为 0.000e+0、8.882e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+kobs = 0.110714286 min\textasciicircum{}-1；surviving = 0.330501905 mol；P = 0.086386851 mol；Q = 0.583111244 mol\par
+\noindent\textbf{模型前提：}
+构象快速互变，产物不回转且不存在彼此转化；仅两种构象贡献两条不可逆通路。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-O22 · 连续有机保护—脱保护两步网络的中间体最佳截断}
+\noindent\textbf{题目}\par
+假想受保护有机底物A在连续不可逆一级条件下发生A→B(k1=0.200h\textasciicircum{}-1)，B→C(k2=0.0800h\textasciicircum{}-1)，B是目标单保护中间体、C为过度脱保护副产物。起始纯A=1.000mol，在4.000h测定。求A、B、C的量、4h B收率、B收率最大对应的唯一停止时间与峰值，证明极值条件为中间体瞬时生成与消耗速率相等。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由一级方程得到A(t)=e\textasciicircum{}(−k1t)，B(t)=k1[e\textasciicircum{}(−k2t)−e\textasciicircum{}(−k1t)]/(k1−k2)。
+\item 全物料守恒给C(t)=1−A(t)−B(t)。
+\item 4h时A=0.4493289641、B=0.4613667883、C=0.08930424762mol。
+\item 中间体导数B′(t)=k1A−k2B，最大时刻满足k1A=k2B。
+\item 解析化简求得t*=ln(k1/k2)/(k1−k2)=7.635756099h，唯一极大值因为B(0)=B(∞)=0。
+\item 将t*代入B(t)得最大收率=0.5428835233，不可用长期转化率为目标B收率代替最优截断。
+\item 核算：将物种量、相对速率或选择性反带原始独立方程，各约束归一化残差为 0.000e+0、6.939e-18、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+A4 = 0.449328964 mol；B4 = 0.461366788 mol；C4 = 0.0893042476 mol；optimal\_h = 7.6357561 h\par
+\noindent\textbf{模型前提：}
+不可逆两级一级动力学，不存在旁路副反应，B能够在指定时刻瞬时分离。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-O23 · 催化中间体有限占有下的饱和动力学与周转数}
+\noindent\textbf{题目}\par
+假想均相有机催化循环有空闲催化剂Cat与底物结合态CatS两种主要静态物种，结合条件常数K=250 L/mol（非0.250），催化剂总浓度0.01000M，底物自由浓度由储液维持0.05000M，CatS→Cat+P的产物形成速率常数kcat=0.400s\textasciicircum{}-1且配合平衡比周转快。求CatS、空闲Cat、瞬时产物生成速率、每催化剂周转频率TOF与1h内的形式周转数TON；说明为什么TON在底物被固定供应时可以大于初始底物/催化剂比例。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 准平衡条件下[CatS]/[Cat]=K[S]=250×0.05000=12.5。
+\item 催化剂守恒Ctot=[Cat]+[CatS]，故结合态分数θ=KS/(1+KS)=0.9259259259。
+\item 求得[CatS]=Ctotθ=0.009259259259M、空闲Cat=0.0007407407407M。
+\item 产物生成速率v=kcat[CatS]=0.003703703704M/s。
+\item 周转频率TOF=v/Ctot=kcatθ=0.3703703704s\textasciicircum{}-1。
+\item 若底物由储液维持且催化剂不失活，1小时形式TON=TOF×3600=1333.333333；催化剂可循环，因此TON不受初始反应池自由底物量限制。
+\item 核算：将物种量、相对速率或选择性反带原始独立方程，各约束归一化残差为 0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+catS = 0.00925925926 mol/L；cat = 0.000740740741 mol/L；rate = 0.0037037037 mol/(L s)；TON = 1333.33333 turnovers\par
+\noindent\textbf{模型前提：}
+CatS与Cat快速准平衡，底物自由浓度由大储液钳定，假设产品不抑制催化剂。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-O24 · 最概然缩聚链长分布的数均—重均聚合度与分散系数}
+\noindent\textbf{题目}\par
+理想A-A/B-B等当量、完全线性的逐步缩聚在官能团转化率p=0.9400时形成Flory最概然分布，链长为n的分子数分数Pn=(1−p)p\textasciicircum{}(n−1)（n≥1），无环化与分支。原始单体总数以10000mol为单位统计。计算数均聚合度DPn、重均聚合度DPw、分散系数Đ、链长n=2的分子数分数、聚合度≥10的分子数分数以及全部分子簇数量，并从几何级数独立推导两个均值。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 数分布归一化Σ\_\{n≥1\}(1−p)p\textasciicircum{}(n−1)=1。
+\item 几何级数给Σn Pn=1/(1−p)，即DPn=16.66666667。
+\item 重均DPw=Σn²Pn/ΣnPn=(1+p)/(1−p)=32.33333333。
+\item 分散系数Đ=DPw/DPn=1+p=1.94，随转化率增加而趋近2。
+\item 链长2的数分数P2=(1−p)p=0.0564，链长至少10的数分数Σ\_\{n≥10\}Pn=p\textasciicircum{}9=0.5729948022。
+\item 若最初10000mol单体没有环化，最终链簇的总mol数为10000/DPn=600mol；这一数不是聚合物总质量。
+\item 核算：将物种量、相对速率或选择性反带原始独立方程，各约束归一化残差为 0.000e+0、2.220e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+DPn = 16.6666667 repeat units；DPw = 32.3333333 repeat units；dispersity = 1.94 dimensionless；P2 = 0.0564 fraction\par
+\noindent\textbf{模型前提：}
+理想Flory最概然链长分布，全部链无环化和交联，忽略端基质量对分子质量分布的影响。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-O25 · 末端模型共聚链的Markov序列矩阵与稳态二联体频率}
+\noindent\textbf{题目}\par
+假想两单体A/B自由基共聚，进料摩尔分数fA=0.6000、fB=0.4000，反应活性比rA=2.000、rB=0.5000；进料在时间尺度上恒定，末端模型仅由链端种类决定下一单体。求条件跃迁矩阵P(A|A)、P(B|A)、P(A|B)、P(B|B)，求长链稳态A末端分数以及AA/AB/BA/BB四种有向二联体概率；验证马尔可夫平稳条件和AB=BA。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 末端为A时竞争速率比kAA[A]/kAB[B]=rA fA/fB，因此PAA=rA fA/(rA fA+fB)=0.75。
+\item 同一行互补PAB=1−PAA=0.25。
+\item 末端B时PBB=rB fB/(rB fB+fA)=0.25，PBA=1−PBB=0.75。
+\item 设长链末端为A的稳态分数πA，满足πA=πA PAA+(1−πA)PBA，解得πA=PBA/(PBA+PAB)=0.75。
+\item 有向二联体概率为AA=πA PAA=0.5625、AB=πA PAB=0.1875、BA=(1−πA)PBA=0.1875、BB=(1−πA)PBB=0.0625。
+\item 总概率为1且平稳二态链满足AB=BA，不等于按进料独立抽样时的fA fB；因此反应活性比包含链序列信息。
+\item 复核：按原始反应守恒、速率分布或跃迁矩阵还原答案，归一化误差为0.000e+0、8.327e-17、-1.110e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+A\_end\_fraction = 0.75 fraction；AA = 0.5625 fraction；AB = 0.1875 fraction；BB = 0.0625 fraction\par
+\noindent\textbf{模型前提：}
+进料恒定、末端模型和稳态长链极限成立，忽略倒数第二单体效应、链终止偏好及浓度漂移。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-O26 · 动态动力学拆分中消旋与两路产物生成的耦合矩阵解}
+\noindent\textbf{题目}\par
+起始外消旋体R、S各0.5000mol。R和S分别不可逆以kR=0.200h\textasciicircum{}-1、kS=0.0500h\textasciicircum{}-1生成PR、PS，同时未反应底物双向消旋R⇌S，两方向速率常数均为krac=0.0800h\textasciicircum{}-1。体系闭合恒温。利用2×2线性矩阵指数求6h时剩余R、S、总产物mol及底物ee，写出不将消旋误算作净消耗的微分方程、特征值及总物料守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 未反应底物微分方程dR/dt=−(kR+krac)R+krac S，dS/dt=krac R−(kS+krac)S。
+\item 矩阵M的迹为−(kR+kS+2krac)，记b=(kR+kS+2krac)/2=0.205。
+\item 其本征值为−b±d，d=sqrt[(kR−kS)²+4krac²]/2=0.109658561；矩阵指数e\textasciicircum{}(Mt)=e\textasciicircum{}(−bt)[I cosh(dt)+(M+bI)sinh(dt)/d]。
+\item 初始R0=S0=0.5000，代入得到R6=0.1836450621mol，S6=0.3248742725mol。
+\item 未反应底物总量=0.5085193346mol，故总产物mol=0.4914806654，剩余底物ee=(R−S)/(R+S)=-0.2777263338。
+\item 消旋两条反应改变R与S分布但互相抵消总底物数导数；产品总生成速率kR R+kS S，故总A+产物=1。
+\item 复核：按原始反应守恒、速率分布或跃迁矩阵还原答案，归一化误差为0.000e+0、0.000e+0、-1.388e-17。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+R = 0.183645062 mol；S = 0.324874273 mol；product\_total = 0.491480665 mol；ee = -0.277726334 fraction\par
+\noindent\textbf{模型前提：}
+线性不可逆消耗加双向一阶消旋，不含产物回转、非对称催化剂失活或底物相互转化以外副反应。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-O27 · 静态—动态双重荧光猝灭的寿命与强度分离}
+\noindent\textbf{题目}\par
+假想有机荧光探针初态寿命τ0=5.000ns，加入猝灭剂Q浓度0.08000M。动态双分子猝灭速率常数kq=4.000×10\textasciicircum{}9 L mol\textasciicircum{}-1s\textasciicircum{}-1，另有独立静态不发光复合效应Ks=6.000L/mol。发光寿命只受动态猝灭影响，荧光强度同时受两效应。求新寿命、寿命比、强度比、寿命与强度的Stern–Volmer增强因子及由同时测得两种比值反演静态常数的表达式，说明单独强度不能分离两机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 激发态衰减速率为1/τ0+kq[Q]，故τ=1/(1/τ0+kqQ)=1.923076923ns。
+\item 寿命比τ/τ0=1/(1+kqτ0Q)=0.3846153846，寿命Stern–Volmer因子τ0/τ=2.6。
+\item 静态复合减少初始可发光探针占比，强度比I/I0=(τ/τ0)/(1+KsQ)=0.2598752599。
+\item 强度Stern–Volmer因子I0/I=(1+kqτ0Q)(1+KsQ)=3.848。
+\item 若分别测得寿命与强度，则Ks=[(I0/I)/(τ0/τ)−1]/Q=6 L/mol。
+\item 单一强度数据只能确定两个效应因子的乘积，无法区分静态配位与动态激发态碰撞猝灭。
+\item 复核：按原始反应守恒、速率分布或跃迁矩阵还原答案，归一化误差为0.000e+0、0.000e+0、-4.441e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+tau = 1.92307692 ns；lifetime\_ratio = 0.384615385 fraction；intensity\_ratio = 0.25987526 fraction；Kst = 6 L/mol\par
+\noindent\textbf{模型前提：}
+动态猝灭满足简单Stern–Volmer，静态猝灭物种完全暗态且不改变剩余自由探针的τ0。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-O28 · 有机底物与催化剂预配位竞争抑制的周转响应}
+\noindent\textbf{题目}\par
+某均相有机催化剂Cat总浓度0.008000M，与底物S（由大储液维持0.03000M）形成唯一反应活性络合物CatS，结合常数K\_S=200L/mol；另有抑制剂I自由浓度0.02000M，形成不活性CatI，K\_I=80.0L/mol，两结合相互排斥且都迅速达到准平衡。仅CatS以kcat=0.500s\textasciicircum{}-1形成P并恢复Cat。求自由Cat、CatS、CatI、产品生成初速及相对无抑制剂时速率保留比例。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设自由Cat浓度c，由准平衡CatS=KS[S]c=6c、CatI=KI[I]c=1.6c。
+\item 催化剂守恒Ctot=c(1+6+1.6)=8.6c，因此自由c=0.0009302325581M。
+\item 活性络合CatS=6c=0.005581395349M、抑制态CatI=1.6c=0.001488372093M。
+\item 产品形成初速v=kcat[CatS]=0.002790697674M/s。
+\item 无抑制剂时CatS分数=6/(1+6)，v0=0.003428571429M/s。
+\item 速率保留比v/v0=(1+6)/(1+6+1.6)=0.8139534884，说明高底物浓度能通过竞争结合缓解抑制。
+\item 复核：按原始反应守恒、速率分布或跃迁矩阵还原答案，归一化误差为0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+cat\_free = 0.000930232558 mol/L；catS = 0.00558139535 mol/L；catI = 0.00148837209 mol/L；rate = 0.00279069767 mol/(L s)\par
+\noindent\textbf{模型前提：}
+竞争配位与配体浓度准稳态钳定，产物无抑制，无协同性，催化剂不会失活。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-O29 · 多级有机前药酶促活化的有限时间疗效组分反演}
+\noindent\textbf{题目}\par
+假想有机前药P在血浆模拟体外反应体系中依次不可逆一级转为活性A再转为无活性代谢物M，速率常数k1=0.01200min\textasciicircum{}-1、k2=0.005000min\textasciicircum{}-1。初始P浓度0.02000M、A及M均为零，体系恒体积；120.0min后取样。求三种物质的浓度、已消耗P中转为仍有效A的比例、A最大时刻以及该时刻浓度，证明A(t)的解析解，并注明该模型不能直接推断人体疗效或药代分布。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item P(t)=P0 exp(−k1 t)，得120min时P=0.004738555174M。
+\item 活性A满足A′=k1P−k2A，积分因子解A=P0 k1[e\textasciicircum{}(−k2t)−e\textasciicircum{}(−k1t)]/(k1−k2)。
+\item 120min时A=0.01069316151M，失活代谢产物M=P0−P−A=0.004568283315M。
+\item 已消耗P对应的活性A比例A/(P0−P)=0.7006650833。
+\item A瞬时最大满足k1P=k2A，化简t*=ln(k1/k2)/(k1−k2)=125.0669625min。
+\item 峰值浓度A*=0.01070164493M；实际血浆蛋白结合、非均相代谢与体内清除均不在此题范围。
+\item 复核：按原始反应守恒、速率分布或跃迁矩阵还原答案，归一化误差为0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+P120 = 0.00473855517 mol/L；A120 = 0.0106931615 mol/L；M120 = 0.00456828332 mol/L；t\_peak = 125.066962 min\par
+\noindent\textbf{模型前提：}
+纯体外假想一级连续化学反应，不是医学建议或真实药物疗效预报。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-O30 · 加热有机裂解反应的温度跳变与活化焓敏感性}
+\noindent\textbf{题目}\par
+某假想单分子有机键裂解A→P服从Arrhenius动力学k(T)=kref exp[−Ea/R(1/T−1/Tref)]，已知Tref=310.0K时kref=0.001000s\textasciicircum{}-1、活化能Ea=45.00kJ/mol。将初始1.000mol纯A迅速升至300.0K保持300s，假设升温瞬间零持续时间，裂解为不可逆一级。求300K速率常数、300s转化率、残留底物、由速率温度灵敏度dlnk/dT=Ea/(RT²)得到每K相对变化率，以及如果把T误用摄氏度代入会破坏哪一步数学自洽性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由参考温度310K的速率常数，Arrhenius式直接给k(300)=0.0005588003595s\textasciicircum{}-1。
+\item 不可逆一级反应在恒温300K时A(t)=A0 e\textasciicircum{}(−k t)，300s残留=0.8456581257mol。
+\item 转化分数X=1−e\textasciicircum{}(−kt)=0.1543418743，生成产物mol与转化分数相同。
+\item 在温度300K，dlnk/dT=Ea/(RT²)=0.06013617752 K\textasciicircum{}-1，体现速率对温度的局部灵敏度。
+\item 若1K小温差，线性相对速率变化约(dlnk/dT)ΔT，但不能用该导数跨大温差替代完整指数。
+\item Arrhenius推导依赖绝对热力学温度；直接用摄氏度会造成错误的1/T、错误的无量纲指数与物理行为。
+\item 复核：按原始反应守恒、速率分布或跃迁矩阵还原答案，归一化误差为0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+k300 = 0.000558800359 s\textasciicircum{}-1；conversion = 0.154341874 fraction；remaining = 0.845658126 mol；sensitivity = 0.0601361775 K\textasciicircum{}-1\par
+\noindent\textbf{模型前提：}
+纯一级热裂解，活化能恒定、瞬时温度跳变，不考虑热容、反应放热和压力反馈。\par
+\medskip\hrule\medskip
+\subsection*{物理化学}
+\addcontentsline{toc}{subsection}{第5辑 / 物理化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-P19 · 正则溶液的自旋分解边界与临界溶解温度}
+\noindent\textbf{题目}\par
+二元液体的无量纲物质的量分数x在(0,1)，混合Gibbs能g\_mix=RT[xlnx+(1−x)ln(1−x)]+Ωx(1−x)，相互作用参数Ω=6000J/mol，温度T=300.0K且Ω视为常量。求二阶导数和两条自旋线组成、临界温度、x=0.5时均相是否局部稳定；从数学上区分spinodal与binodal，并证明自旋线何时不存在真实根。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 计算一阶导数g′=RTln[x/(1−x)]+Ω(1−2x)。
+\item 二阶导数g″=RT/[x(1−x)]−2Ω，局部稳定要求g″>0。
+\item 自旋线令x(1−x)=RT/(2Ω)，即x±=[1±√(1−2RT/Ω)]/2。
+\item 带入300K得xlow=0.294723517、xhigh=0.705276483。
+\item 临界判别式为零时Tcrit=Ω/(2R)=360.817065K；高于Tc无内部自旋根。
+\item x=0.5时g″=4RT−2Ω=-2022.64486J/mol<0，故局部不稳定；两相共存线需由两相化学势相等/公共切线决定，而不等于自旋线。
+\item 验算：以独立方程将结果重新带入热力学、物料及边界条件，归一化残差为 0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+x\_low = 0.294723517 fraction；x\_high = 0.705276483 fraction；Tc = 360.817065 K；g\_second = -2022.64486 J/mol\par
+\noindent\textbf{模型前提：}
+理想正则溶液模型、无波动临界修正，忽略体积效应与Ω温度变化。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-P20 · 反应热容差的van’t Hoff积分修正与平衡转化反算}
+\noindent\textbf{题目}\par
+某假想异构化A⇌B在300K的标准反应焓ΔH°=−40.00kJ/mol、标准反应熵ΔS°=−120.0J mol\textasciicircum{}-1K\textasciicircum{}-1，反应热容差ΔCp=+80.00J mol\textasciicircum{}-1K\textasciicircum{}-1在300–350K固定。理想溶液中起始纯A且体积恒定，求300K、350K的K及350K的平衡B摩尔分数。证明为什么不能用常焓van’t Hoff指数跨越50K，并以ΔG°(T)反算。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 温度相关反应焓ΔH°(T)=ΔH300+ΔCp(T−300)。
+\item 积分热容差得到反应熵ΔS°(T)=ΔS300+ΔCp ln(T/300)。
+\item 标准反应Gibbs自由能ΔG°(T)=ΔH°(T)−TΔS°(T)。
+\item 热力学平衡常数K(T)=exp[−ΔG°(T)/(RT)]，所以K300=4.97105157。
+\item 同样计算K350=0.560679086，理想A⇌B平衡摩尔比nB/nA=K350。
+\item 起始纯A且无旁路反应，xB=K350/(1+K350)=0.359253283；若假定ΔH恒定，将丢失ΔCp在焓与熵中的双重修正。
+\item 验算：以独立方程将结果重新带入热力学、物料及边界条件，归一化残差为 0.000e+0、-1.110e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+K300 = 4.97105157 dimensionless；K350 = 0.560679086 dimensionless；xB350 = 0.359253283 fraction\par
+\noindent\textbf{模型前提：}
+理想异构化与标准态无量纲K，热容差恒定，不考虑其他温度影响。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-P21 · Debye–Hückel活度校正下二价电极电势的偏差定量}
+\noindent\textbf{题目}\par
+298.15K假想二价金属电极半反应M2++2e−⇌M(s)，金属固相活度1、E°=0.3000V，分析所得自由M2+浓度0.005000mol/L、离子强度0.02000M。题设离子活度系数采用log10γ=−0.509 z²√I/(1+√I)，z=2。求γ、标准1M参照下活度比、正确电势、浓度理想近似电势及偏差；分析为什么同浓度下二价离子受活度校正更强。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 先取√I并按题定扩展Debye–Hückel式计算log10γ=-0.252259063。
+\item 活度系数γ=10\textasciicircum{}logγ=0.559423798，M2+活度比a/c°=γc/1M=0.00279711899。
+\item 半反应Nernst式E=E°+(RT/2F)ln(a/c°)，实际电位=0.22447454V。
+\item 若错把浓度替代活度，Eideal=E°+(RT/2F)ln(c/c°)=0.231936281V。
+\item 正确电势相对理想近似偏移ΔE=(RT/2F)lnγ=-0.00746174105V。
+\item 活度偏差含z²依赖（此题z=2），价态绝对值越大相互作用校正通常越显著；实际浓度更高时需超出此近似的活度模型。
+\item 验算：以独立方程将结果重新带入热力学、物料及边界条件，归一化残差为 0.000e+0、1.388e-17、-3.469e-18。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+gamma = 0.559423798 dimensionless；activity = 0.00279711899 relative 1M；E = 0.22447454 V；error = -0.00746174105 V\par
+\noindent\textbf{模型前提：}
+只采用题定Debye–Hückel近似、固态金属活度为1，忽略液接势、离子尺寸高阶项与过电位。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-P22 · 逆流换热器NTU—效能法的双流量热量核算}
+\noindent\textbf{题目}\par
+稳态无相变逆流换热器的热流体热容流率Ch=400W/K、入口Th,in=360K，冷流体Cc=250W/K、入口Tc,in=290K，总传热能力UA=180W/K且不随温度改变。已知逆流效能ε=[1−exp(−NTU(1−Cr))]/[1−Cr exp(−NTU(1−Cr))]。求Cr、NTU、ε、实际热交换功率、两出口温度以及两端温差，检查能量守恒和物理温度梯度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Cmin=250W/K、Cmax=400W/K，所以Cr=0.625。
+\item NTU=UA/Cmin=180/250=0.72。
+\item 将NTU、Cr代入效能关系求ε=0.452526332。
+\item 最大可能换热功率Qmax=Cmin(Th,in−Tc,in)=17500W，实际Q=εQmax=7919.21082W。
+\item 热出口Th,out=Th,in−Q/Ch=340.201973K；冷出口Tc,out=Tc,in+Q/Cc=321.676843K。
+\item 检查热侧放热Ch(360−Tho)与冷侧吸热Cc(Tco−290)都等于Q；两端最小温差均应为正，不能越过热力学允许的温度梯度。
+\item 验算：以独立方程将结果重新带入热力学、物料及边界条件，归一化残差为 -8.039e-16、-4.594e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+NTU = 0.72 dimensionless；eps = 0.452526332 fraction；Q = 7919.21082 W；Thout = 340.201973 K；Tcout = 321.676843 K\par
+\noindent\textbf{模型前提：}
+恒定热容流率和总UA，理想逆流稳态，无热损失与潜热。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-P23 · 双扩散层加线性表面反应的串联传质阻力}
+\noindent\textbf{题目}\par
+两种串联扩散介质与界面反应等效传质膜组成复合系统，浓度势由左向右降低，左侧体积浓度0.01000mol/m³、右侧0.002000mol/m³。三段线性传递系数k1=1.00×10\textasciicircum{}-4m/s、k2=2.00×10\textasciicircum{}-4m/s、ks=5.00×10\textasciicircum{}-5m/s。题设稳态时三段通量相等，界面反应在传质网络中以线性浓度势降表达。求共同通量、三段势降、膜中两节点浓度以及总阻力，检查各级浓度非负且总势降符合外界边界条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 每段的线性通量式为J=ki Δci，故Ri=1/ki、Rtotal=ΣRi。
+\item 总阻力Rtotal=35000 s/m。
+\item 稳态共同通量J=(cL−cR)/Rtotal=2.28571429e-7mol/(m²s)。
+\item 第一、第二扩散层的浓度势降分别为0.00228571429与0.00114285714mol/m³。
+\item 线性表面反应段的势降=0.00457142857mol/m³，占总驱动力比例=0.571428571。
+\item 沿方向节点浓度c1=cL−Δc1=0.00771428571、c2=cL−Δc1−Δc2=0.00657142857mol/m³；所有势降之和必须等于0.008000mol/m³。
+\item 验算：以独立方程将结果重新带入热力学、物料及边界条件，归一化残差为 0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+J = 2.28571429e-07 mol/(m2 s)；Rtotal = 35000 s/m；drop1 = 0.00228571429 mol/m3；drop2 = 0.00114285714 mol/m3；dropSurface = 0.00457142857 mol/m3\par
+\noindent\textbf{模型前提：}
+题设以一个独立线性阻力代表界面反应与传质，非一般真实化学反应机理。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-P24 · 固体润湿角控制的异相形核势垒削减因子}
+\noindent\textbf{题目}\par
+一假想均匀球形新相核与固体平板接触，经典异相形核近似中同质球核表面能γ=0.06500J/m²，体积驱动力Δg=1.000×10\textasciicircum{}5J/m³，异相润湿接触角θ=70.00°，温度300K。球核临界半径r*=2γ/Δg、均相形核势垒Ghom*=16πγ³/(3Δg²)，异相削减因子f(θ)=(2+cosθ)(1−cosθ)²/4。求临界半径、均相与异相势垒、削减因子和异相/均相指数形核概率比，并说明θ→0、180°的极限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 球形经典形核自由能ΔG(r)=4πγr²−(4π/3)Δg r³，极值给r*=2γ/Δg=0.0000013m。
+\item 无表面时均相势垒Ghom*=16πγ³/(3Δg²)=4.60138604e-13J。
+\item 润湿角θ=70°，异相几何削减因子fθ=0.253487082。
+\item 异相势垒Ghetero*=fθ Ghom=1.16639192e-13J。
+\item 同一动力学前因子假设下相对指数概率比例Jhetero/Jhom≈exp[(Ghom−Ghetero)/(kBT)]，自然对数为82931870.5。
+\item θ→0时fθ→0，几何上完全润湿势垒趋0；θ→180°时fθ→1，异相趋于均相，仍须注意真实表面异质和动力学前指数。
+\item 验算：以独立方程将结果重新带入热力学、物料及边界条件，归一化残差为 0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+rstar = 1.3e-06 m；Ghom = 4.60138604e-13 J；f = 0.253487082 fraction；Ghet = 1.16639192e-13 J\par
+\noindent\textbf{模型前提：}
+经典球冠形核几何模型，接触角固定，忽略接触线张力与动力学前因子差异。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-P25 · 有限两池理想溶质混合的Gibbs能下降与最大可逆功}
+\noindent\textbf{题目}\par
+两个不同浓度理想单一中性溶质水溶液在298.15K、固定体积下分别为V1=1.000L、c1=0.1000M，V2=2.000L、c2=0.02000M。假设溶剂与各池体积不变、溶质稀溶液的混合Gibbs能对浓度的相关部分为G=RTΣ n\_i(ln(c\_i/c°)−1)，标准c°=1M。求直接混合的最终浓度、总溶质mol、Gibbs能变化和理论可提取最大可逆非膨胀功，证明ΔG≤0并说明为什么仅用总溶质摩尔数无法算出混合功。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 总溶质mol数n=c1V1+c2V2=0.14，总容量Vtotal=3.000L。
+\item 混合后均匀浓度cf=n/(V1+V2)=0.04666666667M。
+\item 理想稀溶质的标准态贡献与−RTn项在前后相同总n下严格相消。
+\item 因此ΔG=RT\{n ln(cf/c°)−n1 ln(c1/c°)−n2 ln(c2/c°)\}=-104.9146445J。
+\item 最大可逆非膨胀功Wrev,max=−ΔG=104.9146445J，正值代表浓差资源可利用。
+\item 由xlnx的凸性或Gibbs化学势均衡可证明ΔG≤0；即使总mol相同，不同初始浓度与分池体积会给出不同混合功。
+\item 最后以独立计算核对热力学力、反应动力学与守恒，归一化残差为 4.956e-17、0.000e+0、1.137e-13。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+cf = 0.0466666667 mol/L；n = 0.14 mol；deltaG = -104.914644 J；maxWork = 104.914644 J\par
+\noindent\textbf{模型前提：}
+理想稀溶液且体积相加，不计算实际溶剂化与膜不可逆耗散，理想标准态及温度固定。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-P26 · 球形多孔催化颗粒一级反应的效能因子与表面浓度}
+\noindent\textbf{题目}\par
+等温球形多孔催化剂颗粒半径Rp=2.000mm、有效扩散系数De=1.00×10\textasciicircum{}-9m²/s，颗粒内反应物按一级不可逆反应−r=k c、k=0.004000s\textasciicircum{}-1，表面反应物浓度cs=0.01000mol/m³由外部充分搅拌维持。球对称稳态满足De(1/r²)d/dr[r²dc/dr]−kc=0，中心通量0。求Thiele模数、催化效能因子η=3(φ cothφ−1)/φ²、颗粒中心/表面浓度比及每颗粒实际反应量与无内扩散限制反应量之比；证明η<1并给出φ→0极限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对球对称反应扩散方程，令λ=√(k/De)，无量纲Thiele模数φ=Rpλ=4。
+\item 保持中心有限的解析解为c(r)/cs=[Rp sinh(λr)]/[r sinhφ]，r→0需取极限。
+\item 中心/表面浓度比c(0)/cs=φ/sinhφ=0.1465742813。
+\item 将球内k c(r)对体积积分并与无扩散限制kcs的体积总速率相比，得η=3(φ cothφ−1)/φ²。
+\item 对参数计算η=0.5630033628，由于内部浓度均小于或等于cs，0<η<1。
+\item φ→0时cothφ=1/φ+φ/3+O(φ³)，因此η→1；φ大时η≈3/φ，解释强扩散限制下体积利用效率下降。
+\item 最后以独立计算核对热力学力、反应动力学与守恒，归一化残差为 0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+phi = 4 dimensionless；center\_ratio = 0.146574281 fraction；eta = 0.563003363 fraction；boundary\_factor = 3.0026846 dimensionless\par
+\noindent\textbf{模型前提：}
+球形均匀多孔颗粒、有效D恒定、一级不可逆等温反应，外部膜阻力已忽略。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-P27 · 全混流CSTR的一阶反应与瞬态响应时间常数}
+\noindent\textbf{题目}\par
+一台恒温完全混合连续搅拌釜CSTR中进行假想单一液相一级反应A→B，进料浓度CA,in=0.1000M，停留时间τ=2.000min，一级动力学常数k=0.4000min\textasciicircum{}-1，体积与流量恒定。起始釜内没有A，t=0起接通恒定进料。推导瞬态A浓度微分方程并求任意时刻C\_A(t)，计算最终稳态浓度、稳态转化率、达到稳态浓度90\%的时间与当时产物生成速率，证明混合釜稳态与同停留时间PFR转化率不同。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完全混合釜物料守恒V dC/dt=F(Cin−C)−Vk C，化为dC/dt=Cin/τ−(1/τ+k)C。
+\item 定义衰减特征率λ=1/τ+k=0.9 min\textasciicircum{}-1，积分因子解C(t)=Css[1−e\textasciicircum{}(−λt)]。
+\item 稳态浓度Css=Cin/(1+kτ)=0.05555555556M。
+\item 稳态转化率X=kτ/(1+kτ)=0.4444444444；PFR一级模型为1−e\textasciicircum{}(−kτ)，不会与CSTR相同。
+\item 达到90\%稳态浓度需要t90=ln10/λ=2.558427881min。
+\item 此时C\_A=0.9Css，产物体积生成速率rB=kC\_A=0.02M/min；A的瞬态积累须按完整CSTR守恒而非直接套用批反应。
+\item 最后以独立计算核对热力学力、反应动力学与守恒，归一化残差为 0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+CAss = 0.0555555556 mol/L；conversion = 0.444444444 fraction；lambda = 0.9 min\textasciicircum{}-1；t90 = 2.55842788 min\par
+\noindent\textbf{模型前提：}
+完全混合单一液相、恒流量恒体积无旁路与死区，一级不可逆。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-P28 · Onsager互易耦合热质传递的熵产生正定性检验}
+\noindent\textbf{题目}\par
+在线性不可逆热力学近似下，两类标量热力学通量J1、J2和共轭广义热力学力X1、X2满足Onsager互易关系[J1,J2]\textasciicircum{}T=L[X1,X2]\textasciicircum{}T，L=[[3.000,0.8000],[0.8000,2.000]]（按给定归一化单位），两个外驱动力X1=0.2000、X2=−0.1000。求两通量、总无量纲熵产生率σ=J1X1+J2X2、交叉项对熵产生的贡献；证明L为正定矩阵并解释两通量为何可能在某条件下逆自身直接力方向。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Onsager矩阵按题设L12=L21=0.8000，满足互易关系。
+\item 通量J1=3X1+0.8X2=0.52，J2=0.8X1+2X2=-0.04。
+\item 总熵产生σ=X\textasciicircum{}T L X=J1X1+J2X2=0.108，应非负。
+\item 对角贡献L11X1²+L22X2²=0.14，交叉贡献2L12X1X2=-0.032。
+\item 矩阵正定充分必要条件L11>0且det L=L11L22−L12²=5.36>0，因此对任何非零X都有σ>0。
+\item 虽然总熵产生必为正，单一通量可由交叉项主导而与该通量自己的驱动力方向相反，并通过耦合另一通量而不违反第二定律。
+\item 最后以独立计算核对热力学力、反应动力学与守恒，归一化残差为 0.000e+0、0.000e+0、5.204e-18。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+J1 = 0.52 arb；J2 = -0.04 arb；sigma = 0.108 arb；det = 5.36 dimensionless\par
+\noindent\textbf{模型前提：}
+线性近均衡、两个力通量定义确保σ=ΣJiXi，L对称正定且各单位已标准化。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-P29 · Langmuir–Hinshelwood双底物竞争覆盖的反应速率极值}
+\noindent\textbf{题目}\par
+假想多相表面催化反应A(ads)+B(ads)→P遵循准平衡Langmuir竞争占位，两个底物分别的吸附常数KA=100L/mol、KB=50.00L/mol，溶液自由浓度[A]=0.02000M、[B]=0.03000M，表面占位分数θA=KA[A]/(1+KA[A]+KB[B])，θB同理，表面反应速率r=kθAθB，k=0.01000mol/(g s)。求两种覆盖率、空位分数、反应速率；当B固定时严格求使速率最大的A浓度及最大速率，论证过量A如何反而抑制反应。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设α=KA[A]=2、β=KB[B]=1.5，竞争占位分母D=1+α+β=4.5。
+\item 两种占位率θA=α/D=0.4444444444、θB=β/D=0.3333333333，空位率θ*=1/D=0.2222222222。
+\item 速率r=kθAθB=0.001481481481 mol/(g s)。
+\item 固定B使β恒定，速率正比于αβ/(1+β+α)²。
+\item 对α求导为正比于(1+β−α)/(1+β+α)³，唯一极大值αopt=1+β=2.5。
+\item 因此[A]opt=(1+KB[B])/KA=0.025M，最大速率rmax=kβ/[4(1+β)]=0.0015；A过多会占满位点并挤走B。
+\item 最后以独立计算核对热力学力、反应动力学与守恒，归一化残差为 -1.110e-16、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+thetaA = 0.444444444 fraction；thetaB = 0.333333333 fraction；rate = 0.00148148148 mol/(g s)；Aopt = 0.025 mol/L\par
+\noindent\textbf{模型前提：}
+表面竞争Langmuir单层占位，表面反应为双位点碰撞且不改变准平衡吸附，不考虑位点邻接相关。\par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV5-P30 · 化学电池有限可逆反应的反应商、自由能与电动势}
+\noindent\textbf{题目}\par
+298.15K假想两电子电池总反应R⇌P，标准态下平衡常数K=100.0，当前理想活动度反应商Q=0.1500，n=2，标准态理想反应Gibbs能ΔG°=−RTlnK。某小段反应正向推进0.01000mol时，把电位在这一小段视为瞬时初值近似，求当前ΔG反应摩尔自由能、电动势E、按当前电势估算的小段电功及标准电势，并明确为何较大有限转化必须积分E(ξ)dQ而不能一直用初值。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 反应标准Gibbs能ΔG°=−RT ln K=-11416.019J/mol。
+\item 在当前反应商Q=0.15时ΔG=ΔG°+RTlnQ=RTln(Q/K)=-16118.89793J/mol。
+\item 对应瞬时可逆电动势E=−ΔG/(nF)=0.08353030234V。
+\item 标准电动势E°=RTlnK/(nF)=0.05915934969V，二者相差(−RT/nF)lnQ。
+\item 小段0.01000mol反应转移电量dQ≈nF×0.01000=1929.706642C，初值电势估算的可逆电功≈E dQ=161.1889793J。
+\item 当反应商随转化显著改变，E不是常数，应对电势随进度积分∫E(ξ)nF dξ，不能以当前初值乘整个容量。
+\item 最后以独立计算核对热力学力、反应动力学与守恒，归一化残差为 0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+deltaG = -16118.8979 J/mol；E = 0.0835303023 V；Estandard = 0.0591593497 V；approx\_work = 161.188979 J\par
+\noindent\textbf{模型前提：}
+电池为题定理想化两电子体系，当前电势用于小段线性近似而非完整放电能量；活动度反应商无量纲。\par
+\medskip\hrule\medskip
+\clearpage
+\section*{第6辑 · 题目及解答}
+\addcontentsline{toc}{section}{第6辑}
+\subsection*{无机化学}
+\addcontentsline{toc}{subsection}{第6辑 / 无机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-I33 · 晶体场自旋交叉的熵焓补偿与磁性反演}
+\noindent\textbf{题目}\par
+假想八面体络合物的高自旋HS相对低自旋LS具有ΔH=+12.00kJ/mol、ΔS=+35.00J/(mol K)（含简并贡献），不考虑合作相变。求290K与330K高自旋比例、平均响应（LS=0，HS=4单位）及两态等分温度，解释温度方向。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 自由能差ΔG=ΔH−TΔS，故K=HS/LS=exp(−ΔG/RT)。
+\item 高态分数f=K/(1+K)，且熵已含简并度，不应再乘态简并因子。
+\item 两温度下K分别是0.464285934、0.848735438。
+\item 由此f290=0.317073273，f330=0.459089722，平均响应为4f。
+\item 平分条件ΔG=0给T1/2=ΔH/ΔS=342.857143K，ΔH>0意味着升温提高HS比例。
+\item 原方程逆代入与守恒审计得到归一化残差：2.22e-16、2.22e-16、0.00e+0；计算内一致不代表真实材料实验已获审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.317073273；答案2 = 0.459089722；答案3 = 342.857143；答案4 = 1.26829309；答案5 = 1.83635889\par
+\noindent\textbf{模型前提：}
+独立双态，给定熵差包含所有微态数，忽略磁交换。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-I34 · Fe(III)水解平衡对氧化还原电位的条件修正}
+\noindent\textbf{题目}\par
+298.15K Fe(III)/Fe(II)一电子可逆氧化还原对E°=0.7700V；总Fe(III)=8.00×10\textasciicircum{}-4M，Fe(II)=4.00×10\textasciicircum{}-3M，只有Fe(III)发生一级水解，Kh=[FeOH2+][H+]/[Fe3+]=0.001000M，pH=4.000。求游离Fe3+、水解形态、电势和使用总Fe(III)导致的误差。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 水解形态/游离Fe3+比例Kh/h=10，因此氧化态游离分数h/(h+Kh)。
+\item 游离Fe3+=0.0000727272727M，FeOH2+=0.000727272727M。
+\item Fe2+不水解，Nernst只允许用游离氧化态及还原态活度比。
+\item Ereal=E°+(RT/F)ln([Fe3+]free/[Fe2+])=0.667041275V。
+\item 误用氧化态总量的Ewrong=0.728649389V；其误差为0.061608114V。
+\item 原方程逆代入与守恒审计得到归一化残差：0.00e+0、0.00e+0、4.16e-17；计算内一致不代表真实材料实验已获审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 7.27272727e-05；答案2 = 0.000727272727；答案3 = 0.667041275；答案4 = 0.061608114\par
+\noindent\textbf{模型前提：}
+反应完全理想，Fe(II)不水解且外部缓冲钳定pH。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-I35 · 异价掺杂固定氧位的氧化态补偿与磁矩账本}
+\noindent\textbf{题目}\par
+理想氧化物M\_(1−x)D\_xO\_1.5，其中M3+/M4+、D2+，x=0.1500，氧恒为O2−且氧位固定。M3+、M4+、D2+的饱和共线磁矩假设分别为4、3、3μB。求三价态位点比例、M中被升价比例、平均阳离子正电与化学式净饱和磁矩，说明氧空位补偿替代方案。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 氧总负电荷为−3，若M全为III，则掺入x个DII使阳离子正电少x。
+\item 必须让x个MIII升价至MIV；三类总位点分数依次为1−2x、x、x。
+\item MIV在全部M位点中的占比x/(1−x)=0.176470588。
+\item 总正价3(1−2x)+4x+2x=3，等于负电荷绝对值。
+\item 仅在完全共线饱和假设下磁矩μ=4(1−2x)+3x+3x=3.7μB，真实磁结构不由电中性决定。
+\item 原方程逆代入与守恒审计得到归一化残差：-4.44e-16、0.00e+0、0.00e+0；计算内一致不代表真实材料实验已获审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.7；答案2 = 0.176470588；答案3 = 3.7\par
+\noindent\textbf{模型前提：}
+价态限定III/IV/II，全部位点满占且磁矩平行，忽略氧缺陷。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-I36 · 氢氧化物沉淀与逐级羟基络合的高pH溶解度极限}
+\noindent\textbf{题目}\par
+假想M(OH)2(s) Ksp=10\textasciicircum{}-16；水相仅含M2+、MOH+、M(OH)2(aq)，累积羟基形成常数β1=10\textasciicircum{}4L/mol、β2=10\textasciicircum{}8L²/mol。25℃，Kw=10\textasciicircum{}-14，外部缓冲固定pH。求pH10、11、13的总溶解度和各形式贡献，判断该物种集合是否足以产生真正U形两性溶解度曲线。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 游离M2+浓度m=Ksp/[OH−]²。
+\item MOH+与M(OH)2(aq)分别为β1[OH]m与β2[OH]²m。
+\item 总溶解度S=Ksp\{[OH]\textasciicircum{}-2+β1[OH]\textasciicircum{}-1+β2\}。
+\item 计算S(pH10)=3e-8M、S(pH11)=1.11e-8M。
+\item S(pH13)=1.001001e-8M；各项非增，没有高pH重新上升的U形，需加入更高配位阴离子才可能得到回升。
+\item 原方程逆代入与守恒审计得到归一化残差：0.00e+0、0.00e+0、0.00e+0；计算内一致不代表真实材料实验已获审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 3e-08；答案2 = 1.11e-08；答案3 = 1.001001e-08\par
+\noindent\textbf{模型前提：}
+仅限三种水相物种，活动度和沉淀核化均视为理想。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-I37 · 不等量反离子的中性离子对与自由离子强度}
+\noindent\textbf{题目}\par
+理想电解质中总A+=0.004000M、B−=0.002000M，反离子由支持盐供给，只生成中性AB离子对，K=[AB]/([A+][B−])=200L/mol。求成对浓度、两游离离子、对自由带电离子的离子强度贡献及未配对近似的相对高估，证明正根唯一。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设AB=x，物料守恒[A+]=a−x、[B−]=b−x。
+\item 平衡式x=K(a−x)(b−x)，物理域0<x<min(a,b)。
+\item 函数x/[(a−x)(b−x)]在该区间严格单调递增，故正根唯一。
+\item 二分得x=0.000783009434M，Afree=0.00321699057M，Bfree=0.00121699057M。
+\item 这两离子的离子强度贡献I=(a+b−2x)/2=0.00221699057M；若忽略配对则高估量为x。
+\item 原方程逆代入与守恒审计得到归一化残差：0.00e+0、0.00e+0、0.00e+0；计算内一致不代表真实材料实验已获审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.000783009434；答案2 = 0.00321699057；答案3 = 0.00121699057；答案4 = 0.00221699057\par
+\noindent\textbf{模型前提：}
+只报告这两种离子的部分离子强度，支持盐实际贡献应另计。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-I38 · 逐级双配体络合中的竞争占位与平均配位数}
+\noindent\textbf{题目}\par
+假想M3+逐级与单负L−形成ML2+、ML2+，K1=120L/mol、K2=15L/mol，金属总浓度0.02000M、配体总量0.03000M。求全部游离与络合物浓度及平均配位数，解释每个ML2消耗两单位L，并证明有限配体的平衡根唯一。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设l=[L−]，金属配分母D=1+K1l+K1K2l²。
+\item 金属自由m=C/D，一级ML=K1lm、二级ML2=K1K2l²m。
+\item 配体守恒CL=l+ML+2ML2，左端对l严格递增，且在0和CL两端夹出唯一根。
+\item 解得l=0.0141707945M、Mfree=0.00653177272M、ML=0.0111072491M、ML2=0.00236097818M。
+\item 平均每个M结合配体数=(ML+2ML2)/C=0.791460273；忽略乘2必破坏物料守恒。
+\item 原方程逆代入与守恒审计得到归一化残差：0.00e+0、-2.31e-16、2.22e-16；计算内一致不代表真实材料实验已获审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0141707945；答案2 = 0.00653177272；答案3 = 0.0111072491；答案4 = 0.00236097818；答案5 = 0.791460273\par
+\noindent\textbf{模型前提：}
+只有单金属1:1和1:2络离子，活度近似浓度。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-I39 · 异核混合价络合物定位构型的简并配分函数}
+\noindent\textbf{题目}\par
+某假想二核混合价配合物的电子定位构型A比B的能量高6.000kJ/mol，但态简并度gA/gB=3。在300.0K，A、B的已校准光谱响应为0.400与1.800。求平衡A/B比、两态分数、热平均谱学响应及高温极限；说明电子跃迁快慢需要另一时间尺度才能推断真正离域。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设B为零能态，配分函数Z=1+3exp(−ΔE/RT)。
+\item A/B平衡数比q=0.270675441，A分数p=q/(1+q)=0.213016977。
+\item B分数1−p=0.786983023。
+\item 平均响应S=0.4p+1.8(1−p)=1.50177623。
+\item 升温至∞后两态分数按简并度分配为A=3/4、B=1/4；这种静态构型热统计不等于混合价电子光谱时间平均。
+\item 原方程逆代入与守恒审计得到归一化残差：0.00e+0、0.00e+0、0.00e+0；计算内一致不代表真实材料实验已获审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.270675441；答案2 = 0.213016977；答案3 = 0.786983023；答案4 = 1.50177623\par
+\noindent\textbf{模型前提：}
+两态无相互作用，简并度已明确，光谱响应可线性加权。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-I40 · MNO4−δ氧释放与双金属价态、氧气计量}
+\noindent\textbf{题目}\par
+假想电中性晶体MNO4，初始M3+、N5+、O2−，还原后形成MNO\_(4−δ)，δ=0.1200；M固定+3，N只能在+5/+4变化。取0.2500mol样品，求N4+比例、N平均价、释放氧气mol、再氧化所需电子mol及法拉第电量，检查全晶格电荷。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 初态3+5−8=0，故所给化学式电中性。
+\item 失去δ个O2−使晶格所需正价减少2δ，全部由N5+还原为N4+承担。
+\item N4+分数=2δ=0.24，N平均价=5−2δ=4.76。
+\item 氧气析出n(O2)=n样×δ/2=0.015mol。
+\item 重新补氧转移电子ne=2n样δ=0.06mol，电量=5789.11993C；代回3+(5−2δ)−2(4−δ)=0。
+\item 原方程逆代入与守恒审计得到归一化残差：0.00e+0、0.00e+0、0.00e+0；计算内一致不代表真实材料实验已获审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.24；答案2 = 4.76；答案3 = 0.015；答案4 = 5789.11993\par
+\noindent\textbf{模型前提：}
+仅N的价态补偿，氧位没有其他缺陷，氧气理想计量。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-I41 · 双电子Butler–Volmer与电阻压降的自洽溶出电流}
+\noindent\textbf{题目}\par
+298.15K金属M→M2+ +2e的假想对称双电子电极，交换电流密度j0=0.002000A/cm²，外加过电位0.08000V，串联面积电阻RΩ=12.0Ωcm²。题设j=2j0sinh[Fηkin/(RT)]，ηkin=ηapp−jRΩ。求稳态电流、真实动力学过电位、20min每1cm²溶出金属mol和忽略电阻所预测电流，证明正根唯一。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 代入欧姆降得单变量函数f(j)=2j0sinh\{F(ηapp−jRΩ)/(RT)\}−j。
+\item 在0≤j≤ηapp/RΩ，f连续且严格递减，两端一正一负，因此唯一根。
+\item 求得j=0.0045710059A/cm²，动力学过电位ηkin=0.0251479293V。
+\item 1cm²面积、1200s内电子mol为jAt/F=0.0000568501652。
+\item M2+每mol金属对应2电子，金属溶出mol=0.0000284250826；若忽略电阻得到jideal=0.0449212234A/cm²，明显高估。
+\item 原方程逆代入与守恒审计得到归一化残差：-3.80e-16、0.00e+0、0.00e+0；计算内一致不代表真实材料实验已获审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0045710059；答案2 = 0.0251479293；答案3 = 2.84250826e-05；答案4 = 0.0449212234\par
+\noindent\textbf{模型前提：}
+BV严格按题设，实际腐蚀/钝化和传质限制未纳入模型。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-I42 · 固体电解质异号载流子的迁移数与净电流}
+\noindent\textbf{题目}\par
+假想晶体电解质中A+数密度2.00×10\textasciicircum{}26m\textasciicircum{}-3、迁移率2.00×10\textasciicircum{}-8m²/(Vs)，B−数密度0.500×10\textasciicircum{}26m\textasciicircum{}-3、迁移率5.00×10\textasciicircum{}-8m²/(Vs)，均为一价，E=1000V/m。计算总电导率、A电迁移数、总电流密度与两离子漂移速度方向，并解释负离子的电流为何仍沿电场。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 各离子电导率σi=ni|zi|e μi，均为正数。
+\item σA=0.640870654S/m，σB=0.400544158S/m，σtotal=1.04141481S/m。
+\item A迁移数tA=σA/(σA+σB)=0.615384615。
+\item 总电流密度j=σE=1041.41481A/m²。
+\item A+沿正电场漂移，B−逆电场漂移，电流qv的电荷和速度符号同时翻转，因此两个物种的电流贡献同向。
+\item 原方程逆代入与守恒审计得到归一化残差：0.00e+0、0.00e+0、0.00e+0；计算内一致不代表真实材料实验已获审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1.04141481；答案2 = 0.615384615；答案3 = 1041.41481\par
+\noindent\textbf{模型前提：}
+低场独立离子线性迁移，不考虑浓度梯度及相关跳跃。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-I43 · 两种价态金属竞争配位中的低亲和物种排斥}
+\noindent\textbf{题目}\par
+一份样品中M3+总浓度0.01600M、N2+总浓度0.006000M，加入单负L总浓度0.01800M，在缓冲条件下只存在ML2+、NL+，条件形成常数KML=1500 L/mol、KNL=375 L/mol。求自由配体、两种游离金属、两络合物分数及M对配体的竞争优势，并证明有限配体方程在物理区间只有一个根。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设游离L=l，则m=a/(1+KML l)，n=b/(1+KNL l)。
+\item 完整配体守恒l+a KML l/(1+KML l)+b KNL l/(1+KNL l)=Ltot。
+\item 左端严格递增，l=0小于Ltot、l=Ltot大于Ltot，因此正根唯一。
+\item 根l=0.00248695964M，Mfree=0.0033823496M，Nfree=0.00310461004M。
+\item 络合物ML=0.0126176504M、NL=0.00289538996M；相对游离金属的络合倾向比为KML/KNL=4，不能仅按总浓度判断优先配位。
+\item 原方程逆代入与守恒审计得到归一化残差：0.00e+0、2.22e-16、2.22e-16；计算内一致不代表真实材料实验已获审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00248695964；答案2 = 0.0033823496；答案3 = 0.00310461004；答案4 = 0.0126176504；答案5 = 0.00289538996\par
+\noindent\textbf{模型前提：}
+无其他络合/水解，缓冲固定形成常数，金属配体均1:1。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-I44 · 电解质浓度改变的电动势与液接电势不可辨识性}
+\noindent\textbf{题目}\par
+假想可逆浓差电池Ag|Ag+(c1)||Ag+(c2)|Ag，298.15K，c1=1.00×10\textasciicircum{}-3M、c2=2.00×10\textasciicircum{}-2M，活度系数均近似1；测得开路电势Eobs=0.09000V，但液接电势未知。求由Nernst公式应得的理想电动势、推算液接电势大小、反向调换两半电池时理想电势符号，并解释若液接电势依赖电解液界面则为什么不能从一次测量同时推断真实活度系数与液接势。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 可逆一电子Ag+/Ag电极电位E=E°+(RT/F)ln[Ag+]。
+\item 两半电池浓度不同，理想开路电势En=RT/F ln(c2/c1)。
+\item En=0.0769680885V。
+\item 由测得Eobs=0.09000V推算液接项Ej=Eobs−En=0.0130319115V。
+\item 交换两电池顺序，Nernst理想贡献变为−En；若没有额外桥液信息，液接势与活度修正可能相互混淆，单个测量不能唯一辨识。
+\item 原方程逆代入与守恒审计得到归一化残差：0.00e+0、0.00e+0、0.00e+0；计算内一致不代表真实材料实验已获审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0769680885；答案2 = 0.0130319115；答案3 = -0.0769680885\par
+\noindent\textbf{模型前提：}
+电池理想活度系数近似仅用于构造理论基准；液接项依赖界面，不保证简单反号。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-I45 · 络合掩蔽剂存在时的双通道电化学沉淀定量}
+\noindent\textbf{题目}\par
+假想金属M2+分析总浓度0.01200M，单负配体L−总浓度0.008000M，只允许ML+形成，条件常数K=600L/mol。平衡前加入可沉淀阴离子X−总浓度0.002000M，但题设这一步先仅考察没有固体析出的临界状态。MX2(s)的Ksp=10\textasciicircum{}-9，其他离子缓冲电荷。求配位平衡后的游离金属、ML、游离L；计算此时若X全部游离时的离子积、与Ksp的过饱和倍数，并解释一旦沉淀后必须怎样修改两元素守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 令游离配体为l，金属物料守恒得到m=CM/(1+Kl)。
+\item 配体守恒CL=l+CMKl/(1+Kl)，函数严格单调递增，故在(0,CL)有唯一根。
+\item 得到l=0.001788474875M、游离M=0.005788474875M、ML=0.006211525125M。
+\item 给定假设临界前所有X自由时，离子积Q=[M2+][X−]\textasciicircum{}2。
+\item 所以Q=2.31538995e-8，与Ksp的比值为23.1538995。
+\item 若超过1，真实平衡会析出MX2并消耗每mol固体1mol M及2mol X；必须同时加入溶液金属、X的守恒方程求新根。
+\item 逆算配位方程ML/(m l)=600 L/mol，恢复给定形成常数600。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00178847487；答案2 = 0.00578847487；答案3 = 0.00621152513；答案4 = 2.31538995e-08；答案5 = 23.1538995\par
+\noindent\textbf{模型前提：}
+临界判别在假想尚未沉淀状态，随后的真实平衡需另行联立固相析出；支持盐电中性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{分析化学}
+\addcontentsline{toc}{subsection}{第6辑 / 分析化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-A33 · 非线性标准加入与灵敏度随浓度降低的逆标定}
+\noindent\textbf{题目}\par
+某饱和型传感仪响应S=Kc/(1+Kc)，K=800L/mol；原样与等终体积加标0.000500M后的读数分别为0.545454545、0.615384615。求原浓度、加标后浓度、局部斜率与忽视饱和的低浓度反演偏差，说明第二次读数如何检验K的稳定性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由S=Kc/(1+Kc)整理c=S/[K(1−S)]。
+\item 原样c=0.0015M，加标后c′=0.002M。
+\item 原样S=0.545454545，预报加标后S′=0.615384615，两者一致。
+\item dS/dc=K/(1+Kc)\textasciicircum{}2=165.289256。
+\item 线性近似c\_lin=S/K小于真实c，因为忽略分母1+Kc；第二点不匹配意味着基质或K不稳定。
+\item 原始观测与物料方程残差：0.00e+0、0.00e+0、4.34e-19，均已复算。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0015；答案2 = 0.002；答案3 = 165.289256；答案4 = 0.000681818182\par
+\noindent\textbf{模型前提：}
+模型、仪器标定和体积条件严格按题设，尚待化学专家人工审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-A34 · 同位素稀释中的物料与未知回收率双信号反演}
+\noindent\textbf{题目}\par
+未知元素天然同位素B分数0.2500，向原样加入0.001000mol同位素B分数0.9000的内标。混合后共回收率r未知，观测B比例0.4125，另有仪器总信号S=1500计数、绝对灵敏度10\textasciicircum{}6计数/mol。求原样元素mol、共同回收率和总混合量，并证明比例测量自动消去共同r。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 写混合原子分数f=(xn+y s)/(n+s)，共同回收r在分子与分母消去。
+\item 反演n=s(y−f)/(f−x)=0.003mol。
+\item 混合总量n+s=0.004mol。
+\item 总计数满足1500=10\textasciicircum{}6 r(n+s)，所以r=0.375。
+\item 重代同位素守恒、总量信号和非负r≤1三项约束；如同位素存在分馏则方法不成立。
+\item 原始观测与物料方程残差：1.45e-16、5.55e-17、0.00e+0，均已复算。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.003；答案2 = 0.375；答案3 = 0.004\par
+\noindent\textbf{模型前提：}
+模型、仪器标定和体积条件严格按题设，尚待化学专家人工审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-A35 · 跨pH显色的两弱酸光谱矩阵逆问题}
+\noindent\textbf{题目}\par
+两单酸HA、HB的Ka为10\textasciicircum{}-5和10\textasciicircum{}-7，仅阴离子显色。pH6、pH8分别测λ1、λ2，阴离子消光矩阵对应(10000,2000)及(3000,8000) L/(mol cm)，光程1cm；观测吸光度分别0.187272727、0.278121878。求两酸总浓度、两池阴离子分数及谱学矩阵是否可逆，排除完全解离假设。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两酸阴离子分数α=Ka/(Ka+10\textasciicircum{}-pH)。
+\item 组建矩阵M两行分别为消光系数乘以各酸在所测pH的α。
+\item 行列式D=m11m22−m12m21不为0，故两浓度唯一。
+\item 逆矩阵反演得HA=0.00002M、HB=0.00003M。
+\item pH6的HB阴离子比例0.0909090909，远小于1，因此全解离近似不适用。
+\item 原始观测与物料方程残差：0.00e+0、0.00e+0、0.00e+0，均已复算。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 2e-05；答案2 = 3e-05；答案3 = 0.0909090909\par
+\noindent\textbf{模型前提：}
+模型、仪器标定和体积条件严格按题设，尚待化学专家人工审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-A36 · 两电位窗非正交库仑响应的电子数解混}
+\noindent\textbf{题目}\par
+20mL样品中两种待测X、Y的物质的量未知。两种电极电位窗的标定电子响应分别Q1/F=2nX+nY，Q2/F=nX+3nY，实测电量106.133865C和125.430932C。计算两组分mol、浓度、线性矩阵行列式及每个窗的交叉响应，不得将信号视为独立单组分测量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设未知量x、y，系数矩阵[[2,1],[1,3]]，行列式D=5。
+\item 消元得x=(3Q1−Q2)/(5F)，y=(2Q2−Q1)/(5F)。
+\item nX=0.0004mol、nY=0.0003mol。
+\item 原样体积0.020L，对应浓度0.02M与0.015M。
+\item 按得到的nX、nY计算各窗的电子贡献并恢复两测量电量；若两通道向量成比例则无法区分。
+\item 原始观测与物料方程残差：0.00e+0、0.00e+0、0.00e+0，均已复算。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0004；答案2 = 0.0003；答案3 = 0.02；答案4 = 0.015\par
+\noindent\textbf{模型前提：}
+模型、仪器标定和体积条件严格按题设，尚待化学专家人工审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-A37 · 弱酸部分中和后的精确电中性pH反演}
+\noindent\textbf{题目}\par
+样品含一元弱酸HA总浓度0.004000M、Ka=10\textasciicircum{}-6，加入NaOH后Na+分析浓度0.001800M，Kw=10\textasciicircum{}-14，恒温恒容。由水自解离、酸平衡和电中性求pH、HA/A−浓度及OH−，并证明不使用Henderson近似也存在唯一正根。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 取h=[H+]，酸平衡得[A−]=C Ka/(Ka+h)，[HA]=C−[A−]。
+\item 水自解离[OH−]=Kw/h。
+\item 电荷方程f(h)=h+Na−C Ka/(Ka+h)−Kw/h=0，其导数严格大于0。
+\item 唯一正根h=0.00000122072627M，因此pH=5.91338171。
+\item A−=0.00180121253M、HA=0.00219878747M，OH−=8.19184465e-9M，全部满足电荷和元素守恒。
+\item 原始观测与物料方程残差：9.06e-17、0.00e+0、0.00e+0，均已复算。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 5.91338171；答案2 = 0.00180121253；答案3 = 0.00219878747；答案4 = 8.19184465e-09\par
+\noindent\textbf{模型前提：}
+模型、仪器标定和体积条件严格按题设，尚待化学专家人工审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-A38 · 非延长式计数死时间与同位素比例纠偏}
+\noindent\textbf{题目}\par
+质谱双同位素峰采用非延长死时间模型m=n/(1+nτ)，τ=30.0μs，观测峰m1=6000s\textasciicircum{}-1、m2=3600s\textasciicircum{}-1且背景已校正。求两个真实计数率、真实同位素1丰度、未经修正的丰度偏差并证明mτ<1是正解的必要条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 从非延长模型逆变换n=m/(1−mτ)。
+\item 两峰mτ均小于1，所得正率唯一。
+\item n1=7317.07317s\textasciicircum{}-1、n2=4035.87444s\textasciicircum{}-1。
+\item 真实丰度p1=n1/(n1+n2)=0.644508671，未修正值0.625。
+\item 较强峰死时间损失相对更大，原始计数会低估其丰度，反代n恢复两个m。
+\item 原始观测与物料方程残差：-1.52e-16、1.26e-16、0.00e+0，均已复算。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 7317.07317；答案2 = 4035.87444；答案3 = 0.644508671\par
+\noindent\textbf{模型前提：}
+模型、仪器标定和体积条件严格按题设，尚待化学专家人工审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-A39 · 单一抗体有限位点荧光捕获的双物料守恒}
+\noindent\textbf{题目}\par
+分析物P与抗体位点B按1:1结合，K=400L/mol，P总量0.003000M、B总位点0.004000M，仅游离P发光，S=0.200+300[P]。求结合物、游离P及位点、荧光信号和捕获率，说明把总位点当游离位点为何高估捕获。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设复合物x，得自由P=P0−x、自由B=B0−x。
+\item 质量作用x=K(P0−x)(B0−x)在物理区间有唯一正根。
+\item 求得x=0.0015M，自由P=0.0015M、自由B=0.0025M。
+\item 荧光S=0.65，捕获率x/P0=0.5。
+\item 总位点部分被占，不能在平衡项中一直用B0；检查P与B两项守恒。
+\item 原始观测与物料方程残差：0.00e+0、0.00e+0、0.00e+0，均已复算。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0015；答案2 = 0.0015；答案3 = 0.0025；答案4 = 0.65\par
+\noindent\textbf{模型前提：}
+模型、仪器标定和体积条件严格按题设，尚待化学专家人工审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-A40 · 顶空气相萃取与有限体积目标分析物守恒}
+\noindent\textbf{题目}\par
+封闭顶空瓶中水相20.00mL、气相30.00mL，初始挥发性分析物仅在水相，c0=0.002000M。恒温气/水浓度分配比P=cg/cw=5.000，体积固定，探测无损失，平衡后收集顶空气作为分析信号。求两相浓度、转移到气相的物质的量与回收分数，并解释为什么将初始水相浓度直接乘P会违反有限物料守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 初始分析物总量n0=c0Vw=0.00004mol。
+\item 分配平衡cg=Pcw，封闭总量n0=cwVw+cgVg。
+\item 求得cw=n0/(Vw+PVg)=0.000235294118M。
+\item 气相cg=Pcw=0.00117647059M，气相回收率=cgVg/n0=0.882352941。
+\item 若错设气相cg=Pc0，就忽略了从水相移出的分析物造成的水相浓度下降。
+\item 对测量信号及各组分守恒独立逆算，三个无量纲残差依次为：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.000235294118；答案2 = 0.00117647059；答案3 = 0.882352941\par
+\noindent\textbf{模型前提：}
+题给灵敏度/分配系数、缓冲条件与检测噪声模式视为已独立校准，尚无专家核准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-A41 · 连续流分析池一阶降解与检测延迟的逆校正}
+\noindent\textbf{题目}\par
+完全混合的流动注射池进样Cin=0.002000M、停留时间τ=2.000min，同时物种在池内按一级速率k=0.3000min\textasciicircum{}-1降解，初始池内浓度0，检测器输出S=3000c。求稳态响应、5min响应、达到90\%稳态时间及为什么单一稳态读数只能辨识kτ而不能独立识别k和τ。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 动态物料守恒dc/dt=Cin/τ−(1/τ+k)c。
+\item 定义λ=1/τ+k，线性微分方程解c(t)=css(1−e\textasciicircum{}−λt)。
+\item css=Cin/(1+kτ)=0.00125M，稳态S=3.75。
+\item 5min信号S5=3.68131635，到90\%稳态时间ln10/λ=2.87823137min。
+\item 稳态方程只约束kτ的乘积；需额外瞬态或流量资料才能分离。
+\item 对测量信号及各组分守恒独立逆算，三个无量纲残差依次为：0.000e+0、0.000e+0、-2.776e-17。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00125；答案2 = 3.68131635；答案3 = 2.87823137\par
+\noindent\textbf{模型前提：}
+题给灵敏度/分配系数、缓冲条件与检测噪声模式视为已独立校准，尚无专家核准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-A42 · 双光谱通道的共用基线与分析浓度双未知反演}
+\noindent\textbf{题目}\par
+两波长校准式S1=100c+b、S2=30c+2b，未知样品测得S1=1.500、S2=0.500，c为mol/L、b为基线漂移信号。另将样品浓度稀释一半，假设同次测量b不变。求原液c、b、两波长稀释后的预测信号并证明仅S1不可同时反演c与b。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 响应矩阵[[100,1],[30,2]]行列式D=170≠0。
+\item 消去基线得c=(2S1−S2)/170。
+\item 计算c=0.0147058824M、b=S1−100c=0.0294117647。
+\item 稀释后S1′=50c+b=0.764705882，S2′=15c+2b=0.279411765。
+\item 仅一波长一条方程无法识别两个未知量；若两次测量b不同也不能沿用原参数。
+\item 对测量信号及各组分守恒独立逆算，三个无量纲残差依次为：0.000e+0、4.441e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0147058824；答案2 = 0.0294117647；答案3 = 0.764705882；答案4 = 0.279411765\par
+\noindent\textbf{模型前提：}
+题给灵敏度/分配系数、缓冲条件与检测噪声模式视为已独立校准，尚无专家核准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-A43 · 吸光内滤效应和饱和响应的双重非线性逆校准}
+\noindent\textbf{题目}\par
+荧光传感器满足S=b+10\textasciicircum{}(−A/2)·Kc/(1+Kc)，其中背景b=0.02000、测得吸光A=0.5000、K=40L/mol，荧光S=0.1000。求真实c、若忽略内滤所推得cwrong、真实位点占有率及校准对A的敏感性；论证未知A时单通道信号不足以识别两个未知量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 先扣空白并除以内滤因子F=10\textasciicircum{}(−A/2)。
+\item 真实占有率θ=(S−b)/F=0.142262353，要求θ∈(0,1)。
+\item 反演c=θ/[K(1−θ)]=0.00414644132M。
+\item 误忽略内滤时θwrong=S−b=0.08，得到cwrong=0.00217391304M。
+\item 如果A未知，则测量只限制Fθ的乘积，A与浓度c没有唯一解；应增加吸光通道。
+\item 对测量信号及各组分守恒独立逆算，三个无量纲残差依次为：2.776e-16、-2.776e-17、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00414644132；答案2 = 0.00217391304；答案3 = 0.142262353\par
+\noindent\textbf{模型前提：}
+题给灵敏度/分配系数、缓冲条件与检测噪声模式视为已独立校准，尚无专家核准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-A44 · 弱碱质子化与双相萃取的回收率反演}
+\noindent\textbf{题目}\par
+假想碱B及BH+的pKa(BH+)=8.000，水相pH9.000，只有中性B能进入有机相，分配常数P=4.000。起始水样50.00mL、总分析浓度0.003000M，加入新鲜有机相100.00mL并达平衡。求中性比例、两相终浓度与总萃取回收率；指出把弱碱当强酸会怎样改变pH趋势。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 中性弱碱分数αB=1/(1+10\textasciicircum{}(pKa−pH))。
+\item pH9时αB=0.909090909，有效分配比D=PαB=3.63636364。
+\item 两相物料守恒c0Vw=cwVw+coVo且co=Dcw。
+\item 得cw=0.000362637363M、co=0.00131868132M，回收率=0.879120879。
+\item pH升高使弱碱去质子化而中性分数提高，因此萃取增强；这与弱酸随pH升高的行为相反。
+\item 对测量信号及各组分守恒独立逆算，三个无量纲残差依次为：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.909090909；答案2 = 0.000362637363；答案3 = 0.00131868132；答案4 = 0.879120879\par
+\noindent\textbf{模型前提：}
+题给灵敏度/分配系数、缓冲条件与检测噪声模式视为已独立校准，尚无专家核准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-A45 · Clark氧传感膜通量与电流共同退化的不可辨识性}
+\noindent\textbf{题目}\par
+Clark氧电极膜通透系数P=2.00×10\textasciicircum{}-5m/s、有效面积1.00×10\textasciicircum{}-4m²，水相溶解氧0.002000M，膜内电极表面氧近零；阴极每mol O2接受4电子。求扩散摩尔通量、电流及电流下降30\%时膜污染或真实氧降低的两种候选参数解，论证只凭单一电流不能同时反演P与氧浓度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 把0.002000mol/L转换为2.000mol/m³。
+\item J=Pcbulk=0.00004mol/(m²s)。
+\item I=4FJA=0.00154376531A。
+\item I/I0=0.7000可由P′=0.7P或c′=0.7c分别造成。
+\item 两种候选是P′=0.000014m/s或c′=0.0014M，均恢复同一电流0.7I0。
+\item 对测量信号及各组分守恒独立逆算，三个无量纲残差依次为：0.000e+0、-1.110e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 4e-05；答案2 = 0.00154376531；答案3 = 1.4e-05；答案4 = 0.0014\par
+\noindent\textbf{模型前提：}
+题给灵敏度/分配系数、缓冲条件与检测噪声模式视为已独立校准，尚无专家核准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{有机化学}
+\addcontentsline{toc}{subsection}{第6辑 / 有机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-O31 · 串联并联有机反应网络的中间体选择性}
+\noindent\textbf{题目}\par
+纯A初始1mol，发生A→B(k1=0.160h\textasciicircum{}-1)、A→D(k3=0.080h\textasciicircum{}-1)及B→C(k2=0.040h\textasciicircum{}-1)不可逆一级反应。求6h时四物种摩尔量、B对已转化A的选择性及其瞬时净生成速率，并从耦合微分方程证明总物料守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由A′=−(k1+k3)A，得A(t)=exp[−(k1+k3)t]。
+\item 由B′=k1A−k2B，积分因子得B(t)=k1(e\textasciicircum{}(−k2t)−e\textasciicircum{}(−(k1+k3)t))/(k1+k3−k2)。
+\item 旁路产物D(t)=k3[1−A(t)]/(k1+k3)，C(t)=1−A−B−D。
+\item 代入6h求四种产物量；C(t)必须非负。
+\item B的瞬时净变化率是k1A−k2B，而选择性为B/(1−A)，二者不是同一指标。
+\item 对四个微分方程求和得d(A+B+C+D)/dt=0。
+\item 数值检查残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+A = 0.236927759；B = 0.439760082；C = 0.0689547456；D = 0.254357414；selectivity = 0.57630203；Bdot = 0.0203180381\par
+\noindent\textbf{模型前提：}
+题给理想动力学与独立参数，专业现实性尚未经过人工科学审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-O32 · 活性链聚合Poisson分布的数均重均与尾概率}
+\noindent\textbf{题目}\par
+理想活性聚合每条链在规定反应时间内发生的单体添加数N服从Poisson(λ=8.000)，单体加成无链转移且引发点质量忽略。若有1mol引发点，求数均、重均、分散系数、零增长链比例、至少添加10个单体的概率及累计消耗单体mol，并从Poisson的前两阶矩推导而非套用Carothers公式。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对Poisson(λ)有E[N]=λ和Var[N]=λ，因此E[N²]=λ²+λ。
+\item 数均添加数DPn=λ，重均DPw=E[N²]/E[N]=λ+1。
+\item 分散系数Đ=DPw/DPn=1+1/λ。
+\item 零增长概率P(N=0)=e\textasciicircum{}−λ。
+\item 至少十个添加事件的比例P(N≥10)=1−e\textasciicircum{}−λΣ(n=0..9)λ\textasciicircum{}n/n!。
+\item 若1mol活性引发点均存活，则单体平均消耗为λmol，并不能把概率分布简单当作一个精确链长。
+\item 数值检查残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+DPn = 8；DPw = 9；dispersity = 1.125；zero = 0.000335462628\par
+\noindent\textbf{模型前提：}
+题给理想动力学与独立参数，专业现实性尚未经过人工科学审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-O33 · 非恒定底物Michaelis-Menten批式反应积分方程}
+\noindent\textbf{题目}\par
+封闭理想有机酶促反应S→P服从−dS/dt=Vmax S/(Km+S)，Vmax=0.01000M/min、Km=0.02000M，初始底物浓度0.03000M。求4min剩余S、转化率、此刻瞬时速率并给出积分方程根的唯一性；不可将初始速率当成四分钟全程常数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 分离变量(Km/S+1)dS=−Vmax dt。
+\item 积分得Km ln(S0/S)+S0−S=Vmax t。
+\item 左侧随S从S0降至0而严格增加至无穷，因此物理正根唯一。
+\item 在t=4min解方程得到S4。
+\item 转化率X=1−S4/S0，当时速率r4=Vmax S4/(Km+S4)。
+\item 反代积分方程和S4+X S0=S0，检查物料与动力学两者一致。
+\item 数值检查残差：1.735e-16、1.156e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+S4 = 0.0106718183；conversion = 0.644272723；rate = 0.00347935626\par
+\noindent\textbf{模型前提：}
+题给理想动力学与独立参数，专业现实性尚未经过人工科学审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-O34 · 对映体动力学拆分的剩余ee、转化率及产品对映体收率}
+\noindent\textbf{题目}\par
+外消旋R/S各0.5000mol，以不同一级常数kR=0.1500h\textasciicircum{}-1、kS=0.0400h\textasciicircum{}-1不可逆转为PR/PS。求8h后剩余两物种、各产物、总转化率、剩余S优势ee及产物R优势ee，从两对映体独立守恒解释ee正负号。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 一级式R(t)=.5exp(−kRt)，S(t)=.5exp(−kSt)。
+\item 8h剩余两对映体分别为R=0.15059711、S=0.36307452mol。
+\item PR=.5−R、PS=.5−S，因而总产物=X=1−R−S=0.48632838mol。
+\item 剩余S优势ee=(S−R)/(R+S)=0.41364444。
+\item 产物R优势ee=(PR−PS)/(PR+PS)=(S−R)/X=0.43690112。
+\item 相同的R−S符号约定下剩余底物偏向S、产品偏向R，两者相反，数量守恒逐通路成立。
+\item 各自模型数值残差：0.000e+0、0.000e+0、0.000e+0；不代表专家科学性审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+R = 0.150597106；S = 0.363074519；PR = 0.349402894；PS = 0.136925481；conversion = 0.486328376；ee\_remaining = 0.413644442\par
+\noindent\textbf{模型前提：}
+仅包含题给理想机理、无未指明反应与失活。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-O35 · 均相催化底物与抑制剂竞争预配位的初速反演}
+\noindent\textbf{题目}\par
+催化剂总浓度0.008000M，底物自由浓度0.03000M、预配位常数KS=200L/mol；抑制剂自由浓度0.02000M、KI=80L/mol。只有活性CatS以kcat=0.500s\textasciicircum{}-1生成P并再生Cat，两结合互斥且快速准平衡。求三种Cat状态、瞬时产物速率、无抑制时基准速率与保留率。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 准平衡得[CatS]=KS[S][Cat]、[CatI]=KI[I][Cat]。
+\item 催化剂守恒Ctot=[Cat](1+KS[S]+KI[I])。
+\item 自由Cat=0.00093023256M；CatS=0.0055813953M；CatI=0.0014883721M。
+\item 产物初速v=kcat[CatS]=0.0027906977M/s。
+\item 无抑制剂速率v0=kcat Ctot KS[S]/(1+KS[S])。
+\item 保留比v/v0=(1+KS[S])/(1+KS[S]+KI[I])=0.81395349。
+\item 各自模型数值残差：0.000e+0、0.000e+0、0.000e+0；不代表专家科学性审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+free = 0.000930232558；active = 0.00558139535；inactive = 0.00148837209；rate = 0.00279069767；retention = 0.813953488\par
+\noindent\textbf{模型前提：}
+仅包含题给理想机理、无未指明反应与失活。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-O36 · 双构象自由能与快速交换NMR指纹平均的热力学逆问题}
+\noindent\textbf{题目}\par
+有机分子构象A较B的焓高15.00kJ/mol、熵高40.0J/(mol K)，该熵已含简并数。T=310.0K下构象化学位移分别为1.20ppm与4.60ppm。假设已独立证实快速NMR交换，求平衡K=A/B、构象A分数、平均化学位移以及等分温度；说明平衡快慢不能只由K判断。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由ΔG=ΔH−TΔS得K=exp[−ΔG/(RT)]。
+\item 在310K计算K=0.36467969，因此A分数pA=K/(1+K)=0.26722731。
+\item B分数1−pA，且两者和为1。
+\item 快交换极限下观察到的化学位移δ=pA·1.20+(1−pA)·4.60=3.6914271ppm。
+\item 等分温度要求ΔG=0，得T*=ΔH/ΔS=375K。
+\item NMR快交换另需交换速率显著超过频率间隔，平衡常数只给占比不规定跃迁速度。
+\item 各自模型数值残差：2.220e-16、0.000e+0、0.000e+0；不代表专家科学性审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+K = 0.364679687；fraction\_A = 0.267227314；mean\_shift = 3.69142713；equal\_population\_T = 375\par
+\noindent\textbf{模型前提：}
+仅包含题给理想机理、无未指明反应与失活。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-O37 · 末端控制二元共聚的马尔可夫二联体与稳态组成}
+\noindent\textbf{题目}\par
+假想共聚单体A、B的固定进料分数分别0.6000、0.4000，末端模型活性比rA=2.000、rB=0.5000；链端决定下一次A/B加成，形成二态马尔可夫链。求转移矩阵、稳态A链端比例及AA/AB/BA/BB四种有向二联体频率，并证明长链稳态AB=BA。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item A端下一步加A的概率PAA=rA fA/(rA fA+fB)。
+\item 相应PAB=1−PAA；B端下步加B概率PBB=rB fB/(rB fB+fA)，PBA=1−PBB。
+\item 平稳A端概率πA满足πA=πA PAA+(1−πA)PBA。
+\item 解得πA=PBA/(PBA+PAB)=0.75000000。
+\item 有向二联体分别πA PAA、πA PAB、(1−πA)PBA、(1−πA)PBB。
+\item 由平稳方程πA PAB=(1−πA)PBA，故AB=BA；进料分数不能直接当聚合链序列分数。
+\item 方程独立核算残差：8.327e-17、0.000e+0、-1.110e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+PAA = 0.75；PAB = 0.25；PBA = 0.75；PBB = 0.25；pi\_A = 0.75；AA = 0.5625；AB = 0.1875；BA = 0.1875；BB = 0.0625\par
+\noindent\textbf{模型前提：}
+理想有机反应或聚合动力学，题给参数固定，待人工专家审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-O38 · 酸碱物种快速互变与两种微观有机水解常数逆反演}
+\noindent\textbf{题目}\par
+弱酸型有机底物HA⇌H++A−，pKa=4.000，两种形态分别以未知一级常数kHA、kA水解，缓冲下酸碱平衡远快于反应。测得pH3与pH5的总表观一级常数分别0.074545455和0.025454545min\textasciicircum{}-1。反演两微观速率，预测pH4半衰期并证明两pH读数是可辨识的。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 中性分数α(pH)=1/(1+10\textasciicircum{}(pH−pKa))。
+\item 表观常数kobs=αkHA+(1−α)kA，故两pH给出2×2方程。
+\item 因pH3与pH5的α不同，响应矩阵行列式非零。
+\item 解方程得到kHA=0.08000min\textasciicircum{}-1、kA=0.02000min\textasciicircum{}-1。
+\item pH4两形态各占一半，kobs4=0.05000min\textasciicircum{}-1。
+\item 半衰期t1/2=ln2/0.05000=13.862944min，若缓冲耗竭则不能使用常kobs。
+\item 方程独立核算残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+kHA = 0.08；kA = 0.02；kobs4 = 0.05；t\_half = 13.8629436\par
+\noindent\textbf{模型前提：}
+理想有机反应或聚合动力学，题给参数固定，待人工专家审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-O39 · 连续补料光反应的光子吸收计量与量子收率}
+\noindent\textbf{题目}\par
+假想连续补料有机光反应的入射单色光子通量2.000×10\textasciicircum{}-6mol photon/s，波长处吸光度A=0.6000被外部补料保持恒定，产物量子收率Φ=0.3500mol产物/mol吸收光子。照射300.0s，求吸收光子mol、产物mol、入射/吸收光子差与忽略吸光度导致的产物高估倍数，解释无补料时为何需要动态积分。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Beer–Lambert透过率T=10\textasciicircum{}(−A)，吸收率1−T。
+\item 入射光子量Ninc=通量×照射时间。
+\item 吸收光子量Nabs=Ninc(1−10\textasciicircum{}(−A))。
+\item 产物mol=nP=ΦNabs=0.00015725038。
+\item 未吸收光子mol=Ninc−Nabs，忽略吸收会估成ΦNinc。
+\item 该错误使产物高估因子1/(1−10\textasciicircum{}(−A))=1.3354498，若A随反应变化需对瞬时吸收量积分。
+\item 方程独立核算残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+incident = 0.0006；absorbed = 0.000449286814；product = 0.000157250385；unabsorbed = 0.000150713186\par
+\noindent\textbf{模型前提：}
+理想有机反应或聚合动力学，题给参数固定，待人工专家审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-O40 · 有限初始水背景下可逆酯化反应的严格平衡进度}
+\noindent\textbf{题目}\par
+假想酯化反应羧酸A+醇B⇌酯E+水W，在同一理想恒容批次中初始nA=nB=1.000mol、nE=0、水nW=0.2000mol，浓度比平衡常数K=4.000（等体积反应前后分子数相同）。求平衡酯化进度、残余A/B、终态水和若错误忽略初始水的转化率偏差；证明物理解唯一。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设反应进度x，物料守恒A=B=1−x，E=x，W=0.2+x。
+\item 质量作用K=EW/(AB)=x(0.2+x)/(1−x)²。
+\item 该函数在0<x<1上严格递增，从0到∞，故K=4唯一正根。
+\item 代入求x=0.63560959mol。
+\item 残余A、B均为0.36439041mol，水终量=0.83560959mol。
+\item 忽略初始水会错误使用x²/(1−x)²=4，得到xwrong=2/3；两值不同。
+\item 核查三项反应平衡、物料或动力学方程的残差：2.220e-16、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+extent = 0.635609593；A\_remaining = 0.364390407；B\_remaining = 0.364390407；water = 0.835609593；wrong\_no\_water = 0.666666667\par
+\noindent\textbf{模型前提：}
+假想均相封闭有机反应，动力学和热力学仅在题定条件下有效，专家未审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-O41 · 动力学拆分与并行消旋耦合的矩阵指数解析}
+\noindent\textbf{题目}\par
+外消旋R/S初始各0.5000mol，R、S独立不可逆消耗常数kR=0.200h\textasciicircum{}-1、kS=0.0500h\textasciicircum{}-1；同时双向消旋R⇌S两方向均kr=0.0800h\textasciicircum{}-1。求6h后R/S剩余量、已转化产物总量、剩余底物ee，并用2×2矩阵指数证明消旋不改变总底物耗尽的质量平衡。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 令向量u=(R,S)\textasciicircum{}T，则u′=M u，M=[[-kR−kr,kr],[kr,−kS−kr]]。
+\item 令b=(kR+kS+2kr)/2，d=sqrt((kR−kS)²+4kr²)/2。
+\item 矩阵指数e\textasciicircum{}(Mt)=e\textasciicircum{}(−bt)[I cosh(dt)+(M+bI)sinh(dt)/d]。
+\item 代入u0=(.5,.5)得到R6=0.183645062、S6=0.324874273mol。
+\item 转化产品总量1−R−S=0.491480665mol，剩余底物ee=(R−S)/(R+S)=-0.277726334。
+\item 相加两式得(R+S)′=−kR R−kS S，双向消旋项消去，故R+S+全部产物=1。
+\item 核查三项反应平衡、物料或动力学方程的残差：0.000e+0、0.000e+0、-1.388e-17。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+R = 0.183645062；S = 0.324874273；product\_total = 0.491480665；eeR = -0.277726334\par
+\noindent\textbf{模型前提：}
+假想均相封闭有机反应，动力学和热力学仅在题定条件下有效，专家未审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-O42 · H/D竞争反应的Arrhenius一级动力学同位素效应温度反演}
+\noindent\textbf{题目}\par
+假想平行H与D标记的同底物反应各遵循一级Arrhenius律k=A exp(−Ea/RT)，两者同一前因子A=1.00×10\textasciicircum{}8s\textasciicircum{}-1；H通道活化能60.00kJ/mol、D通道65.00kJ/mol。求298.15K两速率常数、同位素动力学效应kH/kD、340K该效应及温度趋势；解释为何前因子若不同则无法仅由能垒差给KIE。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 因为两通道前因子相同，速率比kH/kD=exp[(EaD−EaH)/(RT)]。
+\item 在298.15K计算kH=0.00307931970、kD=0.000409725202s\textasciicircum{}-1。
+\item 因此KIE=kH/kD=7.51557307。
+\item 在340.0K比值变为5.86329131。
+\item 正活化能差使升温降低选择性，因能垒差除以RT减小。
+\item 若AH≠AD，KIE还需乘AH/AD，不能简单使用能垒差；该模型未涉及真实过渡态量子隧穿修正。
+\item 核查三项反应平衡、物料或动力学方程的残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+kH = 0.0030793197；kD = 0.000409725202；KIE298 = 7.51557307；KIE340 = 5.86329131\par
+\noindent\textbf{模型前提：}
+假想均相封闭有机反应，动力学和热力学仅在题定条件下有效，专家未审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{物理化学}
+\addcontentsline{toc}{subsection}{第6辑 / 物理化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-P31 · 含惰性气体的合成氨气相反应进度与压力敏感性}
+\noindent\textbf{题目}\par
+假想等温理想气体N2+3H2⇌2NH3，初始N2=1.000mol、H2=3.000mol、NH3=0、惰性气体2.000mol，总压20.00bar，标准压1bar；热力学平衡常数Kp=0.8000。求平衡进度、各组分物质的量、NH3摩尔分数以及反应商导数符号，解释为何惰性气体不能从分压总摩尔数中忽略。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 反应进度ξ给nN2=1−ξ、nH2=3−3ξ、nNH3=2ξ、nI=2。
+\item 总气相mol数N=6−2ξ，平衡分压pi=niP/N。
+\item 无量纲反应商Qp=(pNH3/p°)²/[(pN2/p°)(pH2/p°)³]。
+\item 化简Qp=4ξ²(6−2ξ)²/[27(1−ξ)\textasciicircum{}4](p°/P)²。
+\item 该Qp在0<ξ<1严格递增，由0至∞，平衡根唯一。
+\item 数值ξ=0.732634147mol，NH3摩尔分数=0.323121276；若不计惰性气体会错误估算分压与平衡。
+\item 独立方程与边界核算的归一化残差为：-1.388e-15、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+extent = 0.732634147；NH3 = 1.46526829；total = 4.53473171；mole\_fraction = 0.323121276\par
+\noindent\textbf{模型前提：}
+题设理想或半经验平衡/传递模型，全部边界条件已声明，尚未获专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-P32 · 反应热容差的温度积分与平衡转化比的联合修正}
+\noindent\textbf{题目}\par
+假想理想反应A⇌B，300K时标准反应焓−35.00kJ/mol、熵−100.0J/(mol K)，温度段内热容差ΔCp=+60.0J/(mol K)，视为常数。计算300K与360K的无量纲平衡常数，360K由纯A达到平衡时的B摩尔分数，以及若错误用不变焓van't Hoff近似将产生的相对误差。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由热容差积分ΔH(T)=ΔH300+ΔCp(T−300)。
+\item 反应熵ΔS(T)=ΔS300+ΔCp ln(T/300)。
+\item 标准Gibbs能ΔG(T)=ΔH(T)−TΔS(T)，K(T)=exp(−ΔG/RT)。
+\item 得到K300=7.42267312，K360=0.801621406。
+\item 纯A/B理想一比一，平衡B比例xB=K/(1+K)=0.444944428。
+\item 错误恒焓近似Kconst=K300 exp[−ΔH300/R(1/360−1/300)]，与含Cp的准确模型不相同，不能把Cp只加到焓而不加到熵。
+\item 独立方程与边界核算的归一化残差为：0.000e+0、0.000e+0、-2.776e-17。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+K300 = 7.42267312；K360 = 0.801621406；xB360 = 0.444944428；Kconst = 0.71598943\par
+\noindent\textbf{模型前提：}
+题设理想或半经验平衡/传递模型，全部边界条件已声明，尚未获专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-P33 · 有限双储液池浓差混合的最大可逆非膨胀功}
+\noindent\textbf{题目}\par
+两个恒温理想溶质储液池，298.15K下体积V1=1.000L、V2=2.000L，溶质浓度分别0.1000M与0.02000M，混合后体积可加、溶质不反应。按G=RTΣni(ln(ci/c°)−1)计算混合前后Gibbs能差、末态浓度、可提取最大可逆功，并通过凸性说明混合自发。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 总溶质mol不变n0=C1V1+C2V2。
+\item 末态均匀浓度cf=(C1V1+C2V2)/(V1+V2)=0.0466666667M。
+\item 因为前后n总相同，G中−RTn和标准态项均抵消。
+\item ΔG=RT[n0lncf−n1lnc1−n2lnc2]=-104.914644J。
+\item 最大可逆非膨胀功Wmax=−ΔG=104.914644J。
+\item 由xlnx凸性可证明均匀化使G下降；不能以最终浓度代入两池初态。
+\item 独立方程与边界核算的归一化残差为：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+final\_concentration = 0.0466666667；deltaG = -104.914644；max\_work = 104.914644；initial\_mol = 0.14\par
+\noindent\textbf{模型前提：}
+题设理想或半经验平衡/传递模型，全部边界条件已声明，尚未获专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-P34 · 两个有限热库间可逆热机的终温与最大可提取功}
+\noindent\textbf{题目}\par
+两个有限热库热容分别60.00J/K和100.0J/K、初温360.0K与300.0K；两者之间可运行理想可逆热机直到热平衡，整个系统对外绝热，热容不随温度变化。求可逆终温、输出最大功、两热库的熵变和如果直接绝热接触的终温；解释可逆与直接混合为何有不同终温。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 热机可逆且整体绝热，两个热库总熵变为零。
+\item 因此Ch ln(Tf/Th)+Cc ln(Tf/Tc)=0。
+\item 解得Tf=exp[(Ch lnTh+Cc lnTc)/(Ch+Cc)]=321.228613K。
+\item 由总内能下降可得热机输出功Wmax=ChTh+CcTc−(Ch+Cc)Tf=203.421983J。
+\item 直接绝热接触不输出功，终温为(ChTh+CcTc)/(Ch+Cc)=322.5K。
+\item 两者由加权几何平均和算术平均的关系证明Wmax≥0，且熵产生账本不同。
+\item 逆向独立方程残差：-7.194e-14、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+T\_reversible = 321.228613；work = 203.421983；T\_direct = 322.5\par
+\noindent\textbf{模型前提：}
+题给稳态或热力学理想模型，实际流体热损失、传质阻力或非线性边界未包含。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-P35 · 平板反应—扩散耦合与反应效能因子的解析边值问题}
+\noindent\textbf{题目}\par
+一维平板催化层厚L=1.000mm、有效扩散系数D=10\textasciicircum{}-9m²/s、体积一级反应常数k=0.02000s\textasciicircum{}-1，x=0处浓度c0=0.01000M，x=L处无通量。求稳态浓度场c(x)、Thiele模数、背面浓度比、表面通量与效能因子并检查通量积分等于总体积反应消耗。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 稳态方程D c″−kc=0，令λ=√(k/D)、φ=Lλ。
+\item 满足c(0)=c0与c′(L)=0的解为c(x)=c0 cosh[λ(L−x)]/cosh(λL)。
+\item 背面浓度比c(L)/c0=sechφ。
+\item 表面进入通量J=D c0 λ tanhφ，c0由mol/L换为mol/m³。
+\item 效能因子η=(L\textasciicircum{}-1∫c dx)/c0=tanhφ/φ=0.223548452。
+\item φ=4.47213595，J=0.0000447096904mol/(m²s)，积分反应通量∫0\textasciicircum{}L k c dx=J，通量平衡严格成立。
+\item 逆向独立方程残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+phi = 4.47213595；back\_ratio = 0.0228428014；flux = 4.47096904e-05；effectiveness = 0.223548452\par
+\noindent\textbf{模型前提：}
+题给稳态或热力学理想模型，实际流体热损失、传质阻力或非线性边界未包含。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-P36 · 电极Butler–Volmer反应与串联电阻的非线性闭合}
+\noindent\textbf{题目}\par
+298.15K的一电子对称Butler–Volmer电极交换电流密度j0=0.01000A/cm²，总外加过电位0.1100V，面积电阻2.000Ωcm²；动力学电位为ηkin=ηapp−jRΩ。求稳态电流密度、实际过电位、欧姆电压损失与两分支电流比；证明方程在物理区间有唯一根。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item BV式为j=2j0 sinh[Fηkin/(2RT)]。
+\item 代入欧姆降ηkin=ηapp−jRΩ，构成单变量超越方程f(j)=0。
+\item 当0≤j≤ηapp/RΩ时，f从正变负且严格单调递减，因此根唯一。
+\item 二分求j=0.026727196A/cm²，ηkin=0.0565456079V。
+\item 欧姆损失jRΩ=0.0534543921V，两分支电流比为exp[Fηkin/(RT)]=9.03272148。
+\item 回代电流和电势两式同时成立；不能把外加η直接当BV动力学η。
+\item 逆向独立方程残差：1.041e-17、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+current = 0.026727196；eta\_kin = 0.0565456079；ohmic = 0.0534543921；rate\_ratio = 9.03272148\par
+\noindent\textbf{模型前提：}
+题给稳态或热力学理想模型，实际流体热损失、传质阻力或非线性边界未包含。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-P37 · 正则溶液稳定性二阶变分与自旋线组成}
+\noindent\textbf{题目}\par
+二元液体x为组分A摩尔分数，正则溶液g=RT[xlnx+(1−x)ln(1−x)]+Ωx(1−x)，Ω=6000J/mol、T=300.0K。求局部稳定性曲率、自旋线两端组成、临界共溶温度与x=0.5时是否稳定；解释局部自旋线和相共存线的区别，不能直接用正过剩焓代替曲率判据。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对x微分得g′=RT ln[x/(1−x)]+Ω(1−2x)。
+\item 二阶导g″=RT/[x(1−x)]−2Ω。
+\item 自旋边界g″=0给x(1−x)=RT/(2Ω)，正解为x±=[1±√(1−2RT/Ω)]/2。
+\item 临界温度为Tcrit=Ω/(2R)，超过它内部无实自旋线。
+\item 数值x−=0.29472352、x+=0.70527648，Tc=360.81707K。
+\item x=.5时g″=-2022.6449J/mol，为负，局部均相不稳定；共存线还需两相化学势或公切线条件。
+\item 回代独立热力学及物料方程残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+x\_low = 0.294723517；x\_high = 0.705276483；Tcrit = 360.817065；gpp\_half = -2022.64486\par
+\noindent\textbf{模型前提：}
+指定理想或低密度近似的物理化学模型，在参数范围内按题设成立，未经过化学专家终审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-P38 · 第二维里系数下非理想气体压缩因子与逸度修正}
+\noindent\textbf{题目}\par
+某单组分气体在300.0K、压力100.0kPa下，第二维里体积系数B(T)=−2.000×10\textasciicircum{}-4m³/mol。使用低密度截断维里模型Z≈1+B P/(RT)、lnφ≈B P/(RT)，R=8.314462618J/(mol K)。求压缩因子Z、逸度系数φ、实际逸度f与理想气体化学势相比的μ−μideal，并检验低密度条件|BP/RT|是否足够小。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 第二维里压力截断给Z=1+B P/(RT)。
+\item 压力使用Pa，B使用m³/mol，使BP/(RT)无量纲。
+\item 对应逸度系数lnφ=B P/(RT)，φ=exp(BP/RT)。
+\item 逸度f=φP，气相化学势偏离理想μ−μideal=RTlnφ=BP。
+\item 本参数给Z=0.991981843、φ=0.992013903。
+\item f=99201.3903Pa，Δμ=-20.0000000J/mol；若|BP/RT|不小则截断模型不可依赖。
+\item 回代独立热力学及物料方程残差：5.204e-17、1.561e-17、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Z = 0.991981843；phi = 0.992013903；fugacity\_Pa = 99201.3903；mu\_excess = -20\par
+\noindent\textbf{模型前提：}
+指定理想或低密度近似的物理化学模型，在参数范围内按题设成立，未经过化学专家终审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-P39 · 浓差电池有限储液池的最大可逆电功与混合熵一致性}
+\noindent\textbf{题目}\par
+一价相同金属离子的两个理想溶液储液池，在298.15K分别有V1=V2=1.000L，初始分析物浓度0.08000M与0.02000M，离子可逆地通过理想选择性膜迁移，最终浓度相同，忽略反离子热力学贡献并使用给定单溶质G模型。求终浓度、可逆最大功、起始开路浓差电势及总迁移mol；证明不能以初始电势乘总电量来求最大可逆功。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两池总离子mol为0.1000，末态浓度cf=n总/(V1+V2)=0.05000M。
+\item 理想溶质混合Gibbs差ΔG=RT[(n1+n2)lncf−n1lnc1−n2lnc2]。
+\item 反应可逆可提取最大非膨胀功Wmax=−ΔG。
+\item 起始一价浓差电势E0=(RT/F)ln(c1/c2)。
+\item 由于末态各池浓度均为0.05M，需要迁移ntransfer=n1−cfV1=0.03000mol。
+\item 初始电势随迁移逐渐降低至0，必须积分电势随反应进度的变化，不可用E0F×ntransfer代替Wmax。
+\item 回代独立热力学及物料方程残差：3.469e-18、0.000e+0、-3.469e-18。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+final\_c = 0.05；max\_work = 47.780597；initial\_E = 0.0356174776；transfer\_mol = 0.03\par
+\noindent\textbf{模型前提：}
+指定理想或低密度近似的物理化学模型，在参数范围内按题设成立，未经过化学专家终审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-P40 · 连续搅拌釜中连续一级反应的目标中间体最优停留时间}
+\noindent\textbf{题目}\par
+理想恒温CSTR的入料只有A，浓度标准化为1mol/L，体积与流量恒定，连续一级不可逆网络A→B→C，速率常数k1=0.300min\textasciicircum{}-1、k2=0.0800min\textasciicircum{}-1。求稳态A、B、C出口浓度随停留时间τ的表达式及使目标中间体B浓度最大的唯一τ，随后给出该τ下的出口组成；证明最佳τ不能直接使用封闭批反应B峰值时间。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item A稳态守恒给A=Cin/(1+k1τ)。
+\item B稳态守恒B=τk1A/(1+k2τ)，即B=Cin k1τ/[(1+k1τ)(1+k2τ)]。
+\item C来自C=Cin−A−B。
+\item 对B(τ)求导并化简，分子正负由1−k1k2τ²决定。
+\item 故唯一最大停留时间τ*=1/√(k1k2)=6.45497224min。
+\item 最佳时A=0.340542427、B=0.434884291、C=0.224573282mol/L，均非负且总浓度守恒；CSTR与批式状态方程不同。
+\item 独立核验的方程残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+optimal\_tau = 6.45497224；A = 0.340542427；B = 0.434884291；C = 0.224573282\par
+\noindent\textbf{模型前提：}
+理想化的物理化学反应器与平衡模型，实际实验边界需专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-P41 · 有限吸附剂Freundlich非线性等温线与物料闭合}
+\noindent\textbf{题目}\par
+一份100.0mL样品初始目标溶质浓度0.01000M，投加20.00g假想吸附材料，Freundlich等温线q=K c\textasciicircum{}(1/2)，K=0.02000 mol g\textasciicircum{}-1 (mol L\textasciicircum{}-1)\textasciicircum{}(-1/2)，q为每g吸附量，c为平衡自由浓度mol/L。假设吸附剂初始无分析物且不影响溶液体积。求平衡自由浓度、每g吸附量、总吸附mol、去除分数并说明不能把q当成与总溶质浓度独立的常数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 初始溶质mol为n0=C0V。
+\item 平衡吸附mol=Mads q=Mads K√c。
+\item 物料守恒V c+Mads K√c=C0V。
+\item 令u=√c≥0，则Vu²+Mads K u−C0V=0，左侧严格增，正根唯一。
+\item 数值得c=0.00960792001M，q=0.00196039996mol/g。
+\item 总吸附mol=0.0000392079992，去除率=0.0392079992；重代等温线和两相总量守恒。
+\item 独立核验的方程残差：2.168e-16、0.000e+0、2.168e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+free\_concentration = 0.00960792001；uptake\_per\_g = 0.00196039996；adsorbed\_mol = 3.92079992e-05；removal\_fraction = 0.0392079992\par
+\noindent\textbf{模型前提：}
+理想化的物理化学反应器与平衡模型，实际实验边界需专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV6-P42 · 绝热可逆异构化的温升—平衡常数—转化率自洽求解}
+\noindent\textbf{题目}\par
+1.000mol A在完全绝热、恒压、理想反应釜中发生A⇌B；300K时K300=4.000，反应焓ΔH=−20.00kJ/mol，反应混合物总有效热容100.0J/K且由题设保持不变。简化能量式T=300+200ξ，van't Hoff关系K(T)=K300 exp[−ΔH/R(1/T−1/300)]。求绝热平衡转化率ξ、终温、终K，以及为什么直接用K300计算等温转化会高估放热绝热反应的平衡进度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设进度ξ，因A与B一比一且初始纯A，平衡商Q=ξ/(1−ξ)。
+\item 绝热能量守恒按题设T(ξ)=300+200ξ。
+\item van't Hoff关系给温度相关K(T)=K300 exp[−ΔH/R(1/T−1/T0)]。
+\item 联立f(ξ)=ξ/(1−ξ)−K[T(ξ)]=0，0<ξ<1。
+\item 左端首项严格增、对于放热反应温度增使K减，因此f严格递增，正根唯一。
+\item 求得ξ=0.413920770、T=382.784154K、K=0.706253947；等温300K转化率4/5=0.8更高。
+\item 独立核验的方程残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+extent = 0.41392077；T\_final = 382.784154；K\_final = 0.706253947；isothermal\_extent = 0.8\par
+\noindent\textbf{模型前提：}
+理想化的物理化学反应器与平衡模型，实际实验边界需专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\end{document}
