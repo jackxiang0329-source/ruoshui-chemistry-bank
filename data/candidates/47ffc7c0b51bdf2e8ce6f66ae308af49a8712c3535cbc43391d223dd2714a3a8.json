@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "47ffc7c0b51bdf2e8ce6f66ae308af49a8712c3535cbc43391d223dd2714a3a8",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "physical",
+  "topic": "heisenberg_momentum_uncertainty_lower_bound_compare_mega_d5_v22",
+  "topic_family": "heisenberg_momentum_uncertainty_lower_bound",
+  "question": "双情境对照·physical·三步骤专题（相隔 5 个已校验参数档）。\n【情境甲】某粒子一维位置测量的不确定度为 Δx=1.13 nm，按 Heisenberg 关系 ΔxΔp≥ℏ/2，ℏ=1.054571817×10⁻³⁴ J·s。求动量不确定度下界（kg·m/s）。\n【情境乙】某粒子一维位置测量的不确定度为 Δx=1.28 nm，按 Heisenberg 关系 ΔxΔp≥ℏ/2，ℏ=1.054571817×10⁻³⁴ J·s。求动量不确定度下界（kg·m/s）。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：4.6662470e-26 kg·m/s；乙：4.1194212e-26 kg·m/s；乙−甲：-5.4682582e-27 kg·m/s。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(1.13,0)、乙(a,b)=(1.28,0)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：不确定性下界 Δpmin=ℏ/(2Δx)，须把位置不确定度从 nm 转为 m；并不是实测动量误差。\n乙：不确定性下界 Δpmin=ℏ/(2Δx)，须把位置不确定度从 nm 转为 m；并不是实测动量误差。\n甲结果：4.6662470e-26 kg·m/s\n乙结果：4.1194212e-26 kg·m/s。\n\n步骤三：逐量作差 Δ=乙−甲，得到 -5.4682582e-27 kg·m/s；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(1.13,0)、乙(a,b)=(1.28,0)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：不确定性下界 Δpmin=ℏ/(2Δx)，须把位置不确定度从 nm 转为 m；并不是实测动量误差。\n乙：不确定性下界 Δpmin=ℏ/(2Δx)，须把位置不确定度从 nm 转为 m；并不是实测动量误差。\n甲结果：4.6662470e-26 kg·m/s\n乙结果：4.1194212e-26 kg·m/s。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 -5.4682582e-27 kg·m/s；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    4.666246977876106e-26,
+    4.11942116015625e-26,
+    -5.468258177198565e-27
+  ],
+  "units": [
+    "kg·m/s",
+    "kg·m/s",
+    "kg·m/s"
+  ],
+  "source_model": "mega",
+  "source_parameter_indices": [
+    21,
+    26
+  ],
+  "source_inverse_residuals": [
+    [
+      0
+    ],
+    [
+      0
+    ]
+  ],
+  "model_output_count": 1,
+  "offset": 5,
+  "parameter_case": 22,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

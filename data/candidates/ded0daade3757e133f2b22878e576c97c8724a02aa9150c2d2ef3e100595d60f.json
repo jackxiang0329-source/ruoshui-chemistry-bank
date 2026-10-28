@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "ded0daade3757e133f2b22878e576c97c8724a02aa9150c2d2ef3e100595d60f",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "physical",
+  "topic": "maxwell_mean_speed_ideal_gas_compare_mega_d5_v10",
+  "topic_family": "maxwell_mean_speed_ideal_gas",
+  "question": "双情境对照·physical·三步骤专题（相隔 5 个已校验参数档）。\n【情境甲】理想气体温度 T=345 K、摩尔质量 M=0.0298 kg/mol，R=8.314462618 J/(mol·K)。按 Maxwell 分布求平均速率 vmean=√(8RT/(πM))。\n【情境乙】理想气体温度 T=370 K、摩尔质量 M=0.0308 kg/mol，R=8.314462618 J/(mol·K)。按 Maxwell 分布求平均速率 vmean=√(8RT/(πM))。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：495.09503 m/s；乙：504.32750 m/s；乙−甲：9.2324757 m/s。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(345,0.0298)、乙(a,b)=(370,0.0308)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：平均速率为 √(8RT/(πM))，与最概然速率 √(2RT/M) 和方均根速率 √(3RT/M) 不同。\n乙：平均速率为 √(8RT/(πM))，与最概然速率 √(2RT/M) 和方均根速率 √(3RT/M) 不同。\n甲结果：495.09503 m/s\n乙结果：504.32750 m/s。\n\n步骤三：逐量作差 Δ=乙−甲，得到 9.2324757 m/s；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(345,0.0298)、乙(a,b)=(370,0.0308)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：平均速率为 √(8RT/(πM))，与最概然速率 √(2RT/M) 和方均根速率 √(3RT/M) 不同。\n乙：平均速率为 √(8RT/(πM))，与最概然速率 √(2RT/M) 和方均根速率 √(3RT/M) 不同。\n甲结果：495.09503 m/s\n乙结果：504.32750 m/s。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 9.2324757 m/s；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    495.09502826358363,
+    504.327503971078,
+    9.232475707494359
+  ],
+  "units": [
+    "m/s",
+    "m/s",
+    "m/s"
+  ],
+  "source_model": "mega",
+  "source_parameter_indices": [
+    9,
+    14
+  ],
+  "source_inverse_residuals": [
+    [
+      1.647635329298783e-16
+    ],
+    [
+      1.5363086178596762e-16
+    ]
+  ],
+  "model_output_count": 1,
+  "offset": 5,
+  "parameter_case": 10,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

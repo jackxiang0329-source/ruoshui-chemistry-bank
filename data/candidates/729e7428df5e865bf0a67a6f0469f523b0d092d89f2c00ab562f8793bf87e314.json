@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "729e7428df5e865bf0a67a6f0469f523b0d092d89f2c00ab562f8793bf87e314",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "analytical",
+  "topic": "calibration_linear_slope_intercept_compare_dual_d5_v49",
+  "topic_family": "calibration_linear_slope_intercept",
+  "question": "双情境对照·analytical·双量联算专题（相隔 5 个已校验参数档）。\n【情境甲】某校准液在浓度 2.00 mg/L、6.00 mg/L 时响应分别为 A1=0.216、A2=0.544。在这两点间假定 A=mc+b0 严格线性。求浓度响应斜率 m（A/(mg/L)）与吸光度截距 b0，并说明两点无法验证线性区间宽度。\n【情境乙】某校准液在浓度 2.00 mg/L、6.00 mg/L 时响应分别为 A1=0.226、A2=0.559。在这两点间假定 A=mc+b0 严格线性。求浓度响应斜率 m（A/(mg/L)）与吸光度截距 b0，并说明两点无法验证线性区间宽度。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：0.082000000 A/(mg/L) slope，0.052000000 A intercept；乙：0.083250000 A/(mg/L) slope，0.059500000 A intercept；乙−甲：0.0012500000 A/(mg/L) slope，0.0075000000 A intercept。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(0.216,0.544)、乙(a,b)=(0.226,0.559)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：用 m=(A2−A1)/(6−2) 得斜率；代入 A1=m×2+b0 得截距 b0=A1−2m。两点确定直线但不能证明更广浓度范围均线性。\n乙：用 m=(A2−A1)/(6−2) 得斜率；代入 A1=m×2+b0 得截距 b0=A1−2m。两点确定直线但不能证明更广浓度范围均线性。\n甲结果：0.082000000 A/(mg/L) slope；0.052000000 A intercept\n乙结果：0.083250000 A/(mg/L) slope；0.059500000 A intercept。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.0012500000 A/(mg/L) slope；0.0075000000 A intercept；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(0.216,0.544)、乙(a,b)=(0.226,0.559)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：用 m=(A2−A1)/(6−2) 得斜率；代入 A1=m×2+b0 得截距 b0=A1−2m。两点确定直线但不能证明更广浓度范围均线性。\n乙：用 m=(A2−A1)/(6−2) 得斜率；代入 A1=m×2+b0 得截距 b0=A1−2m。两点确定直线但不能证明更广浓度范围均线性。\n甲结果：0.082000000 A/(mg/L) slope；0.052000000 A intercept\n乙结果：0.083250000 A/(mg/L) slope；0.059500000 A intercept。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.0012500000 A/(mg/L) slope；0.0075000000 A intercept；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    0.08200000000000002,
+    0.05199999999999996,
+    0.08325000000000002,
+    0.05949999999999997,
+    0.0012500000000000011,
+    0.007500000000000007
+  ],
+  "units": [
+    "A/(mg/L) slope",
+    "A intercept",
+    "A/(mg/L) slope",
+    "A intercept",
+    "A/(mg/L) slope",
+    "A intercept"
+  ],
+  "source_model": "dual",
+  "source_parameter_indices": [
+    48,
+    53
+  ],
+  "source_inverse_residuals": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "model_output_count": 2,
+  "offset": 5,
+  "parameter_case": 49,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-dual-3072.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

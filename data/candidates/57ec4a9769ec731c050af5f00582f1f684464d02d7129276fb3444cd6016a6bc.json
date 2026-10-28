@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "57ec4a9769ec731c050af5f00582f1f684464d02d7129276fb3444cd6016a6bc",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "organic",
+  "topic": "hydrocarbon_combustion_carbon_hydrogen_compare_dual_d1_v50",
+  "topic_family": "hydrocarbon_combustion_carbon_hydrogen",
+  "question": "双情境对照·organic·双量联算专题（相隔 1 个已校验参数档）。\n【情境甲】纯烃完全燃烧得 CO₂ 8.41 g 和 H₂O 4.45 g，且无其它含碳、氢产物。M(CO₂)=44.01、M(H₂O)=18.015 g/mol。求原烃所含碳原子和氢原子的物质的量。\n【情境乙】纯烃完全燃烧得 CO₂ 8.5 g 和 H₂O 4.5 g，且无其它含碳、氢产物。M(CO₂)=44.01、M(H₂O)=18.015 g/mol。求原烃所含碳原子和氢原子的物质的量。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：0.19109293 mol C，0.49403275 mol H；乙：0.19313792 mol C，0.49958368 mol H；乙−甲：0.0020449898 mol C，0.0055509298 mol H。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(8.41,4.45)、乙(a,b)=(8.5,4.5)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：全部碳对应 CO₂，每 mol 水对应 2 mol H 原子；按质量除摩尔质量计算。\n乙：全部碳对应 CO₂，每 mol 水对应 2 mol H 原子；按质量除摩尔质量计算。\n甲结果：0.19109293 mol C；0.49403275 mol H\n乙结果：0.19313792 mol C；0.49958368 mol H。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.0020449898 mol C；0.0055509298 mol H；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(8.41,4.45)、乙(a,b)=(8.5,4.5)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：全部碳对应 CO₂，每 mol 水对应 2 mol H 原子；按质量除摩尔质量计算。\n乙：全部碳对应 CO₂，每 mol 水对应 2 mol H 原子；按质量除摩尔质量计算。\n甲结果：0.19109293 mol C；0.49403275 mol H\n乙结果：0.19313792 mol C；0.49958368 mol H。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.0020449898 mol C；0.0055509298 mol H；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    0.1910929334242218,
+    0.4940327504857064,
+    0.1931379231992729,
+    0.4995836802664446,
+    0.0020449897750511037,
+    0.005550929780738234
+  ],
+  "units": [
+    "mol C",
+    "mol H",
+    "mol C",
+    "mol H",
+    "mol C",
+    "mol H"
+  ],
+  "source_model": "dual",
+  "source_parameter_indices": [
+    49,
+    50
+  ],
+  "source_inverse_residuals": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "model_output_count": 2,
+  "offset": 1,
+  "parameter_case": 50,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-dual-3072.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

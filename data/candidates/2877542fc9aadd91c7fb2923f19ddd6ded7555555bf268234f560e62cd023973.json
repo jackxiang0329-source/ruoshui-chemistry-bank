@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "2877542fc9aadd91c7fb2923f19ddd6ded7555555bf268234f560e62cd023973",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "physical",
+  "topic": "vant_hoff_k2_gibbs_free_energy_compare_dual_d1_v35",
+  "topic_family": "vant_hoff_k2_gibbs_free_energy",
+  "question": "双情境对照·physical·双量联算专题（相隔 1 个已校验参数档）。\n【情境甲】某反应在 T1=298.15 K 的无量纲平衡常数 K1=3.36，反应标准焓 ΔrH°=26.8 kJ/mol 且近似不随温度变化。取 R=8.314462618 J/(mol·K)，求 T2=320.0 K 的平衡常数 K2 和相应标准 Gibbs 能 ΔrG°₂（kJ/mol）。\n【情境乙】某反应在 T1=298.15 K 的无量纲平衡常数 K1=3.4，反应标准焓 ΔrH°=27 kJ/mol 且近似不随温度变化。取 R=8.314462618 J/(mol·K)，求 T2=320.0 K 的平衡常数 K2 和相应标准 Gibbs 能 ΔrG°₂（kJ/mol）。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：7.0295975 dimensionless K₂，-5.1885691 kJ/mol ΔG°₂；乙：7.1525774 dimensionless K₂，-5.2347132 kJ/mol ΔG°₂；乙−甲：0.12297996 dimensionless K₂，-0.046144142 kJ/mol ΔG°₂。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(3.36,26.8)、乙(a,b)=(3.4,27)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：van't Hoff 关系 ln(K2/K1)=−ΔH/R(1/T2−1/T1)，先将焓 kJ/mol 转为 J/mol；再用 ΔG°₂=−RT2 lnK2 求自由能。\n乙：van't Hoff 关系 ln(K2/K1)=−ΔH/R(1/T2−1/T1)，先将焓 kJ/mol 转为 J/mol；再用 ΔG°₂=−RT2 lnK2 求自由能。\n甲结果：7.0295975 dimensionless K₂；-5.1885691 kJ/mol ΔG°₂\n乙结果：7.1525774 dimensionless K₂；-5.2347132 kJ/mol ΔG°₂。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.12297996 dimensionless K₂；-0.046144142 kJ/mol ΔG°₂；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(3.36,26.8)、乙(a,b)=(3.4,27)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：van't Hoff 关系 ln(K2/K1)=−ΔH/R(1/T2−1/T1)，先将焓 kJ/mol 转为 J/mol；再用 ΔG°₂=−RT2 lnK2 求自由能。\n乙：van't Hoff 关系 ln(K2/K1)=−ΔH/R(1/T2−1/T1)，先将焓 kJ/mol 转为 J/mol；再用 ΔG°₂=−RT2 lnK2 求自由能。\n甲结果：7.0295975 dimensionless K₂；-5.1885691 kJ/mol ΔG°₂\n乙结果：7.1525774 dimensionless K₂；-5.2347132 kJ/mol ΔG°₂。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.12297996 dimensionless K₂；-0.046144142 kJ/mol ΔG°₂；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    7.02959746968645,
+    -5.188569079288575,
+    7.152577434397138,
+    -5.2347132209354275,
+    0.12297996471068817,
+    -0.04614414164685243
+  ],
+  "units": [
+    "dimensionless K₂",
+    "kJ/mol ΔG°₂",
+    "dimensionless K₂",
+    "kJ/mol ΔG°₂",
+    "dimensionless K₂",
+    "kJ/mol ΔG°₂"
+  ],
+  "source_model": "dual",
+  "source_parameter_indices": [
+    34,
+    35
+  ],
+  "source_inverse_residuals": [
+    [
+      1.5039831531242081e-16,
+      1.1386146979426635e-16
+    ],
+    [
+      0,
+      1.1285777779270785e-16
+    ]
+  ],
+  "model_output_count": 2,
+  "offset": 1,
+  "parameter_case": 35,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-dual-3072.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

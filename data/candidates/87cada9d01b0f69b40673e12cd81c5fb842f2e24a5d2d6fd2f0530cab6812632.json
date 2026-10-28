@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "87cada9d01b0f69b40673e12cd81c5fb842f2e24a5d2d6fd2f0530cab6812632",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "inorganic",
+  "topic": "iron_oxidation_mass_and_oxygen_gain_compare_dual_d1_v13",
+  "topic_family": "iron_oxidation_mass_and_oxygen_gain",
+  "question": "双情境对照·inorganic·双量联算专题（相隔 1 个已校验参数档）。\n【情境甲】某含铁合金质量为 6.8 g，其中金属铁质量分数为 0.724，其余不氧化。铁在 O₂ 充足时全部转化为纯 Fe₂O₃。给定 M(Fe)=55.845、M(Fe₂O₃)=159.69 g/mol，求所得 Fe₂O₃ 质量与吸收的氧气质量。\n【情境乙】某含铁合金质量为 6.95 g，其中金属铁质量分数为 0.726，其余不氧化。铁在 O₂ 充足时全部转化为纯 Fe₂O₃。给定 M(Fe)=55.845、M(Fe₂O₃)=159.69 g/mol，求所得 Fe₂O₃ 质量与吸收的氧气质量。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：7.0389991 g Fe₂O₃，2.1157991 g O₂；乙：7.2141448 g Fe₂O₃，2.1684448 g O₂；乙−甲：0.17514572 g Fe₂O₃，0.052645716 g O₂。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(6.8,0.724)、乙(a,b)=(6.95,0.726)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：先算金属铁质量 mFe=a b，使用 2Fe+3/2O₂→Fe₂O₃ 换算氧化物质量，再以质量守恒求氧气增重。假定不生成 FeO/Fe₃O₄。\n乙：先算金属铁质量 mFe=a b，使用 2Fe+3/2O₂→Fe₂O₃ 换算氧化物质量，再以质量守恒求氧气增重。假定不生成 FeO/Fe₃O₄。\n甲结果：7.0389991 g Fe₂O₃；2.1157991 g O₂\n乙结果：7.2141448 g Fe₂O₃；2.1684448 g O₂。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.17514572 g Fe₂O₃；0.052645716 g O₂；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(6.8,0.724)、乙(a,b)=(6.95,0.726)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：先算金属铁质量 mFe=a b，使用 2Fe+3/2O₂→Fe₂O₃ 换算氧化物质量，再以质量守恒求氧气增重。假定不生成 FeO/Fe₃O₄。\n乙：先算金属铁质量 mFe=a b，使用 2Fe+3/2O₂→Fe₂O₃ 换算氧化物质量，再以质量守恒求氧气增重。假定不生成 FeO/Fe₃O₄。\n甲结果：7.0389991 g Fe₂O₃；2.1157991 g O₂\n乙结果：7.2141448 g Fe₂O₃；2.1684448 g O₂。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.17514572 g Fe₂O₃；0.052645716 g O₂；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    7.038999086757991,
+    2.1157990867579906,
+    7.214144802578566,
+    2.168444802578566,
+    0.1751457158205758,
+    0.05264571582057531
+  ],
+  "units": [
+    "g Fe₂O₃",
+    "g O₂",
+    "g Fe₂O₃",
+    "g O₂",
+    "g Fe₂O₃",
+    "g O₂"
+  ],
+  "source_model": "dual",
+  "source_parameter_indices": [
+    12,
+    13
+  ],
+  "source_inverse_residuals": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "model_output_count": 2,
+  "offset": 1,
+  "parameter_case": 13,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-dual-3072.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

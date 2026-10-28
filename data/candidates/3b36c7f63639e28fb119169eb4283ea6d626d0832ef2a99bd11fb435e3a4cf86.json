@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "3b36c7f63639e28fb119169eb4283ea6d626d0832ef2a99bd11fb435e3a4cf86",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "analytical",
+  "topic": "sample_sd_two_parallel_measurements_compare_mega_d5_v19",
+  "topic_family": "sample_sd_two_parallel_measurements",
+  "question": "双情境对照·analytical·三步骤专题（相隔 5 个已校验参数档）。\n【情境甲】某分析物两次独立平行测量值为 4.27 mg/L 与 4.524 mg/L。若采用 n−1 分母的样本标准差定义，求样本标准差 s（mg/L）。\n【情境乙】某分析物两次独立平行测量值为 4.345 mg/L 与 4.614 mg/L。若采用 n−1 分母的样本标准差定义，求样本标准差 s（mg/L）。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：0.17960512 mg/L；乙：0.19021172 mg/L；乙−甲：0.010606602 mg/L。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(4.27,4.524)、乙(a,b)=(4.345,4.614)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：n=2 时两个偏差的平方和除以 n−1=1，化简得 s=|x2−x1|/√2；不是总体标准差。\n乙：n=2 时两个偏差的平方和除以 n−1=1，化简得 s=|x2−x1|/√2；不是总体标准差。\n甲结果：0.17960512 mg/L\n乙结果：0.19021172 mg/L。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.010606602 mg/L；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(4.27,4.524)、乙(a,b)=(4.345,4.614)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：n=2 时两个偏差的平方和除以 n−1=1，化简得 s=|x2−x1|/√2；不是总体标准差。\n乙：n=2 时两个偏差的平方和除以 n−1=1，化简得 s=|x2−x1|/√2；不是总体标准差。\n甲结果：0.17960512 mg/L\n乙结果：0.19021172 mg/L。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.010606602 mg/L；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    0.17960512242138338,
+    0.19021172413918136,
+    0.010606601717797981
+  ],
+  "units": [
+    "mg/L",
+    "mg/L",
+    "mg/L"
+  ],
+  "source_model": "mega",
+  "source_parameter_indices": [
+    18,
+    23
+  ],
+  "source_inverse_residuals": [
+    [
+      0
+    ],
+    [
+      0
+    ]
+  ],
+  "model_output_count": 1,
+  "offset": 5,
+  "parameter_case": 19,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

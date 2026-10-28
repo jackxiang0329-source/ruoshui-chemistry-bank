@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "4978bec50166d606c6cc2fd15d3de2e29efefa748868015f6e4f8ae7a9516267",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "inorganic",
+  "topic": "cubic_crystal_molar_mass_from_density_compare_mega_d1_v08",
+  "topic_family": "cubic_crystal_molar_mass_from_density",
+  "question": "双情境对照·inorganic·三步骤专题（相隔 1 个已校验参数档）。\n【情境甲】立方晶体密度为 3.81 g/cm³，常规晶胞边长为 404.2 pm，每晶胞含 Z=4 个化学式单位，取 NA=6.02214076×10²³ mol⁻¹。求物质摩尔质量（g/mol），忽略空位。\n【情境乙】立方晶体密度为 3.84 g/cm³，常规晶胞边长为 404.8 pm，每晶胞含 Z=4 个化学式单位，取 NA=6.02214076×10²³ mol⁻¹。求物质摩尔质量（g/mol），忽略空位。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：37.879550 g/mol；乙：38.348082 g/mol；乙−甲：0.46853168 g/mol。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(3.81,404.2)、乙(a,b)=(3.84,404.8)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：ρ=ZM/(NAa_cell³)，移项得 M=ρNA(a_cell×10⁻¹⁰ cm/pm)³/Z；需先转换晶胞边长单位。\n乙：ρ=ZM/(NAa_cell³)，移项得 M=ρNA(a_cell×10⁻¹⁰ cm/pm)³/Z；需先转换晶胞边长单位。\n甲结果：37.879550 g/mol\n乙结果：38.348082 g/mol。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.46853168 g/mol；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(3.81,404.2)、乙(a,b)=(3.84,404.8)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：ρ=ZM/(NAa_cell³)，移项得 M=ρNA(a_cell×10⁻¹⁰ cm/pm)³/Z；需先转换晶胞边长单位。\n乙：ρ=ZM/(NAa_cell³)，移项得 M=ρNA(a_cell×10⁻¹⁰ cm/pm)³/Z；需先转换晶胞边长单位。\n甲结果：37.879550 g/mol\n乙结果：38.348082 g/mol。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.46853168 g/mol；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    37.8795502811466,
+    38.348081961538895,
+    0.46853168039229587
+  ],
+  "units": [
+    "g/mol",
+    "g/mol",
+    "g/mol"
+  ],
+  "source_model": "mega",
+  "source_parameter_indices": [
+    7,
+    8
+  ],
+  "source_inverse_residuals": [
+    [
+      1.1655884772967523e-16
+    ],
+    [
+      2.312964634635743e-16
+    ]
+  ],
+  "model_output_count": 1,
+  "offset": 1,
+  "parameter_case": 8,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "aeedd156b2e07ae544b2a2b2992505964d52937d8e87cb6f772680156ad94803",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "inorganic",
+  "topic": "octa_hs_d4_lfse_compare_mega_d1_v18",
+  "topic_family": "octa_hs_d4_lfse",
+  "question": "双情境对照·inorganic·三步骤专题（相隔 1 个已校验参数档）。\n【情境甲】弱场八面体高自旋 d⁴ 离子电子排布为 t₂g³e_g¹，晶场分裂能 Δo=97.2 kJ/mol。求仅考虑晶场分裂的 LFSE，忽略配对能与 Jahn–Teller 畸变。\n【情境乙】弱场八面体高自旋 d⁴ 离子电子排布为 t₂g³e_g¹，晶场分裂能 Δo=98.8 kJ/mol。求仅考虑晶场分裂的 LFSE，忽略配对能与 Jahn–Teller 畸变。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：-58.320000 kJ/mol；乙：-59.280000 kJ/mol；乙−甲：-0.96000000 kJ/mol。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(97.2,0)、乙(a,b)=(98.8,0)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：三个 t₂g 电子各贡献 −0.4Δo，一个 e_g 电子贡献 +0.6Δo，故 LFSE=−0.6Δo。\n乙：三个 t₂g 电子各贡献 −0.4Δo，一个 e_g 电子贡献 +0.6Δo，故 LFSE=−0.6Δo。\n甲结果：-58.320000 kJ/mol\n乙结果：-59.280000 kJ/mol。\n\n步骤三：逐量作差 Δ=乙−甲，得到 -0.96000000 kJ/mol；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(97.2,0)、乙(a,b)=(98.8,0)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：三个 t₂g 电子各贡献 −0.4Δo，一个 e_g 电子贡献 +0.6Δo，故 LFSE=−0.6Δo。\n乙：三个 t₂g 电子各贡献 −0.4Δo，一个 e_g 电子贡献 +0.6Δo，故 LFSE=−0.6Δo。\n甲结果：-58.320000 kJ/mol\n乙结果：-59.280000 kJ/mol。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 -0.96000000 kJ/mol；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    -58.32,
+    -59.279999999999994,
+    -0.9599999999999937
+  ],
+  "units": [
+    "kJ/mol",
+    "kJ/mol",
+    "kJ/mol"
+  ],
+  "source_model": "mega",
+  "source_parameter_indices": [
+    17,
+    18
+  ],
+  "source_inverse_residuals": [
+    [
+      0
+    ],
+    [
+      0
+    ]
+  ],
+  "model_output_count": 1,
+  "offset": 1,
+  "parameter_case": 18,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

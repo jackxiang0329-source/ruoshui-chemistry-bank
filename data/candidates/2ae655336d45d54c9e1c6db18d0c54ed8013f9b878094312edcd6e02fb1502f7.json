@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "2ae655336d45d54c9e1c6db18d0c54ed8013f9b878094312edcd6e02fb1502f7",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "physical",
+  "topic": "steady_fick_fourier_wall_heat_power_compare_mega_d5_v27",
+  "topic_family": "steady_fick_fourier_wall_heat_power",
+  "question": "双情境对照·physical·三步骤专题（相隔 5 个已校验参数档）。\n【情境甲】厚度为 L=0.0500 m 的平板热导率 k=0.800 W/(m·K)，传热截面积 A=0.356 m²，两侧温差 ΔT=38 K。若无内热源且为一维稳态导热，求热流功率（W）。\n【情境乙】厚度为 L=0.0500 m 的平板热导率 k=0.800 W/(m·K)，传热截面积 A=0.386 m²，两侧温差 ΔT=40.5 K。若无内热源且为一维稳态导热，求热流功率（W）。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：216.44800 W；乙：250.12800 W；乙−甲：33.680000 W。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(0.356,38)、乙(a,b)=(0.386,40.5)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：Fourier 热传导定律 P=kAΔT/L，所有长度取 m、温差取 K，结果为 W。\n乙：Fourier 热传导定律 P=kAΔT/L，所有长度取 m、温差取 K，结果为 W。\n甲结果：216.44800 W\n乙结果：250.12800 W。\n\n步骤三：逐量作差 Δ=乙−甲，得到 33.680000 W；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(0.356,38)、乙(a,b)=(0.386,40.5)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：Fourier 热传导定律 P=kAΔT/L，所有长度取 m、温差取 K，结果为 W。\n乙：Fourier 热传导定律 P=kAΔT/L，所有长度取 m、温差取 K，结果为 W。\n甲结果：216.44800 W\n乙结果：250.12800 W。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 33.680000 W；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    216.44799999999998,
+    250.12800000000001,
+    33.680000000000035
+  ],
+  "units": [
+    "W",
+    "W",
+    "W"
+  ],
+  "source_model": "mega",
+  "source_parameter_indices": [
+    26,
+    31
+  ],
+  "source_inverse_residuals": [
+    [
+      0
+    ],
+    [
+      0
+    ]
+  ],
+  "model_output_count": 1,
+  "offset": 5,
+  "parameter_case": 27,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

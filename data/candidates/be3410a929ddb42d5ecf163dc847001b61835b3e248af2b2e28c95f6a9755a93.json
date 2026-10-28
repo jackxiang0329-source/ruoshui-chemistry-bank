@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "be3410a929ddb42d5ecf163dc847001b61835b3e248af2b2e28c95f6a9755a93",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "organic",
+  "topic": "enantiomeric_excess_major_mass_compare_dual_d1_v01",
+  "topic_family": "enantiomeric_excess_major_mass",
+  "question": "双情境对照·organic·双量联算专题（相隔 1 个已校验参数档）。\n【情境甲】某纯手性化合物仅含两种对映体，总质量 10 g，少量对映体所占质量分数为 0.2，两者摩尔质量相同。求正的对映体过量 ee 和主要对映体质量。\n【情境乙】某纯手性化合物仅含两种对映体，总质量 10.2 g，少量对映体所占质量分数为 0.201，两者摩尔质量相同。求正的对映体过量 ee 和主要对映体质量。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：60.000000 % ee，8.0000000 g major；乙：59.800000 % ee，8.1498000 g major；乙−甲：-0.20000000 % ee，0.14980000 g major。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(10,0.2)、乙(a,b)=(10.2,0.201)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：ee=(主−次)/(主+次)×100%=100(1−2b)，主要对映体质量为 a(1−b)。\n乙：ee=(主−次)/(主+次)×100%=100(1−2b)，主要对映体质量为 a(1−b)。\n甲结果：60.000000 % ee；8.0000000 g major\n乙结果：59.800000 % ee；8.1498000 g major。\n\n步骤三：逐量作差 Δ=乙−甲，得到 -0.20000000 % ee；0.14980000 g major；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(10,0.2)、乙(a,b)=(10.2,0.201)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：ee=(主−次)/(主+次)×100%=100(1−2b)，主要对映体质量为 a(1−b)。\n乙：ee=(主−次)/(主+次)×100%=100(1−2b)，主要对映体质量为 a(1−b)。\n甲结果：60.000000 % ee；8.0000000 g major\n乙结果：59.800000 % ee；8.1498000 g major。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 -0.20000000 % ee；0.14980000 g major；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    60,
+    8,
+    59.8,
+    8.149799999999999,
+    -0.20000000000000284,
+    0.14979999999999905
+  ],
+  "units": [
+    "% ee",
+    "g major",
+    "% ee",
+    "g major",
+    "% ee",
+    "g major"
+  ],
+  "source_model": "dual",
+  "source_parameter_indices": [
+    0,
+    1
+  ],
+  "source_inverse_residuals": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "model_output_count": 2,
+  "offset": 1,
+  "parameter_case": 1,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-dual-3072.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

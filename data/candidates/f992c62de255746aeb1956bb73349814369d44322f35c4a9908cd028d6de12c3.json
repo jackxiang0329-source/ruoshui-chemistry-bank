@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "f992c62de255746aeb1956bb73349814369d44322f35c4a9908cd028d6de12c3",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "organic",
+  "topic": "polymer_mw_mn_dispersity_index_compare_mega_d1_v19",
+  "topic_family": "polymer_mw_mn_dispersity_index",
+  "question": "双情境对照·organic·三步骤专题（相隔 1 个已校验参数档）。\n【情境甲】某聚合物的重均摩尔质量 Mw=28500 g/mol、数均摩尔质量 Mn=18700 g/mol，测量方法与标准一致。计算分散度 Đ=Mw/Mn，并解释它不是聚合度。\n【情境乙】某聚合物的重均摩尔质量 Mw=28750 g/mol、数均摩尔质量 Mn=18850 g/mol，测量方法与标准一致。计算分散度 Đ=Mw/Mn，并解释它不是聚合度。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：1.5240642 无量纲；乙：1.5251989 无量纲；乙−甲：0.0011347679 无量纲。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(28500,18700)、乙(a,b)=(28750,18850)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：分散度是 Mw/Mn，对理想单分散聚合物 Đ=1；分子量分布较宽时比值更大。\n乙：分散度是 Mw/Mn，对理想单分散聚合物 Đ=1；分子量分布较宽时比值更大。\n甲结果：1.5240642 无量纲\n乙结果：1.5251989 无量纲。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.0011347679 无量纲；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(28500,18700)、乙(a,b)=(28750,18850)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：分散度是 Mw/Mn，对理想单分散聚合物 Đ=1；分子量分布较宽时比值更大。\n乙：分散度是 Mw/Mn，对理想单分散聚合物 Đ=1；分子量分布较宽时比值更大。\n甲结果：1.5240642 无量纲\n乙结果：1.5251989 无量纲。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.0011347679 无量纲；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    1.5240641711229947,
+    1.5251989389920424,
+    0.0011347678690476481
+  ],
+  "units": [
+    "无量纲",
+    "无量纲",
+    "无量纲"
+  ],
+  "source_model": "mega",
+  "source_parameter_indices": [
+    18,
+    19
+  ],
+  "source_inverse_residuals": [
+    [
+      0
+    ],
+    [
+      0
+    ]
+  ],
+  "model_output_count": 1,
+  "offset": 1,
+  "parameter_case": 19,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "02d4ca94bc19ba6fe1e8da47cf1e9854fa1730b1cc9257d7ddc25e702c35efd4",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "analytical",
+  "topic": "permanganate_iron_titration_molar_mass_compare_dual_d5_v47",
+  "topic_family": "permanganate_iron_titration_molar_mass",
+  "question": "双情境对照·analytical·双量联算专题（相隔 5 个已校验参数档）。\n【情境甲】在强酸条件下高锰酸根完全还原为 Mn²⁺，用 0.02000 mol/L KMnO₄ 滴定 Fe²⁺ 水样。原样体积 27.3 mL，高锰酸钾耗量 16.6 mL。电子计量为 1mol MnO₄⁻ 对 5mol Fe²⁺，M(Fe)=55.845 g/mol，求 Fe²⁺ 浓度及铁质量浓度。\n【情境乙】在强酸条件下高锰酸根完全还原为 Mn²⁺，用 0.02000 mol/L KMnO₄ 滴定 Fe²⁺ 水样。原样体积 27.55 mL，高锰酸钾耗量 17.1 mL。电子计量为 1mol MnO₄⁻ 对 5mol Fe²⁺，M(Fe)=55.845 g/mol，求 Fe²⁺ 浓度及铁质量浓度。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：0.060805861 mol/L Fe²⁺，3395.7033 mg/L Fe；乙：0.062068966 mol/L Fe²⁺，3466.2414 mg/L Fe；乙−甲：0.0012631047 mol/L Fe²⁺，70.538083 mg/L Fe。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(16.6,27.3)、乙(a,b)=(17.1,27.55)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：nFe=5×0.02000×a/1000 mol，除以 b/1000 L 得 cFe=0.1000a/b mol/L。再乘 55.845×1000 得 mg/L。需确保其他还原剂无干扰。\n乙：nFe=5×0.02000×a/1000 mol，除以 b/1000 L 得 cFe=0.1000a/b mol/L。再乘 55.845×1000 得 mg/L。需确保其他还原剂无干扰。\n甲结果：0.060805861 mol/L Fe²⁺；3395.7033 mg/L Fe\n乙结果：0.062068966 mol/L Fe²⁺；3466.2414 mg/L Fe。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.0012631047 mol/L Fe²⁺；70.538083 mg/L Fe；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(16.6,27.3)、乙(a,b)=(17.1,27.55)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：nFe=5×0.02000×a/1000 mol，除以 b/1000 L 得 cFe=0.1000a/b mol/L。再乘 55.845×1000 得 mg/L。需确保其他还原剂无干扰。\n乙：nFe=5×0.02000×a/1000 mol，除以 b/1000 L 得 cFe=0.1000a/b mol/L。再乘 55.845×1000 得 mg/L。需确保其他还原剂无干扰。\n甲结果：0.060805861 mol/L Fe²⁺；3395.7033 mg/L Fe\n乙结果：0.062068966 mol/L Fe²⁺；3466.2414 mg/L Fe。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.0012631047 mol/L Fe²⁺；70.538083 mg/L Fe；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    0.06080586080586081,
+    3395.703296703297,
+    0.062068965517241385,
+    3466.241379310345,
+    0.0012631047113805735,
+    70.53808260704818
+  ],
+  "units": [
+    "mol/L Fe²⁺",
+    "mg/L Fe",
+    "mol/L Fe²⁺",
+    "mg/L Fe",
+    "mol/L Fe²⁺",
+    "mg/L Fe"
+  ],
+  "source_model": "dual",
+  "source_parameter_indices": [
+    46,
+    51
+  ],
+  "source_inverse_residuals": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "model_output_count": 2,
+  "offset": 5,
+  "parameter_case": 47,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-dual-3072.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

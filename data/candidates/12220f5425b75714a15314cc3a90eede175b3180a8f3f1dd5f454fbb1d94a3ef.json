@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "12220f5425b75714a15314cc3a90eede175b3180a8f3f1dd5f454fbb1d94a3ef",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "physical",
+  "topic": "michaelis_menten_enzyme_initial_rate_compare_mega_d5_v14",
+  "topic_family": "michaelis_menten_enzyme_initial_rate",
+  "question": "双情境对照·physical·三步骤专题（相隔 5 个已校验参数档）。\n【情境甲】某单底物酶催化反应在初速阶段符合 Michaelis–Menten 模型，Vmax=25.2 μmol/min、底物浓度 [S]=2.65 mmol/L、Km=0.500 mmol/L。忽略底物抑制，求初速 v。\n【情境乙】某单底物酶催化反应在初速阶段符合 Michaelis–Menten 模型，Vmax=27.2 μmol/min、底物浓度 [S]=2.9 mmol/L、Km=0.500 mmol/L。忽略底物抑制，求初速 v。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：21.200000 μmol/min；乙：23.200000 μmol/min；乙−甲：2.0000000 μmol/min。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(25.2,2.65)、乙(a,b)=(27.2,2.9)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：Michaelis–Menten 方程 v=Vmax[S]/(Km+[S])，分子分母浓度需用相同单位。\n乙：Michaelis–Menten 方程 v=Vmax[S]/(Km+[S])，分子分母浓度需用相同单位。\n甲结果：21.200000 μmol/min\n乙结果：23.200000 μmol/min。\n\n步骤三：逐量作差 Δ=乙−甲，得到 2.0000000 μmol/min；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(25.2,2.65)、乙(a,b)=(27.2,2.9)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：Michaelis–Menten 方程 v=Vmax[S]/(Km+[S])，分子分母浓度需用相同单位。\n乙：Michaelis–Menten 方程 v=Vmax[S]/(Km+[S])，分子分母浓度需用相同单位。\n甲结果：21.200000 μmol/min\n乙结果：23.200000 μmol/min。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 2.0000000 μmol/min；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    21.2,
+    23.2,
+    2
+  ],
+  "units": [
+    "μmol/min",
+    "μmol/min",
+    "μmol/min"
+  ],
+  "source_model": "mega",
+  "source_parameter_indices": [
+    13,
+    18
+  ],
+  "source_inverse_residuals": [
+    [
+      1.409807015397024e-16
+    ],
+    [
+      0
+    ]
+  ],
+  "model_output_count": 1,
+  "offset": 5,
+  "parameter_case": 14,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

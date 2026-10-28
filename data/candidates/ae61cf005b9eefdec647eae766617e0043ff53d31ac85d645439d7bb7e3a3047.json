@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "ae61cf005b9eefdec647eae766617e0043ff53d31ac85d645439d7bb7e3a3047",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "inorganic",
+  "topic": "mgcl2_mean_activity_debye_compare_dual_d5_v17",
+  "topic_family": "mgcl2_mean_activity_debye",
+  "question": "双情境对照·inorganic·双量联算专题（相隔 5 个已校验参数档）。\n【情境甲】25°C 极稀水溶液中 MgCl₂ 的分析浓度为 0.000116 mol/L，并额外含 NaCl 0.000066 mol/L，完全电离。采用浓度标度近似 Debye–Hückel 极限定律 log₁₀γ±=−0.509×2√I（I 数值以 mol/L 计），求离子强度 I 与 MgCl₂ 平均离子活度系数 γ±。\n【情境乙】25°C 极稀水溶液中 MgCl₂ 的分析浓度为 0.000121 mol/L，并额外含 NaCl 0.000071 mol/L，完全电离。采用浓度标度近似 Debye–Hückel 极限定律 log₁₀γ±=−0.509×2√I（I 数值以 mol/L 计），求离子强度 I 与 MgCl₂ 平均离子活度系数 γ±。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：0.00041400000 mol/L ionic strength，0.95342550 mean activity coefficient；乙：0.00043400000 mol/L ionic strength，0.95234070 mean activity coefficient；乙−甲：0.000020000000 mol/L ionic strength，-0.0010848016 mean activity coefficient。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(0.000116,0.000066)、乙(a,b)=(0.000121,0.000071)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：MgCl₂ 对 I 的贡献 3c，NaCl 对 I 贡献 c，因此 I=3a+b；MgCl₂ 平均离子活度系数中 |z₊z₋|=2，取 10 的负对数幂。仅适用于非常稀的理想近似。\n乙：MgCl₂ 对 I 的贡献 3c，NaCl 对 I 贡献 c，因此 I=3a+b；MgCl₂ 平均离子活度系数中 |z₊z₋|=2，取 10 的负对数幂。仅适用于非常稀的理想近似。\n甲结果：0.00041400000 mol/L ionic strength；0.95342550 mean activity coefficient\n乙结果：0.00043400000 mol/L ionic strength；0.95234070 mean activity coefficient。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.000020000000 mol/L ionic strength；-0.0010848016 mean activity coefficient；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(0.000116,0.000066)、乙(a,b)=(0.000121,0.000071)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：MgCl₂ 对 I 的贡献 3c，NaCl 对 I 贡献 c，因此 I=3a+b；MgCl₂ 平均离子活度系数中 |z₊z₋|=2，取 10 的负对数幂。仅适用于非常稀的理想近似。\n乙：MgCl₂ 对 I 的贡献 3c，NaCl 对 I 贡献 c，因此 I=3a+b；MgCl₂ 平均离子活度系数中 |z₊z₋|=2，取 10 的负对数幂。仅适用于非常稀的理想近似。\n甲结果：0.00041400000 mol/L ionic strength；0.95342550 mean activity coefficient\n乙结果：0.00043400000 mol/L ionic strength；0.95234070 mean activity coefficient。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.000020000000 mol/L ionic strength；-0.0010848016 mean activity coefficient；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    0.000414,
+    0.95342550217341,
+    0.000434,
+    0.9523407005664464,
+    0.000019999999999999998,
+    -0.0010848016069636701
+  ],
+  "units": [
+    "mol/L ionic strength",
+    "mean activity coefficient",
+    "mol/L ionic strength",
+    "mean activity coefficient",
+    "mol/L ionic strength",
+    "mean activity coefficient"
+  ],
+  "source_model": "dual",
+  "source_parameter_indices": [
+    16,
+    21
+  ],
+  "source_inverse_residuals": [
+    [
+      0,
+      6.8205606049558175e-16
+    ],
+    [
+      0,
+      3.3307756604020143e-16
+    ]
+  ],
+  "model_output_count": 2,
+  "offset": 5,
+  "parameter_case": 17,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-dual-3072.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "dda1648e2ea374856edcdb4db3dfae7bed5096d024ce45f94a1f61fdbbb4254f",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "physical",
+  "topic": "michaelis_half_saturation_km_compare_mega_d5_v04",
+  "topic_family": "michaelis_half_saturation_km",
+  "question": "双情境对照·physical·三步骤专题（相隔 5 个已校验参数档）。\n【情境甲】某酶符合经典 Michaelis–Menten 模型，在底物浓度 [S]=2.65 mmol/L 时测得初速 v/Vmax=0.459。假设无别构效应及底物抑制，根据初速比例反解 Km（mmol/L）。\n【情境乙】某酶符合经典 Michaelis–Menten 模型，在底物浓度 [S]=2.9 mmol/L 时测得初速 v/Vmax=0.474。假设无别构效应及底物抑制，根据初速比例反解 Km（mmol/L）。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：3.1234205 mmol/L；乙：3.2181435 mmol/L；乙−甲：0.094722981 mmol/L。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(2.65,0.459)、乙(a,b)=(2.9,0.474)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：v/Vmax=[S]/(Km+[S])；设 r=v/Vmax，整理为 Km=[S](1/r−1)。浓度与 Km 单位相同。\n乙：v/Vmax=[S]/(Km+[S])；设 r=v/Vmax，整理为 Km=[S](1/r−1)。浓度与 Km 单位相同。\n甲结果：3.1234205 mmol/L\n乙结果：3.2181435 mmol/L。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.094722981 mmol/L；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(2.65,0.459)、乙(a,b)=(2.9,0.474)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：v/Vmax=[S]/(Km+[S])；设 r=v/Vmax，整理为 Km=[S](1/r−1)。浓度与 Km 单位相同。\n乙：v/Vmax=[S]/(Km+[S])；设 r=v/Vmax，整理为 Km=[S](1/r−1)。浓度与 Km 单位相同。\n甲结果：3.1234205 mmol/L\n乙结果：3.2181435 mmol/L。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.094722981 mmol/L；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    3.123420479302832,
+    3.218143459915612,
+    0.09472298061277984
+  ],
+  "units": [
+    "mmol/L",
+    "mmol/L",
+    "mmol/L"
+  ],
+  "source_model": "mega",
+  "source_parameter_indices": [
+    3,
+    8
+  ],
+  "source_inverse_residuals": [
+    [
+      0
+    ],
+    [
+      1.1711213339927812e-16
+    ]
+  ],
+  "model_output_count": 1,
+  "offset": 5,
+  "parameter_case": 4,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

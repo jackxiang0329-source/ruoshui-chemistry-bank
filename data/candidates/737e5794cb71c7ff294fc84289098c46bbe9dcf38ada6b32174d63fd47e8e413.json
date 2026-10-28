@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "737e5794cb71c7ff294fc84289098c46bbe9dcf38ada6b32174d63fd47e8e413",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "physical",
+  "topic": "ideal_binary_gas_mixing_entropy_compare_dual_d5_v09",
+  "topic_family": "ideal_binary_gas_mixing_entropy",
+  "question": "双情境对照·physical·双量联算专题（相隔 5 个已校验参数档）。\n【情境甲】两种化学种类不同的理想气体处于相同 T、P，初始物质的量分别为 A=1.16 mol、B=2.24 mol，隔板移除后理想混合且无反应。取 R=8.314462618 J/(mol·K)，求混合后 A 摩尔分数 xA 和总混合熵变（J/K）。\n【情境乙】两种化学种类不同的理想气体处于相同 T、P，初始物质的量分别为 A=1.26 mol、B=2.39 mol，隔板移除后理想混合且无反应。取 R=8.314462618 J/(mol·K)，求混合后 A 摩尔分数 xA 和总混合熵变（J/K）。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：0.34117647 mole fraction A，18.143515 J/K ΔSₘᵢₓ；乙：0.34520548 mole fraction A，19.556965 J/K ΔSₘᵢₓ；乙−甲：0.0040290089 mole fraction A，1.4134497 J/K ΔSₘᵢₓ。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(1.16,2.24)、乙(a,b)=(1.26,2.39)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：物料守恒给 xA=a/(a+b)，xB=b/(a+b)。理想气体混合熵为 ΔS=−R[a ln xA+b ln xB]，同种气体不适用此差异物种混合公式。\n乙：物料守恒给 xA=a/(a+b)，xB=b/(a+b)。理想气体混合熵为 ΔS=−R[a ln xA+b ln xB]，同种气体不适用此差异物种混合公式。\n甲结果：0.34117647 mole fraction A；18.143515 J/K ΔSₘᵢₓ\n乙结果：0.34520548 mole fraction A；19.556965 J/K ΔSₘᵢₓ。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.0040290089 mole fraction A；1.4134497 J/K ΔSₘᵢₓ；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(1.16,2.24)、乙(a,b)=(1.26,2.39)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：物料守恒给 xA=a/(a+b)，xB=b/(a+b)。理想气体混合熵为 ΔS=−R[a ln xA+b ln xB]，同种气体不适用此差异物种混合公式。\n乙：物料守恒给 xA=a/(a+b)，xB=b/(a+b)。理想气体混合熵为 ΔS=−R[a ln xA+b ln xB]，同种气体不适用此差异物种混合公式。\n甲结果：0.34117647 mole fraction A；18.143515 J/K ΔSₘᵢₓ\n乙结果：0.34520548 mole fraction A；19.556965 J/K ΔSₘᵢₓ。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.0040290089 mole fraction A；1.4134497 J/K ΔSₘᵢₓ；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    0.34117647058823525,
+    18.14351536743928,
+    0.34520547945205476,
+    19.55696508829463,
+    0.0040290088638195165,
+    1.413449720855347
+  ],
+  "units": [
+    "mole fraction A",
+    "J/K ΔSₘᵢₓ",
+    "mole fraction A",
+    "J/K ΔSₘᵢₓ",
+    "mole fraction A",
+    "J/K ΔSₘᵢₓ"
+  ],
+  "source_model": "dual",
+  "source_parameter_indices": [
+    8,
+    13
+  ],
+  "source_inverse_residuals": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "model_output_count": 2,
+  "offset": 5,
+  "parameter_case": 9,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-dual-3072.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

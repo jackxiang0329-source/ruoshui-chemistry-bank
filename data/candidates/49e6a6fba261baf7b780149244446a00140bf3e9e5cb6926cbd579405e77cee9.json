@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "49e6a6fba261baf7b780149244446a00140bf3e9e5cb6926cbd579405e77cee9",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "organic",
+  "topic": "ethylene_hydration_ethanol_water_compare_dual_d1_v17",
+  "topic_family": "ethylene_hydration_ethanol_water",
+  "question": "双情境对照·organic·双量联算专题（相隔 1 个已校验参数档）。\n【情境甲】理想水合反应 C₂H₄+H₂O→C₂H₅OH，乙烯初始 0.132 mol、水 0.33 mol，水始终过量且乙烯完全转化。M(乙醇)=46.069、M(水)=18.015 g/mol。求乙醇产量及耗水质量。\n【情境乙】理想水合反应 C₂H₄+H₂O→C₂H₅OH，乙烯初始 0.134 mol、水 0.335 mol，水始终过量且乙烯完全转化。M(乙醇)=46.069、M(水)=18.015 g/mol。求乙醇产量及耗水质量。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：6.0811080 g ethanol，2.3779800 g H₂O consumed；乙：6.1732460 g ethanol，2.4140100 g H₂O consumed；乙−甲：0.092138000 g ethanol，0.036030000 g H₂O consumed。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(0.132,0.33)、乙(a,b)=(0.134,0.335)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：反应物乙烯与水的化学计量比为 1:1，乙烯限制；乙醇产量为 a mol，耗水为 a mol。\n乙：反应物乙烯与水的化学计量比为 1:1，乙烯限制；乙醇产量为 a mol，耗水为 a mol。\n甲结果：6.0811080 g ethanol；2.3779800 g H₂O consumed\n乙结果：6.1732460 g ethanol；2.4140100 g H₂O consumed。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.092138000 g ethanol；0.036030000 g H₂O consumed；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(0.132,0.33)、乙(a,b)=(0.134,0.335)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：反应物乙烯与水的化学计量比为 1:1，乙烯限制；乙醇产量为 a mol，耗水为 a mol。\n乙：反应物乙烯与水的化学计量比为 1:1，乙烯限制；乙醇产量为 a mol，耗水为 a mol。\n甲结果：6.0811080 g ethanol；2.3779800 g H₂O consumed\n乙结果：6.1732460 g ethanol；2.4140100 g H₂O consumed。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.092138000 g ethanol；0.036030000 g H₂O consumed；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    6.081108,
+    2.37798,
+    6.173246000000001,
+    2.41401,
+    0.09213800000000028,
+    0.03603000000000023
+  ],
+  "units": [
+    "g ethanol",
+    "g H₂O consumed",
+    "g ethanol",
+    "g H₂O consumed",
+    "g ethanol",
+    "g H₂O consumed"
+  ],
+  "source_model": "dual",
+  "source_parameter_indices": [
+    16,
+    17
+  ],
+  "source_inverse_residuals": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "model_output_count": 2,
+  "offset": 1,
+  "parameter_case": 17,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-dual-3072.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "ffded57c49b24532e6c8140d584287714ec58b5a7d006d7b653a8d753115b12b",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "physical",
+  "topic": "reversible_adiabatic_diatomic_gas_compare_dual_d1_v41",
+  "topic_family": "reversible_adiabatic_diatomic_gas",
+  "question": "双情境对照·physical·双量联算专题（相隔 1 个已校验参数档）。\n【情境甲】1.00 mol 理想双原子气体以 γ=Cp/Cv=1.40 可逆绝热膨胀，初温 T1=420 K、末初压比 P2/P1=0.56（小于 1）。令 R=8.314462618 J/(mol·K)，按化学约定求末温和系统所受功（kJ），忽略振动热容变化。\n【情境乙】1.00 mol 理想双原子气体以 γ=Cp/Cv=1.40 可逆绝热膨胀，初温 T1=420.5 K、末初压比 P2/P1=0.564（小于 1）。令 R=8.314462618 J/(mol·K)，按化学约定求末温和系统所受功（kJ），忽略振动热容变化。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：355.87953 K T₂，-1.3328181 kJ work on system；乙：357.02850 K T₂，-1.3193285 kJ work on system；乙−甲：1.1489681 K T₂，0.013489552 kJ work on system。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(420,0.56)、乙(a,b)=(420.5,0.564)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：可逆绝热理想气体 T2=T1(P2/P1)^((γ−1)/γ)；q=0，ΔU=Cv(T2−T1)=w，其中 Cv=R/(γ−1)，膨胀功应为负。\n乙：可逆绝热理想气体 T2=T1(P2/P1)^((γ−1)/γ)；q=0，ΔU=Cv(T2−T1)=w，其中 Cv=R/(γ−1)，膨胀功应为负。\n甲结果：355.87953 K T₂；-1.3328181 kJ work on system\n乙结果：357.02850 K T₂；-1.3193285 kJ work on system。\n\n步骤三：逐量作差 Δ=乙−甲，得到 1.1489681 K T₂；0.013489552 kJ work on system；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(420,0.56)、乙(a,b)=(420.5,0.564)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：可逆绝热理想气体 T2=T1(P2/P1)^((γ−1)/γ)；q=0，ΔU=Cv(T2−T1)=w，其中 Cv=R/(γ−1)，膨胀功应为负。\n乙：可逆绝热理想气体 T2=T1(P2/P1)^((γ−1)/γ)；q=0，ΔU=Cv(T2−T1)=w，其中 Cv=R/(γ−1)，膨胀功应为负。\n甲结果：355.87953 K T₂；-1.3328181 kJ work on system\n乙结果：357.02850 K T₂；-1.3193285 kJ work on system。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 1.1489681 K T₂；0.013489552 kJ work on system；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    355.8795333297804,
+    -1.3328180579456401,
+    357.02850138939027,
+    -1.3193285062658837,
+    1.1489680596098992,
+    0.013489551679756406
+  ],
+  "units": [
+    "K T₂",
+    "kJ work on system",
+    "K T₂",
+    "kJ work on system",
+    "K T₂",
+    "kJ work on system"
+  ],
+  "source_model": "dual",
+  "source_parameter_indices": [
+    40,
+    41
+  ],
+  "source_inverse_residuals": [
+    [
+      0,
+      0
+    ],
+    [
+      1.968480540115526e-16,
+      1.1194674008237892e-16
+    ]
+  ],
+  "model_output_count": 2,
+  "offset": 1,
+  "parameter_case": 41,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-dual-3072.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

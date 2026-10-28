@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "fc190df14e9271dd12719de8624df3b4284c97492f23ab45438c3dbdfca7bcba",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "inorganic",
+  "topic": "nernst_two_electron_actual_cell_e_compare_mega_d1_v18",
+  "topic_family": "nernst_two_electron_actual_cell_e",
+  "question": "双情境对照·inorganic·三步骤专题（相隔 1 个已校验参数档）。\n【情境甲】某理想二电子原电池在 298.15 K 标准电动势 E°=1.185 V，按所写电池反应的无量纲反应商 Q=0.044。取 2.303RT/F=0.05916 V，求非标准态电动势 E（V）。\n【情境乙】某理想二电子原电池在 298.15 K 标准电动势 E°=1.19 V，按所写电池反应的无量纲反应商 Q=0.046。取 2.303RT/F=0.05916 V，求非标准态电动势 E（V）。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：1.2251267 V；乙：1.2295556 V；乙−甲：0.0044289535 V。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(1.185,0.044)、乙(a,b)=(1.19,0.046)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：Nernst 方程 E=E°−(0.05916/2)log₁₀Q。题目假定活度商而非直接把有量纲浓度代入对数。\n乙：Nernst 方程 E=E°−(0.05916/2)log₁₀Q。题目假定活度商而非直接把有量纲浓度代入对数。\n甲结果：1.2251267 V\n乙结果：1.2295556 V。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.0044289535 V；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(1.185,0.044)、乙(a,b)=(1.19,0.046)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：Nernst 方程 E=E°−(0.05916/2)log₁₀Q。题目假定活度商而非直接把有量纲浓度代入对数。\n乙：Nernst 方程 E=E°−(0.05916/2)log₁₀Q。题目假定活度商而非直接把有量纲浓度代入对数。\n甲结果：1.2251267 V\n乙结果：1.2295556 V。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.0044289535 V；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    1.2251266698295387,
+    1.229555623338859,
+    0.004428953509320266
+  ],
+  "units": [
+    "V",
+    "V",
+    "V"
+  ],
+  "source_model": "mega",
+  "source_parameter_indices": [
+    17,
+    18
+  ],
+  "source_inverse_residuals": [
+    [
+      2.523234146875356e-15
+    ],
+    [
+      4.676211109154871e-15
+    ]
+  ],
+  "model_output_count": 1,
+  "offset": 1,
+  "parameter_case": 18,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-mega-2304.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "6198b5d81b98cdfd0177e26b37df3393b7f6677c05c033b459d7556c06d929b4",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "physical",
+  "topic": "colligative_freezing_boiling_changes_compare_dual_d1_v11",
+  "topic_family": "colligative_freezing_boiling_changes",
+  "question": "双情境对照·physical·双量联算专题（相隔 1 个已校验参数档）。\n【情境甲】某稀溶液的质量摩尔浓度为 m=0.12 mol/kg，有效 van't Hoff 因子 i=1.52。给定溶剂 Kf=1.86 K·kg/mol、Kb=0.512 K·kg/mol，忽略非理想与相变特殊性，分别求凝固点降低 ΔTf 与沸点升高 ΔTb（K）。\n【情境乙】某稀溶液的质量摩尔浓度为 m=0.122 mol/kg，有效 van't Hoff 因子 i=1.522。给定溶剂 Kf=1.86 K·kg/mol、Kb=0.512 K·kg/mol，忽略非理想与相变特殊性，分别求凝固点降低 ΔTf 与沸点升高 ΔTb（K）。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：0.33926400 K freezing-point depression，0.093388800 K boiling-point elevation；乙：0.34537224 K freezing-point depression，0.095070208 K boiling-point elevation；乙−甲：0.0061082400 K freezing-point depression，0.0016814080 K boiling-point elevation。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(0.12,1.52)、乙(a,b)=(0.122,1.522)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：两种依数性近似分别为 ΔTf=iKf m、ΔTb=iKb m；使用题设有效因子，不将其强行取整数。\n乙：两种依数性近似分别为 ΔTf=iKf m、ΔTb=iKb m；使用题设有效因子，不将其强行取整数。\n甲结果：0.33926400 K freezing-point depression；0.093388800 K boiling-point elevation\n乙结果：0.34537224 K freezing-point depression；0.095070208 K boiling-point elevation。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.0061082400 K freezing-point depression；0.0016814080 K boiling-point elevation；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(0.12,1.52)、乙(a,b)=(0.122,1.522)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：两种依数性近似分别为 ΔTf=iKf m、ΔTb=iKb m；使用题设有效因子，不将其强行取整数。\n乙：两种依数性近似分别为 ΔTf=iKf m、ΔTb=iKb m；使用题设有效因子，不将其强行取整数。\n甲结果：0.33926400 K freezing-point depression；0.093388800 K boiling-point elevation\n乙结果：0.34537224 K freezing-point depression；0.095070208 K boiling-point elevation。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.0061082400 K freezing-point depression；0.0016814080 K boiling-point elevation；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    0.339264,
+    0.09338880000000001,
+    0.34537224,
+    0.095070208,
+    0.006108239999999987,
+    0.0016814079999999954
+  ],
+  "units": [
+    "K freezing-point depression",
+    "K boiling-point elevation",
+    "K freezing-point depression",
+    "K boiling-point elevation",
+    "K freezing-point depression",
+    "K boiling-point elevation"
+  ],
+  "source_model": "dual",
+  "source_parameter_indices": [
+    10,
+    11
+  ],
+  "source_inverse_residuals": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1.4947747579559314e-16
+    ]
+  ],
+  "model_output_count": 2,
+  "offset": 1,
+  "parameter_case": 11,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-dual-3072.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}

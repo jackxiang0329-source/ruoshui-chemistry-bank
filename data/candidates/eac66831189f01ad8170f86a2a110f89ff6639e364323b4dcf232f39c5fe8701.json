@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "eac66831189f01ad8170f86a2a110f89ff6639e364323b4dcf232f39c5fe8701",
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_two_scenario_comparison_and_difference",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "subject": "inorganic",
+  "topic": "limestone_caco3_carbon_dioxide_compare_dual_d5_v32",
+  "topic_family": "limestone_caco3_carbon_dioxide",
+  "question": "双情境对照·inorganic·双量联算专题（相隔 5 个已校验参数档）。\n【情境甲】某石灰石固体样品总质量为 6.79 g，碳酸钙质量分数 0.712（无量纲），其他物质均不与盐酸产气。加入足量酸后 CaCO₃ 全部转化为 CO₂，取 M(CaCO₃)=100.09、M(CO₂)=44.01 g/mol，求碳酸钙质量与理论 CO₂ 质量。\n【情境乙】某石灰石固体样品总质量为 7.24 g，碳酸钙质量分数 0.722（无量纲），其他物质均不与盐酸产气。加入足量酸后 CaCO₃ 全部转化为 CO₂，取 M(CaCO₃)=100.09、M(CO₂)=44.01 g/mol，求碳酸钙质量与理论 CO₂ 质量。\n使用相同的公式和标准态约定分别求解甲、乙，然后逐项求有符号变化 Δ=乙−甲。对于每个输出量均须保留原来的单位；两个情境是不同实验条件，并非一次实验中任意混用的参数。",
+  "answer": "甲：4.8344800 g CaCO₃，2.1257415 g CO₂；乙：5.2272800 g CaCO₃，2.2984573 g CO₂；乙−甲：0.39280000 g CaCO₃，0.17271584 g CO₂。",
+  "explanation": "步骤一：分别列出两组完整题设：甲(a,b)=(6.79,0.712)、乙(a,b)=(7.24,0.722)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。\n\n步骤二：使用已编写的化学原理。\n甲：先依样品质量与纯度计算 CaCO₃ 质量，再将 CaCO₃→CO₂ 的 1:1 计量换算为气体质量。酸过量、无逸散损失是模型前提。\n乙：先依样品质量与纯度计算 CaCO₃ 质量，再将 CaCO₃→CO₂ 的 1:1 计量换算为气体质量。酸过量、无逸散损失是模型前提。\n甲结果：4.8344800 g CaCO₃；2.1257415 g CO₂\n乙结果：5.2272800 g CaCO₃；2.2984573 g CO₂。\n\n步骤三：逐量作差 Δ=乙−甲，得到 0.39280000 g CaCO₃；0.17271584 g CO₂；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。",
+  "solution_steps": [
+    "步骤一：分别列出两组完整题设：甲(a,b)=(6.79,0.712)、乙(a,b)=(7.24,0.722)。核对相应的化学计量、单位与模型前提；两个情境必须分别计算。",
+    "步骤二：使用已编写的化学原理。\n甲：先依样品质量与纯度计算 CaCO₃ 质量，再将 CaCO₃→CO₂ 的 1:1 计量换算为气体质量。酸过量、无逸散损失是模型前提。\n乙：先依样品质量与纯度计算 CaCO₃ 质量，再将 CaCO₃→CO₂ 的 1:1 计量换算为气体质量。酸过量、无逸散损失是模型前提。\n甲结果：4.8344800 g CaCO₃；2.1257415 g CO₂\n乙结果：5.2272800 g CaCO₃；2.2984573 g CO₂。",
+    "步骤三：逐量作差 Δ=乙−甲，得到 0.39280000 g CaCO₃；0.17271584 g CO₂；分别对甲、乙结果作独立逆向方程检验，再检验“甲+Δ=乙”是否成立。机器公式复核不代表化学专家审定。"
+  ],
+  "numeric_answers": [
+    4.83448,
+    2.1257414806673993,
+    5.22728,
+    2.2984573164152264,
+    0.39280000000000026,
+    0.17271583574782712
+  ],
+  "units": [
+    "g CaCO₃",
+    "g CO₂",
+    "g CaCO₃",
+    "g CO₂",
+    "g CaCO₃",
+    "g CO₂"
+  ],
+  "source_model": "dual",
+  "source_parameter_indices": [
+    31,
+    36
+  ],
+  "source_inverse_residuals": [
+    [
+      0,
+      1.837174669664835e-16
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "model_output_count": 2,
+  "offset": 5,
+  "parameter_case": 32,
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-contrast-10080.mjs",
+    "original_model_file": "scripts/import-original-dual-3072.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_paired_condition_comparison",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently composed source-bound two-scenario question; no external exam text."
+  }
+}
