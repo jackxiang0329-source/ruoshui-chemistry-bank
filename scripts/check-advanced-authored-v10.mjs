@@ -9,6 +9,72 @@ const R=8.314462618;
 const F=96485.33212;
 const T=280,J=2400,q=Math.exp(-J/(R*T)),Z=1+3*q,p=3*q/Z;
 const w={
+
+ "UC-ADV10-I105":()=>{
+  const K=1e-12,p1=.04,p2=.16,va=(K/(4*Math.sqrt(p1)))**(1/3),vb=(K/(4*Math.sqrt(p2)))**(1/3);
+  return [va,2*va,vb,vb/va,-1/6];
+ },
+ "UC-ADV10-I106":()=>{
+  const mu=.22,e=8.5,ry=13.605693,bohr=.0529177,t=300;
+  const binding=ry/(e*e/mu),radius=bohr/(mu/e);
+  return [binding,radius,binding/(R*t/96485.33212),binding*96485.33212/R,2*radius];
+ },
+ "UC-ADV10-I107":()=>{
+  const surface=.25,g=1.8e8,Vunit=4e-29,T=320,Kb=1.380649e-23;
+  const rr=2*surface/g,energy=16*Math.PI*surface**3/(3*g*g),n=4/3*Math.PI*rr**3/Vunit;
+  return [rr/1e-9,energy,n,energy/(Kb*T),g*Vunit];
+ },
+ "UC-ADV10-A105":()=>{
+  const c1=100,c2=400,t1=10.5,t2=20.5,tx=15.5;
+  const a=(t2-t1)/(Math.sqrt(c2)-Math.sqrt(c1)),t0=t1-a*Math.sqrt(c1);
+  const m=((tx-t0)/a)**2,deriv=2*(tx-t0)/(a*a);
+  return [a,t0,m,deriv*.05,t0+a*Math.sqrt(900)];
+ },
+ "UC-ADV10-A106":()=>{
+  const r1=30,r2=60,w1=.5,w2=.5,numberRatio=(w1/w2)*(r2/r1)**6;
+  return [numberRatio,numberRatio/(numberRatio+1),1/(numberRatio+1),1/(w1/r1+w2/r2),w1*r1+w2*r2];
+ },
+ "UC-ADV10-A107":()=>{
+  const d=1,l=2,theta=Math.PI/3;
+  const normal=Math.exp(-d/l),tilted=Math.exp(-d/(l*Math.cos(theta)));
+  return [normal,tilted,1-normal,1-tilted,-l*Math.log(normal),-l*Math.cos(theta)*Math.log(tilted)];
+ },
+ "UC-ADV10-O102":()=>{
+  const x1=.01,x2=.03,y1=.02,y2=.04,Ki=x1*x2*(y2-y1)/(y1*x2-y2*x1);
+  const kMax=y1*(Ki+x1)/x1,condition=.02,kobs=kMax*condition/(Ki+condition);
+  return [Ki,kMax,kobs,Math.exp(-10*kobs),Math.log(2)/kobs];
+ },
+ "UC-ADV10-O103":()=>{
+  const r12=2,I13=.125,I23=.5;
+  const r13=r12/(I13**(1/6)),r23=r12/(I23**(1/6));
+  const cosine=(r12*r12+r13*r13-r23*r23)/(2*r12*r13),angle=Math.acos(cosine);
+  return [r13,r23,angle*180/Math.PI,(r12*r13/2)*Math.sin(angle),I13];
+ },
+ "UC-ADV10-O104":()=>{
+  const k=[.2,.05,.1],residence=k.map(v=>1/v),cycle=residence.reduce((a,b)=>a+b,0);
+  const weights=residence.map(x=>x/cycle),TOF=1/cycle;
+  return [...weights,TOF,.002*TOF,cycle];
+ },
+ "UC-ADV10-P102":()=>{
+  const R=8.314462618,T=310,dC=100,sigma=.85,dP=3e5,Lp=2e-12;
+  const osmotic=R*T*dC,waterDriving=dP-sigma*osmotic;
+  const flux=Lp*waterDriving,wrong=Lp*(dP-osmotic);
+  return [osmotic,waterDriving,flux,sigma*osmotic,wrong,flux-wrong];
+ },
+ "UC-ADV10-P103":()=>{
+  const alpha=.0002,Tc=300,Th=310,I=.5,R=2,K=.01;
+  const Pi=alpha*Tc,Pel=Pi*I,Joule=.5*I*I*R,heat=K*(Th-Tc);
+  return [Pi,Pel,Joule,heat,Pel-Joule-heat,alpha*(Th-Tc)];
+ },
+ "UC-ADV10-P104":()=>{
+  const x=[.2,.3,.5],D12=1e-5,D13=2e-5,D23=1.5e-5,c=40;
+  const A=x[1]/D12+(x[2]+x[0])/D13,B=x[0]*(1/D13-1/D12);
+  const C=x[1]*(1/D23-1/D12),D=x[0]/D12+(x[2]+x[1])/D23;
+  const rhs1=10*c,rhs2=-4*c,det=A*D-B*C;
+  const n1=(D*rhs1-B*rhs2)/det,n2=(A*rhs2-C*rhs1)/det;
+  return [n1,n2,-n1-n2,det,A,B,C,D];
+ },
+
  "UC-ADV10-I101":()=>[p,1-p,4*q/Z,J*p,J**2/(R*T*T)*p*(1-p)],
  "UC-ADV10-A101":()=>{
   const gamma=2.67522e8,g=.25,delta=.0025,Delt=.045,D=6e-10;
