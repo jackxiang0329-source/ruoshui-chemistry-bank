@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第9辑 (16题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第9辑 (50题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -354,6 +354,688 @@
 答案1 = 0.25；答案2 = 0.75；答案3 = 0.00045；答案4 = 0.25\par
 \noindent\textbf{模型前提：}
 题目采用理想化假想物种，忽略未指明相互作用；尚待人工科学性及模型重复审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I92 · 平方平面Pt(II)配位重排的两条竞争路径}
+\noindent\textbf{题目}\par
+假想平方平面Pt(II)配合物A在外部过量配体L中分别经两条不可逆并行伪一级反应生成cis与trans产物，速率常数kcis=0.120min\textasciicircum{}-1、ktrans=0.0300min\textasciicircum{}-1，初始A=1.000mmol。求7min未反应A、两异构产物mol数、产物cis比例和瞬时cis生成速率，说明仅靠最终异构体比例并不能证明微观trans effect的机理。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两个路径共耗底物，故总一级消耗常数k=0.150min\textasciicircum{}-1。
+\item 7min残余A=A0exp(−kt)=0.3499377491mmol。
+\item 累计cis产物=A0(kcis/k)(1−exp(−kt))=0.5200498007mmol。
+\item trans产物=0.1300124502mmol，总产物=1−A。
+\item cis选择性C/(C+D)=kcis/k=0.8。
+\item 瞬时cis生成速率kcis A(7)=0.04199252989mmol/min，须区别累计产率与瞬时通量。
+\item 独立复核：用题设的质量、电荷、波数或者位点比值重算，归一化残差为0.00e+0、-1.11e-16、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.349937749；答案2 = 0.520049801；答案3 = 0.13001245；答案4 = 0.8；答案5 = 0.0419925299\par
+\noindent\textbf{模型前提：}
+所给定理想化学模型用于练习；材料适用性、跨辑原创性与专家核定尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I93 · 穆斯堡尔双位点谱的无反冲分数与真实价态占比}
+\noindent\textbf{题目}\par
+某假想混合价矿物的穆斯堡尔谱Fe(III)、Fe(II)两个峰簇未归一化积分面积分别0.5100与0.1920，对应无反冲因子f3=0.8500、f2=0.4800，薄层线性吸收近似成立。求两铁环境真实原子比例、平均铁价、未经无反冲校正的表观Fe(III)比例，并解释峰面积与原子数不成比例的原因。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 薄层近似谱面积Ai与该环境铁原子数Ni及无反冲分数fi之积成正比。
+\item 校正权重w3=0.510/0.850=0.6。
+\item 校正权重w2=0.192/0.480=0.4。
+\item 真实Fe(III)比例x=w3/(w3+w2)=0.6，Fe(II)比例=0.4。
+\item 平均Fe价=3x+2(1−x)=2.6。
+\item 若直接按谱面积归一，则错误Fe(III)比例=0.7264957265，偏差来自两环境不同无反冲因子。
+\item 独立复核：用题设的质量、电荷、波数或者位点比值重算，归一化残差为0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.6；答案2 = 0.4；答案3 = 2.6；答案4 = 0.726495726\par
+\noindent\textbf{模型前提：}
+所给定理想化学模型用于练习；材料适用性、跨辑原创性与专家核定尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I94 · Raman反Stokes与Stokes声子热布居温度计}
+\noindent\textbf{题目}\par
+假想无机晶格Raman峰波数560.0cm\textasciicircum{}-1，在300K下模型Ianti/IStokes=exp(−hcνtilde/kBT)，忽略入射与散射频率四次方修正。h=6.62607015×10\textasciicircum{}-34J·s、c=2.99792458×10\textasciicircum{}8m/s、kB=1.380649×10\textasciicircum{}-23J/K。求声子能量、能量与kBT比、Bose平均声子数及峰强比，并给出由实验峰强比反算温度的公式。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 把560cm\textasciicircum{}-1变成56000m\textasciicircum{}-1，光学振动频率ν=c×56000=16788377650000Hz。
+\item 能量E=hν=1.11240968e-20J。
+\item 无量纲E/(kBT)=2.685716838。
+\item Bose平均占据n=1/(exp(x)−1)=0.07315977896。
+\item 反Stokes与Stokes强度比r=n/(n+1)=exp(−x)=0.06817230798。
+\item 反演温度T=E/[kB ln(1/r)]；真实Raman测温还需校正两谱线响应及频率因子。
+\item 独立复核：用题设的质量、电荷、波数或者位点比值重算，归一化残差为1.39e-17、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1.11240968e-20；答案2 = 2.68571684；答案3 = 0.073159779；答案4 = 0.068172308\par
+\noindent\textbf{模型前提：}
+所给定理想化学模型用于练习；材料适用性、跨辑原创性与专家核定尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I95 · 钙钛矿A/B离子半径与双重几何容差区间}
+\noindent\textbf{题目}\par
+假想ABO3钙钛矿三种离子半径rA=1.400Å、rB=0.620Å、rO=1.350Å。定义Goldschmidt容差因子t=(rA+rO)/(√2(rB+rO))、八面体比μ=rB/rO。求t、μ、t−1并依据题给经验区间0.80<t<1.05且0.414<μ<0.732判断是否满足几何条件，解释几何稳定区间只是经验，不代表必然热力学稳定。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item A–O半径和rA+rO=2.75Å。
+\item B–O半径和rB+rO=1.97Å。
+\item 容差因子t=0.987077994。
+\item 八面体半径比μ=0.4592592593。
+\item 与理想t=1的偏差t−1=-0.01292200596，逐一检查题定两项几何区间。
+\item 真实相稳定还依赖氧价态、晶格自由能和温压条件，不能由简单几何因子作存在性定理。
+\item 独立复核：用题设的质量、电荷、波数或者位点比值重算，归一化残差为0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.987077994；答案2 = 0.459259259；答案3 = -0.012922006\par
+\noindent\textbf{模型前提：}
+所给定理想化学模型用于练习；材料适用性、跨辑原创性与专家核定尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I96 · 多核羟桥配离子的核电荷及成桥释放质子当量}
+\noindent\textbf{题目}\par
+假想配离子[M2(μ-OH)3L2]中金属均为+III，三根桥羟基各−I，两个L配体各−I，且按题设每形成一根羟桥释放一个H+。现有配合物0.01000mol、需要用50.00mL强碱全部中和形成桥时释放的质子。求裸配离子电荷、每mol配离子释放H+当量、所释放H+物质的量及强碱所需浓度，判断把裸配离子写成电中性是否漏反离子。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两金属的总电荷2×(+3)=+6。
+\item 三羟桥总电荷−3、两个L总电荷−2，所以配离子电荷+1。
+\item 每mol配离子形成三根羟桥，释放质子3mol H+。
+\item 0.01000mol配离子形成时释放nH=3×0.01000=0.03mol。
+\item 以0.05000L强碱中和，cOH=nH/V=0.6M。
+\item 若把此裸配离子标作电中性，必缺少一个一价反离子或额外负电配体。
+\item 独立复核：用题设的质量、电荷、波数或者位点比值重算，归一化残差为0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1；答案2 = 3；答案3 = 0.03；答案4 = 0.6\par
+\noindent\textbf{模型前提：}
+所给定理想化学模型用于练习；材料适用性、跨辑原创性与专家核定尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I97 · 双钙钛矿B/B'长程有序衍射强度的平方根反演}
+\noindent\textbf{题目}\par
+假想A2BB'O6双钙钛矿的B/B'长程有序参数S∈[0,1]，归一化超结构XRD峰强度按Isuper=Iref S²变化；参照Iref=0.04000、实测I=0.01960，吸收和热因子已校正。若各亚晶格反占位概率x=(1−S)/2，求有序参数、反占位率、1000个B位点中的平均错占个数和误用线性强度比估计S的误差。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 结构因子振幅与有序参数S成正比，峰强度为振幅平方。
+\item 因此S=√(I/Iref)=0.7。
+\item 反占位概率x=(1−S)/2=0.15。
+\item 1000个位点的平均错占B个数1000x=150。
+\item 若错用Slinear=I/Iref=0.49，则S低估量为0.21。
+\item 真实有序参数仍需排除峰重叠、晶粒择优取向和各向异性热振动。
+\item 逆算题设谱学、动力学或物料条件的残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.7；答案2 = 0.15；答案3 = 150；答案4 = 0.21\par
+\noindent\textbf{模型前提：}
+仅题设理想化模型成立，尚未经专家科学审稿或模型原创性核验。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I98 · 快平衡配位物的同位素标签交换与微观速率区分}
+\noindent\textbf{题目}\par
+假想含同位素标签的无机络合物可快速互变X⇌XL，给定配位平衡XL/X=0.7000且自由配体由外库固定；X与XL分别以kX=0.220h\textasciicircum{}-1和kXL=0.05000h\textasciicircum{}-1不可逆丢失标签，失标签物不计入信号。初始标签量1mol。求有效一级衰减常数、6h剩余标签mol、自由态丢失标签通量贡献及总丢失量，解释为何只测总衰减不能唯一反演两个微观速率。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 快平衡时自由态份额pX=1/(1+0.7)=0.5882352941。
+\item 结合态份额pXL=0.7/(1+0.7)=0.4117647059。
+\item 观察有效一级常数kobs=pXkX+pXLkXL=0.15h\textasciicircum{}-1。
+\item 6h剩余标签L=e\textasciicircum{}(−kobs t)=0.4065696597mol。
+\item 自由态贡献份额pXkX/kobs=0.862745098，总标签损失1−L=0.5934303403mol。
+\item 若交换并非远快于标签丢失，需解多态耦合微分方程，单一加权常数不成立。
+\item 逆算题设谱学、动力学或物料条件的残差：1.04e-17、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.15；答案2 = 0.40656966；答案3 = 0.862745098；答案4 = 0.59343034\par
+\noindent\textbf{模型前提：}
+仅题设理想化模型成立，尚未经专家科学审稿或模型原创性核验。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I99 · 多晶面无机催化剂的位点分布与TOF贡献差异}
+\noindent\textbf{题目}\par
+假想两类催化表面(100)和(111)的总可及位点比例分别80.00\%和20.00\%，每位点周转频率分别2.500s\textasciicircum{}-1和0.5000s\textasciicircum{}-1，整体位点数量0.01000mol，稳态下没有交叉转化。求整体平均TOF、总产品生成mol/s、(100)晶面产率分数及其对几何位点占比的富集倍数，并说明位点多不必等于产物贡献按同一比例。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两类可及位点分数之和为1，均按相同活性单位计。
+\item 每位点平均TOF=θ100 k100+θ111 k111=2.1s\textasciicircum{}-1。
+\item 整体产品生成速率r=ntotal TOF=0.021mol/s。
+\item (100)对总速率贡献分数f100=(θ100k100)/TOF=0.9523809524。
+\item 相对于其位点占比0.8的反应贡献富集倍数f100/θ100=1.19047619。
+\item 若表面活性位点会相互转化，简单静态加权失效，应增加位点转移动力学。
+\item 逆算题设谱学、动力学或物料条件的残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 2.1；答案2 = 0.021；答案3 = 0.952380952；答案4 = 1.19047619\par
+\noindent\textbf{模型前提：}
+仅题设理想化模型成立，尚未经专家科学审稿或模型原创性核验。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I100 · M2L3无机自组装体的双元素限量与转换率计量}
+\noindent\textbf{题目}\par
+假想二金属三配体笼由2M+3L→M2L3形成，初始金属M总量0.08000mol，单齿配体L总量0.1200mol，按金属计的转化率55.00\%，总体积保持0.02000L，无其它物种。求理论最多可生成笼mol、实际生成笼mol、剩余M/L的mol以及笼浓度，解释不可把单一配体的“55\%转化”错误等同于笼的初始金属数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 按组装计量每个笼消耗2M、3L，理论最大nmax=min(0.080/2,0.120/3)=0.04mol。
+\item 金属转化55\%，意味着实际笼形成n=0.55nmax=0.022mol。
+\item 消耗M为2n=0.044mol，剩余M=0.036mol。
+\item 消耗L为3n=0.066mol，剩余L=0.054mol。
+\item 笼浓度为n/0.02000=1.1mol/L，金属及配体两个元素守恒必须同时核对。
+\item 如果存在单金属中间体或寡聚副产物，必须建立更完整的物料平衡与配位平衡。
+\item 逆算题设谱学、动力学或物料条件的残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.04；答案2 = 0.022；答案3 = 0.036；答案4 = 0.054；答案5 = 1.1\par
+\noindent\textbf{模型前提：}
+仅题设理想化模型成立，尚未经专家科学审稿或模型原创性核验。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{分析化学}
+\addcontentsline{toc}{subsection}{第9辑 / 分析化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A76 · 毛细管电泳EOF与目标离子有效电泳迁移率的分离}
+\noindent\textbf{题目}\par
+一支有效总长60.00cm、检测器距进样口50.00cm的毛细管电泳管，在20.00kV电压下中性EOF标记峰迁移时间4.000min，阳离子目标峰3.000min。毛细管全长决定电场E=V/L，检测距离决定迁移速度v=Ldet/t。求电渗迁移率μEOF、目标总迁移率μtot、离子相对电泳迁移率μep及若将有效长度误当总长所造成的迁移率相对偏差。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 电场E=20000/0.6000=33333.33333V/m。
+\item 由v=Ldet/t，迁移率μ=LdetLtot/(V t)。
+\item 中性标记仅随EOF移动，μEOF=6.25e-8m²/(V s)。
+\item 阳离子总迁移率μtot=8.333333333e-8m²/(V s)。
+\item 分离电泳迁移率μep=μtot−μEOF=2.083333333e-8m²/(V s)。
+\item 若错设Ldet=Ltot，会把所有迁移率乘Ltot/Ldet=1.2，高估20\%。
+\item 独立将数据代回迁移、保留、能量或响应公式，检查量纲与可逆解的数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 6.25e-08；答案2 = 8.33333333e-08；答案3 = 2.08333333e-08；答案4 = 1.2\par
+\noindent\textbf{模型前提：}
+题设校准和理想分析模型有效，尚未通过真实仪器实验、跨辑模型原创或专家质量审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A77 · 程序升温以外等温GC保留指数的死时间修正}
+\noindent\textbf{题目}\par
+等温气相色谱中n-癸烷(C10)保留时间11.00min、n-十一烷(C11)17.00min、未知分析物14.00min，未保留标记死时间1.000min。等温Kováts保留指数I=1000+100ln(tR'X/tR'C10)/ln(tR'C11/tR'C10)，其中tR'=tR−tM。求未知分析物指数、三个校正保留时间、未校正用原始tR所得指数与误差，并指出此关系在温度程序GC需要另行定义保留指数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 保留指数需要用校正保留时间tR'=tR−tM。
+\item C10、C11的tR'分别为10、16min，分析物为13min。
+\item 代入等温指数I=1055.821753。
+\item 若误直接代原始时间，得到Iwrong=1055.399046。
+\item 二者差为-0.4227072813，死时间不是可无视的常量平移。
+\item 若未知物保留不在两个烷烃之间，应外推并警惕固定相选择性差异。
+\item 独立将数据代回迁移、保留、能量或响应公式，检查量纲与可逆解的数值残差：1.11e-16、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1055.82175；答案2 = 10；答案3 = 16；答案4 = 13；答案5 = 1055.39905\par
+\noindent\textbf{模型前提：}
+题设校准和理想分析模型有效，尚未通过真实仪器实验、跨辑模型原创或专家质量审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A78 · LC两组分选择性与柱效对分离度的非线性贡献}
+\noindent\textbf{题目}\par
+等度液相色谱中两个近邻峰保留因子k1=4.000、k2=5.000，理论塔板数N=10000，死时间t0=1.200min。采用近似分离度公式Rs=(√N/4)[(α−1)/α][k2/(1+k2)]，α=k2/k1。求两峰保留时间、选择性α、实际Rs和若要求Rs≥1.500的最小理论塔板数；说明提高k2并不能线性提高Rs。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item tR,i=t0(1+ki)，得到tR1=6min、tR2=7.2min。
+\item 选择性α=k2/k1=1.25。
+\item 将α与k2带入分离度公式得Rs=4.166666667。
+\item 令目标Rs=1.500，反解Nmin=[4Rs/coef]²=1296。
+\item 塔板数必须为正，严格达到阈值时上取整数=1296。
+\item 保留项k2/(1+k2)在高k时趋于1，所以更高保留不保证同比例提高分离度。
+\item 独立将数据代回迁移、保留、能量或响应公式，检查量纲与可逆解的数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 6；答案2 = 7.2；答案3 = 1.25；答案4 = 4.16666667；答案5 = 1296\par
+\noindent\textbf{模型前提：}
+题设校准和理想分析模型有效，尚未通过真实仪器实验、跨辑模型原创或专家质量审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A79 · 离子迁移谱Mason–Schamp迁移率与碰撞截面反演}
+\noindent\textbf{题目}\par
+离子迁移谱IMS中假想单价离子质量200amu、载气N2质量28amu，T=300.0K、压强101325Pa，定态离子-中性碰撞截面Ω=2.000×10\textasciicircum{}-18m²。假定低场Mason–Schamp公式K=(3q/(16NΩ))sqrt[2π/(μkBT)]，其中N=P/(kBT)、μ为约化质量，1amu=1.66053906660×10\textasciicircum{}-27kg。求约化质量、气体分子数密度、迁移率及电场1000V/m下离子漂移速度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 约化质量μ=mion mgas/(mion+mgas)=4.078517006e-26kg。
+\item 理想气体分子数密度N=P/(kBT)=2.446313292e+25m\textasciicircum{}-3。
+\item 代入Mason–Schamp式得迁移率K=0.0001184148371m²/(V s)。
+\item 电场1000V/m产生漂移速度v=KE=0.1184148371m/s。
+\item 要求低场离子漂移及有效截面独立于场强，实际高场IMS不可直接套用。
+\item 注意N是分子数密度而非mol/m³，否则量纲会错误。
+\item 独立将数据代回迁移、保留、能量或响应公式，检查量纲与可逆解的数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 4.07851701e-26；答案2 = 2.44631329e+25；答案3 = 0.000118414837；答案4 = 0.118414837\par
+\noindent\textbf{模型前提：}
+题设校准和理想分析模型有效，尚未通过真实仪器实验、跨辑模型原创或专家质量审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A80 · ICP-MS双同位素的质量歧视指数校准与未知样校正}
+\noindent\textbf{题目}\par
+ICP-MS用标准物质的同位素比Rtrue=I62/I60=0.4000校准，仪器测得Rmeas=0.4030；设质量歧视指数律Rmeas=Rtrue(62/60)\textasciicircum{}β。另一未知样的同位素比实测0.5200，且质量歧视指数相同。求β、未知样校正后真实同位素比、质量数62同位素分数与未校正的表观分数，检验误差方向。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 标准样质量歧视因子Fmass=0.4030/0.4000=1.0075。
+\item 由Rmeas/Rtrue=(62/60)\textasciicircum{}β取对数求β=0.2278760358。
+\item 未知样真实比Rsample=0.5200/Fmass=0.5161290323。
+\item 只有两种同位素时62的分数x62=Rsample/(1+Rsample)=0.3404255319。
+\item 不校正的表观分数0.52/1.52=0.3421052632，高估真实值。
+\item 如果仪器质量歧视非固定指数或样品含同量异位素干扰，需要附加校准信息。
+\item 独立将数据代回迁移、保留、能量或响应公式，检查量纲与可逆解的数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.227876036；答案2 = 0.516129032；答案3 = 0.340425532；答案4 = 0.342105263\par
+\noindent\textbf{模型前提：}
+题设校准和理想分析模型有效，尚未通过真实仪器实验、跨辑模型原创或专家质量审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A81 · FTIR同位素位移与谐振近似振动零点能差}
+\noindent\textbf{题目}\par
+一假想CO键近似为同一谐力常数的双原子振子，12C16O基频2140cm\textasciicircum{}-1，同位素替换为13C16O后只改变约化质量。原子质量取整数amu（12、13、16），振动频率与约化质量负平方根成正比。求两种同位素约化质量、替代后的基频、两基频差及1mol CO的零点能变化kJ/mol；假设谐振且力常数保持不变。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 12C16O约化质量μ1=12×16/(12+16)=6.857142857amu。
+\item 13C16O约化质量μ2=13×16/(13+16)=7.172413793amu。
+\item 同力常数谐振给ν2=ν1sqrt(μ1/μ2)=2092.438506cm\textasciicircum{}-1。
+\item 频移ν1−ν2=47.56149407cm\textasciicircum{}-1；重同位素降低振动频率。
+\item 每分子零点能差1/2hc(ν1−ν2)，再乘阿伏伽德罗常数得差=0.2844809096kJ/mol。
+\item 真实振动存在非谐效应和电子结构的同位素微小改变，这里按题设忽略。
+\item 独立将数据代回迁移、保留、能量或响应公式，检查量纲与可逆解的数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 6.85714286；答案2 = 7.17241379；答案3 = 2092.43851；答案4 = 47.5614941；答案5 = 0.28448091\par
+\noindent\textbf{模型前提：}
+题设校准和理想分析模型有效，尚未通过真实仪器实验、跨辑模型原创或专家质量审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A82 · FRET寿命猝灭与分子间距第六次方反演}
+\noindent\textbf{题目}\par
+荧光标记供体在无受体时寿命τD=4.000ns，受体共存时寿命τDA=1.500ns。假设无其它淬灭、Förster半径R0=5.000nm、距离分布可视为单一固定距离。FRET效率E=1−τDA/τD=1/[1+(r/R0)\textasciicircum{}6]。求转移效率、供受体距离、相对强度损失和如果漏掉六次方而用线性距离假设得到的错误距离。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由寿命比τDA/τD=1.5/4=0.375得FRET效率E=1−0.375=0.625。
+\item Förster关系变形为(r/R0)\textasciicircum{}6=(1/E)−1。
+\item 所以r=R0[(1/E)−1]\textasciicircum{}(1/6)=4.591929511nm。
+\item 供体寿命与强度在辐射速率不变时比值为τDA/τD=0.375。
+\item 错误用线性r\_wrong=R0[(1/E)−1]=3nm，与六次方非线性关系差异明显。
+\item 若供受体距离有分布或存在静态淬灭，简单单距离寿命反演会产生偏差。
+\item 独立将数据代回迁移、保留、能量或响应公式，检查量纲与可逆解的数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.625；答案2 = 4.59192951；答案3 = 0.375；答案4 = 3\par
+\noindent\textbf{模型前提：}
+题设校准和理想分析模型有效，尚未通过真实仪器实验、跨辑模型原创或专家质量审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A83 · ESI-MS多电荷态包络与同位素峰距的中性质量反演}
+\noindent\textbf{题目}\par
+电喷雾质谱给某蛋白质片段两个相邻电荷态峰簇，质量数与电荷比观测分别为m/z约601.007276和451.007276，两个峰簇内同位素峰间距分别约0.3333和0.2500Th。假设离子形式为[M+zH]\textasciicircum{}\{z+\}，质子质量1.007276Da。求两个电荷数z、蛋白中性质量M和两峰m/z差，说明不能直接把m/z读数作为中性分子量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 同位素峰间距约为1/z Th，因此0.3333与0.2500分别对应z1=3、z2=4。
+\item 带z个质子时m/z=(M+zH)/z=M/z+H。
+\item 两峰差Δ=(M/3+H)−(M/4+H)=M/12=150Th。
+\item 反解中性质量M=Δ/(1/3−1/4)=1800Da。
+\item 将M=1800Da及H=1.007276Da代回两峰m/z，分别得601.007276与451.007276。
+\item 若峰来自钠加合、溶剂加合或不同碎片，仅凭这组峰无法按相同H加成式恢复M。
+\item 独立将数据代回迁移、保留、能量或响应公式，检查量纲与可逆解的数值残差：0.00e+0、0.00e+0、1.14e-12。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 3；答案2 = 4；答案3 = 1800；答案4 = 150；答案5 = 601.007276；答案6 = 451.007276\par
+\noindent\textbf{模型前提：}
+题设校准和理想分析模型有效，尚未通过真实仪器实验、跨辑模型原创或专家质量审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A84 · 计时安培Cottrell扩散电流与恒定背景同时分离}
+\noindent\textbf{题目}\par
+平面电极有效面积0.1000cm²（即1.000×10\textasciicircum{}-5m²），一电子可逆反应物初始浓度2.000mmol/L，扩散系数D=1.000×10\textasciicircum{}-9m²/s，F=96485.33212C/mol。假设计时安培响应i(t)=nFAC√[D/(πt)]+ib，其中ib是未知恒定背景。实验在t=1.000s和4.000s的电流为由真实背景ib=80.00μA生成的数据。求两个实测电流、由两点逆反演的背景和Cottrell系数，以及忽略背景导致的1秒浓度高估倍数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 注意浓度2.000mmol/L=2.000mol/m³、面积0.1000cm²=1.000×10\textasciicircum{}-5m²。
+\item 定义Cottrell系数a=nFAC√(D/π)=0.0000344283616A·s\textasciicircum{}1/2。
+\item t=1s电流i1=a+ib=0.000114428362A，t=4s电流i4=a/2+ib=0.0000972141808A。
+\item 两次读数相减给a=2(i1−i4)=0.0000344283616，背景ib=2i4−i1=0.00008A。
+\item 若不扣背景，1秒按i1=a假设估浓度会高估i1/a=3.32366562倍。
+\item Cottrell仅适用于半无限扩散控制、理想阶跃和早期双电层可忽略或独立估计的区间。
+\item 独立用校准式、通量方程或概率守恒重算全部关键结论，归一化残差：-1.36e-20、0.00e+0、-2.03e-20。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.000114428362；答案2 = 9.72141808e-05；答案3 = 8e-05；答案4 = 3.44283616e-05；答案5 = 3.32366562\par
+\noindent\textbf{模型前提：}
+理想分析模型与题给标准态成立；不代表完成实际计量溯源、版权或专家科学审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A85 · Randles–Ševčík可逆电极峰电流的扫描速率平方根核验}
+\noindent\textbf{题目}\par
+25℃理想可逆一电子电极反应，用Randles–Ševčík公式ip(A)=2.69×10\textasciicircum{}5 n\textasciicircum{}(3/2) Aelec(cm²) D\textasciicircum{}(1/2)(cm/s)\textasciicircum{}1/2 C(mol/cm³) v\textasciicircum{}(1/2)(V/s)\textasciicircum{}1/2。给定n=1、电极面积0.0700cm²、D=1.000×10\textasciicircum{}-5cm²/s、C=1.000mmol/L、初扫描速率0.1000V/s。求峰电流、扫描速率升至0.4000V/s的峰电流、两者比值与若错误将mM直接当mol/cm³导致的倍数误差。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 先换算浓度1.000mmol/L=1.000×10\textasciicircum{}-6mol/cm³。
+\item 把n=1、A=.07、D=10\textasciicircum{}-5、C=10\textasciicircum{}-6及v=.1代入得ip1=0.00001883A。
+\item v2=.4000V/s，电流ip2=coef√v2=0.00003766A。
+\item 两次电流比ip2/ip1=√(v2/v1)=2。
+\item 若把1mM错看作1mol/cm³，将峰电流放大10\textasciicircum{}6倍，属于严重单位错误。
+\item 此标准式依赖25℃可逆扩散控制，不可套到强吸附或严重不可逆电子转移动力学。
+\item 独立用校准式、通量方程或概率守恒重算全部关键结论，归一化残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1.883e-05；答案2 = 3.766e-05；答案3 = 2；答案4 = 1000000\par
+\noindent\textbf{模型前提：}
+理想分析模型与题给标准态成立；不代表完成实际计量溯源、版权或专家科学审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A86 · 荧光相关光谱FCS停留时间与Stokes–Einstein尺寸反演}
+\noindent\textbf{题目}\par
+假想球形胶体探针在水中进行3D荧光相关谱测量，横向激光束腰w=0.3000μm，扩散相关时间τD=5.000ms。题设横向FCS关系τD=w²/(4D)；水黏度η=1.000×10\textasciicircum{}-3Pa·s，T=298.15K，Stokes–Einstein D=kBT/(6πηrH)。求扩散系数、流体动力学半径与直径，并估计如果束腰被高估10\%，反演半径会如何偏差。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 束腰转换w=3.000×10\textasciicircum{}-7m，停留时间τ=5×10\textasciicircum{}-3s。
+\item FCS横向扩散D=w²/(4τ)=4.5e-12m²/s。
+\item Stokes–Einstein反演半径rH=kBT/(6πηD)=48.5293483nm。
+\item 对应直径2rH=97.0586967nm。
+\item 如果误把束腰增为1.1w，D增为1.21D，推算半径降为原值1/1.21=0.826446281。
+\item 真实分子非球形与水合壳导致水动力半径不同于硬球几何半径。
+\item 独立用校准式、通量方程或概率守恒重算全部关键结论，归一化残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 4.5e-12；答案2 = 48.5293483；答案3 = 97.0586967；答案4 = 0.826446281\par
+\noindent\textbf{模型前提：}
+理想分析模型与题给标准态成立；不代表完成实际计量溯源、版权或专家科学审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A87 · ATR-IR渐逝场穿透深度与入射角定量灵敏度}
+\noindent\textbf{题目}\par
+ATR红外测量用晶体折射率n1=2.400、样品n2=1.400，真空波长λ=6.000μm。题设渐逝场有效穿透深度dp=λ/[2πn1√(sin²θ−(n2/n1)²)]，入射角θ相对于表面法线。分别在45.00°与60.00°测量同一样品，假定弱吸收信号与dp成正比。求两角穿透深度、60°信号相对45°比及发生全反射所需最低入射角，解释靠近临界角时灵敏度增强。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 临界角满足sinθc=n2/n1，故θc=asin(1.4/2.4)=35.6853347°。
+\item 45°与60°均超过临界角，公式有实数根。
+\item 45°穿透深度dp45=0.995582991μm。
+\item 60°穿透深度dp60=0.621606262μm。
+\item 假设信号线性于穿透深度，S60/S45=dp60/dp45=0.624364083。
+\item 越靠近临界角，根号分母趋小，穿透加深；实际强吸收、色散与有限样品厚度会破坏简单正比。
+\item 独立用校准式、通量方程或概率守恒重算全部关键结论，归一化残差：2.22e-16、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.995582991；答案2 = 0.621606262；答案3 = 0.624364083；答案4 = 35.6853347\par
+\noindent\textbf{模型前提：}
+理想分析模型与题给标准态成立；不代表完成实际计量溯源、版权或专家科学审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A88 · 尺寸排阻色谱SEC的对数摩尔质量校准与插值边界}
+\noindent\textbf{题目}\par
+尺寸排阻色谱以标准聚合物标定log10(M/Da)=a−bVe（Ve单位mL）。两标准分别在Ve1=12.00mL时M1=1.000×10\textasciicircum{}5Da、Ve2=18.00mL时M2=1.000×10\textasciicircum{}4Da。未知聚合物在Ve=15.00mL出峰。求校准截距a、斜率b、未知聚合物推算摩尔质量、若以质量对Ve直接线性插值的错误结果，并指出不同聚合物水动力体积不同导致校准不可普适。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将两标准取对数，(V1,logM1)=(12,5)、(V2,logM2)=(18,4)。
+\item 由两点式b=(5−4)/(18−12)=0.166666667mL\textasciicircum{}-1。
+\item 截距a=logM1+bV1=7。
+\item 未知logM=a−b×15=4.5，摩尔质量M=31622.7766Da。
+\item 若错误对M而不是logM做线性插值，15mL所得质量为55000Da。
+\item SEC真正按溶液水动力体积排阻；即便相同分子质量，不同支化和溶剂化也会改变保留。
+\item 独立用校准式、通量方程或概率守恒重算全部关键结论，归一化残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 7；答案2 = 0.166666667；答案3 = 31622.7766；答案4 = 55000\par
+\noindent\textbf{模型前提：}
+理想分析模型与题给标准态成立；不代表完成实际计量溯源、版权或专家科学审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A89 · 差示扫描量热DSC热流峰面积与升温速率的焓换算}
+\noindent\textbf{题目}\par
+差示扫描量热仪以恒定升温速率β=10.00K/min加热一份质量10.00g的样品。扣除基线后，一次相变的热功率P(T)（W）对温度T积分面积∫P(T)dT=100.0W·K，且无其他相变。求升温速率的SI值、相变吸热J、单位质量焓J/kg，以及错误直接把W·K面积当作J所缺少的因子。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 热流功率P=dQ/dt，恒温速β=dT/dt=10/60=0.166666667K/s。
+\item dQ=Pdt=(P/β)dT。
+\item 相变热Q=(∫P dT)/β=600J。
+\item 样品质量10g=0.010kg，比焓Δh=Q/m=60000J/kg。
+\item 若错把100W·K等同100J，漏掉1/β=6s/K的换算因子。
+\item 需要检查峰是否已经进行基线扣除与升温速率实际恒定；非恒速应直接按时间积分。
+\item 独立用校准式、通量方程或概率守恒重算全部关键结论，归一化残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.166666667；答案2 = 600；答案3 = 60000；答案4 = 6\par
+\noindent\textbf{模型前提：}
+理想分析模型与题给标准态成立；不代表完成实际计量溯源、版权或专家科学审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A90 · 光谱杂散光造成的高吸光非线性压缩与逆校正}
+\noindent\textbf{题目}\par
+某紫外可见分光仪真实样品吸光度Atrue=2.000，仪器有相对入射光强度1.000\%的杂散光s=0.01000。忽略其它漂移，观测透过率Tobs=(10\textasciicircum{}-Atrue+s)/(1+s)、观测吸光Aobs=−log10(Tobs)。求观测吸光度、低估量、由已知s逆反演真实吸光度，并说明高A区域的杂散光地板和为何不能简单把s直接从Aobs相减。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 真实透过率Ttrue=10\textasciicircum{}-2=0.01000。
+\item 实际透过率Tobs=(0.01000+0.01000)/(1.01000)=0.0198019802。
+\item 仪器输出Aobs=−log10(Tobs)=1.70329138，低于真实2.000。
+\item 吸光低估量Atrue−Aobs=0.296708622。
+\item 已知杂散光s可反解Ttrue=(1+s)Tobs−s，恢复Atrue=2。
+\item 若Tobs趋于s/(1+s)，仪器出现吸光上限地板；这是透过率通道的加性偏移，不是吸光度加性偏移。
+\item 独立用校准式、通量方程或概率守恒重算全部关键结论，归一化残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1.70329138；答案2 = 0.296708622；答案3 = 2；答案4 = 0.0198019802\par
+\noindent\textbf{模型前提：}
+理想分析模型与题给标准态成立；不代表完成实际计量溯源、版权或专家科学审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A91 · 放射性示踪活度的化学回收率与衰变双修正}
+\noindent\textbf{题目}\par
+假想放射性分析物的初始活度A0未知，半衰期t1/2=6.000h。取样后12.00h检测，化学处理对分析物共同回收率r=0.8000，测得回收后活度200.0Bq（两步骤相互独立）。求仅物理衰变剩余比例、总有效测量比例、样品初始活度、如果只补衰变不补回收的错误值，以及初始每秒衰变数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 放射衰变因子d=2\textasciicircum{}(−t/t1/2)=2\textasciicircum{}−2=0.25。
+\item 化学回收和核衰变共同作用，观测比例rd=0.2。
+\item 测得Aobs=200Bq，所以初始A0=Aobs/(rd)=1000Bq。
+\item 若只做核衰变补偿则得到Awrong=Aobs/d=800Bq，仍低估初始活度。
+\item 1Bq定义为每秒一次核衰变，因此初始衰变数率为1000s\textasciicircum{}-1。
+\item 如果化学回收率随同位素分馏或衰变子体迁移变化，乘法分离不成立。
+\item 独立用校准式、通量方程或概率守恒重算全部关键结论，归一化残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.25；答案2 = 0.2；答案3 = 1000；答案4 = 800\par
+\noindent\textbf{模型前提：}
+理想分析模型与题给标准态成立；不代表完成实际计量溯源、版权或专家科学审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A92 · Job连续变分法对二比一复合物的极大值与化学计量界限}
+\noindent\textbf{题目}\par
+假想A、B在固定体积、固定总分析浓度Ct=0.006000M下只形成单一A2B配合物，复合物生成非常强，且A、B的自由吸收已扣除，检测信号与[A2B]成正比。改变A的分析摩尔分数xA，证明Job曲线在xA=2/3达到最大，并给出此处A、B各浓度、复合物上界浓度及如果配位平衡常数有限峰形会如何变化。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 给定总浓度Ct，A分析浓度=xCt，B=(1−x)Ct。
+\item 形成每mol A2B消耗2mol A与1mol B，故复合物上界c=min(xCt/2,(1−x)Ct)。
+\item 最大值发生两项相等xCt/2=(1−x)Ct，求x*=2/3。
+\item 此时A浓度=0.004M、B=0.002M。
+\item 理想完全结合的复合物上界cmax=Ct/3=0.002M。
+\item 若形成常数有限，必须把自由A/B和A2B质量作用联立；曲线变圆滑而不再是分段直线。
+\item 独立用校准式、通量方程或概率守恒重算全部关键结论，归一化残差：-4.34e-19、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.666666667；答案2 = 0.004；答案3 = 0.002；答案4 = 0.002\par
+\noindent\textbf{模型前提：}
+理想分析模型与题给标准态成立；不代表完成实际计量溯源、版权或专家科学审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A93 · 含双氯同位素分子M、M+2与M+4的二项分布谱型}
+\noindent\textbf{题目}\par
+一个假想有机分析物分子每分子恰含两个相互独立的氯原子，天然37Cl原子分数p=0.2420、35Cl分数q=0.7580。忽略13C与其它同位素，37Cl相比35Cl使质谱质量约增加2Da。求分子离子三峰(M、M+2、M+4)的相对概率、相对M峰的比值，以及平均因氯同位素产生的额外质量Da，并讨论不能把M+2峰误解为只含一枚氯。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两个氯的重同位素个数K服从Binomial(n=2,p=.242)。
+\item M峰（零枚37Cl）概率P0=q²=0.574564。
+\item M+2峰（恰一枚37Cl）概率P1=2pq=0.366872。
+\item M+4峰（两枚37Cl）概率P2=p²=0.058564。
+\item 峰概率总和1，M+2相对M的强度比=0.6385224274。
+\item 重氯平均个数E[K]=2p，单枚加2Da，故平均质量偏移4p=0.968Da。
+\item 独立复核概率总和、数据响应或测量电路约束，数值残差：-1.11e-16、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.574564；答案2 = 0.366872；答案3 = 0.058564；答案4 = 0.638522427；答案5 = 0.968\par
+\noindent\textbf{模型前提：}
+题设校准、统计与仪器模型按给定条件成立；不代表获得实验计量认证或专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A94 · 空白噪声与仪器斜率的检出限、定量限及稀释决策}
+\noindent\textbf{题目}\par
+光谱定量检测的已校准线性斜率s=0.8000吸光度/mM，空白信号标准差σblank=0.006000吸光度，截距已扣。以LOD=3.3σ/s、LOQ=10σ/s定义方法限度。20倍稀释样的净吸光信号S=0.05000。求LOD、LOQ、稀释样及原样的信号逆算浓度，并判断该样本可检出、是否满足定量限；不能把低于LOQ的逆算值自动宣称可靠定量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item LOD=3.3σ/s=0.02475mM。
+\item LOQ=10σ/s=0.075mM。
+\item 稀释样信号逆算c=S/s=0.0625mM。
+\item 原样做20倍稀释，因此形式反推c0=20c=1.25mM。
+\item 因LOD<c<LOQ，按题设指标属于可检出而未满足定量限；原样形式浓度不能因此被宣称具有验证过的定量可靠性。
+\item 要得到达标定量浓度，需要减少稀释、改善噪声或采用不同校准范围，并检查不确定度。
+\item 独立复核概率总和、数据响应或测量电路约束，数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.02475；答案2 = 0.075；答案3 = 0.0625；答案4 = 1.25\par
+\noindent\textbf{模型前提：}
+题设校准、统计与仪器模型按给定条件成立；不代表获得实验计量认证或专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A95 · Randles阻抗半圆顶点与电荷转移电阻的独立读取}
+\noindent\textbf{题目}\par
+假想无扩散尾的单一Randles电路，由串联溶液电阻Rs=10.00Ω和并联Rct=200.0Ω、双电层电容Cdl=20.00μF构成。理想Nyquist图为单半圆。求高频/低频实轴截距、半圆顶点频率fmax=1/(2πRctCdl)、顶点复阻抗实部和虚部（约定−ImZ向上）、半圆直径，并说明真实Warburg尾将怎样破坏单半圆假设。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item ω→∞时电容趋短路，Zreal→Rs=10Ω。
+\item ω→0时电容开路，Zreal→Rs+Rct=210Ω。
+\item 顶点满足ω Rct Cdl=1，因此fmax=39.78873577Hz。
+\item 顶点实部Rs+Rct/2=110Ω。
+\item 顶点虚部ImZ=−Rct/2=-100Ω，Nyquist纵轴若绘制−ImZ则顶点高度为正100Ω。
+\item 半圆直径为Rct=200Ω，若出现扩散Warburg或多个时间常数则不再满足单一理想半圆。
+\item 独立复核概率总和、数据响应或测量电路约束，数值残差：-1.11e-16、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 10；答案2 = 210；答案3 = 39.7887358；答案4 = 110；答案5 = -100\par
+\noindent\textbf{模型前提：}
+题设校准、统计与仪器模型按给定条件成立；不代表获得实验计量认证或专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A96 · 手性旋光度、比旋光与两对映体质量分数反演}
+\noindent\textbf{题目}\par
+在选定波长温度下，纯R对映体比旋光[α]=+80.00°·dm\textasciicircum{}-1·(g/mL)\textasciicircum{}-1，纯S为−80.00。外消旋以外未知混合物总浓度0.2000g/mL、比色管光程1.000dm，实测旋光角+8.000°，忽略其它旋光杂质。求R优势对映体过量ee、R/S各自质量浓度、R/S质量分数以及若错误把观察旋光角直接除纯品比旋光而忽略光程/浓度产生的误判。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 混合旋光角αobs=[α]l(cR−cS)。
+\item 总质量浓度cR+cS=0.2000g/mL。
+\item ee=(cR−cS)/(cR+cS)=αobs/([α]lC)=0.5。
+\item R浓度cR=C(1+ee)/2=0.15g/mL。
+\item S浓度cS=C(1−ee)/2=0.05g/mL，R质量分数=0.75。
+\item 仅旋光测量无法证明无其它旋光杂质，条件和已知纯品比旋光是反演前提。
+\item 独立复核概率总和、数据响应或测量电路约束，数值残差：1.78e-15、0.00e+0、-1.11e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.5；答案2 = 0.15；答案3 = 0.05；答案4 = 0.75\par
+\noindent\textbf{模型前提：}
+题设校准、统计与仪器模型按给定条件成立；不代表获得实验计量认证或专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A97 · 荧光偏振Perrin方程与旋转相关时间推断半径}
+\noindent\textbf{题目}\par
+球形荧光探针的基本各向异性r0=0.4000，实测稳态各向异性r=0.2500，激发态寿命τ=4.000ns。题设Perrin式r=r0/(1+τ/θ)，并假设Stokes黏性旋转θ=ηV/(kBT)，水黏度η=1.000×10\textasciicircum{}-3Pa·s，T=298.15K。求旋转相关时间θ、旋转扩散常数Drot=1/(6θ)、等效球体体积与半径，说明非球形形状和标记局部转动会造成偏差。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由r0/r=1+τ/θ解得θ=τ/(r0/r−1)=6.666666667ns。
+\item 旋转扩散常数Drot=1/(6θ)=25000000s\textasciicircum{}-1。
+\item 在理想球形黏性模型中等效体积V=kBT θ/η=2.744269996e-26m³。
+\item 球形体积V=4πa³/3，半径a=[3V/(4π)]\textasciicircum{}(1/3)=1.871167832nm。
+\item 将θ逆代Perrin式恢复r=0.2500；若探针自由转动独立于载体，推得的半径可能不是分子整体半径。
+\item 需要同时测得寿命和各向异性，单靠稳态各向异性不能分离寿命和转动时间。
+\item 独立复核概率总和、数据响应或测量电路约束，数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 6.66666667；答案2 = 25000000；答案3 = 2.74427e-26；答案4 = 1.87116783\par
+\noindent\textbf{模型前提：}
+题设校准、统计与仪器模型按给定条件成立；不代表获得实验计量认证或专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A98 · 高分辨质谱质量准确度ppm与峰分辨率的区别}
+\noindent\textbf{题目}\par
+高分辨质谱某已知离子理论m/z=500.0000Da，实测峰中心500.0125Da，峰的FWHM=0.02500Da。另一个相邻峰与本峰中心相差0.03300Da，假设二者峰宽相等。求绝对质量偏差、ppm偏差、质量分辨率R=m/FWHM以及峰间距/FWHM之比，并说明准确度与分辨率是不同性能指标、仅FWHM不能保证基线分离。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 质量准确度偏差Δm=500.0125−500.0000=0.0125Da。
+\item ppm=(Δm/mtheory)×10\textasciicircum{}6=25ppm。
+\item 分辨率R=m/FWHM=20000。
+\item 两相邻峰中心间距与FWHM之比=1.32。
+\item R大不代表峰中心完全准确；质量偏差取决于校准而非半峰宽。
+\item 峰基线是否分离还与峰形、强度比及噪声有关，不能单靠中心间距大于FWHM保证。
+\item 独立复核概率总和、数据响应或测量电路约束，数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0125；答案2 = 25；答案3 = 20000；答案4 = 1.32\par
+\noindent\textbf{模型前提：}
+题设校准、统计与仪器模型按给定条件成立；不代表获得实验计量认证或专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A99 · Nikolskii–Eisenman离子选择电极的二价干扰校正}
+\noindent\textbf{题目}\par
+理想A+离子选择性电极同时受到B2+离子干扰，标准态活度均以1mol/L归一为无量纲，干扰系数KA,B=0.02000。Nikolskii–Eisenman式E=E0+(RT/F)ln(aA+KA,B aB\textasciicircum{}(1/2))，298.15K E0=0.2000V。给定aA=0.001000、aB=0.0004000。求有效等效活度、测得电势、干扰项占等效活度的分数，以及忽略B所预测的电势误差，说明为何二价干扰项要取平方根。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 在参考标准态下aA与aB均无量纲，干扰项K aB\textasciicircum{}(1/2)=0.0004。
+\item 总等效活度aeff=aA+K√aB=0.0014。
+\item 由题给式E=E0+(RT/F)ln(aeff)=0.0311667905V。
+\item B干扰占等效信号活度分数=0.2857142857。
+\item 忽略B时错误电势Ewrong=E0+(RT/F)ln(aA)=0.02252195094V，差值=0.008644839562V。
+\item 二价干扰离子指数zA/zB=1/2来自不同价态对电化学势的影响，是模型约定，真实选择性系数需实验标定。
+\item 独立复核概率总和、数据响应或测量电路约束，数值残差：-5.42e-20、0.00e+0、5.42e-20。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0014；答案2 = 0.0311667905；答案3 = 0.285714286；答案4 = 0.00864483956\par
+\noindent\textbf{模型前提：}
+题设校准、统计与仪器模型按给定条件成立；不代表获得实验计量认证或专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-A100 · 带高斯先验的线性测量浓度Bayes后验与不确定度}
+\noindent\textbf{题目}\par
+假想待测分析物浓度c单位mM，测量前已有独立先验c\textasciitilde{}N(1.000,0.4000²)，仪器线性模型y=2.000c+0.2000+ε，ε\textasciitilde{}N(0,0.2000²)，测得y=2.600。假定校准斜率和截距确定、先验与误差独立。求单凭测量的c估计及σc、合并后验均值、标准差和近似95\%可信区间，并说明这个Bayes区间依赖先验与正态误差假设。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 信号反演的观测浓度ycor=(y−0.2)/2=1.2mM。
+\item 观测噪声换算为浓度σy=0.2000/2=0.1mM。
+\item 先验精度P0=1/0.4²=6.25，观测精度Py=1/0.1²=100。
+\item 高斯后验均值μ=(P0μ0+Pyμy)/(P0+Py)=1.188235294mM。
+\item 后验标准差σpost=[P0+Py]\textasciicircum{}(-1/2)=0.09701425001mM。
+\item 近似95\%后验区间μ±1.96σ=[0.9980873641,1.378383224]mM；不是脱离先验的频率学置信区间。
+\item 独立复核概率总和、数据响应或测量电路约束，数值残差：1.42e-14、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1.2；答案2 = 0.1；答案3 = 1.18823529；答案4 = 0.09701425；答案5 = 0.998087364；答案6 = 1.37838322\par
+\noindent\textbf{模型前提：}
+题设校准、统计与仪器模型按给定条件成立；不代表获得实验计量认证或专家审核。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
