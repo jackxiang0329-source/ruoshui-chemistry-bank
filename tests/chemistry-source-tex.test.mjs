@@ -54,5 +54,5 @@ test('unapproved rights or source and numerical mutations stop typesetting',()=>
  assert.throws(()=>makeTex(science,{...chinese,items:chItems.map((c,i)=>i===0?
   {...c,computed_answers:[{label:'a',unit:'mol',value:900}]}:c)},full,pin),/Stale/);
  assert.throws(()=>makeTex({...science,items:scienceItems.map((q,i)=>i===8?
-  {...q,source_url:'https://attacker.example'}:q)},chinese,full,pin),/provenance/);
+  {...q,source_url:'https://attacker.example'}:q)},chinese,full,pin),/source identity/);
 });
