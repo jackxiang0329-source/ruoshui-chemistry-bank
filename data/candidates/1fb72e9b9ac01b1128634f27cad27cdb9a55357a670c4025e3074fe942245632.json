@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "1fb72e9b9ac01b1128634f27cad27cdb9a55357a670c4025e3074fe942245632",
+  "subject": "inorganic",
+  "topic": "metal_ligand_conditional_complexation",
+  "question_type": "original_general_chemistry_calculation",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "无机化学·配合物形成：M²⁺+L ⇌ ML，给定条件形成常数 β=1280 L/mol，缓冲体系维持自由配体 [L]=0.00148 mol/L 恒定，金属仅以 M²⁺ 和 ML 两种形态存在。求已配位金属占总溶解金属的比例 α。",
+  "answer": "α=β[L]/(1+β[L])=0.654505（即 65.451%）。",
+  "explanation": "β=[ML]/([M²⁺][L])，由 [M]总=[M²⁺]+[ML] 消去游离金属即可；需满足自由配体被缓冲体系固定的前提。",
+  "numeric_answers": [
+    0.6545052515201769
+  ],
+  "parameters": {
+    "beta_M_inv": 1280,
+    "free_ligand_M": 0.00148
+  },
+  "units": "fraction",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-general-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "New Chinese hypothetical numerical cases; no textbook, exams, measured data or third-party question text copied."
+  }
+}

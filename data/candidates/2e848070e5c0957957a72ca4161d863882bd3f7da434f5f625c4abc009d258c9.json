@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "2e848070e5c0957957a72ca4161d863882bd3f7da434f5f625c4abc009d258c9",
+  "subject": "inorganic",
+  "topic": "hydroxide_precipitation_onset_ph",
+  "question_type": "original_general_chemistry_calculation",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "无机化学·选择性沉淀：25 °C 某二价金属离子起始自由浓度 [M²⁺]=0.00460 mol/L，其 M(OH)₂ 的 Ksp=3.700e-12。忽略络合、水解和活度修正，取 pKw=14，假定开始沉淀前金属离子浓度不变，求刚开始析出沉淀时的 pH。",
+  "answer": "[OH⁻]=√(Ksp/[M²⁺])，pH=14+log₁₀[OH⁻]=9.45272。",
+  "explanation": "沉淀出现临界条件为离子积 [M²⁺][OH⁻]²=Ksp；pOH=−log₁₀([OH⁻]/1 mol/L)，并用 pH+pOH=14。",
+  "numeric_answers": [
+    9.45272194619271
+  ],
+  "parameters": {
+    "Ksp": 3.7e-12,
+    "metal_M": 0.0046,
+    "pKw": 14
+  },
+  "units": "pH",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-general-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "New Chinese hypothetical numerical cases; no textbook, exams, measured data or third-party question text copied."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "8fede85b99e75cc9fd26e640742e448410e46958c0cee175100a1f193b2060c6",
+  "subject": "organic",
+  "topic": "esterification_equilibrium_conversion",
+  "question_type": "original_general_chemistry_calculation",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "有机化学·酯化平衡：理想溶液中 RCOOH+R′OH ⇌ RCOOR′+H₂O，初始酸与醇各 0.140 mol，初始酯与水均为零，恒定体积且无副反应。给定无量纲平衡常数 K=2.9200，假设各物种活度可由浓度比近似，求平衡时酸的转化分数。",
+  "answer": "K=[x/(n₀−x)]²；转化分数 x/n₀=√K/(1+√K)=0.630833（63.083%）。",
+  "explanation": "四种物质化学计量比均为 1:1；反应进度为 x 时两反应物各剩 n₀−x，酯和水各为 x，体积相同而相消。",
+  "numeric_answers": [
+    0.6308329431960904
+  ],
+  "parameters": {
+    "K": 2.92,
+    "initial_moles": 0.14
+  },
+  "units": "fraction",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-general-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "New Chinese hypothetical numerical cases; no textbook, exams, measured data or third-party question text copied."
+  }
+}

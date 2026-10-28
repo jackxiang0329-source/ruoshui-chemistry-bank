@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "total_candidates": 1715,
-  "corpus_id_hash_sha256": "6e5cdd681c70ce3550cd26c38d8179deb40026b03e0ae1c29f722a9e5730aa29",
+  "total_candidates": 1835,
+  "corpus_id_hash_sha256": "dc476bee980084cc136fdb2eeec948b9cb529c127911a20d6a600da0e1b69bc8",
   "by_subject": {
     "analytical": 193,
-    "inorganic": 849,
-    "organic": 467,
+    "inorganic": 921,
+    "organic": 515,
     "physical": 206
   },
   "by_content_kind": {
-    "exercise_candidate": 1437,
+    "exercise_candidate": 1557,
     "study_card": 278
   },
-  "topics_total": 99,
-  "template_source_clusters": 1415,
-  "multi_variant_clusters": 56,
-  "multi_variant_candidates": 356,
+  "topics_total": 109,
+  "template_source_clusters": 1425,
+  "multi_variant_clusters": 66,
+  "multi_variant_candidates": 476,
   "flag_counts": {
     "conceptual_answer_requires_expert_validation": 14,
     "item_level_rights_human_confirmation_pending": 21,
-    "numerical_answer_requires_scientific_review": 315,
-    "semantic_duplicate_review_pending": 887,
+    "numerical_answer_requires_scientific_review": 435,
+    "semantic_duplicate_review_pending": 1007,
     "source_question_rights_not_explicitly_verified": 21,
     "study_card_not_exam_question": 278,
     "upstream_answer_key_requires_reconciliation": 11
@@ -37,10 +37,10 @@
   "selected_topics_by_subject": {
     "analytical": 26,
     "physical": 32,
-    "organic": 14,
-    "inorganic": 6
+    "organic": 18,
+    "inorganic": 12
   },
-  "unselected_candidate_count": 1588,
+  "unselected_candidate_count": 1708,
   "expert_approved_count": 0,
   "publishable_count": 0,
   "source_rights_approved_by_this_process": 0,
@@ -1127,6 +1127,82 @@
     },
     {
       "subject": "organic",
+      "topic": "esterification_equilibrium_conversion",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "0d359b4a17b8bf10d49edc5fa2d3df435cddf9e18e73af80c5450ca808d52f0a",
+      "candidate_count": 12,
+      "sample_other_ids": [
+        "1da101b24ee397be2023396c0041d735b0380c9739240da290358cec28bcc74e",
+        "3590331691dae7f6013ee5480e4fe71569113ad1f64f81e5284792a5a1c6fee9",
+        "359b37add3d42e72b13459766b8e3a1430378c03a83ec4f4ebe28bf91be926ad"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "organic",
+      "topic": "organic_aqueous_extraction_recovery",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "2d4611909893c746d8ee4e6bb6a1df2af01a53876da7191361ffe77dbf1ac036",
+      "candidate_count": 12,
+      "sample_other_ids": [
+        "352b250546fb312fc2c0c19766b4daa2481ab8eb65b707903d7f8d92c3d72ee8",
+        "5d2c50e4b20de72592b4afd36e2b4849161fb4ccd4fd2bb9d9f5e7389b18e48b",
+        "89da7c26e88dae1f30e9fecaa7aba0da33f89671450b38619791029ca0e87c01"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "organic",
+      "topic": "polymer_number_average_degree",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "31ba314ef7d37e6e50169f2ca8b53c1a733c922c7697cca3ee58639fc16ba33b",
+      "candidate_count": 12,
+      "sample_other_ids": [
+        "6b61d2dc192b3ce42736e32db1190ef4d83e3d45da4731c1c9d1422dcc6a097f",
+        "75a6c4b5e72f1700c005c602ba50324bd57f1206e997adf7877abb279ce6803f",
+        "8be8213865cb9d6fa5f9726d6abfee844091f9afe5f16c2c57d2dd828f0ebe6b"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "organic",
+      "topic": "specific_rotation_enantiomeric_excess",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "28eb0cc775b67d3f4bc0480dcb0c3ad4a2c5208d271005212f34ece17626dc03",
+      "candidate_count": 12,
+      "sample_other_ids": [
+        "4c5a9419c0ee4076a2f9a74bee74850080673a6f2a53759ddde9cd012846a64f",
+        "72e770f8fd56da869128905c8b0b94acd933b5b362effb9ca0373a5f58834c3b",
+        "7a4e184bcaa26e37114e00587f24dd9e2a700d350391e804b88c5b2cc69f97c3"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "organic",
       "topic": "alcohol_chemoselectivity",
       "source": "ChemTrain/reactivity-learn",
       "representative_id": "f960b13275f6d1f8921c427a0a4c018e82b0f262ec2f94a46471ae43813f5d8c",
@@ -1154,18 +1230,6 @@
       "topic": "aromatic_regioselectivity",
       "source": "ChemTrain/reactivity-learn",
       "representative_id": "3d47ec279311164ef86cd4b8e861ebe03d8af2f617f0e38aea66f25479a56352",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "organic",
-      "topic": "aromatic_regioselectivity",
-      "source": "ChemTrain/reactivity-learn",
-      "representative_id": "422be4ab225f617a1b341d03d479ac01e50ed5e7da40a02987ac1391da2567ee",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
@@ -1235,18 +1299,6 @@
     },
     {
       "subject": "organic",
-      "topic": "functional_group_identification",
-      "source": "bem130/chemquiz",
-      "representative_id": "5072212f63e3ba633823644919e75711e8c69f74a49ac198564d2ee1d612b1fb",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "organic",
       "topic": "homologous_series_molecular_formula",
       "source": "bem130/chemquiz",
       "representative_id": "106dc7a1a61af11433618aa725cf92eb9e8eb9fe2c2e4e4d50a5c1aff4802bb5",
@@ -1286,18 +1338,6 @@
       "topic": "photoredox_catalytic_cycle",
       "source": "ChemTrain/photoredox-learn",
       "representative_id": "1a1d71065d519e09c5d4b1cc629906107a8c8efa23a262756902322d69148738",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "organic",
-      "topic": "photoredox_catalytic_cycle",
-      "source": "ChemTrain/photoredox-learn",
-      "representative_id": "36b38890eef0f227dd94fe8abec1f5286520650e223704fb50c311668d8ca9ee",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
@@ -1364,18 +1404,6 @@
       "topic": "qualitative_acidic_site",
       "source": "ChemTrain/pka-learn",
       "representative_id": "263a18953fe1c4fb50187cda27955fa588246a944f9af5ec80577f9a5c5a1416",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "organic",
-      "topic": "qualitative_acidic_site",
-      "source": "ChemTrain/pka-learn",
-      "representative_id": "35b0358c3011317b1b50b9ff754ec323bec0ba5efe2f7af7d857455ca4da4cc5",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
@@ -1533,6 +1561,120 @@
     },
     {
       "subject": "inorganic",
+      "topic": "born_haber_lattice_energy",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "06152a1dafbc80ef656f892778e63654deb29e1eecb3eca75811bab1a8ddfc83",
+      "candidate_count": 12,
+      "sample_other_ids": [
+        "1e6e2c74411a83764ff4e9f1647711c616eaf4a3f756c92b12d14185387a12cd",
+        "20d2d5ebe26cd790f2f840710931c3a06bb139ef16eeef9372822df4df239cfe",
+        "2ad4f8622d7b9b6b81f6bdf0edee25553b4cb21a1842e8604407db140e504ef6"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "inorganic",
+      "topic": "hydroxide_precipitation_onset_ph",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "017ef2d9109200c89ec056621ac5e2e95204ed9ebd743eb088bc18c427306f4c",
+      "candidate_count": 12,
+      "sample_other_ids": [
+        "2e848070e5c0957957a72ca4161d863882bd3f7da434f5f625c4abc009d258c9",
+        "2f80ad62c6aefc5fae494b28eebb35dad1c69aea991c7dcfd41d296ef883661a",
+        "4b12d2e67b17691055c8c5d90ece0a26f529358b085c3e7f60bcd65a44f5ebac"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "inorganic",
+      "topic": "hydroxide_salt_molar_solubility",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "01d602ad821208fb8290e4e366dd12ddacf3485a4547693d3e5886fc8d07fe09",
+      "candidate_count": 12,
+      "sample_other_ids": [
+        "119cb08eb0a18caad47d56f0054cdae91b3d3d890904e98c85fc64ee25bdfe6a",
+        "2e8830d8403c16b0fb843c4d0b686da269a330ef76ab97f1812da2be9cf0004f",
+        "4f42771dc304a896873449116614d777957439106ff552236b52a07de20b7cd4"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "inorganic",
+      "topic": "ionic_crystal_density",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "0f3f687c9f2aaa46d15f90dbf4f529acf1c9c85ca8739b29b414e8753a7566ba",
+      "candidate_count": 12,
+      "sample_other_ids": [
+        "0fa86b300b8c0bfc0ddffd95266924e6ee84f3583a0939c58366a092e1b63a78",
+        "1c7ae58fc6bde3671c0ba13f72e8c3739ed1eec52735fa7fa3ad5bdba15e1e83",
+        "62bf456e42d594872cbd3115ef23601fb8165fc9f3a93a2a34d8cd4a41ec4658"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "inorganic",
+      "topic": "metal_ligand_conditional_complexation",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "08a495f3cacb5114ab1a93b3c2faf628a2d5419df6a433e95a3a118e3b270d3d",
+      "candidate_count": 12,
+      "sample_other_ids": [
+        "1fb72e9b9ac01b1128634f27cad27cdb9a55357a670c4025e3074fe942245632",
+        "5146542e42099c7a585031b2781c997af39bfa32e1abf7375ea2d8a5cbcff203",
+        "5f15f9b75067936d3c59bb9f2c22efc0aa30407a4302d3cc49639843273b9838"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "inorganic",
+      "topic": "mixed_salt_ionic_strength",
+      "source": "jackxiang0329-source/ruoshui-chemistry-bank",
+      "representative_id": "1286c25b231e2e6e53cb3bdafcebc12debe7aeb888ffb0a3b560957b363db1d9",
+      "candidate_count": 12,
+      "sample_other_ids": [
+        "26804de59a3750c29467d82bacb318f952e27a8cc20dcc5da3c15ba336724380",
+        "3dd2f82c51bcf3d83cf56e0c629d836c94740e355e3dedd86e7551fd8c195fd1",
+        "4d91ddd4b854eb2755b8996f25787defa15b3532896fb5d6c80ca479f8084ce7"
+      ],
+      "resource_type": "exercise_candidate",
+      "flags": [
+        "numerical_answer_requires_scientific_review",
+        "semantic_duplicate_review_pending"
+      ],
+      "review_priority_score": 16,
+      "approved_for_publication": false
+    },
+    {
+      "subject": "inorganic",
       "topic": "transition_metal_electron_counting",
       "source": "ChemTrain/tmc-learn",
       "representative_id": "004a2e70d0ca9094ab56559ce1f1053a49838589e93dd9263cb9a1dc086b01ca",
@@ -1603,20 +1745,6 @@
     },
     {
       "subject": "inorganic",
-      "topic": "transition_metal_electron_counting",
-      "source": "ChemTrain/tmc-learn",
-      "representative_id": "20d0b027dbe892f33b92604cfc93c53be574a45b92102971165a076d6f765f98",
-      "candidate_count": 2,
-      "sample_other_ids": [
-        "ac5a51e93608b93888064dfde5d04df03e085ca958d74932358b4637d3cb74f4"
-      ],
-      "resource_type": "exercise_candidate",
-      "flags": [],
-      "review_priority_score": 16,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "inorganic",
       "topic": "chemical_formula_molar_mass",
       "source": "arya51-ai/parametric-question-engine",
       "representative_id": "957416c79a8ce002476b0ff9a51d07f8f680cb5e16bc2a5a50922ae73e09220c",
@@ -1656,18 +1784,6 @@
       "topic": "chemical_formula_molar_mass",
       "source": "arya51-ai/parametric-question-engine",
       "representative_id": "c2c8833610b004448188721bc35f243c8d090e2c9fba83d4e18d3cfc5c6e93f4",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "inorganic",
-      "topic": "chemical_formula_molar_mass",
-      "source": "arya51-ai/parametric-question-engine",
-      "representative_id": "d0721db2c599aac3b0b7e96bfe4d17796b23e647f0efa7c4a0c365027c08bdf0",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
@@ -1747,20 +1863,6 @@
     },
     {
       "subject": "inorganic",
-      "topic": "coordination_geometry",
-      "source": "ChemTrain/chemtrain-daily",
-      "representative_id": "083aa72a4a9736e64fee2f342786f99c8d7f581652371531a2155839c3f8eeec",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "inorganic",
       "topic": "ligand_electron_donation",
       "source": "ChemTrain/chemtrain-daily",
       "representative_id": "00ce89223da00746047315403ac8a8a4296c01274dedf1ee5b8d6027cd81cdd7",
@@ -1806,20 +1908,6 @@
       "topic": "ligand_electron_donation",
       "source": "ChemTrain/chemtrain-daily",
       "representative_id": "02f6ffbde1b6a1eed1ccbc68e5d123ad7e13c069b961375099dd8a313913234c",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "inorganic",
-      "topic": "ligand_electron_donation",
-      "source": "ChemTrain/chemtrain-daily",
-      "representative_id": "0bc2967a1d820e8a84651c6017029524f6def2690acb9872025f872321251aa4",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",
@@ -1887,20 +1975,6 @@
     },
     {
       "subject": "inorganic",
-      "topic": "ligand_lx_classification",
-      "source": "ChemTrain/chemtrain-daily",
-      "representative_id": "04a205011f6871d00032984e4ba30a5b6ded1ad40d72e9fa97c19e1d693ae836",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [
-        "semantic_duplicate_review_pending"
-      ],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "inorganic",
       "topic": "polyatomic_ion_nomenclature",
       "source": "bem130/chemquiz",
       "representative_id": "10111fd6e61143afbe136744a5d5fbe279d162cbb7e831818a50f1a8974a3465",
@@ -1940,18 +2014,6 @@
       "topic": "polyatomic_ion_nomenclature",
       "source": "bem130/chemquiz",
       "representative_id": "31340bda1df5a33dbab30c33755582ccc25cbbc62d6eeabb35577b4375c20143",
-      "candidate_count": 1,
-      "sample_other_ids": [],
-      "resource_type": "exercise_candidate",
-      "flags": [],
-      "review_priority_score": 0,
-      "approved_for_publication": false
-    },
-    {
-      "subject": "inorganic",
-      "topic": "polyatomic_ion_nomenclature",
-      "source": "bem130/chemquiz",
-      "representative_id": "34148f3967ba9185b9ba1076a68771b11934dc7c7f47e8078977eed3a0dfcb2f",
       "candidate_count": 1,
       "sample_other_ids": [],
       "resource_type": "exercise_candidate",

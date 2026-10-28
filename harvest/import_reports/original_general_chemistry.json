@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "generated": 120,
+  "newly_added": 120,
+  "already_present": 0,
+  "method_families": 10,
+  "variants_per_family": 12,
+  "by_subject": {
+    "inorganic": 72,
+    "organic": 48
+  },
+  "independently_inverse_checked": 120,
+  "source_license": "CC0-1.0",
+  "original_exam_questions_claimed": 0,
+  "third_party_question_text_copied": 0,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "expert_approved": 0,
+  "note": "120 numerical practice variants built from 10 distinct original question templates; not 120 original exam questions or 120 independent teaching concepts."
+}

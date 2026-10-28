@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "6e45c734a43ed6c8dcaf63d5615cec75ea74c2d3dedc0a093170ccf49b4a7108",
+  "subject": "inorganic",
+  "topic": "mixed_salt_ionic_strength",
+  "question_type": "original_general_chemistry_calculation",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "level": "undergraduate",
+  "difficulty": "intermediate",
+  "question": "无机化学·离子强度：25 °C 将 NaCl 0.0130 mol/L 与 CaCl₂ 0.0030 mol/L 完全溶解并混合至最终所列浓度。假设两盐完全解离，忽略其他离子，按 I=1/2 Σcᵢzᵢ² 求离子强度（mol/L）。",
+  "answer": "I=c(NaCl)+3c(CaCl₂)=0.022000 mol/L。",
+  "explanation": "Na⁺ 浓度为 c₁、Ca²⁺ 浓度为 c₂、Cl⁻ 浓度为 c₁+2c₂；代入 I=0.5[c₁+4c₂+c₁+2c₂]。",
+  "numeric_answers": [
+    0.022000000000000002
+  ],
+  "parameters": {
+    "NaCl_M": 0.013000000000000001,
+    "CaCl2_M": 0.003
+  },
+  "units": "mol/L",
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "semantic_duplicate_review_pending": true,
+  "original_chemistry_experiment": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-general-chemistry.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_deterministic_generation",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "New Chinese hypothetical numerical cases; no textbook, exams, measured data or third-party question text copied."
+  }
+}
