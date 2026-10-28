@@ -79,7 +79,11 @@ export function run(){
  const release=JSON.parse(readFileSync(join(ROOT,'release/chemistry-approved-manifest.json'),'utf8'));
  const rqaState=JSON.parse(readFileSync(join(ROOT,'harvest/nvidia_rqa_state.json'),'utf8'));
  const rqaReview=JSON.parse(readFileSync(join(ROOT,'harvest/nvidia_rqa_review_queue.json'),'utf8'));
- const summary=summarize(main,ext,release,rqaState,rqaReview),
+ const science=JSON.parse(readFileSync(join(ROOT,
+  'external_sources/openstax_chemistry/independent_numeric_review.json'),'utf8'));
+ const chinese=JSON.parse(readFileSync(join(ROOT,
+  'external_sources/openstax_chemistry/chinese_independent_derivations.json'),'utf8'));
+ const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese),
   path=join(ROOT,'harvest/coverage_report.json');
  const body=JSON.stringify(summary,null,2)+'\n';
  if(!existsSync(path)||readFileSync(path,'utf8')!==body)writeFileSync(path,body);
