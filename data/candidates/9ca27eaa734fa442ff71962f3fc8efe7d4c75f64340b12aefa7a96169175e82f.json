@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "9ca27eaa734fa442ff71962f3fc8efe7d4c75f64340b12aefa7a96169175e82f",
+  "subject": "inorganic",
+  "topic": "multitopic_zn_hcl_hydrogen_gas_electrons__mixed_nacl_mgcl2_ionic_balance_case077",
+  "topic_family": "zn_hcl_hydrogen_gas_electrons__mixed_nacl_mgcl2_ionic_balance",
+  "parameter_case": 77,
+  "level": "undergraduate",
+  "difficulty": "advanced_multi_part",
+  "question_type": "original_two_topic_six_target_assignment",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "pair_id": "zn_hcl_hydrogen_gas_electrons__mixed_nacl_mgcl2_ionic_balance",
+  "index": 76,
+  "question": "原创同科双专题综合训练 · inorganic · zn_hcl_hydrogen_gas_electrons__mixed_nacl_mgcl2_ionic_balance · 条件组 77。\n【子问题甲：zn_hcl_hydrogen_gas_electrons】某纯 Zn 样品含 0.1342 mol Zn，与 0.3608 mol HCl 完全反应，反应 Zn+2HCl→ZnCl₂+H₂。盐酸始终过量、气体为理想气体，标准状态下气体摩尔体积取 22.414 L/mol。求 H₂ 物质的量、标准态气体体积以及金属失去的电子物质的量。\n【子问题乙：mixed_nacl_mgcl2_ionic_balance】某稀水溶液仅含完全解离的 MgCl₂ 0.001558 mol/L 和 NaCl 0.002837 mol/L，无络合或其它离子。计算 Cl⁻ 的总分析浓度、离子强度 I=1/2Σcᵢzᵢ² 及所有阳离子的总摩尔浓度。\n要求在同一份作业中给出两类不同知识模型的完整推导，分别报告每个子问题的三个结果（合计六个）。不同量纲的结果禁止直接相加或比较大小；必须逐一说明单位、假定和守恒或逆向验证。",
+  "answer": "甲：0.134200000 mol H₂；3.00795880 L H₂ at STP；0.268400000 mol electrons。乙：0.00595300000 mol/L Cl⁻；0.00751100000 mol/L ionic strength；0.00439500000 mol/L total cations。",
+  "explanation": "第一阶段｜读题并界定两套模型。子问题甲参数 a=0.1342、b=0.3608；子问题乙参数 a=0.001558、b=0.002837。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。\n\n第二阶段｜甲模型推导。先检验 HCl 至少为 Zn 的两倍（题设成立）。由 Zn:H₂=1:1 得 n(H₂)=nZn；由理想气体摩尔体积求 V=22.414n；Zn 从零价到 +2 价，失电子数为 2n。 逐量代入条件，得到 甲1=0.134200000 mol H₂；甲2=3.00795880 L H₂ at STP；甲3=0.268400000 mol electrons。\n\n第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。\n\n第四阶段｜乙模型推导。MgCl₂ 每单位贡献两摩尔 Cl⁻、3c 离子强度和一摩尔 Mg²⁺；NaCl 各贡献一摩尔 Cl⁻、1c 离子强度与一摩尔 Na⁺，所以分别为 2a+b、3a+b 和 a+b。 逐量代入条件，得到 乙1=0.00595300000 mol/L Cl⁻；乙2=0.00751100000 mol/L ionic strength；乙3=0.00439500000 mol/L total cations。\n\n第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 2.784e-16、2.784e-16、0.000。\n\n第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。",
+  "solution_steps": [
+    "第一阶段｜读题并界定两套模型。子问题甲参数 a=0.1342、b=0.3608；子问题乙参数 a=0.001558、b=0.002837。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。",
+    "第二阶段｜甲模型推导。先检验 HCl 至少为 Zn 的两倍（题设成立）。由 Zn:H₂=1:1 得 n(H₂)=nZn；由理想气体摩尔体积求 V=22.414n；Zn 从零价到 +2 价，失电子数为 2n。 逐量代入条件，得到 甲1=0.134200000 mol H₂；甲2=3.00795880 L H₂ at STP；甲3=0.268400000 mol electrons。",
+    "第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。",
+    "第四阶段｜乙模型推导。MgCl₂ 每单位贡献两摩尔 Cl⁻、3c 离子强度和一摩尔 Mg²⁺；NaCl 各贡献一摩尔 Cl⁻、1c 离子强度与一摩尔 Na⁺，所以分别为 2a+b、3a+b 和 a+b。 逐量代入条件，得到 乙1=0.00595300000 mol/L Cl⁻；乙2=0.00751100000 mol/L ionic strength；乙3=0.00439500000 mol/L total cations。",
+    "第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 2.784e-16、2.784e-16、0.000。",
+    "第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。"
+  ],
+  "numeric_answers": [
+    0.1342,
+    3.0079588000000004,
+    0.2684,
+    0.005953,
+    0.0075109999999999994,
+    0.004395
+  ],
+  "numeric_answer_units": [
+    "mol H₂",
+    "L H₂ at STP",
+    "mol electrons",
+    "mol/L Cl⁻",
+    "mol/L ionic strength",
+    "mol/L total cations"
+  ],
+  "inverse_residuals": [
+    0,
+    0,
+    0,
+    2.783574255418497e-16,
+    2.783574255418497e-16,
+    0
+  ],
+  "model_source_ids": [
+    "zn_hcl_hydrogen_gas_electrons",
+    "mixed_nacl_mgcl2_ionic_balance"
+  ],
+  "parameter_indices": [
+    76,
+    93
+  ],
+  "source_model_pair_count": 2,
+  "independent_inverse_check_count": 6,
+  "disclosure": "264 distinct combinations of 48 pre-existing science topic models, 128 parameter sets per pair; zero new atomic knowledge topics.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multitopic-33792.mjs",
+    "topic_source_files": [
+      "scripts/advanced-chain/inorganic.mjs"
+    ],
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_two_distinct_topic_assignment",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original combined assignment of two independently authored science models; no source textbook/exam problem copied."
+  }
+}

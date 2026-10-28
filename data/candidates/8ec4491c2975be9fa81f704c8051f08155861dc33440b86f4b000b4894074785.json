@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "8ec4491c2975be9fa81f704c8051f08155861dc33440b86f4b000b4894074785",
+  "subject": "analytical",
+  "topic": "multitopic_two_wavelength_spectroscopic_unmixing__permanganate_fe2_redox_three_units_case069",
+  "topic_family": "two_wavelength_spectroscopic_unmixing__permanganate_fe2_redox_three_units",
+  "parameter_case": 69,
+  "level": "undergraduate",
+  "difficulty": "advanced_multi_part",
+  "question_type": "original_two_topic_six_target_assignment",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "pair_id": "two_wavelength_spectroscopic_unmixing__permanganate_fe2_redox_three_units",
+  "index": 68,
+  "question": "原创同科双专题综合训练 · analytical · two_wavelength_spectroscopic_unmixing__permanganate_fe2_redox_three_units · 条件组 69。\n【子问题甲：two_wavelength_spectroscopic_unmixing】双组分稀溶液光程 1.00 cm，两个波长吸光度为 A1=0.284、A2=0.2308，没有空白误差。给定吸收系数矩阵 ε=[[10000,2000],[3000,8000]] L/(mol·cm)，满足 Beer–Lambert 加和定律。求两组分的摩尔浓度及其浓度比 X/Y。\n【子问题乙：permanganate_fe2_redox_three_units】酸性条件高锰酸根完全还原为 Mn²⁺，0.02000mol/L KMnO₄ 滴定体积为 12.7mL，水样体积为 27.55mL。按 MnO₄⁻:Fe²⁺=1:5 计量，M(Fe)=55.845g/mol，无其他还原剂干扰。求 Fe²⁺ mmol 数、浓度 mol/L 和质量浓度 mg/L。\n要求在同一份作业中给出两类不同知识模型的完整推导，分别报告每个子问题的三个结果（合计六个）。不同量纲的结果禁止直接相加或比较大小；必须逐一说明单位、假定和守恒或逆向验证。",
+  "answer": "甲：0.0000244648649 mol/L analyte X；0.0000196756757 mol/L analyte Y；1.24340659 molar ratio X/Y。乙：1.27000000 mmol Fe²⁺；0.0460980036 mol/L Fe²⁺；2574.34301 mg/L Fe。",
+  "explanation": "第一阶段｜读题并界定两套模型。子问题甲参数 a=0.284、b=0.2308；子问题乙参数 a=12.7、b=27.55。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。\n\n第二阶段｜甲模型推导。使用两元一次线性方程 10000cX+2000cY=A1、3000cX+8000cY=A2。行列式=74×10⁶，先反解两个浓度，最后才取 cX/cY。 逐量代入条件，得到 甲1=0.0000244648649 mol/L analyte X；甲2=0.0000196756757 mol/L analyte Y；甲3=1.24340659 molar ratio X/Y。\n\n第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 1.955e-16、0.000、0.000。\n\n第四阶段｜乙模型推导。高锰酸根 mmol 数为 .02000a，铁 mmol 数为其五倍即 0.1000a；除以样品体积 b mL 得 mol/L，再乘 55845mg/mol 得铁质量浓度。 逐量代入条件，得到 乙1=1.27000000 mmol Fe²⁺；乙2=0.0460980036 mol/L Fe²⁺；乙3=2574.34301 mg/L Fe。\n\n第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。\n\n第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。",
+  "solution_steps": [
+    "第一阶段｜读题并界定两套模型。子问题甲参数 a=0.284、b=0.2308；子问题乙参数 a=12.7、b=27.55。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。",
+    "第二阶段｜甲模型推导。使用两元一次线性方程 10000cX+2000cY=A1、3000cX+8000cY=A2。行列式=74×10⁶，先反解两个浓度，最后才取 cX/cY。 逐量代入条件，得到 甲1=0.0000244648649 mol/L analyte X；甲2=0.0000196756757 mol/L analyte Y；甲3=1.24340659 molar ratio X/Y。",
+    "第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 1.955e-16、0.000、0.000。",
+    "第四阶段｜乙模型推导。高锰酸根 mmol 数为 .02000a，铁 mmol 数为其五倍即 0.1000a；除以样品体积 b mL 得 mol/L，再乘 55845mg/mol 得铁质量浓度。 逐量代入条件，得到 乙1=1.27000000 mmol Fe²⁺；乙2=0.0460980036 mol/L Fe²⁺；乙3=2574.34301 mg/L Fe。",
+    "第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。",
+    "第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。"
+  ],
+  "numeric_answers": [
+    0.000024464864864864866,
+    0.000019675675675675675,
+    1.2434065934065934,
+    1.27,
+    0.046098003629764066,
+    2574.3430127041743
+  ],
+  "numeric_answer_units": [
+    "mol/L analyte X",
+    "mol/L analyte Y",
+    "molar ratio X/Y",
+    "mmol Fe²⁺",
+    "mol/L Fe²⁺",
+    "mg/L Fe"
+  ],
+  "inverse_residuals": [
+    1.9546180011006278e-16,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "model_source_ids": [
+    "two_wavelength_spectroscopic_unmixing",
+    "permanganate_fe2_redox_three_units"
+  ],
+  "parameter_indices": [
+    68,
+    85
+  ],
+  "source_model_pair_count": 2,
+  "independent_inverse_check_count": 6,
+  "disclosure": "264 distinct combinations of 48 pre-existing science topic models, 128 parameter sets per pair; zero new atomic knowledge topics.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multitopic-33792.mjs",
+    "topic_source_files": [
+      "scripts/advanced-chain/analytical.mjs"
+    ],
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_two_distinct_topic_assignment",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original combined assignment of two independently authored science models; no source textbook/exam problem copied."
+  }
+}

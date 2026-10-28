@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "0049713bf2688d4d9ff09029b0b3028d2fd3bde41c9a2c934b13b653588401f4",
+  "subject": "analytical",
+  "topic": "multitopic_back_titration_calcium_carbonate_purity__weak_acid_ratio_and_both_species_case084",
+  "topic_family": "back_titration_calcium_carbonate_purity__weak_acid_ratio_and_both_species",
+  "parameter_case": 84,
+  "level": "undergraduate",
+  "difficulty": "advanced_multi_part",
+  "question_type": "original_two_topic_six_target_assignment",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "pair_id": "back_titration_calcium_carbonate_purity__weak_acid_ratio_and_both_species",
+  "index": 83,
+  "question": "原创同科双专题综合训练 · analytical · back_titration_calcium_carbonate_purity__weak_acid_ratio_and_both_species · 条件组 84。\n【子问题甲：back_titration_calcium_carbonate_purity】取某石灰石粉末 0.2500g，先加入 0.1000 mol/L HCl 52.49 mL，余酸用 0.1000 mol/L NaOH 回滴耗 16.66 mL。除 CaCO₃ 外无其它酸消耗组分，CaCO₃+2H⁺→Ca²⁺+CO₂+H₂O，M(CaCO₃)=100.09g/mol。求石灰石消耗的酸 mmol 数、CaCO₃ 质量及纯度百分数。\n【子问题乙：weak_acid_ratio_and_both_species】某单质子弱酸 HA 的 pKa=5.2、溶液 pH=5.5。仅有 HA 和 A⁻ 两形态，忽略活度差异、配位和自解离，采用 Henderson–Hasselbalch 关系，求[A⁻]/[HA]、HA 质量浓度之外的摩尔分布百分数以及 A⁻ 的摩尔分布百分数。\n要求在同一份作业中给出两类不同知识模型的完整推导，分别报告每个子问题的三个结果（合计六个）。不同量纲的结果禁止直接相加或比较大小；必须逐一说明单位、假定和守恒或逆向验证。",
+  "answer": "甲：3.58300000 mmol acid used by CaCO₃；0.179311235 g CaCO₃；71.7244940 % CaCO₃ purity。乙：1.99526231 [A⁻]/[HA] ratio；33.3860575 % HA；66.6139425 % A⁻。",
+  "explanation": "第一阶段｜读题并界定两套模型。子问题甲参数 a=52.49、b=16.66；子问题乙参数 a=5.5、b=5.2。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。\n\n第二阶段｜甲模型推导。用加入酸减去回滴余酸，n酸(mmol)=0.1(a−b)；CaCO₃ 消耗两摩尔酸，mCaCO3=(n酸/2)×100.09/1000g，最后除以0.2500g 乘100%。 逐量代入条件，得到 甲1=3.58300000 mmol acid used by CaCO₃；甲2=0.179311235 g CaCO₃；甲3=71.7244940 % CaCO₃ purity。\n\n第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。\n\n第四阶段｜乙模型推导。由 pH−pKa=log10([A⁻]/[HA]) 得比例 R=10^(a−b)；HA 摩尔占比=100/(1+R)%，A⁻ 摩尔占比=100R/(1+R)%，两者必须合计100%。 逐量代入条件，得到 乙1=1.99526231 [A⁻]/[HA] ratio；乙2=33.3860575 % HA；乙3=66.6139425 % A⁻。\n\n第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、1.421e-16、0.000。\n\n第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。",
+  "solution_steps": [
+    "第一阶段｜读题并界定两套模型。子问题甲参数 a=52.49、b=16.66；子问题乙参数 a=5.5、b=5.2。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。",
+    "第二阶段｜甲模型推导。用加入酸减去回滴余酸，n酸(mmol)=0.1(a−b)；CaCO₃ 消耗两摩尔酸，mCaCO3=(n酸/2)×100.09/1000g，最后除以0.2500g 乘100%。 逐量代入条件，得到 甲1=3.58300000 mmol acid used by CaCO₃；甲2=0.179311235 g CaCO₃；甲3=71.7244940 % CaCO₃ purity。",
+    "第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。",
+    "第四阶段｜乙模型推导。由 pH−pKa=log10([A⁻]/[HA]) 得比例 R=10^(a−b)；HA 摩尔占比=100/(1+R)%，A⁻ 摩尔占比=100R/(1+R)%，两者必须合计100%。 逐量代入条件，得到 乙1=1.99526231 [A⁻]/[HA] ratio；乙2=33.3860575 % HA；乙3=66.6139425 % A⁻。",
+    "第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、1.421e-16、0.000。",
+    "第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。"
+  ],
+  "numeric_answers": [
+    3.583,
+    0.179311235,
+    71.724494,
+    1.9952623149688788,
+    33.3860575416878,
+    66.6139424583122
+  ],
+  "numeric_answer_units": [
+    "mmol acid used by CaCO₃",
+    "g CaCO₃",
+    "% CaCO₃ purity",
+    "[A⁻]/[HA] ratio",
+    "% HA",
+    "% A⁻"
+  ],
+  "inverse_residuals": [
+    0,
+    0,
+    0,
+    0,
+    1.4210854715202004e-16,
+    0
+  ],
+  "model_source_ids": [
+    "back_titration_calcium_carbonate_purity",
+    "weak_acid_ratio_and_both_species"
+  ],
+  "parameter_indices": [
+    83,
+    100
+  ],
+  "source_model_pair_count": 2,
+  "independent_inverse_check_count": 6,
+  "disclosure": "264 distinct combinations of 48 pre-existing science topic models, 128 parameter sets per pair; zero new atomic knowledge topics.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multitopic-33792.mjs",
+    "topic_source_files": [
+      "scripts/advanced-chain/analytical.mjs"
+    ],
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_two_distinct_topic_assignment",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original combined assignment of two independently authored science models; no source textbook/exam problem copied."
+  }
+}

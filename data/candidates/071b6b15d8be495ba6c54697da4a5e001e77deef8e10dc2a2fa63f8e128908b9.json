@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "071b6b15d8be495ba6c54697da4a5e001e77deef8e10dc2a2fa63f8e128908b9",
+  "subject": "inorganic",
+  "topic": "multitopic_magnetite_iron_metal_and_oxygen__alumina_to_al_charge_and_oxygen_case052",
+  "topic_family": "magnetite_iron_metal_and_oxygen__alumina_to_al_charge_and_oxygen",
+  "parameter_case": 52,
+  "level": "undergraduate",
+  "difficulty": "advanced_multi_part",
+  "question_type": "original_two_topic_six_target_assignment",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "pair_id": "magnetite_iron_metal_and_oxygen__alumina_to_al_charge_and_oxygen",
+  "index": 51,
+  "question": "原创同科双专题综合训练 · inorganic · magnetite_iron_metal_and_oxygen__alumina_to_al_charge_and_oxygen · 条件组 52。\n【子问题甲：magnetite_iron_metal_and_oxygen】某含 Fe₃O₄ 的矿石总质量为 6.918 g，Fe₃O₄ 质量分数 0.7602，其余不含 Fe 或 O。取 M(Fe₃O₄)=231.53 g/mol、M(Fe)=55.845 g/mol。求矿石中 Fe₃O₄ 质量、其中铁的质量以及其中氧的质量（以矿石中的 Fe₃O₄ 部分为基准）。\n【子问题乙：alumina_to_al_charge_and_oxygen】某 Al₂O₃ 物料按 Al₂O₃→2Al+3/2O₂ 的总原子守恒模型电解，每次处理 0.09564 mol Al₂O₃，电流效率 0.96408，假设完全反应。F=96485.33212 C/mol。求金属铝物质的量、对应的氧气物质的量（等效氧平衡）以及实际通过电路的电量 C。\n要求在同一份作业中给出两类不同知识模型的完整推导，分别报告每个子问题的三个结果（合计六个）。不同量纲的结果禁止直接相加或比较大小；必须逐一说明单位、假定和守恒或逆向验证。",
+  "answer": "甲：5.25906360 g Fe₃O₄；3.80545597 g Fe in magnetite；1.45360763 g O in magnetite。乙：0.191280000 mol Al；0.143460000 mol O₂ equivalent；57430.0296 C current charge。",
+  "explanation": "第一阶段｜读题并界定两套模型。子问题甲参数 a=6.918、b=0.7602；子问题乙参数 a=0.09564、b=0.96408。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。\n\n第二阶段｜甲模型推导。先求 Fe₃O₄ 净质量 ab；每摩尔 Fe₃O₄ 含 3 摩尔铁，金属铁质量份额 3×55.845/231.53；其余由氧贡献，三项应满足铁质量+氧质量=Fe₃O₄ 净质量。 逐量代入条件，得到 甲1=5.25906360 g Fe₃O₄；甲2=3.80545597 g Fe in magnetite；甲3=1.45360763 g O in magnetite。\n\n第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。\n\n第四阶段｜乙模型推导。每 mol Al₂O₃ 理论产生 2 mol Al 与 1.5 mol O₂，铝还原每 mol Al 消耗 3mol 电子；有效电量=6nF，实际电量除以效率 b。阳极实际产气可能受电极材料影响，氧气仅作等效原子平衡。 逐量代入条件，得到 乙1=0.191280000 mol Al；乙2=0.143460000 mol O₂ equivalent；乙3=57430.0296 C current charge。\n\n第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。\n\n第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。",
+  "solution_steps": [
+    "第一阶段｜读题并界定两套模型。子问题甲参数 a=6.918、b=0.7602；子问题乙参数 a=0.09564、b=0.96408。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。",
+    "第二阶段｜甲模型推导。先求 Fe₃O₄ 净质量 ab；每摩尔 Fe₃O₄ 含 3 摩尔铁，金属铁质量份额 3×55.845/231.53；其余由氧贡献，三项应满足铁质量+氧质量=Fe₃O₄ 净质量。 逐量代入条件，得到 甲1=5.25906360 g Fe₃O₄；甲2=3.80545597 g Fe in magnetite；甲3=1.45360763 g O in magnetite。",
+    "第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。",
+    "第四阶段｜乙模型推导。每 mol Al₂O₃ 理论产生 2 mol Al 与 1.5 mol O₂，铝还原每 mol Al 消耗 3mol 电子；有效电量=6nF，实际电量除以效率 b。阳极实际产气可能受电极材料影响，氧气仅作等效原子平衡。 逐量代入条件，得到 乙1=0.191280000 mol Al；乙2=0.143460000 mol O₂ equivalent；乙3=57430.0296 C current charge。",
+    "第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。",
+    "第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。"
+  ],
+  "numeric_answers": [
+    5.2590636,
+    3.805455967805468,
+    1.4536076321945322,
+    0.19128,
+    0.14346,
+    57430.029648722935
+  ],
+  "numeric_answer_units": [
+    "g Fe₃O₄",
+    "g Fe in magnetite",
+    "g O in magnetite",
+    "mol Al",
+    "mol O₂ equivalent",
+    "C current charge"
+  ],
+  "inverse_residuals": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "model_source_ids": [
+    "magnetite_iron_metal_and_oxygen",
+    "alumina_to_al_charge_and_oxygen"
+  ],
+  "parameter_indices": [
+    51,
+    68
+  ],
+  "source_model_pair_count": 2,
+  "independent_inverse_check_count": 6,
+  "disclosure": "264 distinct combinations of 48 pre-existing science topic models, 128 parameter sets per pair; zero new atomic knowledge topics.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multitopic-33792.mjs",
+    "topic_source_files": [
+      "scripts/advanced-chain/inorganic.mjs"
+    ],
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_two_distinct_topic_assignment",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original combined assignment of two independently authored science models; no source textbook/exam problem copied."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "b3b7d8757ba98cafd7f8a778f41494c04c637270a6f16808a0bf7df1b4c2f551",
+  "subject": "organic",
+  "topic": "multitopic_ethanol_acetic_acid_esterification_with_conversion__alkene_bromine_addition_partial_conversion_case009",
+  "topic_family": "ethanol_acetic_acid_esterification_with_conversion__alkene_bromine_addition_partial_conversion",
+  "parameter_case": 9,
+  "level": "undergraduate",
+  "difficulty": "advanced_multi_part",
+  "question_type": "original_two_topic_six_target_assignment",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "pair_id": "ethanol_acetic_acid_esterification_with_conversion__alkene_bromine_addition_partial_conversion",
+  "index": 8,
+  "question": "原创同科双专题综合训练 · organic · ethanol_acetic_acid_esterification_with_conversion__alkene_bromine_addition_partial_conversion · 条件组 9。\n【子问题甲：ethanol_acetic_acid_esterification_with_conversion】乙酸与过量乙醇在题设理想条件下进行酯化，初始乙酸 0.1224mol、其中转化分数为 0.6724，且生成唯一酯 CH₃COOC₂H₅ 和水。M(乙酸乙酯)=88.106、M(水)=18.015g/mol。求理论乙酸乙酯质量、生成水质量与剩余乙酸 mol。\n【子问题乙：alkene_bromine_addition_partial_conversion】某仅有一个 C=C 的纯烯烃摩尔质量 42.081g/mol，初始量 0.086mol，与 Br₂ 发生单次加成，其转化分数为 0.68475，无替代反应。M(Br₂)=159.808g/mol。求二溴加成物质量、反应消耗的溴质量以及未反应烯烃 mol 数。\n要求在同一份作业中给出两类不同知识模型的完整推导，分别报告每个子问题的三个结果（合计六个）。不同量纲的结果禁止直接相加或比较大小；必须逐一说明单位、假定和守恒或逆向验证。",
+  "answer": "甲：7.25127887 g ethyl acetate；1.48266621 g water；0.0400982400 mol unreacted acid。乙：11.8889404 g dibromo product；9.41085341 g Br₂ consumed；0.0271115000 mol unreacted alkene。",
+  "explanation": "第一阶段｜读题并界定两套模型。子问题甲参数 a=0.1224、b=0.6724；子问题乙参数 a=0.086、b=0.68475。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。\n\n第二阶段｜甲模型推导。酯化净反应为1:1:1:1，实际反应进度 ξ=ab；两产物各 ξ mol，剩余乙酸=a−ξ。真实酯化常受平衡影响，此题转化由题设给定。 逐量代入条件，得到 甲1=7.25127887 g ethyl acetate；甲2=1.48266621 g water；甲3=0.0400982400 mol unreacted acid。\n\n第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 1.134e-16、0.000、1.730e-16。\n\n第四阶段｜乙模型推导。一个双键加一分子 Br₂，已反应烯烃是 ab mol，产物摩尔质量=42.081+159.808；溴消耗量为 ab×159.808，剩余烯烃=a(1−b)。 逐量代入条件，得到 乙1=11.8889404 g dibromo product；乙2=9.41085341 g Br₂ consumed；乙3=0.0271115000 mol unreacted alkene。\n\n第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、1.280e-16。\n\n第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。",
+  "solution_steps": [
+    "第一阶段｜读题并界定两套模型。子问题甲参数 a=0.1224、b=0.6724；子问题乙参数 a=0.086、b=0.68475。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。",
+    "第二阶段｜甲模型推导。酯化净反应为1:1:1:1，实际反应进度 ξ=ab；两产物各 ξ mol，剩余乙酸=a−ξ。真实酯化常受平衡影响，此题转化由题设给定。 逐量代入条件，得到 甲1=7.25127887 g ethyl acetate；甲2=1.48266621 g water；甲3=0.0400982400 mol unreacted acid。",
+    "第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 1.134e-16、0.000、1.730e-16。",
+    "第四阶段｜乙模型推导。一个双键加一分子 Br₂，已反应烯烃是 ab mol，产物摩尔质量=42.081+159.808；溴消耗量为 ab×159.808，剩余烯烃=a(1−b)。 逐量代入条件，得到 乙1=11.8889404 g dibromo product；乙2=9.41085341 g Br₂ consumed；乙3=0.0271115000 mol unreacted alkene。",
+    "第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、1.280e-16。",
+    "第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。"
+  ],
+  "numeric_answers": [
+    7.25127886656,
+    1.4826662064,
+    0.04009824,
+    11.888940376499999,
+    9.410853407999998,
+    0.0271115
+  ],
+  "numeric_answer_units": [
+    "g ethyl acetate",
+    "g water",
+    "mol unreacted acid",
+    "g dibromo product",
+    "g Br₂ consumed",
+    "mol unreacted alkene"
+  ],
+  "inverse_residuals": [
+    1.1338061934488937e-16,
+    0,
+    1.7304734332248073e-16,
+    0,
+    0,
+    1.2796956833644814e-16
+  ],
+  "model_source_ids": [
+    "ethanol_acetic_acid_esterification_with_conversion",
+    "alkene_bromine_addition_partial_conversion"
+  ],
+  "parameter_indices": [
+    8,
+    25
+  ],
+  "source_model_pair_count": 2,
+  "independent_inverse_check_count": 6,
+  "disclosure": "264 distinct combinations of 48 pre-existing science topic models, 128 parameter sets per pair; zero new atomic knowledge topics.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multitopic-33792.mjs",
+    "topic_source_files": [
+      "scripts/advanced-chain/organic.mjs"
+    ],
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_two_distinct_topic_assignment",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original combined assignment of two independently authored science models; no source textbook/exam problem copied."
+  }
+}

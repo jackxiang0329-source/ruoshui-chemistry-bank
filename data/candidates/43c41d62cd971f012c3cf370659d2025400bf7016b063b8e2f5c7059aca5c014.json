@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "43c41d62cd971f012c3cf370659d2025400bf7016b063b8e2f5c7059aca5c014",
+  "subject": "physical",
+  "topic": "multitopic_reversible_adiabatic_temperature_work_entropy__langmuir_coverage_adsorbed_unoccupied_case070",
+  "topic_family": "reversible_adiabatic_temperature_work_entropy__langmuir_coverage_adsorbed_unoccupied",
+  "parameter_case": 70,
+  "level": "undergraduate",
+  "difficulty": "advanced_multi_part",
+  "question_type": "original_two_topic_six_target_assignment",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "pair_id": "reversible_adiabatic_temperature_work_entropy__langmuir_coverage_adsorbed_unoccupied",
+  "index": 69,
+  "question": "原创同科双专题综合训练 · physical · reversible_adiabatic_temperature_work_entropy__langmuir_coverage_adsorbed_unoccupied · 条件组 70。\n【子问题甲：reversible_adiabatic_temperature_work_entropy】1.00mol 理想双原子气体在绝热指数 γ=1.40 恒定时可逆绝热膨胀，初始温度 T1=410.35K，末初压强比 P2/P1=0.5138，小于1。忽略振动激发比热变化，R=8.314462618 J/(mol·K)。计算末温 T2、系统受到的功（kJ）和熵变。\n【子问题乙：langmuir_coverage_adsorbed_unoccupied】均一位点 Langmuir 单层吸附模型中平衡常数 K=0.672L/mol、体相浓度 c=0.1258mol/L，位点饱和吸附量 qmax=2.000mmol/g，忽略位点间相互作用。求表面覆盖度 θ、单位吸附剂质量的吸附量 q 和未占位的位点分数。\n要求在同一份作业中给出两类不同知识模型的完整推导，分别报告每个子问题的三个结果（合计六个）。不同量纲的结果禁止直接相加或比较大小；必须逐一说明单位、假定和守恒或逆向验证。",
+  "answer": "甲：339.253378 K final temperature；-1.47782552 kJ work on system；0.00000000 J/K entropy change。乙：0.0779480582 surface coverage θ；0.155896116 mmol/g adsorbed；0.922051942 fraction vacant sites。",
+  "explanation": "第一阶段｜读题并界定两套模型。子问题甲参数 a=410.35、b=0.5138；子问题乙参数 a=0.672、b=0.1258。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。\n\n第二阶段｜甲模型推导。理想气体可逆绝热式 T2=T1(P2/P1)^((γ−1)/γ)。因 q=0、内能变化 ΔU=Cv(T2−T1)=w，Cv=R/(γ−1)；可逆绝热过程 ΔS=0，这是过程定义而非任意绝热过程的结论。 逐量代入条件，得到 甲1=339.253378 K final temperature；甲2=-1.47782552 kJ work on system；甲3=0.00000000 J/K entropy change。\n\n第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。\n\n第四阶段｜乙模型推导。Langmuir 公式 θ=Kc/(1+Kc)，实际吸附量 q=qmaxθ；未占位分数1−θ。所给 Kc 无量纲，结果不直接适用于多层或非均一吸附。 逐量代入条件，得到 乙1=0.0779480582 surface coverage θ；乙2=0.155896116 mmol/g adsorbed；乙3=0.922051942 fraction vacant sites。\n\n第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 1.642e-16、0.000、0.000。\n\n第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。",
+  "solution_steps": [
+    "第一阶段｜读题并界定两套模型。子问题甲参数 a=410.35、b=0.5138；子问题乙参数 a=0.672、b=0.1258。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。",
+    "第二阶段｜甲模型推导。理想气体可逆绝热式 T2=T1(P2/P1)^((γ−1)/γ)。因 q=0、内能变化 ΔU=Cv(T2−T1)=w，Cv=R/(γ−1)；可逆绝热过程 ΔS=0，这是过程定义而非任意绝热过程的结论。 逐量代入条件，得到 甲1=339.253378 K final temperature；甲2=-1.47782552 kJ work on system；甲3=0.00000000 J/K entropy change。",
+    "第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。",
+    "第四阶段｜乙模型推导。Langmuir 公式 θ=Kc/(1+Kc)，实际吸附量 q=qmaxθ；未占位分数1−θ。所给 Kc 无量纲，结果不直接适用于多层或非均一吸附。 逐量代入条件，得到 乙1=0.0779480582 surface coverage θ；乙2=0.155896116 mmol/g adsorbed；乙3=0.922051942 fraction vacant sites。",
+    "第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 1.642e-16、0.000、0.000。",
+    "第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。"
+  ],
+  "numeric_answers": [
+    339.2533779248257,
+    -1.477825516275276,
+    0,
+    0.0779480582323748,
+    0.1558961164647496,
+    0.9220519417676252
+  ],
+  "numeric_answer_units": [
+    "K final temperature",
+    "kJ work on system",
+    "J/K entropy change",
+    "surface coverage θ",
+    "mmol/g adsorbed",
+    "fraction vacant sites"
+  ],
+  "inverse_residuals": [
+    0,
+    0,
+    0,
+    1.6416112839511005e-16,
+    0,
+    0
+  ],
+  "model_source_ids": [
+    "reversible_adiabatic_temperature_work_entropy",
+    "langmuir_coverage_adsorbed_unoccupied"
+  ],
+  "parameter_indices": [
+    69,
+    86
+  ],
+  "source_model_pair_count": 2,
+  "independent_inverse_check_count": 6,
+  "disclosure": "264 distinct combinations of 48 pre-existing science topic models, 128 parameter sets per pair; zero new atomic knowledge topics.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multitopic-33792.mjs",
+    "topic_source_files": [
+      "scripts/advanced-chain/physical.mjs"
+    ],
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_two_distinct_topic_assignment",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original combined assignment of two independently authored science models; no source textbook/exam problem copied."
+  }
+}

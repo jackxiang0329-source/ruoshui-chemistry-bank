@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "b825254a554f23a32e937235a12dcdf9b9c5ea401487bf5eec181955da988de3",
+  "subject": "analytical",
+  "topic": "multitopic_iodometric_copper_mol_mass_concentration__weak_acid_ratio_and_both_species_case080",
+  "topic_family": "iodometric_copper_mol_mass_concentration__weak_acid_ratio_and_both_species",
+  "parameter_case": 80,
+  "level": "undergraduate",
+  "difficulty": "advanced_multi_part",
+  "question_type": "original_two_topic_six_target_assignment",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "pair_id": "iodometric_copper_mol_mass_concentration__weak_acid_ratio_and_both_species",
+  "index": 79,
+  "question": "原创同科双专题综合训练 · analytical · iodometric_copper_mol_mass_concentration__weak_acid_ratio_and_both_species · 条件组 80。\n【子问题甲：iodometric_copper_mol_mass_concentration】对体积 26.58mL 的 Cu²⁺ 水样进行碘量法：2Cu²⁺+4I⁻→2CuI+I₂，释放 I₂ 再用 0.01000mol/L Na₂S₂O₃ 滴定耗 14.37mL；每 mol Cu²⁺ 总计耗一 mol S₂O₃²⁻，假定定量。M(Cu)=63.546g/mol。求 Cu²⁺ 的 mmol、mol/L 和以Cu计的mg/L。\n【子问题乙：weak_acid_ratio_and_both_species】某单质子弱酸 HA 的 pKa=5.184、溶液 pH=5.48。仅有 HA 和 A⁻ 两形态，忽略活度差异、配位和自解离，采用 Henderson–Hasselbalch 关系，求[A⁻]/[HA]、HA 质量浓度之外的摩尔分布百分数以及 A⁻ 的摩尔分布百分数。\n要求在同一份作业中给出两类不同知识模型的完整推导，分别报告每个子问题的三个结果（合计六个）。不同量纲的结果禁止直接相加或比较大小；必须逐一说明单位、假定和守恒或逆向验证。",
+  "answer": "甲：0.143700000 mmol Cu²⁺；0.00540632054 mol/L Cu²⁺；343.550045 mg/L Cu。乙：1.97696964 [A⁻]/[HA] ratio；33.5912059 % HA；66.4087941 % A⁻。",
+  "explanation": "第一阶段｜读题并界定两套模型。子问题甲参数 a=14.37、b=26.58；子问题乙参数 a=5.48、b=5.184。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。\n\n第二阶段｜甲模型推导。由合并计量 nCu(mmol)=0.01000×a；样品浓度 c=nCu/b（mmol/mL 等于 mol/L）；质量浓度=c×63546 mg/L。先校核样品体积单位。 逐量代入条件，得到 甲1=0.143700000 mmol Cu²⁺；甲2=0.00540632054 mol/L Cu²⁺；甲3=343.550045 mg/L Cu。\n\n第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。\n\n第四阶段｜乙模型推导。由 pH−pKa=log10([A⁻]/[HA]) 得比例 R=10^(a−b)；HA 摩尔占比=100/(1+R)%，A⁻ 摩尔占比=100R/(1+R)%，两者必须合计100%。 逐量代入条件，得到 乙1=1.97696964 [A⁻]/[HA] ratio；乙2=33.5912059 % HA；乙3=66.4087941 % A⁻。\n\n第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、1.421e-16。\n\n第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。",
+  "solution_steps": [
+    "第一阶段｜读题并界定两套模型。子问题甲参数 a=14.37、b=26.58；子问题乙参数 a=5.48、b=5.184。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。",
+    "第二阶段｜甲模型推导。由合并计量 nCu(mmol)=0.01000×a；样品浓度 c=nCu/b（mmol/mL 等于 mol/L）；质量浓度=c×63546 mg/L。先校核样品体积单位。 逐量代入条件，得到 甲1=0.143700000 mmol Cu²⁺；甲2=0.00540632054 mol/L Cu²⁺；甲3=343.550045 mg/L Cu。",
+    "第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。",
+    "第四阶段｜乙模型推导。由 pH−pKa=log10([A⁻]/[HA]) 得比例 R=10^(a−b)；HA 摩尔占比=100/(1+R)%，A⁻ 摩尔占比=100R/(1+R)%，两者必须合计100%。 逐量代入条件，得到 乙1=1.97696964 [A⁻]/[HA] ratio；乙2=33.5912059 % HA；乙3=66.4087941 % A⁻。",
+    "第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、1.421e-16。",
+    "第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。"
+  ],
+  "numeric_answers": [
+    0.1437,
+    0.005406320541760722,
+    343.55004514672686,
+    1.976969640111862,
+    33.59120585329262,
+    66.4087941467074
+  ],
+  "numeric_answer_units": [
+    "mmol Cu²⁺",
+    "mol/L Cu²⁺",
+    "mg/L Cu",
+    "[A⁻]/[HA] ratio",
+    "% HA",
+    "% A⁻"
+  ],
+  "inverse_residuals": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1.4210854715202004e-16
+  ],
+  "model_source_ids": [
+    "iodometric_copper_mol_mass_concentration",
+    "weak_acid_ratio_and_both_species"
+  ],
+  "parameter_indices": [
+    79,
+    96
+  ],
+  "source_model_pair_count": 2,
+  "independent_inverse_check_count": 6,
+  "disclosure": "264 distinct combinations of 48 pre-existing science topic models, 128 parameter sets per pair; zero new atomic knowledge topics.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multitopic-33792.mjs",
+    "topic_source_files": [
+      "scripts/advanced-chain/analytical.mjs"
+    ],
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_two_distinct_topic_assignment",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original combined assignment of two independently authored science models; no source textbook/exam problem copied."
+  }
+}

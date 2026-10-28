@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "92de3c53babc69ab6f024f5bfdafc64d506496cf6239e1b6bd9558ee351cefde",
+  "subject": "analytical",
+  "topic": "multitopic_double_endpoint_carbonate_speciation__spectrometry_dilution_molarity_and_original_mass_case107",
+  "topic_family": "double_endpoint_carbonate_speciation__spectrometry_dilution_molarity_and_original_mass",
+  "parameter_case": 107,
+  "level": "undergraduate",
+  "difficulty": "advanced_multi_part",
+  "question_type": "original_two_topic_six_target_assignment",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "pair_id": "double_endpoint_carbonate_speciation__spectrometry_dilution_molarity_and_original_mass",
+  "index": 106,
+  "question": "原创同科双专题综合训练 · analytical · double_endpoint_carbonate_speciation__spectrometry_dilution_molarity_and_original_mass · 条件组 107。\n【子问题甲：double_endpoint_carbonate_speciation】25.00 mL Na₂CO₃/NaHCO₃ 混合水样用 0.1000 mol/L HCl 滴定至酚酞终点累计耗酸 11.59 mL，再继续到甲基橙终点累计耗酸 32.3 mL。不存在 OH⁻ 等干扰，两个终点分别对应 CO₃²⁻→HCO₃⁻ 和 HCO₃⁻→CO₂。求两种原始阴离子的浓度及总耗酸的 mmol 数。\n【子问题乙：spectrometry_dilution_molarity_and_original_mass】某无缔合分析物的摩尔吸光系数 ε=1000L/(mol·cm)、光程 1.00cm，某 10.00mL 原液定容至 56.15mL 后测量，吸光度 A=0.3061，无空白干扰。化合物摩尔质量 M=100.0g/mol，求稀释液浓度、原液浓度，以及被取样的原液 10.00mL 中的溶质质量（mg）。\n要求在同一份作业中给出两类不同知识模型的完整推导，分别报告每个子问题的三个结果（合计六个）。不同量纲的结果禁止直接相加或比较大小；必须逐一说明单位、假定和守恒或逆向验证。",
+  "answer": "甲：0.0463600000 mol/L CO₃²⁻；0.0364800000 mol/L HCO₃⁻；3.23000000 mmol total acid。乙：0.000306100000 mol/L diluted；0.00171875150 mol/L original；1.71875150 mg solute in original aliquot。",
+  "explanation": "第一阶段｜读题并界定两套模型。子问题甲参数 a=11.59、b=32.3；子问题乙参数 a=0.3061、b=56.15。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。\n\n第二阶段｜甲模型推导。第一终点消耗的酸是原 CO₃²⁻ 的 mmol 数；第二终点总酸是 2nCO3+nHCO3。分别以 25mL 原样换算浓度，并用总酸的 0.1000mol/L 与终点体积求 mmol。 逐量代入条件，得到 甲1=0.0463600000 mol/L CO₃²⁻；甲2=0.0364800000 mol/L HCO₃⁻；甲3=3.23000000 mmol total acid。\n\n第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、2.200e-16、0.000。\n\n第四阶段｜乙模型推导。由 A=εlc 得稀释液 c=A/1000；稀释守恒 c原=c稀×(b/10)，原液取样质量= c原×.010L×100g/mol×1000mg/g。 逐量代入条件，得到 乙1=0.000306100000 mol/L diluted；乙2=0.00171875150 mol/L original；乙3=1.71875150 mg solute in original aliquot。\n\n第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、1.262e-16。\n\n第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。",
+  "solution_steps": [
+    "第一阶段｜读题并界定两套模型。子问题甲参数 a=11.59、b=32.3；子问题乙参数 a=0.3061、b=56.15。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。",
+    "第二阶段｜甲模型推导。第一终点消耗的酸是原 CO₃²⁻ 的 mmol 数；第二终点总酸是 2nCO3+nHCO3。分别以 25mL 原样换算浓度，并用总酸的 0.1000mol/L 与终点体积求 mmol。 逐量代入条件，得到 甲1=0.0463600000 mol/L CO₃²⁻；甲2=0.0364800000 mol/L HCO₃⁻；甲3=3.23000000 mmol total acid。",
+    "第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、2.200e-16、0.000。",
+    "第四阶段｜乙模型推导。由 A=εlc 得稀释液 c=A/1000；稀释守恒 c原=c稀×(b/10)，原液取样质量= c原×.010L×100g/mol×1000mg/g。 逐量代入条件，得到 乙1=0.000306100000 mol/L diluted；乙2=0.00171875150 mol/L original；乙3=1.71875150 mg solute in original aliquot。",
+    "第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、1.262e-16。",
+    "第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。"
+  ],
+  "numeric_answers": [
+    0.04636,
+    0.03647999999999999,
+    3.23,
+    0.00030609999999999996,
+    0.0017187514999999997,
+    1.7187514999999995
+  ],
+  "numeric_answer_units": [
+    "mol/L CO₃²⁻",
+    "mol/L HCO₃⁻",
+    "mmol total acid",
+    "mol/L diluted",
+    "mol/L original",
+    "mg solute in original aliquot"
+  ],
+  "inverse_residuals": [
+    0,
+    2.1998227113315798e-16,
+    0,
+    0,
+    0,
+    1.2616159723910114e-16
+  ],
+  "model_source_ids": [
+    "double_endpoint_carbonate_speciation",
+    "spectrometry_dilution_molarity_and_original_mass"
+  ],
+  "parameter_indices": [
+    106,
+    123
+  ],
+  "source_model_pair_count": 2,
+  "independent_inverse_check_count": 6,
+  "disclosure": "264 distinct combinations of 48 pre-existing science topic models, 128 parameter sets per pair; zero new atomic knowledge topics.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multitopic-33792.mjs",
+    "topic_source_files": [
+      "scripts/advanced-chain/analytical.mjs"
+    ],
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_two_distinct_topic_assignment",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original combined assignment of two independently authored science models; no source textbook/exam problem copied."
+  }
+}

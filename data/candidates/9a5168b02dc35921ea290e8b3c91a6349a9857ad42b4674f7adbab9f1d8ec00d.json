@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "9a5168b02dc35921ea290e8b3c91a6349a9857ad42b4674f7adbab9f1d8ec00d",
+  "subject": "organic",
+  "topic": "multitopic_ethyl_acetate_saponification_products__carothers_polymer_dp_mn_chains_case110",
+  "topic_family": "ethyl_acetate_saponification_products__carothers_polymer_dp_mn_chains",
+  "parameter_case": 110,
+  "level": "undergraduate",
+  "difficulty": "advanced_multi_part",
+  "question_type": "original_two_topic_six_target_assignment",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "pair_id": "ethyl_acetate_saponification_products__carothers_polymer_dp_mn_chains",
+  "index": 109,
+  "question": "原创同科双专题综合训练 · organic · ethyl_acetate_saponification_products__carothers_polymer_dp_mn_chains · 条件组 110。\n【子问题甲：ethyl_acetate_saponification_products】乙酸乙酯 0.13488mol 与过量 NaOH 按 CH₃COOC₂H₅+NaOH→CH₃COONa+C₂H₅OH 发生定量计量的碱性水解，酯的转化分数为 0.77398。M(乙酸钠)=82.034、M(乙醇)=46.069g/mol。求乙酸钠质量、乙醇质量与未水解酯 mol 数。\n【子问题乙：carothers_polymer_dp_mn_chains】理想等当量二官能团线性逐步聚合遵守 Carothers 公式 DPn=1/(1−p)，转化分数 p=0.9315，重复单元摩尔质量 90.08g/mol，忽略端基、环化、支化。在以 1.000mol 初始重复单元计量为基准时，求数均聚合度、数均摩尔质量和形成的平均聚合物链的 mol 数。\n要求在同一份作业中给出两类不同知识模型的完整推导，分别报告每个子问题的三个结果（合计六个）。不同量纲的结果禁止直接相加或比较大小；必须逐一说明单位、假定和守恒或逆向验证。",
+  "answer": "甲：8.56389205 g sodium acetate；4.80934665 g ethanol；0.0304855776 mol unreacted ester。乙：14.5985401 number-average DPn；1315.03650 g/mol Mn；0.0685000000 mol polymer chains from 1 mol monomer。",
+  "explanation": "第一阶段｜读题并界定两套模型。子问题甲参数 a=0.13488、b=0.77398；子问题乙参数 a=0.9315、b=90.08。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。\n\n第二阶段｜甲模型推导。反应进度=初始酯×转化率=ab，每 mol 反应的酯各产生1mol乙酸钠及乙醇，剩余酯为a(1−b)，未讨论实际工艺副反应。 逐量代入条件，得到 甲1=8.56389205 g sodium acetate；甲2=4.80934665 g ethanol；甲3=0.0304855776 mol unreacted ester。\n\n第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 2.058e-16、1.329e-16、6.828e-16。\n\n第四阶段｜乙模型推导。由 DPn=1/(1−p)，数均摩尔质量 Mn=DPn×Mrepeat；若初始有1mol单元且无损失，链的物质的量为1/DPn mol。三者由同一数均定义联系。 逐量代入条件，得到 乙1=14.5985401 number-average DPn；乙2=1315.03650 g/mol Mn；乙3=0.0685000000 mol polymer chains from 1 mol monomer。\n\n第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。\n\n第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。",
+  "solution_steps": [
+    "第一阶段｜读题并界定两套模型。子问题甲参数 a=0.13488、b=0.77398；子问题乙参数 a=0.9315、b=90.08。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。",
+    "第二阶段｜甲模型推导。反应进度=初始酯×转化率=ab，每 mol 反应的酯各产生1mol乙酸钠及乙醇，剩余酯为a(1−b)，未讨论实际工艺副反应。 逐量代入条件，得到 甲1=8.56389205 g sodium acetate；甲2=4.80934665 g ethanol；甲3=0.0304855776 mol unreacted ester。",
+    "第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 2.058e-16、1.329e-16、6.828e-16。",
+    "第四阶段｜乙模型推导。由 DPn=1/(1−p)，数均摩尔质量 Mn=DPn×Mrepeat；若初始有1mol单元且无损失，链的物质的量为1/DPn mol。三者由同一数均定义联系。 逐量代入条件，得到 乙1=14.5985401 number-average DPn；乙2=1315.03650 g/mol Mn；乙3=0.0685000000 mol polymer chains from 1 mol monomer。",
+    "第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。",
+    "第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。"
+  ],
+  "numeric_answers": [
+    8.563892047161602,
+    4.809346645545601,
+    0.0304855776,
+    14.5985401459854,
+    1315.0364963503648,
+    0.0685
+  ],
+  "numeric_answer_units": [
+    "g sodium acetate",
+    "g ethanol",
+    "mol unreacted ester",
+    "number-average DPn",
+    "g/mol Mn",
+    "mol polymer chains from 1 mol monomer"
+  ],
+  "inverse_residuals": [
+    2.057797717647458e-16,
+    1.3293610414012363e-16,
+    6.828370446135716e-16,
+    0,
+    0,
+    0
+  ],
+  "model_source_ids": [
+    "ethyl_acetate_saponification_products",
+    "carothers_polymer_dp_mn_chains"
+  ],
+  "parameter_indices": [
+    109,
+    126
+  ],
+  "source_model_pair_count": 2,
+  "independent_inverse_check_count": 6,
+  "disclosure": "264 distinct combinations of 48 pre-existing science topic models, 128 parameter sets per pair; zero new atomic knowledge topics.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multitopic-33792.mjs",
+    "topic_source_files": [
+      "scripts/advanced-chain/organic.mjs"
+    ],
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_two_distinct_topic_assignment",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original combined assignment of two independently authored science models; no source textbook/exam problem copied."
+  }
+}

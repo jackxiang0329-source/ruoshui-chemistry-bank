@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "a760aed5eacec32b411690e68efc4ae039aaa576cdd4e1f141e5f877169d8f22",
+  "subject": "organic",
+  "topic": "multitopic_quant_nmr_mole_and_mass_fractions__tripeptide_condensation_product_water_mass_case012",
+  "topic_family": "quant_nmr_mole_and_mass_fractions__tripeptide_condensation_product_water_mass",
+  "parameter_case": 12,
+  "level": "undergraduate",
+  "difficulty": "advanced_multi_part",
+  "question_type": "original_two_topic_six_target_assignment",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "pair_id": "quant_nmr_mole_and_mass_fractions__tripeptide_condensation_product_water_mass",
+  "index": 11,
+  "question": "原创同科双专题综合训练 · organic · quant_nmr_mole_and_mass_fractions__tripeptide_condensation_product_water_mass · 条件组 12。\n【子问题甲：quant_nmr_mole_and_mass_fractions】定量¹H NMR 中 X 专属峰积分 IX=3.099、Y 峰积分 IY=2.088，每个 X 分子贡献2个该峰的质子、每个 Y 分子贡献3个；两组分摩尔质量 MX=100、MY=80g/mol，峰积分充分弛豫且无其它组分。求 X/Y 摩尔数比、X 的摩尔百分数及其质量百分数。\n【子问题乙：tripeptide_condensation_product_water_mass】假想三肽由每残基平均单体摩尔质量 101.12g/mol 的三种氨基酸经两条肽键理想缩合得到，产物三肽 0.0127mol。M(水)=18.015g/mol，无侧链反应与损失。分别求三肽质量、理论脱水质量及参与缩合的全部氨基酸初始质量。\n要求在同一份作业中给出两类不同知识模型的完整推导，分别报告每个子问题的三个结果（合计六个）。不同量纲的结果禁止直接相加或比较大小；必须逐一说明单位、假定和守恒或逆向验证。",
+  "answer": "甲：2.22629310 mole ratio X/Y；69.0046760 % mole X；73.5650192 % mass X。乙：3.39509100 g tripeptide；0.457581000 g water released；3.85267200 g initial amino acid units。",
+  "explanation": "第一阶段｜读题并界定两套模型。子问题甲参数 a=3.099、b=2.088；子问题乙参数 a=0.0127、b=101.12。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。\n\n第二阶段｜甲模型推导。由定量峰积分得到 NX∝IX/2，NY∝IY/3，故摩尔比R=(3IX)/(2IY)；摩尔占比100R/(1+R)，质量占比100(R×MX)/(R×MX+MY)。 逐量代入条件，得到 甲1=2.22629310 mole ratio X/Y；甲2=69.0046760 % mole X；甲3=73.5650192 % mass X。\n\n第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。\n\n第四阶段｜乙模型推导。三肽分子摩尔质量为3M单体−2M水；每mol三肽净排出2mol水，产物质量+放出水质量应等于三种初始氨基酸总质量3ab。 逐量代入条件，得到 乙1=3.39509100 g tripeptide；乙2=0.457581000 g water released；乙3=3.85267200 g initial amino acid units。\n\n第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 1.153e-16、0.000、0.000。\n\n第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。",
+  "solution_steps": [
+    "第一阶段｜读题并界定两套模型。子问题甲参数 a=3.099、b=2.088；子问题乙参数 a=0.0127、b=101.12。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。",
+    "第二阶段｜甲模型推导。由定量峰积分得到 NX∝IX/2，NY∝IY/3，故摩尔比R=(3IX)/(2IY)；摩尔占比100R/(1+R)，质量占比100(R×MX)/(R×MX+MY)。 逐量代入条件，得到 甲1=2.22629310 mole ratio X/Y；甲2=69.0046760 % mole X；甲3=73.5650192 % mass X。",
+    "第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。",
+    "第四阶段｜乙模型推导。三肽分子摩尔质量为3M单体−2M水；每mol三肽净排出2mol水，产物质量+放出水质量应等于三种初始氨基酸总质量3ab。 逐量代入条件，得到 乙1=3.39509100 g tripeptide；乙2=0.457581000 g water released；乙3=3.85267200 g initial amino acid units。",
+    "第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 1.153e-16、0.000、0.000。",
+    "第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。"
+  ],
+  "numeric_answers": [
+    2.226293103448276,
+    69.00467601870407,
+    73.5650192280302,
+    3.3950910000000003,
+    0.457581,
+    3.8526719999999997
+  ],
+  "numeric_answer_units": [
+    "mole ratio X/Y",
+    "% mole X",
+    "% mass X",
+    "g tripeptide",
+    "g water released",
+    "g initial amino acid units"
+  ],
+  "inverse_residuals": [
+    0,
+    0,
+    0,
+    1.1526784783393517e-16,
+    0,
+    0
+  ],
+  "model_source_ids": [
+    "quant_nmr_mole_and_mass_fractions",
+    "tripeptide_condensation_product_water_mass"
+  ],
+  "parameter_indices": [
+    11,
+    28
+  ],
+  "source_model_pair_count": 2,
+  "independent_inverse_check_count": 6,
+  "disclosure": "264 distinct combinations of 48 pre-existing science topic models, 128 parameter sets per pair; zero new atomic knowledge topics.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multitopic-33792.mjs",
+    "topic_source_files": [
+      "scripts/advanced-chain/organic.mjs"
+    ],
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_two_distinct_topic_assignment",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original combined assignment of two independently authored science models; no source textbook/exam problem copied."
+  }
+}

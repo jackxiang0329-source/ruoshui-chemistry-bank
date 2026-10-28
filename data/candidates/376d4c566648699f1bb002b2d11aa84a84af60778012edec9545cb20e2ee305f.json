@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "376d4c566648699f1bb002b2d11aa84a84af60778012edec9545cb20e2ee305f",
+  "subject": "inorganic",
+  "topic": "multitopic_mcl2_sulfate_precipitation_mass__alumina_to_al_charge_and_oxygen_case056",
+  "topic_family": "mcl2_sulfate_precipitation_mass__alumina_to_al_charge_and_oxygen",
+  "parameter_case": 56,
+  "level": "undergraduate",
+  "difficulty": "advanced_multi_part",
+  "question_type": "original_two_topic_six_target_assignment",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "pair_id": "mcl2_sulfate_precipitation_mass__alumina_to_al_charge_and_oxygen",
+  "index": 55,
+  "question": "原创同科双专题综合训练 · inorganic · mcl2_sulfate_precipitation_mass__alumina_to_al_charge_and_oxygen · 条件组 56。\n【子问题甲：mcl2_sulfate_precipitation_mass】有 Na₂SO₄ 0.0466 mol 和 BaCl₂ 0.03995 mol 混合，反应 Ba²⁺+SO₄²⁻→BaSO₄(s) 完全，题设 BaCl₂ 始终限制，忽略溶度积及离子络合。M(BaSO₄)=233.39 g/mol。求 BaSO₄ 物质的量、沉淀质量及剩余 SO₄²⁻ 的物质的量。\n【子问题乙：alumina_to_al_charge_and_oxygen】某 Al₂O₃ 物料按 Al₂O₃→2Al+3/2O₂ 的总原子守恒模型电解，每次处理 0.09656 mol Al₂O₃，电流效率 0.96432，假设完全反应。F=96485.33212 C/mol。求金属铝物质的量、对应的氧气物质的量（等效氧平衡）以及实际通过电路的电量 C。\n要求在同一份作业中给出两类不同知识模型的完整推导，分别报告每个子问题的三个结果（合计六个）。不同量纲的结果禁止直接相加或比较大小；必须逐一说明单位、假定和守恒或逆向验证。",
+  "answer": "甲：0.0399500000 mol BaSO₄；9.32393050 g BaSO₄；0.00665000000 mol sulfate remaining。乙：0.193120000 mol Al；0.144840000 mol O₂ equivalent；57968.0417 C current charge。",
+  "explanation": "第一阶段｜读题并界定两套模型。子问题甲参数 a=0.0466、b=0.03995；子问题乙参数 a=0.09656、b=0.96432。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。\n\n第二阶段｜甲模型推导。限制试剂是 Ba²⁺，反应一比一，沉淀物质的量为 b、质量为 233.39b；多余硫酸根=a−b。必须检查 b≤a。 逐量代入条件，得到 甲1=0.0399500000 mol BaSO₄；甲2=9.32393050 g BaSO₄；甲3=0.00665000000 mol sulfate remaining。\n\n第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。\n\n第四阶段｜乙模型推导。每 mol Al₂O₃ 理论产生 2 mol Al 与 1.5 mol O₂，铝还原每 mol Al 消耗 3mol 电子；有效电量=6nF，实际电量除以效率 b。阳极实际产气可能受电极材料影响，氧气仅作等效原子平衡。 逐量代入条件，得到 乙1=0.193120000 mol Al；乙2=0.144840000 mol O₂ equivalent；乙3=57968.0417 C current charge。\n\n第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、1.437e-16、0.000。\n\n第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。",
+  "solution_steps": [
+    "第一阶段｜读题并界定两套模型。子问题甲参数 a=0.0466、b=0.03995；子问题乙参数 a=0.09656、b=0.96432。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。",
+    "第二阶段｜甲模型推导。限制试剂是 Ba²⁺，反应一比一，沉淀物质的量为 b、质量为 233.39b；多余硫酸根=a−b。必须检查 b≤a。 逐量代入条件，得到 甲1=0.0399500000 mol BaSO₄；甲2=9.32393050 g BaSO₄；甲3=0.00665000000 mol sulfate remaining。",
+    "第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。",
+    "第四阶段｜乙模型推导。每 mol Al₂O₃ 理论产生 2 mol Al 与 1.5 mol O₂，铝还原每 mol Al 消耗 3mol 电子；有效电量=6nF，实际电量除以效率 b。阳极实际产气可能受电极材料影响，氧气仅作等效原子平衡。 逐量代入条件，得到 乙1=0.193120000 mol Al；乙2=0.144840000 mol O₂ equivalent；乙3=57968.0417 C current charge。",
+    "第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、1.437e-16、0.000。",
+    "第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。"
+  ],
+  "numeric_answers": [
+    0.03995,
+    9.3239305,
+    0.006650000000000003,
+    0.19312,
+    0.14484000000000002,
+    57968.0417465605
+  ],
+  "numeric_answer_units": [
+    "mol BaSO₄",
+    "g BaSO₄",
+    "mol sulfate remaining",
+    "mol Al",
+    "mol O₂ equivalent",
+    "C current charge"
+  ],
+  "inverse_residuals": [
+    0,
+    0,
+    0,
+    0,
+    1.4372191184563438e-16,
+    0
+  ],
+  "model_source_ids": [
+    "mcl2_sulfate_precipitation_mass",
+    "alumina_to_al_charge_and_oxygen"
+  ],
+  "parameter_indices": [
+    55,
+    72
+  ],
+  "source_model_pair_count": 2,
+  "independent_inverse_check_count": 6,
+  "disclosure": "264 distinct combinations of 48 pre-existing science topic models, 128 parameter sets per pair; zero new atomic knowledge topics.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multitopic-33792.mjs",
+    "topic_source_files": [
+      "scripts/advanced-chain/inorganic.mjs"
+    ],
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_two_distinct_topic_assignment",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original combined assignment of two independently authored science models; no source textbook/exam problem copied."
+  }
+}

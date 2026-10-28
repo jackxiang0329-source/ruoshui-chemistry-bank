@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "total_candidates": 31056,
-  "corpus_id_hash_sha256": "a92d0a420e20ea917324dddaae040ee7f82937c6e303526548757d6d187ae27c",
+  "total_candidates": 64848,
+  "corpus_id_hash_sha256": "6dc4166341c761f2246bf27c955376d3d9e7dfe3ff645049d6dc5e008c82d370",
   "by_subject": {
-    "analytical": 7506,
-    "inorganic": 8218,
-    "organic": 7812,
-    "physical": 7520
+    "analytical": 15954,
+    "inorganic": 16666,
+    "organic": 16260,
+    "physical": 15968
   },
   "by_content_kind": {
-    "exercise_candidate": 30778,
+    "exercise_candidate": 64570,
     "study_card": 278
   },
-  "topics_total": 29330,
-  "template_source_clusters": 30646,
+  "topics_total": 63122,
+  "template_source_clusters": 64438,
   "multi_variant_clusters": 66,
   "multi_variant_candidates": 476,
   "flag_counts": {
     "conceptual_answer_requires_expert_validation": 14,
     "item_level_rights_human_confirmation_pending": 21,
-    "numerical_answer_requires_scientific_review": 29617,
-    "semantic_duplicate_review_pending": 30228,
+    "numerical_answer_requires_scientific_review": 63409,
+    "semantic_duplicate_review_pending": 64020,
     "source_question_rights_not_explicitly_verified": 21,
     "study_card_not_exam_question": 278,
     "upstream_answer_key_requires_reconciliation": 11
@@ -40,7 +40,7 @@
     "organic": 32,
     "inorganic": 32
   },
-  "unselected_candidate_count": 30928,
+  "unselected_candidate_count": 64720,
   "expert_approved_count": 0,
   "publishable_count": 0,
   "source_rights_approved_by_this_process": 0,

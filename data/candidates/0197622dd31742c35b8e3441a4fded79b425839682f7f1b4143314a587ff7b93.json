@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "0197622dd31742c35b8e3441a4fded79b425839682f7f1b4143314a587ff7b93",
+  "subject": "organic",
+  "topic": "multitopic_ethanol_oxidation_acetaldehyde_oxygen_water__quant_nmr_mole_and_mass_fractions_case002",
+  "topic_family": "ethanol_oxidation_acetaldehyde_oxygen_water__quant_nmr_mole_and_mass_fractions",
+  "parameter_case": 2,
+  "level": "undergraduate",
+  "difficulty": "advanced_multi_part",
+  "question_type": "original_two_topic_six_target_assignment",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "pair_id": "ethanol_oxidation_acetaldehyde_oxygen_water__quant_nmr_mole_and_mass_fractions",
+  "index": 1,
+  "question": "原创同科双专题综合训练 · organic · ethanol_oxidation_acetaldehyde_oxygen_water__quant_nmr_mole_and_mass_fractions · 条件组 2。\n【子问题甲：ethanol_oxidation_acetaldehyde_oxygen_water】理想乙醇催化氧化按 C₂H₅OH+1/2O₂→CH₃CHO+H₂O 进行，初始乙醇为 0.04019mol，反应转化分数 0.82015，氧气过量且无乙酸或其它副产物。M(乙醛)=44.053、M(水)=18.015g/mol。求生成乙醛质量、水质量和消耗氧气的 mol 数。\n【子问题乙：quant_nmr_mole_and_mass_fractions】定量¹H NMR 中 X 专属峰积分 IX=3.162、Y 峰积分 IY=2.144，每个 X 分子贡献2个该峰的质子、每个 Y 分子贡献3个；两组分摩尔质量 MX=100、MY=80g/mol，峰积分充分弛豫且无其它组分。求 X/Y 摩尔数比、X 的摩尔百分数及其质量百分数。\n要求在同一份作业中给出两类不同知识模型的完整推导，分别报告每个子问题的三个结果（合计六个）。不同量纲的结果禁止直接相加或比较大小；必须逐一说明单位、假定和守恒或逆向验证。",
+  "answer": "甲：1.45206743 g acetaldehyde；0.593807340 g water；0.0164809142 mol O₂ consumed。乙：2.21222015 mole ratio X/Y；68.8688834 % mole X；73.4415162 % mass X。",
+  "explanation": "第一阶段｜读题并界定两套模型。子问题甲参数 a=0.04019、b=0.82015；子问题乙参数 a=3.162、b=2.144。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。\n\n第二阶段｜甲模型推导。反应进度 ξ=n乙醇×转化率=ab。乙醛和水分别各生成 ξ mol，氧气消耗 ξ/2 mol；逐个乘产物摩尔质量。实际选择性必须由题设限定。 逐量代入条件，得到 甲1=1.45206743 g acetaldehyde；甲2=0.593807340 g water；甲3=0.0164809142 mol O₂ consumed。\n\n第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。\n\n第四阶段｜乙模型推导。由定量峰积分得到 NX∝IX/2，NY∝IY/3，故摩尔比R=(3IX)/(2IY)；摩尔占比100R/(1+R)，质量占比100(R×MX)/(R×MX+MY)。 逐量代入条件，得到 乙1=2.21222015 mole ratio X/Y；乙2=68.8688834 % mole X；乙3=73.4415162 % mass X。\n\n第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 1.404e-16、2.007e-16、1.606e-16。\n\n第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。",
+  "solution_steps": [
+    "第一阶段｜读题并界定两套模型。子问题甲参数 a=0.04019、b=0.82015；子问题乙参数 a=3.162、b=2.144。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。",
+    "第二阶段｜甲模型推导。反应进度 ξ=n乙醇×转化率=ab。乙醛和水分别各生成 ξ mol，氧气消耗 ξ/2 mol；逐个乘产物摩尔质量。实际选择性必须由题设限定。 逐量代入条件，得到 甲1=1.45206743 g acetaldehyde；甲2=0.593807340 g water；甲3=0.0164809142 mol O₂ consumed。",
+    "第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。",
+    "第四阶段｜乙模型推导。由定量峰积分得到 NX∝IX/2，NY∝IY/3，故摩尔比R=(3IX)/(2IY)；摩尔占比100R/(1+R)，质量占比100(R×MX)/(R×MX+MY)。 逐量代入条件，得到 乙1=2.21222015 mole ratio X/Y；乙2=68.8688834 % mole X；乙3=73.4415162 % mass X。",
+    "第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 1.404e-16、2.007e-16、1.606e-16。",
+    "第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。"
+  ],
+  "numeric_answers": [
+    1.4520674309105,
+    0.5938073404274999,
+    0.01648091425,
+    2.2122201492537314,
+    68.86888340351386,
+    73.4415162119476
+  ],
+  "numeric_answer_units": [
+    "g acetaldehyde",
+    "g water",
+    "mol O₂ consumed",
+    "mole ratio X/Y",
+    "% mole X",
+    "% mass X"
+  ],
+  "inverse_residuals": [
+    0,
+    0,
+    0,
+    1.4044567041431456e-16,
+    2.0074367824552691e-16,
+    1.6059494259642154e-16
+  ],
+  "model_source_ids": [
+    "ethanol_oxidation_acetaldehyde_oxygen_water",
+    "quant_nmr_mole_and_mass_fractions"
+  ],
+  "parameter_indices": [
+    1,
+    18
+  ],
+  "source_model_pair_count": 2,
+  "independent_inverse_check_count": 6,
+  "disclosure": "264 distinct combinations of 48 pre-existing science topic models, 128 parameter sets per pair; zero new atomic knowledge topics.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multitopic-33792.mjs",
+    "topic_source_files": [
+      "scripts/advanced-chain/organic.mjs"
+    ],
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_two_distinct_topic_assignment",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original combined assignment of two independently authored science models; no source textbook/exam problem copied."
+  }
+}

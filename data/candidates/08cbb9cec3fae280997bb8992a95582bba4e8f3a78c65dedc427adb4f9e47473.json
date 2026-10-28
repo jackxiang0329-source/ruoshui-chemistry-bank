@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "08cbb9cec3fae280997bb8992a95582bba4e8f3a78c65dedc427adb4f9e47473",
+  "subject": "organic",
+  "topic": "multitopic_ethyl_acetate_saponification_products__monoalkene_hydrogenation_partial_conversion_case092",
+  "topic_family": "ethyl_acetate_saponification_products__monoalkene_hydrogenation_partial_conversion",
+  "parameter_case": 92,
+  "level": "undergraduate",
+  "difficulty": "advanced_multi_part",
+  "question_type": "original_two_topic_six_target_assignment",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "pair_id": "ethyl_acetate_saponification_products__monoalkene_hydrogenation_partial_conversion",
+  "index": 91,
+  "question": "原创同科双专题综合训练 · organic · ethyl_acetate_saponification_products__monoalkene_hydrogenation_partial_conversion · 条件组 92。\n【子问题甲：ethyl_acetate_saponification_products】乙酸乙酯 0.12912mol 与过量 NaOH 按 CH₃COOC₂H₅+NaOH→CH₃COONa+C₂H₅OH 发生定量计量的碱性水解，酯的转化分数为 0.77002。M(乙酸钠)=82.034、M(乙醇)=46.069g/mol。求乙酸钠质量、乙醇质量与未水解酯 mol 数。\n【子问题乙：monoalkene_hydrogenation_partial_conversion】某单烯烃摩尔质量 M=56.108g/mol，初始 0.12916mol，催化加氢时有 0.74268 的分子发生一个 C=C 完全加氢，其余未反应，氢气过量且无其它耗氢途径。M(H₂)=2.016g/mol。计算饱和产物质量、耗氢质量和剩余烯烃 mol 数。\n要求在同一份作业中给出两类不同知识模型的完整推导，分别报告每个子问题的三个结果（合计六个）。不同量纲的结果禁止直接相加或比较大小；必须逐一说明单位、假定和守恒或逆向验证。",
+  "answer": "甲：8.15622901 g sodium acetate；4.58040951 g ethanol；0.0296950176 mol unreacted ester。乙：5.57551847 g saturated product；0.193383890 g H₂ consumed；0.0332354512 mol remaining alkene。",
+  "explanation": "第一阶段｜读题并界定两套模型。子问题甲参数 a=0.12912、b=0.77002；子问题乙参数 a=0.12916、b=0.74268。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。\n\n第二阶段｜甲模型推导。反应进度=初始酯×转化率=ab，每 mol 反应的酯各产生1mol乙酸钠及乙醇，剩余酯为a(1−b)，未讨论实际工艺副反应。 逐量代入条件，得到 甲1=8.15622901 g sodium acetate；甲2=4.58040951 g ethanol；甲3=0.0296950176 mol unreacted ester。\n\n第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、1.396e-16、4.673e-16。\n\n第四阶段｜乙模型推导。已反应单烯烃 n=ab，对每摩尔反应底物消耗一摩尔 H₂，饱和产物摩尔质量是 56.108+2.016；其余 a(1−b)mol 不计入饱和产物。 逐量代入条件，得到 乙1=5.57551847 g saturated product；乙2=0.193383890 g H₂ consumed；乙3=0.0332354512 mol remaining alkene。\n\n第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、2.088e-16。\n\n第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。",
+  "solution_steps": [
+    "第一阶段｜读题并界定两套模型。子问题甲参数 a=0.12912、b=0.77002；子问题乙参数 a=0.12916、b=0.74268。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。",
+    "第二阶段｜甲模型推导。反应进度=初始酯×转化率=ab，每 mol 反应的酯各产生1mol乙酸钠及乙醇，剩余酯为a(1−b)，未讨论实际工艺副反应。 逐量代入条件，得到 甲1=8.15622901 g sodium acetate；甲2=4.58040951 g ethanol；甲3=0.0296950176 mol unreacted ester。",
+    "第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、1.396e-16、4.673e-16。",
+    "第四阶段｜乙模型推导。已反应单烯烃 n=ab，对每摩尔反应底物消耗一摩尔 H₂，饱和产物摩尔质量是 56.108+2.016；其余 a(1−b)mol 不计入饱和产物。 逐量代入条件，得到 乙1=5.57551847 g saturated product；乙2=0.193383890 g H₂ consumed；乙3=0.0332354512 mol remaining alkene。",
+    "第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、2.088e-16。",
+    "第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。"
+  ],
+  "numeric_answers": [
+    8.156229006201603,
+    4.580409514185601,
+    0.029695017599999998,
+    5.575518474451199,
+    0.1933838903808,
+    0.033235451199999995
+  ],
+  "numeric_answer_units": [
+    "g sodium acetate",
+    "g ethanol",
+    "mol unreacted ester",
+    "g saturated product",
+    "g H₂ consumed",
+    "mol remaining alkene"
+  ],
+  "inverse_residuals": [
+    0,
+    1.3958049046448162e-16,
+    4.673439832483704e-16,
+    0,
+    0,
+    2.0877989175327423e-16
+  ],
+  "model_source_ids": [
+    "ethyl_acetate_saponification_products",
+    "monoalkene_hydrogenation_partial_conversion"
+  ],
+  "parameter_indices": [
+    91,
+    108
+  ],
+  "source_model_pair_count": 2,
+  "independent_inverse_check_count": 6,
+  "disclosure": "264 distinct combinations of 48 pre-existing science topic models, 128 parameter sets per pair; zero new atomic knowledge topics.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multitopic-33792.mjs",
+    "topic_source_files": [
+      "scripts/advanced-chain/organic.mjs"
+    ],
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_two_distinct_topic_assignment",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original combined assignment of two independently authored science models; no source textbook/exam problem copied."
+  }
+}

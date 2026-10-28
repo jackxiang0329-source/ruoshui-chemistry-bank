@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "503ce0e902efce78ff476cb586ee6ca602f86dcac1bdaa3603af3af336bd30da",
+  "subject": "analytical",
+  "topic": "multitopic_double_endpoint_carbonate_speciation__weak_acid_ratio_and_both_species_case008",
+  "topic_family": "double_endpoint_carbonate_speciation__weak_acid_ratio_and_both_species",
+  "parameter_case": 8,
+  "level": "undergraduate",
+  "difficulty": "advanced_multi_part",
+  "question_type": "original_two_topic_six_target_assignment",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "pair_id": "double_endpoint_carbonate_speciation__weak_acid_ratio_and_both_species",
+  "index": 7,
+  "question": "原创同科双专题综合训练 · analytical · double_endpoint_carbonate_speciation__weak_acid_ratio_and_both_species · 条件组 8。\n【子问题甲：double_endpoint_carbonate_speciation】25.00 mL Na₂CO₃/NaHCO₃ 混合水样用 0.1000 mol/L HCl 滴定至酚酞终点累计耗酸 10.105 mL，再继续到甲基橙终点累计耗酸 27.35 mL。不存在 OH⁻ 等干扰，两个终点分别对应 CO₃²⁻→HCO₃⁻ 和 HCO₃⁻→CO₂。求两种原始阴离子的浓度及总耗酸的 mmol 数。\n【子问题乙：weak_acid_ratio_and_both_species】某单质子弱酸 HA 的 pKa=4.896、溶液 pH=5.12。仅有 HA 和 A⁻ 两形态，忽略活度差异、配位和自解离，采用 Henderson–Hasselbalch 关系，求[A⁻]/[HA]、HA 质量浓度之外的摩尔分布百分数以及 A⁻ 的摩尔分布百分数。\n要求在同一份作业中给出两类不同知识模型的完整推导，分别报告每个子问题的三个结果（合计六个）。不同量纲的结果禁止直接相加或比较大小；必须逐一说明单位、假定和守恒或逆向验证。",
+  "answer": "甲：0.0404200000 mol/L CO₃²⁻；0.0285600000 mol/L HCO₃⁻；2.73500000 mmol total acid。乙：1.67494288 [A⁻]/[HA] ratio；37.3839759 % HA；62.6160241 % A⁻。",
+  "explanation": "第一阶段｜读题并界定两套模型。子问题甲参数 a=10.105、b=27.35；子问题乙参数 a=5.12、b=4.896。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。\n\n第二阶段｜甲模型推导。第一终点消耗的酸是原 CO₃²⁻ 的 mmol 数；第二终点总酸是 2nCO3+nHCO3。分别以 25mL 原样换算浓度，并用总酸的 0.1000mol/L 与终点体积求 mmol。 逐量代入条件，得到 甲1=0.0404200000 mol/L CO₃²⁻；甲2=0.0285600000 mol/L HCO₃⁻；甲3=2.73500000 mmol total acid。\n\n第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。\n\n第四阶段｜乙模型推导。由 pH−pKa=log10([A⁻]/[HA]) 得比例 R=10^(a−b)；HA 摩尔占比=100/(1+R)%，A⁻ 摩尔占比=100R/(1+R)%，两者必须合计100%。 逐量代入条件，得到 乙1=1.67494288 [A⁻]/[HA] ratio；乙2=37.3839759 % HA；乙3=62.6160241 % A⁻。\n\n第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。\n\n第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。",
+  "solution_steps": [
+    "第一阶段｜读题并界定两套模型。子问题甲参数 a=10.105、b=27.35；子问题乙参数 a=5.12、b=4.896。两组参数不可互换；本题是跨章节并列综合训练而非单一化学反应系统。",
+    "第二阶段｜甲模型推导。第一终点消耗的酸是原 CO₃²⁻ 的 mmol 数；第二终点总酸是 2nCO3+nHCO3。分别以 25mL 原样换算浓度，并用总酸的 0.1000mol/L 与终点体积求 mmol。 逐量代入条件，得到 甲1=0.0404200000 mol/L CO₃²⁻；甲2=0.0285600000 mol/L HCO₃⁻；甲3=2.73500000 mmol total acid。",
+    "第三阶段｜甲模型验算。分别代回甲的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。",
+    "第四阶段｜乙模型推导。由 pH−pKa=log10([A⁻]/[HA]) 得比例 R=10^(a−b)；HA 摩尔占比=100/(1+R)%，A⁻ 摩尔占比=100R/(1+R)%，两者必须合计100%。 逐量代入条件，得到 乙1=1.67494288 [A⁻]/[HA] ratio；乙2=37.3839759 % HA；乙3=62.6160241 % A⁻。",
+    "第五阶段｜乙模型验算。分别代回乙的三个独立逆向或守恒方程，三个残差为 0.000、0.000、0.000。",
+    "第六阶段｜一致性检查。甲乙全部六个数值具有各自独立单位，不把不同量纲的量强行合并；指出各自的模型近似。机器恒等式验算不等于逐题专家科学审核。"
+  ],
+  "numeric_answers": [
+    0.040420000000000005,
+    0.028560000000000002,
+    2.7350000000000003,
+    1.6749428760264382,
+    37.383975895794656,
+    62.616024104205344
+  ],
+  "numeric_answer_units": [
+    "mol/L CO₃²⁻",
+    "mol/L HCO₃⁻",
+    "mmol total acid",
+    "[A⁻]/[HA] ratio",
+    "% HA",
+    "% A⁻"
+  ],
+  "inverse_residuals": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "model_source_ids": [
+    "double_endpoint_carbonate_speciation",
+    "weak_acid_ratio_and_both_species"
+  ],
+  "parameter_indices": [
+    7,
+    24
+  ],
+  "source_model_pair_count": 2,
+  "independent_inverse_check_count": 6,
+  "disclosure": "264 distinct combinations of 48 pre-existing science topic models, 128 parameter sets per pair; zero new atomic knowledge topics.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-multitopic-33792.mjs",
+    "topic_source_files": [
+      "scripts/advanced-chain/analytical.mjs"
+    ],
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_two_distinct_topic_assignment",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original combined assignment of two independently authored science models; no source textbook/exam problem copied."
+  }
+}
