@@ -145,6 +145,32 @@ assert.equal(v7IDs.size,60);
 const v7review=JSON.parse(read('editorial/advanced_integrated_v7/overlap_review_queue.json'));
 assert.equal(v7review.new_records,60);
 assert.equal(v7review.state,'pending_manual_cross_series_comparison');
+
+const v8IDs=new Set(),v8Titles=new Set();
+for(const [subject,letter] of Object.entries({inorganic:'I',analytical:'A',organic:'O',physical:'P'})){
+ let count=0;
+ for(let part=1;part<=3;part++){
+  const records=read('editorial/advanced_integrated_v8/'+subject+'_part'+part+'.jsonl').trimEnd().split('\n').map(JSON.parse);
+  assert.equal(records.length,5,'eighth series five per part');
+  for(const d of records){
+   assert.equal(d.subject,subject);
+   assert.equal(d.quality_status,'awaiting_expert_review');
+   assert.equal(d.publishable,false);assert.equal(d.exclude_from_official_bank,true);
+   assert.equal(d.novelty_review_status,'pending_cross_series_model_review');
+   assert.equal(d.parametric_variant,null);
+   assert.ok(d.solution_zh_steps.length>=7&&d.problem_zh.length>=90);
+   assert.ok(!v8IDs.has(d.id)&&!v8Titles.has(d.title));
+   v8IDs.add(d.id);v8Titles.add(d.title);count++;
+  }
+ }
+ assert.equal(count,15,'eighth '+subject+' allocation');
+}
+assert.equal(v8IDs.size,60);
+const v8queue=JSON.parse(read('editorial/advanced_integrated_v8/overlap_review_queue.json'));
+assert.equal(v8queue.status,'manual_cross_series_review_required');
+assert.ok(v8queue.suspected_pairs.length>0);
+assert.equal(v8queue.expert_approved_count,0);
+
 assert.ok(v7review.suspected_pairs.length>0);
 
 assert.ok(overlap.suspected_pairs.length>0);
@@ -156,9 +182,10 @@ for(const p of ['data/integrated_challenges','data/research_quarantine','externa
  '.github/workflows/chemistry-rqa-intake.yml','scripts/import-original-coupled-32768.mjs'])
  assert.equal(exists(p),false,'Deprecated low-difficulty resource returned: '+p);
 const release=JSON.parse(read('release/chemistry-approved-manifest.json'));
-assert.equal(release.advanced_editorial_items,246);
+assert.equal(release.advanced_editorial_items,306);
+assert.equal(release.eighth_series_pending_cross_series_novelty_review,60);
 assert.equal(release.seventh_series_pending_cross_series_novelty_review,60);
 assert.equal(release.sixth_series_pending_cross_series_novelty_review,50);
 assert.equal(release.approved_count,0);
 assert.deepEqual(release.items,[]);
-console.log('PASS: 186 previous records + 60 seventh-series cases = 246 editorial records; 15 per subject; expert approved 0, no low-difficulty backfill');
+console.log('PASS: 246 previous + 60 eighth-series items = 306 editorial records, 15 per subject, 0 expert approvals, unpublished');
