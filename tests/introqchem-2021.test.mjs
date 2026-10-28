@@ -55,3 +55,22 @@ test('additional authored numerical source cases pass inverse physical checks',(
   assert.throws(()=>verifyPhysics(item,x.numeric_answers.map(v=>v*1.1)),/mismatch/);
  }
 });
+
+test('original pinned student and answer notebooks: two false positives resolved, one unit error attributed to prompt',()=>{
+ const issue=t=>CASES.find(x=>x.topic===t)?.issue;
+ assert.equal(issue('complex_exponential_wavefunction'),'source_answer_confirmed');
+ assert.equal(issue('electron_waves_vs_atomic_lines'),'source_answer_confirmed');
+ assert.equal(issue('photon_radiation_pressure_force'),
+   'student_question_unit_incorrect_for_momentum_rate');
+ assert.equal(CASES.filter(x=>x.issue!=='source_answer_confirmed').length,11);
+ const rows=generate();
+ assert.equal(rows.filter(x=>x.source_key_issue!=='source_answer_confirmed').length,11);
+ assert.match(rows.find(x=>x.topic==='complex_exponential_wavefunction').answer,
+  /参考答案本已明确接受一般复参数形式/);
+ assert.match(rows.find(x=>x.topic==='electron_waves_vs_atomic_lines').answer,
+  /参考答案仅选择电子晶体散射/);
+ assert.match(rows.find(x=>x.topic==='photon_radiation_pressure_force').answer,
+  /学生题本把/);
+ assert.ok(rows.every(x=>x.publishable===false&&
+  x.source.content_rights_verified===false));
+});

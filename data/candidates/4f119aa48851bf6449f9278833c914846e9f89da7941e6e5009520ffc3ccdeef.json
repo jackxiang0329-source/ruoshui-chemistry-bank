@@ -8,12 +8,12 @@
   "question_type": "source_linked_quantum_course_exercise",
   "resource_type": "translated_fixed_course_exercise_not_parametric",
   "question": "量子化学·辐射压：532 nm、平均功率 100 mW 的单色光垂直照射完全吸收且不反射的表面，求平均光压力作用下的力（N），并明确其单位。",
-  "answer": "单光子动量为 h/λ；每秒的光子数为 P/(hc/λ)。单位时间动量转移是力 F=P/c，单位 N，而不是 kg·m/s。参考键把动量每秒误标为动量单位。\n精确常数计算：3.335641e-10（依题目单位依次对应）。",
-  "explanation": "单光子动量为 h/λ；每秒的光子数为 P/(hc/λ)。单位时间动量转移是力 F=P/c，单位 N，而不是 kg·m/s。参考键把动量每秒误标为动量单位。",
+  "answer": "单光子动量为 h/λ；每秒的光子数为 P/(hc/λ)。单位时间动量转移是力 F=P/c，单位 N，而不是 kg·m/s。学生题本把“每秒动量转移”要求以 kg·m/s 报告，这是动量而非动量变化率的单位；答案键计算出 P/c 的数值本身正确，不能把单位错误归咎于答案键。\n精确常数计算：3.335641e-10（依题目单位依次对应）。",
+  "explanation": "单光子动量为 h/λ；每秒的光子数为 P/(hc/λ)。单位时间动量转移是力 F=P/c，单位 N，而不是 kg·m/s。学生题本把“每秒动量转移”要求以 kg·m/s 报告，这是动量而非动量变化率的单位；答案键计算出 P/c 的数值本身正确，不能把单位错误归咎于答案键。",
   "numeric_answers": [
     3.3356409519815207e-10
   ],
-  "source_key_issue": "key_confuses_force_unit_with_momentum_unit",
+  "source_key_issue": "student_question_unit_incorrect_for_momentum_rate",
   "source_question_cell_index": 25,
   "source_key_cell_index": 25,
   "quality_status": "awaiting_expert_review",
