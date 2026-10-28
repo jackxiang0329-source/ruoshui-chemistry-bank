@@ -2,8 +2,8 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 36,
-  "preliminary_flags": 12,
+  "current_draft_count": 40,
+  "preliminary_flags": 14,
   "pairs": [
     {
       "new_id": "UC-ADV10-I102",
@@ -76,9 +76,21 @@
       "prior_id": "UC-ADV9-P96",
       "reason": "Both use adiabatic enthalpy balances; v10 adds temperature-dependent reaction enthalpy, integrated van't Hoff and gas equilibrium, versus v9 throttling flash. Need governing-equation-level review.",
       "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-I110",
+      "prior_id": "UC-ADV9-I97",
+      "reason": "Both analyze diffraction intensities; new case derives fcc extinction and NaCl basis phase interference, whereas v9 I97 inverts perovskite superstructure order parameter. Requires governing-equation comparison.",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-I110",
+      "prior_id": "UC-ADV5-I24",
+      "reason": "Both use Bragg geometry; new case adds full crystallographic structure factor and multiplicity/density coupling. Compare core model, not merely topic.",
+      "judgement": "pending_human_comparison"
     }
   ],
-  "notes": "All 36 records await chemistry, copyright and full cross-volume core-equation novelty review. 12 preliminary potential overlap pairs (including high-priority A109/A80 and O105/O73) are unresolved hypotheses. Expert approvals: zero.",
+  "notes": "All 40 records await chemistry, copyright and cross-volume core-equation review. 14 preliminary potential overlap pairs remain unresolved; no expert approvals. New v10 I110 has XRD-related prior models explicitly flagged.",
   "expert_approved": 0,
   "new_items_requiring_cross_series_comparison": [
     {
@@ -224,6 +236,30 @@
       "model_family": "adiabatic-chemical-equilibrium-variable-Cp-vanthoff-coupling",
       "judgement": "pending_human_comparison",
       "screening": "Machine numerical witness checked; prior v9 title/model-family screen and explicit overlap flags do not establish originality. Full cross-series equation-level human comparison pending."
+    },
+    {
+      "new_id": "UC-ADV10-I110",
+      "model_family": "fcc-rocksalt-extinction-structure-factor-density",
+      "judgement": "pending_human_comparison",
+      "screening": "Full cross-series core-equation comparison and expert review not completed; machine witness checks only."
+    },
+    {
+      "new_id": "UC-ADV10-A110",
+      "model_family": "tga-ms-cross-sensitivity-stoichiometric-inverse-mass-audit",
+      "judgement": "pending_human_comparison",
+      "screening": "Full cross-series core-equation comparison and expert review not completed; machine witness checks only."
+    },
+    {
+      "new_id": "UC-ADV10-O107",
+      "model_family": "gross-butler-proton-inventory-multiroot-identifiability",
+      "judgement": "pending_human_comparison",
+      "screening": "Full cross-series core-equation comparison and expert review not completed; machine witness checks only."
+    },
+    {
+      "new_id": "UC-ADV10-P107",
+      "model_family": "ortho-para-hydrogen-spin-rotor-partition-frozen-equilibrium",
+      "judgement": "pending_human_comparison",
+      "screening": "Full cross-series core-equation comparison and expert review not completed; machine witness checks only."
     }
   ]
 }

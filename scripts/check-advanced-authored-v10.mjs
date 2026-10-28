@@ -10,6 +10,53 @@ const F=96485.33212;
 const T=280,J=2400,q=Math.exp(-J/(R*T)),Z=1+3*q,p=3*q/Z;
 const w={
 
+ "UC-ADV10-I110":()=>{
+  // Independent atomic phase sum over eight crystallographic sites (not parity formula).
+  const cl=[[0,0,0],[0,.5,.5],[.5,0,.5],[.5,.5,0]];
+  const na=cl.map(x=>[(x[0]+.5)%1,x[1],x[2]]);
+  const F=(h,k,l)=>cl.reduce((s,x)=>s+17*Math.cos(2*Math.PI*(h*x[0]+k*x[1]+l*x[2])),0)+na.reduce((s,x)=>s+11*Math.cos(2*Math.PI*(h*x[0]+k*x[1]+l*x[2])),0);
+  const f111=F(1,1,1),f200=F(2,0,0),f100=F(1,0,0);
+  assert.ok(Math.abs(f100)<1e-10&&Math.abs(F(2,2,0)-112)<1e-10);
+  const angle=(h,k,l)=>{const d=5.640/Math.hypot(h,k,l),s=1.5406/(2*d);assert.ok(s>0&&s<1);return 2*Math.asin(s)*180/Math.PI};
+  return [angle(1,1,1),angle(2,0,0),angle(2,2,0),4*58.44/(6.02214076e23*(5.640e-8)**3),6*f200*f200/(8*f111*f111),f111,f200];
+ },
+ "UC-ADV10-A110":()=>{
+  // Independent elimination from two calibrated MS channels, plus separate residue audit.
+  const gasC=(9.2-.05*8.6/2)/(1.5-.05*.1/2),gasW=(8.6-.1*gasC)/2;
+  const mg=gasW*58.319/1000,ca=gasC*100.086/1000,si=1-mg-ca;
+  const loss=(gasW*18.015+gasC*44.009)/1000;
+  const residue=(gasW*40.304+gasC*56.077)/1000+si;
+  assert.ok(Math.abs(2*gasW+.1*gasC-8.6)<1e-12&&Math.abs(.05*gasW+1.5*gasC-9.2)<1e-12);
+  assert.ok(Math.abs(loss-.336114)<1e-12&&Math.abs(residue+loss-1)<1e-12&&si>0);
+  return [gasW,gasC,mg,ca,si,loss,residue,ca/(mg+ca)];
+ },
+ "UC-ADV10-O107":()=>{
+  // Independent bisection on the measured half-deuteration response, not quadratic formula.
+  const d=.4**2/.9,h=(1+.4)**2/(2*(1+.9));
+  const f=x=>(1+x)**2/(2*(1+x*x/d))-h;
+  function bis(lo,hi){let fl=f(lo);assert.ok(fl*f(hi)<0);for(let i=0;i<90;i++){let m=(lo+hi)/2;if(fl*f(m)<=0)hi=m;else {lo=m;fl=f(m)}}return (lo+hi)/2}
+  const small=bis(.01,.05),large=bis(.3,.6),bs=small*small/d,bl=large*large/d;
+  const atQuarter=(x,y)=>(.75+.25*x)**2/(.75+.25*y);
+  assert.ok(Math.abs(atQuarter(large,bl)-.741025641025641)<1e-12&&Math.abs(atQuarter(small,bs)-.741025641025641)>1e-3);
+  assert.ok(Math.abs(large*large/bl-d)<1e-12&&Math.abs(small*small/bs-d)<1e-12);
+  return [large,bl,small,bs,atQuarter(large,bl),atQuarter(small,bs),.12*d];
+ },
+ "UC-ADV10-P107":()=>{
+  // Independently enumerate each spin sector and finite-difference U(T) for heat capacities.
+  const R=8.314462618,th=85.4;
+  function energies(T){
+   const groups=[[],[]];
+   for(let j=0;j<=8;j++)groups[j%2].push([(2*j+1)*Math.exp(-th*j*(j+1)/T),th*j*(j+1)]);
+   const Z=g=>g.reduce((s,x)=>s+x[0],0),avg=g=>g.reduce((s,x)=>s+x[0]*x[1],0)/Z(g);
+   const zp=Z(groups[0]),zo=3*Z(groups[1]),ep=avg(groups[0]),eo=avg(groups[1]),fo=zo/(zp+zo);
+   return [zp,zo,fo,R*((1-fo)*ep+fo*eo),R*(.25*ep+.75*eo)];
+  }
+  const e=energies(100),h=.0001,plus=energies(100+h),minus=energies(100-h);
+  const cv=(plus[3]-minus[3])/(2*h),cvf=(plus[4]-minus[4])/(2*h);
+  assert.ok(cv>0&&cvf>0&&e[2]<.75&&e[2]>0);
+  return [e[0],e[1],e[2],e[3],cv,e[4],cvf,e[4]-e[3]];
+ },
+
  "UC-ADV10-I109":()=>{
   // Independent symmetric mass-weighted Jacobi diagonalization, not secular quadratic.
   const u=1.66053906660e-27,k=800,c=299792458;
