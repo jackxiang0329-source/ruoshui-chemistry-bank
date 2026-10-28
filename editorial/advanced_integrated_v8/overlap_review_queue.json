@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "series": "advanced_integrated_v8",
+  "status": "manual_cross_series_review_required",
+  "scope": "Eighth series contains 60 NEW EDITORIAL RECORDS, not proven to contain 60 distinct scientific models.",
+  "potential_pairs_count": 45,
+  "suspected_pairs": [
+    {
+      "new_id": "UC-ADV8-I61",
+      "prior_id": "UC-ADV7-I47",
+      "reason": "酸形态配体与金属总量共同约束",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-I64",
+      "prior_id": "UC-ADV7-I52",
+      "reason": "逐级两配体配分和有限物料",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-I65",
+      "prior_id": "UC-ADV7-I57",
+      "reason": "双能级简并配分与热容",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-I67",
+      "prior_id": "UC-ADV7-I50",
+      "reason": "异价阳离子掺杂与平均价态",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-I68",
+      "prior_id": "UC-ADV7-I58",
+      "reason": "二元酸的三形态配分",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-I69",
+      "prior_id": "UC-ADV7-I53",
+      "reason": "固定自由浓度的竞争配位",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-I70",
+      "prior_id": "UC-ADV6-I42",
+      "reason": "多通道载流子电导的相加",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-I73",
+      "prior_id": "UC-ADV7-I57",
+      "reason": "热构型占有分数统计",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-I74",
+      "prior_id": "UC-ADV7-I60",
+      "reason": "封闭固体分解气压与限量固相",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-A61",
+      "prior_id": "UC-ADV6-A33",
+      "reason": "饱和传感信号反演",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-A62",
+      "prior_id": "UC-ADV7-A46",
+      "reason": "三波长双组分与未知背景",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-A63",
+      "prior_id": "UC-ADV7-A47",
+      "reason": "同位素内标与共同回收率",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-A64",
+      "prior_id": "UC-ADV7-A51",
+      "reason": "有限顶空分配",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-A66",
+      "prior_id": "UC-ADV7-A48",
+      "reason": "弱酸滴定电中性求根",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-A67",
+      "prior_id": "UC-ADV6-A38",
+      "reason": "计数死时间修正",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-A68",
+      "prior_id": "UC-ADV6-A41",
+      "reason": "混合检测池衰减与停留时间",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-A69",
+      "prior_id": "UC-ADV6-A36",
+      "reason": "双电位窗电子当量反演",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-A70",
+      "prior_id": "UC-ADV7-A53",
+      "reason": "有限探针与金属络合反演",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-A71",
+      "prior_id": "UC-ADV7-A59",
+      "reason": "NMR T1恢复率和内标校正",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-A73",
+      "prior_id": "UC-ADV7-A56",
+      "reason": "顺序两相萃取的连乘形式",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-A74",
+      "prior_id": "UC-ADV7-A57",
+      "reason": "库仑测量的空白与效率校正",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-A75",
+      "prior_id": "UC-ADV7-A55",
+      "reason": "竞争占位和传感通道",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-O58",
+      "prior_id": "UC-ADV6-O40",
+      "reason": "有限底物二级物料守恒（反应网络不同）",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-O59",
+      "prior_id": "UC-ADV7-O56",
+      "reason": "两级一级反应中间体最优性",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-O60",
+      "prior_id": "UC-ADV6-O34",
+      "reason": "对映体速率差与剩余ee",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-O61",
+      "prior_id": "UC-ADV6-O32",
+      "reason": "活性聚合Poisson分布",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-O62",
+      "prior_id": "UC-ADV7-O47",
+      "reason": "亚胺缩合与初始水抑制",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-O64",
+      "prior_id": "UC-ADV6-O33",
+      "reason": "Michaelis积分底物耗竭",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-O66",
+      "prior_id": "UC-ADV6-O37",
+      "reason": "末端Markov共聚二联体",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-O67",
+      "prior_id": "UC-ADV7-O52",
+      "reason": "构象Boltzmann加权谱学响应",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-O68",
+      "prior_id": "UC-ADV7-O46",
+      "reason": "缩聚链长与不等量官能团",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-O70",
+      "prior_id": "UC-ADV6-O35",
+      "reason": "竞争抑制剂催化占位",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-O71",
+      "prior_id": "UC-ADV6-O42",
+      "reason": "两温度Arrhenius速率",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-P58",
+      "prior_id": "UC-ADV6-P38",
+      "reason": "第二维里系数逸度",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-P59",
+      "prior_id": "UC-ADV6-P37",
+      "reason": "正则溶液自旋不稳定边界",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-P60",
+      "prior_id": "UC-ADV6-P32",
+      "reason": "热容差修正温度依赖平衡",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-P63",
+      "prior_id": "UC-ADV7-P50",
+      "reason": "Flory-Huggins自旋临界",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-P65",
+      "prior_id": "UC-ADV7-P53",
+      "reason": "逆流热交换器NTU和熵",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-P66",
+      "prior_id": "UC-ADV7-P43",
+      "reason": "Rachford-Rice三元闪蒸",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-P67",
+      "prior_id": "UC-ADV6-P34",
+      "reason": "有限热库可逆热机",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-P68",
+      "prior_id": "UC-ADV7-P47",
+      "reason": "电极动力学与电势非线性",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-P69",
+      "prior_id": "UC-ADV7-P55",
+      "reason": "静止载气Stefan扩散",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-P70",
+      "prior_id": "UC-ADV7-P45",
+      "reason": "Margules泡点模型",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-P71",
+      "prior_id": "UC-ADV7-P48",
+      "reason": "绝热CSTR反馈稳态",
+      "verification": "pending human core-model comparison"
+    },
+    {
+      "new_id": "UC-ADV8-P72",
+      "prior_id": "UC-ADV6-P35",
+      "reason": "催化扩散Thiele效能，几何不同",
+      "verification": "pending human core-model comparison"
+    }
+  ],
+  "unpaired_records_review_status": "pending",
+  "expert_approved_count": 0
+}
