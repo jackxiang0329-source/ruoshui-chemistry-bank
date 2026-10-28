@@ -102,6 +102,12 @@ on:
       - "tests/audit-original-multistep-science.test.mjs"
       - "scripts/update-chemistry-readme-snapshot.mjs"
       - "tests/update-chemistry-readme-snapshot.test.mjs"
+      - "scripts/import-original-dual-3072.mjs"
+      - "tests/original-dual-3072.test.mjs"
+      - "scripts/bulk-original-4096-inorganic.mjs"
+      - "scripts/bulk-original-4096-analytical.mjs"
+      - "scripts/bulk-original-4096-organic.mjs"
+      - "scripts/bulk-original-4096-physical.mjs"
       - "scripts/import-original-chapter-1152.mjs"
       - "tests/original-chapter-1152.test.mjs"
       - "scripts/import-original-rapid-240.mjs"
@@ -254,6 +260,8 @@ jobs:
         run: node --test tests/audit-original-multistep-science.test.mjs
       - name: Verify fail-closed audit-synchronized README snapshot
         run: node --test tests/update-chemistry-readme-snapshot.test.mjs
+      - name: Verify 3072 original dual-answer chemistry cases and 6144 inverse equations
+        run: node --test tests/original-dual-3072.test.mjs
       - name: Verify 1152 new original chemistry cases and 48 independently authored teaching topics
         run: node --test tests/original-chapter-1152.test.mjs
       - name: Verify 240 original chemistry exercises grouped into 48 topical families
@@ -336,6 +344,8 @@ jobs:
         run: node scripts/import-original-analytical-variants.mjs
       - name: Stage nine source-linked quantum chemistry course exercises for human review
         run: node scripts/import-introqchem-2021.mjs
+      - name: Persist 3072 original dual-result chemistry exercises across four disciplines
+        run: node scripts/import-original-dual-3072.mjs
       - name: Persist 1152 original chemistry practice solutions across four disciplines
         run: node scripts/import-original-chapter-1152.mjs
       - name: Persist 240 original four-discipline chemistry problem solutions

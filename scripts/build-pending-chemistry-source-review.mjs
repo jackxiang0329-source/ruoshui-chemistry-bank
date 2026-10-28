@@ -35,6 +35,8 @@ export function buildPending(rows,quality,coverage){
  const multistep=coverage?.main_new_multistep_source_replayed||0;
  const rapid=coverage?.main_new_rapid_240_source_replayed||0;
  const chapter=coverage?.main_new_chapter_1152_source_replayed||0;
+ const dual=coverage?.main_new_dual_3072_source_replayed||0;
+ if(!Number.isInteger(dual)||dual<0||dual>3072)throw Error('Unsafe source review extension from 3072 candidates');
  if(!Number.isInteger(chapter)||chapter<0||chapter>1152)throw Error('Unsafe chapter 1152 provenance count');
  if(!Number.isInteger(rapid)||rapid<0||rapid>240)throw Error('Unsafe new rapid topic replay extension');
  if(!Number.isInteger(multistep)||multistep<0||multistep>12)throw Error('Unsafe new multistep replay extension');
@@ -44,14 +46,14 @@ export function buildPending(rows,quality,coverage){
  if(!Number.isInteger(added)||added<0||added>120)throw Error('Unsafe chemistry replay extension');
  if(!Array.isArray(rows)||rows.length!==quality?.total_candidates||
   coverage?.main_candidate_records!==rows.length||
-  coverage?.main_unique_candidate_records_machine_replayed!==1715+added+reasoning+integrated+apTopics+multistep+rapid+chapter||
-  coverage?.main_exercise_candidates!==1437+added+reasoning+integrated+apTopics+multistep+rapid+chapter||
+  coverage?.main_unique_candidate_records_machine_replayed!==1715+added+reasoning+integrated+apTopics+multistep+rapid+chapter+dual||
+  coverage?.main_exercise_candidates!==1437+added+reasoning+integrated+apTopics+multistep+rapid+chapter+dual||
   coverage?.main_study_cards!==278||
   coverage?.main_candidate_records_not_yet_machine_replayed!==0||
   coverage?.confirmed_official_exam_ready!==0)
   throw Error('Remaining source audit queue based on stale or unapproved corpus');
  const expected={...COVERED,...TODO,
-  'jackxiang0329-source/ruoshui-chemistry-bank':304+added+reasoning+integrated+apTopics+multistep+rapid+chapter};
+  'jackxiang0329-source/ruoshui-chemistry-bank':304+added+reasoning+integrated+apTopics+multistep+rapid+chapter+dual};
  if(Object.keys(quality.source_counts||{}).length!==Object.keys(expected).length||
    Object.entries(expected).some(([name,n])=>quality.source_counts[name]!==n))
   throw Error('New or changed chemistry source needs explicit audit family classification');
