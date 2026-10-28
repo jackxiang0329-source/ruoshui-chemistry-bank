@@ -120,6 +120,33 @@ assert.equal(sixthIDs.size,50);
 const overlap=JSON.parse(read('editorial/advanced_integrated_v6/overlap_review_queue.json'));
 assert.equal(overlap.status,'manual_cross_series_review_required');
 assert.equal(overlap.total_new_records,50);
+
+const v7Specs={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
+const v7IDs=new Set(),v7Titles=new Set();
+for(const [subject,code] of Object.entries(v7Specs)){
+ let count=0;
+ for(let n=1;n<=3;n++){
+  const records=read('editorial/advanced_integrated_v7/'+subject+'_part'+n+'.jsonl').trimEnd().split('\n').map(JSON.parse);
+  assert.equal(records.length,5);
+  for(const q of records){
+   assert.equal(q.subject,subject);
+   assert.equal(q.novelty_review_status,'pending_cross_series_model_review');
+   assert.equal(q.parametric_variant,null);
+   assert.equal(q.publishable,false);assert.equal(q.exclude_from_official_bank,true);
+   assert.equal(q.quality_status,'awaiting_expert_review');
+   assert.ok(q.problem_zh.length>=110&&q.solution_zh_steps.length>=8);
+   assert.ok(!v7IDs.has(q.id)&&!v7Titles.has(q.title));
+   v7IDs.add(q.id);v7Titles.add(q.title);count++;
+  }
+ }
+ assert.equal(count,15,subject+' must have 15 added cases');
+}
+assert.equal(v7IDs.size,60);
+const v7review=JSON.parse(read('editorial/advanced_integrated_v7/overlap_review_queue.json'));
+assert.equal(v7review.new_records,60);
+assert.equal(v7review.state,'pending_manual_cross_series_comparison');
+assert.ok(v7review.suspected_pairs.length>0);
+
 assert.ok(overlap.suspected_pairs.length>0);
 
 
@@ -129,8 +156,9 @@ for(const p of ['data/integrated_challenges','data/research_quarantine','externa
  '.github/workflows/chemistry-rqa-intake.yml','scripts/import-original-coupled-32768.mjs'])
  assert.equal(exists(p),false,'Deprecated low-difficulty resource returned: '+p);
 const release=JSON.parse(read('release/chemistry-approved-manifest.json'));
-assert.equal(release.advanced_editorial_items,186);
+assert.equal(release.advanced_editorial_items,246);
+assert.equal(release.seventh_series_pending_cross_series_novelty_review,60);
 assert.equal(release.sixth_series_pending_cross_series_novelty_review,50);
 assert.equal(release.approved_count,0);
 assert.deepEqual(release.items,[]);
-console.log('PASS: 136 existing editorials + 50 sixth-series pending novelty review = 186 draft records, zero low-difficulty candidates, zero expert approvals');
+console.log('PASS: 186 previous records + 60 seventh-series cases = 246 editorial records; 15 per subject; expert approved 0, no low-difficulty backfill');
