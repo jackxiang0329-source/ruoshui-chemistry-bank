@@ -161,3 +161,11 @@
 - 共有 **7 道教材原题没有附参考答案**，已补充独立计算数值但尚未完成完整专家解答审定；同时有 **3 处参考答案标签/题号差异**及 **1 处原题疑似化学式誊写错误**。这些问题在 [人工复核优先队列](external_sources/openstax_chemistry/review_priority.json) 中分开标识，不能误认为四项已确认的科学性错误。
 - 仅有此前 **8 道**经过中文题干和推导整理的草稿；新增 22 道目前为原题级数值复核记录，不等同于额外 22 道完善中文解答。
 - 旧版 OpenStax 题源版本及版权链冲突仍未解决：全部研究材料继续隔离，**自动写入主候选库 0、逐题版权确认 0、专家正式批准 0**。不能因为数值测试通过而解除版权与组卷闸门。
+
+## 2026-10-28：42 道教材来源数值审核与 34 道中文逐题独立推导
+
+- [42 道独立数值计算审计](external_sources/openstax_chemistry/independent_numeric_review.json)保留原题 ID、源章节、固定 commit、逆向检验与参考答案差异；其中 3 项答案标签/小题编号问题及 1 项题干化学式疑点，均待人工专家判断。
+- [34 道中文推导 Markdown](external_sources/openstax_chemistry/chinese_independent_derivations.md)和[结构化计算说明](external_sources/openstax_chemistry/chinese_independent_derivations.json)：对原先仅有数值审核的 34 个来源题，新增有具体公式、代入、数值、单位、有效数字及科学模型限制的独立评论，不复制教材原题全文。
+- 另有[8 道既存中文较完整草稿](external_sources/openstax_chemistry/chinese_science_review.json)，均属于外部审核材料，**未进入正式组卷题库**。
+- [多层级统计](harvest/coverage_report.json)同步分别显示主候选题、NVIDIA 研究隔离问答、OpenStax 原题、数值复核数量、中文说明数量、专家正式批准数量。42 是外部研究工作量，不能额外加到候选题总数之上。
+- 所有 OpenStax 权利、中文改编及模型假设仍未获得来源逐题批准与专家正式审核，仓库持续阻止自动进入 data/candidates 或 release。

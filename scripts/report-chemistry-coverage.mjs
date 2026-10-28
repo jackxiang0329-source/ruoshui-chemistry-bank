@@ -4,7 +4,7 @@ import {readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {join,dirname,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
-export function summarize(main,external,publication,rqaState,rqaReview){
+export function summarize(main,external,publication,rqaState,rqaReview,science,derivations){
  const whole=main?.total_candidates,exercise=main?.by_content_kind?.exercise_candidate,
   card=main?.by_content_kind?.study_card,raw=external?.raw_staged_candidates;
  if(!Number.isInteger(whole)||!Number.isInteger(exercise)||!Number.isInteger(card)||
@@ -16,7 +16,20 @@ export function summarize(main,external,publication,rqaState,rqaReview){
   !Number.isInteger(rqaState.examined)||rqaState.examined<rqaState.staged_total||
   rqaReview?.evaluated_count!==rqaState.staged_total||
   rqaReview.staging_only!==true||rqaReview.all_qa_are_unverified!==true||
-  rqaReview.automatic_approved_questions!==0)
+  rqaReview.automatic_approved_questions!==0||
+  !Number.isInteger(science?.reviewed_source_cases)||
+  science.reviewed_source_cases!==science.items?.length||
+  science.publishable!==0||science.rights_confirmations!==0||
+  science.scholarly_human_confirmations!==0||
+  !Number.isInteger(science.source_answer_discrepancies)||
+  !Number.isInteger(science.source_question_typographical_issues)||
+  derivations?.numeric_review_count!==science.reviewed_source_cases||
+  derivations?.new_chinese_independent_derivations!==derivations?.items?.length||
+  derivations?.previous_full_chinese_drafts+derivations?.new_chinese_independent_derivations!==
+    science.reviewed_source_cases||
+  derivations.edition_rights_unresolved!==true||
+  derivations.expert_approved!==0||derivations.reuse_rights_approved!==0||
+  derivations.released_for_exams!==0)
   throw Error('Unsafe or inconsistent chemistry coverage sources');
  return {schema_version:1,
   main_candidate_records:whole,main_exercise_candidates:exercise,main_study_cards:card,
@@ -25,6 +38,12 @@ export function summarize(main,external,publication,rqaState,rqaReview){
   nvidia_research_rows_examined:rqaState.examined,
   combined_record_count_not_unique_exercises:whole+raw+rqaState.staged_total,
   confirmed_official_exam_ready:publication.approved_count,
+  external_numeric_source_reviews:science.reviewed_source_cases,
+  external_source_answer_key_issue_records:science.source_answer_discrepancies,
+  external_source_formula_typo_records:science.source_question_typographical_issues,
+  external_chinese_full_draft_reviews:derivations.previous_full_chinese_drafts,
+  external_chinese_independent_derivation_notes:derivations.new_chinese_independent_derivations,
+  external_chinese_review_rights_blocked:true,
   external_openstax_work_license:external.work_license,
   external_source_exercise_blocks_with_original_solution:external.with_source_solution,
   external_sections_inspected:external.chapters_inspected,
@@ -46,6 +65,8 @@ export function run(){
   ' openstax_raw='+summary.external_oer_unreviewed_blocks+
   ' nvidia_rqa_quarantine='+summary.nvidia_synthetic_research_quarantine_records+
   ' combined_records='+summary.combined_record_count_not_unique_exercises+
+  ' external_independent_science='+summary.external_numeric_source_reviews+
+  ' Chinese_external_notes='+summary.external_chinese_independent_derivation_notes+
   ' published='+summary.confirmed_official_exam_ready);
  return summary;
 }
