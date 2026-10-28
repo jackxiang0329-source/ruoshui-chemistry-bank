@@ -1,0 +1,26 @@
+name: Chemistry advanced authored editorial QA
+on:
+  push:
+    paths:
+      - 'editorial/advanced_integrated_v2/**'
+      - 'scripts/check-advanced-authored-chemistry.mjs'
+      - '.github/workflows/chemistry-advanced-editorial-qa.yml'
+  pull_request:
+    paths:
+      - 'editorial/advanced_integrated_v2/**'
+      - 'scripts/check-advanced-authored-chemistry.mjs'
+  workflow_dispatch:
+
+jobs:
+  advanced-science-gate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Verify individually authored high-level chemistry problems and complete answers
+        run: node scripts/check-advanced-authored-chemistry.mjs
