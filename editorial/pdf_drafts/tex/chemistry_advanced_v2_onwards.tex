@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至8辑 (239题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至8辑 (249题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -4801,6 +4801,206 @@ HOx仅假想氧化态质子物种，Red不质子化，忽略活度效应。\par
 答案1 = 0.195168487；答案2 = 0.595168487；答案3 = 1522.3142；答案4 = 11.9604164\par
 \noindent\textbf{模型前提：}
 忽略其它磁耦合及振动热容，高低态响应不随温度变。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-I66 · 金属络合掩蔽对氢氧化物以外盐沉淀的过饱和判断}
+\noindent\textbf{题目}\par
+金属M2+分析总量0.005000M、单负配体L总量0.01000M，只有ML+且KML=800L/mol。自由阴离子X−由外部固定为0.004000M，潜在MX2(s)的Ksp=1.00×10\textasciicircum{}-7。先假设不存在固相，严格求有限配体络合平衡、游离金属和离子积Q，判断是否达到固相热力学稳定，并说明若析出需要添加何种物料变量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设游离配体l，金属自由m=C/(1+Kl)，ML=C−m。
+\item 配体方程L=l+CKl/(1+Kl)单调递增，唯一根l=0.00587695265M。
+\item 代回得到m=0.000876952648M、ML=0.00412304735M。
+\item 离子积Q=m[X]²=1.40312424e-8，相对饱和比Q/Ksp=0.140312424。
+\item 若Q>Ksp，真实平衡要新增沉淀量ξ并重解金属元素守恒；若Q≤Ksp，初始无沉淀假设可自洽。
+\item 各元素和电荷的独立守恒、根的物理区间以及适用条件均须满足。
+\item 重新代入题定物理方程，得到无量纲数值残差：-1.73e-16、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00587695265；答案2 = 0.000876952648；答案3 = 0.00412304735；答案4 = 1.40312424e-08；答案5 = 0.140312424\par
+\noindent\textbf{模型前提：}
+只包含题列物种与理想平衡/传导假设，不代表已获化学专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-I67 · 钙钛矿异价A位掺杂与铁离子价态补偿}
+\noindent\textbf{题目}\par
+假想La\_(1−x)Sr\_xFeO3中La3+、Sr2+，x=0.1200，氧固定三个O2−且Fe仅存在3+/4+，不允许氧缺陷。求Fe4+比例、Fe平均价、每0.2500mol样品中Fe4+的mol；若高自旋Fe3+饱和共线矩5μB、Fe4+为4μB，求每化学式形式饱和磁矩，并解释这与真实磁有序不同。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item A位平均正价为3(1−x)+2x=3−x。
+\item 以3−x+vFe−6=0得铁平均价vFe=3+x=3.12。
+\item Fe只允许+3/+4，故Fe4+比例为x=0.12。
+\item 0.2500mol样品含Fe4+量0.25x=0.03mol。
+\item 共线形式磁矩μ=5(1−x)+4x=4.88μB；磁性耦合和自旋排列不由电中性确定。
+\item 各元素和电荷的独立守恒、根的物理区间以及适用条件均须满足。
+\item 重新代入题定物理方程，得到无量纲数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 3.12；答案2 = 0.12；答案3 = 0.03；答案4 = 4.88\par
+\noindent\textbf{模型前提：}
+只包含题列物种与理想平衡/传导假设，不代表已获化学专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-I68 · 二元无机氧酸逐级电离的总负电荷与缓冲需求}
+\noindent\textbf{题目}\par
+无机二元酸H2XO4总浓度0.02000M，Ka1=5.00×10\textasciicircum{}-4、Ka2=2.00×10\textasciicircum{}-5；强缓冲固定[H+]=2.00×10\textasciicircum{}-4M，全部物种只含H2XO4、HXO4−、XO4²−。求三形态浓度、阴离子总电荷浓度和平均负价，并解释若忽略第二电离为何得到不准确的缓冲电荷账本。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 分布分母D=h²+Ka1h+Ka1Ka2。
+\item 比例α0=h²/D、α1=Ka1h/D、α2=Ka1Ka2/D，求得0.266666667、0.666666667、0.0666666667。
+\item 三物种浓度为0.00533333333、0.0133333333、0.00133333333M。
+\item 净负电荷浓度[HXO4−]+2[XO4²−]=0.016M。
+\item 每mol酸平均负电荷ν=α1+2α2=0.8；不能把第二电离视为独立单酸过程。
+\item 各元素和电荷的独立守恒、根的物理区间以及适用条件均须满足。
+\item 重新代入题定物理方程，得到无量纲数值残差：0.00e+0、-1.73e-16、8.33e-17。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00533333333；答案2 = 0.0133333333；答案3 = 0.00133333333；答案4 = 0.016；答案5 = 0.8\par
+\noindent\textbf{模型前提：}
+只包含题列物种与理想平衡/传导假设，不代表已获化学专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-I69 · 金属离子固定自由浓度下的配位探针光谱反演}
+\noindent\textbf{题目}\par
+无机光谱探针S总浓度0.002000M，只能以1:1与M2+形成SM，形成常数400L/mol。外部流动金属库保持游离[M2+]=0.006000M；自由探针和络合探针吸光系数分别为200和800 L/(mol cm)，光程1cm。求自由/结合探针浓度、金属占位率、光谱总吸光与若错误把总金属量当自由金属带来的模型区别。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 金属自由m已由外部固定，无需未知金属总量。
+\item 设自由S=s，配位SM=Kms，探针守恒C=s+SM。
+\item 解得s=C/(1+Km)=0.000588235294M。
+\item SM=0.00141176471M，探针占位分数SM/C=0.705882353。
+\item 吸光A=200s+800SM=1.24705882；有限闭合金属样品需另立金属元素守恒。
+\item 各元素和电荷的独立守恒、根的物理区间以及适用条件均须满足。
+\item 重新代入题定物理方程，得到无量纲数值残差：0.00e+0、-1.11e-16、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.000588235294；答案2 = 0.00141176471；答案3 = 0.705882353；答案4 = 1.24705882\par
+\noindent\textbf{模型前提：}
+只包含题列物种与理想平衡/传导假设，不代表已获化学专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-I70 · 两类热激活跳跃通道的并联电导与局部表观活化能}
+\noindent\textbf{题目}\par
+理想混合价半导体中两独立并联电导σi=Ai exp(−Ei/RT)，A1=0.500S/m、E1=24.00kJ/mol、A2=2.000S/m、E2=52.00kJ/mol。求300K和370K总电导、300K第一通道占比以及局部表观活化能Eapp=−R dlnσ/d(1/T)，说明为什么不同温度下Arrhenius表观斜率可能变化。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 并联电导相加σ=σ1+σ2，不能相加电阻。
+\item 300K两分量σ1=0.000033134498、σ2=1.7668615e-9S/m。
+\item 计算σ300=0.0000331362648、σ370=0.000204661855S/m。
+\item 因对1/T求导，Eapp=(σ1E1+σ2E2)/(σ1+σ2)=24001.493J/mol。
+\item 300K第一通道贡献σ1/σ=0.999946679；温度改变时权重随之改变。
+\item 各元素和电荷的独立守恒、根的物理区间以及适用条件均须满足。
+\item 重新代入题定物理方程，得到无量纲数值残差：-2.25e-17、4.43e-17、-4.50e-22。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 3.31362648e-05；答案2 = 0.000204661855；答案3 = 24001.493；答案4 = 0.999946679\par
+\noindent\textbf{模型前提：}
+只包含题列物种与理想平衡/传导假设，不代表已获化学专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-I71 · Vegard固溶体晶格参数与单胞体积的非线性体积应变}
+\noindent\textbf{题目}\par
+假想立方固溶体A\_(1−x)B\_xO具有Vegard线性晶格常数a(x)=(1−x)aA+xaB，其中aA=4.050Å、aB=3.880Å。某XRD样品测得a=3.9956Å。求掺杂组分x、立方单胞体积、相对于A端元的线性晶格应变及体积相对变化；说明线性晶格常数不意味着单胞体积也对x线性，且衍射应力可使反演不唯一。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由Vegard关系a=aA+x(aB−aA)，反演x=(a−aA)/(aB−aA)。
+\item 该样品x=0.32，满足固溶范围0≤x≤1。
+\item 单胞体积V=a³=63.7890322Å³，而A端元VA=aA³=66.430125Å³。
+\item 线性应变εa=(a−aA)/aA=-0.0134320988。
+\item 体积变化率εV=(a/aA)³−1=-0.0397574559，一般不等于3εa的精确值。
+\item 检查金属与反应进度守恒、无量纲参数以及所有占据量的物理约束。
+\item 独立数值逆代残差：-2.498e-16、0.000e+0、1.110e-16；需另经材料化学专家审校。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.32；答案2 = 3.9956；答案3 = 63.7890322；答案4 = -0.0134320988；答案5 = -0.0397574559\par
+\noindent\textbf{模型前提：}
+该题采用指定理想固体、光学或气相模型，未证明真实晶体满足近似。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-I72 · 稀土发光中心的两种竞争敏化剂配位占据与量子发光预算}
+\noindent\textbf{题目}\par
+假想稀土发光探针总浓度0.002000M，可互斥结合敏化剂A、B，形成常数分别150与450 L/mol；A、B游离浓度被外部源固定为0.005000、0.003000M。裸探针、配位A、配位B的量子产额分别0.10、0.60、0.30，吸收系数相同。求三种探针态及平均发光量子产额，解释为什么不能将两个独立占据率相加而忽略同一位点竞争。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设配分Z=1+KA[A]+KB[B]，其中两个敏化剂互斥占位。
+\item 自由探针C0=Ctot/Z=0.00064516129M。
+\item 结合A=0.000483870968M，结合B=0.000870967742M。
+\item 平均光量子产额φ=0.1 C0/Ctot+0.6 CA/Ctot+0.3 CB/Ctot=0.308064516。
+\item 外部库维持游离敏化剂浓度不意味着敏化剂从无到有；实际封闭体系必须再加A/B元素守恒。
+\item 检查金属与反应进度守恒、无量纲参数以及所有占据量的物理约束。
+\item 独立数值逆代残差：0.000e+0、2.220e-16、2.220e-16；需另经材料化学专家审校。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00064516129；答案2 = 0.000483870968；答案3 = 0.000870967742；答案4 = 0.308064516\par
+\noindent\textbf{模型前提：}
+该题采用指定理想固体、光学或气相模型，未证明真实晶体满足近似。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-I73 · 晶体离子反位缺陷的构型自由能与温度依赖占位}
+\noindent\textbf{题目}\par
+一种假想有序晶体仅有两类局部等比例构型，交换反位结构D相对有序结构O的反应焓ΔH=+6.000kJ/mol、熵ΔS=+10.00J/(mol K)，已把构型简并度计入熵。求700K与900K反位结构占比、两状态等比例温度及各温度下每mol独立局部单元的反位结构mol；解释升温如何影响高焓高熵缺陷、为何不能再重复乘简并因子。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两态自由能差ΔG=ΔH−TΔS，平衡比K=D/O=exp(−ΔG/RT)。
+\item 700K K=1.18746128，反位比例x=K/(1+K)=0.542849051。
+\item 900K K=1.49317967，反位比例x900=0.598905761。
+\item 两态等分温度T*=ΔH/ΔS=600K。
+\item 对每mol局部单元，反位结构量分别x与x900 mol；简并度已计入ΔS，不应再乘状态个数。
+\item 检查金属与反应进度守恒、无量纲参数以及所有占据量的物理约束。
+\item 独立数值逆代残差：2.220e-16、-1.110e-16、0.000e+0；需另经材料化学专家审校。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.542849051；答案2 = 0.598905761；答案3 = 600；答案4 = 1.18746128；答案5 = 1.49317967\par
+\noindent\textbf{模型前提：}
+该题采用指定理想固体、光学或气相模型，未证明真实晶体满足近似。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-I74 · 有限固相量限制下的热分解气压与两相共存检验}
+\noindent\textbf{题目}\par
+假想固体MCO3(s)⇌MO(s)+CO2(g)，850.0K、密闭10.00L理想气相、初态纯MCO3=0.004000mol且无CO2。若MCO3和MO共存，其平衡无量纲Kp=pCO2/(1bar)=0.02000。求达到共存平衡所需分解量、实际可行分解量、末态CO2压力及剩余MCO3；务必判断固相是否充足，不能把固相耗尽的边界误当成Kp未满足。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两固相共存时pCO2=Kp×1bar=0.02000bar。
+\item 由理想气体nreq=pV/(RT)=0.00282993777mol。
+\item 初始可分解固相为0.004mol，比较nreq与初态量决定分支。
+\item 实际分解进度ξ=min(nreq,ninitial)=0.00282993777mol。
+\item 末态气压p=ξRT/V=0.02bar，残余MCO3=0.00117006223mol；仅两固相共存时才可写p=Kp。
+\item 检查金属与反应进度守恒、无量纲参数以及所有占据量的物理约束。
+\item 独立数值逆代残差：0.000e+0、0.000e+0、0.000e+0；需另经材料化学专家审校。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00282993777；答案2 = 0.00282993777；答案3 = 0.02；答案4 = 0.00117006223\par
+\noindent\textbf{模型前提：}
+该题采用指定理想固体、光学或气相模型，未证明真实晶体满足近似。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV8-I75 · 受主置换引起的阳离子空位与电荷补偿反例}
+\noindent\textbf{题目}\par
+假想氧化物M\_(1−δ)O，金属M固定二价、氧O固定二价、δ=0.0400，晶格中不允许电子、空穴及氧缺陷。请判断这种含单一阳离子空位的化学式是否电中性，并计算每化学式缺少的正电荷以及如果允许等效正电空穴补偿所需空穴数；样品0.2500mol时计算空穴mol和所需法拉第电量，说明不能把空位浓度作为空穴浓度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 氧负电严格为−2，而金属正电为2(1−δ)；总净电荷−2δ。
+\item δ=.0400时净电荷=-0.08每化学式，因此仅靠空位不能保持电中性。
+\item 允许空穴h+后，空穴有效正电应为2δ=0.08个每式。
+\item 0.2500mol样品中空穴mol=0.02，相应电量=1929.70664C。
+\item 若允许价态变化或间隙缺陷会出现其它电荷补偿通道，现有计算仅对应题给单一空穴机制。
+\item 检查金属与反应进度守恒、无量纲参数以及所有占据量的物理约束。
+\item 独立数值逆代残差：-6.939e-17、0.000e+0、0.000e+0；需另经材料化学专家审校。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = -0.08；答案2 = 0.08；答案3 = 0.02；答案4 = 1929.70664\par
+\noindent\textbf{模型前提：}
+该题采用指定理想固体、光学或气相模型，未证明真实晶体满足近似。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
