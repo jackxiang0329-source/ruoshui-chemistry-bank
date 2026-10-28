@@ -108,6 +108,8 @@ on:
       - "scripts/bulk-original-4096-analytical.mjs"
       - "scripts/bulk-original-4096-organic.mjs"
       - "scripts/bulk-original-4096-physical.mjs"
+      - "scripts/import-original-contrast-10080.mjs"
+      - "tests/original-contrast-10080.test.mjs"
       - "scripts/import-original-mega-2304.mjs"
       - "scripts/mega-chemistry/**"
       - "tests/original-mega-2304.test.mjs"
@@ -263,6 +265,8 @@ jobs:
         run: node --test tests/audit-original-multistep-science.test.mjs
       - name: Verify fail-closed audit-synchronized README snapshot
         run: node --test tests/update-chemistry-readme-snapshot.test.mjs
+      - name: Verify 10080 paired-condition chemistry cases and comparative numeric relations
+        run: node --test tests/original-contrast-10080.test.mjs
       - name: Verify 3072 original dual-answer chemistry cases and 6144 inverse equations
         run: node --test tests/original-dual-3072.test.mjs
       - name: Verify 2304 three-stage original problems, 64 scientific families and numerical inverses
@@ -349,6 +353,8 @@ jobs:
         run: node scripts/import-original-analytical-variants.mjs
       - name: Stage nine source-linked quantum chemistry course exercises for human review
         run: node scripts/import-introqchem-2021.mjs
+      - name: Persist 10080 original paired-condition chemistry exercise variants
+        run: node scripts/import-original-contrast-10080.mjs
       - name: Persist 3072 original dual-result chemistry exercises across four disciplines
         run: node scripts/import-original-dual-3072.mjs
       - name: Persist 2304 original three-stage chemistry solutions across 64 topic families
