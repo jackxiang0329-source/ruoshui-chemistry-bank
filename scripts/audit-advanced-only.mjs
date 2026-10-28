@@ -77,12 +77,33 @@ for(const [subject,target] of Object.entries(series4Groups)){
 }
 assert.equal(v4IDs.size,50);
 
+const fifthGroups={inorganic:['inorganic.jsonl',13],analytical:['analytical_part1.jsonl','analytical_part2.jsonl',13],organic:['organic_part1.jsonl','organic_part2.jsonl',12],physical:['physical_part1.jsonl','physical_part2.jsonl',12]};
+const fifthNames=new Set(),fifthIDs=new Set();
+for(const [subject,spec] of Object.entries(fifthGroups)){
+ let count=0; const expectedCount=spec[spec.length-1];
+ for(const path of spec.slice(0,-1)){
+  const part=read('editorial/advanced_integrated_v5/'+path).trimEnd().split('\n').map(JSON.parse);
+  for(const q of part){
+   assert.equal(q.subject,subject);
+   assert.equal(q.individual_model,true);assert.equal(q.parametric_variant,false);
+   assert.equal(q.quality_status,'awaiting_expert_review');
+   assert.equal(q.publishable,false);assert.equal(q.exclude_from_official_bank,true);
+   assert.ok(q.solution_zh_steps.length>=7&&q.problem_zh.length>=130);
+   assert.ok(!fifthNames.has(q.title)&&!fifthIDs.has(q.id));
+   fifthNames.add(q.title);fifthIDs.add(q.id);count++;
+  }
+ }
+ assert.equal(count,expectedCount,subject+' newly authored cases');
+}
+assert.equal(fifthIDs.size,50);
+
+
 for(const p of ['data/integrated_challenges','data/research_quarantine','external_sources',
  'third_party','.github/workflows/chemistry-harvest.yml','.github/workflows/chemistry-discovery-fast.yml',
  '.github/workflows/chemistry-rqa-intake.yml','scripts/import-original-coupled-32768.mjs'])
  assert.equal(exists(p),false,'Deprecated low-difficulty resource returned: '+p);
 const release=JSON.parse(read('release/chemistry-approved-manifest.json'));
-assert.equal(release.advanced_editorial_items,86);
+assert.equal(release.advanced_editorial_items,136);
 assert.equal(release.approved_count,0);
 assert.deepEqual(release.items,[]);
-console.log('PASS: 12+12+12+50 = 86 independent advanced chemistry cases, zero low-difficulty candidates, zero expert approvals');
+console.log('PASS: 12+12+12+50+50 = 136 independent advanced chemistry cases, zero low-difficulty candidates, zero expert approvals');
