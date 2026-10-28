@@ -43,9 +43,12 @@ rows.forEach((p,i)=>{
   assert.ok(!idSet.has(id),'Duplicate ID: '+id);idSet.add(id);
   assert.ok(p.quality_status==='awaiting_expert_review' && p.publishable===false &&
             p.exclude_from_official_bank===true && p.verification.human_expert_reviewed===false);
+  assert.equal(p.advanced_editorial_eligible,false,'Do not count as advanced authored');
+  assert.equal(p.original_high_difficulty_label_invalidated,true);
+  assert.equal(p.set_classification,'legacy_cross_model_training_not_advanced');
   assert.equal(p.source.origin,'independently_composed_original_integrated_exercise');
   assert.equal(p.source.third_party_question_reused,false);
-  assert.ok([4,5].includes(p.difficulty_5),'Invalid difficulty');
+  assert.ok([2,3].includes(p.difficulty_5),'Legacy training difficulty must be 2 or 3');
   diff[p.difficulty_5]++;
   assert.ok(typeof p.problem_zh==='string' && p.problem_zh.includes('第一阶段') &&
             p.problem_zh.includes('第二阶段') && p.problem_zh.includes('(4)'));
@@ -92,5 +95,5 @@ assert.equal(models.size,10,'Expected 10 coupled application models');
 assert.equal(pairSet.size,200,'Expected 200 distinct methodological combinations');
 for(const [method,n] of methods)assert.equal(n,10,'Method coverage: '+method);
 for(const [model,n] of models)assert.equal(n,20,'Model coverage: '+model);
-assert.deepEqual(diff,{'4':51,'5':149},'Difficulty distribution');
+assert.deepEqual(diff,{'2':51,'3':149},'Reclassified training distribution');
 console.log(JSON.stringify({ok:true,records:rows.length,measurement_methods:methods.size,application_models:models.size,unique_pairs:pairSet.size,difficulty:diff,approved:0},null,2));
