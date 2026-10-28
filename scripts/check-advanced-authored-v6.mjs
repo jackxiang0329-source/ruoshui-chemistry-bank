@@ -28,7 +28,8 @@ for(const [subject,[files,num,letter,begin]] of Object.entries(specs)){
   assert.ok(q.solution_zh_steps.length>=6);
   assert.ok(q.answer_values.length>=3&&q.answer_values.every(Number.isFinite));
   assert.ok(q.model_residuals.length>=3&&q.model_residuals.every(z=>Number.isFinite(z)&&Math.abs(z)<1e-7));
-  assert.equal(q.individual_model,true);assert.equal(q.parametric_variant,false);
+  assert.equal(q.individual_model,true);assert.equal(q.parametric_variant,null);
+  assert.equal(q.novelty_review_status,'pending_cross_series_model_review');
   assert.equal(q.quality_status,'awaiting_expert_review');
   assert.equal(q.publishable,false);assert.equal(q.exclude_from_official_bank,true);
   rows.push(q);
