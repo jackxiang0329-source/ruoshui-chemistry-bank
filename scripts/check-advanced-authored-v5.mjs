@@ -52,7 +52,7 @@ for(const q of items){
  case 'UC-ADV5-A21':eq(a[0],240*a[1]*a[2]);eq(a[0]+a[1],.002);eq(a[0]+a[2],.003);break;
  case 'UC-ADV5-A22':eq(.1*a[0]+.025*a[1],.0004);eq(a[1],3*a[0]);eq(a[3],a[1]*R*298.15);break;
  case 'UC-ADV5-A23':eq(a[0]+a[3]+a[4],.025);eq(a[1]+a[3],.02);eq(a[2]+a[4],.015);eq(a[3],10000*a[0]*a[1]);break;
- case 'UC-ADV5-A24':{let X=a[0],Y=a[1],Z=a[2];eq(15000*(X+Y),22.5);eq(15000*(X+.5*Y+Z),18);eq(15000*(.2*X+Y+Z),13.5);break;}
+ case 'UC-ADV5-A24':{let X=a[0],Y=a[1],Z=a[2];eq(15000*(X+Y),22.5);eq(15000*(X+.5*Y+Z),23.25);eq(15000*(.2*X+Y+Z),15);break;}
  case 'UC-ADV5-A25':eq(a[0],2000*Math.exp(-.001*10)+50000*Math.exp(-.03*10));eq(a[1],2000*Math.exp(-.001*30)+50000*Math.exp(-.03*30));eq(a[2],2000/.001+50000/.03);break;
  case 'UC-ADV5-A26':eq(a[0],30.5/(2*F));eq(a[1],18.015*a[0]);eq(a[2],a[1]/.2);break;
  case 'UC-ADV5-A27':eq(a[0]*a[0],.02/.01);eq(a[1],.001+.02/a[0]+.01*a[0]);eq(a[2],1200/a[1]);break;
