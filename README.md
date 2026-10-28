@@ -229,9 +229,17 @@
 - [统一统计](harvest/coverage_report.json)新增 `main_independent_muza_formula_checks=5`、`main_independent_muza_science_condition_caveats=3`，与 `1715/1715` 的**来源文件一致性核验**分开陈列。前者也是必要条件检查，不代表已实证产率或专家审批。所有候选仍未批准正式组卷。
 
 
-## 2026-10-28：200 道跨测量—化学模型高阶综合题（批次管理）
+## 2026-10-28：200 道跨测量训练题（重新定级，不计高阶）
 
 - 新建 [高阶综合题批次库](data/integrated_challenges/README.md)，仅用 [一个 JSONL 文件](data/integrated_challenges/2026-10-28/batch-001.jsonl)归档本轮 **200 道中文综合题及逐步解答**，题号 `UC-CI-20261028-001`—`200`，不会在主目录散落 200 份文件。
-- 设计为 **20 种化学测定反演 × 10 种后续物化应用 = 200 种不重复方法配对**，并额外设置系统测量误差 +1% 时的非线性灵敏度推导。难度暂标 **4/5：51 道、5/5：149 道**；难度评级同样需要人工确认。
+- 设计为 **20 种化学测定反演 × 10 种后续物化应用 = 200 种不重复方法配对**，并额外设置系统测量误差 +1% 时的非线性灵敏度推导。此前误标高难已经撤回，现按 **2/5：51 道、3/5：149 道** 管理。**这些模板组合不能计作200道独立高难综合题**。
 - [专门机器验算脚本](scripts/check-integrated-challenges.mjs)和 [GitHub Actions 检查工作流](.github/workflows/integrated-chemistry-qa.yml)检查题号、配对唯一性、逆算、物料/电量守恒、公式结果与导数，以及审核隔离标志。
 - **口径边界**：200 是新的原创测量—应用组合题，不等于 200 个独立的基础化学原理，也不是官方考题；不将这 200 道自动累入海量 `data/candidates/` 或正式出卷清单。所有题目 `publishable=false`、**专家批准 0**。
+
+
+## 2026-10-28：按原高难题标准独立命题 · 第二辑 12 道
+
+- 以原 [高阶题第一辑](editorial/advanced_integrated_v1/original_advanced_integrated_12.tex) 为参照，新建 [第二辑（12 道原创）](editorial/advanced_integrated_v2/README.md)，提供 [完整题目与中文解答审校稿](editorial/advanced_integrated_v2/advanced_authored_set01.md)、[结构化 JSONL](editorial/advanced_integrated_v2/advanced_authored_set01.jsonl)及[独立复算脚本](scripts/check-advanced-authored-chemistry.mjs)。
+- 无机、分析、有机、物化各 3 道，每道独立构建耦合化学模型；涵盖分段沉淀/配位、晶体电荷与空位、自旋热力学、标准加入、封闭酸碱精确电荷平衡、混合金属库仑分析、并串联反应最佳分离、二次平衡酯化、共聚组成漂移微分方程、绝热反应平衡温度耦合、非线性两级萃取及理想盐混合的最大可逆功。
+- 已将先前200道机械方法组合题**从高难评级中撤回**，保留为低中阶训练资料（2/5、3/5）；后续不得简单混入高难成果或抬高难度标签。
+- **本轮真实新增独立高难模型12道，不是200道。** 计算模型完成自动核验，科学专家审核和正式可组卷数量仍为0。
