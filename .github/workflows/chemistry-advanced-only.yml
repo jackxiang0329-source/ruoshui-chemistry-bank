@@ -28,3 +28,5 @@ jobs:
         run: node scripts/check-advanced-authored-v5.mjs
       - name: Verify sixth-series 50 provisional cases and required novelty flags
         run: node scripts/check-advanced-authored-v6.mjs
+      - name: Verify seventh-series sixty cases with equal four-subject allocation
+        run: node scripts/check-advanced-authored-v7.mjs
