@@ -25,5 +25,15 @@
     "analytical": 13,
     "organic": 12,
     "physical": 12
-  }
+  },
+  "sixth_series_draft_items": 50,
+  "sixth_series_subject_counts": {
+    "inorganic": 13,
+    "analytical": 13,
+    "organic": 12,
+    "physical": 12
+  },
+  "editorial_draft_records_total": 186,
+  "sixth_series_independent_model_review": "pending",
+  "fifth_series_prior_total": 136
 }
