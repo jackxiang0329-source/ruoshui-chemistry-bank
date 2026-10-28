@@ -50,7 +50,12 @@ const muza={source_repository:'MuzaPro/Organic-Chemistry-Quiz-JS',
  matched_persisted_source_exercises:5,unresolved_science_condition_concerns:3,
  scientifically_qualified_for_exam:0,source_only_licensing_evidence_not_third_party_item_proof:true,
  human_expert_approved:0,exam_ready:0};
-const summarizeWithExtra=(...args)=>summarize(...args,extra,muza);
+const muzaScience={source_repository:'MuzaPro/Organic-Chemistry-Quiz-JS',
+ source_items_reviewed:5,formal_element_balances_passed:5,special_science_conditions_pending:3,
+ human_expert_approvals:0,individual_rights_approvals:0,exam_ready:0,
+ items:Array.from({length:5},(_,i)=>({source_id:'q'+(i+1),publishable:false,
+ atom_balance:{balanced:true},expert_approved:false,needs_human_condition_review:true}))};
+const summarizeWithExtra=(...args)=>summarize(...args,extra,muza,muzaScience);
 test('physical-style raw candidates and solved chemistry candidates are never confused',()=>{
  const r=summarizeWithExtra(main,ext,rel,rqa,rqareview,science,chinese,replay,supplementary,tmc,daily,reaction);
  assert.equal(r.combined_record_count_not_unique_exercises,10320);
@@ -63,6 +68,8 @@ test('physical-style raw candidates and solved chemistry candidates are never co
  assert.equal(r.main_candidates_outside_original_numeric_replay,1411);
  assert.equal(r.main_supplementary_source_records_replayed,82);
  assert.equal(r.main_unique_candidate_records_machine_replayed,1715);
+ assert.equal(r.main_independent_muza_formula_checks,5);
+ assert.equal(r.main_independent_muza_science_condition_caveats,3);
  assert.equal(r.main_reaction_study_cards_replayed,278);
  assert.equal(r.main_exercise_candidates_replayed,1437);
  assert.equal(r.main_study_cards_not_replayed,0);
@@ -146,12 +153,21 @@ test('study flashcards must not masquerade as reviewed exam questions',()=>{
 
 test('185 new source checks do not confer human chemistry approval',()=>{
  assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,chinese,replay,supplementary,
- tmc,daily,reaction,{...extra,exam_ready:1},muza),/Unsafe/);
+ tmc,daily,reaction,{...extra,exam_ready:1},muza,muzaScience),/Unsafe/);
 });
 
 test('all five Muza source matches retain three unresolved scientific condition issues',()=>{
  assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,chinese,replay,
- supplementary,tmc,daily,reaction,extra,{...muza,unresolved_science_condition_concerns:0}),/Unsafe/);
+ supplementary,tmc,daily,reaction,extra,{...muza,unresolved_science_condition_concerns:0},muzaScience),/Unsafe/);
  assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,chinese,replay,
- supplementary,tmc,daily,reaction,extra,{...muza,exam_ready:5}),/Unsafe/);
+ supplementary,tmc,daily,reaction,extra,{...muza,exam_ready:5},muzaScience),/Unsafe/);
+});
+
+test('source-concordance cannot mask missing Muza scientific evidence or claim authorization',()=>{
+ assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,chinese,
+  replay,supplementary,tmc,daily,reaction,extra,muza,
+  {...muzaScience,formal_element_balances_passed:4}),/Unsafe/);
+ assert.throws(()=>summarize(main,ext,rel,rqa,rqareview,science,chinese,
+  replay,supplementary,tmc,daily,reaction,extra,muza,
+  {...muzaScience,items:muzaScience.items.map((x,i)=>i===0?{...x,expert_approved:true}:x)}),/Unsafe/);
 });

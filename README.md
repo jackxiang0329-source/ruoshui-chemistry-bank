@@ -219,3 +219,9 @@
 
 - [Muza 五道题来源与答案核验](harvest/main_muza_pinned_source_replay.json)核对 Git blob SHA、源题答映射和 MIT 许可说明。q2、q4、q5 分别保留 SN1 反应条件、酯化催化剂、格氏反应后处理的科学疑点。
 - [统一覆盖统计](harvest/coverage_report.json)为 **1437 份练习候选 + 278 份学习卡 = 1715 份主库记录，落盘来源一致性检查 1715/1715**。来源未复核项已清零，但这不是独立的科学专家审定、逐题版权核权或语义重复审定；正式组卷批准依然 **0**。
+
+## 2026-10-28：Muza 五题化学计量独立复核和科学条件问题
+
+- [五题独立元素守恒与反应条件核验（中文）](harvest/muza_independent_science_review.md)和[机器可读 JSON 报告](harvest/muza_independent_science_review.json)：五道题均具形式净反应的原子守恒证明；各题独立记录目标产物、来源反应物、净反应副产物及参考材料。
+- **q2** 的叔丁基氯乙醇溶剂解不能忽略 SN1/E1 竞争；**q4** 的乙酸乙醇酯化应区分催化硫酸与被选中的计量反应物、说明可逆平衡；**q5** 的苯基溴化镁必须先在无水环境中开环，酸性后处理应在反应后独立进行。
+- [统一统计](harvest/coverage_report.json)新增 `main_independent_muza_formula_checks=5`、`main_independent_muza_science_condition_caveats=3`，与 `1715/1715` 的**来源文件一致性核验**分开陈列。前者也是必要条件检查，不代表已实证产率或专家审批。所有候选仍未批准正式组卷。

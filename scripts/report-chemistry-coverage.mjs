@@ -4,7 +4,7 @@ import {readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {join,dirname,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
-export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction,extra,muza){
+export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience){
  const whole=main?.total_candidates,exercise=main?.by_content_kind?.exercise_candidate,
   card=main?.by_content_kind?.study_card,raw=external?.raw_staged_candidates;
  if(!Number.isInteger(whole)||!Number.isInteger(exercise)||!Number.isInteger(card)||
@@ -100,6 +100,16 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   muza?.scientifically_qualified_for_exam!==0||
   muza?.source_only_licensing_evidence_not_third_party_item_proof!==true||
   muza?.human_expert_approved!==0||muza?.exam_ready!==0||
+  muzaScience?.source_repository!=='MuzaPro/Organic-Chemistry-Quiz-JS'||
+  muzaScience?.source_items_reviewed!==5||
+  muzaScience?.formal_element_balances_passed!==5||
+  muzaScience?.special_science_conditions_pending!==3||
+  muzaScience?.items?.length!==5||
+  muzaScience.items.some(x=>x.publishable!==false||x.atom_balance?.balanced!==true||
+   x.expert_approved!==false||x.needs_human_condition_review!==true)||
+  muzaScience?.human_expert_approvals!==0||
+  muzaScience?.individual_rights_approvals!==0||
+  muzaScience?.exam_ready!==0||
   main?.source_counts?.['MuzaPro/Organic-Chemistry-Quiz-JS']!==5||
   whole<1715||exercise<1437||card!==278)
   throw Error('Unsafe or inconsistent chemistry coverage sources: '+
@@ -138,6 +148,9 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   main_additional_source_exercises_replayed:extra.additional_source_replayed,
   main_muza_persisted_source_replayed:muza.matched_persisted_source_exercises,
   main_muza_science_condition_concerns:muza.unresolved_science_condition_concerns,
+  main_independent_muza_formula_checks:muzaScience.formal_element_balances_passed,
+  main_independent_muza_science_condition_caveats:muzaScience.special_science_conditions_pending,
+  main_total_1715_source_concordance_does_not_imply_scientific_correctness:true,
   main_exercise_candidates_replayed:1437,
   main_exercise_candidates_not_replayed:exercise-1437,
   main_study_cards_not_replayed:card-278,
@@ -186,7 +199,9 @@ export function run(){
  const reaction=JSON.parse(readFileSync(join(ROOT,'harvest/main_reaction_card_stored_replay.json'),'utf8'));
  const extra=JSON.parse(readFileSync(join(ROOT,'harvest/main_additional_185_source_replay.json'),'utf8'));
  const muza=JSON.parse(readFileSync(join(ROOT,'harvest/main_muza_pinned_source_replay.json'),'utf8'));
- const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily,reaction,extra,muza),
+ const muzaScience=JSON.parse(readFileSync(join(ROOT,
+  'harvest/muza_independent_science_review.json'),'utf8'));
+ const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience),
   path=join(ROOT,'harvest/coverage_report.json');
  const body=JSON.stringify(summary,null,2)+'\n';
  if(!existsSync(path)||readFileSync(path,'utf8')!==body)writeFileSync(path,body);
