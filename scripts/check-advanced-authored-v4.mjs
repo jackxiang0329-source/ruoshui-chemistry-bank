@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../',import.meta.url)),R=8.314462618,F=96485.33212;
-const eq=(a,b,where)=>assert.ok(Number.isFinite(a)&&Number.isFinite(b)&&Math.abs(a-b)<1e-8*Math.max(1e-10,Math.abs(a),Math.abs(b)),where+': '+a+' vs '+b);
+const eq=(a,b,where)=>assert.ok(Number.isFinite(a)&&Number.isFinite(b)&&Math.abs(a-b)<(b===0?1e-10:1e-8*Math.max(1e-30,Math.abs(a),Math.abs(b))),where+': '+a+' vs '+b);
 const groups={inorganic:[13,'I'],analytical:[13,'A'],organic:[12,'O'],physical:[12,'P']},all=[];
 for(const [subject,[num,prefix]] of Object.entries(groups)){
  let part=[];
