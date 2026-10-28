@@ -66,7 +66,25 @@ rows.forEach((p,i)=>{
   const want=fn(c),got=p.answer.linked_results;
   assert.equal(got.length,want.length,'Result dimension: '+id);
   got.forEach((v,k)=>close(v,want[k],id+' result '+k));
-  if(p.linked_model==='fick_diffusion')assert.ok(p.problem_zh.includes('有效扩散系数'));
+  assert.ok(p.problem_zh.includes('(5) 高阶误差传递'),'Missing sensitivity extension');
+  assert.ok(p.solution_zh_steps.some(x=>x.includes('高阶误差传递')),'Missing worked sensitivity');
+  const se=p.answer.sensitivity;
+  assert.equal(se.shift_fraction,.01);
+  assert.equal(se.at_true_c,got[0],'Sensitivity must concern primary linked result');
+  close(se.at_plus_1pct_c,fn(c*1.01)[0],id+' perturbed result');
+  close(se.exact_delta,se.at_plus_1pct_c-se.at_true_c,id+' finite difference');
+  let local;
+  switch(p.linked_model){
+    case 'activity':local=-.509*Math.LN10*Math.sqrt(c)/2;break;
+    case 'common_ion_solubility':local=-c/(c+2*got[0]);break;
+    case 'concentration_cell':local=-R*T/F;break;
+    case 'langmuir_balance':local=(c/got[0])/(1+.001*900/(1+900*got[0])**2);break;
+    case 'fick_diffusion':local=c/(c-.00015);break;
+    default:local=1;
+  }
+  close(se.local_sensitivity,local,id+' analytical derivative');
+  assert.equal(se.type,p.linked_model==='concentration_cell'?'absolute_dY_dlnc':'dimensionless_dlnY_dlnc');
+    if(p.linked_model==='fick_diffusion')assert.ok(p.problem_zh.includes('有效扩散系数'));
   if(p.linked_model==='langmuir_balance')assert.ok(p.solution_zh_steps.join(' ').includes('电中性'));
 });
 assert.equal(methods.size,20,'Expected 20 measurement methods');
