@@ -96,6 +96,8 @@ on:
       - "tests/analytical-calculator-mit.test.mjs"
       - "scripts/import-original-analytical-variants.mjs"
       - "scripts/import-original-instrumental-analytical.mjs"
+      - "scripts/import-original-analytical-physical-topics.mjs"
+      - "tests/original-analytical-physical-topics.test.mjs"
       - "scripts/import-original-integrated-chemistry.mjs"
       - "tests/original-integrated-chemistry.test.mjs"
       - "scripts/import-original-reasoning-chemistry.mjs"
@@ -234,6 +236,8 @@ jobs:
         run: node --test tests/original-instrumental-analytical.test.mjs
       - name: Verify fixed CC0 course exercise provenance and solution corrections
         run: node --test tests/introqchem-2021.test.mjs
+      - name: Verify twenty new analytical/physical source-bound numeric inverse solutions
+        run: node --test tests/original-analytical-physical-topics.test.mjs
       - name: Verify 20 independent integrated chemistry topics and numeric witnesses
         run: node --test tests/original-integrated-chemistry.test.mjs
       - name: Verify 33 distinct original four-subject chemistry reasoning cases and review flags
@@ -308,6 +312,8 @@ jobs:
         run: node scripts/import-original-analytical-variants.mjs
       - name: Stage nine source-linked quantum chemistry course exercises for human review
         run: node scripts/import-introqchem-2021.mjs
+      - name: Persist 20 novel source-bound original analytical and physical chemistry topics
+        run: node scripts/import-original-analytical-physical-topics.mjs
       - name: Persist 20 original integrated chemistry topics across four disciplines
         run: node scripts/import-original-integrated-chemistry.mjs
       - name: Persist 33 separately authored CC0 inorganic, analytical, organic and physical reasoning exercises
