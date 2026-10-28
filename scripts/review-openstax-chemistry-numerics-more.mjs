@@ -151,7 +151,7 @@ export function checkAdditional(c,computed=independentlySolve(c.tag)){
  if(!Array.isArray(computed)||computed.length!==c.expected.length||
   computed.some((v,i)=>!close(v,c.expected[i])))
   throw Error('Textbook numeric expectation differs from independently recomputed result: '+c.tag);
- const v=computed;
+ const v=computed,m=mass;
  switch(c.tag){
  case 'oxygen_mass_molecule_choice':
   if(!(v[1]>v[2]&&v[2]>v[0]))throw Error('Oxygen atom count ranking failure');break;
