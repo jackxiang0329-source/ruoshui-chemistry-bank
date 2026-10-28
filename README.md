@@ -183,3 +183,9 @@
 - 先前 **13 项**来源答案争议中，**2 项经原文确认属误报**：复指数共轭参考答案已允许复数参数；电子物质波题的原答案只选电子晶体散射，不把氢光谱选为直接证据。另将 532 nm、100 mW 激光压力题的 `kg·m/s` 单位错误准确归为**学生题本题干要求**，而不是答案键计算错误。当前剩余 **11 项**来源问题，其中并非全是科学性错误。
 - [12 页中文 XeLaTeX 量子化学源答案核验 PDF](harvest/import_reports/quantum_source_reconciliation_zh/quantum_source_key_reconciliation.pdf) 与 [对应 TeX](harvest/import_reports/quantum_source_reconciliation_zh/quantum_source_key_reconciliation.tex) 由 [版本锁定编译工作流](.github/workflows/chemistry-review-pdf.yml) 实际生成；数学附录包含辐射压力单位、复数模非负性、动能与动量本征态反例、共轭薛定谔方程与最小氢原子吸收频率。
 - 以上 **21 道均属于主候选库中已有的课程题**，不是另加 21 道；其原始仓库虽标 CC0，但含第三方权利例外，逐题许可仍待确认。当前来源版权批准、人工专家审批和正式可出卷数量继续为 **0**。
+
+## 主候选库 304 道原创计算题的实际文件复核
+
+- [本轮新增的落盘数值反算清单](harvest/main_original_numeric_replay.json)与[机器校验器](scripts/audit-main-candidate-numerics.mjs)会直接检查真实的 `data/candidates/*.json`，覆盖基础物化 24、扩展物化 72、进阶物化 48、原创分析化学计量 96、原创仪器分析 64，共 304 份保存的候选练习；各题均比对来源/题干/参数/答案/单位/发布标志，并利用物理或化学公式反算。
+- 主候选库共 1715 份内容；304 份是其中的原始记录，不是追加题量，也不代表其余 1411 份全是计算题。与 `expert_review_plan.json` 中其他类型的 `numerical_answer_requires_scientific_review` 计数采用**不同筛选口径**，不可直接相减。
+- [统一覆盖统计](harvest/coverage_report.json)分别披露机器复算覆盖量与外部 OpenStax 42 道审核量；两者重叠状态不主张跨来源唯一性。**自动科学数值复算不代表人类专家审校，正式可出卷仍为 0。**

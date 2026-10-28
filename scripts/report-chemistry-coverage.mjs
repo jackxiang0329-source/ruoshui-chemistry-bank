@@ -4,7 +4,7 @@ import {readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {join,dirname,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
-export function summarize(main,external,publication,rqaState,rqaReview,science,derivations){
+export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay){
  const whole=main?.total_candidates,exercise=main?.by_content_kind?.exercise_candidate,
   card=main?.by_content_kind?.study_card,raw=external?.raw_staged_candidates;
  if(!Number.isInteger(whole)||!Number.isInteger(exercise)||!Number.isInteger(card)||
@@ -29,7 +29,18 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
     science.reviewed_source_cases||
   derivations.edition_rights_unresolved!==true||
   derivations.expert_approved!==0||derivations.reuse_rights_approved!==0||
-  derivations.released_for_exams!==0)
+  derivations.released_for_exams!==0||
+  replay?.checked_stored_candidate_records!==304||
+  replay?.checked_distinct_candidate_ids!==304||
+  replay?.provenance_bound_generator_families!==5||
+  replay?.reviewed_physical_candidate_records!==144||
+  replay?.reviewed_analytical_candidate_records!==160||
+  replay?.coverage_vs_main_records?.total!==whole||
+  replay?.coverage_vs_main_records?.audited!==304||
+  replay?.coverage_vs_main_records?.other_candidates_not_yet_covered!==whole-304||
+  replay?.expert_science_approved!==0||
+  replay?.publishable_approved!==0||
+  replay?.formally_exam_ready!==0)
   throw Error('Unsafe or inconsistent chemistry coverage sources: '+
    JSON.stringify({
     main_total:whole,main_exercises:exercise,main_cards:card,
@@ -55,6 +66,10 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
    }));
  return {schema_version:1,
   main_candidate_records:whole,main_exercise_candidates:exercise,main_study_cards:card,
+  main_original_numeric_stored_records_verified:replay.checked_stored_candidate_records,
+  main_original_numeric_stored_coverage_fraction:Number((304/whole).toFixed(6)),
+  main_candidates_outside_original_numeric_replay:whole-304,
+  main_numeric_replay_is_human_science_approval:false,
   external_oer_unreviewed_blocks:raw,
   nvidia_synthetic_research_quarantine_records:rqaState.staged_total,
   nvidia_research_rows_examined:rqaState.examined,
@@ -83,7 +98,9 @@ export function run(){
   'external_sources/openstax_chemistry/independent_numeric_review.json'),'utf8'));
  const chinese=JSON.parse(readFileSync(join(ROOT,
   'external_sources/openstax_chemistry/chinese_independent_derivations.json'),'utf8'));
- const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese),
+ const replay=JSON.parse(readFileSync(join(ROOT,
+  'harvest/main_original_numeric_replay.json'),'utf8'));
+ const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay),
   path=join(ROOT,'harvest/coverage_report.json');
  const body=JSON.stringify(summary,null,2)+'\n';
  if(!existsSync(path)||readFileSync(path,'utf8')!==body)writeFileSync(path,body);
@@ -91,6 +108,7 @@ export function run(){
   ' openstax_raw='+summary.external_oer_unreviewed_blocks+
   ' nvidia_rqa_quarantine='+summary.nvidia_synthetic_research_quarantine_records+
   ' combined_records='+summary.combined_record_count_not_unique_exercises+
+  ' stored_original_numeric_replayed='+summary.main_original_numeric_stored_records_verified+
   ' external_independent_science='+summary.external_numeric_source_reviews+
   ' Chinese_external_notes='+summary.external_chinese_independent_derivation_notes+
   ' published='+summary.confirmed_official_exam_ready);
