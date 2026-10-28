@@ -73,7 +73,7 @@ test('independent source-key errors appear in explicit reviewer list but cannot 
     question_sha256:'b'.repeat(64),machine_computation_checked:true,
     source_item_rights_verified:false,release_eligible:false,
     independent_human_chemist_review_completed:false,
-    issue:null}]};
+    issue:null,source_question_typo:'ambiguous_aluminum_formula'}]};
  const rows=[{...x,question:'A long test question with independent numeric results',
   question_sha256:'a'.repeat(64)},{
   ...other,question:'Another long test chemistry exercise with numeric answer',
@@ -81,6 +81,9 @@ test('independent source-key errors appear in explicit reviewer list but cannot 
  const p=buildReview(rows,10,[],scientific);
  assert.equal(p.independent_numeric_source_reviews,2);
  assert.equal(p.detected_source_key_errors,1);
+ assert.equal(p.detected_source_question_typos,1);
+ assert.equal(p.source_question_typo_priority[0].typo_code,'ambiguous_aluminum_formula');
+ assert.equal(p.source_question_typo_priority[0].approved,false);
  assert.equal(p.source_key_errata_priority[0].error_code,'source_key_chemistry_error');
  assert.equal(p.source_key_errata_priority[0].approved,false);
  assert.ok(p.review_queue.every(q=>q.approved===false));

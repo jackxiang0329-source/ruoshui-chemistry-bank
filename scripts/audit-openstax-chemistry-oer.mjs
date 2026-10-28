@@ -75,7 +75,7 @@ export function buildReview(rows,limit=180,mainQuestions=[],scientific=null){
   }
   const chapter=q.source_path,plain=q.has_source_solution&&!q.requires_media&&!q.requires_mathml,
    score=(ready?100:0)+(plain?20:0)+(q.has_source_solution?15:0)+
-    (chk?.issue?60:0)+(chk?35:0)+
+    (chk?.issue?60:0)+(chk?.source_question_typo?50:0)+(chk?35:0)+
     (reference?-85:0)+(answerDepend?-60:0)+(strictOverlap?-95:0)+
     (q.requires_media?-50:0)+(q.requires_mathml?-20:0)+
     (!q.has_source_solution?-30:0);
@@ -89,6 +89,7 @@ export function buildReview(rows,limit=180,mainQuestions=[],scientific=null){
    independently_recomputed_numerics:Boolean(chk),
    verified_arithmetic_not_expert_approval:Boolean(chk),
    source_key_error_detected:chk?.issue||null,
+   source_question_typo_detected:chk?.source_question_typo||null,
    manual_review_priority:score,rights_review_required:true,
    science_review_required:true,approved:false};
   if(!byChapter.has(chapter))byChapter.set(chapter,[]);
@@ -111,6 +112,7 @@ export function buildReview(rows,limit=180,mainQuestions=[],scientific=null){
   throw Error('Orphan scientific review not found in pinned OER archive');
  const allScienceCases=[...byChapter.values()].flat().filter(x=>x.independently_recomputed_numerics);
  const scienceIssues=allScienceCases.filter(x=>x.source_key_error_detected);
+ const scienceTypos=allScienceCases.filter(x=>x.source_question_typo_detected);
  const high=queue.filter(x=>x.original_solution_attached&&!x.media_required&&!x.mathml_required).length;
  const selfContained=queue.filter(x=>x.standalone_text_with_answer_candidate).length;
  const repeatedTemplates=[...templateGroups.values()].filter(ids=>ids.length>1);
@@ -120,6 +122,11 @@ export function buildReview(rows,limit=180,mainQuestions=[],scientific=null){
   review_queue_size:queue.length,likely_text_only_with_answer_in_review_queue:high,
   independent_numeric_source_reviews:allScienceCases.length,
   detected_source_key_errors:scienceIssues.length,
+  detected_source_question_typos:scienceTypos.length,
+  source_question_typo_priority:scienceTypos.map(x=>({
+    id:x.id,source_path:x.source_path,source_exercise_ordinal:x.source_exercise_ordinal,
+    source_url:x.source_url,typo_code:x.source_question_typo_detected,
+    rights_review_required:true,chemical_formula_review_required:true,approved:false})),
   source_key_errata_priority:scienceIssues.map(x=>({
     id:x.id,source_path:x.source_path,source_exercise_ordinal:x.source_exercise_ordinal,
     source_url:x.source_url,error_code:x.source_key_error_detected,
@@ -128,6 +135,7 @@ export function buildReview(rows,limit=180,mainQuestions=[],scientific=null){
     id:x.id,source_path:x.source_path,source_exercise_ordinal:x.source_exercise_ordinal,
     original_solution_attached:x.original_solution_attached,
     source_key_error_detected:x.source_key_error_detected,
+    source_question_typo_detected:x.source_question_typo_detected,
     rights_review_required:true,expert_solution_check_required:true,approved:false})),
   ready_for_manual_scientific_review_in_queue:selfContained,
   possible_same_wording_numeric_template_families:repeatedTemplates.length,
@@ -155,6 +163,7 @@ export function run(){
   ' from='+rows.length+' self_contained_candidates='+review.total_by_flag.clean_self_contained_with_source_solution+
   ' independent_numeric_reviews='+review.independent_numeric_source_reviews+
   ' known_source_key_errors='+review.detected_source_key_errors+
+  ' source_question_typos='+review.detected_source_question_typos+
   ' lexical_templates='+review.possible_same_wording_numeric_template_families+
   ' approved=0');
  return review;
