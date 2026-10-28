@@ -9,6 +9,41 @@ const R=8.314462618;
 const F=96485.33212;
 const T=280,J=2400,q=Math.exp(-J/(R*T)),Z=1+3*q,p=3*q/Z;
 const w={
+"UC-ADV10-I111":()=>{
+ const h=6.62607015e-34,mu=9.2740100783e-24,nu=9.5e9;
+ const calc=theta=>{const sn=Math.sin(theta),cs=Math.cos(theta),g=Math.hypot(1.98*sn,1.94*cs),A=Math.hypot(1.98*7*sn,1.94*18*cs)/g,b=h*nu/(mu*g)*1e3;
+ const lines=Array.from({length:8},(_,j)=>b-(j-3.5)*A).sort((x,y)=>x-y);
+ assert.ok(Math.abs(lines.reduce((a,v)=>a+v,0)/8-b)<1e-10);
+ assert.ok(Math.abs(lines.at(-1)-lines[0]-7*A)<1e-10);
+ return {g,A,b,lines};};
+ const per=calc(Math.PI/2),par=calc(0),mid=calc(Math.PI/4);
+ return [per.b,par.b,mid.g,mid.A,mid.b,per.lines[0],per.lines.at(-1),par.lines[0],par.lines.at(-1),mid.lines[0],mid.lines.at(-1)];
+},
+"UC-ADV10-A111":()=>{
+ const tau=2e-6,m=164643.490828208,observed=111122.733102258,f=n=>n*Math.exp(-n*tau)-m;
+ function bis(lo,hi){let fl=f(lo);for(let j=0;j<110;j++){const mid=(lo+hi)/2;if(fl*f(mid)<=0)hi=mid;else {lo=mid;fl=f(mid)}}return (lo+hi)/2;}
+ const low=bis(1,1/tau),high=bis(1/tau,2e6),half=n=>n/2*Math.exp(-n*tau/2);
+ assert.ok(low<1/tau&&high>1/tau&&Math.abs(half(low)-observed)<1e-6&&Math.abs(half(high)-observed)>1000);
+ return [low,high,half(low),half(high),1/(Math.E*tau),Math.exp(-low*tau),low*10,Math.exp(-low*tau)*(1-low*tau)];
+},
+"UC-ADV10-O108":()=>{
+ const a=(400-440)/2-12/4,b=(440-400)/2-12/4,off=6,d=Math.hypot(a-b,2*off),ep=(a+b+d)/2,em=(a+b-d)/2;
+ const strength=e=>{const x=off,y=e-a,z=Math.hypot(x,y);return ((x+y)/z)**2;};
+ const ip=strength(ep),im=strength(em),top=420+3,bottom=-420+3;
+ const peaks=[em-bottom,top-ep,ep-bottom,top-em].sort((x,y)=>x-y);
+ assert.ok(Math.abs(2*(ip+im)-4)<1e-12&&Math.abs(peaks.reduce((a,b)=>a+b,0)/4-420)<1e-12);
+ return [d,...peaks,im,ip,ip/im,420];
+},
+"UC-ADV10-P108":()=>{
+ const F=96485.33212,R=8.314462618,T=298.15,eps=78.5*8.8541878128e-12,c=10,psi=-.05,k=Math.sqrt(2*F*F*c/(eps*R*T));
+ const charge=v=>Math.sqrt(8*eps*R*T*c)*Math.sinh(F*v/(2*R*T));
+ const delta=1e-6,cap=(charge(psi+delta)-charge(psi-delta))/(2*delta);
+ const N=1000,h=psi/N;let work=charge(0)+charge(psi);for(let i=1;i<N;i++)work+=(i%2?4:2)*charge(i*h);work*=h/3;
+ const plus=c*Math.exp(-F*psi/(R*T)),minus=c*Math.exp(F*psi/(R*T));
+ assert.ok(Math.abs(plus*minus-c*c)<1e-10&&charge(psi)<0&&cap>0&&work>0);
+ return [1e9/k,charge(psi),cap,plus,minus,R*T*(plus+minus-2*c),work];
+},
+
 
  "UC-ADV10-I110":()=>{
   // Independent atomic phase sum over eight crystallographic sites (not parity formula).

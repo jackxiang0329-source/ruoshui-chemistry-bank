@@ -2,8 +2,8 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 40,
-  "preliminary_flags": 14,
+  "current_draft_count": 44,
+  "preliminary_flags": 17,
   "pairs": [
     {
       "new_id": "UC-ADV10-I102",
@@ -88,9 +88,27 @@
       "prior_id": "UC-ADV5-I24",
       "reason": "Both use Bragg geometry; new case adds full crystallographic structure factor and multiplicity/density coupling. Compare core model, not merely topic.",
       "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-I111",
+      "prior_id": "UC-ADV9-I82",
+      "reason": "Both involve axial EPR g resonance fields; new v10 adds 51V eight hyperfine lines and angular A tensor. High priority human core-model comparison.",
+      "judgement": "high_priority_pending_human_core_model_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-O108",
+      "prior_id": "UC-ADV9-O80",
+      "reason": "Both use proton J coupling; v9 Karplus dihedral relation vs v10 AB second-order eigenvector intensities. Expert comparison pending.",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-P108",
+      "prior_id": "UC-ADV10-P101",
+      "reason": "Both involve electrolyte electrostatics; v10 P108 planar Poisson-Boltzmann vs P101 gel Donnan electroneutrality. Expert comparison pending.",
+      "judgement": "pending_human_comparison"
     }
   ],
-  "notes": "All 40 records await chemistry, copyright and cross-volume core-equation review. 14 preliminary potential overlap pairs remain unresolved; no expert approvals. New v10 I110 has XRD-related prior models explicitly flagged.",
+  "notes": "All 44 draft records await human chemistry, copyright, and all-series governing-equation review. 17 potential overlap pairs; 0 expert approvals.",
   "expert_approved": 0,
   "new_items_requiring_cross_series_comparison": [
     {
@@ -260,6 +278,30 @@
       "model_family": "ortho-para-hydrogen-spin-rotor-partition-frozen-equilibrium",
       "judgement": "pending_human_comparison",
       "screening": "Full cross-series core-equation comparison and expert review not completed; machine witness checks only."
+    },
+    {
+      "new_id": "UC-ADV10-I111",
+      "model_family": "vanadyl-51V-EPR-angular-hyperfine-eight-lines",
+      "judgement": "pending_human_comparison",
+      "screening": "Full independent numeric witness configured; equation-level cross-series novelty and human science review pending."
+    },
+    {
+      "new_id": "UC-ADV10-A111",
+      "model_family": "paralyzable-counter-two-branch-LambertW-attenuator-identification",
+      "judgement": "pending_human_comparison",
+      "screening": "Full independent numeric witness configured; equation-level cross-series novelty and human science review pending."
+    },
+    {
+      "new_id": "UC-ADV10-O108",
+      "model_family": "AB-NMR-second-order-two-spin-eigenvector-roof-intensity",
+      "judgement": "pending_human_comparison",
+      "screening": "Full independent numeric witness configured; equation-level cross-series novelty and human science review pending."
+    },
+    {
+      "new_id": "UC-ADV10-P108",
+      "model_family": "Gouy-Chapman-planar-PB-differential-capacitance-charging-work",
+      "judgement": "pending_human_comparison",
+      "screening": "Full independent numeric witness configured; equation-level cross-series novelty and human science review pending."
     }
   ]
 }
