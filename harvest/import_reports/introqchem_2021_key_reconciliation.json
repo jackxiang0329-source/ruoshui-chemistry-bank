@@ -1,0 +1,297 @@
+{
+  "schema_version": 1,
+  "source_repository": "PaulWAyers/IntroQChemProblems",
+  "source_commit": "0491272e0b8e71059e601537b196181ab6b367cd",
+  "student_notebook_sha": "1f21cc7c7850e29d265e8e6c619e52c397fbad8b",
+  "answer_notebook_sha": "8dd5ad17f6ee0659c599e17826d776c8aeb47d79",
+  "all_fixed_course_exercises": 21,
+  "previously_flagged_disputes": 13,
+  "false_positive_dispute_labels_corrected": 2,
+  "remaining_source_answer_or_question_issues": 11,
+  "source_issue_types": {
+    "source_question_unit_or_formula_error": 2,
+    "source_notebook_variable_or_condition_typo": 2,
+    "logical_options_or_wording_interpretation": 3,
+    "scientific_evidence_interpretation": 2,
+    "source_assumption_or_outdated_terminology": 2
+  },
+  "issues": [
+    {
+      "topic": "photon_radiation_pressure_force",
+      "candidate_id": "4f119aa48851bf6449f9278833c914846e9f89da7941e6e5009520ffc3ccdeef",
+      "category": "source_question_unit_or_formula_error",
+      "source_issue_code": "student_question_unit_incorrect_for_momentum_rate",
+      "student_cell_index": 25,
+      "key_cell_index": 25,
+      "source_student_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+      "source_key_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb",
+      "source_evidence_summary": "原学生题把“动量每秒”的结果要求写成 kg·m/s；答案本实际计算光子动量乘光子每秒个数，即力 P/c。",
+      "scientific_reconciliation": "应将学生问题的单位改为 N=kg·m/s²。答案数值 F≈3.33564×10⁻¹⁰ N 不应被标注为答案键数值错误。",
+      "numerical_results_independently_recomputed": [
+        3.3356409519815207e-10
+      ],
+      "scientific_or_legal_human_review_completed": false,
+      "content_rights_verified": false,
+      "formally_approved": false
+    },
+    {
+      "topic": "gamma_radiation_molar_energy",
+      "candidate_id": "de83f56dca4823f0bd602523b583a05c0fe5a3d3b38ea7db644befe0b245bd6c",
+      "category": "source_notebook_variable_or_condition_typo",
+      "source_issue_code": "key_has_inconsistent_python_variable",
+      "student_cell_index": 28,
+      "key_cell_index": 28,
+      "source_student_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+      "source_key_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb",
+      "source_evidence_summary": "答案本的预期变量名和最终计算变量名少一个字符，实际公式仍为 λ=N_Ahc/E_m。",
+      "scientific_reconciliation": "标为源代码变量命名错误；不是计算理论错误。",
+      "numerical_results_independently_recomputed": [
+        9.27337718129434e-13
+      ],
+      "scientific_or_legal_human_review_completed": false,
+      "content_rights_verified": false,
+      "formally_approved": false
+    },
+    {
+      "topic": "hydrogen_ground_state_first_absorption",
+      "candidate_id": "c42186399c09bacb27661d048bc63188ffa5c34c03db5700b9fc5de294be80da",
+      "category": "source_notebook_variable_or_condition_typo",
+      "source_issue_code": "source_n1_inequality_typo",
+      "student_cell_index": 38,
+      "key_cell_index": 42,
+      "source_student_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+      "source_key_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb",
+      "source_evidence_summary": "学生文本的能级不等式排除了 n₁=1，却同时明确写基态 n₁=1；答案本使用 1→2 跃迁。",
+      "scientific_reconciliation": "修正不等式起点为 n₁≥1，最小吸收频率为 3cR_H/4。",
+      "numerical_results_independently_recomputed": [
+        2467441825569000
+      ],
+      "scientific_or_legal_human_review_completed": false,
+      "content_rights_verified": false,
+      "formally_approved": false
+    },
+    {
+      "topic": "complex_conjugate_tdse",
+      "candidate_id": "d96cfd62e66676b18cb95ac3c104e33a1ea584e6107534229fc197deda67ab65",
+      "category": "source_question_unit_or_formula_error",
+      "source_issue_code": "reference_answer_missing_hbar_squared",
+      "student_cell_index": 57,
+      "key_cell_index": 64,
+      "source_student_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+      "source_key_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb",
+      "source_evidence_summary": "答案本的动能项系数写成 ℏ/(2m)，正确应为 ℏ²/(2m)，且势 V 应假设实值。",
+      "scientific_reconciliation": "保留已验证的数学系数错误；共轭左端的 i 必须变为 −i。",
+      "numerical_results_independently_recomputed": [],
+      "scientific_or_legal_human_review_completed": false,
+      "content_rights_verified": false,
+      "formally_approved": false
+    },
+    {
+      "topic": "complex_conjugation_nonnegative_norm",
+      "candidate_id": "54c35ffa73afdb3f70405b38477a438d87303aa7235953ed80e47bee12fb33c4",
+      "category": "logical_options_or_wording_interpretation",
+      "source_issue_code": "source_option_set_interpretation_caveat",
+      "student_cell_index": 66,
+      "key_cell_index": 73,
+      "source_student_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+      "source_key_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb",
+      "source_evidence_summary": "对于复数 z，zz*=|z|²=a²+b²≥0；源选项包括“复数”和“非负实数”，答案本同时选两项。",
+      "scientific_reconciliation": "说明实数可视为复数，数学结论正确；非零实数不总成立（z=0）。属多选解释问题，不是错误证明。",
+      "numerical_results_independently_recomputed": [],
+      "scientific_or_legal_human_review_completed": false,
+      "content_rights_verified": false,
+      "formally_approved": false
+    },
+    {
+      "topic": "momentum_vs_kinetic_operator_eigenstates",
+      "candidate_id": "568b42a5379995432fe0893238222d5490dd5c9fa809b1d3ad7c6b81a2bc81e4",
+      "category": "logical_options_or_wording_interpretation",
+      "source_issue_code": "student_problem_is_biconditional_but_key_one_way",
+      "student_cell_index": 71,
+      "key_cell_index": 78,
+      "source_student_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+      "source_key_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb",
+      "source_evidence_summary": "学生命题含“反之亦然”，答案本布尔值为真，忽略了动能简并子空间中动量不唯一。",
+      "scientific_reconciliation": "明确题干双向命题为假：cos(kx) 是自由粒子动能本征函数却不是动量本征函数。",
+      "numerical_results_independently_recomputed": [],
+      "scientific_or_legal_human_review_completed": false,
+      "content_rights_verified": false,
+      "formally_approved": false
+    },
+    {
+      "topic": "photon_particle_evidence",
+      "candidate_id": "b013de4d9b3678264f70f4744480dbf27f9a9285c553a9c32284f6ec4f0226cd",
+      "category": "scientific_evidence_interpretation",
+      "source_issue_code": "blackbody_quantization_is_not_direct_photon_detection",
+      "student_cell_index": 5,
+      "key_cell_index": 5,
+      "source_student_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+      "source_key_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb",
+      "source_evidence_summary": "原多选答案包含黑体辐射、康普顿散射和光电效应；黑体量子化是历史相关证据但非直接单光子碰撞测量。",
+      "scientific_reconciliation": "区分能量量子化的历史证据与直接光子动量散射实验；不武断地把源答案全盘判错。",
+      "numerical_results_independently_recomputed": [],
+      "scientific_or_legal_human_review_completed": false,
+      "content_rights_verified": false,
+      "formally_approved": false
+    },
+    {
+      "topic": "vacuum_light_speed_dispersion",
+      "candidate_id": "8caea42b66a3263c3fc7b48d029e48ee4894e9cab257f8179139f8c10f1bcfe1",
+      "category": "source_assumption_or_outdated_terminology",
+      "source_issue_code": "vacuum_assumption_added_to_remove_medium_ambiguity",
+      "student_cell_index": 16,
+      "key_cell_index": 16,
+      "source_student_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+      "source_key_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb",
+      "source_evidence_summary": "学生断言波长翻倍则传播速度减半，答案本判断为假；该判断需要真空或非色散环境语境。",
+      "scientific_reconciliation": "真空中速度始终为 c，波长变化使频率调整；若处于色散介质则需定义折射率。",
+      "numerical_results_independently_recomputed": [],
+      "scientific_or_legal_human_review_completed": false,
+      "content_rights_verified": false,
+      "formally_approved": false
+    },
+    {
+      "topic": "photon_energy_doubling_relations",
+      "candidate_id": "c3ac91f39a9d15f0915b3e8315a15c5d4bab488cf882496d2804a79f50e6c1cc",
+      "category": "source_assumption_or_outdated_terminology",
+      "source_issue_code": "relativistic_mass_terminology_requires_modern_clarification",
+      "student_cell_index": 22,
+      "key_cell_index": 22,
+      "source_student_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+      "source_key_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb",
+      "source_evidence_summary": "原多选含“有效相对论质量”与波数，答案本选择与能量成比例的选项。",
+      "scientific_reconciliation": "现代授课优先使用 E=hν=pc=ℏck；光子静止质量为零，避免把 E/c² 误称为静止质量。",
+      "numerical_results_independently_recomputed": [],
+      "scientific_or_legal_human_review_completed": false,
+      "content_rights_verified": false,
+      "formally_approved": false
+    },
+    {
+      "topic": "photon_particles_vs_matter_waves",
+      "candidate_id": "4310e4b0f135f812e05a64b925d8907aeaae495af10df972465700b84033347d",
+      "category": "scientific_evidence_interpretation",
+      "source_issue_code": "blackbody_quantization_evidence_requires_qualification",
+      "student_cell_index": 45,
+      "key_cell_index": 49,
+      "source_student_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+      "source_key_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb",
+      "source_evidence_summary": "答案本包含黑体辐射、光电效应和康普顿散射；混合了量子化历史证据与光子碰撞现象。",
+      "scientific_reconciliation": "在科学讲解中分层表述证据强度，电子衍射体现电子波动性而非光子的粒子性。",
+      "numerical_results_independently_recomputed": [],
+      "scientific_or_legal_human_review_completed": false,
+      "content_rights_verified": false,
+      "formally_approved": false
+    },
+    {
+      "topic": "wavefunction_probability_density_nonnegative",
+      "candidate_id": "3ae747718eb07d384149e5d3a3968ece6b7715452b74e55a00f1dbb17e4dedcc",
+      "category": "logical_options_or_wording_interpretation",
+      "source_issue_code": "student_and_answer_notebook_questions_are_opposite_wording",
+      "student_cell_index": 63,
+      "key_cell_index": 70,
+      "source_student_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb",
+      "source_key_notebook_url": "https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb",
+      "source_evidence_summary": "学生版问“永远不为负”应答真；答案本变量名则改问“可否为负”并赋假。",
+      "scientific_reconciliation": "两种逻辑表述的结论等价但真假字面反向，不能直接把答案本布尔值作为学生题答案。",
+      "numerical_results_independently_recomputed": [],
+      "scientific_or_legal_human_review_completed": false,
+      "content_rights_verified": false,
+      "formally_approved": false
+    }
+  ],
+  "confirmed_or_no_known_dispute": [
+    {
+      "topic": "photon_angular_wavenumber",
+      "source_student_cell_index": 49,
+      "source_key_cell_index": 56
+    },
+    {
+      "topic": "hamiltonian_total_energy",
+      "source_student_cell_index": 59,
+      "source_key_cell_index": 66
+    },
+    {
+      "topic": "complex_exponential_wavefunction",
+      "source_student_cell_index": 69,
+      "source_key_cell_index": 76
+    },
+    {
+      "topic": "photon_frequency_500nm",
+      "source_student_cell_index": 9,
+      "source_key_cell_index": 9
+    },
+    {
+      "topic": "photon_wavelength_frequency_scaling",
+      "source_student_cell_index": 13,
+      "source_key_cell_index": 13
+    },
+    {
+      "topic": "hene_single_photon_energy",
+      "source_student_cell_index": 19,
+      "source_key_cell_index": 19
+    },
+    {
+      "topic": "davisson_germer_electron_waves",
+      "source_student_cell_index": 31,
+      "source_key_cell_index": 31
+    },
+    {
+      "topic": "electron_diffraction_bragg_scattering",
+      "source_student_cell_index": 35,
+      "source_key_cell_index": 35
+    },
+    {
+      "topic": "electron_waves_vs_atomic_lines",
+      "source_student_cell_index": 42,
+      "source_key_cell_index": 46
+    },
+    {
+      "topic": "baseball_debroglie_wavelength",
+      "source_student_cell_index": 53,
+      "source_key_cell_index": 60
+    }
+  ],
+  "corrected_false_positive_evidence": [
+    {
+      "topic": "complex_exponential_wavefunction",
+      "student_cell": 69,
+      "key_cell": 76,
+      "original_assessment": "错误地把答案键标为仅支持实参数",
+      "verified_note": "原键已明确接受 A、a、b、k、ω 等可能为复数时的整体共轭表达式。",
+      "current_status": "source_answer_confirmed"
+    },
+    {
+      "topic": "electron_waves_vs_atomic_lines",
+      "student_cell": 42,
+      "key_cell": 46,
+      "original_assessment": "错误地声称答案本接受原子谱线作为电子波的直接证据",
+      "verified_note": "原答案本只选 E（电子晶体散射），并没有选择 B（氢原子谱线）。",
+      "current_status": "source_answer_confirmed"
+    }
+  ],
+  "student_prompt_unit_issue_attribution_corrected": true,
+  "independently_checked_physics_witnesses": {
+    "radiation_pressure_examples": [
+      {
+        "wavelength_m": 5.32e-7,
+        "force_N": 3.3356409519815207e-10
+      },
+      {
+        "wavelength_m": 6.328e-7,
+        "force_N": 3.33564095198152e-10
+      },
+      {
+        "wavelength_m": 0.000001,
+        "force_N": 3.3356409519815207e-10
+      }
+    ],
+    "complex_modulus_proof": "(a+bi)(a−bi)=a²+b²≥0，等号当且仅当 a=b=0",
+    "kinetic_counterexample": "φ(x)=cos(kx) 满足 Tφ=ℏ²k²/(2m)φ，但 pφ=iℏk sin(kx) 与 φ 不成比例",
+    "complex_tdse_correct_formula": "−iℏ∂Ψ*/∂t = −ℏ²/(2m)∂²Ψ*/∂x² + VΨ*（V为实势）",
+    "lowest_hydrogen_absorption_hz": 2467441825569000
+  },
+  "source_rights_confirmed": 0,
+  "expert_review_approved": 0,
+  "released_for_exams": 0,
+  "note": "Separate source-provenance discrepancy audit. A source-key issue is NOT necessarily a mathematically incorrect answer. Notebook specific rights include third-party exceptions; never auto promote."
+}
