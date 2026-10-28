@@ -41,7 +41,7 @@ const w={
  const eos=v=>R*T/(v-b)-a/(v*v)-P;
  let lo=.001,hi=.01;for(let j=0;j<110;j++){const m=(lo+hi)/2;if(eos(m)>0)lo=m;else hi=m;}
  const v=(lo+hi)/2,tc=8*a/(27*R*b),pc=a/(27*b*b),vc=3*b;
- const h=1e-9,dp=(eos(v+h)-eos(v-h))/(2*h),dtd=R/(v-b)/(-dp),mu=(T*dtd-v)/Cp;
+ const h=1e-8,dp=(eos(v+h)-eos(v-h))/(2*h),dtd=R/(v-b)/(-dp),mu=(T*dtd-v)/Cp;
  assert.ok(v>b&&dp<0&&Math.abs(eos(v))<1e-6&&mu>0);
  return [tc,pc/1e6,vc*1000,v*1000,P*v/(R*T),dp/1e9,mu*1e6,2*a/(R*b)*(1-b/v)**2,2*a/(R*b)];
 },
