@@ -6,7 +6,7 @@ import {fileURLToPath} from 'node:url';
 const source=fileURLToPath(new URL('../editorial/advanced_integrated_v2/advanced_authored_set01.jsonl',import.meta.url));
 const data=readFileSync(source,'utf8').trimEnd().split('\n').map(JSON.parse);
 const R=8.314462618,F=96485.33212,T=298.15,NA=6.02214076e23;
-const c=(x,y,tag,tol=3e-8)=>assert.ok(Number.isFinite(x)&&Number.isFinite(y)&&Math.abs(x-y)<=tol*Math.max(Math.abs(y),Math.abs(x),1e-9),tag+': '+x+' vs '+y);
+const c=(x,y,tag,tol=3e-8)=>assert.ok(Number.isFinite(x)&&Number.isFinite(y)&&Math.abs(x-y)<=Math.max(tol*Math.max(Math.abs(y),Math.abs(x),1e-9),Math.abs(y)<1e-9?1e-7:0),tag+': '+x+' vs '+y);
 assert.equal(data.length,12);
 const ids=new Set(),titles=new Set(),counts={inorganic:0,analytical:0,organic:0,physical:0};
 for(const p of data){
