@@ -169,3 +169,10 @@
 - 另有[8 道既存中文较完整草稿](external_sources/openstax_chemistry/chinese_science_review.json)，均属于外部审核材料，**未进入正式组卷题库**。
 - [多层级统计](harvest/coverage_report.json)同步分别显示主候选题、NVIDIA 研究隔离问答、OpenStax 原题、数值复核数量、中文说明数量、专家正式批准数量。42 是外部研究工作量，不能额外加到候选题总数之上。
 - 所有 OpenStax 权利、中文改编及模型假设仍未获得来源逐题批准与专家正式审核，仓库持续阻止自动进入 data/candidates 或 release。
+
+## 中文 XeLaTeX 科学复核册（42 道，待审核）
+
+- 本次新建 [42 道化学教材来源数值质检册 TeX 源文件](external_sources/openstax_chemistry/reports/chemistry_source_science_audit.tex)，使用 [自动生成器](scripts/build-chemistry-source-tex.mjs) 从固定版本科学复核记录构建，并以 [回归测试](tests/chemistry-source-tex.test.mjs)校验对应题号、计算值、授权状态与总量。
+- 单独的 [XeLaTeX 中文 PDF 工作流](.github/workflows/chemistry-review-pdf.yml)会运行两次编译、检查 PDF 有效性并将产物上传为 GitHub Actions 工件；仅当成功编译并提交后才可在 [PDF 档案路径](external_sources/openstax_chemistry/reports/chemistry_source_science_audit.pdf)直接下载。
+- **重要：不是公开发行的教材译本。**本册只含来源章节/序号、作者独立的中文计算方法、数值和错误标签，不复制教材原题全文；42 道条目中 34 道有逐步推导，8 道为计算摘要；人工专家审核、逐题版权确认、正式组卷批准均为 0。
+- 若编译失败，以 GitHub Actions 结果为准，不得因 .tex 文件存在便宣称已有可用 PDF。PDF 和 TeX 始终位于研究隔离区而非 `release/`。
