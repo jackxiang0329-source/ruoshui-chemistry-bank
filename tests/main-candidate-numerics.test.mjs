@@ -33,9 +33,9 @@ test('directly edited answer, units, formula parameters, rights or topic fails s
 });
 test('audit is not allowed to hide missing or duplicate source-linked saved candidates',()=>{
  assert.throws(()=>buildStoredReplay(rows.filter(x=>x.id!==FAMILIES[0].generate()[0].id),
-  {...qa,total_candidates:rows.length-1,by_content_kind:{exercise_candidate:1436,study_card:278},
+  {...qa,total_candidates:rows.length-1,by_content_kind:{exercise_candidate:rows.length-1-278,study_card:278},
    by_publishable:{false:rows.length-1}}),/missing/);
  assert.throws(()=>buildStoredReplay([...rows,rows[0]],{...qa,total_candidates:rows.length+1,
-  by_content_kind:{exercise_candidate:1438,study_card:278},
+  by_content_kind:{exercise_candidate:rows.length+1-278,study_card:278},
   by_publishable:{false:rows.length+1}}),/Duplicate saved/);
 });
