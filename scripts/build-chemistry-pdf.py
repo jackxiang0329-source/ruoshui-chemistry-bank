@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "editorial"
-OUT = ROOT / "release" / "pdfs-src"
+OUT = ROOT / "editorial" / "pdf_drafts" / "tex"
 SUBJECTS = {
     "inorganic": "无机化学",
     "analytical": "分析化学",
@@ -85,9 +85,9 @@ PREAMBLE = r"""
 \setmainfont{DejaVu Sans}
 \setCJKmainfont{Noto Serif CJK SC}
 \usepackage{amsmath,amssymb}
+\usepackage{xcolor}
 \usepackage[colorlinks=true,linkcolor=blue!45!black,unicode=true]{hyperref}
 \usepackage{enumitem}
-\usepackage{xcolor}
 \usepackage{needspace}
 \usepackage{fancyhdr}
 \setlength{\parindent}{2em}
