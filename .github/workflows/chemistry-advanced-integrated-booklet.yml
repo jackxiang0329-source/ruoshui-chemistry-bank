@@ -49,3 +49,17 @@ jobs:
             editorial/advanced_integrated_v1/science_assumption_review.json
             editorial/advanced_integrated_v1/candidate_ids.json
           if-no-files-found: error
+      - name: Save versioned TeX and PDF as explicitly unapproved editorial files
+        run: |
+          set -euo pipefail
+          git add -f -- editorial/advanced_integrated_v1/original_advanced_integrated_12.tex editorial/advanced_integrated_v1/original_advanced_integrated_12.pdf editorial/advanced_integrated_v1/science_assumption_review.json editorial/advanced_integrated_v1/candidate_ids.json
+          if git diff --cached --quiet; then
+            echo "All existing advanced editorial files are current"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "docs(chemistry): save 12 original scientific review problems and draft PDF [skip ci]"
+          git fetch --no-tags origin main
+          git rebase origin/main
+          git push origin HEAD:main
