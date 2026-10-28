@@ -103,6 +103,8 @@ on:
       - "scripts/import-chemtrain-reaction-learn.mjs"
       - "tests/chemtrain-reaction-learn.test.mjs"
       - "scripts/import-chemtrain-daily-text.mjs"
+      - "scripts/audit-chemtrain-daily-stored.mjs"
+      - "tests/chemtrain-daily-stored.test.mjs"
       - "tests/chemtrain-daily-text.test.mjs"
       - "tests/qcedu-introqm.test.mjs"
       - "harvest/pinned_qcedu_introqm.json"
@@ -178,6 +180,8 @@ jobs:
         run: node --test tests/qcedu-introqm.test.mjs
       - name: Verify pinned Reaction Learn licensed-card importer
         run: node --test tests/chemtrain-reaction-learn.test.mjs
+      - name: Verify 268 source-linked ChemTrain Daily MCQ files detect tampering and rights changes
+        run: node --test tests/chemtrain-daily-stored.test.mjs
       - name: Verify ChemTrain Daily text-only licensed MCQ source
         run: node --test tests/chemtrain-daily-text.test.mjs
       - name: Verify existing MIT Muza quiz coverage and prevent duplicate imports
@@ -282,6 +286,8 @@ jobs:
         run: node scripts/normalize-unpublished-candidates.mjs
       - name: Check 593 persisted TMC scientific source and answer records with pinned AST source
         run: python3 scripts/audit-chemtrain-tmc-stored.py
+      - name: Compare 268 stored text-only MCQs with pinned ChemTrain Daily author source
+        run: node scripts/audit-chemtrain-daily-stored.mjs
       - name: Audit candidate review buckets and potential duplicates
         run: node scripts/audit-candidate-quality.mjs
       - name: Recalculate persisted chemistry main-candidate numeric solutions with source-specific inverse checks
@@ -314,7 +320,7 @@ jobs:
         run: node scripts/report-chemistry-coverage.mjs
       - name: Commit only real additions or changes
         run: |
-          git add -- harvest/source_candidates.json harvest/quality_audit.json harvest/main_original_numeric_replay.json harvest/main_supplementary_answer_replay.json harvest/main_tmc_stored_replay.json harvest/mcq_integrity_audit.json harvest/source_review_queue.json harvest/expert_review_plan.json harvest/coverage_report.json release/chemistry-approved-manifest.json
+          git add -- harvest/source_candidates.json harvest/quality_audit.json harvest/main_original_numeric_replay.json harvest/main_supplementary_answer_replay.json harvest/main_tmc_stored_replay.json harvest/main_daily_mcq_stored_replay.json harvest/mcq_integrity_audit.json harvest/source_review_queue.json harvest/expert_review_plan.json harvest/coverage_report.json release/chemistry-approved-manifest.json
           if [ -f harvest/external_source_catalog.json ]; then
             git add -- harvest/external_source_catalog.json
           fi
