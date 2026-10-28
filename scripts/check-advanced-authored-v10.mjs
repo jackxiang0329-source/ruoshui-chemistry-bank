@@ -10,6 +10,43 @@ const F=96485.33212;
 const T=280,J=2400,q=Math.exp(-J/(R*T)),Z=1+3*q,p=3*q/Z;
 const w={
 
+"UC-ADV10-I116":()=>{
+ const CM=.012,CL=.055,b1=75,b2=900;
+ const species=l=>{const D=1+b1*l+b2*l*l;return [CM/D,CM*b1*l/D,CM*b2*l*l/D];};
+ let lo=0,hi=CL;
+ for(let j=0;j<110;j++){const l=(lo+hi)/2,[m,x,y]=species(l);if(l+x+2*y>CL)hi=l;else lo=l;}
+ const l=(lo+hi)/2,[m,x,y]=species(l),bound=x+2*y;
+ assert.ok(l>0&&l<CL&&Math.abs(m+x+y-CM)<1e-14&&Math.abs(l+bound-CL)<1e-14);
+ assert.ok(Math.abs(2*(m+x+y)-2*CM)<1e-14);
+ return [l,m,x,y,y/CM,bound/CM,bound,l/CL,2*CM];
+},
+"UC-ADV10-A116":()=>{
+ const E=[[8000,2000],[1000,12000]],D=E[0][0]*E[1][1]-E[0][1]*E[1][0];
+ const invert=(a,b)=>[(E[1][1]*a-E[0][1]*b)/D,(E[0][0]*b-E[1][0]*a)/D];
+ const pH=[5.9,7.1],pKa=6.4,C=8e-5,obs=pH.map(ph=>{const frac=1/(1+10**(pKa-ph));return E.map(row=>C*(row[0]*(1-frac)+row[1]*frac));});
+ const x=obs.map(([a,b])=>invert(a,b)),tot=x.map(z=>z[0]+z[1]),frac=x.map(z=>z[1]/(z[0]+z[1])),pks=x.map((z,i)=>pH[i]-Math.log10(z[1]/z[0]));
+ assert.ok(Math.abs(tot[0]-tot[1])<1e-14&&Math.abs(pks[0]-pks[1])<1e-12&&x.flat().every(z=>z>0));
+ const mid=E.map(row=>tot[0]*(row[0]+row[1])/2);
+ return [tot[0],frac[0],frac[1],pks[0],...obs[0],...obs[1],...mid,obs[1][1]/obs[1][0]];
+},
+"UC-ADV10-O113":()=>{
+ const m0=.3,m4=.15,donorNMR=.6,sum=1+m4-m0,discr=Math.sqrt(sum*sum-4*m4),roots=[(sum+discr)/2,(sum-discr)/2];
+ const d=roots.find(z=>Math.abs(z-donorNMR)<1e-12),a=m4/d,onlyD=d*(1-a),onlyA=(1-d)*a,m2=onlyD+onlyA;
+ assert.ok(d>0&&a>0&&Math.abs((1-d)*(1-a)-m0)<1e-14);
+ assert.ok(Math.abs(m0+m2+m4-1)<1e-14&&Math.abs(2*m2+4*m4-2*(d+a))<1e-14);
+ return [d,a,m0,m2,m4,onlyD,onlyA,2*m2+4*m4,onlyD/m2,d*(1-d)];
+},
+"UC-ADV10-P113":()=>{
+ const R=8.314462618,a=.364,b=4.27e-5,T=300,P=1e6,Cp=37;
+ const eos=v=>R*T/(v-b)-a/(v*v)-P;
+ let lo=.001,hi=.01;for(let j=0;j<110;j++){const m=(lo+hi)/2;if(eos(m)>0)lo=m;else hi=m;}
+ const v=(lo+hi)/2,tc=8*a/(27*R*b),pc=a/(27*b*b),vc=3*b;
+ const h=1e-9,dp=(eos(v+h)-eos(v-h))/(2*h),dtd=R/(v-b)/(-dp),mu=(T*dtd-v)/Cp;
+ assert.ok(v>b&&dp<0&&Math.abs(eos(v))<1e-6&&mu>0);
+ return [tc,pc/1e6,vc*1000,v*1000,P*v/(R*T),dp/1e9,mu*1e6,2*a/(R*b)*(1-b/v)**2,2*a/(R*b)];
+},
+
+
 "UC-ADV10-I115":()=>{
  const raw=[2,12,5],fac=[.8,1.2,1],q=raw.map((v,j)=>v/fac[j]),z=q.reduce((a,b)=>a+b,0),f=q.map(v=>v/z),n=f.map(v=>70*v),nbo=2*n[0]+n[1],bo=(2*n[0]+3*n[1]+4*n[2])/2;
  assert.ok(Math.abs(nbo-60)<1e-12&&Math.abs(nbo+bo-170)<1e-12);

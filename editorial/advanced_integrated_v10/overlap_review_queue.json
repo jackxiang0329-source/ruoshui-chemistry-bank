@@ -2,7 +2,7 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 60,
+  "current_draft_count": 64,
   "preliminary_flags": 33,
   "pairs": [
     {
@@ -494,6 +494,30 @@
       "model_family": "coupled-Butler-Volmer-mass-transfer-limited-polarization",
       "judgement": "pending_human_comparison",
       "screening": "Numeric witness configured; expert and equation-level review pending."
+    },
+    {
+      "new_id": "UC-ADV10-I116",
+      "model_family": "stepwise-metal-neutral-ligand-formation-mass-balance-uniqueness",
+      "judgement": "pending_human_comparison",
+      "screening": "Automated numeric witness added; chemical validity and governing-equation-level cross-series novelty still require human review."
+    },
+    {
+      "new_id": "UC-ADV10-A116",
+      "model_family": "two-wavelength-acid-base-spectral-unmixing-Henderson-Hasselbalch-dual-pH",
+      "judgement": "pending_human_comparison",
+      "screening": "Automated numeric witness added; chemical validity and governing-equation-level cross-series novelty still require human review."
+    },
+    {
+      "new_id": "UC-ADV10-O113",
+      "model_family": "aldol-donor-acceptor-paired-carbon13-tracing-MS-NMR-inverse-quadratic",
+      "judgement": "pending_human_comparison",
+      "screening": "Automated numeric witness added; chemical validity and governing-equation-level cross-series novelty still require human review."
+    },
+    {
+      "new_id": "UC-ADV10-P113",
+      "model_family": "van-der-Waals-criticality-Joule-Thomson-inversion-implicit-EOS",
+      "judgement": "pending_human_comparison",
+      "screening": "Automated numeric witness added; chemical validity and governing-equation-level cross-series novelty still require human review."
     }
   ]
 }
