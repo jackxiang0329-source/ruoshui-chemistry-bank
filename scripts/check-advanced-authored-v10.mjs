@@ -10,6 +10,45 @@ const F=96485.33212;
 const T=280,J=2400,q=Math.exp(-J/(R*T)),Z=1+3*q,p=3*q/Z;
 const w={
 
+ "UC-ADV10-I108":()=>{
+  const Ksp=1.8e-10,beta=1.6e7,LT=.02,C0=.01;
+  const bisect=(f,lo,hi)=>{let fl=f(lo);for(let j=0;j<90;j++){const mid=(lo+hi)/2;if(fl*f(mid)<=0)hi=mid;else {lo=mid;fl=f(mid)}}return (lo+hi)/2};
+  const f=L=>{const c=(LT-L)/2,s=(-(C0-c)+Math.sqrt((C0+c)**2+4*Ksp))/2,a=Ksp/(C0+s);return c-beta*a*L*L};
+  const L=bisect(f,.015,.02),c=(LT-L)/2,s=(-(C0-c)+Math.sqrt((C0+c)**2+4*Ksp))/2,a=Ksp/(C0+s);
+  assert.ok(Math.abs(s-a-c)<1e-12&&Math.abs(L+2*c-LT)<1e-12);
+  assert.ok(Math.abs(a*(C0+s)-Ksp)<1e-15&&Math.abs(c-beta*a*L*L)<1e-12);
+  return [s,a,c,L,2*c/LT,s/(Ksp/C0)];
+ },
+ "UC-ADV10-A108":()=>{
+  const x=[0,1,2,4],y=[170,221,268,370],sig=[1,2,3,4],w=sig.map(v=>1/(v*v));
+  const S=w.reduce((a,b)=>a+b,0),mx=x.reduce((a,z,i)=>a+w[i]*z,0)/S,my=y.reduce((a,z,i)=>a+w[i]*z,0)/S;
+  const vxx=x.reduce((a,z,i)=>a+w[i]*(z-mx)**2,0),vxy=x.reduce((a,z,i)=>a+w[i]*(z-mx)*(y[i]-my),0);
+  const b=vxy/vxx,a=my-b*mx,c=(a-20)/b,vb=1/vxx,va=1/S+mx**2/vxx,cov=-mx/vxx;
+  const u=Math.sqrt(va/b**2+(a-20)**2*vb/b**4-2*(a-20)*cov/b**3);
+  const chi=y.reduce((z,yi,i)=>z+((yi-a-b*x[i])/sig[i])**2,0);
+  assert.ok(b>0&&c>0&&u>0&&chi>=0);
+  return [a,b,c,u,chi,-a/b];
+ },
+ "UC-ADV10-O105":()=>{
+  const T=298.15,R=8.314462618,kB=1.380649e-23,h=6.62607015e-34;
+  const z=1+Math.exp(-3000/(R*T)),w1=1/z,w2=1-w1,pref=kB*T/h;
+  const rate=(w,bar)=>Math.exp(Math.log(w)+Math.log(pref)-bar/(R*T));
+  const p1=rate(w1,75000),p2=rate(w2,70000),q1=rate(w1,80000),q2=rate(w2,78000);
+  const kp=p1+p2,kq=q1+q2;
+  assert.ok(kp>0&&kq>0&&Math.abs(w1+w2-1)<1e-12);
+  return [w2,kp,kq,kp/(kp+kq),p2/kp,-R*T*Math.log(kp/pref)/1000];
+ },
+ "UC-ADV10-P105":()=>{
+  const chi=3;let x=.075;
+  for(let j=0;j<25;j++){const f=Math.log(x/(1-x))+chi*(1-2*x),df=1/x+1/(1-x)-2*chi;x-=f/df}
+  const spin=(1-Math.sqrt(1-2/chi))/2;
+  const g=z=>z*Math.log(z)+(1-z)*Math.log(1-z)+chi*z*(1-z);
+  assert.ok(x>0&&x<spin&&Math.abs(Math.log(x/(1-x))+chi*(1-2*x))<1e-12);
+  assert.ok(1/x+1/(1-x)-2*chi>0&&4-2*chi<0);
+  return [x,1-x,spin,1-spin,4-2*chi,g(x)];
+ },
+
+
  "UC-ADV10-I105":()=>{
   const K=1e-12,p1=.04,p2=.16,va=(K/(4*Math.sqrt(p1)))**(1/3),vb=(K/(4*Math.sqrt(p2)))**(1/3);
   return [va,2*va,vb,vb/va,-1/6];

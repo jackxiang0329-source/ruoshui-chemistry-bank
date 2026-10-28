@@ -2,7 +2,7 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 28,
+  "current_draft_count": 32,
   "preliminary_flags": 8,
   "pairs": [
     {
@@ -54,7 +54,7 @@
       "judgement": "pending_human_comparison"
     }
   ],
-  "notes": "All 28 editorial records await scientific, copyright and governing-equation-level novelty verification. Preliminary similarity flags are hypotheses, not confirmed duplicates. No expert approval.",
+  "notes": "All 32 editorial records await scientific, copyright and governing-equation-level novelty verification. Eight preliminary similarity flags are unconfirmed. New four records have independent machine witness, not expert approval.",
   "expert_approved": 0,
   "new_items_requiring_cross_series_comparison": [
     {
@@ -152,6 +152,30 @@
       "model_family": "ternary-Maxwell-Stefan-eqimolar-coupled-flux",
       "judgement": "pending_human_comparison",
       "screening": "Independent numerical model witness passed; not a complete prior-volume comparison."
+    },
+    {
+      "new_id": "UC-ADV10-I108",
+      "model_family": "AgCl-ammonia-complexation-common-ion-multibalance",
+      "judgement": "pending_human_comparison",
+      "screening": "Distinct model hypothesis only; independent machine numerical witness checked; no comprehensive all-series governing-equation comparison or expert review."
+    },
+    {
+      "new_id": "UC-ADV10-A108",
+      "model_family": "heteroscedastic-weighted-standard-addition-covariance-propagation",
+      "judgement": "pending_human_comparison",
+      "screening": "Distinct model hypothesis only; independent machine numerical witness checked; no comprehensive all-series governing-equation comparison or expert review."
+    },
+    {
+      "new_id": "UC-ADV10-O105",
+      "model_family": "Curtin-Hammett-fast-conformer-equilibrium-parallel-selectivity",
+      "judgement": "pending_human_comparison",
+      "screening": "Distinct model hypothesis only; independent machine numerical witness checked; no comprehensive all-series governing-equation comparison or expert review."
+    },
+    {
+      "new_id": "UC-ADV10-P105",
+      "model_family": "regular-solution-binodal-spinodal-common-tangent",
+      "judgement": "pending_human_comparison",
+      "screening": "Distinct model hypothesis only; independent machine numerical witness checked; no comprehensive all-series governing-equation comparison or expert review."
     }
   ]
 }
