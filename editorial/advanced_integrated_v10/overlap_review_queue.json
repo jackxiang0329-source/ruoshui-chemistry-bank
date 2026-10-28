@@ -2,8 +2,8 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 16,
-  "preliminary_flags": 4,
+  "current_draft_count": 28,
+  "preliminary_flags": 8,
   "pairs": [
     {
       "new_id": "UC-ADV10-I102",
@@ -28,9 +28,33 @@
       "prior_id": "UC-ADV9-O77",
       "reason": "均由光子吸收与量子产率推产物；本题增加空间吸收积分和位置分布",
       "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-A106",
+      "prior_id": "UC-ADV9-A86",
+      "reason": "Both involve particle diffusion and size response; DLS Rayleigh intensity-to-number inversion must be checked against FCS Stokes radius inference",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-O103",
+      "prior_id": "UC-ADV9-A82",
+      "reason": "Both invert sixth-power optical/magnetic distance responses; NOE triangle geometry adds constraints",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-O104",
+      "prior_id": "UC-ADV9-I91",
+      "reason": "Two versus three-state chemical turnover cycles share inverse-rate residence-time mathematics",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-P102",
+      "prior_id": "UC-ADV9-P91",
+      "reason": "Both involve osmotic transport effects; pressure-driven membrane flow differs from virial osmotic pressure",
+      "judgement": "pending_human_comparison"
     }
   ],
-  "notes": "4 prior potential overlap pairs remain unresolved. Four new records are separately queued for full cross-series governing-equation comparison. All 16 are unapproved drafts; no expert review was performed.",
+  "notes": "All 28 editorial records await scientific, copyright and governing-equation-level novelty verification. Preliminary similarity flags are hypotheses, not confirmed duplicates. No expert approval.",
   "expert_approved": 0,
   "new_items_requiring_cross_series_comparison": [
     {
@@ -56,6 +80,78 @@
       "model_family": "charge-regulated-weak-acid-gel-Donnan-cubic-osmotic",
       "judgement": "pending_human_comparison",
       "screening": "No complete all-series mathematical-model comparison yet; no originality claim."
+    },
+    {
+      "new_id": "UC-ADV10-I105",
+      "model_family": "Kroger-Vink-reducing-oxide-defect-powerlaw",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numerical model witness passed; not a complete prior-volume comparison."
+    },
+    {
+      "new_id": "UC-ADV10-I106",
+      "model_family": "Wannier-Mott-exciton-effective-mass",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numerical model witness passed; not a complete prior-volume comparison."
+    },
+    {
+      "new_id": "UC-ADV10-I107",
+      "model_family": "classical-crystal-nucleation-critical-barrier",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numerical model witness passed; not a complete prior-volume comparison."
+    },
+    {
+      "new_id": "UC-ADV10-A105",
+      "model_family": "TOF-MS-time-zero-two-point-calibration",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numerical model witness passed; not a complete prior-volume comparison."
+    },
+    {
+      "new_id": "UC-ADV10-A106",
+      "model_family": "DLS-Rayleigh-intensity-to-number-bimodal",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numerical model witness passed; not a complete prior-volume comparison."
+    },
+    {
+      "new_id": "UC-ADV10-A107",
+      "model_family": "ARXPS-overlayer-angle-resolved-attenuation",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numerical model witness passed; not a complete prior-volume comparison."
+    },
+    {
+      "new_id": "UC-ADV10-O102",
+      "model_family": "time-dependent-covalent-inhibitor-two-dose-identifiability",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numerical model witness passed; not a complete prior-volume comparison."
+    },
+    {
+      "new_id": "UC-ADV10-O103",
+      "model_family": "NMR-NOE-triangle-sixth-power-spatial-inference",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numerical model witness passed; not a complete prior-volume comparison."
+    },
+    {
+      "new_id": "UC-ADV10-O104",
+      "model_family": "three-stage-organometallic-cycle-flux",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numerical model witness passed; not a complete prior-volume comparison."
+    },
+    {
+      "new_id": "UC-ADV10-P102",
+      "model_family": "Kedem-Katchalsky-reflection-water-flux",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numerical model witness passed; not a complete prior-volume comparison."
+    },
+    {
+      "new_id": "UC-ADV10-P103",
+      "model_family": "thermoelectric-Peltier-Seebeck-cold-side-energy",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numerical model witness passed; not a complete prior-volume comparison."
+    },
+    {
+      "new_id": "UC-ADV10-P104",
+      "model_family": "ternary-Maxwell-Stefan-eqimolar-coupled-flux",
+      "judgement": "pending_human_comparison",
+      "screening": "Independent numerical model witness passed; not a complete prior-volume comparison."
     }
   ]
 }
