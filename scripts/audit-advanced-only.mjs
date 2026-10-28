@@ -53,12 +53,36 @@ for(const [subject,code] of Object.entries(thirdGroupCodes)){
  });
 }
 assert.equal(thirdIDs.size,12);
+
+const series4Groups={inorganic:13,analytical:13,organic:12,physical:12};
+const v4IDs=new Set(),v4Titles=new Set();
+for(const [subject,target] of Object.entries(series4Groups)){
+ let n=0;
+ for(const part of [1,2]){
+  const records=read('editorial/advanced_integrated_v4/'+subject+'_part'+part+'.jsonl').trimEnd().split('\n').map(JSON.parse);
+  assert.equal(records.length,part===1?(target===13?7:6):6);
+  for(const q of records){
+   assert.equal(q.subject,subject);
+   assert.equal(q.original_independent_model,true);
+   assert.equal(q.numeric_variant,false);
+   assert.equal(q.quality_status,'awaiting_expert_review');
+   assert.equal(q.publishable,false);
+   assert.equal(q.exclude_from_official_bank,true);
+   assert.equal(q.verification.human_expert_reviewed,false);
+   assert.ok(!v4IDs.has(q.id)&&!v4Titles.has(q.title));
+   v4IDs.add(q.id);v4Titles.add(q.title);n++;
+  }
+ }
+ assert.equal(n,target);
+}
+assert.equal(v4IDs.size,50);
+
 for(const p of ['data/integrated_challenges','data/research_quarantine','external_sources',
  'third_party','.github/workflows/chemistry-harvest.yml','.github/workflows/chemistry-discovery-fast.yml',
  '.github/workflows/chemistry-rqa-intake.yml','scripts/import-original-coupled-32768.mjs'])
  assert.equal(exists(p),false,'Deprecated low-difficulty resource returned: '+p);
 const release=JSON.parse(read('release/chemistry-approved-manifest.json'));
-assert.equal(release.advanced_editorial_items,36);
+assert.equal(release.advanced_editorial_items,86);
 assert.equal(release.approved_count,0);
 assert.deepEqual(release.items,[]);
-console.log('PASS: 12+12+12 = 36 independent advanced chemistry cases, zero low-difficulty candidates, zero expert approvals');
+console.log('PASS: 12+12+12+50 = 86 independent advanced chemistry cases, zero low-difficulty candidates, zero expert approvals');
