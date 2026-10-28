@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第10辑 (16题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第10辑 (28题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -120,6 +120,69 @@
 AB₂O₄仅为理想化二价/三价尖晶石；反位能线性、理想子晶格混合、定温平衡；跨辑模型和真实材料适用性仍待人工复核。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I105 · 氧空位—电子缺陷耦合平衡的氧分压负六分之一次律}
+\noindent\textbf{题目}\par
+假想还原性氧化物的氧亚晶格可按Kröger–Vink记号发生氧逸出反应 O\_O ⇌ V\_O\textasciicircum{}\{••\}+2e′+(1/2)O2(g)。将所有缺陷浓度规范化到相同参考位点浓度后用无量纲分数v表示双正氧空位、n表示电子，氧气活度为pO2/p°。假设只有这两种电荷缺陷，故局域电中性n=2v；质量作用常数K=v n² (pO2/p°)\textasciicircum{}\{1/2\}=1.000×10\textasciicircum{}-12。温度固定、气体氧分压初始0.04000bar、p°=1bar。求v、n；当氧分压变为0.1600bar时的v、空位浓度比例及d ln v/d ln pO2，说明该指数来自哪两条独立约束。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 按反应计量每生成1个双正氧空位产生2个电子，所以电子分数n=2v，是电荷守恒而不是电子对空位的配比猜测。
+\item 代入质量作用表达式得K=4v³(p/p°)\textasciicircum{}\{1/2\}，所以v=[K/(4√(p/p°))]\textasciicircum{}\{1/3\}。
+\item 初始p=0.04000bar，v=0.0001077217345，n=0.000215443469，两者均应远小于1才符合稀缺陷近似。
+\item p增至0.1600bar时v2=0.00008549879733，两压强空位比v2/v1=0.793700526。
+\item 对ln v=(lnK−ln4)/3−(1/6)ln(p/p°)微分，得斜率−1/6。
+\item 氧压提高使空位与自由电子减少，符号符合较强氧化气氛降低氧空位的反应方向。
+\item 若其它受主杂质、氧间隙或局部不电中性显著，则n=2v不再成立，氧压幂律将改变。
+\item 代入方程复核物料、电荷、热能或形核条件，约束残差为：1.332e-15；0.000e+0；1.332e-15。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.000107721735 site fraction；答案2 = 0.000215443469 site fraction；答案3 = 8.54987973e-05 site fraction；答案4 = 0.793700526 ratio；答案5 = -0.166666667 power\par
+\noindent\textbf{模型前提：}
+题设有效活动度和连续介质近似成立；材料实验真实性、跨辑实质原创性和专业审稿未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I106 · 无机半导体Wannier–Mott激子的束缚能、Bohr半径和热离解标度}
+\noindent\textbf{题目}\par
+某假想直接带隙无机半导体中的电子—空穴对可用Wannier–Mott氢样激子模型近似，电子与空穴的约化有效质量μ=0.2200m\_e，介电常数相对值εr=8.500。给定氢原子Rydberg束缚能13.605693eV、Bohr半径0.0529177nm，并取Ebind=(μ/m\_e)×13.605693/εr² eV、a*=(εr/(μ/m\_e))×0.0529177nm。求激子束缚能、有效Bohr半径、300K下Ebind/(kBT)的无量纲值、形式热能与束缚能相当的温度T*及激子直径2a*，说明T*只是能标判据而不是精确解离温度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 先识别电子—空穴相对运动质量为0.2200倍自由电子质量，不能单用电子质量代入类氢约化质量公式。
+\item 有效氢样激子束缚能Eb=13.605693×0.22/8.5²=0.04142909979eV。
+\item 有效Bohr半径a*=0.0529177×8.5/0.22=2.0445475nm，直径为4.089095nm。
+\item 300K热能kBT=(R/F)×300=0.02585199979eV，束缚能与热能之比为1.602549131。
+\item 令kBT*=Eb得到特征温度T*=Eb F/R=480.7647393K。
+\item 当热涨落显著时激子可能离解，但真正稳定性还取决于屏蔽、载流子密度和光子辐射寿命；T*不是相变温度。
+\item 弱介电屏蔽和小约化质量会分别增强/削弱束缚，该模型忽略能带非抛物与短程晶格极化。
+\item 代入方程复核物料、电荷、热能或形核条件，约束残差为：0.000e+0；0.000e+0；0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0414290998 eV；答案2 = 2.0445475 nm；答案3 = 1.60254913 relative；答案4 = 480.764739 K；答案5 = 4.089095 nm\par
+\noindent\textbf{模型前提：}
+题设有效活动度和连续介质近似成立；材料实验真实性、跨辑实质原创性和专业审稿未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I107 · 无机纳米晶均匀形核的临界半径、成核势垒与原子数}
+\noindent\textbf{题目}\par
+在320.0K下，一种假想单组分无机材料从过冷母相中形成球形晶核。设晶核与母相界面能γ=0.2500J/m²，结晶使体相自由能密度降低Δg\_v=1.800×10\textasciicircum{}8J/m³，单位晶格化学式体积v0=4.000×10\textasciicircum{}-29m³。经典均匀形核自由能ΔG(r)=4πr²γ−(4π/3)r³Δg\_v。求临界半径、临界成核自由能、临界晶核中化学式单元数的连续近似值、势垒相对kBT的大小及每个化学式单元的体相自由能收益；通过一阶导与二阶导严格证明所求临界点是势垒最大而非最小。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 把球表面能4πr²γ与球体自由能−(4π/3)r³Δg\_v相加，核查两项单位均为J。
+\item 对r微分得到dΔG/dr=8πrγ−4πr²Δg\_v=4πr(2γ−rΔg\_v)。
+\item 非零临界半径r*=2γ/Δg\_v=2.777777778nm，且当r*处二阶导为−8πγ<0，因此为自由能势垒的极大点。
+\item 代回得到ΔG*=16πγ³/(3Δg\_v²)=8.080228018e-18J。
+\item 临界晶核体积V*=4πr*³/3，除以单元体积v0，得到平均单元数2244.507783。
+\item 以kB=1.380649×10\textasciicircum{}-23J/K计算，ΔG*/(kBT)=1828.901666；每个晶格单元的体相驱动力为7.2e-21J。
+\item 均匀形核估计以连续表面为前提，若临界晶核仅几颗原子、存在异质界面或界面能随半径变化，则经典球模型不精确。
+\item 代入方程复核物料、电荷、热能或形核条件，约束残差为：0.000e+0；0.000e+0；1.148e-41。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 2.77777778 nm；答案2 = 8.08022802e-18 J；答案3 = 2244.50778 formula units；答案4 = 1828.90167 ratio；答案5 = 7.2e-21 J/unit\par
+\noindent\textbf{模型前提：}
+题设有效活动度和连续介质近似成立；材料实验真实性、跨辑实质原创性和专业审稿未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第10辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -204,6 +267,69 @@ AB₂O₄仅为理想化二价/三价尖晶石；反位能线性、理想子晶�
 答案1 = 0.642201835 fraction；答案2 = 3.74770642 ns；答案3 = 0.24856756 dimensionless；答案4 = 0.364198293 dimensionless；答案5 = 2.33191968 ns\par
 \noindent\textbf{模型前提：}
 双指数独立辐射衰减、无仪器响应和背景、固定预指数系数；频率采用每ns单位，尚未专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A105 · TOF质谱双标准时零与平方根质量校准的误差传播}
+\noindent\textbf{题目}\par
+一台假想线性飞行时间质谱仪满足t=t0+a√(m/z)，其中t以μs、m/z以Th表示，a单位μs/√Th，时间零点t0不能忽略。经两个校准离子测得(m/z,t)=(100.0Th,10.50μs)及(400.0Th,20.50μs)。未知离子到达时间为15.50μs，飞行时间测量的独立标准不确定度为σt=0.05000μs，假设校准点本身不确定度可忽略。求校准系数a和t0、未知离子m/z、一阶传播后的m/z标准不确定度和对900.0Th标准物预测的飞行时间；说明若强制令t0=0会造成系统偏差。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 在线性飞行时间装置里离子动能近似相同，飞行时间随质荷比平方根变化而不是随质量直接线性变化。
+\item 由两个校准点作差，a=(20.50−10.50)/(√400−√100)=1μs/√Th。
+\item 回代得到t0=10.50−a√100=0.5μs；零点不是零。
+\item 未知离子的m/z=[(15.50−t0)/a]²=225Th。
+\item 局部灵敏度∂m/∂t=2(t−t0)/a²=30Th/μs，故σm≈|∂m/∂t|σt=1.5Th。
+\item 对900.0Th预测时间为t0+a√900=30.5μs。
+\item 这只是保留校准系数确定性的局部线性误差传播，真实飞行时间漂移与标准峰中心误差须纳入联合回归。
+\item 独立回代仪器原始观测和统计归一化条件，残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1 μs/√Th；答案2 = 0.5 μs；答案3 = 225 Th；答案4 = 1.5 Th；答案5 = 30.5 μs\par
+\noindent\textbf{模型前提：}
+仅使用题设给定理想标定、无额外背景和独立测量误差模型；真实仪器验证及科学审稿待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A106 · DLS双粒径分布的Rayleigh强度偏置与真实颗粒数反演}
+\noindent\textbf{题目}\par
+一份假想稀胶体分散体中仅有两组球形颗粒，水动力半径分别为30.00nm和60.00nm，光学折射率反差相同、单次散射且满足Rayleigh区。动态光散射检测到两组散射光强各占50.00\%，但单颗粒光强按r\textasciicircum{}6变化。假设Stokes–Einstein扩散系数D与半径r成反比，且相关函数强度权重与实测总强度一致。求小颗粒数目对大颗粒数目的比、两类颗粒真实数目分数、相关函数短时一阶衰减对应的强度权重平均扩散半径r\_D（定义1/r\_D=Σw\_i/r\_i）、强度直接加权半径Σw\_i r\_i，并解释为什么强度分数不是数目分数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Rayleigh区单颗粒散射强度∝r\textasciicircum{}6，某类群总强度Ii∝Ni r\_i\textasciicircum{}6。
+\item 由I\_small=I\_large可得Nsmall/Nlarge=(r\_large/r\_small)\textasciicircum{}6=64。
+\item 归一化真实颗粒数，小半径组分数=0.9846153846，大半径组分数=0.01538461538。
+\item 因D=kBT/(6πηr)，相关函数初始衰减的扩散平均满足〈D〉I∝Σw\_i/r\_i。
+\item 按题给定义，1/r\_D=0.5/30+0.5/60，故r\_D=40nm。
+\item 简单强度权重半径r\_I=0.5×30+0.5×60=45nm，和扩散等效值不同。
+\item 两组散射强度各半并不意味着各占一半颗粒；实际有多重散射和非球形颗粒时须更谨慎反演粒径分布。
+\item 独立回代仪器原始观测和统计归一化条件，残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 64 number ratio；答案2 = 0.984615385 number fraction；答案3 = 0.0153846154 number fraction；答案4 = 40 nm；答案5 = 45 nm\par
+\noindent\textbf{模型前提：}
+仅使用题设给定理想标定、无额外背景和独立测量误差模型；真实仪器验证及科学审稿待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A107 · ARXPS双角度衬底信号衰减反演氧化层厚度与覆盖率}
+\noindent\textbf{题目}\par
+某无机金属基底表面覆盖均匀、连续、密实的假想氧化物薄膜，金属基底的XPS光电子有效非弹性平均自由程λ=2.000nm。定义测量出射角θ是相对于样品表面法线的夹角，角度θ时基底强度与无膜标准的归一化比值I\_sub/I0=exp[−d/(λcosθ)]。已知膜的真实厚度为1.000nm，实验测得θ=0°和60.00°两种角度；设归一化氧化层信号覆盖指标Oθ=1−I\_sub/I0（不是氧的定量摩尔分数）。求两角度基底信号比、各氧化层覆盖指标、由任一角度独立反算的厚度，并说明为什么不能把角度定义成相对表面平面而仍使用cosθ。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 电子逃逸沿法线方向时穿透厚度为d，斜出射路径几何长度d/cosθ，增大会增强衬底信号衰减。
+\item θ=0时I\_sub/I0=exp(−d/λ)=0.6065306597。
+\item θ=60°时I\_sub/I0=exp[−d/(0.5λ)]=0.3678794412。
+\item 定义的氧化层信号覆盖指标分别为O0=0.3934693403，O60=0.6321205588。
+\item 逆反演厚度d0=−λln(I0)=1nm；d60=−λcos60° ln(I60)=1nm。
+\item 两角度独立得到同一厚度，属于膜均匀连续与同一λ成立的内部一致性检查。
+\item 氧化层的真实元素摩尔分数和化学态还需灵敏度因子、层内信号与弹性散射校正，不能从该覆盖指标直接推出。
+\item 独立回代仪器原始观测和统计归一化条件，残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.60653066 ratio；答案2 = 0.367879441 ratio；答案3 = 0.39346934 indicator；答案4 = 0.632120559 indicator；答案5 = 1 nm；答案6 = 1 nm\par
+\noindent\textbf{模型前提：}
+仅使用题设给定理想标定、无额外背景和独立测量误差模型；真实仪器验证及科学审稿待完成。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -292,6 +418,69 @@ AB₂O₄仅为理想化二价/三价尖晶石；反位能线性、理想子晶�
 封闭体系，双向消旋速率对称且产物不可逆、不互变；速率常数恒定；模型新颖性与实际机理待专家审校。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O102 · 共价酶抑制剂两浓度测量反演kinact、KI及时间依赖失活}
+\noindent\textbf{题目}\par
+某假想有机共价酶抑制剂I先与酶形成可逆非共价复合物，再通过化学反应不可逆失活，在抑制剂浓度不受酶消耗影响且快速预平衡时，实验测得酶活性一级衰减系数kobs=kinact[I]/(KI+[I])。抑制剂浓度0.01000M时kobs=0.02000min\textasciicircum{}-1；0.03000M时kobs=0.04000min\textasciicircum{}-1。求结合半饱和常数KI、最大失活速率kinact、[I]=0.02000M时的kobs、恒定该浓度下10.00min后剩余活性比例、对应失活半衰期，并解释单浓度数据不能同时唯一识别KI与kinact。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将速率式倒数化：1/kobs=(KI/kinact)(1/[I])+1/kinact，使用两浓度独立求直线斜率与截距。
+\item 代入两观测并消元，可得KI=0.03M；不应把此KI直接误写为非共价结合的热力学Kd。
+\item 再由kinact=k1(KI+I1)/I1得kinact=0.08min\textasciicircum{}-1。
+\item 在[I]=0.02000M时kobs=kinact I/(KI+I)=0.032min\textasciicircum{}-1。
+\item 若失活不可逆且持续固定浓度，剩余活性E(t)/E0=exp(−kobs t)=0.7261490371，t=10min。
+\item 失活半衰期t1/2=ln2/kobs=21.66084939min。
+\item 两点曲线只有在正确的双步骤机理、初始活性测定没有慢结合漂移、游离抑制剂浓度受控时才可识别这些参数。
+\item 独立由反应条件和概率关系逆算检验，各模型方程的残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.03 M；答案2 = 0.08 min\textasciicircum{}-1；答案3 = 0.032 min\textasciicircum{}-1；答案4 = 0.726149037 fraction；答案5 = 21.6608494 min\par
+\noindent\textbf{模型前提：}
+题设特定反应途径与单指数近似成立；不宣称真实机理、药理有效性或专家原创审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O103 · 有机分子三质子NOE距离反演和三角构象几何一致性}
+\noindent\textbf{题目}\par
+假想刚性有机小分子中三个氢核A、B、C之间形成三角构象，独立结构标准给rAB=2.000Å。所有核对之间的NOE初始交叉峰建立速率在相同谱学条件下近似正比于r\textasciicircum{}(-6)，已从峰重叠与自旋扩散中校正。实测NOE\_AB:NOE\_AC=1.000:0.1250、NOE\_AB:NOE\_BC=1.000:0.5000。求rAC、rBC、∠BAC（三角形在A处夹角）、三角形面积和最长边对应NOE相对强度；核查三角不等式，并说明NOE不是直接的键长而可能反映空间近接。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题设NOE交叉弛豫强度在相同模型下与r\textasciicircum{}−6成正比，所以I\_AB/I\_AC=(rAC/rAB)\textasciicircum{}6。
+\item 由I\_AC/I\_AB=0.1250，得rAC=rAB(1/0.125)\textasciicircum{}(1/6)=2.828427125Å。
+\item 由I\_BC/I\_AB=0.5000，得rBC=rAB(1/0.5)\textasciicircum{}(1/6)=2.244924097Å。
+\item 由余弦定理cos∠BAC=(rAB²+rAC²−rBC²)/(2rABrAC)=0.6152108127。
+\item 因此∠BAC=52.03276009°，三角形面积为(1/2)rABrAC sin∠BAC=2.229826282Å²。
+\item 三边中最长的是AC=2.828427125Å，故对应相对AB的NOE强度最低，为0.1250。
+\item 检验rAB+rBC>rAC、rAB+rAC>rBC及rAC+rBC>rAB均成立；真实NOE还会受相关时间、化学交换及自旋扩散影响。
+\item 独立由反应条件和概率关系逆算检验，各模型方程的残差：5.551e-17、-1.110e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 2.82842712 Å；答案2 = 2.2449241 Å；答案3 = 52.0327601 deg；答案4 = 2.22982628 Å²；答案5 = 0.125 ratio\par
+\noindent\textbf{模型前提：}
+题设特定反应途径与单指数近似成立；不宣称真实机理、药理有效性或专家原创审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O104 · 三步有机金属催化循环的稳态中间体占比与整体周转频率}
+\noindent\textbf{题目}\par
+假想有机金属交叉偶联催化剂按严格闭合三步循环E1→E2→E3→E1推进，三步在给定底物浓度下分别为一级k1=0.2000s\textasciicircum{}-1（氧化加成）、k2=0.05000s\textasciicircum{}-1（转金属化）、k3=0.1000s\textasciicircum{}-1（还原消除），E1为循环开始态。各催化中间体的总量守恒为Ctot=0.002000mol/L，各步骤均一阶且无失活和旁路。稳态要求通量J=k1[E1]=k2[E2]=k3[E3]。求各中间体的稳态比例、有效每催化剂TOF、每升每秒的目标产物生成量、完成一次循环的平均停留时间以及决定主要催化剂休眠态的步骤；解释为何不能把三个一级速率简单算术平均。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 稳态通量在三步循环中相同，所以[E\_i]=J/k\_i；这由各中间体导数为零逐项推出。
+\item 用质量守恒Ctot=Σ[E\_i]=J(1/k1+1/k2+1/k3)，平均单次循环时间τ=Σ(1/k\_i)=35s。
+\item TOF=J/Ctot=1/τ=0.02857142857s\textasciicircum{}-1。
+\item 三个稳态中间体分数分别为f1=0.1428571429、f2=0.5714285714、f3=0.2857142857。
+\item 总催化剂浓度0.002000M，产物速率J=kCtot=0.00005714285714mol/(L s)。
+\item 分数最大的E2是转金属化前的休眠态，其相对累积由k2最慢决定，而不是只据任一能垒大小断言。
+\item 若中间体旁路、双分子配体加入或反应速率取决于浓度时，简单的三个定常一级等待时间相加模型不成立。
+\item 独立由反应条件和概率关系逆算检验，各模型方程的残差：-1.110e-16、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.142857143 fraction；答案2 = 0.571428571 fraction；答案3 = 0.285714286 fraction；答案4 = 0.0285714286 s\textasciicircum{}-1；答案5 = 5.71428571e-05 mol/(L s)；答案6 = 35 s\par
+\noindent\textbf{模型前提：}
+题设特定反应途径与单指数近似成立；不宣称真实机理、药理有效性或专家原创审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第10辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -377,6 +566,69 @@ AB₂O₄仅为理想化二价/三价尖晶石；反位能线性、理想子晶�
 答案1 = 1.61318256 ratio；答案2 = 0.161318256 mol/L；答案3 = 0.0619892642 mol/L；答案4 = 0.662193279 fraction；答案5 = 6.79231648 pH；答案6 = -0.0122864219 V；答案7 = 57778.3412 Pa\par
 \noindent\textbf{模型前提：}
 固定酸基团不贡献移动粒子渗透压；理想单价盐，外部缓冲离子忽略，忽略H⁺/OH⁻电中性贡献，实际凝胶溶胀仍需其他能量项。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P102 · 半透膜Kedem–Katchalsky反射系数与水体积通量反演}
+\noindent\textbf{题目}\par
+假想多孔半透膜分离两侧水溶液，在310.0K下水力渗透系数Lp=2.000×10\textasciicircum{}-12m/(Pa s)，膜反射系数σ=0.8500。设膜法向水通量Jv由左向右为正，左侧压力比右侧高ΔP=3.000bar，左侧非电解质溶质浓度cL=150.0mol/m³，右侧cR=50.00mol/m³。题设理想稀溶液渗透压差Δπ=RT(cL−cR)，Kedem–Katchalsky式Jv=Lp(ΔP−σΔπ)，无额外电渗和浓差极化。求渗透压差、实际有效水驱动压差、体积通量、实现零水通量所需ΔP以及若误当σ=1时的通量偏差，解释为何σ小于1表示部分溶质渗透。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 温压单位统一：3.000bar=300000Pa，浓度mol/m³与R=8.314462618J/(mol K)配套。
+\item 理想渗透压差Δπ=RT×100mol/m³=257748.3412Pa。
+\item 反射系数作用后的渗透反驱动σΔπ=219086.09Pa。
+\item 净水驱动压差ΔP−σΔπ=80913.91002Pa，通量Jv=LpΔPnet=1.6182782e-7m/s。
+\item 要使Jv=0，必须令水力压差ΔPzero=σΔπ=219086.09Pa。
+\item 如果误设σ=1，则算得Jwrong=8.450331768e-8m/s，与真实值之差为7.732450235e-8m/s。
+\item σ=0意味着溶质不产生选择性渗透压反驱动；本题未计算溶质扩散流，实际膜分离仍需溶质通量方程。
+\item 独立按能量流、离子分配或Maxwell–Stefan线性方程重代，残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 257748.341 Pa；答案2 = 80913.91 Pa；答案3 = 1.6182782e-07 m/s；答案4 = 219086.09 Pa；答案5 = 8.45033177e-08 m/s；答案6 = 7.73245023e-08 m/s\par
+\noindent\textbf{模型前提：}
+只适用于题定理想输运、线性响应和给定常数；材料真实性和跨辑模型独立性仍需专业审稿。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P103 · 热电制冷器Seebeck–Peltier耦合与Joule热半分摊的制冷阈值}
+\noindent\textbf{题目}\par
+假想单级热电器件由恒定Seebeck系数α=200.0μV/K、总电阻Re=2.000Ω、端间热导K=0.01000W/K描述，冷端Tc=300.0K、热端Th=310.0K，在规定的制冷电流方向恒流I=0.5000A。采用Kelvin关系Πc=αTc以及冷端净吸热式Qcold=αTc I−(1/2)I²Re−K(Th−Tc)，电阻热对冷热两端各分摊一半。求冷端Peltier系数、Peltier吸热功率、分摊到冷端的Joule热、逆向导热漏量、冷端净吸热功率与Seebeck开路电压，判断此电流下是否真的制冷；说明不能只计算Peltier项而忽略电阻发热。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item α=200μV/K=2.00×10\textasciicircum{}-4V/K，冷端Peltier系数Πc=αTc=0.06V。
+\item Peltier制冷项Πc I=0.03W。
+\item 电阻热总量I²Re=0.5W，按题设一半进入冷端=0.25W。
+\item 热端向冷端导热漏Qcond=K(Th−Tc)=0.1W。
+\item 冷端净吸热Qcold=Peltier−Joule\_cold−Qcond=-0.32W。
+\item 开路Seebeck电压Voc=α(Th−Tc)=0.002V。
+\item Qcold<0，冷端实际被加热而非制冷；增加电流也可能因I²R项增长过快而降低净制冷能力，需寻找合适工作点。
+\item 独立按能量流、离子分配或Maxwell–Stefan线性方程重代，残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.06 V；答案2 = 0.03 W；答案3 = 0.25 W；答案4 = 0.1 W；答案5 = -0.32 W；答案6 = 0.002 V\par
+\noindent\textbf{模型前提：}
+只适用于题定理想输运、线性响应和给定常数；材料真实性和跨辑模型独立性仍需专业审稿。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P104 · 三组元Maxwell–Stefan等摩尔扩散通量的线性系统求解}
+\noindent\textbf{题目}\par
+在300K附近一假想三组元理想气体A/B/C总浓度c=40.00mol/m³，某位置摩尔分数xA=0.2000、xB=0.3000、xC=0.5000，局部沿z方向浓度梯度d xA/dz=−10.00m\textasciicircum{}-1、d xB/dz=+4.000m\textasciicircum{}-1，因此d xC/dz=+6.000m\textasciicircum{}-1。二元Maxwell–Stefan扩散系数DAB=1.000×10\textasciicircum{}-5、DAC=2.000×10\textasciicircum{}-5、DBC=1.500×10\textasciicircum{}-5m²/s。设等摩尔通量N\_A+N\_B+N\_C=0，题定−c dxi/dz=Σ\_\{j≠i\}(xj Ni−xi Nj)/Dij。求三组元局部扩散通量、系数矩阵行列式与N\_A+N\_B+N\_C的误差，检验各组分方程一致；解释为何不能独立对每组分套同一个二元Fick D。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 先确认摩尔分数之和为1，且梯度三项之和为0，满足常总浓度与总体等摩尔流约束。
+\item 利用N\_C=−N\_A−N\_B消去第三个未知，把A、B的Maxwell–Stefan方程写成2×2线性系统。
+\item A组系数A11=xB/DAB+(xC+xA)/DAC=65000s/m²，A12=xA(1/DAC−1/DAB)=-10000s/m²。
+\item B组系数A21=xB(1/DBC−1/DAB)=-10000s/m²，A22=xA/DAB+(xC+xB)/DBC=73333.33333s/m²。
+\item 右侧b\_A=−c d xA/dz=400mol/m⁴，b\_B=−c d xB/dz=-160mol/m⁴，行列式det=4666666667(s/m²)²且非零。
+\item 用Cramer法解得N\_A=0.005942857143、N\_B=-0.001371428571、N\_C=-0.004571428571mol/(m²s)。
+\item 代回第三组元扩散方程时相互作用项必须相消，且三通量总和0；多组元相互摩擦不能化为任意单一扩散系数。
+\item 独立按能量流、离子分配或Maxwell–Stefan线性方程重代，残差：0.000e+0、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00594285714 mol/(m²s)；答案2 = -0.00137142857 mol/(m²s)；答案3 = -0.00457142857 mol/(m²s)；答案4 = 4.66666667e+09 (s/m²)²；答案5 = 65000 s/m²；答案6 = -10000 s/m²；答案7 = -10000 s/m²；答案8 = 73333.3333 s/m²\par
+\noindent\textbf{模型前提：}
+只适用于题定理想输运、线性响应和给定常数；材料真实性和跨辑模型独立性仍需专业审稿。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
