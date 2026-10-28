@@ -1,0 +1,163 @@
+\documentclass[UTF8,11pt,oneside,openany,fontset=none]{ctexbook}
+\usepackage[a4paper,margin=23mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb,enumitem,fancyhdr}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue]{hyperref}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setmainfont{DejaVu Sans}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.45em}
+\setlength{\headheight}{16pt}
+\setlist[enumerate]{itemsep=0.3em,topsep=0.3em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{量子化学 · 固定来源证据审核}
+\fancyhead[R]{未经专家或版权审批}
+\fancyfoot[C]{\thepage}
+\sloppy
+\title{量子化学来源答案核验册\\[0.5em]\large 2021 年课程学生本与答案本独立对照}
+\author{三千弱水 · 化学题库科学质检}
+\date{2026 年 10 月}
+\begin{document}
+\frontmatter
+\maketitle
+\chapter*{使用范围及复核口径}
+本册记录 2021 年量子化学课程 21 道固定题源的\textbf{学生题本与参考答案本差异}，不是对原教材完整试题的翻译、转载或正式试卷。源作品有第三方内容权利例外，逐题许可尚待人工确认；专家科学审定和可正式组卷题均为零。
+前轮共标出 13 项差异，本轮逐题核对后更正 2 项来源误报，仍有 11 项需专家复核。其中有数学或单位错误，也有术语、题干措辞和证据强度的讨论，不可笼统称为 11 道错误答案。
+来源仓库固定版本：\texttt{0491272e0b8e71059e601537b196181ab6b367cd}。学术审核中仍必须返回原学生本和答案本核对。
+\tableofcontents
+\mainmatter
+\chapter{来源错误与假设分类}
+\begin{itemize}
+\item 原题单位或参考答案算符系数错误：2 项
+\item 来源变量或量子数条件笔误：2 项
+\item 逻辑命题或答案表述不一致：3 项
+\item 量子现象证据强度解释争议：2 项
+\item 未明确的科学假设或历史术语：2 项
+\end{itemize}
+\chapter{11 项待审来源差异}
+\section{photon\_radiation\_pressure\_force}
+\noindent\textbf{差异类型：} 原题单位或参考答案算符系数错误。\par
+\noindent\textbf{定位：} 学生本单元 25，答案本单元 25。\par
+\noindent\textbf{学生本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb}\par
+\noindent\textbf{答案本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb}\par
+\noindent\textbf{源证据：} 原学生题把“动量每秒”的结果要求写成 kg·m/s；答案本实际计算光子动量乘光子每秒个数，即力 P/c。\par
+\noindent\textbf{独立科学说明：} 应将学生问题的单位改为 N=kg·m/s²。答案数值 F≈3.33564×10⁻¹⁰ N 不应被标注为答案键数值错误。\par
+\noindent\textbf{复算值：} \texttt{3.3356410e-10}\par
+\medskip\noindent\textit{此条未获得版权确认或人工专家审定。}
+\medskip\hrule\medskip
+\section{gamma\_radiation\_molar\_energy}
+\noindent\textbf{差异类型：} 来源变量或量子数条件笔误。\par
+\noindent\textbf{定位：} 学生本单元 28，答案本单元 28。\par
+\noindent\textbf{学生本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb}\par
+\noindent\textbf{答案本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb}\par
+\noindent\textbf{源证据：} 答案本的预期变量名和最终计算变量名少一个字符，实际公式仍为 λ=N\_Ahc/E\_m。\par
+\noindent\textbf{独立科学说明：} 标为源代码变量命名错误；不是计算理论错误。\par
+\noindent\textbf{复算值：} \texttt{9.2733772e-13}\par
+\medskip\noindent\textit{此条未获得版权确认或人工专家审定。}
+\medskip\hrule\medskip
+\section{hydrogen\_ground\_state\_first\_absorption}
+\noindent\textbf{差异类型：} 来源变量或量子数条件笔误。\par
+\noindent\textbf{定位：} 学生本单元 38，答案本单元 42。\par
+\noindent\textbf{学生本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb}\par
+\noindent\textbf{答案本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb}\par
+\noindent\textbf{源证据：} 学生文本的能级不等式排除了 n₁=1，却同时明确写基态 n₁=1；答案本使用 1→2 跃迁。\par
+\noindent\textbf{独立科学说明：} 修正不等式起点为 n₁≥1，最小吸收频率为 3cR\_H/4。\par
+\noindent\textbf{复算值：} \texttt{2.4674418e+15}\par
+\medskip\noindent\textit{此条未获得版权确认或人工专家审定。}
+\medskip\hrule\medskip
+\section{complex\_conjugate\_tdse}
+\noindent\textbf{差异类型：} 原题单位或参考答案算符系数错误。\par
+\noindent\textbf{定位：} 学生本单元 57，答案本单元 64。\par
+\noindent\textbf{学生本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb}\par
+\noindent\textbf{答案本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb}\par
+\noindent\textbf{源证据：} 答案本的动能项系数写成 ℏ/(2m)，正确应为 ℏ²/(2m)，且势 V 应假设实值。\par
+\noindent\textbf{独立科学说明：} 保留已验证的数学系数错误；共轭左端的 i 必须变为 −i。\par
+\medskip\noindent\textit{此条未获得版权确认或人工专家审定。}
+\medskip\hrule\medskip
+\section{complex\_conjugation\_nonnegative\_norm}
+\noindent\textbf{差异类型：} 逻辑命题或答案表述不一致。\par
+\noindent\textbf{定位：} 学生本单元 66，答案本单元 73。\par
+\noindent\textbf{学生本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb}\par
+\noindent\textbf{答案本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb}\par
+\noindent\textbf{源证据：} 对于复数 z，zz*=|z|²=a²+b²≥0；源选项包括“复数”和“非负实数”，答案本同时选两项。\par
+\noindent\textbf{独立科学说明：} 说明实数可视为复数，数学结论正确；非零实数不总成立（z=0）。属多选解释问题，不是错误证明。\par
+\medskip\noindent\textit{此条未获得版权确认或人工专家审定。}
+\medskip\hrule\medskip
+\section{momentum\_vs\_kinetic\_operator\_eigenstates}
+\noindent\textbf{差异类型：} 逻辑命题或答案表述不一致。\par
+\noindent\textbf{定位：} 学生本单元 71，答案本单元 78。\par
+\noindent\textbf{学生本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb}\par
+\noindent\textbf{答案本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb}\par
+\noindent\textbf{源证据：} 学生命题含“反之亦然”，答案本布尔值为真，忽略了动能简并子空间中动量不唯一。\par
+\noindent\textbf{独立科学说明：} 明确题干双向命题为假：cos(kx) 是自由粒子动能本征函数却不是动量本征函数。\par
+\medskip\noindent\textit{此条未获得版权确认或人工专家审定。}
+\medskip\hrule\medskip
+\section{photon\_particle\_evidence}
+\noindent\textbf{差异类型：} 量子现象证据强度解释争议。\par
+\noindent\textbf{定位：} 学生本单元 5，答案本单元 5。\par
+\noindent\textbf{学生本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb}\par
+\noindent\textbf{答案本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb}\par
+\noindent\textbf{源证据：} 原多选答案包含黑体辐射、康普顿散射和光电效应；黑体量子化是历史相关证据但非直接单光子碰撞测量。\par
+\noindent\textbf{独立科学说明：} 区分能量量子化的历史证据与直接光子动量散射实验；不武断地把源答案全盘判错。\par
+\medskip\noindent\textit{此条未获得版权确认或人工专家审定。}
+\medskip\hrule\medskip
+\section{vacuum\_light\_speed\_dispersion}
+\noindent\textbf{差异类型：} 未明确的科学假设或历史术语。\par
+\noindent\textbf{定位：} 学生本单元 16，答案本单元 16。\par
+\noindent\textbf{学生本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb}\par
+\noindent\textbf{答案本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb}\par
+\noindent\textbf{源证据：} 学生断言波长翻倍则传播速度减半，答案本判断为假；该判断需要真空或非色散环境语境。\par
+\noindent\textbf{独立科学说明：} 真空中速度始终为 c，波长变化使频率调整；若处于色散介质则需定义折射率。\par
+\medskip\noindent\textit{此条未获得版权确认或人工专家审定。}
+\medskip\hrule\medskip
+\section{photon\_energy\_doubling\_relations}
+\noindent\textbf{差异类型：} 未明确的科学假设或历史术语。\par
+\noindent\textbf{定位：} 学生本单元 22，答案本单元 22。\par
+\noindent\textbf{学生本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb}\par
+\noindent\textbf{答案本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb}\par
+\noindent\textbf{源证据：} 原多选含“有效相对论质量”与波数，答案本选择与能量成比例的选项。\par
+\noindent\textbf{独立科学说明：} 现代授课优先使用 E=hν=pc=ℏck；光子静止质量为零，避免把 E/c² 误称为静止质量。\par
+\medskip\noindent\textit{此条未获得版权确认或人工专家审定。}
+\medskip\hrule\medskip
+\section{photon\_particles\_vs\_matter\_waves}
+\noindent\textbf{差异类型：} 量子现象证据强度解释争议。\par
+\noindent\textbf{定位：} 学生本单元 45，答案本单元 49。\par
+\noindent\textbf{学生本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb}\par
+\noindent\textbf{答案本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb}\par
+\noindent\textbf{源证据：} 答案本包含黑体辐射、光电效应和康普顿散射；混合了量子化历史证据与光子碰撞现象。\par
+\noindent\textbf{独立科学说明：} 在科学讲解中分层表述证据强度，电子衍射体现电子波动性而非光子的粒子性。\par
+\medskip\noindent\textit{此条未获得版权确认或人工专家审定。}
+\medskip\hrule\medskip
+\section{wavefunction\_probability\_density\_nonnegative}
+\noindent\textbf{差异类型：} 逻辑命题或答案表述不一致。\par
+\noindent\textbf{定位：} 学生本单元 63，答案本单元 70。\par
+\noindent\textbf{学生本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQM2021.ipynb}\par
+\noindent\textbf{答案本：} \url{https://github.com/PaulWAyers/IntroQChemProblems/blob/0491272e0b8e71059e601537b196181ab6b367cd/ipynb/IntroQMkey.ipynb}\par
+\noindent\textbf{源证据：} 学生版问“永远不为负”应答真；答案本变量名则改问“可否为负”并赋假。\par
+\noindent\textbf{独立科学说明：} 两种逻辑表述的结论等价但真假字面反向，不能直接把答案本布尔值作为学生题答案。\par
+\medskip\noindent\textit{此条未获得版权确认或人工专家审定。}
+\medskip\hrule\medskip
+\chapter{误报修正：不是来源答案错误}
+\section{complex\_exponential\_wavefunction}
+\noindent 学生本单元 69；答案本单元 76。\par
+\noindent 原键已明确接受 A、a、b、k、ω 等可能为复数时的整体共轭表达式。\par
+\section{electron\_waves\_vs\_atomic\_lines}
+\noindent 学生本单元 42；答案本单元 46。\par
+\noindent 原答案本只选 E（电子晶体散射），并没有选择 B（氢原子谱线）。\par
+\chapter{数学与物理独立证明}
+\section{辐射压的量纲}
+光子携带的动量为 h/λ，单位时间到达光子数为 Pλ/(hc)；因此力 F=P/c，单位 N。无论何种波长，在吸收且没有反射的模型中，固定功率所产生的平均力不随波长变化。
+\section{复数模的非负性}
+(a+bi)(a−bi)=a²+b²≥0，等号当且仅当 a=b=0
+\section{动量和动能本征态的非对称逻辑}
+φ(x)=cos(kx) 满足 Tφ=ℏ²k²/(2m)φ，但 pφ=iℏk sin(kx) 与 φ 不成比例
+\section{薛定谔方程的共轭}
+−iℏ∂Ψ*/∂t = −ℏ²/(2m)∂²Ψ*/∂x² + VΨ*（V为实势）
+\section{基态氢原子的最小吸收频率}
+允许的最低吸收跃迁为 n=1 到 n=2；由里德伯公式可知频率为：\texttt{2.4674418e+15} Hz。
+\backmatter
+\chapter*{版权及专家审核待办}
+全部 21 道均需检查原始学生题本与答案本单元、第三方图片及文本例外、物理假设与近似、数值有效数字及中文表述。\textbf{逐题授权确认：0；专家审核批准：0；正式组卷批准：0。}
+\end{document}
