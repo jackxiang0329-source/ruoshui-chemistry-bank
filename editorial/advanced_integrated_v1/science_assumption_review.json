@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "generated": 12,
+  "distinct_original_topic_models": 12,
+  "discipline_counts": {
+    "inorganic": 3,
+    "analytical": 3,
+    "organic": 3,
+    "physical": 3
+  },
+  "numeric_equation_checks": 57,
+  "no_parametric_replicates": true,
+  "copied_external_question_text": 0,
+  "scientific_assumption_checklist": [
+    {
+      "id": "I01",
+      "title": "闭合氨配位体系中 AgCl 的非线性溶解",
+      "subject": "inorganic",
+      "assumptions": "理想活度；明确忽略 NH4+、Ag(NH3)+、其他络合及溶解产生的体积改变；过量 AgCl 固体仍存在。",
+      "independent_equation_residuals": [
+        1.4360774523490063e-16,
+        0,
+        2.7755575615628914e-16,
+        0
+      ],
+      "human_scientific_approval": false,
+      "semantic_duplicate_review_pending": true
+    },
+    {
+      "id": "I02",
+      "title": "有限体积原电池的 Nernst 电势与平衡转化",
+      "subject": "inorganic",
+      "assumptions": "假想可逆金属体系；固体活度为 1；离子活度按理想标准化浓度；电势随反应进行变化；足量固体。",
+      "independent_equation_residuals": [
+        0,
+        0,
+        2.7811131506188588e-15,
+        0
+      ],
+      "human_scientific_approval": false,
+      "semantic_duplicate_review_pending": true
+    },
+    {
+      "id": "I03",
+      "title": "X 射线晶胞测定、密度与空位缺陷联合反演",
+      "subject": "inorganic",
+      "assumptions": "晶体为理想 FCC；一阶 (111) 峰；角度是 θ；仅空位降低平均晶胞原子数，忽略夹杂、孔隙、仪器误差与应变。",
+      "independent_equation_residuals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "human_scientific_approval": false,
+      "semantic_duplicate_review_pending": true
+    },
+    {
+      "id": "A01",
+      "title": "双波长光谱解混、稀释反算与试样质量",
+      "subject": "analytical",
+      "assumptions": "两种发色团彼此不反应、光程一致、吸光系数已在测量条件下标定；完全回收与线性吸收；两个测量波长可逆矩阵。",
+      "independent_equation_residuals": [
+        1.206764157201257e-16,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "human_scientific_approval": false,
+      "semantic_duplicate_review_pending": true
+    },
+    {
+      "id": "A02",
+      "title": "双指示剂滴定反演碳酸盐组成与离子强度",
+      "subject": "analytical",
+      "assumptions": "以形式组分为定义的浓度；终点不计碳酸溶解/逸散损失；电中性及完全解离，仅计算形式离子强度。",
+      "independent_equation_residuals": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "human_scientific_approval": false,
+      "semantic_duplicate_review_pending": true
+    },
+    {
+      "id": "A03",
+      "title": "钙镁络合差量滴定、空白校正与总硬度",
+      "subject": "analytical",
+      "assumptions": "平行等体积取样；各自单独扣空白；Ca 专测时 Mg 完全屏蔽；总滴定无其它金属干扰；络合终点与回收率理想。",
+      "independent_equation_residuals": [
+        2.0417894705750008e-16,
+        1.2598275456739366e-16,
+        0,
+        0,
+        0
+      ],
+      "human_scientific_approval": false,
+      "semantic_duplicate_review_pending": true
+    },
+    {
+      "id": "O01",
+      "title": "连续一级反应的中间体最佳分离时刻",
+      "subject": "organic",
+      "assumptions": "严格的一级不可逆连续反应；正确定义 k1,k2；所有物种 1:1 转化，恒温恒容，极值时瞬时完美分离。",
+      "independent_equation_residuals": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "human_scientific_approval": false,
+      "semantic_duplicate_review_pending": true
+    },
+    {
+      "id": "O02",
+      "title": "非等当量缩聚的 Carothers 关系、脱水守恒与数均分子量",
+      "subject": "organic",
+      "assumptions": "AA/BB 双官能、无环化、无交联、每反应键脱去一分子水；p 是少量 A 官能团的转化分数；单体数均质量与起始总数相配。",
+      "independent_equation_residuals": [
+        0,
+        0,
+        0,
+        0,
+        1.1154517044899534e-16,
+        1.2846036321526157e-16
+      ],
+      "human_scientific_approval": false,
+      "semantic_duplicate_review_pending": true
+    },
+    {
+      "id": "O03",
+      "title": "双响应因子手性色谱的 ee、质量平衡与收率",
+      "subject": "organic",
+      "assumptions": "独立校准响应因子按质量标定、两组分完整分离、对映体摩尔质量相同、无第三组分、理论产物量可信。",
+      "independent_equation_residuals": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "human_scientific_approval": false,
+      "semantic_duplicate_review_pending": true
+    },
+    {
+      "id": "P01",
+      "title": "双层扩散膜的等效阻力、通量与累积转移质量",
+      "subject": "physical",
+      "assumptions": "稳态 1D 串联扩散；分配系数定义一致；界面局部热力学平衡；储液浓度恒定；无对流、反应与膜内蓄积。",
+      "independent_equation_residuals": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "human_scientific_approval": false,
+      "semantic_duplicate_review_pending": true
+    },
+    {
+      "id": "P02",
+      "title": "热容差修正反应热力学与平衡常数",
+      "subject": "physical",
+      "assumptions": "ΔCp 在区间内常数；T 为绝对温度；K 由统一标准态活度定义并无量纲；近似只用于指定温度区间。",
+      "independent_equation_residuals": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "human_scientific_approval": false,
+      "semantic_duplicate_review_pending": true
+    },
+    {
+      "id": "P03",
+      "title": "有限溶液 Langmuir 吸附的非线性质量平衡",
+      "subject": "physical",
+      "assumptions": "单一吸附溶质；温度不变；理想单层 Langmuir、独立同质位点；没有溶液体积变化、容器损失和其它反应。",
+      "independent_equation_residuals": [
+        2.1684043449710089e-16,
+        0,
+        0,
+        0
+      ],
+      "human_scientific_approval": false,
+      "semantic_duplicate_review_pending": true
+    }
+  ],
+  "original_license": "CC0-1.0",
+  "expert_approved": 0,
+  "publishable": false,
+  "notice": "Machine conservation checks validate exact authored mathematical models only. Not official exam questions and not cleared for publication."
+}
