@@ -94,7 +94,7 @@ export function markdown(report){
  lines.push('','## 具体复核队列','','请先按来源锁定 Git blob SHA，重生原题、独立复算/核对正确选项并对照已存 JSON，再进行人工化学审定。','',
  '| 记录 | 课程类别 | 题型 | 来源 |','|---|---|---|---|');
  for(const x of report.review_queue)
-  lines.push('| ['+x.candidate_id.slice(0,12)+'](../../'+x.candidate_json+
+  lines.push('| ['+x.candidate_id.slice(0,12)+'](../'+x.candidate_json+
    ') | '+x.subject+' · '+x.topic+' | '+x.question_type+' | '+x.source_repository+' |');
  lines.push('','*研究待审，正式组卷批准：0。*','');
  return lines.join('\n');

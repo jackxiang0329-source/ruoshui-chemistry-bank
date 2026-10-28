@@ -17,6 +17,8 @@ test('190 unreviewed exercises are explicitly separated from 1525 source replays
  assert.equal(new Set(q.review_queue.map(x=>x.candidate_id)).size,190);
  assert.ok(q.review_queue.every(x=>x.approved_for_publication===false));
  assert.ok(markdown(q).includes('bem130/chemquiz'));
+ assert.ok(markdown(q).includes('](../data/candidates/'));
+ assert.ok(!markdown(q).includes('](../../data/candidates/'));
 });
 test('changed source count, publication flag and missing source records block report',()=>{
  assert.throws(()=>buildPending(rows,{...quality,source_counts:
