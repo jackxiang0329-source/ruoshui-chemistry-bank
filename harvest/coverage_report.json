@@ -33,7 +33,7 @@
     "organic": 12,
     "physical": 12
   },
-  "editorial_draft_records_total": 306,
+  "editorial_draft_records_total": 406,
   "sixth_series_independent_model_review": "pending",
   "fifth_series_prior_total": 136,
   "seventh_series_draft_items": 60,
@@ -51,5 +51,13 @@
     "organic": 15,
     "physical": 15
   },
-  "eighth_series_novelty_review": "pending_cross_series_model_review"
+  "eighth_series_novelty_review": "pending_cross_series_model_review",
+  "ninth_series_draft_items": 100,
+  "ninth_series_subject_counts": {
+    "inorganic": 25,
+    "analytical": 25,
+    "organic": 25,
+    "physical": 25
+  },
+  "ninth_series_independent_model_review": "pending"
 }
