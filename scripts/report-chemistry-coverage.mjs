@@ -4,7 +4,15 @@ import {readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {join,dirname,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
-export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general={generated:0},reasoning={generated:0},integrated={generated:0},apTopics={generated:0}){
+export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general={generated:0},reasoning={generated:0},integrated={generated:0},apTopics={generated:0},multistep={generated:0}){
+ const multiCount=multistep?.generated||0;
+ if(!Number.isInteger(multiCount)||multiCount<0||multiCount>12||
+ (multiCount>0&&(multistep?.distinct_multistep_topics!==multiCount||
+ multistep?.detailed_solution_steps!==36||multistep?.inverse_mass_charge_energy_balance_checks!==24||
+ multistep?.by_subject?.analytical!==6||multistep?.by_subject?.physical!==6||
+ multistep?.source_license!=='CC0-1.0'||multistep?.copied_exam_questions!==0||
+ multistep?.expert_approved!==0||multistep?.publishable!==false)))
+ throw Error('Unsafe original multistep chemistry replay report');
  const advancedN=apTopics?.generated||0;
  if(!Number.isInteger(advancedN)||advancedN<0||advancedN>20||
     (advancedN>0&&(apTopics?.topic_families!==advancedN||
@@ -140,7 +148,7 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   muzaScience?.individual_rights_approvals!==0||
   muzaScience?.exam_ready!==0||
   main?.source_counts?.['MuzaPro/Organic-Chemistry-Quiz-JS']!==5||
-  whole<1715+newlyReplayed+reasoningCount+integratedN+advancedN||exercise<1437+newlyReplayed+reasoningCount+integratedN+advancedN||card!==278)
+  whole<1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount||exercise<1437+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount||card!==278)
   throw Error('Unsafe or inconsistent chemistry coverage sources: '+
    JSON.stringify({
     main_total:whole,main_exercises:exercise,main_cards:card,
@@ -180,16 +188,17 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   main_independent_muza_formula_checks:muzaScience.formal_element_balances_passed,
   main_independent_muza_science_condition_caveats:muzaScience.special_science_conditions_pending,
   main_total_1715_source_concordance_does_not_imply_scientific_correctness:true,
-  main_exercise_candidates_replayed:1437+newlyReplayed+reasoningCount+integratedN+advancedN,
+  main_exercise_candidates_replayed:1437+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount,
   main_new_original_general_chemistry_inverse_replayed:newlyReplayed,
   main_new_original_reasoning_source_replayed:reasoningCount,
   main_new_integrated_chemistry_source_replayed:integratedN,
   main_new_analytical_physical_topics_source_replayed:advancedN,
-  main_exercise_candidates_not_replayed:exercise-1437-newlyReplayed-reasoningCount-integratedN-advancedN,
+  main_new_multistep_source_replayed:multiCount,
+  main_exercise_candidates_not_replayed:exercise-1437-newlyReplayed-reasoningCount-integratedN-advancedN-multiCount,
   main_study_cards_not_replayed:card-278,
-  main_unique_candidate_records_machine_replayed:1715+newlyReplayed+reasoningCount+integratedN+advancedN,
-  main_candidate_records_not_yet_machine_replayed:whole-1715-newlyReplayed-reasoningCount-integratedN-advancedN,
-  main_stored_replay_coverage_fraction:Number(((1715+newlyReplayed+reasoningCount+integratedN+advancedN)/whole).toFixed(6)),
+  main_unique_candidate_records_machine_replayed:1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount,
+  main_candidate_records_not_yet_machine_replayed:whole-1715-newlyReplayed-reasoningCount-integratedN-advancedN-multiCount,
+  main_stored_replay_coverage_fraction:Number(((1715+newlyReplayed+reasoningCount+integratedN+advancedN+multiCount)/whole).toFixed(6)),
   main_replay_cannot_establish_chemistry_truth:true,
   main_replay_requires_expert_science_and_item_rights_review:true,
   main_original_numeric_stored_coverage_fraction:Number((304/whole).toFixed(6)),
@@ -242,7 +251,9 @@ export function run(){
  const integrated=existsSync(integratedPath)?JSON.parse(readFileSync(integratedPath,'utf8')):{generated:0};
  const apPath=join(ROOT,'harvest/import_reports/original_analytical_physical_topics.json');
  const apTopics=existsSync(apPath)?JSON.parse(readFileSync(apPath,'utf8')):{generated:0};
- const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general,reasoning,integrated,apTopics),
+ const multistepPath=join(ROOT,'harvest/import_reports/original_multistep_chemistry.json');
+ const multistep=existsSync(multistepPath)?JSON.parse(readFileSync(multistepPath,'utf8')):{generated:0};
+ const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily,reaction,extra,muza,muzaScience,general,reasoning,integrated,apTopics,multistep),
   path=join(ROOT,'harvest/coverage_report.json');
  const body=JSON.stringify(summary,null,2)+'\n';
  if(!existsSync(path)||readFileSync(path,'utf8')!==body)writeFileSync(path,body);

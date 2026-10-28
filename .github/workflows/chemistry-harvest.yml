@@ -96,6 +96,8 @@ on:
       - "tests/analytical-calculator-mit.test.mjs"
       - "scripts/import-original-analytical-variants.mjs"
       - "scripts/import-original-instrumental-analytical.mjs"
+      - "scripts/import-original-multistep-chemistry.mjs"
+      - "tests/original-multistep-chemistry.test.mjs"
       - "scripts/import-original-analytical-physical-topics.mjs"
       - "tests/original-analytical-physical-topics.test.mjs"
       - "scripts/import-original-integrated-chemistry.mjs"
@@ -236,6 +238,8 @@ jobs:
         run: node --test tests/original-instrumental-analytical.test.mjs
       - name: Verify fixed CC0 course exercise provenance and solution corrections
         run: node --test tests/introqchem-2021.test.mjs
+      - name: Verify 12 three-stage chemical derivations and 24 independent balance checks
+        run: node --test tests/original-multistep-chemistry.test.mjs
       - name: Verify twenty new analytical/physical source-bound numeric inverse solutions
         run: node --test tests/original-analytical-physical-topics.test.mjs
       - name: Verify 20 independent integrated chemistry topics and numeric witnesses
@@ -312,6 +316,8 @@ jobs:
         run: node scripts/import-original-analytical-variants.mjs
       - name: Stage nine source-linked quantum chemistry course exercises for human review
         run: node scripts/import-introqchem-2021.mjs
+      - name: Persist 12 original multistep analytical and physical chemistry exercises
+        run: node scripts/import-original-multistep-chemistry.mjs
       - name: Persist 20 novel source-bound original analytical and physical chemistry topics
         run: node scripts/import-original-analytical-physical-topics.mjs
       - name: Persist 20 original integrated chemistry topics across four disciplines
