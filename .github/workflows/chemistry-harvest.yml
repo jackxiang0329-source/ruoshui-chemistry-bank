@@ -15,6 +15,8 @@ on:
       - "scripts/report-chemistry-coverage.mjs"
       - "scripts/audit-openstax-chemistry-oer.mjs"
       - "scripts/review-openstax-chemistry-numerics.mjs"
+      - "scripts/review-openstax-chemistry-numerics-more.mjs"
+      - "tests/review-openstax-chemistry-numerics-more.test.mjs"
       - "scripts/import-curated-openstax-chemistry.mjs"
       - "tests/import-curated-openstax-chemistry.test.mjs"
       - "tests/review-openstax-chemistry-numerics.test.mjs"
@@ -190,6 +192,8 @@ jobs:
         run: node --test tests/harvest-public-chemistry.test.mjs
       - name: Verify eight Chinese source-curated chemistry questions remain strictly unpublished
         run: node --test tests/import-curated-openstax-chemistry.test.mjs
+      - name: Verify additional 22 source-pinned chemistry calculations and explicit license quarantine
+        run: node --test tests/review-openstax-chemistry-numerics-more.test.mjs
       - name: Verify independent pinned OpenStax chemistry numerical solutions and answer-key discrepancies
         run: node --test tests/review-openstax-chemistry-numerics.test.mjs
       - name: Verify human-review priority of external OER blocks without publication
@@ -258,6 +262,8 @@ jobs:
         run: node scripts/build-publication-index.mjs
       - name: Independently recompute curated real OpenStax mole, molarity, acid-base and calorimetry questions
         run: node scripts/review-openstax-chemistry-numerics.mjs
+      - name: Append 22 further independent textbook calculations in external quarantine
+        run: node scripts/review-openstax-chemistry-numerics-more.mjs
       - name: Quarantine eight Chinese solved OpenStax source exercises until edition rights are resolved
         run: node scripts/import-curated-openstax-chemistry.mjs
       - name: Rank external OpenStax source exercise blocks for manual science and rights review

@@ -54,7 +54,7 @@ const TEMPLATES={
  labels:['(a) pH','(a) pOH','(b) pH','(b) pOH','(c) pH','(c) pOH','(d) pH','(d) pOH'],unit:'无量纲'}
 };
 export function makeCandidates(reviews){
- if(!reviews||!Array.isArray(reviews.items)||reviews.reviewed_source_cases!==20||
+ if(!reviews||!Array.isArray(reviews.items)||reviews.reviewed_source_cases!==42||
   reviews.publishable!==0||reviews.scholarly_human_confirmations!==0||
   reviews.rights_confirmations!==0)throw Error('Unsafe curated source review');
  const byTag=new Map(CASES.map(x=>[x.path+':'+x.ordinal,x]));
