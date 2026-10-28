@@ -2,8 +2,8 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 56,
-  "preliminary_flags": 33,
+  "current_draft_count": 60,
+  "preliminary_flags": 37,
   "pairs": [
     {
       "new_id": "UC-ADV10-I102",
@@ -201,6 +201,30 @@
       "new_id": "UC-ADV10-P111",
       "prior_id": "UC-ADV10-P105",
       "reason": "正规溶液非理想混合与Margules活度热力学结构可能重叠，需重点人工复核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-I115",
+      "prior_id": null,
+      "reason": "跨辑核心方程尚未经人工比较",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-A115",
+      "prior_id": null,
+      "reason": "跨辑核心方程尚未经人工比较",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-O112",
+      "prior_id": null,
+      "reason": "跨辑核心方程尚未经人工比较",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-P112",
+      "prior_id": null,
+      "reason": "跨辑核心方程尚未经人工比较",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -470,6 +494,30 @@
       "model_family": "Margules-two-suffix-VLE-bubble-pressure-azeotrope-extremum",
       "judgement": "pending_human_comparison",
       "screening": "Independent numeric witness added; full cross-series core-equation and expert chemistry review pending."
+    },
+    {
+      "new_id": "UC-ADV10-I115",
+      "model_family": "silicate-Qn-NMR-response-network-charge-oxygen-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "Numeric witness configured; expert and equation-level review pending."
+    },
+    {
+      "new_id": "UC-ADV10-A115",
+      "model_family": "saturating-standard-addition-nonlinear-identifiability-dilution",
+      "judgement": "pending_human_comparison",
+      "screening": "Numeric witness configured; expert and equation-level review pending."
+    },
+    {
+      "new_id": "UC-ADV10-O112",
+      "model_family": "dynamic-two-site-NMR-coalescence-Eyring-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "Numeric witness configured; expert and equation-level review pending."
+    },
+    {
+      "new_id": "UC-ADV10-P112",
+      "model_family": "coupled-Butler-Volmer-mass-transfer-limited-polarization",
+      "judgement": "pending_human_comparison",
+      "screening": "Numeric witness configured; expert and equation-level review pending."
     }
   ]
 }

@@ -10,6 +10,34 @@ const F=96485.33212;
 const T=280,J=2400,q=Math.exp(-J/(R*T)),Z=1+3*q,p=3*q/Z;
 const w={
 
+"UC-ADV10-I115":()=>{
+ const raw=[2,12,5],fac=[.8,1.2,1],q=raw.map((v,j)=>v/fac[j]),z=q.reduce((a,b)=>a+b,0),f=q.map(v=>v/z),n=f.map(v=>70*v),nbo=2*n[0]+n[1],bo=(2*n[0]+3*n[1]+4*n[2])/2;
+ assert.ok(Math.abs(nbo-60)<1e-12&&Math.abs(nbo+bo-170)<1e-12);
+ return [...f,...n,nbo,bo,2*bo/70,bo/170,-f.reduce((s,v)=>s+v*Math.log(v),0)];
+},
+"UC-ADV10-A115":()=>{
+ const y=[19.8148148148148,28.0088495575221,35.5084745762712],z=y.map(v=>v-5),r=z[1]/z[0];
+ let lo=1e-10,hi=2;for(let j=0;j<100;j++){const m=(lo+hi)/2;if(.1/(m*(1+.5*(m+.1)))>r-1)lo=m;else hi=m;}
+ const c=(lo+hi)/2,s=z[0]*(1+.5*c)/c,p=a=>5+s*(c+a)/(1+.5*(c+a));
+ assert.ok(Math.abs(p(.2)-y[2])<1e-10&&Math.abs(.05*(c+.2)-(.05*c+.01))<1e-12);
+ return [c,5*c,s,p(0),p(.1),p(.2),c+.2,1/(1+.5*(c+.2)),s/(1+.5*(c+.2))**2];
+},
+"UC-ADV10-O112":()=>{
+ const R=8.314462618,kB=1.380649e-23,h=6.62607015e-34,t1=298.15,t2=318.15;
+ const DH=-R*(Math.log(500/t2)-Math.log(80/t1))/(1/t2-1/t1),DS=R*(Math.log(80/t1)-Math.log(kB/h)+DH/(R*t1));
+ const k=t=>kB*t/h*Math.exp(DS/R-DH/(R*t)),kc=Math.PI*120/Math.SQRT2;
+ let lo=t1,hi=t2;for(let j=0;j<90;j++){const m=(lo+hi)/2;if(k(m)<kc)lo=m;else hi=m;}
+ const tc=(lo+hi)/2;assert.ok(tc>t1&&tc<t2&&Math.abs(k(tc)-kc)<1e-9);
+ return [DH/1000,DS,DH-t1*DS,kc,tc,k(308.15),1/80,k(t2)];
+},
+"UC-ADV10-P112":()=>{
+ const R=8.314462618,F=96485.33212,a=F/(2*R*298.15),b=R*298.15/F,eta=.08,conc=i=>b*Math.log(1/(1-i/10)),fn=i=>i-4*Math.sinh(a*(eta-conc(i)));
+ let i=5;for(let j=0;j<30;j++){const x=a*(eta-conc(i)),df=1+2*Math.cosh(x)/(10*(1-i/10)),next=i-fn(i)/df;assert.ok(next>0&&next<10);if(Math.abs(next-i)<1e-14){i=next;break;}i=next;}
+ const ec=conc(i),ea=eta-ec,der=4*a*Math.cosh(a*ea)/(1+2*Math.cosh(a*ea)/(10*(1-i/10)));
+ assert.ok(Math.abs(fn(i))<1e-11&&Math.abs(ec+ea-eta)<1e-12);
+ return [i,ec,ea,1-i/10,i*1e-3/F,i*eta*1e-3,der,4*Math.sinh(a*eta)];
+},
+
 "UC-ADV10-I114":()=>{
  const a=.04,K=1e-4,solve=p=>{let lo=a/2,hi=1;for(let j=0;j<110;j++){let v=(lo+hi)/2;if(v*(2*v-a)**2*Math.sqrt(p)/(1-v)>K)hi=v;else lo=v;}return (lo+hi)/2;};
  const v1=solve(1),v2=solve(.01),n1=2*v1-a,n2=2*v2-a;
