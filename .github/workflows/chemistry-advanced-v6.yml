@@ -1,0 +1,26 @@
+name: Advanced chemistry sixth fifty model audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'editorial/advanced_integrated_v6/**'
+      - 'scripts/check-advanced-authored-v6.mjs'
+      - '.github/workflows/chemistry-advanced-v6.yml'
+  pull_request:
+    paths:
+      - 'editorial/advanced_integrated_v6/**'
+      - 'scripts/check-advanced-authored-v6.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-fifty:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Independently recompute all sixth-series problem models
+        run: node scripts/check-advanced-authored-v6.mjs
