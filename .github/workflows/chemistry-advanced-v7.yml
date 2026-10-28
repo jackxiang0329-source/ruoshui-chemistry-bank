@@ -1,0 +1,26 @@
+name: Advanced chemistry seventh 60-case scientific QA
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'editorial/advanced_integrated_v7/**'
+      - 'scripts/check-advanced-authored-v7.mjs'
+      - '.github/workflows/chemistry-advanced-v7.yml'
+  pull_request:
+    paths:
+      - 'editorial/advanced_integrated_v7/**'
+      - 'scripts/check-advanced-authored-v7.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-sixty:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify exactly 60 cross-series review-pending chemistry worked solutions
+        run: node scripts/check-advanced-authored-v7.mjs
