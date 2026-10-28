@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至10辑 (446题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至10辑 (450题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -8202,6 +8202,28 @@ AB₂O₄仅为理想化二价/三价尖晶石；反位能线性、理想子晶�
 三价态理想溶解、可逆一电子电对、无副反应及外界电子交换；稀释后光谱响应线性。与旧辑PCET电位和光谱混合物题有交叉，需方程级跨辑复核。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I114 · 受主掺杂氧化物的氧空位—电子缺陷平衡与Brouwer斜率}
+\noindent\textbf{题目}\par
+某理想化受主掺杂氧化物MO₁₋δ以氧晶格位数归一化：氧空位V\_O••分数v、电子e′数n、固定单负电受主A′分数a=0.04000，正常氧位分数1−v。氧释放反应O\_Oˣ ⇌ V\_O••+2e′+½O₂的无量纲质量作用常数K=[v n²/(1−v)](pO₂/p°)\textasciicircum{}(1/2)=1.0000×10⁻⁴；电中性2v=n+a。假设理想活度、忽略空穴和缺陷缔合、0<v<1且n>0。求氧分压比pO₂/p°分别为1.000和0.01000时的v、n、低压与高压的电子电导率比（电子迁移率不变）、空位分数增量及两点局部Brouwer斜率dlnv/dlnpO₂。证明物理解唯一，验证电荷及位点守恒，并解释未掺杂极限斜率−1/6何时适用。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Kröger–Vink电荷计量：一个V\_O••带相对+2电荷，电子和固定受主各带−1，因此n=2v−a；氧占位为1−v。氧释放半个O₂使质量作用式含pO₂的正1/2次幂。
+\item 令p=pO₂/p°，代入电中性后方程f(v)=v(2v−a)²√p/(1−v)−K=0，允许的物理区间为a/2<v<1；其它根对应n≤0或无效占位。
+\item 在此区间，质量作用左侧的对数导数1/v+4/(2v−a)+1/(1−v)>0，且从0连续增加至∞，故每个p>0恰有一个物理解。
+\item 在p=1.000用二分求v₁=0.043457838927、n₁=0.046915677853；验证2v₁−n₁−a=0和v₁n₁²/(1−v₁)=K。
+\item 在p=0.01000求v₂=0.075377319551、n₂=0.11075463910；代入v₂n₂²√0.01/(1−v₂)=K。低氧分压下缺陷和电子均增加。
+\item 电子迁移率固定时σ₂/σ₁=n₂/n₁=2.3607170176，Δv=v₂−v₁=0.031919480624。电子电导率不能直接用v₂/v₁替代。
+\item 对lnK=lnv+2ln(2v−a)−ln(1−v)+(1/2)lnp求微分，得dlnv/dlnp=−1/[2(1+4v/(2v−a)+v/(1−v))]。
+\item 两点斜率分别为-0.10524943912、-0.13144613069。只有在a=0且v≪1时n≈2v，才有v³√p近似常数并得到−1/6。
+\item 独立采用有界二分法及氧分压对数微扰中心差分复核所有数值、守恒和斜率；真实固体的缺陷非理想活度与空间电荷效应需专家审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+高压空位分数 = 0.0434578389 fraction；高压电子归一数 = 0.0469156779 per oxygen site；低压空位分数 = 0.0753773196 fraction；低压电子归一数 = 0.110754639 per oxygen site；电导率比 = 2.36071702 ratio；空位增量 = 0.0319194806 fraction；高压Brouwer斜率 = -0.105249439 dimensionless；低压Brouwer斜率 = -0.131446131 dimensionless\par
+\noindent\textbf{模型前提：}
+电子与氧空位均以氧位数归一化，固定受主、理想缺陷、标准态氧分压；与第九辑I79空位密度反演主题相近但方程不同，待人工核对。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第10辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -8482,6 +8504,28 @@ H2O放出量 = 4 mmol；CO2放出量 = 6 mmol；Mg(OH)2初始质量分数 = 0.23
 独立高斯输运时间和指数滞留时间、线性检测器、归一无限时间窗；与v10 A112梯度迁移积分仅同属色谱领域，方程结构不同，跨辑仍待人工复核。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A114 · 静态络合和动态碰撞双猝灭的荧光强度—寿命联合辨识}
+\noindent\textbf{题目}\par
+某荧光分析探针无猝灭剂时寿命τ₀=4.000 ns、强度F₀。猝灭剂Q既可形成不发光1:1基态络合物（静态常数K\_s），又以双分子速率k\_q碰撞猝灭游离发光体（动态常数K\_D=k\_qτ₀）。忽略内滤效应、仪器变化和络合物发光，规定τ₀/τ=1+K\_D[Q]，F₀/F=(1+K\_s[Q])(1+K\_D[Q])。[Q]=0.1000 mol/L时实测τ=10/3 ns、F₀/F=1.800；[Q]=0.2000 mol/L时τ=20/7 ns、F₀/F=2.800。求K\_D、K\_s、k\_q；复核两组寿命及强度比，计算高浓度下未络合分数、寿命比τ/τ₀、强度比F/F₀。证明只有单点强度时不可唯一辨识两种猝灭，并说明寿命与强度的物理区别。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 静态络合使游离发光体数减少而不改变其寿命；动态碰撞缩短游离发光体寿命。按题设独立假设，强度猝灭因子等于静态与动态因子的乘积。
+\item 由第一组寿命得K\_D=[4/(10/3)−1]/0.1=2.000 L/mol；由第二组得[4/(20/7)−1]/0.2=2.000 L/mol，交叉复核。
+\item 从第一组强度分离静态因子1+K\_s×0.1=1.8/(1+2×0.1)=1.5，得K\_s=5.000 L/mol；第二组2.8/1.4=2.0亦得5.000 L/mol。
+\item 将τ₀=4.000×10⁻⁹ s代入k\_q=K\_D/τ₀=5.000×10⁸ L mol⁻¹ s⁻¹；不能把ns直接当作s。
+\item 在Q=0.1000 mol/L，τ=4/1.2=10/3 ns，F₀/F=1.5×1.2=1.800；两者与观测一致。
+\item 在Q=0.2000 mol/L，τ=4/1.4=20/7 ns，F₀/F=2.0×1.4=2.800；两种机制均使总强度下降。
+\item 高浓度下游离分数1/(1+K\_sQ)=0.5000，τ/τ₀=1/1.4=5/7，F/F₀=1/2.8=5/14；静态猝灭使后两者不相等。
+\item 单一强度观测只给一个方程R=(1+K\_sQ)(1+K\_DQ)，有两个未知量，因而不唯一；寿命信息单独固定K\_D，才可反演K\_s。
+\item 独立分别从两组寿命与两组强度反演两常数，检查正性、量纲、预测残差；真实探针可能有非1:1络合、内滤效应和多寿命组分，待专家审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+动态常数KD = 2 L/mol；静态常数Ks = 5 L/mol；双分子速率kq = 500000000 L/(mol s)；低Q寿命 = 3.33333333 ns；高Q寿命 = 2.85714286 ns；低Q强度猝灭比 = 1.8 ratio；高Q强度猝灭比 = 2.8 ratio；高Q未络合分数 = 0.5 fraction；高Q寿命比 = 0.714285714 ratio；高Q强度比 = 0.357142857 ratio\par
+\noindent\textbf{模型前提：}
+理想单寿命探针、暗态络合、无内滤效应；与第九辑A82 FRET寿命距离反演在荧光寿命主题相邻，待人工模型复核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第10辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -8740,7 +8784,7 @@ RR催化剂分数 = 0.266304348 fraction；SS催化剂分数 = 0.0489130435 frac
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \Needspace{7\baselineskip}
-\subsubsection*{UC-ADV10-O110 · 综合题}
+\subsubsection*{UC-ADV10-O110 · 分子内SN2关环与时变外部亲核取代的非自治竞争动力学}
 \noindent\textbf{题目}\par
 某假想ω-卤代醇盐A在恒温溶液中有三个互斥、不可逆的消耗通道：分子内SN2关环A→C（kcyc=0.01200 s⁻¹），溶剂解A→H（kh=0.003000 s⁻¹），以及外部亲核试剂Nu参与的SN2取代A+Nu→E（k2=0.03500 L mol⁻¹ s⁻¹）。A初浓度A0=0.01000 mol/L；Nu处于独立缓冲储库，因预设的稀释/降解过程按[Nu](t)=0.4000 exp(−0.01000t) mol/L变化，假定A的消耗对Nu储库浓度可忽略，且各产物不再反应。求t=120.0 s时A、C、E、H的浓度，C/E、C占全部产物的分数，以及t=0和120 s瞬时外部取代通道占总消耗速率的分数；证明物料守恒并解释为何不能用常数[Nu]的简单分支比例替代时间积分。\par
 \medskip\noindent\textbf{分步解答}
@@ -8759,6 +8803,28 @@ RR催化剂分数 = 0.266304348 fraction；SS催化剂分数 = 0.0489130435 frac
 120s未反应底物 = 0.000621423161 mol/L；120s环化产物 = 0.00444821251 mol/L；120s外部取代产物 = 0.0038183112 mol/L；120s溶剂解产物 = 0.00111205313 mol/L；环化与外部取代比 = 1.16496856 ratio；环化占总产物分数 = 0.474295043 fraction；起始外部取代瞬时分支 = 0.482758621 fraction；120s外部取代瞬时分支 = 0.219429705 fraction\par
 \noindent\textbf{模型前提：}
 指定时变外部亲核剂储库、各通道不可逆且速率常数固定、产物不再转化；与v10 O101动态拆分同为多通道ODE，但驱动为外部时变二级SN2与一级关环竞争，核心独立性待人工审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O111 · A₂/B₃逐步聚合的Flory–Stockmayer凝胶阈值与溶胶质量分数}
+\noindent\textbf{题目}\par
+理想化无环化、官能团等反应性的A₂+B₃逐步加成聚合：初始A₂单体3.000 mol（100.0 g/mol）、B₃单体2.000 mol（150.0 g/mol），两类反应官能团均6.000 mol；转化率p\_A=p\_B=p=0.8000。假设仅A—B成键且无小分子质量损失，使用无限体系随机树枝分支模型：从一个A官能团出发不能到达无限凝胶的概率u\_A=1−p+p u\_B²，B官能团对应u\_B=1−p+p u\_A。求凝胶临界转化率p\_c、非平凡物理解u\_A、u\_B、A₂与B₃各自进入溶胶的比例u\_A²和u\_B³、两类凝胶比例及全体系凝胶质量分数。证明为何不能选u\_A=u\_B=1根，检查官能团与质量守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两类初始官能团数分别为3×2=6 mol与2×3=6 mol，故p\_A=p\_B=0.8，形成的A—B键数为6p=4.8 mol。
+\item 树枝分支因子为(f\_A−1)(f\_B−1)p\_Ap\_B=2p²；临界条件2p\_c²=1，得p\_c=1/√2=0.7071067812，故p=0.8处于凝胶区。
+\item 沿A端出发，不反应概率1−p；反应后接B₃，其余两个B端均不通向凝胶的概率u\_B²，故u\_A=1−p+p u\_B²。B端连接A₂后只剩一个A端，故u\_B=1−p+p u\_A。
+\item 代入p=0.8消元得u\_A=0.2+0.8(0.2+0.8u\_A)²，化简0.512u\_A²−0.744u\_A+0.232=0。
+\item 该方程根为u\_A=1与u\_A=0.453125；在超过临界转化率时，从零初值迭代收敛到最小非负根，故物理解u\_A=0.453125，u\_B=0.2+0.8u\_A=0.562500。
+\item A₂两端均不连凝胶的概率s\_A=u\_A²=0.20532226563；B₃三个端均不连凝胶的概率s\_B=u\_B³=0.17797851563。
+\item 凝胶比例g\_A=1−s\_A=0.79467773438，g\_B=1−s\_B=0.82202148438，两者均处于[0,1]。
+\item 两类初始质量分别300 g与300 g，总600 g，凝胶质量分数=(300g\_A+300g\_B)/600=0.80834960938，溶胶质量加凝胶质量严格等于600 g。
+\item 独立以双变量固定点迭代复核最小根、两分支方程、临界条件、官能团计量和质量守恒；真实有限聚合物的环化、非等反应性及凝胶网络缺陷未计入，须专家审校。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+临界转化率 = 0.707106781 fraction；A端有限分支概率 = 0.453125 probability；B端有限分支概率 = 0.5625 probability；A2溶胶分数 = 0.205322266 fraction；B3溶胶分数 = 0.177978516 fraction；A2凝胶分数 = 0.794677734 fraction；B3凝胶分数 = 0.822021484 fraction；凝胶质量分数 = 0.808349609 mass fraction\par
+\noindent\textbf{模型前提：}
+无环化、随机树枝、无限体系、无质量损失；与第九辑O96分子量矩属于聚合主题，但凝胶分支方程不同，待人工核验。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{物理化学}
@@ -9039,6 +9105,28 @@ A、B由理想储库固定、质量作用动力学且已无量纲化；仅作局
 原颗粒Thiele模数 = 1.76776695 dimensionless；原颗粒有效因子 = 0.838940792 fraction；原颗粒中心浓度 = 0.746018573 mol/m\textasciicircum{}3；原颗粒表面通量 = 4.19470396e-06 mol/m\textasciicircum{}2/s；原颗粒单颗粒消耗率 = 1.31780512e-11 mol/s；半径加倍Thiele模数 = 3.53553391 dimensionless；半径加倍有效因子 = 0.609970716 fraction；半径加倍表面通量 = 6.09970716e-06 mol/m\textasciicircum{}2/s\par
 \noindent\textbf{模型前提：}
 等温均匀球体、Fick有效扩散、外部膜阻忽略、一阶体积反应；与v10 P104 Maxwell–Stefan多组分通量模型主题相邻但本题为球径向反应扩散边值问题，人工模型去重待办。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P111 · 对称Margules非理想汽液平衡的共沸组成与泡点压力极值}
+\noindent\textbf{题目}\par
+某二元挥发性液体在固定温度下气相理想、液相非理想，满足y\_iP=x\_iγ\_iP\_i\textasciicircum{}sat。纯组分饱和蒸气压P₁\textasciicircum{}sat=60.00 kPa、P₂\textasciicircum{}sat=40.00 kPa；对称二后缀Margules式lnγ₁=A x₂²、lnγ₂=A x₁²，A=1.200、x₂=1−x₁。分别在液相x₁=0.3500和0.8000求泡点P、汽相y₁、相对挥发度α₁₂=[y₁/(1−y₁)]/[x₁/(1−x₁)]；在x₁=0.3500还求γ₁、γ₂。判定内部共沸点并求组成及共沸压力，证明y₁=x₁和泡点压力局部极大，检查Gibbs–Duhem关系及物理范围。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将γ₁=exp[A(1−x₁)²]、γ₂=exp(Ax₁²)代入修正Raoult定律，泡点P=x₁γ₁P₁\textasciicircum{}sat+(1−x₁)γ₂P₂\textasciicircum{}sat，汽相y₁=x₁γ₁P₁\textasciicircum{}sat/P。
+\item x₁=0.3500时γ₁=1.6603028077、γ₂=1.1583539630，均大于1，体现液相对理想混合的正偏差。
+\item 两项分压求和得P=64.983562000 kPa，y₁=0.53654120963，且y₂=1−y₁>0。
+\item 相对挥发度α₁₂=γ₁P₁\textasciicircum{}sat/(γ₂P₂\textasciicircum{}sat)=2.1499941218，不等于单纯纯组分蒸气压之比。
+\item 内部共沸条件y₁=x₁，等价于γ₁P₁\textasciicircum{}sat=γ₂P₂\textasciicircum{}sat。取对数得到ln(60/40)+A[(1−x₁)²−x₁²]=0。
+\item 解得x₁,az=[1+ln(1.5)/A]/2=0.66894379505，属于(0,1)，P\_az=γ₁P₁\textasciicircum{}sat=68.433496196 kPa，两个组分给出同一共沸压力。
+\item x₁=0.8000时P=67.603799759 kPa、y₁=0.74493137420、α₁₂=0.73012838394<1，表明共沸两侧相对挥发度翻转。
+\item 求导dlnγ₁/dx₁=−2A(1−x₁)、dlnγ₂/dx₁=2Ax₁，故x₁dlnγ₁+(1−x₁)dlnγ₂=0，满足Gibbs–Duhem一致性。
+\item 对P显式求导得dP/dx₁=(γ₁P₁\textasciicircum{}sat−γ₂P₂\textasciicircum{}sat)[1−2A x₁(1−x₁)]；本题A=1.2使第二因子始终≥0.4>0，共沸处导数为零且两侧由正转负，故泡点压力在内部共沸点局部极大；独立二分求y₁−x₁零点并检查分压和与正性，非理想气相修正待专家审查。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+低x活度系数gamma1 = 1.66030281 dimensionless；低x活度系数gamma2 = 1.15835396 dimensionless；低x泡点压力 = 64.983562 kPa；低x气相y1 = 0.53654121 fraction；低x相对挥发度 = 2.14999412 dimensionless；共沸液相x1 = 0.668943795 fraction；共沸压力 = 68.4334962 kPa；高x泡点压力 = 67.6037998 kPa；高x气相y1 = 0.744931374 fraction；高x相对挥发度 = 0.730128384 dimensionless\par
+\noindent\textbf{模型前提：}
+定温理想气相、Margules液相活度；与第十辑P105正规溶液非理想混合模型可能有核心热力学结构重叠，待人工比较。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
