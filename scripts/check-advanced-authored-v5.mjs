@@ -67,7 +67,7 @@ for(const q of items){
  case 'UC-ADV5-O22':eq(a[0],Math.exp(-.2*4));eq(a[1],.2*(Math.exp(-.08*4)-Math.exp(-.2*4))/.12);eq(a[0]+a[1]+a[2],1);eq(a[3],Math.log(.2/.08)/(.2-.08));break;
  case 'UC-ADV5-O23':eq(a[0]+a[1],.01);eq(a[0]/a[1],12.5);eq(a[2],.4*a[0]);break;
  case 'UC-ADV5-O24':eq(a[0],1/(1-.94));eq(a[1],(1+.94)/(1-.94));eq(a[2],a[1]/a[0]);break;
- case 'UC-ADV5-O25':eq(a[1],a[0]*(1-(2*.6)/(2*.6+.4)));eq(a[2],a[1]);eq(a[0]+a[1]+a[2]+a[3],1);break;
+ case 'UC-ADV5-O25':eq(a[1],a[0]*(2*.6)/(2*.6+.4));eq(a[2],a[0]*(1-(2*.6)/(2*.6+.4)));eq(a[1]+2*a[2]+a[3],1);break;
  case 'UC-ADV5-O26':{let [r,s,prod,ee]=a;eq(r+s+prod,1);eq(ee,(r-s)/(r+s));eq(r+s,1-prod);break;}
  case 'UC-ADV5-O27':eq(a[0],1e9/(1/(5e-9)+4e9*.08));eq(a[1],a[0]/5);eq(a[2],a[1]/(1+6*.08));break;
  case 'UC-ADV5-O28':eq(a[0]+a[1]+a[2],.008);eq(a[1],6*a[0]);eq(a[2],1.6*a[0]);eq(a[3],.5*a[1]);break;
