@@ -209,3 +209,8 @@
 - 对原已保存的 **278 份 Reaction Learn 有机学习卡**（231 个命名反应、47 个试剂用途）新增[逐条比对的审核报告](harvest/main_reaction_card_stored_replay.json)与[原始源再核验脚本](scripts/audit-reaction-cards-stored.mjs)。每次根据作者固定 Git Blob 的 HTML 和 CC BY 4.0 内容许可重新构建文字题干和答案，逐条检查保存文件、来源、审批标志。
 - 这 278 份属于**学习卡而非正式考试题**，数量不能计作 278 道已审核考题。现有主库 1715 份为 **1437 份练习候选 + 278 份学习卡**。
 - 经过本轮两套来源审核后，[统一统计](harvest/coverage_report.json)共有 **1247 份练习候选与 278 份学习卡**已经过来源文件或生成器一致性检查，即 **1525/1715 ≈ 88.9%**；另有 **190 份练习候选**尚未纳入这些检查。此处仅指数据一致性，专家认定和正式组卷批准仍为 **0**。
+
+## 2026-10-28：主库 185 道新增来源核验，剩余五道有机题待审
+
+- [六组固定来源的 185 道练习重生成与逐字段审核](harvest/main_additional_185_source_replay.json)：MIT chemquiz 67；CC BY 4.0 ChemTrain Radical 38、PG Learn 22、pKa Learn 20、Reactivity Learn 20、Photoredox Learn 18。所有复核均未自动批准科学准确性、第三方逐题许可或正式出卷。
+- [统一覆盖统计](harvest/coverage_report.json)更新为 **1710/1715 已保存候选记录通过来源/生成器一致性比对**，包含 **1432 份练习候选**及 **278 份学习卡**，尚有 **5 份 MuzaPro 有机问题**在[单独待审队列](harvest/main_pending_source_replay_queue.md)。正式批准组卷数量为 **0**。

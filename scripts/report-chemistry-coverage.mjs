@@ -4,7 +4,7 @@ import {readFileSync,writeFileSync,existsSync} from 'node:fs';
 import {join,dirname,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const ROOT=dirname(dirname(fileURLToPath(import.meta.url)));
-export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction){
+export function summarize(main,external,publication,rqaState,rqaReview,science,derivations,replay,supplementary,tmc,daily,reaction,extra){
  const whole=main?.total_candidates,exercise=main?.by_content_kind?.exercise_candidate,
   card=main?.by_content_kind?.study_card,raw=external?.raw_staged_candidates;
  if(!Number.isInteger(whole)||!Number.isInteger(exercise)||!Number.isInteger(card)||
@@ -82,7 +82,19 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   reaction?.human_chemistry_approved!==0||
   reaction?.publication_approved!==0||
   reaction?.formal_exam_ready!==0||
-  whole<1525||exercise<1247||card!==278)
+  extra?.additional_source_replayed!==185||
+  extra?.main_total!==whole||extra?.previously_replayed!==1525||
+  extra?.main_coverage_after_addition!==1710||extra?.remaining_unreplayed!==5||
+  extra?.chemquiz_mit_reference!==67||extra?.chemtrain_CC_BY4_source_exercises!==118||
+  extra?.sources?.length!==6||extra.sources.reduce((n,x)=>n+x.expected,0)!==185||
+  extra?.expert_approved!==0||extra?.exam_ready!==0||
+  main?.source_counts?.['bem130/chemquiz']!==67||
+  main?.source_counts?.['ChemTrain/radical-learn']!==38||
+  main?.source_counts?.['ChemTrain/pg-learn']!==22||
+  main?.source_counts?.['ChemTrain/pka-learn']!==20||
+  main?.source_counts?.['ChemTrain/reactivity-learn']!==20||
+  main?.source_counts?.['ChemTrain/photoredox-learn']!==18||
+  whole<1710||exercise<1432||card!==278)
   throw Error('Unsafe or inconsistent chemistry coverage sources: '+
    JSON.stringify({
     main_total:whole,main_exercises:exercise,main_cards:card,
@@ -116,12 +128,13 @@ export function summarize(main,external,publication,rqaState,rqaReview,science,d
   main_daily_text_mcq_source_records_replayed:daily.stored_text_only_mcq_candidates_replayed,
   main_previous_stored_replay_records:386,
   main_reaction_study_cards_replayed:reaction.matched_stored_study_cards,
-  main_exercise_candidates_replayed:1247,
-  main_exercise_candidates_not_replayed:exercise-1247,
+  main_additional_source_exercises_replayed:extra.additional_source_replayed,
+  main_exercise_candidates_replayed:1432,
+  main_exercise_candidates_not_replayed:exercise-1432,
   main_study_cards_not_replayed:card-278,
-  main_unique_candidate_records_machine_replayed:1525,
-  main_candidate_records_not_yet_machine_replayed:whole-1525,
-  main_stored_replay_coverage_fraction:Number((1525/whole).toFixed(6)),
+  main_unique_candidate_records_machine_replayed:1710,
+  main_candidate_records_not_yet_machine_replayed:whole-1710,
+  main_stored_replay_coverage_fraction:Number((1710/whole).toFixed(6)),
   main_replay_cannot_establish_chemistry_truth:true,
   main_replay_requires_expert_science_and_item_rights_review:true,
   main_original_numeric_stored_coverage_fraction:Number((304/whole).toFixed(6)),
@@ -162,7 +175,8 @@ export function run(){
  const tmc=JSON.parse(readFileSync(join(ROOT,'harvest/main_tmc_stored_replay.json'),'utf8'));
  const daily=JSON.parse(readFileSync(join(ROOT,'harvest/main_daily_mcq_stored_replay.json'),'utf8'));
  const reaction=JSON.parse(readFileSync(join(ROOT,'harvest/main_reaction_card_stored_replay.json'),'utf8'));
- const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily,reaction),
+ const extra=JSON.parse(readFileSync(join(ROOT,'harvest/main_additional_185_source_replay.json'),'utf8'));
+ const summary=summarize(main,ext,release,rqaState,rqaReview,science,chinese,replay,supplementary,tmc,daily,reaction,extra),
   path=join(ROOT,'harvest/coverage_report.json');
  const body=JSON.stringify(summary,null,2)+'\n';
  if(!existsSync(path)||readFileSync(path,'utf8')!==body)writeFileSync(path,body);
