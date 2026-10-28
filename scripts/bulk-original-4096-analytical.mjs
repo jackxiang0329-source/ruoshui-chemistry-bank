@@ -1,3 +1,4 @@
+const r=(x,y)=>Math.abs(x-y)/Math.max(Math.abs(y),1e-25);
 export const SUBJECT='analytical';
 export const FAMILIES=[
 {subject:"analytical",id:"carbonate_bicarbonate_double_indicator",unit:["mol/L Na₂CO₃","mol/L NaHCO₃"],a:10,da:0.08,b:30,db:0.12,question:"取 50.00 mL 的 Na₂CO₃/NaHCO₃ 混合碱液，以 0.1000 mol/L HCl 滴定至酚酞终点累计耗酸 {a} mL，再继续至甲基橙终点累计耗酸 {b} mL。假设不存在 OH⁻ 或其它酸碱组分，且终点准确。求原混合液 Na₂CO₃ 与 NaHCO₃ 浓度。",worked:"设 n碳酸盐=x、n碳酸氢盐=y。酚酞终点 HCl 消耗为 x，甲基橙终点累计耗酸为 2x+y；先反解 x=.1000a/1000、y=.1000(b−2a)/1000，再除以 0.0500 L。",calc:(a,b)=>[.1*a/50,.1*(b-2*a)/50],inverse:(a,b,x,y)=>[r(x*50/.1,a),r((2*x+y)*50/.1,b)]},

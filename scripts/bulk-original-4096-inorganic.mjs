@@ -1,3 +1,4 @@
+const re=(x,y)=>Math.abs(x-y)/Math.max(Math.abs(y),1e-25);
 export const SUBJECT='inorganic';
 export const FAMILIES=[
 {subject:"inorganic",id:"limestone_caco3_carbon_dioxide",unit:["g CaCO₃","g CO₂"],a:4,da:0.09,b:0.65,db:0.002,question:"某石灰石固体样品总质量为 {a} g，碳酸钙质量分数 {b}（无量纲），其他物质均不与盐酸产气。加入足量酸后 CaCO₃ 全部转化为 CO₂，取 M(CaCO₃)=100.09、M(CO₂)=44.01 g/mol，求碳酸钙质量与理论 CO₂ 质量。",worked:"先依样品质量与纯度计算 CaCO₃ 质量，再将 CaCO₃→CO₂ 的 1:1 计量换算为气体质量。酸过量、无逸散损失是模型前提。",calc:(a,b)=>[a*b,a*b*44.01/100.09],inverse:(a,b,x,y)=>[re(x/a,b),re(y*100.09/44.01,x)]},

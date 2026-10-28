@@ -1,3 +1,4 @@
+const r=(x,y)=>Math.abs(x-y)/Math.max(Math.abs(y),1e-25);
 export const SUBJECT='organic';
 export const FAMILIES=[
 {subject:"organic",id:"hydrocarbon_combustion_carbon_hydrogen",unit:["mol C","mol H"],a:4,da:0.09,b:2,db:0.05,question:"纯烃完全燃烧得 CO₂ {a} g 和 H₂O {b} g，且无其它含碳、氢产物。M(CO₂)=44.01、M(H₂O)=18.015 g/mol。求原烃所含碳原子和氢原子的物质的量。",worked:"全部碳对应 CO₂，每 mol 水对应 2 mol H 原子；按质量除摩尔质量计算。",calc:(a,b)=>[a/44.01,2*b/18.015],inverse:(a,b,x,y)=>[r(x*44.01,a),r(y*18.015/2,b)]},

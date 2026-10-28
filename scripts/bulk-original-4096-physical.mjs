@@ -1,3 +1,4 @@
+const r=(x,y)=>Math.abs(x-y)/Math.max(Math.abs(y),1e-25);
 export const SUBJECT='physical';
 export const FAMILIES=[
 {subject:"physical",id:"reversible_ideal_isothermal_work_entropy",unit:["kJ work on system","J/K entropy gain"],a:1,da:0.01,b:300,db:0.5,question:"有 {a} mol 理想气体在绝对温度 {b} K 下由初体积可逆等温膨胀至原来的 2.00 倍，取 R=8.314462618 J/(mol·K)。用化学约定计算系统受到的功（kJ）及气体的熵变（J/K），忽略其它相互作用。",worked:"可逆等温过程 w=−nRTln(V2/V1)，膨胀的对系统作功为负；气体熵变 ΔS=nRln(V2/V1)，均使用 ln2，但前者含 T 并须由 J 转为 kJ。",calc:(a,b)=>[-a*8.314462618*b*Math.LN2/1000,a*8.314462618*Math.LN2],inverse:(a,b,x,y)=>[r(-x*1000/b,y),r(y/(a*8.314462618),Math.LN2)]},
