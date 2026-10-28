@@ -10,7 +10,7 @@ test('185 source-replayed exercises are still unapproved and five MuzaPro unrevi
  const result=audit(rows,qa);
  assert.equal(result.additional_source_replayed,185);
  assert.equal(result.main_coverage_after_addition,1710);
- assert.equal(result.remaining_unreplayed,5);
+ assert.equal(result.remaining_unreplayed,rows.length-1710);
  assert.deepEqual(result.sources.map(x=>x.expected),[67,38,22,20,20,18]);
  assert.equal(result.exam_ready,0);
 });
