@@ -53,7 +53,7 @@ export const MORE=[
   expected:[.250]},
  {tag:'four_diluted_solution_molarities',path:'contents/m51014.md',ordinal:20,
   marker:'molarity of the diluted solution',hasAnswer:true,method:'c_i V_i=c_f V_f for four distinct solutes',
-  keyIssue:'answer_labels_part_d_as_part_e',expected:[.125,.04888,.206,.0056]},
+  keyIssue:'answer_labels_part_d_as_part_e',expected:[.125,.04888,.205625,.005625]},
  {tag:'engine_radiator_heat_transfer',path:'contents/m51034.md',ordinal:8,
   marker:'240 °F',hasAnswer:true,method:'Fahrenheit temperature interval and 1 US gallon water',
   expected:[571.93]},
