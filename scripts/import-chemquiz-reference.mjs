@@ -95,7 +95,7 @@ export function makeQuestions(metal,polyatomic){
  }
  return rows;
 }
-function verifySources(){
+export function verifySources(){
  const lock=JSON.parse(readFileSync(join(ROOT,'third_party/UPSTREAM_LOCK.json'),'utf8'));
  const source=lock.sources?.find(x=>x.repo===REPO);
  if(!source||source.commit!==COMMIT||source.license!=='MIT')throw Error('Pinned source metadata mismatch');
