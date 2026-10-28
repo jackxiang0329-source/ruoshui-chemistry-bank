@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "generated": 32768,
+  "independent_chained_method_archetypes": 4,
+  "concrete_distinct_chemical_systems": 32,
+  "parameter_variants_per_system": 1024,
+  "subject_counts": {
+    "inorganic": 8192,
+    "analytical": 8192,
+    "organic": 8192,
+    "physical": 8192
+  },
+  "stored_replayed_count": 32768,
+  "source_rights_license": "CC0-1.0",
+  "expert_approved": 0,
+  "publishable": false,
+  "numerical_inverse_checks": 163840,
+  "notes": "32768 parameter cases across 32 chemical species/systems, but only FOUR linked-method archetypes. Machine algebra does not establish independent expert science validation."
+}

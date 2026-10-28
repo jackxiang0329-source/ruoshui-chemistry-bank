@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "7cf04739524565304bc169551367396345533958ec117c221e722495fc89fbb8",
+  "subject": "inorganic",
+  "topic": "carbonate_gas_capture_carbonate_SrCO₃_case0154",
+  "topic_family": "carbonate_SrCO₃",
+  "parameter_case": 154,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_coupled_multistage_dependency",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "independent_method_archetype": "stoichiometric_CO2_ideal_gas_sodium_hydroxide_capture",
+  "question": "某样品总质量为 1.353 g，含纯 SrCO₃ 的质量分数为 0.5959；其余物质均不与盐酸释放气体。已知 M(SrCO₃)=147.63 g/mol，其碳酸根在足量强酸中全部变为 CO₂，收集效率100%，且无其它气体。将 CO₂ 视作理想气体，298.15 K、101.325 kPa，R=8.314462618 L·kPa/(mol·K)。随后将所得 CO₂ 定量吸收入过量 NaOH，按 CO₂+2NaOH→Na₂CO₃+H₂O 定量完成并且不生成碳酸氢盐，NaOH 浓度为 0.2000 mol/L，M(Na₂CO₃)=105.99 g/mol。依次求气体 mol 数、气体质量、气体体积、消耗 NaOH 溶液体积以及生成碳酸钠质量。",
+  "answer": "(1) 0.00546130664 mol CO₂；(2) 0.240352105 g CO₂；(3) 0.133613072 L CO₂ (298.15 K, 101.325 kPa)；(4) 54.6130664 mL 0.2000 M NaOH；(5) 0.578843891 g Na₂CO₃。",
+  "explanation": "步骤一｜读题建模：研究对象 SrCO₃，原创实验情境 carbonate_gas_capture。核对模型限定、分析体积、温度、化学计量和单位，参数 a=1.353，b=0.5959。\n\n步骤二｜建立真正依赖的计算链：第1步：碳酸盐净质量 m=样品质量×纯度=1.353×0.5959 g，由 n=m/M(SrCO₃) 得 CO₂ mol 数；第2步：用 M(CO₂)=44.01 g/mol 换算质量；第3步：用 PV=nRT 求 298.15K 的气体体积；第4步：按每mol CO₂消耗2mol NaOH，用 V=nNaOH/0.2000 换算为 mL；第5步：由 CO₂ 与 Na₂CO₃ 的 1:1 计量求盐质量。\n\n步骤三｜带单位给出各阶段结果：(1) 0.00546130664 mol CO₂；(2) 0.240352105 g CO₂；(3) 0.133613072 L CO₂ (298.15 K, 101.325 kPa)；(4) 54.6130664 mL 0.2000 M NaOH；(5) 0.578843891 g Na₂CO₃。\n\n步骤四｜检查每一级计算的独立关系：残差1=0.00000000；残差2=0.00000000；残差3=1.58819454e-16；残差4=1.58819454e-16；残差5=1.58819454e-16。残差只保证题设模型内的代数一致，不证明现实实验误差与化学模型的全部正确性。",
+  "solution_steps": [
+    "步骤一｜读题建模：研究对象 SrCO₃，原创实验情境 carbonate_gas_capture。核对模型限定、分析体积、温度、化学计量和单位，参数 a=1.353，b=0.5959。",
+    "步骤二｜建立真正依赖的计算链：第1步：碳酸盐净质量 m=样品质量×纯度=1.353×0.5959 g，由 n=m/M(SrCO₃) 得 CO₂ mol 数；第2步：用 M(CO₂)=44.01 g/mol 换算质量；第3步：用 PV=nRT 求 298.15K 的气体体积；第4步：按每mol CO₂消耗2mol NaOH，用 V=nNaOH/0.2000 换算为 mL；第5步：由 CO₂ 与 Na₂CO₃ 的 1:1 计量求盐质量。",
+    "步骤三｜带单位给出各阶段结果：(1) 0.00546130664 mol CO₂；(2) 0.240352105 g CO₂；(3) 0.133613072 L CO₂ (298.15 K, 101.325 kPa)；(4) 54.6130664 mL 0.2000 M NaOH；(5) 0.578843891 g Na₂CO₃。",
+    "步骤四｜检查每一级计算的独立关系：残差1=0.00000000；残差2=0.00000000；残差3=1.58819454e-16；残差4=1.58819454e-16；残差5=1.58819454e-16。残差只保证题设模型内的代数一致，不证明现实实验误差与化学模型的全部正确性。"
+  ],
+  "numeric_answers": [
+    0.005461306644990855,
+    0.24035210544604751,
+    0.1336130717805556,
+    54.61306644990855,
+    0.5788438913025807
+  ],
+  "numeric_answer_units": [
+    "mol CO₂",
+    "g CO₂",
+    "L CO₂ (298.15 K, 101.325 kPa)",
+    "mL 0.2000 M NaOH",
+    "g Na₂CO₃"
+  ],
+  "units": [
+    "mol CO₂",
+    "g CO₂",
+    "L CO₂ (298.15 K, 101.325 kPa)",
+    "mL 0.2000 M NaOH",
+    "g Na₂CO₃"
+  ],
+  "independent_inverse_residuals": [
+    0,
+    0,
+    1.588194537261432e-16,
+    1.588194537261432e-16,
+    1.588194537261432e-16
+  ],
+  "independent_inverse_count": 5,
+  "model_conditions": {
+    "temperature_K": 298.15,
+    "pressure_kPa": 101.325,
+    "hydroxide_M": 0.2,
+    "gas_collection_fraction": 1
+  },
+  "generation_note": "4 distinct chained method archetypes, 32 chemical systems (8 per subject), each has 1024 parameter cases; not 32768 independent knowledge topics.",
+  "requires_human_chemistry_review": true,
+  "human_expert_reviewed": false,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-coupled-32768.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_dependent_multistage_science_chain",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original parametric chemical system with sequentially dependent equations; not an upstream exam or published textbook transcription."
+  }
+}

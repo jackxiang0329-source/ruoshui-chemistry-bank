@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "60d72dedafa7dfde71df73c18d4d7a228eacca5976c1db3ecc2e9ab4e3f7a196",
+  "subject": "physical",
+  "topic": "ideal_gas_transport_energy_ideal_gas_Ne_case0925",
+  "topic_family": "ideal_gas_Ne",
+  "parameter_case": 925,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_coupled_multistage_dependency",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "independent_method_archetype": "gas_mass_partial_pressure_rms_kinetic_energy",
+  "question": "某非反应性理想混合气体模型中，气体 Ne 质量为 0.4772 g，摩尔质量 M=20.18 g/mol，温度为 341.2 K，体积10.00L，另含惰性 Ar 0.1000mol；两气体不反应，混合均匀，忽略非理想性。取 R=8.314462618 L·kPa/(mol·K)=8.314462618 J/(mol·K)，速度模型中气体摩尔质量必须换为kg/mol。先由质量求样品气体mol数，再计算气体分压、混合总压、该气体的均方根速率、样品气体整体平移平均动能以及它在混合气体中的摩尔分数。",
+  "answer": "(1) 0.0236471754 mol sample gas；(2) 6.70845453 kPa gas partial pressure；(3) 35.0774010 kPa total pressure；(4) 649.414005 m/s v_rms；(5) 100.626818 J translational energy；(6) 0.191247195 mole fraction of sample gas。",
+  "explanation": "步骤一｜读题建模：研究对象 Ne，原创实验情境 ideal_gas_transport_energy。核对模型限定、分析体积、温度、化学计量和单位，参数 a=0.4772，b=341.2。\n\n步骤二｜建立真正依赖的计算链：第1步：n=m/M=0.4772/20.18 mol；第2步：分压 p=nRT/V，总压 P=(n+0.1000)RT/V；第3步：由 Maxwell 理想气体均方根速率 v_rms=√(3RT/M_kg)，注意M单位转换；第4步：样品整体平移平均动能 E=3nRT/2；第5步：样品气体摩尔分数 x=n/(n+0.1000)，须满足 p=xP。\n\n步骤三｜带单位给出各阶段结果：(1) 0.0236471754 mol sample gas；(2) 6.70845453 kPa gas partial pressure；(3) 35.0774010 kPa total pressure；(4) 649.414005 m/s v_rms；(5) 100.626818 J translational energy；(6) 0.191247195 mole fraction of sample gas。\n\n步骤四｜检查每一级计算的独立关系：残差1=0.00000000；残差2=0.00000000；残差3=0.00000000；残差4=1.66598531e-16；残差5=0.00000000；残差6=0.00000000。残差只保证题设模型内的代数一致，不证明现实实验误差与化学模型的全部正确性。",
+  "solution_steps": [
+    "步骤一｜读题建模：研究对象 Ne，原创实验情境 ideal_gas_transport_energy。核对模型限定、分析体积、温度、化学计量和单位，参数 a=0.4772，b=341.2。",
+    "步骤二｜建立真正依赖的计算链：第1步：n=m/M=0.4772/20.18 mol；第2步：分压 p=nRT/V，总压 P=(n+0.1000)RT/V；第3步：由 Maxwell 理想气体均方根速率 v_rms=√(3RT/M_kg)，注意M单位转换；第4步：样品整体平移平均动能 E=3nRT/2；第5步：样品气体摩尔分数 x=n/(n+0.1000)，须满足 p=xP。",
+    "步骤三｜带单位给出各阶段结果：(1) 0.0236471754 mol sample gas；(2) 6.70845453 kPa gas partial pressure；(3) 35.0774010 kPa total pressure；(4) 649.414005 m/s v_rms；(5) 100.626818 J translational energy；(6) 0.191247195 mole fraction of sample gas。",
+    "步骤四｜检查每一级计算的独立关系：残差1=0.00000000；残差2=0.00000000；残差3=0.00000000；残差4=1.66598531e-16；残差5=0.00000000；残差6=0.00000000。残差只保证题设模型内的代数一致，不证明现实实验误差与化学模型的全部正确性。"
+  ],
+  "numeric_answers": [
+    0.02364717542120912,
+    6.708454532798987,
+    35.07740098541499,
+    649.4140049619148,
+    100.62681799198481,
+    0.19124719461365822
+  ],
+  "numeric_answer_units": [
+    "mol sample gas",
+    "kPa gas partial pressure",
+    "kPa total pressure",
+    "m/s v_rms",
+    "J translational energy",
+    "mole fraction of sample gas"
+  ],
+  "units": [
+    "mol sample gas",
+    "kPa gas partial pressure",
+    "kPa total pressure",
+    "m/s v_rms",
+    "J translational energy",
+    "mole fraction of sample gas"
+  ],
+  "independent_inverse_residuals": [
+    0,
+    0,
+    0,
+    1.6659853124504108e-16,
+    0,
+    0
+  ],
+  "independent_inverse_count": 6,
+  "model_conditions": {
+    "T_K": 341.2,
+    "V_L": 10,
+    "carrier_mol": 0.1
+  },
+  "generation_note": "4 distinct chained method archetypes, 32 chemical systems (8 per subject), each has 1024 parameter cases; not 32768 independent knowledge topics.",
+  "requires_human_chemistry_review": true,
+  "human_expert_reviewed": false,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-coupled-32768.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_dependent_multistage_science_chain",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original parametric chemical system with sequentially dependent equations; not an upstream exam or published textbook transcription."
+  }
+}

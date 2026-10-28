@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "c99a943cb8a0c5fd85bd4206bb686d6df71de4d798c5bc69b549f0fff5a05b86",
+  "subject": "analytical",
+  "topic": "metal_digest_edta_optical_metal_Mg²⁺_case0993",
+  "topic_family": "metal_Mg²⁺",
+  "parameter_case": 993,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_coupled_multistage_dependency",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "independent_method_archetype": "sample_aliquot_EDTA_and_ligand_absorbance",
+  "question": "某固体样品质量 0.05984 g，金属离子 Mg²⁺ 对应元素的质量分数为 0.7968，其余物质惰性且不会干扰分析；金属原子摩尔质量 24.305 g/mol。将其完全溶解、控制金属价态与配位环境并定容至 0.5000 L。取其中 100.0 mL 用 0.01000 mol/L EDTA 定量滴定，按金属:EDTA=1:1 且无竞争络合。对另一份同浓度试液加入足量显色配体，假设唯一显色络合物对每mol金属贡献一个发色单元、反应完全，其在指定测量波长的摩尔吸光系数经单独实测为 ε=400 L/(mol·cm)，光程为1.00cm，空白已扣除且处于线性范围。依次求原样金属物质的量、消解液浓度、EDTA 耗量和显色吸光度。",
+  "answer": "(1) 0.00196175733 mol metal in original sample；(2) 0.00392351467 mol/L metal in 0.5000 L digest；(3) 39.2351467 mL 0.01000 M EDTA；(4) 1.56940587 absorbance A。",
+  "explanation": "步骤一｜读题建模：研究对象 Mg²⁺，原创实验情境 metal_digest_edta_optical。核对模型限定、分析体积、温度、化学计量和单位，参数 a=0.05984，b=0.7968。\n\n步骤二｜建立真正依赖的计算链：第1步：原始金属质量 m=0.05984×0.7968 g，除以金属的摩尔质量得到 n；第2步：将 n 分配到0.5000L得分析浓度 c；第3步：100.0mL等分试样需要的 EDTA mol数为 c×0.1000，除以0.01000 mol/L并换为mL；第4步：另一份等浓度测量液完全显色，按 Beer–Lambert 式 A=εlc 计算。\n\n步骤三｜带单位给出各阶段结果：(1) 0.00196175733 mol metal in original sample；(2) 0.00392351467 mol/L metal in 0.5000 L digest；(3) 39.2351467 mL 0.01000 M EDTA；(4) 1.56940587 absorbance A。\n\n步骤四｜检查每一级计算的独立关系：残差1=0.00000000；残差2=0.00000000；残差3=0.00000000；残差4=0.00000000。残差只保证题设模型内的代数一致，不证明现实实验误差与化学模型的全部正确性。",
+  "solution_steps": [
+    "步骤一｜读题建模：研究对象 Mg²⁺，原创实验情境 metal_digest_edta_optical。核对模型限定、分析体积、温度、化学计量和单位，参数 a=0.05984，b=0.7968。",
+    "步骤二｜建立真正依赖的计算链：第1步：原始金属质量 m=0.05984×0.7968 g，除以金属的摩尔质量得到 n；第2步：将 n 分配到0.5000L得分析浓度 c；第3步：100.0mL等分试样需要的 EDTA mol数为 c×0.1000，除以0.01000 mol/L并换为mL；第4步：另一份等浓度测量液完全显色，按 Beer–Lambert 式 A=εlc 计算。",
+    "步骤三｜带单位给出各阶段结果：(1) 0.00196175733 mol metal in original sample；(2) 0.00392351467 mol/L metal in 0.5000 L digest；(3) 39.2351467 mL 0.01000 M EDTA；(4) 1.56940587 absorbance A。",
+    "步骤四｜检查每一级计算的独立关系：残差1=0.00000000；残差2=0.00000000；残差3=0.00000000；残差4=0.00000000。残差只保证题设模型内的代数一致，不证明现实实验误差与化学模型的全部正确性。"
+  ],
+  "numeric_answers": [
+    0.001961757333881917,
+    0.003923514667763834,
+    39.23514667763834,
+    1.5694058671055338
+  ],
+  "numeric_answer_units": [
+    "mol metal in original sample",
+    "mol/L metal in 0.5000 L digest",
+    "mL 0.01000 M EDTA",
+    "absorbance A"
+  ],
+  "units": [
+    "mol metal in original sample",
+    "mol/L metal in 0.5000 L digest",
+    "mL 0.01000 M EDTA",
+    "absorbance A"
+  ],
+  "independent_inverse_residuals": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "independent_inverse_count": 4,
+  "model_conditions": {
+    "digest_L": 0.5,
+    "aliquot_L": 0.1,
+    "edta_M": 0.01,
+    "molar_absorptivity": 400,
+    "cell_cm": 1
+  },
+  "generation_note": "4 distinct chained method archetypes, 32 chemical systems (8 per subject), each has 1024 parameter cases; not 32768 independent knowledge topics.",
+  "requires_human_chemistry_review": true,
+  "human_expert_reviewed": false,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-coupled-32768.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "original_dependent_multistage_science_chain",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Original parametric chemical system with sequentially dependent equations; not an upstream exam or published textbook transcription."
+  }
+}
