@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至9辑 (377题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至9辑 (394题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -6015,21 +6015,21 @@ HOx仅假想氧化态质子物种，Red不质子化，忽略活度效应。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \Needspace{7\baselineskip}
-\subsubsection*{UC-ADV9-I81 · XRD晶面应变对Bragg角与衍射峰位的精确和微分预测}
+\subsubsection*{UC-ADV9-I81 · 八面体金属的键价和BVS反演与局部配位畸变}
 \noindent\textbf{题目}\par
-一阶Bragg XRD测量，Cu Kα波长0.15406nm，未应变时晶面间距d=0.2140nm。晶体出现均匀法向拉伸应变ε=+0.002000，d'=(1+ε)d，波长不变。求原2θ、应变后的2θ、精确峰位移动量以及用一阶微分公式估算的峰位移动，说明2θ与θ差一个因子2且应变无量纲。\par
+某假想六配位金属中心有2根轴向M–O键长2.080Å及4根赤道M–O键长1.980Å。采用键价经验模型s\_i=exp[(R0−Ri)/B]，其中R0=1.750Å、B=0.3700Å，键价和BVS=Σs\_i。若金属形式氧化态为+III，求轴向/赤道单键键价、总BVS与偏离+3的量；如固定轴向键长不变、要求BVS恰等于3，反推赤道键长，解释键价只是一种局部经验判据。\par
 \medskip\noindent\textbf{分步解答}
 \begin{enumerate}
-\item 一阶Bragg式2d sinθ=λ，故θ=asin(λ/2d)。
-\item 初始2θ=42.19465253度。
-\item 应变后d'=d(1+ε)，精确2θ'=42.10642度。
-\item 精确移动Δ(2θ)=-0.0882325301度；拉伸增加d导致峰位向低角移动。
-\item 微分2d sinθ=λ，得到dθ=−tanθ dd/d；所以Δ(2θ)≈−2tanθε=-0.08842211812度。
-\item 微分近似与精确差为0.0001895880209度，ε小使一阶估计合理。
-\item 独立复核：将全部所求量逆代到题设的能量、守恒或跃迁公式；三项无量纲残差：0.00e+0、0.00e+0、0.00e+0。
+\item 将轴向Rax=2.080Å、赤道Req=1.980Å分别代入exp[(R0−R)/B]。
+\item 轴向单键键价sax=0.4098795709，赤道单键键价seq=0.5370728022。
+\item 两轴向四赤道键组成BVS=2sax+4seq=2.968050351。
+\item 与目标氧化态+III比较，键价偏差BVS−3=-0.03194964941。
+\item 固定轴向两键并令2sax+4exp[(R0−Req,new)/B]=3，解得Req,new=1.974537832Å。
+\item 只有(3−2sax)/4>0时存在实键长解；键价和偏离形式价可能反映应变、配位缺陷及经验参数局限。
+\item 独立将反推赤道键长代回BVS表达式，得到3.0000，且原结构六根键价之和恢复当前BVS。
 \end{enumerate}
 \noindent\textbf{答案摘要}\par
-答案1 = 42.1946525；答案2 = 42.10642；答案3 = -0.0882325301；答案4 = -0.0884221181\par
+答案1 = 2.96805035；答案2 = 0.409879571；答案3 = 0.537072802；答案4 = -0.0319496494；答案5 = 1.97453783\par
 \noindent\textbf{模型前提：}
 题设假想理想化模型有效，忽略未列相互作用；化学真实性、跨辑原创性及出版资格待审。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
@@ -6517,21 +6517,21 @@ ICP-MS用标准物质的同位素比Rtrue=I62/I60=0.4000校准，仪器测得Rme
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \Needspace{7\baselineskip}
-\subsubsection*{UC-ADV9-A81 · FTIR同位素位移与谐振近似振动零点能差}
+\subsubsection*{UC-ADV9-A81 · 相位调制荧光寿命的频域双观测反演}
 \noindent\textbf{题目}\par
-一假想CO键近似为同一谐力常数的双原子振子，12C16O基频2140cm\textasciicircum{}-1，同位素替换为13C16O后只改变约化质量。原子质量取整数amu（12、13、16），振动频率与约化质量负平方根成正比。求两种同位素约化质量、替代后的基频、两基频差及1mol CO的零点能变化kJ/mol；假设谐振且力常数保持不变。\par
+某均一荧光探针激发后遵循单指数衰减寿命τ=3.000ns，使用频率f=50.00MHz的正弦调制激发光。题设频域关系tanφ=ωτ、调制度M=1/√[1+(ωτ)²]、ω=2πf。求荧光滞后相位φ（度）、调制度M、分别由相位与调制度反算寿命的结果，并说明二者不一致时应优先检查多寿命组分或仪器相位响应。\par
 \medskip\noindent\textbf{分步解答}
 \begin{enumerate}
-\item 12C16O约化质量μ1=12×16/(12+16)=6.857142857amu。
-\item 13C16O约化质量μ2=13×16/(13+16)=7.172413793amu。
-\item 同力常数谐振给ν2=ν1sqrt(μ1/μ2)=2092.438506cm\textasciicircum{}-1。
-\item 频移ν1−ν2=47.56149407cm\textasciicircum{}-1；重同位素降低振动频率。
-\item 每分子零点能差1/2hc(ν1−ν2)，再乘阿伏伽德罗常数得差=0.2844809096kJ/mol。
-\item 真实振动存在非谐效应和电子结构的同位素微小改变，这里按题设忽略。
-\item 独立将数据代回迁移、保留、能量或响应公式，检查量纲与可逆解的数值残差：0.00e+0、0.00e+0、0.00e+0。
+\item 将50.00MHz换为50×10\textasciicircum{}6Hz，角频率ω=2πf=314159265.4rad/s。
+\item 无量纲相位参数x=ωτ=0.9424777961。
+\item 荧光相位滞后φ=atan(x)=43.30380731度。
+\item 按单指数调制度M=1/√(1+x²)=0.7277271834。
+\item 由相位反算寿命τphase=tanφ/ω=3.000000000ns。
+\item 由调制度反算τmod=√(1/M²−1)/ω=3.000000000ns。
+\item 两个反演均为3.000ns；实际存在多寿命组分、散射或仪器相位偏差时，两者可能给出不同的表观寿命。
 \end{enumerate}
 \noindent\textbf{答案摘要}\par
-答案1 = 6.85714286；答案2 = 7.17241379；答案3 = 2092.43851；答案4 = 47.5614941；答案5 = 0.28448091\par
+答案1 = 43.3038073；答案2 = 0.727727183；答案3 = 3；答案4 = 3\par
 \noindent\textbf{模型前提：}
 题设校准和理想分析模型有效，尚未通过真实仪器实验、跨辑模型原创或专家质量审核。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
@@ -7179,21 +7179,21 @@ ATR红外测量用晶体折射率n1=2.400、样品n2=1.400，真空波长λ=6.00
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \Needspace{7\baselineskip}
-\subsubsection*{UC-ADV9-O86 · 立体异构产物由初始动力学选择性趋向热平衡的量化}
+\subsubsection*{UC-ADV9-O86 · 有机光激发态四通道竞争与荧光—产物量子收率}
 \noindent\textbf{题目}\par
-一份有机反应在停止生产后留下A/B立体异构产物初始分数0.9000/0.1000。随后恒温条件下两异构体以A→B一级kAB=0.1000h\textasciicircum{}-1、B→A一级kBA=0.2000h\textasciicircum{}-1互变，物料总量保持1mol。求10.00h后A/B、最终热力学平衡A比例、初始与10h的A/B比和相对初始高选择性的减少量，并说明最终产物比例可能与原生成过渡态的动力学选择性无关。\par
+假想有机光反应底物吸收光子后形成同一种单线态S1，在该状态下发生四条彼此竞争的一级失活路径：荧光kf=2.000×10\textasciicircum{}8s\textasciicircum{}-1、系间窜越kISC=5.000×10\textasciicircum{}7s\textasciicircum{}-1、无辐射内转换kIC=1.000×10\textasciicircum{}8s\textasciicircum{}-1、生成目标光化学产物kp=5.000×10\textasciicircum{}7s\textasciicircum{}-1。忽略再激发与链反应，实际吸收光子0.0001000mol。求激发态寿命、荧光量子产率、目标产物量子产率、ISC产率和目标产品mol，解释发光强度不能直接等同于化学量子产率。\par
 \medskip\noindent\textbf{分步解答}
 \begin{enumerate}
-\item 定义A占比a，b=1−a，动力学da/dt=−kAB a+kBA(1−a)。
-\item 平衡A分数aeq=kBA/(kAB+kBA)=0.6666666667。
-\item 从a0=.9解a(t)=aeq+(a0−aeq)e\textasciicircum{}−(kAB+kBA)t。
-\item 10h后A分数=0.6782836493，B分数=0.3217163507。
-\item 起始A/B=9，10h比=2.108328183，因可逆互变趋于aeq/(1−aeq)。
-\item 高动力学初产比例在后续异构化中会衰减，因此须考虑取样与快速淬灭。
-\item 独立核验全部反应物账本、状态概率和动力学物理解残差：0.00e+0、1.39e-17、-3.64e-17。
+\item 四条相互竞争的一级失活总常数kΣ=kf+kISC+kIC+kp=400000000.0s\textasciicircum{}-1。
+\item 激发态寿命τ=1/kΣ=2.500000000ns。
+\item 荧光量子产率ΦF=kf/kΣ=0.5000000000。
+\item 目标产物量子产率ΦP=kp/kΣ=0.1250000000，ISC量子产率=0.1250000000。
+\item 剩余无辐射内转换分数kIC/kΣ=0.2500000000，四分数相加应为1。
+\item 从0.0001000mol已吸收光子产生的目标产品mol=nphoton ΦP=0.00001250000000。
+\item 荧光强度只表征发光路径，若非辐射与产物路径速率改变，荧光与化学收率不再严格同向。
 \end{enumerate}
 \noindent\textbf{答案摘要}\par
-答案1 = 0.678283649；答案2 = 0.321716351；答案3 = 0.666666667；答案4 = 2.10832818；答案5 = 0.221716351\par
+答案1 = 2.5；答案2 = 0.5；答案3 = 0.125；答案4 = 0.125；答案5 = 1.25e-05\par
 \noindent\textbf{模型前提：}
 仅假设题给真实物料与动力学机制；跨辑去重、实验真实性及人类专家核定尚待完成。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
@@ -7578,6 +7578,346 @@ ATR红外测量用晶体折射率n1=2.400、样品n2=1.400，真空波长λ=6.00
 答案1 = 19.8943679；答案2 = 42；答案3 = 38；答案4 = 0.904761905\par
 \noindent\textbf{模型前提：}
 题设热力学、理想或截断近似有效；实际实验及人工科学/新颖性审核尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P81 · 固液相界Clapeyron压强斜率与熔点变化方向}
+\noindent\textbf{题目}\par
+某假想纯物质在300.0K附近熔融焓ΔHfus=6.000kJ/mol，熔融摩尔体积变化ΔV=+1.000cm³/mol，视为小压力区间内恒定。Clapeyron式dT/dP=TΔV/ΔH。求熔融曲线斜率K/Pa、升高100.0MPa的一阶熔点变化以及压力增大时固液哪相相对有利；对比如果熔融ΔV改成负值的方向，并说明大压力范围不能用单一常斜率无条件外推。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 熔融体积变化1cm³/mol=1×10\textasciicircum{}-6m³/mol。
+\item 熔融焓6kJ/mol=6000J/mol。
+\item Clapeyron斜率dT/dP=TΔV/ΔH=5e-8K/Pa。
+\item 压力升高100MPa时一阶变化ΔT≈斜率×ΔP=5K。
+\item 正ΔV意味着增加压力偏好体积较小的固相，因此熔点升高。
+\item 若ΔV为负，则压力增大降低熔点，类似反常体积熔融材料；大压力时应积分温度依赖关系。
+\item 独立核对物理量单位、守恒方程及极限结果，计算残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 5e-08；答案2 = 5；答案3 = 0.05\par
+\noindent\textbf{模型前提：}
+题设理想热力学及连续介质或统计动力学假设成立，尚未经实际实验或专家出版审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P82 · 二元共存液相与固相的杠杆定则和元素账本}
+\noindent\textbf{题目}\par
+假想二元合金A/B在某温压下沿两相共存结线，富B液相的B摩尔分数xL=0.6500，A富固相α的B摩尔分数xα=0.1500，总体B摩尔分数x0=0.4000，样品总量2.000mol。求液相与固相摩尔分数、各相mol、各相含B的mol及将两相B摩尔数相加的整体物料核验；解释只有xα≤x0≤xL时两相比例才都非负。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 总体成分x0=(1−L)xα+LxL。
+\item 用杠杆定则求液相比例L=(x0−xα)/(xL−xα)=0.5。
+\item 固相α比例1−L=0.5。
+\item 两相物质的量分别nL=2L=1mol、nα=2(1−L)=1mol。
+\item 液相B量nLxL=0.65mol，固相B量nαxα=0.15mol。
+\item 两相B合计=0.8mol，应等于总样品B量2x0=0.8mol。
+\item 独立核对物理量单位、守恒方程及极限结果，计算残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.5；答案2 = 0.5；答案3 = 1；答案4 = 1；答案5 = 0.65；答案6 = 0.15\par
+\noindent\textbf{模型前提：}
+题设理想热力学及连续介质或统计动力学假设成立，尚未经实际实验或专家出版审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P83 · 复合圆柱壁径向导热与外壁对流串联热阻}
+\noindent\textbf{题目}\par
+一根假想圆筒内壁定温400.0K、外部环境300.0K，圆柱内半径r1=0.01000m、外半径r2=0.02000m、长度L=0.5000m，壁导热率k=0.5000W/(m K)，外壁对流系数h=10.00W/(m²K)，轴向端部散热忽略。求圆柱壁径向导热热阻、外侧对流热阻、总稳态热流率与外表面温度，并证明圆柱不能直接套平板面积常数的导热阻式。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 圆柱导热热阻Rcond=ln(r2/r1)/(2πkL)=0.4412712K/W。
+\item 外壁对流面积Aout=2πr2L，热阻Rconv=1/(hAout)=1.59154943K/W。
+\item 两热阻串联，总热量速率Q=(Ti−Ta)/(Rcond+Rconv)=49.1927317W。
+\item 外壁表面温度Ts=Ta+Q Rconv=378.292664K。
+\item 内壁到表面的导热温差Ti−Ts=Q Rcond；两段温降之和应等于100K。
+\item 圆柱截面积沿半径改变，导热阻必须积分得到对数因子。
+\item 独立核对物理量单位、守恒方程及极限结果，计算残差：0.00e+0、-2.84e-14、3.20e-14。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.4412712；答案2 = 1.59154943；答案3 = 49.1927317；答案4 = 378.292664\par
+\noindent\textbf{模型前提：}
+题设理想热力学及连续介质或统计动力学假设成立，尚未经实际实验或专家出版审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P84 · 旋转圆盘电极Levich对流扩散极限电流与转速规律}
+\noindent\textbf{题目}\par
+25℃一电子可逆反应在旋转圆盘电极RDE上处于理想对流扩散极限，Levich式iL=0.620 n F A D\textasciicircum{}(2/3) ν\textasciicircum{}(−1/6) ω\textasciicircum{}(1/2) C。给定n=1、F=96485.33212C/mol、A=0.1000cm²、D=1.000×10\textasciicircum{}-5cm²/s、溶液运动黏度ν=0.01000cm²/s、ω=100.0rad/s、C=1.000mmol/L。求极限电流、ω翻倍后的电流与提高倍数，并说明为什么浓度必须从mmol/L转为mol/cm³。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 换算浓度1mM=1×10\textasciicircum{}-6mol/cm³，其他Levich参数都用题给cm单位。
+\item 常数项coef=0.620 n F A D\textasciicircum{}(2/3)ν\textasciicircum{}(−1/6)C=0.00000598209059A·s\textasciicircum{}1/2。
+\item 在ω=100rad/s，极限电流I=coef√ω=0.0000598209059A。
+\item 转速翻倍到200rad/s，I2=0.0000845995365A。
+\item 两电流比I2/I=√2=1.41421356。
+\item RDE需要层流定态流场和扩散控制，若有吸附或电极反应限速，电流不再纯√ω。
+\item 独立核对物理量单位、守恒方程及极限结果，计算残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 5.98209059e-05；答案2 = 8.45995365e-05；答案3 = 1.41421356；答案4 = 5.98209059e-06\par
+\noindent\textbf{模型前提：}
+题设理想热力学及连续介质或统计动力学假设成立，尚未经实际实验或专家出版审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P85 · 理想CSTR示踪停留时间分布与尾概率}
+\noindent\textbf{题目}\par
+向完全混合恒容流动釜瞬间注入惰性示踪脉冲，假设理想CSTR停留时间分布E(t)=τ\textasciicircum{}-1 exp(−t/τ)，平均停留时间τ=5.000min。求t=10.00min的出口RTD密度E(t)、累计已有示踪流出分数F(t)、仍未流出的尾概率、RTD方差及t=2τ处E和F的边界关系，指出平均停留时间不能直接代表所有流体颗粒同一停留时间。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 理想CSTR脉冲RTD是指数分布，归一化积分∫0∞E(t)dt=1。
+\item 在t=10min，E(t)=e\textasciicircum{}−2/τ=0.0270670566min\textasciicircum{}-1。
+\item 累计分布F(t)=1−e\textasciicircum{}−2=0.864664717。
+\item 剩余尾概率1−F=e\textasciicircum{}−2=0.135335283。
+\item 指数分布均值τ=5min，方差τ²=25min²。
+\item 与理想PFR的定长停留时间不同，CSTR混合使示踪存在长尾。
+\item 独立核对物理量单位、守恒方程及极限结果，计算残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0270670566；答案2 = 0.864664717；答案3 = 0.135335283；答案4 = 25\par
+\noindent\textbf{模型前提：}
+题设理想热力学及连续介质或统计动力学假设成立，尚未经实际实验或专家出版审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P86 · 二级反应PFR出口浓度与二分子生成产物计量}
+\noindent\textbf{题目}\par
+一台等温恒密度活塞流反应器PFR进行2A→P，题设沿流体停留时间的一致微分式−d[A]/dt=k[A]²，k=2.000L mol\textasciicircum{}-1min\textasciicircum{}-1，进料[A]0=0.1000M、[P]0=0、停留时间τ=5.000min。求出口A浓度、A转化率、P生成浓度与出口A消耗速率，并证明不能从底物损失量直接把P按1:1计算，因为化学计量是2A→P。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 按题定消耗速率方程分离变量dA/A²=−k dt。
+\item 积分得到1/Aout−1/Ain=kτ。
+\item 出口A浓度Aout=A0/(1+kA0τ)=0.05M。
+\item 转化率X=(A0−Aout)/A0=0.5。
+\item 化学计量每生成一mol P要消耗2mol A，所以P=(A0−Aout)/2=0.025M。
+\item 出口A消耗率−dA/dt=kAout²=0.005M/min，恒密度且无其它副反应是积分前提。
+\item 独立核对物理量单位、守恒方程及极限结果，计算残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.05；答案2 = 0.5；答案3 = 0.025；答案4 = 0.005\par
+\noindent\textbf{模型前提：}
+题设理想热力学及连续介质或统计动力学假设成立，尚未经实际实验或专家出版审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P87 · Einstein三维谐振子的热容与零点能共存}
+\noindent\textbf{题目}\par
+某假想晶体每mol原子有三个独立且等频的量子谐振模式，Einstein特征温度θE=300.0K，测量温度T=300.0K，模型C\_V=3R(θE/T)² e\textasciicircum{}(θE/T)/[e\textasciicircum{}(θE/T)−1]²；平均内能U=3RθE[1/2+1/(e\textasciicircum{}(θE/T)−1)]。求该温度的定容热容、平均振动内能、与经典高温极限3R的热容比及低温极限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 先求无量纲x=θE/T=1。
+\item 按模型代入热容C\_V=22.9647185J/(mol K)。
+\item 每mol平均振动内能含零点能U=8096.44939J/mol。
+\item 高温经典极限C\_V→3R=24.9433879J/(mol K)。
+\item 当前与高温极限的比C\_V/(3R)=0.920673594。
+\item 当T≪θE时热容指数衰减，但零点振动能3RθE/2仍存在，不能等同于热容。
+\item 独立核对物理量单位、守恒方程及极限结果，计算残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 22.9647185；答案2 = 8096.44939；答案3 = 0.920673594；答案4 = 24.9433879\par
+\noindent\textbf{模型前提：}
+题设理想热力学及连续介质或统计动力学假设成立，尚未经实际实验或专家出版审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P88 · 胶体沉降、Brownian扩散与重力长度的双方式核对}
+\noindent\textbf{题目}\par
+水中理想球形胶体半径r=50.00nm，颗粒与水密度差Δρ=2000kg/m³，溶剂黏度η=1.000×10\textasciicircum{}-3Pa·s，T=298.15K，重力加速度9.810m/s²。使用Stokes沉降速度v=2Δρgr²/(9η)、Stokes–Einstein扩散D=kBT/(6πηr)与重力长度ℓ=kBT/(Δρg(4πr³/3))。求v、D、ℓ以及验证漂移比v/D=1/ℓ，说明重力沉降与Brownian扩散的竞争。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 球形体积V=4πr³/3=5.23598776e-22m³。
+\item 按Stokes沉降式v=1.09e-8m/s。
+\item Brownian扩散D=kBT/(6πηr)=4.36764135e-12m²/s。
+\item 重力长度ℓ=kBT/(ΔρgV)=0.000400701041m。
+\item 两种独立输运方式满足v/D=1/ℓ=2495.62616m\textasciicircum{}-1。
+\item 真实纳米颗粒会受电双层、非球形、聚集等影响，理想球和低Re假设是题目边界。
+\item 独立核对物理量单位、守恒方程及极限结果，计算残差：0.00e+0、7.52e-37、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1.09e-08；答案2 = 4.36764135e-12；答案3 = 0.000400701041；答案4 = 2495.62616\par
+\noindent\textbf{模型前提：}
+题设理想热力学及连续介质或统计动力学假设成立，尚未经实际实验或专家出版审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P89 · Langevin速度自相关Green–Kubo积分和Einstein迁移率}
+\noindent\textbf{题目}\par
+理想受热噪声驱动的微粒质量m=1.000×10\textasciicircum{}-18kg，在300K下的一维速度自相关函数〈vx(0)vx(t)〉=(kBT/m)exp(−t/τ)，相关时间τ=2.000ns。按Green–Kubo关系D=∫0∞〈vx(0)vx(t)〉dt求一维对应的各向同性扩散系数、等效线性摩擦系数ζ=m/τ、外力漂移迁移率μ=1/ζ及热均方根速度，验证D=μkBT。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 积分指数相关函数∫0∞exp(−t/τ)dt=τ。
+\item 因此D=(kBT/m)τ=8.283894e-12m²/s。
+\item 摩擦系数ζ=m/τ=5e-10kg/s。
+\item 外力漂移迁移率μ=1/ζ=2000000000m/(N s)。
+\item 一维热速度标准差vrms=√(kBT/m)=0.0643579599m/s。
+\item Einstein关系D=μkBT必须等价；本题只给一维自相关，三维各向同性时任一分量积分均对应同一D。
+\item 独立核对物理量单位、守恒方程及极限结果，计算残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 8.283894e-12；答案2 = 5e-10；答案3 = 2e+09；答案4 = 0.0643579599\par
+\noindent\textbf{模型前提：}
+题设理想热力学及连续介质或统计动力学假设成立，尚未经实际实验或专家出版审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P90 · 非等温TGA Kissinger双峰温度反演活化能}
+\noindent\textbf{题目}\par
+某固态化学热分解在程序升温下满足Kissinger近似ln(β/Tp²)=−Ea/(RTp)+C。实验加热速率β1=10.00K/min的峰温Tp1=400.0K、β2=20.00K/min时Tp2=410.0K，假设同一基元机理、峰温可比且Ea为常数。求活化能Ea(kJ/mol)、Kissinger直线斜率及当峰温Tp3=420.0K时预测升温速率β3，说明单位一致与机理变化对结果的影响。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Kissinger横轴x=1/Tp、纵轴y=ln(β/Tp²)。
+\item 两点给出直线斜率m=(y2−y1)/(x2−x1)=-10557.69607K。
+\item Ea=−Rm=87.78156929kJ/mol。
+\item 固定截距C，第三点满足β3/T3²=(β1/T1²)exp[−Ea/R(1/T3−1/T1)]。
+\item 解得β3=38.74625093K/min。
+\item 只有反应峰为同一动力学机制且所取β单位一致时，双点反演Ea才有意义；实际应多速率检验线性。
+\item 独立回代热力学、浓度或能量平衡，数值残差：0.00e+0、0.00e+0、6.66e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 87.7815693；答案2 = -10557.6961；答案3 = 38.7462509\par
+\noindent\textbf{模型前提：}
+采用题定理想、低阶近似与恒定参数；尚未得到专家科学、版权与模型原创性审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P91 · 高分子渗透压法的数均质量与第二维里修正}
+\noindent\textbf{题目}\par
+298.15K某假想聚合物溶液质量浓度10.00g/L、数均摩尔质量Mn=5.000×10\textasciicircum{}4g/mol。题设渗透压模型π=RT(c+B2c²)，其中c为mol/m³、第二渗透维里系数B2=0.5000m³/mol，R=8.314462618J/(mol K)。求溶质链数浓度、理想van't Hoff渗透压、加二阶修正的渗透压、非理想偏差百分比及若错把质量浓度g/L当mol/L时的单位问题。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 质量浓度10g/L=10kg/m³，Mn=50000g/mol=50kg/mol。
+\item 链的摩尔浓度c=10/50=0.2mol/m³。
+\item 理想渗透压πideal=RTc=495.7914059Pa。
+\item 含第二维里修正π=RT(c+B2c²)=545.3705465Pa。
+\item 非理想相对偏差(π−πideal)/πideal=0.1。
+\item 若大分子间相互作用更强，高阶维里项不可忽略；Mn是按链条数量平均而不是单体式量。
+\item 独立回代热力学、浓度或能量平衡，数值残差：0.00e+0、0.00e+0、8.33e-17。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.2；答案2 = 495.791406；答案3 = 545.370547；答案4 = 0.1\par
+\noindent\textbf{模型前提：}
+采用题定理想、低阶近似与恒定参数；尚未得到专家科学、版权与模型原创性审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P92 · Soret热扩散平衡中热端与冷端浓度比反演}
+\noindent\textbf{题目}\par
+假想中性溶质在一维温度梯度下达到零净物质通量，Soret系数ST=0.02000K\textasciicircum{}-1且在300到310K间不变，题给零通量关系dlnc/dT=−ST。冷端Tc=300.0K的自由溶质浓度cc=0.01000M，热端Th=310.0K。求热/冷浓度比、热端浓度、两端浓度差及如果两端温差翻倍到20K时的热/冷比，解释这不是普通等温Fick定律。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对题给dlnc/dT=−ST沿温度从Tc积分至Th。
+\item 得到ln(ch/cc)=−ST(Th−Tc)=-0.2。
+\item 热/冷浓度比=0.8187307531。
+\item 热端浓度ch=cc×ratio=0.008187307531M，差ch−cc=-0.001812692469M。
+\item 温差增大至20K时比值exp(−0.02×20)=0.670320046。
+\item 零总通量包含浓度梯度与温度梯度的热扩散项，不能把浓度差当作纯Fick扩散稳态。
+\item 独立回代热力学、浓度或能量平衡，数值残差：-2.78e-17、1.11e-16、6.51e-19。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.818730753；答案2 = 0.00818730753；答案3 = -0.00181269247；答案4 = 0.670320046\par
+\noindent\textbf{模型前提：}
+采用题定理想、低阶近似与恒定参数；尚未得到专家科学、版权与模型原创性审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P93 · Freundlich非均匀吸附等温式与微分吸附容量}
+\noindent\textbf{题目}\par
+假想异质表面吸附在某分压范围服从Freundlich经验模型q=K p\textasciicircum{}m，其中m=0.5000、K=2.000mmol/(g·bar\textasciicircum{}0.5)、p以bar计。给定两条件p1=0.1000bar与p2=0.4000bar，求各自吸附量、增加分压后吸附量比、p2处微分吸附容量dq/dp及如果错误按线性Henry律预测增量的偏差，说明Freundlich模型不能无限延伸到高压而不出现饱和。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 经验吸附量q1=K p1\textasciicircum{}0.5=0.632455532mmol/g。
+\item q2=K p2\textasciicircum{}0.5=1.264911064mmol/g。
+\item 两者比q2/q1=(p2/p1)\textasciicircum{}0.5=2，小于按线性Henry律得4倍。
+\item 微分吸附容量dq/dp=mK p\textasciicircum{}(m−1)，在p2处=1.58113883mmol/(g bar)。
+\item 线性Henry律若按p1的q1/p1斜率外推p2，会得到qwrong=q1 p2/p1=2.529822128mmol/g。
+\item Freundlich没有显式饱和容量，不能描述无限高压，多层或孔填充时需要不同模型。
+\item 独立回代热力学、浓度或能量平衡，数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.632455532；答案2 = 1.26491106；答案3 = 2；答案4 = 1.58113883\par
+\noindent\textbf{模型前提：}
+采用题定理想、低阶近似与恒定参数；尚未得到专家科学、版权与模型原创性审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P94 · 毛细上升Jurin公式与Laplace压差的静水一致性}
+\noindent\textbf{题目}\par
+假想水在圆柱形洁净玻璃细管中上升，液面表面张力γ=0.07200N/m、接触角θ=30.00°、水密度ρ=1000kg/m³、重力加速度g=9.810m/s²，毛细管内半径r=0.2500mm。按Jurin关系h=2γcosθ/(ρgr)计算上升高度，同时按Laplace压差ΔP=2γcosθ/r单独计算压差并校验ρgh=ΔP，解释为什么接触角大于90°将导致液面下降。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由接触角计算cos30°=0.8660254038。
+\item 毛细压差ΔP=2γcosθ/r=498.8306326Pa。
+\item 静水平衡ρgh=ΔP，得上升高度h=0.05084919802m。
+\item 换算为厘米h=5.084919802cm。
+\item 独立检查ρgh−ΔP=0。
+\item 若θ>90°，cosθ<0，Jurin结果为负，代表相对于外液面的毛细下降而不是上升。
+\item 独立回代热力学、浓度或能量平衡，数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 498.830633；答案2 = 0.050849198；答案3 = 5.0849198\par
+\noindent\textbf{模型前提：}
+采用题定理想、低阶近似与恒定参数；尚未得到专家科学、版权与模型原创性审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P95 · 非绝热量热池恒功率加热与环境热漏的动态逆核算}
+\noindent\textbf{题目}\par
+假想单热容量热池的等效热容C=100.0J/K，受恒功率P=10.00W加热，向恒温环境的线性热漏为h(T−Ta)，传热系数h=2.000W/K，初态T=Ta。求30.00s后的温升、稳态温升、时间常数τ=C/h、输入总热量与已储存/已散失热量，证明只把输入功率乘时间再除C会高估温升。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 能量衡算C dΔT/dt=P−hΔT。
+\item 一阶线性方程解ΔT(t)=(P/h)[1−exp(−ht/C)]。
+\item 时间常数τ=C/h=50s，稳态温升P/h=5K。
+\item 30s时温升ΔT=2.25594182K。
+\item 输入热Qin=Pt=300J，储存Qstored=CΔT=225.594182J。
+\item 累计热漏Qleak=Qin−Qstored=74.40581805J；两项和等于输入，绝热估计ΔT=Pt/C会过大。
+\item 独立回代热力学、浓度或能量平衡，数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 50；答案2 = 2.25594182；答案3 = 5；答案4 = 300；答案5 = 225.594182；答案6 = 74.405818\par
+\noindent\textbf{模型前提：}
+采用题定理想、低阶近似与恒定参数；尚未得到专家科学、版权与模型原创性审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P96 · 过热压缩液绝热节流闪蒸的显热与汽化潜热平衡}
+\noindent\textbf{题目}\par
+一份高压单组分液体初温400.0K、总量1.000mol，节流至低压后在该压力饱和温度Tsat=350.0K形成液汽两相，假设节流近似绝热且两相末温350K。进料相对末态饱和液的摩尔显热Cp,l(Tfeed−Tsat)，Cp,l=100.0J/(mol K)，末态汽化潜热ΔHvap=30.00kJ/mol，忽略压缩液压力焓和动能变化。求末态汽化摩尔分数、气/液mol及能量释放与汽化吸收热量，必须检查β在0到1内。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 进料相对350K饱和液多出的摩尔显热Cp(Tfeed−Tsat)=5000J/mol。
+\item 末态气化每mol需要ΔHvap=30000J。
+\item 绝热能量式CpΔT=βΔHvap，故汽化分数β=0.1666666667。
+\item 总量1mol，因此汽相=0.1666666667mol、液相=0.8333333333mol。
+\item 汽化吸收热βΔHvap=5000J，正好等于进料冷却所释放的显热。
+\item 如果β>1，必须采用全汽相的过热蒸气状态而不能强行维持两相350K。
+\item 独立回代热力学、浓度或能量平衡，数值残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.166666667；答案2 = 0.166666667；答案3 = 0.833333333；答案4 = 5000\par
+\noindent\textbf{模型前提：}
+采用题定理想、低阶近似与恒定参数；尚未得到专家科学、版权与模型原创性审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P97 · 电池电动势温度系数对应反应熵与焓的热力学循环}
+\noindent\textbf{题目}\par
+某理想可逆电化学电池在298.15K的可逆电动势E=1.100V，化学计量反应每mol转移n=2mol电子，恒压条件下测得(∂E/∂T)P=−0.3000mV/K且在附近恒定。利用ΔG=−nFE、ΔS=nF(∂E/∂T)P、ΔH=ΔG+TΔS求每mol反应Gibbs自由能、熵变、焓变与可逆交换热qrev=TΔS，并解释电池输出电功与反应总焓变化不同。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 摩尔Gibbs反应能ΔG=−nFE=-212.2677307kJ/mol。
+\item 电动势温度系数−0.3000mV/K=−0.0003000V/K。
+\item 反应熵ΔS=nF(∂E/∂T)=-57.89119927J/(mol K)。
+\item 反应焓ΔH=ΔG+TΔS=-229.5279917kJ/mol。
+\item 可逆条件下系统交换热qrev=TΔS=-17.26026106kJ/mol，负号表示按本符号约定系统释放热。
+\item 电功对应−ΔG而总焓差还包含TΔS；若过程不可逆，会另出现熵产生热。
+\item 独立回代热力学、浓度或能量平衡，数值残差：-1.09e-11、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = -212.267731；答案2 = -57.8911993；答案3 = -229.527992；答案4 = -17.2602611\par
+\noindent\textbf{模型前提：}
+采用题定理想、低阶近似与恒定参数；尚未得到专家科学、版权与模型原创性审查。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
