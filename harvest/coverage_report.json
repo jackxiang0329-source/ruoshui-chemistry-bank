@@ -5,11 +5,18 @@
   "prior_main_candidate_records": 97628,
   "retained_first_series_candidate_json": 12,
   "retained_second_series_jsonl_items": 12,
-  "active_advanced_problems": 36,
+  "active_advanced_problems": 86,
   "old_training_batch_removed": 200,
   "expert_approved": 0,
   "official_exam_ready": 0,
   "automatic_legacy_import_disabled": true,
   "precleanup_archive_branch": "archive/pre-advanced-only-cleanup-2026-10-28",
-  "retained_third_series_jsonl_items": 12
+  "retained_third_series_jsonl_items": 12,
+  "retained_fourth_series_jsonl_items": 50,
+  "retained_fourth_series_subject_counts": {
+    "inorganic": 13,
+    "analytical": 13,
+    "organic": 12,
+    "physical": 12
+  }
 }
