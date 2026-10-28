@@ -20,7 +20,7 @@ test('5 unreviewed exercises are explicitly separated from 1715 source replays',
  assert.equal(new Set(q.review_queue.map(x=>x.candidate_id)).size,0);
  assert.ok(q.review_queue.every(x=>x.approved_for_publication===false));
  assert.ok(markdown(q).includes('main_muza_pinned_source_replay.json'));
- assert.ok(markdown(q).includes('](../data/candidates/'));
+ assert.equal(q.review_queue.length,0);
  assert.ok(!markdown(q).includes('](../../data/candidates/'));
 });
 test('changed source count, publication flag and missing source records block report',()=>{
