@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "7196b2cc2bfb7c1aad1c345c1ec645eab0afb394eab6236a1a2730909abad465",
+  "subject": "physical",
+  "topic": "carnot_efficiency_work_cold_heat_set197",
+  "topic_family": "carnot_efficiency_work_cold_heat",
+  "parameter_case": 197,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_three_linked_outputs_quantitative",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "原创三目标综合计算题 · physical · carnot_efficiency_work_cold_heat（第 197 组条件）。\n理想可逆 Carnot 热机从温度 Th=539.2K 的热源每循环吸取 Qh=1000.0J，与温度 Tc=295.68K 的冷源交换热（Th>Tc）。求最大效率、对外净输出功与向冷源排热的正幅值。",
+  "answer": "(1) 0.451632047 thermal efficiency η；(2) 451.632047 J net work；(3) 548.367953 J cold heat rejected。",
+  "explanation": "第一步｜明确条件与模型：carnot_efficiency_work_cold_heat。题设参数 a=539.2、b=295.68；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：thermal efficiency η、J net work、J cold heat rejected，不可省略前提。\n\n第二步｜建立关系并联立求解：可逆热机效率 η=1−Tc/Th；输出功 W=ηQh；能量守恒 Qc=Qh−W，等价于 Qc/Qh=Tc/Th。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。\n\n第三步｜三个结果与复核：结果1 = 0.451632047 thermal efficiency η；结果2 = 451.632047 J net work；结果3 = 548.367953 J cold heat rejected。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。",
+  "solution_steps": [
+    "第一步｜明确条件与模型：carnot_efficiency_work_cold_heat。题设参数 a=539.2、b=295.68；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：thermal efficiency η、J net work、J cold heat rejected，不可省略前提。",
+    "第二步｜建立关系并联立求解：可逆热机效率 η=1−Tc/Th；输出功 W=ηQh；能量守恒 Qc=Qh−W，等价于 Qc/Qh=Tc/Th。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。",
+    "第三步｜三个结果与复核：结果1 = 0.451632047 thermal efficiency η；结果2 = 451.632047 J net work；结果3 = 548.367953 J cold heat rejected。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。"
+  ],
+  "numeric_answers": [
+    0.4516320474777449,
+    451.6320474777449,
+    548.3679525222551
+  ],
+  "numeric_answer_units": [
+    "thermal efficiency η",
+    "J net work",
+    "J cold heat rejected"
+  ],
+  "units": [
+    "thermal efficiency η",
+    "J net work",
+    "J cold heat rejected"
+  ],
+  "numerical_witnesses": [
+    0,
+    0,
+    0
+  ],
+  "independent_inverse_checks": 3,
+  "original_template_count_note": "48 authored three-target templates, each with 256 numeric variants; not 12,288 independent chemical concepts.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chains-12288.mjs",
+    "source_template": "scripts/advanced-chain/physical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_linked_three_target_science_model",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently written Chinese exercises, not copied textbook or exam questions; original 3-stage model."
+  }
+}

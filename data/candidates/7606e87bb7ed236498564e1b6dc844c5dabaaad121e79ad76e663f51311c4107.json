@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "7606e87bb7ed236498564e1b6dc844c5dabaaad121e79ad76e663f51311c4107",
+  "subject": "organic",
+  "topic": "tripeptide_condensation_product_water_mass_set073",
+  "topic_family": "tripeptide_condensation_product_water_mass",
+  "parameter_case": 73,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_three_linked_outputs_quantitative",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "原创三目标综合计算题 · organic · tripeptide_condensation_product_water_mass（第 73 组条件）。\n假想三肽由每残基平均单体摩尔质量 102.88g/mol 的三种氨基酸经两条肽键理想缩合得到，产物三肽 0.0138mol。M(水)=18.015g/mol，无侧链反应与损失。分别求三肽质量、理论脱水质量及参与缩合的全部氨基酸初始质量。",
+  "answer": "(1) 3.76201800 g tripeptide；(2) 0.497214000 g water released；(3) 4.25923200 g initial amino acid units。",
+  "explanation": "第一步｜明确条件与模型：tripeptide_condensation_product_water_mass。题设参数 a=0.0138、b=102.88；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：g tripeptide、g water released、g initial amino acid units，不可省略前提。\n\n第二步｜建立关系并联立求解：三肽分子摩尔质量为3M单体−2M水；每mol三肽净排出2mol水，产物质量+放出水质量应等于三种初始氨基酸总质量3ab。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。\n\n第三步｜三个结果与复核：结果1 = 3.76201800 g tripeptide；结果2 = 0.497214000 g water released；结果3 = 4.25923200 g initial amino acid units。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。",
+  "solution_steps": [
+    "第一步｜明确条件与模型：tripeptide_condensation_product_water_mass。题设参数 a=0.0138、b=102.88；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：g tripeptide、g water released、g initial amino acid units，不可省略前提。",
+    "第二步｜建立关系并联立求解：三肽分子摩尔质量为3M单体−2M水；每mol三肽净排出2mol水，产物质量+放出水质量应等于三种初始氨基酸总质量3ab。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。",
+    "第三步｜三个结果与复核：结果1 = 3.76201800 g tripeptide；结果2 = 0.497214000 g water released；结果3 = 4.25923200 g initial amino acid units。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。"
+  ],
+  "numeric_answers": [
+    3.7620180000000003,
+    0.497214,
+    4.259232
+  ],
+  "numeric_answer_units": [
+    "g tripeptide",
+    "g water released",
+    "g initial amino acid units"
+  ],
+  "units": [
+    "g tripeptide",
+    "g water released",
+    "g initial amino acid units"
+  ],
+  "numerical_witnesses": [
+    0,
+    0,
+    0
+  ],
+  "independent_inverse_checks": 3,
+  "original_template_count_note": "48 authored three-target templates, each with 256 numeric variants; not 12,288 independent chemical concepts.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chains-12288.mjs",
+    "source_template": "scripts/advanced-chain/organic.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_linked_three_target_science_model",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently written Chinese exercises, not copied textbook or exam questions; original 3-stage model."
+  }
+}

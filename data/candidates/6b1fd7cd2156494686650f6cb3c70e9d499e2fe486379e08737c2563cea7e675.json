@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "6b1fd7cd2156494686650f6cb3c70e9d499e2fe486379e08737c2563cea7e675",
+  "subject": "analytical",
+  "topic": "iodometric_copper_mol_mass_concentration_set085",
+  "topic_family": "iodometric_copper_mol_mass_concentration",
+  "parameter_case": 85,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_three_linked_outputs_quantitative",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "原创三目标综合计算题 · analytical · iodometric_copper_mol_mass_concentration（第 85 组条件）。\n对体积 26.68mL 的 Cu²⁺ 水样进行碘量法：2Cu²⁺+4I⁻→2CuI+I₂，释放 I₂ 再用 0.01000mol/L Na₂S₂O₃ 滴定耗 14.52mL；每 mol Cu²⁺ 总计耗一 mol S₂O₃²⁻，假定定量。M(Cu)=63.546g/mol。求 Cu²⁺ 的 mmol、mol/L 和以Cu计的mg/L。",
+  "answer": "(1) 0.145200000 mmol Cu²⁺；(2) 0.00544227886 mol/L Cu²⁺；(3) 345.835052 mg/L Cu。",
+  "explanation": "第一步｜明确条件与模型：iodometric_copper_mol_mass_concentration。题设参数 a=14.52、b=26.68；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：mmol Cu²⁺、mol/L Cu²⁺、mg/L Cu，不可省略前提。\n\n第二步｜建立关系并联立求解：由合并计量 nCu(mmol)=0.01000×a；样品浓度 c=nCu/b（mmol/mL 等于 mol/L）；质量浓度=c×63546 mg/L。先校核样品体积单位。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。\n\n第三步｜三个结果与复核：结果1 = 0.145200000 mmol Cu²⁺；结果2 = 0.00544227886 mol/L Cu²⁺；结果3 = 345.835052 mg/L Cu。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。",
+  "solution_steps": [
+    "第一步｜明确条件与模型：iodometric_copper_mol_mass_concentration。题设参数 a=14.52、b=26.68；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：mmol Cu²⁺、mol/L Cu²⁺、mg/L Cu，不可省略前提。",
+    "第二步｜建立关系并联立求解：由合并计量 nCu(mmol)=0.01000×a；样品浓度 c=nCu/b（mmol/mL 等于 mol/L）；质量浓度=c×63546 mg/L。先校核样品体积单位。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。",
+    "第三步｜三个结果与复核：结果1 = 0.145200000 mmol Cu²⁺；结果2 = 0.00544227886 mol/L Cu²⁺；结果3 = 345.835052 mg/L Cu。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。"
+  ],
+  "numeric_answers": [
+    0.1452,
+    0.005442278860569715,
+    345.83505247376314
+  ],
+  "numeric_answer_units": [
+    "mmol Cu²⁺",
+    "mol/L Cu²⁺",
+    "mg/L Cu"
+  ],
+  "units": [
+    "mmol Cu²⁺",
+    "mol/L Cu²⁺",
+    "mg/L Cu"
+  ],
+  "numerical_witnesses": [
+    0,
+    0,
+    0
+  ],
+  "independent_inverse_checks": 3,
+  "original_template_count_note": "48 authored three-target templates, each with 256 numeric variants; not 12,288 independent chemical concepts.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chains-12288.mjs",
+    "source_template": "scripts/advanced-chain/analytical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_linked_three_target_science_model",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently written Chinese exercises, not copied textbook or exam questions; original 3-stage model."
+  }
+}

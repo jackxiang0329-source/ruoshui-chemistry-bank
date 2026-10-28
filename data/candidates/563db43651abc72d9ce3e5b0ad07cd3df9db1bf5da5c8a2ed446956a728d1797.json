@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "563db43651abc72d9ce3e5b0ad07cd3df9db1bf5da5c8a2ed446956a728d1797",
+  "subject": "inorganic",
+  "topic": "limestone_calcination_mass_and_co2_set115",
+  "topic_family": "limestone_calcination_mass_and_co2",
+  "parameter_case": 115,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_three_linked_outputs_quantitative",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "原创三目标综合计算题 · inorganic · limestone_calcination_mass_and_co2（第 115 组条件）。\n某 5.71 g 石灰石含 CaCO₃ 质量分数 0.8728，其余均为不分解惰性矿物。按 CaCO₃→CaO+CO₂ 完全焙烧，忽略灰尘损失，M(CaCO₃)=100.09、M(CaO)=56.08、M(CO₂)=44.01 g/mol。分别求 CaO 质量、逸出 CO₂ 质量及最终固体总质量。",
+  "answer": "(1) 2.79233913 g CaO；(2) 2.19134887 g CO₂；(3) 3.51865113 g residue total。",
+  "explanation": "第一步｜明确条件与模型：limestone_calcination_mass_and_co2。题设参数 a=5.71、b=0.8728；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：g CaO、g CO₂、g residue total，不可省略前提。\n\n第二步｜建立关系并联立求解：第一步取可分解 CaCO₃ 质量 ab；第二步按一比一物质的量得到 CaO=ab×56.08/100.09 与 CO₂=ab×44.01/100.09；第三步残余固体=原矿石减逸出 CO₂，保留惰性矿物。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。\n\n第三步｜三个结果与复核：结果1 = 2.79233913 g CaO；结果2 = 2.19134887 g CO₂；结果3 = 3.51865113 g residue total。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。",
+  "solution_steps": [
+    "第一步｜明确条件与模型：limestone_calcination_mass_and_co2。题设参数 a=5.71、b=0.8728；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：g CaO、g CO₂、g residue total，不可省略前提。",
+    "第二步｜建立关系并联立求解：第一步取可分解 CaCO₃ 质量 ab；第二步按一比一物质的量得到 CaO=ab×56.08/100.09 与 CO₂=ab×44.01/100.09；第三步残余固体=原矿石减逸出 CO₂，保留惰性矿物。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。",
+    "第三步｜三个结果与复核：结果1 = 2.79233913 g CaO；结果2 = 2.19134887 g CO₂；结果3 = 3.51865113 g residue total。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。"
+  ],
+  "numeric_answers": [
+    2.7923391251873313,
+    2.1913488748126686,
+    3.5186511251873314
+  ],
+  "numeric_answer_units": [
+    "g CaO",
+    "g CO₂",
+    "g residue total"
+  ],
+  "units": [
+    "g CaO",
+    "g CO₂",
+    "g residue total"
+  ],
+  "numerical_witnesses": [
+    0,
+    0,
+    0
+  ],
+  "independent_inverse_checks": 3,
+  "original_template_count_note": "48 authored three-target templates, each with 256 numeric variants; not 12,288 independent chemical concepts.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chains-12288.mjs",
+    "source_template": "scripts/advanced-chain/inorganic.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_linked_three_target_science_model",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently written Chinese exercises, not copied textbook or exam questions; original 3-stage model."
+  }
+}

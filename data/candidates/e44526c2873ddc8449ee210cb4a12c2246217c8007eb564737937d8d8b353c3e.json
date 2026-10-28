@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "e44526c2873ddc8449ee210cb4a12c2246217c8007eb564737937d8d8b353c3e",
+  "subject": "analytical",
+  "topic": "back_titration_calcium_carbonate_purity_set057",
+  "topic_family": "back_titration_calcium_carbonate_purity",
+  "parameter_case": 57,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_three_linked_outputs_quantitative",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "原创三目标综合计算题 · analytical · back_titration_calcium_carbonate_purity（第 57 组条件）。\n取某石灰石粉末 0.2500g，先加入 0.1000 mol/L HCl 51.68 mL，余酸用 0.1000 mol/L NaOH 回滴耗 16.12 mL。除 CaCO₃ 外无其它酸消耗组分，CaCO₃+2H⁺→Ca²⁺+CO₂+H₂O，M(CaCO₃)=100.09g/mol。求石灰石消耗的酸 mmol 数、CaCO₃ 质量及纯度百分数。",
+  "answer": "(1) 3.55600000 mmol acid used by CaCO₃；(2) 0.177960020 g CaCO₃；(3) 71.1840080 % CaCO₃ purity。",
+  "explanation": "第一步｜明确条件与模型：back_titration_calcium_carbonate_purity。题设参数 a=51.68、b=16.12；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：mmol acid used by CaCO₃、g CaCO₃、% CaCO₃ purity，不可省略前提。\n\n第二步｜建立关系并联立求解：用加入酸减去回滴余酸，n酸(mmol)=0.1(a−b)；CaCO₃ 消耗两摩尔酸，mCaCO3=(n酸/2)×100.09/1000g，最后除以0.2500g 乘100%。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。\n\n第三步｜三个结果与复核：结果1 = 3.55600000 mmol acid used by CaCO₃；结果2 = 0.177960020 g CaCO₃；结果3 = 71.1840080 % CaCO₃ purity。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、1.249e-16、0.000。数值一致不代表已完成实验真实性或专家推导审查。",
+  "solution_steps": [
+    "第一步｜明确条件与模型：back_titration_calcium_carbonate_purity。题设参数 a=51.68、b=16.12；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：mmol acid used by CaCO₃、g CaCO₃、% CaCO₃ purity，不可省略前提。",
+    "第二步｜建立关系并联立求解：用加入酸减去回滴余酸，n酸(mmol)=0.1(a−b)；CaCO₃ 消耗两摩尔酸，mCaCO3=(n酸/2)×100.09/1000g，最后除以0.2500g 乘100%。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。",
+    "第三步｜三个结果与复核：结果1 = 3.55600000 mmol acid used by CaCO₃；结果2 = 0.177960020 g CaCO₃；结果3 = 71.1840080 % CaCO₃ purity。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、1.249e-16、0.000。数值一致不代表已完成实验真实性或专家推导审查。"
+  ],
+  "numeric_answers": [
+    3.5560000000000005,
+    0.17796002000000005,
+    71.18400800000002
+  ],
+  "numeric_answer_units": [
+    "mmol acid used by CaCO₃",
+    "g CaCO₃",
+    "% CaCO₃ purity"
+  ],
+  "units": [
+    "mmol acid used by CaCO₃",
+    "g CaCO₃",
+    "% CaCO₃ purity"
+  ],
+  "numerical_witnesses": [
+    0,
+    1.248844797103663e-16,
+    0
+  ],
+  "independent_inverse_checks": 3,
+  "original_template_count_note": "48 authored three-target templates, each with 256 numeric variants; not 12,288 independent chemical concepts.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chains-12288.mjs",
+    "source_template": "scripts/advanced-chain/analytical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_linked_three_target_science_model",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently written Chinese exercises, not copied textbook or exam questions; original 3-stage model."
+  }
+}

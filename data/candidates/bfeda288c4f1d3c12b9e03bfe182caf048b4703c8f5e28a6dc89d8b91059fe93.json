@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "bfeda288c4f1d3c12b9e03bfe182caf048b4703c8f5e28a6dc89d8b91059fe93",
+  "subject": "inorganic",
+  "topic": "mcl2_sulfate_precipitation_mass_set147",
+  "topic_family": "mcl2_sulfate_precipitation_mass",
+  "parameter_case": 147,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_three_linked_outputs_quantitative",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "原创三目标综合计算题 · inorganic · mcl2_sulfate_precipitation_mass（第 147 组条件）。\n有 Na₂SO₄ 0.05752 mol 和 BaCl₂ 0.04814 mol 混合，反应 Ba²⁺+SO₄²⁻→BaSO₄(s) 完全，题设 BaCl₂ 始终限制，忽略溶度积及离子络合。M(BaSO₄)=233.39 g/mol。求 BaSO₄ 物质的量、沉淀质量及剩余 SO₄²⁻ 的物质的量。",
+  "answer": "(1) 0.0481400000 mol BaSO₄；(2) 11.2353946 g BaSO₄；(3) 0.00938000000 mol sulfate remaining。",
+  "explanation": "第一步｜明确条件与模型：mcl2_sulfate_precipitation_mass。题设参数 a=0.05752、b=0.04814；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：mol BaSO₄、g BaSO₄、mol sulfate remaining，不可省略前提。\n\n第二步｜建立关系并联立求解：限制试剂是 Ba²⁺，反应一比一，沉淀物质的量为 b、质量为 233.39b；多余硫酸根=a−b。必须检查 b≤a。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。\n\n第三步｜三个结果与复核：结果1 = 0.0481400000 mol BaSO₄；结果2 = 11.2353946 g BaSO₄；结果3 = 0.00938000000 mol sulfate remaining。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。",
+  "solution_steps": [
+    "第一步｜明确条件与模型：mcl2_sulfate_precipitation_mass。题设参数 a=0.05752、b=0.04814；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：mol BaSO₄、g BaSO₄、mol sulfate remaining，不可省略前提。",
+    "第二步｜建立关系并联立求解：限制试剂是 Ba²⁺，反应一比一，沉淀物质的量为 b、质量为 233.39b；多余硫酸根=a−b。必须检查 b≤a。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。",
+    "第三步｜三个结果与复核：结果1 = 0.0481400000 mol BaSO₄；结果2 = 11.2353946 g BaSO₄；结果3 = 0.00938000000 mol sulfate remaining。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。"
+  ],
+  "numeric_answers": [
+    0.04814,
+    11.2353946,
+    0.00938
+  ],
+  "numeric_answer_units": [
+    "mol BaSO₄",
+    "g BaSO₄",
+    "mol sulfate remaining"
+  ],
+  "units": [
+    "mol BaSO₄",
+    "g BaSO₄",
+    "mol sulfate remaining"
+  ],
+  "numerical_witnesses": [
+    0,
+    0,
+    0
+  ],
+  "independent_inverse_checks": 3,
+  "original_template_count_note": "48 authored three-target templates, each with 256 numeric variants; not 12,288 independent chemical concepts.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chains-12288.mjs",
+    "source_template": "scripts/advanced-chain/inorganic.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_linked_three_target_science_model",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently written Chinese exercises, not copied textbook or exam questions; original 3-stage model."
+  }
+}

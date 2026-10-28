@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "bea381fdfaa5210e709a291684f9df5d7bcfe436aec2b74b603dfd4415e07e85",
+  "subject": "physical",
+  "topic": "reversible_adiabatic_temperature_work_entropy_set219",
+  "topic_family": "reversible_adiabatic_temperature_work_entropy",
+  "parameter_case": 219,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_three_linked_outputs_quantitative",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "原创三目标综合计算题 · physical · reversible_adiabatic_temperature_work_entropy（第 219 组条件）。\n1.00mol 理想双原子气体在绝热指数 γ=1.40 恒定时可逆绝热膨胀，初始温度 T1=432.7K，末初压强比 P2/P1=0.5436，小于1。忽略振动激发比热变化，R=8.314462618 J/(mol·K)。计算末温 T2、系统受到的功（kJ）和熵变。",
+  "answer": "(1) 363.540208 K final temperature；(2) -1.43756626 kJ work on system；(3) 0.00000000 J/K entropy change。",
+  "explanation": "第一步｜明确条件与模型：reversible_adiabatic_temperature_work_entropy。题设参数 a=432.7、b=0.5436；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：K final temperature、kJ work on system、J/K entropy change，不可省略前提。\n\n第二步｜建立关系并联立求解：理想气体可逆绝热式 T2=T1(P2/P1)^((γ−1)/γ)。因 q=0、内能变化 ΔU=Cv(T2−T1)=w，Cv=R/(γ−1)；可逆绝热过程 ΔS=0，这是过程定义而非任意绝热过程的结论。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。\n\n第三步｜三个结果与复核：结果1 = 363.540208 K final temperature；结果2 = -1.43756626 kJ work on system；结果3 = 0.00000000 J/K entropy change。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 2.042e-16、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。",
+  "solution_steps": [
+    "第一步｜明确条件与模型：reversible_adiabatic_temperature_work_entropy。题设参数 a=432.7、b=0.5436；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：K final temperature、kJ work on system、J/K entropy change，不可省略前提。",
+    "第二步｜建立关系并联立求解：理想气体可逆绝热式 T2=T1(P2/P1)^((γ−1)/γ)。因 q=0、内能变化 ΔU=Cv(T2−T1)=w，Cv=R/(γ−1)；可逆绝热过程 ΔS=0，这是过程定义而非任意绝热过程的结论。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。",
+    "第三步｜三个结果与复核：结果1 = 363.540208 K final temperature；结果2 = -1.43756626 kJ work on system；结果3 = 0.00000000 J/K entropy change。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 2.042e-16、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。"
+  ],
+  "numeric_answers": [
+    363.54020835578706,
+    -1.437566255736193,
+    0
+  ],
+  "numeric_answer_units": [
+    "K final temperature",
+    "kJ work on system",
+    "J/K entropy change"
+  ],
+  "units": [
+    "K final temperature",
+    "kJ work on system",
+    "J/K entropy change"
+  ],
+  "numerical_witnesses": [
+    2.0423528782655565e-16,
+    0,
+    0
+  ],
+  "independent_inverse_checks": 3,
+  "original_template_count_note": "48 authored three-target templates, each with 256 numeric variants; not 12,288 independent chemical concepts.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chains-12288.mjs",
+    "source_template": "scripts/advanced-chain/physical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_linked_three_target_science_model",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently written Chinese exercises, not copied textbook or exam questions; original 3-stage model."
+  }
+}

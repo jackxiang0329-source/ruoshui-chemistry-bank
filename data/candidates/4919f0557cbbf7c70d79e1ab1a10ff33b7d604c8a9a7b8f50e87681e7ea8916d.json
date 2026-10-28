@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "4919f0557cbbf7c70d79e1ab1a10ff33b7d604c8a9a7b8f50e87681e7ea8916d",
+  "subject": "organic",
+  "topic": "ethyl_acetate_saponification_products_set226",
+  "topic_family": "ethyl_acetate_saponification_products",
+  "parameter_case": 226,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_three_linked_outputs_quantitative",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "原创三目标综合计算题 · organic · ethyl_acetate_saponification_products（第 226 组条件）。\n乙酸乙酯 0.172mol 与过量 NaOH 按 CH₃COOC₂H₅+NaOH→CH₃COONa+C₂H₅OH 发生定量计量的碱性水解，酯的转化分数为 0.7995。M(乙酸钠)=82.034、M(乙醇)=46.069g/mol。求乙酸钠质量、乙醇质量与未水解酯 mol 数。",
+  "answer": "(1) 11.2808235 g sodium acetate；(2) 6.33513247 g ethanol；(3) 0.0344860000 mol unreacted ester。",
+  "explanation": "第一步｜明确条件与模型：ethyl_acetate_saponification_products。题设参数 a=0.172、b=0.7995；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：g sodium acetate、g ethanol、mol unreacted ester，不可省略前提。\n\n第二步｜建立关系并联立求解：反应进度=初始酯×转化率=ab，每 mol 反应的酯各产生1mol乙酸钠及乙醇，剩余酯为a(1−b)，未讨论实际工艺副反应。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。\n\n第三步｜三个结果与复核：结果1 = 11.2808235 g sodium acetate；结果2 = 6.33513247 g ethanol；结果3 = 0.0344860000 mol unreacted ester。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、2.012e-16。数值一致不代表已完成实验真实性或专家推导审查。",
+  "solution_steps": [
+    "第一步｜明确条件与模型：ethyl_acetate_saponification_products。题设参数 a=0.172、b=0.7995；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：g sodium acetate、g ethanol、mol unreacted ester，不可省略前提。",
+    "第二步｜建立关系并联立求解：反应进度=初始酯×转化率=ab，每 mol 反应的酯各产生1mol乙酸钠及乙醇，剩余酯为a(1−b)，未讨论实际工艺副反应。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。",
+    "第三步｜三个结果与复核：结果1 = 11.2808235 g sodium acetate；结果2 = 6.33513247 g ethanol；结果3 = 0.0344860000 mol unreacted ester。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、2.012e-16。数值一致不代表已完成实验真实性或专家推导审查。"
+  ],
+  "numeric_answers": [
+    11.280823476,
+    6.335132466,
+    0.034485999999999996
+  ],
+  "numeric_answer_units": [
+    "g sodium acetate",
+    "g ethanol",
+    "mol unreacted ester"
+  ],
+  "units": [
+    "g sodium acetate",
+    "g ethanol",
+    "mol unreacted ester"
+  ],
+  "numerical_witnesses": [
+    0,
+    0,
+    2.0120900956641044e-16
+  ],
+  "independent_inverse_checks": 3,
+  "original_template_count_note": "48 authored three-target templates, each with 256 numeric variants; not 12,288 independent chemical concepts.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chains-12288.mjs",
+    "source_template": "scripts/advanced-chain/organic.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_linked_three_target_science_model",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently written Chinese exercises, not copied textbook or exam questions; original 3-stage model."
+  }
+}

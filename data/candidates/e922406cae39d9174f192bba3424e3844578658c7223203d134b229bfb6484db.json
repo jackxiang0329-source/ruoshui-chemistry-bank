@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "e922406cae39d9174f192bba3424e3844578658c7223203d134b229bfb6484db",
+  "subject": "organic",
+  "topic": "methyl_to_ethyl_acetate_transesterification_set161",
+  "topic_family": "methyl_to_ethyl_acetate_transesterification",
+  "parameter_case": 161,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_three_linked_outputs_quantitative",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "原创三目标综合计算题 · organic · methyl_to_ethyl_acetate_transesterification（第 161 组条件）。\n乙酸甲酯 CH₃COOCH₃ 与过量乙醇发生理想酯交换 CH₃COOCH₃+C₂H₅OH→CH₃COOC₂H₅+CH₃OH，初始乙酸甲酯 0.1036mol、转化分数 0.7284，无副反应。M(乙酸乙酯)=88.106、M(甲醇)=32.042g/mol。求两产物质量和未反应的乙酸甲酯 mol 数。",
+  "answer": "(1) 6.64867612 g ethyl acetate；(2) 2.41796109 g methanol；(3) 0.0281377600 mol methyl acetate unreacted。",
+  "explanation": "第一步｜明确条件与模型：methyl_to_ethyl_acetate_transesterification。题设参数 a=0.1036、b=0.7284；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：g ethyl acetate、g methanol、mol methyl acetate unreacted，不可省略前提。\n\n第二步｜建立关系并联立求解：反应进度ξ=ab，每摩尔乙酸甲酯转化时生成各1mol乙酸乙酯与甲醇，剩余底物为a−ξ。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。\n\n第三步｜三个结果与复核：结果1 = 6.64867612 g ethyl acetate；结果2 = 2.41796109 g methanol；结果3 = 0.0281377600 mol methyl acetate unreacted。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、1.233e-16。数值一致不代表已完成实验真实性或专家推导审查。",
+  "solution_steps": [
+    "第一步｜明确条件与模型：methyl_to_ethyl_acetate_transesterification。题设参数 a=0.1036、b=0.7284；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：g ethyl acetate、g methanol、mol methyl acetate unreacted，不可省略前提。",
+    "第二步｜建立关系并联立求解：反应进度ξ=ab，每摩尔乙酸甲酯转化时生成各1mol乙酸乙酯与甲醇，剩余底物为a−ξ。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。",
+    "第三步｜三个结果与复核：结果1 = 6.64867612 g ethyl acetate；结果2 = 2.41796109 g methanol；结果3 = 0.0281377600 mol methyl acetate unreacted。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、1.233e-16。数值一致不代表已完成实验真实性或专家推导审查。"
+  ],
+  "numeric_answers": [
+    6.64867611744,
+    2.4179610940800003,
+    0.028137759999999994
+  ],
+  "numeric_answer_units": [
+    "g ethyl acetate",
+    "g methanol",
+    "mol methyl acetate unreacted"
+  ],
+  "units": [
+    "g ethyl acetate",
+    "g methanol",
+    "mol methyl acetate unreacted"
+  ],
+  "numerical_witnesses": [
+    0,
+    0,
+    1.2330217302136397e-16
+  ],
+  "independent_inverse_checks": 3,
+  "original_template_count_note": "48 authored three-target templates, each with 256 numeric variants; not 12,288 independent chemical concepts.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chains-12288.mjs",
+    "source_template": "scripts/advanced-chain/organic.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_linked_three_target_science_model",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently written Chinese exercises, not copied textbook or exam questions; original 3-stage model."
+  }
+}

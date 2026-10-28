@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "ff7bb350866aed0955d3506e339415f8d1593266199f069c11479bef644afd9c",
+  "subject": "analytical",
+  "topic": "permanganate_fe2_redox_three_units_set162",
+  "topic_family": "permanganate_fe2_redox_three_units",
+  "parameter_case": 162,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_three_linked_outputs_quantitative",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "原创三目标综合计算题 · analytical · permanganate_fe2_redox_three_units（第 162 组条件）。\n酸性条件高锰酸根完全还原为 Mn²⁺，0.02000mol/L KMnO₄ 滴定体积为 14.22mL，水样体积为 29.83mL。按 MnO₄⁻:Fe²⁺=1:5 计量，M(Fe)=55.845g/mol，无其他还原剂干扰。求 Fe²⁺ mmol 数、浓度 mol/L 和质量浓度 mg/L。",
+  "answer": "(1) 1.42200000 mmol Fe²⁺；(2) 0.0476701307 mol/L Fe²⁺；(3) 2662.13845 mg/L Fe。",
+  "explanation": "第一步｜明确条件与模型：permanganate_fe2_redox_three_units。题设参数 a=14.22、b=29.83；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：mmol Fe²⁺、mol/L Fe²⁺、mg/L Fe，不可省略前提。\n\n第二步｜建立关系并联立求解：高锰酸根 mmol 数为 .02000a，铁 mmol 数为其五倍即 0.1000a；除以样品体积 b mL 得 mol/L，再乘 55845mg/mol 得铁质量浓度。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。\n\n第三步｜三个结果与复核：结果1 = 1.42200000 mmol Fe²⁺；结果2 = 0.0476701307 mol/L Fe²⁺；结果3 = 2662.13845 mg/L Fe。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。",
+  "solution_steps": [
+    "第一步｜明确条件与模型：permanganate_fe2_redox_three_units。题设参数 a=14.22、b=29.83；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：mmol Fe²⁺、mol/L Fe²⁺、mg/L Fe，不可省略前提。",
+    "第二步｜建立关系并联立求解：高锰酸根 mmol 数为 .02000a，铁 mmol 数为其五倍即 0.1000a；除以样品体积 b mL 得 mol/L，再乘 55845mg/mol 得铁质量浓度。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。",
+    "第三步｜三个结果与复核：结果1 = 1.42200000 mmol Fe²⁺；结果2 = 0.0476701307 mol/L Fe²⁺；结果3 = 2662.13845 mg/L Fe。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。"
+  ],
+  "numeric_answers": [
+    1.4220000000000002,
+    0.04767013074086491,
+    2662.138451223601
+  ],
+  "numeric_answer_units": [
+    "mmol Fe²⁺",
+    "mol/L Fe²⁺",
+    "mg/L Fe"
+  ],
+  "units": [
+    "mmol Fe²⁺",
+    "mol/L Fe²⁺",
+    "mg/L Fe"
+  ],
+  "numerical_witnesses": [
+    0,
+    0,
+    0
+  ],
+  "independent_inverse_checks": 3,
+  "original_template_count_note": "48 authored three-target templates, each with 256 numeric variants; not 12,288 independent chemical concepts.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chains-12288.mjs",
+    "source_template": "scripts/advanced-chain/analytical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_linked_three_target_science_model",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently written Chinese exercises, not copied textbook or exam questions; original 3-stage model."
+  }
+}

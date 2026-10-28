@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "5379077d2a911bd5daa7a0ff29e83fc23a8c2e906994a617f5086906afda78bf",
+  "subject": "analytical",
+  "topic": "spectrometry_dilution_molarity_and_original_mass_set122",
+  "topic_family": "spectrometry_dilution_molarity_and_original_mass",
+  "parameter_case": 122,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_three_linked_outputs_quantitative",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "原创三目标综合计算题 · analytical · spectrometry_dilution_molarity_and_original_mass（第 122 组条件）。\n某无缔合分析物的摩尔吸光系数 ε=1000L/(mol·cm)、光程 1.00cm，某 10.00mL 原液定容至 56.05mL 后测量，吸光度 A=0.3047，无空白干扰。化合物摩尔质量 M=100.0g/mol，求稀释液浓度、原液浓度，以及被取样的原液 10.00mL 中的溶质质量（mg）。",
+  "answer": "(1) 0.000304700000 mol/L diluted；(2) 0.00170784350 mol/L original；(3) 1.70784350 mg solute in original aliquot。",
+  "explanation": "第一步｜明确条件与模型：spectrometry_dilution_molarity_and_original_mass。题设参数 a=0.3047、b=56.05；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：mol/L diluted、mol/L original、mg solute in original aliquot，不可省略前提。\n\n第二步｜建立关系并联立求解：由 A=εlc 得稀释液 c=A/1000；稀释守恒 c原=c稀×(b/10)，原液取样质量= c原×.010L×100g/mol×1000mg/g。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。\n\n第三步｜三个结果与复核：结果1 = 0.000304700000 mol/L diluted；结果2 = 0.00170784350 mol/L original；结果3 = 1.70784350 mg solute in original aliquot。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、1.779e-16、0.000。数值一致不代表已完成实验真实性或专家推导审查。",
+  "solution_steps": [
+    "第一步｜明确条件与模型：spectrometry_dilution_molarity_and_original_mass。题设参数 a=0.3047、b=56.05；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：mol/L diluted、mol/L original、mg solute in original aliquot，不可省略前提。",
+    "第二步｜建立关系并联立求解：由 A=εlc 得稀释液 c=A/1000；稀释守恒 c原=c稀×(b/10)，原液取样质量= c原×.010L×100g/mol×1000mg/g。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。",
+    "第三步｜三个结果与复核：结果1 = 0.000304700000 mol/L diluted；结果2 = 0.00170784350 mol/L original；结果3 = 1.70784350 mg solute in original aliquot。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、1.779e-16、0.000。数值一致不代表已完成实验真实性或专家推导审查。"
+  ],
+  "numeric_answers": [
+    0.00030470000000000003,
+    0.0017078434999999999,
+    1.7078434999999998
+  ],
+  "numeric_answer_units": [
+    "mol/L diluted",
+    "mol/L original",
+    "mg solute in original aliquot"
+  ],
+  "units": [
+    "mol/L diluted",
+    "mol/L original",
+    "mg solute in original aliquot"
+  ],
+  "numerical_witnesses": [
+    0,
+    1.7791305751321042e-16,
+    0
+  ],
+  "independent_inverse_checks": 3,
+  "original_template_count_note": "48 authored three-target templates, each with 256 numeric variants; not 12,288 independent chemical concepts.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chains-12288.mjs",
+    "source_template": "scripts/advanced-chain/analytical.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_linked_three_target_science_model",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently written Chinese exercises, not copied textbook or exam questions; original 3-stage model."
+  }
+}

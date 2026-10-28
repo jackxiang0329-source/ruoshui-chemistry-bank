@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "57e7782314fb1b0c3b6b71b9fb526d43f68566e2707f30769032a2868c1222ea",
+  "subject": "organic",
+  "topic": "monoalkene_hydrogenation_partial_conversion_set087",
+  "topic_family": "monoalkene_hydrogenation_partial_conversion",
+  "parameter_case": 87,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_three_linked_outputs_quantitative",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "原创三目标综合计算题 · organic · monoalkene_hydrogenation_partial_conversion（第 87 组条件）。\n某单烯烃摩尔质量 M=56.108g/mol，初始 0.12322mol，催化加氢时有 0.73806 的分子发生一个 C=C 完全加氢，其余未反应，氢气过量且无其它耗氢途径。M(H₂)=2.016g/mol。计算饱和产物质量、耗氢质量和剩余烯烃 mol 数。",
+  "answer": "(1) 5.28601471 g saturated product；(2) 0.183342606 g H₂ consumed；(3) 0.0322762468 mol remaining alkene。",
+  "explanation": "第一步｜明确条件与模型：monoalkene_hydrogenation_partial_conversion。题设参数 a=0.12322、b=0.73806；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：g saturated product、g H₂ consumed、mol remaining alkene，不可省略前提。\n\n第二步｜建立关系并联立求解：已反应单烯烃 n=ab，对每摩尔反应底物消耗一摩尔 H₂，饱和产物摩尔质量是 56.108+2.016；其余 a(1−b)mol 不计入饱和产物。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。\n\n第三步｜三个结果与复核：结果1 = 5.28601471 g saturated product；结果2 = 0.183342606 g H₂ consumed；结果3 = 0.0322762468 mol remaining alkene。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。",
+  "solution_steps": [
+    "第一步｜明确条件与模型：monoalkene_hydrogenation_partial_conversion。题设参数 a=0.12322、b=0.73806；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：g saturated product、g H₂ consumed、mol remaining alkene，不可省略前提。",
+    "第二步｜建立关系并联立求解：已反应单烯烃 n=ab，对每摩尔反应底物消耗一摩尔 H₂，饱和产物摩尔质量是 56.108+2.016；其余 a(1−b)mol 不计入饱和产物。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。",
+    "第三步｜三个结果与复核：结果1 = 5.28601471 g saturated product；结果2 = 0.183342606 g H₂ consumed；结果3 = 0.0322762468 mol remaining alkene。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。"
+  ],
+  "numeric_answers": [
+    5.2860147109968,
+    0.1833426064512,
+    0.03227624679999999
+  ],
+  "numeric_answer_units": [
+    "g saturated product",
+    "g H₂ consumed",
+    "mol remaining alkene"
+  ],
+  "units": [
+    "g saturated product",
+    "g H₂ consumed",
+    "mol remaining alkene"
+  ],
+  "numerical_witnesses": [
+    0,
+    0,
+    0
+  ],
+  "independent_inverse_checks": 3,
+  "original_template_count_note": "48 authored three-target templates, each with 256 numeric variants; not 12,288 independent chemical concepts.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chains-12288.mjs",
+    "source_template": "scripts/advanced-chain/organic.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_linked_three_target_science_model",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently written Chinese exercises, not copied textbook or exam questions; original 3-stage model."
+  }
+}

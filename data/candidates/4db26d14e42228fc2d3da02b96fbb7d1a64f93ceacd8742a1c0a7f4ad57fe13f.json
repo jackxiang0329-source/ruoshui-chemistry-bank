@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "4db26d14e42228fc2d3da02b96fbb7d1a64f93ceacd8742a1c0a7f4ad57fe13f",
+  "subject": "inorganic",
+  "topic": "bragg_fcc_density_molar_volume_set049",
+  "topic_family": "bragg_fcc_density_molar_volume",
+  "parameter_case": 49,
+  "level": "undergraduate",
+  "difficulty": "intermediate_to_advanced",
+  "question_type": "original_three_linked_outputs_quantitative",
+  "resource_type": "original_solved_exercise_not_upstream_question",
+  "question": "原创三目标综合计算题 · inorganic · bragg_fcc_density_molar_volume（第 49 组条件）。\n某理想 FCC 金属晶体的一阶 (111) Bragg 反射，入射 X 射线波长为 0.15544 nm，Bragg 角 θ=15.384°（给定的是 θ 而非 2θ）。FCC 常规晶胞含 4 原子，NA=6.02214076×10²³ mol⁻¹。求 (111) 晶面间距 d、立方晶胞边长 a_cell 与按一 mol 原子计算的晶体摩尔体积 cm³/mol。",
+  "answer": "(1) 0.292965863 nm d₁₁₁；(2) 0.507431760 nm cubic a；(3) 19.6708827 cm³/mol molar volume。",
+  "explanation": "第一步｜明确条件与模型：bragg_fcc_density_molar_volume。题设参数 a=0.15544、b=15.384；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：nm d₁₁₁、nm cubic a、cm³/mol molar volume，不可省略前提。\n\n第二步｜建立关系并联立求解：一阶 Bragg 式 2d sinθ=λ 得 d=λ/(2sinθ)；立方晶体 d111=a_cell/√3 得 a_cell=√3d，晶胞体积转换为 cm³ 再乘 NA/4 即得到 mol 体积。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。\n\n第三步｜三个结果与复核：结果1 = 0.292965863 nm d₁₁₁；结果2 = 0.507431760 nm cubic a；结果3 = 19.6708827 cm³/mol molar volume。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。",
+  "solution_steps": [
+    "第一步｜明确条件与模型：bragg_fcc_density_molar_volume。题设参数 a=0.15544、b=15.384；化学种类、反应比例、有效单位与近似条件以原题为准。确定三个求解目标：nm d₁₁₁、nm cubic a、cm³/mol molar volume，不可省略前提。",
+    "第二步｜建立关系并联立求解：一阶 Bragg 式 2d sinθ=λ 得 d=λ/(2sinθ)；立方晶体 d111=a_cell/√3 得 a_cell=√3d，晶胞体积转换为 cm³ 再乘 NA/4 即得到 mol 体积。 把符号条件逐一代入，而不是仅套用无化学解释的数字公式。",
+    "第三步｜三个结果与复核：结果1 = 0.292965863 nm d₁₁₁；结果2 = 0.507431760 nm cubic a；结果3 = 19.6708827 cm³/mol molar volume。对三个结果逐项代回独立写出的逆向关系；本题逆向残差分别为 0.000、0.000、0.000。数值一致不代表已完成实验真实性或专家推导审查。"
+  ],
+  "numeric_answers": [
+    0.29296586296810956,
+    0.5074317595440272,
+    19.670882678953593
+  ],
+  "numeric_answer_units": [
+    "nm d₁₁₁",
+    "nm cubic a",
+    "cm³/mol molar volume"
+  ],
+  "units": [
+    "nm d₁₁₁",
+    "nm cubic a",
+    "cm³/mol molar volume"
+  ],
+  "numerical_witnesses": [
+    0,
+    0,
+    0
+  ],
+  "independent_inverse_checks": 3,
+  "original_template_count_note": "48 authored three-target templates, each with 256 numeric variants; not 12,288 independent chemical concepts.",
+  "human_expert_reviewed": false,
+  "requires_human_chemistry_review": true,
+  "semantic_duplicate_review_pending": true,
+  "quality_status": "awaiting_expert_review",
+  "publishable": false,
+  "source": {
+    "repository": "jackxiang0329-source/ruoshui-chemistry-bank",
+    "file": "scripts/import-original-chains-12288.mjs",
+    "source_template": "scripts/advanced-chain/inorganic.mjs",
+    "license": "CC0-1.0",
+    "license_evidence": "https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/blob/main/LICENSE-ORIGINAL-QUESTIONS.md",
+    "content_rights_verified": true,
+    "origin": "independently_authored_linked_three_target_science_model",
+    "original_exam_question": false,
+    "third_party_question_text_copied": false,
+    "changes": "Independently written Chinese exercises, not copied textbook or exam questions; original 3-stage model."
+  }
+}
