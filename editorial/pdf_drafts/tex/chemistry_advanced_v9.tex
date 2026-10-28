@@ -1,0 +1,179 @@
+
+\documentclass[UTF8,11pt,a4paper]{ctexart}
+\usepackage[a4paper,left=23mm,right=23mm,top=24mm,bottom=24mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+\setCJKmainfont{Noto Serif CJK SC}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,unicode=true]{hyperref}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{fancyhdr}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\setlist[enumerate]{leftmargin=2.6em,itemsep=0.4em,topsep=0.5em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 三千弱水 · 大学化学高阶综合题库}
+\fancyhead[R]{\small 待专家审校稿}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{15pt}
+\sloppy
+
+\begin{document}
+\begin{center}
+{\LARGE\bfseries 大学化学高阶综合题 · 第9辑 (7题)}\\[0.8em]
+{\large 题目、分步解析与数值核验}\\[0.5em]
+{\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
+\end{center}
+\vspace{1em}
+\noindent 本册从仓库结构化 JSONL 自动生成。增补和修改应只编辑源题目数据，并重新执行统一编译。
+\par 机械方程残差检查只能说明指定模型的内部数值一致，不保证模型现实可行性。第六辑另须完成跨辑模型去重审查。
+\tableofcontents
+\clearpage
+\section*{第9辑 · 题目及解答}
+\addcontentsline{toc}{section}{第9辑}
+\subsection*{无机化学}
+\addcontentsline{toc}{subsection}{第9辑 / 无机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I76 · d6八面体晶场配对能与自旋态的反常判别}
+\noindent\textbf{题目}\par
+八面体d6假想配位中心高自旋构型t2g4eg2（S=2，一对电子），低自旋t2g6（S=0，三对电子）。定义t2g单电子能−0.4Δo、eg为+0.6Δo，每电子对能P=18.50kJ/mol，Δo=22.50kJ/mol。求两态相对球形场重心的总能、低态相对高态差值、高自旋自旋-only磁矩及能级交叉时的Δo。不能忽略配对能数目差异。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item t2g和eg的电子数分别为HS(4,2)与LS(6,0)。
+\item 高态晶场能4(−0.4Δ)+2(+0.6Δ)=−0.4Δ，低态为6(−0.4Δ)=−2.4Δ。
+\item 按一对/三对分别加配对能，EHS=−0.4Δ+P=9.5kJ/mol。
+\item ELS=−2.4Δ+3P=1.5kJ/mol。
+\item 两态差ELS−EHS=2(P−Δ)=-8kJ/mol，负值表示低自旋更稳定。
+\item 交叉要求Δ=P；高自旋S=2时μ=2√[S(S+1)]=4.898979486μB，低自旋按S=0磁矩零。
+\item 独立复核：将全部所求量逆代到题设的能量、守恒或跃迁公式；三项无量纲残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 9.5；答案2 = 1.5；答案3 = -8；答案4 = 4.89897949；答案5 = 18.5\par
+\noindent\textbf{模型前提：}
+题设假想理想化模型有效，忽略未列相互作用；化学真实性、跨辑原创性及出版资格待审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I77 · Latimer分段氧化还原与歧化方向的能量法判别}
+\noindent\textbf{题目}\par
+假想元素X有标准半反应X(III)+e−→X(II)，E1=0.7200V；X(II)+2e−→X(0)，E2=0.3100V。298.15K，忽略非标准态活度影响。求X(III)→X(0)三电子总标准还原电位、对应每mol X的标准自由能，以及3X(II)→2X(III)+X(0)的歧化电势、ΔG与自发性。必须按电子数加和自由能而非直接平均电位。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 第一段自由能−FE1、第二段−2FE2，三电子总和为−F(E1+2E2)。
+\item 总还原电位Et=(E1+2E2)/3=0.4466666667V。
+\item 总标准自由能ΔG=−3FEt=-129290.345J/mol X。
+\item 歧化反应中2X(II)氧化为2X(III)，1个X(II)还原为X(0)，因此电子数2。
+\item 歧化电池势Ed=E2−E1=-0.41V，ΔGdis=−2FEd=79117.97234J/(3mol X(II))。
+\item Ed<0，故正向歧化在标准态非自发；逆向归中更有利。
+\item 独立复核：将全部所求量逆代到题设的能量、守恒或跃迁公式；三项无量纲残差：-1.11e-16、-1.46e-11、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.446666667；答案2 = -129290.345；答案3 = -0.41；答案4 = 79117.9723\par
+\noindent\textbf{模型前提：}
+题设假想理想化模型有效，忽略未列相互作用；化学真实性、跨辑原创性及出版资格待审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I78 · Pourbaix边界与保护膜电位窗口的参数交点}
+\noindent\textbf{题目}\par
+假想酸碱耦合电极边界在298.15K为E=E0−0.05916pH（V），E0=1.020V，且一个保护膜允许的最低电位为0.450V。求pH6.500处反应边界电位、保护膜电位与该边界相交的pH、当实际电位0.600V时相对边界的偏移，并指出热力学势线不能直接预测腐蚀电流或钝化动力学。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 电势边界每升高1pH下降0.05916V，这是题给电子/质子计量对应的Nernst线。
+\item pH=6.5处边界Eb=1.020−0.05916×6.5=0.63546V。
+\item 令Eb=0.450V，交点pH*=(1.020−0.450)/0.05916=9.634888438。
+\item 实际电位0.600V高于边界的量为ΔE=0.600−Eb=-0.03546V。
+\item 在交点另一侧需要重新判断保护膜窗口与氧化还原稳定区是否交叠。
+\item 过电位必须结合电极动力学与表面条件才能对应电流密度，不能仅作平衡电位差外推。
+\item 独立复核：将全部所求量逆代到题设的能量、守恒或跃迁公式；三项无量纲残差：0.00e+0、-5.55e-17、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.63546；答案2 = 9.63488844；答案3 = -0.03546\par
+\noindent\textbf{模型前提：}
+题设假想理想化模型有效，忽略未列相互作用；化学真实性、跨辑原创性及出版资格待审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I79 · 离子晶体的晶胞质量、密度亏损和化学式空位反演}
+\noindent\textbf{题目}\par
+假想立方晶体AB每式摩尔质量180.0g/mol，一个晶胞有Z=4个AB式单元，晶格参数a=0.5400nm。求晶胞体积、理论晶体密度、0.1000mol AB对应晶胞数；若实测密度比理论密度低2.00\%，晶格常数不变，且只由缺失完整AB式单元解释，求每晶胞缺失式单元平均数及空位比例。说明不排除晶界孔隙或其他缺陷。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 晶格常数由nm化为m：a=5.400×10\textasciicircum{}-10m，晶胞体积V=a³=1.57464e-28m³。
+\item 每晶胞质量m=Z MW/NA，式量应使用0.1800kg/mol而非180kg/mol。
+\item 理论密度ρ=Z MW/(NA a³)=7592.771226kg/m³。
+\item 0.1000mol的AB式单元数为0.1NA，每晶胞Z=4，故晶胞数=1.50553519e+22。
+\item 固定a且全由化学式单元空位解释2.00\%质量亏损，每晶胞缺失Z×.02=0.08个式单元。
+\item 相对四个AB式位点的缺失比例0.0200；这一结论依赖唯一质量亏损机制假设。
+\item 独立复核：将全部所求量逆代到题设的能量、守恒或跃迁公式；三项无量纲残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1.57464e-28；答案2 = 7592.77123；答案3 = 1.50553519e+22；答案4 = 0.08；答案5 = 0.02\par
+\noindent\textbf{模型前提：}
+题设假想理想化模型有效，忽略未列相互作用；化学真实性、跨辑原创性及出版资格待审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I80 · 光催化半导体带隙吸收与光量子热弛豫预算}
+\noindent\textbf{题目}\par
+假想无机半导体直接带隙Eg=2.300eV，一束400.0nm单色光入射；h=6.62607015×10\textasciicircum{}-34J·s、c=2.99792458×10\textasciicircum{}8m/s、NA=6.02214076×10\textasciicircum{}23mol\textasciicircum{}-1。假设一个光子激发一个电子且超过带隙能量全部热化。求400nm光子能量(eV与kJ/mol)、热化超额能量(eV)，再判断500nm光子能否单光子直接跨隙。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 用E=hc/λ，400nm转换为4×10\textasciicircum{}-7m，单光子E=4.966114643e-19J。
+\item 1eV=1.602176634×10\textasciicircum{}-19J，故光子能量=3.099604961eV。
+\item 每摩尔光子能量为NA E/1000=299.0664141kJ/mol。
+\item 超过带隙的热化上限E−Eg=0.7996049608eV。
+\item 500nm单光子能量=2.479683969eV，低于2.300eV，故题设无缺陷单光子直接跨隙不允许。
+\item 若存在杂质态、多光子吸收或声子辅助，则需要改变模型，不能由该简单阈值排除一切吸收。
+\item 独立复核：将全部所求量逆代到题设的能量、守恒或跃迁公式；三项无量纲残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 3.09960496；答案2 = 299.066414；答案3 = 0.799604961；答案4 = 2.47968397\par
+\noindent\textbf{模型前提：}
+题设假想理想化模型有效，忽略未列相互作用；化学真实性、跨辑原创性及出版资格待审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I81 · XRD晶面应变对Bragg角与衍射峰位的精确和微分预测}
+\noindent\textbf{题目}\par
+一阶Bragg XRD测量，Cu Kα波长0.15406nm，未应变时晶面间距d=0.2140nm。晶体出现均匀法向拉伸应变ε=+0.002000，d'=(1+ε)d，波长不变。求原2θ、应变后的2θ、精确峰位移动量以及用一阶微分公式估算的峰位移动，说明2θ与θ差一个因子2且应变无量纲。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 一阶Bragg式2d sinθ=λ，故θ=asin(λ/2d)。
+\item 初始2θ=42.19465253度。
+\item 应变后d'=d(1+ε)，精确2θ'=42.10642度。
+\item 精确移动Δ(2θ)=-0.0882325301度；拉伸增加d导致峰位向低角移动。
+\item 微分2d sinθ=λ，得到dθ=−tanθ dd/d；所以Δ(2θ)≈−2tanθε=-0.08842211812度。
+\item 微分近似与精确差为0.0001895880209度，ε小使一阶估计合理。
+\item 独立复核：将全部所求量逆代到题设的能量、守恒或跃迁公式；三项无量纲残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 42.1946525；答案2 = 42.10642；答案3 = -0.0882325301；答案4 = -0.0884221181\par
+\noindent\textbf{模型前提：}
+题设假想理想化模型有效，忽略未列相互作用；化学真实性、跨辑原创性及出版资格待审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-I82 · 轴向g张量EPR谱的定频共振场与微波频率交叉核对}
+\noindent\textbf{题目}\par
+假想轴向S=1/2配位中心在共振磁场平行分子轴时g\_parallel=2.120、B\_parallel=0.3420T，垂直轴g\_perp=2.010；无零场分裂和超精细分裂。以hν=gμB B，μB=9.2740100783×10\textasciicircum{}-24J/T，求微波频率GHz、垂直共振磁场、场移动量及为什么g更大的方向场更小。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 按简单Zeeman分裂，E=hν=gμB B。
+\item 由平行方向计算ν=g\_parallel μB B\_parallel/h=10.14783743GHz。
+\item 固定微波频率意味着gparallel Bparallel=gperp Bperp，得Bperp=0.3607164179T。
+\item 场移动Bperp−Bparallel=0.01871641791T。
+\item 因为gB乘积固定，较小g对应更高的共振磁场。
+\item 若存在显著超精细耦合或S>1/2零场分裂，还需完整自旋哈密顿量。
+\item 独立复核：将全部所求量逆代到题设的能量、守恒或跃迁公式；三项无量纲残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 10.1478374；答案2 = 0.360716418；答案3 = 0.0187164179\par
+\noindent\textbf{模型前提：}
+题设假想理想化模型有效，忽略未列相互作用；化学真实性、跨辑原创性及出版资格待审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\end{document}
