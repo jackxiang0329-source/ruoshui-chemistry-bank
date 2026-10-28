@@ -1,0 +1,82 @@
+name: Rebuild chemistry draft PDFs from JSONL
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'editorial/advanced_integrated_v*/**'
+      - 'scripts/build-chemistry-pdf.py'
+      - '.github/workflows/chemistry-pdf-drafts.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: chemistry-draft-pdf-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install XeLaTeX, Chinese typesetting and PDF tools
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
+            texlive-xetex texlive-lang-chinese texlive-latex-extra fonts-noto-cjk \
+            fonts-dejavu-core poppler-utils
+      - name: Build LaTeX source from committed structured problems
+        run: python3 scripts/build-chemistry-pdf.py --series all
+      - name: Compile all series and combined draft books
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p editorial/pdf_drafts
+          for src in editorial/pdf_drafts/tex/*.tex; do
+            echo "Compiling $src"
+            for pass in 1 2; do
+              if ! xelatex -halt-on-error -interaction=nonstopmode \
+                -output-directory=editorial/pdf_drafts/tex "$src" \
+                > /tmp/chemistry-xelatex.log 2>&1; then
+                tail -n 120 /tmp/chemistry-xelatex.log
+                exit 1
+              fi
+            done
+            pdf="editorial/pdf_drafts/$(basename "${src%.tex}")_draft.pdf"
+            cp "editorial/pdf_drafts/tex/$(basename "${src%.tex}").pdf" "$pdf"
+            pdfinfo "$pdf" | grep -E '^Pages:'
+          done
+          newest=$(find editorial/pdf_drafts/tex -maxdepth 1 -name 'chemistry_advanced_v[0-9]*.tex' | sed -E 's/.*_v([0-9]+).tex/\1/' | sort -n | tail -1)
+          test -n "$newest"
+          test -s editorial/advanced_integrated_v1/original_advanced_integrated_12.pdf
+          pdfunite \
+            editorial/advanced_integrated_v1/original_advanced_integrated_12.pdf \
+            editorial/pdf_drafts/chemistry_advanced_v2_onwards_draft.pdf \
+            "editorial/pdf_drafts/chemistry_all_v1_to_v${newest}_draft.pdf"
+          pdfinfo "editorial/pdf_drafts/chemistry_all_v1_to_v${newest}_draft.pdf" | grep -E '^Pages:'
+      - name: Upload generated draft PDFs and TeX sources
+        uses: actions/upload-artifact@v4
+        with:
+          name: chemistry-draft-pdfs-and-tex
+          path: |
+            editorial/pdf_drafts/*.pdf
+            editorial/pdf_drafts/tex/*.tex
+          retention-days: 60
+          if-no-files-found: error
+      - name: Keep draft PDFs available as stable repository files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add editorial/pdf_drafts/*.pdf editorial/pdf_drafts/tex/*.tex
+          if git diff --cached --quiet; then
+            echo "No PDF changes to commit"
+          else
+            git commit -m "build(pdf): refresh chemistry draft volume PDFs [skip ci]"
+            git push origin HEAD:main || echo "::warning::PDF artifacts built, but repository push was blocked; download this run's artifacts."
+          fi
