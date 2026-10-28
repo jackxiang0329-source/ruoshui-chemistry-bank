@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "batch": "advanced_integrated_v6",
+  "status": "manual_cross_series_review_required",
+  "purpose": "These pairs are potential same-core-model overlaps. A suspected pair is not an automatic duplicate finding; inspect the full tasks and solutions before deciding to rewrite or keep.",
+  "suspected_pairs": [
+    {
+      "new_id": "UC-ADV6-I33",
+      "prior_id": "UC-ADV3-I03",
+      "reason": "双态自旋热力学模型",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-I36",
+      "prior_id": "UC-ADV4-I06",
+      "reason": "羟基形态影响溶解度",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-I37",
+      "prior_id": "UC-ADV5-I26",
+      "reason": "离子对形成的1:1二次平衡",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-I38",
+      "prior_id": "UC-ADV5-I32",
+      "reason": "单金属逐级两配体守恒",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-I40",
+      "prior_id": "UC-ADV5-I40",
+      "reason": "含氧量改变与金属平均价态",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-I41",
+      "prior_id": "UC-ADV5-I41",
+      "reason": "Butler–Volmer耦合欧姆降",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-I42",
+      "prior_id": "UC-ADV5-I43",
+      "reason": "异号离子载流子电导份额",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-I43",
+      "prior_id": "UC-ADV4-I13",
+      "reason": "两金属竞争一价配体",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-I45",
+      "prior_id": "UC-ADV4-I15",
+      "reason": "络合与沉淀过饱和判断",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-A33",
+      "prior_id": "UC-ADV5-A32",
+      "reason": "饱和信号反函数",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-A34",
+      "prior_id": "UC-ADV3-A05",
+      "reason": "同位素内标共回收消去",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-A35",
+      "prior_id": "UC-ADV3-A06",
+      "reason": "跨pH光谱反演",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-A36",
+      "prior_id": "UC-ADV5-A29",
+      "reason": "二响应通道线性逆问题",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-A37",
+      "prior_id": "UC-ADV5-A28",
+      "reason": "弱酸电中性pH",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-A38",
+      "prior_id": "UC-ADV4-A09",
+      "reason": "探测器死时间修正",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-A39",
+      "prior_id": "UC-ADV5-A30",
+      "reason": "有限结合位点二次平衡",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-A40",
+      "prior_id": "UC-ADV5-A22",
+      "reason": "有限两相顶空质量平衡",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-A41",
+      "prior_id": "UC-ADV5-P27",
+      "reason": "完全混合流动池一级衰减",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-A44",
+      "prior_id": "UC-ADV4-A17",
+      "reason": "酸碱形态选择性液液萃取",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-O31",
+      "prior_id": "UC-ADV5-O20",
+      "reason": "串并联三通道一级反应网络",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-O34",
+      "prior_id": "UC-ADV4-O06",
+      "reason": "两个对映体独立消耗",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-O35",
+      "prior_id": "UC-ADV5-O28",
+      "reason": "催化剂与抑制剂竞争占位",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-O36",
+      "prior_id": "UC-ADV5-O12",
+      "reason": "两态构象Boltzmann加权谱学",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-O37",
+      "prior_id": "UC-ADV5-O25",
+      "reason": "终端Markov共聚序列",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-O38",
+      "prior_id": "UC-ADV5-O13",
+      "reason": "弱酸两形态不同水解速率",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-O39",
+      "prior_id": "UC-ADV5-O15",
+      "reason": "光子收支与量子产率",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-O41",
+      "prior_id": "UC-ADV5-O26",
+      "reason": "消旋与对映体消耗矩阵",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-P31",
+      "prior_id": "UC-ADV3-P05",
+      "reason": "含惰性气体的氨合成平衡",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-P32",
+      "prior_id": "UC-ADV5-P20",
+      "reason": "热容差修正van't Hoff",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-P33",
+      "prior_id": "UC-ADV5-P25",
+      "reason": "有限储液池混合Gibbs能",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-P34",
+      "prior_id": "UC-ADV5-P11",
+      "reason": "有限热库可逆热机",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-P35",
+      "prior_id": "UC-ADV4-P09",
+      "reason": "平板一阶反应扩散",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-P36",
+      "prior_id": "UC-ADV4-P10",
+      "reason": "BV和欧姆降自洽根",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-P37",
+      "prior_id": "UC-ADV5-P19",
+      "reason": "正则溶液自旋分解判据",
+      "decision": "pending_human_review"
+    },
+    {
+      "new_id": "UC-ADV6-P39",
+      "prior_id": "UC-ADV5-P25",
+      "reason": "浓差资源与自由能；新增了电动势积分框架",
+      "decision": "pending_human_review"
+    }
+  ],
+  "total_new_records": 50,
+  "number_of_suspected_overlaps": 35,
+  "release_approved": 0
+}
