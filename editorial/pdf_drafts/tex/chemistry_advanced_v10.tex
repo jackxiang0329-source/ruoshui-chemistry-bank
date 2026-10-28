@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第10辑 (4题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第10辑 (12题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -57,6 +57,48 @@
 仅按题设理想化模型处理；实际化学性、跨辑核心模型独立性、版权和专家审校仍待核准。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I102 · 质子耦合电子转移方形热力学循环与pH形式电势}
+\noindent\textbf{题目}\par
+某假想无机金属配合物发生一电子氧化还原，氧化态OxH与还原态RedH可分别失去一个质子成为Ox和Red。已知pKa(OxH)=5.000、pKa(RedH)=8.000，在298.15K时质子化态一电子标准还原电位OxH+e−→RedH为E°H=0.6200V。忽略进一步质子化及其它配位变化，假设四种物种理想且氧化态与还原态总活度相等。求完全去质子化的Ox/Red一电子标准还原电势、pH=6.500时的形式电势、两态在该pH下的质子化分数，以及pH=2.000的形式电势，并说明高低pH极限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 写两个酸解离平衡：OxH⇌Ox+H+、RedH⇌Red+H+，各平衡常数分别10\textasciicircum{}−5与10\textasciicircum{}−8。
+\item 由热力学方形循环，去质子化标准电位E°deprot=E°H+(RT/F)ln(Ka,Red/Ka,Ox)=0.442521951V；此处还原态酸性更弱，使去质子化电位变低。
+\item pH=6.500下氧化态质子化份额αOxH=1/(1+10\textasciicircum{}(pH−pKa,Ox))=0.03065343。
+\item 对应还原态质子化份额αRedH=1/(1+10\textasciicircum{}(pH−pKa,Red))=0.96934657。
+\item 将Nernst式用于各自总活度相等的条件，Eformal=EH+(RT/F)ln(αOxH/αRedH)=0.531260975V。
+\item pH=2.000时形式电位为0.619974346V，接近全质子化电位0.6200V；pH远大于8时趋于0.442521951V。
+\item 平衡常数与形式电势在任意pH遵循同一热力学闭合循环；若有氧化态聚集或电子数不同，该四角模型失效。
+\item 独立代回原始配分、强度或热力学公式所得主要残差：0.000e+0、-2.776e-17、0.000e+0；若超出题设近似则需重新建模。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.442521951 V；答案2 = 0.531260975 V；答案3 = 0.03065343 fraction；答案4 = 0.96934657 fraction；答案5 = 0.619974346 V\par
+\noindent\textbf{模型前提：}
+标准态、理想活度和模型参数仅按本题设定成立，未经专家科学性及跨辑原创性审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I103 · Born–Landé离子晶体静电晶格能与NaCl型密度校核}
+\noindent\textbf{题目}\par
+假想NaCl型立方一价离子晶体，Madelung常数A\_M=1.74756、最近邻正负离子距离r0=0.2820nm、Born排斥指数n=9.000。用ε0=8.8541878128×10\textasciicircum{}-12F/m、e=1.602176634×10\textasciicircum{}-19C、NA=6.02214076×10\textasciicircum{}23mol\textasciicircum{}-1计算每mol化学式单元晶格生成能U=−NA A\_M e²/(4πε0r0)(1−1/n)。另给假想摩尔质量58.44g/mol、常规NaCl型晶胞含4个化学式单元，几何晶格常数a=2r0。求不含短程排斥修正的库仑能量大小、晶格生成能、反向解离能、理论晶体密度和排斥校正所占库仑项百分比，并核对负号代表晶格形成放热。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 不含Born短程排斥修正的库仑吸引大小Uc=NA A\_M e²/(4πε0r0)=860.985987kJ/mol。
+\item Born–Landé晶格形成能U=−Uc(1−1/n)=-765.320877kJ/mol。
+\item 气态自由离子分离固体的反向晶格解离能=−U=765.320877kJ/mol，正号代表需供能。
+\item 排斥能修正相对Uc的比例为1/n=0.111111111（11.1111111\%），不能重复把晶格生成能换号。
+\item NaCl常规晶胞边长a=2r0=0.564nm，含4个化学式单元。
+\item 使用式量0.05844kg/mol，密度ρ=4MW/[NA(2r0)\textasciicircum{}3]=2163.62497kg/m³。
+\item 真实晶格能还包含极化、色散及离子非球形效应；Born–Landé表达式只是所指定的离子晶体近似。
+\item 独立代回原始配分、强度或热力学公式所得主要残差：0.000e+0、0.000e+0、-1.110e-16；若超出题设近似则需重新建模。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 860.985987 kJ/mol；答案2 = -765.320877 kJ/mol；答案3 = 765.320877 kJ/mol；答案4 = 2163.62497 kg/m³；答案5 = 0.111111111 fraction\par
+\noindent\textbf{模型前提：}
+标准态、理想活度和模型参数仅按本题设定成立，未经专家科学性及跨辑原创性审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第10辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -78,6 +120,48 @@
 答案1 = 1.23473473e+09 s/m²；答案2 = 0.476712909 signal fraction；答案3 = 6e-10 m²/s；答案4 = 0.0516449249 signal fraction\par
 \noindent\textbf{模型前提：}
 仅按题设理想化模型处理；实际化学性、跨辑核心模型独立性、版权和专家审校仍待核准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A102 · EPR两个不等价核自旋的六重超精细分裂与谱线重心}
+\noindent\textbf{题目}\par
+一个假想有机自由基的S=1/2电子自旋耦合两个互不等价核：一个14N核自旋I\_N=1、各向同性超精细常数A\_N=15.00G，另一个1H核I\_H=1/2、常数A\_H=5.000G。假设高场一阶近似、核跃迁不改变mI、无可分辨二阶项及自旋驰豫差异，未分裂电子共振磁场B0=340.0mT，1G=0.1000mT。共振位置B=B0−mN A\_N−mH A\_H。求总谱线数、所有六条谱线位置及相对积分强度、线谱重心与总跨度，验证核态等简并时积分强度为1:1:1:1:1:1。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 14N的核磁量子数mN=−1,0,+1有三个取值，1H的mH=−1/2,+1/2有两个取值。
+\item 不等价核的高场一级超精细谱线总数(2I\_N+1)(2I\_H+1)=3×2=6。
+\item 将A\_N=1.500mT、A\_H=0.5000mT代入B=B0−mN A\_N−mH A\_H，并排序得到338.25、338.75、339.75、340.25、341.25、341.75mT。
+\item 假设每个核自旋投影等概率且所有六条互不重叠，每条积分信号等于总积分的1/6。
+\item 对六条谱线等权求重心，Bcentroid=340mT。
+\item 最大与最小场的跨度ΔB=3.5mT；这是核超精细展宽而非额外电子自旋态数。
+\item 若两核A值使谱线完全重合，会出现组合重叠强度，需要按mN和mH逐线相加，而不能仍认作六条可分辨峰。
+\item 独立代回原始配分、强度或热力学公式所得主要残差：0.000e+0、0.000e+0、0.000e+0；若超出题设近似则需重新建模。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 6 lines；答案2 = 338.25 mT；答案3 = 338.75 mT；答案4 = 339.75 mT；答案5 = 340.25 mT；答案6 = 341.25 mT；答案7 = 341.75 mT；答案8 = 340 mT；答案9 = 3.5 mT\par
+\noindent\textbf{模型前提：}
+标准态、理想活度和模型参数仅按本题设定成立，未经专家科学性及跨辑原创性审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A103 · 色谱峰方差的柱外展宽扣除与分离度真实测量}
+\noindent\textbf{题目}\par
+某高效液相色谱系统的柱长1.200m，峰1保留时间tR1=8.000min、检测到的高斯峰标准差σobs,1=0.2500min。独立使用零保留标记得到柱外装置标准差σext=0.1500min，假设柱内与柱外的高斯方差独立可加、无峰拖尾。第二峰tR2=8.800min、σobs,2=0.3000min，共用相同柱外展宽。求峰1柱内真实σ、表观及扣除柱外后的理论塔板数N=(tR/σ)\textasciicircum{}2、校正后塔板高度H=L/N、基于各峰σ的检测端表观分离度及剔除柱外展宽后的柱本征分离度，说明后者不是实际检测器已经实现的分离度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 高斯独立展宽必须以方差相加，σcol,1=√(σobs,1²−σext²)=0.2min，而不能直接从标准差做差。
+\item 不扣除柱外展宽的表观塔板数Nobs=(8/0.25)²=1024。
+\item 柱本征塔板数Ncol=(8/σcol,1)²=1600。
+\item 由柱长1.200m得到Hcol=L/Ncol=0.00075m。
+\item 峰2柱本征标准差σcol,2=√(0.3000²−0.1500²)=0.259807621min。
+\item 以基线宽约4σ的公式Rs=Δt/[2(σ1+σ2)]，检测端Rs,obs=0.727272727，去柱外展宽的柱内Rs,col=0.869929035。
+\item 柱内Rs描述理想去除外部散布后的本征性能；实际检测系统的峰仍具有柱外展宽，必须使用Rs,obs评估实测分离。
+\item 独立代回原始配分、强度或热力学公式所得主要残差：0.000e+0、0.000e+0、0.000e+0；若超出题设近似则需重新建模。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.2 min；答案2 = 1024 plates；答案3 = 1600 plates；答案4 = 0.00075 m；答案5 = 0.259807621 min；答案6 = 0.727272727 ratio；答案7 = 0.869929035 ratio\par
+\noindent\textbf{模型前提：}
+标准态、理想活度和模型参数仅按本题设定成立，未经专家科学性及跨辑原创性审定。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -103,6 +187,48 @@
 仅按题设理想化模型处理；实际化学性、跨辑核心模型独立性、版权和专家审校仍待核准。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O99 · 氢氘动力学同位素效应的Eyring焓熵拆分与温度反演}
+\noindent\textbf{题目}\par
+假想有机C–H键断裂为速率决定步骤的反应，氘代同系物在相同溶剂下形成同一类型的产物，给定实测一级动力学同位素效应KIE=kH/kD：298.15K为6.000、340.0K为4.000。假设在这一温度区间两者过渡态活化焓差ΔΔH‡=ΔH‡H−ΔH‡D与活化熵差ΔΔS‡=ΔS‡H−ΔS‡D恒定，且Eyring通用kBT/h因子在速率比中相消。由ln(kH/kD)=−ΔΔH‡/(RT)+ΔΔS‡/R反推出ΔΔH‡、ΔΔS‡、298.15K的ΔΔG‡，预测320K时KIE，并解释为何较低温的KIE更大并不能直接证明量子隧穿。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 同温度速率比消去Eyring共同kBT/h项，得到lnKIE对1/T的直线，斜率m=−ΔΔH‡/R。
+\item 两温度点直线斜率m=[ln4−ln6]/[1/340−1/298.15]=982.136284K。
+\item 因此ΔΔH‡=−R m=-8.16593542kJ/mol；符号负表示H通道相对D有更低活化焓。
+\item 由298.15K的ln6=−ΔΔH‡/(RT1)+ΔΔS‡/R，求得ΔΔS‡=-12.4911645J/(mol K)。
+\item 298.15K时ΔΔG‡=ΔΔH‡−T1ΔΔS‡=-4.44169473kJ/mol。
+\item 在320K按恒焓熵关系预测KIE=4.79145498，介于4和6之间。
+\item 普通零点能差即可造成温度依赖KIE；隧穿需要更多温度点、基团结构和动力学证据，不能由两点比值单独证成。
+\item 由题设能量、物料或统计分布公式重代所得归一化残差：0.000e+0、-6.661e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = -8.16593542 kJ/mol；答案2 = -12.4911645 J/(mol K)；答案3 = -4.44169473 kJ/mol；答案4 = 4.79145498 ratio；答案5 = 982.136284 K\par
+\noindent\textbf{模型前提：}
+理想状态、独立过程、纯一阶模型按题设成立；实验事实和跨辑模型独立性待专家确认。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O100 · 有机光脱保护薄膜的Beer–Lambert吸收深度分布与量子转化}
+\noindent\textbf{题目}\par
+一层均匀有机光脱保护聚合物膜厚L=100.0μm，采用365nm单色光照射、入射光子通量F0=1.000×10\textasciicircum{}20 photons/(m²s)，介质单程吸收系数α=2.000×10\textasciicircum{}4m\textasciicircum{}-1。假设没有反射、散射、二次吸收与产物遮光，局部光子通量F(z)=F0exp(−αz)，每吸收一个光子生成目标脱保护产物的量子产率φ=0.1500，产物均留在膜中。求全膜光子吸收分数、每平方米每秒的目标产物mol生成速率、全部被吸收光子的位置平均深度，以及前半层(0至L/2)占所有光子吸收的比例；说明为何不能把薄膜吸收当作沿厚度均匀分布。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 光学厚度αL=2，全膜的光子吸收率A=1−exp(−αL)=0.864664717。
+\item 单位面积每秒吸收光子数Fabs=F0A=86466471700000000000photons/(m²s)。
+\item 目标产物摩尔通量Jproduct=φFabs/NA=0.0000215371431mol/(m²s)。
+\item 沿膜厚的光子吸收分布密度正比于αexp(−αz)，不能用位置均匀分布计算平均深度。
+\item 条件于光子确已被全膜吸收，平均吸收深度〈z〉=[1−(1+αL)exp(−αL)]/[α(1−exp(−αL))]=34.3482357μm。
+\item 前半膜吸收份额fhalf=[1−exp(−αL/2)]/[1−exp(−αL)]=0.731058579，高于均匀膜的0.5。
+\item 极限αL趋零时平均吸收深度趋L/2、前半膜份额趋1/2；极限αL很大时吸收趋向入射表面。
+\item 由题设能量、物料或统计分布公式重代所得归一化残差：0.000e+0、1.110e-16、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.864664717 fraction；答案2 = 2.15371431e-05 mol/(m²s)；答案3 = 34.3482357 μm；答案4 = 0.731058579 fraction；答案5 = 2 dimensionless\par
+\noindent\textbf{模型前提：}
+理想状态、独立过程、纯一阶模型按题设成立；实验事实和跨辑模型独立性待专家确认。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第10辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -124,6 +250,48 @@
 答案1 = 3.27938091e-05 m²/s；答案2 = 1.16212699e-05 m²/s；答案3 = 1.62697778e-06 m²/s；答案4 = 0.00508430557 mol/(m²s)；答案5 = 1.54888409 ratio\par
 \noindent\textbf{模型前提：}
 仅按题设理想化模型处理；实际化学性、跨辑核心模型独立性、版权和专家审校仍待核准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P99 · 单级热电离Saha平衡的正根选择与等温压强}
+\noindent\textbf{题目}\par
+某假想稀薄单原子气体在T=8000K达到局部热平衡，只发生第一电离A⇌A++e−，忽略二次电离、电子简并与粒子间强相互作用。气体原子核总数密度N=nA+nA+=1.000×10\textasciicircum{}21m\textasciicircum{}-3，已把电子及原子内部配分因素合并的Saha系数S(T)=4.000×10\textasciicircum{}20m\textasciicircum{}-3，给定平衡式n\_e n\_A+/n\_A=S(T)，并满足电中性n\_e=n\_A+。求电离分数x=nA+/N、电子与中性原子数密度、理想总压强p=(nA+nA++n\_e)kBT，以及若每个电离原子储存12.00eV电离能时每立方米的电离内能；严格选择0≤x≤1的正根。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 定义电离分数x=nA+/N，电中性给n\_e=Nx，且nA=N(1−x)。
+\item Saha平衡写为x²/(1−x)=S/N=0.4，整理为x²+Kx−K=0。
+\item 物理解取x=[−K+√(K²+4K)]/2=0.463324958，另一负根不满足数密度非负性。
+\item 电子数密度ne=Nx=463324958000000000000m\textasciicircum{}-3，中性原子数密度nA=N(1−x)=536675042000000000000m\textasciicircum{}-3。
+\item 总粒子数密度N+ne=N(1+x)，理想压强p=N(1+x)kBT=161.627051Pa。
+\item 若每次第一电离固定耗能12.00eV，电离内能密度u\_ion=ni×12eV=890.794106J/m³。
+\item S(T)本身随温度与粒子配分函数变化，本题只使用已给定T的系数；非理想高密度等离子体还需校正电离能降低等效应。
+\item 由题设能量、物料或统计分布公式重代所得归一化残差：2.220e-16、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.463324958 fraction；答案2 = 4.63324958e+20 m\textasciicircum{}-3；答案3 = 5.36675042e+20 m\textasciicircum{}-3；答案4 = 161.627051 Pa；答案5 = 890.794106 J/m³\par
+\noindent\textbf{模型前提：}
+理想状态、独立过程、纯一阶模型按题设成立；实验事实和跨辑模型独立性待专家确认。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P100 · 热膨胀和等温压缩率决定Cp−Cv及PVT偏导的Maxwell闭合}
+\noindent\textbf{题目}\par
+某假想单相液体在300.0K和当前参考压强处有摩尔体积V=1.800×10\textasciicircum{}-5m³/mol、定压摩尔热容Cp=75.00J/(mol K)、体膨胀系数α=(1/V)(∂V/∂T)P=2.000×10\textasciicircum{}-4K\textasciicircum{}-1和等温压缩率κT=−(1/V)(∂V/∂P)T=5.000×10\textasciicircum{}-10Pa\textasciicircum{}-1，假设小范围内这些参数不变。由热力学恒等式Cp−Cv=TVα²/κT与(∂P/∂T)V=α/κT求定容热容Cv、定容升温压强斜率、定压体积温度导数和等温体积压强导数；另用常Cp近似算300至310K定压过程熵增，分别检查量纲和正稳定性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 根据热力学恒等式Cp−Cv=T V α²/κT=0.432J/(mol K)，它因κT>0而非负。
+\item Cv=Cp−(Cp−Cv)=74.568J/(mol K)，仍应严格大于0。
+\item 定容压强温度导数(∂P/∂T)V=α/κT=400000Pa/K。
+\item 定压体积温度导数(∂V/∂T)P=αV=3.6e-9m³/(mol K)。
+\item 等温体积压强导数(∂V/∂P)T=−κTV=-9e-15m³/(mol Pa)，符号必须为负。
+\item 在Cp近似恒定下300至310K定压过程的摩尔熵增ΔS=Cp ln(310/300)=2.45923671J/(mol K)。
+\item 统一以SI处理热容差，检查Cp>Cv>0及κT>0；若跨越相变或参数强烈变化，应积分真实状态函数而非外推这些常数。
+\item 由题设能量、物料或统计分布公式重代所得归一化残差：2.109e-15、0.000e+0、0.000e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 74.568 J/(mol K)；答案2 = 0.432 J/(mol K)；答案3 = 400000 Pa/K；答案4 = 3.6e-09 m³/(mol K)；答案5 = -9e-15 m³/(mol Pa)；答案6 = 2.45923671 J/(mol K)\par
+\noindent\textbf{模型前提：}
+理想状态、独立过程、纯一阶模型按题设成立；实验事实和跨辑模型独立性待专家确认。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
