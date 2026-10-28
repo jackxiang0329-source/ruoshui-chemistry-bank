@@ -1,0 +1,22 @@
+name: Advanced chemistry only
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Enforce high-level-only candidate policy
+        run: node scripts/audit-advanced-only.mjs
+      - name: Verify original first-series scientific models
+        run: node --test tests/advanced-integrated-12.test.mjs
+      - name: Verify second-series scientific models
+        run: node scripts/check-advanced-authored-chemistry.mjs
