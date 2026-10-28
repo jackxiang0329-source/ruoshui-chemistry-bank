@@ -64,6 +64,8 @@ on:
       - "tests/chemtrain-reactivity.test.mjs"
       - "scripts/import-qcedu-introqm.mjs"
       - "scripts/audit-candidate-quality.mjs"
+      - "scripts/audit-main-candidate-numerics.mjs"
+      - "tests/main-candidate-numerics.test.mjs"
       - "scripts/audit-mcq-integrity.mjs"
       - "scripts/build-expert-review-plan.mjs"
       - "scripts/build-publication-index.mjs"
@@ -174,6 +176,8 @@ jobs:
         run: node --test tests/chemtrain-daily-text.test.mjs
       - name: Verify existing MIT Muza quiz coverage and prevent duplicate imports
         run: node --test tests/muzapro-existing-coverage.test.mjs
+      - name: Verify 304 actual stored original chemistry numerical questions, provenance and inverse checks
+        run: node --test tests/main-candidate-numerics.test.mjs
       - name: Verify candidate review buckets and semantic overlap audit
         run: node --test tests/candidate-quality-audit.test.mjs
       - name: Verify deterministic chemistry expert review sampler
@@ -270,6 +274,8 @@ jobs:
         run: node scripts/normalize-unpublished-candidates.mjs
       - name: Audit candidate review buckets and potential duplicates
         run: node scripts/audit-candidate-quality.mjs
+      - name: Recalculate persisted chemistry main-candidate numeric solutions with source-specific inverse checks
+        run: node scripts/audit-main-candidate-numerics.mjs
       - name: Audit MCQ answer key and duplicate upstream source indices
         run: node scripts/audit-mcq-integrity.mjs
       - name: Build fail-closed expert review plan grouped by source and numerical templates
@@ -296,7 +302,7 @@ jobs:
         run: node scripts/report-chemistry-coverage.mjs
       - name: Commit only real additions or changes
         run: |
-          git add -- harvest/source_candidates.json harvest/quality_audit.json harvest/mcq_integrity_audit.json harvest/source_review_queue.json harvest/expert_review_plan.json harvest/coverage_report.json release/chemistry-approved-manifest.json
+          git add -- harvest/source_candidates.json harvest/quality_audit.json harvest/main_original_numeric_replay.json harvest/mcq_integrity_audit.json harvest/source_review_queue.json harvest/expert_review_plan.json harvest/coverage_report.json release/chemistry-approved-manifest.json
           if [ -f harvest/external_source_catalog.json ]; then
             git add -- harvest/external_source_catalog.json
           fi
