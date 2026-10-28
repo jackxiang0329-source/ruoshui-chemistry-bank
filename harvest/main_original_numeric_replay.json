@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "checked_stored_candidate_records": 304,
+  "checked_distinct_candidate_ids": 304,
+  "provenance_bound_generator_families": 5,
+  "reviewed_physical_candidate_records": 144,
+  "reviewed_analytical_candidate_records": 160,
+  "source_question_rights_machine_verified": true,
+  "source_question_rights_legally_confirmed_by_auditor": false,
+  "expert_science_approved": 0,
+  "publishable_approved": 0,
+  "formally_exam_ready": 0,
+  "coverage_vs_main_records": {
+    "audited": 304,
+    "total": 1715,
+    "other_candidates_not_yet_covered": 1411
+  },
+  "audited_candidate_id_sha256": "f70616072e319947c1b5a4b3a867901fe98fcd3c1fa68de96eab317cc7e8b091",
+  "families": [
+    {
+      "family": "basic_physical_24",
+      "source_file": "scripts/import-original-physical.mjs",
+      "subject": "physical",
+      "records_on_disk_science_replayed": 24,
+      "method_topics": {
+        "chemical_equilibrium": 6,
+        "chemical_kinetics": 12,
+        "chemical_thermodynamics": 6
+      },
+      "scientific_model_review_human_approved": 0,
+      "publication_approved": 0
+    },
+    {
+      "family": "extended_physical_72",
+      "source_file": "scripts/import-original-physical-variants.mjs",
+      "subject": "physical",
+      "records_on_disk_science_replayed": 72,
+      "method_topics": {
+        "nernst_equation": 12,
+        "vant_hoff_equilibrium_temperature": 12,
+        "vapor_pressure_temperature": 12,
+        "dilute_solution_osmotic_pressure": 12,
+        "dilute_solution_freezing_point": 12,
+        "quantum_particle_in_box": 12
+      },
+      "scientific_model_review_human_approved": 0,
+      "publication_approved": 0
+    },
+    {
+      "family": "advanced_physical_48",
+      "source_file": "scripts/import-original-advanced-physical.mjs",
+      "subject": "physical",
+      "records_on_disk_science_replayed": 48,
+      "method_topics": {
+        "ideal_binary_vle_raoult": 6,
+        "arrhenius_activation_energy_two_temperatures": 6,
+        "isothermal_ideal_gas_entropy": 6,
+        "debye_huckel_mean_activity_coefficient": 6,
+        "langmuir_surface_coverage": 6,
+        "harmonic_oscillator_vibrational_spacing": 6,
+        "molecular_electronic_transition_photon": 6,
+        "eyring_activation_free_energy": 6
+      },
+      "scientific_model_review_human_approved": 0,
+      "publication_approved": 0
+    },
+    {
+      "family": "stoichiometric_analytical_96",
+      "source_file": "scripts/import-original-analytical-variants.mjs",
+      "subject": "analytical",
+      "records_on_disk_science_replayed": 96,
+      "method_topics": {
+        "primary_standard_acid_standardization": 12,
+        "edta_zinc_complexometric_standardization": 12,
+        "iodometric_kio3_standardization": 12,
+        "permanganate_oxalate_standardization": 12,
+        "double_indicator_carbonate_bicarbonate": 12,
+        "copper_iodometric_mass_fraction": 12,
+        "calcium_oxalate_indirect_assay": 12,
+        "stepwise_pb_bi_complexometry": 12
+      },
+      "scientific_model_review_human_approved": 0,
+      "publication_approved": 0
+    },
+    {
+      "family": "instrumental_analytical_64",
+      "source_file": "scripts/import-original-instrumental-analytical.mjs",
+      "subject": "analytical",
+      "records_on_disk_science_replayed": 64,
+      "method_topics": {
+        "uv_vis_beer_lambert": 8,
+        "single_point_standard_addition": 8,
+        "chromatographic_baseline_resolution": 8,
+        "chromatographic_theoretical_plates": 8,
+        "coulometric_copper_deposition": 8,
+        "conductivity_cell_calibration": 8,
+        "gravimetric_chloride_silver": 8,
+        "fluorescence_stern_volmer": 8
+      },
+      "scientific_model_review_human_approved": 0,
+      "publication_approved": 0
+    }
+  ],
+  "representative_review_queue": [
+    {
+      "family": "basic_physical_24",
+      "topic": "chemical_equilibrium",
+      "example_id": "0c678f87a70f04ce86c3a828b62af64ef23684e5ef9c0d62829800c2c62f8945",
+      "original_candidate_json": "data/candidates/0c678f87a70f04ce86c3a828b62af64ef23684e5ef9c0d62829800c2c62f8945.json",
+      "numerical_values": [
+        5.708
+      ],
+      "review_required": "chemistry_expert_scientific_assumptions_and_semantic_duplicates"
+    },
+    {
+      "family": "extended_physical_72",
+      "topic": "nernst_equation",
+      "example_id": "f3416b6302f4499c693789c1501914d4ab6a374185bf083548e37b3b93b1e65e",
+      "original_candidate_json": "data/candidates/f3416b6302f4499c693789c1501914d4ab6a374185bf083548e37b3b93b1e65e.json",
+      "numerical_values": [
+        1.2168200749603555
+      ],
+      "review_required": "chemistry_expert_scientific_assumptions_and_semantic_duplicates"
+    },
+    {
+      "family": "advanced_physical_48",
+      "topic": "ideal_binary_vle_raoult",
+      "example_id": "dbbdc2cb556150b3fd561c066fb04d72e137cba7cd10c427c58fbc78ccb0eef4",
+      "original_candidate_json": "data/candidates/dbbdc2cb556150b3fd561c066fb04d72e137cba7cd10c427c58fbc78ccb0eef4.json",
+      "numerical_values": [
+        57.8,
+        0.5013840830449827
+      ],
+      "review_required": "chemistry_expert_scientific_assumptions_and_semantic_duplicates"
+    },
+    {
+      "family": "stoichiometric_analytical_96",
+      "topic": "primary_standard_acid_standardization",
+      "example_id": "1a6d2728292b5e293239ecd3008813db42b372a61b2c081812f099feb5b8fc7a",
+      "original_candidate_json": "data/candidates/1a6d2728292b5e293239ecd3008813db42b372a61b2c081812f099feb5b8fc7a.json",
+      "numerical_values": [
+        0.11252576190760598
+      ],
+      "review_required": "chemistry_expert_scientific_assumptions_and_semantic_duplicates"
+    },
+    {
+      "family": "instrumental_analytical_64",
+      "topic": "uv_vis_beer_lambert",
+      "example_id": "df626273e8ed16418a9c618b68c6b29027c3710dee979d34571dc987a4882142",
+      "original_candidate_json": "data/candidates/df626273e8ed16418a9c618b68c6b29027c3710dee979d34571dc987a4882142.json",
+      "numerical_values": [
+        31
+      ],
+      "review_required": "chemistry_expert_scientific_assumptions_and_semantic_duplicates"
+    }
+  ],
+  "caveat": "Replayed original candidate files against generator reference, independently inverted scientific equations and exact question/answer/unit metadata. This detects stored corruption but is not a human chemistry accuracy/rights review and does not add new questions."
+}
