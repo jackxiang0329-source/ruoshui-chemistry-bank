@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至10辑 (406题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至10辑 (410题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -7988,6 +7988,27 @@ ATR红外测量用晶体折射率n1=2.400、样品n2=1.400，真空波长λ=6.00
 标准态、理想活度和模型参数仅按本题设定成立，未经专家科学性及跨辑原创性审定。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I104 · 尖晶石反位阳离子分布的构型熵与平衡反位度}
+\noindent\textbf{题目}\par
+考虑假想正常尖晶石AB₂O₄，其中A为二价、B为三价，氧为二价；每化学式单位有1个四面体阳离子位与2个八面体阳离子位。设反位度x使四面体位组成为A\_(1−x)B\_x、八面体位组成为[A\_x B\_(2−x)]，0≤x≤1。每摩尔化学式单位的反位能代价为Δx，Δ=12.00 kJ/mol；T=1000.0 K，忽略相互作用并将两类位点视作各自理想混合。求平衡x、八面体位A和B的位点分数、每摩尔化学式单位构型熵S\_conf/R、相对x=0有序态的平衡自由能G−G₀，并说明Δ=0与低温极限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 按每个化学式单位计，四面体A、B分别为1−x与x，八面体A、B分别为x与2−x；总A=1、总B=2，离子电荷2+6−8=0。
+\item 两类子晶格各自理想混合，构型熵除以R为−[(1−x)ln(1−x)+x ln x+x ln(x/2)+(2−x)ln((2−x)/2)]，其中0 ln 0取连续极限0。
+\item 以x=0有序态为零，G(x)−G₀=Δx−T S\_conf(x)；驻点条件dG/dx=Δ+RT ln[x²/((1−x)(2−x))]=0。
+\item 设K=exp(−Δ/RT)=0.2361546810，平衡方程x²=K(1−x)(2−x)，即(1−K)x²+3Kx−2K=0。
+\item 选择0≤x≤1的根x=0.4491556286；另一个根为负，不能代表位点占据。二阶导数RT[2/x+1/(1−x)+1/(2−x)]>0，故驻点是唯一稳定极小值。
+\item 八面体位A分数x/2=0.2245778143，B分数1−x/2=0.7754221857；四面体A、B分数之和也为1。
+\item 代回理想混合熵得S\_conf/R=1.7532503045，代回G(x)−G₀=Δx−RT(S\_conf/R)=−9187.466573 J/mol；自由能负值说明在该温度熵增足以抵消反位能。
+\item 若Δ=0，随机分布给x=2/3；若Δ>0且T→0，则K→0、x→0。模型未考虑真实尖晶石晶场能的非线性、振动熵及位点相关性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.449155629 fraction；答案2 = 0.224577814 fraction；答案3 = 0.775422186 fraction；答案4 = 1.7532503 dimensionless；答案5 = -9187.46657 J/mol\par
+\noindent\textbf{模型前提：}
+AB₂O₄仅为理想化二价/三价尖晶石；反位能线性、理想子晶格混合、定温平衡；跨辑模型和真实材料适用性仍待人工复核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第10辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -8051,6 +8072,27 @@ ATR红外测量用晶体折射率n1=2.400、样品n2=1.400，真空波长λ=6.00
 答案1 = 0.2 min；答案2 = 1024 plates；答案3 = 1600 plates；答案4 = 0.00075 m；答案5 = 0.259807621 min；答案6 = 0.727272727 ratio；答案7 = 0.869929035 ratio\par
 \noindent\textbf{模型前提：}
 标准态、理想活度和模型参数仅按本题设定成立，未经专家科学性及跨辑原创性审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A104 · 双指数荧光寿命的频域相量与强度加权均值}
+\noindent\textbf{题目}\par
+某假想时间分辨荧光样品受到理想瞬时激发，已去除仪器响应及背景。荧光衰减为I(t)=A₁exp(−t/τ₁)+A₂exp(−t/τ₂)，其中A₁=0.6500、A₂=0.3500，τ₁=1.500 ns、τ₂=5.000 ns，t≥0。定义积分光子份额f₂=∫I₂dt/∫Idt、平均光子到达时间〈t〉=∫tI dt/∫I dt，以及100.0 MHz调制角频率ω=2πf下的相量G=∫I cos(ωt)dt/∫I dt、S=∫I sin(ωt)dt/∫I dt。求f₂、〈t〉、G、S与按单指数关系误推的τ\_app=S/(ωG)，解释A₂为何不等于f₂。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将100.0 MHz写成0.1000 ns⁻¹，故ω=0.6283185307 rad/ns；积分变量全用ns，避免把MHz与ns直接相乘。
+\item 单指数积分∫₀∞exp(−t/τ)dt=τ，因而总积分D=A₁τ₁+A₂τ₂=0.6500×1.500+0.3500×5.000=2.725 ns。
+\item 第二组分积分光子份额f₂=A₂τ₂/D=0.6422018349；初始振幅A₂=0.3500并非积分份额，因为长寿命组分每单位初始振幅贡献更多光子。
+\item 利用∫₀∞t exp(−t/τ)dt=τ²，得到〈t〉=(A₁τ₁²+A₂τ₂²)/D=3.747706422 ns。
+\item 余弦积分为τ/[1+(ωτ)²]，所以G=Σ[A\_iτ\_i/(1+(ωτ\_i)²)]/D=0.2485675603。
+\item 正弦积分为ωτ²/[1+(ωτ)²]，所以S=Σ[A\_iωτ\_i²/(1+(ωτ\_i)²)]/D=0.3641982929。
+\item 若强行套用单指数相量式，τ\_app=S/(ωG)=2.331919681 ns，与真实强度加权平均〈t〉不同，不能将混合衰减当作单指数。
+\item 积分归一化检查f₁+f₂=1；G、S均位于[0,1]且G²+S²<1。若存在散射、响应卷积或能量转移，必须另行修正，不能照搬本题相量。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.642201835 fraction；答案2 = 3.74770642 ns；答案3 = 0.24856756 dimensionless；答案4 = 0.364198293 dimensionless；答案5 = 2.33191968 ns\par
+\noindent\textbf{模型前提：}
+双指数独立辐射衰减、无仪器响应和背景、固定预指数系数；频率采用每ns单位，尚未专家审定。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -8118,6 +8160,27 @@ ATR红外测量用晶体折射率n1=2.400、样品n2=1.400，真空波长λ=6.00
 理想状态、独立过程、纯一阶模型按题设成立；实验事实和跨辑模型独立性待专家确认。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O101 · 动态动力学拆分中消旋互变与双通道产物对映选择性}
+\noindent\textbf{题目}\par
+假想手性底物的R、S对映体在恒温均相体系中以相同一级速率常数k\_r=0.0400 min⁻¹双向消旋互变R⇌S；同时R以k\_R=0.1200 min⁻¹不可逆生成P\_R，S以k\_S=0.0200 min⁻¹不可逆生成P\_S。初始总底物归一化为1.0000 mol，其中R₀=S₀=0.5000 mol，P\_R,0=P\_S,0=0。反应体积恒定，所有通道一级、无副反应，反应20.00 min。求剩余R、S摩尔数、两产物摩尔数、产物对映体过量ee\_P=(P\_R−P\_S)/(P\_R+P\_S)及转化率，并核对质量守恒与消旋极限的意义。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设底物列向量v=(R,S)\textasciicircum{}T，则dv/dt=Mv，M=[[-(k\_R+k\_r),k\_r],[k\_r,−(k\_S+k\_r)]]，初始v₀=(0.5,0.5)\textasciicircum{}T。产物满足dP\_R/dt=k\_R R、dP\_S/dt=k\_S S。
+\item 令m=(k\_R+k\_S+2k\_r)/2=0.1100 min⁻¹，d=√\{[(k\_R−k\_S)/2]²+k\_r²\}=0.0640312424 min⁻¹，矩阵指数为e\textasciicircum{}(Mt)=e\textasciicircum{}(−mt)[cosh(dt)I+(sinh(dt)/d)(M+mI)]。
+\item 由(M+mI)v₀=(−0.0050,0.0450)\textasciicircum{}T min⁻¹，故R(t)=e\textasciicircum{}(−mt)[0.5cosh(dt)−0.005sinh(dt)/d]，S(t)=e\textasciicircum{}(−mt)[0.5cosh(dt)+0.045sinh(dt)/d]。
+\item t=20.00 min时，R=0.09302187103 mol、S=0.23669390978 mol；因R被优先消耗，剩余底物富集S。
+\item 设J\_R=∫₀ᵗR(u)du、J\_S=∫₀ᵗS(u)du。积分微分方程给M(J\_R,J\_S)\textasciicircum{}T=v(t)−v₀，因det M=(k\_R+k\_r)(k\_S+k\_r)−k\_r²=0.0080 min⁻²>0，可唯一反解。
+\item 由P\_R=k\_R J\_R、P\_S=k\_S J\_S，得到P\_R=0.52426397020 mol、P\_S=0.14602024899 mol。不能简单以瞬时R/S比例乘以速率得到累计产物。
+\item 产物ee\_P=(P\_R−P\_S)/(P\_R+P\_S)=0.5643034856，转化率X=P\_R+P\_S=0.6702842192；R+S+P\_R+P\_S=1.0000000000 mol。
+\item 若k\_r→0则两底物独立指数衰减；若k\_r远大于两个反应速率，底物近似快速消旋，产物分流趋向k\_R:k\_S。本题无外消旋副反应与产物再互变。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.093021871 mol；答案2 = 0.23669391 mol；答案3 = 0.52426397 mol；答案4 = 0.146020249 mol；答案5 = 0.564303486 fraction；答案6 = 0.670284219 fraction\par
+\noindent\textbf{模型前提：}
+封闭体系，双向消旋速率对称且产物不可逆、不互变；速率常数恒定；模型新颖性与实际机理待专家审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第10辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -8181,6 +8244,28 @@ ATR红外测量用晶体折射率n1=2.400、样品n2=1.400，真空波长λ=6.00
 答案1 = 74.568 J/(mol K)；答案2 = 0.432 J/(mol K)；答案3 = 400000 Pa/K；答案4 = 3.6e-09 m³/(mol K)；答案5 = -9e-15 m³/(mol Pa)；答案6 = 2.45923671 J/(mol K)\par
 \noindent\textbf{模型前提：}
 理想状态、独立过程、纯一阶模型按题设成立；实验事实和跨辑模型独立性待专家确认。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P101 · 弱酸固定电荷水凝胶的Donnan分配与电荷调节耦合}
+\noindent\textbf{题目}\par
+在298.15 K，一理想带弱酸基团的水凝胶与无限大NaCl水溶液接触。外液NaCl浓度c\_s=0.1000 mol/L，外液pH=7.000由极微量缓冲体系固定；凝胶固定酸位点总浓度C\_T=0.1500 mol/L凝胶水相，pKa=6.500，解离为不可移动A⁻。Na⁺、Cl⁻、H⁺可透膜，固定酸基团不可透膜；忽略H⁺/OH⁻对电中性的微小贡献和活度系数。令r=[Na⁺]\_in/c\_s，理想Donnan分配满足[Cl⁻]\_in=c\_s/r、[H⁺]\_in=r[H⁺]\_out。求r、内部Na⁺与Cl⁻浓度、固定酸位点解离度α、内部pH、内外电势差ψ\_in−ψ\_out及仅由可移动NaCl离子产生的渗透压差ΔΠ\_ion。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由同价阳离子电化学势相等，[Na⁺]\_in=c\_s r且[H⁺]\_in=r[H⁺]\_out；阴离子反向分配[Cl⁻]\_in=c\_s/r，故pH\_in=pH\_out−log₁₀r。
+\item 固定酸位点服从Henderson–Hasselbalch关系α=1/[1+10\textasciicircum{}(pKa−pH\_in)]=1/(1+a r)，其中a=10\textasciicircum{}(6.500−7.000)=0.3162277660。
+\item 忽略微量H⁺/OH⁻电荷后，凝胶内部电中性要求c\_s(r−1/r)=C\_T α。乘以r(1+a r)得到三次方程a c\_s r³+c\_s r²−(a c\_s+C\_T)r−c\_s=0。
+\item 左侧净正离子c\_s(r−1/r)在r≥1严格递增，右侧固定负电荷C\_T/(1+a r)严格递减，故物理解唯一且r>1。数值解r=1.6131825603。
+\item 内部Na⁺浓度0.1613182560 mol/L、Cl⁻浓度0.06198926424 mol/L，差0.09932899179 mol/L，恰等于C\_T α。
+\item 解离度α=0.6621932786，内部pH=6.792316482；凝胶内部酸性高于外液，因此固定酸位点部分被抑制解离。
+\item 阳离子电化学势关系给ψ\_in−ψ\_out=−(RT/F)ln r=−0.01228642188 V；内部电势较负与阳离子富集相符。
+\item 仅计移动NaCl离子，ΔΠ\_ion=RT×1000×(c\_s r+c\_s/r−2c\_s)=57778.34122 Pa，mol/L需乘1000变为mol/m³。固定聚合物网络的混合与弹性渗透压未计入，故此值不是完整凝胶溶胀压。
+\item 检查电中性残差|c\_Na−c\_Cl−C\_Tα|<10⁻¹² mol/L、Donnan乘积c\_Na c\_Cl=c\_s²及r>1；若离子活度非理想或缓冲离子浓度不可忽略，需要联立更多物种。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1.61318256 ratio；答案2 = 0.161318256 mol/L；答案3 = 0.0619892642 mol/L；答案4 = 0.662193279 fraction；答案5 = 6.79231648 pH；答案6 = -0.0122864219 V；答案7 = 57778.3412 Pa\par
+\noindent\textbf{模型前提：}
+固定酸基团不贡献移动粒子渗透压；理想单价盐，外部缓冲离子忽略，忽略H⁺/OH⁻电中性贡献，实际凝胶溶胀仍需其他能量项。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
