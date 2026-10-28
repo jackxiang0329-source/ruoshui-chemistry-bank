@@ -1,0 +1,23 @@
+name: Advanced integrated chemistry source quality
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/chemistry-advanced-integrated-booklet.yml"
+      - "scripts/advanced-integrated-12.mjs"
+      - "tests/advanced-integrated-12.test.mjs"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verify twelve original chemistry cases
+        run: node --test tests/advanced-integrated-12.test.mjs
+      - name: Generate source-locked review files
+        run: node scripts/advanced-integrated-12.mjs
