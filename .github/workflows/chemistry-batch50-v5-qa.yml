@@ -1,0 +1,26 @@
+name: Fifth advanced chemistry 50-case scientific QA
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'editorial/advanced_integrated_v5/**'
+      - 'scripts/check-advanced-authored-v5.mjs'
+      - '.github/workflows/chemistry-batch50-v5-qa.yml'
+  pull_request:
+    paths:
+      - 'editorial/advanced_integrated_v5/**'
+      - 'scripts/check-advanced-authored-v5.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-fifty:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify 50 independently authored scientific cases
+        run: node scripts/check-advanced-authored-v5.mjs
