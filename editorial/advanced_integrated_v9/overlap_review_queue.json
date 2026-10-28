@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "series": "advanced_integrated_v9",
+  "review_state": "manual_core_model_comparison_required",
+  "total_new_editorial_records": 100,
+  "not_confirmed_independent_models": 100,
+  "preliminary_flags": 17,
+  "potential_overlaps": [
+    {
+      "new_id": "UC-ADV9-I76",
+      "compare_with": "UC-ADV7-I57",
+      "reason": "配位电子状态能级/自旋态统计的相关性；本题以晶场配对能为新增条件",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-I92",
+      "compare_with": "UC-ADV7-O57",
+      "reason": "双并行伪一级路径的产物分配数学骨架相近",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-I98",
+      "compare_with": "UC-ADV7-O48",
+      "reason": "快速形态平衡与微观一级反应速率加权的同类公式",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-I99",
+      "compare_with": "UC-ADV8-A75",
+      "reason": "多类型占位/活动位点加权信号结构部分相近",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-A91",
+      "compare_with": "UC-ADV8-A63",
+      "reason": "共同回收比例的推断步骤相近；本题另有放射衰变",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-O73",
+      "compare_with": "UC-ADV7-O52",
+      "reason": "Boltzmann构象权重再对速率/选择性加权",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-O74",
+      "compare_with": "UC-ADV7-O57",
+      "reason": "两条竞争伪一级路径的速率分配；本题另由两种实验条件辨识两个常数",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-O77",
+      "compare_with": "UC-ADV8-O65",
+      "reason": "光子量和产物量子产率核心关系相近；本题强调链长度",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-O86",
+      "compare_with": "UC-ADV8-O72",
+      "reason": "光学衰减的路径竞争相关，当前为激发态多通道寿命与量子产率",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-O87",
+      "compare_with": "UC-ADV7-O54",
+      "reason": "随机聚合二联体统计结构相近，当前为meso/racemo三联体",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-O96",
+      "compare_with": "UC-ADV8-O61",
+      "reason": "聚合物数均/重均与分散度的矩计算相关，分布假设不同",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-O97",
+      "compare_with": "UC-ADV8-A74",
+      "reason": "电量到目标产物的Faraday有效比例，增加独立化学选择性",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-P74",
+      "compare_with": "UC-ADV7-I55",
+      "reason": "电解质活动度/离子条件近似相关，但方程与测量目标不同",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-P86",
+      "compare_with": "UC-ADV8-O58",
+      "reason": "二级动力学积分相关，附加PFR停留时间和2A成1P",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-P87",
+      "compare_with": "UC-ADV7-I57",
+      "reason": "热容统计计算相关，但量子谐振子与双能级模型不同",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-P95",
+      "compare_with": "UC-ADV8-A68",
+      "reason": "具有源项与衰减的线性动态方程相关，现为能量而非物料",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    },
+    {
+      "new_id": "UC-ADV9-A86",
+      "compare_with": "UC-ADV9-P88",
+      "reason": "同辑Stokes–Einstein扩散部分关系共用，分别耦合FCS和重力长度",
+      "manual_judgement": "pending",
+      "decision": "unresolved"
+    }
+  ],
+  "notes": "Potential overlaps are NOT confirmed duplicates. Every item remains pending scientific, solution, copyright and core-model originality reviews. Replacing three initially detected near-direct repeats was completed before this queue. No full-volume independent model certification has been performed.",
+  "expert_approved": 0,
+  "release_ready": 0
+}
