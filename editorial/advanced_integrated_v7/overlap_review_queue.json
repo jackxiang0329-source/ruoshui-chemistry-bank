@@ -1,0 +1,263 @@
+{
+  "series": "v7",
+  "schema_version": 1,
+  "purpose": "Potential model-overlap pairs for manual examination. Listed links are hypotheses, not established duplicates.",
+  "state": "pending_manual_cross_series_comparison",
+  "new_records": 60,
+  "distribution": {
+    "inorganic": 15,
+    "analytical": 15,
+    "organic": 15,
+    "physical": 15
+  },
+  "potential_pair_count": 41,
+  "suspected_pairs": [
+    {
+      "new_id": "UC-ADV7-I47",
+      "prior_id": "UC-ADV7-I58",
+      "rationale": "二元酸形态分布与金属配位（同辑存在相近结构）",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-I48",
+      "prior_id": "UC-ADV5-I07",
+      "rationale": "单核竞争络合与有限配体守恒",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-I49",
+      "prior_id": "UC-ADV5-I32",
+      "rationale": "多配体配位的二次质量作用",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-I50",
+      "prior_id": "UC-ADV7-I56",
+      "rationale": "金属价态与缺陷电中性／同辑需进一步区分",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-I52",
+      "prior_id": "UC-ADV5-I32",
+      "rationale": "逐级两配体配分",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-I54",
+      "prior_id": "UC-ADV4-I18",
+      "rationale": "氧化还原自由离子与配位条件电位",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-I55",
+      "prior_id": "UC-ADV4-I10",
+      "rationale": "Donnan固定电荷膜平衡",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-I57",
+      "prior_id": "UC-ADV5-I25",
+      "rationale": "玻尔兹曼双能级与热力学量",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-I58",
+      "prior_id": "UC-ADV7-I47",
+      "rationale": "两级酸碱与金属络合，待验是否超出参数变式",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-I59",
+      "prior_id": "UC-ADV4-I15",
+      "rationale": "氧空位及氧分压幂次模型",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-A46",
+      "prior_id": "UC-ADV5-A24",
+      "rationale": "三通道线性信号逆问题",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-A47",
+      "prior_id": "UC-ADV6-A34",
+      "rationale": "同位素稀释与统一回收",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-A48",
+      "prior_id": "UC-ADV6-A37",
+      "rationale": "弱酸精确电荷求pH",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-A49",
+      "prior_id": "UC-ADV5-O22",
+      "rationale": "串联一级与在线组分信号",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-A50",
+      "prior_id": "UC-ADV5-A29",
+      "rationale": "双通道线性解混",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-A51",
+      "prior_id": "UC-ADV5-A22",
+      "rationale": "有限顶空分配物料",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-A52",
+      "prior_id": "UC-ADV5-A25",
+      "rationale": "多指数寿命/时间门光学信号",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-A53",
+      "prior_id": "UC-ADV7-I48",
+      "rationale": "指示剂与配体竞争",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-A55",
+      "prior_id": "UC-ADV5-P29",
+      "rationale": "竞争Langmuir占位",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-A56",
+      "prior_id": "UC-ADV4-A17",
+      "rationale": "弱酸萃取，多次传递为新增约束",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-A58",
+      "prior_id": "UC-ADV5-O27",
+      "rationale": "静态动态荧光猝灭",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-O43",
+      "prior_id": "UC-ADV5-O21",
+      "rationale": "构型交换与不可逆转化（结构可能不同）",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-O44",
+      "prior_id": "UC-ADV4-O08",
+      "rationale": "光驱E/Z异构化",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-O45",
+      "prior_id": "UC-ADV4-O11",
+      "rationale": "并行反应活化焓熵选择性",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-O46",
+      "prior_id": "UC-ADV4-O14",
+      "rationale": "Mayo聚合物链转移公式",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-O47",
+      "prior_id": "UC-ADV7-O40",
+      "rationale": "等计量可逆缩合",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-O48",
+      "prior_id": "UC-ADV6-O38",
+      "rationale": "酸碱形态对微观水解速率的加权",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-O50",
+      "prior_id": "UC-ADV4-O09",
+      "rationale": "Flory–Stockmayer凝胶阈值",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-O51",
+      "prior_id": "UC-ADV4-O10",
+      "rationale": "竞争抑制Michaelis–Menten",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-O52",
+      "prior_id": "UC-ADV4-O12",
+      "rationale": "两构象玻尔兹曼选择性",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-O55",
+      "prior_id": "UC-ADV4-O17",
+      "rationale": "Eyring-NMR交换并峰",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-O56",
+      "prior_id": "UC-ADV6-O31",
+      "rationale": "两级一级串联动力学",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-O57",
+      "prior_id": "UC-ADV5-O20",
+      "rationale": "竞争反应网络",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-P43",
+      "prior_id": "UC-ADV4-P12",
+      "rationale": "多组分Rachford–Rice闪蒸",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-P44",
+      "prior_id": "UC-ADV5-P08",
+      "rationale": "双位点Langmuir吸附",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-P45",
+      "prior_id": "UC-ADV7-P55",
+      "rationale": "泡点活度模型与压力灵敏度；后一条已改为Stefan扩散",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-P46",
+      "prior_id": "UC-ADV6-P42",
+      "rationale": "绝热可逆异构化，但第七辑热容能量式含反应组成",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-P49",
+      "prior_id": "UC-ADV4-P13",
+      "rationale": "Nernst随有限浓度改变积分",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-P51",
+      "prior_id": "UC-ADV5-P14",
+      "rationale": "两能级Schottky模型",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-P53",
+      "prior_id": "UC-ADV6-P22",
+      "rationale": "逆流换热器NTU模型",
+      "review_result": "pending"
+    },
+    {
+      "new_id": "UC-ADV7-P56",
+      "prior_id": "UC-ADV5-P29",
+      "rationale": "Langmuir–Hinshelwood最优化，但总压约束不同",
+      "review_result": "pending"
+    }
+  ],
+  "expert_approved": 0
+}
