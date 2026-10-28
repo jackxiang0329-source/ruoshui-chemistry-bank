@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第9辑 (67题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第9辑 (83题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -1378,6 +1378,328 @@ ATR红外测量用晶体折射率n1=2.400、样品n2=1.400，真空波长λ=6.00
 答案1 = 3.16227766e-07；答案2 = 6.5；答案3 = 0.00633455532；答案4 = 109.423179\par
 \noindent\textbf{模型前提：}
 仅假设题给真实物料与动力学机制；跨辑去重、实验真实性及人类专家核定尚待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O90 · Woodward–Hoffmann电环化热/光条件下旋转方式的四格判别}
+\noindent\textbf{题目}\par
+按基态轨道对称守恒规则，具有4π电子的开链共轭体系热电环化允许conrotatory（同向旋转），具有6π电子的体系热电环化允许disrotatory（反向）；单光子激发时选择规则反转。某题要求对4π与6π体系分别在热与光下判断是否conrotatory，输出四个二元指示量（允许conrotatory为1，否则0），求四格中允许conrotatory的总数和光化学相对热化学的翻转次数，并说明允许不意味着实际产率为100\%。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 4π热电环化由基态前线轨道对称性要求同向旋转，conrotatory指标1。
+\item 6π热电环化要求反向旋转，conrotatory指标0。
+\item 4π光激发轨道占据翻转选择规则，conrotatory指标0。
+\item 6π光化学则允许同向旋转，conrotatory指标1。
+\item 四项中恰两项允许conrotatory=2，与热条件相比光照翻转两项。
+\item 轨道对称性规则只说明对称允许/禁阻，不自动给出反应速度、产物光稳态或精确立体收率。
+\item 核对速率、统计权重、电子数和热力学方程的独立关系，残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 1；答案2 = 0；答案3 = 0；答案4 = 1；答案5 = 2\par
+\noindent\textbf{模型前提：}
+题给理想化机理及条件；不等同真实实验或专家科学与原创审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O91 · 正交保护基的选择性脱保护与竞争误反应存活率}
+\noindent\textbf{题目}\par
+假想双保护官能团化合物同时带酸敏A保护基和基本不受酸影响的B保护基；酸处理下A去保护一级kA=0.120min\textasciicircum{}-1、B意外脱保护一级kB=0.002000min\textasciicircum{}-1，两事件独立。处理15.00min后目标化合物要求A已经脱掉、B仍保留。求A脱保护分数、B存活分数、目标双条件分数、B错误脱保护分数，并求若要至少90\% A去保护所需最短反应时间是否还能保证B存活率≥95\%。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item A去保护概率PA=1−exp(−kA t)=0.834701112。
+\item B仍保留概率PB=exp(−kB t)=0.970445534。
+\item 由于独立，目标A去且B留比例PA PB=0.810031966。
+\item 错误脱掉B的边际概率1−PB=0.0295544665。
+\item A去保护率至少90\%需要t≥ln(10)/kA=19.1882091min。
+\item 在这个最短时刻B存活率exp[−kB ln(10)/kA]=0.962350626；与0.95比较判断是否同时达标。
+\item 核对速率、统计权重、电子数和热力学方程的独立关系，残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.834701112；答案2 = 0.970445534；答案3 = 0.810031966；答案4 = 19.1882091；答案5 = 0.962350626\par
+\noindent\textbf{模型前提：}
+题给理想化机理及条件；不等同真实实验或专家科学与原创审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O92 · 协同二位点有机酶Hill反应速率和半饱和底物浓度}
+\noindent\textbf{题目}\par
+某有机催化酶的表观活化满足Hill式v=Vmax[S]\textasciicircum{}n/(Khalf\textasciicircum{}n+[S]\textasciicircum{}n)，给定协同指数n=2、Vmax=0.01000M/s、Khalf=0.02000M。自由底物浓度由连续进料库固定为0.03000M，求占据分数θ、反应初速、达到0.9Vmax所需底物浓度和在S=Khalf时的对数斜率dln[v/(Vmax−v)]/dlnS，指出n不是必然实际结合位点数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Hill占位θ=S²/(K²+S²)=0.692307692。
+\item 速率v=Vmaxθ=0.00692307692M/s。
+\item θ=0.9时S²/(K²+S²)=0.9，解S=3K=0.06M。
+\item Hill作图log[θ/(1−θ)]=nlog(S/K)，其对数斜率=n=2。
+\item S=K处θ=0.5、速率Vmax/2=0.005M/s。
+\item 经验Hill系数只是协同性指标，不能直接宣称恰好有两个结构上独立的结合位点。
+\item 核对速率、统计权重、电子数和热力学方程的独立关系，残差：0.00e+0、0.00e+0、-1.11e-16。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.692307692；答案2 = 0.00692307692；答案3 = 0.06；答案4 = 2；答案5 = 0.005\par
+\noindent\textbf{模型前提：}
+题给理想化机理及条件；不等同真实实验或专家科学与原创审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O93 · Ping–Pong Bi–Bi双底物催化与单底物饱和的相互作用}
+\noindent\textbf{题目}\par
+假想有机转氨酶遵循Ping–Pong Bi–Bi初速模型v=Vmax[A][B]/(KB[A]+KA[B]+[A][B])，Vmax=0.01200M/s，KA=0.02000M、KB=0.01500M，两个自由底物A=0.03000M、B=0.02500M由外部保持恒定。求初速、B翻倍后的初速、速率提高倍率及当B→∞时A固定条件下的极限初速，解释这与简单两底物速率相乘有何不同。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 写分母D=KB A+KA B+A B=0.0017M²。
+\item 代入给定浓度，初速v=Vmax A B/D=0.00529411765M/s。
+\item B翻倍至0.05000M，按同一分母结构得v2=0.00610169492M/s。
+\item 提高倍率v2/v=1.15254237。
+\item B无限大时分子分母同除B，极限v∞=Vmax A/(KA+A)=0.0072M/s。
+\item Ping–Pong速率式假设特定共价/酶态循环且取初速，不能套作所有双底物酶催化机理。
+\item 核对速率、统计权重、电子数和热力学方程的独立关系，残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.00529411765；答案2 = 0.00610169492；答案3 = 1.15254237；答案4 = 0.0072\par
+\noindent\textbf{模型前提：}
+题给理想化机理及条件；不等同真实实验或专家科学与原创审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O94 · RAFT/ATRP受控聚合活性链分数与单体增长速率}
+\noindent\textbf{题目}\par
+假想受控自由基聚合链端存在休眠D和活性R两态，激活一级速率ka=0.003000s\textasciicircum{}-1、失活一级kd=0.02700s\textasciicircum{}-1。链端总浓度CP=0.002000M，单体由大库保持[M]=0.5000M，增长常数kp=150L mol\textasciicircum{}-1s\textasciicircum{}-1，仅活性链可传播。求活性链分数、活性自由基浓度、瞬时单体消耗速率及100s若浓度全程恒定每条初始链平均增加的重复单元数；说明这一近似不含终止与单体耗竭。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 快链端平衡活性分数pR=ka/(ka+kd)=0.1。
+\item 活性链浓度[R]=CP pR=0.0002M。
+\item 增长速率v=kp[M][R]=0.015M/s。
+\item 100s单体消耗浓度Δ[M]=v×100=1.5M，由大库补充才可保持给定浓度。
+\item 每mol原始链增加的平均重复单元数=ΔM/CP=750。
+\item 若活性链持续与休眠态交换，链增长数是时间平均；终止和浓度变化要求更复杂的动态方程。
+\item 核对速率、统计权重、电子数和热力学方程的独立关系，残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.1；答案2 = 0.0002；答案3 = 0.015；答案4 = 750\par
+\noindent\textbf{模型前提：}
+题给理想化机理及条件；不等同真实实验或专家科学与原创审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O95 · 环闭复分解平衡与乙烯分压作为外部状态变量}
+\noindent\textbf{题目}\par
+假想有机二烯A在金属卡宾催化剂下发生环闭复分解A⇌C+E，其中E为乙烯气体。温度体积固定，外部排气与乙烯分压控制使乙烯的无量纲活度aE=0.01000恒定，溶液中的A、C活度按c/1M近似。条件平衡常数K=[C]aE/[A]=20.00，初始[A]=0.03000M、[C]=0，求平衡环状产物C、残余A、转化率和若乙烯活度提高十倍的转化率；解释必须把气相乙烯的活动度与液相物料分开。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设x=[C]，液相底物A=A0−x，气体乙烯活度aE由外部库钳定。
+\item 平衡关系K=x aE/(A0−x)，解x=KA0/(K+aE)=0.0299850075M。
+\item 剩余[A]=A0−x=0.0000149925037M。
+\item 转化率x/A0=K/(K+aE)=0.99950025，低乙烯活度推动环闭。
+\item 将乙烯活度提高至0.1000，转化率降为K/(K+0.1000)=0.995024876。
+\item 若乙烯气体封闭积累，其活度不再恒定，须同时联立气相状态方程及乙烯生成量。
+\item 核对速率、统计权重、电子数和热力学方程的独立关系，残差：-3.30e-12、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0299850075；答案2 = 1.49925037e-05；答案3 = 0.99950025；答案4 = 0.995024876\par
+\noindent\textbf{模型前提：}
+题给理想化机理及条件；不等同真实实验或专家科学与原创审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O96 · 双峰分子量分布聚合物的Mn、Mw与分散度不同权重}
+\noindent\textbf{题目}\par
+一个假想有机聚合物样品由两种近似单分散链组成，按链条数量计80.00\%的链摩尔质量M1=10000Da、20.00\%的链M2=50000Da。求数均摩尔质量Mn、重均Mw、分散度Đ=Mw/Mn以及M2分子在样品总质量中的贡献比例，证明不能把Mw直接做数分数加权的算术平均。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 按数量分数，Mn=pM1+(1−p)M2=18000Da。
+\item 重均定义Mw=Σn\_iM\_i²/Σn\_iM\_i，故Mw=32222.2222Da。
+\item 分散度Đ=Mw/Mn=1.79012346。
+\item 大分子M2总质量比例w2=(1−p)M2/Mn=0.555555556。
+\item 尽管M2只占20\%链条数量，却贡献更高质量分数，因此显著拉高Mw。
+\item 如果样品还有宽连续分布，则应对整个分子量分布的零、一、二阶矩积分。
+\item 核对速率、统计权重、电子数和热力学方程的独立关系，残差：1.82e-12、0.00e+0、-3.64e-12。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 18000；答案2 = 32222.2222；答案3 = 1.79012346；答案4 = 0.555555556\par
+\noindent\textbf{模型前提：}
+题给理想化机理及条件；不等同真实实验或专家科学与原创审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-O97 · 有机电合成法拉第效率与化学选择性的两级收率}
+\noindent\textbf{题目}\par
+假想有机电还原电解池恒流0.5000A、运行600.0s，目标还原每mol底物转移2mol电子。扣除副电极反应后可参与有机底物还原的法拉第效率ηF=0.8000，其中真正生成目标产品的化学选择性S=0.7500，剩余有机还原副产物也按2电子计。求总电荷、有效有机反应电子mol、目标产品mol和有机副产物mol，以及目标产品相对总电荷的总体电子利用率，注意电流效率和化学选择性不能混同。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 总电荷Q=It=0.5000×600=300C。
+\item 电子总mol ne=Q/F=0.0031092809。
+\item 有机底物反应得到的电子mol=ηF ne=0.00248742472。
+\item 目标产品电子份额再乘选择性S，转2电子得到目标产物mol=0.000932784269。
+\item 有机副产物mol=0.00031092809，按题设亦消耗2电子。
+\item 总体目标电子利用率ηtarget=ηF S=0.6，两级效率必须相乘。
+\item 核对速率、统计权重、电子数和热力学方程的独立关系，残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 300；答案2 = 0.00248742472；答案3 = 0.000932784269；答案4 = 0.00031092809；答案5 = 0.6\par
+\noindent\textbf{模型前提：}
+题给理想化机理及条件；不等同真实实验或专家科学与原创审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{物理化学}
+\addcontentsline{toc}{subsection}{第9辑 / 物理化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P73 · van der Waals气体的单相压缩因子与临界参数交叉复核}
+\noindent\textbf{题目}\par
+假想单组分气体服从van der Waals状态方程P=RT/(Vm−b)−a/Vm²，其中a=0.3600Pa·m6/mol²、b=4.300×10\textasciicircum{}-5m³/mol，T=350.0K、P=5.000MPa。求可行的Vm、压缩因子Z=PVm/(RT)、理论临界温度Tc=8a/(27Rb)、临界压强Pc=a/(27b²)，检查Vm>b以及给定T相对临界温度的位置，说明不能套理想气体Vm=RT/P替代真实根。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 先计算临界温度Tc=8a/(27Rb)=298.350028K。
+\item T=350K高于模型临界温度，因此按题定单相气体分支寻找Vm>b的物理解。
+\item 在Vm∈(b,0.020)m³/mol对Pcalc(Vm)−5MPa二分求根，得Vm=0.0004912852661m³/mol。
+\item 压缩因子Z=PVm/(RT)=0.8441147994。
+\item 临界压强Pc=a/(27b²)=7.211105102MPa。
+\item 因Z≠1，有限排除体积和分子吸引不可由理想气体单项反算。
+\item 独立检验能量、离子活动度或非理想输运的正向约束，残差：3.73e-16、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.000491285266；答案2 = 0.844114799；答案3 = 298.350028；答案4 = 7.2111051\par
+\noindent\textbf{模型前提：}
+题设热力学、理想或截断近似有效；实际实验及人工科学/新颖性审核尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P74 · 混合二价—一价电解质的离子强度和Davies活度校正}
+\noindent\textbf{题目}\par
+298.15K理想充分解离的混合盐溶液含MgCl2=0.01000M、NaCl=0.02000M，不发生配位或沉淀。按I=1/2Σci zi²计算离子强度，并以Davies近似log10γi=−0.509zi²[√I/(1+√I)−0.3I]计算γMg2+、γCl−和纯MgCl2组分的平均离子活度系数γ±=(γMg γCl²)\textasciicircum{}(1/3)。求各值并解释不能用只含MgCl2的浓度算混合液的I。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完全解离给Mg2+=0.01000M、Na+=0.02000M、Cl−=0.04000M。
+\item 离子强度I=1/2(4×.010+.020+.040)=0.05M。
+\item Davies共同括号Q=√I/(1+√I)−0.3I=0.1677439976。
+\item 二价Mg活度系数γMg=0.4554840995，单价氯γCl=0.8215203109。
+\item MgCl2平均系数γ±=(γMg γCl²)\textasciicircum{}(1/3)=0.6748956212。
+\item Davies是稀溶液近似，若I更高应检验适用范围，不能称其全浓度精确。
+\item 独立检验能量、离子活动度或非理想输运的正向约束，残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.05；答案2 = 0.4554841；答案3 = 0.821520311；答案4 = 0.674895621\par
+\noindent\textbf{模型前提：}
+题设热力学、理想或截断近似有效；实际实验及人工科学/新颖性审核尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P75 · Kohlrausch独立离子迁移定律与离子迁移数的交叉预测}
+\noindent\textbf{题目}\par
+无限稀释水溶液的限制摩尔电导给定Λ∞(NaCl)=126.5、Λ∞(KCl)=149.9、Λ∞(KNO3)=144.9，单位均S·cm²/mol。已知Na+离子限制电导λNa=50.10同单位，阴离子Cl−由NaCl的差值获得。用Kohlrausch离子独立迁移定律求Λ∞(NaNO3)、NaCl中Na+迁移数和通过该电解质截面的1.000A电流对应Na+电荷迁移mol/s，并解释迁移数只表示载流贡献而非反应消耗速率。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 无限稀释的盐电导等于各离子限制电导之和。
+\item 组合相消得到Λ∞NaNO3=ΛNaCl+ΛKNO3−ΛKCl=121.5S·cm²/mol。
+\item NaCl中Cl−离子电导λCl=126.5−50.1=76.4。
+\item Na+迁移数tNa=λNa/(λNa+λCl)=0.3960474308。
+\item 1.000A的电荷流速是I/F mol电子当量/s，由Na+贡献的电荷当量流=0.00000410474237mol/s。
+\item 迁移数随浓度、溶剂和温度改变，有限浓度不能无条件沿用无限稀释值。
+\item 独立检验能量、离子活动度或非理想输运的正向约束，残差：0.00e+0、0.00e+0、5.55e-17。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 121.5；答案2 = 0.396047431；答案3 = 4.10474237e-06；答案4 = 76.4\par
+\noindent\textbf{模型前提：}
+题设热力学、理想或截断近似有效；实际实验及人工科学/新颖性审核尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P76 · Goldman恒场膜电势的双一价阳离子渗透率竞争}
+\noindent\textbf{题目}\par
+理想选择性膜只允许K+与Na+扩散，在298.15K遵循无净电流Goldman简化式Vm=(RT/F)ln[(PK[K]out+PNa[Na]out)/(PK[K]in+PNa[Na]in)]。膜内[K]=140mM、[Na]=10mM，膜外[K]=5mM、[Na]=145mM，渗透率比PK:PNa=20:1。求Vm、只允许K+时的Nernst电势EK、两者偏移以及加权浓度比，解释膜对K更通透不意味着Vm必严格等于EK。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 恒场式先求外侧加权项20×5+145=245mM比例单位。
+\item 内侧加权项20×140+10=2810mM。
+\item 加权浓度比Rconc=0.0871886121，对数是无量纲。
+\item 膜电势Vm=(RT/F)ln(Rconc)=-0.0626817113V。
+\item 纯钾离子Nernst电势EK=(RT/F)ln(5/140)=-0.08561292803V。
+\item 偏移Vm−EK=0.02293121673V；简单式依赖独立离子渗透和恒电场假设，不能无限扩展到多价离子。
+\item 独立检验能量、离子活动度或非理想输运的正向约束，残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 0.0871886121；答案2 = -0.0626817113；答案3 = -0.085612928；答案4 = 0.0229312167\par
+\noindent\textbf{模型前提：}
+题设热力学、理想或截断近似有效；实际实验及人工科学/新颖性审核尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P77 · 曲面液滴Kelvin蒸气压与Laplace压力的联立推导}
+\noindent\textbf{题目}\par
+298.15K某纯液体表面张力γ=0.07200N/m、摩尔体积Vm=18.00cm³/mol。形成半径r=10.00nm的凸球形液滴，假设γ和Vm不随曲率变化，理想蒸气满足Kelvin式ln(p(r)/p∞)=2γVm/(rRT)。求Laplace内外压差、Kelvin指数、饱和蒸气压比和把曲面误当凹液面的预测方向，解释该模型在纳米尺度需考虑表面张力尺寸依赖。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 球形液滴压差ΔP=2γ/r=14.4MPa。
+\item 摩尔体积18.00cm³/mol=18×10\textasciicircum{}-6m³/mol。
+\item Kelvin无量纲指数2γVm/(rRT)=0.1045601021。
+\item 凸液滴蒸气压比p(r)/p∞=exp(exponent)=1.110222118。
+\item 凸曲率提高平衡蒸气压；对于相同曲率大小的凹液面，指数符号反向。
+\item 半径若接近分子尺寸，连续表面张力与理想蒸气假设可能失败。
+\item 独立检验能量、离子活动度或非理想输运的正向约束，残差：0.00e+0、-5.55e-17、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 14.4；答案2 = 0.104560102；答案3 = 1.11022212；答案4 = 0.900720661\par
+\noindent\textbf{模型前提：}
+题设热力学、理想或截断近似有效；实际实验及人工科学/新颖性审核尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P78 · 非离子表面活性剂的Gibbs吸附量与分子截面积}
+\noindent\textbf{题目}\par
+298.15K非离子表面活性剂水溶液，在活度a1=0.01000时平衡表面张力γ1=0.07200N/m，a2=0.1000时γ2=0.06800N/m，活度无量纲。假设该范围γ对ln a近似线性，Gibbs吸附式Γ=−(1/RT)dγ/dln a。求表面过量Γ(mol/m²)、每平方米分子数、单分子平均占据面积(nm²)，并解释这里面积推断隐含单层紧密占据假设。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 取两点近似dγ/dln a=(γ2−γ1)/ln(a2/a1)=-0.001737177928N/m。
+\item Gibbs式Γ=−斜率/(RT)=7.007696813e-7mol/m²。
+\item 表面分子数密度N=Γ NA=422013366100000000m\textasciicircum{}-2。
+\item 每个分子平均面积A=1/N=2.369593194nm²。
+\item γ随活度增加而下降使Γ为正，说明溶质在界面富集。
+\item 真正的单分子面积还取决于界面覆盖结构与聚集，Gibbs表面过量不总等于完整单层位点数量。
+\item 独立检验能量、离子活动度或非理想输运的正向约束，残差：-8.67e-19、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 7.00769681e-07；答案2 = 4.22013366e+17；答案3 = 2.36959319\par
+\noindent\textbf{模型前提：}
+题设热力学、理想或截断近似有效；实际实验及人工科学/新颖性审核尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P79 · BET线性化与单层吸附量表面积的反演}
+\noindent\textbf{题目}\par
+一种多孔材料满足BET线性式y=p/[v(p0−p)]=1/(vm C)+(C−1)/(vm C)×(p/p0)。给定独立拟合线截距b=1/(20.00×80.00)、斜率m=79/(20.00×80.00)，v单位cm³(STP)/g，标准态1mol气体占22414cm³，N2分子占据面积0.1620nm²。求单层容量vm、BET参数C、在p/p0=0.2000时吸附体积和BET比表面积，并明确多层模型区别于Langmuir单层。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由BET线性式b=1/(vm C)、m=(C−1)/(vm C)。
+\item 因此vm=1/(b+m)=20cm³(STP)/g。
+\item C=1+m/b=80。
+\item 取x=p/p0=.2，y=b+mx=0.0105，由y=x/[v(1−x)]反解v=23.80952381cm³/g。
+\item 比表面积S=vm/22414×NA×0.162nm²，换为m²/g得到87.05155734m²/g。
+\item BET只在合适相对压力区间拟合并假设多层吸附，微孔填充可能使计算表面积偏离真实。
+\item 独立检验能量、离子活动度或非理想输运的正向约束，残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 20；答案2 = 80；答案3 = 23.8095238；答案4 = 87.0515573\par
+\noindent\textbf{模型前提：}
+题设热力学、理想或截断近似有效；实际实验及人工科学/新颖性审核尚未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV9-P80 · Debye介电弛豫复介电常数与损耗峰频率}
+\noindent\textbf{题目}\par
+某假想极性液体在GHz范围遵循单Debye介电弛豫ε*(ω)=ε∞+(εs−ε∞)/(1+iωτ)，静态εs=80.00、高频ε∞=4.000、弛豫时间τ=8.000ps。求损耗峰角频率和普通频率、该频率下ε'、ε''（采用ε*=ε'−iε''）及损耗角正切tanδ=ε''/ε'，并解释频率太低或太高时损耗项为何趋零。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对于单Debye过程，损耗ε''=Δε ωτ/[1+(ωτ)²]。
+\item 其峰值发生ωτ=1，所以ωpeak=1/τ=125000000000rad/s。
+\item 普通频率fpeak=ω/(2π)=19.89436789GHz。
+\item 在ωτ=1处实部ε'=ε∞+Δε/2=42。
+\item 损耗ε''=Δε/2=38，损耗角正切=0.9047619048。
+\item 当ωτ≪1或≫1，ε''分别随ωτ和1/(ωτ)衰减，真实液体多个弛豫时间会展宽峰形。
+\item 独立检验能量、离子活动度或非理想输运的正向约束，残差：0.00e+0、0.00e+0、0.00e+0。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+答案1 = 19.8943679；答案2 = 42；答案3 = 38；答案4 = 0.904761905\par
+\noindent\textbf{模型前提：}
+题设热力学、理想或截断近似有效；实际实验及人工科学/新颖性审核尚未完成。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
