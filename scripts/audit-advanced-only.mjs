@@ -234,7 +234,7 @@ for(const p of ['data/integrated_challenges','data/research_quarantine','externa
  'third_party','.github/workflows/chemistry-harvest.yml','.github/workflows/chemistry-discovery-fast.yml',
  '.github/workflows/chemistry-rqa-intake.yml','scripts/import-original-coupled-32768.mjs'])
  assert.equal(exists(p),false,'Deprecated low-difficulty resource returned: '+p);
-const v11Ids=new Set();for(const sub of ['inorganic','analytical','organic','physical']){const rows=read('editorial/advanced_integrated_v11/'+sub+'.jsonl').trim().split('\\n').map(JSON.parse);assert.ok(rows.length>=1&&rows.length<=25);for(const q of rows){assert.ok(!v11Ids.has(q.id));v11Ids.add(q.id);assert.equal(q.publishable,false);assert.equal(q.exclude_from_official_bank,true);assert.equal(q.quality_status,'awaiting_expert_review');assert.equal(q.novelty_review_status,'pending_cross_series_model_review');}}
+const v11Ids=new Set();for(const sub of ['inorganic','analytical','organic','physical']){const rows=read('editorial/advanced_integrated_v11/'+sub+'.jsonl').trim().split('\n').map(JSON.parse);assert.ok(rows.length>=1&&rows.length<=25);for(const q of rows){assert.ok(!v11Ids.has(q.id));v11Ids.add(q.id);assert.equal(q.publishable,false);assert.equal(q.exclude_from_official_bank,true);assert.equal(q.quality_status,'awaiting_expert_review');assert.equal(q.novelty_review_status,'pending_cross_series_model_review');}}
 const release=JSON.parse(read('release/chemistry-approved-manifest.json'));
 assert.equal(release.advanced_editorial_items,406+v10IDs.size+v11Ids.size);
 assert.equal(release.eleventh_series_work_in_progress_items,v11Ids.size);
