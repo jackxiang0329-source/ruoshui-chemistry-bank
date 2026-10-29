@@ -494,6 +494,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
+
 ### UC-ADV10-I118　协同自旋交叉固体的双稳态自由能、曲率与旋节
 
 **题目** 某假想Fe(II)自旋交叉晶体在300.0 K时高自旋摩尔分数x，低自旋为1−x。平均场摩尔自由能G=x(ΔH−TΔS)+RT[x ln x+(1−x)ln(1−x)]+Ωx(1−x)，ΔH=15.000 kJ/mol，ΔS=50.000 J/(mol K)，Ω=8.000 kJ/mol，R=8.314462618 J/(mol K)，纯低自旋G(0)=0，电子简并度已计入ΔS。求所有驻点及稳定性、两个稳定分数、自由能、中央势垒、两处曲率、旋节组成和零偏置曲率阈值温度；说明阈值为何不能直接等同实际相变温度，并验证物理根。
@@ -1018,6 +1019,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
+
 ### UC-ADV10-A118　常相位阻抗元件的三频复数反演与频率外推
 
 **题目** 电极的小信号阻抗Z(ω)=R_s+[R_ct^−1+Q(iω)^α]^−1，ω=2πf，已知R_s=20.000 Ω，0<α<1、Q>0、R_ct>0，按e^{iωt}相量约定。1、10、100 Hz观测复阻抗依次为(259.4723601902123−23.9656379457135i)、(179.89697311271587−86.10037409164481i)、(46.06545297144797−45.90977746706515i) Ω。设为给定精度下的理想模型值。求α、Q、R_ct及其电导、50 Hz复阻抗的实部虚部与模、1 Hz总阻抗相角和CPE导纳相角。利用差分导纳的模与相位独立核验唯一性、量纲与被动性。
@@ -1539,6 +1541,7 @@
 **模型适用边界**：理想b/y离子，无中性丢失、同质量修饰或未列残基；与旧辑肽合成收率不同，待人工复核。
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
+
 
 ### UC-ADV10-O115　双向光致烯烃异构化的光稳态、暗回复与光子收支
 
