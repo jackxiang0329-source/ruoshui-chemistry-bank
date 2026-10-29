@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (28题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (30题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -425,6 +425,32 @@ standard\_addition\_slope\_per\_mM = 0.15 A/mM；blank\_absorbance = 0.1 dimensi
 模型限制包括背景漂移、杂散光、矩阵化学效应、散射及标准纯度问题，单一双点标定并不能替代实验重复性统计。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A158 · IRMS Rayleigh碳同位素分馏的双点反演与重轻原子库存闭合}
+\noindent\textbf{题目}\par
+某假想有机溶剂挥发过程由稳定碳同位素比质谱(IRMS)监测，初始碳总库存为1.000 mol，初始重轻同位素比R₀=N(¹³C)/N(¹²C)=0.01120，报告δ¹³C使用同位素标准比R\_std=0.01118。体系为完全混合储库，瞬时气相移除产物比R\_inst=αR\_res，常数动力学分馏因子α=0.9800，无外源碳交换、无未收集挥发物。轻同位素剩余比例f=N₁₂/N₁₂,0，测得两阶段f₁=0.4000和f₂=0.7000。推导Rayleigh分馏精确公式，求两个阶段剩余库同位素比和δ¹³C并由这两个比值反演α；在f₁阶段分别计算剩余¹²C与¹³C、累计产物的同位素摩尔数及平均比与δ、当时瞬时产物的比与δ。核验双同位素原子库存守恒、瞬时与累计差别和δ单位，讨论分馏常数失效条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 定义IRMS重轻同位素比R=N(¹³C)/N(¹²C)，初始总碳1.000 mol及R₀=0.01120唯一决定两同位素初始物质的量N₁₂,0=1/(1+R₀)、N₁₃,0=R₀/(1+R₀)。
+\item 分馏因子α=R\_inst/R\_res=0.9800，使瞬时逸出产物相对贫¹³C；剩余库则逐渐富集¹³C。
+\item 严格令f=N₁₂/N₁₂,0为剩余轻同位素比例，而非剩余总碳比例，避免有限R下的近似误差。
+\item 两同位素的微分库存方程dN₁₃/dN₁₂=αN₁₃/N₁₂积分，得到N₁₃=N₁₃,0f\textasciicircum{}α及Rayleigh残余比R\_res=R₀f\textasciicircum{}(α−1)。
+\item 对f₁=0.4000求R\_res=0.0114071413438；对f₂=0.7000求0.0112801808324，因α<1且f₁<f₂，前者更高。
+\item 用两观测反演α=1+ln(R₁/R₂)/ln(f₁/f₂)=0.980000000000，这要求f₁和f₂不同、测量同一原始均匀库。
+\item 同位素δ记号δ¹³C=1000(R/R\_std−1)‰，本题参考比R\_std=0.01118；不能用原子丰度直接代替R。
+\item 初始和两个剩余阶段的δ依次为1.78890876565、20.3167570474、8.96071845879‰。
+\item f₁处残余¹²C=0.395569620253 mol、¹³C=0.00451231856954 mol，由初始库存减去剩余量，分别得到累计去除¹²C=0.593354430380及¹³C=0.00656363079755 mol。
+\item 累计产物R\_cum=0.0110619057708、δ\_cum=-10.5629900888‰，为全过程平均，不能与当前微分产物混淆。
+\item f₁时瞬时产物比R\_inst=αR\_res=0.0111789985169、δ\_inst=-0.0895780935837‰，其比值体现此刻的分馏而非累积总量。
+\item 以¹²C和¹³C分别检查：残余原子摩尔数+累计产物原子摩尔数恰等于各自初始库存，这比只检查总碳更严格。
+\item 本模型要求封闭进料、单一充分混合库、常数α和同位素定量测量；温度依赖、重新混合或反应机理变化会破坏Rayleigh指数规律。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+initial\_12C\_mol = 0.988924051 mol；initial\_13C\_mol = 0.0110759494 mol；residual\_R\_f04 = 0.0114071413 ratio；residual\_R\_f07 = 0.0112801808 ratio；reconstructed\_alpha = 0.98 dimensionless；initial\_delta13C\_permil = 1.78890877 permil；residual\_delta\_f04\_permil = 20.316757 permil；residual\_delta\_f07\_permil = 8.96071846 permil；remaining\_12C\_f04\_mol = 0.39556962 mol；remaining\_13C\_f04\_mol = 0.00451231857 mol；cumulative\_product\_12C\_mol = 0.59335443 mol；cumulative\_product\_13C\_mol = 0.0065636308 mol；cumulative\_product\_isotope\_ratio = 0.0110619058 ratio；cumulative\_product\_delta13C\_permil = -10.5629901 permil；instantaneous\_product\_isotope\_ratio = 0.0111789985 ratio；instantaneous\_product\_delta13C\_permil = -0.0895780936 permil；total\_12C\_inventory\_mol = 0.988924051 mol；total\_13C\_inventory\_mol = 0.0110759494 mol\par
+\noindent\textbf{模型前提：}
+本模型要求封闭进料、单一充分混合库、常数α和同位素定量测量；温度依赖、重新混合或反应机理变化会破坏Rayleigh指数规律。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第12辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -772,6 +798,33 @@ ambipolar\_diffusivity\_m2\_s = 1.33333333e-09 m2/s；concentration\_gradient\_m
 Thiele\_modulus = 3.16227766 dimensionless；spherical\_effectiveness\_factor = 0.652089031 fraction；center\_surface\_concentration\_ratio = 0.268194031 fraction；center\_concentration\_mol\_m3 = 0.268194031 mol/m3；pellet\_volume\_m3 = 4.1887902e-09 m3；pellet\_area\_m2 = 1.25663706e-05 m2；total\_reaction\_rate\_mol\_s = 2.73146415e-11 mol/s；surface\_molar\_flux\_mol\_m2\_s = 2.1736301e-06 mol/(m2 s)；surface\_flux\_times\_area\_mol\_s = 2.73146415e-11 mol/s；actual\_intrinsic\_rate\_ratio = 0.652089031 ratio；dimensionless\_surface\_gradient = 2.1736301 dimensionless；intrinsic\_over\_actual\_rate\_ratio = 1.53353293 ratio；hyperbolic\_effectiveness\_alternate = 0.652089031 ratio；diffusion\_reaction\_length\_m = 0.000316227766 m\par
 \noindent\textbf{模型前提：}
 本模型以球形、恒定有效扩散、单相等温、一级表观动力学和外部膜传质可忽略为前提；真实多孔载体的孔径扩散、放热、非一级表面覆盖与毒化会改变边界值解。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P154 · Soret热扩散封闭槽的零物质通量、指数浓度剖面及熵产生}
+\noindent\textbf{题目}\par
+某封闭一维溶剂槽长度L=1.000 mm，左、右端分别维持300.0 K及340.0 K，初始溶质均匀平均浓度c̄=10.00 mol/m³。溶质不带电，不发生反应、对流或蒸发，且给定Fick扩散系数D=1.000×10⁻⁹ m²/s及Soret热扩散系数S\_T=+0.03000 K⁻¹，温度沿长度线性分布。稳态通量J=−D[dc/dx+c S\_T dT/dx]=0。求完整指数浓度剖面、冷/热端与中点浓度、富集比、归一库存、在中点分别由浓度梯度和温度梯度驱动的通量及其抵消。热导率κ=0.6000 W/(m K)，R=8.314462618 J/(mol K)，计算Fourier热流、温度中点传热熵产生率κ(∇T)²/T²、两端理想渗透压及L²/D扩散时间尺度，核验量纲、熵产生正性与真实大温差体系局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 建立无对流一维封闭槽x∈[0,L]，端温T₀=300 K、T₁=340 K，溶剂与溶质保持均匀定容，温度梯度ΔT/L恒定。
+\item 给定恒定Fick扩散系数D和Soret系数S\_T，溶质通量J=−D(dc/dx+cS\_TdT/dx)，封闭两端要求稳态J=0。
+\item 约去正D，分离变量得到dlnc/dx=−S\_TΔT/L，积分得c(x)=c(0)exp(−Ax/L)，其中A=S\_TΔT。
+\item 以S\_T=0.03 K⁻¹、ΔT=40.00 K求A=1.20000000000，热端与冷端浓度比c(L)/c(0)=e\textasciicircum{}(−A)=0.301194211912。
+\item 由初始均匀平均浓度c̄=10.00 mol/m³和无物料出入，稳态必须满足∫₀ᴸ c(x)dx=c̄L。
+\item 对指数剖面积分求c(0)=c̄A/(1−e\textasciicircum{}(−A))=17.1721531283 mol/m³，确保归一后与初始库存完全相等。
+\item 计算热端c(L)=5.17215312832 mol/m³，中点c(L/2)=9.42427745361 mol/m³；正Soret系数造成热端溶质贫化。
+\item 中点梯度dc/dx=−Ac\_mid/L=-11309.1329443 mol/m⁴。
+\item 中点Fick通量J\_F=−D dc/dx=0.0000113091329443 mol/(m²s)，符号指向热端。
+\item 中点热扩散通量J\_T=−DS\_Tc\_midΔT/L=-0.0000113091329443 mol/(m²s)，与J\_F正好相消，J总量为零。
+\item 给定导热率κ=0.6000 W/(m K)，Fourier热流q=−κΔT/L=-24000.0000000 W/m²，热由高温端流向低温端。
+\item 中点传热熵产生率σ=κ(∇T)²/T\_mid²=9375.00000000 W/(m³K)，为正；物种无净流不代表热过程可逆。
+\item 以局部理想渗透压π=cRT求冷、热端分别42833.1675768与14621.2491056 Pa，温度必须取开尔文。
+\item 该常系数稀溶液Soret模型忽略溶剂密度、热-物质流的Onsager反作用、温度依赖输运系数和盐的电扩散；若有对流不能继续采用纯指数稳态。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+dimensionless\_Soret\_exponent = 1.2 dimensionless；hot\_over\_cold\_ratio = 0.301194212 ratio；cold\_concentration\_mol\_m3 = 17.1721531 mol/m3；hot\_concentration\_mol\_m3 = 5.17215313 mol/m3；midpoint\_concentration\_mol\_m3 = 9.42427745 mol/m3；cold\_hot\_concentration\_enrichment = 3.32011692 ratio；midpoint\_concentration\_gradient\_mol\_m4 = -11309.1329 mol/m4；midpoint\_Fick\_flux = 1.13091329e-05 mol/(m2s)；midpoint\_Soret\_flux = -1.13091329e-05 mol/(m2s)；midpoint\_net\_molar\_flux = 0 mol/(m2s)；conduction\_heat\_flux\_W\_m2 = -24000 W/m2；midpoint\_entropy\_production\_W\_m3K = 9375 W/(m3K)；given\_inventory\_mol\_m2 = 0.01 mol/m2；reconstructed\_inventory\_mol\_m2 = 0.01 mol/m2；diffusive\_time\_s = 1000 s；cold\_osmotic\_pressure\_Pa = 42833.1676 Pa；hot\_osmotic\_pressure\_Pa = 14621.2491 Pa\par
+\noindent\textbf{模型前提：}
+该常系数稀溶液Soret模型忽略溶剂密度、热-物质流的Onsager反作用、温度依赖输运系数和盐的电扩散；若有对流不能继续采用纯指数稳态。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
