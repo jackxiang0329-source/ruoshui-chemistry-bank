@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至14辑 (878题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至14辑 (888题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -19639,6 +19639,236 @@ n03 = 2.55863539 mmol/g；n05 = 3.80952381 mmol/g；ratio03 = 1.2793177 ratio；
 h5 = 0.811297708 fraction；h10 = 0.900720661 fraction；lnh5 = -0.209120204 log；lnh10 = -0.104560102 log；capillary\_pressure5\_Pa = 28800000 Pa；delta\_mu5\_Jmol = -518.4 J/mol；delta\_mu10\_Jmol = -259.2 J/mol；r\_at\_h09\_nm = 9.92403097 nm\par
 \noindent\textbf{模型前提：}
 题设明确的理想模型；需专家科学性、原创性与出版审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P211 · 理想气相二元等温混合的Gibbs自由能与混合熵}
+\noindent\textbf{题目}\par
+在298.15 K、总压1.000 bar条件下，纯理想气体A与B分别有2.000、3.000 mol，两组气体由隔板移除而等温等压地充分混合。忽略化学反应和非理想性。求两个摩尔分率与终态分压、总混合熵ΔSmix=−RΣni lnxi、混合Gibbs自由能ΔGmix=RTΣni lnxi、混合焓、ΔG/ΔS、每mol混合气体的熵增与自由能变。给出理想混合ΔG<0和ΔH=0的理由，并验证ΔG=−TΔS。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整物理化学系统及约束：在298.15 K、总压1.000 bar条件下，纯理想气体A与B分别有2.000、3.000 mol，两组气体由隔板移除而等温等压地充分混合。忽略化学反应和非理想性。求两个摩尔分率与终态分压、总混合熵ΔSmix=−RΣni lnxi、混合Gibbs自由能ΔGmix=RTΣni lnxi、混合焓、ΔG/ΔS、每mol混合气体的熵增与自由能变。给出理想混合ΔG<0和ΔH=0的理由，并验证ΔG=−TΔS。
+\item 推导模型主方程与相关守恒条件：xA=2/5，xB=3/5，ΔG=RT(2ln xA+3ln xB)，ΔS=−R(2ln xA+3ln xB)。
+\item 将全部物理输入换算为规范单位，检查热力学对数和指数中只有无量纲比。
+\item 第一组数值求解：xA = 0.40000000000000 fraction；xB = 0.60000000000000 fraction；pA\_bar = 0.40000000000000 bar；pB\_bar = 0.60000000000000 bar。
+\item 第二组状态、能量或动力学量：entropy\_total\_J\_K = 27.978651734132 J/K；Gibbs\_total\_J = -8341.8350145313 J；enthalpy\_J = 0.0000000000000 J。
+\item 剩余数值答案与回代：G\_over\_S\_K = -298.15000000000 K；molar\_entropy\_J\_molK = 5.5957303468263 J/(molK)；molar\_Gibbs\_J\_mol = -1668.3670029063 J/mol。
+\item 核查正负性、覆盖或组成归一、化学原子守恒，以及电压、气压与扩散的物理边界。
+\item 使用独立数学表达式逐项重算答案字段，以防止主求值公式中无意的单位或代数错误。
+\item 题设所忽略的电极极化、介质非均匀性或浓度依赖系数将改变真实实验值，不能未经验证直接外推。
+\item 该完整题解仍属于待专家科学和原创性审核的不可出版草稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+xA = 0.4 fraction；xB = 0.6 fraction；pA\_bar = 0.4 bar；pB\_bar = 0.6 bar；entropy\_total\_J\_K = 27.9786517 J/K；Gibbs\_total\_J = -8341.83501 J；enthalpy\_J = 0 J；G\_over\_S\_K = -298.15 K；molar\_entropy\_J\_molK = 5.59573035 J/(molK)；molar\_Gibbs\_J\_mol = -1668.367 J/mol\par
+\noindent\textbf{模型前提：}
+仅适用本题所述常系数理想介质和统计模型；专家审核仍待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P212 · Clausius–Clapeyron积分式的汽化压强与沸点反演}
+\noindent\textbf{题目}\par
+某纯挥发性液体在298.15 K时饱和蒸气压为20.00 kPa，在温度298–340 K之间摩尔汽化焓固定为40.00 kJ/mol，气相理想且可忽略液相体积。求318.15 K、338.15 K的饱和压强、与298.15 K压强的比、两温度逆温差、ln(p318/p298)、压强为101.325 kPa时预测的正常沸点、lnp对1/T的斜率及p338/p318。指出本题的吸热汽化决定升温升压，不可把焓差的正号误放进指数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整物理化学系统及约束：某纯挥发性液体在298.15 K时饱和蒸气压为20.00 kPa，在温度298–340 K之间摩尔汽化焓固定为40.00 kJ/mol，气相理想且可忽略液相体积。求318.15 K、338.15 K的饱和压强、与298.15 K压强的比、两温度逆温差、ln(p318/p298)、压强为101.325 kPa时预测的正常沸点、lnp对1/T的斜率及p338/p318。指出本题的吸热汽化决定升温升压，不可把焓差的正号误放进指数。
+\item 推导模型主方程与相关守恒条件：ln(p/p0)=−(40000/R)(1/T−1/298.15)，Tb=[1/298.15−(R/40000)ln(101.325/20)]⁻¹。
+\item 将全部物理输入换算为规范单位，检查热力学对数和指数中只有无量纲比。
+\item 第一组数值求解：p318\_kPa = 55.151565951779 kPa；p338\_kPa = 134.88863281723 kPa；p318\_over\_p298 = 2.7575782975889 ratio；p338\_over\_p298 = 6.7444316408615 ratio。
+\item 第二组状态、能量或动力学量：inverseT\_318\_diff = -0.00021084497467739 K\textasciicircum{}-1；inverseT\_338\_diff = -0.00039674894983653 K\textasciicircum{}-1；ln\_pressure\_ratio318 = 1.0143528661536 ratio。
+\item 剩余数值答案与回代：boiling\_T\_K = 331.48364666007 K；Clapeyron\_slope\_K = -4810.8942017977 K；p338\_over\_p318 = 2.4457806499125 ratio。
+\item 核查正负性、覆盖或组成归一、化学原子守恒，以及电压、气压与扩散的物理边界。
+\item 使用独立数学表达式逐项重算答案字段，以防止主求值公式中无意的单位或代数错误。
+\item 题设所忽略的电极极化、介质非均匀性或浓度依赖系数将改变真实实验值，不能未经验证直接外推。
+\item 该完整题解仍属于待专家科学和原创性审核的不可出版草稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+p318\_kPa = 55.151566 kPa；p338\_kPa = 134.888633 kPa；p318\_over\_p298 = 2.7575783 ratio；p338\_over\_p298 = 6.74443164 ratio；inverseT\_318\_diff = -0.000210844975 K\textasciicircum{}-1；inverseT\_338\_diff = -0.00039674895 K\textasciicircum{}-1；ln\_pressure\_ratio318 = 1.01435287 ratio；boiling\_T\_K = 331.483647 K；Clapeyron\_slope\_K = -4810.8942 K；p338\_over\_p318 = 2.44578065 ratio\par
+\noindent\textbf{模型前提：}
+仅适用本题所述常系数理想介质和统计模型；专家审核仍待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P213 · Debye单一松弛模型的介电频散、损耗和峰频率}
+\noindent\textbf{题目}\par
+某理想极性液体相对静态介电常数εs=80.00、光学极限ε∞=5.000，单一Debye松弛时间τ=1.000 ns。给定频率10.00 MHz和100.0 MHz，定义无量纲x=2π fτ，实部ε'=ε∞+(εs−ε∞)/(1+x²)，损耗正值ε''=(εs−ε∞)x/(1+x²)，损耗角tanδ=ε''/ε'。分别计算两频率的实部、损耗、损耗角，计算介电强度、损耗峰频率(MHz)、峰值ε''以及两频率损耗比。说明复介电常数符号约定会影响虚部记号，但这里ε''作为正损耗。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整物理化学系统及约束：某理想极性液体相对静态介电常数εs=80.00、光学极限ε∞=5.000，单一Debye松弛时间τ=1.000 ns。给定频率10.00 MHz和100.0 MHz，定义无量纲x=2π fτ，实部ε'=ε∞+(εs−ε∞)/(1+x²)，损耗正值ε''=(εs−ε∞)x/(1+x²)，损耗角tanδ=ε''/ε'。分别计算两频率的实部、损耗、损耗角，计算介电强度、损耗峰频率(MHz)、峰值ε''以及两频率损耗比。说明复介电常数符号约定会影响虚部记号，但这里ε''作为正损耗。
+\item 推导模型主方程与相关守恒条件：ε' =5+75/(1+x²)，ε''=75x/(1+x²)，fmax=1/(2πτ)，ε''max=37.5。
+\item 将全部物理输入换算为规范单位，检查热力学对数和指数中只有无量纲比。
+\item 第一组数值求解：real\_10MHz = 79.705076180538 ratio；loss\_10MHz = 4.6938583702929 ratio；lossTangent\_10MHz = 0.058890331647898 ratio；real\_100MHz = 58.771760024367 ratio。
+\item 第二组状态、能量或动力学量：loss\_100MHz = 33.785793252629 ratio；lossTangent\_100MHz = 0.57486441172803 ratio；delta\_epsilon = 75.000000000000 ratio。
+\item 剩余数值答案与回代：loss\_peak\_MHz = 159.15494309190 MHz；loss\_peak\_height = 37.500000000000 ratio；loss\_ratio\_100\_over10 = 7.1978723232165 ratio。
+\item 核查正负性、覆盖或组成归一、化学原子守恒，以及电压、气压与扩散的物理边界。
+\item 使用独立数学表达式逐项重算答案字段，以防止主求值公式中无意的单位或代数错误。
+\item 题设所忽略的电极极化、介质非均匀性或浓度依赖系数将改变真实实验值，不能未经验证直接外推。
+\item 该完整题解仍属于待专家科学和原创性审核的不可出版草稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+real\_10MHz = 79.7050762 ratio；loss\_10MHz = 4.69385837 ratio；lossTangent\_10MHz = 0.0588903316 ratio；real\_100MHz = 58.77176 ratio；loss\_100MHz = 33.7857933 ratio；lossTangent\_100MHz = 0.574864412 ratio；delta\_epsilon = 75 ratio；loss\_peak\_MHz = 159.154943 MHz；loss\_peak\_height = 37.5 ratio；loss\_ratio\_100\_over10 = 7.19787232 ratio\par
+\noindent\textbf{模型前提：}
+仅适用本题所述常系数理想介质和统计模型；专家审核仍待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P214 · 双气体竞争吸附Langmuir–Hinshelwood表面催化速率}
+\noindent\textbf{题目}\par
+催化表面含一类等价位点，气相A、B竞争单层吸附，KA=2.000 bar⁻¹、KB=1.000 bar⁻¹，θi=Ki pi/(1+KA pA+KB pB)，空位分率为分母倒数。仅相邻A*、B*反应，速率r=kθAθB，k=0.01000 mol/(m²s)。固定pB=1.000 bar，比较pA=1.000与2.000 bar：求两条件的A覆盖、B覆盖、空位分率与速率、速率比、在固定pB下最佳pA与最大速率。说明一类位点上的分率需加和为1，过量A也可能竞争排斥B而抑制反应。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整物理化学系统及约束：催化表面含一类等价位点，气相A、B竞争单层吸附，KA=2.000 bar⁻¹、KB=1.000 bar⁻¹，θi=Ki pi/(1+KA pA+KB pB)，空位分率为分母倒数。仅相邻A*、B*反应，速率r=kθAθB，k=0.01000 mol/(m²s)。固定pB=1.000 bar，比较pA=1.000与2.000 bar：求两条件的A覆盖、B覆盖、空位分率与速率、速率比、在固定pB下最佳pA与最大速率。说明一类位点上的分率需加和为1，过量A也可能竞争排斥B而抑制反应。
+\item 推导模型主方程与相关守恒条件：D=1+2pA+pB，r=.01(2pA)(pB)/D²；固定pB=1时最优pA=(1+pB)/2=1 bar。
+\item 将全部物理输入换算为规范单位，检查热力学对数和指数中只有无量纲比。
+\item 第一组数值求解：thetaA\_pA1 = 0.50000000000000 fraction；thetaB\_pA1 = 0.25000000000000 fraction；vacancy\_pA1 = 0.25000000000000 fraction；rate\_pA1 = 0.0012500000000000 mol/(m2s)。
+\item 第二组状态、能量或动力学量：thetaA\_pA2 = 0.66666666666667 fraction；thetaB\_pA2 = 0.16666666666667 fraction；vacancy\_pA2 = 0.16666666666667 fraction；rate\_pA2 = 0.0011111111111111 mol/(m2s)。
+\item 剩余数值答案与回代：rate\_ratio = 0.88888888888889 ratio；optimal\_pA\_bar = 1.0000000000000 bar；optimal\_rate = 0.0012500000000000 mol/(m2s)。
+\item 核查正负性、覆盖或组成归一、化学原子守恒，以及电压、气压与扩散的物理边界。
+\item 使用独立数学表达式逐项重算答案字段，以防止主求值公式中无意的单位或代数错误。
+\item 题设所忽略的电极极化、介质非均匀性或浓度依赖系数将改变真实实验值，不能未经验证直接外推。
+\item 该完整题解仍属于待专家科学和原创性审核的不可出版草稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+thetaA\_pA1 = 0.5 fraction；thetaB\_pA1 = 0.25 fraction；vacancy\_pA1 = 0.25 fraction；rate\_pA1 = 0.00125 mol/(m2s)；thetaA\_pA2 = 0.666666667 fraction；thetaB\_pA2 = 0.166666667 fraction；vacancy\_pA2 = 0.166666667 fraction；rate\_pA2 = 0.00111111111 mol/(m2s)；rate\_ratio = 0.888888889 ratio；optimal\_pA\_bar = 1 bar；optimal\_rate = 0.00125 mol/(m2s)\par
+\noindent\textbf{模型前提：}
+仅适用本题所述常系数理想介质和统计模型；专家审核仍待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P215 · 不同溶液黏度下刚性胶体的Stokes–Einstein扩散}
+\noindent\textbf{题目}\par
+某水合刚性纳米球探针流体动力半径r=3.000 nm，在温度298.15 K和两种溶液黏度η=0.001000、0.002000 Pa·s下，假设无滑移Stokes阻力、连续介质与热布朗平衡成立。用kB=1.380649×10⁻²³ J/K、Stokes–Einstein式D=kBT/(6πηr)求两扩散系数、比值、两个摩擦系数ζ=6πηr、一维t=1 s的均方位移2Dt、对应均方根位移μm和由第一个D反推粒子半径nm。不能用三维6Dt代替一维2Dt。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整物理化学系统及约束：某水合刚性纳米球探针流体动力半径r=3.000 nm，在温度298.15 K和两种溶液黏度η=0.001000、0.002000 Pa·s下，假设无滑移Stokes阻力、连续介质与热布朗平衡成立。用kB=1.380649×10⁻²³ J/K、Stokes–Einstein式D=kBT/(6πηr)求两扩散系数、比值、两个摩擦系数ζ=6πηr、一维t=1 s的均方位移2Dt、对应均方根位移μm和由第一个D反推粒子半径nm。不能用三维6Dt代替一维2Dt。
+\item 推导模型主方程与相关守恒条件：D=kBT/ζ，ζ=6πηr，MSD1D=2Dt。
+\item 将全部物理输入换算为规范单位，检查热力学对数和指数中只有无量纲比。
+\item 第一组数值求解：D\_viscosity1 = 7.2794022498187e-11 m2/s；D\_viscosity2 = 3.6397011249094e-11 m2/s；D\_ratio = 2.0000000000000 ratio；friction1 = 5.6548667764616e-11 kg/s。
+\item 第二组状态、能量或动力学量：friction2 = 1.1309733552923e-10 kg/s；MSD1 = 1.4558804499637e-10 m2；MSD2 = 7.2794022498187e-11 m2。
+\item 剩余数值答案与回代：RMS1\_um = 12.065987112391 um；RMS2\_um = 8.5319413088808 um；inferred\_radius\_nm = 3.0000000000000 nm。
+\item 核查正负性、覆盖或组成归一、化学原子守恒，以及电压、气压与扩散的物理边界。
+\item 使用独立数学表达式逐项重算答案字段，以防止主求值公式中无意的单位或代数错误。
+\item 题设所忽略的电极极化、介质非均匀性或浓度依赖系数将改变真实实验值，不能未经验证直接外推。
+\item 该完整题解仍属于待专家科学和原创性审核的不可出版草稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+D\_viscosity1 = 7.27940225e-11 m2/s；D\_viscosity2 = 3.63970112e-11 m2/s；D\_ratio = 2 ratio；friction1 = 5.65486678e-11 kg/s；friction2 = 1.13097336e-10 kg/s；MSD1 = 1.45588045e-10 m2；MSD2 = 7.27940225e-11 m2；RMS1\_um = 12.0659871 um；RMS2\_um = 8.53194131 um；inferred\_radius\_nm = 3 nm\par
+\noindent\textbf{模型前提：}
+仅适用本题所述常系数理想介质和统计模型；专家审核仍待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P216 · 无定形聚合物WLF时间–温度等效松弛时间预测}
+\noindent\textbf{题目}\par
+某无定形聚合物满足Williams–Landel–Ferry经验式log10 aT=−C1(T−Tref)/(C2+T−Tref)，Tref=300.0 K、C1=17.44、C2=51.60 K。参考温度时特征松弛时间τref=100.0 s；假定τ(T)=aT τref，模型仅在300–330 K有效。计算310.0、320.0和330.0 K时的log10 aT、平移因子aT及松弛时间τ，求τ310/τ330。要求解释log10与自然对数不能混用，温度足够远时WLF外推可能失效。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整物理化学系统及约束：某无定形聚合物满足Williams–Landel–Ferry经验式log10 aT=−C1(T−Tref)/(C2+T−Tref)，Tref=300.0 K、C1=17.44、C2=51.60 K。参考温度时特征松弛时间τref=100.0 s；假定τ(T)=aT τref，模型仅在300–330 K有效。计算310.0、320.0和330.0 K时的log10 aT、平移因子aT及松弛时间τ，求τ310/τ330。要求解释log10与自然对数不能混用，温度足够远时WLF外推可能失效。
+\item 推导模型主方程与相关守恒条件：log10aT=−17.44ΔT/(51.6+ΔT)，aT=10\textasciicircum{}(log10aT)，τ=aT×100 s。
+\item 将全部物理输入换算为规范单位，检查热力学对数和指数中只有无量纲比。
+\item 第一组数值求解：log\_shift\_310 = -2.8311688311688 log10；log\_shift\_320 = -4.8715083798883 log10；log\_shift\_330 = -6.4117647058824 log10；factor\_310 = 0.0014751329666106 ratio。
+\item 第二组状态、能量或动力学量：factor\_320 = 0.000013442858278805 ratio；factor\_330 = 3.8746751204561e-7 ratio；tau\_310\_s = 0.14751329666106 s。
+\item 剩余数值答案与回代：tau\_320\_s = 0.0013442858278805 s；tau\_330\_s = 0.000038746751204561 s；tau\_ratio310\_330 = 3807.1139405280 ratio。
+\item 核查正负性、覆盖或组成归一、化学原子守恒，以及电压、气压与扩散的物理边界。
+\item 使用独立数学表达式逐项重算答案字段，以防止主求值公式中无意的单位或代数错误。
+\item 题设所忽略的电极极化、介质非均匀性或浓度依赖系数将改变真实实验值，不能未经验证直接外推。
+\item 该完整题解仍属于待专家科学和原创性审核的不可出版草稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+log\_shift\_310 = -2.83116883 log10；log\_shift\_320 = -4.87150838 log10；log\_shift\_330 = -6.41176471 log10；factor\_310 = 0.00147513297 ratio；factor\_320 = 1.34428583e-05 ratio；factor\_330 = 3.87467512e-07 ratio；tau\_310\_s = 0.147513297 s；tau\_320\_s = 0.00134428583 s；tau\_330\_s = 3.87467512e-05 s；tau\_ratio310\_330 = 3807.11394 ratio\par
+\noindent\textbf{模型前提：}
+仅适用本题所述常系数理想介质和统计模型；专家审核仍待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P217 · Debye–Hückel离子强度修正的单双价离子活动度系数}
+\noindent\textbf{题目}\par
+298.15 K稀水溶液用Debye–Hückel极限律log10 γi=−A zi²√I，I以mol/L数值计，A=0.5090。比较离子强度I1=0.001000与I2=0.01000 mol/L，分别对zi=+1和zi=+2。求四个γ、同I条件下二价/一价γ比、同价态在高低I下γ比、在I2时二价离子自由浓度c=0.005000 M的无量纲活动度γ c/(1 M)、及二价离子log10γ在两强度下的差。必须说明单离子活动度系数的约定性质和该极限律的稀溶液适用域。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整物理化学系统及约束：298.15 K稀水溶液用Debye–Hückel极限律log10 γi=−A zi²√I，I以mol/L数值计，A=0.5090。比较离子强度I1=0.001000与I2=0.01000 mol/L，分别对zi=+1和zi=+2。求四个γ、同I条件下二价/一价γ比、同价态在高低I下γ比、在I2时二价离子自由浓度c=0.005000 M的无量纲活动度γ c/(1 M)、及二价离子log10γ在两强度下的差。必须说明单离子活动度系数的约定性质和该极限律的稀溶液适用域。
+\item 推导模型主方程与相关守恒条件：γ=10\textasciicircum{}(−0.509 z² √I)，活动度数值γ×c/1 M。
+\item 将全部物理输入换算为规范单位，检查热力学对数和指数中只有无量纲比。
+\item 第一组数值求解：gamma1\_lowI = 0.96361600941648 ratio；gamma2\_lowI = 0.86221589897732 ratio；gamma1\_highI = 0.88940588755589 ratio；gamma2\_highI = 0.62574876335444 ratio。
+\item 第二组状态、能量或动力学量：div\_monovalent\_ratio\_lowI = 0.89477124762532 ratio；div\_monovalent\_ratio\_highI = 0.70355815281818 ratio；monovalent\_high\_low = 0.92298786950880 ratio。
+\item 剩余数值答案与回代：divalent\_high\_low = 0.72574486749392 ratio；divalent\_activity\_highI = 0.0031287438167722 activity；loggamma2\_difference = -0.13921602683897 log10。
+\item 核查正负性、覆盖或组成归一、化学原子守恒，以及电压、气压与扩散的物理边界。
+\item 使用独立数学表达式逐项重算答案字段，以防止主求值公式中无意的单位或代数错误。
+\item 题设所忽略的电极极化、介质非均匀性或浓度依赖系数将改变真实实验值，不能未经验证直接外推。
+\item 该完整题解仍属于待专家科学和原创性审核的不可出版草稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+gamma1\_lowI = 0.963616009 ratio；gamma2\_lowI = 0.862215899 ratio；gamma1\_highI = 0.889405888 ratio；gamma2\_highI = 0.625748763 ratio；div\_monovalent\_ratio\_lowI = 0.894771248 ratio；div\_monovalent\_ratio\_highI = 0.703558153 ratio；monovalent\_high\_low = 0.92298787 ratio；divalent\_high\_low = 0.725744867 ratio；divalent\_activity\_highI = 0.00312874382 activity；loggamma2\_difference = -0.139216027 log10\par
+\noindent\textbf{模型前提：}
+仅适用本题所述常系数理想介质和统计模型；专家审核仍待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P218 · 单电子对称Butler–Volmer电极电流与小信号电导}
+\noindent\textbf{题目}\par
+298.15 K理想单电子电极按Butler–Volmer方程j=j0[exp(αFη/RT)−exp(−(1−α)Fη/RT)]，j0=1.000 A/m²、α=0.5000。F=96485.33212 C/mol、R=8.314462618 J/(mol K)。计算η=+0.05000、−0.05000、+0.1000与0 V的净电流密度；在+0.05 V时氧化和还原部分电流及其比、j(+0.1)/j(+0.05)、在η≈0处的小信号电导dj/dη，以及净电流反对称校验。假设电荷转移控制、没有浓差极化和欧姆降。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整物理化学系统及约束：298.15 K理想单电子电极按Butler–Volmer方程j=j0[exp(αFη/RT)−exp(−(1−α)Fη/RT)]，j0=1.000 A/m²、α=0.5000。F=96485.33212 C/mol、R=8.314462618 J/(mol K)。计算η=+0.05000、−0.05000、+0.1000与0 V的净电流密度；在+0.05 V时氧化和还原部分电流及其比、j(+0.1)/j(+0.05)、在η≈0处的小信号电导dj/dη，以及净电流反对称校验。假设电荷转移控制、没有浓差极化和欧姆降。
+\item 推导模型主方程与相关守恒条件：设b=F/(2RT)，则j=2j0sinh(bη)，dj/dη|0=j0 F/(RT)。
+\item 将全部物理输入换算为规范单位，检查热力学对数和指数中只有无量纲比。
+\item 第一组数值求解：j\_plus0p05 = 2.2680545602768 A/m2；j\_minus0p05 = -2.2680545602768 A/m2；anodic\_plus0p05 = 2.6459855706008 A/m2；cathodic\_plus0p05 = 0.37793101032404 A/m2。
+\item 第二组状态、能量或动力学量：anodic\_cathodic\_ratio = 7.0012396398278 ratio；j\_plus0p1 = 6.8584077912633 A/m2；current\_ratio = 3.0239165809249 ratio。
+\item 剩余数值答案与回代：j\_zero = 0.0000000000000 A/m2；differential\_conductance = 38.921744495609 A/(m2V)；antisymmetry\_residual = 0.0000000000000 A/m2。
+\item 核查正负性、覆盖或组成归一、化学原子守恒，以及电压、气压与扩散的物理边界。
+\item 使用独立数学表达式逐项重算答案字段，以防止主求值公式中无意的单位或代数错误。
+\item 题设所忽略的电极极化、介质非均匀性或浓度依赖系数将改变真实实验值，不能未经验证直接外推。
+\item 该完整题解仍属于待专家科学和原创性审核的不可出版草稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+j\_plus0p05 = 2.26805456 A/m2；j\_minus0p05 = -2.26805456 A/m2；anodic\_plus0p05 = 2.64598557 A/m2；cathodic\_plus0p05 = 0.37793101 A/m2；anodic\_cathodic\_ratio = 7.00123964 ratio；j\_plus0p1 = 6.85840779 A/m2；current\_ratio = 3.02391658 ratio；j\_zero = 0 A/m2；differential\_conductance = 38.9217445 A/(m2V)；antisymmetry\_residual = 0 A/m2\par
+\noindent\textbf{模型前提：}
+仅适用本题所述常系数理想介质和统计模型；专家审核仍待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P219 · 球形纳米液滴的Laplace压差与表面张力自由能}
+\noindent\textbf{题目}\par
+理想球形液滴的液气界面表面张力γ=0.05000 N/m，气相外部压力pout=1.000×10⁵ Pa，半径分别为r1=10.00 nm和r2=100.0 nm。温度298.15 K，忽略曲率相关表面张力、电荷及分子尺度离散效应。求两个半径下的Laplace压差Δp=2γ/r和液滴内部绝对压力、表面积4πr²、单个液滴的表面能Gsurface=γA、两半径压差与表面能比及小液滴表面能对kBT的比值。说明界面自由能仅是体系的一个能量贡献。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整物理化学系统及约束：理想球形液滴的液气界面表面张力γ=0.05000 N/m，气相外部压力pout=1.000×10⁵ Pa，半径分别为r1=10.00 nm和r2=100.0 nm。温度298.15 K，忽略曲率相关表面张力、电荷及分子尺度离散效应。求两个半径下的Laplace压差Δp=2γ/r和液滴内部绝对压力、表面积4πr²、单个液滴的表面能Gsurface=γA、两半径压差与表面能比及小液滴表面能对kBT的比值。说明界面自由能仅是体系的一个能量贡献。
+\item 推导模型主方程与相关守恒条件：Δp=2γ/r，pin=pout+Δp，Gsurf=4πγr²。
+\item 将全部物理输入换算为规范单位，检查热力学对数和指数中只有无量纲比。
+\item 第一组数值求解：deltaP\_10nm = 10000000.000000 Pa；deltaP\_100nm = 1000000.0000000 Pa；insideP\_10nm = 10100000.000000 Pa；insideP\_100nm = 1100000.0000000 Pa。
+\item 第二组状态、能量或动力学量：surface\_area\_10nm = 1.2566370614359e-15 m2；surface\_area\_100nm = 1.2566370614359e-13 m2；surface\_energy\_10nm = 6.2831853071796e-17 J；surface\_energy\_100nm = 6.2831853071796e-15 J。
+\item 剩余数值答案与回代：deltaP\_ratio = 10.000000000000 ratio；surface\_energy\_ratio = 0.010000000000000 ratio；surface\_energy\_over\_kBT = 15263.768548287 ratio。
+\item 核查正负性、覆盖或组成归一、化学原子守恒，以及电压、气压与扩散的物理边界。
+\item 使用独立数学表达式逐项重算答案字段，以防止主求值公式中无意的单位或代数错误。
+\item 题设所忽略的电极极化、介质非均匀性或浓度依赖系数将改变真实实验值，不能未经验证直接外推。
+\item 该完整题解仍属于待专家科学和原创性审核的不可出版草稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+deltaP\_10nm = 10000000 Pa；deltaP\_100nm = 1000000 Pa；insideP\_10nm = 10100000 Pa；insideP\_100nm = 1100000 Pa；surface\_area\_10nm = 1.25663706e-15 m2；surface\_area\_100nm = 1.25663706e-13 m2；surface\_energy\_10nm = 6.28318531e-17 J；surface\_energy\_100nm = 6.28318531e-15 J；deltaP\_ratio = 10 ratio；surface\_energy\_ratio = 0.01 ratio；surface\_energy\_over\_kBT = 15263.7685 ratio\par
+\noindent\textbf{模型前提：}
+仅适用本题所述常系数理想介质和统计模型；专家审核仍待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P220 · 气相二聚分子A₂解离平衡的压力依赖与原子数守恒}
+\noindent\textbf{题目}\par
+某理想气相分解A₂(g)⇌2A(g)，起初有1.000 mol A₂，恒温下定义解离度α且Kp=0.2500，标准压力1.000 bar。假定没有其它物种，比较总压P=1.000与4.000 bar；解离后总物质的量n=1+α，yA=2α/(1+α)、yA2=(1−α)/(1+α)。求两压强下的α、分压pA与pA2、两组分总摩尔量、解离度比、由低压状态分压重建的Kp及A原子总摩尔数。说明高压会抑制气体分子数增多的分解反应。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整物理化学系统及约束：某理想气相分解A₂(g)⇌2A(g)，起初有1.000 mol A₂，恒温下定义解离度α且Kp=0.2500，标准压力1.000 bar。假定没有其它物种，比较总压P=1.000与4.000 bar；解离后总物质的量n=1+α，yA=2α/(1+α)、yA2=(1−α)/(1+α)。求两压强下的α、分压pA与pA2、两组分总摩尔量、解离度比、由低压状态分压重建的Kp及A原子总摩尔数。说明高压会抑制气体分子数增多的分解反应。
+\item 推导模型主方程与相关守恒条件：Kp=4α²(P/p°)/(1−α²)，α=√[Kp/(Kp+4P/p°)]。
+\item 将全部物理输入换算为规范单位，检查热力学对数和指数中只有无量纲比。
+\item 第一组数值求解：alpha\_1bar = 0.24253562503633 fraction；alpha\_4bar = 0.12403473458921 fraction；partial\_A\_1bar = 0.39038820320221 bar；partial\_A2\_1bar = 0.60961179679779 bar。
+\item 第二组状态、能量或动力学量：partial\_A\_4bar = 0.88278221853732 bar；partial\_A2\_4bar = 3.1172177814627 bar；total\_moles\_1bar = 1.2425356250363 mol；total\_moles\_4bar = 1.1240347345892 mol。
+\item 剩余数值答案与回代：alpha\_ratio = 1.9553847221876 ratio；Kp\_backcheck = 0.25000000000000 ratio；total\_A\_atom\_moles = 2.0000000000000 mol\_atoms。
+\item 核查正负性、覆盖或组成归一、化学原子守恒，以及电压、气压与扩散的物理边界。
+\item 使用独立数学表达式逐项重算答案字段，以防止主求值公式中无意的单位或代数错误。
+\item 题设所忽略的电极极化、介质非均匀性或浓度依赖系数将改变真实实验值，不能未经验证直接外推。
+\item 该完整题解仍属于待专家科学和原创性审核的不可出版草稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+alpha\_1bar = 0.242535625 fraction；alpha\_4bar = 0.124034735 fraction；partial\_A\_1bar = 0.390388203 bar；partial\_A2\_1bar = 0.609611797 bar；partial\_A\_4bar = 0.882782219 bar；partial\_A2\_4bar = 3.11721778 bar；total\_moles\_1bar = 1.24253563 mol；total\_moles\_4bar = 1.12403473 mol；alpha\_ratio = 1.95538472 ratio；Kp\_backcheck = 0.25 ratio；total\_A\_atom\_moles = 2 mol\_atoms\par
+\noindent\textbf{模型前提：}
+仅适用本题所述常系数理想介质和统计模型；专家审核仍待完成。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
