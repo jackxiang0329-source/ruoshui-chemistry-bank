@@ -143,6 +143,11 @@ Object.assign(witness,{
 "UC-ADV11-O143":()=>{const h=6.62607015e-34,c=29979245800,NA=6.02214076e23,kb=1.380649e-23,T=298.15,R=8.314462618,delta=5000,tot=.001;const f=s=>{const a=3000*s,b=3500*s,q=w=>Math.exp(-h*c*w/(2*kb*T))/(1-Math.exp(-h*c*w/(kb*T))),K=Math.exp(-delta/(R*T))*q(b)/q(a),Z=NA*h*c*(b-a)/2;return[K,Z,-R*T*Math.log(K),K/(1+K)]};const a=f(1),b=f(1/Math.sqrt(2));assert.ok(a[0]>0&&b[0]>a[0]&&b[1]<a[1]);return[a[1]/1000,b[1]/1000,a[0],b[0],b[0]/a[0],a[3],b[3],a[2]/1000,b[2]/1000,(a[2]-b[2])/1000,tot*a[3],tot*b[3],1-a[3],1-b[3],Math.log(b[0]/a[0])];},
 "UC-ADV11-P143":()=>{const kb=1.380649e-23,q=1.602176634e-19,T=298.15,I0=1e-9,Iph=.01,Pin=.1,Eg=1.5,Vt=kb*T/q,Voc=Vt*Math.log(1+Iph/I0),fun=v=>Iph-I0*(Math.exp(v/Vt)-1),der=v=>fun(v)-v*I0*Math.exp(v/Vt)/Vt;let a=0,b=Voc;for(let j=0;j<120;j++){let v=(a+b)/2;if(der(v)>0)a=v;else b=v}let Vm=(a+b)/2,Im=fun(Vm),P=Vm*Im,ratio=P/(Iph*Voc),eff=P/Pin,flux=Iph/q;assert.ok(Vm>0&&Vm<Voc&&Math.abs(der(Vm))<1e-10);return[Vt,Voc,Vm/Vt,Vm,Im*1e3,P*1e3,ratio,eff,flux,flux*Eg*q,Pin/(flux*Eg*q),I0*Math.exp(Vm/Vt),0,Voc/Vt];}
 });
+
+Object.assign(witness,{
+"UC-ADV11-I148":()=>{const R=8.314462618,NA=6.02214076e23,a=4e-10,Vm=NA*a**3,M=44.9559+3*18.9984,B=3e10,C=3*R,g=-1.5,av=g*C/(B*Vm),al=av/3,d=50,a2=a*(1+d*al),V2=NA*a2**3,rho=M/1000/Vm,rho2=M/1000/V2;assert.ok(a2<a&&rho2>rho&&Math.abs(B*Vm*av-g*C)<1e-12);return[Vm,M,rho,av,al,a2*1e10,V2,rho2,rho2/rho-1,g*C,B*Vm*av,3-3,(a2/a)**3-1];},
+"UC-ADV11-A147":()=>{const f0=1e5,m=1e-9,cap=2e-11,K=2,des=.02,ms=p=>cap*K*p/(1+K*p),fr=p=>f0/Math.sqrt(1+ms(p)/m),a=m*((f0/fr(.1))**2-1),b=m*((f0/fr(1))**2-1),sl=(1/a-1/b)/(10-1),it=1/a-sl*10,M=1/it,k=it/sl,z=ms(.5);assert.ok(Math.abs(k/K-1)<1e-11&&Math.abs(M/cap-1)<1e-11);return[fr(.1),fr(1),a,b,sl,it,M,k,z,fr(.5),k*.5/(1+k*.5),k*des,1/(des*(1+k*.5)),z/M];}
+});
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();
