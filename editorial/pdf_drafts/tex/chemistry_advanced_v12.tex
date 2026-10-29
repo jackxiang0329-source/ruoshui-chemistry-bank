@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (50题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (52题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -380,6 +380,32 @@ Davies\_mean\_divalent\_activity\_coefficient\_I001 = 0.661706582 fraction；Dav
 Davies活度公式仅为中低离子强度经验近似，并非大浓度精确理论；真实硫酸盐可产生离子缔合、硫酸氢根与硫酸钡晶格表面效应，故本计算不是实测溶解度的替代。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I164 · B2合金Bragg–Williams有序–无序相变和超结构XRD反演}
+\noindent\textbf{题目}\par
+某假想等化学计量AB合金形成B2两个等量子晶格，定义η使α位点A占位率(1+η)/2、β位点A占位率(1−η)/2。采用Bragg–Williams平均场自由能ΔG(η,T)=−Jη²/2+(RT/2)[(1+η)ln(1+η)+(1−η)ln(1−η)]（每摩尔AB式量），J=5000.0 J/mol、R=8.314462618 J/(mol K)，η∈[0,1]。求临界温度并说明无序解的稳定性，计算400、550、700 K平衡有序参量、正确/错误子晶格占位概率，400 K的排序内能、熵和自由能与曲率，550 K自由能及曲率。对散射因子f\_A=26、f\_B=28，已校正所有反射的其它因子的理想超结构与基本衍射比I\_100/I\_110=[η(f\_A−f\_B)/(f\_A+f\_B)]²，求两低温的强度比及温度比；验证原子数守恒、熵号和相变极限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假定等原子A/B合金形成两个相等B2子晶格α和β。定义有序度η∈[0,1]，α的A占据率(1+η)/2、β的A占据率(1−η)/2，因此整体仍是1:1化学计量。
+\item 题设每摩尔AB式量的Bragg–Williams相对自由能ΔG=−Jη²/2+(RT/2)[(1+η)ln(1+η)+(1−η)ln(1−η)]，J=5000 J/mol，零有序态G(0)=0。
+\item 对η求导得到G′=−Jη+RT atanhη，非零平衡参量满足η=tanh(Jη/RT)；二阶导数为G″=−J+RT/(1−η²)。
+\item 无序态附近泰勒展开ΔG≈(RT−J)η²/2+RTη⁴/12，故平均场临界温度T\_c=J/R；700 K超过临界点，唯一稳定对称解η=0。
+\item 求T\_c=601.361775225 K；400和550 K低于T\_c，η=0在这两温度下不稳定，需取唯一正的非零极小根。
+\item 使用区间二分求得η(400 K)=0.859821443020、η(550 K)=0.488637617313，有序度随温度升高降低且两值均严格在(0,1)中。
+\item 400 K的正确占位概率0.929910721510、反位概率0.0700892784900；每AB式量含两个子晶格位，平均反位原子数1−η=0.140178556980。
+\item 定义排序能量ΔU=−Jη²/2及配置熵差ΔS=−(R/2)[(1+η)ln(1+η)+(1−η)ln(1−η)]，400 K分别得-1848.23228469 J/mol和-3.65235518129 J/(mol K)。
+\item 平衡有序自由能在400 K为-387.290212178 J/mol、550 K为-26.8694529279 J/mol，均小于无序态的0。
+\item 二阶曲率分别7756.78807453与1007.29706172 J/mol，均正，表明计算根是稳定有序态。
+\item 理想XRD超结构(100)反射强度∝η²(f\_A−f\_B)²，而基本(110)反射∝(f\_A+f\_B)²；题设已校正几何、消光、温度和角度因子。
+\item 给f\_A=26、f\_B=28，则400 K强度比I\_100/I\_110=0.00101411922343、550 K为0.000327526366329，高温较弱；计算二比之比=0.322966332521。
+\item 有序与无序相化学式仍为AB，变化只是子晶格占位和自由能。真实合金的局部短程有序、畴结构、声子及反射几何条件会改变平均场相变和实际衍射强度。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+mean\_field\_critical\_temperature\_K = 601.361775 K；reduced\_coupling\_400K = 1.50340444 dimensionless；order\_parameter\_400K = 0.859821443 fraction；order\_parameter\_550K = 0.488637617 fraction；order\_parameter\_700K = 0 fraction；correct\_sublattice\_fraction\_400K = 0.929910722 fraction；antisite\_fraction\_400K = 0.0700892785 fraction；correct\_sublattice\_fraction\_550K = 0.744318809 fraction；antisite\_fraction\_550K = 0.255681191 fraction；ordering\_internal\_energy\_400K\_J\_mol = -1848.23228 J/mol；ordering\_entropy\_400K\_J\_molK = -3.65235518 J/(mol K)；ordering\_G\_400K\_J\_mol = -387.290212 J/mol；ordering\_G\_550K\_J\_mol = -26.8694529 J/mol；free\_energy\_curvature\_400K\_J\_mol = 7756.78807 J/mol；free\_energy\_curvature\_550K\_J\_mol = 1007.29706 J/mol；B2\_superlattice\_ratio\_400K = 0.00101411922 ratio；B2\_superlattice\_ratio\_550K = 0.000327526366 ratio；ratio\_of\_peak\_ratios\_550\_400 = 0.322966333 ratio；wrong\_site\_atom\_count\_per\_formula\_400K = 0.140178557 atoms/formula；AB\_stoichiometry\_residual = 0 atoms\par
+\noindent\textbf{模型前提：}
+有序与无序相化学式仍为AB，变化只是子晶格占位和自由能。真实合金的局部短程有序、畴结构、声子及反射几何条件会改变平均场相变和实际衍射强度。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -723,6 +749,32 @@ signal\_at\_10s\_nA = 1.67387736 nA；signal\_at\_30s\_nA = 3.20747936 nA；blan
 measured\_absorbance\_lambda1 = 0.15 absorbance；measured\_absorbance\_lambda2 = 0.104 absorbance；baseline\_corrected\_lambda1 = 0.14 absorbance；baseline\_corrected\_lambda2 = 0.084 absorbance；spectral\_matrix\_determinant = 168000000 (L/(mol cm))\textasciicircum{}2；reconstructed\_species\_X\_M = 8e-06 mol/L；reconstructed\_species\_Y\_M = 5e-06 mol/L；species\_X\_uM = 8 umol/L；species\_Y\_uM = 5 umol/L；species\_X\_to\_Y\_concentration\_ratio = 1.6 ratio；species\_X\_one\_sigma\_M = 1.59719141e-07 mol/L；species\_Y\_one\_sigma\_M = 2.70227606e-07 mol/L；species\_X\_variance\_M2 = 2.55102041e-14 (mol/L)\textasciicircum{}2；species\_Y\_variance\_M2 = 7.30229592e-14 (mol/L)\textasciicircum{}2；species\_XY\_covariance\_M2 = -2.42346939e-14 (mol/L)\textasciicircum{}2；estimated\_concentration\_correlation = -0.561501418 dimensionless；species\_X\_three\_sigma\_concentration\_LOD\_M = 4.79157424e-07 mol/L；species\_Y\_three\_sigma\_concentration\_LOD\_M = 8.10682819e-07 mol/L；predicted\_lambda1\_absorbance = 0.15 absorbance；predicted\_lambda2\_absorbance = 0.104 absorbance；X\_lambda1\_absorbance\_contribution = 0.12 absorbance；Y\_lambda1\_absorbance\_contribution = 0.02 absorbance\par
 \noindent\textbf{模型前提：}
 当两吸收物种的相对光谱形状几乎相同时det E趋0，反问题会严重放大噪声；真实样品的散射、漂移、非线性吸收和基线不确定性需要额外波长及校准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A164 · 氟离子选择电极双pH测量的HF解离与氯选择性系数反演}
+\noindent\textbf{题目}\par
+某假想氟离子选择电极在298.15 K下满足同价阴离子响应E=E₀−(RT/F)ln(a\_F−+K\_sel a\_Cl−)，其中E₀=0.2000 V，F=96485.33212 C/mol，R=8.314462618 J/(mol K)，a\_i=γ\_i c\_i/(1 mol/L)。氟以HF⇌H⁺+F⁻平衡存在，条件浓度K\_a=6.800×10⁻⁴，游离F⁻分数f=K\_a/(K\_a+[H⁺])。两次将同一样品缓冲在pH=2.500和4.500，总氟不变，Cl⁻浓度0.01000 mol/L不变，F与Cl活度系数均为0.8000；测得电势E\_low=0.475355073617360 V、E\_high=0.440981238050443 V。求由两电位同时唯一反演的总氟浓度C\_T与氯离子选择系数K\_sel，并计算两pH下自由氟、HF、氯干扰贡献分数及氯干扰等效总氟浓度。检查电极电位负斜率、酸碱与总氟原子守恒、有效活度正性以及真实样品的选择性限制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 把电极对同价负离子F⁻与Cl⁻的Nikolsky–Eisenman近似写成E=E₀−(RT/F)ln(a\_F+K\_sel a\_Cl)，活度均以1 mol/L标准浓度无量纲化。
+\item 由于HF⇌H⁺+F⁻且题设条件酸常数K\_a=6.800×10⁻⁴，固定pH下自由F⁻占总氟分数f=K\_a/(K\_a+10\textasciicircum{}(−pH))。
+\item 样品两次缓冲pH分别2.500、4.500，总氟浓度C\_T相同，氯分析浓度固定0.01000 mol/L，γ\_F=γ\_Cl=0.8000，且E₀=0.2000 V。
+\item 写成对两条件共同成立的z=γ\_F(C\_T/c°)f(pH)+K\_selγ\_Cl(C\_Cl/c°)，由阴离子的Nernst负斜率E=E₀−V\_Tlnz给出有效响应。
+\item 得到两个自由氟分数f₁=0.176978360270、f₂=0.955562444540，高pH端游离F⁻显著增多。
+\item T=298.15 K时V\_T=RT/F=0.0256925791215 V；两次测得电位E₁=0.475355073617 V、E₂=0.440981238050 V，E₂低于E₁。
+\item 用z\_i=exp[(E₀−E\_i)/V\_T]逐点反算，得z₁=0.0000221582688216、z₂=0.0000844449955632，它们均为正的无量纲活度响应。
+\item 用两电位差消除同一个氯干扰项，得到C\_T=(z₂−z₁)/(γ\_F(f₂−f₁))（浓度以mol/L输入）；f₂≠f₁使反问题唯一。
+\item 求得C\_T=0.000100000000000 mol/L，再由K\_sel=[z₁−γ\_F C\_T f₁]/(γ\_Cl C\_Cl)=0.00100000000000，系数为无量纲。
+\item 两次自由F⁻浓度分别0.0000176978360270、0.0000955562444540 mol/L，HF分别0.0000823021639730、0.00000444375554598 mol/L，各自相加为C\_T。
+\item 氯干扰的有效响应为z\_Cl=0.00000800000000000，占低、高pH总响应的比例0.361039035333、0.0947362238182，酸端影响更明显。
+\item 把氯的有效响应等同于游离F信号，得到两个pH下等效总氟浓度分别0.0000565040832378、0.0000104650408324 mol/L。
+\item 验证：若忽略HF而直接把总氟代入电极方程，会误判氟浓度和K\_sel。若出现HF₂⁻、AlF络合、液接电位变动、活度系数或氯活度变化，双条件方程不能直接使用。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Nernst\_voltage\_V = 0.0256925791 V；fluoride\_ionized\_fraction\_pH2p5 = 0.17697836 fraction；fluoride\_ionized\_fraction\_pH4p5 = 0.955562445 fraction；effective\_activity\_pH2p5 = 2.21582688e-05 activity；effective\_activity\_pH4p5 = 8.44449956e-05 activity；electrode\_E\_pH2p5\_V = 0.475355074 V；electrode\_E\_pH4p5\_V = 0.440981238 V；potential\_shift\_V = 0.0343738356 V；reconstructed\_total\_fluoride\_M = 0.0001 mol/L；reconstructed\_chloride\_selectivity = 0.001 ratio；free\_fluoride\_pH2p5\_M = 1.7697836e-05 mol/L；free\_fluoride\_pH4p5\_M = 9.55562445e-05 mol/L；HF\_pH2p5\_M = 8.2302164e-05 mol/L；HF\_pH4p5\_M = 4.44375555e-06 mol/L；chloride\_interference\_activity = 8e-06 activity；interference\_fraction\_pH2p5 = 0.361039035 fraction；interference\_fraction\_pH4p5 = 0.0947362238 fraction；equivalent\_fluoride\_interference\_pH2p5\_M = 5.65040832e-05 mol/L；equivalent\_fluoride\_interference\_pH4p5\_M = 1.04650408e-05 mol/L；inverted\_activity\_pH2p5 = 2.21582688e-05 activity；inverted\_activity\_pH4p5 = 8.44449956e-05 activity；fluoride\_ionization\_ratio = 5.39931799 ratio\par
+\noindent\textbf{模型前提：}
+验证：若忽略HF而直接把总氟代入电极方程，会误判氟浓度和K\_sel。若出现HF₂⁻、AlF络合、液接电位变动、活度系数或氯活度变化，双条件方程不能直接使用。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
