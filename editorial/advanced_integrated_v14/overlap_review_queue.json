@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 14,
   "status": "expert_review_pending",
-  "current_draft_count": 54,
+  "current_draft_count": 64,
   "expert_approved": 0,
-  "preliminary_flags": 69,
+  "preliminary_flags": 79,
   "pairs": [
     {
       "new_id": "UC-ADV14-I201",
@@ -434,6 +434,66 @@
       "reason": "第10–13辑模型族词汇Jaccard=0.333，仅作人工逐式核查优先级，不证明公式重复或独立。",
       "judgement": "pending_human_comparison",
       "screening_priority": "medium"
+    },
+    {
+      "new_id": "UC-ADV14-I215",
+      "prior_id": null,
+      "reason": "需要人工与前十三辑所有同类模型逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I216",
+      "prior_id": null,
+      "reason": "需要人工与前十三辑所有同类模型逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I217",
+      "prior_id": null,
+      "reason": "需要人工与前十三辑所有同类模型逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I218",
+      "prior_id": null,
+      "reason": "需要人工与前十三辑所有同类模型逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I219",
+      "prior_id": null,
+      "reason": "需要人工与前十三辑所有同类模型逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I220",
+      "prior_id": null,
+      "reason": "需要人工与前十三辑所有同类模型逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I221",
+      "prior_id": null,
+      "reason": "需要人工与前十三辑所有同类模型逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I222",
+      "prior_id": null,
+      "reason": "需要人工与前十三辑所有同类模型逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I223",
+      "prior_id": null,
+      "reason": "需要人工与前十三辑所有同类模型逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I224",
+      "prior_id": null,
+      "reason": "需要人工与前十三辑所有同类模型逐式核对。",
+      "judgement": "pending_human_comparison"
     }
   ],
   "new_items_requiring_cross_series_comparison": [
@@ -760,6 +820,66 @@
       "model_family": "Kelvin-capillary-condensation-curvature-vapor-pressure",
       "judgement": "pending_human_comparison",
       "screening": "机器公式复算；尚无独立数值见证与专家原创性认证。"
+    },
+    {
+      "new_id": "UC-ADV14-I215",
+      "model_family": "Y-doped-CaF2-fluorite-interstitial-charge-density",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值重算通过，人工学术和版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV14-I216",
+      "model_family": "cobalt-formal-potential-differential-ligand-stabilization",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值重算通过，人工学术和版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV14-I217",
+      "model_family": "M2-plus-tridentate-bidentate-competition-distribution",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值重算通过，人工学术和版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV14-I218",
+      "model_family": "ceria-Gd-dopant-CeIII-oxygen-vacancy-electroneutrality",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值重算通过，人工学术和版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV14-I219",
+      "model_family": "spin-dimer-singlet-triplet-degeneracy-thermodynamics",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值重算通过，人工学术和版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV14-I220",
+      "model_family": "MnCO3-carbonate-precipitation-pH-onset",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值重算通过，人工学术和版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV14-I221",
+      "model_family": "lithium-iron-phosphate-deliathiation-charge-account",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值重算通过，人工学术和版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV14-I222",
+      "model_family": "nitrosylchloride-equilibrium-extent-atom-conservation",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值重算通过，人工学术和版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV14-I223",
+      "model_family": "two-metals-one-ligand-competitive-binding",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值重算通过，人工学术和版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV14-I224",
+      "model_family": "erbium-thermal-coupled-luminescent-levels-ratio",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值重算通过，人工学术和版权审核待办。"
     }
   ]
 }
