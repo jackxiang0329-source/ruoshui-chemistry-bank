@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至13辑 (748题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至13辑 (758题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -16035,23 +16035,23 @@ mass\_ratio = 1.03174603 ratio；beta = -1.64125184 ratio；bias\_factor = 0.95 
 \Needspace{7\baselineskip}
 \subsubsection*{UC-ADV13-A187 · 两点玻璃电极pH标定的电位斜率与未知样本反演}
 \noindent\textbf{题目}\par
-298.15 K玻璃电极在缓冲液pH=4.000时读数E4=+0.18000 V、pH=10.000时读数E10=−0.17496 V，未知水样电极读数Eunk=+0.002520 V。假定电位对pH的经验直线E=E0−S pH在上述范围成立，无液接电位及温度变化，理论Nernst斜率为2.303RT/F。由两点求经验S和截距E0，计算未知样pH、对应H⁺活动度、经验斜率与理论斜率的相对偏差，并用三个点检验残差。\par
+298.15 K玻璃电极在缓冲液pH=4.000时读数E4=+0.18000 V、pH=10.000时读数E10=−0.17496 V，未知水样电极读数Eunk=+0.002520 V。假定电位对pH的经验直线E=E0−S pH在上述范围成立，无液接电位及温度变化，理论Nernst斜率为ln(10)RT/F。由两点求经验S和截距E0，计算未知样pH、对应H⁺活动度、经验斜率与理论斜率的相对偏差，并用三个点检验残差。\par
 \medskip\noindent\textbf{分步解答}
 \begin{enumerate}
-\item 实验模型、全部已知数值与明确的未知量：298.15 K玻璃电极在缓冲液pH=4.000时读数E4=+0.18000 V、pH=10.000时读数E10=−0.17496 V，未知水样电极读数Eunk=+0.002520 V。假定电位对pH的经验直线E=E0−S pH在上述范围成立，无液接电位及温度变化，理论Nernst斜率为2.303RT/F。由两点求经验S和截距E0，计算未知样pH、对应H⁺活动度、经验斜率与理论斜率的相对偏差，并用三个点检验残差。
+\item 实验模型、全部已知数值与明确的未知量：298.15 K玻璃电极在缓冲液pH=4.000时读数E4=+0.18000 V、pH=10.000时读数E10=−0.17496 V，未知水样电极读数Eunk=+0.002520 V。假定电位对pH的经验直线E=E0−S pH在上述范围成立，无液接电位及温度变化，理论Nernst斜率为ln(10)RT/F。由两点求经验S和截距E0，计算未知样pH、对应H⁺活动度、经验斜率与理论斜率的相对偏差，并用三个点检验残差。
 \item 推导所用校准或反演方程：S=(E4−E10)/(10−4)，E0=E4+4S，pHunk=(E0−Eunk)/S。
 \item 两点标定先求正的S，再计算外推截距E0，不能直接把电位视作pH。
 \item 检查未知pH落在4–10的校准有效范围内。
 \item 转换H+活度a\_H=10\textasciicircum{}(−pH)，若报告浓度需另有活度系数假定。
 \item 实际数值反演第一组：empirical\_slope\_V\_per\_pH=0.0591600000000 V/pH；calibration\_intercept\_V=0.416640000000 V；unknown\_pH=7.00000000000 pH。
-\item 后续参数与交叉量：hydrogen\_activity=1.00000000000e-7 ratio；theoretical\_Nernst\_slope\_V\_per\_pH=0.0591700097168 V/pH；relative\_slope\_error=-0.000169168753697 fraction。
+\item 后续参数与交叉量：hydrogen\_activity=1.00000000000e-7 ratio；theoretical\_Nernst\_slope\_V\_per\_pH=0.0591593496857 V/pH；relative\_slope\_error=0.0000109925866654 fraction。
 \item 独立验证和最终结果：reconstructed\_E4\_V=0.180000000000 V；reconstructed\_E10\_V=-0.174960000000 V；reconstructed\_Eunknown\_V=0.00252000000000 V。
 \item 数值单位必须分别处理测量信号、浓度、时间、质荷比与热力学因子；回代模型应能恢复给定的全部校准观测量。
 \item 误差与适用界限：题设假定的模型参数、校准范围及独立性为本题有效条件，所述理想读数不意味着实际测量没有偏差。
 \item 按人工作业规范，科学性、同构查重与版权尚需专家审查；数值见证仅重复计算物理化学模型。
 \end{enumerate}
 \noindent\textbf{答案摘要}\par
-empirical\_slope\_V\_per\_pH = 0.05916 V/pH；calibration\_intercept\_V = 0.41664 V；unknown\_pH = 7 pH；hydrogen\_activity = 1e-07 ratio；theoretical\_Nernst\_slope\_V\_per\_pH = 0.0591700097 V/pH；relative\_slope\_error = -0.000169168754 fraction；reconstructed\_E4\_V = 0.18 V；reconstructed\_E10\_V = -0.17496 V；reconstructed\_Eunknown\_V = 0.00252 V\par
+empirical\_slope\_V\_per\_pH = 0.05916 V/pH；calibration\_intercept\_V = 0.41664 V；unknown\_pH = 7 pH；hydrogen\_activity = 1e-07 ratio；theoretical\_Nernst\_slope\_V\_per\_pH = 0.0591593497 V/pH；relative\_slope\_error = 1.09925867e-05 fraction；reconstructed\_E4\_V = 0.18 V；reconstructed\_E10\_V = -0.17496 V；reconstructed\_Eunknown\_V = 0.00252 V\par
 \noindent\textbf{模型前提：}
 基体、仪器响应与校准方程按题设假定；待人工科学与跨辑原创性核查。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
@@ -16424,6 +16424,256 @@ Kagan型手性配体二聚的非线性对映选择性放大。假想手性配体
 RR\_fraction = 0.36 fraction；SS\_fraction = 0.16 fraction；RS\_fraction = 0.48 fraction；active\_fraction = 0.52 fraction；product\_ee = 0.384615385 fraction；ee\_amplification = 1.92307692 ratio；product\_R\_fraction = 0.692307692 fraction；product\_S\_fraction = 0.307692308 fraction\par
 \noindent\textbf{模型前提：}
 本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O181 · Curtin–Hammett快速构象平衡下的两条竞争环化反应动力学}
+\noindent\textbf{题目}\par
+某底物具有可快速互变的两个反应构象A和B，在298.15 K平衡常数K=[B]/[A]=4.000；A经不可逆一级环化生成PA，kA=0.05000 s⁻¹，B经另一环化生成PB，kB=0.2000 s⁻¹。构象互变比化学转化快许多，K在反应中恒定；初始底物总浓度0.01000 mol/L，反应t=10.00 s，不考虑产物反应或构象选择性随时间变化。求总底物衰减kobs、最终产物分支比、PA/PB在10 s的形成量及剩余底物，证明即使构象分数给定，产物比例还需要各自速率常数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 描述反应物、速率/配分模型和完整假设：某底物具有可快速互变的两个反应构象A和B，在298.15 K平衡常数K=[B]/[A]=4.000；A经不可逆一级环化生成PA，kA=0.05000 s⁻¹，B经另一环化生成PB，kB=0.2000 s⁻¹。构象互变比化学转化快许多，K在反应中恒定；初始底物总浓度0.01000 mol/L，反应t=10.00 s，不考虑产物反应或构象选择性随时间变化。求总底物衰减kobs、最终产物分支比、PA/PB在10 s的形成量及剩余底物，证明即使构象分数给定，产物比例还需要各自速率常数。
+\item 严格方程及参数转换：fA=1/(1+K)，fB=K/(1+K)，kobs=fAkA+fBkB；yA=fAkA/kobs，yB=fBkB/kobs。
+\item 构象分数由快速平衡直接给出，但不可直接将构象丰度当作产物比例。
+\item 从dC/dt=−kobs C积分得C=C0exp(−kobs t)，累计产物按速率分支乘已转化量。
+\item PA+PB+C严格等于C0；若构象互变慢于反应，Curtin–Hammett的准平衡假设不成立。
+\item 由模型依次算得第一批数值：fraction\_A=0.200000000000 fraction；fraction\_B=0.800000000000 fraction；k\_observed=0.170000000000 s\textasciicircum{}-1；product\_branch\_A=0.0588235294118 fraction。
+\item 计算剩余动力学或统计热力学中间量：product\_branch\_B=0.941176470588 fraction；product\_ratio\_B\_over\_A=16.0000000000 ratio；conversion\_t10=0.817316475947 fraction；remaining\_substrate\_M=0.00182683524053 mol/L。
+\item 最终分支、产率、自由能和回代结果：product\_A\_t10\_M=0.000480774397616 mol/L；product\_B\_t10\_M=0.00769239036186 mol/L；material\_balance\_M=0.0100000000000 mol/L。
+\item 检验所有产物/中间体的分率、单体骨架或电子/原子守恒，注意单独的分子数不一定守恒。
+\item 速率常数、标准态及Boltzmann指数必须无量纲，不能将mol/L、s\textasciicircum{}-1与kJ/mol直接混算。
+\item 理想化机理已排除的副反应、构象交换限制及真实催化剂失活需进一步验证；不能把本题数学闭式解当实验普适规律。
+\item 本题仍在专家原创性、科学性与版权待审名单，不是正式可出版题。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+fraction\_A = 0.2 fraction；fraction\_B = 0.8 fraction；k\_observed = 0.17 s\textasciicircum{}-1；product\_branch\_A = 0.0588235294 fraction；product\_branch\_B = 0.941176471 fraction；product\_ratio\_B\_over\_A = 16 ratio；conversion\_t10 = 0.817316476 fraction；remaining\_substrate\_M = 0.00182683524 mol/L；product\_A\_t10\_M = 0.000480774398 mol/L；product\_B\_t10\_M = 0.00769239036 mol/L；material\_balance\_M = 0.01 mol/L\par
+\noindent\textbf{模型前提：}
+速度和简并/构象平衡仅采用题设假想模型；需专家审校其真实适用性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O182 · SNAr酚盐活性亲核体的酸碱分布与拟一级转化率}
+\noindent\textbf{题目}\par
+假想活化氟代芳烃ArF仅与酚盐PhO⁻通过双分子SNAr生成ArOPh，速度r=k2[ArF][PhO⁻]，k2=3.000 L/(mol s)。总酚类[PhOH]+[PhO⁻]=0.02000 mol/L由外部库保持固定，pKa(PhOH)=10.000；外部缓冲分别设pH=9.000、11.000，初始ArF=0.005000 mol/L，t=100.0 s。无其它取代、酚盐耗尽或离子强度效应。计算两个pH的酚盐分数、自由酚盐浓度、拟一级速度、转化率、产物及底物余量，讨论提高pH而不是提高总酚量的作用。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 描述反应物、速率/配分模型和完整假设：假想活化氟代芳烃ArF仅与酚盐PhO⁻通过双分子SNAr生成ArOPh，速度r=k2[ArF][PhO⁻]，k2=3.000 L/(mol s)。总酚类[PhOH]+[PhO⁻]=0.02000 mol/L由外部库保持固定，pKa(PhOH)=10.000；外部缓冲分别设pH=9.000、11.000，初始ArF=0.005000 mol/L，t=100.0 s。无其它取代、酚盐耗尽或离子强度效应。计算两个pH的酚盐分数、自由酚盐浓度、拟一级速度、转化率、产物及底物余量，讨论提高pH而不是提高总酚量的作用。
+\item 严格方程及参数转换：fPhO=1/[1+10\textasciicircum{}(pKa−pH)]；kobs=k2 Cphenol fPhO；X=1−exp(−kobs t)。
+\item Henderson–Hasselbalch关系给出亲核体PhO⁻的分率，真正进入速度式的是自由PhO⁻而非总酚量。
+\item 在外部酚类储库条件下ArF按一级衰减，但若无储库，酚盐将被化学消耗不能固定。
+\item 两个pH下产物与未反应ArF之和均等于0.005000 mol/L。
+\item 由模型依次算得第一批数值：phenoxide\_fraction\_pH9=0.0909090909091 fraction；phenoxide\_fraction\_pH11=0.909090909091 fraction；phenoxide\_M\_pH9=0.00181818181818 mol/L；phenoxide\_M\_pH11=0.0181818181818 mol/L。
+\item 计算剩余动力学或统计热力学中间量：kobs\_pH9=0.00545454545455 s\textasciicircum{}-1；kobs\_pH11=0.0545454545455 s\textasciicircum{}-1；conversion\_pH9=0.420421721215 fraction；conversion\_pH11=0.995723179651 fraction。
+\item 最终分支、产率、自由能和回代结果：product\_pH9\_M=0.00210210860608 mol/L；product\_pH11\_M=0.00497861589825 mol/L；remaining\_ArF\_pH9\_M=0.00289789139392 mol/L；remaining\_ArF\_pH11\_M=0.0000213841017460 mol/L。
+\item 检验所有产物/中间体的分率、单体骨架或电子/原子守恒，注意单独的分子数不一定守恒。
+\item 速率常数、标准态及Boltzmann指数必须无量纲，不能将mol/L、s\textasciicircum{}-1与kJ/mol直接混算。
+\item 理想化机理已排除的副反应、构象交换限制及真实催化剂失活需进一步验证；不能把本题数学闭式解当实验普适规律。
+\item 本题仍在专家原创性、科学性与版权待审名单，不是正式可出版题。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+phenoxide\_fraction\_pH9 = 0.0909090909 fraction；phenoxide\_fraction\_pH11 = 0.909090909 fraction；phenoxide\_M\_pH9 = 0.00181818182 mol/L；phenoxide\_M\_pH11 = 0.0181818182 mol/L；kobs\_pH9 = 0.00545454545 s\textasciicircum{}-1；kobs\_pH11 = 0.0545454545 s\textasciicircum{}-1；conversion\_pH9 = 0.420421721 fraction；conversion\_pH11 = 0.99572318 fraction；product\_pH9\_M = 0.00210210861 mol/L；product\_pH11\_M = 0.0049786159 mol/L；remaining\_ArF\_pH9\_M = 0.00289789139 mol/L；remaining\_ArF\_pH11\_M = 2.13841017e-05 mol/L\par
+\noindent\textbf{模型前提：}
+速度和简并/构象平衡仅采用题设假想模型；需专家审校其真实适用性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O183 · Heck催化循环中CO竞争性配位抑制与催化速率}
+\noindent\textbf{题目}\par
+假想Pd催化Heck偶联的初速可被单一底物S饱和模型与气态CO竞争结合近似：v=Vmax[S]/\{Km(1+KCO pCO)+[S]\}，Vmax=0.02000 mmol/(L s)，Km=0.1000 mol/L，CO配位常数KCO=2.000 bar⁻¹。固定[S]=0.2000 mol/L，分别pCO=0、1.000 bar；总Pd催化剂浓度0.001000 mmol/L。求两种速率、催化剂表观TOF、CO抑制倍数及抑制前后Pd占位的无量纲竞争因子，解释CO配位于Pd空位降低可用催化中心而非改变净反应计量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 描述反应物、速率/配分模型和完整假设：假想Pd催化Heck偶联的初速可被单一底物S饱和模型与气态CO竞争结合近似：v=Vmax[S]/\{Km(1+KCO pCO)+[S]\}，Vmax=0.02000 mmol/(L s)，Km=0.1000 mol/L，CO配位常数KCO=2.000 bar⁻¹。固定[S]=0.2000 mol/L，分别pCO=0、1.000 bar；总Pd催化剂浓度0.001000 mmol/L。求两种速率、催化剂表观TOF、CO抑制倍数及抑制前后Pd占位的无量纲竞争因子，解释CO配位于Pd空位降低可用催化中心而非改变净反应计量。
+\item 严格方程及参数转换：v=Vmax s/(Km(1+KCO pCO)+s)，TOF=v/[Pd]total。
+\item 同一底物浓度下，增加CO使表观Km增加但Vmax不变，区别竞争抑制和不可逆催化剂死亡。
+\item 速率和Pd浓度都以mmol/L计时比值直接得到s⁻¹，不可把两组不同浓度单位混用。
+\item 本题忽略Pd沉淀与CO影响氧化加成势垒；该简单稳态式只是题设催化机制的有效模型。
+\item 由模型依次算得第一批数值：rate\_without\_CO\_mmol\_L\_s=0.0133333333333 mmol/(L s)；rate\_at\_1bar\_CO\_mmol\_L\_s=0.00800000000000 mmol/(L s)；TOF\_without\_CO\_s=13.3333333333 s\textasciicircum{}-1；TOF\_1bar\_CO\_s=8.00000000000 s\textasciicircum{}-1。
+\item 计算剩余动力学或统计热力学中间量：activity\_retention\_fraction=0.600000000000 fraction；inhibition\_factor=1.66666666667 ratio；apparent\_Km\_without\_CO\_M=0.100000000000 mol/L。
+\item 最终分支、产率、自由能和回代结果：apparent\_Km\_with\_CO\_M=0.300000000000 mol/L；substrate\_saturation\_without\_CO=0.666666666667 fraction；substrate\_saturation\_with\_CO=0.400000000000 fraction。
+\item 检验所有产物/中间体的分率、单体骨架或电子/原子守恒，注意单独的分子数不一定守恒。
+\item 速率常数、标准态及Boltzmann指数必须无量纲，不能将mol/L、s\textasciicircum{}-1与kJ/mol直接混算。
+\item 理想化机理已排除的副反应、构象交换限制及真实催化剂失活需进一步验证；不能把本题数学闭式解当实验普适规律。
+\item 本题仍在专家原创性、科学性与版权待审名单，不是正式可出版题。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+rate\_without\_CO\_mmol\_L\_s = 0.0133333333 mmol/(L s)；rate\_at\_1bar\_CO\_mmol\_L\_s = 0.008 mmol/(L s)；TOF\_without\_CO\_s = 13.3333333 s\textasciicircum{}-1；TOF\_1bar\_CO\_s = 8 s\textasciicircum{}-1；activity\_retention\_fraction = 0.6 fraction；inhibition\_factor = 1.66666667 ratio；apparent\_Km\_without\_CO\_M = 0.1 mol/L；apparent\_Km\_with\_CO\_M = 0.3 mol/L；substrate\_saturation\_without\_CO = 0.666666667 fraction；substrate\_saturation\_with\_CO = 0.4 fraction\par
+\noindent\textbf{模型前提：}
+速度和简并/构象平衡仅采用题设假想模型；需专家审校其真实适用性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O184 · Mayo链转移方程控制自由基聚合度与数均分子量}
+\noindent\textbf{题目}\par
+某假想甲基丙烯酸甲酯(MMA)自由基聚合中，不加链转移剂时数均聚合度DPn,0=1000.0；加入已知链转移系数Ctr=0.5000的硫醇，维持[S]/[M]分别为0.002000与0.02000，MMA重复单元摩尔质量100.12 g/mol。假定低转化率时链转移剂和单体浓度近似恒定，且Mayo方程1/DPn=1/DPn,0+Ctr[S]/[M]成立。求两条件的数均聚合度、理论数均分子量（忽略端基质量）、新生链平均数相对无链转移剂的增加比例，以及两聚合度之比，说明这个公式与分子量分布PDI无直接一一对应关系。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 描述反应物、速率/配分模型和完整假设：某假想甲基丙烯酸甲酯(MMA)自由基聚合中，不加链转移剂时数均聚合度DPn,0=1000.0；加入已知链转移系数Ctr=0.5000的硫醇，维持[S]/[M]分别为0.002000与0.02000，MMA重复单元摩尔质量100.12 g/mol。假定低转化率时链转移剂和单体浓度近似恒定，且Mayo方程1/DPn=1/DPn,0+Ctr[S]/[M]成立。求两条件的数均聚合度、理论数均分子量（忽略端基质量）、新生链平均数相对无链转移剂的增加比例，以及两聚合度之比，说明这个公式与分子量分布PDI无直接一一对应关系。
+\item 严格方程及参数转换：1/DPn=1/1000+0.5 r，Mn=DPn×100.12 g/mol，链数/固定单体质量∝1/DPn。
+\item 链转移产生新链而截短旧链，使聚合度下降，但不在本式中改变重复单元摩尔质量。
+\item 把给定[S]/[M]看作低转化率的有效稳定条件，不能对全程消耗引起的比值变化作无限外推。
+\item Mayo式确定数均聚合度，无法单独决定分子量分布的多分散系数。
+\item 由模型依次算得第一批数值：DPn\_low\_transfer=500.000000000 ratio；DPn\_high\_transfer=90.9090909091 ratio；Mn\_low\_g\_mol=50060.0000000 g/mol；Mn\_high\_g\_mol=9101.81818182 g/mol。
+\item 计算剩余动力学或统计热力学中间量：Mn\_no\_transfer\_g\_mol=100120.000000 g/mol；chain\_number\_factor\_low=2.00000000000 ratio；chain\_number\_factor\_high=11.0000000000 ratio。
+\item 最终分支、产率、自由能和回代结果：DPn\_ratio\_low\_over\_high=5.50000000000 ratio；transfer\_term\_low=0.00100000000000 ratio；transfer\_term\_high=0.0100000000000 ratio。
+\item 检验所有产物/中间体的分率、单体骨架或电子/原子守恒，注意单独的分子数不一定守恒。
+\item 速率常数、标准态及Boltzmann指数必须无量纲，不能将mol/L、s\textasciicircum{}-1与kJ/mol直接混算。
+\item 理想化机理已排除的副反应、构象交换限制及真实催化剂失活需进一步验证；不能把本题数学闭式解当实验普适规律。
+\item 本题仍在专家原创性、科学性与版权待审名单，不是正式可出版题。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+DPn\_low\_transfer = 500 ratio；DPn\_high\_transfer = 90.9090909 ratio；Mn\_low\_g\_mol = 50060 g/mol；Mn\_high\_g\_mol = 9101.81818 g/mol；Mn\_no\_transfer\_g\_mol = 100120 g/mol；chain\_number\_factor\_low = 2 ratio；chain\_number\_factor\_high = 11 ratio；DPn\_ratio\_low\_over\_high = 5.5 ratio；transfer\_term\_low = 0.001 ratio；transfer\_term\_high = 0.01 ratio\par
+\noindent\textbf{模型前提：}
+速度和简并/构象平衡仅采用题设假想模型；需专家审校其真实适用性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O185 · E2反式共平面活性构象的热平衡和消除半衰期}
+\noindent\textbf{题目}\par
+一具有可转动C–C单键的假想卤代烷处于快速构象平衡，仅反式共平面anti构象能够发生E2消除；anti相对非活性gauche构象的自由能高4.000 kJ/mol，两个构象简并度均视为1。在298.15与350.0 K内自由能差不变，anti构象中化学消除速度常数kanti=0.5000 s⁻¹亦视为温度独立，以便单独研究构象人口影响。求各温度anti分数、整体观察速度kobs、半衰期、反应5 s的转化率与anti分数温变。反应物从初始1 mol单分子开始，产物不再反应。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 描述反应物、速率/配分模型和完整假设：一具有可转动C–C单键的假想卤代烷处于快速构象平衡，仅反式共平面anti构象能够发生E2消除；anti相对非活性gauche构象的自由能高4.000 kJ/mol，两个构象简并度均视为1。在298.15与350.0 K内自由能差不变，anti构象中化学消除速度常数kanti=0.5000 s⁻¹亦视为温度独立，以便单独研究构象人口影响。求各温度anti分数、整体观察速度kobs、半衰期、反应5 s的转化率与anti分数温变。反应物从初始1 mol单分子开始，产物不再反应。
+\item 严格方程及参数转换：panti=exp(−ΔG/(RT))/[1+exp(−ΔG/(RT))]，kobs=panti kanti。
+\item 反式共平面构象即使是较高自由能构象，也可能独占反应通道；消除速率取该构象分数加权。
+\item 构象交换远快于消除时，底物总体满足单指数有效一级衰减。
+\item 人为保持kanti不随温度变化，只隔离构象人口的热响应，真实E2反应有额外活化能温变。
+\item 由模型依次算得第一批数值：anti\_fraction\_298=0.166091918418 fraction；anti\_fraction\_350=0.201887137924 fraction；k\_observed\_298=0.0830459592092 s\textasciicircum{}-1；k\_observed\_350=0.100943568962 s\textasciicircum{}-1。
+\item 计算剩余动力学或统计热力学中间量：half\_life\_298=8.34654915375 s；half\_life\_350=6.86667994492 s；conversion\_5s\_298=0.339811445447 fraction。
+\item 最终分支、产率、自由能和回代结果：conversion\_5s\_350=0.396324118317 fraction；anti\_population\_ratio=1.21551451658 ratio；k\_observed\_ratio=1.21551451658 ratio。
+\item 检验所有产物/中间体的分率、单体骨架或电子/原子守恒，注意单独的分子数不一定守恒。
+\item 速率常数、标准态及Boltzmann指数必须无量纲，不能将mol/L、s\textasciicircum{}-1与kJ/mol直接混算。
+\item 理想化机理已排除的副反应、构象交换限制及真实催化剂失活需进一步验证；不能把本题数学闭式解当实验普适规律。
+\item 本题仍在专家原创性、科学性与版权待审名单，不是正式可出版题。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+anti\_fraction\_298 = 0.166091918 fraction；anti\_fraction\_350 = 0.201887138 fraction；k\_observed\_298 = 0.0830459592 s\textasciicircum{}-1；k\_observed\_350 = 0.100943569 s\textasciicircum{}-1；half\_life\_298 = 8.34654915 s；half\_life\_350 = 6.86667994 s；conversion\_5s\_298 = 0.339811445 fraction；conversion\_5s\_350 = 0.396324118 fraction；anti\_population\_ratio = 1.21551452 ratio；k\_observed\_ratio = 1.21551452 ratio\par
+\noindent\textbf{模型前提：}
+速度和简并/构象平衡仅采用题设假想模型；需专家审校其真实适用性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O186 · 不对称醛醇缩合的竞争过渡态ΔΔG‡与ee温度反转}
+\noindent\textbf{题目}\par
+一种理想不对称醛醇加成可通过形成R或S产物的两条不可逆平行过渡态进行。两路径的活化焓差ΔΔH‡=H‡R−H‡S=+2.000 kJ/mol，活化熵差ΔΔS‡=S‡R−S‡S=+5.000 J/(mol K)，两路径Eyring速率的共同前因子相同。298.15和350.0 K下求kR/kS、R/S产物分率与产物ee\_R=(nR−nS)/(nR+nS)，以及ee从S占优变为R占优的温度。假设反应物不会产生别的非手性产物，产物完全不可逆、不消旋。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 描述反应物、速率/配分模型和完整假设：一种理想不对称醛醇加成可通过形成R或S产物的两条不可逆平行过渡态进行。两路径的活化焓差ΔΔH‡=H‡R−H‡S=+2.000 kJ/mol，活化熵差ΔΔS‡=S‡R−S‡S=+5.000 J/(mol K)，两路径Eyring速率的共同前因子相同。298.15和350.0 K下求kR/kS、R/S产物分率与产物ee\_R=(nR−nS)/(nR+nS)，以及ee从S占优变为R占优的温度。假设反应物不会产生别的非手性产物，产物完全不可逆、不消旋。
+\item 严格方程及参数转换：ln(kR/kS)=−(ΔΔH‡−TΔΔS‡)/(RT)，pR=kR/(kR+kS)，eeR=2pR−1。
+\item 差分活化自由能ΔΔG‡=ΔΔH‡−TΔΔS‡随温度变号，决定哪一个过渡态更快。
+\item 无需知道两条通道绝对速率，就能从速率比给出产物的动力学对映体比例。
+\item 等选择性温度T*=ΔΔH‡/ΔΔS‡；活化差为零时ee=0，不代表整体反应速度为零。
+\item 由模型依次算得第一批数值：deltaDeltaG\_298\_kJ\_mol=0.509250000000 kJ/mol；deltaDeltaG\_350\_kJ\_mol=0.250000000000 kJ/mol；rate\_ratio\_R\_over\_S\_298=0.814297797172 ratio；rate\_ratio\_R\_over\_S\_350=0.917677896659 ratio。
+\item 计算剩余动力学或统计热力学中间量：product\_R\_fraction\_298=0.448822568402 fraction；product\_R\_fraction\_350=0.478535993066 fraction；product\_ee\_R\_298=-0.102354863197 fraction。
+\item 最终分支、产率、自由能和回代结果：product\_ee\_R\_350=-0.0429280138675 fraction；selectivity\_crossover\_T=400.000000000 K；rate\_ratio\_high\_over\_low=1.12695613306 ratio。
+\item 检验所有产物/中间体的分率、单体骨架或电子/原子守恒，注意单独的分子数不一定守恒。
+\item 速率常数、标准态及Boltzmann指数必须无量纲，不能将mol/L、s\textasciicircum{}-1与kJ/mol直接混算。
+\item 理想化机理已排除的副反应、构象交换限制及真实催化剂失活需进一步验证；不能把本题数学闭式解当实验普适规律。
+\item 本题仍在专家原创性、科学性与版权待审名单，不是正式可出版题。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+deltaDeltaG\_298\_kJ\_mol = 0.50925 kJ/mol；deltaDeltaG\_350\_kJ\_mol = 0.25 kJ/mol；rate\_ratio\_R\_over\_S\_298 = 0.814297797 ratio；rate\_ratio\_R\_over\_S\_350 = 0.917677897 ratio；product\_R\_fraction\_298 = 0.448822568 fraction；product\_R\_fraction\_350 = 0.478535993 fraction；product\_ee\_R\_298 = -0.102354863 fraction；product\_ee\_R\_350 = -0.0429280139 fraction；selectivity\_crossover\_T = 400 K；rate\_ratio\_high\_over\_low = 1.12695613 ratio\par
+\noindent\textbf{模型前提：}
+速度和简并/构象平衡仅采用题设假想模型；需专家审校其真实适用性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O187 · 可见光光氧化量子产率与吸收光子摩尔通量计量}
+\noindent\textbf{题目}\par
+一种假想有机底物的LED光氧化实验，入射单色光子摩尔通量φin=2.000×10⁻⁶ mol photons/s；样品在激发波长单程吸光度A=0.5000，光学吸收分数fabs=1−10\textasciicircum{}(−A)；反应时间t=600.0 s。假设被吸收光子形成指定产物P的量子产率ΦP=0.2500 mol product/mol absorbed photons，混合物体积V=0.1000 L，光源通量恒定、没有内滤变化或副反应。求入射、吸收光子摩尔量、反应产物量与浓度、产物生成速率以及未吸收光子数量；讨论ΦP小于1不等于每次反应必消耗一个分子氧。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 描述反应物、速率/配分模型和完整假设：一种假想有机底物的LED光氧化实验，入射单色光子摩尔通量φin=2.000×10⁻⁶ mol photons/s；样品在激发波长单程吸光度A=0.5000，光学吸收分数fabs=1−10\textasciicircum{}(−A)；反应时间t=600.0 s。假设被吸收光子形成指定产物P的量子产率ΦP=0.2500 mol product/mol absorbed photons，混合物体积V=0.1000 L，光源通量恒定、没有内滤变化或副反应。求入射、吸收光子摩尔量、反应产物量与浓度、产物生成速率以及未吸收光子数量；讨论ΦP小于1不等于每次反应必消耗一个分子氧。
+\item 严格方程及参数转换：nabs=φin t(1−10\textasciicircum{}(−A))，nP=ΦP nabs，cP=nP/V。
+\item 吸光度是常用对数定义，透射率为10\textasciicircum{}(−A)而非e\textasciicircum{}(−A)。
+\item 量子产率严格按照被吸收光子而非入射光子归一化，不应省去fabs。
+\item 能量与电子计量未完全指定，本题只能推得光子与指定产物的统计计量。
+\item 由模型依次算得第一批数值：absorbed\_fraction=0.683772233983 fraction；transmitted\_fraction=0.316227766017 fraction；incident\_photon\_mol=0.00120000000000 mol；absorbed\_photon\_mol=0.000820526680780 mol。
+\item 计算剩余动力学或统计热力学中间量：transmitted\_photon\_mol=0.000379473319220 mol；product\_formed\_mol=0.000205131670195 mol；product\_concentration\_M=0.00205131670195 mol/L。
+\item 最终分支、产率、自由能和回代结果：product\_rate\_mol\_s=3.41886116992e-7 mol/s；per\_incident\_photon\_yield=0.170943058496 ratio；quantum\_yield\_recheck=0.250000000000 ratio。
+\item 检验所有产物/中间体的分率、单体骨架或电子/原子守恒，注意单独的分子数不一定守恒。
+\item 速率常数、标准态及Boltzmann指数必须无量纲，不能将mol/L、s\textasciicircum{}-1与kJ/mol直接混算。
+\item 理想化机理已排除的副反应、构象交换限制及真实催化剂失活需进一步验证；不能把本题数学闭式解当实验普适规律。
+\item 本题仍在专家原创性、科学性与版权待审名单，不是正式可出版题。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+absorbed\_fraction = 0.683772234 fraction；transmitted\_fraction = 0.316227766 fraction；incident\_photon\_mol = 0.0012 mol；absorbed\_photon\_mol = 0.000820526681 mol；transmitted\_photon\_mol = 0.000379473319 mol；product\_formed\_mol = 0.00020513167 mol；product\_concentration\_M = 0.0020513167 mol/L；product\_rate\_mol\_s = 3.41886117e-07 mol/s；per\_incident\_photon\_yield = 0.170943058 ratio；quantum\_yield\_recheck = 0.25 ratio\par
+\noindent\textbf{模型前提：}
+速度和简并/构象平衡仅采用题设假想模型；需专家审校其真实适用性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O188 · 活性酰氯水解和胺解并行拟一级路径的化学选择性}
+\noindent\textbf{题目}\par
+某假想活性酰氯AcCl在混合溶剂中只经溶剂水解生成羧酸PA（拟一级kH=0.02000 s⁻¹）与伯胺反应生成酰胺PN（kN=2.000 L/(mol s)）。伯胺自由浓度由储库固定在0.1000 mol/L，AcCl初始0.005000 mol/L，时间t=10.00 s，产物稳定且水解产物不再胺解。求观测速率、两路径最终选择性与10 s时产物浓度、未反应酰氯、两产物比、半衰期及若把胺浓度降低10倍带来的选择性变化。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 描述反应物、速率/配分模型和完整假设：某假想活性酰氯AcCl在混合溶剂中只经溶剂水解生成羧酸PA（拟一级kH=0.02000 s⁻¹）与伯胺反应生成酰胺PN（kN=2.000 L/(mol s)）。伯胺自由浓度由储库固定在0.1000 mol/L，AcCl初始0.005000 mol/L，时间t=10.00 s，产物稳定且水解产物不再胺解。求观测速率、两路径最终选择性与10 s时产物浓度、未反应酰氯、两产物比、半衰期及若把胺浓度降低10倍带来的选择性变化。
+\item 严格方程及参数转换：kobs=kH+kN[NH2]；famide=kN[NH2]/kobs；nProduct=C0(1−e\textasciicircum{}(−kobst))f。
+\item 一级水解和二级胺解在固定自由胺条件下都表现为拟一级并行通道。
+\item 产物分支来自相对速率而不是两种产物热力学稳定性。
+\item 胺浓度减少会使胺解伪一级速率下降而不改变假定的一阶水解项。
+\item 由模型依次算得第一批数值：aminolysis\_pseudorate\_s=0.200000000000 s\textasciicircum{}-1；total\_pseudorate\_s=0.220000000000 s\textasciicircum{}-1；amide\_selectivity=0.909090909091 fraction；acid\_selectivity=0.0909090909091 fraction。
+\item 计算剩余动力学或统计热力学中间量：amide\_t10\_M=0.00404180382563 mol/L；acid\_t10\_M=0.000404180382563 mol/L；unreacted\_AcCl\_t10\_M=0.000554015791812 mol/L；amide\_over\_acid\_ratio=10.0000000000 ratio。
+\item 最终分支、产率、自由能和回代结果：half\_life\_s=3.15066900255 s；amide\_selectivity\_at\_0p01M=0.500000000000 fraction；amide\_selectivity\_drop=0.409090909091 fraction。
+\item 检验所有产物/中间体的分率、单体骨架或电子/原子守恒，注意单独的分子数不一定守恒。
+\item 速率常数、标准态及Boltzmann指数必须无量纲，不能将mol/L、s\textasciicircum{}-1与kJ/mol直接混算。
+\item 理想化机理已排除的副反应、构象交换限制及真实催化剂失活需进一步验证；不能把本题数学闭式解当实验普适规律。
+\item 本题仍在专家原创性、科学性与版权待审名单，不是正式可出版题。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+aminolysis\_pseudorate\_s = 0.2 s\textasciicircum{}-1；total\_pseudorate\_s = 0.22 s\textasciicircum{}-1；amide\_selectivity = 0.909090909 fraction；acid\_selectivity = 0.0909090909 fraction；amide\_t10\_M = 0.00404180383 mol/L；acid\_t10\_M = 0.000404180383 mol/L；unreacted\_AcCl\_t10\_M = 0.000554015792 mol/L；amide\_over\_acid\_ratio = 10 ratio；half\_life\_s = 3.150669 s；amide\_selectivity\_at\_0p01M = 0.5 fraction；amide\_selectivity\_drop = 0.409090909 fraction\par
+\noindent\textbf{模型前提：}
+速度和简并/构象平衡仅采用题设假想模型；需专家审校其真实适用性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O189 · 对映体互变与不对称酶消耗的动态动力学拆分解析矩阵指数}
+\noindent\textbf{题目}\par
+一种手性底物的R/S对映体在反应液中以对称一级互变速率kr=0.05000 s⁻¹互相转化，酶对R、S的不可逆消耗速率分别kR=0.1000 s⁻¹、kS=0.02000 s⁻¹。R、S初始各0.01000 mol/L，产生互不互变的PR、PS，观察t=30.00 s。线性常系数方程dR/dt=−(kR+kr)R+krS，dS/dt=krR−(kS+kr)S；dPR/dt=kR R，dPS/dt=kS S。求R/S剩余量、两产物浓度、产品ee、残余底物ee及严格总物料守恒，要求使用2×2矩阵指数或等价解析本征值公式，不能忽略互变。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 描述反应物、速率/配分模型和完整假设：一种手性底物的R/S对映体在反应液中以对称一级互变速率kr=0.05000 s⁻¹互相转化，酶对R、S的不可逆消耗速率分别kR=0.1000 s⁻¹、kS=0.02000 s⁻¹。R、S初始各0.01000 mol/L，产生互不互变的PR、PS，观察t=30.00 s。线性常系数方程dR/dt=−(kR+kr)R+krS，dS/dt=krR−(kS+kr)S；dPR/dt=kR R，dPS/dt=kS S。求R/S剩余量、两产物浓度、产品ee、残余底物ee及严格总物料守恒，要求使用2×2矩阵指数或等价解析本征值公式，不能忽略互变。
+\item 严格方程及参数转换：设m=−(kR+kS+2kr)/2，δ=(kS−kR)/2，ω=√(δ²+kr²)；R=e\textasciicircum{}(mt)[R0 coshωt+(δR0+krS0)sinhωt/ω]，S=e\textasciicircum{}(mt)[S0coshωt+(krR0−δS0)sinhωt/ω]。产物由相应R/S积分得出。
+\item 本征速率λ±=m±ω均为负，保证无源体系R、S均随长时间趋于零。
+\item 积分因子J(a)=expm1(at)/a；∫e\textasciicircum{}(mt)coshωt=[J(m+ω)+J(m−ω)]/2，sinh对应两项之差的一半。
+\item 以产物PR=kR∫Rdt、PS=kS∫Sdt严格计算，而非把瞬时分率当作全时间累积产物分率。
+\item 由模型依次算得第一批数值：eigenvalue\_fast\_s=-0.174031242374 s\textasciicircum{}-1；eigenvalue\_slow\_s=-0.0459687576257 s\textasciicircum{}-1；remaining\_R\_t30\_M=0.00147849922087 mol/L；remaining\_S\_t30\_M=0.00301782401566 mol/L。
+\item 计算剩余动力学或统计热力学中间量：product\_PR\_t30\_M=0.0118201731720 mol/L；product\_PS\_t30\_M=0.00368350359152 mol/L；product\_ee\_R=0.524821931247 fraction；unreacted\_substrate\_ee\_R=-0.342351898166 fraction。
+\item 最终分支、产率、自由能和回代结果：product\_inventory\_M=0.0155036767635 mol/L；reactant\_inventory\_M=0.00449632323653 mol/L；material\_total\_M=0.0200000000000 mol/L；population\_rate\_ratio\_PR\_over\_PS=3.20894845852 ratio。
+\item 检验所有产物/中间体的分率、单体骨架或电子/原子守恒，注意单独的分子数不一定守恒。
+\item 速率常数、标准态及Boltzmann指数必须无量纲，不能将mol/L、s\textasciicircum{}-1与kJ/mol直接混算。
+\item 理想化机理已排除的副反应、构象交换限制及真实催化剂失活需进一步验证；不能把本题数学闭式解当实验普适规律。
+\item 本题仍在专家原创性、科学性与版权待审名单，不是正式可出版题。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+eigenvalue\_fast\_s = -0.174031242 s\textasciicircum{}-1；eigenvalue\_slow\_s = -0.0459687576 s\textasciicircum{}-1；remaining\_R\_t30\_M = 0.00147849922 mol/L；remaining\_S\_t30\_M = 0.00301782402 mol/L；product\_PR\_t30\_M = 0.0118201732 mol/L；product\_PS\_t30\_M = 0.00368350359 mol/L；product\_ee\_R = 0.524821931 fraction；unreacted\_substrate\_ee\_R = -0.342351898 fraction；product\_inventory\_M = 0.0155036768 mol/L；reactant\_inventory\_M = 0.00449632324 mol/L；material\_total\_M = 0.02 mol/L；population\_rate\_ratio\_PR\_over\_PS = 3.20894846 ratio\par
+\noindent\textbf{模型前提：}
+速度和简并/构象平衡仅采用题设假想模型；需专家审校其真实适用性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O190 · 四半胱氨酸多肽三种二硫键连结拓扑的统计热力学}
+\noindent\textbf{题目}\par
+某具有4个可形成二硫键的半胱氨酸位点的理想多肽，在完全氧化时可以产生恰好三种2条桥的连结拓扑：12|34、13|24与14|23。设其相对标准自由能近似用温度无关的能级E0=0、E1=2.000 kJ/mol、E2=5.000 kJ/mol表示，且每种拓扑简并度为1，无混合溶剂、构象熵以外的温度效应。在298.15 K与350.0 K，取正则配分函数Z=Σe\textasciicircum{}(−Ei/RT)，求三种拓扑分数、最稳定/最不稳定拓扑比、平均相对能量、构象混合熵S=−RΣpi lnpi、自由能A=−RTlnZ以及温升时最不稳定拓扑概率变化。强调这是三拓扑能级模型，而非完整肽折叠动力学。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 描述反应物、速率/配分模型和完整假设：某具有4个可形成二硫键的半胱氨酸位点的理想多肽，在完全氧化时可以产生恰好三种2条桥的连结拓扑：12|34、13|24与14|23。设其相对标准自由能近似用温度无关的能级E0=0、E1=2.000 kJ/mol、E2=5.000 kJ/mol表示，且每种拓扑简并度为1，无混合溶剂、构象熵以外的温度效应。在298.15 K与350.0 K，取正则配分函数Z=Σe\textasciicircum{}(−Ei/RT)，求三种拓扑分数、最稳定/最不稳定拓扑比、平均相对能量、构象混合熵S=−RΣpi lnpi、自由能A=−RTlnZ以及温升时最不稳定拓扑概率变化。强调这是三拓扑能级模型，而非完整肽折叠动力学。
+\item 严格方程及参数转换：Z=1+exp(−2000/RT)+exp(−5000/RT)，pi=exp(−Ei/RT)/Z，〈E〉=ΣpiEi，S=R(lnZ+〈E〉/RT)。
+\item 4个指定半胱氨酸形成两条互不共享的桥有3种完全配对方式，不能把每一条桥的组合自由相乘而重复计数。
+\item 用归一化Z计算各拓扑统计权重，求平均能量和熵，验证A=〈E〉−TS。
+\item 假设固定三种有效能级；真实氧化折叠可能受到硫醇交换、非二硫化构象和溶剂的复杂影响。
+\item 由模型依次算得第一批数值：partition\_298=1.57934500087 ratio；partition\_350=1.68233991345 ratio；topology0\_fraction\_298=0.633173878694 fraction；topology1\_fraction\_298=0.282577871347 fraction；topology2\_fraction\_298=0.0842482499586 fraction；topology0\_fraction\_350=0.594410197373 fraction。
+\item 计算剩余动力学或统计热力学中间量：topology1\_fraction\_350=0.298956790252 fraction；topology2\_fraction\_350=0.106633012375 fraction；mean\_energy\_298\_kJ\_mol=0.986396992487 kJ/mol；mean\_energy\_350\_kJ\_mol=1.13107864238 kJ/mol；mixing\_entropy\_298\_J\_molK=7.10818598676 J/(mol K)。
+\item 最终分支、产率、自由能和回代结果：mixing\_entropy\_350\_J\_molK=7.55671723886 J/(mol K)；Helmholtz\_298\_kJ\_mol=-1.13290865946 kJ/mol；Helmholtz\_350\_kJ\_mol=-1.51377239122 kJ/mol；rare\_topology\_fraction\_increase=0.0223847624162 fraction；topology0\_over2\_298=7.51557307132 ratio。
+\item 检验所有产物/中间体的分率、单体骨架或电子/原子守恒，注意单独的分子数不一定守恒。
+\item 速率常数、标准态及Boltzmann指数必须无量纲，不能将mol/L、s\textasciicircum{}-1与kJ/mol直接混算。
+\item 理想化机理已排除的副反应、构象交换限制及真实催化剂失活需进一步验证；不能把本题数学闭式解当实验普适规律。
+\item 本题仍在专家原创性、科学性与版权待审名单，不是正式可出版题。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+partition\_298 = 1.579345 ratio；partition\_350 = 1.68233991 ratio；topology0\_fraction\_298 = 0.633173879 fraction；topology1\_fraction\_298 = 0.282577871 fraction；topology2\_fraction\_298 = 0.08424825 fraction；topology0\_fraction\_350 = 0.594410197 fraction；topology1\_fraction\_350 = 0.29895679 fraction；topology2\_fraction\_350 = 0.106633012 fraction；mean\_energy\_298\_kJ\_mol = 0.986396992 kJ/mol；mean\_energy\_350\_kJ\_mol = 1.13107864 kJ/mol；mixing\_entropy\_298\_J\_molK = 7.10818599 J/(mol K)；mixing\_entropy\_350\_J\_molK = 7.55671724 J/(mol K)；Helmholtz\_298\_kJ\_mol = -1.13290866 kJ/mol；Helmholtz\_350\_kJ\_mol = -1.51377239 kJ/mol；rare\_topology\_fraction\_increase = 0.0223847624 fraction；topology0\_over2\_298 = 7.51557307 ratio\par
+\noindent\textbf{模型前提：}
+速度和简并/构象平衡仅采用题设假想模型；需专家审校其真实适用性。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{物理化学}
