@@ -5,6 +5,7 @@ on:
     paths:
       - 'editorial/advanced_integrated_v11/**'
       - 'scripts/check-advanced-authored-v11.mjs'
+      - 'scripts/audit-v11-cross-series.mjs'
       - '.github/workflows/chemistry-advanced-v11.yml'
   pull_request:
     paths:
@@ -24,3 +25,12 @@ jobs:
           node-version: '22'
       - name: Check every full answer vector and pending-review flags
         run: node scripts/check-advanced-authored-v11.mjs
+      - name: Compare all historical model families and register manual-review candidates
+        run: node scripts/audit-v11-cross-series.mjs
+      - name: Archive cross-series screening candidates for expert review
+        uses: actions/upload-artifact@v4
+        with:
+          name: chemistry-v11-cross-series-screening
+          path: editorial/advanced_integrated_v11/cross_series_screening_ci.json
+          retention-days: 60
+          if-no-files-found: error
