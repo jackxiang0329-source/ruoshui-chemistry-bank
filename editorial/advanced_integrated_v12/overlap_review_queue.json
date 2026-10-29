@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 62,
+  "current_draft_count": 66,
   "expert_approved": 0,
-  "preliminary_flags": 62,
+  "preliminary_flags": 66,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -376,6 +376,30 @@
       "new_id": "UC-ADV12-O162",
       "prior_id": "UC-ADV11-O140",
       "reason": "配位取代和有机竞争机理与历史题存在局部主题相邻，仍须人工核心模型排重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I167",
+      "prior_id": null,
+      "reason": "本轮尚未指定可确认的历史同构题；须以跨辑自动词汇初筛及专家逐式方程复核后判定新颖性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A167",
+      "prior_id": null,
+      "reason": "本轮尚未指定可确认的历史同构题；须以跨辑自动词汇初筛及专家逐式方程复核后判定新颖性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O163",
+      "prior_id": null,
+      "reason": "本轮尚未指定可确认的历史同构题；须以跨辑自动词汇初筛及专家逐式方程复核后判定新颖性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P163",
+      "prior_id": null,
+      "reason": "本轮尚未指定可确认的历史同构题；须以跨辑自动词汇初筛及专家逐式方程复核后判定新颖性。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -751,6 +775,30 @@
       "model_family": "cysteine-SN-competitive-alkylation-pH-dependent-nucleophile-speciation-parallel-kinetics",
       "judgement": "pending_human_comparison",
       "screening": "独立数值、压力热力学和化学选择性物料复核已登记；待专家认证。"
+    },
+    {
+      "new_id": "UC-ADV12-I167",
+      "model_family": "two-step-coordination-ligand-depletion-binding-partition-variance-vanthoff",
+      "judgement": "pending_human_comparison",
+      "screening": "数学答案经独立函数复算；跨辑数学同构、实验科学性和版权待专家审核。"
+    },
+    {
+      "new_id": "UC-ADV12-A167",
+      "model_family": "copper-IDMS-two-isotope-detector-deadtime-mass-bias-inverse-uncertainty",
+      "judgement": "pending_human_comparison",
+      "screening": "数学答案经独立函数复算；跨辑数学同构、实验科学性和版权待专家审核。"
+    },
+    {
+      "new_id": "UC-ADV12-O163",
+      "model_family": "EZ-photoisomerization-photon-cross-section-quantum-yield-dark-relaxation",
+      "judgement": "pending_human_comparison",
+      "screening": "数学答案经独立函数复算；跨辑数学同构、实验科学性和版权待专家审核。"
+    },
+    {
+      "new_id": "UC-ADV12-P163",
+      "model_family": "Randles-Rs-Rct-parallel-Cdl-complex-impedance-Nyquist-inverse",
+      "judgement": "pending_human_comparison",
+      "screening": "数学答案经独立函数复算；跨辑数学同构、实验科学性和版权待专家审核。"
     }
   ]
 }

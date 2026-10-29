@@ -133,6 +133,44 @@ Object.assign(witnesses,{
 "UC-ADV12-I166":()=>{const R=8.314462618,T=298.15,dp=1e8,VL=10e-6,VR=4e-6,fr=Math.exp(-VL*dp/(R*T)),rr=Math.exp(-VR*dp/(R*T)),kf=2*fr,kr=.08*rr,K0=25,K=kf/kr,run=(f,r)=>{const a=f*.1,b=r,L=a+b,th=a/L,p=.01*th*(-Math.expm1(-L*.5));return[th,.01*th,p,1/L,th/(1-th)/.1]};const a=run(2,.08),b=run(kf,kr),G0=-R*T*Math.log(K0),G1=-R*T*Math.log(K);assert.ok(Math.abs((G1-G0)-600)<1e-10);return[fr,rr,kf,kr,K0,K,K/K0,(VL-VR)*1e6,G0/1000,G1/1000,G1-G0,a[0],b[0],a[1],b[1],a[2],b[2],a[3],b[3],a[4],b[4],.01,.01];},
 "UC-ADV12-O162":()=>{const pS=8.3,pN=9.5,C=.01,E0=.001,t=2,kS=100,kN=20,calc=p=>{let fs=1/(1+10**(pS-p)),fn=1/(1+10**(pN-p)),a=kS*C*fs,b=kN*C*fn,L=a+b,x=-Math.expm1(-L*t),ps=E0*x*a/L,pn=E0*x*b/L,rem=E0*(1-x);return[fs,fn,a,b,L,a/b,x,ps,pn,rem,ps/pn]},A=calc(8.5),B=calc(10),r=20/5,y=(r-1)/(10**pN-r*10**pS),p=-Math.log10(y),target=calc(p)[5];assert.ok(Math.abs(target-20)<1e-12&&Math.abs(A[7]+A[8]+A[9]-E0)<1e-15);return[A[0],A[1],A[2],A[3],A[4],A[5],A[6],A[7],A[8],A[9],B[0],B[1],B[4],B[5],B[6],B[7],B[8],B[9],p,target,A[7]+A[8]+A[9],B[7]+B[8]+B[9],A[10],B[10]];}
 });
+
+Object.assign(witnesses,{
+"UC-ADV12-I167":function wi(){
+ const R=8.314462618,T0=298.15,MT=.01,LT=.03,H1=-20000,H2=-10000;
+ const run=T=>{const K1=100*Math.exp(-H1/R*(1/T-1/T0)),K2=25*Math.exp(-H2/R*(1/T-1/T0));const f=x=>{const z=1+K1*x+K1*K2*x*x;return x+MT*(K1*x+2*K1*K2*x*x)/z-LT};let lo=0,hi=LT;for(let j=0;j<110;j++){const m=(lo+hi)/2;if(f(m)>0)hi=m;else lo=m;}const x=(lo+hi)/2,Z=1+K1*x+K1*K2*x*x,p0=1/Z,p1=K1*x/Z,p2=K1*K2*x*x/Z,n=p1+2*p2,v=p1+4*p2-n*n;return {K1,K2,x,m0:MT*p0,m1:MT*p1,m2:MT*p2,p0,p1,p2,n,bound:MT*n,inventory:x+MT*n,variance:v,slope:MT*v/x,metalsum:MT*(p0+p1+p2)};};const a=run(T0),b=run(323.15);
+ if(Math.abs(a.inventory-LT)>1e-12||Math.abs(b.inventory-LT)>1e-12||Math.abs(a.metalsum-MT)>1e-12)throw Error('I ligand conservation');
+ return [a.K1,a.K2,a.x,a.m0,a.m1,a.m2,a.p0,a.p1,a.p2,a.n,a.bound,a.inventory,a.variance,a.slope,b.K1,b.K2,b.x,b.m0,b.m1,b.m2,b.n,b.bound,b.inventory,b.p2/a.p2,H1/1000,H2/1000,a.metalsum,b.metalsum];
+},
+"UC-ADV12-A167":function wa(){
+ const tau=50e-9,alpha=1.02,nsp=2e-6,fs63=.6915,fs65=.3085,ft63=.05,ft65=.95,M=63.546,V=.010;
+ const Lo=392156.862745098,Ho=516456.806790183,L=Lo/(1-tau*Lo),H=Ho/(1-tau*Ho),rraw=Ho/Lo,r=H/(alpha*L),den=r*fs63-fs65,n=nsp*(ft65-r*ft63)/den;
+ const total63=n*fs63+nsp*ft63,total65=n*fs65+nsp*ft65;
+ const sdL=300,sdH=300,sda=.002;
+ const drdh=1/(alpha*L*(1-tau*Ho)**2),drdl=-H/(alpha*L*L*(1-tau*Lo)**2),drda=-r/alpha;
+ const sr=Math.hypot(drdh*sdH,drdl*sdL,drda*sda);
+ const dndr=nsp*(ft63*fs65-ft65*fs63)/(den*den),sn=Math.abs(dndr)*sr;
+ const mass=n*M*1000,con=mass/V,sc=sn*M*1000/V;
+ if(Math.abs(total65/total63-r)>1e-10||!(n>0&&sn>0))throw Error('A isotope balance');
+ return [Lo,Ho,L,H,rraw,r,n*1e6,mass,con,n/V,total63*1e6,total65*1e6,total65/total63,sr,sn*1e6,sc,L/Lo,H/Ho,r/(1+r),n+nsp];
+},
+"UC-ADV12-O163":function wo(){
+ const flux=1e17,sigmaE=5e-18,sigmaZ=2e-18,phiE=.4,phiZ=.25,Ce=.002;
+ const pe=flux*sigmaE*phiE,pz=flux*sigmaZ*phiZ,thermE=.01,thermZ=.04,a=pe+thermE,b=pz+thermZ,L=a+b,zstar=a/L;
+ const z10=zstar*(-Math.expm1(-L*10)),e10=1-z10,zd=thermE/(thermE+thermZ),z30=zd+(z10-zd)*Math.exp(-(thermE+thermZ)*20),ed=1-z30;
+ const phE=(L*zstar-thermE)/(flux*sigmaE),phZ=(L*(1-zstar)-thermZ)/(flux*sigmaZ);
+ if(Math.abs(phE-phiE)>1e-12||Math.abs(phZ-phiZ)>1e-12||Math.abs(e10+z10-1)>1e-12)throw Error("O photo balance");
+ return [pe,pz,a,b,L,zstar,1-zstar,1/L,Math.log(2)/L,z10,e10,Ce*z10,Ce*e10,zd,z30,ed,Ce*z30,Math.log(2)/(thermE+thermZ),phE,phZ,a,Ce*z30+Ce*ed];
+},
+"UC-ADV12-P163":function wp(){
+ const Rs=10,Rct=100,C=100e-6,V=.01,f1=10,f2=100;
+ const impedance=f=>{const x=2*Math.PI*f*Rct*C;return [Rs+Rct/(1+x*x),-Rct*x/(1+x*x)]};
+ const z1=impedance(f1),z2=impedance(f2),u=z1[0]-Rs,v=-z1[1],tau=v/(2*Math.PI*f1*u),rinv=u*(1+(v/u)**2),cinv=tau/rinv;
+ const star=1/(2*Math.PI*tau),mag=Math.hypot(...z1),phase=Math.atan2(-z1[1],z1[0])*180/Math.PI,I=V/mag;
+ if(Math.abs(rinv-Rct)>1e-10||Math.abs(cinv-C)>1e-14||Math.abs(z2[0]-impedance(f2)[0])>1e-12)throw Error('P impedance inverse');
+ return [z1[0],z1[1],z2[0],z2[1],tau,rinv,cinv*1e6,star,Rs+Rct/2,-Rct/2,mag,I*1e6,phase,V/Rs,Rs+Rct,Rs,2*Math.PI*f1*tau,z1[0]-Rs,-z1[1],Rct*C];
+}
+});
+
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();
