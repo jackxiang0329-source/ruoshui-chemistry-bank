@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 81,
+  "current_draft_count": 85,
   "expert_approved": 0,
-  "preliminary_flags": 46,
+  "preliminary_flags": 50,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -280,6 +280,30 @@
       "new_id": "UC-ADV11-P142",
       "prior_id": "UC-ADV11-I136",
       "reason": "存在相邻谱学、统计或有机反应主题；尚未取得人工方程等价性与原创新颖性审查结论。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-I147",
+      "prior_id": "UC-ADV10-I115",
+      "reason": "与历史材料几何、光学、振动、半导体主题可能共享局部数学元素，仍须人工逐式比较数学模型而非只比较名词。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-A146",
+      "prior_id": "UC-ADV10-A119",
+      "reason": "与历史材料几何、光学、振动、半导体主题可能共享局部数学元素，仍须人工逐式比较数学模型而非只比较名词。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-O143",
+      "prior_id": "UC-ADV11-I129",
+      "reason": "与历史材料几何、光学、振动、半导体主题可能共享局部数学元素，仍须人工逐式比较数学模型而非只比较名词。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-P143",
+      "prior_id": "UC-ADV11-I136",
+      "reason": "与历史材料几何、光学、振动、半导体主题可能共享局部数学元素，仍须人工逐式比较数学模型而非只比较名词。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -769,6 +793,30 @@
       "model_family": "cavity-exciton-polariton-Hermitian-two-mode-anticrossing-Hopfield-Rabi-inversion",
       "judgement": "pending_human_comparison",
       "screening": "已加入独立数值计算、元素/电荷/物料/物理边界检查；尚待人类专家对历史辑方程同构与化学科学性逐式审核。"
+    },
+    {
+      "new_id": "UC-ADV11-I147",
+      "model_family": "vanadium-pentoxide-bond-valence-sum-exponential-length-inversion-octahedral-distortion",
+      "judgement": "pending_human_comparison",
+      "screening": "主要答案向量独立计算与反向守恒检查已添加，历史核心方程及科学真实性需人类专家审核。"
+    },
+    {
+      "new_id": "UC-ADV11-A146",
+      "model_family": "photoacoustic-thermal-wave-double-frequency-amplitude-phase-thermal-diffusivity-absorption",
+      "judgement": "pending_human_comparison",
+      "screening": "主要答案向量独立计算与反向守恒检查已添加，历史核心方程及科学真实性需人类专家审核。"
+    },
+    {
+      "new_id": "UC-ADV11-O143",
+      "model_family": "keto-enol-H-D-tautomer-vibrational-quantum-partition-ZPE-fractionation",
+      "judgement": "pending_human_comparison",
+      "screening": "主要答案向量独立计算与反向守恒检查已添加，历史核心方程及科学真实性需人类专家审核。"
+    },
+    {
+      "new_id": "UC-ADV11-P143",
+      "model_family": "ideal-photovoltaic-diode-Shockley-maximum-power-root-fill-factor-photon-flux",
+      "judgement": "pending_human_comparison",
+      "screening": "主要答案向量独立计算与反向守恒检查已添加，历史核心方程及科学真实性需人类专家审核。"
     }
   ]
 }
