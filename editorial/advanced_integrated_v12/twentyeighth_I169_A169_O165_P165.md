@@ -77,13 +77,13 @@
 ## UC-ADV12-A169 定量核磁双延迟反演T₁、饱和校正与浓度不确定度
 
 ### 题目
-在无交换和无化学反应的理想定量¹H NMR实验中，待测物A和内标S各有一个互不重叠、贡献1个质子的信号，接受同一接收增益、线形积分标定与90°脉冲，脉冲间纵向磁化完全去相位，忽略NOE。两者的纵向弛豫T₁未知，内标浓度C_S=0.01000 mol/L。对于重复延迟TR，一质子的积分信号I_i(TR)=k C_i [1−exp(−TR/T₁,i)]，同一未知仪器系数k对两种物质相同。在TR=1.000 s和2.000 s分别记录：A积分I_A1、I_A2以及S积分I_S1、I_S2，它们在本题作为精确小数给定为按上述模型C_A=0.002500 mol/L、T₁,A=2.000 s、T₁,S=0.8000 s与k=1.000×10⁶积分单位/(mol/L)计算得到的理论读数。不能把这几个用于定义合成数据的真实参数直接用于反演过程，须从信号比构造独立逆解。另假设四次积分的标准不确定度各为2.000积分单位，相互独立，C_S无不确定度。求每个TR的四个精确模拟积分值、两个T₁、饱和校正的无限延迟积分、仪器k、C_A及mg/L（A的摩尔质量100.0 g/mol），不校正的浓度偏差，以及四次信号测量传播出的C_A标准不确定度。使用I(2TR)/I(TR)=1+exp(−TR/T₁)并检查量纲、信号饱和与标准溶液一致性。
+在无交换和无化学反应的理想定量¹H NMR实验中，待测物A和内标S各有一个互不重叠、贡献1个质子的信号，接受同一接收增益、线形积分标定与90°脉冲，脉冲间纵向磁化完全去相位，忽略NOE。两者的纵向弛豫T₁未知，内标浓度C_S=0.01000 mol/L。对于重复延迟TR，一质子的积分信号I_i(TR)=k C_i [1−exp(−TR/T₁,i)]，同一未知仪器系数k对两种物质相同。在TR=1.000 s和2.000 s分别记录：A积分I_A1、I_A2以及S积分I_S1、I_S2，实际积分读数分别为I_A1=983.6733507184165、I_A2=1580.301397071394、I_S1=7134.952031398098、I_S2=9179.150013761011（仪器积分单位）。请仅根据这些模拟测量值和已知内标浓度进行反演，不能预先假定任何T₁、待测浓度或仪器k。另假设四次积分的标准不确定度各为2.000积分单位，相互独立，C_S无不确定度。求两个T₁、饱和校正的无限延迟积分、仪器k、C_A及g/L和mg/L（A的摩尔质量100.0 g/mol），不校正的浓度偏差，以及四次信号测量传播出的C_A标准不确定度。使用I(2TR)/I(TR)=1+exp(−TR/T₁)并检查量纲、信号饱和与标准溶液一致性。
 
 ### 逐步解析
 
 1. 90°脉冲使可积分信号正比于前一延迟后的恢复磁化，I_i(TR)=k C_i(1−e^{−TR/T₁,i})；题中两个谱峰均只对应一个质子，不能额外乘质子数。
 
-2. TR=1.000 s的模拟积分A=983.67335072、S=7134.9520314，TR=2.000 s则A=1580.3013971、S=9179.1500138积分单位。
+2. 在TR=1.000 s，实测模拟积分A=983.673350718、S=7134.95203140；TR=2.000 s，A=1580.30139707、S=9179.15001376，这些读数就是题设提供的逆问题数据。
 
 3. 令r_i=I_i(2TR)/I_i(TR)，使用1−z²=(1−z)(1+z)可消去未知k和C，得到r_i=1+z_i，z_i=exp(−TR/T₁,i)。
 
@@ -99,7 +99,7 @@
 
 9. 由此k=1000000.0000，样品与内标浓度比=0.25000000000，C_A=0.0025000000000 mol/L。
 
-10. 给定A摩尔质量100.0 g/mol，浓度为0.25000000000 g/L；若误以未校正TR=1 s的强度比即浓度比，会得到0.0013786684849 mol/L。
+10. A摩尔质量100.0 g/mol，正确质量浓度为0.25000000000 g/L，即250.00000000 mg/L；若误以TR=1 s的未校正强度比即浓度比，会得到0.0013786684849 mol/L。
 
 11. 未经饱和校正的浓度/真实浓度比0.55146739397，显示不同T₁引起的系统偏差。
 
@@ -107,7 +107,7 @@
 
 13. 四个积分不确定度均为2.000且彼此独立，对四个对数灵敏度系数的乘积逐项平方求和，得到u(C_A)/C_A。
 
-14. 计算相对标准不确定度0.0081362378334、C_A的标准不确定度0.000020340594584 mol/L，与质量浓度的标准不确定度2.0340594584 g/L。
+14. 计算相对标准不确定度0.0081362378334、C_A标准不确定度0.000020340594584 mol/L；质量浓度标准不确定度为0.0020340594584 g/L，即2.0340594584 mg/L。
 
 15. 回代无限恢复信号与仪器常数得到规范化比1.0000000000和1.0000000000，即各自校准前后浓度一致。
 
@@ -130,19 +130,21 @@
 - instrument_proportionality_constant: 1000000.00000000 integral/(mol/L)
 - analyte_to_standard_concentration_ratio: 0.250000000000000 ratio
 - analyte_molarity_M: 0.00250000000000000 mol/L
-- analyte_mass_concentration_g_L: 2.50000000000000 g/L
+- analyte_mass_concentration_g_L: 0.250000000000000 g/L
 - analyte_to_standard_ratio_reconstructed: 0.250000000000000 ratio
 - naive_analyte_molarity_M: 0.00137866848493117 mol/L
 - naive_to_corrected_concentration_ratio: 0.551467393972467 ratio
 - analyte_concentration_relative_uncertainty: 0.00813623783341959 fraction
 - analyte_concentration_standard_uncertainty_M: 0.0000203405945835490 mol/L
-- analyte_mass_concentration_standard_uncertainty_g_L: 0.0203405945835490 g/L
+- analyte_mass_concentration_standard_uncertainty_g_L: 0.00203405945835490 g/L
 - normalized_analyte_infinite_TR_response: 1.00000000000000 ratio
 - normalized_standard_infinite_TR_response: 1.00000000000000 ratio
 - analyte_TR1_saturation_fraction: 0.393469340287367 fraction
 - standard_TR1_saturation_fraction: 0.713495203139810 fraction
 - positive_signal_check_analyte: 1.00000000000000 flag
 - positive_signal_check_standard: 1.00000000000000 flag
+- analyte_mass_concentration_mg_L: 250.000000000000 mg/L
+- analyte_mass_concentration_standard_uncertainty_mg_L: 2.03405945835490 mg/L
 
 ## UC-ADV12-O165 环氧中间体的串联开环和竞争消除：解析浓度、峰时与终产率
 
