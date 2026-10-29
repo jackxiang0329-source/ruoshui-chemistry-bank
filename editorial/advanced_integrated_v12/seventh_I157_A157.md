@@ -83,7 +83,6 @@
 - second_background_corrected_absorbance: 0.45000000000000007 dimensionless
 - raw_signal_ratio: 2.2 ratio
 - sample_over_1mM_standard: 0.5 ratio
-- auxiliary_diffusion_dimensionless: 0.00002 dimensionless
 - uncorrected_signal_to_slope_low_mM: 1.6666666666666667 mM
 - uncorrected_signal_to_slope_high_mM: 3.666666666666667 mM
 - measured_signal_delta: 0.3 dimensionless
