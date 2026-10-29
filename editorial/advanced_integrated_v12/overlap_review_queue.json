@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 48,
+  "current_draft_count": 50,
   "expert_approved": 0,
-  "preliminary_flags": 48,
+  "preliminary_flags": 50,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -292,6 +292,18 @@
       "new_id": "UC-ADV12-A163",
       "prior_id": "UC-ADV11-A130",
       "reason": "与历史沉淀平衡或光谱题存在主题邻近，需逐式核查数学模型是否等价并开展专家科学性审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O159",
+      "prior_id": "UC-ADV11-O132",
+      "reason": "与旧辑交换动力学或反应速率题领域相近，真实实验边界及模型同构仍需人工专家逐式排重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P159",
+      "prior_id": "UC-ADV11-P139",
+      "reason": "与旧辑交换动力学或反应速率题领域相近，真实实验边界及模型同构仍需人工专家逐式排重。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -583,6 +595,18 @@
       "model_family": "dual-wavelength-Beer-Lambert-two-analyte-linear-inversion-covariance-LOD",
       "judgement": "pending_human_comparison",
       "screening": "独立答案见证、质量电荷及测量噪声矩阵检查已登记；专家批准尚未发生。"
+    },
+    {
+      "new_id": "UC-ADV12-O159",
+      "model_family": "NMR-EXSY-two-state-Markov-exchange-propagator-detailed-balance-inverse-kinetics",
+      "judgement": "pending_human_comparison",
+      "screening": "独立分步答案见证与详细平衡/压力极限检查已入库，尚未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV12-P159",
+      "model_family": "Lindemann-Hinshelwood-unimolecular-falloff-collision-complex-reciprocal-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "独立分步答案见证与详细平衡/压力极限检查已入库，尚未获专家批准。"
     }
   ]
 }

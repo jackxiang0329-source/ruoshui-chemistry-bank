@@ -98,6 +98,11 @@ Object.assign(witnesses,{
 "UC-ADV12-I163":()=>{const k=1.1e-10,c=2e-5,f=5e-6,g=I=>Math.exp(-Math.LN10*.51*4*(Math.sqrt(I)/(1+Math.sqrt(I))-.3*I)),g1=g(.01),g2=g(.1),s=x=>{const v=k/(x*x);return 2*v/(Math.sqrt(c*c+4*v)+c)},a=s(g1),b=s(g2),y1=(c+a)*a,y2=(c+b)*b,Q1=g1*g1*(c+f)*f,Q2=g2*g2*(c+f)*f;assert.ok(b>a&&a>0&&Math.abs(g1*g1*y1/k-1)<1e-12);return[g1,g2,a,b,b/a,c+a,c+b,g1*g1*y1,g2*g2*y2,y1,y2,Q1,Q2,Math.log10(Q1/k),Math.log10(Q2/k),2*(c+a)+2*a,4*a,4*b,Math.sqrt(c*c+4*k/(g1*g1))-c];},
 "UC-ADV12-A163":()=>{const e=[[15000,4000],[3000,12000]],b=[.01,.02],y=[.14,.084],l=1,sd=[.002,.003],D=e[0][0]*e[1][1]-e[0][1]*e[1][0],cx=(e[1][1]*y[0]-e[0][1]*y[1])/(l*D),cy=(-e[1][0]*y[0]+e[0][0]*y[1])/(l*D),v1=(e[1][1]**2*sd[0]**2+e[0][1]**2*sd[1]**2)/(l*D)**2,v2=(e[1][0]**2*sd[0]**2+e[0][0]**2*sd[1]**2)/(l*D)**2,cov=-(e[1][1]*e[1][0]*sd[0]**2+e[0][1]*e[0][0]*sd[1]**2)/(l*D)**2,rx=Math.sqrt(v1),ry=Math.sqrt(v2),A1=b[0]+e[0][0]*cx+e[0][1]*cy,A2=b[1]+e[1][0]*cx+e[1][1]*cy;assert.ok(cx>0&&cy>0&&Math.abs(A1-.15)<1e-12);return[A1,A2,y[0],y[1],D,cx,cy,cx*1e6,cy*1e6,cx/cy,rx,ry,v1,v2,cov,cov/(rx*ry),3*rx,3*ry,A1,A2,cx*e[0][0],cy*e[0][1]];}
 });
+
+Object.assign(witnesses,{
+"UC-ADV12-O159":()=>{const R=8.314462618,T=298.15,ratio=2/3,A=1/(1+ratio),B=ratio/(1+ratio),k=2,t1=.5,t2=1,q=t=>B*(-Math.expm1(-k*t)),v1=q(t1),v2=q(t2),K1=-Math.log1p(-v1/B)/t1,K2=-Math.log1p(-v2/B)/t2,ab=K1*B,ba=K1*A,flux=A*ab;assert.ok(Math.abs(K1-K2)<1e-12&&Math.abs(flux-B*ba)<1e-14);return[A,B,ratio,v1,v2,1-v1,1-v2,K1,K2,ab,ba,1/K1,Math.log(2)/K1,-R*T*Math.log(ratio)/1000,.01*A,.01*B,flux,0,v2/v1,Math.exp(-k*t2)];},
+"UC-ADV12-P159":()=>{const M=[.02,.5],k1=2,km=800,k2=120,T=350,A0=.01,t=5,f=m=>k1*m*k2/(km*m+k2),lo=f(M[0]),hi=f(M[1]),slope=(1/lo-1/hi)/(1/M[0]-1/M[1]),intercept=1/lo-slope/M[0],zero=1/slope,infty=1/intercept,p=m=>k2/(km*m+k2),star=infty/zero,r=m=>1-Math.exp(-f(m)*t),x=r(M[0]),y=r(M[1]),a= k1*M[0]/(km*M[0]+k2),b=k1*M[1]/(km*M[1]+k2);assert.ok(b<.01&&Math.abs(zero-k1)<1e-12&&Math.abs(infty-k1*k2/km)<1e-12);return[zero,infty,star,lo,hi,hi/lo,slope,intercept,zero,infty,p(M[0]),p(M[1]),a,b,x,y,A0*x,A0*y,A0*(1-x),A0*(1-y),M[0]*1000*8.314462618*T,M[1]*1000*8.314462618*T,1/lo,1/hi];}
+});
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();
