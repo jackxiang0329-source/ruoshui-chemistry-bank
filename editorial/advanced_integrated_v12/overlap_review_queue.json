@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 74,
+  "current_draft_count": 78,
   "expert_approved": 0,
-  "preliminary_flags": 74,
+  "preliminary_flags": 78,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -448,6 +448,30 @@
       "new_id": "UC-ADV12-P165",
       "prior_id": null,
       "reason": "待同历史题全量方程模型相似度筛查与专家逐式对照；机器词汇筛查不能证明原创性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I170",
+      "prior_id": null,
+      "reason": "本题仍需与历史题逐方程比对，词汇相似度仅用于人工排重预筛，不作为原创性证明。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A170",
+      "prior_id": null,
+      "reason": "本题仍需与历史题逐方程比对，词汇相似度仅用于人工排重预筛，不作为原创性证明。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O166",
+      "prior_id": null,
+      "reason": "本题仍需与历史题逐方程比对，词汇相似度仅用于人工排重预筛，不作为原创性证明。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P166",
+      "prior_id": null,
+      "reason": "本题仍需与历史题逐方程比对，词汇相似度仅用于人工排重预筛，不作为原创性证明。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -895,6 +919,30 @@
       "model_family": "symmetric-regular-solution-binodal-spinodal-common-tangent-lever-rule-phase-stability",
       "judgement": "pending_human_comparison",
       "screening": "独立函数计算答案，尚未完成人工化学审稿及模型跨辑同构审定。"
+    },
+    {
+      "new_id": "UC-ADV12-I170",
+      "model_family": "copper-I-disproportionation-chloride-conditional-equilibrium-Nernst-solid-mass-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "已登记独立数值复核；专家化学可行性、历史同构与版权审查仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV12-A170",
+      "model_family": "chronoamperometry-Cottrell-diffusion-exponential-charging-two-time-inverse-uncertainty",
+      "judgement": "pending_human_comparison",
+      "screening": "已登记独立数值复核；专家化学可行性、历史同构与版权审查仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV12-O166",
+      "model_family": "AB-stepgrowth-polyester-stoichiometric-imbalance-Carothers-acid-hydroxyl-endgroups-water-mass",
+      "judgement": "pending_human_comparison",
+      "screening": "已登记独立数值复核；专家化学可行性、历史同构与版权审查仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV12-P166",
+      "model_family": "BET-multilayer-nitrogen-adsorption-two-pressure-inverse-monolayer-capacity-surface-area",
+      "judgement": "pending_human_comparison",
+      "screening": "已登记独立数值复核；专家化学可行性、历史同构与版权审查仍待完成。"
     }
   ]
 }
