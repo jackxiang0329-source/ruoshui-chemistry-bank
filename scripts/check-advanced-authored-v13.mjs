@@ -2,6 +2,7 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
+const R=8.314462618,F=96485.33212,NA=6.02214076e23;
 const witnesses={
 "UC-ADV13-I176":()=>{let H=-15000,L=-20000,d=L-H,ej=d*.01196266*1000,w=3*Math.exp(-ej/(R*298.15)),p=w/(5+w);return[H,L,d,ej/1000,p,1-p,25000-20000,p/(1-p)]},
 "UC-ADV13-I177":()=>{let a=.06,b=.04,na=a+2*b,I=(a+4*b+na)/2,pH=7.21+Math.log10(b/a),beta=2.303*a*b/(a+b);return[pH,I,na,beta,b/a,a+b,na-(a+2*b),2.303*(a+b)*.24]},
