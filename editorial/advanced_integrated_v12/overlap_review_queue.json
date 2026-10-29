@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 4,
+  "current_draft_count": 8,
   "expert_approved": 0,
-  "preliminary_flags": 4,
+  "preliminary_flags": 8,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -28,6 +28,30 @@
       "new_id": "UC-ADV12-P148",
       "prior_id": "UC-ADV10-P123",
       "reason": "模型结构或题目领域与前辑存在潜在邻近，必须通过专家逐式比较数学同构与化学科学性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I152",
+      "prior_id": "UC-ADV10-I109",
+      "reason": "与先前配位、质量谱、反应动力学或曲率热力学题存在主题邻近，须专家逐式确认数学模型独立性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A152",
+      "prior_id": "UC-ADV11-A141",
+      "reason": "与先前配位、质量谱、反应动力学或曲率热力学题存在主题邻近，须专家逐式确认数学模型独立性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O149",
+      "prior_id": "UC-ADV10-O119",
+      "reason": "与先前配位、质量谱、反应动力学或曲率热力学题存在主题邻近，须专家逐式确认数学模型独立性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P149",
+      "prior_id": "UC-ADV10-P115",
+      "reason": "与先前配位、质量谱、反应动力学或曲率热力学题存在主题邻近，须专家逐式确认数学模型独立性。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -55,6 +79,30 @@
       "model_family": "Semenov-exothermic-reactor-fold-bifurcation-stability-critical-heat-flux",
       "judgement": "pending_human_comparison",
       "screening": "主要答案数值与约束由独立JS函数回算，跨全库模型等价性、科学性及新颖性尚未获得专家认证。"
+    },
+    {
+      "new_id": "UC-ADV12-I152",
+      "model_family": "AgCl-diamminesilver-ligand-depletion-Ksp-stability-constant-multibalance",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness与化学组分/质量/电荷/物理边界核验已编写；跨历史卷的方程同构及原创性未获专家认证。"
+    },
+    {
+      "new_id": "UC-ADV12-A152",
+      "model_family": "IDMS-heavy-isotope-mass-balance-post-extraction-spike-recovery-blank-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness与化学组分/质量/电荷/物理边界核验已编写；跨历史卷的方程同构及原创性未获专家认证。"
+    },
+    {
+      "new_id": "UC-ADV12-O149",
+      "model_family": "intramolecular-ring-closure-vs-bimolecular-dimerization-Riccati-kinetics-mass-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness与化学组分/质量/电荷/物理边界核验已编写；跨历史卷的方程同构及原创性未获专家认证。"
+    },
+    {
+      "new_id": "UC-ADV12-P149",
+      "model_family": "Kelvin-Laplace-nanodroplet-curvature-vapor-pressure-chemical-potential-count",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness与化学组分/质量/电荷/物理边界核验已编写；跨历史卷的方程同构及原创性未获专家认证。"
     }
   ]
 }
