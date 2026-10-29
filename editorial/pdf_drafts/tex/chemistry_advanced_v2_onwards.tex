@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (594题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (598题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -12513,6 +12513,119 @@ quadratic\_discriminant\_M = 0.206155281 mol/L；internal\_cation\_concentration
 open\_circuit\_voltage\_V = 0.02 V；matched\_load\_current\_A = 0.005 A；maximum\_output\_power\_mW = 0.05 mW；hot\_side\_heat\_W = 0.010375 W；cold\_side\_heat\_W = 0.010325 W；heat\_balance\_net\_work\_W = 5e-05 W；conversion\_efficiency = 0.00481927711 fraction；average\_ZT = 0.07 dimensionless；short\_circuit\_current\_A = 0.01 A；load\_to\_internal\_resistance\_ratio = 1 ratio；hot\_Peltier\_heat\_W = 0.0004 W；half\_Joule\_heat\_W = 2.5e-05 W；conductive\_heat\_W = 0.01 W；thermal\_electric\_resistance\_product\_V\_per\_K\_ohm = 0.0004 ohm V/K；Carnot\_temperature\_ratio\_minus\_one = 0.333333333 ratio；Carnot\_efficiency = 0.25 fraction\par
 \noindent\textbf{模型前提：}
 检验R\_L→0时P\_L→0，R\_L→∞时I→0且P\_L→0；本模型假定S、R\_i、K与温度无关，忽略接触热阻、Thomson热、温差受载改变和材料老化。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\clearpage
+\section*{第12辑 · 题目及解答}
+\addcontentsline{toc}{section}{第12辑}
+\subsection*{无机化学}
+\addcontentsline{toc}{subsection}{第12辑 / 无机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I151 · MgO纳米晶双Bragg峰的Williamson–Hall粒径/微应变和晶胞密度反演}
+\noindent\textbf{题目}\par
+假想岩盐型面心立方MgO纳米晶的常规晶胞含4个MgO式量，X射线波长λ=0.15406 nm，测量(111)与(200)峰的衍射半角分别为19.4843691066438°及22.6530527604466°；仪器宽度校正后的两峰FWHM角宽β分别为0.00435678057244933 rad与0.00467428224881121 rad。采用立方Bragg关系d\_hkl=a/√(h²+k²+l²)、2d\_hkl sinθ=λ，Williamson–Hall方程βcosθ=Kλ/D+4εsinθ，其中K=0.9000、晶粒尺度D单位nm、微应变ε无量纲。求由双峰位置得到的a、双峰峰宽的ε和D、晶胞体积及密度（Mg/O原子量24.305/15.999 g/mol，N\_A=6.02214076×10²³ mol⁻¹），检查波长、角度、尺寸、密度、价态及两方程满秩条件，讨论实际宽度模型局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假想面心立方MgO纳米晶具有立方常规晶胞中4个MgO式量，晶格常数a未知，XRD波长λ=0.15406 nm。
+\item 立方晶系的面间距d\_hkl=a/√(h²+k²+l²)，一级Bragg条件2d\_hkl sinθ\_hkl=λ，因此由(111)、(200)两个反射可独立回算a。
+\item 在题设真实晶格a=0.4 nm下，(111)和(200)对应衍射半角θ分别19.4843691066、22.6530527604°，XRD图峰位2θ是它们的两倍。
+\item 假定峰宽已消去仪器贡献，且尺寸展宽与各向同性微应变展宽按Williamson–Hall线性加和：β cosθ=Kλ/D+4ε sinθ。
+\item 这里β是角宽(FWHM)的弧度而非度；Scherrer常数K=0.9000，D是相干衍射晶粒尺度，ε是无量纲微应变。
+\item 对两峰β分别得到0.00435678057245、0.00467428224881 rad，乘以cosθ得到两条线性响应Y=βcosθ。
+\item 令横坐标X=4sinθ，则Y=b₀+εX，截距b₀=Kλ/D，所选两个峰的sinθ不同，斜率和截距可唯一反演。
+\item 由差商求ε=0.00100000000000，由截距b₀=0.00277308000000反推D=50.0000000000 nm。
+\item 由两峰位置分别反演立方晶格参数a111=0.400000000000、a200=0.400000000000 nm，数值一致，验证晶面索引与X射线波长。
+\item 晶胞体积a³=0.0640000000000 nm³；由每胞4个MgO式量、相对式量40.304 g/mol，算理想晶体密度ρ=4182.89791021 kg/m³。
+\item Mg²⁺和O²⁻每式量电荷总和为零，晶胞4个式量仍电中性；峰宽不改变XRD所计量的晶体离子数。
+\item 两峰仅足以识别在各向同性和指定K下的D、ε，真实晶格位错、各向异性形变、非洛伦兹谱线、织构及仪器峰宽误差需多峰拟合评估。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Bragg\_theta\_111\_deg = 19.4843691 degree；Bragg\_theta\_200\_deg = 22.6530528 degree；instrument\_corrected\_beta111\_rad = 0.00435678057 rad；instrument\_corrected\_beta200\_rad = 0.00467428225 rad；WH\_four\_sin\_theta111 = 1.33419874 ratio；WH\_four\_sin\_theta200 = 1.5406 ratio；microstrain\_eps = 0.001 fraction；size\_intercept = 0.00277308 dimensionless；crystallite\_size\_nm = 50 nm；lattice\_a\_from\_111\_nm = 0.4 nm；lattice\_a\_from\_200\_nm = 0.4 nm；cubic\_cell\_volume\_nm3 = 0.064 nm3；ideal\_MgO\_density\_kg\_m3 = 4182.89791 kg/m3；independent\_strain\_slope = 0.001 fraction；formal\_charge\_cell\_residual = 0 charge\par
+\noindent\textbf{模型前提：}
+两峰仅足以识别在各向同性和指定K下的D、ε，真实晶格位错、各向异性形变、非洛伦兹谱线、织构及仪器峰宽误差需多峰拟合评估。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{分析化学}
+\addcontentsline{toc}{subsection}{第12辑 / 分析化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A151 · 核磁DOSY的Stejskal–Tanner多梯度扩散反演与水动力尺度回核}
+\noindent\textbf{题目}\par
+某稀溶液用核磁DOSY的PGSE方案测得同一扩散组分在梯度g₁=0.1000、g₂=0.2500、g₃=0.4000 T/m下自旋回波强度分别为S₁=913.857700835422、S₂=569.496552266813、S₃=236.623140431027任意共同单位。梯度脉冲宽度δ=2.000 ms、扩散时间间隔Δ=40.00 ms，旋磁比γ=2.6752218744×10⁸ rad/(s·T)。假定单组分自由布朗扩散S(g)=S₀exp[−γ²g²δ²(Δ−δ/3)D]。温度T=298.15 K、溶剂黏度η=0.8900 mPa·s、kB=1.380649×10⁻²³ J/K。由前两梯度信号唯一反演D及零梯度强度S₀、预测第三梯度回波；由Stokes–Einstein关系求水动力半径，计算Δ内一维布朗扩散均方根位移，并检查梯度和旋磁比的SI单位、所有信号物理约束及第三测量的独立一致性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 考虑稀溶液单组分核磁DOSY/脉冲场梯度自旋回波(PGSE)，假设梯度脉冲为矩形且无背景信号漂移。
+\item Stejskal–Tanner自旋回波衰减式S(g)=S₀ exp(−b(g)D)，b(g)=γ²g²δ²(Δ−δ/3)，其中梯度g单位T/m。
+\item 核磁旋磁比γ=2.6752218744×10⁸ rad/(s·T)，脉冲宽度δ=2.000 ms、扩散时间间隔Δ=40.00 ms，必须换为s后求b。
+\item 第一梯度g=0.1000 T/m给b₁=112600510.016 s/m²，第二梯度0.2500 T/m给b₂=703753187.598 s/m²。
+\item 所测两个回波强度S₁=913.857700835和S₂=569.496552267任意相同单位，S₂<S₁符合扩散去相干。
+\item 对两个梯度的信号取比消去未知S₀，得到D=−ln(S₂/S₁)/(b₂−b₁)，只要b₂≠b₁即唯一。
+\item 由差分反演D=8.00000000000e-10 m²/s，并回代S₀=S₁exp(b₁D)=1000.00000000。
+\item 第三独立梯度g=0.4000 T/m预测b₃=1801608160.25 s/m²、回波强度S₃=236.623140431；可校验单指数假设。
+\item 根据独立的溶剂温度T=298.15 K、动力学黏度η=0.8900 mPa·s和Stokes–Einstein关系D=kBT/(6πηr\_H)反推水动力半径。
+\item 得到r\_H=0.306716386931 nm，满足D越高水动力半径越小的物理趋势。
+\item 单方向布朗位移在Δ内均方根√(2DΔ)=8.00000000000 μm，提供同扩散系数的空间尺度检查。
+\item 实验中γ若按Hz/T而非rad/(s·T)输入须补2π因子；高浓度相互作用、受限扩散、对流、涡流梯度、化学交换和T₂衰减变化均可使DOSY模型失效。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+b\_gradient0p10\_s\_m2 = 112600510 s/m2；b\_gradient0p25\_s\_m2 = 703753188 s/m2；b\_gradient0p40\_s\_m2 = 1.80160816e+09 s/m2；signal\_gradient0p10 = 913.857701 signal；signal\_gradient0p25 = 569.496552 signal；signal\_gradient0p40 = 236.62314 signal；diffusion\_D\_m2\_s = 8e-10 m2/s；extrapolated\_zero\_gradient\_signal = 1000 signal；Stokes\_Einstein\_radius\_nm = 0.306716387 nm；one\_dimensional\_displacement\_rms\_um = 8 um；signal\_ratio\_grad2\_over1 = 0.623178589 ratio；log\_signal\_attenuation\_ratio = 0.472922142 dimensionless；third\_signal\_fraction = 0.23662314 fraction；inverse\_displacement\_rms\_m = 125000 m\textasciicircum{}-1；attenuation\_coefficient\_per\_g2 = 9.0080408 m2/T2\par
+\noindent\textbf{模型前提：}
+实验中γ若按Hz/T而非rad/(s·T)输入须补2π因子；高浓度相互作用、受限扩散、对流、涡流梯度、化学交换和T₂衰减变化均可使DOSY模型失效。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{有机化学}
+\addcontentsline{toc}{subsection}{第12辑 / 有机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O148 · 有机酶水解竞争抑制的三初速度满秩反演与批式底物积分}
+\noindent\textbf{题目}\par
+一假想有机底物S被单一酶催化水解为P，抑制剂I为可逆竞争抑制，模型为v=Vmax S/[K\_m(1+I/K\_i)+S]。初速度实验在(S,I)分别为(2.000 mM,0)、(2.000 mM,2.000 mM)、(0.5000 mM,2.000 mM)时得到v₁=0.00000333333333333333、v₂=0.00000250000000000000、v₃=0.00000100000000000000 mol/(L·s)。酶总浓度E\_T=0.1000 μmol/L。反演Vmax、K\_m、竞争抑制常数K\_i和kcat，给出速率抑制比及表观K\_m放大倍数，检查三实验独立性及逆解唯一性。恒定I=2.000 mM的批式反应从S₀=2.000 mM水解至S=1.000 mM，假设所有酶参数不变、没有产物反馈，求所需时间和形成P浓度，核查底物和产物物料守恒及稳态近似的局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 考虑一假想水解酶催化有机底物S→P，抑制剂I仅与游离酶结合，单底物准稳态酶动力学服从可逆竞争抑制形式v=Vmax S/[K\_m(1+I/K\_i)+S]。
+\item 假设无产物反馈、酶与抑制剂总浓度变化可忽略，测量初速度时S和I视为固定；总酶浓度E\_T=0.1000 μmol/L。
+\item 第一条件S=2.000 mmol/L、I=0时观测速率v₁，第二条件相同S但I=2.000 mmol/L速率v₂。
+\item 第三条件S=0.5000 mmol/L、I=2.000 mmol/L速率v₃，三个条件选择使非线性参数Vmax、K\_m、K\_i可识别。
+\item 观测初速度v₁=0.00000333333333333、v₂=0.00000250000000000、v₃=0.00000100000000000 mol/(L·s)。
+\item 固定抑制剂下把式子写为1/v=(1/Vmax)+(K\_m(1+I/K\_i)/(Vmax))(1/S)，利用两种S测量反算Vmax和表观K\_m。
+\item 由第2和3条件求Vmax=0.00000500000000000 mol/(L·s)、表观K\_m\textasciicircum{}\{app\}=0.00200000000000 mol/L。
+\item 再利用无抑制的第1条件，按v₁=Vmax S/(K\_m+S)反推出K\_m，并由K\_m\textasciicircum{}\{app\}/K\_m−1=I/K\_i识别K\_i。
+\item 得到K\_m=0.00100000000000、K\_i=0.00200000000000 mol/L，均为正，回代三个速率完全一致。
+\item 由于Vmax=kcat E\_T，kcat=50.0000000000 s⁻¹；这不是催化效率kcat/K\_m。
+\item 在恒定I=2.000 mmol/L、无抑制剂消耗且底物初始2.000 mmol/L的批式反应中，dS/dt=−Vmax S/(K\_m\textasciicircum{}\{app\}+S)。
+\item 积分至S=1.000 mmol/L给t=[S₀−S+K\_m\textasciicircum{}\{app\} ln(S₀/S)]/Vmax=477.258872224 s，产物形成1.000 mmol/L。
+\item 第一性物料平衡要求S+P=S₀，三条初速度回代和批式积分可分别检查；真实底物消耗若改变酶、抑制剂结合活度或导致产物抑制，则该积分模型失效。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+initial\_rate\_S2mM\_noI\_M\_s = 3.33333333e-06 mol/(L s)；initial\_rate\_S2mM\_I2mM\_M\_s = 2.5e-06 mol/(L s)；initial\_rate\_S0p5mM\_I2mM\_M\_s = 1e-06 mol/(L s)；inferred\_Vmax\_M\_s = 5e-06 mol/(L s)；Michaelis\_Km\_M = 0.001 mol/L；competitive\_Ki\_M = 0.002 mol/L；enzyme\_kcat\_s = 50 s\textasciicircum{}-1；inhibition\_velocity\_ratio = 0.75 ratio；apparent\_Km\_enlargement = 2 ratio；time\_S\_from2to1mM\_s = 477.258872 s；target\_substrate\_M = 0.001 mol/L；product\_formed\_M = 0.001 mol/L；enzyme\_kcat\_consistency\_M\_s = 5e-06 mol/(L s)；apparent\_low\_S\_slope\_s\_inv = 0.0025 s\textasciicircum{}-1；inverse\_uninhibited\_v\_over\_Vmax = 1.5 ratio\par
+\noindent\textbf{模型前提：}
+第一性物料平衡要求S+P=S₀，三条初速度回代和批式积分可分别检查；真实底物消耗若改变酶、抑制剂结合活度或导致产物抑制，则该积分模型失效。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{物理化学}
+\addcontentsline{toc}{subsection}{第12辑 / 物理化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P148 · Semenov放热反应器热平衡双根、稳定性与点火临界条件}
+\noindent\textbf{题目}\par
+某均匀搅拌的小型放热反应器用集中热容C\_th=500.0 J/K表示，环境温度T\_a=300.0 K，线性移热Q\_out=h(T−T\_a)，h=5.000 W/K；在指定温区用近似指数热源Q\_gen=Q₀ exp[(T−T\_a)/T\_s]，其中Q₀=20.00 W、T\_s=20.00 K，暂忽略反应物耗尽。热平衡为C\_th dT/dt=Q\_gen−Q\_out。以θ=(T−T\_a)/T\_s无量纲化，求Semenov热生成参数γ、稳态方程的两个正根及温度与各自热功率，利用线性特征值判定两平衡的稳定性和衰减/增长时间，求两平衡合并的临界Q₀、热容量时间常数。证明临界与唯一极大条件，逐项核验W与J/K量纲，并说明指数近似高温外推和反应物耗尽的局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将假想小型均匀放热化学反应器看作集中参数热容C\_th=500.0 J/K的体系，环境温度T\_a=300.0 K。
+\item 温度偏离的特征尺度T\_s=20.00 K，定义θ=(T−T\_a)/T\_s；题设热生成近似Q\_gen=Q₀e\textasciicircum{}θ，Q₀=20.00 W。
+\item 外界移热按Newton冷却Q\_out=h(T−T\_a)，其中h=5.000 W/K，能量平衡C\_th dT/dt=Q\_gen−Q\_out。
+\item 将方程无量纲化：dθ/dt=(γe\textasciicircum{}θ−θ)/τ，其中γ=Q₀/(hT\_s)、τ=C\_th/h。
+\item 得到γ=0.200000000000、τ=100.000000000 s，且γ<1/e，为热平衡双根区域。
+\item 平衡方程θ=γe\textasciicircum{}θ等价于θe\textasciicircum{}(−θ)=γ；函数θe\textasciicircum{}(−θ)在θ=1达到唯一最大值1/e。
+\item 故0<γ<1/e时存在一个0<θ<1的低温平衡和一个θ>1的高温平衡，临界γ=1/e处两根合并，高于临界无有限稳态。
+\item 用两个分离包围区间作二分法，得到低温根θ₁=0.259171101819，高温根θ₂=2.54264135777。
+\item 恢复温度T₁=305.183422036 K、T₂=350.852827155 K，并按hT\_sθ回代两平衡的发热与移热功率25.9171101819、254.264135777 W。
+\item 在平衡点线性化，特征指数λ=[γe\textasciicircum{}θ−1]/τ=(θ−1)/τ；低温分支θ₁<1稳定，高温分支θ₂>1不稳定。
+\item 两分支特征指数分别-0.00740828898181与0.0154264135777 s⁻¹；相应线性衰减时间134.983935218 s与扰动增长时间64.8238811284 s。
+\item 临界发热基准Q₀,crit=hT\_s/e=36.7879441171 W，若基准发热越过该值，不存在这一简化模型的热稳态。
+\item 使用指数型发热是对Arrhenius速率在有限温区的简化，不可在高温根远离参考温度时任意外推；反应物耗尽、热传递随温变化和物理相变可能破坏双平衡结论。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Semenov\_gamma = 0.2 dimensionless；stable\_temperature\_reduced = 0.259171102 dimensionless；unstable\_temperature\_reduced = 2.54264136 dimensionless；stable\_temperature\_K = 305.183422 K；unstable\_temperature\_K = 350.852827 K；heat\_generation\_stable\_W = 25.9171102 W；heat\_generation\_unstable\_W = 254.264136 W；stable\_linear\_eigenvalue\_s\_inv = -0.00740828898 s\textasciicircum{}-1；unstable\_linear\_eigenvalue\_s\_inv = 0.0154264136 s\textasciicircum{}-1；stable\_decay\_time\_s = 134.983935 s；unstable\_growth\_time\_s = 64.8238811 s；critical\_heat\_source\_W = 36.7879441 W；thermal\_capacity\_timescale\_s = 100 s；critical\_dimensionless\_gamma = 0.367879441 dimensionless；stable\_balance\_reconstruction = 0.259171102 dimensionless\par
+\noindent\textbf{模型前提：}
+使用指数型发热是对Arrhenius速率在有限温区的简化，不可在高温根远离参考温度时任意外推；反应物耗尽、热传递随温变化和物理相变可能破坏双平衡结论。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
