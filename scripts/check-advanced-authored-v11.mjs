@@ -167,6 +167,12 @@ Object.assign(witness,{
 "UC-ADV11-O146":()=>{const kb=1.380649e-23,h=6.62607015e-34,R=8.314462618,dt=100,T1=330,T2=350,k1=Math.PI*dt/Math.sqrt(2),H=60000,g=R*T1*Math.log(kb*T1/(h*k1)),S=(H-g)/T1,k=t=>kb*t/h*Math.exp(S/R-H/(R*t)),k2=k(T2),slope=(Math.log(k2/T2)-Math.log(k1/T1))/(1/T2-1/T1),hi=-R*slope,si=R*Math.log(k1*h/(kb*T1))+hi/T1,at=k(298.15);assert.ok(k2>k1&&Math.abs(hi/H-1)<1e-12);return[k1,k2,k2/k1,hi/1000,si,g/1000,at,Math.log(2)/at,1/at,Math.log(k1/T1),Math.log(k2/T2),kb*T1/h,H-T2*S,dt/2];},
 "UC-ADV11-P146":()=>{const X=.05,C=.1,R=8.314462618,T=298.15,F=96485.33212,D=Math.hypot(X,2*C),a=(X+D)/2,b=(D-X)/2,psi=-R*T/F*Math.log(a/C),Pi=R*T*1000*(a+b-2*C),vol=.1;assert.ok(a>b&&b>0&&Math.abs(a*b/C**2-1)<1e-12);return[D,a,b,a/C,b/C,psi*1000,Pi/1000,a*b,a-b,a+b,200,a*vol,b*vol,X*vol,Pi*.0001];}
 });
+
+Object.assign(witness,{
+"UC-ADV11-A150":()=>{const M=100000,g=25,A=.0002,Q=[.02,.05],C=[.002,.006],z=(q,c)=>(1+q*q*g*g/3)/M+2*A*c,v=[z(Q[0],C[0]),z(Q[1],C[0]),z(Q[0],C[1]),z(Q[1],C[1])],bq=(v[1]-v[0])/(Q[1]**2-Q[0]**2),bc=(v[2]-v[0])/(C[1]-C[0]),inter=v[0]-bq*Q[0]**2-bc*C[0],mm=1/inter,rg=Math.sqrt(3*mm*bq),aa=bc/2;assert.ok(Math.abs(mm/M-1)<1e-12&&Math.abs(rg/g-1)<1e-12&&Math.abs(aa/A-1)<1e-12);return[...v,bq,bc,inter,mm,rg,aa,v[3]/v[0],v[1]-v[0],v[2]-v[0],2*A*(C[1]-C[0]),g*g/3];},
+"UC-ADV11-O147":()=>{const M=.5,C=.005,eff=.8,k=20,act=C*eff,X=.6,t=-Math.log(1-X)/(k*act),rem=M*(1-X),used=M-rem,L=used/act,m0=100,mm=150,Mn=m0+mm*L,varm=mm*mm*L,Mw=Mn+varm/Mn,ratio=Mw/Mn;assert.ok(X>0&&Math.abs(act*L-used)<1e-12&&Mw>Mn);return[act,t,rem,used,L,Mn,Mw,ratio,Math.sqrt(L),Math.sqrt(varm),k*act*M,k*act*rem,act*m0,used*mm,act*L];},
+"UC-ADV11-P147":()=>{const S=2e-4,Th=400,Tc=300,R=2,RL=2,K=1e-4,dt=Th-Tc,V=S*dt,I=V/(R+RL),P=I*I*RL,Qh=S*Th*I-.5*I*I*R+K*dt,Qc=S*Tc*I+.5*I*I*R+K*dt,zt=S*S*((Th+Tc)/2)/(R*K);assert.ok(Math.abs((Qh-Qc)/P-1)<1e-12&&P/Qh<1-Tc/Th);return[V,I,P*1000,Qh,Qc,Qh-Qc,P/Qh,zt,V/R,RL/R,S*Th*I,.5*I*I*R,K*dt,R*S,Th/Tc-1,1-Tc/Th];}
+});
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();

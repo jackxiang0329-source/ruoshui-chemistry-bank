@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 97,
+  "current_draft_count": 100,
   "expert_approved": 0,
-  "preliminary_flags": 62,
+  "preliminary_flags": 65,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -376,6 +376,24 @@
       "new_id": "UC-ADV11-P146",
       "prior_id": "UC-ADV10-P116",
       "reason": "主题可能与磁性、动力学、分离或离子平衡历史题相关，但严格数学模型异同须人工逐式审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-A150",
+      "prior_id": "UC-ADV10-A120",
+      "reason": "涉及高分子尺寸、聚合及能量传输相似主题，但模型层面的新颖性须人工专家判断。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-O147",
+      "prior_id": "UC-ADV10-O114",
+      "reason": "涉及高分子尺寸、聚合及能量传输相似主题，但模型层面的新颖性须人工专家判断。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-P147",
+      "prior_id": "UC-ADV10-P112",
+      "reason": "涉及高分子尺寸、聚合及能量传输相似主题，但模型层面的新颖性须人工专家判断。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -961,6 +979,24 @@
       "model_family": "fixed-charge-gel-Donnan-electrochemical-equilibrium-osmotic-pressure-ion-partition",
       "judgement": "pending_human_comparison",
       "screening": "独立计算答案向量、晶格电荷/流变/动力学/离子守恒均有复核表达式；跨辑原创性未认证。"
+    },
+    {
+      "new_id": "UC-ADV11-A150",
+      "model_family": "Zimm-static-light-scattering-two-angle-two-concentration-full-rank-molecular-size-virial",
+      "judgement": "pending_human_comparison",
+      "screening": "主要答案用独立计算函数全量比对；多角度光散射、聚合链分布和热流模型与旧卷尚需人工逐式排重。"
+    },
+    {
+      "new_id": "UC-ADV11-O147",
+      "model_family": "living-ROMP-Poisson-chain-growth-initiation-efficiency-molecular-weight-dispersity",
+      "judgement": "pending_human_comparison",
+      "screening": "主要答案用独立计算函数全量比对；多角度光散射、聚合链分布和热流模型与旧卷尚需人工逐式排重。"
+    },
+    {
+      "new_id": "UC-ADV11-P147",
+      "model_family": "thermoelectric-Seebeck-generator-load-matching-Peltier-Joule-heat-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "主要答案用独立计算函数全量比对；多角度光散射、聚合链分布和热流模型与旧卷尚需人工逐式排重。"
     }
   ]
 }

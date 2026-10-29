@@ -1,11 +1,11 @@
 # 第十一辑 · 大学化学高阶综合题（进行中）
-本辑目标100题：无机、分析、有机、物化各25。当前**97/100**，无机25、分析24、有机24、物化24；完整题目及解析见 [8题中文解答](8_advanced_chemistry_solutions.md)。
+本辑目标100题：无机、分析、有机、物化各25。当前**100/100**，无机25、分析25、有机25、物化25；完整题目及解析见 [8题中文解答](8_advanced_chemistry_solutions.md)。
 | 学科 | 数量 | 题号 | 结构化源稿 |
 |---|---:|---|---|
 | 无机化学 | 25/25 | I126–I150 | [inorganic.jsonl](inorganic.jsonl) |
-| 分析化学 | 24/25 | A126–A149 | [analytical.jsonl](analytical.jsonl) |
-| 有机化学 | 24/25 | O123–O146 | [organic.jsonl](organic.jsonl) |
-| 物理化学 | 24/25 | P123–P146 | [physical.jsonl](physical.jsonl) |
+| 分析化学 | 25/25 | A126–A150 | [analytical.jsonl](analytical.jsonl) |
+| 有机化学 | 25/25 | O123–O147 | [organic.jsonl](organic.jsonl) |
+| 物理化学 | 25/25 | P123–P147 | [physical.jsonl](physical.jsonl) |
 
 每题至少7个实质推导步骤，并由 [独立答案向量脚本](../../scripts/check-advanced-authored-v11.mjs) 全量复算；对跨辑核心模型进行人工复核的队列见 [overlap_review_queue.json](overlap_review_queue.json)。自动数值核对不等于科学专家审定或原创性认证。**所有89题均publishable=false，正式批准0。** 续编应按每科递增题号，先检查main SHA与已提交记录，不得重复或用参数变式凑数。
 
@@ -60,3 +60,5 @@
 新增：[I149/A148/O145/P145 完整题解](continuation_I149_A148_O145_P145.md)，后续题号 I150/A149/O146/P146。
 
 新增：[I150/A149/O146/P146 完整解析](continuation_I150_A149_O146_P146.md)。余下题号A150/O147/P147。
+
+本辑已满100题，新增：[A150/O147/P147详细解析](completion_A150_O147_P147.md)；接续进入第十二辑。
