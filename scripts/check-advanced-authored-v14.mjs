@@ -51,6 +51,14 @@ const witnesses={
 "UC-ADV14-P206":()=>{let t0=298.15,t=350,h=-50000-20*(t-t0),s=-100-20*Math.log(t/t0),g=h-t*s,g0=-50000+t0*100,k=Math.exp(-g/(R*t)),k0=Math.exp(-g0/(R*t0));return[h/1000,s,g/1000,k,g0/1000,k0,k/k0,-R*t*Math.log(k)-g]},
 "UC-ADV14-P207":()=>{let t=100*10e-6,q=10e-6*.1;return[t,.1/100,.1/100*Math.exp(-1),q*(1-Math.exp(-1)),q,.5*10e-6*.1**2,.5*10e-6*.1**2,t*Math.log(10),Math.exp(-1)]},
 "UC-ADV14-P208":()=>{let x=.1,cs=.05,p=(x+Math.sqrt(x*x+4*cs*cs))/2,m=cs*cs/p,d=p+m-2*cs;return[p,m,p/m,p+m,d,R*298.15*1000*d,R*298.15/F*Math.log(cs/p),p-m-x,p*m-cs*cs]},
+"UC-ADV14-I213":()=>{let k=T=>Math.exp(20/R-80000/(R*T)),a=Math.sqrt(k(800)),b=Math.sqrt(k(1000)),q=2*1.602176634e-19;return[k(800),k(1000),a,b,b/a,1e28*b,1e28*b*q*q*1e-10/(1.380649e-23*1000),q]},
+"UC-ADV14-I214":()=>{let a=5.64,d1=a/Math.sqrt(3),d2=a/2,angle=d=>2*Math.asin(1.5406/(2*d))*180/Math.PI;return[d1,d2,angle(d1),angle(d2),4*(17-11),4*(17+11),(6/28)**2,4*58.44/(6.02214076e23*(a*1e-8)**3)]},
+"UC-ADV14-A213":()=>{let K=.5,t0=1,m=((8.5-t0)/K)**2,res=(8.5-t0)/(2*.05);return[K,t0,Math.sqrt(m),m,t0+K*30,res,m/res,K*(Math.sqrt(226)-Math.sqrt(225))]},
+"UC-ADV14-A214":()=>{let f=.3,s1=1000*(.7*Math.exp(-1)+f*Math.exp(-.2)),s2=1000*(.7*Math.exp(-2)+f*Math.exp(-.4));return[f,700,300,s1,s2,700*Math.exp(-1)/s1,-Math.log(s1/1000)/1e9,300*Math.exp(-.4)/s2]},
+"UC-ADV14-O209":()=>{let b=.95*.98,ch=.975-b,dp=.975/ch,dp0=1/(1-.98);return[b,1-b,.95-b,.975,ch,dp,dp0,dp/dp0,(1-b+.95-b)/ch]},
+"UC-ADV14-O210":()=>{let l=40,mn=100+100*l,mw=mn+10000*l/mn;let fact=1;for(let i=2;i<=40;i++)fact*=i;return[l,mn,mw,mw/mn,l,Math.exp(-l),Math.exp(-l)*l**40/fact,l+1]},
+"UC-ADV14-P209":()=>{let n=x=>2*20*x/((1-x)*(1+19*x)),a=n(.3),b=n(.5),i=1/(2*20),s=19/(2*20);return[a,b,a/2,b/2,.3/(a*.7),s,i,1/(s+i),1+s/i]},
+"UC-ADV14-P210":()=>{let k=2*.072*18e-6/(R*298.15),a=-k/5e-9,b=-k/1e-8;return[Math.exp(a),Math.exp(b),a,b,2*.072/5e-9,R*298.15*a,R*298.15*b,-k/Math.log(.9)*1e9]},
 };
 const starts={inorganic:["I",201],analytical:["A",201],organic:["O",198],physical:["P",198]};
 const allIDs=new Set(),titles=new Set(),families=new Set(),counts={};

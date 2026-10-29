@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 14,
   "status": "expert_review_pending",
-  "current_draft_count": 46,
+  "current_draft_count": 54,
   "expert_approved": 0,
-  "preliminary_flags": 46,
+  "preliminary_flags": 54,
   "pairs": [
     {
       "new_id": "UC-ADV14-I201",
@@ -280,6 +280,54 @@
       "new_id": "UC-ADV14-P208",
       "prior_id": null,
       "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I213",
+      "prior_id": null,
+      "reason": "需要与全部旧辑核心公式及模型作逐式人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I214",
+      "prior_id": null,
+      "reason": "需要与全部旧辑核心公式及模型作逐式人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A213",
+      "prior_id": null,
+      "reason": "需要与全部旧辑核心公式及模型作逐式人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A214",
+      "prior_id": null,
+      "reason": "需要与全部旧辑核心公式及模型作逐式人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O209",
+      "prior_id": null,
+      "reason": "需要与全部旧辑核心公式及模型作逐式人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O210",
+      "prior_id": null,
+      "reason": "需要与全部旧辑核心公式及模型作逐式人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P209",
+      "prior_id": null,
+      "reason": "需要与全部旧辑核心公式及模型作逐式人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P210",
+      "prior_id": null,
+      "reason": "需要与全部旧辑核心公式及模型作逐式人工比对。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -559,6 +607,54 @@
       "model_family": "Donnan-gel-fixed-charge-salt-partition-osmotic",
       "judgement": "pending_human_comparison",
       "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-I213",
+      "model_family": "oxide-Frenkel-pair-equilibrium-defect-conductivity",
+      "judgement": "pending_human_comparison",
+      "screening": "机器公式复算；尚无独立数值见证与专家原创性认证。"
+    },
+    {
+      "new_id": "UC-ADV14-I214",
+      "model_family": "NaCl-rocksalt-Bragg-structure-factor-XRD-density",
+      "judgement": "pending_human_comparison",
+      "screening": "机器公式复算；尚无独立数值见证与专家原创性认证。"
+    },
+    {
+      "new_id": "UC-ADV14-A213",
+      "model_family": "TOF-mass-spectrometry-time-offset-mass-calibration-resolution",
+      "judgement": "pending_human_comparison",
+      "screening": "机器公式复算；尚无独立数值见证与专家原创性认证。"
+    },
+    {
+      "new_id": "UC-ADV14-A214",
+      "model_family": "DOSY-biexponential-diffusion-signal-fraction-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "机器公式复算；尚无独立数值见证与专家原创性认证。"
+    },
+    {
+      "new_id": "UC-ADV14-O209",
+      "model_family": "Carothers-stepgrowth-stoichiometric-imbalance-chain-end-inventory",
+      "judgement": "pending_human_comparison",
+      "screening": "机器公式复算；尚无独立数值见证与专家原创性认证。"
+    },
+    {
+      "new_id": "UC-ADV14-O210",
+      "model_family": "living-anionic-polymerization-Poisson-chain-length-molecular-mass",
+      "judgement": "pending_human_comparison",
+      "screening": "机器公式复算；尚无独立数值见证与专家原创性认证。"
+    },
+    {
+      "new_id": "UC-ADV14-P209",
+      "model_family": "BET-multilayer-adsorption-linear-transform-monolayer-capacity",
+      "judgement": "pending_human_comparison",
+      "screening": "机器公式复算；尚无独立数值见证与专家原创性认证。"
+    },
+    {
+      "new_id": "UC-ADV14-P210",
+      "model_family": "Kelvin-capillary-condensation-curvature-vapor-pressure",
+      "judgement": "pending_human_comparison",
+      "screening": "机器公式复算；尚无独立数值见证与专家原创性认证。"
     }
   ]
 }
