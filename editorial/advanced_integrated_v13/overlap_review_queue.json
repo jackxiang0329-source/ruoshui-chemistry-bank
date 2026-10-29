@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 13,
   "status": "expert_review_pending",
-  "current_draft_count": 44,
+  "current_draft_count": 54,
   "expert_approved": 0,
-  "preliminary_flags": 44,
+  "preliminary_flags": 54,
   "pairs": [
     {
       "new_id": "UC-ADV13-I176",
@@ -268,6 +268,66 @@
       "new_id": "UC-ADV13-I194",
       "prior_id": null,
       "reason": "该模型需与第1—12辑及本辑全部方程逐式比对，专家原创性、科学性未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A185",
+      "prior_id": null,
+      "reason": "待跨辑与专家分析化学科学性原创性逐式审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A186",
+      "prior_id": null,
+      "reason": "待跨辑与专家分析化学科学性原创性逐式审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A187",
+      "prior_id": null,
+      "reason": "待跨辑与专家分析化学科学性原创性逐式审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A188",
+      "prior_id": null,
+      "reason": "待跨辑与专家分析化学科学性原创性逐式审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A189",
+      "prior_id": null,
+      "reason": "待跨辑与专家分析化学科学性原创性逐式审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A190",
+      "prior_id": null,
+      "reason": "待跨辑与专家分析化学科学性原创性逐式审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A191",
+      "prior_id": null,
+      "reason": "待跨辑与专家分析化学科学性原创性逐式审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A192",
+      "prior_id": null,
+      "reason": "待跨辑与专家分析化学科学性原创性逐式审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A193",
+      "prior_id": null,
+      "reason": "待跨辑与专家分析化学科学性原创性逐式审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A194",
+      "prior_id": null,
+      "reason": "待跨辑与专家分析化学科学性原创性逐式审核。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -535,6 +595,66 @@
       "model_family": "Ru-polypyridyl-excited-state-oxidation-reduction-energetics",
       "judgement": "pending_human_comparison",
       "screening": "独立公式见证复算通过后只可标记数值可再现；不标记publishable。"
+    },
+    {
+      "new_id": "UC-ADV13-A185",
+      "model_family": "reversedphase-HPLC-loglinear-solvent-strength-twoanalyte-selectivity",
+      "judgement": "pending_human_comparison",
+      "screening": "已编制完整题干、方法推导及独立数值见证；尚未获人工批准。"
+    },
+    {
+      "new_id": "UC-ADV13-A186",
+      "model_family": "ICPMS-exponential-mass-bias-calibration-Cu63-Cu65",
+      "judgement": "pending_human_comparison",
+      "screening": "已编制完整题干、方法推导及独立数值见证；尚未获人工批准。"
+    },
+    {
+      "new_id": "UC-ADV13-A187",
+      "model_family": "potentiometric-glass-electrode-two-buffer-slope-calibration",
+      "judgement": "pending_human_comparison",
+      "screening": "已编制完整题干、方法推导及独立数值见证；尚未获人工批准。"
+    },
+    {
+      "new_id": "UC-ADV13-A188",
+      "model_family": "SEC-log-molecular-mass-calibration-elution-volume-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "已编制完整题干、方法推导及独立数值见证；尚未获人工批准。"
+    },
+    {
+      "new_id": "UC-ADV13-A189",
+      "model_family": "glucose-amperometric-Michaelis-Menten-two-point-reciprocal-calibration",
+      "judgement": "pending_human_comparison",
+      "screening": "已编制完整题干、方法推导及独立数值见证；尚未获人工批准。"
+    },
+    {
+      "new_id": "UC-ADV13-A190",
+      "model_family": "capillary-electrophoresis-electroosmotic-flow-electrophoretic-mobilities",
+      "judgement": "pending_human_comparison",
+      "screening": "已编制完整题干、方法推导及独立数值见证；尚未获人工批准。"
+    },
+    {
+      "new_id": "UC-ADV13-A191",
+      "model_family": "high-resolution-mass-spectrometry-13C-15N-mass-defect-isobar-resolution",
+      "judgement": "pending_human_comparison",
+      "screening": "已编制完整题干、方法推导及独立数值见证；尚未获人工批准。"
+    },
+    {
+      "new_id": "UC-ADV13-A192",
+      "model_family": "PFG-NMR-DOSY-Stejakal-Tanner-b-value-diffusion",
+      "judgement": "pending_human_comparison",
+      "screening": "已编制完整题干、方法推导及独立数值见证；尚未获人工批准。"
+    },
+    {
+      "new_id": "UC-ADV13-A193",
+      "model_family": "competitive-ELISA-four-parameter-logistic-inverse-local-Jacobian",
+      "judgement": "pending_human_comparison",
+      "screening": "已编制完整题干、方法推导及独立数值见证；尚未获人工批准。"
+    },
+    {
+      "new_id": "UC-ADV13-A194",
+      "model_family": "plasma-two-line-Boltzmann-optical-emission-temperature-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "已编制完整题干、方法推导及独立数值见证；尚未获人工批准。"
     }
   ]
 }
