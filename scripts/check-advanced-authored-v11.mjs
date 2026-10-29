@@ -1,0 +1,51 @@
+#!/usr/bin/env node
+// Every accepted editorial item requires its own independently evaluated full answer vector.
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const read=p=>readFileSync(root+p,'utf8');
+
+const witness={
+"UC-ADV11-I126":()=>{const M=87.62+55.845+3*15.999,d=.01*M/15.999,y=1-2*d,m=M-15.999*d,rho=(m/1000)/(6.02214076e23*(.3900e-9)**3);assert.ok(y>0&&y<1&&Math.abs(2+3+y-2*(3-d))<1e-12);return [d,y,1-y,3+y,d,m,rho];},
+"UC-ADV11-I127":()=>{const r=8.314462618,th=q=>2/(1+Math.sqrt(1+4*q)),q=5*.02/.1**2,t=th(q),K=5*Math.exp(-20000/r*(1/298.15-1/318.15)),q2=K*.02/.1**2;assert.ok(Math.abs(.01*t+2*.01*(1-t)/2-.01)<1e-12&&K<5);return [q,t,1-t,.01*t,.01*(1-t)/2,K,q2,th(q2),1-th(q2)];},
+"UC-ADV11-A126":()=>{const m=34/56.6,n=.001/(2*96485.33212),cu=n*63.546*1e6,w=m-cu,nw=w*1e-6/18.015;assert.ok(w>0&&Math.abs(2*96485.33212*n-.001)<1e-14);return [m,n,cu,w,nw,nw/n,n,-56.6*(cu+w)];},
+"UC-ADV11-A127":()=>{const d=1.003354835-.997034893,w=500/120000,p13=.0107,p15=.00364,pC=20*p13*(1-p13)**19*(1-p15)**2,pN=2*p15*(1-p15)*(1-p13)**20;assert.ok(d>0&&d/w>1);return [d,w,d/w,500/d,pC/pN,d/2,250/120000];},
+"UC-ADV11-O123":()=>{const M=1.2,I=.012,x=.8,k=.05,lam=M*x/I,t=-Math.log(1-x)/(k*I),mn=lam*104,D=1+1/lam;assert.ok(Math.abs((lam*lam+lam)/lam-(lam+1))<1e-12);return [M*(1-x),t,lam,lam,lam+1,mn,mn*D,D,I];},
+"UC-ADV11-O124":()=>{const p=.2422,b=.4931,q=1-p,c=1-b,v=[q*q*c,2*p*q*c+q*q*b,p*p*c+2*p*q*b,p*p*b];assert.ok(Math.abs(v.reduce((a,z)=>a+z,0)-1)<1e-14&&Math.abs(v.reduce((a,z,i)=>a+i*z,0)-(2*p+b))<1e-14);return [...v,v[3]/v[0],1-v[0],2*p+b];},
+"UC-ADV11-P123":()=>{const delta=.25,H=40;const find=(a,b,ascending)=>{for(let i=0;i<100;i++){const m=(a+b)/2,high=m*Math.exp(-m)>delta;if(high===ascending)b=m;else a=m;}return (a+b)/2};const l=find(0,1,true),h=find(1,10,false);assert.ok(l<1&&h>1&&Math.abs(l*Math.exp(-l)-delta)<1e-13&&Math.abs(h*Math.exp(-h)-delta)<1e-13);return [delta,l,h,H*l,H*h,1/Math.E,H/Math.E,1];},
+"UC-ADV11-P124":()=>{const a=2e6*2e-6,b=6,p=a/(a+b),t=1/(a+b),v=p*(1-p),c=v*Math.exp(-.2/t),s=2*v*t/(1+(5*t)**2);assert.ok(Math.abs((1-p)*a-p*b)<1e-12);return [a,b,p,1-p,b/2e6,1/b,1/a,t,v,c,s,(1-p)*a];}
+};
+const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
+const ids=new Set(),titles=new Set(),families=new Set();let count=0;
+const previousFamilies=new Set();
+for(const sub of Object.keys(groups)){
+ for(const row of read('editorial/advanced_integrated_v10/'+sub+'.jsonl').trim().split('\n').map(JSON.parse))previousFamilies.add(row.model_family);
+}
+for(const [sub,letter] of Object.entries(groups)){
+ const rows=read('editorial/advanced_integrated_v11/'+sub+'.jsonl').trim().split('\n').map(JSON.parse);
+ assert.ok(rows.length>=1&&rows.length<=25);
+ rows.forEach((x,i)=>{
+  count++;assert.equal(x.id,'UC-ADV11-'+letter+(126+i-(sub==='organic'||sub==='physical'?3:0)));
+  assert.equal(x.subject,sub);assert.ok(x.problem_zh.length>=150&&x.solution_zh_steps.length>=7);
+  assert.ok(x.answer_values.length>=4&&x.answer_values.length===x.answer_units.length&&x.answer_values.every(Number.isFinite));
+  assert.ok(x.model_residuals.length>=3&&x.model_residuals.every(z=>Number.isFinite(z)&&Math.abs(z)<1e-8));
+  assert.equal(x.publishable,false);assert.equal(x.exclude_from_official_bank,true);
+  assert.equal(x.quality_status,'awaiting_expert_review');assert.equal(x.novelty_review_status,'pending_cross_series_model_review');assert.equal(x.parametric_variant,null);
+  assert.ok(!ids.has(x.id)&&!titles.has(x.title)&&!families.has(x.model_family)&&!previousFamilies.has(x.model_family));
+  ids.add(x.id);titles.add(x.title);families.add(x.model_family);
+  assert.ok(Object.hasOwn(witness,x.id),'Missing witness '+x.id);
+  const v=witness[x.id]();assert.equal(v.length,x.answer_values.length);
+  v.forEach((a,j)=>{const b=x.answer_values[j],scale=Math.max(Math.abs(a),Math.abs(b),1e-14);assert.ok(Math.abs(a-b)<=1e-9*scale,x.id+' index '+j+' '+a+' vs '+b);});
+ });
+}
+assert.equal(Object.keys(witness).length,count);
+const queue=JSON.parse(read('editorial/advanced_integrated_v11/overlap_review_queue.json'));
+assert.equal(queue.current_draft_count,count);assert.equal(queue.expert_approved,0);
+for(const q of queue.new_items_requiring_cross_series_comparison)assert.ok(ids.has(q.new_id));
+const manifest=JSON.parse(read('release/chemistry-approved-manifest.json'));
+assert.equal(manifest.advanced_editorial_items,406+100+count);
+assert.equal(manifest.eleventh_series_work_in_progress_items,count);
+assert.equal(manifest.eleventh_series_pending_cross_series_novelty_review,count);
+assert.equal(manifest.approved_count,0);assert.deepEqual(manifest.items,[]);
+console.log(JSON.stringify({pass:true,series:11,count,distribution:Object.fromEntries(Object.keys(groups).map(s=>[s,read('editorial/advanced_integrated_v11/'+s+'.jsonl').trim().split('\n').length])),independently_checked_answer_vectors:count,expert_approved:0}));

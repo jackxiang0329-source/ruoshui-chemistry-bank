@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "series": "advanced_integrated_v11",
+  "status": "manual_cross_series_review_required",
+  "current_draft_count": 8,
+  "expert_approved": 0,
+  "preliminary_flags": 2,
+  "pairs": [
+    {
+      "new_id": "UC-ADV11-O123",
+      "prior_id": "UC-ADV10-O122",
+      "reason": "同属聚合化学，但本题Poisson活性链长矩与前题自由基衰减及偶合终止模型不同；仍需方程级人工审核",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-I126",
+      "prior_id": "UC-ADV10-I105",
+      "reason": "均涉及氧缺陷；本题热重-平均Fe价-晶胞密度反演与前题氧空位质量作用平衡不同；需人工比较",
+      "judgement": "pending_human_comparison"
+    }
+  ],
+  "new_items_requiring_cross_series_comparison": [
+    {
+      "new_id": "UC-ADV11-I126",
+      "model_family": "perovskite-oxygen-vacancy-TGA-iron-valence-cell-density",
+      "judgement": "pending_human_comparison",
+      "screening": "已建立独立数值witness；仍须人工逐式比较历史辑、核查科学合理性和原创性。"
+    },
+    {
+      "new_id": "UC-ADV11-I127",
+      "model_family": "zeolite-divalent-monovalent-site-exchange-quadratic-vanthoff-charge-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "已建立独立数值witness；仍须人工逐式比较历史辑、核查科学合理性和原创性。"
+    },
+    {
+      "new_id": "UC-ADV11-A126",
+      "model_family": "EQCM-Sauerbrey-Faraday-copper-hydration-mass-charge",
+      "judgement": "pending_human_comparison",
+      "screening": "已建立独立数值witness；仍须人工逐式比较历史辑、核查科学合理性和原创性。"
+    },
+    {
+      "new_id": "UC-ADV11-A127",
+      "model_family": "HRMS-carbon13-nitrogen15-fine-structure-mass-defect-resolution-isotope-ratio",
+      "judgement": "pending_human_comparison",
+      "screening": "已建立独立数值witness；仍须人工逐式比较历史辑、核查科学合理性和原创性。"
+    },
+    {
+      "new_id": "UC-ADV11-O123",
+      "model_family": "living-anionic-polymerization-Poisson-chain-distribution-first-order-conversion",
+      "judgement": "pending_human_comparison",
+      "screening": "已建立独立数值witness；仍须人工逐式比较历史辑、核查科学合理性和原创性。"
+    },
+    {
+      "new_id": "UC-ADV11-O124",
+      "model_family": "halogen-isotope-binomial-generating-polynomial-Cl2Br-envelope-moments",
+      "judgement": "pending_human_comparison",
+      "screening": "已建立独立数值witness；仍须人工逐式比较历史辑、核查科学合理性和原创性。"
+    },
+    {
+      "new_id": "UC-ADV11-P123",
+      "model_family": "Semenov-thermal-ignition-two-roots-saddle-node-stability",
+      "judgement": "pending_human_comparison",
+      "screening": "已建立独立数值witness；仍须人工逐式比较历史辑、核查科学合理性和原创性。"
+    },
+    {
+      "new_id": "UC-ADV11-P124",
+      "model_family": "single-molecule-binding-two-state-Markov-autocorrelation-spectrum-detailed-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "已建立独立数值witness；仍须人工逐式比较历史辑、核查科学合理性和原创性。"
+    }
+  ]
+}

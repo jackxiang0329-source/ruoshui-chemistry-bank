@@ -36,3 +36,5 @@ jobs:
         run: node scripts/check-advanced-authored-v9.mjs
       - name: Verify ongoing tenth-series complete answer vectors
         run: node scripts/check-advanced-authored-v10.mjs
+      - name: Verify eleventh-series full independent answer vectors
+        run: node scripts/check-advanced-authored-v11.mjs
