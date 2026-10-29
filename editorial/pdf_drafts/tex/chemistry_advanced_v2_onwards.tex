@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (538题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (542题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -10359,6 +10359,30 @@ reduced\_mass\_m0 = 0.17060241 m0；binding\_energy\_eV = 0.0321268378 eV；exci
 各向同性有效质量Wannier–Mott模型，固定εr及低密度近似，Mott判据作为经验阈值。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I137 · Gd掺杂CeO₂氧空位浓度、Nernst–Einstein离子电导与迁移活化能}
+\noindent\textbf{题目}\par
+立方萤石型氧化铈被Gd³⁺取代Ce⁴⁺形成理想固溶体Ce₀.₈₀Gd₀.₂₀O₂₋δ，全部电荷补偿只由氧空位V\_O\textasciicircum{}\{••\}产生，无Ce³⁺、电子载流子或其他缺陷。晶格常数a=0.5420 nm，常规晶胞有Z=4个阳离子化学式单位。原子量Ce=140.116、Gd=157.250、O=15.999 g/mol；NA=6.02214076×10²³ mol⁻¹，氧空位有效电荷q=2e，其中e=1.602176634×10⁻¹⁹ C。T₁=800.0 K测得纯氧离子电导σ₁=0.01500 S/cm，Haven相关因子H=0.7000，给定近似Nernst–Einstein关系σ=H n\_v q²D/(kBT)（n\_v为空位数密度，D为空位自扩散系数）。取kB=1.380649×10⁻²³ J/K，玻尔兹曼能量换算kB=8.617333262145×10⁻⁵ eV/K。假设立方各向同性6最近邻随机跳跃、单跳距离l=a/2、D=l²Γ/6；空位扩散活化能E\_a=0.7000 eV，D(T)∝exp(−E\_a/kBT)且晶格常数、缺陷密度及H不随温度改变。求δ、每常规晶胞平均空位数、固溶体式量及密度、空位数密度、800 K扩散系数和跳跃频率、900 K的扩散系数与离子电导（S/cm）；从电中性、材料质量、单位和扩散增温单调性核对模型，并说明真实材料相关跳跃与电子电导的适用边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 每以Gd³⁺替代一个Ce⁴⁺，晶格阳离子电荷减少1；一个带双正有效电荷的氧空位补偿两个Gd替代，因此δ=x/2=0.1000。
+\item 完整式为Ce₀.₈Gd₀.₂O₁.₉；价态和为0.8×4+0.2×3−1.9×2=0，满足电中性。
+\item 常规萤石晶胞Z=4，每晶胞平均氧空位Zδ=0.4000，理想无缺陷氧位总数为8。
+\item 式量M=0.8×140.116+0.2×157.250+1.9×15.999=173.9409 g/mol。
+\item 理论密度ρ=ZM/(NAa³)=7256.26178 kg/m³，计算时将式量换为kg/mol且a以米表示。
+\item 空位数密度n\_v=(Zδ)/a³=2.5122458166×10²⁷ m⁻³；这不是氧离子总数密度。
+\item 800 K电导换算σ₁=0.015 S/cm=1.500 S/m，由Nernst–Einstein反算D₁=σ₁ kBT₁/(H n\_v (2e)²)=9.175369828×10⁻¹¹ m²/s。
+\item 跳距l=a/2=2.710×10⁻¹⁰ m；六方向三维随机行走给跳频Γ=6D₁/l²=7.496115108×10⁹ s⁻¹。
+\item Arrhenius升温比D₂/D₁=exp[(E\_a/kB)(1/T₁−1/T₂)]=3.090141985，故900 K的D₂=2.835319553×10⁻¹⁰ m²/s。
+\item 因σ∝D/T且假设H与n\_v固定，σ₂=σ₁(D₂/D₁)(T₁/T₂)=0.04120189313 S/cm。
+\item 检查D₂>D₁、σ₂>σ₁及所有正值；真实固体Haven因子可能温变，空位与Gd可缔合，且低氧分压下Ce⁴⁺还原或晶格热膨胀会破坏纯离子电导近似。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+oxygen\_deficiency\_delta = 0.1 per\_formula；vacancies\_per\_cell = 0.4 per\_cell；molar\_mass\_gmol = 173.9409 g/mol；theoretical\_density = 7256.26178 kg/m3；vacancy\_number\_density = 2.51224582e+27 m\textasciicircum{}-3；D\_800 = 9.17536983e-11 m2/s；jump\_frequency = 7.49611511e+09 s\textasciicircum{}-1；D\_ratio\_900\_800 = 3.09014198 ratio；D\_900 = 2.83531955e-10 m2/s；sigma\_900\_S\_cm = 0.0412018931 S/cm\par
+\noindent\textbf{模型前提：}
+纯萤石单相固溶体、空位仅由Gd3+电荷补偿、各向同性随机跳跃、固定Haven相关因子及空位密度。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第11辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -10604,6 +10628,29 @@ K\_uA\_sqrt\_s = 80 uA sqrt(s)；baseline\_uA = 5 uA；drift\_uA\_s = 0.25 uA/s�
 unconstrained\_u = 14.1421356 mm/s；H\_min = 0.00369705627 mm；unconstrained\_N = 40572.8203 plates；unconstrained\_Rs = 5.25461636 ratio；max\_feasible\_u = 8.33333333 mm/s；constrained\_H = 0.00394 mm；constrained\_N = 38071.066 plates；constrained\_Rs = 5.09003693 ratio；dead\_time\_s = 18 s；retention2\_s = 90 s；retention1\_s = 80.6086957 s\par
 \noindent\textbf{模型前提：}
 等度van Deemter模型、压降线性、选择性及保留因子恒定、经典分离度近似。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A137 · 毛细管电泳的电渗与离子迁移率分离、扩散峰展宽和ζ电位反演}
+\noindent\textbf{题目}\par
+某等温毛细管区带电泳设备总毛细管长L\_cap=0.6000 m，检测窗口距进样端L\_det=0.5000 m，施加电压V=+18.00 kV，近似均匀轴向电场E=V/L\_cap。无反应的中性电渗流标志物到达检测窗口的时间为250.0 s，带电分析物X、Y分别在180.0 s和320.0 s到达；各峰迁移速度模型v\_i=E(μ\_EOF+μ\_ep,i)。假设EOF方向为正，X/Y的分子纵向扩散系数分别D\_X=6.00×10⁻¹⁰、D\_Y=8.00×10⁻¹⁰ m²/s；在无注样宽度和壁相互作用的理想极限，时间标准差σ\_t=√(2Dt³)/L\_det，Gaussian峰基线宽度w≈4σ\_t，分离度R\_s=2(t\_Y−t\_X)/(w\_X+w\_Y)。溶液黏度η=0.890 mPa·s、相对介电常数ε\_r=78.5、ε₀=8.8541878128×10⁻¹² F/m；电渗迁移率按Helmholtz–Smoluchowski式μ\_EOF=−εζ/η，ε=ε\_rε₀。求轴向电场、三种表观迁移率、EOF与两分析物本征电泳迁移率、毛细管壁ζ电位、两峰时间宽度与理想分离度，判定X/Y电荷迁移方向并验证速度、单位与电泳模型界限。不能把仅扩散贡献的理想分离度宣称为真实实验值。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 均匀场强E=18000/0.6000=30000 V/m，与毛细管检测长度不同，不能误把L\_det用于电场计算。
+\item 由t=L\_det/v与v=Eμ\_app，三次实验分别给μ\_app,EOF=6.666666667×10⁻⁸、μ\_app,X=9.259259259×10⁻⁸、μ\_app,Y=5.208333333×10⁻⁸ m²/(V·s)。
+\item 中性标志物电泳迁移率为0，所以μ\_EOF=μ\_app,neutral=6.666666667×10⁻⁸ m²/(V·s)。
+\item 扣除EOF后μ\_ep,X=+2.592592593×10⁻⁸，μ\_ep,Y=−1.458333333×10⁻⁸ m²/(V·s)，分别表征正向和反向电迁移。
+\item 用ε=78.5×8.8541878128×10⁻¹² F/m，黏度η=0.000890 Pa·s，由ζ=−ημ\_EOF/ε求ζ=−0.08536510 V。
+\item X在180 s扩散的空间RMS宽度√(2D\_Xt\_X)=4.64758×10⁻⁴ m，转换时间σ\_t,X=√(2D\_Xt\_X³)/L\_det=0.167312881 s。
+\item Y在320 s扩散的空间RMS宽度√(2D\_Yt\_Y)=7.15542×10⁻⁴ m，对应σ\_t,Y=0.457946722 s。
+\item 按近似w=4σ\_t，分离度R\_s=(320−180)/[2(0.167312881+0.457946722)]=111.9535，是理论扩散受限上限而非实际测得的峰分离度。
+\item 核对μ\_app=μ\_EOF+μ\_ep，X比标志物更快、Y更慢但仍向检测端移动；三种总迁移率均为正。
+\item 负ζ按该符号约定产生正向EOF，计算须先将mPa·s换Pa·s；真实电泳还受注样塞宽、焦耳热、壁吸附、流场剖面、空间电荷和弯曲流动影响，常使实际峰宽远大于纯扩散预测。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+electric\_field = 30000 V/m；mu\_apparent\_neutral = 6.66666667e-08 m2/V/s；mu\_apparent\_X = 9.25925926e-08 m2/V/s；mu\_apparent\_Y = 5.20833333e-08 m2/V/s；mu\_EOF = 6.66666667e-08 m2/V/s；mu\_electrophoretic\_X = 2.59259259e-08 m2/V/s；mu\_electrophoretic\_Y = -1.45833333e-08 m2/V/s；zeta\_V = -0.0853651015 V；sigma\_time\_X = 0.167312881 s；sigma\_time\_Y = 0.457946722 s；ideal\_resolution = 111.953499 ratio\par
+\noindent\textbf{模型前提：}
+线性稳定EOF、均匀电场及速度、无注样宽度和非扩散峰展宽，ζ公式为理想薄双电层近似。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -10856,6 +10903,30 @@ pI\_298 = 0.6 fraction；pII\_298 = 0.4 fraction；K\_298 = 1.5 ratio；pI\_320 
 双态快速构象交换、两个纯构象J值恒定、温区内ΔH/ΔS不变。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O134 · 可逆Diels–Alder双通道内外型动力学的矩阵反演与产物选择性}
+\noindent\textbf{题目}\par
+某理想稀溶液中的环加成底物A经平行拟一级Diels–Alder通道生成内型加合物E与外型加合物X，两者又分别可逆解离回A：A⇌E的正、逆速率常数k\_e=0.0600 min⁻¹、r\_e=0.0100 min⁻¹；A⇌X的正、逆常数k\_x=0.0250 min⁻¹、r\_x=0.00500 min⁻¹。所有速率常数视为恒定，无E⇌X直接异构化、二聚、副产物或体积变化，初始A=1.000 mol、E=X=0。求t=30.00 min后A、E、X各物质的量、总转化率、内型在全部产物中的分数。求长期平衡下三种物质的量和正反速率平衡比，并从约化2×2动力学矩阵计算两个非零特征衰减率。用独立数值积分检查正性和质量守恒，说明为何内型选择性不等同于简单的k\_e/(k\_e+k\_x)或长期平衡选择性，以及线性反应网络与真实双分子环加成模型的边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 令A+E+X=1.000 mol，建立dA/dt=−(k\_e+k\_x)A+r\_eE+r\_xX，dE/dt=k\_eA−r\_eE，dX/dt=k\_xA−r\_xX。
+\item 三式相加恒为0，说明三种物种总量守恒，可消去A=1−E−X。
+\item 得到二维非齐次动力学d(E,X)ᵀ/dt=(k\_e,k\_x)ᵀ+B(E,X)ᵀ，其中B=[−(k\_e+r\_e),−k\_e;−k\_x,−(k\_x+r\_x)]。
+\item 具体B=[−0.0700,−0.0600;−0.0250,−0.0300] min⁻¹；迹Tr=−0.1000，行列式Det=(0.07×0.03−0.06×0.025)=0.000600 min⁻²。
+\item 方程的两个非零特征衰减率λ±=[Tr±√(Tr²−4Det)]/2，得−0.00641101和−0.09358899 min⁻¹，均严格为负。
+\item 平衡时分别满足E/A=k\_e/r\_e=6、X/A=k\_x/r\_x=5；结合总量得A\_eq=1/12、E\_eq=1/2、X\_eq=5/12。
+\item 从初值(E,X)=(0,0)用二维矩阵指数y(t)=y\_eq+exp(Bt)(y(0)−y\_eq)计算30分钟的E与X。
+\item 得到E(30)=0.5856604548 mol、X(30)=0.2687608125 mol，余下A(30)=0.1455787327 mol。
+\item 因此转化率(E+X)/1=0.8544212673，内型产物分数E/(E+X)=0.6854469537。
+\item 长期平衡的内型产物分数为E\_eq/(E\_eq+X\_eq)=6/11≈0.54545，而初始不可逆竞争比k\_e/(k\_e+k\_x)=0.70588，均不等于30分钟结果。
+\item 独立用四阶Runge–Kutta或稳定常微分方程积分复算，并验证A,E,X≥0且A+E+X=1；只有常浓度伪一级、无中间体且可逆路径独立时模型成立，真实二级Diels–Alder浓度变化与溶剂效应可能改变选择性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+A\_30 = 0.145578733 mol；endo\_E\_30 = 0.585660455 mol；exo\_X\_30 = 0.268760812 mol；conversion\_30 = 0.854421267 fraction；endo\_fraction\_30 = 0.685446954 fraction；A\_equilibrium = 0.0833333333 mol；E\_equilibrium = 0.5 mol；X\_equilibrium = 0.416666667 mol；fast\_eigen\_rate = -0.0935889894 min\textasciicircum{}-1；slow\_eigen\_rate = -0.00641101056 min\textasciicircum{}-1；endo\_forward\_reverse\_ratio = 6 ratio；exo\_forward\_reverse\_ratio = 5 ratio\par
+\noindent\textbf{模型前提：}
+常速率拟一级三态可逆网络、E/X无直接转化和副反应，初始全部A且质量完全守恒。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第11辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -11105,6 +11176,31 @@ steady\_x = 1.2 dimensionless；steady\_y = 2.25 dimensionless；trace = 0.26 1/
 weighted\_numerator = 232.5 relative\_concentration；weighted\_denominator = 435 relative\_concentration；numerator\_denominator\_ratio = 0.534482759 ratio；membrane\_mV = -16.7349732 mV；E\_K\_mV = -89.015622 mV；E\_Na\_mV = 71.4364933 mV；E\_Cl\_mV = 0 mV；sensitivity\_K\_mV = -16.0460688 mV；sensitivity\_Na\_mV = 8.02303442 mV；sensitivity\_Cl\_mV = 8.02303442 mV\par
 \noindent\textbf{模型前提：}
 三种一价离子、恒定场零净电流、无泵与非理想活度，两侧体相电中性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P134 · 正热容变两态折叠体系的冷热变性、Gibbs–Helmholtz根与平衡分数}
+\noindent\textbf{题目}\par
+某理想溶液中宏分子仅存在折叠F与展开U两个平衡态，定义展开相对折叠的热力学差ΔG(T)=G\_U−G\_F。在热变性中点T\_m=350.0 K，ΔG(T\_m)=0，展开焓ΔH\_m=+200.0 kJ/mol；恒定展开热容差ΔC\_p=+5.000 kJ/(mol·K)，忽略压力和浓度依赖。用积分热力学关系ΔH(T)=ΔH\_m+ΔC\_p(T−T\_m)、ΔS(T)=ΔH\_m/T\_m+ΔC\_p ln(T/T\_m)，ΔG(T)=ΔH\_m(1−T/T\_m)+ΔC\_p[(T−T\_m)−Tln(T/T\_m)]。令R=0.008314462618 kJ/(mol·K)。求0<T<T\_m的冷变性中点T\_c（非平凡ΔG=0根）、正温区ΔG的极大点T\_*及极大值、298.15 K时ΔG、ΔH、ΔS、展开平衡比例p\_U=[1+exp(ΔG/(RT))]⁻¹、展开与折叠比K\_U/F，另计算250 K与400 K的ΔG以确定冷热两端稳定性。证明冷根的存在与唯一性并说明两态、恒ΔC\_p及不发生冻结聚集等边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 按定义ΔG(T)=ΔH(T)−TΔS(T)；代入给定ΔH和ΔS式得到含Tln(T/T\_m)的ΔG表达式。
+\item 在T=T\_m=350 K时显然ΔG=0，故此点为热变性平衡温度。
+\item 由热力学导数dΔG/dT=−ΔS(T)，d²ΔG/dT²=−ΔC\_p/T<0，故ΔG对所有T>0严格凹。
+\item 极大温度满足ΔS=0，即ln(T\_*/T\_m)=−ΔH\_m/(T\_mΔC\_p)，得T\_*=312.2010715 K。
+\item 该点ΔG\_max=11.00535754 kJ/mol>0，且T→0+时ΔG→ΔH\_m−ΔC\_p T\_m=−1550 kJ/mol，故必存在比T\_*低的冷变性根。
+\item 严格凹性使ΔG在(0,T\_*)单调增加、在(T\_*,∞)单调下降，因此低温一侧的非平凡根唯一。
+\item 用二分法在(250,300) K解ΔG(T)=0，求T\_c=275.86998479 K；高温另一根已知350.0 K。
+\item 在298.15 K，展开焓ΔH=200+5(298.15−350)=−59.25 kJ/mol。
+\item 同温ΔS=200/350+5ln(298.15/350)=−0.2302536231 kJ/(mol·K)，故ΔG=ΔH−TΔS=+9.400117740 kJ/mol。
+\item 展开/折叠比K\_U/F=exp[−ΔG/(RT)]=0.02255125011，展开分数p\_U=K/(1+K)=0.02205390694。
+\item 在250 K和400 K分别得ΔG=−22.26684708及−45.63421382 kJ/mol，两端展开态热力学更有利，而中温段以折叠态为主。
+\item 这些结论依赖严格两态、恒定热容差和可逆平衡；如果低温溶剂结冰、热变性不可逆聚集或有额外中间态，不能把理想冷变性根直接认作实测温度。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+cold\_denaturation\_K = 275.869985 K；G\_max\_temperature\_K = 312.201072 K；G\_max\_kJmol = 11.0053575 kJ/mol；G298\_kJmol = 9.40011774 kJ/mol；H298\_kJmol = -59.25 kJ/mol；S298\_kJmolK = -0.230253623 kJ/mol/K；unfolded\_fraction\_298 = 0.0220539069 fraction；unfolded\_to\_folded\_ratio = 0.0225512501 ratio；G250\_kJmol = -22.2668471 kJ/mol；G350\_kJmol = 0 kJ/mol；G400\_kJmol = -45.6342138 kJ/mol\par
+\noindent\textbf{模型前提：}
+严格可逆两态、恒定ΔCp、无冻结与聚集、理想热平衡且无其他结构中间态。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
