@@ -808,6 +808,14 @@ const w={
 },
 };
 
+
+Object.assign(w,{
+"UC-ADV10-I125":()=>{const r=8.314462618,k=t=>Math.exp((70*t-60000)/(r*t)),a=k(900),x=(.08*a-.02)/(1+a),b=k(1000),q=7/3;assert.ok(x>0&&x<.05&&b>q&&Math.abs((.05-x)+(.08-x)+2*(.02+x)-.17)<1e-12);return [a,x,.08-x,.02+x,.05-x,.01+x,b,.05,q,60000/(70-r*Math.log(q)),1000/900];},
+"UC-ADV10-A125":()=>{const e=1.602176634e-19,k=1.380649e-23,u=1.66053906660e-27,N=2.5e25;const K=m=>3*e/(16*N*2e-18)*Math.sqrt(2*Math.PI/((28*m/(28+m))*u*k*300));const a=K(100),b=K(102),ta=.1/(a*1e4),tb=.1/(b*1e4),om=3*e/(16*N*a)*Math.sqrt(2*Math.PI/((2800/128)*u*k*300));assert.ok(a>b&&tb>ta&&Math.abs(om/2e-18-1)<1e-12);return [a,b,ta,tb,tb-ta,ta/.00012,(tb-ta)/.00012,a/1.2,ta*1.2,om/1e-18];},
+"UC-ADV10-O122":()=>{const f=.6,kd=.001,kt=1e7,kp=500,i=.01,t=600,m0=2,I=i*Math.exp(-kd*t),r0=Math.sqrt(2*f*kd*i/kt),r=Math.sqrt(2*f*kd*I/kt),exp=2*kp*r0/kd*(1-Math.exp(-kd*t/2)),m=m0*Math.exp(-exp),rp=kp*m*r,ri=2*f*kd*I,dp=2*rp/ri;assert.ok(Math.abs(kt*r*r/ri-1)<1e-12);return [r0,I,r,exp,m,1-m/m0,rp,ri,dp,100*dp];},
+"UC-ADV10-P122":()=>{const R=8.314462618,T=298.15,G=2.5e-6,K=60,g0=.072,ga=c=>g0-R*T*G*Math.log1p(K*c),ad=c=>G*K*c/(1+K*c),th=c=>K*c/(1+K*c),a=.01,b=.1;assert.ok(ga(b)<ga(a)&&ad(b)>ad(a));return [ga(a),ga(b),ad(a),ad(b),th(a),th(b),ga(b)-ga(a),.01*(ga(b)-ga(a)),ad(b)-ad(a)];}
+});
+
 const req={inorganic:{id:"I101",count:0},analytical:{id:"A101",count:0},organic:{id:"O98",count:0},physical:{id:"P98",count:0}};
 const ids=new Set(),titles=new Set(),families=new Set();let all=0;
 function near(a,b,label){

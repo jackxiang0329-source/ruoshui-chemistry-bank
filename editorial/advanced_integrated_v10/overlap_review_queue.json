@@ -2,7 +2,7 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 96,
+  "current_draft_count": 100,
   "preliminary_flags": 43,
   "pairs": [
     {
@@ -770,6 +770,30 @@
       "model_family": "Debye-dielectric-relaxation-DC-conductivity-complex-spectrum-two-frequency-inverse-heating",
       "judgement": "pending_human_comparison",
       "screening": "全部主要数值答案另附独立witness。旧辑气固平衡、光谱热布居、竞争动力学、阻抗/极化模型相似性尚须人工逐式核对，未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV10-I125",
+      "model_family": "Ellingham-CO-reduction-finite-oxide-inventory-phase-boundary",
+      "judgement": "pending_human_comparison",
+      "screening": "完整答案向量独立witness已加入；核心数学模型与历辑题目仍须逐式人工比较，科学条件待专家审核。"
+    },
+    {
+      "new_id": "UC-ADV10-A125",
+      "model_family": "IMS-Mason-Schamp-isotope-reduced-mass-cross-section-drift-resolution",
+      "judgement": "pending_human_comparison",
+      "screening": "完整答案向量独立witness已加入；核心数学模型与历辑题目仍须逐式人工比较，科学条件待专家审核。"
+    },
+    {
+      "new_id": "UC-ADV10-O122",
+      "model_family": "free-radical-polymerization-decaying-initiator-quasisteady-integrated-conversion-chain-length",
+      "judgement": "pending_human_comparison",
+      "screening": "完整答案向量独立witness已加入；核心数学模型与历辑题目仍须逐式人工比较，科学条件待专家审核。"
+    },
+    {
+      "new_id": "UC-ADV10-P122",
+      "model_family": "Szyszkowski-Gibbs-surface-excess-log-concentration-interface-work",
+      "judgement": "pending_human_comparison",
+      "screening": "完整答案向量独立witness已加入；核心数学模型与历辑题目仍须逐式人工比较，科学条件待专家审核。"
     }
   ]
 }
