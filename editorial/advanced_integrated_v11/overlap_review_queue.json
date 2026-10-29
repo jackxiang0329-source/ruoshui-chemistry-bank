@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 65,
+  "current_draft_count": 69,
   "expert_approved": 0,
-  "preliminary_flags": 30,
+  "preliminary_flags": 34,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -184,6 +184,30 @@
       "new_id": "UC-ADV11-P138",
       "prior_id": "UC-ADV10-P105",
       "reason": "与历史光化学或界面现象存在主题邻近；新题特有选择定则/几何电容模型仍需逐式人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-I143",
+      "prior_id": "UC-ADV10-I111",
+      "reason": "相关领域有相似物理化学概念；本题的核心状态方程、守恒及可识别性必须与历史题人工逐式比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-A142",
+      "prior_id": "UC-ADV10-A119",
+      "reason": "相关领域有相似物理化学概念；本题的核心状态方程、守恒及可识别性必须与历史题人工逐式比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-O139",
+      "prior_id": "UC-ADV10-O105",
+      "reason": "相关领域有相似物理化学概念；本题的核心状态方程、守恒及可识别性必须与历史题人工逐式比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-P139",
+      "prior_id": "UC-ADV10-P117",
+      "reason": "相关领域有相似物理化学概念；本题的核心状态方程、守恒及可识别性必须与历史题人工逐式比较。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -577,6 +601,30 @@
       "model_family": "electrowetting-Young-Lippmann-spherical-cap-volume-capacitor-energy-breakdown",
       "judgement": "pending_human_comparison",
       "screening": "独立数值witness和守恒/能量/实验边界校验已建立；相似历史题需专家人工核验方程层面的原创性。"
+    },
+    {
+      "new_id": "UC-ADV11-I143",
+      "model_family": "Moessbauer-Fe57-gamma-recoil-Einstein-phonon-Lamb-fraction-linewidth-Doppler",
+      "judgement": "pending_human_comparison",
+      "screening": "独立主答案函数已编写并在GitHub QA中核对，仍需人类专家核验全库方程同构、化学假设和原创新颖性。"
+    },
+    {
+      "new_id": "UC-ADV11-A142",
+      "model_family": "dynamic-force-spectroscopy-Bell-Evans-loading-mode-survival-inverse",
+      "judgement": "pending_human_comparison",
+      "screening": "独立主答案函数已编写并在GitHub QA中核对，仍需人类专家核验全库方程同构、化学假设和原创新颖性。"
+    },
+    {
+      "new_id": "UC-ADV11-O139",
+      "model_family": "peptide-HDX-EX2-conformational-gating-inverse-two-site-isotopologues",
+      "judgement": "pending_human_comparison",
+      "screening": "独立主答案函数已编写并在GitHub QA中核对，仍需人类专家核验全库方程同构、化学假设和原创新颖性。"
+    },
+    {
+      "new_id": "UC-ADV11-P139",
+      "model_family": "three-state-unicyclic-chemical-motor-Markov-affinity-entropy-production-winding-variance",
+      "judgement": "pending_human_comparison",
+      "screening": "独立主答案函数已编写并在GitHub QA中核对，仍需人类专家核验全库方程同构、化学假设和原创新颖性。"
     }
   ]
 }
