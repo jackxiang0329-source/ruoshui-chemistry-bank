@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 94,
+  "current_draft_count": 100,
   "expert_approved": 0,
-  "preliminary_flags": 94,
+  "preliminary_flags": 100,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -568,6 +568,42 @@
       "new_id": "UC-ADV12-P170",
       "prior_id": null,
       "reason": "跨辑历史方程相似度和人工科学合理性审核未完成；本批独立复算不等于原创性认证。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I175",
+      "prior_id": null,
+      "reason": "需与历史题逐式人工比较并由化学专家核查；不可自动批准。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A175",
+      "prior_id": null,
+      "reason": "需与历史题逐式人工比较并由化学专家核查；不可自动批准。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O171",
+      "prior_id": null,
+      "reason": "需与历史题逐式人工比较并由化学专家核查；不可自动批准。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O172",
+      "prior_id": null,
+      "reason": "需与历史题逐式人工比较并由化学专家核查；不可自动批准。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P171",
+      "prior_id": null,
+      "reason": "需与历史题逐式人工比较并由化学专家核查；不可自动批准。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P172",
+      "prior_id": null,
+      "reason": "需与历史题逐式人工比较并由化学专家核查；不可自动批准。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -1135,6 +1171,42 @@
       "model_family": "nonadiabatic-Marcus-electron-transfer-normal-inverted-region-parabolic-activation-detailed-balance",
       "judgement": "pending_human_comparison",
       "screening": "已附解析数值见证、完整题解与模型限定；正式出版批准保留为0。"
+    },
+    {
+      "new_id": "UC-ADV12-I175",
+      "model_family": "Born-Haber-vs-Born-Lande-sodium-chloride-lattice-enthalpy",
+      "judgement": "pending_human_comparison",
+      "screening": "所有数值将经过独立见证函数CI复算，跨辑人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV12-A175",
+      "model_family": "13C-isotope-dilution-two-isotope-atom-fraction-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "所有数值将经过独立见证函数CI复算，跨辑人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV12-O171",
+      "model_family": "terminal-radical-copolymerization-Mayo-Lewis-monomer-feed-drift",
+      "judgement": "pending_human_comparison",
+      "screening": "所有数值将经过独立见证函数CI复算，跨辑人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV12-O172",
+      "model_family": "alkenyl-radical-5exo-intramolecular-ring-closure-thiol-trapping",
+      "judgement": "pending_human_comparison",
+      "screening": "所有数值将经过独立见证函数CI复算，跨辑人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV12-P171",
+      "model_family": "linear-rigid-rotor-highT-symmetry-number-entropy-two-gases",
+      "judgement": "pending_human_comparison",
+      "screening": "所有数值将经过独立见证函数CI复算，跨辑人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV12-P172",
+      "model_family": "Langmuir-Hinshelwood-A-B-site-competition-pressure-optimum",
+      "judgement": "pending_human_comparison",
+      "screening": "所有数值将经过独立见证函数CI复算，跨辑人工审核未完成。"
     }
   ]
 }

@@ -21,8 +21,8 @@
 - **第九辑新增100条待专家审校题**：[四科各25道的完整中文题目与解答](editorial/advanced_integrated_v9/100_advanced_chemistry_solutions.md) · [集中数据及审稿说明](editorial/advanced_integrated_v9/README.md) · [核心模型待人工复核清单](editorial/advanced_integrated_v9/overlap_review_queue.json)。独立计算复核已通过，但跨辑模型独立性仍未全部确证。
 - **第十辑已完成：100/100**，四科各25道，参见[第十辑进行中目录](editorial/advanced_integrated_v10/README.md)和[每题完整数值答案独立计算检查](scripts/check-advanced-authored-v10.mjs)；尚未完成专家和跨辑模型原创性审查。
 - **第十一辑已完成：100/100**，四科各25道，[完整中文解析](editorial/advanced_integrated_v11/8_advanced_chemistry_solutions.md)、[结构化源稿与QA说明](editorial/advanced_integrated_v11/README.md)；独立复算与跨辑模型人工复核严格分层。
-- **第十二辑正在续编：94/100**，四科分别24/24/23/23；[完整索引与待审数据](editorial/advanced_integrated_v12/README.md)。
-- **当前全库累计700条编辑记录**（前九辑406+第十辑100+第十一辑100+第十二辑94）；专家批准 **0**，正式可出卷 **0**。第六至十二辑的跨辑模型审定与专家审核仍未完成。
+- **第十二辑完成：100/100**，四科分别25/25/25/25；[完整索引与待审数据](editorial/advanced_integrated_v12/README.md)。
+- **当前全库累计706条编辑记录**（前九辑406+第十辑100+第十一辑100+第十二辑100）；专家批准 **0**，正式可出卷 **0**。第六至十二辑的跨辑模型审定与专家审核仍未完成。
 
 ## 清理政策
 

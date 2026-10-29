@@ -227,6 +227,16 @@ Object.assign(witnesses,{
 "UC-ADV12-P170":()=>{const kb=1.380649e-23,q=1.602176634e-19,N=6.02214076e23,L=.6,t1=298.15,t2=350,f=1e12,gs=[-.2,-.6,-1,-1.4],x=gs.map(g=>(L+g)/(2*L)),G=x.map(v=>L*v*v),rate=(g,T)=>f*Math.exp(-L*((L+g)/(2*L))**2/(kb*T/q)),a=gs.map(g=>rate(g,t1)),b=gs.map(g=>rate(g,t2)),back=f*Math.exp(-((L+.6)**2)/(4*L*(kb*t1/q)));assert.ok(Math.abs(a[1]/back/Math.exp(.6/(kb*t1/q))-1)<1e-12);return[t1,t2,L,f,...gs,...G,...a,...b,...x,kb*t1/q,kb*t2/q,back,a[1]/back,Math.exp(.6/(kb*t1/q)),a[3]/a[2],-L,...G.map(g=>g*q*N/1000),b[0]/a[0],b[3]/a[3],0,a[1]/a[0]];}
 });
 
+
+Object.assign(witnesses,{
+"UC-ADV12-I175":()=>{const gas=108+496+121.5-349,h=-411-gas,z=-6.02214076e23*1.7476*(1.602176634e-19)**2/(4*Math.PI*8.8541878128e-12*.281e-9)/1000,u=z*(1-1/9);assert.equal(gas+h,-411);return[gas,h,-h,z,u,u-h,-411,0];},
+"UC-ADV12-A175":()=>{let r=1/3,f=r/(1+r),s=.0005*(.98-f)/(f-.011),n=s+.0005,c13=.011*s+.98*.0005;assert.ok(Math.abs(c13/n-f)<1e-14);return[f,s,n,c13,n-c13,c13/(n-c13),.98*.0005/c13,s*12.011];},
+"UC-ADV12-O171":()=>{let f=.3,g=.7,r=.2* f*f+f*g,second=2*g*g+f*g,sum=r+second,F=r/sum;return[r,sum,F,second/sum,F/f,f-F,f+.01*(f-F),1];},
+"UC-ADV12-O172":()=>{const kc=200000,k=100000000,R0=1e-5,t=1e-5,a=kc+k*.001,b=kc+k*.01;assert.ok(kc/a<1&&kc/b<kc/a);return[a,b,1e6/a,1e6/b,kc/a,kc/b,R0*Math.exp(-a*t),R0*Math.exp(-b*t),R0*kc/a,R0*kc/b,kc/k];},
+"UC-ADV12-P171":()=>{let T=298.15,R=8.314462618,n=T/5.76,c=T/2.77,S=R*(Math.log(n)+1),Sc=R*(Math.log(c)+1),U=R*T,A=-R*T*Math.log(n),Ac=-R*T*Math.log(c);return[n,c,S,Sc,Sc-S,U,R,A,Ac,(A+T*S)/U];},
+"UC-ADV12-P172":()=>{let k=.02,KA=2,b=.5*2,star=(1+b)/KA,at=p=>{let a=KA*p,z=1+a+b;return[a/z,b/z,1/z,k*a*b/z**2]},q=at(.2),r=at(star);return[star,...q,...r,r[3]/q[3],1,0];}
+});
+
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();
