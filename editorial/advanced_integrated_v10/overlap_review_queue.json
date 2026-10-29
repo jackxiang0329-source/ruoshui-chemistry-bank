@@ -2,8 +2,8 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 76,
-  "preliminary_flags": 35,
+  "current_draft_count": 80,
+  "preliminary_flags": 39,
   "pairs": [
     {
       "new_id": "UC-ADV10-I102",
@@ -213,6 +213,30 @@
       "new_id": "UC-ADV10-O116",
       "prior_id": "UC-ADV10-O113",
       "reason": "均涉及13C信息；O113醇醛加成同位素示踪逆问题与O116 Claisen动力学同位素富集仍须核查核心模型。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-I120",
+      "prior_id": "UC-ADV9-I98",
+      "reason": "旧题研究标签交换动力学；新题研究振动配分函数、温度与位点同位素守恒，须核查核心数学结构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-A120",
+      "prior_id": "UC-ADV9-P92",
+      "reason": "旧题研究Soret热扩散；新题研究Taylor–Aris剪切展宽与双流速反演，须逐式比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-O117",
+      "prior_id": "UC-ADV9-O91",
+      "reason": "旧题研究竞争通道存活；新题含可逆自由基双态、瞬态本征模与终态吸收概率，须逐式比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-P117",
+      "prior_id": "UC-ADV10-P98",
+      "reason": "旧题研究Knudsen孔扩散；新题为停滞载气Stefan对数剖面及非零总摩尔通量，须逐式比较。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -602,6 +626,30 @@
       "model_family": "Marcus-outer-sphere-electron-transfer-detailed-balance-inverted-region",
       "judgement": "pending_human_comparison",
       "screening": "自动数值witness已编写；化学科学性和跨辑核心数学模型尚待人工专家复核。"
+    },
+    {
+      "new_id": "UC-ADV10-I120",
+      "model_family": "metal-hydride-isotope-exchange-harmonic-quantum-partition-site-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器witness待CI核验；科学性及跨辑核心模型仍待专家人工审查。"
+    },
+    {
+      "new_id": "UC-ADV10-A120",
+      "model_family": "Taylor-Aris-flow-injection-two-velocity-variance-inverse-radius-diffusion",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器witness待CI核验；科学性及跨辑核心模型仍待专家人工审查。"
+    },
+    {
+      "new_id": "UC-ADV10-O117",
+      "model_family": "reversible-radical-clock-two-state-absorbing-Markov-transient-product-yields",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器witness待CI核验；科学性及跨辑核心模型仍待专家人工审查。"
+    },
+    {
+      "new_id": "UC-ADV10-P117",
+      "model_family": "Stefan-stagnant-carrier-binary-vapor-diffusion-log-profile-flux",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器witness待CI核验；科学性及跨辑核心模型仍待专家人工审查。"
     }
   ]
 }
