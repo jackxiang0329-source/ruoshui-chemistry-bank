@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 13,
   "status": "expert_review_pending",
-  "current_draft_count": 34,
+  "current_draft_count": 44,
   "expert_approved": 0,
-  "preliminary_flags": 34,
+  "preliminary_flags": 44,
   "pairs": [
     {
       "new_id": "UC-ADV13-I176",
@@ -208,6 +208,66 @@
       "new_id": "UC-ADV13-P180",
       "prior_id": null,
       "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I185",
+      "prior_id": null,
+      "reason": "该模型需与第1—12辑及本辑全部方程逐式比对，专家原创性、科学性未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I186",
+      "prior_id": null,
+      "reason": "该模型需与第1—12辑及本辑全部方程逐式比对，专家原创性、科学性未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I187",
+      "prior_id": null,
+      "reason": "该模型需与第1—12辑及本辑全部方程逐式比对，专家原创性、科学性未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I188",
+      "prior_id": null,
+      "reason": "该模型需与第1—12辑及本辑全部方程逐式比对，专家原创性、科学性未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I189",
+      "prior_id": null,
+      "reason": "该模型需与第1—12辑及本辑全部方程逐式比对，专家原创性、科学性未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I190",
+      "prior_id": null,
+      "reason": "该模型需与第1—12辑及本辑全部方程逐式比对，专家原创性、科学性未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I191",
+      "prior_id": null,
+      "reason": "该模型需与第1—12辑及本辑全部方程逐式比对，专家原创性、科学性未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I192",
+      "prior_id": null,
+      "reason": "该模型需与第1—12辑及本辑全部方程逐式比对，专家原创性、科学性未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I193",
+      "prior_id": null,
+      "reason": "该模型需与第1—12辑及本辑全部方程逐式比对，专家原创性、科学性未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I194",
+      "prior_id": null,
+      "reason": "该模型需与第1—12辑及本辑全部方程逐式比对，专家原创性、科学性未完成。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -415,6 +475,66 @@
       "model_family": "Butler-Volmer-overpotential-exchange-current-Tafel-branches",
       "judgement": "pending_human_comparison",
       "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-I185",
+      "model_family": "amphoteric-zinc-hydroxide-solubility-freeZn-tetrahydroxo-minimum",
+      "judgement": "pending_human_comparison",
+      "screening": "独立公式见证复算通过后只可标记数值可再现；不标记publishable。"
+    },
+    {
+      "new_id": "UC-ADV13-I186",
+      "model_family": "chromate-hydrogenchromate-dichromate-acid-dimerization-closed-form",
+      "judgement": "pending_human_comparison",
+      "screening": "独立公式见证复算通过后只可标记数值可再现；不标记publishable。"
+    },
+    {
+      "new_id": "UC-ADV13-I187",
+      "model_family": "MOF-carbon-dioxide-Langmuir-isosteric-enthalpy-temperature",
+      "judgement": "pending_human_comparison",
+      "screening": "独立公式见证复算通过后只可标记数值可再现；不标记publishable。"
+    },
+    {
+      "new_id": "UC-ADV13-I188",
+      "model_family": "peroxodisulfate-iodide-constant-iodide-pseudofirst-order-oxidation",
+      "judgement": "pending_human_comparison",
+      "screening": "独立公式见证复算通过后只可标记数值可再现；不标记publishable。"
+    },
+    {
+      "new_id": "UC-ADV13-I189",
+      "model_family": "square-planar-PtII-competing-ligand-substitution-pseudo-first-order-products",
+      "judgement": "pending_human_comparison",
+      "screening": "独立公式见证复算通过后只可标记数值可再现；不标记publishable。"
+    },
+    {
+      "new_id": "UC-ADV13-I190",
+      "model_family": "CuII-EPR-axial-Jahn-Teller-g-anisotropy-resonance-fields",
+      "judgement": "pending_human_comparison",
+      "screening": "独立公式见证复算通过后只可标记数值可再现；不标记publishable。"
+    },
+    {
+      "new_id": "UC-ADV13-I191",
+      "model_family": "CuS-ZnS-sulfide-selective-precipitation-free-sulfide-window",
+      "judgement": "pending_human_comparison",
+      "screening": "独立公式见证复算通过后只可标记数值可再现；不标记publishable。"
+    },
+    {
+      "new_id": "UC-ADV13-I192",
+      "model_family": "tungsten-oxide-small-polaron-hopping-conductivity-activation-temperature",
+      "judgement": "pending_human_comparison",
+      "screening": "独立公式见证复算通过后只可标记数值可再现；不标记publishable。"
+    },
+    {
+      "new_id": "UC-ADV13-I193",
+      "model_family": "calcium-carbonate-calcination-equilibrium-CO2-pressure-entropy",
+      "judgement": "pending_human_comparison",
+      "screening": "独立公式见证复算通过后只可标记数值可再现；不标记publishable。"
+    },
+    {
+      "new_id": "UC-ADV13-I194",
+      "model_family": "Ru-polypyridyl-excited-state-oxidation-reduction-energetics",
+      "judgement": "pending_human_comparison",
+      "screening": "独立公式见证复算通过后只可标记数值可再现；不标记publishable。"
     }
   ]
 }
