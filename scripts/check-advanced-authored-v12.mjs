@@ -118,6 +118,11 @@ Object.assign(witnesses,{
 "UC-ADV12-I165":()=>{const E=14412.5,c=299792458,v1=-.35,v2=1.25,cen=(v1+v2)/2,dv=v2-v1,lo=E*v1*.001/c,hi=E*v2*.001/c,ce=E*cen*.001/c,del=E*dv*.001/c,M=56.9354*1.66053906660e-27,e=1.602176634e-19,Er=(E*e)**2/(2*M*c*c)/e;assert.ok(del>0&&Er>del);return[cen,dv,lo,hi,ce,del,del*1e9,del/4.135667696e-15,del*e/1.380649e-23,Er,Er*1000,Er/del,1239.841984/E,lo+hi-2*ce,hi-lo-del,2*del,2*Er];},
 "UC-ADV12-A165":()=>{const Vi=.02,ca=.01,cs=.005,cb=.02,lambda=[.03496,.005011,.007635,.01985],calc=v=>{let nh=Math.max(0,ca*Vi-cb*v),no=Math.max(0,cb*v-ca*Vi),na=cs*Vi+cb*v,cl=(cs+ca)*Vi;return 1000*(lambda[0]*nh+lambda[1]*na+lambda[2]*cl+lambda[3]*no)/(Vi+v)},vol=[0,.005,.01,.015,.02],raw=vol.map(calc),corr=vol.map((x,i)=>raw[i]*(Vi+x)/Vi),sl=(corr[1]-corr[0])/.005,sr=(corr[3]-corr[2])/.005,ve=(corr[3]-corr[0]-sr*.015)/(sl-sr);assert.ok(Math.abs(ve-.01)<1e-12&&sl<0&&sr>0);return[.01,...raw,...corr,sl,sr,ve,cb*ve/Vi,ca*Vi,cb*.01,calc(.01),cs*Vi+cb*.01,(cs+ca)*Vi,corr[2]-corr[0],calc(.015)/calc(.005)];}
 });
+
+Object.assign(witnesses,{
+"UC-ADV12-O161":()=>{const R=8.314462618,H=4500,S=8,T1=298.15,T2=350,A=12,G=3,C=t=>{let w=Math.exp(S/R-H/(R*t)),pa=1/(1+2*w),pg=w*pa,job=A*pa+2*G*pg,mix=-R*(pa*Math.log(pa)+2*pg*Math.log(pg)),cv=H*H/(R*t*t)*pa*2*pg;return[w,pa,pg,job,mix,cv]},a=C(T1),b=C(T2),w1=(A-a[3])/(2*(a[3]-G)),w2=(A-b[3])/(2*(b[3]-G)),h=-R*Math.log(w2/w1)/(1/T2-1/T1),s=R*Math.log(w1)+h/T1;assert.ok(Math.abs(h-H)<1e-10&&Math.abs(s-S)<1e-12);return[A,G,a[0],b[0],a[1],b[1],a[2],b[2],2*a[2],2*b[2],a[3],b[3],w1,w2,h,s,(H-T1*S)/1000,(H-T2*S)/1000,a[4],b[4],a[5],b[5],a[1]+2*a[2],b[1]+2*b[2]];},
+"UC-ADV12-P161":()=>{const R=8.314462618,hc=1.438776877,T=800,rm=(c,o)=>c*o/(c+o),m=rm(12,15.994915),M=rm(13.003355,15.994915),v=2143,V=v*Math.sqrt(m/M),f=n=>{let x=hc*n/T,ex=Math.exp(-x),p0=1-ex,p1=p0*ex,nn=ex/(1-ex),z=R*hc*n/2,U=R*hc*n*(.5+nn),Cv=R*x*x*nn*(1+nn),S=R*(x*nn-Math.log(p0));return{x,nn,p0,p1,z,U,Cv,S,q:1/p0}},a=f(v),b=f(V);assert.ok(M>m&&V<v&&b.nn>a.nn);return[m,M,v,V,v-V,V/v,a.x,b.x,a.nn,b.nn,a.p0,b.p0,a.p1,b.p1,a.z,b.z,a.z-b.z,a.U,b.U,a.Cv,b.Cv,a.S,b.S,a.q,b.q,a.p0+a.p1,a.U-b.U];}
+});
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();

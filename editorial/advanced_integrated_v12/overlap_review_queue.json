@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 56,
+  "current_draft_count": 58,
   "expert_approved": 0,
-  "preliminary_flags": 56,
+  "preliminary_flags": 58,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -340,6 +340,18 @@
       "new_id": "UC-ADV12-A165",
       "prior_id": "UC-ADV11-A147",
       "reason": "领域存在早期核谱或滴定模型近邻；具体模型结构和科学真实性仍待人工复核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O161",
+      "prior_id": "UC-ADV11-O133",
+      "reason": "NMR分子构象统计与分子振动同位素领域已有相邻题，需人工比较完整方程同构及科学模型。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P161",
+      "prior_id": "UC-ADV11-P130",
+      "reason": "NMR分子构象统计与分子振动同位素领域已有相邻题，需人工比较完整方程同构及科学模型。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -679,6 +691,18 @@
       "model_family": "conductometric-strong-acid-titration-electrolyte-charge-dilution-corrected-two-line-intersection",
       "judgement": "pending_human_comparison",
       "screening": "独立计算见证及能量/电荷审核已登记；未通过专家跨辑原创性认证。"
+    },
+    {
+      "new_id": "UC-ADV12-O161",
+      "model_family": "Karplus-vicinal-NMR-coupling-three-conformer-Boltzmann-two-temperature-inverse-thermodynamics",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值见证与微态归一及量子热力学边界检查已登记，专家审核仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV12-P161",
+      "model_family": "CO-isotopologue-harmonic-oscillator-reduced-mass-quantum-partition-zero-point-thermodynamics",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值见证与微态归一及量子热力学边界检查已登记，专家审核仍待完成。"
     }
   ]
 }
