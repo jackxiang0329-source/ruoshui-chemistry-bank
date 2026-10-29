@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 13,
   "status": "expert_review_pending",
-  "current_draft_count": 86,
+  "current_draft_count": 100,
   "expert_approved": 0,
-  "preliminary_flags": 86,
+  "preliminary_flags": 100,
   "pairs": [
     {
       "new_id": "UC-ADV13-I176",
@@ -520,6 +520,90 @@
       "new_id": "UC-ADV13-A200",
       "prior_id": null,
       "reason": "跨辑方程模型、学术合理性与文本待人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O191",
+      "prior_id": null,
+      "reason": "模型和文本仍需跨辑逐式人工核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O192",
+      "prior_id": null,
+      "reason": "模型和文本仍需跨辑逐式人工核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O193",
+      "prior_id": null,
+      "reason": "模型和文本仍需跨辑逐式人工核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O194",
+      "prior_id": null,
+      "reason": "模型和文本仍需跨辑逐式人工核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O195",
+      "prior_id": null,
+      "reason": "模型和文本仍需跨辑逐式人工核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O196",
+      "prior_id": null,
+      "reason": "模型和文本仍需跨辑逐式人工核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O197",
+      "prior_id": null,
+      "reason": "模型和文本仍需跨辑逐式人工核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P191",
+      "prior_id": null,
+      "reason": "模型和文本仍需跨辑逐式人工核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P192",
+      "prior_id": null,
+      "reason": "模型和文本仍需跨辑逐式人工核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P193",
+      "prior_id": null,
+      "reason": "模型和文本仍需跨辑逐式人工核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P194",
+      "prior_id": null,
+      "reason": "模型和文本仍需跨辑逐式人工核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P195",
+      "prior_id": null,
+      "reason": "模型和文本仍需跨辑逐式人工核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P196",
+      "prior_id": null,
+      "reason": "模型和文本仍需跨辑逐式人工核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P197",
+      "prior_id": null,
+      "reason": "模型和文本仍需跨辑逐式人工核对。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -1039,6 +1123,90 @@
       "model_family": "isotope-delta15N-standard-ratio-linear-mixing",
       "judgement": "pending_human_comparison",
       "screening": "已计算完整数值答案，人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV13-O191",
+      "model_family": "consecutive-first-order-intermediate-max-time-A-B-C",
+      "judgement": "pending_human_comparison",
+      "screening": "自动QA仅核对模型数值，完整专家审核待完成。"
+    },
+    {
+      "new_id": "UC-ADV13-O192",
+      "model_family": "lactonization-effective-molarity-intramolecular-vs-intermolecular",
+      "judgement": "pending_human_comparison",
+      "screening": "自动QA仅核对模型数值，完整专家审核待完成。"
+    },
+    {
+      "new_id": "UC-ADV13-O193",
+      "model_family": "organic-isotope-branching-mass-action-two-substrates-KIE",
+      "judgement": "pending_human_comparison",
+      "screening": "自动QA仅核对模型数值，完整专家审核待完成。"
+    },
+    {
+      "new_id": "UC-ADV13-O194",
+      "model_family": "protecting-group-sequential-deprotection-two-first-order-steps",
+      "judgement": "pending_human_comparison",
+      "screening": "自动QA仅核对模型数值，完整专家审核待完成。"
+    },
+    {
+      "new_id": "UC-ADV13-O195",
+      "model_family": "E1cB-elimination-carbanion-pre-equilibrium-base-dependence",
+      "judgement": "pending_human_comparison",
+      "screening": "自动QA仅核对模型数值，完整专家审核待完成。"
+    },
+    {
+      "new_id": "UC-ADV13-O196",
+      "model_family": "two-wavelength-photoisomerization-cross-section-photostationary-state",
+      "judgement": "pending_human_comparison",
+      "screening": "自动QA仅核对模型数值，完整专家审核待完成。"
+    },
+    {
+      "new_id": "UC-ADV13-O197",
+      "model_family": "epoxide-nucleophile-regioselective-competing-first-order-openings",
+      "judgement": "pending_human_comparison",
+      "screening": "自动QA仅核对模型数值，完整专家审核待完成。"
+    },
+    {
+      "new_id": "UC-ADV13-P191",
+      "model_family": "Gibbs-adsorption-surface-excess-logactivity-tension-slope",
+      "judgement": "pending_human_comparison",
+      "screening": "自动QA仅核对模型数值，完整专家审核待完成。"
+    },
+    {
+      "new_id": "UC-ADV13-P192",
+      "model_family": "cryoscopic-freezing-point-depression-molality-two-solutes",
+      "judgement": "pending_human_comparison",
+      "screening": "自动QA仅核对模型数值，完整专家审核待完成。"
+    },
+    {
+      "new_id": "UC-ADV13-P193",
+      "model_family": "Joule-Thomson-throttling-constant-mu-temperature-change",
+      "judgement": "pending_human_comparison",
+      "screening": "自动QA仅核对模型数值，完整专家审核待完成。"
+    },
+    {
+      "new_id": "UC-ADV13-P194",
+      "model_family": "Graham-effusion-mass-selectivity-isotope-enrichment",
+      "judgement": "pending_human_comparison",
+      "screening": "自动QA仅核对模型数值，完整专家审核待完成。"
+    },
+    {
+      "new_id": "UC-ADV13-P195",
+      "model_family": "Flory-Huggins-symmetric-binary-mixing-spinodal-critical-chi",
+      "judgement": "pending_human_comparison",
+      "screening": "自动QA仅核对模型数值，完整专家审核待完成。"
+    },
+    {
+      "new_id": "UC-ADV13-P196",
+      "model_family": "Nernst-Planck-binary-electrolyte-zero-current-liquid-junction",
+      "judgement": "pending_human_comparison",
+      "screening": "自动QA仅核对模型数值，完整专家审核待完成。"
+    },
+    {
+      "new_id": "UC-ADV13-P197",
+      "model_family": "thermoelectric-Seebeck-temperature-linear-open-circuit-voltage",
+      "judgement": "pending_human_comparison",
+      "screening": "自动QA仅核对模型数值，完整专家审核待完成。"
     }
   ]
 }
