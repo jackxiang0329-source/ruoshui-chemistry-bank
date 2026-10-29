@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 52,
+  "current_draft_count": 54,
   "expert_approved": 0,
-  "preliminary_flags": 52,
+  "preliminary_flags": 54,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -316,6 +316,18 @@
       "new_id": "UC-ADV12-A164",
       "prior_id": "UC-ADV11-A137",
       "reason": "无机合金相变/离子电极均与旧题有领域相邻内容，尚待逐式检查独立原创性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O160",
+      "prior_id": "UC-ADV11-O137",
+      "reason": "与旧辑有机对映选择性或双电层主题相邻，需人类逐式对比新模型和物理边界。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P160",
+      "prior_id": "UC-ADV12-P155",
+      "reason": "与旧辑有机对映选择性或双电层主题相邻，需人类逐式对比新模型和物理边界。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -631,6 +643,18 @@
       "model_family": "fluoride-Nikolsky-Eisenman-HF-protonation-chloride-selectivity-two-pH-inverse",
       "judgement": "pending_human_comparison",
       "screening": "已创建独立数值见证，所有记录保持专家待审、禁止发表。"
+    },
+    {
+      "new_id": "UC-ADV12-O160",
+      "model_family": "enantioselective-kinetic-resolution-parallel-firstorder-product-substrate-ee-conservation",
+      "judgement": "pending_human_comparison",
+      "screening": "独立双手性物料/固定电荷Donnan数值检查已建立，尚未获得人工认可。"
+    },
+    {
+      "new_id": "UC-ADV12-P160",
+      "model_family": "Donnan-charged-hydrogel-fixed-anion-electrochemical-potential-osmotic-pressure",
+      "judgement": "pending_human_comparison",
+      "screening": "独立双手性物料/固定电荷Donnan数值检查已建立，尚未获得人工认可。"
     }
   ]
 }
