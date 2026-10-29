@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 40,
+  "current_draft_count": 44,
   "expert_approved": 0,
-  "preliminary_flags": 7,
+  "preliminary_flags": 10,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -46,6 +46,24 @@
       "new_id": "UC-ADV11-P132",
       "prior_id": "UC-ADV11-P123",
       "reason": "均含非线性稳定性，但本题二维Hopf条件，前题一维Semenov热失控；需人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-I136",
+      "prior_id": "UC-ADV11-I129",
+      "reason": "都关联无机材料光谱，但数学模型分别为激子有效质量与同位素振动。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-O133",
+      "prior_id": "UC-ADV11-O128",
+      "reason": "均含核磁化学平衡，但本题是快交换构象-van't Hoff模型，旧题是E/Z溶剂平衡。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-P133",
+      "prior_id": "UC-ADV11-P129",
+      "reason": "均含电化学电位，但膜Goldman与Gouy-Chapman双电层可能有模型共性。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -289,6 +307,30 @@
       "model_family": "Brusselator-open-oscillatory-reaction-Hopf-eigenvalue-linear-stability",
       "judgement": "pending_human_comparison",
       "screening": "独立主要答案向量witness已登记并接受CI；全历史词汇模型初筛与人工方程级新颖性、化学科学性审核尚未通过。"
+    },
+    {
+      "new_id": "UC-ADV11-I136",
+      "model_family": "ZnO-effective-mass-exciton-Bohr-Rydberg-Mott-screening",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器计算witness待CI回归；跨辑核心模型的原创性与化学科学性需人工专家逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV11-A136",
+      "model_family": "van-Deemter-HPLC-pressure-constrained-flow-resolution-retention",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器计算witness待CI回归；跨辑核心模型的原创性与化学科学性需人工专家逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV11-O133",
+      "model_family": "cyclohexane-chair-fast-exchange-NMR-J-weighted-vanthoff-thermodynamics",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器计算witness待CI回归；跨辑核心模型的原创性与化学科学性需人工专家逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV11-P133",
+      "model_family": "Goldman-Hodgkin-Katz-K-Na-Cl-membrane-potential-sensitivity",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器计算witness待CI回归；跨辑核心模型的原创性与化学科学性需人工专家逐式复核。"
     }
   ]
 }

@@ -59,6 +59,12 @@ Object.assign(witness,{
 "UC-ADV11-O132":()=>{const H=.001,G=.0015,k1=1000,k2=2000,fun=g=>g+H*(k1*g+2*k1*k2*g*g)/(1+k1*g+k1*k2*g*g)-G;let lo=0,hi=G;for(let i=0;i<105;i++){const mid=(lo+hi)/2;if(fun(mid)>0)hi=mid;else lo=mid;}const g=(lo+hi)/2,Z=1+k1*g+k1*k2*g*g,h=H/Z,hg=k1*h*g,hg2=k1*k2*h*g*g;assert.ok(Math.abs(h+hg+hg2-H)<1e-14&&Math.abs(g+hg+2*hg2-G)<1e-14);return[g,h,hg,hg2,h/H,hg/H,hg2/H,(hg+2*hg2)/H,(hg+2*hg2)/G,4*k2/k1,k1*k2];},
 "UC-ADV11-P132":()=>{const a=1.2,b=2.7,tr=b-1-a*a,det=a*a,w=Math.sqrt(det-tr*tr/4),t2=2.4-1-a*a;assert.ok(det>0&&tr>0);return[a,b/a,tr,det,tr/2,w,1+a*a,a,2*Math.PI/a,t2,Math.sqrt(det-t2*t2/4),b-1,a*a,-b,-a*a];}
 });
+Object.assign(witness,{
+"UC-ADV11-I136":()=>{const m=.24*.59/(.24+.59),e=13.605693122994*m/8.5**2,a=.0529177210903*8.5/m,edge=3.370-e,thermal=8.617333262145e-5*298.15;assert.ok(m<.24&&edge>0);return[m,e,a,edge,1239.841984/edge,thermal,e/thermal,(.25/(a*1e-7))**3];},
+"UC-ADV11-A136":()=>{const L=150,B=.012,C=.00006,a=.002,alpha=1.15,k=4,u0=Math.sqrt(B/C),h0=a+2*Math.sqrt(B*C),n0=L/h0,r=n=>Math.sqrt(n)/4*(alpha-1)/alpha*k/(1+k),umax=.5/(.0004*L),hh=a+B/umax+C*umax,nn=L/hh;assert.ok(umax<u0);return[u0,h0,n0,r(n0),umax,hh,nn,r(nn),L/umax,L*(1+k)/umax,L*(1+k/alpha)/umax];},
+"UC-ADV11-O133":()=>{const R=8.314462618,T1=298.15,T2=320,p=(8.4-3)/9,q=(7.95-3)/9,K=p/(1-p),L=q/(1-q),H=-R*Math.log(L/K)/(1/T2-1/T1),S=R*Math.log(K)+H/T1,V=Math.exp(S/R-H/(R*350));assert.ok(p>0&&p<1&&q>0&&q<1);return[p,1-p,K,q,1-q,L,-R*T1*Math.log(K),H,S,V,V/(1+V)];},
+"UC-ADV11-P133":()=>{const V=1000*8.314462618*310/96485.33212,N=2*5+.5*145+150,D=2*140+.5*10+150,sK=V*2*(5/N-140/D),sN=V*.5*(145/N-10/D),sC=V*(150/N-150/D);assert.ok(Math.abs(sK+sN+sC)<1e-12);return[N,D,N/D,V*Math.log(N/D),V*Math.log(5/140),V*Math.log(145/10),0,sK,sN,sC];}
+});
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();
