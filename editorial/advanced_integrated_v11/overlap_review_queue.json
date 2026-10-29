@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 61,
+  "current_draft_count": 63,
   "expert_approved": 0,
-  "preliminary_flags": 26,
+  "preliminary_flags": 28,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -160,6 +160,18 @@
       "new_id": "UC-ADV11-P137",
       "prior_id": "UC-ADV10-P113",
       "reason": "存在统计组合或反应扩散相近数学元素，核心新颖性不能凭关键词确认，须人工逐式比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-I142",
+      "prior_id": "UC-ADV11-I136",
+      "reason": "存在部分半导体或质谱分析物理背景重合，但新题反演方程不同；保留人工跨辑模型复核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-A141",
+      "prior_id": "UC-ADV11-A127",
+      "reason": "存在部分半导体或质谱分析物理背景重合，但新题反演方程不同；保留人工跨辑模型复核。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -529,6 +541,18 @@
       "model_family": "Fisher-KPP-autocatalytic-reaction-diffusion-wavefront-leading-edge-speed-selection",
       "judgement": "pending_human_comparison",
       "screening": "独立主要数值答案witness、化学与物理守恒及边界已校验；跨历史辑方程同构和原创性尚待专家审查。"
+    },
+    {
+      "new_id": "UC-ADV11-I142",
+      "model_family": "GaAs-donor-freezeout-neutrality-Fermi-Boltzmann-charge-transport-two-temperature",
+      "judgement": "pending_human_comparison",
+      "screening": "主要结果独立数值校验，电荷/单位/极限检查已写；跨辑模型同构和科学性仍须人类专家逐式审查。"
+    },
+    {
+      "new_id": "UC-ADV11-A141",
+      "model_family": "ESI-protein-charge-state-integer-deconvolution-isotope-spacing-oxidation-resolving-power",
+      "judgement": "pending_human_comparison",
+      "screening": "主要结果独立数值校验，电荷/单位/极限检查已写；跨辑模型同构和科学性仍须人类专家逐式审查。"
     }
   ]
 }

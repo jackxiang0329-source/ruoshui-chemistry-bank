@@ -1,13 +1,13 @@
 # 第十一辑 · 大学化学高阶综合题（进行中）
-本辑目标100题：无机、分析、有机、物化各25。当前**61/100**，无机16、分析15、有机15、物化15；完整题目及解析见 [8题中文解答](8_advanced_chemistry_solutions.md)。
+本辑目标100题：无机、分析、有机、物化各25。当前**63/100**，无机17、分析16、有机15、物化15；完整题目及解析见 [8题中文解答](8_advanced_chemistry_solutions.md)。
 | 学科 | 数量 | 题号 | 结构化源稿 |
 |---|---:|---|---|
-| 无机化学 | 16/25 | I126–I141 | [inorganic.jsonl](inorganic.jsonl) |
-| 分析化学 | 15/25 | A126–A140 | [analytical.jsonl](analytical.jsonl) |
+| 无机化学 | 17/25 | I126–I142 | [inorganic.jsonl](inorganic.jsonl) |
+| 分析化学 | 16/25 | A126–A141 | [analytical.jsonl](analytical.jsonl) |
 | 有机化学 | 15/25 | O123–O137 | [organic.jsonl](organic.jsonl) |
 | 物理化学 | 15/25 | P123–P137 | [physical.jsonl](physical.jsonl) |
 
-每题至少7个实质推导步骤，并由 [独立答案向量脚本](../../scripts/check-advanced-authored-v11.mjs) 全量复算；对跨辑核心模型进行人工复核的队列见 [overlap_review_queue.json](overlap_review_queue.json)。自动数值核对不等于科学专家审定或原创性认证。**所有61题均publishable=false，正式批准0。** 续编应按每科递增题号，先检查main SHA与已提交记录，不得重复或用参数变式凑数。
+每题至少7个实质推导步骤，并由 [独立答案向量脚本](../../scripts/check-advanced-authored-v11.mjs) 全量复算；对跨辑核心模型进行人工复核的队列见 [overlap_review_queue.json](overlap_review_queue.json)。自动数值核对不等于科学专家审定或原创性认证。**所有63题均publishable=false，正式批准0。** 续编应按每科递增题号，先检查main SHA与已提交记录，不得重复或用参数变式凑数。
 
 最新四题：[I128/A128/O125/P125中文解析](continuation_I128_A128_O125_P125.md)。
 
@@ -33,8 +33,10 @@
 
 续编两题：[O136/P136 中文完整解析](continuation_O136_P136.md)，下一题号I142/A140/O137/P137。
 
-新增无机题 [I141 Ising三角形挫折](continuation_I141.md)，下一号I142/A141/O138/P138。
+新增无机题 [I141 Ising三角形挫折](continuation_I141.md)，下一号I143/A142/O138/P138。
 
 新增分析题：[A140 FCS三重态修正与扩散浓度反演](continuation_A140.md)，下一号I142/A141/O137/P137。
 
 新增 [O137/P137 中文完整解析](continuation_O137_P137.md)，下一号I142/A141/O138/P138。
+
+本批新增：[I142/A141完整中文题干与解析](continuation_I142_A141.md)，下批题号I143/A142/O138/P138。
