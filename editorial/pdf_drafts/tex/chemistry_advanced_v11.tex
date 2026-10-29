@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第11辑 (40题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第11辑 (44题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -257,6 +257,29 @@ q\_min\_abs = 0.979795897 dimensionless；G\_min\_eV = -0.008 eV；G\_center\_eV
 对称电子局域态、恒耦合、单一经典溶剂坐标及绝热势面TST近似。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I136 · ZnO有效质量激子的束缚能与Mott屏蔽临界掺杂密度}
+\noindent\textbf{题目}\par
+一理想低掺杂ZnO半导体在近带边允许三维各向同性Wannier–Mott激子有效质量近似。电子有效质量m\_e*=0.2400m₀，空穴有效质量m\_h*=0.5900m₀，介电常数ε\_r=8.500。氢原子Rydberg能13.605693122994 eV、Bohr半径a₀=0.0529177210903 nm，晶体直接带隙E\_g=3.3700 eV。给定hc=1239.841984 eV·nm、kB=8.617333262145×10⁻⁵ eV/K，T=298.15 K。求相对约化有效质量、激子1s束缚能、激子Bohr半径、激子光学吸收阈值及其真空波长、热能和束缚能热比。以Mott近似判据n\_c\textasciicircum{}(1/3)a*=0.2500求载流子屏蔽临界浓度（cm⁻³），要求反向检查单位、能量正性、低掺杂适用条件和经验判据局限，不能把理想模型当作ZnO真实精确实测。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两体库仑问题约化有效质量μ*/m₀=(0.2400×0.5900)/(0.2400+0.5900)=0.1706024096。
+\item 在有效氢样模型中束缚能E\_B=13.605693122994×(μ*/m₀)/ε\_r²=0.03212683781 eV。
+\item 激子Bohr半径a*=a₀ε\_r/(μ*/m₀)=2.6365432365 nm，大于自由氢原子半径。
+\item 光学阈值E\_opt=E\_g−E\_B=3.3378731622 eV，满足0<E\_opt<E\_g。
+\item 把eV能量换算为波长，λ\_ph=1239.841984/E\_opt=371.44670386 nm。
+\item 室温热能kBT=0.02569257912 eV；E\_B/(kBT)=1.25043257，说明热解离可能不能忽略。
+\item 先将a*=2.6365432365×10⁻⁷ cm，再由Mott式得到n\_c=(0.25/a*)³=8.525411156×10¹⁷ cm⁻³。
+\item μ*小于两单粒子有效质量，E\_B低于氢原子Rydberg能，量纲检查正确且临界浓度为正。
+\item Mott估算为经验近似，靠近n\_c时自由载流子屏蔽使低密度Wannier激子模型自我失效。
+\item 真实ZnO声子、介电频散、非抛物能带及激子精细结构可改变数值，题设均已明确排除。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+reduced\_mass\_m0 = 0.17060241 m0；binding\_energy\_eV = 0.0321268378 eV；exciton\_radius\_nm = 2.63654324 nm；optical\_threshold\_eV = 3.33787316 eV；photon\_wavelength\_nm = 371.446704 nm；thermal\_energy\_eV = 0.0256925791 eV；binding\_to\_thermal = 1.25043257 ratio；Mott\_density\_cm3 = 8.52541116e+17 cm\textasciicircum{}-3\par
+\noindent\textbf{模型前提：}
+各向同性有效质量Wannier–Mott模型，固定εr及低密度近似，Mott判据作为经验阈值。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第11辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -478,6 +501,30 @@ Sr86\_counts = 625000 counts；corrected\_ratio\_R = 0.612745098 ratio；total\_
 K\_uA\_sqrt\_s = 80 uA sqrt(s)；baseline\_uA = 5 uA；drift\_uA\_s = 0.25 uA/s；D\_cm2\_s = 8.63907503e-06 cm2/s；i16\_pred\_uA = 29 uA；Q\_far\_uC = 480 uC；Q\_total\_uC = 586.875 uC；Ag\_mol = 4.97484944e-09 mol；Ag\_mass\_ug = 0.536628054 ug；diffusion\_length\_cm = 0.0117569214 cm；Q\_background\_uC = 106.875 uC\par
 \noindent\textbf{模型前提：}
 半无限平面扩散、100\% Ag法拉第效率、准确四点观测、背景线性漂移、无对流和表面钝化。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A136 · van Deemter色谱柱的压力受限全局流速优化与双峰分离度}
+\noindent\textbf{题目}\par
+一支等度HPLC柱长L=150.0 mm，流动相线速度u（mm/s）下板高H=a+B/u+Cu，其中a=0.002000 mm、B=0.01200 mm²/s、C=0.00006000 s；实验泵的压力损失为ΔP=cLu，c=0.0004000 MPa·s/mm²、最大允许压差0.5000 MPa。后洗脱的组分k₂=4.000，两峰选择性α=k₂/k₁=1.150。给定柱效N=L/H，经典分离度R\_s=(√N/4)[(α−1)/α][k₂/(1+k₂)]；死时间t₀=L/u，两峰保留时间t\_Ri=t₀(1+k\_i)。求未受压限的理论最佳流速、最低板高、理论板数与分离度；在实际压力限制下求真正的最佳流速、板高、板数、分离度、死时间及两峰保留时间。通过单调性、凸性与压降验证全局受限最优唯一，并解释为何理论板高最小点未必为可实施流速。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item H'(u)=−B/u²+C、H''(u)=2B/u³>0，故在u>0上只有一个无约束极小点u₀=√(B/C)。
+\item 代值u₀=14.142135624 mm/s，H\_min=a+2√(BC)=0.003697056275 mm。
+\item 由N₀=L/H\_min=40572.82033和分离度公式，R\_s0=5.254616355。
+\item 在u₀处压力损失cLu₀≈0.848528 MPa，超过允许0.5000 MPa，故不可实现。
+\item 约束给出u≤u\_max=0.5000/(0.0004×150)=8.333333333 mm/s。
+\item u\_max<u₀，使得整个可行流速区间H'<0；因N=L/H且R\_s∝√N，唯一真正最优为u=u\_max。
+\item 真实约束板高H=0.002+0.012/u\_max+0.00006u\_max=0.0039400 mm。
+\item 约束板数N=150/0.00394=38071.06599，分离度R\_s=5.090036926。
+\item 死时间t₀=150/u\_max=18.000 s，第二峰t\_R2=t₀(1+4)=90.000 s。
+\item 前峰k₁=k₂/α=3.47826087，t\_R1=18(1+3.47826087)=80.608695652 s。
+\item 检查ΔP=0.5000 MPa、u>0、H>0；非线性吸附、额外柱展宽与梯度条件会使简化HPLC式偏离实验。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+unconstrained\_u = 14.1421356 mm/s；H\_min = 0.00369705627 mm；unconstrained\_N = 40572.8203 plates；unconstrained\_Rs = 5.25461636 ratio；max\_feasible\_u = 8.33333333 mm/s；constrained\_H = 0.00394 mm；constrained\_N = 38071.066 plates；constrained\_Rs = 5.09003693 ratio；dead\_time\_s = 18 s；retention2\_s = 90 s；retention1\_s = 80.6086957 s\par
+\noindent\textbf{模型前提：}
+等度van Deemter模型、压降线性、选择性及保留因子恒定、经典分离度近似。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -706,6 +753,30 @@ free\_G = 0.000609388293 mol/L；free\_H = 0.000425152629 mol/L；HG = 0.0002590
 仅有H/HG/HG2、无其他物种、理想稀溶液质量作用定律与准确平衡常数。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O133 · 六元环双椅式构象NMR快交换的van’t Hoff焓熵反演}
+\noindent\textbf{题目}\par
+某有机六元环取代物存在可快速互换的两个椅式构象I与II，其目标邻位氢–氢三键耦合常数分别为J\_I=12.000 Hz及J\_II=3.000 Hz。NMR处于快交换极限。测得T₁=298.15 K时平均J̄₁=8.4000 Hz，T₂=320.00 K时J̄₂=7.9500 Hz。假设没有第三种构象、纯构象耦合常数不随温度改变，并假定此温区内两构象ΔH=H\_I−H\_II与ΔS=S\_I−S\_II常数；R=8.314462618 J/(mol·K)。由加权耦合反演两个温度下的构象I和II的比例、K=p\_I/p\_II，进而求298.15 K的ΔG及用两温度van’t Hoff关系求ΔH和ΔS；预测350.0 K的构象I比例及其平衡常数。要求逆向重构观测NMR数据、验证所有分数与解的唯一性，并阐明多构象或慢交换为何无法按此式反演。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 快交换的平均耦合满足J̄=p\_I J\_I+(1−p\_I)J\_II，整理为p\_I=(J̄−3)/(12−3)。
+\item 在298.15 K有p\_I=0.6000、p\_II=0.4000，K₁=p\_I/p\_II=1.5000。
+\item 在320.00 K有p\_I=0.5500、p\_II=0.4500，K₂=0.55/0.45=1.22222222。
+\item 因J\_I−J\_II=9 Hz不为零，双态线性反演唯一；0<p\_I<1满足物理概率范围。
+\item 298.15 K的相对自由能ΔG₁=−RT₁lnK₁=−1005.130580 J/mol，说明I在低温更有利。
+\item van’t Hoff积分式lnK=−ΔH/(RT)+ΔS/R，两温度相减得到ΔH=−Rln(K₂/K₁)/(1/T₂−1/T₁)。
+\item 代值ΔH=−7435.079892 J/mol，I相对于II具有焓优势。
+\item 由ΔS=RlnK₁+ΔH/T₁，得ΔS=−21.56615567 J/(mol·K)，I在熵上相对不利。
+\item 350 K时K=exp[ΔS/R−ΔH/(R×350)]=0.961888806，I构象比例p\_I=K/(1+K)=0.490287117。
+\item 将p\_I=0.60和0.55分别代回J̄=3+9p\_I，恢复8.400和7.950 Hz。
+\item 当有额外构象、NMR慢交换、J随温度或二面角显著改变时，单个平均J不能唯一确定热力学分布。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+pI\_298 = 0.6 fraction；pII\_298 = 0.4 fraction；K\_298 = 1.5 ratio；pI\_320 = 0.55 fraction；pII\_320 = 0.45 fraction；K\_320 = 1.22222222 ratio；deltaG\_298 = -1005.13058 J/mol；deltaH = -7435.07989 J/mol；deltaS = -21.5661557 J/mol/K；K\_350 = 0.961888806 ratio；pI\_350 = 0.490287117 fraction\par
+\noindent\textbf{模型前提：}
+双态快速构象交换、两个纯构象J值恒定、温区内ΔH/ΔS不变。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第11辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -930,6 +1001,31 @@ azeotrope\_x1 = 0.73104906 fraction；gamma1\_azeo = 1.11460704 ratio；gamma2\_
 steady\_x = 1.2 dimensionless；steady\_y = 2.25 dimensionless；trace = 0.26 1/tau；determinant = 1.44 1/tau2；eigen\_real = 0.13 1/tau；eigen\_imag\_positive = 1.19293755 1/tau；Hopf\_B = 2.44 dimensionless；Hopf\_frequency = 1.2 rad/tau；Hopf\_period = 5.23598776 tau；trace\_at\_B24 = -0.04 1/tau；imag\_at\_B24 = 1.19983332 rad/tau；J11 = 1.7 1/tau；J12 = 1.44 1/tau；J21 = -2.7 1/tau；J22 = -1.44 1/tau\par
 \noindent\textbf{模型前提：}
 开放恒定进料无量纲动力学、反应速率式严格有效、正象限连续解；Hopf判定仅局部线性谱性质。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P133 · K⁺/Na⁺/Cl⁻离子选择性膜的Goldman电位与渗透性灵敏度}
+\noindent\textbf{题目}\par
+某仅允许K⁺、Na⁺及Cl⁻通过的理想选择性薄膜，膜内离子浓度分别为[K⁺]\_in=140、[Na⁺]\_in=10、[Cl⁻]\_in=150 mmol/L；膜外分别为5、145、150 mmol/L。三离子的恒定场渗透率比例P\_K:P\_Na:P\_Cl=2.000:0.5000:1.000。温度T=310.0 K，R=8.314462618 J/(mol·K)，F=96485.33212 C/mol。给定零总电流Goldman公式V\_in−V\_out=(RT/F)ln[(P\_K K\_out+P\_Na Na\_out+P\_Cl Cl\_in)/(P\_K K\_in+P\_Na Na\_in+P\_Cl Cl\_out)]。求加权分子与分母浓度、比值、膜电位mV、各离子的Nernst平衡电位，并解析求电位对三种渗透率对数变化的灵敏度dV/dlnP\_i，验证两侧电中性及灵敏度之和为零的整体缩放不变性，解释零净电流不等于所有离子通量均为零的原因和恒定场模型边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 膜内正离子140+10=150 mmol/L、膜外5+145=150 mmol/L，分别与Cl⁻等量，核对体相电中性。
+\item Goldman分子加权项N=2×5+0.5×145+1×150=232.500。
+\item 分母D=2×140+0.5×10+1×150=435.000，N/D=0.5344827586>0。
+\item 以热电压RT/F代入V=RT/F ln(N/D)，得到V\_in−V\_out=−16.73497321 mV。
+\item K⁺单离子Nernst电位E\_K=(RT/F)ln(5/140)=−89.01562196 mV。
+\item Na⁺单离子Nernst电位E\_Na=(RT/F)ln(145/10)=+71.43649333 mV；Cl⁻阴离子电位E\_Cl=−(RT/F)ln(150/150)=0。
+\item 对Goldman公式求导，dV/dlnP\_i=(RT/F)P\_i(N\_i/N−D\_i/D)，注意Cl⁻在分子分母使用相反侧浓度。
+\item K⁺灵敏度=(RT/F)2(5/232.5−140/435)=−16.04606883 mV。
+\item Na⁺灵敏度=(RT/F)0.5(145/232.5−10/435)=+8.02303442 mV。
+\item Cl⁻灵敏度=(RT/F)(150/232.5−150/435)=+8.02303442 mV。
+\item 三项和为0，说明所有P\_i同时乘相同倍数时膜电位不变；单个离子可有非零通量，但总电流可以为零。
+\item 若有主动泵、空间变化电场、复杂电荷调节、浓溶液活度或膜边界层，恒定场Goldman式必须修正。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+weighted\_numerator = 232.5 relative\_concentration；weighted\_denominator = 435 relative\_concentration；numerator\_denominator\_ratio = 0.534482759 ratio；membrane\_mV = -16.7349732 mV；E\_K\_mV = -89.015622 mV；E\_Na\_mV = 71.4364933 mV；E\_Cl\_mV = 0 mV；sensitivity\_K\_mV = -16.0460688 mV；sensitivity\_Na\_mV = 8.02303442 mV；sensitivity\_Cl\_mV = 8.02303442 mV\par
+\noindent\textbf{模型前提：}
+三种一价离子、恒定场零净电流、无泵与非理想活度，两侧体相电中性。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
