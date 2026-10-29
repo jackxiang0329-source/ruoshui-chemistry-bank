@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第11辑 (12题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第11辑 (18题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -102,6 +102,69 @@ Delta1 = 22304.3332 cm\textasciicircum{}-1；Delta2 = 24519.9409 cm\textasciicir
 给定轴向d9自旋轨道微扰模型，忽略共价性与低对称修正；与历史EPR模型需人工逐式比对。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I129 · 末端铁羰基的13CO振动同位素位移、力常数与零点能}
+\noindent\textbf{题目}\par
+某假想铁羰基配合物的一条局域12C16O伸缩峰在2050.0 cm⁻¹；仅将末端12CO配体替换为13CO，假定C–O键力常数、几何和其它CO配体耦合均不变。取质量12C=12.000000 u、13C=13.003355 u、16O=15.994915 u，1u=1.66053906660×10⁻²⁷ kg。简谐模型为ν̃=(2πc)⁻¹√(k/μ)，μ=mCmO/(mC+mO)，c=2.99792458×10⁸ m/s，普朗克常数h=6.62607015×10⁻³⁴ J·s，阿伏伽德罗常数N\_A=6.02214076×10²³。计算约化质量、13CO峰位、红移、相对红移、力常数和每mol振动模零点能差，检验质量与频率的反比关系以及为什么不能据此推断实验键解离焓。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 约化质量μ12=6.8562087079 u，必须先使用同位素原子质量而不是整数分子量。
+\item 13CO约化质量μ13=7.1724126281 u，大于12CO值。
+\item 由于相同键力常数，波数比ν13/ν12=√(μ12/μ13)，ν13=2004.3023814 cm⁻¹。
+\item 红移Δν=45.697618629 cm⁻¹，相对红移0.022291521283，正号符合重同位素振动减慢。
+\item 使用m⁻¹和kg计算力常数k=(2πcν̃)\textasciicircum{}2μ=1697.6258962 N/m。
+\item 零点能每摩尔差为(1/2)N\_AhcΔν̃=0.27333245873 kJ/mol，注意波数从cm⁻¹转换到m⁻¹。
+\item 分别从两个同位素峰与各自约化质量反算k应该相同，这验证了固定力常数假设；真实CO模式耦合、非谐性及化学环境改变均会破坏该关系。
+\item 零点能变化不是键能变化的全部，键断裂时的零点能、电子能、热容和熵项需要另行核算。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+mu12 = 6.85620871 u；mu13 = 7.17241263 u；nu13 = 2004.30238 cm\textasciicircum{}-1；redshift = 45.6976186 cm\textasciicircum{}-1；relative\_shift = 0.0222915213 fraction；force = 1697.6259 N/m；ZPE\_difference = 0.273332459 kJ/mol\par
+\noindent\textbf{模型前提：}
+单局域CO简谐伸缩、同位素替代不变力常数；强模耦合与非谐待审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I130 · closo与nido硼烷的骨架电子对、桥氢及Wade拓扑}
+\noindent\textbf{题目}\par
+比较经典多面体硼烷closo-[B₆H₆]²⁻与nido-B₅H₉。计数约定：B有3价电子，H有1价电子，每个负电荷增加一个电子，端位两中心B–H键先扣除2电子，桥氢贡献保留在多中心骨架。假定前者6个氢全部端位；后者5个端位B–H及4个桥氢，不存在外部取代基。Wade规则：n顶点closo骨架需n+1对电子，n顶点nido需n+2对。求两团簇总价电子数、端位扣除电子数、骨架电子数和电子对数、对应closo母多面体顶点数；核查骨架等电子与整体总价电子不同之处。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item closo-[B₆H₆]²⁻共有6×3+6×1+2=26个总价电子。
+\item 六个端位B–H键各占2电子，扣除12电子，剩下14个骨架电子。
+\item 14个骨架电子即7对；六顶点closo按Wade要求n+1=7对，符合。
+\item 中性nido-B₅H₉总价电子=5×3+9=24，不能在这里额外加电荷电子。
+\item nido团簇仅扣五个端位B–H键的10电子，四个桥氢保留骨架账目，得14电子。
+\item 五顶点nido骨架有7对电子，Wade规则n+2=7对，母closo多面体应有6个顶点。
+\item 两团簇骨架都是14电子，但全分子总电子分别26和24，差异来自端位键账户及离子电荷。
+\item 实际缺电子簇存在多中心电子离域，桥氢不能机械描述成两个独立的双电子B–H键，异核金属簇还需扩展计数。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+closo\_total = 26 electron；closo\_exo = 12 electron；closo\_skeletal = 14 electron；closo\_pairs = 7 pair；nido\_total = 24 electron；nido\_exo = 10 electron；nido\_skeletal = 14 electron；nido\_pairs = 7 pair；closo\_parent\_vertices = 6 vertex\par
+\noindent\textbf{模型前提：}
+经典Wade计数、端位和桥氢类型已明确，真实簇轨道可能有更多中心成键。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I131 · LiCoO₂可逆脱锂的氧化态、容量及能量密度守恒}
+\noindent\textbf{题目}\par
+理想层状LiCoO₂正极在平均电压3.850 V下可逆脱出0.650 mol Li/mol初始正极，假设O²⁻不发生氧化还原、Co只由+3升到平均+3.65，且无不可逆副反应。反应LiCoO₂→Li₀.₃₅CoO₂+0.65Li⁺+0.65e⁻。Li、Co、O摩尔质量依次6.940、58.933、15.999 g/mol，F=96485.33212 C/mol。以最初1.000 mol活性材料为基准，求初始/终态式量、两端Co平均价态、外电路总电量、每克初始材料mAh容量、按恒平均电压的Wh/kg能量密度、剩余和脱出Li的物质的量及质量，并检查氧/锂/电子守恒及为何这不代表实际整电池的能量密度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 初始Li⁺和两个O²⁻的电荷总和是−3，因此初始Co为+3。
+\item 脱锂x=0.65并释放x电子，Co平均价态变为+3.65，终态仍保持O为−2。
+\item 初始式量M0=97.871000000 g/mol，终态M\_f=93.360000000 g/mol，差值是脱出的0.65mol Li的质量。
+\item 每mol初始正极外电量Q=xF=62715.465878 C；不可把0.65电子错误计为1电子。
+\item 1mAh=3.6C，初始活性材料容量C=Q/(3.6M0)=177.99923107 mAh/g。
+\item 平均电压3.85V下，比能量E=3.85C=685.29703961 Wh/kg，须清楚这是按正极活性材料质量归一。
+\item 剩余Li=0.350mol，脱出的Li质量=4.5110000000 g，终态Co电中性校验0.35+3.65−4=0。
+\item 实际电芯计入负极、集流体、电解液及容量衰减，同时氧析出与相变可限制可逆脱锂，不能照搬此模型的理论能量。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+initial\_mass = 97.871 g/mol；final\_mass = 93.36 g/mol；Co\_final\_oxidation = 3.65 oxidation；charge = 62715.4659 C/mol；capacity = 177.999231 mAh/g；specific\_energy = 685.29704 Wh/kg；remaining\_Li = 0.35 mol；Li\_lost\_mass = 4.511 g；charge\_per\_Co = 0.65 electron/Co\par
+\noindent\textbf{模型前提：}
+仅Co阳离子补偿，氧格点稳定，电压固定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第11辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -168,6 +231,69 @@ fine\_mass\_gap = 0.006319942 u；FWHM\_1plus = 0.00416666667 u；gap\_over\_FWH
 donor\_decay\_rate = 0.25 ns\textasciicircum{}-1；FRET\_rate = 0.375 ns\textasciicircum{}-1；FRET\_efficiency = 0.6 fraction；distance = 4.67327633 nm；quantum\_yield\_one = 0.32 fraction；lifetime\_two = 1 ns；FRET\_eff\_two = 0.75 fraction；quantum\_yield\_two = 0.2 fraction\par
 \noindent\textbf{模型前提：}
 固定取向和距离、独立转移通道、辐射速率不变；真实寿命分布与光谱串色待实验审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A129 · 荧光Perrin各向异性的旋转扩散与水动力半径}
+\noindent\textbf{题目}\par
+某假想球状荧光标记蛋白在298.15 K下单指数激发寿命τ=4.000 ns，基本荧光各向异性r0=0.4000。水溶液动力黏度η=0.8900 mPa·s时测得稳态各向异性r=0.1500；假设无能量转移、无局部染料摆动、球体严格刚性。Perrin方程r=r0/(1+τ/θ)，旋转Stokes–Einstein关系D\_rot=kBT/(8πηa³)、θ=1/(6D\_rot)，kB=1.380649×10⁻²³ J/K。求旋转相关时间、扩散率、球体水动力半径、若溶剂黏度加倍时的新相关时间和新各向异性、与偏振度P=3r/(2+r)的转换以及θ/τ，核验角度与正性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Perrin方程给τ/θ=r0/r−1=1.6666666667，因r<r0得正相关时间。
+\item 反解θ=2.4000000000 ns，必须将τ转换成秒再计算扩散率。
+\item D\_rot=1/(6θ)=69444444.444 s⁻¹，是旋转扩散而非平移扩散系数。
+\item 联立θ=4πηa³/(3kBT)，得a=1.3838326530 nm，黏度需用Pa·s。
+\item 若黏度加倍但蛋白几何不变，θ2=2θ=4.8000000000 ns。
+\item 据此预测r2=r0/(1+τ/θ2)=0.21818181818，其值大于初始r且小于r0。
+\item 荧光偏振度P=3r/(2+r)=0.20930232558，它与各向异性不是同一个量。
+\item 检查0<r<r2<r0，相关时间与激发寿命比值为0.60000000000；实际多态寿命与染料局部转动会破坏从各向异性单独确定蛋白半径的唯一性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+theta = 2.4 ns；Drot = 69444444.4 s\textasciicircum{}-1；radius = 1.38383265 nm；theta\_double\_viscosity = 4.8 ns；r\_double\_viscosity = 0.218181818 fraction；polarization = 0.209302326 fraction；theta\_tau = 0.6 ratio；r\_original = 0.15 fraction\par
+\noindent\textbf{模型前提：}
+单寿命刚性球体、分子半径与黏度不耦合；真实蛋白表面染料需单独校准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A130 · 顶空SPME三相分配的质量反演与纤维萃取率}
+\noindent\textbf{题目}\par
+在密封萃取瓶内，某目标有机微量物质初始总量为10.00 nmol，水样10.00 mL、顶空气相20.00 mL、固相微萃取SPME涂层体积0.01000 mL。假设三相均达到线性分配平衡，没有化学反应、瓶壁吸附、涂层饱和或挥发损失；水相/气相浓度比K\_LG=100.0、涂层/气相浓度比K\_FG=1000.0，各相c均以mol/L表示。求气、水、涂层三相最终浓度及物质的量、涂层总萃取率、插入纤维前的气相浓度、纤维存在导致气相浓度下降的比例、涂层相对水相富集系数，并用各相质量守恒解释为何纤维捕获量不能直接当成初始样品总量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 分配式c\_L=100c\_G、c\_F=1000c\_G，只有一个独立气相浓度。
+\item 总量守恒n0=c\_G(V\_G+100V\_L+1000V\_F)，注意0.01000 mL涂层仅为10⁻⁵ L。
+\item 三相等效体积是1.0300000000 L，求得气相c\_G=9.7087378641e-9 mol/L。
+\item 水相c\_L=9.7087378641e-7 mol/L，涂层c\_F=0.0000097087378641 mol/L。
+\item 三相量依次n\_G=0.19417475728 nmol、n\_L=9.7087378641 nmol、n\_F=0.097087378641 nmol，相加10.00 nmol。
+\item 萃取率n\_F/n0=0.0097087378641，不能视作100\%。
+\item 无纤维时气相浓度c\_G0=9.8039215686e-9 mol/L，纤维引入导致下降比例0.0097087378641。
+\item 纤维对水相浓度富集系数c\_F/c\_L=1000/100=10；真实SPME还需校核不饱和、平衡时间与固相提取效率。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+effective\_volume = 1.03 L；cG = 9.70873786e-09 mol/L；cL = 9.70873786e-07 mol/L；cF = 9.70873786e-06 mol/L；nG\_nm = 0.194174757 nmol；nL\_nm = 9.70873786 nmol；nF\_nm = 0.0970873786 nmol；recovery = 0.00970873786 fraction；cG\_without\_fiber = 9.80392157e-09 mol/L；drop = 0.00970873786 fraction；enrichment = 10 ratio\par
+\noindent\textbf{模型前提：}
+线性三相理想平衡、固相无饱和及吸附损失；已知分配系数。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A131 · LIBS双发射线Boltzmann激发温度与Stark电子密度反演}
+\noindent\textbf{题目}\par
+某激光诱导击穿等离子体(LIBS)中的同一中性元素的三条发射线经统计权重、跃迁几率和波长校正后，归一化强度J\_i=I\_i λ\_i/(g\_i A\_i)满足Boltzmann律J\_i=C exp(−E\_i/(kBT))。三个上能级E1=3.000 eV、E2=4.500 eV、E3=5.200 eV，已校正线强比J2/J1=0.1905599752837083。另外一条线的Stark全宽去除仪器和多普勒贡献后为0.01800 nm，标定参比n\_e=1.000×10¹⁷ cm⁻³时宽度0.01200 nm，假定线宽与电子密度线性。给定kB=8.617333262145×10⁻⁵ eV/K。求激发温度、第三线比J3/J1、电子密度的cm⁻³和m⁻³表示、温度对强度比的对数灵敏度，以及线强比1\%相对测量误差带来的温度相对误差，并检验LTE、非饱和与谱线光学薄假设。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对同一电离态两条线的校正强度取比，可消去共同的浓度与配分函数因子。
+\item 对数比ln(J2/J1)=−(E2−E1)/(kBT)，能级差为1.500 eV。
+\item 代入强度比反解T=10500.000000 K，正温度要求J2/J1<1。
+\item 预测第三线J3/J1=exp[−(5.2−3.0)/(kBT)]=0.087911658930，可作独立光谱验证。
+\item 已扣除其它线宽后n\_e=(0.01800/0.01200)×10\textasciicircum{}17=1.5000000000e+17 cm⁻³。
+\item 换算为SI，电子密度n\_e=1.5000000000e+23 m⁻³，不能将cm⁻³与m⁻³误差六个数量级。
+\item 强度比对温度的对数导数(E2−E1)/(kBT²)=0.00015788460029 K⁻¹。
+\item 观测强度比若有1\%相对误差，一阶传播得到温度相对误差0.0060321332835；光学厚、自吸收或非局域热平衡会造成系统性偏差。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+temperature = 10500 K；J2\_J1 = 0.190559975 ratio；J3\_J1 = 0.0879116589 ratio；ne\_cm3 = 1.5e+17 cm\textasciicircum{}-3；ne\_m3 = 1.5e+23 m\textasciicircum{}-3；dlnratio\_dT = 0.0001578846 K\textasciicircum{}-1；relT\_sigma = 0.00603213328 fraction；Stark\_width = 0.018 nm\par
+\noindent\textbf{模型前提：}
+局域热平衡、已知跃迁参数和非Stark宽度已准确扣除；需更完整谱学复核。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
