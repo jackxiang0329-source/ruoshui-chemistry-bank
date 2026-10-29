@@ -78,6 +78,11 @@ Object.assign(witnesses,{
 "UC-ADV12-I161":()=>{const R=8.314462618,T=1000,H=-15000,S=-10,co0=.02,co20=.005,feo0=.012,G=H-T*S,K=Math.exp(-G/(R*T)),x=(K*co0-co20)/(1+K),co=co0-x,co2=co20+x,feo=feo0-x,Go=150000,pO2=Math.exp(-2*Go/(R*T)),Kco=Math.exp(-(G-Go)/(R*T)),o0=feo0+co0+2*co20,o=feo+co+2*co2;assert.ok(x>0&&x<feo0&&Math.abs(co2/co-K)<1e-12&&Math.abs(o-o0)<1e-12);return[G/1000,K,x,co,co2,feo,x,x/feo0,co2/co,co+co2,o0,o,pO2,Kco,Kco*Math.sqrt(pO2),H*x,(co20+feo0)/(co0-feo0),2*x];},
 "UC-ADV12-A161":()=>{const u=[.01,.02,.05],h=[.0055,.004,.0043],d1=h[0]-h[1],d2=h[1]-h[2],a11=1/u[0]-1/u[1],a12=u[0]-u[1],a21=1/u[1]-1/u[2],a22=u[1]-u[2],det=a11*a22-a12*a21,B=(d1*a22-d2*a12)/det,C=(a11*d2-a21*d1)/det,A=h[0]-B/u[0]-C*u[0],f=x=>A+B/x+C*x,opt=Math.sqrt(B/C),H=f(opt),L=20,N=L/H,t0=L/opt,ret=t0*4,rs=Math.sqrt(N)/4*(.1/1.1)*(.75),sd=ret/Math.sqrt(N);assert.ok(A>0&&B>0&&C>0&&Math.abs(f(u[2])-h[2])<1e-12);return[...h,A,B,C,opt,H,N,t0,ret,rs,sd,B/opt,C*opt,f(opt),2*Math.sqrt(B*C),f(2*opt)/H];}
 });
+
+Object.assign(witnesses,{
+"UC-ADV12-O157":()=>{const s=2.8,w=1.6,a=s+w,b=s-w,hc=1239.841984,F=96485.33212,lev=[-a,-b,b,a],sq=[-a,0,0,a],E=2*(lev[0]+lev[1]),E0=2*sq[0],gain=E0-E,gap=2*b;assert.ok(gain>0&&gap>0&&Math.abs(lev.reduce((u,v)=>u+v,0))<1e-12);return[a,b,...lev,...sq,E,E0,gain,gap,0,hc/gap,gain*F/1000,lev.reduce((u,v)=>u+v,0),4];},
+"UC-ADV12-P157":()=>{const q1=.001,q2=.004,t0=4e-9,T=298.15,R=8.314462618,KD=20,KS=150,l=q=>1+KD*q,i=q=>l(q)*(1+KS*q),l1=l(q1),l2=l(q2),i1=i(q1),i2=i(q2),d=(l2-l1)/(q2-q1),s1=(i1/l1-1)/q1,s2=(i2/l2-1)/q2,rate=d/t0,bound=s2*q2/(1+s2*q2),G=-R*T*Math.log(s2);assert.ok(Math.abs(s1-s2)<1e-10&&Math.abs((1-bound)/l2-1/i2)<1e-12);return[l1,l2,i1,i2,d,s1,s2,rate,t0/l2*1e9,bound,1-bound,1/l2,1/i2,G/1000,i2/l2,rate*q2,i1/(l1*(1+s1*q1)),(1-bound)/l2];}
+});
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();

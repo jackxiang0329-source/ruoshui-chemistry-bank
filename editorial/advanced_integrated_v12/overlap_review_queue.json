@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 40,
+  "current_draft_count": 42,
   "expert_approved": 0,
-  "preliminary_flags": 40,
+  "preliminary_flags": 42,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -244,6 +244,18 @@
       "new_id": "UC-ADV12-A161",
       "prior_id": "UC-ADV11-A147",
       "reason": "化学平衡或色谱仪器可能与既往题存在部分重合，待人工逐式核验原创新颖性和科学模型。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O157",
+      "prior_id": "UC-ADV11-O138",
+      "reason": "与旧辑有机环反应或光学分析主题相近，但Hückel能谱和联合猝灭反演的模型同构需专家审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P157",
+      "prior_id": "UC-ADV11-P143",
+      "reason": "与旧辑有机环反应或光学分析主题相近，但Hückel能谱和联合猝灭反演的模型同构需专家审查。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -487,6 +499,18 @@
       "model_family": "Van-Deemter-three-flow-parameter-identification-optimal-plate-height-chromatographic-resolution",
       "judgement": "pending_human_comparison",
       "screening": "已建立独立数值向量、元素/化学平衡与色谱优化检查；专家批准仍为零。"
+    },
+    {
+      "new_id": "UC-ADV12-O157",
+      "model_family": "four-pi-cyclobutadiene-Huckel-alternating-resonance-Peierls-frontier-gap",
+      "judgement": "pending_human_comparison",
+      "screening": "已登记独立机器答案向量，原创性及科学正确性仍须人类逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV12-P157",
+      "model_family": "Stern-Volmer-fluorescence-static-dynamic-quenching-lifetime-intensity-deconvolution",
+      "judgement": "pending_human_comparison",
+      "screening": "已登记独立机器答案向量，原创性及科学正确性仍须人类逐式复核。"
     }
   ]
 }
