@@ -70,8 +70,8 @@ Object.assign(witnesses,{
 });
 
 Object.assign(witnesses,{
-"UC-ADV12-O156":undefined,
-"UC-ADV12-P156":undefined
+"UC-ADV12-O156":()=>{const p=.8,a=.002,b=.003,MA=300,MB=200,pc=1/Math.sqrt(2),u=(1-p*p)/(p*p),v=1-p+p*u*u,ga=1-u**3,gb=1-v*v,ma=a*MA,mb=b*MB,gel=ma*ga+mb*gb,sol=ma+mb-gel,l=3*a*p;assert.ok(ga>0&&gb>0&&Math.abs(u-(1-p+p*v))<1e-14&&Math.abs(v-(1-p+p*u*u))<1e-14);return[pc,p/pc,u,v,ga,gb,ma,mb,gel,sol,gel/(ma+mb),l,3*a*(1-p),2*b*(1-p),a*ga,b*gb,0,0];},
+"UC-ADV12-P156":()=>{const NA=6.02214076e23,a=5e-10,D=8e-10+6e-10,kappa=.2,c0=1e-6,t=.01,Da=kappa*a/D,kdiff=4*Math.PI*a*D*NA*1000,keff=kdiff/(1+D/(kappa*a)),factor=keff/kdiff,c=c0/(1+keff*c0*t),p=c0-c,half=1/(keff*c0),radius=a*factor,rate=keff*c*c,initial=keff*c0*c0;assert.ok(keff<kdiff&&Math.abs(c+p-c0)<1e-15&&half>a*a/D);return[D,Da,kdiff,keff,factor,radius*1e9,half,c,p,rate,initial,a*a/D,D/(kappa*a),c+p,1/c-1/c0,keff*t,keff*c0*t];}
 });
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
