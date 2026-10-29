@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "series": 15,
+  "status": "expert_review_pending",
+  "current_draft_count": 9,
+  "expert_approved": 0,
+  "preliminary_flags": 9,
+  "pairs": [
+    {
+      "new_id": "UC-ADV15-I226",
+      "prior_id": null,
+      "reason": "跨辑模型族与数值推导仍待人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I227",
+      "prior_id": null,
+      "reason": "跨辑模型族与数值推导仍待人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I228",
+      "prior_id": null,
+      "reason": "跨辑模型族与数值推导仍待人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I229",
+      "prior_id": null,
+      "reason": "跨辑模型族与数值推导仍待人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I230",
+      "prior_id": null,
+      "reason": "跨辑模型族与数值推导仍待人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I231",
+      "prior_id": null,
+      "reason": "跨辑模型族与数值推导仍待人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I232",
+      "prior_id": null,
+      "reason": "跨辑模型族与数值推导仍待人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I233",
+      "prior_id": null,
+      "reason": "跨辑模型族与数值推导仍待人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I234",
+      "prior_id": null,
+      "reason": "跨辑模型族与数值推导仍待人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    }
+  ],
+  "new_items_requiring_cross_series_comparison": [
+    {
+      "new_id": "UC-ADV15-I226",
+      "model_family": "LiF-Born-Haber-lattice-enthalpy",
+      "judgement": "pending_human_comparison",
+      "screening": "同源数值程序自校验，独立实现与专家审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I227",
+      "model_family": "FeII-spin-crossover-Boltzmann-enthalpy-entropy",
+      "judgement": "pending_human_comparison",
+      "screening": "同源数值程序自校验，独立实现与专家审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I228",
+      "model_family": "CuI-disproportionation-thermodynamic-equilibrium",
+      "judgement": "pending_human_comparison",
+      "screening": "同源数值程序自校验，独立实现与专家审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I229",
+      "model_family": "Born-ion-solvation-charge-radius-dielectric",
+      "judgement": "pending_human_comparison",
+      "screening": "同源数值程序自校验，独立实现与专家审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I230",
+      "model_family": "Ba-Sr-sulfate-selective-precipitation",
+      "judgement": "pending_human_comparison",
+      "screening": "同源数值程序自校验，独立实现与专家审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I231",
+      "model_family": "ABO3-oxygen-defect-electron-polaron-count",
+      "judgement": "pending_human_comparison",
+      "screening": "同源数值程序自校验，独立实现与专家审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I232",
+      "model_family": "coordination-substitution-Eyring-activation-parameters",
+      "judgement": "pending_human_comparison",
+      "screening": "同源数值程序自校验，独立实现与专家审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I233",
+      "model_family": "trivalent-metal-two-ligand-competitive-formation",
+      "judgement": "pending_human_comparison",
+      "screening": "同源数值程序自校验，独立实现与专家审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I234",
+      "model_family": "vanadium-III-II-electrode-Nernst-composition-potential",
+      "judgement": "pending_human_comparison",
+      "screening": "同源数值程序自校验，独立实现与专家审核未完成。"
+    }
+  ]
+}

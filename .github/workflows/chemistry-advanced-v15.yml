@@ -1,0 +1,20 @@
+name: Chemistry fifteenth-series numerical QA
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'editorial/advanced_integrated_v15/**'
+      - 'scripts/check-advanced-authored-v15.mjs'
+      - '.github/workflows/chemistry-advanced-v15.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/check-advanced-authored-v15.mjs
