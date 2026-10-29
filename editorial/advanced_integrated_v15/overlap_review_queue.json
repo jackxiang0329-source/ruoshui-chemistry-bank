@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 15,
   "status": "expert_review_pending",
-  "current_draft_count": 9,
+  "current_draft_count": 18,
   "expert_approved": 0,
-  "preliminary_flags": 9,
+  "preliminary_flags": 18,
   "pairs": [
     {
       "new_id": "UC-ADV15-I226",
@@ -58,6 +58,60 @@
       "new_id": "UC-ADV15-I234",
       "prior_id": null,
       "reason": "跨辑模型族与数值推导仍待人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A226",
+      "prior_id": null,
+      "reason": "跨辑数学模型和原题问题待人工复审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A227",
+      "prior_id": null,
+      "reason": "跨辑数学模型和原题问题待人工复审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A228",
+      "prior_id": null,
+      "reason": "跨辑数学模型和原题问题待人工复审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A229",
+      "prior_id": null,
+      "reason": "跨辑数学模型和原题问题待人工复审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A230",
+      "prior_id": null,
+      "reason": "跨辑数学模型和原题问题待人工复审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A231",
+      "prior_id": null,
+      "reason": "跨辑数学模型和原题问题待人工复审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A232",
+      "prior_id": null,
+      "reason": "跨辑数学模型和原题问题待人工复审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A233",
+      "prior_id": null,
+      "reason": "跨辑数学模型和原题问题待人工复审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A234",
+      "prior_id": null,
+      "reason": "跨辑数学模型和原题问题待人工复审。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -115,6 +169,60 @@
       "model_family": "vanadium-III-II-electrode-Nernst-composition-potential",
       "judgement": "pending_human_comparison",
       "screening": "同源数值程序自校验，独立实现与专家审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-A226",
+      "model_family": "isotope-dilution-heavy-fraction-two-endmember-mixing",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量机器一致性检查，独立实现待补。"
+    },
+    {
+      "new_id": "UC-ADV15-A227",
+      "model_family": "capillary-electrophoresis-electroosmotic-mobility-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量机器一致性检查，独立实现待补。"
+    },
+    {
+      "new_id": "UC-ADV15-A228",
+      "model_family": "ITC-calorimetry-binding-enthalpy-blank-correction",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量机器一致性检查，独立实现待补。"
+    },
+    {
+      "new_id": "UC-ADV15-A229",
+      "model_family": "mass-spectrum-two-chlorine-binomial-isotope-envelope",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量机器一致性检查，独立实现待补。"
+    },
+    {
+      "new_id": "UC-ADV15-A230",
+      "model_family": "electrochemical-enzyme-sensor-Michaelis-Menten-two-point",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量机器一致性检查，独立实现待补。"
+    },
+    {
+      "new_id": "UC-ADV15-A231",
+      "model_family": "AAS-two-line-background-correction-calibration",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量机器一致性检查，独立实现待补。"
+    },
+    {
+      "new_id": "UC-ADV15-A232",
+      "model_family": "FTIR-gas-absorption-temperature-line-strength-correction",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量机器一致性检查，独立实现待补。"
+    },
+    {
+      "new_id": "UC-ADV15-A233",
+      "model_family": "Randles-impedance-series-Rs-parallel-Rct-Cdl",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量机器一致性检查，独立实现待补。"
+    },
+    {
+      "new_id": "UC-ADV15-A234",
+      "model_family": "ISE-calibration-Nernst-positive-monovalent-two-standards",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量机器一致性检查，独立实现待补。"
     }
   ]
 }

@@ -14,6 +14,18 @@ const witnesses={
 "UC-ADV15-I233":()=>{let a=2,b=1.2,Z=1+a+b,C=.01;return[a,b,Z,C/Z,C*a/Z,C*b/Z,1/Z,a/Z,b/Z,a/b,(a+b)/Z]},
 "UC-ADV15-I234":()=>{let k=R*298.15/F,q1=.005/.02,q2=.01/.002,a=-.255-k*Math.log(q1),b=-.255-k*Math.log(q2);return[q1,q2,a,b,b-a,.02/.025,.002/.012,k*Math.log(10),.02/.005,-.255]}
 };
+Object.assign(witnesses,{
+"UC-ADV15-A226":()=>{let s=.002,ratio=(.9-.25)/(.25-.01),n=s*ratio,tot=n+s,H=n*.01+s*.9,L=tot-H;return[n,s,ratio,n*.01,s*.9,tot,H,L,H/L,H/tot]},
+"UC-ADV15-A227":()=>{let fac=.6*.5/20000,f=t=>fac/t,a=f(80),b=f(125),e=f(100);return[e,a,b,a-e,b-e,.5/80,.5/125,.5/100,(a-e)-(b-e),(.5/80)/(.5/100)]},
+"UC-ADV15-A228":()=>{let a=4e-8*(-30000)*1000,b=2e-8*(-30000)*1000,obs1=a+.1,obs2=b+.1;return[a,obs1,b,obs2,.1,a/1000/4e-8/1000,obs1/1000/4e-8/1000,obs1/obs2,6e-8,a+b]},
+"UC-ADV15-A229":()=>{let p=.7578,q=.2422,a=p*p,b=2*p*q,c=q*q;return[a,b,c,b/a,c/a,100*b/a,100*c/a,100000*b,2*q,2*p*q]},
+"UC-ADV15-A230":()=>{let km=3,imax=8,g=c=>imax*c/(km+c);return[km,imax,g(1),g(3),g(5),g(10),imax/km,km,g(10)/g(5),g(10)/imax]},
+"UC-ADV15-A231":()=>{let k=.5,A=.85,B=.1,an=A-B,C=an/k;return[an,C,B,A/2,B/2,an/2,C/2,A/k,(A/k)/C-1,an/A]},
+"UC-ADV15-A232":()=>{let s=.5*(300/350)*Math.exp(-5000/R*(1/350-1/300)),a=s*.02*.1,base=.5*.02*.1,ap=a/(.5*.1);return[s,a,ap,ap/.02-1,s/.5,2*a,base,a/base,a/(s*.1),.1]},
+"UC-ADV15-A233":()=>{let rs=10,r=100,t=.01,g=f=>{let x=2*Math.PI*f*t;return[rs+r/(1+x*x),r*x/(1+x*x)]},a=g(1),b=g(100);return[...a,...b,1/(2*Math.PI*t),110,10,60,50,Math.hypot(...b)]},
+"UC-ADV15-A234":()=>{let k=R*298.15/F,g=a=>.3+k*Math.log(a),a=g(.001),b=g(.01),u=g(.003);return[a,b,u,Math.exp((u-.3)/k),-Math.log10(.003),k*Math.log(10),Math.log(3)/Math.log(10),g(.006),k*Math.log(2),b-a]}
+});
+
 const starts={inorganic:["I",226],analytical:["A",226],organic:["O",223],physical:["P",223]};
 const ids=new Set(),titles=new Set(),models=new Set(),counts={};
 for(const [subject,[L,start]] of Object.entries(starts)){
