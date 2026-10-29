@@ -691,8 +691,6 @@ const w={
   assert.ok(det>0&&work>0&&j2>0&&y<0&&Math.abs(b*x+d*stop)<1e-18);
   return [j1,j2,work,work/T,(a+d-disc)/2,(a+d+disc)/2,b/Math.sqrt(a*d),stop,jStop,jStop*x,det];
  },
-};
-
 "UC-ADV10-I122":()=>{
  const ds=[.12,.30],gaps=[.20,.34],v=Math.sqrt(gaps[0]**2-ds[0]**2)/2;
  const vals=ds.map(d=>{const a=d/2,b=Math.sqrt(a*a+v*v),gap=2*b;const pA=(b-a)/(2*b),pB=(b+a)/(2*b);return [pA,pB,4*pA*pB,8*v/gap,1239.841984/gap,8065.54429*gap]});
@@ -728,6 +726,7 @@ const w={
  assert.ok(Math.abs(R*T*Math.log(h1)+Vm*p1*1e6)<1e-9);
  return [theta,r2*1e9,kelvin(r),kelvin(r2),p1,p2,R*T*Math.log(h1),R*T*Math.log(h2),.15,.15/18,.15+.35,(.15+.35)/18];
 },
+};
 
 const req={inorganic:{id:"I101",count:0},analytical:{id:"A101",count:0},organic:{id:"O98",count:0},physical:{id:"P98",count:0}};
 const ids=new Set(),titles=new Set(),families=new Set();let all=0;
