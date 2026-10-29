@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (632题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (634题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -12780,6 +12780,35 @@ triplet\_gap\_over\_RT = 2.60590103 dimensionless；triplet\_single\_microstate\
 模型假设互不作用的同质二聚体、各向同性交换、g张量各向同性和忽略晶场与磁各向异性；真实无机双核磁体的晶间交换或激发多重态可能改变磁化率和热容。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I161 · FeO–CO/CO2氧化还原平衡与Ellingham氧逸度的双循环反演}
+\noindent\textbf{题目}\par
+某假想还原炉在1000.0 K保持恒温恒容，进行FeO(s)+CO(g)⇌Fe(s)+CO₂(g)反应。假设纯固体活度1、气体理想、无其它铁氧化态或副反应，反应标准ΔH°=−15.00 kJ/mol、ΔS°=−10.00 J/(mol K)，温度范围内常量；初始FeO(s)=0.01200 mol、CO=0.02000 mol、CO₂=0.005000 mol、Fe(s)=0，R=8.314462618 J/(mol K)。求ΔG°、K、平衡反应程度、残余FeO与CO、生成Fe与CO₂、FeO转化率，并证明两种固体确实共存且平衡根唯一。另给同温度FeO(s)→Fe(s)+½O₂(g)标准ΔG°=+150.0 kJ/mol，构造Fe/FeO缓冲的等效氧逸度并由CO+½O₂→CO₂自由能独立反算CO₂/CO比；核对Fe/C/O元素库存、电子转移数和恒温移热量，说明何时纯固体活度模型失效。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假定FeO(s)+CO(g)⇌Fe(s)+CO₂(g)在1000 K理想恒温恒容密闭容器中达到平衡，两种纯固体活度视为1，气体按理想混合且无水煤气变换。
+\item 标准反应焓ΔH°=−15.00 kJ/mol、熵ΔS°=−10.00 J/(mol K)，均视为温度不变，故ΔG°=ΔH°−TΔS°。
+\item 在T=1000 K得ΔG°=-5.00000000000 kJ/mol，平衡常数K=exp[−ΔG°/(RT)]=1.82460180689。
+\item 由于反应两侧气体分子摩尔数各为1，且同一温度体积，总压因子抵消；若FeO与Fe共存，K=p\_CO2/p\_CO=n\_CO2/n\_CO。
+\item 设反应程度ξ，以起始CO 0.02000 mol、CO₂ 0.005000 mol、FeO 0.01200 mol，得到n\_CO=0.02000−ξ、n\_CO2=0.005000+ξ、n\_FeO=0.01200−ξ。
+\item 共存固体时求(0.005000+ξ)/(0.02000−ξ)=K，得到唯一线性根ξ=[K n\_CO,0−n\_CO2,0]/(1+K)。
+\item 数值ξ=0.0111491949276 mol，介于0与FeO初值0.01200 mol之间，故Fe与FeO确实能共存，未到端点耗尽情形。
+\item CO剩余0.00885080507241 mol，CO₂生成后总量0.0161491949276 mol，FeO剩余0.000850805072411 mol，金属Fe产量0.0111491949276 mol。
+\item FeO转化率ξ/n\_FeO,0=0.929099577299，CO₂/CO比=1.82460180689；重新代入得化学平衡常数，与独立热力学K相符。
+\item 以另一个假想标准反应FeO(s)→Fe(s)+½O₂(g)在1000 K的ΔG°\_decomp=+150.0 kJ/mol构建独立氧势参照。
+\item Fe/FeO平衡缓冲给p\_O2/p°=exp[−2ΔG°\_decomp/(RT)]=2.13753858777e-16，这是氧化学势的等效氧逸度，不必意味着容器里存在可观的游离氧气。
+\item Hess自由能关系使CO+½O₂→CO₂的标准Gibbs能为ΔG°\_CO=ΔG°\_rxn−ΔG°\_decomp=−155.0 kJ/mol。
+\item 由K\_CO=exp[−ΔG°\_CO/(RT)]与其反应商Q\_CO=(p\_CO2/p\_CO)/(p\_O2/p°)\textasciicircum{}(1/2)，回代预测CO₂/CO=K\_CO√(p\_O2/p°)=1.82460180689。
+\item 逐元素盘点：气相总碳=CO+CO₂=0.0250000000000 mol；氧原子初始0.0420000000000 mol、末态0.0420000000000 mol；Fe在FeO与Fe中合计不变。
+\item Fe²⁺→Fe⁰消耗2ξ mol电子，CO中的C(+II)→CO₂中C(+IV)释放2ξ mol电子；若绝热以外条件放热总量ΔH ξ=-167.237923914 J须由恒温装置移走。
+\item 仅在FeO和Fe固体仍同时存在时，上述纯固体活度条件成立；若氧气气相、固溶体、Fe₃O₄或非理想气体显著，需要加入其它平衡与物料约束。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+standard\_reaction\_G\_kJ\_mol = -5 kJ/mol；reaction\_equilibrium\_constant = 1.82460181 dimensionless；solid\_reaction\_extent\_mol = 0.0111491949 mol；remaining\_CO\_mol = 0.00885080507 mol；final\_CO2\_mol = 0.0161491949 mol；remaining\_FeO\_mol = 0.000850805072 mol；formed\_Fe\_mol = 0.0111491949 mol；FeO\_reduced\_fraction = 0.929099577 fraction；final\_CO2\_CO\_ratio = 1.82460181 ratio；total\_gas\_carbon\_mol = 0.025 mol；initial\_oxygen\_atom\_mol = 0.042 mol；final\_oxygen\_atom\_mol = 0.042 mol；FeO\_Fe\_buffer\_oxygen\_fugacity\_bar\_over\_standard = 2.13753859e-16 pO2/pstandard；CO\_oxidation\_equilibrium\_constant = 124799004 ratio；CO\_ratio\_reconstructed\_from\_O2\_fugacity = 1.82460181 ratio；total\_reaction\_enthalpy\_J = -167.237924 J；threshold\_CO2\_CO\_ratio\_at\_FeO\_exhaustion = 2.125 ratio；electron\_transfer\_mol = 0.0222983899 mol electrons\par
+\noindent\textbf{模型前提：}
+仅在FeO和Fe固体仍同时存在时，上述纯固体活度条件成立；若氧气气相、固溶体、Fe₃O₄或非理想气体显著，需要加入其它平衡与物料约束。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -13039,6 +13068,34 @@ Stokes\_wavenumber\_cm\_inv = 19000 cm\textasciicircum{}-1；antiStokes\_wavenum
 copper\_deposition\_charge\_C = 0.108 C；hydrogen\_side\_reaction\_charge\_C = 0.012 C；deposited\_Cu\_mol = 5.59670561e-07 mol；deposited\_Cu\_mass\_ug = 35.5648255 ug；EQCM\_total\_mass\_ug = 44.1696113 ug；entrained\_water\_mass\_ug = 8.60478581 ug；entrained\_water\_mol = 4.77638194e-07 mol；evolved\_H2\_mol = 6.21856179e-08 mol；entrained\_water\_per\_Cu\_ratio = 0.853427404 ratio；dry\_copper\_thickness\_nm = 39.6928856 nm；copper\_current\_efficiency\_percent = 90 percent；Cu\_deposition\_rate\_mol\_s = 9.32784269e-09 mol/s；mean\_total\_current\_A = 0.002 A；deposited\_Cu\_atoms = 3.3704149e+17 atoms；charge\_balance\_C = 0.12 C；copper\_faradaic\_fraction\_check = 0.9 fraction\par
 \noindent\textbf{模型前提：}
 模型假设仅有Cu沉积与H₂副反应、法拉第效率独立可靠、频移全部属于刚性无耗散质量加载且无溶液黏弹负载；实际EQCM必须检查耗散、溶剂层及表面粗糙度。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A161 · Van Deemter塔板高度三点反演与最优流速、分离度联合优化}
+\noindent\textbf{题目}\par
+某液相色谱分析柱长L=20.00 cm，在恒定溶剂与温度下假设Van Deemter塔板高度H(u)=A+B/u+Cu，u为流动相线速度(cm/s)，未知A、B、C均为正。三组已校正测量为u₁=0.01000 cm/s时H₁=0.005500 cm、u₂=0.02000 cm/s时H₂=0.004000 cm、u₃=0.05000 cm/s时H₃=0.004300 cm。求A、B、C（含完整单位），推导唯一最佳线速度及最低塔板高度，并求最大理论塔板数。若第二分析物保留因子k₂=3.000、选择性α\_sel=k₂/k₁=1.100，采用近似分离度R\_s≈√N/4×[(α\_sel−1)/α\_sel]×[k₂/(1+k₂)]，计算最优线速度下死时间、第二峰保留时间、Gaussian时间标准差及预计分离度。核对三点数据回算、最优处纵向扩散与传质项相等及两倍最优流速下H的上升，并解释理想色谱近似。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 按色谱柱流动相线速度u的简化Van Deemter式H(u)=A+B/u+Cu描述理论塔板高度，A为涡流扩散常数、B/u为纵向分子扩散项、Cu为传质滞后项。
+\item 塔板高度H和A单位均为cm，若u用cm/s，则B必须取cm²/s、C必须取s，避免将流量或体积流速误当线速度。
+\item 给定三次流动相线速度u=0.01000、0.02000、0.05000 cm/s和对应塔板高度数据，用同一模型构建线性未知量(A,B,C)三元方程。
+\item 观测三点H分别为0.00550000000000、0.00400000000000、0.00430000000000 cm；三点不同且设计矩阵满秩，可唯一识别全部三个系数。
+\item 两式相减消去A，得到ΔH\_12=B(1/u1−1/u2)+C(u1−u2)，ΔH\_23=B(1/u2−1/u3)+C(u2−u3)，解2×2线性系统。
+\item 得到B=0.0000400000000000 cm²/s、C=0.0500000000000 s，再回代A=0.00100000000000 cm，三者均正。
+\item 对u>0求dH/du=−B/u²+C；当B,C>0时唯一驻点u*=√(B/C)，二阶导数2B/u³>0，故为全局最小塔板高度。
+\item 最优线速度u*=0.0282842712475 cm/s，最低塔板高度Hmin=A+2√(BC)=0.00382842712475 cm。
+\item 长度L=20 cm的柱在最优流速下理论塔板数N=L/Hmin=5224.07749927，是无量纲数且不能拿有效柱长单位误代为mm。
+\item 理想移动相死时间t0=L/u*，保持容量因子k₂=3.000不随u变化则第二组分保留时间t\_R,2=t0(1+k₂)。
+\item 算得t0=707.106781187 s、t\_R,2=2828.42712475 s，标准高斯峰时间尺度σ\_t=t\_R,2/√N=39.1327337391 s。
+\item 设相邻两组分选择性α\_sel=k₂/k₁=1.100、k₂=3.000，采用近似基础分离度公式R\_s≈(√N/4)[(α\_sel−1)/α\_sel][k₂/(1+k₂)]。
+\item 由该近似求R\_s=1.23200761571；此值需与实际目标分离度（通常1.5附近作为基线分离经验标准）比较，不能将纯塔板数变大等同于实际分离。
+\item 在u*处B/u*=Cu*=0.00141421356237 cm，说明扩散/传质贡献相等；两倍最优流速塔板高度之比=1.18469903126，作为非极小值检查。
+\item 题设只使用常系数Van Deemter近似和高斯峰分离度，现实中溶质扩散系数与保留系数会随溶剂、温度、流速和柱填充改变，三点拟合须另做实验误差分析。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+H\_plate\_0p01\_cm = 0.0055 cm；H\_plate\_0p02\_cm = 0.004 cm；H\_plate\_0p05\_cm = 0.0043 cm；fitted\_A\_cm = 0.001 cm；fitted\_B\_cm2\_s = 4e-05 cm2/s；fitted\_C\_s = 0.05 s；optimal\_linear\_velocity\_cm\_s = 0.0282842712 cm/s；minimum\_plate\_height\_cm = 0.00382842712 cm；optimal\_theoretical\_plate\_number = 5224.0775 plates；void\_time\_at\_optimum\_s = 707.106781 s；second\_peak\_retention\_time\_s = 2828.42712 s；approximate\_resolution\_Rs = 1.23200762 dimensionless；second\_peak\_time\_standard\_deviation\_s = 39.1327337 s；longitudinal\_diffusion\_term\_at\_opt\_cm = 0.00141421356 cm；mass\_transfer\_term\_at\_opt\_cm = 0.00141421356 cm；plate\_height\_backcheck\_cm = 0.00382842712 cm；sum\_of\_flow\_dependent\_optimal\_terms\_cm = 0.00282842712 cm；twice\_optimum\_velocity\_H\_ratio = 1.18469903 ratio\par
+\noindent\textbf{模型前提：}
+题设只使用常系数Van Deemter近似和高斯峰分离度，现实中溶质扩散系数与保留系数会随溶剂、温度、流速和柱填充改变，三点拟合须另做实验误差分析。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
