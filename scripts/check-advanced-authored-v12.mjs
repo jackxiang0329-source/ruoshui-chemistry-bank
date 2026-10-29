@@ -103,6 +103,11 @@ Object.assign(witnesses,{
 "UC-ADV12-O159":()=>{const R=8.314462618,T=298.15,ratio=2/3,A=1/(1+ratio),B=ratio/(1+ratio),k=2,t1=.5,t2=1,q=t=>B*(-Math.expm1(-k*t)),v1=q(t1),v2=q(t2),K1=-Math.log1p(-v1/B)/t1,K2=-Math.log1p(-v2/B)/t2,ab=K1*B,ba=K1*A,flux=A*ab;assert.ok(Math.abs(K1-K2)<1e-12&&Math.abs(flux-B*ba)<1e-14);return[A,B,ratio,v1,v2,1-v1,1-v2,K1,K2,ab,ba,1/K1,Math.log(2)/K1,-R*T*Math.log(ratio)/1000,.01*A,.01*B,flux,0,v2/v1,Math.exp(-k*t2)];},
 "UC-ADV12-P159":()=>{const M=[.02,.5],k1=2,km=800,k2=120,T=350,A0=.01,t=5,f=m=>k1*m*k2/(km*m+k2),lo=f(M[0]),hi=f(M[1]),slope=(1/lo-1/hi)/(1/M[0]-1/M[1]),intercept=1/lo-slope/M[0],zero=1/slope,infty=1/intercept,p=m=>k2/(km*m+k2),star=infty/zero,r=m=>1-Math.exp(-f(m)*t),x=r(M[0]),y=r(M[1]),a= k1*M[0]/(km*M[0]+k2),b=k1*M[1]/(km*M[1]+k2);assert.ok(b<.01&&Math.abs(zero-k1)<1e-12&&Math.abs(infty-k1*k2/km)<1e-12);return[zero,infty,star,lo,hi,hi/lo,slope,intercept,zero,infty,p(M[0]),p(M[1]),a,b,x,y,A0*x,A0*y,A0*(1-x),A0*(1-y),M[0]*1000*8.314462618*T,M[1]*1000*8.314462618*T,1/lo,1/hi];}
 });
+
+Object.assign(witnesses,{
+"UC-ADV12-I164":()=>{const J=5000,R=8.314462618,T1=400,T2=550,root=t=>{let a=1e-10,b=.999999;for(let j=0;j<130;j++){let x=(a+b)/2;if(-J*x+R*t*Math.atanh(x)<0)a=x;else b=x}return(a+b)/2},a=root(T1),b=root(T2),U=x=>-J*x*x/2,S=x=>-R*((1+x)*Math.log1p(x)+(1-x)*Math.log1p(-x))/2,G=(t,x)=>U(x)-t*S(x),cur=(t,x)=>-J+R*t/(1-x*x),r=x=>(x*(-2)/54)**2;assert.ok(a>b&&b>0&&G(T1,a)<0);return[J/R,J/(R*T1),a,b,0,(1+a)/2,(1-a)/2,(1+b)/2,(1-b)/2,U(a),S(a),G(T1,a),G(T2,b),cur(T1,a),cur(T2,b),r(a),r(b),r(b)/r(a),1-a,0];},
+"UC-ADV12-A164":()=>{const Ka=.00068,R=8.314462618,F=96485.33212,T=298.15,E0=.2,g=.8,cl=.01,K=.001,C=.0001,VT=R*T/F,fr=p=>Ka/(Ka+Math.pow(10,-p)),a=fr(2.5),b=fr(4.5),u=g*C*a+K*g*cl,v=g*C*b+K*g*cl,E1=E0-VT*Math.log(u),E2=E0-VT*Math.log(v),z1=Math.exp((E0-E1)/VT),z2=Math.exp((E0-E2)/VT),ct=(z2-z1)/(g*(b-a)),sel=(z1-g*ct*a)/(g*cl),inter=sel*g*cl;assert.ok(Math.abs(ct/C-1)<1e-12&&Math.abs(sel/K-1)<1e-12);return[VT,a,b,u,v,E1,E2,E1-E2,ct,sel,ct*a,ct*b,ct*(1-a),ct*(1-b),inter,inter/u,inter/v,inter/(g*a),inter/(g*b),z1,z2,b/a];}
+});
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();

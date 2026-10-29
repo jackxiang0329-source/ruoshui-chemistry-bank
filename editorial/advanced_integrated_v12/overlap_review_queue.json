@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 50,
+  "current_draft_count": 52,
   "expert_approved": 0,
-  "preliminary_flags": 50,
+  "preliminary_flags": 52,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -304,6 +304,18 @@
       "new_id": "UC-ADV12-P159",
       "prior_id": "UC-ADV11-P139",
       "reason": "与旧辑交换动力学或反应速率题领域相近，真实实验边界及模型同构仍需人工专家逐式排重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I164",
+      "prior_id": "UC-ADV12-I155",
+      "reason": "无机合金相变/离子电极均与旧题有领域相邻内容，尚待逐式检查独立原创性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A164",
+      "prior_id": "UC-ADV11-A137",
+      "reason": "无机合金相变/离子电极均与旧题有领域相邻内容，尚待逐式检查独立原创性。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -607,6 +619,18 @@
       "model_family": "Lindemann-Hinshelwood-unimolecular-falloff-collision-complex-reciprocal-inversion",
       "judgement": "pending_human_comparison",
       "screening": "独立分步答案见证与详细平衡/压力极限检查已入库，尚未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV12-I164",
+      "model_family": "B2-binary-alloy-Bragg-Williams-order-disorder-superlattice-diffraction",
+      "judgement": "pending_human_comparison",
+      "screening": "已创建独立数值见证，所有记录保持专家待审、禁止发表。"
+    },
+    {
+      "new_id": "UC-ADV12-A164",
+      "model_family": "fluoride-Nikolsky-Eisenman-HF-protonation-chloride-selectivity-two-pH-inverse",
+      "judgement": "pending_human_comparison",
+      "screening": "已创建独立数值见证，所有记录保持专家待审、禁止发表。"
     }
   ]
 }
