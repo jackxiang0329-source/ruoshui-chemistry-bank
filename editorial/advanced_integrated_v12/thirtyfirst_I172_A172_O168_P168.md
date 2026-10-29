@@ -281,7 +281,7 @@
 - ambipolar_salt_flux_mol_m2_s: 0.000141818181818182 mol/(m2 s)
 - cation_flux_at_midpoint_mol_m2_s: 0.000141818181818182 mol/(m2 s)
 - anion_flux_at_midpoint_mol_m2_s: 0.000141818181818182 mol/(m2 s)
-- zero_current_density_A_m2: -2.61524016743724e-15 A/m2
+- zero_current_density_A_m2: 0.00000000000000 A/m2
 - linear_concentration_gradient_mol_m4: -90000.0000000000 mol/m4
 - midpoint_concentration_mol_m3: 55.0000000000000 mol/m3
 - diffusivity_ratio_cation_anion: 0.650000000000000 ratio
@@ -293,3 +293,4 @@
 - junction_potential_per_log_concentration_V: 0.00544994102577140 V
 - local_field_per_concentration_gradient: 0.0000990898368322072 V m3/mol
 - junction_potential_absolute_V: 0.0125489529636379 V
+
