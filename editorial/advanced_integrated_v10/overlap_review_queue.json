@@ -2,7 +2,7 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 80,
+  "current_draft_count": 84,
   "preliminary_flags": 39,
   "pairs": [
     {
@@ -650,6 +650,30 @@
       "model_family": "Stefan-stagnant-carrier-binary-vapor-diffusion-log-profile-flux",
       "judgement": "pending_human_comparison",
       "screening": "独立机器witness待CI核验；科学性及跨辑核心模型仍待专家人工审查。"
+    },
+    {
+      "new_id": "UC-ADV10-I121",
+      "model_family": "two-angle-XPS-overlayer-attenuation-oxide-stoichiometry-areal-mass",
+      "judgement": "pending_human_comparison",
+      "screening": "结构化草稿与独立计算witness已提交；必须人工比对旧辑方程及科学合理性，尚未获得专家认可。"
+    },
+    {
+      "new_id": "UC-ADV10-A121",
+      "model_family": "capillary-electrophoresis-electroosmosis-weak-acid-two-pH-inverse-zeta",
+      "judgement": "pending_human_comparison",
+      "screening": "结构化草稿与独立计算witness已提交；必须人工比对旧辑方程及科学合理性，尚未获得专家认可。"
+    },
+    {
+      "new_id": "UC-ADV10-O118",
+      "model_family": "cyclohexane-trans-diaxial-E2-conformational-gating-two-channel-temperature-selectivity",
+      "judgement": "pending_human_comparison",
+      "screening": "结构化草稿与独立计算witness已提交；必须人工比对旧辑方程及科学合理性，尚未获得专家认可。"
+    },
+    {
+      "new_id": "UC-ADV10-P118",
+      "model_family": "BET-multilayer-two-pressure-linear-inversion-monolayer-area-energy",
+      "judgement": "pending_human_comparison",
+      "screening": "结构化草稿与独立计算witness已提交；必须人工比对旧辑方程及科学合理性，尚未获得专家认可。"
     }
   ]
 }

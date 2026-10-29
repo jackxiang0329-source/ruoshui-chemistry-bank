@@ -10,6 +10,42 @@ const F=96485.33212;
 const T=280,J=2400,q=Math.exp(-J/(R*T)),Z=1+3*q,p=3*q/Z;
 const w={
 
+"UC-ADV10-I121":()=>{
+ const r=[0.6576950403124071,1.8560935381892378],lambda=2;
+ const d0=lambda*Math.log1p(r[0]/.8),d60=lambda*.5*Math.log1p(r[1]/.8);
+ const a0=Math.exp(-d0/lambda),a60=Math.exp(-d60/(lambda*.5));
+ const x=1.125*(.8/.6),nFe=3e22*(d0*1e-7)/6.02214076e23,nO=x*nFe;
+ const mass=nFe*(55.845+x*15.999),rho=mass/(d0*1e-7);
+ assert.ok(Math.abs(d0-d60)<1e-12 && x===1.5 && Math.abs(2*3+3*(-2))<1e-12);
+ return [d0,d60,a0,a60,x,nFe,nO,mass,rho,.8*(1/a0-1),.8*(1/a60-1)];
+},
+"UC-ADV10-A121":()=>{
+ const L=.45,E=18000/.6,ts=[441.176470588235,494.387477336112,999.350319074995];
+ const mob=ts.map(t=>L/(E*t)),[e,m1,m2]=mob,ratio=(e-m1)/(e-m2);
+ const h=(1-ratio)/(ratio/10**6.5-1/10**8),pk=Math.log10(h),a1=1/(1+h/10**6.5),a2=1/(1+h/10**8);
+ const mA=(m1-e)/a1,mid=e+.5*mA,tmid=L/(E*mid),z=-(e*.000890)/(78.5*8.8541878128e-12);
+ assert.ok(mA<0&&m2>0&&Math.abs(e+mA*a2-m2)<1e-19&&a2>a1);
+ return [e,m1,m2,pk,mA,a1,a2,tmid,z,ratio,ts[0]];
+},
+"UC-ADV10-O118":()=>{
+ const R=8.314462618,T0=298.15,frac=T=>{const ratio=Math.exp(-(5000-5*T)/(R*T));return ratio/(1+ratio);};
+ const f0=frac(T0),c1=.18,c2=.06,k=f0*(c1+c2),half=Math.log(2)/k;
+ let v=[1,0,0],dt=.002;
+ const f=z=>[-k*z[0],f0*c1*z[0],f0*c2*z[0]];
+ for(let i=0;i<5000;i++){const a=f(v),b=f(v.map((z,j)=>z+dt*a[j]/2)),c=f(v.map((z,j)=>z+dt*b[j]/2)),d=f(v.map((z,j)=>z+dt*c[j]));v=v.map((z,j)=>z+dt*(a[j]+2*b[j]+2*c[j]+d[j])/6);}
+ const T=330,k1=c1*Math.exp(45000/R*(1/T0-1/T)),k2=c2*Math.exp(55000/R*(1/T0-1/T)),kt=frac(T)*(k1+k2);
+ assert.ok(Math.abs(v.reduce((a,b)=>a+b,0)-1)<1e-11&&v.every(x=>x>=0)&&kt>k);
+ return [f0,k,half,1-v[0],v[1],v[2],frac(T),k1,k2,kt,k1/(k1+k2),Math.log(2)/kt];
+},
+"UC-ADV10-P118":()=>{
+ const x=[.08,.25],v=[11.404133998574482,15.421686746987952],y=x.map((p,i)=>p/(v[i]*(1-p)));
+ const slope=(y[1]-y[0])/(x[1]-x[0]),intercept=y[0]-slope*x[0],vm=1/(slope+intercept),C=1+slope/intercept;
+ const volume=p=>vm*C*p/((1-p)*(1+(C-1)*p)),area=vm/22414*6.02214076e23*.162e-18;
+ assert.ok(intercept>0&&slope>0&&C>1&&Math.abs(volume(.25)-v[1])<1e-11);
+ return [slope,intercept,vm,C,volume(.15),area,1/(1+Math.sqrt(C)),8.314462618*77*Math.log(C)/1000,volume(.08),volume(.25)];
+},
+
+
 "UC-ADV10-I120":()=>{const th=v=>1.438776877*v,logq=(v,t)=>-th(v)/(2*t)-Math.log1p(-Math.exp(-th(v)/t));
  const eq=t=>{const k=Math.exp(logq(1040,t)+logq(1250,t)-logq(1450,t)-logq(900,t));let x=.008;for(let j=0;j<25;j++){const f=Math.log(x)+Math.log(.012+x)-Math.log(.02-x)-Math.log(.018-x)-Math.log(k),df=1/x+1/(.012+x)+1/(.02-x)+1/(.018-x),n=x-f/df;assert.ok(n>0&&n<.018);if(Math.abs(n-x)<1e-15){x=n;break;}x=n;}return[k,x];};
  const [k,x]=eq(298.15),[k2,x2]=eq(350),u=(v,t)=>8.314462618*th(v)*(.5+1/Math.expm1(th(v)/t)),du=u(1040,298.15)+u(1250,298.15)-u(1450,298.15)-u(900,298.15);
