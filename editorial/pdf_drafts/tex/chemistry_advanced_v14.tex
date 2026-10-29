@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第14辑 (74题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第14辑 (84题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -1435,6 +1435,236 @@ bonds\_mol = 0.931 mol；A\_ends\_mol = 0.069 mol；B\_ends\_mol = 0.019 mol；i
 mean\_growth = 40 repeats；Mn\_gmol = 4100 g/mol；Mw\_gmol = 4197.56098 g/mol；dispersity = 1.02379536 ratio；chain\_variance = 40 repeats2；zero\_growth\_probability = 4.24835426e-18 fraction；probability\_n40 = 0.0629470394 fraction；weight\_average\_growth = 41 repeats\par
 \noindent\textbf{模型前提：}
 题设明确的理想模型；需专家科学性、原创性与出版审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O211 · 取代基Hammett常数与芳基亲核加成反应速率的线性自由能关联}
+\noindent\textbf{题目}\par
+某芳香亲核加成反应满足Hammett关系log10(kX/kH)=ρσX，ρ=+2.000、未取代H的速度kH=0.01000 s⁻¹。假想取代基A有σA=+0.3000，B有σB=−0.2000。求A/B取代体的k、与kH比值、A/B速率比、在t=60.00 s按一级动力学两种反应物各自转化率、半衰期、A/B活化Gibbs自由能差ΔΔG‡=−RTln(kA/kB)（298.15 K，单位kJ/mol）以及两个取代基造成的log10速率变化量。假定ρ对两个取代基相同，且不推断微观机理必然相同。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整底物、反应路径与假设：某芳香亲核加成反应满足Hammett关系log10(kX/kH)=ρσX，ρ=+2.000、未取代H的速度kH=0.01000 s⁻¹。假想取代基A有σA=+0.3000，B有σB=−0.2000。求A/B取代体的k、与kH比值、A/B速率比、在t=60.00 s按一级动力学两种反应物各自转化率、半衰期、A/B活化Gibbs自由能差ΔΔG‡=−RTln(kA/kB)（298.15 K，单位kJ/mol）以及两个取代基造成的log10速率变化量。假定ρ对两个取代基相同，且不推断微观机理必然相同。
+\item 建立反应动力学、热力学或分布模型：kX=kH×10\textasciicircum{}(ρσX)，X(t)=1−exp(−kXt)，ΔΔG‡=−RTln(kA/kB)。
+\item 从原始反应计量或速率常数导出未知量的代数关系，所有浓度、时间、活化能等数值采用题设单位。
+\item 计算第一组关键量：rate\_A\_sInv = 0.039810717055350 s\textasciicircum{}-1；rate\_B\_sInv = 0.0039810717055350 s\textasciicircum{}-1；rate\_ratio\_A\_H = 3.9810717055350 ratio；rate\_ratio\_B\_H = 0.39810717055350 ratio。
+\item 计算产物、选择性或平均分子量：rate\_ratio\_A\_B = 10.000000000000 ratio；conversion\_A\_t60 = 0.90824589237740 fraction；conversion\_B\_t60 = 0.21247826001410 fraction。
+\item 完整结果与交叉量：half\_life\_A\_s = 17.411069978876 s；half\_life\_B\_s = 174.11069978876 s；activation\_free\_energy\_A\_minus\_B\_kJmol = -5.7080095024301 kJ/mol。
+\item 核查底物骨架的反应物+产物库存、概率分率归一、活化自由能与速率比之间的一致性。
+\item 区分反应限速步与产物分支控制步，并说明实验中不受题设约束的副反应或溶剂化会影响选择性。
+\item 利用独立实现的第二组数值见证验证每个答案字段；同时指出其不能替代跨辑同构检查。
+\item 化学合理性、原创性与可出版状态仍须专家逐题审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+rate\_A\_sInv = 0.0398107171 s\textasciicircum{}-1；rate\_B\_sInv = 0.00398107171 s\textasciicircum{}-1；rate\_ratio\_A\_H = 3.98107171 ratio；rate\_ratio\_B\_H = 0.398107171 ratio；rate\_ratio\_A\_B = 10 ratio；conversion\_A\_t60 = 0.908245892 fraction；conversion\_B\_t60 = 0.21247826 fraction；half\_life\_A\_s = 17.41107 s；half\_life\_B\_s = 174.1107 s；activation\_free\_energy\_A\_minus\_B\_kJmol = -5.7080095 kJ/mol\par
+\noindent\textbf{模型前提：}
+题设的限速步、统计分配和理想化条件成立，不代表真实体系普适性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O212 · 水解逆过程–酯化的等初始浓度可逆二级平衡}
+\noindent\textbf{题目}\par
+理想溶液中有机酸A与醇B发生可逆酯化A+B⇌E+H₂O，假设活度等于各自以1 mol/L标准态归一的浓度，平衡常数K=4.000。初态[A]=[B]=0.1000 M、[E]=[H₂O]=0，溶剂为惰性无水非水溶剂，水仅来自反应，不考虑其它反应。令反应进度x M，平衡[A]=[B]=0.1−x，[E]=[H₂O]=x。求x、四物种平衡浓度、A转化率、酯/未反应A摩尔比、反应商回代及如果通过外部除水把游离[H₂O]保持在0.01000 M，且仍允许酸醇库存各0.1−x的新的数学平衡x（注意除水为开放系统）。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整底物、反应路径与假设：理想溶液中有机酸A与醇B发生可逆酯化A+B⇌E+H₂O，假设活度等于各自以1 mol/L标准态归一的浓度，平衡常数K=4.000。初态[A]=[B]=0.1000 M、[E]=[H₂O]=0，溶剂为惰性无水非水溶剂，水仅来自反应，不考虑其它反应。令反应进度x M，平衡[A]=[B]=0.1−x，[E]=[H₂O]=x。求x、四物种平衡浓度、A转化率、酯/未反应A摩尔比、反应商回代及如果通过外部除水把游离[H₂O]保持在0.01000 M，且仍允许酸醇库存各0.1−x的新的数学平衡x（注意除水为开放系统）。
+\item 建立反应动力学、热力学或分布模型：K=x²/(C−x)² => x=C√K/(1+√K)；除水时K=x·w/(C−x)²，取0<x<C正根。
+\item 从原始反应计量或速率常数导出未知量的代数关系，所有浓度、时间、活化能等数值采用题设单位。
+\item 计算第一组关键量：closed\_extent\_M = 0.066666666666667 mol/L；closed\_acid\_M = 0.033333333333333 mol/L；closed\_alcohol\_M = 0.033333333333333 mol/L；closed\_ester\_M = 0.066666666666667 mol/L。
+\item 计算产物、选择性或平均分子量：closed\_water\_M = 0.066666666666667 mol/L；acid\_conversion = 0.66666666666667 fraction；ester\_over\_acid = 2.0000000000000 ratio。
+\item 完整结果与交叉量：equilibrium\_quotient = 4.0000000000000 ratio；open\_water\_fixed\_extent\_M = 0.085389278074438 mol/L；open\_water\_fixed\_conversion = 0.85389278074438 fraction。
+\item 核查底物骨架的反应物+产物库存、概率分率归一、活化自由能与速率比之间的一致性。
+\item 区分反应限速步与产物分支控制步，并说明实验中不受题设约束的副反应或溶剂化会影响选择性。
+\item 利用独立实现的第二组数值见证验证每个答案字段；同时指出其不能替代跨辑同构检查。
+\item 化学合理性、原创性与可出版状态仍须专家逐题审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+closed\_extent\_M = 0.0666666667 mol/L；closed\_acid\_M = 0.0333333333 mol/L；closed\_alcohol\_M = 0.0333333333 mol/L；closed\_ester\_M = 0.0666666667 mol/L；closed\_water\_M = 0.0666666667 mol/L；acid\_conversion = 0.666666667 fraction；ester\_over\_acid = 2 ratio；equilibrium\_quotient = 4 ratio；open\_water\_fixed\_extent\_M = 0.0853892781 mol/L；open\_water\_fixed\_conversion = 0.853892781 fraction\par
+\noindent\textbf{模型前提：}
+题设的限速步、统计分配和理想化条件成立，不代表真实体系普适性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O213 · SN1离子对中溶剂捕获与亲核捕获的双通道选择性}
+\noindent\textbf{题目}\par
+某叔烷基卤化物R–X以一级电离速率ki=0.02000 s⁻¹生成中间体碳正离子R⁺；假设电离为总反应限速且中间体瞬时被并行捕获：水捕获速率kw=2.000×10⁵ s⁻¹，外部亲核体Nu的自由浓度恒0.05000 M，捕获二级常数kNu=1.000×10⁷ M⁻¹s⁻¹。离子对不发生复合逆反应、重排或消除，初始R–X浓度0.01000 M，t=30.00 s。求碳正离子捕获分支、总底物转化、两产物浓度、剩余底物、捕获平均寿命、Nu通道产物比水产物及Nu浓度减半时Nu分支。说明产物比例由中间体捕获控制而总底物消耗由电离控制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整底物、反应路径与假设：某叔烷基卤化物R–X以一级电离速率ki=0.02000 s⁻¹生成中间体碳正离子R⁺；假设电离为总反应限速且中间体瞬时被并行捕获：水捕获速率kw=2.000×10⁵ s⁻¹，外部亲核体Nu的自由浓度恒0.05000 M，捕获二级常数kNu=1.000×10⁷ M⁻¹s⁻¹。离子对不发生复合逆反应、重排或消除，初始R–X浓度0.01000 M，t=30.00 s。求碳正离子捕获分支、总底物转化、两产物浓度、剩余底物、捕获平均寿命、Nu通道产物比水产物及Nu浓度减半时Nu分支。说明产物比例由中间体捕获控制而总底物消耗由电离控制。
+\item 建立反应动力学、热力学或分布模型：fNu=kNu[Nu]/(kw+kNu[Nu])，Pj=C0(1−exp(−ki t))fj，τtrap=1/(kw+kNu[Nu])。
+\item 从原始反应计量或速率常数导出未知量的代数关系，所有浓度、时间、活化能等数值采用题设单位。
+\item 计算第一组关键量：capture\_Nu\_rate = 500000.00000000 s\textasciicircum{}-1；capture\_total\_rate = 700000.00000000 s\textasciicircum{}-1；Nu\_branch = 0.71428571428571 fraction；water\_branch = 0.28571428571429 fraction。
+\item 计算产物、选择性或平均分子量：substrate\_conversion\_t30 = 0.45118836390597 fraction；Nu\_product\_M = 0.0032227740278998 mol/L；water\_product\_M = 0.0012891096111599 mol/L；remaining\_substrate\_M = 0.0054881163609403 mol/L。
+\item 完整结果与交叉量：capture\_lifetime\_s = 0.0000014285714285714 s；Nu\_water\_product\_ratio = 2.5000000000000 ratio；Nu\_branch\_at\_half\_concentration = 0.55555555555556 fraction。
+\item 核查底物骨架的反应物+产物库存、概率分率归一、活化自由能与速率比之间的一致性。
+\item 区分反应限速步与产物分支控制步，并说明实验中不受题设约束的副反应或溶剂化会影响选择性。
+\item 利用独立实现的第二组数值见证验证每个答案字段；同时指出其不能替代跨辑同构检查。
+\item 化学合理性、原创性与可出版状态仍须专家逐题审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+capture\_Nu\_rate = 500000 s\textasciicircum{}-1；capture\_total\_rate = 700000 s\textasciicircum{}-1；Nu\_branch = 0.714285714 fraction；water\_branch = 0.285714286 fraction；substrate\_conversion\_t30 = 0.451188364 fraction；Nu\_product\_M = 0.00322277403 mol/L；water\_product\_M = 0.00128910961 mol/L；remaining\_substrate\_M = 0.00548811636 mol/L；capture\_lifetime\_s = 1.42857143e-06 s；Nu\_water\_product\_ratio = 2.5 ratio；Nu\_branch\_at\_half\_concentration = 0.555555556 fraction\par
+\noindent\textbf{模型前提：}
+题设的限速步、统计分配和理想化条件成立，不代表真实体系普适性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O214 · 有机酸酐水解两条并行催化路径的pH速率剖面}
+\noindent\textbf{题目}\par
+假想有机酸酐A水解的拟一级总速度kobs=kH[H⁺]+kOH[OH⁻]+k0，速率参数kH=10.00 L/(mol s)、kOH=1.000×10⁵ L/(mol s)、k0=0.002000 s⁻¹，T=298.15 K水自电离Kw=10⁻¹⁴，溶液pH由缓冲池恒定。取pH=4.000和9.000，初始A=0.01000 M，t=100.0 s。求两pH下酸催化、碱催化和非催化项的单项速率、总速度、转化率、残余A、速率比与pH最小速率点pH*由kH[H⁺]=kOH[OH⁻]得出。忽略溶剂组成变化与A水解导致的pH漂移。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整底物、反应路径与假设：假想有机酸酐A水解的拟一级总速度kobs=kH[H⁺]+kOH[OH⁻]+k0，速率参数kH=10.00 L/(mol s)、kOH=1.000×10⁵ L/(mol s)、k0=0.002000 s⁻¹，T=298.15 K水自电离Kw=10⁻¹⁴，溶液pH由缓冲池恒定。取pH=4.000和9.000，初始A=0.01000 M，t=100.0 s。求两pH下酸催化、碱催化和非催化项的单项速率、总速度、转化率、残余A、速率比与pH最小速率点pH*由kH[H⁺]=kOH[OH⁻]得出。忽略溶剂组成变化与A水解导致的pH漂移。
+\item 建立反应动力学、热力学或分布模型：kobs=kH 10\textasciicircum{}(−pH)+kOH 10\textasciicircum{}(pH−14)+k0，最小位置pH*=[14+log10(kH/kOH)]/2。
+\item 从原始反应计量或速率常数导出未知量的代数关系，所有浓度、时间、活化能等数值采用题设单位。
+\item 计算第一组关键量：acid\_term\_pH4 = 0.0010000000000000 s\textasciicircum{}-1；base\_term\_pH4 = 0.000010000000000000 s\textasciicircum{}-1；total\_rate\_pH4 = 0.0030100000000000 s\textasciicircum{}-1；acid\_term\_pH9 = 1.0000000000000e-8 s\textasciicircum{}-1。
+\item 计算产物、选择性或平均分子量：base\_term\_pH9 = 1.0000000000000 s\textasciicircum{}-1；total\_rate\_pH9 = 1.0020000100000 s\textasciicircum{}-1；conversion\_pH4\_t100 = 0.25992222725329 fraction；conversion\_pH9\_t100 = 1.0000000000000 fraction。
+\item 完整结果与交叉量：remaining\_A\_pH4\_M = 0.0074007777274671 mol/L；remaining\_A\_pH9\_M = 3.0457375596158e-46 mol/L；minimum\_rate\_pH = 5.0000000000000 pH。
+\item 核查底物骨架的反应物+产物库存、概率分率归一、活化自由能与速率比之间的一致性。
+\item 区分反应限速步与产物分支控制步，并说明实验中不受题设约束的副反应或溶剂化会影响选择性。
+\item 利用独立实现的第二组数值见证验证每个答案字段；同时指出其不能替代跨辑同构检查。
+\item 化学合理性、原创性与可出版状态仍须专家逐题审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+acid\_term\_pH4 = 0.001 s\textasciicircum{}-1；base\_term\_pH4 = 1e-05 s\textasciicircum{}-1；total\_rate\_pH4 = 0.00301 s\textasciicircum{}-1；acid\_term\_pH9 = 1e-08 s\textasciicircum{}-1；base\_term\_pH9 = 1 s\textasciicircum{}-1；total\_rate\_pH9 = 1.00200001 s\textasciicircum{}-1；conversion\_pH4\_t100 = 0.259922227 fraction；conversion\_pH9\_t100 = 1 fraction；remaining\_A\_pH4\_M = 0.00740077773 mol/L；remaining\_A\_pH9\_M = 3.04573756e-46 mol/L；minimum\_rate\_pH = 5 pH\par
+\noindent\textbf{模型前提：}
+题设的限速步、统计分配和理想化条件成立，不代表真实体系普适性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O215 · 抗氧剂抑制自由基自氧化的诱导期与有效链增长}
+\noindent\textbf{题目}\par
+某有机烯烃自氧化引发自由基生成速率Ri=1.000×10⁻⁸ mol/(L s)，抑制剂IH初始浓度0.001000 mol/L，每个IH分子能高效捕获n=2个自由基直到耗尽，抑制期间所有自由基均被捕获且不引发链增长。耗尽之后在t=20000 s总观察窗口内链反应以恒定产品生成速率Rp=3.000×10⁻⁷ mol/(L s)进行，并且产品不分解。求抑制剂自由基捕获容量、理想诱导期、窗口内剩余有效产物生成时间、生成产物浓度、如果没有抑制剂在同一窗口的产物浓度、抑制导致的产物减少比例、抑制剂在t=10000 s的余量以及半量消耗时间。指明该简化分段动力学仅是极限模型。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整底物、反应路径与假设：某有机烯烃自氧化引发自由基生成速率Ri=1.000×10⁻⁸ mol/(L s)，抑制剂IH初始浓度0.001000 mol/L，每个IH分子能高效捕获n=2个自由基直到耗尽，抑制期间所有自由基均被捕获且不引发链增长。耗尽之后在t=20000 s总观察窗口内链反应以恒定产品生成速率Rp=3.000×10⁻⁷ mol/(L s)进行，并且产品不分解。求抑制剂自由基捕获容量、理想诱导期、窗口内剩余有效产物生成时间、生成产物浓度、如果没有抑制剂在同一窗口的产物浓度、抑制导致的产物减少比例、抑制剂在t=10000 s的余量以及半量消耗时间。指明该简化分段动力学仅是极限模型。
+\item 建立反应动力学、热力学或分布模型：诱导期tind=n[IH]0/Ri；t>tind时P=Rp(t−tind)，捕获量Ri t，剩余IH=max(0,IH0−Ri t/n)。
+\item 从原始反应计量或速率常数导出未知量的代数关系，所有浓度、时间、活化能等数值采用题设单位。
+\item 计算第一组关键量：radical\_capacity\_M = 0.0020000000000000 mol/L；induction\_time\_s = 200000.00000000 s；post\_induction\_time\_s = 0.0000000000000 s；product\_with\_inhibitor\_M = 0.0000000000000 mol/L。
+\item 计算产物、选择性或平均分子量：product\_without\_inhibitor\_M = 0.0060000000000000 mol/L；suppression\_fraction = 1.0000000000000 fraction；inhibitor\_remaining\_t10000\_M = 0.00095000000000000 mol/L。
+\item 完整结果与交叉量：inhibitor\_half\_consumption\_time\_s = 100000.00000000 s；fraction\_window\_inhibited = 1.0000000000000 fraction；product\_ratio\_with\_without = 0.0000000000000 ratio。
+\item 核查底物骨架的反应物+产物库存、概率分率归一、活化自由能与速率比之间的一致性。
+\item 区分反应限速步与产物分支控制步，并说明实验中不受题设约束的副反应或溶剂化会影响选择性。
+\item 利用独立实现的第二组数值见证验证每个答案字段；同时指出其不能替代跨辑同构检查。
+\item 化学合理性、原创性与可出版状态仍须专家逐题审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+radical\_capacity\_M = 0.002 mol/L；induction\_time\_s = 200000 s；post\_induction\_time\_s = 0 s；product\_with\_inhibitor\_M = 0 mol/L；product\_without\_inhibitor\_M = 0.006 mol/L；suppression\_fraction = 1 fraction；inhibitor\_remaining\_t10000\_M = 0.00095 mol/L；inhibitor\_half\_consumption\_time\_s = 100000 s；fraction\_window\_inhibited = 1 fraction；product\_ratio\_with\_without = 0 ratio\par
+\noindent\textbf{模型前提：}
+题设的限速步、统计分配和理想化条件成立，不代表真实体系普适性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O216 · 烯烃Z/E产物的光稳态–热稳态耦合化学分流}
+\noindent\textbf{题目}\par
+某有机烯烃光异构体E与Z在单色光下受光化学一级互变：kE→Z,photo=0.02000 s⁻¹、kZ→E,photo=0.005000 s⁻¹；另外恒温热互变速度分别0.002000和0.008000 s⁻¹。总初始E=0.01000 M，Z=0，在光照t=100.0 s。求光照条件下正逆总速度、Z稳态分率与Z/E稳态比、达到平衡的松弛时间、t=100 s时Z与E浓度、关灯后纯热稳态Z分率、相对于光照稳态的变化量及光照稳态总浓度守恒。假设无光漂白、局部升温和后续反应。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整底物、反应路径与假设：某有机烯烃光异构体E与Z在单色光下受光化学一级互变：kE→Z,photo=0.02000 s⁻¹、kZ→E,photo=0.005000 s⁻¹；另外恒温热互变速度分别0.002000和0.008000 s⁻¹。总初始E=0.01000 M，Z=0，在光照t=100.0 s。求光照条件下正逆总速度、Z稳态分率与Z/E稳态比、达到平衡的松弛时间、t=100 s时Z与E浓度、关灯后纯热稳态Z分率、相对于光照稳态的变化量及光照稳态总浓度守恒。假设无光漂白、局部升温和后续反应。
+\item 建立反应动力学、热力学或分布模型：ka=.02+.002，kb=.005+.008，Zss=ka/(ka+kb)，Z(t)=C0 Zss[1−exp(−(ka+kb)t)]。
+\item 从原始反应计量或速率常数导出未知量的代数关系，所有浓度、时间、活化能等数值采用题设单位。
+\item 计算第一组关键量：total\_forward\_rate = 0.022000000000000 s\textasciicircum{}-1；total\_reverse\_rate = 0.013000000000000 s\textasciicircum{}-1；Z\_fraction\_light\_ss = 0.62857142857143 fraction；Z\_over\_E\_light\_ss = 1.6923076923077 ratio。
+\item 计算产物、选择性或平均分子量：relaxation\_time\_s = 28.571428571429 s；Z\_t100\_M = 0.0060959021613454 mol/L；E\_t100\_M = 0.0039040978386546 mol/L。
+\item 完整结果与交叉量：Z\_fraction\_dark\_ss = 0.20000000000000 fraction；Z\_fraction\_light\_minus\_dark = 0.42857142857143 fraction；mass\_balance\_M = 0.010000000000000 mol/L。
+\item 核查底物骨架的反应物+产物库存、概率分率归一、活化自由能与速率比之间的一致性。
+\item 区分反应限速步与产物分支控制步，并说明实验中不受题设约束的副反应或溶剂化会影响选择性。
+\item 利用独立实现的第二组数值见证验证每个答案字段；同时指出其不能替代跨辑同构检查。
+\item 化学合理性、原创性与可出版状态仍须专家逐题审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+total\_forward\_rate = 0.022 s\textasciicircum{}-1；total\_reverse\_rate = 0.013 s\textasciicircum{}-1；Z\_fraction\_light\_ss = 0.628571429 fraction；Z\_over\_E\_light\_ss = 1.69230769 ratio；relaxation\_time\_s = 28.5714286 s；Z\_t100\_M = 0.00609590216 mol/L；E\_t100\_M = 0.00390409784 mol/L；Z\_fraction\_dark\_ss = 0.2 fraction；Z\_fraction\_light\_minus\_dark = 0.428571429 fraction；mass\_balance\_M = 0.01 mol/L\par
+\noindent\textbf{模型前提：}
+题设的限速步、统计分配和理想化条件成立，不代表真实体系普适性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O217 · 聚合单体链生长与链终止的PDI分布矩计算}
+\noindent\textbf{题目}\par
+某理想聚合反应所生成链长n≥1服从几何分布P(n)=(1−p)p\textasciicircum{}(n−1)，传播继续概率p=0.8000。每个重复单元摩尔质量100.0 g/mol，忽略端基质量。求数均链长Xn=1/(1−p)、重均链长Xw=(1+p)/(1−p)、分散系数Đ=Xw/Xn、数均/重均摩尔质量Mn、Mw、链长至少10的数分率P(n≥10)=p⁹、对应质量分率W(n≥10)=Σn≥10 nP(n)/ΣnP(n)、平均方差和链长n=1、2的数分率。注意数字分布与质量分布不同。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整底物、反应路径与假设：某理想聚合反应所生成链长n≥1服从几何分布P(n)=(1−p)p\textasciicircum{}(n−1)，传播继续概率p=0.8000。每个重复单元摩尔质量100.0 g/mol，忽略端基质量。求数均链长Xn=1/(1−p)、重均链长Xw=(1+p)/(1−p)、分散系数Đ=Xw/Xn、数均/重均摩尔质量Mn、Mw、链长至少10的数分率P(n≥10)=p⁹、对应质量分率W(n≥10)=Σn≥10 nP(n)/ΣnP(n)、平均方差和链长n=1、2的数分率。注意数字分布与质量分布不同。
+\item 建立反应动力学、热力学或分布模型：E[n]=1/(1−p)，E[n²]=(1+p)/(1−p)²，Xw=E[n²]/E[n]，W(n≥N)=p\textasciicircum{}(N−1)[N−(N−1)p]。
+\item 从原始反应计量或速率常数导出未知量的代数关系，所有浓度、时间、活化能等数值采用题设单位。
+\item 计算第一组关键量：number\_average\_DP = 5.0000000000000 units；weight\_average\_DP = 9.0000000000000 units；dispersity = 1.8000000000000 ratio；Mn\_gmol = 500.00000000000 g/mol。
+\item 计算产物、选择性或平均分子量：Mw\_gmol = 900.00000000000 g/mol；number\_fraction\_n\_ge10 = 0.13421772800000 fraction；mass\_fraction\_n\_ge10 = 0.37580963840000 fraction。
+\item 完整结果与交叉量：variance\_chain\_length = 20.000000000000 units2；number\_fraction\_n1 = 0.20000000000000 fraction；number\_fraction\_n2 = 0.16000000000000 fraction。
+\item 核查底物骨架的反应物+产物库存、概率分率归一、活化自由能与速率比之间的一致性。
+\item 区分反应限速步与产物分支控制步，并说明实验中不受题设约束的副反应或溶剂化会影响选择性。
+\item 利用独立实现的第二组数值见证验证每个答案字段；同时指出其不能替代跨辑同构检查。
+\item 化学合理性、原创性与可出版状态仍须专家逐题审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+number\_average\_DP = 5 units；weight\_average\_DP = 9 units；dispersity = 1.8 ratio；Mn\_gmol = 500 g/mol；Mw\_gmol = 900 g/mol；number\_fraction\_n\_ge10 = 0.134217728 fraction；mass\_fraction\_n\_ge10 = 0.375809638 fraction；variance\_chain\_length = 20 units2；number\_fraction\_n1 = 0.2 fraction；number\_fraction\_n2 = 0.16 fraction\par
+\noindent\textbf{模型前提：}
+题设的限速步、统计分配和理想化条件成立，不代表真实体系普适性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O218 · 有机热裂解反应的Eyring ΔH‡、ΔS‡与反应速率}
+\noindent\textbf{题目}\par
+某有机分子单分子热裂解在T1=300.0与T2=350.0 K遵循过渡态理论k=(kBT/h)exp(ΔS‡/R)exp(−ΔH‡/(RT))，给定ΔH‡=80.00 kJ/mol、ΔS‡=−50.00 J/(mol K)，kB=1.380649×10⁻²³ J/K、h=6.62607015×10⁻³⁴ J·s、R=8.314462618 J/(mol K)。求两温度的活化自由能ΔG‡、速率常数、半衰期、速率比、Eyring绘图斜率dln(k/T)/d(1/T)=−ΔH‡/R以及两温度TST前因子之比。不能把ΔH‡误当Arrhenius活化能Ea，后者约等于ΔH‡+RT。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整底物、反应路径与假设：某有机分子单分子热裂解在T1=300.0与T2=350.0 K遵循过渡态理论k=(kBT/h)exp(ΔS‡/R)exp(−ΔH‡/(RT))，给定ΔH‡=80.00 kJ/mol、ΔS‡=−50.00 J/(mol K)，kB=1.380649×10⁻²³ J/K、h=6.62607015×10⁻³⁴ J·s、R=8.314462618 J/(mol K)。求两温度的活化自由能ΔG‡、速率常数、半衰期、速率比、Eyring绘图斜率dln(k/T)/d(1/T)=−ΔH‡/R以及两温度TST前因子之比。不能把ΔH‡误当Arrhenius活化能Ea，后者约等于ΔH‡+RT。
+\item 建立反应动力学、热力学或分布模型：ΔG‡=ΔH‡−TΔS‡，k=(kBT/h)exp(−ΔG‡/(RT))。
+\item 从原始反应计量或速率常数导出未知量的代数关系，所有浓度、时间、活化能等数值采用题设单位。
+\item 计算第一组关键量：activation\_G\_300\_kJmol = 95.000000000000 kJ/mol；activation\_G\_350\_kJmol = 97.500000000000 kJ/mol；rate\_300\_sInv = 0.00018001228145944 s\textasciicircum{}-1；rate\_350\_sInv = 0.020516398258878 s\textasciicircum{}-1。
+\item 计算产物、选择性或平均分子量：half\_life\_300\_s = 3850.5549451421 s；half\_life\_350\_s = 33.785032431801 s；rate\_ratio\_350\_300 = 113.97221396531 ratio。
+\item 完整结果与交叉量：Eyring\_slope\_K = -9621.7884035954 K；prefactor\_350\_over\_300 = 1.1666666666667 ratio；activation\_entropy\_JmolK = -50.000000000000 J/(molK)。
+\item 核查底物骨架的反应物+产物库存、概率分率归一、活化自由能与速率比之间的一致性。
+\item 区分反应限速步与产物分支控制步，并说明实验中不受题设约束的副反应或溶剂化会影响选择性。
+\item 利用独立实现的第二组数值见证验证每个答案字段；同时指出其不能替代跨辑同构检查。
+\item 化学合理性、原创性与可出版状态仍须专家逐题审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+activation\_G\_300\_kJmol = 95 kJ/mol；activation\_G\_350\_kJmol = 97.5 kJ/mol；rate\_300\_sInv = 0.000180012281 s\textasciicircum{}-1；rate\_350\_sInv = 0.0205163983 s\textasciicircum{}-1；half\_life\_300\_s = 3850.55495 s；half\_life\_350\_s = 33.7850324 s；rate\_ratio\_350\_300 = 113.972214 ratio；Eyring\_slope\_K = -9621.7884 K；prefactor\_350\_over\_300 = 1.16666667 ratio；activation\_entropy\_JmolK = -50 J/(molK)\par
+\noindent\textbf{模型前提：}
+题设的限速步、统计分配和理想化条件成立，不代表真实体系普适性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O219 · 二级有机胺还原胺化反应的底物消耗和有效初速}
+\noindent\textbf{题目}\par
+在某理想还原胺化模型中，醛A与自由二级胺B反应形成中间体并被瞬时不可逆还原；整体初速可由r=k2[A][B]表达，k2=0.8000 L/(mol s)。外部储液池维持[B]=0.02000 M恒定，A初始0.01000 M。比较t=30.00与100.0 s时A残余量与还原胺产物浓度、转化率、拟一级速率kobs、半衰期、初始和t=100瞬时速度及产物在t=100的摩尔比，忽略胺耗尽及副缩醛、烯胺生成。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整底物、反应路径与假设：在某理想还原胺化模型中，醛A与自由二级胺B反应形成中间体并被瞬时不可逆还原；整体初速可由r=k2[A][B]表达，k2=0.8000 L/(mol s)。外部储液池维持[B]=0.02000 M恒定，A初始0.01000 M。比较t=30.00与100.0 s时A残余量与还原胺产物浓度、转化率、拟一级速率kobs、半衰期、初始和t=100瞬时速度及产物在t=100的摩尔比，忽略胺耗尽及副缩醛、烯胺生成。
+\item 建立反应动力学、热力学或分布模型：kobs=k2[B]，A(t)=A0 exp(−kobst)，P=A0−A，r(t)=kobs A(t)。
+\item 从原始反应计量或速率常数导出未知量的代数关系，所有浓度、时间、活化能等数值采用题设单位。
+\item 计算第一组关键量：pseudo\_first\_order\_rate = 0.016000000000000 s\textasciicircum{}-1；half\_life\_s = 43.321698784997 s；remaining\_A\_30\_M = 0.0061878339180614 mol/L；remaining\_A\_100\_M = 0.0020189651799466 mol/L。
+\item 计算产物、选择性或平均分子量：product\_30\_M = 0.0038121660819386 mol/L；product\_100\_M = 0.0079810348200534 mol/L；conversion\_30 = 0.38121660819386 fraction。
+\item 完整结果与交叉量：conversion\_100 = 0.79810348200534 fraction；initial\_rate\_M\_s = 0.00016000000000000 mol/(Ls)；rate\_t100\_M\_s = 0.000032303442879145 mol/(Ls)。
+\item 核查底物骨架的反应物+产物库存、概率分率归一、活化自由能与速率比之间的一致性。
+\item 区分反应限速步与产物分支控制步，并说明实验中不受题设约束的副反应或溶剂化会影响选择性。
+\item 利用独立实现的第二组数值见证验证每个答案字段；同时指出其不能替代跨辑同构检查。
+\item 化学合理性、原创性与可出版状态仍须专家逐题审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+pseudo\_first\_order\_rate = 0.016 s\textasciicircum{}-1；half\_life\_s = 43.3216988 s；remaining\_A\_30\_M = 0.00618783392 mol/L；remaining\_A\_100\_M = 0.00201896518 mol/L；product\_30\_M = 0.00381216608 mol/L；product\_100\_M = 0.00798103482 mol/L；conversion\_30 = 0.381216608 fraction；conversion\_100 = 0.798103482 fraction；initial\_rate\_M\_s = 0.00016 mol/(Ls)；rate\_t100\_M\_s = 3.23034429e-05 mol/(Ls)\par
+\noindent\textbf{模型前提：}
+题设的限速步、统计分配和理想化条件成立，不代表真实体系普适性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O220 · 底物构象快速平衡下分子内环化选择性和活性分率}
+\noindent\textbf{题目}\par
+有机底物在快速构象平衡下具有反应活性构象A和不活性构象B，[B]/[A]=K=3.000。只有A以一级速度kc=0.1000 s⁻¹环化生成产物P，构象交换远快于化学反应、产物不可逆。初始所有未反应底物总浓度C0=0.02000 M，t=20.00和60.00 s；求A、B构象平衡分率、观察一级速率kobs、两时刻总底物残余浓度与P产物浓度、20 s转化分率、半衰期以及构象转换使环化变慢的倍数。严格区分快速构象平衡下kobs与仅活性构象内的kc。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整底物、反应路径与假设：有机底物在快速构象平衡下具有反应活性构象A和不活性构象B，[B]/[A]=K=3.000。只有A以一级速度kc=0.1000 s⁻¹环化生成产物P，构象交换远快于化学反应、产物不可逆。初始所有未反应底物总浓度C0=0.02000 M，t=20.00和60.00 s；求A、B构象平衡分率、观察一级速率kobs、两时刻总底物残余浓度与P产物浓度、20 s转化分率、半衰期以及构象转换使环化变慢的倍数。严格区分快速构象平衡下kobs与仅活性构象内的kc。
+\item 建立反应动力学、热力学或分布模型：fA=1/(1+K)，kobs=fAkc，C(t)=C0e\textasciicircum{}(−kobst)，P(t)=C0−C(t)。
+\item 从原始反应计量或速率常数导出未知量的代数关系，所有浓度、时间、活化能等数值采用题设单位。
+\item 计算第一组关键量：active\_conformer\_fraction = 0.25000000000000 fraction；inactive\_conformer\_fraction = 0.75000000000000 fraction；observed\_rate = 0.025000000000000 s\textasciicircum{}-1；remaining\_20\_M = 0.012130613194253 mol/L。
+\item 计算产物、选择性或平均分子量：remaining\_60\_M = 0.0044626032029686 mol/L；product\_20\_M = 0.0078693868057473 mol/L；product\_60\_M = 0.015537396797031 mol/L。
+\item 完整结果与交叉量：conversion\_20 = 0.39346934028737 fraction；half\_life\_s = 27.725887222398 s；rate\_slowdown\_factor = 4.0000000000000 ratio。
+\item 核查底物骨架的反应物+产物库存、概率分率归一、活化自由能与速率比之间的一致性。
+\item 区分反应限速步与产物分支控制步，并说明实验中不受题设约束的副反应或溶剂化会影响选择性。
+\item 利用独立实现的第二组数值见证验证每个答案字段；同时指出其不能替代跨辑同构检查。
+\item 化学合理性、原创性与可出版状态仍须专家逐题审核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+active\_conformer\_fraction = 0.25 fraction；inactive\_conformer\_fraction = 0.75 fraction；observed\_rate = 0.025 s\textasciicircum{}-1；remaining\_20\_M = 0.0121306132 mol/L；remaining\_60\_M = 0.0044626032 mol/L；product\_20\_M = 0.00786938681 mol/L；product\_60\_M = 0.0155373968 mol/L；conversion\_20 = 0.39346934 fraction；half\_life\_s = 27.7258872 s；rate\_slowdown\_factor = 4 ratio\par
+\noindent\textbf{模型前提：}
+题设的限速步、统计分配和理想化条件成立，不代表真实体系普适性。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{物理化学}
