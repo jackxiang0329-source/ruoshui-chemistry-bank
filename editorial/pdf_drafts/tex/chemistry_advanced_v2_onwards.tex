@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (542题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (543题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -10381,6 +10381,31 @@ reduced\_mass\_m0 = 0.17060241 m0；binding\_energy\_eV = 0.0321268378 eV；exci
 oxygen\_deficiency\_delta = 0.1 per\_formula；vacancies\_per\_cell = 0.4 per\_cell；molar\_mass\_gmol = 173.9409 g/mol；theoretical\_density = 7256.26178 kg/m3；vacancy\_number\_density = 2.51224582e+27 m\textasciicircum{}-3；D\_800 = 9.17536983e-11 m2/s；jump\_frequency = 7.49611511e+09 s\textasciicircum{}-1；D\_ratio\_900\_800 = 3.09014198 ratio；D\_900 = 2.83531955e-10 m2/s；sigma\_900\_S\_cm = 0.0412018931 S/cm\par
 \noindent\textbf{模型前提：}
 纯萤石单相固溶体、空位仅由Gd3+电荷补偿、各向同性随机跳跃、固定Haven相关因子及空位密度。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I138 · 镍铁尖晶石反位参数的双亚晶格磁矩反演与质量磁化强度}
+\noindent\textbf{题目}\par
+某假想化学计量尖晶石NiFe₂O₄的阳离子分布写为(Ni₁₋ₓFeₓ)\_A[NiₓFe₂₋ₓ]\_B O₄，0≤x≤1，A四面体位每式量1个、B八面体位每式量2个。假定所有Ni为高自旋Ni²⁺（饱和自旋磁矩2 μB）、Fe为高自旋Fe³⁺（5 μB），在0 K两亚晶格严格反平行且无自旋倾斜；由中子衍射模型得到A亚晶格饱和磁矩为4.400 μB/式量。给定相对原子质量Ni=58.6934、Fe=55.845、O=15.999 g/mol，μB=9.2740100783×10⁻²⁴ A·m²，N\_A=6.02214076×10²³ mol⁻¹。求反位参数x、两个亚晶格及净饱和磁矩、各亚晶格Ni占位、每式量摩尔质量、每摩尔及单位质量饱和磁矩；以另一测量通道的净磁矩反向核验x，逐一检查位点、元素、电荷与磁矩极限，证明唯一物理解并阐述假设失效条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设反位参数x∈[0,1]，四面体A位组成为Ni\_(1−x)Fe\_x，八面体B位组成为Ni\_xFe\_(2−x)；每式量有1个A位及2个B位，绝不可将B位下标归一成一个位点。
+\item 按题设高自旋自旋-only饱和自旋磁矩，Ni²⁺为2 μB、Fe³⁺为5 μB；A亚晶格磁矩M\_A=2(1−x)+5x=2+3x μB/式量。
+\item B亚晶格磁矩M\_B=2x+5(2−x)=10−3x μB/式量，两个亚晶格按题设严格反平行。
+\item 故净磁矩M\_net=|M\_B−M\_A|=|8−6x| μB/式量。在0≤x≤1内，8−6x≥2>0，可去绝对值且反演唯一。
+\item 题设中性子衍射等效测得A亚晶格饱和磁矩4.400 μB/式量，因此x=(4.400−2)/3=0.8000，满足物理占位区间。
+\item 得到A位Ni=0.200、Fe=0.800，B位Ni=0.800、Fe=1.200；各元素合计Ni=1、Fe=2，且A位总数1、B位总数2。
+\item 反演所得B亚晶格磁矩为7.600 μB/式量，净磁矩为3.200 μB/式量。由净磁矩反向独立求x=(8−3.200)/6=0.8000。
+\item 氧离子为O²⁻，Ni²⁺与Fe³⁺给出总阳电荷2+2×3=8，四个氧给出−8，总电荷残差为0，与x无关。
+\item 摩尔质量M=58.6934+2×55.845+4×15.999=234.3794 g/mol；每摩尔式量的饱和磁矩为3.2×μ\_B×N\_A，单位A·m²/mol。
+\item 质量比饱和磁矩σ=3.2 μ\_B N\_A/(0.2343794 kg/mol)，单位A·m²/kg，且1 A·m²/kg=1 emu/g；不得把摩尔质量的g/mol直接当kg/mol。
+\item 端点x=0时净磁矩8 μB、x=1时2 μB，本题3.2在其间。由dM\_net/dx=−6<0可证明逆问题严格单调、唯一。
+\item 本题为0 K理想共线Néel两亚晶格的离子高自旋近似；自旋倾斜、氧缺陷、价态混合、温度激发及共价性都会使真实磁矩和占位反演偏离，不可当作材料实测定论。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+inversion\_x = 0.8 fraction；A\_sublattice\_muB = 4.4 muB/formula；B\_sublattice\_muB = 7.6 muB/formula；net\_moment\_muB = 3.2 muB/formula；formula\_mass\_g\_mol = 234.3794 g/mol；saturation\_A\_m2\_kg = 76.2516079 A m2/kg；moment\_per\_mol\_A\_m2 = 17.8718061 A m2/mol；x\_from\_net = 0.8 fraction；A\_Ni\_occupancy = 0.2 per\_formula；B\_Ni\_occupancy = 0.8 per\_formula；charge\_residual = 0 elementary\_charge/formula\par
+\noindent\textbf{模型前提：}
+理想化学计量NiFe2O4，Ni2+、Fe3+高自旋，零温刚性共线反平行亚晶格，忽略氧缺陷、自旋倾斜、共价性及热激发。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{分析化学}
