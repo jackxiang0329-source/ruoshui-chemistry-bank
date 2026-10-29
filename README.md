@@ -19,8 +19,8 @@
 - **第七辑新增 60 条高阶综合待审稿，四科各15道**：[60道完整题目与分步解答](editorial/advanced_integrated_v7/60_advanced_chemistry_solutions.md)、[分科JSONL目录](editorial/advanced_integrated_v7/README.md)、[跨辑相近模型人工复核队列](editorial/advanced_integrated_v7/overlap_review_queue.json)。全部经过机器计算复核，但新模型独立性仍待逐题审定。
 - **第八辑新增60条审校题**：[完整中文题目及逐步解答](editorial/advanced_integrated_v8/60_advanced_chemistry_solutions.md) · [集中结构化存储](editorial/advanced_integrated_v8/README.md)。无机、分析、有机、物化各15道。第八辑[45组潜在跨辑模型重叠](editorial/advanced_integrated_v8/overlap_review_queue.json)仍待逐题复核，**不能称其60种模型已经独立去重**。
 - **第九辑新增100条待专家审校题**：[四科各25道的完整中文题目与解答](editorial/advanced_integrated_v9/100_advanced_chemistry_solutions.md) · [集中数据及审稿说明](editorial/advanced_integrated_v9/README.md) · [核心模型待人工复核清单](editorial/advanced_integrated_v9/overlap_review_queue.json)。独立计算复核已通过，但跨辑模型独立性仍未全部确证。
-- **第十辑正在续编：72/100**，四科各18道，参见[第十辑进行中目录](editorial/advanced_integrated_v10/README.md)和[每题完整数值答案独立计算检查](scripts/check-advanced-authored-v10.mjs)；未达到100题整辑验收标准。
-- **当前全库累计478条编辑记录**（前九辑406+第十辑进行中72），第六至十辑342条仍有不同层级的跨辑核心模型审定及专家审核待办；专家正式批准 **0**，正式可出卷 **0**。
+- **第十辑正在续编：76/100**，四科各19道，参见[第十辑进行中目录](editorial/advanced_integrated_v10/README.md)和[每题完整数值答案独立计算检查](scripts/check-advanced-authored-v10.mjs)；未达到100题整辑验收标准。
+- **当前全库累计482条编辑记录**（前九辑406+第十辑进行中76），第六至十辑346条仍有不同层级的跨辑核心模型审定及专家审核待办；专家正式批准 **0**，正式可出卷 **0**。
 
 ## 清理政策
 

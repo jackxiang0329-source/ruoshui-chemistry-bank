@@ -2,8 +2,8 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 72,
-  "preliminary_flags": 33,
+  "current_draft_count": 76,
+  "preliminary_flags": 35,
   "pairs": [
     {
       "new_id": "UC-ADV10-I102",
@@ -202,9 +202,21 @@
       "prior_id": "UC-ADV10-P105",
       "reason": "正规溶液非理想混合与Margules活度热力学结构可能重叠，需重点人工复核。",
       "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-I119",
+      "prior_id": "UC-ADV10-I110",
+      "reason": "均为结构表征；I110晶体Bragg结构因子与I119 EXAFS单散射振荡反演的数学差异仍须人工比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-O116",
+      "prior_id": "UC-ADV10-O113",
+      "reason": "均涉及13C信息；O113醇醛加成同位素示踪逆问题与O116 Claisen动力学同位素富集仍须核查核心模型。",
+      "judgement": "pending_human_comparison"
     }
   ],
-  "notes": "第十辑68条待审记录；33组初步相似性标记，非确认重复；新增4题另入人工模型比较队列；专家批准0。",
+  "notes": "第十辑76条待审记录；35组初步相似性标记，非确认重复；本轮4题均入人工模型比较队列；专家批准0。",
   "expert_approved": 0,
   "new_items_requiring_cross_series_comparison": [
     {
@@ -566,6 +578,30 @@
       "model_family": "Onsager-surface-coupling-uphill-flux-positive-entropy",
       "judgement": "pending_human_comparison",
       "screening": "Numeric witness added; chemistry and equation-level cross-volume novelty await human review."
+    },
+    {
+      "new_id": "UC-ADV10-I119",
+      "model_family": "two-shell-EXAFS-linear-inversion-Debye-Waller-envelope",
+      "judgement": "pending_human_comparison",
+      "screening": "自动数值witness已编写；化学科学性和跨辑核心数学模型尚待人工专家复核。"
+    },
+    {
+      "new_id": "UC-ADV10-A119",
+      "model_family": "Zimm-static-scattering-bivariate-virial-angle-extrapolation",
+      "judgement": "pending_human_comparison",
+      "screening": "自动数值witness已编写；化学科学性和跨辑核心数学模型尚待人工专家复核。"
+    },
+    {
+      "new_id": "UC-ADV10-O116",
+      "model_family": "Claisen-site-carbon-KIE-Rayleigh-substrate-enrichment",
+      "judgement": "pending_human_comparison",
+      "screening": "自动数值witness已编写；化学科学性和跨辑核心数学模型尚待人工专家复核。"
+    },
+    {
+      "new_id": "UC-ADV10-P116",
+      "model_family": "Marcus-outer-sphere-electron-transfer-detailed-balance-inverted-region",
+      "judgement": "pending_human_comparison",
+      "screening": "自动数值witness已编写；化学科学性和跨辑核心数学模型尚待人工专家复核。"
     }
   ]
 }
