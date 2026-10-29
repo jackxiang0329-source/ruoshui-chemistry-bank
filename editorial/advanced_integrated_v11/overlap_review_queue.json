@@ -2,7 +2,7 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 18,
+  "current_draft_count": 24,
   "expert_approved": 0,
   "preliminary_flags": 4,
   "pairs": [
@@ -139,6 +139,42 @@
       "model_family": "LIBS-Boltzmann-thermal-excitation-lines-Stark-broadening-density",
       "judgement": "pending_human_comparison",
       "screening": "新数学模型和独立数值witness已登记；跨辑核心方程原创性与化学合理性尚需人工专家逐项复核。"
+    },
+    {
+      "new_id": "UC-ADV11-O126",
+      "model_family": "enzyme-enantioselective-kinetic-resolution-double-exponential-ee-Eyring",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器主要数值答案witness已编写；跨辑数学模型与化学科学性需要专家人工逐式比较。"
+    },
+    {
+      "new_id": "UC-ADV11-O127",
+      "model_family": "epoxide-pH-dependent-acid-base-competing-regio-opening-network",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器主要数值答案witness已编写；跨辑数学模型与化学科学性需要专家人工逐式比较。"
+    },
+    {
+      "new_id": "UC-ADV11-O128",
+      "model_family": "imine-EZ-NMR-calibrated-solvent-equilibrium-free-energy",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器主要数值答案witness已编写；跨辑数学模型与化学科学性需要专家人工逐式比较。"
+    },
+    {
+      "new_id": "UC-ADV11-P126",
+      "model_family": "Knudsen-effusion-thermal-vapor-pressure-enthalpy-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器主要数值答案witness已编写；跨辑数学模型与化学科学性需要专家人工逐式比较。"
+    },
+    {
+      "new_id": "UC-ADV11-P127",
+      "model_family": "Soret-thermodiffusion-binary-zero-flux-logit-thermal-gradient",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器主要数值答案witness已编写；跨辑数学模型与化学科学性需要专家人工逐式比较。"
+    },
+    {
+      "new_id": "UC-ADV11-P128",
+      "model_family": "WKB-rectangular-barrier-H-D-tunneling-isotope-mass-energy",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器主要数值答案witness已编写；跨辑数学模型与化学科学性需要专家人工逐式比较。"
     }
   ]
 }

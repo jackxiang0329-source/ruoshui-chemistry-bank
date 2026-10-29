@@ -18,6 +18,12 @@ const witness={
 };
 
 Object.assign(witness,{
+"UC-ADV11-O126":()=>{const s=.5,r=s/Math.exp(.08*20),q=s/Math.exp(.015*20),p=s-r,v=s-q,X=p+v;assert.ok(Math.abs(r+q+p+v-1)<1e-12);return[r,q,X,(q-r)/(q+r),p,v,(p-v)/X,.08/.015,8.314462618*298.15*Math.log(.08/.015)/1000,r+q];},
+"UC-ADV11-O127":()=>{const a=10**(-1)/(1+10**(-1)),h=.2,b=.05,p=a*h*4/5+(1-a)*b/3,q=a*h/5+(1-a)*b*2/3,K=p+q,X=-Math.expm1(-12*K),P=X*p/K;assert.ok(Math.abs(P+(X-P)+(1-X)-1)<1e-13);return[a,p,q,K,p/K,X,P,X-P,1-X,1/3];},
+"UC-ADV11-O128":()=>{const q1=4.5/1.5,q2=.75/1.5,g=x=>-8.314462618*298.15*Math.log(x)/1000;assert.ok(q1>1&&q2<1);return[q1,q2,q1/(1+q1),1/(1+q1),q2/(1+q2),1/(1+q2),g(q1),g(q2),g(q2)-g(q1),4.5/5.5,.75/1.75];},
+"UC-ADV11-P126":()=>{const R=8.314462618,t=[330,350,370],r=[.8,1.8],P=r[1]/r[0]*Math.sqrt(t[1]/t[0]),H=R*Math.log(P)/(1/t[0]-1/t[1]),p3=Math.exp(H/R*(1/t[1]-1/t[2]));assert.ok(p3>1);return[P,H/1000,r[1]*Math.sqrt(t[1]/t[2])*p3,p3,Math.log(P),r[1]*Math.sqrt(t[1]/t[0])*Math.exp(-H/R*(1/t[0]-1/t[1]))];},
+"UC-ADV11-P127":()=>{let x=.4,s=.015,dT=20,p=x/(1-x),q=p/Math.exp(s*dT),z=q/(1+q);assert.ok(z<x&&Math.abs(z/(1-z)-q)<1e-13);return[p,q,z,1-z,p/q,-s,-x*(1-x)*s*2000,x-z];},
+"UC-ADV11-P128":()=>{let a=.8e-10,h=1.054571817e-34,ev=1.602176634e-19,m=[1.67262192369e-27,3.3435837724e-27],k=m.map(z=>Math.sqrt(2*z*.1*ev)/h),p=k.map(z=>Math.exp(-2*a*z)),up=Math.exp(-2*a*Math.sqrt(2*m[0]*.09*ev)/h);assert.ok(p[0]>p[1]&&up>p[0]);return[k[0],k[1],p[0],p[1],p[0]/p[1],k[1]/k[0],up,2*a*k[0]];},
 "UC-ADV11-I129":()=>{const a=12,b=13.003355,o=15.994915,u=1.6605390666e-27,m=z=>1/(1/z+1/o),ma=m(a),mb=m(b);const n=2050*Math.sqrt(ma/mb),k=ma*u*(2*Math.PI*299792458*205000)**2;assert.ok(n<2050&&k>0);return[ma,mb,n,2050-n,(2050-n)/2050,k,.5*6.02214076e23*6.62607015e-34*299792458*100*(2050-n)/1000];},
 "UC-ADV11-I130":()=>{const c=6*(3+1)+2,n=5*3+9,exC=2*6,exN=2*5,pc=(c-exC)/2,pn=(n-exN)/2;assert.equal(pc,6+1);assert.equal(pn,5+2);return[c,exC,c-exC,pc,n,exN,n-exN,pn,5+1];},
 "UC-ADV11-I131":()=>{const L=6.94,Co=58.933,O=15.999,f=.35,orig=L+Co+2*O,fin=f*L+Co+2*O,x=1-f,Q=x*96485.33212,cap=Q/(3.6*orig);assert.ok(Math.abs(f+3+x-4)<1e-12);return[orig,fin,3+x,Q,cap,3.85*cap,f,x*L,x];},
