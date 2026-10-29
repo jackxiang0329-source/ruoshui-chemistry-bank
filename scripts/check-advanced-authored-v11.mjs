@@ -71,6 +71,7 @@ Object.assign(witness,{
 "UC-ADV11-O134":()=>{const ke=.06,kx=.025,re=.01,rx=.005,dt=30/30000;let A=1,E=0,X=0;const f=y=>[-(ke+kx)*y[0]+re*y[1]+rx*y[2],ke*y[0]-re*y[1],kx*y[0]-rx*y[2]];let z=[A,E,X];for(let i=0;i<30000;i++){const k1=f(z),k2=f(z.map((v,j)=>v+dt*k1[j]/2)),k3=f(z.map((v,j)=>v+dt*k2[j]/2)),k4=f(z.map((v,j)=>v+dt*k3[j]));z=z.map((v,j)=>v+dt*(k1[j]+2*k2[j]+2*k3[j]+k4[j])/6);} [A,E,X]=z;const tr=-(ke+re+kx+rx),det=(ke+re)*(kx+rx)-ke*kx,w=Math.sqrt(tr*tr-4*det);assert.ok(Math.abs(A+E+X-1)<1e-12&&Math.abs(A-1/12)>.01);return[A,E,X,E+X,E/(E+X),1/12,1/2,5/12,(tr-w)/2,(tr+w)/2,ke/re,kx/rx];},
 "UC-ADV11-P134":()=>{const M=350,H=200,C=5,R=.008314462618,g=t=>H*(1-t/M)+C*((t-M)-t*Math.log(t/M)),star=M*Math.exp(-H/(M*C));let lo=250,hi=300;for(let i=0;i<110;i++){let mid=(lo+hi)/2;if(g(mid)>0)hi=mid;else lo=mid;}let cold=(lo+hi)/2,t=298.15,enthalpy=H+C*(t-M),entropy=H/M+C*Math.log(t/M),dG=g(t),K=Math.exp(-dG/(R*t));assert.ok(cold<star&&star<M&&Math.abs(g(cold))<1e-11);return[cold,star,g(star),dG,enthalpy,entropy,K/(1+K),K,g(250),g(M),g(400)];}
 });
+Object.assign(witness,{"UC-ADV11-I138":()=>{const ni=2,fe=5,x=(4.4-ni)/(fe-ni),A=(1-x)*ni+x*fe,B=x*ni+(2-x)*fe,net=B-A,M=58.6934+2*55.845+4*15.999,N=6.02214076e23,mb=9.2740100783e-24;assert.ok(x>=0&&x<=1&&net>0&&Math.abs((1-x)+x-1)<1e-14);return[x,A,B,net,M,net*mb*N/(M/1000),net*mb*N,(8-net)/6,1-x,x,2+2*3-4*2];}});
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();

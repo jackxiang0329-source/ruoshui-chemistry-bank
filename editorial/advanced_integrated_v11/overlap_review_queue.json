@@ -2,7 +2,7 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 48,
+  "current_draft_count": 49,
   "expert_approved": 0,
   "preliminary_flags": 14,
   "pairs": [
@@ -379,6 +379,12 @@
       "model_family": "two-state-unfolding-positive-heat-capacity-cold-denaturation-Gibbs-Helmholtz",
       "judgement": "pending_human_comparison",
       "screening": "独立主要答案向量已编写、自动核验与跨辑历史初筛必须通过CI；化学科学性、数学模型独立性、著作权待人工专家复核。"
+    },
+    {
+      "new_id": "UC-ADV11-I138",
+      "model_family": "spinel-cation-inversion-NiFe2O4-Neel-two-sublattice-saturation-mass-magnetization",
+      "judgement": "pending_human_comparison",
+      "screening": "独立磁矩与元素/电荷/占位数值witness已建立；同类晶体磁性模型需跨辑人工逐式比较。"
     }
   ]
 }
