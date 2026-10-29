@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第11辑 (53题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第11辑 (57题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -354,6 +354,31 @@ dissociation\_k1\_s\_inv = 0.01 s\textasciicircum{}-1；capture\_competition\_a\
 恒Cl、恒L储液池，五配位中间体准稳态、无其它回流及副反应；假想理想Co(III)配体置换。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I140 · 四方d1钛配合物三跃迁晶场反演与轨道能级迹检验}
+\noindent\textbf{题目}\par
+一假想六配位Ti(III) d¹配合物服从理想D4h晶场模型：E(x²−y²)=6Dq+2Ds−Dt，E(z²)=6Dq−2Ds−6Dt，E(xy)=−4Dq+2Ds−Dt，E(xz)=E(yz)=−4Dq−Ds+4Dt，全部采用cm⁻¹，并忽略共价与自旋轨道修正。光谱指认最低态为d(xz/yz)，至d(xy)、d(z²)、d(x²−y²)能隙依次是700.0、8600.0、10700.0 cm⁻¹。求Dq、Ds、Dt、10Dq、四组轨道能级及三个真空波长，检验能级顺序、五轨道重心及唯一性，并讨论低频跃迁的实验可观测性与模型局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假定孤立Ti(III) d¹中心在理想四方D4h畸变八面体中，晶场参数Dq、Ds、Dt均以cm⁻¹计；忽略共价性、自旋轨道和振动耦合。
+\item 题设d轨道基准重心为零：E(x²−y²)=6Dq+2Ds−Dt，E(z²)=6Dq−2Ds−6Dt，E(xy)=−4Dq+2Ds−Dt，E(xz)=E(yz)=−4Dq−Ds+4Dt。
+\item 相对于最低d(xz/yz)轨道，跃迁到d(xy)的能隙为3Ds−5Dt=700 cm⁻¹。
+\item 相对于同一最低轨道，跃迁到d(z²)的能隙为10Dq−Ds−10Dt=8600 cm⁻¹。
+\item 最高轨道d(x²−y²)的能隙为10Dq+3Ds−5Dt=10700 cm⁻¹；三个独立方程构成非奇异的三元线性反演。
+\item 第三式减第二式给4Ds+5Dt=2100，联立第一式得Ds=400 cm⁻¹、Dt=100 cm⁻¹，进而Dq=1000 cm⁻¹。
+\item 回代求4组能级E(xz/yz)=-4000、E(xy)=-3300、E(z²)=4600、E(x²−y²)=6700 cm⁻¹，满足严格递增次序。
+\item 将波数换成真空波长10⁷/ν̃，得到14285.71429、1162.79070、934.57944 nm；第一条属远红外而非可见光。
+\item 按轨道简并度检查重心：2E(xz/yz)+E(xy)+E(z²)+E(x²−y²)=0 cm⁻¹，在舍入内为零。
+\item 回代三条跃迁依次复现700、8600、10700 cm⁻¹；由于独立方程系数矩阵行列式非零且能级排序满足假设，物理解唯一。
+\item 单个d电子占据最低能级，S=1/2；中心对称配合物的纯d–d电偶极跃迁受Laporte规则限制，观测强度可能依赖振动或对称性破缺。
+\item 模型依赖Ti(III) d¹、理想D4h与已识别的跃迁起终态；共价性、自旋轨道、静态/动态畸变或其它谱带重叠可破坏此反演。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Dq = 1000 cm\textasciicircum{}-1；Ds = 400 cm\textasciicircum{}-1；Dt = 100 cm\textasciicircum{}-1；octahedral\_10Dq = 10000 cm\textasciicircum{}-1；E\_xz\_yz = -4000 cm\textasciicircum{}-1；E\_xy = -3300 cm\textasciicircum{}-1；E\_z2 = 4600 cm\textasciicircum{}-1；E\_x2y2 = 6700 cm\textasciicircum{}-1；wavelength\_1 = 14285.7143 nm；wavelength\_2 = 1162.7907 nm；wavelength\_3 = 934.579439 nm；orbital\_trace = 0 cm\textasciicircum{}-1\par
+\noindent\textbf{模型前提：}
+模型依赖Ti(III) d¹、理想D4h与已识别的跃迁起终态；共价性、自旋轨道、静态/动态畸变或其它谱带重叠可破坏此反演。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第11辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -647,6 +672,31 @@ electric\_field = 30000 V/m；mu\_apparent\_neutral = 6.66666667e-08 m2/V/s；mu
 i400\_uA = 34.1953138 uA；i1600\_uA = 42.6997674 uA；i900\_uA = 39.4309143 uA；kinetic\_limit\_uA = 56.8346849 uA；heterogeneous\_k\_cm\_s = 0.003 cm/s；diffusivity\_cm2\_s = 1.2e-05 cm2/s；Levich\_B\_uA\_per\_sqrt\_rad\_s = 13.2639046 uA/(rad/s)\textasciicircum{}0.5；levich\_limit\_900\_uA = 128.767704 uA；fraction\_of\_Levich\_900 = 0.306217421 ratio；omega\_900\_rad\_s = 94.2477796 rad/s；mass\_transfer\_shortfall\_fraction = 0.693782579 fraction\par
 \noindent\textbf{模型前提：}
 稳态旋转圆盘层流、单电子还原、固定浓度与电极面积、忽略迁移及背景电流，混合阻力按Koutecky–Levich串联。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A139 · 非等温DSC双峰温Kissinger反演与反应焓独立核算}
+\noindent\textbf{题目}\par
+对一种理想单步放热反应作线性升温DSC，动力学dα/dt=k(T)(1−α)，k=Aexp[−Ea/(RT)]，R=8.314462618 J/(mol·K)，在425.0 K峰温下升温率β₁=1.2129785284287 K/s，在440.0 K峰温下β₂=2.6805276992894 K/s。实验基线校正总放热600.0 J/g，试样质量2.000 mg，反应物摩尔质量150.0 g/mol，且放热与转化量成正比，无传热延迟。导出Kissinger峰温方程，反演Ea、A与两峰的k值；预测455.0 K的峰升温率(K/s及K/min)；求总放热、摩尔反应焓，检查唯一性、能量单位及模型边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假设单一不可逆一级过程dα/dt=k(T)(1−α)，且k(T)=A exp[−Ea/(RT)]、β=dT/dt为常数。
+\item 在每个DSC放热速率峰顶，对k(T)(1−α)关于T求导并令零，得到k(Tp)=β Ea/(R Tp²)。
+\item 将Arrhenius式代入峰条件得到Kissinger方程ln(β/Tp²)=ln(AR/Ea)−Ea/(R Tp)，横坐标是1/Tp而不是Tp。
+\item 两条观测峰分别为425.0 K和440.0 K，升温率为1.21297852843与2.68052769929 K/s，均为正。
+\item 直线斜率[ln(β₂/T₂²)−ln(β₁/T₁²)]/(1/T₂−1/T₁)=-9020.42662837 K，因两温度不同可唯一识别斜率。
+\item 由斜率求Ea=−R slope=75.0000000000 kJ/mol，正能垒符合热激活动力学。
+\item 由截距回算A=Ea β₁ exp(Ea/RT₁)/(RT₁²)=100000000.000 s⁻¹；另一峰得同值，是独立交叉校验。
+\item 峰温425与440 K对应的一级k分别0.060576242588和0.12489412932 s⁻¹，直接验证峰条件。
+\item 从得到的Ea和A外推455 K，升温率β₃=5.6345382613 K/s=338.07229568 K/min，不能混淆分钟和秒。
+\item 基线校正总放热为600.0 J/g，质量0.002000 g的样品释放1.2000 J；其热量积分与反应速率峰温是不同测量量。
+\item 反应物式量150.0 g/mol，因此放热反应ΔH=−600×150 J/mol=−90.00 kJ/mol，不应与正的活化能混同。
+\item 峰条件反演只适用于单步一级过程且温度滞后和仪器传热可忽略；多峰重叠、热梯度、扩散控制会改变表观Ea及A。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+beta\_425 = 1.21297853 K/s；beta\_440 = 2.6805277 K/s；activation\_kJ\_mol = 75 kJ/mol；arrhenius\_prefactor\_s = 100000000 s\textasciicircum{}-1；k\_425 = 0.0605762426 s\textasciicircum{}-1；k\_440 = 0.124894129 s\textasciicircum{}-1；beta\_455 = 5.63453826 K/s；beta\_455\_K\_min = 338.072296 K/min；total\_heat\_J = 1.2 J；reaction\_enthalpy\_kJ\_mol = -90 kJ/mol；beta\_ratio = 2.20987234 ratio；Kissinger\_slope\_K = -9020.42663 K\par
+\noindent\textbf{模型前提：}
+峰条件反演只适用于单步一级过程且温度滞后和仪器传热可忽略；多峰重叠、热梯度、扩散控制会改变表观Ea及A。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -948,6 +998,31 @@ intramolecular\_Kc = 1.5 dimensionless；dimerization\_Kd\_M\_inv = 62.5 L/mol�
 理想溶液，唯一三物种M/C/D，单体内环化和两分子环二聚体均为可逆半缩醛无水反应，温度不变且定量NMR信号已校准。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O136 · Baeyer–Villiger迁移区域选择性与18O原子映射及响应校正}
+\noindent\textbf{题目}\par
+假想苯乙酮PhCOCH₃以\textasciicircum{}18O富集过酸作Baeyer–Villiger氧化，只有苯基迁移（乙酸苯酯）与甲基迁移（苯甲酸甲酯）两不可逆并行路径；两条路径同反应级数且酯不进一步转化。原酮羰基氧为\textasciicircum{}16O而不交换，过酸实际插入氧原子的\textasciicircum{}18O比例80.00\%，其余是\textasciicircum{}16O。起始苯乙酮0.01000 mol，转化率50.00\%，所有耗用底物均转为两支酯。GC原始面积分别为8400、2400，响应系数分别1.200、0.800；T=298.15 K、R=8.314462618 J/(mol·K)，C/H/O原子量12.011/1.008/15.999。求产物比例及竞争速率比、两酯摩尔数、同位素插氧及原羰基氧的去向、未反应量、迁移活化自由能差G‡Ph−G‡Me、原酮及酯摩尔质量。明确分子式与原子守恒并解释为何不能将原酮羰基氧误当作过酸插氧。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 底物苯乙酮PhC(=O)CH₃的Baeyer–Villiger氧化中，苯基迁移在C(=O)与Ph之间插入过酸氧，得到乙酸苯酯CH₃C(=O)OPh。
+\item 若甲基迁移，则氧插在羰基碳与CH₃之间，得到苯甲酸甲酯PhC(=O)OCH₃；两产物都含C₈H₈O₂，而苯乙酮含C₈H₈O。
+\item 过酸供给的氧中\textasciicircum{}18O原子占80.00\%，且原有羰基氧为\textasciicircum{}16O且不交换；因此\textasciicircum{}18O位于产物C–O–R中的新增醚氧，不在羰基氧上。
+\item 苯乙酮起始0.01000 mol，50.00\%转化且无其它有机骨架产物，则两支酯产量之和0.005000 mol，剩余苯乙酮0.005000 mol。
+\item GC峰面积必须分别除以响应因子；乙酸苯酯校正面积为8400/1.200=7000，苯甲酸甲酯为2400/0.800=3000。
+\item 两支摩尔分率为p\_Ph=0.70000000与p\_Me=0.30000000；共同反应级数且无二次转化时k\_Ph/k\_Me=2.333333333。
+\item 乙酸苯酯0.003500000000 mol，苯甲酸甲酯0.001500000000 mol；两者摩尔数加和为0.005 mol。
+\item 酯产物新插氧总量0.005 mol，其中\textasciicircum{}18O=0.004000000000 mol、\textasciicircum{}16O=0.001000000000 mol；这与两产物总新醚氧数相符。
+\item 每个酯均保留原底物一个羰基氧，因此产物原羰基\textasciicircum{}16O总数0.005000 mol；未反应酮还含原羰基\textasciicircum{}16O 0.005000 mol。
+\item 相同指前因子Eyring竞争模型下ΔΔG‡=G‡Ph−G‡Me=−RT ln(k\_Ph/k\_Me)=-2.1004149871 kJ/mol。
+\item 由原子量得苯乙酮C₈H₈O式量120.1510 g/mol，两种酯C₈H₈O₂式量136.1500 g/mol。每次氧化在有机骨架上新增恰一个氧，C与H均守恒。
+\item 此模型假设Baeyer–Villiger为仅有的两支迁移、无同位素交换且响应校正准确；真实过酸副反应、产物水解和质谱同位素分辨率均可能导致偏差，机理归属须实验验证。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+phenyl\_branch = 0.7 fraction；methyl\_branch = 0.3 fraction；k\_phenyl\_over\_k\_methyl = 2.33333333 ratio；phenyl\_acetate\_mol = 0.0035 mol；methyl\_benzoate\_mol = 0.0015 mol；inserted\_18O\_mol = 0.004 mol；inserted\_16O\_mol = 0.001 mol；unreacted\_ketone\_mol = 0.005 mol；activation\_G\_phenyl\_minus\_methyl\_kJ\_mol = -2.10041499 kJ/mol；acetophenone\_molar\_mass = 120.151 g/mol；ester\_molar\_mass = 136.15 g/mol；substrate\_molecular\_balance = 0.01 mol\par
+\noindent\textbf{模型前提：}
+此模型假设Baeyer–Villiger为仅有的两支迁移、无同位素交换且响应校正准确；真实过酸副反应、产物水解和质谱同位素分辨率均可能导致偏差，机理归属须实验验证。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第11辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -1247,6 +1322,31 @@ cold\_denaturation\_K = 275.869985 K；G\_max\_temperature\_K = 312.201072 K；G
 buoyant\_mass\_kg = 6.58624799e-21 kg；particle\_radius\_nm = 19.8841253 nm；stokes\_drag\_kg\_s = 3.74806932e-10 kg/s；diffusion\_m2\_s = 1.09827344e-11 m2/s；radial\_beta\_m\_inv2 = 2000 m\textasciicircum{}-2；outer\_inner\_density\_ratio = 54.59815 ratio；inner\_number\_m\_inv3 = 7.46294415e+14 m\textasciicircum{}-3；outer\_number\_m\_inv3 = 4.07462944e+16 m\textasciicircum{}-3；mid\_number\_m\_inv3 = 4.51481811e+15 m\textasciicircum{}-3；drift\_mid\_m\_s = 2.19654688e-09 m/s；annular\_Peclet = 4.8 dimensionless；given\_mean\_density\_m\_inv3 = 1e+16 m\textasciicircum{}-3；integrated\_mean\_density\_m\_inv3 = 1e+16 m\textasciicircum{}-3\par
 \noindent\textbf{模型前提：}
 单分散实心球，理想稀粒子分布，热平衡时间足够长，恒温恒ω，Stokes阻力及爱因斯坦扩散关系。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P136 · 可逆二聚化学弛豫的Jacobian、Debye损耗峰与参数反演}
+\noindent\textbf{题目}\par
+理想稀溶液仅有可逆二聚2A⇌A₂，正向二级常数k\_f(L mol⁻¹ s⁻¹)、逆向一级常数k\_r(s⁻¹)，总单体单元浓度C\_T=[A]+2[A₂]=0.1000 mol/L；平衡常数K=k\_f/k\_r=[A₂]/[A]²=20.00 L/mol。恒温下给正向反应速率常数施加很小正弦相对扰动k\_f→k\_f[1+εexp(iωt)]，逆向常数不变、ε≪1。单弛豫耗散谱的峰在ω\_peak=0.1000√17 rad/s。求平衡单体及二聚体浓度、动力学k\_r和k\_f、唯一稳定特征值λ、弛豫时间及Hz峰频；从反应守恒与动力学雅可比导出复响应χ(ω)=δ[A₂]/ε的静态幅值和峰频幅值、耗散幅与相位，并检查参数唯一、低高频极限及模型边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 体系中只发生2A⇌A₂，假设理想稀溶液恒温恒体积，则总单体单元浓度C\_T=[A]+2[A₂]=0.1000 mol/L，在反应中严格守恒。
+\item 正向二级常数k\_f、逆向一级常数k\_r，平衡常数K=k\_f/k\_r=[A₂]/[A]²=20.00 L/mol。
+\item 联立质量作用和平衡质量守恒，得到2K[A]²+[A]−C\_T=0；在非负浓度区间左端严格增加，只存在一个正根。
+\item 该正根[A]=[√(1+8KC\_T)−1]/(4K)=0.0390388203202 mol/L；二聚体浓度[D]=K[A]²=0.0304805898399 mol/L。
+\item 把[A]=C\_T−2[D]代入动力学d[D]/dt=k\_f[A]²−k\_r[D]，沿守恒流形对平衡点求一阶导数，得到d(δD)/dt=−(k\_r+4k\_f[A]eq)δD。
+\item 令λ=k\_r+4k\_f[A]eq=k\_r√(1+8KC\_T)，显然λ>0，平衡点局部稳定；频域损耗峰角频率观测为ω\_peak=0.1√17=0.412310562562 rad/s。
+\item 在单一Debye弛豫近似下ω\_peak=λ，故反演k\_r=0.100000000000 s⁻¹和k\_f=Kk\_r=2.00000000000 L/(mol·s)。
+\item 弛豫时间τ=1/λ=2.42535625036 s、峰频f=λ/(2π)=0.0656212641207 Hz，必须区分角频率rad/s与普通Hz。
+\item 为定义响应，额外对正向速率常数施加无量纲小驱动k\_f→k\_f(1+εe\textasciicircum{}\{iωt\})，仅保留ε一阶项；导出dδD/dt+λδD=k\_f[A]eq² εe\textasciicircum{}\{iωt\}。
+\item 以χ(ω)=δD\_amplitude/ε定义复响应，得χ(ω)=χ₀/(1+iωτ)，静态系数χ₀=k\_f[A]eq²/λ=0.00739262890829 mol/L。
+\item 峰位置ωτ=1时幅值|χ|=0.00522737803185 mol/L，耗散分量−Imχ=0.00369631445415 mol/L，按e\textasciicircum{}\{iωt\}驱动惯例相位为−π/4。
+\item 低频ωτ≪1时χ→χ₀、高频ωτ≫1时χ→0；若存在其它缔合态、活度非理想、驱动改变逆反应或多个弛豫时间，单峰模型不再适用。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+equilibrium\_A\_mol\_L = 0.0390388203 mol/L；equilibrium\_dimer\_mol\_L = 0.0304805898 mol/L；reverse\_rate\_s = 0.1 s\textasciicircum{}-1；forward\_rate\_L\_mol\_s = 2 L/(mol s)；relaxation\_rate\_s = 0.412310563 s\textasciicircum{}-1；relaxation\_time\_s = 2.42535625 s；loss\_peak\_Hz = 0.0656212641 Hz；static\_susceptibility\_mol\_L = 0.00739262891 mol/L；peak\_amplitude\_mol\_L = 0.00522737803 mol/L；peak\_loss\_mol\_L = 0.00369631445 mol/L；phase\_lag\_rad = -0.785398163 rad；total\_monomer\_units\_mol\_L = 0.1 mol/L；jacobian\_factor = 4.12310563 dimensionless\par
+\noindent\textbf{模型前提：}
+低频ωτ≪1时χ→χ₀、高频ωτ≫1时χ→0；若存在其它缔合态、活度非理想、驱动改变逆反应或多个弛豫时间，单峰模型不再适用。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
