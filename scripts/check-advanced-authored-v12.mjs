@@ -55,7 +55,7 @@ Object.assign(witnesses,{
 });
 
 Object.assign(witnesses,{
-"UC-ADV12-I159":()=>{const m=148+738+1451,o=249,a=-141+744,pre=m+o+a,form=-602,L=form-pre,hyd=-1921-1300,sol=-L+hyd,R=8.314462618,T=298.15;assert.ok(pre>0&&L<0&&form-(pre+L)===0);return[m,o,a,pre,L,-L,hyd,sol,0,0,-L/pre,sol/1000,sol/(R*T),Math.exp(-sol/(R*T)),sol/(R*T*Math.log(10))];},
+"UC-ADV12-I159":()=>{const m=148+738+1451,o=249,a=-141+744,pre=m+o+a,form=-602,L=form-pre,hyd=-1921-1300,sol=-L+hyd,R=8.314462618,T=298.15;assert.ok(pre>0&&L<0&&form-(pre+L)===0);return[m,o,a,pre,L,-L,hyd,sol,0,0,-L/pre,sol/1000];},
 "UC-ADV12-A159":()=>{const n0=20000,v=1000,theta=1.438776877*v,T=350,ambient=298.15,F=((n0+v)/(n0-v))**4,r=F*Math.exp(-theta/T),Tinv=theta/Math.log(F/r),S=1e6,A=S*r,occ=1/Math.expm1(theta/T),sr=r*Math.sqrt(1/A+1/S),st=T*T/theta*Math.sqrt(1/A+1/S);assert.ok(Math.abs(Tinv-T)<1e-12&&A>0);return[n0-v,n0+v,1e7/(n0-v),1e7/(n0+v),F,Math.exp(-theta/T),r,Tinv,occ,1+occ,A,sr,st,T-ambient,Math.log(F/r),A/S];}
 });
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
