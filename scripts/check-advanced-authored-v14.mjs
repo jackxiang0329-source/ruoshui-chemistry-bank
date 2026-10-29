@@ -60,6 +60,48 @@ const witnesses={
 "UC-ADV14-P209":()=>{let n=x=>2*20*x/((1-x)*(1+19*x)),a=n(.3),b=n(.5),i=1/(2*20),s=19/(2*20);return[a,b,a/2,b/2,.3/(a*.7),s,i,1/(s+i),1+s/i]},
 "UC-ADV14-P210":()=>{let k=2*.072*18e-6/(R*298.15),a=-k/5e-9,b=-k/1e-8;return[Math.exp(a),Math.exp(b),a,b,2*.072/5e-9,R*298.15*a,R*298.15*b,-k/Math.log(.9)*1e9]},
 };
+const invariantChecks={
+"UC-ADV14-I205":a=>[a.K250/(1+a.K250)-a.highspin_fraction_250,a.mu_eff_300_muB**2-24*a.highspin_fraction_300,a.K300/a.K250-a.K300_over_K250],
+"UC-ADV14-I206":a=>[a.EDTA_total_M-a.CaY_M-a.MgY_M-1e-9,a.Ca_total_M-a.CaY_M-2e-6,a.CaY_M/a.MgY_M-a.CaY_over_MgY],
+"UC-ADV14-I207":a=>[a.CeIII_fraction+a.CeIV_fraction-1,a.Ce_average_oxidation-(4-2*.08),a.O2_released_mol-a.vacancy_mol/2],
+"UC-ADV14-I208":a=>[a.CuI_equilibrium_M+2*a.CuII_equilibrium_M-.01,a.K*a.CuI_equilibrium_M**2-a.CuII_equilibrium_M,a.Cu_metal_mass_g-63.546*a.Cu_metal_mol],
+"UC-ADV14-A205":a=>[a.sample_light_umol+a.sample_heavy_umol-a.sample_total_umol,a.mixture_light_umol-a.sample_light_umol-a.spike_light_umol,a.mixture_heavy_umol/a.mixture_light_umol-a.ratio_reconstruction],
+"UC-ADV14-A206":a=>[2*a.cX_M+a.cY_M+a.baseline_absorbance-a.A1_reconstructed,a.cX_M+3*a.cY_M+a.baseline_absorbance-a.A2_reconstructed,3*a.cX_M+2*a.cY_M+a.baseline_absorbance-a.A3_reconstructed],
+"UC-ADV14-A207":a=>[a.A_initial_counts+a.B_initial_counts-1000,a.A_initial_counts*2+a.B_initial_counts*8-a.integrated_area_counts_ns,a.A_initial_counts*Math.exp(-2)+a.B_initial_counts*Math.exp(-.5)-a.I4_counts],
+"UC-ADV14-A208":a=>[a.current_1s_A/a.current_4s_A-a.current_ratio,a.charge_4s_C/a.charge_1s_C-a.charge_ratio,a.D_recovered_cm2_s-1e-5],
+"UC-ADV14-O201":a=>[a.instant_F1+a.instant_F2-1,a.instant_F1/a.instant_F2-a.polymer_M1_M2_ratio,a.feed_f1_at_X001_first_order-.4-.01*a.initial_df1_dX],
+"UC-ADV14-O202":a=>[a.R_remaining_mmol+a.R_product_mmol-.5,a.S_remaining_mmol+a.S_product_mmol-.5,a.R_product_mmol+a.S_product_mmol-a.product_total_mmol],
+"UC-ADV14-O203":a=>[Math.exp(-(a.Gendo_298_kJmol-a.Gexo_298_kJmol)*1000/(R*298.15))-a.kendo_over_kexo_298,a.kendo_over_kexo_350/(1+a.kendo_over_kexo_350)-a.endo_fraction_350,a.crossover_temperature_K-200],
+"UC-ADV14-O204":a=>[2e7*a.radical_concentration_M**2-a.initiation_rate_M_s,2000*a.radical_concentration_M-a.polymerization_rate_M_s,a.DPn_combination-2*a.DPn_disproportionation],
+"UC-ADV14-P201":a=>[a.eps_real_omega1-42,a.eps_loss_omega1-38,a.peak_frequency_MHz*2*Math.PI*1e6-a.peak_omega_rad_s],
+"UC-ADV14-P202":a=>[a.surface_term_J+a.volume_term_J-a.barrier_J,a.critical_radius_nm-2,a.barrier_J/(1.380649e-23*300)-a.barrier_over_kBT],
+"UC-ADV14-P203":a=>[1/a.observed_i100_A-1/(20e-6)-1/a.Levich_i100_A,a.Levich_i400_A/a.Levich_i100_A-a.Levich_rotation_400_over_100,a.KL_intercept_per_A-1/(20e-6)],
+"UC-ADV14-P204":a=>[a.Z_1MPa-1-(-1e-4*1e6/(R*300)),a.Vm_1MPa_m3mol-(R*300/1e6-1e-4),a.residual_Gibbs_Jmol-(-1e-4*1e6)],
+"UC-ADV14-I209":a=>[a.D3*a.f3-1,a.Eformal-.77-a.deltaE,a.bound3_free-(a.D3-1)],
+"UC-ADV14-I210":a=>[a.Zn_per_O+a.Al_per_O+a.vacancy_per_O-1,a.positive_charge-a.negative_charge,a.molar_mass-(a.Zn_per_O*65.38+a.Al_per_O*26.982+15.999)],
+"UC-ADV14-I211":a=>[3*a.FeIII_before+2*a.FeII_before-a.sum_before,3*a.FeIII_after+2*a.FeII_after-a.sum_after,a.sum_before-a.sum_after-1],
+"UC-ADV14-I212":a=>[a.Dq10+15*a.B_Racah-33000,a.CFSE_kJmol+1.2*a.energy_kJmol,a.spin_muB**2-15],
+"UC-ADV14-A209":a=>[a.a+a.b*a.unknown_x-4,a.a+3*a.b-a.predicted_y3,a.SE_slope**2-.5],
+"UC-ADV14-A210":a=>[a.A_observed-1000*a.TA,a.B_observed-500*a.TB,a.observed_ratio-a.true_ratio*a.TA/a.TB],
+"UC-ADV14-A211":a=>[a.A2+a.B2-1,a.A4+a.B4-1,a.flux_2s-(a.A2*.4-a.B2*.1)],
+"UC-ADV14-A212":a=>[a.QCu+a.QNi+a.Qside-100,a.mCu+a.mNi-a.total_mass,a.metal_e_mol-(a.QCu+a.QNi)/F],
+"UC-ADV14-O205":a=>[a.free_C+a.CS+a.CP-.01,a.free_fraction+a.CS_fraction+a.CP_fraction-1,a.rate-a.CS],
+"UC-ADV14-O206":a=>[a.DPw/a.DPn-a.dispersity,a.mass_tail_10-a.number_tail_10*a.tail_ratio,a.variance-.8/(.2**2)],
+"UC-ADV14-O207":a=>[a.r1-.01*a.S1*a.H1,a.r4-.01*a.S4*a.H4,a.P_peak-6],
+"UC-ADV14-O208":a=>[a.kopt-10*a.active_fraction,a.k6-a.k8,a.k6/a.kopt-a.k6_over_opt],
+"UC-ADV14-P205":a=>[a.lambda_001_nm/a.lambda_01_nm-a.ratio,a.kappa_01*a.lambda_01_nm*1e-9-1,a.lambda1_over_Bj-a.lambda_01_nm/a.Bjerrum_nm],
+"UC-ADV14-P206":a=>[a.H350-a.S350*350/1000-a.G350,Math.exp(-a.G350*1000/(R*350))-a.K350,a.K350/a.K298-a.K_ratio],
+"UC-ADV14-P207":a=>[a.Qfinal-10e-6*.1,a.Ecap-a.Eheat,a.t90-a.tau*Math.log(10)],
+"UC-ADV14-P208":a=>[a.cation-a.anion-.1,a.cation*a.anion-.05**2,a.osmotic_pressure-R*298.15*1000*a.osmotic_delta_M],
+"UC-ADV14-I213":a=>[a.c800**2-a.K800,a.c1000**2-a.K1000,a.defect_pair_density_m3/(1e28*a.c1000)-1],
+"UC-ADV14-I214":a=>[a.d111_A*Math.sqrt(3)-5.64,2*a.d200_A-5.64,a.intensity_ratio-(a.F111/a.F200)**2],
+"UC-ADV14-A213":a=>[a.t0_us+10*a.K_us_sqrtDa-6,a.t0_us+20*a.K_us_sqrtDa-11,a.unknown_mz-a.sqrt_unknown_mz**2],
+"UC-ADV14-A214":a=>[a.fast_initial_counts+a.slow_initial_counts-1000,a.S_b1-(a.fast_initial_counts*Math.exp(-1)+a.slow_initial_counts*Math.exp(-.2)),a.S_b2-(a.fast_initial_counts*Math.exp(-2)+a.slow_initial_counts*Math.exp(-.4))],
+"UC-ADV14-O209":a=>[a.initial_molecules_mol-a.bonds_mol-a.final_chains_mol,a.A_ends_mol+a.B_ends_mol-2*a.final_chains_mol,a.initial_molecules_mol/a.final_chains_mol-a.DPn_imbalanced],
+"UC-ADV14-O210":a=>[a.Mn_gmol-(100+100*a.mean_growth),a.Mw_gmol/a.Mn_gmol-a.dispersity,a.weight_average_growth-a.mean_growth-1],
+"UC-ADV14-P209":a=>[a.slope+a.intercept-1/a.recovered_nm,a.recovered_C-1-a.slope/a.intercept,a.BET_y03-(a.intercept+a.slope*.3)],
+"UC-ADV14-P210":a=>[R*298.15*a.lnh5-a.delta_mu5_Jmol,R*298.15*a.lnh10-a.delta_mu10_Jmol,a.r_at_h09_nm*1e-9*Math.log(.9)+2*.072*18e-6/(R*298.15)],
+};
 const starts={inorganic:["I",201],analytical:["A",201],organic:["O",198],physical:["P",198]};
 const allIDs=new Set(),titles=new Set(),families=new Set(),counts={};
 for(const [sub,[L,start]] of Object.entries(starts)){
@@ -75,6 +117,14 @@ for(const [sub,[L,start]] of Object.entries(starts)){
   assert.equal(r.quality_status,"awaiting_expert_review");
   assert.equal(r.novelty_review_status,"pending_cross_series_model_review");
   assert.equal(r.parametric_variant,null);
+  if(Object.hasOwn(invariantChecks,r.id)){
+    const vals=Object.fromEntries(r.answer_names.map((n,j)=>[n,r.answer_values[j]]));
+    const residuals=invariantChecks[r.id](vals);
+    assert.equal(residuals.length,3);
+    assert.ok(residuals.every(x=>Number.isFinite(x)&&Math.abs(x)<1e-8),r.id+" physical invariants");
+    assert.ok(r.model_residual_names?.length===3,r.id+" residual labels");
+    residuals.forEach((x,j)=>assert.ok(Math.abs(x-r.model_residuals[j])<1e-8,r.id+" residual index "+j));
+  }
   assert.ok(!allIDs.has(r.id)&&!titles.has(r.title)&&!families.has(r.model_family));
   allIDs.add(r.id);titles.add(r.title);families.add(r.model_family);
   assert.ok(Object.hasOwn(witnesses,r.id),"No independent numeric witness "+r.id);
