@@ -38,6 +38,11 @@ Object.assign(witnesses,{
 "UC-ADV12-O153":()=>{const rho=2.5,k0=.01,sig=[-.27,0,.78],k=sig.map(s=>k0*10**(rho*s)),r=Math.log10(k[2]/k[0])/(sig[2]-sig[0]),ratio=k[2]/k[0],conv=1-Math.exp(-k[2]*60);assert.ok(Math.abs(r-rho)<1e-12&&k[2]>k[1]&&k[1]>k[0]);return[...k,rho,r,k[1],ratio,conv,1-conv,-8.314462618*298.15*Math.log(k[2]/k[1])/1000,Math.log(2)/k[2],Math.log10(ratio),60*k[2],k[2]/k[1],sig[2]-sig[0]];},
 "UC-ADV12-P153":()=>{const r=.001,k=.01,D=1e-9,cs=1,phi=r*Math.sqrt(k/D),coth=1/Math.tanh(phi),eta=3*(phi*coth-1)/(phi*phi),cc=phi/Math.sinh(phi),vol=4*Math.PI*r**3/3,area=4*Math.PI*r*r,rate=eta*k*cs*vol,flux=D*cs*(phi*coth-1)/r;assert.ok(eta>0&&eta<1&&cc<1&&Math.abs(rate/(flux*area)-1)<1e-12);return[phi,eta,cc,cs*cc,vol,area,rate,flux,flux*area,eta,phi*coth-1,1/eta,3/phi*(coth-1/phi),Math.sqrt(D/k)];}
 });
+
+Object.assign(witnesses,{
+"UC-ADV12-I157":()=>{const R=8.314462618,H=18000,S=65,g=5,T=300,k=t=>g*Math.exp(S/R-H/(R*t)),K=k(T),p=K/(1+K),p2=k(350)/(1+k(350)),half=H/(S+R*Math.log(g)),U=H*p,C=H*H*p*(1-p)/(R*T*T),m2=p*4.9**2,E=-R*(p*Math.log(p)+(1-p)*Math.log(1-p))+p*(S+R*Math.log(5));assert.ok(p>0&&p<1&&p2>p);return[K,p,1-p,p2,half,U,C,m2,Math.sqrt(m2),E,K/(1+K),1,H-T*(S+R*Math.log(5))];},
+"UC-ADV12-A157":()=>{const A=[.25,.55],s=[.5,2.5],blank=.1,m=(A[1]-A[0])/(s[1]-s[0]),Cx=(A[0]-blank)/m-s[0],Cx2=(A[1]-blank)/m-s[1];assert.ok(Math.abs(Cx-Cx2)<1e-12);return[m,blank,Cx/1000,Cx*1000,A[0]-blank,A[0]-blank,A[1]-blank,A[1]/A[0],(Cx/1000)/.001,1e-9*60/(.02*.02),A[0]/m,A[1]/m,A[1]-A[0],Cx/1000*.004*1e6];}
+});
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();

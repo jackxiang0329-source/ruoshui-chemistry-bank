@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 24,
+  "current_draft_count": 26,
   "expert_approved": 0,
-  "preliminary_flags": 24,
+  "preliminary_flags": 26,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -148,6 +148,18 @@
       "new_id": "UC-ADV12-P153",
       "prior_id": "UC-ADV11-P137",
       "reason": "与旧辑结构材料/吸附/有机速率/扩散主题存在可能邻近，须专家按核心方程和假设比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I157",
+      "prior_id": "UC-ADV11-I141",
+      "reason": "自动筛查存在邻近主题，必须由专家检查完整方程层面模型同构、实验真实性及版权",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A157",
+      "prior_id": "UC-ADV11-A145",
+      "reason": "自动筛查存在邻近主题，必须由专家检查完整方程层面模型同构、实验真实性及版权",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -295,6 +307,18 @@
       "model_family": "spherical-catalyst-Thiele-modulus-reaction-diffusion-hyperbolic-effectiveness",
       "judgement": "pending_human_comparison",
       "screening": "独立数值复算与弹性稳定、BET物理条件、Hammett选择性或反应-扩散通量守恒已登记，跨辑同构仍待人类专家确认。"
+    },
+    {
+      "new_id": "UC-ADV12-I157",
+      "model_family": "FeII-spin-crossover-two-state-degeneracy-Schottky-magnetic-moment",
+      "judgement": "pending_human_comparison",
+      "screening": "机器独立数值核验；人工原创性和科学性尚未批准。"
+    },
+    {
+      "new_id": "UC-ADV12-A157",
+      "model_family": "two-point-standard-addition-known-blank-absorbance-identifiability",
+      "judgement": "pending_human_comparison",
+      "screening": "机器独立数值核验；人工原创性和科学性尚未批准。"
     }
   ]
 }
