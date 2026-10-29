@@ -63,6 +63,11 @@ Object.assign(witnesses,{
 "UC-ADV12-O155":()=>{const R=8.314462618,T=298.15,E=6000,ct=.002,w=Math.exp(E/(R*T)),Z=w+14,p=w/Z,p1=6/Z,p0=8/Z,mu=(3*w+6)/Z,m2=(9*w+6)/Z,v=m2-mu*mu,b=3*ct;assert.ok(Math.abs(p+p1+p0-1)<1e-14&&v>0);return[15,w,Z,p,p1,p0,w/14,-R*T*Math.log(w/14)/1000,mu,m2,v,ct*p,b,b,2*b,6*ct,2*b,1/15];},
 "UC-ADV12-P155":()=>{const e=1.602176634e-19,k=1.380649e-23,NA=6.02214076e23,R=8.314462618,T=298.15,eps=78.5*8.8541878128e-12,c=10,V=.05,Vt=k*T/e,x=V/(2*Vt),d=Math.sqrt(eps*k*T/(2*e*e*NA*c)),scale=Math.sqrt(8*eps*R*T*c),sigma=scale*Math.sinh(x),cap=scale/(2*Vt)*Math.cosh(x),cap0=scale/(2*Vt),pos=c*Math.exp(-2*x),neg=c*Math.exp(2*x),pressure=R*T*(pos+neg-2*c),maxwell=sigma*sigma/(2*eps),W=2*Vt*scale*(Math.cosh(x)-1);assert.ok(sigma>0&&cap>cap0&&Math.abs(maxwell/pressure-1)<1e-9);return[Vt,x,d*1e9,1/d,scale,sigma,cap,cap0,cap/cap0,pos,neg,neg/pos,pressure,maxwell,W,(neg-pos)*e*NA,V/Vt];}
 });
+
+Object.assign(witnesses,{
+"UC-ADV12-I160":()=>{const R=8.314462618,k=1.380649e-23,NA=6.02214076e23,mu=9.2740100783e-24,T=30,d=650,g=2.1,B=5,x=d/(R*T),u=Math.exp(-x),Z=1+3*u,pS=1/Z,pT=3*u/Z,eq=d/(R*Math.log(3)),C=R*x*x*pT*pS,S=R*(Math.log(Z)+x*pT),y=g*mu*B/(k*T),ZB=1+u*(1+2*Math.cosh(y)),mag=NA*g*mu*2*u*Math.sinh(y)/ZB,chi=NA*g*g*mu*mu/(k*T)*2*u/Z;assert.ok(Math.abs(pS+pT-1)<1e-14&&mag>0&&C>0);return[x,u,Z,pS,pT,eq,d*pT,C,S,chi,y,ZB,mag,mag/B,u*(1+2*Math.cosh(y))/ZB,pS+pT,d/R];},
+"UC-ADV12-A160":()=>{const F=96485.33212,Q=.12,eff=.9,M=63.546,W=18.01528,C=56.6,df=-2500,A=1,den=8.96,t=60,cuQ=Q*eff,HQ=Q-cuQ,n=cuQ/(2*F),cug=n*M*1e6,mt=-df/C*A,wg=mt-cug,nw=wg/1e6/W,nh=HQ/(2*F),d=cug*1e-6/(den*A)*1e7;assert.ok(wg>0&&Math.abs((2*F*(n+nh))/Q-1)<1e-14);return[cuQ,HQ,n,cug,mt,wg,nw,nh,nw/n,d,eff*100,n/t,Q/t,n*6.02214076e23,cuQ+HQ,n*2*F/Q];}
+});
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();

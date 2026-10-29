@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 34,
+  "current_draft_count": 36,
   "expert_approved": 0,
-  "preliminary_flags": 34,
+  "preliminary_flags": 36,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -208,6 +208,18 @@
       "new_id": "UC-ADV12-P155",
       "prior_id": "UC-ADV11-P138",
       "reason": "可能与早期配对统计或双电层界面模型领域相邻，需专家逐式比较新颖性与物理假设。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I160",
+      "prior_id": "UC-ADV11-I138",
+      "reason": "无机磁性或分析热化学/仪器基础相关；与旧辑核心数学方程的区别须专家逐式核实。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A160",
+      "prior_id": "UC-ADV11-A143",
+      "reason": "无机磁性或分析热化学/仪器基础相关；与旧辑核心数学方程的区别须专家逐式核实。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -415,6 +427,18 @@
       "model_family": "Gouy-Chapman-Grahame-Poisson-Boltzmann-diffuse-capacitance-osmotic-stress",
       "judgement": "pending_human_comparison",
       "screening": "答案向量已建立独立复核、氧化还原和Grahame关系守恒检查，仍待人类专家审核。"
+    },
+    {
+      "new_id": "UC-ADV12-I160",
+      "model_family": "Heisenberg-antiferromagnetic-spin-dimer-singlet-triplet-Schottky-Zeeman-susceptibility",
+      "judgement": "pending_human_comparison",
+      "screening": "已登记独立数值见证、分子/电荷及极限检查；人工跨辑同构、新颖性及科学性审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV12-A160",
+      "model_family": "EQCM-Sauerbrey-copper-electrodeposition-Faradaic-side-hydrogen-entrained-water",
+      "judgement": "pending_human_comparison",
+      "screening": "已登记独立数值见证、分子/电荷及极限检查；人工跨辑同构、新颖性及科学性审核未完成。"
     }
   ]
 }
