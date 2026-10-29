@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第10辑 (80题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第10辑 (84题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -466,6 +466,29 @@ Q2分数 = 0.142857143 fraction；Q3分数 = 0.571428571 fraction；Q4分数 = 0
 单振动模式、其他统计因子抵消、理想固溶体；与v9 I98同位素交换动力学题仍需逐式人工比较。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I121 · Fe₂O₃钝化膜的双角度XPS衰减反演、表面化学计量与质量核算}
+\noindent\textbf{题目}\par
+某假想金属Fe表面长有均匀Fe₂O₃钝化膜，金属Fe⁰与氧化态Fe³⁺的Fe 2p峰已可靠分峰。仪器以纯金属与充分厚的氧化层标定后，理想归一化信号满足 I\_Fe0(θ)=exp[−d/(λcosθ)]、I\_Feox(θ)=0.8000\{1−exp[−d/(λcosθ)]\}、I\_O(θ)=0.6000 x \{1−exp[−d/(λcosθ)]\}，其中d为膜厚、λ=2.000 nm为三类电子的共同有效衰减长度，θ为相对表面法线的出射角，x为膜内O/Fe原子数比。观测R=I\_Feox/I\_Fe0在0°与60°分别为0.6576950403124071和1.8560935381892378；同两角度观测I\_O/I\_Feox=1.125000。取膜内Fe原子数密度3.000×10²² cm⁻³、取样面积1.000 cm²、N\_A=6.02214076×10²³ mol⁻¹、M\_Fe=55.845 g/mol、M\_O=15.999 g/mol。分别用两角数据独立反演d，求两角Fe⁰衰减因子、x、单位面积Fe与O的物质的量、膜总质量和表观密度。检验两角一致性、Fe³⁺/O²⁻电中性、物理正根和假设局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 令z=d/(λcosθ)。由R=0.8000(1−e\textasciicircum{}\{−z\})/e\textasciicircum{}\{−z\}=0.8000(e\textasciicircum{}z−1)，所以z=ln(1+R/0.8000)，且R≥0保证唯一非负解。
+\item 在θ=0°，d₀=(2.000 nm)ln(1+0.6576950403124071/0.8000)=1.200000 nm。
+\item 在θ=60°，cosθ=1/2，d₆₀=(2.000×0.5 nm)ln(1+1.8560935381892378/0.8000)=1.200000 nm，两角独立解一致；这也核验了同一均匀膜模型。
+\item 金属Fe⁰的逃逸因子分别为e\textasciicircum{}\{−1.2/2\}=0.548811636094、e\textasciicircum{}\{−1.2/(2×0.5)\}=0.301194211912，均在0和1之间。
+\item 氧信号与氧化态Fe信号共享相同的厚度因子，故I\_O/I\_Feox=(0.6000/0.8000)x=1.125000，得x=1.500000，即膜组成Fe₂O₃。
+\item Fe³⁺与O²⁻电荷核验：2×(+3)+3×(−2)=0；信号强度比只有在灵敏度和衰减长度已按题设校准时才可以解读为化学计量。
+\item 膜厚d=1.200 nm=1.200×10⁻⁷ cm。Fe原子面密度=3.000×10²²×1.200×10⁻⁷=3.600×10¹⁵ cm⁻²，对应n\_Fe=5.97794064183×10⁻⁹ mol。
+\item O原子量n\_O=1.5n\_Fe=8.96691096274×10⁻⁹ mol；膜质量m=n\_Fe(M\_Fe+1.5M\_O)=4.77299703636×10⁻⁷ g。
+\item 膜体积A d=1.200×10⁻⁷ cm³，因此表观密度ρ=m/(Ad)=3.97749753030 g/cm³。结果仅属于给定Fe数密度的理想薄膜，不足以证明真实Fe₂O₃薄膜的孔隙率或相结构。
+\item 回代两角R及氧化态/氧峰比均符合输入。若氧信号受吸附水污染、各轨道衰减长度不等、膜粗糙或Fe存在混合氧化态，双角模型不再可直接用于真实样品定量。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+0度反演膜厚 = 1.2 nm；60度反演膜厚 = 1.2 nm；0度Fe0衰减 = 0.548811636 fraction；60度Fe0衰减 = 0.301194212 fraction；O/Fe比 = 1.5 atom ratio；Fe物质的量 = 5.97794064e-09 mol；O物质的量 = 8.96691096e-09 mol；膜质量 = 4.77299704e-07 g；表观密度 = 3.97749753 g/cm\textasciicircum{}3；0度信号比回代 = 0.65769504 signal ratio；60度信号比回代 = 1.85609354 signal ratio\par
+\noindent\textbf{模型前提：}
+理想均匀膜、相同λ且灵敏度已校准，Fe为零价基底、三价氧化层；与旧辑表面分析逆问题仍待方程级人工比较。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第10辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -897,6 +920,29 @@ Mw = 100000 g/mol；Rg = 25 nm；A2 = 0.0002 mol*mL/g\textasciicircum{}2；截�
 D = 1.2e-09 m\textasciicircum{}2/s；半径 = 3e-05 m；D\_eff1 = 1.6825e-08 m\textasciicircum{}2/s；D\_eff2 = 3.635625e-08 m\textasciicircum{}2/s；t1 = 400 s；t2 = 266.666667 s；D\_eff3 = 2.37e-08 m\textasciicircum{}2/s；方差3 = 10.9722222 s\textasciicircum{}2；标准差3 = 3.31243449 s；FWHM3 = 7.80018712 s；峰高3 = 0.120437787 s\textasciicircum{}-1；径向扩散时间 = 0.75 s\par
 \noindent\textbf{模型前提：}
 长时间Taylor–Aris层流模型；与旧辑扩散传质及v9 P92热扩散题仍待核心模型人工对照。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A121 · 毛细管区带电泳的弱酸迁移双pH反演与电渗流ζ电势}
+\noindent\textbf{题目}\par
+一台毛细管区带电泳仪采用总毛细管长L\_total=0.6000 m、入口至检测窗有效长L\_eff=0.4500 m、正向电压V=18.00 kV，均匀电场E=V/L\_total。无净电泳迁移的中性标记时间t₀=441.176470588235 s。待测单元弱酸HA⇌H⁺+A⁻在pH=6.500与8.000时的正向峰迁移时间分别为494.387477336112 s和999.350319074995 s，电渗流比完全解离阴离子的逆向电泳快，故峰仍能到达正向检测端。模型μ\_obs=L\_eff/(Et)=μ\_EOF+αμ\_A，α=1/[1+10\textasciicircum{}(pK\_a−pH)]，μ\_HA≈0，μ\_A<0。给定水相η=0.8900 mPa·s、ε\_r=78.50、ε₀=8.8541878128×10⁻¹² F/m，Smoluchowski式μ\_EOF=−ε\_rε₀ζ/η。求电渗迁移率、两个pH下观察迁移率、pK\_a、完全解离阴离子μ\_A、两点解离度、pH=7.200的预测时间、ζ电势及模型唯一性，检验单位与峰迁移方向。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 电场强度E=18000/0.6000=30000 V/m，所有迁移率单位为m²/(V·s)；中性标记不受电泳作用。
+\item 由中性标记求μ\_EOF=L\_eff/(Et₀)=3.40000000000×10⁻⁸ m²/(V·s)。
+\item 酸峰在pH=6.500和8.000时的μ\_obs分别是3.03405743220×10⁻⁸与1.50097515493×10⁻⁸ m²/(V·s)，两者均大于零，符合正向出峰。
+\item 记δᵢ=μ\_EOF−μ\_obs,i=−μ\_A αᵢ>0，取比r=δ₁/δ₂=0.192700252841，消去未知μ\_A。
+\item 令h=10\textasciicircum{}\{pK\_a\}，则r=[1+h/10\textasciicircum{}8]/[1+h/10\textasciicircum{}\{6.5\}]。解h=(1−r)/(r/10\textasciicircum{}\{6.5\}−1/10\textasciicircum{}8)，从而pK\_a=7.200000。
+\item 两点解离度α₁=1/(1+10\textasciicircum{}\{0.7\})=0.166337530817，α₂=1/(1+10\textasciicircum{}\{−0.8\})=0.863193111397；反算μ\_A=(μ\_obs,1−μ\_EOF)/α₁=−2.200000×10⁻⁸ m²/(V·s)，第二点回代一致。
+\item 在pH=7.200时α=0.5，μ\_obs=3.4×10⁻⁸−0.5×2.2×10⁻⁸=2.300000×10⁻⁸ m²/(V·s)，故t=0.4500/(30000μ\_obs)=652.173913043 s。
+\item 由μ\_EOF=−ε\_rε₀ζ/η，取η=0.0008900 Pa·s，得ζ=−0.0435362017563 V=−43.5362 mV；符号与负电管壁导致的正向电渗流一致。
+\item 单调映射h→r在6.5<8.0及δᵢ>0的条件下有唯一正解；若忽略中性标记，将电渗与电泳混同则无法只用两酸峰辨识全部参数。
+\item 检查μ\_obs>0、μ\_A<0、pH上升时阴离子分数增加并使正向迁移变慢。该题忽略焦耳热、缓冲液改变引起的ζ与迁移率变化和电场非均匀性；真实不同pH需校准电渗稳定性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+EOF迁移率 = 3.4e-08 m\textasciicircum{}2/(V*s)；pH6.5观察迁移率 = 3.03405743e-08 m\textasciicircum{}2/(V*s)；pH8观察迁移率 = 1.50097515e-08 m\textasciicircum{}2/(V*s)；pKa = 7.2 pKa；阴离子电泳迁移率 = -2.2e-08 m\textasciicircum{}2/(V*s)；pH6.5解离度 = 0.166337531 fraction；pH8解离度 = 0.863193111 fraction；pH7.2预测时间 = 652.173913 s；ζ电势 = -0.0435362018 V；两pH迁移率亏损比 = 0.192700253 ratio；中性标记回代时间 = 441.176471 s\par
+\noindent\textbf{模型前提：}
+相同毛细管及电解液中电渗率、完全电离阴离子迁移率稳定；忽略焦耳热和非理想活度，尚待与各辑电迁移模型人工比较。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -1331,6 +1377,29 @@ b1 = 72.0443865 m/z；b2 = 129.065846 m/z；b3 = 216.097876 m/z；b4 = 315.16628
 一阶可逆自由基环化、无终止；与v9 O91竞争通道和v10 O110反应动力学题仍需逐式人工比较。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O118 · 不对称环己基底物的反式双轴E2构象门控与温度选择性}
+\noindent\textbf{题目}\par
+假想不对称取代的环己基磺酸酯发生强碱诱导E2消除。独立立体构象分析确认：环翻转后的构象A具有轴向离去基，存在两个不同且均反式双轴的β-H位点，分别生成位置异构烯烃P₁和P₂；构象E的离去基为赤道向且在本模型中不反应。环翻转远快于消除，形成快速E⇌A平衡。轴向构象相对赤道构象的ΔH=+5.000 kJ/mol、ΔS=+5.000 J/(mol K)，f\_A=1/[1+exp((ΔH−TΔS)/(RT))]。在298.15 K，构象A两条拟一级E2通道k₁=0.1800 min⁻¹、k₂=0.0600 min⁻¹；其Arrhenius活化能分别为45.00与55.00 kJ/mol，设常数活化能区间为298.15–330.00 K，R=8.314462618。求298.15 K轴向布居、总观察速率、半衰期、10.00 min转化率及两个产物相对初始底物的量；再求330.00 K布居、两本征速率、总观察速率、P₁选择性与半衰期。验证质量守恒及为何反式双轴限制与快速构象预平衡不可省略。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 只有构象A满足反式双轴几何：离去基与两种β-H反式共平面，构象E在模型中不贡献E2；快速环翻转使任意时刻A分数为热力学布居f\_A。
+\item 298.15 K的构象自由能差ΔG=5000−298.15×5=3509.25 J/mol，f\_A=[1+exp(ΔG/(RT))]⁻¹=0.195349854867。
+\item 总拟一级速率k\_obs=f\_A(k₁+k₂)=0.0468839651682 min⁻¹，未反应底物比例S/S₀=exp(−k\_obs t)。
+\item 半衰期t\_\{1/2\}=ln2/k\_obs=14.7843122499 min；10.00 min转化率X=1−exp(−10k\_obs)=0.374272090469。
+\item 两种产物占已消耗底物分别k₁/(k₁+k₂)=0.7500和0.2500；相对初始底物P₁/S₀=0.280704067852、P₂/S₀=0.0935680226174。
+\item 守恒核验：exp(−10k\_obs)+P₁/S₀+P₂/S₀=1；假设无副反应，不能将构象E的分子误当永久不反应。
+\item 330.00 K由ΔH−TΔS计算新的f\_A=0.227769903382，温度升高使不利轴向构象布居增大。
+\item Arrhenius式kᵢ(T)=kᵢ(298.15)exp[(E\_\{a,i\}/R)(1/298.15−1/T)]；得330 K两通道分别1.03792277033和0.510659028843 min⁻¹。
+\item 330 K总观察速率k\_obs=0.352720326777 min⁻¹，P₁选择性=1.03792277033/(1.03792277033+0.510659028843)=0.670240842868，半衰期1.96514668404 min。
+\item 高温下P₂选择性提高，源于其较高活化能，不能单凭298 K速率比外推。若构象互变不够快或有其他竞争消除、取代、不同β-H构型，必须建立完整微观动力学网络。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+298K轴向分数 = 0.195349855 fraction；298K观察速率 = 0.0468839652 min\textasciicircum{}-1；298K半衰期 = 14.7843122 min；10min转化率 = 0.37427209 fraction；10min P1初始分数 = 0.280704068 fraction；10min P2初始分数 = 0.0935680226 fraction；330K轴向分数 = 0.227769903 fraction；330K本征k1 = 1.03792277 min\textasciicircum{}-1；330K本征k2 = 0.510659029 min\textasciicircum{}-1；330K观察速率 = 0.352720327 min\textasciicircum{}-1；330K P1选择性 = 0.670240843 fraction；330K半衰期 = 1.96514668 min\par
+\noindent\textbf{模型前提：}
+仅两个构象、快速预平衡、两条E2拟一级通道且无其它反应，真实立体构象须独立核定；与旧辑竞争反应题需人工比较。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第10辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -1763,6 +1832,29 @@ J1 = 6.8e-07 mol/(m\textasciicircum{}2*s)；J2 = 6e-08 mol/(m\textasciicircum{}2
 总浓度 = 38.0831137 mol/m\textasciicircum{}3；对数因子 = 0.236388778 dimensionless；实际NA = 0.0324087145 mol/(m\textasciicircum{}2*s)；Fick近似 = 0.0274198418 mol/(m\textasciicircum{}2*s)；增强倍数 = 1.18194389 ratio；相对低估 = 0.153936149 fraction；中点yA = 0.155902849 fraction；四分之一yA = 0.20434124 fraction；中点JA = 0.0273561036 mol/(m\textasciicircum{}2*s)；中点JB = -0.0273561036 mol/(m\textasciicircum{}2*s)；摩尔平均速度 = 0.000850999601 m/s；摩尔传递率 = 0.000324087145 mol/s；质量传递率 = 1.88229814e-05 kg/s\par
 \noindent\textbf{模型前提：}
 恒温恒压理想气体、N\_B=0；与v10 P98 Knudsen孔扩散和v9 P92 Soret热扩散仍待逐式人工比较。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P118 · 氮气BET多层吸附的双压反演、单层面积与吸附能差}
+\noindent\textbf{题目}\par
+77.0 K下某多孔固体对N₂的理想BET吸附，样品每克的吸附量v用标准状态(273.15 K、1 atm)气体体积cm³(STP)/g表示，定义x=p/p₀。BET关系v=v\_m Cx/[(1−x)(1+(C−1)x)]，且Y=x/[v(1−x)]对x呈直线。两次观测在x₁=0.0800、x₂=0.2500时分别有v₁=11.404133998574482、v₂=15.421686746987952 cm³(STP)/g。给定独立检验点x₃=0.1500，N₂分子截面积a\_N2=0.1620 nm²，STP摩尔体积22414 cm³/mol、N\_A=6.02214076×10²³ mol⁻¹、R=8.314462618 J/(mol K)。假设BET常数C≈exp[(E₁−E\_L)/(RT)]。从双压数据反演BET直线斜率和截距、C、单层体积v\_m，预测x₃的v，计算比表面积、使BET单层分数对应的特征相对压力x\_m=1/(1+√C)、第一层相对于液化层的能量差；核验单层容量、正性、单位与BET适用窗口。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 定义Y=x/[v(1−x)]，由BET方程严格化简成Y=b+sx，其中b=1/(v\_m C)、s=(C−1)/(v\_m C)，均以g/cm³(STP)计。
+\item 把x=0.0800和0.2500的吸附体积代入，计算Y₁与Y₂，用两点斜率s=(Y₂−Y₁)/(0.2500−0.0800)=0.0822916666667 g/cm³。
+\item 截距b=Y₁−s×0.0800=0.00104166666667 g/cm³；b>0、s>0，适合正的v\_m与C>1。
+\item 由b+s=1/v\_m，得到单层容量v\_m=12.0000 cm³(STP)/g；由C=1+s/b=80.0000。
+\item 在x=0.1500，代回原BET分式v=12×80×0.15/[(1−0.15)(1+79×0.15)]=13.1837949187 cm³(STP)/g；不能直接用线性Y斜率代替体积的斜率。
+\item 每克单层吸附物质的量n\_m=12/22414 mol/g，故S=n\_m N\_A×0.1620×10⁻¹⁸=52.2309344046 m²/g。
+\item 由x\_m=(1+√C)⁻¹得0.100560403924，此压力是BET模型中单层贡献特征点，不能解读为总体积的极大值。
+\item 若C≈exp[(E₁−E\_L)/(RT)]，则E₁−E\_L=RT ln80=2.80543314167 kJ/mol（77 K），不可误用室温计算吸附能差。
+\item 回代两个测量压力得11.4041339986、15.4216867470 cm³(STP)/g；比表面积使用标准气体摩尔体积，不是77 K实验气体即时摩尔体积。
+\item 本题忽略微孔填充、吸附质相互作用及表面非均一性；实际BET应选择满足合理线性与Rouquerol一致性判据的压力范围，不能凭两点证明模型在全压强域有效。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+BET斜率 = 0.0822916667 g/cm\textasciicircum{}3(STP)；BET截距 = 0.00104166667 g/cm\textasciicircum{}3(STP)；单层体积 = 12 cm\textasciicircum{}3(STP)/g；BET C = 80 dimensionless；0.15预测吸附体积 = 13.1837949 cm\textasciicircum{}3(STP)/g；BET面积 = 52.2309344 m\textasciicircum{}2/g；特征相对压力 = 0.100560404 fraction；第一层能差 = 2.80543314 kJ/mol；第一点体积回代 = 11.404134 cm\textasciicircum{}3(STP)/g；第二点体积回代 = 15.4216867 cm\textasciicircum{}3(STP)/g\par
+\noindent\textbf{模型前提：}
+经典BET、均一单层截面积与STP摩尔体积，压力窗口需实验审核；须与v9 P93 Freundlich吸附模型进行逐式人工比较。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
