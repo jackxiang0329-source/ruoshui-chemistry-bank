@@ -16,6 +16,14 @@ const witness={
 "UC-ADV11-P123":()=>{const delta=.25,H=40;const find=(a,b,ascending)=>{for(let i=0;i<100;i++){const m=(a+b)/2,high=m*Math.exp(-m)>delta;if(high===ascending)b=m;else a=m;}return (a+b)/2};const l=find(0,1,true),h=find(1,10,false);assert.ok(l<1&&h>1&&Math.abs(l*Math.exp(-l)-delta)<1e-13&&Math.abs(h*Math.exp(-h)-delta)<1e-13);return [delta,l,h,H*l,H*h,1/Math.E,H/Math.E,1];},
 "UC-ADV11-P124":()=>{const a=2e6*2e-6,b=6,p=a/(a+b),t=1/(a+b),v=p*(1-p),c=v*Math.exp(-.2/t),s=2*v*t/(1+(5*t)**2);assert.ok(Math.abs((1-p)*a-p*b)<1e-12);return [a,b,p,1-p,b/2e6,1/b,1/a,t,v,c,s,(1-p)*a];}
 };
+
+Object.assign(witness,{
+"UC-ADV11-I128":()=>{const ge=2.0023,lam=-830,gp=2.3,gt=2.07,d1=-8*lam/(gp-ge),d2=-2*lam/(gt-ge),ga=(gp+2*gt)/3,gr=Math.sqrt((gp*gp+2*gt*gt)/3);assert.ok(d1>0&&d2>0&&Math.abs(ge-8*lam/d1-gp)<1e-12);return [d1,d2,1e7/d1,1e7/d2,ga,gr,gr*Math.sqrt(.75),gp-gt,Math.abs(lam)/d1];},
+"UC-ADV11-A128":()=>{const tau0=4,tau1=1.6,k0=1/tau0,k=1/tau1-k0,e=k/(k+k0),d=5*((1-e)/e)**(1/6),t2=1/(k0+2*k),e2=2*k/(k0+2*k);assert.ok(e2<1&&t2<tau1);return [k0,k,e,d,.8*tau1/tau0,t2,e2,.8*t2/tau0];},
+"UC-ADV11-O125":()=>{const K=4;const solve=(a,b,c,d)=>{let lo=0,hi=a;for(let j=0;j<110;j++){const x=(lo+hi)/2;if((c+x)*(d+x)/((a-x)*(b-x))>K)hi=x;else lo=x;}return (lo+hi)/2;};const x=solve(1,2,.2,.1),w=(.1+x)/2,y=solve(1-x,2-x,.2+x,w),tot=x+y;assert.ok(x>0&&tot<1&&y>0&&Math.abs((1-tot)+(.2+tot)-1.2)<1e-12);return [x,1-x,2-x,.2+x,.1+x,w,y,tot,.2+tot,tot,1-tot];},
+"UC-ADV11-P125":()=>{const R=8.314462618,E=60000,n=3,k1=Math.pow(Math.log(2),1/3)/100,k2=k1*Math.exp(E/R*(1/300-1/320)),t50=Math.pow(Math.log(2),1/3)/k2,t90=Math.pow(Math.log(10),1/3)/k2,rate=3*k2**3*t50**2*.5;assert.ok(t90>t50&&rate>0);return [k1,k2,t50,t90,rate,k2/k1,k1*Math.exp(E/(R*300))];}
+});
+
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();

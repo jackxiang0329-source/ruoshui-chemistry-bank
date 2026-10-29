@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 8,
+  "current_draft_count": 12,
   "expert_approved": 0,
-  "preliminary_flags": 2,
+  "preliminary_flags": 4,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -16,6 +16,18 @@
       "new_id": "UC-ADV11-I126",
       "prior_id": "UC-ADV10-I105",
       "reason": "均涉及氧缺陷；本题热重-平均Fe价-晶胞密度反演与前题氧空位质量作用平衡不同；需人工比较",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-I128",
+      "prior_id": "UC-ADV10-I111",
+      "reason": "同为EPR，但本题轴向g-晶场能隙微扰反演，旧题51V核超精细分裂；需人工比较",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-A128",
+      "prior_id": "UC-ADV10-A114",
+      "reason": "同为荧光寿命但本题Förster距离六次方律与双受体速率相加，旧题静动态淬灭；待人工比较",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -67,6 +79,30 @@
       "model_family": "single-molecule-binding-two-state-Markov-autocorrelation-spectrum-detailed-balance",
       "judgement": "pending_human_comparison",
       "screening": "已建立独立数值witness；仍须人工逐式比较历史辑、核查科学合理性和原创性。"
+    },
+    {
+      "new_id": "UC-ADV11-I128",
+      "model_family": "CuII-Jahn-Teller-EPR-g-anisotropy-spin-orbit-ligand-field-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "新增完整答案向量witness；数学模型和化学科学性需跨辑人工逐式核验。"
+    },
+    {
+      "new_id": "UC-ADV11-A128",
+      "model_family": "FRET-lifetime-Foerster-sixth-power-distance-two-acceptor-rate-additivity",
+      "judgement": "pending_human_comparison",
+      "screening": "新增完整答案向量witness；数学模型和化学科学性需跨辑人工逐式核验。"
+    },
+    {
+      "new_id": "UC-ADV11-O125",
+      "model_family": "Fischer-esterification-equilibrium-water-removal-re-equilibration-mass-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "新增完整答案向量witness；数学模型和化学科学性需跨辑人工逐式核验。"
+    },
+    {
+      "new_id": "UC-ADV11-P125",
+      "model_family": "JMAK-Avrami-isothermal-nucleation-growth-Arrhenius-half-time-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "新增完整答案向量witness；数学模型和化学科学性需跨辑人工逐式核验。"
     }
   ]
 }
