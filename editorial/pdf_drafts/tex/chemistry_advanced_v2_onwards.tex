@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (628题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (630题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -12753,6 +12753,33 @@ Mg\_atomization\_plus\_two\_ionizations\_kJ\_mol = 2337 kJ/mol；half\_O2\_disso
 电子亲和能和晶格焓的定义、各物种温度及相态必须一致；若引入真实水解、非理想离子溶液和不同固相，需追加相应反应焓与活度项。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I160 · 反铁磁自旋1/2二聚体的三重态统计、Schottky热容与有限场磁化率}
+\noindent\textbf{题目}\par
+某假想无机双核磁性配合物每分子含两个S=1/2自旋，满足各向同性反铁磁Heisenberg交换H=J S₁·S₂（J>0），相对于S=0单态，S=1三重态能隙按每摩尔二聚体计Δ\_m=650.0 J/mol。忽略晶间相互作用，温度T=30.00 K，各中心磁谱因子g=2.100，外磁场B=5.000 T，R=8.314462618 J/(mol K)、k\_B=1.380649×10⁻²³ J/K、μ\_B=9.2740100783×10⁻²⁴ J/T、N\_A=6.02214076×10²³ mol⁻¹。以单态为零能基准，求零场配分函数、单态/三重态占据分数、等概率温度、相对内能、Schottky热容和自旋熵；引入三重态m=−1,0,+1的Zeeman分裂，求B=5 T的配分函数、磁化强度、有限场M/B以及严格B→0摩尔磁化率，检查自旋简并、概率归一及低高温与低场极限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设两自旋1/2无机磁性中心只受各向同性Heisenberg交换H=J S₁·S₂，J>0，单态自旋总量S=0的本征能为−3J/4，三重态S=1的本征能为J/4。
+\item 将单态能量选作零点，则三重态高出能隙Δ=J，包含m\_S=−1、0、+1共3个微观态，不能把三重态当作单简并态。
+\item 题设交换间隙按每摩尔自旋二聚体计Δ\_m=650.0 J/mol，与玻尔兹曼因子相容的无量纲变量x=Δ\_m/(RT)。
+\item 在T=30 K时x=2.60590102597，单个三重微态的相对权重u=e\textasciicircum{}(−x)=0.0738365785414，整个零场配分函数Z=1+3u=1.22150973562。
+\item 单态概率p\_S=1/Z=0.818659050219，三重态宏观概率p\_T=3u/Z=0.181340949781，两者严格相加为1。
+\item p\_T=p\_S要求3e\textasciicircum{}(−Δ\_m/RT*)=1，故T*=Δ\_m/[Rln3]=71.1598000365 K，正根唯一。
+\item 零场相对于单态的平均能量U\_m=Δ\_m p\_T=117.871617357 J/mol，温度无关Δ\_m使Schottky热容C\_m=R x² p\_T(1−p\_T)=8.38202539166 J/(mol K)。
+\item 由S\_m=R[lnZ+x p\_T]计算自旋统计熵S\_m=5.59267463198 J/(mol K)；低温趋0，高温趋Rln4。
+\item 磁场B沿z轴时三重态Zeeman能为Δ\_m−m gμ\_B B N\_A，单态磁矩为0；以单分子变量y=gμ\_B B/(k\_BT)构造Z\_B=1+u[1+2cosh(y)]。
+\item g=2.1、μ\_B=9.2740100783e-24 J/T、B=5 T给y=0.235099835469与Z\_B=1.22560965817。
+\item 对lnZ\_B按磁场微分，摩尔磁化强度M\_m=N\_A gμ\_B[2u sinh(y)/Z\_B]=0.335299450426 A·m²/mol，符号为正。
+\item 由B→0取极限，低场摩尔磁化率χ\_m=(N\_A(gμ\_B)²/(k\_BT))[2u/(1+3u)]=0.0666691178178 J/(mol·T²)；有限场M\_m/B=0.0670598900852与低场有非线性差别。
+\item 三重态受场分裂后的总概率为u[1+2cosh(y)]/Z\_B，检查在0与1之间；自旋相关磁响应不等于二个独立Curie自由自旋的简单相加。
+\item 模型假设互不作用的同质二聚体、各向同性交换、g张量各向同性和忽略晶场与磁各向异性；真实无机双核磁体的晶间交换或激发多重态可能改变磁化率和热容。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+triplet\_gap\_over\_RT = 2.60590103 dimensionless；triplet\_single\_microstate\_weight = 0.0738365785 dimensionless；zero\_field\_partition\_function = 1.22150974 dimensionless；singlet\_population = 0.81865905 fraction；triplet\_population = 0.18134095 fraction；equal\_macro\_population\_temperature\_K = 71.1598 K；relative\_spin\_energy\_J\_mol = 117.871617 J/mol；spin\_heat\_capacity\_J\_molK = 8.38202539 J/(mol K)；spin\_entropy\_J\_molK = 5.59267463 J/(mol K)；zero\_field\_molar\_susceptibility\_J\_per\_mol\_T2 = 0.0666691178 J/(mol T2)；field\_Zeeman\_argument = 0.235099835 dimensionless；field\_partition\_function = 1.22560966 dimensionless；field\_molar\_magnetization\_A\_m2\_mol = 0.33529945 A m2/mol；finite\_field\_M\_over\_B = 0.0670598901 J/(mol T2)；field\_triplet\_probability = 0.184079537 fraction；population\_normalization = 1 fraction；characteristic\_gap\_temperature\_K = 78.1770308 K\par
+\noindent\textbf{模型前提：}
+模型假设互不作用的同质二聚体、各向同性交换、g张量各向同性和忽略晶场与磁各向异性；真实无机双核磁体的晶间交换或激发多重态可能改变磁化率和热容。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -12985,6 +13012,33 @@ initial\_12C\_mol = 0.988924051 mol；initial\_13C\_mol = 0.0110759494 mol；res
 Stokes\_wavenumber\_cm\_inv = 19000 cm\textasciicircum{}-1；antiStokes\_wavenumber\_cm\_inv = 21000 cm\textasciicircum{}-1；Stokes\_wavelength\_nm = 526.315789 nm；antiStokes\_wavelength\_nm = 476.190476 nm；optical\_frequency\_fourth\_power\_factor = 1.4923228 ratio；phonon\_Boltzmann\_factor = 0.0163947998 ratio；antiStokes\_over\_Stokes\_intensity = 0.0244663337 ratio；reconstructed\_lattice\_temperature\_K = 350 K；phonon\_occupation\_number = 0.0166680695 phonons；Stokes\_occupation\_plus\_one = 1.01666807 dimensionless；expected\_antiStokes\_photon\_count = 24466.3337 photons；counting\_ratio\_standard\_uncertainty = 0.000158319093 ratio；temperature\_standard\_uncertainty\_K = 0.550943467 K；laser\_overambient\_temperature\_K = 51.85 K；inversion\_logarithm = 4.11079108 dimensionless；count\_ratio\_backcheck = 0.0244663337 ratio\par
 \noindent\textbf{模型前提：}
 温度反演使用的是散射模的有效振动态分布温度，假设局域热平衡、弱激光激发和光学薄样品；非共振拉曼近似失效、荧光背景、强共振激发或探测器波长响应不均会造成系统误差。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A160 · EQCM铜沉积电荷与Sauerbrey质量双反演及滞留水计量审计}
+\noindent\textbf{题目}\par
+某假想酸性铜电沉积电极配合电化学石英晶体微天平(EQCM)研究Cu²⁺+2e→Cu(s)反应，唯一副反应为2H⁺+2e→H₂。恒流沉积60.00 s积分总电荷Q=0.1200 C，由独立气体收集法确认Cu沉积法拉第效率90.00\%；F=96485.33212 C/mol。铜相对摩尔质量63.546 g/mol，水18.01528 g/mol，铜致密层密度8.960 g/cm³，电极面积1.000 cm²。EQCM基频与电极校准后的Sauerbrey质量灵敏度C\_f=56.60 Hz/(μg cm⁻²)，测得相对沉积前频率下降2500.0 Hz。假设附着质量仅包括沉积Cu及被刚性耦合的界面滞留水，H₂逸出且水不参与净电荷反应。求两反应电子电荷分配、Cu生成摩尔数及质量、总EQCM质量、滞留水质量与mol数及每Cu水分子比、析氢摩尔数、干铜等效厚度、平均沉积速率和电流；检查Faraday电荷、铜质量、反应原子计量与水质量守恒及刚性EQCM局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 在酸性Cu²⁺电沉积中令目标反应为Cu²⁺+2e⁻→Cu(s)，唯一副反应为2H⁺+2e⁻→H₂(g)，所以两路径每摩尔产物均需2摩尔电子。
+\item 题设总积分电荷Q=0.1200 C、Cu沉积法拉第效率η\_F=0.9000，因此分配到Cu与析氢的电荷分别Q\_Cu=η\_FQ和Q\_H=(1−η\_F)Q。
+\item 得到Q\_Cu=0.108000000000 C、Q\_H=0.0120000000000 C，二者和回归总Q。
+\item 按Faraday常数F=96485.33212 C/mol，沉积Cu摩尔数n\_Cu=Q\_Cu/(2F)=5.59670561457e-7 mol。
+\item Cu原子量63.546 g/mol，因此金属铜质量m\_Cu=35.5648254984 μg。
+\item 电化学石英晶体微天平EQCM的题设刚性薄膜Sauerbrey标定为Δf=−C\_f Δm/A，其中C\_f=56.6 Hz/(μg cm⁻²)，电极面积A=1.000 cm²。
+\item 测得频移Δf=-2500 Hz，反演总耦合质量Δm=−Δf A/C\_f=44.1696113074 μg，包含金属及残留的界面水，而不只Cu。
+\item 扣除已由电荷单独确定的金属质量，剩余随晶体振动的滞留水质量m\_w=8.60478580905 μg；其为正说明总EQCM质量大于Faraday沉积质量。
+\item 按水摩尔质量18.01528 g/mol，水摩尔数n\_w=4.77638194302e-7 mol，表观每个Cu对应水分子比n\_w/n\_Cu=0.853427403897。
+\item 副反应析氢摩尔数n\_H2=Q\_H/(2F)=6.21856179397e-8 mol；该析出气体不计入EQCM刚性附着质量。
+\item 若铜层干燥后密度取8.960 g/cm³，真实金属Cu的等效致密层厚d=m\_Cu/(ρA)=39.6928856009 nm，绝不能将含水EQCM总质量直接代入Cu密度。
+\item 沉积60.00 s平均铜生成速率n\_Cu/t=9.32784269096e-9 mol/s，总平均电流Q/t=0.00200000000000 A。
+\item 独立核对电子守恒：2F(n\_Cu+n\_H2)=Q，Cu²⁺与H⁺还原保持电荷守恒；水的滞留并非由析氢反应额外生成。
+\item 模型假设仅有Cu沉积与H₂副反应、法拉第效率独立可靠、频移全部属于刚性无耗散质量加载且无溶液黏弹负载；实际EQCM必须检查耗散、溶剂层及表面粗糙度。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+copper\_deposition\_charge\_C = 0.108 C；hydrogen\_side\_reaction\_charge\_C = 0.012 C；deposited\_Cu\_mol = 5.59670561e-07 mol；deposited\_Cu\_mass\_ug = 35.5648255 ug；EQCM\_total\_mass\_ug = 44.1696113 ug；entrained\_water\_mass\_ug = 8.60478581 ug；entrained\_water\_mol = 4.77638194e-07 mol；evolved\_H2\_mol = 6.21856179e-08 mol；entrained\_water\_per\_Cu\_ratio = 0.853427404 ratio；dry\_copper\_thickness\_nm = 39.6928856 nm；copper\_current\_efficiency\_percent = 90 percent；Cu\_deposition\_rate\_mol\_s = 9.32784269e-09 mol/s；mean\_total\_current\_A = 0.002 A；deposited\_Cu\_atoms = 3.3704149e+17 atoms；charge\_balance\_C = 0.12 C；copper\_faradaic\_fraction\_check = 0.9 fraction\par
+\noindent\textbf{模型前提：}
+模型假设仅有Cu沉积与H₂副反应、法拉第效率独立可靠、频移全部属于刚性无耗散质量加载且无溶液黏弹负载；实际EQCM必须检查耗散、溶剂层及表面粗糙度。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
