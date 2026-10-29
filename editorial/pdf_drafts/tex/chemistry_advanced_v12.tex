@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (74题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (78题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -548,6 +548,36 @@ conditional\_equilibrium\_K = 1e-06 dimensionless；delta\_p0p01 = 0.0166709441 
 空位浓度不是电子导电率本身；此题未给电子迁移率，不能由Ce³⁺含量直接编造电导率。Ce空位、间隙氧、弹性相互作用和非理想活度均可能在真实体系中重要。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I170 · 氯配位稳定Cu(I)对歧化平衡、Nernst电位与固相物料的耦合}
+\noindent\textbf{题目}\par
+在298.15 K的假想Cu–Cl理想稀溶液中，只允许可逆歧化2Cu⁺⇌Cu²⁺+Cu(s)，以及Cu⁺+Cl⁻⇌CuCl(aq)、Cu²⁺+Cl⁻⇌CuCl⁺(aq)两种可溶一氯络合。自由[Cl⁻]由外部储液池恒定保持0.05000 mol/L；β\_I=100.0、β\_II=10.00 L/mol。原有Cu(I)的总浓度0.01000 mol/L、样品体积0.1000 L，容许形成纯Cu固相。标准还原电位E°(Cu⁺/Cu)=0.3500 V、E°(Cu²⁺/Cu⁺)=0.2500 V。F=96485.33212 C/mol，R=8.314462618 J/(mol K)，标准态c°=1 mol/L、活度系数取1；忽略氧化、水解、多氯络合和CuCl沉淀。求自由离子歧化平衡常数、各氧化态配位分配因子、条件平衡常数与其自由能、平衡各铜物种和铜沉积质量；用两个Nernst电位独立复核详细平衡并核验铜物料、总反应电荷、外部Cl储库假设。说明配位如何改变歧化方向。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将Cu⁺+e⁻→Cu(s)与Cu⁺→Cu²⁺+e⁻相加，得2Cu⁺→Cu²⁺+Cu(s)，净反应电子数n=1。
+\item 自由离子标准电池电势E°cell=0.3500−0.2500=0.1000 V，所以ΔG°free=−FE°cell，lnKfree=FE°cell/(RT)。
+\item 298.15 K下自由离子平衡常数Kfree=49.0173564943，标准自由能变化-9.64853321200 kJ/mol。
+\item 由固定自由Cl⁻与一氯络合平衡，总Cu(I)=αI[Cu⁺]、总Cu(II)=αII[Cu²⁺]，其中αI=1+βI[Cl⁻]、αII=1+βII[Cl⁻]。
+\item 配位分配因子αI=6.00000000000、αII=1.50000000000，故条件歧化常数Kcond=Kfree αII/(αI²)=2.04238985393。
+\item 设x=[CuII]total，金属Cu固体的摩尔浓度当量也为x，余下Cu(I)总浓度CI=C0−2x，物理范围为0<x<C0/2。
+\item 浓度标准态c°=1 mol/L，Kcond=x c°/(C0−2x)²；左端严格递增，故唯一正根可用保界二分求出。
+\item 数值根为x=0.000189083758908 mol/L，溶解Cu(I)总量0.00962183248218 mol/L。
+\item 由络合配分计算[Cu⁺]=0.00160363874703、[CuCl(aq)]=0.00801819373515、[Cu²⁺]=0.000126055839272、[CuCl⁺]=0.0000630279196360，单位均mol/L。
+\item 在0.1000 L样品中沉积Cu=0.0000189083758908 mol，即1.20155165436 mg；不能把金属Cu算进溶解总铜。
+\item 第一个半电池的Nernst式为E1=E°1+(RT/F)ln([Cu⁺]/c°)；第二个为E2=E°2+(RT/F)ln([Cu²⁺]/[Cu⁺])。
+\item 数值上E1=0.184655920531 V，E2=0.184655920531 V，差-2.77555756156e-17 V，说明平衡时铜(I)歧化与两半电池等势。
+\item 回代自由离子反应商Qfree=49.0173564943，条件总浓度反应商Qcond=2.04238985393，分别恢复两种平衡常数。
+\item Cu(I)配位程度更高，因此Kcond/Kfree=0.0416666666667，条件标准反应自由能-1.77027432895 kJ/mol。
+\item 铜原子数以每升溶液计为CI+x+x=C0，且Cu(I)在氧化和还原半反应中各出1 mol，净反应不创造电荷。
+\item 溶解铜物种所带的正电荷当量[Cu⁺]+2[Cu²⁺]+[CuCl⁺]=0.00191877834521 mol charge/L，但整体电中性还需要Cl⁻、旁观阴离子及外部缓冲储液池共同承担。
+\item 真实Cu(I)氯络合有更丰富的平衡和可能的CuCl沉淀；本题是明确删去其他物种的条件热力学模型，不应直接作为实际Cu–Cl相图。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Kfree = 49.0173565 dimensionless；alphaI = 6 ratio；alphaII = 1.5 ratio；Kconditional = 2.04238985 dimensionless；CuII\_total\_M = 0.000189083759 mol/L；CuI\_total\_M = 0.00962183248 mol/L；CuI\_free\_M = 0.00160363875 mol/L；CuCl\_aq\_M = 0.00801819374 mol/L；CuII\_free\_M = 0.000126055839 mol/L；CuCl\_plus\_M = 6.30279196e-05 mol/L；deposited\_Cu\_mol = 1.89083759e-05 mol；deposited\_Cu\_mg = 1.20155165 mg；E\_CuI\_Cu\_V = 0.184655921 V；E\_CuII\_CuI\_V = 0.184655921 V；Nernst\_residual\_V = -2.77555756e-17 V；Cu\_mass\_equiv\_inventory\_M = 0.01 mol/L；dissolved\_Cu\_total\_M = 0.00981091624 mol/L；solid\_Cu\_equiv\_M = 0.000189083759 mol/L；CuI\_complexed\_fraction = 0.833333333 fraction；CuII\_complexed\_fraction = 0.333333333 fraction；free\_ion\_reaction\_quotient = 49.0173565 dimensionless；conditional\_reaction\_quotient = 2.04238985 dimensionless；Kcond\_over\_Kfree = 0.0416666667 ratio；DeltaG\_free\_kJ\_mol = -9.64853321 kJ/mol；DeltaG\_conditional\_kJ\_mol = -1.77027433 kJ/mol；dissolved\_positive\_Cu\_charge\_M = 0.00191877835 mol\_charge/L；charge\_balancing\_redox\_equiv\_M = 0 charge\_equiv/L；CuII\_fraction\_of\_maximum = 0.0378167518 fraction；Cu\_total\_aqueous\_plus\_solid\_M = 0.00981091624 mol/L；initial\_Cu\_total\_M = 0.01 mol/L\par
+\noindent\textbf{模型前提：}
+真实Cu(I)氯络合有更丰富的平衡和可能的CuCl沉淀；本题是明确删去其他物种的条件热力学模型，不应直接作为实际Cu–Cl相图。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -1060,6 +1090,36 @@ analyte\_integral\_TR1 = 983.673351 integral；analyte\_integral\_TR2 = 1580.301
 本实验是理想模拟；实际定量核磁还应校正基线、磁化转移、峰重叠、脉冲宽度、化学交换和内标称量不确定度。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A170 · 计时安培Cottrell扩散与双电层充电的双时刻反演、积分及误差传播}
+\noindent\textbf{题目}\par
+某假想1电子可逆电极在298.15 K受扩散控制，电极面积A=0.07000 cm²，体相浓度c*=1.000 mmol/L，n=1、F=96485.33212 C/mol。法拉第限流满足iF(t)=nFAc*sqrt[D/(πt)]，同时有独立一阶双电层充电电流idl(t)=B exp(−t/τ)，τ=2.000 s由另一阻抗实验确定。实测理想模拟总电流i(1.000 s)=14.1860782497 μA，i(4.000 s)=5.74959875191 μA；独立验证点i(9.000 s)=3.20014962965 μA。不得预先假定扩散系数D或初始充电电流B。由前两点严格反演a=nFAc*sqrt(D/π)及B与D，再用第三点验算。假设两测量电流的标准不确定度均为0.1000 μA且相互独立，其余参数确定，求D的一阶合成标准不确定度。求0—9 s的法拉第电量、充电电量、总电量、总电解摩尔数（只用法拉第电量），以及圆盘半径与扩散长度sqrt(Dt)之比；核验SI单位与半无限平面近似的条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item SI单位转换：面积0.07000 cm²=7.000×10⁻⁶ m²，浓度1.000 mmol/L=1.000 mol/m³，二者必须先转换再用F和D计算。
+\item 定义a=n F A c*sqrt(D/π)，a的单位为A sqrt(s)，总电流按i(t)=a/√t+B e\textasciicircum{}(−t/τ)拆成扩散和电容项。
+\item 题设实测i(1 s)=14.1860782497 μA、i(4 s)=5.74959875191 μA，9 s另有实测3.20014962965 μA用于独立验证。
+\item 对t1=1、t2=4，定义qj=1/√tj、ej=e\textasciicircum{}(−tj/τ)，则(i1,i2)ᵀ=[[q1,e1],[q2,e2]](a,B)ᵀ。
+\item 行列式d=q1 e2−q2 e1=-0.167930046620≠0，故参数在给定τ时唯一可辨识。
+\item 用克拉默法则，a=(i1 e2−i2 e1)/d，B=(q1 i2−q2 i1)/d；不同于将第二个电流简单乘2。
+\item 反演得到a=9.33383297203 μA sqrt(s)与B=8.00000000000 μA，均为正。
+\item 反求D=π[a/(nFAc*)]²，注意a应以A sqrt(s)计，不能把微安值原样代入。
+\item 得到D=6.00000000000e-10 m²/s，即6.00000000000×10⁻¹⁰ m²/s。
+\item 回代9 s得iF=3.11127765734 μA、idl=0.0888719723059 μA，总电流3.20014962965 μA，与第三个读数一致。
+\item 给定独立电流噪声u\_i=0.1000 μA，a对(i1,i2)的偏导分别为e2/d与−e1/d；u\_a=u\_i sqrt(e1²+e2²)/|d|。
+\item 由此u\_a=0.370062398952 μA sqrt(s)，D正比a²，故u\_D=2D u\_a/a=4.75769043729e-11 m²/s（相对值0.0792948406215）。
+\item 对Cottrell电流积分QF(t)=2a√t；对指数电流积分Qdl(t)=Bτ[1−e\textasciicircum{}(−t/τ)]。
+\item 前9 s得到QF=56.0029978322 μC，Qdl=15.8222560554 μC，Qtotal=71.8252538876 μC，法拉第比例0.779711797745。
+\item 化学电子计量仅计QF，电解摩尔数为QF/F=5.80430171112e-10 mol；双电层电量不代表产生相同数量的氧化还原产物。
+\item 圆盘半径r=1.49270533036 mm，9 s扩散长度sqrt(Dt)=0.0734846922835 mm，比例0.0492292020326，较小而支持平面半无限扩散近似。
+\item 实际应用应考虑对流、有限电极、产物回扩散和时间相关双层响应，不能仅由三个点就断言实际体系符合此理想模型。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+current\_t1\_microA = 14.1860782 microA；current\_t4\_microA = 5.74959875 microA；current\_t9\_microA = 3.20014963 microA；inferred\_Cottrell\_coefficient\_microA\_sqrt\_s = 9.33383297 microA\_sqrt\_s；inferred\_charge\_amplitude\_microA = 8 microA；inversion\_determinant = -0.167930047 dimensionless；inferred\_D\_m2\_s = 6e-10 m2/s；D\_in\_1eMinus10\_m2\_s = 6 scaled\_m2/s；standard\_uncertainty\_a\_microA\_sqrt\_s = 0.370062399 microA\_sqrt\_s；standard\_uncertainty\_D\_m2\_s = 4.75769044e-11 m2/s；relative\_standard\_uncertainty\_D = 0.0792948406 fraction；faradaic\_charge\_t9\_microC = 56.0029978 microC；capacitive\_charge\_t9\_microC = 15.8222561 microC；total\_charge\_t9\_microC = 71.8252539 microC；faradaic\_charge\_fraction = 0.779711798 fraction；electrolyzed\_amount\_mol = 5.80430171e-10 mol；electrode\_radius\_mm = 1.49270533 mm；diffusion\_length\_sqrtDt\_mm = 0.0734846923 mm；diffusion\_length\_radius\_ratio = 0.049229202 ratio；electrode\_area\_cm2 = 0.07 cm2；concentration\_mol\_m3 = 1 mol/m3；exp\_minus\_t1\_over\_tau = 0.60653066 ratio；exp\_minus\_t4\_over\_tau = 0.135335283 ratio；inverse\_sqrt\_t4 = 0.5 s\textasciicircum{}-0.5；initial\_Cottrell\_coefficient\_microA = 9.33383297 microA\_sqrt\_s；capacitive\_t9\_microA = 0.0888719723 microA；faradaic\_t9\_microA = 3.11127766 microA；total\_to\_faradaic\_charge\_ratio = 1.28252516 ratio\par
+\noindent\textbf{模型前提：}
+实际应用应考虑对流、有限电极、产物回扩散和时间相关双层响应，不能仅由三个点就断言实际体系符合此理想模型。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第12辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -1559,6 +1619,36 @@ A\_to\_B\_rate\_constant\_s = 0.12 s\textasciicircum{}-1；B\_to\_C\_rate\_const
 本题中环氧化、开环和消除全用理想拟一级模型；真实化学合成时还须核查立体化学、酸碱催化、多步消除及中间体的副反应。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O166 · A₂/B₂逐步缩聚的计量偏差、端基酸值与Carothers数均分子量}
+\noindent\textbf{题目}\par
+将乙二醇HO–CH₂CH₂–OH（A₂，62.068 g/mol）0.03000 mol与己二酸HOOC–(CH₂)₄–COOH（B₂，146.14 g/mol）0.02000 mol理想缩聚。每生成1条酯键释放一分子H₂O并定量移走，M(H₂O)=18.01528 g/mol。所有物种均只有2个官能团，无环化、支化、挥发单体损失和降解。限制性羧基转化率p\_B=0.8000。反应后的游离单体和低聚体全部计入总质量和分子数，每个产物分子都是非环线性链。已知M(KOH)=56.1056 g/mol。求初始羟基、羧基当量及实际成键数、羟基转化率、数均聚合度DPn、干产物分子数及数均分子量、脱水与原料总质量守恒、羟基及羧基端数、酸值和羟值(mg KOH/g)。证明端基总当量为剩余链数的两倍，并给出完全消耗羧基时DPn的计量上限，以及要达到DPn=4所需羧基转化率。讨论二官能缩聚不可能凭此机理产生交联凝胶的原因。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 乙二醇与己二酸均是严格双官能，初始羟基当量2×0.03000=0.06000 mol、羧基当量2×0.02000=0.04000 mol。
+\item 令A为羟基、B为羧基，r=B₀/A₀=2/3；每条酯键消耗一个A和一个B官能团，生成一分子水。
+\item 给定pB=0.8000，成键数b=B₀pB=0.0320000000000 mol，对应pA=b/A₀=0.533333333333。
+\item 无分子内环化，分子间每生成一条酯键都使分子数减少1，所以N=N0−b；初始分子数N0=0.05000 mol。
+\item 剩余分子0.0180000000000 mol，DPn=N0/N=2.77777777778；它把未反应单体也计入平均。
+\item 由Carothers关系DPn=(1+r)/(1+r−2r pB)独立回算，结果与分子计数一致。
+\item pB→1时DPn,max=(1+r)/(1−r)=5.00000000000，不平衡端基限制链增长，即使羧基完全消耗也不会得到无限长链。
+\item 总质量守恒：m\_initial=n\_glycol M\_glycol+n\_adipic M\_adipic；m\_dry=m\_initial−b M\_water。
+\item 初始质量4.78484000000 g，分离水质量0.576488960000 g，干产物质量4.20835104000 g。
+\item 数均分子量Mn=m\_dry/N=233.797280000 g/mol；不要假定所有链具有相同的端基与重复单元数。
+\item 两种剩余端基按未反应官能团直接计数：nOH=A₀−b、nCOOH=B₀−b。
+\item 得到OH端基0.0280000000000 mol、COOH端基0.00800000000000 mol，总端数0.0360000000000 mol，等于2N=0.0360000000000 mol。
+\item 酸值是每克干产物的羧基KOH当量mg数，AV=1000×56.1056×nCOOH/m\_dry；羟值按OH的KOH当量同理换算。
+\item 故酸值AV=106.655741342 mg KOH/g、羟值=373.295094698 mg KOH/g。
+\item 要求DPn=4时，由Carothers关系反解pB=(1+r)(1−1/4)/(2r)，检验在0至1之间。
+\item pB,target=0.937500000000，所需成键0.0375000000000 mol、目标剩余分子0.0125000000000 mol，回代DPn=4.00000000000。
+\item 纯双官能无环线性缩聚不能形成三臂及更高的交联节点，因此不会按该机理形成化学凝胶；真实工艺需另外考虑非理想环化、单体挥发、平衡和副反应。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+initial\_OH\_mol = 0.06 mol；initial\_COOH\_mol = 0.04 mol；functional\_ratio\_B\_A = 0.666666667 ratio；B\_conversion = 0.8 fraction；A\_conversion = 0.533333333 fraction；formed\_bonds\_mol = 0.032 mol；initial\_molecules\_mol = 0.05 mol；final\_molecules\_mol = 0.018 mol；DPn\_current = 2.77777778 count；DPn\_max\_mass\_imbalance = 5 count；initial\_monomer\_mass\_g = 4.78484 g；water\_removed\_mass\_g = 0.57648896 g；dry\_products\_mass\_g = 4.20835104 g；Mn\_g\_mol = 233.79728 g/mol；remaining\_OH\_ends\_mol = 0.028 mol；remaining\_COOH\_ends\_mol = 0.008 mol；sum\_end\_moles = 0.036 mol；double\_chain\_moles = 0.036 mol；acid\_value\_mgKOH\_g = 106.655741 mgKOH/g；hydroxyl\_value\_mgKOH\_g = 373.295095 mgKOH/g；acid\_end\_fraction = 0.222222222 fraction；hydroxyl\_end\_fraction = 0.777777778 fraction；pB\_for\_DP4 = 0.9375 fraction；bonds\_for\_DP4\_mol = 0.0375 mol；molecules\_for\_DP4\_mol = 0.0125 mol；confirmed\_target\_DP = 4 count；dry\_mass\_fraction = 0.87951761 fraction；water\_mass\_fraction = 0.12048239 fraction；OH\_to\_COOH\_end\_ratio = 3.5 ratio；DP\_current\_over\_max = 0.555555556 ratio\par
+\noindent\textbf{模型前提：}
+纯双官能无环线性缩聚不能形成三臂及更高的交联节点，因此不会按该机理形成化学凝胶；真实工艺需另外考虑非理想环化、单体挥发、平衡和副反应。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第12辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -2056,6 +2146,35 @@ Onsager\_determinant = 1.1e-07 L11*L22；dimensionless\_coupling = 0.670820393 r
 critical\_temperature\_K = 601.361775 K；RT\_at\_400\_J\_mol = 3325.78505 J/mol；spinodal\_discriminant = 0.578656194 ratio；spinodal\_B\_lower = 0.210671903 fraction；spinodal\_B\_upper = 0.789328097 fraction；binodal\_B\_lower = 0.0700892785 fraction；binodal\_B\_upper = 0.929910722 fraction；gprime\_at\_binodal\_lower\_J\_mol = 0 J/mol；gprime\_at\_binodal\_upper\_J\_mol = 0 J/mol；mixed\_g\_at\_binodal\_lower\_J\_mol = -192.548741 J/mol；mixed\_g\_at\_binodal\_upper\_J\_mol = -192.548741 J/mol；homogeneous\_g\_at\_x0p3\_J\_mol = 68.3966384 J/mol；free\_energy\_gain\_from\_separation\_J\_mol = 260.945379 J/mol；high\_B\_phase\_molar\_fraction = 0.267393566 fraction；low\_B\_phase\_molar\_fraction = 0.732606434 fraction；reconstructed\_overall\_B\_fraction = 0.3 fraction；gsecond\_at\_binodal\_lower\_J\_mol = 31027.1523 J/mol；gsecond\_at\_x0p3\_J\_mol = -4162.92835 J/mol；gsecond\_at\_x0p5\_J\_mol = -6696.85981 J/mol；mixed\_g\_at\_x0p5\_J\_mol = 194.741471 J/mol；center\_to\_coexistence\_barrier\_J\_mol = 387.290212 J/mol；excess\_enthalpy\_at\_x0p3\_J\_mol = 2100 J/mol；ideal\_entropy\_g\_component\_at\_x0p3\_J\_mol = -2031.60336 J/mol；gsecond\_at\_x0p5\_T650\_J\_mol = 1617.60281 J/mol；temperature\_below\_critical\_K = 201.361775 K；spinodal\_discriminant\_nonnegative = 0.334842991 ratio；gprime\_at\_x0p5\_J\_mol = 0 J/mol；gain\_over\_RT = 0.0784612882 ratio；overall\_minus\_binodal\_lower = 0.229910722 fraction；spinodal\_upper\_minus\_overall = 0.489328097 fraction\par
 \noindent\textbf{模型前提：}
 忽略了界面能、有限粒径、组成依赖Ω、非对称组分和高阶涨落，故结果仅适用于题设正规溶液热力学模型。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P166 · BET氮气多层吸附的双点反演、单层容量与比表面积}
+\noindent\textbf{题目}\par
+某理想固体在77.00 K以N₂进行BET多层吸附，x=p/p₀，吸附量v以cm³ STP/g计，服从v=v\_m C x/[(1−x)(1+(C−1)x)]。实验提供两个理想模拟点：(x₁=0.05000, v₁=79.9467021985 cm³ STP/g)、(x₂=0.2000, v₂=117.187500000 cm³ STP/g)。v\_m与BET常数C均未知，必须从两点数据求出，不能预设其数值。给定0 °C、1 atm的氮气STP摩尔体积22414 cm³/mol、阿伏伽德罗常数6.02214076×10²³ mol⁻¹、氮气分子有效横截面积0.1620 nm²、R=8.314462618 J/(mol K)。将数据线性化为y=x/[v(1−x)]，求斜率、截距、v\_m、C及单层分子数和BET比表面积，预测x=0.1000时v。若C≈exp[(E₁−E\_L)/(RT)]，反演第一层相对后续层的能量差，并审核低相对压力和接近饱和时的BET适用范围；不得将多层吸附总体积误当成单层体积。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 理想BET公式计算的是多层总吸附体积；其与单层容量v\_m之间不是简单的Langmuir单层覆盖关系。
+\item 将BET方程两边倒转整理：y=x/[v(1−x)]=1/(v\_m C)+[(C−1)/(v\_m C)]x。
+\item 给定相对压强x₁=0.0500000000000、x₂=0.200000000000，实验吸附量v₁=79.9467021985、v₂=117.187500000 cm³ STP/g。
+\item 由数据计算y₁=0.000658333333333、y₂=0.00213333333333 g/cm³。
+\item 直线斜率s=(y₂−y₁)/(x₂−x₁)，截距i=y₁−sx₁；两点压力不同，故可反演。
+\item 本题s=0.00983333333333、i=0.000166666666667 g/cm³，i>0且s>0。
+\item 从i+s=1/v\_m得v\_m=1/(i+s)，再从s/i=C−1得C=1+s/i。
+\item 结果v\_m=100.000000000 cm³ STP/g，C=60.0000000000。
+\item 单层气体物质的量n\_m=v\_m/(22414 cm³/mol)；只取单层容量而非某一压力下的总v。
+\item 因此n\_m=0.00446149727849 mol/g、N\_m=2.68677646114e+21 molecules/g。
+\item 每个N₂分子的有效表面截面积为0.1620×10⁻¹⁸ m²，故S\_BET=N\_m σ。
+\item 得到比表面积S\_BET=435.257786705 m²/g，量纲严格为面积除质量。
+\item 回代预测x=0.1000时v=96.6183574879 cm³ STP/g，对应BET线性变量y=0.00115000000000。
+\item 把C近似写成exp((E₁−E\_L)/(RT))，于是E₁−E\_L=RT lnC=2.62125516020 kJ/mol。
+\item 低压x→0时v≈v\_m Cx；理想公式在x→1时发散，真实高压行为会受多层凝聚、毛细现象和孔结构影响。
+\item 本题两个高精度模拟点足以完成代数反演，但不代替真实BET多点线性区、Rouquerol一致性标准和样品脱气质量控制。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+pressure\_x1 = 0.05 fraction；pressure\_x2 = 0.2 fraction；adsorbed\_v1\_cm3STP\_g = 79.9467022 cm3/g；adsorbed\_v2\_cm3STP\_g = 117.1875 cm3/g；BET\_y1 = 0.000658333333 g/cm3；BET\_y2 = 0.00213333333 g/cm3；BET\_slope = 0.00983333333 g/cm3；BET\_intercept = 0.000166666667 g/cm3；monolayer\_capacity\_cm3STP\_g = 100 cm3/g；inferred\_BET\_C = 60 ratio；predicted\_v\_at\_x0p10\_cm3STP\_g = 96.6183575 cm3/g；predicted\_y\_at\_x0p10 = 0.00115 g/cm3；monolayer\_moles\_g = 0.00446149728 mol/g；monolayer\_molecules\_g = 2.68677646e+21 molecules/g；BET\_surface\_m2\_g = 435.257787 m2/g；layer\_energy\_difference\_kJ\_mol = 2.62125516 kJ/mol；v1\_over\_vm = 0.799467022 ratio；v2\_over\_vm = 1.171875 ratio；v3\_over\_vm = 0.966183575 ratio；slope\_plus\_intercept = 0.01 g/cm3；inverse\_slope\_plus\_intercept = 100 cm3/g；slope\_over\_intercept = 59 ratio；x1\_over\_1\_minus\_x1 = 0.0526315789 ratio；x2\_over\_1\_minus\_x2 = 0.25 ratio；v0p10\_crosscheck = 96.6183575 cm3/g；specific\_area\_per\_STP\_cm3 = 4.35257787 m2\_per\_cm3；inverse\_vm = 0.01 g/cm3；specific\_area\_per\_mol = 97558.6803 m2/mol；monolayer\_mmol\_g = 4.46149728 mmol/g\par
+\noindent\textbf{模型前提：}
+本题两个高精度模拟点足以完成代数反演，但不代替真实BET多点线性区、Rouquerol一致性标准和样品脱气质量控制。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
