@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (56题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (58题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -1182,6 +1182,36 @@ remaining\_fast\_enantiomer\_M = 0.00183939721 mol/L；remaining\_slow\_enantiom
 此理想动力学拆分不考虑可逆反应、产物消旋、动态动力学拆分与对映体互相转化；不借助消旋再生时，对于严格单一目标构型的传统拆分理论最高产率不超过初始底物一半。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O161 · Karplus核磁偶合的三构象Boltzmann简并统计与双温度焓熵反演}
+\noindent\textbf{题目}\par
+某假想有机化合物RCH₂–CH₂R绕中间C–C键只有三个快速互变构象：一个anti（φ=180°）和两个镜像gauche（φ=±60°）。其³J\_HH满足实验标定的Karplus式J(φ)=8cos²φ−2cosφ+2 Hz。相对单个anti构象，每一个gauche具有固定焓差ΔH=+4500.0 J/mol及内禀熵差ΔS=+8.000 J/(mol K)，注意两个gauche属于两个微态。温度分别为T₁=298.15 K、T₂=350.0 K，R=8.314462618 J/(mol K)。快交换NMR测得两温度偶合J\_obs₁=7.85913006659821 Hz、J\_obs₂=7.25506617762009 Hz。由Karplus、三态配分函数和Boltzmann分布求anti、每个及总gauche概率、两个J值，并只根据两温度J\_obs独立反演单个gauche权重及ΔH、ΔS；进一步求构象概率混合熵及两态能隙模型的构象热容，核验简并度只计一次、概率归一、反演唯一性、升温人口趋势和物理适用条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 研究假想有机柔性乙烷片段RCH₂–CH₂R绕C–C键的三个快速交换构象：一个anti二面角180°及两个对称gauche二面角±60°。
+\item 给定标定的Karplus式³J(φ)=8cos²φ−2cosφ+2 Hz，角度以度定义并在计算三角函数时换成弧度。
+\item anti时cosφ=−1，得到J\_a=12 Hz；每个gauche时cosφ=+1/2，得到J\_g=3 Hz。两gauche构象各自为独立统计微态。
+\item 设每个gauche相对anti的焓差ΔH=+4500 J/mol、内禀熵差ΔS=+8.000 J/(mol K)，且在298.15–350 K温区均不变。
+\item 每个gauche相对于单个anti微态的权重w(T)=exp(ΔS/R−ΔH/(RT))；配分权重总和Z=1+2w，不能把两个gauche简并度重复算入单微态ΔS。
+\item T₁=298.15 K时w=0.426091695082，T₂=350 K时w=0.557562870272。
+\item 两温度anti占据率分别p\_a=0.539903340733和0.472785130847；每个gauche占据率分别0.230048329633和0.263607434577。
+\item 总gauche概率分别为0.460096659267和0.527214869153，逐温度检查p\_anti+2p\_gauche=1。
+\item 若核磁构象交换快于偶合常数分辨时间尺度，则观测J\_obs=J\_a p\_anti+2J\_g p\_gauche=(J\_a+2w J\_g)/(1+2w)。
+\item 因此两个温度观测J分别为7.85913006660、7.25506617762 Hz，升温使高焓gauche人口增加而观测J降低。
+\item 由观测偶合反推单微态权重w=(J\_a−J\_obs)/[2(J\_obs−J\_g)]，两温度各有正根，前提J\_g<J\_obs<J\_a。
+\item 分别得到反推w₁=0.426091695082、w₂=0.557562870272，与正向统计权重独立对照。
+\item 对lnw=ΔS/R−ΔH/(RT)做两温度差分，反演ΔH=−R(lnw₂−lnw₁)/(1/T₂−1/T₁)，再由ΔS=Rlnw₁+ΔH/T₁反演内禀熵差。
+\item 得到ΔH=4500.00000000 J/mol、ΔS=8.00000000000 J/(mol K)，注意不另加Rln2至单微态熵差。
+\item 按三态概率定义混合构象熵S\_mix=−R[p\_a ln p\_a+2p\_g ln p\_g]，两温度分别为8.38824466382与8.78924046826 J/(mol K)。
+\item 在内禀焓差不随温度变化的理想模型中，构象平均激发焓U=ΔH×P\_gauche，产生正热容C=ΔH² P\_gauche(1−P\_gauche)/(RT²)，两温度为6.80591169235和4.95571375734 J/(mol K)。
+\item 此模型未包含其它扭转最低点、溶剂氢键、核磁自旋多阶耦合、交换区间和非Karplus电子效应；真实构象势能曲线会改变拟合结果。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Karplus\_anti\_J\_Hz = 12 Hz；Karplus\_each\_gauche\_J\_Hz = 3 Hz；one\_gauche\_Boltzmann\_weight\_298K = 0.426091695 fraction；one\_gauche\_Boltzmann\_weight\_350K = 0.55756287 fraction；anti\_population\_298K = 0.539903341 fraction；anti\_population\_350K = 0.472785131 fraction；each\_gauche\_population\_298K = 0.23004833 fraction；each\_gauche\_population\_350K = 0.263607435 fraction；total\_gauche\_population\_298K = 0.460096659 fraction；total\_gauche\_population\_350K = 0.527214869 fraction；observed\_fast\_exchange\_J\_298K\_Hz = 7.85913007 Hz；observed\_fast\_exchange\_J\_350K\_Hz = 7.25506618 Hz；inverted\_weight\_298K = 0.426091695 fraction；inverted\_weight\_350K = 0.55756287 fraction；reconstructed\_gauche\_minus\_anti\_enthalpy\_J\_mol = 4500 J/mol；reconstructed\_intrinsic\_entropy\_J\_molK = 8 J/(mol K)；gauche\_minus\_anti\_Gibbs\_298K\_kJ\_mol = 2.1148 kJ/mol；gauche\_minus\_anti\_Gibbs\_350K\_kJ\_mol = 1.7 kJ/mol；conformational\_mixing\_entropy\_298K\_J\_molK = 8.38824466 J/(mol K)；conformational\_mixing\_entropy\_350K\_J\_molK = 8.78924047 J/(mol K)；conformational\_heat\_capacity\_298K\_J\_molK = 6.80591169 J/(mol K)；conformational\_heat\_capacity\_350K\_J\_molK = 4.95571376 J/(mol K)；population\_sum\_298K = 1 fraction；population\_sum\_350K = 1 fraction\par
+\noindent\textbf{模型前提：}
+此模型未包含其它扭转最低点、溶剂氢键、核磁自旋多阶耦合、交换区间和非Karplus电子效应；真实构象势能曲线会改变拟合结果。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第12辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -1534,6 +1564,36 @@ M→0时k\_obs≈k₀[M]呈二级碰撞依赖；M→∞时k\_obs→k∞为纯一
 gel\_cation\_concentration\_0p1M = 0.128077641 mol/L；gel\_anion\_concentration\_0p1M = 0.0780776406 mol/L；Donnan\_salt\_product\_M2 = 0.01 M2；gel\_ion\_charge\_difference\_M = 0.05 mol/L；Donnan\_potential\_0p1M\_mV = -6.35805164 mV；ionic\_osmotic\_pressure\_difference\_0p1M\_Pa = 15258.6778 Pa；polymer\_chain\_osmotic\_pressure\_Pa = 49579.1406 Pa；total\_excess\_osmotic\_pressure\_Pa = 64837.8184 Pa；coion\_exclusion\_ratio\_0p1M = 0.780776406 ratio；mobile\_ion\_excess\_total\_0p1M\_M = 0.00615528128 mol/L；cation\_electrochemical\_potential\_residual\_J\_mol = 0 J/mol；anion\_electrochemical\_potential\_residual\_J\_mol = 0 J/mol；gel\_cation\_concentration\_0p2M = 0.226556444 mol/L；gel\_anion\_concentration\_0p2M = 0.176556444 mol/L；Donnan\_potential\_0p2M\_mV = -3.20326718 mV；ionic\_osmotic\_pressure\_0p2M\_Pa = 7716.71414 Pa；coion\_exclusion\_ratio\_0p2M = 0.882782219 ratio；low\_high\_osmotic\_pressure\_ratio = 1.97735429 ratio；cation\_enrichment\_factor\_0p1M = 1.28077641 ratio；anion\_exclusion\_factor\_0p1M = 0.780776406 ratio\par
 \noindent\textbf{模型前提：}
 本题的X按凝胶体积给定且保持固定，若发生真实膨胀收缩则X会稀释并与网络弹性、Flory–Huggins聚合物混合项耦合，真实Donnan模型还需活动度、离子尺寸及多价离子效应。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P161 · 12CO/13CO谐振子同位素频移与量子振动配分热容、熵及零点能}
+\noindent\textbf{题目}\par
+以理想一维量子谐振子模拟¹²C¹⁶O和¹³C¹⁶O分子的同一个伸缩振动模，假设同位素替换不改变电子势能曲率，谐振子波数随约化质量的平方根倒数变化。原子质量m(¹²C)=12.000000 u、m(¹³C)=13.003355 u、m(¹⁶O)=15.994915 u，已知¹²CO振动波数ν̃₁₂=2143.000 cm⁻¹。给定hc/k\_B=1.438776877 K·cm、R=8.314462618 J/(mol K)，温度T=800.0 K。求两分子的约化质量、¹³CO振动波数与同位素红移；用振动配分函数q=1/(1−e\textasciicircum{}(−x))及x=(hc/k\_B)ν̃/T求平均振动声子数、v=0和v=1的概率、零点能与含零点能的摩尔振动内能、摩尔振动热容C\_V和振动熵，比较两同位素。核验振动概率归一、低温第三定律极限、高温C\_V→R，并说明谐振子单模热容不是CO全部热容。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将¹²C¹⁶O与¹³C¹⁶O近似为拥有相同Born–Oppenheimer势能曲率的双原子一维谐振子，忽略转动、电子跃迁、非谐性及同位素影响键力常数的次级效应。
+\item 两个同位素分子的约化质量为μ=m\_Cm\_O/(m\_C+m\_O)，其中m(¹²C)=12.000000 u、m(¹³C)=13.003355 u、m(¹⁶O)=15.994915 u。
+\item 由此得μ₁₂=6.85620870790 u、μ₁₃=7.17241262806 u，较重同位素使约化质量增大。
+\item 谐振子频率ν̃∝μ\textasciicircum{}(−1/2)，以¹²CO振动波数ν̃₁₂=2143.000 cm⁻¹为参照，预测ν̃₁₃=ν̃₁₂√(μ₁₂/μ₁₃)。
+\item 算得¹³CO波数2095.22926989 cm⁻¹，相对于¹²CO红移47.7707301087 cm⁻¹，位移不等于两个同位素的质量百分比差。
+\item 温度T=800.0 K，定义θ\_v=(hc/k\_B)ν̃、x=θ\_v/T，给定hc/k\_B=1.438776877 K·cm。
+\item 两个同位素x分别3.85412355926、3.76820928192，反映较重¹³CO热激发更容易。
+\item 相对于零点能的振动配分函数q\_v=Σ\_\{v=0\}∞exp(−xv)=1/(1−exp(−x))，其态概率P\_v=(1−e\textasciicircum{}(−x))e\textasciicircum{}(−vx)。
+\item ¹²CO基振动态占据P₀=0.978807831147、第一激发态P₁=0.0207430608325，¹³CO两者分别0.976906619984、0.0225600758155。
+\item 平均声子数n̄=1/(e\textasciicircum{}x−1)；两个同位素分别为n̄₁₂和n̄₁₃，且n̄₁₃>n̄₁₂。
+\item 含零点能的摩尔振动内能U\_v=Rθ\_v(1/2+n̄)，各同位素零点能E\_ZP=Rθ\_v/2。
+\item ¹²CO与¹³CO零点能分别12817.9865035和12532.2540845 J/mol，差值285.732418943 J/mol。
+\item 含零点能的摩尔振动内能分别13373.0309682和13124.7612907 J/mol，差异仅来自谐振子频率变化。
+\item 从配分函数对温度求导，得C\_\{V,v\}=R x² n̄(n̄+1)；仅温度升高后的激发能贡献热容，零点能本身不产生热容。
+\item 摩尔振动热容分别2.73190747937、2.85683798750 J/(mol K)，热力学高温极限均为R。
+\item 摩尔振动熵S\_v=R[x n̄−ln(1−e\textasciicircum{}(−x))]，两同位素分别求得并检查S\_v≥0及T→0的零熵极限。
+\item 实际CO振动非谐性、同位素电子振动修正及真实分子多自由度会改变精细谱线位置；此处数值是单模谐振子的理想预测，不可解释为分子全部热容或总熵。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+12CO\_reduced\_mass\_u = 6.85620871 u；13CO\_reduced\_mass\_u = 7.17241263 u；12CO\_vibrational\_wavenumber\_cm\_inv = 2143 cm\textasciicircum{}-1；13CO\_vibrational\_wavenumber\_cm\_inv = 2095.22927 cm\textasciicircum{}-1；isotope\_wavenumber\_shift\_cm\_inv = 47.7707301 cm\textasciicircum{}-1；isotope\_frequency\_ratio = 0.977708479 ratio；12CO\_oscillator\_x = 3.85412356 dimensionless；13CO\_oscillator\_x = 3.76820928 dimensionless；12CO\_mean\_phonon\_number = 0.0216510005 fraction；13CO\_mean\_phonon\_number = 0.0236392911 fraction；12CO\_ground\_vib\_population = 0.978807831 fraction；13CO\_ground\_vib\_population = 0.97690662 fraction；12CO\_first\_excited\_population = 0.0207430608 fraction；13CO\_first\_excited\_population = 0.0225600758 fraction；12CO\_zero\_point\_energy\_J\_mol = 12817.9865 J/mol；13CO\_zero\_point\_energy\_J\_mol = 12532.2541 J/mol；zero\_point\_energy\_12\_minus\_13\_J\_mol = 285.732419 J/mol；12CO\_vibrational\_U\_J\_mol = 13373.031 J/mol；13CO\_vibrational\_U\_J\_mol = 13124.7613 J/mol；12CO\_vibrational\_CV\_J\_molK = 2.73190748 J/(mol K)；13CO\_vibrational\_CV\_J\_molK = 2.85683799 J/(mol K)；12CO\_vibrational\_S\_J\_molK = 0.871900927 J/(mol K)；13CO\_vibrational\_S\_J\_molK = 0.934894857 J/(mol K)；12CO\_thermal\_partition\_relative\_ground = 1.021651 dimensionless；13CO\_thermal\_partition\_relative\_ground = 1.02363929 dimensionless；12CO\_two\_lowest\_population\_sum = 0.999550892 fraction；12\_minus\_13\_total\_vib\_energy\_J\_mol = 248.269678 J/mol\par
+\noindent\textbf{模型前提：}
+实际CO振动非谐性、同位素电子振动修正及真实分子多自由度会改变精细谱线位置；此处数值是单模谐振子的理想预测，不可解释为分子全部热容或总熵。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
