@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第13辑 (86题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第13辑 (100题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -1696,6 +1696,167 @@ partition\_298 = 1.579345 ratio；partition\_350 = 1.68233991 ratio；topology0\
 速度和简并/构象平衡仅采用题设假想模型；需专家审校其真实适用性。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O191 · 串联不可逆一级反应A→B→C的中间体峰值与质量守恒}
+\noindent\textbf{题目}\par
+初始有机底物A0=0.02000 mol/L，单分子串联反应A→B→C由两步不可逆一级反应控制，k1=0.1000 s⁻¹、k2=0.02500 s⁻¹。假定温度恒定、B与C无其它消耗。求t=10.00 s时三物种浓度，B峰值出现时间、峰值浓度、最终C产率、t=10 s时各物种分率及总骨架守恒；证明B在峰值时生成速率k1A和损耗速率k2B相等。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原始题目与物理限制：初始有机底物A0=0.02000 mol/L，单分子串联反应A→B→C由两步不可逆一级反应控制，k1=0.1000 s⁻¹、k2=0.02500 s⁻¹。假定温度恒定、B与C无其它消耗。求t=10.00 s时三物种浓度，B峰值出现时间、峰值浓度、最终C产率、t=10 s时各物种分率及总骨架守恒；证明B在峰值时生成速率k1A和损耗速率k2B相等。
+\item 建立物理化学模型与完整解析式：A=A0e\textasciicircum{}(−k1t)，B=A0k1/(k2−k1)[e\textasciicircum{}(−k1t)−e\textasciicircum{}(−k2t)]，C=A0−A−B；tmax=ln(k1/k2)/(k1−k2)。
+\item 数学推导与问题核心辨析：由积分因子法解B'=k1A−k2B并求dB/dt=0，B最大值不等于A的半衰期，守恒检查需要三组分相加。
+\item 将问题中的温度、体积、浓度与速率统一为核心公式所需的单位，特别确保指数项无量纲。
+\item 首先求出状态参数：concentration\_A\_t10=0.007357588823429 mol/L；concentration\_B\_t10=0.01095790245067 mol/L；concentration\_C\_t10=0.001684508725905 mol/L；intermediate\_peak\_time\_s=18.48392481493 s。
+\item 由状态公式求出中间体或分支：intermediate\_peak\_concentration\_M=0.01259921049895 mol/L；fraction\_A\_t10=0.3678794411714 fraction；fraction\_B\_t10=0.5478951225333 fraction。
+\item 其余全部答案及验证量：fraction\_C\_t10=0.08422543629527 fraction；skeleton\_inventory\_M=0.02000000000000 mol/L；intermediate\_generation\_at\_peak\_M\_s=0.0003149802624737 mol/(L s)。
+\item 对于反应网络、质量作用关系和输运稳态，独立核对物料守恒、分率归一或对称条件。
+\item 核查边界行为：不论t→0与t→∞、温度接近平衡、压差趋零或组成变动，均须保持物理上可行的符号。
+\item 真实实验机制、同构去重和题目文字质量仍须经人工专家审阅，不因数值程序通过而获得出版批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+concentration\_A\_t10 = 0.00735758882 mol/L；concentration\_B\_t10 = 0.0109579025 mol/L；concentration\_C\_t10 = 0.00168450873 mol/L；intermediate\_peak\_time\_s = 18.4839248 s；intermediate\_peak\_concentration\_M = 0.0125992105 mol/L；fraction\_A\_t10 = 0.367879441 fraction；fraction\_B\_t10 = 0.547895123 fraction；fraction\_C\_t10 = 0.0842254363 fraction；skeleton\_inventory\_M = 0.02 mol/L；intermediate\_generation\_at\_peak\_M\_s = 0.000314980262 mol/(L s)\par
+\noindent\textbf{模型前提：}
+仅适用题设温度、边界、平衡和理想动力学条件；人工专家未审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O192 · 分子内内酯化与二分子酯化竞争的有效摩尔浓度}
+\noindent\textbf{题目}\par
+某ω-羟基酸的分子内内酯化单分子速率kc=0.02000 s⁻¹，另一分子提供醇基的分子间酯化速率常数k2=5.000 L/(mol s)。假设外部醇基浓度始终保持L=0.002000或0.02000 mol/L（由大储库补给），仅有单分子内酯P与外部酯Q两稳定产物，初始底物C0=0.01000 mol/L，反应60.00 s。计算有效摩尔浓度EM=kc/k2、两条件分支比、60 s残余底物和内酯量、分子间酯量以及L与EM相等时两路径分支。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原始题目与物理限制：某ω-羟基酸的分子内内酯化单分子速率kc=0.02000 s⁻¹，另一分子提供醇基的分子间酯化速率常数k2=5.000 L/(mol s)。假设外部醇基浓度始终保持L=0.002000或0.02000 mol/L（由大储库补给），仅有单分子内酯P与外部酯Q两稳定产物，初始底物C0=0.01000 mol/L，反应60.00 s。计算有效摩尔浓度EM=kc/k2、两条件分支比、60 s残余底物和内酯量、分子间酯量以及L与EM相等时两路径分支。
+\item 建立物理化学模型与完整解析式：kobs=kc+k2L，EM=kc/k2，fcycl=kc/kobs，C(t)=C0exp(−kobst)。
+\item 数学推导与问题核心辨析：分子内与分子间通道同属一级有效速率，但外部醇基浓度由储库维持；EM是使两速率相等的等效浓度，而非实际局部浓度测量。
+\item 将问题中的温度、体积、浓度与速率统一为核心公式所需的单位，特别确保指数项无量纲。
+\item 首先求出状态参数：effective\_molarity\_M=0.004000000000000 mol/L；kobs\_low\_s=0.03000000000000 s\textasciicircum{}-1；kobs\_high\_s=0.1200000000000 s\textasciicircum{}-1；cyclization\_fraction\_low=0.6666666666667 fraction。
+\item 由状态公式求出中间体或分支：cyclization\_fraction\_high=0.1666666666667 fraction；lactone\_t60\_low\_M=0.005564674078523 mol/L；lactone\_t60\_high\_M=0.001665422356986 mol/L；intermolecular\_ester\_t60\_low\_M=0.002782337039261 mol/L。
+\item 其余全部答案及验证量：intermolecular\_ester\_t60\_high\_M=0.008327111784930 mol/L；remaining\_start\_low\_M=0.001652988882216 mol/L；remaining\_start\_high\_M=0.000007465858083767 mol/L；cyclization\_fraction\_at\_EM=0.5000000000000 fraction。
+\item 对于反应网络、质量作用关系和输运稳态，独立核对物料守恒、分率归一或对称条件。
+\item 核查边界行为：不论t→0与t→∞、温度接近平衡、压差趋零或组成变动，均须保持物理上可行的符号。
+\item 真实实验机制、同构去重和题目文字质量仍须经人工专家审阅，不因数值程序通过而获得出版批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+effective\_molarity\_M = 0.004 mol/L；kobs\_low\_s = 0.03 s\textasciicircum{}-1；kobs\_high\_s = 0.12 s\textasciicircum{}-1；cyclization\_fraction\_low = 0.666666667 fraction；cyclization\_fraction\_high = 0.166666667 fraction；lactone\_t60\_low\_M = 0.00556467408 mol/L；lactone\_t60\_high\_M = 0.00166542236 mol/L；intermolecular\_ester\_t60\_low\_M = 0.00278233704 mol/L；intermolecular\_ester\_t60\_high\_M = 0.00832711178 mol/L；remaining\_start\_low\_M = 0.00165298888 mol/L；remaining\_start\_high\_M = 7.46585808e-06 mol/L；cyclization\_fraction\_at\_EM = 0.5 fraction\par
+\noindent\textbf{模型前提：}
+仅适用题设温度、边界、平衡和理想动力学条件；人工专家未审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O193 · 丙烯腈与丙烯酸酯的同位素动力学分流效应}
+\noindent\textbf{题目}\par
+某亲核试剂Nu与等浓度的乙烯基受体XH和其同位素标记XD发生并行不可逆Michael加成；两受体自由浓度由外部恒定库维持cH=cD=0.05000 mol/L。kH=4.000、kD=2.500 L/(mol s)，Nu初始0.01000 mol/L，t=15.00 s。求总拟一级速率、两个产物分支、t=15 s时两产物量、剩余Nu、通道动力学同位素效应比、初始反应通量以及两产物同位素标记分数。假设同位素标记不参与后续交换。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原始题目与物理限制：某亲核试剂Nu与等浓度的乙烯基受体XH和其同位素标记XD发生并行不可逆Michael加成；两受体自由浓度由外部恒定库维持cH=cD=0.05000 mol/L。kH=4.000、kD=2.500 L/(mol s)，Nu初始0.01000 mol/L，t=15.00 s。求总拟一级速率、两个产物分支、t=15 s时两产物量、剩余Nu、通道动力学同位素效应比、初始反应通量以及两产物同位素标记分数。假设同位素标记不参与后续交换。
+\item 建立物理化学模型与完整解析式：kobs=kH cH+kD cD，yH=kHcH/kobs，yD=kDcD/kobs，Pi=C0(1−e\textasciicircum{}(−kobs t))yi。
+\item 数学推导与问题核心辨析：动力学同位素效应是本征速度比kH/kD；实际产物比还要乘反应物浓度比，此题两受体相等才相同。
+\item 将问题中的温度、体积、浓度与速率统一为核心公式所需的单位，特别确保指数项无量纲。
+\item 首先求出状态参数：rate\_total\_s=0.3250000000000 s\textasciicircum{}-1；intrinsic\_KIE=1.600000000000 ratio；branch\_H=0.6153846153846 fraction；branch\_D=0.3846153846154 fraction。
+\item 由状态公式求出中间体或分支：product\_H\_t15\_M=0.006106860958653 mol/L；product\_D\_t15\_M=0.003816788099158 mol/L；remaining\_Nu\_M=0.00007635094218860 mol/L。
+\item 其余全部答案及验证量：converted\_Nu\_fraction=0.9923649057811 fraction；H\_product\_over\_D\_product=1.600000000000 ratio；initial\_H\_flux\_M\_s=0.002000000000000 mol/(L s)。
+\item 对于反应网络、质量作用关系和输运稳态，独立核对物料守恒、分率归一或对称条件。
+\item 核查边界行为：不论t→0与t→∞、温度接近平衡、压差趋零或组成变动，均须保持物理上可行的符号。
+\item 真实实验机制、同构去重和题目文字质量仍须经人工专家审阅，不因数值程序通过而获得出版批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+rate\_total\_s = 0.325 s\textasciicircum{}-1；intrinsic\_KIE = 1.6 ratio；branch\_H = 0.615384615 fraction；branch\_D = 0.384615385 fraction；product\_H\_t15\_M = 0.00610686096 mol/L；product\_D\_t15\_M = 0.0038167881 mol/L；remaining\_Nu\_M = 7.63509422e-05 mol/L；converted\_Nu\_fraction = 0.992364906 fraction；H\_product\_over\_D\_product = 1.6 ratio；initial\_H\_flux\_M\_s = 0.002 mol/(L s)\par
+\noindent\textbf{模型前提：}
+仅适用题设温度、边界、平衡和理想动力学条件；人工专家未审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O194 · 两级保护基脱保护的串联转化率与中间体库存}
+\noindent\textbf{题目}\par
+双保护基有机中间体A先以一级k1=0.01500 s⁻¹去掉Boc形成仍带另一保护基的中间体B，再以一级k2=0.06000 s⁻¹脱去另一保护基产生游离产物C，过程不可逆且无并行副反应，初始A=0.02000 mol/L，B=C=0。计算t=30.00 s与100.0 s下A、B、C浓度与最终C分率，并求中间体B最高浓度出现时间；核对保护基转化不是简单把两步转化分率相乘。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原始题目与物理限制：双保护基有机中间体A先以一级k1=0.01500 s⁻¹去掉Boc形成仍带另一保护基的中间体B，再以一级k2=0.06000 s⁻¹脱去另一保护基产生游离产物C，过程不可逆且无并行副反应，初始A=0.02000 mol/L，B=C=0。计算t=30.00 s与100.0 s下A、B、C浓度与最终C分率，并求中间体B最高浓度出现时间；核对保护基转化不是简单把两步转化分率相乘。
+\item 建立物理化学模型与完整解析式：A(t)=A0e\textasciicircum{}(−k1t)，B=A0 k1/(k2−k1)(e\textasciicircum{}(−k1t)−e\textasciicircum{}(−k2t))，C=A0−A−B。
+\item 数学推导与问题核心辨析：反应B(t)同时有A的生成和向C的损耗，最大B时k1[A]=k2[B]，每时刻只有一个底物骨架的三种保护程度。
+\item 将问题中的温度、体积、浓度与速率统一为核心公式所需的单位，特别确保指数项无量纲。
+\item 首先求出状态参数：A\_t30\_M=0.01275256303244 mol/L；B\_t30\_M=0.003148861756001 mol/L；C\_t30\_M=0.004098575211563 mol/L；A\_t100\_M=0.004462603202969 mol/L。
+\item 由状态公式求出中间体或分支：B\_t100\_M=0.001471009386478 mol/L；C\_t100\_M=0.01406638741055 mol/L；B\_peak\_time\_s=30.80654135822 s。
+\item 其余全部答案及验证量：B\_peak\_concentration\_M=0.003149802624737 mol/L；fully\_deprotected\_fraction\_t100=0.7033193705276 fraction；skeleton\_total\_t100\_M=0.02000000000000 mol/L。
+\item 对于反应网络、质量作用关系和输运稳态，独立核对物料守恒、分率归一或对称条件。
+\item 核查边界行为：不论t→0与t→∞、温度接近平衡、压差趋零或组成变动，均须保持物理上可行的符号。
+\item 真实实验机制、同构去重和题目文字质量仍须经人工专家审阅，不因数值程序通过而获得出版批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+A\_t30\_M = 0.012752563 mol/L；B\_t30\_M = 0.00314886176 mol/L；C\_t30\_M = 0.00409857521 mol/L；A\_t100\_M = 0.0044626032 mol/L；B\_t100\_M = 0.00147100939 mol/L；C\_t100\_M = 0.0140663874 mol/L；B\_peak\_time\_s = 30.8065414 s；B\_peak\_concentration\_M = 0.00314980262 mol/L；fully\_deprotected\_fraction\_t100 = 0.703319371 fraction；skeleton\_total\_t100\_M = 0.02 mol/L\par
+\noindent\textbf{模型前提：}
+仅适用题设温度、边界、平衡和理想动力学条件；人工专家未审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O195 · E1cB消除的碳负离子酸碱预平衡与条件一级速率}
+\noindent\textbf{题目}\par
+某β-卤代羰基底物S通过快速可逆去质子化形成共轭碱C⁻，并由C⁻以一级kelim=0.08000 s⁻¹不可逆消除为烯酮P。酸性底物pKa=9.000，外部大容量缓冲保持pH=8.000或10.000，并假定去质子化与复质子化远快于消除。底物总(S+C)=0.01000 mol/L初始，在t=20.00 s考察。求两个pH下活性C⁻分率、有效一级kobs、总底物余量、P生成量、半衰期及有效速率比。无其它分解与共轭碱双聚反应。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原始题目与物理限制：某β-卤代羰基底物S通过快速可逆去质子化形成共轭碱C⁻，并由C⁻以一级kelim=0.08000 s⁻¹不可逆消除为烯酮P。酸性底物pKa=9.000，外部大容量缓冲保持pH=8.000或10.000，并假定去质子化与复质子化远快于消除。底物总(S+C)=0.01000 mol/L初始，在t=20.00 s考察。求两个pH下活性C⁻分率、有效一级kobs、总底物余量、P生成量、半衰期及有效速率比。无其它分解与共轭碱双聚反应。
+\item 建立物理化学模型与完整解析式：fC=10\textasciicircum{}(pH−pKa)/[1+10\textasciicircum{}(pH−pKa)]，kobs=kelim fC，P=C0(1−e\textasciicircum{}(−kobs t))。
+\item 数学推导与问题核心辨析：平衡离子分布随pH剧变，只有活性碳负离子进入化学消除通道；消除速率常数和预平衡分数不可混作同一量。
+\item 将问题中的温度、体积、浓度与速率统一为核心公式所需的单位，特别确保指数项无量纲。
+\item 首先求出状态参数：anion\_fraction\_pH8=0.09090909090909 fraction；anion\_fraction\_pH10=0.9090909090909 fraction；kobs\_pH8\_s=0.007272727272727 s\textasciicircum{}-1；kobs\_pH10\_s=0.07272727272727 s\textasciicircum{}-1。
+\item 由状态公式求出中间体或分支：product\_t20\_pH8\_M=0.001353708094924 mol/L；product\_t20\_pH10\_M=0.007664935209091 mol/L；remaining\_t20\_pH8\_M=0.008646291905076 mol/L；remaining\_t20\_pH10\_M=0.002335064790909 mol/L。
+\item 其余全部答案及验证量：half\_life\_pH8\_s=95.30773732699 s；half\_life\_pH10\_s=9.530773732699 s；rate\_ratio=10.00000000000 ratio。
+\item 对于反应网络、质量作用关系和输运稳态，独立核对物料守恒、分率归一或对称条件。
+\item 核查边界行为：不论t→0与t→∞、温度接近平衡、压差趋零或组成变动，均须保持物理上可行的符号。
+\item 真实实验机制、同构去重和题目文字质量仍须经人工专家审阅，不因数值程序通过而获得出版批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+anion\_fraction\_pH8 = 0.0909090909 fraction；anion\_fraction\_pH10 = 0.909090909 fraction；kobs\_pH8\_s = 0.00727272727 s\textasciicircum{}-1；kobs\_pH10\_s = 0.0727272727 s\textasciicircum{}-1；product\_t20\_pH8\_M = 0.00135370809 mol/L；product\_t20\_pH10\_M = 0.00766493521 mol/L；remaining\_t20\_pH8\_M = 0.00864629191 mol/L；remaining\_t20\_pH10\_M = 0.00233506479 mol/L；half\_life\_pH8\_s = 95.3077373 s；half\_life\_pH10\_s = 9.53077373 s；rate\_ratio = 10 ratio\par
+\noindent\textbf{模型前提：}
+仅适用题设温度、边界、平衡和理想动力学条件；人工专家未审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O196 · 双波长光异构稳态的交叉吸收–量子产率比}
+\noindent\textbf{题目}\par
+某假想有机E/Z光异构体系在恒定单色光下的有效单分子正向E→Z光速率kEZ=0.02000 s⁻¹、反向Z→E光速率kZE=0.005000 s⁻¹，热互变另增加E→Z速率0.002000 s⁻¹和Z→E速率0.008000 s⁻¹。四过程独立且均一级，总初始E=0.01000 mol/L、Z=0。求受光条件下总正逆率、光稳态Z分率、达到稳态的松弛时间、t=100.0 s时E与Z浓度、Z/E比及关闭光照后纯热稳态Z分率。不要把光稳态误当热力学平衡的必然值。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原始题目与物理限制：某假想有机E/Z光异构体系在恒定单色光下的有效单分子正向E→Z光速率kEZ=0.02000 s⁻¹、反向Z→E光速率kZE=0.005000 s⁻¹，热互变另增加E→Z速率0.002000 s⁻¹和Z→E速率0.008000 s⁻¹。四过程独立且均一级，总初始E=0.01000 mol/L、Z=0。求受光条件下总正逆率、光稳态Z分率、达到稳态的松弛时间、t=100.0 s时E与Z浓度、Z/E比及关闭光照后纯热稳态Z分率。不要把光稳态误当热力学平衡的必然值。
+\item 建立物理化学模型与完整解析式：kforward=kEZ+kthermal,EZ；kreverse=kZE+kthermal,ZE；fZ,ss=kforward/(kforward+kreverse)，Z(t)=C fZ,ss(1−e\textasciicircum{}(−(kforward+kreverse)t))。
+\item 数学推导与问题核心辨析：竞争光化学与热通道的稳态由所有通道速率之和控制，停止光照会使稳态改变；若有光漂白或波长依赖吸收系数变动则模型需扩展。
+\item 将问题中的温度、体积、浓度与速率统一为核心公式所需的单位，特别确保指数项无量纲。
+\item 首先求出状态参数：total\_forward\_s=0.02200000000000 s\textasciicircum{}-1；total\_reverse\_s=0.01300000000000 s\textasciicircum{}-1；steady\_Z\_fraction\_illum=0.6285714285714 fraction；relaxation\_time\_s=28.57142857143 s。
+\item 由状态公式求出中间体或分支：Z\_fraction\_t100=0.6095902161345 fraction；Z\_concentration\_t100\_M=0.006095902161345 mol/L；E\_concentration\_t100\_M=0.003904097838655 mol/L。
+\item 其余全部答案及验证量：photostationary\_Z\_over\_E=1.692307692308 ratio；thermal\_only\_Z\_fraction=0.2000000000000 fraction；steady\_light\_over\_thermal\_fraction=3.142857142857 ratio。
+\item 对于反应网络、质量作用关系和输运稳态，独立核对物料守恒、分率归一或对称条件。
+\item 核查边界行为：不论t→0与t→∞、温度接近平衡、压差趋零或组成变动，均须保持物理上可行的符号。
+\item 真实实验机制、同构去重和题目文字质量仍须经人工专家审阅，不因数值程序通过而获得出版批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+total\_forward\_s = 0.022 s\textasciicircum{}-1；total\_reverse\_s = 0.013 s\textasciicircum{}-1；steady\_Z\_fraction\_illum = 0.628571429 fraction；relaxation\_time\_s = 28.5714286 s；Z\_fraction\_t100 = 0.609590216 fraction；Z\_concentration\_t100\_M = 0.00609590216 mol/L；E\_concentration\_t100\_M = 0.00390409784 mol/L；photostationary\_Z\_over\_E = 1.69230769 ratio；thermal\_only\_Z\_fraction = 0.2 fraction；steady\_light\_over\_thermal\_fraction = 3.14285714 ratio\par
+\noindent\textbf{模型前提：}
+仅适用题设温度、边界、平衡和理想动力学条件；人工专家未审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O197 · 区域选择性环氧开环双路径与产物碳骨架分配}
+\noindent\textbf{题目}\par
+一个不对称环氧化物E在一假想路易斯酸/亲核试剂环境下通过两个不可逆竞争通道开环，末端碳受攻生成P1的拟一级k1=0.03000 s⁻¹，较取代碳受攻生成P2的拟一级k2=0.01500 s⁻¹。底物初始C0=0.02500 mol/L，时间t=40.00 s，产物稳定且没有再成环与聚合。求瞬时与终态产物区域选择性、反应进度、两产物浓度、底物剩余量、半衰期以及高取代位进攻产物的分率；解释此处速度常数已包含亲核体浓度而不能直接比较本征SN1/SN2机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原始题目与物理限制：一个不对称环氧化物E在一假想路易斯酸/亲核试剂环境下通过两个不可逆竞争通道开环，末端碳受攻生成P1的拟一级k1=0.03000 s⁻¹，较取代碳受攻生成P2的拟一级k2=0.01500 s⁻¹。底物初始C0=0.02500 mol/L，时间t=40.00 s，产物稳定且没有再成环与聚合。求瞬时与终态产物区域选择性、反应进度、两产物浓度、底物剩余量、半衰期以及高取代位进攻产物的分率；解释此处速度常数已包含亲核体浓度而不能直接比较本征SN1/SN2机制。
+\item 建立物理化学模型与完整解析式：f1=k1/(k1+k2)，f2=k2/(k1+k2)，Pi=C0(1−e\textasciicircum{}(−kt))fi，E=C0e\textasciicircum{}(−kt)。
+\item 数学推导与问题核心辨析：两个通道消耗同一个底物骨架，合并损耗率k=k1+k2，后续产物不会互变，最终P1:P2与速率比一致。
+\item 将问题中的温度、体积、浓度与速率统一为核心公式所需的单位，特别确保指数项无量纲。
+\item 首先求出状态参数：observed\_rate\_s=0.04500000000000 s\textasciicircum{}-1；regioselectivity\_P1\_fraction=0.6666666666667 fraction；regioselectivity\_P2\_fraction=0.3333333333333 fraction；product\_P1\_t40\_M=0.01391168519631 mol/L。
+\item 由状态公式求出中间体或分支：product\_P2\_t40\_M=0.006955842598153 mol/L；remaining\_epoxide\_t40\_M=0.004132472205540 mol/L；conversion\_t40=0.8347011117784 fraction。
+\item 其余全部答案及验证量：half\_life\_s=15.40327067911 s；product\_P1\_over\_P2=2.000000000000 ratio；carbon\_skeleton\_inventory\_M=0.02500000000000 mol/L。
+\item 对于反应网络、质量作用关系和输运稳态，独立核对物料守恒、分率归一或对称条件。
+\item 核查边界行为：不论t→0与t→∞、温度接近平衡、压差趋零或组成变动，均须保持物理上可行的符号。
+\item 真实实验机制、同构去重和题目文字质量仍须经人工专家审阅，不因数值程序通过而获得出版批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+observed\_rate\_s = 0.045 s\textasciicircum{}-1；regioselectivity\_P1\_fraction = 0.666666667 fraction；regioselectivity\_P2\_fraction = 0.333333333 fraction；product\_P1\_t40\_M = 0.0139116852 mol/L；product\_P2\_t40\_M = 0.0069558426 mol/L；remaining\_epoxide\_t40\_M = 0.00413247221 mol/L；conversion\_t40 = 0.834701112 fraction；half\_life\_s = 15.4032707 s；product\_P1\_over\_P2 = 2 ratio；carbon\_skeleton\_inventory\_M = 0.025 mol/L\par
+\noindent\textbf{模型前提：}
+仅适用题设温度、边界、平衡和理想动力学条件；人工专家未审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第13辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -2126,6 +2287,167 @@ right\_xA = 0.131667562 fraction；midpoint\_xA = 0.16296992 fraction；temperat
 transition\_entropy\_J\_molK = 14.2857143 J/(molK)；dT\_dP\_K\_Pa = -7e-08 K/Pa；dT\_dP\_K\_MPa = -0.07 K/MPa；Teq\_100MPa\_K = 343.007 K；Peq\_340K\_MPa = 142.957143 MPa；deltaG\_T350\_P100MPa\_Jmol = -99.9 J/mol；deltaG\_T340\_P0\_Jmol = 142.857143 J/mol；pressure\_Gibbs\_shift\_Jmol = -99.9 J/mol；equilibrium\_residual\_Jmol = 0 J/mol；beta\_stable\_indicator = 1 bool\par
 \noindent\textbf{模型前提：}
 仅适用题设理想统计力学、传输边界与相平衡假设，须专家复审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P191 · Gibbs界面吸附等温式由表面张力斜率求表面过量}
+\noindent\textbf{题目}\par
+298.15 K一种假想非离子表面活性剂在稀溶液中遵循γ=γ0−a ln(c/c0)，其中γ0=0.07200 N/m、a=0.006000 N/m，浓度c0=0.001000 mol/L，c分别为0.002000和0.01000 mol/L，假定溶液活度=相对浓度、液体表面平衡且溶剂表面过量基准取0。Gibbs吸附式Γ=−(1/RT)(dγ/dln a\_s)=a/(RT)（mol/m²），R=8.314462618 J/(mol K)。求两表面张力、表面过量、每摩尔界面活性剂对应的有效面积1/(NA Γ)、表面张力降幅及将c倍增时的张力变化，说明非离子无电离因子修正。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原始题目与物理限制：298.15 K一种假想非离子表面活性剂在稀溶液中遵循γ=γ0−a ln(c/c0)，其中γ0=0.07200 N/m、a=0.006000 N/m，浓度c0=0.001000 mol/L，c分别为0.002000和0.01000 mol/L，假定溶液活度=相对浓度、液体表面平衡且溶剂表面过量基准取0。Gibbs吸附式Γ=−(1/RT)(dγ/dln a\_s)=a/(RT)（mol/m²），R=8.314462618 J/(mol K)。求两表面张力、表面过量、每摩尔界面活性剂对应的有效面积1/(NA Γ)、表面张力降幅及将c倍增时的张力变化，说明非离子无电离因子修正。
+\item 建立物理化学模型与完整解析式：Γ=−(1/RT)dγ/dln(c/c0)=a/(RT)，γ(c)=γ0−a ln(c/c0)。
+\item 数学推导与问题核心辨析：γ的斜率为能量每面积，RT按J/mol因此Γ单位mol/m²，分子面积从NAΓ求倒数。
+\item 将问题中的温度、体积、浓度与速率统一为核心公式所需的单位，特别确保指数项无量纲。
+\item 首先求出状态参数：surface\_tension\_c0p002\_N\_m=0.06784111691664 N/m；surface\_tension\_c0p01\_N\_m=0.05818448944204 N/m；surface\_excess\_mol\_m2=0.000002420372732751 mol/m2；area\_per\_molecule\_m2=6.860674989040e-19 m2。
+\item 由状态公式求出中间体或分支：area\_per\_molecule\_nm2=0.6860674989040 nm2；tension\_drop\_at\_high\_N\_m=0.01381551055796 N/m；tension\_drop\_between\_states\_N\_m=0.009656627474605 N/m。
+\item 其余全部答案及验证量：tension\_change\_per\_doubling\_N\_m=0.004158883083360 N/m；adsorbed\_molecules\_per\_m2=1.457582528829e+18 molecules/m2；tension\_ratio\_high\_to\_low=0.8576581885220 ratio。
+\item 对于反应网络、质量作用关系和输运稳态，独立核对物料守恒、分率归一或对称条件。
+\item 核查边界行为：不论t→0与t→∞、温度接近平衡、压差趋零或组成变动，均须保持物理上可行的符号。
+\item 真实实验机制、同构去重和题目文字质量仍须经人工专家审阅，不因数值程序通过而获得出版批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+surface\_tension\_c0p002\_N\_m = 0.0678411169 N/m；surface\_tension\_c0p01\_N\_m = 0.0581844894 N/m；surface\_excess\_mol\_m2 = 2.42037273e-06 mol/m2；area\_per\_molecule\_m2 = 6.86067499e-19 m2；area\_per\_molecule\_nm2 = 0.686067499 nm2；tension\_drop\_at\_high\_N\_m = 0.0138155106 N/m；tension\_drop\_between\_states\_N\_m = 0.00965662747 N/m；tension\_change\_per\_doubling\_N\_m = 0.00415888308 N/m；adsorbed\_molecules\_per\_m2 = 1.45758253e+18 molecules/m2；tension\_ratio\_high\_to\_low = 0.857658189 ratio\par
+\noindent\textbf{模型前提：}
+仅适用题设温度、边界、平衡和理想动力学条件；人工专家未审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P192 · 理想非电解质凝固点降低与低温化学势近似}
+\noindent\textbf{题目}\par
+某理想非电解质溶于水时凝固点降低近似ΔTf=Kf m，不发生电离，水的凝固点下降常数Kf=1.860 K kg/mol。比较尿素0.2000 mol/kg和甘油0.5000 mol/kg两种互不混合的水溶液，以纯水基准Tf0=273.15 K。计算两溶液的降温、凝固点(K与°C)、两个降温比、冰点的相对Kelvin变化量和对应的溶剂质量1.000 kg下需要加入的溶质物质的量。指出冰开始析出时本题只是低浓度理想近似，不代表整个冻结过程降温保持不变。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原始题目与物理限制：某理想非电解质溶于水时凝固点降低近似ΔTf=Kf m，不发生电离，水的凝固点下降常数Kf=1.860 K kg/mol。比较尿素0.2000 mol/kg和甘油0.5000 mol/kg两种互不混合的水溶液，以纯水基准Tf0=273.15 K。计算两溶液的降温、凝固点(K与°C)、两个降温比、冰点的相对Kelvin变化量和对应的溶剂质量1.000 kg下需要加入的溶质物质的量。指出冰开始析出时本题只是低浓度理想近似，不代表整个冻结过程降温保持不变。
+\item 建立物理化学模型与完整解析式：ΔTf=Kf m，Tf=Tf0−ΔTf，m=nsolute/(kg solvent)。
+\item 数学推导与问题核心辨析：非电解质的van't Hoff因子取1，ΔTf和Kelvin温差数值相同；浓度以每kg溶剂为基准，不是每kg溶液。
+\item 将问题中的温度、体积、浓度与速率统一为核心公式所需的单位，特别确保指数项无量纲。
+\item 首先求出状态参数：depression\_urea\_K=0.3720000000000 K；depression\_glycerol\_K=0.9300000000000 K；Tf\_urea\_K=272.7780000000 K；Tf\_glycerol\_K=272.2200000000 K。
+\item 由状态公式求出中间体或分支：Tf\_urea\_C=-0.3720000000000 degC；Tf\_glycerol\_C=-0.9300000000000 degC；depression\_ratio\_glycerol\_urea=2.500000000000 ratio。
+\item 其余全部答案及验证量：difference\_freezing\_T\_K=0.5580000000000 K；moles\_urea\_per\_1kg\_solvent=0.2000000000000 mol；moles\_glycerol\_per\_1kg\_solvent=0.5000000000000 mol。
+\item 对于反应网络、质量作用关系和输运稳态，独立核对物料守恒、分率归一或对称条件。
+\item 核查边界行为：不论t→0与t→∞、温度接近平衡、压差趋零或组成变动，均须保持物理上可行的符号。
+\item 真实实验机制、同构去重和题目文字质量仍须经人工专家审阅，不因数值程序通过而获得出版批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+depression\_urea\_K = 0.372 K；depression\_glycerol\_K = 0.93 K；Tf\_urea\_K = 272.778 K；Tf\_glycerol\_K = 272.22 K；Tf\_urea\_C = -0.372 degC；Tf\_glycerol\_C = -0.93 degC；depression\_ratio\_glycerol\_urea = 2.5 ratio；difference\_freezing\_T\_K = 0.558 K；moles\_urea\_per\_1kg\_solvent = 0.2 mol；moles\_glycerol\_per\_1kg\_solvent = 0.5 mol\par
+\noindent\textbf{模型前提：}
+仅适用题设温度、边界、平衡和理想动力学条件；人工专家未审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P193 · Joule–Thomson等焓节流冷却的两压力状态与线性近似}
+\noindent\textbf{题目}\par
+一种非理想气体在规定温度和压强区间内Joule–Thomson系数保持μJT=(∂T/∂P)H=+0.2500 K/bar。初态T1=300.0 K、P1=100.0 bar，在节流阀上压强降至P2=10.00 bar，忽略动能、位能变化并按等焓、无外界做功、不可逆节流。另比较只降至P3=50.00 bar。求两终态温度、温降、压强差、冷却率（K/MPa）、若μJT换为−0.1000 K/bar时的反转加热终态及在P2时的温度差；解释节流过程中H守恒不代表S守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原始题目与物理限制：一种非理想气体在规定温度和压强区间内Joule–Thomson系数保持μJT=(∂T/∂P)H=+0.2500 K/bar。初态T1=300.0 K、P1=100.0 bar，在节流阀上压强降至P2=10.00 bar，忽略动能、位能变化并按等焓、无外界做功、不可逆节流。另比较只降至P3=50.00 bar。求两终态温度、温降、压强差、冷却率（K/MPa）、若μJT换为−0.1000 K/bar时的反转加热终态及在P2时的温度差；解释节流过程中H守恒不代表S守恒。
+\item 建立物理化学模型与完整解析式：T2=T1+μJT(P2−P1)，ΔT=μJT ΔP；1 MPa=10 bar。
+\item 数学推导与问题核心辨析：μJT的单位是K/bar，压强差负时正μJT产生冷却；阀的熵增需独立不可逆热力学分析。
+\item 将问题中的温度、体积、浓度与速率统一为核心公式所需的单位，特别确保指数项无量纲。
+\item 首先求出状态参数：final\_T\_P10\_K=277.5000000000 K；final\_T\_P50\_K=287.5000000000 K；drop\_100to10\_K=22.50000000000 K；drop\_100to50\_K=12.50000000000 K。
+\item 由状态公式求出中间体或分支：pressure\_drop\_100to10\_bar=90.00000000000 bar；pressure\_drop\_100to50\_bar=50.00000000000 bar；JT\_K\_per\_MPa=2.500000000000 K/MPa。
+\item 其余全部答案及验证量：negative\_mu\_heating\_final\_T10\_K=309.0000000000 K；negative\_mu\_final\_minus\_positive\_K=31.50000000000 K；slope\_sign\_cooling=1.000000000000 ratio。
+\item 对于反应网络、质量作用关系和输运稳态，独立核对物料守恒、分率归一或对称条件。
+\item 核查边界行为：不论t→0与t→∞、温度接近平衡、压差趋零或组成变动，均须保持物理上可行的符号。
+\item 真实实验机制、同构去重和题目文字质量仍须经人工专家审阅，不因数值程序通过而获得出版批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+final\_T\_P10\_K = 277.5 K；final\_T\_P50\_K = 287.5 K；drop\_100to10\_K = 22.5 K；drop\_100to50\_K = 12.5 K；pressure\_drop\_100to10\_bar = 90 bar；pressure\_drop\_100to50\_bar = 50 bar；JT\_K\_per\_MPa = 2.5 K/MPa；negative\_mu\_heating\_final\_T10\_K = 309 K；negative\_mu\_final\_minus\_positive\_K = 31.5 K；slope\_sign\_cooling = 1 ratio\par
+\noindent\textbf{模型前提：}
+仅适用题设温度、边界、平衡和理想动力学条件；人工专家未审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P194 · Graham逸出流的同位素质量选择性和收集组成}
+\noindent\textbf{题目}\par
+298.15 K假想气体混合物由质量数近似28.000 g/mol的N₂(A)与30.000 g/mol的15N₂(B)组成，源气室A/B摩尔分数分别0.6000和0.4000。理想小孔分子自由逸出，两个同位素分子的逸出摩尔通量与x\_i/√Mi成正比，无分子碰撞和逆流。求两同位素单位分率逸出速率之比、逸出气流中A/B分数、逸出流同位素质量比与源气差异、两总气组分的分子通量份额以及相对于源气的同位素富集倍数。说明该单级分离是动理学而非化学反应平衡。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原始题目与物理限制：298.15 K假想气体混合物由质量数近似28.000 g/mol的N₂(A)与30.000 g/mol的15N₂(B)组成，源气室A/B摩尔分数分别0.6000和0.4000。理想小孔分子自由逸出，两个同位素分子的逸出摩尔通量与x\_i/√Mi成正比，无分子碰撞和逆流。求两同位素单位分率逸出速率之比、逸出气流中A/B分数、逸出流同位素质量比与源气差异、两总气组分的分子通量份额以及相对于源气的同位素富集倍数。说明该单级分离是动理学而非化学反应平衡。
+\item 建立物理化学模型与完整解析式：J\_A/J\_B=(x\_A/x\_B)√(M\_B/M\_A)，y\_A=J\_A/(J\_A+J\_B)。
+\item 数学推导与问题核心辨析：质量较轻的A分子平均法向热速率更大；通量中质量的平方根权重不能写成简单Mi倒数。
+\item 将问题中的温度、体积、浓度与速率统一为核心公式所需的单位，特别确保指数项无量纲。
+\item 首先求出状态参数：per\_mole\_fraction\_rate\_ratio\_A\_to\_B=1.035098339014 ratio；effusion\_flow\_A\_fraction=0.6082498673780 fraction；effusion\_flow\_B\_fraction=0.3917501326220 fraction；effusion\_A\_to\_B\_ratio=1.552647508520 ratio。
+\item 由状态公式求出中间体或分支：feed\_A\_to\_B\_ratio=1.500000000000 ratio；ratio\_enrichment\_factor=1.035098339014 ratio；A\_fraction\_increase=0.008249867378017 fraction。
+\item 其余全部答案及验证量：B\_fraction\_decrease=0.008249867378017 fraction；molecular\_mass\_square\_root\_ratio=1.035098339014 ratio；normalization=1.000000000000 ratio。
+\item 对于反应网络、质量作用关系和输运稳态，独立核对物料守恒、分率归一或对称条件。
+\item 核查边界行为：不论t→0与t→∞、温度接近平衡、压差趋零或组成变动，均须保持物理上可行的符号。
+\item 真实实验机制、同构去重和题目文字质量仍须经人工专家审阅，不因数值程序通过而获得出版批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+per\_mole\_fraction\_rate\_ratio\_A\_to\_B = 1.03509834 ratio；effusion\_flow\_A\_fraction = 0.608249867 fraction；effusion\_flow\_B\_fraction = 0.391750133 fraction；effusion\_A\_to\_B\_ratio = 1.55264751 ratio；feed\_A\_to\_B\_ratio = 1.5 ratio；ratio\_enrichment\_factor = 1.03509834 ratio；A\_fraction\_increase = 0.00824986738 fraction；B\_fraction\_decrease = 0.00824986738 fraction；molecular\_mass\_square\_root\_ratio = 1.03509834 ratio；normalization = 1 ratio\par
+\noindent\textbf{模型前提：}
+仅适用题设温度、边界、平衡和理想动力学条件；人工专家未审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P195 · Flory–Huggins二元液体的混合自由能曲率与自发分相阈值}
+\noindent\textbf{题目}\par
+假想等分子大小A/B两组分的Flory–Huggins无量纲混合自由能f(φ)=φlnφ+(1−φ)ln(1−φ)+χφ(1−φ)，χ分别为1.500与2.500。比较φ=0.5000处的自由能、二阶曲率d²f/dφ²=1/φ+1/(1−φ)−2χ、以及φ=0.2000处曲率。求临界χc、两种χ在φ=0.5的稳定性以及在χ=2.5下的两个spinodal分界组成φ±=[1±√(1−2/χ)]/2。模型为平均场，仅判断局域曲率，不以自旋线包络当作binodal共存组成。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原始题目与物理限制：假想等分子大小A/B两组分的Flory–Huggins无量纲混合自由能f(φ)=φlnφ+(1−φ)ln(1−φ)+χφ(1−φ)，χ分别为1.500与2.500。比较φ=0.5000处的自由能、二阶曲率d²f/dφ²=1/φ+1/(1−φ)−2χ、以及φ=0.2000处曲率。求临界χc、两种χ在φ=0.5的稳定性以及在χ=2.5下的两个spinodal分界组成φ±=[1±√(1−2/χ)]/2。模型为平均场，仅判断局域曲率，不以自旋线包络当作binodal共存组成。
+\item 建立物理化学模型与完整解析式：f''=1/φ+1/(1−φ)−2χ，χc=2，φ±=[1±√(1−2/χ)]/2。
+\item 数学推导与问题核心辨析：f''<0代表均匀态对微小组成涨落不稳定，f''>0仅代表局域稳定而不是全局最低自由能。
+\item 将问题中的温度、体积、浓度与速率统一为核心公式所需的单位，特别确保指数项无量纲。
+\item 首先求出状态参数：free\_energy\_chi1p5\_mid=-0.3181471805599 RT\_units；free\_energy\_chi2p5\_mid=-0.06814718055995 RT\_units；curvature\_chi1p5\_mid=1.000000000000 ratio；curvature\_chi2p5\_mid=-1.000000000000 ratio。
+\item 由状态公式求出中间体或分支：curvature\_chi1p5\_phi0p2=3.250000000000 ratio；curvature\_chi2p5\_phi0p2=1.250000000000 ratio；critical\_chi=2.000000000000 ratio。
+\item 其余全部答案及验证量：spinodal\_left\_chi2p5=0.2763932022500 fraction；spinodal\_right\_chi2p5=0.7236067977500 fraction；unstable\_indicator\_chi2p5\_mid=1.000000000000 bool。
+\item 对于反应网络、质量作用关系和输运稳态，独立核对物料守恒、分率归一或对称条件。
+\item 核查边界行为：不论t→0与t→∞、温度接近平衡、压差趋零或组成变动，均须保持物理上可行的符号。
+\item 真实实验机制、同构去重和题目文字质量仍须经人工专家审阅，不因数值程序通过而获得出版批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+free\_energy\_chi1p5\_mid = -0.318147181 RT\_units；free\_energy\_chi2p5\_mid = -0.0681471806 RT\_units；curvature\_chi1p5\_mid = 1 ratio；curvature\_chi2p5\_mid = -1 ratio；curvature\_chi1p5\_phi0p2 = 3.25 ratio；curvature\_chi2p5\_phi0p2 = 1.25 ratio；critical\_chi = 2 ratio；spinodal\_left\_chi2p5 = 0.276393202 fraction；spinodal\_right\_chi2p5 = 0.723606798 fraction；unstable\_indicator\_chi2p5\_mid = 1 bool\par
+\noindent\textbf{模型前提：}
+仅适用题设温度、边界、平衡和理想动力学条件；人工专家未审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P196 · Nernst–Planck一维扩散电迁移的阴阳离子零总流电场}
+\noindent\textbf{题目}\par
+25°C一维稀溶液中一价阳离子A⁺、阴离子B⁻浓度均为c=0.01000 mol/L，总浓度梯度dc/dx=−2.000 mol/(m⁴)，离子扩散系数D+=1.000×10⁻⁹、D−=2.000×10⁻⁹ m²/s。Nernst–Planck通量J\_i=−D\_i dc/dx−z\_i D\_i(F/RT)c dφ/dx，假定稳态局部电中性且无外加电流J+−J−=0。求电势梯度dφ/dx、电场E=−dφ/dx、阴阳离子共同物质流、两种扩散项、净电流及跨1.000 mm长度的电势差，忽略溶液非理想活度与反应。注意梯度dc/dx的浓度单位是mol/m³，给定数值单位mol/m⁴。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原始题目与物理限制：25°C一维稀溶液中一价阳离子A⁺、阴离子B⁻浓度均为c=0.01000 mol/L，总浓度梯度dc/dx=−2.000 mol/(m⁴)，离子扩散系数D+=1.000×10⁻⁹、D−=2.000×10⁻⁹ m²/s。Nernst–Planck通量J\_i=−D\_i dc/dx−z\_i D\_i(F/RT)c dφ/dx，假定稳态局部电中性且无外加电流J+−J−=0。求电势梯度dφ/dx、电场E=−dφ/dx、阴阳离子共同物质流、两种扩散项、净电流及跨1.000 mm长度的电势差，忽略溶液非理想活度与反应。注意梯度dc/dx的浓度单位是mol/m³，给定数值单位mol/m⁴。
+\item 建立物理化学模型与完整解析式：令g=dc/dx，α=(F/RT)c；J+−J−=(D−−D+)g−(D++D−)α dφ/dx=0，故dφ/dx=(D−−D+)g/[(D++D−)α]。
+\item 数学推导与问题核心辨析：局部零电流并不要求两个离子各自通量为零，允许两个离子共同扩散；电势梯度由扩散系数不对称性建立。
+\item 将问题中的温度、体积、浓度与速率统一为核心公式所需的单位，特别确保指数项无量纲。
+\item 首先求出状态参数：potential\_gradient\_V\_m=-0.001712838608100 V/m；electric\_field\_V\_m=0.001712838608100 V/m；cation\_flux\_mol\_m2\_s=2.666666666667e-9 mol/(m2s)；anion\_flux\_mol\_m2\_s=2.666666666667e-9 mol/(m2s)。
+\item 由状态公式求出中间体或分支：cation\_diffusion\_flux=2.000000000000e-9 mol/(m2s)；anion\_diffusion\_flux=4.000000000000e-9 mol/(m2s)；migration\_flux\_cation=6.666666666667e-10 mol/(m2s)。
+\item 其余全部答案及验证量：migration\_flux\_anion=-1.333333333333e-9 mol/(m2s)；total\_current\_density\_A\_m2=-3.990539806270e-20 A/m2；potential\_difference\_1mm\_V=-0.000001712838608100 V。
+\item 对于反应网络、质量作用关系和输运稳态，独立核对物料守恒、分率归一或对称条件。
+\item 核查边界行为：不论t→0与t→∞、温度接近平衡、压差趋零或组成变动，均须保持物理上可行的符号。
+\item 真实实验机制、同构去重和题目文字质量仍须经人工专家审阅，不因数值程序通过而获得出版批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+potential\_gradient\_V\_m = -0.00171283861 V/m；electric\_field\_V\_m = 0.00171283861 V/m；cation\_flux\_mol\_m2\_s = 2.66666667e-09 mol/(m2s)；anion\_flux\_mol\_m2\_s = 2.66666667e-09 mol/(m2s)；cation\_diffusion\_flux = 2e-09 mol/(m2s)；anion\_diffusion\_flux = 4e-09 mol/(m2s)；migration\_flux\_cation = 6.66666667e-10 mol/(m2s)；migration\_flux\_anion = -1.33333333e-09 mol/(m2s)；total\_current\_density\_A\_m2 = -3.99053981e-20 A/m2；potential\_difference\_1mm\_V = -1.71283861e-06 V\par
+\noindent\textbf{模型前提：}
+仅适用题设温度、边界、平衡和理想动力学条件；人工专家未审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P197 · 热电Seebeck系数线性温度依赖的热端开路电势}
+\noindent\textbf{题目}\par
+一条假想p型半导体温差电腿在300–400 K的Seebeck系数S(T)=S0+a(T−300 K)，S0=+200.0 μV/K、a=+0.5000 μV/K²，冷端300.0 K、热端400.0 K。开路电压定义Vhot−Vcold=−∫Tc\textasciicircum{}Th S(T)dT。求开路电压和其mV表示、平均S、热端和冷端S、按常系数S0近似的电势与误差、若将同样温差反向（热端300冷端400）开路电压符号翻转及按SI换算的S斜率。说明该符号约定与电极接线相关，不涉及器件输出电功率。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原始题目与物理限制：一条假想p型半导体温差电腿在300–400 K的Seebeck系数S(T)=S0+a(T−300 K)，S0=+200.0 μV/K、a=+0.5000 μV/K²，冷端300.0 K、热端400.0 K。开路电压定义Vhot−Vcold=−∫Tc\textasciicircum{}Th S(T)dT。求开路电压和其mV表示、平均S、热端和冷端S、按常系数S0近似的电势与误差、若将同样温差反向（热端300冷端400）开路电压符号翻转及按SI换算的S斜率。说明该符号约定与电极接线相关，不涉及器件输出电功率。
+\item 建立物理化学模型与完整解析式：V=−[S0ΔT+(a/2)(ΔT)²]，Savg=(S(Tc)+S(Th))/2。
+\item 数学推导与问题核心辨析：对线性温度依赖的Seebeck系数积分而非取热端S乘ΔT，电压符号依赖报告的两端顺序。
+\item 将问题中的温度、体积、浓度与速率统一为核心公式所需的单位，特别确保指数项无量纲。
+\item 首先求出状态参数：Seebeck\_cold\_microV\_K=200.0000000000 microV/K；Seebeck\_hot\_microV\_K=250.0000000000 microV/K；average\_Seebeck\_microV\_K=225.0000000000 microV/K；open\_circuit\_voltage\_V=-0.02250000000000 V。
+\item 由状态公式求出中间体或分支：open\_circuit\_voltage\_mV=-22.50000000000 mV；constant\_S0\_voltage\_V=-0.02000000000000 V；constant\_approx\_error\_mV=2.500000000000 mV。
+\item 其余全部答案及验证量：reversed\_ends\_voltage\_V=0.02250000000000 V；relative\_constant\_approx\_error=-0.1111111111111 fraction；S\_slope\_V\_K2=5.000000000000e-7 V/K2。
+\item 对于反应网络、质量作用关系和输运稳态，独立核对物料守恒、分率归一或对称条件。
+\item 核查边界行为：不论t→0与t→∞、温度接近平衡、压差趋零或组成变动，均须保持物理上可行的符号。
+\item 真实实验机制、同构去重和题目文字质量仍须经人工专家审阅，不因数值程序通过而获得出版批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Seebeck\_cold\_microV\_K = 200 microV/K；Seebeck\_hot\_microV\_K = 250 microV/K；average\_Seebeck\_microV\_K = 225 microV/K；open\_circuit\_voltage\_V = -0.0225 V；open\_circuit\_voltage\_mV = -22.5 mV；constant\_S0\_voltage\_V = -0.02 V；constant\_approx\_error\_mV = 2.5 mV；reversed\_ends\_voltage\_V = 0.0225 V；relative\_constant\_approx\_error = -0.111111111 fraction；S\_slope\_V\_K2 = 5e-07 V/K2\par
+\noindent\textbf{模型前提：}
+仅适用题设温度、边界、平衡和理想动力学条件；人工专家未审定。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
