@@ -154,6 +154,15 @@ Object.assign(witnesses,{
 "UC-ADV14-P220":()=>{let a=Math.sqrt(1/17),b=Math.sqrt(1/65),x=2*a/(1+a),y=(1-a)/(1+a),z=8*b/(1+b),w=4*(1-b)/(1+b);return[a,b,x,y,z,w,1+a,1+b,a/b,x*x/y,2]}
 });
 
+Object.assign(witnesses,{
+"UC-ADV14-I225":()=>{let l=.001,k=[1e4,1e3,1e2],beta=[1,k[0]*l,k[0]*k[1]*l*l,k[0]*k[1]*k[2]*l*l*l],Z=beta.reduce((x,y)=>x+y,0),f=beta.map(x=>x/Z),v=f.map(x=>x*.002),bound=f.reduce((x,y,i)=>x+i*y,0);return[Z,...f,...v,bound,bound*.002,.002]},
+"UC-ADV14-A225":()=>{let f=.25,x=.01,s=.9,sp=.002,ratio=(s-f)/(f-x),n=ratio*sp,tot=sp+n,h=tot*f;return[n,tot,h,tot*(1-f),ratio,n*x,sp*s,f/(1-f),x/(1-x),f]},
+"UC-ADV14-O221":()=>{let q=1.5*.1,r=.5*.2,K=q+r,s=.02*Math.exp(-K*10),p=.02-s;return[K,q/K,r/K,s,p*q/K,p*r/K,q/r,1-s/.02,Math.log(2)/K,.02*q,.02*r]},
+"UC-ADV14-O222":()=>{let d=69000-65000,a=Math.exp(d/(8.314462618*298.15)),p=1/(1+1/a),b=1/(1+a),c=Math.exp(d/(8.314462618*350));return[a,p,b,2*p-1,p/b,-d/1000,p*.01,b*.01,p/b-1,c,c/(1+c)]},
+"UC-ADV14-P221":()=>{let pa=24,pb=28,p=52,ya=24/52,yb=28/52,X=(ya/80)/(ya/80+yb/40);return[pa,pb,p,ya,yb,ya/yb,80/40,X,ya/.3,0]},
+"UC-ADV14-P222":()=>{let rate=T=>.001*Math.exp(50000/(8.314462618)*(1/300-1/T));let n=4000,step=50/n,s=rate(300)+rate(350);for(let i=1;i<n;i++)s+=((i&1)?4:2)*rate(300+i*step);let H=s*step/3,trap=25*(rate(300)+rate(350));return[rate(350),H,Math.exp(-H),-Math.expm1(-H),.001,rate(350),H/.001,trap,trap/H-1,50]}
+});
+
 const starts={inorganic:["I",201],analytical:["A",201],organic:["O",198],physical:["P",198]};
 const allIDs=new Set(),titles=new Set(),families=new Set(),counts={};
 for(const [sub,[L,start]] of Object.entries(starts)){

@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 14,
   "status": "expert_review_pending",
-  "current_draft_count": 94,
+  "current_draft_count": 100,
   "expert_approved": 0,
-  "preliminary_flags": 109,
+  "preliminary_flags": 115,
   "pairs": [
     {
       "new_id": "UC-ADV14-I201",
@@ -674,6 +674,42 @@
       "prior_id": null,
       "reason": "与前13辑全部方程逐式对照，专家评审未完成。",
       "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I225",
+      "prior_id": null,
+      "reason": "待与第1至14辑所有化学模型逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A225",
+      "prior_id": null,
+      "reason": "待与第1至14辑所有化学模型逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O221",
+      "prior_id": null,
+      "reason": "待与第1至14辑所有化学模型逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O222",
+      "prior_id": null,
+      "reason": "待与第1至14辑所有化学模型逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P221",
+      "prior_id": null,
+      "reason": "待与第1至14辑所有化学模型逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P222",
+      "prior_id": null,
+      "reason": "待与第1至14辑所有化学模型逐式人工审查。",
+      "judgement": "pending_human_comparison"
     }
   ],
   "new_items_requiring_cross_series_comparison": [
@@ -1240,6 +1276,42 @@
       "model_family": "gas-phase-A2-dissociation-equilibrium-pressure",
       "judgement": "pending_human_comparison",
       "screening": "数值向量逐项已用独立见证复算，模型原创性仍待审查。"
+    },
+    {
+      "new_id": "UC-ADV14-I225",
+      "model_family": "ferric-oxalate-stepwise-three-complex-distribution",
+      "judgement": "pending_human_comparison",
+      "screening": "数值独立见证，学术独立性待人审。"
+    },
+    {
+      "new_id": "UC-ADV14-A225",
+      "model_family": "isotope-dilution-mass-spectrometry-spike-mass-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "数值独立见证，学术独立性待人审。"
+    },
+    {
+      "new_id": "UC-ADV14-O221",
+      "model_family": "acyl-halide-two-alcohols-competing-nucleophilic-substitution",
+      "judgement": "pending_human_comparison",
+      "screening": "数值独立见证，学术独立性待人审。"
+    },
+    {
+      "new_id": "UC-ADV14-O222",
+      "model_family": "epoxidation-two-face-diastereoselectivity-transition-state",
+      "judgement": "pending_human_comparison",
+      "screening": "数值独立见证，学术独立性待人审。"
+    },
+    {
+      "new_id": "UC-ADV14-P221",
+      "model_family": "Raoult-binary-vapor-liquid-bubble-dew-composition",
+      "judgement": "pending_human_comparison",
+      "screening": "数值独立见证，学术独立性待人审。"
+    },
+    {
+      "new_id": "UC-ADV14-P222",
+      "model_family": "first-order-nonisothermal-linear-heating-activation-quadrature",
+      "judgement": "pending_human_comparison",
+      "screening": "数值独立见证，学术独立性待人审。"
     }
   ]
 }
