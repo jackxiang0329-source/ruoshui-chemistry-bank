@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (672题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (676题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -13062,6 +13062,38 @@ Kfree = 49.0173565 dimensionless；alphaI = 6 ratio；alphaII = 1.5 ratio；Kcon
 真实Cu(I)氯络合有更丰富的平衡和可能的CuCl沉淀；本题是明确删去其他物种的条件热力学模型，不应直接作为实际Cu–Cl相图。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I171 · Fe(II)低自旋—高自旋热平衡的磁化率、自旋熵与压力响应}
+\noindent\textbf{题目}\par
+考虑理想无相互作用的六配位Fe(II)分子晶体，低自旋态LS为d⁶、S=0、简并度gLS=1；高自旋态HS为d⁶、S=2、自旋简并度gHS=5，两个态均不发生价态改变。以1 bar为基准压强，HS相对LS的摩尔焓差ΔH=+12.000 kJ/mol、额外振动熵差ΔS\_vib=+18.00 J/(mol K)，HS摩尔体积较大ΔV=+5.000 cm³/mol，均假定与温度、压力无关。忽略自旋轨道耦合、交换相互作用、磁滞及LS抗磁修正。每个Fe独立选择LS或HS，温度260.0 K和400.0 K、压强1 bar；另比较300.0 K下1 bar与500.0 MPa（压力仅以ΔV项改变两态G）。自旋朗德因子g=2.000，R=8.314462618 J/(mol K)、kB=1.380649×10⁻²³ J/K、NA=6.02214076×10²³ mol⁻¹、μB=9.2740100783×10⁻²⁴ J/T、μ0=4π×10⁻⁷ H/m。推导HS分数的平衡、混合自由能凸性、熵及热容忽略假设的范围；求260/400 K的HS分数、摩尔Curie量χMT（SI m³ K/mol）、摩尔磁化率χM（SI m³/mol）、有效磁矩μeff（以μB为单位）、平衡混合熵/焓/自由能、半转换温度、磁性及压力稳定性的交叉校验。求300 K高压HS分数和局域dpHS/dP，解释为何不能把五重自旋简并同时计入两次。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Fe²⁺始终为d⁶，LS态S=0简并度1，HS态S=2简并度2S+1=5；不应把配位场转换误写成氧化还原反应。
+\item 以LS单态为零能量，HS/LS分子配分函数比K(T,P)=5 exp(ΔS\_vib/R) exp\{−[ΔH+(P−P₀)ΔV]/(RT)\}。
+\item 注意ΔS\_vib是额外振动熵，ln5仅表示电子自旋多重性，不能再把Rln5重复加进ΔS\_vib。
+\item 对独立分子占位，pHS=K/(1+K)，pLS=1−pHS，宏观配分函数(1+K)\textasciicircum{}N给出同样的平均分数。
+\item 260 K时K=0.16919701597、pHS=0.14471215173；400 K时K=1.1807734052、pHS=0.54144708587。
+\item 高温使HS分数增加0.39673493415；半转换温度满足ΔH=T(ΔS\_vib+Rln5)，即T½=382.38954217 K。
+\item 每mol Fe的自旋混合熵S=−R[p ln p+(1−p)ln(1−p)]+p(ΔS\_vib+Rln5)，式中p∈(0,1)。
+\item 在1 bar相对于全LS的平均焓H=pΔH，自由能G=H−TS；对于给定温度，平衡态G允许为负，这是混合贡献，不是负的绝对晶体焓。
+\item 260 K得到S=7.9787159204 J/(mol K)、H=1.7365458207 kJ/mol、G=-0.33792031859 kJ/mol。
+\item 400 K得到S=22.726029355 J/(mol K)、H=6.4973650304 kJ/mol、G=-2.5930467117 kJ/mol。
+\item 对任意暂定分数p，自由能G(p)=pΔH−Tp(ΔS\_vib+Rln5)+RT[p lnp+(1−p)ln(1−p)]。
+\item 其二阶导G''=RT/[p(1−p)]>0；260与400 K的数值曲率分别17465.870276和13395.184445 J/mol，确保平衡解唯一。
+\item HS自旋仅取S=2、g=2，纯HS摩尔Curie常数C=μ₀ NA (gμB)² S(S+1)/(3kB)，单位m³ K/mol；LS按题设无磁贡献。
+\item 纯HS磁矩μspin=g√[S(S+1)]=4.8989794856 μB，纯HS Curie常数C=0.000037714000089 m³ K/mol。
+\item 两温度下χMT=p C，依次0.0000054576741031、0.000020420135445 m³ K/mol，χM=χMT/T依次2.0991054243e-8、5.1050338612e-8 m³/mol。
+\item 混合物平均有效磁矩μeff=μspin√p，260与400 K依次1.8636232563、3.6048203923 μB；不可将p线性乘在μeff上。
+\item 300 K时1 bar与500 MPa下pHS分别0.26181546861、0.11520701417；P升高引入Δ(PΔV)=2499.5000000 J/mol而稳定体积较小的LS态。
+\item 在300 K有∂lnK/∂P=−ΔV/(RT)=-2.0045392507e-9 Pa⁻¹、高压dpHS/dP=-2.0433142173e-10 Pa⁻¹。
+\item 本题不包含铁位点之间的协同相互作用，不能由单分子两态模型外推出一阶突变、磁滞或团簇有序。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+HS\_fraction\_260K = 0.144712152 fraction；HS\_fraction\_400K = 0.541447086 fraction；HS\_fraction\_increase = 0.396734934 fraction；HS\_to\_LS\_K\_260K = 0.169197016 ratio；HS\_to\_LS\_K\_400K = 1.18077341 ratio；molar\_Curie\_chiT\_260\_SI = 5.4576741e-06 m3 K/mol；molar\_Curie\_chiT\_400\_SI = 2.04201354e-05 m3 K/mol；molar\_susceptibility\_260\_SI = 2.09910542e-08 m3/mol；molar\_susceptibility\_400\_SI = 5.10503386e-08 m3/mol；effective\_moment\_260\_muB = 1.86362326 muB；effective\_moment\_400\_muB = 3.60482039 muB；pure\_HS\_spin\_only\_moment\_muB = 4.89897949 muB；pure\_HS\_Curie\_constant\_SI = 3.77140001e-05 m3 K/mol；half\_conversion\_temperature\_K = 382.389542 K；mix\_entropy\_260\_J\_mol\_K = 7.97871592 J/(mol K)；relative\_H\_260\_kJ\_mol = 1.73654582 kJ/mol；relative\_G\_260\_kJ\_mol = -0.337920319 kJ/mol；G\_curvature\_260\_J\_mol = 17465.8703 J/mol；mix\_entropy\_400\_J\_mol\_K = 22.7260294 J/(mol K)；relative\_H\_400\_kJ\_mol = 6.49736503 kJ/mol；relative\_G\_400\_kJ\_mol = -2.59304671 kJ/mol；G\_curvature\_400\_J\_mol = 13395.1844 J/mol；HS\_fraction\_300K\_1bar = 0.261815469 fraction；HS\_fraction\_300K\_500MPa = 0.115207014 fraction；pressure\_G\_HS\_minus\_LS\_shift\_J\_mol = 2499.5 J/mol；pressure\_logK\_derivative\_per\_Pa = -2.00453925e-09 Pa\textasciicircum{}-1；pressure\_HS\_fraction\_derivative\_per\_Pa = -2.04331422e-10 Pa\textasciicircum{}-1；HS\_to\_LS\_K\_300K\_500MPa = 0.130207875 ratio；HS\_fraction\_highP\_over\_lowP = 0.44003135 ratio；mean\_spin\_multiplicity\_260 = 1.57884861 dimensionless\par
+\noindent\textbf{模型前提：}
+本题不包含铁位点之间的协同相互作用，不能由单分子两态模型外推出一阶突变、磁滞或团簇有序。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -13604,6 +13636,36 @@ current\_t1\_microA = 14.1860782 microA；current\_t4\_microA = 5.74959875 micro
 实际应用应考虑对流、有限电极、产物回扩散和时间相关双层响应，不能仅由三个点就断言实际体系符合此理想模型。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A171 · 非线性荧光标准加入法的饱和响应、三点逆解与误差传播}
+\noindent\textbf{题目}\par
+某假想分析物的荧光探针在固定基体内满足饱和响应F(s)=Fmax(Cx+s)/(Kd+Cx+s)，其中未知原样浓度Cx>0、未知饱和响应Fmax>0及未知半饱和浓度Kd>0，响应扣除了空白、无荧光内滤效应，所加标准溶液引起的总体积变化已准确校正。向等体积平行样中分别加入s=0、0.01000、0.02000 mol/L的分析物，理想读数依次为F0=285.71428571、F1=375.00000000、F2=444.44444444（仪器积分单位），这些读数为题目完整输入，不预告模拟数据的生成参数。假设三次测量彼此独立，标准不确定度均uF=0.5000积分单位，加入标准浓度无误差。以三个观测点构造代数逆解求Fmax、Kd和Cx，再求原样浓度及其一阶传播标准不确定度、浓度相对不确定度及斜率/残差；必须采用对三观测值的全Jacobian，不能把饱和信号当作直接线性比值。校验0<Cx、0<Kd、F2<Fmax，检验三点可辨识且增量标准加入数据无自相矛盾。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题设探针有可饱和非线性响应，F=Fmax c/(Kd+c)，其中c=Cx+s；标准加入的三组s完全已知。
+\item 输入数据为F0=285.71428571、F1=375.00000000、F2=444.44444444，其增量递减，符合响应饱和而非简单Beer–Lambert线性。
+\item 对等间距加入量0、h、2h（h=0.01000 M），定义G(s)=F(s)/(Fmax−F(s))=(Cx+s)/Kd，故G0−2G1+G2=0。
+\item 以三点等差条件消去Fmax，得Fmax=[F1(F0+F2)−2F0F2]/[2F1−F0−F2]；分母为零时本反演无法使用。
+\item 本题分母2F1−F0−F2=19.841269841>0，所得Fmax=1000.0000000，并满足F2<Fmax。
+\item 计算线性化变量G0=0.40000000000、G1=0.60000000000、G2=0.80000000000，二阶差分-1.1102230246e-16接近0。
+\item 由G(s)=(Cx+s)/Kd，斜率m=(G2−G0)/(2h)=1/Kd，截距G0=Cx/Kd；从而Kd=1/m、Cx=G0/m。
+\item 反演m=20.000000000 M⁻¹、Kd=0.050000000000 mol/L、Cx=0.020000000000 mol/L（20.000000000 mmol/L）。
+\item 在原样附近dF/dc=Fmax Kd/(Kd+c)²，响应随浓度增加单调但灵敏度逐渐降低。
+\item 在s=0处dF/dc=10204.081633 积分单位/(mol/L)；F0/其单次噪声标准差=571.42857143。
+\item 为传播三次读数不确定度，把θ=(Cx,Kd,Fmax)作为待估参数，对每次加入量s\_j求观测偏导。
+\item Jacobian每行分别为∂F/∂Cx=Fmax Kd/(Kd+c)²，∂F/∂Kd=−Fmax c/(Kd+c)²，∂F/∂Fmax=c/(Kd+c)。
+\item 因三参数恰由三个独立读数确定，局部测量扰动满足dθ=J⁻¹dF，因此u(Cx)²=uF² Σ\_j [(J⁻¹)₁j]²。
+\item 三个独立敏感度∂Cx/∂F0=0.00058800000000、∂Cx/∂F1=-0.0010240000000、∂Cx/∂F2=0.00048600000000 mol/L/积分单位。
+\item 得到u(Cx)=0.00063845829934 mol/L，即0.63845829934 mmol/L；相对标准不确定度0.031922914967。
+\item 由饱和曲线反演出的浓度和线性化点必须回代全部三条响应公式，以判断误差来自统计不确定度还是模型失配。
+\item 这里假设同一基体和同一Fmax,Kd，实际荧光测量应另查光漂白、淬灭、散射、移液和非线性曲线的参数稳定性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+fluorescence\_F0 = 285.714286 integral；fluorescence\_F1 = 375 integral；fluorescence\_F2 = 444.444444 integral；inferred\_Fmax = 1000 integral；saturation\_ratio\_G0 = 0.4 ratio；saturation\_ratio\_G1 = 0.6 ratio；saturation\_ratio\_G2 = 0.8 ratio；linearized\_slope\_per\_M = 20 M\textasciicircum{}-1；inferred\_Kd\_M = 0.05 mol/L；inferred\_unknown\_concentration\_M = 0.02 mol/L；unknown\_concentration\_mM = 20 mmol/L；saturation\_Fmax\_denominator = 19.8412698 integral；F2\_to\_F0\_ratio = 1.55555556 ratio；raw\_F0\_signal\_to\_noise = 571.428571 ratio；transformed\_line\_second\_difference = 0 dimensionless；response\_derivative\_F0\_per\_M = 10204.0816 integral/M；dCx\_dF0\_M\_per\_unit = 0.000588 M/integral；dCx\_dF1\_M\_per\_unit = -0.001024 M/integral；dCx\_dF2\_M\_per\_unit = 0.000486 M/integral；unknown\_standard\_uncertainty\_M = 0.000638458299 mol/L；unknown\_relative\_uncertainty = 0.031922915 fraction；unknown\_standard\_uncertainty\_mM = 0.638458299 mmol/L；concentration\_after\_second\_spike\_M = 0.04 mol/L；G0\_from\_inversion = 0.4 ratio；G2\_from\_inversion = 0.8 ratio；remaining\_response\_headroom\_Fmax\_minus\_F2 = 555.555556 integral；Kd\_plus\_original\_concentration\_M = 0.07 mol/L；F1\_over\_Fmax = 0.375 fraction\par
+\noindent\textbf{模型前提：}
+这里假设同一基体和同一Fmax,Kd，实际荧光测量应另查光漂白、淬灭、散射、移液和非线性曲线的参数稳定性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第12辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -14133,6 +14195,39 @@ initial\_OH\_mol = 0.06 mol；initial\_COOH\_mol = 0.04 mol；functional\_ratio\
 纯双官能无环线性缩聚不能形成三臂及更高的交联节点，因此不会按该机理形成化学凝胶；真实工艺需另外考虑非理想环化、单体挥发、平衡和副反应。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O167 · Diels–Alder内/外型双通道的Eyring选择性反转与产率预测}
+\noindent\textbf{题目}\par
+某理想假想Diels–Alder反应中，过量亲双烯体与单一二烯底物的活度恒定，可把内型(endo)和外型(exo)两条不可逆平行路径均视为准一级。两路径均服从k(T)=(kB T/h)exp(ΔS‡/R−ΔH‡/(RT))，不含额外透射系数。内型：ΔH‡=70.00 kJ/mol、ΔS‡=−80.00 J/(mol K)；外型：ΔH‡=74.00 kJ/mol、ΔS‡=−70.00 J/(mol K)。R=8.314462618 J/(mol K)，kB=1.380649×10⁻²³ J/K，h=6.62607015×10⁻³⁴ J·s。起始二烯浓度0.02000 mol/L，产物不互变也不逆反应。分别在298.15 K反应1800.0 s和450.0 K反应2.000 s。求两通道Eyring速率常数、总消耗常数、转化率、内/外分支和浓度、表观混合活化焓，确定两通道速率何时相等及升温导致内/外选择性反转的条件。核验物料守恒、产物比与速率比、ΔG‡(T)=ΔH‡−TΔS‡及指数中的量纲。不要将最终内型/外型分支与平衡热力学稳定度混淆。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 反应物只有一个被计数的二烯底物，亲双烯体过量，故有效速率方程为−d[A]/dt=(kendo+kexo)[A]。
+\item 每个速率按Eyring关系从同一基元kBT/h乘热力学活化因子得到，指数ΔS‡/R−ΔH‡/(RT)均为无量纲。
+\item 不能把路径活化熵当作产物的平衡熵，内/外型产物比在互斥不可逆路径下取决于相应速率之比。
+\item 298.15 K时kendo=0.00022444143361 s⁻¹、kexo=0.00014882282835 s⁻¹、总速率0.00037326426196 s⁻¹。
+\item 对应选择性比kendo/kexo=1.5081115988，内/外型分支分数0.60129365836和0.39870634164。
+\item 令t=1800.0 s，由[A](t)=A0 exp(−(kendo+kexo)t)得到转化率X=1−exp(−kt)。
+\item 298.15 K下转化率X=0.48925031985，内型产物0.0058836622935 mol/L、外型产物0.0039013441035 mol/L，剩余底物0.010214993603 mol/L。
+\item 对每条通道有ΔG‡(T)=ΔH‡−TΔS‡；在298.15 K求内外型活化Gibbs自由能分别为ΔG‡endo=70.00+0.08000T、ΔG‡exo=74.00+0.07000T kJ/mol。
+\item 对应数值为93.852000000和94.870500000 kJ/mol。
+\item 对总速率kΣ/T=(kB/h)[exp(ΔSendo/R−Hendo/RT)+exp(ΔSexo/R−Hexo/RT)]，求−R dln(kΣ/T)/d(1/T)得到两路径分支权重的活化焓。
+\item 298.15 K表观活化焓=71.594825367 kJ/mol，不可简单无权重平均70和74 kJ/mol。
+\item 450.0 K时kendo=4.6571514420 s⁻¹、kexo=5.3230153225 s⁻¹、总速率=9.9801667645 s⁻¹。
+\item 高温内/外型比=0.87490851704，分支=0.46664064358与0.53335935642，已转为外型占优。
+\item 450.0 K、t=2 s，转化率=0.99999999786，内型=0.0093328128515 mol/L、外型=0.010667187106 mol/L、残余底物=4.2891110138e-11 mol/L。
+\item 450.0 K的表观活化焓=72.133437426 kJ/mol，内外通道活化Gibbs自由能分别106.00000000、105.50000000 kJ/mol。
+\item 因两通道的Eyring前因子相同，ln(kendo/kexo)=(ΔSendo−ΔSexo)/R−(ΔHendo−ΔHexo)/(RT)=−10/R+4000/(RT)。
+\item 令速率比等于1，选择性反转温度Tcross=4000/10=400.00000000 K；低于此温度内型占优，高于此温度外型占优。
+\item 两温度最终产物内/外型比应严格等于相应速率比：298 K为1.5081115988、450 K为0.87490851704。
+\item 把两产物和剩余[A]相加，298 K=0.020000000000 mol/L、450 K=0.020000000000 mol/L，均恢复初始0.02000 mol/L。
+\item 实际Diels–Alder反应还可能涉及溶剂活度、逆环加成、次级轨道作用、底物构象和产物异构化；这些均不在理想模型内。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+k\_endo\_298\_s = 0.000224441434 s\textasciicircum{}-1；k\_exo\_298\_s = 0.000148822828 s\textasciicircum{}-1；total\_k\_298\_s = 0.000373264262 s\textasciicircum{}-1；endo\_exo\_rate\_ratio\_298 = 1.5081116 ratio；endo\_fraction\_298 = 0.601293658 fraction；exo\_fraction\_298 = 0.398706342 fraction；conversion\_298 = 0.48925032 fraction；endo\_product\_298\_M = 0.00588366229 mol/L；exo\_product\_298\_M = 0.0039013441 mol/L；unreacted\_diene\_298\_M = 0.0102149936 mol/L；Eyring\_weighted\_activation\_enthalpy\_298\_kJ\_mol = 71.5948254 kJ/mol；endo\_deltaG\_activation\_298\_kJ\_mol = 93.852 kJ/mol；exo\_deltaG\_activation\_298\_kJ\_mol = 94.8705 kJ/mol；k\_endo\_450\_s = 4.65715144 s\textasciicircum{}-1；k\_exo\_450\_s = 5.32301532 s\textasciicircum{}-1；total\_k\_450\_s = 9.98016676 s\textasciicircum{}-1；endo\_exo\_rate\_ratio\_450 = 0.874908517 ratio；endo\_fraction\_450 = 0.466640644 fraction；exo\_fraction\_450 = 0.533359356 fraction；conversion\_450 = 0.999999998 fraction；endo\_product\_450\_M = 0.00933281285 mol/L；exo\_product\_450\_M = 0.0106671871 mol/L；unreacted\_diene\_450\_M = 4.28911101e-11 mol/L；Eyring\_weighted\_activation\_enthalpy\_450\_kJ\_mol = 72.1334374 kJ/mol；endo\_deltaG\_activation\_450\_kJ\_mol = 106 kJ/mol；exo\_deltaG\_activation\_450\_kJ\_mol = 105.5 kJ/mol；selectivity\_equal\_rate\_temperature\_K = 400 K；product\_ratio\_450 = 0.874908517 ratio；product\_ratio\_298 = 1.5081116 ratio；log\_endo\_exo\_rate\_ratio\_residual\_298 = 0 dimensionless；product\_mass\_balance\_450\_M = 0.02 mol/L；product\_mass\_balance\_298\_M = 0.02 mol/L\par
+\noindent\textbf{模型前提：}
+实际Diels–Alder反应还可能涉及溶剂活度、逆环加成、次级轨道作用、底物构象和产物异构化；这些均不在理想模型内。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第12辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -14659,6 +14754,39 @@ critical\_temperature\_K = 601.361775 K；RT\_at\_400\_J\_mol = 3325.78505 J/mol
 pressure\_x1 = 0.05 fraction；pressure\_x2 = 0.2 fraction；adsorbed\_v1\_cm3STP\_g = 79.9467022 cm3/g；adsorbed\_v2\_cm3STP\_g = 117.1875 cm3/g；BET\_y1 = 0.000658333333 g/cm3；BET\_y2 = 0.00213333333 g/cm3；BET\_slope = 0.00983333333 g/cm3；BET\_intercept = 0.000166666667 g/cm3；monolayer\_capacity\_cm3STP\_g = 100 cm3/g；inferred\_BET\_C = 60 ratio；predicted\_v\_at\_x0p10\_cm3STP\_g = 96.6183575 cm3/g；predicted\_y\_at\_x0p10 = 0.00115 g/cm3；monolayer\_moles\_g = 0.00446149728 mol/g；monolayer\_molecules\_g = 2.68677646e+21 molecules/g；BET\_surface\_m2\_g = 435.257787 m2/g；layer\_energy\_difference\_kJ\_mol = 2.62125516 kJ/mol；v1\_over\_vm = 0.799467022 ratio；v2\_over\_vm = 1.171875 ratio；v3\_over\_vm = 0.966183575 ratio；slope\_plus\_intercept = 0.01 g/cm3；inverse\_slope\_plus\_intercept = 100 cm3/g；slope\_over\_intercept = 59 ratio；x1\_over\_1\_minus\_x1 = 0.0526315789 ratio；x2\_over\_1\_minus\_x2 = 0.25 ratio；v0p10\_crosscheck = 96.6183575 cm3/g；specific\_area\_per\_STP\_cm3 = 4.35257787 m2\_per\_cm3；inverse\_vm = 0.01 g/cm3；specific\_area\_per\_mol = 97558.6803 m2/mol；monolayer\_mmol\_g = 4.46149728 mmol/g\par
 \noindent\textbf{模型前提：}
 本题两个高精度模拟点足以完成代数反演，但不代替真实BET多点线性区、Rouquerol一致性标准和样品脱气质量控制。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P167 · N₂O₄理想气体绝热恒容解离：温度—转化率耦合的唯一平衡解}
+\noindent\textbf{题目}\par
+一理想、绝热、刚性密闭反应器体积V=0.02500 m³，初始含1.000 mol N₂O₄纯气体、温度T₀=300.0 K，反应N₂O₄(g)⇌2NO₂(g)，无惰性气体。用ξ表示初始每1 mol N₂O₄解离的反应进度，0<ξ<1。取理想气体恒定Cv(N₂O₄)=75.00 J/(mol K)、Cv(NO₂)=35.00 J/(mol K)，基准温度Tref=300.0 K时反应内能ΔrUref=+55.00 kJ/mol。无壁面功与热交换、无其他反应。在固定浓度标准态c°=40.00 mol/m³，300.0 K时平衡常数Kc(Tref)=0.1000，定义Kc=[(cNO₂/c°)²]/(cN₂O₄/c°)。采用恒容标准态Van’t Hoff形式dlnKc/dT=ΔrU(T)/(RT²)，其中ΔrU(T)=ΔrUref+ΔCv(T−Tref)、ΔCv=2Cv(NO₂)−Cv(N₂O₄)，R=8.314462618 J/(mol K)。求绝热平衡ξ与最终温度、各物种量、平衡常数与浓度反应商、恒容能量守恒残差和压力（总压及分压），并与300 K外加恒温浴的等温平衡进度比较。把所得Kc转成p°=1.000 bar的无量纲Kp，独立用分压验证，说明内能与焓差及温度反馈的区别。所有定容气相标准态和热容为题设近似，不应用常压ΔH盲代。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 选定每初始1 mol N₂O₄的反应进度ξ，定容无惰性气体的摩尔数nN2O4=1−ξ、nNO2=2ξ、总n=1+ξ。
+\item 气体总内能相对于300 K纯N₂O₄基准为U=[75+(2×35−75)ξ](T−300)+ξ×55000 J。
+\item 反应热容差ΔCv=2Cv(NO₂)−Cv(N₂O₄)=−5 J/(mol K)；绝热刚性容器无热和体积功，因此令U=0。
+\item 对任意ξ可解能量约束T(ξ)=300−55000ξ/[75−5ξ]，使温度下降，不能擅自保持300 K。
+\item 理想气体浓度由c\_i=n\_i/V计算，而c°=40 mol/m³，因此浓度形式反应商Q\_c=4ξ²/(1−ξ)。
+\item 依据给定恒容基准，ΔrU(T)=ΔrUref+ΔCv(T−Tref)；积分dlnKc/dT=ΔrU(T)/(RT²)得ln[Kc(T)/Kref]=ΔUref/R(1/Tref−1/T)+ΔCv/R[ln(T/Tref)+Tref/T−1]。
+\item 由于反应吸热，降温使Kc减小，而Q\_c随ξ严格增大；在使T>0的物理区间内两者恰有一个交点。
+\item 保界数值求解Q\_c(ξ)=Kc(T(ξ))，得到ξ=0.042638113141，最终T=268.64291657 K，绝热温降31.357083428 K。
+\item 最终N₂O₄=0.95736188686 mol、NO₂=0.085276226281 mol、气体总量=1.0426381131 mol，符合2N+N₂O₄的氮氧计量。
+\item 计算Kc(Tfinal)=0.0075959100405，由物种浓度得到Q\_c=0.0075959100405，差0。
+\item 总恒容热容=74.786809434 J/K，气体显热变化=-2345.0962227 J，反应基准内能变化=2345.0962227 J，相加得到U残差-1.3642420527e-12 J。
+\item 注意ΔrU(Tfinal)=ΔUref+ΔCv(Tfinal−300)；对于理想气体反应Δn=+1，所以ΔrH=ΔrU+RT，并非把ΔU和ΔH混同。
+\item 最终ΔrU=55.156785417 kJ/mol，ΔrH=57.390406905 kJ/mol。
+\item 气体理想总压P=nRT/V=0.93154355725 bar；N₂O₄与NO₂分压分别为0.85535363269和0.076189924555 bar。
+\item 以压力标准态p°=1 bar为无量纲压力活度，平衡常数Kp=Kc(c°RT/p°)\textasciicircum{}Δν；Δν=1，所以不能忘记c°RT/p°因子。
+\item 由浓度换算Kp=0.0067865551532，分压反应商Qp=(pNO₂/p°)²/(pN₂O₄/p°)=0.0067865551532，两者之差-1.2143064332e-17。
+\item 另在300 K外部恒温浴中求等温平衡Q\_c(ξ)=0.1000，得到ξ\_iso，温度反馈不再耦合热量。
+\item 对应等温解离进度ξ\_iso=0.14610721926，绝热与等温之比0.29182755895，说明吸热造成绝热解离显著减小。
+\item 300 K下的Kc只在300 K使用；温度变化后必须用热力学积分更新Kc，不能用常压ΔH套进恒容Van’t Hoff式。
+\item 模型忽略温度相关热容、NO₂二聚以外的反应、容器热容及非理想气体压缩性；实验平衡还应验证反应时间尺度和传热边界。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+adiabatic\_equilibrium\_extent\_xi = 0.0426381131 mol\_progress；adiabatic\_equilibrium\_temperature\_K = 268.642917 K；adiabatic\_temperature\_drop\_K = 31.3570834 K；final\_N2O4\_mol = 0.957361887 mol；final\_NO2\_mol = 0.0852762263 mol；final\_total\_mol = 1.04263811 mol；Kc\_at\_final\_temperature = 0.00759591004 dimensionless；concentration\_quotient\_at\_final = 0.00759591004 dimensionless；Kc\_equilibrium\_residual = 0 dimensionless；isothermal\_300K\_extent = 0.146107219 J/K；adiabatic\_over\_isothermal\_extent = 0.291827559 J/K；final\_total\_Cv\_J\_K = 74.7868094 J/K；reactant\_sensible\_internal\_energy\_J = -2345.09622 J；reaction\_reference\_energy\_J = 2345.09622 J；adiabatic\_internal\_energy\_residual\_J = 0 J；deltaU\_reaction\_at\_final\_kJ\_mol = 55.1567854 kJ/mol；deltaH\_reaction\_at\_final\_kJ\_mol = 57.3904069 kJ/mol；final\_total\_pressure\_bar = 0.931543557 bar；final\_N2O4\_partial\_pressure\_bar = 0.855353633 bar；final\_NO2\_partial\_pressure\_bar = 0.0761899246 bar；converted\_Kp\_at\_final = 0.00678655515 dimensionless；Kp\_from\_partial\_pressures = 0.00678655515 dimensionless；pressure\_form\_equilibrium\_residual = 0 dimensionless；final\_NO2\_mole\_fraction = 0.0817889018 fraction；final\_N2O4\_mole\_fraction = 0.918211098 fraction；reaction\_DeltaCv\_J\_mol\_K = -5 J/(mol K)；log\_Kc\_final\_over\_reference = -2.57756024 dimensionless；dimensionless\_ideal\_gas\_composition\_term = -0.295188467 dimensionless；reaction\_reference\_energy\_kJ = 2.34509622 kJ；temperature\_for\_trial\_xi0p3\_K = 75.5102041 K；NO2\_to\_N2O4\_concentration\_ratio = 3.56296725 ratio\par
+\noindent\textbf{模型前提：}
+模型忽略温度相关热容、NO₂二聚以外的反应、容器热容及非理想气体压缩性；实验平衡还应验证反应时间尺度和传热边界。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
