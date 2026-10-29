@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (512题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (518题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -10443,6 +10443,69 @@ xi\_first = 0.808025765 mol；acid\_first = 0.191974235 mol；alcohol\_first = 1
 理想液相、等温固定K、除水瞬间不带走有机组分；真实酯化需考虑活度及酸催化动力学。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O126 · 酶促对映体动力学拆分的转化率、双ee与活化自由能差}
+\noindent\textbf{题目}\par
+某假想脂肪酶不可逆地将外消旋仲醇(R)-A和(S)-A分别酰化为(R)-P和(S)-P，酰基供体过量且浓度恒定，没有底物外消旋化或产物返回。初始总A=1.000 mol，两对映体各0.5000 mol；298.15 K独立测量k\_R=0.08000 min⁻¹、k\_S=0.01500 min⁻¹，20.00 min后骤停。求两种剩余底物量、总转化率、剩余底物ee\_S=(S−R)/(S+R)、两产物量、产物ee\_R=(P\_R−P\_S)/(P\_R+P\_S)、选择系数k\_R/k\_S和按相同Eyring速率前因子推算的活化自由能差ΔG‡\_S−ΔG‡\_R，以及剩余底物总回收率；核验两个对映体各自守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 不同对映体互不转换，分别积分一阶方程dn\_i/dt=−k\_i n\_i，不能直接合并为单指数。
+\item 反应20min，余R=0.5exp(−0.08×20)=0.10094825900 mol、余S=0.5exp(−0.015×20)=0.37040911034 mol。
+\item 总转化率X=1−R−S=0.52864263066，底物未反应回收率=0.47135736934。
+\item 剩余底物ee\_S=(S−R)/(R+S)=0.57166996609，S为慢反应对映体。
+\item 产物R=P\_R=0.5−余R=0.39905174100 mol，产物S=P\_S=0.5−余S=0.12959088966 mol。
+\item 产物R过量ee\_R=(P\_R−P\_S)/(P\_R+P\_S)=0.50972213687，不能直接用底物ee替代。
+\item 选择系数E=0.08/0.015=5.3333333333，在相同前因子假设下ΔΔG‡=RTlnE=4.1497156473 kJ/mol。
+\item 分别检验R+P\_R=0.5、S+P\_S=0.5；实际酶催化有底物饱和、非指数动力学与消旋等偏差，需实验审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+主要结果1 = 0.100948259 mol；主要结果2 = 0.37040911 mol；主要结果3 = 0.528642631 fraction；主要结果4 = 0.571669966 fraction；主要结果5 = 0.399051741 mol；主要结果6 = 0.12959089 mol；主要结果7 = 0.509722137 fraction；主要结果8 = 5.33333333 ratio；主要结果9 = 4.14971565 kJ/mol；主要结果10 = 0.471357369 fraction\par
+\noindent\textbf{模型前提：}
+恒速率拟一级，无消旋或产物二次反应；同类动态动力学拆分需跨辑人工比对。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O127 · 环氧化物酸碱两路径开环的pH门控区域选择性和产物守恒}
+\noindent\textbf{题目}\par
+假想不对称环氧化物E在缓冲介质中可通过酸性与非酸性双路径被过量亲核剂开环，均为不可逆拟一级过程。有效酸催化态比例f\_H=1/[1+10\textasciicircum{}(pH−pKa)]，取pH=6.000、pKa=5.000。纯酸路径总速率常数k\_H=0.2000 min⁻¹，P1:P2=4.000:1；非酸路径k\_B=0.05000 min⁻¹，P1:P2=0.5000:1。初始E=1.000 mol，反应12.00 min，无区域产物异构化。求酸态比例、P1/P2有效生成速率、总观察速率、P1分支、转化率、两产物量和余E，检验路径加权和质量守恒，并说明改变pH导致区域偏好的限制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 酸态比例f\_H=0.090909090909、非酸态比例1−f\_H=0.90909090909。
+\item 酸路径P1/P2速率分支4/5和1/5，非酸路径对应1/3和2/3。
+\item P1速率常数k₁=f\_H k\_H(4/5)+(1−f\_H)k\_B(1/3)=0.029696969697 min⁻¹。
+\item P2速率常数k₂=f\_H k\_H(1/5)+(1−f\_H)k\_B(2/3)=0.033939393939 min⁻¹。
+\item 总k\_obs=k₁+k₂=0.063636363636 min⁻¹，P1瞬时选择性=0.46666666667。
+\item 12min总转化X=1−exp(−k\_obs×12)=0.53403108991，未反应E=0.46596891009 mol。
+\item P1量=X k₁/k\_obs=0.24921450863 mol，P2量=0.28481658129 mol，两者和未反应E合计1mol。
+\item 降低pH使酸通道占优、P1选择性趋近80\%；升高pH使非酸通道占优、P1趋近1/3，但真实酸碱开环不一定能用单一恒定pKa表征。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+主要结果1 = 0.0909090909 fraction；主要结果2 = 0.0296969697 min\textasciicircum{}-1；主要结果3 = 0.0339393939 min\textasciicircum{}-1；主要结果4 = 0.0636363636 min\textasciicircum{}-1；主要结果5 = 0.466666667 fraction；主要结果6 = 0.53403109 fraction；主要结果7 = 0.249214509 mol；主要结果8 = 0.284816581 mol；主要结果9 = 0.46596891 mol；主要结果10 = 0.333333333 fraction\par
+\noindent\textbf{模型前提：}
+酸非酸路径独立、恒缓冲pH；真实立体与溶剂效应需人审。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O128 · 可逆亚胺E/Z构型的NMR响应校正与溶剂热力学偏好反转}
+\noindent\textbf{题目}\par
+某芳香醛亚胺的E、Z构型在298.15 K的两种溶剂中各自达到可逆热平衡。已独立测得NMR中E与Z响应因子比g\_E/g\_Z=1.500，溶剂甲未经校正的E:Z峰面积为4.500:1，溶剂乙为0.7500:1。假定只有E/Z两物种，无副反应、非平衡照射和化学交换干扰；热力学定义K=n\_E/n\_Z=exp[−(G\_E−G\_Z)/(RT)]，R=8.314462618 J/(mol K)。分别反演两溶剂的真实构型比和E、Z摩尔分数、两个E相对Z的标准摩尔自由能差、溶剂变化的自由能差值、未经校正的E峰面积占比，并说明两个同温平衡测量无法独立决定焓与熵。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 化学物质的量比=原始峰面积比/1.500，因此K甲=3.000、K乙=0.5000。
+\item x\_E=K/(1+K)，甲溶剂x\_E=0.75、x\_Z=0.25。
+\item 乙溶剂x\_E=1/3、x\_Z=2/3，构型偏好发生反转。
+\item 按ΔG\_E−G\_Z=−RTlnK，甲溶剂ΔG=-2.7234126558 kJ/mol。
+\item 乙溶剂ΔG=1.7182820758 kJ/mol，因K<1为正。
+\item 自由能差变化ΔΔG=ΔG乙−ΔG甲=4.4416947315 kJ/mol。
+\item 原始E峰面积份额在甲为4.5/5.5=0.81818181818，乙为0.75/1.75=0.42857142857，不同于真实摩尔分数。
+\item ΔG=ΔH−TΔS只给组合值；缺少温度依赖数据不能把自由能差拆成独立的焓与熵，光诱导异构化亦可能使体系非平衡。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+主要结果1 = 3 ratio；主要结果2 = 0.5 ratio；主要结果3 = 0.75 fraction；主要结果4 = 0.25 fraction；主要结果5 = 0.333333333 fraction；主要结果6 = 0.666666667 fraction；主要结果7 = -2.72341266 kJ/mol；主要结果8 = 1.71828208 kJ/mol；主要结果9 = 4.44169473 kJ/mol；主要结果10 = 0.818181818 fraction；主要结果11 = 0.428571429 fraction\par
+\noindent\textbf{模型前提：}
+NMR响应已校正、单一E/Z热平衡与无光照化学反应。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第11辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -10509,6 +10572,69 @@ a = 4 s\textasciicircum{}-1；b = 6 s\textasciicircum{}-1；p\_bound = 0.4 fract
 k300 = 0.00884997045 s\textasciicircum{}-1；k320 = 0.0397980755 s\textasciicircum{}-1；t50\_320 = 22.2371819 s；t90\_320 = 33.1800084 s；rate\_at\_half = 0.0467559593 s\textasciicircum{}-1；time\_ratio = 4.4969727 ratio；k0 = 247551661 s\textasciicircum{}-1\par
 \noindent\textbf{模型前提：}
 等温JMAK、固定Avrami指数、Arrhenius速率与无潜热反馈；不能从n直接断定真实成核几何。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P126 · Knudsen蒸发温度修正与升华焓的双温反演}
+\noindent\textbf{题目}\par
+某纯固体X在Knudsen微孔分子流装置中升华，孔口面积、传输系数和分子量均保持不变，质量损失速率r(T)正比p\_sat(T)/√T。330.0 K时r₁=0.8000 mg/h，350.0 K时r₂=1.800 mg/h，蒸气理想且330–370 K升华焓Δ\_subH不随温度变化。Clausius–Clapeyron积分ln(p₂/p₁)=(Δ\_subH/R)(1/T₁−1/T₂)，R=8.314462618 J/(mol K)。求蒸气压比、升华焓、370 K预期速率、370/350 K压比、温度修正对数速率差以及330 K回代速率，检验高温升华方向和为什么没有绝对孔口校准不能独立求饱和压与升华熵。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 正确分离温度因子，p₂/p₁=(r₂/r₁)√(T₂/T₁)=2.3171789274。
+\item 升华焓ΔH=Rln(p₂/p₁)/(1/T₁−1/T₂)=40.350286154 kJ/mol，为正。
+\item 温度升高时饱和压升高，正焓与速率增加相符。
+\item p370/p350=exp[(ΔH/R)(1/350−1/370)]=2.1159455204。
+\item r370=r350√(350/370)(p370/p350)=3.7043340778 mg/h。
+\item 修正对数差ln(r350√350/(r330√330))=0.84035046623。
+\item 用第二温度及升华焓反推r330=0.80000000000 mg/h，回代原始数据。
+\item 因未知孔口绝对传输常数，无法确定绝对蒸气压截距或升华熵；非分子流或热分解会破坏模型。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+主要结果1 = 2.31717893 ratio；主要结果2 = 40.3502862 kJ/mol；主要结果3 = 3.70433408 mg/h；主要结果4 = 2.11594552 ratio；主要结果5 = 0.840350466 dimensionless；主要结果6 = 0.8 mg/h\par
+\noindent\textbf{模型前提：}
+Knudsen分子流、理想蒸气及固定升华焓。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P127 · Soret热扩散无通量下的logit浓度梯度与冷热分离}
+\noindent\textbf{题目}\par
+某二元理想液体A/B置于一维密闭热扩散池内，无对流且总摩尔浓度近似不变；冷端T\_c=300 K、热端T\_h=320 K，冷端组分A摩尔分数x\_c=0.4000。Soret系数在该范围固定为S\_T=+0.01500 K⁻¹，相对通量J\_A=−cD[dx\_A/dz+x\_A(1−x\_A)S\_T(dT/dz)]。稳态J\_A=J\_B=0，温度从冷端单调升至热端。求热端A/B摩尔比及A、B分数、冷端相对热端的A/B富集倍数、logit摩尔比对温度导数、局部x=0.400且dT/dz=2000 K/m时的A组分空间梯度与冷端至热端的组分差；严格核验零通量及A+B=1。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item J\_A=0给dx\_A/dz=−x\_A(1−x\_A)S\_T dT/dz。
+\item 分离变量并积分，ln[x\_h/(1−x\_h)]−ln[x\_c/(1−x\_c)]=−S\_T(T\_h−T\_c)。
+\item 冷端A/B摩尔比=0.66666666667，热端=0.49387881379，两端相对因子为e\textasciicircum{}(−0.3)。
+\item 热端A分数x\_h=0.33060165874，B分数1−x\_h=0.66939834126。
+\item 冷端相对热端的A/B富集倍数=1.3498588076，正Soret系数使A贫化于热端。
+\item dln[x/(1−x)]/dT=−S\_T=-0.015000000000 K⁻¹。
+\item 在x=0.4及温度梯度2000K/m处，dx/dz=−x(1−x)S\_T×2000=-7.2000000000 m⁻¹。
+\item 两端x差=0.069398341265，始终x\_A+x\_B=1；若存在热对流和浓度依赖的Soret系数，需改用流体-扩散耦合模型。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+主要结果1 = 0.666666667 ratio；主要结果2 = 0.493878814 ratio；主要结果3 = 0.330601659 fraction；主要结果4 = 0.669398341 fraction；主要结果5 = 1.34985881 ratio；主要结果6 = -0.015 K\textasciicircum{}-1；主要结果7 = -7.2 m\textasciicircum{}-1；主要结果8 = 0.0693983413 fraction\par
+\noindent\textbf{模型前提：}
+恒Soret系数、二元无对流密闭稳态、浓度对温度近似不变。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P128 · H/D转移WKB隧穿的势垒质量效应与入射能量敏感性}
+\noindent\textbf{题目}\par
+某假想低温氢转移反应的单维过渡区按矩形势垒近似，高度V=0.2500 eV、入射能量E=0.1500 eV、宽度a=0.8000 Å；质量m\_H=1.67262192369×10⁻²⁷ kg、m\_D=3.34358377240×10⁻²⁷ kg。忽略H/D振动零点能差与速率前因子差异，厚垒WKB透射T≈exp[−2a√(2m(V−E))/ħ]，ħ=1.054571817×10⁻³⁴ J·s，1eV=1.602176634×10⁻¹⁹ J。计算两种同位素势垒衰减波数、透射概率、H/D的隧穿速率比、作用量指数比、H的入射动能提高到0.1600 eV时的新透射率和初始H无量纲作用量；检验能量单位、透射率物理范围及WKB适用前提。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 首先V−E=0.1000 eV，转成J后才能与原子质量kg及ħ联立。
+\item H衰减波数κ\_H=√(2m\_H(V−E))/ħ=69421329452 m⁻¹。
+\item D衰减波数κ\_D=98152222574 m⁻¹，重质量导致更大衰减。
+\item H透射T\_H=exp(−2κ\_Ha)=0.000015000714685，介于0与1。
+\item D透射T\_D=1.5124638942e-7，低于H。
+\item 同位素隧穿速率比T\_H/T\_D=99.180646508，前因子设定相同。
+\item 衰减作用量比κ\_D/κ\_H=1.4138626176，并非质量的线性比。
+\item 若H的E提高到0.1600eV，则T\_H上升到0.000026525157790；当势垒变薄或出现多维共振，厚垒WKB近似需被完整量子散射取代。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+主要结果1 = 6.94213295e+10 m\textasciicircum{}-1；主要结果2 = 9.81522226e+10 m\textasciicircum{}-1；主要结果3 = 1.50007147e-05 fraction；主要结果4 = 1.51246389e-07 fraction；主要结果5 = 99.1806465 ratio；主要结果6 = 1.41386262 ratio；主要结果7 = 2.65251578e-05 fraction；主要结果8 = 11.1074127 dimensionless\par
+\noindent\textbf{模型前提：}
+一维矩形势垒厚垒WKB、固定入射能、相同前因子；零点能与多维反应通道需人工审核。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
