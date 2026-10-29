@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (518题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (526题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -10244,6 +10244,50 @@ initial\_mass = 97.871 g/mol；final\_mass = 93.36 g/mol；Co\_final\_oxidation 
 仅Co阳离子补偿，氧格点稳定，电压固定。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I132 · 硝酸盐电还原多产物的氮—电子—质子三重守恒}
+\noindent\textbf{题目}\par
+酸性电解槽中初始硝酸根0.1200 mol，阴极电解后独立定量测得NH₃ 0.0420 mol、NO₂⁻ 0.0180 mol、N₂ 0.0120 mol、H₂ 0.0140 mol；N₂完全来自硝酸根，其他氮产物、挥发损失、跨膜迁移和阴极副反应均可忽略。N在NO₃⁻、NH₃、NO₂⁻、N₂中的氧化态依次+5、−3、+3、0，F=96485.33212 C/mol。请配平酸性半反应，求剩余硝酸根、阴极电子摩尔数及电量、阴极总耗H⁺、四类法拉第效率、硝酸根氮转化率和氨氮选择性，逐项检验元素、电子和电荷守恒，并说明不能直接把阴极H⁺耗量当成全电池净酸耗。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 先按氮原子守恒，氮气每摩尔占2摩尔氮，剩余NO₃⁻=0.1200−0.0420−0.0180−2×0.0120=0.036000000 mol。
+\item 氨路径半反应NO₃⁻+9H⁺+8e⁻→NH₃+3H₂O；氮氧氢原子及左右净电荷均逐项配平。
+\item 亚硝酸根路径NO₃⁻+2H⁺+2e⁻→NO₂⁻+H₂O，NO₃⁻的氮由+5降至+3。
+\item 氮气路径2NO₃⁻+12H⁺+10e⁻→N₂+6H₂O；每摩尔N₂需10摩尔电子，不能错按5摩尔。
+\item 析氢路径2H⁺+2e⁻→H₂；四条路径电子量为0.33600000、0.036000000、0.12000000、0.028000000 mol。
+\item 电子总量=0.52000000 mol，电量Q=n\_eF=50172.373 C；四个通道电子分数之和严格为1。
+\item 按半反应计量，阴极H⁺耗量=9n\_NH3+2n\_NO2+12n\_N2+2n\_H2=0.58600000 mol。
+\item NH₃、NO₂⁻、N₂、H₂法拉第效率分别为0.64615385、0.069230769、0.23076923、0.053846154；总和为100\%。
+\item 氮转化率=0.70000000，氨氮选择性=0.50000000；阳极、缓冲与迁移未计入，不能据此计算全电池净酸耗。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+nitrate\_remaining = 0.036 mol；electrons = 0.52 mol e-；charge = 50172.3727 C；protons = 0.586 mol H+；FE\_NH3 = 0.646153846 fraction；FE\_NO2 = 0.0692307692 fraction；FE\_N2 = 0.230769231 fraction；FE\_H2 = 0.0538461538 fraction；N\_conversion = 0.7 fraction；NH3\_N\_selectivity = 0.5 fraction\par
+\noindent\textbf{模型前提：}
+无遗漏产物、酸性半反应、阴极电量完整，忽略跨膜迁移及阳极酸碱账目。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I133 · Fe(II)自旋交叉的配分函数、转变温度与磁响应}
+\noindent\textbf{题目}\par
+一理想八面体Fe(II)配合物在低自旋LS(S=0)与高自旋HS(S=2)两态间达到热平衡；HS相对LS的摩尔焓差为+18.00 kJ/mol，排除自旋简并贡献的熵差为+25.00 J/(mol·K)。HS和LS的自旋微态数分别为5和1，R=8.314462618 J/(mol·K)，电子g因子取2。假定无轨道磁矩、零场分裂和协同效应，HS单态χ\_MT=3.000 cm³·K/mol，LS为0。求300.0 K与400.0 K的HS/LS占据比及HS分数、包含简并度的有效熵差、半转变温度、300 K的χ\_MT与有效磁矩及有效自由能差，检查归一性、温度单调性并解释为何不能重复计入简并熵。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 以LS为能量零点，HS/LS配分函数比为5exp(ΔS\_nonspin/R−ΔH/(RT))，自旋简并度不能遗漏。
+\item 把简并因子写成有效熵Rln5，得到ΔS\_eff=25+Rln5=38.381611 J/(mol·K)。
+\item 300 K的HS/LS占据比r=0.074266559，HS分数r/(1+r)=0.069132338，LS分数为其补数。
+\item 400 K的占据比r=0.45112573，HS分数=0.31087984；升温使吸热HS态占比增加。
+\item 等占据要求ΔH−TΔS\_eff=0，因此唯一半转变温度T\_half=468.97458 K。
+\item 300 K的混合χ\_MT=3f\_HS=0.20739701 cm³·K/mol，LS的S=0贡献为零。
+\item 按独立自旋Curie响应，μ\_eff=2√[S(S+1)f\_HS]=1.2880901 μB，不能直接线性平均磁矩。
+\item 300 K有效自由能差ΔG\_eff=ΔH−TΔS\_eff=6.4855166 kJ/mol，与低温LS占优一致。
+\item dlnr/dT=ΔH/(RT²)>0且f\_HS+f\_LS=1；真实协同自旋转变可能偏离理想两态。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+entropy\_effective = 38.3816114 J/(mol K)；T\_half = 468.974578 K；ratio300 = 0.0742665586 ratio；HS300 = 0.0691323378 fraction；ratio400 = 0.451125734 ratio；HS400 = 0.310879839 fraction；chiMT300 = 0.207397013 cm3 K/mol；mu\_eff300 = 1.2880901 mu\_B；deltaG300 = 6.48551659 kJ/mol\par
+\noindent\textbf{模型前提：}
+理想无相互作用两态模型，ΔS\_nonspin不含自旋简并度。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第11辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -10373,6 +10417,50 @@ effective\_volume = 1.03 L；cG = 9.70873786e-09 mol/L；cL = 9.70873786e-07 mol
 temperature = 10500 K；J2\_J1 = 0.190559975 ratio；J3\_J1 = 0.0879116589 ratio；ne\_cm3 = 1.5e+17 cm\textasciicircum{}-3；ne\_m3 = 1.5e+23 m\textasciicircum{}-3；dlnratio\_dT = 0.0001578846 K\textasciicircum{}-1；relT\_sigma = 0.00603213328 fraction；Stark\_width = 0.018 nm\par
 \noindent\textbf{模型前提：}
 局域热平衡、已知跃迁参数和非Stark宽度已准确扣除；需更完整谱学复核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A132 · 铜双同位素稀释ICP-MS的干扰校正及反演条件数}
+\noindent\textbf{题目}\par
+取25.00 mL天然铜水样，其63Cu与65Cu丰度分别为0.6915和0.3085；加入0.01000 mg同位素示踪铜，示踪剂63Cu和65Cu丰度分别为0.0200和0.9800。经仪器质量歧视校正后的原始63/65离子信号比为1.420，空白实验独立确定63通道另有相当于65总信号0.0200倍的加性干扰，需从比值中扣除。假设两种铜同位素响应线性相同、质量差对铜总质量的影响可忽略。求真实比值、原样铜质量及浓度、样品与示踪剂质量比、63和65通道各自的示踪剂贡献份额、质量对比值的对数导数、比值标准不确定度0.0050导致的质量相对不确定度；检验反演正根与丰度守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 空白干扰仅增加63通道，因此校正比值R=1.420−0.0200=1.4000000，不能把0.0200当作百分比相乘。
+\item 以原样铜质量m和示踪剂质量s建立R=(0.6915m+0.0200s)/(0.3085m+0.9800s)。
+\item 交叉相乘后m/s=(0.0200−0.9800R)/(0.3085R−0.6915)=5.2080123，两端点间只有一个正解。
+\item 代入s=0.01000mg，原样铜质量m=0.052080123 mg，水样浓度=2.0832049 mg/L。
+\item 65通道的示踪剂份额=0.9800s/(0.3085m+0.9800s)=0.37886523。
+\item 63通道示踪剂份额=0.0200s/(0.6915m+0.0200s)=0.0055228167；两份额都必须在0与1之间。
+\item 由质量反演式求dlnm/dR=−0.9800/(0.0200−0.9800R)−0.3085/(0.3085R−0.6915)=1.9132188。
+\item 一阶传播u(m)/m≈|dlnm/dR|u(R)=0.0095660939，仅为比值测量误差分量。
+\item 天然与示踪端点比之间R单调对应唯一正质量；回代重建R并检查两种铜同位素丰度各自和为1。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+corrected\_R = 1.4 ratio；sample\_spike\_ratio = 5.20801233 ratio；sample\_mass = 0.0520801233 mg；sample\_concentration = 2.08320493 mg/L；spike65\_fraction = 0.378865227 fraction；spike63\_fraction = 0.00552281672 fraction；dlogm\_dR = 1.91321879 ratio\textasciicircum{}-1；relative\_u = 0.00956609395 fraction\par
+\noindent\textbf{模型前提：}
+干扰是63通道相对65总信号的加性项；忽略铜同位素质量差与非线性响应。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A133 · 双金属竞争配位与质子化配体的双波长光谱反演}
+\noindent\textbf{题目}\par
+固定pH的1.000 L缓冲溶液含二价金属M和N，总浓度分别为1.000与2.000 mmol/L，配体L总浓度1.500 mmol/L。只有未配位且去质子化的L能形成1:1配合物ML和NL；未配位配体的去质子化比例α=0.01000并由缓冲液固定。形成常数β\_M=1.000×10⁷ L/mol、β\_N=1.000×10⁵ L/mol。设l为全部未配位L形态之和，条件常数K'\_i=αβ\_i。光程1.000 cm；500nm处ML、NL摩尔吸光系数分别900、300 L/(mol·cm)，600nm处分别150、1200，其他物种不吸收。求l、ML/NL、两种游离金属、两波长吸光度及各金属配位分数；严格证明正解唯一并验证金属与配体物料守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 质子化校正后条件常数K'\_M=1.000×10⁵、K'\_N=1.000×10³ L/mol，不能直接代入原始β。
+\item 由金属平衡和守恒，ML=M\_TK'\_Ml/(1+K'\_Ml)、NL=N\_TK'\_Nl/(1+K'\_Nl)。
+\item 配体守恒为f(l)=l+ML(l)+NL(l)−L\_T=0，区间0<l<L\_T两端函数异号。
+\item f'(l)=1+M\_TK'\_M/(1+K'\_Ml)²+N\_TK'\_N/(1+K'\_Nl)²>0，故唯一正根存在。
+\item 用二分法求l=0.00020548701 mol/L，随后ML=0.00095359349、NL=0.00034091950 mol/L。
+\item 金属游离浓度M\_free=0.000046406509、N\_free=0.0016590805 mol/L，均为非负且各与配合态之和等于总量。
+\item 500nm吸光度A500=900ML+300NL=0.96050999；600nm为A600=150ML+1200NL=0.55214242。
+\item 金属结合分数f\_M=0.95359349、f\_N=0.17045975，不可因M结合更强而忽略N竞争。
+\item 回代l+ML+NL=0.001500 mol/L、ML+M\_free=M\_T、NL+N\_free=N\_T；若出现多核配合物或pH漂移则模型失效。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+free\_ligand = 0.000205487013 mol/L；ML = 0.000953593491 mol/L；NL = 0.000340919496 mol/L；free\_M = 4.6406509e-05 mol/L；free\_N = 0.0016590805 mol/L；A500 = 0.960509991 absorbance；A600 = 0.552142419 absorbance；M\_bound = 0.953593491 fraction；N\_bound = 0.170459748 fraction\par
+\noindent\textbf{模型前提：}
+理想1:1配位、固定pH去质子化比例、光谱线性、无沉淀和副配位。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -10506,6 +10594,51 @@ xi\_first = 0.808025765 mol；acid\_first = 0.191974235 mol；alcohol\_first = 1
 NMR响应已校正、单一E/Z热平衡与无光照化学反应。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O129 · Diels–Alder双过渡态的Eyring立体选择性与动力学交叉}
+\noindent\textbf{题目}\par
+某假想Diels–Alder反应在亲双烯体恒浓度下有两条不可逆、并行、拟一级endo和exo路径，产物不互变。endo活化焓55.00 kJ/mol、活化熵−90.00 J/(mol·K)；exo活化焓60.00 kJ/mol、活化熵−80.00 J/(mol·K)，两者透射系数均为1。给定k\_B=1.380649×10⁻²³ J/K、h=6.62607015×10⁻³⁴ J·s、R=8.314462618 J/(mol·K)。298.15 K下初始底物0.01000 mol，反应30.00 s。求两条速率常数、endo/exo速率比、endo分支、总转化率、两产物量与未反应物，另求400 K速率比和等速交叉温度；验证速率量纲、物料守恒与非平衡立体选择性的条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 两路径使用Eyring公式k=(k\_BT/h)exp(ΔS‡/R−ΔH‡/(RT))，在拟一级条件下单位为s⁻¹。
+\item 298.15K代入得到k\_endo=0.028618913 s⁻¹，k\_exo=0.012677314 s⁻¹。
+\item 由于前因子相同，k\_endo/k\_exo=exp\{−[ΔΔH‡−TΔΔS‡]/(RT)\}=2.2574903。
+\item endo生成分支为k\_endo/(k\_endo+k\_exo)=0.69301521，exo分支为0.30698479。
+\item 底物总消耗常数为k\_endo+k\_exo，30秒转化率X=1−exp[−(k\_endo+k\_exo)t]=0.71029346。
+\item endo与exo产物量依次为n0Xf\_endo=0.0049224417 mol和n0X(1−f\_endo)=0.0021804929 mol。
+\item 未反应底物n0(1−X)=0.0028970654 mol，三项相加为0.01000 mol。
+\item 400 K的endo/exo速率比=1.3507782，等速条件ΔΔH‡=TΔΔS‡得T\_cross=500 K。
+\item 这些是不可逆动力学选择性而非热力学平衡比；溶剂、逆反应或温度相关活化热容可改变结论。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+k\_endo = 0.0286189132 s\textasciicircum{}-1；k\_exo = 0.0126773137 s\textasciicircum{}-1；endo\_exo\_ratio = 2.25749034 ratio；endo\_fraction = 0.693015206 fraction；conversion = 0.710293462 fraction；endo\_mol = 0.0049224417 mol；exo\_mol = 0.00218049292 mol；ratio400 = 1.35077822 ratio；crossover\_T = 500 K；exo\_fraction = 0.306984794 fraction\par
+\noindent\textbf{模型前提：}
+两条不可逆拟一级路径，恒亲双烯体浓度，Eyring活化参数不随温度变化。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O130 · 酶催化动态动力学拆分中的消旋耦合与双重ee}
+\noindent\textbf{题目}\par
+初始外消旋底物R=S=0.5000 mol，在恒温均相反应中以拟一级常数k\_R=0.0800 min⁻¹和k\_S=0.0200 min⁻¹不可逆转为对应手性产物P\_R、P\_S；剩余底物同时以r=0.0100 min⁻¹双向同速R⇌S消旋，产物不消旋。无副反应、酶失活和体积变化。反应30.00 min后，要求由耦合线性微分方程及其矩阵指数求剩余R、S和产物P\_R、P\_S，计算总转化率、产物ee=(P\_R−P\_S)/(P\_R+P\_S)、剩余底物ee=(S−R)/(S+R)、慢特征衰减率；另计算没有消旋r=0时的产物ee作为对照。用独立积分复算、验证质量守恒与所有物质的量非负。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 建立dR/dt=−(k\_R+r)R+rS、dS/dt=rR−(k\_S+r)S，消旋项在总底物导数中抵消。
+\item 系数矩阵的平均衰减m=(k\_R+k\_S+2r)/2=0.060000000 min⁻¹，特征分裂d=√[((k\_R−k\_S)/2)²+r²]=0.031622777 min⁻¹。
+\item 矩阵指数e\textasciicircum{}\{At\}=e\textasciicircum{}\{−mt\}[Icosh(dt)+(A+mI)sinh(dt)/d]，在30min得R=0.065346044、S=0.23745637 mol。
+\item 定义I\_R=∫Rdt、I\_S=∫Sdt，积分底物方程得到[(k\_R+r),−r;−r,(k\_S+r)](I\_R,I\_S)ᵀ=(0.5−R,0.5−S)ᵀ。
+\item 该矩阵行列式=0.0026000000 min⁻²>0，解得I\_R=6.0250211、I\_S=10.759795 mol·min。
+\item 由产物形成速率dP\_R/dt=k\_RR、dP\_S/dt=k\_SS，得P\_R=0.48200169、P\_S=0.21519589 mol。
+\item 总转化率=0.69719758；剩余R+S=0.30280242 mol，四种物质的量之和为1.0000mol。
+\item 产物ee=0.38268320，剩余底物按S富集定义ee=0.56839153。
+\item 慢特征根λ\_slow=−m+d=-0.028377223 min⁻¹；若r=0，产物ee=0.33671712，说明消旋耦合不能忽略。
+\item 实际酶催化若有饱和、抑制或产物消旋，拟一级线性模型与上述解析解不再适用。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+R\_remaining = 0.0653460438 mol；S\_remaining = 0.237456373 mol；P\_R = 0.482001691 mol；P\_S = 0.215195892 mol；conversion = 0.697197583 fraction；product\_ee = 0.382683196 fraction；substrate\_ee = 0.568391531 fraction；slow\_eigenvalue = -0.0283772234 min\textasciicircum{}-1；no\_racem\_ee = 0.336717123 fraction\par
+\noindent\textbf{模型前提：}
+恒定拟一级速率、对称底物消旋、产物不可逆且不消旋。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第11辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -10635,6 +10768,51 @@ Knudsen分子流、理想蒸气及固定升华焓。\par
 H衰减波数 = 6.94213295e+10 m\textasciicircum{}-1；D衰减波数 = 9.81522226e+10 m\textasciicircum{}-1；H透射概率 = 1.50007147e-05 fraction；D透射概率 = 1.51246389e-07 fraction；H/D隧穿速率比 = 99.1806465 ratio；D/H指数作用量比 = 1.41386262 ratio；提高入射能后H透射率 = 2.65251578e-05 fraction；初始H无量纲作用量 = 11.1074127 dimensionless\par
 \noindent\textbf{模型前提：}
 一维矩形势垒厚垒WKB、固定入射能、相同前因子；零点能与多维反应通道需人工审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P129 · Gouy–Chapman双电层的非线性表面电荷与反离子富集}
+\noindent\textbf{题目}\par
+在298.15 K的理想对称1:1电解质中，体相盐浓度c∞=0.01000 mol/L，溶剂相对介电常数ε\_r=78.5，平面电极相对体相电势ψ₀=−0.07500 V。忽略Stern层、离子有限尺寸、特异吸附及介电饱和，取ε₀=8.8541878128×10⁻¹² F/m、R=8.314462618 J/(mol·K)、F=96485.33212 C/mol。使用Grahame式σ=√(8εRTc∞)sinh(Fψ₀/(2RT))（c∞必须为mol/m³），计算电极面电荷密度、差分电容、表面阳阴离子浓度、Debye长度、扩散层净反离子过量和表面离子强度；验证Boltzmann浓度乘积及电荷守恒，说明高电势下的模型局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将体相0.01000mol/L换成10.00mol/m³，并求ε=ε\_rε₀=6.9505374e-10 F/m。
+\item 无量纲半电势u=Fψ₀/(2RT)=-1.4595654，负电势对应负面电荷。
+\item 代入Grahame关系σ=√(8εRTc∞)sinh(u)=-0.023902314 C/m²。
+\item 对电势求导，C\_diff=√(8εRTc∞)F/(2RT)cosh(u)=0.51824463 F/m²且严格为正。
+\item Boltzmann分布给阳离子表面浓度=0.18525179 mol/L、阴离子=0.00053980585 mol/L。
+\item 两离子浓度乘积=0.00010000000 (mol/L)²，等于体相盐浓度平方，验证理想1:1平衡。
+\item Debye长度λ\_D=√[εRT/(2F²c∞)]=3.0420574 nm，不能漏掉浓度SI换算。
+\item 扩散层净反离子过量Γ=−σ/F=2.4773003e-7 mol/m²，恰好抵消电极面电荷。
+\item 表面离子强度I=(c\_++c\_-)/2=0.092895798 mol/L；强电场下有限离子尺寸与Stern层修正不可忽略。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+sigma = -0.023902314 C/m2；Cdiff = 0.51824463 F/m2；cation\_surface = 0.185251791 mol/L；anion\_surface = 0.000539805848 mol/L；Debye\_nm = 3.04205736 nm；diffuse\_excess = 2.47730028e-07 mol/m2；concentration\_product = 0.0001 (mol/L)\textasciicircum{}2；surface\_I = 0.0928957982 mol/L\par
+\noindent\textbf{模型前提：}
+连续介质、理想点离子1:1电解质、无Stern层和特异吸附。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P130 · van der Waals超临界根的机械稳定性与焦耳—汤姆孙反演}
+\noindent\textbf{题目}\par
+某CO₂近似流体采用常数van der Waals参数a=0.3640 Pa·m⁶/mol²、b=4.270×10⁻⁵ m³/mol，R=8.314462618 J/(mol·K)，考察T=350.0 K、P=5.000 MPa的单相状态。状态方程P=RT/(V\_m−b)−a/V\_m²，局部摩尔定压热容C\_p=37.00 J/(mol·K)，仅用于近似计算Joule–Thomson系数。求模型临界温度、临界压强、临界摩尔体积，物理稳定气相摩尔体积V\_m>b、压缩因子Z、等温压缩率κ\_T、局部μ\_JT（K/bar）、低压反转温度近似2a/(Rb)。要求用隐函数微分和数值求根，验证超临界根唯一、dP/dV<0与单位一致性，并解释真实流体模型边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 临界点一阶和二阶体积导数同时为零，解得V\_c=3b=0.00012810000 m³/mol。
+\item 联立临界导数得T\_c=8a/(27Rb)=303.78445 K、P\_c=a/(27b²)=7.3940413 MPa。
+\item 350 K高于模型临界温度，解f(V)=RT/(V−b)−a/V²−P=0并限定V>b。
+\item 以稳定分支二分求得V\_m=0.00048878236 m³/mol，代回状态方程压强残差趋于零。
+\item 压缩因子Z=PV\_m/(RT)=0.83981437，体现排斥体积和吸引作用竞争。
+\item 体积斜率dP/dV=−RT/(V−b)²+2a/V³=-8.3899418e+9 Pa·mol/m³<0，故机械稳定。
+\item 等温压缩率κ\_T=−1/[V\_m(dP/dV)]=2.4385155e-7 Pa⁻¹，必须为正。
+\item 隐函数求导(∂V/∂T)\_P=−[R/(V−b)]/(dP/dV)=0.0000022215709 m³/(mol·K)。
+\item 局部μ\_JT=[T(∂V/∂T)\_P−V]/C\_p=0.78045260 K/bar，换算时1bar=10⁵Pa。
+\item 低压反转温度近似2a/(Rb)=2050.5451 K；高压及临界邻域需温度依赖参数与真实流体状态方程。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Tc = 303.784455 K；Pc = 7394041.26 Pa；Vc = 0.0001281 m3/mol；Vgas = 0.000488782364 m3/mol；compressibility\_Z = 0.839814372 ratio；kappa\_T = 2.43851553e-07 Pa\textasciicircum{}-1；muJT\_K\_bar = 0.7804526 K/bar；dPdV = -8.38994177e+09 Pa mol/m3；Tinv\_lowP = 2050.54507 K\par
+\noindent\textbf{模型前提：}
+van der Waals常数a,b、超临界单相、局部定压热容近似。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
