@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至14辑 (888题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至14辑 (894题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -18261,6 +18261,29 @@ R300 = 0.124467671 ratio；R450 = 0.338338208 ratio；R450\_R300 = 2.71828183 ra
 只适用于题面规定的理想物种与模型条件；待人工审校。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I225 · 草酸铁(III)络合物的三级逐步稳定常数与条件分布}
+\noindent\textbf{题目}\par
+某理想无沉淀Fe³⁺–草酸根L²⁻水溶液中只有Fe³⁺、FeL⁺、FeL₂⁻和FeL₃³⁻四种含铁形态。逐步形成常数K₁=1.000×10⁴、K₂=1.000×10³、K₃=1.000×10² L/mol。自由[L]=0.001000 mol/L由外库固定，总铁浓度CT=0.002000 M，pH恒定，忽略水解、氧化还原与草酸质子化。求配分函数D、各物种分率和浓度、铁平均配位草酸根数、络合草酸总浓度、自由Fe³⁺分率以及总铁平衡检验。注意三级物种是由逐步常数乘积产生，不可将K₃当总形成常数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 给定物种、反应或物理系统：某理想无沉淀Fe³⁺–草酸根L²⁻水溶液中只有Fe³⁺、FeL⁺、FeL₂⁻和FeL₃³⁻四种含铁形态。逐步形成常数K₁=1.000×10⁴、K₂=1.000×10³、K₃=1.000×10² L/mol。自由[L]=0.001000 mol/L由外库固定，总铁浓度CT=0.002000 M，pH恒定，忽略水解、氧化还原与草酸质子化。求配分函数D、各物种分率和浓度、铁平均配位草酸根数、络合草酸总浓度、自由Fe³⁺分率以及总铁平衡检验。注意三级物种是由逐步常数乘积产生，不可将K₃当总形成常数。
+\item 由质量作用、化学计量或动力学守恒推出核心方程：D=1+K₁L+K₁K₂L²+K₁K₂K₃L³；x\_n=β\_n L\textasciicircum{}n/D；总结合L=CT∑n x\_n。
+\item 把活度和反应商明确写作标准态的无量纲比，温度、体积和电压均换为公式所要求的单位。
+\item 先确定独立变量及各项库存约束，例如总溶质、总反应物、概率归一或等温相平衡。
+\item 从主方程直接计算第一组结果：D=22.0000000000000 ratio；free\_fraction=0.0454545454545455 fraction；mono\_fraction=0.454545454545455 fraction；bis\_fraction=0.454545454545455 fraction。
+\item 继续计算其余主要结果：tris\_fraction=0.0454545454545455 fraction；free\_Fe\_M=0.0000909090909090909 mol/L；mono\_Fe\_M=0.000909090909090909 mol/L；bis\_Fe\_M=0.000909090909090909 mol/L。
+\item 剩余反演量、验证量及单位：tris\_Fe\_M=0.0000909090909090909 mol/L；mean\_bound\_L=1.50000000000000 ligands/Fe；total\_bound\_L\_M=0.00300000000000000 mol/L；Fe\_total\_check\_M=0.00200000000000000 mol/L。
+\item 分别将解代回题目给出的平衡式或微分方程，并检验零/高浓度、无限时间及已知理想极限的行为。
+\item 独立数值见证已在QA脚本中按另一计算途径实现；本次仅声称数值向量程序复算，并不宣称实验验证。
+\item 该题仍需人工复核跨辑同构、真实化学过程与数学推导的出版级严谨性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+D = 22 ratio；free\_fraction = 0.0454545455 fraction；mono\_fraction = 0.454545455 fraction；bis\_fraction = 0.454545455 fraction；tris\_fraction = 0.0454545455 fraction；free\_Fe\_M = 9.09090909e-05 mol/L；mono\_Fe\_M = 0.000909090909 mol/L；bis\_Fe\_M = 0.000909090909 mol/L；tris\_Fe\_M = 9.09090909e-05 mol/L；mean\_bound\_L = 1.5 ligands/Fe；total\_bound\_L\_M = 0.003 mol/L；Fe\_total\_check\_M = 0.002 mol/L\par
+\noindent\textbf{模型前提：}
+仅适用本题所有理想条件，不视为实验事实与专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第14辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -18813,6 +18836,29 @@ cell\_constant\_cmInv = 1.5456 cm\textasciicircum{}-1；conductivity\_sample1\_S
 仅适用完整题设与理想仪器响应；待专家审定。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A225 · 同位素稀释质谱的¹³C内标定量与混合原子分数}
+\noindent\textbf{题目}\par
+某样品含目标化合物未知物质的量n，天然目标中重同位素原子分数fX=0.01000。向样品加入同化学物质的富集内标nS=0.002000 mol，富集标的重分数fS=0.9000。混合后质谱重同位素占比测得fm=0.2500，假定定量混合、两种同位素无仪器歧视且每分子仅含1个可用标记原子。求由fm=(n fX+nS fS)/(n+nS)反演未知n、混合总摩尔数、轻重原子各摩尔数、原样/内标摩尔数比、原样与内标各自重原子贡献、混合重/轻原子比及若未加内标时的重/轻比。要求从原子数守恒而非简单质量加权得出公式。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 给定物种、反应或物理系统：某样品含目标化合物未知物质的量n，天然目标中重同位素原子分数fX=0.01000。向样品加入同化学物质的富集内标nS=0.002000 mol，富集标的重分数fS=0.9000。混合后质谱重同位素占比测得fm=0.2500，假定定量混合、两种同位素无仪器歧视且每分子仅含1个可用标记原子。求由fm=(n fX+nS fS)/(n+nS)反演未知n、混合总摩尔数、轻重原子各摩尔数、原样/内标摩尔数比、原样与内标各自重原子贡献、混合重/轻原子比及若未加内标时的重/轻比。要求从原子数守恒而非简单质量加权得出公式。
+\item 由质量作用、化学计量或动力学守恒推出核心方程：n=nS(fS−fm)/(fm−fX)；重原子总量=nfX+nSfS；轻原子=(n+nS)−nheavy。
+\item 把活度和反应商明确写作标准态的无量纲比，温度、体积和电压均换为公式所要求的单位。
+\item 先确定独立变量及各项库存约束，例如总溶质、总反应物、概率归一或等温相平衡。
+\item 从主方程直接计算第一组结果：unknown\_n\_mol=0.00541666666666667 mol；total\_n\_mol=0.00741666666666667 mol；heavy\_mol=0.00185416666666667 mol；light\_mol=0.00556250000000000 mol。
+\item 继续计算其余主要结果：unknown\_to\_spike\_ratio=2.70833333333333 ratio；heavy\_from\_unknown\_mol=0.0000541666666666667 mol；heavy\_from\_spike\_mol=0.00180000000000000 mol；heavy\_to\_light\_ratio=0.333333333333333 ratio。
+\item 剩余反演量、验证量及单位：unspiked\_heavy\_light\_ratio=0.0101010101010101 ratio；reconstructed\_heavy\_fraction=0.250000000000000 fraction。
+\item 分别将解代回题目给出的平衡式或微分方程，并检验零/高浓度、无限时间及已知理想极限的行为。
+\item 独立数值见证已在QA脚本中按另一计算途径实现；本次仅声称数值向量程序复算，并不宣称实验验证。
+\item 该题仍需人工复核跨辑同构、真实化学过程与数学推导的出版级严谨性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+unknown\_n\_mol = 0.00541666667 mol；total\_n\_mol = 0.00741666667 mol；heavy\_mol = 0.00185416667 mol；light\_mol = 0.0055625 mol；unknown\_to\_spike\_ratio = 2.70833333 ratio；heavy\_from\_unknown\_mol = 5.41666667e-05 mol；heavy\_from\_spike\_mol = 0.0018 mol；heavy\_to\_light\_ratio = 0.333333333 ratio；unspiked\_heavy\_light\_ratio = 0.0101010101 ratio；reconstructed\_heavy\_fraction = 0.25 fraction\par
+\noindent\textbf{模型前提：}
+仅适用本题所有理想条件，不视为实验事实与专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第14辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -19342,6 +19388,52 @@ active\_conformer\_fraction = 0.25 fraction；inactive\_conformer\_fraction = 0.
 题设的限速步、统计分配和理想化条件成立，不代表真实体系普适性。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O221 · 有机酸卤化物与醇的两阶段竞争酰基取代}
+\noindent\textbf{题目}\par
+某酰氯A在大过量醇甲R₁OH与醇乙R₂OH存在下不可逆发生并行亲核酰基取代，k₁=1.500 L/(mol s)、k₂=0.5000 L/(mol s)，两醇自由浓度由外库分别保持0.1000与0.2000 M。初始[A]=0.02000 M，t=10.00 s，忽略水解、消除、酰基迁移和产物互变。求总拟一级速度、两酯产物分支、10s底物剩余、两酯产物浓度与其摩尔比、A转化率、半衰期及两个路径的初始产物生成速率；检查两产物与残余A物料平衡。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 给定物种、反应或物理系统：某酰氯A在大过量醇甲R₁OH与醇乙R₂OH存在下不可逆发生并行亲核酰基取代，k₁=1.500 L/(mol s)、k₂=0.5000 L/(mol s)，两醇自由浓度由外库分别保持0.1000与0.2000 M。初始[A]=0.02000 M，t=10.00 s，忽略水解、消除、酰基迁移和产物互变。求总拟一级速度、两酯产物分支、10s底物剩余、两酯产物浓度与其摩尔比、A转化率、半衰期及两个路径的初始产物生成速率；检查两产物与残余A物料平衡。
+\item 由质量作用、化学计量或动力学守恒推出核心方程：λ=k₁c₁+k₂c₂；p₁=k₁c₁/λ；[A]=A₀exp(−λt)，[Pj]=A₀(1−e\textasciicircum{}(−λt))pj。
+\item 把活度和反应商明确写作标准态的无量纲比，温度、体积和电压均换为公式所要求的单位。
+\item 先确定独立变量及各项库存约束，例如总溶质、总反应物、概率归一或等温相平衡。
+\item 从主方程直接计算第一组结果：kobs=0.250000000000000 s\textasciicircum{}-1；branch\_ester1=0.600000000000000 fraction；branch\_ester2=0.400000000000000 fraction；A\_t10\_M=0.00164169997247798 mol/L。
+\item 继续计算其余主要结果：ester1\_t10\_M=0.0110149800165132 mol/L；ester2\_t10\_M=0.00734332001100881 mol/L；ester\_ratio=1.50000000000000 ratio；conversion\_t10=0.917915001376101 fraction。
+\item 剩余反演量、验证量及单位：half\_time\_s=2.77258872223978 s；initial\_rate\_ester1\_Ms=0.00300000000000000 mol/(Ls)；initial\_rate\_ester2\_Ms=0.00200000000000000 mol/(Ls)。
+\item 分别将解代回题目给出的平衡式或微分方程，并检验零/高浓度、无限时间及已知理想极限的行为。
+\item 独立数值见证已在QA脚本中按另一计算途径实现；本次仅声称数值向量程序复算，并不宣称实验验证。
+\item 该题仍需人工复核跨辑同构、真实化学过程与数学推导的出版级严谨性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+kobs = 0.25 s\textasciicircum{}-1；branch\_ester1 = 0.6 fraction；branch\_ester2 = 0.4 fraction；A\_t10\_M = 0.00164169997 mol/L；ester1\_t10\_M = 0.01101498 mol/L；ester2\_t10\_M = 0.00734332001 mol/L；ester\_ratio = 1.5 ratio；conversion\_t10 = 0.917915001 fraction；half\_time\_s = 2.77258872 s；initial\_rate\_ester1\_Ms = 0.003 mol/(Ls)；initial\_rate\_ester2\_Ms = 0.002 mol/(Ls)\par
+\noindent\textbf{模型前提：}
+仅适用本题所有理想条件，不视为实验事实与专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O222 · 环辛烯环氧化双面进攻的非对映选择性与自由能差}
+\noindent\textbf{题目}\par
+某带手性辅助基的取代环辛烯发生立体选择性环氧化，Re面与Si面通道的过渡态活化自由能分别为ΔG‡Re=65.00、ΔG‡Si=69.00 kJ/mol，T=298.15 K，假设两路径Eyring前因子相同、均不可逆且生成两个稳定非对映异构体。求Re/Si速率比、两产物分率、非对映过量de、相应主/副产物摩尔比、ΔΔG‡=GRe−GSi、若总产物量为0.01000 mol时两产物摩尔数、主异构体相对于次异构体的百分比增量及温度升至350 K、假设ΔΔG‡恒定时的新选择性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 给定物种、反应或物理系统：某带手性辅助基的取代环辛烯发生立体选择性环氧化，Re面与Si面通道的过渡态活化自由能分别为ΔG‡Re=65.00、ΔG‡Si=69.00 kJ/mol，T=298.15 K，假设两路径Eyring前因子相同、均不可逆且生成两个稳定非对映异构体。求Re/Si速率比、两产物分率、非对映过量de、相应主/副产物摩尔比、ΔΔG‡=GRe−GSi、若总产物量为0.01000 mol时两产物摩尔数、主异构体相对于次异构体的百分比增量及温度升至350 K、假设ΔΔG‡恒定时的新选择性。
+\item 由质量作用、化学计量或动力学守恒推出核心方程：kRe/kSi=exp[−(GRe−GSi)/(RT)]；fRe=r/(1+r)，de=fRe−fSi。
+\item 把活度和反应商明确写作标准态的无量纲比，温度、体积和电压均换为公式所要求的单位。
+\item 先确定独立变量及各项库存约束，例如总溶质、总反应物、概率归一或等温相平衡。
+\item 从主方程直接计算第一组结果：rate\_ratio\_Re\_Si=5.02076253632245 ratio；fraction\_Re=0.833908081581505 fraction；fraction\_Si=0.166091918418495 fraction；diastereomeric\_excess=0.667816163163010 fraction。
+\item 继续计算其余主要结果：major\_minor\_ratio=5.02076253632245 ratio；deltaG\_Re\_minus\_Si\_kJmol=-4.00000000000000 kJ/mol；moles\_Re=0.00833908081581505 mol；moles\_Si=0.00166091918418495 mol。
+\item 剩余反演量、验证量及单位：relative\_major\_over\_minor\_excess=4.02076253632245 fraction；rate\_ratio\_350K=3.95326255195373 ratio；fraction\_Re\_350K=0.798112862076013 fraction。
+\item 分别将解代回题目给出的平衡式或微分方程，并检验零/高浓度、无限时间及已知理想极限的行为。
+\item 独立数值见证已在QA脚本中按另一计算途径实现；本次仅声称数值向量程序复算，并不宣称实验验证。
+\item 该题仍需人工复核跨辑同构、真实化学过程与数学推导的出版级严谨性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+rate\_ratio\_Re\_Si = 5.02076254 ratio；fraction\_Re = 0.833908082 fraction；fraction\_Si = 0.166091918 fraction；diastereomeric\_excess = 0.667816163 fraction；major\_minor\_ratio = 5.02076254 ratio；deltaG\_Re\_minus\_Si\_kJmol = -4 kJ/mol；moles\_Re = 0.00833908082 mol；moles\_Si = 0.00166091918 mol；relative\_major\_over\_minor\_excess = 4.02076254 fraction；rate\_ratio\_350K = 3.95326255 ratio；fraction\_Re\_350K = 0.798112862 fraction\par
+\noindent\textbf{模型前提：}
+仅适用本题所有理想条件，不视为实验事实与专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第14辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -19869,6 +19961,52 @@ deltaP\_10nm = 10000000 Pa；deltaP\_100nm = 1000000 Pa；insideP\_10nm = 101000
 alpha\_1bar = 0.242535625 fraction；alpha\_4bar = 0.124034735 fraction；partial\_A\_1bar = 0.390388203 bar；partial\_A2\_1bar = 0.609611797 bar；partial\_A\_4bar = 0.882782219 bar；partial\_A2\_4bar = 3.11721778 bar；total\_moles\_1bar = 1.24253563 mol；total\_moles\_4bar = 1.12403473 mol；alpha\_ratio = 1.95538472 ratio；Kp\_backcheck = 0.25 ratio；total\_A\_atom\_moles = 2 mol\_atoms\par
 \noindent\textbf{模型前提：}
 仅适用本题所述常系数理想介质和统计模型；专家审核仍待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P221 · 二元理想溶液Raoult定律的露点组成与汽相分配}
+\noindent\textbf{题目}\par
+理想二元挥发液体A/B在298.15 K的纯液蒸气压p*A=80.00、p*B=40.00 kPa，液相A摩尔分率xA=0.3000，汽相为理想气体、液相满足Raoult定律。计算两组分蒸汽分压、泡点总压、气相A/B摩尔分率、汽相A/B比、相对挥发度α=p*A/p*B、由气相组成反求液相xA（露点逆算）、汽相A相对于液相的富集倍数及总压回代误差。注意总压是泡点压力，不是纯组分蒸汽压的算术平均。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 给定物种、反应或物理系统：理想二元挥发液体A/B在298.15 K的纯液蒸气压p*A=80.00、p*B=40.00 kPa，液相A摩尔分率xA=0.3000，汽相为理想气体、液相满足Raoult定律。计算两组分蒸汽分压、泡点总压、气相A/B摩尔分率、汽相A/B比、相对挥发度α=p*A/p*B、由气相组成反求液相xA（露点逆算）、汽相A相对于液相的富集倍数及总压回代误差。注意总压是泡点压力，不是纯组分蒸汽压的算术平均。
+\item 由质量作用、化学计量或动力学守恒推出核心方程：pi=xipi*，P=Σpi，yi=pi/P；反演xA=(yA/p*A)/(yA/p*A+yB/p*B)。
+\item 把活度和反应商明确写作标准态的无量纲比，温度、体积和电压均换为公式所要求的单位。
+\item 先确定独立变量及各项库存约束，例如总溶质、总反应物、概率归一或等温相平衡。
+\item 从主方程直接计算第一组结果：partial\_A\_kPa=24.0000000000000 kPa；partial\_B\_kPa=28.0000000000000 kPa；bubble\_pressure\_kPa=52.0000000000000 kPa；vapor\_A\_fraction=0.461538461538462 fraction。
+\item 继续计算其余主要结果：vapor\_B\_fraction=0.538461538461538 fraction；vapor\_A\_B\_ratio=0.857142857142857 ratio；relative\_volatility=2.00000000000000 ratio；back\_calculated\_liquid\_A=0.300000000000000 fraction。
+\item 剩余反演量、验证量及单位：enrichment\_y\_over\_x=1.53846153846154 ratio；pressure\_balance\_kPa=0.00000000000000 kPa。
+\item 分别将解代回题目给出的平衡式或微分方程，并检验零/高浓度、无限时间及已知理想极限的行为。
+\item 独立数值见证已在QA脚本中按另一计算途径实现；本次仅声称数值向量程序复算，并不宣称实验验证。
+\item 该题仍需人工复核跨辑同构、真实化学过程与数学推导的出版级严谨性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+partial\_A\_kPa = 24 kPa；partial\_B\_kPa = 28 kPa；bubble\_pressure\_kPa = 52 kPa；vapor\_A\_fraction = 0.461538462 fraction；vapor\_B\_fraction = 0.538461538 fraction；vapor\_A\_B\_ratio = 0.857142857 ratio；relative\_volatility = 2 ratio；back\_calculated\_liquid\_A = 0.3 fraction；enrichment\_y\_over\_x = 1.53846154 ratio；pressure\_balance\_kPa = 0 kPa\par
+\noindent\textbf{模型前提：}
+仅适用本题所有理想条件，不视为实验事实与专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P222 · 一阶热分解反应的非等温升温转化积分与等效时间}
+\noindent\textbf{题目}\par
+某不可逆一阶固体热分解在T0=300.0 K时k0=0.001000 s⁻¹，活化能Ea=50.00 kJ/mol，Arrhenius关系k(T)=k0 exp[(Ea/R)(1/T0−1/T)]。样品以线性速率β=1.000 K/s从300升到350 K，无热滞后、无扩散影响且反应物仅发生一个消耗过程。以X=1−exp[−(1/β)∫\_\{300\}\textasciicircum{}\{350\}k(T)dT]求转化率，要求采用数值积分（复合Simpson，2000等分）而不是直接使用350 K下k×50s。求末态k、积分危险度H、剩余分率、转化率、恒温初始速率、恒温末态速率、积分等效初始温度时间H/k0、用两端速率梯形平均得到的错误危险度及其相对误差、加热用时。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 给定物种、反应或物理系统：某不可逆一阶固体热分解在T0=300.0 K时k0=0.001000 s⁻¹，活化能Ea=50.00 kJ/mol，Arrhenius关系k(T)=k0 exp[(Ea/R)(1/T0−1/T)]。样品以线性速率β=1.000 K/s从300升到350 K，无热滞后、无扩散影响且反应物仅发生一个消耗过程。以X=1−exp[−(1/β)∫\_\{300\}\textasciicircum{}\{350\}k(T)dT]求转化率，要求采用数值积分（复合Simpson，2000等分）而不是直接使用350 K下k×50s。求末态k、积分危险度H、剩余分率、转化率、恒温初始速率、恒温末态速率、积分等效初始温度时间H/k0、用两端速率梯形平均得到的错误危险度及其相对误差、加热用时。
+\item 由质量作用、化学计量或动力学守恒推出核心方程：H=(h/3β)[k(T0)+k(Tend)+4Σodd k(Ti)+2Σeven k(Ti)]，X=1−e\textasciicircum{}(−H)。
+\item 把活度和反应商明确写作标准态的无量纲比，温度、体积和电压均换为公式所要求的单位。
+\item 先确定独立变量及各项库存约束，例如总溶质、总反应物、概率归一或等温相平衡。
+\item 从主方程直接计算第一组结果：k\_350=0.0175249836693261 s\textasciicircum{}-1；hazard\_integral=0.307711139119052 ratio；survival\_fraction=0.735127636959094 fraction；conversion\_fraction=0.264872363040906 fraction。
+\item 继续计算其余主要结果：k\_300=0.00100000000000000 s\textasciicircum{}-1；constant\_350\_rate=0.0175249836693261 s\textasciicircum{}-1；equivalent\_300K\_seconds=307.711139119052 s；trapezoid\_hazard=0.463124591733151 ratio。
+\item 剩余反演量、验证量及单位：trapezoid\_relative\_error=0.505062810072566 fraction；heating\_time\_s=50.0000000000000 s。
+\item 分别将解代回题目给出的平衡式或微分方程，并检验零/高浓度、无限时间及已知理想极限的行为。
+\item 独立数值见证已在QA脚本中按另一计算途径实现；本次仅声称数值向量程序复算，并不宣称实验验证。
+\item 该题仍需人工复核跨辑同构、真实化学过程与数学推导的出版级严谨性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+k\_350 = 0.0175249837 s\textasciicircum{}-1；hazard\_integral = 0.307711139 ratio；survival\_fraction = 0.735127637 fraction；conversion\_fraction = 0.264872363 fraction；k\_300 = 0.001 s\textasciicircum{}-1；constant\_350\_rate = 0.0175249837 s\textasciicircum{}-1；equivalent\_300K\_seconds = 307.711139 s；trapezoid\_hazard = 0.463124592 ratio；trapezoid\_relative\_error = 0.50506281 fraction；heating\_time\_s = 50 s\par
+\noindent\textbf{模型前提：}
+仅适用本题所有理想条件，不视为实验事实与专家批准。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
