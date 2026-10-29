@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (638题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (644题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -12835,6 +12835,35 @@ minimum\_solubility\_OH\_M = 7.40082804e-09 mol/L；minimum\_solubility\_pOH = 8
 最小溶解度推导假设始终有未溶解固相以维持K\_sp并有外部缓冲容量固定pH；若总Al库存不足、pH由溶解自身改变或中间羟基络合物显著，计算不再成立。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I163 · Davies活度修正下BaSO4共离子溶解的正根反演与饱和指数}
+\noindent\textbf{题目}\par
+某假想BaSO₄(s)溶解实验在25°C进行，热力学溶度积K\_sp=a\_Ba²⁺a\_SO₄²⁻=1.100×10⁻¹⁰（所有活度以1 mol/L标准状态无量纲化）。溶液预先加入BaCl₂，总初始Ba²⁺=2.000×10⁻⁵ mol/L；NaNO₃作为大量惰性背景电解质使两次实验离子强度分别控制为0.01000和0.1000 mol/L。忽略BaSO₄中性离子对、HSO₄⁻和水解、假设固相始终存在。用Davies公式log₁₀γ\_i=−0.51z\_i²[√I/(1+√I)−0.30I]（I以mol/L对1 mol/L标准化），并对Ba²⁺、SO₄²⁻同时取z²=4。推导共离子平衡的唯一正根溶解度s，分别给出两离子强度下活度系数、s、自由Ba²⁺浓度、浓度离子积和最终热力学活度积。以测试溶解量s\_test=5.000×10⁻⁶ mol/L分别计算试算离子积与SI=log₁₀(Q/K\_sp)，判断欠饱和或过饱和。核对Ba与SO₄物质的量和电荷平衡，估计该溶解引入的离子强度，讨论Davies有效范围。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 考虑BaSO₄(s)⇌Ba²⁺+SO₄²⁻。以1 mol/L为标准浓度，热力学溶度积K\_sp=a\_Ba a\_SO4=1.100×10⁻¹⁰，不能把它直接等同于摩尔浓度的乘积。
+\item 体系额外加入BaCl₂使尚未溶解固体前总Ba²⁺分析浓度c₀=2.000×10⁻⁵ mol/L，固体溶解s产生等量Ba²⁺、SO₄²⁻；忽略所有离子对与水解。
+\item 大量1:1惰性NaNO₃电解质缓冲使离子强度在两次实验中分别固定为I₁=0.01000 mol/L和I₂=0.1000 mol/L，以小浓度盐引入的离子强度增量作为误差估计。
+\item 将Davies经验式log₁₀γ\_i=−0.51z\_i²[√I/(1+√I)−0.30I]用于|z|=2的Ba²⁺与SO₄²⁻，故两者活度系数相同；I以mol/L相对1 mol/L标准浓度表达。
+\item 代入I₁、I₂得到γ\_±=0.661706581924、0.372463508913，盐浓度越高双电荷离子的γ越小。
+\item 质量守恒给[Ba²⁺]=c₀+s、[SO₄²⁻]=s，而固液平衡要求γ²(c₀+s)s=K\_sp。
+\item 将该式化为s²+c₀s−K\_sp/γ²=0。两个代数根一正一负，负根不符合非负物质的量，故物理解唯一。
+\item 为避免在c₀远大于溶度时二次求根的消减误差，采用稳定表达式s=[2K\_sp/γ²]/[√(c₀²+4K\_sp/γ²)+c₀]。
+\item 由此两离子强度下溶解度分别s₁=0.00000874098118918、s₂=0.0000198816402999 mol/L；后者为前者2.27453187114倍。
+\item 低盐溶液自由Ba²⁺浓度=0.0000287409811892 mol/L，高盐溶液=0.0000398816402999 mol/L。
+\item 将两正根逐一回代γ²(c₀+s)s，得1.10000000000e-10和1.10000000000e-10，均应等于K\_sp。
+\item 在尚未达到饱和的统一试算s\_test=5.000×10⁻⁶ mol/L下，计算两背景的反应商Q=γ²(c₀+s\_test)s\_test，并用SI=log₁₀(Q/K\_sp)判断相对饱和状态。
+\item 试算Q₁=5.47319500702e-11、Q₂=1.73411331840e-11；SI₁=-0.303151763059、SI₂=-0.802315211427，负SI代表相对固相欠饱和。
+\item 每个Ba²⁺带2单位正电、每个SO₄²⁻带2单位负电；BaCl₂带来的2c₀个Cl⁻当量与溶解的SO₄²⁻阴离子当量共同抵消阳离子电荷。
+\item 忽略背景盐自身时，新增BaCl₂和BaSO₄造成离子强度增量ΔI=3c₀+4s，因此两次溶解对应额外4s分别为0.0000349639247567和0.0000795265611995 mol/L；本题已把背景离子强度视为受控参数。
+\item Davies活度公式仅为中低离子强度经验近似，并非大浓度精确理论；真实硫酸盐可产生离子缔合、硫酸氢根与硫酸钡晶格表面效应，故本计算不是实测溶解度的替代。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Davies\_mean\_divalent\_activity\_coefficient\_I001 = 0.661706582 fraction；Davies\_mean\_divalent\_activity\_coefficient\_I01 = 0.372463509 fraction；BaSO4\_solubility\_I001\_M = 8.74098119e-06 mol/L；BaSO4\_solubility\_I01\_M = 1.98816403e-05 mol/L；salting\_in\_solubility\_ratio = 2.27453187 ratio；free\_Ba\_concentration\_I001\_M = 2.87409812e-05 mol/L；free\_Ba\_concentration\_I01\_M = 3.98816403e-05 mol/L；ionic\_activity\_product\_equilibrium\_I001 = 1.1e-10 dimensionless；ionic\_activity\_product\_equilibrium\_I01 = 1.1e-10 dimensionless；concentration\_product\_I001\_M2 = 2.51224376e-10 M2；concentration\_product\_I01\_M2 = 7.92912427e-10 M2；ion\_activity\_product\_trial\_I001 = 5.47319501e-11 dimensionless；ion\_activity\_product\_trial\_I01 = 1.73411332e-11 dimensionless；trial\_saturation\_index\_I001 = -0.303151763 ratio；trial\_saturation\_index\_I01 = -0.802315211 ratio；charge\_cation\_anion\_dissolved\_equivalents\_I001\_M = 7.49639248e-05 ratio；ionic\_strength\_increase\_from\_dissolution\_I001\_M = 3.49639248e-05 mol/L；ionic\_strength\_increase\_from\_dissolution\_I01\_M = 7.95265612e-05 mol/L；quadratic\_numerator\_I001\_M = 1.74819624e-05 mol/L\par
+\noindent\textbf{模型前提：}
+Davies活度公式仅为中低离子强度经验近似，并非大浓度精确理论；真实硫酸盐可产生离子缔合、硫酸氢根与硫酸钡晶格表面效应，故本计算不是实测溶解度的替代。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -13151,6 +13180,35 @@ signal\_at\_10s\_nA = 1.67387736 nA；signal\_at\_30s\_nA = 3.20747936 nA；blan
 假设峰电流与吸附物量线性，平台来自固定一级吸附动力学，不考虑浓度改变τ、竞争表面吸附、传质边界层及去吸附记忆；真实伏安分析需要独立标定k及空白噪声分布。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A163 · 双波长Beer–Lambert混合物矩阵反演与浓度估计协方差}
+\noindent\textbf{题目}\par
+某假想分析实验同时测量两种有色离子X、Y的摩尔浓度。1.000 cm比色皿在两个波长λ₁、λ₂处具有摩尔吸光系数矩阵E=[[15000,4000],[3000,12000]] L/(mol cm)，列顺序X、Y，行顺序λ₁、λ₂。光谱无重叠反应或吸附，符合Beer–Lambert线性叠加。独立空白基线分别b₁=0.01000、b₂=0.02000，样品测得吸光度A₁=0.15000、A₂=0.10400。空白扣除后两通道噪声互相独立，其标准差σ\_A1=0.002000、σ\_A2=0.003000（无量纲），背景基线值本身视作已准确测定。求唯一反演的c\_X、c\_Y，给出浓度比、各组分对吸光度的贡献、矩阵行列式与回代信号；建立Σ\_c=(lE)⁻¹ diag(σ\_A1²,σ\_A2²)(lE)⁻ᵀ，计算浓度标准差、方差、协方差、相关系数及基于3σ的两物种浓度检测限，并检验波长数、噪声相关性、正浓度与反问题病态极限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 用两波长透射光度法同时测定两种不发生相互转化的吸收物种X与Y，假定理想Beer–Lambert线性叠加且光程l=1.000 cm。
+\item λ₁与λ₂两列摩尔吸光系数依次为X:(15000,3000)、Y:(4000,12000) L/(mol cm)，背景空白吸光度分别为b₁=0.01000、b₂=0.02000。
+\item 将空白扣除的吸光度列向量y=(A₁−b₁,A₂−b₂)写成y=l E c，E为2×2响应矩阵，c为待测两浓度。
+\item 本题实测A₁=0.150000000000、A₂=0.104000000000，扣空白后y₁=0.140000000000、y₂=0.0840000000000。
+\item 响应矩阵行列式det E=ε\_X1 ε\_Y2−ε\_Y1 ε\_X2=168000000.000，不为零，因而两物种浓度能唯一识别。
+\item 明确写出代数反演c\_X=(ε\_Y2 y₁−ε\_Y1 y₂)/(l det E)，c\_Y=(ε\_X1 y₂−ε\_X2 y₁)/(l det E)。
+\item 计算得c\_X=0.00000800000000000 mol/L（8.00000000000 μmol/L），c\_Y=0.00000500000000000 mol/L，浓度均非负。
+\item 重建两波长吸光度b+l Ec得到A₁=0.150000000000、A₂=0.104000000000，与观测完全相符；X:Y浓度比为1.60000000000。
+\item 设两波长扣空白后的测量噪声独立、均值零且标准差σ\_A1=0.002000、σ\_A2=0.003000吸光度；背景数值本身由独立空白校准准确给定，不计额外不确定度。
+\item 线性误差传播给Σ\_c=(lE)⁻¹ diag(σ₁²,σ₂²)[(lE)⁻¹]ᵀ，与单独把两波长噪声简单相加不同。
+\item 具体Var(c\_X)=[ε\_Y2²σ₁²+ε\_Y1²σ₂²]/(l det E)²=2.55102040816e-14 (mol/L)²，故σ\_X=1.59719141250e-7 mol/L。
+\item Var(c\_Y)=[ε\_X2²σ₁²+ε\_X1²σ₂²]/(l det E)²=7.30229591837e-14 (mol/L)²，故σ\_Y=2.70227606258e-7 mol/L。
+\item 两浓度估计协方差cov(c\_X,c\_Y)=−[ε\_Y2 ε\_X2σ₁²+ε\_Y1 ε\_X1σ₂²]/(l det E)²=-2.42346938776e-14 (mol/L)²，相关系数=-0.561501418337。
+\item 在仅考虑给定高斯空白噪声的三倍标准差近似下，X和Y的检测限为4.79157423750e-7和8.10682818773e-7 mol/L；这些是模型推导的联合反演标准差，不等于完整实验方法检出限。
+\item 量纲核对：E单位L/(mol cm)，乘l cm与c mol/L得到无量纲吸光度；协方差矩阵应半正定且两种不确定度不能被视为独立。
+\item 当两吸收物种的相对光谱形状几乎相同时det E趋0，反问题会严重放大噪声；真实样品的散射、漂移、非线性吸收和基线不确定性需要额外波长及校准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+measured\_absorbance\_lambda1 = 0.15 absorbance；measured\_absorbance\_lambda2 = 0.104 absorbance；baseline\_corrected\_lambda1 = 0.14 absorbance；baseline\_corrected\_lambda2 = 0.084 absorbance；spectral\_matrix\_determinant = 168000000 (L/(mol cm))\textasciicircum{}2；reconstructed\_species\_X\_M = 8e-06 mol/L；reconstructed\_species\_Y\_M = 5e-06 mol/L；species\_X\_uM = 8 umol/L；species\_Y\_uM = 5 umol/L；species\_X\_to\_Y\_concentration\_ratio = 1.6 ratio；species\_X\_one\_sigma\_M = 1.59719141e-07 mol/L；species\_Y\_one\_sigma\_M = 2.70227606e-07 mol/L；species\_X\_variance\_M2 = 2.55102041e-14 (mol/L)\textasciicircum{}2；species\_Y\_variance\_M2 = 7.30229592e-14 (mol/L)\textasciicircum{}2；species\_XY\_covariance\_M2 = -2.42346939e-14 (mol/L)\textasciicircum{}2；estimated\_concentration\_correlation = -0.561501418 dimensionless；species\_X\_three\_sigma\_concentration\_LOD\_M = 4.79157424e-07 mol/L；species\_Y\_three\_sigma\_concentration\_LOD\_M = 8.10682819e-07 mol/L；predicted\_lambda1\_absorbance = 0.15 absorbance；predicted\_lambda2\_absorbance = 0.104 absorbance；X\_lambda1\_absorbance\_contribution = 0.12 absorbance；Y\_lambda1\_absorbance\_contribution = 0.02 absorbance\par
+\noindent\textbf{模型前提：}
+当两吸收物种的相对光谱形状几乎相同时det E趋0，反问题会严重放大噪声；真实样品的散射、漂移、非线性吸收和基线不确定性需要额外波长及校准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第12辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -13418,6 +13476,62 @@ gel\_point\_conversion = 0.707106781 fraction；conversion\_relative\_to\_gel\_p
 sum\_strong\_weak\_resonance\_eV = 4.4 eV；difference\_strong\_weak\_resonance\_eV = 1.2 eV；rectangular\_occupied\_low\_eV = -4.4 eV；rectangular\_occupied\_high\_eV = -1.2 eV；rectangular\_LUMO\_eV = 1.2 eV；rectangular\_highest\_level\_eV = 4.4 eV；square\_lowest\_level\_eV = -4.4 eV；square\_second\_level\_eV = 0 eV；square\_third\_level\_eV = 0 eV；square\_highest\_level\_eV = 4.4 eV；rectangular\_pi\_electron\_energy\_eV = -11.2 eV；square\_pi\_electron\_energy\_eV = -8.8 eV；Peierls\_electronic\_energy\_stabilization\_eV = 2.4 eV；rectangular\_frontier\_energy\_gap\_eV = 2.4 eV；square\_frontier\_energy\_gap\_eV = 0 eV；equivalent\_gap\_wavelength\_nm = 516.600827 nm；molar\_electronic\_stabilization\_kJ\_mol = 231.564797 kJ/mol；orbital\_trace\_eV = 0 eV；number\_of\_pi\_electrons = 4 electrons\par
 \noindent\textbf{模型前提：}
 模型固定中性碳氢化学计量与四个π电子，不涉及溶液酸碱或氧化还原；Hückel单电子能之和只是定性比较工具，不等于完整分子的实验形成焓。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O158 · 自由基链转移与失活竞争的几何链长分布、Mayo反演及分散度}
+\noindent\textbf{题目}\par
+一假想有机单体M的自由基链聚合在恒温、恒单体及链转移剂浓度下进行。每条被观测的活性链起始时已有1个重复单元，其后以独立指数事件继续增长或停止：每次增长速率k\_p[M]，链转移剂引起原链终止速率k\_tr[T]，本征不可逆去活化速率k\_d；各事件互相独立且相对浓度始终恒定。数据为k\_p=300.0 L/(mol s)、[M]=0.5000 mol/L、k\_tr=50.00 L/(mol s)、[T]=0.1000 mol/L、k\_d=1.000 s⁻¹，重复单元摩尔质量100.0 g/mol且忽略端基质量。求增长与两种死亡危险率、链长的完整几何分布、数均及重均DP、分散度、数均和重均摩尔质量、DP=1/2及DP≤5概率、平均寿命和按死亡通道分配的终止分数；若将[T]减半求新DP\_n并用两次DP反演k\_tr，核验概率归一及Mayo型倒数关系，说明链转移再引发为何会改变真实链数计量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假设有机单体M的自由基链已由引发步骤固定获得第一个重复单元，随后每个活链可继续增长、被链转移剂终止该链或固有失活；各事件按独立指数等待且所有浓度固定。
+\item 增长事件速率a=k\_p[M]，每次增长使重复单元数n加1；链转移导致原生长链终止（转移生成的自由基不纳入当前单链寿命），本征失活事件也终止该链。
+\item 总失活率b=k\_tr[T]+k\_d，两种终止机制互斥且指数记忆无关；每轮下一事件先增长的概率p=a/(a+b)，先终止的概率q=b/(a+b)。
+\item 题设k\_p=300 L/(mol s)、[M]=0.5 mol/L、k\_tr=50 L/(mol s)、[T]=0.1 mol/L、k\_d=1 s⁻¹，得a=150 s⁻¹、总链死亡b=6 s⁻¹。
+\item 事件概率p=0.961538461538、q=0.0384615384615，故额外增长事件数N服从P(N=j)=q p\textasciicircum{}j (j=0,1,2,...)，归一和q/(1−p)=1。
+\item 实际链长DP=1+N。几何分布给〈N〉=p/q=a/b，Var(N)=p/q²，E[(1+N)²]=(1+m)(1+2m)。
+\item 平均额外增长m=25.0000000000，数均链长DP\_n=1+m=26.0000000000。
+\item 按定义DP\_w=〈DP²〉/〈DP〉=1+2m=51.0000000000，分散度Đ=DP\_w/DP\_n=1.96153846154，长链极限接近2而非1。
+\item 单体重复单元相对摩尔质量100.0 g/mol，不计端基则数均Mn=2600.00000000、重均Mw=5100.00000000 g/mol。
+\item 单链仅含1个重复单元的概率P(DP=1)=q=0.0384615384615；仅含2个为qp=0.0369822485207；DP≤5的累计概率1−p⁵=0.178072893241。
+\item 平均单链活性寿命τ=1/b=0.166666666667 s；最终死亡为链转移的概率k\_tr[T]/b=0.833333333333，其余为本征失活。
+\item Mayo型倒数关系严格写为1/(DP\_n−1)=k\_d/(k\_p[M])+(k\_tr/(k\_p[M]))[T]，因为本题引发已先加入一个重复单元，不能不经说明将DP\_n−1误写为DP\_n。
+\item 将[T]降到0.05000 mol/L，预测DP\_n=43.8571428571，由两浓度的1/(DP\_n−1)差值反求k\_tr=50.0000000000 L/(mol s)，与输入一致。
+\item 此为等浓度、独立常数危险率及链转移只决定原链停止的统计模型；实际自由基再引发、链–链偶合/歧化、扩散胶效应和活链浓度变化会改变分子量分布与Mayo关系。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+propagation\_event\_rate\_s = 150 s\textasciicircum{}-1；chain\_transfer\_hazard\_s = 5 s\textasciicircum{}-1；total\_chain\_death\_rate\_s = 6 s\textasciicircum{}-1；probability\_propagate\_before\_death = 0.961538462 fraction；probability\_die\_before\_propagation = 0.0384615385 fraction；average\_active\_chain\_lifetime\_s = 0.166666667 s；mean\_additional\_propagations = 25 monomers；number\_average\_degree\_of\_polymerization = 26 monomers；weight\_average\_degree\_of\_polymerization = 51 monomers；dispersity\_Mw\_over\_Mn = 1.96153846 ratio；number\_average\_molar\_mass\_g\_mol = 2600 g/mol；weight\_average\_molar\_mass\_g\_mol = 5100 g/mol；probability\_exactly\_one\_unit = 0.0384615385 fraction；probability\_exactly\_two\_units = 0.0369822485 fraction；probability\_DP\_at\_most\_five = 0.178072893 fraction；fraction\_death\_by\_transfer = 0.833333333 fraction；fraction\_death\_by\_intrinsic\_deactivation = 0.166666667 fraction；degree\_DPn\_at\_half\_transfer\_agent = 43.8571429 monomers；reconstructed\_chain\_transfer\_rate\_constant\_L\_mol\_s = 50 L/(mol s)；Mayo\_inverse\_additional\_DP = 0.04 dimensionless\par
+\noindent\textbf{模型前提：}
+此为等浓度、独立常数危险率及链转移只决定原链停止的统计模型；实际自由基再引发、链–链偶合/歧化、扩散胶效应和活链浓度变化会改变分子量分布与Mayo关系。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O159 · 2D EXSY两态可逆构象交换的传播矩阵反演与详细平衡}
+\noindent\textbf{题目}\par
+假想一种有机分子在298.15 K下只有两个NMR可辨构象A⇌B，平衡一维积分给[B]/[A]=2/3；分子以一级速率k\_AB、k\_BA进行马尔可夫互变，且无化学降解，总浓度0.01000 mol/L。2D EXSY实验对A构象进行理想选择性标记，校正所有T₁弛豫、NOE和接收灵敏度后，起始标签的条件概率为P\_A(0)=1、P\_B(0)=0。混合时间t₁=0.5000 s时观测归一B交叉峰概率0.252848223531423，t₂=1.000 s时观测0.345865886705355。推导两态速率方程与传播矩阵（或本征值），由两个时点分别推导总交换速率kΣ以及两个单向速率，给出EXSY A对角概率、到平衡的松弛时间和半衰趋近平衡时间；计算ΔG°\_B−A=−RTln([B]/[A])、平衡两构象物质的量浓度和正逆微观通量，核验概率归一、详细平衡以及交换与自旋弛豫的实验限制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设有机分子仅存在两个可分辨的构象A、B，并以一阶速率A→B为k\_AB、B→A为k\_BA进行可逆化学交换；两构象的分子骨架及总体浓度守恒。
+\item 假定2D EXSY选择性标记A态的核磁自旋，在混合时间t内标记不因T₁/T₂弛豫丢失、无额外交叉弛豫和NOE，交叉峰强度经校正后可按分子从A转至B的条件概率解释。
+\item 主方程为dP\_A/dt=−k\_ABP\_A+k\_BAP\_B、dP\_B/dt=k\_ABP\_A−k\_BAP\_B，且P\_A+P\_B=1。
+\item 稳态要求详细平衡π\_Ak\_AB=π\_Bk\_BA，设总交换速率kΣ=k\_AB+k\_BA，即π\_A=k\_BA/kΣ、π\_B=k\_AB/kΣ。
+\item 独立一维NMR积分给平衡构象比[B]/[A]=2/3，故π\_A=0.600000000000、π\_B=0.400000000000。
+\item 选择性激发的初始条件P\_A(0)=1、P\_B(0)=0。对2×2速率生成矩阵对角化，非零松弛本征值为−kΣ。
+\item 随时间的EXSY概率严格为P\_B(t)=π\_B[1−exp(−kΣt)]，P\_A(t)=π\_A+π\_Bexp(−kΣt)，两者任何时刻都归一。
+\item 测得混合时间t₁=0.5s、t₂=1s处归一交叉峰P\_B分别0.252848223531和0.345865886705；同时A态对角概率分别0.747151776469和0.654134113295。
+\item 由任一时点解kΣ=−(1/t)ln[1−P\_B(t)/π\_B]，需满足0<P\_B(t)<π\_B；两个时间点均可独立求出。
+\item 得到kΣ(0.5s)=2.00000000000 s⁻¹、kΣ(1s)=2.00000000000 s⁻¹，两次结果一致。
+\item 详细平衡再给k\_AB=kΣπ\_B=0.800000000000、k\_BA=kΣπ\_A=1.20000000000 s⁻¹，不可将kΣ误认为单向速率。
+\item 指数恢复时间τ=1/kΣ=0.500000000000 s，达到平衡差值一半的时间t₁/₂=ln2/kΣ=0.346573590280 s。
+\item 对平衡构象比K=[B]/[A]=2/3，按1 mol/L标准状态计算ΔG°\_B−A=−RTlnK=1.00513057998 kJ/mol，B的标准自由能较高。
+\item 若总有机分子浓度0.01 mol/L，平衡[A]=0.00600000000000、[B]=0.00400000000000 mol/L，前后总浓度严格不变。
+\item 正向和逆向的每分子总库归一化稳态交换通量同为0.480000000000 s⁻¹，两者差为0；交换仍持续，平衡不代表无微观交换事件。
+\item 本模型只包含两态马尔可夫交换，真实2D EXSY必须校正交叉弛豫、NOE、T₁损失、非理想选择激发及多个中间构象；若这些效应显著不能直接将交叉峰视作条件概率。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+equilibrium\_A\_fraction = 0.6 fraction；equilibrium\_B\_fraction = 0.4 fraction；equilibrium\_B\_over\_A = 0.666666667 ratio；normalized\_EXSY\_B\_crosspeak\_t0p5 = 0.252848224 fraction；normalized\_EXSY\_B\_crosspeak\_t1 = 0.345865887 fraction；normalized\_EXSY\_A\_diagonal\_t0p5 = 0.747151776 fraction；normalized\_EXSY\_A\_diagonal\_t1 = 0.654134113 fraction；total\_exchange\_rate\_from\_0p5\_s = 2 s\textasciicircum{}-1；total\_exchange\_rate\_from\_1s\_s = 2 s\textasciicircum{}-1；forward\_A\_to\_B\_rate\_s = 0.8 s\textasciicircum{}-1；reverse\_B\_to\_A\_rate\_s = 1.2 s\textasciicircum{}-1；exchange\_relaxation\_time\_s = 0.5 s；exchange\_half\_approach\_time\_s = 0.34657359 s；G\_B\_minus\_A\_kJ\_mol = 1.00513058 kJ/mol；equilibrium\_A\_concentration\_M = 0.006 mol/L；equilibrium\_B\_concentration\_M = 0.004 mol/L；equilibrium\_forward\_flux\_per\_total\_s = 0.48 s\textasciicircum{}-1；detailed\_balance\_flux\_residual\_s = 0 s\textasciicircum{}-1；crosspeak\_ratio\_1\_to\_0p5 = 1.36787944 ratio；unrelaxed\_excited\_label\_fraction\_t1 = 0.135335283 fraction\par
+\noindent\textbf{模型前提：}
+本模型只包含两态马尔可夫交换，真实2D EXSY必须校正交叉弛豫、NOE、T₁损失、非理想选择激发及多个中间构象；若这些效应显著不能直接将交叉峰视作条件概率。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{物理化学}
@@ -13688,6 +13802,62 @@ relative\_diffusion\_m2\_s = 1.4e-09 m2/s；surface\_Damkohler\_number = 0.07142
 lifetime\_ratio\_q1 = 1.02 ratio；lifetime\_ratio\_q2 = 1.08 ratio；intensity\_ratio\_q1 = 1.173 ratio；intensity\_ratio\_q2 = 1.728 ratio；dynamic\_Stern\_Volmer\_constant\_L\_mol = 20 L/mol；static\_binding\_constant\_from\_q1\_L\_mol = 150 L/mol；static\_binding\_constant\_from\_q2\_L\_mol = 150 L/mol；bimolecular\_dynamic\_quenching\_L\_mol\_s = 5e+09 L/(mol s)；quenched\_free\_molecule\_lifetime\_ns = 3.7037037 ns；dark\_complex\_fraction\_at\_q2 = 0.375 fraction；free\_fluorophore\_fraction\_at\_q2 = 0.625 fraction；dynamic\_luminescence\_yield\_at\_q2 = 0.925925926 fraction；observed\_intensity\_retained\_at\_q2 = 0.578703704 fraction；static\_binding\_standard\_G\_kJ\_mol = -12.4211496 kJ/mol；static\_intensity\_factor\_at\_q2 = 1.6 ratio；pseudo\_firstorder\_dynamic\_rate\_at\_q2\_s = 20000000 s\textasciicircum{}-1；q1\_ratio\_reverse\_check = 1 ratio；q2\_free\_times\_dynamic\_factor = 0.578703704 fraction\par
 \noindent\textbf{模型前提：}
 两次寿命与强度反演的静态结合常数相同，且0<各发光/结合分数<1；若存在激发态复合、光谱重叠内滤效应、不同寿命荧光物种或Q明显耗尽，必须改用更完整模型。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P158 · Gibbs–Langmuir非离子表面吸附的表面张力、分子占据和毛细压力}
+\noindent\textbf{题目}\par
+某假想非离子有机表面活性剂在298.15 K水–空气界面形成均匀Langmuir单分子吸附层，最大表面过剩Γ\_max=3.000×10⁻⁶ mol/m²，平衡吸附常数K=2000 L/mol，所有实验浓度低于CMC。假设体相活动度近似浓度、无其它溶质且表面平衡，覆盖率θ=Kc/(1+Kc)，Γ=Γ\_maxθ，Gibbs吸附积分为γ=γ₀−RTΓ\_max ln(1+Kc)，纯水γ₀=0.07200 N/m、R=8.314462618 J/(mol K)、N\_A=6.02214076×10²³ mol⁻¹。计算c=0.1000 mmol/L和1.000 mmol/L的覆盖率、Γ与表面张力和降幅，求dγ/dlnc并与−RTΓ逐点核验，推导饱和分子平均表面积与高浓度表面分子数密度。若高浓度溶液形成半径10.00 μm的球形液滴，求Laplace压强；另在洁净玻璃半径0.2500 mm、接触角0°的毛细管中求毛细上升高度，与纯水比较（ρ=1000 kg/m³、g=9.810 m/s²）。检查面积、表面张力、吸附热力学以及CMC模型限制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假设理想非离子表面活性剂在水–空气界面形成单分子Langmuir吸附层，浓度低于临界胶束浓度，体相活度近似c/c°，无离子屏蔽或多层吸附。
+\item Langmuir表面覆盖率θ(c)=Kc/(1+Kc)，最大表面过剩Γ\_max=3.000×10⁻⁶ mol/m²，故Γ(c)=Γ\_maxθ(c)。
+\item Gibbs单溶质表面吸附等温式在固定温度下dγ=−RTΓ dlnc，将Langmuir式积分，并以纯水γ₀=0.07200 N/m作c→0参考。
+\item 得到γ(c)=γ₀−RTΓ\_max ln(1+Kc)，其中K=2000 L/mol与c以mol/L相乘为无量纲。
+\item c₁=0.0001000 mol/L、c₂=0.001000 mol/L时覆盖率θ分别0.166666666667与0.666666666667。
+\item 表面过剩Γ₁=5.00000000000e-7、Γ₂=0.00000200000000000 mol/m²，随c增加但不超过Γ\_max。
+\item 表面张力γ₁=0.0706440980854、γ₂=0.0638297620327 N/m，均小于纯水γ₀并保持正值。
+\item 两浓度各自的表面张力下降量γ₀−γ分别0.00135590191456、0.00817023796725 N/m。
+\item 由γ的解析导数核验dγ/dlnc=−RTΓ(c)，在两浓度分别为-0.00123947851478、-0.00495791405911 N/m，严格满足Gibbs吸附式。
+\item 在最大单层覆盖时，每个表面活性剂分子的平均面积a=1/(Γ\_max N\_A)=0.553513022391 nm²/分子。
+\item c₂时吸附分子面密度N\_s=Γ₂N\_A=1.20442815200e+18 molecules/m²，验证它小于饱和面密度Γ\_maxN\_A。
+\item 当c=c₂且半径为10.00 μm的球形液滴界面各处张力均匀时，Laplace附加压Δp=2γ/r=12765.9524065 Pa，低于同尺寸洁净水液滴的14400.0000000 Pa。
+\item 若清洁玻璃毛细管半径0.2500 mm、接触角为0°、液体密度1000 kg/m³和g=9.810 m/s²，毛细升高h=2γ/(ρgr)=5.20528130746 cm，纯水为5.87155963303 cm。
+\item 表面吸附等温式需要单一非离子表面活性剂的理想吸附且没有表面相变；若接近CMC、出现盐/共溶剂变化、接触角不恒定或动力学吸附未平衡，张力和毛细高度需另测。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+surface\_tension\_c0p1mM\_N\_m = 0.0706440981 N/m；surface\_tension\_c1mM\_N\_m = 0.063829762 N/m；surface\_tension\_drop\_c0p1mM\_N\_m = 0.00135590191 N/m；surface\_tension\_drop\_c1mM\_N\_m = 0.00817023797 N/m；surface\_coverage\_c0p1mM = 0.166666667 fraction；surface\_coverage\_c1mM = 0.666666667 fraction；surface\_excess\_c0p1mM\_mol\_m2 = 5e-07 mol/m2；surface\_excess\_c1mM\_mol\_m2 = 2e-06 mol/m2；Gibbs\_derivative\_c0p1mM\_N\_m = -0.00123947851 N/m；Gibbs\_derivative\_c1mM\_N\_m = -0.00495791406 N/m；saturated\_molecular\_footprint\_nm2 = 0.553513022 nm2/molecule；surface\_number\_density\_c1mM\_molecules\_m2 = 1.20442815e+18 molecules/m2；droplet\_Laplace\_pressure\_c1mM\_Pa = 12765.9524 Pa；clean\_water\_Laplace\_pressure\_Pa = 14400 Pa；capillary\_rise\_c1mM\_cm = 5.20528131 cm；clean\_water\_capillary\_rise\_cm = 5.87155963 cm；surface\_tension\_relative\_to\_clean = 0.886524473 ratio；Gibbs\_slope\_saturation\_N\_m = -0.00743687109 N/m\par
+\noindent\textbf{模型前提：}
+表面吸附等温式需要单一非离子表面活性剂的理想吸附且没有表面相变；若接近CMC、出现盐/共溶剂变化、接触角不恒定或动力学吸附未平衡，张力和毛细高度需另测。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P159 · Lindemann–Hinshelwood碰撞活化反应的压力降落、倒数反演与极限识别}
+\noindent\textbf{题目}\par
+一种假想气相活化分解A→P在350.0 K下采用Lindemann–Hinshelwood模型：A+M⇌A*+M，正向活化常数k₁、碰撞去活化常数k₋₁均以L/(mol s)为单位，A*→P为一级常数k₂（s⁻¹）。热浴M的浓度远大于A而恒定，激发态A*满足准稳态且[A*]≪[A]。两个独立实验固定[M]₁=0.02000 mol/L与[M]₂=0.5000 mol/L，测得有效一阶常数k\_obs,1=0.0352941176470588 s⁻¹、k\_obs,2=0.230769230769231 s⁻¹。以速率方程推导k\_obs=k₁[M]k₂/[k₋₁[M]+k₂]及低/高压常数k₀、k∞，使用1/k\_obs对1/[M]双点反演k₀、k∞及转折碰撞浓度；说明为什么两点不足以分开k₂和k₋₁。在两个[M]下计算激发态的反应/回落竞争概率、[A*]/[A]准稳态比值。若起始A₀=0.01000 mol/L、反应持续5.000 s且[A*]可忽略，求转化分数与产物浓度；将[M]视作理想气体并用R=8.314462618 J/(mol K)换算热浴分压，检查低高压极限、准稳态与物料近似。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 采用Lindemann–Hinshelwood的独立热浴M碰撞活化模型：A+M → A*+M（速率常数k₁），A*+M → A+M（k₋₁），A*→P（k₂），假设产物P不逆反应。
+\item 热浴碰撞物M的大量浓度[M]由实验固定，活化/失活分子反应的k₁和k₋₁单位均为L/(mol s)，单分子反应k₂单位s⁻¹。
+\item 对低浓度中间态A*采用准稳态d[A*]/dt≈k₁[M][A]−(k₋₁[M]+k₂)[A*]=0。
+\item 因此[A*]/[A]=k₁[M]/(k₋₁[M]+k₂)，产物形成速率v=k₂[A*]=k\_obs[A]，其中k\_obs=k₁[M]k₂/(k₋₁[M]+k₂)。
+\item 定义低压极限常数k₀=k₁及高压一级极限k∞=k₁k₂/k₋₁，并取转折热浴浓度[M]*=k₂/k₋₁=k∞/k₀。
+\item 两点测量用[M]₁=0.02000 M和[M]₂=0.5000 M，给定真实模型常数k₁=2.000、k₋₁=800.0 L/(mol s)，k₂=120.0 s⁻¹；在反演时将它们视为未知。
+\item 按这些输入生成有效速率常数k\_obs,1=0.0352941176471、k\_obs,2=0.230769230769 s⁻¹。
+\item 倒数变换1/k\_obs=1/(k₀[M])+1/k∞，在横坐标x=1/[M]、纵坐标y=1/k\_obs的图上为直线，斜率为1/k₀、截距为1/k∞。
+\item 由双点线性解得到k₀=2.00000000000 L/(mol s)，k∞=0.300000000000 s⁻¹，唯一确定转折浓度[M]*=0.150000000000 mol/L。
+\item 注意单凭两点k\_obs只能识别k₁和k₂/k₋₁的组合，不能在没有第三类动力学信息时单独确定k₂与k₋₁。
+\item 已活化A*进一步生成P而非回到A的条件概率为k₂/(k₋₁[M]+k₂)：低/高碰撞浓度分别0.882352941176、0.230769230769。
+\item 准稳态激发态与基态浓度比分别0.000294117647059、0.00192307692308，均低于0.002，支持忽略A*库存的近似。
+\item 在中间态库存可忽略且热浴常量的约化一级模型下，近似积分得到[A](t)=A₀exp(−k\_obst)、[P](t)=A₀[1−exp(−k\_obst)]。
+\item 初始A₀=0.01000 mol/L、t=5.000 s时，两条件转化分数分别0.161776567577、0.684578725361，产物P浓度分别0.00161776567577和0.00684578725361 mol/L。
+\item 若温度恒为350 K、气态M理想且[A]与[M]在同一体积中，热浴压力p=[M]×1000RT，两测试对应58201.2383260与1455030.95815 Pa。
+\item M→0时k\_obs≈k₀[M]呈二级碰撞依赖；M→∞时k\_obs→k∞为纯一级极限。若A*不可忽略、能量随机游走、多能态或非理想碰撞显著，需要采用全主方程或Troe/RRKM更精细动力学模型。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+low\_pressure\_bimolecular\_rate\_constant\_M\_inv\_s = 2 L/(mol s)；high\_pressure\_unimolecular\_limit\_s\_inv = 0.3 s\textasciicircum{}-1；half\_falloff\_collision\_concentration\_M = 0.15 mol/L；effective\_rate\_low\_collision\_s = 0.0352941176 s\textasciicircum{}-1；effective\_rate\_high\_collision\_s = 0.230769231 s\textasciicircum{}-1；high\_low\_rate\_ratio = 6.53846154 ratio；reciprocal\_plot\_slope\_M\_s = 0.5 mol s/L；reciprocal\_plot\_intercept\_s = 3.33333333 s；recovered\_low\_pressure\_constant\_M\_inv\_s = 2 L/(mol s)；recovered\_high\_pressure\_constant\_s\_inv = 0.3 s\textasciicircum{}-1；reaction\_probability\_after\_excitation\_low = 0.882352941 fraction；reaction\_probability\_after\_excitation\_high = 0.230769231 fraction；excited\_state\_to\_ground\_ratio\_low = 0.000294117647 fraction；excited\_state\_to\_ground\_ratio\_high = 0.00192307692 fraction；converted\_fraction\_low\_after5s = 0.161776568 fraction；converted\_fraction\_high\_after5s = 0.684578725 fraction；product\_low\_after5s\_M = 0.00161776568 mol/L；product\_high\_after5s\_M = 0.00684578725 mol/L；unexcited\_substrate\_low\_after5s\_M = 0.00838223432 mol/L；unexcited\_substrate\_high\_after5s\_M = 0.00315421275 mol/L；low\_bath\_gas\_partial\_pressure\_Pa = 58201.2383 Pa；high\_bath\_gas\_partial\_pressure\_Pa = 1455030.96 Pa；low\_pressure\_time\_constant\_s = 28.3333333 s；high\_pressure\_time\_constant\_s = 4.33333333 s\par
+\noindent\textbf{模型前提：}
+M→0时k\_obs≈k₀[M]呈二级碰撞依赖；M→∞时k\_obs→k∞为纯一级极限。若A*不可忽略、能量随机游走、多能态或非理想碰撞显著，需要采用全主方程或Troe/RRKM更精细动力学模型。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
