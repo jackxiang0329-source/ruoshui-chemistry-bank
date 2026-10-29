@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (30题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (34题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -243,6 +243,32 @@ oxygen\_deficiency\_at\_low\_pO2 = 0.0316227766 formula；oxygen\_deficiency\_at
 本模型限定δ远小于1、无Ce空位/间隙、缺陷相互作用弱且K\_eff不含其它活度项；实际CeO₂₋δ的位点熵、载流子迁移率和晶格常数会依温度与氧压改变。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I159 · MgO Born–Haber循环的二次电子亲和、晶格焓和假想水合路径审计}
+\noindent\textbf{题目}\par
+以假想标准状态的MgO(s) Born–Haber热化学循环作严格无机化学推导。已知Mg(s)+½O₂(g)→MgO(s)标准生成焓ΔH\_f=−602 kJ/mol；Mg(s)→Mg(g)升华焓+148 kJ/mol，Mg(g)第一次、第二次电离焓分别+738及+1451 kJ/mol，½O₂(g)→O(g)解离焓+249 kJ/mol，氧原子第一次电子加合焓−141 kJ/mol、第二次电子加合焓+744 kJ/mol。定义晶格形成焓L为Mg²⁺(g)+O²⁻(g)→MgO(s)，求所有气相离子制备焓、L、正号晶格解离焓及Hess残差。另给假想且不发生水解的气态离子水合焓Mg²⁺ −1921、O²⁻ −1300 kJ/mol，求形式离子溶解焓，检查Mg/O/电子数与电荷守恒。必须解释O²⁻在真实水中会迅速质子化，故形式溶解路径不等同于真实MgO水化实验。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Born–Haber循环以Mg(s)+½O₂(g)→MgO(s)的标准生成焓ΔH\_f=−602 kJ/mol为热力学终点；反应每生成一个MgO式量消耗一个Mg原子及半个氧气分子。
+\item 按气相路径依次使Mg固体升华为Mg(g)、Mg(g)失去两电子形成Mg²⁺(g)、半摩尔氧气裂解为O(g)、氧气原子接收两电子形成O²⁻(g)。
+\item 镁升华+148、第一电离+738、第二电离+1451 kJ/mol，合并镁离子气相制备能+2337 kJ/mol。
+\item ½O₂解离为O(g)的吸热为+249 kJ/mol，题设把氧第一次电子亲和放热−141 kJ/mol、第二次电子加合吸热+744 kJ/mol。
+\item 因此氧两次电子加合的净焓为603.000000000 kJ/mol，全部气相离子制备焓Σ=3189.00000000 kJ/mol。
+\item 气相Mg²⁺+O²⁻形成固体MgO的晶格形成焓L必须带负号，Hess定律给ΔH\_f=Σ+L。
+\item 唯一反演L=ΔH\_f−Σ=-3791.00000000 kJ/mol，对应固体解离为两气相离子的焓为3791.00000000 kJ/mol。
+\item 若人为定义Mg²⁺(g)→Mg²⁺(aq)焓−1921 kJ/mol、O²⁻(g)→O²⁻(aq)焓−1300 kJ/mol，且禁止水解，则该假想单纯离子水合路径的总焓为−3221 kJ/mol。
+\item 按晶格解离再水合的Hess循环，形式溶解焓ΔH\_sol=−L+ΔH\_hyd(Mg²⁺)+ΔH\_hyd(O²⁻)=570.000000000 kJ/mol，是吸热值。
+\item 严格检查气相离子电荷+2+(−2)=0，氧气半摩尔经单个氧原子接收两个电子；电子来自镁的两次电离，电子数守恒。
+\item 回代−602−[Σ+L]=0.00000000000 kJ/mol，作为独立Hess残差；晶格形成放热的绝对值明显大于氧的第二电子加合吸热。
+\item 上述O²⁻(aq)是为热化学循环而引入的假想标准状态，真实氧化物离子在水中迅速发生质子转移，MgO实际与水生成Mg(OH)₂；形式溶解焓绝不可当真实水溶液实验测定值。
+\item 电子亲和能和晶格焓的定义、各物种温度及相态必须一致；若引入真实水解、非理想离子溶液和不同固相，需追加相应反应焓与活度项。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Mg\_atomization\_plus\_two\_ionizations\_kJ\_mol = 2337 kJ/mol；half\_O2\_dissociation\_kJ\_mol = 249 kJ/mol；oxygen\_two\_electron\_attachment\_sum\_kJ\_mol = 603 kJ/mol；gas\_ions\_pre\_lattice\_enthalpy\_kJ\_mol = 3189 kJ/mol；lattice\_formation\_enthalpy\_kJ\_mol = -3791 kJ/mol；lattice\_dissociation\_enthalpy\_kJ\_mol = 3791 kJ/mol；sum\_hydration\_enthalpies\_kJ\_mol = -3221 kJ/mol；hypothetical\_ionic\_dissolution\_enthalpy\_kJ\_mol = 570 kJ/mol；Born\_Haber\_Hess\_residual\_kJ\_mol = 0 kJ/mol；charge\_balance\_residual = 0 charge；lattice\_cohesion\_to\_preparation\_ratio = 1.18877391 ratio；ionic\_dissolution\_MJ\_mol = 0.57 MJ/mol\par
+\noindent\textbf{模型前提：}
+电子亲和能和晶格焓的定义、各物种温度及相态必须一致；若引入真实水解、非理想离子溶液和不同固相，需追加相应反应焓与活度项。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -451,6 +477,32 @@ initial\_12C\_mol = 0.988924051 mol；initial\_13C\_mol = 0.0110759494 mol；res
 本模型要求封闭进料、单一充分混合库、常数α和同位素定量测量；温度依赖、重新混合或反应机理变化会破坏Rayleigh指数规律。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A159 · 拉曼Stokes/反Stokes四次频率修正的晶格温度及光子计数误差反演}
+\noindent\textbf{题目}\par
+用假想无机晶体的一阶拉曼Stokes与反Stokes信号反演局部温度。入射激光真空波数ν̃₀=20000.0 cm⁻¹，晶格拉曼模式波数ν̃\_v=1000.0 cm⁻¹，两支谱线的探测响应已完成校准，并假定非共振拉曼张量相同、晶格热平衡。给定强度比I\_AS/I\_S=[(ν̃₀+ν̃\_v)/(ν̃₀−ν̃\_v)]⁴ exp[−(hc/kB)ν̃\_v/T]，hc/kB=1.438776877 K·cm。实测强度比为0.0244663336559430，环境温度298.15 K。求Stokes及反Stokes波数和真空波长、光学频率四次修正因子、由比值唯一反演的温度及升温量、声子占有数。若Stokes光子计数的期望为1.000×10⁶，反Stokes计数按该比值预测且两个计数独立Poisson，求反Stokes计数期望、比值和温度的一阶标准不确定度；验证光子能量差、Boltzmann极限、噪声单位与共振/背景局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 一阶自发拉曼散射中，入射光波数ν̃₀=20000 cm⁻¹、振动模波数ν̃\_v=1000 cm⁻¹，Stokes光子失去声子能量、反Stokes光子从已激发声子获得能量。
+\item 由能量守恒ν̃\_S=ν̃₀−ν̃\_v=19000 cm⁻¹、ν̃\_AS=ν̃₀+ν̃\_v=21000 cm⁻¹，正反Stokes谱线并非相同波长。
+\item 将波数变换为真空波长λ=10⁷/ν̃ nm，分别得λ\_S=526.315789474、λ\_AS=476.190476190 nm。
+\item 同一振动模谐振近似下，Stokes强度∝ν̃\_S⁴(n+1)，反Stokes强度∝ν̃\_AS⁴n，且n/(n+1)=exp[−hcν̃\_v/(kBT)]。
+\item 假定仪器相对光谱响应已校准、两散射通道的拉曼张量相同，得I\_AS/I\_S=[(ν̃₀+ν̃\_v)/(ν̃₀−ν̃\_v)]⁴ exp[−(hc/kB)ν̃\_v/T]。
+\item 四次光学频率修正因子F=1.49232280293，明显不等于1，不能直接从原始反/正Stokes强度比取−ln求温度。
+\item 给定(hc/kB)=1.438776877 K·cm，T=350 K时声子Boltzmann因子=0.0163947998436，理论强度比=0.0244663336559。
+\item 从两强度反演T=(hc/kB)ν̃\_v/ln[F/(I\_AS/I\_S)]；F/R>1确保温度正且唯一。
+\item 代入已校准强度比得到T\_inv=350.000000000 K，较环境温度298.15 K上升51.8500000000 K。
+\item 声子平均占据数n=1/(e\textasciicircum{}\{hcν̃\_v/(kBT)\}−1)=0.0166680695069，Stokes统计因子n+1=1.01666806951。
+\item 若Stokes计数预期为N\_S=1000000 photons，反Stokes预期计数N\_AS=R N\_S=24466.3336559 photons，两个独立Poisson计数构成光子计数噪声。
+\item 计数比标准相对误差√(1/N\_AS+1/N\_S)，对应比值绝对不确定度0.000158319092779，经解析导数传播得温度标准误差0.550943467031 K。
+\item 温度反演使用的是散射模的有效振动态分布温度，假设局域热平衡、弱激光激发和光学薄样品；非共振拉曼近似失效、荧光背景、强共振激发或探测器波长响应不均会造成系统误差。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Stokes\_wavenumber\_cm\_inv = 19000 cm\textasciicircum{}-1；antiStokes\_wavenumber\_cm\_inv = 21000 cm\textasciicircum{}-1；Stokes\_wavelength\_nm = 526.315789 nm；antiStokes\_wavelength\_nm = 476.190476 nm；optical\_frequency\_fourth\_power\_factor = 1.4923228 ratio；phonon\_Boltzmann\_factor = 0.0163947998 ratio；antiStokes\_over\_Stokes\_intensity = 0.0244663337 ratio；reconstructed\_lattice\_temperature\_K = 350 K；phonon\_occupation\_number = 0.0166680695 phonons；Stokes\_occupation\_plus\_one = 1.01666807 dimensionless；expected\_antiStokes\_photon\_count = 24466.3337 photons；counting\_ratio\_standard\_uncertainty = 0.000158319093 ratio；temperature\_standard\_uncertainty\_K = 0.550943467 K；laser\_overambient\_temperature\_K = 51.85 K；inversion\_logarithm = 4.11079108 dimensionless；count\_ratio\_backcheck = 0.0244663337 ratio\par
+\noindent\textbf{模型前提：}
+温度反演使用的是散射模的有效振动态分布温度，假设局域热平衡、弱激光激发和光学薄样品；非共振拉曼近似失效、荧光背景、强共振激发或探测器波长响应不均会造成系统误差。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第12辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -639,6 +691,34 @@ B\_to\_A\_conformer\_equilibrium = 0.32382458 ratio；A\_conformer\_fraction = 0
 所有温度和自由能均以题设固定标准状态为前提，忽略溶剂粘度、构象互变速率有限、产物可逆和隧穿；若构象交换不够快，单一指数消耗模型需改为耦合常微分方程。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O155 · 六半胱氨酸二硫键完全匹配拓扑的Boltzmann权重与氧化还原守恒}
+\noindent\textbf{题目}\par
+某假想有机多肽含6个可氧化半胱氨酸–SH侧链，依序标号1至6。在完全氧化条件下只生成分子内二硫键，全部6个–SH以不重叠的3对组成完全匹配，且不存在残留自由巯基或分子间交联。指定天然连接拓扑为(1,2)、(3,4)、(5,6)，它的标准自由能比其它所有完全匹配拓扑各低6.000 kJ/mol，其余错误拓扑彼此等能且简并度各1。温度298.15 K、R=8.314462618 J/(mol·K)，总蛋白浓度0.002000 mol/L，氧化剂为H₂O₂，二硫键反应按2RSH+H₂O₂→RSSR+2H₂O计量。求全部不同拓扑数、按恰好含0、1、3条天然键分类的简并数与Boltzmann概率、天然拓扑概率、正确天然键数均值及方差、天然拓扑与14个错误拓扑总权重的宏态自由能差、天然蛋白浓度、总二硫键及巯基/H₂O₂/H₂O和电子转移当量，检查组合计数、拓扑分布归一与氧化还原原子守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 把单条假想含6个自由半胱氨酸巯基的蛋白质链标号为1至6，氧化后全部六个巯基形成3条分子内二硫键，不存在分子间交联与游离巯基。
+\item 完全配对的无序拓扑数为(6−1)!!=5×3×1=15；每个拓扑代表三个互不共享顶点的二硫键，而不是三条独立任取边。
+\item 指定天然拓扑为(1,2)(3,4)(5,6)，其自由能低于其它14个拓扑6.000 kJ/mol；其它14个视作等能，且无溶剂/构象其它简并度。
+\item 以普通错误拓扑单态权重1为标准，天然态权重w=exp[6000/(RT)]，配分函数Z=w+14。
+\item 在T=298.15 K，w=11.2500517962、Z=25.2500517962，天然拓扑概率P\_nat=w/Z=0.445545691828，其余概率合计14/Z。
+\item 对于任意固定的一条天然二硫键，剩余四顶点共有3种完全配对，其中只有一种会同时包括其余两条天然键。
+\item 因此恰好含一条天然键的非天然拓扑有3×(3−1)=6种；恰好含两条天然键的非天然拓扑不存在，因为第三条必然由余下两顶点配成。
+\item 既无天然键的错误拓扑数为14−6=8，分类简并数为1（全对）、6（仅一对）、8（零对），总计15。
+\item 一对天然键拓扑总概率6/Z=0.237623274931，零对拓扑概率8/Z=0.316831033241，三种分类概率求和为1。
+\item 天然拓扑与其余错误拓扑整个宏态的统计权重比w/14=0.803575128303，对应宏态自由能差−RTln(w/14)=0.542109718653 kJ/mol。
+\item 每分子天然键数的平均值〈N〉=(3w+1×6)/Z=1.57426035041，二阶矩〈N²〉=(9w+6)/Z=4.24753450138，方差=1.76923885049≥0。
+\item 蛋白质初始浓度0.002 mol/L，因此天然拓扑浓度=0.000891091383656 mol/L；无论拓扑，每分子都形成三条S−S键，总键浓度=0.00600000000000 mol/L。
+\item 每条键净氧化反应2RSH+H₂O₂→RSSR+2H₂O，H₂O₂浓度需求等于二硫键数，水生成数为其两倍，转移电子数为其两倍。
+\item 总消耗巯基=0.0120000000000 mol/L、H₂O₂=0.00600000000000、产水=0.0120000000000、电子转移当量=0.0120000000000 mol/L，逐元素与氧化还原电荷平衡。
+\item 该完全配对模型不代表真实蛋白折叠自由能仅由一个拓扑常数决定；巯基pKa、二硫键交换、分子间交联、溶剂与蛋白构象耦合会改变能量景观。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+number\_of\_complete\_disulfide\_matchings = 15 matchings；native\_Boltzmann\_weight = 11.2500518 dimensionless；topology\_partition\_sum = 25.2500518 dimensionless；native\_topology\_probability = 0.445545692 fraction；one\_native\_bond\_topology\_probability = 0.237623275 fraction；zero\_native\_bond\_topology\_probability = 0.316831033 fraction；native\_to\_all\_other\_weight\_ratio = 0.803575128 ratio；native\_vs\_others\_macrostate\_G\_kJ\_mol = 0.542109719 kJ/mol；mean\_native\_bonds\_per\_molecule = 1.57426035 bonds；second\_moment\_native\_bond\_count = 4.2475345 bonds2；variance\_native\_bond\_count = 1.76923885 bonds2；native\_topology\_mol\_L = 0.000891091384 mol/L；total\_disulfide\_bonds\_mol\_L = 0.006 mol/L；required\_H2O2\_mol\_L = 0.006 mol/L；produced\_water\_mol\_L = 0.012 mol/L；consumed\_thiol\_groups\_mol\_L = 0.012 mol/L；transferred\_electrons\_mol\_L = 0.012 mol/L；uniform\_topology\_native\_baseline = 0.0666666667 fraction\par
+\noindent\textbf{模型前提：}
+该完全配对模型不代表真实蛋白折叠自由能仅由一个拓扑常数决定；巯基pKa、二硫键交换、分子间交联、溶剂与蛋白构象耦合会改变能量景观。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第12辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -825,6 +905,33 @@ Thiele\_modulus = 3.16227766 dimensionless；spherical\_effectiveness\_factor = 
 dimensionless\_Soret\_exponent = 1.2 dimensionless；hot\_over\_cold\_ratio = 0.301194212 ratio；cold\_concentration\_mol\_m3 = 17.1721531 mol/m3；hot\_concentration\_mol\_m3 = 5.17215313 mol/m3；midpoint\_concentration\_mol\_m3 = 9.42427745 mol/m3；cold\_hot\_concentration\_enrichment = 3.32011692 ratio；midpoint\_concentration\_gradient\_mol\_m4 = -11309.1329 mol/m4；midpoint\_Fick\_flux = 1.13091329e-05 mol/(m2s)；midpoint\_Soret\_flux = -1.13091329e-05 mol/(m2s)；midpoint\_net\_molar\_flux = 0 mol/(m2s)；conduction\_heat\_flux\_W\_m2 = -24000 W/m2；midpoint\_entropy\_production\_W\_m3K = 9375 W/(m3K)；given\_inventory\_mol\_m2 = 0.01 mol/m2；reconstructed\_inventory\_mol\_m2 = 0.01 mol/m2；diffusive\_time\_s = 1000 s；cold\_osmotic\_pressure\_Pa = 42833.1676 Pa；hot\_osmotic\_pressure\_Pa = 14621.2491 Pa\par
 \noindent\textbf{模型前提：}
 该常系数稀溶液Soret模型忽略溶剂密度、热-物质流的Onsager反作用、温度依赖输运系数和盐的电扩散；若有对流不能继续采用纯指数稳态。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P155 · Gouy–Chapman电双层Grahame电荷、微分电容与渗透压力校验}
+\noindent\textbf{题目}\par
+某假想电极浸入298.15 K水溶液中的理想对称1:1电解质，体相阳离子和阴离子各10.00 mol/m³。溶剂介电常数ε\_r=78.50、真空ε₀=8.8541878128×10⁻¹² F/m，kB=1.380649×10⁻²³ J/K、e=1.602176634×10⁻¹⁹ C、N\_A=6.02214076×10²³ mol⁻¹、R=8.314462618 J/(mol K)。均匀平板电极相对体相电势ψ₀=+0.05000 V，仅存在Gouy–Chapman扩散层，离子视作点电荷且活度理想。采用λ\_D=√[εkBT/(2e²N\_Ac∞)]、表面离子浓度c±(0)=c∞exp(∓eψ₀/kBT)、Grahame表面电荷σ=√(8εRTc∞)sinh[eψ₀/(2kBT)]。求热电压、德拜长度与波数、σ及微分电容、表面阳/阴离子浓度、渗透压增量与Maxwell应力、可逆充电功∫σdψ；检查电荷符号、热力学正性、相等压力恒等式、零电势极限和理想模型适用范围。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 把电极前方1:1对称理想电解质近似为无限平板、恒介电常数的Gouy–Chapman扩散双电层，忽略特异吸附、Stern层及有限离子尺寸。
+\item 体相单一阳离子与单一阴离子浓度各为c∞=10.00 mol/m³（0.01000 mol/L），溶剂ε=ε₀ε\_r，ε\_r=78.50，温度298.15 K。
+\item Poisson–Boltzmann分布为c₊(ψ)=c∞exp[−eψ/(kBT)]、c₋(ψ)=c∞exp[+eψ/(kBT)]，正表面势排斥阳离子、吸引阴离子。
+\item 双电层热电压V\_T=kBT/e，德拜长度λ\_D=√[εkBT/(2e²N\_Ac∞)]，其中浓度以mol/m³表示。
+\item 计算V\_T=0.0256925791211 V，λ\_D=3.04205736023 nm，屏蔽波数κ=1/λ\_D=328724899.495 m⁻¹。
+\item 在电极表面势ψ₀=0.05 V时，定义x=eψ₀/(2kBT)=0.973043612406，不是用摄氏温度求指数。
+\item 一维Poisson–Boltzmann方程的第一积分给Grahame关系σ=√(8εRTc∞)sinh(x)，σ为电极正表面电荷密度。
+\item 前因子σ*=√(8εRTc∞)=0.0117405565895 C/m²，表面电荷σ=0.0133141114568 C/m²，正号与ψ₀一致。
+\item 求微分电容C\_diff=dσ/dψ₀=σ*/(2V\_T)cosh(x)=0.345454455675 F/m²；零电势电容0.228481471910 F/m²。
+\item 表面阳离子浓度=1.42831848560、阴离子浓度=70.0123964004 mol/m³，阴离子富集因子c₋/c₊=49.0173564973。
+\item 近表面理想渗透压相对体相增加ΔΠ=RT(c₊+c₋−2c∞)=127519.321772 Pa。
+\item 由Grahame第一积分，Maxwell电场压力σ²/(2ε)=127519.321772 Pa，与ΔΠ一致（所给R≈N\_AkB）。
+\item 由可逆充电功密度W/A=∫₀\textasciicircum{}\{ψ₀\}σ(ψ)dψ=2V\_Tσ*[cosh(x)−1]=0.000308859500448 J/m²，非负。
+\item 当ψ₀→0时σ≈(ε/λ\_D)ψ₀、C\_diff→ε/λ\_D；较高电势及较高盐浓度下有限离子大小、Stern层、介电饱和和相关效应会使理想PB失效。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+thermal\_voltage\_V = 0.0256925791 V；half\_surface\_potential\_dimensionless = 0.973043612 dimensionless；Debye\_length\_nm = 3.04205736 nm；inverse\_Debye\_length\_m\_inv = 328724899 m\textasciicircum{}-1；Grahame\_charge\_prefactor\_C\_m2 = 0.0117405566 C/m2；surface\_charge\_C\_m2 = 0.0133141115 C/m2；differential\_capacitance\_F\_m2 = 0.345454456 F/m2；zero\_potential\_capacitance\_F\_m2 = 0.228481472 F/m2；capacitance\_nonlinearity\_ratio = 1.51195829 ratio；cation\_surface\_mol\_m3 = 1.42831849 mol/m3；anion\_surface\_mol\_m3 = 70.0123964 mol/m3；anion\_cation\_enrichment = 49.0173565 ratio；osmotic\_excess\_pressure\_Pa = 127519.322 Pa；Maxwell\_stress\_Pa = 127519.322 Pa；charging\_work\_J\_m2 = 0.0003088595 J/m2；surface\_anion\_charge\_density\_C\_m3 = 6617357.54 C/m3；dimensionless\_surface\_potential = 1.94608722 dimensionless\par
+\noindent\textbf{模型前提：}
+当ψ₀→0时σ≈(ε/λ\_D)ψ₀、C\_diff→ε/λ\_D；较高电势及较高盐浓度下有限离子大小、Stern层、介电饱和和相关效应会使理想PB失效。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
