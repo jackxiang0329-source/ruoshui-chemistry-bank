@@ -128,6 +128,11 @@ Object.assign(witnesses,{
 "UC-ADV12-A166":()=>{const F=96485.33212,M=18.01528,eta=.975,dr=.2e-6,t=150,sm=.5,sp=.0002,st=80,toQ=x=>2*F*x/(eta*M),back=x=>eta*M*x/(2*F),q=toQ(.000375+dr*t),b=toQ(dr*t),qs=toQ(sp+dr*st),w=back(q)-dr*t,ws=back(qs)-dr*st,sd=Math.hypot(.01*eta*M/(2*F),.01e-6*t);assert.ok(Math.abs(w-.000375)<1e-15);return[q,b,q-b,eta*q/(2*F),back(q)*1e6,dr*t*1e6,w*1e6,w/sm*1e6,q/t,qs,dr*st*1e6,ws*1e6,ws/sp*100,sd*1e6,sd/sm*1e6,w/sm,eta*q/F,b/q];},
 "UC-ADV12-P162":()=>{const kb=1.380649e-23,T=298.15,x=.5,r=10,k0=.1,thermal=kb*T*1e21,alpha=x/thermal,A=k0/(r*alpha),rate=f=>k0*Math.exp(alpha*f),S=f=>Math.exp(-A*Math.expm1(alpha*f)),mode=q=>Math.log(q*alpha/k0)/alpha,median=q=>Math.log1p(Math.log(2)*q*alpha/k0)/alpha,f=mode(r),g=mode(40);assert.ok(Math.abs(g-f-Math.log(4)/alpha)<1e-12);return[thermal,1/alpha,A,f,median(r),g,median(40),g-f,rate(f),1/rate(f),S(15),1-S(15),S(30),1-S(30),S(f),k0/r,rate(f)*S(f)/r,Math.log(4)/alpha,0];}
 });
+
+Object.assign(witnesses,{
+"UC-ADV12-I166":()=>{const R=8.314462618,T=298.15,dp=1e8,VL=10e-6,VR=4e-6,fr=Math.exp(-VL*dp/(R*T)),rr=Math.exp(-VR*dp/(R*T)),kf=2*fr,kr=.08*rr,K0=25,K=kf/kr,run=(f,r)=>{const a=f*.1,b=r,L=a+b,th=a/L,p=.01*th*(-Math.expm1(-L*.5));return[th,.01*th,p,1/L,th/(1-th)/.1]};const a=run(2,.08),b=run(kf,kr),G0=-R*T*Math.log(K0),G1=-R*T*Math.log(K);assert.ok(Math.abs((G1-G0)-600)<1e-10);return[fr,rr,kf,kr,K0,K,K/K0,(VL-VR)*1e6,G0/1000,G1/1000,G1-G0,a[0],b[0],a[1],b[1],a[2],b[2],a[3],b[3],a[4],b[4],.01,.01];},
+"UC-ADV12-O162":()=>{const pS=8.3,pN=9.5,C=.01,E0=.001,t=2,kS=100,kN=20,calc=p=>{let fs=1/(1+10**(pS-p)),fn=1/(1+10**(pN-p)),a=kS*C*fs,b=kN*C*fn,L=a+b,x=-Math.expm1(-L*t),ps=E0*x*a/L,pn=E0*x*b/L,rem=E0*(1-x);return[fs,fn,a,b,L,a/b,x,ps,pn,rem,ps/pn]},A=calc(8.5),B=calc(10),r=20/5,y=(r-1)/(10**pN-r*10**pS),p=-Math.log10(y),target=calc(p)[5];assert.ok(Math.abs(target-20)<1e-12&&Math.abs(A[7]+A[8]+A[9]-E0)<1e-15);return[A[0],A[1],A[2],A[3],A[4],A[5],A[6],A[7],A[8],A[9],B[0],B[1],B[4],B[5],B[6],B[7],B[8],B[9],p,target,A[7]+A[8]+A[9],B[7]+B[8]+B[9],A[10],B[10]];}
+});
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();

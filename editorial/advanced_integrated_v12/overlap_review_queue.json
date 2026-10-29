@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 60,
+  "current_draft_count": 62,
   "expert_approved": 0,
-  "preliminary_flags": 60,
+  "preliminary_flags": 62,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -364,6 +364,18 @@
       "new_id": "UC-ADV12-P162",
       "prior_id": "UC-ADV11-P124",
       "reason": "可能与既往电化学计量或动力学题在领域上邻近，待逐式人工排重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I166",
+      "prior_id": "UC-ADV11-I139",
+      "reason": "配位取代和有机竞争机理与历史题存在局部主题相邻，仍须人工核心模型排重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O162",
+      "prior_id": "UC-ADV11-O140",
+      "reason": "配位取代和有机竞争机理与历史题存在局部主题相邻，仍须人工核心模型排重。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -727,6 +739,18 @@
       "model_family": "Bell-Evans-single-molecule-rupture-force-ramp-survival-mode-median",
       "judgement": "pending_human_comparison",
       "screening": "数值独立复算已登记，模型边界与创新性仍待审。"
+    },
+    {
+      "new_id": "UC-ADV12-I166",
+      "model_family": "NiII-ligand-substitution-pressure-activation-volume-detailed-balance-relaxation",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值、压力热力学和化学选择性物料复核已登记；待专家认证。"
+    },
+    {
+      "new_id": "UC-ADV12-O162",
+      "model_family": "cysteine-SN-competitive-alkylation-pH-dependent-nucleophile-speciation-parallel-kinetics",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值、压力热力学和化学选择性物料复核已登记；待专家认证。"
     }
   ]
 }
