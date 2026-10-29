@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (575题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (579题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -10610,6 +10610,31 @@ charging\_shift\_sample1\_eV = 1.5 eV；charging\_shift\_sample2\_eV = 0.8 eV；
 此结果不能仅由Auger参数确认铜化合物的配位几何、共价性或形式价态；差分充电、C1s化学位移、表面不均一、卫星峰误指及Auger线重叠会使简化推断失效。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I147 · V2O5局部键价指数约束的长键反演、畸变指标与化学计量审计}
+\noindent\textbf{题目}\par
+假想V₂O₅晶体的一个V(V)局部六配位氧环境中，两条相同短V–O键长1.600 Å，其余四条等长长键未知。采用经验键价模型s\_i=exp[(R₀−R\_i)/B]，参数R₀=1.803 Å、B=0.370 Å，局部V(V)键价总和S=5.000。求短键/长键各自键价、未知长键长度、键价回代总和、六配位平均V–O长度、无量纲畸变指数Δ=(1/6)Σ[(R\_i−〈R〉)/〈R〉]²，以及短长键各贡献的形式价分数。另以整体V₂O₅两V五O的化学计量检查电荷中性，说明局部键价和整体氧桥联并非一一对应，以及指数反问题的唯一性与经验模型局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 以假想V₂O₅无机固体的一个六配位V(V)中心作为局部几何模型，两根V−O短键长度1.600 Å，其余四根等长长键未知。
+\item 采用题设经验键价定律s\_i=exp[(R₀−R\_i)/B]，参数R₀=1.803 Å、B=0.370 Å，键价s为无量纲；正值与距离单调反向相关。
+\item 对V(V)中心要求键价和S=Σ\_i s\_i=5.000，描述局部形式氧化态+5，而非实际电子密度的严格积分。
+\item 每根短键键价s\_s=exp[(R₀−1.600)/B]=1.73091236594，两短键合计3.46182473187。
+\item 四根长键分担剩余键价5−2s\_s，因此每根s\_l=(5−2s\_s)/4=0.384543817031，为正且小于s\_s。
+\item 由单调指数逆函数唯一反推出长键长度R\_l=R₀−B ln s\_l=2.15660808908 Å，满足R\_l>R\_s。
+\item 回代两短四长的六配位键价和S=2s\_s+4s\_l=5.00000000000，与形式+5相吻合。
+\item 平均V−O距离〈R〉=(2R\_s+4R\_l)/6=1.97107205939 Å。
+\item 按题设畸变指数Δ=(1/6)Σ\_i[(R\_i−〈R〉)/〈R〉]²，求Δ=0.0177207259760，其量纲为零且Δ≥0。
+\item 短键贡献总键价分数2s\_s/5=0.692364946375，长键贡献4s\_l/5=0.307635053625，两者总和为1。
+\item 整体V₂O₅式量内两V(V)形式总正价为+10，五个O²⁻总负电为−10，化学计量电中性；若只观察一个局部V−O六面体，不能假定每个O都只连接这一V。
+\item 键价参数依赖配位环境、共价性与经验训练集；真实V₂O₅畸变配位并非严格两短四等长，氧位点桥联数和XRD热振动也会改变反演，需实验核验。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+short\_bond\_valence = 1.73091237 valence；long\_bond\_valence = 0.384543817 valence；inferred\_long\_bond\_length\_A = 2.15660809 Angstrom；vanadium\_BVS = 5 valence；octahedral\_mean\_distance\_A = 1.97107206 Angstrom；octahedral\_distortion\_index = 0.017720726 dimensionless；average\_bond\_valence = 0.833333333 valence/bond；short\_bond\_fraction\_of\_valence = 0.692364946 fraction；long\_bond\_fraction\_of\_valence = 0.307635054 fraction；two\_V\_positive\_valence\_sum = 10 charge；five\_O\_negative\_valence\_magnitude = 10 charge；global\_charge\_residual = 0 charge；bond\_length\_difference\_A = 0.556608089 Angstrom；long\_valence\_backward = 0.384543817 valence\par
+\noindent\textbf{模型前提：}
+键价参数依赖配位环境、共价性与经验训练集；真实V₂O₅畸变配位并非严格两短四等长，氧位点桥联数和XRD热振动也会改变反演，需实验核验。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第11辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -11078,6 +11103,31 @@ double\_path\_intensity\_ratio = 1.30119421 ratio；double\_path\_intensity\_cou
 A\_negative\_partition\_fraction = 0.865 fraction；B\_negative\_partition\_fraction = 0.92 fraction；A\_Poisson\_lambda = 0.145025772 copies/droplet；B\_Poisson\_lambda = 0.0833816089 copies/droplet；A\_copies\_per\_uL = 170.618555 copies/uL；B\_copies\_per\_uL = 98.0960105 copies/uL；observed\_double\_positive\_fraction = 0.01 fraction；independent\_model\_double\_positive\_fraction = 0.0108 fraction；predicted\_double\_positive\_droplets = 216 droplets；double\_positive\_residual\_fraction = -0.0008 fraction；Pearson\_independence\_chi\_square = 1.48930031 chi\_square；contingency\_odds\_ratio = 0.908571429 ratio；A\_lambda\_binomial\_se = 0.00279346885 copies/droplet；B\_lambda\_binomial\_se = 0.00208514414 copies/droplet；droplet\_conservation\_residual = 0 droplets\par
 \noindent\textbf{模型前提：}
 本题要求微滴体积一致、检出灵敏度为1且没有假阳性/交叉串色；若DNA聚集、模板复合、破滴或体积不均，Poisson独立模型和统计不确定度将失效。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A146 · 双频光声光热幅相联立反演热扩散系数与Beer–Lambert浓度}
+\noindent\textbf{题目}\par
+某假想光声分析系统采用指定的一维光热近似：幅值A(f)=K F\_abs exp[−L√(πf/α)]/√f，相位φ(f)=−L√(πf/α)，其中热扩散层厚L=10.00 μm，α为样品有效热扩散系数，K=0.1000 V√Hz为已校准电子与声学增益。光学薄层吸收分数F\_abs=1−10\textasciicircum{}(−εcd)，ε=1000.0 L/(mol·cm)，光程d=0.01000 cm；两次调制频率f₁=100.0 Hz、f₂=400.0 Hz，对应测得A₁=1.1742295353738 mV、A₂=0.33519793052190 mV。求两次热波衰减指数及相位、吸收分数、由两个幅值反演的α与浓度c、未受热衰减的100 Hz信号；检查频率单位、幅值比物理解、唯一性和相位差的独立一致性，并说明何时模型不适用。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题设采用简化一维光声热扩散模型：对厚度L的均匀光热层，调制频率f处相位φ(f)=−L√(πf/α)，α为有效热扩散系数。
+\item 同一薄光吸收样品的幅值模型A(f)=K\_abs F\_abs exp[−L√(πf/α)]/√f，频率依赖的1/√f因子不可在幅值比中忽略。
+\item 光学吸收由Beer–Lambert关系F\_abs=1−10\textasciicircum{}(−εcd)给出，ε=1000 L/(mol·cm)、光程d=0.01000 cm、浓度c未知。
+\item 采用f₁=100.0 Hz和f₂=400.0 Hz，光热层厚L=10.00 μm，热扩散项a(f)=L√(πf/α)为无量纲。
+\item 给定α=1e-7 m²/s，算得a₁=0.560499121640、a₂=1.12099824328，两相位分别−a₁、−a₂弧度。
+\item 题设浓度c=0.01 mol/L时吸收分数F\_abs=0.205671765276；吸收为正且小于1。
+\item 频率100 Hz及400 Hz的声电转换校准常数K\_abs=0.1 V√Hz，模型幅值分别A₁=1.17422953537 mV、A₂=0.335197930522 mV。
+\item 取幅值比R=A₂/A₁=0.285462016091，则−ln[R√(f₂/f₁)]=L√(π/α)(√f₂−√f₁)=0.560499121640。
+\item 由此唯一反推出α=πL²(√f₂−√f₁)²/\{ln[R√(f₂/f₁)]\}²=1.00000000000e-7 m²/s，要求R√(f₂/f₁)在(0,1)。
+\item 利用A₁已知α和校准K\_abs，反推F\_abs=A₁√f₁ exp(a₁)/K\_abs=0.205671765276。
+\item Beer–Lambert逆函数c=−ln(1−F\_abs)/(ln10 εd)=0.0100000000000 mol/L，与原信号来源参数一致。
+\item 相位差φ₂−φ₁=−(a₂−a₁)与幅度反演α独立核对；频率趋高时热波穿透受抑制。真实光声池的声学共振、温度边界、非均匀吸收和调制功率不稳定会使简化模型失效。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+thermal\_attenuation100 = 0.560499122 dimensionless；thermal\_attenuation400 = 1.12099824 dimensionless；phase100\_rad = -0.560499122 rad；phase400\_rad = -1.12099824 rad；optical\_absorbed\_fraction = 0.205671765 fraction；signal100\_mV = 1.17422954 mV；signal400\_mV = 0.335197931 mV；amplitude\_ratio400\_100 = 0.285462016 ratio；log\_amplitude\_attenuation\_difference = 0.560499122 dimensionless；reconstructed\_diffusivity\_m2\_s = 1e-07 m2/s；reconstructed\_optical\_fraction = 0.205671765 fraction；reconstructed\_concentration\_M = 0.01 mol/L；unattenuated\_signal100\_mV = 2.05671765 mV；corrected\_ratio\_exp\_attenuation = 0.570924032 ratio\par
+\noindent\textbf{模型前提：}
+相位差φ₂−φ₁=−(a₂−a₁)与幅度反演α独立核对；频率趋高时热波穿透受抑制。真实光声池的声学共振、温度边界、非均匀吸收和调制功率不稳定会使简化模型失效。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -11552,6 +11602,31 @@ correct\_activation\_probability = 0.8 fraction；wrong\_activation\_probability
 remaining\_reagent\_ratio = 0.275909581 dimensionless；click\_bonds\_formed\_M = 0.013094785 mol/L；unreacted\_azide\_sites\_M = 0.00690521497 mol/L；free\_alkyne\_M = 0.00190521497 mol/L；site\_conversion\_fraction = 0.654739252 fraction；unlabelled\_molecules\_fraction = 0.119204984 fraction；single\_clicked\_fraction = 0.452111528 fraction；double\_clicked\_fraction = 0.428683488 fraction；unlabelled\_molecules\_M = 0.00119204984 mol/L；single\_clicked\_molecules\_M = 0.00452111528 mol/L；double\_clicked\_molecules\_M = 0.00428683488 mol/L；number\_average\_mass\_g\_mol = 430.94785 g/mol；weight\_average\_mass\_g\_mol = 441.438946 g/mol；dispersity = 1.02434424 dimensionless；alkyne\_atoms\_used\_M = 0.013094785 mol/L；molecule\_total\_M = 0.01 mol/L；reaction\_speed\_at\_1s\_M\_s = 0.00263118378 mol/(L s)\par
 \noindent\textbf{模型前提：}
 质量作用微分方程的右端在0≤x≤B₀为非负，故转化单调且不会超过炔的总库存；若两位点不独立、催化剂失活或CuAAC不是单一步骤二级过程，二项式与积分速率式不再成立。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O143 · 酮烯醇氢氘互变平衡的量子振动配分函数与零点能同位素效应}
+\noindent\textbf{题目}\par
+某假想有机羰基分子发生酮K⇌烯醇E互变异构，两种结构在不含局域振动零点能的电子能级差ΔE₀=E\_E−E\_K=+5.000 kJ/mol。只计一个迁移质子的局域谐振模式：H标记的酮式波数3000 cm⁻¹、烯醇式3500 cm⁻¹；将H整体替换D后两频率均缩放1/√2，假设电子能与其它配分自由能差不变。取T=298.15 K，h=6.62607015×10⁻³⁴ J·s、c=2.99792458×10¹⁰ cm/s、NA=6.02214076×10²³ mol⁻¹、R=8.314462618 J/(mol K)、kB=1.380649×10⁻²³ J/K，q\_vib=e\textasciicircum{}(−hcν̃/(2kBT))/(1−e\textasciicircum{}(−hcν̃/kBT))。计算H/D两种的零点能差、完整振动平衡常数K\_E/K、烯醇分数、自由能差、同位素分馏比KD/KH，并在各总浓度1.000 mmol/L下求烯醇浓度，检验概率、原子和同位素数守恒与实验边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 把假想有机羰基酮式K与烯醇式E看作可逆一分子互变异构，忽略构象/转动差异，设不含振动零点能的电子能差E\_E−E\_K=+5.000 kJ/mol。
+\item 将迁移氢的局域谐振模分别简化为酮式3000 cm⁻¹、烯醇式3500 cm⁻¹；H→D替代时两模式的波数按1/√2缩放，其他电子能与体积不变。
+\item 单个谐振模配分函数q\_vib=exp[−h c ν̃/(2kBT)]/[1−exp(−h c ν̃/kBT)]，因此每摩尔零点能为½ N\_A h c ν̃。
+\item 同一同位素下K\_enol/keto=exp[−ΔE₀/(RT)] q\_vib(E)/q\_vib(K)；这是含零点能与热激发的平衡比而非仅按电子能隙Boltzmann估算。
+\item 对H模式，烯醇−酮的摩尔零点能差为2.99066414097 kJ/mol，正差使烯醇相对不利。
+\item 对D模式零点能差为2.11471889433 kJ/mol，较H小；这可导致平衡氘同位素效应。
+\item 在T=298.15 K完整计算两谐振配分函数，得到K\_H=0.0398195185769、K\_D=0.0566946974919，两者均正。
+\item 同位素平衡分馏因子K\_D/K\_H=1.42379163581，若大于1说明本题假设下D的烯醇相对丰度高。
+\item 酮/烯醇总分子数守恒，每种同位素烯醇分数f\_E=K/(1+K)，计算H=0.0382946442777、D=0.0536528645658。
+\item 化学势差ΔG°\_E−K=−RT lnK，分别得到H=7.99066530568、D=7.11479158341 kJ/mol。
+\item 若分别有H或D纯同位素样品各1.000 mmol/L，烯醇浓度分别0.0000382946442777、0.0000536528645658 mol/L，酮与烯醇物种浓度和均为1.000 mmol/L。
+\item 该近似只考虑一个迁移H/D振动模式；真实酮烯醇互变可能有其它振动、溶剂氢键、隧穿、同位素交换及配位影响，不能将预测同位素效应直接当实验数值。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+H\_ZPE\_enol\_minus\_keto\_kJ\_mol = 2.99066414 kJ/mol；D\_ZPE\_enol\_minus\_keto\_kJ\_mol = 2.11471889 kJ/mol；H\_enol\_keto\_equilibrium\_constant = 0.0398195186 ratio；D\_enol\_keto\_equilibrium\_constant = 0.0566946975 ratio；isotope\_fractionation\_ratio\_KD\_KH = 1.42379164 ratio；H\_enol\_fraction = 0.0382946443 fraction；D\_enol\_fraction = 0.0536528646 fraction；H\_equilibrium\_Gibbs\_kJ\_mol = 7.99066531 kJ/mol；D\_equilibrium\_Gibbs\_kJ\_mol = 7.11479158 kJ/mol；Gibbs\_H\_minus\_D\_kJ\_mol = 0.875873722 kJ/mol；H\_enol\_concentration\_if\_total\_1mM = 3.82946443e-05 mol/L；D\_enol\_concentration\_if\_total\_1mM = 5.36528646e-05 mol/L；H\_keto\_fraction = 0.961705356 fraction；D\_keto\_fraction = 0.946347135 fraction；log\_fractionation\_factor = 0.353323479 dimensionless\par
+\noindent\textbf{模型前提：}
+该近似只考虑一个迁移H/D振动模式；真实酮烯醇互变可能有其它振动、溶剂氢键、隧穿、同位素交换及配位影响，不能将预测同位素效应直接当实验数值。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{物理化学}
@@ -12029,6 +12104,31 @@ free\_energy\_second\_derivative\_J\_m3 = -495791406 J/m3；spinodal\_cutoff\_wa
 lower\_polariton\_eV = 1.95566019 eV；upper\_polariton\_eV = 2.14433981 eV；split\_eV = 0.188679623 eV；reconstructed\_coupling\_eV = 0.08 eV；lower\_photon\_fraction = 0.76499947 fraction；lower\_exciton\_fraction = 0.23500053 fraction；upper\_photon\_fraction = 0.23500053 fraction；lower\_wavelength\_nm = 633.976184 nm；upper\_wavelength\_nm = 578.192867 nm；Rabi\_frequency\_rad\_s = 2.86654809e+14 rad/s；zero\_detuning\_split\_eV = 0.16 eV；coupling\_over\_threshold = 3.2 ratio；cavity\_quality\_factor = 50 dimensionless；heuristic\_strong\_coupling\_threshold\_eV = 0.025 eV；spectral\_hypotenuse\_eV = 0.188679623 eV\par
 \noindent\textbf{模型前提：}
 本题强耦合判据是简化的线宽经验条件；真实光谱需用非Hermitian损耗、无序展宽、激子饱和、振动耦合及角分辨色散检验，不能将理想2×2矩阵直接视为实测极化激元材料参数。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P143 · 理想光电化学二极管最大功率点的非线性唯一根与能流检查}
+\noindent\textbf{题目}\par
+某假想光电化学半导体二极管采用理想Shockley关系I(V)=I\_ph−I₀[exp(qV/(kBT))−1]，理想因子1、无串联或漏电，光生电流I\_ph=10.00 mA，暗饱和电流I₀=1.000 nA，T=298.15 K，kB=1.380649×10⁻²³ J/K、q=1.602176634×10⁻¹⁹ C。入射光功率P\_in=0.1000 W，材料带隙E\_g=1.500 eV。求热电压、短路电流、开路电压、最大输出功率点方程及唯一数值解V\_m、I\_m、P\_m、填充因子FF、效率η；由光生电流得到电子数率，并在一光子最多产生一电子假设下检查最小带隙光子功率。验证dP/dV和两端功率边界及理想光电化学模型适用条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 采用理想单结光电化学半导体二极管模型，光生电流I\_ph=10.00 mA、暗饱和电流I₀=1.000 nA，理想因子n=1、忽略串联与并联电阻。
+\item 电流–电压关系I(V)=I\_ph−I₀[exp(qV/kBT)−1]，令热电压V\_T=kBT/q。
+\item 在T=298.15 K时V\_T=0.0256925791211 V；短路V=0得I\_sc=I\_ph=0.01 A。
+\item 开路I(V\_oc)=0得V\_oc=V\_T ln(1+I\_ph/I₀)=0.414115450363 V，V\_oc必须为正。
+\item 输出电功率P(V)=V I(V)，对V求导得dP/dV=I\_ph+I₀−I₀ exp(V/V\_T)(1+V/V\_T)。
+\item 用无量纲x=V/V\_T，最大功率点满足(1+x)e\textasciicircum{}x=1+I\_ph/I₀；左边对x≥0严格单调增，且在0时小于目标，故(0,V\_oc/V\_T)内唯一根。
+\item 采用数值二分法得到x\_m=13.4475695479，V\_m=x\_m V\_T=0.345502744596 V。
+\item 最大功率点电流I\_m=9.30784298914 mA，功率P\_m=3.21588529902 mW；与I\_sc V\_oc相比较，填充因子FF=0.776567330730。
+\item 给定入射总光功率P\_in=0.1 W，理想电能转换效率η=P\_m/P\_in=0.0321588529902，不能将光生电流直接乘开路电压作为可提取输出。
+\item 短路光生电子流率I\_ph/q=6.24150907446e+16 electrons/s。若每光子至少需带隙E\_g=1.500 eV且每吸收光子至多贡献1电子，则所需最小入射有效光子功率为0.0150000000000 W，小于给定P\_in。
+\item 在V=0及V=V\_oc处输出功率均为零；内部驻点是唯一最大值。用dP/dV和电流回代两种独立式检查导出参数。
+\item 本题为理想Shockley二极管，不含辐射/非辐射复合细节、串联电阻、载流子收集不足、温升或电解液腐蚀；光化学电池的实际效率需考虑化学反应过电位和法拉第选择性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+thermal\_voltage\_V = 0.0256925791 V；open\_circuit\_voltage\_V = 0.41411545 V；maximum\_power\_reduced\_voltage = 13.4475695 dimensionless；maximum\_power\_voltage\_V = 0.345502745 V；maximum\_power\_current\_mA = 9.30784299 mA；maximum\_electric\_power\_mW = 3.2158853 mW；fill\_factor = 0.776567331 fraction；conversion\_efficiency = 0.032158853 fraction；short\_circuit\_electron\_flux\_s = 6.24150907e+16 electrons/s；minimum\_absorbed\_photon\_power\_W = 0.015 W；incident\_to\_minimum\_photon\_power = 6.66666667 ratio；diode\_forward\_current\_prefactor\_A = 0.000692158011 A；maximum\_power\_derivative\_residual\_A = 0 A；open\_circuit\_reduced\_voltage = 16.1180958 dimensionless\par
+\noindent\textbf{模型前提：}
+本题为理想Shockley二极管，不含辐射/非辐射复合细节、串联电阻、载流子收集不足、温升或电解液腐蚀；光化学电池的实际效率需考虑化学反应过电位和法拉第选择性。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
