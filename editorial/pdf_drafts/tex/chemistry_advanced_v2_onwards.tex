@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (694题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至13辑 (728题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -15285,6 +15285,867 @@ Langmuir–Hinshelwood双反应物竞争吸附的最大表面反应速率。气�
 optimal\_A\_pressure\_bar = 1 bar；low\_theta\_A = 0.166666667 fraction；low\_theta\_B = 0.416666667 fraction；low\_theta\_vac = 0.416666667 fraction；low\_rate\_mol\_m2\_s = 0.00138888889 mol/(m2s)；optimal\_theta\_A = 0.5 fraction；optimal\_theta\_B = 0.25 fraction；optimal\_theta\_vac = 0.25 fraction；optimal\_rate\_mol\_m2\_s = 0.0025 mol/(m2s)；rate\_improvement = 1.8 ratio；coverages\_sum = 1 ratio；stationary\_derivative\_factor = 0 ratio\par
 \noindent\textbf{模型前提：}
 最优点对A分压的一阶导数为0；三种位点分率和必须为1，B被过量A排挤使速率最终下降。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\clearpage
+\section*{第13辑 · 题目及解答}
+\addcontentsline{toc}{section}{第13辑}
+\subsection*{无机化学}
+\addcontentsline{toc}{subsection}{第13辑 / 无机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I176 · 八面体d4高低自旋配位场能量与统计占比}
+\noindent\textbf{题目}\par
+八面体d4高低自旋配位场能量与统计占比。六配位d4金属离子在晶体场分裂Δo=25000 cm⁻¹、额外电子配对能P=20000 cm⁻¹的八面体环境中，可形成高自旋t2g³eg¹或低自旋t2g⁴eg⁰。分别取高自旋S=2、低自旋S=1，自旋统计简并度5与3。T=298.15 K，1 cm⁻¹=0.01196266 kJ/mol。忽略轨道简并、晶格振动与交换相互作用，只比较配位场及配对能。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：高自旋能EHS=−0.6Δ；低自旋ELS=−1.6Δ+P；低自旋几率pLS=[3e\textasciicircum{}(−ΔE/RT)]/[5+3e\textasciicircum{}(−ΔE/RT)]。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：六配位d4金属离子在晶体场分裂Δo=25000 cm⁻¹、额外电子配对能P=20000 cm⁻¹的八面体环境中，可形成高自旋t2g³eg¹或低自旋t2g⁴eg⁰。分别取高自旋S=2、低自旋S=1，自旋统计简并度5与3。T=298.15 K，1 cm⁻¹=0.01196266 kJ/mol。忽略轨道简并、晶格振动与交换相互作用，只比较配位场及配对能。
+\item 建立核心方程并说明各变量的标准态和物理含义：高自旋能EHS=−0.6Δ；低自旋ELS=−1.6Δ+P；低自旋几率pLS=[3e\textasciicircum{}(−ΔE/RT)]/[5+3e\textasciicircum{}(−ΔE/RT)]。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：HS\_CFSE\_cm\_inv=-15000.0000000 cm\textasciicircum{}-1；LS\_CFSE\_plus\_pair\_cm\_inv=-20000.0000000 cm\textasciicircum{}-1；LS\_minus\_HS\_cm\_inv=-5000.00000000 cm\textasciicircum{}-1。
+\item 第二组由相同理论关系推得的结果：delta\_energy\_kJ\_mol=-59.8133000000 kJ/mol；LS\_fraction=0.999999999945 fraction；HS\_fraction=5.53365131495e-11 fraction。
+\item 其余最终可复算数值及极限、比值：field\_minus\_pair\_cm\_inv=5000.00000000 cm\textasciicircum{}-1；statistical\_ratio=18071250663.1 ratio。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合八面体d4高低自旋配位场能量与统计占比的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+HS\_CFSE\_cm\_inv = -15000 cm\textasciicircum{}-1；LS\_CFSE\_plus\_pair\_cm\_inv = -20000 cm\textasciicircum{}-1；LS\_minus\_HS\_cm\_inv = -5000 cm\textasciicircum{}-1；delta\_energy\_kJ\_mol = -59.8133 kJ/mol；LS\_fraction = 1 fraction；HS\_fraction = 5.53365131e-11 fraction；field\_minus\_pair\_cm\_inv = 5000 cm\textasciicircum{}-1；statistical\_ratio = 1.80712507e+10 ratio\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I177 · 磷酸缓冲体系pH、离子强度与缓冲容量}
+\noindent\textbf{题目}\par
+磷酸缓冲体系pH、离子强度与缓冲容量。NaH₂PO₄和Na₂HPO₄分别为0.06000、0.04000 mol/L，取pKa2=7.210，假定只考虑H₂PO₄⁻/HPO₄²⁻对，全部钠盐完全解离并忽略活度系数、水自解离和其余两级磷酸解离。求pH、离子强度I=Σc\_i z\_i²/2、Na⁺浓度以及近似Van Slyke缓冲容量及电荷差值。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：pH=pKa+log10([base]/[acid])；I=([acid]+4[base]+[Na+])/2；β=2.303C acid·base/C²。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：NaH₂PO₄和Na₂HPO₄分别为0.06000、0.04000 mol/L，取pKa2=7.210，假定只考虑H₂PO₄⁻/HPO₄²⁻对，全部钠盐完全解离并忽略活度系数、水自解离和其余两级磷酸解离。求pH、离子强度I=Σc\_i z\_i²/2、Na⁺浓度以及近似Van Slyke缓冲容量及电荷差值。
+\item 建立核心方程并说明各变量的标准态和物理含义：pH=pKa+log10([base]/[acid])；I=([acid]+4[base]+[Na+])/2；β=2.303C acid·base/C²。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：buffer\_pH=7.03390874094 pH；ionic\_strength\_M=0.180000000000 mol/L；sodium\_concentration\_M=0.140000000000 mol/L。
+\item 第二组由相同理论关系推得的结果：buffer\_capacity\_M\_per\_pH=0.0552720000000 mol/L/pH；base\_acid\_ratio=0.666666666667 ratio；total\_phosphate\_M=0.100000000000 mol/L。
+\item 其余最终可复算数值及极限、比值：charge\_residual\_M=0.00000000000 mol/L；independent\_capacity\_M\_per\_pH=0.0552720000000 mol/L/pH。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合磷酸缓冲体系pH、离子强度与缓冲容量的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+buffer\_pH = 7.03390874 pH；ionic\_strength\_M = 0.18 mol/L；sodium\_concentration\_M = 0.14 mol/L；buffer\_capacity\_M\_per\_pH = 0.055272 mol/L/pH；base\_acid\_ratio = 0.666666667 ratio；total\_phosphate\_M = 0.1 mol/L；charge\_residual\_M = 0 mol/L；independent\_capacity\_M\_per\_pH = 0.055272 mol/L/pH\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I178 · Ni(II)两级氨配位累积常数与配体库存}
+\noindent\textbf{题目}\par
+Ni(II)两级氨配位累积常数与配体库存。在固定自由氨浓度0.1000 mol/L下，Ni²⁺仅形成Ni(NH3)²⁺和Ni(NH3)₂²⁺，累积形成常数分别为β1=100.0 L/mol和β2=2000.0 L²/mol，Ni总浓度0.005000 mol/L。假设额外自由氨由外部储液池保持恒定，忽略所有其它物种。计算三种Ni浓度、平均配位数、总已配位氨及其Ni质量平衡。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：α=1+β1L+β2L²，[NiL\_n]=Ctotalβn Lⁿ/α，平均配位数n̄=([NiL]+2[NiL2])/Ctotal。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：在固定自由氨浓度0.1000 mol/L下，Ni²⁺仅形成Ni(NH3)²⁺和Ni(NH3)₂²⁺，累积形成常数分别为β1=100.0 L/mol和β2=2000.0 L²/mol，Ni总浓度0.005000 mol/L。假设额外自由氨由外部储液池保持恒定，忽略所有其它物种。计算三种Ni浓度、平均配位数、总已配位氨及其Ni质量平衡。
+\item 建立核心方程并说明各变量的标准态和物理含义：α=1+β1L+β2L²，[NiL\_n]=Ctotalβn Lⁿ/α，平均配位数n̄=([NiL]+2[NiL2])/Ctotal。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：complexation\_partition=31.0000000000 ratio；free\_Ni\_M=0.000161290322581 mol/L；monoammine\_Ni\_M=0.00161290322581 mol/L。
+\item 第二组由相同理论关系推得的结果：diammine\_Ni\_M=0.00322580645161 mol/L；mean\_ligation=1.61290322581 ratio；complexed\_fraction=0.967741935484 fraction。
+\item 其余最终可复算数值及极限、比值：bound\_ammonia\_M=0.00806451612903 mol/L；Ni\_inventory\_M=0.00500000000000 mol/L。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合Ni(II)两级氨配位累积常数与配体库存的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+complexation\_partition = 31 ratio；free\_Ni\_M = 0.000161290323 mol/L；monoammine\_Ni\_M = 0.00161290323 mol/L；diammine\_Ni\_M = 0.00322580645 mol/L；mean\_ligation = 1.61290323 ratio；complexed\_fraction = 0.967741935 fraction；bound\_ammonia\_M = 0.00806451613 mol/L；Ni\_inventory\_M = 0.005 mol/L\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I179 · Fe(OH)3固相溶度积导致自由Fe3+的pH立方律}
+\noindent\textbf{题目}\par
+Fe(OH)3固相溶度积导致自由Fe3+的pH立方律。298.15 K的假想理想溶液中存在固相Fe(OH)3，溶度积Ksp=1.000×10⁻³⁸，以1 mol/L浓度标准态表示。分别由外部pH缓冲维持pH 2.500和3.500，pKw=14.000，忽略Fe水解与氢氧配位及非理想活度，固相始终存在。计算两pH下OH⁻及自由Fe³⁺的饱和浓度、提高一个pH单位后自由Fe³⁺的变化倍数并回代Ksp。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：Ksp=[Fe3+][OH−]\textasciicircum{}3，OH−=10\textasciicircum{}(pH−14)，所以自由Fe3+∝10\textasciicircum{}(−3pH)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：298.15 K的假想理想溶液中存在固相Fe(OH)3，溶度积Ksp=1.000×10⁻³⁸，以1 mol/L浓度标准态表示。分别由外部pH缓冲维持pH 2.500和3.500，pKw=14.000，忽略Fe水解与氢氧配位及非理想活度，固相始终存在。计算两pH下OH⁻及自由Fe³⁺的饱和浓度、提高一个pH单位后自由Fe³⁺的变化倍数并回代Ksp。
+\item 建立核心方程并说明各变量的标准态和物理含义：Ksp=[Fe3+][OH−]\textasciicircum{}3，OH−=10\textasciicircum{}(pH−14)，所以自由Fe3+∝10\textasciicircum{}(−3pH)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：OH\_low\_pH\_M=3.16227766017e-12 mol/L；OH\_high\_pH\_M=3.16227766017e-11 mol/L；Fe3\_low\_pH\_M=0.000316227766017 mol/L。
+\item 第二组由相同理论关系推得的结果：Fe3\_high\_pH\_M=3.16227766017e-7 mol/L；Fe3\_drop\_ratio=1000.00000000 ratio；log10\_Fe\_drop=3.00000000000 log10。
+\item 其余最终可复算数值及极限、比值：Ksp\_recheck\_low=1.00000000000e-38 dimensionless；Ksp\_recheck\_high=1.00000000000e-38 dimensionless。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合Fe(OH)3固相溶度积导致自由Fe3+的pH立方律的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+OH\_low\_pH\_M = 3.16227766e-12 mol/L；OH\_high\_pH\_M = 3.16227766e-11 mol/L；Fe3\_low\_pH\_M = 0.000316227766 mol/L；Fe3\_high\_pH\_M = 3.16227766e-07 mol/L；Fe3\_drop\_ratio = 1000 ratio；log10\_Fe\_drop = 3 log10；Ksp\_recheck\_low = 1e-38 dimensionless；Ksp\_recheck\_high = 1e-38 dimensionless\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I180 · 金属PdHx间隙氢Sieverts吸收与质量分数}
+\noindent\textbf{题目}\par
+金属PdHx间隙氢Sieverts吸收与质量分数。Pd金属每Pd位可对应1个等效间隙氢位置，氢占据分数θ满足θ/(1−θ)=K√(pH2/p°)。K=2.000，p°=1.000 bar，对比氢压0.2500和4.000 bar。Pd、H摩尔质量分别106.42、1.008 g/mol。忽略两相区、氢间相互作用、晶格体积变化及解离动力学限制；计算PdHθ、单位Pd金属吸氢量与氢质量分数。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：θ=z/(1+z)，z=K√(p/p°)，wH=θMH/(MPd+θMH)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：Pd金属每Pd位可对应1个等效间隙氢位置，氢占据分数θ满足θ/(1−θ)=K√(pH2/p°)。K=2.000，p°=1.000 bar，对比氢压0.2500和4.000 bar。Pd、H摩尔质量分别106.42、1.008 g/mol。忽略两相区、氢间相互作用、晶格体积变化及解离动力学限制；计算PdHθ、单位Pd金属吸氢量与氢质量分数。
+\item 建立核心方程并说明各变量的标准态和物理含义：θ=z/(1+z)，z=K√(p/p°)，wH=θMH/(MPd+θMH)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：theta\_low=0.500000000000 fraction；theta\_high=0.800000000000 fraction；H\_mass\_fraction\_low=0.00471362837155 fraction。
+\item 第二组由相同理论关系推得的结果：H\_mass\_fraction\_high=0.00752053598741 fraction；H\_uptake\_g\_per\_gPd\_low=0.00473595188874 g/g；H\_uptake\_g\_per\_gPd\_high=0.00757752302199 g/g。
+\item 其余最终可复算数值及极限、比值：occupancy\_increase\_ratio=1.60000000000 ratio；mass\_fraction\_increase\_ratio=1.59548767841 ratio。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合金属PdHx间隙氢Sieverts吸收与质量分数的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+theta\_low = 0.5 fraction；theta\_high = 0.8 fraction；H\_mass\_fraction\_low = 0.00471362837 fraction；H\_mass\_fraction\_high = 0.00752053599 fraction；H\_uptake\_g\_per\_gPd\_low = 0.00473595189 g/g；H\_uptake\_g\_per\_gPd\_high = 0.00757752302 g/g；occupancy\_increase\_ratio = 1.6 ratio；mass\_fraction\_increase\_ratio = 1.59548768 ratio\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I181 · Fe3+/Fe2+和I2/I-构成电池的非标准反应电位}
+\noindent\textbf{题目}\par
+Fe3+/Fe2+和I2/I-构成电池的非标准反应电位。298.15 K给出Fe³⁺/Fe²⁺标准还原电位0.7700 V、I₂/2I⁻标准还原电位0.5400 V，净反应2Fe³⁺+2I⁻→2Fe²⁺+I₂。初始理想浓度Fe³⁺=0.05000、Fe²⁺=0.01000、I⁻=0.1000、I₂=0.02000 mol/L，标准态浓度1 mol/L。忽略I3−络合及电极极化。计算初始反应商、电池Nernst电位、净反应自由能及限量反应进度。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：Q=([Fe2]/[Fe3])²[I2]/[I−]²；E=(0.770−0.540)−RTlnQ/(2F)，ΔrG=−2FE。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：298.15 K给出Fe³⁺/Fe²⁺标准还原电位0.7700 V、I₂/2I⁻标准还原电位0.5400 V，净反应2Fe³⁺+2I⁻→2Fe²⁺+I₂。初始理想浓度Fe³⁺=0.05000、Fe²⁺=0.01000、I⁻=0.1000、I₂=0.02000 mol/L，标准态浓度1 mol/L。忽略I3−络合及电极极化。计算初始反应商、电池Nernst电位、净反应自由能及限量反应进度。
+\item 建立核心方程并说明各变量的标准态和物理含义：Q=([Fe2]/[Fe3])²[I2]/[I−]²；E=(0.770−0.540)−RTlnQ/(2F)，ΔrG=−2FE。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：reaction\_quotient=0.0800000000000 ratio；cell\_voltage\_V=0.262446241517 V；Nernst\_shift\_V=0.0324462415167 V。
+\item 第二组由相同理论关系推得的结果：reaction\_Gibbs\_kJ\_mol=-50.6444255528 kJ/mol；limiting\_extent\_M=0.0250000000000 mol/L；electron\_equiv\_M=0.0500000000000 mol/L。
+\item 其余最终可复算数值及极限、比值：max\_charge\_C\_per\_L=4824.26660600 C/L；natural\_log\_quotient=-2.52572864431 ratio。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合Fe3+/Fe2+和I2/I-构成电池的非标准反应电位的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+reaction\_quotient = 0.08 ratio；cell\_voltage\_V = 0.262446242 V；Nernst\_shift\_V = 0.0324462415 V；reaction\_Gibbs\_kJ\_mol = -50.6444256 kJ/mol；limiting\_extent\_M = 0.025 mol/L；electron\_equiv\_M = 0.05 mol/L；max\_charge\_C\_per\_L = 4824.26661 C/L；natural\_log\_quotient = -2.52572864 ratio\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I182 · 14N双等价核EPR五线超精细谱与共振场}
+\noindent\textbf{题目}\par
+14N双等价核EPR五线超精细谱与共振场。一个电子自旋S=1/2络合物具有两个等价核自旋I=1的14N，忽略二阶超精细项，X波段微波频率ν=9.500 GHz，g=2.0030，h=6.62607015×10⁻³⁴ J·s、μB=9.2740100783×10⁻²⁴ J/T，核超精细相邻谱线间隔a=1.600 mT。两个I=1的核mI和取−2到2，谱线强度分别为1:2:3:2:1。求中心共振场、最外谱线磁场、谱宽、中心线归一化强度与微波能量。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：B0=hν/(gμB)；最外线B0±2a；五条线的强度总和9。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：一个电子自旋S=1/2络合物具有两个等价核自旋I=1的14N，忽略二阶超精细项，X波段微波频率ν=9.500 GHz，g=2.0030，h=6.62607015×10⁻³⁴ J·s、μB=9.2740100783×10⁻²⁴ J/T，核超精细相邻谱线间隔a=1.600 mT。两个I=1的核mI和取−2到2，谱线强度分别为1:2:3:2:1。求中心共振场、最外谱线磁场、谱宽、中心线归一化强度与微波能量。
+\item 建立核心方程并说明各变量的标准态和物理含义：B0=hν/(gμB)；最外线B0±2a；五条线的强度总和9。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：central\_field\_T=0.338868438867 T；low\_field\_T=0.335668438867 T；high\_field\_T=0.342068438867 T。
+\item 第二组由相同理论关系推得的结果：hyperfine\_width\_T=0.00640000000000 T；central\_line\_fraction=0.333333333333 fraction；photon\_energy\_J=6.29476664250e-24 J。
+\item 其余最终可复算数值及极限、比值：number\_lines=5.00000000000 count；intensity\_sum=9.00000000000 ratio。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合14N双等价核EPR五线超精细谱与共振场的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+central\_field\_T = 0.338868439 T；low\_field\_T = 0.335668439 T；high\_field\_T = 0.342068439 T；hyperfine\_width\_T = 0.0064 T；central\_line\_fraction = 0.333333333 fraction；photon\_energy\_J = 6.29476664e-24 J；number\_lines = 5 count；intensity\_sum = 9 ratio\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I183 · Pb-Sn固液共存区杠杆定则与质量体积分数转换}
+\noindent\textbf{题目}\par
+Pb-Sn固液共存区杠杆定则与质量体积分数转换。在某温度的Pb–Sn二元合金固液两相平衡，合金总质量100.0 g、Sn总质量分数0.4000，固相Sn分数0.2000、液相Sn分数0.6000。假定固相密度10.00 g/cm³、液相密度8.000 g/cm³，且总体积是两相体积之和。求两相的质量、体积、液相体积分数、混合密度、两相Sn物料数以及液相相比固相额外潜热70.00 J/g对应的总储能差。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：液相质量比wL=(w0−wS)/(wLcomp−wScomp)，Vtotal=mS/ρS+mL/ρL。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：在某温度的Pb–Sn二元合金固液两相平衡，合金总质量100.0 g、Sn总质量分数0.4000，固相Sn分数0.2000、液相Sn分数0.6000。假定固相密度10.00 g/cm³、液相密度8.000 g/cm³，且总体积是两相体积之和。求两相的质量、体积、液相体积分数、混合密度、两相Sn物料数以及液相相比固相额外潜热70.00 J/g对应的总储能差。
+\item 建立核心方程并说明各变量的标准态和物理含义：液相质量比wL=(w0−wS)/(wLcomp−wScomp)，Vtotal=mS/ρS+mL/ρL。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：liquid\_mass\_g=50.0000000000 g；solid\_mass\_g=50.0000000000 g；solid\_volume\_cm3=5.00000000000 cm3。
+\item 第二组由相同理论关系推得的结果：liquid\_volume\_cm3=6.25000000000 cm3；liquid\_volume\_fraction=0.555555555556 fraction；bulk\_density\_g\_cm3=8.88888888889 g/cm3。
+\item 其余最终可复算数值及极限、比值：Sn\_inventory\_g=40.0000000000 g；extra\_liquid\_latent\_heat\_J=3500.00000000 J。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合Pb-Sn固液共存区杠杆定则与质量体积分数转换的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+liquid\_mass\_g = 50 g；solid\_mass\_g = 50 g；solid\_volume\_cm3 = 5 cm3；liquid\_volume\_cm3 = 6.25 cm3；liquid\_volume\_fraction = 0.555555556 fraction；bulk\_density\_g\_cm3 = 8.88888889 g/cm3；Sn\_inventory\_g = 40 g；extra\_liquid\_latent\_heat\_J = 3500 J\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I184 · MnO4-/Mn2+五电子八质子Pourbaix电位斜率}
+\noindent\textbf{题目}\par
+MnO4-/Mn2+五电子八质子Pourbaix电位斜率。298.15 K反应MnO4⁻+8H⁺+5e⁻⇌Mn²⁺+4H2O，标准还原电位E°=1.510 V，固定[MnO4⁻]=0.001000、[Mn²⁺]=0.01000 mol/L，水活度1，假定溶液pH由外部缓冲分别为1.000和4.000，所有离子活度等于以1 mol/L为标准态的浓度比。计算两个电位及电位-pH斜率、总位移、质子电子计量比和浓度商修正。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：E=E°+(RT/5F)ln\{([MnO4−]/[Mn2+])[H+]⁸\}，dE/dpH=−8RTln10/(5F)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：298.15 K反应MnO4⁻+8H⁺+5e⁻⇌Mn²⁺+4H2O，标准还原电位E°=1.510 V，固定[MnO4⁻]=0.001000、[Mn²⁺]=0.01000 mol/L，水活度1，假定溶液pH由外部缓冲分别为1.000和4.000，所有离子活度等于以1 mol/L为标准态的浓度比。计算两个电位及电位-pH斜率、总位移、质子电子计量比和浓度商修正。
+\item 建立核心方程并说明各变量的标准态和物理含义：E=E°+(RT/5F)ln\{([MnO4−]/[Mn2+])[H+]⁸\}，dE/dpH=−8RTln10/(5F)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：electrode\_pH1\_V=1.40351317057 V；electrode\_pH4\_V=1.11954829207 V；slope\_V\_per\_pH=-0.0946549594972 V/pH。
+\item 第二组由相同理论关系推得的结果：voltage\_shift\_V=-0.283964878491 V；proton\_electron\_ratio=1.60000000000 ratio；thermal\_prefactor\_V=0.00513851582430 V。
+\item 其余最终可复算数值及极限、比值：concentration\_correction\_V=-0.0118318699371 V；pH\_difference\_prediction\_V=-0.283964878491 V。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合MnO4-/Mn2+五电子八质子Pourbaix电位斜率的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+electrode\_pH1\_V = 1.40351317 V；electrode\_pH4\_V = 1.11954829 V；slope\_V\_per\_pH = -0.0946549595 V/pH；voltage\_shift\_V = -0.283964878 V；proton\_electron\_ratio = 1.6 ratio；thermal\_prefactor\_V = 0.00513851582 V；concentration\_correction\_V = -0.0118318699 V；pH\_difference\_prediction\_V = -0.283964878 V\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{分析化学}
+\addcontentsline{toc}{subsection}{第13辑 / 分析化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-A176 · 含稀释的标准加入荧光线性化反演}
+\noindent\textbf{题目}\par
+含稀释的标准加入荧光线性化反演。某分析物荧光强度F=k c，取原样V0=10.00 mL，分别向平行样加入Cs=0.02000 mol/L标准液Vs=0、1.000、2.000 mL，各自最终体积V0+Vs。理想实验测得F0=3.000、F1=4.54545454545、F2=5.83333333333仪器单位，忽略空白基体变化。求稀释校正后F(V0+Vs)对Vs的线性斜率和截距、反演原样浓度以及仪器响应系数k，独立用第三点预测，避免把未校正信号当作等体积直接回归。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：Y(Vs)=F(Vs)(V0+Vs)=k(CxV0+CsVs)，k=slope/Cs，Cx=Cs intercept/(slope V0)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：某分析物荧光强度F=k c，取原样V0=10.00 mL，分别向平行样加入Cs=0.02000 mol/L标准液Vs=0、1.000、2.000 mL，各自最终体积V0+Vs。理想实验测得F0=3.000、F1=4.54545454545、F2=5.83333333333仪器单位，忽略空白基体变化。求稀释校正后F(V0+Vs)对Vs的线性斜率和截距、反演原样浓度以及仪器响应系数k，独立用第三点预测，避免把未校正信号当作等体积直接回归。
+\item 建立核心方程并说明各变量的标准态和物理含义：Y(Vs)=F(Vs)(V0+Vs)=k(CxV0+CsVs)，k=slope/Cs，Cx=Cs intercept/(slope V0)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：signal0=3.00000000000 intensity；signal1=4.54545454545 intensity；signal2=5.83333333333 intensity。
+\item 第二组由相同理论关系推得的结果：dilution\_corrected\_slope=20.0000000000 intensity\_mL\textasciicircum{}-1；corrected\_intercept=30.0000000000 intensity\_mL；inferred\_original\_M=0.00300000000000 mol/L。
+\item 其余最终可复算数值及极限、比值：inferred\_response\_coefficient=1000.00000000 intensity/M；spiked\_final\_M=0.00583333333333 mol/L。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合含稀释的标准加入荧光线性化反演的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+signal0 = 3 intensity；signal1 = 4.54545455 intensity；signal2 = 5.83333333 intensity；dilution\_corrected\_slope = 20 intensity\_mL\textasciicircum{}-1；corrected\_intercept = 30 intensity\_mL；inferred\_original\_M = 0.003 mol/L；inferred\_response\_coefficient = 1000 intensity/M；spiked\_final\_M = 0.00583333333 mol/L\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-A177 · 强酸NaOH滴定Gran外推求未知酸浓度}
+\noindent\textbf{题目}\par
+强酸NaOH滴定Gran外推求未知酸浓度。强酸HCl原样体积50.00 mL，使用0.1000 mol/L NaOH标准液，已在滴入1.000 mL和3.000 mL两处记录精确模拟pH，分别为−log10(0.4000/51.00)和−log10(0.2000/53.00)。忽略活度系数、体积收缩及水自解离，滴定尚未到当量点。令Gran函数G(Vb)=10\textasciicircum{}(−pH)(V0+Vb)，用其线性外推反演HCl浓度和理论当量点体积，验证两点的酸物料计量。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：G=CaV0−CbVb，斜率=−Cb，截距=CaV0，Ve=截距/Cb。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：强酸HCl原样体积50.00 mL，使用0.1000 mol/L NaOH标准液，已在滴入1.000 mL和3.000 mL两处记录精确模拟pH，分别为−log10(0.4000/51.00)和−log10(0.2000/53.00)。忽略活度系数、体积收缩及水自解离，滴定尚未到当量点。令Gran函数G(Vb)=10\textasciicircum{}(−pH)(V0+Vb)，用其线性外推反演HCl浓度和理论当量点体积，验证两点的酸物料计量。
+\item 建立核心方程并说明各变量的标准态和物理含义：G=CaV0−CbVb，斜率=−Cb，截距=CaV0，Ve=截距/Cb。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：pH\_v1=2.10551018477 pH；pH\_v3=2.42324587394 pH；Gran\_value1=0.400000000000 M\_mL。
+\item 第二组由相同理论关系推得的结果：Gran\_value3=0.200000000000 M\_mL；Gran\_slope=-0.100000000000 M；Gran\_intercept=0.500000000000 M\_mL。
+\item 其余最终可复算数值及极限、比值：equivalence\_volume\_mL=5.00000000000 mL；acid\_concentration\_M=0.0100000000000 mol/L。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合强酸NaOH滴定Gran外推求未知酸浓度的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+pH\_v1 = 2.10551018 pH；pH\_v3 = 2.42324587 pH；Gran\_value1 = 0.4 M\_mL；Gran\_value3 = 0.2 M\_mL；Gran\_slope = -0.1 M；Gran\_intercept = 0.5 M\_mL；equivalence\_volume\_mL = 5 mL；acid\_concentration\_M = 0.01 mol/L\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-A178 · Nikolsky–Eisenman电极的二价干扰校正}
+\noindent\textbf{题目}\par
+Nikolsky–Eisenman电极的二价干扰校正。一价离子A⁺选择电极在298.15 K满足E=E0+Slog10(aA+K\_AB aB\textasciicircum{}(1/2))。E0=0.2000 V、S=0.05916 V/decade、选择性常数K\_AB=0.1000，二价干扰B²⁺浓度0.0004000 mol/L，主离子A⁺浓度0.001000 mol/L。理想活度均用1 mol/L标准态无量纲浓度表示。利用测得电势反演有效总活度和扣除干扰后的A浓度，并求忽略干扰的相对偏差及有效活度中干扰比例。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：a\_eff=aA+K\_AB sqrt(aB)，E=E0+S log10(a\_eff)，aA=10\textasciicircum{}((E−E0)/S)−K\_AB sqrt(aB)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：一价离子A⁺选择电极在298.15 K满足E=E0+Slog10(aA+K\_AB aB\textasciicircum{}(1/2))。E0=0.2000 V、S=0.05916 V/decade、选择性常数K\_AB=0.1000，二价干扰B²⁺浓度0.0004000 mol/L，主离子A⁺浓度0.001000 mol/L。理想活度均用1 mol/L标准态无量纲浓度表示。利用测得电势反演有效总活度和扣除干扰后的A浓度，并求忽略干扰的相对偏差及有效活度中干扰比例。
+\item 建立核心方程并说明各变量的标准态和物理含义：a\_eff=aA+K\_AB sqrt(aB)，E=E0+S log10(a\_eff)，aA=10\textasciicircum{}((E−E0)/S)−K\_AB sqrt(aB)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：effective\_activity=0.00300000000000 ratio；electrode\_voltage\_V=0.0507464934292 V；naive\_A\_M=0.00300000000000 mol/L。
+\item 第二组由相同理论关系推得的结果：corrected\_A\_M=0.00100000000000 mol/L；relative\_bias=2.00000000000 fraction；interference\_fraction=0.666666666667 fraction。
+\item 其余最终可复算数值及极限、比值：sqrt\_B\_activity=0.0200000000000 ratio；log10\_effective\_activity=-2.52287874528 log10。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合Nikolsky–Eisenman电极的二价干扰校正的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+effective\_activity = 0.003 ratio；electrode\_voltage\_V = 0.0507464934 V；naive\_A\_M = 0.003 mol/L；corrected\_A\_M = 0.001 mol/L；relative\_bias = 2 fraction；interference\_fraction = 0.666666667 fraction；sqrt\_B\_activity = 0.02 ratio；log10\_effective\_activity = -2.52287875 log10\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-A179 · DLS散射自相关与Stokes–Einstein颗粒水合半径}
+\noindent\textbf{题目}\par
+DLS散射自相关与Stokes–Einstein颗粒水合半径。在298.15 K测量球形纳米粒子动态光散射，633.0 nm真空激光、样品折射率1.333，散射角90.00°、黏度η=0.0008900 Pa s、相干因子β=0.8000。延迟τ=100.0 μs处测得g2由水合半径50.00 nm的理想单分散模型生成。取kB=1.380649×10⁻²³ J/K，忽略多重散射及相互作用。由q=(4πn/λ)sin(θ/2)、g2=1+β exp(−2Dq²τ)反演D和水合半径并核对自相关弛豫率。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：D=−ln[(g2−1)/β]/(2q²τ)，Stokes–Einstein半径r=kBT/(6πηD)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：在298.15 K测量球形纳米粒子动态光散射，633.0 nm真空激光、样品折射率1.333，散射角90.00°、黏度η=0.0008900 Pa s、相干因子β=0.8000。延迟τ=100.0 μs处测得g2由水合半径50.00 nm的理想单分散模型生成。取kB=1.380649×10⁻²³ J/K，忽略多重散射及相互作用。由q=(4πn/λ)sin(θ/2)、g2=1+β exp(−2Dq²τ)反演D和水合半径并核对自相关弛豫率。
+\item 建立核心方程并说明各变量的标准态和物理含义：D=−ln[(g2−1)/β]/(2q²τ)，Stokes–Einstein半径r=kBT/(6πηD)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：scattering\_q\_m\_inv=18712047.2561 m\textasciicircum{}-1；diffusion\_D\_m2\_s=4.90746219089e-12 m2/s；measured\_g2=1.56733574199 ratio。
+\item 第二组由相同理论关系推得的结果：relaxation\_rate\_s\_inv=1718.30230816 s\textasciicircum{}-1；relaxation\_time\_s=0.000581969770541 s；hydrodynamic\_radius\_nm=50.0000000000 nm。
+\item 其余最终可复算数值及极限、比值：g2\_minus\_one=0.567335741992 ratio；normalized\_field\_correlation=0.709169677490 ratio。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合DLS散射自相关与Stokes–Einstein颗粒水合半径的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+scattering\_q\_m\_inv = 18712047.3 m\textasciicircum{}-1；diffusion\_D\_m2\_s = 4.90746219e-12 m2/s；measured\_g2 = 1.56733574 ratio；relaxation\_rate\_s\_inv = 1718.30231 s\textasciicircum{}-1；relaxation\_time\_s = 0.000581969771 s；hydrodynamic\_radius\_nm = 50 nm；g2\_minus\_one = 0.567335742 ratio；normalized\_field\_correlation = 0.709169677 ratio\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-A180 · LC-MS内标回收率不同条件下的真实样品质量}
+\noindent\textbf{题目}\par
+LC-MS内标回收率不同条件下的真实样品质量。目标分析物和内标在LC–MS中峰面积分别为75000、225000计数。向样品预加内标100.0 ng，目标与内标响应常数分别2000、2500 counts/ng，萃取回收率rA=0.7500、rIS=0.9000；离子化响应线性且未出现基体共同抑制。以I=k r m为方程推导目标原样质量、忽略不同回收率时的结果偏差、萃取后的两物质质量与两种响应因子修正结果。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：mA=(IA/IIS)(kIS/kA)(rIS/rA)mIS。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：目标分析物和内标在LC–MS中峰面积分别为75000、225000计数。向样品预加内标100.0 ng，目标与内标响应常数分别2000、2500 counts/ng，萃取回收率rA=0.7500、rIS=0.9000；离子化响应线性且未出现基体共同抑制。以I=k r m为方程推导目标原样质量、忽略不同回收率时的结果偏差、萃取后的两物质质量与两种响应因子修正结果。
+\item 建立核心方程并说明各变量的标准态和物理含义：mA=(IA/IIS)(kIS/kA)(rIS/rA)mIS。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：area\_ratio=0.333333333333 ratio；recovered\_original\_analyte\_ng=50.0000000000 ng；naive\_analyte\_ng=41.6666666667 ng。
+\item 第二组由相同理论关系推得的结果：naive\_relative\_bias=-0.166666666667 fraction；extracted\_analyte\_ng=37.5000000000 ng；extracted\_internal\_standard\_ng=90.0000000000 ng。
+\item 其余最终可复算数值及极限、比值：uncorrected\_area\_calibrated\_analyte\_ng=37.5000000000 ng；area\_calibrated\_internal\_ng=90.0000000000 ng。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合LC-MS内标回收率不同条件下的真实样品质量的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+area\_ratio = 0.333333333 ratio；recovered\_original\_analyte\_ng = 50 ng；naive\_analyte\_ng = 41.6666667 ng；naive\_relative\_bias = -0.166666667 fraction；extracted\_analyte\_ng = 37.5 ng；extracted\_internal\_standard\_ng = 90 ng；uncorrected\_area\_calibrated\_analyte\_ng = 37.5 ng；area\_calibrated\_internal\_ng = 90 ng\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-A181 · Br₂双天然同位素M+2峰强二项分布}
+\noindent\textbf{题目}\par
+Br₂双天然同位素M+2峰强二项分布。天然Br原子含79Br、81Br，丰度p79=0.5069、p81=0.4931。假设Br2分子中两个原子独立随机取样，质量峰分别为M、M+2、M+4，仪器不产生质量歧视和同位素交换副反应。用二项分布给出三个同位素组合峰概率、相对峰强、M+2/M及M+2/(M+4)峰比、每Br2分子81Br原子期望数及全概率归一检查，注意混合异构组合有两种排列。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：P(M)=p79²；P(M+2)=2p79p81；P(M+4)=p81²。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：天然Br原子含79Br、81Br，丰度p79=0.5069、p81=0.4931。假设Br2分子中两个原子独立随机取样，质量峰分别为M、M+2、M+4，仪器不产生质量歧视和同位素交换副反应。用二项分布给出三个同位素组合峰概率、相对峰强、M+2/M及M+2/(M+4)峰比、每Br2分子81Br原子期望数及全概率归一检查，注意混合异构组合有两种排列。
+\item 建立核心方程并说明各变量的标准态和物理含义：P(M)=p79²；P(M+2)=2p79p81；P(M+4)=p81²。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：M\_probability=0.256947610000 fraction；M2\_probability=0.499904780000 fraction；M4\_probability=0.243147610000 fraction。
+\item 第二组由相同理论关系推得的结果：M2\_to\_M\_ratio=1.94555139081 ratio；M4\_to\_M\_ratio=0.946292553568 ratio；mean\_Br81\_atoms=0.986200000000 atoms。
+\item 其余最终可复算数值及极限、比值：total\_probability=1.00000000000 fraction；M2\_to\_M4\_ratio=2.05597241939 ratio。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合Br₂双天然同位素M+2峰强二项分布的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+M\_probability = 0.25694761 fraction；M2\_probability = 0.49990478 fraction；M4\_probability = 0.24314761 fraction；M2\_to\_M\_ratio = 1.94555139 ratio；M4\_to\_M\_ratio = 0.946292554 ratio；mean\_Br81\_atoms = 0.9862 atoms；total\_probability = 1 fraction；M2\_to\_M4\_ratio = 2.05597242 ratio\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-A182 · Stern–Volmer荧光动态与静态淬灭的寿命分离}
+\noindent\textbf{题目}\par
+Stern–Volmer荧光动态与静态淬灭的寿命分离。某荧光探针在298.15 K纯动态淬灭常数KD=50.00 L/mol、独立静态基态络合淬灭常数KS=20.00 L/mol；未淬灭寿命τ0=4.000 ns。淬灭剂浓度分别为Q=0.01000与0.02000 mol/L，两机制彼此独立且无内滤效应，模型I0/I=(1+KDQ)(1+KSQ)，寿命τ0/τ=1+KDQ。求两浓度的强度比、寿命与单独静态因子，说明仅由强度比无法区分静态/动态机制，寿命给出独立信息。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：I0/I=(1+KDQ)(1+KSQ)；τ(Q)=τ0/(1+KDQ)，静态因子KSQ+1。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：某荧光探针在298.15 K纯动态淬灭常数KD=50.00 L/mol、独立静态基态络合淬灭常数KS=20.00 L/mol；未淬灭寿命τ0=4.000 ns。淬灭剂浓度分别为Q=0.01000与0.02000 mol/L，两机制彼此独立且无内滤效应，模型I0/I=(1+KDQ)(1+KSQ)，寿命τ0/τ=1+KDQ。求两浓度的强度比、寿命与单独静态因子，说明仅由强度比无法区分静态/动态机制，寿命给出独立信息。
+\item 建立核心方程并说明各变量的标准态和物理含义：I0/I=(1+KDQ)(1+KSQ)；τ(Q)=τ0/(1+KDQ)，静态因子KSQ+1。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：intensity\_ratio\_low=1.80000000000 ratio；intensity\_ratio\_high=2.80000000000 ratio；lifetime\_low\_ns=2.66666666667 ns。
+\item 第二组由相同理论关系推得的结果：lifetime\_high\_ns=2.00000000000 ns；dynamic\_factor\_low=1.50000000000 ratio；dynamic\_factor\_high=2.00000000000 ratio。
+\item 其余最终可复算数值及极限、比值：static\_factor\_low=1.20000000000 ratio；static\_factor\_high=1.40000000000 ratio。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合Stern–Volmer荧光动态与静态淬灭的寿命分离的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+intensity\_ratio\_low = 1.8 ratio；intensity\_ratio\_high = 2.8 ratio；lifetime\_low\_ns = 2.66666667 ns；lifetime\_high\_ns = 2 ns；dynamic\_factor\_low = 1.5 ratio；dynamic\_factor\_high = 2 ratio；static\_factor\_low = 1.2 ratio；static\_factor\_high = 1.4 ratio\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-A183 · 银离子电生库仑滴定水样氯离子与电流效率}
+\noindent\textbf{题目}\par
+银离子电生库仑滴定水样氯离子与电流效率。在298.15 K用银阳极电生Ag⁺并与水样Cl⁻定量形成AgCl(s)，反应Ag→Ag⁺+e⁻是单电子过程。恒电流I=0.02500 A，反应时间100.0 s，银离子电流效率η=0.9800，水样体积25.00 mL，F=96485.33212 C/mol、氯原子摩尔质量35.45 g/mol。不存在其他卤素、Ag络合或剩余电流。求总电量、有效Ag生成量、Cl物质的量、原样Cl浓度、质量浓度、AgCl计量比及若忽略电流效率所得相对系统偏差。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：n(Cl−)=ηIt/F，c=n/V，mCl=nMCl，忽略效率的结果偏高1/η−1。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：在298.15 K用银阳极电生Ag⁺并与水样Cl⁻定量形成AgCl(s)，反应Ag→Ag⁺+e⁻是单电子过程。恒电流I=0.02500 A，反应时间100.0 s，银离子电流效率η=0.9800，水样体积25.00 mL，F=96485.33212 C/mol、氯原子摩尔质量35.45 g/mol。不存在其他卤素、Ag络合或剩余电流。求总电量、有效Ag生成量、Cl物质的量、原样Cl浓度、质量浓度、AgCl计量比及若忽略电流效率所得相对系统偏差。
+\item 建立核心方程并说明各变量的标准态和物理含义：n(Cl−)=ηIt/F，c=n/V，mCl=nMCl，忽略效率的结果偏高1/η−1。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：total\_charge\_C=2.50000000000 C；useful\_charge\_C=2.45000000000 C；chloride\_moles=0.0000253924606587 mol。
+\item 第二组由相同理论关系推得的结果：chloride\_M=0.00101569842635 mol/L；chloride\_mg\_L=36.0065092141 mg/L；chloride\_mass\_mg=0.900162730351 mg。
+\item 其余最终可复算数值及极限、比值：efficiency\_naive\_relative\_bias=0.0204081632653 fraction；current\_efficiency=0.980000000000 fraction。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合银离子电生库仑滴定水样氯离子与电流效率的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+total\_charge\_C = 2.5 C；useful\_charge\_C = 2.45 C；chloride\_moles = 2.53924607e-05 mol；chloride\_M = 0.00101569843 mol/L；chloride\_mg\_L = 36.0065092 mg/L；chloride\_mass\_mg = 0.90016273 mg；efficiency\_naive\_relative\_bias = 0.0204081633 fraction；current\_efficiency = 0.98 fraction\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-A184 · 四波长三组分紫外吸光度与共同基线反演}
+\noindent\textbf{题目}\par
+四波长三组分紫外吸光度与共同基线反演。四个波长下某三个分析物A、B、C的Beer–Lambert响应矩阵单位L/mol，前三组如下：Aλ1=100cA+200cB+100cC+b，Aλ2=200cA+100cB+100cC+b，Aλ3=100cA+100cB+300cC+b，Aλ4=100cA+100cB+100cC+b。校正光程已包含在系数中，四个实测吸光度依次为0.6000、0.5000、0.5000、0.4000，四波长共享未知常数基线b。反演三浓度及b，回代全部吸光度与基线的正值，并解释为何第四波长用于消去共同背景。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：cB=(A1−A4)/100，cA=(A2−A4)/100，cC=(A3−A4)/200，b=A4−100(cA+cB+cC)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：四个波长下某三个分析物A、B、C的Beer–Lambert响应矩阵单位L/mol，前三组如下：Aλ1=100cA+200cB+100cC+b，Aλ2=200cA+100cB+100cC+b，Aλ3=100cA+100cB+300cC+b，Aλ4=100cA+100cB+100cC+b。校正光程已包含在系数中，四个实测吸光度依次为0.6000、0.5000、0.5000、0.4000，四波长共享未知常数基线b。反演三浓度及b，回代全部吸光度与基线的正值，并解释为何第四波长用于消去共同背景。
+\item 建立核心方程并说明各变量的标准态和物理含义：cB=(A1−A4)/100，cA=(A2−A4)/100，cC=(A3−A4)/200，b=A4−100(cA+cB+cC)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：component\_A\_M=0.00100000000000 mol/L；component\_B\_M=0.00200000000000 mol/L；component\_C\_M=0.000500000000000 mol/L。
+\item 第二组由相同理论关系推得的结果：baseline\_absorbance=0.0500000000000 absorbance；reconstructed\_A1=0.600000000000 absorbance；reconstructed\_A2=0.500000000000 absorbance。
+\item 其余最终可复算数值及极限、比值：reconstructed\_A3=0.500000000000 absorbance；reconstructed\_A4=0.400000000000 absorbance。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合四波长三组分紫外吸光度与共同基线反演的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+component\_A\_M = 0.001 mol/L；component\_B\_M = 0.002 mol/L；component\_C\_M = 0.0005 mol/L；baseline\_absorbance = 0.05 absorbance；reconstructed\_A1 = 0.6 absorbance；reconstructed\_A2 = 0.5 absorbance；reconstructed\_A3 = 0.5 absorbance；reconstructed\_A4 = 0.4 absorbance\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{有机化学}
+\addcontentsline{toc}{subsection}{第13辑 / 有机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O173 · SN2 Walden构型翻转的对映体分数与光学纯度}
+\noindent\textbf{题目}\par
+SN2 Walden构型翻转的对映体分数与光学纯度。某手性卤代烷初始R/S分数0.8500/0.1500，在理想SN2取代中两对映体以完全相同的转化率0.6000发生单步Walden构型反转，产物不消旋，R原料变为S产物、S原料变为R产物。产物纯S的比旋光度在指定条件下为+80.00°，R为−80.00°，并假设旋光度与对映体分数线性。求产物S/R摩尔量（以初始1 mol计）、产物ee、比旋光度、未反应原料的组成及总物料守恒。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：nSprod=0.85×0.60；nRprod=0.15×0.60；ee=(nS−nR)/(nS+nR)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：某手性卤代烷初始R/S分数0.8500/0.1500，在理想SN2取代中两对映体以完全相同的转化率0.6000发生单步Walden构型反转，产物不消旋，R原料变为S产物、S原料变为R产物。产物纯S的比旋光度在指定条件下为+80.00°，R为−80.00°，并假设旋光度与对映体分数线性。求产物S/R摩尔量（以初始1 mol计）、产物ee、比旋光度、未反应原料的组成及总物料守恒。
+\item 建立核心方程并说明各变量的标准态和物理含义：nSprod=0.85×0.60；nRprod=0.15×0.60；ee=(nS−nR)/(nS+nR)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：product\_S\_mol=0.510000000000 mol；product\_R\_mol=0.0900000000000 mol；product\_total\_mol=0.600000000000 mol。
+\item 第二组由相同理论关系推得的结果：product\_ee\_S=0.700000000000 fraction；optical\_rotation\_deg=56.0000000000 degree；unreacted\_R\_mol=0.340000000000 mol。
+\item 其余最终可复算数值及极限、比值：unreacted\_S\_mol=0.0600000000000 mol；total\_skeleton\_mol=1.00000000000 mol。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合SN2 Walden构型翻转的对映体分数与光学纯度的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+product\_S\_mol = 0.51 mol；product\_R\_mol = 0.09 mol；product\_total\_mol = 0.6 mol；product\_ee\_S = 0.7 fraction；optical\_rotation\_deg = 56 degree；unreacted\_R\_mol = 0.34 mol；unreacted\_S\_mol = 0.06 mol；total\_skeleton\_mol = 1 mol\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O174 · 一级取代反应氢氘动力学同位素效应和表观活化能差}
+\noindent\textbf{题目}\par
+一级取代反应氢氘动力学同位素效应和表观活化能差。某假想C–H与C–D位点各自参与两组互不干扰的一级取代反应，298.15 K分别测得kH=0.1200 s⁻¹、kD=0.03000 s⁻¹。取相同前因子Arrhenius模型k=A exp(−Ea/RT)、R=8.314462618 J/(mol K)。求kH/kD、各组反应进行10.00 s的转化率与剩余比例、两组半衰期、同位素效应对应的Ea,D−Ea,H和两种剩余反应物的比值；不可把转化率直接作为k比。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：X=1−exp(−kt)，t1/2=ln2/k，Ea,D−Ea,H=RTln(kH/kD)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：某假想C–H与C–D位点各自参与两组互不干扰的一级取代反应，298.15 K分别测得kH=0.1200 s⁻¹、kD=0.03000 s⁻¹。取相同前因子Arrhenius模型k=A exp(−Ea/RT)、R=8.314462618 J/(mol K)。求kH/kD、各组反应进行10.00 s的转化率与剩余比例、两组半衰期、同位素效应对应的Ea,D−Ea,H和两种剩余反应物的比值；不可把转化率直接作为k比。
+\item 建立核心方程并说明各变量的标准态和物理含义：X=1−exp(−kt)，t1/2=ln2/k，Ea,D−Ea,H=RTln(kH/kD)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：kinetic\_isotope\_ratio=4.00000000000 ratio；H\_conversion\_t10=0.698805788088 fraction；D\_conversion\_t10=0.259181779318 fraction。
+\item 第二组由相同理论关系推得的结果：H\_half\_life\_s=5.77622650467 s；D\_half\_life\_s=23.1049060187 s；activation\_energy\_difference\_kJ\_mol=3.43656415153 kJ/mol。
+\item 其余最终可复算数值及极限、比值：H\_remaining\_fraction=0.301194211912 fraction；D\_remaining\_fraction=0.740818220682 fraction。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合一级取代反应氢氘动力学同位素效应和表观活化能差的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+kinetic\_isotope\_ratio = 4 ratio；H\_conversion\_t10 = 0.698805788 fraction；D\_conversion\_t10 = 0.259181779 fraction；H\_half\_life\_s = 5.7762265 s；D\_half\_life\_s = 23.104906 s；activation\_energy\_difference\_kJ\_mol = 3.43656415 kJ/mol；H\_remaining\_fraction = 0.301194212 fraction；D\_remaining\_fraction = 0.740818221 fraction\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O175 · E/Z立体异构热平衡的温度效应与Van’t Hoff关系}
+\noindent\textbf{题目}\par
+E/Z立体异构热平衡的温度效应与Van’t Hoff关系。假想烯烃E⇌Z热异构化标准反应焓ΔH°=−8.000 kJ/mol、熵差ΔS°=−20.00 J/(mol K)，温度区间298.15至350.0 K内二者不随温度变，且理想活动度以相同浓度标准态计。无光照、催化副反应和其它构象。通过ΔG°=ΔH°−TΔS°、K=exp(−ΔG°/RT)，计算两温度平衡Z/E比、Z分数、Gibbs自由能及升温引起的分数变化，并回代Van’t Hoff方向。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：K\_ZE(T)=exp[−(ΔH−TΔS)/(RT)]，xZ=K/(1+K)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：假想烯烃E⇌Z热异构化标准反应焓ΔH°=−8.000 kJ/mol、熵差ΔS°=−20.00 J/(mol K)，温度区间298.15至350.0 K内二者不随温度变，且理想活动度以相同浓度标准态计。无光照、催化副反应和其它构象。通过ΔG°=ΔH°−TΔS°、K=exp(−ΔG°/RT)，计算两温度平衡Z/E比、Z分数、Gibbs自由能及升温引起的分数变化，并回代Van’t Hoff方向。
+\item 建立核心方程并说明各变量的标准态和物理含义：K\_ZE(T)=exp[−(ΔH−TΔS)/(RT)]，xZ=K/(1+K)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：K\_298=2.27440059456 ratio；K\_350=1.41006429146 ratio；Z\_fraction\_298=0.694600592957 fraction。
+\item 第二组由相同理论关系推得的结果：Z\_fraction\_350=0.585073309644 fraction；deltaG\_298\_kJ\_mol=-2.03700000000 kJ/mol；deltaG\_350\_kJ\_mol=-1.00000000000 kJ/mol。
+\item 其余最终可复算数值及极限、比值：Z\_fraction\_shift=-0.109527283313 fraction；log\_K350\_over\_K298=-0.478081242640 ratio。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合E/Z立体异构热平衡的温度效应与Van’t Hoff关系的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+K\_298 = 2.27440059 ratio；K\_350 = 1.41006429 ratio；Z\_fraction\_298 = 0.694600593 fraction；Z\_fraction\_350 = 0.58507331 fraction；deltaG\_298\_kJ\_mol = -2.037 kJ/mol；deltaG\_350\_kJ\_mol = -1 kJ/mol；Z\_fraction\_shift = -0.109527283 fraction；log\_K350\_over\_K298 = -0.478081243 ratio\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O176 · Claisen重排的Arrhenius外推与温变转化时间}
+\noindent\textbf{题目}\par
+Claisen重排的Arrhenius外推与温变转化时间。某理想烯丙基芳基醚Claisen重排被视为不可逆单分子一级反应，在T0=298.15 K速率k0=0.001000 s⁻¹，活化能Ea=90.00 kJ/mol，近似频率因子在298.15–330.0 K不变。R=8.314462618 J/(mol K)，求330 K速率、半衰期、达到90\%转化所需时间、初始300 s转化率以及两温度速率比和能量指数，不考虑重排产物的二次反应。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：k(T)=k0 exp[Ea/R(1/T0−1/T)]；t90=ln10/k；X(t)=1−exp(−kt)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：某理想烯丙基芳基醚Claisen重排被视为不可逆单分子一级反应，在T0=298.15 K速率k0=0.001000 s⁻¹，活化能Ea=90.00 kJ/mol，近似频率因子在298.15–330.0 K不变。R=8.314462618 J/(mol K)，求330 K速率、半衰期、达到90\%转化所需时间、初始300 s转化率以及两温度速率比和能量指数，不考虑重排产物的二次反应。
+\item 建立核心方程并说明各变量的标准态和物理含义：k(T)=k0 exp[Ea/R(1/T0−1/T)]；t90=ln10/k；X(t)=1−exp(−kt)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：Arrhenius\_exponent=3.50403961537 ratio；k330\_s=0.0332494962087 s\textasciicircum{}-1；rate\_ratio=33.2494962087 ratio。
+\item 第二组由相同理论关系推得的结果：k330\_half\_life\_s=20.8468476096 s；time\_90percent\_s=69.2517287643 s；conversion330\_t300=0.999953443730 fraction。
+\item 其余最终可复算数值及极限、比值：remaining330\_t300=0.0000465562703178 fraction；conversion298\_t300=0.259181779318 fraction。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合Claisen重排的Arrhenius外推与温变转化时间的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Arrhenius\_exponent = 3.50403962 ratio；k330\_s = 0.0332494962 s\textasciicircum{}-1；rate\_ratio = 33.2494962 ratio；k330\_half\_life\_s = 20.8468476 s；time\_90percent\_s = 69.2517288 s；conversion330\_t300 = 0.999953444 fraction；remaining330\_t300 = 4.65562703e-05 fraction；conversion298\_t300 = 0.259181779 fraction\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O177 · 两个Michael受体的竞争结合平衡与产物分支}
+\noindent\textbf{题目}\par
+两个Michael受体的竞争结合平衡与产物分支。一个假想软亲核供体D可与两种过量Michael受体A、B分别形成稳定一比一加成产物DA、DB，条件形成常数K\_A=10.00 L/mol、K\_B=30.00 L/mol，固定受体自由浓度[A]=0.1000、[B]=0.05000 mol/L。初始供体总浓度Dtotal=0.02000 mol/L，忽略逆向后的转化、副反应和受体耗尽。求未反应D、两加成产物浓度与占比、DB/DA产物比及供体守恒，比较单纯受体浓度比与产物比的不同。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：[DA]=KA[A][D]、[DB]=KB[B][D]；[D]=Dtotal/(1+KA[A]+KB[B])。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：一个假想软亲核供体D可与两种过量Michael受体A、B分别形成稳定一比一加成产物DA、DB，条件形成常数K\_A=10.00 L/mol、K\_B=30.00 L/mol，固定受体自由浓度[A]=0.1000、[B]=0.05000 mol/L。初始供体总浓度Dtotal=0.02000 mol/L，忽略逆向后的转化、副反应和受体耗尽。求未反应D、两加成产物浓度与占比、DB/DA产物比及供体守恒，比较单纯受体浓度比与产物比的不同。
+\item 建立核心方程并说明各变量的标准态和物理含义：[DA]=KA[A][D]、[DB]=KB[B][D]；[D]=Dtotal/(1+KA[A]+KB[B])。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：free\_donor\_M=0.00571428571429 mol/L；DA\_product\_M=0.00571428571429 mol/L；DB\_product\_M=0.00857142857143 mol/L。
+\item 第二组由相同理论关系推得的结果：overall\_conversion\_fraction=0.714285714286 fraction；DB\_over\_DA\_ratio=1.50000000000 ratio；donor\_inventory\_M=0.0200000000000 mol/L。
+\item 其余最终可复算数值及极限、比值：DA\_fraction=0.285714285714 fraction；DB\_fraction=0.428571428571 fraction。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合两个Michael受体的竞争结合平衡与产物分支的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+free\_donor\_M = 0.00571428571 mol/L；DA\_product\_M = 0.00571428571 mol/L；DB\_product\_M = 0.00857142857 mol/L；overall\_conversion\_fraction = 0.714285714 fraction；DB\_over\_DA\_ratio = 1.5 ratio；donor\_inventory\_M = 0.02 mol/L；DA\_fraction = 0.285714286 fraction；DB\_fraction = 0.428571429 fraction\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O178 · 自由基聚合氧阻聚诱导期与捕获概率}
+\noindent\textbf{题目}\par
+自由基聚合氧阻聚诱导期与捕获概率。某自由基聚合体系单位体积自由基产生速率Ri=2.000×10⁻⁷ mol/(L s)，初始溶解氧[O2]0=1.000×10⁻⁴ mol/L，假定每消耗1个氧分子捕获1个自由基且氧未耗尽前无其它氧源。氧捕获速率常数kO=1.000×10⁹ L/(mol s)，传播速率常数kp=1.000×10³ L/(mol s)，单体恒浓度1.000 mol/L。求初始自由基被氧捕获几率、竞争传播几率、理想零级氧耗尽诱导时间、在600 s时超出诱导期的可聚合时间及累计进入传播通道的后诱导自由基量，指出诱导期近似的条件。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：P\_O2=kO[O2]/(kO[O2]+kp[M])；t\_ind=[O2]0/Ri，t\_poly=max(0,t−t\_ind)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：某自由基聚合体系单位体积自由基产生速率Ri=2.000×10⁻⁷ mol/(L s)，初始溶解氧[O2]0=1.000×10⁻⁴ mol/L，假定每消耗1个氧分子捕获1个自由基且氧未耗尽前无其它氧源。氧捕获速率常数kO=1.000×10⁹ L/(mol s)，传播速率常数kp=1.000×10³ L/(mol s)，单体恒浓度1.000 mol/L。求初始自由基被氧捕获几率、竞争传播几率、理想零级氧耗尽诱导时间、在600 s时超出诱导期的可聚合时间及累计进入传播通道的后诱导自由基量，指出诱导期近似的条件。
+\item 建立核心方程并说明各变量的标准态和物理含义：P\_O2=kO[O2]/(kO[O2]+kp[M])；t\_ind=[O2]0/Ri，t\_poly=max(0,t−t\_ind)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：oxygen\_capture\_pseudorate\_s=100000.000000 s\textasciicircum{}-1；propagation\_pseudorate\_s=1000.00000000 s\textasciicircum{}-1；oxygen\_capture\_probability=0.990099009901 fraction。
+\item 第二组由相同理论关系推得的结果：propagation\_probability=0.00990099009901 fraction；induction\_time\_s=500.000000000 s；post\_induction\_time\_s=100.000000000 s。
+\item 其余最终可复算数值及极限、比值：post\_induction\_radical\_mol\_L=0.0000200000000000 mol/L；induction\_time\_fraction=0.833333333333 fraction。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合自由基聚合氧阻聚诱导期与捕获概率的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+oxygen\_capture\_pseudorate\_s = 100000 s\textasciicircum{}-1；propagation\_pseudorate\_s = 1000 s\textasciicircum{}-1；oxygen\_capture\_probability = 0.99009901 fraction；propagation\_probability = 0.0099009901 fraction；induction\_time\_s = 500 s；post\_induction\_time\_s = 100 s；post\_induction\_radical\_mol\_L = 2e-05 mol/L；induction\_time\_fraction = 0.833333333 fraction\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O179 · A3/B2逐步缩聚的Flory–Stockmayer凝胶临界转化率}
+\noindent\textbf{题目}\par
+A3/B2逐步缩聚的Flory–Stockmayer凝胶临界转化率。将三官能单体A3与二官能单体B2进行理想随机缩聚，初始A/B官能团摩尔量恰好相等，假定全部反应均形成A–B键、无环化、无官能团选择性与分子内交联。分别考察官能团转化率p=0.6000和0.8000，且pA=pB=p。Flory–Stockmayer的树枝状近似凝胶条件(fA−1)(fB−1)pA pB=1。求临界p、两个状态的分支放大因子、未反应官能团分数与是否跨过凝胶阈值；必须区别化学凝胶判断与数均聚合度。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：branching=(3−1)(2−1)p²=2p²；pc=1/√2；branching>1进入无限簇理论区。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：将三官能单体A3与二官能单体B2进行理想随机缩聚，初始A/B官能团摩尔量恰好相等，假定全部反应均形成A–B键、无环化、无官能团选择性与分子内交联。分别考察官能团转化率p=0.6000和0.8000，且pA=pB=p。Flory–Stockmayer的树枝状近似凝胶条件(fA−1)(fB−1)pA pB=1。求临界p、两个状态的分支放大因子、未反应官能团分数与是否跨过凝胶阈值；必须区别化学凝胶判断与数均聚合度。
+\item 建立核心方程并说明各变量的标准态和物理含义：branching=(3−1)(2−1)p²=2p²；pc=1/√2；branching>1进入无限簇理论区。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：gel\_point\_p=0.707106781187 fraction；branching\_at\_p0p6=0.720000000000 ratio；branching\_at\_p0p8=1.28000000000 ratio。
+\item 第二组由相同理论关系推得的结果：unreacted\_fraction\_p0p6=0.400000000000 fraction；unreacted\_fraction\_p0p8=0.200000000000 fraction；distance\_below\_threshold=-0.280000000000 ratio。
+\item 其余最终可复算数值及极限、比值：distance\_above\_threshold=0.280000000000 ratio；branching\_ratio=1.77777777778 ratio。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合A3/B2逐步缩聚的Flory–Stockmayer凝胶临界转化率的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+gel\_point\_p = 0.707106781 fraction；branching\_at\_p0p6 = 0.72 ratio；branching\_at\_p0p8 = 1.28 ratio；unreacted\_fraction\_p0p6 = 0.4 fraction；unreacted\_fraction\_p0p8 = 0.2 fraction；distance\_below\_threshold = -0.28 ratio；distance\_above\_threshold = 0.28 ratio；branching\_ratio = 1.77777778 ratio\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-O180 · Kagan型手性配体二聚的非线性对映选择性放大}
+\noindent\textbf{题目}\par
+Kagan型手性配体二聚的非线性对映选择性放大。假想手性配体L有R、S两种对映体，原配体eeL=0.2000（R过量）。两配体按独立随机抽样形成催化二聚体RR、SS、RS，异构体概率分别为xR²、xS²、2xRxS。假设RR和SS二聚体具有相同绝对活性且分别只生成R与S产物，异手性RS完全无活性，所有配体均进入此二聚统计。求三种二聚体概率、活性催化剂分数、所得产品ee及放大因子、产品R/S分数；解释这是规定的非线性模型而非普遍的手性催化定律。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：xR=(1+eeL)/2，P\_RR=xR²，P\_SS=xS²，P\_RS=2xRxS，eeP=(P\_RR−P\_SS)/(P\_RR+P\_SS)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：假想手性配体L有R、S两种对映体，原配体eeL=0.2000（R过量）。两配体按独立随机抽样形成催化二聚体RR、SS、RS，异构体概率分别为xR²、xS²、2xRxS。假设RR和SS二聚体具有相同绝对活性且分别只生成R与S产物，异手性RS完全无活性，所有配体均进入此二聚统计。求三种二聚体概率、活性催化剂分数、所得产品ee及放大因子、产品R/S分数；解释这是规定的非线性模型而非普遍的手性催化定律。
+\item 建立核心方程并说明各变量的标准态和物理含义：xR=(1+eeL)/2，P\_RR=xR²，P\_SS=xS²，P\_RS=2xRxS，eeP=(P\_RR−P\_SS)/(P\_RR+P\_SS)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：RR\_fraction=0.360000000000 fraction；SS\_fraction=0.160000000000 fraction；RS\_fraction=0.480000000000 fraction。
+\item 第二组由相同理论关系推得的结果：active\_fraction=0.520000000000 fraction；product\_ee=0.384615384615 fraction；ee\_amplification=1.92307692308 ratio。
+\item 其余最终可复算数值及极限、比值：product\_R\_fraction=0.692307692308 fraction；product\_S\_fraction=0.307692307692 fraction。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合Kagan型手性配体二聚的非线性对映选择性放大的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+RR\_fraction = 0.36 fraction；SS\_fraction = 0.16 fraction；RS\_fraction = 0.48 fraction；active\_fraction = 0.52 fraction；product\_ee = 0.384615385 fraction；ee\_amplification = 1.92307692 ratio；product\_R\_fraction = 0.692307692 fraction；product\_S\_fraction = 0.307692308 fraction\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{物理化学}
+\addcontentsline{toc}{subsection}{第13辑 / 物理化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P173 · Clausius–Clapeyron两温度蒸气压与汽化焓反演}
+\noindent\textbf{题目}\par
+Clausius–Clapeyron两温度蒸气压与汽化焓反演。在理想单组分液汽共存条件下，某有机溶剂于T1=300.0 K的饱和蒸气压p1=20.00 kPa，假设汽化焓ΔHvap=40.00 kJ/mol在300–330 K保持常数，蒸气理想且液相摩尔体积可忽略。R=8.314462618 J/(mol K)。求330 K饱和蒸气压及压强比，反过来由两温度压力还原汽化焓、各温度对lnp的导数和使蒸气压倍增所需温度。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：ln(p2/p1)=ΔHvap/R(1/T1−1/T2)，dlnp/dT=ΔHvap/(RT²)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：在理想单组分液汽共存条件下，某有机溶剂于T1=300.0 K的饱和蒸气压p1=20.00 kPa，假设汽化焓ΔHvap=40.00 kJ/mol在300–330 K保持常数，蒸气理想且液相摩尔体积可忽略。R=8.314462618 J/(mol K)。求330 K饱和蒸气压及压强比，反过来由两温度压力还原汽化焓、各温度对lnp的导数和使蒸气压倍增所需温度。
+\item 建立核心方程并说明各变量的标准态和物理含义：ln(p2/p1)=ΔHvap/R(1/T1−1/T2)，dlnp/dT=ΔHvap/(RT²)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：vapor\_pressure\_330\_kPa=85.9339520156 kPa；pressure\_ratio=4.29669760078 ratio；log\_pressure\_ratio=1.45784672782 ratio。
+\item 第二组由相同理论关系推得的结果：recovered\_vaporization\_kJ\_mol=40.0000000000 kJ/mol；log\_pressure\_slope\_300\_Kinv=0.0534543800200 K\textasciicircum{}-1；log\_pressure\_slope\_330\_Kinv=0.0441771735702 K\textasciicircum{}-1。
+\item 其余最终可复算数值及极限、比值：doubling\_temperature\_K=313.552883608 K；doubling\_temperature\_rise\_K=13.5528836083 K。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合Clausius–Clapeyron两温度蒸气压与汽化焓反演的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+vapor\_pressure\_330\_kPa = 85.933952 kPa；pressure\_ratio = 4.2966976 ratio；log\_pressure\_ratio = 1.45784673 ratio；recovered\_vaporization\_kJ\_mol = 40 kJ/mol；log\_pressure\_slope\_300\_Kinv = 0.05345438 K\textasciicircum{}-1；log\_pressure\_slope\_330\_Kinv = 0.0441771736 K\textasciicircum{}-1；doubling\_temperature\_K = 313.552884 K；doubling\_temperature\_rise\_K = 13.5528836 K\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P174 · Debye–Hückel极限活度系数对盐热力学活度的影响}
+\noindent\textbf{题目}\par
+Debye–Hückel极限活度系数对盐热力学活度的影响。25°C理想化Debye–Hückel极限定律在水溶液的参数A=0.5090 M\textasciicircum{}-1/2，对一价一价NaCl分别考察形式浓度0.01000、0.1000 mol/L，忽略离子对和其它电解质，离子强度I等于形式浓度。均值离子活度系数log10γ±=−A√I，平均离子活度a±=γ±(c/c°)，c°=1 mol/L。求两个γ、a±、化学势偏差Δμ=2RTlnγ（每mol盐）及高浓度外推限制。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：I=c；log10γ±=−A√I；a±=γ±c/c°；Δμ\_excess=2RTlnγ±。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：25°C理想化Debye–Hückel极限定律在水溶液的参数A=0.5090 M\textasciicircum{}-1/2，对一价一价NaCl分别考察形式浓度0.01000、0.1000 mol/L，忽略离子对和其它电解质，离子强度I等于形式浓度。均值离子活度系数log10γ±=−A√I，平均离子活度a±=γ±(c/c°)，c°=1 mol/L。求两个γ、a±、化学势偏差Δμ=2RTlnγ（每mol盐）及高浓度外推限制。
+\item 建立核心方程并说明各变量的标准态和物理含义：I=c；log10γ±=−A√I；a±=γ±c/c°；Δμ\_excess=2RTlnγ±。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：gamma\_at\_0p01=0.889405887556 ratio；gamma\_at\_0p1=0.690303486853 ratio；mean\_activity\_low=0.00889405887556 ratio。
+\item 第二组由相同理论关系推得的结果：mean\_activity\_high=0.0690303486853 ratio；excess\_mu\_low\_kJ\_mol=-0.581075367347 kJ/mol；excess\_mu\_high\_kJ\_mol=-1.83752165304 kJ/mol。
+\item 其余最终可复算数值及极限、比值：gamma\_ratio=0.776140001446 ratio；ionic\_strength\_ratio=10.0000000000 ratio。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合Debye–Hückel极限活度系数对盐热力学活度的影响的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+gamma\_at\_0p01 = 0.889405888 ratio；gamma\_at\_0p1 = 0.690303487 ratio；mean\_activity\_low = 0.00889405888 ratio；mean\_activity\_high = 0.0690303487 ratio；excess\_mu\_low\_kJ\_mol = -0.581075367 kJ/mol；excess\_mu\_high\_kJ\_mol = -1.83752165 kJ/mol；gamma\_ratio = 0.776140001 ratio；ionic\_strength\_ratio = 10 ratio\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P175 · 量子谐振子振动配分函数与热容的温度激发}
+\noindent\textbf{题目}\par
+量子谐振子振动配分函数与热容的温度激发。一个理想双原子分子的单个非简并振动模视为量子谐振子，特征振动温度θv=1438.8 K（对应约1000 cm⁻¹）。分别在300.0和600.0 K下采用qv=exp(−θv/2T)/(1−exp(−θv/T))，平均量子激发数nbar=1/(exp(θv/T)−1)，Uv=Rθv(nbar+1/2)，Cv=R(θv/T)² exp(θv/T)/(exp(θv/T)−1)²。求两温度的占据、能量、热容和配分函数，注意零点能不贡献定容热容。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：qv=e\textasciicircum{}(−θ/2T)/(1−e\textasciicircum{}(−θ/T))，U=Rθ(1/2+nbar)，Cv=R(θ/T)² e\textasciicircum{}(θ/T)/(e\textasciicircum{}(θ/T)−1)²。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：一个理想双原子分子的单个非简并振动模视为量子谐振子，特征振动温度θv=1438.8 K（对应约1000 cm⁻¹）。分别在300.0和600.0 K下采用qv=exp(−θv/2T)/(1−exp(−θv/T))，平均量子激发数nbar=1/(exp(θv/T)−1)，Uv=Rθv(nbar+1/2)，Cv=R(θv/T)² exp(θv/T)/(exp(θv/T)−1)²。求两温度的占据、能量、热容和配分函数，注意零点能不贡献定容热容。
+\item 建立核心方程并说明各变量的标准态和物理含义：qv=e\textasciicircum{}(−θ/2T)/(1−e\textasciicircum{}(−θ/T))，U=Rθ(1/2+nbar)，Cv=R(θ/T)² e\textasciicircum{}(θ/T)/(e\textasciicircum{}(θ/T)−1)²。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：quantum\_occupancy\_300=0.00833157352191 ratio；occupancy\_600=0.0999884807317 ratio；partition\_300=0.0916569072098 ratio。
+\item 第二组由相同理论关系推得的结果：partition\_600=0.331641639440 ratio；vibrational\_U300\_J\_mol=6081.09376182 J/mol；vibrational\_U600\_J\_mol=7177.57148560 J/mol。
+\item 其余最终可复算数值及极限、比值：Cv300\_J\_molK=1.60665611502 J/molK；Cv600\_J\_molK=5.25860620249 J/molK。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合量子谐振子振动配分函数与热容的温度激发的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+quantum\_occupancy\_300 = 0.00833157352 ratio；occupancy\_600 = 0.0999884807 ratio；partition\_300 = 0.0916569072 ratio；partition\_600 = 0.331641639 ratio；vibrational\_U300\_J\_mol = 6081.09376 J/mol；vibrational\_U600\_J\_mol = 7177.57149 J/mol；Cv300\_J\_molK = 1.60665612 J/molK；Cv600\_J\_molK = 5.2586062 J/molK\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P176 · 蛋白质可逆二聚导致的渗透压与表观颗粒摩尔量}
+\noindent\textbf{题目}\par
+蛋白质可逆二聚导致的渗透压与表观颗粒摩尔量。298.15 K下假想蛋白单体M⇌二聚体D，平衡常数K=1000.0 L/mol，定义[D]=K[M]²。总蛋白以单体单元计的分析浓度Ctotal=[M]+2[D]=0.001000 mol/L，无其它聚集状态，渗透溶液满足理想Van’t Hoff粒子浓度Π=RT([M]+[D])（浓度需换mol/m³）。求自由单体、二聚体、二聚分率、渗透压以及若误把所有单体单元都当独立粒子的高估倍数。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：2KM²+M−Ctotal=0，取正根M=2Ctotal/[1+√(1+8KCtotal)]，D=KM²，Π=RT1000(M+D)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：298.15 K下假想蛋白单体M⇌二聚体D，平衡常数K=1000.0 L/mol，定义[D]=K[M]²。总蛋白以单体单元计的分析浓度Ctotal=[M]+2[D]=0.001000 mol/L，无其它聚集状态，渗透溶液满足理想Van’t Hoff粒子浓度Π=RT([M]+[D])（浓度需换mol/m³）。求自由单体、二聚体、二聚分率、渗透压以及若误把所有单体单元都当独立粒子的高估倍数。
+\item 建立核心方程并说明各变量的标准态和物理含义：2KM²+M−Ctotal=0，取正根M=2Ctotal/[1+√(1+8KCtotal)]，D=KM²，Π=RT1000(M+D)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：monomer\_M=0.000500000000000 mol/L；dimer\_M=0.000250000000000 mol/L；monomer\_units\_in\_dimers\_fraction=0.500000000000 fraction。
+\item 第二组由相同理论关系推得的结果：osmotic\_pressure\_Pa=1859.21777217 Pa；overestimate\_particle\_factor=1.33333333333 ratio；particle\_concentration\_M=0.000750000000000 mol/L。
+\item 其余最终可复算数值及极限、比值：monomer\_unit\_inventory\_M=0.00100000000000 mol/L；dimer\_mass\_action\_M=0.000250000000000 mol/L。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合蛋白质可逆二聚导致的渗透压与表观颗粒摩尔量的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+monomer\_M = 0.0005 mol/L；dimer\_M = 0.00025 mol/L；monomer\_units\_in\_dimers\_fraction = 0.5 fraction；osmotic\_pressure\_Pa = 1859.21777 Pa；overestimate\_particle\_factor = 1.33333333 ratio；particle\_concentration\_M = 0.00075 mol/L；monomer\_unit\_inventory\_M = 0.001 mol/L；dimer\_mass\_action\_M = 0.00025 mol/L\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P177 · Langmuir单组分吸附-解吸动力学的松弛与平衡覆盖度}
+\noindent\textbf{题目}\par
+Langmuir单组分吸附-解吸动力学的松弛与平衡覆盖度。一类均匀表面单组分分子A吸附过程A(g)+*⇌A*，在恒定气体浓度c=0.1000 mol/L和298.15 K下，准一阶吸附系数ka=2.000 L/(mol s)、解吸系数kd=0.05000 s⁻¹。初始表面覆盖度θ(0)=0，表面没有其它吸附物或侧向相互作用。满足dθ/dt=ka c(1−θ)−kdθ，求平衡覆盖度、松弛时间常数、10.00 s时覆盖度、达到平衡覆盖度一半所需时间、平衡吸附/解吸通量与剩余空位分数。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：θeq=ka c/(ka c+kd)，θ(t)=θeq[1−e\textasciicircum{}(−(ka c+kd)t)]。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：一类均匀表面单组分分子A吸附过程A(g)+*⇌A*，在恒定气体浓度c=0.1000 mol/L和298.15 K下，准一阶吸附系数ka=2.000 L/(mol s)、解吸系数kd=0.05000 s⁻¹。初始表面覆盖度θ(0)=0，表面没有其它吸附物或侧向相互作用。满足dθ/dt=ka c(1−θ)−kdθ，求平衡覆盖度、松弛时间常数、10.00 s时覆盖度、达到平衡覆盖度一半所需时间、平衡吸附/解吸通量与剩余空位分数。
+\item 建立核心方程并说明各变量的标准态和物理含义：θeq=ka c/(ka c+kd)，θ(t)=θeq[1−e\textasciicircum{}(−(ka c+kd)t)]。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：relaxation\_rate\_s=0.250000000000 s\textasciicircum{}-1；equilibrium\_coverage=0.800000000000 fraction；relaxation\_time\_s=4.00000000000 s。
+\item 第二组由相同理论关系推得的结果：coverage\_at\_t10=0.734332001101 fraction；half\_relaxation\_s=2.77258872224 s；equilibrium\_adsorption\_flux\_s=0.0400000000000 s\textasciicircum{}-1。
+\item 其余最终可复算数值及极限、比值：equilibrium\_desorption\_flux\_s=0.0400000000000 s\textasciicircum{}-1；equilibrium\_vacancy\_fraction=0.200000000000 fraction。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合Langmuir单组分吸附-解吸动力学的松弛与平衡覆盖度的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+relaxation\_rate\_s = 0.25 s\textasciicircum{}-1；equilibrium\_coverage = 0.8 fraction；relaxation\_time\_s = 4 s；coverage\_at\_t10 = 0.734332001 fraction；half\_relaxation\_s = 2.77258872 s；equilibrium\_adsorption\_flux\_s = 0.04 s\textasciicircum{}-1；equilibrium\_desorption\_flux\_s = 0.04 s\textasciicircum{}-1；equilibrium\_vacancy\_fraction = 0.2 fraction\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P178 · 拉曼反斯托克斯/斯托克斯线强比测温与频率四次方修正}
+\noindent\textbf{题目}\par
+拉曼反斯托克斯/斯托克斯线强比测温与频率四次方修正。理想振动拉曼光谱采用真空532.0 nm激光，某振动模拉曼位移1000.0 cm⁻¹，热平衡温度400.0 K。假设两个分支截面仅由散射光频率四次方和振动玻尔兹曼人口比决定，I\_AS/I\_S=[(ν0+νv)/(ν0−νv)]⁴ exp(−hcνv/(kBT))。取hc/kB=1.438776877 K·cm，激光波数ν0=10⁷/λ\_nm cm⁻¹。求两个光子波数、四次方频率修正因子、反斯托克斯/斯托克斯强度比，以及由该比反演的温度；指出遗漏频率修正导致的温度偏差。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：T=(hcνv/kB)/ln\{[(ν0+νv)/(ν0−νv)]⁴/(IAS/IS)\}。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：理想振动拉曼光谱采用真空532.0 nm激光，某振动模拉曼位移1000.0 cm⁻¹，热平衡温度400.0 K。假设两个分支截面仅由散射光频率四次方和振动玻尔兹曼人口比决定，I\_AS/I\_S=[(ν0+νv)/(ν0−νv)]⁴ exp(−hcνv/(kBT))。取hc/kB=1.438776877 K·cm，激光波数ν0=10⁷/λ\_nm cm⁻¹。求两个光子波数、四次方频率修正因子、反斯托克斯/斯托克斯强度比，以及由该比反演的温度；指出遗漏频率修正导致的温度偏差。
+\item 建立核心方程并说明各变量的标准态和物理含义：T=(hcνv/kB)/ln\{[(ν0+νv)/(ν0−νv)]⁴/(IAS/IS)\}。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：laser\_wavenumber\_cm\_inv=18796.9924812 cm\textasciicircum{}-1；antiStokes\_wavenumber\_cm\_inv=19796.9924812 cm\textasciicircum{}-1；Stokes\_wavenumber\_cm\_inv=17796.9924812 cm\textasciicircum{}-1。
+\item 第二组由相同理论关系推得的结果：fourth\_power\_frequency\_factor=1.53112414349 ratio；antiStokes\_to\_Stokes\_intensity\_ratio=0.0419641333846 ratio；reconstructed\_temperature\_K=400.000000000 K。
+\item 其余最终可复算数值及极限、比值：naive\_temperature\_K=453.738285925 K；naive\_temperature\_bias\_K=53.7382859250 K。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合拉曼反斯托克斯/斯托克斯线强比测温与频率四次方修正的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+laser\_wavenumber\_cm\_inv = 18796.9925 cm\textasciicircum{}-1；antiStokes\_wavenumber\_cm\_inv = 19796.9925 cm\textasciicircum{}-1；Stokes\_wavenumber\_cm\_inv = 17796.9925 cm\textasciicircum{}-1；fourth\_power\_frequency\_factor = 1.53112414 ratio；antiStokes\_to\_Stokes\_intensity\_ratio = 0.0419641334 ratio；reconstructed\_temperature\_K = 400 K；naive\_temperature\_K = 453.738286 K；naive\_temperature\_bias\_K = 53.7382859 K\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P179 · 硬球气体分子运动论的平均自由程与黏度估算}
+\noindent\textbf{题目}\par
+硬球气体分子运动论的平均自由程与黏度估算。298.15 K时一理想N₂气体总压1.000 bar，气体硬球碰撞直径d=0.3700 nm，摩尔质量M=0.02800 kg/mol，kB=1.380649×10⁻²³ J/K、R=8.314462618 J/(mol K)。采用平均自由程λ=kBT/(√2πd²p)、平均速率vbar=√(8RT/πM)、数密度n=p/(kBT)，估算单分子碰撞频率z≈vbar/λ及稀薄气体动力黏度η≈ρ vbar λ/3、ρ=pM/(RT)。忽略内部能量模式、非硬球散射和温度相关碰撞截面，核对理想气体密度及量纲。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：λ=kBT/(√2πd²p)，vbar=√(8RT/(πM))，η≈(1/3)ρvbarλ。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：298.15 K时一理想N₂气体总压1.000 bar，气体硬球碰撞直径d=0.3700 nm，摩尔质量M=0.02800 kg/mol，kB=1.380649×10⁻²³ J/K、R=8.314462618 J/(mol K)。采用平均自由程λ=kBT/(√2πd²p)、平均速率vbar=√(8RT/πM)、数密度n=p/(kBT)，估算单分子碰撞频率z≈vbar/λ及稀薄气体动力黏度η≈ρ vbar λ/3、ρ=pM/(RT)。忽略内部能量模式、非硬球散射和温度相关碰撞截面，核对理想气体密度及量纲。
+\item 建立核心方程并说明各变量的标准态和物理含义：λ=kBT/(√2πd²p)，vbar=√(8RT/(πM))，η≈(1/3)ρvbarλ。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：mean\_free\_path\_m=6.76783524390e-8 m；mean\_free\_path\_nm=67.6783524390 nm；mean\_speed\_m\_s=474.816214049 m/s。
+\item 第二组由相同理论关系推得的结果：gas\_density\_kg\_m3=1.12950727528 kg/m3；number\_density\_m3=2.42930421467e+25 m\textasciicircum{}-3；collision\_frequency\_s=7015776787.37 s\textasciicircum{}-1。
+\item 其余最终可复算数值及极限、比值：viscosity\_Pa\_s=0.0000120988222528 Pa\_s；flight\_time\_s=1.42535891649e-10 s。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合硬球气体分子运动论的平均自由程与黏度估算的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+mean\_free\_path\_m = 6.76783524e-08 m；mean\_free\_path\_nm = 67.6783524 nm；mean\_speed\_m\_s = 474.816214 m/s；gas\_density\_kg\_m3 = 1.12950728 kg/m3；number\_density\_m3 = 2.42930421e+25 m\textasciicircum{}-3；collision\_frequency\_s = 7.01577679e+09 s\textasciicircum{}-1；viscosity\_Pa\_s = 1.20988223e-05 Pa\_s；flight\_time\_s = 1.42535892e-10 s\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-P180 · Butler–Volmer电极电流与正反Tafel斜率的分离}
+\noindent\textbf{题目}\par
+Butler–Volmer电极电流与正反Tafel斜率的分离。在298.15 K假想可逆单电子电极的动力学用Butler–Volmer方程i=i0[exp((1−α)Fη/RT)−exp(−αFη/RT)]，交换电流密度i0=0.001000 A/cm²、对称系数α=0.4500。分别令过电势η=+0.1000、−0.1000 V，忽略浓度极化、双电层电容与欧姆损耗。求两个净电流密度、正负单项反应电流、阳极/阴极Tafel斜率与i(0)零电流；保持指数无量纲并说明低过电势下两个指数不可随意删去。 请使用如下模型，严格推导并求出结果，给出各数值的单位以及适用边界：i=i0(e\textasciicircum{}((1−α)Fη/RT)−e\textasciicircum{}(−αFη/RT))；b\_anodic=2.303RT/[(1−α)F]，b\_cathodic=2.303RT/(αF)。 另外需列明关键物料、能量或概率守恒方程，并辨明把理想结果用于实际化学体系可能遇到的失效机制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别所研究的化学体系、约束和可忽略过程：在298.15 K假想可逆单电子电极的动力学用Butler–Volmer方程i=i0[exp((1−α)Fη/RT)−exp(−αFη/RT)]，交换电流密度i0=0.001000 A/cm²、对称系数α=0.4500。分别令过电势η=+0.1000、−0.1000 V，忽略浓度极化、双电层电容与欧姆损耗。求两个净电流密度、正负单项反应电流、阳极/阴极Tafel斜率与i(0)零电流；保持指数无量纲并说明低过电势下两个指数不可随意删去。
+\item 建立核心方程并说明各变量的标准态和物理含义：i=i0(e\textasciicircum{}((1−α)Fη/RT)−e\textasciicircum{}(−αFη/RT))；b\_anodic=2.303RT/[(1−α)F]，b\_cathodic=2.303RT/(αF)。
+\item 先用题设的计量与单位写出可求解的代数或微分关系；在逆问题中必须选取有物理意义的解，排除负浓度与非归一概率。
+\item 第一组计算结果：net\_current\_positive\_A\_cm2=0.00833183763989 A/cm2；net\_current\_negative\_A\_cm2=-0.00564554417216 A/cm2；forward\_anodic\_current\_positive=0.00850535484800 A/cm2。
+\item 第二组由相同理论关系推得的结果：backward\_cathodic\_current\_positive=0.000173517208114 A/cm2；anodic\_Tafel\_slope\_V\_dec=0.107581835849 V/dec；cathodic\_Tafel\_slope\_V\_dec=0.131488910482 V/dec。
+\item 其余最终可复算数值及极限、比值：zero\_overpotential\_current=0.00000000000 A/cm2；positive\_to\_negative\_current\_ratio=-1.47582542724 ratio。
+\item 按题给物种集合重新做元素、位点、电荷、能量或总概率的守恒检查；对正反应速率核对计量因子，对能量差核对其与Boltzmann指数的无量纲性。
+\item 结合Butler–Volmer电极电流与正反Tafel斜率的分离的物理参数解释数值趋势，不能把临界条件、近似外推、仪器校准系数和真实体系的普适定律混淆。
+\item 独立检查物理单位：速率可采用s⁻¹或mol/(L·s)，能量必须区分J与kJ、单分子和每mol，电极电位采用V，结构占比与概率不带单位。
+\item 对模型参数作定性敏感性核查：当驱动力或被控浓度变化时，判别预测的响应是否符合相应平衡、动力学、吸附或统计的符号。
+\item 全部数值依题设理想模型推得；现实化学中的副反应、活动度、温度依赖、浓度梯度和检测系统误差不在模型之内。
+\item 本题仍为awaiting\_expert\_review草稿，自动数值复算与化学科学性、模型同构和版权的专家批准严格分离。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+net\_current\_positive\_A\_cm2 = 0.00833183764 A/cm2；net\_current\_negative\_A\_cm2 = -0.00564554417 A/cm2；forward\_anodic\_current\_positive = 0.00850535485 A/cm2；backward\_cathodic\_current\_positive = 0.000173517208 A/cm2；anodic\_Tafel\_slope\_V\_dec = 0.107581836 V/dec；cathodic\_Tafel\_slope\_V\_dec = 0.13148891 V/dec；zero\_overpotential\_current = 0 A/cm2；positive\_to\_negative\_current\_ratio = -1.47582543 ratio\par
+\noindent\textbf{模型前提：}
+本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
