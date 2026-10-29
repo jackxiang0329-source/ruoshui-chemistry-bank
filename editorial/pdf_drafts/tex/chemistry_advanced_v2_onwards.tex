@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (543题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (547题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -10408,6 +10408,31 @@ inversion\_x = 0.8 fraction；A\_sublattice\_muB = 4.4 muB/formula；B\_sublatti
 理想化学计量NiFe2O4，Ni2+、Fe3+高自旋，零温刚性共线反平行亚晶格，忽略氧缺陷、自旋倾斜、共价性及热激发。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I139 · Co(III)配体取代的离解-复合-捕获动力学反演与可识别性}
+\noindent\textbf{题目}\par
+一种假想Co(III)配合物[Co(NH₃)₅Cl]²⁺先以一级常数k₁离解为五配位[Co(NH₃)₅]³⁺，中间体可被Cl⁻以二级常数k₋₁复合，也可被中性吡啶L以二级常数k₂不可逆捕获生成[Co(NH₃)₅L]³⁺；始终将Cl⁻缓冲在0.1000 mol/L，L由大体积储液池固定，且中间体满足准稳态、总底物近似一阶。实验在L=0.02000 M时测得kobs=0.005000 s⁻¹，在L=0.08000 M时测得kobs=0.008000 s⁻¹。求k₁、a=k₋₁[Cl⁻]/k₂、k₋₁/k₂（辨明能否分别测出两者）、L=0.04000 M时的kobs、饱和速率、配体弹性、半衰期，以及起始底物0.0001000 M在120.0 s时转化率、产物和释放氯浓度。推导准稳态与唯一性、位点/元素及电荷守恒，讨论适用边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 原络合物S=[Co(NH₃)₅Cl]²⁺缓慢脱氯，速率k₁[S]，生成五配位中间体X=[Co(NH₃)₅]³⁺及Cl⁻；X可与Cl⁻复合（k₋₁[Cl⁻][X]）或被中性吡啶L捕获（k₂[L][X]），产物P=[Co(NH₃)₅L]³⁺。
+\item 在固定高过量Cl⁻和L的准稳态近似下d[X]/dt≈0，因此[X]=k₁[S]/(k₋₁[Cl⁻]+k₂[L])；当中间体寿命远小于底物衰减时间时该消元成立。
+\item 产物生成率v=k₂[L][X]=kobs[S]，其中kobs=k₁[L]/([L]+a)、a=k₋₁[Cl⁻]/k₂；该函数在[L]>0单调上升但不超过k₁。
+\item 取倒数可线性化为1/kobs=1/k₁+(a/k₁)/[L]，两组实验分别为[L]=0.02000 M、kobs=0.005000 s⁻¹及[L]=0.08000 M、kobs=0.008000 s⁻¹。
+\item 以横坐标1/[L]拟合直线，斜率a/k₁=2.0000000000 M·s，截距1/k₁=100.00000000 s，故k₁=0.010000000000 s⁻¹、a=0.020000000000 mol/L；两点横坐标不同，反演唯一。
+\item 固定Cl⁻=0.1000 M，求得k₋₁/k₂=a/[Cl⁻]=0.20000000000，但单靠两组数据不能确定k₋₁及k₂各自的绝对数值，避免过度识别。
+\item 在[L]=0.04000 M，kobs=0.0066666666667 s⁻¹；饱和极限[L]→∞给kobs→0.010000000000 s⁻¹，0<kobs<k₁。
+\item 底物近似一阶衰减S(t)=S₀exp(−kobs t)，取S₀=0.0001000 M和t=120.0 s，转化率X=0.55067103588、产物浓度[P]=0.000055067103588 mol/L。
+\item 每次取代净放出一个Cl⁻，故新生成Cl⁻浓度同为0.000055067103588 M；若含外部缓冲库，氯化物总浓度仍可近似保持0.1000 M。反应电荷+2=(+3)+(−1)。
+\item 一阶半衰期t₁/₂=ln2/kobs=103.97207708 s；局部配体浓度弹性d ln(kobs)/d ln[L]=a/(a+[L])=0.33333333333。
+\item 反向核验在0.02000 M和0.08000 M回代kobs分别恢复两项观测值；Cl⁻浓度恒定、准稳态、无额外副产物和配体储液池足够大均为必要条件。
+\item 若五配位体累积明显、离子强度使速率常数变化、产物重新交换或吡啶耗尽，则所得有效速率式失效；仅凭拟合不构成实际Co(III)取代机理证明。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+dissociation\_k1\_s\_inv = 0.01 s\textasciicircum{}-1；capture\_competition\_a\_M = 0.02 mol/L；recombination\_to\_capture\_ratio = 0.2 dimensionless；kobs\_0p04\_s\_inv = 0.00666666667 s\textasciicircum{}-1；conversion\_120s = 0.550671036 fraction；product\_M = 5.50671036e-05 mol/L；released\_chloride\_M = 5.50671036e-05 mol/L；saturation\_k\_s\_inv = 0.01 s\textasciicircum{}-1；half\_life\_s = 103.972077 s；ligand\_elasticity = 0.333333333 dimensionless；kinetic\_residual = 0 s\textasciicircum{}-1\par
+\noindent\textbf{模型前提：}
+恒Cl、恒L储液池，五配位中间体准稳态、无其它回流及副反应；假想理想Co(III)配体置换。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第11辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -10676,6 +10701,31 @@ unconstrained\_u = 14.1421356 mm/s；H\_min = 0.00369705627 mm；unconstrained\_
 electric\_field = 30000 V/m；mu\_apparent\_neutral = 6.66666667e-08 m2/V/s；mu\_apparent\_X = 9.25925926e-08 m2/V/s；mu\_apparent\_Y = 5.20833333e-08 m2/V/s；mu\_EOF = 6.66666667e-08 m2/V/s；mu\_electrophoretic\_X = 2.59259259e-08 m2/V/s；mu\_electrophoretic\_Y = -1.45833333e-08 m2/V/s；zeta\_V = -0.0853651015 V；sigma\_time\_X = 0.167312881 s；sigma\_time\_Y = 0.457946722 s；ideal\_resolution = 111.953499 ratio\par
 \noindent\textbf{模型前提：}
 线性稳定EOF、均匀电场及速度、无注样宽度和非扩散峰展宽，ζ公式为理想薄双电层近似。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A138 · 旋转圆盘电极Koutecky–Levich双转速反演与第三转速独立核验}
+\noindent\textbf{题目}\par
+以旋转圆盘电极测定理想单电子Ox+e⁻→Red，电极面积A=0.19635 cm²，体相浓度C=1.000×10⁻⁶ mol/cm³，溶液运动黏度ν=0.01000 cm²/s，F=96485.33212 C/mol。假定稳态、层流、充分支持电解质、背景可忽略、i\_k=FAkC、i\_L=0.620 FA C D\textasciicircum{}(2/3)ν\textasciicircum{}(−1/6)√ω，ω用rad/s，实际电流满足1/i=1/i\_k+1/i\_L。400 rpm时i=34.1953138451 μA，1600 rpm时i=42.6997674183 μA，并用900 rpm测得39.4309142538 μA作外部核验。求异相电子转移速率常数k、扩散系数D、动力学电流和900 rpm传质极限、表面浓度/体相浓度、给定电流占传质极限比例和电子通量，证明反问题唯一且检验单位及物理解。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 单电子还原Ox+e⁻→Red，旋转圆盘在稳定层流、充分支持电解质且一级界面电子转移条件下，动力学极限电流i\_k=F A C k；对角速度ω的Levich传质极限i\_L=B√ω。
+\item 由Levich式B=0.620 F A C D\textasciicircum{}(2/3)ν\textasciicircum{}(−1/6)，其中A使用cm²、C使用mol/cm³、D和ν均用cm²/s、ω为rad/s，所得电流单位A；不能把rpm直接代入。
+\item 串联动力学和传质阻力满足1/i=1/i\_k+1/i\_L，令x=1/√ω、y=1/i，得到Koutecky–Levich直线y=1/i\_k+(1/B)x。
+\item 将400 rpm和1600 rpm换算为ω₁=41.887902048 rad/s与ω₂=167.55160819 rad/s，题设电流分别为34.195313845 μA及42.699767418 μA。
+\item 两点倒数直线斜率m=(y₁−y₂)/(x₁−x₂)=75392.581028 A⁻¹ s⁻¹/²，截距b=17594.889494 A⁻¹，两角速度不同，故m和b唯一。
+\item 截距反演i\_k=1/b=56.834684885 μA，界面速率常数k=i\_k/(F A C)=0.0030000000000 cm/s，须为正。
+\item 由m=1/B，得B=13.263904569 μA/(rad/s)\textasciicircum{}(1/2)；再反解D=[B/(0.620 F A C ν\textasciicircum{}(−1/6))]\textasciicircum{}(3/2)=0.000012000000000 cm²/s。
+\item 独立第三转速900 rpm对应ω=94.247779608 rad/s，预测i=39.430914254 μA；该点不参与原先两点拟合，可直接检验模型。
+\item 此时Levich极限电流为128.76770407 μA，实际电流占极限比例0.30621742105，表明动力学阻力非零。
+\item 900 rpm时电子物质通量为i/(F A)=2.0813477369e-9 mol/(cm²·s)，由i/(FA)=k C\_s和i\_L/(FA)=k\_L C，可反推出表面浓度C\_s=C(1−i/i\_L)，满足0<C\_s<C。
+\item 独立边界检查：ω→∞时i→i\_k，ω→0时i→0；m,b均正所以D,k为唯一正根，两个极限反映电化学动力学与扩散串联。
+\item 此式要求光滑圆盘层流、无迁移、对流稳定、电子转移近似一级且背景电流可忽略；电极催化变化、混合控制之外的副反应及不准确的C会破坏反演。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+i400\_uA = 34.1953138 uA；i1600\_uA = 42.6997674 uA；i900\_uA = 39.4309143 uA；kinetic\_limit\_uA = 56.8346849 uA；heterogeneous\_k\_cm\_s = 0.003 cm/s；diffusivity\_cm2\_s = 1.2e-05 cm2/s；Levich\_B\_uA\_per\_sqrt\_rad\_s = 13.2639046 uA/(rad/s)\textasciicircum{}0.5；levich\_limit\_900\_uA = 128.767704 uA；fraction\_of\_Levich\_900 = 0.306217421 ratio；omega\_900\_rad\_s = 94.2477796 rad/s；mass\_transfer\_shortfall\_fraction = 0.693782579 fraction\par
+\noindent\textbf{模型前提：}
+稳态旋转圆盘层流、单电子还原、固定浓度与电极面积、忽略迁移及背景电流，混合阻力按Koutecky–Levich串联。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -10952,6 +11002,31 @@ A\_30 = 0.145578733 mol；endo\_E\_30 = 0.585660455 mol；exo\_X\_30 = 0.2687608
 常速率拟一级三态可逆网络、E/X无直接转化和副反应，初始全部A且质量完全守恒。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O135 · 羟基醛分子内环状半缩醛与分子间环二聚体的稀释选择性反演}
+\noindent\textbf{题目}\par
+某假想双官能羟基醛M可以可逆分子内形成单体环状半缩醛C，也可以两分子M形成环状二聚半缩醛D；题设严格只允许这三种物种，且环化和二聚均不放水，温度和溶剂固定，溶液理想，所有NMR峰已响应校正。平衡常数定义K\_c=[C]/[M]，K\_d=[D]/[M]²（单位L/mol），总单体单元浓度C\_T=[M]+[C]+2[D]。在C\_T=0.1000 mol/L时，定量NMR证实[M]=0.0200 mol/L、[C]=0.0300 mol/L、[D]=0.0250 mol/L。将该溶液等温快速稀释10倍并重新达到平衡，求K\_c、K\_d，新[M],[C],[D]，开链/环单体/二聚物各占单体单元的比例，原液两类环化分数及稀释后[D]/[C]。证明唯一正根、单体单元及官能团计数守恒，并说明潜在更高聚体对模型的破坏。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设M为开链双官能羟基醛，C为同一分子内可逆环化的半缩醛，D为两个M通过两处半缩醛键形成的闭环二聚体。按题设只允许M⇌C和2M⇌D，两反应无水释放。
+\item 总浓度C\_T按单体单元计数而非化学分子数：C\_T=[M]+[C]+2[D]；由于每个D含两个单体单元，不能用[D]替代2[D]。
+\item 以标准浓度c°=1 mol/L定义无量纲活动度时，理想溶液的表观环化常数K\_c=[C]/[M]，二聚缔合常数K\_d=[D]/[M]²，后者单位L/mol。
+\item 在C\_T=0.1000 mol/L时，定量NMR给[M]=0.0200、[C]=0.0300、[D]=0.0250 mol/L，检验0.0200+0.0300+2×0.0250=0.1000。
+\item 反演K\_c=0.0300/0.0200=1.5，K\_d=0.0250/(0.0200)²=62.5 L/mol；该反演依赖NMR对不同物种的定量响应已校正。
+\item 快速等温稀释至C\_T'=0.01 mol/L、达到新平衡后，代入[C]=K\_c[M]和[D]=K\_d[M]²，得2K\_d[M]²+(1+K\_c)[M]−C\_T'=0。
+\item 正根可数值稳定地写成[M]=2C\_T'/((1+K\_c)+√[(1+K\_c)²+8K\_dC\_T'])=0.00341640786500 mol/L。
+\item 上述二次方程左端对[M]≥0的导数4K\_d[M]+1+K\_c>0，从负常数项增加至正无穷，因此只有一个非负物理解，负根舍去。
+\item 新平衡[C]=K\_c[M]=0.00512461179750 mol/L、[D]=K\_d[M]²=0.000729490168752 mol/L，反向相加[M]+[C]+2[D]=0.0100000000000 mol/L。
+\item 以单体单元计数的稀释后比例分别为[M]/C\_T'=0.3416407865，环化[C]/C\_T'=0.5124611797，二聚2[D]/C\_T'=0.1458980338；三项相加恰为1。
+\item 原浓溶液环状单体比例0.3000000000、二聚单元比例0.5000000000。稀释削弱二级二聚，故环化分数与开链分数上升，而二聚单元分数下降。
+\item 极限C\_T→0时[D]/C\_T→0、[C]/[M]→K\_c；若其它缩醛寡聚体、溶剂变化、体积非理想或环化/二聚有水副产物则必须重新写质量作用式和守恒式。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+intramolecular\_Kc = 1.5 dimensionless；dimerization\_Kd\_M\_inv = 62.5 L/mol；diluted\_M\_M = 0.00341640786 mol/L；diluted\_C\_M = 0.0051246118 mol/L；diluted\_D\_M = 0.000729490169 mol/L；diluted\_free\_fraction = 0.341640786 fraction；diluted\_cyclic\_fraction = 0.51246118 fraction；diluted\_dimer\_unit\_fraction = 0.145898034 fraction；original\_cyclic\_fraction = 0.3 fraction；original\_dimer\_unit\_fraction = 0.5 fraction；diluted\_D\_to\_C = 0.142350328 ratio；dilution\_mass\_balance\_M = 0.01 mol/L\par
+\noindent\textbf{模型前提：}
+理想溶液，唯一三物种M/C/D，单体内环化和两分子环二聚体均为可逆半缩醛无水反应，温度不变且定量NMR信号已校准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第11辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -11226,6 +11301,31 @@ weighted\_numerator = 232.5 relative\_concentration；weighted\_denominator = 43
 cold\_denaturation\_K = 275.869985 K；G\_max\_temperature\_K = 312.201072 K；G\_max\_kJmol = 11.0053575 kJ/mol；G298\_kJmol = 9.40011774 kJ/mol；H298\_kJmol = -59.25 kJ/mol；S298\_kJmolK = -0.230253623 kJ/mol/K；unfolded\_fraction\_298 = 0.0220539069 fraction；unfolded\_to\_folded\_ratio = 0.0225512501 ratio；G250\_kJmol = -22.2668471 kJ/mol；G350\_kJmol = 0 kJ/mol；G400\_kJmol = -45.6342138 kJ/mol\par
 \noindent\textbf{模型前提：}
 严格可逆两态、恒定ΔCp、无冻结与聚集、理想热平衡且无其他结构中间态。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P135 · 离心沉降平衡的浮力质量反演、环形归一化与爱因斯坦输运校验}
+\noindent\textbf{题目}\par
+在温度T=298.15 K的理想稀分散体系中，密度ρp=1200 kg/m³的单分散实心球颗粒浸在ρs=1000 kg/m³、黏度η=1.000×10⁻³ Pa·s的溶剂中，恒角速度ω=50.00 rad/s绕中心轴旋转。环形离心池内外半径分别0.04000和0.06000 m，高度恒定。长时间平衡后测得外缘与内缘粒子数浓度比n(r₂)/n(r₁)=e⁴，体积平均粒子数浓度n̄=1.000×10¹⁶ m⁻³；kB=1.380649×10⁻²³ J/K。假设稀理想粒子化学势、离心浮力、Stokes低雷诺阻力、Einstein扩散成立。求浮力修正单粒子质量、球半径、摩擦系数、扩散系数、径向Boltzmann分布系数、内/外/中半径的数浓度、中半径漂移速度和外侧尺度Péclet数；用柱形积分归一、扩散与漂移通量抵消作独立校验，并讨论唯一正解、均匀极限及实验边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 稀颗粒体系中单颗粒浮力修正的离心势能取U(r)=−m\_b ω² r²/2，m\_b=V\_p(ρ\_p−ρ\_s)>0，ρ\_p和ρ\_s为颗粒/溶剂质量密度；温度恒定。
+\item 在无流与稀释理想粒子条件下，化学势μ(r)=μ°+kBT ln n(r)+U(r)为空间常数，故n(r)/n(r₁)=exp\{m\_bω²(r²−r₁²)/(2kBT)\}。
+\item 已知角速度ω=50 rad/s、内外半径r₁=0.04 m、r₂=0.06 m，实测浓度比n₂/n₁=e⁴=54.5981500331；反解m\_b=2kBT ln(n₂/n₁)/(ω²(r₂²−r₁²))=6.58624798960e-21 kg。
+\item 密度差ρ\_p−ρ\_s=200 kg/m³，球体积4πa³/3给出半径a=[3m\_b/(4πΔρ)]\textasciicircum{}(1/3)=19.8841253075 nm；舍去负半径及负浮质量分支。
+\item 由Stokes阻力ζ=6πηa=3.74806931934e-10 kg/s与Einstein关系D=kBT/ζ=1.09827344234e-11 m²/s；检验D>0且黏度η采用Pa·s。
+\item 记β=m\_bω²/(2kBT)=2000.00000000 m⁻²；浓度场为n(r)=n₁ exp[β(r²−r₁²)]，β(r₂²−r₁²)=4。
+\item 圆柱离心池恒高h，粒子数积分为N=2πh∫\_\{r₁\}\textasciicircum{}\{r₂\} n(r)r dr=πh n₁[exp(βΔr²)−1]/β，其中Δr²=r₂²−r₁²；体积为πhΔr²。
+\item 给定全环体积平均粒子数浓度n̄=1.000×10¹⁶ m⁻³，归一化n₁=n̄ βΔr²/(e\textasciicircum{}(βΔr²)−1)=7.46294414551e+14 m⁻³。
+\item 外缘n₂=n₁e⁴=4.07462944146e+16 m⁻³，中半径r=0.0500 m处n(r)=4.51481811269e+15 m⁻³；外浓内稀与正浮质量的离心方向一致。
+\item 运动学离心漂移v(r)=m\_b ω²r/ζ，在中半径处v=2.19654688469e-9 m/s；扩散通量J\_d=−D dn/dr与漂移通量J\_v=n v互相抵消。
+\item 在外侧用Δr=r₂−r₁定义Péclet数Pe=v(r₂)Δr/D=4.80000000000，对应以净零通量达成的非均匀平衡而非持续颗粒流出。
+\item 反向积分恢复n̄；极限ω→0或Δρ→0时β→0、n(r)→n̄均匀。稀溶液、单分散球、无颗粒聚集、恒黏度与足够长的平衡时间均必要，实际达到离心平衡可能非常缓慢。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+buoyant\_mass\_kg = 6.58624799e-21 kg；particle\_radius\_nm = 19.8841253 nm；stokes\_drag\_kg\_s = 3.74806932e-10 kg/s；diffusion\_m2\_s = 1.09827344e-11 m2/s；radial\_beta\_m\_inv2 = 2000 m\textasciicircum{}-2；outer\_inner\_density\_ratio = 54.59815 ratio；inner\_number\_m\_inv3 = 7.46294415e+14 m\textasciicircum{}-3；outer\_number\_m\_inv3 = 4.07462944e+16 m\textasciicircum{}-3；mid\_number\_m\_inv3 = 4.51481811e+15 m\textasciicircum{}-3；drift\_mid\_m\_s = 2.19654688e-09 m/s；annular\_Peclet = 4.8 dimensionless；given\_mean\_density\_m\_inv3 = 1e+16 m\textasciicircum{}-3；integrated\_mean\_density\_m\_inv3 = 1e+16 m\textasciicircum{}-3\par
+\noindent\textbf{模型前提：}
+单分散实心球，理想稀粒子分布，热平衡时间足够长，恒温恒ω，Stokes阻力及爱因斯坦扩散关系。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
