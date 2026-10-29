@@ -16,7 +16,7 @@ const w={
  const a0=Math.exp(-d0/lambda),a60=Math.exp(-d60/(lambda*.5));
  const x=1.125*(.8/.6),nFe=3e22*(d0*1e-7)/6.02214076e23,nO=x*nFe;
  const mass=nFe*(55.845+x*15.999),rho=mass/(d0*1e-7);
- assert.ok(Math.abs(d0-d60)<1e-12 && x===1.5 && Math.abs(2*3+3*(-2))<1e-12);
+ assert.ok(Math.abs(d0-d60)<1e-12 && Math.abs(x-1.5)<1e-12 && Math.abs(2*3+3*(-2))<1e-12);
  return [d0,d60,a0,a60,x,nFe,nO,mass,rho,.8*(1/a0-1),.8*(1/a60-1)];
 },
 "UC-ADV10-A121":()=>{
