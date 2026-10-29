@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 32,
+  "current_draft_count": 34,
   "expert_approved": 0,
-  "preliminary_flags": 32,
+  "preliminary_flags": 34,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -196,6 +196,18 @@
       "new_id": "UC-ADV12-A159",
       "prior_id": "UC-ADV11-A140",
       "reason": "历史无机能量周期或分析光学领域可能相关，留待人工逐式模型排重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O155",
+      "prior_id": "UC-ADV11-O143",
+      "reason": "可能与早期配对统计或双电层界面模型领域相邻，需专家逐式比较新颖性与物理假设。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P155",
+      "prior_id": "UC-ADV11-P138",
+      "reason": "可能与早期配对统计或双电层界面模型领域相邻，需专家逐式比较新颖性与物理假设。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -391,6 +403,18 @@
       "model_family": "Raman-Stokes-antiStokes-phonon-Bose-thermometry-Poisson-counting",
       "judgement": "pending_human_comparison",
       "screening": "独立数值与热化学Hess/拉曼声子计数复核完成，真实科学假设及跨辑新颖性仍待专家检查。"
+    },
+    {
+      "new_id": "UC-ADV12-O155",
+      "model_family": "six-cysteine-disulfide-perfect-matching-native-topology-statistical-oxidation",
+      "judgement": "pending_human_comparison",
+      "screening": "答案向量已建立独立复核、氧化还原和Grahame关系守恒检查，仍待人类专家审核。"
+    },
+    {
+      "new_id": "UC-ADV12-P155",
+      "model_family": "Gouy-Chapman-Grahame-Poisson-Boltzmann-diffuse-capacitance-osmotic-stress",
+      "judgement": "pending_human_comparison",
+      "screening": "答案向量已建立独立复核、氧化还原和Grahame关系守恒检查，仍待人类专家审核。"
     }
   ]
 }
