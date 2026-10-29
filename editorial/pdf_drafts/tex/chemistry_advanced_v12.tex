@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (66题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (70题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -491,6 +491,34 @@ K1\_298\_L\_mol = 100 L/mol；K2\_298\_L\_mol = 25 L/mol；free\_L\_298\_M = 0.0
 模型以浓度常数、理想稀溶液与固定反应焓为条件；真实体系的配体质子化、金属水解、活度及氧化态改变均需另建平衡方程。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I168 · 尖晶石阳离子反位的构型熵、自由能凸性与温度响应}
+\noindent\textbf{题目}\par
+理想立方尖晶石MgAl₂O₄在每化学式单位具有1个四面体A位和2个八面体B位；反位度x定义为(Mg₁₋ₓAlₓ)[MgₓAl₂₋ₓ]O₄，0≤x≤1，括号为A位、方括号为B位。设相对于完全正尖晶石x=0的非构型能为U(x)=Δx+(w/2)x²，Δ=17.00 kJ/mol、w=4.000 kJ/mol（每mol化学式单位）。A、B两子晶格上的阳离子分别理想随机混合，构型熵仅计此两子晶格，R=8.314462618 J/(mol K)；不考虑晶格热容、磁性、氧空位和价态变化。求1100.0 K及1450.0 K下平衡反位度、A/B两子晶格的Mg/Al占位分数、构型熵、非构型能与相对Gibbs自由能。证明两温度下平衡反位度在(0,1)唯一，计算1100 K下自由能二阶导数与dx/dT及1450 K下dx/dT，并核对Mg/Al计量、电荷与温升对反位的影响。以x=0为相对能零点，不把有限温度的负混合自由能误认为负的绝对晶格能。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 分清每化学式单位的1个A位与2个B位：A位Mg₁₋ₓAlₓ；B位MgₓAl₂₋ₓ，因而B位Mg与Al占位分数分别x/2和1−x/2。
+\item 每mol化学式单位的理想混合熵为S/R=−[(1−x)ln(1−x)+xlnx+xln(x/2)+(2−x)ln((2−x)/2)]，取ylny在y→0时的连续极限0。
+\item 定义Δ=17000 J/mol、w=4000 J/mol，能量U=Δx+(w/2)x²；相对自由能G(x,T)=U−TS，并使G(0,T)=0。
+\item 按x求导得到G\_x=Δ+wx+RT ln[x²/((1−x)(2−x))]。对x∈(0,1)其两端分别趋于−∞和+∞。
+\item 二阶导数G\_xx=w+RT[2/x+1/(1−x)+1/(2−x)]>0，故驻点唯一，且是严格全局自由能极小值。
+\item 利用保界二分法分别求两温度根，避免在x=0或1处直接计算ln0；高温时不能沿用1100 K的分数。
+\item 1100 K平衡x=0.3693132770，1450 K平衡x=0.4332787376，对应比值1.173201086。
+\item 在1100 K，A位Mg和Al占位分别0.6306867230、0.3693132770；B位Mg和Al占位分别0.1846566385、0.8153433615。
+\item 1100 K构型熵=13.43078701 J/(mol K)，非构型能=6.551110302 kJ/mol，相对G=-8.222755412 kJ/mol。
+\item 1450 K构型熵=14.37953137 J/(mol K)，非构型能=7.741199468 kJ/mol，相对G=-13.10912102 kJ/mol。
+\item 由G\_x(x,T)=0隐式求导，得到dx/dT=[R ln((1−x)(2−x)/x²)]/[w+RT(2/x+1/(1−x)+1/(2−x))]。
+\item 故1100 K下G\_xx=73639.40465 J/mol、dx/dT=0.0002281048157 K⁻¹，1450 K下对应dx/dT=0.0001457871262 K⁻¹及G\_xx=88618.17884 J/mol。
+\item 各温度总Mg数=(1−x)+x=1.000000000，Al数=x+(2−x)=2.000000000，阳离子总形式电荷8.000000000与四个O²⁻抵消。
+\item Δ、w均为正，温度升高使熵驱动反位增大；平衡G相对x=0为负表示混合后更稳定，不是负的绝对成晶能。
+\item 模型忽略非理想位点相互作用、短程有序、阳离子价态变化和晶格振动；实际反位度需实验衍射或谱学约束。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+inversion\_1100 = 0.369313277 fraction；inversion\_1450 = 0.433278738 fraction；A\_Mg\_fraction\_1100 = 0.630686723 fraction；A\_Al\_fraction\_1100 = 0.369313277 fraction；B\_Mg\_fraction\_1100 = 0.184656639 fraction；B\_Al\_fraction\_1100 = 0.815343361 fraction；config\_entropy\_1100\_J\_mol\_K = 13.430787 J/(mol K)；energy\_1100\_kJ\_mol = 6.5511103 kJ/mol；relative\_G\_1100\_kJ\_mol = -8.22275541 kJ/mol；config\_entropy\_1450\_J\_mol\_K = 14.3795314 J/(mol K)；energy\_1450\_kJ\_mol = 7.74119947 kJ/mol；relative\_G\_1450\_kJ\_mol = -13.109121 kJ/mol；high\_over\_low\_inversion = 1.17320109 ratio；inversion\_temperature\_derivative\_1100\_per\_K = 0.000228104816 K\textasciicircum{}-1；curvature\_G\_1100\_J\_mol = 73639.4047 J/mol；entropy\_slope\_1100\_J\_mol\_K = 16.7975028 J/(mol K)；Mg\_inventory\_per\_formula = 1 count；Al\_inventory\_per\_formula = 2 count；positive\_charge\_per\_formula = 8 elementary\_charge；entropy\_increase\_1450\_minus\_1100\_J\_mol\_K = 0.948744359 J/(mol K)；G\_difference\_high\_minus\_low\_kJ\_mol = -4.88636561 kJ/mol；inversion\_temperature\_derivative\_1450\_per\_K = 0.000145787126 K\textasciicircum{}-1；curvature\_G\_1450\_J\_mol = 88618.1788 J/mol；normal\_spinel\_relative\_G\_kJ\_mol = 0 kJ/mol\par
+\noindent\textbf{模型前提：}
+模型忽略非理想位点相互作用、短程有序、阳离子价态变化和晶格振动；实际反位度需实验衍射或谱学约束。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -945,6 +973,35 @@ low\_mass\_observed\_rate\_s = 392156.863 s\textasciicircum{}-1；high\_mass\_ob
 核查n+n\_s等于两铜同位素物质的量之和，两个通道响应总量的比例可任意缩放而不改变丰度反演；真实分析仍需校正化学回收、空白、同量异位素及非线性死时间模型偏差。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A168 · 耦合TGA–逸出气计量反演混合盐的未知水合数与不确定度}
+\noindent\textbf{题目}\par
+120.000 mg的干燥粉体由未知水合数x（1≤x≤7）的CuSO₄·xH₂O、CaCO₃与惰性SiO₂组成，三者之外没有其他组分。理想阶梯式热重分析(TGA)依次定量释放：(Ⅰ)全部水合水；(Ⅱ)CuSO₄→CuO+SO₃；(Ⅲ)CaCO₃→CaO+CO₂；无氧气吸收、样品飞溅或其他挥发，所述SO₃代表含硫挥发物的等效总质量。三个台阶的质量损失分别为21.618336、19.214880、8.801800 mg；假设每个台阶独立，水台阶与SO₃台阶质量损失的标准不确定度分别0.0200 mg和0.0150 mg，其余参数视为准确。摩尔质量按H₂O=18.01528、Cu=63.546、S=32.065、O=15.999、Ca=40.078、C=12.011 g/mol计算。求水合数x及标准不确定度、两可分解盐的物质的量、原样各组分质量与质量分数、残渣质量（分别由总损失和CuO+CaO+SiO₂两路计算）、逸出SO₃/CO₂摩尔比与分析误差边界。核验所有元素与总质量计量，并判断x是否唯一地识别为整数5。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 把CuSO₄·xH₂O中的CuSO₄视为不挥发中间盐；按题设先失xH₂O，再经CuSO₄→CuO+SO₃释放SO₃等效质量，CaCO₃→CaO+CO₂是第三台阶。
+\item 计算M(SO₃)=80.06200000 g/mol和M(CO₂)=44.00900000 g/mol，三台阶损失分别为21.61833600、19.21488000、8.801800000 mg。
+\item 第二台阶严格给出n\_CuSO4=Δm\_SO3/M\_SO3；第三台阶n\_CaCO3=Δm\_CO2/M\_CO2；mg换g时必须乘10⁻³。
+\item 反演n\_CuSO4=240.0000000 μmol、n\_CaCO3=200.0000000 μmol。
+\item 由第一台阶Δm\_H2O=x n\_CuSO4 M\_H2O解x=Δm\_H2O M\_SO3/(Δm\_SO3 M\_H2O)，不需要预先假定水合数是5。
+\item 得到x=5.000000000，再用CuSO₄本体及水合水之和求原样CuSO₄·xH₂O的质量59.92401600 mg。
+\item CaCO₃初始质量=20.01720000 mg，SiO₂差减得40.05878400 mg，非负且总和120.000 mg。
+\item 对应三种原样质量百分数49.93668000\%、16.68100000\%、33.38232000\%，加和应为100\%。
+\item 最终残渣仅为CuO、CaO及SiO₂，不可把释放SO₃后的铜盐仍当作CuSO₄计入残渣。
+\item 由n\_CuSO4 M(CuO)+n\_CaCO3 M(CaO)+m(SiO₂)求残渣=70.36498400 mg。
+\item 从独立总质量损失求120−Δm\_H2O−Δm\_SO3−Δm\_CO2=70.36498400 mg，二者吻合。
+\item SO₃/CO₂气体物质的量比=1.200000000；实验真正逸出气体是否完全保持SO₃分子形态不影响本题等效质量假设。
+\item 因x∝Δm\_H2O/Δm\_SO3，独立质量损失的一阶相对方差为[u(x)/x]²=[u(Δm\_H2O)/Δm\_H2O]²+[u(Δm\_SO3)/Δm\_SO3]²。
+\item 所以u(x)=0.006052461724，它远小于相邻整数水合数间距0.5；且第二台阶对应n(CuSO₄)的不确定度0.1873548000 μmol。
+\item 总失重占比41.36251333\%，残渣的CuO、CaO质量依次19.09080000、11.21540000 mg；SiO₂占原样质量分数0.3338232000。
+\item 在理想模型内x唯一且接近5；真实实验需审查吸附水、阶段重叠、铜硫酸盐中间氧化物及气氛依赖，不能把理论阶梯设定替代真实温控TGA验证。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+SO3\_molar\_mass\_g\_mol = 80.062 g/mol；CO2\_molar\_mass\_g\_mol = 44.009 g/mol；water\_loss\_mg = 21.618336 mg；SO3\_loss\_mg = 19.21488 mg；CO2\_loss\_mg = 8.8018 mg；copper\_sulfate\_amount\_umol = 240 umol；calcium\_carbonate\_amount\_umol = 200 umol；inferred\_hydration\_number = 5 count；initial\_hydrated\_copper\_sulfate\_mg = 59.924016 mg；initial\_calcium\_carbonate\_mg = 20.0172 mg；initial\_silica\_mg = 40.058784 mg；hydrated\_sulfate\_mass\_percent = 49.93668 percent；carbonate\_mass\_percent = 16.681 percent；silica\_mass\_percent = 33.38232 percent；oxide\_residue\_direct\_mg = 70.364984 mg；residue\_from\_total\_losses\_mg = 70.364984 mg；SO3\_to\_CO2\_molar\_ratio = 1.2 ratio；hydration\_number\_standard\_uncertainty = 0.00605246172 count；copper\_amount\_standard\_uncertainty\_umol = 0.1873548 umol；total\_loss\_percent = 41.3625133 percent；CuO\_residue\_mg = 19.0908 mg；CaO\_residue\_mg = 11.2154 mg；silica\_mass\_fraction = 0.3338232 fraction\par
+\noindent\textbf{模型前提：}
+在理想模型内x唯一且接近5；真实实验需审查吸附水、阶段重叠、铜硫酸盐中间氧化物及气氛依赖，不能把理论阶梯设定替代真实温控TGA验证。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第12辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -1385,6 +1442,35 @@ photo\_forward\_rate\_s = 0.2 s\textasciicircum{}-1；photo\_reverse\_rate\_s = 
 初始Z分数的变化率就是a；任意时刻E+Z=C，关灯瞬间连续但导数改变；真实体系若有波长依赖吸收、非均匀照射、光疲劳和构象杂化，需进一步建模。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O164 · 芳基取代溴代烷SN1/E2平行反应的Hammett双通道与β-D同位素反演}
+\noindent\textbf{题目}\par
+某假想对位取代芳基溴代烷在恒温、固定溶剂中只有互斥的SN1溶剂解（产物S）和E2消除（产物E），产物不再互变。假设两条一阶通道均满足Hammett形式k\_j(σ)=k\_\{j,0\}10\textasciicircum{}(ρ\_jσ)，不同取代基的σ分别−0.30、0.00、+0.50。三种未氘代底物实测总消失速率k\_obs及在完全转化时S产物摩尔分数f\_S如下：(σ=−0.30: k\_obs=0.1060745301 s⁻¹, f\_S=0.9382722933；σ=0: k\_obs=0.04000000000 s⁻¹, f\_S=0.6250000000；σ=+0.50: k\_obs=0.06221607558 s⁻¹, f\_S=0.04018254087)。以下三组观测值按理想化高精度测量处理，两个通道的基准速率和Hammett斜率均未知，必须由给出的观测数据反演。现有一未知取代基σ=+0.250，起始浓度0.01000 mol/L，反应20.00 s；β-H换为β-D后，同一取代基的通道同位素效应分别k\_S,H/k\_S,D=1.050、k\_E,H/k\_E,D=3.000。由三组总速率及S支化分数而非直接假定两个ρ，反演各通道基准速率、两Hammett斜率和选择性斜率；预测σ=+0.250时H/D两种底物的通道常数、总速率、表观总KIE、转化率、两产物与剩余底物浓度及同位素引起的S分支变化，验证反应物与产物计量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对每个取代基有k\_obs=k\_S+k\_E与f\_S=k\_S/k\_obs，故独立复原两个通道为k\_S=f\_S k\_obs，k\_E=(1−f\_S)k\_obs。
+\item 三种σ依次−0.30、0、+0.50，测得k\_obs分别0.1060745301、0.04000000000、0.06221607558 s⁻¹，f\_S分别0.9382722933、0.6250000000、0.04018254087。
+\item 用σ=0的数据立即得到k\_S0与k\_E0；端点的log10 k\_j对σ之斜率就是ρ\_j，可用第三个点检验直线模型的内部一致性。
+\item 求得k\_S0=0.02500000000 s⁻¹、k\_E0=0.01500000000 s⁻¹，ρ\_S=-2.000000000、ρ\_E=1.200000000。
+\item 因为log10(k\_S/k\_E)=log10(k\_S0/k\_E0)+(ρ\_S−ρ\_E)σ，选择性Hammett斜率为-3.200000000。
+\item 反应只包含两条不可逆的一阶并行路径，底物浓度C(t)=C₀exp(−(k\_S+k\_E)t)；两产物是消耗总量乘通道速率比。
+\item 代入σ=+0.250，未氘代k\_S=0.007905694150、k\_E=0.02992893472、总k=0.03783462887 s⁻¹。
+\item β位氘取代只按题设改变各通道的速率：k\_S,D=k\_S,H/1.050，而k\_E,D=k\_E,H/3.000；不可把3.000直接作为总速率KIE。
+\item 得到氘代k\_S=0.007529232524、k\_E=0.009976311575、总k=0.01750554410 s⁻¹，表观总速率H/D比2.161294083。
+\item 转化率分别X\_H=1−exp(−k\_Ht)、X\_D=1−exp(−k\_Dt)，按各自总速率积分，不能共用同一转化率。
+\item 20 s后X\_H=0.5307842418、X\_D=0.2953900432。
+\item H底物给S=0.001109094499 mol/L、E=0.004198747919 mol/L，未反应=0.004692157582 mol/L。
+\item β-D底物给S=0.001270489113 mol/L、E=0.001683411318 mol/L，未反应=0.007046099568 mol/L。
+\item H和D各自的S产品支化分数分别0.2089539236、0.4301055986；D/H支化比2.058375317，因E2的一级β同位素效应更强而相对偏向SN1。
+\item 分别回代[S]+[E]+[未反应]=0.01000 mol/L，并核对正速率、正浓度及0≤转化率≤1。
+\item 本题以假想Hammett线性、互斥SN1/E2与给定路径KIE为边界；实际底物的消除几何约束、离子对、溶剂化和竞争SN2可能破坏简化模型。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+observed\_k\_sigma\_minus0p30\_s = 0.10607453 s\textasciicircum{}-1；observed\_k\_sigma\_zero\_s = 0.04 s\textasciicircum{}-1；observed\_k\_sigma\_plus0p50\_s = 0.0622160756 s\textasciicircum{}-1；SN1\_fraction\_sigma\_minus0p30 = 0.938272293 fraction；SN1\_fraction\_sigma\_zero = 0.625 fraction；SN1\_fraction\_sigma\_plus0p50 = 0.0401825409 fraction；inferred\_SN1\_k0\_s = 0.025 s\textasciicircum{}-1；inferred\_E2\_k0\_s = 0.015 s\textasciicircum{}-1；SN1\_Hammett\_rho = -2 rho；E2\_Hammett\_rho = 1.2 rho；log\_selectivity\_Hammett\_slope = -3.2 rho；H\_SN1\_k\_sigma0p25\_s = 0.00790569415 s\textasciicircum{}-1；H\_E2\_k\_sigma0p25\_s = 0.0299289347 s\textasciicircum{}-1；H\_total\_k\_s = 0.0378346289 s\textasciicircum{}-1；D\_SN1\_k\_s = 0.00752923252 s\textasciicircum{}-1；D\_E2\_k\_s = 0.00997631157 s\textasciicircum{}-1；D\_total\_k\_s = 0.0175055441 s\textasciicircum{}-1；overall\_H\_over\_D\_KIE = 2.16129408 ratio；H\_conversion\_at20s = 0.530784242 fraction；D\_conversion\_at20s = 0.295390043 fraction；H\_S\_product\_M = 0.0011090945 mol/L；H\_E\_product\_M = 0.00419874792 mol/L；H\_remaining\_M = 0.00469215758 mol/L；D\_S\_product\_M = 0.00127048911 mol/L；D\_E\_product\_M = 0.00168341132 mol/L；D\_remaining\_M = 0.00704609957 mol/L；H\_S\_branch\_fraction = 0.208953924 fraction；D\_S\_branch\_fraction = 0.430105599 fraction；D\_over\_H\_S\_branch\_ratio = 2.05837532 ratio\par
+\noindent\textbf{模型前提：}
+本题以假想Hammett线性、互斥SN1/E2与给定路径KIE为边界；实际底物的消除几何约束、离子对、溶剂化和竞争SN2可能破坏简化模型。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第12辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -1823,6 +1909,35 @@ thermal\_energy\_pN\_nm = 4.11640499 pN nm；Bell\_force\_scale\_pN = 8.23280999
 Z10\_real\_ohm = 81.69568 ohm；Z10\_imag\_ohm = -45.0477243 ohm；Z100\_real\_ohm = 12.4704523 ohm；Z100\_imag\_ohm = -15.5223096 ohm；inferred\_RC\_time\_s = 0.01 s；inferred\_Rct\_ohm = 100 ohm；inferred\_Cdl\_uF = 100 uF；Nyquist\_peak\_frequency\_Hz = 15.9154943 Hz；Nyquist\_peak\_real\_ohm = 60 ohm；Nyquist\_peak\_imag\_ohm = -50 ohm；Z10\_magnitude\_ohm = 93.292452 ohm；current\_10Hz\_microamp\_rms = 107.189808 uA；current\_lead\_phase\_deg = 28.8727327 degree；high\_frequency\_ideal\_current\_A = 0.001 A；zero\_frequency\_real\_intercept\_ohm = 110 ohm；high\_frequency\_real\_intercept\_ohm = 10 ohm；dimensionless\_frequency\_10Hz = 0.628318531 ratio；Z10\_polarization\_real\_ohm = 71.69568 ohm；Z10\_polarization\_loss\_ohm = 45.0477243 ohm；independent\_RC\_product\_s = 0.01 s\par
 \noindent\textbf{模型前提：}
 通过正的R\_ct、C\_dl与两个频率下的负虚部检查电路物理可实现性；测量数据为有限小数精度，回代误差按给定小数精度判定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P164 · 热扩散与化学势耦合的Onsager矩阵、阻塞边界与逆势物质通量}
+\noindent\textbf{题目}\par
+一假想一维非反应性稀溶质传输膜在近平衡恒温附近（T≈300 K）存在粒子通量J\_N（mol m⁻² s⁻¹）与总能量通量J\_E（W m⁻²）。选取共轭热力学力X₁=−d(μ/T)/dx，单位J mol⁻¹ K⁻¹ m⁻¹；X₂=d(1/T)/dx，单位K⁻¹ m⁻¹。给定线性Onsager关系(J\_N,J\_E)\textasciicircum{}T=L(X₁,X₂)\textasciicircum{}T，其中L₁₁=2.000×10⁻⁸ mol² K/(J m s)，L₁₂=L₂₁=3.000×10⁻⁴ mol K/(m s)，L₂₂=10.00 J K/(m s)，基准驱动力X₁=+1.000 J/(mol K m)、X₂=+1.000×10⁻⁴ (K m)⁻¹。计算耦合矩阵行列式、无量纲耦合系数、两通量及总局域熵产率σ=J\_N X₁+J\_E X₂；分别求不透溶质边界J\_N=0时需建立的X₁、有效能量输运系数、能量通量与熵产率，以及绝热边界J\_E=0时所需X₂、有效粒子输运系数、J\_N与熵产率。最后令X₁=−1.000而保持原X₂，判断粒子通量是否可与自身驱动力反向、能量通道是否补偿负局部贡献，并核对Onsager正定性、能量与熵的单位。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 定义粒子通量与总能量通量的共轭热力学力；此处使用总能量通量J\_E，而非未经化学势修正的纯热流，才能与给出的−d(μ/T)/dx直接配对。
+\item Onsager互易性L₁₂=L₂₁确保矩阵对称；局域熵产生σ=J\_NX₁+J\_EX₂，单位W/(K m³)。
+\item 先核验L₁₁L₂₂−L₁₂²=1.100000000e-7>0，L₁₁>0，故对任意非零力向量都有σ>0；归一耦合系数r=0.6708203932，严格小于1。
+\item 对于基准驱动X₁=1、X₂=10⁻⁴，计算J\_N=L₁₁X₁+L₁₂X₂，J\_E=L₁₂X₁+L₂₂X₂。
+\item 基准J\_N=5.000000000e-8 mol/(m²s)、J\_E=0.001300000000 W/m²，总熵产率σ=1.800000000e-7 W/(K m³)。
+\item 粒子通道、能量通道的熵产生贡献分别5.000000000e-8和1.300000000e-7 W/(K m³)，总和等于σ。
+\item 当膜不透溶质时必须施加J\_N=0，而非错误地把X₁置零；代数解X₁=−(L₁₂/L₁₁)X₂。
+\item 不透溶质边界下X₁=-1.500000000 J/(mol K m)，有效能量系数L₂₂,eff=L₂₂−L₁₂²/L₁₁=5.500000000 J K/(m s)。
+\item 此时J\_E=0.0005500000000 W/m²、σ=5.500000000e-8 W/(K m³)，不会因为J\_N=0而使σ归零。
+\item 绝热边界J\_E=0时反而由X₂=−(L₁₂/L₂₂)X₁给出响应，等效粒子系数L₁₁,eff=L₁₁−L₁₂²/L₂₂。
+\item 求得X₂=-0.00003000000000 (K m)⁻¹、J\_N=1.100000000e-8 mol/(m²s)、σ=1.100000000e-8 W/(K m³)，有效系数1.100000000e-8。
+\item 以X₁=−1.000、X₂=10⁻⁴再次代入相同正定矩阵，X₁与X₂并不必同号，单一通道的熵贡献也不必各自为正。
+\item 重新得到J\_N=1.000000000e-8 mol/(m²s)>0，故J\_NX₁=-1.000000000e-8<0，确实出现由温度驱动的逆化学势物质输运。
+\item 同时J\_E=0.0007000000000 W/m²，其熵产生贡献7.000000000e-8>0，二者总和σ=6.000000000e-8>0，严格满足第二定律。
+\item 所有流量和熵产是局域线性响应，不代表可以无功永动；强非线性驱动、温度变化明显或物质化学反应时Onsager常数不可直接沿用。
+\item 量纲检查L₁₂X₂与L₁₁X₁同为mol/(m²s)，L₂₁X₁与L₂₂X₂同为W/m²；确保熵产生各项单位相同。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Onsager\_determinant = 1.1e-07 L11*L22；dimensionless\_coupling = 0.670820393 ratio；baseline\_particle\_flux\_mol\_m2\_s = 5e-08 mol/(m2 s)；baseline\_energy\_flux\_W\_m2 = 0.0013 W/m2；baseline\_entropy\_production\_W\_K\_m3 = 1.8e-07 W/(K m3)；particle\_entropy\_contribution = 5e-08 W/(K m3)；energy\_entropy\_contribution = 1.3e-07 W/(K m3)；particle\_blocked\_X1 = -1.5 J/(mol K m)；particle\_blocked\_energy\_flux\_W\_m2 = 0.00055 W/m2；particle\_blocked\_entropy\_production = 5.5e-08 W/(K m3)；particle\_blocked\_effective\_L22 = 5.5 J K/(m s)；adiabatic\_X2 = -3e-05 1/(K m)；adiabatic\_particle\_flux\_mol\_m2\_s = 1.1e-08 mol/(m2 s)；adiabatic\_entropy\_production = 1.1e-08 W/(K m3)；adiabatic\_effective\_L11 = 1.1e-08 mol2 K/(J m s)；uphill\_particle\_flux = 1e-08 mol/(m2 s)；uphill\_energy\_flux = 0.0007 W/m2；uphill\_total\_entropy\_production = 6e-08 W/(K m3)；uphill\_particle\_entropy\_contribution = -1e-08 W/(K m3)；uphill\_energy\_entropy\_contribution = 7e-08 W/(K m3)；force\_product\_X1\_X2 = 0.0001 X1*X2；square\_root\_determinant = 0.000331662479 sqrt(L11*L22)；normalized\_coupling\_squared = 0.45 ratio\par
+\noindent\textbf{模型前提：}
+量纲检查L₁₂X₂与L₁₁X₁同为mol/(m²s)，L₂₁X₁与L₂₂X₂同为W/m²；确保熵产生各项单位相同。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
