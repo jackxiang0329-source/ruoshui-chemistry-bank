@@ -49,6 +49,9 @@ for(const [sub,letter] of Object.entries(groups)){
   count++;assert.equal(x.id,'UC-ADV11-'+letter+(126+i-(sub==='organic'||sub==='physical'?3:0)));
   assert.equal(x.subject,sub);assert.ok(x.problem_zh.length>=150&&x.solution_zh_steps.length>=7);
   assert.ok(x.answer_values.length>=4&&x.answer_values.length===x.answer_units.length&&x.answer_values.every(Number.isFinite));
+  assert.ok(Array.isArray(x.answer_names)&&x.answer_names.length===x.answer_values.length,'answer_names must match values '+x.id);
+  assert.ok(x.answer_names.every(n=>typeof n==='string'&&n.trim().length>=2&&!/^主要结果\d+$/.test(n.trim())&&!/^answer\s*\d+$/i.test(n.trim())),'generic or missing answer label '+x.id);
+  assert.equal(new Set(x.answer_names).size,x.answer_names.length,'duplicate answer label '+x.id);
   assert.ok(x.model_residuals.length>=3&&x.model_residuals.every(z=>Number.isFinite(z)&&Math.abs(z)<1e-8));
   assert.equal(x.publishable,false);assert.equal(x.exclude_from_official_bank,true);
   assert.equal(x.quality_status,'awaiting_expert_review');assert.equal(x.novelty_review_status,'pending_cross_series_model_review');assert.equal(x.parametric_variant,null);

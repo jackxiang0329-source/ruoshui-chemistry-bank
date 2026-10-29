@@ -22,7 +22,7 @@
 
 8. 分别检验R+P_R=0.5、S+P_S=0.5；实际酶催化有底物饱和、非指数动力学与消旋等偏差，需实验审定。
 
-**主要答案**：0.10094825900 mol；0.37040911034 mol；0.52864263066 fraction；0.57166996609 fraction；0.39905174100 mol；0.12959088966 mol；0.50972213687 fraction；5.3333333333 ratio；4.1497156473 kJ/mol；0.47135736934 fraction。
+**主要答案**：剩余R底物=0.10094825900 mol；剩余S底物=0.37040911034 mol；总转化率=0.52864263066 fraction；剩余底物S-对映体过量=0.57166996609 fraction；生成R产物=0.39905174100 mol；生成S产物=0.12959088966 mol；产物R-对映体过量=0.50972213687 fraction；动力学选择系数E=5.3333333333 ratio；活化自由能差=4.1497156473 kJ/mol；剩余底物回收率=0.47135736934 fraction。
 
 **审核状态**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review。
 
@@ -48,7 +48,7 @@
 
 8. 降低pH使酸通道占优、P1选择性趋近80%；升高pH使非酸通道占优、P1趋近1/3，但真实酸碱开环不一定能用单一恒定pKa表征。
 
-**主要答案**：0.090909090909 fraction；0.029696969697 min^-1；0.033939393939 min^-1；0.063636363636 min^-1；0.46666666667 fraction；0.53403108991 fraction；0.24921450863 mol；0.28481658129 mol；0.46596891009 mol；0.33333333333 fraction。
+**主要答案**：酸态催化比例=0.090909090909 fraction；P1有效生成速率常数=0.029696969697 min^-1；P2有效生成速率常数=0.033939393939 min^-1；总观察速率常数=0.063636363636 min^-1；P1区域选择性=0.46666666667 fraction；12min总转化率=0.53403108991 fraction；P1产物量=0.24921450863 mol；P2产物量=0.28481658129 mol；剩余环氧化物量=0.46596891009 mol；纯非酸路径P1分支=0.33333333333 fraction。
 
 **审核状态**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review。
 
@@ -74,7 +74,7 @@
 
 8. ΔG=ΔH−TΔS只给组合值；缺少温度依赖数据不能把自由能差拆成独立的焓与熵，光诱导异构化亦可能使体系非平衡。
 
-**主要答案**：3.0000000000 ratio；0.50000000000 ratio；0.75000000000 fraction；0.25000000000 fraction；0.33333333333 fraction；0.66666666667 fraction；-2.7234126558 kJ/mol；1.7182820758 kJ/mol；4.4416947315 kJ/mol；0.81818181818 fraction；0.42857142857 fraction。
+**主要答案**：溶剂甲真实E/Z比=3.0000000000 ratio；溶剂乙真实E/Z比=0.50000000000 ratio；甲溶剂E摩尔分数=0.75000000000 fraction；甲溶剂Z摩尔分数=0.25000000000 fraction；乙溶剂E摩尔分数=0.33333333333 fraction；乙溶剂Z摩尔分数=0.66666666667 fraction；甲溶剂E相对Z自由能=-2.7234126558 kJ/mol；乙溶剂E相对Z自由能=1.7182820758 kJ/mol；偏好自由能变化=4.4416947315 kJ/mol；甲溶剂原始E峰面积分数=0.81818181818 fraction；乙溶剂原始E峰面积分数=0.42857142857 fraction。
 
 **审核状态**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review。
 
@@ -100,7 +100,7 @@
 
 8. 因未知孔口绝对传输常数，无法确定绝对蒸气压截距或升华熵；非分子流或热分解会破坏模型。
 
-**主要答案**：2.3171789274 ratio；40.350286154 kJ/mol；3.7043340778 mg/h；2.1159455204 ratio；0.84035046623 dimensionless；0.80000000000 mg/h。
+**主要答案**：350K与330K饱和蒸气压比=2.3171789274 ratio；升华摩尔焓=40.350286154 kJ/mol；370K质量损失速率=3.7043340778 mg/h；370K与350K蒸气压比=2.1159455204 ratio；温度校正后对数速率差=0.84035046623 dimensionless；330K损失速率回代=0.80000000000 mg/h。
 
 **审核状态**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review。
 
@@ -126,7 +126,7 @@
 
 8. 两端x差=0.069398341265，始终x_A+x_B=1；若存在热对流和浓度依赖的Soret系数，需改用流体-扩散耦合模型。
 
-**主要答案**：0.66666666667 ratio；0.49387881379 ratio；0.33060165874 fraction；0.66939834126 fraction；1.3498588076 ratio；-0.015000000000 K^-1；-7.2000000000 m^-1；0.069398341265 fraction。
+**主要答案**：冷端A/B摩尔比=0.66666666667 ratio；热端A/B摩尔比=0.49387881379 ratio；热端A分数=0.33060165874 fraction；热端B分数=0.66939834126 fraction；冷端相对热端富集倍数=1.3498588076 ratio；logit对温度导数=-0.015000000000 K^-1；局部组成空间梯度=-7.2000000000 m^-1；冷热端A组分差=0.069398341265 fraction。
 
 **审核状态**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review。
 
@@ -152,7 +152,7 @@
 
 8. 若H的E提高到0.1600eV，则T_H上升到0.000026525157790；当势垒变薄或出现多维共振，厚垒WKB近似需被完整量子散射取代。
 
-**主要答案**：69421329452 m^-1；98152222574 m^-1；0.000015000714685 fraction；1.5124638942e-7 fraction；99.180646508 ratio；1.4138626176 ratio；0.000026525157790 fraction；11.107412712 dimensionless。
+**主要答案**：H衰减波数=69421329452 m^-1；D衰减波数=98152222574 m^-1；H透射概率=0.000015000714685 fraction；D透射概率=1.5124638942e-7 fraction；H/D隧穿速率比=99.180646508 ratio；D/H指数作用量比=1.4138626176 ratio；提高入射能后H透射率=0.000026525157790 fraction；初始H无量纲作用量=11.107412712 dimensionless。
 
 **审核状态**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review。
 
