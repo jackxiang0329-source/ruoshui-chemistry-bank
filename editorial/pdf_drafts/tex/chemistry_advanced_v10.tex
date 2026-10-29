@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第10辑 (68题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第10辑 (72题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -400,6 +400,28 @@ Q2分数 = 0.142857143 fraction；Q3分数 = 0.571428571 fraction；Q4分数 = 0
 单一发光态、三条带穷尽发光、无再吸收；与先前激发态多通道速率模型可能相似，人工跨辑比较待办。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I118 · 协同自旋交叉固体的双稳态自由能、曲率与旋节}
+\noindent\textbf{题目}\par
+某假想Fe(II)自旋交叉晶体在300.0 K时高自旋摩尔分数x，低自旋为1−x。平均场摩尔自由能G=x(ΔH−TΔS)+RT[x ln x+(1−x)ln(1−x)]+Ωx(1−x)，ΔH=15.000 kJ/mol，ΔS=50.000 J/(mol K)，Ω=8.000 kJ/mol，R=8.314462618 J/(mol K)，纯低自旋G(0)=0，电子简并度已计入ΔS。求所有驻点及稳定性、两个稳定分数、自由能、中央势垒、两处曲率、旋节组成和零偏置曲率阈值温度；说明阈值为何不能直接等同实际相变温度，并验证物理根。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 先统一能量单位：ΔH=15000 J/mol，Ω=8000 J/mol，RT=2494.3387854 J/mol；300 K时ΔH−TΔS=0。
+\item 驻点满足G′=RT ln[x/(1−x)]+Ω(1−2x)=0，x=0.5恒为一根。
+\item 在0<x<0.5用二分法得x\_L=0.0541812699218；对称性给x\_H=0.945818730078。
+\item 二阶导数G″=RT/[x(1−x)]−2Ω，x\_L处为32674.147034 J/mol>0，两外侧根为局域极小值。
+\item 中央G″(0.5)=-6022.644858 J/mol<0，是不稳定极大值。
+\item 稳定态G(x\_L)=G(x\_H)=-115.460629525 J/mol；G(0.5)=271.056103539 J/mol，势垒=386.516733063 J/mol。
+\item 旋节条件G″=0，即x(1−x)=RT/(2Ω)，解为0.1932365310与0.8067634690。
+\item 零偏置曲率阈值T*=Ω/(2R)=481.089420180 K；但ΔH−TΔS在此温度并非零，因此它不自动是本材料实际相变温度。
+\item 检查0<x\_L<x\_sp−<0.5<x\_sp+<x\_H<1，外侧曲率正、中央曲率负、势垒正；平均场忽略界面能和成核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+低稳定分数 = 0.0541812699 fraction；高稳定分数 = 0.94581873 fraction；稳定自由能 = -115.46063 J/mol；势垒 = 386.516733 J/mol；稳定曲率 = 32674.147 J/mol；中央曲率 = -6022.64486 J/mol；左旋节 = 0.193236531 fraction；右旋节 = 0.806763469 fraction；零偏置阈值 = 481.08942 K\par
+\noindent\textbf{模型前提：}
+均匀自旋态平均场，忽略成核及界面；跨辑与自旋统计及相分离模型仍需人工对照。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第10辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -765,6 +787,28 @@ H2O放出量 = 4 mmol；CO2放出量 = 6 mmol；Mg(OH)2初始质量分数 = 0.23
 E\_X = 0.434598209 fraction；T1\_X = 1.2 s；C\_X = 3.5 mmol/L；Ernst角 = 64.24027 degree；30度相对最优信号 = 0.72208594 fraction；错误表观浓度 = 5.02937858 mmol/L；恢复因子比 = 1.43696531 ratio；30/90信号比 = 0.801761424 ratio；未知/标准90信号比 = 1.50881357 ratio\par
 \noindent\textbf{模型前提：}
 相同接收常数、完全破坏横向相干、无NOE和脉冲误差；需人工对照旧辑NMR数学模型。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A118 · 常相位阻抗元件的三频复数反演与频率外推}
+\noindent\textbf{题目}\par
+电极的小信号阻抗Z(ω)=R\_s+[R\_ct\textasciicircum{}−1+Q(iω)\textasciicircum{}α]\textasciicircum{}−1，ω=2πf，已知R\_s=20.000 Ω，0<α<1、Q>0、R\_ct>0，按e\textasciicircum{}\{iωt\}相量约定。1、10、100 Hz观测复阻抗依次为(259.4723601902123−23.9656379457135i)、(179.89697311271587−86.10037409164481i)、(46.06545297144797−45.90977746706515i) Ω。设为给定精度下的理想模型值。求α、Q、R\_ct及其电导、50 Hz复阻抗的实部虚部与模、1 Hz总阻抗相角和CPE导纳相角。利用差分导纳的模与相位独立核验唯一性、量纲与被动性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对三频Z扣除R\_s后取复倒数Y\_k=1/(Z\_k−R\_s)，单位S。
+\item 模型Y\_k=G\_ct+Qω\_k\textasciicircum{}αexp(iπα/2)，G\_ct=1/R\_ct为实数。
+\item 相邻频率比10，差分ΔY\_32/ΔY\_21=10\textasciicircum{}α，由模比反演α=0.800000000。
+\item 差分导纳相角argΔY\_21=πα/2=72°，独立验证由模比得到的α。
+\item Q=|ΔY\_21|/(ω\_2\textasciicircum{}α−ω\_1\textasciicircum{}α)=1.000000×10⁻⁴ S·s\textasciicircum{}α，不能误标法拉。
+\item 从Y\_1扣去Qω\_1\textasciicircum{}αexp(iπα/2)，余实部G\_ct=0.004000000 S，R\_ct=250.000 Ω；虚部残差近零。
+\item 预测50 Hz阻抗Z=70.6923799784−67.7960740666i Ω，模=97.9475382328 Ω。
+\item 1 Hz总阻抗相角为-5.277036389°，CPE导纳相角为72°，二者不可混同。
+\item 检查ReZ>R\_s、ImZ<0、0<α<1、Q>0、R\_ct>0，复数方程在输入精度内闭合。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+alpha = 0.8 fraction；Q = 0.0001 S*s\textasciicircum{}alpha；Rct = 250 ohm；Gct = 0.004 S；50Hz实部 = 70.69238 ohm；50Hz虚部 = -67.7960741 ohm；50Hz模 = 97.9475382 ohm；1Hz相角 = -5.27703639 degree；CPE相角 = 72 degree\par
+\noindent\textbf{模型前提：}
+线性小信号，无扩散和寄生电感；与既有电化学及反问题模型需人工比较。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -1133,6 +1177,28 @@ b1 = 72.0443865 m/z；b2 = 129.065846 m/z；b3 = 216.097876 m/z；b4 = 315.16628
 理想b/y离子，无中性丢失、同质量修饰或未列残基；与旧辑肽合成收率不同，待人工复核。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O115 · 双向光致烯烃异构化的光稳态、暗回复与光子收支}
+\noindent\textbf{题目}\par
+假想烯烃Z⇌E在均匀单色光下受光子通量F=2.000×10\textasciicircum{}16 photons/(cm²s)照射，吸收截面σ\_Z=2.000×10\textasciicircum{}−17 cm²、σ\_E=1.000×10\textasciicircum{}−17 cm²，光致Z→E量子产率0.3500、E→Z量子产率0.2000；暗反应E→Z一级速率0.03000 s\textasciicircum{}−1，反向暗反应忽略。初始全部为Z，样品足够稀、无光屏蔽和副反应，每次吸光最多引起一次异构化。求光照正反有效速率、光稳态E分数及E/Z比、时间常数、照光10 s的E分数、先达稳态后关灯8 s的E分数、稳态每分子吸光率、光致正反与暗回复速率、净光化学转化/吸收光子，并验证物料与光子收支。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 光致Z→E速率k\_f=Fσ\_ZΦ\_ZE=0.140000 s⁻¹，光致E→Z为0.040000 s⁻¹。
+\item 加上暗E→Z速率，逆向总速率k\_b=0.070000 s⁻¹。
+\item 令x为E分数，dx/dt=k\_f(1−x)−k\_b x，Z分数为1−x。
+\item 光稳态x\_ss=k\_f/(k\_f+k\_b)=2/3，E/Z=2；此值不是热力学平衡常数。
+\item 从x(0)=0解x(t)=x\_ss[1−exp(−(k\_f+k\_b)t)]，τ=4.761904762 s，10 s时x=0.5850290478。
+\item 稳态关灯后dx/dt=−0.03x，8 s后x=0.5244185740。
+\item 稳态每分子吸光率F[σ\_Z(1−x\_ss)+σ\_E x\_ss]=0.2666666667 photons/(molecule·s)。
+\item 稳态光致正向=0.0466666667、光致逆向=0.0266666667、暗回复=0.0200000000 s⁻¹；前两者之差等于暗回复。
+\item 净光化学转化/吸收光子=(正向−光逆向)/吸光率=0.0750000000；总dx/dt=0仍持续吸光，0≤x≤1。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+正向速率 = 0.14 s\textasciicircum{}-1；总逆向速率 = 0.07 s\textasciicircum{}-1；稳态E分数 = 0.666666667 fraction；E/Z = 2 ratio；时间常数 = 4.76190476 s；照光10s E = 0.585029048 fraction；暗8s E = 0.524418574 fraction；吸光率 = 0.266666667 photons/(molecule*s)；光正向 = 0.0466666667 s\textasciicircum{}-1；光逆向 = 0.0266666667 s\textasciicircum{}-1；暗回复 = 0.02 s\textasciicircum{}-1；净转化每光子 = 0.075 fraction\par
+\noindent\textbf{模型前提：}
+恒弱光、一级光化学、无副反应；旧辑双态动力学的方程级相似性需人工复核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第10辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -1498,6 +1564,28 @@ A、B由理想储库固定、质量作用动力学且已无量纲化；仅作局
 自由能差 = 3 kJ/mol；正向耗散 = 1.2 kJ/mol；反向耗散 = 1.2 kJ/mol；做功方差 = 5.98641308 (kJ/mol)\textasciicircum{}2；做功标准差 = 2.44671475 kJ/mol；Jarzynski正向 = 3 kJ/mol；Jarzynski反向 = -3 kJ/mol；交点 = 3 kJ/mol；零功密度比 = 0.30037501 ratio；平均熵产生 = 0.48108942 k\_B units；平均功减自由能 = 1.2 kJ/mol\par
 \noindent\textbf{模型前提：}
 共同高斯方差且严格满足Crooks，理想采样；跨辑模型独立性与实验适用性待专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P115 · Onsager耦合表面反应的逆驱动与熵产生正定性}
+\noindent\textbf{题目}\par
+假想催化表面两条反应通道满足近平衡线性Onsager关系J\_i=Σ\_jL\_ij A\_j。反应亲和势A\_1=+200.0 J/mol、A\_2=−80.0 J/mol，T=298.15 K。L\_11=4.000×10⁻⁹、L\_12=L\_21=1.500×10⁻⁹、L\_22=3.000×10⁻⁹ mol²/(J m²s)，J\_i单位mol/(m²s)，面耗散功率Tσ=Σ\_iJ\_i A\_i。求两通量、面耗散功率与熵产生率、L两特征值、无量纲耦合强度、使J2=0的停滞亲和势A2、此时J1和耗散功率、detL。解释逆亲和势通道J2>0为何不违反第二定律，核验单位和正定性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item L为对称2×2矩阵，L乘J/mol得通量mol/(m²s)。
+\item J1=L11A1+L12A2=6.800×10⁻⁷ mol/(m²s)。
+\item J2=L21A1+L22A2=6.000×10⁻⁸ mol/(m²s)，虽然A2为负，耦合使通量为正。
+\item 总Tσ=J1A1+J2A2=1.312×10⁻⁴ W/m²>0，第二通道贡献为−4.8×10⁻⁶ W/m²。
+\item 熵产生率σ=Tσ/T=4.40046956230e-7 W/(m² K)。
+\item 特征值λ±=[L11+L22±√((L11−L22)²+4L12²)]/2，得1.91886116992e-9与5.08113883008e-9 mol²/(J m²s)，均正。
+\item 耦合强度L12/√(L11L22)=0.433012701892<1，detL=9.75000000000e-18 [mol²/(J m²s)]²>0。
+\item 停滞J2=0时A2=−L12A1/L22=−100 J/mol，J1=(L11−L12²/L22)A1=6.500×10⁻⁷ mol/(m²s)。
+\item 停滞Tσ=J1A1=1.300×10⁻⁴ W/m²；正定L保证所有非零亲和势的总耗散非负，不能外推强非线性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+J1 = 6.8e-07 mol/(m\textasciicircum{}2*s)；J2 = 6e-08 mol/(m\textasciicircum{}2*s)；耗散 = 0.0001312 W/m\textasciicircum{}2；熵产生 = 4.40046956e-07 W/(m\textasciicircum{}2*K)；小特征值 = 1.91886117e-09 mol\textasciicircum{}2/(J*m\textasciicircum{}2*s)；大特征值 = 5.08113883e-09 mol\textasciicircum{}2/(J*m\textasciicircum{}2*s)；耦合强度 = 0.433012702 fraction；停滞A2 = -100 J/mol；停滞J1 = 6.5e-07 mol/(m\textasciicircum{}2*s)；停滞耗散 = 0.00013 W/m\textasciicircum{}2；detL = 9.75e-18 [mol\textasciicircum{}2/(J*m\textasciicircum{}2*s)]\textasciicircum{}2\par
+\noindent\textbf{模型前提：}
+线性近平衡、温度均匀、Onsager互易；专家及跨辑模型审查待办。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
