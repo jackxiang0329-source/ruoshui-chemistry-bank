@@ -43,6 +43,11 @@ Object.assign(witnesses,{
 "UC-ADV12-I157":()=>{const R=8.314462618,H=18000,S=65,g=5,T=300,k=t=>g*Math.exp(S/R-H/(R*t)),K=k(T),p=K/(1+K),p2=k(350)/(1+k(350)),half=H/(S+R*Math.log(g)),U=H*p,C=H*H*p*(1-p)/(R*T*T),m2=p*4.9**2,E=-R*(p*Math.log(p)+(1-p)*Math.log(1-p))+p*(S+R*Math.log(5));assert.ok(p>0&&p<1&&p2>p);return[K,p,1-p,p2,half,U,C,m2,Math.sqrt(m2),E,K/(1+K),1,H-T*(S+R*Math.log(5))];},
 "UC-ADV12-A157":()=>{const A=[.25,.55],s=[.5,2.5],blank=.1,m=(A[1]-A[0])/(s[1]-s[0]),Cx=(A[0]-blank)/m-s[0],Cx2=(A[1]-blank)/m-s[1];assert.ok(Math.abs(Cx-Cx2)<1e-12);return[m,blank,Cx/1000,Cx*1000,A[0]-blank,A[0]-blank,A[1]-blank,A[1]/A[0],(Cx/1000)/.001,A[0]/m,A[1]/m,A[1]-A[0],Cx/1000*.004*1e6];}
 });
+
+Object.assign(witnesses,{
+"UC-ADV12-I158":()=>{const K=2e-6,lo=.001,hi=.1,a0=5.41e-8,b=.1,NA=6.02214076e23,e=1.602176634e-19,mu=.05,Ce=140.116,O=15.999;const del=p=>Math.exp((Math.log(K)-Math.log(2)-.5*Math.log(p))/3),d=del(lo),D=del(hi),a=a0*(1+b*d),A=a0*(1+b*D),n=4/a**3,rho=(dd,aa)=>4*(Ce+(2-dd)*O)/(NA*aa**3),v=n*d,c=n*2*d;assert.ok(d<.5&&D<d&&Math.abs(c-2*v)<1e-6);return[d,D,D/d,d/2,2*d,a*1e8,A*1e8,n,v,c,e*mu*c,rho(d,a),rho(D,A),Math.log(D/d)/Math.log(hi/lo),2*d**3*Math.sqrt(lo)];},
+"UC-ADV12-O154":()=>{const R=8.314462618,T=320,h=6.62607015e-34,kb=1.380649e-23,GA=3000,BA=83000,BB=78000,n=.01,t=2,K=Math.exp(-GA/(R*T)),pA=1/(1+K),pB=K/(1+K),ka=kb*T/h*Math.exp(-BA/(R*T)),kb2=kb*T/h*Math.exp(-BB/(R*T)),a=pA*ka,b=pB*kb2,rate=a+b,X=-Math.expm1(-rate*t),mA=n*X*a/rate,mB=n*X*b/rate,remain=n*(1-X),diff=GA+BB-BA;assert.ok(Math.abs(mA+mB+remain-n)<1e-15&&b/a>1);return[K,pA,pB,ka,kb2,a,b,rate,b/a,Math.exp(-diff/(R*T)),X,mA,mB,remain,1/rate,diff/1000,mA+mB+remain];}
+});
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();
