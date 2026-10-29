@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 44,
+  "current_draft_count": 48,
   "expert_approved": 0,
-  "preliminary_flags": 10,
+  "preliminary_flags": 14,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -64,6 +64,30 @@
       "new_id": "UC-ADV11-P133",
       "prior_id": "UC-ADV11-P129",
       "reason": "均含电化学电位，但膜Goldman与Gouy-Chapman双电层可能有模型共性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-I137",
+      "prior_id": "UC-ADV11-I126",
+      "reason": "均为氧缺陷，但Gd受主掺杂-扩散-电导与Fe价态TGA反演不同，仍需逐式对比。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-A137",
+      "prior_id": "UC-ADV11-A129",
+      "reason": "均为光谱/传输反演，但电泳EOF与旋转扩散各有不同模型，需人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-O134",
+      "prior_id": "UC-ADV11-O130",
+      "reason": "都是耦合反应速率矩阵；本题可逆环加成双通道，前题手性酶反应消旋，数学模型同为线性ODE，必须人工核查实质相似性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-P134",
+      "prior_id": "UC-ADV11-P125",
+      "reason": "均用温度依赖热力学动力学，但折叠ΔCp Gibbs自由能与Avrami动力学不同，需比对。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -331,6 +355,30 @@
       "model_family": "Goldman-Hodgkin-Katz-K-Na-Cl-membrane-potential-sensitivity",
       "judgement": "pending_human_comparison",
       "screening": "独立机器计算witness待CI回归；跨辑核心模型的原创性与化学科学性需人工专家逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV11-I137",
+      "model_family": "ceria-Gd-acceptor-doping-oxygen-vacancy-Nernst-Einstein-diffusion-Haven",
+      "judgement": "pending_human_comparison",
+      "screening": "独立主要答案向量已编写、自动核验与跨辑历史初筛必须通过CI；化学科学性、数学模型独立性、著作权待人工专家复核。"
+    },
+    {
+      "new_id": "UC-ADV11-A137",
+      "model_family": "capillary-electrophoresis-EOF-mobility-migration-diffusion-zeta-resolution",
+      "judgement": "pending_human_comparison",
+      "screening": "独立主要答案向量已编写、自动核验与跨辑历史初筛必须通过CI；化学科学性、数学模型独立性、著作权待人工专家复核。"
+    },
+    {
+      "new_id": "UC-ADV11-O134",
+      "model_family": "reversible-Diels-Alder-endo-exo-kinetics-three-state-matrix-exponential",
+      "judgement": "pending_human_comparison",
+      "screening": "独立主要答案向量已编写、自动核验与跨辑历史初筛必须通过CI；化学科学性、数学模型独立性、著作权待人工专家复核。"
+    },
+    {
+      "new_id": "UC-ADV11-P134",
+      "model_family": "two-state-unfolding-positive-heat-capacity-cold-denaturation-Gibbs-Helmholtz",
+      "judgement": "pending_human_comparison",
+      "screening": "独立主要答案向量已编写、自动核验与跨辑历史初筛必须通过CI；化学科学性、数学模型独立性、著作权待人工专家复核。"
     }
   ]
 }

@@ -65,6 +65,12 @@ Object.assign(witness,{
 "UC-ADV11-O133":()=>{const R=8.314462618,T1=298.15,T2=320,p=(8.4-3)/9,q=(7.95-3)/9,K=p/(1-p),L=q/(1-q),H=-R*Math.log(L/K)/(1/T2-1/T1),S=R*Math.log(K)+H/T1,V=Math.exp(S/R-H/(R*350));assert.ok(p>0&&p<1&&q>0&&q<1);return[p,1-p,K,q,1-q,L,-R*T1*Math.log(K),H,S,V,V/(1+V)];},
 "UC-ADV11-P133":()=>{const V=1000*8.314462618*310/96485.33212,N=2*5+.5*145+150,D=2*140+.5*10+150,sK=V*2*(5/N-140/D),sN=V*.5*(145/N-10/D),sC=V*(150/N-150/D);assert.ok(Math.abs(sK+sN+sC)<1e-12);return[N,D,N/D,V*Math.log(N/D),V*Math.log(5/140),V*Math.log(145/10),0,sK,sN,sC];}
 });
+Object.assign(witness,{
+"UC-ADV11-I137":()=>{const x=.2,a=.542e-9,Z=4,NA=6.02214076e23,T=800,T2=900,sigma=.015*100,H=.7,e=1.602176634e-19,k=1.380649e-23;const delta=x/2,M=.8*140.116+.2*157.25+(2-delta)*15.999,n=Z*delta/a**3,D=sigma*k*T/(H*n*(2*e)**2),f=6*D/(a/2)**2,ratio=Math.exp(.7/8.617333262145e-5*(1/T-1/T2));assert.ok(D>0&&ratio>1&&Math.abs(.8*4+.2*3-1.9*2)<1e-12);return[delta,Z*delta,M,Z*M/1000/(NA*a**3),n,D,f,ratio,D*ratio,.015*ratio*T/T2];},
+"UC-ADV11-A137":()=>{const E=18000/.6,app=t=>.5/(E*t),eof=app(250),mx=app(180),my=app(320),sx=Math.sqrt(2*6e-10*180**3)/.5,sy=Math.sqrt(2*8e-10*320**3)/.5,eps=78.5*8.8541878128e-12;assert.ok(mx>eof&&my<eof&&my>0);return[E,eof,mx,my,eof,mx-eof,my-eof,-eof*.00089/eps,sx,sy,140/(2*(sx+sy))];},
+"UC-ADV11-O134":()=>{const ke=.06,kx=.025,re=.01,rx=.005,dt=30/30000;let A=1,E=0,X=0;const f=y=>[-(ke+kx)*y[0]+re*y[1]+rx*y[2],ke*y[0]-re*y[1],kx*y[0]-rx*y[2]];let z=[A,E,X];for(let i=0;i<30000;i++){const k1=f(z),k2=f(z.map((v,j)=>v+dt*k1[j]/2)),k3=f(z.map((v,j)=>v+dt*k2[j]/2)),k4=f(z.map((v,j)=>v+dt*k3[j]));z=z.map((v,j)=>v+dt*(k1[j]+2*k2[j]+2*k3[j]+k4[j])/6);} [A,E,X]=z;const tr=-(ke+re+kx+rx),det=(ke+re)*(kx+rx)-ke*kx,w=Math.sqrt(tr*tr-4*det);assert.ok(Math.abs(A+E+X-1)<1e-12&&Math.abs(A-1/12)>.01);return[A,E,X,E+X,E/(E+X),1/12,1/2,5/12,(tr-w)/2,(tr+w)/2,ke/re,kx/rx];},
+"UC-ADV11-P134":()=>{const M=350,H=200,C=5,R=.008314462618,g=t=>H*(1-t/M)+C*((t-M)-t*Math.log(t/M)),star=M*Math.exp(-H/(M*C));let lo=250,hi=300;for(let i=0;i<110;i++){let mid=(lo+hi)/2;if(g(mid)>0)hi=mid;else lo=mid;}let cold=(lo+hi)/2,t=298.15,enthalpy=H+C*(t-M),entropy=H/M+C*Math.log(t/M),dG=g(t),K=Math.exp(-dG/(R*t));assert.ok(cold<star&&star<M&&Math.abs(g(cold))<1e-11);return[cold,star,g(star),dG,enthalpy,entropy,K/(1+K),K,g(250),g(M),g(400)];}
+});
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();
