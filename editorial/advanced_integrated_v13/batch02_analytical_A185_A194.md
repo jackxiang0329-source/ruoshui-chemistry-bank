@@ -93,11 +93,11 @@ ICP–MS测量63Cu/65Cu的原子数比，假设测量质量歧视遵循R_meas=R_
 
 ### 题目
 
-298.15 K玻璃电极在缓冲液pH=4.000时读数E4=+0.18000 V、pH=10.000时读数E10=−0.17496 V，未知水样电极读数Eunk=+0.002520 V。假定电位对pH的经验直线E=E0−S pH在上述范围成立，无液接电位及温度变化，理论Nernst斜率为2.303RT/F。由两点求经验S和截距E0，计算未知样pH、对应H⁺活动度、经验斜率与理论斜率的相对偏差，并用三个点检验残差。
+298.15 K玻璃电极在缓冲液pH=4.000时读数E4=+0.18000 V、pH=10.000时读数E10=−0.17496 V，未知水样电极读数Eunk=+0.002520 V。假定电位对pH的经验直线E=E0−S pH在上述范围成立，无液接电位及温度变化，理论Nernst斜率为ln(10)RT/F。由两点求经验S和截距E0，计算未知样pH、对应H⁺活动度、经验斜率与理论斜率的相对偏差，并用三个点检验残差。
 
 ### 推导
 
-1. 实验模型、全部已知数值与明确的未知量：298.15 K玻璃电极在缓冲液pH=4.000时读数E4=+0.18000 V、pH=10.000时读数E10=−0.17496 V，未知水样电极读数Eunk=+0.002520 V。假定电位对pH的经验直线E=E0−S pH在上述范围成立，无液接电位及温度变化，理论Nernst斜率为2.303RT/F。由两点求经验S和截距E0，计算未知样pH、对应H⁺活动度、经验斜率与理论斜率的相对偏差，并用三个点检验残差。
+1. 实验模型、全部已知数值与明确的未知量：298.15 K玻璃电极在缓冲液pH=4.000时读数E4=+0.18000 V、pH=10.000时读数E10=−0.17496 V，未知水样电极读数Eunk=+0.002520 V。假定电位对pH的经验直线E=E0−S pH在上述范围成立，无液接电位及温度变化，理论Nernst斜率为ln(10)RT/F。由两点求经验S和截距E0，计算未知样pH、对应H⁺活动度、经验斜率与理论斜率的相对偏差，并用三个点检验残差。
 
 2. 推导所用校准或反演方程：S=(E4−E10)/(10−4)，E0=E4+4S，pHunk=(E0−Eunk)/S。
 
@@ -109,7 +109,7 @@ ICP–MS测量63Cu/65Cu的原子数比，假设测量质量歧视遵循R_meas=R_
 
 6. 实际数值反演第一组：empirical_slope_V_per_pH=0.0591600000000 V/pH；calibration_intercept_V=0.416640000000 V；unknown_pH=7.00000000000 pH。
 
-7. 后续参数与交叉量：hydrogen_activity=1.00000000000e-7 ratio；theoretical_Nernst_slope_V_per_pH=0.0591700097168 V/pH；relative_slope_error=-0.000169168753697 fraction。
+7. 后续参数与交叉量：hydrogen_activity=1.00000000000e-7 ratio；theoretical_Nernst_slope_V_per_pH=0.0591593496857 V/pH；relative_slope_error=0.0000109925866654 fraction。
 
 8. 独立验证和最终结果：reconstructed_E4_V=0.180000000000 V；reconstructed_E10_V=-0.174960000000 V；reconstructed_Eunknown_V=0.00252000000000 V。
 
@@ -125,8 +125,8 @@ ICP–MS测量63Cu/65Cu的原子数比，假设测量质量歧视遵循R_meas=R_
 - calibration_intercept_V=0.416640000000 V
 - unknown_pH=7.00000000000 pH
 - hydrogen_activity=1.00000000000e-7 ratio
-- theoretical_Nernst_slope_V_per_pH=0.0591700097168 V/pH
-- relative_slope_error=-0.000169168753697 fraction
+- theoretical_Nernst_slope_V_per_pH=0.0591593496857 V/pH
+- relative_slope_error=0.0000109925866654 fraction
 - reconstructed_E4_V=0.180000000000 V
 - reconstructed_E10_V=-0.174960000000 V
 - reconstructed_Eunknown_V=0.00252000000000 V

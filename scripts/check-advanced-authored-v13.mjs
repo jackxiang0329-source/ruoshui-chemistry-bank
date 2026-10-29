@@ -60,7 +60,7 @@ Object.assign(witnesses,{
 "UC-ADV13-A189":()=>{let c=.5,d=2,a=2,b=5,KM=(b-a)*c*d/(a*d-b*c),Imax=a*(KM+c)/c,fn=z=>Imax*z/(KM+z);return[Imax,KM,fn(1),fn(5),KM,Imax*KM/(KM+1)**2,Imax/KM,fn(c),fn(d),fn(5)/Imax];},
 "UC-ADV13-A190":()=>{let c=.4*.5/20000,neut=c/120,x=c/100,y=c/150,field=20000/.5;return[field,neut,x,y,x-neut,y-neut,.4/120,.4/100,.4/150,2/3];},
 "UC-ADV13-A191":()=>{let m1=1.003354835,m2=.997034894,delta=m1-m2,M=200;return[delta,M/delta,M/1e4,M/4e4,delta*1e4/M,delta*4e4/M,+(delta>=M/1e4),+(delta>=M/4e4),1e3*delta,4];},
-"UC-ADV13-A192":()=>{let s0=1000,s1=449.328964117,s2=201.896517995,q=s1/s0,z=s2/s1,x=-Math.log(q)/1e9,y=-Math.log(z)/1e9,h=1.380649e-23*298.15/(6*Math.PI*8.9e-4*x)*1e9;return[x,y,(y-x)/x,h,q,s2/s0,Math.log(q),Math.log(z),q*q,s2/s0-q*q];},
+"UC-ADV13-A192":()=>{let s0=1000,s1=449.328964117,s2=201.896517995,q=s1/s0,z=s2/s1,x=-Math.log(q)/1e9,y=-Math.log(z)/1e9,h=1.380649e-23*298.15/(6*Math.PI*8.9e-4*x)*1e9;return[x,y,y/x-1,h,q,s2/s0,Math.log(q),Math.log(z),q*q,s2/s0-q*q];},
 "UC-ADV13-A193":()=>{let y=.1+1.9/(1+Math.pow(2,1.4)),ratio=1.9/(y-.1)-1,c=Math.pow(ratio,1/1.4),s=-1.9*1.4*c**.4/(1+c**1.4)**2;return[y,c,c,s,1/s,Math.abs(.01/s),Math.abs(.01/s/c),.1+1.9/(1+(c/2)**1.4),1/(1+c**1.4),y-.1];},
 "UC-ADV13-A194":()=>{let k=8.617333262145e-5,T=6000,dE=.6,p=(5/3)*2*(500/600),B=Math.exp(-dE/(k*T)),M=p*B,rec=dE/(k*Math.log(p/M)),na=dE/(k*Math.log((10/3)/M));return[M,p,B,rec,5/3*B,5/6,na,na-rec,Math.log(B),k*rec];}
 });
