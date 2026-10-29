@@ -600,6 +600,40 @@ const w={
   return [r,na,cl,alpha,7-Math.log10(r),-R*T/F*Math.log(r),R*T*1000*(na+cl-2*cs)];
  },
 };
+
+ "UC-ADV10-I118":()=>{
+  const rt=8.314462618*300,om=8000,f=x=>Math.log(x/(1-x))+om/rt*(1-2*x),df=x=>1/(x*(1-x))-2*om/rt;
+  let x=.06;for(let i=0;i<30;i++){let y=x-f(x)/df(x);assert.ok(y>0&&y<.5);if(Math.abs(y-x)<1e-15){x=y;break;}x=y;}
+  const energy=t=>rt*(t*Math.log(t)+(1-t)*Math.log(1-t))+om*t*(1-t),curv=t=>rt/(t*(1-t))-2*om;
+  const sp=(1-Math.sqrt(1-2*rt/om))/2;
+  assert.ok(curv(x)>0&&curv(.5)<0&&energy(.5)>energy(x)&&Math.abs(f(x))<1e-12);
+  return [x,1-x,energy(x),energy(.5)-energy(x),curv(x),curv(.5),sp,1-sp,om/(2*8.314462618)];
+ },
+ "UC-ADV10-A118":()=>{
+  const raw=[[259.4723601902123,-23.9656379457135],[179.89697311271587,-86.10037409164481],[46.06545297144797,-45.90977746706515]];
+  const inv=([a,b])=>[a/(a*a+b*b),-b/(a*a+b*b)],y=raw.map(([a,b])=>inv([a-20,b]));
+  const d1=[y[1][0]-y[0][0],y[1][1]-y[0][1]],d2=[y[2][0]-y[1][0],y[2][1]-y[1][1]];
+  const phase=Math.atan2(d1[1],d1[0]),alpha=2*phase/Math.PI;
+  assert.ok(Math.abs(Math.log(Math.hypot(...d2)/Math.hypot(...d1))/Math.log(10)-alpha)<1e-12);
+  const q=Math.hypot(...d1)/((2*Math.PI*10)**alpha-(2*Math.PI)**alpha),G=y[0][0]-q*(2*Math.PI)**alpha*Math.cos(phase);
+  assert.ok(Math.abs(y[0][1]-q*(2*Math.PI)**alpha*Math.sin(phase))<1e-12&&G>0);
+  const w=2*Math.PI*50,ar=G+q*w**alpha*Math.cos(phase),ai=q*w**alpha*Math.sin(phase),den=ar*ar+ai*ai,zr=20+ar/den,zi=-ai/den;
+  return [alpha,q,1/G,G,zr,zi,Math.hypot(zr,zi),Math.atan2(raw[0][1],raw[0][0])*180/Math.PI,phase*180/Math.PI];
+ },
+ "UC-ADV10-O115":()=>{
+  const F=2e16,sZ=2e-17,sE=1e-17,kth=.03,kf=F*sZ*.35,phot=F*sE*.2,kb=phot+kth,ss=kf/(kf+kb);
+  const deriv=x=>kf*(1-x)-kb*x;let x=0,dt=.001;
+  for(let i=0;i<10000;i++){const a=deriv(x),b=deriv(x+dt*a/2),c=deriv(x+dt*b/2),d=deriv(x+dt*c);x+=dt*(a+2*b+2*c+d)/6;}
+  const absorbed=F*(sZ*(1-ss)+sE*ss),fwd=kf*(1-ss),rev=phot*ss,thermal=kth*ss;
+  assert.ok(Math.abs(fwd-rev-thermal)<1e-13&&x>0&&x<ss);
+  return [kf,kb,ss,ss/(1-ss),1/(kf+kb),x,ss*Math.exp(-kth*8),absorbed,fwd,rev,thermal,(fwd-rev)/absorbed];
+ },
+ "UC-ADV10-P115":()=>{
+  const a=4e-9,b=1.5e-9,d=3e-9,x=200,y=-80,T=298.15,j1=a*x+b*y,j2=b*x+d*y,work=x*j1+y*j2,disc=Math.hypot(a-d,2*b);
+  const stop=-b*x/d,jStop=a*x+b*stop,det=a*d-b*b;
+  assert.ok(det>0&&work>0&&j2>0&&y<0&&Math.abs(b*x+d*stop)<1e-18);
+  return [j1,j2,work,work/T,(a+d-disc)/2,(a+d+disc)/2,b/Math.sqrt(a*d),stop,jStop,jStop*x,det];
+ },
 const req={inorganic:{id:"I101",count:0},analytical:{id:"A101",count:0},organic:{id:"O98",count:0},physical:{id:"P98",count:0}};
 const ids=new Set(),titles=new Set(),families=new Set();let all=0;
 function near(a,b,label){

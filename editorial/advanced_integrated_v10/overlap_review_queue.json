@@ -2,7 +2,7 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 68,
+  "current_draft_count": 72,
   "preliminary_flags": 33,
   "pairs": [
     {
@@ -542,6 +542,30 @@
       "model_family": "Crooks-Gaussian-work-Jarzynski-bidirectional-free-energy",
       "judgement": "pending_human_comparison",
       "screening": "Automated numeric witness configured; chemical validity and equation-level novelty await expert review."
+    },
+    {
+      "new_id": "UC-ADV10-I118",
+      "model_family": "cooperative-spin-crossover-mean-field-spinodal-free-energy",
+      "judgement": "pending_human_comparison",
+      "screening": "Numeric witness added; chemistry and equation-level cross-volume novelty await human review."
+    },
+    {
+      "new_id": "UC-ADV10-A118",
+      "model_family": "three-frequency-complex-CPE-admittance-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "Numeric witness added; chemistry and equation-level cross-volume novelty await human review."
+    },
+    {
+      "new_id": "UC-ADV10-O115",
+      "model_family": "photostationary-alkene-isomerization-photon-budget-dark-relaxation",
+      "judgement": "pending_human_comparison",
+      "screening": "Numeric witness added; chemistry and equation-level cross-volume novelty await human review."
+    },
+    {
+      "new_id": "UC-ADV10-P115",
+      "model_family": "Onsager-surface-coupling-uphill-flux-positive-entropy",
+      "judgement": "pending_human_comparison",
+      "screening": "Numeric witness added; chemistry and equation-level cross-volume novelty await human review."
     }
   ]
 }
