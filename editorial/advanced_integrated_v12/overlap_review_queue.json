@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 12,
+  "current_draft_count": 16,
   "expert_approved": 0,
-  "preliminary_flags": 12,
+  "preliminary_flags": 16,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -76,6 +76,30 @@
       "new_id": "UC-ADV12-P150",
       "prior_id": "UC-ADV10-P119",
       "reason": "和历史磁热、表面电分析、异构化、气体模型存在主题可能性，仍须人工逐式核验数学模型等价与新颖性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I154",
+      "prior_id": "UC-ADV10-I120",
+      "reason": "潜在与旧卷磁谱、反应表面及热动力学邻近，模型数学结构新颖性仍需人工比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A154",
+      "prior_id": "UC-ADV10-A114",
+      "reason": "潜在与旧卷磁谱、反应表面及热动力学邻近，模型数学结构新颖性仍需人工比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O151",
+      "prior_id": "UC-ADV11-A147",
+      "reason": "潜在与旧卷磁谱、反应表面及热动力学邻近，模型数学结构新颖性仍需人工比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P151",
+      "prior_id": "UC-ADV10-P123",
+      "reason": "潜在与旧卷磁谱、反应表面及热动力学邻近，模型数学结构新颖性仍需人工比较。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -151,6 +175,30 @@
       "model_family": "van-der-Waals-supercritical-unique-volume-compressibility-Joule-Thomson-enthalpy",
       "judgement": "pending_human_comparison",
       "screening": "独立答案向量、磁熵/法拉第电荷/骨架质量或状态方程约束均已写入，跨辑原创性与实验科学性待人类专家审查。"
+    },
+    {
+      "new_id": "UC-ADV12-I154",
+      "model_family": "vanadium-redox-flow-battery-proton-coupled-Nernst-capacity-limiting-reactant",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值复核、形式电荷、核态分裂、表面位点及非平衡特征根已列入，跨辑模型同构与科学性需人类专家审定。"
+    },
+    {
+      "new_id": "UC-ADV12-A154",
+      "model_family": "copper-EPR-fourline-hyperfine-resonance-gfactor-response-corrected-spin-count",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值复核、形式电荷、核态分裂、表面位点及非平衡特征根已列入，跨辑模型同构与科学性需人类专家审定。"
+    },
+    {
+      "new_id": "UC-ADV12-O151",
+      "model_family": "competitive-Langmuir-Hinshelwood-bimolecular-adsorbed-reactants-optimal-feed",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值复核、形式电荷、核态分裂、表面位点及非平衡特征根已列入，跨辑模型同构与科学性需人类专家审定。"
+    },
+    {
+      "new_id": "UC-ADV12-P151",
+      "model_family": "Brusselator-chemical-oscillator-Jacobian-Hopf-threshold-linear-stability-period",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值复核、形式电荷、核态分裂、表面位点及非平衡特征根已列入，跨辑模型同构与科学性需人类专家审定。"
     }
   ]
 }
