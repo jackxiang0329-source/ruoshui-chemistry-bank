@@ -88,6 +88,11 @@ Object.assign(witnesses,{
 "UC-ADV12-I162":()=>{const k=1e-33,b=1e33,o=(3/b)**.25,poh=-Math.log10(o),ph=14-poh,a=k/o**3,z=b*k*o,S=a+z,s=p=>{const q=10**(p-14),x=k/q**3,y=b*k*q;return[x,y,x+y]},p5=s(5),p7=s(7),p9=s(9);assert.ok(Math.abs(z/(3*a)-1)<1e-12&&p5[2]>S&&p9[2]>S);return[o,poh,ph,a,z,S,z/S,3*a/z,p5[2],p7[2],p9[2],p7[0],p7[1],b*k,0,3*a,z/S];},
 "UC-ADV12-A162":()=>{const b=.1,k=1e8,C=4e-8,tau=20,t1=10,t3=30,S=t=>b+k*C*(1-Math.exp(-t/tau)),I1=S(t1),I3=S(t3),y1=I1-b,y3=I3-b,rat=y3/y1,x=(-1+Math.sqrt(4*rat-3))/2,ta=-t1/Math.log(x),c=y1/(k*(1-x)),lod=3*.02/k;assert.ok(x>0&&x<1&&Math.abs(ta/tau-1)<1e-12);return[I1,I3,y1,y3,rat,x,ta,c,c*1e9,S(20),ta*Math.log(2),lod,lod/(1-Math.exp(-t1/ta)),lod/(1-Math.exp(-t3/ta)),1-Math.exp(-t1/ta),1-Math.exp(-t3/ta),k*C,(y3-y1)/(t3-t1)];}
 });
+
+Object.assign(witnesses,{
+"UC-ADV12-O158":()=>{const kp=300,M=.5,kT=50,T=.1,kd=1,a=kp*M,b=kT*T+kd,p=a/(a+b),q=b/(a+b),m=a/b,dp=1+m,dpw=1+2*m,den=dpw/dp,T2=.05,m2=a/(kT*T2+kd),dp2=1+m2,ktr=(1/(dp-1)-1/(dp2-1))/(T-T2)*a;assert.ok(Math.abs(p+q-1)<1e-12&&Math.abs(ktr-kT)<1e-12);return[a,kT*T,b,p,q,1/b,m,dp,dpw,den,dp*100,dpw*100,q,q*p,1-p**5,kT*T/b,kd/b,dp2,ktr,1/m];},
+"UC-ADV12-P158":()=>{const R=8.314462618,T=298.15,G=3e-6,K=2000,gm=.072,c1=1e-4,c2=.001,NA=6.02214076e23,th=c=>K*c/(1+K*c),ex=c=>G*th(c),g=c=>gm-R*T*G*Math.log1p(K*c),g1=g(c1),g2=g(c2),a=1/(G*NA)*1e18,r=1e-5,rr=.00025,rho=1000,grav=9.81;assert.ok(g2>0&&g2<g1&&g1<gm);return[g1,g2,gm-g1,gm-g2,th(c1),th(c2),ex(c1),ex(c2),-R*T*ex(c1),-R*T*ex(c2),a,ex(c2)*NA,2*g2/r,2*gm/r,2*g2/(rho*grav*rr)*100,2*gm/(rho*grav*rr)*100,g2/gm,-R*T*G];}
+});
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();
