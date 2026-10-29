@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 28,
+  "current_draft_count": 30,
   "expert_approved": 0,
-  "preliminary_flags": 28,
+  "preliminary_flags": 30,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -172,6 +172,18 @@
       "new_id": "UC-ADV12-O154",
       "prior_id": "UC-ADV11-O134",
       "reason": "存在局部缺陷电中性或快速反应动力学的领域相邻项，尚未完成人工跨辑模型排重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A158",
+      "prior_id": "UC-ADV11-A141",
+      "reason": "与历史同位素或传质主题存在潜在相邻内容，科学模型和原创性须专家逐式核验。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P154",
+      "prior_id": "UC-ADV11-P136",
+      "reason": "与历史同位素或传质主题存在潜在相邻内容，科学模型和原创性须专家逐式核验。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -343,6 +355,18 @@
       "model_family": "Curtin-Hammett-rapid-conformer-equilibrium-Eyring-steric-branching-firstorder-integrated",
       "judgement": "pending_human_comparison",
       "screening": "独立数值复算、守恒和理论边界已登记；跨辑模型同构与科学性仍需专家逐式确认。"
+    },
+    {
+      "new_id": "UC-ADV12-A158",
+      "model_family": "Rayleigh-IRMS-stable-carbon-isotope-fractionation-inverse-and-inventory",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值守恒及两端物理边界复核，专家批准仍为零。"
+    },
+    {
+      "new_id": "UC-ADV12-P154",
+      "model_family": "Soret-thermodiffusion-zero-mass-flux-exponential-profile-entropy-production",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值守恒及两端物理边界复核，专家批准仍为零。"
     }
   ]
 }
