@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 46,
+  "current_draft_count": 48,
   "expert_approved": 0,
-  "preliminary_flags": 46,
+  "preliminary_flags": 48,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -280,6 +280,18 @@
       "new_id": "UC-ADV12-P158",
       "prior_id": "UC-ADV11-P138",
       "reason": "聚合物/界面化学领域存在可能的近邻旧题，须人工评估核心模型独创性与实验边界。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I163",
+      "prior_id": "UC-ADV12-I152",
+      "reason": "与历史沉淀平衡或光谱题存在主题邻近，需逐式核查数学模型是否等价并开展专家科学性审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A163",
+      "prior_id": "UC-ADV11-A130",
+      "reason": "与历史沉淀平衡或光谱题存在主题邻近，需逐式核查数学模型是否等价并开展专家科学性审核。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -559,6 +571,18 @@
       "model_family": "Gibbs-Langmuir-nonionic-surfactant-surface-excess-tension-capillarity",
       "judgement": "pending_human_comparison",
       "screening": "独立数值见证已写，统计分布与表面热力学一致性待持续机器及人工审核。"
+    },
+    {
+      "new_id": "UC-ADV12-I163",
+      "model_family": "BaSO4-Davies-divalent-activity-common-ion-solubility-positive-root-saturation-index",
+      "judgement": "pending_human_comparison",
+      "screening": "独立答案见证、质量电荷及测量噪声矩阵检查已登记；专家批准尚未发生。"
+    },
+    {
+      "new_id": "UC-ADV12-A163",
+      "model_family": "dual-wavelength-Beer-Lambert-two-analyte-linear-inversion-covariance-LOD",
+      "judgement": "pending_human_comparison",
+      "screening": "独立答案见证、质量电荷及测量噪声矩阵检查已登记；专家批准尚未发生。"
     }
   ]
 }

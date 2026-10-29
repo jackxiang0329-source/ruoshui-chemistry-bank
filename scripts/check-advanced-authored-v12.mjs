@@ -93,6 +93,11 @@ Object.assign(witnesses,{
 "UC-ADV12-O158":()=>{const kp=300,M=.5,kT=50,T=.1,kd=1,a=kp*M,b=kT*T+kd,p=a/(a+b),q=b/(a+b),m=a/b,dp=1+m,dpw=1+2*m,den=dpw/dp,T2=.05,m2=a/(kT*T2+kd),dp2=1+m2,ktr=(1/(dp-1)-1/(dp2-1))/(T-T2)*a;assert.ok(Math.abs(p+q-1)<1e-12&&Math.abs(ktr-kT)<1e-12);return[a,kT*T,b,p,q,1/b,m,dp,dpw,den,dp*100,dpw*100,q,q*p,1-p**5,kT*T/b,kd/b,dp2,ktr,1/m];},
 "UC-ADV12-P158":()=>{const R=8.314462618,T=298.15,G=3e-6,K=2000,gm=.072,c1=1e-4,c2=.001,NA=6.02214076e23,th=c=>K*c/(1+K*c),ex=c=>G*th(c),g=c=>gm-R*T*G*Math.log1p(K*c),g1=g(c1),g2=g(c2),a=1/(G*NA)*1e18,r=1e-5,rr=.00025,rho=1000,grav=9.81;assert.ok(g2>0&&g2<g1&&g1<gm);return[g1,g2,gm-g1,gm-g2,th(c1),th(c2),ex(c1),ex(c2),-R*T*ex(c1),-R*T*ex(c2),a,ex(c2)*NA,2*g2/r,2*gm/r,2*g2/(rho*grav*rr)*100,2*gm/(rho*grav*rr)*100,g2/gm,-R*T*G];}
 });
+
+Object.assign(witnesses,{
+"UC-ADV12-I163":()=>{const k=1.1e-10,c=2e-5,f=5e-6,g=I=>Math.exp(-Math.LN10*.51*4*(Math.sqrt(I)/(1+Math.sqrt(I))-.3*I)),g1=g(.01),g2=g(.1),s=x=>{const v=k/(x*x);return 2*v/(Math.sqrt(c*c+4*v)+c)},a=s(g1),b=s(g2),y1=(c+a)*a,y2=(c+b)*b,Q1=g1*g1*(c+f)*f,Q2=g2*g2*(c+f)*f;assert.ok(b>a&&a>0&&Math.abs(g1*g1*y1/k-1)<1e-12);return[g1,g2,a,b,b/a,c+a,c+b,g1*g1*y1,g2*g2*y2,y1,y2,Q1,Q2,Math.log10(Q1/k),Math.log10(Q2/k),2*(c+a)+2*a,4*a,4*b,Math.sqrt(c*c+4*k/(g1*g1))-c];},
+"UC-ADV12-A163":()=>{const e=[[15000,4000],[3000,12000]],b=[.01,.02],y=[.14,.084],l=1,sd=[.002,.003],D=e[0][0]*e[1][1]-e[0][1]*e[1][0],cx=(e[1][1]*y[0]-e[0][1]*y[1])/(l*D),cy=(-e[1][0]*y[0]+e[0][0]*y[1])/(l*D),v1=(e[1][1]**2*sd[0]**2+e[0][1]**2*sd[1]**2)/(l*D)**2,v2=(e[1][0]**2*sd[0]**2+e[0][0]**2*sd[1]**2)/(l*D)**2,cov=-(e[1][1]*e[1][0]*sd[0]**2+e[0][1]*e[0][0]*sd[1]**2)/(l*D)**2,rx=Math.sqrt(v1),ry=Math.sqrt(v2),A1=b[0]+e[0][0]*cx+e[0][1]*cy,A2=b[1]+e[1][0]*cx+e[1][1]*cy;assert.ok(cx>0&&cy>0&&Math.abs(A1-.15)<1e-12);return[A1,A2,y[0],y[1],D,cx,cy,cx*1e6,cy*1e6,cx/cy,rx,ry,v1,v2,cov,cov/(rx*ry),3*rx,3*ry,A1,A2,cx*e[0][0],cy*e[0][1]];}
+});
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();
