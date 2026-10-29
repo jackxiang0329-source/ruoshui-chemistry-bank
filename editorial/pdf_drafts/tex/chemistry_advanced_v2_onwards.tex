@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (614题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (618题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -12648,6 +12648,33 @@ heat\_capacity\_5K\_J\_molK = 0.0225 J/(mol K)；heat\_capacity\_10K\_J\_molK = 
 真实金属间化合物可能有磁性热容、电子关联、Schottky中心及声子非Debye项；由两点低温拟合得到的Θ\_D只是指定近似的等效参数。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I156 · 立方NiO Christoffel声子传播、弹性各向异性与Hill平均模量}
+\noindent\textbf{题目}\par
+假想岩盐型立方NiO无机单晶，晶胞参数a=4.180 Å、每常规晶胞有4个NiO式量，Ni/O原子量分别58.6934/15.999 g/mol、N\_A=6.02214076×10²³ mol⁻¹。其晶体弹性常数C₁₁=300.0 GPa、C₁₂=100.0 GPa、C₄₄=80.00 GPa，忽略磁弹耦合与晶体缺陷。求式量、晶胞体积、密度、体积模量与四方剪切模量、Zener各向异性比；通过立方晶体Christoffel刚度求[100]的纵/横声速和[110]的纵波及面内[1̄10]横波速度。另计算Voigt、Reuss及Hill多晶平均剪切模量和泊松比，逐项检验Born稳定性、Ni²⁺/O²⁻电中性、弹性模量/密度SI换算及模型边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 把假想岩盐型NiO无机单晶看作立方晶系，室温弹性刚度矩阵由三个独立常数C₁₁、C₁₂、C₄₄表征。
+\item 常规岩盐晶胞中有4个NiO式量；给定a=4.180 Å、Ni/O摩尔原子质量58.6934/15.999 g/mol，用质量除以晶胞体积得到理想密度。
+\item 得到式量M=74.6924000000 g/mol、体积a³=7.30346320000e-29 m³、密度ρ=6792.92247114 kg/m³。
+\item 给C₁₁=300.0 GPa、C₁₂=100.0 GPa、C₄₄=80.00 GPa，立方晶体Born弹性稳定条件为C₁₁−C₁₂>0、C₁₁+2C₁₂>0、C₄₄>0。
+\item 体积模量K=(C₁₁+2C₁₂)/3=166.666666667 GPa，四方剪切常数C'=(C₁₁−C₁₂)/2=100.000000000 GPa。
+\item Zener弹性各向异性比A\_Z=2C₄₄/(C₁₁−C₁₂)=0.800000000000，与各向同性理想值1不同。
+\item 沿[100]方向，Christoffel弹性波本征值为C₁₁（纵波）和C₄₄（两个横波），声速取v=√(λ/ρ)。
+\item 故[100]纵波速度=6645.57094045 m/s，横波速度=3431.75807712 m/s。
+\item 沿[110]方向，纵波刚度(C₁₁+C₁₂+2C₄₄)/2，面内横波[1̄10]刚度(C₁₁−C₁₂)/2，另一横波[001]刚度C₄₄。
+\item 由此计算[110]纵波速度6420.23147944、面内横波速度3836.82217139 m/s，与[100]声速差反映各向异性。
+\item Voigt多晶均匀应变剪切模量G\_V=(C₁₁−C₁₂+3C₄₄)/5，Reuss均匀应力剪切模量G\_R=5(C₁₁−C₁₂)C₄₄/[4C₄₄+3(C₁₁−C₁₂)]。
+\item 得到G\_V=88.0000000000、G\_R=86.9565217391 GPa，Hill平均G\_H=87.4782608696 GPa。
+\item 多晶等效泊松比ν=(3K−2G\_H)/[2(3K+G\_H)]=0.276642984014，满足通常稳定各向同性材料的−1<ν<0.5。
+\item Ni²⁺与O²⁻每式量形式电中性；真实NiO存在反铁磁有序与磁弹耦合、缺陷及温度相关弹性模量，理想单晶与随机多晶平均不可混同。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+NiO\_formula\_mass\_g\_mol = 74.6924 g/mol；unit\_cell\_volume\_m3 = 7.3034632e-29 m3；crystal\_density\_kg\_m3 = 6792.92247 kg/m3；bulk\_modulus\_GPa = 166.666667 GPa；tetragonal\_shear\_modulus\_GPa = 100 GPa；Zener\_anisotropy = 0.8 ratio；longitudinal\_100\_velocity\_m\_s = 6645.57094 m/s；transverse\_100\_velocity\_m\_s = 3431.75808 m/s；longitudinal\_110\_velocity\_m\_s = 6420.23148 m/s；transverse\_1minus10\_velocity\_m\_s = 3836.82217 m/s；Voigt\_shear\_GPa = 88 GPa；Reuss\_shear\_GPa = 86.9565217 GPa；Hill\_shear\_GPa = 87.4782609 GPa；Hill\_Poisson\_ratio = 0.276642984 fraction；Born\_C11\_minus\_C12\_Pa = 2e+11 Pa；Born\_C11\_plus2C12\_Pa = 5e+11 Pa；Born\_C44\_Pa = 8e+10 Pa\par
+\noindent\textbf{模型前提：}
+Ni²⁺与O²⁻每式量形式电中性；真实NiO存在反铁磁有序与磁弹耦合、缺陷及温度相关弹性模量，理想单晶与随机多晶平均不可混同。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -12776,6 +12803,33 @@ central\_resonance\_field\_T = 0.323215944 T；line\_B\_mIplus3over2\_T = 0.3127
 corrected\_acceptor\_photons = 600 photons；gamma\_corrected\_total\_count = 900 effective\_photons；FRET\_efficiency = 0.666666667 fraction；donor\_inefficiency\_fraction = 0.333333333 fraction；interdye\_distance\_nm = 4.45449359 nm；predicted\_donor\_lifetime\_ns = 1.33333333 ns；energy\_transfer\_rate\_ns\_inv = 0.5 ns\textasciicircum{}-1；effective\_photon\_count = 900 photons；ideal\_shotnoise\_sigma\_E = 0.015713484 fraction；propagated\_distance\_sigma\_nm = 0.0524967104 nm；corrected\_acceptor\_to\_donor\_ratio = 2 ratio；total\_acceptor\_correction\_photons = 100 photons；donor\_leakage\_photons = 40 photons；direct\_acceptor\_excitation\_photons = 60 photons；FRET\_geometric\_backcheck = 0.666666667 fraction\par
 \noindent\textbf{模型前提：}
 加权N\_eff只是近似有效计数，实际不确定度应计入串色/γ/直接激发标定误差、暗计数、染料闪烁和光子时间相关；此题不证明实际单分子距离真实精度。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A156 · BET氮气多层吸附双压线性反演、单层容量与比表面积}
+\noindent\textbf{题目}\par
+一种假想多孔无机样品在77.00 K的N₂吸附实验遵循BET模型v=v\_m Cx/[(1−x)(1+(C−1)x)]，x=p/p\_sat，v的单位cm³(STP)/g，v\_m为单层容量，C为吸附热常数。两相对压力x₁=0.1000与x₂=0.3000下分别测得v₁=18.832391713748和v₂=27.297543221110 cm³(STP)/g。N₂分子横截面积为0.1620 nm²，标准状态摩尔气体体积22414 cm³/mol、N\_A=6.02214076×10²³ mol⁻¹、R=8.314462618 J/(mol·K)。对BET方程作直线变换Y=x/[v(1−x)]，由两点反推v\_m、C，预测第三压力x=0.2000的吸附量，计算BET比表面积和在C≈exp[(E₁−E\_L)/RT]假设下的吸附能差，检查正性、单位及模型边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 在77.00 K的理想氮气吸附分析中，采用BET多层吸附模型v=v\_m C x/[(1−x)(1+(C−1)x)]，x=p/p\_sat。
+\item 题设比表面积计算使用氮分子横截面积a\_N2=0.1620 nm²/分子，标准状态摩尔气体体积V\_STP=22414 cm³/mol。
+\item 将BET等温式线性化：Y=x/[v(1−x)]=1/(v\_m C)+[(C−1)/(v\_m C)]x。
+\item 两相对压力x₁=0.1000与x₂=0.3000均在题设BET近似适用的低压范围，且对应氮吸附量v以cm³(STP)/g计。
+\item 两观测吸附量v₁=18.8323917137、v₂=27.2975432211 cm³(STP)/g。
+\item 经BET变换Y₁=0.00590000000000、Y₂=0.0157000000000 (g/cm³ STP)。
+\item 两不同压力使直线斜率s=(Y₂−Y₁)/(x₂−x₁)、截距b=Y₁−s x₁唯一。
+\item 数值结果s=0.0490000000000、b=0.00100000000000，均为正，符合题设C>1的吸附热参数。
+\item 从s+b=1/v\_m和s/b=C−1得到v\_m=1/(s+b)、C=1+s/b。
+\item 反演单层容量v\_m=20.0000000000 cm³(STP)/g、BET常数C=50.0000000000。
+\item 在第三压力x=0.2000时预测v=23.1481481481 cm³(STP)/g，可作非拟合点的独立检验。
+\item 单位质量比表面积S\_BET=(v\_m/V\_STP)N\_A a\_N2，须把0.162 nm²换成0.162×10⁻¹⁸ m²。
+\item 计算S\_BET=87.0515573409 m²/g；若将C≈exp[(E₁−E\_L)/(RT)]视为近似，则一层与液化焓差ΔE=RT lnC=2.50453041603 kJ/mol。
+\item 高压出现毛细凝聚、微孔填充、吸附层结构偏离、孔径与气体截面积不均、样品不完全脱气时，BET常数与计算面积不再可简单解释为真实全部几何面积。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+uptake\_p\_over\_psat0p1\_cm3\_STP\_g = 18.8323917 cm3/g；uptake\_p\_over\_psat0p3\_cm3\_STP\_g = 27.2975432 cm3/g；BET\_transformed\_Y1 = 0.0059 g/cm3；BET\_transformed\_Y2 = 0.0157 g/cm3；BET\_slope = 0.049 g/cm3；BET\_intercept = 0.001 g/cm3；monolayer\_capacity\_cm3\_STP\_g = 20 cm3/g；BET\_C\_constant = 50 dimensionless；predicted\_uptake\_0p2\_cm3\_STP\_g = 23.1481481 cm3/g；N2\_specific\_surface\_area\_m2\_g = 87.0515573 m2/g；first\_layer\_energy\_excess\_kJ\_mol = 2.50453042 kJ/mol；BET\_slope\_fraction\_ratio = 0.98 ratio；first\_point\_transformed\_reconstruction = 0.0059 g/cm3；direct\_BET\_intercept = 0.001 g/cm3\par
+\noindent\textbf{模型前提：}
+高压出现毛细凝聚、微孔填充、吸附层结构偏离、孔径与气体截面积不均、样品不完全脱气时，BET常数与计算面积不再可简单解释为真实全部几何面积。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -12912,6 +12966,33 @@ formed\_AB\_bonds\_M = 0.12 mol/L；polymer\_chain\_concentration\_M = 0.06 mol/
 即使B基团全部消耗，最大理论DP\_n=(N\_A+N\_B)/(N\_A−N\_B)，仍有限；一旦出现分子内环化、支化或缩聚放出小分子，链计数与式量公式需重新推导。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O153 · 对位取代SNAr的Hammett线性自由能反演、动力学转化与活化自由能差}
+\noindent\textbf{题目}\par
+某假想三种对位取代芳香底物在恒定过量亲核试剂作用下发生同一SNAr限速步骤，采用Hammett经验关系log₁₀(k\_X/k\_H)=ρσ\_p。三种取代基的σ\_p分别为给电子基−0.2700、母体0、吸电子基+0.7800，在T=298.15 K下测得伪一级速率分别0.00211348903983665、0.0100000000000000、0.891250938133746 s⁻¹。给定R=8.314462618 J/(mol·K)，且实验中无机理切换。由两端速率和σ反演ρ、母体速率k\_H，求两个极端反应的速率比；吸电子底物在60.00 s内反应不可逆且亲核试剂保持过量，求转化率与半衰期。假定不同取代基Eyring指前因子相同，估算吸电子相对于母体的过渡态活化自由能差；检查log底数、概率、反应骨架守恒及Hammett适用的机理边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假设三种对位取代芳香化合物在相同亲核试剂浓度和溶剂温度下发生同一限速步骤的亲核芳香取代SNAr，均呈伪一级底物消耗。
+\item 以Hammett经验方程log₁₀(k\_X/k\_H)=ρσ\_p描述取代基效应，题设三取代基常数σ\_p分别−0.2700、0、+0.7800。
+\item 正ρ表示对位吸电子基团稳定题设限速过渡态相对于底物并加快反应；模型只适用于无机理改变的同源取代基系列。
+\item 给定基准未取代母体速率k\_H=0.01000 s⁻¹、Hammett系数ρ=+2.500。
+\item 三种实测速率分别0.00211348903984、0.0100000000000、0.891250938134 s⁻¹，吸电子取代基的速率最高。
+\item 对两个不同σ取差：log₁₀(k\_EWG/k\_EDG)=ρ(σ\_EWG−σ\_EDG)，直接消去母体速率k\_H。
+\item 由两端数据反演ρ=2.50000000000，再由σ=0的中间取代基恢复k\_H=0.0100000000000 s⁻¹。
+\item 吸电子与给电子两端速率之比k\_EWG/k\_EDG=421.696503429，体现取代基常数差而非反应物绝对浓度差。
+\item 对于最强吸电子的体系，假设亲核试剂恒定、反应不可逆，剩余底物分数exp(−kt)，产物转化率1−exp(−kt)。
+\item 反应60.00 s后的转换率X=1.00000000000，剩余底物分数=0.00000000000。
+\item 该体系伪一级半衰期t₁/₂=ln2/k=0.777723928136 s，适用时间尺度应与核磁/色谱监测采样间隔相匹配。
+\item 在相同温度及Eyring指前因子近似相同的假设下，过渡态活化自由能差ΔΔG‡=−RT ln(k\_EWG/k\_H)。
+\item 计算ΔΔG‡=-11.1306185297 kJ/mol，为负，符合吸电子基团加速的符号预期；不应将经验ρ误写为绝对反应活化焓。
+\item 若强取代基改变亲核进攻位点、形成不同Meisenheimer中间体、溶剂化或多限速步骤，线性Hammett关系与外推速率不再成立。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+rate\_EDG\_sigma\_minus0p27\_s\_inv = 0.00211348904 s\textasciicircum{}-1；rate\_parent\_sigma\_zero\_s\_inv = 0.01 s\textasciicircum{}-1；rate\_EWG\_sigma\_plus0p78\_s\_inv = 0.891250938 s\textasciicircum{}-1；Hammett\_rho\_true = 2.5 dimensionless；Hammett\_rho\_inferred = 2.5 dimensionless；parent\_rate\_k0\_s\_inv = 0.01 s\textasciicircum{}-1；EWG\_to\_EDG\_rate\_ratio = 421.696503 ratio；EWG\_substrate\_conversion\_60s = 1 fraction；EWG\_unreacted\_fraction = 0 fraction；EWG\_minus\_parent\_activation\_G\_kJmol = -11.1306185 kJ/mol；EWG\_half\_life\_s = 0.777723928 s；log\_rate\_ratio\_extremes = 2.625 dimensionless；exposure\_k\_t = 53.4750563 dimensionless；EWG\_to\_parent\_rate\_ratio = 89.1250938 ratio；sigma\_difference\_extremes = 1.05 dimensionless\par
+\noindent\textbf{模型前提：}
+若强取代基改变亲核进攻位点、形成不同Meisenheimer中间体、溶剂化或多限速步骤，线性Hammett关系与外推速率不再成立。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第12辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -13044,6 +13125,33 @@ stable\_fixed\_x = 2 fraction；stable\_fixed\_y = 2.4 fraction；stable\_trace 
 ambipolar\_diffusivity\_m2\_s = 1.33333333e-09 m2/s；concentration\_gradient\_mol\_m4 = -100000 mol/m4；salt\_flux\_mol\_m2\_s = 0.000133333333 mol/(m2 s)；diffusion\_potential\_right\_minus\_left\_mV = 5.93624626 mV；cation\_transference\_fraction = 0.666666667 fraction；anion\_transference\_fraction = 0.333333333 fraction；each\_ion\_charge\_current\_magnitude\_A\_m2 = 12.8647109 A/m2；net\_electric\_current\_A\_m2 = 0 A/m2；slab\_longest\_mode\_time\_s = 75.9908877 s；log\_right\_left\_activity\_ratio = -0.693147181 dimensionless；left\_electrolyte\_M = 0.2 mol/L；right\_electrolyte\_M = 0.1 mol/L；diffusion\_coefficient\_ratio = 2 ratio；dimensionless\_potential = 0.23104906 dimensionless；relative\_ambipolar\_diffusivity = 0.444444444 ratio\par
 \noindent\textbf{模型前提：}
 模型需局部电中性、无限稀活度、无对流、浓差边界固定且无显著Debye层；多价离子、浓电解质非理想、膜固定电荷或外加电流时须解更完整Poisson–Nernst–Planck方程。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P153 · 球形多孔催化剂Thiele模数的反应—扩散边值解与有效因子}
+\noindent\textbf{题目}\par
+一个球形多孔催化剂颗粒半径R\_p=1.000 mm，内部反应物A发生一级不可逆反应k=0.01000 s⁻¹、有效扩散系数D\_eff=1.000×10⁻⁹ m²/s，外部液体足够搅拌使球面浓度固定c\_s=1.000 mol/m³，忽略颗粒温度梯度、外部膜阻力及孔结构变形。稳态球对称反应扩散方程D\_eff(r⁻²)d/dr(r²dc/dr)−kc=0，中心要求有限。推导解析浓度分布、Thiele模数φ、中心浓度、球形有效因子η=3(φcothφ−1)/φ²，计算球体积、表面积、体积反应速率与表面扩散通量并独立比对二者总摩尔数，检查扩散长度、φ→0与φ→∞两端极限及实验模型范围。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 考虑半径R\_p=1.000 mm的球形多孔催化剂颗粒，颗粒内部有单一反应物A发生一级不可逆反应，体积有效常数k=0.01000 s⁻¹。
+\item 有效分子扩散系数D\_eff=1.000×10⁻⁹ m²/s，颗粒外部膜阻力忽略，球外表面浓度固定c\_s=1.000 mol/m³。
+\item 稳态球对称质量守恒为D\_eff(1/r²)d/dr(r²dc/dr)−kc=0，边界r=R\_p处c=c\_s、中心r=0的浓度与通量有限。
+\item 引入Thiele模数φ=R\_p√(k/D\_eff)，无量纲；固有扩散反应长度l=√(D\_eff/k)。
+\item 对常系数径向方程可得c(r)/c\_s=[R\_p/r]sinh(φr/R\_p)/sinhφ；中心极限用sinhz/z→1。
+\item 本题φ=3.16227766017，中心表面浓度比c(0)/c\_s=φ/sinhφ=0.268194031271。
+\item 颗粒有效因子η定义实际总反应速率与若整个颗粒浓度均为c\_s时的理想体积反应速率之比。
+\item 对球体积积分∫k c(r)dV，得η=(3/φ²)(φ cothφ−1)，可由球面扩散通量独立推出。
+\item 数值η=0.652089031266，在0与1之间，表明内部扩散造成有效反应速率下降。
+\item 球体积V\_p=4.18879020479e-9 m³、表面积A\_p=0.0000125663706144 m²，因此实际转化总速率=2.73146414682e-11 mol/s。
+\item 外表面向内的物质通量大小J\_s=D\_eff c\_s(φcothφ−1)/R\_p=0.00000217363010422 mol/(m²·s)。
+\item 表面积乘通量=2.73146414682e-11 mol/s，与体积积分总反应速率完全一致，实现稳态扩散–反应质量守恒。
+\item 当φ→0时由双曲函数级数η→1、中心浓度趋c\_s；φ≫1时η≈3/φ，反应集中于外表薄壳。
+\item 本模型以球形、恒定有效扩散、单相等温、一级表观动力学和外部膜传质可忽略为前提；真实多孔载体的孔径扩散、放热、非一级表面覆盖与毒化会改变边界值解。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Thiele\_modulus = 3.16227766 dimensionless；spherical\_effectiveness\_factor = 0.652089031 fraction；center\_surface\_concentration\_ratio = 0.268194031 fraction；center\_concentration\_mol\_m3 = 0.268194031 mol/m3；pellet\_volume\_m3 = 4.1887902e-09 m3；pellet\_area\_m2 = 1.25663706e-05 m2；total\_reaction\_rate\_mol\_s = 2.73146415e-11 mol/s；surface\_molar\_flux\_mol\_m2\_s = 2.1736301e-06 mol/(m2 s)；surface\_flux\_times\_area\_mol\_s = 2.73146415e-11 mol/s；actual\_intrinsic\_rate\_ratio = 0.652089031 ratio；dimensionless\_surface\_gradient = 2.1736301 dimensionless；intrinsic\_over\_actual\_rate\_ratio = 1.53353293 ratio；hyperbolic\_effectiveness\_alternate = 0.652089031 ratio；diffusion\_reaction\_length\_m = 0.000316227766 m\par
+\noindent\textbf{模型前提：}
+本模型以球形、恒定有效扩散、单相等温、一级表观动力学和外部膜传质可忽略为前提；真实多孔载体的孔径扩散、放热、非一级表面覆盖与毒化会改变边界值解。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
