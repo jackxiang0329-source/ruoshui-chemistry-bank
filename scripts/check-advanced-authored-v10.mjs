@@ -692,6 +692,43 @@ const w={
   return [j1,j2,work,work/T,(a+d-disc)/2,(a+d+disc)/2,b/Math.sqrt(a*d),stop,jStop,jStop*x,det];
  },
 };
+
+"UC-ADV10-I122":()=>{
+ const ds=[.12,.30],gaps=[.20,.34],v=Math.sqrt(gaps[0]**2-ds[0]**2)/2;
+ const vals=ds.map(d=>{const a=d/2,b=Math.sqrt(a*a+v*v),gap=2*b;const pA=(b-a)/(2*b),pB=(b+a)/(2*b);return [pA,pB,4*pA*pB,8*v/gap,1239.841984/gap,8065.54429*gap]});
+ assert.ok(v>0&&Math.abs(2*Math.hypot(ds[1]/2,v)-gaps[1])<1e-12);
+ assert.ok(vals.every(z=>z[0]>=0&&z[1]<=1&&Math.abs(z[0]+z[1]-1)<1e-12));
+ return [v,2*Math.hypot(ds[1]/2,v),...vals[0],...vals[1]];
+},
+"UC-ADV10-A122":()=>{
+ const T=298.15,R=8.314462618,F=96485.33212,s=R*T/F*Math.log(10),G=i=>Math.pow(10,-.509*(Math.sqrt(i)/(1+Math.sqrt(i))-.3*i));
+ const e1=-0.042550488434233064,e2=0.025262799877222381,u=10**((e1-.1)/s),v=10**((e2-.2)/s),det=1-.2*.05;
+ const rawA=(u-.2*v)/det,rawB=(v-.05*u)/det,target=rawA+rawB;
+ let lo=1e-12,hi=.02;
+ for(let k=0;k<110;k++){const mid=(lo+hi)/2;if(mid*G(mid)>target)hi=mid;else lo=mid;}
+ const I=(lo+hi)/2,g=G(I),a=rawA/g,b=rawB/g;
+ const gd=G(I/2),ed1=.1+s*Math.log10(gd*(a/2+.2*b/2)),ed2=.2+s*Math.log10(gd*(b/2+.05*a/2));
+ assert.ok(a>0&&b>0&&I<.02&&Math.abs(a+b-I)<1e-13&&Math.abs(.5*(a+b+(a+b))-I)<1e-13);
+ assert.ok(Math.abs(.1+s*Math.log10(g*(a+.2*b))-e1)<1e-12&&Math.abs(.2+s*Math.log10(g*(b+.05*a))-e2)<1e-12);
+ return [s,I,g,a,b,a+b,a/(a+b),b/(a+b),det,gd,ed1,ed2,e1,e2];
+},
+"UC-ADV10-O119":()=>{
+ const R=8.314462618,T=298.15,T2=330,areas=[100,120,20],factors=[1,2,.5],n=areas.map((x,i)=>x/factors[i]),total=n.reduce((a,b)=>a+b,0),p=n.map(x=>x/total);
+ const DG=[0,...p.slice(1).map(x=>R*T*Math.log(p[0]/x)/1000)],z=DG.map(x=>Math.exp(-1000*x/(R*T2))),sum=z.reduce((a,b)=>a+b,0),q=z.map(x=>x/sum);
+ const H=x=>-R*x.reduce((a,b)=>a+b*Math.log(b),0);
+ assert.ok(Math.abs(p.reduce((a,b)=>a+b,0)-1)<1e-14&&Math.abs(q.reduce((a,b)=>a+b,0)-1)<1e-14&&q[2]>p[2]);
+ const bonds=2*.002,electrons=2*bonds;assert.ok(electrons===.008);
+ return [...p,DG[1],DG[2],...q,H(p),H(q),q[2],bonds,electrons];
+},
+"UC-ADV10-P119":()=>{
+ const R=8.314462618,T=298.15,sv=.072,Vm=18e-6,r=5e-9,h1=0.83434907486127119,h2=0.91342710429528595;
+ const cos=-r*R*T*Math.log(h1)/(2*sv*Vm),theta=Math.acos(cos)*180/Math.PI,r2=-2*sv*Vm*cos/(R*T*Math.log(h2));
+ const kelvin=x=>Math.exp(-2*sv*Vm*cos/(x*R*T)),p1=2*sv*cos/r/1e6,p2=2*sv*cos/r2/1e6;
+ assert.ok(cos>0&&cos<1&&r2>r&&h1<.88&&h2>.88&&h2<.95);
+ assert.ok(Math.abs(R*T*Math.log(h1)+Vm*p1*1e6)<1e-9);
+ return [theta,r2*1e9,kelvin(r),kelvin(r2),p1,p2,R*T*Math.log(h1),R*T*Math.log(h2),.15,.15/18,.15+.35,(.15+.35)/18];
+},
+
 const req={inorganic:{id:"I101",count:0},analytical:{id:"A101",count:0},organic:{id:"O98",count:0},physical:{id:"P98",count:0}};
 const ids=new Set(),titles=new Set(),families=new Set();let all=0;
 function near(a,b,label){

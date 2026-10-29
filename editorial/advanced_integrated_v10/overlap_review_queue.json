@@ -2,8 +2,8 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 84,
-  "preliminary_flags": 39,
+  "current_draft_count": 88,
+  "preliminary_flags": 43,
   "pairs": [
     {
       "new_id": "UC-ADV10-I102",
@@ -238,9 +238,33 @@
       "prior_id": "UC-ADV10-P98",
       "reason": "旧题研究Knudsen孔扩散；新题为停滞载气Stefan对数剖面及非零总摩尔通量，须逐式比较。",
       "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-I122",
+      "prior_id": "UC-ADV10-I101",
+      "reason": "旧题是自旋二聚体Heisenberg本征态；新题为混合价电子两态耦合及跃迁偶极，需比较2×2本征值结构是否构成实质模型复用。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-A122",
+      "prior_id": "UC-ADV10-A115",
+      "reason": "旧题涉及双波长谱学反演；新题结合交叉选择性电极与Davies非线性活度自洽，需比较逆问题核心结构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-O119",
+      "prior_id": "UC-ADV10-O101",
+      "reason": "旧题讨论同位素交叉与反应路径；新题是四巯基二硫键配对拓扑、校正MS响应与平衡分布，需人工排查配对统计模型重合。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV10-P119",
+      "prior_id": "UC-ADV10-P118",
+      "reason": "旧题为BET多层吸附；新题是Kelvin毛细凝结、Laplace压力和双孔阶跃填充，需逐式区分吸附与凝结模型。",
+      "judgement": "pending_human_comparison"
     }
   ],
-  "notes": "第十辑76条待审记录；35组初步相似性标记，非确认重复；本轮4题均入人工模型比较队列；专家批准0。",
+  "notes": "第十辑88条待审记录；43组初步相似性标记（非确认重复）；本轮I122/A122/O119/P119四题均待跨辑方程级人工比较；专家批准0。",
   "expert_approved": 0,
   "new_items_requiring_cross_series_comparison": [
     {
@@ -674,6 +698,30 @@
       "model_family": "BET-multilayer-two-pressure-linear-inversion-monolayer-area-energy",
       "judgement": "pending_human_comparison",
       "screening": "结构化草稿与独立计算witness已提交；必须人工比对旧辑方程及科学合理性，尚未获得专家认可。"
+    },
+    {
+      "new_id": "UC-ADV10-I122",
+      "model_family": "mixed-valence-two-state-adiabatic-electronic-coupling-charge-delocalization-transition-dipole",
+      "judgement": "pending_human_comparison",
+      "screening": "本轮加入完整答案向量的独立计算witness；机器通过不代表化学专家审核或跨辑核心模型原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV10-A122",
+      "model_family": "dual-ion-selective-electrode-cross-selectivity-Davies-activity-self-consistent-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "本轮加入完整答案向量的独立计算witness；机器通过不代表化学专家审核或跨辑核心模型原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV10-O119",
+      "model_family": "four-thiol-disulfide-perfect-matching-MS-response-corrected-Boltzmann-topology-redox",
+      "judgement": "pending_human_comparison",
+      "screening": "本轮加入完整答案向量的独立计算witness；机器通过不代表化学专家审核或跨辑核心模型原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV10-P119",
+      "model_family": "Kelvin-capillary-condensation-two-pore-radius-contact-angle-inverse-Laplace-uptake",
+      "judgement": "pending_human_comparison",
+      "screening": "本轮加入完整答案向量的独立计算witness；机器通过不代表化学专家审核或跨辑核心模型原创性确认。"
     }
   ]
 }
