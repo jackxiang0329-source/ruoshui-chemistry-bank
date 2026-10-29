@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至13辑 (728题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至13辑 (738题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -15515,6 +15515,246 @@ MnO4-/Mn2+五电子八质子Pourbaix电位斜率。298.15 K反应MnO4⁻+8H⁺+5
 electrode\_pH1\_V = 1.40351317 V；electrode\_pH4\_V = 1.11954829 V；slope\_V\_per\_pH = -0.0946549595 V/pH；voltage\_shift\_V = -0.283964878 V；proton\_electron\_ratio = 1.6 ratio；thermal\_prefactor\_V = 0.00513851582 V；concentration\_correction\_V = -0.0118318699 V；pH\_difference\_prediction\_V = -0.283964878 V\par
 \noindent\textbf{模型前提：}
 本题仅适用于题设规定的物种集合、相态、理想活动度与反应动力学；尚未通过专家现实化学可行性审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I185 · Zn(OH)₂两性溶解度曲线的碱性再溶解最小值}
+\noindent\textbf{题目}\par
+298.15 K有Zn(OH)₂(s)存在，溶度积Ksp=[Zn²⁺][OH⁻]²=3.000×10⁻¹⁷（浓度以1 M为标准态）；只允许溶解的Zn²⁺与Zn(OH)₄²⁻，后者总形成常数β₄=[Zn(OH)₄²⁻]/([Zn²⁺][OH⁻]⁴)=1.000×10¹⁵ M⁻⁴。pKw=14.000，外部缓冲固定pH=8.000和12.000，不改变固相。求两pH下自由Zn²⁺、四羟基络离子及总溶解锌，证明溶解度关于[OH⁻]有唯一极小点并求该pH与最小溶解度。忽略其它羟基络合物和活动度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别独立物种及物理边界：298.15 K有Zn(OH)₂(s)存在，溶度积Ksp=[Zn²⁺][OH⁻]²=3.000×10⁻¹⁷（浓度以1 M为标准态）；只允许溶解的Zn²⁺与Zn(OH)₄²⁻，后者总形成常数β₄=[Zn(OH)₄²⁻]/([Zn²⁺][OH⁻]⁴)=1.000×10¹⁵ M⁻⁴。pKw=14.000，外部缓冲固定pH=8.000和12.000，不改变固相。求两pH下自由Zn²⁺、四羟基络离子及总溶解锌，证明溶解度关于[OH⁻]有唯一极小点并求该pH与最小溶解度。忽略其它羟基络合物和活动度。
+\item 建立题设的质量作用、能量或动力学关系：设x=[OH⁻]；[Zn²⁺]=Ksp/x²，[Zn(OH)₄²⁻]=β₄ Ksp x²，Stot=Ksp(x⁻²+β₄x²)。
+\item 对总溶解度求导dS/dx=2Ksp(β₄x−x⁻³)，极小条件β₄x⁴=1，x*=β₄\textasciicircum{}(-1/4)。
+\item 在x>0时S''=2Ksp(β₄+3x⁻⁴)>0，因而极值为唯一全局最小值。
+\item 对固定pH先换算x=10\textasciicircum{}(pH−pKw) mol/L，分别求Zn²⁺和Zn(OH)₄²⁻，再相加；不要把自由Zn²⁺等同于溶解度。
+\item 第一组数值计算：OH\_pH8=0.00000100000000000 mol/L；OH\_pH12=0.0100000000000 mol/L；free\_Zn\_pH8=0.0000300000000000 mol/L；complex\_Zn\_pH8=3.00000000000e-14 mol/L；total\_Zn\_pH8=0.0000300000000300 mol/L。
+\item 第二组数值计算：free\_Zn\_pH12=3.00000000000e-13 mol/L；complex\_Zn\_pH12=0.00000300000000000 mol/L；total\_Zn\_pH12=0.00000300000030000 mol/L；optimal\_OH=0.000177827941004 mol/L。
+\item 剩余数值及交叉复算：optimal\_pH=10.2500000000 pH；minimum\_solubility=1.89736659610e-9 mol/L；complex\_fraction\_pH12=0.999999900000 fraction；minimum\_condition\_residual=0.00000000000 ratio。
+\item 对每个活度、平衡常数及热力学指数逐项检查无量纲性；若输出是摩尔浓度、能量、时间或电位，须与所用标准态及SI单位一致。
+\item 对物料、有效电荷、反应计量或概率分数进行独立检查，不能以主公式数值相近替代守恒验证。
+\item 模型对化学现实的限制：题干明确忽略的副反应、非理想活度、结构相变或电极动力学并不会因数值计算而自动成立；仍需专家复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+OH\_pH8 = 1e-06 mol/L；OH\_pH12 = 0.01 mol/L；free\_Zn\_pH8 = 3e-05 mol/L；complex\_Zn\_pH8 = 3e-14 mol/L；total\_Zn\_pH8 = 3e-05 mol/L；free\_Zn\_pH12 = 3e-13 mol/L；complex\_Zn\_pH12 = 3e-06 mol/L；total\_Zn\_pH12 = 3.0000003e-06 mol/L；optimal\_OH = 0.000177827941 mol/L；optimal\_pH = 10.25 pH；minimum\_solubility = 1.8973666e-09 mol/L；complex\_fraction\_pH12 = 0.9999999 fraction；minimum\_condition\_residual = 0 ratio\par
+\noindent\textbf{模型前提：}
+具体物种、固定活度、理想状态及近似温度范围均以题设为准；待独立专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I186 · 铬酸根、氢铬酸根与重铬酸根耦合酸碱–二聚平衡}
+\noindent\textbf{题目}\par
+25°C的Cr(VI)总分析浓度按铬原子计C=0.01000 mol/L，只有CrO₄²⁻、HCrO₄⁻、Cr₂O₇²⁻三种物种。HCrO₄⁻⇌H⁺+CrO₄²⁻的Ka=10⁻⁶·⁵（M浓度标准态），2HCrO₄⁻⇌Cr₂O₇²⁻+H₂O的二聚常数Kd=50.00 M⁻¹；外部缓冲pH=6.000或7.000，水活度为1。求各物种平衡浓度、Cr原子库存、重铬酸根贡献的Cr原子分数，并论证物理正根唯一。忽略其它多铬酸盐及活度效应。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别独立物种及物理边界：25°C的Cr(VI)总分析浓度按铬原子计C=0.01000 mol/L，只有CrO₄²⁻、HCrO₄⁻、Cr₂O₇²⁻三种物种。HCrO₄⁻⇌H⁺+CrO₄²⁻的Ka=10⁻⁶·⁵（M浓度标准态），2HCrO₄⁻⇌Cr₂O₇²⁻+H₂O的二聚常数Kd=50.00 M⁻¹；外部缓冲pH=6.000或7.000，水活度为1。求各物种平衡浓度、Cr原子库存、重铬酸根贡献的Cr原子分数，并论证物理正根唯一。忽略其它多铬酸盐及活度效应。
+\item 建立题设的质量作用、能量或动力学关系：令h=[HCrO₄⁻]，a=Ka/[H⁺]，d=Kd；[CrO₄²⁻]=ah，[Cr₂O₇²⁻]=dh²，C=(1+a)h+2dh²。正根h=2C/[(1+a)+√((1+a)²+8dC)]。
+\item 由Ka与固定pH消去单体CrO₄²⁻浓度，再用二聚质量作用式写Cr₂O₇²⁻。
+\item Cr原子守恒对二聚体必须乘2，使用二次式求物理正根，不使用会严重相减的负根表达式。
+\item 正根唯一，因为f(h)=(1+a)h+2dh²在h≥0严格递增且由0趋无穷。
+\item 第一组数值计算：HCr\_pH6=0.00539013463187 mol/L；CrO4\_pH6=0.00170451023317 mol/L；Cr2O7\_pH6=0.00145267756748 mol/L；dimer\_Cr\_atom\_fraction\_pH6=0.290535513497 fraction；HCr\_pH7=0.00227787073899 mol/L。
+\item 第二组数值计算：CrO4\_pH7=0.00720325975066 mol/L；Cr2O7\_pH7=0.000259434755177 mol/L；dimer\_Cr\_atom\_fraction\_pH7=0.0518869510354 fraction；dimer\_fraction\_ratio\_6over7=5.59939460113 ratio。
+\item 剩余数值及交叉复算：Cr\_balance\_pH6=0.0100000000000 mol/L；Cr\_balance\_pH7=0.0100000000000 mol/L；acid\_base\_ratio\_pH6=0.316227766017 ratio；acid\_base\_ratio\_pH7=3.16227766017 ratio。
+\item 对每个活度、平衡常数及热力学指数逐项检查无量纲性；若输出是摩尔浓度、能量、时间或电位，须与所用标准态及SI单位一致。
+\item 对物料、有效电荷、反应计量或概率分数进行独立检查，不能以主公式数值相近替代守恒验证。
+\item 模型对化学现实的限制：题干明确忽略的副反应、非理想活度、结构相变或电极动力学并不会因数值计算而自动成立；仍需专家复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+HCr\_pH6 = 0.00539013463 mol/L；CrO4\_pH6 = 0.00170451023 mol/L；Cr2O7\_pH6 = 0.00145267757 mol/L；dimer\_Cr\_atom\_fraction\_pH6 = 0.290535513 fraction；HCr\_pH7 = 0.00227787074 mol/L；CrO4\_pH7 = 0.00720325975 mol/L；Cr2O7\_pH7 = 0.000259434755 mol/L；dimer\_Cr\_atom\_fraction\_pH7 = 0.051886951 fraction；dimer\_fraction\_ratio\_6over7 = 5.5993946 ratio；Cr\_balance\_pH6 = 0.01 mol/L；Cr\_balance\_pH7 = 0.01 mol/L；acid\_base\_ratio\_pH6 = 0.316227766 ratio；acid\_base\_ratio\_pH7 = 3.16227766 ratio\par
+\noindent\textbf{模型前提：}
+具体物种、固定活度、理想状态及近似温度范围均以题设为准；待独立专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I187 · 金属有机框架可逆CO₂单活性位吸附的等温吸附焓反演}
+\noindent\textbf{题目}\par
+某具有等价开放金属位的理想MOF在300.0 K时CO₂ Langmuir平衡常数b₁=2.000 bar⁻¹，吸附标准焓ΔHads=−25.00 kJ/mol，在300–330 K为常数，吸附位点之间无相互作用。b(T)=b₁ exp[−ΔHads/R(1/T−1/300)]，压力p=0.5000 bar固定，饱和吸附量qmax=3.000 mmol/g。求300、330 K的b、覆盖度、吸附量与吸附量减少百分比，反推两个温度下的等量吸附焓并给出无量纲活度的处理。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别独立物种及物理边界：某具有等价开放金属位的理想MOF在300.0 K时CO₂ Langmuir平衡常数b₁=2.000 bar⁻¹，吸附标准焓ΔHads=−25.00 kJ/mol，在300–330 K为常数，吸附位点之间无相互作用。b(T)=b₁ exp[−ΔHads/R(1/T−1/300)]，压力p=0.5000 bar固定，饱和吸附量qmax=3.000 mmol/g。求300、330 K的b、覆盖度、吸附量与吸附量减少百分比，反推两个温度下的等量吸附焓并给出无量纲活度的处理。
+\item 建立题设的质量作用、能量或动力学关系：θ(T)=bp/(1+bp)，q=qmaxθ；ln(b₂/b₁)=−ΔHads/R(1/T₂−1/T₁)。
+\item 吸附过程放热，升温应减小平衡常数；本题b以bar⁻¹表示，bp才是无量纲吸附驱动力。
+\item 分别计算θ并乘饱和容量，检查θ在0到1之间。
+\item 把两个温度平衡常数回代Van’t Hoff求ΔHads，确保符号是负。
+\item 第一组数值计算：b\_300=2.00000000000 bar\textasciicircum{}-1；b\_330=0.804119793247 bar\textasciicircum{}-1；theta\_300=0.500000000000 fraction；theta\_330=0.286763709305 fraction。
+\item 第二组数值计算：uptake\_300\_mmol\_g=1.50000000000 mmol/g；uptake\_330\_mmol\_g=0.860291127915 mmol/g；uptake\_ratio\_330\_300=0.573527418610 ratio。
+\item 剩余数值及交叉复算：relative\_uptake\_drop=0.426472581390 fraction；recovered\_adsorption\_enthalpy\_kJ\_mol=-25.0000000000 kJ/mol；Langmuir\_denominator\_330=1.40205989662 ratio。
+\item 对每个活度、平衡常数及热力学指数逐项检查无量纲性；若输出是摩尔浓度、能量、时间或电位，须与所用标准态及SI单位一致。
+\item 对物料、有效电荷、反应计量或概率分数进行独立检查，不能以主公式数值相近替代守恒验证。
+\item 模型对化学现实的限制：题干明确忽略的副反应、非理想活度、结构相变或电极动力学并不会因数值计算而自动成立；仍需专家复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+b\_300 = 2 bar\textasciicircum{}-1；b\_330 = 0.804119793 bar\textasciicircum{}-1；theta\_300 = 0.5 fraction；theta\_330 = 0.286763709 fraction；uptake\_300\_mmol\_g = 1.5 mmol/g；uptake\_330\_mmol\_g = 0.860291128 mmol/g；uptake\_ratio\_330\_300 = 0.573527419 ratio；relative\_uptake\_drop = 0.426472581 fraction；recovered\_adsorption\_enthalpy\_kJ\_mol = -25 kJ/mol；Langmuir\_denominator\_330 = 1.4020599 ratio\par
+\noindent\textbf{模型前提：}
+具体物种、固定活度、理想状态及近似温度范围均以题设为准；待独立专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I188 · 过二硫酸根氧化I⁻的受控拟一级动力学与碘产率}
+\noindent\textbf{题目}\par
+过二硫酸根氧化碘离子净反应S₂O₈²⁻+2I⁻→2SO₄²⁻+I₂，实验由外部碘离子储库持续固定自由[I⁻]=0.5000 mol/L，因此动力学可以视为r=k₂[S₂O₈²⁻][I⁻]，k₂=0.05000 L/(mol·s)。初始过二硫酸根0.01000 mol/L，时间t=120.0 s，体系其它产物不发生副反应。求拟一级kobs、未反应氧化剂、形成的I₂和硫酸根的量、反应速率、半衰期、从储库补入的I⁻计量消耗量；说明储库恒浓度是人为边界条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别独立物种及物理边界：过二硫酸根氧化碘离子净反应S₂O₈²⁻+2I⁻→2SO₄²⁻+I₂，实验由外部碘离子储库持续固定自由[I⁻]=0.5000 mol/L，因此动力学可以视为r=k₂[S₂O₈²⁻][I⁻]，k₂=0.05000 L/(mol·s)。初始过二硫酸根0.01000 mol/L，时间t=120.0 s，体系其它产物不发生副反应。求拟一级kobs、未反应氧化剂、形成的I₂和硫酸根的量、反应速率、半衰期、从储库补入的I⁻计量消耗量；说明储库恒浓度是人为边界条件。
+\item 建立题设的质量作用、能量或动力学关系：kobs=k₂[I⁻]；x=C₀(1−e\textasciicircum{}(−kobst))；[I₂]=x，[SO₄²⁻]=2x。 
+\item 建立反应进度x，过二硫酸根一分子反应对应一个I₂和两个SO₄²⁻。
+\item 在外部储库维持[I⁻]不变时，严格的指数解针对氧化剂成立；封闭体系碘离子会耗尽，不能使用同一拟一级模型。
+\item 半衰期由ln2/kobs决定，瞬时速率kobs C(t)随时间衰减。
+\item 第一组数值计算：k\_observed=0.0250000000000 s\textasciicircum{}-1；conversion\_t120=0.950212931632 fraction；remaining\_peroxodisulfate=0.000497870683679 mol/L；iodine\_formed=0.00950212931632 mol/L。
+\item 第二组数值计算：sulfate\_formed=0.0190042586326 mol/L；iodide\_consumed\_from\_reservoir=0.0190042586326 mol/L；half\_life=27.7258872224 s。
+\item 剩余数值及交叉复算：remaining\_fraction=0.0497870683679 fraction；instant\_rate\_t120=0.0000124467670920 mol/(L s)；oxidant\_balance=0.0100000000000 mol/L。
+\item 对每个活度、平衡常数及热力学指数逐项检查无量纲性；若输出是摩尔浓度、能量、时间或电位，须与所用标准态及SI单位一致。
+\item 对物料、有效电荷、反应计量或概率分数进行独立检查，不能以主公式数值相近替代守恒验证。
+\item 模型对化学现实的限制：题干明确忽略的副反应、非理想活度、结构相变或电极动力学并不会因数值计算而自动成立；仍需专家复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+k\_observed = 0.025 s\textasciicircum{}-1；conversion\_t120 = 0.950212932 fraction；remaining\_peroxodisulfate = 0.000497870684 mol/L；iodine\_formed = 0.00950212932 mol/L；sulfate\_formed = 0.0190042586 mol/L；iodide\_consumed\_from\_reservoir = 0.0190042586 mol/L；half\_life = 27.7258872 s；remaining\_fraction = 0.0497870684 fraction；instant\_rate\_t120 = 1.24467671e-05 mol/(L s)；oxidant\_balance = 0.01 mol/L\par
+\noindent\textbf{模型前提：}
+具体物种、固定活度、理想状态及近似温度范围均以题设为准；待独立专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I189 · 方平面Pt(II)络合物两条不可逆配体置换路径的分支与消耗}
+\noindent\textbf{题目}\par
+方平面Pt(II)络合物X在固定配体活度条件下通过两条不可逆并行配体取代通道生成互不互变的产物P与Q：kP=0.02000 s⁻¹，kQ=0.005000 s⁻¹；初始[X]=0.004000 mol/L，无初始产物。求t=80.00 s时X、P、Q，最终分支比例与半衰期，计算两个产物的比值及80 s时总铂物料守恒。两条通道均按拟一级、配体缓冲充分，忽略Pt聚集和反应后的回配位。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别独立物种及物理边界：方平面Pt(II)络合物X在固定配体活度条件下通过两条不可逆并行配体取代通道生成互不互变的产物P与Q：kP=0.02000 s⁻¹，kQ=0.005000 s⁻¹；初始[X]=0.004000 mol/L，无初始产物。求t=80.00 s时X、P、Q，最终分支比例与半衰期，计算两个产物的比值及80 s时总铂物料守恒。两条通道均按拟一级、配体缓冲充分，忽略Pt聚集和反应后的回配位。
+\item 建立题设的质量作用、能量或动力学关系：X(t)=X0e\textasciicircum{}(-(kP+kQ)t)，P(t)=X0(1−e\textasciicircum{}(-kt))kP/k，Q(t)=X0(1−e\textasciicircum{}(-kt))kQ/k。
+\item 从铂物料守恒[X]+[P]+[Q]=X0和并行一阶速率式导出解析解。
+\item 产物比P/Q等于速率比kP/kQ，不需要假设产物热力学更稳定。
+\item 若自由配体浓度不能维持常数，kP/kQ将随时间变化，本模型不再给固定产物比例。
+\item 第一组数值计算：total\_rate=0.0250000000000 s\textasciicircum{}-1；half\_life=27.7258872224 s；remaining\_PtX\_t80=0.000541341132946 mol/L；product\_P\_t80=0.00276692709364 mol/L。
+\item 第二组数值计算：product\_Q\_t80=0.000691731773411 mol/L；fraction\_P\_final=0.800000000000 fraction；fraction\_Q\_final=0.200000000000 fraction。
+\item 剩余数值及交叉复算：product\_ratio=4.00000000000 ratio；Pt\_total\_t80=0.00400000000000 mol/L；conversion\_t80=0.864664716763 fraction。
+\item 对每个活度、平衡常数及热力学指数逐项检查无量纲性；若输出是摩尔浓度、能量、时间或电位，须与所用标准态及SI单位一致。
+\item 对物料、有效电荷、反应计量或概率分数进行独立检查，不能以主公式数值相近替代守恒验证。
+\item 模型对化学现实的限制：题干明确忽略的副反应、非理想活度、结构相变或电极动力学并不会因数值计算而自动成立；仍需专家复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+total\_rate = 0.025 s\textasciicircum{}-1；half\_life = 27.7258872 s；remaining\_PtX\_t80 = 0.000541341133 mol/L；product\_P\_t80 = 0.00276692709 mol/L；product\_Q\_t80 = 0.000691731773 mol/L；fraction\_P\_final = 0.8 fraction；fraction\_Q\_final = 0.2 fraction；product\_ratio = 4 ratio；Pt\_total\_t80 = 0.004 mol/L；conversion\_t80 = 0.864664717 fraction\par
+\noindent\textbf{模型前提：}
+具体物种、固定活度、理想状态及近似温度范围均以题设为准；待独立专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I190 · Cu(II)轴向Jahn–Teller畸变的EPR各向异性共振场}
+\noindent\textbf{题目}\par
+一个轴向Jahn–Teller畸变Cu(II)络合物的电子自旋S=1/2，忽略超精细耦合及二阶塞曼修正。X波段频率ν=9.500 GHz，电子g张量主值g∥=2.250，g⊥=2.050，h=6.62607015×10⁻³⁴ J·s，μB=9.2740100783×10⁻²⁴ J/T。求粉末EPR的轴向、横向共振磁场与场宽，按giso=(g∥+2g⊥)/3计算各向同性g以及取向平均g²=(g∥²+2g⊥²)/3；计算共振频率回代与场宽mT。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别独立物种及物理边界：一个轴向Jahn–Teller畸变Cu(II)络合物的电子自旋S=1/2，忽略超精细耦合及二阶塞曼修正。X波段频率ν=9.500 GHz，电子g张量主值g∥=2.250，g⊥=2.050，h=6.62607015×10⁻³⁴ J·s，μB=9.2740100783×10⁻²⁴ J/T。求粉末EPR的轴向、横向共振磁场与场宽，按giso=(g∥+2g⊥)/3计算各向同性g以及取向平均g²=(g∥²+2g⊥²)/3；计算共振频率回代与场宽mT。
+\item 建立题设的质量作用、能量或动力学关系：hν=g μB B，B∥=hν/(g∥μB)，B⊥=hν/(g⊥μB)。
+\item 对轴向g较大者共振场应较小；如果计算出相反次序，需检查塞曼频率和磁场的倒数关系。
+\item 粉末各向异性带宽取|B⊥−B∥|，其中并未计入磁场线宽和超精细裂分。
+\item 取向平均g值与均方g不是同一个物理平均，不能混为单一数。
+\item 第一组数值计算：g\_parallel=2.25000000000 ratio；g\_perpendicular=2.05000000000 ratio；B\_parallel\_T=0.301668214690 T；B\_perp\_T=0.331099260025 T。
+\item 第二组数值计算：B\_span\_mT=29.4310453356 mT；g\_isotropic=2.11666666667 ratio；g\_squared\_orientation\_average=4.48916666667 ratio。
+\item 剩余数值及交叉复算：photon\_energy\_J=6.29476664250e-24 J；frequency\_backcalc\_parallel\_Hz=9500000000.00 Hz；B\_perp\_over\_B\_parallel=1.09756097561 ratio。
+\item 对每个活度、平衡常数及热力学指数逐项检查无量纲性；若输出是摩尔浓度、能量、时间或电位，须与所用标准态及SI单位一致。
+\item 对物料、有效电荷、反应计量或概率分数进行独立检查，不能以主公式数值相近替代守恒验证。
+\item 模型对化学现实的限制：题干明确忽略的副反应、非理想活度、结构相变或电极动力学并不会因数值计算而自动成立；仍需专家复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+g\_parallel = 2.25 ratio；g\_perpendicular = 2.05 ratio；B\_parallel\_T = 0.301668215 T；B\_perp\_T = 0.33109926 T；B\_span\_mT = 29.4310453 mT；g\_isotropic = 2.11666667 ratio；g\_squared\_orientation\_average = 4.48916667 ratio；photon\_energy\_J = 6.29476664e-24 J；frequency\_backcalc\_parallel\_Hz = 9.5e+09 Hz；B\_perp\_over\_B\_parallel = 1.09756098 ratio\par
+\noindent\textbf{模型前提：}
+具体物种、固定活度、理想状态及近似温度范围均以题设为准；待独立专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I191 · CuS/ZnS硫化物分级沉淀的选择性窗口与残留浓度}
+\noindent\textbf{题目}\par
+25°C理想水样含Cu²⁺与Zn²⁺各0.001000 mol/L。在固定自由硫化物[S²⁻]的外部缓冲条件下两种MS(s)沉淀，溶度积Ksp(CuS)=1.000×10⁻³⁶、Ksp(ZnS)=1.000×10⁻²⁵（以1 M为标准态）。比较[S²⁻]=1.000×10⁻²⁶及1.000×10⁻²¹ mol/L两个状态，假设无其它络合、水解、共沉淀；沉淀后自由M²⁺取min(Cinitial,Ksp/[S²⁻])。求两金属的自由浓度、沉淀比例、金属分离选择性比及Zn开始沉淀的自由硫化物临界浓度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别独立物种及物理边界：25°C理想水样含Cu²⁺与Zn²⁺各0.001000 mol/L。在固定自由硫化物[S²⁻]的外部缓冲条件下两种MS(s)沉淀，溶度积Ksp(CuS)=1.000×10⁻³⁶、Ksp(ZnS)=1.000×10⁻²⁵（以1 M为标准态）。比较[S²⁻]=1.000×10⁻²⁶及1.000×10⁻²¹ mol/L两个状态，假设无其它络合、水解、共沉淀；沉淀后自由M²⁺取min(Cinitial,Ksp/[S²⁻])。求两金属的自由浓度、沉淀比例、金属分离选择性比及Zn开始沉淀的自由硫化物临界浓度。
+\item 建立题设的质量作用、能量或动力学关系：cM,free=min(c0,Ksp/cS)，pptfraction=1−cM,free/c0；ZnS起始饱和阈值cS*=KspZn/cZn,0。
+\item 对每种金属先检验离子反应商Q=[M²⁺][S²⁻]是否达到Ksp，未达到时不能错误地强制使用饱和溶解度。
+\item 两种沉淀溶度积相差11个数量级，低自由硫化物时Cu高度选择性去除而Zn仍可溶。
+\item 外部S²⁻浓度固定是理想控制条件，真实硫化物酸碱平衡和表面络合可大幅改变分离窗口。
+\item 第一组数值计算：Cu\_free\_lowS=1.00000000000e-10 mol/L；Zn\_free\_lowS=0.00100000000000 mol/L；Cu\_precip\_fraction\_lowS=0.999999900000 fraction；Zn\_precip\_fraction\_lowS=0.00000000000 fraction。
+\item 第二组数值计算：Cu\_free\_highS=1.00000000000e-15 mol/L；Zn\_free\_highS=0.000100000000000 mol/L；Cu\_precip\_fraction\_highS=0.999999999999 fraction；Zn\_precip\_fraction\_highS=0.900000000000 fraction。
+\item 剩余数值及交叉复算：ZnS\_precip\_threshold\_S=1.00000000000e-22 mol/L；Zn\_over\_Cu\_free\_highS=100000000000 ratio；CuS\_threshold\_S=1.00000000000e-33 mol/L。
+\item 对每个活度、平衡常数及热力学指数逐项检查无量纲性；若输出是摩尔浓度、能量、时间或电位，须与所用标准态及SI单位一致。
+\item 对物料、有效电荷、反应计量或概率分数进行独立检查，不能以主公式数值相近替代守恒验证。
+\item 模型对化学现实的限制：题干明确忽略的副反应、非理想活度、结构相变或电极动力学并不会因数值计算而自动成立；仍需专家复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Cu\_free\_lowS = 1e-10 mol/L；Zn\_free\_lowS = 0.001 mol/L；Cu\_precip\_fraction\_lowS = 0.9999999 fraction；Zn\_precip\_fraction\_lowS = 0 fraction；Cu\_free\_highS = 1e-15 mol/L；Zn\_free\_highS = 0.0001 mol/L；Cu\_precip\_fraction\_highS = 1 fraction；Zn\_precip\_fraction\_highS = 0.9 fraction；ZnS\_precip\_threshold\_S = 1e-22 mol/L；Zn\_over\_Cu\_free\_highS = 1e+11 ratio；CuS\_threshold\_S = 1e-33 mol/L\par
+\noindent\textbf{模型前提：}
+具体物种、固定活度、理想状态及近似温度范围均以题设为准；待独立专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I192 · WO₃−δ混合价小极化子跃迁电导的热激活与载流子估计}
+\noindent\textbf{题目}\par
+假想氧缺位WO₃−δ固体中的小极化子跳跃电导遵循σ(T)=σ0/T exp(−Ea/(RT))，Ea=35.00 kJ/mol，σ0=1.000×10⁶ S·K/m，温度T1=600.0 K与T2=900.0 K。将材料视为均匀厚度L=1.000 mm、横截面积A=1.000 cm²的电阻器，求两温度电导率、两端电阻、两温度固定电压1.000 V下电流、电导率比和由ln(σT)–1/T两点斜率反演的Ea。说明此公式把载流子浓度和迁移率的温变合并为有效激活模型。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别独立物种及物理边界：假想氧缺位WO₃−δ固体中的小极化子跳跃电导遵循σ(T)=σ0/T exp(−Ea/(RT))，Ea=35.00 kJ/mol，σ0=1.000×10⁶ S·K/m，温度T1=600.0 K与T2=900.0 K。将材料视为均匀厚度L=1.000 mm、横截面积A=1.000 cm²的电阻器，求两温度电导率、两端电阻、两温度固定电压1.000 V下电流、电导率比和由ln(σT)–1/T两点斜率反演的Ea。说明此公式把载流子浓度和迁移率的温变合并为有效激活模型。
+\item 建立题设的质量作用、能量或动力学关系：ln(σ T)=lnσ0−Ea/(RT)，RΩ=L/(σ A)，I=V/RΩ。
+\item 由σ0的单位S·K/m保证σ(T)的SI单位是S/m，不能把公式误写成简单σ0 exp(−Ea/RT)。
+\item 在相同几何及1 V端电压下电流比等于电导率比；两点斜率必须以1/T而非T求导。
+\item 实际小极化子可能表现非Arrhenius、载流子冻出与结构转变，当前值仅是理想热激活行为。
+\item 第一组数值计算：sigma\_600=1.49584838146 S/m；sigma\_900=10.3383216834 S/m；resistance\_600=6.68516951579 ohm；resistance\_900=0.967274989713 ohm。
+\item 第二组数值计算：current\_600=0.149584838146 A；current\_900=1.03383216834 A；conductivity\_ratio=6.91134329625 ratio。
+\item 剩余数值及交叉复算：inverse\_temperature\_slope=-4209.53242657 K；recovered\_activation\_kJ\_mol=35.0000000000 kJ/mol；resistance\_ratio=6.91134329625 ratio。
+\item 对每个活度、平衡常数及热力学指数逐项检查无量纲性；若输出是摩尔浓度、能量、时间或电位，须与所用标准态及SI单位一致。
+\item 对物料、有效电荷、反应计量或概率分数进行独立检查，不能以主公式数值相近替代守恒验证。
+\item 模型对化学现实的限制：题干明确忽略的副反应、非理想活度、结构相变或电极动力学并不会因数值计算而自动成立；仍需专家复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+sigma\_600 = 1.49584838 S/m；sigma\_900 = 10.3383217 S/m；resistance\_600 = 6.68516952 ohm；resistance\_900 = 0.96727499 ohm；current\_600 = 0.149584838 A；current\_900 = 1.03383217 A；conductivity\_ratio = 6.9113433 ratio；inverse\_temperature\_slope = -4209.53243 K；recovered\_activation\_kJ\_mol = 35 kJ/mol；resistance\_ratio = 6.9113433 ratio\par
+\noindent\textbf{模型前提：}
+具体物种、固定活度、理想状态及近似温度范围均以题设为准；待独立专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I193 · CaCO₃煅烧气–固平衡的CO₂分压阈值和热力学转化}
+\noindent\textbf{题目}\par
+固体CaCO₃(s)⇌CaO(s)+CO₂(g)的理想平衡近似在800–1300 K有温度不变的标准反应焓ΔH°=178.0 kJ/mol、反应熵ΔS°=161.0 J/(mol K)，气体标准压力p°=1 bar，固体活度1。给定温度T=900.0 K、1100.0 K，按Kp=pCO2/p°=exp[−(ΔH−TΔS)/(RT)]求平衡CO₂分压、自由能，并求在pCO₂=1 bar时理论平衡温度及pCO₂=0.1000 bar时平衡温度。说明外部pCO₂高于平衡值抑制煅烧。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别独立物种及物理边界：固体CaCO₃(s)⇌CaO(s)+CO₂(g)的理想平衡近似在800–1300 K有温度不变的标准反应焓ΔH°=178.0 kJ/mol、反应熵ΔS°=161.0 J/(mol K)，气体标准压力p°=1 bar，固体活度1。给定温度T=900.0 K、1100.0 K，按Kp=pCO2/p°=exp[−(ΔH−TΔS)/(RT)]求平衡CO₂分压、自由能，并求在pCO₂=1 bar时理论平衡温度及pCO₂=0.1000 bar时平衡温度。说明外部pCO₂高于平衡值抑制煅烧。
+\item 建立题设的质量作用、能量或动力学关系：ΔG°=ΔH°−TΔS°，Kp(T)=exp(−ΔG°/RT)，T\_eq(p)=ΔH°/(ΔS°−Rln(p/p°))。
+\item 纯固体反应物和产物的活度取1，平衡常数只包含气体CO₂相对标准压力的活度。
+\item 以反应自由能ΔG=ΔG°+RTln(pCO₂/p°)判断分解方向，等于0为平衡阈值。
+\item 比较900和1100 K的Kp，吸热反应升温提高平衡气压，符合Van’t Hoff符号。
+\item 第一组数值计算：deltaG\_900\_kJ\_mol=33.1000000000 kJ/mol；deltaG\_1100\_kJ\_mol=0.900000000000 kJ/mol；Kp\_900=0.0119939856982 ratio；Kp\_1100=0.906282098752 ratio。
+\item 第二组数值计算：pCO2\_eq\_900\_bar=0.0119939856982 bar；pCO2\_eq\_1100\_bar=0.906282098752 bar；T\_eq\_1bar=1105.59006211 K。
+\item 剩余数值及交叉复算：T\_eq\_0p1bar=988.094254265 K；pressure\_ratio\_1100\_to900=75.5613789744 ratio；lnKp\_difference=4.32494529253 ratio。
+\item 对每个活度、平衡常数及热力学指数逐项检查无量纲性；若输出是摩尔浓度、能量、时间或电位，须与所用标准态及SI单位一致。
+\item 对物料、有效电荷、反应计量或概率分数进行独立检查，不能以主公式数值相近替代守恒验证。
+\item 模型对化学现实的限制：题干明确忽略的副反应、非理想活度、结构相变或电极动力学并不会因数值计算而自动成立；仍需专家复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+deltaG\_900\_kJ\_mol = 33.1 kJ/mol；deltaG\_1100\_kJ\_mol = 0.9 kJ/mol；Kp\_900 = 0.0119939857 ratio；Kp\_1100 = 0.906282099 ratio；pCO2\_eq\_900\_bar = 0.0119939857 bar；pCO2\_eq\_1100\_bar = 0.906282099 bar；T\_eq\_1bar = 1105.59006 K；T\_eq\_0p1bar = 988.094254 K；pressure\_ratio\_1100\_to900 = 75.561379 ratio；lnKp\_difference = 4.32494529 ratio\par
+\noindent\textbf{模型前提：}
+具体物种、固定活度、理想状态及近似温度范围均以题设为准；待独立专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV13-I194 · Ru(II)多吡啶配合物激发态的双向光氧化还原电位}
+\noindent\textbf{题目}\par
+假想Ru(II)多吡啶配合物在电极相同参考标尺上具有Ru(III/II)基态还原电位+1.260 V、Ru(II/I)基态还原电位−1.330 V，零零激发能E00=2.120 eV（按一电子转移等价电压为2.120 V）。假设激发态能量不受溶剂/重组调整。电子供体D的D⁺/D还原电位+0.600 V，受体A的A/A⁻还原电位−0.300 V。推导激发态Ru(III/II*)和Ru(II*/I)对的还原电位，计算激发态向A给电子与由D给激发态电子两种淬灭路径的每电子反应自由能（eV与kJ/mol），判断两路径热力学是否有利。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 识别独立物种及物理边界：假想Ru(II)多吡啶配合物在电极相同参考标尺上具有Ru(III/II)基态还原电位+1.260 V、Ru(II/I)基态还原电位−1.330 V，零零激发能E00=2.120 eV（按一电子转移等价电压为2.120 V）。假设激发态能量不受溶剂/重组调整。电子供体D的D⁺/D还原电位+0.600 V，受体A的A/A⁻还原电位−0.300 V。推导激发态Ru(III/II*)和Ru(II*/I)对的还原电位，计算激发态向A给电子与由D给激发态电子两种淬灭路径的每电子反应自由能（eV与kJ/mol），判断两路径热力学是否有利。
+\item 建立题设的质量作用、能量或动力学关系：Ered(RuIII/RuII*)=Ered(RuIII/RuII)−E00/e；Ered(RuII*/RuI)=Ered(RuII/RuI)+E00/e；ΔGeV=Eoxidized-donor−Ereduced-acceptor。
+\item 激发态Ru(II)*作为还原剂时，失去电子的对应电对是Ru(III/II*)；作为氧化剂接受电子时对应Ru(II*/I)。
+\item 将E00(eV)直接换为单电子电位差(V)需要指明每电子为1个基本电荷；热力学自由能需以eV乘96.485 kJ/mol换算。
+\item 负ΔG仅说明标准热力学有利，不保证电子转移快；动力学还需电子耦合、扩散与重组能。
+\item 第一组数值计算：excited\_RuIII\_IIstar\_reduction\_V=-0.860000000000 V；excited\_RuIIstar\_I\_reduction\_V=0.790000000000 V；Ru\_star\_to\_acceptor\_deltaG\_eV=-0.560000000000 eV。
+\item 第二组数值计算：donor\_to\_Ru\_star\_deltaG\_eV=-0.190000000000 eV；Ru\_star\_to\_acceptor\_deltaG\_kJ\_mol=-54.0317859872 kJ/mol；donor\_to\_Ru\_star\_deltaG\_kJ\_mol=-18.3322131028 kJ/mol。
+\item 剩余数值及交叉复算：excited\_potential\_shift\_V=2.12000000000 V；driving\_energy\_difference\_eV=-0.370000000000 eV；both\_paths\_exergonic\_count=2.00000000000 count。
+\item 对每个活度、平衡常数及热力学指数逐项检查无量纲性；若输出是摩尔浓度、能量、时间或电位，须与所用标准态及SI单位一致。
+\item 对物料、有效电荷、反应计量或概率分数进行独立检查，不能以主公式数值相近替代守恒验证。
+\item 模型对化学现实的限制：题干明确忽略的副反应、非理想活度、结构相变或电极动力学并不会因数值计算而自动成立；仍需专家复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+excited\_RuIII\_IIstar\_reduction\_V = -0.86 V；excited\_RuIIstar\_I\_reduction\_V = 0.79 V；Ru\_star\_to\_acceptor\_deltaG\_eV = -0.56 eV；donor\_to\_Ru\_star\_deltaG\_eV = -0.19 eV；Ru\_star\_to\_acceptor\_deltaG\_kJ\_mol = -54.031786 kJ/mol；donor\_to\_Ru\_star\_deltaG\_kJ\_mol = -18.3322131 kJ/mol；excited\_potential\_shift\_V = 2.12 V；driving\_energy\_difference\_eV = -0.37 eV；both\_paths\_exergonic\_count = 2 count\par
+\noindent\textbf{模型前提：}
+具体物种、固定活度、理想状态及近似温度范围均以题设为准；待独立专家审查。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{分析化学}
