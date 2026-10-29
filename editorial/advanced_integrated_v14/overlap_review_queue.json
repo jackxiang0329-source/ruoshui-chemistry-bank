@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 14,
   "status": "expert_review_pending",
-  "current_draft_count": 64,
+  "current_draft_count": 74,
   "expert_approved": 0,
-  "preliminary_flags": 79,
+  "preliminary_flags": 89,
   "pairs": [
     {
       "new_id": "UC-ADV14-I201",
@@ -494,6 +494,66 @@
       "prior_id": null,
       "reason": "需要人工与前十三辑所有同类模型逐式核对。",
       "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A215",
+      "prior_id": null,
+      "reason": "需人工与前十三辑全部相似模型比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A216",
+      "prior_id": null,
+      "reason": "需人工与前十三辑全部相似模型比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A217",
+      "prior_id": null,
+      "reason": "需人工与前十三辑全部相似模型比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A218",
+      "prior_id": null,
+      "reason": "需人工与前十三辑全部相似模型比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A219",
+      "prior_id": null,
+      "reason": "需人工与前十三辑全部相似模型比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A220",
+      "prior_id": null,
+      "reason": "需人工与前十三辑全部相似模型比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A221",
+      "prior_id": null,
+      "reason": "需人工与前十三辑全部相似模型比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A222",
+      "prior_id": null,
+      "reason": "需人工与前十三辑全部相似模型比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A223",
+      "prior_id": null,
+      "reason": "需人工与前十三辑全部相似模型比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A224",
+      "prior_id": null,
+      "reason": "需人工与前十三辑全部相似模型比对。",
+      "judgement": "pending_human_comparison"
     }
   ],
   "new_items_requiring_cross_series_comparison": [
@@ -880,6 +940,66 @@
       "model_family": "erbium-thermal-coupled-luminescent-levels-ratio",
       "judgement": "pending_human_comparison",
       "screening": "独立数值重算通过，人工学术和版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV14-A215",
+      "model_family": "hydrogen-peroxide-iodometry-thiosulfate-titration",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值计算已实现，专家科学性与原创性未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-A216",
+      "model_family": "gas-chromatography-Kovats-retention-index-interpolation",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值计算已实现，专家科学性与原创性未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-A217",
+      "model_family": "standard-addition-fixed-volume-UV-phosphate-calibration",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值计算已实现，专家科学性与原创性未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-A218",
+      "model_family": "FTIR-two-analyte-linear-absorbance-matrix-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值计算已实现，专家科学性与原创性未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-A219",
+      "model_family": "Van-Deemter-HPLC-plate-height-optimal-linear-velocity",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值计算已实现，专家科学性与原创性未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-A220",
+      "model_family": "Stern-Volmer-fluorescence-quenching-rate-lifetime",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值计算已实现，专家科学性与原创性未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-A221",
+      "model_family": "ion-selective-electrode-Nernst-two-standards",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值计算已实现，专家科学性与原创性未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-A222",
+      "model_family": "EDTA-backtitration-calcium-zinc-excess",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值计算已实现，专家科学性与原创性未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-A223",
+      "model_family": "carbon13-NMR-isotope-natural-abundance-correction",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值计算已实现，专家科学性与原创性未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-A224",
+      "model_family": "conductivity-cell-constant-reference-calibration",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值计算已实现，专家科学性与原创性未批准。"
     }
   ]
 }

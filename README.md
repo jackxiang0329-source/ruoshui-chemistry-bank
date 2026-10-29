@@ -22,11 +22,11 @@
 - **第十辑已完成：100/100**，四科各25道，参见[第十辑进行中目录](editorial/advanced_integrated_v10/README.md)和[每题完整数值答案独立计算检查](scripts/check-advanced-authored-v10.mjs)；尚未完成专家和跨辑模型原创性审查。
 - **第十一辑已完成：100/100**，四科各25道，[完整中文解析](editorial/advanced_integrated_v11/8_advanced_chemistry_solutions.md)、[结构化源稿与QA说明](editorial/advanced_integrated_v11/README.md)；独立复算与跨辑模型人工复核严格分层。
 - **第十二辑完成：100/100**，四科分别25/25/25/25；[完整索引与待审数据](editorial/advanced_integrated_v12/README.md)。
-- **当前全库累计870条编辑记录**（前九辑406+第十辑100+第十一辑100+第十二辑100+第十三辑100+第十四辑64）；专家批准 **0**，正式可出卷 **0**。第六至十二辑的跨辑模型审定与专家审核仍未完成。
+- **当前全库累计880条编辑记录**（前九辑406+第十辑100+第十一辑100+第十二辑100+第十三辑100+第十四辑74）；专家批准 **0**，正式可出卷 **0**。第六至十二辑的跨辑模型审定与专家审核仍未完成。
 
 - **第十三辑待专家审核：100/100**，四科25/25/25/25题，[本辑完整题解](editorial/advanced_integrated_v13/README.md)，仍全部待专家审稿。
 
-- **第十四辑进行中：64/100**，四科24/14/13/13题，[本辑中文题解与结构化源稿](editorial/advanced_integrated_v14/README.md)，全部待专家审稿。
+- **第十四辑进行中：74/100**，四科24/24/13/13题，[本辑中文题解与结构化源稿](editorial/advanced_integrated_v14/README.md)，全部待专家审稿。
 
 ## 清理政策
 
