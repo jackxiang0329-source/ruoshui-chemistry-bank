@@ -10,6 +10,46 @@ const F=96485.33212;
 const T=280,J=2400,q=Math.exp(-J/(R*T)),Z=1+3*q,p=3*q/Z;
 const w={
 
+"UC-ADV10-I123":()=>{
+ const l=.15406,k=.9,inst=.001,t1=28.549454718055497*Math.PI/360,t2=47.487855126001165*Math.PI/360;
+ const w=[.004612100601993621,.005741285023320927].map(b=>Math.sqrt(b*b-inst*inst));
+ const xx=[4*Math.sin(t1),4*Math.sin(t2)],yy=[w[0]*Math.cos(t1),w[1]*Math.cos(t2)];
+ const e=(yy[1]-yy[0])/(xx[1]-xx[0]),b=yy[0]-e*xx[0],size=k*l/b;
+ const a1=l*Math.sqrt(3)/(2*Math.sin(t1)),a2=l*Math.sqrt(8)/(2*Math.sin(t2)),a=(a1+a2)/2;
+ const th=Math.asin(l*Math.sqrt(11)/(2*a)),wb=(b+4*e*Math.sin(th))/Math.cos(th),sch=k*l/yy[0];
+ assert.ok(e>0&&b>0&&Math.abs(a1-a2)<1e-12);
+ return[a1,a2,e,size,4*172.115/(6.02214076e23*(a*1e-7)**3),2*th*180/Math.PI,Math.hypot(wb,inst),sch,(size-sch)/size,...w];
+},
+"UC-ADV10-A123":()=>{
+ const t1=.1,t2=.9,t=.4,tau=.4,i1=95.7616874813873e-6,i2=30.995356275024143e-6;
+ const a=1/Math.sqrt(t1),b=Math.exp(-t1/tau),c=1/Math.sqrt(t2),d=Math.exp(-t2/tau),det=a*d-b*c;
+ const B=(i1*d-i2*b)/det,J=(a*i2-c*i1)/det,F=96485.33212,area=2e-5,D=7e-10;
+ const v=z=>B/Math.sqrt(z)+J*Math.exp(-z/tau),Qf=2*B*Math.sqrt(t),Qc=J*tau*(1-Math.exp(-t/tau));
+ assert.ok(det!==0&&B>0&&J>0&&Math.abs(v(t2)-i2)<1e-16);
+ return[B/(2*F*area*Math.sqrt(D/Math.PI)),J*1e6,B,v(t1)*1e6,v(t2)*1e6,v(t)*1e6,Qf*1e6,Qc*1e6,(Qf+Qc)*1e6,Qf/(Qf+Qc),Math.sqrt(2*D*t)*1e6,Math.sqrt(area/Math.PI)*1e3,Qf/(2*F)];
+},
+"UC-ADV10-O120":()=>{
+ const N=4,alpha=-11,beta=-4,A=Array.from({length:N},(_,i)=>Array.from({length:N},(_,j)=>i===j?alpha:Math.abs(i-j)===1?beta:0)),V=Array.from({length:N},(_,i)=>Array.from({length:N},(_,j)=>i===j?1:0));
+ for(let z=0;z<80;z++){let p=0,q=1,mx=0;for(let i=0;i<4;i++)for(let j=i+1;j<4;j++)if(Math.abs(A[i][j])>mx){mx=Math.abs(A[i][j]);p=i;q=j;}if(mx<1e-14)break;
+ const ap=A[p][p],aq=A[q][q],pq=A[p][q],ang=.5*Math.atan2(2*pq,aq-ap),c=Math.cos(ang),s=Math.sin(ang);
+ for(let k=0;k<4;k++)if(k!==p&&k!==q){let kp=A[k][p],kq=A[k][q];A[k][p]=A[p][k]=c*kp-s*kq;A[k][q]=A[q][k]=s*kp+c*kq;}
+ A[p][p]=c*c*ap-2*c*s*pq+s*s*aq;A[q][q]=s*s*ap+2*c*s*pq+c*c*aq;A[p][q]=A[q][p]=0;
+ for(let k=0;k<4;k++){let kp=V[k][p],kq=V[k][q];V[k][p]=c*kp-s*kq;V[k][q]=s*kp+c*kq;}}
+ const order=[0,1,2,3].sort((i,j)=>A[i][i]-A[j][j]),e=order.map(i=>A[i][i]);
+ const bo=i=>2*order.slice(0,2).reduce((sum,j)=>sum+V[i][j]*V[i+1][j],0);
+ const density=2*order.slice(0,2).reduce((sum,j)=>sum+V[0][j]**2,0);
+ const p=[0,1,2].map(bo),gap=e[2]-e[1],epi=2*(e[0]+e[1]);
+ assert.ok(Math.abs(density-1)<1e-12&&p.every(v=>v>0));
+ return[...e,gap,1239.841984/gap,epi,4*alpha+4*beta-epi,...p,density,p.reduce((s,v)=>s+v,0)];
+},
+"UC-ADV10-P120":()=>{
+ const g=x=>x*x*Math.exp(-x)-.05,root=(lo,hi)=>{let sign=Math.sign(g(lo));for(let j=0;j<100;j++){let mid=(lo+hi)/2;if(Math.sign(g(mid))===sign)lo=mid;else hi=mid;}return (lo+hi)/2};
+ const b=root(.1,1),s=root(4,15),u=x=>100*Math.exp(-x)-5/x,cur=x=>100*Math.exp(-x)-10/x**3;
+ const kB=1.380649e-23,T=298.15;assert.ok(cur(b)<0&&cur(s)>0&&Math.abs(g(b))<1e-12);
+ return[b,s,u(b),u(s),cur(b),cur(s),.304**2,30*kB*T/10,u(b)-u(s),u(2),u(b)*kB*T];
+},
+
+
 "UC-ADV10-I121":()=>{
  const r=[0.6576950403124071,1.8560935381892378],lambda=2;
  const d0=lambda*Math.log1p(r[0]/.8),d60=lambda*.5*Math.log1p(r[1]/.8);

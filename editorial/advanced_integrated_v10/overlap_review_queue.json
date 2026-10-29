@@ -2,7 +2,7 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 88,
+  "current_draft_count": 92,
   "preliminary_flags": 43,
   "pairs": [
     {
@@ -264,7 +264,7 @@
       "judgement": "pending_human_comparison"
     }
   ],
-  "notes": "第十辑88条待审记录；43组初步相似性标记（非确认重复）；本轮I122/A122/O119/P119四题均待跨辑方程级人工比较；专家批准0。",
+  "notes": "第十辑92条待专家审校记录；43组带有具体先前对照对象的初步相似性标记（未确认重复）。本轮4题另入人工核心模型比对清单，专家批准0。",
   "expert_approved": 0,
   "new_items_requiring_cross_series_comparison": [
     {
@@ -722,6 +722,30 @@
       "model_family": "Kelvin-capillary-condensation-two-pore-radius-contact-angle-inverse-Laplace-uptake",
       "judgement": "pending_human_comparison",
       "screening": "本轮加入完整答案向量的独立计算witness；机器通过不代表化学专家审核或跨辑核心模型原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV10-I123",
+      "model_family": "fluorite-CeO2-Williamson-Hall-crystallite-microstrain-XRD-density",
+      "judgement": "pending_human_comparison",
+      "screening": "已配置机器独立复算；必须人工逐式对照旧辑数学模型并核查化学条件。不是原创性已认证或专家审核批准。"
+    },
+    {
+      "new_id": "UC-ADV10-A123",
+      "model_family": "chronoamperometry-Cottrell-plus-capacitive-exponential-two-time-inverse-charge-audit",
+      "judgement": "pending_human_comparison",
+      "screening": "已配置机器独立复算；必须人工逐式对照旧辑数学模型并核查化学条件。不是原创性已认证或专家审核批准。"
+    },
+    {
+      "new_id": "UC-ADV10-O120",
+      "model_family": "butadiene-Huckel-four-orbital-spectral-graph-bondorder-delocalization",
+      "judgement": "pending_human_comparison",
+      "screening": "已配置机器独立复算；必须人工逐式对照旧辑数学模型并核查化学条件。不是原创性已认证或专家审核批准。"
+    },
+    {
+      "new_id": "UC-ADV10-P120",
+      "model_family": "DLVO-exponential-screened-repulsion-Hamaker-attraction-two-stationary-barriers",
+      "judgement": "pending_human_comparison",
+      "screening": "已配置机器独立复算；必须人工逐式对照旧辑数学模型并核查化学条件。不是原创性已认证或专家审核批准。"
     }
   ]
 }
