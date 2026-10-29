@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (62题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (66题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -461,6 +461,36 @@ high\_pressure\_forward\_rate\_ratio = 0.668047864 ratio；high\_pressure\_rever
 固定NH₃储库及常活化体积是理想化约束，实际高压下介电常数、溶剂化、自由NH₃酸碱平衡、活度及扩散速率均可能改变，不能把此结果直接当作真实Ni(II)实验速率。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I167 · 双步配位平衡的配体耗竭、统计方差与温度耦合反演}
+\noindent\textbf{题目}\par
+一假想二价八面体金属配合物M(H₂O)₆²⁺可依次被中性单齿配体L取代，只有M、ML、ML₂三种状态，逐步平衡M+L⇌ML、ML+L⇌ML₂（所省略的配位水以水活度1处理），且不存在更高配位数、沉淀与水解。金属总分析浓度C\_M=0.01000 mol/L，配体总分析浓度C\_L=0.03000 mol/L。在T₀=298.15 K，浓度型逐步形成常数K₁=100.0 L/mol、K₂=25.00 L/mol，条件反应焓ΔH₁=−20.00 kJ/mol、ΔH₂=−10.00 kJ/mol；忽略热容变化，Kᵢ(T)=Kᵢ(T₀)exp\{−ΔHᵢ/R(1/T−1/T₀)\}，R=8.314462618 J/(mol K)。分别在298.15 K和323.15 K求自由L、各金属物种浓度、占据分数、平均结合配体数、金属和配体双重守恒。进一步求基准温度每金属的结合数方差，以及配体结合量对自由配体浓度的导数；说明非线性物料方程唯一正根的理由和升温的影响。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 明确三种金属中心的形式氧化态皆为+II；每结合一个中性L便取代一个配位水，金属、配体和电荷的计量由题设反应维持。
+\item 令自由配体浓度x=[L]，自由金属浓度m=[M]；按逐步形成常数[ML]=K₁mx、[ML₂]=K₁K₂mx²，不能将K₂误作总体β₂。
+\item 由金属守恒C\_M=m(1+K₁x+K₁K₂x²)，定义单中心配位配分函数Z=1+K₁x+K₁K₂x²。
+\item 于是p₀=1/Z、p₁=K₁x/Z、p₂=K₁K₂x²/Z，三个占据分数之和严格为1。
+\item 配体守恒必须包含游离及两种结合态：C\_L=x+C\_M(p₁+2p₂)，其中ML₂贡献两份L。
+\item 将x限制在0<x<C\_L，设F(x)=x+C\_M⟨n⟩−C\_L；F(0)=−C\_L<0，F(C\_L)>0。
+\item 在x>0有d⟨n⟩/dx=Var(n)/x≥0，故F'(x)=1+C\_M Var(n)/x>0，正根唯一；使用保界二分法而非选取任意三次方程根。
+\item 在298.15 K求得自由配体x=0.020000000000 mol/L，配分函数计算的三金属物种依次为0.0025000000000、0.0050000000000、0.0025000000000 mol/L。
+\item 三金属占据分数p₀,p₁,p₂依次为0.25000000000、0.50000000000、0.25000000000，平均结合数⟨n⟩=1.0000000000。
+\item 基准温度结合配体浓度C\_M⟨n⟩=0.010000000000 mol/L，自由加结合总量为0.030000000000 mol/L；三金属之和为0.010000000000 mol/L。
+\item 平均结合数的统计方差为Var(n)=p₁+4p₂−(p₁+2p₂)²，物理上量化单金属占据数的涨落。
+\item 方差为0.50000000000，响应斜率d(C\_M⟨n⟩)/dx=C\_M Var(n)/x=0.25000000000（浓度比，无量纲）。
+\item 通过范特霍夫关系更新两个逐步常数；对放热形成反应，升温后的K₁与K₂均降低，不得保持298 K的常数不变。
+\item 在323.15 K：K₁=53.571053456、K₂=18.298062305 L/mol，重新解配体耗竭方程得x=0.021984616252 mol/L。
+\item 升温后的M、ML、ML₂浓度依次为0.0037714286963、0.0044417588591、0.0017868124446 mol/L，平均配位数0.80153837482，束缚L=0.0080153837482 mol/L。
+\item 升温后总配体回代0.030000000000 mol/L、总金属0.010000000000 mol/L；ML₂占据分数比0.71472497782，随放热结合受抑而降低。
+\item 模型以浓度常数、理想稀溶液与固定反应焓为条件；真实体系的配体质子化、金属水解、活度及氧化态改变均需另建平衡方程。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+K1\_298\_L\_mol = 100 L/mol；K2\_298\_L\_mol = 25 L/mol；free\_L\_298\_M = 0.02 mol/L；free\_M\_298\_M = 0.0025 mol/L；ML\_298\_M = 0.005 mol/L；ML2\_298\_M = 0.0025 mol/L；fraction\_M\_298 = 0.25 fraction；fraction\_ML\_298 = 0.5 fraction；fraction\_ML2\_298 = 0.25 fraction；mean\_occupancy\_298 = 1 ratio；bound\_L\_298\_M = 0.01 mol/L；total\_L\_inventory\_298\_M = 0.03 mol/L；occupancy\_variance\_298 = 0.5 variance；d\_bound\_L\_d\_free\_L\_298 = 0.25 ratio；K1\_323\_L\_mol = 53.5710535 L/mol；K2\_323\_L\_mol = 18.2980623 L/mol；free\_L\_323\_M = 0.0219846163 mol/L；free\_M\_323\_M = 0.0037714287 mol/L；ML\_323\_M = 0.00444175886 mol/L；ML2\_323\_M = 0.00178681244 mol/L；mean\_occupancy\_323 = 0.801538375 ratio；bound\_L\_323\_M = 0.00801538375 mol/L；total\_L\_inventory\_323\_M = 0.03 mol/L；relative\_ML2\_fraction\_323\_over\_298 = 0.714724978 ratio；reaction\_enthalpy1\_kJ\_mol = -20 kJ/mol；reaction\_enthalpy2\_kJ\_mol = -10 kJ/mol；metal\_inventory\_298\_M = 0.01 mol/L；metal\_inventory\_323\_M = 0.01 mol/L\par
+\noindent\textbf{模型前提：}
+模型以浓度常数、理想稀溶液与固定反应焓为条件；真实体系的配体质子化、金属水解、活度及氧化态改变均需另建平衡方程。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -886,6 +916,35 @@ sample\_total\_charge\_C = 4.44939214 C；blank\_drift\_charge\_C = 0.329584603 
 本模型假设氧化副反应与电子利用效率可独立校准，真实水分测试还可能受样品副反应、阳极膜、反应终点不稳定、湿气速率漂移等影响。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A167 · 铜稳定同位素稀释质谱的探测器死时间与质量歧视联合反演}
+\noindent\textbf{题目}\par
+用同位素稀释质谱(IDMS)测定10.00 mL未知铜溶液中的铜含量。样品中⁶³Cu与⁶⁵Cu原子分数分别0.6915、0.3085；加入2.000 μmol富集⁶⁵Cu同位素稀释剂，其⁶³Cu与⁶⁵Cu原子分数分别0.0500、0.9500。单同位素离子计数器为非延长型死时间模型r\_obs=r\_true/(1+τ r\_true)，τ=50.0 ns；在完成死时间修正后，仪器对⁶⁵Cu/⁶³Cu的质量歧视系数α=1.0200，即测得真实计数比H\_true/L\_true=αR\_mix。混合物两质量通道原始计数速率分别L\_obs=392156.862745098 s⁻¹、H\_obs=516456.806790183 s⁻¹，已扣除背景和同量异位素干扰。取Cu平均摩尔质量63.546 g/mol。求两通道死时间修正计数率、原始及校正同位素比、样品铜物质的量与mg/L。若两通道速率标准不确定度分别300 s⁻¹，α标准不确定度0.0020，三者独立且τ等其余参数准确，求一阶传播的同位素比、铜物质的量与浓度标准不确定度。证明同位素质量守恒，并检查富集剂和样品比例合理性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设样品铜量n、加入的富集剂n\_s=2.000 μmol，样品两同位素分数(f₆₃,f₆₅)=(0.6915,0.3085)，稀释剂为(g₆₃,g₆₅)=(0.0500,0.9500)。
+\item 元素总摩尔数及两同位素摩尔数均守恒；混合真实丰度比R=(nf₆₅+n\_sg₆₅)/(nf₆₃+n\_sg₆₃)，不能直接把观测计数比当作R。
+\item 非延长型死时间计数模型r\_obs=r\_true/(1+τr\_true)，严格反演为r\_true=r\_obs/(1−τr\_obs)，必须确认τr\_obs<1。
+\item 这里τ=50 ns且观测计数速率分别392156.862745098与516456.806790183 s⁻¹；两者的τr\_obs均低于0.03，逆变换没有极点。
+\item 死时间校正后⁶³Cu计数率400000.00000 s⁻¹、⁶⁵Cu计数率530146.70039 s⁻¹；对应修正倍数1.0200000000、1.0265073350。
+\item 未校正的原始计数比H\_obs/L\_obs=1.3169648573，先死时间再以质量歧视α=1.0200校正，真实R=1.2993791676。
+\item 令D=R f₆₃−f₆₅，代数移项解得n=n\_s(g₆₅−R g₆₃)/D；若D≤0或n<0，表明测量或模型假设不成立。
+\item 反演得到样品铜n=3.0000000000 μmol，换算铜质量m=n×63.546 g/mol=0.19063800000 mg。
+\item 样品体积为10.00 mL，因此浓度c=19.063800000 mg/L 或0.00030000000000 mol/L，不得将稀释剂加入量算入原样品浓度。
+\item 分别从原样品及富集剂重构混合物总⁶³Cu=2.1745000000 μmol、⁶⁵Cu=2.8255000000 μmol，二者之比1.2993791676，与校正R一致。
+\item 对H\_obs、L\_obs、α分别求偏导：∂R/∂H\_obs=[αL\_true(1−τH\_obs)²]⁻¹、∂R/∂L\_obs=−H\_true/[αL\_true²(1−τL\_obs)²]、∂R/∂α=−R/α。
+\item 三项独立的一阶标准不确定度平方和为u(R)²=(∂R/∂H\_obs·300)²+(∂R/∂L\_obs·300)²+(∂R/∂α·0.0020)²。
+\item 据此同位素比标准不确定度u(R)=0.0028494918597；不能将两个计数通道简单相减，也不可忽略质量歧视的贡献。
+\item 由逆式微分得dn/dR=n\_s(g₆₃f₆₅−g₆₅f₆₃)/(Rf₆₃−f₆₅)²，u(n)=|dn/dR|u(R)。
+\item 求得u(n)=0.010501699529 μmol、u(c)=0.066734099830 mg/L；该值只覆盖题设三个独立的不确定度来源。
+\item 核查n+n\_s等于两铜同位素物质的量之和，两个通道响应总量的比例可任意缩放而不改变丰度反演；真实分析仍需校正化学回收、空白、同量异位素及非线性死时间模型偏差。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+low\_mass\_observed\_rate\_s = 392156.863 s\textasciicircum{}-1；high\_mass\_observed\_rate\_s = 516456.807 s\textasciicircum{}-1；low\_mass\_corrected\_rate\_s = 400000 s\textasciicircum{}-1；high\_mass\_corrected\_rate\_s = 530146.7 s\textasciicircum{}-1；uncorrected\_count\_ratio = 1.31696486 ratio；corrected\_isotope\_ratio = 1.29937917 ratio；sample\_copper\_umol = 3 umol；sample\_copper\_mg = 0.190638 mg；sample\_copper\_mg\_L = 19.0638 mg/L；sample\_copper\_mol\_L = 0.0003 mol/L；mixture\_63Cu\_umol = 2.1745 umol；mixture\_65Cu\_umol = 2.8255 umol；reconstructed\_isotope\_ratio = 1.29937917 ratio；ratio\_standard\_uncertainty = 0.00284949186 ratio；sample\_amount\_standard\_uncertainty\_umol = 0.0105016995 umol；sample\_concentration\_standard\_uncertainty\_mg\_L = 0.0667340998 mg/L；low\_mass\_deadtime\_correction\_factor = 1.02 ratio；high\_mass\_deadtime\_correction\_factor = 1.02650734 ratio；mixture\_65Cu\_fraction = 0.5651 fraction；total\_copper\_mol = 5e-06 mol\par
+\noindent\textbf{模型前提：}
+核查n+n\_s等于两铜同位素物质的量之和，两个通道响应总量的比例可任意缩放而不改变丰度反演；真实分析仍需校正化学回收、空白、同量异位素及非线性死时间模型偏差。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第12辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -1294,6 +1353,36 @@ Karplus\_anti\_J\_Hz = 12 Hz；Karplus\_each\_gauche\_J\_Hz = 3 Hz；one\_gauche
 thiolate\_fraction\_pH8p5 = 0.61313682 fraction；neutral\_amine\_fraction\_pH8p5 = 0.0909090909 fraction；S\_path\_pseudo\_firstorder\_rate\_pH8p5 = 0.61313682 s\textasciicircum{}-1；N\_path\_pseudo\_firstorder\_rate\_pH8p5 = 0.0181818182 s\textasciicircum{}-1；electrophile\_disappearance\_rate\_pH8p5 = 0.631318638 s\textasciicircum{}-1；S\_over\_N\_product\_ratio\_pH8p5 = 33.7225251 ratio；electrophile\_conversion\_pH8p5 = 0.717093062 fraction；S\_alkylated\_product\_pH8p5\_M = 0.000696440962 mol/L；N\_alkylated\_product\_pH8p5\_M = 2.06521e-05 mol/L；remaining\_electrophile\_pH8p5\_M = 0.000282906938 mol/L；thiolate\_fraction\_pH10 = 0.980437696 fraction；neutral\_amine\_fraction\_pH10 = 0.759746927 fraction；electrophile\_disappearance\_rate\_pH10 = 1.13238708 s\textasciicircum{}-1；S\_over\_N\_product\_ratio\_pH10 = 6.45239659 ratio；electrophile\_conversion\_pH10 = 0.896146514 fraction；S\_alkylated\_product\_pH10\_M = 0.000775897075 mol/L；N\_alkylated\_product\_pH10\_M = 0.00012024944 mol/L；remaining\_electrophile\_pH10\_M = 0.000103853486 mol/L；inverse\_pH\_for\_selectivity20 = 8.89655795 pH；selectivity\_ratio\_at\_inverse\_pH = 20 ratio；electrophile\_inventory\_pH8p5\_M = 0.001 mol/L；electrophile\_inventory\_pH10\_M = 0.001 mol/L；product\_ratio\_consistency\_pH8p5 = 33.7225251 ratio；product\_ratio\_consistency\_pH10 = 6.45239659 ratio\par
 \noindent\textbf{模型前提：}
 任意pH下检查[P\_S]+[P\_N]+[E]=E₀以及两种产物比等于两速率之比；真实半胱氨酸常存在电荷和构象耦合、二次烷基化、硫醇氧化及水解竞争，需要改用完整物种动力学。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O163 · E/Z光致异构与暗反应竞争的光稳态、量子产率和关灯动力学}
+\noindent\textbf{题目}\par
+某假想有机偶氮衍生物仅有E、Z两种互变异构体，溶液足够稀，忽略内滤效应、光漂白与副反应。波长固定且光通量Φ=1.000×10¹⁷ photons/(cm² s)，E、Z的单分子有效吸收截面分别σ\_E=5.000×10⁻¹⁸、σ\_Z=2.000×10⁻¹⁸ cm²，光异构化量子产率分别φ\_E→Z=0.4000、φ\_Z→E=0.2500。独立测得黑暗中E→Z热速率k\_EZ,d=0.01000 s⁻¹、Z→E热速率k\_ZE,d=0.04000 s⁻¹。总异构体浓度C=0.002000 mol/L，起初全为E。照光10.00 s后关灯，再黑暗放置20.00 s。求各方向光速率与照光时总速率、光照下Z稳态分数和时间常数、照光终点E/Z浓度、关灯后Z分数和浓度、黑暗稳态与半衰弛豫时间。若仅知道照光稳态Z分数及光照弛豫时间和暗反应率，反推出两量子产率。分别检查E/Z物料守恒、单位与关灯瞬间状态连续性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 溶液只存在E与Z，定义Z分数z(t)=[Z]/C，E分数恒为1−z；C=0.002000 mol/L始终守恒。
+\item 在光学薄层和均匀光通量近似下，每个分子的光致跃迁一阶速率是k\_photo=Φσφ，吸收截面cm²与光通量photons/(cm² s)相消。
+\item 带入数据得光致E→Z速率0.20000000000 s⁻¹、Z→E速率0.050000000000 s⁻¹，两个量子产率均不超过1。
+\item 照光时还应叠加热跃迁而非把暗反应忽略；总正向a=k\_photo,E→Z+k\_EZ,d，总反向b=k\_photo,Z→E+k\_ZE,d。
+\item 得到a=0.21000000000 s⁻¹、b=0.090000000000 s⁻¹，λ=a+b=0.30000000000 s⁻¹。
+\item 由dz/dt=a(1−z)−bz=a−λz得到光稳态z*=a/λ，且1−z*=b/λ。
+\item 光稳态Z分数z*=0.70000000000，对应E分数0.30000000000；弛豫时间τ=1/λ=3.3333333333 s。
+\item 初始z(0)=0，照光时显式解z(t)=z*[1−exp(−λt)]，不应误用不可逆光转化的一阶式。
+\item 照光10.00 s后z=0.66514905214、E分数0.33485094786，Z浓度0.0013302981043 mol/L、E浓度0.00066970189572 mol/L。
+\item 关灯时光激发的两速率立即归零，但Z的分数连续；黑暗中仍有a\_d=0.01000、b\_d=0.04000 s⁻¹。
+\item 黑暗稳态z\_d*=a\_d/(a\_d+b\_d)=0.20000000000，与光稳态不同。
+\item 以关灯瞬间的z(10 s)作为新的初始条件，暗期解z\_d(t)=z\_d*+[z(10)−z\_d*]exp[−(a\_d+b\_d)t]。
+\item 再放置20.00 s得到z=0.37111877336、E分数0.62888122664，Z浓度=0.00074223754673 mol/L。
+\item 黑暗弛豫半衰时间为ln2/(a\_d+b\_d)=13.862943611 s，既不是照光半衰时间2.3104906019 s，也不是Z的转化半寿命。
+\item 若实测光稳态z*及光照λ，先反演a=λz*、b=λ(1−z*)，再从两者分别减去暗反应率得到纯光速率。
+\item 反推出φ\_E→Z=0.40000000000、φ\_Z→E=0.25000000000，重建题设量子产率。
+\item 初始Z分数的变化率就是a；任意时刻E+Z=C，关灯瞬间连续但导数改变；真实体系若有波长依赖吸收、非均匀照射、光疲劳和构象杂化，需进一步建模。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+photo\_forward\_rate\_s = 0.2 s\textasciicircum{}-1；photo\_reverse\_rate\_s = 0.05 s\textasciicircum{}-1；light\_total\_forward\_rate\_s = 0.21 s\textasciicircum{}-1；light\_total\_reverse\_rate\_s = 0.09 s\textasciicircum{}-1；light\_relaxation\_rate\_s = 0.3 s\textasciicircum{}-1；light\_Z\_stationary\_fraction = 0.7 fraction；light\_E\_stationary\_fraction = 0.3 fraction；light\_relaxation\_time\_s = 3.33333333 s；light\_half\_relaxation\_time\_s = 2.3104906 s；Z\_fraction\_after\_10s\_light = 0.665149052 fraction；E\_fraction\_after\_10s\_light = 0.334850948 fraction；Z\_concentration\_after\_10s\_M = 0.0013302981 mol/L；E\_concentration\_after\_10s\_M = 0.000669701896 mol/L；dark\_Z\_stationary\_fraction = 0.2 fraction；Z\_fraction\_after\_20s\_dark = 0.371118773 fraction；E\_fraction\_after\_20s\_dark = 0.628881227 fraction；Z\_concentration\_after\_20s\_dark\_M = 0.000742237547 mol/L；dark\_half\_relaxation\_time\_s = 13.8629436 s；inferred\_forward\_quantum\_yield = 0.4 fraction；inferred\_reverse\_quantum\_yield = 0.25 fraction；initial\_Z\_fraction\_rate\_s = 0.21 s\textasciicircum{}-1；final\_EZ\_total\_concentration\_M = 0.002 mol/L\par
+\noindent\textbf{模型前提：}
+初始Z分数的变化率就是a；任意时刻E+Z=C，关灯瞬间连续但导数改变；真实体系若有波长依赖吸收、非均匀照射、光疲劳和构象杂化，需进一步建模。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{物理化学}
@@ -1705,6 +1794,35 @@ gel\_cation\_concentration\_0p1M = 0.128077641 mol/L；gel\_anion\_concentration
 thermal\_energy\_pN\_nm = 4.11640499 pN nm；Bell\_force\_scale\_pN = 8.23280999 pN；dimensionless\_ramp\_factor = 0.0823280999 ratio；most\_probable\_force\_10pN\_per\_s = 20.5576789 pN；median\_force\_10pN\_per\_s = 18.4642468 pN；most\_probable\_force\_40pN\_per\_s = 31.9707769 pN；median\_force\_40pN\_per\_s = 29.1942482 pN；mode\_shift\_pN = 11.4130981 pN；hazard\_rate\_at\_first\_mode\_s = 1.21465211 s\textasciicircum{}-1；hazard\_lifetime\_at\_mode\_s = 0.823280999 s；bond\_survival\_at\_15pN = 0.652597052 fraction；rupture\_cdf\_at\_15pN = 0.347402948 fraction；bond\_survival\_at\_30pN = 0.0466010525 fraction；rupture\_cdf\_at\_30pN = 0.953398948 fraction；survival\_at\_mode = 0.399447914 fraction；rupture\_density\_at\_zero\_force\_pN\_inv = 0.01 pN\textasciicircum{}-1；rupture\_density\_at\_mode\_pN\_inv = 0.0485190251 pN\textasciicircum{}-1；factor\_four\_loading\_analytical\_shift\_pN = 11.4130981 pN；force\_zero\_rupture\_cdf = 0 fraction\par
 \noindent\textbf{模型前提：}
 当rα≤k₀时概率密度峰位于f=0边界；真实多势垒、反复再结合、反应坐标强制改变及非恒定载荷需重新建模。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P163 · Randles型电化学阻抗的复平面反演、Nyquist峰值与交流电流}
+\noindent\textbf{题目}\par
+某假想电极在小振幅线性交流扰动下可用无扩散Warburg项的简化Randles网络描述：串联溶液电阻R\_s与并联的电荷转移电阻R\_ct、双电层电容C\_dl。高频实轴截距独立测得R\_s=10.00 Ω，10.00 Hz时测得复阻抗Z₁≈(81.695680032490−45.047724336839i) Ω，100.0 Hz时另测得Z₂≈(12.470452303186−15.522309613465i) Ω。以10.00 Hz施加10.00 mV RMS正弦电压。假定理想电容、R\_ct与频率无关，且无感抗和浓差极化。利用Z(ω)=R\_s+R\_ct/(1+iωR\_ctC\_dl)从Z₁严格逆解R\_ct、C\_dl、时间常数，独立预测Z₂以复核。求Nyquist圆峰值频率、峰处实部与虚部、10 Hz阻抗模长与RMS电流、相位、零频和无限频实轴截距。说明电容引起负虚部的原因与频率边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 在线性小扰动条件下Z=R\_s+1/(1/R\_ct+iωC\_dl)=R\_s+R\_ct/(1+iωτ)，定义τ=R\_ctC\_dl和ω=2πf。
+\item 令x=ωτ，分离实虚部：ReZ=R\_s+R\_ct/(1+x²)，ImZ=−R\_ctx/(1+x²)；后者由于理想电容而为负。
+\item 已知高频截距R\_s=10.00 Ω；以10 Hz读数定义u=ReZ₁−R\_s>0与v=−ImZ₁>0。
+\item 两式相除给v/u=ωτ，可直接求τ=(v/u)/(2πf)，避免将ImZ的负号误代入。
+\item 10 Hz时ReZ=81.695680032 Ω、ImZ=-45.047724337 Ω，故维持正时间常数τ=0.010000000000 s。
+\item 从u=R\_ct/(1+x²)反推R\_ct=u[1+(v/u)²]，随即C\_dl=τ/R\_ct。
+\item 反演得到R\_ct=100.00000000 Ω、C\_dl=100.00000000 μF；独立的R\_ct C\_dl=0.010000000000 s与时间常数一致。
+\item 代回在100 Hz的公式，必须同时重建实部和虚部，而不能只比较阻抗模长。
+\item 预测100 Hz的Z₂=(12.470452303−15.522309613i) Ω，与第二次测量吻合。
+\item Nyquist图在峰值条件x=ωτ=1处取虚部极小值，峰频f*=1/(2πτ)。
+\item 据此f*=15.915494309 Hz，峰处ReZ=60.000000000 Ω、ImZ=-50.000000000 Ω。
+\item 10 Hz的阻抗模长|Z|=93.292452020 Ω，10.00 mV RMS电压驱动的RMS电流I=107.18980779 μA。
+\item 电流超前电压相位θ=−arg(Z)=28.872732697°；这是整串并网络的相位，不等于纯电容的90°。
+\item ω→0时电容开路，阻抗实部R\_s+R\_ct=110.00000000 Ω；ω→∞时电容短路，实部R\_s=10.000000000 Ω。
+\item 电流在无限频形式极限为V/R\_s，但不能把该理论上限当作10 Hz测量电流；此模型不包括扩散Warburg、常相位元件或电极非线性。
+\item 通过正的R\_ct、C\_dl与两个频率下的负虚部检查电路物理可实现性；测量数据为有限小数精度，回代误差按给定小数精度判定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Z10\_real\_ohm = 81.69568 ohm；Z10\_imag\_ohm = -45.0477243 ohm；Z100\_real\_ohm = 12.4704523 ohm；Z100\_imag\_ohm = -15.5223096 ohm；inferred\_RC\_time\_s = 0.01 s；inferred\_Rct\_ohm = 100 ohm；inferred\_Cdl\_uF = 100 uF；Nyquist\_peak\_frequency\_Hz = 15.9154943 Hz；Nyquist\_peak\_real\_ohm = 60 ohm；Nyquist\_peak\_imag\_ohm = -50 ohm；Z10\_magnitude\_ohm = 93.292452 ohm；current\_10Hz\_microamp\_rms = 107.189808 uA；current\_lead\_phase\_deg = 28.8727327 degree；high\_frequency\_ideal\_current\_A = 0.001 A；zero\_frequency\_real\_intercept\_ohm = 110 ohm；high\_frequency\_real\_intercept\_ohm = 10 ohm；dimensionless\_frequency\_10Hz = 0.628318531 ratio；Z10\_polarization\_real\_ohm = 71.69568 ohm；Z10\_polarization\_loss\_ohm = 45.0477243 ohm；independent\_RC\_product\_s = 0.01 s\par
+\noindent\textbf{模型前提：}
+通过正的R\_ct、C\_dl与两个频率下的负虚部检查电路物理可实现性；测量数据为有限小数精度，回代误差按给定小数精度判定。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
