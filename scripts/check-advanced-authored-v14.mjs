@@ -35,6 +35,22 @@ const witnesses={
 "UC-ADV14-P202":()=>{let gamma=.03,dg=-3e7,r=-2*gamma/dg,area=4*Math.PI*r*r,vol=4*Math.PI*r**3/3,G=x=>4*Math.PI*x*x*gamma+4*Math.PI*x**3*dg/3,bar=G(r);return[r*1e9,area,vol,area*gamma,vol*dg,bar,bar/(1.380649e-23*300),G(1e-9),G(3e-9)]},
 "UC-ADV14-P203":()=>{let B=.62*F*.1*(1e-5)**(2/3)*(.01)**(-1/6)*1e-6,l1=B*10,l2=B*20,k=20e-6,o1=k*l1/(k+l1),o2=k*l2/(k+l2);return[l1,l2,o1,o2,o2/o1,o1/l1,1/k,l2/l1]},
 "UC-ADV14-P204":()=>{let B=-1e-4,T=300,p=1e6,z1=1+B*p/(R*T),z2=1+B*2*p/(R*T),phi=Math.exp(B*p/(R*T));return[z1,z2,R*T/p+B,phi,phi, B*p,B,B/(R*T)]},
+"UC-ADV14-I209":()=>{let a=1+1e8*.001,b=1+1e5*.001,d=R*298.15/F*Math.log(b/a);return[a,b,1/a,1/b,.77+d,d,.77+d,a-1,b-1]},
+"UC-ADV14-I210":()=>{let y=.04,v=y/2,z=1-y-v;return[z,y,v,z+y,2*z+3*y,2,z*65.38+y*26.982+15.999,.25*y,.25*v]},
+"UC-ADV14-I211":()=>[10,2.5,2,2,9,2.25,1,3,F],
+"UC-ADV14-I212":()=>{let e=6.02214076e23*6.62607015e-34*299792458*100*18000/1000;return[18000,1000,1000/1200,1e7/18000,1e7/33000,e,-1.2*e,3,Math.sqrt(15)]},
+"UC-ADV14-A209":()=>[1,2,1,2,Math.sqrt(.5),Math.sqrt(2/3),-.5,1.5,7],
+"UC-ADV14-A210":()=>{let a=10**(-.3),b=10**(-.15);return[1000*a,500*b,a,b,2*a/b,2,1/a,1-a,1-b]},
+"UC-ADV14-A211":()=>{let a=t=>.2+.8*Math.exp(-.5*t),x=a(2),y=a(4);return[.2,.8,x,1-x,y,1-y,Math.log(2)/.5,.4,.4*x-.1*(1-x)]},
+"UC-ADV14-A212":()=>{let cu=80/(2*F),ni=10/(2*F);return[80,10,cu,ni,cu*63.546,ni*58.6934,cu*63.546+ni*58.6934,.9,10,90/F]},
+"UC-ADV14-O205":()=>{let c=.01/13,cs=2*c,cp=10*c,v0=.01*2/3;return[c,cs,cp,c/.01,cs/.01,cp/.01,cs,v0,cs/v0,.01-c-cs-cp]},
+"UC-ADV14-O206":()=>{let p=.8,x5=(1-p)*p**4,n=p**9,m=n*(10-9*p);return[1/(1-p),(1+p)/(1-p),1+p,x5,5*x5*(1-p),n,m,p/(1-p)**2,m/n]},
+"UC-ADV14-O207":()=>{let a=2,b1=.5,b4=2,r=b=>.01*a*b/(3+b)**2,x=r(b1),y=r(b4);return[x,y,b1/3.5,a/3.5,b4/5,a/5,y/x,1-2*b1/3.5,6,.01*a/12]},
+"UC-ADV14-O208":()=>{let k=p=>10/(1+10**(6-p)+10**(p-8)),v=k(7);return[k(6),v,k(8),7,v,v/10,k(6)/v,k(8)/v,.1]},
+"UC-ADV14-P205":()=>{let eps=78.5*8.8541878128e-12,k=1.380649e-23,T=298.15,e=1.602176634e-19,N=6.02214076e23,l=I=>Math.sqrt(eps*k*T/(2*N*e*e*1000*I)),a=l(.1),b=l(.01),bj=e*e/(4*Math.PI*eps*k*T);return[a*1e9,b*1e9,b/a,1/a,1/b,bj*1e9,a/bj,b/bj]},
+"UC-ADV14-P206":()=>{let t0=298.15,t=350,h=-50000-20*(t-t0),s=-100-20*Math.log(t/t0),g=h-t*s,g0=-50000+t0*100,k=Math.exp(-g/(R*t)),k0=Math.exp(-g0/(R*t0));return[h/1000,s,g/1000,k,g0/1000,k0,k/k0,-R*t*Math.log(k)-g]},
+"UC-ADV14-P207":()=>{let t=100*10e-6,q=10e-6*.1;return[t,.1/100,.1/100*Math.exp(-1),q*(1-Math.exp(-1)),q,.5*10e-6*.1**2,.5*10e-6*.1**2,t*Math.log(10),Math.exp(-1)]},
+"UC-ADV14-P208":()=>{let x=.1,cs=.05,p=(x+Math.sqrt(x*x+4*cs*cs))/2,m=cs*cs/p,d=p+m-2*cs;return[p,m,p/m,p+m,d,R*298.15*1000*d,R*298.15/F*Math.log(cs/p),p-m-x,p*m-cs*cs]},
 };
 const starts={inorganic:["I",201],analytical:["A",201],organic:["O",198],physical:["P",198]};
 const allIDs=new Set(),titles=new Set(),families=new Set(),counts={};

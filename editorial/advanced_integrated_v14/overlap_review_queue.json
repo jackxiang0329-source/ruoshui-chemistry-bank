@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 14,
   "status": "expert_review_pending",
-  "current_draft_count": 30,
+  "current_draft_count": 46,
   "expert_approved": 0,
-  "preliminary_flags": 30,
+  "preliminary_flags": 46,
   "pairs": [
     {
       "new_id": "UC-ADV14-I201",
@@ -184,6 +184,102 @@
       "new_id": "UC-ADV14-P204",
       "prior_id": null,
       "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I209",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I210",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I211",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I212",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A209",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A210",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A211",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A212",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O205",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O206",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O207",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O208",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P205",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P206",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P207",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P208",
+      "prior_id": null,
+      "reason": "须与全部历史题目核心模型和方程逐题人工比对。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -367,6 +463,102 @@
       "model_family": "virial-pressure-gas-compressibility-fugacity-residual-Gibbs",
       "judgement": "pending_human_comparison",
       "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-I209",
+      "model_family": "Fe-redox-ligand-conditional-formal-potential",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-I210",
+      "model_family": "Al-ZnO-zinc-vacancy-charge-neutrality",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-I211",
+      "model_family": "Fe4S4-cubane-mixed-valence-electron-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-I212",
+      "model_family": "octahedral-d3-Orgel-Racah-two-band-approximation",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-A209",
+      "model_family": "weighted-linear-calibration-known-heteroscedastic-errors",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-A210",
+      "model_family": "fluorescence-inner-filter-excitation-emission-attenuation",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-A211",
+      "model_family": "EXSY-reversible-two-state-chemical-exchange",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-A212",
+      "model_family": "Cu-Ni-electrogravimetry-charge-efficiency-partition",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-O205",
+      "model_family": "organocatalyst-product-substrate-competitive-binding",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-O206",
+      "model_family": "Schulz-Flory-geometric-distribution-molecular-weight-dispersity",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-O207",
+      "model_family": "organic-hydrogenation-Langmuir-Hinshelwood-pressure-maximum",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-O208",
+      "model_family": "amide-hydrolysis-two-ionization-bell-shaped-pH",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-P205",
+      "model_family": "Debye-Bjerrum-screening-ionic-strength-scale",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-P206",
+      "model_family": "Kirchhoff-heat-capacity-Gibbs-temperature-equilibrium",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-P207",
+      "model_family": "electrochemical-double-layer-RC-charge-energy",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
+    },
+    {
+      "new_id": "UC-ADV14-P208",
+      "model_family": "Donnan-gel-fixed-charge-salt-partition-osmotic",
+      "judgement": "pending_human_comparison",
+      "screening": "公式复算不等同独立科学审查与跨辑原创性确认。"
     }
   ]
 }
