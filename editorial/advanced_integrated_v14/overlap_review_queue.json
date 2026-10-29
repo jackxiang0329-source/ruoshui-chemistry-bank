@@ -4,7 +4,7 @@
   "status": "expert_review_pending",
   "current_draft_count": 54,
   "expert_approved": 0,
-  "preliminary_flags": 54,
+  "preliminary_flags": 69,
   "pairs": [
     {
       "new_id": "UC-ADV14-I201",
@@ -329,6 +329,111 @@
       "prior_id": null,
       "reason": "需要与全部旧辑核心公式及模型作逐式人工比对。",
       "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P202",
+      "prior_id": "UC-ADV12-P169",
+      "reason": "第10–13辑模型族词汇Jaccard=0.875，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "high"
+    },
+    {
+      "new_id": "UC-ADV14-O209",
+      "prior_id": "UC-ADV12-O152",
+      "reason": "第10–13辑模型族词汇Jaccard=0.625，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "high"
+    },
+    {
+      "new_id": "UC-ADV14-P208",
+      "prior_id": "UC-ADV11-P146",
+      "reason": "第10–13辑模型族词汇Jaccard=0.600，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "high"
+    },
+    {
+      "new_id": "UC-ADV14-O203",
+      "prior_id": "UC-ADV12-O167",
+      "reason": "第10–13辑模型族词汇Jaccard=0.583，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "high"
+    },
+    {
+      "new_id": "UC-ADV14-I214",
+      "prior_id": "UC-ADV10-I110",
+      "reason": "第10–13辑模型族词汇Jaccard=0.500，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "high"
+    },
+    {
+      "new_id": "UC-ADV14-O210",
+      "prior_id": "UC-ADV11-O123",
+      "reason": "第10–13辑模型族词汇Jaccard=0.455，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "high"
+    },
+    {
+      "new_id": "UC-ADV14-P209",
+      "prior_id": "UC-ADV12-A156",
+      "reason": "第10–13辑模型族词汇Jaccard=0.455，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "high"
+    },
+    {
+      "new_id": "UC-ADV14-I205",
+      "prior_id": "UC-ADV11-I133",
+      "reason": "第10–13辑模型族词汇Jaccard=0.444，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "high"
+    },
+    {
+      "new_id": "UC-ADV14-I207",
+      "prior_id": "UC-ADV12-I169",
+      "reason": "第10–13辑模型族词汇Jaccard=0.417，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "high"
+    },
+    {
+      "new_id": "UC-ADV14-P210",
+      "prior_id": "UC-ADV12-P149",
+      "reason": "第10–13辑模型族词汇Jaccard=0.400，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "high"
+    },
+    {
+      "new_id": "UC-ADV14-A206",
+      "prior_id": "UC-ADV13-A184",
+      "reason": "第10–13辑模型族词汇Jaccard=0.375，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "medium"
+    },
+    {
+      "new_id": "UC-ADV14-O201",
+      "prior_id": "UC-ADV10-O106",
+      "reason": "第10–13辑模型族词汇Jaccard=0.364，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "medium"
+    },
+    {
+      "new_id": "UC-ADV14-P203",
+      "prior_id": "UC-ADV11-A138",
+      "reason": "第10–13辑模型族词汇Jaccard=0.364，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "medium"
+    },
+    {
+      "new_id": "UC-ADV14-I210",
+      "prior_id": "UC-ADV10-P99",
+      "reason": "第10–13辑模型族词汇Jaccard=0.333，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "medium"
+    },
+    {
+      "new_id": "UC-ADV14-A205",
+      "prior_id": "UC-ADV12-A175",
+      "reason": "第10–13辑模型族词汇Jaccard=0.333，仅作人工逐式核查优先级，不证明公式重复或独立。",
+      "judgement": "pending_human_comparison",
+      "screening_priority": "medium"
     }
   ],
   "new_items_requiring_cross_series_comparison": [
