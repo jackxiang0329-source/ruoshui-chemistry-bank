@@ -160,6 +160,13 @@ Object.assign(witness,{
 "UC-ADV11-O145":()=>{const r=.08,s=.02,t=10,n=.001,a=Math.exp(-r*t),b=Math.exp(-s*t),R=n*a,S=n*b,PR=n*(1-a),PS=n*(1-b),conv=1-(a+b)/2,ee=(b-a)/(a+b),eep=(PR-PS)/(PR+PS),target=.9,time=Math.log((1+target)/(1-target))/(r-s),ar=Math.exp(-r*time),br=Math.exp(-s*time),ct=1-(ar+br)/2;assert.ok(Math.abs((R+S+PR+PS)/(2*n)-1)<1e-12&&Math.abs((br-ar)/(br+ar)-.9)<1e-12);return[a,b,R,S,PR,PS,conv,ee,eep,r/s,Math.log(2)/r,Math.log(2)/s,time,ct,(br-ar)/(br+ar),R+S+PR+PS];},
 "UC-ADV11-P145":()=>{const Rs=10,R=100,s=40,C=20e-6,zz=w=>{const a=R+s/Math.sqrt(w),b=-s/Math.sqrt(w),dd=a*a+b*b,yr=a/dd,yi=-b/dd+w*C,n=yr*yr+yi*yi,x=Rs+yr/n,y=-yi/n;return[x,y,Math.hypot(x,y),Math.atan2(y,x)*180/Math.PI]};const recover=w=>{let z=zz(w),a=z[0]-Rs,b=z[1],dd=a*a+b*b,yr=a/dd,yi=-b/dd-w*C,n=yr*yr+yi*yi;return[yr/n,-yi/n]};let a=recover(1),b=recover(100);assert.ok(Math.abs(a[0]+a[1]-R)<1e-9&&Math.abs(-b[1]*10-s)<1e-9);return[...zz(1),...zz(100),...a,...b,-a[1],a[0]+a[1],-b[1]*10,R*C,1/(2*Math.PI*R*C)];}
 });
+
+Object.assign(witness,{
+"UC-ADV11-I150":()=>{const x=(7-4.4)/4,a=8.4e-10,V=a**3,bco=2.49,bfe=9.45,mA=3*(1-x)+5*x,mB=3*x+5*(2-x),net=mB-mA,M=58.933+2*55.845+4*15.999,NA=6.02214076e23,rho=8*M/(1000*NA*V),Ms=8*net*9.2740100783e-24/V;assert.ok(x>=0&&x<=1&&Math.abs(net-4.4)<1e-12);return[x,(1-x)*bco+x*bfe,(x*bco+(2-x)*bfe)/2,mA,mB,net,8*net,V,M,rho,Ms,Ms/rho,1-x,x/2,(2-x)/2,2+2*3-4*2];},
+"UC-ADV11-A149":()=>{const A=.002,u1=1,u2=4,h1=.007,h2=.007,yy1=u1*(h1-A),yy2=u2*(h2-A),C=(yy2-yy1)/(u2*u2-u1*u1),B=yy1-C*u1*u1,opt=Math.sqrt(B/C),H=A+B/opt+C*opt,L=30,N=L/H,dp=.001*.3*(opt/100)/1e-12,rs=Math.sqrt(N)/4*((1.2-1)/1.2)*(3/4);assert.ok(Math.abs(B-.004)<1e-12&&Math.abs(C-.001)<1e-12&&dp<1e7);return[h1,h2,B,C,opt,H,N,L/opt,dp/1e5,rs,B,C,L/h1,opt,4*opt];},
+"UC-ADV11-O146":()=>{const kb=1.380649e-23,h=6.62607015e-34,R=8.314462618,dt=100,T1=330,T2=350,k1=Math.PI*dt/Math.sqrt(2),H=60000,g=R*T1*Math.log(kb*T1/(h*k1)),S=(H-g)/T1,k=t=>kb*t/h*Math.exp(S/R-H/(R*t)),k2=k(T2),slope=(Math.log(k2/T2)-Math.log(k1/T1))/(1/T2-1/T1),hi=-R*slope,si=R*Math.log(k1*h/(kb*T1))+hi/T1,at=k(298.15);assert.ok(k2>k1&&Math.abs(hi/H-1)<1e-12);return[k1,k2,k2/k1,hi/1000,si,g/1000,at,Math.log(2)/at,1/at,Math.log(k1/T1),Math.log(k2/T2),kb*T1/h,H-T2*S,dt/2];},
+"UC-ADV11-P146":()=>{const X=.05,C=.1,R=8.314462618,T=298.15,F=96485.33212,D=Math.hypot(X,2*C),a=(X+D)/2,b=(D-X)/2,psi=-R*T/F*Math.log(a/C),Pi=R*T*1000*(a+b-2*C),vol=.1;assert.ok(a>b&&b>0&&Math.abs(a*b/C**2-1)<1e-12);return[D,a,b,a/C,b/C,psi*1000,Pi/1000,a*b,a-b,a+b,200,a*vol,b*vol,X*vol,Pi*.0001];}
+});
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();

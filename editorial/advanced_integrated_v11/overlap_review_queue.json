@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 93,
+  "current_draft_count": 97,
   "expert_approved": 0,
-  "preliminary_flags": 58,
+  "preliminary_flags": 62,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -352,6 +352,30 @@
       "new_id": "UC-ADV11-P145",
       "prior_id": "UC-ADV10-P115",
       "reason": "领域可能存在相似缺陷/光度/酶促动力学/电化学元件，核心数学模型尚须人工逐式比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-I150",
+      "prior_id": "UC-ADV10-I116",
+      "reason": "主题可能与磁性、动力学、分离或离子平衡历史题相关，但严格数学模型异同须人工逐式审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-A149",
+      "prior_id": "UC-ADV10-A117",
+      "reason": "主题可能与磁性、动力学、分离或离子平衡历史题相关，但严格数学模型异同须人工逐式审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-O146",
+      "prior_id": "UC-ADV10-O108",
+      "reason": "主题可能与磁性、动力学、分离或离子平衡历史题相关，但严格数学模型异同须人工逐式审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-P146",
+      "prior_id": "UC-ADV10-P116",
+      "reason": "主题可能与磁性、动力学、分离或离子平衡历史题相关，但严格数学模型异同须人工逐式审核。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -913,6 +937,30 @@
       "model_family": "Randles-faradaic-Warburg-complex-impedance-two-frequency-admittance-deembedding",
       "judgement": "pending_human_comparison",
       "screening": "独立数值答案、物料/电荷/能量或复阻抗检查已写；历史方程同构、原创性和实验科学正确性待专家复核。"
+    },
+    {
+      "new_id": "UC-ADV11-I150",
+      "model_family": "spinel-CoFe2O4-inversion-A-B-sublattice-neutron-magnetization-density",
+      "judgement": "pending_human_comparison",
+      "screening": "独立计算答案向量、晶格电荷/流变/动力学/离子守恒均有复核表达式；跨辑原创性未认证。"
+    },
+    {
+      "new_id": "UC-ADV11-A149",
+      "model_family": "chromatography-Van-Deemter-two-flow-parameter-rank-Darcy-pressure-resolution-optimum",
+      "judgement": "pending_human_comparison",
+      "screening": "独立计算答案向量、晶格电荷/流变/动力学/离子守恒均有复核表达式；跨辑原创性未认证。"
+    },
+    {
+      "new_id": "UC-ADV11-O146",
+      "model_family": "amide-rotamer-dynamic-NMR-two-temperature-Eyring-coalescence-barrier",
+      "judgement": "pending_human_comparison",
+      "screening": "独立计算答案向量、晶格电荷/流变/动力学/离子守恒均有复核表达式；跨辑原创性未认证。"
+    },
+    {
+      "new_id": "UC-ADV11-P146",
+      "model_family": "fixed-charge-gel-Donnan-electrochemical-equilibrium-osmotic-pressure-ion-partition",
+      "judgement": "pending_human_comparison",
+      "screening": "独立计算答案向量、晶格电荷/流变/动力学/离子守恒均有复核表达式；跨辑原创性未认证。"
     }
   ]
 }
