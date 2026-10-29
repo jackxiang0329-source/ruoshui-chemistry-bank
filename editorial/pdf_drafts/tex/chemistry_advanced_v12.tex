@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (70题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (74题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -519,6 +519,35 @@ inversion\_1100 = 0.369313277 fraction；inversion\_1450 = 0.433278738 fraction�
 模型忽略非理想位点相互作用、短程有序、阳离子价态变化和晶格振动；实际反位度需实验衍射或谱学约束。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I169 · CeO₂₋δ缺氧平衡的电荷补偿、非稀缺陷分数与氧分压指数}
+\noindent\textbf{题目}\par
+在1000 K时，将无掺杂萤石型CeO₂₋δ视为均匀单相，允许0<δ<0.5。每化学式单位有1个Ce位（Ce³⁺或Ce⁴⁺）及2个氧位（O²⁻或空位V\_O\textasciicircum{}\{••\}）。仅考虑O\_O\textasciicircum{}×+2Ce\_Ce\textasciicircum{}×⇌V\_O\textasciicircum{}\{••\}+2Ce\_Ce′+(1/2)O₂(g)，假设Ce³⁺是局域化小极化子且不发生其他反应。理想位点分数下，平衡常数定义为K=[δ/(2−δ)]·[2δ/(1−2δ)]²·(p\_O₂/p°)\textasciicircum{}\{1/2\}=1.000×10⁻⁶，其中p°=1 bar。求氧分压0.01000 bar和1.000×10⁻⁶ bar下唯一的δ、Ce³⁺/Ce⁴⁺占位、氧空位和氧占据位点分数、平均Ce价态以及每mol化学式单位相对CeO₂的失氧质量。对各条件计算dlnδ/dln p\_O₂并与稀缺陷近似δ≈[K/(2√(p/p°))]\textasciicircum{}\{1/3\}对比。核验每化学式单位的Ce守恒、O占位、形式电中性和K回代，说明低氧分压为何有偏离理想−1/6幂律的效应。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 按每化学式单位定义δ为空缺氧原子数，2δ个Ce⁴⁺各获得1个电子还原成Ce³⁺，所以Ce³⁺分数2δ，Ce⁴⁺分数1−2δ；氧位空缺分数δ/2。
+\item 氧位和Ce位应分别归一，氧占据分数1−δ/2；Ce总数为1，氧总数2−δ，不能把空位分数δ/2误用成空位原子数δ。
+\item 由O\_O\textasciicircum{}×+2Ce\_Ce\textasciicircum{}×⇌V\_O\textasciicircum{}\{••\}+2Ce\_Ce′+1/2O₂构造理想位点活度：a\_V/a\_O=δ/(2−δ)，a\_CeIII/a\_CeIV=2δ/(1−2δ)。
+\item 故K=(δ/(2−δ)) [2δ/(1−2δ)]² √(p/p°)，采用p°=1 bar使根号的量纲无量纲。
+\item 在δ∈(0,0.5)内三个占据比均严格随δ增加，K的左端从0严格递增至+∞，故每一个正压强存在唯一物理根。
+\item 使用保界二分法而不是对稀缺陷三次方程直接取根，分别对p/p°=0.01000与10⁻⁶求δ。
+\item p=0.01000 bar得到δ=0.016670944059；p=10⁻⁶ bar得到δ=0.070828909427；后者与前者之比4.2486441786。
+\item 较高氧压时Ce³⁺、Ce⁴⁺分数分别0.033341888118、0.96665811188，氧空位、占据分数0.0083354720294、0.99166452797。
+\item 较低氧压时Ce³⁺、Ce⁴⁺分数分别0.14165781885、0.85834218115，氧空位、占据分数0.035414454714、0.96458554529。
+\item 平均Ce价态为4−2δ，分别3.9666581119和3.8583421811，失氧质量δ×15.999 g/mol分别为0.26671843400、1.1331917219。
+\item 求局域斜率时在固定K下对lnδ、lnp隐式微分，得到dlnK/dlnδ=3+δ/(2−δ)+4δ/(1−2δ)，故dlnδ/dlnp=−1/\{2[3+δ/(2−δ)+4δ/(1−2δ)]\}。
+\item 在两个压强下相应斜率-0.16247537798、-0.14850951011，与仅在δ趋0时成立的−1/6有差别。
+\item δ≪1时第一比值δ/(2−δ)≈δ/2，CeIII/CeIV≈2δ，故K≈2δ³√(p/p°)。
+\item 稀缺陷估值依次0.017099759467、0.079370052598；精确与近似之比分别0.97492272282、0.89238833929。
+\item 独立回代K=0.0000010000000000、0.0000010000000000，电荷差2δ−[CeIII]=0.0000000000与0.0000000000，均在机器精度内归零。
+\item 空位浓度不是电子导电率本身；此题未给电子迁移率，不能由Ce³⁺含量直接编造电导率。Ce空位、间隙氧、弹性相互作用和非理想活度均可能在真实体系中重要。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+conditional\_equilibrium\_K = 1e-06 dimensionless；delta\_p0p01 = 0.0166709441 fraction；delta\_p1eMinus6 = 0.0708289094 fraction；vacancy\_ratio\_high\_over\_low = 4.24864418 ratio；CeIII\_fraction\_p0p01 = 0.0333418881 fraction；CeIV\_fraction\_p0p01 = 0.966658112 fraction；oxygen\_vacancy\_site\_fraction\_p0p01 = 0.00833547203 fraction；oxygen\_filled\_site\_fraction\_p0p01 = 0.991664528 fraction；CeIII\_fraction\_p1eMinus6 = 0.141657819 fraction；CeIV\_fraction\_p1eMinus6 = 0.858342181 fraction；oxygen\_vacancy\_site\_fraction\_p1eMinus6 = 0.0354144547 fraction；oxygen\_filled\_site\_fraction\_p1eMinus6 = 0.964585545 fraction；mean\_Ce\_oxidation\_p0p01 = 3.96665811 oxidation\_state；mean\_Ce\_oxidation\_p1eMinus6 = 3.85834218 oxidation\_state；oxygen\_mass\_loss\_g\_per\_mol\_p0p01 = 0.266718434 g/mol；oxygen\_mass\_loss\_g\_per\_mol\_p1eMinus6 = 1.13319172 g/mol；reconstructed\_K\_p0p01 = 1e-06 dimensionless；reconstructed\_K\_p1eMinus6 = 1e-06 dimensionless；logdelta\_logoxygenpressure\_slope\_p0p01 = -0.162475378 slope；logdelta\_logoxygenpressure\_slope\_p1eMinus6 = -0.14850951 slope；dilute\_delta\_prediction\_p0p01 = 0.0170997595 fraction；dilute\_delta\_prediction\_p1eMinus6 = 0.0793700526 fraction；actual\_over\_dilute\_p0p01 = 0.974922723 ratio；actual\_over\_dilute\_p1eMinus6 = 0.892388339 ratio；charge\_neutrality\_residual\_p0p01 = 0 charge；charge\_neutrality\_residual\_p1eMinus6 = 0 charge；Ce\_inventory\_p0p01 = 1 count；Ce\_inventory\_p1eMinus6 = 1 count；oxygen\_inventory\_p0p01 = 1.98332906 count；oxygen\_inventory\_p1eMinus6 = 1.92917109 count\par
+\noindent\textbf{模型前提：}
+空位浓度不是电子导电率本身；此题未给电子迁移率，不能由Ce³⁺含量直接编造电导率。Ce空位、间隙氧、弹性相互作用和非理想活度均可能在真实体系中重要。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -1002,6 +1031,35 @@ SO3\_molar\_mass\_g\_mol = 80.062 g/mol；CO2\_molar\_mass\_g\_mol = 44.009 g/mo
 在理想模型内x唯一且接近5；真实实验需审查吸附水、阶段重叠、铜硫酸盐中间氧化物及气氛依赖，不能把理论阶梯设定替代真实温控TGA验证。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A169 · 定量核磁双延迟反演T₁、饱和校正与浓度不确定度}
+\noindent\textbf{题目}\par
+在无交换和无化学反应的理想定量¹H NMR实验中，待测物A和内标S各有一个互不重叠、贡献1个质子的信号，接受同一接收增益、线形积分标定与90°脉冲，脉冲间纵向磁化完全去相位，忽略NOE。两者的纵向弛豫T₁未知，内标浓度C\_S=0.01000 mol/L。对于重复延迟TR，一质子的积分信号I\_i(TR)=k C\_i [1−exp(−TR/T₁,i)]，同一未知仪器系数k对两种物质相同。在TR=1.000 s和2.000 s分别记录：A积分I\_A1、I\_A2以及S积分I\_S1、I\_S2，实际积分读数分别为I\_A1=983.6733507184165、I\_A2=1580.301397071394、I\_S1=7134.952031398098、I\_S2=9179.150013761011（仪器积分单位）。请仅根据这些模拟测量值和已知内标浓度进行反演，不能预先假定任何T₁、待测浓度或仪器k。另假设四次积分的标准不确定度各为2.000积分单位，相互独立，C\_S无不确定度。求两个T₁、饱和校正的无限延迟积分、仪器k、C\_A及g/L和mg/L（A的摩尔质量100.0 g/mol），不校正的浓度偏差，以及四次信号测量传播出的C\_A标准不确定度。使用I(2TR)/I(TR)=1+exp(−TR/T₁)并检查量纲、信号饱和与标准溶液一致性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 90°脉冲使可积分信号正比于前一延迟后的恢复磁化，I\_i(TR)=k C\_i(1−e\textasciicircum{}\{−TR/T₁,i\})；题中两个谱峰均只对应一个质子，不能额外乘质子数。
+\item 在TR=1.000 s，实测模拟积分A=983.673350718、S=7134.95203140；TR=2.000 s，A=1580.30139707、S=9179.15001376，这些读数就是题设提供的逆问题数据。
+\item 令r\_i=I\_i(2TR)/I\_i(TR)，使用1−z²=(1−z)(1+z)可消去未知k和C，得到r\_i=1+z\_i，z\_i=exp(−TR/T₁,i)。
+\item 两信号比r\_A=1.6065306597、r\_S=1.2865047969，满足1<r\_i<2，故由T₁=−TR/ln(r\_i−1)反演。
+\item 计算T₁,A=2.0000000000 s，T₁,S=0.80000000000 s；不是用原设定T₁代入回答。
+\item 无限延迟完整恢复积分I\_∞=I(TR)/(1−z)=I(TR)²/[2I(TR)−I(2TR)]，必须检查分母为正。
+\item A的2I₁−I₂=387.04530437，S的分母5090.7540490；校正后I\_A∞=2500.0000000、I\_S∞=10000.000000。
+\item 内标浓度已知，故k=I\_S∞/C\_S，进而C\_A=C\_S(I\_A∞/I\_S∞)，这是独立基于内标的定量核磁标定。
+\item 由此k=1000000.0000，样品与内标浓度比=0.25000000000，C\_A=0.0025000000000 mol/L。
+\item A摩尔质量100.0 g/mol，正确质量浓度为0.25000000000 g/L，即250.00000000 mg/L；若误以TR=1 s的未校正强度比即浓度比，会得到0.0013786684849 mol/L。
+\item 未经饱和校正的浓度/真实浓度比0.55146739397，显示不同T₁引起的系统偏差。
+\item 将Q(I₁,I₂)=I₁²/(2I₁−I₂)代入C\_A=C\_S Q\_A/Q\_S；对Q作全微分，dlnQ/dI₁=2/I₁−2/(2I₁−I₂)，dlnQ/dI₂=1/(2I₁−I₂)。
+\item 四个积分不确定度均为2.000且彼此独立，对四个对数灵敏度系数的乘积逐项平方求和，得到u(C\_A)/C\_A。
+\item 计算相对标准不确定度0.0081362378334、C\_A标准不确定度0.000020340594584 mol/L；质量浓度标准不确定度为0.0020340594584 g/L，即2.0340594584 mg/L。
+\item 回代无限恢复信号与仪器常数得到规范化比1.0000000000和1.0000000000，即各自校准前后浓度一致。
+\item 本实验是理想模拟；实际定量核磁还应校正基线、磁化转移、峰重叠、脉冲宽度、化学交换和内标称量不确定度。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+analyte\_integral\_TR1 = 983.673351 integral；analyte\_integral\_TR2 = 1580.3014 integral；standard\_integral\_TR1 = 7134.95203 integral；standard\_integral\_TR2 = 9179.15001 integral；analyte\_double\_to\_single\_integral\_ratio = 1.60653066 ratio；standard\_double\_to\_single\_integral\_ratio = 1.2865048 ratio；analyte\_denominator\_2I1\_minus\_I2 = 387.045304 integral；standard\_denominator\_2I1\_minus\_I2 = 5090.75405 integral；reconstructed\_analyte\_T1\_s = 2 s；reconstructed\_standard\_T1\_s = 0.8 s；analyte\_infinite\_TR\_integral = 2500 integral；standard\_infinite\_TR\_integral = 10000 integral；instrument\_proportionality\_constant = 1000000 integral/(mol/L)；analyte\_to\_standard\_concentration\_ratio = 0.25 ratio；analyte\_molarity\_M = 0.0025 mol/L；analyte\_mass\_concentration\_g\_L = 0.25 g/L；analyte\_to\_standard\_ratio\_reconstructed = 0.25 ratio；naive\_analyte\_molarity\_M = 0.00137866848 mol/L；naive\_to\_corrected\_concentration\_ratio = 0.551467394 ratio；analyte\_concentration\_relative\_uncertainty = 0.00813623783 fraction；analyte\_concentration\_standard\_uncertainty\_M = 2.03405946e-05 mol/L；analyte\_mass\_concentration\_standard\_uncertainty\_g\_L = 0.00203405946 g/L；normalized\_analyte\_infinite\_TR\_response = 1 ratio；normalized\_standard\_infinite\_TR\_response = 1 ratio；analyte\_TR1\_saturation\_fraction = 0.39346934 fraction；standard\_TR1\_saturation\_fraction = 0.713495203 fraction；positive\_signal\_check\_analyte = 1 flag；positive\_signal\_check\_standard = 1 flag；analyte\_mass\_concentration\_mg\_L = 250 mg/L；analyte\_mass\_concentration\_standard\_uncertainty\_mg\_L = 2.03405946 mg/L\par
+\noindent\textbf{模型前提：}
+本实验是理想模拟；实际定量核磁还应校正基线、磁化转移、峰重叠、脉冲宽度、化学交换和内标称量不确定度。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第12辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -1471,6 +1529,36 @@ observed\_k\_sigma\_minus0p30\_s = 0.10607453 s\textasciicircum{}-1；observed\_
 本题以假想Hammett线性、互斥SN1/E2与给定路径KIE为边界；实际底物的消除几何约束、离子对、溶剂化和竞争SN2可能破坏简化模型。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O165 · 环氧中间体的串联开环和竞争消除：解析浓度、峰时与终产率}
+\noindent\textbf{题目}\par
+某假想含邻位卤代醇的有机底物A在碱过量、固定溶剂与温度下发生两条互斥的拟一级反应：A→B（环氧中间体，k₁=0.1200 s⁻¹）与A→D（不可逆消除副产物，k₃=0.03000 s⁻¹）；环氧中间体进一步不可逆被溶剂开环B→C（k₂=0.04000 s⁻¹）。B、C、D均不返回A，D也不再转化；外加碱和溶剂是过量储库，四种产物按A、B、C、D骨架物质的量1:1计量。初始[A]₀=0.01000 mol/L而[B]₀=[C]₀=[D]₀=0。推导A、B、C、D随时间的解析解；求8.000 s与20.00 s各组分浓度、A转化率和瞬时中间体B的最大浓度及峰值时刻，核验峰处dB/dt=0和两条路径对终产物的分支极限。推导[ABCD]守恒、B短时增长斜率、总A半衰期及长期C/D比。特别说明B可能先升后降而C和D持续积累，不能把B当作最终总产率。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 把反应写成A→B→C并联A→D；由溶剂/碱过量，两条从A出发的拟一级反应叠加成a=k₁+k₃。
+\item ODE为dA/dt=−aA，dB/dt=k₁A−k₂B，dD/dt=k₃A，dC/dt=k₂B；对四式相加得d(A+B+C+D)/dt=0。
+\item 由初始A₀=0.01000 mol/L可得A(t)=A₀e\textasciicircum{}\{−at\}；这里a=0.1500 s⁻¹，不应误用k₁。
+\item 以积分因子e\textasciicircum{}\{k₂t\}解B方程，得到B(t)=A₀ k₁ [e\textasciicircum{}\{−k₂t\}−e\textasciicircum{}\{−at\}]/(a−k₂)，仅对a≠k₂使用此表达式。
+\item 由D'=k₃A得D(t)=A₀(k₃/a)(1−e\textasciicircum{}\{−at\})；利用质量守恒C=A₀−A−B−D，等价于对k₂B积分。
+\item 8 s得到A=0.0030119421191、B=0.0046358708199、C=0.00095457548476、D=0.0013976115762 mol/L。
+\item 8 s总浓度0.010000000000 mol/L，A的转化率0.69880578809；B占初始骨架总量比0.46358708199。
+\item 由dB/dt=k₁A−k₂B=0并代入解析解，得到e\textasciicircum{}\{(a−k₂)t*\}=a/k₂，故t*=ln(a/k₂)/(a−k₂)。
+\item 得B的峰时t*=12.015962182 s，峰浓度B*=0.0049471074607 mol/L。
+\item 峰时A=0.0016490358202、C=0.0017336638831、D=0.0016701928360 mol/L，且B生成、消耗通量同为0.00019788429843 mol/(L s)。
+\item 计算t=20.00 s时分布并检查中间体是否已开始回落；与t=8 s的初始增长段区分。
+\item 20 s时A=0.00049787068368、B=0.0043586388627、C=0.0032430645903、D=0.0019004258633 mol/L。
+\item 在t→∞时A和B均消失，A→B的初始分支比例k₁/a最终全部进入C，而A→D分支k₃/a最终全部进入D。
+\item 因此终态C∞=0.0080000000000 mol/L，D∞=0.0020000000000 mol/L，最终分支比例0.80000000000:0.20000000000。
+\item A的半衰时间ln2/a=4.6209812037 s；D∞/C∞=k₃/k₁=0.25000000000，不是k₃/k₂。
+\item 短时B'(0)=k₁A₀=0.001200 mol/(L s)，D'(0)=k₃A₀=0.0003000 mol/(L s)，C'(0)=0，符合串联延迟产生机理。
+\item 本题中环氧化、开环和消除全用理想拟一级模型；真实化学合成时还须核查立体化学、酸碱催化、多步消除及中间体的副反应。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+A\_to\_B\_rate\_constant\_s = 0.12 s\textasciicircum{}-1；B\_to\_C\_rate\_constant\_s = 0.04 s\textasciicircum{}-1；A\_to\_D\_rate\_constant\_s = 0.03 s\textasciicircum{}-1；A\_disappearance\_rate\_constant\_s = 0.15 s\textasciicircum{}-1；A\_concentration\_t8\_M = 0.00301194212 mol/L；B\_concentration\_t8\_M = 0.00463587082 mol/L；C\_concentration\_t8\_M = 0.000954575485 mol/L；D\_concentration\_t8\_M = 0.00139761158 mol/L；total\_concentration\_t8\_M = 0.01 mol/L；A\_conversion\_t8 = 0.698805788 fraction；B\_peak\_time\_s = 12.0159622 s；B\_peak\_concentration\_M = 0.00494710746 mol/L；A\_concentration\_at\_B\_peak\_M = 0.00164903582 mol/L；C\_concentration\_at\_B\_peak\_M = 0.00173366388 mol/L；D\_concentration\_at\_B\_peak\_M = 0.00167019284 mol/L；B\_formation\_flux\_at\_peak\_M\_s = 0.000197884298 mol/(L s)；B\_consumption\_flux\_at\_peak\_M\_s = 0.000197884298 mol/(L s)；A\_concentration\_t20\_M = 0.000497870684 mol/L；B\_concentration\_t20\_M = 0.00435863886 mol/L；C\_concentration\_t20\_M = 0.00324306459 mol/L；D\_concentration\_t20\_M = 0.00190042586 mol/L；final\_C\_concentration\_M = 0.008 mol/L；final\_D\_concentration\_M = 0.002 mol/L；eventual\_C\_fraction = 0.8 fraction；eventual\_D\_fraction = 0.2 fraction；A\_half\_life\_s = 4.6209812 s；final\_D\_over\_C\_ratio = 0.25 ratio；B\_fraction\_t8 = 0.463587082 fraction；B\_fraction\_t20 = 0.435863886 fraction；C\_fraction\_t20 = 0.324306459 fraction\par
+\noindent\textbf{模型前提：}
+本题中环氧化、开环和消除全用理想拟一级模型；真实化学合成时还须核查立体化学、酸碱催化、多步消除及中间体的副反应。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第12辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -1938,6 +2026,36 @@ Z10\_real\_ohm = 81.69568 ohm；Z10\_imag\_ohm = -45.0477243 ohm；Z100\_real\_o
 Onsager\_determinant = 1.1e-07 L11*L22；dimensionless\_coupling = 0.670820393 ratio；baseline\_particle\_flux\_mol\_m2\_s = 5e-08 mol/(m2 s)；baseline\_energy\_flux\_W\_m2 = 0.0013 W/m2；baseline\_entropy\_production\_W\_K\_m3 = 1.8e-07 W/(K m3)；particle\_entropy\_contribution = 5e-08 W/(K m3)；energy\_entropy\_contribution = 1.3e-07 W/(K m3)；particle\_blocked\_X1 = -1.5 J/(mol K m)；particle\_blocked\_energy\_flux\_W\_m2 = 0.00055 W/m2；particle\_blocked\_entropy\_production = 5.5e-08 W/(K m3)；particle\_blocked\_effective\_L22 = 5.5 J K/(m s)；adiabatic\_X2 = -3e-05 1/(K m)；adiabatic\_particle\_flux\_mol\_m2\_s = 1.1e-08 mol/(m2 s)；adiabatic\_entropy\_production = 1.1e-08 W/(K m3)；adiabatic\_effective\_L11 = 1.1e-08 mol2 K/(J m s)；uphill\_particle\_flux = 1e-08 mol/(m2 s)；uphill\_energy\_flux = 0.0007 W/m2；uphill\_total\_entropy\_production = 6e-08 W/(K m3)；uphill\_particle\_entropy\_contribution = -1e-08 W/(K m3)；uphill\_energy\_entropy\_contribution = 7e-08 W/(K m3)；force\_product\_X1\_X2 = 0.0001 X1*X2；square\_root\_determinant = 0.000331662479 sqrt(L11*L22)；normalized\_coupling\_squared = 0.45 ratio\par
 \noindent\textbf{模型前提：}
 量纲检查L₁₂X₂与L₁₁X₁同为mol/(m²s)，L₂₁X₁与L₂₂X₂同为W/m²；确保熵产生各项单位相同。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P165 · 对称正规溶液的双相共存、旋节线、杠杆定则与自由能驱动力}
+\noindent\textbf{题目}\par
+某假想二元分子液体A/B在常压下混合，可近似视为对称正规溶液。摩尔混合Gibbs自由能g(x,T)=RT[xlnx+(1−x)ln(1−x)]+Ωx(1−x)，其中x为B摩尔分数，Ω=10000 J/mol、R=8.314462618 J/(mol K)；每个端点纯液的混合g取0，0ln0按0处理。T=400.0 K，总体x̄=0.3000。求临界温度、两旋节组成、通过共同切线确定的两个双相共存组成、两个相的摩尔分率、各相组成与总体物料守恒。核验g''(x̄)的符号、共存两端的化学势平衡，以及不发生相分离与完全双相分离时的混合自由能差；求x=0.500时混合自由能、相对两相的自由能峰差，并判断T=650 K时x=0.5是否局部稳定。说明为什么总体x̄=0.3在旋节区内时不存在经典成核能垒，且正规溶液模型只用于给定温压与Ω的理想化比较。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 由g(x)=RT[xlnx+(1−x)ln(1−x)]+Ωx(1−x)，一阶导数g'=RT ln[x/(1−x)]+Ω(1−2x)，二阶导数g''=RT/[x(1−x)]−2Ω。
+\item 临界点满足g''(0.5,T\_c)=0，故T\_c=Ω/(2R)，温度400 K低于T\_c才可能出现不互溶。
+\item 计算T\_c=601.36177522 K，400 K下RT=3325.7850472 J/mol。
+\item 旋节组成是g''=0的两根x\_s±=[1±√(1−2RT/Ω)]/2；只有当T<T\_c时根为实数。
+\item 旋节下界0.21067190313，上界0.78932809687，不等于真正的双相共存组成。
+\item 对称性g(x)=g(1−x)导致两共存相分别x\_b与1−x\_b，共同切线是水平线；故由g'(x\_b)=0且0<x\_b<x\_s−求较小根。
+\item 在保界二分法中排除平凡驻点x=0.5，否则会把自由能极大值误当共存相。
+\item 求得共存两相B摩尔分数x\_b=0.070089278490、x\_r=0.92991072151，两端导数g'分别0.0000000000、0.0000000000 J/mol。
+\item 两端自由能-192.54874079、-192.54874079 J/mol相等；共同切线斜率0意味着两组分化学势在两相中分别相等。
+\item 总体B比例x̄=0.3介于共存组成之间；按杠杆定则φ\_r=(x̄−x\_b)/(x\_r−x\_b)，φ\_b=1−φ\_r。
+\item 富B相所占摩尔分率0.26739356569，贫B相0.73260643431，两相加权B比例0.30000000000，回到0.3000。
+\item 均匀相g(x̄)=68.396638358 J/mol，完全分离后的双相自由能-192.54874079 J/mol，降低量260.94537915 J/mol。
+\item g''(x̄)=-4162.9283467 J/mol <0，故在理想连续极限下小幅组成涨落可以自发放大，属于旋节分解而非跨越经典成核能垒。
+\item 在x=0.5，g=194.74147138 J/mol，相对共存两相的自由能峰差387.29021218 J/mol；并非真正的界面成核能垒。
+\item 当升至650 K时g''(0.5)=1617.6028068 J/mol>0，且650 K高于临界温度，局部均匀相稳定。
+\item 过剩混合焓Ωx(1−x)和理想构型项RT[xlnx+(1−x)ln(1−x)]在x̄=0.3各自为正和负，不能只用混合焓判断相分离。
+\item 忽略了界面能、有限粒径、组成依赖Ω、非对称组分和高阶涨落，故结果仅适用于题设正规溶液热力学模型。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+critical\_temperature\_K = 601.361775 K；RT\_at\_400\_J\_mol = 3325.78505 J/mol；spinodal\_discriminant = 0.578656194 ratio；spinodal\_B\_lower = 0.210671903 fraction；spinodal\_B\_upper = 0.789328097 fraction；binodal\_B\_lower = 0.0700892785 fraction；binodal\_B\_upper = 0.929910722 fraction；gprime\_at\_binodal\_lower\_J\_mol = 0 J/mol；gprime\_at\_binodal\_upper\_J\_mol = 0 J/mol；mixed\_g\_at\_binodal\_lower\_J\_mol = -192.548741 J/mol；mixed\_g\_at\_binodal\_upper\_J\_mol = -192.548741 J/mol；homogeneous\_g\_at\_x0p3\_J\_mol = 68.3966384 J/mol；free\_energy\_gain\_from\_separation\_J\_mol = 260.945379 J/mol；high\_B\_phase\_molar\_fraction = 0.267393566 fraction；low\_B\_phase\_molar\_fraction = 0.732606434 fraction；reconstructed\_overall\_B\_fraction = 0.3 fraction；gsecond\_at\_binodal\_lower\_J\_mol = 31027.1523 J/mol；gsecond\_at\_x0p3\_J\_mol = -4162.92835 J/mol；gsecond\_at\_x0p5\_J\_mol = -6696.85981 J/mol；mixed\_g\_at\_x0p5\_J\_mol = 194.741471 J/mol；center\_to\_coexistence\_barrier\_J\_mol = 387.290212 J/mol；excess\_enthalpy\_at\_x0p3\_J\_mol = 2100 J/mol；ideal\_entropy\_g\_component\_at\_x0p3\_J\_mol = -2031.60336 J/mol；gsecond\_at\_x0p5\_T650\_J\_mol = 1617.60281 J/mol；temperature\_below\_critical\_K = 201.361775 K；spinodal\_discriminant\_nonnegative = 0.334842991 ratio；gprime\_at\_x0p5\_J\_mol = 0 J/mol；gain\_over\_RT = 0.0784612882 ratio；overall\_minus\_binodal\_lower = 0.229910722 fraction；spinodal\_upper\_minus\_overall = 0.489328097 fraction\par
+\noindent\textbf{模型前提：}
+忽略了界面能、有限粒径、组成依赖Ω、非对称组分和高阶涨落，故结果仅适用于题设正规溶液热力学模型。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
