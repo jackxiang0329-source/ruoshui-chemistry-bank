@@ -1,0 +1,367 @@
+
+\documentclass[UTF8,11pt,a4paper]{ctexart}
+\usepackage[a4paper,left=23mm,right=23mm,top=24mm,bottom=24mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+\setCJKmainfont{Noto Serif CJK SC}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,unicode=true]{hyperref}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{fancyhdr}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\setlist[enumerate]{leftmargin=2.6em,itemsep=0.4em,topsep=0.5em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 三千弱水 · 大学化学高阶综合题库}
+\fancyhead[R]{\small 待专家审校稿}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{15pt}
+\sloppy
+
+\begin{document}
+\begin{center}
+{\LARGE\bfseries 大学化学高阶综合题 · 第14辑 (14题)}\\[0.8em]
+{\large 题目、分步解析与数值核验}\\[0.5em]
+{\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
+\end{center}
+\vspace{1em}
+\noindent 本册从仓库结构化 JSONL 自动生成。增补和修改应只编辑源题目数据，并重新执行统一编译。
+\par 机械方程残差检查只能说明指定模型的内部数值一致，不保证模型现实可行性。第六辑另须完成跨辑模型去重审查。
+\tableofcontents
+\clearpage
+\section*{第14辑 · 题目及解答}
+\addcontentsline{toc}{section}{第14辑}
+\subsection*{无机化学}
+\addcontentsline{toc}{subsection}{第14辑 / 无机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I201 · 二茂铁和六羰基铬的18电子计数与CO解离电价核验}
+\noindent\textbf{题目}\par
+配合物Fe(η⁵-C₅H₅)₂（中性二茂铁）与Cr(CO)₆都按离子型电子计数。Fe基态族价电子为8个，两个Cp⁻各贡献6e⁻，Fe在二茂铁为+2价，因而d电子数6，合计18e⁻。Cr(CO)₆金属Cr氧化态0，d电子数6，六个CO各捐献2e⁻。假想Cr(CO)₆首先光解失去一个CO成为16电子Cr(CO)₅；若重新配位一个PPh₃、其每个PPh₃贡献2e⁻，计算恢复的价电子数。求四种配合物及中间体d电子、配体捐电子数、18e偏差、CO脱离前后配位数，说明18电子规则是经验而非普适稳定性定理。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知物理化学与计量参数：配合物Fe(η⁵-C₅H₅)₂（中性二茂铁）与Cr(CO)₆都按离子型电子计数。Fe基态族价电子为8个，两个Cp⁻各贡献6e⁻，Fe在二茂铁为+2价，因而d电子数6，合计18e⁻。Cr(CO)₆金属Cr氧化态0，d电子数6，六个CO各捐献2e⁻。假想Cr(CO)₆首先光解失去一个CO成为16电子Cr(CO)₅；若重新配位一个PPh₃、其每个PPh₃贡献2e⁻，计算恢复的价电子数。求四种配合物及中间体d电子、配体捐电子数、18e偏差、CO脱离前后配位数，说明18电子规则是经验而非普适稳定性定理。
+\item 理论原理及计算公式：电子总数n\_e=金属d电子数+各配体供电子数；d\textasciicircum{}n=族数−氧化态（离子型计数）。
+\item 推导与定量判断：二茂铁要先把每个Cp判为−1价，Fe氧化态+2；CO和PPh3是中性L型2电子配体，Cr保持0。
+\item 将所有质量、电子数、浓度和摩尔量与所列模型中的标准态统一，必要时把g转换kg、eV转换J。
+\item 由基本关系计算前四个答案：ferrocene\_metal\_d\_e=6.000000000000 electrons；ferrocene\_Cp\_donated\_e=12.00000000000 electrons；ferrocene\_total\_e=18.00000000000 electrons；chromium\_d\_e=6.000000000000 electrons。
+\item 由相同关系求其余主要答案：chromium\_CO\_donated\_e=12.00000000000 electrons；CrCO6\_total\_e=18.00000000000 electrons；CrCO5\_total\_e=16.00000000000 electrons；CrCO5PPh3\_total\_e=18.00000000000 electrons。
+\item 进一步复核与最终可观察量：CrCO5\_electron\_deficit=2.000000000000 electrons；CrCO5\_coordination\_number=5.000000000000 ligands。
+\item 复核全元素/电荷/概率或能量守恒；对于线性响应与物质的量换算，应同时注意浓度和体积的乘法关系。
+\item 题面理想化假设不排除真实实验的非理想活度、离子强度、链转移或层间热接触问题；不得无条件外推。
+\item 此题包含数值验证但尚需专家审定化学科学性、难度与跨辑内容原创性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+ferrocene\_metal\_d\_e = 6 electrons；ferrocene\_Cp\_donated\_e = 12 electrons；ferrocene\_total\_e = 18 electrons；chromium\_d\_e = 6 electrons；chromium\_CO\_donated\_e = 12 electrons；CrCO6\_total\_e = 18 electrons；CrCO5\_total\_e = 16 electrons；CrCO5PPh3\_total\_e = 18 electrons；CrCO5\_electron\_deficit = 2 electrons；CrCO5\_coordination\_number = 5 ligands\par
+\noindent\textbf{模型前提：}
+仅采用题设理想模型，全部问题仍需专家科学与版权审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I202 · 金属羰基同位素替换的简谐伸缩频率及力常数校验}
+\noindent\textbf{题目}\par
+假想强配位金属羰基中C≡O伸缩看作独立双原子谐振子，12C16O峰位νtilde12=2050.0 cm⁻¹，原子摩尔质量取12C=12.000、13C=13.003355、16O=15.994915 g/mol。忽略同位素改变键力常数与金属–C耦合；振动波数νtilde=(1/2πc)√(k/μ)，c=299792458 m/s，μ为单分子约化质量。求12CO、13CO约化质量(u和kg)、13CO预测波数、位移cm⁻¹、波数比、两个同位素对应的振动光子能量eV和波长μm；指出测得差异若偏离理论，可能来自振动耦合。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知物理化学与计量参数：假想强配位金属羰基中C≡O伸缩看作独立双原子谐振子，12C16O峰位νtilde12=2050.0 cm⁻¹，原子摩尔质量取12C=12.000、13C=13.003355、16O=15.994915 g/mol。忽略同位素改变键力常数与金属–C耦合；振动波数νtilde=(1/2πc)√(k/μ)，c=299792458 m/s，μ为单分子约化质量。求12CO、13CO约化质量(u和kg)、13CO预测波数、位移cm⁻¹、波数比、两个同位素对应的振动光子能量eV和波长μm；指出测得差异若偏离理论，可能来自振动耦合。
+\item 理论原理及计算公式：μ=mC mO/(mC+mO)；νtilde13/νtilde12=√(μ12/μ13)；E=h c νtilde（νtilde用m⁻¹）。
+\item 推导与定量判断：同位素替换不变键力常数但增大μ，使振动频率下降，cm⁻¹到m⁻¹需要乘100。
+\item 将所有质量、电子数、浓度和摩尔量与所列模型中的标准态统一，必要时把g转换kg、eV转换J。
+\item 由基本关系计算前四个答案：reduced\_mass\_12CO\_u=6.856208707903 u；reduced\_mass\_13CO\_u=7.172412628058 u；reduced\_mass\_12CO\_kg=1.138500240824e-26 kg；reduced\_mass\_13CO\_kg=1.191007137066e-26 kg。
+\item 由相同关系求其余主要答案：isotope\_wavenumber\_13\_cmInv=2004.302381371 cm\textasciicircum{}-1；wavenumber\_shift\_cmInv=45.69761862945 cm\textasciicircum{}-1；frequency\_ratio=0.9777084787173 ratio；photon\_energy\_12\_eV=0.2541676067881 eV。
+\item 进一步复核与最终可观察量：photon\_energy\_13\_eV=0.2485018241720 eV；wavelength\_13\_um=4.989267135013 micrometer。
+\item 复核全元素/电荷/概率或能量守恒；对于线性响应与物质的量换算，应同时注意浓度和体积的乘法关系。
+\item 题面理想化假设不排除真实实验的非理想活度、离子强度、链转移或层间热接触问题；不得无条件外推。
+\item 此题包含数值验证但尚需专家审定化学科学性、难度与跨辑内容原创性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+reduced\_mass\_12CO\_u = 6.85620871 u；reduced\_mass\_13CO\_u = 7.17241263 u；reduced\_mass\_12CO\_kg = 1.13850024e-26 kg；reduced\_mass\_13CO\_kg = 1.19100714e-26 kg；isotope\_wavenumber\_13\_cmInv = 2004.30238 cm\textasciicircum{}-1；wavenumber\_shift\_cmInv = 45.6976186 cm\textasciicircum{}-1；frequency\_ratio = 0.977708479 ratio；photon\_energy\_12\_eV = 0.254167607 eV；photon\_energy\_13\_eV = 0.248501824 eV；wavelength\_13\_um = 4.98926714 micrometer\par
+\noindent\textbf{模型前提：}
+仅采用题设理想模型，全部问题仍需专家科学与版权审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I203 · [Fe(CN)₆]³⁻/⁴⁻氧化态、电荷守恒与还原电子库存}
+\noindent\textbf{题目}\par
+溶液中只有六氰合铁(III)阴离子[Fe(CN)₆]³⁻和六氰合铁(II)阴离子[Fe(CN)₆]⁴⁻，总络阴离子浓度C=0.01000 mol/L，其中Fe(III)物种分率f=0.3000，其余为Fe(II)。每个CN配体视为−1电荷，全部络阴离子以K⁺为唯一反离子、完全解离，无游离氰根。求两络物种浓度、平均铁氧化态、K⁺电中和所需浓度、按一电子氧化全部Fe(II)时所需电量（以1.000 L溶液计）、每mol络离子的平均负电荷及六氰配体总浓度，检验溶液电荷平衡并指出络离子配体数量不会随氧化态改变。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知物理化学与计量参数：溶液中只有六氰合铁(III)阴离子[Fe(CN)₆]³⁻和六氰合铁(II)阴离子[Fe(CN)₆]⁴⁻，总络阴离子浓度C=0.01000 mol/L，其中Fe(III)物种分率f=0.3000，其余为Fe(II)。每个CN配体视为−1电荷，全部络阴离子以K⁺为唯一反离子、完全解离，无游离氰根。求两络物种浓度、平均铁氧化态、K⁺电中和所需浓度、按一电子氧化全部Fe(II)时所需电量（以1.000 L溶液计）、每mol络离子的平均负电荷及六氰配体总浓度，检验溶液电荷平衡并指出络离子配体数量不会随氧化态改变。
+\item 理论原理及计算公式：Fe平均氧化数=3f+2(1−f)，负电荷平均=3f+4(1−f)，[K+]=3[FeIII]+4[FeII]。
+\item 推导与定量判断：氧化Fe(II)到Fe(III)每mol需要转移1 mol电子；氧化后重新形成的反离子电荷需求会变化，不能忽略反离子释放。
+\item 将所有质量、电子数、浓度和摩尔量与所列模型中的标准态统一，必要时把g转换kg、eV转换J。
+\item 由基本关系计算前四个答案：FeIII\_complex\_M=0.003000000000000 mol/L；FeII\_complex\_M=0.007000000000000 mol/L；average\_oxidation\_state=2.300000000000 oxidation；potassium\_M=0.03700000000000 mol/L。
+\item 由相同关系求其余主要答案：average\_anion\_charge\_magnitude=3.700000000000 charge；ligand\_CN\_bound\_M=0.06000000000000 mol/L；oxidation\_charge\_C\_per\_L=675.3973248400 C/L；Fe\_inventory\_M=0.01000000000000 mol/L。
+\item 进一步复核与最终可观察量：charge\_neutrality\_residual\_M=0.000000000000 mol/L；FeII\_fraction=0.7000000000000 fraction。
+\item 复核全元素/电荷/概率或能量守恒；对于线性响应与物质的量换算，应同时注意浓度和体积的乘法关系。
+\item 题面理想化假设不排除真实实验的非理想活度、离子强度、链转移或层间热接触问题；不得无条件外推。
+\item 此题包含数值验证但尚需专家审定化学科学性、难度与跨辑内容原创性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+FeIII\_complex\_M = 0.003 mol/L；FeII\_complex\_M = 0.007 mol/L；average\_oxidation\_state = 2.3 oxidation；potassium\_M = 0.037 mol/L；average\_anion\_charge\_magnitude = 3.7 charge；ligand\_CN\_bound\_M = 0.06 mol/L；oxidation\_charge\_C\_per\_L = 675.397325 C/L；Fe\_inventory\_M = 0.01 mol/L；charge\_neutrality\_residual\_M = 0 mol/L；FeII\_fraction = 0.7 fraction\par
+\noindent\textbf{模型前提：}
+仅采用题设理想模型，全部问题仍需专家科学与版权审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I204 · Na₂FePO₄F氟磷酸盐正极一电子容量与电极能量}
+\noindent\textbf{题目}\par
+假想Na₂FePO₄F（摩尔质量195.79 g/mol）的正极工作窗口仅发生1个Na离子脱嵌伴随Fe²⁺→Fe³⁺，即每式量1 mol电子，平均工作电压3.100 V。若完全理想可逆，取F=96485.33212 C/mol，计算理论比电量C/g、mAh/g、Wh/kg，放电深度80.00\%时容量和能量、3.000 g电极活性物质放电电量及能量、放电过程中Na原子物质的量以及按C/2放电的电流（以3.000 g全理论容量为基准）。不计电解液和集流体；此值不是整包能量密度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知物理化学与计量参数：假想Na₂FePO₄F（摩尔质量195.79 g/mol）的正极工作窗口仅发生1个Na离子脱嵌伴随Fe²⁺→Fe³⁺，即每式量1 mol电子，平均工作电压3.100 V。若完全理想可逆，取F=96485.33212 C/mol，计算理论比电量C/g、mAh/g、Wh/kg，放电深度80.00\%时容量和能量、3.000 g电极活性物质放电电量及能量、放电过程中Na原子物质的量以及按C/2放电的电流（以3.000 g全理论容量为基准）。不计电解液和集流体；此值不是整包能量密度。
+\item 理论原理及计算公式：capacity(mAh/g)=F*1000/(3600 M)，energy(Wh/kg)=capacity*V，Qsample=F m/M·DOD。
+\item 推导与定量判断：Na₂FePO₄F含两Na但题设只允许一个电子循环，所以不可机械按2F每式量计容量。
+\item 将所有质量、电子数、浓度和摩尔量与所列模型中的标准态统一，必要时把g转换kg、eV转换J。
+\item 由基本关系计算前四个答案：specific\_charge\_C\_per\_g=492.8001027632 C/g；theoretical\_capacity\_mAh\_g=136.8889174342 mAh/g；theoretical\_energy\_Wh\_kg=424.3556440461 Wh/kg；DOD\_capacity\_mAh\_g=109.5111339474 mAh/g。
+\item 由相同关系求其余主要答案：DOD\_energy\_Wh\_kg=339.4845152368 Wh/kg；sample\_charge\_80pct\_C=1182.720246632 C；sample\_energy\_Wh=1.018453545711 Wh；sodium\_extracted\_mol=0.01225803156443 mol。
+\item 进一步复核与最终可观察量：C\_over\_2\_current\_A=0.2053333761513 A；capacity\_ratio\_to\_LiFePO4=0.8057612748353 ratio。
+\item 复核全元素/电荷/概率或能量守恒；对于线性响应与物质的量换算，应同时注意浓度和体积的乘法关系。
+\item 题面理想化假设不排除真实实验的非理想活度、离子强度、链转移或层间热接触问题；不得无条件外推。
+\item 此题包含数值验证但尚需专家审定化学科学性、难度与跨辑内容原创性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+specific\_charge\_C\_per\_g = 492.800103 C/g；theoretical\_capacity\_mAh\_g = 136.888917 mAh/g；theoretical\_energy\_Wh\_kg = 424.355644 Wh/kg；DOD\_capacity\_mAh\_g = 109.511134 mAh/g；DOD\_energy\_Wh\_kg = 339.484515 Wh/kg；sample\_charge\_80pct\_C = 1182.72025 C；sample\_energy\_Wh = 1.01845355 Wh；sodium\_extracted\_mol = 0.0122580316 mol；C\_over\_2\_current\_A = 0.205333376 A；capacity\_ratio\_to\_LiFePO4 = 0.805761275 ratio\par
+\noindent\textbf{模型前提：}
+仅采用题设理想模型，全部问题仍需专家科学与版权审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{分析化学}
+\addcontentsline{toc}{subsection}{第14辑 / 分析化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A201 · 外标LC–MS校准的检出限、定量限与空白噪声}
+\noindent\textbf{题目}\par
+某线性LC–MS外标响应S=kc+b（S为计数、c为ng/mL），斜率k=2000 counts/(ng/mL)，截距b=1000 counts。连续11次独立空白测得信号标准差sb=60.00 counts，在本题规定仪器方法中检出限LOD=3sb/k、定量限LOQ=10sb/k。分析物未知样信号Ssample=7000 counts，体积稀释倍数D=5.000。求样品测定溶液浓度、原样浓度、LOD、LOQ、二者比值、对应校准响应及样本信噪比(S−b)/sb、原样相对于LOD和LOQ的倍数。明确本题采用3σ/10σ约定而非由全浓度系列验证的不确定度模型。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知物理化学与计量参数：某线性LC–MS外标响应S=kc+b（S为计数、c为ng/mL），斜率k=2000 counts/(ng/mL)，截距b=1000 counts。连续11次独立空白测得信号标准差sb=60.00 counts，在本题规定仪器方法中检出限LOD=3sb/k、定量限LOQ=10sb/k。分析物未知样信号Ssample=7000 counts，体积稀释倍数D=5.000。求样品测定溶液浓度、原样浓度、LOD、LOQ、二者比值、对应校准响应及样本信噪比(S−b)/sb、原样相对于LOD和LOQ的倍数。明确本题采用3σ/10σ约定而非由全浓度系列验证的不确定度模型。
+\item 理论原理及计算公式：c\_meas=(S−b)/k，c\_original=D c\_meas，LOD=3sb/k，LOQ=10sb/k。
+\item 推导与定量判断：空白噪声除以信号灵敏度得到浓度噪声，截距需从样品信号扣除，稀释倍数只用于还原原样浓度。
+\item 将所有质量、电子数、浓度和摩尔量与所列模型中的标准态统一，必要时把g转换kg、eV转换J。
+\item 由基本关系计算前四个答案：measured\_sample\_concentration\_ng\_mL=3.000000000000 ng/mL；original\_sample\_concentration\_ng\_mL=15.00000000000 ng/mL；LOD\_ng\_mL=0.09000000000000 ng/mL；LOQ\_ng\_mL=0.3000000000000 ng/mL。
+\item 由相同关系求其余主要答案：LOQ\_over\_LOD=3.333333333333 ratio；signal\_at\_LOD=1180.000000000 counts；signal\_at\_LOQ=1600.000000000 counts；sample\_signal\_to\_noise=100.0000000000 ratio。
+\item 进一步复核与最终可观察量：original\_over\_LOD=166.6666666667 ratio；original\_over\_LOQ=50.00000000000 ratio。
+\item 复核全元素/电荷/概率或能量守恒；对于线性响应与物质的量换算，应同时注意浓度和体积的乘法关系。
+\item 题面理想化假设不排除真实实验的非理想活度、离子强度、链转移或层间热接触问题；不得无条件外推。
+\item 此题包含数值验证但尚需专家审定化学科学性、难度与跨辑内容原创性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+measured\_sample\_concentration\_ng\_mL = 3 ng/mL；original\_sample\_concentration\_ng\_mL = 15 ng/mL；LOD\_ng\_mL = 0.09 ng/mL；LOQ\_ng\_mL = 0.3 ng/mL；LOQ\_over\_LOD = 3.33333333 ratio；signal\_at\_LOD = 1180 counts；signal\_at\_LOQ = 1600 counts；sample\_signal\_to\_noise = 100 ratio；original\_over\_LOD = 166.666667 ratio；original\_over\_LOQ = 50 ratio\par
+\noindent\textbf{模型前提：}
+仅采用题设理想模型，全部问题仍需专家科学与版权审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A202 · 定量核磁qNMR内标的多质子积分与质量纯度校正}
+\noindent\textbf{题目}\par
+定量¹H-NMR采用延迟足够长的积分条件，样品含未知纯度化合物A，取样质量mA=20.00 mg、摩尔质量MA=200.0 g/mol，选择其1条不重叠峰代表nHA=2个质子，积分IA=8.000。加入纯内标S质量mS=10.00 mg、摩尔质量MS=100.0 g/mol，内标不重叠峰代表nHS=3个质子，积分IS=15.00。假设所有积分线性且回收100\%。求样品A的物质的量与质量、质量纯度、样品中杂质质量、每个质子的平均信号积分比以及按内标平均质子积分求出的A理论质量。若忽略积分峰所代表质子数将出现何种定量偏差？\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题干与严格测量假设：定量¹H-NMR采用延迟足够长的积分条件，样品含未知纯度化合物A，取样质量mA=20.00 mg、摩尔质量MA=200.0 g/mol，选择其1条不重叠峰代表nHA=2个质子，积分IA=8.000。加入纯内标S质量mS=10.00 mg、摩尔质量MS=100.0 g/mol，内标不重叠峰代表nHS=3个质子，积分IS=15.00。假设所有积分线性且回收100\%。求样品A的物质的量与质量、质量纯度、样品中杂质质量、每个质子的平均信号积分比以及按内标平均质子积分求出的A理论质量。若忽略积分峰所代表质子数将出现何种定量偏差？
+\item qNMR绝对定量方程 nA=nS(IA/nHA)/(IS/nHS)；已知积分IA=8.000，nHA=2与nHS=3，不应省略质子数。
+\item 整理量纲，质量用mg与g按1000换算，波长吸光度保持无量纲、浓度统一为mol/L。
+\item 首组反演结果：standard\_moles=0.0001000000000000 mol；analyte\_moles=0.00008000000000000 mol；analyte\_pure\_mass\_mg=16.00000000000 mg；analyte\_mass\_purity=0.8000000000000 fraction。
+\item 后续定量结果：impurity\_mass\_mg=4.000000000000 mg；normalized\_analyte\_integral\_per\_proton=4.000000000000 signal；normalized\_standard\_integral\_per\_proton=5.000000000000 signal；integral\_per\_mol\_ratio=0.8000000000000 ratio。
+\item 交叉复核：naive\_mass\_mg\_without\_H\_correction=10.66666666667 mg；naive\_purity=0.5333333333333 fraction。
+\item 独立检查纯分析物质量不超过称样量，0≤纯度≤1；每个积分须先除以其代表的氢质子个数，然后以摩尔量比反演。
+\item 对照忽略多质子修正的误差：错误结果通常偏低，因为样本峰包含2H，而内标峰包含3H。
+\item 排除实际仪器误差时该模型才为严格代数解，真实积分延迟、信号基线或离子活度应单独校正。
+\item 机器复算不代表科学专家评审通过，本题仍为待审稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+standard\_moles = 0.0001 mol；analyte\_moles = 8e-05 mol；analyte\_pure\_mass\_mg = 16 mg；analyte\_mass\_purity = 0.8 fraction；impurity\_mass\_mg = 4 mg；normalized\_analyte\_integral\_per\_proton = 4 signal；normalized\_standard\_integral\_per\_proton = 5 signal；integral\_per\_mol\_ratio = 0.8 ratio；naive\_mass\_mg\_without\_H\_correction = 10.6666667 mg；naive\_purity = 0.533333333 fraction\par
+\noindent\textbf{模型前提：}
+仅采用题设理想模型，全部问题仍需专家科学与版权审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A203 · 双波长光谱法测单质子酸碱指示剂的pKa与组成}
+\noindent\textbf{题目}\par
+单质子指示剂HIn⇌H⁺+In⁻总浓度C=1.000×10⁻⁵ mol/L，光程l=1.000 cm，两种物种在波长λ1的摩尔吸光系数εH1=10000、εB1=30000 L/(mol cm)，在λ2为εH2=25000、εB2=5000 L/(mol cm)。某缓冲样本pH=7.000，测得A1=0.2500、A2=0.1000，忽略散射和背景吸光。由两个吸光度线性方程反演酸型和碱型浓度、碱型分数及pKa，再预测pH=8.000时的两波长吸光度、物种浓度以及第一次样本的酸碱比。假设指示剂不聚集、活度系数1。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题干与严格测量假设：单质子指示剂HIn⇌H⁺+In⁻总浓度C=1.000×10⁻⁵ mol/L，光程l=1.000 cm，两种物种在波长λ1的摩尔吸光系数εH1=10000、εB1=30000 L/(mol cm)，在λ2为εH2=25000、εB2=5000 L/(mol cm)。某缓冲样本pH=7.000，测得A1=0.2500、A2=0.1000，忽略散射和背景吸光。由两个吸光度线性方程反演酸型和碱型浓度、碱型分数及pKa，再预测pH=8.000时的两波长吸光度、物种浓度以及第一次样本的酸碱比。假设指示剂不聚集、活度系数1。
+\item 联立双波长线性方程：10000a+30000b=0.2500，25000a+5000b=0.1000；行列式−7.000×10⁸不为零，因此解唯一。
+\item 整理量纲，质量用mg与g按1000换算，波长吸光度保持无量纲、浓度统一为mol/L。
+\item 首组反演结果：acid\_concentration\_M=0.000002500000000000 mol/L；base\_concentration\_M=0.000007500000000000 mol/L；base\_fraction=0.7500000000000 fraction；inferred\_pKa=6.522878745280 pKa。
+\item 后续定量结果：acid\_to\_base\_ratio=0.3333333333333 ratio；base\_fraction\_at\_pH8=0.9677419354839 fraction；A1\_predicted\_pH8=0.2935483870968 absorbance；A2\_predicted\_pH8=0.05645161290323 absorbance。
+\item 交叉复核：base\_concentration\_pH8\_M=0.000009677419354839 mol/L；molar\_balance\_pH7=0.00001000000000000 mol/L。
+\item 独立回代两个波长：A1=10000[HIn]+30000[In−]=0.2500，A2=25000[HIn]+5000[In−]=0.1000，且[HIn]+[In−]=1.000×10⁻⁵ mol/L。
+\item 由反演的[In−]/[HIn]与已知pH=7计算pKa；对pH=8用相同pKa预测物种分数再用Beer–Lambert公式生成光谱。
+\item 排除实际仪器误差时该模型才为严格代数解，真实积分延迟、信号基线或离子活度应单独校正。
+\item 机器复算不代表科学专家评审通过，本题仍为待审稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+acid\_concentration\_M = 2.5e-06 mol/L；base\_concentration\_M = 7.5e-06 mol/L；base\_fraction = 0.75 fraction；inferred\_pKa = 6.52287875 pKa；acid\_to\_base\_ratio = 0.333333333 ratio；base\_fraction\_at\_pH8 = 0.967741935 fraction；A1\_predicted\_pH8 = 0.293548387 absorbance；A2\_predicted\_pH8 = 0.0564516129 absorbance；base\_concentration\_pH8\_M = 9.67741935e-06 mol/L；molar\_balance\_pH7 = 1e-05 mol/L\par
+\noindent\textbf{模型前提：}
+仅采用题设理想模型，全部问题仍需专家科学与版权审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A204 · 顶空气相色谱分配平衡与气相采样回代原样量}
+\noindent\textbf{题目}\par
+密封顶空瓶中含液体V\_L=0.01000 L、气相V\_G=0.02000 L，加入挥发性分析物总物质的量nT=1.000×10⁻⁵ mol。达到平衡时定义无量纲分配常数K=C\_G/C\_L=0.5000，两个相浓度均以mol/L计，假定液相和气相体积恒定、无瓶壁吸附与化学反应。求平衡气、液相浓度、两相分析物物质的量、气相所占比例、从气相抽取1.000 mL气体（假定抽取后不再重新平衡）的分析物摩尔量、若只用气相浓度误当原样液浓度造成的相对偏差和如果K变为1时的气相比例。需明确两相体积不相等使气相分数不等于K/(1+K)。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知物理化学与计量参数：密封顶空瓶中含液体V\_L=0.01000 L、气相V\_G=0.02000 L，加入挥发性分析物总物质的量nT=1.000×10⁻⁵ mol。达到平衡时定义无量纲分配常数K=C\_G/C\_L=0.5000，两个相浓度均以mol/L计，假定液相和气相体积恒定、无瓶壁吸附与化学反应。求平衡气、液相浓度、两相分析物物质的量、气相所占比例、从气相抽取1.000 mL气体（假定抽取后不再重新平衡）的分析物摩尔量、若只用气相浓度误当原样液浓度造成的相对偏差和如果K变为1时的气相比例。需明确两相体积不相等使气相分数不等于K/(1+K)。
+\item 理论原理及计算公式：nT=CL VL+CG VG，CG=K CL，CL=nT/(VL+KVG)，fgas=KVG/(VL+KVG)。
+\item 推导与定量判断：气液分配常数是浓度比，而在相体积不相同的瓶内物质量比要额外乘相体积；若抽取气相破坏平衡将引起再分配，本题明确不重新平衡。
+\item 将所有质量、电子数、浓度和摩尔量与所列模型中的标准态统一，必要时把g转换kg、eV转换J。
+\item 由基本关系计算前四个答案：liquid\_concentration\_M=0.0005000000000000 mol/L；gas\_concentration\_M=0.0002500000000000 mol/L；liquid\_moles=0.000005000000000000 mol；gas\_moles=0.000005000000000000 mol。
+\item 由相同关系求其余主要答案：gas\_fraction=0.5000000000000 fraction；moles\_in\_1mL\_headspace=2.500000000000e-7 mol；gas\_over\_liquid\_concentration=0.5000000000000 ratio；relative\_underestimate\_if\_gas\_taken\_as\_liquid=-0.5000000000000 fraction。
+\item 进一步复核与最终可观察量：gas\_fraction\_at\_K1=0.6666666666667 fraction；total\_mole\_balance=0.00001000000000000 mol。
+\item 复核全元素/电荷/概率或能量守恒；对于线性响应与物质的量换算，应同时注意浓度和体积的乘法关系。
+\item 题面理想化假设不排除真实实验的非理想活度、离子强度、链转移或层间热接触问题；不得无条件外推。
+\item 此题包含数值验证但尚需专家审定化学科学性、难度与跨辑内容原创性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+liquid\_concentration\_M = 0.0005 mol/L；gas\_concentration\_M = 0.00025 mol/L；liquid\_moles = 5e-06 mol；gas\_moles = 5e-06 mol；gas\_fraction = 0.5 fraction；moles\_in\_1mL\_headspace = 2.5e-07 mol；gas\_over\_liquid\_concentration = 0.5 ratio；relative\_underestimate\_if\_gas\_taken\_as\_liquid = -0.5 fraction；gas\_fraction\_at\_K1 = 0.666666667 fraction；total\_mole\_balance = 1e-05 mol\par
+\noindent\textbf{模型前提：}
+仅采用题设理想模型，全部问题仍需专家科学与版权审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{有机化学}
+\addcontentsline{toc}{subsection}{第14辑 / 有机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O198 · 立构规整自由基聚合的Bernoulli链节双联体与三联体分布}
+\noindent\textbf{题目}\par
+某理想乙烯基聚合物的相邻链节立体关系被视为独立Bernoulli试验，每个相邻二联体meso概率pm=0.7000，racemo概率pr=0.3000。相邻关系相互独立，无高阶立体记忆。求两连续二联体的三联体mm、mr、rm、rr概率和核对和1，由于mr和rm这两种三联体序列在通常的立构统计计数中可合并，求其合并分数，求合并异立构三联体比例、立构等规mm与间规rr强度比、取N=1000个独立连续二联体期望的meso次数及方差，并说明三联体数量与独立二联体数量不完全相同，N用于独立连接变量而非N个三联体。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知物理化学与计量参数：某理想乙烯基聚合物的相邻链节立体关系被视为独立Bernoulli试验，每个相邻二联体meso概率pm=0.7000，racemo概率pr=0.3000。相邻关系相互独立，无高阶立体记忆。求两连续二联体的三联体mm、mr、rm、rr概率和核对和1，由于mr和rm这两种三联体序列在通常的立构统计计数中可合并，求其合并分数，求合并异立构三联体比例、立构等规mm与间规rr强度比、取N=1000个独立连续二联体期望的meso次数及方差，并说明三联体数量与独立二联体数量不完全相同，N用于独立连接变量而非N个三联体。
+\item 理论原理及计算公式：P(mm)=pm²，P(mr)=pm pr，P(rm)=pr pm，P(rr)=pr²。
+\item 推导与定量判断：独立的立体二联体转移才允许概率相乘；NMR常合并镜像排列mr与rm，其峰积分因子2来自组合数。
+\item 将所有质量、电子数、浓度和摩尔量与所列模型中的标准态统一，必要时把g转换kg、eV转换J。
+\item 由基本关系计算前四个答案：mm\_probability=0.4900000000000 fraction；mr\_probability=0.2100000000000 fraction；rm\_probability=0.2100000000000 fraction；rr\_probability=0.09000000000000 fraction。
+\item 由相同关系求其余主要答案：merged\_mr\_fraction=0.4200000000000 fraction；mm\_over\_rr\_ratio=5.444444444444 ratio；total\_triad\_probability=1.000000000000 fraction；expected\_meso\_count\_1000=700.0000000000 count。
+\item 进一步复核与最终可观察量：variance\_meso\_count\_1000=210.0000000000 count2；expected\_racemo\_count\_1000=300.0000000000 count。
+\item 复核全元素/电荷/概率或能量守恒；对于线性响应与物质的量换算，应同时注意浓度和体积的乘法关系。
+\item 题面理想化假设不排除真实实验的非理想活度、离子强度、链转移或层间热接触问题；不得无条件外推。
+\item 此题包含数值验证但尚需专家审定化学科学性、难度与跨辑内容原创性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+mm\_probability = 0.49 fraction；mr\_probability = 0.21 fraction；rm\_probability = 0.21 fraction；rr\_probability = 0.09 fraction；merged\_mr\_fraction = 0.42 fraction；mm\_over\_rr\_ratio = 5.44444444 ratio；total\_triad\_probability = 1 fraction；expected\_meso\_count\_1000 = 700 count；variance\_meso\_count\_1000 = 210 count2；expected\_racemo\_count\_1000 = 300 count\par
+\noindent\textbf{模型前提：}
+仅采用题设理想模型，全部问题仍需专家科学与版权审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O199 · 手性有机催化双Eyring路径的温度选择性与对映体分数}
+\noindent\textbf{题目}\par
+一个手性有机催化剂形成R和S产物的两个互不互变不可逆通道，298.15 K时两过渡态的活化Gibbs自由能分别ΔG‡R=65.00 kJ/mol、ΔG‡S=70.00 kJ/mol；350.0 K时假设两通道焓熵差满足ΔΔH‡=HR−HS=−10.00 kJ/mol、ΔΔS‡=SR−SS=−16.771 J/(mol K)，并以298.15 K的5.000 kJ/mol差独立规定温差线性化。请仅用298.15 K给定的ΔΔG‡=−5.000 kJ/mol与假设在300–350 K为常数的ΔΔH‡=−10.00 kJ/mol，通过推导ΔΔS‡=(ΔΔH‡−ΔΔG‡298)/298.15求350 K差。两通道Eyring前因子相同。求两温度速率比kR/kS、R产物分率及ee\_R、室温R/S比与高温选择性变化，并说明绝对G‡R与G‡S不能不加热容修正直接外推。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知物理化学与计量参数：一个手性有机催化剂形成R和S产物的两个互不互变不可逆通道，298.15 K时两过渡态的活化Gibbs自由能分别ΔG‡R=65.00 kJ/mol、ΔG‡S=70.00 kJ/mol；350.0 K时假设两通道焓熵差满足ΔΔH‡=HR−HS=−10.00 kJ/mol、ΔΔS‡=SR−SS=−16.771 J/(mol K)，并以298.15 K的5.000 kJ/mol差独立规定温差线性化。请仅用298.15 K给定的ΔΔG‡=−5.000 kJ/mol与假设在300–350 K为常数的ΔΔH‡=−10.00 kJ/mol，通过推导ΔΔS‡=(ΔΔH‡−ΔΔG‡298)/298.15求350 K差。两通道Eyring前因子相同。求两温度速率比kR/kS、R产物分率及ee\_R、室温R/S比与高温选择性变化，并说明绝对G‡R与G‡S不能不加热容修正直接外推。
+\item 理论原理及计算公式：ΔΔS‡=(−10000−(−5000))/298.15，ΔΔG‡(T)=−10000−TΔΔS‡，kR/kS=exp(−ΔΔG‡/(RT))。
+\item 推导与定量判断：过渡态差的热力学参数控制速率比而非总反应产率；温度升高对ee影响要考虑焓和熵差同时变化。
+\item 将所有质量、电子数、浓度和摩尔量与所列模型中的标准态统一，必要时把g转换kg、eV转换J。
+\item 由基本关系计算前四个答案：deltaS\_diff\_J\_molK=-16.77008217340 J/(molK)；deltaG\_diff\_298\_kJmol=-5.000000000000 kJ/mol；deltaG\_diff\_350\_kJmol=-4.130471239309 kJ/mol；rate\_ratio\_298=7.515573071316 ratio。
+\item 由相同关系求其余主要答案：rate\_ratio\_350=4.134538541210 ratio；R\_fraction\_298=0.8825680912341 fraction；R\_fraction\_350=0.8052405309700 fraction；ee\_R\_298=0.7651361824682 fraction。
+\item 进一步复核与最终可观察量：ee\_R\_350=0.6104810619400 fraction；ee\_fraction\_change=-0.1546551205282 fraction。
+\item 复核全元素/电荷/概率或能量守恒；对于线性响应与物质的量换算，应同时注意浓度和体积的乘法关系。
+\item 题面理想化假设不排除真实实验的非理想活度、离子强度、链转移或层间热接触问题；不得无条件外推。
+\item 此题包含数值验证但尚需专家审定化学科学性、难度与跨辑内容原创性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+deltaS\_diff\_J\_molK = -16.7700822 J/(molK)；deltaG\_diff\_298\_kJmol = -5 kJ/mol；deltaG\_diff\_350\_kJmol = -4.13047124 kJ/mol；rate\_ratio\_298 = 7.51557307 ratio；rate\_ratio\_350 = 4.13453854 ratio；R\_fraction\_298 = 0.882568091 fraction；R\_fraction\_350 = 0.805240531 fraction；ee\_R\_298 = 0.765136182 fraction；ee\_R\_350 = 0.610481062 fraction；ee\_fraction\_change = -0.154655121 fraction\par
+\noindent\textbf{模型前提：}
+仅采用题设理想模型，全部问题仍需专家科学与版权审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-O200 · 活性开环聚合的单体转化率、聚合度与端基数}
+\noindent\textbf{题目}\par
+假想单官能引发剂引发的活性ε-己内酯开环聚合没有链转移、终止或循环低聚物，所有引发剂链都从起始时增长且仅每条链含一个引发端基。初始己内酯单体浓度M0=1.000 mol/L、引发剂浓度I0=0.01000 mol/L，引发效率f=0.8000，其他引发剂不发生反应。反应单体转化率X=0.7000，己内酯重复单元摩尔质量114.14 g/mol。求有效生长链浓度、消耗单体浓度、每条链的数均重复单元DPn、单体残余浓度、忽略端基的Mn、活性链端基浓度及如果误把引发效率设为1造成的Mn偏差。再求90\%转化的理论DPn与Mn；注意活性聚合可控数均并不自动保证极窄分布。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知物理化学与计量参数：假想单官能引发剂引发的活性ε-己内酯开环聚合没有链转移、终止或循环低聚物，所有引发剂链都从起始时增长且仅每条链含一个引发端基。初始己内酯单体浓度M0=1.000 mol/L、引发剂浓度I0=0.01000 mol/L，引发效率f=0.8000，其他引发剂不发生反应。反应单体转化率X=0.7000，己内酯重复单元摩尔质量114.14 g/mol。求有效生长链浓度、消耗单体浓度、每条链的数均重复单元DPn、单体残余浓度、忽略端基的Mn、活性链端基浓度及如果误把引发效率设为1造成的Mn偏差。再求90\%转化的理论DPn与Mn；注意活性聚合可控数均并不自动保证极窄分布。
+\item 理论原理及计算公式：chains=f I0，DPn=X M0/(f I0)，Mn=DPn Mrepeat，Mremain=M0(1−X)。
+\item 推导与定量判断：平均每条链消费的单体量由总消费物质的量除以有效链数；未活化引发剂不计入活性增长链数。
+\item 将所有质量、电子数、浓度和摩尔量与所列模型中的标准态统一，必要时把g转换kg、eV转换J。
+\item 由基本关系计算前四个答案：active\_chains\_M=0.008000000000000 mol/L；converted\_monomer\_M=0.7000000000000 mol/L；DPn\_70pct=87.50000000000 ratio；remaining\_monomer\_M=0.3000000000000 mol/L。
+\item 由相同关系求其余主要答案：Mn\_70pct\_gmol=9987.250000000 g/mol；active\_end\_groups\_M=0.008000000000000 mol/L；naive\_Mn\_gmol=7989.800000000 g/mol；naive\_relative\_bias=-0.2000000000000 fraction。
+\item 进一步复核与最终可观察量：DPn\_90pct=112.5000000000 ratio；Mn\_90pct\_gmol=12840.75000000 g/mol。
+\item 复核全元素/电荷/概率或能量守恒；对于线性响应与物质的量换算，应同时注意浓度和体积的乘法关系。
+\item 题面理想化假设不排除真实实验的非理想活度、离子强度、链转移或层间热接触问题；不得无条件外推。
+\item 此题包含数值验证但尚需专家审定化学科学性、难度与跨辑内容原创性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+active\_chains\_M = 0.008 mol/L；converted\_monomer\_M = 0.7 mol/L；DPn\_70pct = 87.5 ratio；remaining\_monomer\_M = 0.3 mol/L；Mn\_70pct\_gmol = 9987.25 g/mol；active\_end\_groups\_M = 0.008 mol/L；naive\_Mn\_gmol = 7989.8 g/mol；naive\_relative\_bias = -0.2 fraction；DPn\_90pct = 112.5 ratio；Mn\_90pct\_gmol = 12840.75 g/mol\par
+\noindent\textbf{模型前提：}
+仅采用题设理想模型，全部问题仍需专家科学与版权审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{物理化学}
+\addcontentsline{toc}{subsection}{第14辑 / 物理化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P198 · 两类异质位点Langmuir吸附等温式与覆盖加权}
+\noindent\textbf{题目}\par
+某固体吸附剂存在两类互不相互作用的活性位A和B，最大吸附容量分别qmaxA=1.000 mmol/g、qmaxB=2.000 mmol/g，Langmuir平衡常数分别KA=10.00 bar⁻¹、KB=0.5000 bar⁻¹，固定温度下气体分压分别为p=0.1000和1.000 bar。两类位点均只吸附一层且吸附独立，求两压强下A/B覆盖度、各自吸附量、总容量、总容量占理论最大3.000 mmol/g的分率及高低压吸附量比。解释总吸附量要按各类不同饱和容量加权而不能简单平均两个覆盖度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知物理化学与计量参数：某固体吸附剂存在两类互不相互作用的活性位A和B，最大吸附容量分别qmaxA=1.000 mmol/g、qmaxB=2.000 mmol/g，Langmuir平衡常数分别KA=10.00 bar⁻¹、KB=0.5000 bar⁻¹，固定温度下气体分压分别为p=0.1000和1.000 bar。两类位点均只吸附一层且吸附独立，求两压强下A/B覆盖度、各自吸附量、总容量、总容量占理论最大3.000 mmol/g的分率及高低压吸附量比。解释总吸附量要按各类不同饱和容量加权而不能简单平均两个覆盖度。
+\item 理论原理及计算公式：θi=Kip/(1+Kip)，qtotal=1 θA+2 θB（mmol/g），qmax,total=3 mmol/g。
+\item 推导与定量判断：高亲和位点可在低压先饱和，低亲和但大容量位点继续贡献上升，异质位点叠加等温线不同于单一Langmuir。
+\item 将所有质量、电子数、浓度和摩尔量与所列模型中的标准态统一，必要时把g转换kg、eV转换J。
+\item 由基本关系计算前四个答案：thetaA\_low=0.5000000000000 fraction；thetaB\_low=0.04761904761905 fraction；qA\_low\_mmol\_g=0.5000000000000 mmol/g；qB\_low\_mmol\_g=0.09523809523810 mmol/g。
+\item 由相同关系求其余主要答案：total\_uptake\_low\_mmol\_g=0.5952380952381 mmol/g；thetaA\_high=0.9090909090909 fraction；thetaB\_high=0.3333333333333 fraction；total\_uptake\_high\_mmol\_g=1.575757575758 mmol/g。
+\item 进一步复核与最终可观察量：total\_capacity\_fraction\_high=0.5252525252525 fraction；uptake\_increase\_ratio=2.647272727273 ratio。
+\item 复核全元素/电荷/概率或能量守恒；对于线性响应与物质的量换算，应同时注意浓度和体积的乘法关系。
+\item 题面理想化假设不排除真实实验的非理想活度、离子强度、链转移或层间热接触问题；不得无条件外推。
+\item 此题包含数值验证但尚需专家审定化学科学性、难度与跨辑内容原创性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+thetaA\_low = 0.5 fraction；thetaB\_low = 0.0476190476 fraction；qA\_low\_mmol\_g = 0.5 mmol/g；qB\_low\_mmol\_g = 0.0952380952 mmol/g；total\_uptake\_low\_mmol\_g = 0.595238095 mmol/g；thetaA\_high = 0.909090909 fraction；thetaB\_high = 0.333333333 fraction；total\_uptake\_high\_mmol\_g = 1.57575758 mmol/g；total\_capacity\_fraction\_high = 0.525252525 fraction；uptake\_increase\_ratio = 2.64727273 ratio\par
+\noindent\textbf{模型前提：}
+仅采用题设理想模型，全部问题仍需专家科学与版权审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P199 · 独立双能级体系的Schottky热容峰与占据比}
+\noindent\textbf{题目}\par
+某一非简并基态E0=0和非简并激发态E1=Δ的理想双能级体系，能隙Δ/kB=300.0 K。每摩尔相互独立微单元在T1=150.0 K和T2=300.0 K统计，正则配分函数z=1+exp(−Δ/(kBT))。求两温度激发态占据分数、摩尔平均能U=R(Δ/kB)p\_exc、定容热容Cv=R x² e\textasciicircum{}x/(1+e\textasciicircum{}x)²（x=Δ/kBT）、配分函数、能隙对应每mol能量及两热容比。并指出非简并假设与磁性Schottky异常的真实简并性不同。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知物理化学与计量参数：某一非简并基态E0=0和非简并激发态E1=Δ的理想双能级体系，能隙Δ/kB=300.0 K。每摩尔相互独立微单元在T1=150.0 K和T2=300.0 K统计，正则配分函数z=1+exp(−Δ/(kBT))。求两温度激发态占据分数、摩尔平均能U=R(Δ/kB)p\_exc、定容热容Cv=R x² e\textasciicircum{}x/(1+e\textasciicircum{}x)²（x=Δ/kBT）、配分函数、能隙对应每mol能量及两热容比。并指出非简并假设与磁性Schottky异常的真实简并性不同。
+\item 理论原理及计算公式：z=1+e\textasciicircum{}(−x)，p\_exc=1/(1+e\textasciicircum{}x)，U=R(Δ/kB)p\_exc，Cv=R x² p\_exc(1−p\_exc)。
+\item 推导与定量判断：两能级热容在低T和高T都趋零，中间出现峰，不能用经典等分配每自由度恒定热容近似。
+\item 将所有质量、电子数、浓度和摩尔量与所列模型中的标准态统一，必要时把g转换kg、eV转换J。
+\item 由基本关系计算前四个答案：partition\_T150=1.135335283237 ratio；partition\_T300=1.367879441171 ratio；excited\_fraction\_T150=0.1192029220221 fraction；excited\_fraction\_T300=0.2689414213700 fraction。
+\item 由相同关系求其余主要答案：internal\_energy\_T150\_Jmol=297.3324717328 J/mol；internal\_energy\_T300\_Jmol=670.8310183238 J/mol；heat\_capacity\_T150\_JmolK=3.491860963869 J/(molK)；heat\_capacity\_T300\_JmolK=1.634722569189 J/(molK)。
+\item 进一步复核与最终可观察量：gap\_energy\_kJmol=2.494338785400 kJ/mol；heat\_capacity\_ratio=2.136057230556 ratio。
+\item 复核全元素/电荷/概率或能量守恒；对于线性响应与物质的量换算，应同时注意浓度和体积的乘法关系。
+\item 题面理想化假设不排除真实实验的非理想活度、离子强度、链转移或层间热接触问题；不得无条件外推。
+\item 此题包含数值验证但尚需专家审定化学科学性、难度与跨辑内容原创性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+partition\_T150 = 1.13533528 ratio；partition\_T300 = 1.36787944 ratio；excited\_fraction\_T150 = 0.119202922 fraction；excited\_fraction\_T300 = 0.268941421 fraction；internal\_energy\_T150\_Jmol = 297.332472 J/mol；internal\_energy\_T300\_Jmol = 670.831018 J/mol；heat\_capacity\_T150\_JmolK = 3.49186096 J/(molK)；heat\_capacity\_T300\_JmolK = 1.63472257 J/(molK)；gap\_energy\_kJmol = 2.49433879 kJ/mol；heat\_capacity\_ratio = 2.13605723 ratio\par
+\noindent\textbf{模型前提：}
+仅采用题设理想模型，全部问题仍需专家科学与版权审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-P200 · 复合平板两层稳态热传导与界面温度}
+\noindent\textbf{题目}\par
+一块单位面积A=1.000 m²的平板由两种化学材料层串联，第一层厚d1=0.01000 m、导热系数κ1=0.2000 W/(m K)，第二层厚d2=0.02000 m、导热系数κ2=1.000 W/(m K)。两外表面分别恒温Tleft=350.0 K、Tright=300.0 K，层间完美热接触，忽略辐射、对流、温变κ和内部发热。根据傅里叶定律稳态热阻Rth=d/(κA)求各层热阻、总热阻、热流功率Qdot与热流密度、两层温降、界面温度与两层温降之比及300 s传递热量，检查温降和为50 K。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知物理化学与计量参数：一块单位面积A=1.000 m²的平板由两种化学材料层串联，第一层厚d1=0.01000 m、导热系数κ1=0.2000 W/(m K)，第二层厚d2=0.02000 m、导热系数κ2=1.000 W/(m K)。两外表面分别恒温Tleft=350.0 K、Tright=300.0 K，层间完美热接触，忽略辐射、对流、温变κ和内部发热。根据傅里叶定律稳态热阻Rth=d/(κA)求各层热阻、总热阻、热流功率Qdot与热流密度、两层温降、界面温度与两层温降之比及300 s传递热量，检查温降和为50 K。
+\item 理论原理及计算公式：R1=d1/(κ1A)，R2=d2/(κ2A)，Qdot=(Tleft−Tright)/(R1+R2)，Tinterface=Tleft−QdotR1。
+\item 推导与定量判断：串联层有相同热流，不能把各层热阻相加后再按导热系数直接线性平均求有效热导率。
+\item 将所有质量、电子数、浓度和摩尔量与所列模型中的标准态统一，必要时把g转换kg、eV转换J。
+\item 由基本关系计算前四个答案：resistance\_layer1\_K\_W=0.05000000000000 K/W；resistance\_layer2\_K\_W=0.02000000000000 K/W；total\_resistance\_K\_W=0.07000000000000 K/W；heat\_rate\_W=714.2857142857 W。
+\item 由相同关系求其余主要答案：heat\_flux\_W\_m2=714.2857142857 W/m2；temperature\_drop\_layer1\_K=35.71428571429 K；temperature\_drop\_layer2\_K=14.28571428571 K；interface\_temperature\_K=314.2857142857 K。
+\item 进一步复核与最终可观察量：drop\_ratio\_layer1\_layer2=2.500000000000 ratio；heat\_energy\_300s\_J=214285.7142857 J。
+\item 复核全元素/电荷/概率或能量守恒；对于线性响应与物质的量换算，应同时注意浓度和体积的乘法关系。
+\item 题面理想化假设不排除真实实验的非理想活度、离子强度、链转移或层间热接触问题；不得无条件外推。
+\item 此题包含数值验证但尚需专家审定化学科学性、难度与跨辑内容原创性。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+resistance\_layer1\_K\_W = 0.05 K/W；resistance\_layer2\_K\_W = 0.02 K/W；total\_resistance\_K\_W = 0.07 K/W；heat\_rate\_W = 714.285714 W；heat\_flux\_W\_m2 = 714.285714 W/m2；temperature\_drop\_layer1\_K = 35.7142857 K；temperature\_drop\_layer2\_K = 14.2857143 K；interface\_temperature\_K = 314.285714 K；drop\_ratio\_layer1\_layer2 = 2.5 ratio；heat\_energy\_300s\_J = 214285.714 J\par
+\noindent\textbf{模型前提：}
+仅采用题设理想模型，全部问题仍需专家科学与版权审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\end{document}
