@@ -246,4 +246,4 @@ assert.equal(release.seventh_series_pending_cross_series_novelty_review,60);
 assert.equal(release.sixth_series_pending_cross_series_novelty_review,50);
 assert.equal(release.approved_count,0);
 assert.deepEqual(release.items,[]);
-console.log('PASS: 406 previous plus tenth-series in-progress records; counts and independent witnesses checked, 0 expert approvals, unpublished');
+console.log('PASS: 406 historical + tenth series + eleventh-series provisional records; independent witnesses checked separately, 0 expert approvals');
