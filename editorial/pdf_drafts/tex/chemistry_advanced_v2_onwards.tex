@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至10辑 (494题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (502题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -10108,6 +10108,193 @@ BET斜率 = 0.0822916667 g/cm\textasciicircum{}3(STP)；BET截距 = 0.0010416666
 gamma1 = 0.069087203 N/m；gamma2 = 0.0599404309 N/m；Gamma1 = 9.375e-07 mol/m²；Gamma2 = 2.14285714e-06 mol/m²；theta1 = 0.375 fraction；theta2 = 0.857142857 fraction；delta\_gamma = -0.00914677211 J/m²；delta\_F = -9.14677211e-05 J；delta\_Gamma = 1.20535714e-06 mol/m²\par
 \noindent\textbf{模型前提：}
 单组分非离子理想吸附，无胶束、相变或非理想活度；不从表面自由能直接推吸附焓。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\clearpage
+\section*{第11辑 · 题目及解答}
+\addcontentsline{toc}{section}{第11辑}
+\subsection*{无机化学}
+\addcontentsline{toc}{subsection}{第11辑 / 无机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I126 · SrFeO₃₋δ氧缺陷的TGA反演、铁价态守恒与晶胞密度}
+\noindent\textbf{题目}\par
+假想钙钛矿SrFeO₃₋δ从完全氧化的SrFeO₃（Fe全为+4）在还原气氛下失去氧，热重分析显示相对初始样品质量损失恰为1.000\%。取原子量Sr=87.620、Fe=55.845、O=15.999 g/mol；晶胞为立方钙钛矿、每晶胞1个化学式单位、a=0.3900 nm，NA=6.02214076×10²³ mol⁻¹。假定Sr始终+2、O为−2、Fe只存在+3/+4，所有氧损失形成氧空位且无阳离子缺位或二次相。求氧缺陷δ、Fe³⁺与Fe⁴⁺的位点分数、平均铁价、氧空位/晶胞、还原后式量与理论密度；用电中性和热重质量差反向核对，并说明可能的物理模型失效。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 初始SrFeO₃式量M₀=87.620+55.845+3×15.999=191.462000000 g/mol；质量损失必须相对于初始式量计算。
+\item 每化学式单位失去δ个氧，损失质量δ×15.999 g/mol，故δ=0.01000M₀/15.999=0.119671229452。
+\item 设Fe⁴⁺位点分数y，平均铁价为3+y；电中性要求2+(3+y)−2(3−δ)=0，因此y=1−2δ=0.760657541096。
+\item Fe³⁺分数为1−y=0.239342458904；平均铁价为3.76065754110，严格处于3与4之间。
+\item 每个晶胞1个式量单位，氧空位数/晶胞=δ=0.119671229452；晶胞中氧平均占位数为3−δ。
+\item 还原后摩尔质量M=M₀−15.999δ=189.547380000 g/mol；与初始差值占M₀的比例严格为1.000\%。
+\item 晶胞体积a³=(0.3900×10⁻⁹ m)³，理论密度ρ=(M/1000)/(NAa³)=5306.07106611 kg/m³，必须使用SI单位。
+\item 氧空位反应每去除一个O²⁻对应两个电子，恰将2δ份Fe⁴⁺还原为Fe³⁺，与电中性方程一致。
+\item 若δ>0.5会要求Fe⁴⁺负分数，违反本题价态假设；真实钙钛矿可能发生结构相变、Fe²⁺、空位有序或多相析出，需要独立衍射与谱学证据。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+delta = 0.119671229 per\_formula；Fe4\_fraction = 0.760657541 fraction；Fe3\_fraction = 0.239342459 fraction；Fe\_mean\_valence = 3.76065754 oxidation\_state；vacancies\_per\_cell = 0.119671229 per\_cell；formula\_mass = 189.54738 g/mol；density = 5306.07107 kg/m³\par
+\noindent\textbf{模型前提：}
+单相立方SrFeO₃₋δ、Sr2+、Fe3+/4+、氧空位独占；实际晶格常数随δ变化被忽略。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I127 · 二价钙置换沸石钠位点的双位点质量作用与van’t Hoff选择性}
+\noindent\textbf{题目}\par
+假想沸石有0.01000 mol负电荷位点，Na⁺每个占1位，Ca²⁺每个占2位。与无限大理想储液池平衡，aNa=0.1000、aCa=0.02000均为相对1 mol/L的无量纲活度。设θNa为被Na占据的位点分数、θCa=1−θNa为被Ca占据的位点分数；定义理想化交换常数K=θCa aNa²/(θNa² aCa)。298.15 K时K=5.000，交换反应标准焓ΔH°=−20.00 kJ/mol，假定298–318 K恒定。求298.15 K的两类位点分数、沸石中Na/Ca物质的量、Ca占位分数、318.15 K的K与分数；检查电荷/位点守恒、正根唯一性及放热交换的温度趋势。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 位点守恒θNa+θCa=1，Ca每离子占两负位，因此nNa=0.01000θNa，nCa=0.01000θCa/2。
+\item 由定义K=θCa aNa²/(θNa² aCa)整理为(1−θNa)/θNa²=K aCa/aNa²=q。
+\item 298.15 K时q=10.00000000，方程qθNa²+θNa−1=0，唯一正根θNa=2/[1+√(1+4q)]=0.270156211872。
+\item θCa=1−θNa=0.729843788128；负根不在[0,1]，故排除。
+\item 沸石Na=0.00270156211872 mol，Ca=0.00364921894064 mol；电荷当量nNa+2nCa=0.01000 mol。
+\item van’t Hoff积分ln(K₂/K₁)=(ΔH°/R)(1/T₁−1/T₂)，升温至318.15 K得K₂=3.01096757128，放热交换升温使K减小。
+\item 新q₂=K₂aCa/aNa²=6.02193514255，对应θNa₂=0.332847023191、θCa₂=0.667152976809。
+\item 方程左边(1−θ)/θ²对0<θ≤1严格递减，因此每个正q仅有一个物理解；温升时Ca选择性降低。
+\item 该选择性常数使用题设理想位点分数而非真实固相活度，未计入邻位关联、交换热变化、溶液非理想和位点能分布。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+q298 = 10 dimensionless；theta\_Na298 = 0.270156212 fraction；theta\_Ca298 = 0.729843788 fraction；nNa298 = 0.00270156212 mol；nCa298 = 0.00364921894 mol；K318 = 3.01096757 dimensionless；q318 = 6.02193514 dimensionless；theta\_Na318 = 0.332847023 fraction；theta\_Ca318 = 0.667152977 fraction\par
+\noindent\textbf{模型前提：}
+二价离子占两位、固定外液活度、理想位点混合、ΔH°恒定；非理想沸石选择性仍待专家复核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{分析化学}
+\addcontentsline{toc}{subsection}{第11辑 / 分析化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A126 · 电化学石英晶体微天平的铜沉积法拉第质量与水合数反演}
+\noindent\textbf{题目}\par
+一块5 MHz石英晶体电极在水溶液中还原Cu²⁺+2e⁻→Cu(s)，电极有效面积1.000 cm²。沉积过程通过电量Q=0.001000 C，晶体基频变化Δf=−34.00 Hz；给定Sauerbrey质量灵敏度Cf=56.60 Hz/(μg/cm²)，法拉第常数F=96485.33212 C/mol，Cu摩尔质量63.546 g/mol，水18.015 g/mol。假设沉积法拉第效率100\%、膜刚性且均匀、无其他吸附离子，频移只由Cu和共沉积水贡献。求总面质量、Cu物质的量及质量、附带水质量及物质的量、每Cu对应的水分子数、Cu面摩尔密度，并回算频移和电子守恒，说明何时Sauerbrey反演失效。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Sauerbrey关系Δf=−Cf Δm/A，故总面质量=34.00/56.60=0.600706713781 μg/cm²。
+\item 每个Cu²⁺消耗2电子，nCu=Q/(2F)=5.18213482831e-9 mol，不能误用单电子反应。
+\item 电极面积为1.000 cm²，Cu面摩尔密度nCu/A=5.18213482831e-9 mol/cm²。
+\item 法拉第理论Cu质量mCu=nCu×63.546 g/mol=0.329303939800 μg，低于QCM总面质量。
+\item 差额归于共沉积水，mwater=mtotal−mCu=0.271402773981 μg；正值支持题设水合解释，但不是其独立实验验证。
+\item 水物质的量nwater=mwater×10⁻⁶/18.015=1.50653774067e-8 mol。
+\item 每个Cu对应水合数h=nwater/nCu=2.90717588519，可为非整数平均值。
+\item 将mCu+mwater代回Δf=−Cf m/A严格恢复−34.00 Hz；电子总量2FnCu=0.001000 C。
+\item 若膜黏弹性显著、液体黏度改变、存在夹带阴离子或析氢，频移不能仅解释为刚性铜水合膜，需QCM-D耗散与法拉第效率独立测定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+total\_ug\_per\_cm2 = 0.600706714 μg/cm²；nCu = 5.18213483e-09 mol；mCu\_ug = 0.32930394 μg；mWater\_ug = 0.271402774 μg；nWater = 1.50653774e-08 mol；hydration\_number = 2.90717589 water/Cu；Cu\_mol\_per\_cm2 = 5.18213483e-09 mol/cm²；frequency\_back = -34 Hz\par
+\noindent\textbf{模型前提：}
+刚性膜、无溶液黏度变化、100\%铜法拉第效率且只夹带水；真实QCM-D需耗散验证。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A127 · 高分辨质谱¹³C与¹⁵N精细结构分辨及单同位素峰强度推断}
+\noindent\textbf{题目}\par
+一分子含C₂₀N₂且不含其他可贡献M+1的同位素，基峰质荷比m/z=500.0000（z=+1）。相对¹²C的¹³C质量增量为1.003354835 u，相对¹⁴N的¹⁵N增量为0.997034893 u；天然丰度p(¹³C)=0.01070、p(¹⁵N)=0.003640，假设各原子同位素独立。质谱在m/z 500处分辨本领R=m/ΔmFWHM=120000，且各峰FWHM相同。计算单¹³C与单¹⁵N取代峰的精细质量差、FWHM、峰距/FWHM、最低使峰距等于FWHM的R、两个单取代同位素峰的概率比；若离子为+2且m/z约250、分辨本领相同，求峰距与FWHM并讨论为何质量差与分辨率不能混用。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 单¹³C取代比全轻同位素峰高1.003354835 u，单¹⁵N取代高0.997034893 u，二者精细质量差=0.00631994200000 u。
+\item 单电荷离子Δ(m/z)等于质量差；仪器FWHM=500/120000=0.00416666666667 u。
+\item 峰距与峰宽之比=1.51678608000；数值大于1仅说明峰心相距超过一个FWHM，不能保证基线分离。
+\item 临界Rmin=500/Δm=79114.6501028，须区分仪器标称分辨本领与实际峰形。
+\item 恰好一个¹³C且无¹⁵N的概率P13=20p13(1−p13)\textasciicircum{}19(1−p15)\textasciicircum{}2，因20个碳位可被取代。
+\item 恰好一个¹⁵N且无¹³C的概率P15=2p15(1−p15)(1−p13)\textasciicircum{}20；两者概率比P13/P15=29.6053819828。
+\item 若电荷为+2，精细峰距为Δm/2=0.00315997100000 m/z，而m/z约250处同R的FWHM=250/120000=0.00208333333333，两者比值保持不变。
+\item 精细同位素峰的相对丰度与质量分辨是两类独立信息；共洗脱杂质、质量偏差、其它元素同位素及峰尾会改变实际识别。
+\item 概率计算是指定C₂₀N₂模型的条件预测，不能仅凭一个质量差断言分子式；仍需母离子准确质量、元素约束和同位素包络整体拟合。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+fine\_mass\_gap = 0.006319942 u；FWHM\_1plus = 0.00416666667 u；gap\_over\_FWHM = 1.51678608 ratio；R\_min = 79114.6501 ratio；P13\_over\_P15 = 29.605382 ratio；gap\_2plus = 0.003159971 m/z；FWHM\_2plus = 0.00208333333 m/z\par
+\noindent\textbf{模型前提：}
+只考虑碳氮两种重同位素、独立天然丰度、相同峰形与恒定分辨本领；非真实质谱鉴定结论。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{有机化学}
+\addcontentsline{toc}{subsection}{第11辑 / 有机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O123 · 活性阴离子聚合的Poisson链长分布、转化率与分散系数闭合}
+\noindent\textbf{题目}\par
+假想活性阴离子聚合体系中单体初始浓度[M]₀=1.200 mol/L，瞬时且定量生成活性链端[I*]=0.01200 mol/L，每条活性链端独立以相同速率增长、无终止和链转移，增长常数kp=0.05000 L/(mol s)。定义单体转化率X=0.8000，忽略体积变化，重复单元摩尔质量104.0 g/mol。将链中增长单元数n近似为参数λ=消耗单体浓度/[I*]的Poisson分布（可有概率极小的n=0），忽略引发端基质量。求达到80\%转化率的时间、剩余单体、平均链长、数均与重均分子量、分散系数Đ、活性链端浓度和链长方差，解释为何活性链端数不随单体消耗下降，并验证Poisson二阶矩。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 无终止和链转移时活性链端浓度[I*]恒定为0.01200 mol/L，不能当作单体浓度一起衰减。
+\item 单体消耗动力学d[M]/dt=−kp[I*][M]，积分得[M](t)=M₀exp(−kp[I*]t)。
+\item 转化率0.8意味着[M]=1.200×0.2000=0.240000000000 mol/L。
+\item 达到该转化率的时间t=−ln(0.2)/(0.05000×0.01200)=2682.39652072 s。
+\item 消耗单体浓度M₀X=0.9600 mol/L，平均每条链增长单元数λ=0.9600/0.01200=80.0000000000。
+\item Poisson分布E[n]=λ、Var(n)=λ、E[n²]=λ²+λ；因此数均聚合度DPn=λ，重均聚合度DPw=E[n²]/E[n]=λ+1。
+\item 数均分子量Mn=104λ=8320.00000000 g/mol，重均Mw=104(λ+1)=8424.00000000 g/mol。
+\item 分散系数Đ=Mw/Mn=1+1/λ=1.01250000000，接近1但不等于1。
+\item 由于n=0的概率exp(−80)极小，Poisson近似在本题高转化下合理；真实引发时间分布、离子对聚集、链转移与端基质量会改变链长分布。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+remaining\_monomer = 0.24 mol/L；time\_to\_80 = 2682.39652 s；lambda = 80 units；variance\_n = 80 units²；DPw = 81 units；Mn = 8320 g/mol；Mw = 8424 g/mol；dispersity = 1.0125 ratio；active\_chain\_ends = 0.012 mol/L\par
+\noindent\textbf{模型前提：}
+同步定量引发、无终止链转移、Poisson独立增长、忽略端基质量；与v10自由基终止动力学是不同核心随机模型，仍待人工跨辑核验。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O124 · 二氯一溴有机物同位素包络的生成函数与重同位素矩检验}
+\noindent\textbf{题目}\par
+某假想有机物分子含恰好2个氯和1个溴，其他元素同位素贡献可忽略。设³⁷Cl天然丰度pCl=0.2422、³⁵Cl丰度0.7578，⁸¹Br丰度pBr=0.4931、⁷⁹Br丰度0.5069，各原子独立且忽略同位素质量缺陷，将每次重同位素替换视为质量约增加2 u。求M、M+2、M+4、M+6四个峰的归一化概率、M+6与M峰强度比、至少出现一个重同位素的概率、重同位素数的均值；使用概率生成函数和导数核验，解释为何不能把Cl和Br视作同一丰度的三个二项试验。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对每个氯原子，生成多项式qCl+pCl z，其中qCl=0.7578；两个独立氯给平方。
+\item 一个溴原子对应qBr+pBr z，qBr=0.5069；总生成函数G(z)=(qCl+pCl z)²(qBr+pBr z)。
+\item 常数项P(M)=qCl²qBr=0.291092819796。
+\item z的一次项P(M+2)=2pClqClqBr+qCl²pBr=0.469240020612。
+\item 二次项P(M+4)=pCl²qBr+2pClqClpBr=0.210741499388。
+\item 三次项P(M+6)=pCl²pBr=0.0289256602040；四个系数和G(1)=1。
+\item 高质量端与单同位素端强度比P(M+6)/P(M)=0.0993691985404，至少一重同位素概率=1−P(M)=0.708907180204。
+\item 由G′(1)=2pCl+pBr得到重同位素数期望=0.977500000000，与四个峰的k加权和一致。
+\item 氯与溴重同位素丰度不同，不能用单一Binomial(3,p)；实际高分辨质谱需加入精确质量、其他元素同位素与仪器响应。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+P\_M = 0.29109282 fraction；P\_M2 = 0.469240021 fraction；P\_M4 = 0.210741499 fraction；P\_M6 = 0.0289256602 fraction；P\_M6\_over\_M = 0.0993691985 ratio；P\_at\_least\_one = 0.70890718 fraction；mean\_heavy = 0.9775 count\par
+\noindent\textbf{模型前提：}
+独立天然同位素、Cl2Br计数已知、质量增量仅按2u近似；真实质谱需精确质量修正。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{物理化学}
+\addcontentsline{toc}{subsection}{第11辑 / 物理化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P123 · Semenov放热反应器双稳态根与热失控临界参数}
+\noindent\textbf{题目}\par
+某理想连续补给放热反应器采用Semenov集总温升模型：令θ为无量纲温升，热生成功率Qgen=Q₀exp(θ)，散热功率Qloss=Hθ，H=40.00 W，Q₀=10.00 W。忽略物料耗尽、反应物浓度变化和热容温度依赖，热容C>0满足C dθ/dt=Qgen−Qloss。定义δ=Q₀/H。求全部非负稳态温升、各稳态功率、线性稳定性、临界δ与临界Q₀，并证明当Q₀超过临界值时无有限非负稳态。使用二分法或Lambert W分支验证两根，说明模型适用限制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 稳态Q₀expθ=Hθ，整理为θexp(−θ)=δ=10/40=0.2500000000。
+\item 函数f(θ)=θexp(−θ)在θ≥0先增后减，f′=(1−θ)exp(−θ)，最大值f(1)=1/e。
+\item 因为δ=0.25<1/e，存在两个非负根，分别位于(0,1)与(1,∞)，而非只有一个解。
+\item 对(0,1)区间二分求低温根θlow=0.357402956181；对(1,10)二分求高温根θhigh=2.15329236411。
+\item 两个稳态功率均满足Qgen=Qloss=Hθ，低根功率=14.2961182473 W，高根功率=86.1316945644 W。
+\item 线性化热收支导数Q₀expθ−H，在稳态等于H(θ−1)；低根θ<1导数为负、线性稳定，高根θ>1导数为正、线性不稳定。
+\item 鞍结临界点θc=1、δc=1/e=0.367879441171，临界Q₀,c=H/e=14.7151776469 W。
+\item 当Q₀>H/e时δ>1/e，θexp(−θ)≤1/e无解；模型预测无有限稳态并非证明真实反应器温度无界。
+\item 模型忽略反应物耗尽、热传递系数温变与相变，不能将高温不稳定根误称第二个稳定运行状态。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+delta = 0.25 dimensionless；theta\_low = 0.357402956 dimensionless；theta\_high = 2.15329236 dimensionless；Q\_low = 14.2961182 W；Q\_high = 86.1316946 W；delta\_critical = 0.367879441 dimensionless；Q0\_critical = 14.7151776 W；theta\_critical = 1 dimensionless\par
+\noindent\textbf{模型前提：}
+集总等温场、固定反应物、指数热生成与线性散热；真实热失控受物料与热容反馈约束。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P124 · 单分子结合两态Markov过程的停留时间、相关函数与谱密度}
+\noindent\textbf{题目}\par
+单分子受体在恒定配体浓度c=2.000 μmol/L下发生U⇌B，结合速率kon=2.000×10⁶ L/(mol s)，解离速率koff=6.000 s⁻¹；假设配体池无限大、受体无协同作用、两态连续时间Markov过程。定义结合态指示量X(t)∈\{0,1\}。求结合/解离跃迁率、平衡结合概率、Kd、平均结合与未结合停留时间、弛豫时间τ、X的方差、延迟0.2000 s的平衡自协方差、单边角频率功率谱S(ω)=2Var(X)τ/[1+(ωτ)²]在ω=5.000 rad/s的值；用详细平衡和概率归一性核验。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将c=2.000×10⁻⁶ mol/L代入，未结合到结合的伪一级速率a=kon c=4.00000000000 s⁻¹。
+\item 结合到未结合速率b=koff=6.00000000000 s⁻¹；主方程dpB/dt=a(1−pB)−bpB。
+\item 稳态pB=a/(a+b)=0.400000000000，pU=b/(a+b)=0.600000000000，两者之和为1。
+\item 解离常数Kd=koff/kon=0.00000300000000000 mol/L；pB=c/(Kd+c)与主方程一致。
+\item 两态停留时间均为指数分布，平均结合停留1/b=0.166666666667 s，平均未结合停留1/a=0.250000000000 s。
+\item 非零动力学特征值为−(a+b)，故相关弛豫时间τ=1/(a+b)=0.100000000000 s。
+\item 二值变量方差pB(1−pB)=0.240000000000；延迟t=0.2 s的协方差C(t)=Var exp(−t/τ)=0.0324804679768。
+\item 在ω=5 rad/s，单边角频率谱S(ω)=2Varτ/(1+ω²τ²)=0.0384000000000 s，单位随角频率谱约定而定。
+\item 详细平衡pU a=pB b=2.40000000000 s⁻¹；若存在多配体、构象转换或非Markov停留时间，单指数相关与洛伦兹谱失效。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+a = 4 s\textasciicircum{}-1；b = 6 s\textasciicircum{}-1；p\_bound = 0.4 fraction；p\_unbound = 0.6 fraction；Kd = 3e-06 mol/L；bound\_dwell = 0.166666667 s；unbound\_dwell = 0.25 s；tau = 0.1 s；variance = 0.24 dimensionless；covariance\_0p2 = 0.032480468 dimensionless；spectrum\_omega5 = 0.0384 s；detailed\_balance\_flux = 2.4 s\textasciicircum{}-1\par
+\noindent\textbf{模型前提：}
+两态连续时间Markov、恒定外液、无协同与构象隐藏态；频谱定义采用单边角频率规范。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
