@@ -65,6 +65,19 @@ Object.assign(witnesses,{
 "UC-ADV13-A194":()=>{let k=8.617333262145e-5,T=6000,dE=.6,p=(5/3)*2*(500/600),B=Math.exp(-dE/(k*T)),M=p*B,rec=dE/(k*Math.log(p/M)),na=dE/(k*Math.log((10/3)/M));return[M,p,B,rec,5/3*B,5/6,na,na-rec,Math.log(B),k*rec];}
 });
 
+Object.assign(witnesses,{
+"UC-ADV13-O181":()=>{let K=4,a=.05,b=.2,tot=.01,T=10,fa=1/(1+K),fb=1-fa,k=fa*a+fb*b,rem=tot*Math.exp(-k*T),p=(tot-rem)*a*fa/k,q=(tot-rem)*b*fb/k;return[fa,fb,k,p/(p+q),q/(p+q),q/p,1-rem/tot,rem,p,q,rem+p+q];},
+"UC-ADV13-O182":()=>{let fa=1/11,fb=10/11,a=.06*fa,b=.06*fb,ra=Math.exp(-a*100),rb=Math.exp(-b*100);return[fa,fb,.02*fa,.02*fb,a,b,1-ra,1-rb,.005*(1-ra),.005*(1-rb),.005*ra,.005*rb];},
+"UC-ADV13-O183":()=>{let max=.02,L=.2,K=.1,u=L/(K+L),v=L/(3*K+L),a=max*u,b=max*v;return[a,b,a/1e-3,b/1e-3,v/u,u/v,K,3*K,u,v];},
+"UC-ADV13-O184":()=>{let C=.5,ratio1=.002,ratio2=.02,z=1000,d1=z/(1+z*C*ratio1),d2=z/(1+z*C*ratio2);return[d1,d2,100.12*d1,100.12*d2,z*100.12,z/d1,z/d2,d1/d2,C*ratio1,C*ratio2];},
+"UC-ADV13-O185":()=>{let w=T=>Math.exp(-4e3/(8.314462618*T)),p=T=>w(T)/(1+w(T)),a=p(298.15),b=p(350),ka=a/2,kb=b/2;return[a,b,ka,kb,Math.log(2)/ka,Math.log(2)/kb,1-Math.exp(-5*ka),1-Math.exp(-5*kb),b/a,kb/ka];},
+"UC-ADV13-O186":()=>{let g1=(2e3-5*298.15),g2=(2e3-5*350),q1=Math.exp(-g1/(R*298.15)),q2=Math.exp(-g2/(R*350));return[g1/1e3,g2/1e3,q1,q2,1/(1+1/q1),1/(1+1/q2),(q1-1)/(q1+1),(q2-1)/(q2+1),2000/5,q2/q1];},
+"UC-ADV13-O187":()=>{let t=600,I=2e-6,V=.1,Tr=Math.pow(10,-.5),fabs=1-Tr,n=I*t,p=n*fabs*.25;return[fabs,Tr,n,n*fabs,n*Tr,p,p/V,p/t,p/n,.25];},
+"UC-ADV13-O188":()=>{let h=.02,amine=.1,kN=2,obs=h+kN*amine,C0=.005,rem=C0*Math.exp(-obs*10),used=C0-rem,fn=kN*amine/obs,low=kN*.01/(h+kN*.01);return[obs-h,obs,fn,h/obs,used*fn,used*h/obs,rem,fn/(1-fn),Math.log(2)/obs,low,fn-low];},
+"UC-ADV13-O189":()=>{let a=.1,b=.02,r=.05,t=30,u=.01,m=-(a+b+2*r)/2,w=Math.sqrt(r*r+(b-a)**2/4),v=(b-a)/2,E=Math.exp(m*t),C=Math.cosh(w*t),S=Math.sinh(w*t),RR=u*E*(C+(v+r)*S/w),SS=u*E*(C+(r-v)*S/w),J=x=>(Math.exp(x*t)-1)/x,J0=(J(m+w)+J(m-w))/2,J1=(J(m+w)-J(m-w))/2,P=a*u*(J0+(v+r)*J1/w),Q=b*u*(J0+(r-v)*J1/w);return[m-w,m+w,RR,SS,P,Q,(P-Q)/(P+Q),(RR-SS)/(RR+SS),P+Q,RR+SS,RR+SS+P+Q,P/Q];},
+"UC-ADV13-O190":()=>{let f=T=>{let x=Math.exp(-2e3/(R*T)),y=Math.exp(-5e3/(R*T)),z=1+x+y,p=[1/z,x/z,y/z],U=2*p[1]+5*p[2],S=R*(Math.log(z)+U*1e3/(R*T)),A=U-T*S/1e3;return{z,p,U,S,A}};let u=f(298.15),v=f(350);return[u.z,v.z,...u.p,...v.p,u.U,v.U,u.S,v.S,u.A,v.A,v.p[2]-u.p[2],1/Math.exp(-5e3/(R*298.15))];}
+});
+
 const starts={inorganic:["I",176],analytical:["A",176],organic:["O",173],physical:["P",173]};
 let count=0;const counts={},ids=new Set(),families=new Set(),titles=new Set();
 for(const [sub,[L,start]] of Object.entries(starts)){

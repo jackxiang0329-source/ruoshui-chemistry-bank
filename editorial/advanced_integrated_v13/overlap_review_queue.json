@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 13,
   "status": "expert_review_pending",
-  "current_draft_count": 54,
+  "current_draft_count": 64,
   "expert_approved": 0,
-  "preliminary_flags": 54,
+  "preliminary_flags": 64,
   "pairs": [
     {
       "new_id": "UC-ADV13-I176",
@@ -328,6 +328,66 @@
       "new_id": "UC-ADV13-A194",
       "prior_id": null,
       "reason": "待跨辑与专家分析化学科学性原创性逐式审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O181",
+      "prior_id": null,
+      "reason": "分步对比所有历史核心有机反应动力学与原创建模题，人工科学性与文本审核待完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O182",
+      "prior_id": null,
+      "reason": "分步对比所有历史核心有机反应动力学与原创建模题，人工科学性与文本审核待完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O183",
+      "prior_id": null,
+      "reason": "分步对比所有历史核心有机反应动力学与原创建模题，人工科学性与文本审核待完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O184",
+      "prior_id": null,
+      "reason": "分步对比所有历史核心有机反应动力学与原创建模题，人工科学性与文本审核待完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O185",
+      "prior_id": null,
+      "reason": "分步对比所有历史核心有机反应动力学与原创建模题，人工科学性与文本审核待完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O186",
+      "prior_id": null,
+      "reason": "分步对比所有历史核心有机反应动力学与原创建模题，人工科学性与文本审核待完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O187",
+      "prior_id": null,
+      "reason": "分步对比所有历史核心有机反应动力学与原创建模题，人工科学性与文本审核待完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O188",
+      "prior_id": null,
+      "reason": "分步对比所有历史核心有机反应动力学与原创建模题，人工科学性与文本审核待完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O189",
+      "prior_id": null,
+      "reason": "分步对比所有历史核心有机反应动力学与原创建模题，人工科学性与文本审核待完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O190",
+      "prior_id": null,
+      "reason": "分步对比所有历史核心有机反应动力学与原创建模题，人工科学性与文本审核待完成。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -655,6 +715,66 @@
       "model_family": "plasma-two-line-Boltzmann-optical-emission-temperature-inversion",
       "judgement": "pending_human_comparison",
       "screening": "已编制完整题干、方法推导及独立数值见证；尚未获人工批准。"
+    },
+    {
+      "new_id": "UC-ADV13-O181",
+      "model_family": "Curtin-Hammett-conformational-equilibrium-parallel-cyclization-rate-weighting",
+      "judgement": "pending_human_comparison",
+      "screening": "数值答案独立证据函数在自动QA核验，但学术内容不自动批准。"
+    },
+    {
+      "new_id": "UC-ADV13-O182",
+      "model_family": "SNAr-phenoxide-active-nucleophile-pH-controlled-rate",
+      "judgement": "pending_human_comparison",
+      "screening": "数值答案独立证据函数在自动QA核验，但学术内容不自动批准。"
+    },
+    {
+      "new_id": "UC-ADV13-O183",
+      "model_family": "Heck-catalyst-CO-competitive-inhibition-steady-state-TOF",
+      "judgement": "pending_human_comparison",
+      "screening": "数值答案独立证据函数在自动QA核验，但学术内容不自动批准。"
+    },
+    {
+      "new_id": "UC-ADV13-O184",
+      "model_family": "Mayo-chain-transfer-dp-monomer-polymerization-molecular-mass",
+      "judgement": "pending_human_comparison",
+      "screening": "数值答案独立证据函数在自动QA核验，但学术内容不自动批准。"
+    },
+    {
+      "new_id": "UC-ADV13-O185",
+      "model_family": "E2-antiperiplanar-conformational-population-Boltzmann-effective-rate",
+      "judgement": "pending_human_comparison",
+      "screening": "数值答案独立证据函数在自动QA核验，但学术内容不自动批准。"
+    },
+    {
+      "new_id": "UC-ADV13-O186",
+      "model_family": "asymmetric-aldol-enantioselectivity-activation-differential-enthalpy-entropy",
+      "judgement": "pending_human_comparison",
+      "screening": "数值答案独立证据函数在自动QA核验，但学术内容不自动批准。"
+    },
+    {
+      "new_id": "UC-ADV13-O187",
+      "model_family": "photoredox-quantum-yield-photon-flux-absorbance-product",
+      "judgement": "pending_human_comparison",
+      "screening": "数值答案独立证据函数在自动QA核验，但学术内容不自动批准。"
+    },
+    {
+      "new_id": "UC-ADV13-O188",
+      "model_family": "acyl-chloride-aminolysis-hydrolysis-competing-pseudo-first-order",
+      "judgement": "pending_human_comparison",
+      "screening": "数值答案独立证据函数在自动QA核验，但学术内容不自动批准。"
+    },
+    {
+      "new_id": "UC-ADV13-O189",
+      "model_family": "dynamic-kinetic-resolution-racemization-twoenantiomer-matrix-exponential",
+      "judgement": "pending_human_comparison",
+      "screening": "数值答案独立证据函数在自动QA核验，但学术内容不自动批准。"
+    },
+    {
+      "new_id": "UC-ADV13-O190",
+      "model_family": "peptide-four-cysteine-three-disulfide-pairing-topology-partition",
+      "judgement": "pending_human_comparison",
+      "screening": "数值答案独立证据函数在自动QA核验，但学术内容不自动批准。"
     }
   ]
 }
