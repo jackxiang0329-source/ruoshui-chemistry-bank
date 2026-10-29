@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 78,
+  "current_draft_count": 82,
   "expert_approved": 0,
-  "preliminary_flags": 78,
+  "preliminary_flags": 82,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -472,6 +472,30 @@
       "new_id": "UC-ADV12-P166",
       "prior_id": null,
       "reason": "本题仍需与历史题逐方程比对，词汇相似度仅用于人工排重预筛，不作为原创性证明。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I171",
+      "prior_id": null,
+      "reason": "预筛尚未证明与前十一辑无同构模型；需逐式核对历史候选、真实化学假设、数值稳定性和人工版权审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A171",
+      "prior_id": null,
+      "reason": "预筛尚未证明与前十一辑无同构模型；需逐式核对历史候选、真实化学假设、数值稳定性和人工版权审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O167",
+      "prior_id": null,
+      "reason": "预筛尚未证明与前十一辑无同构模型；需逐式核对历史候选、真实化学假设、数值稳定性和人工版权审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P167",
+      "prior_id": null,
+      "reason": "预筛尚未证明与前十一辑无同构模型；需逐式核对历史候选、真实化学假设、数值稳定性和人工版权审核。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -943,6 +967,30 @@
       "model_family": "BET-multilayer-nitrogen-adsorption-two-pressure-inverse-monolayer-capacity-surface-area",
       "judgement": "pending_human_comparison",
       "screening": "已登记独立数值复核；专家化学可行性、历史同构与版权审查仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV12-I171",
+      "model_family": "FeII-spin-crossover-spin-multiplicity-vibrational-entropy-magnetic-Curie-pressure-volume",
+      "judgement": "pending_human_comparison",
+      "screening": "已编写独立计算见证函数、完整中文解析和量纲守恒检查，仍不可视为专家已批准。"
+    },
+    {
+      "new_id": "UC-ADV12-A171",
+      "model_family": "nonlinear-fluorescence-standard-additions-Langmuir-saturating-threepoint-inverse-Jacobian-uncertainty",
+      "judgement": "pending_human_comparison",
+      "screening": "已编写独立计算见证函数、完整中文解析和量纲守恒检查，仍不可视为专家已批准。"
+    },
+    {
+      "new_id": "UC-ADV12-O167",
+      "model_family": "DielsAlder-endo-exo-competing-Eyring-activation-enthalpy-entropy-selectivity-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "已编写独立计算见证函数、完整中文解析和量纲守恒检查，仍不可视为专家已批准。"
+    },
+    {
+      "new_id": "UC-ADV12-P167",
+      "model_family": "adiabatic-constant-volume-N2O4-dissociation-equilibrium-vanthoff-internal-energy-heatcapacities",
+      "judgement": "pending_human_comparison",
+      "screening": "已编写独立计算见证函数、完整中文解析和量纲守恒检查，仍不可视为专家已批准。"
     }
   ]
 }
