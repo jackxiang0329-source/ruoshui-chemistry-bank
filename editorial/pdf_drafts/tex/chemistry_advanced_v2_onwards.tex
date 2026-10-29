@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (551题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (553题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -10458,6 +10458,32 @@ Dq = 1000 cm\textasciicircum{}-1；Ds = 400 cm\textasciicircum{}-1；Dt = 100 cm
 模型依赖Ti(III) d¹、理想D4h与已识别的跃迁起终态；共价性、自旋轨道、静态/动态畸变或其它谱带重叠可破坏此反演。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I141 · 三核反铁磁Ising三角形自旋挫折与残余熵、零场磁化率}
+\noindent\textbf{题目}\par
+某假想三核过渡金属配合物的三个等价有效Ising磁矩σ₁,σ₂,σ₃=±1构成闭合三角形，哈密顿量H=J(σ₁σ₂+σ₂σ₃+σ₃σ₁)−μB(σ₁+σ₂+σ₃)，反铁磁耦合J>0且J/kB=120.0 K，每个局域磁矩幅度μ=3.000 μB，μB=9.2740100783×10⁻²⁴ A·m²，T=100.0 K，kB=1.380649×10⁻²³ J/K、N\_A=6.02214076×10²³ mol⁻¹、R=8.314462618 J/(mol·K)。求八态能量和简并、配分函数、两类能级占据概率、摩尔内能与磁性热容、摩尔熵及低/高温熵极限、零磁场摩尔磁化率dM/dB及其与三个自由Ising磁矩Curie磁化率的比值，验证能量、概率、温度边界和小场线性响应唯一性，并说明现实三核分子磁体的模型局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 三个同轴Ising有效自旋σᵢ=±1位于闭合三角形，哈密顿量H=J(σ₁σ₂+σ₂σ₃+σ₃σ₁)−μBΣσᵢ，反铁磁J>0。
+\item 在B=0时八个微观状态分为六个挫折态（两自旋同向、一自旋反向），键乘积和−1，能量−J，Σσᵢ=±1。
+\item 其余两个完全平行状态的键乘积和3，能量3J，Σσᵢ=±3；故能隙ΔE=4J，能量简并分别为6和2。
+\item 配分函数Z=6exp(βJ)+2exp(−3βJ)=exp(βJ)(6+2r)，r=exp(−4J/(kBT))。
+\item 当J/kB=120 K、T=100 K时r=0.00822974704902；高能态概率p=r/(3+r)=0.00273574418879，挫折态概率1−p=0.997264255811。
+\item 摩尔内能U=R(J/kB)[−1+4p]=-986.817317621 J/mol，直接由两组能级按占据概率求和。
+\item 由能量方差C\_m=R(4J/(kBT))²p(1−p)=0.522639703032 J/(mol·K)，非负。
+\item 利用S=R(lnZ+βU)，得S\_m=R[ln(6+2r)+4(J/kBT)p]=15.0294765063 J/(mol·K)。
+\item 低温极限r→0，仍保留六重挫折基态残余熵Rln6；高温r→1，熵趋Rln8，符合八个等概率状态。
+\item 磁化率不是零场平均磁矩（后者为0），而是B→0时的涨落响应χ\_m=N\_A μ²/(kBT)〈(Σσᵢ)²〉。
+\item 按状态简并〈(Σσᵢ)²〉=(6+18r)/(6+2r)=1.02188595351；χ\_m=0.345022712921 A·m²/(T·mol)。
+\item 三个无耦合两态自旋Curie响应为3N\_A μ²/(kBT)，本体系相对比值=0.340628651170；低温→1/3，高温→1，检查交换反铁磁效应。
+\item 仅适用于独立三核理想Ising簇、恒定J、小磁场及有效局域矩；Heisenberg量子效应、簇间耦合与场诱导跃迁需另行建模。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+excited\_boltzmann\_weight = 0.00822974705 ratio；fully\_parallel\_probability = 0.00273574419 fraction；frustrated\_probability = 0.997264256 fraction；internal\_energy\_J\_mol = -986.817318 J/mol；magnetic\_heat\_capacity\_J\_molK = 0.522639703 J/(mol K)；magnetic\_entropy\_J\_molK = 15.0294765 J/(mol K)；zero\_field\_molar\_susceptibility = 0.345022713 A m2/(T mol)；susceptibility\_over\_free\_spins = 0.340628651 ratio；spin\_projection\_variance = 1.02188595 dimensionless；partition\_reduced\_factor = 6.01645949 dimensionless；residual\_entropy = 14.8975171 J/(mol K)；high\_temperature\_entropy = 17.289439 J/(mol K)\par
+\noindent\textbf{模型前提：}
+理想三角形Ising自旋、小磁场线性响应、固定J和有效μ、无簇间耦合或量子Heisenberg效应。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第11辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -10776,6 +10802,31 @@ i400\_uA = 34.1953138 uA；i1600\_uA = 42.6997674 uA；i900\_uA = 39.4309143 uA�
 beta\_425 = 1.21297853 K/s；beta\_440 = 2.6805277 K/s；activation\_kJ\_mol = 75 kJ/mol；arrhenius\_prefactor\_s = 100000000 s\textasciicircum{}-1；k\_425 = 0.0605762426 s\textasciicircum{}-1；k\_440 = 0.124894129 s\textasciicircum{}-1；beta\_455 = 5.63453826 K/s；beta\_455\_K\_min = 338.072296 K/min；total\_heat\_J = 1.2 J；reaction\_enthalpy\_kJ\_mol = -90 kJ/mol；beta\_ratio = 2.20987234 ratio；Kissinger\_slope\_K = -9020.42663 K\par
 \noindent\textbf{模型前提：}
 峰条件反演只适用于单步一级过程且温度滞后和仪器传热可忽略；多峰重叠、热梯度、扩散控制会改变表观Ea及A。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A140 · 三重态荧光相关谱的粒子数、扩散与浓度联合反演}
+\noindent\textbf{题目}\par
+单组分溶液的荧光相关光谱(FCS)使用三维高斯共聚焦模型，观测零延迟归一化振幅G(0)=0.058823529411765、扩散拟合时间τ\_D=0.4500 ms。横向光斑尺度w₀=0.3000 μm，轴向z₀=1.500 μm，三重态暗态比例f\_T=0.1500、恢复时间τ\_T=3.000 μs。理论自相关G(τ)=N⁻¹(1+τ/τ\_D)⁻¹[1+τ/(s²τ\_D)]⁻¹/²[1+f\_T/(1−f\_T)exp(−τ/τ\_T)]，s=z₀/w₀，扩散τ\_D=w₀²/(4D)。给定T=298.15 K、黏度η=0.8900 mPa·s、kB=1.380649×10⁻²³ J/K、NA=6.02214076×10²³ mol⁻¹。计算结构参数s、平均荧光分子数、扩散系数D、水动力半径、有效高斯探测体积V\_eff=π\textasciicircum{}(3/2)w₀²z₀及fL单位换算、溶液浓度(nmol/L)、数密度、τ\_T与τ\_D处的理论相关振幅，核对零延迟三重态校正、物理边界及唯一性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题设三维高斯共聚焦探测体积的横向光斑尺度w₀、轴向z₀，定义无量纲结构参数s=z₀/w₀。
+\item 单分散自由扩散的规范化FCS自相关G\_d(τ)=N⁻¹(1+τ/τ\_D)⁻¹[1+τ/(s²τ\_D)]⁻¹/²，其中τ\_D=w₀²/(4D)。
+\item 若单个快速三重态暗态占比f\_T、平均恢复时间τ\_T，在此模型下整体自相关乘1+[f\_T/(1−f\_T)]exp(−τ/τ\_T)。
+\item 由光学尺度w₀=0.3 μm和z₀=1.5 μm得s=5；τ→0时G(0)=1/[N(1−f\_T)]，与无三重态的1/N不同。
+\item 测量G(0)=0.0588235294118、f\_T=0.15，因此N=1/[G(0)(1−f\_T)]=20个分子；若漏掉三重态校正会系统性低估数目。
+\item 观测扩散时间τ\_D=0.45 ms，独立反算D=w₀²/(4τ\_D)=5.00000000000e-11 m²/s，并检查D>0。
+\item Stokes–Einstein关系D=kBT/(6πηr\_H)，代入T=298.15 K、η=0.00089 Pa·s，得r\_H=4.90746219089 nm。
+\item 有效体积V\_eff=π\textasciicircum{}(3/2)w₀²z₀=7.51724279572e-19 m³=0.751724279572 fL；1 fL=10⁻¹⁸ m³，不能误乘10¹⁵。
+\item 用N=cN\_A V\_eff求c=44.1794714445 nmol/L，计算中V\_eff由m³乘1000得到L；数密度N/V\_eff=2.66054995741e+19 m⁻³。
+\item 把τ=τ\_T代入完整自相关，G(τ\_T)=0.0528863215458；既包含快速暗态恢复也包含小量扩散衰减。
+\item 把τ=τ\_D代入，G(τ\_D)=0.0245145168923；三重态指数项此时近似0，扩散因子为1/[2√(1+1/s²)]。
+\item 在单分散、高斯探测、各向同性布朗扩散、低浓度、无光漂白及三重态为单指数条件下反演唯一；多扩散组分、异常扩散、光漂白与背景计数需扩展模型。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+axial\_shape\_parameter = 5 dimensionless；observed\_zero\_lag\_amplitude = 0.0588235294 dimensionless；mean\_fluorophore\_number = 20 molecules；diffusion\_coefficient\_m2\_s = 5e-11 m2/s；hydrodynamic\_radius\_nm = 4.90746219 nm；effective\_detection\_volume\_fL = 0.75172428 fL；solute\_concentration\_nM = 44.1794714 nmol/L；number\_density\_m\_minus3 = 2.66054996e+19 m\textasciicircum{}-3；G\_at\_triplet\_time = 0.0528863215 dimensionless；G\_at\_diffusion\_time = 0.0245145169 dimensionless；triplet\_corrected\_amplitude = 0.05 dimensionless；triplet\_population\_ratio = 0.176470588 dimensionless；diffusion\_reconstruction\_ratio = 1 ratio\par
+\noindent\textbf{模型前提：}
+单组分、三维高斯共聚焦、各向同性扩散，已知单一三重态动力学，无漂白和背景计数。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
