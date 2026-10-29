@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第11辑 (93题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第11辑 (97题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -607,6 +607,31 @@ dimensionless\_K = 1.54315034e-05 dimensionless；x\_at\_0p01bar = 0.04 fraction
 实际CeO₂在较大缺氧时可能出现缺陷缔合、电子小极化子、非理想活度与相边界；本题仅在题设理想混合及恒温条件内成立。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I150 · CoFe2O4尖晶石反位参数的中子散射—亚晶格磁矩双重反演}
+\noindent\textbf{题目}\par
+一种理想化CoFe₂O₄尖晶石每式量有一个四面体A位和两个八面体B位，阳离子按(Co₁₋ₓFeₓ)\_A[CoₓFe₂₋ₓ]\_B O₄分布，0≤x≤1。假定Co²⁺、Fe³⁺的理想共线磁矩分别3.000、5.000 μB，A/B亚晶格反平行，净饱和磁矩测为4.400 μB/式量。Co和Fe中子相干散射长度分别2.490与9.450 fm；立方晶格常数a=8.400 Å，每晶胞Z=8式量，1 μB=9.2740100783×10⁻²⁴ A·m²，N\_A=6.02214076×10²³ mol⁻¹，Co/Fe/O摩尔原子质量分别58.933/55.845/15.999 g/mol。由磁矩反演x，预测A/B平均散射长度、两亚晶格和晶胞净磁矩、晶胞体积、理想密度与饱和磁化/比磁化，并对位点、化学计量、电荷和模型边界逐一检查。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item CoFe₂O₄尖晶石有每式量一个四面体A位点与两个八面体B位点；设反位参数x描述(Co₁₋ₓFeₓ)\_A[CoₓFe₂₋ₓ]\_B O₄。
+\item 题设Co为Co²⁺(自旋有效矩3μB)、Fe为Fe³⁺(有效矩5μB)，氧为O²⁻，两种离子A/B位矩均视为相同且A、B亚晶格理想反平行。
+\item 质量与晶体位点约束：A位Co+Fe=1、B位Co+Fe=2，整体Co=1、Fe=2，形式电荷2+2×3−4×2=0。
+\item 每式量A亚晶格矩m\_A=3(1−x)+5x=3+2x，B亚晶格矩m\_B=3x+5(2−x)=10−2x，净矩m\_B−m\_A=7−4x。
+\item 已测理想自旋净磁矩4.400 μB/式量，故由7−4x=4.4唯一反演x=0.6500，在物理区间0≤x≤1内。
+\item Co²⁺与Fe³⁺中子相干散射长度分别b\_Co=2.49 fm、b\_Fe=9.45 fm，A位平均散射长度b\_A=(1−x)b\_Co+xb\_Fe=7.01400000000 fm。
+\item B位每位点平均散射长度b\_B=[x b\_Co+(2−x)b\_Fe]/2=7.18800000000 fm，两位点总和与化学计量一致。
+\item 回算A、B亚晶格矩分别4.30000000000、8.70000000000 μB，差值4.40000000000 μB，与磁化测量相符。
+\item 每立方晶胞含8个CoFe₂O₄式量，故晶胞净矩=35.2000000000 μB，磁化计算必须乘8。
+\item 晶格常数a=8.400 Å，体积=5.92704000000e-28 m³，CoFe₂O₄式量=234.619000000 g/mol。
+\item 由ρ=8M/(N\_A a³)得理想密度5258.53060416 kg/m³；以1μB=9.2740100783×10⁻²⁴ A·m²求饱和磁化550772.653392 A/m、比磁化104.738889027 A·m²/kg。
+\item 磁性与中子散射为两种独立物理观测；真实CoFe₂O₄有轨道磁矩、非共线自旋、热振动和缺陷，净矩与散射长度皆不应未经实验检验便视作真实材料数据。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+spinel\_inversion\_parameter = 0.65 ratio；A\_site\_neutron\_scattering\_fm = 7.014 fm；B\_site\_average\_scattering\_fm = 7.188 fm；A\_sublattice\_moment\_muB = 4.3 muB/formula；B\_sublattice\_moment\_muB = 8.7 muB/formula；net\_moment\_per\_formula\_muB = 4.4 muB/formula；net\_moment\_per\_unit\_cell\_muB = 35.2 muB/cell；unit\_cell\_volume\_m3 = 5.92704e-28 m3；formula\_mass\_g\_mol = 234.619 g/mol；density\_kg\_m3 = 5258.5306 kg/m3；ideal\_saturation\_magnetization\_A\_m = 550772.653 A/m；specific\_magnetization\_A\_m2\_kg = 104.738889 A m2/kg；Co\_on\_A\_site\_fraction = 0.35 fraction；Co\_on\_B\_site\_fraction = 0.325 fraction；Fe\_on\_B\_site\_fraction = 0.675 fraction；formal\_charge\_balance = 0 charge\par
+\noindent\textbf{模型前提：}
+磁性与中子散射为两种独立物理观测；真实CoFe₂O₄有轨道磁矩、非共线自旋、热振动和缺陷，净矩与散射长度皆不应未经实验检验便视作真实材料数据。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第11辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -1150,6 +1175,31 @@ frequency\_0p1bar\_Hz = 99833.7488 Hz；frequency\_1bar\_Hz = 99339.9268 Hz；ma
 abs\_initial\_450 = 0.35 abs；abs\_initial\_550 = 0.3 abs；abs\_spiked\_450 = 0.475 abs；abs\_spiked\_550 = 0.35 abs；spike\_delta\_450 = 0.125 abs；spike\_delta\_550 = 0.05 abs；two\_wavelength\_determinant = 450000000 L2/mol2/cm2；analyte\_A\_mol\_L = 1.2e-05 mol/L；interferent\_B\_mol\_L = 8e-06 mol/L；concentration\_A\_over\_B = 1.5 ratio；mass\_A\_in\_200mL\_g = 0.00072 g；mass\_B\_in\_200mL\_g = 0.00032 g；reconstructed\_abs\_450 = 0.35 abs；reconstructed\_abs\_550 = 0.3 abs；inverse\_design\_determinant = 2.22222222e-09 inverse-determinant\par
 \noindent\textbf{模型前提：}
 若摩尔消光系数矩阵近奇异、出现化学络合、散射、内滤效应、加标体积改变或基线漂移，本反演可能严重偏差；不能把数值线性唯一性等同于实验无误差。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A149 · Van Deemter双流速反演与Darcy压降约束的色谱分离度最优化}
+\noindent\textbf{题目}\par
+某液相色谱填充柱长度L=30.00 cm，有效板高服从H(u)=A+B/u+C u，流速u以cm/s表示，板高H以cm计，已独立标定A=0.002000 cm。观测u₁=1.000 cm/s与u₂=4.000 cm/s时均有H=0.007000 cm。流动黏度η=0.001000 Pa·s，填充层渗透率k\_perm=1.000×10⁻¹² m²，泵压上限100.0 bar，Darcy压差ΔP=ηLu/k\_perm。两待分离组分的选择性α=1.200、第二峰保留因子k′=3.000，近似分离度R\_s=(√N/4)[(α−1)/α][k′/(1+k′)]。从双观测唯一反算B与C及单位，求唯一最优流速、最小板高、板数、无保留时间、分离度和Darcy压差，判断压差限制是否活跃，并说明为何未知A时无法仅用两个数据点识别三参数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 在分析色谱填充柱中采用理想Van Deemter板高关系H(u)=A+B/u+Cu，A为多路径项、B/u为纵向扩散项、Cu为传质阻力项。
+\item 给定已独立校准的涡流参数A=0.002000 cm，其余B、C未知，测得u=1.000和4.000 cm/s时板高相同，均0.007000 cm。
+\item 由实测H(u)扣A并乘u可得u[H(u)−A]=B+C u²，因此两点在(u²,u(H−A))平面上构成直线。
+\item 代入u=1和4两次观测，截距B=0.00400000000000 cm²/s，斜率C=0.00100000000000 s，因u²不同反演唯一。
+\item 求H'(u)=−B/u²+C=0，正最优流速u\_opt=√(B/C)；二阶导数H''(u)=2B/u³>0保证是唯一最小板高。
+\item u\_opt=2.00000000000 cm/s，最小板高H\_min=0.00600000000000 cm。
+\item 有效柱长L=30 cm时最大理论板数N=L/H\_min=5000.00000000；不保留示踪物平均通过时间t₀=L/u\_opt=15.0000000000 s。
+\item 对固定选择性因子α=1.200、第二峰保留因子k′=3.000，采用理想色谱分离度近似R\_s=(√N/4)[(α−1)/α][k′/(1+k′)]。
+\item 代入得R\_s=2.20970869121，此处大写R\_s为色谱分离度而非电化学溶液电阻。
+\item 填充层同时服从题设Darcy层流公式ΔP=ηL u/k\_perm；将η=0.001000 Pa·s、L和u由cm换成m，渗透率k\_perm=1.000×10⁻¹² m²。
+\item 求ΔP=60.0000000000 bar，低于100.0 bar泵压上限，故无须在该模型中降低最佳流速。
+\item 若A也未知，仅两个板高测量无法唯一分辨A、B、C；压缩性载气、梯度洗脱、过载、峰拖尾和流速依赖黏度均会改变Van Deemter与Darcy联立优化。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+plate\_height\_at\_1cm\_s\_cm = 0.007 cm；plate\_height\_at\_4cm\_s\_cm = 0.007 cm；diffusion\_B\_cm2\_s = 0.004 cm2/s；mass\_transfer\_C\_s = 0.001 s；optimum\_velocity\_cm\_s = 2 cm/s；minimum\_plate\_height\_cm = 0.006 cm；maximum\_plate\_number = 5000 plates；unretained\_time\_at\_optimum\_s = 15 s；darcy\_pressure\_bar = 60 bar；resolution\_at\_optimum = 2.20970869 resolution；linearized\_intercept\_B = 0.004 cm2/s；linearized\_slope\_C = 0.001 s；plate\_number\_at\_1cm\_s = 4285.71429 plates；stationary\_optimum\_velocity = 2 cm/s；four\_times\_optimum\_velocity = 8 cm/s\par
+\noindent\textbf{模型前提：}
+若A也未知，仅两个板高测量无法唯一分辨A、B、C；压缩性载气、梯度洗脱、过载、峰拖尾和流速依赖黏度均会改变Van Deemter与Darcy联立优化。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -1704,6 +1754,31 @@ R\_substrate\_survival\_10min = 0.449328964 fraction；S\_substrate\_survival\_1
 产物酯的手性保留以反应只发生在羟基氧为前提；若酰化伴随SN2手性碳取代、消旋、反应逆转或酶失活，动力学拆分与产物构型公式均不再成立。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O146 · 酰胺旋转异构体动态NMR双温Eyring反演与并峰交换寿命}
+\noindent\textbf{题目}\par
+某假想N-酰胺具有两个等布居旋转异构体A/B，在慢交换NMR中两峰频率间隔Δν=100.0 Hz，并于T\_c=330.0 K并峰。假定双位点对称交换且自然线宽近似可忽略，采用近似并峰关系k\_c=πΔν/√2（k\_c为单方向位点交换率）。独立动力学实验在T₂=350.0 K测得单向交换速率k₂=822.00780581656 s⁻¹。采用Eyring表达式k(T)=kBT/h·exp(ΔS‡/R−ΔH‡/(RT))，kB=1.380649×10⁻²³ J/K、h=6.62607015×10⁻³⁴ J·s、R=8.314462618 J/(mol·K)。由并峰条件和两温度速率唯一反演ΔH‡、ΔS‡、330 K的ΔG‡，预测298.15 K速率、平均位点等待时间和半衰期，核查单位、回代、激活自由能正性及等布居并峰模型的适用边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 考虑一个假想N-酰胺的两个等布居旋转异构体A和B，分别给出两个核磁共振化学位移，慢交换频率差Δν=100.0 Hz。
+\item 题设按对称两位点动态NMR近似，在等布居、相同本征线宽、等速A⇌B条件下的并峰温度T\_c=330.0 K满足k\_c=πΔν/√2。
+\item 由并峰谱求单向位点交换速率k\_c=222.144146908 s⁻¹；这是单向速率而不是A+B总双向离开率之和。
+\item 采用Eyring式k(T)=kBT/h·exp(ΔS‡/R−ΔH‡/(RT))，以T=330 K和350 K的两个速率表征同一旋转过渡态。
+\item 在350.0 K的第二动力学实验测得k₂=822.007805817 s⁻¹，因升温快交换率应增大。
+\item 两点整理为ln[k(T)/T]=ln(kB/h)+ΔS‡/R−ΔH‡/(RT)，横坐标为1/T的斜率是−ΔH‡/R。
+\item 两温度不同使线性方程满秩，解得ΔH‡=60.0000000000 kJ/mol。
+\item 由截距求ΔS‡=-19.0238485418 J/(mol·K)，不能仅用并峰温度独立求出焓与熵两个参数。
+\item 在并峰温度下ΔG‡=ΔH‡−T\_cΔS‡=66.2778700188 kJ/mol，正值对应显著旋转势垒。
+\item 外推298.15 K得到k=19.4103054234 s⁻¹，单方向等待时间均值1/k=0.0515190244660 s，半衰期ln2/k=0.0357102665538 s。
+\item 将求得ΔH‡、ΔS‡再回代330 K与350 K的两个速率，确认两个等布居构象的化学交换完全由同一参数对解释。
+\item 并峰公式适用于两位点等布居及指定线宽近似，真实酰胺可能存在不等布居、化学位移温度漂移、额外耦合、多个构象以及非Arrhenius热容贡献。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+coalescence\_rate\_s = 222.144147 s\textasciicircum{}-1；exchange\_rate\_350K\_s = 822.007806 s\textasciicircum{}-1；rate\_ratio = 3.7003352 ratio；Eyring\_deltaH\_kJ\_mol = 60 kJ/mol；Eyring\_deltaS\_J\_molK = -19.0238485 J/(mol K)；G\_activation\_330\_kJ\_mol = 66.27787 kJ/mol；predicted\_298K\_rate\_s = 19.4103054 s\textasciicircum{}-1；298K\_exchange\_half\_life\_s = 0.0357102666 s；298K\_exchange\_mean\_dwell\_s = 0.0515190245 s；ln\_k\_over\_T\_330 = -0.395766173 dimensionless；ln\_k\_over\_T\_350 = 0.853816737 dimensionless；Eyring\_prefactor\_330\_s = 6.87608431e+12 s\textasciicircum{}-1；G\_activation\_350\_J\_mol = 66658.347 J/mol；half\_two\_site\_spacing\_Hz = 50 Hz\par
+\noindent\textbf{模型前提：}
+并峰公式适用于两位点等布居及指定线宽近似，真实酰胺可能存在不等布居、化学位移温度漂移、额外耦合、多个构象以及非Arrhenius热容贡献。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第11辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -2256,6 +2331,32 @@ inferred\_tank\_number = 3 tanks；RTD\_variance\_s2 = 4800 s2；RTD\_sd\_s = 69
 Z1\_real\_ohm = 149.775174 ohm；Z1\_imag\_ohm = -40.3590832 ohm；Z1\_modulus\_ohm = 155.117563 ohm；Z1\_phase\_deg = -15.0809708 degree；Z100\_real\_ohm = 108.175447 ohm；Z100\_imag\_ohm = -24.2266796 ohm；Z100\_modulus\_ohm = 110.855128 ohm；Z100\_phase\_deg = -12.6235065 degree；recovered\_Zfar1\_real = 140 ohm；recovered\_Zfar1\_imag = -40 ohm；recovered\_Zfar100\_real = 104 ohm；recovered\_Zfar100\_imag = -4 ohm；sigma\_from\_1rad\_s = 40 ohm sqrt(rad/s)；Rct\_from\_1rad\_s = 100 ohm；sigma\_from\_100rad\_s = 40 ohm sqrt(rad/s)；RC\_timescale\_s = 0.002 s；RC\_frequency\_Hz = 79.5774715 Hz\par
 \noindent\textbf{模型前提：}
 模型适用于小扰动、线性稳定电极、半无限扩散且C\_dl已独立标定；有限层扩散、常相位元件、法拉第副反应与电极老化都会导致复平面模型偏差。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P146 · 高分子凝胶Donnan电化学势—固定电荷平衡与渗透压差联合求解}
+\noindent\textbf{题目}\par
+一种含不可移动阴离子基团的理想化凝胶与温度T=298.15 K的外部大体积1:1电解质库M⁺A⁻平衡，外部两种单价离子的浓度均c\_s=0.1000 mol/L。凝胶内部按实际液体体积计的固定负电荷浓度X=0.05000 mol/L，体积由外部支撑固定为0.1000 L，固定基团完全解离且离子活动度近似浓度。忽略H⁺、OH⁻以及渗流；电化学势平衡导出c\_+\textasciicircum{}in=c\_s exp(−Fψ/RT)，c\_-\textasciicircum{}in=c\_s exp(Fψ/RT)，ψ=φ\_in−φ\_out。给定R=8.314462618 J/(mol·K)、F=96485.33212 C/mol。联立Donnan乘积关系与凝胶电中性，唯一反演内阳离子和阴离子浓度、分配系数、电位差，计算相对于盐库的可动离子范特霍夫渗透压差、体积内各种电荷摩尔量并检查守恒、正根和凝胶体积/电离模型限制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 考虑一带不可移动负电荷的理想高分子凝胶浸泡在单价盐M⁺A⁻的巨大外部盐库中，外库阳离子与阴离子浓度均c\_s=0.1000 mol/L。
+\item 凝胶内部固定负电荷浓度X=0.05000 mol/L（按凝胶内实际液体体积定义），且凝胶整体宏观电中性要求c\_+\textasciicircum{}in−c\_-\textasciicircum{}in=X。
+\item 理想溶液电化学势连续，令ψ=φ\_in−φ\_out；单价离子分配分别c\_+\textasciicircum{}in=c\_s exp(−Fψ/RT)、c\_-\textasciicircum{}in=c\_s exp(+Fψ/RT)。
+\item 两分配式相乘得c\_+\textasciicircum{}in c\_-\textasciicircum{}in=c\_s²，表明盐库活动度标度下Donnan分配乘积约束。
+\item 联立电中性与乘积得c\_-²+Xc\_-−c\_s²=0，非负根唯一；另一根为负不符合物理浓度。
+\item 取平方根D=√(X²+4c\_s²)=0.206155281281 mol/L，解得c\_+=(X+D)/2=0.128077640640 mol/L。
+\item 同样c\_-=(D−X)/2=0.0780776406404 mol/L，内部阳离子富集、阴离子排斥。
+\item 验证c\_+−c\_-=0.0500000000000 mol/L等于固定负电荷浓度，且c\_+ c\_-=c\_s²=0.0100000000000 (mol/L)²。
+\item 由ψ=−(RT/F)ln(c\_+/c\_s)求Donnan电势ψ=-6.35805164322 mV，负号对应内部固定负电荷。
+\item 按理想范特霍夫渗透压，凝胶内外可动离子浓度和之差Δc=(c\_++c\_−−2c\_s)；固定电荷共价连在凝胶上，不另外当自由理想气体粒子计数。
+\item 渗透压差ΔΠ=RT×1000Δc=15.2586778001 kPa，因凝胶内离子总浓度略高，渗透压差为正。
+\item 若凝胶液体体积固定0.1000 L，则凝胶内部阳离子、阴离子及固定负电荷当量数分别0.0128077640640、0.00780776406404、0.00500000000000 mol，满足积分电中性。
+\item 本模型假设盐库活度近似浓度、固定电荷完全解离、凝胶体积被外力固定；若发生体积膨胀、盐特异吸附、多价离子或电荷调节，必须加入弹性能及非理想活度。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+quadratic\_discriminant\_M = 0.206155281 mol/L；internal\_cation\_concentration\_M = 0.128077641 mol/L；internal\_anion\_concentration\_M = 0.0780776406 mol/L；cation\_partition\_coefficient = 1.28077641 ratio；anion\_partition\_coefficient = 0.780776406 ratio；Donnan\_voltage\_mV = -6.35805164 mV；excess\_osmotic\_pressure\_kPa = 15.2586778 kPa；inside\_ion\_product\_M2 = 0.01 M2；charge\_difference\_M = 0.05 mol/L；inside\_osmotically\_active\_ion\_sum\_M = 0.206155281 mol/L；external\_osmolarity\_mOsm\_L = 200 mOsm/L；internal\_cations\_mol\_in\_0p1L = 0.0128077641 mol；internal\_anions\_mol\_in\_0p1L = 0.00780776406 mol；fixed\_sites\_mol\_in\_0p1L = 0.005 mol；osmotic\_pressure\_times\_gel\_volume\_J = 1.52586778 J\par
+\noindent\textbf{模型前提：}
+本模型假设盐库活度近似浓度、固定电荷完全解离、凝胶体积被外力固定；若发生体积膨胀、盐特异吸附、多价离子或电荷调节，必须加入弹性能及非理想活度。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
