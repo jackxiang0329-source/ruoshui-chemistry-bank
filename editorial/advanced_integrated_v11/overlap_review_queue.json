@@ -2,7 +2,7 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 12,
+  "current_draft_count": 18,
   "expert_approved": 0,
   "preliminary_flags": 4,
   "pairs": [
@@ -103,6 +103,42 @@
       "model_family": "JMAK-Avrami-isothermal-nucleation-growth-Arrhenius-half-time-inversion",
       "judgement": "pending_human_comparison",
       "screening": "新增完整答案向量witness；数学模型和化学科学性需跨辑人工逐式核验。"
+    },
+    {
+      "new_id": "UC-ADV11-I129",
+      "model_family": "carbonyl-13CO-harmonic-isotope-local-stretch-forceconstant-ZPE",
+      "judgement": "pending_human_comparison",
+      "screening": "新数学模型和独立数值witness已登记；跨辑核心方程原创性与化学合理性尚需人工专家逐项复核。"
+    },
+    {
+      "new_id": "UC-ADV11-I130",
+      "model_family": "Wade-closo-nido-borane-skeletal-bridge-hydrogen-electron-pair-count",
+      "judgement": "pending_human_comparison",
+      "screening": "新数学模型和独立数值witness已登记；跨辑核心方程原创性与化学合理性尚需人工专家逐项复核。"
+    },
+    {
+      "new_id": "UC-ADV11-I131",
+      "model_family": "layered-LiCoO2-lithium-deintercalation-cobalt-valence-coulometric-energy",
+      "judgement": "pending_human_comparison",
+      "screening": "新数学模型和独立数值witness已登记；跨辑核心方程原创性与化学合理性尚需人工专家逐项复核。"
+    },
+    {
+      "new_id": "UC-ADV11-A129",
+      "model_family": "Perrin-anisotropy-fluorescence-rotation-Stokes-Einstein-radius",
+      "judgement": "pending_human_comparison",
+      "screening": "新数学模型和独立数值witness已登记；跨辑核心方程原创性与化学合理性尚需人工专家逐项复核。"
+    },
+    {
+      "new_id": "UC-ADV11-A130",
+      "model_family": "headspace-SPME-3phase-partition-fiber-recovery-conservation",
+      "judgement": "pending_human_comparison",
+      "screening": "新数学模型和独立数值witness已登记；跨辑核心方程原创性与化学合理性尚需人工专家逐项复核。"
+    },
+    {
+      "new_id": "UC-ADV11-A131",
+      "model_family": "LIBS-Boltzmann-thermal-excitation-lines-Stark-broadening-density",
+      "judgement": "pending_human_comparison",
+      "screening": "新数学模型和独立数值witness已登记；跨辑核心方程原创性与化学合理性尚需人工专家逐项复核。"
     }
   ]
 }

@@ -18,6 +18,12 @@ const witness={
 };
 
 Object.assign(witness,{
+"UC-ADV11-I129":()=>{const a=12,b=13.003355,o=15.994915,u=1.6605390666e-27,m=z=>1/(1/z+1/o),ma=m(a),mb=m(b);const n=2050*Math.sqrt(ma/mb),k=ma*u*(2*Math.PI*299792458*205000)**2;assert.ok(n<2050&&k>0);return[ma,mb,n,2050-n,(2050-n)/2050,k,.5*6.02214076e23*6.62607015e-34*299792458*100*(2050-n)/1000];},
+"UC-ADV11-I130":()=>{const c=6*(3+1)+2,n=5*3+9,exC=2*6,exN=2*5,pc=(c-exC)/2,pn=(n-exN)/2;assert.equal(pc,6+1);assert.equal(pn,5+2);return[c,exC,c-exC,pc,n,exN,n-exN,pn,5+1];},
+"UC-ADV11-I131":()=>{const L=6.94,Co=58.933,O=15.999,f=.35,orig=L+Co+2*O,fin=f*L+Co+2*O,x=1-f,Q=x*96485.33212,cap=Q/(3.6*orig);assert.ok(Math.abs(f+3+x-4)<1e-12);return[orig,fin,3+x,Q,cap,3.85*cap,f,x*L,x];},
+"UC-ADV11-A129":()=>{let a=.4,b=.15,t=4e-9,theta=t*b/(a-b),D=1/(6*theta),kb=1.380649e-23,eta=.89e-3,T=298.15;const rad=Math.cbrt(kb*T/(8*Math.PI*eta*D));const r2=a*(2*theta)/(2*theta+t);assert.ok(r2>b&&r2<a);return[theta*1e9,D,rad*1e9,2*theta*1e9,r2,3*b/(2+b),theta/t,b];},
+"UC-ADV11-A130":()=>{const Vol=[.02,.01,1e-5],K=[1,100,1000],w=Vol.map((v,i)=>v*K[i]),d=w.reduce((a,b)=>a+b),g=1e-8/d,n=w.map(v=>g*v);assert.ok(Math.abs(n.reduce((a,b)=>a+b)-1e-8)<1e-20);let prev=1e-8/(Vol[0]+K[1]*Vol[1]);return[d,g,100*g,1000*g,n[0]*1e9,n[1]*1e9,n[2]*1e9,n[2]/1e-8,prev,1-g/prev,10];},
+"UC-ADV11-A131":()=>{const b=8.617333262145e-5,ratio=0.19055997528370827,temp=-1.5/(b*Math.log(ratio)),f=ratio**(2.2/1.5),ne=.018/.012*1e17;assert.ok(temp>0&&f<ratio);return[temp,ratio,f,ne,ne*1e6,1.5/(b*temp**2),.01*b*temp/1.5,.018];},
 "UC-ADV11-I128":()=>{const ge=2.0023,lam=-830,gp=2.3,gt=2.07,d1=-8*lam/(gp-ge),d2=-2*lam/(gt-ge),ga=(gp+2*gt)/3,gr=Math.sqrt((gp*gp+2*gt*gt)/3);assert.ok(d1>0&&d2>0&&Math.abs(ge-8*lam/d1-gp)<1e-12);return [d1,d2,1e7/d1,1e7/d2,ga,gr,gr*Math.sqrt(.75),gp-gt,Math.abs(lam)/d1];},
 "UC-ADV11-A128":()=>{const tau0=4,tau1=1.6,k0=1/tau0,k=1/tau1-k0,e=k/(k+k0),d=5*((1-e)/e)**(1/6),t2=1/(k0+2*k),e2=2*k/(k0+2*k);assert.ok(e2<1&&t2<tau1);return [k0,k,e,d,.8*tau1/tau0,t2,e2,.8*t2/tau0];},
 "UC-ADV11-O125":()=>{const K=4;const solve=(a,b,c,d)=>{let lo=0,hi=a;for(let j=0;j<110;j++){const x=(lo+hi)/2;if((c+x)*(d+x)/((a-x)*(b-x))>K)hi=x;else lo=x;}return (lo+hi)/2;};const x=solve(1,2,.2,.1),w=(.1+x)/2,y=solve(1-x,2-x,.2+x,w),tot=x+y;assert.ok(x>0&&tot<1&&y>0&&Math.abs((1-tot)+(.2+tot)-1.2)<1e-12);return [x,1-x,2-x,.2+x,.1+x,w,y,tot,.2+tot,tot,1-tot];},
