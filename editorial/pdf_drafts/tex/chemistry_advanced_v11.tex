@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第11辑 (97题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第11辑 (100题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -1202,6 +1202,32 @@ plate\_height\_at\_1cm\_s\_cm = 0.007 cm；plate\_height\_at\_4cm\_s\_cm = 0.007
 若A也未知，仅两个板高测量无法唯一分辨A、B、C；压缩性载气、梯度洗脱、过载、峰拖尾和流速依赖黏度均会改变Van Deemter与Darcy联立优化。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A150 · 静态光散射Zimm四点设计对Mw、Rg与第二维里系数的满秩反演}
+\noindent\textbf{题目}\par
+在静态光散射分析中，一假想高分子低角度、低浓度体系服从Zimm展开Y(q,c)=K\_opt c/R\_θ=(1/M\_w)[1+q²R\_g²/3]+2A₂c。规定q的单位为nm⁻¹，c为g/mL，Y为mol/g，M\_w为g/mol，R\_g为nm，A₂为mL·mol/g²。选择q₁=0.02000与q₂=0.05000 nm⁻¹，以及c₁=0.002000与c₂=0.006000 g/mL，测得四个约化散射量Y₁₁=0.0000116333333333333，Y₂₁=0.0000160083333333333，Y₁₂=0.0000132333333333333，Y₂₂=0.0000176083333333333 mol/g。通过两个角度差分、两个浓度差分及零浓度零角度外推，唯一反演M\_w、R\_g、A₂，并检查第四数据点的交互残差、所有量纲及低角度低浓度假设的适用性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对于假想分散良好的单分散高分子溶液，采用有限低角度、低浓度静态光散射的Zimm线性近似Y(q,c)=K\_opt c/R\_θ=1/M\_w[1+q²R\_g²/3]+2A₂c。
+\item 约定散射波矢q以nm⁻¹计，质量浓度c以g/mL计，约化散射量Y以mol/g计，M\_w以g/mol计，第二维里系数A₂以mL·mol/g²计。
+\item 两角度分别q₁=0.02000、q₂=0.05000 nm⁻¹，两个浓度分别c₁=0.002000、c₂=0.006000 g/mL；四组实验值构成矩形设计。
+\item 当q=q₁、c=c₁时Y₁₁=0.0000116333333333 mol/g；q₂、c₁时Y₂₁=0.0000160083333333 mol/g。
+\item 当q=q₁、c=c₂时Y₁₂=0.0000132333333333 mol/g；q₂、c₂时Y₂₂=0.0000176083333333 mol/g。
+\item 写为Y=b₀+b\_q q²+b\_c c，系数分别b₀=1/M\_w、b\_q=R\_g²/(3M\_w)、b\_c=2A₂。
+\item 不同q²下Y₂₁−Y₁₁给斜率b\_q=0.00208333333333 (mol/g)·nm²。
+\item 不同浓度下Y₁₂−Y₁₁给斜率b\_c=0.000400000000000 mL·mol/g²。
+\item 减去角度和浓度贡献后截距b₀=0.0000100000000000 mol/g，故M\_w=1/b₀=100000.000000 g/mol。
+\item 由R\_g=√(3M\_w b\_q)求R\_g=25.0000000000 nm；A₂=b\_c/2=0.000200000000000 mL·mol/g²。
+\item 对四角数据的超定约束检验Y₂₂−Y₂₁−Y₁₂+Y₁₁=0；它独立检测角度–浓度交叉非线性，而非随意增加一个拟合参数。
+\item 零浓度与零角度截距的物理解要求M\_w>0，且R\_g²>0；A₂的正号表示该题设条件下溶剂质量相对于θ溶剂更好。
+\item 如qR\_g不够小、聚集、多分散、浑浊、内滤效应或高浓度高阶维里项显著，一阶Zimm展开不能替代更完整的Debye或光散射模型。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Zimm\_Y\_q0p02\_c0p002 = 1.16333333e-05 mol/g；Zimm\_Y\_q0p05\_c0p002 = 1.60083333e-05 mol/g；Zimm\_Y\_q0p02\_c0p006 = 1.32333333e-05 mol/g；Zimm\_Y\_q0p05\_c0p006 = 1.76083333e-05 mol/g；Zimm\_q\_squared\_slope = 0.00208333333 mol nm2/g；Zimm\_concentration\_slope = 0.0004 mL mol/g2；Zimm\_zero\_q\_zero\_c\_intercept = 1e-05 mol/g；weight\_average\_Mw\_g\_mol = 100000 g/mol；radius\_of\_gyration\_nm = 25 nm；second\_virial\_A2\_mL\_mol\_g2 = 0.0002 mL mol/g2；largest\_smallest\_scattering\_ratio = 1.51361032 ratio；angular\_response\_difference = 4.375e-06 mol/g；concentration\_response\_difference = 1.6e-06 mol/g；concentration\_response\_reconstruction = 1.6e-06 mol/g；Zimm\_q\_coefficient\_times\_Mw\_nm2 = 208.333333 nm2\par
+\noindent\textbf{模型前提：}
+如qR\_g不够小、聚集、多分散、浑浊、内滤效应或高浓度高阶维里项显著，一阶Zimm展开不能替代更完整的Debye或光散射模型。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第11辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -1777,6 +1803,32 @@ R\_substrate\_survival\_10min = 0.449328964 fraction；S\_substrate\_survival\_1
 coalescence\_rate\_s = 222.144147 s\textasciicircum{}-1；exchange\_rate\_350K\_s = 822.007806 s\textasciicircum{}-1；rate\_ratio = 3.7003352 ratio；Eyring\_deltaH\_kJ\_mol = 60 kJ/mol；Eyring\_deltaS\_J\_molK = -19.0238485 J/(mol K)；G\_activation\_330\_kJ\_mol = 66.27787 kJ/mol；predicted\_298K\_rate\_s = 19.4103054 s\textasciicircum{}-1；298K\_exchange\_half\_life\_s = 0.0357102666 s；298K\_exchange\_mean\_dwell\_s = 0.0515190245 s；ln\_k\_over\_T\_330 = -0.395766173 dimensionless；ln\_k\_over\_T\_350 = 0.853816737 dimensionless；Eyring\_prefactor\_330\_s = 6.87608431e+12 s\textasciicircum{}-1；G\_activation\_350\_J\_mol = 66658.347 J/mol；half\_two\_site\_spacing\_Hz = 50 Hz\par
 \noindent\textbf{模型前提：}
 并峰公式适用于两位点等布居及指定线宽近似，真实酰胺可能存在不等布居、化学位移温度漂移、额外耦合、多个构象以及非Arrhenius热容贡献。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O147 · 活性ROMP随机链增长的Poisson链长、端基校正分子量与分散度}
+\noindent\textbf{题目}\par
+一个理想活性开环复分解聚合（ROMP）体系中，环烯单体初始浓度[M]₀=0.5000 mol/L、金属卡宾催化剂浓度[C]₀=0.005000 mol/L，只有80.00\%催化剂瞬时有效引发一条活性链，随后链数恒定、无终止转移或二次引发。单体与链端的二级传播常数k\_p=20.00 L/(mol·s)，体系等体积，达到60.00\%单体转化时停止。每条链的端基摩尔质量为100.0 g/mol，每开环纳入一个单体净增加150.0 g/mol；理想随机增长意味着每链纳入单体数n服从均值λ的Poisson分布。求达到该转化率的时间、活性链浓度、消耗单体浓度、平均聚合度与方差、数均和重均摩尔质量及Đ，并验证端基/单体守恒、初始和结束的单体消耗速率及模型局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假设一种理想活性ROMP有机聚合，环烯单体M由有效活性金属卡宾链端逐个开环，所有活性链瞬时引发、无终止及链转移，并在等体积体系中生长。
+\item 初始单体浓度[M]₀=0.5000 mol/L，催化剂总量0.005000 mol/L，活性引发效率f\_i=0.8000，故活性链浓度C\_a=0.004000 mol/L。
+\item 链增长的二级速率常数k\_p=20.00 L/(mol·s)，所有链端速率均相同且链浓度不变，单体消耗满足d[M]/dt=−k\_p C\_a[M]。
+\item 积分得到[M](t)=[M]₀exp(−k\_pC\_a t)，单体转化率X=1−exp(−k\_pC\_a t)，对0<X<1的时刻唯一。
+\item 当转化率X=0.6000时，时间t=−ln(0.4)/(k\_p C\_a)=11.4536341484 s。
+\item 未反应单体浓度=0.200000000000 mol/L，已纳入聚合物的单体单元浓度=0.300000000000 mol/L。
+\item 活性链始终有同样的瞬时增长速率，单个链增长次数服从均值λ=消耗单体数/活性链数的Poisson分布（在题设理想随机过程下）。
+\item 得到λ=75.0000000000个单元/链，平均DP\_n=λ，Poisson方差也等于λ，标准差√λ=8.66025403784。
+\item 设每条活性聚合链的引发端基质量100.0 g/mol，每增加一个环开单体单元净增150.0 g/mol，无其它小分子离去，则单链质量M\_chain=100+150n。
+\item 数均摩尔质量M\_n=100+150λ=11350.0000000 g/mol，不能误将端基质量乘平均DP。
+\item Poisson分布使单链质量方差Var(M)=150²λ=1687500.00000 (g/mol)²，重均M\_w=E[M²]/E[M]=M\_n+Var(M)/M\_n=11498.6784141 g/mol。
+\item 分散度Đ=M\_w/M\_n=1.01309941974≥1，所有引发端基总量与已消耗单体摩尔数分别独立守恒。
+\item 本模型采用即时引发、完全活性和相同链端反应性。实际ROMP若引发与传播同时发生、催化剂失活、链转移或存在多种开环异构结构，真实链长分布不再严格Poisson。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+active\_chain\_molar\_concentration = 0.004 mol/L；time\_to\_60pct\_conversion\_s = 11.4536341 s；unreacted\_monomer\_M = 0.2 mol/L；converted\_monomer\_M = 0.3 mol/L；Poisson\_mean\_DPn = 75 units/chain；number\_average\_mass\_g\_mol = 11350 g/mol；weight\_average\_mass\_g\_mol = 11498.6784 g/mol；dispersity = 1.01309942 ratio；Poisson\_DPn\_sd = 8.66025404 units/chain；chain\_mass\_sd\_g\_mol = 1299.03811 g/mol；initial\_consumption\_rate\_M\_s = 0.04 mol/(L s)；ending\_consumption\_rate\_M\_s = 0.016 mol/(L s)；initiator\_endgroup\_mass\_g\_L = 0.4 g/L；incorporated\_monomer\_mass\_g\_L = 45 g/L；polymerized\_monomer\_unit\_balance\_M = 0.3 mol/L\par
+\noindent\textbf{模型前提：}
+本模型采用即时引发、完全活性和相同链端反应性。实际ROMP若引发与传播同时发生、催化剂失活、链转移或存在多种开环异构结构，真实链长分布不再严格Poisson。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{物理化学}
@@ -2357,6 +2409,31 @@ Z1\_real\_ohm = 149.775174 ohm；Z1\_imag\_ohm = -40.3590832 ohm；Z1\_modulus\_
 quadratic\_discriminant\_M = 0.206155281 mol/L；internal\_cation\_concentration\_M = 0.128077641 mol/L；internal\_anion\_concentration\_M = 0.0780776406 mol/L；cation\_partition\_coefficient = 1.28077641 ratio；anion\_partition\_coefficient = 0.780776406 ratio；Donnan\_voltage\_mV = -6.35805164 mV；excess\_osmotic\_pressure\_kPa = 15.2586778 kPa；inside\_ion\_product\_M2 = 0.01 M2；charge\_difference\_M = 0.05 mol/L；inside\_osmotically\_active\_ion\_sum\_M = 0.206155281 mol/L；external\_osmolarity\_mOsm\_L = 200 mOsm/L；internal\_cations\_mol\_in\_0p1L = 0.0128077641 mol；internal\_anions\_mol\_in\_0p1L = 0.00780776406 mol；fixed\_sites\_mol\_in\_0p1L = 0.005 mol；osmotic\_pressure\_times\_gel\_volume\_J = 1.52586778 J\par
 \noindent\textbf{模型前提：}
 本模型假设盐库活度近似浓度、固定电荷完全解离、凝胶体积被外力固定；若发生体积膨胀、盐特异吸附、多价离子或电荷调节，必须加入弹性能及非理想活度。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P147 · 热电半导体Seebeck发电器最大功率负载与冷热能流严格守恒}
+\noindent\textbf{题目}\par
+一理想恒参数热电半导体发电模块热端T\_h=400.0 K、冷端T\_c=300.0 K，Seebeck系数S=200.0 μV/K、电内阻R\_i=2.000 Ω，热导K=1.000×10⁻⁴ W/K。外接可调纯电阻R\_L，开路电压V\_oc=SΔT、负载电流I=V\_oc/(R\_i+R\_L)、输出功率P=I²R\_L。按对称Joule热分流近似，热端输入Q\_h=S T\_h I−(1/2)I²R\_i+KΔT、冷端Q\_c=S T\_c I+(1/2)I²R\_i+KΔT。求唯一最大功率匹配负载、该负载时电流、功率、冷热热流、第一定律热差、热转电效率及平均温度ZT=S²T̄/(R\_iK)，并同Carnot上限比较，检查极端负载和恒参数近似。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 理想化单个热电半导体发生器的冷热结温度固定T\_h=400.0 K、T\_c=300.0 K，Seebeck系数S=200.0 μV/K、电内阻R\_i=2.000 Ω、导热系数K=1.000×10⁻⁴ W/K。
+\item 规定热电压V\_oc=S(T\_h−T\_c)，串联纯电阻负载R\_L时电流I=V\_oc/(R\_i+R\_L)，符号按由热端驱动电功输出为正。
+\item 温差ΔT=100 K，开路热电压V\_oc=0.0200000000000 V；短路极限I\_sc=V\_oc/R\_i=0.0100000000000 A。
+\item 输出负载电功率P\_L=I²R\_L=V\_oc² R\_L/(R\_i+R\_L)²。
+\item 对正负载R\_L求导得到dP\_L/dR\_L∝(R\_i−R\_L)/(R\_i+R\_L)³，唯一最大功率匹配点为R\_L=R\_i。
+\item 当R\_L=2 Ω时I=0.00500000000000 A，输出P\_L=0.0500000000000 mW。
+\item 采用恒系数热电方程Q\_h=S T\_h I−½I²R\_i+KΔT，Q\_c=S T\_c I+½I²R\_i+KΔT，其中对称分配Joule热。
+\item 计算热端吸热Q\_h=0.0103750000000 W，冷端放热Q\_c=0.0103250000000 W，均应为正。
+\item 差值Q\_h−Q\_c=0.0000500000000000 W，恰等于负载电功率P\_L，体现稳态第一定律且不需要额外能源项。
+\item 匹配负载点的热电效率η=P\_L/Q\_h=0.00481927710843，不可混同于最大效率负载，也不应超过Carnot极限0.250000000000。
+\item 平均温度T̄=350 K，材料组合优值ZT̄=S²T̄/(R\_i K)=0.0700000000000，它是无量纲。
+\item 检验R\_L→0时P\_L→0，R\_L→∞时I→0且P\_L→0；本模型假定S、R\_i、K与温度无关，忽略接触热阻、Thomson热、温差受载改变和材料老化。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+open\_circuit\_voltage\_V = 0.02 V；matched\_load\_current\_A = 0.005 A；maximum\_output\_power\_mW = 0.05 mW；hot\_side\_heat\_W = 0.010375 W；cold\_side\_heat\_W = 0.010325 W；heat\_balance\_net\_work\_W = 5e-05 W；conversion\_efficiency = 0.00481927711 fraction；average\_ZT = 0.07 dimensionless；short\_circuit\_current\_A = 0.01 A；load\_to\_internal\_resistance\_ratio = 1 ratio；hot\_Peltier\_heat\_W = 0.0004 W；half\_Joule\_heat\_W = 2.5e-05 W；conductive\_heat\_W = 0.01 W；thermal\_electric\_resistance\_product\_V\_per\_K\_ohm = 0.0004 ohm V/K；Carnot\_temperature\_ratio\_minus\_one = 0.333333333 ratio；Carnot\_efficiency = 0.25 fraction\par
+\noindent\textbf{模型前提：}
+检验R\_L→0时P\_L→0，R\_L→∞时I→0且P\_L→0；本模型假定S、R\_i、K与温度无关，忽略接触热阻、Thomson热、温差受载改变和材料老化。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
