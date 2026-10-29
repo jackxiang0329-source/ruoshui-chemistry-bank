@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "series": 14,
+  "status": "expert_review_pending",
+  "current_draft_count": 14,
+  "expert_approved": 0,
+  "preliminary_flags": 14,
+  "pairs": [
+    {
+      "new_id": "UC-ADV14-I201",
+      "prior_id": null,
+      "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I202",
+      "prior_id": null,
+      "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I203",
+      "prior_id": null,
+      "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I204",
+      "prior_id": null,
+      "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A201",
+      "prior_id": null,
+      "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A202",
+      "prior_id": null,
+      "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A203",
+      "prior_id": null,
+      "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A204",
+      "prior_id": null,
+      "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O198",
+      "prior_id": null,
+      "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O199",
+      "prior_id": null,
+      "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O200",
+      "prior_id": null,
+      "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P198",
+      "prior_id": null,
+      "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P199",
+      "prior_id": null,
+      "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P200",
+      "prior_id": null,
+      "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    }
+  ],
+  "new_items_requiring_cross_series_comparison": [
+    {
+      "new_id": "UC-ADV14-I201",
+      "model_family": "organometallic-electron-counting-ferrocene-CrCO6-18electron-rule",
+      "judgement": "pending_human_comparison",
+      "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    },
+    {
+      "new_id": "UC-ADV14-I202",
+      "model_family": "metal-carbonyl-13CO-reduced-mass-infrared-isotope-shift",
+      "judgement": "pending_human_comparison",
+      "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    },
+    {
+      "new_id": "UC-ADV14-I203",
+      "model_family": "hexacyanoferrate-FeIII-FeII-mixture-charge-electron-inventory",
+      "judgement": "pending_human_comparison",
+      "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    },
+    {
+      "new_id": "UC-ADV14-I204",
+      "model_family": "sodium-iron-fluorophosphate-theoretical-capacity-one-electron",
+      "judgement": "pending_human_comparison",
+      "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    },
+    {
+      "new_id": "UC-ADV14-A201",
+      "model_family": "calibration-limit-of-detection-quantification-signal-noise",
+      "judgement": "pending_human_comparison",
+      "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    },
+    {
+      "new_id": "UC-ADV14-A202",
+      "model_family": "qNMR-internal-standard-proton-integrals-mass-purity",
+      "judgement": "pending_human_comparison",
+      "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    },
+    {
+      "new_id": "UC-ADV14-A203",
+      "model_family": "two-wavelength-spectrophotometric-pKa-species-fraction-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    },
+    {
+      "new_id": "UC-ADV14-A204",
+      "model_family": "headspace-GC-gas-liquid-partition-mass-balance-two-volumes",
+      "judgement": "pending_human_comparison",
+      "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    },
+    {
+      "new_id": "UC-ADV14-O198",
+      "model_family": "polymer-tacticity-Bernoulli-meso-racemo-triads-statistical",
+      "judgement": "pending_human_comparison",
+      "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    },
+    {
+      "new_id": "UC-ADV14-O199",
+      "model_family": "enantioselective-organocatalytic-Eyring-competing-activation-free-energy",
+      "judgement": "pending_human_comparison",
+      "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    },
+    {
+      "new_id": "UC-ADV14-O200",
+      "model_family": "living-ring-opening-polymerization-conversion-initiation-efficiency",
+      "judgement": "pending_human_comparison",
+      "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    },
+    {
+      "new_id": "UC-ADV14-P198",
+      "model_family": "heterogeneous-two-site-Langmuir-adsorption-capacity-weighted",
+      "judgement": "pending_human_comparison",
+      "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    },
+    {
+      "new_id": "UC-ADV14-P199",
+      "model_family": "two-level-Schottky-anomaly-partition-internal-energy-heatcapacity",
+      "judgement": "pending_human_comparison",
+      "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    },
+    {
+      "new_id": "UC-ADV14-P200",
+      "model_family": "series-thermal-resistance-bilayer-composite-interface-temperature",
+      "judgement": "pending_human_comparison",
+      "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    }
+  ]
+}

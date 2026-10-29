@@ -158,7 +158,7 @@ assert.equal(Object.keys(witnesses).length,count);
 const man=JSON.parse(read("release/chemistry-approved-manifest.json"));
 assert.equal(man.thirteenth_series_work_in_progress_items,count);
 assert.equal(man.thirteenth_series_pending_cross_series_novelty_review,count);
-assert.equal(man.advanced_editorial_items,706+count);
+assert.equal(man.advanced_editorial_items,706+count+(man.fourteenth_series_work_in_progress_items||0));
 assert.equal(man.approved_count,0);assert.deepEqual(man.items,[]);
 const q=JSON.parse(read("editorial/advanced_integrated_v13/overlap_review_queue.json"));
 assert.equal(q.current_draft_count,count);assert.equal(q.preliminary_flags,q.pairs.length);

@@ -250,7 +250,7 @@ for(const sub of ['inorganic','analytical','organic','physical']){
 }
 assert.equal(release.twelfth_series_work_in_progress_items,v12Ids.size);
 assert.equal(release.twelfth_series_pending_cross_series_novelty_review,v12Ids.size);
-assert.equal(release.advanced_editorial_items,406+v10IDs.size+v11Ids.size+v12Ids.size+(release.thirteenth_series_work_in_progress_items||0));
+assert.equal(release.advanced_editorial_items,406+v10IDs.size+v11Ids.size+v12Ids.size+(release.thirteenth_series_work_in_progress_items||0)+(release.fourteenth_series_work_in_progress_items||0));
 assert.equal(release.eleventh_series_work_in_progress_items,v11Ids.size);
 assert.equal(release.tenth_series_work_in_progress_items,v10IDs.size);
 assert.equal(release.tenth_series_pending_cross_series_novelty_review,v10IDs.size);

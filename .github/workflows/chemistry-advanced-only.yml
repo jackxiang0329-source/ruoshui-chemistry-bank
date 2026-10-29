@@ -42,3 +42,5 @@ jobs:
         run: node scripts/check-advanced-authored-v12.mjs
       - name: Verify thirteenth-series complete numeric vectors
         run: node scripts/check-advanced-authored-v13.mjs
+      - name: Verify fourteenth-series complete numeric vectors
+        run: node scripts/check-advanced-authored-v14.mjs
