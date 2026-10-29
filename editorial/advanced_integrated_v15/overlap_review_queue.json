@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 15,
   "status": "expert_review_pending",
-  "current_draft_count": 18,
+  "current_draft_count": 26,
   "expert_approved": 0,
-  "preliminary_flags": 18,
+  "preliminary_flags": 26,
   "pairs": [
     {
       "new_id": "UC-ADV15-I226",
@@ -112,6 +112,54 @@
       "new_id": "UC-ADV15-A234",
       "prior_id": null,
       "reason": "跨辑数学模型和原题问题待人工复审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O223",
+      "prior_id": null,
+      "reason": "原理和数值计算与此前所有辑别的模型对比尚需人工完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O224",
+      "prior_id": null,
+      "reason": "原理和数值计算与此前所有辑别的模型对比尚需人工完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O225",
+      "prior_id": null,
+      "reason": "原理和数值计算与此前所有辑别的模型对比尚需人工完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O226",
+      "prior_id": null,
+      "reason": "原理和数值计算与此前所有辑别的模型对比尚需人工完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O227",
+      "prior_id": null,
+      "reason": "原理和数值计算与此前所有辑别的模型对比尚需人工完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O228",
+      "prior_id": null,
+      "reason": "原理和数值计算与此前所有辑别的模型对比尚需人工完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O229",
+      "prior_id": null,
+      "reason": "原理和数值计算与此前所有辑别的模型对比尚需人工完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O230",
+      "prior_id": null,
+      "reason": "原理和数值计算与此前所有辑别的模型对比尚需人工完成。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -223,6 +271,54 @@
       "model_family": "ISE-calibration-Nernst-positive-monovalent-two-standards",
       "judgement": "pending_human_comparison",
       "screening": "数值向量机器一致性检查，独立实现待补。"
+    },
+    {
+      "new_id": "UC-ADV15-O223",
+      "model_family": "enantioselective-kinetic-resolution-competing-R-S-rate",
+      "judgement": "pending_human_comparison",
+      "screening": "机器一致性核验，独立科学复核待办。"
+    },
+    {
+      "new_id": "UC-ADV15-O224",
+      "model_family": "Curtin-Hammett-fast-conformer-equilibrium-products",
+      "judgement": "pending_human_comparison",
+      "screening": "机器一致性核验，独立科学复核待办。"
+    },
+    {
+      "new_id": "UC-ADV15-O225",
+      "model_family": "olefin-isomerization-hydrogenation-consecutive-first-order",
+      "judgement": "pending_human_comparison",
+      "screening": "机器一致性核验，独立科学复核待办。"
+    },
+    {
+      "new_id": "UC-ADV15-O226",
+      "model_family": "organic-parallel-Eyring-different-activation-parameters",
+      "judgement": "pending_human_comparison",
+      "screening": "机器一致性核验，独立科学复核待办。"
+    },
+    {
+      "new_id": "UC-ADV15-O227",
+      "model_family": "enamine-pre-equilibrium-nucleophilic-addition-rate",
+      "judgement": "pending_human_comparison",
+      "screening": "机器一致性核验，独立科学复核待办。"
+    },
+    {
+      "new_id": "UC-ADV15-O228",
+      "model_family": "Bernoulli-copolymer-sequence-entropy-triad",
+      "judgement": "pending_human_comparison",
+      "screening": "机器一致性核验，独立科学复核待办。"
+    },
+    {
+      "new_id": "UC-ADV15-O229",
+      "model_family": "polymer-random-bond-cleavage-Poisson-survival",
+      "judgement": "pending_human_comparison",
+      "screening": "机器一致性核验，独立科学复核待办。"
+    },
+    {
+      "new_id": "UC-ADV15-O230",
+      "model_family": "organic-KIE-H-D-competing-substrates-branches",
+      "judgement": "pending_human_comparison",
+      "screening": "机器一致性核验，独立科学复核待办。"
     }
   ]
 }
