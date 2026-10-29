@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (94题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (100题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -698,6 +698,28 @@ temperature\_K = 900 K；reference\_oxygen\_pressure\_bar = 0.21 bar；sample\_o
 真实器件的实测信号若接有有限负载，需要扣除内部压降，再与热电偶测得的温度共同用于氧压反算。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I175 · NaCl Born–Haber循环与Born–Landé静电晶格能的定量比较}
+\noindent\textbf{题目}\par
+NaCl Born–Haber循环与Born–Landé静电晶格能的定量比较。Na(s)升华焓108.0 kJ/mol，Na(g)电离能496.0 kJ/mol，Cl₂(g)键解离焓243.0 kJ/mol，Cl(g)得电子的焓变化−349.0 kJ/mol，NaCl(s)标准生成焓−411.0 kJ/mol；晶格模型Madelung常数1.7476，最近邻距0.2810 nm，排斥指数9，e=1.602176634×10⁻¹⁹ C，ε0=8.8541878128×10⁻¹² F/m，NA=6.02214076×10²³ mol⁻¹。 请在上述严格条件下，从下式独立推导各量，计算所有数值和单位，并给出物料/电荷/能量或极值判据：ΔHf=ΔHsub+IE+DCl2/2+EA+ΔHlattice；U\_Born=−NA M e²/(4πε₀r)(1−1/n)。 将气相离子制备的四个热化学步骤和晶格生成焓相加，应严格恢复−411.0 kJ/mol。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 明确变量、边界、温度和计量：Na(s)升华焓108.0 kJ/mol，Na(g)电离能496.0 kJ/mol，Cl₂(g)键解离焓243.0 kJ/mol，Cl(g)得电子的焓变化−349.0 kJ/mol，NaCl(s)标准生成焓−411.0 kJ/mol；晶格模型Madelung常数1.7476，最近邻距0.2810 nm，排斥指数9，e=1.602176634×10⁻¹⁹ C，ε0=8.8541878128×10⁻¹² F/m，NA=6.02214076×10²³ mol⁻¹。
+\item 建立化学物理方程：ΔHf=ΔHsub+IE+DCl2/2+EA+ΔHlattice；U\_Born=−NA M e²/(4πε₀r)(1−1/n)。
+\item 使用题设数据代入该方程，先检查活动度或浓度比是否无量纲、所有分母是否非零。
+\item 求得第一组参数：gas\_cycle\_kJ\_mol=376.500000000 kJ/mol；lattice\_formation\_kJ\_mol=-787.500000000 kJ/mol；lattice\_dissociation\_kJ\_mol=787.500000000 kJ/mol。
+\item 再求第二组结果：unrepressed\_coulomb\_kJ\_mol=-864.069771457 kJ/mol；BornLande\_energy\_kJ\_mol=-768.062019073 kJ/mol；model\_experiment\_difference\_kJ\_mol=19.4379809274 kJ/mol。
+\item 最后计算独立比值与核验量：reconstructed\_formation\_kJ\_mol=-411.000000000 kJ/mol；balance\_residual\_kJ\_mol=0.00000000000 kJ/mol。
+\item 守恒或导数交叉核验：将气相离子制备的四个热化学步骤和晶格生成焓相加，应严格恢复−411.0 kJ/mol。
+\item 讨论模型外推局限。假想体系只有题设的物种和过程；已排除的副反应、非理想效应及测量系统误差不能从这些数值自动推断。
+\item 独立数值见证在CI中重新计算全部8个答案；这仅是模型内数值验证，题目仍须完成跨辑同构审查和专家审稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+gas\_cycle\_kJ\_mol = 376.5 kJ/mol；lattice\_formation\_kJ\_mol = -787.5 kJ/mol；lattice\_dissociation\_kJ\_mol = 787.5 kJ/mol；unrepressed\_coulomb\_kJ\_mol = -864.069771 kJ/mol；BornLande\_energy\_kJ\_mol = -768.062019 kJ/mol；model\_experiment\_difference\_kJ\_mol = 19.4379809 kJ/mol；reconstructed\_formation\_kJ\_mol = -411 kJ/mol；balance\_residual\_kJ\_mol = 0 kJ/mol\par
+\noindent\textbf{模型前提：}
+将气相离子制备的四个热化学步骤和晶格生成焓相加，应严格恢复−411.0 kJ/mol。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -1364,6 +1386,28 @@ receptor\_total\_concentration\_M = 0.001 mol/L；aliquot\_volume\_L = 0.001 L�
 真实ITC测定常需校正稀释热、滴定热容、配体活度与注射稀释体积，三份平行点仅足以在本理想化模型中实现参数和内部验证。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A175 · 稳定碳同位素稀释质谱中13C原子比与原样质量反演}
+\noindent\textbf{题目}\par
+稳定碳同位素稀释质谱中13C原子比与原样质量反演。原样碳原子物质的量ns未知，原样13C原子分数fs=0.01100；加入13C富集内标，其总碳原子量nt=0.0005000 mol、13C原子分数ft=0.9800；混合物测得13C/12C原子比R=1/3。碳的摩尔质量12.011 g/mol，忽略同位素分馏、回收损失与质谱质量歧视效应。 请在上述严格条件下，从下式独立推导各量，计算所有数值和单位，并给出物料/电荷/能量或极值判据：f=R/(1+R)，13C守恒f(ns+nt)=fs ns+ft nt，ns=nt(ft−f)/(f−fs)。 用算得的ns回代两个同位素的原子数，必须恢复原始混合分数f=0.25及R=1/3，且fs<f<ft。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 明确变量、边界、温度和计量：原样碳原子物质的量ns未知，原样13C原子分数fs=0.01100；加入13C富集内标，其总碳原子量nt=0.0005000 mol、13C原子分数ft=0.9800；混合物测得13C/12C原子比R=1/3。碳的摩尔质量12.011 g/mol，忽略同位素分馏、回收损失与质谱质量歧视效应。
+\item 建立化学物理方程：f=R/(1+R)，13C守恒f(ns+nt)=fs ns+ft nt，ns=nt(ft−f)/(f−fs)。
+\item 使用题设数据代入该方程，先检查活动度或浓度比是否无量纲、所有分母是否非零。
+\item 求得第一组参数：mixed\_13C\_atom\_fraction=0.250000000000 fraction；sample\_carbon\_mol=0.00152719665272 mol；total\_carbon\_mol=0.00202719665272 mol。
+\item 再求第二组结果：total\_13C\_mol=0.000506799163180 mol；total\_12C\_mol=0.00152039748954 mol；reconstructed\_13C\_12C\_ratio=0.333333333333 ratio。
+\item 最后计算独立比值与核验量：spike\_13C\_signal\_fraction=0.966852425181 fraction；original\_carbon\_mass\_g=0.0183431589958 g。
+\item 守恒或导数交叉核验：用算得的ns回代两个同位素的原子数，必须恢复原始混合分数f=0.25及R=1/3，且fs<f<ft。
+\item 讨论模型外推局限。假想体系只有题设的物种和过程；已排除的副反应、非理想效应及测量系统误差不能从这些数值自动推断。
+\item 独立数值见证在CI中重新计算全部8个答案；这仅是模型内数值验证，题目仍须完成跨辑同构审查和专家审稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+mixed\_13C\_atom\_fraction = 0.25 fraction；sample\_carbon\_mol = 0.00152719665 mol；total\_carbon\_mol = 0.00202719665 mol；total\_13C\_mol = 0.000506799163 mol；total\_12C\_mol = 0.00152039749 mol；reconstructed\_13C\_12C\_ratio = 0.333333333 ratio；spike\_13C\_signal\_fraction = 0.966852425 fraction；original\_carbon\_mass\_g = 0.018343159 g\par
+\noindent\textbf{模型前提：}
+用算得的ns回代两个同位素的原子数，必须恢复原始混合分数f=0.25及R=1/3，且fs<f<ft。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第12辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -2018,6 +2062,50 @@ intramolecular\_cyclization\_rate\_constant\_s = 0.025 s\textasciicircum{}-1；i
 本模型把环化产物视为不能被二聚端基继续攻击的稳定终产物，并假定不发生更高聚体、可逆开环或链增长，真实环链平衡需在更完整的聚合模型下分析。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O171 · Mayo–Lewis二元自由基共聚瞬时组成与微转化率进料漂移}
+\noindent\textbf{题目}\par
+Mayo–Lewis二元自由基共聚瞬时组成与微转化率进料漂移。两种乙烯基单体M1/M2终端自由基共聚，反应比r1=0.2000、r2=2.000；初始进料M1摩尔分数f1=0.3000、M2分数f2=0.7000。采用Mayo–Lewis终端模型，批式转化率从X=0增大微量dX=0.01000，不包括扩散、链转移与高转化率动力学漂移。 请在上述严格条件下，从下式独立推导各量，计算所有数值和单位，并给出物料/电荷/能量或极值判据：F1=(r1f1²+f1f2)/(r1f1²+2f1f2+r2f2²)，df1/dX=(f1−F1)/(1−X)。 F1+F2=1；初始进料变化导数由f1−F1控制，不应将小步外推当成高转化率积分结果。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 明确变量、边界、温度和计量：两种乙烯基单体M1/M2终端自由基共聚，反应比r1=0.2000、r2=2.000；初始进料M1摩尔分数f1=0.3000、M2分数f2=0.7000。采用Mayo–Lewis终端模型，批式转化率从X=0增大微量dX=0.01000，不包括扩散、链转移与高转化率动力学漂移。
+\item 建立化学物理方程：F1=(r1f1²+f1f2)/(r1f1²+2f1f2+r2f2²)，df1/dX=(f1−F1)/(1−X)。
+\item 使用题设数据代入该方程，先检查活动度或浓度比是否无量纲、所有分母是否非零。
+\item 求得第一组参数：MayoLewis\_numerator=0.228000000000 ratio；denominator=1.41800000000 ratio；instantaneous\_polymer\_M1=0.160789844852 fraction。
+\item 再求第二组结果：instantaneous\_polymer\_M2=0.839210155148 fraction；enrichment\_over\_feed=0.535966149506 ratio；initial\_dfeed\_dconversion=0.139210155148 ratio。
+\item 最后计算独立比值与核验量：first\_order\_feed\_after\_1percent=0.301392101551 fraction；composition\_sum=1.00000000000 ratio。
+\item 守恒或导数交叉核验：F1+F2=1；初始进料变化导数由f1−F1控制，不应将小步外推当成高转化率积分结果。
+\item 讨论模型外推局限。假想体系只有题设的物种和过程；已排除的副反应、非理想效应及测量系统误差不能从这些数值自动推断。
+\item 独立数值见证在CI中重新计算全部8个答案；这仅是模型内数值验证，题目仍须完成跨辑同构审查和专家审稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+MayoLewis\_numerator = 0.228 ratio；denominator = 1.418 ratio；instantaneous\_polymer\_M1 = 0.160789845 fraction；instantaneous\_polymer\_M2 = 0.839210155 fraction；enrichment\_over\_feed = 0.53596615 ratio；initial\_dfeed\_dconversion = 0.139210155 ratio；first\_order\_feed\_after\_1percent = 0.301392102 fraction；composition\_sum = 1 ratio\par
+\noindent\textbf{模型前提：}
+F1+F2=1；初始进料变化导数由f1−F1控制，不应将小步外推当成高转化率积分结果。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O172 · 5-exo-trig自由基分子内环化与硫醇氢原子转移捕获}
+\noindent\textbf{题目}\par
+5-exo-trig自由基分子内环化与硫醇氢原子转移捕获。5-己烯基自由基R·只沿5-exo-trig一级环化kc=2.000×10⁵ s⁻¹或被硫醇RSH双分子捕获kt=1.000×10⁸ L/(mol s)反应。硫醇始终过量，分别考察其浓度0.001000、0.01000 mol/L；R·初始浓度1.000×10⁻⁵ mol/L。计算10.00 μs后的余量以及t→∞产物组成，假设两种产物均不再反应。 请在上述严格条件下，从下式独立推导各量，计算所有数值和单位，并给出物料/电荷/能量或极值判据：kobs=kc+kt[RSH]，R(t)=R0e\textasciicircum{}(−kobs t)，环化最终分数kc/kobs，捕获分数kt[RSH]/kobs。 环化+捕获的终产率为1，每个最终产物由一个R·形成；高硫醇浓度降低环化分数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 明确变量、边界、温度和计量：5-己烯基自由基R·只沿5-exo-trig一级环化kc=2.000×10⁵ s⁻¹或被硫醇RSH双分子捕获kt=1.000×10⁸ L/(mol s)反应。硫醇始终过量，分别考察其浓度0.001000、0.01000 mol/L；R·初始浓度1.000×10⁻⁵ mol/L。计算10.00 μs后的余量以及t→∞产物组成，假设两种产物均不再反应。
+\item 建立化学物理方程：kobs=kc+kt[RSH]，R(t)=R0e\textasciicircum{}(−kobs t)，环化最终分数kc/kobs，捕获分数kt[RSH]/kobs。
+\item 使用题设数据代入该方程，先检查活动度或浓度比是否无量纲、所有分母是否非零。
+\item 求得第一组参数：observed\_k\_low\_s=300000.000000 s\textasciicircum{}-1；observed\_k\_high\_s=1200000.00000 s\textasciicircum{}-1；lifetime\_low\_microsecond=3.33333333333 microsecond；lifetime\_high\_microsecond=0.833333333333 microsecond。
+\item 再求第二组结果：cyclized\_fraction\_low=0.666666666667 fraction；cyclized\_fraction\_high=0.166666666667 fraction；radical\_t10us\_low\_M=4.97870683679e-7 mol/L；radical\_t10us\_high\_M=6.14421235333e-11 mol/L。
+\item 最后计算独立比值与核验量：cyclized\_product\_low\_M=0.00000666666666667 mol/L；cyclized\_product\_high\_M=0.00000166666666667 mol/L；equal\_rate\_thiol\_concentration\_M=0.00200000000000 mol/L。
+\item 守恒或导数交叉核验：环化+捕获的终产率为1，每个最终产物由一个R·形成；高硫醇浓度降低环化分数。
+\item 讨论模型外推局限。假想体系只有题设的物种和过程；已排除的副反应、非理想效应及测量系统误差不能从这些数值自动推断。
+\item 独立数值见证在CI中重新计算全部11个答案；这仅是模型内数值验证，题目仍须完成跨辑同构审查和专家审稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+observed\_k\_low\_s = 300000 s\textasciicircum{}-1；observed\_k\_high\_s = 1200000 s\textasciicircum{}-1；lifetime\_low\_microsecond = 3.33333333 microsecond；lifetime\_high\_microsecond = 0.833333333 microsecond；cyclized\_fraction\_low = 0.666666667 fraction；cyclized\_fraction\_high = 0.166666667 fraction；radical\_t10us\_low\_M = 4.97870684e-07 mol/L；radical\_t10us\_high\_M = 6.14421235e-11 mol/L；cyclized\_product\_low\_M = 6.66666667e-06 mol/L；cyclized\_product\_high\_M = 1.66666667e-06 mol/L；equal\_rate\_thiol\_concentration\_M = 0.002 mol/L\par
+\noindent\textbf{模型前提：}
+环化+捕获的终产率为1，每个最终产物由一个R·形成；高硫醇浓度降低环化分数。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第12辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -2669,6 +2757,50 @@ temperature\_K = 298.15 K；surface\_tension\_J\_m2 = 0.05 J/m2；liquid\_molar\
 temperature\_low\_K = 298.15 K；temperature\_high\_K = 350 K；reorganization\_energy\_eV = 0.6 eV；effective\_rate\_prefactor\_s = 1e+12 s\textasciicircum{}-1；driving\_force\_1\_eV = -0.2 eV；driving\_force\_2\_eV = -0.6 eV；driving\_force\_3\_eV = -1 eV；driving\_force\_4\_eV = -1.4 eV；activation\_barrier\_1\_eV = 0.0666666667 eV；activation\_barrier\_2\_eV = 0 eV；activation\_barrier\_3\_eV = 0.0666666667 eV；activation\_barrier\_4\_eV = 0.266666667 eV；forward\_rate\_Tlow\_case1\_s = 7.46620785e+10 s\textasciicircum{}-1；forward\_rate\_Tlow\_case2\_s = 1e+12 s\textasciicircum{}-1；forward\_rate\_Tlow\_case3\_s = 7.46620785e+10 s\textasciicircum{}-1；forward\_rate\_Tlow\_case4\_s = 31074224.8 s\textasciicircum{}-1；forward\_rate\_Thigh\_case1\_s = 1.09658487e+11 s\textasciicircum{}-1；forward\_rate\_Thigh\_case2\_s = 1e+12 s\textasciicircum{}-1；forward\_rate\_Thigh\_case3\_s = 1.09658487e+11 s\textasciicircum{}-1；forward\_rate\_Thigh\_case4\_s = 144600236 s\textasciicircum{}-1；crossing\_coordinate\_case1 = 0.333333333 ratio；crossing\_coordinate\_case2 = 0 ratio；crossing\_coordinate\_case3 = -0.333333333 ratio；crossing\_coordinate\_case4 = -0.666666667 ratio；kBT\_Tlow\_eV = 0.0256925791 eV；kBT\_Thigh\_eV = 0.0301606664 eV；reverse\_rate\_case2\_Tlow\_s = 72.0942592 s\textasciicircum{}-1；forward\_to\_reverse\_rate\_ratio\_case2 = 1.38707299e+10 ratio；detailed\_balance\_expected\_ratio = 1.38707299e+10 ratio；deep\_inverted\_to\_symmetrical\_rate\_ratio = 0.000416198229 ratio；barrierless\_driving\_force\_eV = -0.6 eV；barrier\_case1\_kJ\_mol = 6.43235547 kJ/mol；barrier\_case2\_kJ\_mol = 0 kJ/mol；barrier\_case3\_kJ\_mol = 6.43235547 kJ/mol；barrier\_case4\_kJ\_mol = 25.7294219 kJ/mol；rate\_increase\_case1\_with\_temperature = 1.46873071 ratio；rate\_increase\_case4\_with\_temperature = 4.65338192 ratio；equal\_normal\_inverted\_rate\_residual = 0 s\textasciicircum{}-1；barrierless\_to\_normal\_rate\_ratio\_lowT = 13.3936802 ratio\par
 \noindent\textbf{模型前提：}
 此处的Marcus模型忽略量子隧穿、高频内层振动和反应物扩散极限，因此不应把模型给出的极快速率当作实验上必然可观察的值。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P171 · N₂与CO的线性刚性转子配分函数、转动熵及对称数效应}
+\noindent\textbf{题目}\par
+N₂与CO的线性刚性转子配分函数、转动熵及对称数效应。在298.15 K，N₂转动特征温度2.880 K、转动对称数σ=2；CO转动特征温度2.770 K、对称数σ=1。二者均处刚性线性转子高温极限，R=8.314462618 J/(mol K)。仅计算转动自由度，排除振动、平动、电子与核自旋统计部分。 请在上述严格条件下，从下式独立推导各量，计算所有数值和单位，并给出物料/电荷/能量或极值判据：qrot=T/(σθrot)，Urot=RT，Cv=R，Srot=R(lnqrot+1)，Arot=−RTlnqrot。 逐项核验Arot+TSrot=Urot；不能将转动Cv=R误当成该气体全部的定容热容。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 明确变量、边界、温度和计量：在298.15 K，N₂转动特征温度2.880 K、转动对称数σ=2；CO转动特征温度2.770 K、对称数σ=1。二者均处刚性线性转子高温极限，R=8.314462618 J/(mol K)。仅计算转动自由度，排除振动、平动、电子与核自旋统计部分。
+\item 建立化学物理方程：qrot=T/(σθrot)，Urot=RT，Cv=R，Srot=R(lnqrot+1)，Arot=−RTlnqrot。
+\item 使用题设数据代入该方程，先检查活动度或浓度比是否无量纲、所有分母是否非零。
+\item 求得第一组参数：N2\_rotational\_partition=51.7621527778 ratio；CO\_rotational\_partition=107.635379061 ratio；N2\_rotational\_entropy\_J\_molK=41.1288133421 J/molK；CO\_rotational\_entropy\_J\_molK=47.2157495648 J/molK。
+\item 再求第二组结果：entropy\_CO\_minus\_N2\_J\_molK=6.08693622267 J/molK；rotational\_internal\_energy\_J\_mol=2478.95702956 J/mol；rotational\_Cv\_J\_molK=8.31446261800 J/molK。
+\item 最后计算独立比值与核验量：N2\_rotational\_Helmholtz\_J\_mol=-9783.59866840 J/mol；CO\_rotational\_Helmholtz\_J\_mol=-11598.4187032 J/mol；thermo\_identity\_ratio=1.00000000000 ratio。
+\item 守恒或导数交叉核验：逐项核验Arot+TSrot=Urot；不能将转动Cv=R误当成该气体全部的定容热容。
+\item 讨论模型外推局限。假想体系只有题设的物种和过程；已排除的副反应、非理想效应及测量系统误差不能从这些数值自动推断。
+\item 独立数值见证在CI中重新计算全部10个答案；这仅是模型内数值验证，题目仍须完成跨辑同构审查和专家审稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+N2\_rotational\_partition = 51.7621528 ratio；CO\_rotational\_partition = 107.635379 ratio；N2\_rotational\_entropy\_J\_molK = 41.1288133 J/molK；CO\_rotational\_entropy\_J\_molK = 47.2157496 J/molK；entropy\_CO\_minus\_N2\_J\_molK = 6.08693622 J/molK；rotational\_internal\_energy\_J\_mol = 2478.95703 J/mol；rotational\_Cv\_J\_molK = 8.31446262 J/molK；N2\_rotational\_Helmholtz\_J\_mol = -9783.59867 J/mol；CO\_rotational\_Helmholtz\_J\_mol = -11598.4187 J/mol；thermo\_identity\_ratio = 1 ratio\par
+\noindent\textbf{模型前提：}
+逐项核验Arot+TSrot=Urot；不能将转动Cv=R误当成该气体全部的定容热容。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P172 · Langmuir–Hinshelwood双反应物竞争吸附的最大表面反应速率}
+\noindent\textbf{题目}\par
+Langmuir–Hinshelwood双反应物竞争吸附的最大表面反应速率。气固催化剂A和B在同一均一位点Langmuir竞争吸附，KA=2.000 bar⁻¹、KB=0.5000 bar⁻¹，固定B分压pB=2.000 bar；A分压取0.2000、1.000 bar，最大速率参数k=0.02000 mol/(m² s)。表面反应速率r=kθAθB，θA=KApA/(1+KApA+KBpB)、θB=KBpB/(1+KApA+KBpB)，空位覆盖度为倒数分母。忽略产品竞争吸附。 请在上述严格条件下，从下式独立推导各量，计算所有数值和单位，并给出物料/电荷/能量或极值判据：r=k(KApA)(KBpB)/[1+KApA+KBpB]²；当KApA=1+KBpB时取得固定pB下唯一最大值。 最优点对A分压的一阶导数为0；三种位点分率和必须为1，B被过量A排挤使速率最终下降。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 明确变量、边界、温度和计量：气固催化剂A和B在同一均一位点Langmuir竞争吸附，KA=2.000 bar⁻¹、KB=0.5000 bar⁻¹，固定B分压pB=2.000 bar；A分压取0.2000、1.000 bar，最大速率参数k=0.02000 mol/(m² s)。表面反应速率r=kθAθB，θA=KApA/(1+KApA+KBpB)、θB=KBpB/(1+KApA+KBpB)，空位覆盖度为倒数分母。忽略产品竞争吸附。
+\item 建立化学物理方程：r=k(KApA)(KBpB)/[1+KApA+KBpB]²；当KApA=1+KBpB时取得固定pB下唯一最大值。
+\item 使用题设数据代入该方程，先检查活动度或浓度比是否无量纲、所有分母是否非零。
+\item 求得第一组参数：optimal\_A\_pressure\_bar=1.00000000000 bar；low\_theta\_A=0.166666666667 fraction；low\_theta\_B=0.416666666667 fraction；low\_theta\_vac=0.416666666667 fraction。
+\item 再求第二组结果：low\_rate\_mol\_m2\_s=0.00138888888889 mol/(m2s)；optimal\_theta\_A=0.500000000000 fraction；optimal\_theta\_B=0.250000000000 fraction；optimal\_theta\_vac=0.250000000000 fraction。
+\item 最后计算独立比值与核验量：optimal\_rate\_mol\_m2\_s=0.00250000000000 mol/(m2s)；rate\_improvement=1.80000000000 ratio；coverages\_sum=1.00000000000 ratio；stationary\_derivative\_factor=0.00000000000 ratio。
+\item 守恒或导数交叉核验：最优点对A分压的一阶导数为0；三种位点分率和必须为1，B被过量A排挤使速率最终下降。
+\item 讨论模型外推局限。假想体系只有题设的物种和过程；已排除的副反应、非理想效应及测量系统误差不能从这些数值自动推断。
+\item 独立数值见证在CI中重新计算全部12个答案；这仅是模型内数值验证，题目仍须完成跨辑同构审查和专家审稿。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+optimal\_A\_pressure\_bar = 1 bar；low\_theta\_A = 0.166666667 fraction；low\_theta\_B = 0.416666667 fraction；low\_theta\_vac = 0.416666667 fraction；low\_rate\_mol\_m2\_s = 0.00138888889 mol/(m2s)；optimal\_theta\_A = 0.5 fraction；optimal\_theta\_B = 0.25 fraction；optimal\_theta\_vac = 0.25 fraction；optimal\_rate\_mol\_m2\_s = 0.0025 mol/(m2s)；rate\_improvement = 1.8 ratio；coverages\_sum = 1 ratio；stationary\_derivative\_factor = 0 ratio\par
+\noindent\textbf{模型前提：}
+最优点对A分压的一阶导数为0；三种位点分率和必须为1，B被过量A排挤使速率最终下降。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
