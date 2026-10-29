@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (634题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (636题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -13341,6 +13341,32 @@ gel\_point\_conversion = 0.707106781 fraction；conversion\_relative\_to\_gel\_p
 有限聚合体系的含环、笼状结构、官能团不等活性、扩散受限和反应后网络收缩会改变真正凝胶阈值；本题结果属于理想随机网络的热力学极限。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O157 · C4H4四π Hückel共振交替与Peierls畸变、前线轨道简并}
+\noindent\textbf{题目}\par
+某假想中性四元有机π环C₄H₄采用仅含最近邻耦合的Hückel近似：四个碳p\_z轨道库仑积分α统一取0 eV，四个相邻碳–碳π共振积分按强弱强弱交替，其绝对值t\_s=2.800 eV和t\_w=1.600 eV；每个碳贡献一名π电子，共4个。忽略轨道重叠、σ键弹性与显式电子关联。构造4×4环Hamiltonian并求四个单电子本征能，遵从Pauli占据求矩形态π电子总能。对比各键共振积分绝对值取t\_avg=(t\_s+t\_w)/2=2.200 eV的正方形等边环，求正方形能级、总电子能量、畸变电子稳定化（eV/分子与kJ/mol）、两形状HOMO-LUMO能隙、畸变能隙对应的自由光子波长；给定hc=1239.841984 eV·nm，F=96485.33212 C/mol。检查轨道迹、总π电子数、正方形零能级简并，解释电子稳定化不等于真实结构预测。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 把假想四元C₄H₄碳环的四个p\_z轨道作为Hückel正交基，统一库仑积分α=0 eV，沿环交替强、弱键共振积分分别为−2.800与−1.600 eV。
+\item 构造4×4实对称环Hamiltonian，最近邻的4个非零非对角元按强弱交替分布；忽略电子–电子关联、σ骨架弹性能及重叠积分。
+\item 利用二原胞Bloch基分解为k=0、π两个2×2问题，解得本征能E=±(t\_s+t\_w)、±(t\_s−t\_w)，两种t均取正的共振积分绝对值。
+\item 矩形四级本征能依次为-4.4、-1.1999999999999997、1.1999999999999997、4.4 eV，能级迹为0，体现二分环Hamiltonian的能谱对称。
+\item 四个碳原子各贡献一个p电子，4π电子按Pauli原理填满最低两个空间轨道各2个电子，剩余两级空置。
+\item 矩形总π电子能量E\_rect=2(E₁+E₂)=-11.2000000000 eV/分子；不可把全部四级能量直接求和。
+\item 为了比较交替共振的电子贡献，正方形四条键统一用平均跃迁t\_avg=(t\_s+t\_w)/2=2.200 eV，不单独加入σ键应变能。
+\item 正方形能级为-4.4、0、0、4.4 eV，零能附近双重简并；基态4电子在最低级占2电子、零能简并级合占2电子，总能E\_square=-8.80000000000 eV。
+\item 电子稳定化E\_square−E\_rect=2.40000000000 eV/分子，按1 eV/分子对应F/1000 kJ/mol得到231.564797088 kJ/mol。
+\item 矩形HOMO–LUMO间隔为2(t\_s−t\_w)=2.40000000000 eV，正方形零能简并使Hückel前线间隙为0。
+\item 对应能量差的真空自由光子波长λ=1239.841984 eV nm/ΔE=516.600826667 nm，但跃迁是否光学允许不能仅凭能隙断言。
+\item 该四π体系的电子能降低与Peierls畸变/反芳香性失稳相容；真实平衡几何由π电子、σ骨架弹性、电子关联与振动零点能共同决定。
+\item 模型固定中性碳氢化学计量与四个π电子，不涉及溶液酸碱或氧化还原；Hückel单电子能之和只是定性比较工具，不等于完整分子的实验形成焓。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+sum\_strong\_weak\_resonance\_eV = 4.4 eV；difference\_strong\_weak\_resonance\_eV = 1.2 eV；rectangular\_occupied\_low\_eV = -4.4 eV；rectangular\_occupied\_high\_eV = -1.2 eV；rectangular\_LUMO\_eV = 1.2 eV；rectangular\_highest\_level\_eV = 4.4 eV；square\_lowest\_level\_eV = -4.4 eV；square\_second\_level\_eV = 0 eV；square\_third\_level\_eV = 0 eV；square\_highest\_level\_eV = 4.4 eV；rectangular\_pi\_electron\_energy\_eV = -11.2 eV；square\_pi\_electron\_energy\_eV = -8.8 eV；Peierls\_electronic\_energy\_stabilization\_eV = 2.4 eV；rectangular\_frontier\_energy\_gap\_eV = 2.4 eV；square\_frontier\_energy\_gap\_eV = 0 eV；equivalent\_gap\_wavelength\_nm = 516.600827 nm；molar\_electronic\_stabilization\_kJ\_mol = 231.564797 kJ/mol；orbital\_trace\_eV = 0 eV；number\_of\_pi\_electrons = 4 electrons\par
+\noindent\textbf{模型前提：}
+模型固定中性碳氢化学计量与四个π电子，不涉及溶液酸碱或氧化还原；Hückel单电子能之和只是定性比较工具，不等于完整分子的实验形成焓。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第12辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -13582,6 +13608,33 @@ thermal\_voltage\_V = 0.0256925791 V；half\_surface\_potential\_dimensionless =
 relative\_diffusion\_m2\_s = 1.4e-09 m2/s；surface\_Damkohler\_number = 0.0714285714 dimensionless；Smoluchowski\_diffusion\_limited\_M\_inv\_s = 5.29735169e+09 L/(mol s)；Collins\_Kimball\_effective\_rate\_M\_inv\_s = 353156779 L/(mol s)；reaction\_probability\_per\_encounter = 0.0666666667 fraction；effective\_reactive\_radius\_nm = 0.0333333333 nm；equal\_reactant\_half\_life\_s = 0.00283160358 s；reactant\_concentration\_after\_10ms\_M = 2.20674179e-07 mol/L；product\_concentration\_after\_10ms\_M = 7.79325821e-07 mol/L；instantaneous\_product\_rate\_M\_s = 1.71977085e-05 mol/(L s)；initial\_reaction\_rate\_M\_s = 0.000353156779 mol/(L s)；encounter\_diffusion\_relaxation\_s = 1.78571429e-10 s；surface\_to\_diffusion\_resistance\_ratio = 14 ratio；A\_species\_inventory\_M = 1e-06 mol/L；inverse\_concentration\_growth\_M\_inv = 3531567.79 L/mol；inverse\_concentration\_time\_slope = 3531567.79 L/mol；integrated\_pseudo\_time = 3.53156779 dimensionless\par
 \noindent\textbf{模型前提：}
 检查A/B分别的分子数库存：c+[AB]=c₀；κ→∞恢复Smoluchowski极限，κ→0则k\_eff→0。模型不含溶剂化定向、反应复合体扩散、离子静电势或聚集。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P157 · 荧光Stern–Volmer静态/动态猝灭的寿命强度双通道反演}
+\noindent\textbf{题目}\par
+某假想荧光有机探针F在298.15 K被溶液中的猝灭剂Q以静态基态复合及动态激发态碰撞两方式猝灭，F很稀、自由Q浓度约等于标称浓度，静态复合物FQ完全不发荧光。无Q时寿命τ₀=4.000 ns，两个自由猝灭剂浓度[Q]₁=0.001000 mol/L、[Q]₂=0.004000 mol/L下，测得寿命比τ₀/τ分别为1.02000与1.08000；积分光强比I₀/I分别为1.17300与1.72800。假定无内滤效应、同一激发波长和量子产率标定，模型为τ₀/τ=1+K\_D[Q]、I₀/I=(1+K\_D[Q])(1+K\_S[Q])。由两点寿命与强度反演动态K\_D和静态K\_S，求双分子碰撞速率常数k\_q、Q₂下自由探针寿命、暗复合物分数和自由探针分数、动态相对量子产率及实际剩余强度、静态结合自由能（标准浓度1 mol/L、R=8.314462618 J/(mol K)），并检验两次数据反算一致、概率与单位，以及光谱内滤和非简单结合的模型限制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设同一种有机荧光探针F被猝灭剂Q以碰撞动态猝灭与基态静态结合两条物理机制共同猝灭，静态复合物FQ不发光且不进入自由分子的荧光寿命拟合。
+\item 自由探针在无Q时寿命τ₀=4.000 ns，动态碰撞伪一级速率为k\_q[Q]，故τ₀/τ=1+K\_D[Q]，其中K\_D=k\_qτ₀。
+\item 静态F+Q⇌FQ的平衡常数K\_S=[FQ]/([F][Q])，假设探针浓度足够低、Q自由浓度近似给定总浓度，静态未结合比例为1/(1+K\_S[Q])。
+\item 当激发、检测与吸收截面不变时积分光强由静态未结合比例与动态量子产率之积决定，I₀/I=(1+K\_S[Q])(1+K\_D[Q])。
+\item 在Q₁=0.001 mol/L和Q₂=0.004 mol/L，给定两次荧光寿命比τ₀/τ=1.02000000000和1.08000000000。
+\item 寿命比随[Q]线性变化，其斜率反算K\_D=(L₂−L₁)/(Q₂−Q₁)=20.0000000000 L/mol，外推[Q]=0时截距应为1。
+\item 对应积分光强比I₀/I在两浓度分别为1.17300000000、1.72800000000，均高于只存在动态猝灭时的寿命比。
+\item 分别计算K\_S=[(I₀/I)/(τ₀/τ)−1]/[Q]，独立得到150.000000000和150.000000000 L/mol，显示单一静态常数满足两次数据。
+\item 动态双分子速率k\_q=K\_D/τ₀=5000000000.00 L/(mol s)，Q₂时新增动态伪一级失活速率k\_qQ₂=20000000.0000 s⁻¹。
+\item Q₂时自由分子荧光寿命τ=τ₀/(1+K\_DQ₂)=3.70370370370 ns；静态复合物只降低可发光自由分子数而不缩短其寿命。
+\item Q₂下静态暗复合物分数θ=K\_SQ₂/(1+K\_SQ₂)=0.375000000000，剩余自由探针分数=0.625000000000。
+\item 动态的荧光量子产率相对因子1/(1+K\_DQ₂)=0.925925925926，两者乘积得剩余强度I/I₀=0.578703703704。
+\item 按1 mol/L标准浓度定义无量纲结合常数K\_Sc°=150，标准结合Gibbs能ΔG°=−RTln(K\_Sc°)=-12.4211495848 kJ/mol，不能直接对带单位常数取对数。
+\item 两次寿命与强度反演的静态结合常数相同，且0<各发光/结合分数<1；若存在激发态复合、光谱重叠内滤效应、不同寿命荧光物种或Q明显耗尽，必须改用更完整模型。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+lifetime\_ratio\_q1 = 1.02 ratio；lifetime\_ratio\_q2 = 1.08 ratio；intensity\_ratio\_q1 = 1.173 ratio；intensity\_ratio\_q2 = 1.728 ratio；dynamic\_Stern\_Volmer\_constant\_L\_mol = 20 L/mol；static\_binding\_constant\_from\_q1\_L\_mol = 150 L/mol；static\_binding\_constant\_from\_q2\_L\_mol = 150 L/mol；bimolecular\_dynamic\_quenching\_L\_mol\_s = 5e+09 L/(mol s)；quenched\_free\_molecule\_lifetime\_ns = 3.7037037 ns；dark\_complex\_fraction\_at\_q2 = 0.375 fraction；free\_fluorophore\_fraction\_at\_q2 = 0.625 fraction；dynamic\_luminescence\_yield\_at\_q2 = 0.925925926 fraction；observed\_intensity\_retained\_at\_q2 = 0.578703704 fraction；static\_binding\_standard\_G\_kJ\_mol = -12.4211496 kJ/mol；static\_intensity\_factor\_at\_q2 = 1.6 ratio；pseudo\_firstorder\_dynamic\_rate\_at\_q2\_s = 20000000 s\textasciicircum{}-1；q1\_ratio\_reverse\_check = 1 ratio；q2\_free\_times\_dynamic\_factor = 0.578703704 fraction\par
+\noindent\textbf{模型前提：}
+两次寿命与强度反演的静态结合常数相同，且0<各发光/结合分数<1；若存在激发态复合、光谱重叠内滤效应、不同寿命荧光物种或Q明显耗尽，必须改用更完整模型。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
