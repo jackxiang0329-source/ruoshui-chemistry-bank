@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 42,
+  "current_draft_count": 44,
   "expert_approved": 0,
-  "preliminary_flags": 42,
+  "preliminary_flags": 44,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -256,6 +256,18 @@
       "new_id": "UC-ADV12-P157",
       "prior_id": "UC-ADV11-P143",
       "reason": "与旧辑有机环反应或光学分析主题相近，但Hückel能谱和联合猝灭反演的模型同构需专家审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I162",
+      "prior_id": "UC-ADV12-I152",
+      "reason": "与既往络合平衡或化学分析时间响应存在主题重合，核心方程同构与原创性仍待人工检查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A162",
+      "prior_id": "UC-ADV11-A147",
+      "reason": "与既往络合平衡或化学分析时间响应存在主题重合，核心方程同构与原创性仍待人工检查。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -511,6 +523,18 @@
       "model_family": "Stern-Volmer-fluorescence-static-dynamic-quenching-lifetime-intensity-deconvolution",
       "judgement": "pending_human_comparison",
       "screening": "已登记独立机器答案向量，原创性及科学正确性仍须人类逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV12-I162",
+      "model_family": "amphoteric-aluminum-hydroxide-aluminate-solubility-U-shape-minimum-pH",
+      "judgement": "pending_human_comparison",
+      "screening": "已记录独立化学平衡/动力学数值见证，尚未获专家审核通过。"
+    },
+    {
+      "new_id": "UC-ADV12-A162",
+      "model_family": "adsorptive-stripping-voltammetry-two-time-exponential-uptake-LOD-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "已记录独立化学平衡/动力学数值见证，尚未获专家审核通过。"
     }
   ]
 }

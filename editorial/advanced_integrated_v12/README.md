@@ -1,12 +1,12 @@
 # 大学化学高阶综合题 · 第十二辑（进行中）
 
-本辑目标100题，每科25题。当前**42/100**，无机I151–I161、分析A151–A161、有机O148–O157、物化P148–P157；无机11题、分析11题、有机10题、物化10题。
+本辑目标100题，每科25题。当前**44/100**，无机I151–I162、分析A151–A162、有机O148–O157、物化P148–P157；无机12题、分析12题、有机10题、物化10题。
 
 源数据：`inorganic.jsonl`、`analytical.jsonl`、`organic.jsonl`、`physical.jsonl`。全部为待专家审校稿，禁止进入正式发布题库。
 
 [本辑完整中文解答](first_four_full_solutions.md)；[独立答案QA](../../scripts/check-advanced-authored-v12.mjs)；[跨辑人工审查队列](overlap_review_queue.json)。
 
-接续题号：I162、A162、O158、P158。
+接续题号：I163、A163、O158、P158。
 
 新入库：[第二批四题完整解析](second_four_full_solutions.md)。
 
@@ -35,3 +35,5 @@
 [第十四批 I161/A161 完整题目与解答](fourteenth_I161_A161.md)，后续 I162、A162、O157、P157。
 
 [第十五批 O157/P157 完整中文题解](fifteenth_O157_P157.md)；下批 I162/A162/O158/P158。
+
+[第十六批 I162/A162 题目及解答](sixteenth_I162_A162.md)，下次 I163、A163、O158、P158。
