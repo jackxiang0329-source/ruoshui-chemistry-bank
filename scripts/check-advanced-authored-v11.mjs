@@ -103,6 +103,11 @@ Object.assign(witness,{
 "UC-ADV11-I142":()=>{const ND=1e16,N0=4.7e17,g=2,d=.05,kb=8.617333262145e-5,nc=t=>N0*(t/300)**1.5,b=t=>g*Math.exp(d/(kb*t))/nc(t),ne=t=>2*ND/(1+Math.sqrt(1+4*b(t)*ND)),Ec=t=>kb*t*Math.log(nc(t)/ne(t)),n1=ne(300),n2=ne(150),sig=1.602176634e-19*n1*8500;assert.ok(n2<n1&&n1<ND&&n2<ND&&Math.abs(n1*(1+b(300)*n1)/ND-1)<1e-12);return[nc(300),nc(150),b(300),b(150),n1,n2,n1/ND,n2/ND,Ec(300),Ec(150),sig,1/sig,n2/n1,ND-n1,ND-n2];},
 "UC-ADV11-A141":()=>{const M=24678.9,H=1.007276466621,O=15.99491461957,iso=1.003354835,a=M/12+H,b=M/13+H,Z=(b-H)/(a-b),N=Z*(a-H),deltaA=iso/Z,deltaB=iso/(Z+1);assert.ok(Math.abs(Z-12)<1e-11&&Math.abs(N-M)<1e-8);return[a,b,a-b,Z,N,deltaA,deltaB,N+O,a+O/Z,b+O/(Z+1),O/Z,O/(Z+1),a/deltaA,a/(O/Z),deltaA/(a-b)];}
 });
+
+Object.assign(witness,{
+"UC-ADV11-O138":()=>{const kb=1.380649e-23,h=6.62607015e-34,R=8.314462618,T=350,dh=84000,ds=-35,phi=.12,sigma=1e-17,flux=2e17,NA=6.02214076e23,n0=1e-8,time=10,k=kb*T/h*Math.exp(-dh/(R*T)+ds/R),p=phi*sigma*flux,kt=k+p,x=-Math.expm1(-kt*time),nC=n0*x*k/kt,nD=n0*x*p/kt,rem=n0*(1-x),abs=nD*NA/phi,inc=flux*time;assert.ok(abs<inc&&Math.abs(nC+nD+rem-n0)<1e-21);return[dh/1000,-ds,dh-T*ds,k,p,kt,x,nC,nD,rem,nD/nC,abs,inc,abs/inc,n0*NA*sigma];},
+"UC-ADV11-P138":()=>{const ep=8.8541878128e-12,er=3,d=1e-6,g=.072,V=30,V0=1e-9,c=ep*er/d,u0=Math.cos(110*Math.PI/180),u=u0+c*V*V/(2*g),theta=Math.acos(u),f=z=>Math.cbrt(3*V0*(1-z*z)**1.5/(Math.PI*(2-3*z+z**3))),a=f(u),a0=f(u0),A=Math.PI*a*a,H=a*(1-u)/Math.sqrt(1-u*u),q=c*A*V,energy=q*V/2;assert.ok(u>=-1&&u<=1&&a>a0&&V/d<5e7);return[c,u0,u,theta*180/Math.PI,a0*1e3,a*1e3,a/a0,A*1e6,H*1e3,q*1e9,energy*1e9,V/d/1e6,5e7*d,c*V*V/2];}
+});
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();

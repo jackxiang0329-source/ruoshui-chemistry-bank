@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 63,
+  "current_draft_count": 65,
   "expert_approved": 0,
-  "preliminary_flags": 28,
+  "preliminary_flags": 30,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -172,6 +172,18 @@
       "new_id": "UC-ADV11-A141",
       "prior_id": "UC-ADV11-A127",
       "reason": "存在部分半导体或质谱分析物理背景重合，但新题反演方程不同；保留人工跨辑模型复核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-O138",
+      "prior_id": "UC-ADV10-O118",
+      "reason": "与历史光化学或界面现象存在主题邻近；新题特有选择定则/几何电容模型仍需逐式人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-P138",
+      "prior_id": "UC-ADV10-P105",
+      "reason": "与历史光化学或界面现象存在主题邻近；新题特有选择定则/几何电容模型仍需逐式人工比对。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -553,6 +565,18 @@
       "model_family": "ESI-protein-charge-state-integer-deconvolution-isotope-spacing-oxidation-resolving-power",
       "judgement": "pending_human_comparison",
       "screening": "主要结果独立数值校验，电荷/单位/极限检查已写；跨辑模型同构和科学性仍须人类专家逐式审查。"
+    },
+    {
+      "new_id": "UC-ADV11-O138",
+      "model_family": "electrocyclic-4pi-thermal-conrotatory-photochemical-disrotatory-Eyring-photon-budget",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness和守恒/能量/实验边界校验已建立；相似历史题需专家人工核验方程层面的原创性。"
+    },
+    {
+      "new_id": "UC-ADV11-P138",
+      "model_family": "electrowetting-Young-Lippmann-spherical-cap-volume-capacitor-energy-breakdown",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness和守恒/能量/实验边界校验已建立；相似历史题需专家人工核验方程层面的原创性。"
     }
   ]
 }
