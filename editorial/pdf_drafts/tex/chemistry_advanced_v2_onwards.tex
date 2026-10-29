@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (620题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (622题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -12700,6 +12700,33 @@ high\_spin\_low\_spin\_partition\_ratio = 9.12300903 ratio；high\_spin\_fractio
 模型仅适用于无配体交换、固定宏态热力学参数及无磁交换相互作用的独立Fe(II)中心；真实自旋交叉可能有弹性协同、热滞后和多重振动谱。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I158 · CeO2氧空位与Ce3极化子缺陷热力学的氧压指数及化学膨胀反演}
+\noindent\textbf{题目}\par
+某假想非化学计量萤石型无机氧化物CeO₂₋δ的缺陷形成反应为O\_Oˣ+2Ce\_Ceˣ⇌V\_O••+2Ce\_Ce′+½O₂(g)，其唯一带电缺陷为双正氧空位与单负Ce³⁺电子极化子，电子局域在Ce格点，氧子晶格原有2个位置/化学式。假设稀缺陷经验常数K\_eff=(δ/2)(2δ)²√(p\_O2/p°)=2.000×10⁻⁶，p°=1 bar。给低氧压p₁=0.001000 bar、高氧压p₂=0.1000 bar；化学膨胀规律a=a₀(1+βδ)，a₀=5.410 Å、β=0.1000，萤石常规晶胞含4个化学式单位。电子极化子迁移率固定μ=0.05000 cm²/(V s)，e=1.602176634×10⁻¹⁹ C，N\_A=6.02214076×10²³ mol⁻¹，Ce/O原子量140.116/15.999 g/mol。求两压力下δ、Ce³⁺及氧空位位点分数、晶格常数、低压下Ce格点和缺陷数密度及电导率、两压力理论密度、δ对氧压的对数斜率；严格核对电荷、氧原子与晶胞数目守恒并说明稀缺陷模型限制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将理想化萤石型CeO₂₋δ写为每式量单位1个Ce和2−δ个O，缺失的氧空位数为δ，氧空位占全部氧子晶格位点的比例为δ/2。
+\item 使用Kröger–Vink表示式O\_Oˣ+2Ce\_Ceˣ⇌V\_O••+2Ce\_Ce′+½O₂(g)，每生成一个双正有效电荷的氧空位，必须生成两个各带一负有效电荷的Ce³⁺小极化子。
+\item 在没有其它缺陷或自由带电载流子的近似下，电中性要求Ce³⁺占Ce总数分数x\_Ce3=2δ，且0<δ<0.5。
+\item 题设稀缺陷近似下定义无量纲经验平衡常数K\_eff=(δ/2)(2δ)²(p\_O2/p°)\textasciicircum{}(1/2)=2δ³√(p\_O2/p°)，并忽略未缺陷晶格位点的活度修正。
+\item 在低氧压p₁=0.001 bar（p°=1 bar）时，δ₁=[K\_eff/(2√p₁)]\textasciicircum{}(1/3)=0.0316227766017，氧空位位点分数δ₁/2=0.0158113883008。
+\item 在高氧压p₂=0.1 bar时δ₂=0.0146779926762，因p₂>p₁故氧空位减少，δ₂/δ₁=0.464158883361。
+\item 两压力相除给δ∝p\_O2\textasciicircum{}(−1/6)，因此对数斜率dlnδ/dlnp\_O2=−1/6，是无补偿、稀缺陷极限的可检验预测。
+\item 题设化学膨胀a(δ)=a₀(1+βδ)，其中a₀=5.410 Å、β=0.1，所以两压力晶格常数分别5.42710792214与5.41794079404 Å。
+\item 萤石常规立方晶胞含4个CeO₂式量，Ce格点数密度N\_Ce=4/a³（a以cm计），空位密度δN\_Ce，电子极化子密度2δN\_Ce。
+\item 低氧压时N\_Ce=2.50238781994e+22 cm⁻³、N\_V=7.91324510006e+20 cm⁻³、N\_Ce3=1.58264902001e+21 cm⁻³，满足2N\_V=N\_Ce3。
+\item 取小极化子有效迁移率μ=0.05 cm²/(V s)，σ=e μN\_Ce3=12.6784163984 S/cm，须承认该迁移率为题设固定值。
+\item 按Ce原子量140.116和O原子量15.999 g/mol，质量密度ρ=4[M\_Ce+(2−δ)M\_O]/(N\_A a³)，低/高氧压分别7.13085187263、7.17843155952 g/cm³。
+\item 归一检查：同式量的Ce数始终为1，氧从2降到2−δ，电荷由+4的Ce与−2的O组成净零；具体说(1−2δ)×4+(2δ)×3−2(2−δ)=0。
+\item 本模型限定δ远小于1、无Ce空位/间隙、缺陷相互作用弱且K\_eff不含其它活度项；实际CeO₂₋δ的位点熵、载流子迁移率和晶格常数会依温度与氧压改变。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+oxygen\_deficiency\_at\_low\_pO2 = 0.0316227766 formula；oxygen\_deficiency\_at\_high\_pO2 = 0.0146779927 formula；deficiency\_ratio = 0.464158883 ratio；oxygen\_vacancy\_site\_fraction = 0.0158113883 fraction；Ce3\_cation\_fraction = 0.0632455532 fraction；low\_pressure\_lattice\_A = 5.42710792 Angstrom；high\_pressure\_lattice\_A = 5.41794079 Angstrom；low\_pressure\_Ce\_site\_density\_cm3 = 2.50238782e+22 cm\textasciicircum{}-3；oxygen\_vacancy\_density\_cm3 = 7.9132451e+20 cm\textasciicircum{}-3；Ce3\_hopping\_carrier\_density\_cm3 = 1.58264902e+21 cm\textasciicircum{}-3；electron\_hopping\_conductivity\_S\_cm = 12.6784164 S/cm；low\_pressure\_density\_g\_cm3 = 7.13085187 g/cm3；high\_pressure\_density\_g\_cm3 = 7.17843156 g/cm3；log\_delta\_log\_pressure\_slope = -0.166666667 dimensionless；reconstructed\_reduction\_equilibrium\_constant = 2e-06 dimensionless\par
+\noindent\textbf{模型前提：}
+本模型限定δ远小于1、无Ce空位/间隙、缺陷相互作用弱且K\_eff不含其它活度项；实际CeO₂₋δ的位点熵、载流子迁移率和晶格常数会依温度与氧压改变。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -13041,6 +13068,33 @@ formed\_AB\_bonds\_M = 0.12 mol/L；polymer\_chain\_concentration\_M = 0.06 mol/
 rate\_EDG\_sigma\_minus0p27\_s\_inv = 0.00211348904 s\textasciicircum{}-1；rate\_parent\_sigma\_zero\_s\_inv = 0.01 s\textasciicircum{}-1；rate\_EWG\_sigma\_plus0p78\_s\_inv = 0.891250938 s\textasciicircum{}-1；Hammett\_rho\_true = 2.5 dimensionless；Hammett\_rho\_inferred = 2.5 dimensionless；parent\_rate\_k0\_s\_inv = 0.01 s\textasciicircum{}-1；EWG\_to\_EDG\_rate\_ratio = 421.696503 ratio；EWG\_substrate\_conversion\_60s = 1 fraction；EWG\_unreacted\_fraction = 0 fraction；EWG\_minus\_parent\_activation\_G\_kJmol = -11.1306185 kJ/mol；EWG\_half\_life\_s = 0.777723928 s；log\_rate\_ratio\_extremes = 2.625 dimensionless；exposure\_k\_t = 53.4750563 dimensionless；EWG\_to\_parent\_rate\_ratio = 89.1250938 ratio；sigma\_difference\_extremes = 1.05 dimensionless\par
 \noindent\textbf{模型前提：}
 若强取代基改变亲核进攻位点、形成不同Meisenheimer中间体、溶剂化或多限速步骤，线性Hammett关系与外推速率不再成立。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O154 · Curtin–Hammett快速构象平衡的双立体通道与Eyring选择性}
+\noindent\textbf{题目}\par
+某假想有机底物以两种互变构象A⇌B存在，构象B比A的标准自由能高3.000 kJ/mol，构象间互变远快于产物生成。A与B分别沿不同构型专一不可逆过渡态生成P\_A、P\_B，两条路径相对于各自构象的Eyring活化自由能ΔG‡\_A=83.00 kJ/mol、ΔG‡\_B=78.00 kJ/mol，产物不互变。T=320.0 K，h=6.62607015×10⁻³⁴ J s、kB=1.380649×10⁻²³ J/K、R=8.314462618 J/(mol K)。起始总底物0.01000 mol，恒温反应2.000 s，物料体积恒定。求构象平衡和两构象分数、各自Eyring速率、对总底物有效的两条消耗通道、总体一级速率及寿命、立体产物比；独立用Curtin–Hammett过渡态自由能差反算选择性；给出2 s后两产物及剩余底物摩尔数并检查分子守恒、快速构象平衡与反应选择性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 考虑有机底物存在两种快速互变构象A⇌B，构象内自由能G\_B−G\_A=+3.000 kJ/mol，因此B虽为较少构象，仍可能具有更快的产物生成途径。
+\item 假设A、B互变远快于两产物形成，整个反应期间底物保持构象Boltzmann平衡，且不可逆生成的不同立体产物P\_A、P\_B不发生互变。
+\item 定义K\_conf=[B]/[A]=exp[−(G\_B−G\_A)/(RT)]；构象占有率p\_A=1/(1+K\_conf)、p\_B=K\_conf/(1+K\_conf)，两者和为1。
+\item 在T=320 K，K\_conf=0.323824580329，p\_A=0.755387091960、p\_B=0.244612908040。
+\item 两路径各自相对于其起始构象的活化自由能分别ΔG‡\_A=83.00、ΔG‡\_B=78.00 kJ/mol，Eyring速率k\_i=(kBT/h)exp[−ΔG‡\_i/(RT)]。
+\item 利用kB=1.380649e-23 J/K、h=6.62607015e-34 J s，计算k\_A=0.188747849653、k\_B=1.23603943528 s⁻¹。
+\item 构象快速平衡下对总体底物的消耗通道为a=p\_Ak\_A=0.142577689263、b=p\_Bk\_B=0.302351200716 s⁻¹，而非单用k\_B/k\_A作为产物比。
+\item 总消耗常数k\_eff=a+b=0.444928889979 s⁻¹，B/A产物通量比b/a=2.12060668313。
+\item Curtin–Hammett关系将B路径的过渡态能量换算到构象A基准：ΔΔG‡\_TS=ΔG\_BA+ΔG‡\_B−ΔG‡\_A=−2.000 kJ/mol。
+\item 因此理论产物比P\_B/P\_A=exp[−ΔΔG‡\_TS/(RT)]=2.12060668313，与两构象分支计算一致。
+\item t=2 s内底物总转化率X=1−exp(−k\_eff t)=0.589285839616，平均等待时间1/k\_eff=2.24755016481 s。
+\item 初始0.01 mol，产物P\_A=0.00188836947252 mol、P\_B=0.00400448892364 mol、剩余底物=0.00410714160384 mol，总和回归初始投料。
+\item Curtin–Hammett选择性反映过渡态相对自由能，而不等于单纯最稳定构象选择性；某构象少但其过渡态更低时可以成为主要产物。
+\item 所有温度和自由能均以题设固定标准状态为前提，忽略溶剂粘度、构象互变速率有限、产物可逆和隧穿；若构象交换不够快，单一指数消耗模型需改为耦合常微分方程。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+B\_to\_A\_conformer\_equilibrium = 0.32382458 ratio；A\_conformer\_fraction = 0.755387092 fraction；B\_conformer\_fraction = 0.244612908 fraction；Eyring\_rate\_from\_A\_s = 0.18874785 s\textasciicircum{}-1；Eyring\_rate\_from\_B\_s = 1.23603944 s\textasciicircum{}-1；effective\_A\_product\_channel\_s = 0.142577689 s\textasciicircum{}-1；effective\_B\_product\_channel\_s = 0.302351201 s\textasciicircum{}-1；total\_consumption\_s = 0.44492889 s\textasciicircum{}-1；B\_over\_A\_product\_ratio = 2.12060668 ratio；Curtin\_Hammett\_product\_ratio = 2.12060668 ratio；substrate\_conversion\_2s = 0.58928584 fraction；product\_A\_mol = 0.00188836947 mol；product\_B\_mol = 0.00400448892 mol；remaining\_substrate\_mol = 0.0041071416 mol；mean\_substrate\_lifetime\_s = 2.24755016 s；TS\_B\_minus\_TS\_A\_from\_A\_kJ\_mol = -2 kJ/mol；molecular\_balance\_mol = 0.01 mol\par
+\noindent\textbf{模型前提：}
+所有温度和自由能均以题设固定标准状态为前提，忽略溶剂粘度、构象互变速率有限、产物可逆和隧穿；若构象交换不够快，单一指数消耗模型需改为耦合常微分方程。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{物理化学}
