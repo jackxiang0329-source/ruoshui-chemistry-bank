@@ -35,24 +35,24 @@
 13. 本模型要求封闭进料、单一充分混合库、常数α和同位素定量测量；温度依赖、重新混合或反应机理变化会破坏Rayleigh指数规律。
 
 ### 答案向量
-- initial_12C_mol = 0.9889240506329113 derived
-- initial_13C_mol = 0.011075949367088606 derived
-- residual_R_f04 = 0.011407141343789525 derived
-- residual_R_f07 = 0.01128018083236926 derived
-- reconstructed_alpha = 0.9800000000000002 derived
-- initial_delta13C_permil = 1.7889087656528524 derived
-- residual_delta_f04_permil = 20.316757047363467 derived
-- residual_delta_f07_permil = 8.960718458788763 derived
-- remaining_12C_f04_mol = 0.39556962025316456 derived
-- remaining_13C_f04_mol = 0.004512318569536996 derived
-- cumulative_product_12C_mol = 0.5933544303797468 derived
-- cumulative_product_13C_mol = 0.00656363079755161 derived
-- cumulative_product_isotope_ratio = 0.011061905770806981 derived
-- cumulative_product_delta13C_permil = -10.562990088821111 derived
-- instantaneous_product_isotope_ratio = 0.011178998516913735 derived
-- instantaneous_product_delta13C_permil = -0.08957809358367541 derived
-- total_12C_inventory_mol = 0.9889240506329113 derived
-- total_13C_inventory_mol = 0.011075949367088606 derived
+- initial_12C_mol = 0.9889240506329113 mol
+- initial_13C_mol = 0.011075949367088606 mol
+- residual_R_f04 = 0.011407141343789525 ratio
+- residual_R_f07 = 0.01128018083236926 ratio
+- reconstructed_alpha = 0.9800000000000002 dimensionless
+- initial_delta13C_permil = 1.7889087656528524 permil
+- residual_delta_f04_permil = 20.316757047363467 permil
+- residual_delta_f07_permil = 8.960718458788763 permil
+- remaining_12C_f04_mol = 0.39556962025316456 mol
+- remaining_13C_f04_mol = 0.004512318569536996 mol
+- cumulative_product_12C_mol = 0.5933544303797468 mol
+- cumulative_product_13C_mol = 0.00656363079755161 mol
+- cumulative_product_isotope_ratio = 0.011061905770806981 ratio
+- cumulative_product_delta13C_permil = -10.562990088821111 permil
+- instantaneous_product_isotope_ratio = 0.011178998516913735 ratio
+- instantaneous_product_delta13C_permil = -0.08957809358367541 permil
+- total_12C_inventory_mol = 0.9889240506329113 mol
+- total_13C_inventory_mol = 0.011075949367088606 mol
 
 审查状态：awaiting_expert_review，pending_cross_series_model_review，publishable=false。
 

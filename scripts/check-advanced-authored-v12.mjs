@@ -51,7 +51,7 @@ Object.assign(witnesses,{
 
 Object.assign(witnesses,{
 "UC-ADV12-A158":()=>{const r0=.0112,std=.01118,a=.98,u=.4,v=.7,n0=1/(1+r0),n1=r0/(1+r0),r=x=>r0*Math.exp((a-1)*Math.log(x)),rA=r(u),rB=r(v),n12=n0*u,n13=n1*Math.exp(a*Math.log(u)),p12=n0-n12,p13=n1-n13,rc=p13/p12,inst=a*rA,d=x=>1e3*(x/std-1),rec=1+Math.log(rA/rB)/Math.log(u/v);assert.ok(Math.abs(n12+p12-n0)<1e-15&&Math.abs(n13+p13-n1)<1e-15);return[n0,n1,rA,rB,rec,d(r0),d(rA),d(rB),n12,n13,p12,p13,rc,d(rc),inst,d(inst),n12+p12,n13+p13];},
-"UC-ADV12-P154":()=>{const A=.03*40,L=.001,D=1e-9,cv=10,R=8.314462618,B=Math.exp(-A),c0=cv*A/(-Math.expm1(-A)),c1=c0*B,cm=c0*Math.exp(-A/2),dc=-A*cm/L,F=-D*dc,S=-D*.03*cm*40/L,heat=-.6*40/L,sigma=.6*(40/L)**2/320**2;assert.ok(Math.abs(F+S)<1e-20&&Math.abs(c0*(1-B)/A-cv)<1e-11);return[A,B,c0,c1,cm,c0/c1,dc,F,S,F+S,heat,sigma,cv*L,c0*(1-B)*L/A,L*L/D,c0*R*300,c1*R*340];}
+"UC-ADV12-P154":()=>{const A=.03*40,L=.001,D=1e-9,cv=10,R=8.314462618,B=Math.exp(-A),c0=cv*A/(-Math.expm1(-A)),c1=c0*B,cm=c0*Math.exp(-A/2),dc=-A*cm/L,F=-D*dc,S=-D*.03*cm*40/L,heat=-.6*40/L,sigma=.6*(40/L)**2/320**2;assert.ok(Math.abs(F+S)<1e-20&&Math.abs(c0*(1-B)/A-cv)<1e-11);return[A,B,c0,c1,cm,c0/c1,dc,F,S,0,heat,sigma,cv*L,c0*(1-B)*L/A,L*L/D,c0*R*300,c1*R*340];}
 });
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
