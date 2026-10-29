@@ -141,6 +141,19 @@ Object.assign(witnesses,{
 "UC-ADV14-O220":()=>{let K=3,frac=1/(1+K),lam=.1*frac,u=Math.exp(-lam*20),v=Math.exp(-lam*60);return[frac,K/(1+K),lam,.02*u,.02*v,.02*(1-u),.02*(1-v),1-u,Math.log(2)/lam,1/frac]}
 });
 
+Object.assign(witnesses,{
+"UC-ADV14-P211":()=>{let L=2*Math.log(2/5)+3*Math.log(3/5),entropy=-8.314462618*L,g=8.314462618*298.15*L;return[2/5,3/5,2/5,3/5,entropy,g,0,-298.15,entropy/5,g/5]},
+"UC-ADV14-P212":()=>{let d=40000/8.314462618,base=298.15,p=T=>20*Math.exp(d*(1/base-1/T)),a=p(318.15),b=p(338.15);return[a,b,a/20,b/20,1/318.15-1/base,1/338.15-1/base,Math.log(a/20),1/(1/base-Math.log(101.325/20)/d),-d,b/a]},
+"UC-ADV14-P213":()=>{let w=2*Math.PI*1e-9,z=v=>{let x=w*v,d=1+x*x,real=(5*d+75)/d,loss=75*x/d;return[real,loss,loss/real]},a=z(10e6),b=z(100e6);return[a[0],a[1],a[2],b[0],b[1],b[2],80-5,1/(2*Math.PI*1e-3),37.5,b[1]/a[1]]},
+"UC-ADV14-P214":()=>{let u=4,v=6,a=2/u,b=1/u,c=4/v,d=1/v,r=.01*a*b,s=.01*c*d;return[a,b,1/u,r,c,d,1/v,s,s/r,1,.01*2/(4*4)]},
+"UC-ADV14-P215":()=>{let T=298.15,q=1.380649e-23*T,a=6*Math.PI*3e-12,d=q/a;return[d,d/2,2,a,2*a,2*d,d,Math.sqrt(2*d)*1e6,Math.sqrt(d)*1e6,3]},
+"UC-ADV14-P216":()=>{let f=T=>Math.pow(10,-17.44*(T-300)/(51.6+T-300)),a=f(310),b=f(320),c=f(330);return[Math.log10(a),Math.log10(b),Math.log10(c),a,b,c,100*a,100*b,100*c,a/c]},
+"UC-ADV14-P217":()=>{let f=(z,I)=>-.509*z*z*Math.sqrt(I),a=10**f(1,.001),b=10**f(2,.001),c=10**f(1,.01),d=10**f(2,.01);return[a,b,c,d,b/a,d/c,c/a,d/b,.005*d,f(2,.01)-f(2,.001)]},
+"UC-ADV14-P218":()=>{let k=96485.33212/(8.314462618*298.15),x=k*.05/2,a=2*Math.sinh(x),b=2*Math.sinh(2*x);return[a,-a,Math.exp(x),Math.exp(-x),Math.exp(2*x),b,b/a,0,k,a+(-a)]},
+"UC-ADV14-P219":()=>{let x=1e-8,y=1e-7,p=.1/x,q=.1/y,A=4*Math.PI*x*x,B=4*Math.PI*y*y,E=.05*A,G=.05*B;return[p,q,100000+p,100000+q,A,B,E,G,y/x,(x/y)**2,E/(1.380649e-23*298.15)]},
+"UC-ADV14-P220":()=>{let a=Math.sqrt(1/17),b=Math.sqrt(1/65),x=2*a/(1+a),y=(1-a)/(1+a),z=8*b/(1+b),w=4*(1-b)/(1+b);return[a,b,x,y,z,w,1+a,1+b,a/b,x*x/y,2]}
+});
+
 const starts={inorganic:["I",201],analytical:["A",201],organic:["O",198],physical:["P",198]};
 const allIDs=new Set(),titles=new Set(),families=new Set(),counts={};
 for(const [sub,[L,start]] of Object.entries(starts)){

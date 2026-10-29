@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 14,
   "status": "expert_review_pending",
-  "current_draft_count": 84,
+  "current_draft_count": 94,
   "expert_approved": 0,
-  "preliminary_flags": 99,
+  "preliminary_flags": 109,
   "pairs": [
     {
       "new_id": "UC-ADV14-I201",
@@ -614,6 +614,66 @@
       "prior_id": null,
       "reason": "需与之前所有辑别相似有机反应和方程逐式比对。",
       "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P211",
+      "prior_id": null,
+      "reason": "与前13辑全部方程逐式对照，专家评审未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P212",
+      "prior_id": null,
+      "reason": "与前13辑全部方程逐式对照，专家评审未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P213",
+      "prior_id": null,
+      "reason": "与前13辑全部方程逐式对照，专家评审未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P214",
+      "prior_id": null,
+      "reason": "与前13辑全部方程逐式对照，专家评审未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P215",
+      "prior_id": null,
+      "reason": "与前13辑全部方程逐式对照，专家评审未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P216",
+      "prior_id": null,
+      "reason": "与前13辑全部方程逐式对照，专家评审未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P217",
+      "prior_id": null,
+      "reason": "与前13辑全部方程逐式对照，专家评审未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P218",
+      "prior_id": null,
+      "reason": "与前13辑全部方程逐式对照，专家评审未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P219",
+      "prior_id": null,
+      "reason": "与前13辑全部方程逐式对照，专家评审未完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P220",
+      "prior_id": null,
+      "reason": "与前13辑全部方程逐式对照，专家评审未完成。",
+      "judgement": "pending_human_comparison"
     }
   ],
   "new_items_requiring_cross_series_comparison": [
@@ -1120,6 +1180,66 @@
       "model_family": "conformer-gated-intramolecular-cyclization-two-state",
       "judgement": "pending_human_comparison",
       "screening": "独立数值核算已执行，人工审核仍未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-P211",
+      "model_family": "binary-ideal-gas-mixing-Gibbs-entropy-partial-pressure",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量逐项已用独立见证复算，模型原创性仍待审查。"
+    },
+    {
+      "new_id": "UC-ADV14-P212",
+      "model_family": "liquid-vapor-Clausius-Clapeyron-integrated-vapor-pressure",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量逐项已用独立见证复算，模型原创性仍待审查。"
+    },
+    {
+      "new_id": "UC-ADV14-P213",
+      "model_family": "Debye-dielectric-frequency-loss-peak-permittivity",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量逐项已用独立见证复算，模型原创性仍待审查。"
+    },
+    {
+      "new_id": "UC-ADV14-P214",
+      "model_family": "Langmuir-Hinshelwood-two-gas-competitive-coverage-rate",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量逐项已用独立见证复算，模型原创性仍待审查。"
+    },
+    {
+      "new_id": "UC-ADV14-P215",
+      "model_family": "Stokes-Einstein-spherical-colloid-two-solvent-viscosities",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量逐项已用独立见证复算，模型原创性仍待审查。"
+    },
+    {
+      "new_id": "UC-ADV14-P216",
+      "model_family": "WLF-polymer-time-temperature-superposition-shift",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量逐项已用独立见证复算，模型原创性仍待审查。"
+    },
+    {
+      "new_id": "UC-ADV14-P217",
+      "model_family": "Debye-Huckel-limiting-ionic-strength-monovalent-divalent",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量逐项已用独立见证复算，模型原创性仍待审查。"
+    },
+    {
+      "new_id": "UC-ADV14-P218",
+      "model_family": "Butler-Volmer-electrode-current-overpotential-symmetry",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量逐项已用独立见证复算，模型原创性仍待审查。"
+    },
+    {
+      "new_id": "UC-ADV14-P219",
+      "model_family": "Laplace-pressure-nanodroplet-surface-energy-radius",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量逐项已用独立见证复算，模型原创性仍待审查。"
+    },
+    {
+      "new_id": "UC-ADV14-P220",
+      "model_family": "gas-phase-A2-dissociation-equilibrium-pressure",
+      "judgement": "pending_human_comparison",
+      "screening": "数值向量逐项已用独立见证复算，模型原创性仍待审查。"
     }
   ]
 }
