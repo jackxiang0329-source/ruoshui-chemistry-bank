@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 82,
+  "current_draft_count": 86,
   "expert_approved": 0,
-  "preliminary_flags": 82,
+  "preliminary_flags": 86,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -496,6 +496,30 @@
       "new_id": "UC-ADV12-P167",
       "prior_id": null,
       "reason": "预筛尚未证明与前十一辑无同构模型；需逐式核对历史候选、真实化学假设、数值稳定性和人工版权审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I172",
+      "prior_id": null,
+      "reason": "已完成新题算式与历史近期专题的初筛，仍待与全历史多模型逐式相似度与人工原创性复核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A172",
+      "prior_id": null,
+      "reason": "已完成新题算式与历史近期专题的初筛，仍待与全历史多模型逐式相似度与人工原创性复核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O168",
+      "prior_id": null,
+      "reason": "已完成新题算式与历史近期专题的初筛，仍待与全历史多模型逐式相似度与人工原创性复核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P168",
+      "prior_id": null,
+      "reason": "已完成新题算式与历史近期专题的初筛，仍待与全历史多模型逐式相似度与人工原创性复核。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -991,6 +1015,30 @@
       "model_family": "adiabatic-constant-volume-N2O4-dissociation-equilibrium-vanthoff-internal-energy-heatcapacities",
       "judgement": "pending_human_comparison",
       "screening": "已编写独立计算见证函数、完整中文解析和量纲守恒检查，仍不可视为专家已批准。"
+    },
+    {
+      "new_id": "UC-ADV12-I172",
+      "model_family": "CaNa-doped-NaCl-Schottky-vacancies-both-sublattices-charge-neutral-nondilute",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值见证函数可机算，真实体系合理性、文本版权与跨辑同构审定均未完成。"
+    },
+    {
+      "new_id": "UC-ADV12-A172",
+      "model_family": "chromatography-VanDeemter-threevelocity-ABC-inversion-optimal-plates-Gaussian-resolution",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值见证函数可机算，真实体系合理性、文本版权与跨辑同构审定均未完成。"
+    },
+    {
+      "new_id": "UC-ADV12-O168",
+      "model_family": "acetalization-aldehyde-excess-alcohol-water-inhibition-unique-equilibrium-vanthoff",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值见证函数可机算，真实体系合理性、文本版权与跨辑同构审定均未完成。"
+    },
+    {
+      "new_id": "UC-ADV12-P168",
+      "model_family": "binary-electrolyte-zerocurrent-ambipolar-diffusion-liquidjunction-potential-transference",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值见证函数可机算，真实体系合理性、文本版权与跨辑同构审定均未完成。"
     }
   ]
 }
