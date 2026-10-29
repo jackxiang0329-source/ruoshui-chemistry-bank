@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (676题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (680题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -13094,6 +13094,35 @@ HS\_fraction\_260K = 0.144712152 fraction；HS\_fraction\_400K = 0.541447086 fra
 本题不包含铁位点之间的协同相互作用，不能由单分子两态模型外推出一阶突变、磁滞或团簇有序。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I172 · Ca²⁺掺杂NaCl的非稀Schottky空位、电中性与温度耦合}
+\noindent\textbf{题目}\par
+在理想单晶NaCl中，有0.004000比例的Na子晶格位置被Ca²⁺取代，即Ca\_Na\textasciicircum{}•分数c=0.004000；Na空位V\_Na′（负一有效电荷）分数v和Cl空位V\_Cl\textasciicircum{}•（正一有效电荷）分数y均以各自子晶格位点数作分母，晶体无电子/空穴、间隙离子和其他缺陷。每个Na与Cl子晶格各恰好一个位点/化学式单元，Na占位分数为1−c−v、Cl占位分数为1−y，电中性要求v=c+y。假定Schottky缺陷形成平衡的理想位点活度乘积K(T)=[v/(1−c−v)]·[y/(1−y)]，900.0 K时K=1.000×10⁻⁶，形成反应焓近似ΔH=+100.0 kJ/mol、温度不变；K(T)=K(900 K) exp[(ΔH/R)(1/900−1/T)]，R=8.314462618 J/(mol K)。求900.0与1100.0 K的阴阳离子空位、Na/Cl占位、电荷平衡和位点数、温升K及空位增强倍数；求d y/d lnK与热力学唯一根的证明。说明若误以每个Ca都由一个Na空位补偿而忽略热激发Cl空位，会漏掉的内禀Schottky贡献，以及掺杂是否真正改变各子晶格的位点数量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 各子晶格的位点分母固定为1，Ca\_Na\textasciicircum{}•占Na位分数c=0.004；Na空位v，Na实际占位1−c−v；阴离子空位y，Cl实际占位1−y。
+\item Kröger–Vink有效电荷平衡为[Ca\_Na\textasciicircum{}•]+[V\_Cl\textasciicircum{}•]−[V\_Na′]=0，所以v=c+y；仅取v=c会把所有热Schottky对错误地忽略。
+\item 以理想占位分数为活度，Na空位/正常Na位的比为v/(1−c−v)，Cl空位/正常Cl位比为y/(1−y)。
+\item 代入v=c+y得到单变量方程K(T)=(c+y)y/[(1−2c−y)(1−y)]，有效域0<y<1−2c。
+\item 其对数导数dlnQ/dy=1/y+1/(c+y)+1/(1−2c−y)+1/(1−y)>0，且Q从0递增至无穷，故正根唯一。
+\item 温升平衡常数按指定形成焓的Van’t Hoff关系放大；本题并非在两温度保持同一K。
+\item 900 K的K=0.00000100000000000，1100 K的K=0.0000113559807828，ln(K1100/K900)=2.42974454636。
+\item 数值解900 K时Cl空位y=0.000234174026386、Na空位v=0.00423417402639；1100 K时相应y=0.00190155848709、v=0.00590155848709。
+\item 900 K Na占位=0.991765825974、Cl占位=0.999765825974；1100 K分别=0.990098441513、0.998098441513。
+\item 两温度必须逐项核对Na子晶格c+v+nNa=1、Cl子晶格y+nCl=1和有效电荷c+y−v=0。
+\item 回代Q900=0.00000100000000000、Q1100=0.0000113559807828，与温度相关平衡常数分别一致。
+\item 阴离子空位温升倍数=8.12027924889，两温度的Na空位/Cl空位比依次18.0813136783、3.10353771770。
+\item 对lnQ(y)=lnK隐式求导，得dy/dlnK=1/[1/y+1/(c+y)+1/(1−2c−y)+1/(1−y)]。
+\item 900 K与1100 K相应灵敏度0.000221802742600、0.00143401432996，高温内禀空位的热激发贡献更显著。
+\item Na与Cl占位数可不相等但各子晶格总位点数仍为1，晶体整体电中性通过掺杂缺陷的有效电荷严格满足。
+\item 模型不处理复合缺陷、缔合、位错、表面非化学计量和真实CaCl₂掺杂时的相平衡限制，不能直接用该理想缺陷分数替代实验定量结果。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Schottky\_K\_900 = 1e-06 dimensionless；Schottky\_K\_1100 = 1.13559808e-05 dimensionless；Cl\_vacancy\_900 = 0.000234174026 fraction；Cl\_vacancy\_1100 = 0.00190155849 fraction；Na\_vacancy\_900 = 0.00423417403 fraction；Na\_vacancy\_1100 = 0.00590155849 fraction；Na\_occupied\_900 = 0.991765826 fraction；Na\_occupied\_1100 = 0.990098442 fraction；Cl\_occupied\_900 = 0.999765826 fraction；Cl\_occupied\_1100 = 0.998098442 fraction；Cl\_vacancy\_growth\_factor = 8.12027925 ratio；Na\_to\_Cl\_vacancy\_ratio\_900 = 18.0813137 ratio；Na\_to\_Cl\_vacancy\_ratio\_1100 = 3.10353772 ratio；dy\_dlnK\_900 = 0.000221802743 fraction；dy\_dlnK\_1100 = 0.00143401433 fraction；Q\_Schottky\_900 = 1e-06 dimensionless；Q\_Schottky\_1100 = 1.13559808e-05 dimensionless；charge\_residual\_900 = 0 effective\_charge；charge\_residual\_1100 = 0 effective\_charge；Na\_sub\_lattice\_site\_sum\_900 = 1 sites；Na\_sub\_lattice\_site\_sum\_1100 = 1 sites；Cl\_sub\_lattice\_site\_sum\_900 = 1 sites；Cl\_sub\_lattice\_site\_sum\_1100 = 1 sites；vacancy\_charge\_compensation\_900 = 0.004 fraction；vacancy\_charge\_compensation\_1100 = 0.004 fraction；ln\_K\_high\_over\_low = 2.42974455 ratio；Na\_vacancy\_growth\_factor = 1.39379214 ratio；Na\_to\_Cl\_stoichiometric\_ratio\_900 = 0.991998126 ratio；Na\_to\_Cl\_stoichiometric\_ratio\_1100 = 0.991984759 ratio\par
+\noindent\textbf{模型前提：}
+模型不处理复合缺陷、缔合、位错、表面非化学计量和真实CaCl₂掺杂时的相平衡限制，不能直接用该理想缺陷分数替代实验定量结果。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -13666,6 +13695,35 @@ fluorescence\_F0 = 285.714286 integral；fluorescence\_F1 = 375 integral；fluor
 这里假设同一基体和同一Fmax,Kd，实际荧光测量应另查光漂白、淬灭、散射、移液和非线性曲线的参数稳定性。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A172 · Van Deemter三速度精确逆解与色谱分离度优化}
+\noindent\textbf{题目}\par
+一根长度L=25.00 cm的理想液相色谱柱，峰高等效理论板高度遵守Van Deemter模型H(u)=A+B/u+C u（u为线速度cm/s），其中A、B、C均未知正数。实测三组精确模拟数据：(u=0.2500 cm/s,H=0.01100 cm)、(u=0.5000 cm/s,H=0.008000 cm)、(u=1.000 cm/s,H=0.008000 cm)。两组不互变分析物保留因子k′₁=2.000、k′₂=2.500在所研究流速区间不变；死时间tM=L/u，保留时间tR,i=tM(1+k′i)，同一流速下各峰板数N=L/H，假设Gaussian峰标准差σti=tR,i/√N、基线宽w\_i=4σti。分离度定义Rs=2(tR,2−tR,1)/(w1+w2)，不使用容易混淆的近似保留因子公式。由三数据反演A、B、C，证明H最小化的最佳流速唯一，计算最佳流速下H、N、两峰保留时间及峰宽、Rs；与u=0.5000 cm/s比较N和Rs，核对反演单位与峰宽公式的精确一致性。讨论为什么在本简化模型中增大流速未必提高分离度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Van Deemter式中u以cm/s计，故A为cm，B为cm²/s，C为s；每项均返回cm的板高H。
+\item 把H(u)=A+B/u+Cu乘u，化成uH(u)=Cu²+Au+B，从三个不同u得到一个二次多项式插值逆问题。
+\item 令三组u=0.25、0.50、1.00 cm/s，先计算三个uH，再用相邻割线斜率求C与A，最后算B。
+\item 精确反演得到A=0.00200000000000 cm，B=0.00200000000000 cm²/s，C=0.00400000000000 s；三者均为正。
+\item 求导H′(u)=−B/u²+C，H″(u)=2B/u³>0，所以u*=√(B/C)是唯一全局极小点。
+\item 最优流速u*=0.707106781187 cm/s，最低板高Hmin=0.00765685424949 cm，理论板数N=L/Hmin=3265.04843705。
+\item 以u*计算死时间tM=L/u*，而不是使用另一个流速的死时间；分析物保留因子设为常数。
+\item 最优死时间=35.3553390593 s，保留时间分别tR1=106.066017178 s、tR2=123.743686708 s。
+\item Gaussian峰方差公式给σti=tRi/√N，基线宽wi=4σti，两个峰因保留时间不同故宽度不同。
+\item 标准差σ1=1.85622854527、σ2=2.16559996948 s，峰宽w1=7.42491418108、w2=8.66239987792 s。
+\item 直接代入分离度定义Rs=2Δt/(w1+w2)，得到Rs=√N (k′₂−k′₁)/[2(2+k′₁+k′₂)]。
+\item 最优Rs=2.19771547504，由板数公式独立验算得2.19771547504。
+\item 基准u=0.5000 cm/s下理论板数N=3125.00000000，Rs=2.15006536298；最优分离度提高因子1.02216216906。
+\item 虽然随u增加死时间缩短，峰宽也按tM缩短，但Rs直接依赖√N，而H(u)先降后升。
+\item 该题不包含保留因子随流速变化、梯度洗脱和非Gaussian拖尾；实际分离度还受载样量、颗粒粒径及检测器采集速率制约。
+\item 校验每个给定H数值均由反演后的A+B/u+Cu严格恢复，不把H的三个测量值误当成三个未知流速。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+H\_u0p25\_cm = 0.011 cm；H\_u0p5\_cm = 0.008 cm；H\_u1\_cm = 0.008 cm；VanDeemter\_A\_cm = 0.002 cm；VanDeemter\_B\_cm2\_per\_s = 0.002 cm2/s；VanDeemter\_C\_s = 0.004 s；optimal\_velocity\_cm\_s = 0.707106781 cm/s；minimum\_H\_cm = 0.00765685425 cm；optimum\_theoretical\_plates = 3265.04844 plates；optimum\_dead\_time\_s = 35.3553391 s；peak1\_retention\_time\_s = 106.066017 s；peak2\_retention\_time\_s = 123.743687 s；peak1\_sigma\_s = 1.85622855 s；peak2\_sigma\_s = 2.16559997 s；peak1\_baseline\_width\_s = 7.42491418 s；peak2\_baseline\_width\_s = 8.66239988 s；optimum\_resolution\_Rs = 2.19771548 ratio；resolution\_from\_plate\_formula = 2.19771548 ratio；plates\_at\_u0p5 = 3125 plates；Rs\_at\_u0p5 = 2.15006536 ratio；peak\_retention\_separation\_s = 17.6776695 s；sum\_baseline\_width\_s = 16.0873141 s；resolution\_improvement\_factor = 1.02216217 ratio；optimal\_velocity\_over\_reference = 1.41421356 ratio；retention\_time\_ratio = 1.16666667 ratio；optimal\_velocity\_squared = 0.5 cm2/s2；inverse\_minimum\_H\_per\_cm = 130.601937 cm\textasciicircum{}-1\par
+\noindent\textbf{模型前提：}
+校验每个给定H数值均由反演后的A+B/u+Cu严格恢复，不把H的三个测量值误当成三个未知流速。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第12辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -14228,6 +14286,36 @@ k\_endo\_298\_s = 0.000224441434 s\textasciicircum{}-1；k\_exo\_298\_s = 0.0001
 实际Diels–Alder反应还可能涉及溶剂活度、逆环加成、次级轨道作用、底物构象和产物异构化；这些均不在理想模型内。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O168 · 水抑制缩醛形成的非线性物料平衡与反应焓温度效应}
+\noindent\textbf{题目}\par
+在固定体积1.000 L的理想液相反应器中，假想脂肪醛A与某单羟基醇ROH发生可逆缩醛化：A+2ROH⇌Acetal+H₂O。反应物/产物均保持单相且忽略活度系数，定义全部物种的无量纲活度a\_i=[i]/c°，标准态c°=1.000 mol/L。因此K=[Acetal][H₂O]c°/([A][ROH]²)。初始[A]₀=0.02000 mol/L、[ROH]₀=0.1000 mol/L，缩醛初始为零。对比两种初始水含量W₀=0.01000与0.04000 mol/L，在298.15 K时K=20.00（无量纲）。另假定缩醛化标准反应焓ΔrH°=−25.00 kJ/mol在298.15—323.15 K保持常数，323.15 K的K由Van’t Hoff式外推，讨论W₀=0.01000 mol/L时升温后的反应进度。计算每种条件的唯一物理进度、剩余醛/醇、生成缩醛与水浓度、醛转化率、标准反应商回代和水含量对反应进度的局域灵敏度∂ξ/∂W₀，检查C/H/O原子可通过所述反应的整体计量严格守恒，并解释水抑制与放热反应升温的双重影响。不可把K误写成含单位的经验常数或把水活度强行置为1。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 固定体积、只有一条缩醛化总反应，以反应进度ξ(mol/L)记[A]=A0−ξ、[ROH]=R0−2ξ、[Acetal]=ξ、[H2O]=W0+ξ。
+\item 依据给定浓度标准态c°=1 M，无量纲反应商Q=ξ(W0+ξ)c°/[(A0−ξ)(R0−2ξ)²]，不能直接省略标准态做量纲运算。
+\item 物理范围0<ξ<min(A0,R0/2)=0.02000 M，保证全部组分浓度正且无负物料。
+\item 求lnQ关于ξ的导数1/ξ+1/(W0+ξ)+1/(A0−ξ)+4/(R0−2ξ)>0，因此Q从0严格上升到无穷，各条件有唯一平衡根。
+\item 298.15 K下K=20.00，固定A0、R0，分别代入W0=0.01000与0.04000 M，使用保界二分计算。
+\item 较低初始水含量的进度ξ=0.0157076851671 M，较高水含量ξ=0.0133611306618 M；水增多造成减少量0.00234655450533 M。
+\item 两条件下醛转化率依次0.785384258357与0.668056533090，显示初始水抑制缩醛生成。
+\item 低水条件的剩余醛=0.00429231483286、剩余醇=0.0685846296657、缩醛=0.0157076851671、水=0.0257076851671 M。
+\item 高水条件的剩余醛=0.00663886933819、剩余醇=0.0732777386764、缩醛=0.0133611306618、水=0.0533611306618 M。
+\item 由平衡lnQ(ξ,W0)=lnK，固定温度对W0隐式求导：dξ/dW0=−[1/(W0+ξ)]/[1/ξ+1/(W0+ξ)+1/(A0−ξ)+4/(R0−2ξ)]<0。
+\item 298 K时低水、高水条件灵敏度依次-0.0987635489861与-0.0627185054316，符号均为负。
+\item Van’t Hoff积分ln[K(T2)/K(T1)]=−ΔH°/R(1/T2−1/T1)。ΔH°<0的放热反应升温后K降低。
+\item 323.15 K时K=9.16627176135，低水进度ξ=0.0135024787355 M，较298 K减少0.00220520643163 M。
+\item 323 K下剩余醛=0.00649752126449、醇=0.0729950425290、缩醛=0.0135024787355、水=0.0235024787355 M。
+\item 回代三个无量纲Q分别20.0000000000、20.0000000000、9.16627176135，应等于各自K。
+\item 物种在反应中C/H/O骨架守恒：一分子醛+两分子醇生成一分子缩醛与一分子水；各物种总分子数减少一，但原子数不变。
+\item 此处不含酸催化的动力学、水的非理想活度和挥发移除，实际缩醛合成常通过共沸蒸馏带水驱动，不能把该模型直接当实验转化率。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+K298 = 20 dimensionless；K323 = 9.16627176 dimensionless；extent\_low\_water\_298\_M = 0.0157076852 mol/L；extent\_high\_water\_298\_M = 0.0133611307 mol/L；extent\_low\_water\_323\_M = 0.0135024787 mol/L；conversion\_low\_water\_298 = 0.785384258 fraction；conversion\_high\_water\_298 = 0.668056533 fraction；conversion\_low\_water\_323 = 0.675123937 fraction；aldehyde\_remaining\_low\_water\_298\_M = 0.00429231483 mol/L；alcohol\_remaining\_low\_water\_298\_M = 0.0685846297 mol/L；acetal\_produced\_low\_water\_298\_M = 0.0157076852 mol/L；water\_final\_low\_water\_298\_M = 0.0257076852 mol/L；aldehyde\_remaining\_high\_water\_298\_M = 0.00663886934 mol/L；alcohol\_remaining\_high\_water\_298\_M = 0.0732777387 mol/L；acetal\_produced\_high\_water\_298\_M = 0.0133611307 mol/L；water\_final\_high\_water\_298\_M = 0.0533611307 mol/L；aldehyde\_remaining\_323\_M = 0.00649752126 mol/L；alcohol\_remaining\_323\_M = 0.0729950425 mol/L；acetal\_produced\_323\_M = 0.0135024787 mol/L；water\_final\_323\_M = 0.0235024787 mol/L；d\_extent\_d\_initial\_water\_low\_298 = -0.098763549 ratio；d\_extent\_d\_initial\_water\_high\_298 = -0.0627185054 ratio；d\_extent\_d\_initial\_water\_323 = -0.130793419 ratio；extent\_difference\_due\_water\_M = 0.00234655451 mol/L；extent\_difference\_due\_heating\_M = 0.00220520643 mol/L；reaction\_quotient\_low\_water\_298 = 20 dimensionless；reaction\_quotient\_high\_water\_298 = 20 dimensionless；reaction\_quotient\_323 = 9.16627176 dimensionless；consumed\_alcohol\_low\_water\_298\_M = 0.0314153703 mol/L；acetal\_to\_remaining\_aldehyde\_ratio\_298 = 3.65949046 ratio；K323\_over\_K298 = 0.458313588 ratio；aldehyde\_material\_balance\_low\_water\_298\_M = 0.02 mol/L\par
+\noindent\textbf{模型前提：}
+此处不含酸催化的动力学、水的非理想活度和挥发移除，实际缩醛合成常通过共沸蒸馏带水驱动，不能把该模型直接当实验转化率。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第12辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -14787,6 +14875,36 @@ pressure\_x1 = 0.05 fraction；pressure\_x2 = 0.2 fraction；adsorbed\_v1\_cm3ST
 adiabatic\_equilibrium\_extent\_xi = 0.0426381131 mol\_progress；adiabatic\_equilibrium\_temperature\_K = 268.642917 K；adiabatic\_temperature\_drop\_K = 31.3570834 K；final\_N2O4\_mol = 0.957361887 mol；final\_NO2\_mol = 0.0852762263 mol；final\_total\_mol = 1.04263811 mol；Kc\_at\_final\_temperature = 0.00759591004 dimensionless；concentration\_quotient\_at\_final = 0.00759591004 dimensionless；Kc\_equilibrium\_residual = 0 dimensionless；isothermal\_300K\_extent = 0.146107219 J/K；adiabatic\_over\_isothermal\_extent = 0.291827559 J/K；final\_total\_Cv\_J\_K = 74.7868094 J/K；reactant\_sensible\_internal\_energy\_J = -2345.09622 J；reaction\_reference\_energy\_J = 2345.09622 J；adiabatic\_internal\_energy\_residual\_J = 0 J；deltaU\_reaction\_at\_final\_kJ\_mol = 55.1567854 kJ/mol；deltaH\_reaction\_at\_final\_kJ\_mol = 57.3904069 kJ/mol；final\_total\_pressure\_bar = 0.931543557 bar；final\_N2O4\_partial\_pressure\_bar = 0.855353633 bar；final\_NO2\_partial\_pressure\_bar = 0.0761899246 bar；converted\_Kp\_at\_final = 0.00678655515 dimensionless；Kp\_from\_partial\_pressures = 0.00678655515 dimensionless；pressure\_form\_equilibrium\_residual = 0 dimensionless；final\_NO2\_mole\_fraction = 0.0817889018 fraction；final\_N2O4\_mole\_fraction = 0.918211098 fraction；reaction\_DeltaCv\_J\_mol\_K = -5 J/(mol K)；log\_Kc\_final\_over\_reference = -2.57756024 dimensionless；dimensionless\_ideal\_gas\_composition\_term = -0.295188467 dimensionless；reaction\_reference\_energy\_kJ = 2.34509622 kJ；temperature\_for\_trial\_xi0p3\_K = 75.5102041 K；NO2\_to\_N2O4\_concentration\_ratio = 3.56296725 ratio\par
 \noindent\textbf{模型前提：}
 模型忽略温度相关热容、NO₂二聚以外的反应、容器热容及非理想气体压缩性；实验平衡还应验证反应时间尺度和传热边界。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P168 · 二元电解质零电流扩散：Nernst–Einstein反演、双极扩散与液接电势}
+\noindent\textbf{题目}\par
+在298.15 K，理想1:1强电解质M⁺X⁻的平板液接区厚度L=1.000 mm，左、右端总电解质浓度分别为cL=0.1000 mol/L、cR=0.01000 mol/L。溶液局域电中性[c+]=[c−]=c(x)，D+=1.300×10⁻⁹ m²/s、D−=2.000×10⁻⁹ m²/s，活度系数取1、无对流和反应、离子通量满足Nernst–Planck式J±=−D±[dc/dx±(F c/(RT))dφ/dx]。稳态开路条件是总电流密度F(J+−J−)=0；由该约束消去电场得到双极（互扩散）系数Damb=2D+D−/(D++D−)。设浓度沿厚度线性，且可使用局域理想Nernst–Einstein电导率κ(c)=F² c(D++D−)/(RT)。F=96485.33212 C/mol、R=8.314462618 J/(mol K)。求转移数、Damb、中心浓度c=0.0550 mol/L处电导率、通量、局域电势梯度和跨液接区Δφ=φR−φL；分别以中点局域电场代回两离子通量并验证零电流、扩散系数反演和单位。比较中心局域电场与跨膜平均电场，说明开路不意味着零离子流，也不能把平均电场生搬硬套进局域Nernst–Planck方程。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 强电解质M⁺X⁻遵循局域电中性，1:1离子在同一点浓度相同为c，左0.1000 M与右0.01000 M须转换为100与10 mol/m³。
+\item 对Nernst–Planck式J+=−D+[c′+(F c/RT)φ′]、J−=−D−[c′−(F c/RT)φ′]，开路J+=J−而不是两者分别为0。
+\item 由J+−J−=0解出φ′=−(RT/F)[(D+−D−)/(D++D−)]·c′/c。
+\item 定义离子转移数t+=D+/(D++D−)、t−=D−/(D++D−)，二者相加等于1，t+−t−=(D+−D−)/(D++D−)。
+\item 本题t+=0.393939393939、t−=0.606060606061，差-0.212121212121；阳离子扩散更慢，形成不为零的液接电势。
+\item 用电场表达式消去迁移项，可得共同盐通量J+=J−=−Damb dc/dx，其中Damb=2D+D−/(D++D−)。
+\item Damb=1.57575757576e-9 m²/s，沿x从左到右的浓度梯度dc/dx=-90000.0000000 mol/m⁴。
+\item 故稳定盐通量J=0.000141818181818 mol/(m²s)，两个离子以同一数量向右扩散。
+\item 局域电导率κ(c)=F² c(D++D−)/(RT)，取中心浓度c=55.0 mol/m³；它不是整段非均匀液接区的串联等效电导率。
+\item 中心κ=0.681601006149 S/m、电阻率=1.46713398451 Ωm；可由κ反演总扩散系数D++D−=3.30000000000e-9 m²/s。
+\item 对φ′=−(RT/F)(t+−t−)(c′/c)在两端积分得Δφ=−(RT/F)(t+−t−)ln(cR/cL)。
+\item 液接电势Δφ=-0.0125489529636 V，即-12.5489529636 mV；平均电势梯度Δφ/L=-12.5489529636 V/m。
+\item 但中心局域电势梯度应直接用c=55.0 mol/m³算，φ′mid=-8.91808531490 V/m，与平均值不相同。
+\item 将中点c、c′与φ′mid代入J±，它们应分别等于Damb×正向浓度梯度的共同盐流。
+\item 中点J+=0.000141818181818、J−=0.000141818181818 mol/(m²s)，总电流密度F(J+−J−)按代数约束为0。
+\item 对平板内非均匀浓度，局域电场随1/c变化，平均场不是局域Nernst–Planck式的可替代值；用平均场会产生虚假的净电流。
+\item 本题不含Debye长度尺度的空间电荷层、热扩散、浓差对流与非理想活度系数；真实高浓度盐还需扩展浓度依赖迁移数和热力学因子。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+cation\_diffusivity\_m2\_s = 1.3e-09 m2/s；anion\_diffusivity\_m2\_s = 2e-09 m2/s；diffusivity\_sum\_m2\_s = 3.3e-09 m2/s；cation\_transference\_number = 0.393939394 fraction；anion\_transference\_number = 0.606060606 fraction；transference\_number\_difference = -0.212121212 fraction；ambipolar\_diffusivity\_m2\_s = 1.57575758e-09 m2/s；midpoint\_conductivity\_S\_m = 0.681601006 S/m；midpoint\_resistivity\_ohm\_m = 1.46713398 ohm m；liquid\_junction\_potential\_V = -0.012548953 V；liquid\_junction\_potential\_mV = -12.548953 mV；average\_electric\_field\_V\_m = -12.548953 V/m；local\_midpoint\_electric\_field\_V\_m = -8.91808531 V/m；ambipolar\_salt\_flux\_mol\_m2\_s = 0.000141818182 mol/(m2 s)；cation\_flux\_at\_midpoint\_mol\_m2\_s = 0.000141818182 mol/(m2 s)；anion\_flux\_at\_midpoint\_mol\_m2\_s = 0.000141818182 mol/(m2 s)；zero\_current\_density\_A\_m2 = 0 A/m2；linear\_concentration\_gradient\_mol\_m4 = -90000 mol/m4；midpoint\_concentration\_mol\_m3 = 55 mol/m3；diffusivity\_ratio\_cation\_anion = 0.65 ratio；transference\_ratio\_cation\_anion = 0.65 ratio；diffusion\_time\_scale\_s = 64.2999819 s；conductivity\_inverse\_sum\_D\_m2\_s = 3.3e-09 m2/s；local\_dimensionless\_potential\_log\_coefficient\_V = 0.00544994103 V；left\_to\_right\_concentration\_ratio = 10 ratio；junction\_potential\_per\_log\_concentration\_V = 0.00544994103 V；local\_field\_per\_concentration\_gradient = 9.90898368e-05 V m3/mol；junction\_potential\_absolute\_V = 0.012548953 V\par
+\noindent\textbf{模型前提：}
+本题不含Debye长度尺度的空间电荷层、热扩散、浓差对流与非理想活度系数；真实高浓度盐还需扩展浓度依赖迁移数和热力学因子。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
