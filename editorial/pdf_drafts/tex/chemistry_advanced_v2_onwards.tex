@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (583题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (587题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -10660,6 +10660,32 @@ molar\_cell\_volume\_m3\_mol = 3.85417009e-05 m3/mol；formula\_mass\_g\_mol = 1
 本题把声子谱压缩为恒定有效γ，忽略温度相关热容、晶体弹性各向异性与声子非谐性；不代表真实ScF₃精确实测。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I149 · CeO2-x 氧空位—Ce3+电中性与氧分压双态质量作用反演}
+\noindent\textbf{题目}\par
+一理想化CeO₂₋ₓ无机氧化物在固定温度下与氧气平衡，氧移除反应为2Ce\_Ceˣ+O\_Oˣ ⇌ 2Ce\_Ce′+V\_O\textasciicircum{}\{••\}+½O₂(g)。每Ce阳离子位点中Ce³⁺分数2x、Ce⁴⁺分数1−2x，两个氧位点中空位分数x/2、正常氧位点分数1−x/2；气体分压相对1 bar为无量纲。采用理想位点活度的质量作用式K=[Ce³⁺]²[V\_O](p\_O₂/bar)\textasciicircum{}\{1/2\}/([Ce⁴⁺]²[O\_O])。已知氧分压p₁=0.01000 bar时x₁=0.04000，温度不变降压到p₂=0.0001000 bar。推导仅含x的平衡方程并反演K与新非化学计量x₂，求Ce³⁺/Ce⁴⁺、空位/氧位点分数、每Ce相对理想氧化物释放的O₂量，并检查缺陷电荷平衡、气体氧原子数、正根唯一性和理想缺陷模型失效界限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 在理想化CeO₂₋ₓ萤石氧化物中，以每一个Ce为计量基准，原先两个氧位点中有x个氧空位，实际化学式CeO₂₋ₓ，要求0<x<1/2。
+\item 从氧晶格移除一个O²⁻形成一个带形式+2有效电荷的氧空位V\_O\textasciicircum{}\{••\}，伴随两个Ce(IV)还原为Ce(III)，故每Ce的Ce³⁺分数为2x。
+\item 相应Ce⁴⁺阳离子位点分数为1−2x；氧位点中空位分数x/2、被氧占据的分数1−x/2，分别按对应子晶格而非混用总原子位数计。
+\item 氧释放反应可写作2Ce\_Ceˣ+O\_Oˣ ⇌ 2Ce\_Ce′+V\_O\textasciicircum{}\{••\}+½O₂(g)，两侧有效电荷相等。
+\item 题设用无量纲理想位点活度构造质量作用常数K=([Ce³⁺]²[V\_O]p\_O2\textasciicircum{}\{1/2\})/([Ce⁴⁺]²[O\_O])，气体分压相对1 bar为无量纲。
+\item 代入子晶格分数得到K=[2x³/((1−2x)²(1−x/2))]√(p\_O2/bar)；系数2来源于两个还原Ce位点与一半氧空位。
+\item 已知p₁=0.01 bar时x₁=0.04，计算K=0.0000154315034142，没有单位。
+\item 第二次氧分压降至10⁻⁴ bar时保持同温，求f(x)=2x³/[(1−2x)²(1−x/2)]=K/√p₂；f(x)在0<x<1/2严格递增，正物理解唯一。
+\item 二分法求x₂=0.0804822892511；对应Ce³⁺分数0.160964578502、Ce⁴⁺分数0.839035421498。
+\item 氧子晶格空位分数=0.0402411446255、被占位分数=0.959758855374；低分压使x增大，和释放氧的方向一致。
+\item 每Ce放出氧气的量为x₂/2=0.0402411446255 mol O₂/mol Ce（相对于CeO₂理想参照），总式量中的O数2−x₂=1.91951771075。
+\item 逐Ce检查有效电荷：两个Ce³⁺形式负有效电荷总数2x，空位正有效电荷2x；Ce位点和氧位点各自分数和严格为1。
+\item 实际CeO₂在较大缺氧时可能出现缺陷缔合、电子小极化子、非理想活度与相边界；本题仅在题设理想混合及恒温条件内成立。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+dimensionless\_K = 1.54315034e-05 dimensionless；x\_at\_0p01bar = 0.04 fraction；Ce3\_fraction\_at\_initial = 0.08 fraction；x\_at\_1e4bar = 0.0804822893 fraction；Ce3\_cation\_fraction = 0.160964579 fraction；Ce4\_cation\_fraction = 0.839035421 fraction；vacancy\_oxygen\_sublattice\_fraction = 0.0402411446 fraction；occupied\_oxygen\_site\_fraction = 0.959758855 fraction；oxygen\_evolved\_mol\_per\_Ce = 0.0402411446 mol/mol；vacancy\_increase\_ratio = 2.01205723 ratio；oxygen\_stoichiometric\_coefficient = 1.91951771 O/Ce；charge\_neutrality\_ratio = 2 charge ratio；oxygen\_pressure\_sqrt\_ratio = 10 ratio；defect\_ratio\_at\_two\_pressures = 10 ratio\par
+\noindent\textbf{模型前提：}
+实际CeO₂在较大缺氧时可能出现缺陷缔合、电子小极化子、非理想活度与相边界；本题仅在题设理想混合及恒温条件内成立。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第11辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -11178,6 +11204,31 @@ thermal\_attenuation100 = 0.560499122 dimensionless；thermal\_attenuation400 = 
 frequency\_0p1bar\_Hz = 99833.7488 Hz；frequency\_1bar\_Hz = 99339.9268 Hz；mass\_0p1bar\_kg = 3.33333333e-12 kg；mass\_1bar\_kg = 1.33333333e-11 kg；inverse\_mass\_slope\_bar\_kg = 2.5e+10 bar/kg；inverse\_mass\_intercept\_per\_kg = 5e+10 kg\textasciicircum{}-1；saturation\_mass\_kg = 2e-11 kg；Langmuir\_K\_per\_bar = 2 bar\textasciicircum{}-1；mass\_0p5bar\_kg = 1e-11 kg；frequency\_0p5bar\_Hz = 99503.719 Hz；coverage\_0p5bar = 0.5 fraction；adsorption\_rate\_bar\_inv\_s = 0.04 bar\textasciicircum{}-1s\textasciicircum{}-1；relaxation\_time\_0p5bar\_s = 25 s；coverage\_from\_mass\_ratio = 0.5 fraction\par
 \noindent\textbf{模型前提：}
 低压p→0时f→f₀，高压覆盖饱和时m\_ads→m\_max；真实水汽竞争、刚度变化、非均匀吸附、气体黏滞和多种位点会使质量频移和Langmuir假设失效。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A148 · 双波长标准加入—双组分消光矩阵满秩反演与质量复算}
+\noindent\textbf{题目}\par
+某分析化学样品含有两种重叠吸收的有色配合物A和B，用1.000 cm比色皿测量450与550 nm两点吸光度。摩尔消光系数矩阵ε=[[25000,5000],[10000,20000]] L/(mol·cm)，行代表波长、列代表A和B；两波长仪器空白基线分别为0.01000和0.02000。样品的初始吸光度为0.35000000000000、0.30000000000000。采用保持总体积不变的标准加入方式，仅对A增加5.000 μmol/L，加标后的吸光度为0.47500000000000、0.35000000000000。求加标双波长响应比、消光矩阵行列式及两组分原始浓度与比例；如果原样总体积200.0 mL，A/B摩尔质量分别300.0/200.0 g/mol，求两组分质量。用原始与加标吸光度两组相互独立观测验证反演及线性秩唯一性，讨论基线、体积和非理想吸收的局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将假想双组分光学比色溶液中的待测A和干扰B视为各满足Beer–Lambert定律，并有两波长固定光学背景A\_base；比色光程L=1.000 cm。
+\item 给定450 nm时摩尔消光系数ε\_A=25000、ε\_B=5000 L/(mol·cm)，550 nm时分别10000、20000，均被认为不随浓度改变。
+\item 对两波长写A450−A\_base450=L(ε\_A450 c\_A+ε\_B450 c\_B)，A550−A\_base550=L(ε\_A550 c\_A+ε\_B550 c\_B)。
+\item 在同一总体积中只对待测A加入已知浓度增量Δc\_A=5.000 μmol/L，B浓度和基线保持不变，故两波长光吸收增量只等于L ε\_A Δc\_A。
+\item 实测的450与550 nm初始吸光度分别为0.350000000000、0.300000000000，加标后分别0.475000000000、0.350000000000。
+\item 两波长增量分别0.125000000000和0.0500000000000，与ε\_A450/ε\_A550=2.500的比值完全吻合。
+\item 正确扣去基线0.01000和0.02000后，双波长线性方程矩阵为[[25000,5000],[10000,20000]]；行列式非零确保两组分唯一识别。
+\item 行列式为450000000.000 (L/(mol·cm))²；用Cramér法则求c\_A=0.0000120000000000、c\_B=0.00000800000000000 mol/L。
+\item 目标与干扰组分浓度比c\_A/c\_B=1.50000000000，两组都非负，且相互混色不是简单单波长标准曲线可消除。
+\item 若样品体积200.0 mL、两组分摩尔质量分别300.0和200.0 g/mol，则A总质量=0.000720000000000 g、B总质量=0.000320000000000 g。
+\item 由回算c\_A、c\_B再分别重建两吸光度并加回背景，与原始两读数完全相同；加标读数的两波长差也应独立复现。
+\item 若摩尔消光系数矩阵近奇异、出现化学络合、散射、内滤效应、加标体积改变或基线漂移，本反演可能严重偏差；不能把数值线性唯一性等同于实验无误差。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+abs\_initial\_450 = 0.35 abs；abs\_initial\_550 = 0.3 abs；abs\_spiked\_450 = 0.475 abs；abs\_spiked\_550 = 0.35 abs；spike\_delta\_450 = 0.125 abs；spike\_delta\_550 = 0.05 abs；two\_wavelength\_determinant = 450000000 L2/mol2/cm2；analyte\_A\_mol\_L = 1.2e-05 mol/L；interferent\_B\_mol\_L = 8e-06 mol/L；concentration\_A\_over\_B = 1.5 ratio；mass\_A\_in\_200mL\_g = 0.00072 g；mass\_B\_in\_200mL\_g = 0.00032 g；reconstructed\_abs\_450 = 0.35 abs；reconstructed\_abs\_550 = 0.3 abs；inverse\_design\_determinant = 2.22222222e-09 inverse-determinant\par
+\noindent\textbf{模型前提：}
+若摩尔消光系数矩阵近奇异、出现化学络合、散射、内滤效应、加标体积改变或基线漂移，本反演可能严重偏差；不能把数值线性唯一性等同于实验无误差。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -11706,6 +11757,32 @@ isoelectric\_pH = 6.11452823 pH；mean\_charge\_pH7 = -0.0903106545 charge；mea
 本统计假设各位点互不影响且只发生质子酸碱交换；真实短肽的静电pKa耦合、离子强度、构象及盐桥需通过多微观酸解离常数重新求解。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O145 · 酶促手性醇动力学拆分的双一级指数与底物/产物ee保真审计}
+\noindent\textbf{题目}\par
+一种假想酶以恒定过量酰基供体催化消旋二级醇R-OH与S-OH分别发生O-酰化生成保持原手性碳构型的R-酯和S-酯。初始两对映体各为1.000 mmol，反应在恒温下不可逆且无消旋、酯水解和竞争副反应；供体缓冲使两路径呈伪一级，k\_R=0.08000 min⁻¹、k\_S=0.02000 min⁻¹。求10.00 min后两种剩余醇及对应酯的摩尔量、总转化率、剩余底物S-ee和生成酯R-ee、动力学拆分因子E及双半衰期；由解析反函数求剩余底物ee达到90.00\%时的唯一时间和相应转化率。检查两对映骨架分别守恒、所有分数物理有效、羟基酰化与碳手性构型关系及模型失效条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假设初始消旋手性二级醇R与S各1.000 mmol，分别与大量酰基供体发生不可逆、保留手性碳构型的酶催化O-酰化反应。
+\item 酰基供体恒定过量使两对映体服从不同伪一级速率k\_R=0.08000 min⁻¹和k\_S=0.02000 min⁻¹，酯产物不再水解或消旋。
+\item 对两对映体独立积分d[R]/dt=−k\_R[R]、d[S]/dt=−k\_S[S]，得到[R]\_t=[R]\_0e\textasciicircum{}(−k\_Rt)、[S]\_t=[S]\_0e\textasciicircum{}(−k\_St)。
+\item 每一消耗的醇骨架形成同构型的手性酯，产物量分别[R]\_0(1−e\textasciicircum{}(−k\_Rt))、[S]\_0(1−e\textasciicircum{}(−k\_St))；供体提供酰基且不计入醇骨架数。
+\item 10.00 min时R与S剩余比例分别0.449328964117、0.818730753078，余下物质的量分别0.000449328964117、0.000818730753078 mol。
+\item 两种酯产物分别0.000550671035883、0.000181269246922 mol，总醇骨架数及各对映体分别严格守恒。
+\item 总转化率c=1−(e\textasciicircum{}(−k\_Rt)+e\textasciicircum{}(−k\_St))/2=0.365970141402，在(0,1)内。
+\item 未反应醇以S为过量构型，ee\_S=(S\_rem−R\_rem)/(S\_rem+R\_rem)=0.291312612452。
+\item 生成酯以R为过量构型，ee\_P=(R\_ester−S\_ester)/(R\_ester+S\_ester)=0.504688425598。
+\item 理想双一级模型的选择性系数E=k\_R/k\_S=4.00000000000，各半衰期分别8.66433975700与34.6573590280 min。
+\item 由剩余底物ee\_S=tanh[(k\_R−k\_S)t/2]，严格单调递增，故达到90.00\%剩余S-醇ee的正时间唯一。
+\item 反函数t=2atanh(0.9)/(k\_R−k\_S)=49.0739829861 min；届时转化率=0.802759906956，回代验证ee=0.9000。
+\item 产物酯的手性保留以反应只发生在羟基氧为前提；若酰化伴随SN2手性碳取代、消旋、反应逆转或酶失活，动力学拆分与产物构型公式均不再成立。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+R\_substrate\_survival\_10min = 0.449328964 fraction；S\_substrate\_survival\_10min = 0.818730753 fraction；R\_remaining\_mol = 0.000449328964 mol；S\_remaining\_mol = 0.000818730753 mol；R\_ester\_product\_mol = 0.000550671036 mol；S\_ester\_product\_mol = 0.000181269247 mol；conversion\_10min = 0.365970141 fraction；remaining\_substrate\_ee\_S = 0.291312612 fraction；ester\_product\_ee\_R = 0.504688426 fraction；enantioselectivity\_factor\_E = 4 ratio；half\_life\_R\_min = 8.66433976 min；half\_life\_S\_min = 34.657359 min；time\_for\_90pct\_substrate\_ee\_min = 49.073983 min；conversion\_at\_90pct\_ee = 0.802759907 fraction；verified\_target\_ee = 0.9 fraction；molecular\_skeleton\_total\_mol = 0.002 mol\par
+\noindent\textbf{模型前提：}
+产物酯的手性保留以反应只发生在羟基氧为前提；若酰化伴随SN2手性碳取代、消旋、反应逆转或酶失活，动力学拆分与产物构型公式均不再成立。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第11辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -12232,6 +12309,32 @@ thermal\_voltage\_V = 0.0256925791 V；open\_circuit\_voltage\_V = 0.41411545 V�
 inferred\_tank\_number = 3 tanks；RTD\_variance\_s2 = 4800 s2；RTD\_sd\_s = 69.2820323 s；per\_tank\_mean\_residence\_s = 40 s；Laplace\_denominator = 1.8 dimensionless；series\_conversion = 0.828532236 fraction；PFR\_conversion = 0.909282047 fraction；single\_CSTR\_conversion = 0.705882353 fraction；outlet\_A\_M = 0.085733882 mol/L；outlet\_B\_M = 0.414266118 mol/L；product\_flux\_mol\_s = 0.0069044353 mol/s；required\_heat\_removal\_W = 414.266118 W；unconverted\_fraction = 0.171467764 fraction；single\_tank\_survival = 0.555555556 fraction；RTD\_density\_at\_mean\_s\_inv = 0.00560104519 s\textasciicircum{}-1；per\_tank\_exit\_rate\_s\_inv = 0.025 s\textasciicircum{}-1\par
 \noindent\textbf{模型前提：}
 与n→∞趋向PFR、n=1趋向CSTR的极限相容；若存在旁路、非等体积、反应放热改变k或反应非一级，必须重新标定RTD与反应耦合。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P145 · 半无限扩散Randles复阻抗双频去嵌入与Warburg/电荷转移唯一反演}
+\noindent\textbf{题目}\par
+某恒温电化学电极采用线性Randles小信号阻抗模型：Z(ω)=R\_s+[1/(R\_ct+σ(1−i)/√ω)+iω C\_dl]⁻¹。已知溶液电阻R\_s=10.00 Ω，双电层电容C\_dl=20.00 μF，半无限扩散Warburg参数σ单位Ω√(rad/s)，角频率ω用rad/s。两次EIS实验在ω₁=1.000 rad/s、ω₂=100.0 rad/s分别测得复阻抗Z₁=149.775174427437-40.3590832218194i Ω，Z₂=108.175447075882-24.2266795553407i Ω。求两点阻抗模长与相位，依次扣除R\_s、反演并联导纳、扣除电容导纳后，唯一重建R\_ct与σ，并用第二频点独立复核；求R\_ctC\_dl时间常数与相应近似频率。检查Warburg平方根频率标度、复阻抗单位、被动网络符号和半无限扩散模型边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假设一个电化学反应电极服从题设线性小信号Randles网络，串联溶液电阻R\_s=10.00 Ω，双电层电容C\_dl=20.00 μF。
+\item 电荷转移支路由R\_ct与半无限扩散Warburg阻抗串联，Z\_F(ω)=R\_ct+σ(1−i)/√ω，ω单位rad/s；本题定义的σ单位Ω·√(rad/s)。
+\item 总复阻抗为Z(ω)=R\_s+[1/Z\_F(ω)+iωC\_dl]⁻¹，两频率分别ω₁=1.000、ω₂=100.0 rad/s，电容导纳必须有正虚部。
+\item 给定R\_ct=100.0 Ω、σ=40.00 Ω√(rad/s)，先对Warburg项进行实虚拆分：ω=1时Z\_F=140−40i Ω。
+\item 并联导纳取Y=1/Z\_F+iωC\_dl；倒数计算时若Y=a+ib，则Z\_parallel=(a−ib)/(a²+b²)，总实部加R\_s。
+\item ω₁的阻抗为Re=149.775174427、Im=-40.3590832218 Ω，模长155.117563394 Ω，相位-15.0809708079°。
+\item ω₂的阻抗为Re=108.175447076、Im=-24.2266795553 Ω，模长110.855127767 Ω，相位-12.6235064643°。
+\item 反演时先从总阻抗扣除R\_s，再求并联部分的导纳1/(Z−R\_s)，减去已知iωC\_dl，得到远法拉第导纳1/Z\_F。
+\item 再求一次复倒数恢复ω₁的Z\_F=140.000000000-40.0000000000i Ω。
+\item 由ImZ\_F=−σ/√ω求σ=40.0000000000 Ω√(rad/s)，由ReZ\_F+ImZ\_F=R\_ct得R\_ct=100.000000000 Ω。
+\item 在ω₂进行独立复算同样得到σ=40.0000000000和R\_ct=100.000000000，并非仅用首个频点自洽。
+\item 由R\_ct C\_dl得双电层RC时间常数τ=0.00200000000000 s，对应粗略频率f=79.5774715459 Hz；这不是包含Warburg时Nyquist峰频的精确公式。
+\item 模型适用于小扰动、线性稳定电极、半无限扩散且C\_dl已独立标定；有限层扩散、常相位元件、法拉第副反应与电极老化都会导致复平面模型偏差。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Z1\_real\_ohm = 149.775174 ohm；Z1\_imag\_ohm = -40.3590832 ohm；Z1\_modulus\_ohm = 155.117563 ohm；Z1\_phase\_deg = -15.0809708 degree；Z100\_real\_ohm = 108.175447 ohm；Z100\_imag\_ohm = -24.2266796 ohm；Z100\_modulus\_ohm = 110.855128 ohm；Z100\_phase\_deg = -12.6235065 degree；recovered\_Zfar1\_real = 140 ohm；recovered\_Zfar1\_imag = -40 ohm；recovered\_Zfar100\_real = 104 ohm；recovered\_Zfar100\_imag = -4 ohm；sigma\_from\_1rad\_s = 40 ohm sqrt(rad/s)；Rct\_from\_1rad\_s = 100 ohm；sigma\_from\_100rad\_s = 40 ohm sqrt(rad/s)；RC\_timescale\_s = 0.002 s；RC\_frequency\_Hz = 79.5774715 Hz\par
+\noindent\textbf{模型前提：}
+模型适用于小扰动、线性稳定电极、半无限扩散且C\_dl已独立标定；有限层扩散、常相位元件、法拉第副反应与电极老化都会导致复平面模型偏差。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
