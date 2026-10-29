@@ -10,6 +10,46 @@ const F=96485.33212;
 const T=280,J=2400,q=Math.exp(-J/(R*T)),Z=1+3*q,p=3*q/Z;
 const w={
 
+"UC-ADV10-I124":()=>{
+ const R=8.314462618,V=.1*R*800/1e5,initial=.1,Ka=Math.exp(20000/(R*800)),Kb=Ka*Math.exp(-30000/R*(1/800-1/900));
+ const quotient=(t,x)=>Math.sqrt(t/800)*(1+15*x)**1.5/(1-10*x);
+ const solve=(t,K)=>{let x=.07;for(let i=0;i<30;i++){const y=Math.log(quotient(t,x)/K),dy=2.25/(1+15*x)+10/(1-10*x),n=x-y/dy;assert.ok(n>0&&n<.1);if(Math.abs(n-x)<1e-15){x=n;break;}x=n;}return x};
+ const a=solve(800,Ka),b=solve(900,Kb),pb=(.2+.5*a)*R*800/V/1e5,pc=(.2+.5*b)*R*900/V/1e5;
+ assert.ok(Math.abs(.1-a+.001+a-.101)<1e-12&&Math.abs(.3-2*a+2*(.001+a)-.302)<1e-12&&Math.abs(3*(.1-a)+2*(.1+1.5*a)-.5)<1e-12);
+ return[Ka,a,.1-a,.1+1.5*a,.3-2*a,.001+a,pb,(.001+a)*(2*55.845+14.007),Kb,b,pc,a-b];
+},
+"UC-ADV10-A124":()=>{
+ const ν0=1e7/532,c2=1.438776877;
+ const temp=(nu,g,r)=>c2*nu/Math.log(g*((ν0+nu)/(ν0-nu))**4/r);
+ const r1=0.02133710278800315,r2=0.004378206489836753,T1=temp(1000,.85,r1),T2=temp(1500,1.1,r2);
+ const ratio=(nu,g,T)=>g*((ν0+nu)/(ν0-nu))**4*Math.exp(-c2*nu/T),T=(T1+T2)/2;
+ const N=50000*5,Na=N*r1,sd=T*T/(c2*1000)*Math.sqrt(1/Na+1/N);
+ assert.ok(Math.abs(T1-T2)<1e-9&&Na>0&&Math.abs(ratio(1000,.85,T)-r1)<1e-13);
+ return[ν0,T1,T2,ratio(750,.95,T),1/Math.expm1(c2*1000/T),N,Na,sd,T-298.15,ratio(1000,.85,T),ratio(1500,1.1,T),50000*r1];
+},
+"UC-ADV10-O121":()=>{
+ const kL=.4189736659610103,fL=.9547139414657723,kH=.19373665961010278,fH=.020646582882403595;
+ const low=[kL*fL,kL*(1-fL)],hi=[kH*fH,kH*(1-fH)];
+ const rho=low.map((z,i)=>Math.log10(hi[i]/z)),k0=[.1*.4,.1*.6];
+ const k=(i,s)=>k0[i]*10**(rho[i]*s),K=s=>k(0,s)+k(1,s);
+ const cross=Math.log10(k0[0]/k0[1])/(rho[1]-rho[0]),s=.25,t=5;
+ const X=1-Math.exp(-t*K(s)),p1=X*k(0,s)/K(s),p2=X*k(1,s)/K(s);
+ assert.ok(Math.abs(low[0]-k(0,-.5))<1e-12&&Math.abs(hi[1]-k(1,.5))<1e-12&&Math.abs(p1+p2-X)<1e-13);
+ return[k0[0],k0[1],...rho,cross,K(cross),K(s),X,p1,p2,.01*p1,Math.log(2)/K(s),K(-.5),K(.5),hi[0]/kH];
+},
+"UC-ADV10-P121":()=>{
+ const e0=8.8541878128e-12,emin=3,omega=f=>2*Math.PI*f;
+ const rp1=13.922038051755305,rp2=4.1039960202045025,ip1=3.790761522252711,ip2=3.504255993835879;
+ const d1=rp1-emin,d2=rp2-emin,ratio=d1/d2;
+ const tau=Math.sqrt((ratio-1)/(omega(10000)**2-ratio*omega(1000)**2));
+ const D=d1*(1+(omega(1000)*tau)**2);
+ const diel=f=>D*omega(f)*tau/(1+(omega(f)*tau)**2),sig=e0*omega(1000)*(ip1-diel(1000));
+ const pr=f=>emin+D/(1+(omega(f)*tau)**2),loss=f=>diel(f)+sig/(e0*omega(f)),fp=1/(2*Math.PI*tau),c= sig/(e0*omega(fp));
+ assert.ok(sig>0&&Math.abs(loss(10000)-ip2)<1e-12&&Math.abs(pr(10000)-rp2)<1e-12);
+ return[tau,D,sig,emin+D,ratio,fp,pr(fp),loss(fp),loss(fp)/pr(fp),omega(fp)*e0*loss(fp)*100**2,c,c/loss(fp),pr(1000),loss(10000)];
+},
+
+
 "UC-ADV10-I123":()=>{
  const l=.15406,k=.9,inst=.001,t1=28.549454718055497*Math.PI/360,t2=47.487855126001165*Math.PI/360;
  const w=[.004612100601993621,.005741285023320927].map(b=>Math.sqrt(b*b-inst*inst));

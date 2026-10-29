@@ -2,7 +2,7 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 92,
+  "current_draft_count": 96,
   "preliminary_flags": 43,
   "pairs": [
     {
@@ -264,7 +264,7 @@
       "judgement": "pending_human_comparison"
     }
   ],
-  "notes": "第十辑92条待专家审校记录；43组带有具体先前对照对象的初步相似性标记（未确认重复）。本轮4题另入人工核心模型比对清单，专家批准0。",
+  "notes": "第十辑96条待专家审校记录；此前43组初步跨辑数学模型相似性标记仍未获人工判断。本轮4题新增比较请求，自动QA成功不代表专家批准。",
   "expert_approved": 0,
   "new_items_requiring_cross_series_comparison": [
     {
@@ -746,6 +746,30 @@
       "model_family": "DLVO-exponential-screened-repulsion-Hamaker-attraction-two-stationary-barriers",
       "judgement": "pending_human_comparison",
       "screening": "已配置机器独立复算；必须人工逐式对照旧辑数学模型并核查化学条件。不是原创性已认证或专家审核批准。"
+    },
+    {
+      "new_id": "UC-ADV10-I124",
+      "model_family": "Fe-ammonia-gas-solid-nitridation-closed-volume-two-temperature-equilibrium-element-conservation",
+      "judgement": "pending_human_comparison",
+      "screening": "全部主要数值答案另附独立witness。旧辑气固平衡、光谱热布居、竞争动力学、阻抗/极化模型相似性尚须人工逐式核对，未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV10-A124",
+      "model_family": "dual-mode-Raman-antiStokes-Boltzmann-thermometry-instrument-response-Poisson-error",
+      "judgement": "pending_human_comparison",
+      "screening": "全部主要数值答案另附独立witness。旧辑气固平衡、光谱热布居、竞争动力学、阻抗/极化模型相似性尚须人工逐式核对，未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV10-O121",
+      "model_family": "dual-channel-Hammett-substituent-dependent-ionization-SN2-branching-crossover",
+      "judgement": "pending_human_comparison",
+      "screening": "全部主要数值答案另附独立witness。旧辑气固平衡、光谱热布居、竞争动力学、阻抗/极化模型相似性尚须人工逐式核对，未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV10-P121",
+      "model_family": "Debye-dielectric-relaxation-DC-conductivity-complex-spectrum-two-frequency-inverse-heating",
+      "judgement": "pending_human_comparison",
+      "screening": "全部主要数值答案另附独立witness。旧辑气固平衡、光谱热布居、竞争动力学、阻抗/极化模型相似性尚须人工逐式核对，未获专家批准。"
     }
   ]
 }
