@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (559题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至11辑 (563题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -10509,6 +10509,31 @@ Nc300\_cm3 = 4.7e+17 cm\textasciicircum{}-3；Nc150\_cm3 = 1.66170094e+17 cm\tex
 真实补偿受主、多个施主能级、带隙收缩、Mott相变及载流子简并会改变反演；此模型假定局域电中性与施主热平衡并忽略空穴。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I143 · 57Fe Mössbauer核反冲与Einstein振动无声子分数反演}
+\noindent\textbf{题目}\par
+假想含57Fe的晶体中核共振γ跃迁能Eγ=14.4125 keV，核质量为56.9354u（1u=1.66053906660×10⁻²⁷ kg），将核振动简化为单一一维Einstein声子，ℏω=25.00 meV。假设凝聚态Mössbauer无声子分数f(T)=exp\{−[E\_R/(ℏω)]coth[ℏω/(2kBT)]\}，自由单核反冲能E\_R=Eγ²/(2mc²)。真空c=299792458 m/s，h=6.62607015×10⁻³⁴ J·s，1eV=1.602176634×10⁻¹⁹ J，kB=8.617333262145×10⁻⁵ eV/K。求80.00 K和300.0 K的无声子分数及比值、反冲能（eV和meV）、γ波长（pm）、自然线宽Γ=4.660×10⁻⁹ eV所对应τ=ℏ/Γ、1.000 mm/s多普勒能移与等效线宽速度，并检查低温/高温物理极限及假设有效性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将57Fe 14.4125 keV核共振γ光子的能量从keV换算为eV，采用给定核质量m=56.9354u、u=1.66053906660×10⁻²⁷ kg，并使用真空c。
+\item 若光子由自由单核发射或吸收，反冲动量p=Eγ/c，单核反冲能E\_R=p²/(2m)=Eγ²/(2mc²)；此处能量与mc²必须取相同单位。
+\item 计算核质量m=9.45434559725e-26 kg、反冲能E\_R=0.00195833127260 eV=1.95833127260 meV；自由核反冲不等于凝聚态无声子事件的必然损失。
+\item 题设简化为独立一维Einstein谐振子，单一声子量子ℏω=25.00 meV，谐振子平均位移〈x²〉=ℏ(2mω)⁻¹coth(ℏω/(2kBT))。
+\item Debye–Waller无反冲几率f=exp[−(E\_R/(ℏω))coth(ℏω/(2kBT))]，不是简单的exp(−E\_R/kBT)；指数必须无量纲。
+\item 计算比值E\_R/(ℏω)=0.0783332509040，80.00 K时f=0.920704297430，300.0 K时f=0.839928534459。
+\item 300 K与80 K无声子分数比f300/f80=0.912267420499，升温使位移涨落增大，因此该比值应小于1。
+\item γ光子波长λ=hc/Eγ=86.0254629198 pm；相关转换需要1 pm=10⁻¹² m。
+\item 给定自然宽度Γ=4.66e-9 eV，寿命τ=ℏ/Γ=1.41247201062e-7 s（以Γ为能量半高全宽的约定）。
+\item 对低速度沿束向多普勒位移ΔE≈Eγv/c，1.000 mm/s对应4.80749252204e-8 eV；令ΔE=Γ求特征速度0.0969320280507 mm/s。
+\item 若T→0，coth(ℏω/(2kBT))→1，f→exp(−E\_R/ℏω)；T高时coth x≈1/x，故f随T降低且始终0<f≤1。
+\item 模型要求单一Einstein模、谐振位移、无非谐性与局域结构动态；真实Mössbauer无声子分数应由声子谱及晶格Debye模型表征，且核跃迁选择定则与超精细分裂均未考虑。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+nuclear\_mass\_kg = 9.4543456e-26 kg；recoil\_energy\_eV = 0.00195833127 eV；recoil\_energy\_meV = 1.95833127 meV；recoil\_over\_phonon = 0.0783332509 ratio；recoilless\_80K = 0.920704297 fraction；recoilless\_300K = 0.839928534 fraction；recoilless\_ratio\_300\_80 = 0.91226742 ratio；gamma\_wavelength\_pm = 86.0254629 pm；natural\_linewidth\_eV = 4.66e-09 eV；mean\_lifetime\_s = 1.41247201e-07 s；linewidth\_equiv\_velocity\_mm\_s = 0.0969320281 mm/s；doppler\_shift\_1mm\_s\_eV = 4.80749252e-08 eV；phonon\_over\_kT300 = 0.967043177 ratio\par
+\noindent\textbf{模型前提：}
+模型要求单一Einstein模、谐振位移、无非谐性与局域结构动态；真实Mössbauer无声子分数应由声子谱及晶格Debye模型表征，且核跃迁选择定则与超精细分裂均未考虑。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第11辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -10877,6 +10902,31 @@ axial\_shape\_parameter = 5 dimensionless；observed\_zero\_lag\_amplitude = 0.0
 mass\_to\_charge\_z12\_Th = 2057.58228 Th；mass\_to\_charge\_z13\_Th = 1899.3842 Th；neighbor\_charge\_peak\_gap\_Th = 158.198077 Th；deduced\_charge\_number = 12 charge；neutral\_monoisotopic\_mass\_Da = 24678.9 Da；C13\_spacing\_z12\_Th = 0.0836129029 Th；C13\_spacing\_z13\_Th = 0.0771811412 Th；oxidized\_neutral\_mass\_Da = 24694.8949 Da；oxidized\_mz\_z12\_Th = 2058.91519 Th；oxidized\_mz\_z13\_Th = 1900.61458 Th；oxidation\_shift\_z12\_Th = 1.33290955 Th；oxidation\_shift\_z13\_Th = 1.23037805 Th；minimum\_C13\_resolving\_power = 24608.4301 dimensionless；minimum\_oxidation\_resolving\_power = 1543.67734 dimensionless；spacing\_to\_peak\_gap\_ratio = 0.000528532992 ratio\par
 \noindent\textbf{模型前提：}
 完整检查包括两电荷态中性质量一致、质子加合计数、同位素间距及正整数唯一性；质谱不能仅凭+O质量差断定氧插入位置，也需警惕K/Na加合与多聚体。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A142 · 单分子动态力谱Bell–Evans峰力反演与存活概率双速率校验}
+\noindent\textbf{题目}\par
+原子力显微镜单分子动态力谱在298.15 K测定一配体–受体复合物不可逆解离，假设Bell势垒k(F)=k₀ exp(Fxβ/kBT)，加载力F(t)=rt，加载率分别r₁=100.0 pN/s和r₂=1000.0 pN/s，且每次从F=0开始，忽略回结合与仪器弹性。测得两组断裂力分布众数分别为47.096657464895 pN、70.792589401793 pN。取kB=1.380649×10⁻²³ J/K，1 pN·nm=10⁻²¹ J。推导生存概率S(F)与断裂力密度p(F)，由峰条件唯一反演零力解离速率k₀和势垒距离xβ；求两个峰时的速率k(F*)、生存概率、第一峰前断裂比例，并验证众数大于零、正根唯一及物理解边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 实验为单分子动态力谱，假设一个不可逆解离势垒和恒力加载速率r=dF/dt，零力解离速率k₀以及势垒距离xβ固定。
+\item Bell模型给k(F)=k₀exp(Fxβ/kBT)；将kBT换算为pN·nm，1 pN·nm=10⁻²¹ J。
+\item 随时间加载F=rt，未断裂存活概率S(F)满足dS/dF=−[k(F)/r]S；积分得到S(F)=exp\{−[k₀kBT/(r xβ)](exp(Fxβ/kBT)−1)\}。
+\item 断裂力分布p(F)=k(F)S(F)/r，其对数导数为dlnp/dF=xβ/kBT−k(F)/r；内部极大处条件k(F*)=r xβ/kBT。
+\item 当r xβ/(k₀kBT)>1时，峰值力F*=(kBT/xβ)ln[r xβ/(k₀kBT)]；若参数不满足该不等式，则最大值在F=0的边界。
+\item T=298.15 K得kBT=4.11640499350 pN·nm。给定两加载率r₁=100和r₂=1000 pN/s，各自理论众数分别47.0966574649及70.7925894018 pN。
+\item 两峰相减消除k₀：F₂*−F₁*=(kBT/xβ)ln(r₂/r₁)，反推xβ=0.400000000000 nm；因为r₂>r₁且峰差正，唯一正解。
+\item 再由峰条件k₀=(r₁ xβ/kBT)exp(−F₁*xβ/kBT)=0.100000000000 s⁻¹；第二加载率回代得到相同k₀。
+\item 峰时瞬时解离速率k(F₁*)=9.71721685868 s⁻¹，k(F₂*)=97.1721685868 s⁻¹，按加载速率同比增加。
+\item 由存活积分求S₁(F₁*)=0.371684840213、S₂(F₂*)=0.368258221232，其各自断裂分数为1−S。
+\item 令F→0得S→1；F增大S单调下降到0；同时用峰值条件和二阶导数负号证明两个内部众数唯一。
+\item 本题忽略回结合、仪器柔性、加载率波动、多势垒、分子异质性与力依赖xβ；若出现多峰或突变路径，不能将两个众数直接解释为唯一分子机理。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+thermal\_energy\_pN\_nm = 4.11640499 pN nm；peak\_force\_100\_pN = 47.0966575 pN；peak\_force\_1000\_pN = 70.7925894 pN；peak\_force\_difference\_pN = 23.6959319 pN；transition\_distance\_nm = 0.4 nm；zero\_force\_offrate\_s = 0.1 s\textasciicircum{}-1；force\_offrate\_peak\_100\_s = 9.71721686 s\textasciicircum{}-1；force\_offrate\_peak\_1000\_s = 97.1721686 s\textasciicircum{}-1；survival\_at\_peak\_100 = 0.37168484 fraction；survival\_at\_peak\_1000 = 0.368258221 fraction；ruptured\_fraction\_at\_peak\_100 = 0.62831516 fraction；loading\_rate\_ratio = 10 ratio；force\_acceleration\_factor\_100 = 97.1721686 ratio\par
+\noindent\textbf{模型前提：}
+本题忽略回结合、仪器柔性、加载率波动、多势垒、分子异质性与力依赖xβ；若出现多峰或突变路径，不能将两个众数直接解释为唯一分子机理。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -11253,6 +11303,31 @@ activation\_enthalpy\_kJ\_mol = 84 kJ/mol；activation\_entropy\_magnitude\_J\_m
 热顺旋和光反旋仅在题设标记与允许的选择定则内区分；真实光吸收谱、激发态内转换、产物再照射、遮光及温升都会改变常数速率和光子平衡。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O139 · 肽酰胺EX2氘交换门控速率反演与双位点同位素峰卷积}
+\noindent\textbf{题目}\par
+某假想多肽的酰胺位点1通过闭合C⇌开放O构象门控后进行H/D交换，开环一级常数k\_o、关环一级常数k\_c；开放态本征交换率k\_int，满足准稳态EX2近似k\_obs=k\_o k\_int/(k\_c+k\_int)。两缓冲pH下k\_int分别为0.05000和0.5000 s⁻¹，实测对应表观交换常数0.00081300813008130及0.0028735632183908 s⁻¹，构象速率不变。分子上另有独立位点2，交换速率k\_ref=0.001000 s⁻¹。第二pH下在D₂O中标记600.0 s，总肽浓度20.00 μmol/L，每个H→D质量净增1.006276746 Da。求k\_o、k\_c、开放平衡分数、各位点交换概率、0D/1D/2D同位素峰摩尔分数、平均氘引入数、质心质量增量及双重标记浓度；检查速率反演唯一性、概率归一和EX2条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 在EX2交换模型中肽链的同一酰胺NH可闭合C⇌开放O，开启一级常数k\_o、关闭一级常数k\_c；只有开放态以本征常数k\_int被D₂O不可逆氘交换。
+\item 假定k\_c+k\_int≫k\_o，故开放态准稳态，未交换底物消耗的表观速率k\_obs=k\_o k\_int/(k\_c+k\_int)，而不是k\_o+k\_int。
+\item 两种pH缓冲条件改变本征交换常数k\_int，但不改变构象开关常数，给定k\_int,1=0.05000 s⁻¹，k\_int,2=0.5000 s⁻¹。
+\item 观测的两个HDX表观常数分别为0.000813008130081、0.00287356321839 s⁻¹；写倒数1/k\_obs=1/k\_o+(k\_c/k\_o)/k\_int。
+\item 由两组点(1/k\_int,1/k\_obs)的斜率求k\_c/k\_o=49.0000000000，截距1/k\_o=250.000000000 s；两横坐标不同确保唯一。
+\item 反算k\_o=0.00400000000000 s⁻¹、k\_c=0.196000000000 s⁻¹，两者均正，回代两实验的k\_obs精确吻合。
+\item 原构象开放平衡分数k\_o/(k\_o+k\_c)=0.0200000000000，不是可直接等同于任意pH时交换概率。
+\item 在第二条件D₂O交换600.0 s，第一位点交换概率p₁=1−exp(−k\_obs,2 t)=0.821673284544。
+\item 另一个独立的快速可接触NH位点假定k\_ref=0.001 s⁻¹，其交换概率p₂=1−exp(−k\_ref t)=0.451188363906。
+\item 将两个独立位点的伯努利交换组合成M+0D、M+1D、M+2D三组分，概率分别0.09786777647、0.5314027986、0.3707294249，求和为1。
+\item 平均氘交换数〈N\_D〉=p₁+p₂=1.27286164845，若单个H→D净质量增量1.006276746 Da，则质心平均增量1.28085107771 Da。
+\item 总肽物质浓度20.00 μmol/L时双重标记组分浓度=0.00000741458849837 mol/L。若EX2失效而转成EX1，或者不同位点交换相关，单指数/独立卷积模型均需修正。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+HDX\_kobs\_pH1\_s = 0.00081300813 s\textasciicircum{}-1；HDX\_kobs\_pH2\_s = 0.00287356322 s\textasciicircum{}-1；inverse\_rate\_slope = 49 dimensionless；inverse\_rate\_intercept\_s = 250 s；opening\_rate\_s = 0.004 s\textasciicircum{}-1；closing\_rate\_s = 0.196 s\textasciicircum{}-1；open\_equilibrium\_fraction = 0.02 fraction；site1\_exchange\_prob\_600s = 0.821673285 fraction；site2\_exchange\_prob\_600s = 0.451188364 fraction；M0\_isotopologue\_fraction = 0.0978677765 fraction；M1\_isotopologue\_fraction = 0.531402799 fraction；M2\_isotopologue\_fraction = 0.370729425 fraction；mean\_D\_incorporations = 1.27286165 D/molecule；mean\_mass\_shift\_Da = 1.28085108 Da；doubly\_labelled\_molar\_conc = 7.4145885e-06 mol/L；isotopologue\_probability\_sum = 1 ratio；exact\_open\_state\_probability\_under\_intrinsic\_exchange = 0.00571428571 fraction\par
+\noindent\textbf{模型前提：}
+总肽物质浓度20.00 μmol/L时双重标记组分浓度=0.00000741458849837 mol/L。若EX2失效而转成EX1，或者不同位点交换相关，单指数/独立卷积模型均需修正。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第11辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -11627,6 +11702,32 @@ c≥c\_min存在一族行波速度，只有陡峭初始前沿的经典KPP选择�
 dielectric\_capacitance\_per\_area\_F\_m2 = 2.65625634e-05 F/m2；initial\_contact\_angle\_cosine = -0.342020143 ratio；voltage\_contact\_angle\_cosine = -0.176004122 ratio；electrowetted\_contact\_angle\_deg = 100.137097 degree；initial\_footprint\_radius\_mm = 0.642604611 mm；electrowetted\_footprint\_radius\_mm = 0.712104213 mm；footprint\_radius\_ratio = 1.10815298 ratio；wetted\_area\_mm2 = 1.59307779 mm2；drop\_height\_mm = 0.850717678 mm；stored\_charge\_nC = 1.2694869 nC；capacitor\_energy\_nJ = 19.0423035 nJ；field\_MV\_m = 30 MV/m；breakdown\_voltage\_V = 50 V；electrocapillary\_free\_energy\_density\_J\_m2 = 0.0119531535 J/m2\par
 \noindent\textbf{模型前提：}
 若预测cosθ>1、击穿、出现接触角饱和、接触角滞后、漏电或液滴不再球冠，则Young–Lippmann理想曲线和电容模型失效；本计算并非真实材料的饱和角预测。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P139 · 三态燃料驱动化学马达的非平衡环流、熵产生和绕行涨落}
+\noindent\textbf{题目}\par
+某理想单分子化学马达在恒定燃料活度下沿三个状态E₁⇌E₂⇌E₃⇌E₁运行；各边顺时针一级跃迁速率k₊=8.000 s⁻¹，逆时针k₋=2.000 s⁻¹，任一步顺向消耗1个燃料F并生成W，逆向复原F；储液池与环境温度T=298.15 K恒定。所有态的跃迁速率相同，满足局域详细平衡ln(k₊/k₋)=Δμ\_step/(RT)，R=8.314462618 J/(mol·K)。求稳态状态概率、每边顺/逆/净流和净完整循环通量、每循环无量纲亲和势与每摩尔驱动力、每分子熵产生率(单位kB/s)和每摩尔马达耗散功率；以60.00 s内净有向步数除以3作为广义绕行计数，给出期望、方差和标准差，并检查涨落统计、反向路径权重、局域概率守恒与详细平衡极限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设三态单分子催化环E₁⇌E₂⇌E₃⇌E₁，均匀正向转移速率k₊，逆向k₋，每一步前进相当于消耗一个化学燃料分子F并生成W，且储液池保持活度不变。
+\item 列出连续时间Markov主方程dp\_i/dt=k₊p\_\{i−1\}+k₋p\_\{i+1\}−(k₊+k₋)p\_i，按循环下标模3记，转移保概率。
+\item 三个状态转移完全对称，稳态唯一均匀p₁=p₂=p₃=1/3；非零转移速率使状态图强连通，保证唯一平稳分布。
+\item 在各条边上正向净概率流J\_edge=p\_i k₊−p\_\{i+1\}k₋=(k₊−k₋)/3，且三条边相同，故总概率积累为零。
+\item k₊=8、k₋=2 s⁻¹时单边正向流2.6666666667 s⁻¹、逆向流0.66666666667 s⁻¹、净循环通量2.0000000000 cycles/s。
+\item 采用局域详细平衡，每一步化学势驱动Δμ\_step=RT ln(k₊/k₋)，沿完整三个反应步骤循环的无量纲亲和势A\_c=3ln(k₊/k₋)。
+\item 计算A\_c=4.15888308336，每摩尔完整循环驱动力ΔG\_c=RT A\_c=10.3096924546 kJ/mol。
+\item 非平衡稳态熵产生率按每单分子kB单位为Σ\_edges J\_edge ln[(p\_i k₊)/(p\_\{i+1\}k₋)]=3J\_edge ln(k₊/k₋)=(k₊−k₋)ln4。
+\item 得到单位kB的熵产生率8.31776616672 s⁻¹，按每摩尔酶分子换算耗散功率P=R T Σ=20.6193849092 kJ/(mol·s)，必须为非负。
+\item 因为在任意构象的下一步正、逆跃迁率恒等，正逆事件可视为独立Poisson计数，60 s内净有向步数均值(k₊−k₋)t、方差(k₊+k₋)t。
+\item 把有向步数除以3定义带分数的净绕行计数，60 s内其均值120.000000000、方差66.6666666667，标准差8.16496580928。
+\item 时间反演下完整三步循环的速率权重比为(k₋/k₊)³=exp(−A\_c)，这里仅比较路径权重；实际离散整循环次数需考虑始末状态边界。
+\item 当k₊=k₋时每条边流为零、亲和力和耗散归零；若实际三个步骤不同、非指数等待或燃料活度变化，均匀稳态及Poisson绕行计数不再成立。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+forward\_step\_fraction = 0.8 fraction；backward\_step\_fraction = 0.2 fraction；steady\_state\_each\_conformer = 0.333333333 fraction；forward\_cycle\_flux\_s = 2.66666667 s\textasciicircum{}-1；reverse\_cycle\_flux\_s = 0.666666667 s\textasciicircum{}-1；net\_cycle\_flux\_s = 2 s\textasciicircum{}-1；cycle\_affinity\_dimensionless = 4.15888308 dimensionless；cycle\_drive\_kJ\_mol = 10.3096925 kJ/mol；entropy\_production\_in\_kB\_per\_s = 8.31776617 kB/s；dissipated\_power\_J\_mol\_s = 20619.3849 J/(mol s)；dissipated\_power\_kJ\_mol\_s = 20.6193849 kJ/(mol s)；mean\_net\_cycles\_60s = 120 cycles；net\_cycle\_count\_variance\_60s = 66.6666667 cycles2；net\_cycle\_count\_sd\_60s = 8.16496581 cycles；reverse\_forward\_cycle\_probability\_ratio = 0.015625 ratio；total\_step\_rate\_s = 10 s\textasciicircum{}-1\par
+\noindent\textbf{模型前提：}
+当k₊=k₋时每条边流为零、亲和力和耗散归零；若实际三个步骤不同、非指数等待或燃料活度变化，均匀稳态及Poisson绕行计数不再成立。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
