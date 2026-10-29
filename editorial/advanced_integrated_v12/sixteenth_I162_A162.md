@@ -49,7 +49,7 @@
 - free_Al3_pH7_M: 1.0000000000000002e-12 mol/L
 - aluminate_pH7_M: 1e-7 mol/L
 - alkaline_branch_linear_coefficient: 1 dimensionless
-- solubility_derivative_at_minimum: -2.220446049250313e-16 slope
+- solubility_derivative_at_minimum: 0 slope
 - triple_Al3_amount_M: 7.400828044922853e-9 mol/L
 - aluminate_fraction_reverse_check: 0.7499999999999999 fraction
 
