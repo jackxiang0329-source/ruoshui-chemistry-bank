@@ -49,7 +49,7 @@ Object.assign(witness,{
 
 Object.assign(witness,{
 "UC-ADV11-I134":()=>{const ni=10.3,fe=9.45,x=(ni-9.62)/(ni-fe),a=1-x,b=x,c=x,d=2-x,m=58.6934+2*55.845+4*15.999;const ma=2*a+5*b,mb=2*c+5*d,net=mb-ma;assert.ok(x>=0&&x<=1&&Math.abs((8-3.2)/6-x)<1e-12);return[x,a,b,c,d,ma,mb,net,ni*a+fe*b,(ni*c+fe*d)/2,m,8*m/1000/(6.02214076e23*(.834e-9)**3),net*6.02214076e23*9.2740100783e-24/(m/1000)];},
-"UC-ADV11-A134":()=>{const c=700000-1.5*50000,r=c/1e6/1.02,n=2e-9*(.95-.02*r)/(r*.8258-.0986),s=n-.1e-9,u=Math.sqrt((700000+1.5**2*50000)/1e12+c*c/1e18)/1.02,d=-2e-9*(.02*.0986+.95*.8258)/(r*.8258-.0986)**2;assert.ok(s>0&&c>0);return[c,r,n,s,s*87.62*1e6,u,d,Math.abs(d)*u,Math.abs(d)*u/s,(.0986*n+.95*2e-9)/(.8258*n+.02*2e-9)];},
+"UC-ADV11-A134":()=>{const c=700000-1.5*50000,r=c/1e6/1.02,n=2e-9*(.95-.02*r)/(r*.8258-.0986),s=n-.1e-9,u=Math.sqrt((700000+1.5**2*50000)/1e12+c*c/1e18)/1.02,d=-2e-9*(.95*.8258-.02*.0986)/(r*.8258-.0986)**2;assert.ok(s>0&&c>0);return[c,r,n,s,s*87.62*1e6,u,d,Math.abs(d)*u,Math.abs(d)*u/s,(.0986*n+.95*2e-9)/(.8258*n+.02*2e-9)];},
 "UC-ADV11-O131":()=>{const p=.65,b=300*p,n=250-b,q=2*p*p,ea=1+3*p*p/(1-q),eb=3*p/(1-q);assert.ok(q<1);return[1/Math.sqrt(2),b,300-b,300-b,n,31500/n,250/n,(1-p)**3,3*p*(1-p)**2,3*p*p*(1-p),p**3,q,ea,eb,ea+eb];},
 "UC-ADV11-P131":()=>{const x=(1+Math.log(2)/1.5)/2,g1=Math.exp(1.5*(1-x)**2),g2=Math.exp(1.5*x*x),b=.45,h1=Math.exp(1.5*(1-b)**2),h2=Math.exp(1.5*b*b),pr=b*h1*80+(1-b)*h2*40;assert.ok(Math.abs(g1*80-g2*40)<1e-10);return[x,g1,g2,80*g1,x,1.5*x*(1-x),x*Math.log(x)+(1-x)*Math.log(1-x)+1.5*x*(1-x),1/x+1/(1-x)-3,pr,b*h1*80/pr,h1,h2,.25];}
 });
