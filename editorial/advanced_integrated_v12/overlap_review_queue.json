@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 70,
+  "current_draft_count": 74,
   "expert_approved": 0,
-  "preliminary_flags": 70,
+  "preliminary_flags": 74,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -424,6 +424,30 @@
       "new_id": "UC-ADV12-P164",
       "prior_id": null,
       "reason": "尚待全历史候选相近模型的逐式比较；自动词汇查重只用于发现可能相似项，不构成独立原创性证书。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I169",
+      "prior_id": null,
+      "reason": "待同历史题全量方程模型相似度筛查与专家逐式对照；机器词汇筛查不能证明原创性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A169",
+      "prior_id": null,
+      "reason": "待同历史题全量方程模型相似度筛查与专家逐式对照；机器词汇筛查不能证明原创性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O165",
+      "prior_id": null,
+      "reason": "待同历史题全量方程模型相似度筛查与专家逐式对照；机器词汇筛查不能证明原创性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P165",
+      "prior_id": null,
+      "reason": "待同历史题全量方程模型相似度筛查与专家逐式对照；机器词汇筛查不能证明原创性。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -847,6 +871,30 @@
       "model_family": "Onsager-coupled-solute-energy-flux-reciprocity-positive-entropy-blocked-adiabatic-uphill",
       "judgement": "pending_human_comparison",
       "screening": "独立数值复算通过后进入人工化学和数学模型审核；禁止计入正式批准题库。"
+    },
+    {
+      "new_id": "UC-ADV12-I169",
+      "model_family": "ceria-oxygen-vacancy-CeIII-polaron-charge-neutrality-non-dilute-oxygen-pressure",
+      "judgement": "pending_human_comparison",
+      "screening": "独立函数计算答案，尚未完成人工化学审稿及模型跨辑同构审定。"
+    },
+    {
+      "new_id": "UC-ADV12-A169",
+      "model_family": "qNMR-two-repetition-times-inversion-T1-saturation-concentration-uncertainty",
+      "judgement": "pending_human_comparison",
+      "screening": "独立函数计算答案，尚未完成人工化学审稿及模型跨辑同构审定。"
+    },
+    {
+      "new_id": "UC-ADV12-O165",
+      "model_family": "epoxide-precursor-competing-elimination-consecutive-ringopening-Bateman-transient-peak",
+      "judgement": "pending_human_comparison",
+      "screening": "独立函数计算答案，尚未完成人工化学审稿及模型跨辑同构审定。"
+    },
+    {
+      "new_id": "UC-ADV12-P165",
+      "model_family": "symmetric-regular-solution-binodal-spinodal-common-tangent-lever-rule-phase-stability",
+      "judgement": "pending_human_comparison",
+      "screening": "独立函数计算答案，尚未完成人工化学审稿及模型跨辑同构审定。"
     }
   ]
 }
