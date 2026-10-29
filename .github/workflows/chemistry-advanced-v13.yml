@@ -1,0 +1,26 @@
+name: Chemistry thirteenth-series complete numeric QA
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'editorial/advanced_integrated_v13/**'
+      - 'scripts/check-advanced-authored-v13.mjs'
+      - '.github/workflows/chemistry-advanced-v13.yml'
+  pull_request:
+    paths:
+      - 'editorial/advanced_integrated_v13/**'
+      - 'scripts/check-advanced-authored-v13.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate all numerical answer vectors and review flags
+        run: node scripts/check-advanced-authored-v13.mjs

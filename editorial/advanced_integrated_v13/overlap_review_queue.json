@@ -1,0 +1,420 @@
+{
+  "schema_version": 1,
+  "series": 13,
+  "status": "expert_review_pending",
+  "current_draft_count": 34,
+  "expert_approved": 0,
+  "preliminary_flags": 34,
+  "pairs": [
+    {
+      "new_id": "UC-ADV13-I176",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I177",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I178",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I179",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I180",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I181",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I182",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I183",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I184",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A176",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A177",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A178",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A179",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A180",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A181",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A182",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A183",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A184",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O173",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O174",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O175",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O176",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O177",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O178",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O179",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-O180",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P173",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P174",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P175",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P176",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P177",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P178",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P179",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P180",
+      "prior_id": null,
+      "reason": "必须与历史前十二辑模型方程逐式比对并由专家审核物理假设、题目原创性与完整性。",
+      "judgement": "pending_human_comparison"
+    }
+  ],
+  "new_items_requiring_cross_series_comparison": [
+    {
+      "new_id": "UC-ADV13-I176",
+      "model_family": "d4-octahedral-crystal-field-high-low-spin-pairing",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-I177",
+      "model_family": "phosphate-buffer-multivalent-counterion-ionic-strength-capacity",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-I178",
+      "model_family": "nickel-ammonia-two-stage-cumulative-complexation-fractions",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-I179",
+      "model_family": "ferric-hydroxide-saturation-cubic-free-Fe-pH",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-I180",
+      "model_family": "Pd-H-Sieverts-Langmuir-interstitial-occupancy",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-I181",
+      "model_family": "FeIII-iodide-Nernst-galvanic-reaction-quotient-stoichiometry",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-I182",
+      "model_family": "two-equivalent-14N-EPR-hyperfine-pattern-g-factor",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-I183",
+      "model_family": "PbSn-alloy-lever-rule-solid-liquid-mass-density-enthalpy",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-I184",
+      "model_family": "permanganate-MnII-Nernst-eight-protons-five-electrons",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-A176",
+      "model_family": "volume-corrected-standard-addition-fluorescence-slope-intercept",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-A177",
+      "model_family": "Gran-plot-pre-equivalence-strong-acid-titration",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-A178",
+      "model_family": "Nikolsky-Eisenman-monovalent-divalent-ion-selectivity",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-A179",
+      "model_family": "DLS-Siegert-StokesEinstein-autocorrelation-radius",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-A180",
+      "model_family": "LCMS-differential-recovery-response-internal-standard",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-A181",
+      "model_family": "Br2-isotopic-binomial-pattern-M-plus-two",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-A182",
+      "model_family": "SternVolmer-dynamic-static-fluorescence-quenching-lifetime",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-A183",
+      "model_family": "coulometric-Ag-generation-chloride-titration-current-efficiency",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-A184",
+      "model_family": "four-wavelength-three-component-UV-absorbance-baseline-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-O173",
+      "model_family": "SN2-Walden-inversion-enantiomeric-purity-optical-rotation",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-O174",
+      "model_family": "primary-kinetic-isotope-effect-first-order-H-D-rate-activation",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-O175",
+      "model_family": "thermal-EZ-isomerization-vanthoff-enthalpy-entropy-equilibrium",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-O176",
+      "model_family": "Claisen-rearrangement-first-order-Arrhenius-temperature-extrapolation",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-O177",
+      "model_family": "competitive-Michael-addition-two-acceptors-conditional-products",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-O178",
+      "model_family": "oxygen-inhibited-radical-polymerization-induction-time-kinetic-competition",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-O179",
+      "model_family": "Flory-Stockmayer-A3-B2-stepgrowth-percolation-gelation",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-O180",
+      "model_family": "Kagan-ML2-chiral-ligand-dimer-statistical-homohetero-amplification",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-P173",
+      "model_family": "Clausius-Clapeyron-vapor-pressure-two-temperature-integration",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-P174",
+      "model_family": "Debye-Huckel-limiting-law-electrolyte-ionic-strength-mean-activity",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-P175",
+      "model_family": "quantum-harmonic-oscillator-vibrational-partition-heat-capacity",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-P176",
+      "model_family": "protein-dimerization-osmotic-pressure-vanthoff-particle-concentration",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-P177",
+      "model_family": "Langmuir-kinetic-adsorption-desorption-surface-relaxation",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-P178",
+      "model_family": "Raman-antiStokes-Stokes-thermometry-frequency-fourth-power",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-P179",
+      "model_family": "hard-sphere-gas-mean-free-path-viscosity-kinetic-theory",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    },
+    {
+      "new_id": "UC-ADV13-P180",
+      "model_family": "Butler-Volmer-overpotential-exchange-current-Tafel-branches",
+      "judgement": "pending_human_comparison",
+      "screening": "独特的方程族及数值来源已登记，完整跨辑人工审查尚待开展。"
+    }
+  ]
+}

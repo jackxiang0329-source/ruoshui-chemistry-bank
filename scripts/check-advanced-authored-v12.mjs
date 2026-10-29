@@ -275,7 +275,7 @@ assert.equal(queue.preliminary_flags,queue.pairs.length);
 const registered=new Set(queue.new_items_requiring_cross_series_comparison.map(x=>x.new_id));
 for(const id of ids)assert.ok(registered.has(id),'Missing cross-series review item '+id);
 const man=JSON.parse(read('release/chemistry-approved-manifest.json'));
-assert.equal(man.advanced_editorial_items,606+count);
+assert.equal(man.advanced_editorial_items,606+count+(man.thirteenth_series_work_in_progress_items||0));
 assert.equal(man.twelfth_series_work_in_progress_items,count);
 assert.equal(man.twelfth_series_pending_cross_series_novelty_review,count);
 assert.equal(man.approved_count,0);assert.deepEqual(man.items,[]);
