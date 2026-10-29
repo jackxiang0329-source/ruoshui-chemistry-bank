@@ -599,7 +599,6 @@ const w={
   assert.ok(Math.abs(na-cl-CT*alpha)<1e-12&&Math.abs(na*cl-cs*cs)<1e-12);
   return [r,na,cl,alpha,7-Math.log10(r),-R*T/F*Math.log(r),R*T*1000*(na+cl-2*cs)];
  },
-};
 
  "UC-ADV10-I118":()=>{
   const rt=8.314462618*300,om=8000,f=x=>Math.log(x/(1-x))+om/rt*(1-2*x),df=x=>1/(x*(1-x))-2*om/rt;
@@ -634,6 +633,7 @@ const w={
   assert.ok(det>0&&work>0&&j2>0&&y<0&&Math.abs(b*x+d*stop)<1e-18);
   return [j1,j2,work,work/T,(a+d-disc)/2,(a+d+disc)/2,b/Math.sqrt(a*d),stop,jStop,jStop*x,det];
  },
+};
 const req={inorganic:{id:"I101",count:0},analytical:{id:"A101",count:0},organic:{id:"O98",count:0},physical:{id:"P98",count:0}};
 const ids=new Set(),titles=new Set(),families=new Set();let all=0;
 function near(a,b,label){
