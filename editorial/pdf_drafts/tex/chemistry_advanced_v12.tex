@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (58题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (60题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -830,6 +830,33 @@ equivalence\_volume\_L = 0.01 L；raw\_conductivity\_0L\_S\_m = 0.48918 S/m；ra
 本题是理想强酸—强碱反应，若考虑弱酸电离、溶液离子强度导致的摩尔电导率变化、液接电位和电极极化，必须重新建模，不能用同一分段线性公式盲目拟合。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A166 · Karl Fischer库仑水分的空白漂移、法拉第效率与回收不确定度}
+\noindent\textbf{题目}\par
+某实验用电生碘Karl Fischer库仑法测定溶剂微量水，每1 mol水消耗1 mol I₂，2I⁻→I₂+2e⁻，有效法拉第效率η=0.9750。样品质量0.5000 g，模拟真实水375.0 μg，电解150.0 s，恒定空白水漂移0.2000 μg/s；F=96485.33212 C/mol，M(H₂O)=18.01528 g/mol。样品实测电量4.44939213522333 C。之后加入200.0 μg水标准，另积分80.0 s测得加标电量2.37300913878578 C。求空白电量、净样品水质量、样品水ppm、有效电生碘摩尔数、平均电流、加标水回收率。假定电量标准不确定度0.01000 C、空白漂移速率不确定度0.01000 μg/s且独立，计算样品水质量与ppm的合成标准不确定度；审核电子/碘/水计量、空白水衡算及实验局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 电极反应2I⁻→I₂+2e⁻，每摩尔水参与Karl Fischer反应需一摩尔I₂；故两摩尔电子对应一摩尔有效反应水。
+\item 已校准有效电生碘法拉第效率η=0.9750，总水当量为m\_eq=η Q M\_H₂O/(2F)，F=96485.33212 C/mol、水摩尔质量18.01528 g/mol。
+\item 假想样品0.5000 g含375.0 μg水，积分150.0 s，仪器以恒定背景湿气漂移0.2000 μg/s；原始电量必须包含样品水与漂移。
+\item 样品测得积分电量4.44939213522 C，其中漂移等效电量0.329584602609 C。
+\item 未经漂移扣除总水当量为405.000000000 μg，空白水为30.0000000000 μg。
+\item 净样品水质量m\_sample=ηQ M/(2F)−drift×time=375.000000000 μg。
+\item 除以0.5000 g样品质量得到质量分数ppm=750.000000000 mg/kg，平均电生电流Q/t=0.0296626142348 A。
+\item 用200.0 μg独立水标准作后加标，在80.0 s内积分增量电量，期间同样发生空白水漂移。
+\item 得到加标电量2.37300913879 C，80 s空白水16.0000000000 μg。
+\item 经效率和漂移修正标准水回收200.000000000 μg，回收率100.000000000\%。
+\item 假设电量的独立标准不确定度σ\_Q=0.01000 C，漂移速率独立标准不确定度σ\_d=0.01000 μg/s，称重与效率不确定度暂忽略。
+\item 按一阶误差传播，σ\_m²=[η M σ\_Q/(2F)]²+(tσ\_d)²，不能把两个标准差直接算术相加。
+\item 合成标准不确定度σ\_m=1.75457426296 μg，浓度标准不确定度3.50914852591 ppm。
+\item 本模型假设氧化副反应与电子利用效率可独立校准，真实水分测试还可能受样品副反应、阳极膜、反应终点不稳定、湿气速率漂移等影响。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+sample\_total\_charge\_C = 4.44939214 C；blank\_drift\_charge\_C = 0.329584603 C；sample\_blank\_corrected\_charge\_C = 4.11980753 C；effective\_iodine\_mol = 2.24809162e-05 mol；uncorrected\_water\_ug = 405 ug；sample\_blank\_water\_ug = 30 ug；corrected\_sample\_water\_ug = 375 ug；sample\_water\_mass\_ppm = 750 ppm；average\_current\_A = 0.0296626142 A；standard\_spike\_charge\_C = 2.37300914 C；standard\_period\_blank\_water\_ug = 16 ug；recovered\_spike\_water\_ug = 200 ug；standard\_recovery\_percent = 100 percent；water\_mass\_combined\_uncertainty\_ug = 1.75457426 ug；water\_ppm\_combined\_uncertainty = 3.50914853 ppm；sample\_water\_fraction = 0.00075 fraction；total\_electron\_equivalent\_mol = 4.49618324e-05 mol；blank\_electrolysis\_fraction = 0.0740740741 fraction\par
+\noindent\textbf{模型前提：}
+本模型假设氧化副反应与电子利用效率可独立校准，真实水分测试还可能受样品副反应、阳极膜、反应终点不稳定、湿气速率漂移等影响。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第12辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -1594,6 +1621,33 @@ gel\_cation\_concentration\_0p1M = 0.128077641 mol/L；gel\_anion\_concentration
 12CO\_reduced\_mass\_u = 6.85620871 u；13CO\_reduced\_mass\_u = 7.17241263 u；12CO\_vibrational\_wavenumber\_cm\_inv = 2143 cm\textasciicircum{}-1；13CO\_vibrational\_wavenumber\_cm\_inv = 2095.22927 cm\textasciicircum{}-1；isotope\_wavenumber\_shift\_cm\_inv = 47.7707301 cm\textasciicircum{}-1；isotope\_frequency\_ratio = 0.977708479 ratio；12CO\_oscillator\_x = 3.85412356 dimensionless；13CO\_oscillator\_x = 3.76820928 dimensionless；12CO\_mean\_phonon\_number = 0.0216510005 fraction；13CO\_mean\_phonon\_number = 0.0236392911 fraction；12CO\_ground\_vib\_population = 0.978807831 fraction；13CO\_ground\_vib\_population = 0.97690662 fraction；12CO\_first\_excited\_population = 0.0207430608 fraction；13CO\_first\_excited\_population = 0.0225600758 fraction；12CO\_zero\_point\_energy\_J\_mol = 12817.9865 J/mol；13CO\_zero\_point\_energy\_J\_mol = 12532.2541 J/mol；zero\_point\_energy\_12\_minus\_13\_J\_mol = 285.732419 J/mol；12CO\_vibrational\_U\_J\_mol = 13373.031 J/mol；13CO\_vibrational\_U\_J\_mol = 13124.7613 J/mol；12CO\_vibrational\_CV\_J\_molK = 2.73190748 J/(mol K)；13CO\_vibrational\_CV\_J\_molK = 2.85683799 J/(mol K)；12CO\_vibrational\_S\_J\_molK = 0.871900927 J/(mol K)；13CO\_vibrational\_S\_J\_molK = 0.934894857 J/(mol K)；12CO\_thermal\_partition\_relative\_ground = 1.021651 dimensionless；13CO\_thermal\_partition\_relative\_ground = 1.02363929 dimensionless；12CO\_two\_lowest\_population\_sum = 0.999550892 fraction；12\_minus\_13\_total\_vib\_energy\_J\_mol = 248.269678 J/mol\par
 \noindent\textbf{模型前提：}
 实际CO振动非谐性、同位素电子振动修正及真实分子多自由度会改变精细谱线位置；此处数值是单模谐振子的理想预测，不可解释为分子全部热容或总熵。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P162 · Bell–Evans动态力谱的断裂概率分布与加载速率效应}
+\noindent\textbf{题目}\par
+单分子动力学实验在298.15 K用匀速加载f(t)=rt拉断某化学键，零力解离速率k₀=0.1000 s⁻¹、过渡态距离x‡=0.5000 nm，受力Bell速率k(f)=k₀exp(fx‡/(kBT))，kB=1.380649×10⁻²³ J/K、1 pN·nm=10⁻²¹ J。两种加载速率r₁=10.00、r₂=40.00 pN/s。推导随力的生存概率S(f)、断裂力概率密度p(f)及归一，给出各加载速度下最可能断裂力及中位断裂力；在10 pN/s下计算15和30 pN时的生存与累计断裂概率，以及峰位处解离速率和瞬时平均寿命。验证四倍加载速率使最可能断裂力增加(kBT/x‡)ln4，判断峰位从内部退化到f=0的条件，并区分瞬时化学反应速率、概率密度和累计概率。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 单分子不可逆键解离采用Bell–Evans模型，载荷f=rt从0匀速增加，零力解离常数k₀=0.1000 s⁻¹，过渡态距离x‡=0.5000 nm。
+\item 给定k\_B=1.380649×10⁻²³ J/K及T=298.15 K，用1 pN nm=10⁻²¹ J把热能kBT换算为pN nm。
+\item 受力依赖速率k(f)=k₀exp[fx‡/(kBT)]，定义α=x‡/(kBT)和a=k₀/(rα)，分别为力倒数和无量纲量。
+\item 计算kBT=4.11640499350 pN nm、特征力kBT/x‡=8.23280998700 pN，r=10 pN/s时a=0.0823280998700。
+\item 令S(f)表示加载至力f仍保持结合的生存概率，因df/dt=r，满足dS/df=−[k(f)/r]S。
+\item 积分并用初始条件S(0)=1得到S(f)=exp[−a(exp(αf)−1)]，对应断裂力概率密度p(f)=k(f)S(f)/r。
+\item 对f≥0，积分∫p(f)df=S(0)−S(∞)=1，生存概率与累计断裂概率之和严格等于1。
+\item 求p(f)峰值条件dlnp/df=α−k(f)/r=0，得到f*=(1/α)ln(rα/k₀)，仅rα>k₀时是正的内点极大值。
+\item r=10 pN/s时最可能断裂力f*=20.5576788802 pN，峰值处解离率k(f*)=1.21465210734 s⁻¹。
+\item 中位断裂力由S(f50)=1/2给出f50=(1/α)ln[1+(ln2)/a]，不等于最可能断裂力。
+\item r=10 pN/s时中位力=18.4642467691 pN，15 pN时生存概率0.652597052242、30 pN时生存概率0.0466010524788。
+\item 将加载速度升为40 pN/s，最可能力增至31.9707769413 pN，位移11.4130980611 pN，等于(kBT/x‡)ln4。
+\item 相应新中位力为29.1942481681 pN；S(0)=1且断裂力概率密度的单位为pN⁻¹而非s⁻¹。
+\item 当rα≤k₀时概率密度峰位于f=0边界；真实多势垒、反复再结合、反应坐标强制改变及非恒定载荷需重新建模。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+thermal\_energy\_pN\_nm = 4.11640499 pN nm；Bell\_force\_scale\_pN = 8.23280999 pN；dimensionless\_ramp\_factor = 0.0823280999 ratio；most\_probable\_force\_10pN\_per\_s = 20.5576789 pN；median\_force\_10pN\_per\_s = 18.4642468 pN；most\_probable\_force\_40pN\_per\_s = 31.9707769 pN；median\_force\_40pN\_per\_s = 29.1942482 pN；mode\_shift\_pN = 11.4130981 pN；hazard\_rate\_at\_first\_mode\_s = 1.21465211 s\textasciicircum{}-1；hazard\_lifetime\_at\_mode\_s = 0.823280999 s；bond\_survival\_at\_15pN = 0.652597052 fraction；rupture\_cdf\_at\_15pN = 0.347402948 fraction；bond\_survival\_at\_30pN = 0.0466010525 fraction；rupture\_cdf\_at\_30pN = 0.953398948 fraction；survival\_at\_mode = 0.399447914 fraction；rupture\_density\_at\_zero\_force\_pN\_inv = 0.01 pN\textasciicircum{}-1；rupture\_density\_at\_mode\_pN\_inv = 0.0485190251 pN\textasciicircum{}-1；factor\_four\_loading\_analytical\_shift\_pN = 11.4130981 pN；force\_zero\_rupture\_cdf = 0 fraction\par
+\noindent\textbf{模型前提：}
+当rα≤k₀时概率密度峰位于f=0边界；真实多势垒、反复再结合、反应坐标强制改变及非恒定载荷需重新建模。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
