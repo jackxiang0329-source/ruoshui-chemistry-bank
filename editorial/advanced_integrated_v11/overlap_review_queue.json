@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 49,
+  "current_draft_count": 53,
   "expert_approved": 0,
-  "preliminary_flags": 14,
+  "preliminary_flags": 18,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -88,6 +88,30 @@
       "new_id": "UC-ADV11-P134",
       "prior_id": "UC-ADV11-P125",
       "reason": "均用温度依赖热力学动力学，但折叠ΔCp Gibbs自由能与Avrami动力学不同，需比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-I139",
+      "prior_id": "UC-ADV11-I138",
+      "reason": "均属无机配合物/材料，但本题为离解-再结合饱和动力学，旧题为晶格阳离子反位磁矩；仅完成关键词筛选，需人工方程核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-A138",
+      "prior_id": "UC-ADV11-A135",
+      "reason": "均为电化学扩散测量，本题为旋转圆盘稳态Koutecky–Levich，旧题为Cottrell瞬态反演；人工复核方程同构与实验适用性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-O135",
+      "prior_id": "UC-ADV11-O132",
+      "reason": "均涉及非线性结合物种守恒，本题为分子内环化/2M环二聚的浓度竞争，旧题为逐步主客体缔合；需审查是否核心方程变式。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-P135",
+      "prior_id": "UC-ADV11-A129",
+      "reason": "均用Stokes–Einstein关系，本题核心为离心势Boltzmann径向分布积分归一，旧题为荧光旋转各向异性；需逐式人工核查。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -385,6 +409,30 @@
       "model_family": "spinel-cation-inversion-NiFe2O4-Neel-two-sublattice-saturation-mass-magnetization",
       "judgement": "pending_human_comparison",
       "screening": "独立磁矩与元素/电荷/占位数值witness已建立；同类晶体磁性模型需跨辑人工逐式比较。"
+    },
+    {
+      "new_id": "UC-ADV11-I139",
+      "model_family": "dissociative-CoIII-ligand-substitution-chloride-recapture-steady-state-saturation-inverse",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness和主要守恒/边界检查已建立；尚未完成全部历史辑的逐式跨模型人工比对，禁止主张原创已认证。"
+    },
+    {
+      "new_id": "UC-ADV11-A138",
+      "model_family": "rotating-disk-Koutecky-Levich-two-speed-kinetic-diffusion-inverse-validation",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness和主要守恒/边界检查已建立；尚未完成全部历史辑的逐式跨模型人工比对，禁止主张原创已认证。"
+    },
+    {
+      "new_id": "UC-ADV11-O135",
+      "model_family": "organic-ring-chain-hemiacetal-monomer-vs-cyclic-dimer-concentration-equilibrium-unique",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness和主要守恒/边界检查已建立；尚未完成全部历史辑的逐式跨模型人工比对，禁止主张原创已认证。"
+    },
+    {
+      "new_id": "UC-ADV11-P135",
+      "model_family": "centrifugal-sedimentation-equilibrium-annular-Boltzmann-normalization-Stokes-Einstein",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness和主要守恒/边界检查已建立；尚未完成全部历史辑的逐式跨模型人工比对，禁止主张原创已认证。"
     }
   ]
 }

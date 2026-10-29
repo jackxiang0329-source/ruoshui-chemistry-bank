@@ -1,13 +1,13 @@
 # 第十一辑 · 大学化学高阶综合题（进行中）
-本辑目标100题：无机、分析、有机、物化各25。当前**49/100**，无机13、分析12、有机12、物化12；完整题目及解析见 [8题中文解答](8_advanced_chemistry_solutions.md)。
+本辑目标100题：无机、分析、有机、物化各25。当前**53/100**，无机14、分析13、有机13、物化13；完整题目及解析见 [8题中文解答](8_advanced_chemistry_solutions.md)。
 | 学科 | 数量 | 题号 | 结构化源稿 |
 |---|---:|---|---|
-| 无机化学 | 13/25 | I126–I138 | [inorganic.jsonl](inorganic.jsonl) |
-| 分析化学 | 12/25 | A126–A137 | [analytical.jsonl](analytical.jsonl) |
-| 有机化学 | 12/25 | O123–O134 | [organic.jsonl](organic.jsonl) |
-| 物理化学 | 12/25 | P123–P134 | [physical.jsonl](physical.jsonl) |
+| 无机化学 | 14/25 | I126–I139 | [inorganic.jsonl](inorganic.jsonl) |
+| 分析化学 | 13/25 | A126–A138 | [analytical.jsonl](analytical.jsonl) |
+| 有机化学 | 13/25 | O123–O135 | [organic.jsonl](organic.jsonl) |
+| 物理化学 | 13/25 | P123–P135 | [physical.jsonl](physical.jsonl) |
 
-每题至少7个实质推导步骤，并由 [独立答案向量脚本](../../scripts/check-advanced-authored-v11.mjs) 全量复算；对跨辑核心模型进行人工复核的队列见 [overlap_review_queue.json](overlap_review_queue.json)。自动数值核对不等于科学专家审定或原创性认证。**所有49题均publishable=false，正式批准0。** 续编应按每科递增题号，先检查main SHA与已提交记录，不得重复或用参数变式凑数。
+每题至少7个实质推导步骤，并由 [独立答案向量脚本](../../scripts/check-advanced-authored-v11.mjs) 全量复算；对跨辑核心模型进行人工复核的队列见 [overlap_review_queue.json](overlap_review_queue.json)。自动数值核对不等于科学专家审定或原创性认证。**所有53题均publishable=false，正式批准0。** 续编应按每科递增题号，先检查main SHA与已提交记录，不得重复或用参数变式凑数。
 
 最新四题：[I128/A128/O125/P125中文解析](continuation_I128_A128_O125_P125.md)。
 
@@ -15,7 +15,7 @@
 
 [有机与物化新增六题完整解析](continuation_O126-O128_P126-P128.md)。
 
-本轮八道待审题（I132–I133、A132–A133、O129–O130、P129–P130）：[完整题干、逐步解答和答案向量](continuation_I132-I133_A132-A133_O129-O130_P129-P130.md)。后续题号I139/A138/O135/P135。
+本轮八道待审题（I132–I133、A132–A133、O129–O130、P129–P130）：[完整题干、逐步解答和答案向量](continuation_I132-I133_A132-A133_O129-O130_P129-P130.md)。后续题号I140/A139/O136/P136。
 
 本轮新增四题：[I134/A134/O131/P131完整解答](continuation_I134_A134_O131_P131.md)。
 
@@ -26,3 +26,5 @@
 第四批：[I137/A137/O134/P134完整解答](continuation_I137_A137_O134_P134.md)。
 
 本次新增：[I138 尖晶石反位参数与磁矩的完整解析](continuation_I138.md)。下一无机题号I139。
+
+本批四题：[I139/A138/O135/P135 完整逐步中文解答](continuation_I139_A138_O135_P135.md)。下一号I140/A139/O136/P136。所有题目仍禁止正式发布。

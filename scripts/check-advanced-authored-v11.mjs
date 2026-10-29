@@ -72,6 +72,13 @@ Object.assign(witness,{
 "UC-ADV11-P134":()=>{const M=350,H=200,C=5,R=.008314462618,g=t=>H*(1-t/M)+C*((t-M)-t*Math.log(t/M)),star=M*Math.exp(-H/(M*C));let lo=250,hi=300;for(let i=0;i<110;i++){let mid=(lo+hi)/2;if(g(mid)>0)hi=mid;else lo=mid;}let cold=(lo+hi)/2,t=298.15,enthalpy=H+C*(t-M),entropy=H/M+C*Math.log(t/M),dG=g(t),K=Math.exp(-dG/(R*t));assert.ok(cold<star&&star<M&&Math.abs(g(cold))<1e-11);return[cold,star,g(star),dG,enthalpy,entropy,K/(1+K),K,g(250),g(M),g(400)];}
 });
 Object.assign(witness,{"UC-ADV11-I138":()=>{const ni=2,fe=5,x=(4.4-ni)/(fe-ni),A=(1-x)*ni+x*fe,B=x*ni+(2-x)*fe,net=B-A,M=58.6934+2*55.845+4*15.999,N=6.02214076e23,mb=9.2740100783e-24;assert.ok(x>=0&&x<=1&&net>0&&Math.abs((1-x)+x-1)<1e-14);return[x,A,B,net,M,net*mb*N/(M/1000),net*mb*N,(8-net)/6,1-x,x,2+2*3-4*2];}});
+
+Object.assign(witness,{
+"UC-ADV11-I139":()=>{const l1=.02,l2=.08,y1=.005,y2=.008,L=.04,c=.1,t=120,S=1e-4;const s=(1/y1-1/y2)/(1/l1-1/l2),b=1/y1-s/l1,k=1/b,a=s/b,K=k*L/(L+a),prod=S*(1-Math.exp(-K*t));assert.ok(k>0&&a>0&&Math.abs(k*.08/(.08+a)-y2)<1e-12);return[k,a,a/c,K,prod/S,prod,prod,k,Math.log(2)/K,a/(a+L),0];},
+"UC-ADV11-A138":()=>{const F=96485.33212,A=.19635,C=1e-6,nu=.01,d=1.2e-5,k=.003,w=r=>r*Math.PI/30,il=r=>.62*F*A*C*d**(2/3)*nu**(-1/6)*Math.sqrt(w(r)),ik=F*A*C*k,im=r=>1/(1/ik+1/il(r)),i1=im(400),i2=im(1600),x1=1/Math.sqrt(w(400)),x2=1/Math.sqrt(w(1600)),s=(1/i1-1/i2)/(x1-x2),b=1/i1-s*x1,L=1/s,I900=1/(b+s/Math.sqrt(w(900))),D=(L/(.62*F*A*C*nu**(-1/6)))**1.5,lev=.62*F*A*C*D**(2/3)*nu**(-1/6)*Math.sqrt(w(900));assert.ok(b>0&&s>0&&Math.abs(I900-im(900))<1e-15);return[i1*1e6,i2*1e6,I900*1e6,1/b*1e6,1/b/(F*A*C),D,L*1e6,lev*1e6,I900/lev,w(900),1-I900/lev];},
+"UC-ADV11-O135":()=>{const m=.02,c=.03,d=.025,old=.1,CT=.01,K=c/m,B=d/(m*m);let lo=0,hi=CT;for(let t=0;t<120;t++){let x=(lo+hi)/2;if(2*B*x*x+(1+K)*x>CT)hi=x;else lo=x;}let mon=(lo+hi)/2,cyc=K*mon,dim=B*mon*mon;assert.ok(Math.abs(mon+cyc+2*dim-CT)<1e-14);return[K,B,mon,cyc,dim,mon/CT,cyc/CT,2*dim/CT,c/old,2*d/old,dim/cyc,mon+cyc+2*dim];},
+"UC-ADV11-P135":()=>{const kb=1.380649e-23,T=298.15,w=50,r1=.04,r2=.06,rm=.05,dr=200,vis=.001,mean=1e16,Delta=r2*r2-r1*r1,buoy=2*kb*T*4/(w*w*Delta),rad=(3*buoy/(4*Math.PI*dr))**(1/3),zeta=6*Math.PI*vis*rad,D=kb*T/zeta,beta=buoy*w*w/(2*kb*T),n1=mean*beta*Delta/Math.expm1(beta*Delta),n2=n1*Math.exp(beta*Delta),nmid=n1*Math.exp(beta*(rm*rm-r1*r1)),v=buoy*w*w*rm/zeta,Pe=buoy*w*w*r2*(r2-r1)/(kb*T);assert.ok(D>0&&n2>nmid&&nmid>n1);return[buoy,rad*1e9,zeta,D,beta,Math.exp(beta*Delta),n1,n2,nmid,v,Pe,mean,n1*Math.expm1(beta*Delta)/(beta*Delta)];}
+});
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();
