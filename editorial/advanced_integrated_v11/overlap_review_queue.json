@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 36,
+  "current_draft_count": 40,
   "expert_approved": 0,
-  "preliminary_flags": 4,
+  "preliminary_flags": 7,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -28,6 +28,24 @@
       "new_id": "UC-ADV11-A128",
       "prior_id": "UC-ADV10-A114",
       "reason": "同为荧光寿命但本题Förster距离六次方律与双受体速率相加，旧题静动态淬灭；待人工比较",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-A135",
+      "prior_id": "UC-ADV11-A126",
+      "reason": "均涉及电化学法拉第守恒，但本题瞬态扩散反演，前题石英质量测量；需人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-O132",
+      "prior_id": "UC-ADV11-A133",
+      "reason": "均用配位物料守恒，但本题双客体协同性结合多项式，前题双金属竞争配位；需人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-P132",
+      "prior_id": "UC-ADV11-P123",
+      "reason": "均含非线性稳定性，但本题二维Hopf条件，前题一维Semenov热失控；需人工比对。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -247,6 +265,30 @@
       "model_family": "Margules-binary-VLE-azeotrope-Gibbs-Duhem-stability",
       "judgement": "pending_human_comparison",
       "screening": "独立机器数值复算已编码；跨辑数学模型新颖性与化学合理性尚需专家逐式核查。"
+    },
+    {
+      "new_id": "UC-ADV11-I135",
+      "model_family": "mixed-valence-Marcus-two-state-adiabatic-surfaces-barrier-minima",
+      "judgement": "pending_human_comparison",
+      "screening": "独立主要答案向量witness已登记并接受CI；全历史词汇模型初筛与人工方程级新颖性、化学科学性审核尚未通过。"
+    },
+    {
+      "new_id": "UC-ADV11-A135",
+      "model_family": "Cottrell-transient-current-baseline-drift-diffusion-inverse-charge",
+      "judgement": "pending_human_comparison",
+      "screening": "独立主要答案向量witness已登记并接受CI；全历史词汇模型初筛与人工方程级新颖性、化学科学性审核尚未通过。"
+    },
+    {
+      "new_id": "UC-ADV11-O132",
+      "model_family": "cooperative-host-guest-two-step-binding-polynomial-variance-uniqueness",
+      "judgement": "pending_human_comparison",
+      "screening": "独立主要答案向量witness已登记并接受CI；全历史词汇模型初筛与人工方程级新颖性、化学科学性审核尚未通过。"
+    },
+    {
+      "new_id": "UC-ADV11-P132",
+      "model_family": "Brusselator-open-oscillatory-reaction-Hopf-eigenvalue-linear-stability",
+      "judgement": "pending_human_comparison",
+      "screening": "独立主要答案向量witness已登记并接受CI；全历史词汇模型初筛与人工方程级新颖性、化学科学性审核尚未通过。"
     }
   ]
 }

@@ -53,6 +53,12 @@ Object.assign(witness,{
 "UC-ADV11-O131":()=>{const p=.65,b=300*p,n=250-b,q=2*p*p,ea=1+3*p*p/(1-q),eb=3*p/(1-q);assert.ok(q<1);return[1/Math.sqrt(2),b,300-b,300-b,n,31500/n,250/n,(1-p)**3,3*p*(1-p)**2,3*p*p*(1-p),p**3,q,ea,eb,ea+eb];},
 "UC-ADV11-P131":()=>{const x=(1+Math.log(2)/1.5)/2,g1=Math.exp(1.5*(1-x)**2),g2=Math.exp(1.5*x*x),b=.45,h1=Math.exp(1.5*(1-b)**2),h2=Math.exp(1.5*b*b),pr=b*h1*80+(1-b)*h2*40;assert.ok(Math.abs(g1*80-g2*40)<1e-10);return[x,g1,g2,80*g1,x,1.5*x*(1-x),x*Math.log(x)+(1-x)*Math.log(1-x)+1.5*x*(1-x),1/x+1/(1-x)-3,pr,b*h1*80/pr,h1,h2,.25];}
 });
+Object.assign(witness,{
+"UC-ADV11-I135":()=>{const l=.8,H=.08,T=298.15,q=Math.sqrt(1-4*H*H/(l*l)),v=-H*H/l,zero=l/4-H,E=zero-v,kT=8.617333262145e-5*T,boltz=Math.exp(-E/kT),rate=1.380649e-23*T/6.62607015e-34*boltz;assert.ok(q>0&&q<1&&E>0);return[q,v,zero,E,l/4,2*H,kT,boltz,rate,l/2-l*l/(4*H),q*q];},
+"UC-ADV11-A135":()=>{const i1=85.25,i4=46,i9=33.91666666666667,t1=i1-i4,t2=i4-i9,K=1.5*(5*t1/3-t2),slope=(.5*K-t1)/3,base=i1-K-slope,F=96485.33212;const D=Math.PI*(K*1e-6/(F*.5*1e-6))**2,Qf=2*K*(4-1),Qbg=base*15+.5*slope*(256-1),n=Qf*1e-6/F;assert.ok(D>0&&Math.abs(K/4+base+16*slope-29)<1e-9);return[K,base,slope,D,K/4+base+16*slope,Qf,Qf+Qbg,n,n*107.8682*1e6,Math.sqrt(16*D),Qbg];},
+"UC-ADV11-O132":()=>{const H=.001,G=.0015,k1=1000,k2=2000,fun=g=>g+H*(k1*g+2*k1*k2*g*g)/(1+k1*g+k1*k2*g*g)-G;let lo=0,hi=G;for(let i=0;i<105;i++){const mid=(lo+hi)/2;if(fun(mid)>0)hi=mid;else lo=mid;}const g=(lo+hi)/2,Z=1+k1*g+k1*k2*g*g,h=H/Z,hg=k1*h*g,hg2=k1*k2*h*g*g;assert.ok(Math.abs(h+hg+hg2-H)<1e-14&&Math.abs(g+hg+2*hg2-G)<1e-14);return[g,h,hg,hg2,h/H,hg/H,hg2/H,(hg+2*hg2)/H,(hg+2*hg2)/G,4*k2/k1,k1*k2];},
+"UC-ADV11-P132":()=>{const a=1.2,b=2.7,tr=b-1-a*a,det=a*a,w=Math.sqrt(det-tr*tr/4),t2=2.4-1-a*a;assert.ok(det>0&&tr>0);return[a,b/a,tr,det,tr/2,w,1+a*a,a,2*Math.PI/a,t2,Math.sqrt(det-t2*t2/4),b-1,a*a,-b,-a*a];}
+});
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();
