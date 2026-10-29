@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 89,
+  "current_draft_count": 93,
   "expert_approved": 0,
-  "preliminary_flags": 54,
+  "preliminary_flags": 58,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -328,6 +328,30 @@
       "new_id": "UC-ADV11-P144",
       "prior_id": "UC-ADV10-P109",
       "reason": "存在酸碱、动力学或停留时间数学元素邻近，人工专家尚未完成逐式比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-I149",
+      "prior_id": "UC-ADV10-I112",
+      "reason": "领域可能存在相似缺陷/光度/酶促动力学/电化学元件，核心数学模型尚须人工逐式比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-A148",
+      "prior_id": "UC-ADV10-A109",
+      "reason": "领域可能存在相似缺陷/光度/酶促动力学/电化学元件，核心数学模型尚须人工逐式比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-O145",
+      "prior_id": "UC-ADV10-O117",
+      "reason": "领域可能存在相似缺陷/光度/酶促动力学/电化学元件，核心数学模型尚须人工逐式比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-P145",
+      "prior_id": "UC-ADV10-P115",
+      "reason": "领域可能存在相似缺陷/光度/酶促动力学/电化学元件，核心数学模型尚须人工逐式比较。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -865,6 +889,30 @@
       "model_family": "chemical-reactor-Gamma-RTD-tanks-in-series-Laplace-conversion-heat-flux",
       "judgement": "pending_human_comparison",
       "screening": "五位点微态或化学反应RTD独立答案向量已写入，跨辑原创新颖性与科学模型边界仍待专家逐式核验。"
+    },
+    {
+      "new_id": "UC-ADV11-I149",
+      "model_family": "ceria-oxygen-vacancy-Ce3-electroneutrality-ideal-sublattice-pressure-massaction",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值答案、物料/电荷/能量或复阻抗检查已写；历史方程同构、原创性和实验科学正确性待专家复核。"
+    },
+    {
+      "new_id": "UC-ADV11-A148",
+      "model_family": "two-wavelength-standard-addition-dual-complex-molar-absorption-full-rank-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值答案、物料/电荷/能量或复阻抗检查已写；历史方程同构、原创性和实验科学正确性待专家复核。"
+    },
+    {
+      "new_id": "UC-ADV11-O145",
+      "model_family": "enzymatic-kinetic-resolution-secondary-alcohol-enantiomer-exponential-survival-ee",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值答案、物料/电荷/能量或复阻抗检查已写；历史方程同构、原创性和实验科学正确性待专家复核。"
+    },
+    {
+      "new_id": "UC-ADV11-P145",
+      "model_family": "Randles-faradaic-Warburg-complex-impedance-two-frequency-admittance-deembedding",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值答案、物料/电荷/能量或复阻抗检查已写；历史方程同构、原创性和实验科学正确性待专家复核。"
     }
   ]
 }
