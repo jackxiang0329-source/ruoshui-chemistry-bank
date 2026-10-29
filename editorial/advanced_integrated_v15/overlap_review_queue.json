@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 15,
   "status": "expert_review_pending",
-  "current_draft_count": 26,
+  "current_draft_count": 34,
   "expert_approved": 0,
-  "preliminary_flags": 26,
+  "preliminary_flags": 34,
   "pairs": [
     {
       "new_id": "UC-ADV15-I226",
@@ -160,6 +160,54 @@
       "new_id": "UC-ADV15-O230",
       "prior_id": null,
       "reason": "原理和数值计算与此前所有辑别的模型对比尚需人工完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P223",
+      "prior_id": null,
+      "reason": "物理模型和题干的跨辑相似性需人工逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P224",
+      "prior_id": null,
+      "reason": "物理模型和题干的跨辑相似性需人工逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P225",
+      "prior_id": null,
+      "reason": "物理模型和题干的跨辑相似性需人工逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P226",
+      "prior_id": null,
+      "reason": "物理模型和题干的跨辑相似性需人工逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P227",
+      "prior_id": null,
+      "reason": "物理模型和题干的跨辑相似性需人工逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P228",
+      "prior_id": null,
+      "reason": "物理模型和题干的跨辑相似性需人工逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P229",
+      "prior_id": null,
+      "reason": "物理模型和题干的跨辑相似性需人工逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P230",
+      "prior_id": null,
+      "reason": "物理模型和题干的跨辑相似性需人工逐式核对。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -319,6 +367,54 @@
       "model_family": "organic-KIE-H-D-competing-substrates-branches",
       "judgement": "pending_human_comparison",
       "screening": "机器一致性核验，独立科学复核待办。"
+    },
+    {
+      "new_id": "UC-ADV15-P223",
+      "model_family": "Gibbs-Helmholtz-vanthoff-equilibrium-temperature-integral",
+      "judgement": "pending_human_comparison",
+      "screening": "机器输出自校验；独立第三方审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P224",
+      "model_family": "Einstein-solid-harmonic-quantum-heat-capacity-two-temperatures",
+      "judgement": "pending_human_comparison",
+      "screening": "机器输出自校验；独立第三方审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P225",
+      "model_family": "CSTR-first-order-steady-state-conversion-mean-residence",
+      "judgement": "pending_human_comparison",
+      "screening": "机器输出自校验；独立第三方审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P226",
+      "model_family": "Marcus-electron-transfer-parabola-inverted-region",
+      "judgement": "pending_human_comparison",
+      "screening": "机器输出自校验；独立第三方审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P227",
+      "model_family": "Lindemann-Hinshelwood-unimolecular-falloff",
+      "judgement": "pending_human_comparison",
+      "screening": "机器输出自校验；独立第三方审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P228",
+      "model_family": "Henry-gas-solubility-temperature-pressure-enthalpy",
+      "judgement": "pending_human_comparison",
+      "screening": "机器输出自校验；独立第三方审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P229",
+      "model_family": "quantum-particle-one-dimensional-infinite-well-absorption",
+      "judgement": "pending_human_comparison",
+      "screening": "机器输出自校验；独立第三方审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P230",
+      "model_family": "binary-mixture-excess-volume-partial-molar-derivatives",
+      "judgement": "pending_human_comparison",
+      "screening": "机器输出自校验；独立第三方审核未完成。"
     }
   ]
 }
