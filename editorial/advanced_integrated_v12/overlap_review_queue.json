@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 86,
+  "current_draft_count": 90,
   "expert_approved": 0,
-  "preliminary_flags": 86,
+  "preliminary_flags": 90,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -520,6 +520,30 @@
       "new_id": "UC-ADV12-P168",
       "prior_id": null,
       "reason": "已完成新题算式与历史近期专题的初筛，仍待与全历史多模型逐式相似度与人工原创性复核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I173",
+      "prior_id": null,
+      "reason": "需人工逐一对照已存全部系列的数学模型、题干原创性、化学有效性及说明完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A173",
+      "prior_id": null,
+      "reason": "需人工逐一对照已存全部系列的数学模型、题干原创性、化学有效性及说明完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O169",
+      "prior_id": null,
+      "reason": "需人工逐一对照已存全部系列的数学模型、题干原创性、化学有效性及说明完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P169",
+      "prior_id": null,
+      "reason": "需人工逐一对照已存全部系列的数学模型、题干原创性、化学有效性及说明完整性。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -1039,6 +1063,30 @@
       "model_family": "binary-electrolyte-zerocurrent-ambipolar-diffusion-liquidjunction-potential-transference",
       "judgement": "pending_human_comparison",
       "screening": "独立数值见证函数可机算，真实体系合理性、文本版权与跨辑同构审定均未完成。"
+    },
+    {
+      "new_id": "UC-ADV12-I173",
+      "model_family": "mixed-A-B-site-perovskite-KFe-acceptor-codoping-oxygen-vacancy-charge-radius-density",
+      "judgement": "pending_human_comparison",
+      "screening": "分别进行了物料/电荷/占位/自由能及独立数值见证复算；尚未取得专家审核批准。"
+    },
+    {
+      "new_id": "UC-ADV12-A173",
+      "model_family": "competitive-complexometric-Ca-Mg-EDTA-masking-leakage-two-endpoint-correlated-uncertainty-hardness",
+      "judgement": "pending_human_comparison",
+      "screening": "分别进行了物料/电荷/占位/自由能及独立数值见证复算；尚未取得专家审核批准。"
+    },
+    {
+      "new_id": "UC-ADV12-O169",
+      "model_family": "organocatalytic-substrate-inhibition-two-step-binding-productive-ES-inactive-ESS-rate-optimum",
+      "judgement": "pending_human_comparison",
+      "screening": "分别进行了物料/电荷/占位/自由能及独立数值见证复算；尚未取得专家审核批准。"
+    },
+    {
+      "new_id": "UC-ADV12-P169",
+      "model_family": "classical-homogeneous-nucleation-spherical-critical-radius-barrier-supersaturation-rate",
+      "judgement": "pending_human_comparison",
+      "screening": "分别进行了物料/电荷/占位/自由能及独立数值见证复算；尚未取得专家审核批准。"
     }
   ]
 }
