@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 13,
   "status": "expert_review_pending",
-  "current_draft_count": 64,
+  "current_draft_count": 74,
   "expert_approved": 0,
-  "preliminary_flags": 64,
+  "preliminary_flags": 74,
   "pairs": [
     {
       "new_id": "UC-ADV13-I176",
@@ -388,6 +388,66 @@
       "new_id": "UC-ADV13-O190",
       "prior_id": null,
       "reason": "分步对比所有历史核心有机反应动力学与原创建模题，人工科学性与文本审核待完成。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P181",
+      "prior_id": null,
+      "reason": "需与历史全辑科学模型逐式对照与人工审定。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P182",
+      "prior_id": null,
+      "reason": "需与历史全辑科学模型逐式对照与人工审定。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P183",
+      "prior_id": null,
+      "reason": "需与历史全辑科学模型逐式对照与人工审定。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P184",
+      "prior_id": null,
+      "reason": "需与历史全辑科学模型逐式对照与人工审定。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P185",
+      "prior_id": null,
+      "reason": "需与历史全辑科学模型逐式对照与人工审定。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P186",
+      "prior_id": null,
+      "reason": "需与历史全辑科学模型逐式对照与人工审定。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P187",
+      "prior_id": null,
+      "reason": "需与历史全辑科学模型逐式对照与人工审定。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P188",
+      "prior_id": null,
+      "reason": "需与历史全辑科学模型逐式对照与人工审定。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P189",
+      "prior_id": null,
+      "reason": "需与历史全辑科学模型逐式对照与人工审定。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-P190",
+      "prior_id": null,
+      "reason": "需与历史全辑科学模型逐式对照与人工审定。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -775,6 +835,66 @@
       "model_family": "peptide-four-cysteine-three-disulfide-pairing-topology-partition",
       "judgement": "pending_human_comparison",
       "screening": "数值答案独立证据函数在自动QA核验，但学术内容不自动批准。"
+    },
+    {
+      "new_id": "UC-ADV13-P181",
+      "model_family": "Margules-binary-VLE-activity-azeotrope-pressure",
+      "judgement": "pending_human_comparison",
+      "screening": "数值见证已编制，专家科学性和版权审核尚未批准。"
+    },
+    {
+      "new_id": "UC-ADV13-P182",
+      "model_family": "osmotic-second-virial-two-concentrations-coefficient-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "数值见证已编制，专家科学性和版权审核尚未批准。"
+    },
+    {
+      "new_id": "UC-ADV13-P183",
+      "model_family": "Fick-both-face-perfect-sink-slab-average-survival-eigenmode-series",
+      "judgement": "pending_human_comparison",
+      "screening": "数值见证已编制，专家科学性和版权审核尚未批准。"
+    },
+    {
+      "new_id": "UC-ADV13-P184",
+      "model_family": "Ising-chain-zero-field-spin-correlation-length-1d-exact",
+      "judgement": "pending_human_comparison",
+      "screening": "数值见证已编制，专家科学性和版权审核尚未批准。"
+    },
+    {
+      "new_id": "UC-ADV13-P185",
+      "model_family": "Kramers-overdamped-escape-frequencies-friction-activation",
+      "judgement": "pending_human_comparison",
+      "screening": "数值见证已编制，专家科学性和版权审核尚未批准。"
+    },
+    {
+      "new_id": "UC-ADV13-P186",
+      "model_family": "FRET-Forster-sixth-power-transfer-lifetime-distance",
+      "judgement": "pending_human_comparison",
+      "screening": "数值见证已编制，专家科学性和版权审核尚未批准。"
+    },
+    {
+      "new_id": "UC-ADV13-P187",
+      "model_family": "argon-dimer-LennardJones-12-6-harmonic-vibration",
+      "judgement": "pending_human_comparison",
+      "screening": "数值见证已编制，专家科学性和版权审核尚未批准。"
+    },
+    {
+      "new_id": "UC-ADV13-P188",
+      "model_family": "Planck-spectrum-blackbody-photon-occupation-Wien-displacement",
+      "judgement": "pending_human_comparison",
+      "screening": "数值见证已编制，专家科学性和版权审核尚未批准。"
+    },
+    {
+      "new_id": "UC-ADV13-P189",
+      "model_family": "Soret-thermodiffusion-binary-zero-flux-logistic-composition",
+      "judgement": "pending_human_comparison",
+      "screening": "数值见证已编制，专家科学性和版权审核尚未批准。"
+    },
+    {
+      "new_id": "UC-ADV13-P190",
+      "model_family": "Clapeyron-solid-solid-pressure-temperature-transition-line",
+      "judgement": "pending_human_comparison",
+      "screening": "数值见证已编制，专家科学性和版权审核尚未批准。"
     }
   ]
 }
