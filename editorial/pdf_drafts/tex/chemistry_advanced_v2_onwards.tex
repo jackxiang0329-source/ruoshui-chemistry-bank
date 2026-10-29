@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至10辑 (466题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至10辑 (470题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -8311,6 +8311,28 @@ Q2分数 = 0.142857143 fraction；Q3分数 = 0.571428571 fraction；Q4分数 = 0
 均匀自旋态平均场，忽略成核及界面；跨辑与自旋统计及相分离模型仍需人工对照。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I119 · 双配位壳层EXAFS振荡的配位数反演与德拜–沃勒衰减}
+\noindent\textbf{题目}\par
+某假想过渡金属氧化物K边EXAFS经背景扣除后满足简化单散射模型χ(k)=Σ\_\{j=1\}² N\_j S₀² f\_j exp(−2σ\_j²k²)sin(2kR\_j+δ\_j)/(kR\_j²)。k以Å⁻¹计，R₁=2.000 Å、R₂=3.100 Å；σ₁²=0.003000 Å²、σ₂²=0.006000 Å²；S₀²=0.9000，f₁=1.200 Å、f₂=1.500 Å，δ₁=0.2000 rad、δ₂=−0.1000 rad。f\_j为本简化公式的有效散射长度。k=3、5、7、9 Å⁻¹时的无量纲振荡依次为−0.1509738923012618、0.1608810121254439、−0.0055182955622486、−0.0824827660820380（理想模型观测）。求两个壳层配位数、总配位数、加权平均键长、前两频点的反演行列式、后两频点的预测振荡、第一壳层9与3 Å⁻¹的德拜–沃勒指数包络比和第一壳层配位占比；检验解的可辨识性、物理性及模型适用范围。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将χ(k)改写为χ(k)=a₁(k)N₁+a₂(k)N₂，a\_j=S₀²f\_j exp(−2σ\_j²k²)sin(2kR\_j+δ\_j)/(kR\_j²)；f\_j与kR\_j²均为Å，故a\_j无量纲。
+\item 取k=3和5 Å⁻¹形成二元线性方程组，右端分别为−0.1509738923012618和0.1608810121254439。
+\item 系数行列式D=a₁(3)a₂(5)−a₂(3)a₁(5)=0.000966545328975，不为零，因此固定两壳模型中解唯一。
+\item 由克拉默法则N₁=[χ(3)a₂(5)−χ(5)a₂(3)]/D=4，N₂=[a₁(3)χ(5)−a₁(5)χ(3)]/D=2；均非负。
+\item 总配位数N=6，第一壳层配位占比N₁/N=2/3；接近整数是理想模型的特征，不可据此认定真实样品不存在配位无序。
+\item 配位数加权平均键长R̄=(4×2.000+2×3.100)/6=2.3666666667 Å，不是单一壳层的真实键长。
+\item 代入独立频点得到χ(7)=−0.00551829556225、χ(9)=−0.0824827660820，与给定数据在舍入误差内一致。
+\item 第一壳层德拜–沃勒指数包络的9与3 Å⁻¹比为exp[−2×0.003(9²−3²)]=exp(−0.432)≈0.6492093767；此比不包含1/k和正弦干涉。
+\item 核对N₁,N₂≥0、D≠0、四个χ残差近零；真实EXAFS须考虑f(k)、相位变化、平均自由程、多重散射和参数相关性，故该题不构成真实实验结构鉴定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+第一壳配位数 = 4 count；第二壳配位数 = 2 count；总配位数 = 6 count；平均键长 = 2.36666667 angstrom；chi(7) = -0.00551829556 fraction；chi(9) = -0.0824827661 fraction；行列式 = 0.000966545329 dimensionless；DW包络比 = 0.649209377 fraction；第一壳占比 = 0.666666667 fraction\par
+\noindent\textbf{模型前提：}
+固定两壳单散射模型，尚须与既有衍射和散射题进行方程级人工去重。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第10辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -8698,6 +8720,28 @@ E\_X = 0.434598209 fraction；T1\_X = 1.2 s；C\_X = 3.5 mmol/L；Ernst角 = 64.
 alpha = 0.8 fraction；Q = 0.0001 S*s\textasciicircum{}alpha；Rct = 250 ohm；Gct = 0.004 S；50Hz实部 = 70.69238 ohm；50Hz虚部 = -67.7960741 ohm；50Hz模 = 97.9475382 ohm；1Hz相角 = -5.27703639 degree；CPE相角 = 72 degree\par
 \noindent\textbf{模型前提：}
 线性小信号，无扩散和寄生电感；与既有电化学及反问题模型需人工比较。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A119 · Zimm静态光散射的双变量外推与聚合物维里系数辨识}
+\noindent\textbf{题目}\par
+某聚合物稀溶液绝对静态光散射在低浓度与小角度满足Y(q,c)=Kc/Rθ=M\_w⁻¹[1+q²R\_g²/3]+2A₂c，忽略q⁴、c²及q²c项。q以nm⁻¹计，质量浓度c以g/mL计，Y单位mol/g；M\_w为g/mol、R\_g为nm、A₂为mol·mL/g²。四个理想观测分别为Y(0.0100,0.00200)=1.100833333333333×10⁻⁵、Y(0.0100,0.00500)=1.220833333333333×10⁻⁵、Y(0.0200,0.00200)=1.163333333333333×10⁻⁵、Y(0.0200,0.00500)=1.283333333333333×10⁻⁵ mol/g。求重均分子量、回转半径、第二维里系数、零角零浓度截距、q²与c的两个斜率；预测q=0.0150 nm⁻¹、c=0.00300 g/mL时Y和Rθ/(Kc)，及q=0、c=0.00300时Y；验证四点闭合、物理正根和小角度近似。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 写成Y=C+Bq²+Dc，其中C=1/M\_w、B=R\_g²/(3M\_w)、D=2A₂，单位分别为mol/g、mol·nm²/g、mol·mL/g²。
+\item 同q两浓度差给D=(Y₁₂−Y₁₁)/(0.005−0.002)=4.000000×10⁻⁴ mol·mL/g²。
+\item 同浓度两q²差给B=(Y₂₁−Y₁₁)/(0.020²−0.010²)=0.0020833333333 mol·nm²/g。
+\item 由C=Y₁₁−B(0.010)²−D(0.002)=1.000000×10⁻⁵ mol/g，得到M\_w=100000 g/mol。
+\item 由R\_g²=3B/C得到物理正根R\_g=25.0000 nm；A₂=D/2=2.000000×10⁻⁴ mol·mL/g²，均满足题设稀溶液模型。
+\item 第四角点交叉差Y₂₂−Y₂₁−Y₁₂+Y₁₁=0（末位舍入范围内），证实给定观测不含可检测的q²c项。
+\item 预测Y(0.015,0.003)=C+B×0.015²+D×0.003=1.166875×10⁻⁵ mol/g。
+\item 相应Rθ/(Kc)=1/Y=85698.9823 g/mol；零角但有限浓度的Y(0,0.003)=1.120000×10⁻⁵ mol/g，不能误认为C。
+\item 最大qR\_g=0.020×25=0.5，q²R\_g²/3≤0.08333；模型忽略高阶散射项的有效性仍须由实验角度、浓度扫描检验。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Mw = 100000 g/mol；Rg = 25 nm；A2 = 0.0002 mol*mL/g\textasciicircum{}2；截距 = 1e-05 mol/g；q平方斜率 = 0.00208333333 mol*nm\textasciicircum{}2/g；浓度斜率 = 0.0004 mol*mL/g\textasciicircum{}2；外推Y = 1.166875e-05 mol/g；R/(Kc) = 85698.9823 g/mol；零角有限浓度Y = 1.12e-05 mol/g\par
+\noindent\textbf{模型前提：}
+低q、低浓度Zimm截断且绝对散射校准；与既往DLS反演须人工核心模型比较。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -9088,6 +9132,28 @@ b1 = 72.0443865 m/z；b2 = 129.065846 m/z；b3 = 216.097876 m/z；b4 = 315.16628
 恒弱光、一级光化学、无副反应；旧辑双态动力学的方程级相似性需人工复核。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O116 · Claisen重排的碳同位素效应与Rayleigh残余底物富集}
+\noindent\textbf{题目}\par
+某假想烯丙基乙烯基醚在恒温下不可逆发生分子内[3,3]-σ迁移Claisen重排，所有底物只生成一种重排产物。按参与成键的单一目标碳位点是否为¹³C，底物分为S₁₂和S₁₃。初始总底物1.000 mmol，目标位点¹³C原子分数为0.011000，其余为¹²C。两种同位素异构体各自遵守一级动力学，k₁₂=0.06000 min⁻¹，k₁₃=0.05700 min⁻¹；没有同位素交换、二次反应或标记位点丢失。求25.00 min时动力学同位素效应k₁₂/k₁₃、剩余底物总分数和总转化率、剩余底物及产物的¹³C/¹²C摩尔比、两者相对初始底物的δ值(‰，δ=1000(R/R₀−1))、剩余底物与产物的¹³C原子分数以及两处¹³C物质的量。核验目标位点同位素与总物料守恒，并解释为何δ不等于转化率。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 初始S₁₂(0)=0.989000 mmol、S₁₃(0)=0.011000 mmol；同位素比R=n(¹³C)/n(¹²C)不同于¹³C原子分数。
+\item 两同位素独立一级消耗，S₁₂(t)=0.989exp(−0.06000t)，S₁₃(t)=0.011exp(−0.05700t)，t以min计。
+\item t=25.00 min时S₁₂=0.220675728387 mmol，S₁₃=0.00264559309529 mmol，底物总剩余分数=0.223321321482。
+\item 总转化率X=1−S₁₂−S₁₃=0.776678678518；产物P₁₂=0.768324271613 mmol、P₁₃=0.00835440690471 mmol。
+\item 同位素效应k₁₂/k₁₃=1.05263157895>1，较慢的¹³C异构体在残余底物中富集。
+\item 初始R₀=0.011/0.989，残余底物R\_S=S₁₃/S₁₂=0.0119886002626，产物R\_P=P₁₃/P₁₂=0.0108735428690。
+\item δ\_S=1000(R\_S/R₀−1)=+77.884150885‰，δ\_P=1000(R\_P/R₀−1)=−22.369645684‰，不是百分转化率。
+\item 剩余底物¹³C分数S₁₃/(S₁₂+S₁₃)=0.011846576394，产物¹³C分数P₁₃/(P₁₂+P₁₃)=0.010756580727；Rayleigh核验R\_S/R₀=exp[(k₁₂−k₁₃)t]。
+\item 检查S₁₂+P₁₂=0.989000、S₁₃+P₁₃=0.011000 mmol，总量守恒1.000 mmol；位点特异性¹³C效应的真实数值须实验验证。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+速率同位素效应 = 1.05263158 ratio；剩余分数 = 0.223321321 fraction；转化率 = 0.776678679 fraction；残余R = 0.0119886003 ratio；产物R = 0.0108735429 ratio；残余delta = 77.8841509 permille；产物delta = -22.3696457 permille；产物13C分数 = 0.0107565807 fraction；残余13C分数 = 0.0118465764 fraction；残余13C量 = 0.0026455931 mmol；产物13C量 = 0.0083544069 mmol\par
+\noindent\textbf{模型前提：}
+固定单个位点、无交换、无副反应的一级动力学；与既有同位素示踪和反应网络题的核心模型尚待人工比对。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第10辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -9475,6 +9541,28 @@ A、B由理想储库固定、质量作用动力学且已无量纲化；仅作局
 J1 = 6.8e-07 mol/(m\textasciicircum{}2*s)；J2 = 6e-08 mol/(m\textasciicircum{}2*s)；耗散 = 0.0001312 W/m\textasciicircum{}2；熵产生 = 4.40046956e-07 W/(m\textasciicircum{}2*K)；小特征值 = 1.91886117e-09 mol\textasciicircum{}2/(J*m\textasciicircum{}2*s)；大特征值 = 5.08113883e-09 mol\textasciicircum{}2/(J*m\textasciicircum{}2*s)；耦合强度 = 0.433012702 fraction；停滞A2 = -100 J/mol；停滞J1 = 6.5e-07 mol/(m\textasciicircum{}2*s)；停滞耗散 = 0.00013 W/m\textasciicircum{}2；detL = 9.75e-18 [mol\textasciicircum{}2/(J*m\textasciicircum{}2*s)]\textasciicircum{}2\par
 \noindent\textbf{模型前提：}
 线性近平衡、温度均匀、Onsager互易；专家及跨辑模型审查待办。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P116 · Marcus电子转移的详细平衡与反转区速率判别}
+\noindent\textbf{题目}\par
+某假想外球电子转移D+A⇌D⁺+A⁻在298.15 K时符合经典非绝热Marcus抛物线近似，正反重组能相同λ=0.8000 eV，正向标准自由能ΔG°=−0.2000 eV，正反预指数k₀=1.000×10¹⁰ s⁻¹。取k\_B=8.617333262145×10⁻⁵ eV/K。前向势垒ΔG‡\_f=(λ+ΔG°)²/(4λ)，反向势垒ΔG‡\_r=(λ−ΔG°)²/(4λ)，速率k=k₀exp(−ΔG‡/(k\_BT))。求正反势垒、速率、速率比和由详细平衡反推的ΔG°；再把另一可调体系的驱动力改为ΔG°=−1.600 eV（其他参数不变），求此时正向势垒、速率、相对于原正向速率的比值、该点∂ln k\_f/∂ΔG°。解释为何更负的驱动力可降低速率，检查单位、反转区与微观可逆性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 热能k\_BT=(8.617333262145×10⁻⁵ eV/K)(298.15 K)=0.0256925791211 eV；指数的势垒/热能无量纲。
+\item 正向势垒ΔG‡\_f=(0.8−0.2)²/3.2=0.112500 eV，反向势垒ΔG‡\_r=(0.8+0.2)²/3.2=0.312500 eV。
+\item 由Marcus速率式k\_f=10¹⁰exp(−0.1125/k\_BT)=1.2541699134×10⁸ s⁻¹，k\_r=10¹⁰exp(−0.3125/k\_BT)=5.2198329679×10⁴ s⁻¹。
+\item 势垒差ΔG‡\_f−ΔG‡\_r=ΔG°，所以k\_f/k\_r=exp(−ΔG°/k\_BT)=2402.70123799。
+\item 由详细平衡独立反推ΔG°=−k\_BT ln(k\_f/k\_r)=−0.200000 eV；反向速率不能误用同一正向势垒。
+\item 驱动力变为−1.600 eV时正向势垒ΔG‡\_inv=(0.8−1.6)²/3.2=0.200000 eV。
+\item 反转区速率k\_inv=10¹⁰exp(−0.2/k\_BT)=4.1619822897×10⁶ s⁻¹，k\_inv/k\_f=0.03318515494；更放能却更慢。
+\item ∂ln k\_f/∂ΔG°=−(λ+ΔG°)/(2λk\_BT)，在−1.600 eV处为+19.4608722481 eV⁻¹；继续减小ΔG°会降低速率。
+\item 速率最大值出现在ΔG°=−λ=−0.800 eV，势垒为零且k=k₀；−1.600 eV处位于Marcus反转区。忽略量子振动、非平衡溶剂与电子耦合变化。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+前向势垒 = 0.1125 eV；反向势垒 = 0.3125 eV；前向速率 = 125416991 s\textasciicircum{}-1；反向速率 = 52198.3297 s\textasciicircum{}-1；速率比 = 2402.70124 ratio；反转区势垒 = 0.2 eV；反转区速率 = 4161982.29 s\textasciicircum{}-1；反转区相对速率 = 0.0331851549 ratio；反推自由能 = -0.2 eV；反转区对数斜率 = 19.4608722 eV\textasciicircum{}-1\par
+\noindent\textbf{模型前提：}
+等曲率经典Marcus与固定电子耦合；与既有自由能动力学模型的核心方程仍需人工审查。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
