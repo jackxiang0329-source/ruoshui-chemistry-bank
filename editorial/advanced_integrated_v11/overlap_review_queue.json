@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 55,
+  "current_draft_count": 57,
   "expert_approved": 0,
-  "preliminary_flags": 20,
+  "preliminary_flags": 22,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -124,6 +124,18 @@
       "new_id": "UC-ADV11-A139",
       "prior_id": "UC-ADV11-P125",
       "reason": "与该题存在研究方法相邻之处，但数学模型及观测量不同，不能据此确认原创性，需逐式人工核验。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-O136",
+      "prior_id": "UC-ADV11-O129",
+      "reason": "化学现象或动力学谱学方法存在共性，虽然方程与观测对象不同，仍应人工比较可能的数学模型复用。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-P136",
+      "prior_id": "UC-ADV11-P124",
+      "reason": "化学现象或动力学谱学方法存在共性，虽然方程与观测对象不同，仍应人工比较可能的数学模型复用。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -457,6 +469,18 @@
       "model_family": "DSC-Kissinger-peakcondition-thermal-analysis-activation-enthalpy-dual-check",
       "judgement": "pending_human_comparison",
       "screening": "主要答案使用独立计算脚本复核；跨全部历史辑核心模型和科学假设仍待人类专家逐式审查。"
+    },
+    {
+      "new_id": "UC-ADV11-O136",
+      "model_family": "Baeyer-Villiger-oxygen18-atom-mapping-regiochemical-GCMS-response-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "完整主要答案向量由独立JS函数计算；跨辑结构相似性与实验科学性仍须人类专家逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV11-P136",
+      "model_family": "reversible-dimer-chemical-relaxation-stoichiometric-jacobian-Debye-loss-spectrum",
+      "judgement": "pending_human_comparison",
+      "screening": "完整主要答案向量由独立JS函数计算；跨辑结构相似性与实验科学性仍须人类专家逐式复核。"
     }
   ]
 }
