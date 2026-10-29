@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 57,
+  "current_draft_count": 58,
   "expert_approved": 0,
-  "preliminary_flags": 22,
+  "preliminary_flags": 23,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -136,6 +136,12 @@
       "new_id": "UC-ADV11-P136",
       "prior_id": "UC-ADV11-P124",
       "reason": "化学现象或动力学谱学方法存在共性，虽然方程与观测对象不同，仍应人工比较可能的数学模型复用。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-I141",
+      "prior_id": "UC-ADV10-I101",
+      "reason": "旧题Heisenberg反铁磁二聚体，本题三角形Ising挫折及六重残余熵；同属分子磁性，需人工核查模型不同性。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -481,6 +487,12 @@
       "model_family": "reversible-dimer-chemical-relaxation-stoichiometric-jacobian-Debye-loss-spectrum",
       "judgement": "pending_human_comparison",
       "screening": "完整主要答案向量由独立JS函数计算；跨辑结构相似性与实验科学性仍须人类专家逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV11-I141",
+      "model_family": "triangular-Ising-frustrated-cluster-partition-residual-entropy-susceptibility",
+      "judgement": "pending_human_comparison",
+      "screening": "逐项数值witness与能量热容极限已建；须人工逐式比对历史三核、二聚体及其它统计力学题。"
     }
   ]
 }

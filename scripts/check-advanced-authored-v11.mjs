@@ -89,6 +89,8 @@ Object.assign(witness,{
 "UC-ADV11-O136":()=>{const u=8400/1.2,v=2400/.8,P=u/(u+v),n=.01*.5,rt=8.314462618*298.15,m=8*12.011+8*1.008+15.999;assert.ok(Math.abs(P+(1-P)-1)<1e-14&&Math.abs(n*.8+n*.2-n)<1e-14);return[P,1-P,P/(1-P),P*n,(1-P)*n,.8*n,.2*n,.01-n,-rt*Math.log(P/(1-P))/1000,m,m+15.999,P*n+(1-P)*n+.01-n];},
 "UC-ADV11-P136":()=>{const C=.1,K=20,w=.1*Math.sqrt(17),a=(Math.sqrt(1+8*K*C)-1)/(4*K),b=K*a*a,kr=w/Math.sqrt(1+8*K*C),kf=K*kr,L=kr+4*kf*a,t=1/L,Z=kf*a*a/L;assert.ok(Math.abs(a+2*b-C)<1e-14&&Math.abs(L-w)<1e-12);return[a,b,kr,kf,L,t,L/(2*Math.PI),Z,Z/Math.sqrt(2),Z/2,-Math.PI/4,a+2*b,1+4*K*a];}
 });
+
+Object.assign(witness,{"UC-ADV11-I141":()=>{const K=120,T=100,R=8.314462618,kb=1.380649e-23,NA=6.02214076e23,mb=3*9.2740100783e-24,r=Math.exp(-4*K/T),p=r/(3+r),mean=(3+9*r)/(3+r),chi=NA*mb*mb/(kb*T)*mean;assert.ok(p>0&&p<1&&mean>=1&&mean<=3);return[r,p,3/(3+r),R*K*(-1+4*p),R*(4*K/T)**2*p*(1-p),R*(Math.log(6+2*r)+4*K/T*p),chi,mean/3,mean,6+2*r,R*Math.log(6),R*Math.log(8)];}});
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();
