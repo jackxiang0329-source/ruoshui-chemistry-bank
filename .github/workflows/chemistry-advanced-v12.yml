@@ -1,0 +1,36 @@
+name: Chemistry twelfth-series independent QA
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'editorial/advanced_integrated_v12/**'
+      - 'scripts/check-advanced-authored-v12.mjs'
+      - 'scripts/audit-v12-cross-series.mjs'
+      - '.github/workflows/chemistry-advanced-v12.yml'
+  pull_request:
+    paths:
+      - 'editorial/advanced_integrated_v12/**'
+      - 'scripts/check-advanced-authored-v12.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check every full answer vector and pending-review flags
+        run: node scripts/check-advanced-authored-v12.mjs
+      - name: Compare all historical model families and register manual-review candidates
+        run: node scripts/audit-v12-cross-series.mjs
+      - name: Archive cross-series screening candidates for expert review
+        uses: actions/upload-artifact@v4
+        with:
+          name: chemistry-v12-cross-series-screening
+          path: editorial/advanced_integrated_v12/cross_series_screening_ci.json
+          retention-days: 60
+          if-no-files-found: error

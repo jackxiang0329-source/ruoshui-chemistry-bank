@@ -1,4 +1,4 @@
-# 第十一辑 · 大学化学高阶综合题（进行中）
+# 第十一辑 · 大学化学高阶综合题（已满100题，待专家审校）
 本辑目标100题：无机、分析、有机、物化各25。当前**100/100**，无机25、分析25、有机25、物化25；完整题目及解析见 [8题中文解答](8_advanced_chemistry_solutions.md)。
 | 学科 | 数量 | 题号 | 结构化源稿 |
 |---|---:|---|---|
@@ -7,7 +7,7 @@
 | 有机化学 | 25/25 | O123–O147 | [organic.jsonl](organic.jsonl) |
 | 物理化学 | 25/25 | P123–P147 | [physical.jsonl](physical.jsonl) |
 
-每题至少7个实质推导步骤，并由 [独立答案向量脚本](../../scripts/check-advanced-authored-v11.mjs) 全量复算；对跨辑核心模型进行人工复核的队列见 [overlap_review_queue.json](overlap_review_queue.json)。自动数值核对不等于科学专家审定或原创性认证。**所有89题均publishable=false，正式批准0。** 续编应按每科递增题号，先检查main SHA与已提交记录，不得重复或用参数变式凑数。
+每题至少7个实质推导步骤，并由 [独立答案向量脚本](../../scripts/check-advanced-authored-v11.mjs) 全量复算；对跨辑核心模型进行人工复核的队列见 [overlap_review_queue.json](overlap_review_queue.json)。自动数值核对不等于科学专家审定或原创性认证。**所有100题均publishable=false，正式批准0。** 续编应按每科递增题号，先检查main SHA与已提交记录，不得重复或用参数变式凑数。
 
 最新四题：[I128/A128/O125/P125中文解析](continuation_I128_A128_O125_P125.md)。
 

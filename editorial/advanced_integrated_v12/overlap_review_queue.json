@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "series": 12,
+  "status": "expert_review_pending",
+  "current_draft_count": 4,
+  "expert_approved": 0,
+  "preliminary_flags": 4,
+  "pairs": [
+    {
+      "new_id": "UC-ADV12-I151",
+      "prior_id": "UC-ADV11-I148",
+      "reason": "模型结构或题目领域与前辑存在潜在邻近，必须通过专家逐式比较数学同构与化学科学性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A151",
+      "prior_id": "UC-ADV11-A140",
+      "reason": "模型结构或题目领域与前辑存在潜在邻近，必须通过专家逐式比较数学同构与化学科学性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O148",
+      "prior_id": "UC-ADV11-O141",
+      "reason": "模型结构或题目领域与前辑存在潜在邻近，必须通过专家逐式比较数学同构与化学科学性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P148",
+      "prior_id": "UC-ADV10-P123",
+      "reason": "模型结构或题目领域与前辑存在潜在邻近，必须通过专家逐式比较数学同构与化学科学性。",
+      "judgement": "pending_human_comparison"
+    }
+  ],
+  "new_items_requiring_cross_series_comparison": [
+    {
+      "new_id": "UC-ADV12-I151",
+      "model_family": "MgO-XRD-Williamson-Hall-two-Bragg-peaks-microstrain-size-density",
+      "judgement": "pending_human_comparison",
+      "screening": "主要答案数值与约束由独立JS函数回算，跨全库模型等价性、科学性及新颖性尚未获得专家认证。"
+    },
+    {
+      "new_id": "UC-ADV12-A151",
+      "model_family": "NMR-DOSY-Stefskal-Tanner-PGSE-gradient-signal-diffusion-hydrodynamic-radius",
+      "judgement": "pending_human_comparison",
+      "screening": "主要答案数值与约束由独立JS函数回算，跨全库模型等价性、科学性及新颖性尚未获得专家认证。"
+    },
+    {
+      "new_id": "UC-ADV12-O148",
+      "model_family": "competitive-enzyme-inhibition-three-rate-parameter-identification-integrated-substrate-loss",
+      "judgement": "pending_human_comparison",
+      "screening": "主要答案数值与约束由独立JS函数回算，跨全库模型等价性、科学性及新颖性尚未获得专家认证。"
+    },
+    {
+      "new_id": "UC-ADV12-P148",
+      "model_family": "Semenov-exothermic-reactor-fold-bifurcation-stability-critical-heat-flux",
+      "judgement": "pending_human_comparison",
+      "screening": "主要答案数值与约束由独立JS函数回算，跨全库模型等价性、科学性及新颖性尚未获得专家认证。"
+    }
+  ]
+}
