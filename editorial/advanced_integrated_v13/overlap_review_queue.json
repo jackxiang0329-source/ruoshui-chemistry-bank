@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 13,
   "status": "expert_review_pending",
-  "current_draft_count": 74,
+  "current_draft_count": 86,
   "expert_approved": 0,
-  "preliminary_flags": 74,
+  "preliminary_flags": 86,
   "pairs": [
     {
       "new_id": "UC-ADV13-I176",
@@ -448,6 +448,78 @@
       "new_id": "UC-ADV13-P190",
       "prior_id": null,
       "reason": "需与历史全辑科学模型逐式对照与人工审定。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I195",
+      "prior_id": null,
+      "reason": "跨辑方程模型、学术合理性与文本待人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I196",
+      "prior_id": null,
+      "reason": "跨辑方程模型、学术合理性与文本待人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I197",
+      "prior_id": null,
+      "reason": "跨辑方程模型、学术合理性与文本待人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I198",
+      "prior_id": null,
+      "reason": "跨辑方程模型、学术合理性与文本待人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I199",
+      "prior_id": null,
+      "reason": "跨辑方程模型、学术合理性与文本待人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-I200",
+      "prior_id": null,
+      "reason": "跨辑方程模型、学术合理性与文本待人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A195",
+      "prior_id": null,
+      "reason": "跨辑方程模型、学术合理性与文本待人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A196",
+      "prior_id": null,
+      "reason": "跨辑方程模型、学术合理性与文本待人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A197",
+      "prior_id": null,
+      "reason": "跨辑方程模型、学术合理性与文本待人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A198",
+      "prior_id": null,
+      "reason": "跨辑方程模型、学术合理性与文本待人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A199",
+      "prior_id": null,
+      "reason": "跨辑方程模型、学术合理性与文本待人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV13-A200",
+      "prior_id": null,
+      "reason": "跨辑方程模型、学术合理性与文本待人工审查。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -895,6 +967,78 @@
       "model_family": "Clapeyron-solid-solid-pressure-temperature-transition-line",
       "judgement": "pending_human_comparison",
       "screening": "数值见证已编制，专家科学性和版权审核尚未批准。"
+    },
+    {
+      "new_id": "UC-ADV13-I195",
+      "model_family": "spinel-inversion-cation-sites-MgAl2O4-crystal-stoichiometry",
+      "judgement": "pending_human_comparison",
+      "screening": "已计算完整数值答案，人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV13-I196",
+      "model_family": "perovskite-Goldschmidt-tolerance-factor-radii-CaSrTiO3",
+      "judgement": "pending_human_comparison",
+      "screening": "已计算完整数值答案，人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV13-I197",
+      "model_family": "ferric-aquo-first-hydrolysis-buffered-pH-conditional-speciation",
+      "judgement": "pending_human_comparison",
+      "screening": "已计算完整数值答案，人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV13-I198",
+      "model_family": "spin-only-Curie-susceptibility-CrIII-MnII-localized-moment",
+      "judgement": "pending_human_comparison",
+      "screening": "已计算完整数值答案，人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV13-I199",
+      "model_family": "LiFePO4-theoretical-capacity-one-electron-specific-energy-lithiation",
+      "judgement": "pending_human_comparison",
+      "screening": "已计算完整数值答案，人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV13-I200",
+      "model_family": "Prussian-blue-framework-Fe-oxidation-potassium-charge-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "已计算完整数值答案，人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV13-A195",
+      "model_family": "Kohlrausch-strong-electrolyte-molar-conductivity-extrapolation",
+      "judgement": "pending_human_comparison",
+      "screening": "已计算完整数值答案，人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV13-A196",
+      "model_family": "Gaussian-chromatography-FWHM-theoretical-plates-resolution",
+      "judgement": "pending_human_comparison",
+      "screening": "已计算完整数值答案，人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV13-A197",
+      "model_family": "KarlFischer-coulometric-water-one-mole-iodine-electrons",
+      "judgement": "pending_human_comparison",
+      "screening": "已计算完整数值答案，人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV13-A198",
+      "model_family": "TGA-hydrate-stoichiometry-copper-sulfate-crystal-water",
+      "judgement": "pending_human_comparison",
+      "screening": "已计算完整数值答案，人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV13-A199",
+      "model_family": "Perrin-anisotropy-rotational-correlation-time-two-lifetimes",
+      "judgement": "pending_human_comparison",
+      "screening": "已计算完整数值答案，人工审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV13-A200",
+      "model_family": "isotope-delta15N-standard-ratio-linear-mixing",
+      "judgement": "pending_human_comparison",
+      "screening": "已计算完整数值答案，人工审核未完成。"
     }
   ]
 }
