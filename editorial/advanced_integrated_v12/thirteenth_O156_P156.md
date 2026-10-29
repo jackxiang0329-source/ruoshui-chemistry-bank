@@ -53,7 +53,7 @@
 - remaining_alkene_groups_mol: 0.0011999999999999997 mol
 - A3_gel_mol: 0.0016440429687500006 mol
 - B2_gel_mol: 0.002384033203125001 mol
-- A_branch_consistency_residual: -1.1102230246251565e-16 dimensionless
+- A_branch_consistency_residual: 0 dimensionless
 - B_branch_consistency_residual: 0 dimensionless
 
 适用条件：有限聚合体系的含环、笼状结构、官能团不等活性、扩散受限和反应后网络收缩会改变真正凝胶阈值；本题结果属于理想随机网络的热力学极限。
