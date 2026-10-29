@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第11辑 (85题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第11辑 (89题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -556,6 +556,31 @@ short\_bond\_valence = 1.73091237 valence；long\_bond\_valence = 0.384543817 va
 键价参数依赖配位环境、共价性与经验训练集；真实V₂O₅畸变配位并非严格两短四等长，氧位点桥联数和XRD热振动也会改变反演，需实验核验。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I148 · ScF3声子Grüneisen负热膨胀的晶格与质量密度反演}
+\noindent\textbf{题目}\par
+某假想立方ScF₃无机框架晶体每晶胞含一个ScF₃式量，晶格常数a(300 K)=4.000 Å，Sc/F摩尔原子量分别44.9559与18.9984 g/mol，N\_A=6.02214076×10²³ mol⁻¹。题设有效Grüneisen参数γ=−1.500、体弹性模量B=30.00 GPa、C\_V=3R、R=8.314462618 J/(mol·K)，在300–350 K认为这些参数恒定，且α\_V=γC\_V/(BV\_m)、α\_L=α\_V/3。求每摩尔晶胞体积、式量、300 K密度、体/线热膨胀系数，以及350 K的晶格参数、摩尔体积、密度变化；用立方有限应变精确关系和Sc³⁺/F⁻电中性、量纲核对并讨论负热膨胀近似。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假想立方ScF₃框架每晶胞含一个化学式单位；Sc³⁺与三个F⁻满足化学计量电中性。
+\item 将晶格常数4.000 Å换成4.000×10⁻¹⁰ m，每摩尔晶胞的体积V\_m=N\_Aa³。
+\item 由原子量得到ScF₃式量101.951100000 g/mol，V\_m=0.0000385417008640 m³/mol。
+\item 密度ρ=(M/1000)/V\_m=2645.21538268 kg/m³，明确g/mol到kg/mol的换算。
+\item 采用题设有效Grüneisen关系α\_V=γC\_V/(BV\_m)，B=30.00 GPa、γ=−1.500、C\_V=3R。
+\item 算得α\_V=-0.0000323589609369 K⁻¹和立方各向同性α\_L=α\_V/3=-0.0000107863203123 K⁻¹，二者负号体现负热膨胀。
+\item 升温50.00 K且α\_L近似恒定，按一阶应变a₂=a(1+50α\_L)求a₂=3.99784273594 Å。
+\item 对有限晶格应变以精确立方关系V\_m₂=V\_m(a₂/a)³求0.0000384793760192 m³/mol，而非把3α\_LΔT当严格精确的体积改变量。
+\item 相应密度ρ₂=2649.49982424 kg/m³，相对变化=0.00161969478737，随温度升高因体积缩小而上升。
+\item 单位验证：B V\_m=(Pa)(m³/mol)=J/mol，C\_V/(BV\_m)的量纲是K⁻¹，结果符号与γ一致。
+\item 每式量一个Sc³⁺、三个F⁻电荷和为0，体积收缩不会改变ScF₃的原子数或形式化学计量。
+\item 本题把声子谱压缩为恒定有效γ，忽略温度相关热容、晶体弹性各向异性与声子非谐性；不代表真实ScF₃精确实测。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+molar\_cell\_volume\_m3\_mol = 3.85417009e-05 m3/mol；formula\_mass\_g\_mol = 101.9511 g/mol；density\_300\_kg\_m3 = 2645.21538 kg/m3；volume\_expansion\_K\_inv = -3.23589609e-05 K\textasciicircum{}-1；linear\_expansion\_K\_inv = -1.07863203e-05 K\textasciicircum{}-1；lattice\_parameter\_350\_A = 3.99784274 Angstrom；molar\_volume\_350\_m3\_mol = 3.8479376e-05 m3/mol；density\_350\_kg\_m3 = 2649.49982 kg/m3；relative\_density\_change = 0.00161969479 ratio；gamma\_times\_Cv\_J\_molK = -37.4150818 J/(mol K)；thermodynamic\_identity\_J\_molK = -37.4150818 J/(mol K)；formal\_charge\_residual = 0 charge；finite\_relative\_volume\_change = -0.00161707562 ratio\par
+\noindent\textbf{模型前提：}
+本题把声子谱压缩为恒定有效γ，忽略温度相关热容、晶体弹性各向异性与声子非谐性；不代表真实ScF₃精确实测。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第11辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -1049,6 +1074,31 @@ A\_negative\_partition\_fraction = 0.865 fraction；B\_negative\_partition\_frac
 thermal\_attenuation100 = 0.560499122 dimensionless；thermal\_attenuation400 = 1.12099824 dimensionless；phase100\_rad = -0.560499122 rad；phase400\_rad = -1.12099824 rad；optical\_absorbed\_fraction = 0.205671765 fraction；signal100\_mV = 1.17422954 mV；signal400\_mV = 0.335197931 mV；amplitude\_ratio400\_100 = 0.285462016 ratio；log\_amplitude\_attenuation\_difference = 0.560499122 dimensionless；reconstructed\_diffusivity\_m2\_s = 1e-07 m2/s；reconstructed\_optical\_fraction = 0.205671765 fraction；reconstructed\_concentration\_M = 0.01 mol/L；unattenuated\_signal100\_mV = 2.05671765 mV；corrected\_ratio\_exp\_attenuation = 0.570924032 ratio\par
 \noindent\textbf{模型前提：}
 相位差φ₂−φ₁=−(a₂−a₁)与幅度反演α独立核对；频率趋高时热波穿透受抑制。真实光声池的声学共振、温度边界、非均匀吸收和调制功率不稳定会使简化模型失效。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A147 · 微悬臂梁吸附谐振频移的Langmuir质量与动态响应双压反演}
+\noindent\textbf{题目}\par
+某假想微悬臂梁气体吸附传感器空白共振频率f₀=100.000 kHz、有效振动质量m\_eff=1.000×10⁻⁹ kg，吸附后f=f₀/[1+m\_ads/m\_eff]\textasciicircum{}(1/2)。表面单层Langmuir平衡m\_ads(p)=m\_max Kp/(1+Kp)。两次实验在p=0.1000 bar和p=1.000 bar的频率分别为99833.7488459583 Hz与99339.9267798783 Hz，假定传感器刚度和质量标定不变。给定脱附一级常数k\_des=0.02000 s⁻¹。由两次频率读数反求m\_max、K及p=0.5000 bar时的吸附量、覆盖率和共振频率；在Langmuir吸附/脱附动力学下求k\_ads和响应时间，并验证两点反问题唯一性、正性、位点质量守恒与实验物理边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 把化学气体传感微悬臂梁看作刚度恒定的线性谐振器，空白有效质量10⁻⁹ kg、共振频率100.000 kHz。
+\item 平衡吸附物与梁同步振动的模型给f=f₀/√(1+m\_ads/m\_eff)；频移需进行平方根反演。
+\item 单类独立表面位点遵循Langmuir公式m\_ads=m\_max Kp/(1+Kp)，压力以bar计。
+\item 在p₁=0.1000 bar时表面吸附质量3.33333333333e-12 kg，共振频率99833.7488460 Hz。
+\item 在p₂=1.000 bar时表面吸附质量1.33333333333e-11 kg，共振频率99339.9267799 Hz。
+\item 把观测频率转换为m\_ads=m\_eff[(f₀/f)²−1]，两点均为正值，满足非负载荷边界。
+\item 对Langmuir式求倒数：1/m\_ads=1/m\_max+1/(m\_max Kp)，令横坐标1/p，直线两点唯一决定斜率与截距。
+\item 得到m\_max=2.00000000000e-11 kg、K=2.00000000000 bar⁻¹；截距与斜率均正，反向回代重建两频率。
+\item 在p₃=0.5000 bar时m\_ads=1.00000000000e-11 kg、f=99503.7190210 Hz、覆盖率θ=0.500000000000。
+\item 若微观吸附动力学dθ/dt=k\_ads p(1−θ)−k\_desθ，平衡要求K=k\_ads/k\_des。
+\item 取k\_des=0.02000 s⁻¹得k\_ads=0.0400000000000 bar⁻¹s⁻¹，p₃处弛豫时间τ=[k\_ads p₃+k\_des]⁻¹=25.0000000000 s。
+\item 低压p→0时f→f₀，高压覆盖饱和时m\_ads→m\_max；真实水汽竞争、刚度变化、非均匀吸附、气体黏滞和多种位点会使质量频移和Langmuir假设失效。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+frequency\_0p1bar\_Hz = 99833.7488 Hz；frequency\_1bar\_Hz = 99339.9268 Hz；mass\_0p1bar\_kg = 3.33333333e-12 kg；mass\_1bar\_kg = 1.33333333e-11 kg；inverse\_mass\_slope\_bar\_kg = 2.5e+10 bar/kg；inverse\_mass\_intercept\_per\_kg = 5e+10 kg\textasciicircum{}-1；saturation\_mass\_kg = 2e-11 kg；Langmuir\_K\_per\_bar = 2 bar\textasciicircum{}-1；mass\_0p5bar\_kg = 1e-11 kg；frequency\_0p5bar\_Hz = 99503.719 Hz；coverage\_0p5bar = 0.5 fraction；adsorption\_rate\_bar\_inv\_s = 0.04 bar\textasciicircum{}-1s\textasciicircum{}-1；relaxation\_time\_0p5bar\_s = 25 s；coverage\_from\_mass\_ratio = 0.5 fraction\par
+\noindent\textbf{模型前提：}
+低压p→0时f→f₀，高压覆盖饱和时m\_ads→m\_max；真实水汽竞争、刚度变化、非均匀吸附、气体黏滞和多种位点会使质量频移和Langmuir假设失效。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -1548,6 +1598,33 @@ remaining\_reagent\_ratio = 0.275909581 dimensionless；click\_bonds\_formed\_M 
 H\_ZPE\_enol\_minus\_keto\_kJ\_mol = 2.99066414 kJ/mol；D\_ZPE\_enol\_minus\_keto\_kJ\_mol = 2.11471889 kJ/mol；H\_enol\_keto\_equilibrium\_constant = 0.0398195186 ratio；D\_enol\_keto\_equilibrium\_constant = 0.0566946975 ratio；isotope\_fractionation\_ratio\_KD\_KH = 1.42379164 ratio；H\_enol\_fraction = 0.0382946443 fraction；D\_enol\_fraction = 0.0536528646 fraction；H\_equilibrium\_Gibbs\_kJ\_mol = 7.99066531 kJ/mol；D\_equilibrium\_Gibbs\_kJ\_mol = 7.11479158 kJ/mol；Gibbs\_H\_minus\_D\_kJ\_mol = 0.875873722 kJ/mol；H\_enol\_concentration\_if\_total\_1mM = 3.82946443e-05 mol/L；D\_enol\_concentration\_if\_total\_1mM = 5.36528646e-05 mol/L；H\_keto\_fraction = 0.961705356 fraction；D\_keto\_fraction = 0.946347135 fraction；log\_fractionation\_factor = 0.353323479 dimensionless\par
 \noindent\textbf{模型前提：}
 该近似只考虑一个迁移H/D振动模式；真实酮烯醇互变可能有其它振动、溶剂氢键、隧穿、同位素交换及配位影响，不能将预测同位素效应直接当实验数值。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O144 · 五位点短肽等电点、微态电荷分布与化学滴定缓冲容量}
+\noindent\textbf{题目}\par
+某假想有机短肽含五个可离子化位点：N端氨基pKa=8.000、Lys氨基pKa=10.500、C端羧基pKa=3.100、Glu羧基pKa=4.200、Tyr酚羟基pKa=10.100。假设理想溶液、各位点独立，氨基质子化带+1、酸基去质子化带−1、其余状态中性。肽总浓度0.5000 mmol/L。求pH=0、7、8、11、14时的平均净电荷及唯一等电点pI，计算pI处五位点的正负电荷分数、总电荷方差、净电荷关于pH的导数、32种微观状态中恰好净电荷为零的总概率，以及滴定缓冲容量β=ln10 C\_T Var(Q)。检查微态概率归一、平均电中性与恰好中性两概念的区别、正负电荷计数和非理想边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假设短肽有五个独立可质子化中心：N端氨基、Lys氨基、C端羧基、Glu羧基和Tyr酚羟基，宏观pKa依次8.000、10.500、3.100、4.200、10.100。
+\item 对氨基质子化带+1的概率b=1/[1+10\textasciicircum{}(pH−pKa)]；羧基/酚羟基去质子化带−1的概率a=1/[1+10\textasciicircum{}(pKa−pH)]。
+\item 总平均净电荷Z(pH)=b\_N+b\_L−a\_C−a\_G−a\_Y，各位点状态独立使平均电荷可直接相加。
+\item 在pH=7和8分别得Z=-0.0903106545098、-0.510861939734，符号相反，等电点位于两者之间。
+\item 每个氨基正电分数随pH增大而严格下降，每个酸基负电分数严格上升，因此Z'(pH)严格为负，等电根唯一。
+\item 在[0,14]区间二分法求Z(pI)=0，得到pI=6.11452822980；不可将它简单等同于任意两个pKa平均值。
+\item 在pI处N端与Lys的质子化正电分数为0.987149758973、0.999958836684。
+\item 在pI处C端、Glu、Tyr的去质子化负电分数为0.999033833519、0.987971370998、0.000103391140323，正负当量和相等。
+\item 独立二态的电荷方差Var(Q)=Σp\_i(1−p\_i)，不受电荷符号影响；该量同时描述微观质子化状态的电荷波动。
+\item 方差Var(Q)=0.0256788284937，故dZ/dpH=−ln(10)Var(Q)=-0.0591276876950，提供与数值二分法不同的局部唯一性核验。
+\item 计算五中心总共2⁵=32种微观质子化状态，分别用二项式概率多项式卷积求两个正位点激活数和三个负位点激活数分布。
+\item 只有正数与负数相等的微态净电荷严格为零，将两个概率多项式同指数系数相乘求和，得到P(Q=0)=0.974361096360；平均Z=0不等于所有微态都中性。
+\item 对总肽浓度0.5000 mmol/L，位点滴定缓冲容量β=ln(10) C\_T Var(Q)=0.0000295638438475 mol/(L·pH)。
+\item 本统计假设各位点互不影响且只发生质子酸碱交换；真实短肽的静电pKa耦合、离子强度、构象及盐桥需通过多微观酸解离常数重新求解。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+isoelectric\_pH = 6.11452823 pH；mean\_charge\_pH7 = -0.0903106545 charge；mean\_charge\_pH8 = -0.51086194 charge；mean\_charge\_pH11 = -2.64693198 charge；mean\_charge\_pH0 = 1.9991432 charge；mean\_charge\_pH14 = -2.999557 charge；Nterm\_positive\_fraction = 0.987149759 fraction；Lys\_positive\_fraction = 0.999958837 fraction；Cterm\_negative\_fraction = 0.999033834 fraction；Glu\_negative\_fraction = 0.987971371 fraction；Tyr\_negative\_fraction = 0.00010339114 fraction；charge\_variance\_at\_pI = 0.0256788285 charge2；net\_charge\_derivative\_per\_pH = -0.0591276877 charge/pH；probability\_exactly\_neutral\_microstate = 0.974361096 fraction；buffer\_capacity\_mol\_L\_per\_pH = 2.95638438e-05 mol/(L pH)；positive\_equivalents\_pI = 1.9871086 charge；negative\_equivalents\_pI = 1.9871086 charge；mean\_charge\_residual\_pI = 2.22044605e-16 charge\par
+\noindent\textbf{模型前提：}
+本统计假设各位点互不影响且只发生质子酸碱交换；真实短肽的静电pKa耦合、离子强度、构象及盐桥需通过多微观酸解离常数重新求解。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{物理化学}
@@ -2050,6 +2127,32 @@ lower\_polariton\_eV = 1.95566019 eV；upper\_polariton\_eV = 2.14433981 eV；sp
 thermal\_voltage\_V = 0.0256925791 V；open\_circuit\_voltage\_V = 0.41411545 V；maximum\_power\_reduced\_voltage = 13.4475695 dimensionless；maximum\_power\_voltage\_V = 0.345502745 V；maximum\_power\_current\_mA = 9.30784299 mA；maximum\_electric\_power\_mW = 3.2158853 mW；fill\_factor = 0.776567331 fraction；conversion\_efficiency = 0.032158853 fraction；short\_circuit\_electron\_flux\_s = 6.24150907e+16 electrons/s；minimum\_absorbed\_photon\_power\_W = 0.015 W；incident\_to\_minimum\_photon\_power = 6.66666667 ratio；diode\_forward\_current\_prefactor\_A = 0.000692158011 A；maximum\_power\_derivative\_residual\_A = 0 A；open\_circuit\_reduced\_voltage = 16.1180958 dimensionless\par
 \noindent\textbf{模型前提：}
 本题为理想Shockley二极管，不含辐射/非辐射复合细节、串联电阻、载流子收集不足、温升或电解液腐蚀；光化学电池的实际效率需考虑化学反应过电位和法拉第选择性。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P144 · Gamma停留时间分布与串联CSTR一级反应转化、质量及热量守恒}
+\noindent\textbf{题目}\par
+某恒温液相反应A→B以n个等体积理想CSTR串联来近似，反应一级速率常数k=0.02000 s⁻¹。示踪脉冲测得停留时间Gamma分布的均值τ=120.0 s与方差4800 s²，Gamma(n,n/τ)密度E(t)=(n/τ)\textasciicircum{}n t\textasciicircum{}(n−1)exp(−nt/τ)/(n−1)!。入口浓度C\_A0=0.5000 mol/L、体积流量Q=1.000 L/min，反应焓ΔH\_r=−60.00 kJ/mol，温度由外部移热维持。由示踪数据反演正整数n、每釜平均时间，推导一级反应未转化率为RTD的Laplace变换，求n釜、PFR、单CSTR转化率、出口A/B浓度、产物流率、移热功率及t=τ的RTD密度，并检查归一、守恒、单调性和模型局限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将稳态反应器等效为n个相同理想全混釜串联，反应为A→B一级转化，恒定k=0.02000 s⁻¹。
+\item 无反应示踪脉冲得到Gamma停留时间分布E(t)=(n/τ)\textasciicircum{}n t\textasciicircum{}(n−1)exp(−nt/τ)/(n−1)!，t≥0。
+\item 该分布满足概率积分∫E(t)dt=1，均值τ和方差τ²/n；由τ=120 s、方差4800 s²得n=3。
+\item 每个釜平均停留时间τ/n=40 s、示踪整体标准差=69.2820323028 s。
+\item 对经历停留时间t的A，一级反应生存概率为exp(−kt)；稳态出口残留比为Laplace积分∫E(t)exp(−kt)dt。
+\item Gamma分布的Laplace变换为(1+kτ/n)\textasciicircum{}(−n)，因此X=1−(1+kτ/n)\textasciicircum{}(−n)，无需误用批式。
+\item 本题1+kτ/n=1.80000000000，故三釜总转化率X=0.828532235940。
+\item 同平均时间的理想PFR转化率X\_PFR=0.909282046711，单釜X\_CSTR=0.705882352941，满足X\_CSTR<X\_3<X\_PFR。
+\item 入口A浓度0.5 mol/L、流量1 L/min，出口A=0.0857338820302、B=0.414266117970 mol/L。
+\item 出口B生成通量为流量乘浓度=0.00690443529950 mol/s，出口A与B流率和恰等于入口A流率。
+\item 每摩尔反应放出60.00 kJ，恒温移热功率P=−ΔH\_r×B生成速率=414.266117970 W。
+\item 在t=τ的示踪RTD密度=0.00560104519138 s⁻¹，由Gamma公式非负且有正确概率密度单位。
+\item 与n→∞趋向PFR、n=1趋向CSTR的极限相容；若存在旁路、非等体积、反应放热改变k或反应非一级，必须重新标定RTD与反应耦合。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+inferred\_tank\_number = 3 tanks；RTD\_variance\_s2 = 4800 s2；RTD\_sd\_s = 69.2820323 s；per\_tank\_mean\_residence\_s = 40 s；Laplace\_denominator = 1.8 dimensionless；series\_conversion = 0.828532236 fraction；PFR\_conversion = 0.909282047 fraction；single\_CSTR\_conversion = 0.705882353 fraction；outlet\_A\_M = 0.085733882 mol/L；outlet\_B\_M = 0.414266118 mol/L；product\_flux\_mol\_s = 0.0069044353 mol/s；required\_heat\_removal\_W = 414.266118 W；unconverted\_fraction = 0.171467764 fraction；single\_tank\_survival = 0.555555556 fraction；RTD\_density\_at\_mean\_s\_inv = 0.00560104519 s\textasciicircum{}-1；per\_tank\_exit\_rate\_s\_inv = 0.025 s\textasciicircum{}-1\par
+\noindent\textbf{模型前提：}
+与n→∞趋向PFR、n=1趋向CSTR的极限相容；若存在旁路、非等体积、反应放热改变k或反应非一级，必须重新标定RTD与反应耦合。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
