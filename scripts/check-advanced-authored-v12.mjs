@@ -14,6 +14,12 @@ Object.assign(witnesses,{
 "UC-ADV12-O149":()=>{const a=.05,k=2,S0=.02,t=20,b=2*k*S0/a,E=Math.exp(-a*t),den=1+b*(1-E),S=S0*E/den,P=a/(2*k)*Math.log(den),D=(S0-S-P)/2,half=-Math.log((1+b)/(2+b))/a,rateA=a*S,rateB=k*S*S;assert.ok(S>0&&P>0&&D>0&&Math.abs((S+P+2*D)/S0-1)<1e-13);return[b,S,P,D,S0-S,P/(S0-S),rateA,rateB,P+2*D,S0,a/k,half,S0/2,P/D,Math.log(den)];},
 "UC-ADV12-P149":()=>{const g=.072,V=18e-6,R=8.314462618,T=298.15,ps=3167,NA=6.02214076e23,r1=1e-8,r2=2e-8,a=2*g*V/(R*T),x=a/r1,y=a/r2,P=ps*Math.exp(x),Q=ps*Math.exp(y),d1=2*g/r1,d2=2*g/r2,rt=a/Math.log(1.1),n=4*Math.PI*r1**3/(3*V),N=n*NA;assert.ok(P>Q&&Q>ps&&Math.abs(d1/d2-2)<1e-12);return[x,y,P,Q,P/Q,d1/1e6,d2/1e6,d1*V,d2*V,rt*1e9,N,n,P-ps,d1/d2,a];}
 });
+Object.assign(witnesses,{
+"UC-ADV12-I153":()=>{const b=9.2740100783e-24,k=1.380649e-23,N=6.02214076e23,R=8.314462618,B=5,T=5,x=b*B/(k*T),pol=Math.tanh(x),S=R*(Math.log(2*Math.cosh(x))-x*pol),M=N*b*pol,U=-N*b*B*pol,C=R*x*x/Math.cosh(x)**2,T2=1;assert.ok(S>0&&S<R*Math.log(2));return[x,T2,pol,S,S/(R*Math.log(2)),M,U,C,-N*b*1*pol,M/N,2*b*B/k,b/(k*T2),S-R*Math.log(2),B/T];},
+"UC-ADV12-A153":()=>{const F=96485.33212,A=1e-4,C=.001,D=1e-9,dl=.05e-6,G=1e-8,s=2*F*A*C*Math.sqrt(D/Math.PI),b=dl+F*A*G,Q=t=>s*Math.sqrt(t)+b,v=[1,4,9].map(Q),m=v[1]-v[0],ic=v[0]-m,dr=Math.PI*(m/(2*F*A*C))**2,gr=(ic-dl)/(F*A),cov=gr/2e-8,k=cov/(1-cov)/1e-6;assert.ok(Math.abs(dr/D-1)<1e-12&&Math.abs(gr/G-1)<1e-12);return[...v.map(z=>z*1e6),m*1e6,ic*1e6,dr,gr,F*A*G*1e6,dl*1e6,cov,k,m*3*1e6,v[2]/v[0],F*A*C,ic-dl];},
+"UC-ADV12-O150":()=>{const k=.1,j=.025,t=20,C0=.01,A=C0*Math.exp(-k*t),B=C0*k/(k-j)*(Math.exp(-j*t)-Math.exp(-k*t)),C=C0-A-B,tp=Math.log(k/j)/(k-j),a=C0*Math.exp(-k*tp),b=C0*k/(k-j)*(Math.exp(-j*tp)-Math.exp(-k*tp)),c=C0-a-b;assert.ok(A>=0&&B>=0&&C>=0&&Math.abs(k*a-j*b)<1e-14);return[A,B,C,tp,b,a,c,B/C0,C/C0,k*A,j*B,k/j,A+B+C,Math.exp(-k*tp),Math.exp(-j*tp)];},
+"UC-ADV12-P150":()=>{const a=.364,b=4.27e-5,R=8.314462618,T=350,P=5e6,Cp=40,f=v=>R*T/(v-b)-a/v**2;let l=b*1.00001,u=.01;for(let i=0;i<130;i++){let x=(l+u)/2;if(f(x)>P)l=x;else u=x}const V=(l+u)/2,der=-R*T/(V-b)**2+2*a/V**3,alpha=(R/(V-b))/(-der),jt=(T*alpha-V)/Cp;assert.ok(V>b&&der<0&&Math.abs(f(V)/P-1)<1e-12);return[8*a/(27*R*b),a/(27*b*b)/1e6,3*b,V,V*1e6,P*V/(R*T),der,-V*der/1e6,alpha,jt,jt*1e5,-a/V+P*V-R*T,R*T/(V-b),a/V**2,f(V)];}
+});
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();

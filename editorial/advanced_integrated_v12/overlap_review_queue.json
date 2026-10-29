@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 8,
+  "current_draft_count": 12,
   "expert_approved": 0,
-  "preliminary_flags": 8,
+  "preliminary_flags": 12,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -52,6 +52,30 @@
       "new_id": "UC-ADV12-P149",
       "prior_id": "UC-ADV10-P115",
       "reason": "与先前配位、质量谱、反应动力学或曲率热力学题存在主题邻近，须专家逐式确认数学模型独立性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I153",
+      "prior_id": "UC-ADV11-I141",
+      "reason": "和历史磁热、表面电分析、异构化、气体模型存在主题可能性，仍须人工逐式核验数学模型等价与新颖性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A153",
+      "prior_id": "UC-ADV10-A104",
+      "reason": "和历史磁热、表面电分析、异构化、气体模型存在主题可能性，仍须人工逐式核验数学模型等价与新颖性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O150",
+      "prior_id": "UC-ADV10-O108",
+      "reason": "和历史磁热、表面电分析、异构化、气体模型存在主题可能性，仍须人工逐式核验数学模型等价与新颖性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P150",
+      "prior_id": "UC-ADV10-P119",
+      "reason": "和历史磁热、表面电分析、异构化、气体模型存在主题可能性，仍须人工逐式核验数学模型等价与新颖性。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -103,6 +127,30 @@
       "model_family": "Kelvin-Laplace-nanodroplet-curvature-vapor-pressure-chemical-potential-count",
       "judgement": "pending_human_comparison",
       "screening": "独立数值witness与化学组分/质量/电荷/物理边界核验已编写；跨历史卷的方程同构及原创性未获专家认证。"
+    },
+    {
+      "new_id": "UC-ADV12-I153",
+      "model_family": "adiabatic-demagnetization-paramagnetic-spin-half-partition-entropy-magnetocaloric",
+      "judgement": "pending_human_comparison",
+      "screening": "独立答案向量、磁熵/法拉第电荷/骨架质量或状态方程约束均已写入，跨辑原创性与实验科学性待人类专家审查。"
+    },
+    {
+      "new_id": "UC-ADV12-A153",
+      "model_family": "Anson-chronocoulometry-diffusion-adsorption-double-layer-independent-third-time",
+      "judgement": "pending_human_comparison",
+      "screening": "独立答案向量、磁熵/法拉第电荷/骨架质量或状态方程约束均已写入，跨辑原创性与实验科学性待人类专家审查。"
+    },
+    {
+      "new_id": "UC-ADV12-O150",
+      "model_family": "organic-consecutive-isomerization-Bateman-intermediate-peak-time-flux-conservation",
+      "judgement": "pending_human_comparison",
+      "screening": "独立答案向量、磁熵/法拉第电荷/骨架质量或状态方程约束均已写入，跨辑原创性与实验科学性待人类专家审查。"
+    },
+    {
+      "new_id": "UC-ADV12-P150",
+      "model_family": "van-der-Waals-supercritical-unique-volume-compressibility-Joule-Thomson-enthalpy",
+      "judgement": "pending_human_comparison",
+      "screening": "独立答案向量、磁熵/法拉第电荷/骨架质量或状态方程约束均已写入，跨辑原创性与实验科学性待人类专家审查。"
     }
   ]
 }
