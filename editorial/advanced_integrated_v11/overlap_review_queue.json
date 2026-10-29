@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 53,
+  "current_draft_count": 55,
   "expert_approved": 0,
-  "preliminary_flags": 18,
+  "preliminary_flags": 20,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -112,6 +112,18 @@
       "new_id": "UC-ADV11-P135",
       "prior_id": "UC-ADV11-A129",
       "reason": "均用Stokes–Einstein关系，本题核心为离心势Boltzmann径向分布积分归一，旧题为荧光旋转各向异性；需逐式人工核查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-I140",
+      "prior_id": "UC-ADV11-I128",
+      "reason": "与该题存在研究方法相邻之处，但数学模型及观测量不同，不能据此确认原创性，需逐式人工核验。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-A139",
+      "prior_id": "UC-ADV11-P125",
+      "reason": "与该题存在研究方法相邻之处，但数学模型及观测量不同，不能据此确认原创性，需逐式人工核验。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -433,6 +445,18 @@
       "model_family": "centrifugal-sedimentation-equilibrium-annular-Boltzmann-normalization-Stokes-Einstein",
       "judgement": "pending_human_comparison",
       "screening": "独立数值witness和主要守恒/边界检查已建立；尚未完成全部历史辑的逐式跨模型人工比对，禁止主张原创已认证。"
+    },
+    {
+      "new_id": "UC-ADV11-I140",
+      "model_family": "D4h-d1-titanium-crystalfield-three-transition-rank-inverse-trace",
+      "judgement": "pending_human_comparison",
+      "screening": "主要答案使用独立计算脚本复核；跨全部历史辑核心模型和科学假设仍待人类专家逐式审查。"
+    },
+    {
+      "new_id": "UC-ADV11-A139",
+      "model_family": "DSC-Kissinger-peakcondition-thermal-analysis-activation-enthalpy-dual-check",
+      "judgement": "pending_human_comparison",
+      "screening": "主要答案使用独立计算脚本复核；跨全部历史辑核心模型和科学假设仍待人类专家逐式审查。"
     }
   ]
 }

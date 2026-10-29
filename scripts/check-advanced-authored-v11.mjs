@@ -79,6 +79,11 @@ Object.assign(witness,{
 "UC-ADV11-O135":()=>{const m=.02,c=.03,d=.025,old=.1,CT=.01,K=c/m,B=d/(m*m);let lo=0,hi=CT;for(let t=0;t<120;t++){let x=(lo+hi)/2;if(2*B*x*x+(1+K)*x>CT)hi=x;else lo=x;}let mon=(lo+hi)/2,cyc=K*mon,dim=B*mon*mon;assert.ok(Math.abs(mon+cyc+2*dim-CT)<1e-14);return[K,B,mon,cyc,dim,mon/CT,cyc/CT,2*dim/CT,c/old,2*d/old,dim/cyc,mon+cyc+2*dim];},
 "UC-ADV11-P135":()=>{const kb=1.380649e-23,T=298.15,w=50,r1=.04,r2=.06,rm=.05,dr=200,vis=.001,mean=1e16,Delta=r2*r2-r1*r1,buoy=2*kb*T*4/(w*w*Delta),rad=(3*buoy/(4*Math.PI*dr))**(1/3),zeta=6*Math.PI*vis*rad,D=kb*T/zeta,beta=buoy*w*w/(2*kb*T),n1=mean*beta*Delta/Math.expm1(beta*Delta),n2=n1*Math.exp(beta*Delta),nmid=n1*Math.exp(beta*(rm*rm-r1*r1)),v=buoy*w*w*rm/zeta,Pe=buoy*w*w*r2*(r2-r1)/(kb*T);assert.ok(D>0&&n2>nmid&&nmid>n1);return[buoy,rad*1e9,zeta,D,beta,Math.exp(beta*Delta),n1,n2,nmid,v,Pe,mean,n1*Math.expm1(beta*Delta)/(beta*Delta)];}
 });
+
+Object.assign(witness,{
+"UC-ADV11-I140":()=>{const t=[700,8600,10700],s=(t[0]+t[2]-t[1])/7,u=(3*s-t[0])/5,d=(t[1]+s+10*u)/10,v=[-4*d-s+4*u,-4*d+2*s-u,6*d-2*s-6*u,6*d+2*s-u];assert.ok(v[0]<v[1]&&v[1]<v[2]&&v[2]<v[3]);return[d,s,u,10*d,...v,1e7/t[0],1e7/t[1],1e7/t[2],2*v[0]+v[1]+v[2]+v[3]];},
+"UC-ADV11-A139":()=>{const R=8.314462618,e0=75000,A0=1e8,T=[425,440,455],k=t=>A0*Math.exp(-e0/(R*t)),b=t=>k(t)*R*t*t/e0;let y=t=>Math.log(b(t)/(t*t)),s=(y(440)-y(425))/(1/440-1/425),E=-R*s,AA=Math.exp(y(425)+E/(R*425))*E/R;assert.ok(Math.abs(AA/A0-1)<1e-9);return[b(425),b(440),E/1000,AA,k(425),k(440),b(455),60*b(455),1.2,-90,b(440)/b(425),s];}
+});
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();
