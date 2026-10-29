@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 54,
+  "current_draft_count": 56,
   "expert_approved": 0,
-  "preliminary_flags": 54,
+  "preliminary_flags": 56,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -328,6 +328,18 @@
       "new_id": "UC-ADV12-P160",
       "prior_id": "UC-ADV12-P155",
       "reason": "与旧辑有机对映选择性或双电层主题相邻，需人类逐式对比新模型和物理边界。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I165",
+      "prior_id": "UC-ADV11-I128",
+      "reason": "领域存在早期核谱或滴定模型近邻；具体模型结构和科学真实性仍待人工复核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A165",
+      "prior_id": "UC-ADV11-A147",
+      "reason": "领域存在早期核谱或滴定模型近邻；具体模型结构和科学真实性仍待人工复核。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -655,6 +667,18 @@
       "model_family": "Donnan-charged-hydrogel-fixed-anion-electrochemical-potential-osmotic-pressure",
       "judgement": "pending_human_comparison",
       "screening": "独立双手性物料/固定电荷Donnan数值检查已建立，尚未获得人工认可。"
+    },
+    {
+      "new_id": "UC-ADV12-I165",
+      "model_family": "57Fe-Mossbauer-isomer-shift-quadrupole-Doppler-recoil-energy-metrology",
+      "judgement": "pending_human_comparison",
+      "screening": "独立计算见证及能量/电荷审核已登记；未通过专家跨辑原创性认证。"
+    },
+    {
+      "new_id": "UC-ADV12-A165",
+      "model_family": "conductometric-strong-acid-titration-electrolyte-charge-dilution-corrected-two-line-intersection",
+      "judgement": "pending_human_comparison",
+      "screening": "独立计算见证及能量/电荷审核已登记；未通过专家跨辑原创性认证。"
     }
   ]
 }
