@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (60题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (62题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -430,6 +430,35 @@ mean\_field\_critical\_temperature\_K = 601.361775 K；reduced\_coupling\_400K =
 isomer\_shift\_velocity\_mm\_s = 0.45 mm/s；quadrupole\_velocity\_splitting\_mm\_s = 1.6 mm/s；lower\_line\_energy\_shift\_eV = -1.68262238e-08 eV；upper\_line\_energy\_shift\_eV = 6.00936565e-08 eV；isomer\_shift\_energy\_eV = 2.16337163e-08 eV；quadrupole\_energy\_splitting\_eV = 7.69198804e-08 eV；quadrupole\_energy\_neV = 76.9198804 neV；quadrupole\_frequency\_Hz = 18599144.3 Hz；quadrupole\_thermal\_equivalent\_K = 0.000892618145 K；free\_nucleus\_recoil\_energy\_eV = 0.00195833127 eV；free\_nucleus\_recoil\_energy\_meV = 1.95833127 meV；recoil\_to\_quadrupole\_energy\_ratio = 25459.3645 ratio；gamma\_wavelength\_nm = 0.0860254629 nm；line\_center\_residual\_eV = 6.6174449e-24 eV；line\_splitting\_residual\_eV = 1.32348898e-23 eV；twice\_quadrupole\_splitting\_eV = 1.53839761e-07 eV；two\_recoil\_energy\_eV = 0.00391666255 eV\par
 \noindent\textbf{模型前提：}
 如果另有磁超精细场，谱线会出现多重分裂；真实四极分裂的绝对符号及电场梯度不对称参数不能只靠两峰位置判定，需增加样品几何与核矩数据。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I166 · 高压NiII氨配体取代的活化体积、反应体积和详细平衡}
+\noindent\textbf{题目}\par
+某假想无机配合物在水中只发生可逆单氨配体取代Ni(H₂O)₆²⁺+NH₃⇌Ni(H₂O)₅(NH₃)²⁺+H₂O。温度298.15 K，NH₃自由浓度由储液池固定在0.1000 mol/L，Ni总浓度0.01000 mol/L。参考压力下速率常数k\_f0=2.000 L/(mol s)、k\_r0=0.08000 s⁻¹；升压ΔP=100.0 MPa时正向、逆向活化体积分别ΔV‡\_f=+10.00、ΔV‡\_r=+4.000 cm³/mol，假设在该压力范围内恒定，速率压力依赖k\_i(P)=k\_i(P₀)exp[−ΔV‡\_iΔP/(RT)]，R=8.314462618 J/(mol K)。求两速率压力比、高压速率、两个压力下结合常数K=k\_f/k\_r、反应体积与标准反应自由能及其压力差。用热力学dlnK/dP=−ΔV\_rxn/(RT)独立核验详细平衡；从全部Ni初始为水合态的条件，求各压力平衡结合分数、结合态浓度、弛豫时间及0.5000 s时结合态浓度。核验Ni原子数、配体计量、电荷守恒及固定NH₃浓度近似。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 考虑假想八面体Ni(II)水合配合物Ni(H₂O)₆²⁺+NH₃⇌Ni(H₂O)₅(NH₃)²⁺+H₂O，在水中只有这两个Ni物种，Ni形式价始终+II。
+\item 以自由NH₃浓度c\_L=0.1000 mol/L为恒定缓冲储库，Ni总分析浓度0.01000 mol/L，假设溶液体积与离子活度系数在比较压力下不变。
+\item 298.15 K、参考压力P₀时正向二级速率k\_f0=2.000 L/(mol s)、逆向一级速率k\_r0=0.08000 s⁻¹，因此条件结合常数K₀=k\_f0/k\_r0。
+\item 压力从P₀升高ΔP=100.0 MPa，Eyring活化体积ΔV‡\_f=+10.00 cm³/mol、ΔV‡\_r=+4.000 cm³/mol，取常数。
+\item 压力速率关系k\_i(P)/k\_i(P₀)=exp[−ΔV‡\_iΔP/(RT)]；cm³/mol要换成10⁻⁶ m³/mol才能和Pa相乘得到J/mol。
+\item 算得正向速率比0.668047863906，逆向速率比0.850987208056；高压速率分别1.33609572781 L/(mol s)与0.0680789766445 s⁻¹。
+\item 参考及高压结合常数分别K₀=25.0000000000、K₁=19.6256729121 L/mol，两者比值0.785026916482。
+\item 正逆过渡态的活化体积差给反应体积ΔV\_rxn=ΔV‡\_f−ΔV‡\_r=+6.000 cm³/mol，不应把正逆活化体积直接相加。
+\item 热力学压力响应dlnK/dP=−ΔV\_rxn/(RT)，积分给K₁/K₀=exp[−ΔV\_rxn ΔP/(RT)]，须与k\_f/k\_r逐点一致。
+\item 标准反应自由能G°=−RT ln(K c°)，c°=1 mol/L，参考与高压分别-7.97945485333及-7.37945485333 kJ/mol；差600.000000000 J/mol。
+\item 在任意压力下把结合视为一阶正向a=k\_f c\_L及一阶逆向b=k\_r，平衡结合分数θ=a/(a+b)=Kc\_L/(1+Kc\_L)。
+\item 两压力下平衡结合分数0.714285714286、0.662454924495，相应结合态Ni浓度0.00714285714286、0.00662454924495 mol/L。
+\item 若初始Ni全部是水合态，结合态时间演化为[B](t)=N\_total θ[1−exp(−(a+b)t)]，总Ni无流失。
+\item t=0.5s时两压力结合态浓度分别0.000933155461437和0.000635467775643 mol/L，弛豫时间分别3.57142857143和4.95813968045 s。
+\item 逐点核对K=a/(bc\_L)=k\_f/k\_r，Ni总浓度[水合态]+[结合态]不变；前后配体NH₃与水交换，金属电荷保持+2且不发生电子转移。
+\item 固定NH₃储库及常活化体积是理想化约束，实际高压下介电常数、溶剂化、自由NH₃酸碱平衡、活度及扩散速率均可能改变，不能把此结果直接当作真实Ni(II)实验速率。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+high\_pressure\_forward\_rate\_ratio = 0.668047864 ratio；high\_pressure\_reverse\_rate\_ratio = 0.850987208 ratio；high\_pressure\_forward\_rate\_L\_mol\_s = 1.33609573 L/(mol s)；high\_pressure\_reverse\_rate\_s = 0.0680789766 s\textasciicircum{}-1；ambient\_binding\_K\_L\_mol = 25 L/mol；high\_pressure\_binding\_K\_L\_mol = 19.6256729 L/mol；binding\_constant\_pressure\_ratio = 0.785026916 ratio；reaction\_volume\_cm3\_mol = 6 cm3/mol；standard\_binding\_G\_at\_reference\_kJ\_mol = -7.97945485 kJ/mol；standard\_binding\_G\_high\_pressure\_kJ\_mol = -7.37945485 kJ/mol；pressure\_induced\_standard\_G\_change\_J\_mol = 600 J/mol；ambient\_equilibrium\_bound\_fraction = 0.714285714 fraction；high\_pressure\_equilibrium\_bound\_fraction = 0.662454924 fraction；ambient\_equilibrium\_bound\_Ni\_M = 0.00714285714 mol/L；high\_pressure\_equilibrium\_bound\_Ni\_M = 0.00662454924 mol/L；ambient\_bound\_Ni\_after\_0p5s\_M = 0.000933155461 mol/L；high\_pressure\_bound\_Ni\_after\_0p5s\_M = 0.000635467776 mol/L；ambient\_relaxation\_time\_s = 3.57142857 s；high\_pressure\_relaxation\_time\_s = 4.95813968 s；ambient\_detailed\_balance\_K\_check = 25 L/mol；high\_pressure\_detailed\_balance\_K\_check = 19.6256729 L/mol；ambient\_Ni\_inventory\_check\_M = 0.01 mol/L；high\_pressure\_Ni\_inventory\_check\_M = 0.01 mol/L\par
+\noindent\textbf{模型前提：}
+固定NH₃储库及常活化体积是理想化约束，实际高压下介电常数、溶剂化、自由NH₃酸碱平衡、活度及扩散速率均可能改变，不能把此结果直接当作真实Ni(II)实验速率。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{分析化学}
@@ -1237,6 +1266,34 @@ remaining\_fast\_enantiomer\_M = 0.00183939721 mol/L；remaining\_slow\_enantiom
 Karplus\_anti\_J\_Hz = 12 Hz；Karplus\_each\_gauche\_J\_Hz = 3 Hz；one\_gauche\_Boltzmann\_weight\_298K = 0.426091695 fraction；one\_gauche\_Boltzmann\_weight\_350K = 0.55756287 fraction；anti\_population\_298K = 0.539903341 fraction；anti\_population\_350K = 0.472785131 fraction；each\_gauche\_population\_298K = 0.23004833 fraction；each\_gauche\_population\_350K = 0.263607435 fraction；total\_gauche\_population\_298K = 0.460096659 fraction；total\_gauche\_population\_350K = 0.527214869 fraction；observed\_fast\_exchange\_J\_298K\_Hz = 7.85913007 Hz；observed\_fast\_exchange\_J\_350K\_Hz = 7.25506618 Hz；inverted\_weight\_298K = 0.426091695 fraction；inverted\_weight\_350K = 0.55756287 fraction；reconstructed\_gauche\_minus\_anti\_enthalpy\_J\_mol = 4500 J/mol；reconstructed\_intrinsic\_entropy\_J\_molK = 8 J/(mol K)；gauche\_minus\_anti\_Gibbs\_298K\_kJ\_mol = 2.1148 kJ/mol；gauche\_minus\_anti\_Gibbs\_350K\_kJ\_mol = 1.7 kJ/mol；conformational\_mixing\_entropy\_298K\_J\_molK = 8.38824466 J/(mol K)；conformational\_mixing\_entropy\_350K\_J\_molK = 8.78924047 J/(mol K)；conformational\_heat\_capacity\_298K\_J\_molK = 6.80591169 J/(mol K)；conformational\_heat\_capacity\_350K\_J\_molK = 4.95571376 J/(mol K)；population\_sum\_298K = 1 fraction；population\_sum\_350K = 1 fraction\par
 \noindent\textbf{模型前提：}
 此模型未包含其它扭转最低点、溶剂氢键、核磁自旋多阶耦合、交换区间和非Karplus电子效应；真实构象势能曲线会改变拟合结果。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O162 · 半胱氨酸S/N竞争烷基化的酸碱物种分数、化学选择性与pH反演}
+\noindent\textbf{题目}\par
+在一假想有机半胱氨酸衍生物中同时存在一个硫醇SH（条件pK\_a=8.300）和一个铵型氨基NH₃⁺（条件pK\_a=9.500），活性亲核体分别为RS⁻与RNH₂。缓冲pH分别固定为8.500和10.000，忽略两个酸碱位点的耦合，且半胱氨酸衍生物总浓度0.01000 mol/L在反应中维持不变。加入0.001000 mol/L单官能烷基化试剂E后，反应只能生成互斥的S-烷基化或N-烷基化产物，二级速率常数k\_S=100.0、k\_N=20.00 L/(mol s)，反应时间t=2.000 s。求两pH下RS⁻和游离RNH₂活性分数、竞争伪一级速率、E转化率、两产物浓度及S/N比。反过来求使S/N表观选择性恰好等于20的唯一pH，并检查每个pH下E物料守恒、酸碱物种分布、目标pH区间和忽略二次烷基化的适用边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假设有机半胱氨酸样底物具有一个硫醇RSH与一个氨基RNH₃⁺，两者分别可去质子化为亲核硫负离子RS⁻和中性胺RNH₂。
+\item 题设条件pK\_a(SH)=8.300、pK\_a(NH₃⁺)=9.500，且酸碱位点之间的耦合已忽略；缓冲pH不因少量反应发生变化。
+\item 各反应活性分数为f\_S=1/[1+10\textasciicircum{}(pK\_a,S−pH)]、f\_N=1/[1+10\textasciicircum{}(pK\_a,N−pH)]，而非全部含硫或氨基底物都处于活性形态。
+\item 两种活性位点对同一种单官能烷基化试剂E竞争生成互斥的单次S-烷基化或N-烷基化产物，不发生双烷基化或产物重排。
+\item 半胱氨酸样底物总浓度C\_Nu=0.01000 M维持恒定远大于E初始0.001000 M，二级速率常数k\_S=100.0、k\_N=20.00 L/(mol s)。
+\item 所以对E的两条平行伪一级速率a\_S=k\_SC\_Nu f\_S、a\_N=k\_NC\_Nu f\_N，E的总消失速率常数λ=a\_S+a\_N。
+\item pH=8.5时硫负离子分数0.613136820153、游离胺分数0.0909090909091，对应速率a\_S=0.613136820153和a\_N=0.0181818181818 s⁻¹。
+\item pH=8.5时产物比S/N=a\_S/a\_N=33.7225251084，即使k\_S/k\_N固定为5，酸碱物种分布也显著改变表观选择性。
+\item 积分平行通道得[E](t)=E₀e\textasciicircum{}(−λt)，[P\_S]=E₀(1−e\textasciicircum{}(−λt))a\_S/λ、[P\_N]=E₀(1−e\textasciicircum{}(−λt))a\_N/λ。
+\item 反应t=2s后，pH8.5消耗分数0.717093062074，S/N产物分别0.000696440962037和0.0000206521000369 mol/L，剩余E=0.000282906937926 mol/L。
+\item 在pH=10时，硫负离子分数0.980437696127、中性胺分数0.759746926648，S/N竞争比降至6.45239659246。
+\item pH10时2秒后S/N两产物浓度为0.000775897074509和0.000120249439629 mol/L，剩余E=0.000103853485861 mol/L。
+\item 对目标选择性S/N=20，设y=10\textasciicircum{}(−pH)、r=20/(k\_S/k\_N)=4，利用r=(1+10\textasciicircum{}pKaN y)/(1+10\textasciicircum{}pKaS y)唯一反演y=(r−1)/(10\textasciicircum{}pKaN−r×10\textasciicircum{}pKaS)。
+\item 得到pH*=8.89655794962，回代S/N=20.0000000000，位于两个测试pH之间。
+\item 任意pH下检查[P\_S]+[P\_N]+[E]=E₀以及两种产物比等于两速率之比；真实半胱氨酸常存在电荷和构象耦合、二次烷基化、硫醇氧化及水解竞争，需要改用完整物种动力学。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+thiolate\_fraction\_pH8p5 = 0.61313682 fraction；neutral\_amine\_fraction\_pH8p5 = 0.0909090909 fraction；S\_path\_pseudo\_firstorder\_rate\_pH8p5 = 0.61313682 s\textasciicircum{}-1；N\_path\_pseudo\_firstorder\_rate\_pH8p5 = 0.0181818182 s\textasciicircum{}-1；electrophile\_disappearance\_rate\_pH8p5 = 0.631318638 s\textasciicircum{}-1；S\_over\_N\_product\_ratio\_pH8p5 = 33.7225251 ratio；electrophile\_conversion\_pH8p5 = 0.717093062 fraction；S\_alkylated\_product\_pH8p5\_M = 0.000696440962 mol/L；N\_alkylated\_product\_pH8p5\_M = 2.06521e-05 mol/L；remaining\_electrophile\_pH8p5\_M = 0.000282906938 mol/L；thiolate\_fraction\_pH10 = 0.980437696 fraction；neutral\_amine\_fraction\_pH10 = 0.759746927 fraction；electrophile\_disappearance\_rate\_pH10 = 1.13238708 s\textasciicircum{}-1；S\_over\_N\_product\_ratio\_pH10 = 6.45239659 ratio；electrophile\_conversion\_pH10 = 0.896146514 fraction；S\_alkylated\_product\_pH10\_M = 0.000775897075 mol/L；N\_alkylated\_product\_pH10\_M = 0.00012024944 mol/L；remaining\_electrophile\_pH10\_M = 0.000103853486 mol/L；inverse\_pH\_for\_selectivity20 = 8.89655795 pH；selectivity\_ratio\_at\_inverse\_pH = 20 ratio；electrophile\_inventory\_pH8p5\_M = 0.001 mol/L；electrophile\_inventory\_pH10\_M = 0.001 mol/L；product\_ratio\_consistency\_pH8p5 = 33.7225251 ratio；product\_ratio\_consistency\_pH10 = 6.45239659 ratio\par
+\noindent\textbf{模型前提：}
+任意pH下检查[P\_S]+[P\_N]+[E]=E₀以及两种产物比等于两速率之比；真实半胱氨酸常存在电荷和构象耦合、二次烷基化、硫醇氧化及水解竞争，需要改用完整物种动力学。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{物理化学}
