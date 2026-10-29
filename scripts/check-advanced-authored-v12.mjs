@@ -68,6 +68,11 @@ Object.assign(witnesses,{
 "UC-ADV12-I160":()=>{const R=8.314462618,k=1.380649e-23,NA=6.02214076e23,mu=9.2740100783e-24,T=30,d=650,g=2.1,B=5,x=d/(R*T),u=Math.exp(-x),Z=1+3*u,pS=1/Z,pT=3*u/Z,eq=d/(R*Math.log(3)),C=R*x*x*pT*pS,S=R*(Math.log(Z)+x*pT),y=g*mu*B/(k*T),ZB=1+u*(1+2*Math.cosh(y)),mag=NA*g*mu*2*u*Math.sinh(y)/ZB,chi=NA*g*g*mu*mu/(k*T)*2*u/Z;assert.ok(Math.abs(pS+pT-1)<1e-14&&mag>0&&C>0);return[x,u,Z,pS,pT,eq,d*pT,C,S,chi,y,ZB,mag,mag/B,u*(1+2*Math.cosh(y))/ZB,pS+pT,d/R];},
 "UC-ADV12-A160":()=>{const F=96485.33212,Q=.12,eff=.9,M=63.546,W=18.01528,C=56.6,df=-2500,A=1,den=8.96,t=60,cuQ=Q*eff,HQ=Q-cuQ,n=cuQ/(2*F),cug=n*M*1e6,mt=-df/C*A,wg=mt-cug,nw=wg/1e6/W,nh=HQ/(2*F),d=cug*1e-6/(den*A)*1e7;assert.ok(wg>0&&Math.abs((2*F*(n+nh))/Q-1)<1e-14);return[cuQ,HQ,n,cug,mt,wg,nw,nh,nw/n,d,eff*100,n/t,Q/t,n*6.02214076e23,cuQ+HQ,n*2*F/Q];}
 });
+
+Object.assign(witnesses,{
+"UC-ADV12-O156":undefined,
+"UC-ADV12-P156":undefined
+});
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();

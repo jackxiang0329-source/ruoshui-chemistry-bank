@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 36,
+  "current_draft_count": 38,
   "expert_approved": 0,
-  "preliminary_flags": 36,
+  "preliminary_flags": 38,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -220,6 +220,18 @@
       "new_id": "UC-ADV12-A160",
       "prior_id": "UC-ADV11-A143",
       "reason": "无机磁性或分析热化学/仪器基础相关；与旧辑核心数学方程的区别须专家逐式核实。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O156",
+      "prior_id": "UC-ADV12-O152",
+      "reason": "可能和前辑聚合反应、扩散场分析题存在主题关联，核心方程同构与化学科学性须人工审核。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P156",
+      "prior_id": "UC-ADV11-P141",
+      "reason": "可能和前辑聚合反应、扩散场分析题存在主题关联，核心方程同构与化学科学性须人工审核。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -439,6 +451,18 @@
       "model_family": "EQCM-Sauerbrey-copper-electrodeposition-Faradaic-side-hydrogen-entrained-water",
       "judgement": "pending_human_comparison",
       "screening": "已登记独立数值见证、分子/电荷及极限检查；人工跨辑同构、新颖性及科学性审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV12-O156",
+      "model_family": "thiol-ene-A3-B2-Flory-Stockmayer-gelation-branching-extinction-mass-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "已建立独立答案向量、配对/官能团或扩散物料守恒核验；待跨辑人工模型审定。"
+    },
+    {
+      "new_id": "UC-ADV12-P156",
+      "model_family": "Smoluchowski-Collins-Kimball-radiation-boundary-diffusion-reaction-rate",
+      "judgement": "pending_human_comparison",
+      "screening": "已建立独立答案向量、配对/官能团或扩散物料守恒核验；待跨辑人工模型审定。"
     }
   ]
 }
