@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (42题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (44题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -325,6 +325,32 @@ standard\_reaction\_G\_kJ\_mol = -5 kJ/mol；reaction\_equilibrium\_constant = 1
 仅在FeO和Fe固体仍同时存在时，上述纯固体活度条件成立；若氧气气相、固溶体、Fe₃O₄或非理想气体显著，需要加入其它平衡与物料约束。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I162 · 两性Al(OH)3溶解平衡的络合物种分布与唯一溶解度极小值}
+\noindent\textbf{题目}\par
+某假想Al(OH)₃无机固体的两性溶解平衡在298.15 K理想稀溶液中研究。体系由足量缓冲储液池维持pH且固相始终存在，简化模型只允许自由Al³⁺和[Al(OH)₄]⁻两种含Al溶解物种，忽略AlOH²⁺、Al(OH)₂⁺及多核络合。定义K\_sp=[Al³⁺][OH⁻]³=1.000×10⁻³³和β₄=[Al(OH)₄⁻]/([Al³⁺][OH⁻]⁴)=1.000×10³³，两常数均以1 mol/L标准浓度定义为相应数值，水pK\_w=14.000。求总溶解度S(pH)函数，严格证明其在正自由OH浓度范围内存在唯一极小值并求极小pH、最小总溶解度、该点自由Al³⁺与铝酸根比例；分别在pH 5、7、9求总溶解度及pH7两溶质物种浓度。回代检查导数与物种计量和电荷平衡，说明固相和缓冲液假设及未包含水解中间物种的限制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 选取假想两性氢氧化铝固相Al(OH)₃(s)，在298.15 K固定pH、理想稀溶液的缓冲储液池中达到固液平衡；铝始终为形式氧化态+III。
+\item 溶解产物只考虑自由Al³⁺与铝酸根[Al(OH)₄]⁻，刻意忽略AlOH²⁺、Al(OH)₂⁺、多核羟基络合物与铝酸聚合。
+\item 以无量纲活度近似浓度比计算，设K\_sp=[Al³⁺][OH⁻]³=10⁻³³，整体络合常数β₄=[Al(OH)₄⁻]/([Al³⁺][OH⁻]⁴)=10³³（均按1 mol/L标准浓度）。
+\item 在给定自由[OH⁻]=o时，由K\_sp求[Al³⁺]=K\_sp/o³，代入β₄求[Al(OH)₄⁻]=β₄K\_sp o；总铝溶解度S(o)=K\_sp/o³+β₄K\_sp o。
+\item 在纯水常用pK\_w=14的温度近似下o=10\textasciicircum{}(pH−14) mol/L，酸性侧自由Al³⁺项以o\textasciicircum{}−3增大，碱性侧铝酸根项以o正一次增大。
+\item 求导S'(o)=−3K\_sp/o⁴+β₄K\_sp；在o>0的唯一极小处满足o⁴=3/β₄，且S''=12K\_sp/o⁵>0。
+\item 由此得到o*=7.40082804492e-9 mol/L，pOH*=8.13071968632，pH*=5.86928031368。
+\item 极小点自由Al³⁺浓度=2.46694268164e-9、铝酸根浓度=7.40082804492e-9 mol/L，总溶解度S\_min=9.86777072656e-9 mol/L。
+\item 一阶条件给[Al(OH)₄⁻]=3[Al³⁺]，故极小处75\%溶解铝为铝酸根，25\%为自由Al³⁺，不要误以为两物种必须相等。
+\item 分别在pH=5、7、9求总溶解度0.00000100100000000、1.00001000000e-7、0.0000100000000000 mol/L，显示两侧上升趋势。
+\item pH 7自由Al³⁺=1.00000000000e-12、铝酸根=1.00000000000e-7 mol/L，总和严格等于该pH总铝。
+\item 化学计量检查：Al(OH)₃(s)+OH⁻⇌[Al(OH)₄]⁻，反应前后各有1个Al、4个O、4个H，净电荷都为−1，形式Al(III)不变。
+\item 最小溶解度推导假设始终有未溶解固相以维持K\_sp并有外部缓冲容量固定pH；若总Al库存不足、pH由溶解自身改变或中间羟基络合物显著，计算不再成立。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+minimum\_solubility\_OH\_M = 7.40082804e-09 mol/L；minimum\_solubility\_pOH = 8.13071969 pOH；minimum\_solubility\_pH = 5.86928031 pH；minimum\_Al3\_concentration\_M = 2.46694268e-09 mol/L；minimum\_AlOH4\_concentration\_M = 7.40082804e-09 mol/L；minimum\_total\_Al\_solubility\_M = 9.86777073e-09 mol/L；fraction\_aluminate\_at\_minimum = 0.75 fraction；three\_Al3\_over\_AlOH4\_ratio\_at\_minimum = 1 ratio；total\_solubility\_pH5\_M = 1.001e-06 mol/L；total\_solubility\_pH7\_M = 1.00001e-07 mol/L；total\_solubility\_pH9\_M = 1e-05 mol/L；free\_Al3\_pH7\_M = 1e-12 mol/L；aluminate\_pH7\_M = 1e-07 mol/L；alkaline\_branch\_linear\_coefficient = 1 dimensionless；solubility\_derivative\_at\_minimum = 0 slope；triple\_Al3\_amount\_M = 7.40082804e-09 mol/L；aluminate\_fraction\_reverse\_check = 0.75 fraction\par
+\noindent\textbf{模型前提：}
+最小溶解度推导假设始终有未溶解固相以维持K\_sp并有外部缓冲容量固定pH；若总Al库存不足、pH由溶解自身改变或中间羟基络合物显著，计算不再成立。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -612,6 +638,33 @@ copper\_deposition\_charge\_C = 0.108 C；hydrogen\_side\_reaction\_charge\_C = 
 H\_plate\_0p01\_cm = 0.0055 cm；H\_plate\_0p02\_cm = 0.004 cm；H\_plate\_0p05\_cm = 0.0043 cm；fitted\_A\_cm = 0.001 cm；fitted\_B\_cm2\_s = 4e-05 cm2/s；fitted\_C\_s = 0.05 s；optimal\_linear\_velocity\_cm\_s = 0.0282842712 cm/s；minimum\_plate\_height\_cm = 0.00382842712 cm；optimal\_theoretical\_plate\_number = 5224.0775 plates；void\_time\_at\_optimum\_s = 707.106781 s；second\_peak\_retention\_time\_s = 2828.42712 s；approximate\_resolution\_Rs = 1.23200762 dimensionless；second\_peak\_time\_standard\_deviation\_s = 39.1327337 s；longitudinal\_diffusion\_term\_at\_opt\_cm = 0.00141421356 cm；mass\_transfer\_term\_at\_opt\_cm = 0.00141421356 cm；plate\_height\_backcheck\_cm = 0.00382842712 cm；sum\_of\_flow\_dependent\_optimal\_terms\_cm = 0.00282842712 cm；twice\_optimum\_velocity\_H\_ratio = 1.18469903 ratio\par
 \noindent\textbf{模型前提：}
 题设只使用常系数Van Deemter近似和高斯峰分离度，现实中溶质扩散系数与保留系数会随溶剂、温度、流速和柱填充改变，三点拟合须另做实验误差分析。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A162 · 吸附富集伏安信号的三倍时间双点反演、唯一根及动态检测限}
+\noindent\textbf{题目}\par
+某假想痕量配合物采用吸附富集型溶出伏安法测量，固定电极和缓冲溶液条件下，富集t秒后的峰高电流I(t)符合I(t)=I\_blank+kC[1−exp(−t/τ)]，空白I\_blank=0.1000 nA、灵敏度k=1.000×10⁸ nA/(mol/L)，未知样品浓度C与累积动力学时间常数τ均待求。两个时间点t₁=10.00 s、t₃=30.00 s分别测得I₁=\$\{I1.toPrecision(15)\} nA和I₃=\$\{I3.toPrecision(15)\} nA；独立空白标准差σ\_blank=0.02000 nA。由两个扣空白信号的比值推导一元二次方程，求其唯一指数物理解、τ和C，预测t=20.00 s时信号和半平台时间、两测量时点富集分数、无限时间及10和30秒的3σ浓度检测限。要求给出反演根区间、排除负根、信号与单位一致性及简化吸附模型失效条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将假想痕量金属有机络合物在电极上的吸附富集型溶出峰电流换算为nA峰高信号I(t)，假设电极表面未饱和且定量响应随累积时间趋于指数平台。
+\item 测量模型为I(t)=I\_blank+kC[1−exp(−t/τ)]，空白I\_blank=0.1000 nA、浓度灵敏度k=1.000×10⁸ nA/(mol/L)，τ为未知累积时间常数。
+\item 分别在t₁=10.00 s和t₃=30.00 s同一样本独立测量，固定缓冲条件、峰电位和无电极记忆污染。
+\item 给定I₁=1.67387736115 nA、I₃=3.20747935941 nA，减去空白得y₁=1.57387736115、y₃=3.10747935941 nA。
+\item 以x=exp(−10/τ)记正数小于1的指数因子，t₃=3t₁时y₃/y₁=(1−x³)/(1−x)=1+x+x²，消除了未知浓度与灵敏度。
+\item 观测比r=y₃/y₁=1.97441010088，对x解x²+x+(1−r)=0，唯一物理根x=[−1+√(4r−3)]/2=0.606530659713。
+\item 在τ>0时要求1<r<3（累积时间比3），本次数值满足；另一个二次根为负，不是指数动力学的物理解。
+\item 取自然对数反演τ=−10/lnx=20.0000000000 s；将此τ代回两次数据独立求浓度。
+\item 由C=y₁/[k(1−x)]得到C=4.00000000000e-8 mol/L=40.0000000000 nmol/L，回代第二时点也得到同值。
+\item 第三校验时点t₂=20.00 s预测I₂=2.62848223531 nA，所需时间达到半平台为t½=τln2=13.8629436112 s。
+\item 10与30 s各自表面累积分数1−e\textasciicircum{}(−t/τ)分别为0.393469340287、0.776869839852，均在0到1之间。
+\item 空白一倍标准差σ\_blank=0.02000 nA，若按3σ/k作信号判据，无限累积时间的平台检测限LOD∞=3σ\_blank/k；有限t时LOD(t)=LOD∞/[1−exp(−t/τ)]。
+\item 求LOD∞=6.00000000000e-10 mol/L，10与30 s检测限分别1.52489644952e-9、7.72330150073e-10 mol/L；较长累积时间改善灵敏度，但不能去除空白系统偏差。
+\item 假设峰电流与吸附物量线性，平台来自固定一级吸附动力学，不考虑浓度改变τ、竞争表面吸附、传质边界层及去吸附记忆；真实伏安分析需要独立标定k及空白噪声分布。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+signal\_at\_10s\_nA = 1.67387736 nA；signal\_at\_30s\_nA = 3.20747936 nA；blank\_corrected\_10s\_nA = 1.57387736 nA；blank\_corrected\_30s\_nA = 3.10747936 nA；signal\_ratio30\_10 = 1.9744101 ratio；ten\_second\_uptake\_decay\_factor = 0.60653066 dimensionless；inferred\_accumulation\_tau\_s = 20 s；inferred\_analyte\_concentration\_M = 4e-08 mol/L；inferred\_concentration\_nM = 40 nmol/L；predicted\_20s\_signal\_nA = 2.62848224 nA；uptake\_half\_time\_s = 13.8629436 s；infinite\_time\_LOD\_M = 6e-10 mol/L；10s\_LOD\_M = 1.52489645e-09 mol/L；30s\_LOD\_M = 7.7233015e-10 mol/L；surface\_fraction\_at\_10s = 0.39346934 fraction；surface\_fraction\_at\_30s = 0.77686984 fraction；plateau\_signal\_above\_blank\_nA = 4 nA；mean\_signal\_slope\_10\_to\_30\_nA\_s = 0.0766800999 nA/s\par
+\noindent\textbf{模型前提：}
+假设峰电流与吸附物量线性，平台来自固定一级吸附动力学，不考虑浓度改变τ、竞争表面吸附、传质边界层及去吸附记忆；真实伏安分析需要独立标定k及空白噪声分布。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
