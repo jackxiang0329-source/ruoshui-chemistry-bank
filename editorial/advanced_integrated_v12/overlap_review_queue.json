@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 16,
+  "current_draft_count": 20,
   "expert_approved": 0,
-  "preliminary_flags": 16,
+  "preliminary_flags": 20,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -100,6 +100,30 @@
       "new_id": "UC-ADV12-P151",
       "prior_id": "UC-ADV10-P123",
       "reason": "潜在与旧卷磁谱、反应表面及热动力学邻近，模型数学结构新颖性仍需人工比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I155",
+      "prior_id": "UC-ADV11-I143",
+      "reason": "可能与历史振动、荧光、高分子及电解质输运主题存在相似，应进行人工逐式模型比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A155",
+      "prior_id": "UC-ADV11-A140",
+      "reason": "可能与历史振动、荧光、高分子及电解质输运主题存在相似，应进行人工逐式模型比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O152",
+      "prior_id": "UC-ADV11-O147",
+      "reason": "可能与历史振动、荧光、高分子及电解质输运主题存在相似，应进行人工逐式模型比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P152",
+      "prior_id": "UC-ADV11-P146",
+      "reason": "可能与历史振动、荧光、高分子及电解质输运主题存在相似，应进行人工逐式模型比较。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -199,6 +223,30 @@
       "model_family": "Brusselator-chemical-oscillator-Jacobian-Hopf-threshold-linear-stability-period",
       "judgement": "pending_human_comparison",
       "screening": "独立数值复核、形式电荷、核态分裂、表面位点及非平衡特征根已列入，跨辑模型同构与科学性需人类专家审定。"
+    },
+    {
+      "new_id": "UC-ADV12-I155",
+      "model_family": "Ni3Al-low-temperature-Sommerfeld-Debye-heatcapacity-entropy-internal-energy-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "独立答案数值与电子/声子、光子、聚合官能团、离子电流等物理约束已登记，数学模型独创性和科学适用性仍待人类专家复核。"
+    },
+    {
+      "new_id": "UC-ADV12-A155",
+      "model_family": "single-molecule-FRET-crosstalk-gamma-corrected-efficiency-distance-lifetime-shotnoise",
+      "judgement": "pending_human_comparison",
+      "screening": "独立答案数值与电子/声子、光子、聚合官能团、离子电流等物理约束已登记，数学模型独创性和科学适用性仍待人类专家复核。"
+    },
+    {
+      "new_id": "UC-ADV12-O152",
+      "model_family": "stepgrowth-AA-BB-stoichiometric-imbalance-Carothers-endgroups-chain-mass",
+      "judgement": "pending_human_comparison",
+      "screening": "独立答案数值与电子/声子、光子、聚合官能团、离子电流等物理约束已登记，数学模型独创性和科学适用性仍待人类专家复核。"
+    },
+    {
+      "new_id": "UC-ADV12-P152",
+      "model_family": "Nernst-Planck-ambipolar-diffusion-open-circuit-potential-ion-flux-neutrality",
+      "judgement": "pending_human_comparison",
+      "screening": "独立答案数值与电子/声子、光子、聚合官能团、离子电流等物理约束已登记，数学模型独创性和科学适用性仍待人类专家复核。"
     }
   ]
 }

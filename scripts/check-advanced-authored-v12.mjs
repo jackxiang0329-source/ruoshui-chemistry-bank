@@ -26,6 +26,12 @@ Object.assign(witnesses,{
 "UC-ADV12-O151":()=>{const KA=100,KB=50,A=.02,B=.01,G=1e-6,k=2,area=.1,t=60,x=KA*A,y=KB*B,d=1+x+y,ta=x/d,tb=y/d,te=1/d,rate=k*G*ta*tb,p=rate*area*t,opt=(1+y)/KA,rmax=k*G*y/(4*(1+y));assert.ok(Math.abs(ta+tb+te-1)<1e-12&&rmax>rate&&p<A&&p<B);return[x,y,ta,tb,te,rate,p,opt,rmax,rmax/rate-1,p,A-p,B-p,ta+tb+te,k*G];},
 "UC-ADV12-P151":()=>{const A=2,low=4.8,high=5.2,det=A*A,tr=b=>b-1-det,ee=b=>{const re=tr(b)/2,im=Math.sqrt(det-re*re);return[re,im,2*Math.PI/im]},l=ee(low),h=ee(high),Bc=1+det;assert.ok(l[0]<0&&h[0]>0&&Bc===5);return[A,low/A,tr(low),det,...l,Bc,Bc/A,...h,A,2*Math.PI/A,-1/l[0],1/h[0],Bc-low];}
 });
+Object.assign(witnesses,{
+"UC-ADV12-I155":()=>{const R=8.314462618,T1=5,T2=10,c1=.002*T1+.0001*T1**3,c2=.002*T2+.0001*T2**3,b=(c2/T2-c1/T1)/(T2*T2-T1*T1),g=c1/T1-b*T1*T1,theta=(12*Math.PI**4*4*R/(5*b))**(1/3),ele=g*T2,ph=b*T2**3;assert.ok(g>0&&b>0&&theta>T2*10);return[c1,c2,g,b,theta,ele,ph,ele/(ele+ph),g*T2+b*T2**3/3,g*T2**2/2+b*T2**4/4,3*58.6934+26.9815,ph/ele,c2/T2,12*Math.PI**4*4*R/(5*theta**3)];},
+"UC-ADV12-A155":()=>{const ID=400,IA=700,alpha=.1,bg=60,gm=.75,r0=5,t0=4,acc=IA-alpha*ID-bg,N=acc+gm*ID,E=acc/N,r=r0*(1/E-1)**(1/6),tau=t0*(1-E),k=1/tau-1/t0,err=Math.sqrt(E*(1-E)/N),dr=r/(6*E*(1-E))*err;assert.ok(E>0&&E<1&&Math.abs(1/(1+(r/r0)**6)-E)<1e-12);return[acc,N,E,1-E,r,tau,k,N,err,dr,acc/(gm*ID),IA-acc,alpha*ID,bg,E];},
+"UC-ADV12-O152":()=>{const a=.1,b=.08,p=.75,bond=2*b*p,n=a+b-bond,dp=(a+b)/n,unA=2*a-bond,unB=2*b-bond,mass=200*a+150*b;assert.ok(Math.abs(unA+unB-2*n)<1e-12&&Math.abs(dp-(1+b/a)/(1+b/a-2*(b/a)*p))<1e-12);return[bond,n,dp,b/a,bond/(2*a),unA,unB,unA/(2*n),unB/(2*n),mass,mass/n,a/n,b/n,(a+b)/(a-b),bond+n,unA+unB];},
+"UC-ADV12-P152":()=>{const R=8.314462618,T=298.15,F=96485.33212,Dp=2e-9,Dm=1e-9,L=.001,c1=200,c2=100,D=2*Dp*Dm/(Dp+Dm),grad=(c2-c1)/L,j=-D*grad,psi=R*T/F*((Dm-Dp)/(Dp+Dm))*Math.log(c2/c1),times=L*L/(Math.PI*Math.PI*D);assert.ok(j>0&&psi>0&&Dp>D&&D>Dm);return[D,grad,j,psi*1e3,Dp/(Dp+Dm),Dm/(Dp+Dm),F*j,0,times,Math.log(c2/c1),c1/1e3,c2/1e3,Dp/Dm,psi*F/(R*T),D/(Dp+Dm)];}
+});
 const spec={inorganic:['I',151],analytical:['A',151],organic:['O',148],physical:['P',148]};
 let count=0;const ids=new Set(),titles=new Set(),families=new Set();
 const previous=new Set();
