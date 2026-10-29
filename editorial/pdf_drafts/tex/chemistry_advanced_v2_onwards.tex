@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至10辑 (490题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至10辑 (494题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -8447,6 +8447,28 @@ K800 = 20.2227635 dimensionless；进度800 = 0.0833140966 mol；NH3\_800 = 0.01
 理想气体、纯Fe和Fe2N双固相共存、ΔH°温度不变和有限气体库存；与旧辑氧化还原配平及气相平衡核心数学结构需人工审核。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I125 · Ellingham自由能与封闭气相库存耦合的氧化物还原及固相耗尽边界}
+\noindent\textbf{题目}\par
+某金属氧化物在刚性密闭反应器中按MO(s)+CO(g)⇌M(s)+CO₂(g)还原，纯固体活度为1。900–1000 K区间标准反应Gibbs能ΔG°(T)=60000−70T J/mol，R=8.314462618 J/(mol K)，标准压力1 bar。初始CO=0.08000 mol、CO₂=0.02000 mol、MO=0.05000 mol、M=0.01000 mol，容器体积V=0.10000R×900/10⁵ m³。忽略碳析出、固溶体、副反应。求900 K与1000 K终态反应进度、气固物料、总压、反应商，并求双固相平衡变为MO耗尽的临界温度，严格验证相共存条件、金属/碳/氧守恒与根唯一性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 令正向反应进度ξ，CO=0.08−ξ、CO₂=0.02+ξ、MO=0.05−ξ、M=0.01+ξ；物理区间−0.01≤ξ≤0.05。
+\item 当MO和M两纯固相同时存在时，Q=(0.02+ξ)/(0.08−ξ)，由于Δνgas=0，Q不依赖总压和温度。
+\item 标准自由能给K(T)=exp[(70T−60000)/(RT)]，900 K的K=1.49317966588，大于初始Q(0)=0.25，反应向右。
+\item 解Q=K900得ξ900=(0.08K900−0.02)/(1+K900)=0.0398905761311 mol，严格处于0与0.05之间，故两固相共存。
+\item 900 K的CO=0.0401094238689、CO₂=0.0598905761311、MO=0.0101094238689、M=0.0498905761311 mol；总气体0.10000 mol，压力为1 bar。
+\item 1000 K的K=3.32917175372，而MO耗尽边界Q(0.05)=7/3<K1000，形式平衡根超出0.05，不能再套用双固相Q=K。
+\item 因此1000 K终态ξ=0.05000 mol，CO=0.03000 mol、CO₂=0.07000 mol、MO=0、M=0.06000 mol，Q=7/3，固定体积下总压为1000/900 bar。
+\item 临界条件K(T*)=7/3，解60000−70T*+RT*ln(7/3)=0，T*=953.059082457 K；高于该温度正向反应受MO库存限制。
+\item Q′(ξ)=0.10000/(0.08−ξ)²>0，双固相平衡根至多一个。任意ξ下nMO+nM=0.06，nCO+nCO₂=0.10，nMO+nCO+2nCO₂=0.17 mol；边界处相稳定不等式替代双固相平衡等式。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+K900 = 1.49317967 dimensionless；xi900 = 0.0398905761 mol；CO900 = 0.0401094239 mol；CO2\_900 = 0.0598905761 mol；MO900 = 0.0101094239 mol；M900 = 0.0498905761 mol；K1000 = 3.32917175 dimensionless；xi1000 = 0.05 mol；Q1000 = 2.33333333 dimensionless；Tstar = 953.059082 K；p1000 = 1.11111111 bar\par
+\noindent\textbf{模型前提：}
+纯固相、理想气体、给定线性ΔG°与固定物料；临界温度及真实相稳定性待专家复核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第10辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -8970,6 +8992,28 @@ c = 0.5 mol/m\textasciicircum{}3；电容初始电流 = 6 microampere；Cottrell
 激发波数 = 18796.9925 cm\textasciicircum{}-1；T1000 = 350 K；T1500 = 350 K；r750 = 0.0599036973 ratio；1000模占据 = 0.0166680695 quanta；Stokes期望计数 = 250000 counts；antiStokes期望计数 = 5334.2757 counts；温度标准不确定度 = 1.17811983 K；相对室温升温 = 51.85 K；r1000回代 = 0.0213371028 ratio；r1500回代 = 0.00437820649 ratio；antiStokes期望率 = 1066.85514 counts/s\par
 \noindent\textbf{模型前提：}
 热平衡振动布居、已知散射效率比与光子计数Poisson近似，忽略激光非均匀加热和系统误差；需与其他光谱比值及计数问题人工对照。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A125 · 离子迁移谱Mason–Schamp约化质量反演与同位素峰分辨极限}
+\noindent\textbf{题目}\par
+300.0 K低场漂移管离子迁移谱中氮气数密度N=2.500×10²⁵ m⁻³，N₂质量28.00 u；两个单电荷同位素离子质量100.0 u、102.0 u，碰撞截面均为2.000 nm²。采用Mason–Schamp式K=(3e/(16NΩ))√[2π/(μkBT)]，μ=mion mg/(mion+mg)，e=1.602176634×10⁻¹⁹ C、kB=1.380649×10⁻²³ J/K、u=1.66053906660×10⁻²⁷ kg。漂移长度0.1000 m，电场1.000×10⁴ V/m，两峰FWHM均为0.1200 ms。求迁移率、时间、峰间时间差、t/FWHM、时间差/FWHM；将数密度增至3.000×10²⁵ m⁻³求新迁移率和漂移时间，反演截面并核对物理限制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 约化质量μ100=(100×28/128)u、μ102=(102×28/130)u；不能直接用离子质量代替碰撞体系约化质量。
+\item 换算Ω=2.000×10⁻¹⁸ m²；Mason–Schamp给出迁移率量纲m²/(V s)，相同Ω时较重离子迁移较慢。
+\item 代入得到K100=0.000122780881587、K102=0.000122517281783 m²/(V s)，二者差异来自μ的平方根。
+\item 由v=KE和t=L/(KE)，得t100=0.0814459048567 s、t102=0.0816211382955 s；较重同位素体峰稍迟到达。
+\item 峰间差Δt=0.000175233438781 s；与FWHM=0.0001200 s相比，Δt/FWHM=1.460278657，这并非实验基线分离的充分条件。
+\item 100 u单峰分辨本领t100/FWHM=678.71587381；须将漂移时间分辨本领与两峰分离比区别。
+\item 数密度提高1.2倍且其余参数不变，K100′=K100/1.2、t100′=1.2t100；如果电场或温度同时变化，此比例不成立。
+\item 由测得t100反演K=L/(Et)，再用Ω=3e√[2π/(μkBT)]/(16NK)得到2.000 nm²，完成正反模型闭合。
+\item 本模型限低场、离子构象稳定、截面不随场变化且气体近似理想；实际峰宽还包括扩散、注入和检测展宽。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+K100 = 0.000122780882 m²/(V s)；K102 = 0.000122517282 m²/(V s)；t100 = 0.0814459049 s；t102 = 0.0816211383 s；delta\_t = 0.000175233439 s；R100 = 678.715874 ratio；delta\_over\_FWHM = 1.46027866 ratio；K100\_dense = 0.000102317401 m²/(V s)；t100\_dense = 0.0977350858 s；Omega\_recovered = 2 nm²\par
+\noindent\textbf{模型前提：}
+低场、刚性单电荷离子、两同位素相同Ω；真实碰撞截面与分辨率仍待实验审查。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -9496,6 +9540,28 @@ k1(0) = 0.04 min\textasciicircum{}-1；k2(0) = 0.06 min\textasciicircum{}-1；rh
 固定溶剂与亲核剂浓度、两个机理固定不交叉反应、产物检测无系统偏差；与旧辑竞争反应网络、动力学选择性模型进行方程级人工比较。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O122 · 自由基聚合引发剂衰减下的非恒速单体转化及瞬时数均聚合度}
+\noindent\textbf{题目}\par
+一种假想苯乙烯类单体发生理想自由基链式聚合，初始[M]₀=2.000 mol/L、[I]₀=0.01000 mol/L；引发剂一级分解kd=1.000×10⁻³ s⁻¹、引发效率f=0.6000、链增长kp=500.0 L/(mol s)、偶合终止kt=1.000×10⁷ L/(mol s)。定义Ri=2fkd[I]，自由基消耗速率kt[R·]²（故[R·]=√(Ri/kt)），Rp=kp[M][R·]。忽略链转移、凝胶效应、体积变化，重复单元摩尔质量100.0 g/mol。求600.0 s后引发剂、自由基、单体、转化率、瞬时Rp、Ri、瞬时数均聚合度Xn=2Rp/Ri及瞬时Mn，推导单体积分式并检查稳态与单位。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 一级引发剂衰减[I](t)=I₀exp(−kdt)，600 s后[I]=0.0054881163609 mol/L；不能把初始引发速率当常数。
+\item 稳态自由基条件Ri=kt[R·]²给[R·](t)=√(2fkdI₀/kt)exp(−kdt/2)，初始值=0.0000010954451150 mol/L。
+\item 600 s的自由基浓度=8.1152570096e-7 mol/L，指数衰减时间常数为2/kd。
+\item 由d[M]/dt=−kp[M][R·](t)分离变量，得ln(M₀/M)=(2kp[R·]₀/kd)[1−exp(−kdt/2)]。
+\item 600 s时积分指数=0.28391941405，单体浓度=1.5056546191 mol/L，转化率=0.24717269044。
+\item 瞬时增长速率Rp=0.00061093871009 mol/(L s)，瞬时引发速率Ri=0.0000065857396331 mol/(L s)，满足kt[R·]²=Ri。
+\item 本题终止定义为自由基消耗率kt[R·]²，偶合终止事件率kt[R·]²/2=Ri/2，故新形成链的瞬时Xn=Rp/(Ri/2)=185.53381826。
+\item 忽略端基质量，瞬时Mn=100Xn=18553.381826 g/mol；该量不是0至600 s累积产物的数均分子量。
+\item 检验单体浓度单调降低、各速率单位为mol/(L s)；若终止速率常数采用2kt[R·]²定义，需同时调整稳态式与聚合度公式，不能混用。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+radical0 = 1.09544512e-06 mol/L；initiator600 = 0.00548811636 mol/L；radical600 = 8.11525701e-07 mol/L；integrated\_exponent = 0.283919414 dimensionless；monomer600 = 1.50565462 mol/L；conversion600 = 0.24717269 fraction；Rp600 = 0.00061093871 mol/(L s)；Ri600 = 6.58573963e-06 mol/(L s)；instantaneous\_Xn = 185.533818 units；instantaneous\_Mn = 18553.3818 g/mol\par
+\noindent\textbf{模型前提：}
+稳态自由基、纯偶合终止、无链转移及自加速；瞬时数均链长定义明确。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第10辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -10020,6 +10086,28 @@ BET斜率 = 0.0822916667 g/cm\textasciicircum{}3(STP)；BET截距 = 0.0010416666
 弛豫时间 = 5e-05 s；介电强度 = 12 relative；DC电导率 = 2e-08 S/m；静态介电常数 = 15 relative；实部差比 = 9.89318607 ratio；纯Debye峰频率 = 3183.09886 Hz；峰处实部 = 9 relative；峰处虚部总值 = 6.11294091 relative；峰处损耗正切 = 0.679215656 dimensionless；峰处功率密度 = 0.0108250254 W/m\textasciicircum{}3；峰处电导损耗项 = 0.112940907 relative；电导占虚部比例 = 0.0184757073 fraction；1000Hz实部回代 = 13.9220381 relative；10000Hz虚部回代 = 3.50425599 relative\par
 \noindent\textbf{模型前提：}
 单Debye取向极化、线性频率不变电导、已知ε∞；需与第十辑CPE阻抗及电化学响应模型逐式比对。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P122 · Szyszkowski界面张力与Gibbs吸附反演的有限面积自由能核查}
+\noindent\textbf{题目}\par
+298.15 K时，一种理想非离子表面活性剂在水–气界面满足γ(c)=γ₀−RTΓ∞ln(1+Kc)，γ₀=0.07200 N/m、Γ∞=2.500×10⁻⁶ mol/m²、K=60.00 L/mol、R=8.314462618 J/(mol K)，c单位mol/L。体相浓度从c₁=0.01000 mol/L升至c₂=0.1000 mol/L，界面面积A=0.01000 m²；假设大储液池、理想溶液、吸附平衡且无表面相变。求两浓度表面张力、Gibbs表面过量Γ、覆盖率、单位面积张力差及恒面积时界面自由能变化，证明−(1/RT)dγ/dlnc=Γ，并解释为何自由能差不等于吸附焓。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 对非离子理想溶质，Gibbs吸附关系Γ=−(1/RT)∂γ/∂lnc；Kc无量纲。
+\item 微分γ得到Γ=Γ∞Kc/(1+Kc)，Langmuir覆盖率θ=Kc/(1+Kc)。
+\item c₁时Kc=0.6000，γ₁=0.0690872029984 N/m，Γ₁=9.37500000000e-7 mol/m²，θ₁=0.3750000000。
+\item c₂时Kc=6.000，γ₂=0.0599404308928 N/m，Γ₂=0.00000214285714286 mol/m²，θ₂=0.8571428571。
+\item 浓度升高导致表面过量增加，张力差Δγ=-0.00914677210563 N/m（等价J/m²）。
+\item 恒面积界面自由能差ΔF=AΔγ=-0.0000914677210563 J；两状态的体相化学势不同。
+\item 直接求导−dγ/dlnc=RTΓ∞Kc/(1+Kc)=RTΓ，分别代入两浓度可验证Gibbs关系。
+\item 低浓度Γ≈Γ∞Kc，高浓度Γ→Γ∞；表面张力对数公式不能无限外推至负值。
+\item 张力为自由能而非吸附焓，不能把ΔF直接解释为吸附放热；实际胶束、非理想活度和表面重排需额外考虑。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+gamma1 = 0.069087203 N/m；gamma2 = 0.0599404309 N/m；Gamma1 = 9.375e-07 mol/m²；Gamma2 = 2.14285714e-06 mol/m²；theta1 = 0.375 fraction；theta2 = 0.857142857 fraction；delta\_gamma = -0.00914677211 J/m²；delta\_F = -9.14677211e-05 J；delta\_Gamma = 1.20535714e-06 mol/m²\par
+\noindent\textbf{模型前提：}
+单组分非离子理想吸附，无胶束、相变或非理想活度；不从表面自由能直接推吸附焓。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
