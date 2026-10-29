@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (52题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (54题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -1102,6 +1102,33 @@ equilibrium\_A\_fraction = 0.6 fraction；equilibrium\_B\_fraction = 0.4 fractio
 本模型只包含两态马尔可夫交换，真实2D EXSY必须校正交叉弛豫、NOE、T₁损失、非理想选择激发及多个中间构象；若这些效应显著不能直接将交叉峰视作条件概率。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O160 · 外消旋底物动力学拆分的双一级轨迹与底物/产物ee守恒}
+\noindent\textbf{题目}\par
+某假想手性酰化反应将外消旋有机底物分为快反应对映体F与慢反应对映体S，在固定催化剂和酰化剂活度条件下，各对映体不可逆一级转化为保持构型的产物P\_F、P\_S。起始总底物浓度C₀=0.01000 mol/L，F、S各占一半且无消旋，速率常数k\_F=0.2000 s⁻¹、k\_S=0.04000 s⁻¹，反应时间5.000 s。求两个底物剩余量、两个产物量、总转化率c、剩余底物和产品各自的ee及富集符号，验证各对映体的单独质量平衡与关系c ee\_P=(1−c)ee\_S。由底物剩余量独立反演k\_F、k\_S及选择性s=k\_F/k\_S，给定T=298.15 K和R=8.314462618 J/(mol K)，若两通道Eyring指前因子相同，求活化自由能差、两支半衰期和t→0时初始产物ee极限；解释为什么完全反应后累积产物不能保持高ee及动态动力学拆分的区别。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 考虑假想外消旋的两个有机对映体F（快反应）和S（慢反应），各自只发生一级不可逆酰化生成构型保留的产物P\_F和P\_S，产物不互变、底物也不消旋。
+\item 初始F、S各占总底物C₀=0.01000 mol/L的一半，固定手性催化剂与酰化剂活度下，两支通道分别有k\_F=0.2000 s⁻¹、k\_S=0.04000 s⁻¹。
+\item 两个独立物料平衡微分方程为d[F]/dt=−k\_F[F]、d[S]/dt=−k\_S[S]，解得[F](t)=C₀exp(−k\_Ft)/2、[S](t)=C₀exp(−k\_St)/2。
+\item 在t=5 s时剩余快、慢对映体浓度分别0.00183939720586和0.00409365376539 mol/L，因快支消耗更多，剩余底物富集慢构型。
+\item 对应产物P\_F=C₀/2−[F]=0.00316060279414、P\_S=C₀/2−[S]=0.000906346234610 mol/L，两支分别满足底物+产物=初始0.005 mol/L。
+\item 总剩余底物S\_total=0.00593305097125、生成产物P\_total=0.00406694902875 mol/L，总转化率c=P\_total/C₀=0.406694902875。
+\item 定义剩余底物的对映体过量ee\_S=([S]−[F])/([S]+[F])，产物的对映体过量ee\_P=([P\_F]−[P\_S])/([P\_F]+[P\_S])，二者的富集方向相反。
+\item 代入得到ee\_S=0.379948962255、ee\_P=0.554286897523，两个绝对值均小于1。
+\item 由于初始外消旋的F−S净差为0，严格质量平衡还给c ee\_P=(1−c)ee\_S，左右两侧均为0.225425655953。
+\item 每条底物衰减曲线可独立反演速率常数k\_i=−ln([i](t)/[i]₀)/t；它们的比值s=k\_F/k\_S为动力学拆分选择性因子。
+\item 反算k\_F=0.200000000000、k\_S=0.0400000000000 s⁻¹，选择性因子s=5.00000000000。
+\item 设Eyring两个通道指前因子相同，活化自由能差ΔG‡\_F−ΔG‡\_S=−RTln(k\_F/k\_S)=-3.98972742666 kJ/mol，快反应过渡态更低。
+\item 两支底物各自半衰期ln2/k分别3.46573590280、17.3286795140 s；t→0时瞬时产物ee趋向(k\_F−k\_S)/(k\_F+k\_S)=0.666666666667，而完全转化后累计产物趋于外消旋。
+\item 此理想动力学拆分不考虑可逆反应、产物消旋、动态动力学拆分与对映体互相转化；不借助消旋再生时，对于严格单一目标构型的传统拆分理论最高产率不超过初始底物一半。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+remaining\_fast\_enantiomer\_M = 0.00183939721 mol/L；remaining\_slow\_enantiomer\_M = 0.00409365377 mol/L；fast\_product\_M = 0.00316060279 mol/L；slow\_product\_M = 0.000906346235 mol/L；remaining\_total\_substrate\_M = 0.00593305097 mol/L；total\_product\_M = 0.00406694903 mol/L；overall\_conversion = 0.406694903 fraction；remaining\_substrate\_ee\_slow = 0.379948962 ee；product\_ee\_fast = 0.554286898 ee；kinetic\_selectivity\_factor = 5 ratio；activation\_G\_fast\_minus\_slow\_kJ\_mol = -3.98972743 kJ/mol；fast\_enantiomer\_half\_life\_s = 3.4657359 s；slow\_enantiomer\_half\_life\_s = 17.3286795 s；reconstructed\_fast\_rate\_s = 0.2 s\textasciicircum{}-1；reconstructed\_slow\_rate\_s = 0.04 s\textasciicircum{}-1；substrate\_ee\_mass\_weight = 0.225425656 fraction；product\_ee\_mass\_weight = 0.225425656 fraction；fast\_enantiomer\_inventory\_M = 0.005 mol/L；slow\_enantiomer\_inventory\_M = 0.005 mol/L；instantaneous\_initial\_product\_ee\_limit = 0.666666667 fraction；remaining\_substrate\_fraction = 0.593305097 fraction\par
+\noindent\textbf{模型前提：}
+此理想动力学拆分不考虑可逆反应、产物消旋、动态动力学拆分与对映体互相转化；不借助消旋再生时，对于严格单一目标构型的传统拆分理论最高产率不超过初始底物一半。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第12辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -1426,6 +1453,34 @@ surface\_tension\_c0p1mM\_N\_m = 0.0706440981 N/m；surface\_tension\_c1mM\_N\_m
 low\_pressure\_bimolecular\_rate\_constant\_M\_inv\_s = 2 L/(mol s)；high\_pressure\_unimolecular\_limit\_s\_inv = 0.3 s\textasciicircum{}-1；half\_falloff\_collision\_concentration\_M = 0.15 mol/L；effective\_rate\_low\_collision\_s = 0.0352941176 s\textasciicircum{}-1；effective\_rate\_high\_collision\_s = 0.230769231 s\textasciicircum{}-1；high\_low\_rate\_ratio = 6.53846154 ratio；reciprocal\_plot\_slope\_M\_s = 0.5 mol s/L；reciprocal\_plot\_intercept\_s = 3.33333333 s；recovered\_low\_pressure\_constant\_M\_inv\_s = 2 L/(mol s)；recovered\_high\_pressure\_constant\_s\_inv = 0.3 s\textasciicircum{}-1；reaction\_probability\_after\_excitation\_low = 0.882352941 fraction；reaction\_probability\_after\_excitation\_high = 0.230769231 fraction；excited\_state\_to\_ground\_ratio\_low = 0.000294117647 fraction；excited\_state\_to\_ground\_ratio\_high = 0.00192307692 fraction；converted\_fraction\_low\_after5s = 0.161776568 fraction；converted\_fraction\_high\_after5s = 0.684578725 fraction；product\_low\_after5s\_M = 0.00161776568 mol/L；product\_high\_after5s\_M = 0.00684578725 mol/L；unexcited\_substrate\_low\_after5s\_M = 0.00838223432 mol/L；unexcited\_substrate\_high\_after5s\_M = 0.00315421275 mol/L；low\_bath\_gas\_partial\_pressure\_Pa = 58201.2383 Pa；high\_bath\_gas\_partial\_pressure\_Pa = 1455030.96 Pa；low\_pressure\_time\_constant\_s = 28.3333333 s；high\_pressure\_time\_constant\_s = 4.33333333 s\par
 \noindent\textbf{模型前提：}
 M→0时k\_obs≈k₀[M]呈二级碰撞依赖；M→∞时k\_obs→k∞为纯一级极限。若A*不可忽略、能量随机游走、多能态或非理想碰撞显著，需要采用全主方程或Troe/RRKM更精细动力学模型。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P160 · 带固定负电水凝胶的Donnan平衡、电化学势与盐依赖渗透压力}
+\noindent\textbf{题目}\par
+某假想带固定负电基团的水凝胶在298.15 K隔膜内与一价NaCl外液达到Donnan平衡。凝胶每升水相有不可移动的单价负电基团X=0.05000 mol/L，外液NaCl浓度分别实验设为c\_s=0.1000和0.2000 mol/L，假设两条件下凝胶体积及固定电荷浓度均不变，理想点离子，无离子配对，膜可自由交换Na⁺/Cl⁻但固定负基团不可透过。内液电中性c\_+−c\_−=X，电化学平衡c\_+c\_−=c\_s²，ψ\_in−ψ\_out=(RT/F)ln(c\_s/c\_+)。求两个外盐条件下凝胶内Na⁺、Cl⁻浓度、Donnan电位、阳/阴离子富集或排斥倍数和理想移动离子相对外液的渗透压差ΔΠ=RT×1000(c\_++c\_−−2c\_s)。若凝胶内独立有效网络链段浓度0.02000 mol/L，再计算其理想渗透贡献和低盐时的总超额渗透压；R=8.314462618 J/(mol K)、F=96485.33212 C/mol。分别检查电中性、Donnan乘积、Na⁺和Cl⁻电化学势残差，并说明真实凝胶体积变化会使本题固定X近似失效。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 考虑含不可移动一价负电荷基团的均匀有机凝胶，固定电荷密度X=0.05000 mol/L（以凝胶水相体积计）；与理想1:1 NaCl外液隔膜接触，隔膜可通Na⁺、Cl⁻而不可通固定基团。
+\item 设理想溶液、没有离子配对、体积保持固定、膜两侧温度T=298.15 K相同；外液Na⁺与Cl⁻浓度均为c\_s，内液允许与外液发生Donnan电位差ψ=ψ\_in−ψ\_out。
+\item 电化学势平衡给RTln(c\_+/c\_s)+Fψ=0、RTln(c\_-/c\_s)−Fψ=0，两式相加得Donnan乘积c\_+c\_-=c\_s²。
+\item 凝胶水相宏观电中性要求c\_+−c\_−=X，联立乘积与差值得唯一正解c\_±=[√(X²+4c\_s²)±X]/2。
+\item c\_s=0.1000 mol/L时，凝胶内部Na⁺浓度=0.128077640640、Cl⁻浓度=0.0780776406404 mol/L；Na⁺相对富集、Cl⁻相对排斥。
+\item 两离子乘积=0.0100000000000 (mol/L)²，等于外侧c\_s²；差值=0.0500000000000 mol/L，与固定负电X恰抵消。
+\item 由Na⁺平衡求ψ=(RT/F)ln(c\_s/c\_+)=-6.35805164322 mV，负号表示凝胶内部电势相对外液更低。
+\item 用Cl⁻电化学势反算应得到同一ψ；逐离子残差RTln(c\_i/c\_s)+z\_iFψ应分别趋于零，而非只满足总体电中性。
+\item 由于凝胶内部移动离子数高于外液，理想离子渗透压差ΔΠ\_ion=RT×1000(c\_++c\_−−2c\_s)，浓度必须由mol/L转为mol/m³。
+\item 在0.1000 M盐外液时ΔΠ\_ion=15258.6778001 Pa，正值对应凝胶由固定电荷吸引额外反离子导致的渗透作用。
+\item 如果聚合物网络内独立的有效链段摩尔浓度给定c\_chain=0.02 mol/L，理想链平动渗透贡献Π\_chain=RT×1000 c\_chain=49579.1405911 Pa。
+\item 这两个贡献相加的模型总超额渗透压Π\_total=64837.8183913 Pa；此处不含弹性反压，因此不能直接推出凝胶实际体积变化。
+\item 把外盐升到0.2000 M而凝胶固定电荷浓度暂定不变，新内Na⁺、Cl⁻浓度分别0.226556443707、0.176556443707 mol/L，Donnan电位-3.20326718489 mV。
+\item 高盐ΔΠ\_ion=7716.71413945 Pa，小于低盐结果；由此解释增加背景盐会屏蔽固定电荷引起的Donnan渗透压力。
+\item 本题的X按凝胶体积给定且保持固定，若发生真实膨胀收缩则X会稀释并与网络弹性、Flory–Huggins聚合物混合项耦合，真实Donnan模型还需活动度、离子尺寸及多价离子效应。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+gel\_cation\_concentration\_0p1M = 0.128077641 mol/L；gel\_anion\_concentration\_0p1M = 0.0780776406 mol/L；Donnan\_salt\_product\_M2 = 0.01 M2；gel\_ion\_charge\_difference\_M = 0.05 mol/L；Donnan\_potential\_0p1M\_mV = -6.35805164 mV；ionic\_osmotic\_pressure\_difference\_0p1M\_Pa = 15258.6778 Pa；polymer\_chain\_osmotic\_pressure\_Pa = 49579.1406 Pa；total\_excess\_osmotic\_pressure\_Pa = 64837.8184 Pa；coion\_exclusion\_ratio\_0p1M = 0.780776406 ratio；mobile\_ion\_excess\_total\_0p1M\_M = 0.00615528128 mol/L；cation\_electrochemical\_potential\_residual\_J\_mol = 0 J/mol；anion\_electrochemical\_potential\_residual\_J\_mol = 0 J/mol；gel\_cation\_concentration\_0p2M = 0.226556444 mol/L；gel\_anion\_concentration\_0p2M = 0.176556444 mol/L；Donnan\_potential\_0p2M\_mV = -3.20326718 mV；ionic\_osmotic\_pressure\_0p2M\_Pa = 7716.71414 Pa；coion\_exclusion\_ratio\_0p2M = 0.882782219 ratio；low\_high\_osmotic\_pressure\_ratio = 1.97735429 ratio；cation\_enrichment\_factor\_0p1M = 1.28077641 ratio；anion\_exclusion\_factor\_0p1M = 0.780776406 ratio\par
+\noindent\textbf{模型前提：}
+本题的X按凝胶体积给定且保持固定，若发生真实膨胀收缩则X会稀释并与网络弹性、Flory–Huggins聚合物混合项耦合，真实Donnan模型还需活动度、离子尺寸及多价离子效应。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
