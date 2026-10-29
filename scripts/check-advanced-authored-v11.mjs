@@ -129,6 +129,13 @@ Object.assign(witness,{
 "UC-ADV11-O141":()=>{const a=10*8/(8+2),b=20*6/(6+4),c=a*20/(20+1),w=b*2/(2+18),ec=a-c,ew=b-w,prod=c+w,err=w/prod,pre=b/(a+b),im=(b/a)/(w/c),ATP=(a+b)/prod;assert.ok(Math.abs(a-c-ec)<1e-12&&Math.abs(b-w-ew)<1e-12&&ATP>1);return[8/10,6/10,a,b,c,w,ec,ew,prod,err,pre,im,ATP,ec+ew,a+b,1-err];},
 "UC-ADV11-P141":()=>{const R=8.314462618,T=298.15,c=.5,V=1e-5,chi=3,K=1e-8,M=1e-25,L=100e-9,curv=R*T/V*(1/c+1/(1-c)-2*chi),cut=Math.sqrt(-curv/K),max=cut/Math.sqrt(2),w=2*Math.PI/cut,wmax=2*Math.PI/max,g=k=>-M*k*k*(curv+K*k*k),g1=g(2*Math.PI/L),g2=g(4*Math.PI/L),g3=g(6*Math.PI/L),a=[g1,g2,g3],ix=a.indexOf(Math.max(...a))+1;assert.ok(curv<0&&g(0)===0&&g(max)>0);return[curv,cut,max,w*1e9,wmax*1e9,g(max),max*L/(2*Math.PI),g1,g2,g3,ix,2*Math.PI*ix/L,g(0),cut*wmax];}
 });
+
+Object.assign(witness,{
+"UC-ADV11-I146":()=>{const std=284.8,d1=286.3-std,d2=285.6-std,be1=934.2-d1,be2=933.5-d2,ke1=915+d1,ke2=914.7+d2,a1=be1+ke1,a2=be2+ke2,da=a1-a2;assert.ok(Math.abs(a1-(934.2+915))<1e-10&&Math.abs(a2-(933.5+914.7))<1e-10);return[d1,d2,be1,be2,ke1,ke2,a1,a2,da,da/2,be1-be2,(934.2-933.5)-(d1-d2),ke1-ke2,1000*da/a2];},
+"UC-ADV11-A145":()=>{const n=20000,a=15900,b=2500,c=1400,d=200,v=.00085,qA=(a+c)/n,qB=(a+b)/n,la=-Math.log(qA),lb=-Math.log(qB),pred=(1-qA)*(1-qB),chi=n*(a*d-b*c)**2/((a+c)*(b+d)*(a+b)*(c+d)),uA=Math.sqrt((1-qA)/(n*qA)),uB=Math.sqrt((1-qB)/(n*qB));assert.ok(a+b+c+d===n&&la>0&&lb>0);return[qA,qB,la,lb,la/v,lb/v,d/n,pred,n*pred,d/n-pred,chi,a*d/(b*c),uA,uB,a+b+c+d-n];},
+"UC-ADV11-O142":()=>{const A=.02,B=.015,k=200,t=1,M=.01,w=100,m0=300,rr=B/A*Math.exp((B-A)*k*t);let lo=0,hi=B;for(let j=0;j<110;j++){let x=(lo+hi)/2;const val=Math.log((B-x)/(A-x))-Math.log(B/A)-(B-A)*k*t;if(val<0)hi=x;else lo=x;}const x=(lo+hi)/2,p=x/A,pp=[(1-p)**2,2*p*(1-p),p*p],n=pp.map(v=>v*M),mass=[m0,m0+w,m0+2*w],mn=pp.reduce((s,v,i)=>s+v*mass[i],0),mw=pp.reduce((s,v,i)=>s+v*mass[i]**2,0)/mn;assert.ok(x>0&&x<B&&Math.abs(n[1]+2*n[2]-x)<1e-14);return[rr,x,A-x,B-x,p,...pp,...n,mn,mw,mw/mn,n[1]+2*n[2],n.reduce((a,b)=>a+b),k*(A-x)*(B-x)];},
+"UC-ADV11-P142":()=>{const Ec=2,Ex=2.1,g=.08,dl=Ex-Ec,split=Math.hypot(dl,2*g),low=(Ec+Ex-split)/2,high=(Ec+Ex+split)/2,coupling=.5*Math.sqrt((high-low)**2-dl**2),ph=.5*(1+dl/(high-low)),hc=1239.841984,hbar=6.582119569e-16,kap=.04,gam=.06;assert.ok(low>0&&high>low&&Math.abs(coupling-g)<1e-14&&ph>0&&ph<1);return[low,high,high-low,coupling,ph,1-ph,1-ph,hc/low,hc/high,(high-low)/hbar,2*g,4*g/(kap+gam),Ec/kap,(kap+gam)/4,split];}
+});
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();

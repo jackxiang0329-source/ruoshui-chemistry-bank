@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 77,
+  "current_draft_count": 81,
   "expert_approved": 0,
-  "preliminary_flags": 42,
+  "preliminary_flags": 46,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -256,6 +256,30 @@
       "new_id": "UC-ADV11-P141",
       "prior_id": "UC-ADV10-P108",
       "reason": "可能与旧稿在分子配位、发射谱、酶动力学或相分离存在局部类似，必须人工逐式比对，不能直接认定原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-I146",
+      "prior_id": "UC-ADV10-I120",
+      "reason": "存在相邻谱学、统计或有机反应主题；尚未取得人工方程等价性与原创新颖性审查结论。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-A145",
+      "prior_id": "UC-ADV10-A115",
+      "reason": "存在相邻谱学、统计或有机反应主题；尚未取得人工方程等价性与原创新颖性审查结论。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-O142",
+      "prior_id": "UC-ADV11-O123",
+      "reason": "存在相邻谱学、统计或有机反应主题；尚未取得人工方程等价性与原创新颖性审查结论。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-P142",
+      "prior_id": "UC-ADV11-I136",
+      "reason": "存在相邻谱学、统计或有机反应主题；尚未取得人工方程等价性与原创新颖性审查结论。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -721,6 +745,30 @@
       "model_family": "Cahn-Hilliard-conserved-spinodal-dispersion-fastest-mode-finite-periodic-domain",
       "judgement": "pending_human_comparison",
       "screening": "独立数值答案witness和守恒/边界条件检查已写入。跨历史辑数学模型是否等价、专业科学性与原创性仍需人类专家审查。"
+    },
+    {
+      "new_id": "UC-ADV11-I146",
+      "model_family": "copper-XPS-Auger-parameter-charging-cancellation-Wagner-relaxation-energy",
+      "judgement": "pending_human_comparison",
+      "screening": "已加入独立数值计算、元素/电荷/物料/物理边界检查；尚待人类专家对历史辑方程同构与化学科学性逐式审核。"
+    },
+    {
+      "new_id": "UC-ADV11-A145",
+      "model_family": "ddPCR-dual-target-Poisson-partition-count-correlation-uncertainty-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "已加入独立数值计算、元素/电荷/物料/物理边界检查；尚待人类专家对历史辑方程同构与化学科学性逐式审核。"
+    },
+    {
+      "new_id": "UC-ADV11-O142",
+      "model_family": "CuAAC-double-azide-stoichiometric-second-order-click-binomial-product-mass-distribution",
+      "judgement": "pending_human_comparison",
+      "screening": "已加入独立数值计算、元素/电荷/物料/物理边界检查；尚待人类专家对历史辑方程同构与化学科学性逐式审核。"
+    },
+    {
+      "new_id": "UC-ADV11-P142",
+      "model_family": "cavity-exciton-polariton-Hermitian-two-mode-anticrossing-Hopfield-Rabi-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "已加入独立数值计算、元素/电荷/物料/物理边界检查；尚待人类专家对历史辑方程同构与化学科学性逐式审核。"
     }
   ]
 }
