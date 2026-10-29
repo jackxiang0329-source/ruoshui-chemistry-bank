@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (54题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第12辑 (56题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -406,6 +406,32 @@ mean\_field\_critical\_temperature\_K = 601.361775 K；reduced\_coupling\_400K =
 有序与无序相化学式仍为AB，变化只是子晶格占位和自由能。真实合金的局部短程有序、畴结构、声子及反射几何条件会改变平均场相变和实际衍射强度。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I165 · 57Fe Mössbauer双峰异构位移、四极分裂与自由核反冲审计}
+\noindent\textbf{题目}\par
+某假想无机铁配合物进行⁵⁷Fe Mössbauer谱学，核γ基准跃迁能量Eγ=14.4125 keV。相对同一参考源，轴对称电场梯度下观测四极双峰的多普勒速度分别v₋=−0.3500、v₊=+1.2500 mm/s；定义正速度给正能量移。⁵⁷Fe核质量采用56.9354 u、1u=1.66053906660×10⁻²⁷ kg；c=299792458 m/s、h=4.135667696×10⁻¹⁵ eV·s、1eV=1.602176634×10⁻¹⁹ J、k\_B=1.380649×10⁻²³ J/K。求双峰异构位移速度和四极速度间距、每峰与中心的能移、四极超精细能量间距（eV和neV）、对应频率与温标、γ光子波长，以及自由核单次反冲能和反冲与四极能量的数量级比。逐一核查谱线中心、能量差、速度单位和无反冲吸收与自由核反冲的区别；说明四极分裂无法仅由双峰唯一反推电场梯度张量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 取假想⁵⁷Fe Mössbauer核γ跃迁基准能量Eγ=14.4125 keV，两个未受磁场分裂的吸收峰观测速度v₋=−0.3500、v₊=+1.2500 mm/s；速度正方向定义为γ能量增大的多普勒正号。
+\item 非相对论低速线性近似ΔE=Eγ(v/c)中必须将mm/s乘10⁻³换成m/s；本题|v|/c仅约10⁻¹²。
+\item 假定双线来自轴对称电场梯度造成的激发核态I\_e=3/2四极分裂，基态I\_g=1/2保持简并，且吸收双峰分别对应两个等权谱线。
+\item 谱线中心速度δ=(v₋+v₊)/2=0.450000000000 mm/s，为本题相对参比的异构位移。
+\item 双峰速度间隔Δv=v₊−v₋=1.60000000000 mm/s；它是两谱线的全间距，不能再误乘2。
+\item 两线相对参比的能移分别-1.682622382715e-8和6.009365652554e-8 eV，中心能移2.163371634920e-8 eV。
+\item 四极能量间隔ΔE\_Q=EγΔv/c=7.691988035269e-8 eV，即76.9198803527 neV。
+\item 利用E=hν和h=4.135667696e-15 eV s，频率ν\_Q=18599144.3237 Hz；用k\_B=1.380649×10⁻²³ J/K得温度等效0.000892618145460 K。
+\item ⁵⁷Fe原子核质量按56.9354 u，1u=1.66053906660×10⁻²⁷ kg，计算自由核吸收或发射光子时的单次动量反冲E\_R=Eγ²/(2Mc²)，其中能量在SI中计算。
+\item 得到自由核单次反冲E\_R=0.00195833127260 eV（1.95833127260 meV）；它远大于核四极超精细能量。
+\item 自由核发射与吸收各存在反冲而导致谱线中心错位，固体Mössbauer无反冲事件由整个晶格吸收动量；反冲能与无反冲比例不是同一物理量。
+\item 中心检查E₋+E₊−2E\_center≈6.6174e-24 eV，线差检查E₊−E₋−ΔE\_Q≈1.3235e-23 eV。
+\item 如果另有磁超精细场，谱线会出现多重分裂；真实四极分裂的绝对符号及电场梯度不对称参数不能只靠两峰位置判定，需增加样品几何与核矩数据。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+isomer\_shift\_velocity\_mm\_s = 0.45 mm/s；quadrupole\_velocity\_splitting\_mm\_s = 1.6 mm/s；lower\_line\_energy\_shift\_eV = -1.68262238e-08 eV；upper\_line\_energy\_shift\_eV = 6.00936565e-08 eV；isomer\_shift\_energy\_eV = 2.16337163e-08 eV；quadrupole\_energy\_splitting\_eV = 7.69198804e-08 eV；quadrupole\_energy\_neV = 76.9198804 neV；quadrupole\_frequency\_Hz = 18599144.3 Hz；quadrupole\_thermal\_equivalent\_K = 0.000892618145 K；free\_nucleus\_recoil\_energy\_eV = 0.00195833127 eV；free\_nucleus\_recoil\_energy\_meV = 1.95833127 meV；recoil\_to\_quadrupole\_energy\_ratio = 25459.3645 ratio；gamma\_wavelength\_nm = 0.0860254629 nm；line\_center\_residual\_eV = 6.6174449e-24 eV；line\_splitting\_residual\_eV = 1.32348898e-23 eV；twice\_quadrupole\_splitting\_eV = 1.53839761e-07 eV；two\_recoil\_energy\_eV = 0.00391666255 eV\par
+\noindent\textbf{模型前提：}
+如果另有磁超精细场，谱线会出现多重分裂；真实四极分裂的绝对符号及电场梯度不对称参数不能只靠两峰位置判定，需增加样品几何与核矩数据。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -775,6 +801,33 @@ measured\_absorbance\_lambda1 = 0.15 absorbance；measured\_absorbance\_lambda2 
 Nernst\_voltage\_V = 0.0256925791 V；fluoride\_ionized\_fraction\_pH2p5 = 0.17697836 fraction；fluoride\_ionized\_fraction\_pH4p5 = 0.955562445 fraction；effective\_activity\_pH2p5 = 2.21582688e-05 activity；effective\_activity\_pH4p5 = 8.44449956e-05 activity；electrode\_E\_pH2p5\_V = 0.475355074 V；electrode\_E\_pH4p5\_V = 0.440981238 V；potential\_shift\_V = 0.0343738356 V；reconstructed\_total\_fluoride\_M = 0.0001 mol/L；reconstructed\_chloride\_selectivity = 0.001 ratio；free\_fluoride\_pH2p5\_M = 1.7697836e-05 mol/L；free\_fluoride\_pH4p5\_M = 9.55562445e-05 mol/L；HF\_pH2p5\_M = 8.2302164e-05 mol/L；HF\_pH4p5\_M = 4.44375555e-06 mol/L；chloride\_interference\_activity = 8e-06 activity；interference\_fraction\_pH2p5 = 0.361039035 fraction；interference\_fraction\_pH4p5 = 0.0947362238 fraction；equivalent\_fluoride\_interference\_pH2p5\_M = 5.65040832e-05 mol/L；equivalent\_fluoride\_interference\_pH4p5\_M = 1.04650408e-05 mol/L；inverted\_activity\_pH2p5 = 2.21582688e-05 activity；inverted\_activity\_pH4p5 = 8.44449956e-05 activity；fluoride\_ionization\_ratio = 5.39931799 ratio\par
 \noindent\textbf{模型前提：}
 验证：若忽略HF而直接把总氟代入电极方程，会误判氟浓度和K\_sel。若出现HF₂⁻、AlF络合、液接电位变动、活度系数或氯活度变化，双条件方程不能直接使用。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A165 · 强酸电导滴定的离子物料、稀释修正与分段斜率交点反演}
+\noindent\textbf{题目}\par
+某分析化学电导滴定将20.00 mL未知HCl水样（另含0.005000 mol/L不反应NaCl背景盐）以0.02000 mol/L NaOH滴定，假设等温、完全中和、离子摩尔电导率保持常数，真实待测HCl浓度0.01000 mol/L用于生成独立模拟读数。298 K时λ(H⁺)=0.03496、λ(Na⁺)=0.005011、λ(Cl⁻)=0.007635、λ(OH⁻)=0.01985 S·m²/mol，所有体积可加，κ=Σλc且c必须转成mol/m³。求滴定体积V=0、5、10、15、20 mL各点原始电导率及按初始体积校正后的电导率κ\_corr=κ(V)(V\_i+V)/V\_i，计算等当量前后两条严格线性支的斜率和交点，并由交点独立反求HCl浓度；列明每段四种离子的物质的量，逐一检查反应物当量、溶液总正负电荷、稀释和等当量处非零最低电导率，解释现实离子迁移率并非严格常数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 20.00 mL样品含HCl及0.005000 mol/L惰性NaCl，滴定剂NaOH浓度0.02000 mol/L。反应H⁺+OH⁻→H₂O瞬时定量，忽略酸碱活度偏差与温度改变。
+\item 各离子电导率按κ=Σλ\_i c\_i求和，λ以S m²/mol、各离子c以mol/m³表示，因此以mol/L计的物质浓度需乘1000。
+\item 初始HCl=0.01000 mol/L、初始NaCl=0.005000 mol/L，初始Cl⁻总量=(C\_HCl+C\_NaCl)V\_i，而NaCl提供的Na⁺始终保留在溶液中。
+\item 当滴定剂体积V小于等当量V\_e，游离H⁺物质的量n\_H=C\_HCl V\_i−C\_bV，OH⁻为0；当V大于V\_e则H⁺为0、n\_OH=C\_bV−C\_HClV\_i。
+\item 所有V时，n\_Na=C\_NaCl V\_i+C\_bV，n\_Cl=(C\_NaCl+C\_HCl)V\_i，溶液总体积为V\_i+V，逐段检查正负电荷总当量相等。
+\item 等当量由酸碱摩尔守恒得V\_e=C\_HClV\_i/C\_b=10.0000000000 mL。
+\item 按照λ\_H=0.03496、λ\_Na=0.005011、λ\_Cl=0.007635、λ\_OH=0.01985 S m²/mol，分别求V=0、5、10、15、20 mL原始κ=0.489180000000、0.271548000000、0.126460000000、0.179425714286、0.219150000000 S/m。
+\item 由于滴定过程总体积增加，原始κ(V)的两段不是严格直线；要先对体积稀释做校正κ\_corr=κ(V)(V\_i+V)/V\_i。
+\item 校正后的五点κ\_corr=0.489180000000、0.339435000000、0.189690000000、0.313995000000、0.438300000000 S/m，在等当量前、后严格分段线性。
+\item 以校正数据得前段斜率-29.9490000000 (S/m)/L、后段24.8610000000 (S/m)/L，前段因高迁移率H⁺被Na⁺置换而下降，后段因OH⁻过量而上升。
+\item 两段直线交点即等当量体积，斜率求交不会受起始惰性盐贡献的共同基线影响，但仍依赖题设理想稀溶液与常数摩尔电导率。
+\item 反算等当量V=10.0000000000 mL，再求待测酸浓度C\_HCl=C\_bV\_e/V\_i=0.0100000000000 mol/L。
+\item 当V=V\_e所有H⁺和OH⁻均被消耗，κ最小值=0.126460000000 S/m，溶液仍含Na⁺和Cl⁻，不应把电导率误认为零。
+\item 本题是理想强酸—强碱反应，若考虑弱酸电离、溶液离子强度导致的摩尔电导率变化、液接电位和电极极化，必须重新建模，不能用同一分段线性公式盲目拟合。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+equivalence\_volume\_L = 0.01 L；raw\_conductivity\_0L\_S\_m = 0.48918 S/m；raw\_conductivity\_5mL\_S\_m = 0.271548 S/m；raw\_conductivity\_10mL\_S\_m = 0.12646 S/m；raw\_conductivity\_15mL\_S\_m = 0.179425714 S/m；raw\_conductivity\_20mL\_S\_m = 0.21915 S/m；dilution\_corrected\_0L\_S\_m = 0.48918 S/m；dilution\_corrected\_5mL\_S\_m = 0.339435 S/m；dilution\_corrected\_10mL\_S\_m = 0.18969 S/m；dilution\_corrected\_15mL\_S\_m = 0.313995 S/m；dilution\_corrected\_20mL\_S\_m = 0.4383 S/m；pre\_equivalence\_slope\_S\_m\_per\_L = -29.949 (S/m)/L；post\_equivalence\_slope\_S\_m\_per\_L = 24.861 (S/m)/L；intersection\_volume\_L = 0.01 L；recovered\_HCl\_M = 0.01 mol/L；initial\_HCl\_mol = 0.0002 mol；NaOH\_at\_equivalence\_mol = 0.0002 mol；minimum\_conductivity\_at\_equivalence\_S\_m = 0.12646 S/m；positive\_charge\_equivalents\_equivalence\_mol = 0.0003 mol；initial\_negative\_chloride\_equivalents\_mol = 0.0003 mol；corrected\_drop\_to\_equivalence\_S\_m = -0.29949 S/m；raw\_15mL\_over\_5mL\_ratio = 0.660751375 ratio\par
+\noindent\textbf{模型前提：}
+本题是理想强酸—强碱反应，若考虑弱酸电离、溶液离子强度导致的摩尔电导率变化、液接电位和电极极化，必须重新建模，不能用同一分段线性公式盲目拟合。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
