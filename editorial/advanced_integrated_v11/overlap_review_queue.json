@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 58,
+  "current_draft_count": 59,
   "expert_approved": 0,
-  "preliminary_flags": 23,
+  "preliminary_flags": 24,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -142,6 +142,12 @@
       "new_id": "UC-ADV11-I141",
       "prior_id": "UC-ADV10-I101",
       "reason": "旧题Heisenberg反铁磁二聚体，本题三角形Ising挫折及六重残余熵；同属分子磁性，需人工核查模型不同性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-A140",
+      "prior_id": "UC-ADV10-A113",
+      "reason": "均属光学分子分析，但本题为FCS单分子涨落相关的扩散与浓度模型；需逐式对照历史荧光寿命等题。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -493,6 +499,12 @@
       "model_family": "triangular-Ising-frustrated-cluster-partition-residual-entropy-susceptibility",
       "judgement": "pending_human_comparison",
       "screening": "逐项数值witness与能量热容极限已建；须人工逐式比对历史三核、二聚体及其它统计力学题。"
+    },
+    {
+      "new_id": "UC-ADV11-A140",
+      "model_family": "FCS-Gaussian-confocal-triplet-population-diffusion-volume-Stokes-Einstein-inverse",
+      "judgement": "pending_human_comparison",
+      "screening": "逐项独立数值witness及fL/m3/nM单位反算完成；仍待跨历史辑和实验模型人工核验。"
     }
   ]
 }

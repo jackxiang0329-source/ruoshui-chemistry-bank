@@ -91,6 +91,8 @@ Object.assign(witness,{
 });
 
 Object.assign(witness,{"UC-ADV11-I141":()=>{const K=120,T=100,R=8.314462618,kb=1.380649e-23,NA=6.02214076e23,mb=3*9.2740100783e-24,r=Math.exp(-4*K/T),p=r/(3+r),mean=(3+9*r)/(3+r),chi=NA*mb*mb/(kb*T)*mean;assert.ok(p>0&&p<1&&mean>=1&&mean<=3);return[r,p,3/(3+r),R*K*(-1+4*p),R*(4*K/T)**2*p*(1-p),R*(Math.log(6+2*r)+4*K/T*p),chi,mean/3,mean,6+2*r,R*Math.log(6),R*Math.log(8)];}});
+
+Object.assign(witness,{"UC-ADV11-A140":()=>{const w=3e-7,z=1.5e-6,t=.00045,tt=3e-6,f=.15,T=298.15,NA=6.02214076e23,kb=1.380649e-23,eta=.00089,g0=1/(20*(1-f)),N=1/(g0*(1-f)),s=z/w,D=w*w/(4*t),rad=kb*T/(6*Math.PI*eta*D),V=Math.pow(Math.PI,1.5)*w*w*z,G=x=>1/N/(1+x/t)/Math.sqrt(1+x/(s*s*t))*(1+f/(1-f)*Math.exp(-x/tt));assert.ok(N>0&&D>0&&rad>0&&Math.abs(4*D*t/(w*w)-1)<1e-12);return[s,g0,N,D,rad*1e9,V*1e18,N/(NA*V*1000)*1e9,N/V,G(tt),G(t),1/N,f/(1-f),4*D*t/(w*w)];}});
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();
