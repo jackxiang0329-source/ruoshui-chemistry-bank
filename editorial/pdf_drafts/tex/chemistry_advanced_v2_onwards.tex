@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (684题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至12辑 (688题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -13153,6 +13153,35 @@ K\_fraction\_A\_sites = 0.1 fraction；Fe\_fraction\_B\_sites = 0.2 fraction；m
 真实Sr/K/Fe/Ti钙钛矿可能发生Fe不同价态、非立方畸变、有序占位或固溶度受限；这里的密度、容忍因子仅为明确假设下的硬球模型估计。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-I174 · 氧离子导体固体氧浓差电池的Nernst电势、负载功率与法拉第输运}
+\noindent\textbf{题目}\par
+在T=900.0 K，将一片理想钇稳定氧化锆（YSZ）只允许O²⁻离子传导的致密电解质用于固体氧浓差电池，两侧氧气均为理想气体；高氧压参考侧p\_ref=0.2100 bar，低氧压样品侧p\_s=0.001000 bar。电极可逆、表面交换无限快，唯一电池内损是电解质的欧姆电阻；电解质厚度d=0.5000 mm，截面积A=1.000 cm²，离子电导率σ=0.1000 S/m、温度浓度均匀。四电子O₂+4e⁻⇌2O²⁻，氧气沿电化学势驱动方向跨膜，每输运1 mol O₂对应4F电量。电池外接R\_L=200.0 Ω纯电阻，F=96485.33212 C/mol，R=8.314462618 J/(mol K)，氧气摩尔质量32.000 g/mol。求理想开路Nernst电动势E、内阻、接负载电流、端电压、负载功率、内损与氧气输运摩尔率和每小时的氧气质量；验证ΔG\_O2=RTln(p\_ref/p\_s)=4FE，功率守恒P\_load+P\_internal=I E。说明从电池的正向净传输中高氧压侧氧气化学势降低，真实传感器还需考虑极化和浓差改变，不能把负载端电压直接当作开路氧传感读数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 氧离子固体电解质载流子为O²⁻，两侧氧气平衡半电池涉及O₂和四个电子，因此浓差电池可逆电压的分母必须是4F，而非2F。
+\item 两侧高氧压参考侧和低氧压样品侧所对应的化学势差为Δμ\_O2=RTln(p\_ref/p\_s)>0，是每mol O₂的转移自由能驱动力。
+\item 在900 K下p\_ref/p\_s=210.00000000，自然对数=5.3471075307，开路电动势E=(RT/4F)ln(p\_ref/p\_s)=0.10367506706 V。
+\item 电解质电阻满足R\_i=d/(σA)，先将厚度0.5000 mm转换为0.0005000 m、面积1.000 cm²转换为1.000×10⁻⁴ m²。
+\item 内阻=50.000000000 Ω；外接负载200.00000000 Ω，负载与内阻串联。
+\item 忽略电极过电势，电池电流I=E/(Ri+RL)，外端电压V=I RL；不可把开路电压E误作为负载后的端电压。
+\item 电流I=0.00041470026823 A，即0.41470026823 mA；端电压V=0.082940053647 V。
+\item 利用I=E/(Ri+RL)计算外负载输出功率P=I²RL，内欧姆损耗P\_int=I²Ri，二者之和应等于I E。
+\item 负载功率=0.000034395262495 W、内耗=0.0000085988156236 W，两者总和=0.000042994078118 W，电化学供电率I E=0.000042994078118 W。
+\item 氧气净输运以每mol氧气四电子计量，因此n\_dot(O₂)=I/(4F)，这不等于每电子对应一分子氧气。
+\item 每秒输运1.0745163517e-9 mol O₂、每小时0.0000038682588660 mol O₂，质量输运=0.12378428371 mg/h。
+\item 能量单位转换核查：Δμ\_O2=40012.493111 J/mol，4 F E/Δμ=1.0000000000，验证Nernst电压与化学能一致。
+\item 负载电压利用率V/E=0.80000000000，相应内阻分压比例=0.20000000000。
+\item 开路电动势除以厚度给207.35013412 V/m，仅是电动势对长度的形式归一，不能在存在电极双电层时当作严格局部均匀电场。
+\item 本题将YSZ离子电导率视为常数，排除了氧离子迁移数不为1、接触电阻、反应极化和氧气流量变化导致的两侧实际pO₂改变。
+\item 真实器件的实测信号若接有有限负载，需要扣除内部压降，再与热电偶测得的温度共同用于氧压反算。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+temperature\_K = 900 K；reference\_oxygen\_pressure\_bar = 0.21 bar；sample\_oxygen\_pressure\_bar = 0.001 bar；oxide\_ionic\_conductivity\_S\_m = 0.1 S/m；electrolyte\_thickness\_m = 0.0005 m；electrode\_area\_m2 = 0.0001 m2；external\_load\_ohm = 200 ohm；internal\_ionic\_resistance\_ohm = 50 ohm；Nernst\_open\_circuit\_emf\_V = 0.103675067 V；Nernst\_open\_circuit\_emf\_mV = 103.675067 mV；loaded\_current\_A = 0.000414700268 A；loaded\_current\_mA = 0.414700268 mA；terminal\_voltage\_V = 0.0829400536 V；voltage\_utilization\_ratio = 0.8 ratio；load\_power\_W = 3.43952625e-05 W；electrolyte\_ohmic\_loss\_W = 8.59881562e-06 W；total\_dissipated\_power\_W = 4.29940781e-05 W；electrochemical\_power\_input\_W = 4.29940781e-05 W；oxygen\_transport\_mol\_per\_second = 1.07451635e-09 mol/s；oxygen\_transport\_mol\_per\_hour = 3.86825887e-06 mol/h；oxygen\_transport\_mass\_mg\_per\_hour = 0.123784284 mg/h；oxygen\_chemical\_potential\_difference\_J\_mol = 40012.4931 J/mol；Faraday\_Nernst\_identity\_ratio = 1 ratio；current\_density\_A\_m2 = 4.14700268 A/m2；open\_circuit\_field\_V\_m = 207.350134 V/m；current\_via\_load\_A = 0.000414700268 A；internal\_voltage\_drop\_V = 0.0207350134 V；internal\_drop\_from\_current\_V = 0.0207350134 V；internal\_fraction = 0.2 fraction；thermal\_Nernst\_prefactor\_V = 0.0193889998 V；log\_pressure\_ratio = 5.34710753 ratio；terminal\_plus\_internal\_drop\_V = 0.103675067 V\par
+\noindent\textbf{模型前提：}
+真实器件的实测信号若接有有限负载，需要扣除内部压降，再与热电偶测得的温度共同用于氧压反算。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第12辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -13787,6 +13816,38 @@ EDTA\_titrant\_concentration\_M = 0.01 mol/L；total\_endpoint\_volume\_mL = 18.
 本题对配位反应计量采用可定量的条件；真实EDTA滴定还需验证pH缓冲、金属共存干扰、指示剂终点系统误差和残余沉淀的Ca夹带。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-A174 · 等温滴定量热双点反演结合常数与放热焓：配体耗尽和协方差}
+\noindent\textbf{题目}\par
+在298.15 K，某理想等温滴定量热(ITC)实验采用三份体积均为V=1.000 mL的平行受体样品，受体总浓度M\_T=0.001000 mol/L。单一受体M与配体L形成一比一复合物ML，解离常数K\_d=[M\_free][L\_free]/[ML]，反应结合焓ΔH\_bind（每mol ML）假定与结合程度无关。三份样品的已校正配体总浓度L\_T分别为0.0004000、0.001500、0.003000 mol/L，初始均无ML。完成平衡后观察的积分结合热分别为Q₁=−11.2843666167989 mJ、Q₂=−28.8706800674989 mJ、Q₃=−35.0490431885720 mJ（按给定模型产生的精确模拟值；实测保留小数末位误差可忽略）。仪器对任一积分热的标准不确定度uQ=0.05000 mJ，各独立；受体总量、配体总量和体积视作精确。不得预先假定K\_d或ΔH。由二次配体耗尽方程求各组的ML浓度；仅利用Q₁、Q₂比值反演K\_d，再求ΔH，第三个热Q₃用于独立预测验证。对前两次热测量进行一阶Jacobian不确定度传播，求K\_d、ΔH的标准不确定度，注意同一Q₁出现在比值和焓反演中而导致相关性。检验结合总量不超过受体或配体总量、各游离浓度非负、反应热符号与热量单位的一致性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 反应只有M+L⇌ML，令x=[ML]，由物料平衡[M\_free]=M\_T−x、[L\_free]=L\_T−x；定义K\_d=(M\_T−x)(L\_T−x)/x。
+\item 整理得x²−(M\_T+L\_T+K\_d)x+M\_TL\_T=0；应选择0<x<min(M\_T,L\_T)的小根而不是非物理大根。
+\item 为避免相近数相减，稳定计算x=2M\_TL\_T/[M\_T+L\_T+K\_d+sqrt((M\_T+L\_T+K\_d)²−4M\_TL\_T)]。
+\item 每份样品体积V相同，积分结合热Q=ΔH\_bind V x；x用mol/L、V用L，所以Q以J计。
+\item 三份读数Q₁=-11.284366617、Q₂=-28.870680067、Q₃=-35.049043189 mJ，均为放热负值。
+\item 取热量比r=Q₂/Q₁=x₂(K\_d)/x₁(K\_d)，未知结合焓和体积同时被约去，可以先求唯一的K\_d。
+\item 对于题设L\_T1<L\_T2、受体总量固定，结合比例比值随K\_d增加单调上升；通过正值保界二分查找r的根。
+\item 实验热量比r=2.5584670410，反演得到K\_d=0.00030000000000 mol/L。
+\item 利用二次耗尽根计算三个配合物浓度依次0.00028210916542、0.00072176700169、0.00087622607971 mol/L。
+\item 对应三份受体占位比例0.28210916542、0.72176700169、0.87622607971；各自游离配体浓度L\_T−x非负。
+\item 用第一组热量及ML量计算ΔH\_bind=Q₁/(V x₁)=-40000.000000 J/mol，负号对应放热。
+\item 把反演K\_d和ΔH代入第三份样品，预测Q₃=-35.049043189 mJ，与独立实测的差记为0.0000000000 mJ。
+\item 对隐式结合平衡求导dx\_j/dK\_d=−x\_j/(M\_T+L\_Tj+K\_d−2x\_j)，以r(K\_d)=x₂/x₁构造dr/dK\_d。
+\item 计算dr/dK\_d=366.47769864 M⁻¹，因此dK\_d/dr=0.0027286789994 M，确定测量比值误差放大的灵敏度。
+\item 两个热读数独立但它们共享用于参数反演的Q₁。对r=Q₂/Q₁，u\_r²=(uQ/Q₁)²+(Q₂uQ/Q₁²)²。
+\item 热量比标准不确定度u\_r=0.012171500651，反演u(K\_d)=0.000033212118218 mol/L、相对误差=0.11070706073。
+\item 结合焓H=Q₁/[V x₁(K\_d(r))]，对Q₁和Q₂求全偏导，既含Q₁直接项，又包含K\_d间接影响项。独立Q误差分别乘自己的全偏导求平方和。
+\item 给定两热全偏导-18243416.255、8516093.0325，传播得到u(ΔH)=1006.6604159 J/mol，相对值=0.025166510398。
+\item 真实ITC测定常需校正稀释热、滴定热容、配体活度与注射稀释体积，三份平行点仅足以在本理想化模型中实现参数和内部验证。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+receptor\_total\_concentration\_M = 0.001 mol/L；aliquot\_volume\_L = 0.001 L；ligand\_total\_L1\_M = 0.0004 mol/L；ligand\_total\_L2\_M = 0.0015 mol/L；ligand\_total\_L3\_M = 0.003 mol/L；observed\_heat\_Q1\_mJ = -11.2843666 mJ；observed\_heat\_Q2\_mJ = -28.8706801 mJ；observed\_heat\_Q3\_mJ = -35.0490432 mJ；measured\_heat\_ratio\_Q2\_Q1 = 2.55846704 ratio；inferred\_binding\_Kd\_M = 0.0003 mol/L；inferred\_binding\_enthalpy\_J\_mol = -40000 J/mol；complex\_concentration\_L1\_M = 0.000282109165 mol/L；complex\_concentration\_L2\_M = 0.000721767002 mol/L；complex\_concentration\_L3\_M = 0.00087622608 mol/L；receptor\_binding\_fraction\_L1 = 0.282109165 fraction；receptor\_binding\_fraction\_L2 = 0.721767002 fraction；receptor\_binding\_fraction\_L3 = 0.87622608 fraction；predicted\_heat\_Q3\_mJ = -35.0490432 mJ；third\_heat\_prediction\_residual\_mJ = 0 mJ；heat\_standard\_uncertainty\_mJ = 0.05 mJ；heat\_ratio\_standard\_uncertainty = 0.0121715007 ratio；Kd\_standard\_uncertainty\_M = 3.32121182e-05 mol/L；Kd\_relative\_standard\_uncertainty = 0.110707061 fraction；binding\_enthalpy\_standard\_uncertainty\_J\_mol = 1006.66042 J/mol；enthalpy\_relative\_standard\_uncertainty = 0.0251665104 fraction；heat\_ratio\_derivative\_per\_M = 366.477699 M\textasciicircum{}-1；Kd\_derivative\_per\_heat\_ratio\_M = 0.002728679 M；enthalpy\_partial\_derivative\_Q1 = -18243416.3 J/(mol J)；enthalpy\_partial\_derivative\_Q2 = 8516093.03 J/(mol J)；free\_receptor\_L1\_M = 0.000717890835 mol/L；free\_ligand\_L1\_M = 0.000117890835 mol/L；Kd\_reconstructed\_from\_L1\_complex\_M = 0.0003 mol/L；complex\_concentration\_ratio\_L2\_L1 = 2.55846704 ratio；bound\_fraction\_L1\_independent = 0.282109165 fraction；free\_receptor\_L3\_M = 0.00012377392 mol/L；free\_ligand\_L3\_M = 0.00212377392 mol/L\par
+\noindent\textbf{模型前提：}
+真实ITC测定常需校正稀释热、滴定热容、配体活度与注射稀释体积，三份平行点仅足以在本理想化模型中实现参数和内部验证。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第12辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -14410,6 +14471,37 @@ first\_binding\_Kd\_M = 0.02 mol/L；second\_binding\_Kd\_M = 0.1 mol/L；total\
 真实烯胺催化可能具有胺缩合、底物竞争、立体选择性和溶剂效应；本题只把两个快速平衡与一个慢步骤定义为可精确求解的假想机制。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-O170 · 双官能单体分子内环化与二聚的竞争：Riccati精确解和终态分支}
+\noindent\textbf{题目}\par
+某假想线性双官能有机单体M在固定溶剂、温度与惰性条件下发生不可逆竞争：每一个M以一级速率k\_c=0.02500 s⁻¹分子内环化成单体环C；两个M以二级速率k\_d=3.000 L/(mol s)发生分子间二聚形成非环二聚体D，且该反应按d[D]/dt=k\_d[M]²计。C、D稳定且不会继续聚合或相互转化，不存在分解和环间交换。于是d[M]/dt=−k\_c[M]−2k\_d[M]²，d[C]/dt=k\_c[M]，d[D]/dt=k\_d[M]²。分别取初始[M]₀=0.02000与0.2000 mol/L，C、D初始为0；求t=60.00 s的M、C、D、初始两条通道速率与其消费单体数之比，求t→∞时的环单体与二聚体产率、其中单体骨架进入环结构的比例。推导Riccati模型的完整解析解，并求初始单体浓度使环化对单体消耗速率与二聚对单体消耗速率相等的临界浓度。给定全部浓度单位为mol/L，核验[M]+[C]+2[D]=[M]₀的逐时骨架守恒；注意[M]+[C]+[D]不是单体骨架守恒，二聚体每分子含两个单体单元。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 本题两通道消耗单体的计量不同：环化M→C消耗1个单体，二聚2M→D每生成1个D消耗2个M。
+\item ODE为dM/dt=−kc M−2kd M²，dC/dt=kc M，dD/dt=kd M²；从三式得到d(M+C+2D)/dt=0。
+\item 令β=2kd M0/kc，利用Bernoulli/Riccati变换求得M(t)=M0 e\textasciicircum{}(−kc t)/[1+β(1−e\textasciicircum{}(−kc t))]。
+\item 环化产物为C(t)=kc/(2kd) ln[1+β(1−e\textasciicircum{}(−kc t))]，可通过对C′=kc M直接积分得到。
+\item 由严格骨架守恒计算D(t)=[M0−M(t)−C(t)]/2，避免对M²再次手动复杂积分。
+\item 低初始浓度M0=0.020000000000 M时β=4.8000000000，高初始浓度M0=0.20000000000 M时β=48.000000000。
+\item 在t=60.00 s，低初始浓度剩余M=0.00094367235706 M、环C=0.0064737855251 M、二聚D=0.0062912710589 M。
+\item 高初始浓度时对应M=0.0011654823898 M、环C=0.015188259570 M、二聚D=0.091823129020 M。
+\item 按M+C+2D的单体骨架计数核对两条件下分别为0.020000000000 M与0.20000000000 M，完全恢复初始骨架。
+\item 当t趋无穷时e\textasciicircum{}(−kct)→0、单体M→0，而环化终量C∞=kc/(2kd) ln(1+β)，D∞=(M0−C∞)/2。
+\item 低浓度的终环C∞=0.0073244079898 M、终二聚D∞=0.0063377960051 M，骨架进入环的分率0.36622039949。
+\item 高浓度对应C∞=0.016215917909 M、D∞=0.091892041046 M、环分率0.081079589544。
+\item 初始环分子产生速率为kc M0，二聚分子产生速率为kd M0²；由于后者消耗两个单体，必须用2kd M0²与环化通道的单体消耗速率进行比较。
+\item 低浓度初始环化通量=0.00050000000000 M/s、二聚分子通量=0.0012000000000 M/s；高浓度对应0.0050000000000和0.12000000000 M/s。
+\item 初始两条通道消耗单体的速率相等即kc M0=2kd M0²，唯一正阈值M0*=kc/(2kd)。
+\item 算得M0*=0.0041666666667 M；在低、高初始浓度下，初始环化/二聚单体消耗比依次0.20833333333、0.020833333333。
+\item 提高初始单体浓度强化二级二聚项，因此虽然环产物绝对浓度可能增大，单体骨架的最终环分率会降低。
+\item 本模型把环化产物视为不能被二聚端基继续攻击的稳定终产物，并假定不发生更高聚体、可逆开环或链增长，真实环链平衡需在更完整的聚合模型下分析。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+intramolecular\_cyclization\_rate\_constant\_s = 0.025 s\textasciicircum{}-1；intermolecular\_dimerization\_rate\_constant\_L\_mol\_s = 3 L/(mol s)；sampling\_time\_s = 60 s；initial\_equal\_consumption\_concentration\_M = 0.00416666667 mol/L；low\_initial\_monomer\_M = 0.02 mol/L；high\_initial\_monomer\_M = 0.2 mol/L；Riccati\_dimensionless\_parameter\_low = 4.8 ratio；Riccati\_dimensionless\_parameter\_high = 48 ratio；monomer\_remaining\_t60\_low\_M = 0.000943672357 mol/L；monomer\_remaining\_t60\_high\_M = 0.00116548239 mol/L；cyclic\_monomer\_t60\_low\_M = 0.00647378553 mol/L；cyclic\_monomer\_t60\_high\_M = 0.0151882596 mol/L；dimer\_t60\_low\_M = 0.00629127106 mol/L；dimer\_t60\_high\_M = 0.091823129 mol/L；skeleton\_inventory\_t60\_low\_M = 0.02 mol/L；skeleton\_inventory\_t60\_high\_M = 0.2 mol/L；final\_cyclic\_monomer\_low\_M = 0.00732440799 mol/L；final\_cyclic\_monomer\_high\_M = 0.0162159179 mol/L；final\_dimer\_low\_M = 0.00633779601 mol/L；final\_dimer\_high\_M = 0.091892041 mol/L；final\_skeleton\_fraction\_in\_cycles\_low = 0.366220399 fraction；final\_skeleton\_fraction\_in\_cycles\_high = 0.0810795895 fraction；initial\_cyclization\_flux\_low\_M\_s = 0.0005 mol/(L s)；initial\_cyclization\_flux\_high\_M\_s = 0.005 mol/(L s)；initial\_dimer\_molecule\_flux\_low\_M\_s = 0.0012 mol/(L s)；initial\_dimer\_molecule\_flux\_high\_M\_s = 0.12 mol/(L s)；initial\_dimer\_monomer\_consumption\_low\_M\_s = 0.0024 mol/(L s)；initial\_dimer\_monomer\_consumption\_high\_M\_s = 0.24 mol/(L s)；initial\_cyclization\_to\_dimer\_consumption\_ratio\_low = 0.208333333 ratio；initial\_cyclization\_to\_dimer\_consumption\_ratio\_high = 0.0208333333 ratio；high\_over\_low\_final\_cyclic\_yield\_ratio = 2.21395612 ratio；molecular\_number\_t60\_low\_M = 0.0137087289 mol/L；molecular\_number\_t60\_high\_M = 0.108176871 mol/L；exp\_minus\_kc\_t = 0.22313016 ratio；cyclization\_flux\_t60\_low\_M\_s = 2.35918089e-05 mol/(L s)；cyclization\_flux\_t60\_high\_M\_s = 2.91370597e-05 mol/(L s)；dimerization\_molecule\_flux\_t60\_low\_M\_s = 2.67155255e-06 mol/(L s)；dimerization\_molecule\_flux\_t60\_high\_M\_s = 4.0750476e-06 mol/(L s)\par
+\noindent\textbf{模型前提：}
+本模型把环化产物视为不能被二聚端基继续攻击的稳定终产物，并假定不发生更高聚体、可逆开环或链增长，真实环链平衡需在更完整的聚合模型下分析。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第12辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -15028,6 +15120,39 @@ cation\_diffusivity\_m2\_s = 1.3e-09 m2/s；anion\_diffusivity\_m2\_s = 2e-09 m2
 temperature\_K = 298.15 K；surface\_tension\_J\_m2 = 0.05 J/m2；liquid\_molar\_volume\_m3\_mol = 1.8e-05 m3/mol；kinetic\_prefactor\_mMinus3\_sMinus1 = 1e+35 m\textasciicircum{}-3 s\textasciicircum{}-1；supersaturation\_low = 2.2 ratio；supersaturation\_high = 3 ratio；driving\_mu\_low\_J\_mol = 1954.55192 J/mol；driving\_mu\_high\_J\_mol = 2723.41266 J/mol；critical\_radius\_low\_nm = 0.920927188 nm；critical\_radius\_high\_nm = 0.660935461 nm；critical\_radius\_ratio\_low\_over\_high = 1.39336931 ratio；critical\_barrier\_low\_J = 1.77627091e-19 J；critical\_barrier\_high\_J = 9.14906517e-20 J；barrier\_low\_over\_kBT = 43.151024 ratio；barrier\_high\_over\_kBT = 22.2258626 ratio；critical\_cluster\_molecules\_low = 109.456836 molecules；critical\_cluster\_molecules\_high = 40.4617039 molecules；rate\_low\_mMinus3\_sMinus1 = 1.81864685e+16 m\textasciicircum{}-3 s\textasciicircum{}-1；rate\_high\_mMinus3\_sMinus1 = 2.225515e+25 m\textasciicircum{}-3 s\textasciicircum{}-1；rate\_ratio\_high\_over\_low = 1.22372026e+09 ratio；critical\_surface\_energy\_low\_J = 5.32881272e-19 J；critical\_bulk\_energy\_abs\_low\_J = 3.55254182e-19 J；critical\_surface\_energy\_high\_J = 2.74471955e-19 J；critical\_bulk\_energy\_abs\_high\_J = 1.82981303e-19 J；barrier\_low\_surface\_minus\_bulk\_J = 1.77627091e-19 J；barrier\_high\_surface\_minus\_bulk\_J = 9.14906517e-20 J；bulk\_free\_energy\_density\_low\_J\_m3 = 108586218 J/m3；bulk\_free\_energy\_density\_high\_J\_m3 = 151300703 J/m3；log\_rate\_low = 37.4394542 ln(m\textasciicircum{}-3 s\textasciicircum{}-1)；log\_rate\_high = 58.3646157 ln(m\textasciicircum{}-3 s\textasciicircum{}-1)；DeltaG\_at\_two\_critical\_radii\_low\_J = -7.10508363e-19 J；DeltaG\_at\_two\_critical\_radii\_high\_J = -3.65962607e-19 J；one\_nm\_over\_critical\_radius\_low = 1.08586218 ratio\par
 \noindent\textbf{模型前提：}
 小尺度下球形/常γ/连续液体密度/定常前因子等假设可能失效；只用CNT结果不能预测真实实验材料的绝对成核率。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV12-P170 · 非绝热Marcus电子转移的正常区、活化最优点、反转区与详细平衡}
+\noindent\textbf{题目}\par
+某理想非绝热电子转移体系的两条谐形自由能曲线以无量纲集体反应坐标q描述：G\_D(q)=λq²、G\_A(q)=λ(q−1)²+ΔG°，其中重组自由能λ=0.6000 eV，ΔG°是每个电子转移事件的标准反应自由能（eV）。假定电子耦合给出与温度和驱动力均无关的有效速率前因子k0=1.000×10¹² s⁻¹，Marcus型速率为k\_f=k0 exp[−(λ+ΔG°)²/(4λ kBT)]。给定kB=1.380649×10⁻²³ J/K、1 eV=1.602176634×10⁻¹⁹ J，NA=6.02214076×10²³ mol⁻¹，分别在298.15 K与350.0 K计算四种驱动力ΔG°=−0.2000、−0.6000、−1.000、−1.400 eV下的交叉坐标q*、活化自由能、前向速率常数、速率与驱动力的非单调关系。对ΔG°=−0.6000 eV，另给反向速率k\_b=k0 exp[−(λ−ΔG°)²/(4λ kBT)]，证明k\_f/k\_b=exp[−ΔG°/(kBT)]满足详细平衡。判断正常区、无势垒最优点、反转区和高温影响，核验eV与J、kJ/mol的转换。不可误认为反应越放热，速率就必然越快。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Marcus谐形自由能曲线G\_D(q)=λq²，G\_A(q)=λ(q−1)²+ΔG°，两曲线交点由λq²=λ(q−1)²+ΔG°决定。
+\item 展开并约去q²，得到q*=(λ+ΔG°)/(2λ)；反应初态极小值在q=0，所以前向活化自由能ΔG‡=λ(q*)²。
+\item 代入得到常用Marcus抛物线势垒ΔG‡=(λ+ΔG°)²/(4λ)，不存在强制ΔG‡随放热程度单调下降的假设。
+\item 当ΔG°从0趋向−λ时势垒变小，是正常区；在ΔG°=−λ时势垒恰为0；再更负会进入反转区。
+\item 题设λ=0.60000000000 eV，四种驱动力依次-0.20000000000、-0.60000000000、-1.0000000000、-1.4000000000 eV。
+\item 交叉坐标依次q*=0.33333333333、0.0000000000、-0.33333333333、-0.66666666667，后两个q*为负体现交点超过供体势阱底部。
+\item 对应活化势垒0.066666666667、0.0000000000、0.066666666667、0.26666666667 eV。
+\item 以kBT为eV单位时，用kB T/(1.602176634×10⁻¹⁹ J/eV)换算，指数ΔG‡/(kBT)才无量纲。
+\item 低温kBT=0.025692579121 eV、高温kBT=0.030160666418 eV。
+\item 298.15 K时四种驱动力下前向速率分别74662078495、1.0000000000e+12、74662078495、31074224.841 s⁻¹。
+\item 350.0 K时四个速率分别1.0965848724e+11、1.0000000000e+12、1.0965848724e+11、144600235.96 s⁻¹。
+\item 第一种和第三种驱动力对−λ对称，势垒相同，因此两个速率相同；第四种更深放热却比第三种反应慢。
+\item 深反转区对称情形的速率比=0.00041619822897，无势垒最优驱动力是-0.60000000000 eV。
+\item 对于ΔG°=−0.6000 eV，反向电子转移所需的Marcus势垒是(λ−ΔG°)²/(4λ)，反向速率须用同一个前因子。
+\item 298.15 K反向速率=72.094259187 s⁻¹，正逆比=13870729948。
+\item 前后势垒差ΔG‡f−ΔG‡b=ΔG°，故ln(kf/kb)=−ΔG°/(kBT)，这一详细平衡关系不依赖于过渡态坐标选择。
+\item 由热力学独立计算的详细平衡目标值为13870729948，和数值正逆比一致。
+\item 各势垒换算为kJ/mol后依次6.4323554749、0.0000000000、6.4323554749、25.729421900；1 eV×NA即96.485 kJ/mol。
+\item 高温会使非零活化势垒的指数抑制减弱，但本题有效前因子固定，并未包含非绝热耦合随温度的真实变化。
+\item 此处的Marcus模型忽略量子隧穿、高频内层振动和反应物扩散极限，因此不应把模型给出的极快速率当作实验上必然可观察的值。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+temperature\_low\_K = 298.15 K；temperature\_high\_K = 350 K；reorganization\_energy\_eV = 0.6 eV；effective\_rate\_prefactor\_s = 1e+12 s\textasciicircum{}-1；driving\_force\_1\_eV = -0.2 eV；driving\_force\_2\_eV = -0.6 eV；driving\_force\_3\_eV = -1 eV；driving\_force\_4\_eV = -1.4 eV；activation\_barrier\_1\_eV = 0.0666666667 eV；activation\_barrier\_2\_eV = 0 eV；activation\_barrier\_3\_eV = 0.0666666667 eV；activation\_barrier\_4\_eV = 0.266666667 eV；forward\_rate\_Tlow\_case1\_s = 7.46620785e+10 s\textasciicircum{}-1；forward\_rate\_Tlow\_case2\_s = 1e+12 s\textasciicircum{}-1；forward\_rate\_Tlow\_case3\_s = 7.46620785e+10 s\textasciicircum{}-1；forward\_rate\_Tlow\_case4\_s = 31074224.8 s\textasciicircum{}-1；forward\_rate\_Thigh\_case1\_s = 1.09658487e+11 s\textasciicircum{}-1；forward\_rate\_Thigh\_case2\_s = 1e+12 s\textasciicircum{}-1；forward\_rate\_Thigh\_case3\_s = 1.09658487e+11 s\textasciicircum{}-1；forward\_rate\_Thigh\_case4\_s = 144600236 s\textasciicircum{}-1；crossing\_coordinate\_case1 = 0.333333333 ratio；crossing\_coordinate\_case2 = 0 ratio；crossing\_coordinate\_case3 = -0.333333333 ratio；crossing\_coordinate\_case4 = -0.666666667 ratio；kBT\_Tlow\_eV = 0.0256925791 eV；kBT\_Thigh\_eV = 0.0301606664 eV；reverse\_rate\_case2\_Tlow\_s = 72.0942592 s\textasciicircum{}-1；forward\_to\_reverse\_rate\_ratio\_case2 = 1.38707299e+10 ratio；detailed\_balance\_expected\_ratio = 1.38707299e+10 ratio；deep\_inverted\_to\_symmetrical\_rate\_ratio = 0.000416198229 ratio；barrierless\_driving\_force\_eV = -0.6 eV；barrier\_case1\_kJ\_mol = 6.43235547 kJ/mol；barrier\_case2\_kJ\_mol = 0 kJ/mol；barrier\_case3\_kJ\_mol = 6.43235547 kJ/mol；barrier\_case4\_kJ\_mol = 25.7294219 kJ/mol；rate\_increase\_case1\_with\_temperature = 1.46873071 ratio；rate\_increase\_case4\_with\_temperature = 4.65338192 ratio；equal\_normal\_inverted\_rate\_residual = 0 s\textasciicircum{}-1；barrierless\_to\_normal\_rate\_ratio\_lowT = 13.3936802 ratio\par
+\noindent\textbf{模型前提：}
+此处的Marcus模型忽略量子隧穿、高频内层振动和反应物扩散极限，因此不应把模型给出的极快速率当作实验上必然可观察的值。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
