@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 90,
+  "current_draft_count": 94,
   "expert_approved": 0,
-  "preliminary_flags": 90,
+  "preliminary_flags": 94,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -544,6 +544,30 @@
       "new_id": "UC-ADV12-P169",
       "prior_id": null,
       "reason": "需人工逐一对照已存全部系列的数学模型、题干原创性、化学有效性及说明完整性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I174",
+      "prior_id": null,
+      "reason": "跨辑历史方程相似度和人工科学合理性审核未完成；本批独立复算不等于原创性认证。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A174",
+      "prior_id": null,
+      "reason": "跨辑历史方程相似度和人工科学合理性审核未完成；本批独立复算不等于原创性认证。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O170",
+      "prior_id": null,
+      "reason": "跨辑历史方程相似度和人工科学合理性审核未完成；本批独立复算不等于原创性认证。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P170",
+      "prior_id": null,
+      "reason": "跨辑历史方程相似度和人工科学合理性审核未完成；本批独立复算不等于原创性认证。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -1087,6 +1111,30 @@
       "model_family": "classical-homogeneous-nucleation-spherical-critical-radius-barrier-supersaturation-rate",
       "judgement": "pending_human_comparison",
       "screening": "分别进行了物料/电荷/占位/自由能及独立数值见证复算；尚未取得专家审核批准。"
+    },
+    {
+      "new_id": "UC-ADV12-I174",
+      "model_family": "YSZ-oxygen-concentration-cell-Nernst-internal-ohmic-resistance-oxygen-pumping-Faraday",
+      "judgement": "pending_human_comparison",
+      "screening": "已附解析数值见证、完整题解与模型限定；正式出版批准保留为0。"
+    },
+    {
+      "new_id": "UC-ADV12-A174",
+      "model_family": "ITC-receptor-ligand-binding-depletion-twoheat-Kd-enthalpy-nonlinear-inversion-uncertainty",
+      "judgement": "pending_human_comparison",
+      "screening": "已附解析数值见证、完整题解与模型限定；正式出版批准保留为0。"
+    },
+    {
+      "new_id": "UC-ADV12-O170",
+      "model_family": "cyclization-intermolecular-dimerization-first-second-order-Riccati-closed-form-product-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "已附解析数值见证、完整题解与模型限定；正式出版批准保留为0。"
+    },
+    {
+      "new_id": "UC-ADV12-P170",
+      "model_family": "nonadiabatic-Marcus-electron-transfer-normal-inverted-region-parabolic-activation-detailed-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "已附解析数值见证、完整题解与模型限定；正式出版批准保留为0。"
     }
   ]
 }
