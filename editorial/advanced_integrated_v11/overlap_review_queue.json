@@ -2,7 +2,7 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 32,
+  "current_draft_count": 36,
   "expert_approved": 0,
   "preliminary_flags": 4,
   "pairs": [
@@ -223,6 +223,30 @@
       "model_family": "van-der-Waals-supercritical-root-stability-Joule-Thomson-implicit-derivative",
       "judgement": "pending_human_comparison",
       "screening": "独立数值witness已复算；全库跨辑模型同构性、化学实验合理性和原创性尚待人类专家逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV11-I134",
+      "model_family": "spinel-cation-inversion-neutron-scattering-ferrimagnetism-density",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器数值复算已编码；跨辑数学模型新颖性与化学合理性尚需专家逐式核查。"
+    },
+    {
+      "new_id": "UC-ADV11-A134",
+      "model_family": "isotope-dilution-mass-spectrometry-Kr-isobaric-Poisson-uncertainty",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器数值复算已编码；跨辑数学模型新颖性与化学合理性尚需专家逐式核查。"
+    },
+    {
+      "new_id": "UC-ADV11-O131",
+      "model_family": "Flory-Stockmayer-A3-B2-step-growth-gelation-cluster-branching",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器数值复算已编码；跨辑数学模型新颖性与化学合理性尚需专家逐式核查。"
+    },
+    {
+      "new_id": "UC-ADV11-P131",
+      "model_family": "Margules-binary-VLE-azeotrope-Gibbs-Duhem-stability",
+      "judgement": "pending_human_comparison",
+      "screening": "独立机器数值复算已编码；跨辑数学模型新颖性与化学合理性尚需专家逐式核查。"
     }
   ]
 }
