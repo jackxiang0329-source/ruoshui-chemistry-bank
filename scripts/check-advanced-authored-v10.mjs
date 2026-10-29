@@ -10,6 +10,11 @@ const F=96485.33212;
 const T=280,J=2400,q=Math.exp(-J/(R*T)),Z=1+3*q,p=3*q/Z;
 const w={
 
+"UC-ADV10-I117":()=>{const f=[.2,.65,.15],lam=[590,615,700],phi=.72,t=.0015,hc=1239.841984;const total=1/t,kr=phi*total,nr=total-kr,aa=f.map(x=>kr*x),e=f.reduce((s,x,i)=>s+x*hc/lam[i],0);assert.ok(Math.abs(aa.reduce((a,b)=>a+b,0)-kr)<1e-12);return [kr,nr,...aa,1000/kr,e,phi*e,phi*e/(hc/395),phi*1e18,phi*1e18*e*1.602176634e-19];},
+"UC-ADV10-A117":()=>{const r=.801761423674483,q=1.508813572701714,cos=Math.sqrt(3)/2,ex=(1-.5/r)/cos,es=Math.exp(-.5),cx=q*10*(1-es)/(3*(1-ex)),s30=.5*(1-ex)/(1-ex*cos),sopt=(1-ex)/Math.sqrt(1-ex*ex);assert.ok(ex>0&&ex<1&&Math.abs(3*cx*(1-ex)/(10*(1-es))-q)<1e-12);return [ex,-1/Math.log(ex),cx,Math.acos(ex)*180/Math.PI,s30/sopt,q*10/3,(1-ex)/(1-es),.5/(1-ex*cos),3*cx*(1-ex)/(10*(1-es))];},
+"UC-ADV10-O114":()=>{const m={A:71.03711,G:57.02146,S:87.03203,V:99.06841,K:128.09496},H=1.007276466621,water=18.010564684,obsB=[72.04439,129.06585,216.09788,315.16629],obsY=[147.11280,246.18121,333.21324,390.23470];const find=x=>Object.entries(m).find(([k,v])=>Math.abs(v-x)<.000015)?.[0];const N=[find(obsB[0]-H),...obsB.slice(1).map((x,i)=>find(x-obsB[i]))],C=[find(obsY[0]-water-H),...obsY.slice(1).map((x,i)=>find(x-obsY[i]))];assert.equal(N.join("")+C[0],"AGSVK");assert.equal(C.join(""),"KVSG");let sb=0,sy=0;const b=[],y=[];for(const a of N.join("")+C[0]){sb+=m[a];b.push(sb+H)}for(const a of C.join("")+"A"){sy+=m[a];y.push(sy+water+H)}for(let i=0;i<4;i++){assert.ok(Math.abs(b[i]-obsB[i])<.0000051&&Math.abs(y[i]-obsY[i])<.0000051);assert.ok(Math.abs(b[i]+y[3-i]-(sb+water+2*H))<1e-9)}return [...b.slice(0,4),...y.slice(0,4),sb+water,(sb+water+2*H)/2,1.0033548378/2,b[2]+y[1]];},
+"UC-ADV10-P114":()=>{const rt=.008314462618*300,mf=4.2,mr=-1.8,d=(mf-mr)/2,v=(mf+mr)*rt,s=Math.sqrt(v),g=(w,m)=>Math.exp(-(w-m)**2/(2*v))/Math.sqrt(2*Math.PI*v),ratio=g(0,mf)/g(0,-mr);assert.ok(Math.abs(Math.log(g(6,mf)/g(-6,mr))-(6-d)/rt)<1e-12);return [d,mf-d,mr+d,v,s,mf-v/(2*rt),mr-v/(2*rt),d,ratio,(mf-d)/rt,mf-d];},
+
 "UC-ADV10-I116":()=>{
  const CM=.012,CL=.055,b1=75,b2=900;
  const species=l=>{const D=1+b1*l+b2*l*l;return [CM/D,CM*b1*l/D,CM*b2*l*l/D];};

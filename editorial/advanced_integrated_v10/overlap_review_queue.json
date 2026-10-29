@@ -2,7 +2,7 @@
   "schema_version": 1,
   "series": "advanced_integrated_v10",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 64,
+  "current_draft_count": 68,
   "preliminary_flags": 33,
   "pairs": [
     {
@@ -204,7 +204,7 @@
       "judgement": "pending_human_comparison"
     }
   ],
-  "notes": "All 52 draft records await human chemistry, copyright and cross-series governing-equation review; 29 preliminary flags (including high-priority I113/I77 and O110/O76); 0 expert approvals.",
+  "notes": "第十辑68条待审记录；33组初步相似性标记，非确认重复；新增4题另入人工模型比较队列；专家批准0。",
   "expert_approved": 0,
   "new_items_requiring_cross_series_comparison": [
     {
@@ -518,6 +518,30 @@
       "model_family": "van-der-Waals-criticality-Joule-Thomson-inversion-implicit-EOS",
       "judgement": "pending_human_comparison",
       "screening": "Automated numeric witness added; chemical validity and governing-equation-level cross-series novelty still require human review."
+    },
+    {
+      "new_id": "UC-ADV10-I117",
+      "model_family": "Eu3-radiative-branching-quantum-yield-pump-energy-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "Automated numeric witness configured; chemical validity and equation-level novelty await expert review."
+    },
+    {
+      "new_id": "UC-ADV10-A117",
+      "model_family": "qNMR-spoiled-steady-state-flip-angle-T1-concentration-joint-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "Automated numeric witness configured; chemical validity and equation-level novelty await expert review."
+    },
+    {
+      "new_id": "UC-ADV10-O114",
+      "model_family": "peptide-b-y-MS2-complementarity-sequence-mass-isotope-charge",
+      "judgement": "pending_human_comparison",
+      "screening": "Automated numeric witness configured; chemical validity and equation-level novelty await expert review."
+    },
+    {
+      "new_id": "UC-ADV10-P114",
+      "model_family": "Crooks-Gaussian-work-Jarzynski-bidirectional-free-energy",
+      "judgement": "pending_human_comparison",
+      "screening": "Automated numeric witness configured; chemical validity and equation-level novelty await expert review."
     }
   ]
 }
