@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第10辑 (64题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第10辑 (68题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -378,6 +378,28 @@ Q2分数 = 0.142857143 fraction；Q3分数 = 0.571428571 fraction；Q4分数 = 0
 只含M、ML、ML2，配体不质子化、Cl-惰性；与先前络合溶解题在化学背景相邻，但未知游离配体的严格总量反演仍需跨辑人工核验。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-I117 · Eu³⁺发光配合物的跃迁分支、辐射寿命与泵浦能量闭合}
+\noindent\textbf{题目}\par
+某假想Eu³⁺配合物用395 nm光激发，内转换后仅从⁵D₀态发光。响应校正后的590、615、700 nm三条发射带光子数比例为0.2000、0.6500、0.1500，单指数寿命τ=1.500 ms，绝对光子量子产率Φ=0.7200。假定三条带穷尽所有辐射跃迁、无再吸收或多光子发射。取hc=1239.841984 eV·nm，1 eV=1.602176634×10⁻¹⁹ J。求总辐射速率、非辐射速率、各带自发辐射速率、纯辐射寿命、平均发射光子能量、每吸收光子的平均发射能量、光能效率；若每秒吸收10¹⁸个光子，再求发射光子流率及辐射功率。严格检查速率和能量守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 单激发态的总衰减速率k\_tot=1/τ=666.6666667 s⁻¹，并满足k\_tot=k\_r+k\_nr。
+\item 一个吸收光子至多产生一个发射光子，故Φ=k\_r/k\_tot；k\_r=Φ/τ=480.000 s⁻¹。
+\item 非辐射速率k\_nr=(1−Φ)/τ=186.6666667 s⁻¹；其与k\_r之和回到1/τ。
+\item 光子分支概率f\_j=A\_j/k\_r，因此A\_590=96.0、A\_615=312.0、A\_700=72.0 s⁻¹；ΣA\_j=k\_r。
+\item 纯辐射寿命τ\_rad=1/k\_r=2.083333333 ms，大于实测1.500 ms，说明存在非辐射竞争。
+\item 逐条按E\_j=hc/λ\_j计算光子能量，光子数加权平均Σf\_jE\_j=1.99636794036 eV；不能把平均波长代入倒数。
+\item 每吸收光子的平均发射能量为ΦΣf\_jE\_j=1.43738491706 eV，光能效率η=ΦΣf\_jE\_j/(hc/395)=0.457935003。
+\item 发射光子流率为0.72×10¹⁸=7.20×10¹⁷ s⁻¹，辐射功率为10¹⁸×1.43738491706 eV×1.602176634×10⁻¹⁹ J/eV=0.2302944528 W。
+\item 检查Σf\_j=1、ΣA\_j=480、k\_r+k\_nr=666.6667、0<η<Φ<1；剩余能量经非辐射热化与斯托克斯损失释放，能量分支f\_jE\_j/Σf\_kE\_k不同于光子数分支。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+总辐射速率 = 480 s\textasciicircum{}-1；非辐射速率 = 186.666667 s\textasciicircum{}-1；590nm速率 = 96 s\textasciicircum{}-1；615nm速率 = 312 s\textasciicircum{}-1；700nm速率 = 72 s\textasciicircum{}-1；纯辐射寿命 = 2.08333333 ms；平均发射光子能量 = 1.99636794 eV；每吸收光子发射能量 = 1.43738492 eV；能量效率 = 0.457935003 fraction；发射光子流率 = 7.2e+17 photons/s；辐射功率 = 0.230294453 W\par
+\noindent\textbf{模型前提：}
+单一发光态、三条带穷尽发光、无再吸收；与先前激发态多通道速率模型可能相似，人工跨辑比较待办。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第10辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -721,6 +743,28 @@ H2O放出量 = 4 mmol；CO2放出量 = 6 mmol；Mg(OH)2初始质量分数 = 0.23
 指示剂总浓度 = 8e-05 mol/L；pH5.9解离分数 = 0.240253073 fraction；pH7.1解离分数 = 0.833662469 fraction；pKa = 6.4 pKa；pH5.9 A450 = 0.524678525 absorbance；pH5.9 A520 = 0.291422705 absorbance；pH7.1 A450 = 0.239842015 absorbance；pH7.1 A520 = 0.813622973 absorbance；pH6.4 A450 = 0.4 absorbance；pH6.4 A520 = 0.52 absorbance；pH7.1吸光度比 = 3.39232879 ratio\par
 \noindent\textbf{模型前提：}
 已知两物种光谱和1cm光程，浓度低且pH缓冲；与单波长饱和标准加入反演不同，但需人工比较此前光谱解混核心方程。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-A117 · 定量核磁双翻转角稳态信号反演T₁与绝对浓度}
+\noindent\textbf{题目}\par
+完全破坏横向磁化的¹H定量NMR稳态积分遵循S=K n C sinα(1−E)/(1−E cosα)，E=exp(−TR/T₁)，TR=1.000 s。未知物X有3个等价质子，标准S有2个等价质子、C\_S=5.000 mmol/L、T₁,S=2.000 s。相同接收增益、脉冲均匀且忽略NOE、T₂衰减差；测得未知物S\_X,30°/S\_X,90°=0.801761423674483，以及S\_X,90°/S\_S,90°=1.508813572701714。求未知物E\_X、T₁,X、C\_X、Ernst角、30°与Ernst角信号比、忽略纵向恢复时的表观浓度、未知与标准90°恢复因子之比，并回代两观测信号比。证明物理解唯一。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 给定稳态Bloch信号公式中E=exp(−TR/T₁)且0<E<1，K为相同接收灵敏度。
+\item 未知物的30°/90°信号比r=0.5/(1−E\_X cos30°)，未知物浓度、质子数及恢复分子因子均相消。
+\item 解E\_X=(1−0.5/r)/cos30°=0.434598208507；r(E)在0<E<1严格递增，故物理解唯一。
+\item 由T₁,X=−TR/ln E\_X=1.200000 s，标准E\_S=exp(−1/2)=0.606530659713。
+\item 90°信号比q=3C\_X(1−E\_X)/[2×5.000(1−E\_S)]，得C\_X=q·10(1−E\_S)/[3(1−E\_X)]=3.500000 mmol/L。
+\item Ernst角满足cosα\_E=E\_X，得到α\_E=64.24026998°，是固定TR下稳态单扫描信号的极大值。
+\item 30°信号除以K n C等于0.5(1−E\_X)/(1−E\_X cos30°)=0.4533173453；Ernst角信号除以K n C为(1−E\_X)/√(1−E\_X²)，两者比0.722085940。
+\item 若错把90°积分视为完全恢复，直接取C\_naive=q×(2×5/3)=5.029378576 mmol/L，高估真实浓度。
+\item 未知物与标准的90°恢复因子比(1−E\_X)/(1−E\_S)=1.4369653073；回代r和q一致，E与信号比无量纲，C单位为mmol/L。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+E\_X = 0.434598209 fraction；T1\_X = 1.2 s；C\_X = 3.5 mmol/L；Ernst角 = 64.24027 degree；30度相对最优信号 = 0.72208594 fraction；错误表观浓度 = 5.02937858 mmol/L；恢复因子比 = 1.43696531 ratio；30/90信号比 = 0.801761424 ratio；未知/标准90信号比 = 1.50881357 ratio\par
+\noindent\textbf{模型前提：}
+相同接收常数、完全破坏横向相干、无NOE和脉冲误差；需人工对照旧辑NMR数学模型。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -1067,6 +1111,28 @@ RR催化剂分数 = 0.266304348 fraction；SS催化剂分数 = 0.0489130435 frac
 乙醛醇醛加成碳骨架位置已指定，双标与未标抽样独立，无同位素效应或交换；跨辑同位素与概率模型仍待人工核查。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-O114 · 五肽串联质谱b/y互补碎片的序列反演及二价母离子核验}
+\noindent\textbf{题目}\par
+一条未修饰线性五肽恰含Ala(A)、Gly(G)、Ser(S)、Val(V)、Lys(K)各一个残基，N/C末端游离。残基单同位素质量（Da）：A=71.03711、G=57.02146、S=87.03203、V=99.06841、K=128.09496；H₂O=18.010564684 Da，质子质量1.007276466621 Da。CID单电荷b₁…b₄观测m/z为72.04439、129.06585、216.09788、315.16629；y₁…y₄为147.11280、246.18121、333.21324、390.23470（均四舍五入至五位）。给定b\_n=前n个残基质量和+质子，y\_n=后n个残基质量和+水+质子。求唯一N→C序列、八个精确模型碎片m/z、中性肽质量、[M+2H]²⁺母离子m/z、相邻¹³C同位素峰间距（¹³C−¹²C=1.0033548378 Da）及b₃+y₂互补质量和；验证各残基计数和互补守恒，并说明质量无法排除未列出的同质量异构残基。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 单电荷b\_n为N端残基质量和加一质子，y\_n为C端残基质量和加水与质子，观测值五位舍入有±0.000005误差。
+\item b₁−质子≈71.03711对应A；b₂−b₁≈57.02146对应G。
+\item b₃−b₂≈87.03203对应S；b₄−b₃≈99.06841对应V。
+\item y₁−水−质子≈128.09496对应K；y₂−y₁≈99.06841、y₃−y₂≈87.03203、y₄−y₃≈57.02146，从C端独立核验V、S、G。
+\item 故序列N→C为A–G–S–V–K；前四个b离子精确模型m/z分别为72.044386467、129.065846467、216.097876467、315.166286467。
+\item 后四个y离子模型m/z分别为147.112801151、246.181211151、333.213241151、390.234701151，四舍五入均与输入相符。
+\item 五个残基质量和为442.253970 Da，中性五肽加一分子水得M=460.264534684 Da；二价母离子m/z=(M+2m\_H+)/2=231.139543809。
+\item 相邻单¹³C同位素峰间距为1.0033548378/2=0.5016774189 m/z，不能用单电荷间距。
+\item 互补碎片b₃+y₂=M+2m\_H+=462.279087617 Da；b₁+y₄、b₂+y₃、b₄+y₁均相同，五种残基各一次，满足质量守恒。题设之外的Leu/Ile或同质量修饰需额外证据。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+b1 = 72.0443865 m/z；b2 = 129.065846 m/z；b3 = 216.097876 m/z；b4 = 315.166286 m/z；y1 = 147.112801 m/z；y2 = 246.181211 m/z；y3 = 333.213241 m/z；y4 = 390.234701 m/z；中性质量 = 460.264535 Da；二价母离子 = 231.139544 m/z；13C间距 = 0.501677419 m/z；b3+y2 = 462.279088 Da\par
+\noindent\textbf{模型前提：}
+理想b/y离子，无中性丢失、同质量修饰或未列残基；与旧辑肽合成收率不同，待人工复核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{物理化学}
 \addcontentsline{toc}{subsection}{第10辑 / 物理化学}
 \Needspace{7\baselineskip}
@@ -1410,6 +1476,28 @@ A、B由理想储库固定、质量作用动力学且已无量纲化；仅作局
 临界温度 = 303.784455 K；临界压力 = 7.39404126 MPa；临界摩尔体积 = 0.1281 L/mol；气相摩尔体积 = 2.38729197 L/mol；压缩因子 = 0.957084093 dimensionless；等温斜率 = -0.400246931 MPa/(L/mol)；Joule-Thomson系数 = 7.31728969 K/MPa；该体积反转温度 = 1977.84745 K；低压反转温度 = 2050.54507 K\par
 \noindent\textbf{模型前提：}
 局部Cp已给定，气相支机械稳定，忽略真实气体热容和相平衡修正；不同于前述Margules VLE，但核心热力学方程跨辑仍待人工比较。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV10-P114 · Crooks高斯做功涨落与Jarzynski分子开关自由能反演}
+\noindent\textbf{题目}\par
+单分子构象开关A⇌B在T=300.0 K下按正向A→B和时间反演的反向B→A协议拉伸，外界对体系做功W以kJ/mol计。正向W\_F\textasciitilde{}N(μ\_F,σ²)、反向W\_R\textasciitilde{}N(μ\_R,σ²)，共同方差未知，测得μ\_F=4.200、μ\_R=−1.800 kJ/mol。假定理想平衡起点、充分采样、微观可逆性及Crooks关系p\_F(W)/p\_R(−W)=exp[(W−ΔF)/(RT)]严格成立，R=0.008314462618 kJ mol⁻¹ K⁻¹。求ΔF、正反平均耗散、共同方差与标准差、Jarzynski正反自由能估计、Crooks交点W*、W=0处正反概率密度比、正向平均无量纲熵产生和正向平均功减自由能之差；推导唯一性并核查第二定律、单位与正反统计闭合。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item Crooks比较p\_F(W)与p\_R(−W)，不可误用p\_R(W)；两者是共同方差σ²>0的归一化高斯密度。
+\item 展开对数比为[(W+μ\_R)²−(W−μ\_F)²]/(2σ²)=(μ\_F+μ\_R)[W−(μ\_F−μ\_R)/2]/σ²。
+\item 与(W−ΔF)/(RT)比较系数，得ΔF=(μ\_F−μ\_R)/2=3.000 kJ/mol，σ²=(μ\_F+μ\_R)RT；μ\_F+μ\_R>0确保唯一正方差。
+\item 正向平均耗散μ\_F−ΔF=1.200 kJ/mol；反向平均耗散μ\_R+ΔF=1.200 kJ/mol，均满足第二定律。
+\item RT=2.4943387854 kJ/mol，σ²=5.98641308496 (kJ/mol)²，σ=2.44671475349 kJ/mol。
+\item 高斯指数平均给−RT ln⟨exp(−W\_F/RT)⟩=μ\_F−σ²/(2RT)=3.000 kJ/mol；反向同理为μ\_R−σ²/(2RT)=−3.000 kJ/mol。
+\item Crooks密度交点W*=ΔF=3.000 kJ/mol；W=0处p\_F(0)/p\_R(0)=exp(−3/RT)=0.30037501036。
+\item 正向平均无量纲熵产生⟨Σ⟩=(μ\_F−ΔF)/RT=0.48108942018（以k\_B为单位）；平均功减自由能为1.200 kJ/mol。
+\item 核查正反Jarzynski自由能相反、耗散非负、方差单位(kJ/mol)²、指数无量纲。有限样本指数平均受罕见低功轨迹影响，理想解析结果不保证有限样本无偏。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+自由能差 = 3 kJ/mol；正向耗散 = 1.2 kJ/mol；反向耗散 = 1.2 kJ/mol；做功方差 = 5.98641308 (kJ/mol)\textasciicircum{}2；做功标准差 = 2.44671475 kJ/mol；Jarzynski正向 = 3 kJ/mol；Jarzynski反向 = -3 kJ/mol；交点 = 3 kJ/mol；零功密度比 = 0.30037501 ratio；平均熵产生 = 0.48108942 k\_B units；平均功减自由能 = 1.2 kJ/mol\par
+\noindent\textbf{模型前提：}
+共同高斯方差且严格满足Crooks，理想采样；跨辑模型独立性与实验适用性待专家审核。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
