@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第14辑 (54题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第14辑 (74题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -356,6 +356,236 @@ d111\_A = 3.25625552 angstrom；d200\_A = 2.82 angstrom；two\_theta111\_deg = 2
 题设明确的理想模型；需专家科学性、原创性与出版审查。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I215 · 掺钇CaF₂萤石晶胞中间隙氟电荷补偿}
+\noindent\textbf{题目}\par
+理想CaF₂萤石晶胞原有4个Ca位和8个F位，Y³⁺替代Ca²⁺的比例x=0.1000，每个Y\_Ca引入1个F间隙离子维持电中性，晶格常数a=0.5460 nm不变。Ca、Y、F的摩尔质量分别40.078、88.906、18.998 g/mol。求Ca/Y/正常F/间隙F/总F原子数、晶胞质量、晶体密度、间隙F在全部F中的比例、晶胞形式净电荷和掺杂Y的阳离子摩尔分率。忽略间隙F形成能、离子相关效应；占位数可为统计平均。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知条件、待求量及实验近似：理想CaF₂萤石晶胞原有4个Ca位和8个F位，Y³⁺替代Ca²⁺的比例x=0.1000，每个Y\_Ca引入1个F间隙离子维持电中性，晶格常数a=0.5460 nm不变。Ca、Y、F的摩尔质量分别40.078、88.906、18.998 g/mol。求Ca/Y/正常F/间隙F/总F原子数、晶胞质量、晶体密度、间隙F在全部F中的比例、晶胞形式净电荷和掺杂Y的阳离子摩尔分率。忽略间隙F形成能、离子相关效应；占位数可为统计平均。
+\item 建立严格的计量和平衡表达式：nCa=4(1−x)，nY=4x，nFi=4x，nF=8+4x，ρ=(nCa MCa+nY MY+nF MF)/(NA a³)。
+\item 把体积、质量、摩尔数、电势和无量纲热力学因子统一到公式规定单位。
+\item 第一组计算结果：Ca = 3.600000000000 atoms；Y = 0.4000000000000 atoms；normal\_F = 8.000000000000 atoms；interstitial\_F = 0.4000000000000 atoms。
+\item 第二组计算结果：total\_F = 8.400000000000 atoms；cell\_mass\_g = 5.636307976302e-22 g；density\_g\_cm3 = 3.462715312665 g/cm3。
+\item 其余结果和回代校验：interstitial\_fraction = 0.04761904761905 fraction；net\_charge = 0.000000000000 e；Y\_fraction = 0.1000000000000 fraction。
+\item 分别核对元素/电荷/配位位点/概率或磁性态的归一化守恒；高温或浓度边界不能任意外推。
+\item 通过另一种独立计算途径重算每个数值答案（见QA脚本），检验结果的数值精度与取值域。
+\item 未引入题面未给出的结构重组、离子非理想性和动力学副反应修正。
+\item 本题待人工科学、原创性与版权审查，独立数值复核不代表正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Ca = 3.6 atoms；Y = 0.4 atoms；normal\_F = 8 atoms；interstitial\_F = 0.4 atoms；total\_F = 8.4 atoms；cell\_mass\_g = 5.63630798e-22 g；density\_g\_cm3 = 3.46271531 g/cm3；interstitial\_fraction = 0.0476190476 fraction；net\_charge = 0 e；Y\_fraction = 0.1 fraction\par
+\noindent\textbf{模型前提：}
+只适用于题面规定的理想物种与模型条件；待人工审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I216 · Co³⁺配位络合引起的一电子形式电势漂移}
+\noindent\textbf{题目}\par
+Co³⁺+e⇌Co²⁺的标准电势E°=1.820 V。两种氧化态分别生成ML，形成常数βIII=1.000×10⁶、βII=100.0 M⁻¹，自由L恒为0.1000 M。总Co(III)/Co(II)浓度相等时求两个络合因子、自由Co分率、形式电势、相对标准电势漂移及总氧化/还原浓度比变为3.000时的E和电位增加量。T=298.15K，均为理想浓度、无其它络合物。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知条件、待求量及实验近似：Co³⁺+e⇌Co²⁺的标准电势E°=1.820 V。两种氧化态分别生成ML，形成常数βIII=1.000×10⁶、βII=100.0 M⁻¹，自由L恒为0.1000 M。总Co(III)/Co(II)浓度相等时求两个络合因子、自由Co分率、形式电势、相对标准电势漂移及总氧化/还原浓度比变为3.000时的E和电位增加量。T=298.15K，均为理想浓度、无其它络合物。
+\item 建立严格的计量和平衡表达式：Eformal=E°+(RT/F)ln[(1+βII L)/(1+βIII L)]；E=Eformal+(RT/F)ln(CT,III/CT,II)。
+\item 把体积、质量、摩尔数、电势和无量纲热力学因子统一到公式规定单位。
+\item 第一组计算结果：factor\_III = 100001.0000000 ratio；factor\_II = 11.00000000000 ratio；free\_fraction\_III = 0.000009999900001000 fraction；free\_fraction\_II = 0.09090909090909 fraction。
+\item 第二组计算结果：formal\_E\_V = 1.585811108668 V；shift\_V = -0.2341888913317 V；E\_ratio3\_V = 1.614037291819 V。
+\item 其余结果和回代校验：ratio3\_increment\_V = 0.02822618315045 V；factor\_ratio = 0.0001099989000110 ratio；bound\_fraction\_III = 0.9999900001000 fraction。
+\item 分别核对元素/电荷/配位位点/概率或磁性态的归一化守恒；高温或浓度边界不能任意外推。
+\item 通过另一种独立计算途径重算每个数值答案（见QA脚本），检验结果的数值精度与取值域。
+\item 未引入题面未给出的结构重组、离子非理想性和动力学副反应修正。
+\item 本题待人工科学、原创性与版权审查，独立数值复核不代表正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+factor\_III = 100001 ratio；factor\_II = 11 ratio；free\_fraction\_III = 9.9999e-06 fraction；free\_fraction\_II = 0.0909090909 fraction；formal\_E\_V = 1.58581111 V；shift\_V = -0.234188891 V；E\_ratio3\_V = 1.61403729 V；ratio3\_increment\_V = 0.0282261832 V；factor\_ratio = 0.0001099989 ratio；bound\_fraction\_III = 0.99999 fraction\par
+\noindent\textbf{模型前提：}
+只适用于题面规定的理想物种与模型条件；待人工审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I217 · 三齿/双齿配体竞争结合M²⁺的统计分配}
+\noindent\textbf{题目}\par
+M²⁺只能分别生成MT²⁺和MB²⁺两种1:1配合物，独立三齿T和双齿B自由浓度由外库固定为0.004000 M及0.01000 M。βT=500.0、βB=80.00 M⁻¹，金属总浓度0.005000 M。求金属分配函数、自由M/两络合物浓度、三物种分率、络合物MT/MB比、总结合分率与M守恒。无三元配体络合或金属沉淀，恒温理想溶液。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知条件、待求量及实验近似：M²⁺只能分别生成MT²⁺和MB²⁺两种1:1配合物，独立三齿T和双齿B自由浓度由外库固定为0.004000 M及0.01000 M。βT=500.0、βB=80.00 M⁻¹，金属总浓度0.005000 M。求金属分配函数、自由M/两络合物浓度、三物种分率、络合物MT/MB比、总结合分率与M守恒。无三元配体络合或金属沉淀，恒温理想溶液。
+\item 建立严格的计量和平衡表达式：D=1+βT[T]+βB[B]，Mfree=MTot/D，MT=βT[T]Mfree，MB=βB[B]Mfree。
+\item 把体积、质量、摩尔数、电势和无量纲热力学因子统一到公式规定单位。
+\item 第一组计算结果：D = 3.800000000000 ratio；Mfree = 0.001315789473684 mol/L；MT = 0.002631578947368 mol/L；MB = 0.001052631578947 mol/L。
+\item 第二组计算结果：free\_fraction = 0.2631578947368 fraction；MT\_fraction = 0.5263157894737 fraction；MB\_fraction = 0.2105263157895 fraction。
+\item 其余结果和回代校验：MT\_MB\_ratio = 2.500000000000 ratio；total\_bound\_fraction = 0.7368421052632 fraction；metal\_total = 0.005000000000000 mol/L。
+\item 分别核对元素/电荷/配位位点/概率或磁性态的归一化守恒；高温或浓度边界不能任意外推。
+\item 通过另一种独立计算途径重算每个数值答案（见QA脚本），检验结果的数值精度与取值域。
+\item 未引入题面未给出的结构重组、离子非理想性和动力学副反应修正。
+\item 本题待人工科学、原创性与版权审查，独立数值复核不代表正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+D = 3.8 ratio；Mfree = 0.00131578947 mol/L；MT = 0.00263157895 mol/L；MB = 0.00105263158 mol/L；free\_fraction = 0.263157895 fraction；MT\_fraction = 0.526315789 fraction；MB\_fraction = 0.210526316 fraction；MT\_MB\_ratio = 2.5 ratio；total\_bound\_fraction = 0.736842105 fraction；metal\_total = 0.005 mol/L\par
+\noindent\textbf{模型前提：}
+只适用于题面规定的理想物种与模型条件；待人工审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I218 · Gd³⁺和Ce³⁺缺陷电荷补偿下CeO₂−δ的氧空位}
+\noindent\textbf{题目}\par
+理想Ce₁₋yGdyO₂₋δ中Gd³⁺替代Ce⁴⁺，y=0.1000，其余Ce位的20.00\%为Ce³⁺、80.00\%为Ce⁴⁺；所有氧为O²⁻，没有其它缺陷。求每式量Ce³⁺、Ce⁴⁺、Gd³⁺数量、正电荷、氧缺位δ、实际氧原子数、氧位空位分率δ/2、Ce³⁺占Ce比例、每mol化学式的氧空位mol数以及形式电荷残差。明确20\%针对剩余Ce位而非全部阳离子位。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知条件、待求量及实验近似：理想Ce₁₋yGdyO₂₋δ中Gd³⁺替代Ce⁴⁺，y=0.1000，其余Ce位的20.00\%为Ce³⁺、80.00\%为Ce⁴⁺；所有氧为O²⁻，没有其它缺陷。求每式量Ce³⁺、Ce⁴⁺、Gd³⁺数量、正电荷、氧缺位δ、实际氧原子数、氧位空位分率δ/2、Ce³⁺占Ce比例、每mol化学式的氧空位mol数以及形式电荷残差。明确20\%针对剩余Ce位而非全部阳离子位。
+\item 建立严格的计量和平衡表达式：3nCeIII+4nCeIV+3nGd=2(2−δ)。
+\item 把体积、质量、摩尔数、电势和无量纲热力学因子统一到公式规定单位。
+\item 第一组计算结果：CeIII = 0.1800000000000 ions；CeIV = 0.7200000000000 ions；GdIII = 0.1000000000000 ions；positive\_charge = 3.720000000000 charge。
+\item 第二组计算结果：delta = 0.1400000000000 vacancies；oxygen\_count = 1.860000000000 ions；vacancy\_fraction = 0.07000000000000 fraction。
+\item 其余结果和回代校验：CeIII\_over\_all\_Ce = 0.2000000000000 fraction；vacancy\_mol\_per\_mol = 0.1400000000000 mol/mol；net\_charge = 0.000000000000 charge。
+\item 分别核对元素/电荷/配位位点/概率或磁性态的归一化守恒；高温或浓度边界不能任意外推。
+\item 通过另一种独立计算途径重算每个数值答案（见QA脚本），检验结果的数值精度与取值域。
+\item 未引入题面未给出的结构重组、离子非理想性和动力学副反应修正。
+\item 本题待人工科学、原创性与版权审查，独立数值复核不代表正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+CeIII = 0.18 ions；CeIV = 0.72 ions；GdIII = 0.1 ions；positive\_charge = 3.72 charge；delta = 0.14 vacancies；oxygen\_count = 1.86 ions；vacancy\_fraction = 0.07 fraction；CeIII\_over\_all\_Ce = 0.2 fraction；vacancy\_mol\_per\_mol = 0.14 mol/mol；net\_charge = 0 charge\par
+\noindent\textbf{模型前提：}
+只适用于题面规定的理想物种与模型条件；待人工审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I219 · 自旋1/2双核配合物单重–三重态交换热占据}
+\noindent\textbf{题目}\par
+两个自旋1/2金属中心反铁磁交换，单重态S=0能量0、简并度1；三重态S=1能隙Δ/kB=100.0 K、简并度3。比较T=50.00与200.0 K，求两个配分函数、三重态和单重态分率、每mol双核分子的平均交换能J/mol、200K/50K平均能之比和忽略三重态简并度时50K错误的分率。体系在零外场下服从正则统计，不考虑长程磁有序和Zeeman分裂。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知条件、待求量及实验近似：两个自旋1/2金属中心反铁磁交换，单重态S=0能量0、简并度1；三重态S=1能隙Δ/kB=100.0 K、简并度3。比较T=50.00与200.0 K，求两个配分函数、三重态和单重态分率、每mol双核分子的平均交换能J/mol、200K/50K平均能之比和忽略三重态简并度时50K错误的分率。体系在零外场下服从正则统计，不考虑长程磁有序和Zeeman分裂。
+\item 建立严格的计量和平衡表达式：Z(T)=1+3exp(−100/T)，pT=3exp(−100/T)/Z，U=R100pT。
+\item 把体积、质量、摩尔数、电势和无量纲热力学因子统一到公式规定单位。
+\item 第一组计算结果：Z50 = 1.406005849710 ratio；Z200 = 2.819591979138 ratio；triplet50 = 0.2887654057724 fraction；triplet200 = 0.6453387556076 fraction。
+\item 第二组计算结果：singlet50 = 0.7112345942276 fraction；singlet200 = 0.3546612443924 fraction；U50\_Jmol = 240.0929171666 J/mol。
+\item 其余结果和回代校验：U200\_Jmol = 536.5644959446 J/mol；energy\_ratio = 2.234820178274 ratio；wrong\_triplet50 = 0.1192029220221 fraction。
+\item 分别核对元素/电荷/配位位点/概率或磁性态的归一化守恒；高温或浓度边界不能任意外推。
+\item 通过另一种独立计算途径重算每个数值答案（见QA脚本），检验结果的数值精度与取值域。
+\item 未引入题面未给出的结构重组、离子非理想性和动力学副反应修正。
+\item 本题待人工科学、原创性与版权审查，独立数值复核不代表正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Z50 = 1.40600585 ratio；Z200 = 2.81959198 ratio；triplet50 = 0.288765406 fraction；triplet200 = 0.645338756 fraction；singlet50 = 0.711234594 fraction；singlet200 = 0.354661244 fraction；U50\_Jmol = 240.092917 J/mol；U200\_Jmol = 536.564496 J/mol；energy\_ratio = 2.23482018 ratio；wrong\_triplet50 = 0.119202922 fraction\par
+\noindent\textbf{模型前提：}
+只适用于题面规定的理想物种与模型条件；待人工审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I220 · MnCO₃沉淀的碳酸根物种分配与pH边界}
+\noindent\textbf{题目}\par
+25°C固定自由Mn²⁺=0.001000 M，初始碳酸总量0.01000 M，碳酸物种仅HCO₃⁻与CO₃²⁻，pKa₂=10.330，MnCO₃溶度积Ksp=2.000×10⁻¹¹。求恰开始沉淀时所需自由[CO₃²⁻]、CO₃分率、HCO₃浓度、起始pH；再分别求pH=9.000与11.000、假设不析出时的碳酸根浓度、离子反应商和饱和比。外库控制自由Mn²⁺；此题只检验沉淀起始驱动力，不预测沉淀后的总量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知条件、待求量及实验近似：25°C固定自由Mn²⁺=0.001000 M，初始碳酸总量0.01000 M，碳酸物种仅HCO₃⁻与CO₃²⁻，pKa₂=10.330，MnCO₃溶度积Ksp=2.000×10⁻¹¹。求恰开始沉淀时所需自由[CO₃²⁻]、CO₃分率、HCO₃浓度、起始pH；再分别求pH=9.000与11.000、假设不析出时的碳酸根浓度、离子反应商和饱和比。外库控制自由Mn²⁺；此题只检验沉淀起始驱动力，不预测沉淀后的总量。
+\item 建立严格的计量和平衡表达式：fCO3=1/(1+10\textasciicircum{}(pKa−pH))，Q=[Mn²⁺][CO₃²⁻]，pH*=pKa+log10(f*/(1−f*))。
+\item 把体积、质量、摩尔数、电势和无量纲热力学因子统一到公式规定单位。
+\item 第一组计算结果：threshold\_carbonate\_M = 2.000000000000e-8 mol/L；threshold\_fraction = 0.000002000000000000 fraction；bicarbonate\_onset\_M = 0.009999980000000 mol/L；onset\_pH = 4.631030864254 pH。
+\item 第二组计算结果：carbonate\_pH9 = 0.0004468350937180 mol/L；carbonate\_pH11 = 0.008238615285056 mol/L；Q\_pH9 = 4.468350937180e-7 M2。
+\item 其余结果和回代校验：Q\_pH11 = 0.000008238615285056 M2；saturation\_pH9 = 22341.75468590 ratio；saturation\_pH11 = 411930.7642528 ratio。
+\item 分别核对元素/电荷/配位位点/概率或磁性态的归一化守恒；高温或浓度边界不能任意外推。
+\item 通过另一种独立计算途径重算每个数值答案（见QA脚本），检验结果的数值精度与取值域。
+\item 未引入题面未给出的结构重组、离子非理想性和动力学副反应修正。
+\item 本题待人工科学、原创性与版权审查，独立数值复核不代表正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+threshold\_carbonate\_M = 2e-08 mol/L；threshold\_fraction = 2e-06 fraction；bicarbonate\_onset\_M = 0.00999998 mol/L；onset\_pH = 4.63103086 pH；carbonate\_pH9 = 0.000446835094 mol/L；carbonate\_pH11 = 0.00823861529 mol/L；Q\_pH9 = 4.46835094e-07 M2；Q\_pH11 = 8.23861529e-06 M2；saturation\_pH9 = 22341.7547 ratio；saturation\_pH11 = 411930.764 ratio\par
+\noindent\textbf{模型前提：}
+只适用于题面规定的理想物种与模型条件；待人工审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I221 · Li₁−xFePO₄脱锂的铁氧化态与电子转移库存}
+\noindent\textbf{题目}\par
+某Li₁₋xFePO₄正极在x=0.3500及x=0.8000两状态之间理想脱锂，Li为+1价、PO₄整体−3价，全部铁仅Fe²⁺/Fe³⁺，无氧空位或电子/空穴副载流子。求两状态平均Fe氧化态、Fe³⁺和Fe²⁺分率、每mol原始式量脱锂的物质的量及转移电量(C/mol)，两状态的电荷比，解释为何x是每式量的一电子容量比例且不是2电子过程。F=96485.33212 C/mol。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知条件、待求量及实验近似：某Li₁₋xFePO₄正极在x=0.3500及x=0.8000两状态之间理想脱锂，Li为+1价、PO₄整体−3价，全部铁仅Fe²⁺/Fe³⁺，无氧空位或电子/空穴副载流子。求两状态平均Fe氧化态、Fe³⁺和Fe²⁺分率、每mol原始式量脱锂的物质的量及转移电量(C/mol)，两状态的电荷比，解释为何x是每式量的一电子容量比例且不是2电子过程。F=96485.33212 C/mol。
+\item 建立严格的计量和平衡表达式：(1−x)+Fe\_valence−3=0，Fe\_valence=2+x，n(e−)/formula=x。
+\item 把体积、质量、摩尔数、电势和无量纲热力学因子统一到公式规定单位。
+\item 第一组计算结果：valence\_x35 = 2.350000000000 oxidation；valence\_x80 = 2.800000000000 oxidation；FeIII\_fraction\_x35 = 0.3500000000000 fraction；FeIII\_fraction\_x80 = 0.8000000000000 fraction。
+\item 第二组计算结果：FeII\_fraction\_x35 = 0.6500000000000 fraction；FeII\_fraction\_x80 = 0.2000000000000 fraction；Li\_removed\_x35 = 0.3500000000000 mol/mol；Li\_removed\_x80 = 0.8000000000000 mol/mol。
+\item 其余结果和回代校验：charge\_x35\_Cmol = 33769.86624200 C/mol；charge\_x80\_Cmol = 77188.26569600 C/mol；charge\_ratio = 2.285714285714 ratio。
+\item 分别核对元素/电荷/配位位点/概率或磁性态的归一化守恒；高温或浓度边界不能任意外推。
+\item 通过另一种独立计算途径重算每个数值答案（见QA脚本），检验结果的数值精度与取值域。
+\item 未引入题面未给出的结构重组、离子非理想性和动力学副反应修正。
+\item 本题待人工科学、原创性与版权审查，独立数值复核不代表正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+valence\_x35 = 2.35 oxidation；valence\_x80 = 2.8 oxidation；FeIII\_fraction\_x35 = 0.35 fraction；FeIII\_fraction\_x80 = 0.8 fraction；FeII\_fraction\_x35 = 0.65 fraction；FeII\_fraction\_x80 = 0.2 fraction；Li\_removed\_x35 = 0.35 mol/mol；Li\_removed\_x80 = 0.8 mol/mol；charge\_x35\_Cmol = 33769.8662 C/mol；charge\_x80\_Cmol = 77188.2657 C/mol；charge\_ratio = 2.28571429 ratio\par
+\noindent\textbf{模型前提：}
+只适用于题面规定的理想物种与模型条件；待人工审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I222 · NO与Cl₂生成NOCl的三物种理想气体平衡求根}
+\noindent\textbf{题目}\par
+恒温1.000 L理想反应容器，2NO(g)+Cl₂(g)⇌2NOCl(g)，初始NO=0.01000 mol、Cl₂=0.008000 mol、NOCl=0，浓度平衡常数Kc=100.0 L/mol（以标准浓度归一）。定义反应进度ξ mol，物理解区间0<ξ<0.005。计算唯一物理根、NO、Cl₂、NOCl平衡浓度、NO转化率、NOCl生成摩尔数、Cl₂消耗量、回代Kc以及NO原子与Cl原子的总库存。注意Cl₂含两个Cl原子。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知条件、待求量及实验近似：恒温1.000 L理想反应容器，2NO(g)+Cl₂(g)⇌2NOCl(g)，初始NO=0.01000 mol、Cl₂=0.008000 mol、NOCl=0，浓度平衡常数Kc=100.0 L/mol（以标准浓度归一）。定义反应进度ξ mol，物理解区间0<ξ<0.005。计算唯一物理根、NO、Cl₂、NOCl平衡浓度、NO转化率、NOCl生成摩尔数、Cl₂消耗量、回代Kc以及NO原子与Cl原子的总库存。注意Cl₂含两个Cl原子。
+\item 建立严格的计量和平衡表达式：Kc=(2ξ)\textasciicircum{}2/[(0.01000−2ξ)\textasciicircum{}2(0.008000−ξ)]，用二分法取唯一物理根。
+\item 把体积、质量、摩尔数、电势和无量纲热力学因子统一到公式规定单位。
+\item 第一组计算结果：extent = 0.002165295635055 mol；NO\_M = 0.005669408729890 mol/L；Cl2\_M = 0.005834704364945 mol/L；NOCl\_M = 0.004330591270110 mol/L。
+\item 第二组计算结果：NO\_conversion = 0.4330591270110 fraction；NOCl\_moles = 0.004330591270110 mol；Cl2\_consumption = 0.002165295635055 mol。
+\item 其余结果和回代校验：Kc\_recovered = 100.0000000000 L/mol；NO\_atom\_moles = 0.01000000000000 mol；Cl\_atom\_moles = 0.01600000000000 mol。
+\item 分别核对元素/电荷/配位位点/概率或磁性态的归一化守恒；高温或浓度边界不能任意外推。
+\item 通过另一种独立计算途径重算每个数值答案（见QA脚本），检验结果的数值精度与取值域。
+\item 未引入题面未给出的结构重组、离子非理想性和动力学副反应修正。
+\item 本题待人工科学、原创性与版权审查，独立数值复核不代表正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+extent = 0.00216529564 mol；NO\_M = 0.00566940873 mol/L；Cl2\_M = 0.00583470436 mol/L；NOCl\_M = 0.00433059127 mol/L；NO\_conversion = 0.433059127 fraction；NOCl\_moles = 0.00433059127 mol；Cl2\_consumption = 0.00216529564 mol；Kc\_recovered = 100 L/mol；NO\_atom\_moles = 0.01 mol；Cl\_atom\_moles = 0.016 mol\par
+\noindent\textbf{模型前提：}
+只适用于题面规定的理想物种与模型条件；待人工审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I223 · 金属A²⁺/B²⁺对单齿L的竞争配位分流}
+\noindent\textbf{题目}\par
+在理想水溶液中金属A²⁺、B²⁺的总浓度分别0.004000和0.006000 M；自由单齿L浓度由外储库维持为0.01000 M。只有A+L⇌AL、B+L⇌BL两种1:1络合，形成常数分别KA=2000、KB=100.0 M⁻¹，无混合物种。求两金属络合分率、两络合物和两自由金属浓度、络合物A/B比、自由金属B/A比、总被结合L浓度及全部络合物中A所占分率。必须区别总金属浓度与自由金属浓度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知条件、待求量及实验近似：在理想水溶液中金属A²⁺、B²⁺的总浓度分别0.004000和0.006000 M；自由单齿L浓度由外储库维持为0.01000 M。只有A+L⇌AL、B+L⇌BL两种1:1络合，形成常数分别KA=2000、KB=100.0 M⁻¹，无混合物种。求两金属络合分率、两络合物和两自由金属浓度、络合物A/B比、自由金属B/A比、总被结合L浓度及全部络合物中A所占分率。必须区别总金属浓度与自由金属浓度。
+\item 建立严格的计量和平衡表达式：f\_i=K\_i[L]/(1+K\_i[L])，[MiL]=CT,i f\_i，[Mi]=CT,i(1−f\_i)。
+\item 把体积、质量、摩尔数、电势和无量纲热力学因子统一到公式规定单位。
+\item 第一组计算结果：frac\_A = 0.9523809523810 fraction；frac\_B = 0.5000000000000 fraction；AL\_M = 0.003809523809524 mol/L；BL\_M = 0.003000000000000 mol/L。
+\item 第二组计算结果：free\_A\_M = 0.0001904761904762 mol/L；free\_B\_M = 0.003000000000000 mol/L；complex\_A\_B = 1.269841269841 ratio。
+\item 其余结果和回代校验：free\_B\_A = 15.75000000000 ratio；total\_bound\_L\_M = 0.006809523809524 mol/L；A\_fraction\_of\_complexes = 0.5594405594406 fraction。
+\item 分别核对元素/电荷/配位位点/概率或磁性态的归一化守恒；高温或浓度边界不能任意外推。
+\item 通过另一种独立计算途径重算每个数值答案（见QA脚本），检验结果的数值精度与取值域。
+\item 未引入题面未给出的结构重组、离子非理想性和动力学副反应修正。
+\item 本题待人工科学、原创性与版权审查，独立数值复核不代表正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+frac\_A = 0.952380952 fraction；frac\_B = 0.5 fraction；AL\_M = 0.00380952381 mol/L；BL\_M = 0.003 mol/L；free\_A\_M = 0.00019047619 mol/L；free\_B\_M = 0.003 mol/L；complex\_A\_B = 1.26984127 ratio；free\_B\_A = 15.75 ratio；total\_bound\_L\_M = 0.00680952381 mol/L；A\_fraction\_of\_complexes = 0.559440559 fraction\par
+\noindent\textbf{模型前提：}
+只适用于题面规定的理想物种与模型条件；待人工审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-I224 · Er³⁺稀土热耦合荧光双谱线强度比与温度反演}
+\noindent\textbf{题目}\par
+稀土Er³⁺两个热耦合能级差ΔE/kB=900.0 K，实验标定发光强度比R(T)=Ihot/Icold=C exp(−900/T)，C=2.500包含简并度与辐射概率。T=300.0 K和450.0 K，求两R、R450/R300、相对灵敏度Sr=900/T²、绝对灵敏度dR/dT=R Sr、由R450反算T、450K的纯Boltzmann激发因子及R相对增加量。模型要求温度平衡及无其他猝灭，谱线强度比不可直接等同布居比。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 已知条件、待求量及实验近似：稀土Er³⁺两个热耦合能级差ΔE/kB=900.0 K，实验标定发光强度比R(T)=Ihot/Icold=C exp(−900/T)，C=2.500包含简并度与辐射概率。T=300.0 K和450.0 K，求两R、R450/R300、相对灵敏度Sr=900/T²、绝对灵敏度dR/dT=R Sr、由R450反算T、450K的纯Boltzmann激发因子及R相对增加量。模型要求温度平衡及无其他猝灭，谱线强度比不可直接等同布居比。
+\item 建立严格的计量和平衡表达式：R=Cexp(−θ/T)，T=θ/ln(C/R)，Sr=θ/T²。
+\item 把体积、质量、摩尔数、电势和无量纲热力学因子统一到公式规定单位。
+\item 第一组计算结果：R300 = 0.1244676709197 ratio；R450 = 0.3383382080915 ratio；R450\_R300 = 2.718281828459 ratio；Sr300 = 0.01000000000000 K\textasciicircum{}-1。
+\item 第二组计算结果：Sr450 = 0.004444444444444 K\textasciicircum{}-1；dR\_dT300 = 0.001244676709197 K\textasciicircum{}-1；dR\_dT450 = 0.001503725369296 K\textasciicircum{}-1。
+\item 其余结果和回代校验：T\_recovered = 450.0000000000 K；Boltzmann450 = 0.1353352832366 ratio；relative\_increase = 1.718281828459 fraction。
+\item 分别核对元素/电荷/配位位点/概率或磁性态的归一化守恒；高温或浓度边界不能任意外推。
+\item 通过另一种独立计算途径重算每个数值答案（见QA脚本），检验结果的数值精度与取值域。
+\item 未引入题面未给出的结构重组、离子非理想性和动力学副反应修正。
+\item 本题待人工科学、原创性与版权审查，独立数值复核不代表正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+R300 = 0.124467671 ratio；R450 = 0.338338208 ratio；R450\_R300 = 2.71828183 ratio；Sr300 = 0.01 K\textasciicircum{}-1；Sr450 = 0.00444444444 K\textasciicircum{}-1；dR\_dT300 = 0.00124467671 K\textasciicircum{}-1；dR\_dT450 = 0.00150372537 K\textasciicircum{}-1；T\_recovered = 450 K；Boltzmann450 = 0.135335283 ratio；relative\_increase = 1.71828183 fraction\par
+\noindent\textbf{模型前提：}
+只适用于题面规定的理想物种与模型条件；待人工审校。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第14辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -676,6 +906,236 @@ PFG-NMR的两个非交换组分具有D1=1.000×10−9、D2=2.000×10−10 m²/s�
 slow\_initial\_fraction = 0.3 fraction；fast\_initial\_counts = 700 counts；slow\_initial\_counts = 300 counts；S\_b1 = 503.134835 counts；S\_b2 = 295.830712 counts；fast\_signal\_fraction\_b1 = 0.511822261 fraction；Dapp\_m2\_s = 6.86897084e-10 m2/s；slow\_signal\_fraction\_b2 = 0.679767197 fraction\par
 \noindent\textbf{模型前提：}
 题设明确的理想模型；需专家科学性、原创性与出版审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A215 · H₂O₂碘量法与硫代硫酸钠滴定的氧化剂摩尔数}
+\noindent\textbf{题目}\par
+酸性环境下H₂O₂+2I⁻+2H⁺→I₂+2H₂O，生成的I₂用2S₂O₃²⁻→S₄O₆²⁻+2I⁻的当量关系滴定。取原样10.00 mL，消耗cT=0.01250 mol/L硫代硫酸钠18.00 mL，另测空白0.2000 mL。假定反应完全且不存在其它氧化剂、滴定剂浓度准确，求扣空白体积、净硫代硫酸根摩尔数、H₂O₂摩尔数和原样浓度、H₂O₂质量浓度(g/L)，M=34.0147 g/mol；计算若不扣空白的系统偏差、一个50.00 mL原样中H₂O₂总质量及以1.000 L表示的氧化能力电子摩尔数。不得把I₂与S₂O₃的2:1配比漏掉。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整分析化学实验参数：酸性环境下H₂O₂+2I⁻+2H⁺→I₂+2H₂O，生成的I₂用2S₂O₃²⁻→S₄O₆²⁻+2I⁻的当量关系滴定。取原样10.00 mL，消耗cT=0.01250 mol/L硫代硫酸钠18.00 mL，另测空白0.2000 mL。假定反应完全且不存在其它氧化剂、滴定剂浓度准确，求扣空白体积、净硫代硫酸根摩尔数、H₂O₂摩尔数和原样浓度、H₂O₂质量浓度(g/L)，M=34.0147 g/mol；计算若不扣空白的系统偏差、一个50.00 mL原样中H₂O₂总质量及以1.000 L表示的氧化能力电子摩尔数。不得把I₂与S₂O₃的2:1配比漏掉。
+\item 建立量值反演方程：n(H2O2)=n(S2O3²⁻)/2，cH2O2=cT(Vt−Vblank)/(2Vsample)，每mol H2O2对应2mol电子。
+\item 明确空白校正、标准态与体积转换，以真实实验观测的条件未知量为基础建立线性或非线性反演。
+\item 第一组定量结果：net\_titrant\_volume\_mL = 17.800000000000 mL；thiosulfate\_moles = 0.00022250000000000 mol；peroxide\_moles = 0.00011125000000000 mol；peroxide\_concentration\_M = 0.011125000000000 mol/L。
+\item 第二组定量结果：peroxide\_mass\_g\_L = 0.37841353750000 g/L；naive\_concentration\_no\_blank\_M = 0.011250000000000 mol/L；naive\_relative\_bias = 0.011235955056180 fraction。
+\item 其余结果与反演回代：peroxide\_mass\_in\_50mL\_g = 0.018920676875000 g；electron\_equiv\_mol\_per\_L = 0.022250000000000 mol\_e/L；iodine\_moles = 0.00011125000000000 mol。
+\item 将最终浓度、吸光度或当量量返回原测量方程，检查两端相符及物料与电荷平衡。
+\item 解释本题仪器校正假设的使用范围，不用理想数学条件代替真实基线噪声和基体效应。
+\item 数值证据已由不同写法的独立计算函数逐项复核，不能将它理解为正式科研验证。
+\item 尚需专家审校题目化学合理性、模型独立性和版权。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+net\_titrant\_volume\_mL = 17.8 mL；thiosulfate\_moles = 0.0002225 mol；peroxide\_moles = 0.00011125 mol；peroxide\_concentration\_M = 0.011125 mol/L；peroxide\_mass\_g\_L = 0.378413538 g/L；naive\_concentration\_no\_blank\_M = 0.01125 mol/L；naive\_relative\_bias = 0.0112359551 fraction；peroxide\_mass\_in\_50mL\_g = 0.0189206769 g；electron\_equiv\_mol\_per\_L = 0.02225 mol\_e/L；iodine\_moles = 0.00011125 mol\par
+\noindent\textbf{模型前提：}
+仅适用完整题设与理想仪器响应；待专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A216 · 气相色谱Kováts保留指数校准的死时间修正}
+\noindent\textbf{题目}\par
+等温GC同一固定相上正辛烷C8、正壬烷C9和未知目标峰A的保留时间tR分别为4.200、5.900、5.000 min；死时间t0=1.200 min。假定未知峰位于两n-alkane之间，按Kováts指数I=800+100[ln(tR,A−t0)−ln(tR,8−t0)]/[ln(tR,9−t0)−ln(tR,8−t0)]。求三组调整保留时间、未知保留因子kA=(tR,A−t0)/t0、两烷保留因子、计算得到的指数、指数距800和900的差、未知峰对辛烷和壬烷的对数位移分数、未知峰在两烷对数保留位置的相对分数。说明不可直接用未扣死时间的线性tR插值。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整分析化学实验参数：等温GC同一固定相上正辛烷C8、正壬烷C9和未知目标峰A的保留时间tR分别为4.200、5.900、5.000 min；死时间t0=1.200 min。假定未知峰位于两n-alkane之间，按Kováts指数I=800+100[ln(tR,A−t0)−ln(tR,8−t0)]/[ln(tR,9−t0)−ln(tR,8−t0)]。求三组调整保留时间、未知保留因子kA=(tR,A−t0)/t0、两烷保留因子、计算得到的指数、指数距800和900的差、未知峰对辛烷和壬烷的对数位移分数、未知峰在两烷对数保留位置的相对分数。说明不可直接用未扣死时间的线性tR插值。
+\item 建立量值反演方程：t'R=tR−t0，α=[ln(t'A/t'8)]/[ln(t'9/t'8)]，I=800+100α。
+\item 明确空白校正、标准态与体积转换，以真实实验观测的条件未知量为基础建立线性或非线性反演。
+\item 第一组定量结果：adjusted\_t8\_min = 3.0000000000000 min；adjusted\_t9\_min = 4.7000000000000 min；adjusted\_tA\_min = 3.8000000000000 min；capacity\_factor\_A = 3.1666666666667 ratio。
+\item 第二组定量结果：capacity\_factor\_C8 = 2.5000000000000 ratio；capacity\_factor\_C9 = 3.9166666666667 ratio；Kovats\_index = 852.65367239134 index。
+\item 其余结果与反演回代：index\_above800 = 52.653672391342 index；index\_below900 = 47.346327608658 index；log\_retention\_fraction = 0.52653672391342 fraction。
+\item 将最终浓度、吸光度或当量量返回原测量方程，检查两端相符及物料与电荷平衡。
+\item 解释本题仪器校正假设的使用范围，不用理想数学条件代替真实基线噪声和基体效应。
+\item 数值证据已由不同写法的独立计算函数逐项复核，不能将它理解为正式科研验证。
+\item 尚需专家审校题目化学合理性、模型独立性和版权。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+adjusted\_t8\_min = 3 min；adjusted\_t9\_min = 4.7 min；adjusted\_tA\_min = 3.8 min；capacity\_factor\_A = 3.16666667 ratio；capacity\_factor\_C8 = 2.5 ratio；capacity\_factor\_C9 = 3.91666667 ratio；Kovats\_index = 852.653672 index；index\_above800 = 52.6536724 index；index\_below900 = 47.3463276 index；log\_retention\_fraction = 0.526536724 fraction\par
+\noindent\textbf{模型前提：}
+仅适用完整题设与理想仪器响应；待专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A217 · UV–Vis等体积标准加入法对未知磷酸根浓度的反演}
+\noindent\textbf{题目}\par
+用衍生化UV–Vis测磷酸根，信号A=kCfinal，k=1000.0 L/mol，空白已扣除。在两个相同的25.00 mL容量瓶中各加入10.00 mL未知水样，第一瓶不加标，第二瓶加0.5000 mL浓度0.001000 M磷酸根标准液，再均定容到25.00 mL。实测A0=0.04000、A1=0.06000，无反应抑制及光学背景。求两瓶最终磷酸根浓度、样品原浓度、加入标样在终体积中的浓度、样品稀释分数、标准加入吸光度增量、两吸光度之比、若误将第二瓶按25.50 mL计算得到的表观浓度差以及样品10 mL的磷酸根摩尔数。模型要求终体积固定。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整分析化学实验参数：用衍生化UV–Vis测磷酸根，信号A=kCfinal，k=1000.0 L/mol，空白已扣除。在两个相同的25.00 mL容量瓶中各加入10.00 mL未知水样，第一瓶不加标，第二瓶加0.5000 mL浓度0.001000 M磷酸根标准液，再均定容到25.00 mL。实测A0=0.04000、A1=0.06000，无反应抑制及光学背景。求两瓶最终磷酸根浓度、样品原浓度、加入标样在终体积中的浓度、样品稀释分数、标准加入吸光度增量、两吸光度之比、若误将第二瓶按25.50 mL计算得到的表观浓度差以及样品10 mL的磷酸根摩尔数。模型要求终体积固定。
+\item 建立量值反演方程：C0,final=Csample×10/25；C1,final=C0,final+Cstandard×0.5/25；A=kC。
+\item 明确空白校正、标准态与体积转换，以真实实验观测的条件未知量为基础建立线性或非线性反演。
+\item 第一组定量结果：final\_concentration\_unspiked\_M = 0.000040000000000000 mol/L；final\_concentration\_spiked\_M = 0.000060000000000000 mol/L；original\_sample\_concentration\_M = 0.00010000000000000 mol/L；spiked\_increment\_M = 0.000020000000000000 mol/L。
+\item 第二组定量结果：sample\_dilution\_factor = 0.40000000000000 fraction；delta\_absorbance = 0.020000000000000 AU；absorbance\_ratio = 1.5000000000000 ratio。
+\item 其余结果与反演回代：incorrect\_final\_volume\_spike\_increment\_M = 0.000019607843137255 mol/L；sample\_aliquot\_phosphate\_moles = 0.0000010000000000000 mol；reconstructed\_A1 = 0.060000000000000 AU。
+\item 将最终浓度、吸光度或当量量返回原测量方程，检查两端相符及物料与电荷平衡。
+\item 解释本题仪器校正假设的使用范围，不用理想数学条件代替真实基线噪声和基体效应。
+\item 数值证据已由不同写法的独立计算函数逐项复核，不能将它理解为正式科研验证。
+\item 尚需专家审校题目化学合理性、模型独立性和版权。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+final\_concentration\_unspiked\_M = 4e-05 mol/L；final\_concentration\_spiked\_M = 6e-05 mol/L；original\_sample\_concentration\_M = 0.0001 mol/L；spiked\_increment\_M = 2e-05 mol/L；sample\_dilution\_factor = 0.4 fraction；delta\_absorbance = 0.02 AU；absorbance\_ratio = 1.5 ratio；incorrect\_final\_volume\_spike\_increment\_M = 1.96078431e-05 mol/L；sample\_aliquot\_phosphate\_moles = 1e-06 mol；reconstructed\_A1 = 0.06 AU\par
+\noindent\textbf{模型前提：}
+仅适用完整题设与理想仪器响应；待专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A218 · 双组分FTIR红外吸光度线性方程反演化学组分}
+\noindent\textbf{题目}\par
+1.000 cm光程FTIR在两个特征波数对组分X、Y的摩尔吸光系数分别为(εX1,εY1)=(1000,300) L/(mol cm)，(εX2,εY2)=(200,800) L/(mol cm)。实测扣基线A1=0.1150、A2=0.09000；仅X、Y贡献，样本均匀无散射。联立Beer–Lambert两波数方程求X与Y浓度、各组分在两个波数的吸光度贡献、总浓度、X摩尔分率、浓度比、吸光度回代残差和系数矩阵行列式。说明选择谱带必须避免矩阵近奇异，否则实验误差会放大。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整分析化学实验参数：1.000 cm光程FTIR在两个特征波数对组分X、Y的摩尔吸光系数分别为(εX1,εY1)=(1000,300) L/(mol cm)，(εX2,εY2)=(200,800) L/(mol cm)。实测扣基线A1=0.1150、A2=0.09000；仅X、Y贡献，样本均匀无散射。联立Beer–Lambert两波数方程求X与Y浓度、各组分在两个波数的吸光度贡献、总浓度、X摩尔分率、浓度比、吸光度回代残差和系数矩阵行列式。说明选择谱带必须避免矩阵近奇异，否则实验误差会放大。
+\item 建立量值反演方程：1000x+300y=0.1150，200x+800y=0.09000；行列式D=1000·800−300·200。
+\item 明确空白校正、标准态与体积转换，以真实实验观测的条件未知量为基础建立线性或非线性反演。
+\item 第一组定量结果：concentration\_X\_M = 0.000087837837837838 mol/L；concentration\_Y\_M = 0.000090540540540541 mol/L；X\_absorbance\_band1 = 0.087837837837838 AU；Y\_absorbance\_band1 = 0.027162162162162 AU。
+\item 第二组定量结果：X\_absorbance\_band2 = 0.017567567567568 AU；Y\_absorbance\_band2 = 0.072432432432432 AU；total\_concentration\_M = 0.00017837837837838 mol/L。
+\item 其余结果与反演回代：X\_mole\_fraction = 0.49242424242424 fraction；X\_over\_Y\_ratio = 0.97014925373134 ratio；determinant = 740000.00000000 coefficient2。
+\item 将最终浓度、吸光度或当量量返回原测量方程，检查两端相符及物料与电荷平衡。
+\item 解释本题仪器校正假设的使用范围，不用理想数学条件代替真实基线噪声和基体效应。
+\item 数值证据已由不同写法的独立计算函数逐项复核，不能将它理解为正式科研验证。
+\item 尚需专家审校题目化学合理性、模型独立性和版权。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+concentration\_X\_M = 8.78378378e-05 mol/L；concentration\_Y\_M = 9.05405405e-05 mol/L；X\_absorbance\_band1 = 0.0878378378 AU；Y\_absorbance\_band1 = 0.0271621622 AU；X\_absorbance\_band2 = 0.0175675676 AU；Y\_absorbance\_band2 = 0.0724324324 AU；total\_concentration\_M = 0.000178378378 mol/L；X\_mole\_fraction = 0.492424242 fraction；X\_over\_Y\_ratio = 0.970149254 ratio；determinant = 740000 coefficient2\par
+\noindent\textbf{模型前提：}
+仅适用完整题设与理想仪器响应；待专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A219 · 高效液相色谱Van Deemter最优流速与柱效折中}
+\noindent\textbf{题目}\par
+某高效液相色谱柱的理论塔板高度满足H(u)=A+B/u+C u，其中A=10.00 μm，B=40.00 μm·mm/s，C=5.000 μm/(mm/s)，流动相线速度u以mm/s计，柱长L=150.0 mm。求最优u*=√(B/C)、最小H、在u=1.000和5.000 mm/s时的H与塔板数N=L/H、最优塔板数、最优条件下保留时间以t0=L/u*估算的死时间，以及流速相对最优值的比值与H增加量。假定三项系数随速度不变，未给保留因子不可凭此预测具体分离度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整分析化学实验参数：某高效液相色谱柱的理论塔板高度满足H(u)=A+B/u+C u，其中A=10.00 μm，B=40.00 μm·mm/s，C=5.000 μm/(mm/s)，流动相线速度u以mm/s计，柱长L=150.0 mm。求最优u*=√(B/C)、最小H、在u=1.000和5.000 mm/s时的H与塔板数N=L/H、最优塔板数、最优条件下保留时间以t0=L/u*估算的死时间，以及流速相对最优值的比值与H增加量。假定三项系数随速度不变，未给保留因子不可凭此预测具体分离度。
+\item 建立量值反演方程：H(u)=A+B/u+C u，u*=√(B/C)，N=L/H，u以mm/s而H转mm。
+\item 明确空白校正、标准态与体积转换，以真实实验观测的条件未知量为基础建立线性或非线性反演。
+\item 第一组定量结果：optimal\_linear\_velocity\_mm\_s = 2.8284271247462 mm/s；min\_plate\_height\_um = 38.284271247462 um；H\_at1\_um = 55.000000000000 um；H\_at5\_um = 43.000000000000 um。
+\item 第二组定量结果：plates\_optimum = 3918.0581244561 plates；plates\_at1 = 2727.2727272727 plates；plates\_at5 = 3488.3720930233 plates。
+\item 其余结果与反演回代：dead\_time\_at\_optimum\_s = 53.033008588991 s；velocity5\_over\_optimum = 1.7677669529664 ratio；H5\_excess\_um = 4.7157287525381 um。
+\item 将最终浓度、吸光度或当量量返回原测量方程，检查两端相符及物料与电荷平衡。
+\item 解释本题仪器校正假设的使用范围，不用理想数学条件代替真实基线噪声和基体效应。
+\item 数值证据已由不同写法的独立计算函数逐项复核，不能将它理解为正式科研验证。
+\item 尚需专家审校题目化学合理性、模型独立性和版权。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+optimal\_linear\_velocity\_mm\_s = 2.82842712 mm/s；min\_plate\_height\_um = 38.2842712 um；H\_at1\_um = 55 um；H\_at5\_um = 43 um；plates\_optimum = 3918.05812 plates；plates\_at1 = 2727.27273 plates；plates\_at5 = 3488.37209 plates；dead\_time\_at\_optimum\_s = 53.0330086 s；velocity5\_over\_optimum = 1.76776695 ratio；H5\_excess\_um = 4.71572875 um\par
+\noindent\textbf{模型前提：}
+仅适用完整题设与理想仪器响应；待专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A220 · 荧光Stern–Volmer淬灭常数与动力学猝灭速率反演}
+\noindent\textbf{题目}\par
+某理想单组分荧光探针无淬灭剂时寿命τ0=5.000 ns，强度F0=1000.0 a.u.，加入淬灭剂Q后符合F0/F=τ0/τ=1+KSV[Q]，其中KSV=20.00 L/mol。分别取[Q]=0.01000与0.05000 mol/L；假定全部是动态碰撞淬灭，没有静态复合物、内滤或再吸收。求两条件Stern–Volmer因子、荧光强度、寿命、淬灭效率E=1−F/F0、KSV反推的双分子淬灭速率kq=KSV/τ0（M⁻¹s⁻¹）及强度比。说明必须把ns转换为s。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整分析化学实验参数：某理想单组分荧光探针无淬灭剂时寿命τ0=5.000 ns，强度F0=1000.0 a.u.，加入淬灭剂Q后符合F0/F=τ0/τ=1+KSV[Q]，其中KSV=20.00 L/mol。分别取[Q]=0.01000与0.05000 mol/L；假定全部是动态碰撞淬灭，没有静态复合物、内滤或再吸收。求两条件Stern–Volmer因子、荧光强度、寿命、淬灭效率E=1−F/F0、KSV反推的双分子淬灭速率kq=KSV/τ0（M⁻¹s⁻¹）及强度比。说明必须把ns转换为s。
+\item 建立量值反演方程：F=F0/(1+KSVQ)，τ=τ0/(1+KSVQ)，kq=KSV/τ0。
+\item 明确空白校正、标准态与体积转换，以真实实验观测的条件未知量为基础建立线性或非线性反演。
+\item 第一组定量结果：SVfactor\_low = 1.2000000000000 ratio；SVfactor\_high = 2.0000000000000 ratio；fluorescence\_low = 833.33333333333 AU；fluorescence\_high = 500.00000000000 AU。
+\item 第二组定量结果：lifetime\_low\_ns = 4.1666666666667 ns；lifetime\_high\_ns = 2.5000000000000 ns；quenching\_efficiency\_low = 0.16666666666667 fraction。
+\item 其余结果与反演回代：quenching\_efficiency\_high = 0.50000000000000 fraction；bimolecular\_rate\_MInv\_sInv = 4000000000.0000 M\textasciicircum{}-1s\textasciicircum{}-1；fluorescence\_ratio\_low\_high = 1.6666666666667 ratio。
+\item 将最终浓度、吸光度或当量量返回原测量方程，检查两端相符及物料与电荷平衡。
+\item 解释本题仪器校正假设的使用范围，不用理想数学条件代替真实基线噪声和基体效应。
+\item 数值证据已由不同写法的独立计算函数逐项复核，不能将它理解为正式科研验证。
+\item 尚需专家审校题目化学合理性、模型独立性和版权。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+SVfactor\_low = 1.2 ratio；SVfactor\_high = 2 ratio；fluorescence\_low = 833.333333 AU；fluorescence\_high = 500 AU；lifetime\_low\_ns = 4.16666667 ns；lifetime\_high\_ns = 2.5 ns；quenching\_efficiency\_low = 0.166666667 fraction；quenching\_efficiency\_high = 0.5 fraction；bimolecular\_rate\_MInv\_sInv = 4e+09 M\textasciicircum{}-1s\textasciicircum{}-1；fluorescence\_ratio\_low\_high = 1.66666667 ratio\par
+\noindent\textbf{模型前提：}
+仅适用完整题设与理想仪器响应；待专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A221 · 电位滴定一价离子选择电极的两标准标定与未知样反演}
+\noindent\textbf{题目}\par
+298.15 K某理想单价离子X⁺选择电极满足E=E0+(RT/F)ln(aX)，E0=0.3000 V，活度系数已通过校正视为1。两个标准a1=0.001000和a2=0.01000；某未知样电势恰为Eunk=E0+(RT/F)ln(0.003000)，仪器假定无漂移。求标准电势读数、未知电势、由未知读数反推的活度、pX=−log10 a、Nernst十倍活度电势差、未知相对两标准的对数位置以及当X活度翻倍时电势升高量。F=96485.33212 C/mol；必须取自然对数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整分析化学实验参数：298.15 K某理想单价离子X⁺选择电极满足E=E0+(RT/F)ln(aX)，E0=0.3000 V，活度系数已通过校正视为1。两个标准a1=0.001000和a2=0.01000；某未知样电势恰为Eunk=E0+(RT/F)ln(0.003000)，仪器假定无漂移。求标准电势读数、未知电势、由未知读数反推的活度、pX=−log10 a、Nernst十倍活度电势差、未知相对两标准的对数位置以及当X活度翻倍时电势升高量。F=96485.33212 C/mol；必须取自然对数。
+\item 建立量值反演方程：E=E0+RT/F·ln a，a=exp[(E−E0)F/RT]，pX=−log10a。
+\item 明确空白校正、标准态与体积转换，以真实实验观测的条件未知量为基础建立线性或非线性反演。
+\item 第一组定量结果：E\_standard1\_V = 0.12252195094284 V；E\_standard2\_V = 0.18168130062856 V；E\_unknown\_V = 0.15074813409329 V；inferred\_activity = 0.0030000000000000 fraction。
+\item 第二组定量结果：unknown\_pX = 2.5228787452803 pX；potential\_per\_decade\_V = 0.059159349685722 V；log\_interpolation\_fraction = 0.47712125471966 fraction。
+\item 其余结果与反演回代：potential\_if\_activity\_doubles\_V = 0.16855687287266 V；doubling\_potential\_increment\_V = 0.017808738779377 V；standard\_difference\_V = 0.059159349685722 V。
+\item 将最终浓度、吸光度或当量量返回原测量方程，检查两端相符及物料与电荷平衡。
+\item 解释本题仪器校正假设的使用范围，不用理想数学条件代替真实基线噪声和基体效应。
+\item 数值证据已由不同写法的独立计算函数逐项复核，不能将它理解为正式科研验证。
+\item 尚需专家审校题目化学合理性、模型独立性和版权。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+E\_standard1\_V = 0.122521951 V；E\_standard2\_V = 0.181681301 V；E\_unknown\_V = 0.150748134 V；inferred\_activity = 0.003 fraction；unknown\_pX = 2.52287875 pX；potential\_per\_decade\_V = 0.0591593497 V；log\_interpolation\_fraction = 0.477121255 fraction；potential\_if\_activity\_doubles\_V = 0.168556873 V；doubling\_potential\_increment\_V = 0.0178087388 V；standard\_difference\_V = 0.0591593497 V\par
+\noindent\textbf{模型前提：}
+仅适用完整题设与理想仪器响应；待专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A222 · EDTA反滴定过量Zn²⁺的复杂计量与样本Ca²⁺含量}
+\noindent\textbf{题目}\par
+对20.00 mL水样中的Ca²⁺进行EDTA配位反滴定：加入25.00 mL、0.01000 mol/L EDTA，充分络合Ca²⁺后用0.008000 mol/L Zn²⁺标准液反滴定剩余EDTA，耗去10.00 mL Zn液。假设每个金属与EDTA为1:1配比，EDTA不与其它离子形成络合物，Zn²⁺只消耗剩余EDTA。求加入EDTA总mol、反滴定剩余mol、Ca²⁺mol、样品中Ca浓度(mol/L与mg/L, MCa=40.078 g/mol)、Ca占EDTA的分率、若错误忽略剩余EDTA会高估Ca多少mg/L、样品中Ca质量及回代EDTA当量守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整分析化学实验参数：对20.00 mL水样中的Ca²⁺进行EDTA配位反滴定：加入25.00 mL、0.01000 mol/L EDTA，充分络合Ca²⁺后用0.008000 mol/L Zn²⁺标准液反滴定剩余EDTA，耗去10.00 mL Zn液。假设每个金属与EDTA为1:1配比，EDTA不与其它离子形成络合物，Zn²⁺只消耗剩余EDTA。求加入EDTA总mol、反滴定剩余mol、Ca²⁺mol、样品中Ca浓度(mol/L与mg/L, MCa=40.078 g/mol)、Ca占EDTA的分率、若错误忽略剩余EDTA会高估Ca多少mg/L、样品中Ca质量及回代EDTA当量守恒。
+\item 建立量值反演方程：nCa=nEDTA,added−nZn,back，cCa=nCa/Vsample，mg/L=cCa·40.078·1000。
+\item 明确空白校正、标准态与体积转换，以真实实验观测的条件未知量为基础建立线性或非线性反演。
+\item 第一组定量结果：EDTA\_added\_mol = 0.00025000000000000 mol；EDTA\_excess\_mol = 0.000080000000000000 mol；Ca\_moles = 0.00017000000000000 mol；Ca\_concentration\_M = 0.0085000000000000 mol/L。
+\item 第二组定量结果：Ca\_mass\_mg\_L = 340.66300000000 mg/L；fraction\_EDTA\_bound\_Ca = 0.68000000000000 fraction；naive\_Ca\_concentration\_mg\_L = 500.97500000000 mg/L。
+\item 其余结果与反演回代：naive\_overestimate\_mg\_L = 160.31200000000 mg/L；Ca\_mass\_in\_sample\_mg = 6.8132600000000 mg；EDTA\_mole\_balance = 0.00025000000000000 mol。
+\item 将最终浓度、吸光度或当量量返回原测量方程，检查两端相符及物料与电荷平衡。
+\item 解释本题仪器校正假设的使用范围，不用理想数学条件代替真实基线噪声和基体效应。
+\item 数值证据已由不同写法的独立计算函数逐项复核，不能将它理解为正式科研验证。
+\item 尚需专家审校题目化学合理性、模型独立性和版权。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+EDTA\_added\_mol = 0.00025 mol；EDTA\_excess\_mol = 8e-05 mol；Ca\_moles = 0.00017 mol；Ca\_concentration\_M = 0.0085 mol/L；Ca\_mass\_mg\_L = 340.663 mg/L；fraction\_EDTA\_bound\_Ca = 0.68 fraction；naive\_Ca\_concentration\_mg\_L = 500.975 mg/L；naive\_overestimate\_mg\_L = 160.312 mg/L；Ca\_mass\_in\_sample\_mg = 6.81326 mg；EDTA\_mole\_balance = 0.00025 mol\par
+\noindent\textbf{模型前提：}
+仅适用完整题设与理想仪器响应；待专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A223 · 溶液中13C核磁积分与天然丰度校正的摩尔分率}
+\noindent\textbf{题目}\par
+一种定量13C NMR方法中两化合物A和B分别有可积分的独立碳位数nC,A=2、nC,B=3。假定核自旋弛豫充分、响应按13C核数成正比，天然13C丰度都为f13=0.01100，测得归一化积分IA=2200.0、IB=3300.0。求两化合物的物质的量比nA/nB，混合物A/B摩尔分率、单位相对总物质量下13C标记核的期望数（单位为每个分子的13C核）、如果把原样总浓度0.1000 mol/L，求A/B浓度、总13C核浓度以及如果错误直接以积分比估算A分率会造成的偏差。强调数量比必须先除每分子有效碳位数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整分析化学实验参数：一种定量13C NMR方法中两化合物A和B分别有可积分的独立碳位数nC,A=2、nC,B=3。假定核自旋弛豫充分、响应按13C核数成正比，天然13C丰度都为f13=0.01100，测得归一化积分IA=2200.0、IB=3300.0。求两化合物的物质的量比nA/nB，混合物A/B摩尔分率、单位相对总物质量下13C标记核的期望数（单位为每个分子的13C核）、如果把原样总浓度0.1000 mol/L，求A/B浓度、总13C核浓度以及如果错误直接以积分比估算A分率会造成的偏差。强调数量比必须先除每分子有效碳位数。
+\item 建立量值反演方程：nA/nB=(IA/nCA)/(IB/nCB)，xA=nA/(nA+nB)，C13=f13(nCA cA+nCB cB)。
+\item 明确空白校正、标准态与体积转换，以真实实验观测的条件未知量为基础建立线性或非线性反演。
+\item 第一组定量结果：molar\_ratio\_A\_over\_B = 1.0000000000000 ratio；A\_mole\_fraction = 0.50000000000000 fraction；B\_mole\_fraction = 0.50000000000000 fraction；mean\_13C\_per\_molecule = 0.027500000000000 nuclei/molecule。
+\item 第二组定量结果：concentration\_A\_M = 0.050000000000000 mol/L；concentration\_B\_M = 0.050000000000000 mol/L；total\_13C\_nuclei\_M = 0.0027500000000000 mol/L。
+\item 其余结果与反演回代：raw\_integral\_fraction\_A = 0.40000000000000 fraction；raw\_fraction\_error = -0.10000000000000 fraction；response\_per\_carbon\_ratio = 1.0000000000000 ratio。
+\item 将最终浓度、吸光度或当量量返回原测量方程，检查两端相符及物料与电荷平衡。
+\item 解释本题仪器校正假设的使用范围，不用理想数学条件代替真实基线噪声和基体效应。
+\item 数值证据已由不同写法的独立计算函数逐项复核，不能将它理解为正式科研验证。
+\item 尚需专家审校题目化学合理性、模型独立性和版权。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+molar\_ratio\_A\_over\_B = 1 ratio；A\_mole\_fraction = 0.5 fraction；B\_mole\_fraction = 0.5 fraction；mean\_13C\_per\_molecule = 0.0275 nuclei/molecule；concentration\_A\_M = 0.05 mol/L；concentration\_B\_M = 0.05 mol/L；total\_13C\_nuclei\_M = 0.00275 mol/L；raw\_integral\_fraction\_A = 0.4 fraction；raw\_fraction\_error = -0.1 fraction；response\_per\_carbon\_ratio = 1 ratio\par
+\noindent\textbf{模型前提：}
+仅适用完整题设与理想仪器响应；待专家审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV14-A224 · 电导率标定的电池常数、标准溶液与样品测量}
+\noindent\textbf{题目}\par
+某电导池两电极几何常数Kcell未知，25°C已知KCl标准溶液电导率κstd=0.01288 S/cm，测其电阻Rstd=120.0 Ω。电解质水样分别测得R1=300.0 Ω和R2=800.0 Ω，假定电导池电极极化、温度漂移可忽略。根据κ=Kcell/R求Kcell(cm⁻¹)、水样两次电导率(S/cm与mS/cm)、两个电阻之比及电导率比、若电极有效面积A=2.000 cm²时等效极距l=Kcell A、两次电导G=1/R与标准溶液电导Gstd。避免把电导S与电导率S/cm混淆。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整分析化学实验参数：某电导池两电极几何常数Kcell未知，25°C已知KCl标准溶液电导率κstd=0.01288 S/cm，测其电阻Rstd=120.0 Ω。电解质水样分别测得R1=300.0 Ω和R2=800.0 Ω，假定电导池电极极化、温度漂移可忽略。根据κ=Kcell/R求Kcell(cm⁻¹)、水样两次电导率(S/cm与mS/cm)、两个电阻之比及电导率比、若电极有效面积A=2.000 cm²时等效极距l=Kcell A、两次电导G=1/R与标准溶液电导Gstd。避免把电导S与电导率S/cm混淆。
+\item 建立量值反演方程：Kcell=κstd Rstd，κsample=Kcell/R，l=Kcell A，G=1/R。
+\item 明确空白校正、标准态与体积转换，以真实实验观测的条件未知量为基础建立线性或非线性反演。
+\item 第一组定量结果：cell\_constant\_cmInv = 1.5456000000000 cm\textasciicircum{}-1；conductivity\_sample1\_S\_cm = 0.0051520000000000 S/cm；conductivity\_sample2\_S\_cm = 0.0019320000000000 S/cm；conductivity\_sample1\_mS\_cm = 5.1520000000000 mS/cm。
+\item 第二组定量结果：conductivity\_sample2\_mS\_cm = 1.9320000000000 mS/cm；resistance\_ratio\_R2\_R1 = 2.6666666666667 ratio；conductivity\_ratio\_sample1\_sample2 = 2.6666666666667 ratio。
+\item 其余结果与反演回代：equivalent\_electrode\_spacing\_cm = 3.0912000000000 cm；conductance\_sample1\_S = 0.0033333333333333 S；conductance\_standard\_S = 0.0083333333333333 S。
+\item 将最终浓度、吸光度或当量量返回原测量方程，检查两端相符及物料与电荷平衡。
+\item 解释本题仪器校正假设的使用范围，不用理想数学条件代替真实基线噪声和基体效应。
+\item 数值证据已由不同写法的独立计算函数逐项复核，不能将它理解为正式科研验证。
+\item 尚需专家审校题目化学合理性、模型独立性和版权。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+cell\_constant\_cmInv = 1.5456 cm\textasciicircum{}-1；conductivity\_sample1\_S\_cm = 0.005152 S/cm；conductivity\_sample2\_S\_cm = 0.001932 S/cm；conductivity\_sample1\_mS\_cm = 5.152 mS/cm；conductivity\_sample2\_mS\_cm = 1.932 mS/cm；resistance\_ratio\_R2\_R1 = 2.66666667 ratio；conductivity\_ratio\_sample1\_sample2 = 2.66666667 ratio；equivalent\_electrode\_spacing\_cm = 3.0912 cm；conductance\_sample1\_S = 0.00333333333 S；conductance\_standard\_S = 0.00833333333 S\par
+\noindent\textbf{模型前提：}
+仅适用完整题设与理想仪器响应；待专家审定。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
