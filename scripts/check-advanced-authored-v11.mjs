@@ -148,6 +148,11 @@ Object.assign(witness,{
 "UC-ADV11-I148":()=>{const R=8.314462618,NA=6.02214076e23,a=4e-10,Vm=NA*a**3,M=44.9559+3*18.9984,B=3e10,C=3*R,g=-1.5,av=g*C/(B*Vm),al=av/3,d=50,a2=a*(1+d*al),V2=NA*a2**3,rho=M/1000/Vm,rho2=M/1000/V2;assert.ok(a2<a&&rho2>rho&&Math.abs(B*Vm*av-g*C)<1e-12);return[Vm,M,rho,av,al,a2*1e10,V2,rho2,rho2/rho-1,g*C,B*Vm*av,3-3,(a2/a)**3-1];},
 "UC-ADV11-A147":()=>{const f0=1e5,m=1e-9,cap=2e-11,K=2,des=.02,ms=p=>cap*K*p/(1+K*p),fr=p=>f0/Math.sqrt(1+ms(p)/m),a=m*((f0/fr(.1))**2-1),b=m*((f0/fr(1))**2-1),sl=(1/a-1/b)/(10-1),it=1/a-sl*10,M=1/it,k=it/sl,z=ms(.5);assert.ok(Math.abs(k/K-1)<1e-11&&Math.abs(M/cap-1)<1e-11);return[fr(.1),fr(1),a,b,sl,it,M,k,z,fr(.5),k*.5/(1+k*.5),k*des,1/(des*(1+k*.5)),z/M];}
 });
+
+Object.assign(witness,{
+"UC-ADV11-O144":()=>{const B=[8,10.5],A=[3.1,4.2,10.1],bp=t=>B.map(x=>1/(1+10**(t-x))),ap=t=>A.map(x=>1/(1+10**(x-t))),z=t=>bp(t).reduce((s,x)=>s+x,0)-ap(t).reduce((s,x)=>s+x,0);let lo=0,hi=14;for(let j=0;j<100;j++){let x=(lo+hi)/2;if(z(x)>0)lo=x;else hi=x}const p=(lo+hi)/2,P=bp(p),N=ap(p),V=P.concat(N).reduce((s,x)=>s+x*(1-x),0),C=prob=>prob.reduce((d,x)=>{let b=Array(d.length+1).fill(0);d.forEach((v,i)=>{b[i]+=v*(1-x);b[i+1]+=v*x});return b},[1]);let d1=C(P),d2=C(N),eq=d1.reduce((s,x,i)=>s+x*d2[i],0),positive=P[0]+P[1],negative=N.reduce((s,x)=>s+x);assert.ok(Math.abs(positive-negative)<1e-12&&eq>0&&eq<1);return[p,z(7),z(8),z(11),z(0),z(14),...P,...N,V,-Math.LN10*V,eq,Math.LN10*.0005*V,positive,negative,z(p)];},
+"UC-ADV11-P144":()=>{const tau=120,v=4800,n=tau*tau/v,k=.02,C=.5,Q=1/60,z=1+k*tau/n,rem=z**(-n),X=1-rem,Xp=1-Math.exp(-k*tau),Xc=k*tau/(1+k*tau),a=C*rem,b=C*X,prod=Q*b,heat=60000*prod,Et=n**n*Math.exp(-n)/(2*tau);assert.ok(n===3&&Xc<X&&X<Xp&&Math.abs(a+b-C)<1e-13);return[n,v,tau/Math.sqrt(n),tau/n,z,X,Xp,Xc,a,b,prod,heat,rem,1/z,Et,n/tau];}
+});
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();

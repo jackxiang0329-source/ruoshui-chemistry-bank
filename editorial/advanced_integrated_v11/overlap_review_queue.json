@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 87,
+  "current_draft_count": 89,
   "expert_approved": 0,
-  "preliminary_flags": 52,
+  "preliminary_flags": 54,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -316,6 +316,18 @@
       "new_id": "UC-ADV11-A147",
       "prior_id": "UC-ADV11-A126",
       "reason": "可能有局部材料热力学或谐振传感主题重合，仍需人工逐式比较数学模型。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-O144",
+      "prior_id": "UC-ADV10-A116",
+      "reason": "存在酸碱、动力学或停留时间数学元素邻近，人工专家尚未完成逐式比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-P144",
+      "prior_id": "UC-ADV10-P109",
+      "reason": "存在酸碱、动力学或停留时间数学元素邻近，人工专家尚未完成逐式比对。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -841,6 +853,18 @@
       "model_family": "chemical-cantilever-Langmuir-mass-loading-two-pressure-kinetic-relaxation",
       "judgement": "pending_human_comparison",
       "screening": "独立答案向量与形式守恒及热/机械边界已检查，数学同构与化学真实性须专家人工审定。"
+    },
+    {
+      "new_id": "UC-ADV11-O144",
+      "model_family": "peptide-five-site-acidbase-microstate-neutral-probability-isoelectric-buffer-capacity",
+      "judgement": "pending_human_comparison",
+      "screening": "五位点微态或化学反应RTD独立答案向量已写入，跨辑原创新颖性与科学模型边界仍待专家逐式核验。"
+    },
+    {
+      "new_id": "UC-ADV11-P144",
+      "model_family": "chemical-reactor-Gamma-RTD-tanks-in-series-Laplace-conversion-heat-flux",
+      "judgement": "pending_human_comparison",
+      "screening": "五位点微态或化学反应RTD独立答案向量已写入，跨辑原创新颖性与科学模型边界仍待专家逐式核验。"
     }
   ]
 }
