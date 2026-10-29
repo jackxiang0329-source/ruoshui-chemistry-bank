@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第11辑 (73题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第11辑 (77题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -480,6 +480,32 @@ particle\_volume\_m3 = 1.76714587e-24 m3；anisotropy\_barrier\_J = 5.3014376e-2
 阻塞温度不是平衡热力学相变；颗粒尺寸分布、非单轴各向异性、表面自旋冻结、磁偶极相互作用及较大外场会使单一能垒与统一τ₀近似失效。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-I145 · 四血红素两态氧结合MWC配分函数、P50与Hill协同性反演}
+\noindent\textbf{题目}\par
+某假想四血红素Fe(II)氧结合蛋白以Monod–Wyman–Changeux两态整体构象模型表征，每个四聚体有4个等价O₂结合位点。T态无氧相对权重L₀=100.0、R态权重1，解离常数分别K\_T=100.0 μmol/L和K\_R=2.000 μmol/L；在每个构象内4位点统计独立。氧作为中性O₂分子做形式计量，不讨论真实超氧化物电子结构。自由O₂浓度c=10.00 μmol/L、四聚体总浓度1.000 μmol/L，氧相对摩尔质量31.998 g/mol。由两态配分函数导出R构象比例和四位点占有率Y、已结合O₂浓度及质量。定义P50为Y=0.5的自由氧浓度，求P50和Hill对数斜率n\_H=dln[Y/(1−Y)]/dln c，利用占位数的平均值与二阶矩验证正根唯一、结合氧与原子氧计量及极限行为，说明该模型的科学适用范围。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 将假想四血红素Fe(II)氧结合蛋白看成两种整体构象T与R，不允许构象内部分子混合；每构象内四个结合位点等价且相互独立。
+\item 每个结合氧分子视作中性O₂，既不改变血红素中心的题设形式氧化态，也不引入自由离子；这里只做结合统计，不构成真实超氧化物电子结构的声明。
+\item 无氧时T/R配分权重之比L₀=100。各构象的逐位点氧结合解离常数分别K\_T=100 μM、K\_R=2 μM，因此R态为高亲和态。
+\item 给定自由氧浓度c，T构象统计权重Z\_T=L₀(1+c/K\_T)\textasciicircum{}4，R构象Z\_R=(1+c/K\_R)\textasciicircum{}4，总配分函数Z=Z\_T+Z\_R。
+\item 氧占位的平均分数Y=(1/4)∂lnZ/∂ln c=[L₀(c/K\_T)(1+c/K\_T)\textasciicircum{}3+(c/K\_R)(1+c/K\_R)\textasciicircum{}3]/Z。
+\item 在c=10.00 μM时T/R权重依次为146.410000000、1296.00000000，R构象比例为0.898496266665。
+\item 在相同浓度下位点占有率Y=0.757974501009，每个四血红素分子平均结合氧分子数n̄=4Y=3.03189800403。
+\item 若四血红素蛋白总浓度1.000 μM，已结合氧分子浓度为4Y×10⁻⁶=0.00000303189800403 mol/L；原子氧对应其两倍，符合每个O₂含两个O原子。
+\item 将Y(c)=1/2定义为P₅₀，自由氧浓度在(0,∞)变化时Y从0连续增加至1，导数与占位数方差成正，因此正根唯一。
+\item 使用包围二分法求P₅₀=5.78379956212 μM，回代Y(P₅₀)=0.500000000000。
+\item 对任意构象的四个独立位点，二阶阶乘矩〈n(n−1)〉按12 a²(1+a)²（a=c/K）加权；总方差Var(n)=〈n(n−1)〉+〈n〉−〈n〉²。
+\item 在P₅₀时Hill对数斜率n\_H=dln[Y/(1−Y)]/dlnc=Var(n)/(4Y(1−Y))=2.29886542778，检验其是否大于1以体现构象合作性。
+\item 本题未将氧结合与实际Fe(II)/Fe(III)反应耦合，且假定无氧耗尽、构象内独立和均一四位点；真实蛋白的异质位点与质子/CO₂耦联效应需要更复杂模型。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+tenuM\_T\_weight = 146.41 dimensionless；tenuM\_R\_weight = 1296 dimensionless；tenuM\_partition = 1442.41 dimensionless；tenuM\_R\_state\_fraction = 0.898496267 fraction；tenuM\_site\_occupancy = 0.757974501 fraction；tenuM\_O2\_per\_tetramer = 3.031898 O2/tetramer；tenuM\_bound\_O2\_M = 3.031898e-06 mol/L；P50\_uM = 5.78379956 umol/L；Hill\_slope\_P50 = 2.29886543 dimensionless；occupancy\_number\_variance\_P50 = 2.29886543 molecules2；occupancy\_number\_variance\_ten = 1.33702787 molecules2；bound\_O2\_mass\_g\_per\_L = 9.70146723e-05 g/L；T\_state\_fraction = 0.101503733 fraction；affinity\_ratio\_KT\_over\_KR = 50 ratio；P50\_occupancy\_backcheck = 0.5 fraction\par
+\noindent\textbf{模型前提：}
+本题未将氧结合与实际Fe(II)/Fe(III)反应耦合，且假定无氧耗尽、构象内独立和均一四位点；真实蛋白的异质位点与质子/CO₂耦联效应需要更复杂模型。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第11辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -898,6 +924,31 @@ thermal\_energy\_pN\_nm = 4.11640499 pN nm；peak\_force\_100\_pN = 47.0966575 p
 buffer\_protons\_per\_binding = 2 protons/event；intrinsic\_binding\_enthalpy\_kJ\_mol = -45 kJ/mol；dissociation\_constant\_M = 2e-06 mol/L；association\_constant\_M\_inv = 500000 L/mol；complex\_concentration\_M = 8.51668523e-06 mol/L；unbound\_host\_M = 1.48331477e-06 mol/L；unbound\_ligand\_M = 1.14833148e-05 mol/L；host\_fraction\_bound = 0.851668523 fraction；ITC\_heat\_buffer1\_uJ = -59.6167966 uJ；ITC\_heat\_buffer2\_uJ = -8.51668523 uJ；buffer\_heat\_difference\_uJ = 51.1001114 uJ；linked\_proton\_mol\_nmol = 3.40667409 nmol；buffer\_linkage\_heat\_uJ = 51.1001114 uJ；inverse\_mass\_action\_Ka = 1 dimensionless\par
 \noindent\textbf{模型前提：}
 唯一性来自正Kd下0<x<min(M,L)时K\_d(x)=(M−x)(L−x)/x严格递减；本题忽略注射稀释热、质子化微态比例变化和缓冲活度差异，真实ITC须扣空白与质子活度效应。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-A144 · ICP发射谱双光程自吸收输运反演、逃逸因子与铁柱密度}
+\noindent\textbf{题目}\par
+某理想均匀ICP等离子体的铁原子发射谱线存在自吸收，设沿光程s的辐射输运满足dI/ds=j−αI，入射背景I(0)=0，源函数S=j/α在同一谱线上与光程无关。分别选等离子体路径L=1.000 cm与2L，测得单路径光强I(L)=100.0计数单位，强度比I(2L)/I(L)=1.30119421191220。吸收线中心有效截面σ=1.000×10⁻¹⁴ cm²、α=σn（n为吸收下能级原子数密度），取铁原子摩尔质量55.845 g/mol、NA=6.02214076×10²³ mol⁻¹。求单程光学厚度、α、n、柱密度、下能级铁质量面密度、源函数S、三倍光程信号、逃逸因子β=(1−e\textasciicircum{}(−τ))/τ以及光学薄校正值，验证反演唯一正解、光强比和两端物理极限。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 假定均匀发光等离子体在给定窄谱线上的自发发射系数j与吸收系数α沿光程为常数，忽略背景光、散射、饱和增益和频率分布变化。
+\item 辐射输运微分方程dI/ds=j−αI，给定入射背景I(0)=0，可积分得I(L)=S[1−exp(−αL)]，其中源函数S=j/α。
+\item 用光程L=1.000 cm定义光学厚度τ=αL，第二次用相同等离子体的两倍光程2L，故I(2L)/I(L)=[1−exp(−2τ)]/[1−exp(−τ)]。
+\item 上式因式分解为1+exp(−τ)；由于真实吸收α>0，观测强度比R必须位于1与2之间。
+\item 第一次探测I(L)=100.0计数单位，第二次与第一次比R=1.30119421191，因此I(2L)=130.119421191同单位。
+\item 反演τ=−ln(R−1)=1.20000000000；自然对数在0<R−1<1内唯一，故吸收系数α=τ/L=1.20000000000 cm⁻¹。
+\item 假定该谱线有效吸收截面σ=1e-14 cm²、并且只有相关下能级粒子贡献吸收，则α=σn，n=1.20000000000e+14 cm⁻³。
+\item 由光程柱密度N\_col=nL=1.20000000000e+14 cm⁻²；用铁原子相对质量55.845 g/mol计算对应面密度1.11279365048e-8 g/cm²，只是该下能级原子的面质量，不等于整个样品铁总质量。
+\item 已知I(L)，源函数S=I(L)/[1−exp(−τ)]=143.101276069计数，三倍光程预测I(3L)=S[1−exp(−3τ)]=139.191216520。
+\item 均匀无背景源的逃逸因子β=[1−exp(−τ)]/τ=0.582338156740；若完全光学薄，单程光强应为I\_thin=Sτ=171.721531283，自吸收校正为I\_thin/I(L)=1.71721531283。
+\item τ→0时双程/单程比→2、逃逸因子→1；τ→∞时双程比→1、逃逸因子→0，符合发光层自吸收饱和极限。
+\item 本题只反演均匀一维源与下能级粒子数密度；真实ICP发射谱的温度梯度、线翼频率、自反转、荧光激发、激发态布居和不均匀仪器响应会使常源函数假设失效。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+double\_path\_intensity\_ratio = 1.30119421 ratio；double\_path\_intensity\_counts = 130.119421 counts；optical\_depth\_single\_path = 1.2 dimensionless；absorption\_coefficient\_cm\_inv = 1.2 cm\textasciicircum{}-1；lower\_state\_number\_density\_cm3 = 1.2e+14 cm\textasciicircum{}-3；column\_density\_cm2 = 1.2e+14 cm\textasciicircum{}-2；source\_function\_counts = 143.101276 counts；triple\_path\_counts = 139.191217 counts；photon\_escape\_probability = 0.582338157 ratio；thin\_path\_expected\_counts = 171.721531 counts；self\_absorption\_correction\_factor = 1.71721531 ratio；Fe\_gram\_per\_cm2 = 1.11279365e-08 g/cm2；triple\_single\_ratio = 1.39191217 ratio；absorbed\_fraction\_relative\_thin = 0.417661843 fraction\par
+\noindent\textbf{模型前提：}
+本题只反演均匀一维源与下能级粒子数密度；真实ICP发射谱的温度梯度、线翼频率、自反转、荧光激发、激发态布居和不均匀仪器响应会使常源函数假设失效。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
@@ -1322,6 +1373,31 @@ HDX\_kobs\_pH1\_s = 0.00081300813 s\textasciicircum{}-1；HDX\_kobs\_pH2\_s = 0.
 AA\_dyad\_fraction = 0.3 fraction；mixed\_dyad\_fraction = 0.5 fraction；BB\_dyad\_fraction = 0.2 fraction；A\_monomer\_fraction = 0.55 fraction；B\_monomer\_fraction = 0.45 fraction；P\_A\_to\_A = 0.545454545 fraction；P\_A\_to\_B = 0.454545455 fraction；P\_B\_to\_A = 0.555555556 fraction；P\_B\_to\_B = 0.444444444 fraction；average\_A\_run\_length = 2.2 monomers；average\_B\_run\_length = 1.8 monomers；Markov\_second\_eigenvalue = -0.0101010101 dimensionless；sequence\_entropy\_nats\_per\_monomer = 0.688087791 nats/monomer；inverse\_sequence\_entropy = 1.45330293 monomers/nat；mixed\_dyads\_per\_10000 = 5000 dyads；stationary\_detailed\_flow\_residual = 0 dimensionless\par
 \noindent\textbf{模型前提：}
 若研究含10000个内部dyad的极长样本，期望混合dyad数5000；此为统计平均而非逐条链必然值。若链长短、NMR dyad峰重叠或存在二阶及以上序列记忆，一阶Markov和该推断不能保证原始聚合机理。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-O141 · 氨酰tRNA合成酶双重动力学校对的错误赔率、ATP预算与底物通量}
+\noindent\textbf{题目}\par
+某假想氨酰-tRNA合成酶实行两阶段不可逆动力学校对。正确氨基酸C和错误类似物W进入酶的事件强度分别为10.00和20.00 s⁻¹（按每酶单位计），进入后未活化前脱离速率k\_off,C=2.000、k\_off,W=4.000 s⁻¹，成功ATP依赖活化速率k\_act,C=8.000、k\_act,W=6.000 s⁻¹；每次成功活化消耗1 ATP→AMP+PPi。活化中间体随后或形成氨酰-tRNA产品，或被水解编辑回收底物：C的产品/编辑速率20.00/1.000 s⁻¹，W的产品/编辑速率2.000/18.00 s⁻¹。假定所有步骤竞争指数等待，入口供给固定、无回流或酶占位瓶颈。求两类活化概率、活化通量、正确/错误产品通量及编辑通量、编辑前后错误比例、错误赔率改善倍数、ATP消耗通量和每个被接受产品的ATP平均消耗，并逐类检查底物骨架、活化分流与核苷酸计量守恒。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设单分子酶E在非饱和、伪一级底物供给下接收正确氨基酸C与错误类似物W，进入反应网络的每酶单位入口事件强度分别10.00与20.00 s⁻¹。
+\item 首个竞争步骤中，进入的底物可在未耗ATP前脱离(k\_off)或以k\_act发生消耗1 ATP的活化，故每次进入成功活化概率p\_act=k\_act/(k\_act+k\_off)。
+\item 对C使用k\_act=8、k\_off=2 s⁻¹，p\_act,C=0.8；对W使用6和4 s⁻¹，p\_act,W=0.6。
+\item 活化通量分别J\_AC=10p\_act,C=8 s⁻¹和J\_AW=20p\_act,W=12 s⁻¹；每个成功活化事件均记一个ATP→AMP+PPi。
+\item 活化中间体再在形成tRNA酯产物(k\_prod)与水解编辑(k\_edit)之间竞争，产物概率p\_prod=k\_prod/(k\_prod+k\_edit)，编辑概率互补。
+\item 正确底物k\_prod=20、k\_edit=1 s⁻¹，产品通量J\_C=7.61904761905 s⁻¹，编辑水解J\_EC=0.380952380952 s⁻¹。
+\item 错误底物k\_prod=2、k\_edit=18 s⁻¹，产品通量J\_W=1.20000000000 s⁻¹，错误编辑水解J\_EW=10.8000000000 s⁻¹。
+\item 接受产品总通量8.81904761905 s⁻¹，错误产品分数=0.136069114471，远低于活化中间体中错误占比0.600000000000。
+\item 错误与正确的比例赔率通过编辑降低了9.52380952381倍；此量独立于酶单位数量，不能错误地称为提高了相同倍的正确产率。
+\item 由于每个活化消耗1 ATP，ATP消耗通量=20.0000000000 s⁻¹，每个最终接受产物平均消耗ATP=2.26781857451个。
+\item 逐路径检验化学计数：对每种氨基酸，活化通量=成功产物通量+编辑水解通量；被编辑的底物骨架进入回收池，不会凭空消失，ATP的AMP及PPi生成数量等于活化次数。
+\item 模型假定活化和编辑为无记忆不可逆竞争、每事件使用一个ATP、无二次重试及下游反应限速；真实氨酰-tRNA合成酶含预转移/后转移编辑、非平衡酶占位与副反应，不能由该简化通量直接宣称真实保真度。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+correct\_activation\_probability = 0.8 fraction；wrong\_activation\_probability = 0.6 fraction；activated\_correct\_flux\_s = 8 s\textasciicircum{}-1；activated\_wrong\_flux\_s = 12 s\textasciicircum{}-1；correct\_product\_flux\_s = 7.61904762 s\textasciicircum{}-1；wrong\_product\_flux\_s = 1.2 s\textasciicircum{}-1；correct\_editing\_flux\_s = 0.380952381 s\textasciicircum{}-1；wrong\_editing\_flux\_s = 10.8 s\textasciicircum{}-1；total\_product\_flux\_s = 8.81904762 s\textasciicircum{}-1；wrong\_product\_fraction = 0.136069114 fraction；wrong\_fraction\_pre\_editing = 0.6 fraction；error\_odds\_improvement\_factor = 9.52380952 ratio；ATP\_per\_accepted\_product = 2.26781857 ATP/product；total\_hydrolysis\_flux\_s = 11.1809524 s\textasciicircum{}-1；ATP\_consumption\_flux\_s = 20 ATP/s；correct\_product\_fraction = 0.863930886 fraction\par
+\noindent\textbf{模型前提：}
+模型假定活化和编辑为无记忆不可逆竞争、每事件使用一个ATP、无二次重试及下游反应限速；真实氨酰-tRNA合成酶含预转移/后转移编辑、非平衡酶占位与副反应，不能由该简化通量直接宣称真实保真度。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{物理化学}
@@ -1749,6 +1825,31 @@ forward\_step\_fraction = 0.8 fraction；backward\_step\_fraction = 0.2 fraction
 dipole\_C\_m = 1.334256e-29 C m；Langevin\_argument = 0.324131372 dimensionless；orientation\_cosine\_mean = 0.107294537 dimensionless；saturation\_polarization\_C\_m2 = 0.000803507744 C/m2；field\_polarization\_C\_m2 = 8.62119914e-05 C/m2；effective\_incremental\_P\_over\_epsE = 0.0973686048 dimensionless；linearized\_Langevin\_x\_over\_3 = 0.108043791 dimensionless；nonlinearity\_ratio = 0.993065277 ratio；orientation\_Helmholtz\_F\_J\_mol = -43.2560044 J/mol；orientation\_internal\_U\_J\_mol = -86.2119914 J/mol；orientational\_entropy\_change\_J\_molK = -0.144075086 J/(mol K)；saturation\_over\_observed\_P = 9.32013901 ratio；reconstructed\_dimensionless\_field = 0.324131372 dimensionless；positive\_partition\_log\_term\_J\_molK = 0.14508135 J/(mol K)\par
 \noindent\textbf{模型前提：}
 小场x→0时L≈x/3且P≈nμ²E/(3kBT)，饱和x→∞时L→1。此模型适用于稀、独立、刚性分子取向；真实强场可使溶剂击穿、介质局域场修正与电极边界效应重要。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV11-P141 · Cahn–Hilliard守恒相分离的最快波长、有限周期模态与增长率}
+\noindent\textbf{题目}\par
+一假想二元液体在T=298.15 K采用正则溶液混合自由能密度f(c)=(RT/V\_m)[c ln c+(1−c)ln(1−c)+χ c(1−c)]，其中组分A体积分数c，初始均匀c₀=0.5000、相互作用参数χ=3.000、每摩尔格点体积V\_m=1.000×10⁻⁵ m³/mol，R=8.314462618 J/(mol K)。梯度能为κ|∇c|²/2，κ=1.000×10⁻⁸ J/m；守恒动力学为∂c/∂t=M∇²[f'(c)−κ∇²c]，M=1.000×10⁻²⁵ m⁵/(J s)。请线性化得到σ(k)，计算spinodal不稳定波数区间、截止波长、连续最快增长波数/波长/增长率，并在周期边界长度L=100.0 nm下比较n=1、2、3模式增长率与最快离散模式；说明组分积分守恒、k=0稳定性及线性模型的实验边界。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 设二元理想体积分数c的正则溶液自由能密度f(c)=(RT/V\_m)[c ln c+(1−c)ln(1−c)+χ c(1−c)]，加入梯度能κ|∇c|²/2。
+\item 初始均匀体积分数c₀=0.5000、χ=3.000时，f''(c₀)=(RT/V\_m)[1/c₀+1/(1−c₀)−2χ]为负，故均匀态在长波涨落下不稳定。
+\item 取V\_m=0.00001 m³/mol、T=298.15 K，得到f''=-495791405.911 J/m³；κ=1e-8 J/m保证梯度自由能密度单位J/m³。
+\item 守恒型Cahn–Hilliard动力学为∂c/∂t=M∇²[f'(c)−κ∇²c]，M的量纲m⁵/(J·s)，不应与普通质量扩散系数混淆。
+\item 设c=c₀+δc、扰动δc∼exp(σt+ikx)，线性化得增长率σ(k)=−M k²[f''(c₀)+κk²]。
+\item 若f''<0，0<k<k\_c=√(−f''/κ)的涨落指数增长，而k>k\_c由于梯度能稳定化衰减；k=0因组分守恒增长率为0。
+\item 临界波数k\_c=222663738.833 m⁻¹，对应截止波长λ\_c=2π/k\_c=28.2182691268 nm。
+\item 对σ(k)在k>0求导，唯一增长最快波数k*=√[−f''/(2κ)]=k\_c/√2，波长λ*=2π/k*。
+\item 计算k*=157447039.653 m⁻¹、λ*=39.9066589059 nm；理论最快增长率σ*=M[f'']²/(4κ)=0.614522795439 s⁻¹。
+\item 若样品采用长L=100.0 nm的一维周期边界，允许离散波数k\_n=2πn/L，不同于无限连续空间的任意k。
+\item n=1、2、3的线性增长率分别0.180145147107、0.533555133642、0.499153595249 s⁻¹，比较可得离散最快整数模式n=2，而非直接对连续最优n*=2.50584746360四舍五入而不核算。
+\item 质量守恒由全域积分∫∂c/∂t dx=M∫∂²μ/∂x² dx=0保证，周期边界的表面通量相消；若负f''导致振幅达到非线性尺度、界面厚度接近分子尺度或M依赖组成，线性模分析应终止。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+free\_energy\_second\_derivative\_J\_m3 = -495791406 J/m3；spinodal\_cutoff\_wavenumber\_m\_inv = 222663739 m\textasciicircum{}-1；continuous\_fastest\_wavenumber\_m\_inv = 157447040 m\textasciicircum{}-1；cutoff\_wavelength\_nm = 28.2182691 nm；fastest\_wavelength\_nm = 39.9066589 nm；continuous\_max\_growth\_s\_inv = 0.614522795 s\textasciicircum{}-1；continuous\_optimal\_mode\_index = 2.50584746 dimensionless；n1\_growth\_s\_inv = 0.180145147 s\textasciicircum{}-1；n2\_growth\_s\_inv = 0.533555134 s\textasciicircum{}-1；n3\_growth\_s\_inv = 0.499153595 s\textasciicircum{}-1；fastest\_discrete\_mode = 2 mode；fastest\_discrete\_wavevector\_m\_inv = 125663706 m\textasciicircum{}-1；zero\_mode\_growth\_s\_inv = 0 s\textasciicircum{}-1；cutoff\_times\_optimal\_wavelength = 8.88576588 dimensionless\par
+\noindent\textbf{模型前提：}
+质量守恒由全域积分∫∂c/∂t dx=M∫∂²μ/∂x² dx=0保证，周期边界的表面通量相消；若负f''导致振幅达到非线性尺度、界面厚度接近分子尺度或M依赖组成，线性模分析应终止。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
