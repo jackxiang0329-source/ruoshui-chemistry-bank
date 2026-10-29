@@ -36,6 +36,17 @@ Object.assign(witness,{
 "UC-ADV11-P125":()=>{const R=8.314462618,E=60000,n=3,k1=Math.pow(Math.log(2),1/3)/100,k2=k1*Math.exp(E/R*(1/300-1/320)),t50=Math.pow(Math.log(2),1/3)/k2,t90=Math.pow(Math.log(10),1/3)/k2,rate=3*k2**3*t50**2*.5;assert.ok(t90>t50&&rate>0);return [k1,k2,t50,t90,rate,k2/k1,k1*Math.exp(E/(R*300))];}
 });
 
+Object.assign(witness,{
+"UC-ADV11-I132":function I132(){const n=[.042,.018,.012,.014],e=[8,2,10,2],h=[9,2,12,2],E=n.reduce((a,v,i)=>a+v*e[i],0),H=n.reduce((a,v,i)=>a+v*h[i],0),N=.042+.018+2*.012;return [.12-N,E,E*96485.33212,H,...n.map((v,i)=>v*e[i]/E),N/.12,.042/N]},
+"UC-ADV11-A132":function A132(){const a=.6915,b=.3085,c=.02,d=.98,s=.01,r=1.4,m=s*(c-r*d)/(r*b-a),der=-d/(c-r*d)-b/(r*b-a);return[r,m/s,m,m/.025,d*s/(b*m+d*s),c*s/(a*m+c*s),der,Math.abs(der)*.005]},
+"UC-ADV11-I133":function I133(){const R=8.314462618,E=25+R*Math.log(5),p=t=>1/(1+Math.exp(18000/(R*t)-25/R)/5),r=t=>p(t)/(1-p(t));return[E,18000/E,r(300),p(300),r(400),p(400),3*p(300),Math.sqrt(24*p(300)),(18000-300*E)/1000]},
+"UC-ADV11-A133":function A133(){const km=1e5,kn=1e3;let x=.0002;for(let j=0;j<80;j++){let f=x+.001*km*x/(1+km*x)+.002*kn*x/(1+kn*x)-.0015,df=1+.001*km/(1+km*x)**2+.002*kn/(1+kn*x)**2,xx=x-f/df;if(xx<=0)xx=x/2;if(Math.abs(xx-x)<1e-18){x=xx;break}x=xx;}let m=.001*km*x/(1+km*x),n=.002*kn*x/(1+kn*x);return[x,m,n,.001-m,.002-n,900*m+300*n,150*m+1200*n,m/.001,n/.002]},
+"UC-ADV11-O129":function O129(){const R=8.314462618,kB=1.380649e-23,h=6.62607015e-34,k=(t,H,S)=>kB*t/h*Math.exp((S-H/t)/R),e=k(298.15,55000,-90),x=k(298.15,60000,-80),z=e+x,X=-Math.expm1(-z*30);return[e,x,e/x,e/z,X,.01*X*e/z,.01*X*x/z,k(400,55000,-90)/k(400,60000,-80),500,x/z]},
+"UC-ADV11-O130":function O130(){const N=16000,dt=30/N,k=.08,j=.02,r=.01;let x=[.5,.5,0,0];const d=v=>[-(k+r)*v[0]+r*v[1],r*v[0]-(j+r)*v[1],k*v[0],j*v[1]];for(let n=0;n<N;n++){let a=d(x),b=d(x.map((v,i)=>v+dt*a[i]/2)),c=d(x.map((v,i)=>v+dt*b[i]/2)),e=d(x.map((v,i)=>v+dt*c[i]));x=x.map((v,i)=>v+dt*(a[i]+2*b[i]+2*c[i]+e[i])/6);}let [R,S,pr,ps]=x,nr=.5*(1-Math.exp(-k*30)),ns=.5*(1-Math.exp(-j*30));return[R,S,pr,ps,pr+ps,(pr-ps)/(pr+ps),(S-R)/(R+S),-.06+Math.sqrt(.001),(nr-ns)/(nr+ns)]},
+"UC-ADV11-P129":function P129(){const R=8.314462618,F=96485.33212,eps=78.5*8.8541878128e-12,T=298.15,c=10,x=F*(-.075)/(R*T),s=Math.sqrt(8*eps*R*T*c)*(Math.exp(x/2)-Math.exp(-x/2))/2,C=Math.sqrt(8*eps*R*T*c)*F/(R*T)*(Math.exp(x/2)+Math.exp(-x/2))/4,p=.01*Math.exp(-x),n=.01*Math.exp(x);return[s,C,p,n,Math.sqrt(eps*R*T/(2*F*F*c))*1e9,-s/F,p*n,(p+n)/2]},
+"UC-ADV11-P130":function P130(){const a=.364,b=4.27e-5,R=8.314462618,T=350,P=5e6;let v=R*T/P;for(let j=0;j<80;j++){let f=R*T/(v-b)-a/v**2-P,df=-R*T/(v-b)**2+2*a/v**3,n=v-f/df;if(n<=b)n=(v+b)/2;if(Math.abs(n-v)<1e-18){v=n;break}v=n;}let slope=-R*T/(v-b)**2+2*a/v**3;return[8*a/(27*R*b),a/(27*b*b),3*b,v,P*v/(R*T),-1/(v*slope),(T*(-R/(v-b)/slope)-v)/37*1e5,slope,2*a/(R*b)]}
+});
+
 const groups={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const ids=new Set(),titles=new Set(),families=new Set();let count=0;
 const previousFamilies=new Set();

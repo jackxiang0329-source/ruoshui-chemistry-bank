@@ -2,7 +2,7 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 24,
+  "current_draft_count": 32,
   "expert_approved": 0,
   "preliminary_flags": 4,
   "pairs": [
@@ -175,6 +175,54 @@
       "model_family": "WKB-rectangular-barrier-H-D-tunneling-isotope-mass-energy",
       "judgement": "pending_human_comparison",
       "screening": "独立机器主要数值答案witness已编写；跨辑数学模型与化学科学性需要专家人工逐式比较。"
+    },
+    {
+      "new_id": "UC-ADV11-I132",
+      "model_family": "nitrate-reduction-nitrogen-electron-proton-coupled-faradaic-efficiency",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness已复算；全库跨辑模型同构性、化学实验合理性和原创性尚待人类专家逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV11-I133",
+      "model_family": "FeII-spin-crossover-degeneracy-entropy-Curie-magnetic-susceptibility",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness已复算；全库跨辑模型同构性、化学实验合理性和原创性尚待人类专家逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV11-A132",
+      "model_family": "ICPMS-isotope-dilution-two-isotope-matrix-interference-conditioning",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness已复算；全库跨辑模型同构性、化学实验合理性和原创性尚待人类专家逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV11-A133",
+      "model_family": "conditional-chelation-competing-metals-ligand-balance-absorbance-uniqueness",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness已复算；全库跨辑模型同构性、化学实验合理性和原创性尚待人类专家逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV11-O129",
+      "model_family": "diels-alder-endo-exo-Eyring-entropy-enthalpy-competing-pseudofirstorder",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness已复算；全库跨辑模型同构性、化学实验合理性和原创性尚待人类专家逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV11-O130",
+      "model_family": "dynamic-kinetic-resolution-racemization-coupled-matrix-ODE-enantiomer-ee",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness已复算；全库跨辑模型同构性、化学实验合理性和原创性尚待人类专家逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV11-P129",
+      "model_family": "Gouy-Chapman-Poisson-Boltzmann-nonlinear-surface-capacitance-electrolyte",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness已复算；全库跨辑模型同构性、化学实验合理性和原创性尚待人类专家逐式复核。"
+    },
+    {
+      "new_id": "UC-ADV11-P130",
+      "model_family": "van-der-Waals-supercritical-root-stability-Joule-Thomson-implicit-derivative",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值witness已复算；全库跨辑模型同构性、化学实验合理性和原创性尚待人类专家逐式复核。"
     }
   ]
 }
