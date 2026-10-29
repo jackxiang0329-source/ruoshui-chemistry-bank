@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 14,
   "status": "expert_review_pending",
-  "current_draft_count": 14,
+  "current_draft_count": 30,
   "expert_approved": 0,
-  "preliminary_flags": 14,
+  "preliminary_flags": 30,
   "pairs": [
     {
       "new_id": "UC-ADV14-I201",
@@ -88,6 +88,102 @@
       "new_id": "UC-ADV14-P200",
       "prior_id": null,
       "reason": "第十四辑新模型需和此前全部核心公式逐式人工审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I205",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I206",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I207",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-I208",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A205",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A206",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A207",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-A208",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O201",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O202",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O203",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O204",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P201",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P202",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P203",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-P204",
+      "prior_id": null,
+      "reason": "新模型需与此前所有辑的核心公式及题目逐式比对，未认证独立原创。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -175,6 +271,102 @@
       "model_family": "series-thermal-resistance-bilayer-composite-interface-temperature",
       "judgement": "pending_human_comparison",
       "screening": "机器数值答案复算，不等同专家科学性与原创性认可。"
+    },
+    {
+      "new_id": "UC-ADV14-I205",
+      "model_family": "FeII-spin-crossover-degeneracy-vanthoff-magnetic-populations",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-I206",
+      "model_family": "CaMg-EDTA-conditional-protonation-competitive-chelation-inventory",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-I207",
+      "model_family": "ceria-oxygen-vacancy-CeIII-charge-compensation-oxygen-evolution",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-I208",
+      "model_family": "copper-I-disproportionation-redox-potentials-stable-quadratic-equilibrium",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-A205",
+      "model_family": "isotope-dilution-mass-spectrometry-heavy-light-ratio-exact-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-A206",
+      "model_family": "three-wavelength-two-analyte-common-baseline-linear-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-A207",
+      "model_family": "time-resolved-fluorescence-two-lifetimes-amplitude-inversion-photon-area",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-A208",
+      "model_family": "chronoamperometry-Cottrell-current-integral-diffusion-coefficient",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-O201",
+      "model_family": "copolymer-MayoLewis-reactivity-ratios-instantaneous-composition-drift",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-O202",
+      "model_family": "kinetic-resolution-racemate-two-firstorder-enantiomer-consumption-ee",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-O203",
+      "model_family": "DielsAlder-endo-exo-activation-enthalpy-entropy-branching-temperature",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-O204",
+      "model_family": "radical-polymerization-steady-state-initiator-efficiency-termination-chainlength",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-P201",
+      "model_family": "Debye-dielectric-relaxation-complex-permittivity-loss-peak",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-P202",
+      "model_family": "classical-homogeneous-nucleation-spherical-barrier-critical-radius",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-P203",
+      "model_family": "rotating-disk-electrode-Levich-Koutecky-current-rotation-scaling",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
+    },
+    {
+      "new_id": "UC-ADV14-P204",
+      "model_family": "virial-pressure-gas-compressibility-fugacity-residual-Gibbs",
+      "judgement": "pending_human_comparison",
+      "screening": "数值公式复算不等于独立数值见证、专家审稿或跨辑原创性批准。"
     }
   ]
 }
