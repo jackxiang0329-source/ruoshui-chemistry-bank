@@ -128,6 +128,19 @@ Object.assign(witnesses,{
 "UC-ADV14-A224":()=>{let cell=1.5456,conductance1=1/300,conductance2=1/800,s1=cell*conductance1,s2=cell*conductance2;return[cell,s1,s2,s1*1000,s2*1000,800/300,s1/s2,2*cell,conductance1,1/120]}
 });
 
+Object.assign(witnesses,{
+"UC-ADV14-O211":()=>{let x=.01*Math.exp(Math.log(10)*2*.3),y=.01*Math.exp(Math.log(10)*2*(-.2));return[x,y,10**.6,10**(-.4),10**(2*(.3+.2)),-Math.expm1(-60*x),-Math.expm1(-60*y),Math.log(2)/x,Math.log(2)/y,-R*298.15*(2*(.3+.2)*Math.log(10))/1000]},
+"UC-ADV14-O212":()=>{let c=.1,k=4,r=Math.sqrt(k),a=c*r/(1+r),w=.01,b=(2*k*c+w-Math.sqrt(w*w+4*k*c*w))/(2*k);return[a,c-a,c-a,a,a,a/c,r,k,b,b/c]},
+"UC-ADV14-O213":()=>{let a=500000,b=200000,total=a+b,F=a/total,x=-Math.expm1(-.6),C=.01;return[a,total,F,b/total,x,C*x*F,C*x*b/total,C*Math.exp(-.6),1/total,2.5,250000/(250000+b)]},
+"UC-ADV14-O214":()=>{let H=p=>Math.pow(10,-p),O=p=>1e-14/H(p),rate=p=>10*H(p)+100000*O(p)+.002,r1=rate(4),r2=rate(9);return[10*H(4),1e5*O(4),r1,10*H(9),1e5*O(9),r2,-Math.expm1(-r1*100),-Math.expm1(-r2*100),.01*Math.exp(-r1*100),.01*Math.exp(-r2*100),5]},
+"UC-ADV14-O215":()=>{let n=2,c=.001,init=1e-8,t=n*c/init,obs=20000,dur=Math.max(0,obs-t),prod=3e-7*dur,base=3e-7*obs;return[n*c,t,dur,prod,base,(base-prod)/base,c-init*1e4/n,c*n/(2*init),Math.min(1,t/obs),prod/base]},
+"UC-ADV14-O216":()=>{let f=.022/.035,z=f*(1-Math.exp(-3.5)),dark=.002/.01;return[.022,.013,f,.022/.013,1/.035,.01*z,.01*(1-z),dark,f-dark,.01]},
+"UC-ADV14-O217":()=>{let q=.2,p=1-q,En=1/q,En2=(1+p)/(q*q),W=En2/En;return[En,W,En2/(En*En),100*En,100*W,p**9,p**9*(10-9*p),p/(q*q),q,q*p]},
+"UC-ADV14-O218":()=>{let act=T=>80000+50*T,rate=T=>1.380649e-23*T/(6.62607015e-34)*Math.exp(-act(T)/(8.314462618*T)),r1=rate(300),r2=rate(350);return[act(300)/1000,act(350)/1000,r1,r2,Math.log(2)/r1,Math.log(2)/r2,r2/r1,-80000/R,350/300,-50]},
+"UC-ADV14-O219":()=>{let lam=.016,f=t=>Math.exp(-lam*t),x=f(30),y=f(100);return[lam,Math.log(2)/lam,.01*x,.01*y,.01*(1-x),.01*(1-y),1-x,1-y,1.6e-4,1.6e-4*y]},
+"UC-ADV14-O220":()=>{let K=3,frac=1/(1+K),lam=.1*frac,u=Math.exp(-lam*20),v=Math.exp(-lam*60);return[frac,K/(1+K),lam,.02*u,.02*v,.02*(1-u),.02*(1-v),1-u,Math.log(2)/lam,1/frac]}
+});
+
 const starts={inorganic:["I",201],analytical:["A",201],organic:["O",198],physical:["P",198]};
 const allIDs=new Set(),titles=new Set(),families=new Set(),counts={};
 for(const [sub,[L,start]] of Object.entries(starts)){

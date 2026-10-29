@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 14,
   "status": "expert_review_pending",
-  "current_draft_count": 74,
+  "current_draft_count": 84,
   "expert_approved": 0,
-  "preliminary_flags": 89,
+  "preliminary_flags": 99,
   "pairs": [
     {
       "new_id": "UC-ADV14-I201",
@@ -554,6 +554,66 @@
       "prior_id": null,
       "reason": "需人工与前十三辑全部相似模型比对。",
       "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O211",
+      "prior_id": null,
+      "reason": "需与之前所有辑别相似有机反应和方程逐式比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O212",
+      "prior_id": null,
+      "reason": "需与之前所有辑别相似有机反应和方程逐式比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O213",
+      "prior_id": null,
+      "reason": "需与之前所有辑别相似有机反应和方程逐式比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O214",
+      "prior_id": null,
+      "reason": "需与之前所有辑别相似有机反应和方程逐式比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O215",
+      "prior_id": null,
+      "reason": "需与之前所有辑别相似有机反应和方程逐式比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O216",
+      "prior_id": null,
+      "reason": "需与之前所有辑别相似有机反应和方程逐式比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O217",
+      "prior_id": null,
+      "reason": "需与之前所有辑别相似有机反应和方程逐式比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O218",
+      "prior_id": null,
+      "reason": "需与之前所有辑别相似有机反应和方程逐式比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O219",
+      "prior_id": null,
+      "reason": "需与之前所有辑别相似有机反应和方程逐式比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV14-O220",
+      "prior_id": null,
+      "reason": "需与之前所有辑别相似有机反应和方程逐式比对。",
+      "judgement": "pending_human_comparison"
     }
   ],
   "new_items_requiring_cross_series_comparison": [
@@ -1000,6 +1060,66 @@
       "model_family": "conductivity-cell-constant-reference-calibration",
       "judgement": "pending_human_comparison",
       "screening": "独立数值计算已实现，专家科学性与原创性未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-O211",
+      "model_family": "Hammett-rho-sigma-aromatic-nucleophilic-reaction",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值核算已执行，人工审核仍未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-O212",
+      "model_family": "reversible-esterification-second-order-equilibrium-quadratic",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值核算已执行，人工审核仍未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-O213",
+      "model_family": "SN1-ion-pair-competing-trapping-pseudofirst-order",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值核算已执行，人工审核仍未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-O214",
+      "model_family": "anhydride-hydrolysis-parallel-acid-base-catalysis",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值核算已执行，人工审核仍未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-O215",
+      "model_family": "radical-autoxidation-inhibitor-induction-time-stoichiometry",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值核算已执行，人工审核仍未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-O216",
+      "model_family": "alkene-photostationary-thermal-interconversion",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值核算已执行，人工审核仍未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-O217",
+      "model_family": "Schulz-Flory-distribution-exact-number-weight-moments",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值核算已执行，人工审核仍未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-O218",
+      "model_family": "Eyring-organic-thermal-fragmentation-activation-enthalpy-entropy",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值核算已执行，人工审核仍未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-O219",
+      "model_family": "reductive-amination-pseudo-firstorder-buffered-amine",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值核算已执行，人工审核仍未批准。"
+    },
+    {
+      "new_id": "UC-ADV14-O220",
+      "model_family": "conformer-gated-intramolecular-cyclization-two-state",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值核算已执行，人工审核仍未批准。"
     }
   ]
 }
