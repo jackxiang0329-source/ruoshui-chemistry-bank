@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 12,
   "status": "expert_review_pending",
-  "current_draft_count": 66,
+  "current_draft_count": 70,
   "expert_approved": 0,
-  "preliminary_flags": 66,
+  "preliminary_flags": 70,
   "pairs": [
     {
       "new_id": "UC-ADV12-I151",
@@ -400,6 +400,30 @@
       "new_id": "UC-ADV12-P163",
       "prior_id": null,
       "reason": "本轮尚未指定可确认的历史同构题；须以跨辑自动词汇初筛及专家逐式方程复核后判定新颖性。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-I168",
+      "prior_id": null,
+      "reason": "尚待全历史候选相近模型的逐式比较；自动词汇查重只用于发现可能相似项，不构成独立原创性证书。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-A168",
+      "prior_id": null,
+      "reason": "尚待全历史候选相近模型的逐式比较；自动词汇查重只用于发现可能相似项，不构成独立原创性证书。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-O164",
+      "prior_id": null,
+      "reason": "尚待全历史候选相近模型的逐式比较；自动词汇查重只用于发现可能相似项，不构成独立原创性证书。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV12-P164",
+      "prior_id": null,
+      "reason": "尚待全历史候选相近模型的逐式比较；自动词汇查重只用于发现可能相似项，不构成独立原创性证书。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -799,6 +823,30 @@
       "model_family": "Randles-Rs-Rct-parallel-Cdl-complex-impedance-Nyquist-inverse",
       "judgement": "pending_human_comparison",
       "screening": "数学答案经独立函数复算；跨辑数学同构、实验科学性和版权待专家审核。"
+    },
+    {
+      "new_id": "UC-ADV12-I168",
+      "model_family": "spinel-cation-inversion-ideal-sublattice-entropy-convex-gibbs-temperature",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值复算通过后进入人工化学和数学模型审核；禁止计入正式批准题库。"
+    },
+    {
+      "new_id": "UC-ADV12-A168",
+      "model_family": "TGA-hydrate-unknown-stoichiometry-sulfate-carbonate-sequential-gas-mass-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值复算通过后进入人工化学和数学模型审核；禁止计入正式批准题库。"
+    },
+    {
+      "new_id": "UC-ADV12-O164",
+      "model_family": "parallel-SN1-E2-hammett-two-channel-beta-deuterium-KIE-branching-product-mass-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值复算通过后进入人工化学和数学模型审核；禁止计入正式批准题库。"
+    },
+    {
+      "new_id": "UC-ADV12-P164",
+      "model_family": "Onsager-coupled-solute-energy-flux-reciprocity-positive-entropy-blocked-adiabatic-uphill",
+      "judgement": "pending_human_comparison",
+      "screening": "独立数值复算通过后进入人工化学和数学模型审核；禁止计入正式批准题库。"
     }
   ]
 }
