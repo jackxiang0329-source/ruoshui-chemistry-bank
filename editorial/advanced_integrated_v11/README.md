@@ -1,13 +1,13 @@
 # 第十一辑 · 大学化学高阶综合题（进行中）
-本辑目标100题：无机、分析、有机、物化各25。当前**69/100**，无机18、分析17、有机17、物化17；完整题目及解析见 [8题中文解答](8_advanced_chemistry_solutions.md)。
+本辑目标100题：无机、分析、有机、物化各25。当前**73/100**，无机19、分析18、有机18、物化18；完整题目及解析见 [8题中文解答](8_advanced_chemistry_solutions.md)。
 | 学科 | 数量 | 题号 | 结构化源稿 |
 |---|---:|---|---|
-| 无机化学 | 18/25 | I126–I143 | [inorganic.jsonl](inorganic.jsonl) |
-| 分析化学 | 17/25 | A126–A142 | [analytical.jsonl](analytical.jsonl) |
-| 有机化学 | 17/25 | O123–O139 | [organic.jsonl](organic.jsonl) |
-| 物理化学 | 17/25 | P123–P139 | [physical.jsonl](physical.jsonl) |
+| 无机化学 | 19/25 | I126–I144 | [inorganic.jsonl](inorganic.jsonl) |
+| 分析化学 | 18/25 | A126–A143 | [analytical.jsonl](analytical.jsonl) |
+| 有机化学 | 18/25 | O123–O140 | [organic.jsonl](organic.jsonl) |
+| 物理化学 | 18/25 | P123–P140 | [physical.jsonl](physical.jsonl) |
 
-每题至少7个实质推导步骤，并由 [独立答案向量脚本](../../scripts/check-advanced-authored-v11.mjs) 全量复算；对跨辑核心模型进行人工复核的队列见 [overlap_review_queue.json](overlap_review_queue.json)。自动数值核对不等于科学专家审定或原创性认证。**所有69题均publishable=false，正式批准0。** 续编应按每科递增题号，先检查main SHA与已提交记录，不得重复或用参数变式凑数。
+每题至少7个实质推导步骤，并由 [独立答案向量脚本](../../scripts/check-advanced-authored-v11.mjs) 全量复算；对跨辑核心模型进行人工复核的队列见 [overlap_review_queue.json](overlap_review_queue.json)。自动数值核对不等于科学专家审定或原创性认证。**所有73题均publishable=false，正式批准0。** 续编应按每科递增题号，先检查main SHA与已提交记录，不得重复或用参数变式凑数。
 
 最新四题：[I128/A128/O125/P125中文解析](continuation_I128_A128_O125_P125.md)。
 
@@ -44,3 +44,5 @@
 续编新增：[O138/P138完整中文解析](continuation_O138_P138.md)。下一题号I143/A142/O139/P139。
 
 本轮新增四题：[I143/A142/O139/P139完整分步解析](continuation_I143_A142_O139_P139.md)，下次从I144/A143/O140/P140继续。
+
+新增四题：[I144/A143/O140/P140完整分步解析](continuation_I144_A143_O140_P140.md)，下一题号I145/A144/O141/P141。

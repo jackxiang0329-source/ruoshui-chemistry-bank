@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": "advanced_integrated_v11",
   "status": "manual_cross_series_review_required",
-  "current_draft_count": 69,
+  "current_draft_count": 73,
   "expert_approved": 0,
-  "preliminary_flags": 34,
+  "preliminary_flags": 38,
   "pairs": [
     {
       "new_id": "UC-ADV11-O123",
@@ -208,6 +208,30 @@
       "new_id": "UC-ADV11-P139",
       "prior_id": "UC-ADV10-P117",
       "reason": "相关领域有相似物理化学概念；本题的核心状态方程、守恒及可识别性必须与历史题人工逐式比较。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-I144",
+      "prior_id": "UC-ADV11-I141",
+      "reason": "与先前磁性/结合/聚合/统计模型存在背景重叠，新数学结构须经专家逐式核验；禁止参数变式直接发布。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-A143",
+      "prior_id": "UC-ADV11-O132",
+      "reason": "与先前磁性/结合/聚合/统计模型存在背景重叠，新数学结构须经专家逐式核验；禁止参数变式直接发布。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-O140",
+      "prior_id": "UC-ADV10-O109",
+      "reason": "与先前磁性/结合/聚合/统计模型存在背景重叠，新数学结构须经专家逐式核验；禁止参数变式直接发布。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV11-P140",
+      "prior_id": "UC-ADV10-P124",
+      "reason": "与先前磁性/结合/聚合/统计模型存在背景重叠，新数学结构须经专家逐式核验；禁止参数变式直接发布。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -625,6 +649,30 @@
       "model_family": "three-state-unicyclic-chemical-motor-Markov-affinity-entropy-production-winding-variance",
       "judgement": "pending_human_comparison",
       "screening": "独立主答案函数已编写并在GitHub QA中核对，仍需人类专家核验全库方程同构、化学假设和原创新颖性。"
+    },
+    {
+      "new_id": "UC-ADV11-I144",
+      "model_family": "superparamagnetic-Neel-Arrhenius-two-observation-windows-barrier-anisotropy-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "跨辑模型词项比对与独立数值witness已安排；方程层面数学同构、科学合理性及原创性未经人工专家认证。"
+    },
+    {
+      "new_id": "UC-ADV11-A143",
+      "model_family": "ITC-buffer-proton-linkage-enthalpy-two-buffer-quadratic-stoichiometric-binding",
+      "judgement": "pending_human_comparison",
+      "screening": "跨辑模型词项比对与独立数值witness已安排；方程层面数学同构、科学合理性及原创性未经人工专家认证。"
+    },
+    {
+      "new_id": "UC-ADV11-O140",
+      "model_family": "binary-copolymer-NMR-dyad-Markov-transition-runlength-entropy-rate-inference",
+      "judgement": "pending_human_comparison",
+      "screening": "跨辑模型词项比对与独立数值witness已安排；方程层面数学同构、科学合理性及原创性未经人工专家认证。"
+    },
+    {
+      "new_id": "UC-ADV11-P140",
+      "model_family": "Langevin-dipolar-rotational-partition-nonlinear-polarization-entropy-free-energy",
+      "judgement": "pending_human_comparison",
+      "screening": "跨辑模型词项比对与独立数值witness已安排；方程层面数学同构、科学合理性及原创性未经人工专家认证。"
     }
   ]
 }
