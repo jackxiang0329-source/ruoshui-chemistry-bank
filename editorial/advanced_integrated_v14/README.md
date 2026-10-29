@@ -5,3 +5,7 @@
 [首批14题](first_14_problems_I201_I204_A201_A204_O198_O200_P198_P200.md) · [第二批16题](batch02_16_problems_I205_I208_A205_A208_O201_O204_P201_P204.md) · [第三批16题](batch03_16_problems_I209_I212_A209_A212_O205_O208_P205_P208.md) · [第四批8题](batch04_8_problems_I213_I214_A213_A214_O209_O210_P209_P210.md)。四科JSONL及[数值QA](../../scripts/check-advanced-authored-v14.mjs)、[跨辑人工复核队列](overlap_review_queue.json)。
 
 接续I215、A215、O211、P211。专家批准0；正式发布0；新增题目`independent_numeric_check=false`，尚需独立实现与专家复核。
+
+## 跨辑高相似度风险（2026-10-29初筛）
+
+本轮40条编辑记录与第10–13辑400条旧稿的模型族词汇进行初筛，已在[交叉复核队列](overlap_review_queue.json)增加15组具体的既有题候选，其中10组相似度≥0.40，另5组相似度约0.33–0.38。**这并非证明15题重复，也不证明其余25题独立**；尤其经典成核、Carothers缩聚、Donnan凝胶、Diels–Alder分支、NaCl衍射、Poisson活性聚合与BET吸附的核心方程高度接近旧稿，必须逐式审查并在必要时替换。第1–9辑尚未完成同等筛查，不能把40条新增记录称作40种经验证的原创模型。全部继续维持不可发布、待专家审核。
