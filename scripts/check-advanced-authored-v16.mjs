@@ -63,6 +63,19 @@ Object.assign(witnesses,{
 "UC-ADV16-O260":()=>{const C=x=>{let z=x,y=2/Math.sqrt(Math.PI)*(2/3*z**3-2/5*z**5+1/7*z**7-1/27*z**9+1/132*z**11-1/780*z**13+1/5400*z**15);return y},a=2*Math.sqrt(3/200),b=2*Math.sqrt(3/800),p=C(a),q=C(b);return[25,100,5,10,25/3,100/3,a,b,p,q,p/q,5]}
 });
 
+Object.assign(witnesses,{
+"UC-ADV16-P251":()=>{let z=R*300,u=-10/z,v=-50/z;return[1+u,1+v,Math.exp(u),Math.exp(v),Math.exp(u),5*Math.exp(v),z/1e5-1e-4,z/5e5-1e-4,z/1e5,v,v-u,v-u]},
+"UC-ADV16-P252":()=>{let unit=R*298.15/F,x=unit*2*Math.LN10;return[100,2*Math.LN10,x,1000*x,-R*298.15*2*Math.LN10/1000,unit*Math.log(.1),unit*Math.log(.001),x,1000*unit*Math.LN10,unit*Math.LN10,2,.01*R*298.15*2*Math.LN10]},
+"UC-ADV16-P253":()=>{let X=.75,C=.5,heat=50000*C*X;return[10,3,X,.125,.375,heat/4000,298.15+heat/4000,heat,.0375,1875,.05,.0125]},
+"UC-ADV16-P254":()=>[75,150,2,300*R,600*R,R*(Math.log(75)+1),R*(Math.log(150)+1),R*Math.LN2,R,Math.log(75),4,300*R],
+"UC-ADV16-P255":()=>{let a=-.0509,c=-.509*Math.sqrt(.1),x=Math.pow(10,a),y=Math.pow(10,4*a),u=Math.pow(10,c),v=Math.pow(10,4*c);return[a,4*a,x,y,c,4*c,u,v,Math.pow(10,3*a),Math.pow(10,2*a),Math.pow(10,2*c),Math.pow(10,2*(c-a))]},
+"UC-ADV16-P256":()=>{let e=Math.SQRT2;return[3,1.75,(3+e)/2,(3-e)/2,1,-1.5,4,6,-2,4,0,1]},
+"UC-ADV16-P257":()=>{let x=1/3,a=Math.exp(x),b=Math.exp(-x),Z=2*(a+b),p=a/(a+b),q=b/(a+b),t=(a-b)/(a+b);return[Z,p,q,p/2,Math.exp(2*x),t,-100*t,-1.380649e-23*100*t,R*x*x*(1-t*t),Math.log(Z)-x*t,1,200]},
+"UC-ADV16-P258":()=>{let c=F/(2*R*298.15),a=.05*c,b=.1*c,j=1e-5*Math.exp(a),ratio=Math.exp(b-a),s=2*R*298.15*Math.LN10/F;return[a,b,j,j*ratio,ratio,s,1000*s,2*s,b-a,j*(ratio-1),2*j,2*j*ratio]},
+"UC-ADV16-P259":()=>{let delta=1/300-1/330,l=30000/R*delta,p=.2*Math.exp(l);return[p,Math.exp(l),l,1/(1/300-R/30000*Math.log(5)),1/(1/300-R/30000*Math.log(2.5)),30000/(R*90000),30000/(R*330**2),20000,1e5*p,R*l/delta,-delta]},
+"UC-ADV16-P260":()=>{let a=298.15,b=328.15,d=1/a-1/b,r=Math.exp(20000/R*d);return[1e-10,1e-10*r,r,1e-7,1e-7*r,r,5000,5000/r,1-1/r,Math.log(r),-d,R*Math.log(r)/d]}
+});
+
 const starts={inorganic:["I",251],analytical:["A",251],organic:["O",248],physical:["P",248]};
 const ids=new Set(),titles=new Set(),families=new Set(),counts={};
 for(const [sub,[letter,start]] of Object.entries(starts)){

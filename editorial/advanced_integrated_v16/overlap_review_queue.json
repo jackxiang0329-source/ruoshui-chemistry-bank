@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 16,
   "status": "expert_review_pending",
-  "current_draft_count": 44,
+  "current_draft_count": 54,
   "expert_approved": 0,
-  "preliminary_flags": 44,
+  "preliminary_flags": 54,
   "pairs": [
     {
       "new_id": "UC-ADV16-I251",
@@ -268,6 +268,66 @@
       "new_id": "UC-ADV16-O260",
       "prior_id": null,
       "reason": "需跨第1至16辑排查有机反应速率、聚合物统计与同位素模型的重复。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-P251",
+      "prior_id": null,
+      "reason": "待逐式检查与前15辑、此前物化主题的跨辑重复风险。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-P252",
+      "prior_id": null,
+      "reason": "待逐式检查与前15辑、此前物化主题的跨辑重复风险。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-P253",
+      "prior_id": null,
+      "reason": "待逐式检查与前15辑、此前物化主题的跨辑重复风险。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-P254",
+      "prior_id": null,
+      "reason": "待逐式检查与前15辑、此前物化主题的跨辑重复风险。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-P255",
+      "prior_id": null,
+      "reason": "待逐式检查与前15辑、此前物化主题的跨辑重复风险。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-P256",
+      "prior_id": null,
+      "reason": "待逐式检查与前15辑、此前物化主题的跨辑重复风险。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-P257",
+      "prior_id": null,
+      "reason": "待逐式检查与前15辑、此前物化主题的跨辑重复风险。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-P258",
+      "prior_id": null,
+      "reason": "待逐式检查与前15辑、此前物化主题的跨辑重复风险。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-P259",
+      "prior_id": null,
+      "reason": "待逐式检查与前15辑、此前物化主题的跨辑重复风险。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-P260",
+      "prior_id": null,
+      "reason": "待逐式检查与前15辑、此前物化主题的跨辑重复风险。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -535,6 +595,66 @@
       "model_family": "ideal-Gaussian-polymer-chain-end-contact-probability",
       "judgement": "pending_human_comparison",
       "screening": "双途径数值复算完成，但人工原创性审查未完成。"
+    },
+    {
+      "new_id": "UC-ADV16-P251",
+      "model_family": "second-virial-gas-compressibility-fugacity-pressure",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算通过，科学评审仍待专家完成。"
+    },
+    {
+      "new_id": "UC-ADV16-P252",
+      "model_family": "silver-ion-concentration-cell-Nernst-millivolts",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算通过，科学评审仍待专家完成。"
+    },
+    {
+      "new_id": "UC-ADV16-P253",
+      "model_family": "exothermic-CSTR-conversion-adiabatic-temperature-rise",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算通过，科学评审仍待专家完成。"
+    },
+    {
+      "new_id": "UC-ADV16-P254",
+      "model_family": "rigid-rotor-high-temperature-partition-entropy-energy",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算通过，科学评审仍待专家完成。"
+    },
+    {
+      "new_id": "UC-ADV16-P255",
+      "model_family": "Debye-Huckel-limiting-law-mono-divalent-activity-coefficient",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算通过，科学评审仍待专家完成。"
+    },
+    {
+      "new_id": "UC-ADV16-P256",
+      "model_family": "Onsager-reciprocity-two-flux-coupling-positive-definite",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算通过，科学评审仍待专家完成。"
+    },
+    {
+      "new_id": "UC-ADV16-P257",
+      "model_family": "Ising-two-spin-dimer-partition-correlation-heat-capacity",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算通过，科学评审仍待专家完成。"
+    },
+    {
+      "new_id": "UC-ADV16-P258",
+      "model_family": "electrode-Tafel-anodic-current-overpotential-slope",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算通过，科学评审仍待专家完成。"
+    },
+    {
+      "new_id": "UC-ADV16-P259",
+      "model_family": "Clausius-Clapeyron-vapor-pressure-boiling-temperature",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算通过，科学评审仍待专家完成。"
+    },
+    {
+      "new_id": "UC-ADV16-P260",
+      "model_family": "activated-diffusion-Arrhenius-two-temperatures-transport",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算通过，科学评审仍待专家完成。"
     }
   ]
 }

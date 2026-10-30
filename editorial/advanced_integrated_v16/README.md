@@ -1,8 +1,8 @@
 # 第十六辑 · 大学化学高阶原创综合题（专家待审）
 
-目标四科各25、合计100题。当前 **44/100**，无机14、分析14、有机13、物化3；专家批准0。
+目标四科各25、合计100题。当前 **54/100**，无机14、分析14、有机13、物化13；专家批准0。
 
-[无机4题](batch01_inorganic.md) · [分析4题](batch01_analytical.md) · [数值QA](../../scripts/check-advanced-authored-v16.mjs) · [跨辑审阅队列](overlap_review_queue.json)。每题提供完整中文题干、逐步解析与双途径复算。后续从 I265、A265、O261、P251 继续。
+[无机4题](batch01_inorganic.md) · [分析4题](batch01_analytical.md) · [数值QA](../../scripts/check-advanced-authored-v16.mjs) · [跨辑审阅队列](overlap_review_queue.json)。每题提供完整中文题干、逐步解析与双途径复算。后续从 I265、A265、O261、P261 继续。
 
 [有机 O248–O250 三题](batch01_organic.md)。
 
@@ -13,3 +13,7 @@
 [分析十题 A255–A264](batch02_analytical_A255_A264.md)，含Gran滴定、同位素稀释、DLS、双波长UV等数值复算。
 
 [有机十题 O251–O260](batch02_organic_O251_O260.md)，包括立体异构化、同位素交换、聚合链统计与酯交换。
+
+[物化10题 P251–P260](batch02_physical_P251_P260.md)，含维里气体、Nernst、传热、配分与Onsager。
+
+本轮全部新增40题（四科各10），每题有题干、方程、分步解析、数值结果及独立计算见证。全辑总数54/100，尚需科学专家及跨辑原创性审定。
