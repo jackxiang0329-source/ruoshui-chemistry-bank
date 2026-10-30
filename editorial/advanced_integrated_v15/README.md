@@ -1,8 +1,8 @@
 # 第十五辑 · 大学化学高阶题库（待专家审定）
 
-目标100道，四科各25。当前 **54/100**（无机19、分析19、有机8、物化8）。[无机I226–I234完整解析](first9_inorganic_I226_I234.md)，[跨辑复核队列](overlap_review_queue.json)，[数值向量QA脚本](../../scripts/check-advanced-authored-v15.mjs)。
+目标100道，四科各25。当前 **64/100**（无机19、分析19、有机18、物化8）。[无机I226–I234完整解析](first9_inorganic_I226_I234.md)，[跨辑复核队列](overlap_review_queue.json)，[数值向量QA脚本](../../scripts/check-advanced-authored-v15.mjs)。
 
-下一号 I245、A245、O231、P231。新题不是正式批准试题；数值见证暂非完全独立实现，`independent_numeric_check=false`。
+下一号 I245、A245、O241、P231。新题不是正式批准试题；数值见证暂非完全独立实现，`independent_numeric_check=false`。
 
 [第二批分析 A226–A234 九题](second9_analytical_A226_A234.md)。
 
@@ -13,3 +13,5 @@
 [新增无机10题 I235–I244：完整题目与逐步解析](batch02_inorganic_I235_I244.md)。本轮新增设有双路径独立数值见证，科学与版权人工审核仍未完成。
 
 [新增分析10题 A235–A244](batch02_analytical_A235_A244.md)，提供标准加入、库仑滴定、XRD、Raman、GC与荧光偏振等10个详细案例。仍需人工复核跨辑同构。
+
+[有机十题O231–O240完整题解](batch02_organic_O231_O240.md)。

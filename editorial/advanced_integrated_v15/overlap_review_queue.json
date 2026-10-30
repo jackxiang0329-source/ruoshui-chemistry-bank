@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 15,
   "status": "expert_review_pending",
-  "current_draft_count": 54,
+  "current_draft_count": 64,
   "expert_approved": 0,
-  "preliminary_flags": 54,
+  "preliminary_flags": 64,
   "pairs": [
     {
       "new_id": "UC-ADV15-I226",
@@ -328,6 +328,66 @@
       "new_id": "UC-ADV15-A244",
       "prior_id": null,
       "reason": "跨第1至15辑的分析测量模型逐式比较尚需人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O231",
+      "prior_id": null,
+      "reason": "跨辑模型族可能有构象、酰化、环化等相似类型；需专家逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O232",
+      "prior_id": null,
+      "reason": "跨辑模型族可能有构象、酰化、环化等相似类型；需专家逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O233",
+      "prior_id": null,
+      "reason": "跨辑模型族可能有构象、酰化、环化等相似类型；需专家逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O234",
+      "prior_id": null,
+      "reason": "跨辑模型族可能有构象、酰化、环化等相似类型；需专家逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O235",
+      "prior_id": null,
+      "reason": "跨辑模型族可能有构象、酰化、环化等相似类型；需专家逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O236",
+      "prior_id": null,
+      "reason": "跨辑模型族可能有构象、酰化、环化等相似类型；需专家逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O237",
+      "prior_id": null,
+      "reason": "跨辑模型族可能有构象、酰化、环化等相似类型；需专家逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O238",
+      "prior_id": null,
+      "reason": "跨辑模型族可能有构象、酰化、环化等相似类型；需专家逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O239",
+      "prior_id": null,
+      "reason": "跨辑模型族可能有构象、酰化、环化等相似类型；需专家逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O240",
+      "prior_id": null,
+      "reason": "跨辑模型族可能有构象、酰化、环化等相似类型；需专家逐式核对。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -655,6 +715,66 @@
       "model_family": "fluorescence-anisotropy-G-factor-polarization-two-samples",
       "judgement": "pending_human_comparison",
       "screening": "双路径数值复算已完成，实验效度及原创性未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV15-O231",
+      "model_family": "axial-equatorial-methylcyclohexane-thermodynamic-conformer",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值已复算，专家原创性审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O232",
+      "model_family": "living-chain-Poisson-Mn-Mw-moment-ratio",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值已复算，专家原创性审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O233",
+      "model_family": "thiol-Michael-two-nucleophiles-pseudo-first-branch",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值已复算，专家原创性审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O234",
+      "model_family": "acetalization-controlled-water-activity-yield",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值已复算，专家原创性审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O235",
+      "model_family": "imine-combinatorial-library-two-amines-mass-action",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值已复算，专家原创性审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O236",
+      "model_family": "copolymer-Markov-stationary-dyad-triad-information-entropy",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值已复算，专家原创性审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O237",
+      "model_family": "intramolecular-lactonization-amide-competition-effective-molarity",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值已复算，专家原创性审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O238",
+      "model_family": "electrocyclic-thermal-equilibrium-vanthoff-closed-fraction",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值已复算，专家原创性审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O239",
+      "model_family": "organolithium-monomer-dimer-equilibrium-nucleophilic-reactivity",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值已复算，专家原创性审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O240",
+      "model_family": "Boc-Fmoc-independent-firstorder-deprotection-distribution",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值已复算，专家原创性审核未完成。"
     }
   ]
 }
