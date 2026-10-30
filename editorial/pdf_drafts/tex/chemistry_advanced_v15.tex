@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第15辑 (64题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第15辑 (74题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -1512,6 +1512,236 @@ E1\_eV = 0.376030162 eV；E2\_eV = 1.50412065 eV；E3\_eV = 3.38427146 eV；gap1
 Vm\_x0p3 = 98.2 cm3/mol；Vm\_x0p7 = 90.2 cm3/mol；excess\_x0p3 = 4.2 cm3/mol；excess\_x0p7 = 4.2 cm3/mol；derivative\_x0p3 = -12 cm3/mol；derivative\_x0p7 = -28 cm3/mol；partial\_A\_x0p3 = 89.8 cm3/mol；partial\_B\_x0p3 = 101.8 cm3/mol；partial\_A\_x0p7 = 81.8 cm3/mol；partial\_B\_x0p7 = 109.8 cm3/mol；Euler\_balance\_x0p3 = 98.2 cm3/mol；positive\_excess\_flag = 1 boolean\par
 \noindent\textbf{模型前提：}
 题设的理想相互作用和边界条件；专家科学与学术独立性审核未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P231 · Young接触角、黏附功与毛细管上升的表面自由能}
+\noindent\textbf{题目}\par
+在298.15 K，一种理想液体的液气表面张力γLV=0.07200 N/m、固气表面自由能γSV=0.05000 N/m，在某平坦刚性固体上的平衡接触角θ=60.00°。Young方程为γSV=γSL+γLVcosθ，Dupré黏附功W=γLV+γSV−γSL。定义铺展系数S=γSV−γSL−γLV。液体在半径r=1.000 mm的竖直细管中，密度ρ=1000 kg/m³、重力g=9.810 m/s²，忽略重力导致的接触角变化、线张力和滞后。求γSL、W、S、cosθ、黏附/液气表面能比、毛细压差Δp=2γLVcosθ/r、平衡毛细上升高度Δp/(ρg)、接触角的弧度、两表面能γSV−γSL差及是否完全铺展(S≥0)。不要把mN/m与N/m混用。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 系统性质、控制量与理想化条件：在298.15 K，一种理想液体的液气表面张力γLV=0.07200 N/m、固气表面自由能γSV=0.05000 N/m，在某平坦刚性固体上的平衡接触角θ=60.00°。Young方程为γSV=γSL+γLVcosθ，Dupré黏附功W=γLV+γSV−γSL。定义铺展系数S=γSV−γSL−γLV。液体在半径r=1.000 mm的竖直细管中，密度ρ=1000 kg/m³、重力g=9.810 m/s²，忽略重力导致的接触角变化、线张力和滞后。求γSL、W、S、cosθ、黏附/液气表面能比、毛细压差Δp=2γLVcosθ/r、平衡毛细上升高度Δp/(ρg)、接触角的弧度、两表面能γSV−γSL差及是否完全铺展(S≥0)。不要把mN/m与N/m混用。
+\item 核心热力学、输运或统计物理方程：γSL=γSV−γLVcosθ，W=γLV(1+cosθ)，Δp=2γLVcosθ/r。
+\item 建立无量纲反应商、导数或者在SI制下的适当尺度转换，区分mol/L和mol/m³。
+\item 按照物理边界与守恒方程解出第一组量：gamma\_SL\_Nm = 0.014000000000000 N/m；work\_adhesion\_Nm = 0.10800000000000 N/m；spreading\_coefficient\_Nm = -0.036000000000000 N/m。
+\item 进一步得到响应量、相分布或动力学常数：cos\_theta = 0.50000000000000 ratio；adhesion\_to\_surface\_tension\_ratio = 1.5000000000000 ratio；capillary\_pressure\_Pa = 72.000000000000 Pa。
+\item 其余完整结果与反向核对：capillary\_height\_m = 0.0073394495412844 m；theta\_rad = 1.0471975511966 rad；gammaSV\_minus\_gammaSL = 0.036000000000000 N/m；complete\_wetting\_flag = 0.0000000000000 boolean。
+\item 用物料守恒、化学势相等、载流电中性或能量与界面作用的物理符号进行独立回代。
+\item 检查升温、浓度趋零、压力均衡或无驱动力极限，不将局部稳定性误判为全局相稳定性。
+\item 独立数字表达式逐一复算数值向量，并严格报告测量假设和误差模型的适用范围。
+\item 跨辑模型重复与实验真实性的专家审核尚未完成，不作为正式批准题目。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+gamma\_SL\_Nm = 0.014 N/m；work\_adhesion\_Nm = 0.108 N/m；spreading\_coefficient\_Nm = -0.036 N/m；cos\_theta = 0.5 ratio；adhesion\_to\_surface\_tension\_ratio = 1.5 ratio；capillary\_pressure\_Pa = 72 Pa；capillary\_height\_m = 0.00733944954 m；theta\_rad = 1.04719755 rad；gammaSV\_minus\_gammaSL = 0.036 N/m；complete\_wetting\_flag = 0 boolean\par
+\noindent\textbf{模型前提：}
+使用题设理想界面、统计配分、均匀介质与动力学边界，数值双路径复算不代表专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P232 · Debye屏蔽长度的离子强度依赖与双电层尺度}
+\noindent\textbf{题目}\par
+298.15 K下相对介电常数εr=78.50的理想水溶液含1:1完全解离电解质，离子强度分别I1=0.01000 mol/L、I2=0.1000 mol/L。按SI制Debye屏蔽长度λD=√[ε0εr RT/(2 F² ISI)]，其中ε0=8.8541878128×10⁻¹² F/m，ISI以mol/m³表示（1 mol/L=1000 mol/m³），R=8.314462618 J/(mol K)，F=96485.33212 C/mol。求两种盐浓度下λD(nm)、屏蔽长度比、两强度ISI、倒数屏蔽波数κ=1/λD(m⁻¹)、屏蔽长度平方及随离子强度增大十倍而缩短的系数与两个状态λD κ回代。忽略离子有限尺寸、电介质饱和、溶剂化和多价离子。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 系统性质、控制量与理想化条件：298.15 K下相对介电常数εr=78.50的理想水溶液含1:1完全解离电解质，离子强度分别I1=0.01000 mol/L、I2=0.1000 mol/L。按SI制Debye屏蔽长度λD=√[ε0εr RT/(2 F² ISI)]，其中ε0=8.8541878128×10⁻¹² F/m，ISI以mol/m³表示（1 mol/L=1000 mol/m³），R=8.314462618 J/(mol K)，F=96485.33212 C/mol。求两种盐浓度下λD(nm)、屏蔽长度比、两强度ISI、倒数屏蔽波数κ=1/λD(m⁻¹)、屏蔽长度平方及随离子强度增大十倍而缩短的系数与两个状态λD κ回代。忽略离子有限尺寸、电介质饱和、溶剂化和多价离子。
+\item 核心热力学、输运或统计物理方程：λD²=ε0 εr RT/(2 F² I×1000)，λD∝I\textasciicircum{}(−1/2)。
+\item 建立无量纲反应商、导数或者在SI制下的适当尺度转换，区分mol/L和mol/m³。
+\item 按照物理边界与守恒方程解出第一组量：lambdaD\_I0p01\_nm = 3.0420573603041 nm；lambdaD\_I0p1\_nm = 0.96198300314404 nm；length\_ratio\_low\_high = 3.1622776601684 ratio。
+\item 进一步得到响应量、相分布或动力学常数：I1\_mol\_m3 = 10.000000000000 mol/m3；I2\_mol\_m3 = 100.00000000000 mol/m3；kappa1\_mInv = 328724899.48712 m\textasciicircum{}-1。
+\item 其余完整结果与反向核对：kappa2\_mInv = 1039519405.9892 m\textasciicircum{}-1；lambdaD\_squared1\_m2 = 9.2541129833803e-18 m2；length\_shortening\_factor = 3.1622776601684 ratio；screening\_identity\_lam1\_kappa1 = 1.0000000000000 ratio。
+\item 用物料守恒、化学势相等、载流电中性或能量与界面作用的物理符号进行独立回代。
+\item 检查升温、浓度趋零、压力均衡或无驱动力极限，不将局部稳定性误判为全局相稳定性。
+\item 独立数字表达式逐一复算数值向量，并严格报告测量假设和误差模型的适用范围。
+\item 跨辑模型重复与实验真实性的专家审核尚未完成，不作为正式批准题目。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+lambdaD\_I0p01\_nm = 3.04205736 nm；lambdaD\_I0p1\_nm = 0.961983003 nm；length\_ratio\_low\_high = 3.16227766 ratio；I1\_mol\_m3 = 10 mol/m3；I2\_mol\_m3 = 100 mol/m3；kappa1\_mInv = 328724899 m\textasciicircum{}-1；kappa2\_mInv = 1.03951941e+09 m\textasciicircum{}-1；lambdaD\_squared1\_m2 = 9.25411298e-18 m2；length\_shortening\_factor = 3.16227766 ratio；screening\_identity\_lam1\_kappa1 = 1 ratio\par
+\noindent\textbf{模型前提：}
+使用题设理想界面、统计配分、均匀介质与动力学边界，数值双路径复算不代表专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P233 · N₂理想分子的Maxwell–Boltzmann最概然、平均与均方根速率}
+\noindent\textbf{题目}\par
+气相N₂分子理想平衡，摩尔质量M=28.0134 g/mol，在T1=300.0、T2=600.0 K下服从Maxwell–Boltzmann速率分布。R=8.314462618 J/(mol K)。最概然速率vmp=√(2RT/M)、平均速率vavg=√(8RT/(πM))、均方根速率vrms=√(3RT/M)，M须换算为kg/mol。求两温度各三种速率(m/s)、两温度vrms之比、300K的vavg/vmp、两温度每mol平动动能U=3RT/2及高温相对低温的能量比。说明这三种速率都不同，不能把分子平均速率等同于气体声速。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 系统性质、控制量与理想化条件：气相N₂分子理想平衡，摩尔质量M=28.0134 g/mol，在T1=300.0、T2=600.0 K下服从Maxwell–Boltzmann速率分布。R=8.314462618 J/(mol K)。最概然速率vmp=√(2RT/M)、平均速率vavg=√(8RT/(πM))、均方根速率vrms=√(3RT/M)，M须换算为kg/mol。求两温度各三种速率(m/s)、两温度vrms之比、300K的vavg/vmp、两温度每mol平动动能U=3RT/2及高温相对低温的能量比。说明这三种速率都不同，不能把分子平均速率等同于气体声速。
+\item 核心热力学、输运或统计物理方程：vmp=√(2RT/M)，vavg=√(8RT/(πM))，vrms=√(3RT/M)，U=3RT/2。
+\item 建立无量纲反应商、导数或者在SI制下的适当尺度转换，区分mol/L和mol/m³。
+\item 按照物理边界与守恒方程解出第一组量：vmp300 = 421.99743035193 m/s；vavg300 = 476.17310897695 m/s；vrms300 = 516.83918856395 m/s。
+\item 进一步得到响应量、相分布或动力学常数：vmp600 = 596.79448929029 m/s；vavg600 = 673.41046875257 m/s；vrms600 = 730.92099003304 m/s。
+\item 其余完整结果与反向核对：rms\_ratio = 1.4142135623731 ratio；avg\_over\_mostprobable\_300 = 1.1283791670955 ratio；translational\_U300\_Jmol = 3741.5081781000 J/mol；translational\_U600\_Jmol = 7483.0163562000 J/mol；energy\_ratio = 2.0000000000000 ratio。
+\item 用物料守恒、化学势相等、载流电中性或能量与界面作用的物理符号进行独立回代。
+\item 检查升温、浓度趋零、压力均衡或无驱动力极限，不将局部稳定性误判为全局相稳定性。
+\item 独立数字表达式逐一复算数值向量，并严格报告测量假设和误差模型的适用范围。
+\item 跨辑模型重复与实验真实性的专家审核尚未完成，不作为正式批准题目。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+vmp300 = 421.99743 m/s；vavg300 = 476.173109 m/s；vrms300 = 516.839189 m/s；vmp600 = 596.794489 m/s；vavg600 = 673.410469 m/s；vrms600 = 730.92099 m/s；rms\_ratio = 1.41421356 ratio；avg\_over\_mostprobable\_300 = 1.12837917 ratio；translational\_U300\_Jmol = 3741.50818 J/mol；translational\_U600\_Jmol = 7483.01636 J/mol；energy\_ratio = 2 ratio\par
+\noindent\textbf{模型前提：}
+使用题设理想界面、统计配分、均匀介质与动力学边界，数值双路径复算不代表专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P234 · 正则溶液χ参数的自旋odal失稳判据与组成边界}
+\noindent\textbf{题目}\par
+假想理想混合熵加正则溶液焓的二元液体，混合Gibbs自由能每mol以RT归一后g(x)=xlnx+(1−x)ln(1−x)+χ x(1−x)，其中x为A的摩尔分率，χ=3.000，T=300.0 K。二阶曲率g''(x)=1/x+1/(1−x)−2χ，若g''<0为均一相局部不稳定。求在x=0.5000和0.1000时的曲率及g值、两自旋odal边界x±=[1±√(1−2/χ)]/2、临界χc=2、对称点x=0.5时混合自由能J/mol、两个测试组成的稳定判别数字标志(1为稳定，0为不稳定)以及自旋odal区间宽度和曲率在临界χc,x=.5时的值。注意局部稳定不是证明全局单相热力学最稳。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 系统性质、控制量与理想化条件：假想理想混合熵加正则溶液焓的二元液体，混合Gibbs自由能每mol以RT归一后g(x)=xlnx+(1−x)ln(1−x)+χ x(1−x)，其中x为A的摩尔分率，χ=3.000，T=300.0 K。二阶曲率g''(x)=1/x+1/(1−x)−2χ，若g''<0为均一相局部不稳定。求在x=0.5000和0.1000时的曲率及g值、两自旋odal边界x±=[1±√(1−2/χ)]/2、临界χc=2、对称点x=0.5时混合自由能J/mol、两个测试组成的稳定判别数字标志(1为稳定，0为不稳定)以及自旋odal区间宽度和曲率在临界χc,x=.5时的值。注意局部稳定不是证明全局单相热力学最稳。
+\item 核心热力学、输运或统计物理方程：g=xlnx+(1−x)ln(1−x)+χx(1−x)，g''=1/[x(1−x)]−2χ。
+\item 建立无量纲反应商、导数或者在SI制下的适当尺度转换，区分mol/L和mol/m³。
+\item 按照物理边界与守恒方程解出第一组量：curvature\_x0p5 = -2.0000000000000 ratio；curvature\_x0p1 = 5.1111111111111 ratio；g\_x0p5 = 0.056852819440055 ratio。
+\item 进一步得到响应量、相分布或动力学常数：g\_x0p1 = -0.055082973391448 ratio；spinodal\_lower = 0.21132486540519 fraction；spinodal\_upper = 0.78867513459481 fraction。
+\item 其余完整结果与反向核对：critical\_chi = 2.0000000000000 ratio；mixing\_G\_x0p5\_Jmol = 141.81019258867 J/mol；stable\_flag\_x0p5 = 0.0000000000000 boolean；stable\_flag\_x0p1 = 1.0000000000000 boolean；spinodal\_width = 0.57735026918963 fraction；curvature\_at\_critical\_center = 0.0000000000000 ratio。
+\item 用物料守恒、化学势相等、载流电中性或能量与界面作用的物理符号进行独立回代。
+\item 检查升温、浓度趋零、压力均衡或无驱动力极限，不将局部稳定性误判为全局相稳定性。
+\item 独立数字表达式逐一复算数值向量，并严格报告测量假设和误差模型的适用范围。
+\item 跨辑模型重复与实验真实性的专家审核尚未完成，不作为正式批准题目。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+curvature\_x0p5 = -2 ratio；curvature\_x0p1 = 5.11111111 ratio；g\_x0p5 = 0.0568528194 ratio；g\_x0p1 = -0.0550829734 ratio；spinodal\_lower = 0.211324865 fraction；spinodal\_upper = 0.788675135 fraction；critical\_chi = 2 ratio；mixing\_G\_x0p5\_Jmol = 141.810193 J/mol；stable\_flag\_x0p5 = 0 boolean；stable\_flag\_x0p1 = 1 boolean；spinodal\_width = 0.577350269 fraction；curvature\_at\_critical\_center = 0 ratio\par
+\noindent\textbf{模型前提：}
+使用题设理想界面、统计配分、均匀介质与动力学边界，数值双路径复算不代表专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P235 · 纯非竞争酶抑制的Vmax下降与Michaelis常数不变}
+\noindent\textbf{题目}\par
+某水相单底物酶催化反应在无抑制剂时遵循v=Vmax S/(Km+S)，Vmax=1.000×10⁻⁵ mol/(L s)，Km=0.003000 mol/L。纯非竞争抑制剂I的游离浓度固定[I]=0.002000 M，抑制常数Ki=0.001000 M，均匀作用于游离酶与ES且其亲和力相同。有效α=1+[I]/Ki，Vmax,app=Vmax/α，Km不变。计算α、表观Vmax、Km、在S=0.002000和0.01000 M时有无抑制剂的四个反应速度、两处受抑制/无抑制的速度比、S=Km时受抑制速度、达到Vmax,app一半的底物浓度及最大速度被降低的分率。这个“纯”模型不能扩展到混合抑制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 系统性质、控制量与理想化条件：某水相单底物酶催化反应在无抑制剂时遵循v=Vmax S/(Km+S)，Vmax=1.000×10⁻⁵ mol/(L s)，Km=0.003000 mol/L。纯非竞争抑制剂I的游离浓度固定[I]=0.002000 M，抑制常数Ki=0.001000 M，均匀作用于游离酶与ES且其亲和力相同。有效α=1+[I]/Ki，Vmax,app=Vmax/α，Km不变。计算α、表观Vmax、Km、在S=0.002000和0.01000 M时有无抑制剂的四个反应速度、两处受抑制/无抑制的速度比、S=Km时受抑制速度、达到Vmax,app一半的底物浓度及最大速度被降低的分率。这个“纯”模型不能扩展到混合抑制。
+\item 核心热力学、输运或统计物理方程：α=1+I/Ki，v\_inhib=Vmax S/[α(Km+S)]。
+\item 建立无量纲反应商、导数或者在SI制下的适当尺度转换，区分mol/L和mol/m³。
+\item 按照物理边界与守恒方程解出第一组量：inhibition\_factor = 3.0000000000000 ratio；Vmax\_app\_Ms = 0.0000033333333333333 mol/(Ls)；Km\_M = 0.0030000000000000 mol/L。
+\item 进一步得到响应量、相分布或动力学常数：uninh\_rate\_S0p002 = 0.0000040000000000000 mol/(Ls)；inhib\_rate\_S0p002 = 0.0000013333333333333 mol/(Ls)；uninh\_rate\_S0p01 = 0.0000076923076923077 mol/(Ls)。
+\item 其余完整结果与反向核对：inhib\_rate\_S0p01 = 0.0000025641025641026 mol/(Ls)；rate\_ratio\_S0p002 = 0.33333333333333 ratio；rate\_ratio\_S0p01 = 0.33333333333333 ratio；rate\_inhib\_at\_Km = 0.0000016666666666667 mol/(Ls)；halfVmax\_substrate\_M = 0.0030000000000000 mol/L；fraction\_Vmax\_lost = 0.66666666666667 fraction。
+\item 用物料守恒、化学势相等、载流电中性或能量与界面作用的物理符号进行独立回代。
+\item 检查升温、浓度趋零、压力均衡或无驱动力极限，不将局部稳定性误判为全局相稳定性。
+\item 独立数字表达式逐一复算数值向量，并严格报告测量假设和误差模型的适用范围。
+\item 跨辑模型重复与实验真实性的专家审核尚未完成，不作为正式批准题目。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+inhibition\_factor = 3 ratio；Vmax\_app\_Ms = 3.33333333e-06 mol/(Ls)；Km\_M = 0.003 mol/L；uninh\_rate\_S0p002 = 4e-06 mol/(Ls)；inhib\_rate\_S0p002 = 1.33333333e-06 mol/(Ls)；uninh\_rate\_S0p01 = 7.69230769e-06 mol/(Ls)；inhib\_rate\_S0p01 = 2.56410256e-06 mol/(Ls)；rate\_ratio\_S0p002 = 0.333333333 ratio；rate\_ratio\_S0p01 = 0.333333333 ratio；rate\_inhib\_at\_Km = 1.66666667e-06 mol/(Ls)；halfVmax\_substrate\_M = 0.003 mol/L；fraction\_Vmax\_lost = 0.666666667 fraction\par
+\noindent\textbf{模型前提：}
+使用题设理想界面、统计配分、均匀介质与动力学边界，数值双路径复算不代表专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P236 · 双热电腿Seebeck电压、匹配负载功率及内阻效应}
+\noindent\textbf{题目}\par
+某假想固体热电化学测量装置由A/B两种均匀热电腿构成，温差ΔT=30.00 K，Seebeck系数SA=+200.0 μV/K、SB=−50.00 μV/K，装置内电阻Rint=5.000 Ω，忽略温度依赖、热接触电势及Peltier回流。开路电动势V\_oc=(SA−SB)ΔT。外负载RL=Rint时求最大输出功率Pmax=Voc²/(4Rint)、匹配负载电流、电压、外负载耗散与内阻耗散、短路电流、开路电压的mV值、两个Seebeck电势贡献和开路等效温差对电压比例。说明匹配负载得到最大输出功率不等于装置热电效率最优。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 系统性质、控制量与理想化条件：某假想固体热电化学测量装置由A/B两种均匀热电腿构成，温差ΔT=30.00 K，Seebeck系数SA=+200.0 μV/K、SB=−50.00 μV/K，装置内电阻Rint=5.000 Ω，忽略温度依赖、热接触电势及Peltier回流。开路电动势V\_oc=(SA−SB)ΔT。外负载RL=Rint时求最大输出功率Pmax=Voc²/(4Rint)、匹配负载电流、电压、外负载耗散与内阻耗散、短路电流、开路电压的mV值、两个Seebeck电势贡献和开路等效温差对电压比例。说明匹配负载得到最大输出功率不等于装置热电效率最优。
+\item 核心热力学、输运或统计物理方程：Voc=(SA−SB)ΔT，Ishort=Voc/Rint，Imatched=Voc/(2Rint)，Pmax=Voc²/(4Rint)。
+\item 建立无量纲反应商、导数或者在SI制下的适当尺度转换，区分mol/L和mol/m³。
+\item 按照物理边界与守恒方程解出第一组量：Seebeck\_difference\_uVperK = 250.00000000000 uV/K；open\_circuit\_voltage\_V = 0.0075000000000000 V；open\_circuit\_voltage\_mV = 7.5000000000000 mV。
+\item 进一步得到响应量、相分布或动力学常数：matched\_current\_A = 0.00075000000000000 A；matched\_load\_voltage\_V = 0.0037500000000000 V；max\_power\_W = 0.0000028125000000000 W。
+\item 其余完整结果与反向核对：short\_circuit\_current\_A = 0.0015000000000000 A；load\_dissipation\_W = 0.0000028125000000000 W；internal\_dissipation\_W = 0.0000028125000000000 W；A\_Seebeck\_voltage\_V = 0.0060000000000000 V；B\_Seebeck\_voltage\_V = -0.0015000000000000 V。
+\item 用物料守恒、化学势相等、载流电中性或能量与界面作用的物理符号进行独立回代。
+\item 检查升温、浓度趋零、压力均衡或无驱动力极限，不将局部稳定性误判为全局相稳定性。
+\item 独立数字表达式逐一复算数值向量，并严格报告测量假设和误差模型的适用范围。
+\item 跨辑模型重复与实验真实性的专家审核尚未完成，不作为正式批准题目。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Seebeck\_difference\_uVperK = 250 uV/K；open\_circuit\_voltage\_V = 0.0075 V；open\_circuit\_voltage\_mV = 7.5 mV；matched\_current\_A = 0.00075 A；matched\_load\_voltage\_V = 0.00375 V；max\_power\_W = 2.8125e-06 W；short\_circuit\_current\_A = 0.0015 A；load\_dissipation\_W = 2.8125e-06 W；internal\_dissipation\_W = 2.8125e-06 W；A\_Seebeck\_voltage\_V = 0.006 V；B\_Seebeck\_voltage\_V = -0.0015 V\par
+\noindent\textbf{模型前提：}
+使用题设理想界面、统计配分、均匀介质与动力学边界，数值双路径复算不代表专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P237 · Flory–Huggins聚合物溶液自旋odal稳定条件与临界χ}
+\noindent\textbf{题目}\par
+考虑无体积变化的理想格点Flory–Huggins聚合物/溶剂混合，聚合物链长N=100，聚合物体积分数φ=0.3000，混合自由能每格点单位kBT归一g(φ)=(φ/N)lnφ+(1−φ)ln(1−φ)+χφ(1−φ)。χ=0.5000与1.000两情形，g''=1/(Nφ)+1/(1−φ)−2χ。计算两χ下的g、g''、各自局部稳定布尔值、给定φ的中性曲率阈值χspinodal=[1/(Nφ)+1/(1−φ)]/2，以及对称平均场模型的临界聚合物体积分率φc=1/(1+√N)、临界χc=(1+1/√N)²/2；并求χ=0.5下的无量纲第一导数g'=lnφ/N+1/N−ln(1−φ)−1+χ(1−2φ)和相对χspinodal的距离。注意在φ=0.3的局部稳定不等于全局无相分离。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 系统性质、控制量与理想化条件：考虑无体积变化的理想格点Flory–Huggins聚合物/溶剂混合，聚合物链长N=100，聚合物体积分数φ=0.3000，混合自由能每格点单位kBT归一g(φ)=(φ/N)lnφ+(1−φ)ln(1−φ)+χφ(1−φ)。χ=0.5000与1.000两情形，g''=1/(Nφ)+1/(1−φ)−2χ。计算两χ下的g、g''、各自局部稳定布尔值、给定φ的中性曲率阈值χspinodal=[1/(Nφ)+1/(1−φ)]/2，以及对称平均场模型的临界聚合物体积分率φc=1/(1+√N)、临界χc=(1+1/√N)²/2；并求χ=0.5下的无量纲第一导数g'=lnφ/N+1/N−ln(1−φ)−1+χ(1−2φ)和相对χspinodal的距离。注意在φ=0.3的局部稳定不等于全局无相分离。
+\item 核心热力学、输运或统计物理方程：g=φ/Nlnφ+(1−φ)ln(1−φ)+χφ(1−φ)，g''=1/(Nφ)+1/(1−φ)−2χ。
+\item 建立无量纲反应商、导数或者在SI制下的适当尺度转换，区分mol/L和mol/m³。
+\item 按照物理边界与守恒方程解出第一组量：free\_energy\_chi0p5 = -0.14828437917009 ratio；free\_energy\_chi1 = -0.043284379170091 ratio；curvature\_chi0p5 = 0.46190476190476 ratio。
+\item 进一步得到响应量、相分布或动力学常数：curvature\_chi1 = -0.53809523809524 ratio；stable\_flag\_chi0p5 = 1.0000000000000 boolean；stable\_flag\_chi1 = 0.0000000000000 boolean。
+\item 其余完整结果与反向核对：local\_spinodal\_chi\_threshold = 0.73095238095238 ratio；critical\_polymer\_fraction = 0.090909090909091 fraction；critical\_chi = 0.60500000000000 ratio；first\_derivative\_chi0p5 = -0.44536478410453 ratio；distance\_chi0p5\_to\_spinodal = 0.23095238095238 ratio。
+\item 用物料守恒、化学势相等、载流电中性或能量与界面作用的物理符号进行独立回代。
+\item 检查升温、浓度趋零、压力均衡或无驱动力极限，不将局部稳定性误判为全局相稳定性。
+\item 独立数字表达式逐一复算数值向量，并严格报告测量假设和误差模型的适用范围。
+\item 跨辑模型重复与实验真实性的专家审核尚未完成，不作为正式批准题目。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+free\_energy\_chi0p5 = -0.148284379 ratio；free\_energy\_chi1 = -0.0432843792 ratio；curvature\_chi0p5 = 0.461904762 ratio；curvature\_chi1 = -0.538095238 ratio；stable\_flag\_chi0p5 = 1 boolean；stable\_flag\_chi1 = 0 boolean；local\_spinodal\_chi\_threshold = 0.730952381 ratio；critical\_polymer\_fraction = 0.0909090909 fraction；critical\_chi = 0.605 ratio；first\_derivative\_chi0p5 = -0.445364784 ratio；distance\_chi0p5\_to\_spinodal = 0.230952381 ratio\par
+\noindent\textbf{模型前提：}
+使用题设理想界面、统计配分、均匀介质与动力学边界，数值双路径复算不代表专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P238 · 带界面热阻的两层固体一维稳态传热}
+\noindent\textbf{题目}\par
+两层均匀固体板沿法线一维稳态传热：热侧表面温度Th=80.00°C，冷侧Tc=30.00°C，第一层厚度L1=0.01000 m、热导率k1=0.2000 W/(m K)，第二层L2=0.02000 m、热导率k2=0.5000 W/(m K)，两层接触面另有面热阻Rc=0.01000 m²K/W。忽略侧向散热和温度依赖。热流密度q=(Th−Tc)/(L1/k1+Rc+L2/k2)，求三项热阻、总热阻、q、两层和界面温降、第一层后界面左侧温度、界面右侧温度、第二层出口温度回代及若忽略界面热阻将高估热流多少。明确温度差用K与°C差值一致，而绝对温度不同。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 系统性质、控制量与理想化条件：两层均匀固体板沿法线一维稳态传热：热侧表面温度Th=80.00°C，冷侧Tc=30.00°C，第一层厚度L1=0.01000 m、热导率k1=0.2000 W/(m K)，第二层L2=0.02000 m、热导率k2=0.5000 W/(m K)，两层接触面另有面热阻Rc=0.01000 m²K/W。忽略侧向散热和温度依赖。热流密度q=(Th−Tc)/(L1/k1+Rc+L2/k2)，求三项热阻、总热阻、q、两层和界面温降、第一层后界面左侧温度、界面右侧温度、第二层出口温度回代及若忽略界面热阻将高估热流多少。明确温度差用K与°C差值一致，而绝对温度不同。
+\item 核心热力学、输运或统计物理方程：R1=L1/k1，R2=L2/k2，Rtot=R1+Rc+R2，q=ΔT/Rtot。
+\item 建立无量纲反应商、导数或者在SI制下的适当尺度转换，区分mol/L和mol/m³。
+\item 按照物理边界与守恒方程解出第一组量：resistance\_layer1 = 0.050000000000000 m2K/W；contact\_resistance = 0.010000000000000 m2K/W；resistance\_layer2 = 0.040000000000000 m2K/W。
+\item 进一步得到响应量、相分布或动力学常数：total\_resistance = 0.10000000000000 m2K/W；heat\_flux\_W\_m2 = 500.00000000000 W/m2；drop\_layer1\_K = 25.000000000000 K。
+\item 其余完整结果与反向核对：drop\_interface\_K = 5.0000000000000 K；drop\_layer2\_K = 20.000000000000 K；left\_interface\_temperature\_C = 55.000000000000 C；right\_interface\_temperature\_C = 50.000000000000 C；cold\_face\_backcheck\_C = 30.000000000000 C；relative\_flux\_overestimate\_if\_no\_contact = 0.11111111111111 fraction。
+\item 用物料守恒、化学势相等、载流电中性或能量与界面作用的物理符号进行独立回代。
+\item 检查升温、浓度趋零、压力均衡或无驱动力极限，不将局部稳定性误判为全局相稳定性。
+\item 独立数字表达式逐一复算数值向量，并严格报告测量假设和误差模型的适用范围。
+\item 跨辑模型重复与实验真实性的专家审核尚未完成，不作为正式批准题目。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+resistance\_layer1 = 0.05 m2K/W；contact\_resistance = 0.01 m2K/W；resistance\_layer2 = 0.04 m2K/W；total\_resistance = 0.1 m2K/W；heat\_flux\_W\_m2 = 500 W/m2；drop\_layer1\_K = 25 K；drop\_interface\_K = 5 K；drop\_layer2\_K = 20 K；left\_interface\_temperature\_C = 55 C；right\_interface\_temperature\_C = 50 C；cold\_face\_backcheck\_C = 30 C；relative\_flux\_overestimate\_if\_no\_contact = 0.111111111 fraction\par
+\noindent\textbf{模型前提：}
+使用题设理想界面、统计配分、均匀介质与动力学边界，数值双路径复算不代表专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P239 · Smoluchowski扩散控制反应的双粒子捕获常数}
+\noindent\textbf{题目}\par
+某水相两种反应物A、B近似为两类自由扩散球体，仅当球心距离达到rA+rB时完全吸收并瞬时反应。给定扩散系数DA=1.000×10⁻¹⁰、DB=2.000×10⁻¹⁰ m²/s，反应半径rA=1.000、rB=2.000 nm，温度固定并忽略库仑势与反应激活垒。Smoluchowski两体捕获常数kpair=4π(DA+DB)(rA+rB)（m³/s），转为摩尔浓度单位kM=kpair NA×1000 (L mol⁻¹ s⁻¹)。初始自由CA=1.000×10⁻⁶ M、CB=2.000×10⁻⁶ M，求合计扩散系数、捕获半径、kpair、kM、初始生成速度r=kM CA CB、A/B扩散对速率常数的相对贡献DA/(DA+DB)与DB/(DA+DB)、在B恒定近似下A的伪一级时间常数1/(kM CB)、每秒每m³的捕获事件数与B对A的初始过量比。浓度随反应进行会变化，因此伪一级结果只针对初始小时间。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 系统性质、控制量与理想化条件：某水相两种反应物A、B近似为两类自由扩散球体，仅当球心距离达到rA+rB时完全吸收并瞬时反应。给定扩散系数DA=1.000×10⁻¹⁰、DB=2.000×10⁻¹⁰ m²/s，反应半径rA=1.000、rB=2.000 nm，温度固定并忽略库仑势与反应激活垒。Smoluchowski两体捕获常数kpair=4π(DA+DB)(rA+rB)（m³/s），转为摩尔浓度单位kM=kpair NA×1000 (L mol⁻¹ s⁻¹)。初始自由CA=1.000×10⁻⁶ M、CB=2.000×10⁻⁶ M，求合计扩散系数、捕获半径、kpair、kM、初始生成速度r=kM CA CB、A/B扩散对速率常数的相对贡献DA/(DA+DB)与DB/(DA+DB)、在B恒定近似下A的伪一级时间常数1/(kM CB)、每秒每m³的捕获事件数与B对A的初始过量比。浓度随反应进行会变化，因此伪一级结果只针对初始小时间。
+\item 核心热力学、输运或统计物理方程：kpair=4πDrel rcap，kM=kpair NA×1000，r0=kM CA CB。
+\item 建立无量纲反应商、导数或者在SI制下的适当尺度转换，区分mol/L和mol/m³。
+\item 按照物理边界与守恒方程解出第一组量：relative\_D\_m2s = 3.0000000000000e-10 m2/s；capture\_radius\_nm = 3.0000000000000 nm；pair\_rate\_m3s = 1.1309733552923e-17 m3/s。
+\item 进一步得到响应量、相分布或动力学常数：molar\_k\_Lmol\_s = 6810880741.3799 L/(mol s)；initial\_rate\_Ms = 0.013621761482760 mol/(Ls)；A\_diffusion\_fraction = 0.33333333333333 fraction。
+\item 其余完整结果与反向核对：B\_diffusion\_fraction = 0.66666666666667 fraction；pseudo\_first\_time\_s = 0.000073411944649423 s；capture\_events\_m3s = 8.2032165048326e+24 events/(m3s)；initial\_B\_to\_A\_ratio = 2.0000000000000 ratio。
+\item 用物料守恒、化学势相等、载流电中性或能量与界面作用的物理符号进行独立回代。
+\item 检查升温、浓度趋零、压力均衡或无驱动力极限，不将局部稳定性误判为全局相稳定性。
+\item 独立数字表达式逐一复算数值向量，并严格报告测量假设和误差模型的适用范围。
+\item 跨辑模型重复与实验真实性的专家审核尚未完成，不作为正式批准题目。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+relative\_D\_m2s = 3e-10 m2/s；capture\_radius\_nm = 3 nm；pair\_rate\_m3s = 1.13097336e-17 m3/s；molar\_k\_Lmol\_s = 6.81088074e+09 L/(mol s)；initial\_rate\_Ms = 0.0136217615 mol/(Ls)；A\_diffusion\_fraction = 0.333333333 fraction；B\_diffusion\_fraction = 0.666666667 fraction；pseudo\_first\_time\_s = 7.34119446e-05 s；capture\_events\_m3s = 8.2032165e+24 events/(m3s)；initial\_B\_to\_A\_ratio = 2 ratio\par
+\noindent\textbf{模型前提：}
+使用题设理想界面、统计配分、均匀介质与动力学边界，数值双路径复算不代表专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P240 · Donnan膜内固定负电荷对单价盐的离子浓度及渗透压}
+\noindent\textbf{题目}\par
+298.15 K理想半透膜两侧为同一种1:1强电解质，外侧盐浓度c0=0.05000 mol/L；膜内含不能透过的固定负电荷密度X=0.1000 mol/L。假设两种小离子可透膜，平衡满足膜内电中性c+−c−=X及Donnan乘积c+c−=c0²，外侧电中性。理想活动度按1 M标准态，电位差(内−外)Δψ=−(RT/F)ln(c+/c0)，渗透压差只考虑可透小离子ΔΠ=RT[(c++c−)−2c0]，用浓度mol/m³代入。求内侧c+与c−、内外阳离子比、膜电势(mV)、渗透压差(Pa)、阳离子浓度过量、阴离子被排斥比例、乘积与电中性回代、渗透压正号，以及小离子内外总浓度比。忽略固定聚合物本身的渗透压、离子有限尺寸和膜带电双电层。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 系统性质、控制量与理想化条件：298.15 K理想半透膜两侧为同一种1:1强电解质，外侧盐浓度c0=0.05000 mol/L；膜内含不能透过的固定负电荷密度X=0.1000 mol/L。假设两种小离子可透膜，平衡满足膜内电中性c+−c−=X及Donnan乘积c+c−=c0²，外侧电中性。理想活动度按1 M标准态，电位差(内−外)Δψ=−(RT/F)ln(c+/c0)，渗透压差只考虑可透小离子ΔΠ=RT[(c++c−)−2c0]，用浓度mol/m³代入。求内侧c+与c−、内外阳离子比、膜电势(mV)、渗透压差(Pa)、阳离子浓度过量、阴离子被排斥比例、乘积与电中性回代、渗透压正号，以及小离子内外总浓度比。忽略固定聚合物本身的渗透压、离子有限尺寸和膜带电双电层。
+\item 核心热力学、输运或统计物理方程：c±=[√(X²+4c0²)±X]/2，Δψ=−RT/F ln(c+/c0)，ΔΠ=RT·1000·(c++c−−2c0)。
+\item 建立无量纲反应商、导数或者在SI制下的适当尺度转换，区分mol/L和mol/m³。
+\item 按照物理边界与守恒方程解出第一组量：inside\_cation\_M = 0.12071067811865 mol/L；inside\_anion\_M = 0.020710678118655 mol/L；cation\_enrichment = 2.4142135623731 ratio。
+\item 进一步得到响应量、相分布或动力学常数：Donnan\_potential\_mV = -22.644760620094 mV；osmotic\_pressure\_difference\_Pa = 102681.76221825 Pa；cation\_excess\_M = 0.070710678118655 mol/L。
+\item 其余完整结果与反向核对：anion\_exclusion\_fraction = 0.58578643762690 fraction；salt\_product\_backcheck\_M2 = 0.0025000000000000 M2；electroneutral\_residual\_M = 0.0000000000000 mol/L；total\_ion\_concentration\_ratio = 1.4142135623731 ratio。
+\item 用物料守恒、化学势相等、载流电中性或能量与界面作用的物理符号进行独立回代。
+\item 检查升温、浓度趋零、压力均衡或无驱动力极限，不将局部稳定性误判为全局相稳定性。
+\item 独立数字表达式逐一复算数值向量，并严格报告测量假设和误差模型的适用范围。
+\item 跨辑模型重复与实验真实性的专家审核尚未完成，不作为正式批准题目。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+inside\_cation\_M = 0.120710678 mol/L；inside\_anion\_M = 0.0207106781 mol/L；cation\_enrichment = 2.41421356 ratio；Donnan\_potential\_mV = -22.6447606 mV；osmotic\_pressure\_difference\_Pa = 102681.762 Pa；cation\_excess\_M = 0.0707106781 mol/L；anion\_exclusion\_fraction = 0.585786438 fraction；salt\_product\_backcheck\_M2 = 0.0025 M2；electroneutral\_residual\_M = 0 mol/L；total\_ion\_concentration\_ratio = 1.41421356 ratio\par
+\noindent\textbf{模型前提：}
+使用题设理想界面、统计配分、均匀介质与动力学边界，数值双路径复算不代表专家批准。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
