@@ -87,6 +87,19 @@ Object.assign(witnesses,{
 "UC-ADV15-O240":()=>{let b=Math.exp(-.3),f=Math.exp(-1.2),p=Math.exp(-1.5),q=f-p,r=b-p,s=1-p-q-r;return[b,f,p,q,r,s,.01*p,.01*q,.01*r,q/r,1]}
 });
 
+Object.assign(witnesses,{
+"UC-ADV15-P231":()=>{let SL=.05-.036,W=.072+.05-SL,spread=.05-SL-.072,pressure=.072/.001;return[SL,W,spread,Math.cos(Math.PI/3),W/.072,pressure,pressure/9810,Math.PI/3,.036,0]},
+"UC-ADV15-P232":()=>{let eps=8.8541878128e-12*78.5,t=298.15,k=R*t/F**2*eps/2,l1=Math.sqrt(k/10),l2=l1/Math.sqrt(10);return[l1*1e9,l2*1e9,Math.sqrt(10),10,100,1/l1,1/l2,k/10,Math.sqrt(10),1]},
+"UC-ADV15-P233":()=>{let q=R*300/.0280134,u=Math.sqrt(q),a=[Math.sqrt(2)*u,Math.sqrt(8/Math.PI)*u,Math.sqrt(3)*u],b=a.map(x=>x*Math.SQRT2);return[...a,...b,Math.SQRT2,2/Math.sqrt(Math.PI),450*R,900*R,2]},
+"UC-ADV15-P234":()=>{let c=.5,d=.1,fun=x=>-(-x*Math.log(x)-(1-x)*Math.log(1-x))+3*x*(1-x),lo=(1-Math.sqrt(1/3))/2,hi=1-lo;return[-2,1/(.1*.9)-6,fun(c),fun(d),lo,hi,2,R*300*fun(c),0,1,hi-lo,0]},
+"UC-ADV15-P235":()=>{let V=1e-5,km=3e-3,alpha=1+.002/.001,f=s=>V/(1+km/s);return[alpha,V/alpha,km,f(.002),f(.002)/3,f(.01),f(.01)/3,1/3,1/3,(V/3)/2,km,2/3]},
+"UC-ADV15-P236":()=>{let v=(200+50)*30*1e-6,i=v/10;return[250,v,v*1000,i,5*i,i*i*5,v/5,i*i*5,i*i*5,.006,-.0015]},
+"UC-ADV15-P237":()=>{let x=.3,N=100,base=x/N*Math.log(x)+(1-x)*Math.log(1-x),second=1/(N*x)+1/(1-x),s=second/2;return[base+.5*x*(1-x),base+x*(1-x),second-1,second-2,1,0,s,1/11,.605,Math.log(x)/N+1/N-Math.log(.7)-1+.5*.4,s-.5]},
+"UC-ADV15-P238":()=>{let q=500,r1=.05,r2=.04,rc=.01,a=q*r1,b=q*rc,c=q*r2;return[r1,rc,r2,.1,q,a,b,c,55,50,30,50/.09/500-1]},
+"UC-ADV15-P239":()=>{let d=3e-10,k=12*Math.PI*3e-19,rate=k*NA*1000,z=rate*2e-12;return[d,3,k,rate,z,1/3,2/3,1/(rate*2e-6),z*NA*1000,2]},
+"UC-ADV15-P240":()=>{let r=Math.sqrt(.02),p=(r+.1)/2,m=(r-.1)/2,tot=p+m;return[p,m,p/.05,-R*298.15/F*Math.log(p/.05)*1000,R*298.15*(tot-.1)*1000,p-.05,1-m/.05,.0025,0,tot/.1]}
+});
+
 const starts={inorganic:["I",226],analytical:["A",226],organic:["O",223],physical:["P",223]};
 const ids=new Set(),titles=new Set(),models=new Set(),counts={};
 for(const [subject,[L,start]] of Object.entries(starts)){

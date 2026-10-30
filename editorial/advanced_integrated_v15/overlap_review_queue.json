@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 15,
   "status": "expert_review_pending",
-  "current_draft_count": 64,
+  "current_draft_count": 74,
   "expert_approved": 0,
-  "preliminary_flags": 64,
+  "preliminary_flags": 74,
   "pairs": [
     {
       "new_id": "UC-ADV15-I226",
@@ -388,6 +388,66 @@
       "new_id": "UC-ADV15-O240",
       "prior_id": null,
       "reason": "跨辑模型族可能有构象、酰化、环化等相似类型；需专家逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P231",
+      "prior_id": null,
+      "reason": "与此前14辑及本辑的热力学、传输和统计模型进行人工逐式查重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P232",
+      "prior_id": null,
+      "reason": "与此前14辑及本辑的热力学、传输和统计模型进行人工逐式查重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P233",
+      "prior_id": null,
+      "reason": "与此前14辑及本辑的热力学、传输和统计模型进行人工逐式查重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P234",
+      "prior_id": null,
+      "reason": "与此前14辑及本辑的热力学、传输和统计模型进行人工逐式查重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P235",
+      "prior_id": null,
+      "reason": "与此前14辑及本辑的热力学、传输和统计模型进行人工逐式查重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P236",
+      "prior_id": null,
+      "reason": "与此前14辑及本辑的热力学、传输和统计模型进行人工逐式查重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P237",
+      "prior_id": null,
+      "reason": "与此前14辑及本辑的热力学、传输和统计模型进行人工逐式查重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P238",
+      "prior_id": null,
+      "reason": "与此前14辑及本辑的热力学、传输和统计模型进行人工逐式查重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P239",
+      "prior_id": null,
+      "reason": "与此前14辑及本辑的热力学、传输和统计模型进行人工逐式查重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P240",
+      "prior_id": null,
+      "reason": "与此前14辑及本辑的热力学、传输和统计模型进行人工逐式查重。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -775,6 +835,66 @@
       "model_family": "Boc-Fmoc-independent-firstorder-deprotection-distribution",
       "judgement": "pending_human_comparison",
       "screening": "双路径数值已复算，专家原创性审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P231",
+      "model_family": "Young-wetting-contact-angle-adhesion-capillary-rise",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值自测已通过，专家科研与版权审核仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P232",
+      "model_family": "Debye-screening-length-monovalent-electrolyte-two-concentrations",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值自测已通过，专家科研与版权审核仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P233",
+      "model_family": "nitrogen-Maxwell-Boltzmann-molecular-speed-temperature",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值自测已通过，专家科研与版权审核仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P234",
+      "model_family": "regular-solution-spinodal-chi-curvature-symmetric-mixture",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值自测已通过，专家科研与版权审核仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P235",
+      "model_family": "enzyme-pure-noncompetitive-inhibition-kinetics",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值自测已通过，专家科研与版权审核仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P236",
+      "model_family": "thermoelectric-Seebeck-two-legs-matched-load-power",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值自测已通过，专家科研与版权审核仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P237",
+      "model_family": "Flory-Huggins-polymer-solvent-spinodal-curvature-criticalpoint",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值自测已通过，专家科研与版权审核仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P238",
+      "model_family": "two-layer-solid-series-thermal-resistance-interface-drop",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值自测已通过，专家科研与版权审核仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P239",
+      "model_family": "Smoluchowski-diffusion-limited-bimolecular-capture-rate",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值自测已通过，专家科研与版权审核仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P240",
+      "model_family": "Donnan-membrane-fixed-negative-charge-electroneutral-ideal-osmotic",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值自测已通过，专家科研与版权审核仍待完成。"
     }
   ]
 }
