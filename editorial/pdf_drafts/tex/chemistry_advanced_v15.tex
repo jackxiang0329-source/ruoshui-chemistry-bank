@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第15辑 (34题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第15辑 (44题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -241,6 +241,236 @@ weight\_A = 2 ratio；weight\_B = 1.2 ratio；partition\_function = 4.2 ratio；
 Q\_state1 = 0.25 ratio；Q\_state2 = 5 ratio；E\_state1\_V = -0.219382522 V；E\_state2\_V = -0.296350611 V；E2\_minus\_E1 = -0.0769680885 V；V3\_fraction\_state1 = 0.8 fraction；V3\_fraction\_state2 = 0.166666667 fraction；slope\_per\_decade\_V = 0.0591593497 V；V3\_V2\_ratio\_state1 = 4 ratio；E\_equal\_activities = -0.255 V\par
 \noindent\textbf{模型前提：}
 仅使用理想模型和给定常数，专家审核未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I235 · SrTiO₃钙钛矿容忍因子、晶胞密度与离子价态检验}
+\noindent\textbf{题目}\par
+理想立方SrTiO₃晶胞每胞含1个Sr²⁺、1个Ti⁴⁺和3个O²⁻，晶格常数a=0.39050 nm。采用Shannon有效半径rSr=1.440 Å、rTi=0.605 Å、rO=1.400 Å，Goldschmidt容忍因子t=(rSr+rO)/[√2(rTi+rO)]。已知Sr/Ti/O的摩尔质量87.62/47.867/15.999 g/mol，NA=6.02214076×10²³ mol⁻¹。求t、AB和B–O半径和、晶胞体积nm³、化学式摩尔质量、每胞质量g、晶体理论密度g/cm³、每cm³化学式数、形式电荷和与单胞B位数量。说明t是几何启发值，不等于稳定立方结构的充分条件。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **题意与条件**：理想立方SrTiO₃晶胞每胞含1个Sr²⁺、1个Ti⁴⁺和3个O²⁻，晶格常数a=0.39050 nm。采用Shannon有效半径rSr=1.440 Å、rTi=0.605 Å、rO=1.400 Å，Goldschmidt容忍因子t=(rSr+rO)/[√2(rTi+rO)]。已知Sr/Ti/O的摩尔质量87.62/47.867/15.999 g/mol，NA=6.02214076×10²³ mol⁻¹。求t、AB和B–O半径和、晶胞体积nm³、化学式摩尔质量、每胞质量g、晶体理论密度g/cm³、每cm³化学式数、形式电荷和与单胞B位数量。说明t是几何启发值，不等于稳定立方结构的充分条件。
+\item **核心物理化学关系**：t=(rA+rO)/(sqrt2(rB+rO))；M=MSr+MTi+3MO；ρ=M/(NA a³·10⁻²¹cm³/nm³)，每胞Z=1。
+\item 明确本题使用的标准态及受限自由变量：仅在题定条件下使用理想浓度、均匀晶胞和热平衡近似。
+\item 首先把晶格尺寸、能量、温度和电子数换为公式规定单位；对于比值及对数须先无量纲化。
+\item 由定义式推得首组三个独立量：tolerance\_factor=1.0015876601346 ratio；AplusO\_radius\_A=2.8400000000000 Angstrom；BplusO\_radius\_A=2.0050000000000 Angstrom。
+\item 结合化学计量及分配式推出中间结果：cell\_volume\_nm3=0.059547442625000 nm3；formula\_mass\_gmol=183.48400000000 g/mol；cell\_mass\_g=3.0468235020133e-22 g。
+\item 其余输出和精度交叉核对：theoretical\_density\_gcm3=5.1166319957695 g/cm3；formula\_units\_per\_cm3=1.6793332440782e+22 units/cm3；formal\_charge\_residual=0.0000000000000 e；Ti\_sites\_per\_cell=1.0000000000000 sites。
+\item 对原有化学方程的原子/电子/电荷守恒或晶胞/物种分数归一进行回代，并核实导出物理量的正负及范围。
+\item 本题同时采用第二套代数或计量路径重算全部数值，不只是将同一答案原样复制；绝对差按1e−9相对精度校核。
+\item 此稿属于待审编辑题，配位场近似、真实相变和跨辑同构风险均须人工专家进一步复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+tolerance\_factor = 1.00158766 ratio；AplusO\_radius\_A = 2.84 Angstrom；BplusO\_radius\_A = 2.005 Angstrom；cell\_volume\_nm3 = 0.0595474426 nm3；formula\_mass\_gmol = 183.484 g/mol；cell\_mass\_g = 3.0468235e-22 g；theoretical\_density\_gcm3 = 5.116632 g/cm3；formula\_units\_per\_cm3 = 1.67933324e+22 units/cm3；formal\_charge\_residual = 0 e；Ti\_sites\_per\_cell = 1 sites\par
+\noindent\textbf{模型前提：}
+全部模型假设已在题干声明；独立数值见证为程序层面的双路径验证，不代表专家科研审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I236 · AgBr在氨配位环境下的条件溶解度与游离Ag⁺抑制}
+\noindent\textbf{题目}\par
+25°C仅考虑AgBr(s)⇌Ag⁺+Br⁻的Ksp=5.000×10⁻¹³与Ag⁺+2NH₃⇌[Ag(NH₃)₂]⁺的总形成常数β₂=1.000×10⁸ M⁻²，忽略单氨络合物。自由氨始终由储库固定[NH₃]=0.1000 M，纯水中无背景Br⁻和Ag⁺，理想活动度，固体AgBr始终存在。设溶解的总银S=[Ag⁺]+[Ag(NH₃)₂]⁺=[Br⁻]。求配位放大因子α、条件溶解度S、游离Ag浓度、络合银浓度、游离分率、络合分率、在没有氨时的溶解度、溶解度放大倍数及两个平衡常数回代；不能把络合物也算入Ksp中的自由Ag⁺。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **题意与条件**：25°C仅考虑AgBr(s)⇌Ag⁺+Br⁻的Ksp=5.000×10⁻¹³与Ag⁺+2NH₃⇌[Ag(NH₃)₂]⁺的总形成常数β₂=1.000×10⁸ M⁻²，忽略单氨络合物。自由氨始终由储库固定[NH₃]=0.1000 M，纯水中无背景Br⁻和Ag⁺，理想活动度，固体AgBr始终存在。设溶解的总银S=[Ag⁺]+[Ag(NH₃)₂]⁺=[Br⁻]。求配位放大因子α、条件溶解度S、游离Ag浓度、络合银浓度、游离分率、络合分率、在没有氨时的溶解度、溶解度放大倍数及两个平衡常数回代；不能把络合物也算入Ksp中的自由Ag⁺。
+\item **核心物理化学关系**：α=1+β₂[NH₃]²，S=√(Kspα)，[Ag+]=S/α，Ksp=[Ag+][Br−]。
+\item 明确本题使用的标准态及受限自由变量：仅在题定条件下使用理想浓度、均匀晶胞和热平衡近似。
+\item 首先把晶格尺寸、能量、温度和电子数换为公式规定单位；对于比值及对数须先无量纲化。
+\item 由定义式推得首组三个独立量：coordination\_factor=1000001.0000000 ratio；total\_silver\_solubility\_M=0.00070710713473985 mol/L；free\_Ag\_M=7.0710642763342e-10 mol/L。
+\item 结合化学计量及分配式推出中间结果：complex\_Ag\_M=0.00070710642763342 mol/L；free\_fraction=9.9999900000100e-7 fraction；complex\_fraction=0.99999900000100 fraction。
+\item 其余输出和精度交叉核对：pure\_water\_solubility\_M=7.0710678118655e-7 mol/L；solubility\_increase\_factor=1000.0004999999 ratio；Ksp\_backcheck=5.0000000000000e-13 ratio；beta2\_backcheck=100000000.00000 M\textasciicircum{}-2。
+\item 对原有化学方程的原子/电子/电荷守恒或晶胞/物种分数归一进行回代，并核实导出物理量的正负及范围。
+\item 本题同时采用第二套代数或计量路径重算全部数值，不只是将同一答案原样复制；绝对差按1e−9相对精度校核。
+\item 此稿属于待审编辑题，配位场近似、真实相变和跨辑同构风险均须人工专家进一步复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+coordination\_factor = 1000001 ratio；total\_silver\_solubility\_M = 0.000707107135 mol/L；free\_Ag\_M = 7.07106428e-10 mol/L；complex\_Ag\_M = 0.000707106428 mol/L；free\_fraction = 9.99999e-07 fraction；complex\_fraction = 0.999999 fraction；pure\_water\_solubility\_M = 7.07106781e-07 mol/L；solubility\_increase\_factor = 1000.0005 ratio；Ksp\_backcheck = 5e-13 ratio；beta2\_backcheck = 100000000 M\textasciicircum{}-2\par
+\noindent\textbf{模型前提：}
+全部模型假设已在题干声明；独立数值见证为程序层面的双路径验证，不代表专家科研审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I237 · Cu(II)单电子自旋的有效磁矩与Curie顺磁磁化率}
+\noindent\textbf{题目}\par
+将某无相互作用八面体Cu(II)络离子近似为单个自旋S=1/2、各向同性g=2.100的局域自旋，μB=9.2740100783×10⁻²⁴ J/T，真空磁导率μ0=1.25663706212×10⁻⁶ H/m。取T=298.15 K和150.0 K，忽略轨道贡献、自旋关联和零场分裂。求自旋有效磁矩μeff=g√[S(S+1)]μB，以μB和J/T表示、饱和磁矩gsμB、两个温度下SI摩尔磁化率χmol=μ0 NA μeff²/(3kBT)，磁化率比、有效磁矩与饱和磁矩比以及两个温度下χmolT常数和非配对电子数。必须区分SI摩尔磁化率m³/mol与cgs单位。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **题意与条件**：将某无相互作用八面体Cu(II)络离子近似为单个自旋S=1/2、各向同性g=2.100的局域自旋，μB=9.2740100783×10⁻²⁴ J/T，真空磁导率μ0=1.25663706212×10⁻⁶ H/m。取T=298.15 K和150.0 K，忽略轨道贡献、自旋关联和零场分裂。求自旋有效磁矩μeff=g√[S(S+1)]μB，以μB和J/T表示、饱和磁矩gsμB、两个温度下SI摩尔磁化率χmol=μ0 NA μeff²/(3kBT)，磁化率比、有效磁矩与饱和磁矩比以及两个温度下χmolT常数和非配对电子数。必须区分SI摩尔磁化率m³/mol与cgs单位。
+\item **核心物理化学关系**：μeff=g√[S(S+1)] μB，μsat=gSμB，χmol=μ0 NA μeff²/(3kB T)。
+\item 明确本题使用的标准态及受限自由变量：仅在题定条件下使用理想浓度、均匀晶胞和热平衡近似。
+\item 首先把晶格尺寸、能量、温度和电子数换为公式规定单位；对于比值及对数须先无量纲化。
+\item 由定义式推得首组三个独立量：mu\_eff\_muB=1.8186533479473 Bohr\_magnetons；mu\_eff\_JT=1.6866209477797e-23 J/T；mu\_saturation\_muB=1.0500000000000 Bohr\_magnetons。
+\item 结合化学计量及分配式推出中间结果：mu\_saturation\_JT=9.7377105822150e-24 J/T；chi\_molar\_298\_m3mol=1.7432368405491e-8 m3/mol；chi\_molar\_150\_m3mol=3.4649737600647e-8 m3/mol。
+\item 其余输出和精度交叉核对：susceptibility\_ratio=1.9876666666667 ratio；mu\_eff\_over\_mu\_sat=1.7320508075689 ratio；chiT\_298\_m3Kmol=0.0000051974606400971 m3K/mol；unpaired\_count=1.0000000000000 electrons。
+\item 对原有化学方程的原子/电子/电荷守恒或晶胞/物种分数归一进行回代，并核实导出物理量的正负及范围。
+\item 本题同时采用第二套代数或计量路径重算全部数值，不只是将同一答案原样复制；绝对差按1e−9相对精度校核。
+\item 此稿属于待审编辑题，配位场近似、真实相变和跨辑同构风险均须人工专家进一步复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+mu\_eff\_muB = 1.81865335 Bohr\_magnetons；mu\_eff\_JT = 1.68662095e-23 J/T；mu\_saturation\_muB = 1.05 Bohr\_magnetons；mu\_saturation\_JT = 9.73771058e-24 J/T；chi\_molar\_298\_m3mol = 1.74323684e-08 m3/mol；chi\_molar\_150\_m3mol = 3.46497376e-08 m3/mol；susceptibility\_ratio = 1.98766667 ratio；mu\_eff\_over\_mu\_sat = 1.73205081 ratio；chiT\_298\_m3Kmol = 5.19746064e-06 m3K/mol；unpaired\_count = 1 electrons\par
+\noindent\textbf{模型前提：}
+全部模型假设已在题干声明；独立数值见证为程序层面的双路径验证，不代表专家科研审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I238 · La₁₋ₓSrₓCoO₃氧化物价态补偿的平均钴价及自旋库存}
+\noindent\textbf{题目}\par
+无氧缺位的钙钛矿La₁₋ₓSrₓCoO₃，其中La³⁺被Sr²⁺取代。假设Co仅以Co³⁺/Co⁴⁺混合价态存在，每式量有1个Co和3个O²⁻。分析x=0.2000及x=0.6000两种掺杂：求平均Co氧化态、Co⁴⁺与Co³⁺分率、每式量Sr²⁺数、两状态Co⁴⁺数差、由形式正电荷和负电荷计算的残差、每mol化学式的空穴数，以及在Co⁴⁺每离子比Co³⁺多一个局域S=1/2自旋且不考虑集体效应时的额外未配对自旋摩尔数。注意本题仅讨论形式价态与一个人为规定的自旋差额。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **题意与条件**：无氧缺位的钙钛矿La₁₋ₓSrₓCoO₃，其中La³⁺被Sr²⁺取代。假设Co仅以Co³⁺/Co⁴⁺混合价态存在，每式量有1个Co和3个O²⁻。分析x=0.2000及x=0.6000两种掺杂：求平均Co氧化态、Co⁴⁺与Co³⁺分率、每式量Sr²⁺数、两状态Co⁴⁺数差、由形式正电荷和负电荷计算的残差、每mol化学式的空穴数，以及在Co⁴⁺每离子比Co³⁺多一个局域S=1/2自旋且不考虑集体效应时的额外未配对自旋摩尔数。注意本题仅讨论形式价态与一个人为规定的自旋差额。
+\item **核心物理化学关系**：电荷守恒3(1−x)+2x+vCo−6=0，故vCo=3+x，CoIV分率=x。
+\item 明确本题使用的标准态及受限自由变量：仅在题定条件下使用理想浓度、均匀晶胞和热平衡近似。
+\item 首先把晶格尺寸、能量、温度和电子数换为公式规定单位；对于比值及对数须先无量纲化。
+\item 由定义式推得首组三个独立量：mean\_Co\_valence\_x02=3.2000000000000 oxidation；mean\_Co\_valence\_x06=3.6000000000000 oxidation；CoIV\_fraction\_x02=0.20000000000000 fraction。
+\item 结合化学计量及分配式推出中间结果：CoIV\_fraction\_x06=0.60000000000000 fraction；CoIII\_fraction\_x02=0.80000000000000 fraction；CoIII\_fraction\_x06=0.40000000000000 fraction。
+\item 其余输出和精度交叉核对：Sr\_content\_x02=0.20000000000000 ions；Sr\_content\_x06=0.60000000000000 ions；delta\_CoIV\_per\_formula=0.40000000000000 ions；hole\_moles\_per\_mol\_x06=0.60000000000000 mol/mol；charge\_residual\_x06=0.0000000000000 charge。
+\item 对原有化学方程的原子/电子/电荷守恒或晶胞/物种分数归一进行回代，并核实导出物理量的正负及范围。
+\item 本题同时采用第二套代数或计量路径重算全部数值，不只是将同一答案原样复制；绝对差按1e−9相对精度校核。
+\item 此稿属于待审编辑题，配位场近似、真实相变和跨辑同构风险均须人工专家进一步复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+mean\_Co\_valence\_x02 = 3.2 oxidation；mean\_Co\_valence\_x06 = 3.6 oxidation；CoIV\_fraction\_x02 = 0.2 fraction；CoIV\_fraction\_x06 = 0.6 fraction；CoIII\_fraction\_x02 = 0.8 fraction；CoIII\_fraction\_x06 = 0.4 fraction；Sr\_content\_x02 = 0.2 ions；Sr\_content\_x06 = 0.6 ions；delta\_CoIV\_per\_formula = 0.4 ions；hole\_moles\_per\_mol\_x06 = 0.6 mol/mol；charge\_residual\_x06 = 0 charge\par
+\noindent\textbf{模型前提：}
+全部模型假设已在题干声明；独立数值见证为程序层面的双路径验证，不代表专家科研审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I239 · 普鲁士蓝Fe₄[Fe(CN)₆]₃缺陷框架的价态与空位计量}
+\noindent\textbf{题目}\par
+理想无结晶水普鲁士蓝的名义式Fe₄[Fe(CN)₆]₃中，框架外部4个Fe均为Fe(III)，[Fe(CN)₆]配位体内的3个Fe均为Fe(II)，CN⁻每个负一价。以每4个可用[Fe(CN)₆]框架位点为计数基准，只有3个被完整六氰合铁(II)占据，其余视为空位。忽略晶体水、反离子、混合价态和电荷转移。求FeII、FeIII、CN数目、总Fe数、每FeII所连CN数量、总正负形式电荷、净电荷、框架空位分率、FeIII/FeII比和每mol化学式摩尔质量，MFe=55.845、MC=12.011、MN=14.007 g/mol。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **题意与条件**：理想无结晶水普鲁士蓝的名义式Fe₄[Fe(CN)₆]₃中，框架外部4个Fe均为Fe(III)，[Fe(CN)₆]配位体内的3个Fe均为Fe(II)，CN⁻每个负一价。以每4个可用[Fe(CN)₆]框架位点为计数基准，只有3个被完整六氰合铁(II)占据，其余视为空位。忽略晶体水、反离子、混合价态和电荷转移。求FeII、FeIII、CN数目、总Fe数、每FeII所连CN数量、总正负形式电荷、净电荷、框架空位分率、FeIII/FeII比和每mol化学式摩尔质量，MFe=55.845、MC=12.011、MN=14.007 g/mol。
+\item **核心物理化学关系**：FeIII×4 (+3)=+12；FeII×3 (+2)=+6；CN×18 (−1)=−18；名义式有一个[Fe(CN)₆]位点空缺。
+\item 明确本题使用的标准态及受限自由变量：仅在题定条件下使用理想浓度、均匀晶胞和热平衡近似。
+\item 首先把晶格尺寸、能量、温度和电子数换为公式规定单位；对于比值及对数须先无量纲化。
+\item 由定义式推得首组三个独立量：FeII\_count=3.0000000000000 ions；FeIII\_count=4.0000000000000 ions；cyanide\_count=18.000000000000 ligands。
+\item 结合化学计量及分配式推出中间结果：total\_Fe\_count=7.0000000000000 ions；cyanide\_per\_FeII=6.0000000000000 ligands；positive\_charge=18.000000000000 charge。
+\item 其余输出和精度交叉核对：negative\_charge=-18.000000000000 charge；charge\_residual=0.0000000000000 charge；framework\_vacancy\_fraction=0.25000000000000 fraction；FeIII\_over\_FeII=1.3333333333333 ratio；formula\_molar\_mass=859.23900000000 g/mol。
+\item 对原有化学方程的原子/电子/电荷守恒或晶胞/物种分数归一进行回代，并核实导出物理量的正负及范围。
+\item 本题同时采用第二套代数或计量路径重算全部数值，不只是将同一答案原样复制；绝对差按1e−9相对精度校核。
+\item 此稿属于待审编辑题，配位场近似、真实相变和跨辑同构风险均须人工专家进一步复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+FeII\_count = 3 ions；FeIII\_count = 4 ions；cyanide\_count = 18 ligands；total\_Fe\_count = 7 ions；cyanide\_per\_FeII = 6 ligands；positive\_charge = 18 charge；negative\_charge = -18 charge；charge\_residual = 0 charge；framework\_vacancy\_fraction = 0.25 fraction；FeIII\_over\_FeII = 1.33333333 ratio；formula\_molar\_mass = 859.239 g/mol\par
+\noindent\textbf{模型前提：}
+全部模型假设已在题干声明；独立数值见证为程序层面的双路径验证，不代表专家科研审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I240 · Ca₃(PO₄)₂溶解度积与外部磷酸根储液池控制的钙浓度}
+\noindent\textbf{题目}\par
+25°C某磷酸钙固体Ca₃(PO₄)₂(s)与理想溶液接触，溶度积Ksp=[Ca²⁺]³[PO₄³⁻]²=1.000×10⁻²⁶（活动度按1 M标准态），并由外部磷酸根储液池固定自由[PO₄³⁻]为0.001000 M或0.01000 M，忽略磷酸逐步质子化和钙–磷酸根离子对。求两情形饱和平衡自由钙离子浓度、它们的比值、外部磷酸根提高十倍对自由钙降低的倍数、两个浓度的三次方、由两状态回代的Ksp及钙离子在第二状态的对数活动度pCa=−log10[Ca²⁺]，并求若外部磷酸根为0.1000 M时的预测饱和钙浓度。固相必须始终存在，但不要求计算总沉淀量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **题意与条件**：25°C某磷酸钙固体Ca₃(PO₄)₂(s)与理想溶液接触，溶度积Ksp=[Ca²⁺]³[PO₄³⁻]²=1.000×10⁻²⁶（活动度按1 M标准态），并由外部磷酸根储液池固定自由[PO₄³⁻]为0.001000 M或0.01000 M，忽略磷酸逐步质子化和钙–磷酸根离子对。求两情形饱和平衡自由钙离子浓度、它们的比值、外部磷酸根提高十倍对自由钙降低的倍数、两个浓度的三次方、由两状态回代的Ksp及钙离子在第二状态的对数活动度pCa=−log10[Ca²⁺]，并求若外部磷酸根为0.1000 M时的预测饱和钙浓度。固相必须始终存在，但不要求计算总沉淀量。
+\item **核心物理化学关系**：[Ca²⁺]=(Ksp/[PO₄³⁻]²)\textasciicircum{}(1/3)，磷酸根提高10倍使钙浓度乘10\textasciicircum{}(−2/3)。
+\item 明确本题使用的标准态及受限自由变量：仅在题定条件下使用理想浓度、均匀晶胞和热平衡近似。
+\item 首先把晶格尺寸、能量、温度和电子数换为公式规定单位；对于比值及对数须先无量纲化。
+\item 由定义式推得首组三个独立量：calcium\_at\_PO4\_1eMinus3\_M=2.1544346900319e-7 mol/L；calcium\_at\_PO4\_1eMinus2\_M=4.6415888336128e-8 mol/L；calcium\_ratio\_low\_high=4.6415888336128 ratio。
+\item 结合化学计量及分配式推出中间结果：lowering\_factor=4.6415888336128 ratio；calcium\_cubed\_low=1.0000000000000e-20 M3；calcium\_cubed\_high=1.0000000000000e-22 M3。
+\item 其余输出和精度交叉核对：Ksp\_backcheck\_low=1.0000000000000e-26 Ksp；Ksp\_backcheck\_high=1.0000000000000e-26 Ksp；pCa\_highPO4=7.3333333333333 log10；calcium\_at\_PO4\_0p1\_M=1.0000000000000e-8 mol/L。
+\item 对原有化学方程的原子/电子/电荷守恒或晶胞/物种分数归一进行回代，并核实导出物理量的正负及范围。
+\item 本题同时采用第二套代数或计量路径重算全部数值，不只是将同一答案原样复制；绝对差按1e−9相对精度校核。
+\item 此稿属于待审编辑题，配位场近似、真实相变和跨辑同构风险均须人工专家进一步复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+calcium\_at\_PO4\_1eMinus3\_M = 2.15443469e-07 mol/L；calcium\_at\_PO4\_1eMinus2\_M = 4.64158883e-08 mol/L；calcium\_ratio\_low\_high = 4.64158883 ratio；lowering\_factor = 4.64158883 ratio；calcium\_cubed\_low = 1e-20 M3；calcium\_cubed\_high = 1e-22 M3；Ksp\_backcheck\_low = 1e-26 Ksp；Ksp\_backcheck\_high = 1e-26 Ksp；pCa\_highPO4 = 7.33333333 log10；calcium\_at\_PO4\_0p1\_M = 1e-08 mol/L\par
+\noindent\textbf{模型前提：}
+全部模型假设已在题干声明；独立数值见证为程序层面的双路径验证，不代表专家科研审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I241 · d⁸八面体和四面体晶体场稳定能及未成对电子数}
+\noindent\textbf{题目}\par
+某高自旋d⁸金属离子分别置于理想八面体与四面体弱场配位环境，八面体晶体场分裂Δo=12000 cm⁻¹、四面体Δt=(4/9)Δo。八面体构型t₂g⁶ e\_g²，t₂g能级−0.4Δo、e\_g能级+0.6Δo；四面体构型e⁴ t₂⁴，e能级−0.6Δt、t₂能级+0.4Δt。忽略自旋轨道与成对能差，1 cm⁻¹=0.01196266 kJ/mol。求两个分裂、两构型CFSE(cm⁻¹与kJ/mol)、八面体比四面体CFSE更负的能量差、两构型未成对电子数、自旋S与自旋-only磁矩(μB)。强调只比较场稳定能，不代表完整的几何构型稳定性。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **题意与条件**：某高自旋d⁸金属离子分别置于理想八面体与四面体弱场配位环境，八面体晶体场分裂Δo=12000 cm⁻¹、四面体Δt=(4/9)Δo。八面体构型t₂g⁶ e\_g²，t₂g能级−0.4Δo、e\_g能级+0.6Δo；四面体构型e⁴ t₂⁴，e能级−0.6Δt、t₂能级+0.4Δt。忽略自旋轨道与成对能差，1 cm⁻¹=0.01196266 kJ/mol。求两个分裂、两构型CFSE(cm⁻¹与kJ/mol)、八面体比四面体CFSE更负的能量差、两构型未成对电子数、自旋S与自旋-only磁矩(μB)。强调只比较场稳定能，不代表完整的几何构型稳定性。
+\item **核心物理化学关系**：CFSEoct=6(−0.4Δo)+2(+0.6Δo)=−1.2Δo；CFSEtet=4(−0.6Δt)+4(+0.4Δt)=−0.8Δt，n\_unpaired=2。
+\item 明确本题使用的标准态及受限自由变量：仅在题定条件下使用理想浓度、均匀晶胞和热平衡近似。
+\item 首先把晶格尺寸、能量、温度和电子数换为公式规定单位；对于比值及对数须先无量纲化。
+\item 由定义式推得首组三个独立量：delta\_oct\_cmInv=12000.000000000 cm\textasciicircum{}-1；delta\_tet\_cmInv=5333.3333333333 cm\textasciicircum{}-1；CFSE\_oct\_cmInv=-14400.000000000 cm\textasciicircum{}-1。
+\item 结合化学计量及分配式推出中间结果：CFSE\_tet\_cmInv=-4266.6666666667 cm\textasciicircum{}-1；CFSE\_oct\_kJmol=-172.26230400000 kJ/mol；CFSE\_tet\_kJmol=-51.040682666667 kJ/mol。
+\item 其余输出和精度交叉核对：oct\_CFSE\_advantage\_kJmol=121.22162133333 kJ/mol；unpaired\_oct=2.0000000000000 electrons；unpaired\_tet=2.0000000000000 electrons；spin\_only\_moment\_muB=2.8284271247462 muB。
+\item 对原有化学方程的原子/电子/电荷守恒或晶胞/物种分数归一进行回代，并核实导出物理量的正负及范围。
+\item 本题同时采用第二套代数或计量路径重算全部数值，不只是将同一答案原样复制；绝对差按1e−9相对精度校核。
+\item 此稿属于待审编辑题，配位场近似、真实相变和跨辑同构风险均须人工专家进一步复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+delta\_oct\_cmInv = 12000 cm\textasciicircum{}-1；delta\_tet\_cmInv = 5333.33333 cm\textasciicircum{}-1；CFSE\_oct\_cmInv = -14400 cm\textasciicircum{}-1；CFSE\_tet\_cmInv = -4266.66667 cm\textasciicircum{}-1；CFSE\_oct\_kJmol = -172.262304 kJ/mol；CFSE\_tet\_kJmol = -51.0406827 kJ/mol；oct\_CFSE\_advantage\_kJmol = 121.221621 kJ/mol；unpaired\_oct = 2 electrons；unpaired\_tet = 2 electrons；spin\_only\_moment\_muB = 2.82842712 muB\par
+\noindent\textbf{模型前提：}
+全部模型假设已在题干声明；独立数值见证为程序层面的双路径验证，不代表专家科研审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I242 · CoO还原为金属Co时H₂/H₂O平衡气氛控制}
+\noindent\textbf{题目}\par
+某假想炉温T=1000.0 K，固相CoO(s)+H₂(g)⇌Co(s)+H₂O(g)的标准反应平衡常数Kp=20.00，固相活度视为1，气体理想、标准压p°=1 bar。固定氢分压pH₂=0.2000 bar。求平衡水蒸气分压、平衡水/氢比、标准反应Gibbs自由能ΔG°、在实际pH₂O=0.1000 bar时的反应商Q、实际ΔG、相对于平衡比的反应商比和还原方向。另求实际状态驱动力对应的电化学式对数亲和量A=−ΔG（kJ/mol），以及将水压升至5.000 bar时的反应商与实际ΔG。忽略氢气和水在表面的吸附限制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **题意与条件**：某假想炉温T=1000.0 K，固相CoO(s)+H₂(g)⇌Co(s)+H₂O(g)的标准反应平衡常数Kp=20.00，固相活度视为1，气体理想、标准压p°=1 bar。固定氢分压pH₂=0.2000 bar。求平衡水蒸气分压、平衡水/氢比、标准反应Gibbs自由能ΔG°、在实际pH₂O=0.1000 bar时的反应商Q、实际ΔG、相对于平衡比的反应商比和还原方向。另求实际状态驱动力对应的电化学式对数亲和量A=−ΔG（kJ/mol），以及将水压升至5.000 bar时的反应商与实际ΔG。忽略氢气和水在表面的吸附限制。
+\item **核心物理化学关系**：Kp=pH2O/pH2，ΔG°=−RTlnKp，ΔG=RTln(Q/Kp)。
+\item 明确本题使用的标准态及受限自由变量：仅在题定条件下使用理想浓度、均匀晶胞和热平衡近似。
+\item 首先把晶格尺寸、能量、温度和电子数换为公式规定单位；对于比值及对数须先无量纲化。
+\item 由定义式推得首组三个独立量：equilibrium\_water\_pressure\_bar=4.0000000000000 bar；equilibrium\_ratio=20.000000000000 ratio；standard\_DG\_kJmol=-24.907904002001 kJ/mol。
+\item 结合化学计量及分配式推出中间结果：actual\_Q\_at0p1bar=0.50000000000000 ratio；actual\_DG\_at0p1\_kJmol=-30.671050323539 kJ/mol；Q\_over\_Kp=0.025000000000000 ratio。
+\item 其余输出和精度交叉核对：reduction\_favorable\_flag=1.0000000000000 boolean；affinity\_kJmol=30.671050323539 kJ/mol；Q\_at5bar\_water=25.000000000000 ratio；DG\_at5bar\_kJmol=1.8553187158498 kJ/mol。
+\item 对原有化学方程的原子/电子/电荷守恒或晶胞/物种分数归一进行回代，并核实导出物理量的正负及范围。
+\item 本题同时采用第二套代数或计量路径重算全部数值，不只是将同一答案原样复制；绝对差按1e−9相对精度校核。
+\item 此稿属于待审编辑题，配位场近似、真实相变和跨辑同构风险均须人工专家进一步复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+equilibrium\_water\_pressure\_bar = 4 bar；equilibrium\_ratio = 20 ratio；standard\_DG\_kJmol = -24.907904 kJ/mol；actual\_Q\_at0p1bar = 0.5 ratio；actual\_DG\_at0p1\_kJmol = -30.6710503 kJ/mol；Q\_over\_Kp = 0.025 ratio；reduction\_favorable\_flag = 1 boolean；affinity\_kJmol = 30.6710503 kJ/mol；Q\_at5bar\_water = 25 ratio；DG\_at5bar\_kJmol = 1.85531872 kJ/mol\par
+\noindent\textbf{模型前提：}
+全部模型假设已在题干声明；独立数值见证为程序层面的双路径验证，不代表专家科研审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I243 · 金属卤化物逐级取代的顺序一级中间体浓度峰值}
+\noindent\textbf{题目}\par
+某假想八面体金属卤化物ML₆在过量外来配体X下逐级且不可逆经历A=ML₆→B=ML₅X→C=ML₄X₂，两步拟一级速率k₁=0.02000 s⁻¹、k₂=0.05000 s⁻¹，初始只有A且[A]0=0.01000 mol/L，温度和自由X浓度由外界固定，不发生其它配体转化。求t=40.00 s时三种络合物浓度、其相对初态摩尔分率、B的峰值时间和峰值浓度、峰值时第一步生成速率k₁A和第二步消耗速率k₂B，以及总金属浓度回代。必须从两个连续一级反应方程求解，而不是将B错作独立指数衰减。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **题意与条件**：某假想八面体金属卤化物ML₆在过量外来配体X下逐级且不可逆经历A=ML₆→B=ML₅X→C=ML₄X₂，两步拟一级速率k₁=0.02000 s⁻¹、k₂=0.05000 s⁻¹，初始只有A且[A]0=0.01000 mol/L，温度和自由X浓度由外界固定，不发生其它配体转化。求t=40.00 s时三种络合物浓度、其相对初态摩尔分率、B的峰值时间和峰值浓度、峰值时第一步生成速率k₁A和第二步消耗速率k₂B，以及总金属浓度回代。必须从两个连续一级反应方程求解，而不是将B错作独立指数衰减。
+\item **核心物理化学关系**：A=A0e\textasciicircum{}(−k1 t)，B=A0 k1/(k2−k1)[e\textasciicircum{}(−k1t)−e\textasciicircum{}(−k2t)]，C=A0−A−B。
+\item 明确本题使用的标准态及受限自由变量：仅在题定条件下使用理想浓度、均匀晶胞和热平衡近似。
+\item 首先把晶格尺寸、能量、温度和电子数换为公式规定单位；对于比值及对数须先无量纲化。
+\item 由定义式推得首组三个独立量：A\_t40\_M=0.0044932896411722 mol/L；B\_t40\_M=0.0020932912058707 mol/L；C\_t40\_M=0.0034134191529571 mol/L。
+\item 结合化学计量及分配式推出中间结果：A\_fraction=0.44932896411722 fraction；B\_fraction=0.20932912058707 fraction；C\_fraction=0.34134191529571 fraction。
+\item 其余输出和精度交叉核对：B\_peak\_time\_s=30.543024395805 s；B\_peak\_concentration\_M=0.0021715340932759 mol/L；B\_formation\_rate\_peak=0.00010857670466380 mol/(Ls)；B\_depletion\_rate\_peak=0.00010857670466380 mol/(Ls)；metal\_mass\_balance\_M=0.010000000000000 mol/L。
+\item 对原有化学方程的原子/电子/电荷守恒或晶胞/物种分数归一进行回代，并核实导出物理量的正负及范围。
+\item 本题同时采用第二套代数或计量路径重算全部数值，不只是将同一答案原样复制；绝对差按1e−9相对精度校核。
+\item 此稿属于待审编辑题，配位场近似、真实相变和跨辑同构风险均须人工专家进一步复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+A\_t40\_M = 0.00449328964 mol/L；B\_t40\_M = 0.00209329121 mol/L；C\_t40\_M = 0.00341341915 mol/L；A\_fraction = 0.449328964 fraction；B\_fraction = 0.209329121 fraction；C\_fraction = 0.341341915 fraction；B\_peak\_time\_s = 30.5430244 s；B\_peak\_concentration\_M = 0.00217153409 mol/L；B\_formation\_rate\_peak = 0.000108576705 mol/(Ls)；B\_depletion\_rate\_peak = 0.000108576705 mol/(Ls)；metal\_mass\_balance\_M = 0.01 mol/L\par
+\noindent\textbf{模型前提：}
+全部模型假设已在题干声明；独立数值见证为程序层面的双路径验证，不代表专家科研审定。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I244 · 离子晶体Schottky缺陷浓度的温度响应与空位间距}
+\noindent\textbf{题目}\par
+某假想二元AB离子固体在热平衡下形成等量阳离子空位与阴离子空位，Schottky空位对的自由能ΔGpair=1.000 eV，近似低浓度各子晶格空位分率x满足x²=exp[−ΔGpair/(kBT)]。取T1=800.0、T2=1000.0 K，kB=8.617333262145×10⁻⁵ eV/K，每种离子正常格点数密度Nsite=1.000×10²⁸ sites/m³。求两个温度的每子晶格空位分率、两温度空位数密度、每种子晶格空位平均间距n\_v\textasciicircum{}(-1/3)、升温导致的空位分率放大比、两状态的x²及无量纲自由能ΔGpair/(kBT)，并核对两子晶格空位数相等确保缺陷电荷中和。该稀缺陷近似忽略空位相互作用与配置熵的高浓度修正。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **题意与条件**：某假想二元AB离子固体在热平衡下形成等量阳离子空位与阴离子空位，Schottky空位对的自由能ΔGpair=1.000 eV，近似低浓度各子晶格空位分率x满足x²=exp[−ΔGpair/(kBT)]。取T1=800.0、T2=1000.0 K，kB=8.617333262145×10⁻⁵ eV/K，每种离子正常格点数密度Nsite=1.000×10²⁸ sites/m³。求两个温度的每子晶格空位分率、两温度空位数密度、每种子晶格空位平均间距n\_v\textasciicircum{}(-1/3)、升温导致的空位分率放大比、两状态的x²及无量纲自由能ΔGpair/(kBT)，并核对两子晶格空位数相等确保缺陷电荷中和。该稀缺陷近似忽略空位相互作用与配置熵的高浓度修正。
+\item **核心物理化学关系**：x=exp[−ΔGpair/(2kBT)]，nv=Nsite x，d=nv\textasciicircum{}(−1/3)。
+\item 明确本题使用的标准态及受限自由变量：仅在题定条件下使用理想浓度、均匀晶胞和热平衡近似。
+\item 首先把晶格尺寸、能量、温度和电子数换为公式规定单位；对于比值及对数须先无量纲化。
+\item 由定义式推得首组三个独立量：vacancy\_fraction\_800=0.00070817180876039 fraction；vacancy\_fraction\_1000=0.0030207230347360 fraction；vacancy\_density\_800\_mInv3=7.0817180876038e+24 m\textasciicircum{}-3。
+\item 结合化学计量及分配式推出中间结果：vacancy\_density\_1000\_mInv3=3.0207230347360e+25 m\textasciicircum{}-3；spacing\_800\_nm=5.2073942029286 nm；spacing\_1000\_nm=3.2109215695631 nm。
+\item 其余输出和精度交叉核对：fraction\_ratio\_1000\_over800=4.2655228538730 ratio；fraction\_squared\_800=5.0150731072296e-7 fraction2；fraction\_squared\_1000=0.0000091247676525849 fraction2；dimensionless\_energy\_800=14.505647651938 ratio；dimensionless\_energy\_1000=11.604518121550 ratio。
+\item 对原有化学方程的原子/电子/电荷守恒或晶胞/物种分数归一进行回代，并核实导出物理量的正负及范围。
+\item 本题同时采用第二套代数或计量路径重算全部数值，不只是将同一答案原样复制；绝对差按1e−9相对精度校核。
+\item 此稿属于待审编辑题，配位场近似、真实相变和跨辑同构风险均须人工专家进一步复核。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+vacancy\_fraction\_800 = 0.000708171809 fraction；vacancy\_fraction\_1000 = 0.00302072303 fraction；vacancy\_density\_800\_mInv3 = 7.08171809e+24 m\textasciicircum{}-3；vacancy\_density\_1000\_mInv3 = 3.02072303e+25 m\textasciicircum{}-3；spacing\_800\_nm = 5.2073942 nm；spacing\_1000\_nm = 3.21092157 nm；fraction\_ratio\_1000\_over800 = 4.26552285 ratio；fraction\_squared\_800 = 5.01507311e-07 fraction2；fraction\_squared\_1000 = 9.12476765e-06 fraction2；dimensionless\_energy\_800 = 14.5056477 ratio；dimensionless\_energy\_1000 = 11.6045181 ratio\par
+\noindent\textbf{模型前提：}
+全部模型假设已在题干声明；独立数值见证为程序层面的双路径验证，不代表专家科研审定。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{分析化学}
