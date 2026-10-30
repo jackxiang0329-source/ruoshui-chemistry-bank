@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第15辑 (74题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第15辑 (93题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -473,6 +473,144 @@ vacancy\_fraction\_800 = 0.000708171809 fraction；vacancy\_fraction\_1000 = 0.0
 全部模型假设已在题干声明；独立数值见证为程序层面的双路径验证，不代表专家科研审定。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I245 · NaCl型离子晶体的离子接触半径、晶格与质量密度}
+\noindent\textbf{题目}\par
+某假想理想NaCl型离子晶体AB，A⁺和B⁻沿立方晶胞边接触，晶格常数a=0.5640 nm。每常规晶胞有Z=4个AB式量，离子半径rA=0.1020 nm，沿边最短A–B距离为a/2。元素A、B摩尔质量分别22.990与35.450 g/mol，NA=6.02214076×10²³ mol⁻¹。求B离子半径、最短接触距、常规晶胞体积、AB式量摩尔质量、单胞质量、理论密度、单位cm³的式量数、晶胞A⁺和B⁻离子数、净电荷残差及B/A半径比。模型只适用于沿边最近邻接触的理想岩盐晶体，未考虑热膨胀与真实极化。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题设与约束：某假想理想NaCl型离子晶体AB，A⁺和B⁻沿立方晶胞边接触，晶格常数a=0.5640 nm。每常规晶胞有Z=4个AB式量，离子半径rA=0.1020 nm，沿边最短A–B距离为a/2。元素A、B摩尔质量分别22.990与35.450 g/mol，NA=6.02214076×10²³ mol⁻¹。求B离子半径、最短接触距、常规晶胞体积、AB式量摩尔质量、单胞质量、理论密度、单位cm³的式量数、晶胞A⁺和B⁻离子数、净电荷残差及B/A半径比。模型只适用于沿边最近邻接触的理想岩盐晶体，未考虑热膨胀与真实极化。
+\item 列出独立计量及化学物理关系：a=2(rA+rB)；每胞质量4(MA+MB)/NA，体积a³×10⁻²¹ cm³。
+\item 界定公式使用的标准态、价电子计数口径与理想模型近似，明确哪些外部库保持物种浓度不变。
+\item 单位转换：把电量、元素摩尔质量、晶胞体积和能量统一到各公式规定的尺度；对数中只能代入无量纲的活度比。
+\item 第一组计算：radius\_B\_nm = 0.1800000000000 nm；nearest\_AB\_nm = 0.2820000000000 nm；cell\_volume\_nm3 = 0.1794061440000 nm3；formula\_mass\_gmol = 58.44000000000 g/mol。
+\item 其余关键组分与能量：cell\_mass\_g = 3.881676123426e-22 g；density\_gcm3 = 2.163624966727 g/cm3；formula\_units\_cm3 = 2.229578046112e+22 units/cm3；cation\_count = 4.000000000000 ions。
+\item 完整数值答案与回代：anion\_count = 4.000000000000 ions；net\_cell\_charge = 0.000000000000 e；radius\_ratio\_B\_A = 1.764705882353 ratio。
+\item 严格核对化学式、氧化态与电子库存守恒，或核对同位素概率归一、晶胞体积和能量方向。
+\item 通过与主公式不同的数值表达式逐值复算，要求相对偏差不高于1e−9，不能用预设答案冒充独立复算。
+\item 理论计算仍须人工专家评审科学适用性与跨辑原创性，本条不纳入正式可出版题库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+radius\_B\_nm = 0.18 nm；nearest\_AB\_nm = 0.282 nm；cell\_volume\_nm3 = 0.179406144 nm3；formula\_mass\_gmol = 58.44 g/mol；cell\_mass\_g = 3.88167612e-22 g；density\_gcm3 = 2.16362497 g/cm3；formula\_units\_cm3 = 2.22957805e+22 units/cm3；cation\_count = 4 ions；anion\_count = 4 ions；net\_cell\_charge = 0 e；radius\_ratio\_B\_A = 1.76470588 ratio\par
+\noindent\textbf{模型前提：}
+理想模型与题设计量成立；数学自洽不等于现实实验认证和专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I246 · Rh(I)配合物氧化加成与插入CO的电子计数}
+\noindent\textbf{题目}\par
+在离子型电子计数法下，理想四配位方平面RhCl(PPh₃)₂(CO)中Rh为+1价、d⁸；Cl⁻是X型2e配体，两个膦各2e，一分子CO给2e。它与H₂氧化加成形成RhCl(H)₂(PPh₃)₂(CO)，金属形式氧化态由+1到+3，额外两个H⁻各2e且金属d电子数由d⁸降至d⁶。求加成前后Rh氧化态、d电子数、配体电子贡献总数和价电子总数、加成增加的配体数、两态总价电子差、加成前后形式配位数与最终Rh–H数。忽略膦解离、五配位重排和实际电子离域，按本题给定离子型计数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题设与约束：在离子型电子计数法下，理想四配位方平面RhCl(PPh₃)₂(CO)中Rh为+1价、d⁸；Cl⁻是X型2e配体，两个膦各2e，一分子CO给2e。它与H₂氧化加成形成RhCl(H)₂(PPh₃)₂(CO)，金属形式氧化态由+1到+3，额外两个H⁻各2e且金属d电子数由d⁸降至d⁶。求加成前后Rh氧化态、d电子数、配体电子贡献总数和价电子总数、加成增加的配体数、两态总价电子差、加成前后形式配位数与最终Rh–H数。忽略膦解离、五配位重排和实际电子离域，按本题给定离子型计数。
+\item 列出独立计量及化学物理关系：起始配体贡献2(Cl)+2×2(P)+2(CO)=8，价电子8+8=16；加成后配体贡献12，d6+12=18。
+\item 界定公式使用的标准态、价电子计数口径与理想模型近似，明确哪些外部库保持物种浓度不变。
+\item 单位转换：把电量、元素摩尔质量、晶胞体积和能量统一到各公式规定的尺度；对数中只能代入无量纲的活度比。
+\item 第一组计算：oxidation\_initial = 1.000000000000 oxidation；oxidation\_after = 3.000000000000 oxidation；d\_count\_initial = 8.000000000000 electrons；d\_count\_after = 6.000000000000 electrons。
+\item 其余关键组分与能量：ligand\_e\_initial = 8.000000000000 electrons；ligand\_e\_after = 12.00000000000 electrons；electron\_count\_initial = 16.00000000000 electrons；electron\_count\_after = 18.00000000000 electrons。
+\item 完整数值答案与回代：ligands\_added = 2.000000000000 ligands；electron\_gain\_total = 2.000000000000 electrons；coordination\_initial = 4.000000000000 coordination；coordination\_after = 6.000000000000 coordination。
+\item 严格核对化学式、氧化态与电子库存守恒，或核对同位素概率归一、晶胞体积和能量方向。
+\item 通过与主公式不同的数值表达式逐值复算，要求相对偏差不高于1e−9，不能用预设答案冒充独立复算。
+\item 理论计算仍须人工专家评审科学适用性与跨辑原创性，本条不纳入正式可出版题库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+oxidation\_initial = 1 oxidation；oxidation\_after = 3 oxidation；d\_count\_initial = 8 electrons；d\_count\_after = 6 electrons；ligand\_e\_initial = 8 electrons；ligand\_e\_after = 12 electrons；electron\_count\_initial = 16 electrons；electron\_count\_after = 18 electrons；ligands\_added = 2 ligands；electron\_gain\_total = 2 electrons；coordination\_initial = 4 coordination；coordination\_after = 6 coordination\par
+\noindent\textbf{模型前提：}
+理想模型与题设计量成立；数学自洽不等于现实实验认证和专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I247 · Fe³⁺/Fe²⁺与I₂/I⁻氧化还原配平及平衡驱动力}
+\noindent\textbf{题目}\par
+298.15 K将Fe³⁺+e⁻→Fe²⁺的标准还原电势设为0.7710 V，I₂+2e⁻→2I⁻设为0.5350 V，反应2Fe³⁺+2I⁻⇌2Fe²⁺+I₂（碘活度由独立储库保持1），电子转移数n=2。理想活动度按1 M标准态，实际自由Fe³⁺=0.01000、Fe²⁺=0.02000、I⁻=0.1000 M。计算E°、标准Gibbs自由能kJ/mol反应、lnK、log₁₀K、实际反应商、实际电势、实际Gibbs自由能、平衡常数K、反应自发方向标志及由每mol反应所转移电子物质的量。注意不能把每个Fe的1e误当总反应n=1。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题设与约束：298.15 K将Fe³⁺+e⁻→Fe²⁺的标准还原电势设为0.7710 V，I₂+2e⁻→2I⁻设为0.5350 V，反应2Fe³⁺+2I⁻⇌2Fe²⁺+I₂（碘活度由独立储库保持1），电子转移数n=2。理想活动度按1 M标准态，实际自由Fe³⁺=0.01000、Fe²⁺=0.02000、I⁻=0.1000 M。计算E°、标准Gibbs自由能kJ/mol反应、lnK、log₁₀K、实际反应商、实际电势、实际Gibbs自由能、平衡常数K、反应自发方向标志及由每mol反应所转移电子物质的量。注意不能把每个Fe的1e误当总反应n=1。
+\item 列出独立计量及化学物理关系：E°=0.771−0.535；Q=aFeII² aI2/(aFeIII² aI−²)；E=E°−RT/(2F)lnQ。
+\item 界定公式使用的标准态、价电子计数口径与理想模型近似，明确哪些外部库保持物种浓度不变。
+\item 单位转换：把电量、元素摩尔质量、晶胞体积和能量统一到各公式规定的尺度；对数中只能代入无量纲的活度比。
+\item 第一组计算：standard\_E\_V = 0.2360000000000 V；standard\_DG\_kJmol = -45.54107676064 kJ/mol；lnK = 18.37106340193 log；log10K = 7.978451462152 log10。
+\item 其余关键组分与能量：reaction\_Q = 400.0000000000 ratio；actual\_E\_V = 0.1590319115349 V；actual\_DG\_kJmol = -30.68849360425 kJ/mol；equilibrium\_K = 95159348.96780 ratio。
+\item 完整数值答案与回代：forward\_favorable\_flag = 1.000000000000 boolean；electron\_moles\_per\_reaction = 2.000000000000 mol\_e。
+\item 严格核对化学式、氧化态与电子库存守恒，或核对同位素概率归一、晶胞体积和能量方向。
+\item 通过与主公式不同的数值表达式逐值复算，要求相对偏差不高于1e−9，不能用预设答案冒充独立复算。
+\item 理论计算仍须人工专家评审科学适用性与跨辑原创性，本条不纳入正式可出版题库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+standard\_E\_V = 0.236 V；standard\_DG\_kJmol = -45.5410768 kJ/mol；lnK = 18.3710634 log；log10K = 7.97845146 log10；reaction\_Q = 400 ratio；actual\_E\_V = 0.159031912 V；actual\_DG\_kJmol = -30.6884936 kJ/mol；equilibrium\_K = 95159349 ratio；forward\_favorable\_flag = 1 boolean；electron\_moles\_per\_reaction = 2 mol\_e\par
+\noindent\textbf{模型前提：}
+理想模型与题设计量成立；数学自洽不等于现实实验认证和专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I248 · Zn/Ag原电池恒电流放电的金属消耗与沉积}
+\noindent\textbf{题目}\par
+假想Zn|Zn²⁺||Ag⁺|Ag原电池在恒定放电电流I=0.05000 A下运行t=3600 s。阳极Zn→Zn²⁺+2e⁻，阴极Ag⁺+e⁻→Ag，法拉第效率100\%。已知Zn摩尔质量65.38、Ag摩尔质量107.8682 g/mol，F=96485.33212 C/mol，忽略电池极化、溶解副反应、隔膜传输损失。计算总电量、通过电子物质的量、消耗Zn的mol与g、沉积Ag的mol与g、电子/锌计量比、沉积银/消耗锌质量比、金属原子数变化总量和理论可生成Zn²⁺浓度增量（若阳极电解液体积为1.000 L）。不可将Zn氧化错误配成单电子过程。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题设与约束：假想Zn|Zn²⁺||Ag⁺|Ag原电池在恒定放电电流I=0.05000 A下运行t=3600 s。阳极Zn→Zn²⁺+2e⁻，阴极Ag⁺+e⁻→Ag，法拉第效率100\%。已知Zn摩尔质量65.38、Ag摩尔质量107.8682 g/mol，F=96485.33212 C/mol，忽略电池极化、溶解副反应、隔膜传输损失。计算总电量、通过电子物质的量、消耗Zn的mol与g、沉积Ag的mol与g、电子/锌计量比、沉积银/消耗锌质量比、金属原子数变化总量和理论可生成Zn²⁺浓度增量（若阳极电解液体积为1.000 L）。不可将Zn氧化错误配成单电子过程。
+\item 列出独立计量及化学物理关系：Q=It；n(e)=Q/F；n(Zn)=n(e)/2；n(Ag)=n(e)，银沉积/锌质量比=2MAg/MZn。
+\item 界定公式使用的标准态、价电子计数口径与理想模型近似，明确哪些外部库保持物种浓度不变。
+\item 单位转换：把电量、元素摩尔质量、晶胞体积和能量统一到各公式规定的尺度；对数中只能代入无量纲的活度比。
+\item 第一组计算：charge\_C = 180.0000000000 C；electron\_mol = 0.001865568538191 mol；Zn\_consumption\_mol = 0.0009327842690956 mol；Zn\_consumption\_g = 0.06098543551347 g。
+\item 其余关键组分与能量：Ag\_deposition\_mol = 0.001865568538191 mol；Ag\_deposition\_g = 0.2012355201913 g；electron\_per\_Zn = 2.000000000000 ratio；Ag\_mass\_to\_Zn\_mass = 3.299730804527 ratio。
+\item 完整数值答案与回代：total\_metal\_atoms\_changed = 1.685207450162e+21 atoms；ZnII\_concentration\_increase\_M = 0.0009327842690956 mol/L。
+\item 严格核对化学式、氧化态与电子库存守恒，或核对同位素概率归一、晶胞体积和能量方向。
+\item 通过与主公式不同的数值表达式逐值复算，要求相对偏差不高于1e−9，不能用预设答案冒充独立复算。
+\item 理论计算仍须人工专家评审科学适用性与跨辑原创性，本条不纳入正式可出版题库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+charge\_C = 180 C；electron\_mol = 0.00186556854 mol；Zn\_consumption\_mol = 0.000932784269 mol；Zn\_consumption\_g = 0.0609854355 g；Ag\_deposition\_mol = 0.00186556854 mol；Ag\_deposition\_g = 0.20123552 g；electron\_per\_Zn = 2 ratio；Ag\_mass\_to\_Zn\_mass = 3.2997308 ratio；total\_metal\_atoms\_changed = 1.68520745e+21 atoms；ZnII\_concentration\_increase\_M = 0.000932784269 mol/L\par
+\noindent\textbf{模型前提：}
+理想模型与题设计量成立；数学自洽不等于现实实验认证和专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I249 · Al(OH)₃沉淀–水解近似下的临界pH与离子积}
+\noindent\textbf{题目}\par
+25°C某假设Al(OH)₃(s)溶度积Ksp=[Al³⁺][OH⁻]³=1.000×10⁻³³，以自由Al³⁺=0.001000 mol/L作为外部储液池控制的固定浓度，水离子积Kw=1.000×10⁻¹⁴。仅考虑Al³⁺+3OH⁻⇌Al(OH)₃(s)的沉淀起点，暂不考虑铝水解/铝酸根再溶解。求开始沉淀的[OH⁻]阈值、pOH和pH；在pH=4.000与5.000时的[OH⁻]、两个离子积Q、过饱和比Q/Ksp、阈值pH相对pH4的差以及pH5与pH4过饱和比倍率。由于自由Al³⁺由外部控制，本题不计算发生沉淀后的闭合系统总量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题设与约束：25°C某假设Al(OH)₃(s)溶度积Ksp=[Al³⁺][OH⁻]³=1.000×10⁻³³，以自由Al³⁺=0.001000 mol/L作为外部储液池控制的固定浓度，水离子积Kw=1.000×10⁻¹⁴。仅考虑Al³⁺+3OH⁻⇌Al(OH)₃(s)的沉淀起点，暂不考虑铝水解/铝酸根再溶解。求开始沉淀的[OH⁻]阈值、pOH和pH；在pH=4.000与5.000时的[OH⁻]、两个离子积Q、过饱和比Q/Ksp、阈值pH相对pH4的差以及pH5与pH4过饱和比倍率。由于自由Al³⁺由外部控制，本题不计算发生沉淀后的闭合系统总量。
+\item 列出独立计量及化学物理关系：OH\_threshold=(Ksp/[Al³⁺])\textasciicircum{}(1/3)，pOH=−log10OH，pH=14−pOH，Q=[Al³⁺]OH³。
+\item 界定公式使用的标准态、价电子计数口径与理想模型近似，明确哪些外部库保持物种浓度不变。
+\item 单位转换：把电量、元素摩尔质量、晶胞体积和能量统一到各公式规定的尺度；对数中只能代入无量纲的活度比。
+\item 第一组计算：OH\_threshold\_M = 1.000000000000e-10 mol/L；pOH\_threshold = 10.00000000000 pOH；pH\_threshold = 4.000000000000 pH；OH\_pH4\_M = 1.000000000000e-10 mol/L。
+\item 其余关键组分与能量：OH\_pH5\_M = 1.000000000000e-9 mol/L；Q\_pH4 = 1.000000000000e-33 activity4；Q\_pH5 = 1.000000000000e-30 activity4；saturation\_pH4 = 1.000000000000 ratio。
+\item 完整数值答案与回代：saturation\_pH5 = 1000.000000000 ratio；pH\_threshold\_minus4 = 0.000000000000 pH；saturation\_multiplier = 1000.000000000 ratio。
+\item 严格核对化学式、氧化态与电子库存守恒，或核对同位素概率归一、晶胞体积和能量方向。
+\item 通过与主公式不同的数值表达式逐值复算，要求相对偏差不高于1e−9，不能用预设答案冒充独立复算。
+\item 理论计算仍须人工专家评审科学适用性与跨辑原创性，本条不纳入正式可出版题库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+OH\_threshold\_M = 1e-10 mol/L；pOH\_threshold = 10 pOH；pH\_threshold = 4 pH；OH\_pH4\_M = 1e-10 mol/L；OH\_pH5\_M = 1e-09 mol/L；Q\_pH4 = 1e-33 activity4；Q\_pH5 = 1e-30 activity4；saturation\_pH4 = 1 ratio；saturation\_pH5 = 1000 ratio；pH\_threshold\_minus4 = 0 pH；saturation\_multiplier = 1000 ratio\par
+\noindent\textbf{模型前提：}
+理想模型与题设计量成立；数学自洽不等于现实实验认证和专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-I250 · 含等强度三核同位素金属配合物的同位素峰分布}
+\noindent\textbf{题目}\par
+某理想金属簇X₃L\_m中三个等价金属原子各有两种同位素，轻同位素分数p=0.7000、重同位素分数q=0.3000，每个重同位素使簇质量增加2 u。假设三个金属位点独立选择同位素，配体同位素忽略且质谱响应不偏向某一同位素体。由二项分布求M、M+2、M+4、M+6四峰概率、它们对基峰M的归一化峰强度（以M=100）、随机簇中重同位素原子平均数及方差，以及含至少1个重同位素的总峰概率。解释M+2峰的组合因子3，概率之和应为1。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题设与约束：某理想金属簇X₃L\_m中三个等价金属原子各有两种同位素，轻同位素分数p=0.7000、重同位素分数q=0.3000，每个重同位素使簇质量增加2 u。假设三个金属位点独立选择同位素，配体同位素忽略且质谱响应不偏向某一同位素体。由二项分布求M、M+2、M+4、M+6四峰概率、它们对基峰M的归一化峰强度（以M=100）、随机簇中重同位素原子平均数及方差，以及含至少1个重同位素的总峰概率。解释M+2峰的组合因子3，概率之和应为1。
+\item 列出独立计量及化学物理关系：P(K=k)=C(3,k)q\textasciicircum{}k p\textasciicircum{}(3−k)，E[K]=3q，Var(K)=3pq。
+\item 界定公式使用的标准态、价电子计数口径与理想模型近似，明确哪些外部库保持物种浓度不变。
+\item 单位转换：把电量、元素摩尔质量、晶胞体积和能量统一到各公式规定的尺度；对数中只能代入无量纲的活度比。
+\item 第一组计算：prob\_M = 0.3430000000000 fraction；prob\_M2 = 0.4410000000000 fraction；prob\_M4 = 0.1890000000000 fraction；prob\_M6 = 0.02700000000000 fraction。
+\item 其余关键组分与能量：relative\_M2\_100 = 128.5714285714 relative；relative\_M4\_100 = 55.10204081633 relative；relative\_M6\_100 = 7.871720116618 relative；mean\_heavy\_atoms = 0.9000000000000 atoms。
+\item 完整数值答案与回代：variance\_heavy\_atoms = 0.6300000000000 atoms2；prob\_at\_least\_one\_heavy = 0.6570000000000 fraction；prob\_sum = 1.000000000000 fraction。
+\item 严格核对化学式、氧化态与电子库存守恒，或核对同位素概率归一、晶胞体积和能量方向。
+\item 通过与主公式不同的数值表达式逐值复算，要求相对偏差不高于1e−9，不能用预设答案冒充独立复算。
+\item 理论计算仍须人工专家评审科学适用性与跨辑原创性，本条不纳入正式可出版题库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+prob\_M = 0.343 fraction；prob\_M2 = 0.441 fraction；prob\_M4 = 0.189 fraction；prob\_M6 = 0.027 fraction；relative\_M2\_100 = 128.571429 relative；relative\_M4\_100 = 55.1020408 relative；relative\_M6\_100 = 7.87172012 relative；mean\_heavy\_atoms = 0.9 atoms；variance\_heavy\_atoms = 0.63 atoms2；prob\_at\_least\_one\_heavy = 0.657 fraction；prob\_sum = 1 fraction\par
+\noindent\textbf{模型前提：}
+理想模型与题设计量成立；数学自洽不等于现实实验认证和专家审核。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{分析化学}
 \addcontentsline{toc}{subsection}{第15辑 / 分析化学}
 \Needspace{7\baselineskip}
@@ -912,6 +1050,144 @@ corrected\_perpendicular\_A = 216 counts；corrected\_perpendicular\_B = 180 cou
 依题面仪器线性、标准态和零背景假设；双路径数值复算已实现，专家审查未完成。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A245 · 硫酸根BaSO₄重量法的原样质量分数与空白校正}
+\noindent\textbf{题目}\par
+某固体样品质量m0=0.5000 g，完全溶解后将全部硫酸根SO₄²⁻以BaSO₄沉淀并充分灼烧称重，测得坩埚扣重后沉淀质量mobs=0.1250 g。相同试剂空白为mblank=0.002000 g BaSO₄，假定校正后沉淀纯净且Ba²⁺过量，样品中其他阴离子不共沉淀。已知摩尔质量MBaSO4=233.390、MSO4=96.060 g/mol、MS=32.060 g/mol。求扣空白沉淀质量、BaSO₄的mol、SO₄的mol、SO₄质量、样品硫酸根质量分数与百分数、硫元素质量与含量分数、按原样样品0.5000 g推算的硫酸根mmol/g及忽略空白的相对高估。要区分SO4质量与S质量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 实验条件和测量量：某固体样品质量m0=0.5000 g，完全溶解后将全部硫酸根SO₄²⁻以BaSO₄沉淀并充分灼烧称重，测得坩埚扣重后沉淀质量mobs=0.1250 g。相同试剂空白为mblank=0.002000 g BaSO₄，假定校正后沉淀纯净且Ba²⁺过量，样品中其他阴离子不共沉淀。已知摩尔质量MBaSO4=233.390、MSO4=96.060 g/mol、MS=32.060 g/mol。求扣空白沉淀质量、BaSO₄的mol、SO₄的mol、SO₄质量、样品硫酸根质量分数与百分数、硫元素质量与含量分数、按原样样品0.5000 g推算的硫酸根mmol/g及忽略空白的相对高估。要区分SO4质量与S质量。
+\item 建立校准、计量或信号变换方程：mnet=mobs−mblank；nSO4=mnet/MBaSO4；wSO4=nSO4 MSO4/m0。
+\item 确定所有标准品、空白、待测原样与稀释液之间的量纲和数值联系。
+\item 必要的mg、g、mL、μA、μg或K单位转换必须在代数求解之前完成。
+\item 按原始实验输入计算前四个中间量：net\_precipitate\_g = 0.1230000000000 g；BaSO4\_mol = 0.0005270148678178 mol；sulfate\_mol = 0.0005270148678178 mol；sulfate\_mass\_g = 0.05062504820258 g。
+\item 求得真实待测参数与相互独立的验证字段：sulfate\_mass\_fraction = 0.1012500964052 fraction；sulfate\_mass\_percent = 10.12500964052 percent；elemental\_sulfur\_mass\_g = 0.01689609666224 g；elemental\_sulfur\_mass\_fraction = 0.03379219332448 fraction。
+\item 其余计算与回代：sulfate\_mmol\_per\_g\_sample = 1.054029735636 mmol/g；blank\_omission\_relative\_bias = 0.01626016260163 fraction。
+\item 用仪器原测信号、物料或同位素计量守恒验证预测值；同时区分随机误差、系统偏差与空白校正。
+\item 对所有数值答案重新采用另一计算路径复算并核验相对误差不超过1e−9；这只代表数值层面的审核。
+\item 真实实验的基体效应、仪器校准曲线非线性以及原创性仍需专家审定；暂不计入正式试题库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+net\_precipitate\_g = 0.123 g；BaSO4\_mol = 0.000527014868 mol；sulfate\_mol = 0.000527014868 mol；sulfate\_mass\_g = 0.0506250482 g；sulfate\_mass\_fraction = 0.101250096 fraction；sulfate\_mass\_percent = 10.1250096 percent；elemental\_sulfur\_mass\_g = 0.0168960967 g；elemental\_sulfur\_mass\_fraction = 0.0337921933 fraction；sulfate\_mmol\_per\_g\_sample = 1.05402974 mmol/g；blank\_omission\_relative\_bias = 0.0162601626 fraction\par
+\noindent\textbf{模型前提：}
+依题面校准、体积、计数及理想仪器条件进行推导；专家实验性和原创性审定待办。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A246 · 凯氏定氮酸吸收–NaOH反滴定的氮质量与蛋白换算}
+\noindent\textbf{题目}\par
+某干燥食品试样m=1.000 g通过完全凯氏消化将全部可测氮转化为NH₃，蒸馏后用已知HCl吸收，加入HCl 25.00 mL、0.1000 mol/L，剩余酸用NaOH 0.05000 mol/L反滴定耗10.00 mL。试剂空白在此方案已被独立扣除，且每mol NH₃中含1 mol N，所有NH₃定量吸收且无其它碱性组分。求投加与剩余HCl mol、NH₃与氮mol、氮质量mg (MN=14.007 g/mol)、氮质量百分数、按6.250蛋白换算系数估算的粗蛋白质量百分数、若不扣回滴造成的氮百分数高估、净酸当量占投酸比例以及蛋白折算质量mg。蛋白换算只为经验估计，并非真实氨基酸测量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 实验条件和测量量：某干燥食品试样m=1.000 g通过完全凯氏消化将全部可测氮转化为NH₃，蒸馏后用已知HCl吸收，加入HCl 25.00 mL、0.1000 mol/L，剩余酸用NaOH 0.05000 mol/L反滴定耗10.00 mL。试剂空白在此方案已被独立扣除，且每mol NH₃中含1 mol N，所有NH₃定量吸收且无其它碱性组分。求投加与剩余HCl mol、NH₃与氮mol、氮质量mg (MN=14.007 g/mol)、氮质量百分数、按6.250蛋白换算系数估算的粗蛋白质量百分数、若不扣回滴造成的氮百分数高估、净酸当量占投酸比例以及蛋白折算质量mg。蛋白换算只为经验估计，并非真实氨基酸测量。
+\item 建立校准、计量或信号变换方程：nN=nHCl,add−nNaOH,back；mN=nN MN；protein\_mass=6.25mN。
+\item 确定所有标准品、空白、待测原样与稀释液之间的量纲和数值联系。
+\item 必要的mg、g、mL、μA、μg或K单位转换必须在代数求解之前完成。
+\item 按原始实验输入计算前四个中间量：acid\_added\_mol = 0.002500000000000 mol；acid\_remaining\_mol = 0.0005000000000000 mol；ammonia\_mol = 0.002000000000000 mol；nitrogen\_mol = 0.002000000000000 mol。
+\item 求得真实待测参数与相互独立的验证字段：nitrogen\_mass\_mg = 28.01400000000 mg；nitrogen\_percent = 2.801400000000 percent；crude\_protein\_percent = 17.50875000000 percent；naive\_N\_percent\_overestimate = 0.7003500000000 percentage\_points。
+\item 其余计算与回代：fraction\_acid\_consumed = 0.8000000000000 fraction；protein\_mass\_mg = 175.0875000000 mg。
+\item 用仪器原测信号、物料或同位素计量守恒验证预测值；同时区分随机误差、系统偏差与空白校正。
+\item 对所有数值答案重新采用另一计算路径复算并核验相对误差不超过1e−9；这只代表数值层面的审核。
+\item 真实实验的基体效应、仪器校准曲线非线性以及原创性仍需专家审定；暂不计入正式试题库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+acid\_added\_mol = 0.0025 mol；acid\_remaining\_mol = 0.0005 mol；ammonia\_mol = 0.002 mol；nitrogen\_mol = 0.002 mol；nitrogen\_mass\_mg = 28.014 mg；nitrogen\_percent = 2.8014 percent；crude\_protein\_percent = 17.50875 percent；naive\_N\_percent\_overestimate = 0.70035 percentage\_points；fraction\_acid\_consumed = 0.8 fraction；protein\_mass\_mg = 175.0875 mg\par
+\noindent\textbf{模型前提：}
+依题面校准、体积、计数及理想仪器条件进行推导；专家实验性和原创性审定待办。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A247 · ICP-MS内标漂移校正的信号比与原样浓度反演}
+\noindent\textbf{题目}\par
+某ICP-MS实验采用元素X分析线与不含样本来源的内标Y峰。标准溶液X浓度Cstd=10.00 μg/L、内标加量CY=5.000 μg/L，标准信号IX,std=10000 counts/s、IY,std=5000 counts/s。未知样被10.00倍稀释并同样加入内标CY，测得IX,unk=6400 counts/s、IY,unk=4000 counts/s。假定X与Y受到相同仪器漂移，且校正后信号比IX/IY与X/CY成正比。求标准与未知比值、内标信号漂移系数、未知稀释液浓度、原样浓度、直接不校正由IX得到的错误原样浓度、错误结果相对低估比例、校正未知X信号、校正后样品X/标准信号比和标准的X/Y浓度比，以及原样每1 L含X的μg数。不存在谱线干扰或质量偏倚。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 实验条件和测量量：某ICP-MS实验采用元素X分析线与不含样本来源的内标Y峰。标准溶液X浓度Cstd=10.00 μg/L、内标加量CY=5.000 μg/L，标准信号IX,std=10000 counts/s、IY,std=5000 counts/s。未知样被10.00倍稀释并同样加入内标CY，测得IX,unk=6400 counts/s、IY,unk=4000 counts/s。假定X与Y受到相同仪器漂移，且校正后信号比IX/IY与X/CY成正比。求标准与未知比值、内标信号漂移系数、未知稀释液浓度、原样浓度、直接不校正由IX得到的错误原样浓度、错误结果相对低估比例、校正未知X信号、校正后样品X/标准信号比和标准的X/Y浓度比，以及原样每1 L含X的μg数。不存在谱线干扰或质量偏倚。
+\item 建立校准、计量或信号变换方程：Cunk,dil=Cstd (IX/IY)unk/(IX/IY)std；Coriginal=10 Cunk,dil；IX,corrected=IX,unk×IY,std/IY,unk。
+\item 确定所有标准品、空白、待测原样与稀释液之间的量纲和数值联系。
+\item 必要的mg、g、mL、μA、μg或K单位转换必须在代数求解之前完成。
+\item 按原始实验输入计算前四个中间量：standard\_signal\_ratio = 2.000000000000 ratio；unknown\_signal\_ratio = 1.600000000000 ratio；internal\_standard\_drift\_factor = 0.8000000000000 ratio；diluted\_X\_ugL = 8.000000000000 ug/L。
+\item 求得真实待测参数与相互独立的验证字段：original\_X\_ugL = 80.00000000000 ug/L；naive\_original\_X\_ugL = 64.00000000000 ug/L；naive\_relative\_low\_bias = 0.2000000000000 fraction；corrected\_X\_signal\_counts\_s = 8000.000000000 counts/s。
+\item 其余计算与回代：corrected\_unknown\_to\_std\_signal = 0.8000000000000 ratio；standard\_concentration\_XY\_ratio = 2.000000000000 ratio。
+\item 用仪器原测信号、物料或同位素计量守恒验证预测值；同时区分随机误差、系统偏差与空白校正。
+\item 对所有数值答案重新采用另一计算路径复算并核验相对误差不超过1e−9；这只代表数值层面的审核。
+\item 真实实验的基体效应、仪器校准曲线非线性以及原创性仍需专家审定；暂不计入正式试题库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+standard\_signal\_ratio = 2 ratio；unknown\_signal\_ratio = 1.6 ratio；internal\_standard\_drift\_factor = 0.8 ratio；diluted\_X\_ugL = 8 ug/L；original\_X\_ugL = 80 ug/L；naive\_original\_X\_ugL = 64 ug/L；naive\_relative\_low\_bias = 0.2 fraction；corrected\_X\_signal\_counts\_s = 8000 counts/s；corrected\_unknown\_to\_std\_signal = 0.8 ratio；standard\_concentration\_XY\_ratio = 2 ratio\par
+\noindent\textbf{模型前提：}
+依题面校准、体积、计数及理想仪器条件进行推导；专家实验性和原创性审定待办。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A248 · 一阶化学反应的UV吸光度双时点速率与半衰期}
+\noindent\textbf{题目}\par
+某有机发色物A发生不可逆一阶漂白生成不吸光产物，工作波长吸光度A(t)=εl c(t)，且空白吸光Ablank=0.05000已知恒定。t=0时仪器总吸光度Araw0=0.8500；t=100.0 s时Araw100=0.4500，假设吸光系数和光程恒定、没有其它吸收物种。求扣空白后初、100s的净吸光度，指数衰减比例，k=−ln(Anet100/Anet0)/100、半衰期、200s的预测净与总吸光度、100s转化率、降至初始净吸光的10\%所需时间及在t=100s的净吸光每秒衰减速度。需区分总吸光和真正随反应衰减的净吸光。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 实验条件和测量量：某有机发色物A发生不可逆一阶漂白生成不吸光产物，工作波长吸光度A(t)=εl c(t)，且空白吸光Ablank=0.05000已知恒定。t=0时仪器总吸光度Araw0=0.8500；t=100.0 s时Araw100=0.4500，假设吸光系数和光程恒定、没有其它吸收物种。求扣空白后初、100s的净吸光度，指数衰减比例，k=−ln(Anet100/Anet0)/100、半衰期、200s的预测净与总吸光度、100s转化率、降至初始净吸光的10\%所需时间及在t=100s的净吸光每秒衰减速度。需区分总吸光和真正随反应衰减的净吸光。
+\item 建立校准、计量或信号变换方程：Anet=Araw−Ablank，k=ln(Anet0/Anet100)/100，Anet(t)=Anet0 e\textasciicircum{}(−kt)。
+\item 确定所有标准品、空白、待测原样与稀释液之间的量纲和数值联系。
+\item 必要的mg、g、mL、μA、μg或K单位转换必须在代数求解之前完成。
+\item 按原始实验输入计算前四个中间量：net\_A0 = 0.8000000000000 AU；net\_A100 = 0.4000000000000 AU；fraction\_remaining\_100 = 0.5000000000000 fraction；rate\_constant\_sInv = 0.006931471805599 s\textasciicircum{}-1。
+\item 求得真实待测参数与相互独立的验证字段：half\_time\_s = 100.0000000000 s；net\_A200 = 0.2000000000000 AU；raw\_A200 = 0.2500000000000 AU；conversion\_100 = 0.5000000000000 fraction。
+\item 其余计算与回代：time\_to\_10pct\_s = 332.1928094887 s；instant\_absorbance\_decay\_100\_per\_s = -0.002772588722240 AU/s。
+\item 用仪器原测信号、物料或同位素计量守恒验证预测值；同时区分随机误差、系统偏差与空白校正。
+\item 对所有数值答案重新采用另一计算路径复算并核验相对误差不超过1e−9；这只代表数值层面的审核。
+\item 真实实验的基体效应、仪器校准曲线非线性以及原创性仍需专家审定；暂不计入正式试题库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+net\_A0 = 0.8 AU；net\_A100 = 0.4 AU；fraction\_remaining\_100 = 0.5 fraction；rate\_constant\_sInv = 0.00693147181 s\textasciicircum{}-1；half\_time\_s = 100 s；net\_A200 = 0.2 AU；raw\_A200 = 0.25 AU；conversion\_100 = 0.5 fraction；time\_to\_10pct\_s = 332.192809 s；instant\_absorbance\_decay\_100\_per\_s = -0.00277258872 AU/s\par
+\noindent\textbf{模型前提：}
+依题面校准、体积、计数及理想仪器条件进行推导；专家实验性和原创性审定待办。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A249 · 循环伏安法可逆单电子峰电流的扫速平方根规律}
+\noindent\textbf{题目}\par
+298.15 K理想可逆单电子电极反应O+e⁻⇌R，扩散控制且半无限平面扩散，Randles–Ševčík峰电流表达式|ip|=2.690×10⁵ n\textasciicircum{}(3/2) Aelec C √(D ν)，其中Aelec=0.05000 cm²，C=0.001000 mol/L=1.000×10⁻⁶ mol/cm³，D=1.000×10⁻⁵ cm²/s，扫速ν以V/s，n=1。取ν1=0.01000 V/s和ν2=0.04000 V/s，求两峰电流A与μA、峰电流比、扫速比、ip/√ν常数、由ν2峰电流反算D、两扫速下单位浓度峰电流灵敏度(A·cm³/mol)与峰电流增量。模型不包含表面吸附和化学后续反应。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 实验条件和测量量：298.15 K理想可逆单电子电极反应O+e⁻⇌R，扩散控制且半无限平面扩散，Randles–Ševčík峰电流表达式|ip|=2.690×10⁵ n\textasciicircum{}(3/2) Aelec C √(D ν)，其中Aelec=0.05000 cm²，C=0.001000 mol/L=1.000×10⁻⁶ mol/cm³，D=1.000×10⁻⁵ cm²/s，扫速ν以V/s，n=1。取ν1=0.01000 V/s和ν2=0.04000 V/s，求两峰电流A与μA、峰电流比、扫速比、ip/√ν常数、由ν2峰电流反算D、两扫速下单位浓度峰电流灵敏度(A·cm³/mol)与峰电流增量。模型不包含表面吸附和化学后续反应。
+\item 建立校准、计量或信号变换方程：ip=K Aelec C sqrt(Dν)，K=2.690×10⁵；D=[ip/(K A C)]²/ν。
+\item 确定所有标准品、空白、待测原样与稀释液之间的量纲和数值联系。
+\item 必要的mg、g、mL、μA、μg或K单位转换必须在代数求解之前完成。
+\item 按原始实验输入计算前四个中间量：peak\_i1\_A = 0.000004253263452926 A；peak\_i2\_A = 0.000008506526905853 A；peak\_i1\_uA = 4.253263452926 microA；peak\_i2\_uA = 8.506526905853 microA。
+\item 求得真实待测参数与相互独立的验证字段：current\_ratio = 2.000000000000 ratio；scanrate\_ratio = 4.000000000000 ratio；ip\_over\_sqrt\_scanrate = 0.00004253263452926 A/sqrt(V/s)；recovered\_diffusion\_cm2s = 0.00001000000000000 cm2/s。
+\item 其余计算与回代：sensitivity\_scan1 = 4.253263452926 A\_cm3\_per\_mol；sensitivity\_scan2 = 8.506526905853 A\_cm3\_per\_mol；current\_difference\_A = 0.000004253263452926 A。
+\item 用仪器原测信号、物料或同位素计量守恒验证预测值；同时区分随机误差、系统偏差与空白校正。
+\item 对所有数值答案重新采用另一计算路径复算并核验相对误差不超过1e−9；这只代表数值层面的审核。
+\item 真实实验的基体效应、仪器校准曲线非线性以及原创性仍需专家审定；暂不计入正式试题库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+peak\_i1\_A = 4.25326345e-06 A；peak\_i2\_A = 8.50652691e-06 A；peak\_i1\_uA = 4.25326345 microA；peak\_i2\_uA = 8.50652691 microA；current\_ratio = 2 ratio；scanrate\_ratio = 4 ratio；ip\_over\_sqrt\_scanrate = 4.25326345e-05 A/sqrt(V/s)；recovered\_diffusion\_cm2s = 1e-05 cm2/s；sensitivity\_scan1 = 4.25326345 A\_cm3\_per\_mol；sensitivity\_scan2 = 8.50652691 A\_cm3\_per\_mol；current\_difference\_A = 4.25326345e-06 A\par
+\noindent\textbf{模型前提：}
+依题面校准、体积、计数及理想仪器条件进行推导；专家实验性和原创性审定待办。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A250 · DSC热容基线与熔融峰面积的样品熔融焓}
+\noindent\textbf{题目}\par
+某差示扫描量热DSC仪对一聚合物试样进行等速升温，样品质量m=0.01000 g，升温速率β=10.00 K/min。熔融温区起始与终止温度T1=350.0、T2=370.0 K，已扣除热容基线后的额外热流峰近似为等腰三角形，峰高Pmax=5.000 mW、温度跨度ΔT=20.00 K，峰面积Q=½ Pmax Δt，其中Δt=ΔT/β。求熔融持续时间秒、总吸热量J、比熔融焓J/g、按重复单元摩尔质量100.0 g/mol换算为每mol重复单元的等效熔融焓、峰最大热流W、平均基线校正峰功率、在给定β下的温度上升速率K/s及该峰面积与一个同等峰高但峰宽10 K的情形之比。假设仪器线性且热流峰全部来自样品熔融。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 实验条件和测量量：某差示扫描量热DSC仪对一聚合物试样进行等速升温，样品质量m=0.01000 g，升温速率β=10.00 K/min。熔融温区起始与终止温度T1=350.0、T2=370.0 K，已扣除热容基线后的额外热流峰近似为等腰三角形，峰高Pmax=5.000 mW、温度跨度ΔT=20.00 K，峰面积Q=½ Pmax Δt，其中Δt=ΔT/β。求熔融持续时间秒、总吸热量J、比熔融焓J/g、按重复单元摩尔质量100.0 g/mol换算为每mol重复单元的等效熔融焓、峰最大热流W、平均基线校正峰功率、在给定β下的温度上升速率K/s及该峰面积与一个同等峰高但峰宽10 K的情形之比。假设仪器线性且热流峰全部来自样品熔融。
+\item 建立校准、计量或信号变换方程：Δt=ΔT/(β/60)，Q=½ Pmax Δt，qmass=Q/m。
+\item 确定所有标准品、空白、待测原样与稀释液之间的量纲和数值联系。
+\item 必要的mg、g、mL、μA、μg或K单位转换必须在代数求解之前完成。
+\item 按原始实验输入计算前四个中间量：duration\_s = 120.0000000000 s；integrated\_heat\_J = 0.3000000000000 J；specific\_enthalpy\_Jg = 30.00000000000 J/g；molar\_enthalpy\_Jmol\_repeat = 3000.000000000 J/mol。
+\item 求得真实待测参数与相互独立的验证字段：peak\_power\_W = 0.005000000000000 W；mean\_peak\_power\_W = 0.002500000000000 W；heating\_rate\_Ks = 0.1666666666667 K/s；peak\_area\_vs\_halfwidth\_ratio = 2.000000000000 ratio。
+\item 其余计算与回代：sample\_mass\_mol\_repeats = 0.0001000000000000 mol；enthalpy\_kJmol\_repeat = 3.000000000000 kJ/mol。
+\item 用仪器原测信号、物料或同位素计量守恒验证预测值；同时区分随机误差、系统偏差与空白校正。
+\item 对所有数值答案重新采用另一计算路径复算并核验相对误差不超过1e−9；这只代表数值层面的审核。
+\item 真实实验的基体效应、仪器校准曲线非线性以及原创性仍需专家审定；暂不计入正式试题库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+duration\_s = 120 s；integrated\_heat\_J = 0.3 J；specific\_enthalpy\_Jg = 30 J/g；molar\_enthalpy\_Jmol\_repeat = 3000 J/mol；peak\_power\_W = 0.005 W；mean\_peak\_power\_W = 0.0025 W；heating\_rate\_Ks = 0.166666667 K/s；peak\_area\_vs\_halfwidth\_ratio = 2 ratio；sample\_mass\_mol\_repeats = 0.0001 mol；enthalpy\_kJmol\_repeat = 3 kJ/mol\par
+\noindent\textbf{模型前提：}
+依题面校准、体积、计数及理想仪器条件进行推导；专家实验性和原创性审定待办。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第15辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -1326,6 +1602,167 @@ monomerM = 0.02 mol/L；dimerD = 0.04 mol/L；fraction\_monomer\_units = 0.2 fra
 surviveBoc = 0.740818221 fraction；surviveFmoc = 0.301194212 fraction；both\_protected = 0.22313016 fraction；only\_Boc\_removed = 0.0780640518 fraction；only\_Fmoc\_removed = 0.517688061 fraction；both\_removed = 0.181117728 fraction；both\_protected\_M = 0.0022313016 mol/L；only\_Boc\_removed\_M = 0.000780640518 mol/L；only\_Fmoc\_removed\_M = 0.00517688061 mol/L；single\_removed\_ratio = 0.150793611 ratio；normalized\_fraction = 1 ratio\par
 \noindent\textbf{模型前提：}
 模型内独立数值证据已运行；真实有机反应机理与跨辑独立性仍待专家审查。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-O241 · Diels–Alder反应endo/exo过渡态能差与动力学选择性}
+\noindent\textbf{题目}\par
+假想共轭二烯与环状亲双烯体在不可逆Diels–Alder环加成中可走endo与exo两条通道，两通道过渡态Gibbs自由能分别为ΔG‡endo=62.00、ΔG‡exo=66.00 kJ/mol。假设Eyring前因子相同、无产物异构化，反应分别在T=298.15和350.0 K开展。求两个温度endo/exo速度比、endo与exo产物分率、相应二面体选择性de= fendo−fexo、总共合成0.01000 mol产物时298K下endo与exo物质的量、升温产生的endo分率变化及两个温度的ΔΔG‡/RT。说明endo优选是本题设定的活化自由能结果，不适用于所有反应底物。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题目与底物化学：假想共轭二烯与环状亲双烯体在不可逆Diels–Alder环加成中可走endo与exo两条通道，两通道过渡态Gibbs自由能分别为ΔG‡endo=62.00、ΔG‡exo=66.00 kJ/mol。假设Eyring前因子相同、无产物异构化，反应分别在T=298.15和350.0 K开展。求两个温度endo/exo速度比、endo与exo产物分率、相应二面体选择性de= fendo−fexo、总共合成0.01000 mol产物时298K下endo与exo物质的量、升温产生的endo分率变化及两个温度的ΔΔG‡/RT。说明endo优选是本题设定的活化自由能结果，不适用于所有反应底物。
+\item 建立相关反应速率或链增长概率模型：kendo/kexo=exp[(G‡exo−G‡endo)/RT]，fendo=r/(1+r)，de=2fendo−1。
+\item 核对反应网络是否为并行、串联还是快速预平衡，并将所有底物和产物浓度归一到同一体系。
+\item 求解速率常数和标准态参数前将mol/L、J/mol、Hz、nm及光子数量进行统一的SI变换。
+\item 第一组结果：rate\_ratio\_298 = 5.020762536322 ratio；rate\_ratio\_350 = 3.953262551954 ratio；endo\_fraction\_298 = 0.8339080815815 fraction；exo\_fraction\_298 = 0.1660919184185 fraction。
+\item 反应进程、选择性或链统计中间量：endo\_fraction\_350 = 0.7981128620760 fraction；exo\_fraction\_350 = 0.2018871379240 fraction；de\_298 = 0.6678161631630 fraction；de\_350 = 0.5962257241520 fraction。
+\item 其余答案及可回代物理量：endo\_moles\_298 = 0.008339080815815 mol；exo\_moles\_298 = 0.001660919184185 mol；endo\_fraction\_change = -0.03579521950549 fraction；DGdifference\_over\_RT\_298 = 1.613581821834 ratio。
+\item 检验质量守恒、光子吸收与产物数量、或统计物种分率之和，必要时检查反应通道选择性的温度趋势。
+\item 使用不同数学表示的独立见证逐项核对数值答案，容许机器舍入引起的极小浮点差值。
+\item 所有结果只是所列模型的数值草稿，真实化学选择性与跨辑原创性需再经专家和版权审阅。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+rate\_ratio\_298 = 5.02076254 ratio；rate\_ratio\_350 = 3.95326255 ratio；endo\_fraction\_298 = 0.833908082 fraction；exo\_fraction\_298 = 0.166091918 fraction；endo\_fraction\_350 = 0.798112862 fraction；exo\_fraction\_350 = 0.201887138 fraction；de\_298 = 0.667816163 fraction；de\_350 = 0.596225724 fraction；endo\_moles\_298 = 0.00833908082 mol；exo\_moles\_298 = 0.00166091918 mol；endo\_fraction\_change = -0.0357952195 fraction；DGdifference\_over\_RT\_298 = 1.61358182 ratio\par
+\noindent\textbf{模型前提：}
+题设含理想动力学与单分子模型条件，人工审核与真实实验比较未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-O242 · 固相肽合成逐轮缩合与脱保护的理论纯品收率}
+\noindent\textbf{题目}\par
+某固相肽合成需要连续连接10个新氨基酸残基，每轮都经历偶联成功概率pc=0.9800与其后Fmoc脱保护成功概率pd=0.9900，两事件独立且每轮成功率相同。只有全部20次操作均成功的链被计作目标完整肽。固相起始有n0=0.005000 mol理想树脂链且每条链经历同样操作，失败链既不纠错也不重新反应，忽略裂解/纯化损失。求每轮合格概率、10轮合格分率、10轮合格链摩尔数、至少一次失败概率、如果仅考虑偶联时10轮合格分率、仅考虑脱保护的10轮分率、考虑两者导致的产率下降、若改成5轮的合格率、每轮平均失败概率、初始至第10轮合格链损失mol及合格率对偶联单步概率pc的对数敏感度dln Y/dlnpc。说明合成累积收率与单轮成功率的区别。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题目与底物化学：某固相肽合成需要连续连接10个新氨基酸残基，每轮都经历偶联成功概率pc=0.9800与其后Fmoc脱保护成功概率pd=0.9900，两事件独立且每轮成功率相同。只有全部20次操作均成功的链被计作目标完整肽。固相起始有n0=0.005000 mol理想树脂链且每条链经历同样操作，失败链既不纠错也不重新反应，忽略裂解/纯化损失。求每轮合格概率、10轮合格分率、10轮合格链摩尔数、至少一次失败概率、如果仅考虑偶联时10轮合格分率、仅考虑脱保护的10轮分率、考虑两者导致的产率下降、若改成5轮的合格率、每轮平均失败概率、初始至第10轮合格链损失mol及合格率对偶联单步概率pc的对数敏感度dln Y/dlnpc。说明合成累积收率与单轮成功率的区别。
+\item 建立相关反应速率或链增长概率模型：q=pc pd，Y10=q\textasciicircum{}10；只偶联率pc\textasciicircum{}10；灵敏度10。
+\item 核对反应网络是否为并行、串联还是快速预平衡，并将所有底物和产物浓度归一到同一体系。
+\item 求解速率常数和标准态参数前将mol/L、J/mol、Hz、nm及光子数量进行统一的SI变换。
+\item 第一组结果：single\_cycle\_yield = 0.9702000000000 fraction；ten\_cycle\_yield = 0.7389460005262 fraction；target\_product\_mol = 0.003694730002631 mol；at\_least\_one\_failure\_fraction = 0.2610539994738 fraction。
+\item 反应进程、选择性或链统计中间量：coupling\_only\_yield = 0.8170728068875 fraction；deprotection\_only\_yield = 0.9043820750088 fraction；yield\_loss\_from\_coupling\_only = 0.07812680636132 fraction；five\_cycle\_yield = 0.8596196836545 fraction。
+\item 其余答案及可回代物理量：single\_cycle\_failure = 0.02980000000000 fraction；target\_mole\_loss = 0.001305269997369 mol；log\_sensitivity\_coupling = 10.00000000000 ratio。
+\item 检验质量守恒、光子吸收与产物数量、或统计物种分率之和，必要时检查反应通道选择性的温度趋势。
+\item 使用不同数学表示的独立见证逐项核对数值答案，容许机器舍入引起的极小浮点差值。
+\item 所有结果只是所列模型的数值草稿，真实化学选择性与跨辑原创性需再经专家和版权审阅。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+single\_cycle\_yield = 0.9702 fraction；ten\_cycle\_yield = 0.738946001 fraction；target\_product\_mol = 0.00369473 mol；at\_least\_one\_failure\_fraction = 0.261053999 fraction；coupling\_only\_yield = 0.817072807 fraction；deprotection\_only\_yield = 0.904382075 fraction；yield\_loss\_from\_coupling\_only = 0.0781268064 fraction；five\_cycle\_yield = 0.859619684 fraction；single\_cycle\_failure = 0.0298 fraction；target\_mole\_loss = 0.00130527 mol；log\_sensitivity\_coupling = 10 ratio\par
+\noindent\textbf{模型前提：}
+题设含理想动力学与单分子模型条件，人工审核与真实实验比较未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-O243 · 不对称酮两端烯醇负离子动力学生成区域选择性}
+\noindent\textbf{题目}\par
+某不对称酮K有两个不同的α位H，外加碱B（自由[B]=0.05000 mol/L固定）可以从位点1或位点2夺取一个质子，形成不可逆并行烯醇负离子E1和E2。条件二级速度常数分别k1=1.500、k2=0.5000 L/(mol s)，初始K=0.02000 M；两个烯醇负离子在实验时间t=20.00 s内被迅速捕获而不互变。求两通道拟一级速度、总消耗速度、两产物分支、剩余K浓度、E1和E2对应产物浓度、E1/E2比例、总转化率、K半衰期与E1对E2的总选择性分数差。该模型是动力学烯醇负离子分流，不能用热力学烯醇负离子稳定性替代。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题目与底物化学：某不对称酮K有两个不同的α位H，外加碱B（自由[B]=0.05000 mol/L固定）可以从位点1或位点2夺取一个质子，形成不可逆并行烯醇负离子E1和E2。条件二级速度常数分别k1=1.500、k2=0.5000 L/(mol s)，初始K=0.02000 M；两个烯醇负离子在实验时间t=20.00 s内被迅速捕获而不互变。求两通道拟一级速度、总消耗速度、两产物分支、剩余K浓度、E1和E2对应产物浓度、E1/E2比例、总转化率、K半衰期与E1对E2的总选择性分数差。该模型是动力学烯醇负离子分流，不能用热力学烯醇负离子稳定性替代。
+\item 建立相关反应速率或链增长概率模型：kobs=k1[B]+k2[B]，f1=k1/(k1+k2)，Pi=K0(1−e\textasciicircum{}(−kobst))fi。
+\item 核对反应网络是否为并行、串联还是快速预平衡，并将所有底物和产物浓度归一到同一体系。
+\item 求解速率常数和标准态参数前将mol/L、J/mol、Hz、nm及光子数量进行统一的SI变换。
+\item 第一组结果：pseudo\_rate1 = 0.07500000000000 s\textasciicircum{}-1；pseudo\_rate2 = 0.02500000000000 s\textasciicircum{}-1；total\_rate = 0.1000000000000 s\textasciicircum{}-1；fraction\_E1 = 0.7500000000000 fraction。
+\item 反应进程、选择性或链统计中间量：fraction\_E2 = 0.2500000000000 fraction；remaining\_K\_20 = 0.002706705664732 mol/L；product1\_20 = 0.01296997075145 mol/L；product2\_20 = 0.004323323583817 mol/L。
+\item 其余答案及可回代物理量：product\_ratio = 3.000000000000 ratio；conversion\_20 = 0.8646647167634 fraction；half\_life = 6.931471805599 s；fraction\_difference = 0.5000000000000 fraction。
+\item 检验质量守恒、光子吸收与产物数量、或统计物种分率之和，必要时检查反应通道选择性的温度趋势。
+\item 使用不同数学表示的独立见证逐项核对数值答案，容许机器舍入引起的极小浮点差值。
+\item 所有结果只是所列模型的数值草稿，真实化学选择性与跨辑原创性需再经专家和版权审阅。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+pseudo\_rate1 = 0.075 s\textasciicircum{}-1；pseudo\_rate2 = 0.025 s\textasciicircum{}-1；total\_rate = 0.1 s\textasciicircum{}-1；fraction\_E1 = 0.75 fraction；fraction\_E2 = 0.25 fraction；remaining\_K\_20 = 0.00270670566 mol/L；product1\_20 = 0.0129699708 mol/L；product2\_20 = 0.00432332358 mol/L；product\_ratio = 3 ratio；conversion\_20 = 0.864664717 fraction；half\_life = 6.93147181 s；fraction\_difference = 0.5 fraction\par
+\noindent\textbf{模型前提：}
+题设含理想动力学与单分子模型条件，人工审核与真实实验比较未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-O244 · Mayo–Lewis共聚动力学的即时组成与反应性比}
+\noindent\textbf{题目}\par
+某自由基二元共聚反应符合末端模型，A和B单体在瞬时投料中的摩尔分率fA=0.4000、fB=0.6000，反应性比rA=0.5000、rB=2.000。瞬时进入聚合物的A分率FA=(rA fA²+fA fB)/(rA fA²+2fA fB+rB fB²)，FB=1−FA。再比较改变单体配方为fA=0.6000、fB=0.4000的即时产物组成。求两投料下的分母与分子、FA/FB、FA与投料fA的差、两投料下聚合物A含量之差及在首个投料下聚合物A/B比。应区别即时链增长组成与高转化率下随时间变化的累计聚合物组成。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题目与底物化学：某自由基二元共聚反应符合末端模型，A和B单体在瞬时投料中的摩尔分率fA=0.4000、fB=0.6000，反应性比rA=0.5000、rB=2.000。瞬时进入聚合物的A分率FA=(rA fA²+fA fB)/(rA fA²+2fA fB+rB fB²)，FB=1−FA。再比较改变单体配方为fA=0.6000、fB=0.4000的即时产物组成。求两投料下的分母与分子、FA/FB、FA与投料fA的差、两投料下聚合物A含量之差及在首个投料下聚合物A/B比。应区别即时链增长组成与高转化率下随时间变化的累计聚合物组成。
+\item 建立相关反应速率或链增长概率模型：FA=(rA fA²+fA fB)/(rA fA²+2fA fB+rB fB²)。
+\item 核对反应网络是否为并行、串联还是快速预平衡，并将所有底物和产物浓度归一到同一体系。
+\item 求解速率常数和标准态参数前将mol/L、J/mol、Hz、nm及光子数量进行统一的SI变换。
+\item 第一组结果：numerator\_fA0p4 = 0.3200000000000 ratio；denominator\_fA0p4 = 1.280000000000 ratio；copolymer\_A\_f0p4 = 0.2500000000000 fraction；copolymer\_B\_f0p4 = 0.7500000000000 fraction。
+\item 反应进程、选择性或链统计中间量：A\_minus\_feed\_f0p4 = -0.1500000000000 fraction；copolymer\_A\_B\_ratio\_f0p4 = 0.3333333333333 ratio；numerator\_fA0p6 = 0.4200000000000 ratio；denominator\_fA0p6 = 0.9800000000000 ratio。
+\item 其余答案及可回代物理量：copolymer\_A\_f0p6 = 0.4285714285714 fraction；copolymer\_B\_f0p6 = 0.5714285714286 fraction；A\_fraction\_change = 0.1785714285714 fraction。
+\item 检验质量守恒、光子吸收与产物数量、或统计物种分率之和，必要时检查反应通道选择性的温度趋势。
+\item 使用不同数学表示的独立见证逐项核对数值答案，容许机器舍入引起的极小浮点差值。
+\item 所有结果只是所列模型的数值草稿，真实化学选择性与跨辑原创性需再经专家和版权审阅。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+numerator\_fA0p4 = 0.32 ratio；denominator\_fA0p4 = 1.28 ratio；copolymer\_A\_f0p4 = 0.25 fraction；copolymer\_B\_f0p4 = 0.75 fraction；A\_minus\_feed\_f0p4 = -0.15 fraction；copolymer\_A\_B\_ratio\_f0p4 = 0.333333333 ratio；numerator\_fA0p6 = 0.42 ratio；denominator\_fA0p6 = 0.98 ratio；copolymer\_A\_f0p6 = 0.428571429 fraction；copolymer\_B\_f0p6 = 0.571428571 fraction；A\_fraction\_change = 0.178571429 fraction\par
+\noindent\textbf{模型前提：}
+题设含理想动力学与单分子模型条件，人工审核与真实实验比较未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-O245 · 链转移剂影响自由基聚合数均聚合度的Mayo方程}
+\noindent\textbf{题目}\par
+某自由基聚合在无外加链转移剂时的数均聚合度DP0=500.0。在加入链转移剂S后，Mayo方程为1/DPn=1/DP0+Ctr[S]/[M]，链转移常数Ctr=0.05000，单体自由浓度[M]=2.000 mol/L。考察[S]=0.2000与1.000 mol/L两种状态，其他条件相同、终止规律不变，忽略不同链端质量。求两个[S]/[M]、对应1/DPn、DPn、当重复单元摩尔质量100.0 g/mol时的Mn、两DPn比、1/DPn来自链转移部分的分数以及若要求DPn=200.0所需的[S]浓度。需解释链转移增加链数并压低数均聚合度，不能直接将DPn减去Ctr[S]。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题目与底物化学：某自由基聚合在无外加链转移剂时的数均聚合度DP0=500.0。在加入链转移剂S后，Mayo方程为1/DPn=1/DP0+Ctr[S]/[M]，链转移常数Ctr=0.05000，单体自由浓度[M]=2.000 mol/L。考察[S]=0.2000与1.000 mol/L两种状态，其他条件相同、终止规律不变，忽略不同链端质量。求两个[S]/[M]、对应1/DPn、DPn、当重复单元摩尔质量100.0 g/mol时的Mn、两DPn比、1/DPn来自链转移部分的分数以及若要求DPn=200.0所需的[S]浓度。需解释链转移增加链数并压低数均聚合度，不能直接将DPn减去Ctr[S]。
+\item 建立相关反应速率或链增长概率模型：1/DPn=1/500+0.05([S]/2)，[S]target=([1/200−1/500]/0.05)×2。
+\item 核对反应网络是否为并行、串联还是快速预平衡，并将所有底物和产物浓度归一到同一体系。
+\item 求解速率常数和标准态参数前将mol/L、J/mol、Hz、nm及光子数量进行统一的SI变换。
+\item 第一组结果：transfer\_to\_monomer\_ratio\_low = 0.1000000000000 ratio；transfer\_to\_monomer\_ratio\_high = 0.5000000000000 ratio；inverse\_DP\_low = 0.007000000000000 per\_unit；inverse\_DP\_high = 0.02700000000000 per\_unit。
+\item 反应进程、选择性或链统计中间量：DP\_low = 142.8571428571 units；DP\_high = 37.03703703704 units；Mn\_low\_gmol = 14285.71428571 g/mol；Mn\_high\_gmol = 3703.703703704 g/mol。
+\item 其余答案及可回代物理量：DP\_ratio\_low\_high = 3.857142857143 ratio；chain\_transfer\_share\_low = 0.7142857142857 fraction；required\_transfer\_agent\_M = 0.1200000000000 mol/L。
+\item 检验质量守恒、光子吸收与产物数量、或统计物种分率之和，必要时检查反应通道选择性的温度趋势。
+\item 使用不同数学表示的独立见证逐项核对数值答案，容许机器舍入引起的极小浮点差值。
+\item 所有结果只是所列模型的数值草稿，真实化学选择性与跨辑原创性需再经专家和版权审阅。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+transfer\_to\_monomer\_ratio\_low = 0.1 ratio；transfer\_to\_monomer\_ratio\_high = 0.5 ratio；inverse\_DP\_low = 0.007 per\_unit；inverse\_DP\_high = 0.027 per\_unit；DP\_low = 142.857143 units；DP\_high = 37.037037 units；Mn\_low\_gmol = 14285.7143 g/mol；Mn\_high\_gmol = 3703.7037 g/mol；DP\_ratio\_low\_high = 3.85714286 ratio；chain\_transfer\_share\_low = 0.714285714 fraction；required\_transfer\_agent\_M = 0.12 mol/L\par
+\noindent\textbf{模型前提：}
+题设含理想动力学与单分子模型条件，人工审核与真实实验比较未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-O246 · 两位点动态NMR交换的合峰温度与激活自由能}
+\noindent\textbf{题目}\par
+某有机分子两类构象在慢交换极限形成相隔Δν=50.00 Hz的等人口¹H NMR共振峰。采用等人口且一阶对称互换近似，NMR合峰处单方向速度常数kc=πΔν/√2。实验在Tc=300.0 K观察到合峰，按Eyring k=(kBT/h)exp(−ΔG‡/(RT))反演活化Gibbs自由能ΔG‡，kB=1.380649×10⁻²³ J/K、h=6.62607015×10⁻³⁴ J·s。求kc、单方向平均寿命1/kc、总交换事件速度2kc、ΔG‡(J/mol和kJ/mol)、在Δν倍增时预测合峰kc、在此情形以同温度反算的活化自由能、两活化自由能差、频率间隔以rad/s表示及原始kc对Δν比。只应用于题设的等人口对称两位点合峰公式。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题目与底物化学：某有机分子两类构象在慢交换极限形成相隔Δν=50.00 Hz的等人口¹H NMR共振峰。采用等人口且一阶对称互换近似，NMR合峰处单方向速度常数kc=πΔν/√2。实验在Tc=300.0 K观察到合峰，按Eyring k=(kBT/h)exp(−ΔG‡/(RT))反演活化Gibbs自由能ΔG‡，kB=1.380649×10⁻²³ J/K、h=6.62607015×10⁻³⁴ J·s。求kc、单方向平均寿命1/kc、总交换事件速度2kc、ΔG‡(J/mol和kJ/mol)、在Δν倍增时预测合峰kc、在此情形以同温度反算的活化自由能、两活化自由能差、频率间隔以rad/s表示及原始kc对Δν比。只应用于题设的等人口对称两位点合峰公式。
+\item 建立相关反应速率或链增长概率模型：kc=πΔν/√2，ΔG‡=RTln[(kBT/h)/kc]。
+\item 核对反应网络是否为并行、串联还是快速预平衡，并将所有底物和产物浓度归一到同一体系。
+\item 求解速率常数和标准态参数前将mol/L、J/mol、Hz、nm及光子数量进行统一的SI变换。
+\item 第一组结果：coalescence\_rate\_s = 111.0720734540 s\textasciicircum{}-1；single\_site\_lifetime\_s = 0.009003163161571 s；total\_exchange\_s = 222.1441469079 s\textasciicircum{}-1；activation\_G\_Jmol = 61743.81712634 J/mol。
+\item 反应进程、选择性或链统计中间量：activation\_G\_kJmol = 61.74381712634 kJ/mol；rate\_if\_double\_separation = 222.1441469079 s\textasciicircum{}-1；activation\_G\_if\_double\_frequency\_kJmol = 60.01487322988 kJ/mol；activation\_G\_change\_kJmol = -1.728943896461 kJ/mol。
+\item 其余答案及可回代物理量：angular\_separation\_rads = 314.1592653590 rad/s；kc\_over\_frequency = 2.221441469079 ratio。
+\item 检验质量守恒、光子吸收与产物数量、或统计物种分率之和，必要时检查反应通道选择性的温度趋势。
+\item 使用不同数学表示的独立见证逐项核对数值答案，容许机器舍入引起的极小浮点差值。
+\item 所有结果只是所列模型的数值草稿，真实化学选择性与跨辑原创性需再经专家和版权审阅。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+coalescence\_rate\_s = 111.072073 s\textasciicircum{}-1；single\_site\_lifetime\_s = 0.00900316316 s；total\_exchange\_s = 222.144147 s\textasciicircum{}-1；activation\_G\_Jmol = 61743.8171 J/mol；activation\_G\_kJmol = 61.7438171 kJ/mol；rate\_if\_double\_separation = 222.144147 s\textasciicircum{}-1；activation\_G\_if\_double\_frequency\_kJmol = 60.0148732 kJ/mol；activation\_G\_change\_kJmol = -1.7289439 kJ/mol；angular\_separation\_rads = 314.159265 rad/s；kc\_over\_frequency = 2.22144147 ratio\par
+\noindent\textbf{模型前提：}
+题设含理想动力学与单分子模型条件，人工审核与真实实验比较未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-O247 · 有机光解量子产率与吸收光子摩尔数的能量守恒}
+\noindent\textbf{题目}\par
+某有机化合物A在单色光λ=400.0 nm照射下发生不可逆一光子诱导异构化。吸收光功率Pabs=0.1000 mW、照射时间t=60.00 s，吸收能量全计作该波长光子，量子产率Φ=0.3000（每吸收1个光子得到0.3个产物分子）。初始A为0.0001000 mol，忽略副反应、二次吸收、光漂白和光源时变。h=6.62607015×10⁻³⁴ J·s、c=299792458 m/s、NA=6.02214076×10²³ mol⁻¹。求每光子能量、吸收总能量、吸收光子个数与摩尔数、生成产物的分子数及mol、初始底物转化率、单位时间产物生成速率、光量子通量(photons/s)、产物/吸收光子摩尔比及残余A浓度（若溶液体积1.000 L）。确保总生成量小于初始库存。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题目与底物化学：某有机化合物A在单色光λ=400.0 nm照射下发生不可逆一光子诱导异构化。吸收光功率Pabs=0.1000 mW、照射时间t=60.00 s，吸收能量全计作该波长光子，量子产率Φ=0.3000（每吸收1个光子得到0.3个产物分子）。初始A为0.0001000 mol，忽略副反应、二次吸收、光漂白和光源时变。h=6.62607015×10⁻³⁴ J·s、c=299792458 m/s、NA=6.02214076×10²³ mol⁻¹。求每光子能量、吸收总能量、吸收光子个数与摩尔数、生成产物的分子数及mol、初始底物转化率、单位时间产物生成速率、光量子通量(photons/s)、产物/吸收光子摩尔比及残余A浓度（若溶液体积1.000 L）。确保总生成量小于初始库存。
+\item 建立相关反应速率或链增长概率模型：Eph=hc/λ，Nph=Pabs t/Eph，nP=ΦNph/NA。
+\item 核对反应网络是否为并行、串联还是快速预平衡，并将所有底物和产物浓度归一到同一体系。
+\item 求解速率常数和标准态参数前将mol/L、J/mol、Hz、nm及光子数量进行统一的SI变换。
+\item 第一组结果：single\_photon\_energy\_J = 4.966114642872e-19 J；total\_absorbed\_energy\_J = 0.006000000000000 J；photon\_count = 1.208187976210e+16 photons；photon\_moles = 2.006243334987e-8 mol。
+\item 反应进程、选择性或链统计中间量：product\_molecules = 3.624563928631e+15 molecules；product\_moles = 6.018730004960e-9 mol；substrate\_conversion = 0.00006018730004960 fraction；product\_generation\_mol\_s = 1.003121667493e-10 mol/s。
+\item 其余答案及可回代物理量：photon\_flux\_s = 2.013646627017e+14 photons/s；quantum\_yield\_check = 0.3000000000000 ratio；residual\_A\_M = 0.00009999398127000 mol/L。
+\item 检验质量守恒、光子吸收与产物数量、或统计物种分率之和，必要时检查反应通道选择性的温度趋势。
+\item 使用不同数学表示的独立见证逐项核对数值答案，容许机器舍入引起的极小浮点差值。
+\item 所有结果只是所列模型的数值草稿，真实化学选择性与跨辑原创性需再经专家和版权审阅。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+single\_photon\_energy\_J = 4.96611464e-19 J；total\_absorbed\_energy\_J = 0.006 J；photon\_count = 1.20818798e+16 photons；photon\_moles = 2.00624333e-08 mol；product\_molecules = 3.62456393e+15 molecules；product\_moles = 6.01873e-09 mol；substrate\_conversion = 6.01873e-05 fraction；product\_generation\_mol\_s = 1.00312167e-10 mol/s；photon\_flux\_s = 2.01364663e+14 photons/s；quantum\_yield\_check = 0.3 ratio；residual\_A\_M = 9.99939813e-05 mol/L\par
+\noindent\textbf{模型前提：}
+题设含理想动力学与单分子模型条件，人工审核与真实实验比较未完成。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{物理化学}
