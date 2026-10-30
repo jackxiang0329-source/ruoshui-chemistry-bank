@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 16,
   "status": "expert_review_pending",
-  "current_draft_count": 8,
+  "current_draft_count": 11,
   "expert_approved": 0,
-  "preliminary_flags": 8,
+  "preliminary_flags": 11,
   "pairs": [
     {
       "new_id": "UC-ADV16-I251",
@@ -52,6 +52,24 @@
       "new_id": "UC-ADV16-A254",
       "prior_id": null,
       "reason": "待与前15辑及本辑相关模型人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-O248",
+      "prior_id": null,
+      "reason": "专家检查题型跨辑同构的风险",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-O249",
+      "prior_id": null,
+      "reason": "专家检查题型跨辑同构的风险",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-O250",
+      "prior_id": null,
+      "reason": "专家检查题型跨辑同构的风险",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -103,6 +121,24 @@
       "model_family": "ion-chromatography-spike-recovery-matrix-adjustment",
       "judgement": "pending_human_comparison",
       "screening": "双路径数值重算成功，专家审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-O248",
+      "model_family": "aromatic-EAS-ortho-para-two-site-degeneracy",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算通过，人审未完成"
+    },
+    {
+      "new_id": "UC-ADV16-O249",
+      "model_family": "Flory-Stockmayer-A3-B2-random-stepgrowth-gelation",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算通过，人审未完成"
+    },
+    {
+      "new_id": "UC-ADV16-O250",
+      "model_family": "organic-liquid-liquid-extraction-split-solvent-portions",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算通过，人审未完成"
     }
   ]
 }
