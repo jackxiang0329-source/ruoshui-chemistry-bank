@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 15,
   "status": "expert_review_pending",
-  "current_draft_count": 86,
+  "current_draft_count": 93,
   "expert_approved": 0,
-  "preliminary_flags": 86,
+  "preliminary_flags": 93,
   "pairs": [
     {
       "new_id": "UC-ADV15-I226",
@@ -520,6 +520,48 @@
       "new_id": "UC-ADV15-A250",
       "prior_id": null,
       "reason": "需与前十五辑所有分析模型、背景校正及电化学传感器题型人工对照。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O241",
+      "prior_id": null,
+      "reason": "需要人审与第1至15辑全部有机模型和题干的原创性重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O242",
+      "prior_id": null,
+      "reason": "需要人审与第1至15辑全部有机模型和题干的原创性重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O243",
+      "prior_id": null,
+      "reason": "需要人审与第1至15辑全部有机模型和题干的原创性重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O244",
+      "prior_id": null,
+      "reason": "需要人审与第1至15辑全部有机模型和题干的原创性重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O245",
+      "prior_id": null,
+      "reason": "需要人审与第1至15辑全部有机模型和题干的原创性重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O246",
+      "prior_id": null,
+      "reason": "需要人审与第1至15辑全部有机模型和题干的原创性重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-O247",
+      "prior_id": null,
+      "reason": "需要人审与第1至15辑全部有机模型和题干的原创性重叠。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -1039,6 +1081,48 @@
       "model_family": "DSC-melting-enthalpy-baseline-power-time-integral",
       "judgement": "pending_human_comparison",
       "screening": "双路径数值复算通过；专家科学审定尚未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O241",
+      "model_family": "Diels-Alder-endo-exo-transition-state-deltaG-kinetic-product-fraction",
+      "judgement": "pending_human_comparison",
+      "screening": "已双途径数值复核，但科学和版权审核尚未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O242",
+      "model_family": "solidphase-peptide-synthesis-coupling-deprotection-stepwise-yield",
+      "judgement": "pending_human_comparison",
+      "screening": "已双途径数值复核，但科学和版权审核尚未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O243",
+      "model_family": "regioselective-enolate-two-deprotonation-rate-pathways",
+      "judgement": "pending_human_comparison",
+      "screening": "已双途径数值复核，但科学和版权审核尚未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O244",
+      "model_family": "Mayo-Lewis-terminal-copolymer-instantaneous-composition",
+      "judgement": "pending_human_comparison",
+      "screening": "已双途径数值复核，但科学和版权审核尚未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O245",
+      "model_family": "polymer-chain-transfer-Mayo-equation-DP-inverse",
+      "judgement": "pending_human_comparison",
+      "screening": "已双途径数值复核，但科学和版权审核尚未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O246",
+      "model_family": "dynamic-NMR-two-site-exchange-coalescence-Eyring-barrier",
+      "judgement": "pending_human_comparison",
+      "screening": "已双途径数值复核，但科学和版权审核尚未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-O247",
+      "model_family": "photochemistry-quantum-yield-photon-flux-molecular-conversion",
+      "judgement": "pending_human_comparison",
+      "screening": "已双途径数值复核，但科学和版权审核尚未完成。"
     }
   ]
 }

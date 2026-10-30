@@ -118,6 +118,16 @@ Object.assign(witnesses,{
 "UC-ADV15-A250":()=>{let dur=120,area=5e-3*120/2,mol=.01/100,enthalpy=area/mol;return[dur,area,area/.01,enthalpy,.005,.0025,1/6,2,mol,enthalpy/1000]}
 });
 
+Object.assign(witnesses,{
+"UC-ADV15-O241":()=>{let f=T=>1/(1+Math.exp(-4000/(R*T))),p=f(298.15),v=f(350);return[p/(1-p),v/(1-v),p,1-p,v,1-v,p-(1-p),v-(1-v),p/100,(1-p)/100,v-p,Math.log(p/(1-p))]},
+"UC-ADV15-O242":()=>{let q=9702/10000,c=Math.pow(.98,10),D=Math.pow(.99,10),y=Math.pow(q,10);return[q,y,.005*y,-Math.expm1(10*Math.log(q)),c,D,c-y,Math.sqrt(y),.0298,.005-.005*y,10]},
+"UC-ADV15-O243":()=>{let z=Math.exp(-2),P=.02*(1-z);return[.075,.025,.1,.75,.25,.02*z,.75*P,.25*P,3,1-z,Math.log(2)/.1,.5]},
+"UC-ADV15-O244":()=>{let n1=.5*.16+.24,d1=.5*.16+.48+2*.36,n2=.5*.36+.24,d2=.5*.36+.48+2*.16,A=n1/d1,B=n2/d2;return[n1,d1,A,(d1-n1)/d1,A-.4,n1/(d1-n1),n2,d2,B,(d2-n2)/d2,B-A]},
+"UC-ADV15-O245":()=>{let baseline=.002,a=.005,b=.025,x=.007,y=.027;return[.1,.5,x,y,1/x,1/y,100/x,100/y,y/x,a/x,(.005-.002)*2/.05]},
+"UC-ADV15-O246":()=>{let k=50*Math.PI/Math.sqrt(2),pref=1.380649e-23*300/6.62607015e-34,G=R*300*Math.log(pref/k),second=G-R*300*Math.log(2);return[k,1/k,2*k,G,G/1000,2*k,second/1000,-R*300*Math.LN2/1000,100*Math.PI,Math.PI/Math.sqrt(2)]},
+"UC-ADV15-O247":()=>{let e=6.62607015e-34*299792458/4e-7,j=6e-3,N=j/e,prod=.3*N/NA;return[e,j,N,N/NA,.3*N,prod,prod/.0001,prod/60,N/60,.3,.0001-prod]}
+});
+
 const starts={inorganic:["I",226],analytical:["A",226],organic:["O",223],physical:["P",223]};
 const ids=new Set(),titles=new Set(),models=new Set(),counts={};
 for(const [subject,[L,start]] of Object.entries(starts)){
