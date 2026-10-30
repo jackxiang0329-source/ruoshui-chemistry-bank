@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 15,
   "status": "expert_review_pending",
-  "current_draft_count": 34,
+  "current_draft_count": 44,
   "expert_approved": 0,
-  "preliminary_flags": 34,
+  "preliminary_flags": 44,
   "pairs": [
     {
       "new_id": "UC-ADV15-I226",
@@ -208,6 +208,66 @@
       "new_id": "UC-ADV15-P230",
       "prior_id": null,
       "reason": "物理模型和题干的跨辑相似性需人工逐式核对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I235",
+      "prior_id": null,
+      "reason": "对照第1至14辑及第15辑已录试题的同构物理模型，需人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I236",
+      "prior_id": null,
+      "reason": "对照第1至14辑及第15辑已录试题的同构物理模型，需人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I237",
+      "prior_id": null,
+      "reason": "对照第1至14辑及第15辑已录试题的同构物理模型，需人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I238",
+      "prior_id": null,
+      "reason": "对照第1至14辑及第15辑已录试题的同构物理模型，需人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I239",
+      "prior_id": null,
+      "reason": "对照第1至14辑及第15辑已录试题的同构物理模型，需人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I240",
+      "prior_id": null,
+      "reason": "对照第1至14辑及第15辑已录试题的同构物理模型，需人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I241",
+      "prior_id": null,
+      "reason": "对照第1至14辑及第15辑已录试题的同构物理模型，需人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I242",
+      "prior_id": null,
+      "reason": "对照第1至14辑及第15辑已录试题的同构物理模型，需人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I243",
+      "prior_id": null,
+      "reason": "对照第1至14辑及第15辑已录试题的同构物理模型，需人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I244",
+      "prior_id": null,
+      "reason": "对照第1至14辑及第15辑已录试题的同构物理模型，需人工比对。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -415,6 +475,66 @@
       "model_family": "binary-mixture-excess-volume-partial-molar-derivatives",
       "judgement": "pending_human_comparison",
       "screening": "机器输出自校验；独立第三方审核未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I235",
+      "model_family": "SrTiO3-perovskite-tolerance-factor-unitcell-density",
+      "judgement": "pending_human_comparison",
+      "screening": "新题完成双路径数值程序复核，人工科学审校未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I236",
+      "model_family": "silver-bromide-ammonia-diamminesolubility-mass-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "新题完成双路径数值程序复核，人工科学审校未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I237",
+      "model_family": "CuII-spin-half-Curie-molar-susceptibility-SI",
+      "judgement": "pending_human_comparison",
+      "screening": "新题完成双路径数值程序复核，人工科学审校未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I238",
+      "model_family": "LaSrCoO3-aliovalent-substitution-CoIII-CoIV-charge-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "新题完成双路径数值程序复核，人工科学审校未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I239",
+      "model_family": "Prussian-blue-stoichiometry-vacancy-cyanide-neutrality",
+      "judgement": "pending_human_comparison",
+      "screening": "新题完成双路径数值程序复核，人工科学审校未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I240",
+      "model_family": "calcium-phosphate-Ksp-cubicroot-free-calcium",
+      "judgement": "pending_human_comparison",
+      "screening": "新题完成双路径数值程序复核，人工科学审校未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I241",
+      "model_family": "d8-octahedral-tetrahedral-crystalfield-CFSE",
+      "judgement": "pending_human_comparison",
+      "screening": "新题完成双路径数值程序复核，人工科学审校未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I242",
+      "model_family": "cobalt-oxide-hydrogen-reduction-equilibrium-gas-ratio",
+      "judgement": "pending_human_comparison",
+      "screening": "新题完成双路径数值程序复核，人工科学审校未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I243",
+      "model_family": "octahedral-substitution-consecutive-first-order-complexes",
+      "judgement": "pending_human_comparison",
+      "screening": "新题完成双路径数值程序复核，人工科学审校未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I244",
+      "model_family": "Schottky-vacancy-pair-Boltzmann-defect-fraction",
+      "judgement": "pending_human_comparison",
+      "screening": "新题完成双路径数值程序复核，人工科学审校未完成。"
     }
   ]
 }

@@ -48,6 +48,19 @@ Object.assign(witnesses,{
 "UC-ADV15-P230":()=>{let f=x=>{let v=80*x+100*(1-x)+20*x*(1-x),dv=80-100+20*(1-2*x);return[v,20*x*(1-x),dv,v+(1-x)*dv,v-x*dv]},a=f(.3),b=f(.7);return[a[0],b[0],a[1],b[1],a[2],b[2],a[3],a[4],b[3],b[4],.3*a[3]+.7*a[4],1]}
 });
 
+Object.assign(witnesses,{
+"UC-ADV15-I235":()=>{let p=2.84,q=2.005,v=.3905e-7,M=87.62+47.867+47.997;return[p/(Math.sqrt(2)*q),p,q,(v/1e-7)**3,M,M/NA,M/(NA*v*v*v),1/(v*v*v),0,1]},
+"UC-ADV15-I236":()=>{let weight=1e6,Z=1+weight,ag=Math.sqrt(5e-13/Z),complex=ag*weight,br=ag+complex;return[Z,br,ag,complex,1/Z,weight/Z,Math.sqrt(5e-13),Math.sqrt(Z),ag*br,weight/(.1*.1)]},
+"UC-ADV15-I237":()=>{let u=9.2740100783e-24,m2=(2.1**2)*.75*u*u,C=1.25663706212e-6*6.02214076e23*m2/(3*1.380649e-23);return[2.1*Math.sqrt(.75),Math.sqrt(m2),1.05,1.05*u,C/298.15,C/150,298.15/150,Math.sqrt(3),C,1]},
+"UC-ADV15-I238":()=>{let x=.2,y=.6;return[6-3*(1-x)-2*x,6-3*(1-y)-2*y,x,y,1-x,1-y,x,y,y-x,y,(3-3*y)+(2*y)+(3+y)-6]},
+"UC-ADV15-I239":()=>{let c=3,cn=c*6,f=4,net=3*f+2*c-cn;return[c,f,cn,f+c,cn/c,3*f+2*c,-cn,net,(4-c)/4,f/c,(f+c)*55.845+cn*12.011+cn*14.007]},
+"UC-ADV15-I240":()=>{let a=10**(-20/3),b=10**(-22/3),c=10**(-24/3);return[a,b,10**(2/3),a/b,1e-20,1e-22,1e-26,1e-26,-Math.log10(b),c]},
+"UC-ADV15-I241":()=>{let oct=12000,tet=12000*4/9,a=(-.4*6+.6*2)*oct,b=(-.6*4+.4*4)*tet;return[oct,tet,a,b,a*.01196266,b*.01196266,(b-a)*.01196266,2,2,2*Math.sqrt(1*(1+1))]},
+"UC-ADV15-I242":()=>{let h=.2,k=20,p=k*h,q=.1/h,base=-R*1000*Math.log(k)/1000,g=base+R*1000*Math.log(q)/1000,extra=base+R*1000*Math.log(5/h)/1000;return[p,k,base,q,g,q/k,+(q<k),-g,25,extra]},
+"UC-ADV15-I243":()=>{let a=.02,b=.05,C=.01,t=40,A=C*Math.exp(-a*t),B=C*a/(b-a)*(Math.exp(-a*t)-Math.exp(-b*t)),Z=C-A-B,tp=Math.log(b/a)/(b-a),bp=C*a/(b-a)*(Math.exp(-a*tp)-Math.exp(-b*tp));return[A,B,Z,A/C,B/C,Z/C,tp,bp,b*bp,b*bp,C]},
+"UC-ADV15-I244":()=>{let beta=T=>1/(8.617333262145e-5*T),a=Math.exp(-beta(800)/2),b=Math.exp(-beta(1000)/2),d=n=>1e9/Math.cbrt(n);return[a,b,a*1e28,b*1e28,d(a*1e28),d(b*1e28),Math.exp((beta(800)-beta(1000))/2),Math.exp(-beta(800)),Math.exp(-beta(1000)),beta(800),beta(1000)]}
+});
+
 const starts={inorganic:["I",226],analytical:["A",226],organic:["O",223],physical:["P",223]};
 const ids=new Set(),titles=new Set(),models=new Set(),counts={};
 for(const [subject,[L,start]] of Object.entries(starts)){
