@@ -1,0 +1,225 @@
+
+\documentclass[UTF8,11pt,a4paper]{ctexart}
+\usepackage[a4paper,left=23mm,right=23mm,top=24mm,bottom=24mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+\setCJKmainfont{Noto Serif CJK SC}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,unicode=true]{hyperref}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{fancyhdr}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\setlist[enumerate]{leftmargin=2.6em,itemsep=0.4em,topsep=0.5em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 三千弱水 · 大学化学高阶综合题库}
+\fancyhead[R]{\small 待专家审校稿}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{15pt}
+\sloppy
+
+\begin{document}
+\begin{center}
+{\LARGE\bfseries 大学化学高阶综合题 · 第16辑 (8题)}\\[0.8em]
+{\large 题目、分步解析与数值核验}\\[0.5em]
+{\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
+\end{center}
+\vspace{1em}
+\noindent 本册从仓库结构化 JSONL 自动生成。增补和修改应只编辑源题目数据，并重新执行统一编译。
+\par 机械方程残差检查只能说明指定模型的内部数值一致，不保证模型现实可行性。第六辑另须完成跨辑模型去重审查。
+\tableofcontents
+\clearpage
+\section*{第16辑 · 题目及解答}
+\addcontentsline{toc}{section}{第16辑}
+\subsection*{无机化学}
+\addcontentsline{toc}{subsection}{第16辑 / 无机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-I251 · Na₂O–SiO₂网络玻璃中非桥氧与Q³/Q⁴四面体}
+\noindent\textbf{题目}\par
+理想钠硅酸盐玻璃包含0.2000 mol Na₂O和0.8000 mol SiO₂，所有Si四配位，Na⁺仅用于电荷补偿，每个非桥氧携一个−1有效电荷。假设只有Q³和Q⁴四面体，没有Q²、三配位氧、铝杂质及其他电荷补偿机制。求总Si、Na、O摩尔数、非桥氧NBO摩尔数、每四面体非桥氧数、Q³与Q⁴摩尔数及分率、桥氧原子摩尔数、氧原子总量回代和每Si桥氧键平均数。计算桥氧时必须把两个四面体共用同一氧原子的事实纳入计数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整条件：理想钠硅酸盐玻璃包含0.2000 mol Na₂O和0.8000 mol SiO₂，所有Si四配位，Na⁺仅用于电荷补偿，每个非桥氧携一个−1有效电荷。假设只有Q³和Q⁴四面体，没有Q²、三配位氧、铝杂质及其他电荷补偿机制。求总Si、Na、O摩尔数、非桥氧NBO摩尔数、每四面体非桥氧数、Q³与Q⁴摩尔数及分率、桥氧原子摩尔数、氧原子总量回代和每Si桥氧键平均数。计算桥氧时必须把两个四面体共用同一氧原子的事实纳入计数。
+\item 列出物料/电荷守恒与定量模型：nNBO=2nNa2O，nBO=(4nSi−nNBO)/2，nQ3=nNBO，nQ4=nSi−nQ3。
+\item 明确测量单位、形式价态或标准态定义，并区分固定外库和封闭系统的计量。
+\item 依据模型推导第一组变量以及在此范围采用的理想化假设。
+\item 计算初级量：silicon\_mol = 0.80000000000000 mol；sodium\_mol = 0.40000000000000 mol；oxygen\_mol = 1.8000000000000 mol。
+\item 由此得到中间结构与观测指标：NBO\_mol = 0.40000000000000 mol；NBO\_per\_tetra = 0.50000000000000 ratio；Q3\_mol = 0.40000000000000 mol。
+\item 全部剩余数值和回代核对：Q4\_mol = 0.40000000000000 mol；Q3\_fraction = 0.50000000000000 fraction；Q4\_fraction = 0.50000000000000 fraction；BO\_mol = 1.4000000000000 mol；oxygen\_balance = 1.8000000000000 mol；bridging\_bonds\_per\_Si = 3.5000000000000 bonds/Si。
+\item 把结果返回原始物料或校准方程，检验电荷、原子或浓度守恒，排除不可能的负浓度与超量回收。
+\item 通过第二种代数表达式逐项复算数值向量，错误阈值1e−9相对精度。
+\item 科学模型有效性、跨辑重复性及版权审核仍待专家审定，不进入可出版正式库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+silicon\_mol = 0.8 mol；sodium\_mol = 0.4 mol；oxygen\_mol = 1.8 mol；NBO\_mol = 0.4 mol；NBO\_per\_tetra = 0.5 ratio；Q3\_mol = 0.4 mol；Q4\_mol = 0.4 mol；Q3\_fraction = 0.5 fraction；Q4\_fraction = 0.5 fraction；BO\_mol = 1.4 mol；oxygen\_balance = 1.8 mol；bridging\_bonds\_per\_Si = 3.5 bonds/Si\par
+\noindent\textbf{模型前提：}
+理想计量与仪器线性假设；第二路径数值复算不代表实验和原创性专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-I252 · 重铬酸根与Fe²⁺酸性氧化的电子及原子守恒}
+\noindent\textbf{题目}\par
+在充分酸性的理想水溶液中定量完成Cr₂O₇²⁻+14H⁺+6Fe²⁺→2Cr³⁺+7H₂O+6Fe³⁺。初始Cr₂O₇²⁻=0.001000 mol、Fe²⁺=0.01000 mol，酸由外部池充足供给。没有其它氧化剂、还原剂和Cr配合反应，产物定量收集。求总电子转移mol及当量电量、Fe²⁺消耗和剩余、Fe³⁺与Cr³⁺生成量、酸消耗与水生成、Cr原子库存、Cr每个原子氧化态变化幅度及一摩尔重铬酸根的Fe²⁺需求数。说明虽然每个Cr(VI)接受3电子，一个重铬酸根含2个Cr共接受6电子。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整条件：在充分酸性的理想水溶液中定量完成Cr₂O₇²⁻+14H⁺+6Fe²⁺→2Cr³⁺+7H₂O+6Fe³⁺。初始Cr₂O₇²⁻=0.001000 mol、Fe²⁺=0.01000 mol，酸由外部池充足供给。没有其它氧化剂、还原剂和Cr配合反应，产物定量收集。求总电子转移mol及当量电量、Fe²⁺消耗和剩余、Fe³⁺与Cr³⁺生成量、酸消耗与水生成、Cr原子库存、Cr每个原子氧化态变化幅度及一摩尔重铬酸根的Fe²⁺需求数。说明虽然每个Cr(VI)接受3电子，一个重铬酸根含2个Cr共接受6电子。
+\item 列出物料/电荷守恒与定量模型：每mol Cr2O7²−接受6e−，FeII消耗6 mol、H+消耗14 mol、CrIII生成2 mol。
+\item 明确测量单位、形式价态或标准态定义，并区分固定外库和封闭系统的计量。
+\item 依据模型推导第一组变量以及在此范围采用的理想化假设。
+\item 计算初级量：electron\_mol = 0.0060000000000000 mol；charge\_C = 578.91199272000 C；FeII\_consumed = 0.0060000000000000 mol。
+\item 由此得到中间结构与观测指标：FeII\_left = 0.0040000000000000 mol；FeIII\_produced = 0.0060000000000000 mol；CrIII\_produced = 0.0020000000000000 mol。
+\item 全部剩余数值和回代核对：acid\_consumed = 0.014000000000000 mol；water\_produced = 0.0070000000000000 mol；Cr\_atom\_mol = 0.0020000000000000 mol；oxidation\_drop\_per\_Cr = 3.0000000000000 oxidation；FeII\_per\_dichromate = 6.0000000000000 ratio。
+\item 把结果返回原始物料或校准方程，检验电荷、原子或浓度守恒，排除不可能的负浓度与超量回收。
+\item 通过第二种代数表达式逐项复算数值向量，错误阈值1e−9相对精度。
+\item 科学模型有效性、跨辑重复性及版权审核仍待专家审定，不进入可出版正式库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+electron\_mol = 0.006 mol；charge\_C = 578.911993 C；FeII\_consumed = 0.006 mol；FeII\_left = 0.004 mol；FeIII\_produced = 0.006 mol；CrIII\_produced = 0.002 mol；acid\_consumed = 0.014 mol；water\_produced = 0.007 mol；Cr\_atom\_mol = 0.002 mol；oxidation\_drop\_per\_Cr = 3 oxidation；FeII\_per\_dichromate = 6 ratio\par
+\noindent\textbf{模型前提：}
+理想计量与仪器线性假设；第二路径数值复算不代表实验和原创性专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-I253 · Na₄Al₄Si₈O₂₄沸石交换Ca²⁺的理论容量}
+\noindent\textbf{题目}\par
+某假想无水沸石式量Na₄Al₄Si₈O₂₄中Na为+1、Al为+3、Si为+4、O为−2。每个AlO₄替换SiO₄所产生的一个负框架电荷由一个Na⁺补偿。Na、Al、Si、O的摩尔质量分别22.98977、26.98154、28.085、15.999 g/mol。假定所有Na交换位点可用，Ca²⁺离子交换时2个Ca²⁺恰取代4个Na⁺。求框架电荷、Na正电荷、盐式量质量、每g交换Na的mmol和meq、每式量可交换Ca的mol及每g交换Ca的mmol、Al/Si比、氧原子数、完全交换释放Na摩尔数和交换后电荷残差。不能把Ca²⁺的1 mol误当作1 meq。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整条件：某假想无水沸石式量Na₄Al₄Si₈O₂₄中Na为+1、Al为+3、Si为+4、O为−2。每个AlO₄替换SiO₄所产生的一个负框架电荷由一个Na⁺补偿。Na、Al、Si、O的摩尔质量分别22.98977、26.98154、28.085、15.999 g/mol。假定所有Na交换位点可用，Ca²⁺离子交换时2个Ca²⁺恰取代4个Na⁺。求框架电荷、Na正电荷、盐式量质量、每g交换Na的mmol和meq、每式量可交换Ca的mol及每g交换Ca的mmol、Al/Si比、氧原子数、完全交换释放Na摩尔数和交换后电荷残差。不能把Ca²⁺的1 mol误当作1 meq。
+\item 列出物料/电荷守恒与定量模型：摩尔质量M=4MNa+4MAl+8MSi+24MO；Na交换容量4×1000/M meq/g。
+\item 明确测量单位、形式价态或标准态定义，并区分固定外库和封闭系统的计量。
+\item 依据模型推导第一组变量以及在此范围采用的理想化假设。
+\item 计算初级量：framework\_charge = -4.0000000000000 e；Na\_charge = 4.0000000000000 e；formula\_mass = 808.54124000000 g/mol。
+\item 由此得到中间结构与观测指标：Na\_mmol\_g = 4.9471811728490 mmol/g；capacity\_meq\_g = 4.9471811728490 meq/g；Ca\_per\_formula = 2.0000000000000 mol。
+\item 全部剩余数值和回代核对：Ca\_mmol\_g = 2.4735905864245 mmol/g；Al\_Si\_ratio = 0.50000000000000 ratio；oxygen\_count = 24.000000000000 atoms；Na\_released = 4.0000000000000 mol；charge\_balance = 0.0000000000000 e。
+\item 把结果返回原始物料或校准方程，检验电荷、原子或浓度守恒，排除不可能的负浓度与超量回收。
+\item 通过第二种代数表达式逐项复算数值向量，错误阈值1e−9相对精度。
+\item 科学模型有效性、跨辑重复性及版权审核仍待专家审定，不进入可出版正式库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+framework\_charge = -4 e；Na\_charge = 4 e；formula\_mass = 808.54124 g/mol；Na\_mmol\_g = 4.94718117 mmol/g；capacity\_meq\_g = 4.94718117 meq/g；Ca\_per\_formula = 2 mol；Ca\_mmol\_g = 2.47359059 mmol/g；Al\_Si\_ratio = 0.5 ratio；oxygen\_count = 24 atoms；Na\_released = 4 mol；charge\_balance = 0 e\par
+\noindent\textbf{模型前提：}
+理想计量与仪器线性假设；第二路径数值复算不代表实验和原创性专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-I254 · 磷钨多金属氧酸盐Na₃[PW₁₂O₄₀]的电荷和质量分数}
+\noindent\textbf{题目}\par
+假设磷钨Keggin型杂多酸钠盐的完全脱水式量为Na₃[PW₁₂O₄₀]，所有Na按+1、P按+5、W按+6、O按−2形式价。摩尔质量分别为Na 22.98977、P 30.97376、W 183.84、O 15.999 g/mol。求复合阴离子电荷、12个W的形式总正电荷、40个氧总负电荷、盐式量阳离子加中心原子总正电荷与净电荷、W平均氧化态、复合阴离子和完整钠盐的摩尔质量、钨质量分数、氧质量分数、W/P原子数比和W(VI)形式d电子数。请强调形式氧化态是电荷清点，不等于真实分子轨道电荷分布。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整条件：假设磷钨Keggin型杂多酸钠盐的完全脱水式量为Na₃[PW₁₂O₄₀]，所有Na按+1、P按+5、W按+6、O按−2形式价。摩尔质量分别为Na 22.98977、P 30.97376、W 183.84、O 15.999 g/mol。求复合阴离子电荷、12个W的形式总正电荷、40个氧总负电荷、盐式量阳离子加中心原子总正电荷与净电荷、W平均氧化态、复合阴离子和完整钠盐的摩尔质量、钨质量分数、氧质量分数、W/P原子数比和W(VI)形式d电子数。请强调形式氧化态是电荷清点，不等于真实分子轨道电荷分布。
+\item 列出物料/电荷守恒与定量模型：Qanion=5+12×6−40×2=−3，M=3MNa+MP+12MW+40MO。
+\item 明确测量单位、形式价态或标准态定义，并区分固定外库和封闭系统的计量。
+\item 依据模型推导第一组变量以及在此范围采用的理想化假设。
+\item 计算初级量：anion\_charge = -3.0000000000000 e；W\_charge\_total = 72.000000000000 e；oxygen\_charge\_total = -80.000000000000 e。
+\item 由此得到中间结构与观测指标：salt\_positive\_charge = 80.000000000000 e；salt\_net\_charge = 0.0000000000000 e；W\_oxidation = 6.0000000000000 oxidation。
+\item 全部剩余数值和回代核对：anion\_mass = 2877.0137600000 g/mol；salt\_mass = 2945.9830700000 g/mol；W\_fraction = 0.74884340730444 fraction；O\_fraction = 0.21723139094618 fraction；W\_P\_ratio = 12.000000000000 ratio；WVI\_d\_count = 0.0000000000000 electrons。
+\item 把结果返回原始物料或校准方程，检验电荷、原子或浓度守恒，排除不可能的负浓度与超量回收。
+\item 通过第二种代数表达式逐项复算数值向量，错误阈值1e−9相对精度。
+\item 科学模型有效性、跨辑重复性及版权审核仍待专家审定，不进入可出版正式库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+anion\_charge = -3 e；W\_charge\_total = 72 e；oxygen\_charge\_total = -80 e；salt\_positive\_charge = 80 e；salt\_net\_charge = 0 e；W\_oxidation = 6 oxidation；anion\_mass = 2877.01376 g/mol；salt\_mass = 2945.98307 g/mol；W\_fraction = 0.748843407 fraction；O\_fraction = 0.217231391 fraction；W\_P\_ratio = 12 ratio；WVI\_d\_count = 0 electrons\par
+\noindent\textbf{模型前提：}
+理想计量与仪器线性假设；第二路径数值复算不代表实验和原创性专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{分析化学}
+\addcontentsline{toc}{subsection}{第16辑 / 分析化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-A251 · 酶促UV反应的吸光度时间斜率与摩尔初速}
+\noindent\textbf{题目}\par
+某酶分析比色皿光程l=1.000 cm，产物P在340 nm处的摩尔吸光系数ε=6220 L/(mol cm)，初始30.00 s内实测扣除空白吸光度从0.1000线性增加到0.2866，分析混合体积V=3.000 mL。假设仅P在此波长吸收，产物按1:1来自底物且在30秒内初速保持恒定。求吸光度增量、每秒吸光度斜率、产物浓度增加、浓度变化速率mol/(L s)、体积内产物生成mol/s和30s生成总量、产物浓度在30s时值、初始时产物浓度、相对初始吸光增加倍率及酶活性单位U（定义1U=1 μmol/min）。不要把mL体积直接当作L。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整条件：某酶分析比色皿光程l=1.000 cm，产物P在340 nm处的摩尔吸光系数ε=6220 L/(mol cm)，初始30.00 s内实测扣除空白吸光度从0.1000线性增加到0.2866，分析混合体积V=3.000 mL。假设仅P在此波长吸收，产物按1:1来自底物且在30秒内初速保持恒定。求吸光度增量、每秒吸光度斜率、产物浓度增加、浓度变化速率mol/(L s)、体积内产物生成mol/s和30s生成总量、产物浓度在30s时值、初始时产物浓度、相对初始吸光增加倍率及酶活性单位U（定义1U=1 μmol/min）。不要把mL体积直接当作L。
+\item 列出物料/电荷守恒与定量模型：Δc=ΔA/(εl)，dc/dt=ΔA/(εl Δt)，enzyme\_U=(dc/dt)×V(L)×60×1e6。
+\item 明确测量单位、形式价态或标准态定义，并区分固定外库和封闭系统的计量。
+\item 依据模型推导第一组变量以及在此范围采用的理想化假设。
+\item 计算初级量：delta\_absorbance = 0.18660000000000 AU；absorbance\_slope = 0.0062200000000000 AU/s；delta\_product\_M = 0.000030000000000000 mol/L。
+\item 由此得到中间结构与观测指标：rate\_Ms = 0.0000010000000000000 mol/(Ls)；rate\_mol\_s = 3.0000000000000e-9 mol/s；moles\_product\_30s = 9.0000000000000e-8 mol。
+\item 全部剩余数值和回代核对：product\_conc\_at30\_M = 0.000046077170418006 mol/L；product\_conc\_at0\_M = 0.000016077170418006 mol/L；absorbance\_ratio\_final\_initial = 2.8660000000000 ratio；enzyme\_activity\_U = 0.18000000000000 umol/min。
+\item 把结果返回原始物料或校准方程，检验电荷、原子或浓度守恒，排除不可能的负浓度与超量回收。
+\item 通过第二种代数表达式逐项复算数值向量，错误阈值1e−9相对精度。
+\item 科学模型有效性、跨辑重复性及版权审核仍待专家审定，不进入可出版正式库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+delta\_absorbance = 0.1866 AU；absorbance\_slope = 0.00622 AU/s；delta\_product\_M = 3e-05 mol/L；rate\_Ms = 1e-06 mol/(Ls)；rate\_mol\_s = 3e-09 mol/s；moles\_product\_30s = 9e-08 mol；product\_conc\_at30\_M = 4.60771704e-05 mol/L；product\_conc\_at0\_M = 1.60771704e-05 mol/L；absorbance\_ratio\_final\_initial = 2.866 ratio；enzyme\_activity\_U = 0.18 umol/min\par
+\noindent\textbf{模型前提：}
+理想计量与仪器线性假设；第二路径数值复算不代表实验和原创性专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-A252 · 色谱内标法双峰响应因子与稀释回算}
+\noindent\textbf{题目}\par
+某GC分析组分X时采用同样量纲的内标Y。标准液中CX,std=10.00 mg/L、CY,std=5.000 mg/L，响应峰面积分别AX,std=8000、AY,std=4000 counts；样品被5.000倍定容稀释，并加入同浓度Y内标，测得AX,unk=4800、AY,unk=3000 counts。假设响应比AX/AY=k×CX/CY，标准液与稀释样的内标Y浓度相同，仪器漂移对两峰同比例。求标准响应比、标准浓度比、相对响应因子k、未知样峰比、未知稀释后X浓度、原样X浓度、未知样Y信号漂移分数、校正后未知X峰面积、样品相对标准的X浓度比及如果错误只用X绝对峰面积得到的原样浓度。须区分校准响应因子与样品稀释倍数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整条件：某GC分析组分X时采用同样量纲的内标Y。标准液中CX,std=10.00 mg/L、CY,std=5.000 mg/L，响应峰面积分别AX,std=8000、AY,std=4000 counts；样品被5.000倍定容稀释，并加入同浓度Y内标，测得AX,unk=4800、AY,unk=3000 counts。假设响应比AX/AY=k×CX/CY，标准液与稀释样的内标Y浓度相同，仪器漂移对两峰同比例。求标准响应比、标准浓度比、相对响应因子k、未知样峰比、未知稀释后X浓度、原样X浓度、未知样Y信号漂移分数、校正后未知X峰面积、样品相对标准的X浓度比及如果错误只用X绝对峰面积得到的原样浓度。须区分校准响应因子与样品稀释倍数。
+\item 列出物料/电荷守恒与定量模型：k=(AX/AY)std/(CX/CY)std，Cunk=(AX/AY)unk/k×CY，Coriginal=5Cunk。
+\item 明确测量单位、形式价态或标准态定义，并区分固定外库和封闭系统的计量。
+\item 依据模型推导第一组变量以及在此范围采用的理想化假设。
+\item 计算初级量：std\_signal\_ratio = 2.0000000000000 ratio；std\_concentration\_ratio = 2.0000000000000 ratio；relative\_response\_factor = 1.0000000000000 ratio。
+\item 由此得到中间结构与观测指标：unknown\_signal\_ratio = 1.6000000000000 ratio；diluted\_X\_mgL = 8.0000000000000 mg/L；original\_X\_mgL = 40.000000000000 mg/L。
+\item 全部剩余数值和回代核对：internal\_signal\_drift = 0.75000000000000 fraction；corrected\_unknown\_X\_area = 6400.0000000000 counts；diluted\_to\_std\_X\_ratio = 0.80000000000000 ratio；uncorrected\_original\_X\_mgL = 30.000000000000 mg/L。
+\item 把结果返回原始物料或校准方程，检验电荷、原子或浓度守恒，排除不可能的负浓度与超量回收。
+\item 通过第二种代数表达式逐项复算数值向量，错误阈值1e−9相对精度。
+\item 科学模型有效性、跨辑重复性及版权审核仍待专家审定，不进入可出版正式库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+std\_signal\_ratio = 2 ratio；std\_concentration\_ratio = 2 ratio；relative\_response\_factor = 1 ratio；unknown\_signal\_ratio = 1.6 ratio；diluted\_X\_mgL = 8 mg/L；original\_X\_mgL = 40 mg/L；internal\_signal\_drift = 0.75 fraction；corrected\_unknown\_X\_area = 6400 counts；diluted\_to\_std\_X\_ratio = 0.8 ratio；uncorrected\_original\_X\_mgL = 30 mg/L\par
+\noindent\textbf{模型前提：}
+理想计量与仪器线性假设；第二路径数值复算不代表实验和原创性专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-A253 · ICP电沉积二价金属的库仑电量与回收质量}
+\noindent\textbf{题目}\par
+某电化学痕量分析对Zn²⁺进行恒电流沉积Zn²⁺+2e⁻→Zn(s)，电流I=0.01000 A、电解时间t=600.0 s，沉积法拉第效率η=0.9500，F=96485.33212 C/mol、MZn=65.38 g/mol。样品总体积100.0 mL且Zn²⁺初始浓度0.001000 mol/L，保证沉积量不超过库存。求总电量、有效电量、有效电子mol、沉积Zn的mol与质量mg、对应样品浓度降低量(mol/L)、沉积回收占初始Zn摩尔数比例、非金属沉积消耗电量、若误以单电子沉积计算的Zn质量mg及由此得到的质量高估倍数。题设忽略锌表面再溶解、氧析出以外其他副反应。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整条件：某电化学痕量分析对Zn²⁺进行恒电流沉积Zn²⁺+2e⁻→Zn(s)，电流I=0.01000 A、电解时间t=600.0 s，沉积法拉第效率η=0.9500，F=96485.33212 C/mol、MZn=65.38 g/mol。样品总体积100.0 mL且Zn²⁺初始浓度0.001000 mol/L，保证沉积量不超过库存。求总电量、有效电量、有效电子mol、沉积Zn的mol与质量mg、对应样品浓度降低量(mol/L)、沉积回收占初始Zn摩尔数比例、非金属沉积消耗电量、若误以单电子沉积计算的Zn质量mg及由此得到的质量高估倍数。题设忽略锌表面再溶解、氧析出以外其他副反应。
+\item 列出物料/电荷守恒与定量模型：Q=It，Qeff=ηQ，nZn=Qeff/(2F)，Δc=nZn/V。
+\item 明确测量单位、形式价态或标准态定义，并区分固定外库和封闭系统的计量。
+\item 依据模型推导第一组变量以及在此范围采用的理想化假设。
+\item 计算初级量：total\_charge\_C = 6.0000000000000 C；effective\_charge\_C = 5.7000000000000 C；electron\_mol = 0.000059076337042721 mol。
+\item 由此得到中间结构与观测指标：deposited\_Zn\_mol = 0.000029538168521361 mol；deposited\_Zn\_mg = 1.9312054579266 mg；concentration\_drop\_M = 0.00029538168521361 mol/L。
+\item 全部剩余数值和回代核对：fraction\_sample\_Zn\_recovered = 0.29538168521361 fraction；parasitic\_charge\_C = 0.30000000000000 C；wrong\_single\_electron\_mass\_mg = 3.8624109158531 mg；overestimate\_factor = 2.0000000000000 ratio。
+\item 把结果返回原始物料或校准方程，检验电荷、原子或浓度守恒，排除不可能的负浓度与超量回收。
+\item 通过第二种代数表达式逐项复算数值向量，错误阈值1e−9相对精度。
+\item 科学模型有效性、跨辑重复性及版权审核仍待专家审定，不进入可出版正式库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+total\_charge\_C = 6 C；effective\_charge\_C = 5.7 C；electron\_mol = 5.9076337e-05 mol；deposited\_Zn\_mol = 2.95381685e-05 mol；deposited\_Zn\_mg = 1.93120546 mg；concentration\_drop\_M = 0.000295381685 mol/L；fraction\_sample\_Zn\_recovered = 0.295381685 fraction；parasitic\_charge\_C = 0.3 C；wrong\_single\_electron\_mass\_mg = 3.86241092 mg；overestimate\_factor = 2 ratio\par
+\noindent\textbf{模型前提：}
+理想计量与仪器线性假设；第二路径数值复算不代表实验和原创性专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-A254 · 离子色谱加标回收率及原样稀释因子的计量校正}
+\noindent\textbf{题目}\par
+某离子色谱方法测定样品阴离子X，先将原样稀释10.00倍，未加标的稀释样测得仪器表观浓度C0=1.800 mg/L。向同体积的另一份稀释样加入最终浓度贡献2.000 mg/L的X标准溶液，且加标定容保持两份终体积相等，测得Csp=3.700 mg/L。假设仪器响应对内源X与标准X具有相同的恒定回收系数r，且无额外背景，因此r=(Csp−C0)/2.000。求绝对加标增量、回收率及百分数、经回收校正的稀释样真实X浓度、原样真实浓度、若忽略回收所得原样浓度、回收校正浓度的相对增幅、标准加标实测增量相对理论比例、校正后的加标样真实总浓度及经校正计算的原样每1 L X质量mg。不能将加标后未经回收校正的表观值直接当原样真值。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 完整条件：某离子色谱方法测定样品阴离子X，先将原样稀释10.00倍，未加标的稀释样测得仪器表观浓度C0=1.800 mg/L。向同体积的另一份稀释样加入最终浓度贡献2.000 mg/L的X标准溶液，且加标定容保持两份终体积相等，测得Csp=3.700 mg/L。假设仪器响应对内源X与标准X具有相同的恒定回收系数r，且无额外背景，因此r=(Csp−C0)/2.000。求绝对加标增量、回收率及百分数、经回收校正的稀释样真实X浓度、原样真实浓度、若忽略回收所得原样浓度、回收校正浓度的相对增幅、标准加标实测增量相对理论比例、校正后的加标样真实总浓度及经校正计算的原样每1 L X质量mg。不能将加标后未经回收校正的表观值直接当原样真值。
+\item 列出物料/电荷守恒与定量模型：r=(Csp−C0)/Cadded；Creal,dil=C0/r，Creal,orig=10Creal,dil。
+\item 明确测量单位、形式价态或标准态定义，并区分固定外库和封闭系统的计量。
+\item 依据模型推导第一组变量以及在此范围采用的理想化假设。
+\item 计算初级量：measured\_spike\_increment\_mgL = 1.9000000000000 mg/L；recovery\_fraction = 0.95000000000000 fraction；recovery\_percent = 95.000000000000 percent。
+\item 由此得到中间结构与观测指标：corrected\_diluted\_conc = 1.8947368421053 mg/L；corrected\_original\_conc = 18.947368421053 mg/L；uncorrected\_original\_conc = 18.000000000000 mg/L。
+\item 全部剩余数值和回代核对：relative\_correction\_increase = 0.052631578947368 fraction；measured\_theoretical\_increment\_ratio = 0.95000000000000 ratio；corrected\_spiked\_total\_conc = 3.8947368421053 mg/L；original\_mg\_per\_L = 18.947368421053 mg。
+\item 把结果返回原始物料或校准方程，检验电荷、原子或浓度守恒，排除不可能的负浓度与超量回收。
+\item 通过第二种代数表达式逐项复算数值向量，错误阈值1e−9相对精度。
+\item 科学模型有效性、跨辑重复性及版权审核仍待专家审定，不进入可出版正式库。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+measured\_spike\_increment\_mgL = 1.9 mg/L；recovery\_fraction = 0.95 fraction；recovery\_percent = 95 percent；corrected\_diluted\_conc = 1.89473684 mg/L；corrected\_original\_conc = 18.9473684 mg/L；uncorrected\_original\_conc = 18 mg/L；relative\_correction\_increase = 0.0526315789 fraction；measured\_theoretical\_increment\_ratio = 0.95 ratio；corrected\_spiked\_total\_conc = 3.89473684 mg/L；original\_mg\_per\_L = 18.9473684 mg\par
+\noindent\textbf{模型前提：}
+理想计量与仪器线性假设；第二路径数值复算不代表实验和原创性专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\end{document}
