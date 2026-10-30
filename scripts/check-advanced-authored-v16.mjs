@@ -24,6 +24,19 @@ Object.assign(witnesses,{
 "UC-ADV16-P250":()=>[.2,.5,.8,.8,.5,.2,.25,1,4,.5,50,.6,16,2]
 });
 
+Object.assign(witnesses,{
+"UC-ADV16-I255":()=>[.7,.3,.3,1.7,.3,.85,1,2,8,-8,0,1],
+"UC-ADV16-I256":()=>[5,6,2.5,1.5,2.75,4*4,-11*2,16-22,4*4,16-11,10/4,6],
+"UC-ADV16-I257":()=>{let d=18000,p=20000,H=(-1.6+1.2)*d+p,L=-2.4*d+3*p;return[-.4*d,-2.4*d,p,3*p,H,L,2*(p-d),4,0,Math.sqrt(24),0,1]},
+"UC-ADV16-I258":()=>{let z=1.011,p=10**(-2)/z,n=10**(-3)/z;return[10**(-2),10**(-3),z,p,1-p-n,n,.01*p,.01*(1-p-n),.01*n,p-n,.01*(p-n),(4+9)/2]},
+"UC-ADV16-I259":()=>{let v=.08;return[.84,.16,1.92,v,.04,3.84,-3.84,0,1.92,.5,8]},
+"UC-ADV16-I260":()=>{let y=2/(1+Math.sqrt(17)),d=1-y;return[y,d,y,d,y,d,2-y,2*d/(2-y),4,2-y,d/y]},
+"UC-ADV16-I261":()=>{let a=1,b=.2,z=2.2;return[a,b,z,a/z,b/z,1/z,.01/z,.002/z,.012/z,5,1.2/z,.01/z,.5]},
+"UC-ADV16-I262":()=>{let Cu=.08,O=.05,M=Cu*63.546+O*15.999;return[.06,.02,.03,.02,Cu,O,1.25,.75,.25,M,.05*15.999/M,.08*63.546/M,.06+.04-.1]},
+"UC-ADV16-I263":()=>{let a=10**1.95,b=10**(-2.03),e=1/(1+a*(1+b)),y=a*e,z=a*b*e;return[a,b,e,y,z,.01*e,.01*y,.01*z,.01,y+2*z,a*b,b]},
+"UC-ADV16-I264":()=>{let j=35/4,s=3/4,l=12,g=6/7,M=g*Math.sqrt(j),mu=9.2740100783e-24*M,C=1.25663706212e-6*NA*mu*mu/(3*1.380649e-23);return[j,s,l,g,M,mu,6,15/7,C/300,C]}
+});
+
 const starts={inorganic:["I",251],analytical:["A",251],organic:["O",248],physical:["P",248]};
 const ids=new Set(),titles=new Set(),families=new Set(),counts={};
 for(const [sub,[letter,start]] of Object.entries(starts)){

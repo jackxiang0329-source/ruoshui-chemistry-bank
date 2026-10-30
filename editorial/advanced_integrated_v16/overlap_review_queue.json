@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 16,
   "status": "expert_review_pending",
-  "current_draft_count": 14,
+  "current_draft_count": 24,
   "expert_approved": 0,
-  "preliminary_flags": 14,
+  "preliminary_flags": 24,
   "pairs": [
     {
       "new_id": "UC-ADV16-I251",
@@ -88,6 +88,66 @@
       "new_id": "UC-ADV16-P250",
       "prior_id": null,
       "reason": "跨辑物理模型查重及科学性评审待人工确认。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-I255",
+      "prior_id": null,
+      "reason": "待逐式审查是否与前15辑已录结构或化学平衡模型同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-I256",
+      "prior_id": null,
+      "reason": "待逐式审查是否与前15辑已录结构或化学平衡模型同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-I257",
+      "prior_id": null,
+      "reason": "待逐式审查是否与前15辑已录结构或化学平衡模型同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-I258",
+      "prior_id": null,
+      "reason": "待逐式审查是否与前15辑已录结构或化学平衡模型同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-I259",
+      "prior_id": null,
+      "reason": "待逐式审查是否与前15辑已录结构或化学平衡模型同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-I260",
+      "prior_id": null,
+      "reason": "待逐式审查是否与前15辑已录结构或化学平衡模型同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-I261",
+      "prior_id": null,
+      "reason": "待逐式审查是否与前15辑已录结构或化学平衡模型同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-I262",
+      "prior_id": null,
+      "reason": "待逐式审查是否与前15辑已录结构或化学平衡模型同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-I263",
+      "prior_id": null,
+      "reason": "待逐式审查是否与前15辑已录结构或化学平衡模型同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-I264",
+      "prior_id": null,
+      "reason": "待逐式审查是否与前15辑已录结构或化学平衡模型同构。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -175,6 +235,66 @@
       "model_family": "Hill-binding-cooperativity-two-exponent-slope",
       "judgement": "pending_human_comparison",
       "screening": "数值双路径核验通过，专家评审尚待完成。"
+    },
+    {
+      "new_id": "UC-ADV16-I255",
+      "model_family": "spinel-cation-inversion-ZnAl2O4-sites",
+      "judgement": "pending_human_comparison",
+      "screening": "数值双表达式复核完成，科学性与原创性专家复核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-I256",
+      "model_family": "oligosilicate-Si4O11-bridging-oxygen-network-count",
+      "judgement": "pending_human_comparison",
+      "screening": "数值双表达式复核完成，科学性与原创性专家复核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-I257",
+      "model_family": "octahedral-d6-high-low-spin-crystal-field-pairing-energy",
+      "judgement": "pending_human_comparison",
+      "screening": "数值双表达式复核完成，科学性与原创性专家复核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-I258",
+      "model_family": "amphoteric-oxide-surface-site-tristate-pH-charge",
+      "judgement": "pending_human_comparison",
+      "screening": "数值双表达式复核完成，科学性与原创性专家复核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-I259",
+      "model_family": "yttria-stabilized-zirconia-aliovalent-vacancy-charge",
+      "judgement": "pending_human_comparison",
+      "screening": "数值双表达式复核完成，科学性与原创性专家复核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-I260",
+      "model_family": "nitrogen-dioxide-dimerization-equilibrium-total-pressure",
+      "judgement": "pending_human_comparison",
+      "screening": "数值双表达式复核完成，科学性与原创性专家复核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-I261",
+      "model_family": "MOF-two-gases-competitive-Langmuir-site-occupancy",
+      "judgement": "pending_human_comparison",
+      "screening": "数值双表达式复核完成，科学性与原创性专家复核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-I262",
+      "model_family": "copper-oxide-CuI-CuII-mixture-oxygen-analysis",
+      "judgement": "pending_human_comparison",
+      "screening": "数值双表达式复核完成，科学性与原创性专家复核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-I263",
+      "model_family": "carbonate-triprotic-two-pKa-speciation-HCO3-CO3",
+      "judgement": "pending_human_comparison",
+      "screening": "数值双表达式复核完成，科学性与原创性专家复核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-I264",
+      "model_family": "lanthanide-CeIII-Hund-J-Lande-gfactor-magnetic-moment",
+      "judgement": "pending_human_comparison",
+      "screening": "数值双表达式复核完成，科学性与原创性专家复核待办。"
     }
   ]
 }
