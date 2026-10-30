@@ -73,12 +73,19 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Generated PDFs are tied to the exact checked-out question sources.
+          # Avoid rebasing binary artifacts across concurrent hourly question commits.
+          git fetch origin main
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+            echo "::warning::Newer question sources landed during compilation. Skip outdated PDF publication; the next build will use the new revision."
+            exit 0
+          fi
           git add editorial/pdf_drafts/*.pdf editorial/pdf_drafts/tex/*.tex
           if git diff --cached --quiet; then
-            echo "No PDF changes to commit"
+            echo "Generated PDF and TeX already match repository copies"
           else
             git commit -m "build(pdf): refresh chemistry draft volume PDFs [skip ci]"
-            git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main || echo "::warning::PDF artifacts built, but repository push was blocked; download this run's artifacts."
+            if ! git push origin HEAD:main; then
+              echo "::warning::Concurrent source change blocked this PDF push. Generated artifacts remain attached to this run."
+            fi
           fi
