@@ -39,8 +39,8 @@ Object.assign(witnesses,{
 
 Object.assign(witnesses,{
 "UC-ADV16-A255":()=>[-.1,2,20,.08,.002,.05,1/35,-Math.log10(.05),-Math.log10(1/35),.25,.5,.001],
-"UC-ADV16-A256":()=>{let n=4e-6/3,t=n+1e-6;return[4/3,n,t,t/2,t/2,n/5,9e-7,.5,3/7,1,n*100*1e6]},
-"UC-ADV16-A257":()=>{let a=1.1,b=1.5;return[10,a,b,1000/a,1000/b,5/a,5/b,1.5/1.1,1.5/1.1,1/a,1/b,1e8]},
+"UC-ADV16-A256":()=>{let a=10000/.95,b=40000/.8;return[a,b,.05,.2,4,4*.95/.8,1/.95,1/.8,a-10000,b-40000,200000,.2,b-a]},
+"UC-ADV16-A257":()=>{let k=r=>.25e9*(5/r)**6,a=k(4),b=k(6),t=x=>1/(.25e9+x)*1e9,p=a/(.25e9+a),q=b/(.25e9+b),ta=t(a),tb=t(b);return[p,q,ta,tb,1-p,1-q,a,b,p/q,tb/ta,1e9/ta,1e9/tb,p-q]},
 "UC-ADV16-A258":()=>{let r=Math.pow(10,10/59.16),x=.01/(11*r-10);return[r,x,(10*x+.01)/11,10*x/11,.01/11,1e-5,x/100,10/11,10,(10*x+.01)/(11*x)]},
 "UC-ADV16-A259":()=>[-60,420,5.75,180,0,75,10**(-5.75),10**1.25,(60/59.16-1)*100,120],
 "UC-ADV16-A260":()=>{let x=-Math.log10(.5);return[x,x/(.1*.01),-Math.log10(.25),.25,1-.5,1-.25,2,2,.25/.5,Math.log(2),Math.log(4)]},
@@ -52,8 +52,8 @@ Object.assign(witnesses,{
 
 Object.assign(witnesses,{
 "UC-ADV16-O251":()=>{let ss=.75,e=Math.exp(-.8),z=.75*(1-e);return[.04,ss,.25,z,.25+.75*e,.01*z,.01*(1-z),.0075,.0025,3,Math.LN10/.04,25,z/(1-z)]},
-"UC-ADV16-O252":()=>{let a=1.56,b=-.54,x=Math.pow(10,1.56),y=Math.pow(10,-.54);return[a,b,x,y,.01*x,.01*y,10**(a-b),Math.LN2/.01,Math.LN2/(.01*x),Math.LN2/(.01*y),Math.exp(-.3*x),Math.exp(-.3*y)]},
-"UC-ADV16-O253":()=>{let f=1/6,k=.1/6,s=Math.exp(-1),c=.01*s;return[f,5/6,.1,k,c,.01*(1-s),1-s,6*Math.LN2/.1,.01*k,c/6,c*5/6,.2]},
+"UC-ADV16-O252":()=>{let min=27/28;return[7,2.25,1,3.25,9,9/2.25,6,Math.acos(1/14)*180/Math.PI,min,.5,.25,9-3.25,9/min]},
+"UC-ADV16-O253":()=>{let f=2/3,s=Math.exp(-2/3),z=.01*s,o=z*2/3,w=z/3;return[f,1/3,.02*f,z,.01*(1-s),o,w,o/.05,w/.1,4,1-s,.01*.02*f,Math.LN2/(.02*f)]},
 "UC-ADV16-O254":()=>{let q=Math.exp(-1),p=-Math.expm1(-1),a=q**3,b=3*p*q*q,c=3*p*p*q,d=p**3;return[p,q,a,b,c,d,3*p,3*p*q,1-a-b,1,.01*d,.01*3*p]},
 "UC-ADV16-O255":()=>{let v=.05/7,p=.05*6/7;return[v,v,p,6/7,10,.005,2*v**2,90,1/49,.05]},
 "UC-ADV16-O256":()=>{let c=10**5.2/(1+10**5.2),a=10**1.6/(1+10**1.6),b=10**3.1/(1+10**3.1);return[c,a,b,a+b-c,a+b,1-c,a*b,c*a*b,(1-a)*(1-b),b/a,-c]},

@@ -484,15 +484,15 @@
     },
     {
       "new_id": "UC-ADV16-A256",
-      "model_family": "isotope-dilution-ICPMS-heavy-light-spike-balance",
+      "model_family": "nonparalyzable-detector-deadtime-counting-rate-correction",
       "judgement": "pending_human_comparison",
-      "screening": "双算法数值校验通过；模型有效性与版权审核待办。"
+      "screening": "已替换近似重复旧模型；机器数值复核通过，人工原创性待审。"
     },
     {
       "new_id": "UC-ADV16-A257",
-      "model_family": "Stern-Volmer-dynamic-fluorescence-lifetime-quenching",
+      "model_family": "Forster-resonance-energy-transfer-distance-sixthpower-lifetime",
       "judgement": "pending_human_comparison",
-      "screening": "双算法数值校验通过；模型有效性与版权审核待办。"
+      "screening": "已替换近似重复旧模型；机器数值复核通过，人工原创性待审。"
     },
     {
       "new_id": "UC-ADV16-A258",
@@ -544,15 +544,15 @@
     },
     {
       "new_id": "UC-ADV16-O252",
-      "model_family": "Hammett-electron-effect-nucleophilic-aromatic-substitution",
+      "model_family": "Karplus-vicinal-HH-J-coupling-dihedral-extremum",
       "judgement": "pending_human_comparison",
-      "screening": "双途径数值复算完成，但人工原创性审查未完成。"
+      "screening": "已替换近似重复旧模型；机器数值复核通过，人工原创性待审。"
     },
     {
       "new_id": "UC-ADV16-O253",
-      "model_family": "keto-enol-fast-equilibrium-trapping-effective-reactivity",
+      "model_family": "phase-transfer-two-liquid-partition-controlled-reaction-kinetics",
       "judgement": "pending_human_comparison",
-      "screening": "双途径数值复算完成，但人工原创性审查未完成。"
+      "screening": "已替换近似重复旧模型；机器数值复核通过，人工原创性待审。"
     },
     {
       "new_id": "UC-ADV16-O254",
@@ -655,6 +655,28 @@
       "model_family": "activated-diffusion-Arrhenius-two-temperatures-transport",
       "judgement": "pending_human_comparison",
       "screening": "双路径数值复算通过，科学评审仍待专家完成。"
+    }
+  ],
+  "replaced_duplicate_risk_items": [
+    {
+      "id": "UC-ADV16-A256",
+      "new_model_family": "nonparalyzable-detector-deadtime-counting-rate-correction",
+      "reason": "跨辑重复度高而替换题干及模型；新题仍待专家核实原创性。"
+    },
+    {
+      "id": "UC-ADV16-A257",
+      "new_model_family": "Forster-resonance-energy-transfer-distance-sixthpower-lifetime",
+      "reason": "跨辑重复度高而替换题干及模型；新题仍待专家核实原创性。"
+    },
+    {
+      "id": "UC-ADV16-O252",
+      "new_model_family": "Karplus-vicinal-HH-J-coupling-dihedral-extremum",
+      "reason": "跨辑重复度高而替换题干及模型；新题仍待专家核实原创性。"
+    },
+    {
+      "id": "UC-ADV16-O253",
+      "new_model_family": "phase-transfer-two-liquid-partition-controlled-reaction-kinetics",
+      "reason": "跨辑重复度高而替换题干及模型；新题仍待专家核实原创性。"
     }
   ]
 }
