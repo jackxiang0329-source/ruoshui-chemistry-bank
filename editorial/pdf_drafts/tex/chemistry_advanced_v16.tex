@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第16辑 (8题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第16辑 (14题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -220,6 +220,148 @@ total\_charge\_C = 6 C；effective\_charge\_C = 5.7 C；electron\_mol = 5.907633
 measured\_spike\_increment\_mgL = 1.9 mg/L；recovery\_fraction = 0.95 fraction；recovery\_percent = 95 percent；corrected\_diluted\_conc = 1.89473684 mg/L；corrected\_original\_conc = 18.9473684 mg/L；uncorrected\_original\_conc = 18 mg/L；relative\_correction\_increase = 0.0526315789 fraction；measured\_theoretical\_increment\_ratio = 0.95 ratio；corrected\_spiked\_total\_conc = 3.89473684 mg/L；original\_mg\_per\_L = 18.9473684 mg\par
 \noindent\textbf{模型前提：}
 理想计量与仪器线性假设；第二路径数值复算不代表实验和原创性专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{有机化学}
+\addcontentsline{toc}{subsection}{第16辑 / 有机化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-O248 · 芳香亲电取代邻位/对位统计简并度和产物分流}
+\noindent\textbf{题目}\par
+单取代苯A在理想硝化条件下仅发生单次邻位或对位取代，单个邻位碳上的拟一级微观速度常数ko=0.02000 s⁻¹，单个对位碳kp=0.03000 s⁻¹。由于有两个对称邻位和一个对位，邻位总通道速率2ko，对位通道kp，硝化剂浓度由外池保持不变。初始A=0.01000 mol/L，反应时间30.00 s；没有间位、二次硝化和其它副反应。求两通道及总拟一级速度、邻/对产物分率、30秒残余A和两种产物浓度、产物浓度比、总转化率、半衰期及单个邻位相对于对位的微观速度比。解释宏观区域选择性必须计算位点简并度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题目及全部条件：单取代苯A在理想硝化条件下仅发生单次邻位或对位取代，单个邻位碳上的拟一级微观速度常数ko=0.02000 s⁻¹，单个对位碳kp=0.03000 s⁻¹。由于有两个对称邻位和一个对位，邻位总通道速率2ko，对位通道kp，硝化剂浓度由外池保持不变。初始A=0.01000 mol/L，反应时间30.00 s；没有间位、二次硝化和其它副反应。求两通道及总拟一级速度、邻/对产物分率、30秒残余A和两种产物浓度、产物浓度比、总转化率、半衰期及单个邻位相对于对位的微观速度比。解释宏观区域选择性必须计算位点简并度。
+\item 建立机理或分配方程：kobs=2ko+kp，f\_o=2ko/kobs，Po=A0(1−e\textasciicircum{}(−kobst))f\_o。
+\item 明确化学骨架和官能团守恒关系，区分并行通道、独立反应与物理萃取。
+\item 求解概率与反应计量前，将体积和速率常数换为统一单位。
+\item 前四项：ortho\_rate = 0.04000000000000 s\textasciicircum{}-1；para\_rate = 0.03000000000000 s\textasciicircum{}-1；total\_rate = 0.07000000000000 s\textasciicircum{}-1；ortho\_fraction = 0.5714285714286 fraction。
+\item 中间结果：para\_fraction = 0.4285714285714 fraction；remaining\_A = 0.001224564282530 mol/L；ortho\_product = 0.005014534695697 mol/L；para\_product = 0.003760901021773 mol/L。
+\item 余下数值答案：ortho\_para\_ratio = 1.333333333333 ratio；conversion = 0.8775435717470 fraction；half\_life = 9.902102579428 s；single\_site\_rate\_ratio = 0.6666666666667 ratio。
+\item 检查物质的量总库存、通道分率及凝胶分支参数的逻辑限值。
+\item 由独立代数表达式重算各数值，采用不高于1e−9相对误差标准。
+\item 本题尚待专家科学和跨辑原创性评审，不属于已批准正式出版题。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+ortho\_rate = 0.04 s\textasciicircum{}-1；para\_rate = 0.03 s\textasciicircum{}-1；total\_rate = 0.07 s\textasciicircum{}-1；ortho\_fraction = 0.571428571 fraction；para\_fraction = 0.428571429 fraction；remaining\_A = 0.00122456428 mol/L；ortho\_product = 0.0050145347 mol/L；para\_product = 0.00376090102 mol/L；ortho\_para\_ratio = 1.33333333 ratio；conversion = 0.877543572 fraction；half\_life = 9.90210258 s；single\_site\_rate\_ratio = 0.666666667 ratio\par
+\noindent\textbf{模型前提：}
+全部模型均为题设理想情况；专家学术和原创性审核待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-O249 · A₃/B₂三官能–二官能步增长聚合的凝胶临界转化率}
+\noindent\textbf{题目}\par
+某理想随机步增长聚合中，A₃分子每个带3个A型官能团，B₂分子每个带2个B型官能团，只允许A–B反应，且没有环化。起始加入A₃ 2.000 mol与B₂ 3.000 mol，双方可反应官能团均为6.000 mol，各自转化率为相同p。采用Flory–Stockmayer分支参数α=(3−1)(2−1)p²，凝胶判据α≥1。比较p=0.6000和0.8000，求临界p、两状态α、p=0.8时已形成的A–B键mol与A/B各自剩余的官能团mol、两个状态是否超过临界的标志、p=0.8相对临界的转化率差、初始总官能团数、剩余总官能团数和初态A/B官能团数量比。不能凭凝胶判据直接推算胶团质量分数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题目及全部条件：某理想随机步增长聚合中，A₃分子每个带3个A型官能团，B₂分子每个带2个B型官能团，只允许A–B反应，且没有环化。起始加入A₃ 2.000 mol与B₂ 3.000 mol，双方可反应官能团均为6.000 mol，各自转化率为相同p。采用Flory–Stockmayer分支参数α=(3−1)(2−1)p²，凝胶判据α≥1。比较p=0.6000和0.8000，求临界p、两状态α、p=0.8时已形成的A–B键mol与A/B各自剩余的官能团mol、两个状态是否超过临界的标志、p=0.8相对临界的转化率差、初始总官能团数、剩余总官能团数和初态A/B官能团数量比。不能凭凝胶判据直接推算胶团质量分数。
+\item 建立机理或分配方程：pc=1/√2；α=2p²；生成AB键量=6p，剩余A和B各6(1−p)。
+\item 明确化学骨架和官能团守恒关系，区分并行通道、独立反应与物理萃取。
+\item 求解概率与反应计量前，将体积和速率常数换为统一单位。
+\item 前四项：gel\_critical\_p = 0.7071067811865 fraction；branching\_p0p6 = 0.7200000000000 ratio；branching\_p0p8 = 1.280000000000 ratio；formed\_bonds\_mol = 4.800000000000 mol。
+\item 中间结果：A\_groups\_left\_mol = 1.200000000000 mol；B\_groups\_left\_mol = 1.200000000000 mol；gel\_flag\_p0p6 = 0.000000000000 boolean；gel\_flag\_p0p8 = 1.000000000000 boolean。
+\item 余下数值答案：p\_above\_threshold = 0.09289321881345 fraction；initial\_total\_groups\_mol = 12.00000000000 mol；remaining\_total\_groups\_mol = 2.400000000000 mol；initial\_A\_B\_group\_ratio = 1.000000000000 ratio。
+\item 检查物质的量总库存、通道分率及凝胶分支参数的逻辑限值。
+\item 由独立代数表达式重算各数值，采用不高于1e−9相对误差标准。
+\item 本题尚待专家科学和跨辑原创性评审，不属于已批准正式出版题。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+gel\_critical\_p = 0.707106781 fraction；branching\_p0p6 = 0.72 ratio；branching\_p0p8 = 1.28 ratio；formed\_bonds\_mol = 4.8 mol；A\_groups\_left\_mol = 1.2 mol；B\_groups\_left\_mol = 1.2 mol；gel\_flag\_p0p6 = 0 boolean；gel\_flag\_p0p8 = 1 boolean；p\_above\_threshold = 0.0928932188 fraction；initial\_total\_groups\_mol = 12 mol；remaining\_total\_groups\_mol = 2.4 mol；initial\_A\_B\_group\_ratio = 1 ratio\par
+\noindent\textbf{模型前提：}
+全部模型均为题设理想情况；专家学术和原创性审核待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-O250 · 一次与三次分液萃取的有机物分配回收比较}
+\noindent\textbf{题目}\par
+中性有机化合物X在水相与有机溶剂之间的平衡分配系数D=[X]org/[X]aq=5.000，水相体积100.0 mL，初始X物质的量0.01000 mol。假定两相不互溶、每次接触都达到平衡且不电离或分解。比较用50.00 mL有机溶剂一次萃取，以及将同样50.00 mL溶剂等分为三份、每次用新鲜溶剂连续萃取，萃取后只保留水层进入下次。求单次的水相残留分率、回收分率及水相剩余mol，三次方案每步残留因子、最终水相分率与剩余mol、总回收分率、相对单次回收率提高幅度、两方案剩余摩尔数比、单次方案水相最终浓度。须说明“多次小体积”的回收优势来自每次更换新鲜有机相。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题目及全部条件：中性有机化合物X在水相与有机溶剂之间的平衡分配系数D=[X]org/[X]aq=5.000，水相体积100.0 mL，初始X物质的量0.01000 mol。假定两相不互溶、每次接触都达到平衡且不电离或分解。比较用50.00 mL有机溶剂一次萃取，以及将同样50.00 mL溶剂等分为三份、每次用新鲜溶剂连续萃取，萃取后只保留水层进入下次。求单次的水相残留分率、回收分率及水相剩余mol，三次方案每步残留因子、最终水相分率与剩余mol、总回收分率、相对单次回收率提高幅度、两方案剩余摩尔数比、单次方案水相最终浓度。须说明“多次小体积”的回收优势来自每次更换新鲜有机相。
+\item 建立机理或分配方程：f=Vaq/(Vaq+D Vorg)，单次f1=100/(100+5×50)，三次f3=[100/(100+5×50/3)]³。
+\item 明确化学骨架和官能团守恒关系，区分并行通道、独立反应与物理萃取。
+\item 求解概率与反应计量前，将体积和速率常数换为统一单位。
+\item 前四项：single\_remain\_fraction = 0.2857142857143 fraction；single\_recovered\_fraction = 0.7142857142857 fraction；single\_remain\_mol = 0.002857142857143 mol；per\_step\_remain\_fraction = 0.5454545454545 fraction。
+\item 中间结果：triple\_remain\_fraction = 0.1622839969947 fraction；triple\_remain\_mol = 0.001622839969947 mol；triple\_recovered\_fraction = 0.8377160030053 fraction；improvement\_fraction = 0.1234302887195 fraction。
+\item 余下数值答案：remaining\_ratio\_triple\_single = 0.5679939894816 ratio；single\_aqueous\_concentration = 0.02857142857143 mol/L。
+\item 检查物质的量总库存、通道分率及凝胶分支参数的逻辑限值。
+\item 由独立代数表达式重算各数值，采用不高于1e−9相对误差标准。
+\item 本题尚待专家科学和跨辑原创性评审，不属于已批准正式出版题。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+single\_remain\_fraction = 0.285714286 fraction；single\_recovered\_fraction = 0.714285714 fraction；single\_remain\_mol = 0.00285714286 mol；per\_step\_remain\_fraction = 0.545454545 fraction；triple\_remain\_fraction = 0.162283997 fraction；triple\_remain\_mol = 0.00162283997 mol；triple\_recovered\_fraction = 0.837716003 fraction；improvement\_fraction = 0.123430289 fraction；remaining\_ratio\_triple\_single = 0.567993989 ratio；single\_aqueous\_concentration = 0.0285714286 mol/L\par
+\noindent\textbf{模型前提：}
+全部模型均为题设理想情况；专家学术和原创性审核待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\subsection*{物理化学}
+\addcontentsline{toc}{subsection}{第16辑 / 物理化学}
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-P248 · Morse非谐振子的谱项、跃迁波数与解离能}
+\noindent\textbf{题目}\par
+一种假想双原子分子的振动项采用Morse模型G(v)=ωe(v+1/2)−ωexe(v+1/2)²，单位cm⁻¹，给定谐振常数ωe=2000.0 cm⁻¹，非谐参数xe=0.01000，因此ωexe=20.00 cm⁻¹。忽略转动、电子激发态和同位素效应。求v=0、1、2的振动谱项、0→1及1→2跃迁波数、两跃迁间隔差、0→1光谱波长nm、势阱底至解离极限的Morse理论解离能De/hc=ωe²/(4ωexe)、基态零点能及其相对于De的比例、0→2跃迁波数。以λ(nm)=10⁷/ν(cm⁻¹)换算；零点能不是零，解离能De也不能混作从v0开始的D0。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 理想物理化学实验模型：一种假想双原子分子的振动项采用Morse模型G(v)=ωe(v+1/2)−ωexe(v+1/2)²，单位cm⁻¹，给定谐振常数ωe=2000.0 cm⁻¹，非谐参数xe=0.01000，因此ωexe=20.00 cm⁻¹。忽略转动、电子激发态和同位素效应。求v=0、1、2的振动谱项、0→1及1→2跃迁波数、两跃迁间隔差、0→1光谱波长nm、势阱底至解离极限的Morse理论解离能De/hc=ωe²/(4ωexe)、基态零点能及其相对于De的比例、0→2跃迁波数。以λ(nm)=10⁷/ν(cm⁻¹)换算；零点能不是零，解离能De也不能混作从v0开始的D0。
+\item 推导热力学或统计方程：G(v)=2000(v+½)−20(v+½)²，De/hc=2000²/(4×20)。
+\item 将频率、nm与m以及mol/m³的单位换算明确列入公式，避免无量纲参数与原始实测量混淆。
+\item 由独立基础量建立最小完整方程组，并检查模型适用的压力、温度及几何边界。
+\item 主要数值：G0 = 995.00000000000 cm\textasciicircum{}-1；G1 = 2955.0000000000 cm\textasciicircum{}-1；G2 = 4875.0000000000 cm\textasciicircum{}-1；transition01 = 1960.0000000000 cm\textasciicircum{}-1。
+\item 后续可观测指标：transition12 = 1920.0000000000 cm\textasciicircum{}-1；transition\_difference = 40.000000000000 cm\textasciicircum{}-1；wavelength01\_nm = 5102.0408163265 nm；well\_depth\_cmInv = 50000.000000000 cm\textasciicircum{}-1。
+\item 其余输出及回代：zero\_point\_cmInv = 995.00000000000 cm\textasciicircum{}-1；zero\_point\_fraction = 0.019900000000000 fraction；transition02 = 3880.0000000000 cm\textasciicircum{}-1。
+\item 逐项核查谱线能差、物质的量通量或统计分率归一，检验单位量纲和物理范围。
+\item 以另一种代数表达式独立计算并对照全部数值向量，允许不超过1e−9相对偏差。
+\item 模型结果尚未经专家科学性及跨辑原创性审核，维持待审稿不可正式发布状态。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+G0 = 995 cm\textasciicircum{}-1；G1 = 2955 cm\textasciicircum{}-1；G2 = 4875 cm\textasciicircum{}-1；transition01 = 1960 cm\textasciicircum{}-1；transition12 = 1920 cm\textasciicircum{}-1；transition\_difference = 40 cm\textasciicircum{}-1；wavelength01\_nm = 5102.04082 nm；well\_depth\_cmInv = 50000 cm\textasciicircum{}-1；zero\_point\_cmInv = 995 cm\textasciicircum{}-1；zero\_point\_fraction = 0.0199 fraction；transition02 = 3880 cm\textasciicircum{}-1\par
+\noindent\textbf{模型前提：}
+经典统计与输运近似仅限于题设条件；专家审核未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-P249 · 纳米孔内N₂ Knudsen扩散速率与孔径的线性关系}
+\noindent\textbf{题目}\par
+298.15 K，某直通圆柱孔内N₂处于分子–孔壁碰撞控制的Knudsen极限，摩尔质量M=0.0280134 kg/mol，R=8.314462618。孔半径r1=10.00 nm、r2=20.00 nm，孔长L=0.001000 m，两端浓度差Δc=1.000 mol/m³。Knudsen扩散系数DK=(2/3)r√[8RT/(πM)]，稳态扩散通量J=DK Δc/L。求两个孔的DK与J、两扩散系数比及通量比、平均热速率尺度、如果有效通道总横截面积为0.01000 m²时r1对应的总摩尔流率与分子数流率、两个孔的一维特征扩散时间τ=L²/(2DK)。忽略孔道曲折、孔隙率校正和连续介质的气体分子间碰撞。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 理想物理化学实验模型：298.15 K，某直通圆柱孔内N₂处于分子–孔壁碰撞控制的Knudsen极限，摩尔质量M=0.0280134 kg/mol，R=8.314462618。孔半径r1=10.00 nm、r2=20.00 nm，孔长L=0.001000 m，两端浓度差Δc=1.000 mol/m³。Knudsen扩散系数DK=(2/3)r√[8RT/(πM)]，稳态扩散通量J=DK Δc/L。求两个孔的DK与J、两扩散系数比及通量比、平均热速率尺度、如果有效通道总横截面积为0.01000 m²时r1对应的总摩尔流率与分子数流率、两个孔的一维特征扩散时间τ=L²/(2DK)。忽略孔道曲折、孔隙率校正和连续介质的气体分子间碰撞。
+\item 推导热力学或统计方程：D\_K=(2r/3)√(8RT/πM)，J=DK/L，τ=L²/(2DK)。
+\item 将频率、nm与m以及mol/m³的单位换算明确列入公式，避免无量纲参数与原始实测量混淆。
+\item 由独立基础量建立最小完整方程组，并检查模型适用的压力、温度及几何边界。
+\item 主要数值：D1 = 0.0000031646842538393 m2/s；D2 = 0.0000063293685076786 m2/s；flux1 = 0.0031646842538393 mol/(m2s)；flux2 = 0.0063293685076786 mol/(m2s)。
+\item 后续可观测指标：diffusion\_ratio = 2.0000000000000 ratio；flux\_ratio = 2.0000000000000 ratio；thermal\_speed = 474.70263807590 m/s；molar\_flow1 = 0.000031646842538393 mol/s。
+\item 其余输出及回代：molecules\_per\_second1 = 1.9058174037576e+19 molecules/s；transit\_time1 = 0.15799364482994 s；transit\_time2 = 0.078996822414971 s。
+\item 逐项核查谱线能差、物质的量通量或统计分率归一，检验单位量纲和物理范围。
+\item 以另一种代数表达式独立计算并对照全部数值向量，允许不超过1e−9相对偏差。
+\item 模型结果尚未经专家科学性及跨辑原创性审核，维持待审稿不可正式发布状态。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+D1 = 3.16468425e-06 m2/s；D2 = 6.32936851e-06 m2/s；flux1 = 0.00316468425 mol/(m2s)；flux2 = 0.00632936851 mol/(m2s)；diffusion\_ratio = 2 ratio；flux\_ratio = 2 ratio；thermal\_speed = 474.702638 m/s；molar\_flow1 = 3.16468425e-05 mol/s；molecules\_per\_second1 = 1.9058174e+19 molecules/s；transit\_time1 = 0.157993645 s；transit\_time2 = 0.0789968224 s\par
+\noindent\textbf{模型前提：}
+经典统计与输运近似仅限于题设条件；专家审核未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-P250 · 经验Hill结合曲线的配体半响应与对数斜率}
+\noindent\textbf{题目}\par
+某理想蛋白质配体结合信号在本题工作区间由经验Hill公式θ=L\textasciicircum{}n/(Kd\textasciicircum{}n+L\textasciicircum{}n)刻画，Hill系数n=2.000、半饱和自由配体浓度Kd=0.01000 mol/L。外部配体储液池维持L=0.005000、0.01000、0.02000 mol/L三个状态，忽略配体耗竭和真实位点异质性。求三个状态结合分率与未结合分率、三个结合/未结合的几率比、在L=Kd时的对数灵敏度dθ/dlnL=nθ(1−θ)及对L的导数、由Kd/2升到2Kd的覆盖分率增量、两极端状态结合几率比的比值以及Hill对数几率曲线的斜率。Hill系数是宏观协同性，不直接证明有两个独立物理结合位点。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 理想物理化学实验模型：某理想蛋白质配体结合信号在本题工作区间由经验Hill公式θ=L\textasciicircum{}n/(Kd\textasciicircum{}n+L\textasciicircum{}n)刻画，Hill系数n=2.000、半饱和自由配体浓度Kd=0.01000 mol/L。外部配体储液池维持L=0.005000、0.01000、0.02000 mol/L三个状态，忽略配体耗竭和真实位点异质性。求三个状态结合分率与未结合分率、三个结合/未结合的几率比、在L=Kd时的对数灵敏度dθ/dlnL=nθ(1−θ)及对L的导数、由Kd/2升到2Kd的覆盖分率增量、两极端状态结合几率比的比值以及Hill对数几率曲线的斜率。Hill系数是宏观协同性，不直接证明有两个独立物理结合位点。
+\item 推导热力学或统计方程：θ=L²/(Kd²+L²)，odds=θ/(1−θ)，dθ/dlnL=2θ(1−θ)。
+\item 将频率、nm与m以及mol/m³的单位换算明确列入公式，避免无量纲参数与原始实测量混淆。
+\item 由独立基础量建立最小完整方程组，并检查模型适用的压力、温度及几何边界。
+\item 主要数值：theta\_half = 0.20000000000000 fraction；theta\_equal = 0.50000000000000 fraction；theta\_double = 0.80000000000000 fraction；unbound\_half = 0.80000000000000 fraction。
+\item 后续可观测指标：unbound\_equal = 0.50000000000000 fraction；unbound\_double = 0.20000000000000 fraction；odds\_half = 0.25000000000000 ratio；odds\_equal = 1.0000000000000 ratio。
+\item 其余输出及回代：odds\_double = 4.0000000000000 ratio；log\_sensitivity\_at\_equal = 0.50000000000000 fraction；derivative\_dtheta\_dL\_equal = 50.000000000000 M\textasciicircum{}-1；coverage\_increment = 0.60000000000000 fraction；extreme\_odds\_ratio = 16.000000000000 ratio；Hill\_slope = 2.0000000000000 ratio。
+\item 逐项核查谱线能差、物质的量通量或统计分率归一，检验单位量纲和物理范围。
+\item 以另一种代数表达式独立计算并对照全部数值向量，允许不超过1e−9相对偏差。
+\item 模型结果尚未经专家科学性及跨辑原创性审核，维持待审稿不可正式发布状态。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+theta\_half = 0.2 fraction；theta\_equal = 0.5 fraction；theta\_double = 0.8 fraction；unbound\_half = 0.8 fraction；unbound\_equal = 0.5 fraction；unbound\_double = 0.2 fraction；odds\_half = 0.25 ratio；odds\_equal = 1 ratio；odds\_double = 4 ratio；log\_sensitivity\_at\_equal = 0.5 fraction；derivative\_dtheta\_dL\_equal = 50 M\textasciicircum{}-1；coverage\_increment = 0.6 fraction；extreme\_odds\_ratio = 16 ratio；Hill\_slope = 2 ratio\par
+\noindent\textbf{模型前提：}
+经典统计与输运近似仅限于题设条件；专家审核未完成。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
