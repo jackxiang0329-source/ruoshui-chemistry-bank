@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 15,
   "status": "expert_review_pending",
-  "current_draft_count": 44,
+  "current_draft_count": 54,
   "expert_approved": 0,
-  "preliminary_flags": 44,
+  "preliminary_flags": 54,
   "pairs": [
     {
       "new_id": "UC-ADV15-I226",
@@ -268,6 +268,66 @@
       "new_id": "UC-ADV15-I244",
       "prior_id": null,
       "reason": "对照第1至14辑及第15辑已录试题的同构物理模型，需人工比对。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A235",
+      "prior_id": null,
+      "reason": "跨第1至15辑的分析测量模型逐式比较尚需人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A236",
+      "prior_id": null,
+      "reason": "跨第1至15辑的分析测量模型逐式比较尚需人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A237",
+      "prior_id": null,
+      "reason": "跨第1至15辑的分析测量模型逐式比较尚需人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A238",
+      "prior_id": null,
+      "reason": "跨第1至15辑的分析测量模型逐式比较尚需人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A239",
+      "prior_id": null,
+      "reason": "跨第1至15辑的分析测量模型逐式比较尚需人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A240",
+      "prior_id": null,
+      "reason": "跨第1至15辑的分析测量模型逐式比较尚需人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A241",
+      "prior_id": null,
+      "reason": "跨第1至15辑的分析测量模型逐式比较尚需人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A242",
+      "prior_id": null,
+      "reason": "跨第1至15辑的分析测量模型逐式比较尚需人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A243",
+      "prior_id": null,
+      "reason": "跨第1至15辑的分析测量模型逐式比较尚需人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-A244",
+      "prior_id": null,
+      "reason": "跨第1至15辑的分析测量模型逐式比较尚需人审。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -535,6 +595,66 @@
       "model_family": "Schottky-vacancy-pair-Boltzmann-defect-fraction",
       "judgement": "pending_human_comparison",
       "screening": "新题完成双路径数值程序复核，人工科学审校未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-A235",
+      "model_family": "UV-standard-addition-fixed-final-volume-two-flasks",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算已完成，实验效度及原创性未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV15-A236",
+      "model_family": "isotope-ratio-binomial-counting-propagation-95CI",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算已完成，实验效度及原创性未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV15-A237",
+      "model_family": "HPLC-resolution-width-theoretical-plates-retention-selectivity",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算已完成，实验效度及原创性未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV15-A238",
+      "model_family": "coulometric-chloride-silver-electrogeneration-current-efficiency",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算已完成，实验效度及原创性未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV15-A239",
+      "model_family": "XRD-Scherrer-size-instrumental-broadening-quadrature",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算已完成，实验效度及原创性未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV15-A240",
+      "model_family": "Cottrell-chronoamperometry-planar-diffusion-current",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算已完成，实验效度及原创性未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV15-A241",
+      "model_family": "XPS-charge-shift-adventitious-carbon-reference-correction",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算已完成，实验效度及原创性未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV15-A242",
+      "model_family": "Raman-antiStokes-Stokes-intensity-Boltzmann-wavenumber",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算已完成，实验效度及原创性未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV15-A243",
+      "model_family": "GC-external-standard-blank-LOD-LOQ-dilution",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算已完成，实验效度及原创性未获专家批准。"
+    },
+    {
+      "new_id": "UC-ADV15-A244",
+      "model_family": "fluorescence-anisotropy-G-factor-polarization-two-samples",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复算已完成，实验效度及原创性未获专家批准。"
     }
   ]
 }

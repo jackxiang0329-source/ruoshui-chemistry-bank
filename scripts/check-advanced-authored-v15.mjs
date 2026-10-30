@@ -61,6 +61,19 @@ Object.assign(witnesses,{
 "UC-ADV15-I244":()=>{let beta=T=>1/(8.617333262145e-5*T),a=Math.exp(-beta(800)/2),b=Math.exp(-beta(1000)/2),d=n=>1e9/Math.cbrt(n);return[a,b,a*1e28,b*1e28,d(a*1e28),d(b*1e28),Math.exp((beta(800)-beta(1000))/2),Math.exp(-beta(800)),Math.exp(-beta(1000)),beta(800),beta(1000)]}
 });
 
+Object.assign(witnesses,{
+"UC-ADV15-A235":()=>{let c=.003,s=.01*.001/.025,u=c*.01/.025,v=u+s;return[u,v,s,c,100*s,c*.01,.4,.01/26,.16/.12,100*v]},
+"UC-ADV15-A236":()=>{let H=3600,L=6400,N=H+L,p=H/N,q=L/N,varp=H*L/N**3,se=Math.sqrt(varp);return[p,q,H/L,se,se/(q*q),se/(p*q),p-1.96*se,p+1.96*se,Math.sqrt(varp/2),Math.sqrt(2)]},
+"UC-ADV15-A237":()=>{let r=2/.9,one=(4*5/.4)**2,two=(4*6/.5)**2;return[r,one,two,4,5,5/4,4,5,5/4,1]},
+"UC-ADV15-A238":()=>{let charge=6,eta=.98,m=charge*eta/96485.33212,C=m/0.05;return[charge,5.88,m,C,m*35.453*1000/.05,m*35.453*1000,.12,(1-.98)/.98,300*(.02/.01),m]},
+"UC-ADV15-A239":()=>{let theta=Math.PI/9,c=Math.cos(theta),b=.008,good=.9*.15406/(.008*c),bad=good*.8;return[theta*180/Math.PI,b,.8,.6,good,bad,.2,1/good,good-bad,1e-4]},
+"UC-ADV15-A240":()=>{let C=.001/1000,p=96485.33212*.01*C*Math.sqrt(1e-5/Math.PI);return[p,p/2,p/4,2,p,1e-5,.75,p,0.5,C]},
+"UC-ADV15-A241":()=>{let delta=.8,x=710.5,y=724;return[delta,x,y,724.8-711.3,x-284.8,284.8,.8,711.3/x,-delta,-delta]},
+"UC-ADV15-A242":()=>{let n=1e7/532,st=n-1000,as=n+1000,q=Math.exp(4*Math.log(as/st)),a=q*Math.exp(-1438.776877/300),b=q*Math.exp(-1438.776877/400),wrong=1438.776877/Math.log(1/a);return[n,st,as,q,a/q,a,b,b/a,300,wrong-300]},
+"UC-ADV15-A243":()=>{let u=6000/500,orig=5*u;return[u,orig,20,.18,.6,6000,10000,orig/20,u/.6,5*6200/500,2]},
+"UC-ADV15-A244":()=>{let a=216,b=180,pa=144/576,pb=60/420,ra=2*pa/(3-pa),rb=2*pb/(3-pb);return[a,b,ra,rb,pa,pb,792,600,ra-rb,ra/rb,ra]}
+});
+
 const starts={inorganic:["I",226],analytical:["A",226],organic:["O",223],physical:["P",223]};
 const ids=new Set(),titles=new Set(),models=new Set(),counts={};
 for(const [subject,[L,start]] of Object.entries(starts)){
