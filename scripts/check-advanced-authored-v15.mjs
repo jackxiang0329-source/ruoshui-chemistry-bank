@@ -156,7 +156,7 @@ for(const [subject,[L,start]] of Object.entries(starts)){
  });
 }
 assert.equal(Object.keys(witnesses).length,ids.size);
-const m=JSON.parse(read("release/chemistry-approved-manifest.json"));assert.equal(m.fifteenth_series_work_in_progress_items,ids.size);assert.equal(m.fifteenth_series_pending_cross_series_novelty_review,ids.size);assert.equal(m.advanced_editorial_items,906+ids.size);assert.equal(m.approved_count,0);assert.deepEqual(m.items,[]);
+const m=JSON.parse(read("release/chemistry-approved-manifest.json"));assert.equal(m.fifteenth_series_work_in_progress_items,ids.size);assert.equal(m.fifteenth_series_pending_cross_series_novelty_review,ids.size);assert.equal(m.advanced_editorial_items,906+ids.size+(m.sixteenth_series_work_in_progress_items||0));assert.equal(m.approved_count,0);assert.deepEqual(m.items,[]);
 const q=JSON.parse(read("editorial/advanced_integrated_v15/overlap_review_queue.json"));assert.equal(q.current_draft_count,ids.size);assert.equal(q.preliminary_flags,q.pairs.length);
 for(const id of ids)assert.ok(q.new_items_requiring_cross_series_comparison.some(x=>x.new_id===id));
 console.log(JSON.stringify({pass:true,series:15,count:ids.size,subjects:counts}));

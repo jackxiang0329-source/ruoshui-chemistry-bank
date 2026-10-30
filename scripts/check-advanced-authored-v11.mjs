@@ -204,7 +204,7 @@ const queue=JSON.parse(read('editorial/advanced_integrated_v11/overlap_review_qu
 assert.equal(queue.current_draft_count,count);assert.equal(queue.expert_approved,0);
 for(const q of queue.new_items_requiring_cross_series_comparison)assert.ok(ids.has(q.new_id));
 const manifest=JSON.parse(read('release/chemistry-approved-manifest.json'));
-assert.equal(manifest.advanced_editorial_items,406+100+count+Number(manifest.twelfth_series_work_in_progress_items||0)+Number(manifest.thirteenth_series_work_in_progress_items||0)+Number(manifest.fourteenth_series_work_in_progress_items||0)+Number(manifest.fifteenth_series_work_in_progress_items||0));
+assert.equal(manifest.advanced_editorial_items,406+100+count+Number(manifest.twelfth_series_work_in_progress_items||0)+Number(manifest.thirteenth_series_work_in_progress_items||0)+Number(manifest.fourteenth_series_work_in_progress_items||0)+Number(manifest.fifteenth_series_work_in_progress_items||0)+Number(manifest.sixteenth_series_work_in_progress_items||0));
 assert.equal(manifest.eleventh_series_work_in_progress_items,count);
 assert.equal(manifest.eleventh_series_pending_cross_series_novelty_review,count);
 assert.equal(manifest.approved_count,0);assert.deepEqual(manifest.items,[]);

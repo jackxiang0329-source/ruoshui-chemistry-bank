@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "series": 16,
+  "status": "expert_review_pending",
+  "current_draft_count": 8,
+  "expert_approved": 0,
+  "preliminary_flags": 8,
+  "pairs": [
+    {
+      "new_id": "UC-ADV16-I251",
+      "prior_id": null,
+      "reason": "待与前15辑及本辑相关模型人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-I252",
+      "prior_id": null,
+      "reason": "待与前15辑及本辑相关模型人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-I253",
+      "prior_id": null,
+      "reason": "待与前15辑及本辑相关模型人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-I254",
+      "prior_id": null,
+      "reason": "待与前15辑及本辑相关模型人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-A251",
+      "prior_id": null,
+      "reason": "待与前15辑及本辑相关模型人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-A252",
+      "prior_id": null,
+      "reason": "待与前15辑及本辑相关模型人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-A253",
+      "prior_id": null,
+      "reason": "待与前15辑及本辑相关模型人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-A254",
+      "prior_id": null,
+      "reason": "待与前15辑及本辑相关模型人工逐式审查。",
+      "judgement": "pending_human_comparison"
+    }
+  ],
+  "new_items_requiring_cross_series_comparison": [
+    {
+      "new_id": "UC-ADV16-I251",
+      "model_family": "alkali-silicate-glass-nonbridging-oxygen-Q-distribution",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值重算成功，专家审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-I252",
+      "model_family": "dichromate-ironII-acid-redox-six-electron-stoichiometry",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值重算成功，专家审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-I253",
+      "model_family": "zeolite-AlSi-framework-calcium-exchange-charge-equivalent",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值重算成功，专家审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-I254",
+      "model_family": "polyoxotungstate-Keggin-formal-valence-mass-fractions",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值重算成功，专家审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-A251",
+      "model_family": "enzymatic-UV-absorbance-slope-BeerLambert-velocity",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值重算成功，专家审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-A252",
+      "model_family": "chromatographic-internal-standard-response-factor-matrix",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值重算成功，专家审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-A253",
+      "model_family": "electrodeposition-divalent-zinc-Faraday-current-recovery",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值重算成功，专家审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-A254",
+      "model_family": "ion-chromatography-spike-recovery-matrix-adjustment",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值重算成功，专家审核待办。"
+    }
+  ]
+}
