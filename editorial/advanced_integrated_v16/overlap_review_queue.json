@@ -454,9 +454,9 @@
     },
     {
       "new_id": "UC-ADV16-I261",
-      "model_family": "MOF-two-gases-competitive-Langmuir-site-occupancy",
+      "model_family": "Born-electrostatic-ion-solvation-dielectric-charge-radius",
       "judgement": "pending_human_comparison",
-      "screening": "数值双表达式复核完成，科学性与原创性专家复核待办。"
+      "screening": "已替换原高度相似模型，数值双路径复核通过，专家原创性审查待完成。"
     },
     {
       "new_id": "UC-ADV16-I262",
@@ -574,15 +574,15 @@
     },
     {
       "new_id": "UC-ADV16-O257",
-      "model_family": "steady-radical-polymerization-initiation-termination-rate",
+      "model_family": "Carothers-AA-BB-stepgrowth-stoichiometric-imbalance-DP",
       "judgement": "pending_human_comparison",
-      "screening": "双途径数值复算完成，但人工原创性审查未完成。"
+      "screening": "已替换原高度相似模型，数值双路径复核通过，专家原创性审查待完成。"
     },
     {
       "new_id": "UC-ADV16-O258",
-      "model_family": "vinyl-polymer-tacticity-meso-racemo-triad-entropy",
+      "model_family": "binary-polymer-molecular-weight-distribution-Mn-Mw",
       "judgement": "pending_human_comparison",
-      "screening": "双途径数值复算完成，但人工原创性审查未完成。"
+      "screening": "已替换原高度相似模型，数值双路径复核通过，专家原创性审查待完成。"
     },
     {
       "new_id": "UC-ADV16-O259",
@@ -598,9 +598,9 @@
     },
     {
       "new_id": "UC-ADV16-P251",
-      "model_family": "second-virial-gas-compressibility-fugacity-pressure",
+      "model_family": "van-der-Waals-Joule-Thomson-inversion-temperature",
       "judgement": "pending_human_comparison",
-      "screening": "双路径数值复算通过，科学评审仍待专家完成。"
+      "screening": "已替换原高度相似模型，数值双路径复核通过，专家原创性审查待完成。"
     },
     {
       "new_id": "UC-ADV16-P252",
@@ -622,9 +622,9 @@
     },
     {
       "new_id": "UC-ADV16-P255",
-      "model_family": "Debye-Huckel-limiting-law-mono-divalent-activity-coefficient",
+      "model_family": "Carnahan-Starling-hard-sphere-compressibility-excess-Helmholtz",
       "judgement": "pending_human_comparison",
-      "screening": "双路径数值复算通过，科学评审仍待专家完成。"
+      "screening": "已替换原高度相似模型，数值双路径复核通过，专家原创性审查待完成。"
     },
     {
       "new_id": "UC-ADV16-P256",
@@ -646,9 +646,9 @@
     },
     {
       "new_id": "UC-ADV16-P259",
-      "model_family": "Clausius-Clapeyron-vapor-pressure-boiling-temperature",
+      "model_family": "Kelvin-equation-curvature-vapor-pressure-nanodroplet",
       "judgement": "pending_human_comparison",
-      "screening": "双路径数值复算通过，科学评审仍待专家完成。"
+      "screening": "已替换原高度相似模型，数值双路径复核通过，专家原创性审查待完成。"
     },
     {
       "new_id": "UC-ADV16-P260",
@@ -677,6 +677,36 @@
       "id": "UC-ADV16-O253",
       "new_model_family": "phase-transfer-two-liquid-partition-controlled-reaction-kinetics",
       "reason": "跨辑重复度高而替换题干及模型；新题仍待专家核实原创性。"
+    },
+    {
+      "id": "UC-ADV16-I261",
+      "new_model_family": "Born-electrostatic-ion-solvation-dielectric-charge-radius",
+      "reason": "发现历史辑别同构风险，替换为新的模型族。"
+    },
+    {
+      "id": "UC-ADV16-O257",
+      "new_model_family": "Carothers-AA-BB-stepgrowth-stoichiometric-imbalance-DP",
+      "reason": "发现历史辑别同构风险，替换为新的模型族。"
+    },
+    {
+      "id": "UC-ADV16-O258",
+      "new_model_family": "binary-polymer-molecular-weight-distribution-Mn-Mw",
+      "reason": "发现历史辑别同构风险，替换为新的模型族。"
+    },
+    {
+      "id": "UC-ADV16-P251",
+      "new_model_family": "van-der-Waals-Joule-Thomson-inversion-temperature",
+      "reason": "发现历史辑别同构风险，替换为新的模型族。"
+    },
+    {
+      "id": "UC-ADV16-P255",
+      "new_model_family": "Carnahan-Starling-hard-sphere-compressibility-excess-Helmholtz",
+      "reason": "发现历史辑别同构风险，替换为新的模型族。"
+    },
+    {
+      "id": "UC-ADV16-P259",
+      "new_model_family": "Kelvin-equation-curvature-vapor-pressure-nanodroplet",
+      "reason": "发现历史辑别同构风险，替换为新的模型族。"
     }
   ]
 }
