@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 16,
   "status": "expert_review_pending",
-  "current_draft_count": 34,
+  "current_draft_count": 44,
   "expert_approved": 0,
-  "preliminary_flags": 34,
+  "preliminary_flags": 44,
   "pairs": [
     {
       "new_id": "UC-ADV16-I251",
@@ -208,6 +208,66 @@
       "new_id": "UC-ADV16-A264",
       "prior_id": null,
       "reason": "待专家跨辑核对与此前分析、谱线和滴定模型的数学重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-O251",
+      "prior_id": null,
+      "reason": "需跨第1至16辑排查有机反应速率、聚合物统计与同位素模型的重复。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-O252",
+      "prior_id": null,
+      "reason": "需跨第1至16辑排查有机反应速率、聚合物统计与同位素模型的重复。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-O253",
+      "prior_id": null,
+      "reason": "需跨第1至16辑排查有机反应速率、聚合物统计与同位素模型的重复。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-O254",
+      "prior_id": null,
+      "reason": "需跨第1至16辑排查有机反应速率、聚合物统计与同位素模型的重复。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-O255",
+      "prior_id": null,
+      "reason": "需跨第1至16辑排查有机反应速率、聚合物统计与同位素模型的重复。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-O256",
+      "prior_id": null,
+      "reason": "需跨第1至16辑排查有机反应速率、聚合物统计与同位素模型的重复。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-O257",
+      "prior_id": null,
+      "reason": "需跨第1至16辑排查有机反应速率、聚合物统计与同位素模型的重复。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-O258",
+      "prior_id": null,
+      "reason": "需跨第1至16辑排查有机反应速率、聚合物统计与同位素模型的重复。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-O259",
+      "prior_id": null,
+      "reason": "需跨第1至16辑排查有机反应速率、聚合物统计与同位素模型的重复。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-O260",
+      "prior_id": null,
+      "reason": "需跨第1至16辑排查有机反应速率、聚合物统计与同位素模型的重复。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -415,6 +475,66 @@
       "model_family": "carbonate-bicarbonate-acid-two-indicator-titration",
       "judgement": "pending_human_comparison",
       "screening": "双算法数值校验通过；模型有效性与版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-O251",
+      "model_family": "E-Z-photochemical-reversible-two-state-kinetics",
+      "judgement": "pending_human_comparison",
+      "screening": "双途径数值复算完成，但人工原创性审查未完成。"
+    },
+    {
+      "new_id": "UC-ADV16-O252",
+      "model_family": "Hammett-electron-effect-nucleophilic-aromatic-substitution",
+      "judgement": "pending_human_comparison",
+      "screening": "双途径数值复算完成，但人工原创性审查未完成。"
+    },
+    {
+      "new_id": "UC-ADV16-O253",
+      "model_family": "keto-enol-fast-equilibrium-trapping-effective-reactivity",
+      "judgement": "pending_human_comparison",
+      "screening": "双途径数值复算完成，但人工原创性审查未完成。"
+    },
+    {
+      "new_id": "UC-ADV16-O254",
+      "model_family": "enolizable-alphaH-deuterium-exchange-binomial-isotopologues",
+      "judgement": "pending_human_comparison",
+      "screening": "双途径数值复算完成，但人工原创性审查未完成。"
+    },
+    {
+      "new_id": "UC-ADV16-O255",
+      "model_family": "second-order-equal-initial-ester-saponification-kinetics",
+      "judgement": "pending_human_comparison",
+      "screening": "双途径数值复算完成，但人工原创性审查未完成。"
+    },
+    {
+      "new_id": "UC-ADV16-O256",
+      "model_family": "lysine-three-ionizable-groups-pH-mean-charge",
+      "judgement": "pending_human_comparison",
+      "screening": "双途径数值复算完成，但人工原创性审查未完成。"
+    },
+    {
+      "new_id": "UC-ADV16-O257",
+      "model_family": "steady-radical-polymerization-initiation-termination-rate",
+      "judgement": "pending_human_comparison",
+      "screening": "双途径数值复算完成，但人工原创性审查未完成。"
+    },
+    {
+      "new_id": "UC-ADV16-O258",
+      "model_family": "vinyl-polymer-tacticity-meso-racemo-triad-entropy",
+      "judgement": "pending_human_comparison",
+      "screening": "双途径数值复算完成，但人工原创性审查未完成。"
+    },
+    {
+      "new_id": "UC-ADV16-O259",
+      "model_family": "transesterification-closed-equimolar-equilibrium-quadratic",
+      "judgement": "pending_human_comparison",
+      "screening": "双途径数值复算完成，但人工原创性审查未完成。"
+    },
+    {
+      "new_id": "UC-ADV16-O260",
+      "model_family": "ideal-Gaussian-polymer-chain-end-contact-probability",
+      "judgement": "pending_human_comparison",
+      "screening": "双途径数值复算完成，但人工原创性审查未完成。"
     }
   ]
 }
