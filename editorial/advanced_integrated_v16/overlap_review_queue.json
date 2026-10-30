@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 16,
   "status": "expert_review_pending",
-  "current_draft_count": 24,
+  "current_draft_count": 34,
   "expert_approved": 0,
-  "preliminary_flags": 24,
+  "preliminary_flags": 34,
   "pairs": [
     {
       "new_id": "UC-ADV16-I251",
@@ -148,6 +148,66 @@
       "new_id": "UC-ADV16-I264",
       "prior_id": null,
       "reason": "待逐式审查是否与前15辑已录结构或化学平衡模型同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-A255",
+      "prior_id": null,
+      "reason": "待专家跨辑核对与此前分析、谱线和滴定模型的数学重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-A256",
+      "prior_id": null,
+      "reason": "待专家跨辑核对与此前分析、谱线和滴定模型的数学重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-A257",
+      "prior_id": null,
+      "reason": "待专家跨辑核对与此前分析、谱线和滴定模型的数学重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-A258",
+      "prior_id": null,
+      "reason": "待专家跨辑核对与此前分析、谱线和滴定模型的数学重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-A259",
+      "prior_id": null,
+      "reason": "待专家跨辑核对与此前分析、谱线和滴定模型的数学重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-A260",
+      "prior_id": null,
+      "reason": "待专家跨辑核对与此前分析、谱线和滴定模型的数学重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-A261",
+      "prior_id": null,
+      "reason": "待专家跨辑核对与此前分析、谱线和滴定模型的数学重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-A262",
+      "prior_id": null,
+      "reason": "待专家跨辑核对与此前分析、谱线和滴定模型的数学重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-A263",
+      "prior_id": null,
+      "reason": "待专家跨辑核对与此前分析、谱线和滴定模型的数学重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-A264",
+      "prior_id": null,
+      "reason": "待专家跨辑核对与此前分析、谱线和滴定模型的数学重叠。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -295,6 +355,66 @@
       "model_family": "lanthanide-CeIII-Hund-J-Lande-gfactor-magnetic-moment",
       "judgement": "pending_human_comparison",
       "screening": "数值双表达式复核完成，科学性与原创性专家复核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-A255",
+      "model_family": "Gran-plot-strong-acid-linear-endpoint",
+      "judgement": "pending_human_comparison",
+      "screening": "双算法数值校验通过；模型有效性与版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-A256",
+      "model_family": "isotope-dilution-ICPMS-heavy-light-spike-balance",
+      "judgement": "pending_human_comparison",
+      "screening": "双算法数值校验通过；模型有效性与版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-A257",
+      "model_family": "Stern-Volmer-dynamic-fluorescence-lifetime-quenching",
+      "judgement": "pending_human_comparison",
+      "screening": "双算法数值校验通过；模型有效性与版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-A258",
+      "model_family": "ion-selective-electrode-spike-slope-volume-correction",
+      "judgement": "pending_human_comparison",
+      "screening": "双算法数值校验通过；模型有效性与版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-A259",
+      "model_family": "glass-electrode-two-buffer-calibration-hydrogen-activity",
+      "judgement": "pending_human_comparison",
+      "screening": "双算法数值校验通过；模型有效性与版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-A260",
+      "model_family": "FTIR-transmittance-absorbance-linear-absorption",
+      "judgement": "pending_human_comparison",
+      "screening": "双算法数值校验通过；模型有效性与版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-A261",
+      "model_family": "two-wavelength-UV-two-components-matrix-inverse",
+      "judgement": "pending_human_comparison",
+      "screening": "双算法数值校验通过；模型有效性与版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-A262",
+      "model_family": "DSC-reference-peak-area-calibration-molar-enthalpy",
+      "judgement": "pending_human_comparison",
+      "screening": "双算法数值校验通过；模型有效性与版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-A263",
+      "model_family": "dynamic-light-scattering-hydrodynamic-radius-inversion",
+      "judgement": "pending_human_comparison",
+      "screening": "双算法数值校验通过；模型有效性与版权审核待办。"
+    },
+    {
+      "new_id": "UC-ADV16-A264",
+      "model_family": "carbonate-bicarbonate-acid-two-indicator-titration",
+      "judgement": "pending_human_comparison",
+      "screening": "双算法数值校验通过；模型有效性与版权审核待办。"
     }
   ]
 }
