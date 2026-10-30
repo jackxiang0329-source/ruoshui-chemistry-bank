@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第15辑 (44题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第15辑 (54题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -680,6 +680,236 @@ real\_Z\_1Hz = 109.606768 ohm；loss\_Z\_1Hz = 6.25847783 ohm；real\_Z\_100Hz =
 E\_standard1 = 0.122521951 V；E\_standard2 = 0.181681301 V；E\_unknown = 0.150748134 V；activity\_recovered = 0.003 activity；pX = 2.52287875 pX；slope\_per\_decade = 0.0591593497 V；log\_interpolation\_fraction = 0.477121255 fraction；E\_double\_activity = 0.168556873 V；potential\_increment\_double = 0.0178087388 V；standard\_voltage\_difference = 0.0591593497 V\par
 \noindent\textbf{模型前提：}
 理想分析仪器与信号计量，不代表未经评定的实验准确度。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A235 · 标准加入法固定终体积紫外吸收与原样浓度反演}
+\noindent\textbf{题目}\par
+在两个25.00 mL容量瓶中分别加入10.00 mL未知含磷有色衍生物原样，第二瓶额外加入1.000 mL、0.01000 mol/L的已知同一分析物标准液，均用空白基质定容到25.00 mL。紫外吸光度满足A=εl cfinal，联合系数εl=100.0 L/mol，两瓶实验吸光度A0=0.1200、A1=0.1600，截距已通过试剂空白扣除。假定标准加入前后响应系数相同且无基体抑制变化。求未加标与加标两瓶的最终浓度、标准加入的最终浓度增量、原样浓度、两种吸光度增量、原样10mL中的分析物mol量、原样在定容时的稀释分率、若误把额外1mL加入视为终体积26mL时会错误计算的标准增量、信号比和由加标样重新预测的吸光度。不可将加入体积当成定容外额外体积。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **分析条件与样品状态**：在两个25.00 mL容量瓶中分别加入10.00 mL未知含磷有色衍生物原样，第二瓶额外加入1.000 mL、0.01000 mol/L的已知同一分析物标准液，均用空白基质定容到25.00 mL。紫外吸光度满足A=εl cfinal，联合系数εl=100.0 L/mol，两瓶实验吸光度A0=0.1200、A1=0.1600，截距已通过试剂空白扣除。假定标准加入前后响应系数相同且无基体抑制变化。求未加标与加标两瓶的最终浓度、标准加入的最终浓度增量、原样浓度、两种吸光度增量、原样10mL中的分析物mol量、原样在定容时的稀释分率、若误把额外1mL加入视为终体积26mL时会错误计算的标准增量、信号比和由加标样重新预测的吸光度。不可将加入体积当成定容外额外体积。
+\item **由仪器观测反演量值的方程**：c0=A0/(εl)，c1=A1/(εl)，Δc=cS VS/25mL，c\_sample=c0(25/10)。
+\item 逐一确定原液、定容后溶液、仪器原始信号与基体或空白贡献的区别，并标明活动度或浓度单位。
+\item 先求主校正、校准常数和第一组结果：unspiked\_final\_M=0.0012000000000000 mol/L；spiked\_final\_M=0.0016000000000000 mol/L；added\_standard\_final\_M=0.00040000000000000 mol/L。
+\item 依次求得样本浓度、相对分率或谱线指标：original\_concentration\_M=0.0030000000000000 mol/L；absorbance\_increment=0.040000000000000 AU；original\_analyte\_moles\_in\_aliquot=0.000030000000000000 mol。
+\item 剩余相互独立输出与回代数值：dilution\_fraction=0.40000000000000 fraction；wrong\_increment\_if26mL\_M=0.00038461538461538 mol/L；signal\_ratio=1.3333333333333 ratio；reconstructed\_spiked\_absorbance=0.16000000000000 AU。
+\item 将结果代回实际观测模型，并核对标样、稀释、单位和统计归一；所算物理量不应超出本题的仪器量程。
+\item 如存在非线性基体效应、光谱峰重叠、浓度依赖活度或离子对，题设反演公式可能不再有效。
+\item 用与原解不同的代数或数字表达式独立复算数值，按1e−9相对误差容限审校全部答案。
+\item 初步质检不等同第三方独立实验认证，题干科学性、原创性与版权需专家核定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+unspiked\_final\_M = 0.0012 mol/L；spiked\_final\_M = 0.0016 mol/L；added\_standard\_final\_M = 0.0004 mol/L；original\_concentration\_M = 0.003 mol/L；absorbance\_increment = 0.04 AU；original\_analyte\_moles\_in\_aliquot = 3e-05 mol；dilution\_fraction = 0.4 fraction；wrong\_increment\_if26mL\_M = 0.000384615385 mol/L；signal\_ratio = 1.33333333 ratio；reconstructed\_spiked\_absorbance = 0.16 AU\par
+\noindent\textbf{模型前提：}
+依题面仪器线性、标准态和零背景假设；双路径数值复算已实现，专家审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A236 · 同位素丰度二项计数与重轻比的不确定度传播}
+\noindent\textbf{题目}\par
+高分辨同位素质谱在扣除背景、死时间及质量歧视后，从固定总计数N=10000次独立事件中观察到重同位素NH=3600次、轻同位素NL=6400次。把重核事件视作二项随机试验，重丰度估计p=NH/N，其标准误σp=√[p(1−p)/N]。报告重/轻原子数比r=p/(1−p)，利用一阶误差传播σr=σp/(1−p)²。求丰度、轻丰度、比值、两标准误、r相对标准误、p的95\%正态近似上下限、总计数加倍而真实p不变时的σp和标准误改善倍数。须声明正态区间不是严格Clopper–Pearson区间，也不能纠正仪器系统误差。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **分析条件与样品状态**：高分辨同位素质谱在扣除背景、死时间及质量歧视后，从固定总计数N=10000次独立事件中观察到重同位素NH=3600次、轻同位素NL=6400次。把重核事件视作二项随机试验，重丰度估计p=NH/N，其标准误σp=√[p(1−p)/N]。报告重/轻原子数比r=p/(1−p)，利用一阶误差传播σr=σp/(1−p)²。求丰度、轻丰度、比值、两标准误、r相对标准误、p的95\%正态近似上下限、总计数加倍而真实p不变时的σp和标准误改善倍数。须声明正态区间不是严格Clopper–Pearson区间，也不能纠正仪器系统误差。
+\item **由仪器观测反演量值的方程**：p=NH/N，σp=√(p(1−p)/N)，r=p/(1−p)，σr=σp/(1−p)²。
+\item 逐一确定原液、定容后溶液、仪器原始信号与基体或空白贡献的区别，并标明活动度或浓度单位。
+\item 先求主校正、校准常数和第一组结果：heavy\_fraction=0.36000000000000 fraction；light\_fraction=0.64000000000000 fraction；heavy\_light\_ratio=0.56250000000000 ratio。
+\item 依次求得样本浓度、相对分率或谱线指标：sigma\_fraction=0.0048000000000000 fraction；sigma\_ratio=0.011718750000000 ratio；relative\_sigma\_ratio=0.020833333333333 fraction。
+\item 剩余相互独立输出与回代数值：lower95\_heavy\_fraction=0.35059200000000 fraction；upper95\_heavy\_fraction=0.36940800000000 fraction；sigma\_fraction\_double\_counts=0.0033941125496954 fraction；improvement\_factor=1.4142135623731 ratio。
+\item 将结果代回实际观测模型，并核对标样、稀释、单位和统计归一；所算物理量不应超出本题的仪器量程。
+\item 如存在非线性基体效应、光谱峰重叠、浓度依赖活度或离子对，题设反演公式可能不再有效。
+\item 用与原解不同的代数或数字表达式独立复算数值，按1e−9相对误差容限审校全部答案。
+\item 初步质检不等同第三方独立实验认证，题干科学性、原创性与版权需专家核定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+heavy\_fraction = 0.36 fraction；light\_fraction = 0.64 fraction；heavy\_light\_ratio = 0.5625 ratio；sigma\_fraction = 0.0048 fraction；sigma\_ratio = 0.01171875 ratio；relative\_sigma\_ratio = 0.0208333333 fraction；lower95\_heavy\_fraction = 0.350592 fraction；upper95\_heavy\_fraction = 0.369408 fraction；sigma\_fraction\_double\_counts = 0.00339411255 fraction；improvement\_factor = 1.41421356 ratio\par
+\noindent\textbf{模型前提：}
+依题面仪器线性、标准态和零背景假设；双路径数值复算已实现，专家审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A237 · HPLC分离度、理论塔板数及死时间校正选择性}
+\noindent\textbf{题目}\par
+某等度高效液相色谱分离两个中性组分，第一峰保留时间tR1=5.000 min、基线峰宽w1=0.4000 min；第二峰tR2=6.000 min、基线峰宽w2=0.5000 min。死时间tM=1.000 min，取基线宽塔板公式Ni=16(tRi/wi)²，分离度Rs=2(tR2−tR1)/(w1+w2)，保留因子ki=(tRi−tM)/tM，选择性α=k2/k1。求Rs、各Ni、两个保留因子、α、调整后保留时间、保留时间差、第二峰与第一峰基线峰宽比以及分离度大于1.5的布尔结论。说明塔板数仅描述峰展宽，不能直接视为分析物分离度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **分析条件与样品状态**：某等度高效液相色谱分离两个中性组分，第一峰保留时间tR1=5.000 min、基线峰宽w1=0.4000 min；第二峰tR2=6.000 min、基线峰宽w2=0.5000 min。死时间tM=1.000 min，取基线宽塔板公式Ni=16(tRi/wi)²，分离度Rs=2(tR2−tR1)/(w1+w2)，保留因子ki=(tRi−tM)/tM，选择性α=k2/k1。求Rs、各Ni、两个保留因子、α、调整后保留时间、保留时间差、第二峰与第一峰基线峰宽比以及分离度大于1.5的布尔结论。说明塔板数仅描述峰展宽，不能直接视为分析物分离度。
+\item **由仪器观测反演量值的方程**：Rs=2ΔtR/(w1+w2)，N1=16(tR1/w1)²，N2=16(tR2/w2)²，α=(tR2−tM)/(tR1−tM)。
+\item 逐一确定原液、定容后溶液、仪器原始信号与基体或空白贡献的区别，并标明活动度或浓度单位。
+\item 先求主校正、校准常数和第一组结果：resolution\_Rs=2.2222222222222 ratio；plates\_peak1=2500.0000000000 plates；plates\_peak2=2304.0000000000 plates。
+\item 依次求得样本浓度、相对分率或谱线指标：retention\_factor1=4.0000000000000 ratio；retention\_factor2=5.0000000000000 ratio；selectivity\_alpha=1.2500000000000 ratio。
+\item 剩余相互独立输出与回代数值：adjusted\_tR1\_min=4.0000000000000 min；adjusted\_tR2\_min=5.0000000000000 min；baseline\_width\_ratio2\_over1=1.2500000000000 ratio；resolution\_exceeds\_1p5\_flag=1.0000000000000 boolean。
+\item 将结果代回实际观测模型，并核对标样、稀释、单位和统计归一；所算物理量不应超出本题的仪器量程。
+\item 如存在非线性基体效应、光谱峰重叠、浓度依赖活度或离子对，题设反演公式可能不再有效。
+\item 用与原解不同的代数或数字表达式独立复算数值，按1e−9相对误差容限审校全部答案。
+\item 初步质检不等同第三方独立实验认证，题干科学性、原创性与版权需专家核定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+resolution\_Rs = 2.22222222 ratio；plates\_peak1 = 2500 plates；plates\_peak2 = 2304 plates；retention\_factor1 = 4 ratio；retention\_factor2 = 5 ratio；selectivity\_alpha = 1.25 ratio；adjusted\_tR1\_min = 4 min；adjusted\_tR2\_min = 5 min；baseline\_width\_ratio2\_over1 = 1.25 ratio；resolution\_exceeds\_1p5\_flag = 1 boolean\par
+\noindent\textbf{模型前提：}
+依题面仪器线性、标准态和零背景假设；双路径数值复算已实现，专家审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A238 · Ag⁺库仑滴定氯离子的电流效率与法拉第计量}
+\noindent\textbf{题目}\par
+在恒电流库仑滴定氯化物样品时，银阳极Ag(s)→Ag⁺+e⁻产生Ag⁺并立即以AgCl沉淀定量消耗Cl⁻。电流I=0.02000 A、电解时间t=300.0 s、电流效率η=0.9800（其余电子通量用于副反应）；取样品体积50.00 mL、MCl=35.453 g/mol、F=96485.33212 C/mol。假设氯离子足量且AgCl无损失，1 mol有效电子生成1 mol Ag⁺，求通过总电量、有效电量、Cl⁻摩尔数、样品Cl浓度(mol/L与mg/L)、对应Cl质量mg、副反应电量、忽略电流效率时的相对高估、以及在相同有效电量下电流降至一半所需时间。不要错误地把Ag电解当成二电子过程。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **分析条件与样品状态**：在恒电流库仑滴定氯化物样品时，银阳极Ag(s)→Ag⁺+e⁻产生Ag⁺并立即以AgCl沉淀定量消耗Cl⁻。电流I=0.02000 A、电解时间t=300.0 s、电流效率η=0.9800（其余电子通量用于副反应）；取样品体积50.00 mL、MCl=35.453 g/mol、F=96485.33212 C/mol。假设氯离子足量且AgCl无损失，1 mol有效电子生成1 mol Ag⁺，求通过总电量、有效电量、Cl⁻摩尔数、样品Cl浓度(mol/L与mg/L)、对应Cl质量mg、副反应电量、忽略电流效率时的相对高估、以及在相同有效电量下电流降至一半所需时间。不要错误地把Ag电解当成二电子过程。
+\item **由仪器观测反演量值的方程**：Q=It，Quseful=ηQ，nCl=Quseful/F，c=nCl/V，m=nCl MCl。
+\item 逐一确定原液、定容后溶液、仪器原始信号与基体或空白贡献的区别，并标明活动度或浓度单位。
+\item 先求主校正、校准常数和第一组结果：total\_charge\_C=6.0000000000000 C；effective\_charge\_C=5.8800000000000 C；chloride\_moles=0.000060941905580912 mol。
+\item 依次求得样本浓度、相对分率或谱线指标：chloride\_concentration\_M=0.0012188381116182 mol/L；chloride\_mass\_mg\_L=43.211467571202 mg/L；chloride\_mass\_in\_sample\_mg=2.1605733785601 mg。
+\item 剩余相互独立输出与回代数值：side\_reaction\_charge\_C=0.12000000000000 C；naive\_relative\_bias=0.020408163265306 fraction；time\_at\_half\_current\_s=600.00000000000 s；electron\_equivalents\_mol=0.000060941905580912 mol。
+\item 将结果代回实际观测模型，并核对标样、稀释、单位和统计归一；所算物理量不应超出本题的仪器量程。
+\item 如存在非线性基体效应、光谱峰重叠、浓度依赖活度或离子对，题设反演公式可能不再有效。
+\item 用与原解不同的代数或数字表达式独立复算数值，按1e−9相对误差容限审校全部答案。
+\item 初步质检不等同第三方独立实验认证，题干科学性、原创性与版权需专家核定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+total\_charge\_C = 6 C；effective\_charge\_C = 5.88 C；chloride\_moles = 6.09419056e-05 mol；chloride\_concentration\_M = 0.00121883811 mol/L；chloride\_mass\_mg\_L = 43.2114676 mg/L；chloride\_mass\_in\_sample\_mg = 2.16057338 mg；side\_reaction\_charge\_C = 0.12 C；naive\_relative\_bias = 0.0204081633 fraction；time\_at\_half\_current\_s = 600 s；electron\_equivalents\_mol = 6.09419056e-05 mol\par
+\noindent\textbf{模型前提：}
+依题面仪器线性、标准态和零背景假设；双路径数值复算已实现，专家审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A239 · XRD微晶尺寸的仪器峰宽去卷积与Scherrer反演}
+\noindent\textbf{题目}\par
+某粉末XRD样品在波长λ=0.15406 nm的Cu Kα辐射下有一条衍射峰2θ=40.00°，实验全宽半高βobs=0.01000 rad（2θ角单位），仪器高斯展宽βinst=0.006000 rad。假定样品尺寸峰宽亦高斯，βsize=√(βobs²−βinst²)，Scherrer形状因子K=0.9000；忽略应变、微吸收与多峰重叠。按D=Kλ/[βsize cos θ]求微晶相干衍射尺寸nm，并求布拉格角θ、尺寸峰宽、尺寸峰宽占实测峰宽比、仪器峰宽占比、未扣仪器宽度时得到的错误尺寸、尺寸低估比例、以尺寸nm计算的1/D以及若改用βobs不扣宽度会低估多少nm。说明D是相干衍射尺寸而不必等于粒子几何直径。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **分析条件与样品状态**：某粉末XRD样品在波长λ=0.15406 nm的Cu Kα辐射下有一条衍射峰2θ=40.00°，实验全宽半高βobs=0.01000 rad（2θ角单位），仪器高斯展宽βinst=0.006000 rad。假定样品尺寸峰宽亦高斯，βsize=√(βobs²−βinst²)，Scherrer形状因子K=0.9000；忽略应变、微吸收与多峰重叠。按D=Kλ/[βsize cos θ]求微晶相干衍射尺寸nm，并求布拉格角θ、尺寸峰宽、尺寸峰宽占实测峰宽比、仪器峰宽占比、未扣仪器宽度时得到的错误尺寸、尺寸低估比例、以尺寸nm计算的1/D以及若改用βobs不扣宽度会低估多少nm。说明D是相干衍射尺寸而不必等于粒子几何直径。
+\item **由仪器观测反演量值的方程**：βsize²=βobs²−βinst²，D=Kλ/(βsize cosθ)，θ=(2θ)/2。
+\item 逐一确定原液、定容后溶液、仪器原始信号与基体或空白贡献的区别，并标明活动度或浓度单位。
+\item 先求主校正、校准常数和第一组结果：theta\_deg=20.000000000000 deg；sample\_broadening\_rad=0.0080000000000000 rad；broadening\_fraction=0.80000000000000 fraction。
+\item 依次求得样本浓度、相对分率或谱线指标：instrumental\_fraction=0.60000000000000 fraction；coherent\_domain\_nm=18.444063108109 nm；uncorrected\_domain\_nm=14.755250486488 nm。
+\item 剩余相互独立输出与回代数值：relative\_underestimate=0.20000000000000 fraction；inverse\_domain\_nmInv=0.054217988419283 nm\textasciicircum{}-1；absolute\_underestimate\_nm=3.6888126216219 nm；quadratic\_broadening\_check=0.00010000000000000 rad2。
+\item 将结果代回实际观测模型，并核对标样、稀释、单位和统计归一；所算物理量不应超出本题的仪器量程。
+\item 如存在非线性基体效应、光谱峰重叠、浓度依赖活度或离子对，题设反演公式可能不再有效。
+\item 用与原解不同的代数或数字表达式独立复算数值，按1e−9相对误差容限审校全部答案。
+\item 初步质检不等同第三方独立实验认证，题干科学性、原创性与版权需专家核定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+theta\_deg = 20 deg；sample\_broadening\_rad = 0.008 rad；broadening\_fraction = 0.8 fraction；instrumental\_fraction = 0.6 fraction；coherent\_domain\_nm = 18.4440631 nm；uncorrected\_domain\_nm = 14.7552505 nm；relative\_underestimate = 0.2 fraction；inverse\_domain\_nmInv = 0.0542179884 nm\textasciicircum{}-1；absolute\_underestimate\_nm = 3.68881262 nm；quadratic\_broadening\_check = 0.0001 rad2\par
+\noindent\textbf{模型前提：}
+依题面仪器线性、标准态和零背景假设；双路径数值复算已实现，专家审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A240 · 计时电流法Cottrell扩散电流的时间平方根规律}
+\noindent\textbf{题目}\par
+某理想平面电极在计时电位阶跃后发生单电子扩散控制还原，符合Cottrell方程i(t)=nFA C*√[D/(πt)]。给定n=1、F=96485.33212 C/mol、电极面积A=0.01000 cm²、主体浓度C*=0.001000 mol/L（须转换为mol/cm³）、扩散系数D=1.000×10⁻⁵ cm²/s。求t=1.000、4.000、16.00 s时的电流(A)、前两个电流比、i√t不变量、由4s电流反演的扩散系数、1s到16s的电流衰减分数、4s后若面积加倍的电流与16s电流除以4s电流的比。假设无限平板半无限扩散、无双电层电流、对流、迁移和反应动力学迟滞。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **分析条件与样品状态**：某理想平面电极在计时电位阶跃后发生单电子扩散控制还原，符合Cottrell方程i(t)=nFA C*√[D/(πt)]。给定n=1、F=96485.33212 C/mol、电极面积A=0.01000 cm²、主体浓度C*=0.001000 mol/L（须转换为mol/cm³）、扩散系数D=1.000×10⁻⁵ cm²/s。求t=1.000、4.000、16.00 s时的电流(A)、前两个电流比、i√t不变量、由4s电流反演的扩散系数、1s到16s的电流衰减分数、4s后若面积加倍的电流与16s电流除以4s电流的比。假设无限平板半无限扩散、无双电层电流、对流、迁移和反应动力学迟滞。
+\item **由仪器观测反演量值的方程**：i(t)=n F A C* √[D/(πt)]，C*=1e−6 mol/cm³，D=πt[i/(nFA C*)]²。
+\item 逐一确定原液、定容后溶液、仪器原始信号与基体或空白贡献的区别，并标明活动度或浓度单位。
+\item 先求主校正、校准常数和第一组结果：current\_t1\_A=0.0000017214180789030 A；current\_t4\_A=8.6070903945151e-7 A；current\_t16\_A=4.3035451972575e-7 A。
+\item 依次求得样本浓度、相对分率或谱线指标：current\_ratio\_t1\_t4=2.0000000000000 ratio；current\_times\_sqrt\_t=0.0000017214180789030 A\_sqrt\_s；diffusion\_D\_recovered\_cm2s=0.000010000000000000 cm2/s。
+\item 剩余相互独立输出与回代数值：current\_drop\_1to16\_fraction=0.75000000000000 fraction；double\_area\_current\_t4\_A=0.0000017214180789030 A；current\_ratio\_t16\_t4=0.50000000000000 ratio；bulk\_concentration\_mol\_cm3=0.0000010000000000000 mol/cm3。
+\item 将结果代回实际观测模型，并核对标样、稀释、单位和统计归一；所算物理量不应超出本题的仪器量程。
+\item 如存在非线性基体效应、光谱峰重叠、浓度依赖活度或离子对，题设反演公式可能不再有效。
+\item 用与原解不同的代数或数字表达式独立复算数值，按1e−9相对误差容限审校全部答案。
+\item 初步质检不等同第三方独立实验认证，题干科学性、原创性与版权需专家核定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+current\_t1\_A = 1.72141808e-06 A；current\_t4\_A = 8.60709039e-07 A；current\_t16\_A = 4.3035452e-07 A；current\_ratio\_t1\_t4 = 2 ratio；current\_times\_sqrt\_t = 1.72141808e-06 A\_sqrt\_s；diffusion\_D\_recovered\_cm2s = 1e-05 cm2/s；current\_drop\_1to16\_fraction = 0.75 fraction；double\_area\_current\_t4\_A = 1.72141808e-06 A；current\_ratio\_t16\_t4 = 0.5 ratio；bulk\_concentration\_mol\_cm3 = 1e-06 mol/cm3\par
+\noindent\textbf{模型前提：}
+依题面仪器线性、标准态和零背景假设；双路径数值复算已实现，专家审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A241 · XPS以C 1s为内标的带电位移校正与峰间能差}
+\noindent\textbf{题目}\par
+某绝缘氧化物X射线光电子能谱(XPS)采用表面污染碳C 1s的284.80 eV结合能作为工作标尺。仪器原始谱图测得C 1s在285.60 eV、金属M 2p₃/₂在711.30 eV、对应M 2p₁/₂在724.80 eV，假定所有谱峰受到同一均匀正电荷能量平移δ=Eobs(C)−284.80。求δ、金属两个校正结合能、金属自旋轨道峰间距、校正金属峰相对C 1s的能差、校正后C1s能量、未校正的M2p₃/₂相对已知标尺的虚假偏差、2p₃/₂原始与校正能量比和两个金属峰校正后相对原始的移动量。说明差分峰间距不受均匀充电影响，但若是差异充电该模型失效。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **分析条件与样品状态**：某绝缘氧化物X射线光电子能谱(XPS)采用表面污染碳C 1s的284.80 eV结合能作为工作标尺。仪器原始谱图测得C 1s在285.60 eV、金属M 2p₃/₂在711.30 eV、对应M 2p₁/₂在724.80 eV，假定所有谱峰受到同一均匀正电荷能量平移δ=Eobs(C)−284.80。求δ、金属两个校正结合能、金属自旋轨道峰间距、校正金属峰相对C 1s的能差、校正后C1s能量、未校正的M2p₃/₂相对已知标尺的虚假偏差、2p₃/₂原始与校正能量比和两个金属峰校正后相对原始的移动量。说明差分峰间距不受均匀充电影响，但若是差异充电该模型失效。
+\item **由仪器观测反演量值的方程**：δ=Eobs(C)−284.80，Ecorrected=Eobserved−δ，ΔEso=E1/2−E3/2。
+\item 逐一确定原液、定容后溶液、仪器原始信号与基体或空白贡献的区别，并标明活动度或浓度单位。
+\item 先求主校正、校准常数和第一组结果：charging\_offset\_eV=0.80000000000001 eV；metal\_2p3\_corrected\_eV=710.50000000000 eV；metal\_2p1\_corrected\_eV=724.00000000000 eV。
+\item 依次求得样本浓度、相对分率或谱线指标：spin\_orbit\_splitting\_eV=13.500000000000 eV；metal\_C\_relative\_eV=425.70000000000 eV；carbon\_corrected\_eV=284.80000000000 eV。
+\item 剩余相互独立输出与回代数值：false\_uncorrected\_offset\_eV=0.80000000000001 eV；raw\_to\_corrected\_metal\_ratio=1.0011259676284 ratio；metal\_peak\_shift\_2p3\_eV=-0.79999999999995 eV；metal\_peak\_shift\_2p1\_eV=-0.79999999999995 eV。
+\item 将结果代回实际观测模型，并核对标样、稀释、单位和统计归一；所算物理量不应超出本题的仪器量程。
+\item 如存在非线性基体效应、光谱峰重叠、浓度依赖活度或离子对，题设反演公式可能不再有效。
+\item 用与原解不同的代数或数字表达式独立复算数值，按1e−9相对误差容限审校全部答案。
+\item 初步质检不等同第三方独立实验认证，题干科学性、原创性与版权需专家核定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+charging\_offset\_eV = 0.8 eV；metal\_2p3\_corrected\_eV = 710.5 eV；metal\_2p1\_corrected\_eV = 724 eV；spin\_orbit\_splitting\_eV = 13.5 eV；metal\_C\_relative\_eV = 425.7 eV；carbon\_corrected\_eV = 284.8 eV；false\_uncorrected\_offset\_eV = 0.8 eV；raw\_to\_corrected\_metal\_ratio = 1.00112597 ratio；metal\_peak\_shift\_2p3\_eV = -0.8 eV；metal\_peak\_shift\_2p1\_eV = -0.8 eV\par
+\noindent\textbf{模型前提：}
+依题面仪器线性、标准态和零背景假设；双路径数值复算已实现，专家审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A242 · Raman反Stokes/Stokes热平衡强度比与温度回推}
+\noindent\textbf{题目}\par
+某分子的单一Raman活性振动模具有波数位移Δν=1000.0 cm⁻¹，泵浦波长λ0=532.0 nm，对应激光波数ν0=10⁷/λ0(nm) cm⁻¹。Stokes与anti-Stokes散射波数νS=ν0−Δν、νAS=ν0+Δν，假定相同散射截面且同一光学通道灵敏度已校正。热平衡的积分强度比I\_AS/I\_S=(νAS/νS)\textasciicircum{}4 exp[−(hc/kB)Δν/T]，hc/kB=1.438776877 cm·K。求T=300.0 K下的泵浦、Stokes、反Stokes波数、频率四次方修正因子、纯Boltzmann因子、强度比、该比在T=400.0 K时的值、强度比倍率、用300 K比值反推温度及错误漏掉频率因子时所推算的偏差。需区别Raman的波数与普通Hz频率。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **分析条件与样品状态**：某分子的单一Raman活性振动模具有波数位移Δν=1000.0 cm⁻¹，泵浦波长λ0=532.0 nm，对应激光波数ν0=10⁷/λ0(nm) cm⁻¹。Stokes与anti-Stokes散射波数νS=ν0−Δν、νAS=ν0+Δν，假定相同散射截面且同一光学通道灵敏度已校正。热平衡的积分强度比I\_AS/I\_S=(νAS/νS)\textasciicircum{}4 exp[−(hc/kB)Δν/T]，hc/kB=1.438776877 cm·K。求T=300.0 K下的泵浦、Stokes、反Stokes波数、频率四次方修正因子、纯Boltzmann因子、强度比、该比在T=400.0 K时的值、强度比倍率、用300 K比值反推温度及错误漏掉频率因子时所推算的偏差。需区别Raman的波数与普通Hz频率。
+\item **由仪器观测反演量值的方程**：Q=(νAS/νS)\textasciicircum{}4，I\_AS/I\_S=Qe\textasciicircum{}(−1.438776877 Δν/T)，T=(1.438776877 Δν)/ln(Q/Iratio)。
+\item 逐一确定原液、定容后溶液、仪器原始信号与基体或空白贡献的区别，并标明活动度或浓度单位。
+\item 先求主校正、校准常数和第一组结果：laser\_wavenumber\_cmInv=18796.992481203 cm\textasciicircum{}-1；Stokes\_wavenumber=17796.992481203 cm\textasciicircum{}-1；antiStokes\_wavenumber=19796.992481203 cm\textasciicircum{}-1。
+\item 依次求得样本浓度、相对分率或谱线指标：frequency\_fourth\_factor=1.5311241434944 ratio；Boltzmann\_factor\_300=0.0082633688514459 ratio；intensity\_ratio\_300=0.012652243555048 ratio。
+\item 剩余相互独立输出与回代数值：intensity\_ratio\_400=0.041964133384557 ratio；ratio\_400\_over300=3.3167345539924 ratio；recovered\_temperature\_300=300.00000000000 K；wrong\_temperature\_ignore\_freq\_minus\_true\_K=29.245532829538 K。
+\item 将结果代回实际观测模型，并核对标样、稀释、单位和统计归一；所算物理量不应超出本题的仪器量程。
+\item 如存在非线性基体效应、光谱峰重叠、浓度依赖活度或离子对，题设反演公式可能不再有效。
+\item 用与原解不同的代数或数字表达式独立复算数值，按1e−9相对误差容限审校全部答案。
+\item 初步质检不等同第三方独立实验认证，题干科学性、原创性与版权需专家核定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+laser\_wavenumber\_cmInv = 18796.9925 cm\textasciicircum{}-1；Stokes\_wavenumber = 17796.9925 cm\textasciicircum{}-1；antiStokes\_wavenumber = 19796.9925 cm\textasciicircum{}-1；frequency\_fourth\_factor = 1.53112414 ratio；Boltzmann\_factor\_300 = 0.00826336885 ratio；intensity\_ratio\_300 = 0.0126522436 ratio；intensity\_ratio\_400 = 0.0419641334 ratio；ratio\_400\_over300 = 3.31673455 ratio；recovered\_temperature\_300 = 300 K；wrong\_temperature\_ignore\_freq\_minus\_true\_K = 29.2455328 K\par
+\noindent\textbf{模型前提：}
+依题面仪器线性、标准态和零背景假设；双路径数值复算已实现，专家审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A243 · 气相色谱外标直线的定量范围、检出限与稀释回算}
+\noindent\textbf{题目}\par
+一台GC检测器在选定线性范围内满足积分峰面积A=b+mC，标定空白截距b=200.0 counts、斜率m=500.0 counts/(mg/L)。浓度20.00 mg/L的标样峰面积Astd=10200 counts；被测原样先进行5.000倍稀释，稀释液峰面积Aunk=6200 counts。空白面积随机标准差σblank=30.00 counts，检出限LOD=3σblank/m、定量限LOQ=10σblank/m。假定标定精确且没有基体抑制，求稀释液与原样浓度、标样校准回算浓度、LOD/LOQ、未知信号净峰面积、标样净峰面积、原样与标样浓度比、未知浓度对LOQ的倍数及如果错误不扣截距得到的样品原浓度和高估误差。区别检出限与仪器最终可以准确测量的范围。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **分析条件与样品状态**：一台GC检测器在选定线性范围内满足积分峰面积A=b+mC，标定空白截距b=200.0 counts、斜率m=500.0 counts/(mg/L)。浓度20.00 mg/L的标样峰面积Astd=10200 counts；被测原样先进行5.000倍稀释，稀释液峰面积Aunk=6200 counts。空白面积随机标准差σblank=30.00 counts，检出限LOD=3σblank/m、定量限LOQ=10σblank/m。假定标定精确且没有基体抑制，求稀释液与原样浓度、标样校准回算浓度、LOD/LOQ、未知信号净峰面积、标样净峰面积、原样与标样浓度比、未知浓度对LOQ的倍数及如果错误不扣截距得到的样品原浓度和高估误差。区别检出限与仪器最终可以准确测量的范围。
+\item **由仪器观测反演量值的方程**：C=(A−b)/m；C\_original=5 C\_diluted；LOD=3σ/m。
+\item 逐一确定原液、定容后溶液、仪器原始信号与基体或空白贡献的区别，并标明活动度或浓度单位。
+\item 先求主校正、校准常数和第一组结果：diluted\_concentration\_mgL=12.000000000000 mg/L；original\_concentration\_mgL=60.000000000000 mg/L；standard\_recovered\_mgL=20.000000000000 mg/L。
+\item 依次求得样本浓度、相对分率或谱线指标：LOD\_mgL=0.18000000000000 mg/L；LOQ\_mgL=0.60000000000000 mg/L；unknown\_net\_area=6000.0000000000 counts。
+\item 剩余相互独立输出与回代数值：standard\_net\_area=10000.000000000 counts；original\_to\_standard\_concentration\_ratio=3.0000000000000 ratio；diluted\_over\_LOQ=20.000000000000 ratio；naive\_original\_concentration\_mgL=62.000000000000 mg/L；naive\_overestimate\_mgL=2.0000000000000 mg/L。
+\item 将结果代回实际观测模型，并核对标样、稀释、单位和统计归一；所算物理量不应超出本题的仪器量程。
+\item 如存在非线性基体效应、光谱峰重叠、浓度依赖活度或离子对，题设反演公式可能不再有效。
+\item 用与原解不同的代数或数字表达式独立复算数值，按1e−9相对误差容限审校全部答案。
+\item 初步质检不等同第三方独立实验认证，题干科学性、原创性与版权需专家核定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+diluted\_concentration\_mgL = 12 mg/L；original\_concentration\_mgL = 60 mg/L；standard\_recovered\_mgL = 20 mg/L；LOD\_mgL = 0.18 mg/L；LOQ\_mgL = 0.6 mg/L；unknown\_net\_area = 6000 counts；standard\_net\_area = 10000 counts；original\_to\_standard\_concentration\_ratio = 3 ratio；diluted\_over\_LOQ = 20 ratio；naive\_original\_concentration\_mgL = 62 mg/L；naive\_overestimate\_mgL = 2 mg/L\par
+\noindent\textbf{模型前提：}
+依题面仪器线性、标准态和零背景假设；双路径数值复算已实现，专家审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-A244 · 荧光各向异性双平行偏振信号的G因子校正}
+\noindent\textbf{题目}\par
+偏振荧光光谱仪测得样品甲平行通道计数I∥=360.0、垂直通道I⊥=180.0，样品乙I∥=240.0、I⊥=150.0。因光路探测效率差异，经标定需乘垂直信号校正因子G=1.200，即I⊥,corr=G I⊥。在忽略背景与偏振串扰条件下，荧光各向异性r=(I∥−G I⊥)/(I∥+2G I⊥)，偏振度P=(I∥−G I⊥)/(I∥+G I⊥)。求两样品的修正垂直信号、r、P、总强度I∥+2GI⊥，两样品r差、r甲/r乙，以及从P甲经r=2P/(3−P)重算的r甲。强调G是响应比例而不是荧光量子产率。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **分析条件与样品状态**：偏振荧光光谱仪测得样品甲平行通道计数I∥=360.0、垂直通道I⊥=180.0，样品乙I∥=240.0、I⊥=150.0。因光路探测效率差异，经标定需乘垂直信号校正因子G=1.200，即I⊥,corr=G I⊥。在忽略背景与偏振串扰条件下，荧光各向异性r=(I∥−G I⊥)/(I∥+2G I⊥)，偏振度P=(I∥−G I⊥)/(I∥+G I⊥)。求两样品的修正垂直信号、r、P、总强度I∥+2GI⊥，两样品r差、r甲/r乙，以及从P甲经r=2P/(3−P)重算的r甲。强调G是响应比例而不是荧光量子产率。
+\item **由仪器观测反演量值的方程**：J⊥=GI⊥；r=(I∥−J⊥)/(I∥+2J⊥)；P=(I∥−J⊥)/(I∥+J⊥)。
+\item 逐一确定原液、定容后溶液、仪器原始信号与基体或空白贡献的区别，并标明活动度或浓度单位。
+\item 先求主校正、校准常数和第一组结果：corrected\_perpendicular\_A=216.00000000000 counts；corrected\_perpendicular\_B=180.00000000000 counts；anisotropy\_A=0.18181818181818 ratio。
+\item 依次求得样本浓度、相对分率或谱线指标：anisotropy\_B=0.10000000000000 ratio；polarization\_A=0.25000000000000 ratio；polarization\_B=0.14285714285714 ratio。
+\item 剩余相互独立输出与回代数值：total\_intensity\_A=792.00000000000 counts；total\_intensity\_B=600.00000000000 counts；anisotropy\_difference\_A\_minus\_B=0.081818181818182 ratio；anisotropy\_ratio\_A\_B=1.8181818181818 ratio；rA\_from\_P=0.18181818181818 ratio。
+\item 将结果代回实际观测模型，并核对标样、稀释、单位和统计归一；所算物理量不应超出本题的仪器量程。
+\item 如存在非线性基体效应、光谱峰重叠、浓度依赖活度或离子对，题设反演公式可能不再有效。
+\item 用与原解不同的代数或数字表达式独立复算数值，按1e−9相对误差容限审校全部答案。
+\item 初步质检不等同第三方独立实验认证，题干科学性、原创性与版权需专家核定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+corrected\_perpendicular\_A = 216 counts；corrected\_perpendicular\_B = 180 counts；anisotropy\_A = 0.181818182 ratio；anisotropy\_B = 0.1 ratio；polarization\_A = 0.25 ratio；polarization\_B = 0.142857143 ratio；total\_intensity\_A = 792 counts；total\_intensity\_B = 600 counts；anisotropy\_difference\_A\_minus\_B = 0.0818181818 ratio；anisotropy\_ratio\_A\_B = 1.81818182 ratio；rA\_from\_P = 0.181818182 ratio\par
+\noindent\textbf{模型前提：}
+依题面仪器线性、标准态和零背景假设；双路径数值复算已实现，专家审查未完成。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{有机化学}
