@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至16辑 (1018题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至16辑 (1038题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -22741,6 +22741,236 @@ measured\_spike\_increment\_mgL = 1.9 mg/L；recovery\_fraction = 0.95 fraction�
 理想计量与仪器线性假设；第二路径数值复算不代表实验和原创性专家批准。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-A255 · 强酸滴定Gran函数零点外推的酸浓度}
+\noindent\textbf{题目}\par
+取25.00 mL理想强一元酸HA，用NaOH 0.1000 mol/L滴定。在等当点前定义Gran函数G=(Va+Vb)10\textasciicircum{}(−pH)=CaVa−CbVb（两体积按mL，G按mmol）。在加碱5.000及10.00 mL时，测得G分别为1.500和1.000 mmol，且水自身离解、活度偏差与电极结电势均可忽略。求Gran图斜率、截距、等当体积、原样酸浓度、初始酸mol量、两点的氢离子浓度与pH、5与10 mL时的中和比例、10 mL时未反应的酸物质的量。应从线性外推得到未知量，而不是将第二个测量点当等当点。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题意与分析方法适用假设：取25.00 mL理想强一元酸HA，用NaOH 0.1000 mol/L滴定。在等当点前定义Gran函数G=(Va+Vb)10\textasciicircum{}(−pH)=CaVa−CbVb（两体积按mL，G按mmol）。在加碱5.000及10.00 mL时，测得G分别为1.500和1.000 mmol，且水自身离解、活度偏差与电极结电势均可忽略。求Gran图斜率、截距、等当体积、原样酸浓度、初始酸mol量、两点的氢离子浓度与pH、5与10 mL时的中和比例、10 mL时未反应的酸物质的量。应从线性外推得到未知量，而不是将第二个测量点当等当点。
+\item 观测值到未知量的物理方程：G=intercept−Cb V，Veq=intercept/Cb；[H+]=G/(Va+Vb)。
+\item 区分试剂空白、原样与加标样的体积和物质的量，以标准态活动度或正确单位给定仪器响应。
+\item 代数联立求解斜率、矩阵响应或浓度，不使用循环代入的错误单位；在各仪器模型中核对可逆性与线性。
+\item 计算首组量：slope = -0.1000000000000 mmol/mL；intercept = 2.000000000000 mmol；equivalence\_mL = 20.00000000000 mL。
+\item 继续计算各相关浓度、信号或颗粒量：original\_acid\_M = 0.08000000000000 mol/L；acid\_mol = 0.002000000000000 mol；H\_at5\_M = 0.05000000000000 mol/L；H\_at10\_M = 0.02857142857143 mol/L。
+\item 其余答案和回代：pH\_at5 = 1.301029995664 pH；pH\_at10 = 1.544068044350 pH；neutralized\_at5 = 0.2500000000000 fraction；neutralized\_at10 = 0.5000000000000 fraction；acid\_remaining\_at10 = 0.001000000000000 mol。
+\item 将所有未知值代回滴定、吸收谱、电位、扩散或热量守恒方程，确认数据无负值且原始实测信号复现。
+\item 独立数值实现复核所有字段，采用1e−9相对误差限；实验误差仍须按现场数据单独处理。
+\item 本题仍处于人工科学与原创性审阅前的编辑阶段，不作正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+slope = -0.1 mmol/mL；intercept = 2 mmol；equivalence\_mL = 20 mL；original\_acid\_M = 0.08 mol/L；acid\_mol = 0.002 mol；H\_at5\_M = 0.05 mol/L；H\_at10\_M = 0.0285714286 mol/L；pH\_at5 = 1.30103 pH；pH\_at10 = 1.54406804 pH；neutralized\_at5 = 0.25 fraction；neutralized\_at10 = 0.5 fraction；acid\_remaining\_at10 = 0.001 mol\par
+\noindent\textbf{模型前提：}
+仅在给定线性仪器模型和理想计量条件下有效；专家实验核验未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-A256 · 同位素稀释质谱的天然样–富集标记混合比}
+\noindent\textbf{题目}\par
+某元素X的天然样重同位素丰度为0.2000，富集标记样重同位素丰度为0.9000。向原始未知样加入1.000×10⁻⁶ mol已知标记X，混合后质谱重/轻离子比经质量歧视校正为1.000，故混合重丰度为0.5000。忽略同位素分馏、化学回收损失与其他同量异位干扰。由同位素重原子守恒求原样元素量与标记量比例、原样与总混合mol、混合重/轻同位素mol、原样与标记分别贡献的重原子mol、混合重丰度、标记对总元素摩尔数分率、峰比回代及当元素摩尔质量为100.0 g/mol时原样元素质量(μg)。不可直接把重离子峰面积当原样数量。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题意与分析方法适用假设：某元素X的天然样重同位素丰度为0.2000，富集标记样重同位素丰度为0.9000。向原始未知样加入1.000×10⁻⁶ mol已知标记X，混合后质谱重/轻离子比经质量歧视校正为1.000，故混合重丰度为0.5000。忽略同位素分馏、化学回收损失与其他同量异位干扰。由同位素重原子守恒求原样元素量与标记量比例、原样与总混合mol、混合重/轻同位素mol、原样与标记分别贡献的重原子mol、混合重丰度、标记对总元素摩尔数分率、峰比回代及当元素摩尔质量为100.0 g/mol时原样元素质量(μg)。不可直接把重离子峰面积当原样数量。
+\item 观测值到未知量的物理方程：pMix=(pN nX+pS nS)/(nX+nS)，nX=nS(pS−pMix)/(pMix−pN)。
+\item 区分试剂空白、原样与加标样的体积和物质的量，以标准态活动度或正确单位给定仪器响应。
+\item 代数联立求解斜率、矩阵响应或浓度，不使用循环代入的错误单位；在各仪器模型中核对可逆性与线性。
+\item 计算首组量：native\_spike\_ratio = 1.333333333333 ratio；native\_X\_mol = 0.000001333333333333 mol；total\_mol = 0.000002333333333333 mol。
+\item 继续计算各相关浓度、信号或颗粒量：mixed\_heavy\_mol = 0.000001166666666667 mol；mixed\_light\_mol = 0.000001166666666667 mol；native\_heavy\_mol = 2.666666666667e-7 mol；spike\_heavy\_mol = 9.000000000000e-7 mol。
+\item 其余答案和回代：heavy\_fraction = 0.5000000000000 fraction；spike\_fraction = 0.4285714285714 fraction；peak\_ratio = 1.000000000000 ratio；native\_mass\_ug = 133.3333333333 ug。
+\item 将所有未知值代回滴定、吸收谱、电位、扩散或热量守恒方程，确认数据无负值且原始实测信号复现。
+\item 独立数值实现复核所有字段，采用1e−9相对误差限；实验误差仍须按现场数据单独处理。
+\item 本题仍处于人工科学与原创性审阅前的编辑阶段，不作正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+native\_spike\_ratio = 1.33333333 ratio；native\_X\_mol = 1.33333333e-06 mol；total\_mol = 2.33333333e-06 mol；mixed\_heavy\_mol = 1.16666667e-06 mol；mixed\_light\_mol = 1.16666667e-06 mol；native\_heavy\_mol = 2.66666667e-07 mol；spike\_heavy\_mol = 9e-07 mol；heavy\_fraction = 0.5 fraction；spike\_fraction = 0.428571429 fraction；peak\_ratio = 1 ratio；native\_mass\_ug = 133.333333 ug\par
+\noindent\textbf{模型前提：}
+仅在给定线性仪器模型和理想计量条件下有效；专家实验核验未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-A257 · Stern–Volmer动态荧光淬灭强度和寿命定量}
+\noindent\textbf{题目}\par
+某发光分子的无淬灭强度I0=1000.0任意单位、寿命τ0=5.000 ns，淬灭剂自由浓度由外储液池固定为0.01000或0.05000 M。假设只有动态碰撞淬灭，kq=2.000×10⁹ L/(mol s)，没有静态复合物、内滤效应与基体变化。遵从I0/I=τ0/τ=1+kqτ0[Q]。求Stern–Volmer斜率、两状态强度比与实际强度、两状态寿命、较低淬灭浓度相对高浓度的强度和寿命比、两状态相对未淬灭的量子产率因子，以及高淬灭浓度额外非辐射衰变速率。必须区分动态寿命变化与静态淬灭情况。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题意与分析方法适用假设：某发光分子的无淬灭强度I0=1000.0任意单位、寿命τ0=5.000 ns，淬灭剂自由浓度由外储液池固定为0.01000或0.05000 M。假设只有动态碰撞淬灭，kq=2.000×10⁹ L/(mol s)，没有静态复合物、内滤效应与基体变化。遵从I0/I=τ0/τ=1+kqτ0[Q]。求Stern–Volmer斜率、两状态强度比与实际强度、两状态寿命、较低淬灭浓度相对高浓度的强度和寿命比、两状态相对未淬灭的量子产率因子，以及高淬灭浓度额外非辐射衰变速率。必须区分动态寿命变化与静态淬灭情况。
+\item 观测值到未知量的物理方程：KSV=kqτ0；I=I0/(1+KSVQ)，τ=τ0/(1+KSVQ)。
+\item 区分试剂空白、原样与加标样的体积和物质的量，以标准态活动度或正确单位给定仪器响应。
+\item 代数联立求解斜率、矩阵响应或浓度，不使用循环代入的错误单位；在各仪器模型中核对可逆性与线性。
+\item 计算首组量：Ksv = 10.00000000000 M\textasciicircum{}-1；SV\_atQ1 = 1.100000000000 ratio；SV\_atQ2 = 1.500000000000 ratio。
+\item 继续计算各相关浓度、信号或颗粒量：intensity\_Q1 = 909.0909090909 AU；intensity\_Q2 = 666.6666666667 AU；lifetime\_Q1\_ns = 4.545454545455 ns；lifetime\_Q2\_ns = 3.333333333333 ns。
+\item 其余答案和回代：intensity\_Q1\_over\_Q2 = 1.363636363636 ratio；lifetime\_Q1\_over\_Q2 = 1.363636363636 ratio；yield\_factor\_Q1 = 0.9090909090909 fraction；yield\_factor\_Q2 = 0.6666666666667 fraction；extra\_decay\_rate\_Q2 = 100000000.0000 s\textasciicircum{}-1。
+\item 将所有未知值代回滴定、吸收谱、电位、扩散或热量守恒方程，确认数据无负值且原始实测信号复现。
+\item 独立数值实现复核所有字段，采用1e−9相对误差限；实验误差仍须按现场数据单独处理。
+\item 本题仍处于人工科学与原创性审阅前的编辑阶段，不作正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Ksv = 10 M\textasciicircum{}-1；SV\_atQ1 = 1.1 ratio；SV\_atQ2 = 1.5 ratio；intensity\_Q1 = 909.090909 AU；intensity\_Q2 = 666.666667 AU；lifetime\_Q1\_ns = 4.54545455 ns；lifetime\_Q2\_ns = 3.33333333 ns；intensity\_Q1\_over\_Q2 = 1.36363636 ratio；lifetime\_Q1\_over\_Q2 = 1.36363636 ratio；yield\_factor\_Q1 = 0.909090909 fraction；yield\_factor\_Q2 = 0.666666667 fraction；extra\_decay\_rate\_Q2 = 100000000 s\textasciicircum{}-1\par
+\noindent\textbf{模型前提：}
+仅在给定线性仪器模型和理想计量条件下有效；专家实验核验未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-A258 · 单价离子选择电极加标电位差反演原样浓度}
+\noindent\textbf{题目}\par
+298.15 K某单价阳离子电极满足E=E0+Slog10 c，已标定斜率S=59.16 mV/decade。原样10.00 mL，先读E1=100.00 mV；随后加入1.000 mL、0.01000 mol/L标准液，测得E2=110.00 mV，此时总体积11.00 mL。假设两次测量均能立即平衡、活动系数和电极斜率不变。令r=10\textasciicircum{}[(E2−E1)/S]=c后/c前。求r、未知原样浓度、加标后浓度、稀释后原样贡献、标液贡献、加入标准mol、原样中待测离子mol、样品稀释系数、实际电位增量及最终浓度比回代。求解时应包含额外1 mL稀释，而不能直接用Δc=标准浓度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题意与分析方法适用假设：298.15 K某单价阳离子电极满足E=E0+Slog10 c，已标定斜率S=59.16 mV/decade。原样10.00 mL，先读E1=100.00 mV；随后加入1.000 mL、0.01000 mol/L标准液，测得E2=110.00 mV，此时总体积11.00 mL。假设两次测量均能立即平衡、活动系数和电极斜率不变。令r=10\textasciicircum{}[(E2−E1)/S]=c后/c前。求r、未知原样浓度、加标后浓度、稀释后原样贡献、标液贡献、加入标准mol、原样中待测离子mol、样品稀释系数、实际电位增量及最终浓度比回代。求解时应包含额外1 mL稀释，而不能直接用Δc=标准浓度。
+\item 观测值到未知量的物理方程：r=(10Cx+Cstd)/(11Cx)，Cx=Cstd/(11r−10)。
+\item 区分试剂空白、原样与加标样的体积和物质的量，以标准态活动度或正确单位给定仪器响应。
+\item 代数联立求解斜率、矩阵响应或浓度，不使用循环代入的错误单位；在各仪器模型中核对可逆性与线性。
+\item 计算首组量：r = 1.475819112995 ratio；original\_c\_M = 0.001604103877006 mol/L；post\_spike\_c\_M = 0.002367367160915 mol/L。
+\item 继续计算各相关浓度、信号或颗粒量：diluted\_sample\_c\_M = 0.001458276251824 mol/L；spike\_contribution\_c\_M = 0.0009090909090909 mol/L；added\_standard\_mol = 0.00001000000000000 mol；initial\_sample\_mol = 0.00001604103877006 mol。
+\item 其余答案和回代：dilution\_factor = 0.9090909090909 ratio；delta\_E\_mV = 10.00000000000 mV；ratio\_backcheck = 1.475819112995 ratio。
+\item 将所有未知值代回滴定、吸收谱、电位、扩散或热量守恒方程，确认数据无负值且原始实测信号复现。
+\item 独立数值实现复核所有字段，采用1e−9相对误差限；实验误差仍须按现场数据单独处理。
+\item 本题仍处于人工科学与原创性审阅前的编辑阶段，不作正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+r = 1.47581911 ratio；original\_c\_M = 0.00160410388 mol/L；post\_spike\_c\_M = 0.00236736716 mol/L；diluted\_sample\_c\_M = 0.00145827625 mol/L；spike\_contribution\_c\_M = 0.000909090909 mol/L；added\_standard\_mol = 1e-05 mol；initial\_sample\_mol = 1.60410388e-05 mol；dilution\_factor = 0.909090909 ratio；delta\_E\_mV = 10 mV；ratio\_backcheck = 1.47581911 ratio\par
+\noindent\textbf{模型前提：}
+仅在给定线性仪器模型和理想计量条件下有效；专家实验核验未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-A259 · 两点玻璃电极校准未知pH与氢离子活度}
+\noindent\textbf{题目}\par
+恒温玻璃pH电极响应E=a+b pH，测量pH 4.000缓冲液电位180.00 mV，pH 7.000缓冲液0.000 mV；未知液电位75.00 mV。忽略液接电势、漂移、噪声和因温度变化导致的理论Nernst斜率变化，假设三次均稳定平衡。求两点标定斜率与截距、未知样pH、两个校准点电位回代、未知电位回代、氢离子活动度、其相对pH7的活动度比、校准斜率绝对值相对59.16 mV/pH理论值的偏差百分比及pH 5.000时预测电位。必须区分电极定义的活动度pH和未经活度修正的游离浓度。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题意与分析方法适用假设：恒温玻璃pH电极响应E=a+b pH，测量pH 4.000缓冲液电位180.00 mV，pH 7.000缓冲液0.000 mV；未知液电位75.00 mV。忽略液接电势、漂移、噪声和因温度变化导致的理论Nernst斜率变化，假设三次均稳定平衡。求两点标定斜率与截距、未知样pH、两个校准点电位回代、未知电位回代、氢离子活动度、其相对pH7的活动度比、校准斜率绝对值相对59.16 mV/pH理论值的偏差百分比及pH 5.000时预测电位。必须区分电极定义的活动度pH和未经活度修正的游离浓度。
+\item 观测值到未知量的物理方程：b=(E7−E4)/(7−4)，a=E4−4b，pH=(Eunk−a)/b。
+\item 区分试剂空白、原样与加标样的体积和物质的量，以标准态活动度或正确单位给定仪器响应。
+\item 代数联立求解斜率、矩阵响应或浓度，不使用循环代入的错误单位；在各仪器模型中核对可逆性与线性。
+\item 计算首组量：slope = -60.00000000000 mV/pH；intercept = 420.0000000000 mV；unknown\_pH = 5.750000000000 pH。
+\item 继续计算各相关浓度、信号或颗粒量：E4\_check = 180.0000000000 mV；E7\_check = 0.000000000000 mV；unknown\_E\_check = 75.00000000000 mV；unknown\_H\_activity = 0.000001778279410039 activity。
+\item 其余答案和回代：H\_ratio\_to\_pH7 = 17.78279410039 ratio；percent\_slope\_difference = 1.419878296146 percent；predicted\_E\_pH5 = 120.0000000000 mV。
+\item 将所有未知值代回滴定、吸收谱、电位、扩散或热量守恒方程，确认数据无负值且原始实测信号复现。
+\item 独立数值实现复核所有字段，采用1e−9相对误差限；实验误差仍须按现场数据单独处理。
+\item 本题仍处于人工科学与原创性审阅前的编辑阶段，不作正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+slope = -60 mV/pH；intercept = 420 mV；unknown\_pH = 5.75 pH；E4\_check = 180 mV；E7\_check = 0 mV；unknown\_E\_check = 75 mV；unknown\_H\_activity = 1.77827941e-06 activity；H\_ratio\_to\_pH7 = 17.7827941 ratio；percent\_slope\_difference = 1.4198783 percent；predicted\_E\_pH5 = 120 mV\par
+\noindent\textbf{模型前提：}
+仅在给定线性仪器模型和理想计量条件下有效；专家实验核验未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-A260 · FTIR透射率–吸光度的Beer–Lambert关系}
+\noindent\textbf{题目}\par
+在FTIR孤立吸收峰上，两种相同物质浓度不同的样品均为均匀薄层，光程l=0.01000 cm。样品1浓度0.1000 mol/L时透射率T1=0.5000，样品2浓度为0.2000 mol/L。假设没有散射、反射修正及浓度引起摩尔吸光系数变化，Beer–Lambert A=−log10T=εlc成立。求A1、ε、A2、T2、两样品吸收光分率1−T、浓度比、吸光度比、第二与第一透射率之比和两个样品自然对数光学厚度τ=−lnT。不得把透射率随浓度错误近似为直接线性关系。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题意与分析方法适用假设：在FTIR孤立吸收峰上，两种相同物质浓度不同的样品均为均匀薄层，光程l=0.01000 cm。样品1浓度0.1000 mol/L时透射率T1=0.5000，样品2浓度为0.2000 mol/L。假设没有散射、反射修正及浓度引起摩尔吸光系数变化，Beer–Lambert A=−log10T=εlc成立。求A1、ε、A2、T2、两样品吸收光分率1−T、浓度比、吸光度比、第二与第一透射率之比和两个样品自然对数光学厚度τ=−lnT。不得把透射率随浓度错误近似为直接线性关系。
+\item 观测值到未知量的物理方程：A1=−log10(0.5)，ε=A1/(0.01×0.1)，A2=2A1，T2=T1²。
+\item 区分试剂空白、原样与加标样的体积和物质的量，以标准态活动度或正确单位给定仪器响应。
+\item 代数联立求解斜率、矩阵响应或浓度，不使用循环代入的错误单位；在各仪器模型中核对可逆性与线性。
+\item 计算首组量：A1 = 0.3010299956640 AU；epsilon = 301.0299956640 L/(mol cm)；A2 = 0.6020599913280 AU。
+\item 继续计算各相关浓度、信号或颗粒量：T2 = 0.2500000000000 fraction；absorbed\_1 = 0.5000000000000 fraction；absorbed\_2 = 0.7500000000000 fraction；concentration\_ratio = 2.000000000000 ratio。
+\item 其余答案和回代：absorbance\_ratio = 2.000000000000 ratio；transmittance\_ratio = 0.5000000000000 ratio；optical\_depth1 = 0.6931471805599 neper；optical\_depth2 = 1.386294361120 neper。
+\item 将所有未知值代回滴定、吸收谱、电位、扩散或热量守恒方程，确认数据无负值且原始实测信号复现。
+\item 独立数值实现复核所有字段，采用1e−9相对误差限；实验误差仍须按现场数据单独处理。
+\item 本题仍处于人工科学与原创性审阅前的编辑阶段，不作正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+A1 = 0.301029996 AU；epsilon = 301.029996 L/(mol cm)；A2 = 0.602059991 AU；T2 = 0.25 fraction；absorbed\_1 = 0.5 fraction；absorbed\_2 = 0.75 fraction；concentration\_ratio = 2 ratio；absorbance\_ratio = 2 ratio；transmittance\_ratio = 0.5 ratio；optical\_depth1 = 0.693147181 neper；optical\_depth2 = 1.38629436 neper\par
+\noindent\textbf{模型前提：}
+仅在给定线性仪器模型和理想计量条件下有效；专家实验核验未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-A261 · 双波长UV同时定量X和Y的二元方程反演}
+\noindent\textbf{题目}\par
+相同1 cm光程的理想混合溶液只含两种有色组分X、Y。扣空白后两波长吸光度A1=100.0cX+40.00cY=0.1800，A2=20.00cX+80.00cY=0.1200，其中浓度以mol/L计，比例常数具有L/mol量纲。假设两组分满足吸光度可加性，无互反应且波长不随浓度漂移。求响应系数矩阵行列式、cX和cY、两个波长各组分吸光贡献、两波长总吸光回代、两种组分浓度比及第一波长X的吸光贡献占比。必须用矩阵联立求解，不能把混合吸光误当单一物质标准曲线。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题意与分析方法适用假设：相同1 cm光程的理想混合溶液只含两种有色组分X、Y。扣空白后两波长吸光度A1=100.0cX+40.00cY=0.1800，A2=20.00cX+80.00cY=0.1200，其中浓度以mol/L计，比例常数具有L/mol量纲。假设两组分满足吸光度可加性，无互反应且波长不随浓度漂移。求响应系数矩阵行列式、cX和cY、两个波长各组分吸光贡献、两波长总吸光回代、两种组分浓度比及第一波长X的吸光贡献占比。必须用矩阵联立求解，不能把混合吸光误当单一物质标准曲线。
+\item 观测值到未知量的物理方程：det=100×80−40×20，cX=(80A1−40A2)/det，cY=(100A2−20A1)/det。
+\item 区分试剂空白、原样与加标样的体积和物质的量，以标准态活动度或正确单位给定仪器响应。
+\item 代数联立求解斜率、矩阵响应或浓度，不使用循环代入的错误单位；在各仪器模型中核对可逆性与线性。
+\item 计算首组量：det = 7200.000000000 coeff2；cX = 0.001333333333333 mol/L；cY = 0.001166666666667 mol/L。
+\item 继续计算各相关浓度、信号或颗粒量：X\_A1 = 0.1333333333333 AU；Y\_A1 = 0.04666666666667 AU；X\_A2 = 0.02666666666667 AU；Y\_A2 = 0.09333333333333 AU。
+\item 其余答案和回代：A1\_back = 0.1800000000000 AU；A2\_back = 0.1200000000000 AU；concentration\_X\_over\_Y = 1.142857142857 ratio；X\_A1\_fraction = 0.7407407407407 fraction。
+\item 将所有未知值代回滴定、吸收谱、电位、扩散或热量守恒方程，确认数据无负值且原始实测信号复现。
+\item 独立数值实现复核所有字段，采用1e−9相对误差限；实验误差仍须按现场数据单独处理。
+\item 本题仍处于人工科学与原创性审阅前的编辑阶段，不作正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+det = 7200 coeff2；cX = 0.00133333333 mol/L；cY = 0.00116666667 mol/L；X\_A1 = 0.133333333 AU；Y\_A1 = 0.0466666667 AU；X\_A2 = 0.0266666667 AU；Y\_A2 = 0.0933333333 AU；A1\_back = 0.18 AU；A2\_back = 0.12 AU；concentration\_X\_over\_Y = 1.14285714 ratio；X\_A1\_fraction = 0.740740741 fraction\par
+\noindent\textbf{模型前提：}
+仅在给定线性仪器模型和理想计量条件下有效；专家实验核验未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-A262 · DSC参比熔化峰面积校正的未知样比焓}
+\noindent\textbf{题目}\par
+DSC仪器热流积分给出任意面积单位，真实热量Q=kA。校准样品质量0.01000 g、已知相变比焓200.0 J/g，参比峰面积50.00 u；未知样品质量0.02000 g，峰面积75.00 u。假设相同热流响应、同种基线处理且不存在热滞后。求参比吸收热量、面积转热量灵敏度、未知样吸热、其质量比焓、未知对参比比焓比、峰面积比、样品质量比、错误把面积比直接当比焓比所产生的假比焓及相对高估、每摩尔重复单元M=100.0 g/mol对应的相变焓。注意面积信号不经质量归一不能直接比材料比焓。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题意与分析方法适用假设：DSC仪器热流积分给出任意面积单位，真实热量Q=kA。校准样品质量0.01000 g、已知相变比焓200.0 J/g，参比峰面积50.00 u；未知样品质量0.02000 g，峰面积75.00 u。假设相同热流响应、同种基线处理且不存在热滞后。求参比吸收热量、面积转热量灵敏度、未知样吸热、其质量比焓、未知对参比比焓比、峰面积比、样品质量比、错误把面积比直接当比焓比所产生的假比焓及相对高估、每摩尔重复单元M=100.0 g/mol对应的相变焓。注意面积信号不经质量归一不能直接比材料比焓。
+\item 观测值到未知量的物理方程：Qref=mrefHref，k=Qref/Aref，Hunk=kAunk/munk。
+\item 区分试剂空白、原样与加标样的体积和物质的量，以标准态活动度或正确单位给定仪器响应。
+\item 代数联立求解斜率、矩阵响应或浓度，不使用循环代入的错误单位；在各仪器模型中核对可逆性与线性。
+\item 计算首组量：reference\_heat\_J = 2.000000000000 J；sensitivity\_J\_u = 0.04000000000000 J/u；unknown\_heat\_J = 3.000000000000 J。
+\item 继续计算各相关浓度、信号或颗粒量：specific\_unknown\_Jg = 150.0000000000 J/g；specific\_ratio = 0.7500000000000 ratio；area\_ratio = 1.500000000000 ratio；mass\_ratio = 2.000000000000 ratio。
+\item 其余答案和回代：naive\_specific\_Jg = 300.0000000000 J/g；naive\_overestimate = 1.000000000000 fraction；molar\_transition\_Jmol = 15000.00000000 J/mol。
+\item 将所有未知值代回滴定、吸收谱、电位、扩散或热量守恒方程，确认数据无负值且原始实测信号复现。
+\item 独立数值实现复核所有字段，采用1e−9相对误差限；实验误差仍须按现场数据单独处理。
+\item 本题仍处于人工科学与原创性审阅前的编辑阶段，不作正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+reference\_heat\_J = 2 J；sensitivity\_J\_u = 0.04 J/u；unknown\_heat\_J = 3 J；specific\_unknown\_Jg = 150 J/g；specific\_ratio = 0.75 ratio；area\_ratio = 1.5 ratio；mass\_ratio = 2 ratio；naive\_specific\_Jg = 300 J/g；naive\_overestimate = 1 fraction；molar\_transition\_Jmol = 15000 J/mol\par
+\noindent\textbf{模型前提：}
+仅在给定线性仪器模型和理想计量条件下有效；专家实验核验未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-A263 · DLS电场相关衰减系数反演Stokes–Einstein半径}
+\noindent\textbf{题目}\par
+298.15 K水中球状单分散颗粒的DLS电场相关函数g1(t)=exp(−Γt)，Γ=1000 s⁻¹。激光真空波长λ0=633.0 nm，折射率n=1.333，散射角θ=90.00°。动量转移波矢q=(4πn/λ0)sin(θ/2)，扩散系数D=Γ/q²，水黏度η=0.001000 Pa·s。由Stokes–Einstein公式Rh=kBT/(6πηD)求q、q²、D、水合半径(m和nm)、电场衰减时间、D相对1e−12 m²/s倍数、水合直径、如果Γ加倍则水合半径的新值及原半径/新半径比。忽略非球形、聚集、离子强度及多分散影响。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题意与分析方法适用假设：298.15 K水中球状单分散颗粒的DLS电场相关函数g1(t)=exp(−Γt)，Γ=1000 s⁻¹。激光真空波长λ0=633.0 nm，折射率n=1.333，散射角θ=90.00°。动量转移波矢q=(4πn/λ0)sin(θ/2)，扩散系数D=Γ/q²，水黏度η=0.001000 Pa·s。由Stokes–Einstein公式Rh=kBT/(6πηD)求q、q²、D、水合半径(m和nm)、电场衰减时间、D相对1e−12 m²/s倍数、水合直径、如果Γ加倍则水合半径的新值及原半径/新半径比。忽略非球形、聚集、离子强度及多分散影响。
+\item 观测值到未知量的物理方程：D=Γ/q²，Rh=kBT q²/(6πηΓ)。
+\item 区分试剂空白、原样与加标样的体积和物质的量，以标准态活动度或正确单位给定仪器响应。
+\item 代数联立求解斜率、矩阵响应或浓度，不使用循环代入的错误单位；在各仪器模型中核对可逆性与线性。
+\item 计算首组量：q = 18712047.25613 m\textasciicircum{}-1；q\_squared = 3.501407125156e+14 m\textasciicircum{}-2；D = 2.855994645168e-12 m2/s。
+\item 继续计算各相关浓度、信号或颗粒量：Rh\_m = 7.646445271318e-8 m；Rh\_nm = 76.46445271318 nm；decay\_time = 0.001000000000000 s；D\_to\_1eMinus12 = 2.855994645168 ratio。
+\item 其余答案和回代：diameter\_nm = 152.9289054264 nm；Rh\_double\_Gamma\_nm = 38.23222635659 nm；radius\_ratio = 2.000000000000 ratio。
+\item 将所有未知值代回滴定、吸收谱、电位、扩散或热量守恒方程，确认数据无负值且原始实测信号复现。
+\item 独立数值实现复核所有字段，采用1e−9相对误差限；实验误差仍须按现场数据单独处理。
+\item 本题仍处于人工科学与原创性审阅前的编辑阶段，不作正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+q = 18712047.3 m\textasciicircum{}-1；q\_squared = 3.50140713e+14 m\textasciicircum{}-2；D = 2.85599465e-12 m2/s；Rh\_m = 7.64644527e-08 m；Rh\_nm = 76.4644527 nm；decay\_time = 0.001 s；D\_to\_1eMinus12 = 2.85599465 ratio；diameter\_nm = 152.928905 nm；Rh\_double\_Gamma\_nm = 38.2322264 nm；radius\_ratio = 2 ratio\par
+\noindent\textbf{模型前提：}
+仅在给定线性仪器模型和理想计量条件下有效；专家实验核验未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-A264 · 碳酸盐与碳酸氢盐双终点滴定的组分清点}
+\noindent\textbf{题目}\par
+取25.00 mL仅含Na₂CO₃和NaHCO₃的理想样品，以0.1000 mol/L HCl滴定。在酚酞第一终点共用酸5.000 mL，此时全部CO₃²⁻转化成HCO₃⁻；在甲基橙第二终点，累计耗酸15.00 mL，全部碳酸氢根形成H₂CO₃*。假定CO₂不逸出、没有额外碱性物质。求两个终点总酸用量mol、初始碳酸根和碳酸氢根mol及原样浓度、总无机碳浓度、两组分摩尔比、Na⁺初始浓度、第一至第二终点新增酸mol、两碳酸盐质量g(MNa2CO3=105.988、MNaHCO3=84.007 g/mol)与总需HCl摩尔当量复核。须用第二终点累计体积而非追加体积。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 题意与分析方法适用假设：取25.00 mL仅含Na₂CO₃和NaHCO₃的理想样品，以0.1000 mol/L HCl滴定。在酚酞第一终点共用酸5.000 mL，此时全部CO₃²⁻转化成HCO₃⁻；在甲基橙第二终点，累计耗酸15.00 mL，全部碳酸氢根形成H₂CO₃*。假定CO₂不逸出、没有额外碱性物质。求两个终点总酸用量mol、初始碳酸根和碳酸氢根mol及原样浓度、总无机碳浓度、两组分摩尔比、Na⁺初始浓度、第一至第二终点新增酸mol、两碳酸盐质量g(MNa2CO3=105.988、MNaHCO3=84.007 g/mol)与总需HCl摩尔当量复核。须用第二终点累计体积而非追加体积。
+\item 观测值到未知量的物理方程：nCO3=Cacid V1，nHCO3=Cacid(V2−2V1)，nNa=2nCO3+nHCO3。
+\item 区分试剂空白、原样与加标样的体积和物质的量，以标准态活动度或正确单位给定仪器响应。
+\item 代数联立求解斜率、矩阵响应或浓度，不使用循环代入的错误单位；在各仪器模型中核对可逆性与线性。
+\item 计算首组量：acid\_first\_mol = 0.0005000000000000 mol；acid\_total\_mol = 0.001500000000000 mol；carbonate\_mol = 0.0005000000000000 mol。
+\item 继续计算各相关浓度、信号或颗粒量：bicarbonate\_mol = 0.0005000000000000 mol；carbonate\_M = 0.02000000000000 mol/L；bicarbonate\_M = 0.02000000000000 mol/L；total\_carbon\_M = 0.04000000000000 mol/L。
+\item 其余答案和回代：carbonate\_bicarbonate\_ratio = 1.000000000000 ratio；sodium\_M = 0.06000000000000 mol/L；acid\_added\_after\_first = 0.001000000000000 mol；carbonate\_mass\_g = 0.05299400000000 g；bicarbonate\_mass\_g = 0.04200350000000 g；acid\_equivalence\_check = 0.001500000000000 mol。
+\item 将所有未知值代回滴定、吸收谱、电位、扩散或热量守恒方程，确认数据无负值且原始实测信号复现。
+\item 独立数值实现复核所有字段，采用1e−9相对误差限；实验误差仍须按现场数据单独处理。
+\item 本题仍处于人工科学与原创性审阅前的编辑阶段，不作正式批准。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+acid\_first\_mol = 0.0005 mol；acid\_total\_mol = 0.0015 mol；carbonate\_mol = 0.0005 mol；bicarbonate\_mol = 0.0005 mol；carbonate\_M = 0.02 mol/L；bicarbonate\_M = 0.02 mol/L；total\_carbon\_M = 0.04 mol/L；carbonate\_bicarbonate\_ratio = 1 ratio；sodium\_M = 0.06 mol/L；acid\_added\_after\_first = 0.001 mol；carbonate\_mass\_g = 0.052994 g；bicarbonate\_mass\_g = 0.0420035 g；acid\_equivalence\_check = 0.0015 mol\par
+\noindent\textbf{模型前提：}
+仅在给定线性仪器模型和理想计量条件下有效；专家实验核验未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
 \subsection*{有机化学}
 \addcontentsline{toc}{subsection}{第16辑 / 有机化学}
 \Needspace{7\baselineskip}
@@ -22810,6 +23040,236 @@ gel\_critical\_p = 0.707106781 fraction；branching\_p0p6 = 0.72 ratio；branchi
 single\_remain\_fraction = 0.285714286 fraction；single\_recovered\_fraction = 0.714285714 fraction；single\_remain\_mol = 0.00285714286 mol；per\_step\_remain\_fraction = 0.545454545 fraction；triple\_remain\_fraction = 0.162283997 fraction；triple\_remain\_mol = 0.00162283997 mol；triple\_recovered\_fraction = 0.837716003 fraction；improvement\_fraction = 0.123430289 fraction；remaining\_ratio\_triple\_single = 0.567993989 ratio；single\_aqueous\_concentration = 0.0285714286 mol/L\par
 \noindent\textbf{模型前提：}
 全部模型均为题设理想情况；专家学术和原创性审核待完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-O251 · 可逆E/Z光异构化的双向一级动力学与光稳态}
+\noindent\textbf{题目}\par
+某有机烯烃E/Z在恒定单色光照射下发生双向一阶异构化，E→Z的条件速度常数kEZ=0.03000 s⁻¹，Z→E为kZE=0.01000 s⁻¹，外界光强与温度恒定。初始全部是E，合计浓度CT=0.01000 mol/L，不发生二聚、顺反光吸收不均匀和热降解。求总弛豫速度、光稳态Z与E分率、t=20.00 s时Z和E分率及浓度、光稳态两异构体浓度、光稳态Z/E比、达到稳态Z分率的90\%所需时间、弛豫时间常数以及t20时Z/E浓度比。强调两个速率不等且产物会反向光解，不能用单向一级速率解。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **有机结构、反应或链统计模型**：某有机烯烃E/Z在恒定单色光照射下发生双向一阶异构化，E→Z的条件速度常数kEZ=0.03000 s⁻¹，Z→E为kZE=0.01000 s⁻¹，外界光强与温度恒定。初始全部是E，合计浓度CT=0.01000 mol/L，不发生二聚、顺反光吸收不均匀和热降解。求总弛豫速度、光稳态Z与E分率、t=20.00 s时Z和E分率及浓度、光稳态两异构体浓度、光稳态Z/E比、达到稳态Z分率的90\%所需时间、弛豫时间常数以及t20时Z/E浓度比。强调两个速率不等且产物会反向光解，不能用单向一级速率解。
+\item **公式推导的出发点**：z∞=kEZ/(kEZ+kZE)，z(t)=z∞[1−exp(−(kEZ+kZE)t)]，E(t)=CT−Z(t)。
+\item 区分题设的双向与单向反应通道、独立同位素事件、链端统计以及封闭反应器的库存守恒。
+\item 依据速率级数或概率分配列出独立变量；对分子量、溶液体积、反应时间和活度的单位进行一致化。
+\item 主要初始或分配参数：relaxation\_rate = 0.04000000000000 s\textasciicircum{}-1；steady\_Z\_fraction = 0.7500000000000 fraction；steady\_E\_fraction = 0.2500000000000 fraction。
+\item 进一步得到反应产率、聚合统计与机理可观测量：Z\_fraction\_t20 = 0.4130032769121 fraction；E\_fraction\_t20 = 0.5869967230879 fraction；Z\_M\_t20 = 0.004130032769121 mol/L；E\_M\_t20 = 0.005869967230879 mol/L。
+\item 剩余数值答案：steady\_Z\_M = 0.007500000000000 mol/L；steady\_E\_M = 0.002500000000000 mol/L；Z\_E\_steady\_ratio = 3.000000000000 ratio；time\_to90pct\_ss = 57.56462732485 s；relaxation\_time = 25.00000000000 s；Z\_E\_ratio\_t20 = 0.7035870230066 ratio。
+\item 代回底物+产物骨架守恒、统计分率之和、酸碱平均电荷及反应长时极限，核查非负性和范围。
+\item 独立计算路径重新计算全部字段并对照1e−9相对精度阈值，必要时特别处理小概率相近项相减的舍入误差。
+\item 科研模型和真正反应机理的实验验证、跨辑同构审查仍待专家完成，本题不计作已出版审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+relaxation\_rate = 0.04 s\textasciicircum{}-1；steady\_Z\_fraction = 0.75 fraction；steady\_E\_fraction = 0.25 fraction；Z\_fraction\_t20 = 0.413003277 fraction；E\_fraction\_t20 = 0.586996723 fraction；Z\_M\_t20 = 0.00413003277 mol/L；E\_M\_t20 = 0.00586996723 mol/L；steady\_Z\_M = 0.0075 mol/L；steady\_E\_M = 0.0025 mol/L；Z\_E\_steady\_ratio = 3 ratio；time\_to90pct\_ss = 57.5646273 s；relaxation\_time = 25 s；Z\_E\_ratio\_t20 = 0.703587023 ratio\par
+\noindent\textbf{模型前提：}
+题设限制可逆动力学、链节统计及理想体系，专家科学评估及版权审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-O252 · Hammett取代常数对芳香亲核反应速率的指数影响}
+\noindent\textbf{题目}\par
+一系列对位取代芳环的假想亲核取代反应符合Hammett关系log10(kX/kH)=ρσp。给定ρ=+2.000，未取代母体kH=0.01000 s⁻¹；对硝基取代σNO2=+0.7800，对甲氧基取代σOMe=−0.2700。假设所有反应具有相同机理与试剂浓度，只有所给σ差异影响一级速度。求两取代的log10相对速度、相对母体的速度倍率、两种绝对速度常数、两绝对速度比、母体及两取代反应的半衰期、给定t=30 s时两底物剩余分率与对硝基反应相对母体速率倍率。不能将Hammett经验关系直接视为过渡态结构证明。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **有机结构、反应或链统计模型**：一系列对位取代芳环的假想亲核取代反应符合Hammett关系log10(kX/kH)=ρσp。给定ρ=+2.000，未取代母体kH=0.01000 s⁻¹；对硝基取代σNO2=+0.7800，对甲氧基取代σOMe=−0.2700。假设所有反应具有相同机理与试剂浓度，只有所给σ差异影响一级速度。求两取代的log10相对速度、相对母体的速度倍率、两种绝对速度常数、两绝对速度比、母体及两取代反应的半衰期、给定t=30 s时两底物剩余分率与对硝基反应相对母体速率倍率。不能将Hammett经验关系直接视为过渡态结构证明。
+\item **公式推导的出发点**：log10(kX/kH)=ρσ，kX=kH10\textasciicircum{}(ρσ)，t1/2=ln2/k。
+\item 区分题设的双向与单向反应通道、独立同位素事件、链端统计以及封闭反应器的库存守恒。
+\item 依据速率级数或概率分配列出独立变量；对分子量、溶液体积、反应时间和活度的单位进行一致化。
+\item 主要初始或分配参数：log\_relative\_NO2 = 1.560000000000 log10；log\_relative\_OMe = -0.5400000000000 log10；factor\_NO2 = 36.30780547701 ratio。
+\item 进一步得到反应产率、聚合统计与机理可观测量：factor\_OMe = 0.2884031503127 ratio；rate\_NO2\_s = 0.3630780547701 s\textasciicircum{}-1；rate\_OMe\_s = 0.002884031503127 s\textasciicircum{}-1；NO2\_OMe\_ratio = 125.8925411794 ratio。
+\item 剩余数值答案：half\_life\_parent\_s = 69.31471805599 s；half\_life\_NO2\_s = 1.909085860336 s；half\_life\_OMe\_s = 240.3396702874 s；remaining\_NO2\_30 = 0.00001860013641554 fraction；remaining\_OMe\_30 = 0.9171163394958 fraction。
+\item 代回底物+产物骨架守恒、统计分率之和、酸碱平均电荷及反应长时极限，核查非负性和范围。
+\item 独立计算路径重新计算全部字段并对照1e−9相对精度阈值，必要时特别处理小概率相近项相减的舍入误差。
+\item 科研模型和真正反应机理的实验验证、跨辑同构审查仍待专家完成，本题不计作已出版审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+log\_relative\_NO2 = 1.56 log10；log\_relative\_OMe = -0.54 log10；factor\_NO2 = 36.3078055 ratio；factor\_OMe = 0.28840315 ratio；rate\_NO2\_s = 0.363078055 s\textasciicircum{}-1；rate\_OMe\_s = 0.0028840315 s\textasciicircum{}-1；NO2\_OMe\_ratio = 125.892541 ratio；half\_life\_parent\_s = 69.3147181 s；half\_life\_NO2\_s = 1.90908586 s；half\_life\_OMe\_s = 240.33967 s；remaining\_NO2\_30 = 1.86001364e-05 fraction；remaining\_OMe\_30 = 0.917116339 fraction\par
+\noindent\textbf{模型前提：}
+题设限制可逆动力学、链节统计及理想体系，专家科学评估及版权审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-O253 · 酮–烯醇快速预平衡下的亲电捕获有效速率}
+\noindent\textbf{题目}\par
+某酮K与少量烯醇E快速互变，定温下平衡比[E]/[K]=0.2000，两个物种的骨架合计CT0=0.01000 M。只有烯醇与由大储库保持浓度[X]=0.02000 mol/L的亲电试剂X不可逆二级反应，k2=5.000 L/(mol s)，捕获产物不逆转。平衡足够快且整个反应过程K/E比恒定，无其它副反应。求烯醇与酮分率、单独烯醇的拟一级速率、总骨架表观一级速率、60.00 s后底物骨架总剩余浓度、产物浓度与转化率、表观半衰期、初始瞬时产物生成速度、在时间60s的烯醇和酮残余浓度及二者比例。不能将烯醇受反应消耗后的瞬时浓度误作为未受平衡控制的独立指数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **有机结构、反应或链统计模型**：某酮K与少量烯醇E快速互变，定温下平衡比[E]/[K]=0.2000，两个物种的骨架合计CT0=0.01000 M。只有烯醇与由大储库保持浓度[X]=0.02000 mol/L的亲电试剂X不可逆二级反应，k2=5.000 L/(mol s)，捕获产物不逆转。平衡足够快且整个反应过程K/E比恒定，无其它副反应。求烯醇与酮分率、单独烯醇的拟一级速率、总骨架表观一级速率、60.00 s后底物骨架总剩余浓度、产物浓度与转化率、表观半衰期、初始瞬时产物生成速度、在时间60s的烯醇和酮残余浓度及二者比例。不能将烯醇受反应消耗后的瞬时浓度误作为未受平衡控制的独立指数。
+\item **公式推导的出发点**：fE=K/(1+K)，kobs=fE k2[X]，CT(t)=CT0e\textasciicircum{}(−kobst)。
+\item 区分题设的双向与单向反应通道、独立同位素事件、链端统计以及封闭反应器的库存守恒。
+\item 依据速率级数或概率分配列出独立变量；对分子量、溶液体积、反应时间和活度的单位进行一致化。
+\item 主要初始或分配参数：enol\_fraction = 0.1666666666667 fraction；ketone\_fraction = 0.8333333333333 fraction；enol\_pseudo\_rate = 0.1000000000000 s\textasciicircum{}-1。
+\item 进一步得到反应产率、聚合统计与机理可观测量：apparent\_rate = 0.01666666666667 s\textasciicircum{}-1；remaining\_total\_M = 0.003678794411714 mol/L；product\_M = 0.006321205588286 mol/L；conversion = 0.6321205588286 fraction。
+\item 剩余数值答案：half\_life\_s = 41.58883083360 s；initial\_product\_rate\_Ms = 0.0001666666666667 mol/(Ls)；remaining\_enol\_M = 0.0006131324019524 mol/L；remaining\_ketone\_M = 0.003065662009762 mol/L；enol\_ketone\_ratio = 0.2000000000000 ratio。
+\item 代回底物+产物骨架守恒、统计分率之和、酸碱平均电荷及反应长时极限，核查非负性和范围。
+\item 独立计算路径重新计算全部字段并对照1e−9相对精度阈值，必要时特别处理小概率相近项相减的舍入误差。
+\item 科研模型和真正反应机理的实验验证、跨辑同构审查仍待专家完成，本题不计作已出版审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+enol\_fraction = 0.166666667 fraction；ketone\_fraction = 0.833333333 fraction；enol\_pseudo\_rate = 0.1 s\textasciicircum{}-1；apparent\_rate = 0.0166666667 s\textasciicircum{}-1；remaining\_total\_M = 0.00367879441 mol/L；product\_M = 0.00632120559 mol/L；conversion = 0.632120559 fraction；half\_life\_s = 41.5888308 s；initial\_product\_rate\_Ms = 0.000166666667 mol/(Ls)；remaining\_enol\_M = 0.000613132402 mol/L；remaining\_ketone\_M = 0.00306566201 mol/L；enol\_ketone\_ratio = 0.2 ratio\par
+\noindent\textbf{模型前提：}
+题设限制可逆动力学、链节统计及理想体系，专家科学评估及版权审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-O254 · 芳环α位三等价氢的氘代交换二项同位素体分布}
+\noindent\textbf{题目}\par
+某有机底物的一组3个化学等价α位氢可在大过量D₂O中独立进行不可逆H/D交换，各位点一级速度k=0.02000 s⁻¹，反应t=50.00 s。假定每个H被D取代后对其余位点的交换常数没有影响，不考虑逆向D/H交换和不同位置的分子间耦合。单个位点氘代概率p=1−exp(−kt)，三位点氘代数K\textasciitilde{}Binomial(3,p)。求p、单个位点未交换概率、D0/D1/D2/D3四同位素体分率、氘代数期望与方差、至少两个D的分率、四同位素体分率之和、若初始有0.01000 mol底物时D3同位素体mol，以及全部底物引入D原子mol。不能把单位置换概率直接等同于三重氘代概率。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **有机结构、反应或链统计模型**：某有机底物的一组3个化学等价α位氢可在大过量D₂O中独立进行不可逆H/D交换，各位点一级速度k=0.02000 s⁻¹，反应t=50.00 s。假定每个H被D取代后对其余位点的交换常数没有影响，不考虑逆向D/H交换和不同位置的分子间耦合。单个位点氘代概率p=1−exp(−kt)，三位点氘代数K\textasciitilde{}Binomial(3,p)。求p、单个位点未交换概率、D0/D1/D2/D3四同位素体分率、氘代数期望与方差、至少两个D的分率、四同位素体分率之和、若初始有0.01000 mol底物时D3同位素体mol，以及全部底物引入D原子mol。不能把单位置换概率直接等同于三重氘代概率。
+\item **公式推导的出发点**：p=1−e\textasciicircum{}(−kt)，P(K=j)=C(3,j)p\textasciicircum{}j(1−p)\textasciicircum{}(3−j)，E[K]=3p。
+\item 区分题设的双向与单向反应通道、独立同位素事件、链端统计以及封闭反应器的库存守恒。
+\item 依据速率级数或概率分配列出独立变量；对分子量、溶液体积、反应时间和活度的单位进行一致化。
+\item 主要初始或分配参数：site\_exchange\_probability = 0.6321205588286 fraction；site\_unexchanged\_probability = 0.3678794411714 fraction；P\_D0 = 0.04978706836786 fraction。
+\item 进一步得到反应产率、聚合统计与机理可观测量：P\_D1 = 0.2566446446062 fraction；P\_D2 = 0.4409878291982 fraction；P\_D3 = 0.2525804578276 fraction；mean\_D\_atoms = 1.896361676486 atoms。
+\item 剩余数值答案：variance\_D\_count = 0.6976324738045 atoms2；at\_least\_two\_D = 0.6935682870259 fraction；probability\_sum = 1.000000000000 ratio；D3\_molecules\_mol = 0.002525804578276 mol；total\_D\_atoms\_mol = 0.01896361676486 mol\_atoms。
+\item 代回底物+产物骨架守恒、统计分率之和、酸碱平均电荷及反应长时极限，核查非负性和范围。
+\item 独立计算路径重新计算全部字段并对照1e−9相对精度阈值，必要时特别处理小概率相近项相减的舍入误差。
+\item 科研模型和真正反应机理的实验验证、跨辑同构审查仍待专家完成，本题不计作已出版审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+site\_exchange\_probability = 0.632120559 fraction；site\_unexchanged\_probability = 0.367879441 fraction；P\_D0 = 0.0497870684 fraction；P\_D1 = 0.256644645 fraction；P\_D2 = 0.440987829 fraction；P\_D3 = 0.252580458 fraction；mean\_D\_atoms = 1.89636168 atoms；variance\_D\_count = 0.697632474 atoms2；at\_least\_two\_D = 0.693568287 fraction；probability\_sum = 1 ratio；D3\_molecules\_mol = 0.00252580458 mol；total\_D\_atoms\_mol = 0.0189636168 mol\_atoms\par
+\noindent\textbf{模型前提：}
+题设限制可逆动力学、链节统计及理想体系，专家科学评估及版权审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-O255 · 等初浓度酯皂化双分子速率与半衰期}
+\noindent\textbf{题目}\par
+假设某酯A与OH⁻在恒温理想稀溶液中发生不可逆二级皂化A+OH⁻→羧酸根+醇，速度r=k[A][OH⁻]，k=2.000 L/(mol s)。初始[A]0=[OH⁻]0=0.05000 M且无其他碱消耗、生成物不逆转，故任意时间[A]=[OH⁻]。求t=60.00 s时两者剩余浓度、产物浓度、底物转化率、相同初浓度下的二级半衰期、初始速度、60s瞬时反应速度、达到90\%转化率所需时间、60s相对初始速度比和反应前后[A]+产物的物质库存。须推导1/[A]−1/[A]0=kt，不能使用一级指数衰减。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **有机结构、反应或链统计模型**：假设某酯A与OH⁻在恒温理想稀溶液中发生不可逆二级皂化A+OH⁻→羧酸根+醇，速度r=k[A][OH⁻]，k=2.000 L/(mol s)。初始[A]0=[OH⁻]0=0.05000 M且无其他碱消耗、生成物不逆转，故任意时间[A]=[OH⁻]。求t=60.00 s时两者剩余浓度、产物浓度、底物转化率、相同初浓度下的二级半衰期、初始速度、60s瞬时反应速度、达到90\%转化率所需时间、60s相对初始速度比和反应前后[A]+产物的物质库存。须推导1/[A]−1/[A]0=kt，不能使用一级指数衰减。
+\item **公式推导的出发点**：1/C(t)=1/C0+kt，C(t)=C0/(1+kC0t)，t1/2=1/(kC0)。
+\item 区分题设的双向与单向反应通道、独立同位素事件、链端统计以及封闭反应器的库存守恒。
+\item 依据速率级数或概率分配列出独立变量；对分子量、溶液体积、反应时间和活度的单位进行一致化。
+\item 主要初始或分配参数：remaining\_ester\_M = 0.007142857142857 mol/L；remaining\_OH\_M = 0.007142857142857 mol/L；product\_M = 0.04285714285714 mol/L。
+\item 进一步得到反应产率、聚合统计与机理可观测量：conversion\_60 = 0.8571428571429 fraction；half\_life\_s = 10.00000000000 s；initial\_rate\_M\_s = 0.005000000000000 mol/(Ls)；instant\_rate\_60 = 0.0001020408163265 mol/(Ls)。
+\item 剩余数值答案：time\_to90pct\_s = 90.00000000000 s；rate\_ratio\_60\_initial = 0.02040816326531 ratio；ester\_balance\_M = 0.05000000000000 mol/L。
+\item 代回底物+产物骨架守恒、统计分率之和、酸碱平均电荷及反应长时极限，核查非负性和范围。
+\item 独立计算路径重新计算全部字段并对照1e−9相对精度阈值，必要时特别处理小概率相近项相减的舍入误差。
+\item 科研模型和真正反应机理的实验验证、跨辑同构审查仍待专家完成，本题不计作已出版审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+remaining\_ester\_M = 0.00714285714 mol/L；remaining\_OH\_M = 0.00714285714 mol/L；product\_M = 0.0428571429 mol/L；conversion\_60 = 0.857142857 fraction；half\_life\_s = 10 s；initial\_rate\_M\_s = 0.005 mol/(Ls)；instant\_rate\_60 = 0.000102040816 mol/(Ls)；time\_to90pct\_s = 90 s；rate\_ratio\_60\_initial = 0.0204081633 ratio；ester\_balance\_M = 0.05 mol/L\par
+\noindent\textbf{模型前提：}
+题设限制可逆动力学、链节统计及理想体系，专家科学评估及版权审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-O256 · 多电离位点氨基酸Lys的pH平均净电荷}
+\noindent\textbf{题目}\par
+某理想游离赖氨酸分子有三个可滴定基团：羧基pKa(COOH)=2.200、α-NH₃⁺ pKa=9.000、侧链NH₃⁺ pKa=10.500。外部缓冲液维持pH=7.400，各位点按独立Henderson–Hasselbalch概率模型离解，忽略位点耦合、活度系数和互变异构。定义羧基负电分率fc=1/(1+10\textasciicircum{}(pKaC−pH))，两个铵基正电分率fi=1/(1+10\textasciicircum{}(pH−pKai))。求三分率、平均净电荷q=−fc+fα+fside、两个铵基合计正电贡献、羧基未解离分率、两个铵基都质子化概率、羧基负电且两个铵基均正电的分子分率、两个铵基都失去质子概率、侧链相对α氨基正电分率比、pH7.4时的平均负电和正电贡献。不能把平均电荷直接视为所有分子具有相同的整数字面电荷。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **有机结构、反应或链统计模型**：某理想游离赖氨酸分子有三个可滴定基团：羧基pKa(COOH)=2.200、α-NH₃⁺ pKa=9.000、侧链NH₃⁺ pKa=10.500。外部缓冲液维持pH=7.400，各位点按独立Henderson–Hasselbalch概率模型离解，忽略位点耦合、活度系数和互变异构。定义羧基负电分率fc=1/(1+10\textasciicircum{}(pKaC−pH))，两个铵基正电分率fi=1/(1+10\textasciicircum{}(pH−pKai))。求三分率、平均净电荷q=−fc+fα+fside、两个铵基合计正电贡献、羧基未解离分率、两个铵基都质子化概率、羧基负电且两个铵基均正电的分子分率、两个铵基都失去质子概率、侧链相对α氨基正电分率比、pH7.4时的平均负电和正电贡献。不能把平均电荷直接视为所有分子具有相同的整数字面电荷。
+\item **公式推导的出发点**：fc=1/(1+10\textasciicircum{}(pKaC−pH))，fNH3=1/(1+10\textasciicircum{}(pH−pKaN))，q=−fc+fα+fside。
+\item 区分题设的双向与单向反应通道、独立同位素事件、链端统计以及封闭反应器的库存守恒。
+\item 依据速率级数或概率分配列出独立变量；对分子量、溶液体积、反应时间和活度的单位进行一致化。
+\item 主要初始或分配参数：carboxylate\_negative\_fraction = 0.9999936904664 fraction；alpha\_ammonium\_positive\_fraction = 0.9754966324497 fraction；sidechain\_ammonium\_positive\_fraction = 0.9992063022218 fraction。
+\item 进一步得到反应产率、聚合统计与机理可观测量：mean\_net\_charge = 0.9747092442051 e；total\_positive\_charge = 1.974702934671 e；undissociated\_carboxyl\_fraction = 0.000006309533634341 fraction；both\_ammonium\_fraction = 0.9747223829399 fraction。
+\item 剩余数值答案：carboxylate\_both\_ammonium\_fraction = 0.9747162328962 fraction；both\_amines\_deprotonated\_fraction = 0.00001944826838236 fraction；side\_alpha\_positive\_ratio = 1.024305229750 ratio；mean\_negative\_contribution = -0.9999936904664 e。
+\item 代回底物+产物骨架守恒、统计分率之和、酸碱平均电荷及反应长时极限，核查非负性和范围。
+\item 独立计算路径重新计算全部字段并对照1e−9相对精度阈值，必要时特别处理小概率相近项相减的舍入误差。
+\item 科研模型和真正反应机理的实验验证、跨辑同构审查仍待专家完成，本题不计作已出版审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+carboxylate\_negative\_fraction = 0.99999369 fraction；alpha\_ammonium\_positive\_fraction = 0.975496632 fraction；sidechain\_ammonium\_positive\_fraction = 0.999206302 fraction；mean\_net\_charge = 0.974709244 e；total\_positive\_charge = 1.97470293 e；undissociated\_carboxyl\_fraction = 6.30953363e-06 fraction；both\_ammonium\_fraction = 0.974722383 fraction；carboxylate\_both\_ammonium\_fraction = 0.974716233 fraction；both\_amines\_deprotonated\_fraction = 1.94482684e-05 fraction；side\_alpha\_positive\_ratio = 1.02430523 ratio；mean\_negative\_contribution = -0.99999369 e\par
+\noindent\textbf{模型前提：}
+题设限制可逆动力学、链节统计及理想体系，专家科学评估及版权审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-O257 · 稳态自由基聚合的引发–终止平方根速度关系}
+\noindent\textbf{题目}\par
+某理想自由基聚合在给定温度下，引发剂一阶分解kd=1.000×10⁻⁵ s⁻¹、引发效率f=0.6000、自由引发剂[I]=0.01000 mol/L由池保持恒定；双分子自由基终止速率常数kt=1.000×10⁷ L/(mol s)，链传播kp=500.0 L/(mol s)，单体浓度[M]=2.000 mol/L。定义引发自由基生成速率Ri=2fkd[I]，自由基失活速率Rt=2kt[R·]²；稳态Ri=Rt，传播耗单体速度Rp=kp[M][R·]。求Ri、自由基稳态浓度、Rt、Rp、传播/引发速率比、自由基平均寿命约[R·]/Ri、初始单体每秒转化分率Rp/[M]、如果引发剂浓度加倍后自由基浓度与传播速率、相对传播速率增强倍数及终止反应事件速度kt[R·]²。假设无链转移、自动加速与氧抑制。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **有机结构、反应或链统计模型**：某理想自由基聚合在给定温度下，引发剂一阶分解kd=1.000×10⁻⁵ s⁻¹、引发效率f=0.6000、自由引发剂[I]=0.01000 mol/L由池保持恒定；双分子自由基终止速率常数kt=1.000×10⁷ L/(mol s)，链传播kp=500.0 L/(mol s)，单体浓度[M]=2.000 mol/L。定义引发自由基生成速率Ri=2fkd[I]，自由基失活速率Rt=2kt[R·]²；稳态Ri=Rt，传播耗单体速度Rp=kp[M][R·]。求Ri、自由基稳态浓度、Rt、Rp、传播/引发速率比、自由基平均寿命约[R·]/Ri、初始单体每秒转化分率Rp/[M]、如果引发剂浓度加倍后自由基浓度与传播速率、相对传播速率增强倍数及终止反应事件速度kt[R·]²。假设无链转移、自动加速与氧抑制。
+\item **公式推导的出发点**：Ri=2fkd[I]；[R·]=sqrt(Ri/(2kt))；Rp=kp[M][R·]。
+\item 区分题设的双向与单向反应通道、独立同位素事件、链端统计以及封闭反应器的库存守恒。
+\item 依据速率级数或概率分配列出独立变量；对分子量、溶液体积、反应时间和活度的单位进行一致化。
+\item 主要初始或分配参数：radical\_initiation\_rate = 1.200000000000e-7 mol/(Ls)；steady\_radical\_M = 7.745966692415e-8 mol/L；radical\_loss\_rate = 1.200000000000e-7 mol/(Ls)。
+\item 进一步得到反应产率、聚合统计与机理可观测量：propagation\_rate = 0.00007745966692415 mol/(Ls)；propagation\_to\_initiation = 645.4972243679 ratio；radical\_lifetime\_s = 0.6454972243679 s；monomer\_fraction\_consumed\_per\_s = 0.00003872983346207 s\textasciicircum{}-1。
+\item 剩余数值答案：radical\_M\_doubleI = 1.095445115010e-7 mol/L；propagation\_doubleI = 0.0001095445115010 mol/(Ls)；rate\_enhancement = 1.414213562373 ratio；termination\_events\_rate = 6.000000000000e-8 mol/(Ls)。
+\item 代回底物+产物骨架守恒、统计分率之和、酸碱平均电荷及反应长时极限，核查非负性和范围。
+\item 独立计算路径重新计算全部字段并对照1e−9相对精度阈值，必要时特别处理小概率相近项相减的舍入误差。
+\item 科研模型和真正反应机理的实验验证、跨辑同构审查仍待专家完成，本题不计作已出版审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+radical\_initiation\_rate = 1.2e-07 mol/(Ls)；steady\_radical\_M = 7.74596669e-08 mol/L；radical\_loss\_rate = 1.2e-07 mol/(Ls)；propagation\_rate = 7.74596669e-05 mol/(Ls)；propagation\_to\_initiation = 645.497224 ratio；radical\_lifetime\_s = 0.645497224 s；monomer\_fraction\_consumed\_per\_s = 3.87298335e-05 s\textasciicircum{}-1；radical\_M\_doubleI = 1.09544512e-07 mol/L；propagation\_doubleI = 0.000109544512 mol/(Ls)；rate\_enhancement = 1.41421356 ratio；termination\_events\_rate = 6e-08 mol/(Ls)\par
+\noindent\textbf{模型前提：}
+题设限制可逆动力学、链节统计及理想体系，专家科学评估及版权审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-O258 · 乙烯基聚合链立构规整度二联体与三联体统计}
+\noindent\textbf{题目}\par
+某理想乙烯基聚合物相邻立体中心间的meso二联体出现概率pm=0.7000，racemo二联体概率pr=0.3000，且各二联体沿链独立取值。假设链长N=1000个重复单元，忽略端部的有限序列相关性。三联体有mm、mr、rm、rr四种有向序列；mm代表isotactic三联体，rr代表syndiotactic，mr与rm合称heterotactic。求四种有向三联体概率、合并heterotactic概率、mm与rr比、三联体概率总和、二联体Shannon熵h=−pm lnpm−pr lnpr(nat)、N=1000时两相邻键数999及三个中心连续三联体数998、其中mm三联体期望数与rr期望数。独立Bernoulli是刻意给定的立构动力学近似。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **有机结构、反应或链统计模型**：某理想乙烯基聚合物相邻立体中心间的meso二联体出现概率pm=0.7000，racemo二联体概率pr=0.3000，且各二联体沿链独立取值。假设链长N=1000个重复单元，忽略端部的有限序列相关性。三联体有mm、mr、rm、rr四种有向序列；mm代表isotactic三联体，rr代表syndiotactic，mr与rm合称heterotactic。求四种有向三联体概率、合并heterotactic概率、mm与rr比、三联体概率总和、二联体Shannon熵h=−pm lnpm−pr lnpr(nat)、N=1000时两相邻键数999及三个中心连续三联体数998、其中mm三联体期望数与rr期望数。独立Bernoulli是刻意给定的立构动力学近似。
+\item **公式推导的出发点**：P(mm)=pm²，P(rr)=pr²，P(mr)=P(rm)=pm pr。
+\item 区分题设的双向与单向反应通道、独立同位素事件、链端统计以及封闭反应器的库存守恒。
+\item 依据速率级数或概率分配列出独立变量；对分子量、溶液体积、反应时间和活度的单位进行一致化。
+\item 主要初始或分配参数：triad\_mm = 0.4900000000000 fraction；triad\_mr = 0.2100000000000 fraction；triad\_rm = 0.2100000000000 fraction。
+\item 进一步得到反应产率、聚合统计与机理可观测量：triad\_rr = 0.09000000000000 fraction；heterotactic\_fraction = 0.4200000000000 fraction；mm\_over\_rr = 5.444444444444 ratio；probability\_sum = 1.000000000000 ratio。
+\item 剩余数值答案：dyad\_entropy\_nat = 0.6108643020549 nat；dyad\_count\_N1000 = 999.0000000000 bonds；triad\_count\_N1000 = 998.0000000000 triads；expected\_mm\_triads = 489.0200000000 triads；expected\_rr\_triads = 89.82000000000 triads。
+\item 代回底物+产物骨架守恒、统计分率之和、酸碱平均电荷及反应长时极限，核查非负性和范围。
+\item 独立计算路径重新计算全部字段并对照1e−9相对精度阈值，必要时特别处理小概率相近项相减的舍入误差。
+\item 科研模型和真正反应机理的实验验证、跨辑同构审查仍待专家完成，本题不计作已出版审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+triad\_mm = 0.49 fraction；triad\_mr = 0.21 fraction；triad\_rm = 0.21 fraction；triad\_rr = 0.09 fraction；heterotactic\_fraction = 0.42 fraction；mm\_over\_rr = 5.44444444 ratio；probability\_sum = 1 ratio；dyad\_entropy\_nat = 0.610864302 nat；dyad\_count\_N1000 = 999 bonds；triad\_count\_N1000 = 998 triads；expected\_mm\_triads = 489.02 triads；expected\_rr\_triads = 89.82 triads\par
+\noindent\textbf{模型前提：}
+题设限制可逆动力学、链节统计及理想体系，专家科学评估及版权审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-O259 · 酯交换封闭反应器的四物种平衡转化率}
+\noindent\textbf{题目}\par
+理想封闭均相酯交换反应A+B⇌C+D，初始A和B各1.000 mol，C和D为0，四者都在同一恒定体积体系中，平衡常数K=[C][D]/([A][B])=9.000，忽略副反应及溶剂活度变化。设反应进度ξ，平衡时A=B=1−ξ，C=D=ξ；求物理根ξ、平衡四物种mol、两反应物总剩余mol、两产物总mol、正反反应的浓度比商Q及其与K差、当K改为4.000时的ξ、K=9相比K=4的平衡转化率增量、产物总量占四物种总摩尔数分率以及平衡A/C浓度比。需排除二次方程产生的非物理根，并保证ξ在0至1之间。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **有机结构、反应或链统计模型**：理想封闭均相酯交换反应A+B⇌C+D，初始A和B各1.000 mol，C和D为0，四者都在同一恒定体积体系中，平衡常数K=[C][D]/([A][B])=9.000，忽略副反应及溶剂活度变化。设反应进度ξ，平衡时A=B=1−ξ，C=D=ξ；求物理根ξ、平衡四物种mol、两反应物总剩余mol、两产物总mol、正反反应的浓度比商Q及其与K差、当K改为4.000时的ξ、K=9相比K=4的平衡转化率增量、产物总量占四物种总摩尔数分率以及平衡A/C浓度比。需排除二次方程产生的非物理根，并保证ξ在0至1之间。
+\item **公式推导的出发点**：K=(ξ/(1−ξ))²，ξ=√K/(1+√K)。
+\item 区分题设的双向与单向反应通道、独立同位素事件、链端统计以及封闭反应器的库存守恒。
+\item 依据速率级数或概率分配列出独立变量；对分子量、溶液体积、反应时间和活度的单位进行一致化。
+\item 主要初始或分配参数：equilibrium\_extent = 0.7500000000000 mol；A\_remaining\_mol = 0.2500000000000 mol；B\_remaining\_mol = 0.2500000000000 mol。
+\item 进一步得到反应产率、聚合统计与机理可观测量：C\_product\_mol = 0.7500000000000 mol；D\_product\_mol = 0.7500000000000 mol；total\_reactants\_mol = 0.5000000000000 mol；total\_products\_mol = 1.500000000000 mol。
+\item 剩余数值答案：recovered\_K = 9.000000000000 ratio；K\_residual = 0.000000000000 ratio；extent\_if\_K4 = 0.6666666666667 mol；extent\_increase\_K9\_K4 = 0.08333333333333 mol；product\_fraction\_total\_molecules = 0.7500000000000 fraction；A\_over\_C\_ratio = 0.3333333333333 ratio。
+\item 代回底物+产物骨架守恒、统计分率之和、酸碱平均电荷及反应长时极限，核查非负性和范围。
+\item 独立计算路径重新计算全部字段并对照1e−9相对精度阈值，必要时特别处理小概率相近项相减的舍入误差。
+\item 科研模型和真正反应机理的实验验证、跨辑同构审查仍待专家完成，本题不计作已出版审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+equilibrium\_extent = 0.75 mol；A\_remaining\_mol = 0.25 mol；B\_remaining\_mol = 0.25 mol；C\_product\_mol = 0.75 mol；D\_product\_mol = 0.75 mol；total\_reactants\_mol = 0.5 mol；total\_products\_mol = 1.5 mol；recovered\_K = 9 ratio；K\_residual = 0 ratio；extent\_if\_K4 = 0.666666667 mol；extent\_increase\_K9\_K4 = 0.0833333333 mol；product\_fraction\_total\_molecules = 0.75 fraction；A\_over\_C\_ratio = 0.333333333 ratio\par
+\noindent\textbf{模型前提：}
+题设限制可逆动力学、链节统计及理想体系，专家科学评估及版权审查未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-O260 · 理想高斯链端接触概率对聚合度的缩放}
+\noindent\textbf{题目}\par
+假设一条理想柔性高斯链有N段自由连接链，每段长度b=0.5000 nm；端到端距离三维各向同性，均方末端距〈R²〉=Nb²。考虑N1=100与N2=400两条链，端点碰撞距离阈值a=1.000 nm。三维高斯模型中P(|R|<a)=erf(z)−(2/√π)z exp(−z²)，z=√[3/(2N)]·a/b；erf为标准误差函数，近似允许用双边积分数值求解。求两链均方末端距(nm²)、RMS距(nm)、每笛卡尔方向方差(nm²)、无量纲z、链1与链2端点接触概率、两链接触概率比及链1的RMS/阈值比。明确是理想高斯统计链，而非真实环化反应速率；请留意小概率数值易受相近项相减影响。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **有机结构、反应或链统计模型**：假设一条理想柔性高斯链有N段自由连接链，每段长度b=0.5000 nm；端到端距离三维各向同性，均方末端距〈R²〉=Nb²。考虑N1=100与N2=400两条链，端点碰撞距离阈值a=1.000 nm。三维高斯模型中P(|R|<a)=erf(z)−(2/√π)z exp(−z²)，z=√[3/(2N)]·a/b；erf为标准误差函数，近似允许用双边积分数值求解。求两链均方末端距(nm²)、RMS距(nm)、每笛卡尔方向方差(nm²)、无量纲z、链1与链2端点接触概率、两链接触概率比及链1的RMS/阈值比。明确是理想高斯统计链，而非真实环化反应速率；请留意小概率数值易受相近项相减影响。
+\item **公式推导的出发点**：Pcontact=erf(z)−2z exp(−z²)/√π，z=sqrt(3/(2N))a/b。
+\item 区分题设的双向与单向反应通道、独立同位素事件、链端统计以及封闭反应器的库存守恒。
+\item 依据速率级数或概率分配列出独立变量；对分子量、溶液体积、反应时间和活度的单位进行一致化。
+\item 主要初始或分配参数：mean\_square\_R\_N100 = 25.00000000000 nm2；mean\_square\_R\_N400 = 100.0000000000 nm2；RMS\_N100 = 5.000000000000 nm。
+\item 进一步得到反应产率、聚合统计与机理可观测量：RMS\_N400 = 10.00000000000 nm；axis\_variance\_N100 = 8.333333333333 nm2；axis\_variance\_N400 = 33.33333333333 nm2；z\_N100 = 0.2449489742783 ratio。
+\item 剩余数值答案：z\_N400 = 0.1224744871392 ratio；contact\_probability\_N100 = 0.01066620123483 fraction；contact\_probability\_N400 = 0.001369605181191 fraction；contact\_probability\_ratio = 7.787792702092 ratio；RMS\_over\_contact\_radius\_N100 = 5.000000000000 ratio。
+\item 代回底物+产物骨架守恒、统计分率之和、酸碱平均电荷及反应长时极限，核查非负性和范围。
+\item 独立计算路径重新计算全部字段并对照1e−9相对精度阈值，必要时特别处理小概率相近项相减的舍入误差。
+\item 科研模型和真正反应机理的实验验证、跨辑同构审查仍待专家完成，本题不计作已出版审定。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+mean\_square\_R\_N100 = 25 nm2；mean\_square\_R\_N400 = 100 nm2；RMS\_N100 = 5 nm；RMS\_N400 = 10 nm；axis\_variance\_N100 = 8.33333333 nm2；axis\_variance\_N400 = 33.3333333 nm2；z\_N100 = 0.244948974 ratio；z\_N400 = 0.122474487 ratio；contact\_probability\_N100 = 0.0106662012 fraction；contact\_probability\_N400 = 0.00136960518 fraction；contact\_probability\_ratio = 7.7877927 ratio；RMS\_over\_contact\_radius\_N100 = 5 ratio\par
+\noindent\textbf{模型前提：}
+题设限制可逆动力学、链节统计及理想体系，专家科学评估及版权审查未完成。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{物理化学}
