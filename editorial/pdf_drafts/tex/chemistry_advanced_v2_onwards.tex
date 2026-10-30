@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第2至15辑 (987题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第2至15辑 (994题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -22157,6 +22157,167 @@ relative\_D\_m2s = 3e-10 m2/s；capture\_radius\_nm = 3 nm；pair\_rate\_m3s = 1
 inside\_cation\_M = 0.120710678 mol/L；inside\_anion\_M = 0.0207106781 mol/L；cation\_enrichment = 2.41421356 ratio；Donnan\_potential\_mV = -22.6447606 mV；osmotic\_pressure\_difference\_Pa = 102681.762 Pa；cation\_excess\_M = 0.0707106781 mol/L；anion\_exclusion\_fraction = 0.585786438 fraction；salt\_product\_backcheck\_M2 = 0.0025 M2；electroneutral\_residual\_M = 0 mol/L；total\_ion\_concentration\_ratio = 1.41421356 ratio\par
 \noindent\textbf{模型前提：}
 使用题设理想界面、统计配分、均匀介质与动力学边界，数值双路径复算不代表专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P241 · 葡萄糖–NaCl混合溶液的理想渗透压与颗粒数}
+\noindent\textbf{题目}\par
+298.15 K、1.000 L理想稀水溶液含不解离葡萄糖0.01000 mol/L与完全解离NaCl 0.005000 mol/L，NaCl按两个独立理想粒子计数。忽略离子对、溶质体积及非理想化学势。求葡萄糖、Na⁺、Cl⁻浓度、总有效溶质颗粒浓度、van't Hoff渗透压Π=RT cparticle（Pa及bar）、总渗透压对仅葡萄糖压强比、葡萄糖和盐各自压强贡献、葡萄糖粒子分率、盐粒子分率及1 L全部有效粒子数。需要把mol/L换算为mol/m³，并区分NaCl投料摩尔数与实际离子颗粒数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 理想化物理化学系统：298.15 K、1.000 L理想稀水溶液含不解离葡萄糖0.01000 mol/L与完全解离NaCl 0.005000 mol/L，NaCl按两个独立理想粒子计数。忽略离子对、溶质体积及非理想化学势。求葡萄糖、Na⁺、Cl⁻浓度、总有效溶质颗粒浓度、van't Hoff渗透压Π=RT cparticle（Pa及bar）、总渗透压对仅葡萄糖压强比、葡萄糖和盐各自压强贡献、葡萄糖粒子分率、盐粒子分率及1 L全部有效粒子数。需要把mol/L换算为mol/m³，并区分NaCl投料摩尔数与实际离子颗粒数。
+\item 建立指定热力学、输运或统计状态方程：cparticle=cglucose+2cNaCl，Π=RT×1000cparticle。
+\item 将长度、摩尔数、绝对温度、压强和热量转换到各式所需单位，并区分密度和粒子数密度。
+\item 正确使用方程的边界和守恒假设，对热力学指数项采用无量纲变量。
+\item 求解第一组变量：glucose\_M = 0.010000000000000 mol/L；sodium\_M = 0.0050000000000000 mol/L；chloride\_M = 0.0050000000000000 mol/L；total\_particles\_M = 0.020000000000000 mol/L。
+\item 求解中间物理量：pressure\_Pa = 49579.140591134 Pa；pressure\_bar = 0.49579140591134 bar；pressure\_ratio = 2.0000000000000 ratio；glucose\_pressure\_Pa = 24789.570295567 Pa。
+\item 其余输出与复算：salt\_pressure\_Pa = 24789.570295567 Pa；glucose\_fraction = 0.50000000000000 fraction；salt\_fraction = 0.50000000000000 fraction；particle\_number\_1L = 1.2044281520000e+22 particles。
+\item 检查平衡通量或概率归一，核对低压、高温与无驱动力极限是否符合题面限定的经典模型。
+\item 用独立数学表达式逐项验算答案向量，并避免将不同单位下数值直接相等比较。
+\item 本题仍在科学、版权及跨辑原创性待审队列，不因机器数值一致便宣称可供正式出版。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+glucose\_M = 0.01 mol/L；sodium\_M = 0.005 mol/L；chloride\_M = 0.005 mol/L；total\_particles\_M = 0.02 mol/L；pressure\_Pa = 49579.1406 Pa；pressure\_bar = 0.495791406 bar；pressure\_ratio = 2 ratio；glucose\_pressure\_Pa = 24789.5703 Pa；salt\_pressure\_Pa = 24789.5703 Pa；glucose\_fraction = 0.5 fraction；salt\_fraction = 0.5 fraction；particle\_number\_1L = 1.20442815e+22 particles\par
+\noindent\textbf{模型前提：}
+理想稀溶液、硬球或单层均匀表面模型；独立数值审核不能替代实验确认。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P242 · 固液熔化相界的Clapeyron斜率与升压熔点位移}
+\noindent\textbf{题目}\par
+理想固液两相在初始T0=300.0 K、P0=1.000 bar平衡熔化，熔融焓ΔH=10.00 kJ/mol，熔融摩尔体积差ΔV=+1.000 cm³/mol，假定在所考察的压力温度范围这两个量均常数且两相无化学变化。现将压力在原压力基础上提升100.0 bar，而不是提升到100 bar。使用dP/dT=ΔH/(TΔV)以及积分ln(T/T0)=ΔVΔP/ΔH，求初始斜率Pa/K与bar/K、升压后熔点K、积分熔点升幅、线性近似熔点升幅、压增Pa、熔化熵、熔点升高布尔标志及由新温度反代所得压增。说明增压时较小体积固体相受到稳定化。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 理想化物理化学系统：理想固液两相在初始T0=300.0 K、P0=1.000 bar平衡熔化，熔融焓ΔH=10.00 kJ/mol，熔融摩尔体积差ΔV=+1.000 cm³/mol，假定在所考察的压力温度范围这两个量均常数且两相无化学变化。现将压力在原压力基础上提升100.0 bar，而不是提升到100 bar。使用dP/dT=ΔH/(TΔV)以及积分ln(T/T0)=ΔVΔP/ΔH，求初始斜率Pa/K与bar/K、升压后熔点K、积分熔点升幅、线性近似熔点升幅、压增Pa、熔化熵、熔点升高布尔标志及由新温度反代所得压增。说明增压时较小体积固体相受到稳定化。
+\item 建立指定热力学、输运或统计状态方程：dP/dT=H/(TΔV)，Tnew=T0 exp(ΔVΔP/H)，ΔS=H/T0。
+\item 将长度、摩尔数、绝对温度、压强和热量转换到各式所需单位，并区分密度和粒子数密度。
+\item 正确使用方程的边界和守恒假设，对热力学指数项采用无量纲变量。
+\item 求解第一组变量：slope\_PaK = 33333333.333333 Pa/K；slope\_barK = 333.33333333333 bar/K；new\_melting\_T = 300.30015005001 K；exact\_temperature\_shift = 0.30015005001252 K。
+\item 求解中间物理量：linear\_temperature\_shift = 0.30000000000000 K；pressure\_increment\_Pa = 10000000.000000 Pa；fusion\_entropy\_JmolK = 33.333333333333 J/(molK)；pressure\_raises\_melting\_flag = 1.0000000000000 boolean。
+\item 其余输出与复算：recovered\_pressure\_increment\_Pa = 10000000.000000 Pa；mol\_volume\_difference\_m3 = 0.0000010000000000000 m3/mol。
+\item 检查平衡通量或概率归一，核对低压、高温与无驱动力极限是否符合题面限定的经典模型。
+\item 用独立数学表达式逐项验算答案向量，并避免将不同单位下数值直接相等比较。
+\item 本题仍在科学、版权及跨辑原创性待审队列，不因机器数值一致便宣称可供正式出版。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+slope\_PaK = 33333333.3 Pa/K；slope\_barK = 333.333333 bar/K；new\_melting\_T = 300.30015 K；exact\_temperature\_shift = 0.30015005 K；linear\_temperature\_shift = 0.3 K；pressure\_increment\_Pa = 10000000 Pa；fusion\_entropy\_JmolK = 33.3333333 J/(molK)；pressure\_raises\_melting\_flag = 1 boolean；recovered\_pressure\_increment\_Pa = 10000000 Pa；mol\_volume\_difference\_m3 = 1e-06 m3/mol\par
+\noindent\textbf{模型前提：}
+理想稀溶液、硬球或单层均匀表面模型；独立数值审核不能替代实验确认。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P243 · 一价与二价离子的Nernst–Einstein迁移率和漂移时间}
+\noindent\textbf{题目}\par
+298.15 K的理想稀电解质水溶液中单价阳离子A⁺扩散系数DA=1.000×10⁻⁹ m²/s，二价阳离子B²⁺扩散系数DB=0.5000×10⁻⁹ m²/s。外加均匀电场强度100.0 V/m。依照Nernst–Einstein关系μ=|z|FD/(RT)，求两个迁移率、迁移率比、两个漂移速度、各离子通过1.000 mm距离的平均漂移时间、漂移速度差、两种μ/D比、A是否更快的标志及两漂移速度平均值。忽略电渗流、浓度梯度、迁移率场强变化和电极边界层，解释电荷数抵消B较小扩散系数的效应。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 理想化物理化学系统：298.15 K的理想稀电解质水溶液中单价阳离子A⁺扩散系数DA=1.000×10⁻⁹ m²/s，二价阳离子B²⁺扩散系数DB=0.5000×10⁻⁹ m²/s。外加均匀电场强度100.0 V/m。依照Nernst–Einstein关系μ=|z|FD/(RT)，求两个迁移率、迁移率比、两个漂移速度、各离子通过1.000 mm距离的平均漂移时间、漂移速度差、两种μ/D比、A是否更快的标志及两漂移速度平均值。忽略电渗流、浓度梯度、迁移率场强变化和电极边界层，解释电荷数抵消B较小扩散系数的效应。
+\item 建立指定热力学、输运或统计状态方程：μ=|z|FD/(RT)，v=μE，t=L/v。
+\item 将长度、摩尔数、绝对温度、压强和热量转换到各式所需单位，并区分密度和粒子数密度。
+\item 正确使用方程的边界和守恒假设，对热力学指数项采用无量纲变量。
+\item 求解第一组变量：mobility\_A = 3.8921744495609e-8 m2/(Vs)；mobility\_B = 3.8921744495609e-8 m2/(Vs)；mobility\_ratio = 1.0000000000000 ratio；velocity\_A = 0.0000038921744495609 m/s。
+\item 求解中间物理量：velocity\_B = 0.0000038921744495609 m/s；travel\_time\_A = 256.92579121494 s；travel\_time\_B = 256.92579121494 s；velocity\_difference = 0.0000000000000 m/s。
+\item 其余输出与复算：mu\_over\_D\_A = 38.921744495609 V\textasciicircum{}-1；mu\_over\_D\_B = 77.843488991218 V\textasciicircum{}-1；A\_faster = 0.0000000000000 boolean；mean\_velocity = 0.0000038921744495609 m/s。
+\item 检查平衡通量或概率归一，核对低压、高温与无驱动力极限是否符合题面限定的经典模型。
+\item 用独立数学表达式逐项验算答案向量，并避免将不同单位下数值直接相等比较。
+\item 本题仍在科学、版权及跨辑原创性待审队列，不因机器数值一致便宣称可供正式出版。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+mobility\_A = 3.89217445e-08 m2/(Vs)；mobility\_B = 3.89217445e-08 m2/(Vs)；mobility\_ratio = 1 ratio；velocity\_A = 3.89217445e-06 m/s；velocity\_B = 3.89217445e-06 m/s；travel\_time\_A = 256.925791 s；travel\_time\_B = 256.925791 s；velocity\_difference = 0 m/s；mu\_over\_D\_A = 38.9217445 V\textasciicircum{}-1；mu\_over\_D\_B = 77.843489 V\textasciicircum{}-1；A\_faster = 0 boolean；mean\_velocity = 3.89217445e-06 m/s\par
+\noindent\textbf{模型前提：}
+理想稀溶液、硬球或单层均匀表面模型；独立数值审核不能替代实验确认。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P244 · 硬球理想气体自由程与低压碰撞频率变化}
+\noindent\textbf{题目}\par
+298.15 K某假想硬球气体分子直径d=0.3700 nm，压强p1=1.000 bar、p2=0.1000 bar。采用平均自由程λ=kBT/(√2 πd²p)，玻尔兹曼常数kB=1.380649×10⁻²³ J/K，分子的代表性平均速度固定为500.0 m/s。求两个压强下平均自由程（m和nm）、对应平均无碰撞时间τ=λ/v、碰撞频率ν=v/λ、低压相对高压自由程增加倍数、高压相对低压的碰撞率倍数及高压下一个分子在1.000 μs里的平均碰撞数。必须注意bar转换为Pa、nm转换为m，忽略真实分子相互作用和速度分布。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 理想化物理化学系统：298.15 K某假想硬球气体分子直径d=0.3700 nm，压强p1=1.000 bar、p2=0.1000 bar。采用平均自由程λ=kBT/(√2 πd²p)，玻尔兹曼常数kB=1.380649×10⁻²³ J/K，分子的代表性平均速度固定为500.0 m/s。求两个压强下平均自由程（m和nm）、对应平均无碰撞时间τ=λ/v、碰撞频率ν=v/λ、低压相对高压自由程增加倍数、高压相对低压的碰撞率倍数及高压下一个分子在1.000 μs里的平均碰撞数。必须注意bar转换为Pa、nm转换为m，忽略真实分子相互作用和速度分布。
+\item 建立指定热力学、输运或统计状态方程：λ=kBT/(√2πd²p)，τ=λ/500，ν=500/λ。
+\item 将长度、摩尔数、绝对温度、压强和热量转换到各式所需单位，并区分密度和粒子数密度。
+\item 正确使用方程的边界和守恒假设，对热力学指数项采用无量纲变量。
+\item 求解第一组变量：path\_high\_m = 6.7678352438982e-8 m；path\_low\_m = 6.7678352438982e-7 m；path\_high\_nm = 67.678352438982 nm；path\_low\_nm = 676.78352438982 nm。
+\item 求解中间物理量：collision\_time\_high = 1.3535670487796e-10 s；collision\_time\_low = 1.3535670487796e-9 s；frequency\_high = 7387886702.0410 s\textasciicircum{}-1；frequency\_low = 738788670.20410 s\textasciicircum{}-1。
+\item 其余输出与复算：path\_ratio\_low\_high = 10.000000000000 ratio；collision\_frequency\_ratio\_high\_low = 10.000000000000 ratio；collisions\_high\_in\_microsecond = 7387.8867020410 events。
+\item 检查平衡通量或概率归一，核对低压、高温与无驱动力极限是否符合题面限定的经典模型。
+\item 用独立数学表达式逐项验算答案向量，并避免将不同单位下数值直接相等比较。
+\item 本题仍在科学、版权及跨辑原创性待审队列，不因机器数值一致便宣称可供正式出版。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+path\_high\_m = 6.76783524e-08 m；path\_low\_m = 6.76783524e-07 m；path\_high\_nm = 67.6783524 nm；path\_low\_nm = 676.783524 nm；collision\_time\_high = 1.35356705e-10 s；collision\_time\_low = 1.35356705e-09 s；frequency\_high = 7.3878867e+09 s\textasciicircum{}-1；frequency\_low = 738788670 s\textasciicircum{}-1；path\_ratio\_low\_high = 10 ratio；collision\_frequency\_ratio\_high\_low = 10 ratio；collisions\_high\_in\_microsecond = 7387.8867 events\par
+\noindent\textbf{模型前提：}
+理想稀溶液、硬球或单层均匀表面模型；独立数值审核不能替代实验确认。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P245 · BET多层吸附直线化与单层吸附容量反演}
+\noindent\textbf{题目}\par
+某固体的理想BET气体吸附等温线为V=Vm Cx/[(1−x)(1+(C−1)x)]，其中x=p/p0，单层气体容量Vm=10.00 cm³(STP)/g，BET常数C=40.00。比较x=0.1000和0.3000，求两状态吸附体积及其对Vm的倍数、体积比、BET线性图纵量y=x/[V(1−x)]、BET理论截距与斜率、从图线参数反推出Vm及C、x=0.1时不含(1−x)分母的第一层近似贡献。模型只用于指定压力区间，不涉及高压毛细凝聚或吸附解吸滞后。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 理想化物理化学系统：某固体的理想BET气体吸附等温线为V=Vm Cx/[(1−x)(1+(C−1)x)]，其中x=p/p0，单层气体容量Vm=10.00 cm³(STP)/g，BET常数C=40.00。比较x=0.1000和0.3000，求两状态吸附体积及其对Vm的倍数、体积比、BET线性图纵量y=x/[V(1−x)]、BET理论截距与斜率、从图线参数反推出Vm及C、x=0.1时不含(1−x)分母的第一层近似贡献。模型只用于指定压力区间，不涉及高压毛细凝聚或吸附解吸滞后。
+\item 建立指定热力学、输运或统计状态方程：V=Vm Cx/[(1−x)(1+(C−1)x)]；y=1/(Vm C)+(C−1)x/(Vm C)。
+\item 将长度、摩尔数、绝对温度、压强和热量转换到各式所需单位，并区分密度和粒子数密度。
+\item 正确使用方程的边界和守恒假设，对热力学指数项采用无量纲变量。
+\item 求解第一组变量：V\_at0p1 = 9.0702947845805 cm3/g；V\_at0p3 = 13.498312710911 cm3/g；normalized\_V1 = 0.90702947845805 ratio；normalized\_V2 = 1.3498312710911 ratio。
+\item 求解中间物理量：ratio\_V2\_V1 = 1.4881889763780 ratio；linear\_y1 = 0.012250000000000 g/cm3；linear\_y2 = 0.031750000000000 g/cm3；BET\_intercept = 0.0025000000000000 g/cm3。
+\item 其余输出与复算：BET\_slope = 0.097500000000000 g/cm3；Vm\_recovered = 10.000000000000 cm3/g；C\_recovered = 40.000000000000 ratio；first\_layer\_near0p1 = 8.1632653061224 cm3/g。
+\item 检查平衡通量或概率归一，核对低压、高温与无驱动力极限是否符合题面限定的经典模型。
+\item 用独立数学表达式逐项验算答案向量，并避免将不同单位下数值直接相等比较。
+\item 本题仍在科学、版权及跨辑原创性待审队列，不因机器数值一致便宣称可供正式出版。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+V\_at0p1 = 9.07029478 cm3/g；V\_at0p3 = 13.4983127 cm3/g；normalized\_V1 = 0.907029478 ratio；normalized\_V2 = 1.34983127 ratio；ratio\_V2\_V1 = 1.48818898 ratio；linear\_y1 = 0.01225 g/cm3；linear\_y2 = 0.03175 g/cm3；BET\_intercept = 0.0025 g/cm3；BET\_slope = 0.0975 g/cm3；Vm\_recovered = 10 cm3/g；C\_recovered = 40 ratio；first\_layer\_near0p1 = 8.16326531 cm3/g\par
+\noindent\textbf{模型前提：}
+理想稀溶液、硬球或单层均匀表面模型；独立数值审核不能替代实验确认。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P246 · 双原子理想气体绝热声速、内能和比热关系}
+\noindent\textbf{题目}\par
+某气体的摩尔质量28.0134 g/mol，可近似为理想双原子气体，假定300–600 K只激发平动与转动自由度，定容摩尔热容Cv=5R/2，定压Cp=7R/2，比热比γ=7/5，R=8.314462618。声速a=√(γRT/M)，其中M须用kg/mol，忽略真实分子振动、化学反应与非平衡声波频散。求300 K下Cv、Cp、Cp−Cv、γ、绝热声速、等温速度尺度√(RT/M)、两速度比、每mol内能与焓、600 K声速以及声速温度比。解释声速不是气体分子速度分布的平均值。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 理想化物理化学系统：某气体的摩尔质量28.0134 g/mol，可近似为理想双原子气体，假定300–600 K只激发平动与转动自由度，定容摩尔热容Cv=5R/2，定压Cp=7R/2，比热比γ=7/5，R=8.314462618。声速a=√(γRT/M)，其中M须用kg/mol，忽略真实分子振动、化学反应与非平衡声波频散。求300 K下Cv、Cp、Cp−Cv、γ、绝热声速、等温速度尺度√(RT/M)、两速度比、每mol内能与焓、600 K声速以及声速温度比。解释声速不是气体分子速度分布的平均值。
+\item 建立指定热力学、输运或统计状态方程：a=√(γRT/M)，U=CvT，H=CpT。
+\item 将长度、摩尔数、绝对温度、压强和热量转换到各式所需单位，并区分密度和粒子数密度。
+\item 正确使用方程的边界和守恒假设，对热力学指数项采用无量纲变量。
+\item 求解第一组变量：Cv = 20.786156545000 J/(molK)；Cp = 29.100619163000 J/(molK)；Cp\_minus\_Cv = 8.3144626180000 J/(molK)；gamma = 1.4000000000000 ratio。
+\item 求解中间物理量：speed300 = 353.06838127555 m/s；isothermal\_speed\_scale = 298.39724464514 m/s；speed\_ratio = 1.1832159566199 ratio；internal\_energy300 = 6235.8469635000 J/mol。
+\item 其余输出与复算：enthalpy300 = 8730.1857489000 J/mol；sound\_speed600 = 499.31409324500 m/s；temperature\_speed\_ratio = 1.4142135623731 ratio。
+\item 检查平衡通量或概率归一，核对低压、高温与无驱动力极限是否符合题面限定的经典模型。
+\item 用独立数学表达式逐项验算答案向量，并避免将不同单位下数值直接相等比较。
+\item 本题仍在科学、版权及跨辑原创性待审队列，不因机器数值一致便宣称可供正式出版。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Cv = 20.7861565 J/(molK)；Cp = 29.1006192 J/(molK)；Cp\_minus\_Cv = 8.31446262 J/(molK)；gamma = 1.4 ratio；speed300 = 353.068381 m/s；isothermal\_speed\_scale = 298.397245 m/s；speed\_ratio = 1.18321596 ratio；internal\_energy300 = 6235.84696 J/mol；enthalpy300 = 8730.18575 J/mol；sound\_speed600 = 499.314093 m/s；temperature\_speed\_ratio = 1.41421356 ratio\par
+\noindent\textbf{模型前提：}
+理想稀溶液、硬球或单层均匀表面模型；独立数值审核不能替代实验确认。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV15-P247 · 动力学Langmuir表面吸附–脱附的弛豫时间}
+\noindent\textbf{题目}\par
+在恒定气相A压力p=0.2000 bar下，一个均一固体表面仅有空位*和单层占据A*两种局域状态，动力学模型dθ/dt=kads p(1−θ)−kdes θ，kads=0.1000 bar⁻¹ s⁻¹、kdes=0.01000 s⁻¹。初始覆盖度θ0=0，假设气相压力由大储库维持不变、没有表面相变和反应吸附。计算吸附伪一级速度、脱附速度、总弛豫速度、稳态覆盖度、20.00 s及100.0 s覆盖度、弛豫时间常数、达到稳态覆盖度90\%的时间、稳态空位分率与稳态吸附/脱附通量。检验稳态两通量相等。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item 理想化物理化学系统：在恒定气相A压力p=0.2000 bar下，一个均一固体表面仅有空位*和单层占据A*两种局域状态，动力学模型dθ/dt=kads p(1−θ)−kdes θ，kads=0.1000 bar⁻¹ s⁻¹、kdes=0.01000 s⁻¹。初始覆盖度θ0=0，假设气相压力由大储库维持不变、没有表面相变和反应吸附。计算吸附伪一级速度、脱附速度、总弛豫速度、稳态覆盖度、20.00 s及100.0 s覆盖度、弛豫时间常数、达到稳态覆盖度90\%的时间、稳态空位分率与稳态吸附/脱附通量。检验稳态两通量相等。
+\item 建立指定热力学、输运或统计状态方程：λ=kads p+kdes，θss=kads p/λ，θ(t)=θss(1−exp(−λt))。
+\item 将长度、摩尔数、绝对温度、压强和热量转换到各式所需单位，并区分密度和粒子数密度。
+\item 正确使用方程的边界和守恒假设，对热力学指数项采用无量纲变量。
+\item 求解第一组变量：adsorption\_rate = 0.020000000000000 s\textasciicircum{}-1；desorption\_rate = 0.010000000000000 s\textasciicircum{}-1；relaxation\_rate = 0.030000000000000 s\textasciicircum{}-1；steady\_cover = 0.66666666666667 fraction。
+\item 求解中间物理量：theta20 = 0.30079224260398 fraction；theta100 = 0.63347528775476 fraction；relaxation\_time = 33.333333333333 s；time\_to\_90percent = 76.752836433135 s。
+\item 其余输出与复算：vacancy\_fraction\_ss = 0.33333333333333 fraction；adsorption\_flux\_ss = 0.0066666666666667 events/(site*s)；desorption\_flux\_ss = 0.0066666666666667 events/(site*s)。
+\item 检查平衡通量或概率归一，核对低压、高温与无驱动力极限是否符合题面限定的经典模型。
+\item 用独立数学表达式逐项验算答案向量，并避免将不同单位下数值直接相等比较。
+\item 本题仍在科学、版权及跨辑原创性待审队列，不因机器数值一致便宣称可供正式出版。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+adsorption\_rate = 0.02 s\textasciicircum{}-1；desorption\_rate = 0.01 s\textasciicircum{}-1；relaxation\_rate = 0.03 s\textasciicircum{}-1；steady\_cover = 0.666666667 fraction；theta20 = 0.300792243 fraction；theta100 = 0.633475288 fraction；relaxation\_time = 33.3333333 s；time\_to\_90percent = 76.7528364 s；vacancy\_fraction\_ss = 0.333333333 fraction；adsorption\_flux\_ss = 0.00666666667 events/(site*s)；desorption\_flux\_ss = 0.00666666667 events/(site*s)\par
+\noindent\textbf{模型前提：}
+理想稀溶液、硬球或单层均匀表面模型；独立数值审核不能替代实验确认。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \end{document}
