@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 15,
   "status": "expert_review_pending",
-  "current_draft_count": 93,
+  "current_draft_count": 100,
   "expert_approved": 0,
-  "preliminary_flags": 93,
+  "preliminary_flags": 100,
   "pairs": [
     {
       "new_id": "UC-ADV15-I226",
@@ -562,6 +562,48 @@
       "new_id": "UC-ADV15-O247",
       "prior_id": null,
       "reason": "需要人审与第1至15辑全部有机模型和题干的原创性重叠。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P241",
+      "prior_id": null,
+      "reason": "专家逐式复核与前十五辑全部相似物理模型的数学同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P242",
+      "prior_id": null,
+      "reason": "专家逐式复核与前十五辑全部相似物理模型的数学同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P243",
+      "prior_id": null,
+      "reason": "专家逐式复核与前十五辑全部相似物理模型的数学同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P244",
+      "prior_id": null,
+      "reason": "专家逐式复核与前十五辑全部相似物理模型的数学同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P245",
+      "prior_id": null,
+      "reason": "专家逐式复核与前十五辑全部相似物理模型的数学同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P246",
+      "prior_id": null,
+      "reason": "专家逐式复核与前十五辑全部相似物理模型的数学同构。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-P247",
+      "prior_id": null,
+      "reason": "专家逐式复核与前十五辑全部相似物理模型的数学同构。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -1123,6 +1165,48 @@
       "model_family": "photochemistry-quantum-yield-photon-flux-molecular-conversion",
       "judgement": "pending_human_comparison",
       "screening": "已双途径数值复核，但科学和版权审核尚未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P241",
+      "model_family": "glucose-NaCl-ideal-osmotic-pressure-particle-count",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复核通过，科学与版权专家审校尚未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P242",
+      "model_family": "solid-liquid-Clapeyron-melting-curve-pressure-100bar",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复核通过，科学与版权专家审校尚未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P243",
+      "model_family": "Nernst-Einstein-ionic-mobility-two-charge-diffusion",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复核通过，科学与版权专家审校尚未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P244",
+      "model_family": "hard-sphere-mean-free-path-two-pressures-collision",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复核通过，科学与版权专家审校尚未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P245",
+      "model_family": "BET-multilayer-adsorption-linear-plot-monolayer",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复核通过，科学与版权专家审校尚未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P246",
+      "model_family": "diatomic-ideal-gas-adiabatic-speed-Cp-Cv",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复核通过，科学与版权专家审校尚未完成。"
+    },
+    {
+      "new_id": "UC-ADV15-P247",
+      "model_family": "kinetic-Langmuir-adsorption-desorption-coverage-relaxation",
+      "judgement": "pending_human_comparison",
+      "screening": "双路径数值复核通过，科学与版权专家审校尚未完成。"
     }
   ]
 }
