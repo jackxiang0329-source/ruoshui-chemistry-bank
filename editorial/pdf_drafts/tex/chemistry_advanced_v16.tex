@@ -23,7 +23,7 @@
 
 \begin{document}
 \begin{center}
-{\LARGE\bfseries 大学化学高阶综合题 · 第16辑 (14题)}\\[0.8em]
+{\LARGE\bfseries 大学化学高阶综合题 · 第16辑 (24题)}\\[0.8em]
 {\large 题目、分步解析与数值核验}\\[0.5em]
 {\small \textcolor{red!65!black}{审校稿：未经化学专家核准；禁止直接视为正式试卷或出版物}}
 \end{center}
@@ -126,6 +126,236 @@ framework\_charge = -4 e；Na\_charge = 4 e；formula\_mass = 808.54124 g/mol；
 anion\_charge = -3 e；W\_charge\_total = 72 e；oxygen\_charge\_total = -80 e；salt\_positive\_charge = 80 e；salt\_net\_charge = 0 e；W\_oxidation = 6 oxidation；anion\_mass = 2877.01376 g/mol；salt\_mass = 2945.98307 g/mol；W\_fraction = 0.748843407 fraction；O\_fraction = 0.217231391 fraction；W\_P\_ratio = 12 ratio；WVI\_d\_count = 0 electrons\par
 \noindent\textbf{模型前提：}
 理想计量与仪器线性假设；第二路径数值复算不代表实验和原创性专家批准。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-I255 · 尖晶石ZnAl₂O₄反位参数与四面体–八面体占位计量}
+\noindent\textbf{题目}\par
+一式量尖晶石ZnAl₂O₄在反位度x=0.3000时按(Zn₁₋ₓAlₓ)[ZnₓAl₂₋ₓ]O₄分布，圆括号为一个四面体位，方括号为两个八面体位。假设Zn为+2、Al为+3、O为−2，没有氧空位。求四面体Zn、Al数量、八面体Zn、Al数量、四面体Al分率、八面体Al位点分率、总Zn与Al库存、正电荷总数、氧负电荷总数、形式净电荷和正常尖晶石反位参数为0时四面体Zn分率。说明本题是位点计数，不是实际结构能判据。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **物理化学与计量假设**：一式量尖晶石ZnAl₂O₄在反位度x=0.3000时按(Zn₁₋ₓAlₓ)[ZnₓAl₂₋ₓ]O₄分布，圆括号为一个四面体位，方括号为两个八面体位。假设Zn为+2、Al为+3、O为−2，没有氧空位。求四面体Zn、Al数量、八面体Zn、Al数量、四面体Al分率、八面体Al位点分率、总Zn与Al库存、正电荷总数、氧负电荷总数、形式净电荷和正常尖晶石反位参数为0时四面体Zn分率。说明本题是位点计数，不是实际结构能判据。
+\item **主方程与推导**：tet(Zn,Al)=(1−x,x)，oct(Zn,Al)=(x,2−x)，总正电荷2Zn+3Al=8。
+\item 变量识别：按题设划分结构位点、平均氧化态、气相分子或活度形态，避免将不同粒子的计数基准混用。
+\item 独立建立电荷平衡、统计权重归一或原子/离子库存关系，并明确无量纲平衡常数的标准态。
+\item 基础解算：tet\_Zn = 0.7000000000000 sites；tet\_Al = 0.3000000000000 sites；oct\_Zn = 0.3000000000000 sites。
+\item 由守恒或统计分配进一步推导：oct\_Al = 1.700000000000 sites；tet\_Al\_fraction = 0.3000000000000 fraction；oct\_Al\_fraction = 0.8500000000000 fraction；total\_Zn = 1.000000000000 ions。
+\item 完整数值答案的其余字段：total\_Al = 2.000000000000 ions；positive\_charge = 8.000000000000 e；negative\_charge = -8.000000000000 e；charge\_residual = 0.000000000000 e；normal\_tet\_Zn\_fraction = 1.000000000000 fraction。
+\item 反向核验关键方程：例如阳离子与阴离子形式价相抵、硅氧端点与桥氧数相符、磁矩满足角动量耦合。
+\item 第二代数路径重算所有字段并按1e−9相对精度比较；所有单位与符号随结果保留。
+\item 本题为原创编辑草稿，跨辑同构、实验适用范围与版权须由专家核实。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+tet\_Zn = 0.7 sites；tet\_Al = 0.3 sites；oct\_Zn = 0.3 sites；oct\_Al = 1.7 sites；tet\_Al\_fraction = 0.3 fraction；oct\_Al\_fraction = 0.85 fraction；total\_Zn = 1 ions；total\_Al = 2 ions；positive\_charge = 8 e；negative\_charge = -8 e；charge\_residual = 0 e；normal\_tet\_Zn\_fraction = 1 fraction\par
+\noindent\textbf{模型前提：}
+题目使用理想位点、弱相互作用及所声明价态；专家学术和原创性审阅未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-I256 · 有限聚硅酸根Si₄O₁₁⁶⁻的桥氧计量与非桥氧数}
+\noindent\textbf{题目}\par
+一理想有限聚硅酸根具有化学式Si₄O₁₁⁶⁻，四个Si全部为四配位SiO₄，氧只分为连接两Si的桥氧BO及仅连接一个Si的非桥氧NBO；没有三配位氧或游离氧。设桥氧原子数B、非桥氧数N，要求满足B+N=11与2B+N=4×4。求B、N、平均每Si桥氧端点、平均非桥氧数、氧/硅原子比、Si形式正电荷、氧形式负电荷、净电荷、四面体角点总数、桥氧共享造成的角点减少数、每一个硅四面体平均被另一个Si连接的数目及平均非桥氧有效负电荷数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **物理化学与计量假设**：一理想有限聚硅酸根具有化学式Si₄O₁₁⁶⁻，四个Si全部为四配位SiO₄，氧只分为连接两Si的桥氧BO及仅连接一个Si的非桥氧NBO；没有三配位氧或游离氧。设桥氧原子数B、非桥氧数N，要求满足B+N=11与2B+N=4×4。求B、N、平均每Si桥氧端点、平均非桥氧数、氧/硅原子比、Si形式正电荷、氧形式负电荷、净电荷、四面体角点总数、桥氧共享造成的角点减少数、每一个硅四面体平均被另一个Si连接的数目及平均非桥氧有效负电荷数。
+\item **主方程与推导**：2B+N=16，B+N=11，所以B=5、N=6，形式净电荷=4×(+4)+11×(−2)。
+\item 变量识别：按题设划分结构位点、平均氧化态、气相分子或活度形态，避免将不同粒子的计数基准混用。
+\item 独立建立电荷平衡、统计权重归一或原子/离子库存关系，并明确无量纲平衡常数的标准态。
+\item 基础解算：bridging\_O = 5.000000000000 atoms；nonbridging\_O = 6.000000000000 atoms；BO\_bonds\_per\_Si = 2.500000000000 bonds/Si。
+\item 由守恒或统计分配进一步推导：NBO\_per\_Si = 1.500000000000 atoms/Si；O\_per\_Si = 2.750000000000 ratio；Si\_charge = 16.00000000000 e；O\_charge = -22.00000000000 e。
+\item 完整数值答案的其余字段：net\_charge = -6.000000000000 e；tetra\_corner\_count = 16.00000000000 corners；shared\_corner\_reduction = 5.000000000000 corners；network\_neighbors\_per\_Si = 2.500000000000 neighbors/Si；NBO\_charge\_count = 6.000000000000 charges。
+\item 反向核验关键方程：例如阳离子与阴离子形式价相抵、硅氧端点与桥氧数相符、磁矩满足角动量耦合。
+\item 第二代数路径重算所有字段并按1e−9相对精度比较；所有单位与符号随结果保留。
+\item 本题为原创编辑草稿，跨辑同构、实验适用范围与版权须由专家核实。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+bridging\_O = 5 atoms；nonbridging\_O = 6 atoms；BO\_bonds\_per\_Si = 2.5 bonds/Si；NBO\_per\_Si = 1.5 atoms/Si；O\_per\_Si = 2.75 ratio；Si\_charge = 16 e；O\_charge = -22 e；net\_charge = -6 e；tetra\_corner\_count = 16 corners；shared\_corner\_reduction = 5 corners；network\_neighbors\_per\_Si = 2.5 neighbors/Si；NBO\_charge\_count = 6 charges\par
+\noindent\textbf{模型前提：}
+题目使用理想位点、弱相互作用及所声明价态；专家学术和原创性审阅未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-I257 · 八面体d⁶离子高低自旋晶体场能与成对能竞争}
+\noindent\textbf{题目}\par
+假想八面体d⁶金属离子晶体场分裂Δo=18000 cm⁻¹，同一壳层电子配对能P=20000 cm⁻¹。高自旋t₂g⁴e\_g²含1对成对电子、4个未成对电子，低自旋t₂g⁶e\_g⁰含3对成对电子、0个未成对电子。t₂g每电子贡献−0.4Δo，e\_g贡献+0.6Δo。求两态CFSE、成对能贡献、含成对能总能量、两态能量差ELS−EHS、两态未成对电子数、按μ=√[n(n+2)]μB所得自旋磁矩、能量更低为高自旋的标志。忽略自旋轨道及结构畸变，不把该模型当成全部配合物的实验判据。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **物理化学与计量假设**：假想八面体d⁶金属离子晶体场分裂Δo=18000 cm⁻¹，同一壳层电子配对能P=20000 cm⁻¹。高自旋t₂g⁴e\_g²含1对成对电子、4个未成对电子，低自旋t₂g⁶e\_g⁰含3对成对电子、0个未成对电子。t₂g每电子贡献−0.4Δo，e\_g贡献+0.6Δo。求两态CFSE、成对能贡献、含成对能总能量、两态能量差ELS−EHS、两态未成对电子数、按μ=√[n(n+2)]μB所得自旋磁矩、能量更低为高自旋的标志。忽略自旋轨道及结构畸变，不把该模型当成全部配合物的实验判据。
+\item **主方程与推导**：EHS=(-0.4×4+0.6×2)Δ+P，ELS=(-0.4×6)Δ+3P；ΔE=−2Δ+2P。
+\item 变量识别：按题设划分结构位点、平均氧化态、气相分子或活度形态，避免将不同粒子的计数基准混用。
+\item 独立建立电荷平衡、统计权重归一或原子/离子库存关系，并明确无量纲平衡常数的标准态。
+\item 基础解算：CFSE\_HS\_cmInv = -7200.000000000 cm\textasciicircum{}-1；CFSE\_LS\_cmInv = -43200.00000000 cm\textasciicircum{}-1；pairing\_HS\_cmInv = 20000.00000000 cm\textasciicircum{}-1。
+\item 由守恒或统计分配进一步推导：pairing\_LS\_cmInv = 60000.00000000 cm\textasciicircum{}-1；energy\_HS\_cmInv = 12800.00000000 cm\textasciicircum{}-1；energy\_LS\_cmInv = 16800.00000000 cm\textasciicircum{}-1；LS\_minus\_HS = 4000.000000000 cm\textasciicircum{}-1。
+\item 完整数值答案的其余字段：unpaired\_HS = 4.000000000000 electrons；unpaired\_LS = 0.000000000000 electrons；mu\_HS\_muB = 4.898979485566 muB；mu\_LS\_muB = 0.000000000000 muB；HS\_lower\_flag = 1.000000000000 boolean。
+\item 反向核验关键方程：例如阳离子与阴离子形式价相抵、硅氧端点与桥氧数相符、磁矩满足角动量耦合。
+\item 第二代数路径重算所有字段并按1e−9相对精度比较；所有单位与符号随结果保留。
+\item 本题为原创编辑草稿，跨辑同构、实验适用范围与版权须由专家核实。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+CFSE\_HS\_cmInv = -7200 cm\textasciicircum{}-1；CFSE\_LS\_cmInv = -43200 cm\textasciicircum{}-1；pairing\_HS\_cmInv = 20000 cm\textasciicircum{}-1；pairing\_LS\_cmInv = 60000 cm\textasciicircum{}-1；energy\_HS\_cmInv = 12800 cm\textasciicircum{}-1；energy\_LS\_cmInv = 16800 cm\textasciicircum{}-1；LS\_minus\_HS = 4000 cm\textasciicircum{}-1；unpaired\_HS = 4 electrons；unpaired\_LS = 0 electrons；mu\_HS\_muB = 4.89897949 muB；mu\_LS\_muB = 0 muB；HS\_lower\_flag = 1 boolean\par
+\noindent\textbf{模型前提：}
+题目使用理想位点、弱相互作用及所声明价态；专家学术和原创性审阅未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-I258 · 两性氧化物表面位点的双质子化状态分布与净电荷}
+\noindent\textbf{题目}\par
+某氧化物表面每个反应位点只可能为≡SOH₂⁺、≡SOH、≡SO⁻。第一步去质子化pKa1=4.000（SOH₂⁺→SOH），第二步pKa2=9.000（SOH→SO⁻），溶液由外部缓冲液固定pH=6.000。理想活度与相同位点响应下，正电位点/中性位点=10\textasciicircum{}(pKa1−pH)，负电位点/中性位点=10\textasciicircum{}(pH−pKa2)。总位点浓度ST=0.01000 mol/L，忽略特异吸附和双电层修正。计算两个相对权重、分配函数、三态分率与浓度、每位点平均净形式电荷、每L净电荷当量mol及等电点pH近似(pKa1+pKa2)/2。指出表面酸碱与体相浓度由题设强制近似联系。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **物理化学与计量假设**：某氧化物表面每个反应位点只可能为≡SOH₂⁺、≡SOH、≡SO⁻。第一步去质子化pKa1=4.000（SOH₂⁺→SOH），第二步pKa2=9.000（SOH→SO⁻），溶液由外部缓冲液固定pH=6.000。理想活度与相同位点响应下，正电位点/中性位点=10\textasciicircum{}(pKa1−pH)，负电位点/中性位点=10\textasciicircum{}(pH−pKa2)。总位点浓度ST=0.01000 mol/L，忽略特异吸附和双电层修正。计算两个相对权重、分配函数、三态分率与浓度、每位点平均净形式电荷、每L净电荷当量mol及等电点pH近似(pKa1+pKa2)/2。指出表面酸碱与体相浓度由题设强制近似联系。
+\item **主方程与推导**：w+=10\textasciicircum{}(4−6)，w−=10\textasciicircum{}(6−9)，Z=1+w++w−，f+=w+/Z，f−=w−/Z。
+\item 变量识别：按题设划分结构位点、平均氧化态、气相分子或活度形态，避免将不同粒子的计数基准混用。
+\item 独立建立电荷平衡、统计权重归一或原子/离子库存关系，并明确无量纲平衡常数的标准态。
+\item 基础解算：positive\_weight = 0.01000000000000 ratio；negative\_weight = 0.001000000000000 ratio；partition\_Z = 1.011000000000 ratio。
+\item 由守恒或统计分配进一步推导：positive\_fraction = 0.009891196834817 fraction；neutral\_fraction = 0.9891196834817 fraction；negative\_fraction = 0.0009891196834817 fraction；positive\_site\_M = 0.00009891196834817 mol/L。
+\item 完整数值答案的其余字段：neutral\_site\_M = 0.009891196834817 mol/L；negative\_site\_M = 0.000009891196834817 mol/L；mean\_charge\_per\_site = 0.008902077151335 e/site；net\_charge\_mol\_per\_L = 0.00008902077151335 mol/L；zero\_charge\_pH = 6.500000000000 pH。
+\item 反向核验关键方程：例如阳离子与阴离子形式价相抵、硅氧端点与桥氧数相符、磁矩满足角动量耦合。
+\item 第二代数路径重算所有字段并按1e−9相对精度比较；所有单位与符号随结果保留。
+\item 本题为原创编辑草稿，跨辑同构、实验适用范围与版权须由专家核实。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+positive\_weight = 0.01 ratio；negative\_weight = 0.001 ratio；partition\_Z = 1.011 ratio；positive\_fraction = 0.00989119683 fraction；neutral\_fraction = 0.989119683 fraction；negative\_fraction = 0.000989119683 fraction；positive\_site\_M = 9.89119683e-05 mol/L；neutral\_site\_M = 0.00989119683 mol/L；negative\_site\_M = 9.89119683e-06 mol/L；mean\_charge\_per\_site = 0.00890207715 e/site；net\_charge\_mol\_per\_L = 8.90207715e-05 mol/L；zero\_charge\_pH = 6.5 pH\par
+\noindent\textbf{模型前提：}
+题目使用理想位点、弱相互作用及所声明价态；专家学术和原创性审阅未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-I259 · Y³⁺替代Zr⁴⁺氧化锆的氧空位与化学计量公式}
+\noindent\textbf{题目}\par
+理想Y掺杂ZrO₂材料中，Zr阳离子位的摩尔分率x=0.1600被Y³⁺替代，其他阳离子都是Zr⁴⁺。氧保持O²⁻，只靠氧空位补偿负电，不出现间隙离子或电子空穴。以每1 mol总阳离子为计量基准，化学式为Zr₁₋ₓYₓO₂₋ₓ/₂，理想萤石氧位点共有2 mol。求Zr和Y摩尔数、正常氧和空位mol、氧空位占可用氧位点的分率、阳离子正电荷与氧负电荷、总电荷残差、氧/总阳离子比、氧空位/Y原子比及每100个阳离子对应的氧空位数量。解释x是阳离子位分率，不是Y₂O₃添加物摩尔分数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **物理化学与计量假设**：理想Y掺杂ZrO₂材料中，Zr阳离子位的摩尔分率x=0.1600被Y³⁺替代，其他阳离子都是Zr⁴⁺。氧保持O²⁻，只靠氧空位补偿负电，不出现间隙离子或电子空穴。以每1 mol总阳离子为计量基准，化学式为Zr₁₋ₓYₓO₂₋ₓ/₂，理想萤石氧位点共有2 mol。求Zr和Y摩尔数、正常氧和空位mol、氧空位占可用氧位点的分率、阳离子正电荷与氧负电荷、总电荷残差、氧/总阳离子比、氧空位/Y原子比及每100个阳离子对应的氧空位数量。解释x是阳离子位分率，不是Y₂O₃添加物摩尔分数。
+\item **主方程与推导**：x=0.16，nVac=x/2，nO=2−x/2，Qcation=4(1−x)+3x=4−x。
+\item 变量识别：按题设划分结构位点、平均氧化态、气相分子或活度形态，避免将不同粒子的计数基准混用。
+\item 独立建立电荷平衡、统计权重归一或原子/离子库存关系，并明确无量纲平衡常数的标准态。
+\item 基础解算：Zr\_mol = 0.8400000000000 mol；Y\_mol = 0.1600000000000 mol；O\_mol = 1.920000000000 mol。
+\item 由守恒或统计分配进一步推导：vacancies\_mol = 0.08000000000000 mol；oxygen\_vacancy\_site\_fraction = 0.04000000000000 fraction；cation\_positive\_charge = 3.840000000000 e；oxygen\_negative\_charge = -3.840000000000 e。
+\item 完整数值答案的其余字段：charge\_residual = 0.000000000000 e；oxygen\_per\_cation = 1.920000000000 ratio；vacancy\_per\_Y = 0.5000000000000 ratio；vacancies\_per100\_cations = 8.000000000000 vacancies。
+\item 反向核验关键方程：例如阳离子与阴离子形式价相抵、硅氧端点与桥氧数相符、磁矩满足角动量耦合。
+\item 第二代数路径重算所有字段并按1e−9相对精度比较；所有单位与符号随结果保留。
+\item 本题为原创编辑草稿，跨辑同构、实验适用范围与版权须由专家核实。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Zr\_mol = 0.84 mol；Y\_mol = 0.16 mol；O\_mol = 1.92 mol；vacancies\_mol = 0.08 mol；oxygen\_vacancy\_site\_fraction = 0.04 fraction；cation\_positive\_charge = 3.84 e；oxygen\_negative\_charge = -3.84 e；charge\_residual = 0 e；oxygen\_per\_cation = 1.92 ratio；vacancy\_per\_Y = 0.5 ratio；vacancies\_per100\_cations = 8 vacancies\par
+\noindent\textbf{模型前提：}
+题目使用理想位点、弱相互作用及所声明价态；专家学术和原创性审阅未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-I260 · NO₂/N₂O₄气相缔合平衡与固定总压下单体分率}
+\noindent\textbf{题目}\par
+某理想NO₂(g)与N₂O₄(g)二聚体系2NO₂⇌N₂O₄，在给定温度的无量纲平衡常数Kp=(pD/p°)/(pM/p°)²=4.000，标准压p°=1.000 bar，总压力Ptot=1.000 bar。令单体摩尔分率y、二聚体摩尔分率1−y，则Kp=(1−y)/y²。给定系统总共有1.000 mol气相分子（NO₂和N₂O₄各算一个分子），求稳定物理根y、二聚体分率、两分压、单体/二聚体摩尔数、以NO₂单元计的总库存、NO₂单元在二聚体中的分率、Kp回代、平均每气相分子的NO₂单元数和二聚体/单体分压比。注意气相总摩尔数不等于NO₂化学计量单元mol数。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **物理化学与计量假设**：某理想NO₂(g)与N₂O₄(g)二聚体系2NO₂⇌N₂O₄，在给定温度的无量纲平衡常数Kp=(pD/p°)/(pM/p°)²=4.000，标准压p°=1.000 bar，总压力Ptot=1.000 bar。令单体摩尔分率y、二聚体摩尔分率1−y，则Kp=(1−y)/y²。给定系统总共有1.000 mol气相分子（NO₂和N₂O₄各算一个分子），求稳定物理根y、二聚体分率、两分压、单体/二聚体摩尔数、以NO₂单元计的总库存、NO₂单元在二聚体中的分率、Kp回代、平均每气相分子的NO₂单元数和二聚体/单体分压比。注意气相总摩尔数不等于NO₂化学计量单元mol数。
+\item **主方程与推导**：4y²+y−1=0，y=(√17−1)/8，pM=yP，pD=(1−y)P。
+\item 变量识别：按题设划分结构位点、平均氧化态、气相分子或活度形态，避免将不同粒子的计数基准混用。
+\item 独立建立电荷平衡、统计权重归一或原子/离子库存关系，并明确无量纲平衡常数的标准态。
+\item 基础解算：monomer\_mole\_fraction = 0.3903882032022 fraction；dimer\_mole\_fraction = 0.6096117967978 fraction；pNO2\_bar = 0.3903882032022 bar。
+\item 由守恒或统计分配进一步推导：pN2O4\_bar = 0.6096117967978 bar；monomer\_moles = 0.3903882032022 mol；dimer\_moles = 0.6096117967978 mol；NO2\_unit\_inventory\_mol = 1.609611796798 mol\_units。
+\item 完整数值答案的其余字段：dimer\_unit\_fraction = 0.7574643749637 fraction；Kp\_recovered = 4.000000000000 ratio；NO2\_units\_per\_molecule = 1.609611796798 units；dimer\_monomer\_pressure\_ratio = 1.561552812809 ratio。
+\item 反向核验关键方程：例如阳离子与阴离子形式价相抵、硅氧端点与桥氧数相符、磁矩满足角动量耦合。
+\item 第二代数路径重算所有字段并按1e−9相对精度比较；所有单位与符号随结果保留。
+\item 本题为原创编辑草稿，跨辑同构、实验适用范围与版权须由专家核实。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+monomer\_mole\_fraction = 0.390388203 fraction；dimer\_mole\_fraction = 0.609611797 fraction；pNO2\_bar = 0.390388203 bar；pN2O4\_bar = 0.609611797 bar；monomer\_moles = 0.390388203 mol；dimer\_moles = 0.609611797 mol；NO2\_unit\_inventory\_mol = 1.6096118 mol\_units；dimer\_unit\_fraction = 0.757464375 fraction；Kp\_recovered = 4 ratio；NO2\_units\_per\_molecule = 1.6096118 units；dimer\_monomer\_pressure\_ratio = 1.56155281 ratio\par
+\noindent\textbf{模型前提：}
+题目使用理想位点、弱相互作用及所声明价态；专家学术和原创性审阅未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-I261 · 双配体位点多孔框架竞争吸附的Langmuir覆盖度}
+\noindent\textbf{题目}\par
+一种假想金属有机框架只有一种均匀吸附位点，气体A、B与空位竞争吸附，统计权重wA=KA pA、wB=KB pB。已知KA=5.000 bar⁻¹、pA=0.2000 bar、KB=2.000 bar⁻¹、pB=0.1000 bar，位点总量Ns=0.01000 mol/g。假定没有多层吸附与侧向相互作用。求两物种吸附权重、配分函数、θA/θB/θ空位、A与B吸附量mol/g、总吸附量mol/g、选择性θA/θB、非空位覆盖度及每g剩余空位mol。还求若移去B仍维持pA时的A覆盖度，用于区分竞争吸附与单气体Langmuir。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **物理化学与计量假设**：一种假想金属有机框架只有一种均匀吸附位点，气体A、B与空位竞争吸附，统计权重wA=KA pA、wB=KB pB。已知KA=5.000 bar⁻¹、pA=0.2000 bar、KB=2.000 bar⁻¹、pB=0.1000 bar，位点总量Ns=0.01000 mol/g。假定没有多层吸附与侧向相互作用。求两物种吸附权重、配分函数、θA/θB/θ空位、A与B吸附量mol/g、总吸附量mol/g、选择性θA/θB、非空位覆盖度及每g剩余空位mol。还求若移去B仍维持pA时的A覆盖度，用于区分竞争吸附与单气体Langmuir。
+\item **主方程与推导**：Z=1+KA pA+KB pB，θA=wA/Z，θB=wB/Z。
+\item 变量识别：按题设划分结构位点、平均氧化态、气相分子或活度形态，避免将不同粒子的计数基准混用。
+\item 独立建立电荷平衡、统计权重归一或原子/离子库存关系，并明确无量纲平衡常数的标准态。
+\item 基础解算：weight\_A = 1.000000000000 ratio；weight\_B = 0.2000000000000 ratio；Z = 2.200000000000 ratio。
+\item 由守恒或统计分配进一步推导：coverage\_A = 0.4545454545455 fraction；coverage\_B = 0.09090909090909 fraction；vacancy\_fraction = 0.4545454545455 fraction；adsorbed\_A\_mol\_g = 0.004545454545455 mol/g。
+\item 完整数值答案的其余字段：adsorbed\_B\_mol\_g = 0.0009090909090909 mol/g；total\_adsorbed\_mol\_g = 0.005454545454545 mol/g；selectivity\_A\_B = 5.000000000000 ratio；occupied\_fraction = 0.5454545454545 fraction；vacant\_sites\_mol\_g = 0.004545454545455 mol/g；A\_coverage\_without\_B = 0.5000000000000 fraction。
+\item 反向核验关键方程：例如阳离子与阴离子形式价相抵、硅氧端点与桥氧数相符、磁矩满足角动量耦合。
+\item 第二代数路径重算所有字段并按1e−9相对精度比较；所有单位与符号随结果保留。
+\item 本题为原创编辑草稿，跨辑同构、实验适用范围与版权须由专家核实。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+weight\_A = 1 ratio；weight\_B = 0.2 ratio；Z = 2.2 ratio；coverage\_A = 0.454545455 fraction；coverage\_B = 0.0909090909 fraction；vacancy\_fraction = 0.454545455 fraction；adsorbed\_A\_mol\_g = 0.00454545455 mol/g；adsorbed\_B\_mol\_g = 0.000909090909 mol/g；total\_adsorbed\_mol\_g = 0.00545454545 mol/g；selectivity\_A\_B = 5 ratio；occupied\_fraction = 0.545454545 fraction；vacant\_sites\_mol\_g = 0.00454545455 mol/g；A\_coverage\_without\_B = 0.5 fraction\par
+\noindent\textbf{模型前提：}
+题目使用理想位点、弱相互作用及所声明价态；专家学术和原创性审阅未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-I262 · Cu₂O/CuO混相体系的平均铜价态与氧质量分数}
+\noindent\textbf{题目}\par
+某无水固态铜氧化物样品只由Cu₂O和CuO两相组成，Cu₂O为0.03000 mol，CuO为0.02000 mol，不存在金属Cu、氢氧化物及氧空位。Cu与O原子摩尔质量分别63.546和15.999 g/mol。求两相分别所含Cu原子与O原子mol、总Cu与总O库存、Cu的形式平均氧化态、Cu⁺/Cu²⁺原子分率、样品总质量、氧质量分率、Cu质量分率及用铜总形式正电荷和氧负电荷核对的电中性。注意平均价态按照铜原子数加权，而不是两相摩尔数简单算术平均。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **物理化学与计量假设**：某无水固态铜氧化物样品只由Cu₂O和CuO两相组成，Cu₂O为0.03000 mol，CuO为0.02000 mol，不存在金属Cu、氢氧化物及氧空位。Cu与O原子摩尔质量分别63.546和15.999 g/mol。求两相分别所含Cu原子与O原子mol、总Cu与总O库存、Cu的形式平均氧化态、Cu⁺/Cu²⁺原子分率、样品总质量、氧质量分率、Cu质量分率及用铜总形式正电荷和氧负电荷核对的电中性。注意平均价态按照铜原子数加权，而不是两相摩尔数简单算术平均。
+\item **主方程与推导**：nCu=2nCu2O+nCuO，nO=nCu2O+nCuO，vCu=2nO/nCu，wO=nO MO/(nCu MCu+nO MO)。
+\item 变量识别：按题设划分结构位点、平均氧化态、气相分子或活度形态，避免将不同粒子的计数基准混用。
+\item 独立建立电荷平衡、统计权重归一或原子/离子库存关系，并明确无量纲平衡常数的标准态。
+\item 基础解算：Cu\_from\_Cu2O\_mol = 0.06000000000000 mol；Cu\_from\_CuO\_mol = 0.02000000000000 mol；oxygen\_from\_Cu2O\_mol = 0.03000000000000 mol。
+\item 由守恒或统计分配进一步推导：oxygen\_from\_CuO\_mol = 0.02000000000000 mol；total\_Cu\_mol = 0.08000000000000 mol；total\_O\_mol = 0.05000000000000 mol；mean\_Cu\_valence = 1.250000000000 oxidation。
+\item 完整数值答案的其余字段：CuI\_fraction = 0.7500000000000 fraction；CuII\_fraction = 0.2500000000000 fraction；sample\_mass\_g = 5.883630000000 g；oxygen\_mass\_fraction = 0.1359619826536 fraction；copper\_mass\_fraction = 0.8640380173464 fraction；charge\_balance = 0.000000000000 e。
+\item 反向核验关键方程：例如阳离子与阴离子形式价相抵、硅氧端点与桥氧数相符、磁矩满足角动量耦合。
+\item 第二代数路径重算所有字段并按1e−9相对精度比较；所有单位与符号随结果保留。
+\item 本题为原创编辑草稿，跨辑同构、实验适用范围与版权须由专家核实。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+Cu\_from\_Cu2O\_mol = 0.06 mol；Cu\_from\_CuO\_mol = 0.02 mol；oxygen\_from\_Cu2O\_mol = 0.03 mol；oxygen\_from\_CuO\_mol = 0.02 mol；total\_Cu\_mol = 0.08 mol；total\_O\_mol = 0.05 mol；mean\_Cu\_valence = 1.25 oxidation；CuI\_fraction = 0.75 fraction；CuII\_fraction = 0.25 fraction；sample\_mass\_g = 5.88363 g；oxygen\_mass\_fraction = 0.135961983 fraction；copper\_mass\_fraction = 0.864038017 fraction；charge\_balance = 0 e\par
+\noindent\textbf{模型前提：}
+题目使用理想位点、弱相互作用及所声明价态；专家学术和原创性审阅未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-I263 · 无机碳酸体系三形态的酸碱分布与总碳守恒}
+\noindent\textbf{题目}\par
+298.15 K理想稀水溶液总无机碳CT=0.01000 mol/L，只含H₂CO₃*、HCO₃⁻与CO₃²⁻三个酸碱形态。宏观酸解离常数以pKa1=6.350、pKa2=10.330给定，外部缓冲池固定pH=8.300。设r1=[HCO₃⁻]/[H₂CO₃*]=10\textasciicircum{}(pH−pKa1)，r2=[CO₃²⁻]/[HCO₃⁻]=10\textasciicircum{}(pH−pKa2)。忽略离子强度效应与气液逸散。求r1、r2、三形态分率与浓度、碳库存回代、每mol碳平均负电荷、CO₃/H₂CO₃比及该pH下碳酸根相对于碳酸氢根比例。强调H₂CO₃*表示含溶解CO₂的表观形态。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **物理化学与计量假设**：298.15 K理想稀水溶液总无机碳CT=0.01000 mol/L，只含H₂CO₃*、HCO₃⁻与CO₃²⁻三个酸碱形态。宏观酸解离常数以pKa1=6.350、pKa2=10.330给定，外部缓冲池固定pH=8.300。设r1=[HCO₃⁻]/[H₂CO₃*]=10\textasciicircum{}(pH−pKa1)，r2=[CO₃²⁻]/[HCO₃⁻]=10\textasciicircum{}(pH−pKa2)。忽略离子强度效应与气液逸散。求r1、r2、三形态分率与浓度、碳库存回代、每mol碳平均负电荷、CO₃/H₂CO₃比及该pH下碳酸根相对于碳酸氢根比例。强调H₂CO₃*表示含溶解CO₂的表观形态。
+\item **主方程与推导**：Z=1+r1+r1r2；α0=1/Z，α1=r1/Z，α2=r1r2/Z，平均负电=α1+2α2。
+\item 变量识别：按题设划分结构位点、平均氧化态、气相分子或活度形态，避免将不同粒子的计数基准混用。
+\item 独立建立电荷平衡、统计权重归一或原子/离子库存关系，并明确无量纲平衡常数的标准态。
+\item 基础解算：ratio\_bicarbonate\_acid = 89.12509381337 ratio；ratio\_carbonate\_bicarbonate = 0.009332543007970 ratio；acid\_fraction = 0.01099422326757 fraction。
+\item 由守恒或统计分配进一步推导：bicarbonate\_fraction = 0.9798611801271 fraction；carbonate\_fraction = 0.009144596605376 fraction；acid\_M = 0.0001099422326757 mol/L；bicarbonate\_M = 0.009798611801271 mol/L。
+\item 完整数值答案的其余字段：carbonate\_M = 0.00009144596605376 mol/L；total\_carbon\_backcheck\_M = 0.01000000000000 mol/L；average\_negative\_charge = 0.9981503733378 e/carbon；carbonate\_acid\_ratio = 0.8317637711027 ratio；carbonate\_bicarbonate\_fraction = 0.009332543007970 fraction。
+\item 反向核验关键方程：例如阳离子与阴离子形式价相抵、硅氧端点与桥氧数相符、磁矩满足角动量耦合。
+\item 第二代数路径重算所有字段并按1e−9相对精度比较；所有单位与符号随结果保留。
+\item 本题为原创编辑草稿，跨辑同构、实验适用范围与版权须由专家核实。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+ratio\_bicarbonate\_acid = 89.1250938 ratio；ratio\_carbonate\_bicarbonate = 0.00933254301 ratio；acid\_fraction = 0.0109942233 fraction；bicarbonate\_fraction = 0.97986118 fraction；carbonate\_fraction = 0.00914459661 fraction；acid\_M = 0.000109942233 mol/L；bicarbonate\_M = 0.0097986118 mol/L；carbonate\_M = 9.14459661e-05 mol/L；total\_carbon\_backcheck\_M = 0.01 mol/L；average\_negative\_charge = 0.998150373 e/carbon；carbonate\_acid\_ratio = 0.831763771 ratio；carbonate\_bicarbonate\_fraction = 0.00933254301 fraction\par
+\noindent\textbf{模型前提：}
+题目使用理想位点、弱相互作用及所声明价态；专家学术和原创性审阅未完成。\par
+\noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
+\medskip\hrule\medskip
+\Needspace{7\baselineskip}
+\subsubsection*{UC-ADV16-I264 · Ce³⁺自由离子自旋轨道耦合的Landé因子与有效磁矩}
+\noindent\textbf{题目}\par
+一个孤立Ce³⁺离子具有4f¹构型，采用Hund规则基态L=3、S=1/2、J=5/2，忽略晶体场劈裂、磁各向异性和热激发多重态。Landé因子gJ=1+[J(J+1)+S(S+1)−L(L+1)]/[2J(J+1)]，有效磁矩μeff=gJ√[J(J+1)]μB。给定T=300.0 K、μB=9.2740100783×10⁻²⁴ J/T，NA=6.02214076×10²³ mol⁻¹，kB=1.380649×10⁻²³ J/K和μ0=1.25663706212×10⁻⁶ SI。求三个角动量平方量、Landé因子、磁矩μB与J/T、磁量子数多重度2J+1、饱和磁矩gJJμB、SI Curie摩尔磁化率χ=μ0NA μeff²/(3kBT)及χT。不可用只考虑S的spin-only磁矩替代。\par
+\medskip\noindent\textbf{分步解答}
+\begin{enumerate}
+\item **物理化学与计量假设**：一个孤立Ce³⁺离子具有4f¹构型，采用Hund规则基态L=3、S=1/2、J=5/2，忽略晶体场劈裂、磁各向异性和热激发多重态。Landé因子gJ=1+[J(J+1)+S(S+1)−L(L+1)]/[2J(J+1)]，有效磁矩μeff=gJ√[J(J+1)]μB。给定T=300.0 K、μB=9.2740100783×10⁻²⁴ J/T，NA=6.02214076×10²³ mol⁻¹，kB=1.380649×10⁻²³ J/K和μ0=1.25663706212×10⁻⁶ SI。求三个角动量平方量、Landé因子、磁矩μB与J/T、磁量子数多重度2J+1、饱和磁矩gJJμB、SI Curie摩尔磁化率χ=μ0NA μeff²/(3kBT)及χT。不可用只考虑S的spin-only磁矩替代。
+\item **主方程与推导**：gJ=1+[J(J+1)+S(S+1)−L(L+1)]/(2J(J+1))；χmol=μ0NA(gJ²J(J+1)μB²)/(3kBT)。
+\item 变量识别：按题设划分结构位点、平均氧化态、气相分子或活度形态，避免将不同粒子的计数基准混用。
+\item 独立建立电荷平衡、统计权重归一或原子/离子库存关系，并明确无量纲平衡常数的标准态。
+\item 基础解算：J\_Jplus1 = 8.750000000000 ratio；S\_Splus1 = 0.7500000000000 ratio；L\_Lplus1 = 12.00000000000 ratio。
+\item 由守恒或统计分配进一步推导：Lande\_g = 0.8571428571429 ratio；effective\_mu\_muB = 2.535462764186 muB；effective\_mu\_JT = 2.351390722821e-23 J/T；multiplet\_degeneracy = 6.000000000000 states。
+\item 完整数值答案的其余字段：saturation\_mu\_muB = 2.142857142857 muB；susceptibility\_SI\_m3mol = 3.367321438353e-8 m3/mol；chi\_times\_T = 0.00001010196431506 m3K/mol。
+\item 反向核验关键方程：例如阳离子与阴离子形式价相抵、硅氧端点与桥氧数相符、磁矩满足角动量耦合。
+\item 第二代数路径重算所有字段并按1e−9相对精度比较；所有单位与符号随结果保留。
+\item 本题为原创编辑草稿，跨辑同构、实验适用范围与版权须由专家核实。
+\end{enumerate}
+\noindent\textbf{答案摘要}\par
+J\_Jplus1 = 8.75 ratio；S\_Splus1 = 0.75 ratio；L\_Lplus1 = 12 ratio；Lande\_g = 0.857142857 ratio；effective\_mu\_muB = 2.53546276 muB；effective\_mu\_JT = 2.35139072e-23 J/T；multiplet\_degeneracy = 6 states；saturation\_mu\_muB = 2.14285714 muB；susceptibility\_SI\_m3mol = 3.36732144e-08 m3/mol；chi\_times\_T = 1.01019643e-05 m3K/mol\par
+\noindent\textbf{模型前提：}
+题目使用理想位点、弱相互作用及所声明价态；专家学术和原创性审阅未完成。\par
 \noindent\textcolor{red!65!black}{[跨辑去重未完成 · 草稿]} \par
 \medskip\hrule\medskip
 \subsection*{分析化学}
