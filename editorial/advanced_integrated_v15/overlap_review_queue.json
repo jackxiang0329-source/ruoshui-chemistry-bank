@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 15,
   "status": "expert_review_pending",
-  "current_draft_count": 74,
+  "current_draft_count": 80,
   "expert_approved": 0,
-  "preliminary_flags": 74,
+  "preliminary_flags": 80,
   "pairs": [
     {
       "new_id": "UC-ADV15-I226",
@@ -448,6 +448,42 @@
       "new_id": "UC-ADV15-P240",
       "prior_id": null,
       "reason": "与此前14辑及本辑的热力学、传输和统计模型进行人工逐式查重。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I245",
+      "prior_id": null,
+      "reason": "与前十四辑及本辑相关无机结构/平衡模型的学术重复风险待人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I246",
+      "prior_id": null,
+      "reason": "与前十四辑及本辑相关无机结构/平衡模型的学术重复风险待人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I247",
+      "prior_id": null,
+      "reason": "与前十四辑及本辑相关无机结构/平衡模型的学术重复风险待人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I248",
+      "prior_id": null,
+      "reason": "与前十四辑及本辑相关无机结构/平衡模型的学术重复风险待人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I249",
+      "prior_id": null,
+      "reason": "与前十四辑及本辑相关无机结构/平衡模型的学术重复风险待人审。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV15-I250",
+      "prior_id": null,
+      "reason": "与前十四辑及本辑相关无机结构/平衡模型的学术重复风险待人审。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -895,6 +931,42 @@
       "model_family": "Donnan-membrane-fixed-negative-charge-electroneutral-ideal-osmotic",
       "judgement": "pending_human_comparison",
       "screening": "双路径数值自测已通过，专家科研与版权审核仍待完成。"
+    },
+    {
+      "new_id": "UC-ADV15-I245",
+      "model_family": "rocksalt-ionic-radius-cubic-packing-density",
+      "judgement": "pending_human_comparison",
+      "screening": "第二种数学实现已做数值复核；版权和科学性专家审核待办。"
+    },
+    {
+      "new_id": "UC-ADV15-I246",
+      "model_family": "rhodium-phosphine-oxidative-addition-carbonyl-insertion-electron-count",
+      "judgement": "pending_human_comparison",
+      "screening": "第二种数学实现已做数值复核；版权和科学性专家审核待办。"
+    },
+    {
+      "new_id": "UC-ADV15-I247",
+      "model_family": "ferric-iodide-coupled-redox-Nernst-Q-equilibrium",
+      "judgement": "pending_human_comparison",
+      "screening": "第二种数学实现已做数值复核；版权和科学性专家审核待办。"
+    },
+    {
+      "new_id": "UC-ADV15-I248",
+      "model_family": "zinc-silver-galvanic-cell-charge-mass-electron-inventory",
+      "judgement": "pending_human_comparison",
+      "screening": "第二种数学实现已做数值复核；版权和科学性专家审核待办。"
+    },
+    {
+      "new_id": "UC-ADV15-I249",
+      "model_family": "aluminum-hydroxide-Ksp-pH-threshold-ionic-quotient",
+      "judgement": "pending_human_comparison",
+      "screening": "第二种数学实现已做数值复核；版权和科学性专家审核待办。"
+    },
+    {
+      "new_id": "UC-ADV15-I250",
+      "model_family": "metal-three-identical-isotope-sites-binomial-mass-spectrum",
+      "judgement": "pending_human_comparison",
+      "screening": "第二种数学实现已做数值复核；版权和科学性专家审核待办。"
     }
   ]
 }

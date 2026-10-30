@@ -100,6 +100,15 @@ Object.assign(witnesses,{
 "UC-ADV15-P240":()=>{let r=Math.sqrt(.02),p=(r+.1)/2,m=(r-.1)/2,tot=p+m;return[p,m,p/.05,-R*298.15/F*Math.log(p/.05)*1000,R*298.15*(tot-.1)*1000,p-.05,1-m/.05,.0025,0,tot/.1]}
 });
 
+Object.assign(witnesses,{
+"UC-ADV15-I245":()=>{let r=.18,dist=.282,cube=(.564e-7)**3,molar=58.44,mass=4*molar/6.02214076e23;return[r,dist,cube/1e-21,molar,mass,mass/cube,4/cube,4,4,4-4,r/.102]},
+"UC-ADV15-I246":()=>{let d1=9-1,d2=9-3,l1=4+2+2,l2=l1+4;return[1,3,d1,d2,l1,l2,d1+l1,d2+l2,l2-l1-2,2,4,6]},
+"UC-ADV15-I247":()=>{let E=.771-.535,q=(.02/.01/.1)**2,k=2*96485.33212*E/(8.314462618*298.15),e=(R*298.15/(2*F))*(k-Math.log(q));return[E,-2*F*E/1000,k,Math.log10(Math.exp(k)),q,e,-2*F*e/1000,Math.exp(k),+(q<Math.exp(k)),2]},
+"UC-ADV15-I248":()=>{let E=180/96485.33212,nZn=E/2,mAg=E*107.8682,mZn=nZn*65.38;return[180,E,nZn,mZn,E,mAg,2,(2*107.8682)/65.38,1.5*E*6.02214076e23,nZn]},
+"UC-ADV15-I249":()=>{let x=1e-10,poh=10,pH=4,a=1e-10,b=1e-9,q=.001*a*a*a,w=.001*b*b*b;return[x,poh,pH,a,b,q,w,q/1e-33,w/1e-33,0,1000]},
+"UC-ADV15-I250":()=>{let s=[.7**3,3*.3*.7**2,3*.3**2*.7,.3**3],mean=s.reduce((a,b,i)=>a+i*b,0),varr=s.reduce((a,b,i)=>a+(i-mean)**2*b,0);return[s[0],s[1],s[2],s[3],100*s[1]/s[0],100*s[2]/s[0],100*s[3]/s[0],mean,varr,1-s[0],s.reduce((x,y)=>x+y,0)]}
+});
+
 const starts={inorganic:["I",226],analytical:["A",226],organic:["O",223],physical:["P",223]};
 const ids=new Set(),titles=new Set(),models=new Set(),counts={};
 for(const [subject,[L,start]] of Object.entries(starts)){
