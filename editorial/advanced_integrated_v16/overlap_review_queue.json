@@ -2,9 +2,9 @@
   "schema_version": 1,
   "series": 16,
   "status": "expert_review_pending",
-  "current_draft_count": 11,
+  "current_draft_count": 14,
   "expert_approved": 0,
-  "preliminary_flags": 11,
+  "preliminary_flags": 14,
   "pairs": [
     {
       "new_id": "UC-ADV16-I251",
@@ -70,6 +70,24 @@
       "new_id": "UC-ADV16-O250",
       "prior_id": null,
       "reason": "专家检查题型跨辑同构的风险",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-P248",
+      "prior_id": null,
+      "reason": "跨辑物理模型查重及科学性评审待人工确认。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-P249",
+      "prior_id": null,
+      "reason": "跨辑物理模型查重及科学性评审待人工确认。",
+      "judgement": "pending_human_comparison"
+    },
+    {
+      "new_id": "UC-ADV16-P250",
+      "prior_id": null,
+      "reason": "跨辑物理模型查重及科学性评审待人工确认。",
       "judgement": "pending_human_comparison"
     }
   ],
@@ -139,6 +157,24 @@
       "model_family": "organic-liquid-liquid-extraction-split-solvent-portions",
       "judgement": "pending_human_comparison",
       "screening": "双路径数值复算通过，人审未完成"
+    },
+    {
+      "new_id": "UC-ADV16-P248",
+      "model_family": "Morse-vibration-anharmonic-level-transitions-dissociation",
+      "judgement": "pending_human_comparison",
+      "screening": "数值双路径核验通过，专家评审尚待完成。"
+    },
+    {
+      "new_id": "UC-ADV16-P249",
+      "model_family": "Knudsen-nitrogen-diffusion-two-pore-radii",
+      "judgement": "pending_human_comparison",
+      "screening": "数值双路径核验通过，专家评审尚待完成。"
+    },
+    {
+      "new_id": "UC-ADV16-P250",
+      "model_family": "Hill-binding-cooperativity-two-exponent-slope",
+      "judgement": "pending_human_comparison",
+      "screening": "数值双路径核验通过，专家评审尚待完成。"
     }
   ]
 }

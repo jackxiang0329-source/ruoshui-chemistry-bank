@@ -18,6 +18,12 @@ Object.assign(witnesses,{
 "UC-ADV16-O250":()=>{let f=2/7,g=6/11,t=g*g*g;return[f,1-f,.01*f,g,t,.01*t,1-t,f-t,t/f,.1*f]}
 });
 
+Object.assign(witnesses,{
+"UC-ADV16-P248":()=>{let a=995,b=2955,c=4875,De=50000;return[a,b,c,1960,1920,40,1e7/1960,De,a,a/De,c-a]},
+"UC-ADV16-P249":()=>{let v=Math.sqrt(8*8.314462618*298.15/(Math.PI*.0280134)),d=2*v*1e-8/3;return[d,2*d,1000*d,2000*d,2,2,v,10*d,10*d*6.02214076e23,1e-6/(2*d),1e-6/(4*d)]},
+"UC-ADV16-P250":()=>[.2,.5,.8,.8,.5,.2,.25,1,4,.5,50,.6,16,2]
+});
+
 const starts={inorganic:["I",251],analytical:["A",251],organic:["O",248],physical:["P",248]};
 const ids=new Set(),titles=new Set(),families=new Set(),counts={};
 for(const [sub,[letter,start]] of Object.entries(starts)){
