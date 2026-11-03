@@ -1,0 +1,64 @@
+[submodule "third_party/ChemTrain/chemtrain-daily"]
+	path = third_party/ChemTrain/chemtrain-daily
+	url = https://github.com/ChemTrain/chemtrain-daily.git
+	branch = main
+
+[submodule "third_party/ChemTrain/pka-learn"]
+	path = third_party/ChemTrain/pka-learn
+	url = https://github.com/ChemTrain/pka-learn.git
+	branch = main
+
+[submodule "third_party/ChemTrain/reaction-learn"]
+	path = third_party/ChemTrain/reaction-learn
+	url = https://github.com/ChemTrain/reaction-learn.git
+	branch = main
+
+[submodule "third_party/ChemTrain/pg-learn"]
+	path = third_party/ChemTrain/pg-learn
+	url = https://github.com/ChemTrain/pg-learn.git
+	branch = main
+
+[submodule "third_party/ChemTrain/tmc-learn"]
+	path = third_party/ChemTrain/tmc-learn
+	url = https://github.com/ChemTrain/tmc-learn.git
+	branch = main
+
+[submodule "third_party/ChemTrain/reactivity-learn"]
+	path = third_party/ChemTrain/reactivity-learn
+	url = https://github.com/ChemTrain/reactivity-learn.git
+	branch = main
+
+[submodule "third_party/ChemTrain/photoredox-learn"]
+	path = third_party/ChemTrain/photoredox-learn
+	url = https://github.com/ChemTrain/photoredox-learn.git
+	branch = main
+
+[submodule "third_party/ChemTrain/radical-learn"]
+	path = third_party/ChemTrain/radical-learn
+	url = https://github.com/ChemTrain/radical-learn.git
+	branch = main
+
+[submodule "third_party/ChemLit-QA"]
+	path = third_party/ChemLit-QA
+	url = https://github.com/geemi725/ChemLit-QA.git
+	branch = main
+
+[submodule "third_party/chemie-eroberung"]
+	path = third_party/chemie-eroberung
+	url = https://github.com/gluonMaster/chemie-eroberung.git
+	branch = main
+
+[submodule "third_party/benchmarks/GPQA"]
+	path = third_party/benchmarks/GPQA
+	url = https://github.com/idavidrein/gpqa.git
+	branch = main
+
+[submodule "third_party/benchmarks/stemQ"]
+	path = third_party/benchmarks/stemQ
+	url = https://github.com/idrori/stemQ.git
+	branch = main
+
+[submodule "third_party/benchmarks/RetChemQA"]
+	path = third_party/benchmarks/RetChemQA
+	url = https://github.com/nakulrampal/RetChemQA.git
+	branch = main

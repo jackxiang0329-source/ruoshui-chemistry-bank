@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "date": "2026-10-26",
+  "description": "Remote GitHub pinned upstream HTML examined; mols are compact underlying records, not unique exam questions",
+  "catalogs": [
+    {
+      "repo": "ChemTrain/pka-learn",
+      "file": "pka_learn.html",
+      "path": "third_party/ChemTrain/pka-learn/pka_learn.html",
+      "data_key": "PKA_DATA",
+      "git_blob_sha": "de1e8441908198301a7e82da76fd5febd9de8900",
+      "mols": 207,
+      "sets": 7,
+      "kind": "molecular rendering, acid-base sets, experimental pKa caution"
+    },
+    {
+      "repo": "ChemTrain/radical-learn",
+      "file": "radical_learn.html",
+      "path": "third_party/ChemTrain/radical-learn/radical_learn.html",
+      "data_key": "RL_DATA",
+      "git_blob_sha": "7a81ac8756d00a0bd2f759f08b5c217e136e7937",
+      "mols": 49,
+      "sets": 0,
+      "radicals": 3,
+      "kind": "radical chemistry base records"
+    },
+    {
+      "repo": "ChemTrain/reactivity-learn",
+      "file": "reactivity_learn.html",
+      "path": "third_party/ChemTrain/reactivity-learn/reactivity_learn.html",
+      "data_key": "RL_DATA",
+      "git_blob_sha": "9779b9167ff4af2445a1efe845db3119928f6d12",
+      "mols": 337,
+      "sets": 11,
+      "kind": "nucleophilicity/electrophilicity, Mayr values excluded from licence"
+    },
+    {
+      "repo": "ChemTrain/photoredox-learn",
+      "file": "photoredox_learn.html",
+      "path": "third_party/ChemTrain/photoredox-learn/photoredox_learn.html",
+      "data_key": "RL_DATA",
+      "git_blob_sha": "5351d56c165fd581edbc66e71f80c3a42bcdb738",
+      "mols": 145,
+      "sets": 6,
+      "kind": "photoredox structures, third-party electrochemical values caution"
+    }
+  ],
+  "not_yet_parsed": [
+    "chemtrain-daily 9.7 MB built HTML",
+    "reaction-learn 3.5 MB built HTML",
+    "pg-learn 3.5 MB built HTML",
+    "tmc-learn 1.2 MB built HTML"
+  ],
+  "bounds": "No claim of independent question count or permission to relicense measured third-party values; 738 = sum of record counts with possible overlaps"
+}
