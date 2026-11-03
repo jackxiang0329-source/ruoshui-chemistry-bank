@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use Radical Learn in teaching or research, please cite it as below."
+title: "Radical Learn"
+type: software
+authors:
+  - family-names: Bindschaedler
+    given-names: Quentin
+    affiliation: ChemTrain
+abstract: "A Quizlet-style trainer for radical philicity, polarity matching and the regioselectivity of radical reactions, in one HTML file."
+url: "https://chemtrain.github.io/radical-learn/radical_learn.html"
+repository-code: "https://github.com/ChemTrain/radical-learn"
+license:
+  - MIT
+  - CC-BY-4.0
+date-released: 2026-10-22
+keywords:
+  - radical philicity
+  - polarity matching
+  - radical chemistry
+  - regioselectivity
+  - chemistry education

@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-26",
+  "kind": "verified_extract_of_embedded_content_not_licensed_validation",
+  "items": [
+    {
+      "repo": "ChemTrain/pka-learn",
+      "revision": "5250dce7a367be0e767b2e3e7a26aa50c27b12a0",
+      "source_blob": "de1e8441908198301a7e82da76fd5febd9de8900",
+      "raw": 253,
+      "unique": 253,
+      "removed": 0,
+      "molecule_drawings": 207,
+      "groups": 7,
+      "group_types": {
+        "card": 253,
+        "regio": 0,
+        "radical": 0,
+        "redox": 0
+      }
+    },
+    {
+      "repo": "ChemTrain/reactivity-learn",
+      "revision": "be6505465d92fc983aabc40bd9863de791b0d2cf",
+      "source_blob": "9779b9167ff4af2445a1efe845db3119928f6d12",
+      "raw": 301,
+      "unique": 301,
+      "removed": 0,
+      "molecule_drawings": 337,
+      "groups": 16,
+      "group_types": {
+        "card": 240,
+        "regio": 61,
+        "radical": 0,
+        "redox": 0
+      }
+    },
+    {
+      "repo": "ChemTrain/photoredox-learn",
+      "revision": "260cf0553b42fc510de655d68bad902af7f94e38",
+      "source_blob": "5351d56c165fd581edbc66e71f80c3a42bcdb738",
+      "raw": 197,
+      "unique": 197,
+      "removed": 0,
+      "molecule_drawings": 145,
+      "groups": 9,
+      "group_types": {
+        "card": 143,
+        "regio": 0,
+        "radical": 0,
+        "redox": 54
+      }
+    },
+    {
+      "repo": "ChemTrain/radical-learn",
+      "revision": "a1c6d4cb567db370fec10a2f258048f7e89f466c",
+      "source_blob": "7a81ac8756d00a0bd2f759f08b5c217e136e7937",
+      "raw": 50,
+      "unique": 50,
+      "removed": 0,
+      "molecule_drawings": 49,
+      "groups": 5,
+      "group_types": {
+        "card": 0,
+        "regio": 9,
+        "radical": 41,
+        "redox": 0
+      }
+    }
+  ],
+  "total_extracted": 801,
+  "total_within_source_exact_duplicates": 0,
+  "policy": "All external_quarantine. Authors must be credited; third-party pKa, Mayr, redox experimental measurements require original citations; no approved publication or formal tests.",
+  "duplicate_key": "kind+section_id+exact JSON content; does not detect chemical synonymy or semantic duplicates"
+}
