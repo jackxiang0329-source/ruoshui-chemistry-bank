@@ -1,0 +1,22 @@
+name: Validate new external chemistry imports
+on:
+  pull_request:
+    paths:
+      - 'imports/kankoor/**'
+      - 'imports/organic-reactions/**'
+      - 'third_party/kankoor/**'
+      - 'third_party/Organic-Chemistry-Quiz-JS/**'
+      - 'scripts/audit-additional-chemistry-imports.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/audit-additional-chemistry-imports.mjs
