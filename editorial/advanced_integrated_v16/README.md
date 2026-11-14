@@ -1,23 +1,17 @@
-# 第十六辑 · 大学化学高阶原创综合题（专家待审）
+# 第十六辑 · 大学化学高阶综合题
 
-目标四科各25、合计100题。当前 **54/100**，无机14、分析14、有机13、物化13；专家批准0。
+已录入 54 / 100 题，全部待专家审校，正式批准数为 0。
 
-[无机4题](batch01_inorganic.md) · [分析4题](batch01_analytical.md) · [数值QA](../../scripts/check-advanced-authored-v16.mjs) · [跨辑审阅队列](overlap_review_queue.json)。每题提供完整中文题干、逐步解析与双途径复算。后续从 I265、A265、O261、P261 继续。
+- [54 道题与解答合订本](solutions.md)
+- [数值复算脚本](../../scripts/check-advanced-authored-v16.mjs)
+- [跨辑模型复核队列](overlap_review_queue.json)
+- [合订前的分批稿和录入记录](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/tree/archive/pre-round3-consolidation/editorial/advanced_integrated_v16)
 
-[有机 O248–O250 三题](batch01_organic.md)。
+| 学科 | 题数 | 题号 | 结构化源稿 |
+|---|---:|---|---|
+| 无机化学 | 14 / 25 | I251–I264 | [inorganic.jsonl](inorganic.jsonl) |
+| 分析化学 | 14 / 25 | A251–A264 | [analytical.jsonl](analytical.jsonl) |
+| 有机化学 | 13 / 25 | O248–O260 | [organic.jsonl](organic.jsonl) |
+| 物理化学 | 13 / 25 | P248–P260 | [physical.jsonl](physical.jsonl) |
 
-[物理化学 P248–P250 三题](batch01_physical.md)。本轮合计40题：第十五辑收官26题，第十六辑新录14题；四科各10题，全部有中文解析和数值复算，正式审核仍待办。
-
-[第二批无机 I255–I264 十题](batch02_inorganic_I255_I264.md)，有双途径答案向量及人工重复模型待办。
-
-[分析十题 A255–A264](batch02_analytical_A255_A264.md)，含Gran滴定、同位素稀释、DLS、双波长UV等数值复算。
-
-[有机十题 O251–O260](batch02_organic_O251_O260.md)，包括立体异构化、同位素交换、聚合链统计与酯交换。
-
-[物化10题 P251–P260](batch02_physical_P251_P260.md)，含维里气体、Nernst、传热、配分与Onsager。
-
-本轮全部新增40题（四科各10），每题有题干、方程、分步解析、数值结果及独立计算见证。全辑总数54/100，尚需科学专家及跨辑原创性审定。
-
-**跨辑去重修订**：A256、A257、O252、O253已替换与第14/15辑高度近似的模型；详见查重队列，所有题仍待人审。
-
-**查重修订第二批**：I261、O257–O258、P251、P255、P259 已替换历史近似模型，绝不把仅修改参数旧题计作新增原创题；专家审定依然待办。
+续编从 I265、A265、O261、P261 开始。旧稿修订和模型替换见跨辑复核队列与分批记录。

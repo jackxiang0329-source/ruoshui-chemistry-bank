@@ -1,21 +1,19 @@
-# 第十四辑 · 高阶大学化学题库（待专家审查）
+# 第十四辑 · 大学化学高阶综合题
 
-目标100题、四科各25；当前 **100/100**：无机25题 I201–I225、分析25题 A201–A225、有机25题 O198–O222、物化25题 P198–P222。
+已录入 100 / 100 题，全部待专家审校，正式批准数为 0。
 
-[首批14题](first_14_problems_I201_I204_A201_A204_O198_O200_P198_P200.md) · [第二批16题](batch02_16_problems_I205_I208_A205_A208_O201_O204_P201_P204.md) · [第三批16题](batch03_16_problems_I209_I212_A209_A212_O205_O208_P205_P208.md) · [第四批8题](batch04_8_problems_I213_I214_A213_A214_O209_O210_P209_P210.md)。四科JSONL及[数值QA](../../scripts/check-advanced-authored-v14.mjs)、[跨辑人工复核队列](overlap_review_queue.json)。
+- [100 道题与解答合订本](solutions.md)
+- [数值复算脚本](../../scripts/check-advanced-authored-v14.mjs)
+- [跨辑模型复核队列](overlap_review_queue.json)
+- [合订前的分批稿和录入记录](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/tree/archive/pre-round3-consolidation/editorial/advanced_integrated_v14)
 
-第十四辑100题已录满；第十五辑下一号为 I226、A226、O223、P223。专家批准0；正式发布0；新增题目`independent_numeric_check=false`，尚需独立实现与专家复核。
+| 学科 | 题数 | 题号 | 结构化源稿 |
+|---|---:|---|---|
+| 无机化学 | 25 / 25 | I201–I225 | [inorganic.jsonl](inorganic.jsonl) |
+| 分析化学 | 25 / 25 | A201–A225 | [analytical.jsonl](analytical.jsonl) |
+| 有机化学 | 25 / 25 | O198–O222 | [organic.jsonl](organic.jsonl) |
+| 物理化学 | 25 / 25 | P198–P222 | [physical.jsonl](physical.jsonl) |
 
-## 跨辑高相似度风险（2026-10-29初筛）
+## 跨辑相似模型初筛
 
 本轮40条编辑记录与第10–13辑400条旧稿的模型族词汇进行初筛，已在[交叉复核队列](overlap_review_queue.json)增加15组具体的既有题候选，其中10组相似度≥0.40，另5组相似度约0.33–0.38。**这并非证明15题重复，也不证明其余25题独立**；尤其经典成核、Carothers缩聚、Donnan凝胶、Diels–Alder分支、NaCl衍射、Poisson活性聚合与BET吸附的核心方程高度接近旧稿，必须逐式审查并在必要时替换。第1–9辑尚未完成同等筛查，不能把40条新增记录称作40种经验证的原创模型。全部继续维持不可发布、待专家审核。
-
-[独立手动无机十题 I215–I224](batch05_I215_I224.md)。
-
-[手动新增分析十题 A215–A224](batch05_A215_A224.md)。
-
-[手动新增有机十题 O211–O220](batch05_O211_O220.md)。
-
-**本轮即时手动新录入40题**：无机[I215–I224](batch05_I215_I224.md)、分析[A215–A224](batch05_A215_A224.md)、有机[O211–O220](batch05_O211_O220.md)、物化[P211–P220](batch05_P211_P220.md)，各10题。全套结构化题干、完整解析、数值见证与审稿队列已提交，专家正式批准仍为0。
-
-[本轮收官六道逐步解析](batch06_closing_six_I225_A225_O221_O222_P221_P222.md)。本辑100/100；正式批准为0。

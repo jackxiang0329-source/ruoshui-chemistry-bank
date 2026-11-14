@@ -1,10 +1,21 @@
-# 大学化学高阶综合题 · 第十辑完整阅读稿
+# 第十辑 · 100 道题与解答
 
-> 当前80/100条待审题，四科各20；机器数值复算不代表专家审定。
+本辑题目均待专家审校。
 
-## 无机化学（20/25）
+| 批次 | 题数 | 题号 |
+|---|---:|---|
+| [前 96 题](#batch-01) | 96 | I101–I124、A101–A124、O98–O121、P98–P121 |
+| [最后四题](#batch-02) | 4 | I125、A125、O122、P122 |
 
-### UC-ADV10-I101　反铁磁二核交换耦合的自旋统计与磁响应
+<a id="batch-01"></a>
+
+## 大学化学高阶综合题 · 第十辑完整阅读稿
+
+> 本段收录前96道待审题，四科各24道；机器数值复算不代表专家审定。
+
+### 无机化学（24/25）
+
+#### UC-ADV10-I101　反铁磁二核交换耦合的自旋统计与磁响应
 
 **题目** 假想二核过渡金属配合物中各中心自旋S1=S2=1/2，采用各向同性Heisenberg交换H=J S1·S2，J>0代表反铁磁。低能单态S=0简并度1，高能三重态S=1简并度3，能隙J=2.400kJ/mol。温度280.0K且达到热平衡，忽略激发轨道和强场自旋混合。求三重态和单态布居、磁化率相对两个不耦合S=1/2中心Curie磁化率的比值、平均激发能与摩尔热容，并验证高温磁化率的正确极限。
 
@@ -32,7 +43,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I102　质子耦合电子转移方形热力学循环与pH形式电势
+#### UC-ADV10-I102　质子耦合电子转移方形热力学循环与pH形式电势
 
 **题目** 某假想无机金属配合物发生一电子氧化还原，氧化态OxH与还原态RedH可分别失去一个质子成为Ox和Red。已知pKa(OxH)=5.000、pKa(RedH)=8.000，在298.15K时质子化态一电子标准还原电位OxH+e−→RedH为E°H=0.6200V。忽略进一步质子化及其它配位变化，假设四种物种理想且氧化态与还原态总活度相等。求完全去质子化的Ox/Red一电子标准还原电势、pH=6.500时的形式电势、两态在该pH下的质子化分数，以及pH=2.000的形式电势，并说明高低pH极限。
 
@@ -60,7 +71,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I103　Born–Landé离子晶体静电晶格能与NaCl型密度校核
+#### UC-ADV10-I103　Born–Landé离子晶体静电晶格能与NaCl型密度校核
 
 **题目** 假想NaCl型立方一价离子晶体，Madelung常数A_M=1.74756、最近邻正负离子距离r0=0.2820nm、Born排斥指数n=9.000。用ε0=8.8541878128×10^-12F/m、e=1.602176634×10^-19C、NA=6.02214076×10^23mol^-1计算每mol化学式单元晶格生成能U=−NA A_M e²/(4πε0r0)(1−1/n)。另给假想摩尔质量58.44g/mol、常规NaCl型晶胞含4个化学式单元，几何晶格常数a=2r0。求不含短程排斥修正的库仑能量大小、晶格生成能、反向解离能、理论晶体密度和排斥校正所占库仑项百分比，并核对负号代表晶格形成放热。
 
@@ -88,7 +99,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I104　尖晶石反位阳离子分布的构型熵与平衡反位度
+#### UC-ADV10-I104　尖晶石反位阳离子分布的构型熵与平衡反位度
 
 **题目** 考虑假想正常尖晶石AB₂O₄，其中A为二价、B为三价，氧为二价；每化学式单位有1个四面体阳离子位与2个八面体阳离子位。设反位度x使四面体位组成为A_(1−x)B_x、八面体位组成为[A_x B_(2−x)]，0≤x≤1。每摩尔化学式单位的反位能代价为Δx，Δ=12.00 kJ/mol；T=1000.0 K，忽略相互作用并将两类位点视作各自理想混合。求平衡x、八面体位A和B的位点分数、每摩尔化学式单位构型熵S_conf/R、相对x=0有序态的平衡自由能G−G₀，并说明Δ=0与低温极限。
 
@@ -116,7 +127,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I105　氧空位—电子缺陷耦合平衡的氧分压负六分之一次律
+#### UC-ADV10-I105　氧空位—电子缺陷耦合平衡的氧分压负六分之一次律
 
 **题目** 假想还原性氧化物的氧亚晶格可按Kröger–Vink记号发生氧逸出反应 O_O ⇌ V_O^{••}+2e′+(1/2)O2(g)。将所有缺陷浓度规范化到相同参考位点浓度后用无量纲分数v表示双正氧空位、n表示电子，氧气活度为pO2/p°。假设只有这两种电荷缺陷，故局域电中性n=2v；质量作用常数K=v n² (pO2/p°)^{1/2}=1.000×10^-12。温度固定、气体氧分压初始0.04000bar、p°=1bar。求v、n；当氧分压变为0.1600bar时的v、空位浓度比例及d ln v/d ln pO2，说明该指数来自哪两条独立约束。
 
@@ -144,7 +155,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I106　无机半导体Wannier–Mott激子的束缚能、Bohr半径和热离解标度
+#### UC-ADV10-I106　无机半导体Wannier–Mott激子的束缚能、Bohr半径和热离解标度
 
 **题目** 某假想直接带隙无机半导体中的电子—空穴对可用Wannier–Mott氢样激子模型近似，电子与空穴的约化有效质量μ=0.2200m_e，介电常数相对值εr=8.500。给定氢原子Rydberg束缚能13.605693eV、Bohr半径0.0529177nm，并取Ebind=(μ/m_e)×13.605693/εr² eV、a*=(εr/(μ/m_e))×0.0529177nm。求激子束缚能、有效Bohr半径、300K下Ebind/(kBT)的无量纲值、形式热能与束缚能相当的温度T*及激子直径2a*，说明T*只是能标判据而不是精确解离温度。
 
@@ -172,7 +183,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I107　无机纳米晶均匀形核的临界半径、成核势垒与原子数
+#### UC-ADV10-I107　无机纳米晶均匀形核的临界半径、成核势垒与原子数
 
 **题目** 在320.0K下，一种假想单组分无机材料从过冷母相中形成球形晶核。设晶核与母相界面能γ=0.2500J/m²，结晶使体相自由能密度降低Δg_v=1.800×10^8J/m³，单位晶格化学式体积v0=4.000×10^-29m³。经典均匀形核自由能ΔG(r)=4πr²γ−(4π/3)r³Δg_v。求临界半径、临界成核自由能、临界晶核中化学式单元数的连续近似值、势垒相对kBT的大小及每个化学式单元的体相自由能收益；通过一阶导与二阶导严格证明所求临界点是势垒最大而非最小。
 
@@ -200,7 +211,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I108　AgCl在氨络合与氯离子同离子效应下的耦合溶解度反演
+#### UC-ADV10-I108　AgCl在氨络合与氯离子同离子效应下的耦合溶解度反演
 
 **题目** 298.15 K下将过量固体AgCl加入初始氯离子浓度C0=0.01000 mol/L、分析总氨浓度L_T=0.02000 mol/L的恒体积理想溶液。题设维持足够碱性，使NH3质子化可忽略；仅考虑Ag+、[Ag(NH3)2]+、Cl−及游离NH3，忽略AgCl(aq)、其他银氯络合物和活度系数。给Ksp=[Ag+][Cl−]=1.800×10^−10 (浓度以1 mol/L标准态无量纲化)，β2=[[Ag(NH3)2]+]/([Ag+][NH3]^2)=1.600×10^7 (相同标准态约定)。设溶解的银总浓度s，初始Cl−不来自AgCl，求s、游离Ag+、二氨合银浓度、游离NH3、络合消耗氨占总氨比例及相对未加氨且保持初始Cl−近似时的溶解度增益；核查银、氯、氨的物料守恒并论证物理解唯一。
 
@@ -228,7 +239,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I109　线性三原子无机氧化物的广义本征振动与非对称氧同位素位移
+#### UC-ADV10-I109　线性三原子无机氧化物的广义本征振动与非对称氧同位素位移
 
 **题目** 把假想线性无机氧化物O–M–O的纵向伸缩简化为三个点质量与两根相同谐振弹簧：中心M质量28.000 u，两端天然氧质量16.000 u，弹簧常数k=800.0 N/m，1 u=1.66053906660×10^−27 kg，光速c=299792458 m/s。忽略弯曲、转动、电子振动耦合和力常数的同位素变化。分别对16O–M–16O、18O–M–18O以及16O–M–18O求两个非零纵向正则模波数（cm^−1）；再求对称16O分子中高频伸缩模的中心原子与任一末端原子位移比xM/xO。要求从质量矩阵与力常数矩阵的广义本征方程推导，检查零频平移模、同位素频移方向及非对称分子不再具有纯对称/反对称振型的原因。
 
@@ -258,7 +269,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I110　NaCl型面心立方晶体的衍射消光、结构因子与晶体密度联合核验
+#### UC-ADV10-I110　NaCl型面心立方晶体的衍射消光、结构因子与晶体密度联合核验
 
 **题目** 某理想NaCl型离子晶体为面心立方Bravais点阵，常规立方晶胞边长a=5.640 Å，Cl−占据(0,0,0)及其面心平移位置，Na+相对于Cl−基元平移(1/2,0,0)；每常规晶胞含4个NaCl式量单位。使用波长λ=1.5406 Å的一阶单色X射线，题设在所考察的反射范围内近似取原子散射因子fCl=17.0、fNa=11.0（共同任意振幅单位），忽略异常散射、温度因子、吸收、偏振及Lorentz因子。粉末峰积分强度仅按晶面族多重性m与|Fhkl|²成正比，m111=8、m200=6。NaCl摩尔质量58.44 g/mol，NA=6.02214076×10^23 mol^−1。求(111)、(200)、(220)的2θ，理论密度、I200/I111、F111与F200；严格说明(100)系统消光和奇偶反射的结构因子，检验衍射角的几何可行性、每晶胞化学计量及密度单位。
 
@@ -286,7 +297,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I111　51V钒酰配合物轴向EPR的g–超精细张量与角度依赖八重线
+#### UC-ADV10-I111　51V钒酰配合物轴向EPR的g–超精细张量与角度依赖八重线
 
 **题目** 某假想冻结态钒酰配合物含51V核自旋I=7/2、电子S=1/2，微波ν=9.500 GHz；g⊥=1.980、g∥=1.940，主轴超精细常数A⊥=7.000 mT、A∥=18.000 mT。h=6.62607015×10^−34 J s，μB=9.2740100783×10^−24 J/T。高场一阶近似B(θ,mI)=hν/(μB gθ)−mI Aθ，gθ²=g⊥²sin²θ+g∥²cos²θ，Aθ=sqrt[(g⊥A⊥sinθ)²+(g∥A∥cosθ)²]/gθ。求θ=90°、0°、45°的谱线中心、两端点，45°的g与A；证明每取向八线及其间距、中心求和规则，并说明二阶修正限制。忽略其他核、核Zeeman、二阶超精细及粉末线形。
 
@@ -316,7 +327,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I112　无机电荷转移谱的Huang–Rhys振动级数、Stokes位移与同位素效应
+#### UC-ADV10-I112　无机电荷转移谱的Huang–Rhys振动级数、Stokes位移与同位素效应
 
 **题目** 某假想八面体金属配合物的金属–配体电荷转移跃迁与一个有效谐振动模耦合，基态和激发态势能曲率相同，采用零温度Franck–Condon位移谐振子模型。零声子线能量E00=2.100 eV，振动量子ħω=0.1600 eV，Huang–Rhys因子S=2.400。吸收第n振动伴线的相对强度Pn=exp(−S)S^n/n!，能量En=E00+nħω；激发后充分振动弛豫再发射，忽略非辐射损失、热激发、Duschinsky旋转和不同曲率。求零声子线与二量子线强度、三量子/二量子强度比、吸收和发射谱重心、Stokes位移及重组能。若仅将该振动的有效约化质量增大21%，保持势能曲率、两势阱位移与E00不变，求新S与新ħω，并论证重组能与谱重心差是否改变；核验全谱概率归一与二阶矩。
 
@@ -346,7 +357,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I113　三价中间价态的歧化—归中平衡、混合电位与稀释光谱反演
+#### UC-ADV10-I113　三价中间价态的歧化—归中平衡、混合电位与稀释光谱反演
 
 **题目** 在298.15 K理想稀溶液中，同一金属的M(II)、M(III)、M(IV)均为可溶且不存在配位、沉淀、水解和活度系数差异；M(III)/M(II)与M(IV)/M(III)均为可逆一电子对，标准还原电势分别E°32=0.4300 V、E°43=0.4700 V（相对于同一参比电极）。将三价态的初始浓度设为cII,0=0.01200 mol/L、cIII,0=0.00200 mol/L、cIV,0=0.00800 mol/L，容积恒定且无外部电子交换。唯一净反应M(II)+M(IV)⇌2M(III)。求归中平衡常数、正向反应进度浓度、平衡三价态浓度、两电极对的共同电势、混合液稀释100倍后在500 nm、光程0.500 cm下的吸光度（εII=200、εIII=1800、εIV=400 L mol⁻¹ cm⁻¹）、标准反应Gibbs能、三价态分数及平均氧化数；验证总金属与电子等价量守恒、两Nernst电势一致及物理根唯一。
 
@@ -376,7 +387,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I114　受主掺杂氧化物的氧空位—电子缺陷平衡与Brouwer斜率
+#### UC-ADV10-I114　受主掺杂氧化物的氧空位—电子缺陷平衡与Brouwer斜率
 
 **题目** 某理想化受主掺杂氧化物MO₁₋δ以氧晶格位数归一化：氧空位V_O••分数v、电子e′数n、固定单负电受主A′分数a=0.04000，正常氧位分数1−v。氧释放反应O_Oˣ ⇌ V_O••+2e′+½O₂的无量纲质量作用常数K=[v n²/(1−v)](pO₂/p°)^(1/2)=1.0000×10⁻⁴；电中性2v=n+a。假设理想活度、忽略空穴和缺陷缔合、0<v<1且n>0。求氧分压比pO₂/p°分别为1.000和0.01000时的v、n、低压与高压的电子电导率比（电子迁移率不变）、空位分数增量及两点局部Brouwer斜率dlnv/dlnpO₂。证明物理解唯一，验证电荷及位点守恒，并解释未掺杂极限斜率−1/6何时适用。
 
@@ -406,7 +417,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I115　钠硅酸盐Qⁿ网络的核磁响应校正与桥氧电荷闭合
+#### UC-ADV10-I115　钠硅酸盐Qⁿ网络的核磁响应校正与桥氧电荷闭合
 
 **题目** 无水钠硅酸盐玻璃由70.00 mol SiO₂及30.00 mol Na₂O熔制。假设无挥发、无Al、无游离氧离子、全部Si为四面体且仅有Q²、Q³、Q⁴单元，Qⁿ指一个Si连接n个桥氧；桥氧(BO)连接两个Si，非桥氧(NBO)连接一个Si并带−1形式电荷，全部由Na⁺补偿。定量²⁹Si NMR三峰原始积分比2.000:12.00:5.000，对应仪器响应因子0.8000、1.200、1.000。求真实Q²/Q³/Q⁴摩尔分数、各自Si的物质的量、NBO与BO物质的量、平均每Si桥氧数、BO占总氧比例及H=−Σf ln f；证明氧原子、硅原子和电荷守恒，检验直接用原始峰面积的错误。
 
@@ -434,7 +445,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I116　二价金属逐级络合的配体总量反演与配位数守恒
+#### UC-ADV10-I116　二价金属逐级络合的配体总量反演与配位数守恒
 
 **题目** 水溶液中二价金属M²⁺仅与中性单齿配体L形成ML²⁺和ML₂²⁺，总体形成常数β₁=75.00 L mol⁻¹、β₂=900.0 L² mol⁻²；无水解、沉淀及其他络合物，活度近似浓度。配制总金属浓度C_M=0.01200 mol/L、总配体浓度C_L=0.05500 mol/L的MCl₂-L体系，Cl⁻不络合且其浓度为2C_M。求平衡游离L、游离M²⁺、ML²⁺、ML₂²⁺浓度，二配体络合物金属分数、平均配位配体数、总结合配体浓度、游离配体占投料比例及氯离子浓度。严格证明配体平衡方程的物理解唯一，并验证金属、配体和电荷守恒。
 
@@ -464,7 +475,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I117　Eu³⁺发光配合物的跃迁分支、辐射寿命与泵浦能量闭合
+#### UC-ADV10-I117　Eu³⁺发光配合物的跃迁分支、辐射寿命与泵浦能量闭合
 
 **题目** 某假想Eu³⁺配合物用395 nm光激发，内转换后仅从⁵D₀态发光。响应校正后的590、615、700 nm三条发射带光子数比例为0.2000、0.6500、0.1500，单指数寿命τ=1.500 ms，绝对光子量子产率Φ=0.7200。假定三条带穷尽所有辐射跃迁、无再吸收或多光子发射。取hc=1239.841984 eV·nm，1 eV=1.602176634×10⁻¹⁹ J。求总辐射速率、非辐射速率、各带自发辐射速率、纯辐射寿命、平均发射光子能量、每吸收光子的平均发射能量、光能效率；若每秒吸收10¹⁸个光子，再求发射光子流率及辐射功率。严格检查速率和能量守恒。
 
@@ -494,7 +505,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I118　协同自旋交叉固体的双稳态自由能、曲率与旋节
+#### UC-ADV10-I118　协同自旋交叉固体的双稳态自由能、曲率与旋节
 
 **题目** 某假想Fe(II)自旋交叉晶体在300.0 K时高自旋摩尔分数x，低自旋为1−x。平均场摩尔自由能G=x(ΔH−TΔS)+RT[x ln x+(1−x)ln(1−x)]+Ωx(1−x)，ΔH=15.000 kJ/mol，ΔS=50.000 J/(mol K)，Ω=8.000 kJ/mol，R=8.314462618 J/(mol K)，纯低自旋G(0)=0，电子简并度已计入ΔS。求所有驻点及稳定性、两个稳定分数、自由能、中央势垒、两处曲率、旋节组成和零偏置曲率阈值温度；说明阈值为何不能直接等同实际相变温度，并验证物理根。
 
@@ -524,7 +535,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I119　双配位壳层EXAFS振荡的配位数反演与德拜–沃勒衰减
+#### UC-ADV10-I119　双配位壳层EXAFS振荡的配位数反演与德拜–沃勒衰减
 
 **题目** 某假想过渡金属氧化物K边EXAFS经背景扣除后满足简化单散射模型χ(k)=Σ_{j=1}² N_j S₀² f_j exp(−2σ_j²k²)sin(2kR_j+δ_j)/(kR_j²)。k以Å⁻¹计，R₁=2.000 Å、R₂=3.100 Å；σ₁²=0.003000 Å²、σ₂²=0.006000 Å²；S₀²=0.9000，f₁=1.200 Å、f₂=1.500 Å，δ₁=0.2000 rad、δ₂=−0.1000 rad。f_j为本简化公式的有效散射长度。k=3、5、7、9 Å⁻¹时的无量纲振荡依次为−0.1509738923012618、0.1608810121254439、−0.0055182955622486、−0.0824827660820380（理想模型观测）。求两个壳层配位数、总配位数、加权平均键长、前两频点的反演行列式、后两频点的预测振荡、第一壳层9与3 Å⁻¹的德拜–沃勒指数包络比和第一壳层配位占比；检验解的可辨识性、物理性及模型适用范围。
 
@@ -554,7 +565,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I120　双金属氢化物H/D交换的振动配分函数、同位素分配与温度效应
+#### UC-ADV10-I120　双金属氢化物H/D交换的振动配分函数、同位素分配与温度效应
 
 **题目** 假想无机金属氢化物M₁–H/D与M₂–H/D在298.15 K达到交换平衡M₁–H+M₂–D⇌M₁–D+M₂–H。M₁位点总量0.02000 mol、M₂位点总量0.03000 mol、总D量0.01800 mol，其余位点均为H。四种键的单谐振动波数M₁H=1450、M₁D=1040、M₂H=1250、M₂D=900 cm⁻¹。规定除振动配分函数外其他标准态统计因子全部抵消，位点活度为理想分数。q=exp(−hcν/2kBT)/[1−exp(−hcν/kBT)]，hc/kB=1.438776877 K·cm，R=8.314462618 J/(mol K)。求298.15 K交换常数、两类D分数、四种物质的量；350.00 K交换常数及M₁D量；298.15 K的振动反应内能和dlnK/dT。证明正根唯一，核验同位素守恒和模型局限。
 
@@ -584,9 +595,9 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-## 分析化学（20/25）
+### 分析化学（24/25）
 
-### UC-ADV10-A101　DOSY脉冲梯度NMR的Stejskal–Tanner衰减与自扩散反演
+#### UC-ADV10-A101　DOSY脉冲梯度NMR的Stejskal–Tanner衰减与自扩散反演
 
 **题目** 一份假想溶液经脉冲梯度NMR的DOSY法分析，质子旋磁比γ=2.67522×10^8rad/(s T)，梯度幅度g=0.2500T/m，脉冲宽度δ=2.500ms，扩散等待时间Δ=45.00ms，样品自扩散系数D=6.000×10^-10m²/s。给定Stejskal–Tanner式I/I0=exp(−bD)，b=γ²g²δ²(Δ−δ/3)。求梯度系数b、回波归一化强度、从强度逆推的D，以及将梯度g加倍后的回波强度，指出为何指数不能只加倍。
 
@@ -614,7 +625,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A102　EPR两个不等价核自旋的六重超精细分裂与谱线重心
+#### UC-ADV10-A102　EPR两个不等价核自旋的六重超精细分裂与谱线重心
 
 **题目** 一个假想有机自由基的S=1/2电子自旋耦合两个互不等价核：一个14N核自旋I_N=1、各向同性超精细常数A_N=15.00G，另一个1H核I_H=1/2、常数A_H=5.000G。假设高场一阶近似、核跃迁不改变mI、无可分辨二阶项及自旋驰豫差异，未分裂电子共振磁场B0=340.0mT，1G=0.1000mT。共振位置B=B0−mN A_N−mH A_H。求总谱线数、所有六条谱线位置及相对积分强度、线谱重心与总跨度，验证核态等简并时积分强度为1:1:1:1:1:1。
 
@@ -642,7 +653,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A103　色谱峰方差的柱外展宽扣除与分离度真实测量
+#### UC-ADV10-A103　色谱峰方差的柱外展宽扣除与分离度真实测量
 
 **题目** 某高效液相色谱系统的柱长1.200m，峰1保留时间tR1=8.000min、检测到的高斯峰标准差σobs,1=0.2500min。独立使用零保留标记得到柱外装置标准差σext=0.1500min，假设柱内与柱外的高斯方差独立可加、无峰拖尾。第二峰tR2=8.800min、σobs,2=0.3000min，共用相同柱外展宽。求峰1柱内真实σ、表观及扣除柱外后的理论塔板数N=(tR/σ)^2、校正后塔板高度H=L/N、基于各峰σ的检测端表观分离度及剔除柱外展宽后的柱本征分离度，说明后者不是实际检测器已经实现的分离度。
 
@@ -670,7 +681,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A104　双指数荧光寿命的频域相量与强度加权均值
+#### UC-ADV10-A104　双指数荧光寿命的频域相量与强度加权均值
 
 **题目** 某假想时间分辨荧光样品受到理想瞬时激发，已去除仪器响应及背景。荧光衰减为I(t)=A₁exp(−t/τ₁)+A₂exp(−t/τ₂)，其中A₁=0.6500、A₂=0.3500，τ₁=1.500 ns、τ₂=5.000 ns，t≥0。定义积分光子份额f₂=∫I₂dt/∫Idt、平均光子到达时间〈t〉=∫tI dt/∫I dt，以及100.0 MHz调制角频率ω=2πf下的相量G=∫I cos(ωt)dt/∫I dt、S=∫I sin(ωt)dt/∫I dt。求f₂、〈t〉、G、S与按单指数关系误推的τ_app=S/(ωG)，解释A₂为何不等于f₂。
 
@@ -698,7 +709,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A105　TOF质谱双标准时零与平方根质量校准的误差传播
+#### UC-ADV10-A105　TOF质谱双标准时零与平方根质量校准的误差传播
 
 **题目** 一台假想线性飞行时间质谱仪满足t=t0+a√(m/z)，其中t以μs、m/z以Th表示，a单位μs/√Th，时间零点t0不能忽略。经两个校准离子测得(m/z,t)=(100.0Th,10.50μs)及(400.0Th,20.50μs)。未知离子到达时间为15.50μs，飞行时间测量的独立标准不确定度为σt=0.05000μs，假设校准点本身不确定度可忽略。求校准系数a和t0、未知离子m/z、一阶传播后的m/z标准不确定度和对900.0Th标准物预测的飞行时间；说明若强制令t0=0会造成系统偏差。
 
@@ -726,7 +737,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A106　DLS双粒径分布的Rayleigh强度偏置与真实颗粒数反演
+#### UC-ADV10-A106　DLS双粒径分布的Rayleigh强度偏置与真实颗粒数反演
 
 **题目** 一份假想稀胶体分散体中仅有两组球形颗粒，水动力半径分别为30.00nm和60.00nm，光学折射率反差相同、单次散射且满足Rayleigh区。动态光散射检测到两组散射光强各占50.00%，但单颗粒光强按r^6变化。假设Stokes–Einstein扩散系数D与半径r成反比，且相关函数强度权重与实测总强度一致。求小颗粒数目对大颗粒数目的比、两类颗粒真实数目分数、相关函数短时一阶衰减对应的强度权重平均扩散半径r_D（定义1/r_D=Σw_i/r_i）、强度直接加权半径Σw_i r_i，并解释为什么强度分数不是数目分数。
 
@@ -754,7 +765,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A107　ARXPS双角度衬底信号衰减反演氧化层厚度与覆盖率
+#### UC-ADV10-A107　ARXPS双角度衬底信号衰减反演氧化层厚度与覆盖率
 
 **题目** 某无机金属基底表面覆盖均匀、连续、密实的假想氧化物薄膜，金属基底的XPS光电子有效非弹性平均自由程λ=2.000nm。定义测量出射角θ是相对于样品表面法线的夹角，角度θ时基底强度与无膜标准的归一化比值I_sub/I0=exp[−d/(λcosθ)]。已知膜的真实厚度为1.000nm，实验测得θ=0°和60.00°两种角度；设归一化氧化层信号覆盖指标Oθ=1−I_sub/I0（不是氧的定量摩尔分数）。求两角度基底信号比、各氧化层覆盖指标、由任一角度独立反算的厚度，并说明为什么不能把角度定义成相对表面平面而仍使用cosθ。
 
@@ -782,7 +793,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A108　异方差加权标准加入法的原样浓度与协方差不确定度
+#### UC-ADV10-A108　异方差加权标准加入法的原样浓度与协方差不确定度
 
 **题目** 用标准加入法测某有机分析物，所有加标样品最终体积相同，加入标准后分析物增加的最终浓度x依次为0、1.000、2.000、4.000 μg/mL；仪器响应y依次为170、221、268、370 counts，四点相互独立且已知各自响应标准差σ依次为1、2、3、4 counts。空白响应B=20.00 counts在本题视为无不确定度。假设线性响应y=B+b(c+x)+ε，c是原样在相同最终体积基准下的分析物浓度；用权重1/σ²做加权最小二乘拟合y=a+bx，求截距、斜率、c=(a−B)/b、由完整(a,b)协方差矩阵一阶传播得到的c标准不确定度、加权残差χ²及未经空白扣除的x轴截距；说明为何不能用−a/b代替c，也不能忽略斜率截距协方差。
 
@@ -810,7 +821,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A109　ICP-MS同位素稀释中等质量干扰、质量歧视与原样浓度联立反演
+#### UC-ADV10-A109　ICP-MS同位素稀释中等质量干扰、质量歧视与原样浓度联立反演
 
 **题目** 某假想元素X只有100X和102X两种稳定同位素，原样同位素丰度分别为0.7500与0.2500；加入0.5000 nmol富集同位素稀释内标，其100X和102X丰度分别为0.1000与0.9000。原样体积10.00 mL，X的计算摩尔质量取101.0 g/mol。ICP-MS在同一溶液测得已扣仪器空白的I100=1650、I102=1350、I104=100 counts。共存元素Y在m/z=100产生同量异位干扰，而其m/z=104只由Y产生，独立标准标定I100,Y/I104,Y=0.3000。X的m/z=100相对于m/z=102响应系数之比g=1.0400；设两质量峰无其它干扰、无死时间、线性响应，加入内标后没有元素损失。求校正后的X同位素比、原样X物质的量、混合液X总物质的量、原样浓度(μg/L)及m/z=102信号中由内标贡献的分数；反算两原始峰验证干扰和质量歧视校正，并解释为什么不能直接用1650/1350作为同位素比。
 
@@ -840,7 +851,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A110　热重–质谱双通道交叉灵敏度反演碳酸盐与氢氧化物混合物
+#### UC-ADV10-A110　热重–质谱双通道交叉灵敏度反演碳酸盐与氢氧化物混合物
 
 **题目** 一份干燥1.000000 g无机混合样仅含CaCO3、Mg(OH)2和不分解的SiO2，升温后CaCO3→CaO+CO2、Mg(OH)2→MgO+H2O均完全进行，且无其他挥发物。热重(TGA)给出总失重0.336114 g。联用质谱对两种气体的积分响应以任意统一信号单位记录为y18=8.600、y44=9.200，已扣空白且校准式为y18=2.000 nH2O+0.100 nCO2、y44=0.050 nH2O+1.500 nCO2，其中n以mmol计；两个通道都存在交叉灵敏度。取摩尔质量H2O=18.015、CO2=44.009、Mg(OH)2=58.319、MgO=40.304、CaCO3=100.086、CaO=56.077 g/mol。求两种气体各自mmol、初始三组分质量分数、理论总失重、最终残渣质量、CaCO3占可分解固体的质量分数；分别用质谱反演、TGA失重和氧化物质量守恒独立核查，并解释为何不能将y18/2、y44/1.5直接作为气体量。
 
@@ -870,7 +881,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A111　可延长死时间γ计数器的Lambert W双根与已知衰减消歧
+#### UC-ADV10-A111　可延长死时间γ计数器的Lambert W双根与已知衰减消歧
 
 **题目** 某放射性分析仪具有可延长死时间(paralyzable) τ=2.000 μs，真实入射事件率n与观测脉冲率m满足m=n exp(−nτ)。未知样第一次测得m=164643.490828208 s^−1；通过独立校准的理想衰减器，使真实入射率恰好减半后，第二次测得mhalf=111122.733102258 s^−1。忽略背景、漂移、其他脉冲堆积和随机统计误差。求第一次观测的全部正实n候选、第二次测量选择的唯一物理解、两候选预测的第二次观测率、m(n)最大值、选定解的观测比例、10.0秒真实入射事件数及局部灵敏度dm/dn；解释为什么不可用非延长死时间公式，也不能简单令第二次观测率等于第一次的一半。
 
@@ -900,7 +911,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A112　线性溶剂强度梯度色谱的迁移积分、保留时间与洗脱组成
+#### UC-ADV10-A112　线性溶剂强度梯度色谱的迁移积分、保留时间与洗脱组成
 
 **题目** 在一台理想化液相色谱仪中，长度L的色谱柱在恒定流速下的死时间t0=1.500 min，分析物瞬时保留因子服从线性溶剂强度模型k(φ)=k0 exp(−Sφ)，k0=exp(5.000)、S=8.000。为突出梯度迁移积分，假设柱内溶剂组成空间均匀且自进样时刻起按φ(t)=0.2000+βt变化，忽略真实梯度延迟、轴向梯度传播、弥散和溶剂混合体积；分析物迁移满足dx/dt=(L/t0)/(1+k(φ(t)))。求β=0.04000 min^−1时的保留时间tR、洗脱φR和瞬时kR；β=0.06000 min^−1时对应三量；恒定φ=0.2000时的等度保留时间及第一梯度相对等度节约时间。必须由迁移积分而非简单取洗脱时刻的k计算tR，并核验0<φR<1与积分归一。
 
@@ -930,7 +941,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A113　指数修饰高斯色谱峰的矩反卷积、尾峰偏度与双峰矩分离度
+#### UC-ADV10-A113　指数修饰高斯色谱峰的矩反卷积、尾峰偏度与双峰矩分离度
 
 **题目** 某分析物在理想线性检测器中的洗脱时间X=G+Y，G服从均值μ、标准差σ的高斯分布，Y独立服从平均停留时间τ的指数分布，构成指数修饰高斯（EMG）峰。第一峰经基线校正并归一后实测均值m1=8.7500 min、方差v1=0.152500 min²、偏度γ1=0.524741311200；第二峰已知未拖尾高斯参数μ2=11.000 min、σ2=0.4000 min、指数尾时间τ2=0.1000 min。求第一峰τ1、σ1、μ1，复核其均值、方差和偏度，求第二峰的三个矩量，并定义矩分离指标Rm=(m2−m1)/[2(√v1+√v2)]求其值。说明EMG的峰顶位置不等于均值、Rm不是以基线峰宽定义的传统Rs，且须核查τ>0与σ²>0；要求以指数停留时间的积分矩进行独立复核。
 
@@ -960,7 +971,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A114　静态络合和动态碰撞双猝灭的荧光强度—寿命联合辨识
+#### UC-ADV10-A114　静态络合和动态碰撞双猝灭的荧光强度—寿命联合辨识
 
 **题目** 某荧光分析探针无猝灭剂时寿命τ₀=4.000 ns、强度F₀。猝灭剂Q既可形成不发光1:1基态络合物（静态常数K_s），又以双分子速率k_q碰撞猝灭游离发光体（动态常数K_D=k_qτ₀）。忽略内滤效应、仪器变化和络合物发光，规定τ₀/τ=1+K_D[Q]，F₀/F=(1+K_s[Q])(1+K_D[Q])。[Q]=0.1000 mol/L时实测τ=10/3 ns、F₀/F=1.800；[Q]=0.2000 mol/L时τ=20/7 ns、F₀/F=2.800。求K_D、K_s、k_q；复核两组寿命及强度比，计算高浓度下未络合分数、寿命比τ/τ₀、强度比F/F₀。证明只有单点强度时不可唯一辨识两种猝灭，并说明寿命与强度的物理区别。
 
@@ -990,7 +1001,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A115　饱和标准加入曲线的非线性浓度反演与物料守恒
+#### UC-ADV10-A115　饱和标准加入曲线的非线性浓度反演与物料守恒
 
 **题目** 检测器信号为y=b+Sc/(1+βc)，其中c以mmol/L计，已校准空白b=5.000、β=0.5000 L/mmol，基体灵敏度S未知。每次取未知原液10.00 mL，分别加入0、1.000、2.000 mL的5.000 mmol/L标准液，再分别定容到50.00 mL。测得三次信号19.8148148148148、28.0088495575221、35.5084745762712（按理想无噪声数据处理）。求定容后的原液贡献c₀、原液浓度Cₓ、S、三次信号反算、第三次总浓度、该点相对线性响应比例及局部灵敏度dy/dc；证明正根唯一、检验第三点残差及稀释物料守恒，并解释直线外推为何不适用。
 
@@ -1018,7 +1029,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A116　双波长酸碱指示剂的光谱解混与pKa双点一致性
+#### UC-ADV10-A116　双波长酸碱指示剂的光谱解混与pKa双点一致性
 
 **题目** 某一元有机酸型指示剂HA⇌H⁺+A⁻，在稀水溶液中满足理想Henderson–Hasselbalch关系。两种物种在450 nm处的十进摩尔吸光系数分别为ε_HA=8000、ε_A=2000 L mol⁻¹ cm⁻¹，在520 nm处分别为1000、12000 L mol⁻¹ cm⁻¹。1.000 cm比色皿、无背景吸收和散射，pH=5.900与7.100时测得两波长吸光度分别为(A450,A520)=(0.524678524791,0.291422704550)及(0.239842014792,0.813622972881)（数值为四舍五入显示，计算时按给定模型精确数据）。求指示剂总浓度、两pH时A⁻分数、pKa、四个吸光度的模型回算、pH=pKa时两个吸光度及pH=7.100时A520/A450；给出谱矩阵可逆性和两pH独立pKa一致性证明。
 
@@ -1048,7 +1059,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A117　定量核磁双翻转角稳态信号反演T₁与绝对浓度
+#### UC-ADV10-A117　定量核磁双翻转角稳态信号反演T₁与绝对浓度
 
 **题目** 完全破坏横向磁化的¹H定量NMR稳态积分遵循S=K n C sinα(1−E)/(1−E cosα)，E=exp(−TR/T₁)，TR=1.000 s。未知物X有3个等价质子，标准S有2个等价质子、C_S=5.000 mmol/L、T₁,S=2.000 s。相同接收增益、脉冲均匀且忽略NOE、T₂衰减差；测得未知物S_X,30°/S_X,90°=0.801761423674483，以及S_X,90°/S_S,90°=1.508813572701714。求未知物E_X、T₁,X、C_X、Ernst角、30°与Ernst角信号比、忽略纵向恢复时的表观浓度、未知与标准90°恢复因子之比，并回代两观测信号比。证明物理解唯一。
 
@@ -1078,7 +1089,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A118　常相位阻抗元件的三频复数反演与频率外推
+#### UC-ADV10-A118　常相位阻抗元件的三频复数反演与频率外推
 
 **题目** 电极的小信号阻抗Z(ω)=R_s+[R_ct^−1+Q(iω)^α]^−1，ω=2πf，已知R_s=20.000 Ω，0<α<1、Q>0、R_ct>0，按e^{iωt}相量约定。1、10、100 Hz观测复阻抗依次为(259.4723601902123−23.9656379457135i)、(179.89697311271587−86.10037409164481i)、(46.06545297144797−45.90977746706515i) Ω。设为给定精度下的理想模型值。求α、Q、R_ct及其电导、50 Hz复阻抗的实部虚部与模、1 Hz总阻抗相角和CPE导纳相角。利用差分导纳的模与相位独立核验唯一性、量纲与被动性。
 
@@ -1108,7 +1119,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A119　Zimm静态光散射的双变量外推与聚合物维里系数辨识
+#### UC-ADV10-A119　Zimm静态光散射的双变量外推与聚合物维里系数辨识
 
 **题目** 某聚合物稀溶液绝对静态光散射在低浓度与小角度满足Y(q,c)=Kc/Rθ=M_w⁻¹[1+q²R_g²/3]+2A₂c，忽略q⁴、c²及q²c项。q以nm⁻¹计，质量浓度c以g/mL计，Y单位mol/g；M_w为g/mol、R_g为nm、A₂为mol·mL/g²。四个理想观测分别为Y(0.0100,0.00200)=1.100833333333333×10⁻⁵、Y(0.0100,0.00500)=1.220833333333333×10⁻⁵、Y(0.0200,0.00200)=1.163333333333333×10⁻⁵、Y(0.0200,0.00500)=1.283333333333333×10⁻⁵ mol/g。求重均分子量、回转半径、第二维里系数、零角零浓度截距、q²与c的两个斜率；预测q=0.0150 nm⁻¹、c=0.00300 g/mL时Y和Rθ/(Kc)，及q=0、c=0.00300时Y；验证四点闭合、物理正根和小角度近似。
 
@@ -1138,7 +1149,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A120　Taylor–Aris流动分析峰展宽的双流速反演与径向混合条件
+#### UC-ADV10-A120　Taylor–Aris流动分析峰展宽的双流速反演与径向混合条件
 
 **题目** 圆形毛细管流动注射分析中，脉冲注入稀释中性示踪剂，充分发展层流、无壁面吸附、检测器不展宽且已达到Taylor–Aris长时间极限。管长L=0.4000 m，未知分子扩散系数D和内半径a；平均流速u₁=1.000 mm/s、u₂=1.500 mm/s时，出口高斯时间方差分别为13.460000 s²、8.61777777778 s²。模型D_eff=D+a²u²/(48D)，σₜ²=2LD_eff/u³，保留时间t_R=L/u。反演D、a、两次D_eff与t_R；预测u₃=1.200 mm/s的D_eff、时间方差、标准差、FWHM及单位面积归一化峰高，求径向扩散时间a²/D并检查Taylor极限和单位。
 
@@ -1168,9 +1179,9 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-## 有机化学（20/25）
+### 有机化学（24/25）
 
-### UC-ADV10-O98　碳同位素交叉实验逆推分子间随机重组途径比例
+#### UC-ADV10-O98　碳同位素交叉实验逆推分子间随机重组途径比例
 
 **题目** 为区分某假想有机重排中的分子内路径与分子间路径，将等摩尔的两类双片段底物混合：一类两个片段均带13C标记(L/L)，另一类两个片段均不标记(U/U)。分子内过程保留原配对，因此L/L和U/U各占1/2；分子间过程随机重组并假设无同位素效应，L/L、混合L/U、U/U的理论比例为1/4、1/2、1/4。实验生成总产物0.01000mol，测得L/U混合标记产物占30.00%。求分子间途径比例、三类产物比例、混合标记产物mol和分子内途径贡献的产物mol；解释随机配对假设的限制。
 
@@ -1198,7 +1209,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O99　氢氘动力学同位素效应的Eyring焓熵拆分与温度反演
+#### UC-ADV10-O99　氢氘动力学同位素效应的Eyring焓熵拆分与温度反演
 
 **题目** 假想有机C–H键断裂为速率决定步骤的反应，氘代同系物在相同溶剂下形成同一类型的产物，给定实测一级动力学同位素效应KIE=kH/kD：298.15K为6.000、340.0K为4.000。假设在这一温度区间两者过渡态活化焓差ΔΔH‡=ΔH‡H−ΔH‡D与活化熵差ΔΔS‡=ΔS‡H−ΔS‡D恒定，且Eyring通用kBT/h因子在速率比中相消。由ln(kH/kD)=−ΔΔH‡/(RT)+ΔΔS‡/R反推出ΔΔH‡、ΔΔS‡、298.15K的ΔΔG‡，预测320K时KIE，并解释为何较低温的KIE更大并不能直接证明量子隧穿。
 
@@ -1226,7 +1237,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O100　有机光脱保护薄膜的Beer–Lambert吸收深度分布与量子转化
+#### UC-ADV10-O100　有机光脱保护薄膜的Beer–Lambert吸收深度分布与量子转化
 
 **题目** 一层均匀有机光脱保护聚合物膜厚L=100.0μm，采用365nm单色光照射、入射光子通量F0=1.000×10^20 photons/(m²s)，介质单程吸收系数α=2.000×10^4m^-1。假设没有反射、散射、二次吸收与产物遮光，局部光子通量F(z)=F0exp(−αz)，每吸收一个光子生成目标脱保护产物的量子产率φ=0.1500，产物均留在膜中。求全膜光子吸收分数、每平方米每秒的目标产物mol生成速率、全部被吸收光子的位置平均深度，以及前半层(0至L/2)占所有光子吸收的比例；说明为何不能把薄膜吸收当作沿厚度均匀分布。
 
@@ -1254,7 +1265,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O101　动态动力学拆分中消旋互变与双通道产物对映选择性
+#### UC-ADV10-O101　动态动力学拆分中消旋互变与双通道产物对映选择性
 
 **题目** 假想手性底物的R、S对映体在恒温均相体系中以相同一级速率常数k_r=0.0400 min⁻¹双向消旋互变R⇌S；同时R以k_R=0.1200 min⁻¹不可逆生成P_R，S以k_S=0.0200 min⁻¹不可逆生成P_S。初始总底物归一化为1.0000 mol，其中R₀=S₀=0.5000 mol，P_R,0=P_S,0=0。反应体积恒定，所有通道一级、无副反应，反应20.00 min。求剩余R、S摩尔数、两产物摩尔数、产物对映体过量ee_P=(P_R−P_S)/(P_R+P_S)及转化率，并核对质量守恒与消旋极限的意义。
 
@@ -1282,7 +1293,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O102　共价酶抑制剂两浓度测量反演kinact、KI及时间依赖失活
+#### UC-ADV10-O102　共价酶抑制剂两浓度测量反演kinact、KI及时间依赖失活
 
 **题目** 某假想有机共价酶抑制剂I先与酶形成可逆非共价复合物，再通过化学反应不可逆失活，在抑制剂浓度不受酶消耗影响且快速预平衡时，实验测得酶活性一级衰减系数kobs=kinact[I]/(KI+[I])。抑制剂浓度0.01000M时kobs=0.02000min^-1；0.03000M时kobs=0.04000min^-1。求结合半饱和常数KI、最大失活速率kinact、[I]=0.02000M时的kobs、恒定该浓度下10.00min后剩余活性比例、对应失活半衰期，并解释单浓度数据不能同时唯一识别KI与kinact。
 
@@ -1310,7 +1321,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O103　有机分子三质子NOE距离反演和三角构象几何一致性
+#### UC-ADV10-O103　有机分子三质子NOE距离反演和三角构象几何一致性
 
 **题目** 假想刚性有机小分子中三个氢核A、B、C之间形成三角构象，独立结构标准给rAB=2.000Å。所有核对之间的NOE初始交叉峰建立速率在相同谱学条件下近似正比于r^(-6)，已从峰重叠与自旋扩散中校正。实测NOE_AB:NOE_AC=1.000:0.1250、NOE_AB:NOE_BC=1.000:0.5000。求rAC、rBC、∠BAC（三角形在A处夹角）、三角形面积和最长边对应NOE相对强度；核查三角不等式，并说明NOE不是直接的键长而可能反映空间近接。
 
@@ -1338,7 +1349,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O104　三步有机金属催化循环的稳态中间体占比与整体周转频率
+#### UC-ADV10-O104　三步有机金属催化循环的稳态中间体占比与整体周转频率
 
 **题目** 假想有机金属交叉偶联催化剂按严格闭合三步循环E1→E2→E3→E1推进，三步在给定底物浓度下分别为一级k1=0.2000s^-1（氧化加成）、k2=0.05000s^-1（转金属化）、k3=0.1000s^-1（还原消除），E1为循环开始态。各催化中间体的总量守恒为Ctot=0.002000mol/L，各步骤均一阶且无失活和旁路。稳态要求通量J=k1[E1]=k2[E2]=k3[E3]。求各中间体的稳态比例、有效每催化剂TOF、每升每秒的目标产物生成量、完成一次循环的平均停留时间以及决定主要催化剂休眠态的步骤；解释为何不能把三个一级速率简单算术平均。
 
@@ -1366,7 +1377,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O105　Curtin–Hammett快速构象互变下的并行反应产物选择性
+#### UC-ADV10-O105　Curtin–Hammett快速构象互变下的并行反应产物选择性
 
 **题目** 假想有机底物有快速互变构象C1和C2，在298.15 K时C2相对C1的标准自由能高3.000 kJ/mol；构象互变远快于所有化学反应，故反应中始终按平衡Boltzmann分布。C1分别经不可逆过渡态生成P、Q，活化自由能相对C1为75.00和80.00 kJ/mol；C2生成P、Q的活化自由能相对C2为70.00和78.00 kJ/mol。四条通道均满足相同传输系数为1的Eyring形式k=(kBT/h)exp(−ΔG‡/RT)，且P、Q无逆反应和后续转化。给R=8.314462618 J/(mol K)、kB=1.380649×10^−23 J/K、h=6.62607015×10^−34 J s。求C2平衡比例、P和Q的总体一级生成速率常数、P的产物比例、P中来自C2的通量比例、P的有效活化自由能；解释为什么不能只看较稳定构象或只比较单一过渡态。
 
@@ -1394,7 +1405,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O106　自由基二元共聚Mayo–Lewis瞬时组成与间歇转化过程的投料漂移
+#### UC-ADV10-O106　自由基二元共聚Mayo–Lewis瞬时组成与间歇转化过程的投料漂移
 
 **题目** 某假想有机自由基二元共聚体系中，单体M1、M2遵循终端模型Mayo–Lewis方程，反应活性比r1=0.4000、r2=1.8000，忽略扩散限制、链转移和组成依赖活性比。初始总单体物质的量归一化为1.000 mol，M1初始摩尔分数f1,0=0.6000。定义总单体转化率X，聚合物的瞬时M1摩尔分数F1=(r1 f1²+f1(1−f1))/(r1 f1²+2f1(1−f1)+r2(1−f1)²)。设间歇体系均匀、各单体消耗速率比由F1给出，聚合到X=0.4000时停止。求初始瞬时F1、末端未反应单体中M1分数f1、末端瞬时F1、累计生成共聚物的M1平均摩尔分数，以及两种剩余单体的物质的量；从微分物料衡算推导f1随X变化的方程并用数值积分求解，逐项检查两种单体及总摩尔数守恒，说明不能把初始瞬时组成当作全程聚合物组成。
 
@@ -1424,7 +1435,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O107　溶剂同位素质子库存的双解辨识与四分之一氘分数验证
+#### UC-ADV10-O107　溶剂同位素质子库存的双解辨识与四分之一氘分数验证
 
 **题目** 研究某假想有机酸催化重排的溶剂H2O/D2O同位素效应，在快交换且无其它同位素效应的Gross–Butler质子库存模型下，反应物基态有1个可交换质子位点、速率控制过渡态有2个等价可交换质子位点。设溶剂氘原子分数为n，过渡态单个位点分馏因子φT>0、基态因子φR>0，k(n)/k(0)=[1−n+nφT]²/[1−n+nφR]。实验的理想无误差比值为k(1)/k(0)=0.1777777777777778、k(0.5)/k(0)=0.5157894736842105、k(0.25)/k(0)=0.7410256410256410，且k(0)=0.120000 s^−1。求前两比值约束下所有正实(φT,φR)解、利用第三比值筛选的物理解、另一解对n=0.25的预测，以及最终k(1)；推导二次反演式，证明仅两组比值不唯一，并核验0≤n≤1的速率非负性。不可把质子库存曲线本身当作机理证明。
 
@@ -1452,7 +1463,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O108　二阶AB型质子NMR的精确自旋混合、屋顶效应与四线强度
+#### UC-ADV10-O108　二阶AB型质子NMR的精确自旋混合、屋顶效应与四线强度
 
 **题目** 某假想刚性有机分子含两个磁不等价的质子A、B，自旋均为1/2；在选定频率参考系内νA=400.000 Hz、νB=440.000 Hz，标量耦合J=+12.000 Hz。忽略其余核、交换与弛豫，保留二阶AB效应：H/h=νA IAz+νB IBz+J[IAz IBz+(IA+ IB−+IA− IB+)/2]。高温四条跃迁的相对强度与总横向算符I+A+I+B的矩阵元平方成正比，总强度归一为4。求反平行自旋本征态分裂、四条准确谱线频率、内外两组各条强度、内外比及四线中心；说明弱耦合近似为何不能给出精确屋顶效应，并独立核验频率对称、跃迁强度总和与J→0极限。
 
@@ -1482,7 +1493,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O109　双配体手性催化剂的异手性络合与产物非线性对映选择性
+#### UC-ADV10-O109　双配体手性催化剂的异手性络合与产物非线性对映选择性
 
 **题目** 某假想有机不对称催化反应采用ML2型双配体催化剂，配体R/S摩尔分数分别为fR=(1+eeL)/2、fS=(1−eeL)/2，eeL=0.4000。金属–配体络合迅速平衡，且配体大量过量使fR、fS恒定；RR、SS、RS配合物的统计权重为fR²、fS²、2ρfRfS，其中异手性配合物偏好系数ρ=3.000。RR和SS以相同伪零级速率常数k=0.02000 s^−1分别只产生R和S产物；RS的总催化活性为αk，α=0.2000，且产生等量R/S产物。总催化剂浓度CT=1.000 mmol/L，反应600.0 s，初始底物0.1000 mol/L且假定底物浓度足够高使各催化速率恒定。求三种催化剂分数、两种产物浓度、总产物浓度、产物ee及相对于CTkt的有效周转活性；检验配体、催化剂与产物守恒，并解释何以产物ee可不同于配体ee。
 
@@ -1512,7 +1523,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O110　分子内SN2关环与时变外部亲核取代的非自治竞争动力学
+#### UC-ADV10-O110　分子内SN2关环与时变外部亲核取代的非自治竞争动力学
 
 **题目** 某假想ω-卤代醇盐A在恒温溶液中有三个互斥、不可逆的消耗通道：分子内SN2关环A→C（kcyc=0.01200 s⁻¹），溶剂解A→H（kh=0.003000 s⁻¹），以及外部亲核试剂Nu参与的SN2取代A+Nu→E（k2=0.03500 L mol⁻¹ s⁻¹）。A初浓度A0=0.01000 mol/L；Nu处于独立缓冲储库，因预设的稀释/降解过程按[Nu](t)=0.4000 exp(−0.01000t) mol/L变化，假定A的消耗对Nu储库浓度可忽略，且各产物不再反应。求t=120.0 s时A、C、E、H的浓度，C/E、C占全部产物的分数，以及t=0和120 s瞬时外部取代通道占总消耗速率的分数；证明物料守恒并解释为何不能用常数[Nu]的简单分支比例替代时间积分。
 
@@ -1542,7 +1553,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O111　A₂/B₃逐步聚合的Flory–Stockmayer凝胶阈值与溶胶质量分数
+#### UC-ADV10-O111　A₂/B₃逐步聚合的Flory–Stockmayer凝胶阈值与溶胶质量分数
 
 **题目** 理想化无环化、官能团等反应性的A₂+B₃逐步加成聚合：初始A₂单体3.000 mol（100.0 g/mol）、B₃单体2.000 mol（150.0 g/mol），两类反应官能团均6.000 mol；转化率p_A=p_B=p=0.8000。假设仅A—B成键且无小分子质量损失，使用无限体系随机树枝分支模型：从一个A官能团出发不能到达无限凝胶的概率u_A=1−p+p u_B²，B官能团对应u_B=1−p+p u_A。求凝胶临界转化率p_c、非平凡物理解u_A、u_B、A₂与B₃各自进入溶胶的比例u_A²和u_B³、两类凝胶比例及全体系凝胶质量分数。证明为何不能选u_A=u_B=1根，检查官能团与质量守恒。
 
@@ -1572,7 +1583,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O112　动态NMR双位点合峰温度与Eyring活化参数
+#### UC-ADV10-O112　动态NMR双位点合峰温度与Eyring活化参数
 
 **题目** 有机分子的两个等布居构象A和B作对称一级交换，低温¹H NMR两条独立峰频率差Δν=120.0 Hz。假设本征线宽相同且足够窄，k表示每个构象离开的单向速率。线形拟合给出k(298.15 K)=80.00 s⁻¹、k(318.15 K)=500.0 s⁻¹。采用Eyring式k=(k_B T/h)exp(ΔS‡/R−ΔH‡/(RT))及等布居双位点理想合峰公式k_c=πΔν/√2。求ΔH‡、ΔS‡、298.15 K的ΔG‡、k_c、合峰温度T_c、308.15 K速率、298.15 K平均驻留时间及318.15 K速率回代；说明合峰温度不是构象平衡常数，检验单调性和适用条件。
 
@@ -1600,7 +1611,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O113　乙醛交叉醇醛加成的成对13C示踪与质谱反问题
+#### UC-ADV10-O113　乙醛交叉醇醛加成的成对13C示踪与质谱反问题
 
 **题目** 乙醛CH₃CHO发生碱催化的自醇醛加成，生成3-羟基丁醛OHC–CH₂–CH(OH)–CH₃，碳从醛端依次编号C1至C4。假设反应仅形成该加成产物、无逆反应及碳同位素交换，供体乙醛的C1-C2碳对来自均一[1,2-¹³C₂]乙醛的概率为d，受体的C3-C4碳对来自该标记乙醛的概率为a，供体与受体抽样独立，未标记分子两碳均为¹²C。已做天然丰度和质谱响应校正，产物质谱中M+0分数为0.3000、M+4分数为0.1500，且位点分辨¹³C NMR给出供体C1-C2成对标记比例0.6000。求d、a、M+0/M+2/M+4分数、仅供体标记与仅受体标记分数、平均每分子¹³C数、在M+2产物中供体标记的条件概率及C1和C2的标记指示变量协方差。解释质谱单独的根交换歧义并检查所有概率和碳原子守恒。
 
@@ -1630,7 +1641,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O114　五肽串联质谱b/y互补碎片的序列反演及二价母离子核验
+#### UC-ADV10-O114　五肽串联质谱b/y互补碎片的序列反演及二价母离子核验
 
 **题目** 一条未修饰线性五肽恰含Ala(A)、Gly(G)、Ser(S)、Val(V)、Lys(K)各一个残基，N/C末端游离。残基单同位素质量（Da）：A=71.03711、G=57.02146、S=87.03203、V=99.06841、K=128.09496；H₂O=18.010564684 Da，质子质量1.007276466621 Da。CID单电荷b₁…b₄观测m/z为72.04439、129.06585、216.09788、315.16629；y₁…y₄为147.11280、246.18121、333.21324、390.23470（均四舍五入至五位）。给定b_n=前n个残基质量和+质子，y_n=后n个残基质量和+水+质子。求唯一N→C序列、八个精确模型碎片m/z、中性肽质量、[M+2H]²⁺母离子m/z、相邻¹³C同位素峰间距（¹³C−¹²C=1.0033548378 Da）及b₃+y₂互补质量和；验证各残基计数和互补守恒，并说明质量无法排除未列出的同质量异构残基。
 
@@ -1660,7 +1671,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O115　双向光致烯烃异构化的光稳态、暗回复与光子收支
+#### UC-ADV10-O115　双向光致烯烃异构化的光稳态、暗回复与光子收支
 
 **题目** 假想烯烃Z⇌E在均匀单色光下受光子通量F=2.000×10^16 photons/(cm²s)照射，吸收截面σ_Z=2.000×10^−17 cm²、σ_E=1.000×10^−17 cm²，光致Z→E量子产率0.3500、E→Z量子产率0.2000；暗反应E→Z一级速率0.03000 s^−1，反向暗反应忽略。初始全部为Z，样品足够稀、无光屏蔽和副反应，每次吸光最多引起一次异构化。求光照正反有效速率、光稳态E分数及E/Z比、时间常数、照光10 s的E分数、先达稳态后关灯8 s的E分数、稳态每分子吸光率、光致正反与暗回复速率、净光化学转化/吸收光子，并验证物料与光子收支。
 
@@ -1690,7 +1701,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O116　Claisen重排的碳同位素效应与Rayleigh残余底物富集
+#### UC-ADV10-O116　Claisen重排的碳同位素效应与Rayleigh残余底物富集
 
 **题目** 某假想烯丙基乙烯基醚在恒温下不可逆发生分子内[3,3]-σ迁移Claisen重排，所有底物只生成一种重排产物。按参与成键的单一目标碳位点是否为¹³C，底物分为S₁₂和S₁₃。初始总底物1.000 mmol，目标位点¹³C原子分数为0.011000，其余为¹²C。两种同位素异构体各自遵守一级动力学，k₁₂=0.06000 min⁻¹，k₁₃=0.05700 min⁻¹；没有同位素交换、二次反应或标记位点丢失。求25.00 min时动力学同位素效应k₁₂/k₁₃、剩余底物总分数和总转化率、剩余底物及产物的¹³C/¹²C摩尔比、两者相对初始底物的δ值(‰，δ=1000(R/R₀−1))、剩余底物与产物的¹³C原子分数以及两处¹³C物质的量。核验目标位点同位素与总物料守恒，并解释为何δ不等于转化率。
 
@@ -1720,7 +1731,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O117　可逆自由基环化钟的双态瞬态动力学、终产物分支与平均寿命
+#### UC-ADV10-O117　可逆自由基环化钟的双态瞬态动力学、终产物分支与平均寿命
 
 **题目** 某假想烯基碳自由基R在t=0瞬时生成1.000 mmol，三条一级通道为直接捕获R→P_t(k_t=0.0800 s⁻¹)、5-exo-trig环化R→C(k_c=0.1200 s⁻¹)、β裂解R→P_s(k_s=0.0400 s⁻¹)。环化自由基C可以开环C→R(k_−c=0.0300 s⁻¹)，也可以被捕获C→P_c(k_ct=0.2000 s⁻¹)。所有产物不可逆，忽略自由基双分子终止，完全混合且速率常数固定。以初始量归一化，求10.00 s的R、C及三种产物分数，求无穷时三种产物分数、平均自由基寿命、平均开环返回次数及自由基动力学矩阵特征值。要求检验总量守恒和终态分支，解释首次环化概率为何不是最终环化产物收率。
 
@@ -1750,9 +1761,9 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-## 物理化学（20/25）
+### 物理化学（24/25）
 
-### UC-ADV10-P98　Bosanquet分子扩散与Knudsen孔壁阻力耦合的膜通量
+#### UC-ADV10-P98　Bosanquet分子扩散与Knudsen孔壁阻力耦合的膜通量
 
 **题目** 一层假想多孔氮气扩散膜在320.0K工作，孔半径r=100.0nm，氮气摩尔质量M=0.02800kg/mol、自由气体扩散系数Dm=1.800×10^-5m²/s。孔壁碰撞的Knudsen扩散系数DK=(2r/3)√(8RT/(πM))，孔内总扩散遵循Bosanquet阻力式1/Dp=1/Dm+1/DK。膜孔隙率ε=0.3500、曲折度τ=2.500、厚度L=0.8000mm，膜两面浓度分别c1=3.000mol/m³、c2=0.5000mol/m³。求DK、Dp、膜有效Deff=εDp/τ、稳态通量及忽略Knudsen阻力时通量高估倍数。
 
@@ -1780,7 +1791,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P99　单级热电离Saha平衡的正根选择与等温压强
+#### UC-ADV10-P99　单级热电离Saha平衡的正根选择与等温压强
 
 **题目** 某假想稀薄单原子气体在T=8000K达到局部热平衡，只发生第一电离A⇌A++e−，忽略二次电离、电子简并与粒子间强相互作用。气体原子核总数密度N=nA+nA+=1.000×10^21m^-3，已把电子及原子内部配分因素合并的Saha系数S(T)=4.000×10^20m^-3，给定平衡式n_e n_A+/n_A=S(T)，并满足电中性n_e=n_A+。求电离分数x=nA+/N、电子与中性原子数密度、理想总压强p=(nA+nA++n_e)kBT，以及若每个电离原子储存12.00eV电离能时每立方米的电离内能；严格选择0≤x≤1的正根。
 
@@ -1808,7 +1819,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P100　热膨胀和等温压缩率决定Cp−Cv及PVT偏导的Maxwell闭合
+#### UC-ADV10-P100　热膨胀和等温压缩率决定Cp−Cv及PVT偏导的Maxwell闭合
 
 **题目** 某假想单相液体在300.0K和当前参考压强处有摩尔体积V=1.800×10^-5m³/mol、定压摩尔热容Cp=75.00J/(mol K)、体膨胀系数α=(1/V)(∂V/∂T)P=2.000×10^-4K^-1和等温压缩率κT=−(1/V)(∂V/∂P)T=5.000×10^-10Pa^-1，假设小范围内这些参数不变。由热力学恒等式Cp−Cv=TVα²/κT与(∂P/∂T)V=α/κT求定容热容Cv、定容升温压强斜率、定压体积温度导数和等温体积压强导数；另用常Cp近似算300至310K定压过程熵增，分别检查量纲和正稳定性。
 
@@ -1836,7 +1847,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P101　弱酸固定电荷水凝胶的Donnan分配与电荷调节耦合
+#### UC-ADV10-P101　弱酸固定电荷水凝胶的Donnan分配与电荷调节耦合
 
 **题目** 在298.15 K，一理想带弱酸基团的水凝胶与无限大NaCl水溶液接触。外液NaCl浓度c_s=0.1000 mol/L，外液pH=7.000由极微量缓冲体系固定；凝胶固定酸位点总浓度C_T=0.1500 mol/L凝胶水相，pKa=6.500，解离为不可移动A⁻。Na⁺、Cl⁻、H⁺可透膜，固定酸基团不可透膜；忽略H⁺/OH⁻对电中性的微小贡献和活度系数。令r=[Na⁺]_in/c_s，理想Donnan分配满足[Cl⁻]_in=c_s/r、[H⁺]_in=r[H⁺]_out。求r、内部Na⁺与Cl⁻浓度、固定酸位点解离度α、内部pH、内外电势差ψ_in−ψ_out及仅由可移动NaCl离子产生的渗透压差ΔΠ_ion。
 
@@ -1866,7 +1877,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P102　半透膜Kedem–Katchalsky反射系数与水体积通量反演
+#### UC-ADV10-P102　半透膜Kedem–Katchalsky反射系数与水体积通量反演
 
 **题目** 假想多孔半透膜分离两侧水溶液，在310.0K下水力渗透系数Lp=2.000×10^-12m/(Pa s)，膜反射系数σ=0.8500。设膜法向水通量Jv由左向右为正，左侧压力比右侧高ΔP=3.000bar，左侧非电解质溶质浓度cL=150.0mol/m³，右侧cR=50.00mol/m³。题设理想稀溶液渗透压差Δπ=RT(cL−cR)，Kedem–Katchalsky式Jv=Lp(ΔP−σΔπ)，无额外电渗和浓差极化。求渗透压差、实际有效水驱动压差、体积通量、实现零水通量所需ΔP以及若误当σ=1时的通量偏差，解释为何σ小于1表示部分溶质渗透。
 
@@ -1894,7 +1905,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P103　热电制冷器Seebeck–Peltier耦合与Joule热半分摊的制冷阈值
+#### UC-ADV10-P103　热电制冷器Seebeck–Peltier耦合与Joule热半分摊的制冷阈值
 
 **题目** 假想单级热电器件由恒定Seebeck系数α=200.0μV/K、总电阻Re=2.000Ω、端间热导K=0.01000W/K描述，冷端Tc=300.0K、热端Th=310.0K，在规定的制冷电流方向恒流I=0.5000A。采用Kelvin关系Πc=αTc以及冷端净吸热式Qcold=αTc I−(1/2)I²Re−K(Th−Tc)，电阻热对冷热两端各分摊一半。求冷端Peltier系数、Peltier吸热功率、分摊到冷端的Joule热、逆向导热漏量、冷端净吸热功率与Seebeck开路电压，判断此电流下是否真的制冷；说明不能只计算Peltier项而忽略电阻发热。
 
@@ -1922,7 +1933,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P104　三组元Maxwell–Stefan等摩尔扩散通量的线性系统求解
+#### UC-ADV10-P104　三组元Maxwell–Stefan等摩尔扩散通量的线性系统求解
 
 **题目** 在300K附近一假想三组元理想气体A/B/C总浓度c=40.00mol/m³，某位置摩尔分数xA=0.2000、xB=0.3000、xC=0.5000，局部沿z方向浓度梯度d xA/dz=−10.00m^-1、d xB/dz=+4.000m^-1，因此d xC/dz=+6.000m^-1。二元Maxwell–Stefan扩散系数DAB=1.000×10^-5、DAC=2.000×10^-5、DBC=1.500×10^-5m²/s。设等摩尔通量N_A+N_B+N_C=0，题定−c dxi/dz=Σ_{j≠i}(xj Ni−xi Nj)/Dij。求三组元局部扩散通量、系数矩阵行列式与N_A+N_B+N_C的误差，检验各组分方程一致；解释为何不能独立对每组分套同一个二元Fick D。
 
@@ -1950,7 +1961,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P105　对称正规溶液的双相共存线与旋节线稳定性
+#### UC-ADV10-P105　对称正规溶液的双相共存线与旋节线稳定性
 
 **题目** 考虑恒温恒压下某假想二元液体A/B的对称正规溶液，A的摩尔分数x∈(0,1)，无量纲混合Gibbs自由能g(x)=ΔGmix/(nRT)=x ln x+(1−x)ln(1−x)+χx(1−x)，给相互作用参数χ=3.000>2且与组成无关。允许两液相达到化学势平衡，且混合物具有A↔B完全对称性。求低A相和高A相的双相共存组成（binodal）、两个旋节线组成（spinodal）、x=0.500处g''及共存点g(x)；用共同切线和二阶导说明x=0.5虽满足对称方程却不是两相共存的不同组成解，并说明亚稳区与不稳定区的差别。
 
@@ -1978,7 +1989,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P106　绝热恒压N2O4气相解离的变热容能量衡算与van’t Hoff平衡联立
+#### UC-ADV10-P106　绝热恒压N2O4气相解离的变热容能量衡算与van’t Hoff平衡联立
 
 **题目** 一绝热、恒压1.000 bar的理想气相平衡容器初始含1.000 mol纯N2O4，温度T0=300.00 K，反应N2O4(g)⇌2NO2(g)。在300.00 K的无量纲标准平衡常数Kp,0=0.2000，标准反应焓ΔrH°(300 K)=+24.000 kJ/mol。假定定压热容与温度无关，Cp,m(N2O4)=80.00 J/(mol K)，Cp,m(NO2)=45.00 J/(mol K)，因此ΔrCp=+10.00 J/(mol K)；各气体理想、无其他反应、反应前后不与环境交换热量，标准压p°=1.000 bar。求平衡解离度ξ、绝热平衡温度、该温度下Kp、NO2与N2O4的气相摩尔分数及该温度下的反应焓。必须同时考虑ΔCp对反应焓及van’t Hoff积分的影响，验证能量守恒、平衡反应商、物理解唯一性，并解释为何不能在变热容模型中无说明地把ΔrH当作全温区常数。
 
@@ -2008,7 +2019,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P107　正氢与仲氢核自旋统计、平衡转动热容及冻结组成差异
+#### UC-ADV10-P107　正氢与仲氢核自旋统计、平衡转动热容及冻结组成差异
 
 **题目** 将H2近似为刚性同核双原子转子，转动温度θr=85.4 K，能级EJ/kB=θr J(J+1)。因质子为自旋1/2费米子，仲氢para-H2允许偶数J、核自旋简并度1；正氢ortho-H2允许奇数J、核自旋简并度3；转动简并度均为2J+1。考虑T=100.0 K的1 mol气体，题设有催化剂使正/仲氢可达到热平衡，计算配分函数时截断J=0,...,8（更高能级贡献可忽略）。求Zpara、Zortho、平衡正氢摩尔分数、平衡摩尔转动内能Urot、允许正/仲互变时的摩尔转动定容热容Cv,eq。另设同温度的另一份H2从高温快速冷却而核自旋转换冻结，正氢摩尔分数固定0.7500，求冻结样品Urot与Cv,frozen及两样品转动内能差Ufrozen−Ueq。请从配分函数与能量矩导出热容，解释为何平衡与冻结热容不同，检查零点能参考、热容非负性与截断误差；只计算转动贡献，不包括平动、振动或电子激发。
 
@@ -2036,7 +2047,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P108　平板电极Gouy–Chapman双电层的Poisson–Boltzmann电荷、电容及充电功
+#### UC-ADV10-P108　平板电极Gouy–Chapman双电层的Poisson–Boltzmann电荷、电容及充电功
 
 **题目** 在298.15 K的水溶液中，某无限平板电极接触理想1:1惰性电解质，体相浓度c∞=0.01000 mol/L，εr=78.5、ε0=8.8541878128×10^−12 F/m、R=8.314462618 J/(mol K)、F=96485.33212 C/mol。扩散层表面电位ψ0=−0.05000 V。忽略Stern层、离子有限体积、吸附和介电饱和，使用Gouy–Chapman平板Poisson–Boltzmann模型。求Debye长度、表面电荷密度、微分电容、表面正负离子浓度、局部相对体相理想渗透压差及从零电位充电至ψ0的单位面积可逆电功；检查浓度乘积、补偿电荷方向、单位及正性。
 
@@ -2066,7 +2077,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P109　Brusselator开体系化学振荡的Hopf阈值、雅可比矩阵与稳定性
+#### UC-ADV10-P109　Brusselator开体系化学振荡的Hopf阈值、雅可比矩阵与稳定性
 
 **题目** 考虑理想化开体系自催化反应模型Brusselator，A和B由恒定化学势储库维持，浓度与时间均已无量纲化，反应网络为A→X、B+X→Y+D、2X+Y→3X、X→E，质量作用动力学为dx/dt=A−(B+1)x+x²y、dy/dt=Bx−x²y。取A=1.500，先考察B=3.400，再将B降至2.800。求两组唯一正稳态、B=3.400的雅可比迹与行列式及线性特征值实部和正虚部、Hopf临界Bc与临界小振幅周期、B=2.800的迹与特征值实部；判别两组稳态的局部稳定性，说明不能仅凭线性化宣称全局极限环或实验化学反应必然振荡，并核对正浓度与稳态物料通量。
 
@@ -2096,7 +2107,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P110　球形多孔催化颗粒的Thiele模数、径向浓度场与有效因子
+#### UC-ADV10-P110　球形多孔催化颗粒的Thiele模数、径向浓度场与有效因子
 
 **题目** 某等温球形多孔催化剂颗粒半径Rp=0.5000 mm，内部反应物A有效扩散系数De=2.000×10⁻⁹ m²/s，均匀一阶体积反应速率rA=k cA（k=0.02500 s⁻¹），外表面浓度cs=1.200 mol/m³。忽略外部膜传质、反应热、孔径变化和对流；稳态径向扩散满足De r⁻² d(r² dc/dr)/dr=k c，中心dc/dr=0，表面c(Rp)=cs。求Thiele模数φ、颗粒有效因子η、中心浓度、外表面向内扩散通量大小及单颗粒消耗速率。保持De、k、cs不变而将颗粒半径加倍，求新φ、新η与新表面通量。必须验证表面通量乘面积等于体积反应积分，并说明增大颗粒并不使η保持不变。
 
@@ -2126,7 +2137,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P111　对称Margules非理想汽液平衡的共沸组成与泡点压力极值
+#### UC-ADV10-P111　对称Margules非理想汽液平衡的共沸组成与泡点压力极值
 
 **题目** 某二元挥发性液体在固定温度下气相理想、液相非理想，满足y_iP=x_iγ_iP_i^sat。纯组分饱和蒸气压P₁^sat=60.00 kPa、P₂^sat=40.00 kPa；对称二后缀Margules式lnγ₁=A x₂²、lnγ₂=A x₁²，A=1.200、x₂=1−x₁。分别在液相x₁=0.3500和0.8000求泡点P、汽相y₁、相对挥发度α₁₂=[y₁/(1−y₁)]/[x₁/(1−x₁)]；在x₁=0.3500还求γ₁、γ₂。判定内部共沸点并求组成及共沸压力，证明y₁=x₁和泡点压力局部极大，检查Gibbs–Duhem关系及物理范围。
 
@@ -2156,7 +2167,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P112　Butler–Volmer电荷转移与扩散极限耦合的微分极化
+#### UC-ADV10-P112　Butler–Volmer电荷转移与扩散极限耦合的微分极化
 
 **题目** 平板电极发生单电子还原O+e⁻→R，T=298.15 K，交换电流密度i₀=2.000 mA/cm²，对称转移系数α=0.5000，扩散极限电流i_L=10.00 mA/cm²。阴极还原电流i取正，总阴极过电势幅值η=0.08000 V。假设支持电解质充足、无欧姆降、R活度恒定、表面氧化物浓度c_s/c_b=1−i/i_L，浓差过电势η_c=(RT/F)ln(c_b/c_s)，活化过电势η_a=η−η_c，动力学i=2i₀sinh[Fη_a/(2RT)]。求0<i<i_L内唯一电流、两种过电势、表面浓度比、电子摩尔通量、耗散功率密度、微分电导di/dη及无传质限制的电流；严格证明物理根唯一并检查电势、电荷、单位与扩散通量闭合。
 
@@ -2184,7 +2195,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P113　van der Waals气体临界常数与Joule–Thomson反转曲线
+#### UC-ADV10-P113　van der Waals气体临界常数与Joule–Thomson反转曲线
 
 **题目** 某纯气体满足van der Waals状态方程P=RT/(V_m−b)−a/V_m²，a=0.3640 Pa·m⁶·mol⁻²，b=4.270×10⁻⁵ m³ mol⁻¹，R=8.314462618 J mol⁻¹ K⁻¹。求理论临界温度T_c、临界压力P_c（MPa）、临界摩尔体积V_c（L/mol）。在T=300.0 K、P=1.000 MPa的气相支上，求物理摩尔体积（L/mol）、压缩因子Z、等温斜率(∂P/∂V_m)_T（MPa/(L/mol)）。该状态实测定压摩尔热容C_P=37.00 J mol⁻¹ K⁻¹，求Joule–Thomson系数μ_JT（K/MPa）；再推导该摩尔体积处的反转温度T_inv(V_m)及低压极限反转温度。必须核验气相根V_m>b、机械稳定性、热力学导数、单位以及μ_JT的符号；热容仅视作所给状态的局部数值。
 
@@ -2214,7 +2225,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P114　Crooks高斯做功涨落与Jarzynski分子开关自由能反演
+#### UC-ADV10-P114　Crooks高斯做功涨落与Jarzynski分子开关自由能反演
 
 **题目** 单分子构象开关A⇌B在T=300.0 K下按正向A→B和时间反演的反向B→A协议拉伸，外界对体系做功W以kJ/mol计。正向W_F~N(μ_F,σ²)、反向W_R~N(μ_R,σ²)，共同方差未知，测得μ_F=4.200、μ_R=−1.800 kJ/mol。假定理想平衡起点、充分采样、微观可逆性及Crooks关系p_F(W)/p_R(−W)=exp[(W−ΔF)/(RT)]严格成立，R=0.008314462618 kJ mol⁻¹ K⁻¹。求ΔF、正反平均耗散、共同方差与标准差、Jarzynski正反自由能估计、Crooks交点W*、W=0处正反概率密度比、正向平均无量纲熵产生和正向平均功减自由能之差；推导唯一性并核查第二定律、单位与正反统计闭合。
 
@@ -2244,7 +2255,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P115　Onsager耦合表面反应的逆驱动与熵产生正定性
+#### UC-ADV10-P115　Onsager耦合表面反应的逆驱动与熵产生正定性
 
 **题目** 假想催化表面两条反应通道满足近平衡线性Onsager关系J_i=Σ_jL_ij A_j。反应亲和势A_1=+200.0 J/mol、A_2=−80.0 J/mol，T=298.15 K。L_11=4.000×10⁻⁹、L_12=L_21=1.500×10⁻⁹、L_22=3.000×10⁻⁹ mol²/(J m²s)，J_i单位mol/(m²s)，面耗散功率Tσ=Σ_iJ_i A_i。求两通量、面耗散功率与熵产生率、L两特征值、无量纲耦合强度、使J2=0的停滞亲和势A2、此时J1和耗散功率、detL。解释逆亲和势通道J2>0为何不违反第二定律，核验单位和正定性。
 
@@ -2274,7 +2285,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P116　Marcus电子转移的详细平衡与反转区速率判别
+#### UC-ADV10-P116　Marcus电子转移的详细平衡与反转区速率判别
 
 **题目** 某假想外球电子转移D+A⇌D⁺+A⁻在298.15 K时符合经典非绝热Marcus抛物线近似，正反重组能相同λ=0.8000 eV，正向标准自由能ΔG°=−0.2000 eV，正反预指数k₀=1.000×10¹⁰ s⁻¹。取k_B=8.617333262145×10⁻⁵ eV/K。前向势垒ΔG‡_f=(λ+ΔG°)²/(4λ)，反向势垒ΔG‡_r=(λ−ΔG°)²/(4λ)，速率k=k₀exp(−ΔG‡/(k_BT))。求正反势垒、速率、速率比和由详细平衡反推的ΔG°；再把另一可调体系的驱动力改为ΔG°=−1.600 eV（其他参数不变），求此时正向势垒、速率、相对于原正向速率的比值、该点∂ln k_f/∂ΔG°。解释为何更负的驱动力可降低速率，检查单位、反转区与微观可逆性。
 
@@ -2304,7 +2315,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P117　丙酮蒸气穿过静止氮气的Stefan扩散、浓度剖面与Fick误差
+#### UC-ADV10-P117　丙酮蒸气穿过静止氮气的Stefan扩散、浓度剖面与Fick误差
 
 **题目** 恒温320.0 K、总压101325 Pa下，丙酮蒸气A穿过氮气B的稳态气相扩散层，厚L=5.000 mm，z=0时y_A=0.2500，z=L时y_A=0.0500。B在实验室参考系总摩尔通量N_B=0，二元扩散系数D_AB=1.800×10⁻⁵ m²/s，理想气体，总压恒定，截面积0.01000 m²，丙酮摩尔质量58.08 g/mol，R=8.314462618 J/(mol K)。给定二元相对扩散通量式N_A=−D_AB c dy_A/dz+y_A(N_A+N_B)。推导Stefan对数积分，求总浓度、对数因子、实际A通量、忽略摩尔平均流的Fick近似通量及相对误差、中点和四分之一处A摩尔分数、中点J_A与J_B、摩尔平均速度、总摩尔与质量传递率，并核验边界、通量方向和N_B=0。
 
@@ -2336,7 +2347,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I121　Fe₂O₃钝化膜的双角度XPS衰减反演、表面化学计量与质量核算
+#### UC-ADV10-I121　Fe₂O₃钝化膜的双角度XPS衰减反演、表面化学计量与质量核算
 
 **题目** 某假想金属Fe表面长有均匀Fe₂O₃钝化膜，金属Fe⁰与氧化态Fe³⁺的Fe 2p峰已可靠分峰。仪器以纯金属与充分厚的氧化层标定后，理想归一化信号满足 I_Fe0(θ)=exp[−d/(λcosθ)]、I_Feox(θ)=0.8000{1−exp[−d/(λcosθ)]}、I_O(θ)=0.6000 x {1−exp[−d/(λcosθ)]}，其中d为膜厚、λ=2.000 nm为三类电子的共同有效衰减长度，θ为相对表面法线的出射角，x为膜内O/Fe原子数比。观测R=I_Feox/I_Fe0在0°与60°分别为0.6576950403124071和1.8560935381892378；同两角度观测I_O/I_Feox=1.125000。取膜内Fe原子数密度3.000×10²² cm⁻³、取样面积1.000 cm²、N_A=6.02214076×10²³ mol⁻¹、M_Fe=55.845 g/mol、M_O=15.999 g/mol。分别用两角数据独立反演d，求两角Fe⁰衰减因子、x、单位面积Fe与O的物质的量、膜总质量和表观密度。检验两角一致性、Fe³⁺/O²⁻电中性、物理正根和假设局限。
 
@@ -2368,7 +2379,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A121　毛细管区带电泳的弱酸迁移双pH反演与电渗流ζ电势
+#### UC-ADV10-A121　毛细管区带电泳的弱酸迁移双pH反演与电渗流ζ电势
 
 **题目** 一台毛细管区带电泳仪采用总毛细管长L_total=0.6000 m、入口至检测窗有效长L_eff=0.4500 m、正向电压V=18.00 kV，均匀电场E=V/L_total。无净电泳迁移的中性标记时间t₀=441.176470588235 s。待测单元弱酸HA⇌H⁺+A⁻在pH=6.500与8.000时的正向峰迁移时间分别为494.387477336112 s和999.350319074995 s，电渗流比完全解离阴离子的逆向电泳快，故峰仍能到达正向检测端。模型μ_obs=L_eff/(Et)=μ_EOF+αμ_A，α=1/[1+10^(pK_a−pH)]，μ_HA≈0，μ_A<0。给定水相η=0.8900 mPa·s、ε_r=78.50、ε₀=8.8541878128×10⁻¹² F/m，Smoluchowski式μ_EOF=−ε_rε₀ζ/η。求电渗迁移率、两个pH下观察迁移率、pK_a、完全解离阴离子μ_A、两点解离度、pH=7.200的预测时间、ζ电势及模型唯一性，检验单位与峰迁移方向。
 
@@ -2400,7 +2411,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O118　不对称环己基底物的反式双轴E2构象门控与温度选择性
+#### UC-ADV10-O118　不对称环己基底物的反式双轴E2构象门控与温度选择性
 
 **题目** 假想不对称取代的环己基磺酸酯发生强碱诱导E2消除。独立立体构象分析确认：环翻转后的构象A具有轴向离去基，存在两个不同且均反式双轴的β-H位点，分别生成位置异构烯烃P₁和P₂；构象E的离去基为赤道向且在本模型中不反应。环翻转远快于消除，形成快速E⇌A平衡。轴向构象相对赤道构象的ΔH=+5.000 kJ/mol、ΔS=+5.000 J/(mol K)，f_A=1/[1+exp((ΔH−TΔS)/(RT))]。在298.15 K，构象A两条拟一级E2通道k₁=0.1800 min⁻¹、k₂=0.0600 min⁻¹；其Arrhenius活化能分别为45.00与55.00 kJ/mol，设常数活化能区间为298.15–330.00 K，R=8.314462618。求298.15 K轴向布居、总观察速率、半衰期、10.00 min转化率及两个产物相对初始底物的量；再求330.00 K布居、两本征速率、总观察速率、P₁选择性与半衰期。验证质量守恒及为何反式双轴限制与快速构象预平衡不可省略。
 
@@ -2432,7 +2443,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P118　氮气BET多层吸附的双压反演、单层面积与吸附能差
+#### UC-ADV10-P118　氮气BET多层吸附的双压反演、单层面积与吸附能差
 
 **题目** 77.0 K下某多孔固体对N₂的理想BET吸附，样品每克的吸附量v用标准状态(273.15 K、1 atm)气体体积cm³(STP)/g表示，定义x=p/p₀。BET关系v=v_m Cx/[(1−x)(1+(C−1)x)]，且Y=x/[v(1−x)]对x呈直线。两次观测在x₁=0.0800、x₂=0.2500时分别有v₁=11.404133998574482、v₂=15.421686746987952 cm³(STP)/g。给定独立检验点x₃=0.1500，N₂分子截面积a_N2=0.1620 nm²，STP摩尔体积22414 cm³/mol、N_A=6.02214076×10²³ mol⁻¹、R=8.314462618 J/(mol K)。假设BET常数C≈exp[(E₁−E_L)/(RT)]。从双压数据反演BET直线斜率和截距、C、单层体积v_m，预测x₃的v，计算比表面积、使BET单层分数对应的特征相对压力x_m=1/(1+√C)、第一层相对于液化层的能量差；核验单层容量、正性、单位与BET适用窗口。
 
@@ -2465,7 +2476,7 @@
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
 
-### UC-ADV10-I122　混合价配合物的两态电子耦合、绝热跃迁与电荷离域
+#### UC-ADV10-I122　混合价配合物的两态电子耦合、绝热跃迁与电荷离域
 
 **题目** 一个假想的混合价双金属配合物有两个局域电荷组态|A⟩和|B⟩。忽略振动态及多电子态后，电子哈密顿量（eV）为H=[[Δ/2,V],[V,−Δ/2]]，其中V为实数电子耦合（可选择相位使V≥0），Δ为两局域组态的能量差。在溶剂甲中独立光谱标定Δ₁=+0.1200 eV，最低两个绝热态的光学能隙E₁=0.2000 eV；在溶剂乙中Δ₂=+0.3000 eV，实验测得E₂=0.3400 eV。假设V不随溶剂改变；偶极矩算符在局域基底中对角，两组态的永久偶极矩差|μ_A−μ_B|=8.000 D，非对角元忽略。取hc=1239.841984 eV·nm，1 eV=8065.54429 cm⁻¹。求耦合V、溶剂乙预测能隙、两溶剂的基态A/B电荷权重、定义为D_loc=4P_A P_B的归一化离域指标、两绝热态之间的跃迁偶极矩模长、对应吸收波长及波数；验证两溶剂光谱相容性、归一化与能量正根，并解释该最小模型的物理边界。
 
@@ -2498,7 +2509,7 @@
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
 
-### UC-ADV10-A122　双离子选择性电极的交叉响应、Davies活度自洽反演与稀释预测
+#### UC-ADV10-A122　双离子选择性电极的交叉响应、Davies活度自洽反演与稀释预测
 
 **题目** 298.15 K下，未知水样仅含NaCl和KCl，且无其他电解质。Na⁺、K⁺、Cl⁻均为一价，电中性给出c_Cl=c_Na+c_K，故离子强度I=c_Na+c_K（浓度以mol/L计）。假设两阳离子及Cl⁻共享Davies平均活度系数γ(I)=10^{−0.509[√I/(1+√I)−0.3I]}，忽略单离子活度不可直接测量的约定性问题。Na选择性电极的电势E_Na=0.100000+S log10[a_Na+0.2000a_K] V，K选择性电极E_K=0.200000+S log10[a_K+0.05000a_Na] V，其中a_i=γc_i/(1 mol/L)，S=RT ln10/F，R=8.314462618 J/(mol K)，F=96485.33212 C/mol。测得E_Na=-0.042550488434233 V、E_K=0.025262799877222 V。求S、I、γ、两离子浓度与氯离子浓度、两离子摩尔分数、交叉响应矩阵行列式及样品以纯水定容稀释2倍后的两电极电势；证明所取稀溶液物理解的可辨识性，核对电荷平衡和电势回代。
 
@@ -2531,7 +2542,7 @@
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
 
-### UC-ADV10-O119　四巯基多肽的二硫键拓扑反演、玻尔兹曼选择性与氧化电子守恒
+#### UC-ADV10-O119　四巯基多肽的二硫键拓扑反演、玻尔兹曼选择性与氧化电子守恒
 
 **题目** 某人工合成的四半胱氨酸多肽含有可区分的Cys1、Cys2、Cys3、Cys4，完全氧化后每条肽恰形成两条分子内二硫键，无分子间交联及其他氧化产物。全部三种不交叉完美配对拓扑定义为M₁=(1–2,3–4)、M₂=(1–3,2–4)、M₃=(1–4,2–3)。在298.15 K达平衡后，交联质谱给出经背景扣除的相对峰面积100.0、120.0、20.0；独立校准的三种拓扑响应因子依次为1.000、2.000、0.500，峰面积正比于响应因子×真实摩尔分数。每种拓扑视为一个非简并微观状态，假设三者之间的相对标准摩尔熵差ΔSᵢ−ΔS₁=0，因而相对自由能差等于温度无关的相对焓差。给定R=8.314462618 J/(mol K)，计算298.15 K真实拓扑分布、相对M₁的两种拓扑自由能差、330.00 K的三种拓扑分数、两温度下的构型混合熵−RΣpᵢlnpᵢ、330 K形成1–4二硫键的分子分数；若起始有2.000 mmol四巯基多肽全部被氧化，求形成的二硫键物质的量和释放电子物质的量。检查归一化、响应偏差和氧化还原配平。
 
@@ -2564,7 +2575,7 @@
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
 
-### UC-ADV10-P119　Kelvin毛细凝结的双孔径反演、弯月面压差与阶跃吸水量
+#### UC-ADV10-P119　Kelvin毛细凝结的双孔径反演、弯月面压差与阶跃吸水量
 
 **题目** 298.15 K时一块理想亲水多孔材料的孔道分为两组互不连通的圆柱形通孔，孔半径r₁=5.000 nm和未知r₂>r₁；两组可凝结孔体积分别为0.1500和0.3500 cm³/g。水的表面张力γ=0.07200 N/m，液态水摩尔体积V_m=18.00×10⁻⁶ m³/mol，R=8.314462618 J/(mol K)，液态密度1.000 g/cm³。假设各孔弯月面为球面曲率近似，接触角θ相同且0°≤θ≤90°，理想Kelvin方程ln(p/p_sat)=−2γV_m cosθ/(rRT)适用。实验测得两组孔的平衡凝结阈值相对湿度h₁=0.834349074861271、h₂=0.913427104295286（h=p/p_sat），并假定忽略吸附薄膜、孔阻塞及滞后：当h超过该组阈值时该组孔瞬时完全充水，否则保持空孔。求θ、r₂、两组Kelvin阈值回代、两组液气Laplace压差ΔP=2γcosθ/r、阈值时化学势差Δμ=RT ln h，并计算h=0.8800与h=0.9500时每克材料凝结水的质量和物质的量。讨论物理根与理想模型限制。
 
@@ -2596,7 +2607,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I123　萤石型CeO₂的Williamson–Hall双峰粒径微应变反演与晶体密度
+#### UC-ADV10-I123　萤石型CeO₂的Williamson–Hall双峰粒径微应变反演与晶体密度
 
 **题目** 假想CeO₂样品为萤石型立方晶体，每个晶胞含Z=4个CeO₂式量单位。Cu Kα波长λ=0.15406 nm、形状常数K=0.900、仪器高斯峰宽β_inst=0.001000 rad。观测(111)峰2θ=28.549454718055497°、β_meas=0.004612100601993621 rad；(220)峰2θ=47.487855126001165°、β_meas=0.005741285023320927 rad。规定按经验平方和β_sample=√(β_meas²−β_inst²)，并使用Williamson–Hall线性模型β_sample cosθ=Kλ/L+4εsinθ，L为相干晶域尺寸(nm)、ε为无量纲微应变。已知M(CeO₂)=172.115 g/mol，N_A=6.02214076×10²³ mol⁻¹。分别用两条峰求晶格常数，联合反演L和ε，求理想晶体密度、(311)峰位置与总峰宽、忽略微应变时(111)的Scherrer假尺寸及低估比例。核验(311)峰是否允许、正性、单位和该经验模型的适用局限。
 
@@ -2628,7 +2639,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A123　计时安培法Cottrell扩散电流与双电层瞬态的双时点联合反演
+#### UC-ADV10-A123　计时安培法Cottrell扩散电流与双电层瞬态的双时点联合反演
 
 **题目** 假想二价金属离子M²⁺在平面电极上进行扩散控制还原M²⁺+2e⁻→M(s)，阶跃电势后的正向电流为I(t)=nFAc√[D/(πt)]+I_cap,0 exp(−t/τ)。给定n=2、F=96485.33212 C/mol、电极面积A=2.000×10⁻⁵ m²、扩散系数D=7.000×10⁻¹⁰ m²/s、双电层时间常数τ=0.4000 s，未知体相浓度c和初始电容电流I_cap,0。实际观测为I(0.1000 s)=95.7616874813873 μA、I(0.9000 s)=30.995356275024143 μA。由两点反演两个未知量及Cottrell幅度B，预测0.4000 s电流；从t=0积分至0.4000 s求法拉第电荷、电容电荷、总电荷、法拉第比例和还原金属物质的量。再求扩散长度√(2Dt)与等面积圆盘电极半径，并核验反演行列式、电子守恒、量纲及半无限平面扩散条件。
 
@@ -2660,7 +2671,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O120　丁二烯Hückel四中心π体系的轨道能级、电子密度与离域键级
+#### UC-ADV10-O120　丁二烯Hückel四中心π体系的轨道能级、电子密度与离域键级
 
 **题目** 对理想平面1,3-丁二烯CH₂=CH−CH=CH₂四个p_z轨道采用零重叠最近邻Hückel近似，设H_jj=α=−11.000 eV、相邻轨道H_{j,j+1}=H_{j+1,j}=β=−4.000 eV，其余为0。全分子共有4个π电子，能量最低的两条轨道各双占据。给定E_k=α+2βcos(kπ/5)，归一化轨道c_jk=√(2/5)sin(jkπ/5) (j,k=1,...,4)，π电子密度q_j=2Σ_{k=1}^{2}c²_jk、π键级p_{j,j+1}=2Σ_{k=1}^{2}c_jk c_{j+1,k}，hc=1239.841984 eV·nm。求四个能级、HOMO–LUMO差及单粒子波长、四碳π电子密度、三条相邻π键级和Eπ=2(E1+E2)；比较两孤立乙烯的E_ref=4α+4β求离域稳定化能，并独立核验电子数与Hellmann–Feynman关系。解释为什么这个近似波长不能直接标成实验光谱峰值。
 
@@ -2692,7 +2703,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P120　DLVO竞争势的胶体聚集势垒、次级极小值与Debye盐浓度反演
+#### UC-ADV10-P120　DLVO竞争势的胶体聚集势垒、次级极小值与Debye盐浓度反演
 
 **题目** 在298.15 K理想水相1:1电解质中，假想带电胶体两表面的简化DLVO作用势满足U(h)/(k_BT)=100exp(−x)−5/x，x=h/(1.000 nm)>0；排斥势对应κ=1.000 nm⁻¹。球板吸引项近似U_vdW≈−A_H R_s/(6h)，有效半径R_s=10.00 nm。给定k_B=1.380649×10⁻²³ J/K、经验水相Debye长度κ⁻¹(nm)=0.304/√I(M)，I为离子强度(mol/L)。求全部正间隙驻点、极值类型、相对于无穷远基准的势垒、相对于次级极小值的越障能、2.000 nm处势能、势垒实际能量(J)、相应单价盐浓度及Hamaker常数。证明驻点存在唯一的两个正根，并检验近接触模型的局限、不能将次级极小值误认作全局稳定状态。
 
@@ -2724,7 +2735,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-I124　金属铁气固氮化的非等温化学势、有限气体库存与相共存判别
+#### UC-ADV10-I124　金属铁气固氮化的非等温化学势、有限气体库存与相共存判别
 
 **题目** 在刚性密闭反应器内考虑理想气体NH₃、H₂与纯固相Fe及Fe₂N发生反应2Fe(s)+NH₃(g)⇌Fe₂N(s)+(3/2)H₂(g)。800.0 K下标准反应Gibbs能ΔᵣG°=−20.000 kJ/mol，标准反应焓ΔᵣH°=−30.000 kJ/mol且在800–900 K恒定；标准压力p°=1.000 bar。初始n(NH₃)=0.10000 mol、n(H₂)=0.10000 mol、n(Fe)=0.30000 mol、n(Fe₂N)=0.001000 mol（用于保证两固相预先存在），容积V=0.0066515700944 m³=0.10000RT₀/p°，T₀=800.0 K；R=8.314462618 J/(mol K)，纯固相活度为1，忽略其他气相及固溶体。求800 K平衡常数、反应进度ξ₈₀₀、剩余NH₃及H₂、Fe与Fe₂N物质的量、总气压和生成的Fe₂N质量。再设系统从同一初始总库存直接在900.0 K达到平衡，按van’t Hoff积分求K₉₀₀、进度ξ₉₀₀、总压及两温度进度差。严格说明反应商随进度的单调性、固相共存、H/N/Fe元素守恒、压力与温度耦合和模型局限。Fe与N摩尔质量分别为55.845、14.007 g/mol。
 
@@ -2756,7 +2767,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-A124　双振动模拉曼反斯托克斯测温、响应校正与泊松计数不确定度
+#### UC-ADV10-A124　双振动模拉曼反斯托克斯测温、响应校正与泊松计数不确定度
 
 **题目** 一份假想激光照射下的分子溶液处于单一振动温度T，但可能高于室温298.15 K。拉曼激发光波长532.0 nm（波数ν₀=10⁷/532 cm⁻¹）。三个可分辨拉曼模波数分别为ν₁=1000.0、ν₂=1500.0、ν₃=750.0 cm⁻¹，反斯托克斯与斯托克斯通道经过独立响应标定，其效率比g_AS/g_S分别为0.8500、1.1000、0.9500。给定理想拉曼强度比r(ν)=I_AS/I_S=g[(ν₀+ν)/(ν₀−ν)]⁴ exp[−(hc/kB)ν/T]，hc/kB=1.438776877 K·cm。两条实测并已基线校正的比值为r1000=0.02133710278800315、r1500=0.004378206489836753。分别反演T并检验热平衡一致性，预测第三振动模的比值和1000 cm⁻¹模振动平均占据数。若1000模斯托克斯计数率为50000 counts/s且积分5.000 s，按独立Poisson计数和一阶误差传播估计反斯托克斯期望计数、温度标准不确定度，并计算相对室温的激光加热ΔT；需讨论仪器响应、荧光基线及非热分布限制。
 
@@ -2788,7 +2799,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-O121　对位取代苄基底物双路径Hammett反应网络的选择性反演与机理交叉
+#### UC-ADV10-O121　对位取代苄基底物双路径Hammett反应网络的选择性反演与机理交叉
 
 **题目** 研究一组假想对位取代苄基底物在同一恒定亲核剂浓度下生成两种可可靠区分的产物P1、P2。通过独立的产物结构及机理实验，P1归于离子化后溶剂捕获通道，P2归于协同亲核取代通道；二者都是拟一级且无逆反应，k_obs=k1+k2。假设两机制在给定取代基常数σ范围内分别符合Hammett关系log10[k_i(σ)/k_i(0)]=ρ_iσ，两种ρ未预先给出。校正响应后的观测：σ=−0.500的k_obs=0.41897366596 min⁻¹、P1产物分支=0.95471394147；σ=0时k_obs=0.100000 min⁻¹、P1分支=0.400000；σ=+0.500时k_obs=0.19373665961 min⁻¹、P1分支=0.020646582882。反演两机制在σ=0的速率和Hammett斜率ρ1、ρ2，求两机制速率相等的交叉σ*与该点k_obs；预测σ=+0.250在反应5.000 min时的总转化率、P1/P2相对初始物质的比例、P1产量（初始底物0.01000 mol）、反应半衰期，并核验分支与底物守恒。解释为什么不宜直接对k_obs做单一直线Hammett拟合。
 
@@ -2820,7 +2831,7 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
-### UC-ADV10-P121　Debye取向介电弛豫与直流电导叠加的双频复介电谱反演及能耗
+#### UC-ADV10-P121　Debye取向介电弛豫与直流电导叠加的双频复介电谱反演及能耗
 
 **题目** 某假想极性分子电解质在298.15 K具有单一Debye取向弛豫和一项频率无关的直流电导σ_dc。采用e^{iωt}约定，复相对介电常数ε*=ε′−iε″满足ε′(ω)=ε∞+Δε/[1+(ωτ)²]，ε″(ω)=Δε(ωτ)/[1+(ωτ)²]+σ_dc/(ε₀ω)，其中已知ε∞=3.0000，ε₀=8.8541878128×10⁻¹² F/m，ω=2πf。理想测量数据：在f1=1000 Hz，ε′=13.922038052、ε″=3.7907615223；在f2=10000 Hz，ε′=4.1039960202、ε″=3.5042559938。反演弛豫时间τ、介电强度Δε与σ_dc，并通过第二频率虚部独立核验。求纯Debye取向损耗峰的频率f_peak，峰处含电导项的ε′、ε″、tanδ=ε″/ε′以及均方根电场E_rms=100.0 V/m下的平均体积损耗功率密度p=ωε₀ε″E_rms²；求峰处电导损耗项占ε″的比例，并说明为什么总介电损耗峰位置不能直接套用单一Debye公式。
 
@@ -2852,3 +2863,118 @@
 
 **审核**：publishable=false；exclude_from_official_bank=true；quality_status=awaiting_expert_review；novelty_review_status=pending_cross_series_model_review；专家审核未通过。
 
+<a id="batch-02"></a>
+
+## 第十辑最后四题：题干、完整解答与机器待核答案
+
+### UC-ADV10-I125 Ellingham自由能与封闭气相库存耦合的氧化物还原及固相耗尽边界
+
+**题目：** 某金属氧化物在刚性密闭反应器中按MO(s)+CO(g)⇌M(s)+CO₂(g)还原，纯固体活度为1。900–1000 K区间标准反应Gibbs能ΔG°(T)=60000−70T J/mol，R=8.314462618 J/(mol K)，标准压力1 bar。初始CO=0.08000 mol、CO₂=0.02000 mol、MO=0.05000 mol、M=0.01000 mol，容器体积V=0.10000R×900/10⁵ m³。忽略碳析出、固溶体、副反应。求900 K与1000 K终态反应进度、气固物料、总压、反应商，并求双固相平衡变为MO耗尽的临界温度，严格验证相共存条件、金属/碳/氧守恒与根唯一性。
+
+**逐步解答：**
+
+1. 令正向反应进度ξ，CO=0.08−ξ、CO₂=0.02+ξ、MO=0.05−ξ、M=0.01+ξ；物理区间−0.01≤ξ≤0.05。
+
+2. 当MO和M两纯固相同时存在时，Q=(0.02+ξ)/(0.08−ξ)，由于Δνgas=0，Q不依赖总压和温度。
+
+3. 标准自由能给K(T)=exp[(70T−60000)/(RT)]，900 K的K=1.49317966588，大于初始Q(0)=0.25，反应向右。
+
+4. 解Q=K900得ξ900=(0.08K900−0.02)/(1+K900)=0.0398905761311 mol，严格处于0与0.05之间，故两固相共存。
+
+5. 900 K的CO=0.0401094238689、CO₂=0.0598905761311、MO=0.0101094238689、M=0.0498905761311 mol；总气体0.10000 mol，压力为1 bar。
+
+6. 1000 K的K=3.32917175372，而MO耗尽边界Q(0.05)=7/3<K1000，形式平衡根超出0.05，不能再套用双固相Q=K。
+
+7. 因此1000 K终态ξ=0.05000 mol，CO=0.03000 mol、CO₂=0.07000 mol、MO=0、M=0.06000 mol，Q=7/3，固定体积下总压为1000/900 bar。
+
+8. 临界条件K(T*)=7/3，解60000−70T*+RT*ln(7/3)=0，T*=953.059082457 K；高于该温度正向反应受MO库存限制。
+
+9. Q′(ξ)=0.10000/(0.08−ξ)²>0，双固相平衡根至多一个。任意ξ下nMO+nM=0.06，nCO+nCO₂=0.10，nMO+nCO+2nCO₂=0.17 mol；边界处相稳定不等式替代双固相平衡等式。
+
+**答案：** K900=1.493179666 dimensionless；xi900=0.03989057613 mol；CO900=0.04010942387 mol；CO2_900=0.05989057613 mol；MO900=0.01010942387 mol；M900=0.04989057613 mol；K1000=3.329171754 dimensionless；xi1000=0.05000000000 mol；Q1000=2.333333333 dimensionless；Tstar=953.0590825 K；p1000=1.111111111 bar
+
+**审核：**自动复算与跨辑去重待最终核验，专家未批准。
+
+### UC-ADV10-A125 离子迁移谱Mason–Schamp约化质量反演与同位素峰分辨极限
+
+**题目：** 300.0 K低场漂移管离子迁移谱中氮气数密度N=2.500×10²⁵ m⁻³，N₂质量28.00 u；两个单电荷同位素离子质量100.0 u、102.0 u，碰撞截面均为2.000 nm²。采用Mason–Schamp式K=(3e/(16NΩ))√[2π/(μkBT)]，μ=mion mg/(mion+mg)，e=1.602176634×10⁻¹⁹ C、kB=1.380649×10⁻²³ J/K、u=1.66053906660×10⁻²⁷ kg。漂移长度0.1000 m，电场1.000×10⁴ V/m，两峰FWHM均为0.1200 ms。求迁移率、时间、峰间时间差、t/FWHM、时间差/FWHM；将数密度增至3.000×10²⁵ m⁻³求新迁移率和漂移时间，反演截面并核对物理限制。
+
+**逐步解答：**
+
+1. 约化质量μ100=(100×28/128)u、μ102=(102×28/130)u；不能直接用离子质量代替碰撞体系约化质量。
+
+2. 换算Ω=2.000×10⁻¹⁸ m²；Mason–Schamp给出迁移率量纲m²/(V s)，相同Ω时较重离子迁移较慢。
+
+3. 代入得到K100=0.000122780881587、K102=0.000122517281783 m²/(V s)，二者差异来自μ的平方根。
+
+4. 由v=KE和t=L/(KE)，得t100=0.0814459048567 s、t102=0.0816211382955 s；较重同位素体峰稍迟到达。
+
+5. 峰间差Δt=0.000175233438781 s；与FWHM=0.0001200 s相比，Δt/FWHM=1.460278657，这并非实验基线分离的充分条件。
+
+6. 100 u单峰分辨本领t100/FWHM=678.71587381；须将漂移时间分辨本领与两峰分离比区别。
+
+7. 数密度提高1.2倍且其余参数不变，K100′=K100/1.2、t100′=1.2t100；如果电场或温度同时变化，此比例不成立。
+
+8. 由测得t100反演K=L/(Et)，再用Ω=3e√[2π/(μkBT)]/(16NK)得到2.000 nm²，完成正反模型闭合。
+
+9. 本模型限低场、离子构象稳定、截面不随场变化且气体近似理想；实际峰宽还包括扩散、注入和检测展宽。
+
+**答案：** K100=0.0001227808816 m²/(V s)；K102=0.0001225172818 m²/(V s)；t100=0.08144590486 s；t102=0.08162113830 s；delta_t=0.0001752334388 s；R100=678.7158738 ratio；delta_over_FWHM=1.460278657 ratio；K100_dense=0.0001023174013 m²/(V s)；t100_dense=0.09773508583 s；Omega_recovered=2.000000000 nm²
+
+**审核：**自动复算与跨辑去重待最终核验，专家未批准。
+
+### UC-ADV10-O122 自由基聚合引发剂衰减下的非恒速单体转化及瞬时数均聚合度
+
+**题目：** 一种假想苯乙烯类单体发生理想自由基链式聚合，初始[M]₀=2.000 mol/L、[I]₀=0.01000 mol/L；引发剂一级分解kd=1.000×10⁻³ s⁻¹、引发效率f=0.6000、链增长kp=500.0 L/(mol s)、偶合终止kt=1.000×10⁷ L/(mol s)。定义Ri=2fkd[I]，自由基消耗速率kt[R·]²（故[R·]=√(Ri/kt)），Rp=kp[M][R·]。忽略链转移、凝胶效应、体积变化，重复单元摩尔质量100.0 g/mol。求600.0 s后引发剂、自由基、单体、转化率、瞬时Rp、Ri、瞬时数均聚合度Xn=2Rp/Ri及瞬时Mn，推导单体积分式并检查稳态与单位。
+
+**逐步解答：**
+
+1. 一级引发剂衰减[I](t)=I₀exp(−kdt)，600 s后[I]=0.0054881163609 mol/L；不能把初始引发速率当常数。
+
+2. 稳态自由基条件Ri=kt[R·]²给[R·](t)=√(2fkdI₀/kt)exp(−kdt/2)，初始值=0.0000010954451150 mol/L。
+
+3. 600 s的自由基浓度=8.1152570096e-7 mol/L，指数衰减时间常数为2/kd。
+
+4. 由d[M]/dt=−kp[M][R·](t)分离变量，得ln(M₀/M)=(2kp[R·]₀/kd)[1−exp(−kdt/2)]。
+
+5. 600 s时积分指数=0.28391941405，单体浓度=1.5056546191 mol/L，转化率=0.24717269044。
+
+6. 瞬时增长速率Rp=0.00061093871009 mol/(L s)，瞬时引发速率Ri=0.0000065857396331 mol/(L s)，满足kt[R·]²=Ri。
+
+7. 本题终止定义为自由基消耗率kt[R·]²，偶合终止事件率kt[R·]²/2=Ri/2，故新形成链的瞬时Xn=Rp/(Ri/2)=185.53381826。
+
+8. 忽略端基质量，瞬时Mn=100Xn=18553.381826 g/mol；该量不是0至600 s累积产物的数均分子量。
+
+9. 检验单体浓度单调降低、各速率单位为mol/(L s)；若终止速率常数采用2kt[R·]²定义，需同时调整稳态式与聚合度公式，不能混用。
+
+**答案：** radical0=0.000001095445115 mol/L；initiator600=0.005488116361 mol/L；radical600=8.115257010e-7 mol/L；integrated_exponent=0.2839194141 dimensionless；monomer600=1.505654619 mol/L；conversion600=0.2471726904 fraction；Rp600=0.0006109387101 mol/(L s)；Ri600=0.000006585739633 mol/(L s)；instantaneous_Xn=185.5338183 units；instantaneous_Mn=18553.38183 g/mol
+
+**审核：**自动复算与跨辑去重待最终核验，专家未批准。
+
+### UC-ADV10-P122 Szyszkowski界面张力与Gibbs吸附反演的有限面积自由能核查
+
+**题目：** 298.15 K时，一种理想非离子表面活性剂在水–气界面满足γ(c)=γ₀−RTΓ∞ln(1+Kc)，γ₀=0.07200 N/m、Γ∞=2.500×10⁻⁶ mol/m²、K=60.00 L/mol、R=8.314462618 J/(mol K)，c单位mol/L。体相浓度从c₁=0.01000 mol/L升至c₂=0.1000 mol/L，界面面积A=0.01000 m²；假设大储液池、理想溶液、吸附平衡且无表面相变。求两浓度表面张力、Gibbs表面过量Γ、覆盖率、单位面积张力差及恒面积时界面自由能变化，证明−(1/RT)dγ/dlnc=Γ，并解释为何自由能差不等于吸附焓。
+
+**逐步解答：**
+
+1. 对非离子理想溶质，Gibbs吸附关系Γ=−(1/RT)∂γ/∂lnc；Kc无量纲。
+
+2. 微分γ得到Γ=Γ∞Kc/(1+Kc)，Langmuir覆盖率θ=Kc/(1+Kc)。
+
+3. c₁时Kc=0.6000，γ₁=0.0690872029984 N/m，Γ₁=9.37500000000e-7 mol/m²，θ₁=0.3750000000。
+
+4. c₂时Kc=6.000，γ₂=0.0599404308928 N/m，Γ₂=0.00000214285714286 mol/m²，θ₂=0.8571428571。
+
+5. 浓度升高导致表面过量增加，张力差Δγ=-0.00914677210563 N/m（等价J/m²）。
+
+6. 恒面积界面自由能差ΔF=AΔγ=-0.0000914677210563 J；两状态的体相化学势不同。
+
+7. 直接求导−dγ/dlnc=RTΓ∞Kc/(1+Kc)=RTΓ，分别代入两浓度可验证Gibbs关系。
+
+8. 低浓度Γ≈Γ∞Kc，高浓度Γ→Γ∞；表面张力对数公式不能无限外推至负值。
+
+9. 张力为自由能而非吸附焓，不能把ΔF直接解释为吸附放热；实际胶束、非理想活度和表面重排需额外考虑。
+
+**答案：** gamma1=0.06908720300 N/m；gamma2=0.05994043089 N/m；Gamma1=9.375000000e-7 mol/m²；Gamma2=0.000002142857143 mol/m²；theta1=0.3750000000 fraction；theta2=0.8571428571 fraction；delta_gamma=-0.009146772106 J/m²；delta_F=-0.00009146772106 J；delta_Gamma=0.000001205357143 mol/m²
+
+**审核：**自动复算与跨辑去重待最终核验，专家未批准。

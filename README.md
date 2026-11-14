@@ -21,16 +21,16 @@
 - **第七辑新增 60 条高阶综合待审稿，四科各15道**：[60道完整题目与分步解答](editorial/advanced_integrated_v7/60_advanced_chemistry_solutions.md)、[分科JSONL目录](editorial/advanced_integrated_v7/README.md)、[跨辑相近模型人工复核队列](editorial/advanced_integrated_v7/overlap_review_queue.json)。全部经过机器计算复核，但新模型独立性仍待逐题审定。
 - **第八辑新增60条审校题**：[完整中文题目及逐步解答](editorial/advanced_integrated_v8/60_advanced_chemistry_solutions.md) · [集中结构化存储](editorial/advanced_integrated_v8/README.md)。无机、分析、有机、物化各15道。第八辑[45组潜在跨辑模型重叠](editorial/advanced_integrated_v8/overlap_review_queue.json)仍待逐题复核，**不能称其60种模型已经独立去重**。
 - **第九辑新增100条待专家审校题**：[四科各25道的完整中文题目与解答](editorial/advanced_integrated_v9/100_advanced_chemistry_solutions.md) · [集中数据及审稿说明](editorial/advanced_integrated_v9/README.md) · [核心模型待人工复核清单](editorial/advanced_integrated_v9/overlap_review_queue.json)。独立计算复核已通过，但跨辑模型独立性仍未全部确证。
-- **第十辑已完成：100/100**，四科各25道，参见[第十辑目录](editorial/advanced_integrated_v10/README.md)和[每题完整数值答案独立计算检查](scripts/check-advanced-authored-v10.mjs)；尚未完成专家和跨辑模型原创性审查。
+- **第十辑已完成：100/100**，四科各25道，参见[100 题解答](editorial/advanced_integrated_v10/solutions.md) · [目录与源稿](editorial/advanced_integrated_v10/README.md)和[每题完整数值答案独立计算检查](scripts/check-advanced-authored-v10.mjs)；尚未完成专家和跨辑模型原创性审查。
 - **第十一辑已完成：100/100**，四科各25道，[100 题解答](editorial/advanced_integrated_v11/solutions.md)、[结构化源稿与QA说明](editorial/advanced_integrated_v11/README.md)；独立复算与跨辑模型人工复核严格分层。
 - **第十二辑完成：100/100**，四科分别25/25/25/25；[100 题解答](editorial/advanced_integrated_v12/solutions.md) · [完整索引与待审数据](editorial/advanced_integrated_v12/README.md)。
 - **当前全库累计1060条编辑记录**（前九辑406+第十辑100+第十一辑100+第十二辑100+第十三辑100+第十四辑100+第十五辑100+第十六辑54）；专家批准 **0**，正式可出卷 **0**。第六至十二辑的跨辑模型审定与专家审核仍未完成。
 
-- **第十三辑待专家审核：100/100**，四科25/25/25/25题，[本辑完整题解](editorial/advanced_integrated_v13/README.md)，仍全部待专家审稿。
+- **第十三辑待专家审核：100/100**，四科25/25/25/25题，[100 题解答](editorial/advanced_integrated_v13/solutions.md) · [目录与源稿](editorial/advanced_integrated_v13/README.md)，仍全部待专家审稿。
 
-- **第十四辑已录满：100/100**，四科25/25/25/25题，[本辑中文题解与结构化源稿](editorial/advanced_integrated_v14/README.md)，全部待专家审稿。
+- **第十四辑已录满：100/100**，四科25/25/25/25题，[100 题解答](editorial/advanced_integrated_v14/solutions.md) · [目录与源稿](editorial/advanced_integrated_v14/README.md)，全部待专家审稿。
 
-- **第十五辑录满：100/100**，无机25、分析25、有机25、物化25，[中文题解与结构化数据](editorial/advanced_integrated_v15/README.md)。
+- **第十五辑录满：100/100**，无机25、分析25、有机25、物化25，[100 题解答](editorial/advanced_integrated_v15/solutions.md) · [目录与源稿](editorial/advanced_integrated_v15/README.md)。
 
 ## 清理政策
 
@@ -62,4 +62,4 @@ node scripts/audit-advanced-only.mjs
 
 当前仅允许逐题独立建模、完整推导、约束条件与逆向验算的难题进入活动库。仍需人工化学科学性、实验模型、难度、版权与解答复核。所有题目 `publishable=false`；[正式发布索引](release/chemistry-approved-manifest.json) 为空。
 
-- **第十六辑进行中：54/100**，无机14、分析14、有机13、物化13题，[题目与解析](editorial/advanced_integrated_v16/README.md)，全部待审。
+- **第十六辑进行中：54/100**，无机14、分析14、有机13、物化13题，[54 题解答](editorial/advanced_integrated_v16/solutions.md) · [目录与源稿](editorial/advanced_integrated_v16/README.md)，全部待审。
