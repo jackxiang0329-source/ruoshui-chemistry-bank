@@ -76,11 +76,7 @@ assert.equal(Object.keys(witnesses).length,60);
 const spec={inorganic:['I',61],analytical:['A',61],organic:['O',58],physical:['P',58]};
 let total=0;const ids=new Set(),titles=new Set(),stats={};
 for(const [subject,[prefix,start]] of Object.entries(spec)){
- let rows=[];
- for(let part=1;part<=3;part++){
-  const file=rootDir+subject+'_part'+part+'.jsonl',a=readFileSync(file,'utf8').trimEnd().split('\n').map(JSON.parse);
-  assert.equal(a.length,5,subject+' part '+part);rows.push(...a);
- }
+ const rows=readFileSync(rootDir+subject+'.jsonl','utf8').trimEnd().split('\n').map(JSON.parse);
  stats[subject]=rows.length;assert.equal(rows.length,15);
  for(let i=0;i<rows.length;i++){
   const q=rows[i],key=prefix+(start+i);

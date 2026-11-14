@@ -9,9 +9,9 @@
 | 学科 | 题量 | 编号 | 数据文件 |
 |---|---:|---|---|
 | 无机化学 | 13 | I20— I32 | [inorganic.jsonl](inorganic.jsonl) |
-| 分析化学 | 13 | A20— A32 | [前7道](analytical_part1.jsonl) · [后6道](analytical_part2.jsonl) |
-| 有机化学 | 12 | O19— O30 | [前6道](organic_part1.jsonl) · [后6道](organic_part2.jsonl) |
-| 物理化学 | 12 | P19— P30 | [前6道](physical_part1.jsonl) · [后6道](physical_part2.jsonl) |
+| 分析化学 | 13 | A20— A32 | [analytical.jsonl](analytical.jsonl) |
+| 有机化学 | 12 | O19— O30 | [organic.jsonl](organic.jsonl) |
+| 物理化学 | 12 | P19— P30 | [physical.jsonl](physical.jsonl) |
 
 共**7个JSONL**，没有50个逐题零散文件。每道结构化记录包括独立模型标记、题目、详细步骤、带单位答案、模型假设、复核残差和人工审核状态。
 

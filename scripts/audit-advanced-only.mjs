@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import {readdirSync,readFileSync,existsSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../',import.meta.url)), read=p=>readFileSync(root+p,'utf8'), exists=p=>existsSync(root+p);
+const readSeriesSubject=(volume,subject)=>read('editorial/advanced_integrated_v'+volume+'/'+subject+'.jsonl').trimEnd().split('\n').map(JSON.parse);
 const ids=JSON.parse(read('editorial/advanced_integrated_v1/candidate_ids.json'));
 assert.equal(ids.length,12);
 const filenames=readdirSync(root+'data/candidates').sort();
@@ -57,89 +58,72 @@ assert.equal(thirdIDs.size,12);
 const series4Groups={inorganic:13,analytical:13,organic:12,physical:12};
 const v4IDs=new Set(),v4Titles=new Set();
 for(const [subject,target] of Object.entries(series4Groups)){
- let n=0;
- for(const part of [1,2]){
-  const records=read('editorial/advanced_integrated_v4/'+subject+'_part'+part+'.jsonl').trimEnd().split('\n').map(JSON.parse);
-  assert.equal(records.length,part===1?(target===13?7:6):6);
-  for(const q of records){
-   assert.equal(q.subject,subject);
-   assert.equal(q.original_independent_model,true);
-   assert.equal(q.numeric_variant,false);
-   assert.equal(q.quality_status,'awaiting_expert_review');
-   assert.equal(q.publishable,false);
-   assert.equal(q.exclude_from_official_bank,true);
-   assert.equal(q.verification.human_expert_reviewed,false);
-   assert.ok(!v4IDs.has(q.id)&&!v4Titles.has(q.title));
-   v4IDs.add(q.id);v4Titles.add(q.title);n++;
-  }
+ const records=readSeriesSubject(4,subject);
+ assert.equal(records.length,target,subject);
+ for(const q of records){
+  assert.equal(q.subject,subject);
+  assert.equal(q.original_independent_model,true);
+  assert.equal(q.numeric_variant,false);
+  assert.equal(q.quality_status,'awaiting_expert_review');
+  assert.equal(q.publishable,false);
+  assert.equal(q.exclude_from_official_bank,true);
+  assert.equal(q.verification.human_expert_reviewed,false);
+  assert.ok(!v4IDs.has(q.id)&&!v4Titles.has(q.title));
+  v4IDs.add(q.id);v4Titles.add(q.title);
  }
- assert.equal(n,target);
 }
 assert.equal(v4IDs.size,50);
 
-const fifthGroups={inorganic:['inorganic.jsonl',13],analytical:['analytical_part1.jsonl','analytical_part2.jsonl',13],organic:['organic_part1.jsonl','organic_part2.jsonl',12],physical:['physical_part1.jsonl','physical_part2.jsonl',12]};
 const fifthNames=new Set(),fifthIDs=new Set();
-for(const [subject,spec] of Object.entries(fifthGroups)){
- let count=0; const expectedCount=spec[spec.length-1];
- for(const path of spec.slice(0,-1)){
-  const part=read('editorial/advanced_integrated_v5/'+path).trimEnd().split('\n').map(JSON.parse);
-  for(const q of part){
-   assert.equal(q.subject,subject);
-   assert.equal(q.individual_model,true);assert.equal(q.parametric_variant,false);
-   assert.equal(q.quality_status,'awaiting_expert_review');
-   assert.equal(q.publishable,false);assert.equal(q.exclude_from_official_bank,true);
-   assert.ok(q.solution_zh_steps.length>=7&&q.problem_zh.length>=130);
-   assert.ok(!fifthNames.has(q.title)&&!fifthIDs.has(q.id));
-   fifthNames.add(q.title);fifthIDs.add(q.id);count++;
-  }
+for(const [subject,expectedCount] of Object.entries(series4Groups)){
+ const records=readSeriesSubject(5,subject);
+ assert.equal(records.length,expectedCount,subject);
+ for(const q of records){
+  assert.equal(q.subject,subject);
+  assert.equal(q.individual_model,true);assert.equal(q.parametric_variant,false);
+  assert.equal(q.quality_status,'awaiting_expert_review');
+  assert.equal(q.publishable,false);assert.equal(q.exclude_from_official_bank,true);
+  assert.ok(q.solution_zh_steps.length>=7&&q.problem_zh.length>=130);
+  assert.ok(!fifthNames.has(q.title)&&!fifthIDs.has(q.id));
+  fifthNames.add(q.title);fifthIDs.add(q.id);
  }
- assert.equal(count,expectedCount,subject+' newly authored cases');
 }
 assert.equal(fifthIDs.size,50);
 
-const sixthFiles={inorganic:['inorganic.jsonl',13],analytical:['analytical_part1.jsonl','analytical_part2.jsonl',13],organic:['organic_part1.jsonl','organic_part2.jsonl',12],physical:['physical_part1.jsonl','physical_part2.jsonl',12]};
 const sixthIDs=new Set(),sixthTitles=new Set();
-for(const [subject,spec] of Object.entries(sixthFiles)){
- let count=0;
- for(const name of spec.slice(0,-1)){
-  const part=read('editorial/advanced_integrated_v6/'+name).trimEnd().split('\n').map(JSON.parse);
-  for(const q of part){
-   assert.equal(q.subject,subject);
-   assert.equal(q.novelty_review_status,'pending_cross_series_model_review');
-   assert.equal(q.parametric_variant,null);
-   assert.equal(q.quality_status,'awaiting_expert_review');
-   assert.equal(q.publishable,false);assert.equal(q.exclude_from_official_bank,true);
-   assert.ok(q.solution_zh_steps.length>=6&&q.problem_zh.length>75);
-   assert.ok(!sixthIDs.has(q.id)&&!sixthTitles.has(q.title));
-   sixthIDs.add(q.id);sixthTitles.add(q.title);count++;
-  }
+for(const [subject,expectedCount] of Object.entries(series4Groups)){
+ const records=readSeriesSubject(6,subject);
+ assert.equal(records.length,expectedCount,subject);
+ for(const q of records){
+  assert.equal(q.subject,subject);
+  assert.equal(q.novelty_review_status,'pending_cross_series_model_review');
+  assert.equal(q.parametric_variant,null);
+  assert.equal(q.quality_status,'awaiting_expert_review');
+  assert.equal(q.publishable,false);assert.equal(q.exclude_from_official_bank,true);
+  assert.ok(q.solution_zh_steps.length>=6&&q.problem_zh.length>75);
+  assert.ok(!sixthIDs.has(q.id)&&!sixthTitles.has(q.title));
+  sixthIDs.add(q.id);sixthTitles.add(q.title);
  }
- assert.equal(count,spec[spec.length-1]);
 }
 assert.equal(sixthIDs.size,50);
 const overlap=JSON.parse(read('editorial/advanced_integrated_v6/overlap_review_queue.json'));
 assert.equal(overlap.status,'manual_cross_series_review_required');
 assert.equal(overlap.total_new_records,50);
 
-const v7Specs={inorganic:'I',analytical:'A',organic:'O',physical:'P'};
 const v7IDs=new Set(),v7Titles=new Set();
-for(const [subject,code] of Object.entries(v7Specs)){
- let count=0;
- for(let n=1;n<=3;n++){
-  const records=read('editorial/advanced_integrated_v7/'+subject+'_part'+n+'.jsonl').trimEnd().split('\n').map(JSON.parse);
-  assert.equal(records.length,5);
-  for(const q of records){
-   assert.equal(q.subject,subject);
-   assert.equal(q.novelty_review_status,'pending_cross_series_model_review');
-   assert.equal(q.parametric_variant,null);
-   assert.equal(q.publishable,false);assert.equal(q.exclude_from_official_bank,true);
-   assert.equal(q.quality_status,'awaiting_expert_review');
-   assert.ok(q.problem_zh.length>=110&&q.solution_zh_steps.length>=8);
-   assert.ok(!v7IDs.has(q.id)&&!v7Titles.has(q.title));
-   v7IDs.add(q.id);v7Titles.add(q.title);count++;
-  }
+for(const subject of Object.keys(series4Groups)){
+ const records=readSeriesSubject(7,subject);
+ assert.equal(records.length,15,subject);
+ for(const q of records){
+  assert.equal(q.subject,subject);
+  assert.equal(q.novelty_review_status,'pending_cross_series_model_review');
+  assert.equal(q.parametric_variant,null);
+  assert.equal(q.publishable,false);assert.equal(q.exclude_from_official_bank,true);
+  assert.equal(q.quality_status,'awaiting_expert_review');
+  assert.ok(q.problem_zh.length>=110&&q.solution_zh_steps.length>=8);
+  assert.ok(!v7IDs.has(q.id)&&!v7Titles.has(q.title));
+  v7IDs.add(q.id);v7Titles.add(q.title);
  }
- assert.equal(count,15,subject+' must have 15 added cases');
 }
 assert.equal(v7IDs.size,60);
 const v7review=JSON.parse(read('editorial/advanced_integrated_v7/overlap_review_queue.json'));
@@ -147,23 +131,19 @@ assert.equal(v7review.new_records,60);
 assert.equal(v7review.state,'pending_manual_cross_series_comparison');
 
 const v8IDs=new Set(),v8Titles=new Set();
-for(const [subject,letter] of Object.entries({inorganic:'I',analytical:'A',organic:'O',physical:'P'})){
- let count=0;
- for(let part=1;part<=3;part++){
-  const records=read('editorial/advanced_integrated_v8/'+subject+'_part'+part+'.jsonl').trimEnd().split('\n').map(JSON.parse);
-  assert.equal(records.length,5,'eighth series five per part');
-  for(const d of records){
-   assert.equal(d.subject,subject);
-   assert.equal(d.quality_status,'awaiting_expert_review');
-   assert.equal(d.publishable,false);assert.equal(d.exclude_from_official_bank,true);
-   assert.equal(d.novelty_review_status,'pending_cross_series_model_review');
-   assert.equal(d.parametric_variant,null);
-   assert.ok(d.solution_zh_steps.length>=7&&d.problem_zh.length>=90);
-   assert.ok(!v8IDs.has(d.id)&&!v8Titles.has(d.title));
-   v8IDs.add(d.id);v8Titles.add(d.title);count++;
-  }
+for(const subject of Object.keys(series4Groups)){
+ const records=readSeriesSubject(8,subject);
+ assert.equal(records.length,15,subject);
+ for(const d of records){
+  assert.equal(d.subject,subject);
+  assert.equal(d.quality_status,'awaiting_expert_review');
+  assert.equal(d.publishable,false);assert.equal(d.exclude_from_official_bank,true);
+  assert.equal(d.novelty_review_status,'pending_cross_series_model_review');
+  assert.equal(d.parametric_variant,null);
+  assert.ok(d.solution_zh_steps.length>=7&&d.problem_zh.length>=90);
+  assert.ok(!v8IDs.has(d.id)&&!v8Titles.has(d.title));
+  v8IDs.add(d.id);v8Titles.add(d.title);
  }
- assert.equal(count,15,'eighth '+subject+' allocation');
 }
 assert.equal(v8IDs.size,60);
 const v8queue=JSON.parse(read('editorial/advanced_integrated_v8/overlap_review_queue.json'));
@@ -171,29 +151,20 @@ assert.equal(v8queue.status,'manual_cross_series_review_required');
 assert.ok(v8queue.suspected_pairs.length>0);
 assert.equal(v8queue.expert_approved_count,0);
 
-const v9Groups={
- inorganic:['inorganic_part1','inorganic_part2','inorganic_part3a','inorganic_part3b'],
- analytical:['analytical_part1','analytical_part2','analytical_part3'],
- organic:['organic_part1','organic_part2a','organic_part2b','organic_part3'],
- physical:['physical_part1','physical_part2','physical_part3']
-};
 const v9IDs=new Set(),v9Titles=new Set(),v9Families=new Set();
-for(const [subject,parts] of Object.entries(v9Groups)){
- let count=0;
- for(const part of parts){
-  const records=read('editorial/advanced_integrated_v9/'+part+'.jsonl').trimEnd().split('\n').map(JSON.parse);
-  for(const q of records){
-   assert.equal(q.subject,subject);
-   assert.equal(q.quality_status,'awaiting_expert_review');
-   assert.equal(q.novelty_review_status,'pending_cross_series_model_review');
-   assert.equal(q.parametric_variant,null);
-   assert.equal(q.publishable,false);assert.equal(q.exclude_from_official_bank,true);
-   assert.ok(q.problem_zh.length>=95&&q.solution_zh_steps.length>=7);
-   assert.ok(!v9IDs.has(q.id)&&!v9Titles.has(q.title)&&!v9Families.has(q.model_family));
-   v9IDs.add(q.id);v9Titles.add(q.title);v9Families.add(q.model_family);count++;
-  }
+for(const subject of Object.keys(series4Groups)){
+ const records=readSeriesSubject(9,subject);
+ assert.equal(records.length,25,subject);
+ for(const q of records){
+  assert.equal(q.subject,subject);
+  assert.equal(q.quality_status,'awaiting_expert_review');
+  assert.equal(q.novelty_review_status,'pending_cross_series_model_review');
+  assert.equal(q.parametric_variant,null);
+  assert.equal(q.publishable,false);assert.equal(q.exclude_from_official_bank,true);
+  assert.ok(q.problem_zh.length>=95&&q.solution_zh_steps.length>=7);
+  assert.ok(!v9IDs.has(q.id)&&!v9Titles.has(q.title)&&!v9Families.has(q.model_family));
+  v9IDs.add(q.id);v9Titles.add(q.title);v9Families.add(q.model_family);
  }
- assert.equal(count,25,'v9 must have exactly 25 '+subject+' models');
 }
 assert.equal(v9IDs.size,100);
 const v9Queue=JSON.parse(read('editorial/advanced_integrated_v9/overlap_review_queue.json'));

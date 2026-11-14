@@ -79,11 +79,8 @@ const models={
 assert.equal(Object.keys(models).length,60);
 const all=[],seenIDs=new Set(),seenTitles=new Set();
 for(let si=0;si<4;si++){
- const subject=paths[si],letter=letters[si],rows=[];
- for(let k=1;k<=3;k++){
-  const filename=dir+subject+'_part'+k+'.jsonl';
-  rows.push(...readFileSync(filename,'utf8').trimEnd().split('\n').map(JSON.parse));
- }
+ const subject=paths[si],letter=letters[si];
+ const rows=readFileSync(dir+subject+'.jsonl','utf8').trimEnd().split('\n').map(JSON.parse);
  assert.equal(rows.length,15,subject+' 15 records');
  for(let i=0;i<rows.length;i++){
   const q=rows[i],key=letter+(starts[si]+i);

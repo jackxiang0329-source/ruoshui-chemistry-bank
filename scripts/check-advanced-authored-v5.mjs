@@ -6,12 +6,10 @@ import {readFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../',import.meta.url)),R=8.314462618,F=96485.33212;
 const close=(a,b,label)=>{assert.ok(Number.isFinite(a)&&Number.isFinite(b),label+' finite');const tol=1e-8*Math.max(1e-10,Math.abs(a),Math.abs(b));assert.ok(Math.abs(a-b)<=tol,label+': '+a+' vs '+b)};
-const files={inorganic:['inorganic.jsonl'],analytical:['analytical_part1.jsonl','analytical_part2.jsonl'],organic:['organic_part1.jsonl','organic_part2.jsonl'],physical:['physical_part1.jsonl','physical_part2.jsonl']};
 const expected={inorganic:[13,'I',20],analytical:[13,'A',20],organic:[12,'O',19],physical:[12,'P',19]};
 const items=[];
-for(const [subject,paths] of Object.entries(files)){
- let rows=[];
- for(const name of paths)rows.push(...readFileSync(root+'editorial/advanced_integrated_v5/'+name,'utf8').trim().split('\n').map(JSON.parse));
+for(const subject of Object.keys(expected)){
+ const rows=readFileSync(root+'editorial/advanced_integrated_v5/'+subject+'.jsonl','utf8').trim().split('\n').map(JSON.parse);
  assert.equal(rows.length,expected[subject][0],subject+' 13/12 item count');
  rows.forEach((q,i)=>{
   assert.equal(q.id,'UC-ADV5-'+expected[subject][1]+(expected[subject][2]+i));

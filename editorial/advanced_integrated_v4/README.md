@@ -4,10 +4,10 @@
 
 | 学科 | 新增题数 | 编号 | 独立结构化文件 |
 |---|---:|---|---|
-| 无机化学 | 13 | I07—I19 | [part1](inorganic_part1.jsonl)、[part2](inorganic_part2.jsonl) |
-| 分析化学 | 13 | A07—A19 | [part1](analytical_part1.jsonl)、[part2](analytical_part2.jsonl) |
-| 有机化学 | 12 | O07—O18 | [part1](organic_part1.jsonl)、[part2](organic_part2.jsonl) |
-| 物理化学 | 12 | P07—P18 | [part1](physical_part1.jsonl)、[part2](physical_part2.jsonl) |
+| 无机化学 | 13 | I07—I19 | [inorganic.jsonl](inorganic.jsonl) |
+| 分析化学 | 13 | A07—A19 | [analytical.jsonl](analytical.jsonl) |
+| 有机化学 | 12 | O07—O18 | [organic.jsonl](organic.jsonl) |
+| 物理化学 | 12 | P07—P18 | [physical.jsonl](physical.jsonl) |
 | **合计** | **50** | | **8 个 JSONL 文件，不逐题建文件** |
 
 [**直接阅读全部50道题目与分步严格解答**](50_advanced_chemistry_solutions.md)。

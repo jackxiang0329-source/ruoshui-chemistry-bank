@@ -4,10 +4,10 @@
 
 | 学科 | 题号 | 数量 | 结构化源文件 |
 |---|---|---:|---|
-| 无机化学 | I76–I100 | 25 | [1](inorganic_part1.jsonl) · [2](inorganic_part2.jsonl) · [3a](inorganic_part3a.jsonl) · [3b](inorganic_part3b.jsonl) |
-| 分析化学 | A76–A100 | 25 | [1](analytical_part1.jsonl) · [2](analytical_part2.jsonl) · [3](analytical_part3.jsonl) |
-| 有机化学 | O73–O97 | 25 | [1](organic_part1.jsonl) · [2a](organic_part2a.jsonl) · [2b](organic_part2b.jsonl) · [3](organic_part3.jsonl) |
-| 物理化学 | P73–P97 | 25 | [1](physical_part1.jsonl) · [2](physical_part2.jsonl) · [3](physical_part3.jsonl) |
+| 无机化学 | I76–I100 | 25 | [inorganic.jsonl](inorganic.jsonl) |
+| 分析化学 | A76–A100 | 25 | [analytical.jsonl](analytical.jsonl) |
+| 有机化学 | O73–O97 | 25 | [organic.jsonl](organic.jsonl) |
+| 物理化学 | P73–P97 | 25 | [physical.jsonl](physical.jsonl) |
 
 ## 数值质量检查
 

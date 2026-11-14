@@ -6,10 +6,10 @@
 
 | 学科 | 题号 | 题数 | 存档 |
 |---|---|---:|---|
-| 无机化学 | I46–I60 | 15 | [1](inorganic_part1.jsonl) · [2](inorganic_part2.jsonl) · [3](inorganic_part3.jsonl) |
-| 分析化学 | A46–A60 | 15 | [1](analytical_part1.jsonl) · [2](analytical_part2.jsonl) · [3](analytical_part3.jsonl) |
-| 有机化学 | O43–O57 | 15 | [1](organic_part1.jsonl) · [2](organic_part2.jsonl) · [3](organic_part3.jsonl) |
-| 物理化学 | P43–P57 | 15 | [1](physical_part1.jsonl) · [2](physical_part2.jsonl) · [3](physical_part3.jsonl) |
+| 无机化学 | I46–I60 | 15 | [inorganic.jsonl](inorganic.jsonl) |
+| 分析化学 | A46–A60 | 15 | [analytical.jsonl](analytical.jsonl) |
+| 有机化学 | O43–O57 | 15 | [organic.jsonl](organic.jsonl) |
+| 物理化学 | P43–P57 | 15 | [physical.jsonl](physical.jsonl) |
 
 ## 验证机制
 

@@ -8,13 +8,8 @@ const root=fileURLToPath(new URL('../',import.meta.url)),R=8.314462618,F=96485.3
 const eq=(a,b,where)=>assert.ok(Number.isFinite(a)&&Number.isFinite(b)&&Math.abs(a-b)<(b===0?1e-10:1e-8*Math.max(1e-30,Math.abs(a),Math.abs(b))),where+': '+a+' vs '+b);
 const groups={inorganic:[13,'I'],analytical:[13,'A'],organic:[12,'O'],physical:[12,'P']},all=[];
 for(const [subject,[num,prefix]] of Object.entries(groups)){
- let part=[];
- for(const p of [1,2]){
-  const path='editorial/advanced_integrated_v4/'+subject+'_part'+p+'.jsonl';
-  const lines=readFileSync(root+path,'utf8').trimEnd().split('\n').map(JSON.parse);
-  assert.equal(lines.length,p===1?subject==='inorganic'||subject==='analytical'?7:6:subject==='inorganic'||subject==='analytical'?6:6);
-  part.push(...lines);
- }
+ const path='editorial/advanced_integrated_v4/'+subject+'.jsonl';
+ const part=readFileSync(root+path,'utf8').trimEnd().split('\n').map(JSON.parse);
  assert.equal(part.length,num);
  for(let i=0;i<part.length;i++){
   const q=part[i];

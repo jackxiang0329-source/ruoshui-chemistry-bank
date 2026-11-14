@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../',import.meta.url)),R=8.314462618,F=96485.33212;
-const specs={inorganic:[['inorganic.jsonl'],13,'I',33],analytical:[['analytical_part1.jsonl','analytical_part2.jsonl'],13,'A',33],organic:[['organic_part1.jsonl','organic_part2.jsonl'],12,'O',31],physical:[['physical_part1.jsonl','physical_part2.jsonl'],12,'P',31]};
+const specs={inorganic:[13,'I',33],analytical:[13,'A',33],organic:[12,'O',31],physical:[12,'P',31]};
 function eq(a,b,label){
  assert.ok(Number.isFinite(a)&&Number.isFinite(b),label+' finite');
  assert.ok(Math.abs(a-b)<=1e-8*Math.max(1e-10,Math.abs(a),Math.abs(b)),label+': '+a+' != '+b);
@@ -17,9 +17,8 @@ function bisect(f,a,b){
  return(a+b)/2;
 }
 const rows=[];
-for(const [subject,[files,num,letter,begin]] of Object.entries(specs)){
- let data=[];
- for(const file of files)data.push(...readFileSync(root+'editorial/advanced_integrated_v6/'+file,'utf8').trimEnd().split('\n').map(JSON.parse));
+for(const [subject,[num,letter,begin]] of Object.entries(specs)){
+ const data=readFileSync(root+'editorial/advanced_integrated_v6/'+subject+'.jsonl','utf8').trimEnd().split('\n').map(JSON.parse);
  assert.equal(data.length,num,subject);
  data.forEach((q,index)=>{
   assert.equal(q.id,'UC-ADV6-'+letter+(begin+index));

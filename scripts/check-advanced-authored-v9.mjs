@@ -112,20 +112,15 @@ const w={
  P97:()=>-2*F*1.1/1000,
 };
 const specs=[
- ['inorganic','I',76,[['inorganic_part1',7],['inorganic_part2',9],['inorganic_part3a',5],['inorganic_part3b',4]]],
- ['analytical','A',76,[['analytical_part1',8],['analytical_part2',9],['analytical_part3',8]]],
- ['organic','O',73,[['organic_part1',8],['organic_part2a',4],['organic_part2b',5],['organic_part3',8]]],
- ['physical','P',73,[['physical_part1',8],['physical_part2',9],['physical_part3',8]]]
+ ['inorganic','I',76],
+ ['analytical','A',76],
+ ['organic','O',73],
+ ['physical','P',73]
 ];
 assert.equal(Object.keys(w).length,100);
 const ids=new Set(),titles=new Set(),families=new Set();let count=0, maxErr=0;const stats={};
-for(const [subject,letter,start,files] of specs){
- let records=[];
- for(const [name,target] of files){
-  const rows=readFileSync(dir+name+'.jsonl','utf8').trimEnd().split('\n').map(JSON.parse);
-  assert.equal(rows.length,target,name+' count');
-  records.push(...rows);
- }
+for(const [subject,letter,start] of specs){
+ const records=readFileSync(dir+subject+'.jsonl','utf8').trimEnd().split('\n').map(JSON.parse);
  assert.equal(records.length,25,subject);
  stats[subject]=records.length;
  records.forEach((q,i)=>{

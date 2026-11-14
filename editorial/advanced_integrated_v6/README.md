@@ -5,9 +5,9 @@
 | 学科 | 题数 | 编号 | 来源 |
 |---|---:|---|---|
 | 无机化学 | 13 | I33–I45 | [inorganic.jsonl](inorganic.jsonl) |
-| 分析化学 | 13 | A33–A45 | [part1](analytical_part1.jsonl) · [part2](analytical_part2.jsonl) |
-| 有机化学 | 12 | O31–O42 | [part1](organic_part1.jsonl) · [part2](organic_part2.jsonl) |
-| 物理化学 | 12 | P31–P42 | [part1](physical_part1.jsonl) · [part2](physical_part2.jsonl) |
+| 分析化学 | 13 | A33–A45 | [analytical.jsonl](analytical.jsonl) |
+| 有机化学 | 12 | O31–O42 | [organic.jsonl](organic.jsonl) |
+| 物理化学 | 12 | P31–P42 | [physical.jsonl](physical.jsonl) |
 | **总计** | **50** | | **7个JSONL，统一归档** |
 
 ## 审校约束

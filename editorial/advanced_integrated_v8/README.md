@@ -4,10 +4,10 @@
 
 | 学科 | 题目编号 | 题数 | 数据文件 |
 |---|---|---:|---|
-| 无机化学 | UC-ADV8-I61–I75 | 15 | [1](inorganic_part1.jsonl) · [2](inorganic_part2.jsonl) · [3](inorganic_part3.jsonl) |
-| 分析化学 | UC-ADV8-A61–A75 | 15 | [1](analytical_part1.jsonl) · [2](analytical_part2.jsonl) · [3](analytical_part3.jsonl) |
-| 有机化学 | UC-ADV8-O58–O72 | 15 | [1](organic_part1.jsonl) · [2](organic_part2.jsonl) · [3](organic_part3.jsonl) |
-| 物理化学 | UC-ADV8-P58–P72 | 15 | [1](physical_part1.jsonl) · [2](physical_part2.jsonl) · [3](physical_part3.jsonl) |
+| 无机化学 | UC-ADV8-I61–I75 | 15 | [inorganic.jsonl](inorganic.jsonl) |
+| 分析化学 | UC-ADV8-A61–A75 | 15 | [analytical.jsonl](analytical.jsonl) |
+| 有机化学 | UC-ADV8-O58–O72 | 15 | [organic.jsonl](organic.jsonl) |
+| 物理化学 | UC-ADV8-P58–P72 | 15 | [physical.jsonl](physical.jsonl) |
 | **总计** | | **60** | **12个集中JSONL** |
 
 ## 严格的审核限制
