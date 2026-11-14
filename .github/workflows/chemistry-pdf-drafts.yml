@@ -57,7 +57,13 @@ jobs:
             editorial/advanced_integrated_v1/original_advanced_integrated_12.pdf \
             editorial/pdf_drafts/chemistry_advanced_v2_onwards_draft.pdf \
             "editorial/pdf_drafts/chemistry_all_v1_to_v${newest}_draft.pdf"
-          pdfinfo "editorial/pdf_drafts/chemistry_all_v1_to_v${newest}_draft.pdf" | grep -E '^Pages:'
+          current="editorial/pdf_drafts/chemistry_all_v1_to_v${newest}_draft.pdf"
+          pdfinfo "$current" | grep -E '^Pages:'
+          for previous in editorial/pdf_drafts/chemistry_all_v1_to_v*_draft.pdf; do
+            if [[ "$previous" != "$current" ]]; then
+              rm -- "$previous"
+            fi
+          done
       - name: Upload generated draft PDFs and TeX sources
         uses: actions/upload-artifact@v4
         with:
@@ -80,6 +86,7 @@ jobs:
             echo "::warning::Newer question sources landed during compilation. Skip outdated PDF publication; the next build will use the new revision."
             exit 0
           fi
+          git add -u -- editorial/pdf_drafts
           git add editorial/pdf_drafts/*.pdf editorial/pdf_drafts/tex/*.tex
           if git diff --cached --quiet; then
             echo "Generated PDF and TeX already match repository copies"

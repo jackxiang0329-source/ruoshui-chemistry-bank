@@ -4,7 +4,7 @@
 
 - 按辑输出：`chemistry_advanced_v2_draft.pdf`、`chemistry_advanced_v3_draft.pdf`、依此类推。新的第7、8辑及以后会在扫描到对应 `editorial/advanced_integrated_vN/*.jsonl` 后自动新增。
 - 跨辑输出：`chemistry_advanced_v2_onwards_draft.pdf`，集中收录第2辑至最新辑。
-- 全库输出：`chemistry_all_v1_to_vN_draft.pdf`，合并原第1辑已审校标识 PDF 和后续所有JSONL记录。
+- 全库输出：`chemistry_all_v1_to_vN_draft.pdf`（`N` 为最新辑号），合并原第 1 辑 PDF 和后续 JSONL 记录。较早的累计版本集中在[归档分支](https://github.com/jackxiang0329-source/ruoshui-chemistry-bank/tree/archive/pre-report-and-draft-cleanup/editorial/pdf_drafts)，各辑单册继续在本目录查找。
 - TeX源文件：在 [tex](tex) 子目录，使用 `XeLaTeX`、`ctexart` 与 Noto CJK 字体编译。
 - **质量状态**：全部为 `draft`（审校草稿），不等于专家已批准。第六辑还需要跨辑重复模型审查。
 
